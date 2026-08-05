@@ -1,0 +1,329 @@
+:root {
+    --bg-color: #0f1115;
+    --header-bg: #1a1d24;
+    --accent-color: #e50914;
+    --text-color: #f1f1f1;
+    --success-color: #28a745;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding-top: 150px;
+    overflow-y: auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--header-bg);
+    padding: 15px 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+h1 {
+    color: var(--accent-color);
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.buscador-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.buscador-container input {
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid #444;
+    background-color: #222;
+    color: white;
+    width: 100%;
+    max-width: 400px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.buscador-container input:focus {
+    border-color: var(--accent-color);
+}
+
+.nav-principal {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn-nav, .btn-categoria, .btn-subcategoria, .btn-filtro, .btn-filtro-arrowverse, .btn-filtro-dcu, .btn-filtro-dcmultiverso, .btn-filtro-it {
+    background-color: #2a2d35;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-nav:hover, .btn-categoria:hover, .btn-subcategoria:hover {
+    background-color: var(--accent-color);
+}
+
+.contenedor-menu {
+    position: relative;
+}
+
+.submenu {
+    background-color: #1a1d24;
+    border: 1px solid #333;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    z-index: 100;
+    max-height: 70vh; /* Permite scroll si es muy alto */
+    overflow-y: auto;
+}
+
+/* Estilo para el scrollbar del menu */
+.submenu::-webkit-scrollbar {
+    width: 8px;
+}
+.submenu::-webkit-scrollbar-track {
+    background: #1a1d24; 
+}
+.submenu::-webkit-scrollbar-thumb {
+    background: #444; 
+    border-radius: 4px;
+}
+.submenu::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-color); 
+}
+
+.submenu-anidado {
+    background-color: #1a1d24;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: static;
+    border: none;
+    padding-left: 15px;
+    border-left: 2px solid #444;
+}
+
+.oculto {
+    display: none !important;
+}
+
+main {
+    padding: 20px 40px;
+    min-height: 100vh;
+}
+
+h2 {
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--accent-color);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.filtros-seccion {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn-filtro.activo, .btn-filtro-arrowverse.activo, .btn-filtro-dcu.activo, .btn-filtro-dcmultiverso.activo, .btn-filtro-it.activo {
+    background-color: var(--accent-color) !important;
+    color: #fff !important;
+}
+
+.grilla-biblioteca {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.tarjeta-media {
+    background-color: #1e2129;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-media:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta-media img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-bottom: 3px solid transparent;
+}
+
+.tarjeta-media.vista img {
+    border-bottom: 3px solid var(--success-color);
+    opacity: 0.8;
+}
+
+.tarjeta-media h3 {
+    font-size: 15px;
+    margin: 10px;
+}
+
+.tarjeta-media p {
+    font-size: 12px;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.btn-accion {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+/* Modal Login */
+.modal {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.modal-content {
+    background: #1a1d24;
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(229, 9, 20, 0.5);
+}
+.modal-content h2 { margin-bottom:10px; border-bottom: none; color: white; }
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background: #222;
+    color: white;
+}
+.btn-modal {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.close-modal {
+    float: right;
+    cursor: pointer;
+    color: #aaa;
+    font-size: 20px;
+}
+
+/* Tarjeta de Colección (ej: Tomorrowverse) */
+.tarjeta-coleccion {
+    border: 2px solid var(--accent-color);
+}
+
+.barra-progreso-container {
+    background-color: #333;
+    border-radius: 10px;
+    height: 8px;
+    margin: 8px 15px 4px 15px;
+    overflow: hidden;
+}
+
+.barra-progreso-fill {
+    background-color: var(--success-color);
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+.barra-progreso-texto {
+    font-size: 11px;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.botones-coleccion {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+
+.btn-abrir-coleccion {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-volver {
+    background-color: #2a2d35;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.btn-volver:hover {
+    background-color: var(--accent-color);
+}

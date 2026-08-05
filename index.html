@@ -1,0 +1,450 @@
+<header>
+    <div class="header-top">
+        <h1>EL MULTIVERSO</h1>
+        <div class="buscador-container">
+            <input type="text" id="buscador-global" placeholder="🔍 Buscar película o serie...">
+        </div>
+        <button id="btn-login-modal" class="btn-nav" style="background-color: #3b5998;">👤 Cuenta / Registro</button>
+    </div>
+
+    <nav class="nav-principal">
+        <button id="btn-biblioteca" class="btn-nav" style="background-color: #28a745;">Mi Biblioteca 📚</button>
+
+        <!-- Menú Road to Doomsday -->
+        <div class="contenedor-menu" id="contenedor-doomsday">
+            <button id="btn-doomsday" class="btn-nav">Road to Doomsday ▼</button>
+            <div id="menu-doomsday" class="submenu oculto">
+                <button class="btn-filtro" data-filtro="corto">Camino Corto</button>
+                <button class="btn-filtro" data-filtro="medio">Camino Medio</button>
+                <button class="btn-filtro" data-filtro="largo">Camino Largo</button>
+                <button class="btn-filtro" data-filtro="completo">Camino Completo</button>
+            </div>
+        </div>
+
+        <!-- Menú General de Franquicias -->
+        <div class="contenedor-menu">
+            <button id="btn-categorias" class="btn-nav">Menú ▼</button>
+            <div id="menu-categorias" class="submenu oculto">
+                
+                <button class="btn-categoria" id="btn-explorar">Explorar</button>
+
+                <!-- Subdivisión de Star Wars -->
+                <button class="btn-categoria" id="btn-toggle-starwars">Star Wars ▼</button>
+                <div id="submenu-starwars" class="submenu-anidado oculto">
+                    <button class="btn-subcategoria" id="btn-sw-animacion">Animación</button>
+                    <button class="btn-subcategoria" id="btn-sw-episodios">Episodios</button>
+                    <button class="btn-subcategoria" id="btn-sw-liveaction">Live Action</button>
+                    <button class="btn-subcategoria" id="btn-sw-libros">Libros y Cómics</button>
+                    <button class="btn-subcategoria" id="btn-sw-videojuegos">Videojuegos</button>
+                    <button class="btn-subcategoria" id="btn-sw-historia">Historia Completa</button>
+                </div>
+                
+                <!-- Subdivisiones de Marvel -->
+                <button class="btn-categoria" id="btn-toggle-marvel">Marvel ▼</button>
+                <div id="submenu-marvel" class="submenu-anidado oculto">
+                    <button class="btn-subcategoria">Cómics</button>
+                    <button class="btn-subcategoria" id="btn-marvel-videojuegos">Videojuegos</button>
+                    <button class="btn-subcategoria" id="btn-toggle-mcu">MCU ▼</button>
+                    <div id="submenu-mcu" class="submenu-anidado oculto">
+                        <button class="btn-subcategoria" id="btn-mcu-infinito">Saga del Infinito</button>
+                        <button class="btn-subcategoria" id="btn-mcu-multiverso">Saga del Multiverso</button>
+                        <button class="btn-subcategoria" id="btn-mcu-cronologico">Completo (Cronológico)</button>
+                    </div>
+                  
+                    <button class="btn-subcategoria" id="btn-toggle-multiverso">Multiverso ▼</button>
+                    <div id="submenu-multiverso" class="submenu-anidado oculto">
+                        
+                        <!-- Fox subdividido -->
+                        <button class="btn-subcategoria" id="btn-toggle-fox">Fox ▼</button>
+                        <div id="submenu-fox" class="submenu-anidado oculto">
+                            <button class="btn-subcategoria" id="btn-fox-xmen">X-Men</button>
+                            <button class="btn-subcategoria" id="btn-fox-ff">Cuatro Fantásticos</button>
+                        </div>
+
+                        <button class="btn-subcategoria">Universal</button>
+                        
+                        <!-- Sony subdividido -->
+                        <button class="btn-subcategoria" id="btn-toggle-sony">Sony ▼</button>
+                        <div id="submenu-sony" class="submenu-anidado oculto">
+                            <button class="btn-subcategoria" id="btn-sony-tobey">Spider-Man (Tobey)</button>
+                            <button class="btn-subcategoria" id="btn-sony-andrew">Spider-Man (Andrew)</button>
+                            <button class="btn-subcategoria" id="btn-sony-ssu">Universo Spider-Man (SSU)</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Subdivisiones de DC -->
+                <button class="btn-categoria" id="btn-toggle-dc">DC Comics ▼</button>
+                <div id="submenu-dc" class="submenu-anidado oculto">
+                    <button class="btn-subcategoria">Cómics</button>
+                    <button class="btn-subcategoria" id="btn-dcu">DCU</button>
+                    <button class="btn-subcategoria" id="btn-dc-personajes">Personajes</button>
+                    <button class="btn-subcategoria" id="btn-dc-animacion">Animación</button>
+                    <button class="btn-subcategoria" id="btn-dc-videojuegos">Videojuegos</button>
+                  
+                    <!-- Elseworlds y DCEU -->
+                    <button class="btn-subcategoria" id="btn-toggle-elseworlds">Elseworlds ▼</button>
+                    <div id="submenu-elseworlds" class="submenu-anidado oculto">
+                        <button class="btn-subcategoria" id="btn-explorar-multiverso">Multiverso</button>
+                        <button class="btn-subcategoria" id="btn-arrowverse">Arrowverse</button>
+                        <button class="btn-subcategoria" id="btn-the-batman">The Batman</button>
+                        <button class="btn-subcategoria" id="btn-joker">Joker</button>
+                      
+                        <button class="btn-subcategoria" id="btn-toggle-dceu">DCEU ▼</button>
+                        <div id="submenu-dceu" class="submenu-anidado oculto">
+                            <button class="btn-subcategoria" id="btn-dceu-snyder">DCEU de Zack Snyder</button>
+                            <button class="btn-subcategoria" id="btn-dceu-principal">DCEU Principal</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Modal de Login -->
+<div id="modal-login" class="modal oculto">
+    <div class="modal-content">
+        <span class="close-modal" id="close-modal">&times;</span>
+        <h2>Acceso / Registro</h2>
+        <p style="font-size:12px; color:#aaa; margin-bottom:20px;">Sincroniza tu progreso en todos tus dispositivos.</p>
+        <input type="text" id="username" placeholder="Nombre de usuario o Email">
+        <input type="password" id="password" placeholder="Contraseña">
+        <button class="btn-modal" id="btn-submit-login">Entrar / Crear Cuenta</button>
+    </div>
+</div>
+
+<main id="contenedor-principal">
+    
+    <!-- SECCIÓN: EXPLORAR -->
+    <section id="seccion-explorar" class="oculto">
+        <h2>Explorar</h2>
+        <div class="grilla-biblioteca" id="grilla-explorar"></div>
+    </section>
+
+    <!-- COLECCIÓN: BEN 10 -->
+    <section id="seccion-ben10" class="oculto">
+        <button class="btn-volver" id="btn-volver-ben10">← Volver a Explorar</button>
+        <h2>Ben 10</h2>
+        <div class="grilla-biblioteca" id="grilla-ben10"></div>
+    </section>
+
+    <!-- SUBCOLECCIÓN: BEN 10 (Serie Original) -->
+    <section id="seccion-ben10-original" class="oculto">
+        <button class="btn-volver" id="btn-volver-ben10-original">← Volver a Ben 10</button>
+        <h2>Ben 10</h2>
+        <div class="grilla-biblioteca" id="grilla-ben10-original"></div>
+    </section>
+
+    <!-- SUBCOLECCIÓN: BEN 10 ALIEN FORCE -->
+    <section id="seccion-ben10-alienforce" class="oculto">
+        <button class="btn-volver" id="btn-volver-ben10-alienforce">← Volver a Ben 10</button>
+        <h2>Ben 10: Alien Force</h2>
+        <div class="grilla-biblioteca" id="grilla-ben10-alienforce"></div>
+    </section>
+
+    <!-- SUBCOLECCIÓN: BEN 10 ULTIMATE ALIEN -->
+    <section id="seccion-ben10-ultimatealien" class="oculto">
+        <button class="btn-volver" id="btn-volver-ben10-ultimatealien">← Volver a Ben 10</button>
+        <h2>Ben 10: Ultimate Alien</h2>
+        <div class="grilla-biblioteca" id="grilla-ben10-ultimatealien"></div>
+    </section>
+
+    <!-- SUBCOLECCIÓN: BEN 10 OMNIVERSE -->
+    <section id="seccion-ben10-omniverse" class="oculto">
+        <button class="btn-volver" id="btn-volver-ben10-omniverse">← Volver a Ben 10</button>
+        <h2>Ben 10 Omniverse</h2>
+        <div class="grilla-biblioteca" id="grilla-ben10-omniverse"></div>
+    </section>
+
+    <!-- COLECCIÓN: DRAGON BALL -->
+    <section id="seccion-dragonball" class="oculto">
+        <button class="btn-volver" id="btn-volver-dragonball">← Volver a Explorar</button>
+        <h2>Dragon Ball</h2>
+        <div class="grilla-biblioteca" id="grilla-dragonball"></div>
+    </section>
+
+    <!-- SUBCOLECCIÓN: DRAGON BALL Z -->
+    <section id="seccion-dragonball-z" class="oculto">
+        <button class="btn-volver" id="btn-volver-dragonball-z">← Volver a Dragon Ball</button>
+        <h2>Dragon Ball Z</h2>
+        <div class="grilla-biblioteca" id="grilla-dragonball-z"></div>
+    </section>
+
+    <!-- SUBCOLECCIÓN: DRAGON BALL SUPER -->
+    <section id="seccion-dragonball-super" class="oculto">
+        <button class="btn-volver" id="btn-volver-dragonball-super">← Volver a Dragon Ball</button>
+        <h2>Dragon Ball Super</h2>
+        <div class="grilla-biblioteca" id="grilla-dragonball-super"></div>
+    </section>
+
+    <!-- SUBCOLECCIÓN: HISTORIA CANON -->
+    <section id="seccion-dragonball-historia-canon" class="oculto">
+        <button class="btn-volver" id="btn-volver-dragonball-historia-canon">← Volver a Dragon Ball</button>
+        <h2>Dragon Ball: Historia Canon</h2>
+        <div class="grilla-biblioteca" id="grilla-dragonball-historia-canon"></div>
+    </section>
+
+    <!-- SUBCOLECCIÓN: VIDEOJUEGOS -->
+    <section id="seccion-dragonball-videojuegos" class="oculto">
+        <button class="btn-volver" id="btn-volver-dragonball-videojuegos">← Volver a Dragon Ball</button>
+        <h2>Dragon Ball: Videojuegos</h2>
+        <div class="grilla-biblioteca" id="grilla-dragonball-videojuegos"></div>
+    </section>
+
+    <!-- SUBCOLECCIÓN: TODO DRAGON BALL -->
+    <section id="seccion-dragonball-todo" class="oculto">
+        <button class="btn-volver" id="btn-volver-dragonball-todo">← Volver a Dragon Ball</button>
+        <h2>Todo Dragon Ball</h2>
+        <div class="grilla-biblioteca" id="grilla-dragonball-todo"></div>
+    </section>
+
+    <!-- COLECCIÓN: IT (contenedor con filtros) -->
+    <section id="seccion-it" class="oculto">
+        <h2>It</h2>
+        <div class="filtros-seccion">
+            <button class="btn-filtro-it activo" data-tipo="muschietti">Andy Muschietti</button>
+            <button class="btn-filtro-it" data-tipo="todo">Todo</button>
+        </div>
+        <div class="grilla-biblioteca"></div>
+    </section>
+
+    <!-- COLECCIÓN: LEGO -->
+    <section id="seccion-lego" class="oculto">
+        <button class="btn-volver" id="btn-volver-lego">← Volver a Explorar</button>
+        <h2>LEGO</h2>
+        <div class="grilla-biblioteca" id="grilla-lego"></div>
+    </section>
+
+    <!-- SUBCOLECCIÓN: LEGO VIDEOJUEGOS -->
+    <section id="seccion-lego-videojuegos" class="oculto">
+        <button class="btn-volver" id="btn-volver-lego-videojuegos">← Volver a LEGO</button>
+        <h2>LEGO Videojuegos</h2>
+        <div class="grilla-biblioteca" id="grilla-lego-videojuegos"></div>
+    </section>
+
+    <!-- SUBCOLECCIÓN: LEGO AUDIOVISUAL -->
+    <section id="seccion-lego-audiovisual" class="oculto">
+        <button class="btn-volver" id="btn-volver-lego-audiovisual">← Volver a LEGO</button>
+        <h2>LEGO Audiovisual</h2>
+        <div class="grilla-biblioteca" id="grilla-lego-audiovisual"></div>
+    </section>
+
+    <!-- SECCIÓN: MI BIBLIOTECA -->
+    <section id="seccion-biblioteca" class="oculto">
+        <h2>Mi Biblioteca de Vistos 📚</h2>
+        <div class="grilla-biblioteca" id="grilla-mi-biblioteca"></div>
+    </section>
+
+    <!-- SECCIÓN: ROAD TO DOOMSDAY -->
+    <section id="seccion-doomsday">
+        <h2>Road to Doomsday</h2>
+        <div class="grilla-biblioteca"></div>
+    </section>
+
+    <!-- MCU INFINITO -->
+    <section id="seccion-mcu-infinito" class="oculto">
+        <h2>MCU: Saga del Infinito</h2>
+        <div class="grilla-biblioteca"></div>
+    </section>
+
+    <!-- MARVEL: VIDEOJUEGOS -->
+    <section id="seccion-marvel-videojuegos" class="oculto">
+        <h2>Marvel: Videojuegos</h2>
+        <div class="grilla-biblioteca"></div>
+    </section>
+
+    <!-- COLECCIÓN: INSOMNIAC -->
+    <section id="seccion-insomniac" class="oculto">
+        <button class="btn-volver" id="btn-volver-insomniac">← Volver a Videojuegos</button>
+        <h2>Insomniac</h2>
+        <div class="grilla-biblioteca" id="grilla-insomniac"></div>
+    </section>
+
+    <!-- DC: PERSONAJES -->
+    <section id="seccion-dc-personajes" class="oculto">
+        <h2>DC Comics: Personajes</h2>
+        <div class="grilla-biblioteca"></div>
+    </section>
+
+    <!-- COLECCIÓN: BATMAN BEN AFFLECK -->
+    <section id="seccion-batman-ben-affleck" class="oculto">
+        <button class="btn-volver" id="btn-volver-batman-ben-affleck">← Volver a Personajes</button>
+        <h2>Batman: Ben Affleck</h2>
+        <div class="grilla-biblioteca" id="grilla-batman-ben-affleck"></div>
+    </section>
+
+    <!-- MCU MULTIVERSO -->
+    <section id="seccion-mcu-multiverso" class="oculto">
+        <h2>MCU: Saga del Multiverso</h2>
+        <div class="grilla-biblioteca"></div>
+    </section>
+
+    <!-- MCU CRONOLÓGICO -->
+    <section id="seccion-mcu-cronologico" class="oculto">
+        <h2>MCU Completo (Orden Cronológico)</h2>
+        <div class="grilla-biblioteca" id="grilla-mcu-cronologico"></div>
+    </section>
+
+    <!-- DC ANIMACIÓN -->
+    <section id="seccion-dc-animacion" class="oculto">
+        <h2>DC Comics: Animación</h2>
+        <div class="grilla-biblioteca" id="grilla-dc-animacion"></div>
+    </section>
+
+    <!-- COLECCIÓN: TOMORROWVERSE -->
+    <section id="seccion-tomorrowverse" class="oculto">
+        <button class="btn-volver" id="btn-volver-tomorrowverse">← Volver a Animación</button>
+        <h2>Tomorrowverse</h2>
+        <div class="grilla-biblioteca" id="grilla-tomorrowverse"></div>
+    </section>
+
+    <!-- COLECCIÓN: DCAMU -->
+    <section id="seccion-dcamu" class="oculto">
+        <button class="btn-volver" id="btn-volver-dcamu">← Volver a Animación</button>
+        <h2>DCAMU</h2>
+        <div class="grilla-biblioteca" id="grilla-dcamu"></div>
+    </section>
+
+    <!-- DC VIDEOJUEGOS -->
+    <section id="seccion-dc-videojuegos" class="oculto">
+        <h2>DC Comics: Videojuegos</h2>
+        <div class="grilla-biblioteca"></div>
+    </section>
+
+    <!-- COLECCIÓN: ARKHAMVERSE -->
+    <section id="seccion-arkhamverse" class="oculto">
+        <button class="btn-volver" id="btn-volver-arkhamverse">← Volver a Videojuegos</button>
+        <h2>Arkhamverse</h2>
+        <div class="grilla-biblioteca" id="grilla-arkhamverse"></div>
+    </section>
+
+    <!-- COLECCIÓN: PELÍCULAS INDEPENDIENTES -->
+    <section id="seccion-peliculas-independientes" class="oculto">
+        <button class="btn-volver" id="btn-volver-peliculas-independientes">← Volver a Animación</button>
+        <h2>Películas Independientes</h2>
+        <div class="grilla-biblioteca" id="grilla-peliculas-independientes"></div>
+    </section>
+
+    <!-- COLECCIÓN: INJUSTICE -->
+    <section id="seccion-injustice" class="oculto">
+        <button class="btn-volver" id="btn-volver-injustice">← Volver a Videojuegos</button>
+        <h2>Injustice</h2>
+        <div class="grilla-biblioteca" id="grilla-injustice"></div>
+    </section>
+
+    <!-- DC ELSEWORLDS: MULTIVERSO -->
+    <section id="seccion-dc-multiverso" class="oculto">
+        <h2>Elseworlds: Multiverso</h2>
+        <div class="filtros-seccion">
+            <button class="btn-filtro-dcmultiverso activo" data-tipo="todo">Todo</button>
+            <button class="btn-filtro-dcmultiverso" data-tipo="animacion">Animación</button>
+            <button class="btn-filtro-dcmultiverso" data-tipo="liveaction">Live Action</button>
+        </div>
+        <div class="grilla-biblioteca" id="grilla-dc-multiverso"></div>
+    </section>
+
+    <!-- ARROWVERSE -->
+    <section id="seccion-arrowverse" class="oculto">
+        <h2>Elseworlds: Arrowverse</h2>
+        <div class="filtros-seccion">
+            <button class="btn-filtro-arrowverse activo" data-tipo="principal">Principal</button>
+            <button class="btn-filtro-arrowverse" data-tipo="eventos">Eventos</button>
+            <button class="btn-filtro-arrowverse" data-tipo="cronologico">Orden Cronológico</button>
+        </div>
+        <div class="grilla-biblioteca" id="grilla-arrowverse"></div>
+    </section>
+
+    <!-- FOX: X-MEN -->
+    <section id="seccion-fox-xmen" class="oculto">
+        <h2>Multiverso Marvel: X-Men (Fox)</h2>
+        <div class="grilla-biblioteca"></div>
+    </section>
+
+    <!-- FOX: CUATRO FANTÁSTICOS -->
+    <section id="seccion-fox-ff" class="oculto">
+        <h2>Multiverso Marvel: Cuatro Fantásticos (Fox)</h2>
+        <div class="grilla-biblioteca"></div>
+    </section>
+
+    <!-- SONY: SPIDER-MAN TOBEY -->
+    <section id="seccion-sony-tobey" class="oculto">
+        <h2>Spider-Man (Tobey Maguire)</h2>
+        <div class="grilla-biblioteca"></div>
+    </section>
+
+    <!-- SONY: SPIDER-MAN ANDREW -->
+    <section id="seccion-sony-andrew" class="oculto">
+        <h2>Spider-Man (Andrew Garfield)</h2>
+        <div class="grilla-biblioteca"></div>
+    </section>
+
+    <!-- SONY: SSU -->
+    <section id="seccion-sony-ssu" class="oculto">
+        <h2>Universo Spider-Man de Sony (SSU)</h2>
+        <div class="grilla-biblioteca"></div>
+    </section>
+
+    <!-- DCU -->
+    <section id="seccion-dcu" class="oculto">
+        <h2>Universo DC (DCU)</h2>
+        <div class="filtros-seccion">
+            <button class="btn-filtro-dcu activo" data-tipo="todos">Todos</button>
+            <button class="btn-filtro-dcu" data-tipo="pelicula">Películas</button>
+            <button class="btn-filtro-dcu" data-tipo="serie">Series</button>
+            <button class="btn-filtro-dcu" data-tipo="animacion">Animación</button>
+        </div>
+        <div class="grilla-biblioteca" id="grilla-dcu"></div>
+    </section>
+
+    <!-- DCEU SNYDER -->
+    <section id="seccion-dceu-snyder" class="oculto">
+        <h2>DCEU de Zack Snyder</h2>
+        <div class="grilla-biblioteca"></div>
+    </section>
+
+    <!-- DCEU PRINCIPAL -->
+    <section id="seccion-dceu-principal" class="oculto">
+        <h2>DCEU Principal</h2>
+        <div class="grilla-biblioteca"></div>
+    </section>
+
+    <!-- THE BATMAN -->
+    <section id="seccion-the-batman" class="oculto">
+        <h2>The Batman</h2>
+        <div class="grilla-biblioteca"></div>
+    </section>
+
+    <!-- JOKER -->
+    <section id="seccion-joker" class="oculto">
+        <h2>Joker</h2>
+        <div class="grilla-biblioteca"></div>
+    </section>
+    
+    <!-- STAR WARS -->
+    <section id="seccion-sw-animacion" class="oculto">
+        <h2>Star Wars: Animación</h2>
+        <div class="grilla-biblioteca"></div>
+    </section>
+    <section id="seccion-sw-episodios" class="oculto">
+        <h2>Star Wars: Episodios</h2>
+        <div class="grilla-biblioteca"></div>
+    </section>
+    <section id="seccion-sw-liveaction" class="oculto">
+        <h2>Star Wars: Live Action</h2>
+        <div class="grilla-biblioteca"></div>
+    </section>
+    <section id="seccion-sw-libros" class="oculto">
+        <h2>Star Wars: Libros y Cómics</h2>
+        <div class="grilla-biblioteca"></div>
+    </section>
+    <section id="seccion-sw-videojuegos" class="oculto">
+        <h2>Star Wars: Videojuegos</h2>
+        <div class="grilla-biblioteca"></div>
+    </section>
+    <section id="seccion-sw-historia" class="oculto">
+        <h2>Star Wars: Historia Completa</h2>
+        <div class="grilla-biblioteca" id="grilla-sw-historia"></div>
+    </section>
+
+</main>
