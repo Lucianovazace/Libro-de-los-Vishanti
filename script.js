@@ -717,6 +717,73 @@ const colecciones = [
     }
 ];
 
+// ==========================================
+// LOGROS (condiciones evaluadas contra un Set de títulos vistos)
+// ==========================================
+// Helper: ¿están todos estos títulos en el set de vistos?
+function todosVistos(vistos, titulos) {
+    return titulos.every(t => vistos.has(t));
+}
+
+// Helper: ¿están todos los títulos de una categoría de listaMedia vistos?
+function categoriaCompleta(vistos, categoria) {
+    const titulos = listaMedia.filter(i => i.categoria === categoria).map(i => i.titulo);
+    return titulos.length > 0 && todosVistos(vistos, titulos);
+}
+
+// Helper: ¿está una colección entera (por id) vista?
+function coleccionCompleta(vistos, coleccionId) {
+    const col = colecciones.find(c => c.id === coleccionId);
+    if (!col || !col.peliculas.length) return false;
+    return todosVistos(vistos, col.peliculas.map(p => p.titulo));
+}
+
+const logrosDisponibles = [
+    {
+        id: "poder-del-sol",
+        nombre: "El Poder del Sol en la Palma de mi Mano",
+        descripcion: "Mirá la trilogía completa de Spider-Man de Tobey Maguire",
+        icono: "🕷️",
+        condicion: (vistos) => todosVistos(vistos, ["Spider-Man (2002)", "Spider-Man 2", "Spider-Man 3"])
+    },
+    {
+        id: "hello-there",
+        nombre: "Hello There",
+        descripcion: "Mirá los Episodios I, II y III de Star Wars",
+        icono: "⚔️",
+        condicion: (vistos) => todosVistos(vistos, [
+            "Star Wars: Episodio I - La Amenaza Fantasma",
+            "Star Wars: Episodio II - El Ataque de los Clones",
+            "Star Wars: Episodio III - La Venganza de los Sith"
+        ])
+    },
+    {
+        id: "may-the-force",
+        nombre: "May The Force Be With You",
+        descripcion: "Mirá los Episodios IV, V y VI de Star Wars",
+        icono: "✨",
+        condicion: (vistos) => todosVistos(vistos, [
+            "Star Wars: Episodio IV - Una Nueva Esperanza",
+            "Star Wars: Episodio V - El Imperio Contraataca",
+            "Star Wars: Episodio VI - El Retorno del Jedi"
+        ])
+    },
+    {
+        id: "el-elegido",
+        nombre: "El Elegido",
+        descripcion: "Mirá los Episodios I a VI de Star Wars",
+        icono: "☯️",
+        condicion: (vistos) => todosVistos(vistos, [
+            "Star Wars: Episodio I - La Amenaza Fantasma",
+            "Star Wars: Episodio II - El Ataque de los Clones",
+            "Star Wars: Episodio III - La Venganza de los Sith",
+            "Star Wars: Episodio IV - Una Nueva Esperanza",
+            "Star Wars: Episodio V - El Imperio Contraataca",
+            "Star Wars: Episodio VI - El Retorno del Jedi"
+        ])
+    }
+];
+
 // Inyecta las fichas de colección en su sección correspondiente
 function renderizarColecciones() {
     const seccionesMap = {
@@ -1578,7 +1645,7 @@ function traducirErrorFirebase(err) {
 if(btnLoginModal) {
     btnLoginModal.addEventListener('click', () => {
         if (usuarioActual) {
-            if (confirm('¿Cerrar sesión de ' + usuarioActual.email + '?')) {
+            if (confirm('¿Cerrar sesión de ' + (usuarioActual.displayName || usuarioActual.email) + '?')) {
                 auth.signOut();
             }
         } else {
@@ -1590,13 +1657,44 @@ if(btnLoginModal) {
 if(closeModal) closeModal.addEventListener('click', () => modalLogin.classList.add('oculto'));
 
 if(btnCrearCuenta) {
-    btnCrearCuenta.addEventListener('click', () => {
+    btnCrearCuenta.addEventListener('click', async () => {
+        const username = document.getElementById('username-login').value.trim();
         const email = document.getElementById('email-login').value.trim();
         const pass = document.getElementById('password-login').value;
+
+        if (!username) { mostrarMensajeLogin('Elegí un nombre de usuario.'); return; }
+        if (!/^[a-zA-Z0-9_]{3,20}$/.test(username)) {
+            mostrarMensajeLogin('El nombre de usuario debe tener 3-20 caracteres (letras, números o guion bajo).');
+            return;
+        }
         if (!email || !pass) { mostrarMensajeLogin('Completá correo y contraseña.'); return; }
+
+        const usernameLower = username.toLowerCase();
+        mostrarMensajeLogin('Verificando nombre de usuario...');
+        try {
+            const yaExiste = await db.collection('nombresUsuario').doc(usernameLower).get();
+            if (yaExiste.exists) {
+                mostrarMensajeLogin('Ese nombre de usuario ya está en uso, probá con otro.');
+                return;
+            }
+        } catch (err) {
+            mostrarMensajeLogin('No pudimos verificar el nombre de usuario, intentá de nuevo.');
+            return;
+        }
+
         mostrarMensajeLogin('Creando cuenta...');
-        auth.createUserWithEmailAndPassword(email, pass)
-            .catch(err => mostrarMensajeLogin(traducirErrorFirebase(err)));
+        try {
+            const cred = await auth.createUserWithEmailAndPassword(email, pass);
+            await cred.user.updateProfile({ displayName: username });
+            await db.collection('nombresUsuario').doc(usernameLower).set({ uid: cred.user.uid });
+            await db.collection('usuarios').doc(cred.user.uid).set({
+                email: email.toLowerCase(),
+                username: usernameLower,
+                usernameDisplay: username
+            }, { merge: true });
+        } catch (err) {
+            mostrarMensajeLogin(traducirErrorFirebase(err));
+        }
     });
 }
 
@@ -1615,8 +1713,11 @@ auth.onAuthStateChanged(user => {
     usuarioActual = user;
     if (user) {
         huboSesionAntes = true;
-        if (btnLoginModal) btnLoginModal.textContent = '👤 ' + user.email;
+        if (btnLoginModal) btnLoginModal.textContent = '👤 ' + (user.displayName || user.email);
         if (modalLogin) modalLogin.classList.add('oculto');
+        db.collection('usuarios').doc(user.uid).set({
+            email: user.email.toLowerCase()
+        }, { merge: true }).catch(err => console.error('Error guardando email:', err));
         cargarProgresoUsuario();
     } else {
         if (btnLoginModal) btnLoginModal.textContent = '👤 Cuenta / Registro';
@@ -1647,17 +1748,291 @@ function cargarProgresoUsuario() {
         titulosVistosGuardados = new Set(doc.exists ? (doc.data().vistos || []) : []);
         aplicarVistosGuardados(document);
         actualizarTodasLasColecciones();
+        renderizarLogros();
     }).catch(err => console.error('Error cargando progreso:', err));
 }
 
 function guardarProgresoUsuario() {
-    if (!usuarioActual) return;
     const titulos = new Set();
     document.querySelectorAll('.tarjeta-media.vista').forEach(t => {
         titulos.add(t.querySelector('h3').textContent);
     });
     titulosVistosGuardados = titulos;
+    renderizarLogros();
+
+    if (!usuarioActual) return;
+    const idsLogros = logrosDisponibles.filter(l => l.condicion(titulos)).map(l => l.id);
     db.collection('usuarios').doc(usuarioActual.uid).set({
-        vistos: Array.from(titulos)
+        vistos: Array.from(titulos),
+        logros: idsLogros
     }, { merge: true }).catch(err => console.error('Error guardando progreso:', err));
+}
+
+// ==========================================
+// LOGROS: RENDERIZADO
+// ==========================================
+function renderizarLogros() {
+    const grilla = document.getElementById('grilla-logros');
+    const mensaje = document.getElementById('mensaje-logros');
+    if (!grilla) return;
+
+    const desbloqueados = logrosDisponibles.filter(l => l.condicion(titulosVistosGuardados));
+    if (mensaje) {
+        mensaje.textContent = usuarioActual
+            ? `Desbloqueaste ${desbloqueados.length} de ${logrosDisponibles.length} logros.`
+            : `Desbloqueaste ${desbloqueados.length} de ${logrosDisponibles.length} logros (iniciá sesión para guardarlos).`;
+    }
+
+    grilla.innerHTML = '';
+    logrosDisponibles.forEach(logro => {
+        const desbloqueado = logro.condicion(titulosVistosGuardados);
+        grilla.insertAdjacentHTML('beforeend', `
+            <div class="tarjeta-logro ${desbloqueado ? 'desbloqueado' : 'bloqueado'}">
+                <div class="logro-icono">${logro.icono}</div>
+                <h3>${logro.nombre}</h3>
+                <p>${logro.descripcion}</p>
+                <span class="logro-estado">${desbloqueado ? '✓ Desbloqueado' : '🔒 Bloqueado'}</span>
+            </div>
+        `);
+    });
+}
+
+const btnLogros = document.getElementById('btn-logros');
+if (btnLogros) {
+    btnLogros.addEventListener('click', () => {
+        renderizarLogros();
+        cambiarSeccion(document.getElementById('seccion-logros'));
+    });
+}
+
+// ==========================================
+// AMIGOS
+// ==========================================
+const btnAmigos = document.getElementById('btn-amigos');
+if (btnAmigos) {
+    btnAmigos.addEventListener('click', () => {
+        if (!usuarioActual) {
+            cambiarSeccion(document.getElementById('seccion-amigos'));
+            const msg = document.getElementById('mensaje-amigos');
+            if (msg) msg.textContent = 'Iniciá sesión para poder agregar amigos.';
+            return;
+        }
+        cargarSolicitudesRecibidas();
+        cargarMisAmigos();
+        cambiarSeccion(document.getElementById('seccion-amigos'));
+    });
+}
+
+const btnEnviarSolicitud = document.getElementById('btn-enviar-solicitud');
+if (btnEnviarSolicitud) {
+    btnEnviarSolicitud.addEventListener('click', enviarSolicitudAmistad);
+}
+
+async function enviarSolicitudAmistad() {
+    const inputUsername = document.getElementById('buscar-amigo-username');
+    const msg = document.getElementById('mensaje-amigos');
+    const usernameBuscado = inputUsername.value.trim().toLowerCase();
+
+    if (!usuarioActual) { msg.textContent = 'Tenés que iniciar sesión primero.'; return; }
+    if (!usernameBuscado) { msg.textContent = 'Escribí un nombre de usuario.'; return; }
+    if (usernameBuscado === (usuarioActual.displayName || '').toLowerCase()) { msg.textContent = 'Ese sos vos 😅'; return; }
+
+    msg.textContent = 'Buscando...';
+    try {
+        const nombreDoc = await db.collection('nombresUsuario').doc(usernameBuscado).get();
+        if (!nombreDoc.exists) { msg.textContent = 'No encontramos a nadie con ese nombre de usuario.'; return; }
+        const destinoUid = nombreDoc.data().uid;
+        if (destinoUid === usuarioActual.uid) { msg.textContent = 'Ese sos vos 😅'; return; }
+
+        const amistadId = [usuarioActual.uid, destinoUid].sort().join('_');
+        const amistadDoc = await db.collection('amistades').doc(amistadId).get();
+        if (amistadDoc.exists) { msg.textContent = 'Ya son amigos.'; return; }
+
+        const existente = await db.collection('solicitudes')
+            .where('de', '==', usuarioActual.uid)
+            .where('para', '==', destinoUid)
+            .get();
+        if (!existente.empty) { msg.textContent = 'Ya le enviaste una solicitud a esa persona.'; return; }
+
+        await db.collection('solicitudes').add({
+            de: usuarioActual.uid,
+            deUsername: usuarioActual.displayName || usuarioActual.email,
+            para: destinoUid,
+            paraUsername: usernameBuscado,
+            estado: 'pendiente',
+            fecha: firebase.firestore.FieldValue.serverTimestamp()
+        });
+        msg.textContent = '¡Solicitud enviada!';
+        inputUsername.value = '';
+    } catch (err) {
+        console.error('Error enviando solicitud:', err);
+        msg.textContent = 'Ocurrió un error, intentá de nuevo.';
+    }
+}
+
+async function cargarSolicitudesRecibidas() {
+    if (!usuarioActual) return;
+    const cont = document.getElementById('lista-solicitudes');
+    if (!cont) return;
+    cont.innerHTML = '<p style="color:#aaa;">Cargando...</p>';
+
+    try {
+        const snap = await db.collection('solicitudes')
+            .where('para', '==', usuarioActual.uid)
+            .where('estado', '==', 'pendiente')
+            .get();
+
+        if (snap.empty) {
+            cont.innerHTML = '<p style="color:#aaa;">No tenés solicitudes pendientes.</p>';
+            return;
+        }
+
+        cont.innerHTML = '';
+        snap.forEach(docSnap => {
+            const d = docSnap.data();
+            const div = document.createElement('div');
+            div.className = 'solicitud-item';
+            div.innerHTML = `
+                <span>${d.deUsername}</span>
+                <div>
+                    <button class="btn-aceptar-solicitud" data-id="${docSnap.id}" data-de="${d.de}">Aceptar</button>
+                    <button class="btn-rechazar-solicitud" data-id="${docSnap.id}">Rechazar</button>
+                </div>
+            `;
+            cont.appendChild(div);
+        });
+
+        cont.querySelectorAll('.btn-aceptar-solicitud').forEach(btn => {
+            btn.addEventListener('click', async () => {
+                const solicitudId = btn.getAttribute('data-id');
+                const deUid = btn.getAttribute('data-de');
+                const amistadId = [usuarioActual.uid, deUid].sort().join('_');
+                try {
+                    await db.collection('amistades').doc(amistadId).set({
+                        miembros: [usuarioActual.uid, deUid]
+                    });
+                    await db.collection('solicitudes').doc(solicitudId).update({ estado: 'aceptada' });
+                    cargarSolicitudesRecibidas();
+                    cargarMisAmigos();
+                } catch (err) {
+                    console.error('Error aceptando solicitud:', err);
+                }
+            });
+        });
+
+        cont.querySelectorAll('.btn-rechazar-solicitud').forEach(btn => {
+            btn.addEventListener('click', async () => {
+                const solicitudId = btn.getAttribute('data-id');
+                try {
+                    await db.collection('solicitudes').doc(solicitudId).update({ estado: 'rechazada' });
+                    cargarSolicitudesRecibidas();
+                } catch (err) {
+                    console.error('Error rechazando solicitud:', err);
+                }
+            });
+        });
+    } catch (err) {
+        console.error('Error cargando solicitudes:', err);
+        cont.innerHTML = '<p style="color:#aaa;">Ocurrió un error cargando las solicitudes.</p>';
+    }
+}
+
+async function cargarMisAmigos() {
+    if (!usuarioActual) return;
+    const cont = document.getElementById('lista-amigos');
+    if (!cont) return;
+    cont.innerHTML = '<p style="color:#aaa;">Cargando...</p>';
+
+    try {
+        const snap = await db.collection('amistades')
+            .where('miembros', 'array-contains', usuarioActual.uid)
+            .get();
+
+        if (snap.empty) {
+            cont.innerHTML = '<p style="color:#aaa;">Todavía no tenés amigos agregados.</p>';
+            return;
+        }
+
+        cont.innerHTML = '';
+        for (const docSnap of snap.docs) {
+            const d = docSnap.data();
+            const amigoUid = d.miembros.find(m => m !== usuarioActual.uid);
+            const amigoDoc = await db.collection('usuarios').doc(amigoUid).get();
+            const amigoData = amigoDoc.exists ? amigoDoc.data() : {};
+            const amigoNombre = amigoData.usernameDisplay || amigoData.email || amigoUid;
+
+            const div = document.createElement('div');
+            div.className = 'amigo-item';
+            div.innerHTML = `
+                <span>${amigoNombre}</span>
+                <button class="btn-ver-biblioteca-amigo" data-uid="${amigoUid}" data-email="${amigoNombre}">Ver Biblioteca</button>
+            `;
+            cont.appendChild(div);
+        }
+
+        cont.querySelectorAll('.btn-ver-biblioteca-amigo').forEach(btn => {
+            btn.addEventListener('click', () => {
+                verBibliotecaAmigo(btn.getAttribute('data-uid'), btn.getAttribute('data-email'));
+            });
+        });
+    } catch (err) {
+        console.error('Error cargando amigos:', err);
+        cont.innerHTML = '<p style="color:#aaa;">Ocurrió un error cargando tus amigos.</p>';
+    }
+}
+
+async function verBibliotecaAmigo(uid, email) {
+    const grilla = document.getElementById('grilla-biblioteca-amigo');
+    const logrosCont = document.getElementById('logros-biblioteca-amigo');
+    const titulo = document.getElementById('titulo-biblioteca-amigo');
+    if (!grilla) return;
+
+    grilla.innerHTML = '<p style="color:#aaa;">Cargando...</p>';
+    logrosCont.innerHTML = '';
+    titulo.textContent = 'Biblioteca de ' + email;
+    cambiarSeccion(document.getElementById('seccion-biblioteca-amigo'));
+
+    try {
+        const doc = await db.collection('usuarios').doc(uid).get();
+        const vistosAmigo = new Set(doc.exists ? (doc.data().vistos || []) : []);
+
+        grilla.innerHTML = '';
+        const titulosAgregados = new Set();
+        const agregarSiVisto = (t, poster) => {
+            if (vistosAmigo.has(t) && !titulosAgregados.has(t)) {
+                titulosAgregados.add(t);
+                grilla.insertAdjacentHTML('beforeend', `
+                    <div class="tarjeta-media vista">
+                        <img src="${poster}" alt="${t}">
+                        <h3>${t}</h3>
+                    </div>
+                `);
+            }
+        };
+        listaMedia.forEach(item => agregarSiVisto(item.titulo, item.poster));
+        colecciones.forEach(col => {
+            agregarSiVisto(col.titulo, col.poster);
+            col.peliculas.forEach(p => agregarSiVisto(p.titulo, p.poster));
+        });
+
+        if (titulosAgregados.size === 0) {
+            grilla.innerHTML = '<p style="color:#aaa;">Todavía no marcó nada como visto.</p>';
+        }
+
+        logrosDisponibles.forEach(logro => {
+            if (logro.condicion(vistosAmigo)) {
+                logrosCont.insertAdjacentHTML('beforeend', `<span class="chip-logro">${logro.icono} ${logro.nombre}</span>`);
+            }
+        });
+    } catch (err) {
+        console.error('Error cargando biblioteca del amigo:', err);
+        grilla.innerHTML = '<p style="color:#aaa;">Ocurrió un error cargando esta biblioteca.</p>';
+    }
+}
+
+const btnVolverBibliotecaAmigo = document.getElementById('btn-volver-biblioteca-amigo');
+if (btnVolverBibliotecaAmigo) {
+    btnVolverBibliotecaAmigo.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-amigos'));
+    });
 }

@@ -21,6 +21,8 @@
 
     <nav class="nav-principal">
         <button id="btn-biblioteca" class="btn-nav" style="background-color: #28a745;">Mi Biblioteca 📚</button>
+        <button id="btn-logros" class="btn-nav" style="background-color: #f1c40f; color: #1a1d24;">Logros 🏆</button>
+        <button id="btn-amigos" class="btn-nav" style="background-color: #9b59b6;">Amigos 👥</button>
 
         <!-- Menú Road to Doomsday -->
         <div class="contenedor-menu" id="contenedor-doomsday">
@@ -120,6 +122,7 @@
         <span class="close-modal" id="close-modal">&times;</span>
         <h2>Acceso / Registro</h2>
         <p style="font-size:12px; color:#aaa; margin-bottom:20px;">Sincroniza tu progreso en todos tus dispositivos.</p>
+        <input type="text" id="username-login" placeholder="Nombre de usuario (solo para Crear Cuenta)">
         <input type="email" id="email-login" placeholder="Correo electrónico">
         <input type="password" id="password-login" placeholder="Contraseña (mínimo 6 caracteres)">
         <button class="btn-modal" id="btn-crear-cuenta">Crear Cuenta</button>
@@ -295,6 +298,45 @@
     <section id="seccion-biblioteca" class="oculto">
         <h2>Mi Biblioteca de Vistos 📚</h2>
         <div class="grilla-biblioteca" id="grilla-mi-biblioteca"></div>
+    </section>
+
+    <!-- SECCIÓN: LOGROS -->
+    <section id="seccion-logros" class="oculto">
+        <h2>Logros 🏆</h2>
+        <p id="mensaje-logros" style="color:#aaa; font-size:13px; margin-bottom:15px;"></p>
+        <div class="grilla-logros" id="grilla-logros"></div>
+    </section>
+
+    <!-- SECCIÓN: AMIGOS -->
+    <section id="seccion-amigos" class="oculto">
+        <h2>Amigos 👥</h2>
+
+        <div class="caja-amigos">
+            <h3>Agregar amigo</h3>
+            <div class="fila-buscar-amigo">
+                <input type="text" id="buscar-amigo-username" placeholder="Nombre de usuario de tu amigo/a">
+                <button class="btn-modal" id="btn-enviar-solicitud">Enviar Solicitud</button>
+            </div>
+            <p id="mensaje-amigos" style="color:#aaa; font-size:13px; margin-top:8px;"></p>
+        </div>
+
+        <div class="caja-amigos">
+            <h3>Solicitudes recibidas</h3>
+            <div id="lista-solicitudes"></div>
+        </div>
+
+        <div class="caja-amigos">
+            <h3>Mis amigos</h3>
+            <div id="lista-amigos"></div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: BIBLIOTECA DE UN AMIGO -->
+    <section id="seccion-biblioteca-amigo" class="oculto">
+        <button class="btn-volver" id="btn-volver-biblioteca-amigo">← Volver a Amigos</button>
+        <h2 id="titulo-biblioteca-amigo">Biblioteca</h2>
+        <div id="logros-biblioteca-amigo" class="chips-logros"></div>
+        <div class="grilla-biblioteca" id="grilla-biblioteca-amigo"></div>
     </section>
 
     <!-- SECCIÓN: ROAD TO DOOMSDAY -->
