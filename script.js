@@ -525,6 +525,21 @@ const colecciones = [
         ]
     },
     {
+        id: "wonder-woman-gal-gadot",
+        titulo: "Wonder Woman: Gal Gadot",
+        categoria: "dc-personajes",
+        poster: "https://i.ebayimg.com/images/g/3psAAOSw4P9i5ryR/s-l1200.jpg",
+        peliculas: [
+            { titulo: "Batman v Superman", poster: "https://m.media-amazon.com/images/I/81o7zaih1mL._AC_UF894,1000_QL80_.jpg" },
+            { titulo: "Wonder Woman", poster: "https://im.ziffdavisinternational.com/ign_es/screenshot/default/wonder-woman-sp_q9yz.jpg" },
+            { titulo: "Justice League", poster: "https://www.guioteca.com/comics/files/2017/10/justice-league-final-poster-1039055.jpeg" },
+            { titulo: "Wonder Woman 1984", poster: "https://cdn.europosters.eu/image/1300/83411.jpg" },
+            { titulo: "Shazam! Fury of the Gods", poster: "https://cinembrollos.com/wp-content/uploads/2023/02/shazam_fury_of_the_gods_ver5_xlg.jpeg" },
+            { titulo: "The Flash", poster: "https://cdng.europosters.eu/pod_public/1300/317434.jpg" },
+            { titulo: "Zack Snyder's Justice League", poster: "https://m.media-amazon.com/images/M/MV5BNDA0MzM5YTctZTU2My00NGQ5LWE2NTEtNDM0MjZmMDBkOTZkXkEyXkFqcGc@._V1_.jpg" }
+        ]
+    },
+    {
         id: "ben10-original",
         titulo: "Ben 10",
         categoria: "ben10",
@@ -1128,6 +1143,26 @@ if(btnCronologico) {
 }
 
 // ==========================================
+// FILTROS "MCU: COMPLETO" (Orden de Lanzamiento / Cronológico)
+// ==========================================
+const botonesFiltroMcu = document.querySelectorAll('.btn-filtro-mcu');
+botonesFiltroMcu.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroMcu.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const tipoElegido = this.getAttribute('data-tipo');
+        const tarjetas = document.querySelectorAll('#seccion-mcu-cronologico .tarjeta-media');
+        const contenedor = document.getElementById('grilla-mcu-cronologico');
+        const atributo = tipoElegido === 'cronologico' ? 'data-crono' : 'data-orden';
+
+        const arrayTarjetas = Array.from(tarjetas).sort(
+            (a, b) => parseFloat(a.getAttribute(atributo)) - parseFloat(b.getAttribute(atributo))
+        );
+        arrayTarjetas.forEach(t => contenedor.appendChild(t));
+    });
+});
+
+// ==========================================
 // STAR WARS: HISTORIA COMPLETA (cronológico)
 // ==========================================
 const btnSwHistoria = document.getElementById('btn-sw-historia');
@@ -1326,6 +1361,13 @@ if(btnVolverChristopherNolan) {
 const btnVolverSupermanHenryCavill = document.getElementById('btn-volver-superman-henry-cavill');
 if(btnVolverSupermanHenryCavill) {
     btnVolverSupermanHenryCavill.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dc-personajes'));
+    });
+}
+
+const btnVolverWonderWomanGalGadot = document.getElementById('btn-volver-wonder-woman-gal-gadot');
+if(btnVolverWonderWomanGalGadot) {
+    btnVolverWonderWomanGalGadot.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-dc-personajes'));
     });
 }

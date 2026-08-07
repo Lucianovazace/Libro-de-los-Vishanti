@@ -60,7 +60,7 @@
                     <div id="submenu-mcu" class="submenu-anidado oculto">
                         <button class="btn-subcategoria" id="btn-mcu-infinito">Saga del Infinito</button>
                         <button class="btn-subcategoria" id="btn-mcu-multiverso">Saga del Multiverso</button>
-                        <button class="btn-subcategoria" id="btn-mcu-cronologico">Completo (Cronológico)</button>
+                        <button class="btn-subcategoria" id="btn-mcu-cronologico">Completo</button>
                     </div>
                   
                     <button class="btn-subcategoria" id="btn-toggle-multiverso">Multiverso ▼</button>
@@ -349,6 +349,13 @@
         <div class="grilla-biblioteca" id="grilla-superman-henry-cavill"></div>
     </section>
 
+    <!-- COLECCIÓN: WONDER WOMAN GAL GADOT -->
+    <section id="seccion-wonder-woman-gal-gadot" class="oculto">
+        <button class="btn-volver" id="btn-volver-wonder-woman-gal-gadot">← Volver a Personajes</button>
+        <h2>Wonder Woman: Gal Gadot</h2>
+        <div class="grilla-biblioteca" id="grilla-wonder-woman-gal-gadot"></div>
+    </section>
+
     <!-- MCU MULTIVERSO -->
     <section id="seccion-mcu-multiverso" class="oculto">
         <h2>MCU: Saga del Multiverso</h2>
@@ -357,7 +364,11 @@
 
     <!-- MCU CRONOLÓGICO -->
     <section id="seccion-mcu-cronologico" class="oculto">
-        <h2>MCU Completo (Orden Cronológico)</h2>
+        <h2>MCU: Completo</h2>
+        <div class="filtros-seccion">
+            <button class="btn-filtro-mcu activo" data-tipo="salida">Orden de Lanzamiento</button>
+            <button class="btn-filtro-mcu" data-tipo="cronologico">Orden Cronológico</button>
+        </div>
         <div class="grilla-biblioteca" id="grilla-mcu-cronologico"></div>
     </section>
 
