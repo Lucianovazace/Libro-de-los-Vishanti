@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Libro de los Vishanti</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+</head>
+<body>
 <header>
     <div class="header-top">
         <h1>EL MULTIVERSO</h1>
@@ -108,9 +120,11 @@
         <span class="close-modal" id="close-modal">&times;</span>
         <h2>Acceso / Registro</h2>
         <p style="font-size:12px; color:#aaa; margin-bottom:20px;">Sincroniza tu progreso en todos tus dispositivos.</p>
-        <input type="text" id="username" placeholder="Nombre de usuario o Email">
-        <input type="password" id="password" placeholder="Contraseña">
-        <button class="btn-modal" id="btn-submit-login">Entrar / Crear Cuenta</button>
+        <input type="email" id="email-login" placeholder="Correo electrónico">
+        <input type="password" id="password-login" placeholder="Contraseña (mínimo 6 caracteres)">
+        <button class="btn-modal" id="btn-crear-cuenta">Crear Cuenta</button>
+        <button class="btn-modal" id="btn-iniciar-sesion" style="background-color:#3b5998; margin-top:8px;">Iniciar Sesión</button>
+        <p id="mensaje-login" style="color:#ff6b6b; font-size:12px; margin-top:12px; min-height:14px;"></p>
     </div>
 </div>
 
@@ -122,9 +136,37 @@
         <div class="grilla-biblioteca" id="grilla-explorar"></div>
     </section>
 
+    <!-- COLECCIÓN: ACTORES -->
+    <section id="seccion-actores" class="oculto">
+        <button class="btn-volver" id="btn-volver-actores">← Volver a Explorar</button>
+        <h2>Actores</h2>
+        <div class="grilla-biblioteca" id="grilla-actores"></div>
+    </section>
+
+    <!-- COLECCIÓN: DIRECTORES -->
+    <section id="seccion-directores" class="oculto">
+        <button class="btn-volver" id="btn-volver-directores">← Volver a Explorar</button>
+        <h2>Directores</h2>
+        <div class="grilla-biblioteca" id="grilla-directores"></div>
+    </section>
+
+    <!-- COLECCIÓN: CHRISTOPHER NOLAN -->
+    <section id="seccion-christopher-nolan" class="oculto">
+        <button class="btn-volver" id="btn-volver-christopher-nolan">← Volver a Directores</button>
+        <h2>Christopher Nolan</h2>
+        <div class="grilla-biblioteca" id="grilla-christopher-nolan"></div>
+    </section>
+
+    <!-- COLECCIÓN: FRANQUICIAS -->
+    <section id="seccion-franquicias" class="oculto">
+        <button class="btn-volver" id="btn-volver-franquicias">← Volver a Explorar</button>
+        <h2>Franquicias</h2>
+        <div class="grilla-biblioteca" id="grilla-franquicias"></div>
+    </section>
+
     <!-- COLECCIÓN: BEN 10 -->
     <section id="seccion-ben10" class="oculto">
-        <button class="btn-volver" id="btn-volver-ben10">← Volver a Explorar</button>
+        <button class="btn-volver" id="btn-volver-ben10">← Volver a Franquicias</button>
         <h2>Ben 10</h2>
         <div class="grilla-biblioteca" id="grilla-ben10"></div>
     </section>
@@ -159,7 +201,7 @@
 
     <!-- COLECCIÓN: DRAGON BALL -->
     <section id="seccion-dragonball" class="oculto">
-        <button class="btn-volver" id="btn-volver-dragonball">← Volver a Explorar</button>
+        <button class="btn-volver" id="btn-volver-dragonball">← Volver a Franquicias</button>
         <h2>Dragon Ball</h2>
         <div class="grilla-biblioteca" id="grilla-dragonball"></div>
     </section>
@@ -201,6 +243,7 @@
 
     <!-- COLECCIÓN: IT (contenedor con filtros) -->
     <section id="seccion-it" class="oculto">
+        <button class="btn-volver" id="btn-volver-it">← Volver a Franquicias</button>
         <h2>It</h2>
         <div class="filtros-seccion">
             <button class="btn-filtro-it activo" data-tipo="muschietti">Andy Muschietti</button>
@@ -211,7 +254,7 @@
 
     <!-- COLECCIÓN: LEGO -->
     <section id="seccion-lego" class="oculto">
-        <button class="btn-volver" id="btn-volver-lego">← Volver a Explorar</button>
+        <button class="btn-volver" id="btn-volver-lego">← Volver a Franquicias</button>
         <h2>LEGO</h2>
         <div class="grilla-biblioteca" id="grilla-lego"></div>
     </section>
@@ -261,6 +304,13 @@
         <div class="grilla-biblioteca" id="grilla-insomniac"></div>
     </section>
 
+    <!-- COLECCIÓN: LEGO MARVEL -->
+    <section id="seccion-lego-marvel" class="oculto">
+        <button class="btn-volver" id="btn-volver-lego-marvel">← Volver a Videojuegos</button>
+        <h2>LEGO Marvel</h2>
+        <div class="grilla-biblioteca" id="grilla-lego-marvel"></div>
+    </section>
+
     <!-- DC: PERSONAJES -->
     <section id="seccion-dc-personajes" class="oculto">
         <h2>DC Comics: Personajes</h2>
@@ -272,6 +322,13 @@
         <button class="btn-volver" id="btn-volver-batman-ben-affleck">← Volver a Personajes</button>
         <h2>Batman: Ben Affleck</h2>
         <div class="grilla-biblioteca" id="grilla-batman-ben-affleck"></div>
+    </section>
+
+    <!-- COLECCIÓN: SUPERMAN HENRY CAVILL -->
+    <section id="seccion-superman-henry-cavill" class="oculto">
+        <button class="btn-volver" id="btn-volver-superman-henry-cavill">← Volver a Personajes</button>
+        <h2>Superman: Henry Cavill</h2>
+        <div class="grilla-biblioteca" id="grilla-superman-henry-cavill"></div>
     </section>
 
     <!-- MCU MULTIVERSO -->
@@ -317,6 +374,13 @@
         <button class="btn-volver" id="btn-volver-arkhamverse">← Volver a Videojuegos</button>
         <h2>Arkhamverse</h2>
         <div class="grilla-biblioteca" id="grilla-arkhamverse"></div>
+    </section>
+
+    <!-- COLECCIÓN: LEGO DC -->
+    <section id="seccion-lego-dc" class="oculto">
+        <button class="btn-volver" id="btn-volver-lego-dc">← Volver a Videojuegos</button>
+        <h2>LEGO DC</h2>
+        <div class="grilla-biblioteca" id="grilla-lego-dc"></div>
     </section>
 
     <!-- COLECCIÓN: PELÍCULAS INDEPENDIENTES -->
@@ -426,6 +490,14 @@
         <h2>Star Wars: Animación</h2>
         <div class="grilla-biblioteca"></div>
     </section>
+
+    <!-- COLECCIÓN: STAR WARS VISIONS -->
+    <section id="seccion-sw-visions" class="oculto">
+        <button class="btn-volver" id="btn-volver-sw-visions">← Volver a Animación</button>
+        <h2>Star Wars: Visions</h2>
+        <div class="grilla-biblioteca" id="grilla-sw-visions"></div>
+    </section>
+
     <section id="seccion-sw-episodios" class="oculto">
         <h2>Star Wars: Episodios</h2>
         <div class="grilla-biblioteca"></div>
@@ -448,3 +520,6 @@
     </section>
 
 </main>
+<script src="script.js"></script>
+</body>
+</html>

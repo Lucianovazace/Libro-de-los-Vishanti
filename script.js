@@ -173,8 +173,12 @@ const listaMedia = [
 
     // --- DC ELSEWORLDS: MULTIVERSO ---
     { titulo: "Stargirl", categoria: "dc-multiverso", subtipo: "liveaction", tipo: "Serie - Tierra 2", poster: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p18061959_b_v12_af.jpg" },
+    { titulo: "Titans", categoria: "dc-multiverso", subtipo: "liveaction", tipo: "Serie - Tierra 9", poster: "https://image.tmdb.org/t/p/original/awneRTOXqumB1fOPoUIXjUqksh5.jpg" },
+    { titulo: "Green Lantern", categoria: "dc-multiverso", subtipo: "liveaction", tipo: "Película - Tierra 12", poster: "https://m.media-amazon.com/images/I/71-ckdWvqfL.jpg" },
+    { titulo: "Swamp Thing", categoria: "dc-multiverso", subtipo: "liveaction", tipo: "Serie - Tierra 19", poster: "https://m.media-amazon.com/images/M/MV5BMGQzYzgxZWQtZmI3YS00YTIzLTk4NmQtMGE0YTdiNGNlZjYxXkEyXkFqcGc@.V1.jpg" },
 
     // --- DC COMICS: VIDEOJUEGOS ---
+    { titulo: "Gotham Knights", categoria: "dc-videojuegos", tipo: "Videojuego", poster: "https://m.media-amazon.com/images/I/81zkE4hKUjL.jpg" },
     // (Ver colección "Arkhamverse" más abajo, incluye Suicide Squad: Kill the Justice League)
 
     // --- STAR WARS: EPISODIOS ---
@@ -211,14 +215,20 @@ const listaMedia = [
     // --- STAR WARS: ANIMACIÓN ---
     { titulo: "The Clone Wars (Película)", categoria: "sw-animacion", crono: 4, tipo: "Película", poster: "https://cdn.europosters.eu/image/750/3335.jpg" },
     { titulo: "The Clone Wars (Serie)", categoria: "sw-animacion", crono: 5, tipo: "Serie", poster: "https://i.ebayimg.com/images/g/nSIAAOSwVkdlOSVq/s-l1200.jpg" },
-    { titulo: "The Bad Batch", categoria: "sw-animacion", crono: 7, tipo: "Serie", poster: "https://i.ebayimg.com/00/s/MTYwMFgxMDgw/z/47wAAOSwZp1gaLsV/$_57.JPG?set_id=8800005007" },
-    { titulo: "Maul: Shadow Lord", categoria: "sw-animacion", crono: 9, tipo: "Audiodrama", poster: "https://i.ebayimg.com/images/g/oLEAAeSwfc9pyZc-/s-l1200.jpg" },
-    { titulo: "Star Wars Rebels", categoria: "sw-animacion", crono: 11, tipo: "Serie", poster: "https://i.ebayimg.com/00/s/MTYwMFgxMDk3/z/9mgAAOSwjJVgx9o1/$_57.JPG?set_id=8800005007" },
+    { titulo: "The Bad Batch", categoria: "sw-animacion", crono: 7, tipo: "Serie", poster: "https://myhotposters.com/cdn/shop/products/mL5264_1024x1024.jpg?v=1748532845" },
+    { titulo: "Star Wars: Tales of the Underworld", categoria: "sw-animacion", crono: 7.5, tipo: "Serie (Antología)", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNFK8wlF1QPEfZkNraIHz1OgEvm4VhlXvAJMCN8uV_9r5gUdFFbIirvigX&s=10" },
+    { titulo: "Maul: Shadow Lord", categoria: "sw-animacion", crono: 9, tipo: "Audiodrama", poster: "https://cdn.europosters.eu/image/1300/307057.jpg" },
+    { titulo: "Star Wars Rebels", categoria: "sw-animacion", crono: 11, tipo: "Serie", poster: "https://i.ebayimg.com/images/g/ZIkAAOSwVLRad2xL/s-l1200.jpg" },
+    { titulo: "Star Wars: Tales of the Empire", categoria: "sw-animacion", crono: 18.5, tipo: "Serie (Antología)", poster: "https://lumiere-a.akamaihd.net/v1/images/tales-of-the-empire-key-art_2b34360a.jpeg?region=0,0,1688,2500" },
     { titulo: "Star Wars Resistance", categoria: "sw-animacion", crono: 21, tipo: "Serie", poster: "https://m.media-amazon.com/images/M/MV5BMTkyMTc3NjAwNF5BMl5BanBnXkFtZTgwNTU1ODIyNjM@.V1.jpg" },
     { titulo: "LEGO Star Wars: Terrifying Tales", categoria: "sw-animacion", crono: 25, tipo: "Especial", poster: "https://lumiere-a.akamaihd.net/v1/images/image_6c11e3f5.jpeg?region=0,0,675,1000" },
     { titulo: "LEGO Star Wars Holiday Special", categoria: "sw-animacion", crono: 26, tipo: "Especial", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS29ejXflK4z26fTsqGHjefu3vSJ2xatkwqtEVLO9U-rBdaX0bXX3GhiRI&s=10" },
+    { titulo: "LEGO Star Wars: La Reconstrucción de la Galaxia", categoria: "sw-animacion", crono: 27, tipo: "Especial", poster: "https://lumiere-a.akamaihd.net/v1/images/lego-star-wars-rebuild-the-galaxy-sith_100358bf.jpeg" },
+    { titulo: "LEGO Star Wars: La Reconstrucción de la Galaxia: Piezas del Pasado", categoria: "sw-animacion", crono: 28, tipo: "Especial", poster: "https://www.lucasfilm.com/app/uploads/lego-rebuild-the-galaxy-pieces-of-the-past-lfl-480x711.jpg" },
+    { titulo: "LEGO Star Wars: All-Stars", categoria: "sw-animacion", crono: 29, tipo: "Especial", poster: "https://lumiere-a.akamaihd.net/v1/images/image_c0db4cb3.jpeg" },
+    { titulo: "LEGO Star Wars: Crónicas Droide", categoria: "sw-animacion", crono: 30, tipo: "Especial", poster: "https://static.wikia.nocookie.net/esstarwars/images/d/d0/LEGO_Cr%C3%B3nicas_Droides.jpg/revision/latest/thumbnail/width/360/height/360?cb=20200911035550" },
+    { titulo: "LEGO Star Wars: Vacaciones de Verano", categoria: "sw-animacion", crono: 31, tipo: "Especial", poster: "https://m.media-amazon.com/images/M/MV5BYjg3MTdiMTAtZWFhZS00Y2M0LWEwNzYtMjEyMTU0ZGYwOGJmXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
     { titulo: "Star Wars: Tales of the Jedi", categoria: "sw-animacion", crono: 1.5, tipo: "Serie (Antología)", poster: "https://lumiere-a.akamaihd.net/v1/images/tales-of-the-jedi-poster_dc892101.jpeg" },
-    { titulo: "Star Wars: Visions", categoria: "sw-animacion", crono: 27, tipo: "Serie (Antología, no canon)", poster: "https://lumiere-a.akamaihd.net/v1/images/image_5fcdd79b.jpeg" },
 
     // --- STAR WARS: LIBROS Y CÓMICS ---
     { titulo: "Thrawn (Trilogía)", categoria: "sw-libros", tipo: "Libro", poster: "https://placehold.co/300x450?text=Thrawn" },
@@ -258,6 +268,60 @@ const listaMedia = [
 // COLECCIONES (fichas que se abren y muestran progreso)
 // ==========================================
 const colecciones = [
+    {
+        id: "actores",
+        titulo: "Actores",
+        categoria: "explorar",
+        poster: "https://placehold.co/300x450?text=Actores",
+        esContenedor: true,
+        peliculas: []
+    },
+    {
+        id: "directores",
+        titulo: "Directores",
+        categoria: "explorar",
+        poster: "https://placehold.co/300x450?text=Directores",
+        esContenedor: true,
+        peliculas: []
+    },
+    {
+        id: "franquicias",
+        titulo: "Franquicias",
+        categoria: "explorar",
+        poster: "https://placehold.co/300x450?text=Franquicias",
+        esContenedor: true,
+        peliculas: []
+    },
+    {
+        id: "christopher-nolan",
+        titulo: "Christopher Nolan",
+        categoria: "directores",
+        poster: "https://w0.peakpx.com/wallpaper/37/420/HD-wallpaper-christopher-nolan-boss-tenet.jpg",
+        peliculas: [
+            { titulo: "Following", poster: "https://m.media-amazon.com/images/M/MV5BYTQxYzIwMTAtYjZlNi00YzkwLWI4ZGYtNzNlZjU3N2MyNzI4XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+            { titulo: "Memento", poster: "https://m.media-amazon.com/images/I/51jojzqpkPL.AC_UF894,1000_QL80.jpg" },
+            { titulo: "Insomnia", poster: "https://m.media-amazon.com/images/M/MV5BOTE2NzQ0MzQtMDRmZi00ZWRiLWE4MDEtY2M1Mjc3OGY5N2JkXkEyXkFqcGc@.V1.jpg" },
+            { titulo: "Batman Begins", poster: "https://i.pinimg.com/736x/67/88/19/678819ae9fc2b7104ecc124f2e586c05.jpg" },
+            { titulo: "The Prestige", poster: "https://www.originalfilmart.com/cdn/shop/products/prestige_2006_english_advance_original_film_art_5000x.jpg?v=1551795612" },
+            { titulo: "The Dark Knight", poster: "https://www.movieposters.com/cdn/shop/files/darkknight.building.24x36_20e90057-f673-4cc3-9ce7-7b0d3eeb7d83_1024x1024.jpg?v=1762974221" },
+            { titulo: "Inception", poster: "https://image.tmdb.org/t/p/original/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg" },
+            { titulo: "The Dark Knight Rises", poster: "https://i.pinimg.com/736x/76/bd/14/76bd1451fa0d4e66a83095bfb5ad63a8.jpg" },
+            { titulo: "Interstellar", poster: "https://m.media-amazon.com/images/I/91obuWzA3XL.jpg" },
+            { titulo: "Dunkirk", poster: "https://i.etsystatic.com/36541132/r/il/7c267b/7018214484/il_570xN.7018214484_2wqe.jpg" },
+            { titulo: "Tenet", poster: "https://www.originalfilmart.com/cdn/shop/files/tenet_2020_advance_original_film_art_37f46c8f-cdc8-468e-b8b5-2492200deb1c_5000x.webp?v=1756494471" },
+            { titulo: "Oppenheimer", poster: "https://i.ebayimg.com/images/g/n9MAAOSw6mBktOuN/s-l1200.jpg" },
+            { titulo: "The Odyssey", poster: "https://img.asmedia.epimg.net/resizer/v2/AP6RDKAGQVE4DEON7ETUS4UVM4.jpg?auth=5abec700c478bffaa862bc1e153efeb77076781fbd4dc9df918ddb11a11979ea&width=375" }
+        ]
+    },
+    {
+        id: "sw-visions",
+        titulo: "Star Wars: Visions",
+        categoria: "sw-animacion",
+        poster: "https://lumiere-a.akamaihd.net/v1/images/image_5fcdd79b.jpeg",
+        peliculas: [
+            { titulo: "The Ninth Jedi", poster: "https://lumiere-a.akamaihd.net/v1/images/star-wars-the-ninth-jedi-teaser-poster-eng_2b2aba2f.jpeg?width=1136" }
+        ]
+    },
     {
         id: "tomorrowverse",
         titulo: "Tomorrowverse",
@@ -364,6 +428,20 @@ const colecciones = [
         ]
     },
     {
+        id: "lego-dc",
+        titulo: "LEGO DC",
+        categoria: "dc-videojuegos",
+        poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy-P8ozs-75ixhoOjwsLnDm-azOf78e-BGJ6Lr0_bw1uHp0QaK1uVyKgY&s=10",
+        esVideojuego: true,
+        peliculas: [
+            { titulo: "LEGO Batman: The Videogame", poster: "https://m.media-amazon.com/images/M/MV5BYjg1OGFiNjItNDJmNS00ZWNjLWJhZGUtNTY0Yzg4YmVkM2U0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+            { titulo: "LEGO Batman 2: DC Super Heroes", poster: "https://m.media-amazon.com/images/M/MV5BMjgyMThmZTgtNzk5MS00ZWQ0LWJhYjMtNmI5NzhhNGM1MWU4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+            { titulo: "LEGO Batman 3: Beyond Gotham", poster: "https://m.media-amazon.com/images/M/MV5BN2E3ZGM5MTAtOGE3NS00OWMyLWFkNmMtOTVlODUwOWNmMWE5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+            { titulo: "LEGO DC Super-Villains", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtWxQKciBUEcUG1kHfFfAvAcWtvkUZ8j-eOgDLzz5EbuUXN5ts6tIcgqs&s=10" },
+            { titulo: "LEGO Batman: Legacy of the Dark Knight", poster: "https://m.media-amazon.com/images/M/MV5BNDhlYTFmOGMtY2YxZi00ODczLTg0NTQtZDJiMzBjZWQ4YzU2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" }
+        ]
+    },
+    {
         id: "insomniac",
         titulo: "Insomniac",
         categoria: "marvel-videojuegos",
@@ -376,6 +454,18 @@ const colecciones = [
         ]
     },
     {
+        id: "lego-marvel",
+        titulo: "LEGO Marvel",
+        categoria: "marvel-videojuegos",
+        poster: "https://i.pinimg.com/736x/b1/81/e1/b181e1dbfcc00f18ed6661181c07e16e.jpg",
+        esVideojuego: true,
+        peliculas: [
+            { titulo: "LEGO Marvel Super Heroes", poster: "https://m.media-amazon.com/images/M/MV5BOTA5ODA2NTI2M15BMl5BanBnXkFtZTgwNTcxMzU1MDE@._V1_.jpg" },
+            { titulo: "LEGO Marvel's Avengers", poster: "https://icemanvideogames.com/cdn/shop/products/ps4_legoavengers_2_f47f382b-b692-4508-aed2-3b4299dfaeb7_1024x1024.jpg?v=1734139316" },
+            { titulo: "LEGO Marvel Super Heroes 2", poster: "https://static.wikia.nocookie.net/marveldatabase/images/8/84/LEGO_Marvel_Super_Heroes_2_box_art.jpg/revision/latest?cb=20170516213944" }
+        ]
+    },
+    {
         id: "batman-ben-affleck",
         titulo: "Batman: Ben Affleck",
         categoria: "dc-personajes",
@@ -384,6 +474,20 @@ const colecciones = [
             { titulo: "Batman v Superman", poster: "https://m.media-amazon.com/images/I/81o7zaih1mL._AC_UF894,1000_QL80_.jpg" },
             { titulo: "Suicide Squad", poster: "https://image.tmdb.org/t/p/original/sk3FZgh3sRrmr8vyhaitNobMcfh.jpg" },
             { titulo: "Justice League", poster: "https://www.guioteca.com/comics/files/2017/10/justice-league-final-poster-1039055.jpeg" },
+            { titulo: "The Flash", poster: "https://cdng.europosters.eu/pod_public/1300/317434.jpg" },
+            { titulo: "Zack Snyder's Justice League", poster: "https://m.media-amazon.com/images/M/MV5BNDA0MzM5YTctZTU2My00NGQ5LWE2NTEtNDM0MjZmMDBkOTZkXkEyXkFqcGc@._V1_.jpg" }
+        ]
+    },
+    {
+        id: "superman-henry-cavill",
+        titulo: "Superman: Henry Cavill",
+        categoria: "dc-personajes",
+        poster: "https://i.ebayimg.com/00/s/MTYwMFgxMDc5/z/F~4AAOSwzDxi5tqG/$_57.JPG?set_id=880000500F",
+        peliculas: [
+            { titulo: "Man of Steel", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtrrTBfKpVp5mWI445MSXcFokIqvkHM737oEbS9U38ayvSDd4eIG8IVpkn&s=10" },
+            { titulo: "Batman v Superman", poster: "https://m.media-amazon.com/images/I/81o7zaih1mL._AC_UF894,1000_QL80_.jpg" },
+            { titulo: "Justice League", poster: "https://www.guioteca.com/comics/files/2017/10/justice-league-final-poster-1039055.jpeg" },
+            { titulo: "Black Adam", poster: "https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2022/06/black-adam.jpg?resize=1638%2C2048&ssl=1" },
             { titulo: "The Flash", poster: "https://cdng.europosters.eu/pod_public/1300/317434.jpg" },
             { titulo: "Zack Snyder's Justice League", poster: "https://m.media-amazon.com/images/M/MV5BNDA0MzM5YTctZTU2My00NGQ5LWE2NTEtNDM0MjZmMDBkOTZkXkEyXkFqcGc@._V1_.jpg" }
         ]
@@ -419,7 +523,7 @@ const colecciones = [
     {
         id: "ben10",
         titulo: "Ben 10",
-        categoria: "explorar",
+        categoria: "franquicias",
         poster: "https://w0.peakpx.com/wallpaper/691/277/HD-wallpaper-ben-ten-logo-ben-10-ben-ten-ben-ten-omnitrix-green-omnitrix-ultimately-thumbnail.jpg",
         esContenedor: true,
         peliculas: []
@@ -427,7 +531,7 @@ const colecciones = [
     {
         id: "dragonball",
         titulo: "Dragon Ball",
-        categoria: "explorar",
+        categoria: "franquicias",
         poster: "https://media.wallpics.app/thumbnails/2025/01/13/omBfHT0VjnNlR51OI3KSUfhOL6V5KioOmGKlSeOa_thumbnail_yP64.jpg",
         esContenedor: true,
         peliculas: []
@@ -514,7 +618,7 @@ const colecciones = [
     {
         id: "it",
         titulo: "It",
-        categoria: "explorar",
+        categoria: "franquicias",
         poster: "https://moviefilmsla.wordpress.com/wp-content/uploads/2017/07/9ecca-it_postereng1_mf.jpg",
         esContenedor: true,
         peliculas: []
@@ -522,7 +626,7 @@ const colecciones = [
     {
         id: "lego",
         titulo: "LEGO",
-        categoria: "explorar",
+        categoria: "franquicias",
         poster: "https://w0.peakpx.com/wallpaper/185/537/HD-wallpaper-lego-brand-logo.jpg",
         esContenedor: true,
         peliculas: []
@@ -576,7 +680,10 @@ function renderizarColecciones() {
         "lego": "seccion-lego",
         "ben10": "seccion-ben10",
         "marvel-videojuegos": "seccion-marvel-videojuegos",
-        "dragonball": "seccion-dragonball"
+        "dragonball": "seccion-dragonball",
+        "sw-animacion": "seccion-sw-animacion",
+        "franquicias": "seccion-franquicias",
+        "directores": "seccion-directores"
     };
 
     colecciones.forEach(col => {
@@ -651,6 +758,8 @@ function abrirColeccion(colId) {
             grilla.insertAdjacentHTML('beforeend', htmlPelicula);
         });
         sincronizarVistos();
+        aplicarVistosGuardados(grilla);
+        actualizarProgresoColeccion(colId);
     }
 
     const seccionDetalle = document.getElementById(`seccion-${colId}`);
@@ -797,6 +906,7 @@ function sincronizarVistos() {
             }
 
             actualizarTodasLasColecciones();
+            guardarProgresoUsuario();
         });
     });
 }
@@ -997,6 +1107,7 @@ if(btnSwHistoria) {
             );
             const titulosVistos = new Set();
             const arrayTarjetas = Array.from(tarjetasSW).filter(t => {
+                if (t.classList.contains('tarjeta-coleccion')) return false;
                 const titulo = t.querySelector('h3').textContent;
                 if (titulosVistos.has(titulo)) return false;
                 titulosVistos.add(titulo);
@@ -1133,14 +1244,70 @@ if(btnVolverDcamu) {
 const btnVolverBen10 = document.getElementById('btn-volver-ben10');
 if(btnVolverBen10) {
     btnVolverBen10.addEventListener('click', () => {
-        cambiarSeccion(document.getElementById('seccion-explorar'));
+        cambiarSeccion(document.getElementById('seccion-franquicias'));
     });
 }
 
 const btnVolverLego = document.getElementById('btn-volver-lego');
 if(btnVolverLego) {
     btnVolverLego.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-franquicias'));
+    });
+}
+
+const btnVolverIt = document.getElementById('btn-volver-it');
+if(btnVolverIt) {
+    btnVolverIt.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-franquicias'));
+    });
+}
+
+const btnVolverActores = document.getElementById('btn-volver-actores');
+if(btnVolverActores) {
+    btnVolverActores.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-explorar'));
+    });
+}
+
+const btnVolverDirectores = document.getElementById('btn-volver-directores');
+if(btnVolverDirectores) {
+    btnVolverDirectores.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-explorar'));
+    });
+}
+
+const btnVolverFranquicias = document.getElementById('btn-volver-franquicias');
+if(btnVolverFranquicias) {
+    btnVolverFranquicias.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-explorar'));
+    });
+}
+
+const btnVolverChristopherNolan = document.getElementById('btn-volver-christopher-nolan');
+if(btnVolverChristopherNolan) {
+    btnVolverChristopherNolan.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-directores'));
+    });
+}
+
+const btnVolverSupermanHenryCavill = document.getElementById('btn-volver-superman-henry-cavill');
+if(btnVolverSupermanHenryCavill) {
+    btnVolverSupermanHenryCavill.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dc-personajes'));
+    });
+}
+
+const btnVolverLegoDc = document.getElementById('btn-volver-lego-dc');
+if(btnVolverLegoDc) {
+    btnVolverLegoDc.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dc-videojuegos'));
+    });
+}
+
+const btnVolverLegoMarvel = document.getElementById('btn-volver-lego-marvel');
+if(btnVolverLegoMarvel) {
+    btnVolverLegoMarvel.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-marvel-videojuegos'));
     });
 }
 
@@ -1189,7 +1356,7 @@ if(btnVolverInsomniac) {
 const btnVolverDragonball = document.getElementById('btn-volver-dragonball');
 if(btnVolverDragonball) {
     btnVolverDragonball.addEventListener('click', () => {
-        cambiarSeccion(document.getElementById('seccion-explorar'));
+        cambiarSeccion(document.getElementById('seccion-franquicias'));
     });
 }
 
@@ -1207,6 +1374,13 @@ if(btnVolverDragonball) {
         });
     }
 });
+
+const btnVolverSwVisions = document.getElementById('btn-volver-sw-visions');
+if(btnVolverSwVisions) {
+    btnVolverSwVisions.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-sw-animacion'));
+    });
+}
 
 const btnVolverBatmanBenAffleck = document.getElementById('btn-volver-batman-ben-affleck');
 if(btnVolverBatmanBenAffleck) {
@@ -1252,22 +1426,129 @@ botonesFiltroIt.forEach(boton => {
 });
 
 // ==========================================
-// MODAL DE LOGIN
+// FIREBASE: CONFIGURACIÓN Y AUTENTICACIÓN
 // ==========================================
+const firebaseConfig = {
+  apiKey: "AIzaSyB-MNhsXNVHQeHeBV8XmmFYEavpliNCwYc",
+  authDomain: "libro-de-los-vishanti.firebaseapp.com",
+  databaseURL: "https://libro-de-los-vishanti-default-rtdb.firebaseio.com",
+  projectId: "libro-de-los-vishanti",
+  storageBucket: "libro-de-los-vishanti.firebasestorage.app",
+  messagingSenderId: "247894318676",
+  appId: "1:247894318676:web:e13470aa8f813de2bc57c1"
+};
+
+firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+const db = firebase.firestore();
+
+let usuarioActual = null;
+let huboSesionAntes = false;
+let titulosVistosGuardados = new Set();
+
 const modalLogin = document.getElementById('modal-login');
 const btnLoginModal = document.getElementById('btn-login-modal');
 const closeModal = document.getElementById('close-modal');
-const btnSubmitLogin = document.getElementById('btn-submit-login');
+const btnCrearCuenta = document.getElementById('btn-crear-cuenta');
+const btnIniciarSesion = document.getElementById('btn-iniciar-sesion');
+const mensajeLogin = document.getElementById('mensaje-login');
 
-if(btnLoginModal) btnLoginModal.addEventListener('click', () => modalLogin.classList.remove('oculto'));
-if(closeModal) closeModal.addEventListener('click', () => modalLogin.classList.add('oculto'));
-if(btnSubmitLogin) {
-    btnSubmitLogin.addEventListener('click', () => {
-        const user = document.getElementById('username').value;
-        if(user.trim() !== '') {
-            alert('¡Bienvenido/a, ' + user + '! Tu progreso está sincronizado.');
-            modalLogin.classList.add('oculto');
-            btnLoginModal.textContent = '👤 ' + user;
+function mostrarMensajeLogin(texto) {
+    if (mensajeLogin) mensajeLogin.textContent = texto;
+}
+
+function traducirErrorFirebase(err) {
+    const c = err.code || '';
+    if (c.includes('email-already-in-use')) return 'Ese correo ya tiene una cuenta. Probá iniciar sesión.';
+    if (c.includes('invalid-email')) return 'El correo no es válido.';
+    if (c.includes('weak-password')) return 'La contraseña necesita al menos 6 caracteres.';
+    if (c.includes('user-not-found') || c.includes('wrong-password') || c.includes('invalid-credential')) return 'Correo o contraseña incorrectos.';
+    return 'Ocurrió un error, intentá de nuevo.';
+}
+
+if(btnLoginModal) {
+    btnLoginModal.addEventListener('click', () => {
+        if (usuarioActual) {
+            if (confirm('¿Cerrar sesión de ' + usuarioActual.email + '?')) {
+                auth.signOut();
+            }
+        } else {
+            mostrarMensajeLogin('');
+            modalLogin.classList.remove('oculto');
         }
     });
+}
+if(closeModal) closeModal.addEventListener('click', () => modalLogin.classList.add('oculto'));
+
+if(btnCrearCuenta) {
+    btnCrearCuenta.addEventListener('click', () => {
+        const email = document.getElementById('email-login').value.trim();
+        const pass = document.getElementById('password-login').value;
+        if (!email || !pass) { mostrarMensajeLogin('Completá correo y contraseña.'); return; }
+        mostrarMensajeLogin('Creando cuenta...');
+        auth.createUserWithEmailAndPassword(email, pass)
+            .catch(err => mostrarMensajeLogin(traducirErrorFirebase(err)));
+    });
+}
+
+if(btnIniciarSesion) {
+    btnIniciarSesion.addEventListener('click', () => {
+        const email = document.getElementById('email-login').value.trim();
+        const pass = document.getElementById('password-login').value;
+        if (!email || !pass) { mostrarMensajeLogin('Completá correo y contraseña.'); return; }
+        mostrarMensajeLogin('Iniciando sesión...');
+        auth.signInWithEmailAndPassword(email, pass)
+            .catch(err => mostrarMensajeLogin(traducirErrorFirebase(err)));
+    });
+}
+
+auth.onAuthStateChanged(user => {
+    usuarioActual = user;
+    if (user) {
+        huboSesionAntes = true;
+        if (btnLoginModal) btnLoginModal.textContent = '👤 ' + user.email;
+        if (modalLogin) modalLogin.classList.add('oculto');
+        cargarProgresoUsuario();
+    } else {
+        if (btnLoginModal) btnLoginModal.textContent = '👤 Cuenta / Registro';
+        if (huboSesionAntes) location.reload();
+    }
+});
+
+// ==========================================
+// FIREBASE: SINCRONIZAR PROGRESO (VISTOS/JUGADOS)
+// ==========================================
+function aplicarVistosGuardados(raiz) {
+    raiz.querySelectorAll('.tarjeta-media').forEach(t => {
+        const btn = t.querySelector('.btn-accion');
+        if (!btn) return;
+        const titulo = t.querySelector('h3').textContent;
+        if (titulosVistosGuardados.has(titulo) && !t.classList.contains('vista')) {
+            const esVJ = t.getAttribute('data-accion') === 'jugado';
+            btn.textContent = esVJ ? 'Jugado ✓' : 'Visto ✓';
+            btn.style.backgroundColor = '#28a745';
+            t.classList.add('vista');
+        }
+    });
+}
+
+function cargarProgresoUsuario() {
+    if (!usuarioActual) return;
+    db.collection('usuarios').doc(usuarioActual.uid).get().then(doc => {
+        titulosVistosGuardados = new Set(doc.exists ? (doc.data().vistos || []) : []);
+        aplicarVistosGuardados(document);
+        actualizarTodasLasColecciones();
+    }).catch(err => console.error('Error cargando progreso:', err));
+}
+
+function guardarProgresoUsuario() {
+    if (!usuarioActual) return;
+    const titulos = new Set();
+    document.querySelectorAll('.tarjeta-media.vista').forEach(t => {
+        titulos.add(t.querySelector('h3').textContent);
+    });
+    titulosVistosGuardados = titulos;
+    db.collection('usuarios').doc(usuarioActual.uid).set({
+        vistos: Array.from(titulos)
+    }, { merge: true }).catch(err => console.error('Error guardando progreso:', err));
 }
