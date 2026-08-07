@@ -379,9 +379,26 @@ h2 {
         padding: 7px 10px;
     }
 
+    /* El desplegable ya no cuelga del botón (que puede quedar pegado
+       al borde derecho), sino que se centra fijo debajo del header */
+    .contenedor-menu {
+        position: static;
+    }
+
     .submenu {
-        min-width: 170px;
-        max-width: 80vw;
+        position: fixed;
+        top: 175px;
+        left: 4vw;
+        right: 4vw;
+        width: auto;
+        min-width: 0;
+        max-width: none;
+        max-height: 65vh;
+        z-index: 1500;
+    }
+
+    .submenu-anidado {
+        max-width: 100%;
     }
 
     main {
