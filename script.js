@@ -34,50 +34,57 @@ const listaMedia = [
     { titulo: "The Fantastic Four: First Steps", categoria: "doomsday", tier: 1, tipo: "Película", poster: "https://brainstomping.com/wp-content/uploads/2025/07/fantastic-four-first-steps-primeros-pasos-cuatro-fantasticos-poster-marvel-mcu.jpg" },
 
     // --- MCU: SAGA DEL INFINITO ---
-    { titulo: "Iron Man", categoria: "mcu-infinito", tipo: "Película", poster: "https://i.pinimg.com/736x/59/51/d8/5951d8c40e27989167c9adb14567fb36.jpg" },
-    { titulo: "The Incredible Hulk", categoria: "mcu-infinito", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTUyNzk3MjA1OF5BMl5BanBnXkFtZTcwMTE1Njg2MQ@@._V1_.jpg" },
-    { titulo: "Iron Man 2", categoria: "mcu-infinito", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81W+53+YFkL._AC_SY879_.jpg" },
-    { titulo: "Thor", categoria: "mcu-infinito", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61MQ3JIiXmL.jpg" },
-    { titulo: "Captain America: The First Avenger", categoria: "mcu-infinito", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81U9EbWexxL.jpg" },
-    { titulo: "The Avengers", categoria: "mcu-infinito", tipo: "Película", poster: "https://filmartgallery.com/cdn/shop/products/The-Avengers-Vintage-Movie-Poster-Original_1024x1024.jpg?v=1771946695" },
-    { titulo: "Iron Man 3", categoria: "mcu-infinito", tipo: "Película", poster: "https://collider.com/wp-content/uploads/iron-man-3-poster.jpg" },
-    { titulo: "Thor: The Dark World", categoria: "mcu-infinito", tipo: "Película", poster: "https://shoptrends.com/pub/media/catalog/product/p/o/pod5973-1.jpg" },
-    { titulo: "Captain America: The Winter Soldier", categoria: "mcu-infinito", tipo: "Película", poster: "https://www.hollywoodreporter.com/wp-content/uploads/2014/01/captain_america_the_winter_soldier.jpg" },
-    { titulo: "Guardians of The Galaxy", categoria: "mcu-infinito", tipo: "Película", poster: "https://collider.com/wp-content/uploads/guardians-of-the-galaxy-teaser-poster.jpg" },
-    { titulo: "Avengers: Age of Ultron", categoria: "mcu-infinito", tipo: "Película", poster: "https://collider.com/wp-content/uploads/avengers-age-of-ultron-poster1.jpg" },
-    { titulo: "Ant-Man", categoria: "mcu-infinito", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81rPJLNidFL.jpg" },
-    { titulo: "Captain America: Civil War", categoria: "mcu-infinito", tipo: "Película", poster: "https://heroichollywood.com/wp-content/uploads/2015/11/img-26.jpg" },
-    { titulo: "Doctor Strange", categoria: "mcu-infinito", tipo: "Película", poster: "https://uruloki.org/felipeblog/images2016/20160412-doctorstrange.jpg" },
-    { titulo: "Guardians of the Galaxy Vol. 2", categoria: "mcu-infinito", tipo: "Película", poster: "https://external-preview.redd.it/official-guardians-of-the-galaxy-vol-2-teaser-poster-v0-TjDcWtSjsp7PD12icRxi9UVVWL-38pmlw29-42nNvOI.jpg?auto=webp&s=da143bea206173e3cc2b0d5a4e8f2f84b24a994e" },
-    { titulo: "Spider-Man: Homecoming", categoria: "mcu-infinito", tipo: "Película", poster: "https://m.media-amazon.com/images/I/A1mjWWH6mFL.jpg" },
-    { titulo: "Thor: Ragnarok", categoria: "mcu-infinito", tipo: "Película", poster: "https://tecolotito.elsiglodetorreon.com.mx/cdn-cgi/image/format=webp,width=1546,quality=75/i/2017/04/929651.jpeg" },
-    { titulo: "Black Panther", categoria: "mcu-infinito", tipo: "Película", poster: "https://www.blackfilm.com/read/wp-content/uploads/2017/06/Black-Panther-Teaser-Poster.jpg" },
-    { titulo: "Ant-Man and The Wasp", categoria: "mcu-infinito", tipo: "Película", poster: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLtqLiFTTgBzM0lEPQBOPMngE9PDz1hpIhLddHtm40y0kBH7ouoG1cPiHTqMwY8-3IPEL-SknAxPA_RrQHogXsiOm8vNQn5BlFaOuMq8k6rKgAgGE0kxtGnOH8SuLcSXQ_sTkE3bHTADk/s1600/Ant-Man_and_The_Wasp_poster_LatAm.JPG" },
-    { titulo: "Avengers: Infinity War", categoria: "mcu-infinito", tipo: "Película", poster: "https://www.blackfilm.com/read/wp-content/uploads/2017/11/Avengers-Infinity-War-Teaser-Poster.jpg" },
-    { titulo: "Captain Marvel", categoria: "mcu-infinito", tipo: "Película", poster: "https://cdn.marvel.com/content/2x/ow_character_1-sht_brie_v3_lg.webp" },
-    { titulo: "Avengers: Endgame", categoria: "mcu-infinito", tipo: "Película", poster: "https://cdn.marvel.com/content/2x/MLou2_Teaser_1-Sht_v6_Lg.jpg" },
+    { titulo: "Iron Man", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 1, crono: 4, poster: "https://i.pinimg.com/736x/59/51/d8/5951d8c40e27989167c9adb14567fb36.jpg" },
+    { titulo: "The Incredible Hulk", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 2, crono: 6, poster: "https://m.media-amazon.com/images/M/MV5BMTUyNzk3MjA1OF5BMl5BanBnXkFtZTcwMTE1Njg2MQ@@._V1_.jpg" },
+    { titulo: "Iron Man 2", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 3, crono: 5, poster: "https://m.media-amazon.com/images/I/81W+53+YFkL._AC_SY879_.jpg" },
+    { titulo: "Thor", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 4, crono: 7, poster: "https://m.media-amazon.com/images/I/61MQ3JIiXmL.jpg" },
+    { titulo: "Captain America: The First Avenger", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 5, crono: 2, poster: "https://m.media-amazon.com/images/I/81U9EbWexxL.jpg" },
+    { titulo: "The Avengers", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 6, crono: 8, poster: "https://filmartgallery.com/cdn/shop/products/The-Avengers-Vintage-Movie-Poster-Original_1024x1024.jpg?v=1771946695" },
+    { titulo: "Iron Man 3", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 7, crono: 10, poster: "https://collider.com/wp-content/uploads/iron-man-3-poster.jpg" },
+    { titulo: "Thor: The Dark World", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 8, crono: 9, poster: "https://shoptrends.com/pub/media/catalog/product/p/o/pod5973-1.jpg" },
+    { titulo: "Captain America: The Winter Soldier", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 9, crono: 11, poster: "https://www.hollywoodreporter.com/wp-content/uploads/2014/01/captain_america_the_winter_soldier.jpg" },
+    { titulo: "Guardians of The Galaxy", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 10, crono: 12, poster: "https://collider.com/wp-content/uploads/guardians-of-the-galaxy-teaser-poster.jpg" },
+    { titulo: "Avengers: Age of Ultron", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 11, crono: 14, poster: "https://collider.com/wp-content/uploads/avengers-age-of-ultron-poster1.jpg" },
+    { titulo: "Ant-Man", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 12, crono: 15, poster: "https://m.media-amazon.com/images/I/81rPJLNidFL.jpg" },
+    { titulo: "Captain America: Civil War", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 13, crono: 16, poster: "https://heroichollywood.com/wp-content/uploads/2015/11/img-26.jpg" },
+    { titulo: "Doctor Strange", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 14, crono: 20, poster: "https://uruloki.org/felipeblog/images2016/20160412-doctorstrange.jpg" },
+    { titulo: "Guardians of the Galaxy Vol. 2", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 15, crono: 13, poster: "https://external-preview.redd.it/official-guardians-of-the-galaxy-vol-2-teaser-poster-v0-TjDcWtSjsp7PD12icRxi9UVVWL-38pmlw29-42nNvOI.jpg?auto=webp&s=da143bea206173e3cc2b0d5a4e8f2f84b24a994e" },
+    { titulo: "Spider-Man: Homecoming", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 16, crono: 19, poster: "https://m.media-amazon.com/images/I/A1mjWWH6mFL.jpg" },
+    { titulo: "Thor: Ragnarok", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 17, crono: 21, poster: "https://tecolotito.elsiglodetorreon.com.mx/cdn-cgi/image/format=webp,width=1546,quality=75/i/2017/04/929651.jpeg" },
+    { titulo: "Black Panther", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 18, crono: 18, poster: "https://www.blackfilm.com/read/wp-content/uploads/2017/06/Black-Panther-Teaser-Poster.jpg" },
+    { titulo: "Ant-Man and The Wasp", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 19, crono: 22, poster: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLtqLiFTTgBzM0lEPQBOPMngE9PDz1hpIhLddHtm40y0kBH7ouoG1cPiHTqMwY8-3IPEL-SknAxPA_RrQHogXsiOm8vNQn5BlFaOuMq8k6rKgAgGE0kxtGnOH8SuLcSXQ_sTkE3bHTADk/s1600/Ant-Man_and_The_Wasp_poster_LatAm.JPG" },
+    { titulo: "Avengers: Infinity War", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 20, crono: 23, poster: "https://www.blackfilm.com/read/wp-content/uploads/2017/11/Avengers-Infinity-War-Teaser-Poster.jpg" },
+    { titulo: "Captain Marvel", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 21, crono: 3, poster: "https://cdn.marvel.com/content/2x/ow_character_1-sht_brie_v3_lg.webp" },
+    { titulo: "Avengers: Endgame", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 22, crono: 24, poster: "https://cdn.marvel.com/content/2x/MLou2_Teaser_1-Sht_v6_Lg.jpg" },
 
     // --- MCU: SAGA DEL MULTIVERSO ---
-    { titulo: "Spider-Man: Far From Home", categoria: "mcu-multiverso", tipo: "Película", poster: "https://cdn.marvel.com/content/2x/ffh_poster_onesheet.webp" },
-    { titulo: "WandaVision", categoria: "mcu-multiverso", tipo: "Serie", poster: "https://picarouno.com/wp-content/uploads/2025/12/wandavision_001-1037x1536.jpg" },
-    { titulo: "The Falcon and The Winter Soldier", categoria: "mcu-multiverso", tipo: "Serie", poster: "https://www.hellofriki.com/wp-content/uploads/2020/12/falcon-soldado-de-invierno-serie-poste-691x1024.jpg" },
-    { titulo: "Loki (Temporada 1)", categoria: "mcu-multiverso", tipo: "Serie", poster: "https://m.media-amazon.com/images/I/81fdQ6kl4JS.jpg" },
-    { titulo: "Shang-Chi", categoria: "mcu-multiverso", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81orh-NSiTL.jpg" },
-    { titulo: "Hawkeye", categoria: "mcu-multiverso", tipo: "Serie", poster: "https://lumiere-a.akamaihd.net/v1/images/unknown_61ca7b47.png" },
-    { titulo: "Spider-Man: No Way Home", categoria: "mcu-multiverso", tipo: "Película", poster: "https://www.cinemascomics.com/wp-content/uploads/2022/01/poster-Spider-man-no-way-home.jpg" },
-    { titulo: "Moon Knight", categoria: "mcu-multiverso", tipo: "Serie", poster: "https://m.media-amazon.com/images/I/71pAwt4KT6L.jpg" },
-    { titulo: "Dr. Strange: Multiverse of Madness", categoria: "mcu-multiverso", tipo: "Película", poster: "https://img.buzzfeed.com/buzzfeed-static/static/2022-02/18/13/asset/e9954361afcd/sub-buzz-772-1645190837-7.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto" },
-    { titulo: "Ms. Marvel", categoria: "mcu-multiverso", tipo: "Serie", poster: "https://lumiere-a.akamaihd.net/v1/images/ms_979c8372.jpeg" },
-    { titulo: "Thor: Love and Thunder", categoria: "mcu-multiverso", tipo: "Película", poster: "https://lumiere-a.akamaihd.net/v1/images/fb83262af061c44d518c601e3956c3b4_2764x4096_e4f0eee2.jpeg" },
-    { titulo: "She-Hulk: Attorney at Law", categoria: "mcu-multiverso", tipo: "Serie", poster: "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/LXR4DQCCMFFW7CEWUE7QRUGJTU.jpg" },
-    { titulo: "Black Panther: Wakanda Forever", categoria: "mcu-multiverso", tipo: "Película", poster: "https://artofthemovies.co.uk/cdn/shop/products/IMG_0184-338579.jpg?v=1668148930&width=900" },
-    { titulo: "Ant-Man and The Wasp: Quantumania", categoria: "mcu-multiverso", tipo: "Película", poster: "https://lumiere-a.akamaihd.net/v1/images/antman_b843a521.jpeg?region=0,0,658,898" },
-    { titulo: "Guardians of the Galaxy Vol. 3", categoria: "mcu-multiverso", tipo: "Película", poster: "https://assets-prd.ignimgs.com/2022/12/01/guardians-of-the-galaxy-vol-3-1669932411159.jfif" },
-    { titulo: "Loki (Temporada 2)", categoria: "mcu-multiverso", tipo: "Serie", poster: "https://preview.redd.it/official-poster-for-loki-season-2-v0-mjczxxkptafb1.jpg?auto=webp&s=b52be74ed745f4c481074ffd739feb43c7c0214f" },
-    { titulo: "Deadpool & Wolverine", categoria: "mcu-multiverso", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61AwaBKmGXL.jpg" },
-    { titulo: "Captain America: Brave New World", categoria: "mcu-multiverso", tipo: "Película", poster: "https://i.pinimg.com/736x/19/85/1d/19851d768bfcc73a6942ae30c69f03a8.jpg" },
-    { titulo: "Thunderbolts*", categoria: "mcu-multiverso", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71Y2ZfgT+4L.jpg" },
-    { titulo: "The Fantastic Four: First Steps", categoria: "mcu-multiverso", tipo: "Película", poster: "https://brainstomping.com/wp-content/uploads/2025/07/fantastic-four-first-steps-primeros-pasos-cuatro-fantasticos-poster-marvel-mcu.jpg" },
+    { titulo: "Spider-Man: Far From Home", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 23, crono: 25, poster: "https://cdn.marvel.com/content/2x/ffh_poster_onesheet.webp" },
+    { titulo: "WandaVision", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 24, crono: 27, poster: "https://picarouno.com/wp-content/uploads/2025/12/wandavision_001-1037x1536.jpg" },
+    { titulo: "The Falcon and The Winter Soldier", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 25, crono: 28, poster: "https://www.hellofriki.com/wp-content/uploads/2020/12/falcon-soldado-de-invierno-serie-poste-691x1024.jpg" },
+    { titulo: "Loki (Temporada 1)", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 26, crono: 29, poster: "https://m.media-amazon.com/images/I/81fdQ6kl4JS.jpg" },
+    { titulo: "Black Widow", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 27, crono: 17, poster: "https://m.media-amazon.com/images/M/MV5BNjZjOGVhOTEtNzY4Mi00MjQzLTlmYjktNzMyMDExMWJlODEwXkEyXkFqcGc@.V1.jpg" },
+    { titulo: "Shang-Chi", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 28, crono: 31, poster: "https://m.media-amazon.com/images/I/81orh-NSiTL.jpg" },
+    { titulo: "Eternals", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 29, crono: 32, poster: "https://image.tmdb.org/t/p/original/vgUZo9aVvRvCQFXwZC9zq3qCZT9.jpg" },
+    { titulo: "Hawkeye", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 30, crono: 33, poster: "https://lumiere-a.akamaihd.net/v1/images/unknown_61ca7b47.png" },
+    { titulo: "Spider-Man: No Way Home", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 31, crono: 35, poster: "https://www.cinemascomics.com/wp-content/uploads/2022/01/poster-Spider-man-no-way-home.jpg" },
+    { titulo: "Moon Knight", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 32, crono: 36, poster: "https://m.media-amazon.com/images/I/71pAwt4KT6L.jpg" },
+    { titulo: "Dr. Strange: Multiverse of Madness", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 33, crono: 37, poster: "https://img.buzzfeed.com/buzzfeed-static/static/2022-02/18/13/asset/e9954361afcd/sub-buzz-772-1645190837-7.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto" },
+    { titulo: "Ms. Marvel", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 34, crono: 38, poster: "https://lumiere-a.akamaihd.net/v1/images/ms_979c8372.jpeg" },
+    { titulo: "Thor: Love and Thunder", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 35, crono: 39, poster: "https://lumiere-a.akamaihd.net/v1/images/fb83262af061c44d518c601e3956c3b4_2764x4096_e4f0eee2.jpeg" },
+    { titulo: "Yo Soy Groot", categoria: "mcu-multiverso", tipo: "Serie de Cortos", ordenSalida: 36, crono: 26, poster: "https://cdn.marvel.com/content/2x/iamgroot_lob_crd_04.jpg" },
+    { titulo: "She-Hulk: Attorney at Law", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 37, crono: 40, poster: "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/LXR4DQCCMFFW7CEWUE7QRUGJTU.jpg" },
+    { titulo: "Hombre Lobo por la Noche", categoria: "mcu-multiverso", tipo: "Especial", ordenSalida: 38, crono: 30, poster: "https://m.media-amazon.com/images/M/MV5BODUzMGFkYzgtYzhjNC00ZmFjLTg3ZTYtYWJkMWRjMzJmYTQ2XkEyXkFqcGc@.V1.jpg" },
+    { titulo: "Black Panther: Wakanda Forever", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 39, crono: 41, poster: "https://artofthemovies.co.uk/cdn/shop/products/IMG_0184-338579.jpg?v=1668148930&width=900" },
+    { titulo: "Ant-Man and The Wasp: Quantumania", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 40, crono: 42, poster: "https://lumiere-a.akamaihd.net/v1/images/antman_b843a521.jpeg?region=0,0,658,898" },
+    { titulo: "Guardians of the Galaxy Vol. 3", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 41, crono: 43, poster: "https://assets-prd.ignimgs.com/2022/12/01/guardians-of-the-galaxy-vol-3-1669932411159.jfif" },
+    { titulo: "Loki (Temporada 2)", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 42, crono: 44, poster: "https://preview.redd.it/official-poster-for-loki-season-2-v0-mjczxxkptafb1.jpg?auto=webp&s=b52be74ed745f4c481074ffd739feb43c7c0214f" },
+    { titulo: "Echo", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 43, crono: 34, poster: "https://m.media-amazon.com/images/I/81f3aW-ovVL.jpg" },
+    { titulo: "Deadpool & Wolverine", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 44, crono: 45, poster: "https://m.media-amazon.com/images/I/61AwaBKmGXL.jpg" },
+    { titulo: "Captain America: Brave New World", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 45, crono: 46, poster: "https://i.pinimg.com/736x/19/85/1d/19851d768bfcc73a6942ae30c69f03a8.jpg" },
+    { titulo: "Thunderbolts*", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 46, crono: 47, poster: "https://m.media-amazon.com/images/I/71Y2ZfgT+4L.jpg" },
+    { titulo: "The Fantastic Four: First Steps", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 47, crono: 49, poster: "https://brainstomping.com/wp-content/uploads/2025/07/fantastic-four-first-steps-primeros-pasos-cuatro-fantasticos-poster-marvel-mcu.jpg" },
+    { titulo: "Ojos de Wakanda", categoria: "mcu-multiverso", tipo: "Serie (Antología)", ordenSalida: 48, crono: 1, poster: "https://cdn.marvel.com/content/2x/eyesofwakanda_lob_crd_02.jpg" },
+    { titulo: "Wonder Man", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 49, crono: 48, poster: "https://cdn.marvel.com/content/2x/wonderman_lob_crd_03.jpg" },
 
     // --- ARROWVERSE ---
     { titulo: "Arrow", categoria: "arrowverse", tipoArrow: "principal", crono: 1, tipo: "Serie", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwxzfrMREXF6kfHXLmAJnhvUsAwyw6jgU_8P6tQure44F6W1hTMtwfFFsV&s=10" },
@@ -176,6 +183,11 @@ const listaMedia = [
     { titulo: "Titans", categoria: "dc-multiverso", subtipo: "liveaction", tipo: "Serie - Tierra 9", poster: "https://image.tmdb.org/t/p/original/awneRTOXqumB1fOPoUIXjUqksh5.jpg" },
     { titulo: "Green Lantern", categoria: "dc-multiverso", subtipo: "liveaction", tipo: "Película - Tierra 12", poster: "https://m.media-amazon.com/images/I/71-ckdWvqfL.jpg" },
     { titulo: "Swamp Thing", categoria: "dc-multiverso", subtipo: "liveaction", tipo: "Serie - Tierra 19", poster: "https://m.media-amazon.com/images/M/MV5BMGQzYzgxZWQtZmI3YS00YTIzLTk4NmQtMGE0YTdiNGNlZjYxXkEyXkFqcGc@.V1.jpg" },
+
+    // --- GAME OF THRONES (con doble orden: salida / cronológico) ---
+    { titulo: "Game of Thrones", categoria: "game-of-thrones", tipo: "Serie", ordenSalida: 1, crono: 3, poster: "https://static.posters.cz/image/1300/135455.jpg" },
+    { titulo: "House of the Dragon", categoria: "game-of-thrones", tipo: "Serie", ordenSalida: 2, crono: 1, poster: "https://i.pinimg.com/736x/4d/b6/39/4db639e88587f29b4b3207d12e90ebfa.jpg" },
+    { titulo: "A Knight of the Seven Kingdoms", categoria: "game-of-thrones", tipo: "Serie", ordenSalida: 3, crono: 2, poster: "https://placehold.co/300x450?text=A+Knight+of+the+Seven+Kingdoms" },
 
     // --- DC COMICS: VIDEOJUEGOS ---
     { titulo: "Gotham Knights", categoria: "dc-videojuegos", tipo: "Videojuego", poster: "https://m.media-amazon.com/images/I/81zkE4hKUjL.jpg" },
@@ -291,6 +303,26 @@ const colecciones = [
         poster: "https://placehold.co/300x450?text=Franquicias",
         esContenedor: true,
         peliculas: []
+    },
+    {
+        id: "game-of-thrones",
+        titulo: "Game of Thrones",
+        categoria: "franquicias",
+        poster: "https://static.posters.cz/image/1300/135443.jpg",
+        esContenedor: true,
+        peliculas: []
+    },
+    {
+        id: "greta-gerwig",
+        titulo: "Greta Gerwig",
+        categoria: "directores",
+        poster: "https://placehold.co/300x450?text=Greta+Gerwig",
+        peliculas: [
+            { titulo: "Nights and Weekends", poster: "https://m.media-amazon.com/images/M/MV5BMTU5NzM0NjUxOF5BMl5BanBnXkFtZTcwMjUyMTQ5MQ@@.V1.jpg" },
+            { titulo: "Lady Bird", poster: "https://image.tmdb.org/t/p/original/gl66K7zRdtNYGrxyS2YDUP5ASZd.jpg" },
+            { titulo: "Little Women", poster: "https://m.media-amazon.com/images/I/61TK-+geKPL.AC_UF894,1000_QL80.jpg" },
+            { titulo: "Barbie", poster: "https://image.tmdb.org/t/p/original/dekMkQf0kqAmztUca9lX5e5Pjbp.jpg" }
+        ]
     },
     {
         id: "christopher-nolan",
@@ -818,7 +850,8 @@ function renderizarContenido() {
         "sw-videojuegos": "seccion-sw-videojuegos",
         "marvel-videojuegos": "seccion-marvel-videojuegos",
         "dc-personajes": "seccion-dc-personajes",
-        "it": "seccion-it"
+        "it": "seccion-it",
+        "game-of-thrones": "seccion-game-of-thrones"
     };
 
     listaMedia.forEach(item => {
@@ -846,7 +879,7 @@ function renderizarContenido() {
             const textoInicial = esVideojuego ? "Marcar Jugado" : "Marcar Visto";
 
             const htmlTarjeta = `
-                <div class="tarjeta-media" style="${ocultarEstilo}" data-tier="${item.tier || ''}" data-tipo="${item.tipoArrow || ''}" data-crono="${item.crono || ''}" data-subtipo="${item.subtipo || ''}" data-accion="${esVideojuego ? 'jugado' : 'visto'}">
+                <div class="tarjeta-media" style="${ocultarEstilo}" data-tier="${item.tier || ''}" data-tipo="${item.tipoArrow || ''}" data-crono="${item.crono || ''}" data-subtipo="${item.subtipo || ''}" data-orden="${item.ordenSalida || ''}" data-accion="${esVideojuego ? 'jugado' : 'visto'}">
                     <img src="${item.poster}" alt="${item.titulo}">
                     <h3>${item.titulo}</h3>
                     <p>${item.tipo}</p>
@@ -1311,6 +1344,20 @@ if(btnVolverLegoMarvel) {
     });
 }
 
+const btnVolverGameOfThrones = document.getElementById('btn-volver-game-of-thrones');
+if(btnVolverGameOfThrones) {
+    btnVolverGameOfThrones.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-franquicias'));
+    });
+}
+
+const btnVolverGretaGerwig = document.getElementById('btn-volver-greta-gerwig');
+if(btnVolverGretaGerwig) {
+    btnVolverGretaGerwig.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-directores'));
+    });
+}
+
 const btnVolverArkhamverse = document.getElementById('btn-volver-arkhamverse');
 if(btnVolverArkhamverse) {
     btnVolverArkhamverse.addEventListener('click', () => {
@@ -1422,6 +1469,26 @@ botonesFiltroIt.forEach(boton => {
                 tarjeta.style.display = 'none';
             }
         });
+    });
+});
+
+// ==========================================
+// FILTROS "GAME OF THRONES" (Orden de Salida / Cronológico)
+// ==========================================
+const botonesFiltroGot = document.querySelectorAll('.btn-filtro-got');
+botonesFiltroGot.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroGot.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const tipoElegido = this.getAttribute('data-tipo');
+        const tarjetas = document.querySelectorAll('#seccion-game-of-thrones .tarjeta-media');
+        const contenedor = document.getElementById('grilla-game-of-thrones');
+        const atributo = tipoElegido === 'cronologico' ? 'data-crono' : 'data-orden';
+
+        const arrayTarjetas = Array.from(tarjetas).sort(
+            (a, b) => parseFloat(a.getAttribute(atributo)) - parseFloat(b.getAttribute(atributo))
+        );
+        arrayTarjetas.forEach(t => contenedor.appendChild(t));
     });
 });
 
