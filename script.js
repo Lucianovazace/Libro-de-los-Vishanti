@@ -19,7 +19,7 @@ const listaMedia = [
     { titulo: "The Falcon and The Winter Soldier", categoria: "doomsday", tier: 3, tipo: "Serie", poster: "https://www.hellofriki.com/wp-content/uploads/2020/12/falcon-soldado-de-invierno-serie-poste-691x1024.jpg" },
     { titulo: "Loki (Temporada 1)", categoria: "doomsday", tier: 1, tipo: "Serie", poster: "https://m.media-amazon.com/images/I/81fdQ6kl4JS.jpg" },
     { titulo: "Shang-Chi", categoria: "doomsday", tier: 3, tipo: "Película", poster: "https://m.media-amazon.com/images/I/81orh-NSiTL.jpg" },
-    { titulo: "Spider-Man: No Way Home", categoria: "doomsday", tier: 2, tipo: "Película", poster: "https://placehold.co/300x450?text=No+Way+Home" },
+    { titulo: "Spider-Man: No Way Home", categoria: "doomsday", tier: 2, tipo: "Película", poster: "https://www.cinemascomics.com/wp-content/uploads/2022/01/poster-Spider-man-no-way-home.jpg" },
     { titulo: "Dr. Strange: Multiverse of Madness", categoria: "doomsday", tier: 1, tipo: "Película", poster: "https://img.buzzfeed.com/buzzfeed-static/static/2022-02/18/13/asset/e9954361afcd/sub-buzz-772-1645190837-7.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto" },
     { titulo: "Ms. Marvel", categoria: "doomsday", tier: 3, tipo: "Serie", poster: "https://lumiere-a.akamaihd.net/v1/images/ms_979c8372.jpeg" },
     { titulo: "Thor: Love and Thunder", categoria: "doomsday", tier: 2, tipo: "Película", poster: "https://lumiere-a.akamaihd.net/v1/images/fb83262af061c44d518c601e3956c3b4_2764x4096_e4f0eee2.jpeg" },
@@ -81,10 +81,13 @@ const listaMedia = [
     { titulo: "Echo", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 43, crono: 34, poster: "https://m.media-amazon.com/images/I/81f3aW-ovVL.jpg" },
     { titulo: "Deadpool & Wolverine", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 44, crono: 45, poster: "https://m.media-amazon.com/images/I/61AwaBKmGXL.jpg" },
     { titulo: "Captain America: Brave New World", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 45, crono: 46, poster: "https://i.pinimg.com/736x/19/85/1d/19851d768bfcc73a6942ae30c69f03a8.jpg" },
-    { titulo: "Thunderbolts*", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 46, crono: 47, poster: "https://m.media-amazon.com/images/I/71Y2ZfgT+4L.jpg" },
-    { titulo: "The Fantastic Four: First Steps", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 47, crono: 49, poster: "https://brainstomping.com/wp-content/uploads/2025/07/fantastic-four-first-steps-primeros-pasos-cuatro-fantasticos-poster-marvel-mcu.jpg" },
-    { titulo: "Ojos de Wakanda", categoria: "mcu-multiverso", tipo: "Serie (Antología)", ordenSalida: 48, crono: 1, poster: "https://cdn.marvel.com/content/2x/eyesofwakanda_lob_crd_02.jpg" },
-    { titulo: "Wonder Man", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 49, crono: 48, poster: "https://cdn.marvel.com/content/2x/wonderman_lob_crd_03.jpg" },
+    { titulo: "Daredevil: Born Again", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 46, crono: 47, poster: "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/7f/Daredevil_Born_Again_Cracks_Tall_Poster.jpg/revision/latest/scale-to-width-down/1200?cb=20250416124716" },
+    { titulo: "Thunderbolts*", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 47, crono: 48, poster: "https://m.media-amazon.com/images/I/71Y2ZfgT+4L.jpg" },
+    { titulo: "The Fantastic Four: First Steps", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 48, crono: 51, poster: "https://brainstomping.com/wp-content/uploads/2025/07/fantastic-four-first-steps-primeros-pasos-cuatro-fantasticos-poster-marvel-mcu.jpg" },
+    { titulo: "Ojos de Wakanda", categoria: "mcu-multiverso", tipo: "Serie (Antología)", ordenSalida: 49, crono: 1, poster: "https://cdn.marvel.com/content/2x/eyesofwakanda_lob_crd_02.jpg" },
+    { titulo: "Wonder Man", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 50, crono: 49, poster: "https://cdn.marvel.com/content/2x/wonderman_lob_crd_03.jpg" },
+    { titulo: "Punisher: One Last Kill", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 51, crono: 50, poster: "https://cdn.marvel.com/content/2x/thepunisheronelastkill_lob_crd_01.jpg" },
+    { titulo: "Spider-Man: Brand New Day", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 52, crono: 52, poster: "https://m.media-amazon.com/images/M/MV5BOWNjYWM3NWItOGE0ZS00MWRjLThiZWEtYjc4ZmNmMmU5ZTVmXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
 
     // --- ARROWVERSE ---
     { titulo: "Arrow", categoria: "arrowverse", tipoArrow: "principal", crono: 1, tipo: "Serie", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwxzfrMREXF6kfHXLmAJnhvUsAwyw6jgU_8P6tQure44F6W1hTMtwfFFsV&s=10" },
@@ -187,7 +190,7 @@ const listaMedia = [
     // --- GAME OF THRONES (con doble orden: salida / cronológico) ---
     { titulo: "Game of Thrones", categoria: "game-of-thrones", tipo: "Serie", ordenSalida: 1, crono: 3, poster: "https://static.posters.cz/image/1300/135455.jpg" },
     { titulo: "House of the Dragon", categoria: "game-of-thrones", tipo: "Serie", ordenSalida: 2, crono: 1, poster: "https://i.pinimg.com/736x/4d/b6/39/4db639e88587f29b4b3207d12e90ebfa.jpg" },
-    { titulo: "A Knight of the Seven Kingdoms", categoria: "game-of-thrones", tipo: "Serie", ordenSalida: 3, crono: 2, poster: "https://placehold.co/300x450?text=A+Knight+of+the+Seven+Kingdoms" },
+    { titulo: "A Knight of the Seven Kingdoms", categoria: "game-of-thrones", tipo: "Serie", ordenSalida: 3, crono: 2, poster: "https://image.tmdb.org/t/p/original/mBDO4PLEiFaBrj4RO0mWdW6tSUs.jpg" },
 
     // --- DC COMICS: VIDEOJUEGOS ---
     { titulo: "Gotham Knights", categoria: "dc-videojuegos", tipo: "Videojuego", poster: "https://m.media-amazon.com/images/I/81zkE4hKUjL.jpg" },
@@ -289,6 +292,68 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "timothee-chalamet",
+        titulo: "Timothée Chalamet",
+        categoria: "actores",
+        poster: "https://w0.peakpx.com/wallpaper/349/641/HD-wallpaper-timothee-chalamet-tim-timmy.jpg",
+        peliculas: [
+            { titulo: "Men, Women and Children", poster: "https://i0.wp.com/www.heyuguys.com/images/2014/11/Men-Women-and-Children-Poster.jpg?fit=961%2C1500&ssl=1" },
+            { titulo: "Interstellar", poster: "https://m.media-amazon.com/images/I/91obuWzA3XL.jpg" },
+            { titulo: "Worst Friends", poster: "https://m.media-amazon.com/images/M/MV5BMzk3ODA0MzY5M15BMl5BanBnXkFtZTgwMTM3NzMyMjE@._V1_.jpg" },
+            { titulo: "One & Two", poster: "https://m.media-amazon.com/images/M/MV5BMTQyZWE3YTQtMzdlYS00OGY3LWEzNDMtZmI3MTRlYTUwNzgwXkEyXkFqcGc@._V1_.jpg" },
+            { titulo: "The Aderall Diaries", poster: "https://m.media-amazon.com/images/M/MV5BZGIyNGU0NDYtZmUxYi00MGJjLTkzNDEtYWM0ZTVjOThiZWI1XkEyXkFqcGc@._V1_.jpg" },
+            { titulo: "Hostiles", poster: "https://m.media-amazon.com/images/I/61Hoei3PR2L._AC_UF894,1000_QL80_.jpg" },
+            { titulo: "Beautiful Boy", poster: "https://cdng.europosters.eu/pod_public/1300/322566.jpg" },
+            { titulo: "A Rainy Day in New York", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzaHDrp-ZVijte7TIVCzHPU-7iofJqFDvCCU1wnkbGLCE9JZDHMdPf_gT8&s=10" },
+            { titulo: "The King", poster: "https://m.media-amazon.com/images/M/MV5BOTFhZTY4YWUtMmJjMy00OTE0LTlmZjctMDg5MTk4N2ZjZWNjXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+            { titulo: "Little Women", poster: "https://m.media-amazon.com/images/I/61TK-+geKPL.AC_UF894,1000_QL80.jpg" },
+            { titulo: "The French Dispatch", poster: "https://m.media-amazon.com/images/I/71nWfxOlCTL.jpg" },
+            { titulo: "Dune", poster: "https://cdn.europosters.eu/image/1300/302577.jpg" },
+            { titulo: "Don't Look Up", poster: "https://dnm.nflximg.net/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABaa7zSeOtW5ON9mx0Qmpii1K-9xpKKXfNTwcB7AvclDduYgu9lAQDpnVTG7QBY2BteEMa7TOuFtrz5jL6PYv-cOCn4mmsWyylywc.jpg?r=5b6" },
+            { titulo: "Bones and All", poster: "https://i.pinimg.com/736x/93/c9/42/93c9420b3cd9e145c6580e2786bbe8c3.jpg" },
+            { titulo: "Wonka", poster: "https://purodiseno.lat/wp-content/uploads/2023/10/WONKA-POSTER-02.jpg" },
+            { titulo: "Dune: Part Two", poster: "https://deadline.com/wp-content/uploads/2023/05/FvIhyI9aUAUZz6l.jpeg?w=819" },
+            { titulo: "A Complete Unknown", poster: "https://m.media-amazon.com/images/M/MV5BYTA2NTA5NDYtMzlkOC00MTQxLWI0NDQtMzk2M2YzMGE4MTkxXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+            { titulo: "Marty Supreme", poster: "https://s3.amazonaws.com/nightjarprod/content/uploads/sites/193/2026/02/09112829/lYWEXbQgRTR4ZQleSXAgRbxAjvq-scaled.jpg" }
+        ]
+    },
+    {
+        id: "margot-robbie",
+        titulo: "Margot Robbie",
+        categoria: "actores",
+        poster: "https://i.pinimg.com/736x/e4/36/c0/e436c08cbe530e490c7102a100fcae06.jpg",
+        peliculas: [
+            { titulo: "Vigilante", poster: "https://m.media-amazon.com/images/M/MV5BZjNjYjI2OGUtOTk0Zi00ZDlmLTgwZjYtOGY2YTUyZGM3ZDc5XkEyXkFqcGc@.V1.jpg" },
+            { titulo: "I.C.U", poster: "https://m.media-amazon.com/images/M/MV5BYWMwMDg2YTQtODU5ZS00YzJmLWE2MWQtMTA0OWExNThhNmJiXkEyXkFqcGc@.V1.jpg" },
+            { titulo: "About Time", poster: "https://m.media-amazon.com/images/M/MV5BMTA1ODUzMDA3NzFeQTJeQWpwZ15BbWU3MDgxMTYxNTk@.V1_FMjpg_UX1000.jpg" },
+            { titulo: "The Wolf of Wall Street", poster: "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@.V1.jpg" },
+            { titulo: "Z for Zachariah", poster: "https://m.media-amazon.com/images/M/MV5BMTUwMTUwODUzNV5BMl5BanBnXkFtZTgwMDIxMDE5NTE@.V1.jpg" },
+            { titulo: "Focus", poster: "https://m.media-amazon.com/images/I/51HjYkKwu8L.AC_UF894,1000_QL80.jpg" },
+            { titulo: "Suite Française", poster: "https://cdng.europosters.eu/pod_public/1300/324706.jpg" },
+            { titulo: "The Big Short", poster: "https://m.media-amazon.com/images/M/MV5BZDZkNDQ3YjktYjBlZC00YTY1LTgxOGYtY2RhMWFhZmNkZGY3XkEyXkFqcGc@.V1.jpg" },
+            { titulo: "Whiskey Tango Foxtrot", poster: "https://cdng.europosters.eu/pod_public/750/324143.jpg" },
+            { titulo: "La Leyenda de Tarzán", poster: "https://m.media-amazon.com/images/M/MV5BMzY3OTI0OTcyMF5BMl5BanBnXkFtZTgwNjkxNTAwOTE@.V1_FMjpg_UX1000.jpg" },
+            { titulo: "Suicide Squad", poster: "https://image.tmdb.org/t/p/original/sk3FZgh3sRrmr8vyhaitNobMcfh.jpg" },
+            { titulo: "Goodbye Christopher Robin", poster: "https://m.media-amazon.com/images/M/MV5BZGVmNWZiNDgtMzk2YS00ZGM2LWFjOTQtODk5OGRkZmMzNmYzXkEyXkFqcGc@.V1.jpg" },
+            { titulo: "Yo, Tonya", poster: "https://cdng.europosters.eu/pod_public/1300/323134.jpg" },
+            { titulo: "Peter Rabbit", poster: "https://www.movieposters.com/cdn/shop/products/d859b47d3fdf1f8660e0f09f4afa7fa7_14b224a4-6698-4168-bde5-d98c55c626c1_1024x1024.jpg?v=1759439329" },
+            { titulo: "Terminal", poster: "https://m.media-amazon.com/images/M/MV5BOTliYzYyYTAtNzBjMy00MGE2LThmOWMtZWM1ZmI0MDE1ZjM3XkEyXkFqcGc@.V1.jpg" },
+            { titulo: "Mary Queen of Scots", poster: "https://mir-s3-cdn-cf.behance.net/project_modules/hd/5166b095985439.5ea4161223dcd.jpg" },
+            { titulo: "Dreamland", poster: "https://m.media-amazon.com/images/M/MV5BNzNhNmZhZjQtZTI0ZC00NDFhLWFlZTUtODE4NjgwZmMyZjI2XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+            { titulo: "Once Upon a Time in Hollywood", poster: "https://m.media-amazon.com/images/M/MV5BMzMzNmViNjYtN2ViNi00NDM3LWFlMmItNDYyMGIzY2EzZjE2XkEyXkFqcGc@.V1.jpg" },
+            { titulo: "Bombshell", poster: "https://m.media-amazon.com/images/I/51jbt9gccQL.jpg" },
+            { titulo: "Birds of Prey and The Fantabulous Emancipation of One Harley Quinn", poster: "https://ew.com/thmb/sT-h3pYSc53fKCWxtv5ro4Midno=/2000x0/filters:no_upscale():max_bytes(150000):strip_icc()/birds-of-prey-2000-90f0db5838084a8a8c2eca14edd37e1f.jpg" },
+            { titulo: "Peter Rabbit 2: The Runaway", poster: "https://m.media-amazon.com/images/I/71-gh-srLUL.AC_UF894,1000_QL80.jpg" },
+            { titulo: "The Suicide Squad", poster: "https://postercity.com.ar/wp-content/uploads/2021/10/the-SUICIDE-SQUAD-60-X-90.jpg" },
+            { titulo: "Amsterdam", poster: "https://m.media-amazon.com/images/M/MV5BNzgxNTQzYTEtMDI3Yi00OGQ1LWFkNGMtZDEyM2JlYmE0YzUyXkEyXkFqcGc@.V1.jpg" },
+            { titulo: "Babylon", poster: "https://m.media-amazon.com/images/I/61hxWeyTYcL.AC_UF894,1000_QL80.jpg" },
+            { titulo: "Asteroid City", poster: "https://m.media-amazon.com/images/I/61fyOxnYzHL.AC_UF894,1000_QL80.jpg" },
+            { titulo: "Barbie", poster: "https://image.tmdb.org/t/p/original/dekMkQf0kqAmztUca9lX5e5Pjbp.jpg" },
+            { titulo: "A Big Bold Beautiful Journey", poster: "https://m.media-amazon.com/images/M/MV5BMzMwZWJiYjEtM2RkMi00ZDhjLTk4ZmMtZDQ2NDY2YTJkOTE5XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+            { titulo: "Wuthering Heights", poster: "https://www.ecartelera.com/images/img/243200/243212_m.webp" }
+        ]
+    },
+    {
         id: "directores",
         titulo: "Directores",
         categoria: "explorar",
@@ -316,7 +381,7 @@ const colecciones = [
         id: "greta-gerwig",
         titulo: "Greta Gerwig",
         categoria: "directores",
-        poster: "https://placehold.co/300x450?text=Greta+Gerwig",
+        poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcKoJppfiD3MU63f68_DRUbxHM61xV0oxKialV_s_l8VZJD-Qt5xZyA_l7&s=10",
         peliculas: [
             { titulo: "Nights and Weekends", poster: "https://m.media-amazon.com/images/M/MV5BMTU5NzM0NjUxOF5BMl5BanBnXkFtZTcwMjUyMTQ5MQ@@.V1.jpg" },
             { titulo: "Lady Bird", poster: "https://image.tmdb.org/t/p/original/gl66K7zRdtNYGrxyS2YDUP5ASZd.jpg" },
@@ -797,7 +862,8 @@ function renderizarColecciones() {
         "dragonball": "seccion-dragonball",
         "sw-animacion": "seccion-sw-animacion",
         "franquicias": "seccion-franquicias",
-        "directores": "seccion-directores"
+        "directores": "seccion-directores",
+        "actores": "seccion-actores"
     };
 
     colecciones.forEach(col => {
@@ -1401,6 +1467,20 @@ const btnVolverActores = document.getElementById('btn-volver-actores');
 if(btnVolverActores) {
     btnVolverActores.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-explorar'));
+    });
+}
+
+const btnVolverTimotheeChalamet = document.getElementById('btn-volver-timothee-chalamet');
+if(btnVolverTimotheeChalamet) {
+    btnVolverTimotheeChalamet.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-actores'));
+    });
+}
+
+const btnVolverMargotRobbie = document.getElementById('btn-volver-margot-robbie');
+if(btnVolverMargotRobbie) {
+    btnVolverMargotRobbie.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-actores'));
     });
 }
 
