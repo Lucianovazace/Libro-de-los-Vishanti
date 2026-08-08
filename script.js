@@ -1,7 +1,7 @@
 const listaMedia = [
     // --- ROAD TO DOOMSDAY (ordenado por fecha de estreno) ---
     { titulo: "X-Men (2000)", categoria: "doomsday", tier: 3, tipo: "Película", poster: "https://i.pinimg.com/736x/f9/7c/3f/f97c3f94f67ca6fd6ae7ad0470d6d553.jpg" },
-    { titulo: "X2: X-Men United", categoria: "doomsday", tier: 3, tipo: "Película", poster: "https://legacymovieposters.com/cdn/shop/products/x-men2.jpg?v=1668313148" },
+    { titulo: "X2: X-Men United", categoria: "doomsday", tier: 3, tipo: "Película", poster: "https://m.media-amazon.com/images/I/714SAYP7EQL.AC_UF894,1000_QL80.jpg" },
     { titulo: "X-Men: The Last Stand", categoria: "doomsday", tier: 3, tipo: "Película", poster: "https://pics.filmaffinity.com/x3_x_men_3_the_last_stand-992099331-large.jpg" },
     { titulo: "X-Men Origins: Wolverine", categoria: "doomsday", tier: 4, tipo: "Película", poster: "https://i.blogs.es/b07389/x_men_origins_wolverine/450_1000.jpg" },
     { titulo: "X-Men: First Class", categoria: "doomsday", tier: 3, tipo: "Película", poster: "https://collider.com/wp-content/uploads/x-men-first-class-teaser-poster.jpg" },
@@ -27,7 +27,7 @@ const listaMedia = [
     { titulo: "Ant-Man and The Wasp: Quantumania", categoria: "doomsday", tier: 2, tipo: "Película", poster: "https://lumiere-a.akamaihd.net/v1/images/antman_b843a521.jpeg?region=0,0,658,898" },
     { titulo: "Guardians of the Galaxy Vol. 3", categoria: "doomsday", tier: 3, tipo: "Película", poster: "https://assets-prd.ignimgs.com/2022/12/01/guardians-of-the-galaxy-vol-3-1669932411159.jfif" },
     { titulo: "Loki (Temporada 2)", categoria: "doomsday", tier: 1, tipo: "Serie", poster: "https://preview.redd.it/official-poster-for-loki-season-2-v0-mjczxxkptafb1.jpg?auto=webp&s=b52be74ed745f4c481074ffd739feb43c7c0214f" },
-    { titulo: "The Marvels", categoria: "doomsday", tier: 2, tipo: "Película", poster: "https://placehold.co/300x450?text=The+Marvels" },
+    { titulo: "The Marvels", categoria: "doomsday", tier: 2, tipo: "Película", poster: "https://cdn.marvel.com/content/2x/captain_marvel_2.webp" },
     { titulo: "Deadpool & Wolverine", categoria: "doomsday", tier: 1, tipo: "Película", poster: "https://m.media-amazon.com/images/I/61AwaBKmGXL.jpg" },
     { titulo: "Captain America: Brave New World", categoria: "doomsday", tier: 1, tipo: "Película", poster: "https://i.pinimg.com/736x/19/85/1d/19851d768bfcc73a6942ae30c69f03a8.jpg" },
     { titulo: "Thunderbolts*", categoria: "doomsday", tier: 1, tipo: "Película", poster: "https://m.media-amazon.com/images/I/71Y2ZfgT+4L.jpg" },
@@ -107,7 +107,7 @@ const listaMedia = [
 
     // --- FOX: X-MEN ---
     { titulo: "X-Men (2000)", categoria: "fox-xmen", tipo: "Película", poster: "https://i.pinimg.com/736x/f9/7c/3f/f97c3f94f67ca6fd6ae7ad0470d6d553.jpg" },
-    { titulo: "X2: X-Men United", categoria: "fox-xmen", tipo: "Película", poster: "https://legacymovieposters.com/cdn/shop/products/x-men2.jpg?v=1668313148" },
+    { titulo: "X2: X-Men United", categoria: "fox-xmen", tipo: "Película", poster: "https://m.media-amazon.com/images/I/714SAYP7EQL.AC_UF894,1000_QL80.jpg" },
     { titulo: "X-Men: The Last Stand", categoria: "fox-xmen", tipo: "Película", poster: "https://pics.filmaffinity.com/x3_x_men_3_the_last_stand-992099331-large.jpg" },
     { titulo: "X-Men Origins: Wolverine", categoria: "fox-xmen", tipo: "Película", poster: "https://i.blogs.es/b07389/x_men_origins_wolverine/450_1000.jpg" },
     { titulo: "The Wolverine", categoria: "fox-xmen", tipo: "Película", poster: "https://www.mubis.es/media/articles/4563/45592/lobezno-inmortal-poster-imagenes-y-adelanto-del-primer-teaser-trailer-original.jpg" },
@@ -362,6 +362,103 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "galardones",
+        titulo: "Galardones",
+        categoria: "explorar",
+        poster: "https://placehold.co/300x450?text=Galardones",
+        esContenedor: true,
+        peliculas: []
+    },
+    {
+        id: "academy-awards",
+        titulo: "Academy Awards",
+        categoria: "galardones",
+        poster: "https://w0.peakpx.com/wallpaper/320/887/HD-wallpaper-the-oscars-award-golden-statue-symbol.jpg",
+        esContenedor: true,
+        peliculas: []
+    },
+    {
+        id: "golden-globes",
+        titulo: "Golden Globes",
+        categoria: "galardones",
+        poster: "https://i.pinimg.com/474x/88/4d/ef/884def6caa7f1ef49a06a01c4e67451b.jpg",
+        peliculas: []
+    },
+    {
+        id: "oscar-nominados",
+        titulo: "Nominados",
+        categoria: "academy-awards",
+        poster: "https://wallpapercat.com/w/full/5/7/9/1371526-1780x2748-mobile-hd-the-oscars-background-image.jpg",
+        peliculas: []
+    },
+    {
+        id: "oscar-2020-actualidad",
+        titulo: "2020 - Actualidad",
+        categoria: "academy-awards",
+        poster: "https://placehold.co/300x450?text=2020-Actualidad",
+        esContenedor: true,
+        peliculas: []
+    },
+    {
+        id: "oscar-2020",
+        titulo: "2020",
+        categoria: "oscar-anios",
+        poster: "https://m.media-amazon.com/images/M/MV5BYjBiYzg3NmYtODgzNS00Y2I4LTlmMGQtZmQ5ODA2ZTNmOTAyXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg",
+        peliculas: [
+            { titulo: "Parasite", poster: "https://image.tmdb.org/t/p/original/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg" },
+            { titulo: "1917", poster: "https://m.media-amazon.com/images/M/MV5BYzkxZjg2NDQtMGVjMy00NWZkLTk0ZDEtZWE3NDYwYjAyMTg1XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+            { titulo: "Ford v Ferrari", poster: "https://cdng.europosters.eu/pod_public/1300/322166.jpg" },
+            { titulo: "Jojo Rabbit", poster: "https://cdng.europosters.eu/pod_public/1300/322216.jpg" },
+            { titulo: "Joker", poster: "https://i.ebayimg.com/images/g/rI0AAOSw89NiRZ6k/s-l1200.jpg" },
+            { titulo: "Little Women", poster: "https://m.media-amazon.com/images/I/61TK-+geKPL.AC_UF894,1000_QL80.jpg" },
+            { titulo: "Historia de un Matrimonio", poster: "https://cdn.posteritati.com/posters/000/000/060/561/marriage-story-md-web.jpg" },
+            { titulo: "Once Upon a Time in Hollywood", poster: "https://m.media-amazon.com/images/M/MV5BMzMzNmViNjYtN2ViNi00NDM3LWFlMmItNDYyMGIzY2EzZjE2XkEyXkFqcGc@.V1.jpg" },
+            { titulo: "The Irishman", poster: "https://cdng.europosters.eu/pod_public/750/322410.jpg" }
+        ]
+    },
+    {
+        id: "oscar-2021",
+        titulo: "2021",
+        categoria: "oscar-anios",
+        poster: "https://icantunseethatmovie.com/wp-content/uploads/2023/06/06209-oscars2021_yellowposter.png",
+        peliculas: []
+    },
+    {
+        id: "oscar-2022",
+        titulo: "2022",
+        categoria: "oscar-anios",
+        poster: "https://static0.srcdn.com/wordpress/wp-content/uploads/2024/01/the-oscars-poster-featuring-an-oscars-statue-standing-in-front-of-a-curtain.jpeg",
+        peliculas: []
+    },
+    {
+        id: "oscar-2023",
+        titulo: "2023",
+        categoria: "oscar-anios",
+        poster: "https://m.media-amazon.com/images/M/MV5BZjM4NDAyZDMtYjA4ZC00MmZhLTllNzktZDZlMWFmYzBiYTEzXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg",
+        peliculas: []
+    },
+    {
+        id: "oscar-2024",
+        titulo: "2024",
+        categoria: "oscar-anios",
+        poster: "https://m.media-amazon.com/images/M/MV5BOWQyNDA5NzYtODFlMi00MmQwLTlmYTMtYjI4NmYwYWNmMjYwXkEyXkFqcGc@.V1.jpg",
+        peliculas: []
+    },
+    {
+        id: "oscar-2025",
+        titulo: "2025",
+        categoria: "oscar-anios",
+        poster: "https://m.media-amazon.com/images/M/MV5BZTRhM2Q5ZGQtYzM2NC00NWY2LWJlODUtMmE4MTJmYTUyNjU5XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg",
+        peliculas: []
+    },
+    {
+        id: "oscar-2026",
+        titulo: "2026",
+        categoria: "oscar-anios",
+        poster: "https://image.tmdb.org/t/p/w500/mbERPIFlNxN9hwI8Cp3K5TstmDq.jpg",
+        peliculas: []
+    },
+    {
         id: "franquicias",
         titulo: "Franquicias",
         categoria: "explorar",
@@ -536,6 +633,20 @@ const colecciones = [
             { titulo: "LEGO Batman 3: Beyond Gotham", poster: "https://m.media-amazon.com/images/M/MV5BN2E3ZGM5MTAtOGE3NS00OWMyLWFkNmMtOTVlODUwOWNmMWE5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
             { titulo: "LEGO DC Super-Villains", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtWxQKciBUEcUG1kHfFfAvAcWtvkUZ8j-eOgDLzz5EbuUXN5ts6tIcgqs&s=10" },
             { titulo: "LEGO Batman: Legacy of the Dark Knight", poster: "https://m.media-amazon.com/images/M/MV5BNDhlYTFmOGMtY2YxZi00ODczLTg0NTQtZDJiMzBjZWQ4YzU2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" }
+        ]
+    },
+    {
+        id: "marvel-disneyxd",
+        titulo: "Universo Marvel de Disney XD (Tierra-12041)",
+        categoria: "marvel-animacion",
+        poster: "https://image.tmdb.org/t/p/original/eXtlDP6kgUyYw0G2L9AxSWUp14Q.jpg",
+        peliculas: [
+            { titulo: "Ultimate Spider-Man", poster: "https://image.tmdb.org/t/p/original/eXtlDP6kgUyYw0G2L9AxSWUp14Q.jpg" },
+            { titulo: "Avengers Assemble", poster: "https://i.pinimg.com/736x/23/cc/1e/23cc1e9834742a247bfd317b5758fb7c.jpg" },
+            { titulo: "Hulk y Los Agentes de S.M.A.S.H.", poster: "https://m.media-amazon.com/images/M/MV5BMTg1MzIxMzM4Nl5BMl5BanBnXkFtZTcwMTg3Mzc5OQ@@._V1_FMjpg_UX1000_.jpg" },
+            { titulo: "Guardianes de La Galaxia", poster: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p12037541_b_v8_ay.jpg" },
+            { titulo: "Iron Man y Hulk: Héroes Unidos", poster: "https://m.media-amazon.com/images/M/MV5BNmQ4NDY1YWEtNTdmZi00ZmQ5LTk3MzYtYzBkNzhmNTM2Yzk5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+            { titulo: "Iron Man y Capitán América: Héroes Unidos", poster: "https://m.media-amazon.com/images/M/MV5BZjkxMTM1YmYtZDRkNC00YWNlLWFiYjAtZGIyMmQyYjI0ZjFjXkEyXkFqcGc@._V1_.jpg" }
         ]
     },
     {
@@ -859,9 +970,13 @@ function renderizarColecciones() {
         "lego": "seccion-lego",
         "ben10": "seccion-ben10",
         "marvel-videojuegos": "seccion-marvel-videojuegos",
+        "marvel-animacion": "seccion-marvel-animacion",
         "dragonball": "seccion-dragonball",
         "sw-animacion": "seccion-sw-animacion",
         "franquicias": "seccion-franquicias",
+        "galardones": "seccion-galardones",
+        "academy-awards": "seccion-academy-awards",
+        "oscar-anios": "seccion-oscar-2020-actualidad",
         "directores": "seccion-directores",
         "actores": "seccion-actores"
     };
@@ -1227,6 +1342,7 @@ const botonesNavegacion = [
     { btn: 'btn-explorar', sec: 'seccion-explorar' },
     { btn: 'btn-arrowverse', sec: 'seccion-arrowverse' },
     { btn: 'btn-marvel-videojuegos', sec: 'seccion-marvel-videojuegos' },
+    { btn: 'btn-marvel-animacion', sec: 'seccion-marvel-animacion' },
     { btn: 'btn-dc-personajes', sec: 'seccion-dc-personajes' },
     { btn: 'btn-mcu-infinito', sec: 'seccion-mcu-infinito' },
     { btn: 'btn-mcu-multiverso', sec: 'seccion-mcu-multiverso' },
@@ -1498,6 +1614,50 @@ if(btnVolverFranquicias) {
     });
 }
 
+const btnVolverGalardones = document.getElementById('btn-volver-galardones');
+if(btnVolverGalardones) {
+    btnVolverGalardones.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-explorar'));
+    });
+}
+
+const btnVolverAcademyAwards = document.getElementById('btn-volver-academy-awards');
+if(btnVolverAcademyAwards) {
+    btnVolverAcademyAwards.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-galardones'));
+    });
+}
+
+const btnVolverGoldenGlobes = document.getElementById('btn-volver-golden-globes');
+if(btnVolverGoldenGlobes) {
+    btnVolverGoldenGlobes.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-galardones'));
+    });
+}
+
+const btnVolverOscarNominados = document.getElementById('btn-volver-oscar-nominados');
+if(btnVolverOscarNominados) {
+    btnVolverOscarNominados.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-academy-awards'));
+    });
+}
+
+const btnVolverOscar2020Actualidad = document.getElementById('btn-volver-oscar-2020-actualidad');
+if(btnVolverOscar2020Actualidad) {
+    btnVolverOscar2020Actualidad.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-academy-awards'));
+    });
+}
+
+['btn-volver-oscar-2020', 'btn-volver-oscar-2021', 'btn-volver-oscar-2022', 'btn-volver-oscar-2023', 'btn-volver-oscar-2024', 'btn-volver-oscar-2025', 'btn-volver-oscar-2026'].forEach(id => {
+    const btn = document.getElementById(id);
+    if(btn) {
+        btn.addEventListener('click', () => {
+            cambiarSeccion(document.getElementById('seccion-oscar-2020-actualidad'));
+        });
+    }
+});
+
 const btnVolverChristopherNolan = document.getElementById('btn-volver-christopher-nolan');
 if(btnVolverChristopherNolan) {
     btnVolverChristopherNolan.addEventListener('click', () => {
@@ -1586,6 +1746,13 @@ const btnVolverInsomniac = document.getElementById('btn-volver-insomniac');
 if(btnVolverInsomniac) {
     btnVolverInsomniac.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-marvel-videojuegos'));
+    });
+}
+
+const btnVolverMarvelDisneyxd = document.getElementById('btn-volver-marvel-disneyxd');
+if(btnVolverMarvelDisneyxd) {
+    btnVolverMarvelDisneyxd.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-marvel-animacion'));
     });
 }
 
