@@ -276,7 +276,8 @@ const listaMedia = [
     // --- IT (colección "contenedor" con filtros) ---
     { titulo: "It", categoria: "it", subtipo: "muschietti", tipo: "Película", poster: "https://m.media-amazon.com/images/I/617t0rMU9vL.AC_UF894,1000_QL80.jpg" },
     { titulo: "It Parte Dos", categoria: "it", subtipo: "muschietti", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYzUxM2VhOGItZTY2My00OTA4LWI4NjUtMDA5YWJjM2M2NDJjXkEyXkFqcGc@.V1.jpg" },
-    { titulo: "It: Bienvenidos a Derry", categoria: "it", subtipo: "muschietti", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/nyy3BITeIjviv6PFIXtqvc8i6xi.jpg" }
+    { titulo: "It: Bienvenidos a Derry", categoria: "it", subtipo: "muschietti", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/nyy3BITeIjviv6PFIXtqvc8i6xi.jpg" },
+    { titulo: "It (1990)", categoria: "it", subtipo: "clasico", tipo: "Miniserie", poster: "https://m.media-amazon.com/images/M/MV5BZDFhODExOTctNTFkZS00NjE1LWE2MWMtY2Q1ZThhMGY5NjJkXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" }
 ];
 
 // ==========================================
@@ -287,7 +288,7 @@ const colecciones = [
         id: "actores",
         titulo: "Actores",
         categoria: "explorar",
-        poster: "https://placehold.co/300x450?text=Actores",
+        poster: "https://wallpapercat.com/w/full/e/c/a/126634-1152x2048-mobile-hd-la-la-land-wallpaper-photo.jpg",
         esContenedor: true,
         peliculas: []
     },
@@ -340,7 +341,7 @@ const colecciones = [
             { titulo: "Terminal", poster: "https://m.media-amazon.com/images/M/MV5BOTliYzYyYTAtNzBjMy00MGE2LThmOWMtZWM1ZmI0MDE1ZjM3XkEyXkFqcGc@.V1.jpg" },
             { titulo: "Mary Queen of Scots", poster: "https://mir-s3-cdn-cf.behance.net/project_modules/hd/5166b095985439.5ea4161223dcd.jpg" },
             { titulo: "Dreamland", poster: "https://m.media-amazon.com/images/M/MV5BNzNhNmZhZjQtZTI0ZC00NDFhLWFlZTUtODE4NjgwZmMyZjI2XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
-            { titulo: "Once Upon a Time in Hollywood", poster: "https://m.media-amazon.com/images/M/MV5BMzMzNmViNjYtN2ViNi00NDM3LWFlMmItNDYyMGIzY2EzZjE2XkEyXkFqcGc@.V1.jpg" },
+            { titulo: "Once Upon a Time in Hollywood", poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2019/06/IMG_9717.jpeg" },
             { titulo: "Bombshell", poster: "https://m.media-amazon.com/images/I/51jbt9gccQL.jpg" },
             { titulo: "Birds of Prey and The Fantabulous Emancipation of One Harley Quinn", poster: "https://ew.com/thmb/sT-h3pYSc53fKCWxtv5ro4Midno=/2000x0/filters:no_upscale():max_bytes(150000):strip_icc()/birds-of-prey-2000-90f0db5838084a8a8c2eca14edd37e1f.jpg" },
             { titulo: "Peter Rabbit 2: The Runaway", poster: "https://m.media-amazon.com/images/I/71-gh-srLUL.AC_UF894,1000_QL80.jpg" },
@@ -357,7 +358,7 @@ const colecciones = [
         id: "directores",
         titulo: "Directores",
         categoria: "explorar",
-        poster: "https://placehold.co/300x450?text=Directores",
+        poster: "https://wallpapercat.com/w/full/8/2/8/1354558-2048x3137-iphone-hd-damien-chazelle-background-image.jpg",
         esContenedor: true,
         peliculas: []
     },
@@ -365,7 +366,7 @@ const colecciones = [
         id: "galardones",
         titulo: "Galardones",
         categoria: "explorar",
-        poster: "https://placehold.co/300x450?text=Galardones",
+        poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7wPadEh8Kbsyrj9VvfkBV94JIRXYNdaG2cwtk8KbQ2EjXeIeYE-rvael_&s=10",
         esContenedor: true,
         peliculas: []
     },
@@ -412,7 +413,7 @@ const colecciones = [
             { titulo: "Joker", poster: "https://i.ebayimg.com/images/g/rI0AAOSw89NiRZ6k/s-l1200.jpg" },
             { titulo: "Little Women", poster: "https://m.media-amazon.com/images/I/61TK-+geKPL.AC_UF894,1000_QL80.jpg" },
             { titulo: "Historia de un Matrimonio", poster: "https://cdn.posteritati.com/posters/000/000/060/561/marriage-story-md-web.jpg" },
-            { titulo: "Once Upon a Time in Hollywood", poster: "https://m.media-amazon.com/images/M/MV5BMzMzNmViNjYtN2ViNi00NDM3LWFlMmItNDYyMGIzY2EzZjE2XkEyXkFqcGc@.V1.jpg" },
+            { titulo: "Once Upon a Time in Hollywood", poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2019/06/IMG_9717.jpeg" },
             { titulo: "The Irishman", poster: "https://cdng.europosters.eu/pod_public/750/322410.jpg" }
         ]
     },
@@ -462,7 +463,7 @@ const colecciones = [
         id: "franquicias",
         titulo: "Franquicias",
         categoria: "explorar",
-        poster: "https://placehold.co/300x450?text=Franquicias",
+        poster: "https://i.pinimg.com/736x/62/74/e2/6274e27e43cfb816c6fcfeaefdd9b21d.jpg",
         esContenedor: true,
         peliculas: []
     },
@@ -562,7 +563,7 @@ const colecciones = [
         id: "peliculas-independientes",
         titulo: "Películas Independientes",
         categoria: "dc-animacion",
-        poster: "https://i.pinimg.com/736x/10/3e/28/103e2858c657d918783491b46aababee.jpg",
+        poster: "https://i.pinimg.com/736x/11/31/1a/11311a67b1434bde66509a6c966a4847.jpg",
         peliculas: [
             { titulo: "Superman: Doomsday", poster: "https://m.media-amazon.com/images/M/MV5BNTg2YzMxNGMtYmY2MS00Mjk1LTgwM2ItNzg3NDkwZWM3ZmRhXkEyXkFqcGc@.V1.jpg" },
             { titulo: "Justice League: The New Frontier", poster: "https://m.media-amazon.com/images/M/MV5BNTU5NzM0NTU0NF5BMl5BanBnXkFtZTgwOTEyNzAwNzE@.V1_FMjpg_UX1000.jpg" },
@@ -587,7 +588,7 @@ const colecciones = [
             { titulo: "Batman: Gotham by Gaslight", poster: "https://i.ebayimg.com/images/g/oAIAAOSwv3NgYbIc/s-l1200.jpg" },
             { titulo: "Superman: Red Son", poster: "https://m.media-amazon.com/images/M/MV5BNGM0YTQ3MzktZWQ0Mi00MWNhLWJlYTQtOGYxYzhmMDBmMzA0XkEyXkFqcGc@.V1.jpg" },
             { titulo: "Batman: Soul of the Dragon", poster: "https://m.media-amazon.com/images/M/MV5BYzA4NmVhOTItNzg4MC00YTJjLTk5ZmMtYTJmY2NhM2ZiNmMyXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
-            { titulo: "Injustice", poster: "https://i.pinimg.com/736x/10/3e/28/103e2858c657d918783491b46aababee.jpg" },
+            { titulo: "Injustice Movie", poster: "https://i.pinimg.com/736x/10/3e/28/103e2858c657d918783491b46aababee.jpg" },
             { titulo: "Catwoman: Hunted", poster: "https://m.media-amazon.com/images/M/MV5BNzQyNTIxZDgtMGI5NS00ZDk2LWJlOTItMmJmYzdhMDIzYzljXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
             { titulo: "Batman and Superman: Battle of the Super Sons", poster: "https://m.media-amazon.com/images/M/MV5BNGRiMDYzMDQtMWI3ZC00MWEwLWJkYzYtNjQwNzZjODEzNmZiXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
             { titulo: "Batman: The Doom That Came to Gotham", poster: "https://static.dc.com/2023-04/Movies_Thumb_BatmanDoomCame2Gotham.jpg" },
@@ -597,10 +598,32 @@ const colecciones = [
         ]
     },
     {
+        id: "series-independientes",
+        titulo: "Series Independientes",
+        categoria: "dc-animacion",
+        poster: "https://i.pinimg.com/736x/11/31/1a/11311a67b1434bde66509a6c966a4847.jpg",
+        peliculas: [
+            { titulo: "Teen Titans", poster: "https://image.tmdb.org/t/p/original/gxe4wIp3kYfw4QSkLMt99HfLkok.jpg" },
+            { titulo: "The Batman", poster: "https://image.tmdb.org/t/p/original/3w7koeOR2x71XYMJDGpygxYtScI.jpg" },
+            { titulo: "Legion of Super Heroes", poster: "https://m.media-amazon.com/images/M/MV5BM2UyODExMTctYmQzZS00OTU1LWJiMmUtMjhjOWI4ODk0MDgwXkEyXkFqcGc@.V1.jpg" },
+            { titulo: "Batman: The Brave and the Bold", poster: "https://m.media-amazon.com/images/M/MV5BM2FkYTQ2MzUtNWI1NC00MTM0LTgyNzYtMDM3NmE1OWYyNjRjXkEyXkFqcGc@.V1.jpg" },
+            { titulo: "Young Justice", poster: "https://i.pinimg.com/736x/34/cf/e5/34cfe579fbd4b66a88f00ee0ab7e4ca6.jpg" },
+            { titulo: "Green Lantern: The Animated Series", poster: "https://static.wikia.nocookie.net/marvel_dc/images/3/3e/Green_Lantern_TAS_poster.jpg/revision/latest?cb=20211209132459" },
+            { titulo: "Beware the Batman", poster: "https://m.media-amazon.com/images/M/MV5BMzVhYWVkYmEtNDcxMS00ZWVmLWEwNDMtMzUyMTdkN2Y5ZmFhXkEyXkFqcGc@.V1.jpg" },
+            { titulo: "Teen Titans Go!", poster: "https://i.pinimg.com/originals/b9/14/e6/b914e6826251973ea7d7a58569f4d0c0.jpg" },
+            { titulo: "Justice League Action", poster: "https://m.media-amazon.com/images/M/MV5BNjFkZTQ0ZmItODZjZS00N2Q5LWI0MWUtZTliMzdkNmVkMmM0XkEyXkFqcGc@.V1.jpg" },
+            { titulo: "DC Super Hero Girls", poster: "https://m.media-amazon.com/images/M/MV5BMWI4ZmY0OTctYjY0OS00NTVmLThlZTMtYTI0OWY5M2QwNjE5XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+            { titulo: "Harley Quinn", poster: "https://static.wikia.nocookie.net/doblaje/images/d/d5/Harley_quinn_serie_animada.jpg/revision/latest?cb=20240831203415&path-prefix=es" },
+            { titulo: "My Adventures with Superman", poster: "https://m.media-amazon.com/images/M/MV5BNjU3NmE4MDctMDMzYS00NTc5LTg0MmYtNDg2NDhiOTAxMzhjXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+            { titulo: "Batman: Caped Crusader", poster: "https://m.media-amazon.com/images/M/MV5BMjI1Y2NmNDgtZDVmMy00MjcwLTgwNmItMTFmMjcxMWRlYzQwXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+            { titulo: "Suicide Squad Isekai", poster: "https://m.media-amazon.com/images/M/MV5BM2FkMDljMTctZGRkNS00NTBiLWFlMjQtZDUyMGZhMGE1NDRlXkEyXkFqcGc@.V1.jpg" }
+        ]
+    },
+    {
         id: "injustice",
         titulo: "Injustice",
         categoria: "dc-videojuegos",
-        poster: "https://i.pinimg.com/736x/10/3e/28/103e2858c657d918783491b46aababee.jpg",
+        poster: "https://i.pinimg.com/564x/95/9b/f5/959bf5176a963ae78455679cf0103473.jpg",
         esVideojuego: true,
         peliculas: [
             { titulo: "Injustice: Gods Among Us", poster: "https://m.media-amazon.com/images/M/MV5BZjVjNTg1MWUtM2ZhYi00YzA2LWI2ZTctZTVjNzFhZGM2NDMxXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
@@ -1717,6 +1740,13 @@ if(btnVolverArkhamverse) {
 const btnVolverPeliculasIndependientes = document.getElementById('btn-volver-peliculas-independientes');
 if(btnVolverPeliculasIndependientes) {
     btnVolverPeliculasIndependientes.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dc-animacion'));
+    });
+}
+
+const btnVolverSeriesIndependientes = document.getElementById('btn-volver-series-independientes');
+if(btnVolverSeriesIndependientes) {
+    btnVolverSeriesIndependientes.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-dc-animacion'));
     });
 }
