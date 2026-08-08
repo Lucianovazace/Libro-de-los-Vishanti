@@ -76,7 +76,7 @@ h1 {
     flex-wrap: wrap;
 }
 
-.btn-nav, .btn-categoria, .btn-subcategoria, .btn-filtro, .btn-filtro-arrowverse, .btn-filtro-dcu, .btn-filtro-dcmultiverso, .btn-filtro-it, .btn-filtro-got, .btn-filtro-mcu {
+.btn-nav, .btn-categoria, .btn-subcategoria, .btn-filtro, .btn-filtro-arrowverse, .btn-filtro-dcu, .btn-filtro-dcmultiverso, .btn-filtro-it, .btn-filtro-got, .btn-filtro-mcu, .btn-filtro-ac {
     background-color: #2a2d35;
     color: white;
     border: none;
@@ -161,7 +161,7 @@ h2 {
     flex-wrap: wrap;
 }
 
-.btn-filtro.activo, .btn-filtro-arrowverse.activo, .btn-filtro-dcu.activo, .btn-filtro-dcmultiverso.activo, .btn-filtro-it.activo, .btn-filtro-got.activo, .btn-filtro-mcu.activo {
+.btn-filtro.activo, .btn-filtro-arrowverse.activo, .btn-filtro-dcu.activo, .btn-filtro-dcmultiverso.activo, .btn-filtro-it.activo, .btn-filtro-got.activo, .btn-filtro-mcu.activo, .btn-filtro-ac.activo {
     background-color: var(--accent-color) !important;
     color: #fff !important;
 }
@@ -528,7 +528,7 @@ h2 {
 
     .btn-nav, .btn-categoria, .btn-subcategoria,
     .btn-filtro, .btn-filtro-arrowverse, .btn-filtro-dcu,
-    .btn-filtro-dcmultiverso, .btn-filtro-it, .btn-filtro-got, .btn-filtro-mcu {
+    .btn-filtro-dcmultiverso, .btn-filtro-it, .btn-filtro-got, .btn-filtro-mcu, .btn-filtro-ac {
         font-size: 12px;
         padding: 7px 10px;
     }
