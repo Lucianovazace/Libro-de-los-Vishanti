@@ -566,6 +566,53 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "estudios",
+        titulo: "Estudios",
+        categoria: "franquicias",
+        poster: "https://w0.peakpx.com/wallpaper/947/761/HD-wallpaper-hollywood-studios-vintage-film.jpg",
+        esContenedor: true,
+        peliculas: []
+    },
+    {
+        id: "pixar",
+        titulo: "Pixar",
+        categoria: "estudios",
+        poster: "https://i.pinimg.com/736x/b8/ff/71/b8ff71f17f6ef4e183e16c08daaa8d16.jpg",
+        peliculas: [
+            { titulo: "Toy Story", poster: "https://m.media-amazon.com/images/I/71aBLaC4TzL.jpg" },
+            { titulo: "Bichos", poster: "https://m.media-amazon.com/images/M/MV5BNGI3Mjc1ZjUtYTJhYS00NjBiLTgyYjctODU5NTNlMWJiYjYzXkEyXkFqcGc@.V1.jpg" },
+            { titulo: "Toy Story 2", poster: "https://m.media-amazon.com/images/I/719aV3ujFKL.jpg" },
+            { titulo: "Monsters Inc.", poster: "https://i.pinimg.com/736x/59/10/23/59102333312c8ceae749027c5193539d.jpg" },
+            { titulo: "Buscando a Nemo", poster: "https://image.tmdb.org/t/p/original/5lc6nQc0VhWFYFbNv016xze8Jvy.jpg" },
+            { titulo: "Los Increíbles", poster: "https://image.tmdb.org/t/p/original/2UnQ5f7PgHo4jIk6EUuS4xPsG1B.jpg" },
+            { titulo: "Cars", poster: "https://image.tmdb.org/t/p/original/uq3N2SFj1Y06zA6LzCQPkmBdaaE.jpg" },
+            { titulo: "Ratatouille", poster: "https://m.media-amazon.com/images/M/MV5BMTMzODU0NTkxMF5BMl5BanBnXkFtZTcwMjQ4MzMzMw@@.V1_FMjpg_UX1000.jpg" },
+            { titulo: "Wall-E", poster: "https://image.tmdb.org/t/p/original/hbhFnRzzg6ZDmm8YAmxBnQpQIPh.jpg" },
+            { titulo: "Up", poster: "https://image.tmdb.org/t/p/original/eAdO0qa9m0NFSVLZ26PvCwmPlsr.jpg" },
+            { titulo: "Toy Story 3", poster: "https://image.tmdb.org/t/p/original/xNMYWGov98EySsv31FVEcnMKt9q.jpg" },
+            { titulo: "Cars 2", poster: "https://m.media-amazon.com/images/M/MV5BMTUzNTc3MTU3M15BMl5BanBnXkFtZTcwMzIxNTc3NA@@.V1_FMjpg_UX1000.jpg" },
+            { titulo: "Valiente", poster: "https://m.media-amazon.com/images/M/MV5BMzgwODk3ODA1NF5BMl5BanBnXkFtZTcwNjU3NjQ0Nw@@.V1.jpg" },
+            { titulo: "Monsters University", poster: "https://image.tmdb.org/t/p/original/wsERTuCGV4Fj2wqNr8kqYKcjIMd.jpg" },
+            { titulo: "Intensa-Mente", poster: "https://www.originalfilmart.com/cdn/shop/products/inside_out_2015_original_film_art_74649cb0-2ba2-4a00-9dda-e0829f708159_5000x.jpg?v=1606252623" },
+            { titulo: "Un Buen Dinosaurio", poster: "https://cdn.posteritati.com/posters/000/000/048/988/the-good-dinosaur-md-web.jpg" },
+            { titulo: "Buscando a Dory", poster: "https://image.tmdb.org/t/p/original/xufFFw9wRDYmICfutz4yeSsIwaa.jpg" },
+            { titulo: "Cars 3", poster: "https://i0.wp.com/pixarpost.com/wp-content/uploads/2020/10/6bae7-cars-3-official-poster.jpg?fit=744%2C1102&ssl=1" },
+            { titulo: "Coco", poster: "https://image.tmdb.org/t/p/original/4jfKMdT6vdkpcB2EyBj2XkO2tTf.jpg" },
+            { titulo: "Los Increíbles 2", poster: "https://i0.wp.com/teaser-trailer.com/wp-content/uploads/2017/03/The-Incredibles-2-Teaser-Poster.jpg?resize=425%2C600&ssl=1" },
+            { titulo: "Toy Story 4", poster: "https://hips.hearstapps.com/hmg-prod/images/toy-story-4-poster-1543427531.jpg" },
+            { titulo: "Unidos", poster: "https://m.media-amazon.com/images/I/81ZnP4DB06L.AC_UF894,1000_QL80.jpg" },
+            { titulo: "Soul", poster: "https://image.tmdb.org/t/p/original/xJ7MCAy4oCLerPo3JjnB8lKOhl4.jpg" },
+            { titulo: "Luca", poster: "https://m.media-amazon.com/images/I/71kDOwRD78S.jpg" },
+            { titulo: "Red", poster: "https://m.media-amazon.com/images/I/81afp89kELL.jpg" },
+            { titulo: "Lightyear", poster: "https://lumiere-a.akamaihd.net/v1/images/p_243_ster_lightyear_9209f1b3.jpeg" },
+            { titulo: "Elementos", poster: "https://m.media-amazon.com/images/I/612zBRsyHbL.jpg" },
+            { titulo: "Intensa-Mente 2", poster: "https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2023/11/IO2_Teaser_Manhole_1s_v7.2_KA_Mech7_FS.jpg" },
+            { titulo: "Elio", poster: "https://lumiere-a.akamaihd.net/v1/images/elio_teaser2_poster_spain_1e0faa4d.jpeg" },
+            { titulo: "Hoppers", poster: "https://lumiere-a.akamaihd.net/v1/images/lifespan_payoff_posters_united_kingdom_1_f4464a86.jpeg?region=0,0,770,1100" },
+            { titulo: "Toy Story 5", poster: "https://image.tmdb.org/t/p/original/j3TpFDOfFBlKNR1TScIfw1h2Oa6.jpg" }
+        ]
+    },
+    {
         id: "rapidos-y-furiosos",
         titulo: "Rápidos y Furiosos Saga",
         categoria: "franquicias",
@@ -1015,6 +1062,19 @@ const colecciones = [
         ]
     },
     {
+        id: "dragonball-gt",
+        titulo: "Dragon Ball GT",
+        categoria: "dragonball",
+        poster: "https://w0.peakpx.com/wallpaper/957/291/HD-wallpaper-dragon-ball-gt-anime-goku-trunks.jpg",
+        peliculas: [
+            { titulo: "Saga del Gran Viaje", poster: "https://pics.filmaffinity.com/dragon_ball_gt-891071273-large.jpg" },
+            { titulo: "Saga de Baby", poster: "https://i.pinimg.com/736x/74/bb/97/74bb9786b2eef3f4a1a730655d6e7475.jpg" },
+            { titulo: "Saga de Super A-17", poster: "https://i.pinimg.com/736x/51/3f/27/513f277d4ceeff41610c07ac62cfa348.jpg" },
+            { titulo: "Saga de los Dragones Oscuros", poster: "https://images.justwatch.com/poster/1444330/s718/temporada-4.jpg" },
+            { titulo: "100 Años Después", poster: "https://m.media-amazon.com/images/M/MV5BZWYyZmZmYzQtMzVmYS00MWI5LWJiMzctNGEzMTM3N2ZjYTJlXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" }
+        ]
+    },
+    {
         id: "dragonball-todo",
         titulo: "Todo Dragon Ball",
         categoria: "dragonball",
@@ -1032,7 +1092,12 @@ const colecciones = [
             { titulo: "Saga de Black", poster: "https://i.pinimg.com/736x/a0/b0/73/a0b0732ee82a57b35ca1b379810196b4.jpg" },
             { titulo: "Saga del Torneo de Poder", poster: "https://i.pinimg.com/736x/c7/92/95/c79295cb907936831832bf5ec1ae17d5.jpg" },
             { titulo: "Dragon Ball Super: Broly", poster: "https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/media/imagenes/recursos/dragon-ball-super-broly-poster/138134866-1-esl-ES/Dragon-ball-super-Broly-poster.jpg" },
-            { titulo: "Dragon Ball Super: Hero", poster: "https://m.media-amazon.com/images/I/61Oo8yO7qKL._AC_UF894,1000_QL80_.jpg" }
+            { titulo: "Dragon Ball Super: Hero", poster: "https://m.media-amazon.com/images/I/61Oo8yO7qKL._AC_UF894,1000_QL80_.jpg" },
+            { titulo: "Saga del Gran Viaje", poster: "https://pics.filmaffinity.com/dragon_ball_gt-891071273-large.jpg" },
+            { titulo: "Saga de Baby", poster: "https://i.pinimg.com/736x/74/bb/97/74bb9786b2eef3f4a1a730655d6e7475.jpg" },
+            { titulo: "Saga de Super A-17", poster: "https://i.pinimg.com/736x/51/3f/27/513f277d4ceeff41610c07ac62cfa348.jpg" },
+            { titulo: "Saga de los Dragones Oscuros", poster: "https://images.justwatch.com/poster/1444330/s718/temporada-4.jpg" },
+            { titulo: "100 Años Después", poster: "https://m.media-amazon.com/images/M/MV5BZWYyZmZmYzQtMzVmYS00MWI5LWJiMzctNGEzMTM3N2ZjYTJlXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" }
         ]
     },
     {
@@ -1111,6 +1176,38 @@ function coleccionCompleta(vistos, coleccionId) {
     return todosVistos(vistos, col.peliculas.map(p => p.titulo));
 }
 
+// Helper: % de una colección visto (0-100)
+function porcentajeColeccionVisto(vistos, coleccionId) {
+    const col = colecciones.find(c => c.id === coleccionId);
+    if (!col || !col.peliculas.length) return 0;
+    const vistas = col.peliculas.filter(p => vistos.has(p.titulo)).length;
+    return (vistas / col.peliculas.length) * 100;
+}
+
+// Helper: cantidad de títulos vistos dentro de una colección
+function cantidadVistaEnColeccion(vistos, coleccionId) {
+    const col = colecciones.find(c => c.id === coleccionId);
+    if (!col) return 0;
+    return col.peliculas.filter(p => vistos.has(p.titulo)).length;
+}
+
+// Helper: cantidad de títulos vistos (en toda la app) cuyo nombre contiene una palabra
+function cantidadTitulosConPalabra(vistos, palabra) {
+    const palabraLower = palabra.toLowerCase();
+    const titulosContados = new Set();
+    const revisar = (titulo) => {
+        if (titulo.toLowerCase().includes(palabraLower) && vistos.has(titulo)) {
+            titulosContados.add(titulo);
+        }
+    };
+    listaMedia.forEach(item => revisar(item.titulo));
+    colecciones.forEach(col => {
+        revisar(col.titulo);
+        col.peliculas.forEach(p => revisar(p.titulo));
+    });
+    return titulosContados.size;
+}
+
 const logrosDisponibles = [
     {
         id: "poder-del-sol",
@@ -1154,6 +1251,59 @@ const logrosDisponibles = [
             "Star Wars: Episodio V - El Imperio Contraataca",
             "Star Wars: Episodio VI - El Retorno del Jedi"
         ])
+    },
+    {
+        id: "terminare-lo-que-empezaste",
+        nombre: "Terminaré lo que empezaste",
+        descripcion: "Mirá los Episodios VII, VIII y IX de Star Wars",
+        icono: "🌌",
+        condicion: (vistos) => todosVistos(vistos, [
+            "Star Wars: Episodio VII - El Despertar de la Fuerza",
+            "Star Wars: Episodio VIII - Los Últimos Jedi",
+            "Star Wars: Episodio IX - El Ascenso de Skywalker"
+        ])
+    },
+    {
+        id: "uno-de-los-grandes",
+        nombre: "Quiero ser uno de los grandes",
+        descripcion: "Superá el 70% de las películas de Timothée Chalamet",
+        icono: "🎬",
+        condicion: (vistos) => porcentajeColeccionVisto(vistos, "timothee-chalamet") > 70
+    },
+    {
+        id: "hacelo-con-estilo",
+        nombre: "Si vas a hacer algo mal, hacelo con estilo.",
+        descripcion: "Superá el 70% de las películas de Margot Robbie",
+        icono: "💄",
+        condicion: (vistos) => porcentajeColeccionVisto(vistos, "margot-robbie") > 70
+    },
+    {
+        id: "en-construccion",
+        nombre: "En construcción",
+        descripcion: "Superá el 60% de los juegos de LEGO",
+        icono: "🧱",
+        condicion: (vistos) => porcentajeColeccionVisto(vistos, "lego-videojuegos") > 60
+    },
+    {
+        id: "yo-soy-la-noche",
+        nombre: "Yo soy la Noche",
+        descripcion: "Completá 3 juegos del Arkhamverse",
+        icono: "🦇",
+        condicion: (vistos) => cantidadVistaEnColeccion(vistos, "arkhamverse") >= 3
+    },
+    {
+        id: "yo-soy-la-venganza",
+        nombre: "Yo soy la Venganza",
+        descripcion: "Mirá la Trilogía de Batman de Christian Bale y The Batman",
+        icono: "🌃",
+        condicion: (vistos) => todosVistos(vistos, ["Batman Begins", "The Dark Knight", "The Dark Knight Rises", "The Batman"])
+    },
+    {
+        id: "yo-soy-batman",
+        nombre: "Yo soy Batman",
+        descripcion: "Mirá 10 películas o series que incluyan a Batman",
+        icono: "🃏",
+        condicion: (vistos) => cantidadTitulosConPalabra(vistos, "batman") >= 10
     }
 ];
 
@@ -1178,7 +1328,8 @@ function renderizarColecciones() {
         "directores": "seccion-directores",
         "actores": "seccion-actores",
         "arrowverse": "seccion-arrowverse",
-        "mundo-magico": "seccion-mundo-magico"
+        "mundo-magico": "seccion-mundo-magico",
+        "estudios": "seccion-estudios"
     };
 
     colecciones.forEach(col => {
@@ -1234,27 +1385,33 @@ function renderizarColecciones() {
 }
 
 // Abre la sección de detalle de una colección, inyectando sus películas la primera vez
+// Inyecta las películas de una colección en su grilla si todavía no están dibujadas
+function asegurarPeliculasRenderizadas(col) {
+    const grilla = document.getElementById(`grilla-${col.id}`);
+    if (!grilla || grilla.children.length > 0 || col.peliculas.length === 0) return;
+
+    const textoPendiente = col.esVideojuego ? 'Marcar Jugado' : 'Marcar Visto';
+    col.peliculas.forEach(peli => {
+        const htmlPelicula = `
+            <div class="tarjeta-media" data-accion="${col.esVideojuego ? 'jugado' : 'visto'}">
+                <img src="${peli.poster}" alt="${peli.titulo}">
+                <h3>${peli.titulo}</h3>
+                <p>${col.esVideojuego ? 'Videojuego' : 'Película'}</p>
+                <button class="btn-accion">${textoPendiente}</button>
+            </div>
+        `;
+        grilla.insertAdjacentHTML('beforeend', htmlPelicula);
+    });
+    sincronizarVistos();
+}
+
 function abrirColeccion(colId) {
     const col = colecciones.find(c => c.id === colId);
     if (!col) return;
 
-    const grilla = document.getElementById(`grilla-${colId}`);
-    if (grilla && grilla.children.length === 0 && col.peliculas.length > 0) {
-        const textoPendiente = col.esVideojuego ? 'Marcar Jugado' : 'Marcar Visto';
-        col.peliculas.forEach(peli => {
-            const htmlPelicula = `
-                <div class="tarjeta-media" data-accion="${col.esVideojuego ? 'jugado' : 'visto'}">
-                    <img src="${peli.poster}" alt="${peli.titulo}">
-                    <h3>${peli.titulo}</h3>
-                    <p>${col.esVideojuego ? 'Videojuego' : 'Película'}</p>
-                    <button class="btn-accion">${textoPendiente}</button>
-                </div>
-            `;
-            grilla.insertAdjacentHTML('beforeend', htmlPelicula);
-        });
-        sincronizarVistos();
-        aplicarVistosGuardados(grilla);
-        actualizarProgresoColeccion(colId);
+    asegurarPeliculasRenderizadas(col);
+    if (!col.esContenedor && col.peliculas.length > 0) {
+        aplicarVistosGuardados(document.getElementById(`grilla-${colId}`));
     }
 
     const seccionDetalle = document.getElementById(`seccion-${colId}`);
@@ -1397,6 +1554,38 @@ function sincronizarVistos() {
                     }
                 }
             });
+
+            // Si lo que se tocó es la ficha madre de una colección, marca/desmarca
+            // también todo lo que contiene, para que quede al 100% (o 0%)
+            const colIdTocado = tarjeta.getAttribute('data-coleccion');
+            if (colIdTocado) {
+                const colTocada = colecciones.find(c => c.id === colIdTocado);
+                if (colTocada && colTocada.peliculas.length > 0) {
+                    asegurarPeliculasRenderizadas(colTocada);
+                    colTocada.peliculas.forEach(peli => {
+                        if (marcandoComoVisto) titulosVistosGuardados.add(peli.titulo);
+                        else titulosVistosGuardados.delete(peli.titulo);
+
+                        document.querySelectorAll('.tarjeta-media').forEach(t => {
+                            if (t.querySelector('h3').textContent === peli.titulo) {
+                                const btn = t.querySelector('.btn-accion');
+                                if (!btn) return;
+                                const esVJ = t.getAttribute('data-accion') === 'jugado';
+                                if (marcandoComoVisto) {
+                                    btn.textContent = esVJ ? 'Jugado ✓' : 'Visto ✓';
+                                    btn.style.backgroundColor = "#28a745";
+                                    t.classList.add('vista');
+                                } else {
+                                    btn.textContent = esVJ ? 'Marcar Jugado' : 'Marcar Visto';
+                                    btn.style.backgroundColor = "";
+                                    t.classList.remove('vista');
+                                }
+                            }
+                        });
+                    });
+                    actualizarProgresoColeccion(colIdTocado);
+                }
+            }
 
             guardarProgresoUsuario(titulo, marcandoComoVisto);
             actualizarTodasLasColecciones();
@@ -1858,6 +2047,20 @@ if(btnVolverFranquicias) {
     });
 }
 
+const btnVolverEstudios = document.getElementById('btn-volver-estudios');
+if(btnVolverEstudios) {
+    btnVolverEstudios.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-franquicias'));
+    });
+}
+
+const btnVolverPixar = document.getElementById('btn-volver-pixar');
+if(btnVolverPixar) {
+    btnVolverPixar.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-estudios'));
+    });
+}
+
 const btnVolverRapidosYFuriosos = document.getElementById('btn-volver-rapidos-y-furiosos');
 if(btnVolverRapidosYFuriosos) {
     btnVolverRapidosYFuriosos.addEventListener('click', () => {
@@ -2091,6 +2294,7 @@ if(btnVolverDragonball) {
     'btn-volver-dragonball-super',
     'btn-volver-dragonball-historia-canon',
     'btn-volver-dragonball-videojuegos',
+    'btn-volver-dragonball-gt',
     'btn-volver-dragonball-todo'
 ].forEach(id => {
     const btn = document.getElementById(id);
@@ -2211,6 +2415,7 @@ const db = firebase.firestore();
 let usuarioActual = null;
 let huboSesionAntes = false;
 let titulosVistosGuardados = new Set();
+let logrosYaNotificados = new Set();
 
 const modalLogin = document.getElementById('modal-login');
 const btnLoginModal = document.getElementById('btn-login-modal');
@@ -2336,6 +2541,8 @@ function cargarProgresoUsuario() {
     if (!usuarioActual) return;
     db.collection('usuarios').doc(usuarioActual.uid).get().then(doc => {
         titulosVistosGuardados = new Set(doc.exists ? (doc.data().vistos || []) : []);
+        // Los logros que ya tenías desbloqueados no deben volver a notificarse
+        logrosYaNotificados = new Set(logrosDisponibles.filter(l => l.condicion(titulosVistosGuardados)).map(l => l.id));
         aplicarVistosGuardados(document);
         actualizarTodasLasColecciones();
         renderizarLogros();
@@ -2366,9 +2573,25 @@ function guardarProgresoUsuario(titulo, marcado) {
 function renderizarLogros() {
     const grilla = document.getElementById('grilla-logros');
     const mensaje = document.getElementById('mensaje-logros');
-    if (!grilla) return;
 
     const desbloqueados = logrosDisponibles.filter(l => l.condicion(titulosVistosGuardados));
+    const idsDesbloqueados = new Set(desbloqueados.map(l => l.id));
+
+    // Notifica cuando se consigue un logro nuevo. Si un logro que ya se había
+    // notificado se pierde (ej: bajó el % por contenido nuevo agregado), se
+    // "reactiva" para poder volver a notificarse el día que se recupere.
+    logrosDisponibles.forEach(logro => {
+        const cumple = idsDesbloqueados.has(logro.id);
+        if (cumple && !logrosYaNotificados.has(logro.id)) {
+            logrosYaNotificados.add(logro.id);
+            mostrarNotificacionLogro(logro);
+        } else if (!cumple && logrosYaNotificados.has(logro.id)) {
+            logrosYaNotificados.delete(logro.id);
+        }
+    });
+
+    if (!grilla) return;
+
     if (mensaje) {
         mensaje.textContent = usuarioActual
             ? `Desbloqueaste ${desbloqueados.length} de ${logrosDisponibles.length} logros.`
@@ -2377,22 +2600,73 @@ function renderizarLogros() {
 
     grilla.innerHTML = '';
     logrosDisponibles.forEach(logro => {
-        const desbloqueado = logro.condicion(titulosVistosGuardados);
+        const desbloqueado = idsDesbloqueados.has(logro.id);
+        const porcentaje = porcentajesLogrosCache[logro.id];
+        const textoRareza = porcentaje !== undefined
+            ? `🌐 ${porcentaje}% de los usuarios lo tiene`
+            : '🌐 Calculando...';
         grilla.insertAdjacentHTML('beforeend', `
             <div class="tarjeta-logro ${desbloqueado ? 'desbloqueado' : 'bloqueado'}">
                 <div class="logro-icono">${logro.icono}</div>
                 <h3>${logro.nombre}</h3>
                 <p>${logro.descripcion}</p>
                 <span class="logro-estado">${desbloqueado ? '✓ Desbloqueado' : '🔒 Bloqueado'}</span>
+                <span class="logro-rareza">${textoRareza}</span>
             </div>
         `);
     });
+}
+
+// Consulta a todos los usuarios y calcula qué % tiene cada logro actualmente
+let porcentajesLogrosCache = {};
+async function calcularPorcentajesLogros() {
+    if (!usuarioActual) return;
+    try {
+        const snap = await db.collection('usuarios').get();
+        const totalUsuarios = snap.size;
+        if (totalUsuarios === 0) return;
+
+        const conteos = {};
+        logrosDisponibles.forEach(l => { conteos[l.id] = 0; });
+
+        snap.forEach(docSnap => {
+            const logrosUsuario = docSnap.data().logros || [];
+            logrosUsuario.forEach(id => {
+                if (conteos.hasOwnProperty(id)) conteos[id]++;
+            });
+        });
+
+        logrosDisponibles.forEach(l => {
+            porcentajesLogrosCache[l.id] = Math.round((conteos[l.id] / totalUsuarios) * 100);
+        });
+        renderizarLogros();
+    } catch (err) {
+        console.error('Error calculando porcentajes de logros:', err);
+    }
+}
+
+// Muestra un toast en pantalla cuando se desbloquea un logro
+function mostrarNotificacionLogro(logro) {
+    const cont = document.getElementById('contenedor-notificaciones-logros');
+    if (!cont) return;
+    const div = document.createElement('div');
+    div.className = 'notificacion-logro';
+    div.innerHTML = `
+        <div class="logro-icono-notif">${logro.icono}</div>
+        <div class="logro-texto-notif">
+            <small>Logro desbloqueado</small>
+            <strong>${logro.nombre}</strong>
+        </div>
+    `;
+    cont.appendChild(div);
+    setTimeout(() => div.remove(), 5100);
 }
 
 const btnLogros = document.getElementById('btn-logros');
 if (btnLogros) {
     btnLogros.addEventListener('click', () => {
         renderizarLogros();
+        calcularPorcentajesLogros();
         cambiarSeccion(document.getElementById('seccion-logros'));
     });
 }
