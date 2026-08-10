@@ -293,7 +293,15 @@ const listaMedia = [
     { titulo: "It", categoria: "it", subtipo: "muschietti", tipo: "Película", poster: "https://m.media-amazon.com/images/I/617t0rMU9vL.AC_UF894,1000_QL80.jpg" },
     { titulo: "It Parte Dos", categoria: "it", subtipo: "muschietti", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYzUxM2VhOGItZTY2My00OTA4LWI4NjUtMDA5YWJjM2M2NDJjXkEyXkFqcGc@.V1.jpg" },
     { titulo: "It: Bienvenidos a Derry", categoria: "it", subtipo: "muschietti", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/nyy3BITeIjviv6PFIXtqvc8i6xi.jpg" },
-    { titulo: "It (1990)", categoria: "it", subtipo: "clasico", tipo: "Miniserie", poster: "https://m.media-amazon.com/images/M/MV5BZDFhODExOTctNTFkZS00NjE1LWE2MWMtY2Q1ZThhMGY5NjJkXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" }
+    { titulo: "It (1990)", categoria: "it", subtipo: "clasico", tipo: "Miniserie", poster: "https://m.media-amazon.com/images/M/MV5BZDFhODExOTctNTFkZS00NjE1LWE2MWMtY2Q1ZThhMGY5NjJkXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+
+    // --- DISNEY ANIMATION (con filtros por década) ---
+    { titulo: "Raya y El Último Dragón", categoria: "disney-animation", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/5nVhgCzxKbK47OLIKxCR1syulOn.jpg" },
+    { titulo: "Encanto", categoria: "disney-animation", subtipo: "2020", tipo: "Película", poster: "https://static.posters.cz/image/1300/120006.jpg" },
+    { titulo: "Un Mundo Extraño", categoria: "disney-animation", subtipo: "2020", tipo: "Película", poster: "https://i.pinimg.com/736x/ea/c5/da/eac5da7bd43097e5288adad835ec28cc.jpg" },
+    { titulo: "Wish", categoria: "disney-animation", subtipo: "2020", tipo: "Película", poster: "https://lumiere-a.akamaihd.net/v1/images/screenshot_2023-04-27_at_14_930d2ffc.png?region=0,0,986,1458" },
+    { titulo: "Moana 2", categoria: "disney-animation", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/aLVkiINlIeCkcZIzb7XHzPYgO6L.jpg" },
+    { titulo: "Zootopia 2", categoria: "disney-animation", subtipo: "2020", tipo: "Película", poster: "https://lumiere-a.akamaihd.net/v1/images/image002_ad18240b.jpeg?region=0,0,770,1100" }
 ];
 
 // ==========================================
@@ -570,6 +578,14 @@ const colecciones = [
         titulo: "Estudios",
         categoria: "franquicias",
         poster: "https://w0.peakpx.com/wallpaper/947/761/HD-wallpaper-hollywood-studios-vintage-film.jpg",
+        esContenedor: true,
+        peliculas: []
+    },
+    {
+        id: "disney-animation",
+        titulo: "Disney Animation",
+        categoria: "estudios",
+        poster: "https://wallpapercat.com/w/full/1/1/1/868753-1920x2716-iphone-hd-disney-wallpaper.jpg",
         esContenedor: true,
         peliculas: []
     },
@@ -957,21 +973,34 @@ const colecciones = [
         titulo: "Ben 10",
         categoria: "ben10",
         poster: "https://m.media-amazon.com/images/M/MV5BYWVjODZjNDgtYjk4ZS00OTg5LTg5NDQtZDMxZDQ4ZmM5MGJmXkEyXkFqcGc@.V1.jpg",
-        peliculas: []
+        peliculas: [
+            { titulo: "Ben 10 Temporada 1", poster: "https://image.tmdb.org/t/p/original/3MhIDyWIE06LbVi79rbrNu4OpJb.jpg" },
+            { titulo: "Ben 10 Temporada 2", poster: "https://static.wikia.nocookie.net/ben10/images/8/8e/Ben_10_The_Complete_Season_2_DVD_Cover.png/revision/latest?cb=20230422091907" },
+            { titulo: "Ben 10 Temporada 3", poster: "https://i.ebayimg.com/images/g/1oQAAOSwduhghuP4/s-l1200.jpg" },
+            { titulo: "Ben 10 Temporada 4", poster: "https://static.wikia.nocookie.net/ben10/images/d/de/Ben_10_-_Season_4.png/revision/latest?cb=20190823080148" }
+        ]
     },
     {
         id: "ben10-alienforce",
         titulo: "Ben 10: Alien Force",
         categoria: "ben10",
         poster: "https://m.media-amazon.com/images/M/MV5BOGQ5YWFjYjItODE5OC00ZDQxLTk5ZmYtNzY0YzM4NjIyMWFlXkEyXkFqcGc@.V1.jpg",
-        peliculas: []
+        peliculas: [
+            { titulo: "Ben 10: Alien Force Temporada 1", poster: "https://i.pinimg.com/736x/d9/a9/a5/d9a9a50b5739f5ebf4a4272e89c42ba1.jpg" },
+            { titulo: "Ben 10: Alien Force Temporada 2", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzer-Sfcj-H3NRrr2ld9rGQfXetT3cgSUjNVWePJh_Ng&s=10" },
+            { titulo: "Ben 10: Alien Force Temporada 3", poster: "https://image.tmdb.org/t/p/original/2d5w9VSW9r4LPes6rZGUYmWpG0r.jpg" }
+        ]
     },
     {
         id: "ben10-ultimatealien",
         titulo: "Ben 10: Ultimate Alien",
         categoria: "ben10",
         poster: "https://m.media-amazon.com/images/M/MV5BNWIxMjZmNTQtNzkxZi00NTU5LThhOGYtODEyZGYyNDdkNTQxXkEyXkFqcGc@.V1.jpg",
-        peliculas: []
+        peliculas: [
+            { titulo: "Ben 10: Ultimate Alien Temporada 1", poster: "https://theworldofnerds.com/cdn/shop/files/61.png?v=1771398134&width=1946" },
+            { titulo: "Ben 10: Ultimate Alien Temporada 2", poster: "https://image.tmdb.org/t/p/original/bHaQCAxuOSZhagTVceucxKaXeaT.jpg" },
+            { titulo: "Ben 10: Ultimate Alien Temporada 3", poster: "https://m.media-amazon.com/images/I/71WpGvJj4hL.AC_UF894,1000_QL80.jpg" }
+        ]
     },
     {
         id: "ben10-omniverse",
@@ -1472,7 +1501,8 @@ function renderizarContenido() {
         "dc-personajes": "seccion-dc-personajes",
         "it": "seccion-it",
         "game-of-thrones": "seccion-game-of-thrones",
-        "assassins-creed": "seccion-assassins-creed"
+        "assassins-creed": "seccion-assassins-creed",
+        "disney-animation": "seccion-disney-animation"
     };
 
     listaMedia.forEach(item => {
@@ -2061,6 +2091,13 @@ if(btnVolverPixar) {
     });
 }
 
+const btnVolverDisneyAnimation = document.getElementById('btn-volver-disney-animation');
+if(btnVolverDisneyAnimation) {
+    btnVolverDisneyAnimation.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-estudios'));
+    });
+}
+
 const btnVolverRapidosYFuriosos = document.getElementById('btn-volver-rapidos-y-furiosos');
 if(btnVolverRapidosYFuriosos) {
     btnVolverRapidosYFuriosos.addEventListener('click', () => {
@@ -2331,6 +2368,23 @@ if(btnVolverBatmanBenAffleck) {
             cambiarSeccion(document.getElementById('seccion-ben10'));
         });
     }
+});
+
+// ==========================================
+// FILTROS "DISNEY ANIMATION" (por década)
+// ==========================================
+const botonesFiltroDisney = document.querySelectorAll('.btn-filtro-disney');
+botonesFiltroDisney.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroDisney.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const tipoElegido = this.getAttribute('data-tipo');
+        const tarjetas = document.querySelectorAll('#seccion-disney-animation .tarjeta-media');
+
+        tarjetas.forEach(tarjeta => {
+            tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
+        });
+    });
 });
 
 // ==========================================
