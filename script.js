@@ -95,7 +95,7 @@ const listaMedia = [
     { titulo: "Flash vs Arrow", categoria: "arrowverse", tipoArrow: "eventos", crono: 3, tipo: "Evento", poster: "https://m.media-amazon.com/images/I/51VWso60-0L._AC_UF894,1000_QL80_.jpg" },
     // "Supergirl" ahora es una ficha explorable con sus 6 temporadas (ver colecciones)
     { titulo: "Legends", categoria: "arrowverse", tipoArrow: "eventos", crono: 5, tipo: "Evento", poster: "https://i.pinimg.com/736x/b3/1a/41/b31a41a98c647c357a3ff53790666151.jpg" },
-    { titulo: "DC's Legends of Tomorrow", categoria: "arrowverse", tipoArrow: "principal", crono: 6, tipo: "Serie", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR16L1B69PNDrGPa1F6IAudcuDxCRiJn4hBi61UsY9rIn5p5hKahadZ0TU&s=10" },
+    // "DC's Legends of Tomorrow" ahora es una ficha explorable con sus 5 temporadas (ver colecciones)
     { titulo: "Invasion!", categoria: "arrowverse", tipoArrow: "eventos", crono: 7, tipo: "Evento", poster: "https://cdn.hmv.com/r/w-640/hmv/files/d8/d8360880-fc10-4b55-a726-2f333d250df5.jpg" },
     { titulo: "Duet!", categoria: "arrowverse", tipoArrow: "eventos", crono: 8, tipo: "Evento", poster: "https://mundosuperman.com/wp-content/uploads/2017/03/53990.jpg" },
     { titulo: "Crisis on Earth-X", categoria: "arrowverse", tipoArrow: "eventos", crono: 9, tipo: "Evento", poster: "https://m.media-amazon.com/images/I/81tiQIJIhjL.jpg" },
@@ -372,6 +372,21 @@ const colecciones = [
             { titulo: "Batwoman Temporada 1", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQrXwGRYSi3_2JJ009gsH9RVTEQelXwsyqXSafHXJpkoMdbr-K20c8tUo&s=10" },
             { titulo: "Batwoman Temporada 2", poster: "https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2020/12/BWNS2_8x12_300dpi.jpg" },
             { titulo: "Batwoman Temporada 3", poster: "https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2021/09/BWNS3_8x12_300dpi.jpg" }
+        ]
+    },
+    {
+        id: "legends-of-tomorrow",
+        titulo: "DC's Legends of Tomorrow",
+        categoria: "arrowverse",
+        poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR16L1B69PNDrGPa1F6IAudcuDxCRiJn4hBi61UsY9rIn5p5hKahadZ0TU&s=10",
+        tipoArrow: "principal",
+        crono: 6,
+        peliculas: [
+            { titulo: "DC's Legends of Tomorrow Temporada 1", poster: "https://image.tmdb.org/t/p/original/xEY4YPu7FCKQNSnMaaHo4NJl3ID.jpg" },
+            { titulo: "DC's Legends of Tomorrow Temporada 2", poster: "https://static.wikia.nocookie.net/arrow/images/8/86/DC%27s_Legends_of_Tomorrow_season_2_poster_-_A_Mission_For_All_Time.png/revision/latest?cb=20160923044208" },
+            { titulo: "DC's Legends of Tomorrow Temporada 3", poster: "https://i0.wp.com/brainstomping.com/wp-content/uploads/2018/04/legends-of-tomorrow-season-3.png?ssl=1" },
+            { titulo: "DC's Legends of Tomorrow Temporada 4", poster: "https://static.wikia.nocookie.net/arrow/images/a/a8/LEG_S4_8x12_300dpi-683x1024.jpg/revision/latest?cb=20181104053312&path-prefix=es" },
+            { titulo: "DC's Legends of Tomorrow Temporada 5", poster: "https://legiondelarrowverso.wordpress.com/wp-content/uploads/2020/01/lgn-s5-8x12-r2-300dpi-1203197.jpeg" }
         ]
     },
     {
@@ -1237,6 +1252,33 @@ function cantidadTitulosConPalabra(vistos, palabra) {
     return titulosContados.size;
 }
 
+// Helper: % visto de una categoría directa de listaMedia (ej: "disney-animation", "assassins-creed")
+function porcentajeCategoriaVisto(vistos, categoria) {
+    const titulos = listaMedia.filter(i => i.categoria === categoria).map(i => i.titulo);
+    if (titulos.length === 0) return 0;
+    const vistas = titulos.filter(t => vistos.has(t)).length;
+    return (vistas / titulos.length) * 100;
+}
+
+// Helper: % visto combinando varias colecciones (ej: las 4 series de Ben 10)
+function porcentajeColeccionesVisto(vistos, coleccionIds) {
+    let total = 0, vistas = 0;
+    coleccionIds.forEach(id => {
+        const col = colecciones.find(c => c.id === id);
+        if (col) {
+            total += col.peliculas.length;
+            vistas += col.peliculas.filter(p => vistos.has(p.titulo)).length;
+        }
+    });
+    return total > 0 ? (vistas / total) * 100 : 0;
+}
+
+// Helper: ¿está completo un subconjunto de listaMedia por categoría + subtipo? (ej: solo los de Andy Muschietti en "it")
+function categoriaSubtipoCompleta(vistos, categoria, subtipo) {
+    const titulos = listaMedia.filter(i => i.categoria === categoria && i.subtipo === subtipo).map(i => i.titulo);
+    return titulos.length > 0 && todosVistos(vistos, titulos);
+}
+
 const logrosDisponibles = [
     {
         id: "poder-del-sol",
@@ -1333,6 +1375,90 @@ const logrosDisponibles = [
         descripcion: "Mirá 10 películas o series que incluyan a Batman",
         icono: "🃏",
         condicion: (vistos) => cantidadTitulosConPalabra(vistos, "batman") >= 10
+    },
+    {
+        id: "sueno-deseo-corazon",
+        nombre: "Un sueño es un deseo que hace tu corazón",
+        descripcion: "Tené el 70% de las películas de Disney Animation",
+        icono: "🏰",
+        condicion: (vistos) => porcentajeCategoriaVisto(vistos, "disney-animation") >= 70
+    },
+    {
+        id: "nada-es-verdad",
+        nombre: "Nada es verdad, todo está permitido",
+        descripcion: "Tené el 60% de los videojuegos de Assassin's Creed",
+        icono: "🗡️",
+        condicion: (vistos) => porcentajeCategoriaVisto(vistos, "assassins-creed") >= 60
+    },
+    {
+        id: "nunca-miro-atras",
+        nombre: "Nunca miro atrás, cariño, me distrae del presente",
+        descripcion: "Tené el 70% de las películas de Pixar",
+        icono: "💡",
+        condicion: (vistos) => porcentajeColeccionVisto(vistos, "pixar") >= 70
+    },
+    {
+        id: "hora-de-ser-heroe",
+        nombre: "Hora de ser héroe",
+        descripcion: "Tené el 70% de Ben 10 (todas las series juntas)",
+        icono: "⌚",
+        condicion: (vistos) => porcentajeColeccionesVisto(vistos, ["ben10-original", "ben10-alienforce", "ben10-ultimatealien", "ben10-omniverse"]) >= 70
+    },
+    {
+        id: "cuarto-de-milla",
+        nombre: "Un cuarto de milla a la vez",
+        descripcion: "Tené el 70% de Rápidos y Furiosos",
+        icono: "🏎️",
+        condicion: (vistos) => porcentajeColeccionVisto(vistos, "rapidos-y-furiosos") >= 70
+    },
+    {
+        id: "lisan-al-gaib",
+        nombre: "Lisan Al-Gaib",
+        descripcion: "Completá la colección de Dune",
+        icono: "🐛",
+        condicion: (vistos) => coleccionCompleta(vistos, "dune")
+    },
+    {
+        id: "flotaras",
+        nombre: "Flotarás",
+        descripcion: "Completá la colección de It de Andy Muschietti",
+        icono: "🎈",
+        condicion: (vistos) => categoriaSubtipoCompleta(vistos, "it", "muschietti")
+    },
+    {
+        id: "poder-mas-8000",
+        nombre: "Su poder es más de 8000",
+        descripcion: "Superá el 70% de Dragon Ball Z",
+        icono: "💥",
+        condicion: (vistos) => porcentajeColeccionVisto(vistos, "dragonball-z") > 70
+    },
+    {
+        id: "saiyajin-sin-limites",
+        nombre: "Un Saiyajin no conoce límites",
+        descripcion: "Superá el 70% de Dragon Ball Super",
+        icono: "🔵",
+        condicion: (vistos) => porcentajeColeccionVisto(vistos, "dragonball-super") > 70
+    },
+    {
+        id: "hasta-volvernos-a-encontrar",
+        nombre: "Hasta el día en que nos volvamos a encontrar",
+        descripcion: "Superá el 70% de Dragon Ball GT",
+        icono: "🐲",
+        condicion: (vistos) => porcentajeColeccionVisto(vistos, "dragonball-gt") > 70
+    },
+    {
+        id: "justicia-no-venganza",
+        nombre: "Justicia, no venganza",
+        descripcion: "Superá el 70% del DCAMU",
+        icono: "⚖️",
+        condicion: (vistos) => porcentajeColeccionVisto(vistos, "dcamu") > 70
+    },
+    {
+        id: "universo-jamas-el-mismo",
+        nombre: "El universo jamás volverá a ser el mismo",
+        descripcion: "Superá el 70% del Tomorrowverse",
+        icono: "🌠",
+        condicion: (vistos) => porcentajeColeccionVisto(vistos, "tomorrowverse") > 70
     }
 ];
 
@@ -2166,6 +2292,13 @@ if(btnVolverSupergirl) {
 const btnVolverBatwoman = document.getElementById('btn-volver-batwoman');
 if(btnVolverBatwoman) {
     btnVolverBatwoman.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-arrowverse'));
+    });
+}
+
+const btnVolverLegendsOfTomorrow = document.getElementById('btn-volver-legends-of-tomorrow');
+if(btnVolverLegendsOfTomorrow) {
+    btnVolverLegendsOfTomorrow.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-arrowverse'));
     });
 }
