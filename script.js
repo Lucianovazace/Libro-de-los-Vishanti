@@ -2566,7 +2566,10 @@ auth.onAuthStateChanged(user => {
         if (modalLogin) modalLogin.classList.add('oculto');
         db.collection('usuarios').doc(user.uid).set({
             email: user.email.toLowerCase()
-        }, { merge: true }).catch(err => console.error('Error guardando email:', err));
+        }, { merge: true }).catch(err => {
+            console.error('Error guardando email:', err);
+            mostrarErrorGuardado(err);
+        });
         cargarProgresoUsuario();
     } else {
         if (btnLoginModal) btnLoginModal.textContent = '👤 Cuenta / Registro';
@@ -2618,7 +2621,10 @@ function guardarProgresoUsuario(titulo, marcado) {
     db.collection('usuarios').doc(usuarioActual.uid).set({
         vistos: Array.from(titulosVistosGuardados),
         logros: idsLogros
-    }, { merge: true }).catch(err => console.error('Error guardando progreso:', err));
+    }, { merge: true }).catch(err => {
+        console.error('Error guardando progreso:', err);
+        mostrarErrorGuardado(err);
+    });
 }
 
 // ==========================================
@@ -2714,6 +2720,25 @@ function mostrarNotificacionLogro(logro) {
     `;
     cont.appendChild(div);
     setTimeout(() => div.remove(), 5100);
+}
+
+// Muestra el error real en pantalla (para poder diagnosticar sin consola, ej. en celular)
+function mostrarErrorGuardado(err) {
+    const cont = document.getElementById('contenedor-notificaciones-logros');
+    const texto = (err && (err.code || err.message)) ? `${err.code || ''} ${err.message || ''}`.trim() : String(err);
+    if (!cont) { alert('Error guardando: ' + texto); return; }
+    const div = document.createElement('div');
+    div.className = 'notificacion-logro notificacion-error';
+    div.innerHTML = `
+        <div class="logro-icono-notif">⚠️</div>
+        <div class="logro-texto-notif">
+            <small>No se pudo guardar</small>
+            <strong>${texto}</strong>
+        </div>
+    `;
+    cont.appendChild(div);
+    div.addEventListener('click', () => div.remove());
+    setTimeout(() => div.remove(), 15000);
 }
 
 const btnLogros = document.getElementById('btn-logros');

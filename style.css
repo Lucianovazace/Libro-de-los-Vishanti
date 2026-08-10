@@ -702,3 +702,20 @@ h2 {
     from { opacity: 1; transform: translateY(0); }
     to { opacity: 0; transform: translateY(-15px); }
 }
+
+.notificacion-error {
+    background: linear-gradient(135deg, #3a1414, #1e2129) !important;
+    border-color: #e74c3c !important;
+    box-shadow: 0 4px 20px rgba(231, 76, 60, 0.45) !important;
+    cursor: pointer;
+    animation: notifEntrada 0.4s ease !important;
+}
+
+.notificacion-error .logro-texto-notif small {
+    color: #e74c3c !important;
+}
+
+.notificacion-error .logro-texto-notif strong {
+    font-size: 12px !important;
+    word-break: break-word;
+}
