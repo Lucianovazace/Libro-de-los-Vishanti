@@ -14,7 +14,7 @@
     <div class="header-top">
         <h1>EL MULTIVERSO</h1>
         <div class="buscador-container">
-            <input type="text" id="buscador-global" placeholder="🔍 Buscar película o serie...">
+            <input type="text" id="buscador-global" placeholder="🔍 Buscar película o serie..." autocomplete="off" name="buscador-peliculas">
         </div>
         <button id="btn-login-modal" class="btn-nav" style="background-color: #3b5998;">👤 Cuenta / Registro</button>
     </div>
@@ -123,9 +123,9 @@
         <span class="close-modal" id="close-modal">&times;</span>
         <h2>Acceso / Registro</h2>
         <p style="font-size:12px; color:#aaa; margin-bottom:20px;">Sincroniza tu progreso en todos tus dispositivos.</p>
-        <input type="text" id="username-login" placeholder="Nombre de usuario (solo para Crear Cuenta)">
-        <input type="email" id="email-login" placeholder="Correo electrónico">
-        <input type="password" id="password-login" placeholder="Contraseña (mínimo 6 caracteres)">
+        <input type="text" id="username-login" placeholder="Nombre de usuario (solo para Crear Cuenta)" autocomplete="username">
+        <input type="email" id="email-login" placeholder="Correo electrónico" autocomplete="email">
+        <input type="password" id="password-login" placeholder="Contraseña (mínimo 6 caracteres)" autocomplete="current-password">
         <button class="btn-modal" id="btn-crear-cuenta">Crear Cuenta</button>
         <button class="btn-modal" id="btn-iniciar-sesion" style="background-color:#3b5998; margin-top:8px;">Iniciar Sesión</button>
         <p id="mensaje-login" style="color:#ff6b6b; font-size:12px; margin-top:12px; min-height:14px;"></p>
@@ -182,6 +182,13 @@
         <div class="grilla-biblioteca" id="grilla-greta-gerwig"></div>
     </section>
 
+    <!-- COLECCIÓN: CHLOÉ ZHAO -->
+    <section id="seccion-chloe-zhao" class="oculto">
+        <button class="btn-volver" id="btn-volver-chloe-zhao">← Volver a Directores</button>
+        <h2>Chloé Zhao</h2>
+        <div class="grilla-biblioteca" id="grilla-chloe-zhao"></div>
+    </section>
+
     <!-- COLECCIÓN: GALARDONES -->
     <section id="seccion-galardones" class="oculto">
         <button class="btn-volver" id="btn-volver-galardones">← Volver a Explorar</button>
@@ -203,13 +210,6 @@
         <div class="grilla-biblioteca" id="grilla-golden-globes"></div>
     </section>
 
-    <!-- COLECCIÓN: OSCAR NOMINADOS -->
-    <section id="seccion-oscar-nominados" class="oculto">
-        <button class="btn-volver" id="btn-volver-oscar-nominados">← Volver a Academy Awards</button>
-        <h2>Nominados</h2>
-        <div class="grilla-biblioteca" id="grilla-oscar-nominados"></div>
-    </section>
-
     <!-- COLECCIÓN: OSCAR 2020 - ACTUALIDAD -->
     <section id="seccion-oscar-2020-actualidad" class="oculto">
         <button class="btn-volver" id="btn-volver-oscar-2020-actualidad">← Volver a Academy Awards</button>
@@ -221,7 +221,13 @@
     <section id="seccion-oscar-2020" class="oculto">
         <button class="btn-volver" id="btn-volver-oscar-2020">← Volver a 2020 - Actualidad</button>
         <h2>Oscar 2020</h2>
-        <div class="grilla-biblioteca" id="grilla-oscar-2020"></div>
+        <div class="filtros-seccion">
+            <button class="btn-filtro-oscar activo" data-tipo="mejor-pelicula">Mejor Película</button>
+            <button class="btn-filtro-oscar" data-tipo="mejor-direccion">Mejor Dirección</button>
+            <button class="btn-filtro-oscar" data-tipo="mejor-actor">Mejor Actor</button>
+            <button class="btn-filtro-oscar" data-tipo="mejor-actriz">Mejor Actriz</button>
+        </div>
+        <div class="grilla-biblioteca"></div>
     </section>
 
     <!-- SUBCOLECCIÓN: OSCAR 2021 -->
@@ -330,6 +336,20 @@
         <div class="grilla-biblioteca" id="grilla-rapidos-y-furiosos"></div>
     </section>
 
+    <!-- COLECCIÓN: MAZE RUNNER SAGA -->
+    <section id="seccion-maze-runner" class="oculto">
+        <button class="btn-volver" id="btn-volver-maze-runner">← Volver a Franquicias</button>
+        <h2>Maze Runner Saga</h2>
+        <div class="grilla-biblioteca" id="grilla-maze-runner"></div>
+    </section>
+
+    <!-- COLECCIÓN: LOS JUEGOS DEL HAMBRE SAGA -->
+    <section id="seccion-los-juegos-del-hambre" class="oculto">
+        <button class="btn-volver" id="btn-volver-los-juegos-del-hambre">← Volver a Franquicias</button>
+        <h2>Los Juegos del Hambre Saga</h2>
+        <div class="grilla-biblioteca" id="grilla-los-juegos-del-hambre"></div>
+    </section>
+
     <!-- COLECCIÓN: DUNE -->
     <section id="seccion-dune" class="oculto">
         <button class="btn-volver" id="btn-volver-dune">← Volver a Franquicias</button>
@@ -374,6 +394,20 @@
             <button class="btn-filtro-got" data-tipo="cronologico">Orden Cronológico</button>
         </div>
         <div class="grilla-biblioteca" id="grilla-game-of-thrones"></div>
+    </section>
+
+    <!-- COLECCIÓN: GAME OF THRONES (serie, con temporadas) -->
+    <section id="seccion-got-serie" class="oculto">
+        <button class="btn-volver" id="btn-volver-got-serie">← Volver a Game of Thrones</button>
+        <h2>Game of Thrones</h2>
+        <div class="grilla-biblioteca" id="grilla-got-serie"></div>
+    </section>
+
+    <!-- COLECCIÓN: HOUSE OF THE DRAGON -->
+    <section id="seccion-house-of-the-dragon" class="oculto">
+        <button class="btn-volver" id="btn-volver-house-of-the-dragon">← Volver a Game of Thrones</button>
+        <h2>House of the Dragon</h2>
+        <div class="grilla-biblioteca" id="grilla-house-of-the-dragon"></div>
     </section>
 
     <!-- COLECCIÓN: BEN 10 -->
@@ -451,6 +485,13 @@
         <button class="btn-volver" id="btn-volver-dragonball-gt">← Volver a Dragon Ball</button>
         <h2>Dragon Ball GT</h2>
         <div class="grilla-biblioteca" id="grilla-dragonball-gt"></div>
+    </section>
+
+    <!-- SUBCOLECCIÓN: DRAGON BALL Z PELÍCULAS -->
+    <section id="seccion-dragonball-z-peliculas" class="oculto">
+        <button class="btn-volver" id="btn-volver-dragonball-z-peliculas">← Volver a Dragon Ball</button>
+        <h2>Dragon Ball Z: Películas</h2>
+        <div class="grilla-biblioteca" id="grilla-dragonball-z-peliculas"></div>
     </section>
 
     <!-- SUBCOLECCIÓN: TODO DRAGON BALL -->
@@ -741,6 +782,20 @@
         <button class="btn-volver" id="btn-volver-batwoman">← Volver a Arrowverse</button>
         <h2>Batwoman</h2>
         <div class="grilla-biblioteca" id="grilla-batwoman"></div>
+    </section>
+
+    <!-- COLECCIÓN: DC'S LEGENDS OF TOMORROW -->
+    <section id="seccion-legends-of-tomorrow" class="oculto">
+        <button class="btn-volver" id="btn-volver-legends-of-tomorrow">← Volver a Arrowverse</button>
+        <h2>DC's Legends of Tomorrow</h2>
+        <div class="grilla-biblioteca" id="grilla-legends-of-tomorrow"></div>
+    </section>
+
+    <!-- COLECCIÓN: BLACK LIGHTNING -->
+    <section id="seccion-black-lightning" class="oculto">
+        <button class="btn-volver" id="btn-volver-black-lightning">← Volver a Arrowverse</button>
+        <h2>Black Lightning</h2>
+        <div class="grilla-biblioteca" id="grilla-black-lightning"></div>
     </section>
 
     <!-- FOX: X-MEN -->

@@ -92,18 +92,18 @@ const listaMedia = [
     // --- ARROWVERSE ---
     // "Arrow" ahora es una ficha explorable con sus 8 temporadas (ver colecciones)
     // "The Flash" ahora es una ficha explorable con sus 9 temporadas (ver colecciones)
-    { titulo: "Flash vs Arrow", categoria: "arrowverse", tipoArrow: "eventos", crono: 3, tipo: "Evento", poster: "https://m.media-amazon.com/images/I/51VWso60-0L._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Flash vs Arrow", categoria: "arrowverse", tipoArrow: "eventos", crono: 5, tipo: "Evento", poster: "https://m.media-amazon.com/images/I/51VWso60-0L._AC_UF894,1000_QL80_.jpg" },
     // "Supergirl" ahora es una ficha explorable con sus 6 temporadas (ver colecciones)
-    { titulo: "Legends", categoria: "arrowverse", tipoArrow: "eventos", crono: 5, tipo: "Evento", poster: "https://i.pinimg.com/736x/b3/1a/41/b31a41a98c647c357a3ff53790666151.jpg" },
+    { titulo: "Legends", categoria: "arrowverse", tipoArrow: "eventos", crono: 9, tipo: "Evento", poster: "https://i.pinimg.com/736x/b3/1a/41/b31a41a98c647c357a3ff53790666151.jpg" },
     // "DC's Legends of Tomorrow" ahora es una ficha explorable con sus 5 temporadas (ver colecciones)
-    { titulo: "Invasion!", categoria: "arrowverse", tipoArrow: "eventos", crono: 7, tipo: "Evento", poster: "https://cdn.hmv.com/r/w-640/hmv/files/d8/d8360880-fc10-4b55-a726-2f333d250df5.jpg" },
-    { titulo: "Duet!", categoria: "arrowverse", tipoArrow: "eventos", crono: 8, tipo: "Evento", poster: "https://mundosuperman.com/wp-content/uploads/2017/03/53990.jpg" },
-    { titulo: "Crisis on Earth-X", categoria: "arrowverse", tipoArrow: "eventos", crono: 9, tipo: "Evento", poster: "https://m.media-amazon.com/images/I/81tiQIJIhjL.jpg" },
-    { titulo: "Black Lightning", categoria: "arrowverse", tipoArrow: "principal", crono: 10, tipo: "Serie", poster: "https://i.pinimg.com/564x/d5/44/a4/d544a4236f757cea8e84db91ffb92fff.jpg" },
-    { titulo: "Elseworlds", categoria: "arrowverse", tipoArrow: "eventos", crono: 11, tipo: "Evento", poster: "https://imgix.bustle.com/inverse/7b/df/96/f8/9724/4533/a086/c46cb1152e80/the-poster-for-elseworlds.jpeg?w=262&h=328&fit=crop&crop=faces&dpr=2" },
+    { titulo: "Invasion!", categoria: "arrowverse", tipoArrow: "eventos", crono: 15, tipo: "Evento", poster: "https://cdn.hmv.com/r/w-640/hmv/files/d8/d8360880-fc10-4b55-a726-2f333d250df5.jpg" },
+    { titulo: "Duet!", categoria: "arrowverse", tipoArrow: "eventos", crono: 16, tipo: "Evento", poster: "https://mundosuperman.com/wp-content/uploads/2017/03/53990.jpg" },
+    { titulo: "Crisis on Earth-X", categoria: "arrowverse", tipoArrow: "eventos", crono: 21, tipo: "Evento", poster: "https://m.media-amazon.com/images/I/81tiQIJIhjL.jpg" },
+    // "Black Lightning" ahora es una ficha explorable con sus 4 temporadas (ver colecciones)
+    { titulo: "Elseworlds", categoria: "arrowverse", tipoArrow: "eventos", crono: 27, tipo: "Evento", poster: "https://imgix.bustle.com/inverse/7b/df/96/f8/9724/4533/a086/c46cb1152e80/the-poster-for-elseworlds.jpeg?w=262&h=328&fit=crop&crop=faces&dpr=2" },
     // "Batwoman" ahora es una ficha explorable con sus 3 temporadas (ver colecciones)
-    { titulo: "Crisis on Infinite Earths", categoria: "arrowverse", tipoArrow: "eventos", crono: 13, tipo: "Evento", poster: "https://therealstanlee.com/main/wp-content/uploads/2019/11/EJ_vMjOUYAYQ2MZ-min-819x1024.jpg" },
-    { titulo: "Armageddon", categoria: "arrowverse", tipoArrow: "eventos", crono: 14, tipo: "Evento", poster: "https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2021/11/The-Flash-Armageddon.jpg?resize=1280%2C1600&ssl=1" },
+    { titulo: "Crisis on Infinite Earths", categoria: "arrowverse", tipoArrow: "eventos", crono: 32, tipo: "Evento", poster: "https://therealstanlee.com/main/wp-content/uploads/2019/11/EJ_vMjOUYAYQ2MZ-min-819x1024.jpg" },
+    { titulo: "Armageddon", categoria: "arrowverse", tipoArrow: "eventos", crono: 37, tipo: "Evento", poster: "https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2021/11/The-Flash-Armageddon.jpg?resize=1280%2C1600&ssl=1" },
 
     // --- FOX: X-MEN ---
     { titulo: "X-Men (2000)", categoria: "fox-xmen", tipo: "Película", poster: "https://i.pinimg.com/736x/f9/7c/3f/f97c3f94f67ca6fd6ae7ad0470d6d553.jpg" },
@@ -188,8 +188,7 @@ const listaMedia = [
     { titulo: "Swamp Thing", categoria: "dc-multiverso", subtipo: "liveaction", tipo: "Serie - Tierra 19", poster: "https://m.media-amazon.com/images/M/MV5BMGQzYzgxZWQtZmI3YS00YTIzLTk4NmQtMGE0YTdiNGNlZjYxXkEyXkFqcGc@.V1.jpg" },
 
     // --- GAME OF THRONES (con doble orden: salida / cronológico) ---
-    { titulo: "Game of Thrones", categoria: "game-of-thrones", tipo: "Serie", ordenSalida: 1, crono: 3, poster: "https://static.posters.cz/image/1300/135455.jpg" },
-    { titulo: "House of the Dragon", categoria: "game-of-thrones", tipo: "Serie", ordenSalida: 2, crono: 1, poster: "https://i.pinimg.com/736x/4d/b6/39/4db639e88587f29b4b3207d12e90ebfa.jpg" },
+    // "Game of Thrones" y "House of the Dragon" ahora son fichas explorables (ver colecciones)
     { titulo: "A Knight of the Seven Kingdoms", categoria: "game-of-thrones", tipo: "Serie", ordenSalida: 3, crono: 2, poster: "https://image.tmdb.org/t/p/original/mBDO4PLEiFaBrj4RO0mWdW6tSUs.jpg" },
 
     // --- ASSASSIN'S CREED (con doble orden: lanzamiento / cronológico histórico) ---
@@ -301,7 +300,18 @@ const listaMedia = [
     { titulo: "Un Mundo Extraño", categoria: "disney-animation", subtipo: "2020", tipo: "Película", poster: "https://i.pinimg.com/736x/ea/c5/da/eac5da7bd43097e5288adad835ec28cc.jpg" },
     { titulo: "Wish", categoria: "disney-animation", subtipo: "2020", tipo: "Película", poster: "https://lumiere-a.akamaihd.net/v1/images/screenshot_2023-04-27_at_14_930d2ffc.png?region=0,0,986,1458" },
     { titulo: "Moana 2", categoria: "disney-animation", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/aLVkiINlIeCkcZIzb7XHzPYgO6L.jpg" },
-    { titulo: "Zootopia 2", categoria: "disney-animation", subtipo: "2020", tipo: "Película", poster: "https://lumiere-a.akamaihd.net/v1/images/image002_ad18240b.jpeg?region=0,0,770,1100" }
+    { titulo: "Zootopia 2", categoria: "disney-animation", subtipo: "2020", tipo: "Película", poster: "https://lumiere-a.akamaihd.net/v1/images/image002_ad18240b.jpeg?region=0,0,770,1100" },
+
+    // --- OSCAR 2020 (con filtros por categoría) ---
+    { titulo: "Parasite", categoria: "oscar-2020", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg" },
+    { titulo: "1917", categoria: "oscar-2020", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYzkxZjg2NDQtMGVjMy00NWZkLTk0ZDEtZWE3NDYwYjAyMTg1XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "Ford v Ferrari", categoria: "oscar-2020", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/322166.jpg" },
+    { titulo: "Jojo Rabbit", categoria: "oscar-2020", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/322216.jpg" },
+    { titulo: "Joker", categoria: "oscar-2020", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://i.ebayimg.com/images/g/rI0AAOSw89NiRZ6k/s-l1200.jpg" },
+    { titulo: "Little Women", categoria: "oscar-2020", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61TK-+geKPL.AC_UF894,1000_QL80.jpg" },
+    { titulo: "Historia de un Matrimonio", categoria: "oscar-2020", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://cdn.posteritati.com/posters/000/000/060/561/marriage-story-md-web.jpg" },
+    { titulo: "Once Upon a Time in Hollywood", categoria: "oscar-2020", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2019/06/IMG_9717.jpeg" },
+    { titulo: "The Irishman", categoria: "oscar-2020", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/750/322410.jpg" }
 ];
 
 // ==========================================
@@ -387,6 +397,20 @@ const colecciones = [
             { titulo: "DC's Legends of Tomorrow Temporada 3", poster: "https://i0.wp.com/brainstomping.com/wp-content/uploads/2018/04/legends-of-tomorrow-season-3.png?ssl=1" },
             { titulo: "DC's Legends of Tomorrow Temporada 4", poster: "https://static.wikia.nocookie.net/arrow/images/a/a8/LEG_S4_8x12_300dpi-683x1024.jpg/revision/latest?cb=20181104053312&path-prefix=es" },
             { titulo: "DC's Legends of Tomorrow Temporada 5", poster: "https://legiondelarrowverso.wordpress.com/wp-content/uploads/2020/01/lgn-s5-8x12-r2-300dpi-1203197.jpeg" }
+        ]
+    },
+    {
+        id: "black-lightning",
+        titulo: "Black Lightning",
+        categoria: "arrowverse",
+        poster: "https://i.pinimg.com/564x/d5/44/a4/d544a4236f757cea8e84db91ffb92fff.jpg",
+        tipoArrow: "principal",
+        crono: 26,
+        peliculas: [
+            { titulo: "Black Lightning Temporada 1", poster: "https://cdn.seat42f.com/wp-content/uploads/2017/12/13200135/Black-Lightning-Season-1-Poster-Key-Art.jpg" },
+            { titulo: "Black Lightning Temporada 2", poster: "https://i.pinimg.com/736x/f1/a2/33/f1a2336de9bf9b77565ea61ebd7e4020.jpg" },
+            { titulo: "Black Lightning Temporada 3", poster: "https://i.pinimg.com/736x/74/f2/84/74f2847f04612b4dfddbd7cf26fd110b.jpg" },
+            { titulo: "Black Lightning Temporada 4", poster: "https://i.pinimg.com/736x/83/4f/41/834f412b96ce9315a9a7de806f1d80bd.jpg" }
         ]
     },
     {
@@ -491,17 +515,10 @@ const colecciones = [
         peliculas: []
     },
     {
-        id: "oscar-nominados",
-        titulo: "Nominados",
-        categoria: "academy-awards",
-        poster: "https://wallpapercat.com/w/full/5/7/9/1371526-1780x2748-mobile-hd-the-oscars-background-image.jpg",
-        peliculas: []
-    },
-    {
         id: "oscar-2020-actualidad",
         titulo: "2020 - Actualidad",
         categoria: "academy-awards",
-        poster: "https://placehold.co/300x450?text=2020-Actualidad",
+        poster: "https://wallpapercat.com/w/full/5/7/9/1371526-1780x2748-mobile-hd-the-oscars-background-image.jpg",
         esContenedor: true,
         peliculas: []
     },
@@ -510,17 +527,8 @@ const colecciones = [
         titulo: "2020",
         categoria: "oscar-anios",
         poster: "https://m.media-amazon.com/images/M/MV5BYjBiYzg3NmYtODgzNS00Y2I4LTlmMGQtZmQ5ODA2ZTNmOTAyXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg",
-        peliculas: [
-            { titulo: "Parasite", poster: "https://image.tmdb.org/t/p/original/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg" },
-            { titulo: "1917", poster: "https://m.media-amazon.com/images/M/MV5BYzkxZjg2NDQtMGVjMy00NWZkLTk0ZDEtZWE3NDYwYjAyMTg1XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
-            { titulo: "Ford v Ferrari", poster: "https://cdng.europosters.eu/pod_public/1300/322166.jpg" },
-            { titulo: "Jojo Rabbit", poster: "https://cdng.europosters.eu/pod_public/1300/322216.jpg" },
-            { titulo: "Joker", poster: "https://i.ebayimg.com/images/g/rI0AAOSw89NiRZ6k/s-l1200.jpg" },
-            { titulo: "Little Women", poster: "https://m.media-amazon.com/images/I/61TK-+geKPL.AC_UF894,1000_QL80.jpg" },
-            { titulo: "Historia de un Matrimonio", poster: "https://cdn.posteritati.com/posters/000/000/060/561/marriage-story-md-web.jpg" },
-            { titulo: "Once Upon a Time in Hollywood", poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2019/06/IMG_9717.jpeg" },
-            { titulo: "The Irishman", poster: "https://cdng.europosters.eu/pod_public/750/322410.jpg" }
-        ]
+        esContenedor: true,
+        peliculas: []
     },
     {
         id: "oscar-2021",
@@ -578,6 +586,24 @@ const colecciones = [
         categoria: "videojuegos-explorar",
         poster: "https://i.pinimg.com/736x/34/43/2b/34432bfe77291064ca1b5ad00f728088.jpg",
         esContenedor: true,
+        peliculas: []
+    },
+    {
+        id: "atajo-dc-videojuegos",
+        titulo: "DC Comics",
+        categoria: "videojuegos-explorar",
+        poster: "https://placehold.co/300x450?text=DC+Comics",
+        esContenedor: true,
+        atajoId: "dc-videojuegos",
+        peliculas: []
+    },
+    {
+        id: "atajo-lego-videojuegos",
+        titulo: "LEGO Videojuegos",
+        categoria: "videojuegos-explorar",
+        poster: "https://placehold.co/300x450?text=LEGO+Videojuegos",
+        esContenedor: true,
+        atajoId: "lego-videojuegos",
         peliculas: []
     },
     {
@@ -663,6 +689,31 @@ const colecciones = [
         ]
     },
     {
+        id: "maze-runner",
+        titulo: "Maze Runner Saga",
+        categoria: "franquicias",
+        poster: "https://i.pinimg.com/736x/2d/11/37/2d11375e6307f12fa7d666ddf245ae4e.jpg",
+        peliculas: [
+            { titulo: "The Maze Runner", poster: "https://m.media-amazon.com/images/I/71YSw4vEquL._AC_UF894,1000_QL80_.jpg" },
+            { titulo: "Maze Runner: Prueba de Fuego", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1ALr06ACcPoCaW91CMBk_yJKA1iQ7ZqL3hOolfj5AzZeADj3dhkLAT0M&s=10" },
+            { titulo: "Maze Runner: La Cura Mortal", poster: "https://m.media-amazon.com/images/M/MV5BMTYyNzk3MDc2NF5BMl5BanBnXkFtZTgwMDk3OTM1NDM@._V1_.jpg" }
+        ]
+    },
+    {
+        id: "los-juegos-del-hambre",
+        titulo: "Los Juegos del Hambre Saga",
+        categoria: "franquicias",
+        poster: "https://i.pinimg.com/736x/d4/f2/ab/d4f2abfc5927a9adf286f394f4b756ca.jpg",
+        peliculas: [
+            { titulo: "Los Juegos del Hambre", poster: "https://cdng.europosters.eu/pod_public/750/266325.jpg" },
+            { titulo: "Los Juegos del Hambre: En Llamas", poster: "https://m.media-amazon.com/images/M/MV5BMTAyMjQ3OTAxMzNeQTJeQWpwZ15BbWU4MDU0NzA1MzAx._V1_.jpg" },
+            { titulo: "Los Juegos del Hambre: Sinsajo Parte Uno", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgpNZKzB0XfI-nJGEcY-QAfnX7vnMo1UYj0rkHcs21wF2MyQkelGnaZNQ&s=10" },
+            { titulo: "Los Juegos del Hambre: Sinsajo Parte Dos", poster: "https://m.media-amazon.com/images/M/MV5BNjQzNDI2NTU1Ml5BMl5BanBnXkFtZTgwNTAyMDQ5NjE@._V1_.jpg" },
+            { titulo: "Los Juegos del Hambre: Balada de Pájaros Cantores y Serpientes", poster: "https://m.media-amazon.com/images/M/MV5BZDk2YjNhYzEtYzg2ZC00OWEwLWJhYzgtMGUzMWVjNDFmYzI5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+            { titulo: "Los Juegos del Hambre: Amanecer en La Cosecha", poster: "https://m.media-amazon.com/images/M/MV5BNGRkYmM2MjUtZTY4Yi00YTNhLTk1MDEtYTQ3YjFiOTljM2Y1XkEyXkFqcGc@._V1_.jpg" }
+        ]
+    },
+    {
         id: "dune",
         titulo: "Dune",
         categoria: "franquicias",
@@ -677,7 +728,7 @@ const colecciones = [
         id: "mundo-magico",
         titulo: "Mundo Mágico",
         categoria: "franquicias",
-        poster: "https://placehold.co/300x450?text=Mundo+Magico",
+        poster: "https://w0.peakpx.com/wallpaper/414/260/HD-wallpaper-wizarding-world-fantastic-beasts-harry-potter-magic.jpg",
         esContenedor: true,
         peliculas: []
     },
@@ -701,16 +752,22 @@ const colecciones = [
         id: "animales-fantasticos",
         titulo: "Animales Fantásticos",
         categoria: "mundo-magico",
-        poster: "https://placehold.co/300x450?text=Animales+Fantasticos",
-        peliculas: []
+        poster: "https://i.pinimg.com/originals/e1/96/0d/e1960dbfbee3e952e1652929d87a6729.jpg",
+        peliculas: [
+            { titulo: "Animales Fantásticos y Donde Encontrarlos", poster: "https://m.media-amazon.com/images/M/MV5BMjczYmNkYzctMDhmOC00YjFjLWE1ZjktNDVlMjZjODJhZGI0XkEyXkFqcGc@._V1_.jpg" },
+            { titulo: "Animales Fantásticos: Los Crímenes de Grindelwald", poster: "https://m.media-amazon.com/images/M/MV5BZGIyZjk5ODctNDg3MC00YTgyLThmYTAtNjZkNzk4Y2JhMDRhXkEyXkFqcGc@._V1_.jpg" },
+            { titulo: "Animales Fantásticos: Los Secretos de Dumbledore", poster: "https://m.media-amazon.com/images/M/MV5BZTk4MTU1MjctMmMwNy00OWQyLTlhMDItNmY4ZmU1OTQzOGVjXkEyXkFqcGc@._V1_.jpg" }
+        ]
     },
     {
         id: "mundo-magico-videojuegos",
         titulo: "Videojuegos",
         categoria: "mundo-magico",
-        poster: "https://placehold.co/300x450?text=Videojuegos",
+        poster: "https://i.pinimg.com/736x/c9/ce/0f/c9ce0f781e563fe27fada659b14390b6.jpg",
         esVideojuego: true,
-        peliculas: []
+        peliculas: [
+            { titulo: "Hogwarts Legacy", poster: "https://static.posters.cz/image/750/154092.jpg" }
+        ]
     },
     {
         id: "game-of-thrones",
@@ -719,6 +776,37 @@ const colecciones = [
         poster: "https://static.posters.cz/image/1300/135443.jpg",
         esContenedor: true,
         peliculas: []
+    },
+    {
+        id: "got-serie",
+        titulo: "Game of Thrones",
+        categoria: "game-of-thrones",
+        poster: "https://static.posters.cz/image/1300/135455.jpg",
+        ordenSalida: 1,
+        crono: 3,
+        peliculas: [
+            { titulo: "Game of Thrones Temporada 1", poster: "https://m.media-amazon.com/images/M/MV5BNGYxOGJkMjItZjVkZC00OGEzLWExNjktOTZmNGZhZmRlMTk2XkEyXkFqcGc@._V1_.jpg" },
+            { titulo: "Game of Thrones Temporada 2", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKjd169m92GvS9ShtfplLzSW2foG-PcOWr1uzJBahiECoSos18dEYZsdE&s=10" },
+            { titulo: "Game of Thrones Temporada 3", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiZ4QgqQ7irwlOnYnTpOylhmSmzyC6_64C1F58h9FKriNMRx0CeGpeoyYN&s=10" },
+            { titulo: "Game of Thrones Temporada 4", poster: "https://i.pinimg.com/736x/0a/2d/87/0a2d87033a3784962184981b0f79219a.jpg" },
+            { titulo: "Game of Thrones Temporada 5", poster: "https://cdn.europosters.eu/image/750/135458.jpg" },
+            { titulo: "Game of Thrones Temporada 6", poster: "https://hips.hearstapps.com/digitalspyuk.cdnds.net/15/48/1448295180-game-of-thrones-season-six.jpg" },
+            { titulo: "Game of Thrones Temporada 7", poster: "https://cdn.europosters.eu/image/750/49129.jpg" },
+            { titulo: "Game of Thrones Temporada 8", poster: "https://ew.com/thmb/reQaMhcqNS7EJ0ICURbu2oV0RHA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/game-of-thrones-1-2000-fa124cd9a86049919b97184120240c4a.jpg" }
+        ]
+    },
+    {
+        id: "house-of-the-dragon",
+        titulo: "House of the Dragon",
+        categoria: "game-of-thrones",
+        poster: "https://i.pinimg.com/736x/4d/b6/39/4db639e88587f29b4b3207d12e90ebfa.jpg",
+        ordenSalida: 2,
+        crono: 1,
+        peliculas: [
+            { titulo: "House of the Dragon Temporada 1", poster: "https://static.posters.cz/image/1300/230492.jpg" },
+            { titulo: "House of the Dragon Temporada 2", poster: "https://i0.wp.com/img-tomatazos.buscafs.com/437722/437722.jpeg" },
+            { titulo: "House of the Dragon Temporada 3", poster: "https://i.pinimg.com/736x/f9/7b/6a/f97b6a91b29bbe9a85f5fa03050eaaab.jpg" }
+        ]
     },
     {
         id: "greta-gerwig",
@@ -730,6 +818,19 @@ const colecciones = [
             { titulo: "Lady Bird", poster: "https://image.tmdb.org/t/p/original/gl66K7zRdtNYGrxyS2YDUP5ASZd.jpg" },
             { titulo: "Little Women", poster: "https://m.media-amazon.com/images/I/61TK-+geKPL.AC_UF894,1000_QL80.jpg" },
             { titulo: "Barbie", poster: "https://image.tmdb.org/t/p/original/dekMkQf0kqAmztUca9lX5e5Pjbp.jpg" }
+        ]
+    },
+    {
+        id: "chloe-zhao",
+        titulo: "Chloé Zhao",
+        categoria: "directores",
+        poster: "https://static01.nyt.com/images/2026/01/02/magazine/01mag-interview-zhao-image/01mag-interview-zhao-image-mobileMasterAt3x-v2.png",
+        peliculas: [
+            { titulo: "Songs My Brothers Taught Me", poster: "https://m.media-amazon.com/images/M/MV5BMjZhMTYyOTMtOWNlMi00MDVhLThjM2ItODFjYmI3NGQxNDY2XkEyXkFqcGc@.V1.jpg" },
+            { titulo: "The Rider", poster: "https://m.media-amazon.com/images/M/MV5BMjQ3ODM5MjY2N15BMl5BanBnXkFtZTgwOTU5MjM4NDM@.V1.jpg" },
+            { titulo: "Nomadland", poster: "https://m.media-amazon.com/images/M/MV5BZWY3YTIwOGItODQ5Mi00NmI4LTgxN2QtZmI2ZjJmZmRkOGY1XkEyXkFqcGc@.V1.jpg" },
+            { titulo: "Eternals", poster: "https://image.tmdb.org/t/p/original/vgUZo9aVvRvCQFXwZC9zq3qCZT9.jpg" },
+            { titulo: "Hamnet", poster: "https://competitive.ultracine.com/wp-content/uploads/2025/05/UIP-HAMNET.jpg" }
         ]
     },
     {
@@ -1119,15 +1220,49 @@ const colecciones = [
         ]
     },
     {
+        id: "dragonball-z-peliculas",
+        titulo: "Dragon Ball Z: Películas",
+        categoria: "dragonball",
+        poster: "https://w0.peakpx.com/wallpaper/840/124/HD-wallpaper-dragon-ball-movies-broly-goku.jpg",
+        peliculas: [
+            { titulo: "¡Devuélveme a mi Gohan!", poster: "https://image.tmdb.org/t/p/w500/86ECobJsXdqcBzAKWS56EbawbOK.jpg" },
+            { titulo: "El Hombre Más Fuerte de Este Mundo", poster: "https://i.pinimg.com/564x/d2/0e/6c/d20e6cb1317bcb88f514c34a19a83627.jpg" },
+            { titulo: "La Súper Batalla Decisiva por La Tierra", poster: "https://image.tmdb.org/t/p/original/uGadvCa5w8X6zAWzdZlVQYNd6QR.jpg" },
+            { titulo: "El Súper Guerrero Son Goku", poster: "https://m.media-amazon.com/images/M/MV5BODE2NDUzMjk3M15BMl5BanBnXkFtZTYwOTA3MDc5._V1_FMjpg_UX1000_.jpg" },
+            { titulo: "Los Rivales Más Poderosos", poster: "https://static.wikia.nocookie.net/dragonball/images/7/7a/DBZ_Pel%C3%ADcula_5_p%C3%B3ster.png/revision/latest?cb=20180805032322&path-prefix=es" },
+            { titulo: "El Regreso de Cooler", poster: "https://play-lh.googleusercontent.com/0BXSfNu39g6fzcQe5Sg67KbEvxWLu1WI7qnKLmzGbwLAgk-FWxu-9_AXHbjNH5d1DITM0ca_aIIs6GA1Cw" },
+            { titulo: "¡¡Batalla Extrema!! Los Tres Grandes Súper Saiyajines", poster: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/5b86e15beaedd745eeff303cb6ef8d20.png" },
+            { titulo: "El Poder Invencible", poster: "https://image.tmdb.org/t/p/original/QWjeZq3sMcDPQpgWDwoJrkqgTu.jpg" },
+            { titulo: "La Galaxia Corre Peligro", poster: "https://m.media-amazon.com/images/M/MV5BMTUwODQ3MjQwN15BMl5BanBnXkFtZTcwMDgyOTUyMQ@@._V1_.jpg" },
+            { titulo: "El Regreso del Guerrero Legendario", poster: "https://image.tmdb.org/t/p/original/x83JFWT3zeqI1j2ubPp1xfPhJq4.jpg" },
+            { titulo: "El Combate Definitivo", poster: "https://static.wikia.nocookie.net/dragonball/images/a/ad/DBZ_Pel%C3%ADcula_11_p%C3%B3ster.png/revision/latest?cb=20180805032326&path-prefix=es" },
+            { titulo: "¡El Renacer de la Fusión! Goku y Vegeta", poster: "https://i.pinimg.com/736x/fc/cc/10/fccc109144bc20921f2d01a3c8451e84.jpg" },
+            { titulo: "El Ataque del Dragón", poster: "https://m.media-amazon.com/images/M/MV5BMTk4MDIxNzk1N15BMl5BanBnXkFtZTcwNDk0MDQzMQ@@._V1_.jpg" }
+        ]
+    },
+    {
         id: "dragonball-todo",
         titulo: "Todo Dragon Ball",
         categoria: "dragonball",
         poster: "https://i.pinimg.com/originals/6f/4d/73/6f4d73d1afc0702a6e9d31f36d1628bc.jpg?nii=t",
         peliculas: [
             { titulo: "Saga Saiyan", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxSr-aKYyKPVySvy3CpUF--Z9UM-IVdRuDam6yMP8zxu6MUkNLSgMkLG0&s=10" },
+            { titulo: "¡Devuélveme a mi Gohan!", poster: "https://image.tmdb.org/t/p/w500/86ECobJsXdqcBzAKWS56EbawbOK.jpg" },
+            { titulo: "El Hombre Más Fuerte de Este Mundo", poster: "https://i.pinimg.com/564x/d2/0e/6c/d20e6cb1317bcb88f514c34a19a83627.jpg" },
             { titulo: "Saga de Freezer", poster: "https://static.wikia.nocookie.net/dragonball/images/2/2e/Arco_de_Freezer_Artwork_DBZ.png/revision/latest?cb=20180612015408&path-prefix=es" },
+            { titulo: "La Súper Batalla Decisiva por La Tierra", poster: "https://image.tmdb.org/t/p/original/uGadvCa5w8X6zAWzdZlVQYNd6QR.jpg" },
+            { titulo: "El Súper Guerrero Son Goku", poster: "https://m.media-amazon.com/images/M/MV5BODE2NDUzMjk3M15BMl5BanBnXkFtZTYwOTA3MDc5._V1_FMjpg_UX1000_.jpg" },
+            { titulo: "Los Rivales Más Poderosos", poster: "https://static.wikia.nocookie.net/dragonball/images/7/7a/DBZ_Pel%C3%ADcula_5_p%C3%B3ster.png/revision/latest?cb=20180805032322&path-prefix=es" },
             { titulo: "Saga de Cell", poster: "https://www.wallister.de/cdn/shop/products/G868340_01.jpg?v=1677662334" },
+            { titulo: "El Regreso de Cooler", poster: "https://play-lh.googleusercontent.com/0BXSfNu39g6fzcQe5Sg67KbEvxWLu1WI7qnKLmzGbwLAgk-FWxu-9_AXHbjNH5d1DITM0ca_aIIs6GA1Cw" },
+            { titulo: "¡¡Batalla Extrema!! Los Tres Grandes Súper Saiyajines", poster: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/5b86e15beaedd745eeff303cb6ef8d20.png" },
             { titulo: "Saga de Majin Buu", poster: "https://i.pinimg.com/736x/8a/a2/e4/8aa2e46c01ae0c287901c25449979902.jpg" },
+            { titulo: "El Poder Invencible", poster: "https://image.tmdb.org/t/p/original/QWjeZq3sMcDPQpgWDwoJrkqgTu.jpg" },
+            { titulo: "La Galaxia Corre Peligro", poster: "https://m.media-amazon.com/images/M/MV5BMTUwODQ3MjQwN15BMl5BanBnXkFtZTcwMDgyOTUyMQ@@._V1_.jpg" },
+            { titulo: "El Regreso del Guerrero Legendario", poster: "https://image.tmdb.org/t/p/original/x83JFWT3zeqI1j2ubPp1xfPhJq4.jpg" },
+            { titulo: "El Combate Definitivo", poster: "https://static.wikia.nocookie.net/dragonball/images/a/ad/DBZ_Pel%C3%ADcula_11_p%C3%B3ster.png/revision/latest?cb=20180805032326&path-prefix=es" },
+            { titulo: "¡El Renacer de la Fusión! Goku y Vegeta", poster: "https://i.pinimg.com/736x/fc/cc/10/fccc109144bc20921f2d01a3c8451e84.jpg" },
+            { titulo: "El Ataque del Dragón", poster: "https://m.media-amazon.com/images/M/MV5BMTk4MDIxNzk1N15BMl5BanBnXkFtZTcwNDk0MDQzMQ@@._V1_.jpg" },
             { titulo: "Saga de Bills", poster: "https://image.tmdb.org/t/p/original/oV8aSngwg5YPpcaNvlC8VOMCYtK.jpg" },
             { titulo: "La Batalla de los Dioses", poster: "https://www.cinepremiere.com.mx/assets/images/noticias/2013/07-julio/DragonBallZ-batalla-poster.jpg" },
             { titulo: "Saga de la Resurrección de Freezer", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdp8uz95HVMymEVGeUIdyp0bl5juJj8QU0yCSGQqRLt9MVgZputG5v5dI&s=10" },
@@ -1459,6 +1594,20 @@ const logrosDisponibles = [
         descripcion: "Superá el 70% del Tomorrowverse",
         icono: "🌠",
         condicion: (vistos) => porcentajeColeccionVisto(vistos, "tomorrowverse") > 70
+    },
+    {
+        id: "le-has-fallado-a-esta-ciudad",
+        nombre: "Le has fallado a esta ciudad",
+        descripcion: "Mirá el 100% de Arrow",
+        icono: "🏹",
+        condicion: (vistos) => coleccionCompleta(vistos, "arrow")
+    },
+    {
+        id: "corre-barry-corre",
+        nombre: "Corre Barry, corre",
+        descripcion: "Mirá el 100% de The Flash",
+        icono: "⚡",
+        condicion: (vistos) => coleccionCompleta(vistos, "the-flash")
     }
 ];
 
@@ -1511,7 +1660,7 @@ function renderizarColecciones() {
             const textoPendiente = col.esVideojuego ? 'Marcar Jugado' : 'Marcar Visto';
             const etiquetaTipo = col.esVideojuego ? 'Colección de Videojuegos' : 'Colección Animada';
             htmlColeccion = `
-                <div class="tarjeta-media tarjeta-coleccion" data-coleccion="${col.id}" data-accion="${col.esVideojuego ? 'jugado' : 'visto'}" data-tipo="${col.tipoArrow || ''}" data-crono="${col.crono || ''}">
+                <div class="tarjeta-media tarjeta-coleccion" data-coleccion="${col.id}" data-accion="${col.esVideojuego ? 'jugado' : 'visto'}" data-tipo="${col.tipoArrow || ''}" data-crono="${col.crono || ''}" data-orden="${col.ordenSalida || ''}">
                     <img src="${col.poster}" alt="${col.titulo}">
                     <h3>${col.titulo}</h3>
                     <p>${etiquetaTipo}</p>
@@ -1564,6 +1713,14 @@ function abrirColeccion(colId) {
     const col = colecciones.find(c => c.id === colId);
     if (!col) return;
 
+    // Ficha "atajo": no tiene contenido propio, solo lleva a una sección que
+    // ya existe y ya está poblada por otro camino (para no duplicar datos)
+    if (col.atajoId) {
+        const seccionAtajo = document.getElementById(`seccion-${col.atajoId}`);
+        if (seccionAtajo) cambiarSeccion(seccionAtajo);
+        return;
+    }
+
     asegurarPeliculasRenderizadas(col);
     if (!col.esContenedor && col.peliculas.length > 0) {
         aplicarVistosGuardados(document.getElementById(`grilla-${colId}`));
@@ -1576,6 +1733,11 @@ function abrirColeccion(colId) {
     if (colId === 'it') {
         const btnMuschietti = document.querySelector('.btn-filtro-it[data-tipo="muschietti"]');
         if (btnMuschietti) btnMuschietti.click();
+    }
+
+    if (colId === 'game-of-thrones') {
+        const btnSalida = document.querySelector('.btn-filtro-got[data-tipo="salida"]');
+        if (btnSalida) btnSalida.click();
     }
 }
 
@@ -1628,7 +1790,8 @@ function renderizarContenido() {
         "it": "seccion-it",
         "game-of-thrones": "seccion-game-of-thrones",
         "assassins-creed": "seccion-assassins-creed",
-        "disney-animation": "seccion-disney-animation"
+        "disney-animation": "seccion-disney-animation",
+        "oscar-2020": "seccion-oscar-2020"
     };
 
     listaMedia.forEach(item => {
@@ -2056,29 +2219,111 @@ botonesFiltroDoomsday.forEach(boton => {
 // ==========================================
 // FILTROS ARROWVERSE
 // ==========================================
+
+// Orden cronológico real del Arrowverse a nivel de TEMPORADA (no por serie completa).
+// Los eventos/crossovers ya tienen su propio "crono" en listaMedia; acá solo van
+// las temporadas individuales de las 5 series con fichas-colección.
+const arrowverseCronologicoTemporadas = [
+    { coleccion: "arrow", pelicula: "Arrow Temporada 1", crono: 1 },
+    { coleccion: "arrow", pelicula: "Arrow Temporada 2", crono: 2 },
+    { coleccion: "the-flash", pelicula: "The Flash Temporada 1", crono: 3 },
+    { coleccion: "arrow", pelicula: "Arrow Temporada 3", crono: 4 },
+    { coleccion: "the-flash", pelicula: "The Flash Temporada 2", crono: 6 },
+    { coleccion: "arrow", pelicula: "Arrow Temporada 4", crono: 7 },
+    { coleccion: "supergirl", pelicula: "Supergirl Temporada 1", crono: 8 },
+    { coleccion: "legends-of-tomorrow", pelicula: "DC's Legends of Tomorrow Temporada 1", crono: 10 },
+    { coleccion: "the-flash", pelicula: "The Flash Temporada 3", crono: 11 },
+    { coleccion: "arrow", pelicula: "Arrow Temporada 5", crono: 12 },
+    { coleccion: "supergirl", pelicula: "Supergirl Temporada 2", crono: 13 },
+    { coleccion: "legends-of-tomorrow", pelicula: "DC's Legends of Tomorrow Temporada 2", crono: 14 },
+    { coleccion: "the-flash", pelicula: "The Flash Temporada 4", crono: 17 },
+    { coleccion: "arrow", pelicula: "Arrow Temporada 6", crono: 18 },
+    { coleccion: "supergirl", pelicula: "Supergirl Temporada 3", crono: 19 },
+    { coleccion: "legends-of-tomorrow", pelicula: "DC's Legends of Tomorrow Temporada 3", crono: 20 },
+    { coleccion: "the-flash", pelicula: "The Flash Temporada 5", crono: 22 },
+    { coleccion: "arrow", pelicula: "Arrow Temporada 7", crono: 23 },
+    { coleccion: "supergirl", pelicula: "Supergirl Temporada 4", crono: 24 },
+    { coleccion: "legends-of-tomorrow", pelicula: "DC's Legends of Tomorrow Temporada 4", crono: 25 },
+    { coleccion: "black-lightning", pelicula: "Black Lightning Temporada 1", crono: 21.5 },
+    { coleccion: "black-lightning", pelicula: "Black Lightning Temporada 2", crono: 26 },
+    { coleccion: "the-flash", pelicula: "The Flash Temporada 6", crono: 28 },
+    { coleccion: "arrow", pelicula: "Arrow Temporada 8", crono: 29 },
+    { coleccion: "supergirl", pelicula: "Supergirl Temporada 5", crono: 30 },
+    { coleccion: "batwoman", pelicula: "Batwoman Temporada 1", crono: 31 },
+    { coleccion: "black-lightning", pelicula: "Black Lightning Temporada 3", crono: 31.5 },
+    { coleccion: "legends-of-tomorrow", pelicula: "DC's Legends of Tomorrow Temporada 5", crono: 33 },
+    { coleccion: "batwoman", pelicula: "Batwoman Temporada 2", crono: 34 },
+    { coleccion: "the-flash", pelicula: "The Flash Temporada 7", crono: 35 },
+    { coleccion: "supergirl", pelicula: "Supergirl Temporada 6", crono: 36 },
+    { coleccion: "black-lightning", pelicula: "Black Lightning Temporada 4", crono: 36.5 },
+    { coleccion: "the-flash", pelicula: "The Flash Temporada 8", crono: 38 },
+    { coleccion: "batwoman", pelicula: "Batwoman Temporada 3", crono: 39 },
+    { coleccion: "the-flash", pelicula: "The Flash Temporada 9", crono: 40 }
+];
+
+// Crea (si no existen) las tarjetas sueltas de cada temporada dentro de grilla-arrowverse
+function generarTarjetasTemporadasArrowverse() {
+    const contenedor = document.getElementById('grilla-arrowverse');
+    if (!contenedor) return;
+
+    arrowverseCronologicoTemporadas.forEach(entry => {
+        if (contenedor.querySelector(`[data-temporada-id="${entry.coleccion}__${entry.pelicula}"]`)) return;
+
+        const col = colecciones.find(c => c.id === entry.coleccion);
+        const peli = col ? col.peliculas.find(p => p.titulo === entry.pelicula) : null;
+        if (!col || !peli) return;
+
+        const div = document.createElement('div');
+        div.className = 'tarjeta-media tarjeta-temporada oculto';
+        div.setAttribute('data-temporada-id', `${entry.coleccion}__${entry.pelicula}`);
+        div.setAttribute('data-crono', entry.crono);
+        div.setAttribute('data-accion', 'visto');
+        div.innerHTML = `
+            <img src="${peli.poster}" alt="${peli.titulo}">
+            <h3>${peli.titulo}</h3>
+            <p>${col.titulo}</p>
+            <button class="btn-accion">Marcar Visto</button>
+        `;
+        contenedor.appendChild(div);
+    });
+
+    sincronizarVistos();
+    aplicarVistosGuardados(contenedor);
+}
+
 const botonesFiltroArrow = document.querySelectorAll('.btn-filtro-arrowverse');
 botonesFiltroArrow.forEach(boton => {
     boton.addEventListener('click', function() {
         botonesFiltroArrow.forEach(b => b.classList.remove('activo'));
         this.classList.add('activo');
         const tipoElegido = this.getAttribute('data-tipo');
-        const tarjetasArrow = document.querySelectorAll('#grilla-arrowverse .tarjeta-media');
-        const arrayTarjetas = Array.from(tarjetasArrow);
         const contenedor = document.getElementById('grilla-arrowverse');
-        
+
         if (tipoElegido === 'cronologico') {
-            arrayTarjetas.sort((a, b) => parseInt(a.getAttribute('data-crono')) - parseInt(b.getAttribute('data-crono')));
-            arrayTarjetas.forEach(t => {
-                t.style.display = 'flex';
-                contenedor.appendChild(t);
-            });
-        } else {
-            tarjetasArrow.forEach(tarjeta => {
-                if (tarjeta.getAttribute('data-tipo') === tipoElegido) {
-                    tarjeta.style.display = 'flex';
-                } else {
-                    tarjeta.style.display = 'none';
+            generarTarjetasTemporadasArrowverse();
+
+            // Las 5 fichas-colección (series enteras) se ocultan: sus temporadas
+            // sueltas van a aparecer en su lugar, intercaladas con los eventos.
+            const items = [];
+            contenedor.querySelectorAll('.tarjeta-media').forEach(t => {
+                if (t.classList.contains('tarjeta-coleccion')) {
+                    t.classList.add('oculto');
+                    return;
                 }
+                t.classList.remove('oculto');
+                t.style.display = 'flex';
+                items.push({ el: t, crono: parseFloat(t.getAttribute('data-crono')) });
+            });
+
+            items.sort((a, b) => a.crono - b.crono);
+            items.forEach(i => contenedor.appendChild(i.el));
+        } else {
+            // Al volver a Principal/Eventos, las temporadas sueltas se ocultan
+            // y reaparecen las 5 fichas-colección de las series completas.
+            contenedor.querySelectorAll('.tarjeta-temporada').forEach(t => t.classList.add('oculto'));
+            contenedor.querySelectorAll('.tarjeta-media:not(.tarjeta-temporada)').forEach(tarjeta => {
+                tarjeta.classList.remove('oculto');
+                tarjeta.style.display = (tarjeta.getAttribute('data-tipo') === tipoElegido) ? 'flex' : 'none';
             });
         }
     });
@@ -2231,6 +2476,20 @@ if(btnVolverRapidosYFuriosos) {
     });
 }
 
+const btnVolverMazeRunner = document.getElementById('btn-volver-maze-runner');
+if(btnVolverMazeRunner) {
+    btnVolverMazeRunner.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-franquicias'));
+    });
+}
+
+const btnVolverLosJuegosDelHambre = document.getElementById('btn-volver-los-juegos-del-hambre');
+if(btnVolverLosJuegosDelHambre) {
+    btnVolverLosJuegosDelHambre.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-franquicias'));
+    });
+}
+
 const btnVolverDune = document.getElementById('btn-volver-dune');
 if(btnVolverDune) {
     btnVolverDune.addEventListener('click', () => {
@@ -2303,6 +2562,13 @@ if(btnVolverLegendsOfTomorrow) {
     });
 }
 
+const btnVolverBlackLightning = document.getElementById('btn-volver-black-lightning');
+if(btnVolverBlackLightning) {
+    btnVolverBlackLightning.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-arrowverse'));
+    });
+}
+
 const btnVolverGalardones = document.getElementById('btn-volver-galardones');
 if(btnVolverGalardones) {
     btnVolverGalardones.addEventListener('click', () => {
@@ -2321,13 +2587,6 @@ const btnVolverGoldenGlobes = document.getElementById('btn-volver-golden-globes'
 if(btnVolverGoldenGlobes) {
     btnVolverGoldenGlobes.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-galardones'));
-    });
-}
-
-const btnVolverOscarNominados = document.getElementById('btn-volver-oscar-nominados');
-if(btnVolverOscarNominados) {
-    btnVolverOscarNominados.addEventListener('click', () => {
-        cambiarSeccion(document.getElementById('seccion-academy-awards'));
     });
 }
 
@@ -2389,9 +2648,30 @@ if(btnVolverGameOfThrones) {
     });
 }
 
+const btnVolverGotSerie = document.getElementById('btn-volver-got-serie');
+if(btnVolverGotSerie) {
+    btnVolverGotSerie.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-game-of-thrones'));
+    });
+}
+
+const btnVolverHouseOfTheDragon = document.getElementById('btn-volver-house-of-the-dragon');
+if(btnVolverHouseOfTheDragon) {
+    btnVolverHouseOfTheDragon.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-game-of-thrones'));
+    });
+}
+
 const btnVolverGretaGerwig = document.getElementById('btn-volver-greta-gerwig');
 if(btnVolverGretaGerwig) {
     btnVolverGretaGerwig.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-directores'));
+    });
+}
+
+const btnVolverChloeZhao = document.getElementById('btn-volver-chloe-zhao');
+if(btnVolverChloeZhao) {
+    btnVolverChloeZhao.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-directores'));
     });
 }
@@ -2465,6 +2745,7 @@ if(btnVolverDragonball) {
     'btn-volver-dragonball-historia-canon',
     'btn-volver-dragonball-videojuegos',
     'btn-volver-dragonball-gt',
+    'btn-volver-dragonball-z-peliculas',
     'btn-volver-dragonball-todo'
 ].forEach(id => {
     const btn = document.getElementById(id);
@@ -2513,6 +2794,23 @@ botonesFiltroDisney.forEach(boton => {
         this.classList.add('activo');
         const tipoElegido = this.getAttribute('data-tipo');
         const tarjetas = document.querySelectorAll('#seccion-disney-animation .tarjeta-media');
+
+        tarjetas.forEach(tarjeta => {
+            tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
+        });
+    });
+});
+
+// ==========================================
+// FILTROS "OSCAR 2020" (por categoría del premio)
+// ==========================================
+const botonesFiltroOscar = document.querySelectorAll('.btn-filtro-oscar');
+botonesFiltroOscar.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroOscar.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const tipoElegido = this.getAttribute('data-tipo');
+        const tarjetas = document.querySelectorAll('#seccion-oscar-2020 .tarjeta-media');
 
         tarjetas.forEach(tarjeta => {
             tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
