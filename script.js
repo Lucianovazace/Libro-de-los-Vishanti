@@ -311,7 +311,49 @@ const listaMedia = [
     { titulo: "Little Women", categoria: "oscar-2020", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61TK-+geKPL.AC_UF894,1000_QL80.jpg" },
     { titulo: "Historia de un Matrimonio", categoria: "oscar-2020", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://cdn.posteritati.com/posters/000/000/060/561/marriage-story-md-web.jpg" },
     { titulo: "Once Upon a Time in Hollywood", categoria: "oscar-2020", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2019/06/IMG_9717.jpeg" },
-    { titulo: "The Irishman", categoria: "oscar-2020", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/750/322410.jpg" }
+    { titulo: "The Irishman", categoria: "oscar-2020", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/750/322410.jpg" },
+
+    // --- LEONARDO DI CAPRIO (con filtros por década) ---
+    { titulo: "Don't Look Up", categoria: "leonardo-dicaprio", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMmRkYWNkM2ItYWM5Ny00M2QxLWEwMmMtMzk3M2RhNTU1MWQxXkEyXkFqcGc@.V1.jpg" },
+    { titulo: "Killers of the Flower Moon", categoria: "leonardo-dicaprio", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/vhkmvm2tm4HBec28JET6nBU7b7x.jpg" },
+    { titulo: "One Battle After Another", categoria: "leonardo-dicaprio", subtipo: "2020", tipo: "Película", poster: "https://pics.filmaffinity.com/One_Battle_After_Another-992235034-large.jpg" },
+    { titulo: "Shutter Island", categoria: "leonardo-dicaprio", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/nrmXQ0zcZUL8jFLrakWc90IR8z9.jpg" },
+    { titulo: "Inception", categoria: "leonardo-dicaprio", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg" },
+    { titulo: "J. Edgar", categoria: "leonardo-dicaprio", subtipo: "2010", tipo: "Película", poster: "https://i.pinimg.com/736x/8b/3e/d5/8b3ed538e07de55b2e3dac40f6e0d044.jpg" },
+    { titulo: "Django Unchained", categoria: "leonardo-dicaprio", subtipo: "2010", tipo: "Película", poster: "https://i.pinimg.com/736x/6e/46/1f/6e461ff4f41269d0a537d3a52c0ce688.jpg" },
+    { titulo: "The Great Gatsby", categoria: "leonardo-dicaprio", subtipo: "2010", tipo: "Película", poster: "https://mir-s3-cdn-cf.behance.net/project_modules/hd_webp/a7350c9186433.560c9f1d670e4.jpg" },
+    { titulo: "The Wolf of Wall Street", categoria: "leonardo-dicaprio", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@.V1.jpg" },
+    { titulo: "The Revenant", categoria: "leonardo-dicaprio", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/ji3ecJphATlVgWNY0B0RVXZizdf.jpg" },
+    { titulo: "Once Upon a Time in Hollywood", categoria: "leonardo-dicaprio", subtipo: "2010", tipo: "Película", poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2019/06/IMG_9717.jpeg" },
+    { titulo: "The Beach", categoria: "leonardo-dicaprio", subtipo: "2000", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYTljNTg1YjktY2I3MS00MmQwLWJkYTAtYzcwZjRjM2ExNDJjXkEyXkFqcGc@.V1.jpg" },
+    { titulo: "Don's Plum", categoria: "leonardo-dicaprio", subtipo: "2000", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BY2U1NjdlNTEtNDAwZi00Y2IzLWFjZjItMDY5ZjI5NmM0Y2EyXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "Catch Me If You Can", categoria: "leonardo-dicaprio", subtipo: "2000", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTY5MzYzNjc5NV5BMl5BanBnXkFtZTYwNTUyNTc2.V1.jpg" },
+    { titulo: "Gangs of New York", categoria: "leonardo-dicaprio", subtipo: "2000", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTQ0MDA0MTUtYzkzMi00NDY3LThhZDEtNGM4MWUwYzMyZDk5XkEyXkFqcGc@.V1.jpg" },
+    { titulo: "The Aviator", categoria: "leonardo-dicaprio", subtipo: "2000", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNTE4ZmE3NjYtMzdiOS00NDNjLWFlNmUtZGRiMGUxOTZjNDE5XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "The Departed", categoria: "leonardo-dicaprio", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/f1JUHBq8JoXBz2NVNWeUpL2eVZs.jpg" },
+    { titulo: "Blood Diamond", categoria: "leonardo-dicaprio", subtipo: "2000", tipo: "Película", poster: "https://pics.filmaffinity.com/Blood_Diamond-241959500-large.jpg" },
+    { titulo: "Body of Lies", categoria: "leonardo-dicaprio", subtipo: "2000", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTgzOTY3MTM0OV5BMl5BanBnXkFtZTcwNjc5MTI5MQ@@.V1.jpg" },
+    { titulo: "Revolutionary Road", categoria: "leonardo-dicaprio", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/4GZzNO86SBP9PaOTfBfmD7iGNO5.jpg" },
+    { titulo: "Critters 3", categoria: "leonardo-dicaprio", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMDQ2YTRiYjMtZjkwNC00ZjhiLTliZTAtOWFmYjI3ZTZhZmViXkEyXkFqcGc@.V1.jpg" },
+    { titulo: "This Boy's Life", categoria: "leonardo-dicaprio", subtipo: "1990", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/pRMSZfen1Cv1eqwDbtxCBpBqxnU.jpg" },
+    { titulo: "What's Eating Gilbert Grape", categoria: "leonardo-dicaprio", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/I/51ZOvRZn7wL.jpg" },
+    { titulo: "The Quick and The Dead", categoria: "leonardo-dicaprio", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/I/51vpvHNYoiL.AC_UF894,1000_QL80.jpg" },
+    { titulo: "The Basketball Diaries", categoria: "leonardo-dicaprio", subtipo: "1990", tipo: "Película", poster: "https://i.ebayimg.com/images/g/0XkAAOSwyjBW4HAT/s-l1200.jpg" },
+    { titulo: "Total Eclipse", categoria: "leonardo-dicaprio", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BODIxZmZmOTAtODUwYi00YjJlLTllOTMtMGM1NzQ4ZTdjZGE2XkEyXkFqcGc@.V1.jpg" },
+    { titulo: "Romeo + Juliet", categoria: "leonardo-dicaprio", subtipo: "1990", tipo: "Película", poster: "https://i.pinimg.com/736x/11/23/56/112356531615c69a2eba59486715cd61.jpg" },
+    { titulo: "Marvin's Room", categoria: "leonardo-dicaprio", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTIzOTkzMzc3M15BMl5BanBnXkFtZTYwNjYyNDU5.V1.jpg" },
+    { titulo: "Titanic", categoria: "leonardo-dicaprio", subtipo: "1990", tipo: "Película", poster: "https://i.pinimg.com/474x/39/d1/01/39d101063c4e217323df91b0551175af.jpg" },
+    { titulo: "The Man in The Iron Mask", categoria: "leonardo-dicaprio", subtipo: "1990", tipo: "Película", poster: "https://lospradosdelaverdadgencana.wordpress.com/wp-content/uploads/2015/06/iron-mask-1998.jpg" },
+    { titulo: "Celebrity", categoria: "leonardo-dicaprio", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTIyZjBlZWMtMWYyNS00Yjc1LWE1NjktMGZlNzdjZTdjYWQwXkEyXkFqcGc@.V1.jpg" },
+
+    // --- MARVEL: ANIMACIÓN (sueltos, ver colecciones para Disney XD y Marvel 90's) ---
+    // "Avengers: Los Héroes Más Poderosos de la Tierra" ahora vive dentro de "Yost-Verse" (ver colecciones)
+    { titulo: "Spider-Man: Unlimited (Tierra-6513)", categoria: "marvel-animacion", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/hNdf1WmFil9IV7rabBe6PnAmYnI.jpg" },
+    { titulo: "Spider-Man: The New Animated Series (Tierra-554)", categoria: "marvel-animacion", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/9g1YPyKtpB0aNlgVb0N8YASKLZN.jpg" },
+    { titulo: "The Spectacular Spider-Man (Tierra-26496)", categoria: "marvel-animacion", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/dCNxOhXT7c4lqYuRpdM3m8s9XDp.jpg" },
+    { titulo: "The Super-Hero Squad Show (Tierra-91119)", categoria: "marvel-animacion", tipo: "Serie", poster: "https://m.media-amazon.com/images/M/MV5BMGQ0NjI0MmUtMTU2NC00NjM4LWI5ZDEtOGU1MzI5YTRhYjhhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "The Avengers: United They Stand (Tierra-730784)", categoria: "marvel-animacion", tipo: "Serie", poster: "https://m.media-amazon.com/images/M/MV5BNDcxZjdjZTgtNDI5Ni00MDliLWFhZTYtZmQwYzdlNzA4YzYzXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Tu Amistoso Vecino Spider-Man (Tierra-86445)", categoria: "marvel-animacion", tipo: "Serie", poster: "https://www.movieposters.com/cdn/shop/files/your-friendly-neighborhood-spider-man_kthsshkb_1024x1024.jpg?v=1762978827" }
 ];
 
 // ==========================================
@@ -418,6 +460,14 @@ const colecciones = [
         titulo: "Actores",
         categoria: "explorar",
         poster: "https://wallpapercat.com/w/full/e/c/a/126634-1152x2048-mobile-hd-la-la-land-wallpaper-photo.jpg",
+        esContenedor: true,
+        peliculas: []
+    },
+    {
+        id: "leonardo-dicaprio",
+        titulo: "Leonardo Di Caprio",
+        categoria: "actores",
+        poster: "https://i.pinimg.com/564x/e5/23/51/e52351dd0c0ab0da7c2d43d8bf4edc73.jpg",
         esContenedor: true,
         peliculas: []
     },
@@ -834,6 +884,34 @@ const colecciones = [
         ]
     },
     {
+        id: "celine-song",
+        titulo: "Celine Song",
+        categoria: "directores",
+        poster: "https://m.media-amazon.com/images/M/MV5BNTRiYzNlMDUtYzgwNC00OGM0LWI0NTktYTExN2EyYzVkZWNkXkEyXkFqcGc@.V1.jpg",
+        peliculas: [
+            { titulo: "Past Lives", poster: "https://i.pinimg.com/736x/2b/41/cb/2b41cb65373e7909972ec366c09afa54.jpg" },
+            { titulo: "Materialistas", poster: "https://images.justwatch.com/poster/329711270/s718/materialists.jpg" }
+        ]
+    },
+    {
+        id: "tarantino",
+        titulo: "Quentin Tarantino",
+        categoria: "directores",
+        poster: "https://m.media-amazon.com/images/M/MV5BODZhMWJlNjYtNDExNC00MTIzLTllM2ItOGQ2NGVjNDQ3MzkzXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg",
+        peliculas: [
+            { titulo: "Reservoir Dogs", poster: "https://i.pinimg.com/736x/df/4c/29/df4c29b0e7d20fae7ec3c7613e8cebd1.jpg" },
+            { titulo: "Pulp Fiction", poster: "https://static.posters.cz/image/1300/pulp-fiction-cover-i1288.jpg" },
+            { titulo: "Jackie Brown", poster: "https://i.pinimg.com/736x/35/29/64/35296495a0ba33742f49cde8510df37d.jpg" },
+            { titulo: "Kill Bill Vol. 1", poster: "https://m.media-amazon.com/images/I/81Az82YYZaS.jpg" },
+            { titulo: "Kill Bill Vol. 2", poster: "https://image.tmdb.org/t/p/original/2yhg0mZQMhDyvUQ4rG1IZ4oIA8L.jpg" },
+            { titulo: "Death Proof", poster: "https://postercity.com.ar/wp-content/uploads/2017/07/Death-Proof.jpg" },
+            { titulo: "Inglorious Basterds", poster: "https://m.media-amazon.com/images/M/MV5BODZhMWJlNjYtNDExNC00MTIzLTllM2ItOGQ2NGVjNDQ3MzkzXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+            { titulo: "Django Unchained", poster: "https://i.pinimg.com/736x/6e/46/1f/6e461ff4f41269d0a537d3a52c0ce688.jpg" },
+            { titulo: "The Hateful Eight", poster: "https://m.media-amazon.com/images/M/MV5BMjA1MTc1NTg5NV5BMl5BanBnXkFtZTgwOTM2MDEzNzE@.V1.jpg" },
+            { titulo: "Once Upon a Time in Hollywood", poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2019/06/IMG_9717.jpeg" }
+        ]
+    },
+    {
         id: "christopher-nolan",
         titulo: "Christopher Nolan",
         categoria: "directores",
@@ -1016,6 +1094,31 @@ const colecciones = [
             { titulo: "Guardianes de La Galaxia", poster: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p12037541_b_v8_ay.jpg" },
             { titulo: "Iron Man y Hulk: Héroes Unidos", poster: "https://m.media-amazon.com/images/M/MV5BNmQ4NDY1YWEtNTdmZi00ZmQ5LTk3MzYtYzBkNzhmNTM2Yzk5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
             { titulo: "Iron Man y Capitán América: Héroes Unidos", poster: "https://m.media-amazon.com/images/M/MV5BZjkxMTM1YmYtZDRkNC00YWNlLWFiYjAtZGIyMmQyYjI0ZjFjXkEyXkFqcGc@._V1_.jpg" }
+        ]
+    },
+    {
+        id: "marvel-90s",
+        titulo: "Marvel 90's (Tierra-92131)",
+        categoria: "marvel-animacion",
+        poster: "https://w0.peakpx.com/wallpaper/273/38/HD-wallpaper-x-men-beast-bishop-cyclops-gambit-marvel-psylocke-rogue-storm-wolverine-x-men.jpg",
+        peliculas: [
+            { titulo: "X-Men '92", poster: "https://image.tmdb.org/t/p/original/2OFwsFhAobczgJWnVdwd9oZAF2N.jpg" },
+            { titulo: "Spider-Man: The Animated Series", poster: "https://m.media-amazon.com/images/M/MV5BYWRkN2M1NmQtZjhjMi00ODFjLTk2ODctYWJiOWNkNjg1OGY4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+            { titulo: "X-Men '97", poster: "https://m.media-amazon.com/images/M/MV5BZDE0Zjk5OGYtZTk3OC00ZDZhLWE2NGQtNzc3NmJhNjljYzY5XkEyXkFqcGc@._V1_.jpg" },
+            { titulo: "Iron Man (1994)", poster: "https://m.media-amazon.com/images/M/MV5BY2Q1M2YyYzctNGZlZi00OTM3LTkxNTEtMGU0MTU1OWJiNjg5XkEyXkFqcGc@._V1_.jpg" },
+            { titulo: "Fantastic Four (1994)", poster: "https://m.media-amazon.com/images/M/MV5BNzM1MTM1MTMtMmQ2Zi00ZTM1LTk1MzctNTY1NGNiNzZiNmUyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+            { titulo: "The Incredible Hulk (1996)", poster: "https://image.tmdb.org/t/p/original/eXyZvkbrTdcM6CtAmQU7SqDRZdr.jpg" }
+        ]
+    },
+    {
+        id: "yost-verse",
+        titulo: "Yost-Verse (Tierra-8096)",
+        categoria: "marvel-animacion",
+        poster: "https://image.tmdb.org/t/p/original/nH1ROb4ujGRuDItJyn5UrYY5uOB.jpg",
+        peliculas: [
+            { titulo: "Avengers: Los Héroes Más Poderosos de la Tierra", poster: "https://image.tmdb.org/t/p/original/nH1ROb4ujGRuDItJyn5UrYY5uOB.jpg" },
+            { titulo: "Wolverine and The X-Men", poster: "https://m.media-amazon.com/images/M/MV5BNzk4Nzg3NjMyMV5BMl5BanBnXkFtZTcwMjk3MjU0Mg@@._V1_FMjpg_UX1000_.jpg" },
+            { titulo: "Thor: Historias de Asgard", poster: "https://m.media-amazon.com/images/M/MV5BMTcxOTU4NzIxMV5BMl5BanBnXkFtZTcwNzE3NjAxNQ@@._V1_FMjpg_UX1000_.jpg" }
         ]
     },
     {
@@ -1414,6 +1517,11 @@ function categoriaSubtipoCompleta(vistos, categoria, subtipo) {
     return titulos.length > 0 && todosVistos(vistos, titulos);
 }
 
+// Helper: ¿están completas TODAS las colecciones indicadas? (ej: Harry Potter + Animales Fantásticos)
+function coleccionesCompletas(vistos, coleccionIds) {
+    return coleccionIds.every(id => coleccionCompleta(vistos, id));
+}
+
 const logrosDisponibles = [
     {
         id: "poder-del-sol",
@@ -1608,6 +1716,62 @@ const logrosDisponibles = [
         descripcion: "Mirá el 100% de The Flash",
         icono: "⚡",
         condicion: (vistos) => coleccionCompleta(vistos, "the-flash")
+    },
+    {
+        id: "soy-inevitable",
+        nombre: "Soy Inevitable",
+        descripcion: "Completá La Saga del Infinito",
+        icono: "🧤",
+        condicion: (vistos) => categoriaCompleta(vistos, "mcu-infinito")
+    },
+    {
+        id: "gran-fan-de-la-justicia",
+        nombre: "Soy un gran fan de la justicia",
+        descripcion: "Terminá el DCEU Principal",
+        icono: "🛡️",
+        condicion: (vistos) => categoriaCompleta(vistos, "dceu-principal")
+    },
+    {
+        id: "tu-sangras",
+        nombre: "¿Tú sangras?",
+        descripcion: "Completá el DCEU de Zack Snyder",
+        icono: "🩸",
+        condicion: (vistos) => categoriaCompleta(vistos, "dceu-snyder")
+    },
+    {
+        id: "chica-de-acero",
+        nombre: "Una Chica de Acero",
+        descripcion: "Alcanzá el 70% de Supergirl (Arrowverse)",
+        icono: "🦸‍♀️",
+        condicion: (vistos) => porcentajeColeccionVisto(vistos, "supergirl") >= 70
+    },
+    {
+        id: "eres-un-mago-harry",
+        nombre: "Eres un mago, Harry",
+        descripcion: "Completá al 100% todas las películas de Harry Potter",
+        icono: "⚡",
+        condicion: (vistos) => coleccionCompleta(vistos, "harry-potter")
+    },
+    {
+        id: "almas-raras",
+        nombre: "Almas Raras",
+        descripcion: "Completá Harry Potter + Animales Fantásticos",
+        icono: "🐍",
+        condicion: (vistos) => coleccionesCompletas(vistos, ["harry-potter", "animales-fantasticos"])
+    },
+    {
+        id: "rey-del-mundo",
+        nombre: "Rey del Mundo",
+        descripcion: "Superá el 70% de las películas de Leonardo Di Caprio",
+        icono: "🚢",
+        condicion: (vistos) => porcentajeCategoriaVisto(vistos, "leonardo-dicaprio") > 70
+    },
+    {
+        id: "muy-divertido-janet",
+        nombre: "Es muy divertido, Janet",
+        descripcion: "Superá el 70% de las películas de Tarantino",
+        icono: "🩸",
+        condicion: (vistos) => porcentajeColeccionVisto(vistos, "tarantino") > 70
     }
 ];
 
@@ -1791,7 +1955,9 @@ function renderizarContenido() {
         "game-of-thrones": "seccion-game-of-thrones",
         "assassins-creed": "seccion-assassins-creed",
         "disney-animation": "seccion-disney-animation",
-        "oscar-2020": "seccion-oscar-2020"
+        "oscar-2020": "seccion-oscar-2020",
+        "leonardo-dicaprio": "seccion-leonardo-dicaprio",
+        "marvel-animacion": "seccion-marvel-animacion"
     };
 
     listaMedia.forEach(item => {
@@ -2420,6 +2586,13 @@ if(btnVolverActores) {
     });
 }
 
+const btnVolverLeonardoDicaprio = document.getElementById('btn-volver-leonardo-dicaprio');
+if(btnVolverLeonardoDicaprio) {
+    btnVolverLeonardoDicaprio.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-actores'));
+    });
+}
+
 const btnVolverTimotheeChalamet = document.getElementById('btn-volver-timothee-chalamet');
 if(btnVolverTimotheeChalamet) {
     btnVolverTimotheeChalamet.addEventListener('click', () => {
@@ -2676,6 +2849,20 @@ if(btnVolverChloeZhao) {
     });
 }
 
+const btnVolverCelineSong = document.getElementById('btn-volver-celine-song');
+if(btnVolverCelineSong) {
+    btnVolverCelineSong.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-directores'));
+    });
+}
+
+const btnVolverTarantino = document.getElementById('btn-volver-tarantino');
+if(btnVolverTarantino) {
+    btnVolverTarantino.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-directores'));
+    });
+}
+
 const btnVolverArkhamverse = document.getElementById('btn-volver-arkhamverse');
 if(btnVolverArkhamverse) {
     btnVolverArkhamverse.addEventListener('click', () => {
@@ -2728,6 +2915,20 @@ if(btnVolverInsomniac) {
 const btnVolverMarvelDisneyxd = document.getElementById('btn-volver-marvel-disneyxd');
 if(btnVolverMarvelDisneyxd) {
     btnVolverMarvelDisneyxd.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-marvel-animacion'));
+    });
+}
+
+const btnVolverMarvel90s = document.getElementById('btn-volver-marvel-90s');
+if(btnVolverMarvel90s) {
+    btnVolverMarvel90s.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-marvel-animacion'));
+    });
+}
+
+const btnVolverYostVerse = document.getElementById('btn-volver-yost-verse');
+if(btnVolverYostVerse) {
+    btnVolverYostVerse.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-marvel-animacion'));
     });
 }
@@ -2811,6 +3012,23 @@ botonesFiltroOscar.forEach(boton => {
         this.classList.add('activo');
         const tipoElegido = this.getAttribute('data-tipo');
         const tarjetas = document.querySelectorAll('#seccion-oscar-2020 .tarjeta-media');
+
+        tarjetas.forEach(tarjeta => {
+            tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
+        });
+    });
+});
+
+// ==========================================
+// FILTROS "LEONARDO DI CAPRIO" (por década)
+// ==========================================
+const botonesFiltroDicaprio = document.querySelectorAll('.btn-filtro-dicaprio');
+botonesFiltroDicaprio.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroDicaprio.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const tipoElegido = this.getAttribute('data-tipo');
+        const tarjetas = document.querySelectorAll('#seccion-leonardo-dicaprio .tarjeta-media');
 
         tarjetas.forEach(tarjeta => {
             tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
