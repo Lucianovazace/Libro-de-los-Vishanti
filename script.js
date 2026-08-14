@@ -310,6 +310,32 @@ const listaMedia = [
     { titulo: "Moana: Un Mar de Aventuras", categoria: "disney-animation", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81rjqvHFtkL.AC_UF894,1000_QL80.jpg" },
     { titulo: "Wifi Ralph", categoria: "disney-animation", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMjQ5NDQyMDc2OF5BMl5BanBnXkFtZTgwMjMwNDM5NDM@.V1.jpg" },
     { titulo: "Frozen II", categoria: "disney-animation", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/zEYIA5Opq9zFowZofeWJRmxVI3J.jpg" },
+    { titulo: "Dinosaurio", categoria: "disney-animation", subtipo: "2000", tipo: "Película", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVY8nt015k4A0LgBmSq35yfEN_R9sg-btsSN34S5TNobwHfSKSQtzx92KC&s=10" },
+    { titulo: "Las Locuras del Emperador", categoria: "disney-animation", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/wwbgkXQBEKtnyIJapk6gUgWkVw8.jpg" },
+    { titulo: "Atlantis: El Imperio Perdido", categoria: "disney-animation", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/8fUEFPUTF7kBMuKPiSQHxPvd8EZ.jpg" },
+    { titulo: "Lilo & Stitch", categoria: "disney-animation", subtipo: "2000", tipo: "Película", poster: "https://static.posters.cz/image/750/120005.jpg" },
+    { titulo: "El Planeta del Tesoro", categoria: "disney-animation", subtipo: "2000", tipo: "Película", poster: "https://i.pinimg.com/736x/09/85/4d/09854d53afdd694486bb6bd16f4cf9fe.jpg" },
+    { titulo: "Tierra de Osos", categoria: "disney-animation", subtipo: "2000", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/328973.jpg" },
+    { titulo: "Vacas Vaqueras", categoria: "disney-animation", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/p6xPtCH7Bph1PStv9AjTgikspEA.jpg" },
+    { titulo: "Chicken Little", categoria: "disney-animation", subtipo: "2000", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/ChickenLittle_2005_teaser_original_film_art_5000x.jpg?v=1585744983" },
+    { titulo: "La Familia del Futuro", categoria: "disney-animation", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/naya0zF4kT401Sx15AtwB9vpcJr.jpg" },
+    { titulo: "Bolt: Un Perro Fuera de Serie", categoria: "disney-animation", subtipo: "2000", tipo: "Película", poster: "https://i.blogs.es/9fb446/bolt_ver2/450_1000.jpg" },
+    { titulo: "La Princesa y el Sapo", categoria: "disney-animation", subtipo: "2000", tipo: "Película", poster: "https://i.pinimg.com/736x/15/ea/11/15ea11588db2f9e23aac9f747b63a19f.jpg" },
+    { titulo: "Bernardo y Bianca en Cangurolandia", categoria: "disney-animation", subtipo: "1990", tipo: "Película", poster: "https://i.pinimg.com/736x/48/ac/04/48ac04581d24fc86c0439c2105b817dd.jpg" },
+    { titulo: "La Bella y La Bestia", categoria: "disney-animation", subtipo: "1990", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/7oCAPOphDKpIaxTrnukmDrZ8XKD.jpg" },
+    { titulo: "Aladdín", categoria: "disney-animation", subtipo: "1990", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/aladdin_1992_lamp_style_original_film_art_f_1200x.jpg?v=1562976486" },
+    { titulo: "El Rey León", categoria: "disney-animation", subtipo: "1990", tipo: "Película", poster: "https://i.pinimg.com/736x/f6/77/40/f6774073f35f5a2749fba406a4e8d99d.jpg" },
+    { titulo: "Pocahontas", categoria: "disney-animation", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71fk6ri1K+L._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "El Jorobado de Notre Dame", categoria: "disney-animation", subtipo: "1990", tipo: "Película", poster: "https://i.pinimg.com/736x/af/07/35/af0735c9baa799f12e311a82d2192b01.jpg" },
+    { titulo: "Hércules", categoria: "disney-animation", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71NtQTeIYfL._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Mulán", categoria: "disney-animation", subtipo: "1990", tipo: "Película", poster: "https://i.pinimg.com/736x/36/1f/ca/361fca716b79305481eeff561c14ba14.jpg" },
+    { titulo: "Tarzán", categoria: "disney-animation", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81fdtHUyAkL.jpg" },
+    { titulo: "Fantasía 2000", categoria: "disney-animation", subtipo: "1990", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/fantasia_2000_1999_advance_original_film_art_5000x.jpg?v=1603470183" },
+    { titulo: "El Zorro y el Sabueso", categoria: "disney-animation", subtipo: "1980", tipo: "Película", poster: "https://mir-s3-cdn-cf.behance.net/project_modules/hd/eeb34d36199575.57137fdca5c2c.png" },
+    { titulo: "El Caldero Mágico", categoria: "disney-animation", subtipo: "1980", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BODJkNGM2ZTUtODYxMC00YWJkLTg2OTMtYWVjNGRlYjg3NDljXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Policías y Ratones", categoria: "disney-animation", subtipo: "1980", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/6hZAOLb9HdPfqqvPpm5GD2BN7fT.jpg" },
+    { titulo: "Oliver y su Pandilla", categoria: "disney-animation", subtipo: "1980", tipo: "Película", poster: "https://vegalleries.com/sites/default/files/art/product_images/manual/2024/jun22249.jpg" },
+    { titulo: "La Sirenita", categoria: "disney-animation", subtipo: "1980", tipo: "Película", poster: "https://cdn.posteritati.com/posters/000/000/009/543/the-little-mermaid-md-web.jpg" },
 
     // --- RYAN GOSLING (con filtros por década) ---
     { titulo: "The Gray Man", categoria: "ryan-gosling", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZmFhZTNlNzctZGQzZi00MTA3LThiNjMtYWQzNjUzMjNjZjA3XkEyXkFqcGc@.V1.jpg" },
@@ -490,6 +516,8 @@ const colecciones = [
         categoria: "actores",
         poster: "https://i.pinimg.com/564x/e5/23/51/e52351dd0c0ab0da7c2d43d8bf4edc73.jpg",
         esContenedor: true,
+        etiqueta: "Actor",
+        progresoCategoria: "leonardo-dicaprio",
         peliculas: []
     },
     {
@@ -498,6 +526,8 @@ const colecciones = [
         categoria: "actores",
         poster: "https://wallpapercave.com/wp/wp13304845.jpg",
         esContenedor: true,
+        etiqueta: "Actor",
+        progresoCategoria: "ryan-gosling",
         peliculas: []
     },
     {
@@ -505,6 +535,7 @@ const colecciones = [
         titulo: "Timothée Chalamet",
         categoria: "actores",
         poster: "https://w0.peakpx.com/wallpaper/349/641/HD-wallpaper-timothee-chalamet-tim-timmy.jpg",
+        etiqueta: "Actor",
         peliculas: [
             { titulo: "Men, Women and Children", poster: "https://i0.wp.com/www.heyuguys.com/images/2014/11/Men-Women-and-Children-Poster.jpg?fit=961%2C1500&ssl=1" },
             { titulo: "Interstellar", poster: "https://m.media-amazon.com/images/I/91obuWzA3XL.jpg" },
@@ -531,6 +562,7 @@ const colecciones = [
         titulo: "Margot Robbie",
         categoria: "actores",
         poster: "https://i.pinimg.com/736x/e4/36/c0/e436c08cbe530e490c7102a100fcae06.jpg",
+        etiqueta: "Actriz",
         peliculas: [
             { titulo: "Vigilante", poster: "https://m.media-amazon.com/images/M/MV5BZjNjYjI2OGUtOTk0Zi00ZDlmLTgwZjYtOGY2YTUyZGM3ZDc5XkEyXkFqcGc@.V1.jpg" },
             { titulo: "I.C.U", poster: "https://m.media-amazon.com/images/M/MV5BYWMwMDg2YTQtODU5ZS00YzJmLWE2MWQtMTA0OWExNThhNmJiXkEyXkFqcGc@.V1.jpg" },
@@ -607,6 +639,7 @@ const colecciones = [
         categoria: "oscar-anios",
         poster: "https://m.media-amazon.com/images/M/MV5BYjBiYzg3NmYtODgzNS00Y2I4LTlmMGQtZmQ5ODA2ZTNmOTAyXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg",
         esContenedor: true,
+        progresoCategoria: "oscar-2020",
         peliculas: []
     },
     {
@@ -707,6 +740,7 @@ const colecciones = [
         categoria: "estudios",
         poster: "https://wallpapercat.com/w/full/1/1/1/868753-1920x2716-iphone-hd-disney-wallpaper.jpg",
         esContenedor: true,
+        progresoCategoria: "disney-animation",
         peliculas: []
     },
     {
@@ -1858,12 +1892,20 @@ function renderizarColecciones() {
         let htmlColeccion;
 
         if (col.esContenedor) {
-            // Ficha "carpeta": solo poster, título y botón Abrir (sin barra ni Marcar Visto)
+            // Ficha "carpeta": poster, título y botón Abrir. Si tiene contenido
+            // propio repartido en listaMedia (progresoCategoria), suma su barra
+            const barraProgreso = col.progresoCategoria ? `
+                    <div class="barra-progreso-container">
+                        <div class="barra-progreso-fill" id="barra-${col.id}-fill"></div>
+                    </div>
+                    <p class="barra-progreso-texto" id="barra-${col.id}-texto">0% completado</p>
+            ` : '';
             htmlColeccion = `
                 <div class="tarjeta-media tarjeta-coleccion" data-coleccion="${col.id}">
                     <img src="${col.poster}" alt="${col.titulo}">
                     <h3>${col.titulo}</h3>
-                    <p>Categoría</p>
+                    <p>${col.etiqueta || 'Categoría'}</p>
+                    ${barraProgreso}
                     <div class="botones-coleccion">
                         <button class="btn-abrir-coleccion" data-coleccion="${col.id}">Abrir 📂</button>
                     </div>
@@ -1871,7 +1913,7 @@ function renderizarColecciones() {
             `;
         } else {
             const textoPendiente = col.esVideojuego ? 'Marcar Jugado' : 'Marcar Visto';
-            const etiquetaTipo = col.esVideojuego ? 'Colección de Videojuegos' : 'Colección Animada';
+            const etiquetaTipo = col.etiqueta || (col.esVideojuego ? 'Colección de Videojuegos' : 'Colección Animada');
             htmlColeccion = `
                 <div class="tarjeta-media tarjeta-coleccion" data-coleccion="${col.id}" data-accion="${col.esVideojuego ? 'jugado' : 'visto'}" data-tipo="${col.tipoArrow || ''}" data-crono="${col.crono || ''}" data-orden="${col.ordenSalida || ''}" data-tierra="${col.tierra || ''}">
                     <img src="${col.poster}" alt="${col.titulo}">
@@ -1953,6 +1995,19 @@ function abrirColeccion(colId) {
         const btnSalida = document.querySelector('.btn-filtro-got[data-tipo="salida"]');
         if (btnSalida) btnSalida.click();
     }
+
+    // Estas secciones usan filtros (década/categoría) y necesitan forzar el
+    // filtro por defecto al abrirlas, o se ven todos los ítems mezclados
+    const filtroPorDefecto = {
+        'disney-animation': '.btn-filtro-disney[data-tipo="2020"]',
+        'oscar-2020': '.btn-filtro-oscar[data-tipo="mejor-pelicula"]',
+        'leonardo-dicaprio': '.btn-filtro-dicaprio[data-tipo="2020"]',
+        'ryan-gosling': '.btn-filtro-gosling[data-tipo="2020"]'
+    };
+    if (filtroPorDefecto[colId]) {
+        const btnDefecto = document.querySelector(filtroPorDefecto[colId]);
+        if (btnDefecto) btnDefecto.click();
+    }
 }
 
 // Calcula y pinta el % de películas vistas dentro de una colección
@@ -1969,8 +2024,29 @@ function actualizarProgresoColeccion(colId) {
     if (texto) texto.textContent = porcentaje + '% completado (' + vistas + '/' + total + ')';
 }
 
+// Igual que arriba, pero para fichas "carpeta" cuyo contenido no vive en
+// col.peliculas sino repartido en listaMedia bajo una misma categoría
+// (ej: Leonardo Di Caprio, Disney Animation)
+function actualizarProgresoCategoria(colId, categoria) {
+    const fill = document.getElementById(`barra-${colId}-fill`);
+    const texto = document.getElementById(`barra-${colId}-texto`);
+    if (!fill || !texto) return;
+    const titulos = listaMedia.filter(i => i.categoria === categoria);
+    const total = titulos.length;
+    const vistas = titulos.filter(i => titulosVistosGuardados.has(i.titulo)).length;
+    const porcentaje = total > 0 ? Math.round((vistas / total) * 100) : 0;
+    fill.style.width = porcentaje + '%';
+    texto.textContent = porcentaje + '% completado (' + vistas + '/' + total + ')';
+}
+
 function actualizarTodasLasColecciones() {
-    colecciones.forEach(col => actualizarProgresoColeccion(col.id));
+    colecciones.forEach(col => {
+        if (col.progresoCategoria) {
+            actualizarProgresoCategoria(col.id, col.progresoCategoria);
+        } else if (!col.esContenedor) {
+            actualizarProgresoColeccion(col.id);
+        }
+    });
 }
 
 // ==========================================
@@ -2065,6 +2141,7 @@ document.addEventListener("DOMContentLoaded", () => {
     renderizarContenido();
     renderizarColecciones();
     ordenarMarvelAnimacionPorTierra();
+    actualizarTodasLasColecciones();
 });
 
 // ==========================================
