@@ -301,6 +301,21 @@ const listaMedia = [
     { titulo: "Wish", categoria: "disney-animation", subtipo: "2020", tipo: "Película", poster: "https://lumiere-a.akamaihd.net/v1/images/screenshot_2023-04-27_at_14_930d2ffc.png?region=0,0,986,1458" },
     { titulo: "Moana 2", categoria: "disney-animation", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/aLVkiINlIeCkcZIzb7XHzPYgO6L.jpg" },
     { titulo: "Zootopia 2", categoria: "disney-animation", subtipo: "2020", tipo: "Película", poster: "https://lumiere-a.akamaihd.net/v1/images/image002_ad18240b.jpeg?region=0,0,770,1100" },
+    { titulo: "Enredados", categoria: "disney-animation", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71b8JiX-tWL.AC_UF894,1000_QL80.jpg" },
+    { titulo: "Winnie the Pooh", categoria: "disney-animation", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BODg2MGEyODMtNDJhNy00ZmNlLWEzYzMtYzc0NzM1OTQxNTgzXkEyXkFqcGc@.V1.jpg" },
+    { titulo: "Ralph el Demoledor", categoria: "disney-animation", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNzMxNTExOTkyMF5BMl5BanBnXkFtZTcwMzEyNDc0OA@@.V1.jpg" },
+    { titulo: "Frozen: Una Aventura Congelada", categoria: "disney-animation", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81UoBlyJ2zL.AC_UF894,1000_QL80.jpg" },
+    { titulo: "Grandes Héroes", categoria: "disney-animation", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61DJ8d3PtcL.AC_UF894,1000_QL80.jpg" },
+    { titulo: "Zootopia", categoria: "disney-animation", subtipo: "2010", tipo: "Película", poster: "https://cinefreaksargentina.wordpress.com/wp-content/uploads/2015/09/af-zoot.jpg" },
+    { titulo: "Moana: Un Mar de Aventuras", categoria: "disney-animation", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81rjqvHFtkL.AC_UF894,1000_QL80.jpg" },
+    { titulo: "Wifi Ralph", categoria: "disney-animation", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMjQ5NDQyMDc2OF5BMl5BanBnXkFtZTgwMjMwNDM5NDM@.V1.jpg" },
+    { titulo: "Frozen II", categoria: "disney-animation", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/zEYIA5Opq9zFowZofeWJRmxVI3J.jpg" },
+
+    // --- RYAN GOSLING (con filtros por década) ---
+    { titulo: "The Gray Man", categoria: "ryan-gosling", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZmFhZTNlNzctZGQzZi00MTA3LThiNjMtYWQzNjUzMjNjZjA3XkEyXkFqcGc@.V1.jpg" },
+    { titulo: "Barbie", categoria: "ryan-gosling", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/dekMkQf0kqAmztUca9lX5e5Pjbp.jpg" },
+    { titulo: "The Fall Guy", categoria: "ryan-gosling", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/e7olqFmzcIX5c23kX4zSmLPJi8c.jpg" },
+    { titulo: "Project Hail Mary", categoria: "ryan-gosling", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOGU2OGRmMWYtZGExZS00NmQ1LWI3MmMtMTY5MzEyYTI0ZjNiXkEyXkFqcGc@.V1.jpg" },
 
     // --- OSCAR 2020 (con filtros por categoría) ---
     { titulo: "Parasite", categoria: "oscar-2020", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg" },
@@ -327,8 +342,8 @@ const listaMedia = [
     { titulo: "Once Upon a Time in Hollywood", categoria: "leonardo-dicaprio", subtipo: "2010", tipo: "Película", poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2019/06/IMG_9717.jpeg" },
     { titulo: "The Beach", categoria: "leonardo-dicaprio", subtipo: "2000", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYTljNTg1YjktY2I3MS00MmQwLWJkYTAtYzcwZjRjM2ExNDJjXkEyXkFqcGc@.V1.jpg" },
     { titulo: "Don's Plum", categoria: "leonardo-dicaprio", subtipo: "2000", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BY2U1NjdlNTEtNDAwZi00Y2IzLWFjZjItMDY5ZjI5NmM0Y2EyXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
-    { titulo: "Catch Me If You Can", categoria: "leonardo-dicaprio", subtipo: "2000", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTY5MzYzNjc5NV5BMl5BanBnXkFtZTYwNTUyNTc2.V1.jpg" },
     { titulo: "Gangs of New York", categoria: "leonardo-dicaprio", subtipo: "2000", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTQ0MDA0MTUtYzkzMi00NDY3LThhZDEtNGM4MWUwYzMyZDk5XkEyXkFqcGc@.V1.jpg" },
+    { titulo: "Catch Me If You Can", categoria: "leonardo-dicaprio", subtipo: "2000", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTY5MzYzNjc5NV5BMl5BanBnXkFtZTYwNTUyNTc2.V1.jpg" },
     { titulo: "The Aviator", categoria: "leonardo-dicaprio", subtipo: "2000", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNTE4ZmE3NjYtMzdiOS00NDNjLWFlNmUtZGRiMGUxOTZjNDE5XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
     { titulo: "The Departed", categoria: "leonardo-dicaprio", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/f1JUHBq8JoXBz2NVNWeUpL2eVZs.jpg" },
     { titulo: "Blood Diamond", categoria: "leonardo-dicaprio", subtipo: "2000", tipo: "Película", poster: "https://pics.filmaffinity.com/Blood_Diamond-241959500-large.jpg" },
@@ -348,12 +363,12 @@ const listaMedia = [
 
     // --- MARVEL: ANIMACIÓN (sueltos, ver colecciones para Disney XD y Marvel 90's) ---
     // "Avengers: Los Héroes Más Poderosos de la Tierra" ahora vive dentro de "Yost-Verse" (ver colecciones)
-    { titulo: "Spider-Man: Unlimited (Tierra-6513)", categoria: "marvel-animacion", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/hNdf1WmFil9IV7rabBe6PnAmYnI.jpg" },
-    { titulo: "Spider-Man: The New Animated Series (Tierra-554)", categoria: "marvel-animacion", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/9g1YPyKtpB0aNlgVb0N8YASKLZN.jpg" },
-    { titulo: "The Spectacular Spider-Man (Tierra-26496)", categoria: "marvel-animacion", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/dCNxOhXT7c4lqYuRpdM3m8s9XDp.jpg" },
-    { titulo: "The Super-Hero Squad Show (Tierra-91119)", categoria: "marvel-animacion", tipo: "Serie", poster: "https://m.media-amazon.com/images/M/MV5BMGQ0NjI0MmUtMTU2NC00NjM4LWI5ZDEtOGU1MzI5YTRhYjhhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
-    { titulo: "The Avengers: United They Stand (Tierra-730784)", categoria: "marvel-animacion", tipo: "Serie", poster: "https://m.media-amazon.com/images/M/MV5BNDcxZjdjZTgtNDI5Ni00MDliLWFhZTYtZmQwYzdlNzA4YzYzXkEyXkFqcGc@._V1_.jpg" },
-    { titulo: "Tu Amistoso Vecino Spider-Man (Tierra-86445)", categoria: "marvel-animacion", tipo: "Serie", poster: "https://www.movieposters.com/cdn/shop/files/your-friendly-neighborhood-spider-man_kthsshkb_1024x1024.jpg?v=1762978827" }
+    { titulo: "Spider-Man: Unlimited (Tierra-6513)", categoria: "marvel-animacion", tipo: "Serie", tierra: 6513, poster: "https://image.tmdb.org/t/p/original/hNdf1WmFil9IV7rabBe6PnAmYnI.jpg" },
+    { titulo: "Spider-Man: The New Animated Series (Tierra-554)", categoria: "marvel-animacion", tipo: "Serie", tierra: 554, poster: "https://image.tmdb.org/t/p/original/9g1YPyKtpB0aNlgVb0N8YASKLZN.jpg" },
+    { titulo: "The Spectacular Spider-Man (Tierra-26496)", categoria: "marvel-animacion", tipo: "Serie", tierra: 26496, poster: "https://image.tmdb.org/t/p/original/dCNxOhXT7c4lqYuRpdM3m8s9XDp.jpg" },
+    { titulo: "The Super-Hero Squad Show (Tierra-91119)", categoria: "marvel-animacion", tipo: "Serie", tierra: 91119, poster: "https://m.media-amazon.com/images/M/MV5BMGQ0NjI0MmUtMTU2NC00NjM4LWI5ZDEtOGU1MzI5YTRhYjhhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "The Avengers: United They Stand (Tierra-730784)", categoria: "marvel-animacion", tipo: "Serie", tierra: 730784, poster: "https://m.media-amazon.com/images/M/MV5BNDcxZjdjZTgtNDI5Ni00MDliLWFhZTYtZmQwYzdlNzA4YzYzXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Tu Amistoso Vecino Spider-Man (Tierra-86445)", categoria: "marvel-animacion", tipo: "Serie", tierra: 86445, poster: "https://www.movieposters.com/cdn/shop/files/your-friendly-neighborhood-spider-man_kthsshkb_1024x1024.jpg?v=1762978827" }
 ];
 
 // ==========================================
@@ -363,6 +378,7 @@ const colecciones = [
     {
         id: "arrow",
         titulo: "Arrow",
+        esSerie: true,
         categoria: "arrowverse",
         poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwxzfrMREXF6kfHXLmAJnhvUsAwyw6jgU_8P6tQure44F6W1hTMtwfFFsV&s=10",
         tipoArrow: "principal",
@@ -381,6 +397,7 @@ const colecciones = [
     {
         id: "the-flash",
         titulo: "The Flash",
+        esSerie: true,
         categoria: "arrowverse",
         poster: "https://hips.hearstapps.com/digitalspyuk.cdnds.net/14/35/ustv-the-flash-poster.jpg",
         tipoArrow: "principal",
@@ -400,6 +417,7 @@ const colecciones = [
     {
         id: "supergirl",
         titulo: "Supergirl",
+        esSerie: true,
         categoria: "arrowverse",
         poster: "https://static.wikia.nocookie.net/supergirl/images/b/b6/Temporada_1_poster.png/revision/latest/scale-to-width-down/1200?cb=20160210130437&path-prefix=es",
         tipoArrow: "principal",
@@ -416,6 +434,7 @@ const colecciones = [
     {
         id: "batwoman",
         titulo: "Batwoman",
+        esSerie: true,
         categoria: "arrowverse",
         poster: "https://www.scifinow.co.uk/wp-content/uploads/2019/07/batwoman_xxlg.jpg",
         tipoArrow: "principal",
@@ -429,6 +448,7 @@ const colecciones = [
     {
         id: "legends-of-tomorrow",
         titulo: "DC's Legends of Tomorrow",
+        esSerie: true,
         categoria: "arrowverse",
         poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR16L1B69PNDrGPa1F6IAudcuDxCRiJn4hBi61UsY9rIn5p5hKahadZ0TU&s=10",
         tipoArrow: "principal",
@@ -444,6 +464,7 @@ const colecciones = [
     {
         id: "black-lightning",
         titulo: "Black Lightning",
+        esSerie: true,
         categoria: "arrowverse",
         poster: "https://i.pinimg.com/564x/d5/44/a4/d544a4236f757cea8e84db91ffb92fff.jpg",
         tipoArrow: "principal",
@@ -468,6 +489,14 @@ const colecciones = [
         titulo: "Leonardo Di Caprio",
         categoria: "actores",
         poster: "https://i.pinimg.com/564x/e5/23/51/e52351dd0c0ab0da7c2d43d8bf4edc73.jpg",
+        esContenedor: true,
+        peliculas: []
+    },
+    {
+        id: "ryan-gosling",
+        titulo: "Ryan Gosling",
+        categoria: "actores",
+        poster: "https://wallpapercave.com/wp/wp13304845.jpg",
         esContenedor: true,
         peliculas: []
     },
@@ -830,6 +859,7 @@ const colecciones = [
     {
         id: "got-serie",
         titulo: "Game of Thrones",
+        esSerie: true,
         categoria: "game-of-thrones",
         poster: "https://static.posters.cz/image/1300/135455.jpg",
         ordenSalida: 1,
@@ -848,6 +878,7 @@ const colecciones = [
     {
         id: "house-of-the-dragon",
         titulo: "House of the Dragon",
+        esSerie: true,
         categoria: "game-of-thrones",
         poster: "https://i.pinimg.com/736x/4d/b6/39/4db639e88587f29b4b3207d12e90ebfa.jpg",
         ordenSalida: 2,
@@ -1085,6 +1116,8 @@ const colecciones = [
     {
         id: "marvel-disneyxd",
         titulo: "Universo Marvel de Disney XD (Tierra-12041)",
+        esSerie: true,
+        tierra: 12041,
         categoria: "marvel-animacion",
         poster: "https://image.tmdb.org/t/p/original/eXtlDP6kgUyYw0G2L9AxSWUp14Q.jpg",
         peliculas: [
@@ -1099,6 +1132,8 @@ const colecciones = [
     {
         id: "marvel-90s",
         titulo: "Marvel 90's (Tierra-92131)",
+        esSerie: true,
+        tierra: 92131,
         categoria: "marvel-animacion",
         poster: "https://w0.peakpx.com/wallpaper/273/38/HD-wallpaper-x-men-beast-bishop-cyclops-gambit-marvel-psylocke-rogue-storm-wolverine-x-men.jpg",
         peliculas: [
@@ -1113,6 +1148,8 @@ const colecciones = [
     {
         id: "yost-verse",
         titulo: "Yost-Verse (Tierra-8096)",
+        esSerie: true,
+        tierra: 8096,
         categoria: "marvel-animacion",
         poster: "https://image.tmdb.org/t/p/original/nH1ROb4ujGRuDItJyn5UrYY5uOB.jpg",
         peliculas: [
@@ -1190,6 +1227,7 @@ const colecciones = [
     {
         id: "ben10-original",
         titulo: "Ben 10",
+        esSerie: true,
         categoria: "ben10",
         poster: "https://m.media-amazon.com/images/M/MV5BYWVjODZjNDgtYjk4ZS00OTg5LTg5NDQtZDMxZDQ4ZmM5MGJmXkEyXkFqcGc@.V1.jpg",
         peliculas: [
@@ -1202,6 +1240,7 @@ const colecciones = [
     {
         id: "ben10-alienforce",
         titulo: "Ben 10: Alien Force",
+        esSerie: true,
         categoria: "ben10",
         poster: "https://m.media-amazon.com/images/M/MV5BOGQ5YWFjYjItODE5OC00ZDQxLTk5ZmYtNzY0YzM4NjIyMWFlXkEyXkFqcGc@.V1.jpg",
         peliculas: [
@@ -1213,6 +1252,7 @@ const colecciones = [
     {
         id: "ben10-ultimatealien",
         titulo: "Ben 10: Ultimate Alien",
+        esSerie: true,
         categoria: "ben10",
         poster: "https://m.media-amazon.com/images/M/MV5BNWIxMjZmNTQtNzkxZi00NTU5LThhOGYtODEyZGYyNDdkNTQxXkEyXkFqcGc@.V1.jpg",
         peliculas: [
@@ -1224,6 +1264,7 @@ const colecciones = [
     {
         id: "ben10-omniverse",
         titulo: "Ben 10 Omniverse",
+        esSerie: true,
         categoria: "ben10",
         poster: "https://image.tmdb.org/t/p/original/Re9I5tauOspaJxYCIqRqavKT4F.jpg",
         peliculas: []
@@ -1772,6 +1813,13 @@ const logrosDisponibles = [
         descripcion: "Superá el 70% de las películas de Tarantino",
         icono: "🩸",
         condicion: (vistos) => porcentajeColeccionVisto(vistos, "tarantino") > 70
+    },
+    {
+        id: "literalmente-yo",
+        nombre: "Literalmente yo",
+        descripcion: "Alcanzá el 70% o más de las películas de Ryan Gosling",
+        icono: "🎀",
+        condicion: (vistos) => porcentajeCategoriaVisto(vistos, "ryan-gosling") >= 70
     }
 ];
 
@@ -1797,7 +1845,8 @@ function renderizarColecciones() {
         "actores": "seccion-actores",
         "arrowverse": "seccion-arrowverse",
         "mundo-magico": "seccion-mundo-magico",
-        "estudios": "seccion-estudios"
+        "estudios": "seccion-estudios",
+        "game-of-thrones": "seccion-game-of-thrones"
     };
 
     colecciones.forEach(col => {
@@ -1824,7 +1873,7 @@ function renderizarColecciones() {
             const textoPendiente = col.esVideojuego ? 'Marcar Jugado' : 'Marcar Visto';
             const etiquetaTipo = col.esVideojuego ? 'Colección de Videojuegos' : 'Colección Animada';
             htmlColeccion = `
-                <div class="tarjeta-media tarjeta-coleccion" data-coleccion="${col.id}" data-accion="${col.esVideojuego ? 'jugado' : 'visto'}" data-tipo="${col.tipoArrow || ''}" data-crono="${col.crono || ''}" data-orden="${col.ordenSalida || ''}">
+                <div class="tarjeta-media tarjeta-coleccion" data-coleccion="${col.id}" data-accion="${col.esVideojuego ? 'jugado' : 'visto'}" data-tipo="${col.tipoArrow || ''}" data-crono="${col.crono || ''}" data-orden="${col.ordenSalida || ''}" data-tierra="${col.tierra || ''}">
                     <img src="${col.poster}" alt="${col.titulo}">
                     <h3>${col.titulo}</h3>
                     <p>${etiquetaTipo}</p>
@@ -1859,12 +1908,13 @@ function asegurarPeliculasRenderizadas(col) {
     if (!grilla || grilla.children.length > 0 || col.peliculas.length === 0) return;
 
     const textoPendiente = col.esVideojuego ? 'Marcar Jugado' : 'Marcar Visto';
+    const etiquetaItem = col.esVideojuego ? 'Videojuego' : (col.esSerie ? 'Serie' : 'Película');
     col.peliculas.forEach(peli => {
         const htmlPelicula = `
             <div class="tarjeta-media" data-accion="${col.esVideojuego ? 'jugado' : 'visto'}">
                 <img src="${peli.poster}" alt="${peli.titulo}">
                 <h3>${peli.titulo}</h3>
-                <p>${col.esVideojuego ? 'Videojuego' : 'Película'}</p>
+                <p>${etiquetaItem}</p>
                 <button class="btn-accion">${textoPendiente}</button>
             </div>
         `;
@@ -1957,6 +2007,7 @@ function renderizarContenido() {
         "disney-animation": "seccion-disney-animation",
         "oscar-2020": "seccion-oscar-2020",
         "leonardo-dicaprio": "seccion-leonardo-dicaprio",
+        "ryan-gosling": "seccion-ryan-gosling",
         "marvel-animacion": "seccion-marvel-animacion"
     };
 
@@ -1985,7 +2036,7 @@ function renderizarContenido() {
             const textoInicial = esVideojuego ? "Marcar Jugado" : "Marcar Visto";
 
             const htmlTarjeta = `
-                <div class="tarjeta-media" style="${ocultarEstilo}" data-tier="${item.tier || ''}" data-tipo="${item.tipoArrow || ''}" data-crono="${item.crono || ''}" data-subtipo="${item.subtipo || ''}" data-orden="${item.ordenSalida || ''}" data-accion="${esVideojuego ? 'jugado' : 'visto'}">
+                <div class="tarjeta-media" style="${ocultarEstilo}" data-tier="${item.tier || ''}" data-tipo="${item.tipoArrow || ''}" data-crono="${item.crono || ''}" data-subtipo="${item.subtipo || ''}" data-orden="${item.ordenSalida || ''}" data-tierra="${item.tierra || ''}" data-accion="${esVideojuego ? 'jugado' : 'visto'}">
                     <img src="${item.poster}" alt="${item.titulo}">
                     <h3>${item.titulo}</h3>
                     <p>${item.tipo}</p>
@@ -1999,9 +2050,21 @@ function renderizarContenido() {
     sincronizarVistos();
 }
 
+// Ordena la grilla de "Marvel: Animación" por número de Tierra (ascendente).
+// Es necesario porque mezcla ítems sueltos y fichas-colección, que se dibujan
+// en dos pasadas distintas y no comparten orden natural en el DOM.
+function ordenarMarvelAnimacionPorTierra() {
+    const contenedor = document.querySelector('#seccion-marvel-animacion .grilla-biblioteca');
+    if (!contenedor) return;
+    const tarjetas = Array.from(contenedor.querySelectorAll('.tarjeta-media'));
+    tarjetas.sort((a, b) => parseFloat(a.getAttribute('data-tierra')) - parseFloat(b.getAttribute('data-tierra')));
+    tarjetas.forEach(t => contenedor.appendChild(t));
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     renderizarContenido();
     renderizarColecciones();
+    ordenarMarvelAnimacionPorTierra();
 });
 
 // ==========================================
@@ -2020,6 +2083,11 @@ function sincronizarVistos() {
             const esVideojuego = tarjeta.getAttribute('data-accion') === 'jugado';
             const textoPendiente = esVideojuego ? 'Marcar Jugado' : 'Marcar Visto';
             const marcandoComoVisto = this.textContent === textoPendiente;
+
+            // Recolecta TODOS los títulos afectados por este click (el propio +
+            // los de la cascada, si es la ficha madre de una colección) para
+            // guardarlos todos juntos de forma atómica al final
+            const titulosAfectados = [titulo];
 
             document.querySelectorAll('.tarjeta-media').forEach(t => {
                 if (t.querySelector('h3').textContent === titulo) {
@@ -2048,6 +2116,7 @@ function sincronizarVistos() {
                 if (colTocada && colTocada.peliculas.length > 0) {
                     asegurarPeliculasRenderizadas(colTocada);
                     colTocada.peliculas.forEach(peli => {
+                        titulosAfectados.push(peli.titulo);
                         if (marcandoComoVisto) titulosVistosGuardados.add(peli.titulo);
                         else titulosVistosGuardados.delete(peli.titulo);
 
@@ -2072,7 +2141,7 @@ function sincronizarVistos() {
                 }
             }
 
-            guardarProgresoUsuario(titulo, marcandoComoVisto);
+            guardarProgresoUsuario(titulosAfectados, marcandoComoVisto);
             actualizarTodasLasColecciones();
 
             if (!document.getElementById('seccion-biblioteca').classList.contains('oculto')) {
@@ -2593,6 +2662,13 @@ if(btnVolverLeonardoDicaprio) {
     });
 }
 
+const btnVolverRyanGosling = document.getElementById('btn-volver-ryan-gosling');
+if(btnVolverRyanGosling) {
+    btnVolverRyanGosling.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-actores'));
+    });
+}
+
 const btnVolverTimotheeChalamet = document.getElementById('btn-volver-timothee-chalamet');
 if(btnVolverTimotheeChalamet) {
     btnVolverTimotheeChalamet.addEventListener('click', () => {
@@ -3037,6 +3113,23 @@ botonesFiltroDicaprio.forEach(boton => {
 });
 
 // ==========================================
+// FILTROS "RYAN GOSLING" (por década)
+// ==========================================
+const botonesFiltroGosling = document.querySelectorAll('.btn-filtro-gosling');
+botonesFiltroGosling.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroGosling.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const tipoElegido = this.getAttribute('data-tipo');
+        const tarjetas = document.querySelectorAll('#seccion-ryan-gosling .tarjeta-media');
+
+        tarjetas.forEach(tarjeta => {
+            tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
+        });
+    });
+});
+
+// ==========================================
 // FILTROS "IT"
 // ==========================================
 const botonesFiltroIt = document.querySelectorAll('.btn-filtro-it');
@@ -3255,22 +3348,31 @@ function cargarProgresoUsuario() {
     }).catch(err => console.error('Error cargando progreso:', err));
 }
 
-function guardarProgresoUsuario(titulo, marcado) {
-    // Actualiza el Set maestro de forma incremental (nunca lo reconstruye
-    // desde el DOM, porque las colecciones no abiertas en esta sesión no
-    // están dibujadas en pantalla y se perderían del guardado)
-    if (titulo) {
-        if (marcado) titulosVistosGuardados.add(titulo);
-        else titulosVistosGuardados.delete(titulo);
-    }
+function guardarProgresoUsuario(titulos, marcado) {
+    // Acepta un título (string) o varios (array, para la cascada de colecciones)
+    const listaTitulos = Array.isArray(titulos) ? titulos : (titulos ? [titulos] : []);
+
+    listaTitulos.forEach(t => {
+        if (marcado) titulosVistosGuardados.add(t);
+        else titulosVistosGuardados.delete(t);
+    });
     renderizarLogros();
 
     if (!usuarioActual) return;
     const idsLogros = logrosDisponibles.filter(l => l.condicion(titulosVistosGuardados)).map(l => l.id);
-    db.collection('usuarios').doc(usuarioActual.uid).set({
-        vistos: Array.from(titulosVistosGuardados),
-        logros: idsLogros
-    }, { merge: true }).catch(err => {
+
+    const actualizacion = { logros: idsLogros };
+    if (listaTitulos.length > 0) {
+        // arrayUnion/arrayRemove son operaciones ATÓMICAS del lado del servidor:
+        // solo tocan los títulos indicados, nunca pisan la lista completa. Así,
+        // aunque haya otra pestaña/dispositivo con datos desactualizados, un
+        // guardado ahí nunca puede borrar lo que se guardó en otro lado.
+        actualizacion.vistos = marcado
+            ? firebase.firestore.FieldValue.arrayUnion(...listaTitulos)
+            : firebase.firestore.FieldValue.arrayRemove(...listaTitulos);
+    }
+
+    db.collection('usuarios').doc(usuarioActual.uid).set(actualizacion, { merge: true }).catch(err => {
         console.error('Error guardando progreso:', err);
         mostrarErrorGuardado(err);
     });
