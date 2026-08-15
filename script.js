@@ -120,8 +120,9 @@ const listaMedia = [
     { titulo: "Deadpool 2", categoria: "fox-xmen", tipo: "Película", poster: "https://preview.redd.it/new-deadpool-2-poster-v0-878r7e1hmle01.jpg?auto=webp&s=2f03e75ff6a45766bbbf16a95cbe0ecc3d6c7046" },
 
     // --- FOX: CUATRO FANTÁSTICOS ---
-    { titulo: "Fantastic Four (2005)", categoria: "fox-ff", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71nlKnBmb4L.jpg" },
-    { titulo: "Fantastic Four: Silver Surfer", categoria: "fox-ff", tipo: "Película", poster: "https://imaginus.ca/cdn/shop/products/A1432F_4e5006fc-9bff-4cc9-8ded-ec5b3c1ff9e4_1604x.jpg?v=1654713321" },
+    { titulo: "Fantastic Four (2005)", categoria: "fox-ff", subtipo: "2000", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71nlKnBmb4L.jpg" },
+    { titulo: "Fantastic Four: Silver Surfer", categoria: "fox-ff", subtipo: "2000", tipo: "Película", poster: "https://imaginus.ca/cdn/shop/products/A1432F_4e5006fc-9bff-4cc9-8ded-ec5b3c1ff9e4_1604x.jpg?v=1654713321" },
+    { titulo: "Cuatro Fantásticos (2015)", categoria: "fox-ff", subtipo: "2010", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/fantastic4_2015_stylek_teaser_original_filM-art_5000x.jpg?v=1627545303" },
 
     // --- SONY ---
     { titulo: "Spider-Man (2002)", categoria: "sony-tobey", tipo: "Película", poster: "https://i.pinimg.com/736x/48/4b/8f/484b8f1cf95ff2ee83b5e10e80ec8875.jpg" },
@@ -336,6 +337,48 @@ const listaMedia = [
     { titulo: "Policías y Ratones", categoria: "disney-animation", subtipo: "1980", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/6hZAOLb9HdPfqqvPpm5GD2BN7fT.jpg" },
     { titulo: "Oliver y su Pandilla", categoria: "disney-animation", subtipo: "1980", tipo: "Película", poster: "https://vegalleries.com/sites/default/files/art/product_images/manual/2024/jun22249.jpg" },
     { titulo: "La Sirenita", categoria: "disney-animation", subtipo: "1980", tipo: "Película", poster: "https://cdn.posteritati.com/posters/000/000/009/543/the-little-mermaid-md-web.jpg" },
+    { titulo: "Blancanieves y los Siete Enanitos", categoria: "disney-animation", subtipo: "1930-1940", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/jPBIm2Kileddn0Vj8jV2JBQlAKZ.jpg" },
+    { titulo: "Pinocho", categoria: "disney-animation", subtipo: "1930-1940", tipo: "Película", poster: "https://postercity.com.ar/wp-content/uploads/2019/07/Pinocchio-Disney-low.jpg" },
+    { titulo: "Fantasía", categoria: "disney-animation", subtipo: "1930-1940", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/files/Fantasia_R1985_original_film_art_5000x.webp?v=1750797193" },
+    { titulo: "Dumbo", categoria: "disney-animation", subtipo: "1930-1940", tipo: "Película", poster: "https://static.posters.cz/image/1300/71873.jpg" },
+    { titulo: "Bambi", categoria: "disney-animation", subtipo: "1930-1940", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81SMwA+ARhL.AC_UF894,1000_QL80.jpg" },
+    { titulo: "Saludos Amigos", categoria: "disney-animation", subtipo: "1930-1940", tipo: "Película", poster: "https://i.ebayimg.com/images/g/AIwAAOSwbbFmKuVq/s-l1200.jpg" },
+    { titulo: "Los Tres Caballeros", categoria: "disney-animation", subtipo: "1930-1940", tipo: "Película", poster: "https://i.pinimg.com/736x/e3/a6/d8/e3a6d84963f49fb36a85670a1518f507.jpg" },
+    { titulo: "Música Maestro", categoria: "disney-animation", subtipo: "1930-1940", tipo: "Película", poster: "https://i.pinimg.com/736x/f0/51/57/f051576d3da8927bdf165c6bbb2b9d3e.jpg" },
+    { titulo: "Diversión y Fantasía", categoria: "disney-animation", subtipo: "1930-1940", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZGU3NDU5YTYtYWI1NC00YmM2LWE5NDItNGNmMjAwYjEwZTdiXkEyXkFqcGc@.V1.jpg" },
+    { titulo: "Tiempo de Melodía", categoria: "disney-animation", subtipo: "1930-1940", tipo: "Película", poster: "https://static.wikia.nocookie.net/disneyypixar/images/a/a4/Melody_Time.jpg/revision/latest/scale-to-width-down/1200?cb=20250426061039&path-prefix=es" },
+    { titulo: "Las Aventuras de Ichabod y el Sr. Sapo", categoria: "disney-animation", subtipo: "1930-1940", tipo: "Película", poster: "https://m.media-amazon.com/images/S/pv-target-images/59d01ca68220e6738915efb4eee84add3339039979df0ecbae24603a19a5b7b9.jpg" },
+    { titulo: "Cenicienta", categoria: "disney-animation", subtipo: "1950", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/cinderella_1950_R73_original_film_art_5000x.jpg?v=1562540161" },
+    { titulo: "Alicia en el País de las Maravillas", categoria: "disney-animation", subtipo: "1950", tipo: "Película", poster: "https://i.pinimg.com/736x/3b/f5/82/3bf5825cc4271cae154247b9b1b5ed71.jpg" },
+    { titulo: "Peter Pan", categoria: "disney-animation", subtipo: "1950", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71LwwUyNAoL.AC_UF894,1000_QL80.jpg" },
+    { titulo: "La Dama y el Vagabundo", categoria: "disney-animation", subtipo: "1950", tipo: "Película", poster: "https://www.posterpalace.com/cdn/shop/products/walt-disneys-lady-and-the-tramp-us-one-sheet-1955-original-release-posterpalacecom-859493.jpg?v=1671389343" },
+    { titulo: "La Bella Durmiente", categoria: "disney-animation", subtipo: "1950", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/n3pxoMDDxp10c1smgbDzW4bwlzq.jpg" },
+    { titulo: "101 Dálmatas", categoria: "disney-animation", subtipo: "1960", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81L6aMRis1L.AC_UF894,1000_QL80.jpg" },
+    { titulo: "La Espada en la Piedra", categoria: "disney-animation", subtipo: "1960", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/c1H3jTJUZLrprxOMH1w8cQD1PBl.jpg" },
+    { titulo: "El Libro de la Selva", categoria: "disney-animation", subtipo: "1960", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81JzIeOhnaL.jpg" },
+    { titulo: "Los Aristogatos", categoria: "disney-animation", subtipo: "1970", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/s9DsxlbVE1HvHnCz50GdHDBeZRy.jpg" },
+    { titulo: "Robin Hood", categoria: "disney-animation", subtipo: "1970", tipo: "Película", poster: "https://m.media-amazon.com/images/I/51p-ieBYgUL.jpg" },
+    { titulo: "Las Muchas Aventuras de Winnie the Pooh", categoria: "disney-animation", subtipo: "1970", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61OzdKMZm6L.AC_UF894,1000_QL80.jpg" },
+    { titulo: "Bernardo y Bianca", categoria: "disney-animation", subtipo: "1970", tipo: "Película", poster: "https://static.wikia.nocookie.net/yatoroba/images/f/f5/Bernardo_y_Bianca_DVD.jpg/revision/latest?cb=20250818234942&path-prefix=es" },
+
+    // --- SITCOMS ---
+    { titulo: "Friends", categoria: "sitcoms", tipo: "Serie", poster: "https://www.yourdecoration.com/cdn/shop/products/Poster-Friends-In-Central-Perk-61x91-5cm-Pyramid-PP32138.jpg?v=1767619925" },
+    { titulo: "Seinfeld", categoria: "sitcoms", tipo: "Serie", poster: "https://i.pinimg.com/736x/8f/a1/3f/8fa13fce3f4f078c517c81aa063771e2.jpg" },
+    { titulo: "The Fresh Prince of Bel-Air", categoria: "sitcoms", tipo: "Serie", poster: "https://m.media-amazon.com/images/I/61KGeA2XLfL.jpg" },
+    { titulo: "The Nanny", categoria: "sitcoms", tipo: "Serie", poster: "https://m.media-amazon.com/images/I/61gtOYwWnPL.AC_UF894,1000_QL80.jpg" },
+    { titulo: "How I Met Your Mother", categoria: "sitcoms", tipo: "Serie", poster: "https://i.pinimg.com/736x/d7/45/8b/d7458bebe96c423e6e07455fca7ee02d.jpg" },
+    { titulo: "Two and a Half Men", categoria: "sitcoms", tipo: "Serie", poster: "https://i.pinimg.com/736x/b7/1f/e1/b71fe1055840e258a35922f103b715d3.jpg" },
+    { titulo: "Malcolm in the Middle", categoria: "sitcoms", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/ckLLIsNy3Z0Go1PYHA2PHzVymUA.jpg" },
+    { titulo: "Scrubs", categoria: "sitcoms", tipo: "Serie", poster: "https://m.media-amazon.com/images/I/713GR2dy8RL.AC_UF894,1000_QL80.jpg" },
+    { titulo: "It's Always Sunny in Philadelphia", categoria: "sitcoms", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/o0tMMK33JqmtpcWw0H41cEr9xQB.jpg" },
+    { titulo: "Modern Family", categoria: "sitcoms", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/k5Qg5rgPoKdh3yTJJrLtyoyYGwC.jpg" },
+    { titulo: "Parks and Recreation", categoria: "sitcoms", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/6KrY1WOj8UaCtrEAIW9rLh0UtD6.jpg" },
+    { titulo: "Brooklyn Nine-Nine", categoria: "sitcoms", tipo: "Serie", poster: "https://i.pinimg.com/736x/52/1d/27/521d271fb4b41a5e19a30de376361a30.jpg" },
+    { titulo: "Community", categoria: "sitcoms", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/3KUjDt8XY7w2Ku70UE0SECmv1zP.jpg" },
+    { titulo: "New Girl", categoria: "sitcoms", tipo: "Serie", poster: "https://pics.filmaffinity.com/New_Girl_Serie_de_TV-502564246-large.jpg" },
+    { titulo: "The Good Place", categoria: "sitcoms", tipo: "Serie", poster: "https://m.media-amazon.com/images/M/MV5BMTgzMzAyOTg4Ml5BMl5BanBnXkFtZTgwMjA0Mjk0OTE@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "The Ranch", categoria: "sitcoms", tipo: "Serie", poster: "https://m.media-amazon.com/images/M/MV5BMTYxOTU5ODE0OV5BMl5BanBnXkFtZTgwNzM0MzQ1MDI@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "That '70s Show", categoria: "sitcoms", tipo: "Serie", poster: "https://i.pinimg.com/564x/f8/71/fe/f871fe81a5ad58b23e303b2c90994bdd.jpg" },
 
     // --- RYAN GOSLING (con filtros por década) ---
     { titulo: "The Gray Man", categoria: "ryan-gosling", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZmFhZTNlNzctZGQzZi00MTA3LThiNjMtYWQzNjUzMjNjZjA3XkEyXkFqcGc@.V1.jpg" },
@@ -725,6 +768,39 @@ const colecciones = [
         poster: "https://i.pinimg.com/736x/62/74/e2/6274e27e43cfb816c6fcfeaefdd9b21d.jpg",
         esContenedor: true,
         peliculas: []
+    },
+    {
+        id: "sitcoms",
+        titulo: "Sitcoms",
+        categoria: "explorar",
+        poster: "https://placehold.co/300x450?text=Sitcoms",
+        esContenedor: true,
+        peliculas: []
+    },
+    {
+        id: "bigbangtheory-universo",
+        titulo: "Universo The Big Bang Theory",
+        categoria: "sitcoms",
+        poster: "https://i.pinimg.com/736x/51/99/36/519936a2c4423e4887a441b20aac8cac.jpg",
+        etiqueta: "Colección",
+        peliculas: [
+            { titulo: "The Big Bang Theory", poster: "https://i.pinimg.com/736x/58/b0/76/58b0765cc93de801cd1db5f5d5b4f0d7.jpg" },
+            { titulo: "Young Sheldon", poster: "https://i.pinimg.com/736x/ee/87/2a/ee872a7f0270a08514629efe729d19af.jpg" },
+            { titulo: "George and Mandy: First Marriage", poster: "https://image.tmdb.org/t/p/original/ituSKm0olDUK6y3wvAw11IhD0Ia.jpg" },
+            { titulo: "Stuart Fails To Save The Universe", poster: "https://m.media-amazon.com/images/M/MV5BNmRmODg5ZTctMTMyMS00YmZmLWEyZTMtMjFmOGU1NjYwMGI2XkEyXkFqcGc@.V1.jpg" }
+        ]
+    },
+    {
+        id: "the-office",
+        titulo: "The Office",
+        categoria: "sitcoms",
+        poster: "https://w0.peakpx.com/wallpaper/304/531/HD-wallpaper-michel-scott-the-office.jpg",
+        esSerie: true,
+        peliculas: [
+            { titulo: "The Office (US)", poster: "https://i.pinimg.com/736x/64/00/f5/6400f5ea275779e09884661e2a386341.jpg" },
+            { titulo: "The Office (UK)", poster: "https://m.media-amazon.com/images/M/MV5BNTk4MjNjODctNDgyZC00NDhkLWE1OGQtMjA3M2FlMDVjMjkzXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+            { titulo: "The Paper", poster: "https://m.media-amazon.com/images/M/MV5BZGFmMGIxMmItNGYyMi00MzJkLWE5NTgtM2Y3YjMyMjk3YjJjXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" }
+        ]
     },
     {
         id: "estudios",
@@ -1880,7 +1956,8 @@ function renderizarColecciones() {
         "arrowverse": "seccion-arrowverse",
         "mundo-magico": "seccion-mundo-magico",
         "estudios": "seccion-estudios",
-        "game-of-thrones": "seccion-game-of-thrones"
+        "game-of-thrones": "seccion-game-of-thrones",
+        "sitcoms": "seccion-sitcoms"
     };
 
     colecciones.forEach(col => {
@@ -2084,7 +2161,8 @@ function renderizarContenido() {
         "oscar-2020": "seccion-oscar-2020",
         "leonardo-dicaprio": "seccion-leonardo-dicaprio",
         "ryan-gosling": "seccion-ryan-gosling",
-        "marvel-animacion": "seccion-marvel-animacion"
+        "marvel-animacion": "seccion-marvel-animacion",
+        "sitcoms": "seccion-sitcoms"
     };
 
     listaMedia.forEach(item => {
@@ -2137,10 +2215,27 @@ function ordenarMarvelAnimacionPorTierra() {
     tarjetas.forEach(t => contenedor.appendChild(t));
 }
 
+// Ordena TODAS las tarjetas de una grilla (ítems sueltos + fichas-colección
+// mezclados) alfabéticamente por su título. Reutilizable para cualquier
+// sección nueva que deba listarse en orden alfabético.
+function ordenarGrillaAlfabeticamente(seccionId) {
+    const contenedor = document.querySelector(`#seccion-${seccionId} .grilla-biblioteca`);
+    if (!contenedor) return;
+    const tarjetas = Array.from(contenedor.querySelectorAll('.tarjeta-media'));
+    tarjetas.sort((a, b) => {
+        const tituloA = a.querySelector('h3') ? a.querySelector('h3').textContent : '';
+        const tituloB = b.querySelector('h3') ? b.querySelector('h3').textContent : '';
+        return tituloA.localeCompare(tituloB, 'es', { sensitivity: 'base' });
+    });
+    tarjetas.forEach(t => contenedor.appendChild(t));
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     renderizarContenido();
     renderizarColecciones();
     ordenarMarvelAnimacionPorTierra();
+    ordenarGrillaAlfabeticamente('sitcoms');
+    ordenarGrillaAlfabeticamente('franquicias');
     actualizarTodasLasColecciones();
 });
 
@@ -2436,6 +2531,10 @@ botonesNavegacion.forEach(nav => {
         boton.addEventListener('click', () => {
             const sec = document.getElementById(nav.sec);
             if(sec) cambiarSeccion(sec);
+            if (nav.sec === 'seccion-fox-ff') {
+                const btnDefecto = document.querySelector('.btn-filtro-ff[data-tipo="2000"]');
+                if (btnDefecto) btnDefecto.click();
+            }
         });
     }
 });
@@ -2771,6 +2870,27 @@ const btnVolverFranquicias = document.getElementById('btn-volver-franquicias');
 if(btnVolverFranquicias) {
     btnVolverFranquicias.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-explorar'));
+    });
+}
+
+const btnVolverSitcoms = document.getElementById('btn-volver-sitcoms');
+if(btnVolverSitcoms) {
+    btnVolverSitcoms.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-explorar'));
+    });
+}
+
+const btnVolverBigbangtheoryUniverso = document.getElementById('btn-volver-bigbangtheory-universo');
+if(btnVolverBigbangtheoryUniverso) {
+    btnVolverBigbangtheoryUniverso.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-sitcoms'));
+    });
+}
+
+const btnVolverTheOffice = document.getElementById('btn-volver-the-office');
+if(btnVolverTheOffice) {
+    btnVolverTheOffice.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-sitcoms'));
     });
 }
 
@@ -3199,6 +3319,23 @@ botonesFiltroGosling.forEach(boton => {
         this.classList.add('activo');
         const tipoElegido = this.getAttribute('data-tipo');
         const tarjetas = document.querySelectorAll('#seccion-ryan-gosling .tarjeta-media');
+
+        tarjetas.forEach(tarjeta => {
+            tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
+        });
+    });
+});
+
+// ==========================================
+// FILTROS "CUATRO FANTÁSTICOS" (Fox, por década)
+// ==========================================
+const botonesFiltroFF = document.querySelectorAll('.btn-filtro-ff');
+botonesFiltroFF.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroFF.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const tipoElegido = this.getAttribute('data-tipo');
+        const tarjetas = document.querySelectorAll('#seccion-fox-ff .tarjeta-media');
 
         tarjetas.forEach(tarjeta => {
             tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
