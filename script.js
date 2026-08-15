@@ -380,6 +380,101 @@ const listaMedia = [
     { titulo: "The Ranch", categoria: "sitcoms", tipo: "Serie", poster: "https://m.media-amazon.com/images/M/MV5BMTYxOTU5ODE0OV5BMl5BanBnXkFtZTgwNzM0MzQ1MDI@.V1_FMjpg_UX1000.jpg" },
     { titulo: "That '70s Show", categoria: "sitcoms", tipo: "Serie", poster: "https://i.pinimg.com/564x/f8/71/fe/f871fe81a5ad58b23e303b2c90994bdd.jpg" },
 
+    // --- SYDNEY SWEENEY (con filtros por década) ---
+    { titulo: "Nocturne", categoria: "sydney-sweeney", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNWMzZDQxNGEtMWE2NC00ZDFkLThkZjctY2JiNzYyZWE3ZjVjXkEyXkFqcGc@.V1.jpg" },
+    { titulo: "The Voyeurs", categoria: "sydney-sweeney", subtipo: "2020", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/319248.jpg" },
+    { titulo: "Night Teeth", categoria: "sydney-sweeney", subtipo: "2020", tipo: "Película", poster: "https://i.pinimg.com/736x/3c/31/d2/3c31d2e3e1bc5cff8cb69f3516eb68a4.jpg" },
+    { titulo: "Reality", categoria: "sydney-sweeney", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMDNhNzNiMzMtYTBmMi00OWEzLThkYTYtNjU2YjhhZDMyYjE0XkEyXkFqcGc@.V1.jpg" },
+    { titulo: "Americana", categoria: "sydney-sweeney", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNTZlZTk4OGQtYjE3ZS00OTUwLThiNWYtOWIwMjUxYTIwNjNiXkEyXkFqcGc@.V1.jpg" },
+    { titulo: "Anyone but You", categoria: "sydney-sweeney", subtipo: "2020", tipo: "Película", poster: "https://images.squarespace-cdn.com/content/v1/521dec4de4b0912f523f3b56/1731842299016-URJG1EVDKU4B2G48XIFG/anyone-but-you-poster.jpg?format=2500w" },
+    { titulo: "Madame Web", categoria: "sydney-sweeney", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/S/pv-target-images/cb36ea6f3f53777aea24eec9d1560470e6c6d1f260abc72bcb13ae9bccfcb678.jpg" },
+    { titulo: "Immaculate", categoria: "sydney-sweeney", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMWEzYjYyMjQtNTJjYi00ZDQ5LWE4N2MtNWY2ZTgxODNhYWM4XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "Eden", categoria: "sydney-sweeney", subtipo: "2020", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/750/315877.jpg" },
+    { titulo: "Echo Valley", categoria: "sydney-sweeney", subtipo: "2020", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/315875.jpg" },
+    { titulo: "Christy", categoria: "sydney-sweeney", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BM2E5MjhjODgtYzg0MS00NTlhLWIyZTktYjRjOTM1MDJlZWI4XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "The Housemaid", categoria: "sydney-sweeney", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/jv6LRUjOh9X2dWs2htkntXj4NiB.jpg" },
+
+    // --- OSCAR 2021 (con filtros por categoría) ---
+    { titulo: "Nomadland", categoria: "oscar-2021", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZWY3YTIwOGItODQ5Mi00NmI4LTgxN2QtZmI2ZjJmZmRkOGY1XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "El Padre", categoria: "oscar-2021", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYzUxMDAyMDAtNzIyZi00OGQ1LTllMjEtYzRjOThkZTUxNTliXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Judas y el Mesías Negro", categoria: "oscar-2021", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BY2IwMDZkN2MtNTIzYS00ODBjLWE2ZDItZTI4ZDhkOTEyMmM5XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Mank", categoria: "oscar-2021", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYWJjYmVkYzMtOGI5ZS00Mzk2LTk1NDgtMzRmOWQ5MmQ5MTQ1XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Minari", categoria: "oscar-2021", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYjc5MzhlMDAtMWUyMC00MGRmLThjY2MtZmMyZTgwNDEzZGQ3XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Una Joven Prometedora", categoria: "oscar-2021", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZDMyNTQ5ODYtMjU3YS00MjM3LWFmOGMtZjZlNDA3YWE3YjM0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Sound of Metal", categoria: "oscar-2021", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/3178oOJKKPDeQ2legWQvMPpllv.jpg" },
+    { titulo: "El Juicio de los 7 de Chicago", categoria: "oscar-2021", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZjY2ZGFlOTgtOGQ1MS00YWJhLWIyZjQtNWNmNTQ0YTk0MTZjXkEyXkFqcGc@._V1_.jpg" },
+
+    // --- OSCAR 2022 (con filtros por categoría) ---
+    { titulo: "CODA: Señales del Corazón", categoria: "oscar-2022", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/318745.jpg" },
+    { titulo: "Belfast", categoria: "oscar-2022", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOGU1MmMyNTMtMGE3Ni00N2E0LWFlYjEtMDIwNDk5NzUyODAzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Don't Look Up", categoria: "oscar-2022", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMmRkYWNkM2ItYWM5Ny00M2QxLWEwMmMtMzk3M2RhNTU1MWQxXkEyXkFqcGc@.V1.jpg" },
+    { titulo: "Drive My Car", categoria: "oscar-2022", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://i.pinimg.com/564x/6f/a0/ca/6fa0ca9b2da9fb4e2fc737ea1cfffaaf.jpg" },
+    { titulo: "Dune: Parte Uno", categoria: "oscar-2022", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://cdn.europosters.eu/image/1300/302577.jpg" },
+    { titulo: "Rey Richard", categoria: "oscar-2022", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61W3DBZYm2L._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Licorice Pizza", categoria: "oscar-2022", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZTNmMTRmNDUtNjY1ZS00YmQxLTk0MjEtZGY0NzA1ZDgwNTFjXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "El Callejón de las Almas Perdidas", categoria: "oscar-2022", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNThlMDUzMDEtOTY1ZC00MzI3LThlOGItYjI0MTdkZDliNDEzXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "El Poder del Perro", categoria: "oscar-2022", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNzgyMzA2NDEtZWUxNy00MDNmLTllMDYtNzZmNTU5ZWVmMzhlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "West Side Story", categoria: "oscar-2022", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOWZkYzY2OGUtOGU4Ni00NmI0LTg2ZjAtZDA5OWE0YTNiZWRiXkEyXkFqcGc@._V1_.jpg" },
+
+    // --- OSCAR 2023 (con filtros por categoría) ---
+    { titulo: "Todo en Todas Partes al Mismo Tiempo", categoria: "oscar-2023", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61tpckHUmmL._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Avatar: El Camino del Agua", categoria: "oscar-2023", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71DlLjNU0HL._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "El Triángulo de la Tristeza", categoria: "oscar-2023", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYTViNzUyNDUtZTg3Yy00OTY4LWEyMTYtMmUzYjE3ZmZjYzUwXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Ellas Hablan", categoria: "oscar-2023", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNzM2YzEzOTktNTJiNy00YjAwLWI2N2YtNjBkZWM5Y2U1OTRlXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Elvis", categoria: "oscar-2023", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNTVhZmUyMDQtY2I5Ny00OWNiLTgzNjUtMTg4YTQwMTc0OTQxXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "The Banshees of Inisherin", categoria: "oscar-2023", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOTkzMWI4OTEtMTk0MS00MTUxLWI4NTYtYmRiNWM4Zjc1MGRhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Los Fabelman", categoria: "oscar-2023", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNDY5OWY4ZWYtYTM3OC00Zjg5LWFlYzYtYWI5ZGM1MDcxYzY4XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "All Quiet on the Western Front", categoria: "oscar-2023", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOWJiYWMyYTktZThhOS00ZjgxLWE0YTQtZDMyNTQxMjMyYjI2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Tár", categoria: "oscar-2023", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/dRVAlaU0vbG6hMf2K45NSiIyoUe.jpg" },
+    { titulo: "Top Gun: Maverick", categoria: "oscar-2023", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://filmartgallery.com/cdn/shop/files/Top-Gun-Maverick-Vintage-Movie-Poster-Original_7c07a212.jpg?v=1771974257&width=2048" },
+
+    // --- OSCAR 2024 (con filtros por categoría) ---
+    { titulo: "Oppenheimer", categoria: "oscar-2024", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://i.ebayimg.com/images/g/n9MAAOSw6mBktOuN/s-l1200.jpg" },
+    { titulo: "American Fiction", categoria: "oscar-2024", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNzdiM2U4ODMtMTEwZC00ZDVmLWI0ZmItYThlMjQzZGRmMzk2XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Anatomía de una Caída", categoria: "oscar-2024", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/1ho0d4LNZw3Y0voeKmSvPSgJOJ2.jpg" },
+    { titulo: "Barbie", categoria: "oscar-2024", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/dekMkQf0kqAmztUca9lX5e5Pjbp.jpg" },
+    { titulo: "La Zona de Interés", categoria: "oscar-2024", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://cdn.posteritati.com/posters/000/000/071/328/the-zone-of-interest-md-web.jpg" },
+    { titulo: "Killers of the Flower Moon", categoria: "oscar-2024", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/vhkmvm2tm4HBec28JET6nBU7b7x.jpg" },
+    { titulo: "The Holdovers", categoria: "oscar-2024", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/317446.jpg" },
+    { titulo: "Maestro", categoria: "oscar-2024", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://imgproxy.domestika.org/unsafe/w:820/plain/src://content-items/015/204/521/Maestro%20poster-original.jpg?1711983664" },
+    { titulo: "Poor Things", categoria: "oscar-2024", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/317259.jpg" },
+    { titulo: "Past Lives", categoria: "oscar-2024", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://i.pinimg.com/736x/2b/41/cb/2b41cb65373e7909972ec366c09afa54.jpg" },
+
+    // --- OSCAR 2025 (con filtros por categoría) ---
+    { titulo: "Anora", categoria: "oscar-2025", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/316165.jpg" },
+    { titulo: "I'm Still Here", categoria: "oscar-2025", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BM2FjMjBiZjgtZDkyYy00YTRlLTk5N2QtODE2ZWIyYWE0Yzg0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Cónclave", categoria: "oscar-2025", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/vYEyxF1UT779RiEalpMjUT6kfdf.jpg" },
+    { titulo: "Dune: Parte Dos", categoria: "oscar-2025", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://deadline.com/wp-content/uploads/2023/05/FvIhyI9aUAUZz6l.jpeg?w=819" },
+    { titulo: "El Brutalista", categoria: "oscar-2025", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BM2U0MWRjZTMtMDVhNC00MzY4LTgwOTktZGQ2MDdiYTI4OWMxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Emilia Pérez", categoria: "oscar-2025", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNDMzMmQ4YzMtNWY2NS00MThjLWI3YzctZTVjNGRiNmU4YTkyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "La Sustancia", categoria: "oscar-2025", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://images.fandango.com/ImageRenderer/820/0/redesign/static/img/default_poster.png/0/images/masterrepository/fandango/236765/TS_BATHROOM_OS_EN_US_Sept20.jpg" },
+    { titulo: "Nickel Boys", categoria: "oscar-2025", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMGRkMzIyY2QtMjc5My00NGRjLWE5ZGUtYjRiMDNjMzAwOTU0XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "A Complete Unknown", categoria: "oscar-2025", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYTA2NTA5NDYtMzlkOC00MTQxLWI0NDQtMzk2M2YzMGE4MTkxXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "Wicked", categoria: "oscar-2025", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/hDQXqvmmikekQ15uxhisBDwEA63.jpg" },
+
+    // --- OSCAR 2026 (con filtros por categoría) ---
+    { titulo: "One Battle After Another", categoria: "oscar-2026", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://pics.filmaffinity.com/One_Battle_After_Another-992235034-large.jpg" },
+    { titulo: "Bugonia", categoria: "oscar-2026", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/zvTRaQSIx453rOiAFDdSKXifz7T.jpg" },
+    { titulo: "El Agente Secreto", categoria: "oscar-2026", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://acdn-us.mitiendanube.com/stores/004/687/740/products/pos-04419-d4041a352ba953990517622612447671-1024-1024.webp" },
+    { titulo: "F1", categoria: "oscar-2026", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNGI0MDI4NjEtOWU3ZS00ODQyLWFhYTgtNGYxM2ZkM2Q2YjE3XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Frankenstein", categoria: "oscar-2026", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYzYzNDYxMTQtMTU4OS00MTdlLThhMTQtZjI4NGJmMTZmNmRiXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Hamnet", categoria: "oscar-2026", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://competitive.ultracine.com/wp-content/uploads/2025/05/UIP-HAMNET.jpg" },
+    { titulo: "Sinners", categoria: "oscar-2026", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNjIwZWY4ZDEtMmIxZS00NDA4LTg4ZGMtMzUwZTYyNzgxMzk5XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Marty Supreme", categoria: "oscar-2026", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://s3.amazonaws.com/nightjarprod/content/uploads/sites/193/2026/02/09112829/lYWEXbQgRTR4ZQleSXAgRbxAjvq-scaled.jpg" },
+    { titulo: "Sueños de Trenes", categoria: "oscar-2026", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZDkzNzkyNTktYzNhMi00YjhiLWI5YmUtZjliMTY0ZDc5NmMyXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Sentimental Value", categoria: "oscar-2026", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNTMwMTk0Y2QtY2VhNy00OGYwLThkMjMtZjkwMGI3MTJiMjAyXkEyXkFqcGc@._V1_.jpg" },
+
+    // --- TOM HOLLAND (con filtros por década) ---
+    { titulo: "Unidos", categoria: "tom-holland", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81ZnP4DB06L.AC_UF894,1000_QL80.jpg" },
+    { titulo: "Dolittle", categoria: "tom-holland", subtipo: "2020", tipo: "Película", poster: "https://www.universalpictures.com.ar/tl_files/content/movies/dolittle/posters/01.jpg" },
+    { titulo: "El Diablo a Todas Horas", categoria: "tom-holland", subtipo: "2020", tipo: "Película", poster: "https://i.pinimg.com/736x/3f/2b/1b/3f2b1ba88daef2d2226517b3e49688fa.jpg" },
+    { titulo: "Cherry", categoria: "tom-holland", subtipo: "2020", tipo: "Película", poster: "https://pics.filmaffinity.com/Cherry-459820854-large.jpg" },
+    { titulo: "Chaos Walking", categoria: "tom-holland", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61LcnT-4RxL._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Spider-Man: No Way Home", categoria: "tom-holland", subtipo: "2020", tipo: "Película", poster: "https://www.cinemascomics.com/wp-content/uploads/2022/01/poster-Spider-man-no-way-home.jpg" },
+    { titulo: "Uncharted", categoria: "tom-holland", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71Pzfv1skmL.jpg" },
+    { titulo: "The Odyssey", categoria: "tom-holland", subtipo: "2020", tipo: "Película", poster: "https://img.asmedia.epimg.net/resizer/v2/AP6RDKAGQVE4DEON7ETUS4UVM4.jpg?auth=5abec700c478bffaa862bc1e153efeb77076781fbd4dc9df918ddb11a11979ea&width=375" },
+    { titulo: "Spider-Man: Brand New Day", categoria: "tom-holland", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOWNjYWM3NWItOGE0ZS00MWRjLThiZWEtYjc4ZmNmMmU5ZTVmXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+
     // --- RYAN GOSLING (con filtros por década) ---
     { titulo: "The Gray Man", categoria: "ryan-gosling", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZmFhZTNlNzctZGQzZi00MTA3LThiNjMtYWQzNjUzMjNjZjA3XkEyXkFqcGc@.V1.jpg" },
     { titulo: "Barbie", categoria: "ryan-gosling", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/dekMkQf0kqAmztUca9lX5e5Pjbp.jpg" },
@@ -574,6 +669,26 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "sydney-sweeney",
+        titulo: "Sydney Sweeney",
+        categoria: "actores",
+        poster: "https://i.pinimg.com/564x/e0/70/39/e070396e884005afe0073c6ddf3c826b.jpg",
+        esContenedor: true,
+        etiqueta: "Actriz",
+        progresoCategoria: "sydney-sweeney",
+        peliculas: []
+    },
+    {
+        id: "tom-holland",
+        titulo: "Tom Holland",
+        categoria: "actores",
+        poster: "https://w0.peakpx.com/wallpaper/525/822/HD-wallpaper-tom-holland-top-25-best-tom-holland-background-tom-holland-funny.jpg",
+        esContenedor: true,
+        etiqueta: "Actor",
+        progresoCategoria: "tom-holland",
+        peliculas: []
+    },
+    {
         id: "timothee-chalamet",
         titulo: "Timothée Chalamet",
         categoria: "actores",
@@ -690,6 +805,8 @@ const colecciones = [
         titulo: "2021",
         categoria: "oscar-anios",
         poster: "https://icantunseethatmovie.com/wp-content/uploads/2023/06/06209-oscars2021_yellowposter.png",
+        esContenedor: true,
+        progresoCategoria: "oscar-2021",
         peliculas: []
     },
     {
@@ -697,6 +814,8 @@ const colecciones = [
         titulo: "2022",
         categoria: "oscar-anios",
         poster: "https://static0.srcdn.com/wordpress/wp-content/uploads/2024/01/the-oscars-poster-featuring-an-oscars-statue-standing-in-front-of-a-curtain.jpeg",
+        esContenedor: true,
+        progresoCategoria: "oscar-2022",
         peliculas: []
     },
     {
@@ -704,6 +823,8 @@ const colecciones = [
         titulo: "2023",
         categoria: "oscar-anios",
         poster: "https://m.media-amazon.com/images/M/MV5BZjM4NDAyZDMtYjA4ZC00MmZhLTllNzktZDZlMWFmYzBiYTEzXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg",
+        esContenedor: true,
+        progresoCategoria: "oscar-2023",
         peliculas: []
     },
     {
@@ -711,6 +832,8 @@ const colecciones = [
         titulo: "2024",
         categoria: "oscar-anios",
         poster: "https://m.media-amazon.com/images/M/MV5BOWQyNDA5NzYtODFlMi00MmQwLTlmYTMtYjI4NmYwYWNmMjYwXkEyXkFqcGc@.V1.jpg",
+        esContenedor: true,
+        progresoCategoria: "oscar-2024",
         peliculas: []
     },
     {
@@ -718,6 +841,8 @@ const colecciones = [
         titulo: "2025",
         categoria: "oscar-anios",
         poster: "https://m.media-amazon.com/images/M/MV5BZTRhM2Q5ZGQtYzM2NC00NWY2LWJlODUtMmE4MTJmYTUyNjU5XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg",
+        esContenedor: true,
+        progresoCategoria: "oscar-2025",
         peliculas: []
     },
     {
@@ -725,6 +850,8 @@ const colecciones = [
         titulo: "2026",
         categoria: "oscar-anios",
         poster: "https://image.tmdb.org/t/p/w500/mbERPIFlNxN9hwI8Cp3K5TstmDq.jpg",
+        esContenedor: true,
+        progresoCategoria: "oscar-2026",
         peliculas: []
     },
     {
@@ -903,6 +1030,19 @@ const colecciones = [
         ]
     },
     {
+        id: "indiana-jones",
+        titulo: "Indiana Jones",
+        categoria: "franquicias",
+        poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2020/05/IMG_5479-scaled.jpeg",
+        peliculas: [
+            { titulo: "Indiana Jones y Los Cazadores del Arca Perdida", poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2020/05/IMG_5479-scaled.jpeg" },
+            { titulo: "Indiana Jones y El Templo de la Perdición", poster: "https://image.tmdb.org/t/p/original/gOZSOqw5p04SvLDMFQUJR8hz4PN.jpg" },
+            { titulo: "Indiana Jones y La Última Cruzada", poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2021/06/IMG_2497-scaled.jpeg" },
+            { titulo: "Indiana Jones y El Reino de La Calavera de Cristal", poster: "https://cdn.europosters.eu/image/1300/3284.jpg" },
+            { titulo: "Indiana Jones y El Dial del Destino", poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2023/07/IMG_2766-scaled.jpeg" }
+        ]
+    },
+    {
         id: "dune",
         titulo: "Dune",
         categoria: "franquicias",
@@ -1038,7 +1178,7 @@ const colecciones = [
         id: "tarantino",
         titulo: "Quentin Tarantino",
         categoria: "directores",
-        poster: "https://m.media-amazon.com/images/M/MV5BODZhMWJlNjYtNDExNC00MTIzLTllM2ItOGQ2NGVjNDQ3MzkzXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg",
+        poster: "https://cdna.artstation.com/p/assets/images/images/004/312/852/large/caciano-alison-pulp-fiction-tarantino-by-caciano-alison-da1oe2s.jpg?1482326422",
         peliculas: [
             { titulo: "Reservoir Dogs", poster: "https://i.pinimg.com/736x/df/4c/29/df4c29b0e7d20fae7ec3c7613e8cebd1.jpg" },
             { titulo: "Pulp Fiction", poster: "https://static.posters.cz/image/1300/pulp-fiction-cover-i1288.jpg" },
@@ -2078,11 +2218,20 @@ function abrirColeccion(colId) {
     const filtroPorDefecto = {
         'disney-animation': '.btn-filtro-disney[data-tipo="2020"]',
         'oscar-2020': '.btn-filtro-oscar[data-tipo="mejor-pelicula"]',
+        'oscar-2021': '.btn-filtro-oscar[data-tipo="mejor-pelicula"]',
+        'oscar-2022': '.btn-filtro-oscar[data-tipo="mejor-pelicula"]',
+        'oscar-2023': '.btn-filtro-oscar[data-tipo="mejor-pelicula"]',
+        'oscar-2024': '.btn-filtro-oscar[data-tipo="mejor-pelicula"]',
+        'oscar-2025': '.btn-filtro-oscar[data-tipo="mejor-pelicula"]',
+        'oscar-2026': '.btn-filtro-oscar[data-tipo="mejor-pelicula"]',
         'leonardo-dicaprio': '.btn-filtro-dicaprio[data-tipo="2020"]',
-        'ryan-gosling': '.btn-filtro-gosling[data-tipo="2020"]'
+        'ryan-gosling': '.btn-filtro-gosling[data-tipo="2020"]',
+        'sydney-sweeney': '.btn-filtro-sweeney[data-tipo="2020"]',
+        'tom-holland': '.btn-filtro-holland[data-tipo="2020"]'
     };
     if (filtroPorDefecto[colId]) {
-        const btnDefecto = document.querySelector(filtroPorDefecto[colId]);
+        const seccionActual = document.getElementById(`seccion-${colId}`);
+        const btnDefecto = seccionActual ? seccionActual.querySelector(filtroPorDefecto[colId]) : null;
         if (btnDefecto) btnDefecto.click();
     }
 }
@@ -2161,6 +2310,14 @@ function renderizarContenido() {
         "oscar-2020": "seccion-oscar-2020",
         "leonardo-dicaprio": "seccion-leonardo-dicaprio",
         "ryan-gosling": "seccion-ryan-gosling",
+        "sydney-sweeney": "seccion-sydney-sweeney",
+        "tom-holland": "seccion-tom-holland",
+        "oscar-2021": "seccion-oscar-2021",
+        "oscar-2022": "seccion-oscar-2022",
+        "oscar-2023": "seccion-oscar-2023",
+        "oscar-2024": "seccion-oscar-2024",
+        "oscar-2025": "seccion-oscar-2025",
+        "oscar-2026": "seccion-oscar-2026",
         "marvel-animacion": "seccion-marvel-animacion",
         "sitcoms": "seccion-sitcoms"
     };
@@ -2845,6 +3002,20 @@ if(btnVolverRyanGosling) {
     });
 }
 
+const btnVolverSydneySweeney = document.getElementById('btn-volver-sydney-sweeney');
+if(btnVolverSydneySweeney) {
+    btnVolverSydneySweeney.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-actores'));
+    });
+}
+
+const btnVolverTomHolland = document.getElementById('btn-volver-tom-holland');
+if(btnVolverTomHolland) {
+    btnVolverTomHolland.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-actores'));
+    });
+}
+
 const btnVolverTimotheeChalamet = document.getElementById('btn-volver-timothee-chalamet');
 if(btnVolverTimotheeChalamet) {
     btnVolverTimotheeChalamet.addEventListener('click', () => {
@@ -2932,6 +3103,13 @@ if(btnVolverMazeRunner) {
 const btnVolverLosJuegosDelHambre = document.getElementById('btn-volver-los-juegos-del-hambre');
 if(btnVolverLosJuegosDelHambre) {
     btnVolverLosJuegosDelHambre.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-franquicias'));
+    });
+}
+
+const btnVolverIndianaJones = document.getElementById('btn-volver-indiana-jones');
+if(btnVolverIndianaJones) {
+    btnVolverIndianaJones.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-franquicias'));
     });
 }
@@ -3276,15 +3454,17 @@ botonesFiltroDisney.forEach(boton => {
 });
 
 // ==========================================
-// FILTROS "OSCAR 2020" (por categoría del premio)
+// FILTROS "OSCAR" por categoría del premio (funciona para cualquier año: 2020, 2021, 2022...)
 // ==========================================
 const botonesFiltroOscar = document.querySelectorAll('.btn-filtro-oscar');
 botonesFiltroOscar.forEach(boton => {
     boton.addEventListener('click', function() {
-        botonesFiltroOscar.forEach(b => b.classList.remove('activo'));
+        const seccion = this.closest('section');
+        if (!seccion) return;
+        seccion.querySelectorAll('.btn-filtro-oscar').forEach(b => b.classList.remove('activo'));
         this.classList.add('activo');
         const tipoElegido = this.getAttribute('data-tipo');
-        const tarjetas = document.querySelectorAll('#seccion-oscar-2020 .tarjeta-media');
+        const tarjetas = seccion.querySelectorAll('.tarjeta-media');
 
         tarjetas.forEach(tarjeta => {
             tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
@@ -3336,6 +3516,40 @@ botonesFiltroFF.forEach(boton => {
         this.classList.add('activo');
         const tipoElegido = this.getAttribute('data-tipo');
         const tarjetas = document.querySelectorAll('#seccion-fox-ff .tarjeta-media');
+
+        tarjetas.forEach(tarjeta => {
+            tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
+        });
+    });
+});
+
+// ==========================================
+// FILTROS "SYDNEY SWEENEY" (por década)
+// ==========================================
+const botonesFiltroSweeney = document.querySelectorAll('.btn-filtro-sweeney');
+botonesFiltroSweeney.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroSweeney.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const tipoElegido = this.getAttribute('data-tipo');
+        const tarjetas = document.querySelectorAll('#seccion-sydney-sweeney .tarjeta-media');
+
+        tarjetas.forEach(tarjeta => {
+            tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
+        });
+    });
+});
+
+// ==========================================
+// FILTROS "TOM HOLLAND" (por década)
+// ==========================================
+const botonesFiltroHolland = document.querySelectorAll('.btn-filtro-holland');
+botonesFiltroHolland.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroHolland.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const tipoElegido = this.getAttribute('data-tipo');
+        const tarjetas = document.querySelectorAll('#seccion-tom-holland .tarjeta-media');
 
         tarjetas.forEach(tarjeta => {
             tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
@@ -3426,6 +3640,8 @@ let usuarioActual = null;
 let huboSesionAntes = false;
 let titulosVistosGuardados = new Set();
 let logrosYaNotificados = new Set();
+let ultimoGuardadoPendiente = Promise.resolve();
+let guardadoEnProgreso = false;
 
 const modalLogin = document.getElementById('modal-login');
 const btnLoginModal = document.getElementById('btn-login-modal');
@@ -3448,9 +3664,20 @@ function traducirErrorFirebase(err) {
 }
 
 if(btnLoginModal) {
-    btnLoginModal.addEventListener('click', () => {
+    btnLoginModal.addEventListener('click', async () => {
         if (usuarioActual) {
             if (confirm('¿Cerrar sesión de ' + (usuarioActual.displayName || usuarioActual.email) + '?')) {
+                // Espera a que termine de viajar a la nube el último guardado
+                // pendiente antes de cerrar sesión, para no cortarlo a mitad
+                // de camino (eso hacía que "se perdiera" lo último marcado)
+                btnLoginModal.textContent = '⏳ Guardando...';
+                btnLoginModal.disabled = true;
+                try {
+                    await ultimoGuardadoPendiente;
+                } catch (e) {
+                    // si falló el guardado ya se avisó con el cartel de error; igual cerramos sesión
+                }
+                btnLoginModal.disabled = false;
                 auth.signOut();
             }
         } else {
@@ -3586,11 +3813,23 @@ function guardarProgresoUsuario(titulos, marcado) {
             : firebase.firestore.FieldValue.arrayRemove(...listaTitulos);
     }
 
-    db.collection('usuarios').doc(usuarioActual.uid).set(actualizacion, { merge: true }).catch(err => {
+    guardadoEnProgreso = true;
+    ultimoGuardadoPendiente = db.collection('usuarios').doc(usuarioActual.uid).set(actualizacion, { merge: true }).catch(err => {
         console.error('Error guardando progreso:', err);
         mostrarErrorGuardado(err);
+    }).finally(() => {
+        guardadoEnProgreso = false;
     });
 }
+
+// Si intentás cerrar la pestaña/navegador justo mientras se está guardando
+// algo en la nube, el navegador avisa para no perder ese último cambio
+window.addEventListener('beforeunload', (e) => {
+    if (guardadoEnProgreso) {
+        e.preventDefault();
+        e.returnValue = '';
+    }
+});
 
 // ==========================================
 // LOGROS: RENDERIZADO

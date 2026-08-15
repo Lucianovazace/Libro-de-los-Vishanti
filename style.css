@@ -76,7 +76,7 @@ h1 {
     flex-wrap: wrap;
 }
 
-.btn-nav, .btn-categoria, .btn-subcategoria, .btn-filtro, .btn-filtro-arrowverse, .btn-filtro-dcu, .btn-filtro-dcmultiverso, .btn-filtro-it, .btn-filtro-got, .btn-filtro-mcu, .btn-filtro-ac, .btn-filtro-biblioteca, .btn-filtro-disney, .btn-filtro-oscar, .btn-filtro-dicaprio, .btn-filtro-gosling, .btn-filtro-ff {
+.btn-nav, .btn-categoria, .btn-subcategoria, .btn-filtro, .btn-filtro-arrowverse, .btn-filtro-dcu, .btn-filtro-dcmultiverso, .btn-filtro-it, .btn-filtro-got, .btn-filtro-mcu, .btn-filtro-ac, .btn-filtro-biblioteca, .btn-filtro-disney, .btn-filtro-oscar, .btn-filtro-dicaprio, .btn-filtro-gosling, .btn-filtro-ff, .btn-filtro-sweeney, .btn-filtro-holland {
     background-color: #2a2d35;
     color: white;
     border: none;
@@ -161,7 +161,7 @@ h2 {
     flex-wrap: wrap;
 }
 
-.btn-filtro.activo, .btn-filtro-arrowverse.activo, .btn-filtro-dcu.activo, .btn-filtro-dcmultiverso.activo, .btn-filtro-it.activo, .btn-filtro-got.activo, .btn-filtro-mcu.activo, .btn-filtro-ac.activo, .btn-filtro-biblioteca.activo, .btn-filtro-disney.activo, .btn-filtro-oscar.activo, .btn-filtro-dicaprio.activo, .btn-filtro-gosling.activo, .btn-filtro-ff.activo {
+.btn-filtro.activo, .btn-filtro-arrowverse.activo, .btn-filtro-dcu.activo, .btn-filtro-dcmultiverso.activo, .btn-filtro-it.activo, .btn-filtro-got.activo, .btn-filtro-mcu.activo, .btn-filtro-ac.activo, .btn-filtro-biblioteca.activo, .btn-filtro-disney.activo, .btn-filtro-oscar.activo, .btn-filtro-dicaprio.activo, .btn-filtro-gosling.activo, .btn-filtro-ff.activo, .btn-filtro-sweeney.activo, .btn-filtro-holland.activo {
     background-color: var(--accent-color) !important;
     color: #fff !important;
 }
