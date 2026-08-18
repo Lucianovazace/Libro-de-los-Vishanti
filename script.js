@@ -183,7 +183,7 @@ const listaMedia = [
     { titulo: "Joker: Folie à Deux", categoria: "joker", tipo: "Película", poster: "https://static.dc.com/2024-04/JOKER2_VERT_TSR_2764x4096_DOM.jpg" },
 
     // --- DC ELSEWORLDS: MULTIVERSO ---
-    { titulo: "Stargirl", categoria: "dc-multiverso", subtipo: "liveaction", tipo: "Serie - Tierra 2", poster: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p18061959_b_v12_af.jpg" },
+    // "Stargirl" ahora es una ficha explorable con sus 3 temporadas (ver colecciones)
     { titulo: "Titans", categoria: "dc-multiverso", subtipo: "liveaction", tipo: "Serie - Tierra 9", poster: "https://image.tmdb.org/t/p/original/awneRTOXqumB1fOPoUIXjUqksh5.jpg" },
     { titulo: "Green Lantern", categoria: "dc-multiverso", subtipo: "liveaction", tipo: "Película - Tierra 12", poster: "https://m.media-amazon.com/images/I/71-ckdWvqfL.jpg" },
     { titulo: "Swamp Thing", categoria: "dc-multiverso", subtipo: "liveaction", tipo: "Serie - Tierra 19", poster: "https://m.media-amazon.com/images/M/MV5BMGQzYzgxZWQtZmI3YS00YTIzLTk4NmQtMGE0YTdiNGNlZjYxXkEyXkFqcGc@.V1.jpg" },
@@ -245,11 +245,11 @@ const listaMedia = [
 
     // --- STAR WARS: ANIMACIÓN ---
     { titulo: "The Clone Wars (Película)", categoria: "sw-animacion", crono: 4, tipo: "Película", poster: "https://cdn.europosters.eu/image/750/3335.jpg" },
-    { titulo: "The Clone Wars (Serie)", categoria: "sw-animacion", crono: 5, tipo: "Serie", poster: "https://i.ebayimg.com/images/g/nSIAAOSwVkdlOSVq/s-l1200.jpg" },
+    { titulo: "The Clone Wars (Serie)", categoria: "sw-animacion", crono: 5, tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/e1nWfnnCVqxS2LeTO3dwGyAsG2V.jpg" },
     { titulo: "The Bad Batch", categoria: "sw-animacion", crono: 7, tipo: "Serie", poster: "https://myhotposters.com/cdn/shop/products/mL5264_1024x1024.jpg?v=1748532845" },
     { titulo: "Star Wars: Tales of the Underworld", categoria: "sw-animacion", crono: 7.5, tipo: "Serie (Antología)", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNFK8wlF1QPEfZkNraIHz1OgEvm4VhlXvAJMCN8uV_9r5gUdFFbIirvigX&s=10" },
     { titulo: "Maul: Shadow Lord", categoria: "sw-animacion", crono: 9, tipo: "Audiodrama", poster: "https://cdn.europosters.eu/image/1300/307057.jpg" },
-    { titulo: "Star Wars Rebels", categoria: "sw-animacion", crono: 11, tipo: "Serie", poster: "https://i.ebayimg.com/images/g/ZIkAAOSwVLRad2xL/s-l1200.jpg" },
+    { titulo: "Star Wars Rebels", categoria: "sw-animacion", crono: 11, tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/eLrScs6Bs26JMcS8hiZhf7YRROr.jpg" },
     { titulo: "Star Wars: Tales of the Empire", categoria: "sw-animacion", crono: 18.5, tipo: "Serie (Antología)", poster: "https://lumiere-a.akamaihd.net/v1/images/tales-of-the-empire-key-art_2b34360a.jpeg?region=0,0,1688,2500" },
     { titulo: "Star Wars Resistance", categoria: "sw-animacion", crono: 21, tipo: "Serie", poster: "https://m.media-amazon.com/images/M/MV5BMTkyMTc3NjAwNF5BMl5BanBnXkFtZTgwNTU1ODIyNjM@.V1.jpg" },
     { titulo: "LEGO Star Wars: Terrifying Tales", categoria: "sw-animacion", crono: 25, tipo: "Especial", poster: "https://lumiere-a.akamaihd.net/v1/images/image_6c11e3f5.jpeg?region=0,0,675,1000" },
@@ -595,6 +595,114 @@ const listaMedia = [
     { titulo: "Crime 101", categoria: "barry-keoghan", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZThlN2M4ZTUtYTU3Mi00MDE5LWFhYWUtNjkxMWEwNjUwNDVhXkEyXkFqcGc@._V1_.jpg" },
     { titulo: "Peaky Blinders: The Immortal Man", categoria: "barry-keoghan", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNTdlNTNjNjctYTg2MC00NTFlLTliNTctODFiZjZmNWRkYTVlXkEyXkFqcGc@._V1_.jpg" },
     { titulo: "Butterfly Jam", categoria: "barry-keoghan", subtipo: "2020", tipo: "Película", poster: "https://a.ltrbxd.com/resized/film-poster/8/2/6/5/6/1/826561-butterfly-jam-2026-0-600-0-900-crop.jpg?v=f75124f773" },
+
+    // --- THE MATRIX SAGA (con filtros "Películas" y "Todo") ---
+    { titulo: "The Matrix", categoria: "matrix-saga", subtipo: "peliculas,todo", tipo: "Película", poster: "https://i.pinimg.com/736x/a1/4d/50/a14d506a176e88afefa2a9ee64b00d69.jpg" },
+    { titulo: "The Matrix Reloaded", categoria: "matrix-saga", subtipo: "peliculas,todo", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNjAxYjkxNjktYTU0YS00NjFhLWIyMDEtMzEzMTJjMzRkMzQ1XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "The Matrix Revolutions", categoria: "matrix-saga", subtipo: "peliculas,todo", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/bkkS61w94ZVMNVd8KEyyJl2tnY5.jpg" },
+    { titulo: "The Animatrix", categoria: "matrix-saga", subtipo: "todo", tipo: "Película", poster: "https://m.media-amazon.com/images/I/51w4AiRhdEL._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "The Matrix Resurrections", categoria: "matrix-saga", subtipo: "peliculas,todo", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71PQje4I99L._AC_UF894,1000_QL80_.jpg" },
+
+    // --- PIXAR (con filtros por década) ---
+    { titulo: "Toy Story", categoria: "pixar", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71aBLaC4TzL.jpg" },
+    { titulo: "Bichos", categoria: "pixar", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNGI3Mjc1ZjUtYTJhYS00NjBiLTgyYjctODU5NTNlMWJiYjYzXkEyXkFqcGc@.V1.jpg" },
+    { titulo: "Toy Story 2", categoria: "pixar", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/I/719aV3ujFKL.jpg" },
+    { titulo: "Monsters Inc.", categoria: "pixar", subtipo: "2000", tipo: "Película", poster: "https://i.pinimg.com/736x/59/10/23/59102333312c8ceae749027c5193539d.jpg" },
+    { titulo: "Buscando a Nemo", categoria: "pixar", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/5lc6nQc0VhWFYFbNv016xze8Jvy.jpg" },
+    { titulo: "Los Increíbles", categoria: "pixar", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/2UnQ5f7PgHo4jIk6EUuS4xPsG1B.jpg" },
+    { titulo: "Cars", categoria: "pixar", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/uq3N2SFj1Y06zA6LzCQPkmBdaaE.jpg" },
+    { titulo: "Ratatouille", categoria: "pixar", subtipo: "2000", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTMzODU0NTkxMF5BMl5BanBnXkFtZTcwMjQ4MzMzMw@@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "Wall-E", categoria: "pixar", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/hbhFnRzzg6ZDmm8YAmxBnQpQIPh.jpg" },
+    { titulo: "Up", categoria: "pixar", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/eAdO0qa9m0NFSVLZ26PvCwmPlsr.jpg" },
+    { titulo: "Toy Story 3", categoria: "pixar", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/xNMYWGov98EySsv31FVEcnMKt9q.jpg" },
+    { titulo: "Cars 2", categoria: "pixar", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTUzNTc3MTU3M15BMl5BanBnXkFtZTcwMzIxNTc3NA@@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "Valiente", categoria: "pixar", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMzgwODk3ODA1NF5BMl5BanBnXkFtZTcwNjU3NjQ0Nw@@.V1.jpg" },
+    { titulo: "Monsters University", categoria: "pixar", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/wsERTuCGV4Fj2wqNr8kqYKcjIMd.jpg" },
+    { titulo: "Intensa-Mente", categoria: "pixar", subtipo: "2010", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/inside_out_2015_original_film_art_74649cb0-2ba2-4a00-9dda-e0829f708159_5000x.jpg?v=1606252623" },
+    { titulo: "Un Buen Dinosaurio", categoria: "pixar", subtipo: "2010", tipo: "Película", poster: "https://cdn.posteritati.com/posters/000/000/048/988/the-good-dinosaur-md-web.jpg" },
+    { titulo: "Buscando a Dory", categoria: "pixar", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/xufFFw9wRDYmICfutz4yeSsIwaa.jpg" },
+    { titulo: "Cars 3", categoria: "pixar", subtipo: "2010", tipo: "Película", poster: "https://i0.wp.com/pixarpost.com/wp-content/uploads/2020/10/6bae7-cars-3-official-poster.jpg?fit=744%2C1102&ssl=1" },
+    { titulo: "Coco", categoria: "pixar", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/4jfKMdT6vdkpcB2EyBj2XkO2tTf.jpg" },
+    { titulo: "Los Increíbles 2", categoria: "pixar", subtipo: "2010", tipo: "Película", poster: "https://i0.wp.com/teaser-trailer.com/wp-content/uploads/2017/03/The-Incredibles-2-Teaser-Poster.jpg?resize=425%2C600&ssl=1" },
+    { titulo: "Toy Story 4", categoria: "pixar", subtipo: "2010", tipo: "Película", poster: "https://hips.hearstapps.com/hmg-prod/images/toy-story-4-poster-1543427531.jpg" },
+    { titulo: "Unidos", categoria: "pixar", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81ZnP4DB06L.AC_UF894,1000_QL80.jpg" },
+    { titulo: "Soul", categoria: "pixar", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/xJ7MCAy4oCLerPo3JjnB8lKOhl4.jpg" },
+    { titulo: "Luca", categoria: "pixar", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71kDOwRD78S.jpg" },
+    { titulo: "Red", categoria: "pixar", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81afp89kELL.jpg" },
+    { titulo: "Lightyear", categoria: "pixar", subtipo: "2020", tipo: "Película", poster: "https://lumiere-a.akamaihd.net/v1/images/p_243_ster_lightyear_9209f1b3.jpeg" },
+    { titulo: "Elementos", categoria: "pixar", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/612zBRsyHbL.jpg" },
+    { titulo: "Intensa-Mente 2", categoria: "pixar", subtipo: "2020", tipo: "Película", poster: "https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2023/11/IO2_Teaser_Manhole_1s_v7.2_KA_Mech7_FS.jpg" },
+    { titulo: "Elio", categoria: "pixar", subtipo: "2020", tipo: "Película", poster: "https://lumiere-a.akamaihd.net/v1/images/elio_teaser2_poster_spain_1e0faa4d.jpeg" },
+    { titulo: "Hoppers", categoria: "pixar", subtipo: "2020", tipo: "Película", poster: "https://lumiere-a.akamaihd.net/v1/images/lifespan_payoff_posters_united_kingdom_1_f4464a86.jpeg?region=0,0,770,1100" },
+    { titulo: "Toy Story 5", categoria: "pixar", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/j3TpFDOfFBlKNR1TScIfw1h2Oa6.jpg" },
+
+    // --- BRAD PITT (con filtros por década) ---
+    { titulo: "Bullet Train", categoria: "brad-pitt", subtipo: "2020", tipo: "Película", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVVLHRnA4ZPXNF5W9x3WgmhJvYQ6hxEJF4tT6EzsyPHofiYNKQYS7X423L&s=10" },
+    { titulo: "Babylon", categoria: "brad-pitt", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61hxWeyTYcL.AC_UF894,1000_QL80.jpg" },
+    { titulo: "If", categoria: "brad-pitt", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/7fEVmXbk4vb2dUs8KnMbYxoUb7b.jpg" },
+    { titulo: "Wolfs", categoria: "brad-pitt", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNWI2MzdiM2ItMTg2Zi00MTYwLThlZmItM2FkNWI4NjE3ZjRhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "F1", categoria: "brad-pitt", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNGI0MDI4NjEtOWU3ZS00ODQyLWFhYTgtNGYxM2ZkM2Q2YjE3XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Megamente", categoria: "brad-pitt", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61OtufrnSTL._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "The Tree of Life", categoria: "brad-pitt", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/nQu2eMr9qhrds2LbPDK0SdjC1es.jpg" },
+    { titulo: "Moneyball", categoria: "brad-pitt", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61Ify4mS7IL._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Matalos Suavemente", categoria: "brad-pitt", subtipo: "2010", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/750/325160.jpg" },
+    { titulo: "Guerra Mundial Z", categoria: "brad-pitt", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/1SWBSYJsnyhdNRfLI1T6RsCxAQ4.jpg" },
+    { titulo: "12 Años de Esclavitud", categoria: "brad-pitt", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/aoDss4auoSgShf665dYCFGv7Ao0.jpg" },
+    { titulo: "El Abogado del Crimen", categoria: "brad-pitt", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTc3ODk0MTY0N15BMl5BanBnXkFtZTgwOTU2MTEzMDE@._V1_.jpg" },
+    { titulo: "Fury", categoria: "brad-pitt", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/pfte7wdMobMF4CVHuOxyu6oqeeA.jpg" },
+    { titulo: "By The Sea", categoria: "brad-pitt", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTUyNDU2MDMxM15BMl5BanBnXkFtZTgwMzAzMTk1NjE@._V1_.jpg" },
+    { titulo: "The Big Short", categoria: "brad-pitt", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZDZkNDQ3YjktYjBlZC00YTY1LTgxOGYtY2RhMWFhZmNkZGY3XkEyXkFqcGc@.V1.jpg" },
+    { titulo: "Allied", categoria: "brad-pitt", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNWJiOTUzODItNTYzYS00NGY0LWIzZmEtZDA4MGI5ZWMxMjM2XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "War Machine", categoria: "brad-pitt", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTg0ODE5NzE0OV5BMl5BanBnXkFtZTgwOTExODcyMjI@._V1_.jpg" },
+    { titulo: "Deadpool 2", categoria: "brad-pitt", subtipo: "2010", tipo: "Película", poster: "https://preview.redd.it/new-deadpool-2-poster-v0-878r7e1hmle01.jpg?auto=webp&s=2f03e75ff6a45766bbbf16a95cbe0ecc3d6c7046" },
+    { titulo: "Once Upon a Time in Hollywood", categoria: "brad-pitt", subtipo: "2010", tipo: "Película", poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2019/06/IMG_9717.jpeg" },
+    { titulo: "Ad Astra", categoria: "brad-pitt", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/i37759GsWqeWAf0pUcaY9nNKFa3.jpg" },
+    { titulo: "Snatch", categoria: "brad-pitt", subtipo: "2000", tipo: "Película", poster: "https://m.media-amazon.com/images/I/717j6p4oeRL.jpg" },
+    { titulo: "The Mexican", categoria: "brad-pitt", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/5GqF6rVjUW6CVTuj7w1A2JE49AF.jpg" },
+    { titulo: "Juego de Espías", categoria: "brad-pitt", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/6y8M1rxjKofQCRKKe6xeV91K2Fc.jpg" },
+    { titulo: "Ocean's Eleven", categoria: "brad-pitt", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/f4fnyMu4VkQ8gOgYOKF1xzugDXJ.jpg" },
+    { titulo: "Troya", categoria: "brad-pitt", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/a07wLy4ONfpsjnBqMwhlWTJTcm.jpg" },
+    { titulo: "Ocean's Twelve", categoria: "brad-pitt", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/Ad55M8newGWemFWCsMAkxO3fDwl.jpg" },
+    { titulo: "Sr. y Sra. Smith", categoria: "brad-pitt", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/kjD700RtyhveN3ZbOnSvUSne0Qj.jpg" },
+    { titulo: "Babel", categoria: "brad-pitt", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/os6R4WX50SoOclBt0U9XjdyReaR.jpg" },
+    { titulo: "Ocean's Thirteen", categoria: "brad-pitt", subtipo: "2000", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTMyNTc1NzY5MV5BMl5BanBnXkFtZTcwNDM4NTQzMw@@._V1_.jpg" },
+    { titulo: "El Asesinato de Jesse James por el Cobarde Robert Ford", categoria: "brad-pitt", subtipo: "2000", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTY2NDI2MTc2NV5BMl5BanBnXkFtZTcwNjA2NTQzMw@@._V1_.jpg" },
+    { titulo: "Quémese Después de Leerse", categoria: "brad-pitt", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/jdwSkQu3XirmX18MNj8CqFWsCk.jpg" },
+    { titulo: "El Curioso Caso de Benjamin Button", categoria: "brad-pitt", subtipo: "2000", tipo: "Película", poster: "https://a.ltrbxd.com/resized/sm/upload/yh/ob/ip/lw/gjMR102u5hPdIAWX7O2rim8ZWgA-0-600-0-900-crop.jpg?v=3beffc5097" },
+    { titulo: "Inglorious Basterds", categoria: "brad-pitt", subtipo: "2000", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BODZhMWJlNjYtNDExNC00MTIzLTllM2ItOGQ2NGVjNDQ3MzkzXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "Triunfo Amargo", categoria: "brad-pitt", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZDQ2NTE1YTQtMmNkNy00ZmMwLTg1YmEtNTRhMzM1ZGJmNDk2XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Thelma & Louise", categoria: "brad-pitt", subtipo: "1990", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/vbRAGLzbC75QfiKD1lKjmnQGuph.jpg" },
+    { titulo: "Johnny Suede", categoria: "brad-pitt", subtipo: "1990", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/x1ZvgHwDUFsgqWhYUEcJcyHmZQW.jpg" },
+    { titulo: "Cool World", categoria: "brad-pitt", subtipo: "1990", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/files/cool_world_1992_original_film_art_5000x.webp?v=1686089799" },
+    { titulo: "El Río de la Vida", categoria: "brad-pitt", subtipo: "1990", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/aVP45oS2cBL4WtZ1kB7r8uarruB.jpg" },
+    { titulo: "Kalifornia", categoria: "brad-pitt", subtipo: "1990", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/Kalifornia_1993_original_film_art_5000x.jpg?v=1554296872" },
+    { titulo: "True Romance", categoria: "brad-pitt", subtipo: "1990", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/39lXk6ud6KiJgGbbWI2PUKS7y2.jpg" },
+    { titulo: "Entrevista con el Vampiro", categoria: "brad-pitt", subtipo: "1990", tipo: "Película", poster: "https://i.pinimg.com/736x/94/0b/fd/940bfd06ebc45e0bafc3190c70914244.jpg" },
+    { titulo: "Leyendas de Pasión", categoria: "brad-pitt", subtipo: "1990", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/sJAndXoBumsqO3JPdoMkOEm47u2.jpg" },
+    { titulo: "Se7en", categoria: "brad-pitt", subtipo: "1990", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/191nKfP0ehp3uIvWqgPbFmI4lv9.jpg" },
+    { titulo: "12 Monkeys", categoria: "brad-pitt", subtipo: "1990", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/gt3iyguaCIw8DpQZI1LIN5TohM2.jpg" },
+    { titulo: "Los Hijos de la Calle", categoria: "brad-pitt", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNzAxYzg0MWItYjYzNy00NmY0LWI5ZTQtYjEyOTVlMDQ1ZjRhXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Enemigo Íntimo", categoria: "brad-pitt", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNDU1ODI0ZGUtZDA3My00NGViLWFhM2QtNmI1NzU0ZTA1ODc5XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Siete Años en el Tíbet", categoria: "brad-pitt", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71Qw5ypC-HL.jpg" },
+    { titulo: "Meet Joe Black", categoria: "brad-pitt", subtipo: "1990", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/xqq6UYCXMzh0Brb8GPt5cyxRTGf.jpg" },
+    { titulo: "Club de la Pelea", categoria: "brad-pitt", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81D+KJkO4SL.jpg" },
+    { titulo: "El Lado Oscuro del Sol", categoria: "brad-pitt", subtipo: "1980", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/yxSwmSeoEIJL5BhDEUmURGx38qQ.jpg" },
+    { titulo: "Happy Together", categoria: "brad-pitt", subtipo: "1980", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNmRmNjM1N2ItYzZiYy00N2JjLTkxYjctMjZhMjU0ZjM4OTdkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Cutting Class", categoria: "brad-pitt", subtipo: "1980", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYWVhNDNiMDItNzJmMy00YjJmLTg0MjQtMWFlMTI4ZGJkNDdkXkEyXkFqcGc@._V1_.jpg" },
+
+    // --- FLORENCE PUGH (con filtros por década) ---
+    { titulo: "Black Widow", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNjZjOGVhOTEtNzY4Mi00MjQzLTlmYjktNzMyMDExMWJlODEwXkEyXkFqcGc@.V1.jpg" },
+    { titulo: "Hawkeye", categoria: "florence-pugh", subtipo: "2020", tipo: "Serie", poster: "https://lumiere-a.akamaihd.net/v1/images/unknown_61ca7b47.png" },
+    { titulo: "Don't Worry Darling", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BODVhYzM3M2YtMTUwYi00NjE4LWIwYzktOTM1MTYwZWU0ZTBiXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "The Wonder", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNDU5NzljODgtNjg1OS00NWZlLTg3MzEtMDU0YWI2ZjEwNzk2XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Gato con Botas: El Último Deseo", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/AasDZ3tlfx4KjBt96QjbvBPmk4p.jpg" },
+    { titulo: "A Good Person", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://www.newdvdreleasedates.com/images/posters/large/a-good-person-2023-02.jpg" },
+    { titulo: "Oppenheimer", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://i.ebayimg.com/images/g/n9MAAOSw6mBktOuN/s-l1200.jpg" },
+    { titulo: "El Niño y La Garza", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://i.pinimg.com/736x/29/8c/a2/298ca2bc6141194372b913ddd9a450ed.jpg" },
+    { titulo: "Dune: Parte Dos", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://deadline.com/wp-content/uploads/2023/05/FvIhyI9aUAUZz6l.jpeg?w=819" },
+    { titulo: "We Live in Time", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/vEmiJetB0C7VJjw60QNXO0oMMws.jpg" },
+    { titulo: "Thunderbolts*", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71Y2ZfgT+4L.jpg" },
+    { titulo: "Marvel Zombies", categoria: "florence-pugh", subtipo: "2020", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/5UbrwzZUR5lcoDds2phuahFHHhi.jpg" },
 ];
 
 // ==========================================
@@ -703,6 +811,35 @@ const colecciones = [
         ]
     },
     {
+        id: "superman-y-lois",
+        titulo: "Superman & Lois",
+        esSerie: true,
+        categoria: "dc-multiverso",
+        poster: "https://image.tmdb.org/t/p/original/vlv1gn98GqMnKHLSh0dNciqGfBl.jpg",
+        subtipo: "liveaction",
+        etiqueta: "Serie - Tierra 39",
+        peliculas: [
+            { titulo: "Superman y Lois Temporada 1", poster: "https://image.tmdb.org/t/p/original/vlv1gn98GqMnKHLSh0dNciqGfBl.jpg" },
+            { titulo: "Superman y Lois Temporada 2", poster: "https://image.tmdb.org/t/p/original/nmlQPpY3YpuBgl4oLyMYqMASYrv.jpg" },
+            { titulo: "Superman y Lois Temporada 3", poster: "https://image.tmdb.org/t/p/original/hlMO1juHPuaiyL27BDLUcAvxmqq.jpg" },
+            { titulo: "Superman y Lois Temporada 4", poster: "https://image.tmdb.org/t/p/original/hoWkpACsrLgv4QMT4XCDrzoPdWN.jpg" }
+        ]
+    },
+    {
+        id: "stargirl",
+        titulo: "Stargirl",
+        esSerie: true,
+        categoria: "dc-multiverso",
+        poster: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p18061959_b_v12_af.jpg",
+        subtipo: "liveaction",
+        etiqueta: "Serie - Tierra 2",
+        peliculas: [
+            { titulo: "Stargirl Temporada 1", poster: "https://image.tmdb.org/t/p/original/nPXo3mGt51wDeZt5YbT3evMqDiH.jpg" },
+            { titulo: "Stargirl Temporada 2", poster: "https://image.tmdb.org/t/p/original/q3EFMfQFAnvSCHhZSOxq4AOsgN9.jpg" },
+            { titulo: "Stargirl Temporada 3", poster: "https://static.wikia.nocookie.net/stargirltv/images/2/2a/Stargirl_Season_3_Poster.jpeg/revision/latest?cb=20220803163836" }
+        ]
+    },
+    {
         id: "actores",
         titulo: "Actores",
         categoria: "explorar",
@@ -741,6 +878,29 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "inde-navarrette",
+        titulo: "Inde Navarrette",
+        categoria: "actores",
+        poster: "https://m.media-amazon.com/images/M/MV5BODFlMTZmODItNzExZi00ZWJiLTgyMTUtOGFlY2FiZTJiZTExXkEyXkFqcGc@._V1_.jpg",
+        etiqueta: "Actriz",
+        peliculas: [
+            { titulo: "13 Reasons Why", poster: "https://m.media-amazon.com/images/I/61ljrN7zmoL.jpg" },
+            { titulo: "Superman & Lois", poster: "https://sm.ign.com/ign_es/screenshot/default/superman-and-lois-poster-1259202_2cy3.jpg" },
+            { titulo: "Obsession", poster: "https://cdng.europosters.eu/pod_public/1300/321144.jpg" },
+            { titulo: "Trap House", poster: "https://m.media-amazon.com/images/M/MV5BYmY0OTk0ZDktMmJkNy00NjQwLWE0NjQtOTY4Y2VhODdhOTJjXkEyXkFqcGc@._V1_.jpg" }
+        ]
+    },
+    {
+        id: "florence-pugh",
+        titulo: "Florence Pugh",
+        categoria: "actores",
+        poster: "https://i.pinimg.com/736x/a3/08/ae/a308aef1fa1cc1d12057db0470cf5044.jpg",
+        esContenedor: true,
+        etiqueta: "Actriz",
+        progresoCategoria: "florence-pugh",
+        peliculas: []
+    },
+    {
         id: "tom-holland",
         titulo: "Tom Holland",
         categoria: "actores",
@@ -758,6 +918,16 @@ const colecciones = [
         esContenedor: true,
         etiqueta: "Actor",
         progresoCategoria: "barry-keoghan",
+        peliculas: []
+    },
+    {
+        id: "brad-pitt",
+        titulo: "Brad Pitt",
+        categoria: "actores",
+        poster: "https://i.pinimg.com/736x/ab/7b/aa/ab7baa3e92eb4af365b7734a4fe8da16.jpg",
+        esContenedor: true,
+        etiqueta: "Actor",
+        progresoCategoria: "brad-pitt",
         peliculas: []
     },
     {
@@ -964,7 +1134,7 @@ const colecciones = [
         id: "atajo-marvel-videojuegos",
         titulo: "Marvel Videojuegos",
         categoria: "videojuegos-explorar",
-        poster: "https://i.pinimg.com/originals/d5/06/c4/d506c42eb2c4ae09648d2e5e704cc4da.jpg",
+        poster: "https://i.pinimg.com/736x/17/54/27/175427784715922a7d1cedd638bb7c2f.jpg",
         esContenedor: true,
         atajoId: "marvel-videojuegos",
         peliculas: []
@@ -985,6 +1155,15 @@ const colecciones = [
         categoria: "explorar",
         poster: "https://i.pinimg.com/736x/62/74/e2/6274e27e43cfb816c6fcfeaefdd9b21d.jpg",
         esContenedor: true,
+        peliculas: []
+    },
+    {
+        id: "matrix-saga",
+        titulo: "The Matrix Saga",
+        categoria: "franquicias",
+        poster: "https://i.pinimg.com/736x/d4/a1/62/d4a1624acca21d711b9b8c1d5d0c46ff.jpg",
+        esContenedor: true,
+        progresoCategoria: "matrix-saga",
         peliculas: []
     },
     {
@@ -1059,39 +1238,9 @@ const colecciones = [
         titulo: "Pixar",
         categoria: "estudios",
         poster: "https://i.pinimg.com/736x/b8/ff/71/b8ff71f17f6ef4e183e16c08daaa8d16.jpg",
-        peliculas: [
-            { titulo: "Toy Story", poster: "https://m.media-amazon.com/images/I/71aBLaC4TzL.jpg" },
-            { titulo: "Bichos", poster: "https://m.media-amazon.com/images/M/MV5BNGI3Mjc1ZjUtYTJhYS00NjBiLTgyYjctODU5NTNlMWJiYjYzXkEyXkFqcGc@.V1.jpg" },
-            { titulo: "Toy Story 2", poster: "https://m.media-amazon.com/images/I/719aV3ujFKL.jpg" },
-            { titulo: "Monsters Inc.", poster: "https://i.pinimg.com/736x/59/10/23/59102333312c8ceae749027c5193539d.jpg" },
-            { titulo: "Buscando a Nemo", poster: "https://image.tmdb.org/t/p/original/5lc6nQc0VhWFYFbNv016xze8Jvy.jpg" },
-            { titulo: "Los Increíbles", poster: "https://image.tmdb.org/t/p/original/2UnQ5f7PgHo4jIk6EUuS4xPsG1B.jpg" },
-            { titulo: "Cars", poster: "https://image.tmdb.org/t/p/original/uq3N2SFj1Y06zA6LzCQPkmBdaaE.jpg" },
-            { titulo: "Ratatouille", poster: "https://m.media-amazon.com/images/M/MV5BMTMzODU0NTkxMF5BMl5BanBnXkFtZTcwMjQ4MzMzMw@@.V1_FMjpg_UX1000.jpg" },
-            { titulo: "Wall-E", poster: "https://image.tmdb.org/t/p/original/hbhFnRzzg6ZDmm8YAmxBnQpQIPh.jpg" },
-            { titulo: "Up", poster: "https://image.tmdb.org/t/p/original/eAdO0qa9m0NFSVLZ26PvCwmPlsr.jpg" },
-            { titulo: "Toy Story 3", poster: "https://image.tmdb.org/t/p/original/xNMYWGov98EySsv31FVEcnMKt9q.jpg" },
-            { titulo: "Cars 2", poster: "https://m.media-amazon.com/images/M/MV5BMTUzNTc3MTU3M15BMl5BanBnXkFtZTcwMzIxNTc3NA@@.V1_FMjpg_UX1000.jpg" },
-            { titulo: "Valiente", poster: "https://m.media-amazon.com/images/M/MV5BMzgwODk3ODA1NF5BMl5BanBnXkFtZTcwNjU3NjQ0Nw@@.V1.jpg" },
-            { titulo: "Monsters University", poster: "https://image.tmdb.org/t/p/original/wsERTuCGV4Fj2wqNr8kqYKcjIMd.jpg" },
-            { titulo: "Intensa-Mente", poster: "https://www.originalfilmart.com/cdn/shop/products/inside_out_2015_original_film_art_74649cb0-2ba2-4a00-9dda-e0829f708159_5000x.jpg?v=1606252623" },
-            { titulo: "Un Buen Dinosaurio", poster: "https://cdn.posteritati.com/posters/000/000/048/988/the-good-dinosaur-md-web.jpg" },
-            { titulo: "Buscando a Dory", poster: "https://image.tmdb.org/t/p/original/xufFFw9wRDYmICfutz4yeSsIwaa.jpg" },
-            { titulo: "Cars 3", poster: "https://i0.wp.com/pixarpost.com/wp-content/uploads/2020/10/6bae7-cars-3-official-poster.jpg?fit=744%2C1102&ssl=1" },
-            { titulo: "Coco", poster: "https://image.tmdb.org/t/p/original/4jfKMdT6vdkpcB2EyBj2XkO2tTf.jpg" },
-            { titulo: "Los Increíbles 2", poster: "https://i0.wp.com/teaser-trailer.com/wp-content/uploads/2017/03/The-Incredibles-2-Teaser-Poster.jpg?resize=425%2C600&ssl=1" },
-            { titulo: "Toy Story 4", poster: "https://hips.hearstapps.com/hmg-prod/images/toy-story-4-poster-1543427531.jpg" },
-            { titulo: "Unidos", poster: "https://m.media-amazon.com/images/I/81ZnP4DB06L.AC_UF894,1000_QL80.jpg" },
-            { titulo: "Soul", poster: "https://image.tmdb.org/t/p/original/xJ7MCAy4oCLerPo3JjnB8lKOhl4.jpg" },
-            { titulo: "Luca", poster: "https://m.media-amazon.com/images/I/71kDOwRD78S.jpg" },
-            { titulo: "Red", poster: "https://m.media-amazon.com/images/I/81afp89kELL.jpg" },
-            { titulo: "Lightyear", poster: "https://lumiere-a.akamaihd.net/v1/images/p_243_ster_lightyear_9209f1b3.jpeg" },
-            { titulo: "Elementos", poster: "https://m.media-amazon.com/images/I/612zBRsyHbL.jpg" },
-            { titulo: "Intensa-Mente 2", poster: "https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2023/11/IO2_Teaser_Manhole_1s_v7.2_KA_Mech7_FS.jpg" },
-            { titulo: "Elio", poster: "https://lumiere-a.akamaihd.net/v1/images/elio_teaser2_poster_spain_1e0faa4d.jpeg" },
-            { titulo: "Hoppers", poster: "https://lumiere-a.akamaihd.net/v1/images/lifespan_payoff_posters_united_kingdom_1_f4464a86.jpeg?region=0,0,770,1100" },
-            { titulo: "Toy Story 5", poster: "https://image.tmdb.org/t/p/original/j3TpFDOfFBlKNR1TScIfw1h2Oa6.jpg" }
-        ]
+        esContenedor: true,
+        progresoCategoria: "pixar",
+        peliculas: []
     },
     {
         id: "rapidos-y-furiosos",
@@ -1414,10 +1563,10 @@ const colecciones = [
         id: "series-independientes",
         titulo: "Series Independientes",
         categoria: "dc-animacion",
-        poster: "https://i.pinimg.com/736x/11/31/1a/11311a67b1434bde66509a6c966a4847.jpg",
+        poster: "https://i.pinimg.com/736x/0c/63/37/0c6337f890f06802d7aefbf9c87cb788.jpg",
         peliculas: [
             { titulo: "Teen Titans", poster: "https://image.tmdb.org/t/p/original/gxe4wIp3kYfw4QSkLMt99HfLkok.jpg" },
-            { titulo: "The Batman", poster: "https://image.tmdb.org/t/p/original/3w7koeOR2x71XYMJDGpygxYtScI.jpg" },
+            // "The Batman" ahora es "The Batman (2004)", ficha explorable con sus 5 temporadas (ver colecciones)
             { titulo: "Legion of Super Heroes", poster: "https://m.media-amazon.com/images/M/MV5BM2UyODExMTctYmQzZS00OTU1LWJiMmUtMjhjOWI4ODk0MDgwXkEyXkFqcGc@.V1.jpg" },
             { titulo: "Batman: The Brave and the Bold", poster: "https://m.media-amazon.com/images/M/MV5BM2FkYTQ2MzUtNWI1NC00MTM0LTgyNzYtMDM3NmE1OWYyNjRjXkEyXkFqcGc@.V1.jpg" },
             { titulo: "Young Justice", poster: "https://i.pinimg.com/736x/34/cf/e5/34cfe579fbd4b66a88f00ee0ab7e4ca6.jpg" },
@@ -1430,6 +1579,20 @@ const colecciones = [
             { titulo: "My Adventures with Superman", poster: "https://m.media-amazon.com/images/M/MV5BNjU3NmE4MDctMDMzYS00NTc5LTg0MmYtNDg2NDhiOTAxMzhjXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
             { titulo: "Batman: Caped Crusader", poster: "https://m.media-amazon.com/images/M/MV5BMjI1Y2NmNDgtZDVmMy00MjcwLTgwNmItMTFmMjcxMWRlYzQwXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
             { titulo: "Suicide Squad Isekai", poster: "https://m.media-amazon.com/images/M/MV5BM2FkMDljMTctZGRkNS00NTBiLWFlMjQtZDUyMGZhMGE1NDRlXkEyXkFqcGc@.V1.jpg" }
+        ]
+    },
+    {
+        id: "the-batman-2004",
+        titulo: "The Batman (2004)",
+        categoria: "series-independientes",
+        poster: "https://image.tmdb.org/t/p/original/3w7koeOR2x71XYMJDGpygxYtScI.jpg",
+        esSerie: true,
+        peliculas: [
+            { titulo: "The Batman (2004) Temporada 1", poster: "https://m.media-amazon.com/images/I/51122Iwfs4L._AC_UF894,1000_QL80_.jpg" },
+            { titulo: "The Batman (2004) Temporada 2", poster: "https://img.rgstatic.com/content/show/be5f6315-4ca7-4972-b736-4326c5e2c134/aa774cc9-556e-4dcd-a751-2e6564220690/poster-342.jpg" },
+            { titulo: "The Batman (2004) Temporada 3", poster: "https://image.tmdb.org/t/p/original/e1arGUEoveUPQ7p5O8glOq6L9Vw.jpg" },
+            { titulo: "The Batman (2004) Temporada 4", poster: "https://m.media-amazon.com/images/I/61TgjrLmJ1L._AC_UF894,1000_QL80_AIweblab1381794,T1_.jpg" },
+            { titulo: "The Batman (2004) Temporada 5", poster: "https://image.tmdb.org/t/p/w500/15KR4jWMS1xhPKMkoDGWttAYL6y.jpg" }
         ]
     },
     {
@@ -2207,7 +2370,9 @@ function renderizarColecciones() {
         "game-of-thrones": "seccion-game-of-thrones",
         "sitcoms": "seccion-sitcoms",
         "pokemon": "seccion-pokemon",
-        "pokemon-canon": "seccion-pokemon-canon"
+        "pokemon-canon": "seccion-pokemon-canon",
+        "dc-multiverso": "seccion-dc-multiverso",
+        "series-independientes": "seccion-series-independientes"
     };
 
     colecciones.forEach(col => {
@@ -2242,7 +2407,7 @@ function renderizarColecciones() {
             const textoPendiente = col.esVideojuego ? 'Marcar Jugado' : 'Marcar Visto';
             const etiquetaTipo = col.etiqueta || (col.esVideojuego ? 'Colección de Videojuegos' : 'Colección Animada');
             htmlColeccion = `
-                <div class="tarjeta-media tarjeta-coleccion" data-coleccion="${col.id}" data-accion="${col.esVideojuego ? 'jugado' : 'visto'}" data-tipo="${col.tipoArrow || ''}" data-crono="${col.crono || ''}" data-orden="${col.ordenSalida || ''}" data-tierra="${col.tierra || ''}">
+                <div class="tarjeta-media tarjeta-coleccion" data-coleccion="${col.id}" data-accion="${col.esVideojuego ? 'jugado' : 'visto'}" data-tipo="${col.tipoArrow || ''}" data-crono="${col.crono || ''}" data-orden="${col.ordenSalida || ''}" data-tierra="${col.tierra || ''}" data-subtipo="${col.subtipo || ''}">
                     <img src="${col.poster}" alt="${col.titulo}">
                     <h3>${col.titulo}</h3>
                     <p>${etiquetaTipo}</p>
@@ -2339,6 +2504,10 @@ function abrirColeccion(colId) {
         'sydney-sweeney': '.btn-filtro-sweeney[data-tipo="2020"]',
         'tom-holland': '.btn-filtro-holland[data-tipo="2020"]',
         'barry-keoghan': '.btn-filtro-keoghan[data-tipo="2020"]',
+        'matrix-saga': '.btn-filtro-matrix[data-tipo="peliculas"]',
+        'pixar': '.btn-filtro-pixar[data-tipo="2020"]',
+        'brad-pitt': '.btn-filtro-pitt[data-tipo="2020"]',
+        'florence-pugh': '.btn-filtro-pugh[data-tipo="2020"]',
         'pokemon-canon': '.btn-filtro-pokemon[data-tipo="kanto-johto"]'
     };
     if (filtroPorDefecto[colId]) {
@@ -2425,6 +2594,10 @@ function renderizarContenido() {
         "sydney-sweeney": "seccion-sydney-sweeney",
         "tom-holland": "seccion-tom-holland",
         "barry-keoghan": "seccion-barry-keoghan",
+        "matrix-saga": "seccion-matrix-saga",
+        "pixar": "seccion-pixar",
+        "brad-pitt": "seccion-brad-pitt",
+        "florence-pugh": "seccion-florence-pugh",
         "oscar-2021": "seccion-oscar-2021",
         "oscar-2022": "seccion-oscar-2022",
         "oscar-2023": "seccion-oscar-2023",
@@ -2507,6 +2680,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ordenarMarvelAnimacionPorTierra();
     ordenarGrillaAlfabeticamente('sitcoms');
     ordenarGrillaAlfabeticamente('franquicias');
+    ordenarGrillaAlfabeticamente('actores');
     actualizarTodasLasColecciones();
 });
 
@@ -3123,6 +3297,20 @@ if(btnVolverSydneySweeney) {
     });
 }
 
+const btnVolverIndeNavarrette = document.getElementById('btn-volver-inde-navarrette');
+if(btnVolverIndeNavarrette) {
+    btnVolverIndeNavarrette.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-actores'));
+    });
+}
+
+const btnVolverFlorencePugh = document.getElementById('btn-volver-florence-pugh');
+if(btnVolverFlorencePugh) {
+    btnVolverFlorencePugh.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-actores'));
+    });
+}
+
 const btnVolverTomHolland = document.getElementById('btn-volver-tom-holland');
 if(btnVolverTomHolland) {
     btnVolverTomHolland.addEventListener('click', () => {
@@ -3133,6 +3321,13 @@ if(btnVolverTomHolland) {
 const btnVolverBarryKeoghan = document.getElementById('btn-volver-barry-keoghan');
 if(btnVolverBarryKeoghan) {
     btnVolverBarryKeoghan.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-actores'));
+    });
+}
+
+const btnVolverBradPitt = document.getElementById('btn-volver-brad-pitt');
+if(btnVolverBradPitt) {
+    btnVolverBradPitt.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-actores'));
     });
 }
@@ -3162,6 +3357,13 @@ const btnVolverFranquicias = document.getElementById('btn-volver-franquicias');
 if(btnVolverFranquicias) {
     btnVolverFranquicias.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-explorar'));
+    });
+}
+
+const btnVolverMatrixSaga = document.getElementById('btn-volver-matrix-saga');
+if(btnVolverMatrixSaga) {
+    btnVolverMatrixSaga.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-franquicias'));
     });
 }
 
@@ -3335,6 +3537,20 @@ if(btnVolverBlackLightning) {
     });
 }
 
+const btnVolverSupermanYLois = document.getElementById('btn-volver-superman-y-lois');
+if(btnVolverSupermanYLois) {
+    btnVolverSupermanYLois.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dc-multiverso'));
+    });
+}
+
+const btnVolverStargirl = document.getElementById('btn-volver-stargirl');
+if(btnVolverStargirl) {
+    btnVolverStargirl.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dc-multiverso'));
+    });
+}
+
 const btnVolverGalardones = document.getElementById('btn-volver-galardones');
 if(btnVolverGalardones) {
     btnVolverGalardones.addEventListener('click', () => {
@@ -3474,6 +3690,13 @@ const btnVolverSeriesIndependientes = document.getElementById('btn-volver-series
 if(btnVolverSeriesIndependientes) {
     btnVolverSeriesIndependientes.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-dc-animacion'));
+    });
+}
+
+const btnVolverTheBatman2004 = document.getElementById('btn-volver-the-batman-2004');
+if(btnVolverTheBatman2004) {
+    btnVolverTheBatman2004.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-series-independientes'));
     });
 }
 
@@ -3709,6 +3932,75 @@ botonesFiltroKeoghan.forEach(boton => {
         this.classList.add('activo');
         const tipoElegido = this.getAttribute('data-tipo');
         const tarjetas = document.querySelectorAll('#seccion-barry-keoghan .tarjeta-media');
+
+        tarjetas.forEach(tarjeta => {
+            tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
+        });
+    });
+});
+
+// ==========================================
+// FILTROS "THE MATRIX SAGA" (Películas / Todo — un título puede estar en ambos)
+// ==========================================
+const botonesFiltroMatrix = document.querySelectorAll('.btn-filtro-matrix');
+botonesFiltroMatrix.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroMatrix.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const tipoElegido = this.getAttribute('data-tipo');
+        const tarjetas = document.querySelectorAll('#seccion-matrix-saga .tarjeta-media');
+
+        tarjetas.forEach(tarjeta => {
+            const etiquetas = (tarjeta.getAttribute('data-subtipo') || '').split(',');
+            tarjeta.style.display = etiquetas.includes(tipoElegido) ? 'flex' : 'none';
+        });
+    });
+});
+
+// ==========================================
+// FILTROS "PIXAR" (por década)
+// ==========================================
+const botonesFiltroPixar = document.querySelectorAll('.btn-filtro-pixar');
+botonesFiltroPixar.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroPixar.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const tipoElegido = this.getAttribute('data-tipo');
+        const tarjetas = document.querySelectorAll('#seccion-pixar .tarjeta-media');
+
+        tarjetas.forEach(tarjeta => {
+            tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
+        });
+    });
+});
+
+// ==========================================
+// FILTROS "BRAD PITT" (por década)
+// ==========================================
+const botonesFiltroPitt = document.querySelectorAll('.btn-filtro-pitt');
+botonesFiltroPitt.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroPitt.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const tipoElegido = this.getAttribute('data-tipo');
+        const tarjetas = document.querySelectorAll('#seccion-brad-pitt .tarjeta-media');
+
+        tarjetas.forEach(tarjeta => {
+            tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
+        });
+    });
+});
+
+// ==========================================
+// FILTROS "FLORENCE PUGH" (por década)
+// ==========================================
+const botonesFiltroPugh = document.querySelectorAll('.btn-filtro-pugh');
+botonesFiltroPugh.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroPugh.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const tipoElegido = this.getAttribute('data-tipo');
+        const tarjetas = document.querySelectorAll('#seccion-florence-pugh .tarjeta-media');
 
         tarjetas.forEach(tarjeta => {
             tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
