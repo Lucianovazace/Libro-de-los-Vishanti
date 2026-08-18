@@ -532,7 +532,69 @@ const listaMedia = [
     { titulo: "The Spectacular Spider-Man (Tierra-26496)", categoria: "marvel-animacion", tipo: "Serie", tierra: 26496, poster: "https://image.tmdb.org/t/p/original/dCNxOhXT7c4lqYuRpdM3m8s9XDp.jpg" },
     { titulo: "The Super-Hero Squad Show (Tierra-91119)", categoria: "marvel-animacion", tipo: "Serie", tierra: 91119, poster: "https://m.media-amazon.com/images/M/MV5BMGQ0NjI0MmUtMTU2NC00NjM4LWI5ZDEtOGU1MzI5YTRhYjhhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
     { titulo: "The Avengers: United They Stand (Tierra-730784)", categoria: "marvel-animacion", tipo: "Serie", tierra: 730784, poster: "https://m.media-amazon.com/images/M/MV5BNDcxZjdjZTgtNDI5Ni00MDliLWFhZTYtZmQwYzdlNzA4YzYzXkEyXkFqcGc@._V1_.jpg" },
-    { titulo: "Tu Amistoso Vecino Spider-Man (Tierra-86445)", categoria: "marvel-animacion", tipo: "Serie", tierra: 86445, poster: "https://www.movieposters.com/cdn/shop/files/your-friendly-neighborhood-spider-man_kthsshkb_1024x1024.jpg?v=1762978827" }
+    { titulo: "Tu Amistoso Vecino Spider-Man (Tierra-86445)", categoria: "marvel-animacion", tipo: "Serie", tierra: 86445, poster: "https://www.movieposters.com/cdn/shop/files/your-friendly-neighborhood-spider-man_kthsshkb_1024x1024.jpg?v=1762978827" },
+
+    // --- POKÉMON: CANON (con filtros por generación) ---
+    { titulo: "Pokémon Temporada 1: Liga Índigo", categoria: "pokemon-canon", subtipo: "kanto-johto", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/lXLlqzclJCdtbnJgrLhqRloiP2L.jpg" },
+    { titulo: "Mewtwo Contraataca", categoria: "pokemon-canon", subtipo: "kanto-johto", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/aeskMWlroIsPR9AllXLW2H6Gev0.jpg" },
+    { titulo: "Pokémon Temporada 2: La Liga Naranja", categoria: "pokemon-canon", subtipo: "kanto-johto", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/ye1Y1yx5gD6DgEsJwAMv9A8SHFZ.jpg" },
+    { titulo: "El Poder de Uno", categoria: "pokemon-canon", subtipo: "kanto-johto", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/onOIJL2FPGF6hQ66zDEyesfTxSi.jpg" },
+    { titulo: "Pokémon Temporada 3: Los Viajes Johto", categoria: "pokemon-canon", subtipo: "kanto-johto", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/n5lhMLbT3FQtI6EUN84bEHZPfsm.jpg" },
+    { titulo: "El Hechizo de Los Unown", categoria: "pokemon-canon", subtipo: "kanto-johto", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/uccD0yQ1pgBqeAsrE5tLbOCCWSx.jpg" },
+    { titulo: "Pokémon Temporada 4", categoria: "pokemon-canon", subtipo: "kanto-johto", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/yjAq5sILzVzIBfWtVLdxD8AEjGM.jpg" },
+    { titulo: "Celebi, La Voz del Bosque", categoria: "pokemon-canon", subtipo: "kanto-johto", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/Db6uwW9aVQRD5DqnOfjchQaPWY.jpg" },
+    { titulo: "Pokémon Temporada 5: La Búsqueda del Maestro", categoria: "pokemon-canon", subtipo: "kanto-johto", tipo: "Serie", poster: "https://m.media-amazon.com/images/I/817TMfjYybL._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Héroes Pokémon: Latios y Latias", categoria: "pokemon-canon", subtipo: "kanto-johto", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/w3u1GuOAZBTt98SDYLXJxadPsk5.jpg" },
+    { titulo: "Pokémon Temporada 6: Fuerza Máxima", categoria: "pokemon-canon", subtipo: "rubi-zafiro", tipo: "Serie", poster: "https://image.tmdb.org/t/p/w500/zK95cE5ZuNeKIPC3UxC0v6UoIqA.jpg" },
+    { titulo: "Jirachi y Los Deseos", categoria: "pokemon-canon", subtipo: "rubi-zafiro", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/7s7YUi2v42TbSWdlzzKvKsX60AF.jpg" },
+    { titulo: "Pokémon Temporada 7: Reto Máximo", categoria: "pokemon-canon", subtipo: "rubi-zafiro", tipo: "Serie", poster: "https://images.justwatch.com/poster/264631676/s718/temporada-7.jpg" },
+    { titulo: "El Destino de Deoxys", categoria: "pokemon-canon", subtipo: "rubi-zafiro", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/dTtRc46sSUmndOLuYXLrrmba01C.jpg" },
+    { titulo: "Pokémon Temporada 8: Batalla Avanzada", categoria: "pokemon-canon", subtipo: "rubi-zafiro", tipo: "Serie", poster: "https://images.justwatch.com/poster/264631679/s718/temporada-8.jpg" },
+    { titulo: "Lucario y El Misterio de Mew", categoria: "pokemon-canon", subtipo: "rubi-zafiro", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/x2XQw8MM3ndbkLzUWpVP9oTpaO4.jpg" },
+    { titulo: "Pokémon Temporada 9: Batalla de La Frontera", categoria: "pokemon-canon", subtipo: "rubi-zafiro", tipo: "Serie", poster: "https://image.tmdb.org/t/p/w500/FynWwCCPvvaATr0a0zPLDrByhq.jpg" },
+    { titulo: "Pokémon Ranger y El Templo del Mar", categoria: "pokemon-canon", subtipo: "rubi-zafiro", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTczNjg3MDgyOV5BMl5BanBnXkFtZTgwMTc2MzQ2NjE@._V1_.jpg" },
+    { titulo: "Pokémon Temporada 10: Diamante y Perla", categoria: "pokemon-canon", subtipo: "diamante-perla", tipo: "Serie", poster: "https://static.wikia.nocookie.net/doblaje/images/a/af/PokemonDiamond%26Pearl.jpg/revision/latest/thumbnail/width/360/height/360?cb=20221115225625&path-prefix=es" },
+    { titulo: "El Surgimiento de Darkrai", categoria: "pokemon-canon", subtipo: "diamante-perla", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTQ4MTYzODUzMF5BMl5BanBnXkFtZTgwMTcxOTk0MDE@._V1_.jpg" },
+    { titulo: "Pokémon Temporada 11: Dimensión de Batalla", categoria: "pokemon-canon", subtipo: "diamante-perla", tipo: "Serie", poster: "https://m.media-amazon.com/images/I/81H6PhOeyOL._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Giratina y El Guerrero Celestial", categoria: "pokemon-canon", subtipo: "diamante-perla", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMmM5NGJhMDUtYTRjMy00MTE3LTg0ZGItN2FlMjljNTljYTkzXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Pokémon Temporada 12: Batallas Galácticas", categoria: "pokemon-canon", subtipo: "diamante-perla", tipo: "Serie", poster: "https://images.justwatch.com/poster/264631712/s718/temporada-12.jpg" },
+    { titulo: "Arceus y La Joya de La Vida", categoria: "pokemon-canon", subtipo: "diamante-perla", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/4ghGJZl9N5VZkHy4GFSAPhY5Jgt.jpg" },
+    { titulo: "Pokémon Temporada 13: Los Vencedores de La Liga Sinnoh", categoria: "pokemon-canon", subtipo: "diamante-perla", tipo: "Serie", poster: "https://images.justwatch.com/poster/264631718/s718/temporada-13.jpg" },
+    { titulo: "Zoroark: El Maestro de las Ilusiones", categoria: "pokemon-canon", subtipo: "diamante-perla", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOTA2N2M5YjQtYzU1My00YzVmLWIxZjUtM2I4NDJiNWVjOWIzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Pokémon Temporada 14: Blanco y Negro", categoria: "pokemon-canon", subtipo: "blanco-negro", tipo: "Serie", poster: "https://pics.filmaffinity.com/pokemon_black_and_white-444878062-large.jpg" },
+    { titulo: "Blanco: Victini y Zekrom", categoria: "pokemon-canon", subtipo: "blanco-negro", tipo: "Película", poster: "https://play-lh.googleusercontent.com/KaBuu6bPm9wmLUxOQSbJMfp2-_7RnlCF0Kogk5ya6pfkJ0F2iWegnYaL68Kd8Q4WJaJX" },
+    { titulo: "Negro: Victini y Reshiram", categoria: "pokemon-canon", subtipo: "blanco-negro", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/aoxL0o7EISponMR0GWOLMGC6aBu.jpg" },
+    { titulo: "Pokémon Temporada 15: Destinos Rivales", categoria: "pokemon-canon", subtipo: "blanco-negro", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/87N3UhDUIBSm2WtmqbJuPMzUDNx.jpg" },
+    { titulo: "Kyurem Contra el Espadachín Místico", categoria: "pokemon-canon", subtipo: "blanco-negro", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/vmORavGBn3SgyihusgcETgt0yyU.jpg" },
+    { titulo: "Pokémon Temporada 16: Aventuras en Unova y Más Allá", categoria: "pokemon-canon", subtipo: "blanco-negro", tipo: "Serie", poster: "https://m.media-amazon.com/images/I/81PF74pHILL._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Genesect y El Despertar de Una Leyenda", categoria: "pokemon-canon", subtipo: "blanco-negro", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMjYxZTM1N2UtZjFhOC00YTk3LThmNTEtNGZhNzYyZjc5NmFjXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Pokémon Temporada 17: XY", categoria: "pokemon-canon", subtipo: "xy-xyz", tipo: "Serie", poster: "https://static.wikia.nocookie.net/espokemon/images/c/c7/P%C3%B3ster_temporada_XY_ingl%C3%A9s.png/revision/latest/scale-to-width-down/724?cb=20180115221659" },
+    { titulo: "Diancie y La Crisálida de la Destrucción", categoria: "pokemon-canon", subtipo: "xy-xyz", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/rWqWsQfpRp4nogfg18xeZd4oDTe.jpg" },
+    { titulo: "Pokémon Temporada 18: XY – Expediciones en Kalos", categoria: "pokemon-canon", subtipo: "xy-xyz", tipo: "Serie", poster: "https://static.wikia.nocookie.net/espokemon/images/0/07/P%C3%B3ster_temporada_XY_Expediciones_en_Kalos_ingl%C3%A9s.png/revision/latest/scale-to-width-down/284?cb=20180115221203" },
+    { titulo: "Hoopa y Un Duelo Histórico", categoria: "pokemon-canon", subtipo: "xy-xyz", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/ydqfgeLgaygzRnYkNOPcGe68Tjf.jpg" },
+    { titulo: "Pokémon Temporada 19: XYZ", categoria: "pokemon-canon", subtipo: "xy-xyz", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/mPpM9GYrh40l47TqI5Ga7OZxIkZ.jpg" },
+    { titulo: "Volcanion y La Maravilla Mecánica", categoria: "pokemon-canon", subtipo: "xy-xyz", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTk0NzI2Y2YtOGVjYi00YTUwLWEwNmEtODk1YjlhYzQ0ZTY5XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Pokémon Temporada 20: Sol y Luna", categoria: "pokemon-canon", subtipo: "sol-luna", tipo: "Serie", poster: "https://static.wikia.nocookie.net/espokemon/images/c/cb/P%C3%B3ster_serie_Sol_y_Luna_espa%C3%B1ol.png/revision/latest/scale-to-width-down/233?cb=20161117204043" },
+    { titulo: "Pokémon Temporada 21: Ultra Aventuras", categoria: "pokemon-canon", subtipo: "sol-luna", tipo: "Serie", poster: "https://static.wikia.nocookie.net/espokemon/images/0/0b/P%C3%B3ster_temporada_Sol_y_Luna_Ultraaventuras.png/revision/latest/scale-to-width-down/853?cb=20180308173152" },
+    { titulo: "Pokémon Temporada 22: Ultra Leyendas", categoria: "pokemon-canon", subtipo: "sol-luna", tipo: "Serie", poster: "https://static.wikia.nocookie.net/espokemon/images/7/7e/P%C3%B3ster_temporada_Sol_y_Luna_Ultraleyendas.png/revision/latest/scale-to-width-down/490?cb=20190404223947" },
+    { titulo: "Pokémon Temporada 23: Viajes Pokémon", categoria: "pokemon-canon", subtipo: "viajes", tipo: "Serie", poster: "https://ramenparados.com/wp-content/uploads/2022/12/PokemonArcoFinalAsh.jpeg" },
+    { titulo: "Pokémon Temporada 24: Viajes Maestros", categoria: "pokemon-canon", subtipo: "viajes", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/wrZARmey5XeSj35rK5hF8rYg8e8.jpg" },
+    { titulo: "Pokémon Temporada 25: Viajes Definitivos", categoria: "pokemon-canon", subtipo: "viajes", tipo: "Serie", poster: "https://image.tmdb.org/t/p/w500/i6eNZRy0VcBrYfBufbI6NMmsstz.jpg" },
+    { titulo: "Aventuras de un Maestro Pokémon", categoria: "pokemon-canon", subtipo: "viajes", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/i6eNZRy0VcBrYfBufbI6NMmsstz.jpg" },
+    { titulo: "Pokémon Temporada 26: Horizontes Pokémon", categoria: "pokemon-canon", subtipo: "horizontes", tipo: "Serie", poster: "https://m.media-amazon.com/images/M/MV5BNDRiNzNiNjAtMWU5OS00ODYwLWI0NTAtZjYwNjVhMDE1NDhmXkEyXkFqcGc@._V1_.jpg" },
+
+    // --- BARRY KEOGHAN (con filtros por década) ---
+    { titulo: "La Leyenda de el Caballero Verde", categoria: "barry-keoghan", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNjRjNmU1M2ItNDU4Ni00ZGY2LTlmNzItY2MxYmY3OTllZjMwXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Eternals", categoria: "barry-keoghan", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/vgUZo9aVvRvCQFXwZC9zq3qCZT9.jpg" },
+    { titulo: "The Batman", categoria: "barry-keoghan", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71kUTilIdiL.jpg" },
+    { titulo: "The Banshees of Inisherin", categoria: "barry-keoghan", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOTkzMWI4OTEtMTk0MS00MTUxLWI4NTYtYmRiNWM4Zjc1MGRhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Saltburn", categoria: "barry-keoghan", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZjk4NGE3MWItMDRhMy00YzhiLTk0MGUtZDlkNmQxYWIxYzc2XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Bird", categoria: "barry-keoghan", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMGYzZDI4OTktZWJkZC00NjdiLTlkMjYtMzA1ZTVjMDU2M2FhXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Bring Them Down", categoria: "barry-keoghan", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNWVhMGNlODgtYzAyMS00OGJhLTkyOGItNDY3MjA4NjVjYzMzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Hurry Up Tomorrow", categoria: "barry-keoghan", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNDQ2MGIyNDQtYjVhOS00ZjI1LWFmYzctMWI2MGZhZGFhZWM4XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Crime 101", categoria: "barry-keoghan", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZThlN2M4ZTUtYTU3Mi00MDE5LWFhYWUtNjkxMWEwNjUwNDVhXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Peaky Blinders: The Immortal Man", categoria: "barry-keoghan", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNTdlNTNjNjctYTg2MC00NTFlLTliNTctODFiZjZmNWRkYTVlXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Butterfly Jam", categoria: "barry-keoghan", subtipo: "2020", tipo: "Película", poster: "https://a.ltrbxd.com/resized/film-poster/8/2/6/5/6/1/826561-butterfly-jam-2026-0-600-0-900-crop.jpg?v=f75124f773" },
 ];
 
 // ==========================================
@@ -686,6 +748,16 @@ const colecciones = [
         esContenedor: true,
         etiqueta: "Actor",
         progresoCategoria: "tom-holland",
+        peliculas: []
+    },
+    {
+        id: "barry-keoghan",
+        titulo: "Barry Keoghan",
+        categoria: "actores",
+        poster: "https://wallpapercave.com/wp/wp10914036.jpg",
+        esContenedor: true,
+        etiqueta: "Actor",
+        progresoCategoria: "barry-keoghan",
         peliculas: []
     },
     {
@@ -874,7 +946,7 @@ const colecciones = [
         id: "atajo-dc-videojuegos",
         titulo: "DC Comics",
         categoria: "videojuegos-explorar",
-        poster: "https://placehold.co/300x450?text=DC+Comics",
+        poster: "https://w0.peakpx.com/wallpaper/426/403/HD-wallpaper-knight-batman-arkham-knight-batman-thumbnail.jpg",
         esContenedor: true,
         atajoId: "dc-videojuegos",
         peliculas: []
@@ -883,10 +955,29 @@ const colecciones = [
         id: "atajo-lego-videojuegos",
         titulo: "LEGO Videojuegos",
         categoria: "videojuegos-explorar",
-        poster: "https://placehold.co/300x450?text=LEGO+Videojuegos",
+        poster: "https://w0.peakpx.com/wallpaper/185/537/HD-wallpaper-lego-brand-logo.jpg",
         esContenedor: true,
         atajoId: "lego-videojuegos",
         peliculas: []
+    },
+    {
+        id: "atajo-marvel-videojuegos",
+        titulo: "Marvel Videojuegos",
+        categoria: "videojuegos-explorar",
+        poster: "https://i.pinimg.com/originals/d5/06/c4/d506c42eb2c4ae09648d2e5e704cc4da.jpg",
+        esContenedor: true,
+        atajoId: "marvel-videojuegos",
+        peliculas: []
+    },
+    {
+        id: "grand-theft-auto",
+        titulo: "Grand Theft Auto",
+        categoria: "videojuegos-explorar",
+        poster: "https://i.pinimg.com/736x/e9/e6/90/e9e69071ab155fbc13975fa2b583ad82.jpg",
+        esVideojuego: true,
+        peliculas: [
+            { titulo: "GTA V", poster: "https://oyster.ignimgs.com/wordpress/stg.ign.com/2012/11/GTAV_poster_11.jpg" }
+        ]
     },
     {
         id: "franquicias",
@@ -897,10 +988,27 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "pokemon",
+        titulo: "Pokémon",
+        categoria: "franquicias",
+        poster: "https://i.pinimg.com/736x/7f/10/9a/7f109adedbe9912c95bd5cf4c13365f1.jpg",
+        esContenedor: true,
+        peliculas: []
+    },
+    {
+        id: "pokemon-canon",
+        titulo: "Canon",
+        categoria: "pokemon",
+        poster: "https://wallpapercg.com/media/ts_orig/12457.webp",
+        esContenedor: true,
+        progresoCategoria: "pokemon-canon",
+        peliculas: []
+    },
+    {
         id: "sitcoms",
         titulo: "Sitcoms",
         categoria: "explorar",
-        poster: "https://placehold.co/300x450?text=Sitcoms",
+        poster: "https://w0.peakpx.com/wallpaper/778/538/HD-wallpaper-friends-anos-90-chandler-joey-monica-phoebe-rachel-roxo-seriado-tv-show-thumbnail.jpg",
         esContenedor: true,
         peliculas: []
     },
@@ -1033,7 +1141,7 @@ const colecciones = [
         id: "indiana-jones",
         titulo: "Indiana Jones",
         categoria: "franquicias",
-        poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2020/05/IMG_5479-scaled.jpeg",
+        poster: "https://i.pinimg.com/564x/48/53/c3/4853c31098c1fc686c415080b4b761a3.jpg",
         peliculas: [
             { titulo: "Indiana Jones y Los Cazadores del Arca Perdida", poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2020/05/IMG_5479-scaled.jpeg" },
             { titulo: "Indiana Jones y El Templo de la Perdición", poster: "https://image.tmdb.org/t/p/original/gOZSOqw5p04SvLDMFQUJR8hz4PN.jpg" },
@@ -1065,7 +1173,7 @@ const colecciones = [
         id: "harry-potter",
         titulo: "Harry Potter",
         categoria: "mundo-magico",
-        poster: "https://www.originalfilmart.com/cdn/shop/files/harry_potter_and_the_sorcerers_stone_2001_original_film_art_5000x.webp?v=1684872812",
+        poster: "https://i.pinimg.com/originals/d5/06/c4/d506c42eb2c4ae09648d2e5e704cc4da.jpg",
         peliculas: [
             { titulo: "Harry Potter y La Piedra Filosofal", poster: "https://www.originalfilmart.com/cdn/shop/files/harry_potter_and_the_sorcerers_stone_2001_original_film_art_5000x.webp?v=1684872812" },
             { titulo: "Harry Potter y La Cámara Secreta", poster: "https://www.originalfilmart.com/cdn/shop/products/harry_potter_and_the_chamber_of_secrets_teaser_2002_original_film_art_5de45c44-7cae-43ab-acbe-16f0d3bebaa3_5000x.webp?v=1679945053" },
@@ -1693,7 +1801,7 @@ const colecciones = [
         id: "lego-videojuegos",
         titulo: "LEGO Videojuegos",
         categoria: "lego",
-        poster: "https://placehold.co/300x450?text=LEGO+Videojuegos",
+        poster: "https://w0.peakpx.com/wallpaper/185/537/HD-wallpaper-lego-brand-logo.jpg",
         esVideojuego: true,
         peliculas: [
             { titulo: "LEGO Star Wars: The Complete Saga", poster: "https://m.media-amazon.com/images/M/MV5BM2Q4NzYzMDEtMGM1ZC00YTBkLTgyNzctYjFjYjAwZWY3NTJkXkEyXkFqcGc@.V1.jpg" },
@@ -1723,7 +1831,7 @@ const colecciones = [
         id: "lego-audiovisual",
         titulo: "LEGO Audiovisual",
         categoria: "lego",
-        poster: "https://placehold.co/300x450?text=LEGO+Audiovisual",
+        poster: "https://w0.peakpx.com/wallpaper/185/537/HD-wallpaper-lego-brand-logo.jpg",
         peliculas: []
     }
 ];
@@ -2097,7 +2205,9 @@ function renderizarColecciones() {
         "mundo-magico": "seccion-mundo-magico",
         "estudios": "seccion-estudios",
         "game-of-thrones": "seccion-game-of-thrones",
-        "sitcoms": "seccion-sitcoms"
+        "sitcoms": "seccion-sitcoms",
+        "pokemon": "seccion-pokemon",
+        "pokemon-canon": "seccion-pokemon-canon"
     };
 
     colecciones.forEach(col => {
@@ -2227,7 +2337,9 @@ function abrirColeccion(colId) {
         'leonardo-dicaprio': '.btn-filtro-dicaprio[data-tipo="2020"]',
         'ryan-gosling': '.btn-filtro-gosling[data-tipo="2020"]',
         'sydney-sweeney': '.btn-filtro-sweeney[data-tipo="2020"]',
-        'tom-holland': '.btn-filtro-holland[data-tipo="2020"]'
+        'tom-holland': '.btn-filtro-holland[data-tipo="2020"]',
+        'barry-keoghan': '.btn-filtro-keoghan[data-tipo="2020"]',
+        'pokemon-canon': '.btn-filtro-pokemon[data-tipo="kanto-johto"]'
     };
     if (filtroPorDefecto[colId]) {
         const seccionActual = document.getElementById(`seccion-${colId}`);
@@ -2312,6 +2424,7 @@ function renderizarContenido() {
         "ryan-gosling": "seccion-ryan-gosling",
         "sydney-sweeney": "seccion-sydney-sweeney",
         "tom-holland": "seccion-tom-holland",
+        "barry-keoghan": "seccion-barry-keoghan",
         "oscar-2021": "seccion-oscar-2021",
         "oscar-2022": "seccion-oscar-2022",
         "oscar-2023": "seccion-oscar-2023",
@@ -2319,7 +2432,8 @@ function renderizarContenido() {
         "oscar-2025": "seccion-oscar-2025",
         "oscar-2026": "seccion-oscar-2026",
         "marvel-animacion": "seccion-marvel-animacion",
-        "sitcoms": "seccion-sitcoms"
+        "sitcoms": "seccion-sitcoms",
+        "pokemon-canon": "seccion-pokemon-canon"
     };
 
     listaMedia.forEach(item => {
@@ -3016,6 +3130,13 @@ if(btnVolverTomHolland) {
     });
 }
 
+const btnVolverBarryKeoghan = document.getElementById('btn-volver-barry-keoghan');
+if(btnVolverBarryKeoghan) {
+    btnVolverBarryKeoghan.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-actores'));
+    });
+}
+
 const btnVolverTimotheeChalamet = document.getElementById('btn-volver-timothee-chalamet');
 if(btnVolverTimotheeChalamet) {
     btnVolverTimotheeChalamet.addEventListener('click', () => {
@@ -3048,6 +3169,20 @@ const btnVolverSitcoms = document.getElementById('btn-volver-sitcoms');
 if(btnVolverSitcoms) {
     btnVolverSitcoms.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-explorar'));
+    });
+}
+
+const btnVolverPokemon = document.getElementById('btn-volver-pokemon');
+if(btnVolverPokemon) {
+    btnVolverPokemon.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-franquicias'));
+    });
+}
+
+const btnVolverPokemonCanon = document.getElementById('btn-volver-pokemon-canon');
+if(btnVolverPokemonCanon) {
+    btnVolverPokemonCanon.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-pokemon'));
     });
 }
 
@@ -3147,6 +3282,13 @@ if(btnVolverVideojuegosExplorar) {
 const btnVolverAssassinsCreed = document.getElementById('btn-volver-assassins-creed');
 if(btnVolverAssassinsCreed) {
     btnVolverAssassinsCreed.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-videojuegos-explorar'));
+    });
+}
+
+const btnVolverGrandTheftAuto = document.getElementById('btn-volver-grand-theft-auto');
+if(btnVolverGrandTheftAuto) {
+    btnVolverGrandTheftAuto.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-videojuegos-explorar'));
     });
 }
@@ -3550,6 +3692,40 @@ botonesFiltroHolland.forEach(boton => {
         this.classList.add('activo');
         const tipoElegido = this.getAttribute('data-tipo');
         const tarjetas = document.querySelectorAll('#seccion-tom-holland .tarjeta-media');
+
+        tarjetas.forEach(tarjeta => {
+            tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
+        });
+    });
+});
+
+// ==========================================
+// FILTROS "BARRY KEOGHAN" (por década)
+// ==========================================
+const botonesFiltroKeoghan = document.querySelectorAll('.btn-filtro-keoghan');
+botonesFiltroKeoghan.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroKeoghan.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const tipoElegido = this.getAttribute('data-tipo');
+        const tarjetas = document.querySelectorAll('#seccion-barry-keoghan .tarjeta-media');
+
+        tarjetas.forEach(tarjeta => {
+            tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
+        });
+    });
+});
+
+// ==========================================
+// FILTROS "POKÉMON: CANON" (por generación/era)
+// ==========================================
+const botonesFiltroPokemon = document.querySelectorAll('.btn-filtro-pokemon');
+botonesFiltroPokemon.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroPokemon.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const tipoElegido = this.getAttribute('data-tipo');
+        const tarjetas = document.querySelectorAll('#seccion-pokemon-canon .tarjeta-media');
 
         tarjetas.forEach(tarjeta => {
             tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
