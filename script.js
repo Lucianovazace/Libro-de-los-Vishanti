@@ -703,6 +703,14 @@ const listaMedia = [
     { titulo: "We Live in Time", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/vEmiJetB0C7VJjw60QNXO0oMMws.jpg" },
     { titulo: "Thunderbolts*", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71Y2ZfgT+4L.jpg" },
     { titulo: "Marvel Zombies", categoria: "florence-pugh", subtipo: "2020", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/5UbrwzZUR5lcoDds2phuahFHHhi.jpg" },
+
+    // --- EMMA STONE (con filtros por década) ---
+    { titulo: "The Croods: A New Age", categoria: "emma-stone", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61wgHMAdD7L.jpg" },
+    { titulo: "Cruella", categoria: "emma-stone", subtipo: "2020", tipo: "Película", poster: "https://purodiseno.lat/wp-content/uploads/2021/04/CRUELLA-692x1024.jpg" },
+    { titulo: "Poor Things", categoria: "emma-stone", subtipo: "2020", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/317259.jpg" },
+    { titulo: "Kinds of Kindness", categoria: "emma-stone", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/50lPmjIpDs8gKfgK7fPIeKzpllh.jpg" },
+    { titulo: "Eddington", categoria: "emma-stone", subtipo: "2020", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/315876.jpg" },
+    { titulo: "Bugonia", categoria: "emma-stone", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/fndDv16tDmgvMBJd2bb2w5CDxpe.jpg" },
 ];
 
 // ==========================================
@@ -898,6 +906,16 @@ const colecciones = [
         esContenedor: true,
         etiqueta: "Actriz",
         progresoCategoria: "florence-pugh",
+        peliculas: []
+    },
+    {
+        id: "emma-stone",
+        titulo: "Emma Stone",
+        categoria: "actores",
+        poster: "https://i.pinimg.com/736x/d2/7a/78/d27a78a6976b1247b22f4ba40d48c052.jpg",
+        esContenedor: true,
+        etiqueta: "Actriz",
+        progresoCategoria: "emma-stone",
         peliculas: []
     },
     {
@@ -2509,6 +2527,7 @@ function abrirColeccion(colId) {
         'pixar': '.btn-filtro-pixar[data-tipo="2020"]',
         'brad-pitt': '.btn-filtro-pitt[data-tipo="2020"]',
         'florence-pugh': '.btn-filtro-pugh[data-tipo="2020"]',
+        'emma-stone': '.btn-filtro-stone[data-tipo="2020"]',
         'pokemon-canon': '.btn-filtro-pokemon[data-tipo="kanto-johto"]'
     };
     if (filtroPorDefecto[colId]) {
@@ -2599,6 +2618,7 @@ function renderizarContenido() {
         "pixar": "seccion-pixar",
         "brad-pitt": "seccion-brad-pitt",
         "florence-pugh": "seccion-florence-pugh",
+        "emma-stone": "seccion-emma-stone",
         "oscar-2021": "seccion-oscar-2021",
         "oscar-2022": "seccion-oscar-2022",
         "oscar-2023": "seccion-oscar-2023",
@@ -3312,6 +3332,13 @@ if(btnVolverFlorencePugh) {
     });
 }
 
+const btnVolverEmmaStone = document.getElementById('btn-volver-emma-stone');
+if(btnVolverEmmaStone) {
+    btnVolverEmmaStone.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-actores'));
+    });
+}
+
 const btnVolverTomHolland = document.getElementById('btn-volver-tom-holland');
 if(btnVolverTomHolland) {
     btnVolverTomHolland.addEventListener('click', () => {
@@ -4010,6 +4037,23 @@ botonesFiltroPugh.forEach(boton => {
 });
 
 // ==========================================
+// FILTROS "EMMA STONE" (por década)
+// ==========================================
+const botonesFiltroStone = document.querySelectorAll('.btn-filtro-stone');
+botonesFiltroStone.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroStone.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const tipoElegido = this.getAttribute('data-tipo');
+        const tarjetas = document.querySelectorAll('#seccion-emma-stone .tarjeta-media');
+
+        tarjetas.forEach(tarjeta => {
+            tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
+        });
+    });
+});
+
+// ==========================================
 // FILTROS "POKÉMON: CANON" (por generación/era)
 // ==========================================
 const botonesFiltroPokemon = document.querySelectorAll('.btn-filtro-pokemon');
@@ -4110,6 +4154,7 @@ let huboSesionAntes = false;
 let titulosVistosGuardados = new Set();
 let logrosYaNotificados = new Set();
 let ultimoGuardadoPendiente = Promise.resolve();
+let ultimoGuardadoExitoso = true;
 let guardadoEnProgreso = false;
 
 const modalLogin = document.getElementById('modal-login');
@@ -4139,14 +4184,17 @@ if(btnLoginModal) {
                 // Espera a que termine de viajar a la nube el último guardado
                 // pendiente antes de cerrar sesión, para no cortarlo a mitad
                 // de camino (eso hacía que "se perdiera" lo último marcado)
+                const textoOriginal = btnLoginModal.textContent;
                 btnLoginModal.textContent = '⏳ Guardando...';
                 btnLoginModal.disabled = true;
-                try {
-                    await ultimoGuardadoPendiente;
-                } catch (e) {
-                    // si falló el guardado ya se avisó con el cartel de error; igual cerramos sesión
-                }
+                await ultimoGuardadoPendiente;
                 btnLoginModal.disabled = false;
+
+                if (!ultimoGuardadoExitoso) {
+                    btnLoginModal.textContent = textoOriginal;
+                    alert('No se pudo guardar tu último cambio (revisá tu conexión a internet). No vamos a cerrar la sesión todavía para que no lo pierdas — probá marcarlo de nuevo.');
+                    return;
+                }
                 auth.signOut();
             }
         } else {
@@ -4313,9 +4361,12 @@ function guardarProgresoUsuario(titulos, marcado) {
     }
 
     guardadoEnProgreso = true;
-    ultimoGuardadoPendiente = db.collection('usuarios').doc(usuarioActual.uid).set(actualizacion, { merge: true }).catch(err => {
+    ultimoGuardadoPendiente = db.collection('usuarios').doc(usuarioActual.uid).set(actualizacion, { merge: true }).then(() => {
+        ultimoGuardadoExitoso = true;
+    }).catch(err => {
         console.error('Error guardando progreso:', err);
         mostrarErrorGuardado(err);
+        ultimoGuardadoExitoso = false;
     }).finally(() => {
         guardadoEnProgreso = false;
     });
