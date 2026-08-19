@@ -2439,7 +2439,7 @@ function renderizarColecciones() {
 // Inyecta las películas de una colección en su grilla si todavía no están dibujadas
 function asegurarPeliculasRenderizadas(col) {
     const grilla = document.getElementById(`grilla-${col.id}`);
-    if (!grilla || grilla.children.length > 0 || col.peliculas.length === 0) return;
+    if (!grilla || grilla.dataset.peliculasRenderizadas === 'true' || col.peliculas.length === 0) return;
 
     const textoPendiente = col.esVideojuego ? 'Marcar Jugado' : 'Marcar Visto';
     const etiquetaItem = col.esVideojuego ? 'Videojuego' : (col.esSerie ? 'Serie' : 'Película');
@@ -2454,6 +2454,7 @@ function asegurarPeliculasRenderizadas(col) {
         `;
         grilla.insertAdjacentHTML('beforeend', htmlPelicula);
     });
+    grilla.dataset.peliculasRenderizadas = 'true';
     sincronizarVistos();
 }
 
@@ -4245,15 +4246,45 @@ function aplicarVistosGuardados(raiz) {
     });
 }
 
+// Algunos títulos cambiaron de nombre en el camino (ej: "Dune" pasó a llamarse
+// "Dune: Parte Uno" cuando armamos la saga completa). Si alguien había marcado
+// como visto el nombre VIEJO antes de ese cambio, hoy ya no coincide con nada
+// y la marca queda "huérfana" — invisible en toda la app aunque siga guardada.
+// Este mapa corrige automáticamente esos casos conocidos al cargar los datos.
+const migracionTitulosViejos = {
+    "Dune": "Dune: Parte Uno",
+    "Dune: Part Two": "Dune: Parte Dos",
+    "Injustice": "Injustice Movie",
+    "Avengers: Los Héroes Más Poderosos de la Tierra (Tierra-8096)": "Avengers: Los Héroes Más Poderosos de la Tierra"
+};
+
 function cargarProgresoUsuario() {
     if (!usuarioActual) return;
     db.collection('usuarios').doc(usuarioActual.uid).get().then(doc => {
-        titulosVistosGuardados = new Set(doc.exists ? (doc.data().vistos || []) : []);
+        const vistosGuardados = doc.exists ? (doc.data().vistos || []) : [];
+
+        let huboMigracion = false;
+        const vistosCorregidos = vistosGuardados.map(t => {
+            if (migracionTitulosViejos[t]) {
+                huboMigracion = true;
+                return migracionTitulosViejos[t];
+            }
+            return t;
+        });
+
+        titulosVistosGuardados = new Set(vistosCorregidos);
         // Los logros que ya tenías desbloqueados no deben volver a notificarse
         logrosYaNotificados = new Set(logrosDisponibles.filter(l => l.condicion(titulosVistosGuardados)).map(l => l.id));
         aplicarVistosGuardados(document);
         actualizarTodasLasColecciones();
         renderizarLogros();
+
+        // Si corregimos algo, lo guardamos ya mismo para no repetir esto en cada login
+        if (huboMigracion) {
+            db.collection('usuarios').doc(usuarioActual.uid).set({
+                vistos: Array.from(titulosVistosGuardados)
+            }, { merge: true }).catch(err => console.error('Error guardando migración de títulos:', err));
+        }
     }).catch(err => console.error('Error cargando progreso:', err));
 }
 
