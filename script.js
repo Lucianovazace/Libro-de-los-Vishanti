@@ -4308,7 +4308,10 @@ const migracionTitulosViejos = {
 
 function cargarProgresoUsuario() {
     if (!usuarioActual) return;
-    db.collection('usuarios').doc(usuarioActual.uid).get().then(doc => {
+    // { source: 'server' } fuerza a ir a buscar los datos reales a Firebase,
+    // en vez de conformarse con lo que el dispositivo tenga guardado en su
+    // caché local (que puede estar desactualizado, sobre todo entre dispositivos)
+    db.collection('usuarios').doc(usuarioActual.uid).get({ source: 'server' }).then(doc => {
         const vistosGuardados = doc.exists ? (doc.data().vistos || []) : [];
 
         let huboMigracion = false;
@@ -4333,7 +4336,10 @@ function cargarProgresoUsuario() {
                 vistos: Array.from(titulosVistosGuardados)
             }, { merge: true }).catch(err => console.error('Error guardando migración de títulos:', err));
         }
-    }).catch(err => console.error('Error cargando progreso:', err));
+    }).catch(err => {
+        console.error('Error cargando progreso:', err);
+        mostrarErrorGuardado(err);
+    });
 }
 
 function guardarProgresoUsuario(titulos, marcado) {
