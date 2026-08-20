@@ -184,9 +184,9 @@ const listaMedia = [
 
     // --- DC ELSEWORLDS: MULTIVERSO ---
     // "Stargirl" ahora es una ficha explorable con sus 3 temporadas (ver colecciones)
-    { titulo: "Titans", categoria: "dc-multiverso", subtipo: "liveaction", tipo: "Serie - Tierra 9", poster: "https://image.tmdb.org/t/p/original/awneRTOXqumB1fOPoUIXjUqksh5.jpg" },
-    { titulo: "Green Lantern", categoria: "dc-multiverso", subtipo: "liveaction", tipo: "Película - Tierra 12", poster: "https://m.media-amazon.com/images/I/71-ckdWvqfL.jpg" },
-    { titulo: "Swamp Thing", categoria: "dc-multiverso", subtipo: "liveaction", tipo: "Serie - Tierra 19", poster: "https://m.media-amazon.com/images/M/MV5BMGQzYzgxZWQtZmI3YS00YTIzLTk4NmQtMGE0YTdiNGNlZjYxXkEyXkFqcGc@.V1.jpg" },
+    { titulo: "Titans", categoria: "dc-multiverso", subtipo: "liveaction", tierra: 9, tipo: "Serie - Tierra 9", poster: "https://image.tmdb.org/t/p/original/awneRTOXqumB1fOPoUIXjUqksh5.jpg" },
+    { titulo: "Green Lantern", categoria: "dc-multiverso", subtipo: "liveaction", tierra: 12, tipo: "Película - Tierra 12", poster: "https://m.media-amazon.com/images/I/71-ckdWvqfL.jpg" },
+    { titulo: "Swamp Thing", categoria: "dc-multiverso", subtipo: "liveaction", tierra: 19, tipo: "Serie - Tierra 19", poster: "https://m.media-amazon.com/images/M/MV5BMGQzYzgxZWQtZmI3YS00YTIzLTk4NmQtMGE0YTdiNGNlZjYxXkEyXkFqcGc@.V1.jpg" },
 
     // --- GAME OF THRONES (con doble orden: salida / cronológico) ---
     // "Game of Thrones" y "House of the Dragon" ahora son fichas explorables (ver colecciones)
@@ -246,7 +246,7 @@ const listaMedia = [
     // --- STAR WARS: ANIMACIÓN ---
     { titulo: "The Clone Wars (Película)", categoria: "sw-animacion", crono: 4, tipo: "Película", poster: "https://cdn.europosters.eu/image/750/3335.jpg" },
     { titulo: "The Clone Wars (Serie)", categoria: "sw-animacion", crono: 5, tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/e1nWfnnCVqxS2LeTO3dwGyAsG2V.jpg" },
-    { titulo: "The Bad Batch", categoria: "sw-animacion", crono: 7, tipo: "Serie", poster: "https://myhotposters.com/cdn/shop/products/mL5264_1024x1024.jpg?v=1748532845" },
+    // "The Bad Batch" ahora es una ficha explorable con sus 3 temporadas (ver colecciones)
     { titulo: "Star Wars: Tales of the Underworld", categoria: "sw-animacion", crono: 7.5, tipo: "Serie (Antología)", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNFK8wlF1QPEfZkNraIHz1OgEvm4VhlXvAJMCN8uV_9r5gUdFFbIirvigX&s=10" },
     { titulo: "Maul: Shadow Lord", categoria: "sw-animacion", crono: 9, tipo: "Audiodrama", poster: "https://cdn.europosters.eu/image/1300/307057.jpg" },
     { titulo: "Star Wars Rebels", categoria: "sw-animacion", crono: 11, tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/eLrScs6Bs26JMcS8hiZhf7YRROr.jpg" },
@@ -711,6 +711,65 @@ const listaMedia = [
     { titulo: "Kinds of Kindness", categoria: "emma-stone", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/50lPmjIpDs8gKfgK7fPIeKzpllh.jpg" },
     { titulo: "Eddington", categoria: "emma-stone", subtipo: "2020", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/315876.jpg" },
     { titulo: "Bugonia", categoria: "emma-stone", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/fndDv16tDmgvMBJd2bb2w5CDxpe.jpg" },
+
+    // --- JENNA ORTEGA (con filtros por década) ---
+    { titulo: "The Babysitter: Killer Queen", categoria: "jenna-ortega", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BODk1ZmQ4ODItZjcwZi00MTUxLWE1YWMtMDY2NWJhNzJjMGEyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Jurassic World: Camp Cretaceous", categoria: "jenna-ortega", subtipo: "2020", tipo: "Serie", poster: "https://i.pinimg.com/736x/74/11/c3/7411c3caaacf8d11924f022c114cabad.jpg" },
+    { titulo: "Yes Day", categoria: "jenna-ortega", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNjNmYThjN2UtODc3YS00ZDMxLTk1OGItZmM2OTFiMzJiNDg2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "The Fallout", categoria: "jenna-ortega", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMzRmN2Q2NmYtODAxMi00OGZmLWIyODAtMjU0ZDVmNGNiY2EyXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Studio 666", categoria: "jenna-ortega", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMmJkYjg3YjEtYTEwMi00ODI0LWEwYmMtZDNmNTIzZDU0YTExXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "X", categoria: "jenna-ortega", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81GvfW5Fa7L._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "American Carnage", categoria: "jenna-ortega", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81vBUxhEzJL._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Wednesday", categoria: "jenna-ortega", subtipo: "2020", tipo: "Serie", poster: "https://m.media-amazon.com/images/I/712iUgQM16L._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Scream VI", categoria: "jenna-ortega", subtipo: "2020", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/750/317313.jpg" },
+    { titulo: "Miller's Girl", categoria: "jenna-ortega", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNmViZmI2NGYtNTU2YS00NDI1LTg1NjktMzdhNWVlODdmOWM1XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Winter Spring Summer or Fall", categoria: "jenna-ortega", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZmQ2MGRhYWQtZjQ4Ni00Y2EyLWI2OGQtOTYzNDkwZGU1NmI4XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Beetlejuice Beetlejuice", categoria: "jenna-ortega", subtipo: "2020", tipo: "Película", poster: "https://i.pinimg.com/736x/52/20/e4/5220e48893013343e515e148f0d387f9.jpg" },
+    { titulo: "Fantasmas", categoria: "jenna-ortega", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOGUxMmFjMjYtODQ2ZS00YTNiLWFjNDktNTRhMzgyYjcyOTMyXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Death of a Unicorn", categoria: "jenna-ortega", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNjUzMjhkZjktNTU5Mi00MzhmLWJhMTQtZjhkYjczOTEzM2M5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Hurry Up Tomorrow", categoria: "jenna-ortega", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNDQ2MGIyNDQtYjVhOS00ZjI1LWFmYzctMWI2MGZhZGFhZWM4XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Klara and the Sun", categoria: "jenna-ortega", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/xqovj2p6HRsgHxN81qYAYF4StgM.jpg" },
+
+    // --- MARGOT ROBBIE (con filtros por década) ---
+    { titulo: "Vigilante", categoria: "margot-robbie", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZjNjYjI2OGUtOTk0Zi00ZDlmLTgwZjYtOGY2YTUyZGM3ZDc5XkEyXkFqcGc@.V1.jpg" },
+    { titulo: "I.C.U", categoria: "margot-robbie", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYWMwMDg2YTQtODU5ZS00YzJmLWE2MWQtMTA0OWExNThhNmJiXkEyXkFqcGc@.V1.jpg" },
+    { titulo: "About Time", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTA1ODUzMDA3NzFeQTJeQWpwZ15BbWU3MDgxMTYxNTk@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "The Wolf of Wall Street", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@.V1.jpg" },
+    { titulo: "Z for Zachariah", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTUwMTUwODUzNV5BMl5BanBnXkFtZTgwMDIxMDE5NTE@.V1.jpg" },
+    { titulo: "Focus", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/51HjYkKwu8L.AC_UF894,1000_QL80.jpg" },
+    { titulo: "Suite Française", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/324706.jpg" },
+    { titulo: "The Big Short", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZDZkNDQ3YjktYjBlZC00YTY1LTgxOGYtY2RhMWFhZmNkZGY3XkEyXkFqcGc@.V1.jpg" },
+    { titulo: "Whiskey Tango Foxtrot", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/750/324143.jpg" },
+    { titulo: "La Leyenda de Tarzán", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMzY3OTI0OTcyMF5BMl5BanBnXkFtZTgwNjkxNTAwOTE@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "Suicide Squad", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/sk3FZgh3sRrmr8vyhaitNobMcfh.jpg" },
+    { titulo: "Goodbye Christopher Robin", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZGVmNWZiNDgtMzk2YS00ZGM2LWFjOTQtODk5OGRkZmMzNmYzXkEyXkFqcGc@.V1.jpg" },
+    { titulo: "Yo, Tonya", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/323134.jpg" },
+    { titulo: "Peter Rabbit", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", poster: "https://www.movieposters.com/cdn/shop/products/d859b47d3fdf1f8660e0f09f4afa7fa7_14b224a4-6698-4168-bde5-d98c55c626c1_1024x1024.jpg?v=1759439329" },
+    { titulo: "Terminal", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOTliYzYyYTAtNzBjMy00MGE2LThmOWMtZWM1ZmI0MDE1ZjM3XkEyXkFqcGc@.V1.jpg" },
+    { titulo: "Mary Queen of Scots", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", poster: "https://mir-s3-cdn-cf.behance.net/project_modules/hd/5166b095985439.5ea4161223dcd.jpg" },
+    { titulo: "Dreamland", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNzNhNmZhZjQtZTI0ZC00NDFhLWFlZTUtODE4NjgwZmMyZjI2XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "Once Upon a Time in Hollywood", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2019/06/IMG_9717.jpeg" },
+    { titulo: "Bombshell", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/51jbt9gccQL.jpg" },
+    { titulo: "Birds of Prey and The Fantabulous Emancipation of One Harley Quinn", categoria: "margot-robbie", subtipo: "2020", tipo: "Película", poster: "https://ew.com/thmb/sT-h3pYSc53fKCWxtv5ro4Midno=/2000x0/filters:no_upscale():max_bytes(150000):strip_icc()/birds-of-prey-2000-90f0db5838084a8a8c2eca14edd37e1f.jpg" },
+    { titulo: "Peter Rabbit 2: The Runaway", categoria: "margot-robbie", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71-gh-srLUL.AC_UF894,1000_QL80.jpg" },
+    { titulo: "The Suicide Squad", categoria: "margot-robbie", subtipo: "2020", tipo: "Película", poster: "https://postercity.com.ar/wp-content/uploads/2021/10/the-SUICIDE-SQUAD-60-X-90.jpg" },
+    { titulo: "Amsterdam", categoria: "margot-robbie", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNzgxNTQzYTEtMDI3Yi00OGQ1LWFkNGMtZDEyM2JlYmE0YzUyXkEyXkFqcGc@.V1.jpg" },
+    { titulo: "Babylon", categoria: "margot-robbie", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61hxWeyTYcL.AC_UF894,1000_QL80.jpg" },
+    { titulo: "Asteroid City", categoria: "margot-robbie", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61fyOxnYzHL.AC_UF894,1000_QL80.jpg" },
+    { titulo: "Barbie", categoria: "margot-robbie", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/dekMkQf0kqAmztUca9lX5e5Pjbp.jpg" },
+    { titulo: "A Big Bold Beautiful Journey", categoria: "margot-robbie", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMzMwZWJiYjEtM2RkMi00ZDhjLTk4ZmMtZDQ2NDY2YTJkOTE5XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "Wuthering Heights", categoria: "margot-robbie", subtipo: "2020", tipo: "Película", poster: "https://www.ecartelera.com/images/img/243200/243212_m.webp" },
+
+    // --- ANDREW GARFIELD (con filtros por década) ---
+    { titulo: "Mainstream", categoria: "andrew-garfield", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYzNjYzVlYzktMTEzZS00ZjViLTg0MmQtOWRkZjNlYWQ0MGQ1XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Los Ojos de Tammy Faye", categoria: "andrew-garfield", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMzcyY2JkZDYtMDEwNS00YzRlLTgxZTAtMDc1YTJmNWIxZjRlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Tick, Tick... Boom!", categoria: "andrew-garfield", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOGYyNGJmNzctYzZjZi00MzUzLTg3YTYtYjk0OTNjMzA1OTE4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Spider-Man: No Way Home", categoria: "andrew-garfield", subtipo: "2020", tipo: "Película", poster: "https://www.cinemascomics.com/wp-content/uploads/2022/01/poster-Spider-man-no-way-home.jpg" },
+    { titulo: "Under The Banner of Heaven", categoria: "andrew-garfield", subtipo: "2020", tipo: "Serie", poster: "https://m.media-amazon.com/images/M/MV5BMDM2ZTA1ZjItMDlhNS00ZTMyLWI5MDEtOTk0YWI5ZmZjZjBkXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "We Live in Time", categoria: "andrew-garfield", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/vEmiJetB0C7VJjw60QNXO0oMMws.jpg" },
+    { titulo: "After the Hunt", categoria: "andrew-garfield", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMzYyOTAwODEtZTY4My00MjVkLWJjYjUtMjE2N2UzYTE3MTY3XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "The Magic Faraway Tree", categoria: "andrew-garfield", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNGUzNzQzNWQtZTI2My00YmE2LTkyYzItNzFhMTM3OTVkYmNlXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "The Uprising", categoria: "andrew-garfield", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BODc1ZWRlMjQtMDc4NC00ODczLWIwNGMtZmFlZjA3YzIyZWVhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
 ];
 
 // ==========================================
@@ -825,6 +884,7 @@ const colecciones = [
         categoria: "dc-multiverso",
         poster: "https://image.tmdb.org/t/p/original/vlv1gn98GqMnKHLSh0dNciqGfBl.jpg",
         subtipo: "liveaction",
+        tierra: 39,
         etiqueta: "Serie - Tierra 39",
         peliculas: [
             { titulo: "Superman y Lois Temporada 1", poster: "https://image.tmdb.org/t/p/original/vlv1gn98GqMnKHLSh0dNciqGfBl.jpg" },
@@ -840,11 +900,41 @@ const colecciones = [
         categoria: "dc-multiverso",
         poster: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p18061959_b_v12_af.jpg",
         subtipo: "liveaction",
+        tierra: 2,
         etiqueta: "Serie - Tierra 2",
         peliculas: [
             { titulo: "Stargirl Temporada 1", poster: "https://image.tmdb.org/t/p/original/nPXo3mGt51wDeZt5YbT3evMqDiH.jpg" },
             { titulo: "Stargirl Temporada 2", poster: "https://image.tmdb.org/t/p/original/q3EFMfQFAnvSCHhZSOxq4AOsgN9.jpg" },
             { titulo: "Stargirl Temporada 3", poster: "https://static.wikia.nocookie.net/stargirltv/images/2/2a/Stargirl_Season_3_Poster.jpeg/revision/latest?cb=20220803163836" }
+        ]
+    },
+    {
+        id: "batman-trilogia-nolan",
+        titulo: "Batman – Trilogía de Nolan",
+        categoria: "dc-multiverso",
+        poster: "https://i.pinimg.com/736x/d7/36/c2/d736c2ebc5976a2b9390199f015871a9.jpg",
+        subtipo: "liveaction",
+        tierra: 205,
+        etiqueta: "Trilogía - Tierra 205",
+        peliculas: [
+            { titulo: "Batman Inicia", poster: "https://i.pinimg.com/736x/67/88/19/678819ae9fc2b7104ecc124f2e586c05.jpg" },
+            { titulo: "The Dark Knight", poster: "https://image.tmdb.org/t/p/original/o8i8EDSWiwzTIiaMgyPnESKYIVd.jpg" },
+            { titulo: "The Dark Knight Rises", poster: "https://m.media-amazon.com/images/M/MV5BMTk4ODQzNDY3Ml5BMl5BanBnXkFtZTcwODA0NTM4Nw@@._V1_FMjpg_UX1000_.jpg" }
+        ]
+    },
+    {
+        id: "batman-90s",
+        titulo: "Batman – 90's",
+        categoria: "dc-multiverso",
+        poster: "https://i.pinimg.com/474x/92/14/fd/9214fd62db2562734efa3e7698735033.jpg",
+        subtipo: "liveaction",
+        tierra: 89,
+        etiqueta: "Saga - Tierra 89",
+        peliculas: [
+            { titulo: "Batman (1989)", poster: "https://www.originalfilmart.com/cdn/shop/products/batman_1989_original_film_art_f_1600x.jpg?v=1562541693" },
+            { titulo: "Batman Regresa", poster: "https://m.media-amazon.com/images/M/MV5BZTliMDVkYTktZDdlMS00NTAwLWJhNzYtMWIwMDZjN2ViMGFiXkEyXkFqcGc@._V1_.jpg" },
+            { titulo: "Batman Forever", poster: "https://www.originalfilmart.com/cdn/shop/files/BatmanForever_1995_Val_Kilmer_adv_original_film_art_5000x.webp?v=1684435176" },
+            { titulo: "Batman & Robin", poster: "https://m.media-amazon.com/images/I/71v6GPOxgGL._AC_UF894,1000_QL80_.jpg" }
         ]
     },
     {
@@ -919,6 +1009,26 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "jenna-ortega",
+        titulo: "Jenna Ortega",
+        categoria: "actores",
+        poster: "https://i.pinimg.com/736x/67/1b/d1/671bd12d4f14031b6e587c51265e21a4.jpg",
+        esContenedor: true,
+        etiqueta: "Actriz",
+        progresoCategoria: "jenna-ortega",
+        peliculas: []
+    },
+    {
+        id: "andrew-garfield",
+        titulo: "Andrew Garfield",
+        categoria: "actores",
+        poster: "https://i.pinimg.com/736x/ea/7a/72/ea7a72966b7f3fbf7a9694e434605cf8.jpg",
+        esContenedor: true,
+        etiqueta: "Actor",
+        progresoCategoria: "andrew-garfield",
+        peliculas: []
+    },
+    {
         id: "tom-holland",
         titulo: "Tom Holland",
         categoria: "actores",
@@ -980,37 +1090,10 @@ const colecciones = [
         titulo: "Margot Robbie",
         categoria: "actores",
         poster: "https://i.pinimg.com/736x/e4/36/c0/e436c08cbe530e490c7102a100fcae06.jpg",
+        esContenedor: true,
         etiqueta: "Actriz",
-        peliculas: [
-            { titulo: "Vigilante", poster: "https://m.media-amazon.com/images/M/MV5BZjNjYjI2OGUtOTk0Zi00ZDlmLTgwZjYtOGY2YTUyZGM3ZDc5XkEyXkFqcGc@.V1.jpg" },
-            { titulo: "I.C.U", poster: "https://m.media-amazon.com/images/M/MV5BYWMwMDg2YTQtODU5ZS00YzJmLWE2MWQtMTA0OWExNThhNmJiXkEyXkFqcGc@.V1.jpg" },
-            { titulo: "About Time", poster: "https://m.media-amazon.com/images/M/MV5BMTA1ODUzMDA3NzFeQTJeQWpwZ15BbWU3MDgxMTYxNTk@.V1_FMjpg_UX1000.jpg" },
-            { titulo: "The Wolf of Wall Street", poster: "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@.V1.jpg" },
-            { titulo: "Z for Zachariah", poster: "https://m.media-amazon.com/images/M/MV5BMTUwMTUwODUzNV5BMl5BanBnXkFtZTgwMDIxMDE5NTE@.V1.jpg" },
-            { titulo: "Focus", poster: "https://m.media-amazon.com/images/I/51HjYkKwu8L.AC_UF894,1000_QL80.jpg" },
-            { titulo: "Suite Française", poster: "https://cdng.europosters.eu/pod_public/1300/324706.jpg" },
-            { titulo: "The Big Short", poster: "https://m.media-amazon.com/images/M/MV5BZDZkNDQ3YjktYjBlZC00YTY1LTgxOGYtY2RhMWFhZmNkZGY3XkEyXkFqcGc@.V1.jpg" },
-            { titulo: "Whiskey Tango Foxtrot", poster: "https://cdng.europosters.eu/pod_public/750/324143.jpg" },
-            { titulo: "La Leyenda de Tarzán", poster: "https://m.media-amazon.com/images/M/MV5BMzY3OTI0OTcyMF5BMl5BanBnXkFtZTgwNjkxNTAwOTE@.V1_FMjpg_UX1000.jpg" },
-            { titulo: "Suicide Squad", poster: "https://image.tmdb.org/t/p/original/sk3FZgh3sRrmr8vyhaitNobMcfh.jpg" },
-            { titulo: "Goodbye Christopher Robin", poster: "https://m.media-amazon.com/images/M/MV5BZGVmNWZiNDgtMzk2YS00ZGM2LWFjOTQtODk5OGRkZmMzNmYzXkEyXkFqcGc@.V1.jpg" },
-            { titulo: "Yo, Tonya", poster: "https://cdng.europosters.eu/pod_public/1300/323134.jpg" },
-            { titulo: "Peter Rabbit", poster: "https://www.movieposters.com/cdn/shop/products/d859b47d3fdf1f8660e0f09f4afa7fa7_14b224a4-6698-4168-bde5-d98c55c626c1_1024x1024.jpg?v=1759439329" },
-            { titulo: "Terminal", poster: "https://m.media-amazon.com/images/M/MV5BOTliYzYyYTAtNzBjMy00MGE2LThmOWMtZWM1ZmI0MDE1ZjM3XkEyXkFqcGc@.V1.jpg" },
-            { titulo: "Mary Queen of Scots", poster: "https://mir-s3-cdn-cf.behance.net/project_modules/hd/5166b095985439.5ea4161223dcd.jpg" },
-            { titulo: "Dreamland", poster: "https://m.media-amazon.com/images/M/MV5BNzNhNmZhZjQtZTI0ZC00NDFhLWFlZTUtODE4NjgwZmMyZjI2XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
-            { titulo: "Once Upon a Time in Hollywood", poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2019/06/IMG_9717.jpeg" },
-            { titulo: "Bombshell", poster: "https://m.media-amazon.com/images/I/51jbt9gccQL.jpg" },
-            { titulo: "Birds of Prey and The Fantabulous Emancipation of One Harley Quinn", poster: "https://ew.com/thmb/sT-h3pYSc53fKCWxtv5ro4Midno=/2000x0/filters:no_upscale():max_bytes(150000):strip_icc()/birds-of-prey-2000-90f0db5838084a8a8c2eca14edd37e1f.jpg" },
-            { titulo: "Peter Rabbit 2: The Runaway", poster: "https://m.media-amazon.com/images/I/71-gh-srLUL.AC_UF894,1000_QL80.jpg" },
-            { titulo: "The Suicide Squad", poster: "https://postercity.com.ar/wp-content/uploads/2021/10/the-SUICIDE-SQUAD-60-X-90.jpg" },
-            { titulo: "Amsterdam", poster: "https://m.media-amazon.com/images/M/MV5BNzgxNTQzYTEtMDI3Yi00OGQ1LWFkNGMtZDEyM2JlYmE0YzUyXkEyXkFqcGc@.V1.jpg" },
-            { titulo: "Babylon", poster: "https://m.media-amazon.com/images/I/61hxWeyTYcL.AC_UF894,1000_QL80.jpg" },
-            { titulo: "Asteroid City", poster: "https://m.media-amazon.com/images/I/61fyOxnYzHL.AC_UF894,1000_QL80.jpg" },
-            { titulo: "Barbie", poster: "https://image.tmdb.org/t/p/original/dekMkQf0kqAmztUca9lX5e5Pjbp.jpg" },
-            { titulo: "A Big Bold Beautiful Journey", poster: "https://m.media-amazon.com/images/M/MV5BMzMwZWJiYjEtM2RkMi00ZDhjLTk4ZmMtZDQ2NDY2YTJkOTE5XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
-            { titulo: "Wuthering Heights", poster: "https://www.ecartelera.com/images/img/243200/243212_m.webp" }
-        ]
+        progresoCategoria: "margot-robbie",
+        peliculas: []
     },
     {
         id: "directores",
@@ -1237,7 +1320,7 @@ const colecciones = [
     {
         id: "estudios",
         titulo: "Estudios",
-        categoria: "franquicias",
+        categoria: "explorar",
         poster: "https://w0.peakpx.com/wallpaper/947/761/HD-wallpaper-hollywood-studios-vintage-film.jpg",
         esContenedor: true,
         peliculas: []
@@ -1495,6 +1578,19 @@ const colecciones = [
         poster: "https://lumiere-a.akamaihd.net/v1/images/image_5fcdd79b.jpeg",
         peliculas: [
             { titulo: "The Ninth Jedi", poster: "https://lumiere-a.akamaihd.net/v1/images/star-wars-the-ninth-jedi-teaser-poster-eng_2b2aba2f.jpeg?width=1136" }
+        ]
+    },
+    {
+        id: "sw-bad-batch",
+        titulo: "The Bad Batch",
+        categoria: "sw-animacion",
+        poster: "https://myhotposters.com/cdn/shop/products/mL5264_1024x1024.jpg?v=1748532845",
+        esSerie: true,
+        crono: 7,
+        peliculas: [
+            { titulo: "The Bad Batch Temporada 1", poster: "https://lumiere-a.akamaihd.net/v1/images/image_960b1844.jpeg" },
+            { titulo: "The Bad Batch Temporada 2", poster: "https://image.tmdb.org/t/p/w500/8ioSHilMhFczEYipgkaXI1KykeV.jpg" },
+            { titulo: "The Bad Batch Temporada 3", poster: "https://m.media-amazon.com/images/M/MV5BYmQzN2ViOTYtMWUxMy00YzdlLWEzZjktOWVjY2YzN2RiN2Q5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" }
         ]
     },
     {
@@ -2528,6 +2624,9 @@ function abrirColeccion(colId) {
         'brad-pitt': '.btn-filtro-pitt[data-tipo="2020"]',
         'florence-pugh': '.btn-filtro-pugh[data-tipo="2020"]',
         'emma-stone': '.btn-filtro-stone[data-tipo="2020"]',
+        'jenna-ortega': '.btn-filtro-ortega[data-tipo="2020"]',
+        'margot-robbie': '.btn-filtro-robbie[data-tipo="2020"]',
+        'andrew-garfield': '.btn-filtro-garfield[data-tipo="2020"]',
         'pokemon-canon': '.btn-filtro-pokemon[data-tipo="kanto-johto"]'
     };
     if (filtroPorDefecto[colId]) {
@@ -2619,6 +2718,9 @@ function renderizarContenido() {
         "brad-pitt": "seccion-brad-pitt",
         "florence-pugh": "seccion-florence-pugh",
         "emma-stone": "seccion-emma-stone",
+        "jenna-ortega": "seccion-jenna-ortega",
+        "margot-robbie": "seccion-margot-robbie",
+        "andrew-garfield": "seccion-andrew-garfield",
         "oscar-2021": "seccion-oscar-2021",
         "oscar-2022": "seccion-oscar-2022",
         "oscar-2023": "seccion-oscar-2023",
@@ -2670,10 +2772,10 @@ function renderizarContenido() {
 }
 
 // Ordena la grilla de "Marvel: Animación" por número de Tierra (ascendente).
-// Es necesario porque mezcla ítems sueltos y fichas-colección, que se dibujan
-// en dos pasadas distintas y no comparten orden natural en el DOM.
-function ordenarMarvelAnimacionPorTierra() {
-    const contenedor = document.querySelector('#seccion-marvel-animacion .grilla-biblioteca');
+// Ordena TODAS las tarjetas de una grilla (ítems sueltos + fichas-colección
+// mezclados) por su número de Tierra. Reutilizable para cualquier sección.
+function ordenarGrillaPorTierra(seccionId) {
+    const contenedor = document.querySelector(`#seccion-${seccionId} .grilla-biblioteca`);
     if (!contenedor) return;
     const tarjetas = Array.from(contenedor.querySelectorAll('.tarjeta-media'));
     tarjetas.sort((a, b) => parseFloat(a.getAttribute('data-tierra')) - parseFloat(b.getAttribute('data-tierra')));
@@ -2698,7 +2800,8 @@ function ordenarGrillaAlfabeticamente(seccionId) {
 document.addEventListener("DOMContentLoaded", () => {
     renderizarContenido();
     renderizarColecciones();
-    ordenarMarvelAnimacionPorTierra();
+    ordenarGrillaPorTierra('marvel-animacion');
+    ordenarGrillaPorTierra('dc-multiverso');
     ordenarGrillaAlfabeticamente('sitcoms');
     ordenarGrillaAlfabeticamente('franquicias');
     ordenarGrillaAlfabeticamente('actores');
@@ -2973,6 +3076,7 @@ const botonesNavegacion = [
     { btn: 'btn-mcu-multiverso', sec: 'seccion-mcu-multiverso' },
     { btn: 'btn-fox-xmen', sec: 'seccion-fox-xmen' },
     { btn: 'btn-fox-ff', sec: 'seccion-fox-ff' },
+    { btn: 'btn-universal', sec: 'seccion-universal' },
     { btn: 'btn-sony-tobey', sec: 'seccion-sony-tobey' },
     { btn: 'btn-sony-andrew', sec: 'seccion-sony-andrew' },
     { btn: 'btn-sony-ssu', sec: 'seccion-sony-ssu' },
@@ -3339,6 +3443,20 @@ if(btnVolverEmmaStone) {
     });
 }
 
+const btnVolverJennaOrtega = document.getElementById('btn-volver-jenna-ortega');
+if(btnVolverJennaOrtega) {
+    btnVolverJennaOrtega.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-actores'));
+    });
+}
+
+const btnVolverAndrewGarfield = document.getElementById('btn-volver-andrew-garfield');
+if(btnVolverAndrewGarfield) {
+    btnVolverAndrewGarfield.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-actores'));
+    });
+}
+
 const btnVolverTomHolland = document.getElementById('btn-volver-tom-holland');
 if(btnVolverTomHolland) {
     btnVolverTomHolland.addEventListener('click', () => {
@@ -3433,7 +3551,7 @@ if(btnVolverTheOffice) {
 const btnVolverEstudios = document.getElementById('btn-volver-estudios');
 if(btnVolverEstudios) {
     btnVolverEstudios.addEventListener('click', () => {
-        cambiarSeccion(document.getElementById('seccion-franquicias'));
+        cambiarSeccion(document.getElementById('seccion-explorar'));
     });
 }
 
@@ -3568,6 +3686,20 @@ if(btnVolverBlackLightning) {
 const btnVolverSupermanYLois = document.getElementById('btn-volver-superman-y-lois');
 if(btnVolverSupermanYLois) {
     btnVolverSupermanYLois.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dc-multiverso'));
+    });
+}
+
+const btnVolverBatmanTrilogiaNolan = document.getElementById('btn-volver-batman-trilogia-nolan');
+if(btnVolverBatmanTrilogiaNolan) {
+    btnVolverBatmanTrilogiaNolan.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dc-multiverso'));
+    });
+}
+
+const btnVolverBatman90s = document.getElementById('btn-volver-batman-90s');
+if(btnVolverBatman90s) {
+    btnVolverBatman90s.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-dc-multiverso'));
     });
 }
@@ -3804,6 +3936,13 @@ if(btnVolverDragonball) {
 const btnVolverSwVisions = document.getElementById('btn-volver-sw-visions');
 if(btnVolverSwVisions) {
     btnVolverSwVisions.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-sw-animacion'));
+    });
+}
+
+const btnVolverSwBadBatch = document.getElementById('btn-volver-sw-bad-batch');
+if(btnVolverSwBadBatch) {
+    btnVolverSwBadBatch.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-sw-animacion'));
     });
 }
@@ -4046,6 +4185,57 @@ botonesFiltroStone.forEach(boton => {
         this.classList.add('activo');
         const tipoElegido = this.getAttribute('data-tipo');
         const tarjetas = document.querySelectorAll('#seccion-emma-stone .tarjeta-media');
+
+        tarjetas.forEach(tarjeta => {
+            tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
+        });
+    });
+});
+
+// ==========================================
+// FILTROS "JENNA ORTEGA" (por década)
+// ==========================================
+const botonesFiltroOrtega = document.querySelectorAll('.btn-filtro-ortega');
+botonesFiltroOrtega.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroOrtega.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const tipoElegido = this.getAttribute('data-tipo');
+        const tarjetas = document.querySelectorAll('#seccion-jenna-ortega .tarjeta-media');
+
+        tarjetas.forEach(tarjeta => {
+            tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
+        });
+    });
+});
+
+// ==========================================
+// FILTROS "MARGOT ROBBIE" (por década)
+// ==========================================
+const botonesFiltroRobbie = document.querySelectorAll('.btn-filtro-robbie');
+botonesFiltroRobbie.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroRobbie.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const tipoElegido = this.getAttribute('data-tipo');
+        const tarjetas = document.querySelectorAll('#seccion-margot-robbie .tarjeta-media');
+
+        tarjetas.forEach(tarjeta => {
+            tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
+        });
+    });
+});
+
+// ==========================================
+// FILTROS "ANDREW GARFIELD" (por década)
+// ==========================================
+const botonesFiltroGarfield = document.querySelectorAll('.btn-filtro-garfield');
+botonesFiltroGarfield.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroGarfield.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const tipoElegido = this.getAttribute('data-tipo');
+        const tarjetas = document.querySelectorAll('#seccion-andrew-garfield .tarjeta-media');
 
         tarjetas.forEach(tarjeta => {
             tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';

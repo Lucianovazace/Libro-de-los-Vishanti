@@ -76,7 +76,7 @@
                             <button class="btn-subcategoria" id="btn-fox-ff">Cuatro Fantásticos</button>
                         </div>
 
-                        <button class="btn-subcategoria">Universal</button>
+                        <button class="btn-subcategoria" id="btn-universal">Universal</button>
                         
                         <!-- Sony subdividido -->
                         <button class="btn-subcategoria" id="btn-toggle-sony">Sony ▼</button>
@@ -200,6 +200,40 @@
         <div class="grilla-biblioteca"></div>
     </section>
 
+    <!-- COLECCIÓN: EMMA STONE (contenedor con filtros por década) -->
+    <section id="seccion-emma-stone" class="oculto">
+        <button class="btn-volver" id="btn-volver-emma-stone">← Volver a Actores</button>
+        <h2>Emma Stone</h2>
+        <div class="filtros-seccion">
+            <button class="btn-filtro-stone activo" data-tipo="2020">Década de 2020</button>
+            <button class="btn-filtro-stone" data-tipo="2010">Década de 2010</button>
+        </div>
+        <div class="grilla-biblioteca"></div>
+    </section>
+
+    <!-- COLECCIÓN: JENNA ORTEGA (contenedor con filtros por década) -->
+    <section id="seccion-jenna-ortega" class="oculto">
+        <button class="btn-volver" id="btn-volver-jenna-ortega">← Volver a Actores</button>
+        <h2>Jenna Ortega</h2>
+        <div class="filtros-seccion">
+            <button class="btn-filtro-ortega activo" data-tipo="2020">Década de 2020</button>
+            <button class="btn-filtro-ortega" data-tipo="2010">Década de 2010</button>
+        </div>
+        <div class="grilla-biblioteca"></div>
+    </section>
+
+    <!-- COLECCIÓN: ANDREW GARFIELD (contenedor con filtros por década) -->
+    <section id="seccion-andrew-garfield" class="oculto">
+        <button class="btn-volver" id="btn-volver-andrew-garfield">← Volver a Actores</button>
+        <h2>Andrew Garfield</h2>
+        <div class="filtros-seccion">
+            <button class="btn-filtro-garfield activo" data-tipo="2020">Década de 2020</button>
+            <button class="btn-filtro-garfield" data-tipo="2010">Década de 2010</button>
+            <button class="btn-filtro-garfield" data-tipo="2000">Década de 2000</button>
+        </div>
+        <div class="grilla-biblioteca"></div>
+    </section>
+
     <!-- COLECCIÓN: TOM HOLLAND (contenedor con filtros por década) -->
     <section id="seccion-tom-holland" class="oculto">
         <button class="btn-volver" id="btn-volver-tom-holland">← Volver a Actores</button>
@@ -242,11 +276,15 @@
         <div class="grilla-biblioteca" id="grilla-timothee-chalamet"></div>
     </section>
 
-    <!-- COLECCIÓN: MARGOT ROBBIE -->
+    <!-- COLECCIÓN: MARGOT ROBBIE (contenedor con filtros por década) -->
     <section id="seccion-margot-robbie" class="oculto">
         <button class="btn-volver" id="btn-volver-margot-robbie">← Volver a Actores</button>
         <h2>Margot Robbie</h2>
-        <div class="grilla-biblioteca" id="grilla-margot-robbie"></div>
+        <div class="filtros-seccion">
+            <button class="btn-filtro-robbie activo" data-tipo="2020">Década de 2020</button>
+            <button class="btn-filtro-robbie" data-tipo="2010">Década de 2010</button>
+        </div>
+        <div class="grilla-biblioteca"></div>
     </section>
 
     <!-- COLECCIÓN: DIRECTORES -->
@@ -500,7 +538,7 @@
 
     <!-- COLECCIÓN: ESTUDIOS -->
     <section id="seccion-estudios" class="oculto">
-        <button class="btn-volver" id="btn-volver-estudios">← Volver a Franquicias</button>
+        <button class="btn-volver" id="btn-volver-estudios">← Volver a Explorar</button>
         <h2>Estudios</h2>
         <div class="grilla-biblioteca" id="grilla-estudios"></div>
     </section>
@@ -994,6 +1032,20 @@
         <div class="grilla-biblioteca" id="grilla-superman-y-lois"></div>
     </section>
 
+    <!-- COLECCIÓN: BATMAN - TRILOGÍA DE NOLAN -->
+    <section id="seccion-batman-trilogia-nolan" class="oculto">
+        <button class="btn-volver" id="btn-volver-batman-trilogia-nolan">← Volver a Multiverso</button>
+        <h2>Batman – Trilogía de Nolan (Tierra-205)</h2>
+        <div class="grilla-biblioteca" id="grilla-batman-trilogia-nolan"></div>
+    </section>
+
+    <!-- COLECCIÓN: BATMAN - 90'S -->
+    <section id="seccion-batman-90s" class="oculto">
+        <button class="btn-volver" id="btn-volver-batman-90s">← Volver a Multiverso</button>
+        <h2>Batman – 90's (Tierra-89)</h2>
+        <div class="grilla-biblioteca" id="grilla-batman-90s"></div>
+    </section>
+
     <!-- ARROWVERSE -->
     <section id="seccion-arrowverse" class="oculto">
         <h2>Elseworlds: Arrowverse</h2>
@@ -1063,6 +1115,12 @@
         <div class="grilla-biblioteca"></div>
     </section>
 
+    <!-- UNIVERSAL -->
+    <section id="seccion-universal" class="oculto">
+        <h2>Multiverso Marvel: Universal</h2>
+        <div class="grilla-biblioteca"></div>
+    </section>
+
     <!-- SONY: SPIDER-MAN TOBEY -->
     <section id="seccion-sony-tobey" class="oculto">
         <h2>Spider-Man (Tobey Maguire)</h2>
@@ -1128,6 +1186,13 @@
         <button class="btn-volver" id="btn-volver-sw-visions">← Volver a Animación</button>
         <h2>Star Wars: Visions</h2>
         <div class="grilla-biblioteca" id="grilla-sw-visions"></div>
+    </section>
+
+    <!-- COLECCIÓN: THE BAD BATCH -->
+    <section id="seccion-sw-bad-batch" class="oculto">
+        <button class="btn-volver" id="btn-volver-sw-bad-batch">← Volver a Animación</button>
+        <h2>The Bad Batch</h2>
+        <div class="grilla-biblioteca" id="grilla-sw-bad-batch"></div>
     </section>
 
     <section id="seccion-sw-episodios" class="oculto">
