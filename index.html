@@ -22,6 +22,7 @@
     <nav class="nav-principal">
         <button id="btn-biblioteca" class="btn-nav" style="background-color: #28a745;">Mi Biblioteca 📚</button>
         <button id="btn-logros" class="btn-nav" style="background-color: #f1c40f; color: #1a1d24;">Logros 🏆</button>
+        <button id="btn-juegos" class="btn-nav" style="background-color: #e67e22;">Juegos 🎮</button>
         <button id="btn-amigos" class="btn-nav" style="background-color: #9b59b6;">Amigos 👥</button>
 
         <!-- Menú Road to Doomsday -->
@@ -340,6 +341,19 @@
             <button class="btn-filtro-hitchcock" data-tipo="1940">Década de 1940</button>
             <button class="btn-filtro-hitchcock" data-tipo="1930">Década de 1930</button>
             <button class="btn-filtro-hitchcock" data-tipo="1920">Década de 1920</button>
+        </div>
+        <div class="grilla-biblioteca"></div>
+    </section>
+
+    <!-- COLECCIÓN: DAVID FINCHER (contenedor con filtros por década) -->
+    <section id="seccion-david-fincher" class="oculto">
+        <button class="btn-volver" id="btn-volver-david-fincher">← Volver a Directores</button>
+        <h2>David Fincher</h2>
+        <div class="filtros-seccion">
+            <button class="btn-filtro-fincher activo" data-tipo="2020">Década de 2020</button>
+            <button class="btn-filtro-fincher" data-tipo="2010">Década de 2010</button>
+            <button class="btn-filtro-fincher" data-tipo="2000">Década de 2000</button>
+            <button class="btn-filtro-fincher" data-tipo="1990">Década de 1990</button>
         </div>
         <div class="grilla-biblioteca"></div>
     </section>
@@ -849,6 +863,44 @@
         <h2>Logros 🏆</h2>
         <p id="mensaje-logros" style="color:#aaa; font-size:13px; margin-bottom:15px;"></p>
         <div class="grilla-logros" id="grilla-logros"></div>
+    </section>
+
+    <!-- SECCIÓN: JUEGOS (HUB) -->
+    <section id="seccion-juegos" class="oculto">
+        <h2>Juegos 🎮</h2>
+        <p class="subtitulo-juegos">Elegí un juego para poner a prueba tu conocimiento del Multiverso.</p>
+        <div class="grilla-juegos" id="grilla-juegos">
+            <div class="tarjeta-juego" id="tarjeta-completar-elenco">
+                <div class="icono-juego">🎬</div>
+                <h3>Completa el Elenco</h3>
+                <p>Mencioná a todos los personajes de una película o equipo. ¡Ojo con los nombres alternativos!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: JUEGOS - SELECTOR DE ELENCOS -->
+    <section id="seccion-elenco-selector" class="oculto">
+        <button class="btn-volver" id="btn-volver-juegos-desde-selector">← Volver a Juegos</button>
+        <h2>Completa el Elenco 🎬</h2>
+        <p class="subtitulo-juegos">Elegí qué elenco querés completar.</p>
+        <div class="grilla-juegos" id="grilla-elencos"></div>
+    </section>
+
+    <!-- SECCIÓN: JUEGO - COMPLETAR ELENCO (JUGANDO) -->
+    <section id="seccion-elenco-jugar" class="oculto">
+        <button class="btn-volver" id="btn-volver-elenco-selector">← Volver a elencos</button>
+        <h2 id="titulo-elenco-jugar">Completa el Elenco</h2>
+        <p class="contador-elenco" id="contador-elenco">0/11 encontrados</p>
+
+        <div class="grilla-slots-elenco" id="grilla-slots-elenco"></div>
+
+        <div class="fila-input-elenco">
+            <input type="text" id="input-elenco" placeholder="Escribí un nombre..." autocomplete="off">
+            <button class="btn-modal" id="btn-adivinar-elenco">Adivinar</button>
+            <button class="btn-modal" id="btn-pista-elenco" style="background-color:#8e44ad;">💡 Pedir pista</button>
+        </div>
+
+        <p id="mensaje-elenco" class="mensaje-elenco"></p>
     </section>
 
     <!-- SECCIÓN: AMIGOS -->

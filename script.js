@@ -832,6 +832,31 @@ const listaMedia = [
     { titulo: "Tomb Raider (2013)", categoria: "tomb-raider", subtipo: "survivor", tipo: "Videojuego", poster: "https://m.media-amazon.com/images/M/MV5BZWRhNDIwMDQtOTE1ZS00YTQ1LThlYmYtYzBhZjE4NTEwZTIyXkEyXkFqcGc@._V1_.jpg" },
     { titulo: "Rise of The Tomb Raider", categoria: "tomb-raider", subtipo: "survivor", tipo: "Videojuego", poster: "https://m.media-amazon.com/images/M/MV5BMzI0NDJkNGUtOTc1MS00MzgyLThmYjgtOGU1YzdmYjhlMGU5XkEyXkFqcGc@._V1_.jpg" },
     { titulo: "Shadow of The Tomb Raider", categoria: "tomb-raider", subtipo: "survivor", tipo: "Videojuego", poster: "https://m.media-amazon.com/images/M/MV5BNTI1ZTM4YjgtZjY0My00YTE2LTlhMTUtMGJlY2UwNzY1NjZmXkEyXkFqcGc@._V1_.jpg" },
+
+    // --- ANDREW GARFIELD: Década de 2010 ---
+    { titulo: "Never Let Me Go", categoria: "andrew-garfield", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/yUFrKRBLbVAtgSBMTVAL4wOXq6z.jpg" },
+    { titulo: "The Social Network", categoria: "andrew-garfield", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/n0ybibhJtQ5icDqTp8eRytcIHJx.jpg" },
+    { titulo: "The Amazing Spider-Man", categoria: "andrew-garfield", subtipo: "2010", tipo: "Película", poster: "https://www.mubis.es/media/articles/1554/15320/nuevo-poster-y-trailer-de-the-amazing-spider-man-original.jpg" },
+    { titulo: "The Amazing Spider-Man 2", categoria: "andrew-garfield", subtipo: "2010", tipo: "Película", poster: "https://cdn.europosters.eu/image/750/20688.jpg" },
+    { titulo: "99 Homes", categoria: "andrew-garfield", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/6Zul5Spndok1WriSMfiyQFbAyLY.jpg" },
+    { titulo: "Hacksaw Ridge", categoria: "andrew-garfield", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/7FklL1g5VYV0mUKdnPwuFRuJiKy.jpg" },
+    { titulo: "Silence", categoria: "andrew-garfield", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/dIlmZqUGtuAHgsYgXpECrHGtER4.jpg" },
+    { titulo: "Breathe", categoria: "andrew-garfield", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/j4blxUNlu4CiaB07iNO02sWv6hb.jpg" },
+    { titulo: "Under The Silver Lake", categoria: "andrew-garfield", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/jDiPSt9oMcJbNzf8FZRtvU4rR98.jpg" },
+
+    // --- DAVID FINCHER (con filtros por década) ---
+    { titulo: "Mank", categoria: "david-fincher", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/vqYPkLSKESdWvUsTJiAYAHuGOpj.jpg" },
+    { titulo: "The Killer", categoria: "david-fincher", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/2q719JbdFBMPo22DEW4VDZpsCuk.jpg" },
+    { titulo: "The Social Network", categoria: "david-fincher", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/n0ybibhJtQ5icDqTp8eRytcIHJx.jpg" },
+    { titulo: "The Girl with the Dragon Tattoo", categoria: "david-fincher", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/vbLedKc1BUF4FOH1GyHW62FulCc.jpg" },
+    { titulo: "Gone Girl", categoria: "david-fincher", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/tQf4DUygWo64AOuqgk4jEDCE3Ws.jpg" },
+    { titulo: "Panic Room", categoria: "david-fincher", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/qdiEI16Ax9EPBbx5oSwp7eBclX9.jpg" },
+    { titulo: "Zodiac", categoria: "david-fincher", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/7osnnJ0QRfsUYzp3Pk2WUzmiJJa.jpg" },
+    { titulo: "El Curioso Caso de Benjamin Button", categoria: "david-fincher", subtipo: "2000", tipo: "Película", poster: "https://a.ltrbxd.com/resized/sm/upload/yh/ob/ip/lw/gjMR102u5hPdIAWX7O2rim8ZWgA-0-600-0-900-crop.jpg?v=3beffc5097" },
+    { titulo: "Alien 3", categoria: "david-fincher", subtipo: "1990", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/hlabk6APJUeihZDaSD9N6iI0f4g.jpg" },
+    { titulo: "Se7en", categoria: "david-fincher", subtipo: "1990", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/191nKfP0ehp3uIvWqgPbFmI4lv9.jpg" },
+    { titulo: "The Game", categoria: "david-fincher", subtipo: "1990", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/xZ4QX9O8jr0JrfZzRPkt1VLfo7c.jpg" },
+    { titulo: "Club de la Pelea", categoria: "david-fincher", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81D+KJkO4SL.jpg" },
 ];
 
 // ==========================================
@@ -1647,6 +1672,16 @@ const colecciones = [
         esContenedor: true,
         etiqueta: "Director",
         progresoCategoria: "alfred-hitchcock",
+        peliculas: []
+    },
+    {
+        id: "david-fincher",
+        titulo: "David Fincher",
+        categoria: "directores",
+        poster: "https://image.tmdb.org/t/p/original/jDiPSt9oMcJbNzf8FZRtvU4rR98.jpg",
+        esContenedor: true,
+        etiqueta: "Director",
+        progresoCategoria: "david-fincher",
         peliculas: []
     },
     {
@@ -2634,6 +2669,27 @@ const logrosDisponibles = [
         descripcion: "Alcanzá el 70% o más de las películas de Ryan Gosling",
         icono: "🎀",
         condicion: (vistos) => porcentajeCategoriaVisto(vistos, "ryan-gosling") >= 70
+    },
+    {
+        id: "como-comer-helado-en-la-cama",
+        nombre: "Como comer helado en la cama",
+        descripcion: "Alcanzá el 70% o más de las películas de Brad Pitt",
+        icono: "🍦",
+        condicion: (vistos) => porcentajeCategoriaVisto(vistos, "brad-pitt") >= 70
+    },
+    {
+        id: "un-escape",
+        nombre: "Un escape",
+        descripcion: "Alcanzá el 70% o más de las películas de Barry Keoghan",
+        icono: "🗝️",
+        condicion: (vistos) => porcentajeCategoriaVisto(vistos, "barry-keoghan") >= 70
+    },
+    {
+        id: "mantente-curioso",
+        nombre: "Mantente curioso",
+        descripcion: "Alcanzá el 70% o más de las películas de Andrew Garfield",
+        icono: "🕸️",
+        condicion: (vistos) => porcentajeCategoriaVisto(vistos, "andrew-garfield") >= 70
     }
 ];
 
@@ -2809,6 +2865,7 @@ function abrirColeccion(colId) {
         'margot-robbie': '.btn-filtro-robbie[data-tipo="2020"]',
         'andrew-garfield': '.btn-filtro-garfield[data-tipo="2020"]',
         'alfred-hitchcock': '.btn-filtro-hitchcock[data-tipo="1970"]',
+        'david-fincher': '.btn-filtro-fincher[data-tipo="2020"]',
         'tomb-raider': '.btn-filtro-tombraider[data-tipo="survivor"]',
         'pokemon-canon': '.btn-filtro-pokemon[data-tipo="kanto-johto"]'
     };
@@ -2906,6 +2963,7 @@ function renderizarContenido() {
         "margot-robbie": "seccion-margot-robbie",
         "andrew-garfield": "seccion-andrew-garfield",
         "alfred-hitchcock": "seccion-alfred-hitchcock",
+        "david-fincher": "seccion-david-fincher",
         "tomb-raider": "seccion-tomb-raider",
         "oscar-2021": "seccion-oscar-2021",
         "oscar-2022": "seccion-oscar-2022",
@@ -4072,6 +4130,13 @@ if(btnVolverAlfredHitchcock) {
     });
 }
 
+const btnVolverDavidFincher = document.getElementById('btn-volver-david-fincher');
+if(btnVolverDavidFincher) {
+    btnVolverDavidFincher.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-directores'));
+    });
+}
+
 const btnVolverArkhamverse = document.getElementById('btn-volver-arkhamverse');
 if(btnVolverArkhamverse) {
     btnVolverArkhamverse.addEventListener('click', () => {
@@ -4521,6 +4586,23 @@ botonesFiltroHitchcock.forEach(boton => {
         this.classList.add('activo');
         const tipoElegido = this.getAttribute('data-tipo');
         const tarjetas = document.querySelectorAll('#seccion-alfred-hitchcock .tarjeta-media');
+
+        tarjetas.forEach(tarjeta => {
+            tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
+        });
+    });
+});
+
+// ==========================================
+// FILTROS "DAVID FINCHER" (por década)
+// ==========================================
+const botonesFiltroFincher = document.querySelectorAll('.btn-filtro-fincher');
+botonesFiltroFincher.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroFincher.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const tipoElegido = this.getAttribute('data-tipo');
+        const tarjetas = document.querySelectorAll('#seccion-david-fincher .tarjeta-media');
 
         tarjetas.forEach(tarjeta => {
             tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
@@ -5010,6 +5092,211 @@ if (btnLogros) {
         renderizarLogros();
         calcularPorcentajesLogros();
         cambiarSeccion(document.getElementById('seccion-logros'));
+    });
+}
+
+// ==========================================
+// JUEGOS
+// ==========================================
+
+// --- Datos de elencos disponibles para "Completa el Elenco" ---
+// Para agregar un nuevo elenco, sumar una entrada nueva a este objeto con el mismo formato.
+const elencosDisponibles = {
+    "avengers-era-ultron": {
+        titulo: "Avengers: La Era de Ultron",
+        icono: "🎬",
+        personajes: [
+            { id: "iron_man", nombreMostrado: "Iron Man", actor: "Robert Downey Jr.", color: "rgba(231, 76, 60, 0.45)", alias: ["iron man", "ironman", "tony stark", "tony", "stark", "robert downey jr", "rdj"] },
+            { id: "capitan_america", nombreMostrado: "Capitán América", actor: "Chris Evans", color: "rgba(41, 128, 185, 0.45)", alias: ["capitan america", "captain america", "steve rogers", "steve", "rogers", "cap"] },
+            { id: "hulk", nombreMostrado: "Hulk", actor: "Mark Ruffalo", color: "rgba(39, 174, 96, 0.45)", alias: ["hulk", "bruce banner", "bruce", "banner"] },
+            { id: "thor", nombreMostrado: "Thor", actor: "Chris Hemsworth", color: "rgba(142, 68, 173, 0.45)", alias: ["thor", "thor odinson", "odinson", "dios del trueno"] },
+            { id: "hawkeye", nombreMostrado: "Hawkeye", actor: "Jeremy Renner", color: "rgba(75, 0, 130, 0.45)", alias: ["hawkeye", "ojo de halcon", "clint barton", "clint", "barton"] },
+            { id: "black_widow", nombreMostrado: "Black Widow", actor: "Scarlett Johansson", color: "rgba(139, 0, 0, 0.45)", alias: ["black widow", "viuda negra", "natasha romanoff", "natasha", "romanoff"] },
+            { id: "vision", nombreMostrado: "Vision", actor: "Paul Bettany", color: "rgba(212, 175, 55, 0.45)", alias: ["vision"] },
+            { id: "scarlet_witch", nombreMostrado: "Scarlet Witch", actor: "Elizabeth Olsen", color: "rgba(183, 28, 28, 0.45)", alias: ["scarlet witch", "bruja escarlata", "wanda maximoff", "wanda", "maximoff"] },
+            { id: "quicksilver", nombreMostrado: "Quicksilver", actor: "Aaron Taylor-Johnson", color: "rgba(127, 140, 141, 0.45)", alias: ["quicksilver", "mercurio", "pietro maximoff", "pietro"] },
+            { id: "falcon", nombreMostrado: "Falcon", actor: "Anthony Mackie", color: "rgba(230, 126, 34, 0.45)", alias: ["falcon", "halcon", "sam wilson", "sam", "wilson"] },
+            { id: "war_machine", nombreMostrado: "War Machine", actor: "Don Cheadle", color: "rgba(93, 109, 126, 0.45)", alias: ["war machine", "maquina de guerra", "james rhodes", "rhodey", "rhodes", "jim rhodes"] }
+        ]
+    }
+};
+
+let elencoActualId = null;
+let personajesEncontradosElenco = new Set();
+
+function normalizarTextoJuego(str) {
+    return str
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .trim()
+        .replace(/\s+/g, ' ');
+}
+
+function renderizarSelectorElencos() {
+    const grilla = document.getElementById('grilla-elencos');
+    if (!grilla) return;
+    grilla.innerHTML = '';
+    Object.entries(elencosDisponibles).forEach(([id, data]) => {
+        const tarjeta = document.createElement('div');
+        tarjeta.className = 'tarjeta-juego';
+        tarjeta.innerHTML = `
+            <div class="icono-juego">${data.icono}</div>
+            <h3>${data.titulo}</h3>
+            <p>${data.personajes.length} personajes por adivinar</p>
+        `;
+        tarjeta.addEventListener('click', () => iniciarJuegoElenco(id));
+        grilla.appendChild(tarjeta);
+    });
+}
+
+function iniciarJuegoElenco(id) {
+    const data = elencosDisponibles[id];
+    if (!data) return;
+    elencoActualId = id;
+    personajesEncontradosElenco = new Set();
+
+    document.getElementById('titulo-elenco-jugar').textContent = `Completa el Elenco: ${data.titulo}`;
+    const mensaje = document.getElementById('mensaje-elenco');
+    mensaje.textContent = '';
+    mensaje.className = 'mensaje-elenco';
+    document.getElementById('input-elenco').value = '';
+
+    renderizarSlotsElenco();
+    actualizarContadorElenco();
+    cambiarSeccion(document.getElementById('seccion-elenco-jugar'));
+}
+
+function renderizarSlotsElenco() {
+    const cont = document.getElementById('grilla-slots-elenco');
+    if (!cont) return;
+    const data = elencosDisponibles[elencoActualId];
+    cont.innerHTML = '';
+    data.personajes.forEach(p => {
+        const slot = document.createElement('div');
+        slot.className = 'slot-elenco';
+        slot.dataset.personajeId = p.id;
+        if (personajesEncontradosElenco.has(p.id)) {
+            slot.classList.add('resuelto');
+            slot.innerHTML = `<span class="nombre-personaje-slot">${p.nombreMostrado}</span><span class="actor-personaje-slot">${p.actor}</span>`;
+        } else {
+            slot.innerHTML = `<span class="signo-interrogacion">?</span>`;
+        }
+        cont.appendChild(slot);
+    });
+}
+
+function actualizarContadorElenco() {
+    const data = elencosDisponibles[elencoActualId];
+    const contador = document.getElementById('contador-elenco');
+    if (contador) contador.textContent = `${personajesEncontradosElenco.size}/${data.personajes.length} encontrados`;
+}
+
+function pedirPistaElenco() {
+    const data = elencosDisponibles[elencoActualId];
+    const mensaje = document.getElementById('mensaje-elenco');
+    const faltantes = data.personajes.filter(p => !personajesEncontradosElenco.has(p.id));
+
+    if (faltantes.length <= 1) {
+        mensaje.textContent = faltantes.length === 0
+            ? 'Ya completaste el elenco, no hay más pistas para dar.'
+            : 'Solo falta uno, ¡ese te lo tenés que jugar solo!';
+        mensaje.className = 'mensaje-elenco aviso';
+        return;
+    }
+
+    const elegido = faltantes[Math.floor(Math.random() * faltantes.length)];
+    const slot = document.querySelector(`.slot-elenco[data-personaje-id="${elegido.id}"]`);
+    if (slot && !slot.classList.contains('con-pista')) {
+        slot.style.boxShadow = `inset 4px 0 0 0 ${elegido.color}`;
+        slot.classList.add('con-pista');
+    }
+    mensaje.textContent = '💡 Pista revelada en uno de los casilleros vacíos.';
+    mensaje.className = 'mensaje-elenco aviso';
+}
+
+function intentarAdivinarElenco() {
+    const input = document.getElementById('input-elenco');
+    const valorNormalizado = normalizarTextoJuego(input.value);
+    const mensaje = document.getElementById('mensaje-elenco');
+    if (!valorNormalizado) return;
+
+    const data = elencosDisponibles[elencoActualId];
+    const encontrado = data.personajes.find(p =>
+        p.alias.some(alias => normalizarTextoJuego(alias) === valorNormalizado)
+    );
+
+    if (!encontrado) {
+        mensaje.textContent = `❌ "${input.value}" no forma parte de este elenco (o revisá cómo lo escribiste).`;
+        mensaje.className = 'mensaje-elenco error';
+    } else if (personajesEncontradosElenco.has(encontrado.id)) {
+        mensaje.textContent = `Ya habías adivinado a ${encontrado.nombreMostrado}.`;
+        mensaje.className = 'mensaje-elenco aviso';
+    } else {
+        personajesEncontradosElenco.add(encontrado.id);
+        renderizarSlotsElenco();
+        actualizarContadorElenco();
+
+        if (personajesEncontradosElenco.size === data.personajes.length) {
+            mensaje.textContent = `🎉 ¡Completaste el elenco de ${data.titulo}!`;
+            mensaje.className = 'mensaje-elenco victoria';
+        } else {
+            mensaje.textContent = `✅ ¡Correcto! ${encontrado.nombreMostrado}`;
+            mensaje.className = 'mensaje-elenco exito';
+        }
+    }
+
+    input.value = '';
+    input.focus();
+}
+
+const btnJuegos = document.getElementById('btn-juegos');
+if (btnJuegos) {
+    btnJuegos.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-juegos'));
+    });
+}
+
+const tarjetaCompletarElenco = document.getElementById('tarjeta-completar-elenco');
+if (tarjetaCompletarElenco) {
+    tarjetaCompletarElenco.addEventListener('click', () => {
+        renderizarSelectorElencos();
+        cambiarSeccion(document.getElementById('seccion-elenco-selector'));
+    });
+}
+
+const btnVolverJuegosDesdeSelector = document.getElementById('btn-volver-juegos-desde-selector');
+if (btnVolverJuegosDesdeSelector) {
+    btnVolverJuegosDesdeSelector.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-juegos'));
+    });
+}
+
+const btnVolverElencoSelector = document.getElementById('btn-volver-elenco-selector');
+if (btnVolverElencoSelector) {
+    btnVolverElencoSelector.addEventListener('click', () => {
+        renderizarSelectorElencos();
+        cambiarSeccion(document.getElementById('seccion-elenco-selector'));
+    });
+}
+
+const btnAdivinarElenco = document.getElementById('btn-adivinar-elenco');
+if (btnAdivinarElenco) {
+    btnAdivinarElenco.addEventListener('click', intentarAdivinarElenco);
+}
+
+const btnPistaElenco = document.getElementById('btn-pista-elenco');
+if (btnPistaElenco) {
+    btnPistaElenco.addEventListener('click', pedirPistaElenco);
+}
+
+const inputElenco = document.getElementById('input-elenco');
+if (inputElenco) {
+    inputElenco.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            intentarAdivinarElenco();
+        }
     });
 }
 

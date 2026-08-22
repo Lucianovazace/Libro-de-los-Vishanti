@@ -76,7 +76,7 @@ h1 {
     flex-wrap: wrap;
 }
 
-.btn-nav, .btn-categoria, .btn-subcategoria, .btn-filtro, .btn-filtro-arrowverse, .btn-filtro-dcu, .btn-filtro-dcmultiverso, .btn-filtro-it, .btn-filtro-got, .btn-filtro-mcu, .btn-filtro-ac, .btn-filtro-biblioteca, .btn-filtro-disney, .btn-filtro-oscar, .btn-filtro-dicaprio, .btn-filtro-gosling, .btn-filtro-ff, .btn-filtro-sweeney, .btn-filtro-holland, .btn-filtro-pokemon, .btn-filtro-keoghan, .btn-filtro-matrix, .btn-filtro-pixar, .btn-filtro-pitt, .btn-filtro-pugh, .btn-filtro-stone, .btn-filtro-ortega, .btn-filtro-robbie, .btn-filtro-garfield, .btn-filtro-hitchcock, .btn-filtro-tombraider {
+.btn-nav, .btn-categoria, .btn-subcategoria, .btn-filtro, .btn-filtro-arrowverse, .btn-filtro-dcu, .btn-filtro-dcmultiverso, .btn-filtro-it, .btn-filtro-got, .btn-filtro-mcu, .btn-filtro-ac, .btn-filtro-biblioteca, .btn-filtro-disney, .btn-filtro-oscar, .btn-filtro-dicaprio, .btn-filtro-gosling, .btn-filtro-ff, .btn-filtro-sweeney, .btn-filtro-holland, .btn-filtro-pokemon, .btn-filtro-keoghan, .btn-filtro-matrix, .btn-filtro-pixar, .btn-filtro-pitt, .btn-filtro-pugh, .btn-filtro-stone, .btn-filtro-ortega, .btn-filtro-robbie, .btn-filtro-garfield, .btn-filtro-hitchcock, .btn-filtro-tombraider, .btn-filtro-fincher {
     background-color: #2a2d35;
     color: white;
     border: none;
@@ -161,7 +161,7 @@ h2 {
     flex-wrap: wrap;
 }
 
-.btn-filtro.activo, .btn-filtro-arrowverse.activo, .btn-filtro-dcu.activo, .btn-filtro-dcmultiverso.activo, .btn-filtro-it.activo, .btn-filtro-got.activo, .btn-filtro-mcu.activo, .btn-filtro-ac.activo, .btn-filtro-biblioteca.activo, .btn-filtro-disney.activo, .btn-filtro-oscar.activo, .btn-filtro-dicaprio.activo, .btn-filtro-gosling.activo, .btn-filtro-ff.activo, .btn-filtro-sweeney.activo, .btn-filtro-holland.activo, .btn-filtro-pokemon.activo, .btn-filtro-keoghan.activo, .btn-filtro-matrix.activo, .btn-filtro-pixar.activo, .btn-filtro-pitt.activo, .btn-filtro-pugh.activo, .btn-filtro-stone.activo, .btn-filtro-ortega.activo, .btn-filtro-robbie.activo, .btn-filtro-garfield.activo, .btn-filtro-hitchcock.activo, .btn-filtro-tombraider.activo {
+.btn-filtro.activo, .btn-filtro-arrowverse.activo, .btn-filtro-dcu.activo, .btn-filtro-dcmultiverso.activo, .btn-filtro-it.activo, .btn-filtro-got.activo, .btn-filtro-mcu.activo, .btn-filtro-ac.activo, .btn-filtro-biblioteca.activo, .btn-filtro-disney.activo, .btn-filtro-oscar.activo, .btn-filtro-dicaprio.activo, .btn-filtro-gosling.activo, .btn-filtro-ff.activo, .btn-filtro-sweeney.activo, .btn-filtro-holland.activo, .btn-filtro-pokemon.activo, .btn-filtro-keoghan.activo, .btn-filtro-matrix.activo, .btn-filtro-pixar.activo, .btn-filtro-pitt.activo, .btn-filtro-pugh.activo, .btn-filtro-stone.activo, .btn-filtro-ortega.activo, .btn-filtro-robbie.activo, .btn-filtro-garfield.activo, .btn-filtro-hitchcock.activo, .btn-filtro-tombraider.activo, .btn-filtro-fincher.activo {
     background-color: var(--accent-color) !important;
     color: #fff !important;
 }
@@ -323,6 +323,150 @@ h2 {
     cursor: pointer;
     font-weight: bold;
     margin-bottom: 15px;
+}
+
+/* ==========================================
+   JUEGOS
+   ========================================== */
+.subtitulo-juegos {
+    color: #aaa;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.grilla-juegos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.tarjeta-juego {
+    background-color: #1e2129;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    border: 2px solid #333;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+.tarjeta-juego:hover {
+    transform: translateY(-3px);
+    border-color: #e67e22;
+}
+
+.icono-juego {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.tarjeta-juego h3 {
+    font-size: 16px;
+    margin-bottom: 6px;
+    color: #e67e22;
+}
+
+.tarjeta-juego p {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.contador-elenco {
+    font-size: 14px;
+    font-weight: bold;
+    color: #e67e22;
+    margin-bottom: 15px;
+}
+
+.grilla-slots-elenco {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.slot-elenco {
+    background-color: #1e2129;
+    border-radius: 8px;
+    border: 2px solid #333;
+    min-height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    text-align: center;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.slot-elenco .signo-interrogacion {
+    font-size: 24px;
+    color: #555;
+    font-weight: bold;
+}
+
+.slot-elenco.resuelto {
+    border-color: var(--success-color, #2ecc71);
+    background: linear-gradient(145deg, #1e2129, #16241c);
+}
+
+.nombre-personaje-slot {
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.actor-personaje-slot {
+    font-size: 10px;
+    color: #aaa;
+    margin-top: 3px;
+}
+
+.fila-input-elenco {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.fila-input-elenco input {
+    flex: 1;
+    min-width: 180px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background: #222;
+    color: white;
+}
+
+.fila-input-elenco .btn-modal {
+    width: auto;
+    margin-top: 0;
+    padding: 10px 16px;
+}
+
+.mensaje-elenco {
+    font-size: 13px;
+    font-weight: bold;
+    min-height: 18px;
+}
+
+.mensaje-elenco.exito {
+    color: var(--success-color, #2ecc71);
+}
+
+.mensaje-elenco.error {
+    color: #e74c3c;
+}
+
+.mensaje-elenco.aviso {
+    color: #f1c40f;
+}
+
+.mensaje-elenco.victoria {
+    color: #e67e22;
+    font-size: 15px;
 }
 
 /* ==========================================
