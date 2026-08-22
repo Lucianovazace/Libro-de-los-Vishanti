@@ -770,6 +770,68 @@ const listaMedia = [
     { titulo: "After the Hunt", categoria: "andrew-garfield", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMzYyOTAwODEtZTY4My00MjVkLWJjYjUtMjE2N2UzYTE3MTY3XkEyXkFqcGc@._V1_.jpg" },
     { titulo: "The Magic Faraway Tree", categoria: "andrew-garfield", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNGUzNzQzNWQtZTI2My00YmE2LTkyYzItNzFhMTM3OTVkYmNlXkEyXkFqcGc@._V1_.jpg" },
     { titulo: "The Uprising", categoria: "andrew-garfield", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BODc1ZWRlMjQtMDc4NC00ODczLWIwNGMtZmFlZjA3YzIyZWVhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+
+    // --- MARVEL MULTIVERSO: UNIVERSAL ---
+    { titulo: "Howard The Duck", categoria: "universal", tipo: "Película", poster: "https://m.media-amazon.com/images/I/41IHpMp-VeL._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Hulk (2003)", categoria: "universal", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNTQxMmVlMTItMGFjYi00MTc2LWE5MzMtYjFhZWJmZGY0MTY5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+
+    // --- ALFRED HITCHCOCK (con filtros por década) ---
+    { titulo: "Frenzy", categoria: "alfred-hitchcock", subtipo: "1970", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/frenzy_1972_french_original_film_art_5000x.jpg?v=1605643383" },
+    { titulo: "Family Plot", categoria: "alfred-hitchcock", subtipo: "1970", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/family_plot_1976_argentinean_original_film_art_f_spo_1600x.jpg?v=1562542017" },
+    { titulo: "Psicosis", categoria: "alfred-hitchcock", subtipo: "1960", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/zdaucUFApic9SDmmmuShxhTeAyv.jpg" },
+    { titulo: "The Birds", categoria: "alfred-hitchcock", subtipo: "1960", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/ADoJaT1s9Jlcfx3Tw2MIZ1BMxo.jpg" },
+    { titulo: "Marnie", categoria: "alfred-hitchcock", subtipo: "1960", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTIyMmJmOGUtODMzMy00NTUxLWJmZTQtMWQ4NWM1ZTg5MjZlXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Torn Curtain", categoria: "alfred-hitchcock", subtipo: "1960", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/aBuwKukOiHcoM7uy3Dd9Vy0575V.jpg" },
+    { titulo: "Topaz", categoria: "alfred-hitchcock", subtipo: "1960", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/hkZZpkW1uL8jQdgfMDsX0fvrCaG.jpg" },
+    { titulo: "Stage Fright", categoria: "alfred-hitchcock", subtipo: "1950", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/xW7x1OzIbX86wGRuMcF2nSFuGSn.jpg" },
+    { titulo: "Strangers on a Train", categoria: "alfred-hitchcock", subtipo: "1950", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/xTh7KTQGkjK9UTNxj4pznK8Gd7B.jpg" },
+    { titulo: "I Confess", categoria: "alfred-hitchcock", subtipo: "1950", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/2b98tk8mZFNdjDfWN0esB628dDB.jpg" },
+    { titulo: "Dial M for Murder", categoria: "alfred-hitchcock", subtipo: "1950", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/5PYKzpmfN3i2yKocJWiBcKV5b3M.jpg" },
+    { titulo: "La Ventana Indiscreta", categoria: "alfred-hitchcock", subtipo: "1950", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/ILVF0eJxHMddjxeQhswFtpMtqx.jpg" },
+    { titulo: "To Catch a Thief", categoria: "alfred-hitchcock", subtipo: "1950", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/1IpcZa95x8ICSGodhXzQIYEWZzv.jpg" },
+    { titulo: "The Trouble With Harry", categoria: "alfred-hitchcock", subtipo: "1950", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/uUXLq7fEG3hI46ZFMZzgHj11S6S.jpg" },
+    { titulo: "The Wrong Man", categoria: "alfred-hitchcock", subtipo: "1950", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/pO5XR2R56RAbVjdks9gGGn0fbOa.jpg" },
+    { titulo: "Vertigo", categoria: "alfred-hitchcock", subtipo: "1950", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/NEAIdIOL0HucwyZwrsKCdjMqp8.jpg" },
+    { titulo: "North By Northwest", categoria: "alfred-hitchcock", subtipo: "1950", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/lStZVLHQmn7MSWx0OcI0tfaGwsI.jpg" },
+    { titulo: "Rebecca", categoria: "alfred-hitchcock", subtipo: "1940", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/ws16UWLcehSjzbLywQExLOMCzCv.jpg" },
+    { titulo: "Foreign Correspondent", categoria: "alfred-hitchcock", subtipo: "1940", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/avuaYEZlDU3F4xtLsDfxNmKaGu4.jpg" },
+    { titulo: "Mr & Mrs Smith", categoria: "alfred-hitchcock", subtipo: "1940", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/lIFBvhh9EbQpwkYa135dQvMHXSj.jpg" },
+    { titulo: "Suspicion", categoria: "alfred-hitchcock", subtipo: "1940", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/sRlbTHhFG7wIlxszvjvmoGOeWuy.jpg" },
+    { titulo: "Saboteur", categoria: "alfred-hitchcock", subtipo: "1940", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/iDKOOTymUZg0WAWPcbdP6nPZEFF.jpg" },
+    { titulo: "Shadow of a Doubt", categoria: "alfred-hitchcock", subtipo: "1940", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/5d3zos0yHxJta4cyVKWZFtng7nP.jpg" },
+    { titulo: "Lifeboat", categoria: "alfred-hitchcock", subtipo: "1940", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/AoeTcnHohATkwWbs0ZQbrmojJSu.jpg" },
+    { titulo: "Spellbound", categoria: "alfred-hitchcock", subtipo: "1940", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/41UovwqmVtD530uVuMn3nSkSTlm.jpg" },
+    { titulo: "Notorious", categoria: "alfred-hitchcock", subtipo: "1940", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/4RERYb1NIQrJHYY5e8nUlYM7t2z.jpg" },
+    { titulo: "The Paradine Case", categoria: "alfred-hitchcock", subtipo: "1940", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/svWsUQcFBEOyYqbnhkP4dYu4YfJ.jpg" },
+    { titulo: "Rope", categoria: "alfred-hitchcock", subtipo: "1940", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/albjhIlWHevVSN8Ehv4KuYnOKuS.jpg" },
+    { titulo: "Under Capricorn", categoria: "alfred-hitchcock", subtipo: "1940", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/5mZXhGTSbkZGZgRvT54EACmVfrw.jpg" },
+    { titulo: "Juno and The Paycock", categoria: "alfred-hitchcock", subtipo: "1930", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/rN31vZFD8hzQnJ6umUtLNl87Mrw.jpg" },
+    { titulo: "Murder!", categoria: "alfred-hitchcock", subtipo: "1930", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/bGaeDRFdmR5KfyiB6OVh4ivsDWW.jpg" },
+    { titulo: "The Skin Game", categoria: "alfred-hitchcock", subtipo: "1930", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/dAjiLI0DU40NJ1FAWb8GFQ7gf47.jpg" },
+    { titulo: "Rich and Strange", categoria: "alfred-hitchcock", subtipo: "1930", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/8uELURwfZlQBsy26VUk7ap0v3ZS.jpg" },
+    { titulo: "Number Seventeen", categoria: "alfred-hitchcock", subtipo: "1930", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/oNJ8Bl2RyC7e77VtUhx4WQ3IxKz.jpg" },
+    { titulo: "Waltzes From Vienna", categoria: "alfred-hitchcock", subtipo: "1930", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/8Qd7wGmfK3xOW0yMkKv6x6Cgqdw.jpg" },
+    { titulo: "The Man Who Knew Too Much", categoria: "alfred-hitchcock", subtipo: "1930", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/vHchap4Ut9sS78m4jKFHb6kHQX6.jpg" },
+    { titulo: "The 39 Steps", categoria: "alfred-hitchcock", subtipo: "1930", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/oC81jK6aAug4MA0xzYVngHmjsZS.jpg" },
+    { titulo: "Secret Agent", categoria: "alfred-hitchcock", subtipo: "1930", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/acmee4zO9hbW4OPfLz2j6QGZ70q.jpg" },
+    { titulo: "Sabotage", categoria: "alfred-hitchcock", subtipo: "1930", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/A6cyOt9mhmvWA2uHcVsGkcCaHCz.jpg" },
+    { titulo: "Young and Innocent", categoria: "alfred-hitchcock", subtipo: "1930", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/xei9wDfMBM3AvKGoG60r8YiNhbF.jpg" },
+    { titulo: "The Lady Vanishes", categoria: "alfred-hitchcock", subtipo: "1930", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/qyP7W58Z8BUwl2tL1UE1VVXEU0K.jpg" },
+    { titulo: "Jamaica Inn", categoria: "alfred-hitchcock", subtipo: "1930", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/cbIwfXHfLA7vNEemwN8BHjciK6c.jpg" },
+    { titulo: "The Pleasure Garden", categoria: "alfred-hitchcock", subtipo: "1920", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/6yO5WHbA7z9BVV1NkpOC1DSgD8X.jpg" },
+    { titulo: "The Lodger: A Story of the London Fog", categoria: "alfred-hitchcock", subtipo: "1920", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/kjhfOL3Nv0rUMM9xzbhjdLYjSF.jpg" },
+    { titulo: "The Mountain Eagle", categoria: "alfred-hitchcock", subtipo: "1920", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMzhkOGI4NTAtMmY5MC00ZTgzLTkwZGItM2VlNDY3ZWJjMmRiXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "The Ring", categoria: "alfred-hitchcock", subtipo: "1920", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/yxPYqDAJ7gTMEk05e5YwVFoDavB.jpg" },
+    { titulo: "Downhill", categoria: "alfred-hitchcock", subtipo: "1920", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZjM3YTZjOGUtY2VjNy00ODg2LWJhNzAtMGQ3MjNiZTk0MWQzXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "The Farmer's Wife", categoria: "alfred-hitchcock", subtipo: "1920", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/Af9LttBipvPnbFHhM5SabdJ5xXi.jpg" },
+    { titulo: "Champagne", categoria: "alfred-hitchcock", subtipo: "1920", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/65rQoBoxM1H7HBTAGtWmn4N1Ztq.jpg" },
+    { titulo: "The Manxman", categoria: "alfred-hitchcock", subtipo: "1920", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/3OirGdNMm7vzboDy0j3zudQopw8.jpg" },
+    { titulo: "Blackmail", categoria: "alfred-hitchcock", subtipo: "1920", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/aMH3UBjlX4ChgGsEvbDRSOkz5Hk.jpg" },
+
+    // --- TOMB RAIDER (con filtro "Survivor") ---
+    { titulo: "Tomb Raider (2013)", categoria: "tomb-raider", subtipo: "survivor", tipo: "Videojuego", poster: "https://m.media-amazon.com/images/M/MV5BZWRhNDIwMDQtOTE1ZS00YTQ1LThlYmYtYzBhZjE4NTEwZTIyXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Rise of The Tomb Raider", categoria: "tomb-raider", subtipo: "survivor", tipo: "Videojuego", poster: "https://m.media-amazon.com/images/M/MV5BMzI0NDJkNGUtOTc1MS00MzgyLThmYjgtOGU1YzdmYjhlMGU5XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Shadow of The Tomb Raider", categoria: "tomb-raider", subtipo: "survivor", tipo: "Videojuego", poster: "https://m.media-amazon.com/images/M/MV5BNTI1ZTM4YjgtZjY0My00YTE2LTlhMTUtMGJlY2UwNzY1NjZmXkEyXkFqcGc@._V1_.jpg" },
 ];
 
 // ==========================================
@@ -1251,6 +1313,33 @@ const colecciones = [
         ]
     },
     {
+        id: "borderlands",
+        titulo: "Borderlands",
+        categoria: "videojuegos-explorar",
+        poster: "https://i.pinimg.com/736x/96/0f/16/960f161b198900948370b273e62d068e.jpg",
+        esVideojuego: true,
+        peliculas: [
+            { titulo: "Borderlands (2009)", poster: "https://m.media-amazon.com/images/M/MV5BMDM2MTk5NTctZGRlMy00YWZiLThkYTItY2Q1ZTA4OWU3NWQ5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+            { titulo: "Borderlands 2", poster: "https://upload.wikimedia.org/wikipedia/en/5/51/Borderlands_2_cover_art.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" },
+            { titulo: "Borderlands: The Pre-Sequel", poster: "https://m.media-amazon.com/images/M/MV5BYjEzYTVhNTEtYTBmYS00OTA1LWFlYmMtYWYwMmU5MmRhNzA2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+            { titulo: "Tales From The Borderlands", poster: "https://m.media-amazon.com/images/M/MV5BNGVlYzE4ZWEtZDAwZC00NGVjLWI1ZDUtOTdkNWY4MDE3MmVmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+            { titulo: "Borderlands 3", poster: "https://m.media-amazon.com/images/M/MV5BODUxN2IyZjctZjY0Mi00NDc4LTg1ZWQtOTM2MGY2MmM5ODk3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+            { titulo: "Tiny Tina's Wonderlands", poster: "https://m.media-amazon.com/images/M/MV5BYzQ2OGUwNzQtN2RkZS00MjYzLWFiNzctNjhiOTRlNmViZjFiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+            { titulo: "New Tales from the Borderlands", poster: "https://m.media-amazon.com/images/M/MV5BZTcwYzcyYWMtMWZlZS00NzQwLTljMDctZmM3ZGQ2MjllMDcxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+            { titulo: "Borderlands 4", poster: "https://m.media-amazon.com/images/M/MV5BZmE1OGFkMmEtMDhlYS00OTI2LTllMzQtNDA4ODhlYzZhMGY4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" }
+        ]
+    },
+    {
+        id: "tomb-raider",
+        titulo: "Tomb Raider",
+        categoria: "videojuegos-explorar",
+        poster: "https://i.pinimg.com/736x/74/6f/14/746f1469cf6d2f0f1284e7df65ea88ed.jpg",
+        esContenedor: true,
+        esVideojuego: true,
+        progresoCategoria: "tomb-raider",
+        peliculas: []
+    },
+    {
         id: "franquicias",
         titulo: "Franquicias",
         categoria: "explorar",
@@ -1270,7 +1359,7 @@ const colecciones = [
     {
         id: "pokemon",
         titulo: "Pokémon",
-        categoria: "franquicias",
+        categoria: "anime",
         poster: "https://i.pinimg.com/736x/7f/10/9a/7f109adedbe9912c95bd5cf4c13365f1.jpg",
         esContenedor: true,
         peliculas: []
@@ -1551,6 +1640,16 @@ const colecciones = [
         ]
     },
     {
+        id: "alfred-hitchcock",
+        titulo: "Alfred Hitchcock",
+        categoria: "directores",
+        poster: "https://i.pinimg.com/736x/0e/e3/87/0ee3876f88d5358917445a14ea1d3a49.jpg",
+        esContenedor: true,
+        etiqueta: "Director",
+        progresoCategoria: "alfred-hitchcock",
+        peliculas: []
+    },
+    {
         id: "christopher-nolan",
         titulo: "Christopher Nolan",
         categoria: "directores",
@@ -1749,6 +1848,17 @@ const colecciones = [
         ]
     },
     {
+        id: "batman-telltale",
+        titulo: "Batman: The Telltale Series",
+        categoria: "dc-videojuegos",
+        poster: "https://i.pinimg.com/736x/4e/1a/3c/4e1a3c35938fff68e0db0064d92ee14d.jpg",
+        esVideojuego: true,
+        peliculas: [
+            { titulo: "Batman: The Telltale Series (Temporada 1)", poster: "https://m.media-amazon.com/images/M/MV5BZjcxMzA1YzAtYzA0Yi00ZjNlLThhZGQtMDgyOTQxYjkyY2IwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+            { titulo: "Batman: The Enemy Within (Temporada 2)", poster: "https://m.media-amazon.com/images/M/MV5BNGYwYTZkNGQtNDI0ZC00ZGQzLWE4N2UtNTEzNTdjMWM3YmQ5XkEyXkFqcGc@._V1_.jpg" }
+        ]
+    },
+    {
         id: "marvel-disneyxd",
         titulo: "Universo Marvel de Disney XD (Tierra-12041)",
         esSerie: true,
@@ -1756,8 +1866,6 @@ const colecciones = [
         categoria: "marvel-animacion",
         poster: "https://image.tmdb.org/t/p/original/eXtlDP6kgUyYw0G2L9AxSWUp14Q.jpg",
         peliculas: [
-            { titulo: "Ultimate Spider-Man", poster: "https://image.tmdb.org/t/p/original/eXtlDP6kgUyYw0G2L9AxSWUp14Q.jpg" },
-            { titulo: "Avengers Assemble", poster: "https://i.pinimg.com/736x/23/cc/1e/23cc1e9834742a247bfd317b5758fb7c.jpg" },
             { titulo: "Hulk y Los Agentes de S.M.A.S.H.", poster: "https://m.media-amazon.com/images/M/MV5BMTg1MzIxMzM4Nl5BMl5BanBnXkFtZTcwMTg3Mzc5OQ@@._V1_FMjpg_UX1000_.jpg" },
             { titulo: "Guardianes de La Galaxia", poster: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p12037541_b_v8_ay.jpg" },
             { titulo: "Iron Man y Hulk: Héroes Unidos", poster: "https://m.media-amazon.com/images/M/MV5BNmQ4NDY1YWEtNTdmZi00ZmQ5LTk3MzYtYzBkNzhmNTM2Yzk5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
@@ -1772,12 +1880,65 @@ const colecciones = [
         categoria: "marvel-animacion",
         poster: "https://w0.peakpx.com/wallpaper/273/38/HD-wallpaper-x-men-beast-bishop-cyclops-gambit-marvel-psylocke-rogue-storm-wolverine-x-men.jpg",
         peliculas: [
-            { titulo: "X-Men '92", poster: "https://image.tmdb.org/t/p/original/2OFwsFhAobczgJWnVdwd9oZAF2N.jpg" },
             { titulo: "Spider-Man: The Animated Series", poster: "https://m.media-amazon.com/images/M/MV5BYWRkN2M1NmQtZjhjMi00ODFjLTk2ODctYWJiOWNkNjg1OGY4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
-            { titulo: "X-Men '97", poster: "https://m.media-amazon.com/images/M/MV5BZDE0Zjk5OGYtZTk3OC00ZDZhLWE2NGQtNzc3NmJhNjljYzY5XkEyXkFqcGc@._V1_.jpg" },
             { titulo: "Iron Man (1994)", poster: "https://m.media-amazon.com/images/M/MV5BY2Q1M2YyYzctNGZlZi00OTM3LTkxNTEtMGU0MTU1OWJiNjg5XkEyXkFqcGc@._V1_.jpg" },
             { titulo: "Fantastic Four (1994)", poster: "https://m.media-amazon.com/images/M/MV5BNzM1MTM1MTMtMmQ2Zi00ZTM1LTk1MzctNTY1NGNiNzZiNmUyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
             { titulo: "The Incredible Hulk (1996)", poster: "https://image.tmdb.org/t/p/original/eXyZvkbrTdcM6CtAmQU7SqDRZdr.jpg" }
+        ]
+    },
+    {
+        id: "x-men-92",
+        titulo: "X-Men '92",
+        esSerie: true,
+        tierra: 92131,
+        categoria: "marvel-animacion",
+        poster: "https://image.tmdb.org/t/p/original/2OFwsFhAobczgJWnVdwd9oZAF2N.jpg",
+        peliculas: [
+            { titulo: "X-Men '92 Temporada 1", poster: "https://image.tmdb.org/t/p/original/2OFwsFhAobczgJWnVdwd9oZAF2N.jpg" },
+            { titulo: "X-Men '92 Temporada 2", poster: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p7892108_b_v8_ab.jpg" },
+            { titulo: "X-Men '92 Temporada 3", poster: "https://i.pinimg.com/736x/97/e5/fb/97e5fb5e1f56010177351e0ca888da2b.jpg" },
+            { titulo: "X-Men '92 Temporada 4", poster: "https://i.pinimg.com/736x/f8/60/b1/f860b1dc29274f23a1b9748bcf3d2f1d.jpg" },
+            { titulo: "X-Men '92 Temporada 5", poster: "https://m.media-amazon.com/images/M/MV5BYWYwZDVkNWItYzdmMy00NjU4LWIxNDMtZDIwMTc1MTEzNzE4XkEyXkFqcGc@._V1_.jpg" }
+        ]
+    },
+    {
+        id: "x-men-97",
+        titulo: "X-Men '97",
+        esSerie: true,
+        tierra: 92131,
+        categoria: "marvel-animacion",
+        poster: "https://m.media-amazon.com/images/M/MV5BZDE0Zjk5OGYtZTk3OC00ZDZhLWE2NGQtNzc3NmJhNjljYzY5XkEyXkFqcGc@._V1_.jpg",
+        peliculas: [
+            { titulo: "X-Men '97 Temporada 1", poster: "https://image.tmdb.org/t/p/original/383PV0WolYYQvTriH0NfvMUA28R.jpg" },
+            { titulo: "X-Men '97 Temporada 2", poster: "https://cdn.marvel.com/content/2x/xmen97_s2_final_mech2.webp" }
+        ]
+    },
+    {
+        id: "ultimate-spider-man",
+        titulo: "Ultimate Spider-Man",
+        esSerie: true,
+        tierra: 12041,
+        categoria: "marvel-animacion",
+        poster: "https://image.tmdb.org/t/p/original/eXtlDP6kgUyYw0G2L9AxSWUp14Q.jpg",
+        peliculas: [
+            { titulo: "Ultimate Spider-Man Temporada 1", poster: "https://static.wikia.nocookie.net/spiderman/images/a/ad/Usmpromo.jpg/revision/latest?cb=20130127003133" },
+            { titulo: "Ultimate Spider-Man Temporada 2", poster: "https://m.media-amazon.com/images/M/MV5BMjFmOGZkYWQtMGQ4MC00NzRiLWI4ZTMtNDEwZDZiMDMyMzNmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+            { titulo: "Ultimate Spider-Man Temporada 3", poster: "https://static.wikia.nocookie.net/thedailybugle/images/b/b9/The_Spider-Verse_%28DVD%29.png/revision/latest?cb=20170914081853" },
+            { titulo: "Ultimate Spider-Man Temporada 4", poster: "https://static.wikia.nocookie.net/marveldatabase/images/b/b2/Ultimate_Spider-Man_%28animated_series%29_Season_4_poster.jpg/revision/latest?cb=20150722203259" }
+        ]
+    },
+    {
+        id: "avengers-assemble",
+        titulo: "Avengers Assemble",
+        esSerie: true,
+        tierra: 12041,
+        categoria: "marvel-animacion",
+        poster: "https://i.pinimg.com/736x/23/cc/1e/23cc1e9834742a247bfd317b5758fb7c.jpg",
+        peliculas: [
+            { titulo: "Avengers Assemble Temporada 1", poster: "https://static.wikia.nocookie.net/marvelanimateduniversedisney/images/5/5e/Avengers_Assemble_Season_1_Poster.jpg/revision/latest?cb=20201015075047" },
+            { titulo: "Avengers Assemble Temporada 2", poster: "https://images.justwatch.com/poster/189024463/s718/season-2.jpg" },
+            { titulo: "Avengers Assemble Temporada 3", poster: "https://i.pinimg.com/564x/aa/4a/fd/aa4afd9065bef2125fa6c0edb820b8ad.jpg" },
+            { titulo: "Avengers Assemble Temporada 4", poster: "https://i.pinimg.com/736x/a0/ee/64/a0ee649ca735e45594927cbe5b135d0e.jpg" }
         ]
     },
     {
@@ -1913,9 +2074,27 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "anime",
+        titulo: "Anime",
+        categoria: "explorar",
+        poster: "https://placehold.co/300x450?text=Anime",
+        esContenedor: true,
+        peliculas: []
+    },
+    {
+        id: "death-note",
+        titulo: "Death Note",
+        categoria: "anime",
+        poster: "https://static.posters.cz/image/350/posters/death-note-group-i293517.jpg",
+        peliculas: [
+            { titulo: "Death Note", etiqueta: "Anime", poster: "https://cdn.europosters.eu/image/750/28405.jpg" },
+            { titulo: "Death Note\u200B", etiqueta: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTUwOTgzMTEyOF5BMl5BanBnXkFtZTgwNTk3MTM5MjI@._V1_.jpg" }
+        ]
+    },
+    {
         id: "dragonball",
         titulo: "Dragon Ball",
-        categoria: "franquicias",
+        categoria: "anime",
         poster: "https://media.wallpics.app/thumbnails/2025/01/13/omBfHT0VjnNlR51OI3KSUfhOL6V5KioOmGKlSeOa_thumbnail_yP64.jpg",
         esContenedor: true,
         peliculas: []
@@ -2470,6 +2649,7 @@ function renderizarColecciones() {
         "marvel-videojuegos": "seccion-marvel-videojuegos",
         "marvel-animacion": "seccion-marvel-animacion",
         "dragonball": "seccion-dragonball",
+        "anime": "seccion-anime",
         "sw-animacion": "seccion-sw-animacion",
         "franquicias": "seccion-franquicias",
         "videojuegos-explorar": "seccion-videojuegos-explorar",
@@ -2556,8 +2736,9 @@ function asegurarPeliculasRenderizadas(col) {
     if (!grilla || grilla.dataset.peliculasRenderizadas === 'true' || col.peliculas.length === 0) return;
 
     const textoPendiente = col.esVideojuego ? 'Marcar Jugado' : 'Marcar Visto';
-    const etiquetaItem = col.esVideojuego ? 'Videojuego' : (col.esSerie ? 'Serie' : 'Película');
+    const etiquetaPorDefecto = col.esVideojuego ? 'Videojuego' : (col.esSerie ? 'Serie' : 'Película');
     col.peliculas.forEach(peli => {
+        const etiquetaItem = peli.etiqueta || etiquetaPorDefecto;
         const htmlPelicula = `
             <div class="tarjeta-media" data-accion="${col.esVideojuego ? 'jugado' : 'visto'}">
                 <img src="${peli.poster}" alt="${peli.titulo}">
@@ -2627,6 +2808,8 @@ function abrirColeccion(colId) {
         'jenna-ortega': '.btn-filtro-ortega[data-tipo="2020"]',
         'margot-robbie': '.btn-filtro-robbie[data-tipo="2020"]',
         'andrew-garfield': '.btn-filtro-garfield[data-tipo="2020"]',
+        'alfred-hitchcock': '.btn-filtro-hitchcock[data-tipo="1970"]',
+        'tomb-raider': '.btn-filtro-tombraider[data-tipo="survivor"]',
         'pokemon-canon': '.btn-filtro-pokemon[data-tipo="kanto-johto"]'
     };
     if (filtroPorDefecto[colId]) {
@@ -2685,6 +2868,7 @@ function renderizarContenido() {
         "mcu-multiverso": "seccion-mcu-multiverso",
         "fox-xmen": "seccion-fox-xmen",
         "fox-ff": "seccion-fox-ff",
+        "universal": "seccion-universal",
         "sony-tobey": "seccion-sony-tobey",
         "sony-andrew": "seccion-sony-andrew",
         "sony-ssu": "seccion-sony-ssu",
@@ -2721,6 +2905,8 @@ function renderizarContenido() {
         "jenna-ortega": "seccion-jenna-ortega",
         "margot-robbie": "seccion-margot-robbie",
         "andrew-garfield": "seccion-andrew-garfield",
+        "alfred-hitchcock": "seccion-alfred-hitchcock",
+        "tomb-raider": "seccion-tomb-raider",
         "oscar-2021": "seccion-oscar-2021",
         "oscar-2022": "seccion-oscar-2022",
         "oscar-2023": "seccion-oscar-2023",
@@ -3520,10 +3706,24 @@ if(btnVolverSitcoms) {
     });
 }
 
+const btnVolverAnime = document.getElementById('btn-volver-anime');
+if(btnVolverAnime) {
+    btnVolverAnime.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-explorar'));
+    });
+}
+
+const btnVolverDeathNote = document.getElementById('btn-volver-death-note');
+if(btnVolverDeathNote) {
+    btnVolverDeathNote.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-anime'));
+    });
+}
+
 const btnVolverPokemon = document.getElementById('btn-volver-pokemon');
 if(btnVolverPokemon) {
     btnVolverPokemon.addEventListener('click', () => {
-        cambiarSeccion(document.getElementById('seccion-franquicias'));
+        cambiarSeccion(document.getElementById('seccion-anime'));
     });
 }
 
@@ -3637,6 +3837,20 @@ if(btnVolverAssassinsCreed) {
 const btnVolverGrandTheftAuto = document.getElementById('btn-volver-grand-theft-auto');
 if(btnVolverGrandTheftAuto) {
     btnVolverGrandTheftAuto.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-videojuegos-explorar'));
+    });
+}
+
+const btnVolverBorderlands = document.getElementById('btn-volver-borderlands');
+if(btnVolverBorderlands) {
+    btnVolverBorderlands.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-videojuegos-explorar'));
+    });
+}
+
+const btnVolverTombRaider = document.getElementById('btn-volver-tomb-raider');
+if(btnVolverTombRaider) {
+    btnVolverTombRaider.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-videojuegos-explorar'));
     });
 }
@@ -3776,6 +3990,13 @@ if(btnVolverLegoDc) {
     });
 }
 
+const btnVolverBatmanTelltale = document.getElementById('btn-volver-batman-telltale');
+if(btnVolverBatmanTelltale) {
+    btnVolverBatmanTelltale.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dc-videojuegos'));
+    });
+}
+
 const btnVolverLegoMarvel = document.getElementById('btn-volver-lego-marvel');
 if(btnVolverLegoMarvel) {
     btnVolverLegoMarvel.addEventListener('click', () => {
@@ -3828,6 +4049,13 @@ if(btnVolverCelineSong) {
 const btnVolverTarantino = document.getElementById('btn-volver-tarantino');
 if(btnVolverTarantino) {
     btnVolverTarantino.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-directores'));
+    });
+}
+
+const btnVolverAlfredHitchcock = document.getElementById('btn-volver-alfred-hitchcock');
+if(btnVolverAlfredHitchcock) {
+    btnVolverAlfredHitchcock.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-directores'));
     });
 }
@@ -3895,9 +4123,37 @@ if(btnVolverMarvelDisneyxd) {
     });
 }
 
+const btnVolverUltimateSpiderMan = document.getElementById('btn-volver-ultimate-spider-man');
+if(btnVolverUltimateSpiderMan) {
+    btnVolverUltimateSpiderMan.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-marvel-animacion'));
+    });
+}
+
+const btnVolverAvengersAssemble = document.getElementById('btn-volver-avengers-assemble');
+if(btnVolverAvengersAssemble) {
+    btnVolverAvengersAssemble.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-marvel-animacion'));
+    });
+}
+
 const btnVolverMarvel90s = document.getElementById('btn-volver-marvel-90s');
 if(btnVolverMarvel90s) {
     btnVolverMarvel90s.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-marvel-animacion'));
+    });
+}
+
+const btnVolverXMen92 = document.getElementById('btn-volver-x-men-92');
+if(btnVolverXMen92) {
+    btnVolverXMen92.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-marvel-animacion'));
+    });
+}
+
+const btnVolverXMen97 = document.getElementById('btn-volver-x-men-97');
+if(btnVolverXMen97) {
+    btnVolverXMen97.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-marvel-animacion'));
     });
 }
@@ -3912,7 +4168,7 @@ if(btnVolverYostVerse) {
 const btnVolverDragonball = document.getElementById('btn-volver-dragonball');
 if(btnVolverDragonball) {
     btnVolverDragonball.addEventListener('click', () => {
-        cambiarSeccion(document.getElementById('seccion-franquicias'));
+        cambiarSeccion(document.getElementById('seccion-anime'));
     });
 }
 
@@ -4244,6 +4500,40 @@ botonesFiltroGarfield.forEach(boton => {
 });
 
 // ==========================================
+// FILTROS "ALFRED HITCHCOCK" (por década)
+// ==========================================
+const botonesFiltroHitchcock = document.querySelectorAll('.btn-filtro-hitchcock');
+botonesFiltroHitchcock.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroHitchcock.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const tipoElegido = this.getAttribute('data-tipo');
+        const tarjetas = document.querySelectorAll('#seccion-alfred-hitchcock .tarjeta-media');
+
+        tarjetas.forEach(tarjeta => {
+            tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
+        });
+    });
+});
+
+// ==========================================
+// FILTROS "TOMB RAIDER"
+// ==========================================
+const botonesFiltroTombRaider = document.querySelectorAll('.btn-filtro-tombraider');
+botonesFiltroTombRaider.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroTombRaider.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const tipoElegido = this.getAttribute('data-tipo');
+        const tarjetas = document.querySelectorAll('#seccion-tomb-raider .tarjeta-media');
+
+        tarjetas.forEach(tarjeta => {
+            tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
+        });
+    });
+});
+
+// ==========================================
 // FILTROS "POKÉMON: CANON" (por generación/era)
 // ==========================================
 const botonesFiltroPokemon = document.querySelectorAll('.btn-filtro-pokemon');
@@ -4498,10 +4788,15 @@ const migracionTitulosViejos = {
 
 function cargarProgresoUsuario() {
     if (!usuarioActual) return;
-    // { source: 'server' } fuerza a ir a buscar los datos reales a Firebase,
-    // en vez de conformarse con lo que el dispositivo tenga guardado en su
-    // caché local (que puede estar desactualizado, sobre todo entre dispositivos)
-    db.collection('usuarios').doc(usuarioActual.uid).get({ source: 'server' }).then(doc => {
+    // Intentamos primero ir directo al servidor (dato más fresco posible,
+    // sobre todo importante entre distintos dispositivos). Pero si eso falla
+    // -algo que puede pasar justo al recargar la página, cuando la conexión
+    // con Firebase todavía no terminó de establecerse- NO nos rendimos:
+    // reintentamos con una lectura normal (que sí puede usar caché como
+    // respaldo) en vez de perder los datos por completo.
+    db.collection('usuarios').doc(usuarioActual.uid).get({ source: 'server' })
+        .catch(() => db.collection('usuarios').doc(usuarioActual.uid).get())
+        .then(doc => {
         const vistosGuardados = doc.exists ? (doc.data().vistos || []) : [];
 
         let huboMigracion = false;
