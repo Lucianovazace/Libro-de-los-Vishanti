@@ -2983,6 +2983,9 @@ function ordenarGrillaAlfabeticamente(seccionId) {
     tarjetas.forEach(t => contenedor.appendChild(t));
 }
 
+let contenidoInicialRenderizado = false;
+let loginPendienteDeAplicar = false;
+
 document.addEventListener("DOMContentLoaded", () => {
     renderizarContenido();
     renderizarColecciones();
@@ -2992,6 +2995,15 @@ document.addEventListener("DOMContentLoaded", () => {
     ordenarGrillaAlfabeticamente('franquicias');
     ordenarGrillaAlfabeticamente('actores');
     actualizarTodasLasColecciones();
+
+    // Si Firebase ya nos había confirmado la sesión ANTES de que termináramos
+    // de dibujar todas las tarjetas (pasa cada vez más seguido a medida que
+    // el catálogo crece), "aplicarVistosGuardados" se había quedado sin nada
+    // para marcar. Ahora que el contenido ya está listo, lo aplicamos recién.
+    contenidoInicialRenderizado = true;
+    if (loginPendienteDeAplicar) {
+        cargarProgresoUsuario();
+    }
 });
 
 // ==========================================
@@ -4750,7 +4762,13 @@ auth.onAuthStateChanged(user => {
             console.error('Error guardando email:', err);
             mostrarErrorGuardado(err);
         });
-        cargarProgresoUsuario();
+        if (contenidoInicialRenderizado) {
+            cargarProgresoUsuario();
+        } else {
+            // Todavía no terminamos de dibujar las tarjetas; lo aplicamos
+            // apenas termine el DOMContentLoaded, no antes.
+            loginPendienteDeAplicar = true;
+        }
     } else {
         if (btnLoginModal) btnLoginModal.textContent = '👤 Cuenta / Registro';
         if (huboSesionAntes) location.reload();
