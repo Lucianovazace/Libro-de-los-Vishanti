@@ -2324,6 +2324,25 @@ const colecciones = [
         categoria: "lego",
         poster: "https://w0.peakpx.com/wallpaper/185/537/HD-wallpaper-lego-brand-logo.jpg",
         peliculas: []
+    },
+    {
+        id: "avengers-era-ultron",
+        titulo: "Avengers: La Era de Ultron",
+        categoria: "explorar",
+        poster: "https://collider.com/wp-content/uploads/avengers-age-of-ultron-poster1.jpg",
+        etiqueta: "Película — MCU",
+        esContenedor: true,
+        textoBoton: "Información ℹ️",
+        peliculas: []
+    },
+    {
+        id: "avengers-era-ultron-personajes",
+        titulo: "Personajes",
+        categoria: "avengers-era-ultron",
+        poster: "https://collider.com/wp-content/uploads/avengers-age-of-ultron-poster1.jpg",
+        etiqueta: "Elenco principal",
+        esContenedor: true,
+        peliculas: []
     }
 ];
 
@@ -2722,7 +2741,8 @@ function renderizarColecciones() {
         "pokemon": "seccion-pokemon",
         "pokemon-canon": "seccion-pokemon-canon",
         "dc-multiverso": "seccion-dc-multiverso",
-        "series-independientes": "seccion-series-independientes"
+        "series-independientes": "seccion-series-independientes",
+        "avengers-era-ultron": "seccion-avengers-era-ultron"
     };
 
     colecciones.forEach(col => {
@@ -2749,7 +2769,7 @@ function renderizarColecciones() {
                     <p>${col.etiqueta || 'Categoría'}</p>
                     ${barraProgreso}
                     <div class="botones-coleccion">
-                        <button class="btn-abrir-coleccion" data-coleccion="${col.id}">Abrir 📂</button>
+                        <button class="btn-abrir-coleccion" data-coleccion="${col.id}">${col.textoBoton || 'Abrir 📂'}</button>
                     </div>
                 </div>
             `;
@@ -2838,6 +2858,10 @@ function abrirColeccion(colId) {
     if (colId === 'game-of-thrones') {
         const btnSalida = document.querySelector('.btn-filtro-got[data-tipo="salida"]');
         if (btnSalida) btnSalida.click();
+    }
+
+    if (colId === 'avengers-era-ultron-personajes') {
+        renderizarGaleriaPersonajesAvengersUltron();
     }
 
     // Estas secciones usan filtros (década/categoría) y necesitan forzar el
@@ -5106,17 +5130,17 @@ const elencosDisponibles = {
         titulo: "Avengers: La Era de Ultron",
         icono: "🎬",
         personajes: [
-            { id: "iron_man", nombreMostrado: "Iron Man", actor: "Robert Downey Jr.", color: "rgba(231, 76, 60, 0.45)", alias: ["iron man", "ironman", "tony stark", "tony", "stark", "robert downey jr", "rdj"] },
-            { id: "capitan_america", nombreMostrado: "Capitán América", actor: "Chris Evans", color: "rgba(41, 128, 185, 0.45)", alias: ["capitan america", "captain america", "steve rogers", "steve", "rogers", "cap"] },
-            { id: "hulk", nombreMostrado: "Hulk", actor: "Mark Ruffalo", color: "rgba(39, 174, 96, 0.45)", alias: ["hulk", "bruce banner", "bruce", "banner"] },
-            { id: "thor", nombreMostrado: "Thor", actor: "Chris Hemsworth", color: "rgba(142, 68, 173, 0.45)", alias: ["thor", "thor odinson", "odinson", "dios del trueno"] },
-            { id: "hawkeye", nombreMostrado: "Hawkeye", actor: "Jeremy Renner", color: "rgba(75, 0, 130, 0.45)", alias: ["hawkeye", "ojo de halcon", "clint barton", "clint", "barton"] },
-            { id: "black_widow", nombreMostrado: "Black Widow", actor: "Scarlett Johansson", color: "rgba(139, 0, 0, 0.45)", alias: ["black widow", "viuda negra", "natasha romanoff", "natasha", "romanoff"] },
-            { id: "vision", nombreMostrado: "Vision", actor: "Paul Bettany", color: "rgba(212, 175, 55, 0.45)", alias: ["vision"] },
-            { id: "scarlet_witch", nombreMostrado: "Scarlet Witch", actor: "Elizabeth Olsen", color: "rgba(183, 28, 28, 0.45)", alias: ["scarlet witch", "bruja escarlata", "wanda maximoff", "wanda", "maximoff"] },
-            { id: "quicksilver", nombreMostrado: "Quicksilver", actor: "Aaron Taylor-Johnson", color: "rgba(127, 140, 141, 0.45)", alias: ["quicksilver", "mercurio", "pietro maximoff", "pietro"] },
-            { id: "falcon", nombreMostrado: "Falcon", actor: "Anthony Mackie", color: "rgba(230, 126, 34, 0.45)", alias: ["falcon", "halcon", "sam wilson", "sam", "wilson"] },
-            { id: "war_machine", nombreMostrado: "War Machine", actor: "Don Cheadle", color: "rgba(93, 109, 126, 0.45)", alias: ["war machine", "maquina de guerra", "james rhodes", "rhodey", "rhodes", "jim rhodes"] }
+            { id: "iron_man", nombreMostrado: "Iron Man", actor: "Robert Downey Jr.", color: "rgba(231, 76, 60, 0.45)", imagen: "https://i.ebayimg.com/images/g/-c0AAOSwNSxVQ7Kw/s-l1200.jpg", alias: ["iron man", "ironman", "tony stark", "tony", "stark", "robert downey jr", "rdj"] },
+            { id: "capitan_america", nombreMostrado: "Capitán América", actor: "Chris Evans", color: "rgba(41, 128, 185, 0.45)", imagen: "https://static.posters.cz/image/750/24782.jpg", alias: ["capitan america", "captain america", "steve rogers", "steve", "rogers", "cap"] },
+            { id: "hulk", nombreMostrado: "Hulk", actor: "Mark Ruffalo", color: "rgba(39, 174, 96, 0.45)", imagen: "https://i.ebayimg.com/images/g/IgMAAOSwoaJi9nS6/s-l400.jpg", alias: ["hulk", "bruce banner", "bruce", "banner"] },
+            { id: "thor", nombreMostrado: "Thor", actor: "Chris Hemsworth", color: "rgba(142, 68, 173, 0.45)", imagen: "https://www.mubis.es/media/users/9192/112988/jDukV3I-original.jpg", alias: ["thor", "thor odinson", "odinson", "dios del trueno"] },
+            { id: "hawkeye", nombreMostrado: "Hawkeye", actor: "Jeremy Renner", color: "rgba(75, 0, 130, 0.45)", imagen: "https://media2.firstshowing.net/firstshowing/img8/HawkeyePosterartMainAUltronFull9b.jpg", alias: ["hawkeye", "ojo de halcon", "clint barton", "clint", "barton"] },
+            { id: "black_widow", nombreMostrado: "Black Widow", actor: "Scarlett Johansson", color: "rgba(139, 0, 0, 0.45)", imagen: "https://m.media-amazon.com/images/I/91+iqOflvPL.AC_UF894,1000_QL80.jpg", alias: ["black widow", "viuda negra", "natasha romanoff", "natasha", "romanoff"] },
+            { id: "vision", nombreMostrado: "Vision", actor: "Paul Bettany", color: "rgba(212, 175, 55, 0.45)", imagen: "https://www.slashfilm.com/wp/wp-content/images/Vision-Character-Poster-Avengers-2.jpg", alias: ["vision"] },
+            { id: "scarlet_witch", nombreMostrado: "Scarlet Witch", actor: "Elizabeth Olsen", color: "rgba(183, 28, 28, 0.45)", imagen: "https://i.pinimg.com/736x/a3/de/98/a3de9876bec6ce2bb033e15659565928.jpg", alias: ["scarlet witch", "bruja escarlata", "wanda maximoff", "wanda", "maximoff"] },
+            { id: "quicksilver", nombreMostrado: "Quicksilver", actor: "Aaron Taylor-Johnson", color: "rgba(127, 140, 141, 0.45)", imagen: "https://i.pinimg.com/736x/94/64/b9/9464b91bc6912cf41557575bee7d1bb8.jpg", alias: ["quicksilver", "mercurio", "pietro maximoff", "pietro"] },
+            { id: "falcon", nombreMostrado: "Falcon", actor: "Anthony Mackie", color: "rgba(230, 126, 34, 0.45)", imagen: "https://i.pinimg.com/736x/5c/58/92/5c5892fd3c2aebb8cdb1ae74e5cd7e62.jpg", alias: ["falcon", "halcon", "sam wilson", "sam", "wilson"] },
+            { id: "war_machine", nombreMostrado: "War Machine", actor: "Don Cheadle", color: "rgba(93, 109, 126, 0.45)", imagen: "https://m.media-amazon.com/images/M/MV5BODY1MjA5MDgtMzZhZS00YjdhLTliYjktOWE5NTMzYzUxZmUxXkEyXkFqcGc@.V1.jpg", imagenClase: "recorte-war-machine", alias: ["war machine", "maquina de guerra", "james rhodes", "rhodey", "rhodes", "jim rhodes"] }
         ]
     }
 };
@@ -5131,6 +5155,27 @@ function normalizarTextoJuego(str) {
         .replace(/[\u0300-\u036f]/g, '')
         .trim()
         .replace(/\s+/g, ' ');
+}
+
+function lanzarConfetiVerdeElenco() {
+    const contenedor = document.getElementById('contenedor-confeti-elenco');
+    if (!contenedor) return;
+
+    const tonosVerdes = ['#2ecc71', '#27ae60', '#1abc9c', '#58d68d', '#0e6b3a', '#82e0aa'];
+    const cantidadPiezas = 90;
+
+    for (let i = 0; i < cantidadPiezas; i++) {
+        const pieza = document.createElement('div');
+        pieza.className = 'confeti-pieza';
+        pieza.style.left = `${Math.random() * 100}vw`;
+        pieza.style.backgroundColor = tonosVerdes[Math.floor(Math.random() * tonosVerdes.length)];
+        pieza.style.animationDuration = `${2 + Math.random() * 1.5}s`;
+        pieza.style.animationDelay = `${Math.random() * 0.4}s`;
+        pieza.style.transform = `rotate(${Math.random() * 360}deg)`;
+        contenedor.appendChild(pieza);
+
+        setTimeout(() => pieza.remove(), 4500);
+    }
 }
 
 function renderizarSelectorElencos() {
@@ -5178,7 +5223,22 @@ function renderizarSlotsElenco() {
         slot.dataset.personajeId = p.id;
         if (personajesEncontradosElenco.has(p.id)) {
             slot.classList.add('resuelto');
-            slot.innerHTML = `<span class="nombre-personaje-slot">${p.nombreMostrado}</span><span class="actor-personaje-slot">${p.actor}</span>`;
+            if (p.imagen) {
+                slot.innerHTML = `
+                    <img class="imagen-personaje-slot ${p.imagenClase || ''}" src="${p.imagen}" alt="${p.nombreMostrado}">
+                    <div class="caption-personaje-slot">
+                        <span class="nombre-personaje-slot">${p.nombreMostrado}</span>
+                        <span class="actor-personaje-slot">${p.actor}</span>
+                    </div>
+                `;
+            } else {
+                slot.innerHTML = `
+                    <div class="caption-personaje-slot" style="position:static; background:transparent;">
+                        <span class="nombre-personaje-slot">${p.nombreMostrado}</span>
+                        <span class="actor-personaje-slot">${p.actor}</span>
+                    </div>
+                `;
+            }
         } else {
             slot.innerHTML = `<span class="signo-interrogacion">?</span>`;
         }
@@ -5240,6 +5300,7 @@ function intentarAdivinarElenco() {
         if (personajesEncontradosElenco.size === data.personajes.length) {
             mensaje.textContent = `🎉 ¡Completaste el elenco de ${data.titulo}!`;
             mensaje.className = 'mensaje-elenco victoria';
+            lanzarConfetiVerdeElenco();
         } else {
             mensaje.textContent = `✅ ¡Correcto! ${encontrado.nombreMostrado}`;
             mensaje.className = 'mensaje-elenco exito';
@@ -5297,6 +5358,43 @@ if (inputElenco) {
             e.preventDefault();
             intentarAdivinarElenco();
         }
+    });
+}
+
+// --- Galería de personajes (ficha informativa de la película) ---
+// Reutiliza los mismos datos e imágenes cargados para el juego "Completa el Elenco"
+function renderizarGaleriaPersonajesAvengersUltron() {
+    const cont = document.getElementById('grilla-personajes-avengers-ultron');
+    if (!cont) return;
+    const data = elencosDisponibles['avengers-era-ultron'];
+    if (!data) return;
+
+    cont.innerHTML = '';
+    data.personajes.forEach(p => {
+        const tarjeta = document.createElement('div');
+        tarjeta.className = 'tarjeta-personaje-galeria';
+        tarjeta.innerHTML = `
+            <img class="imagen-personaje-galeria ${p.imagenClase || ''}" src="${p.imagen}" alt="${p.nombreMostrado}">
+            <div class="caption-personaje-galeria">
+                <span class="nombre-personaje-slot">${p.nombreMostrado}</span>
+                <span class="actor-personaje-slot">${p.actor}</span>
+            </div>
+        `;
+        cont.appendChild(tarjeta);
+    });
+}
+
+const btnVolverAvengersUltron = document.getElementById('btn-volver-avengers-ultron');
+if (btnVolverAvengersUltron) {
+    btnVolverAvengersUltron.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-explorar'));
+    });
+}
+
+const btnVolverPersonajesAvengersUltron = document.getElementById('btn-volver-personajes-avengers-ultron');
+if (btnVolverPersonajesAvengersUltron) {
+    btnVolverPersonajesAvengersUltron.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-avengers-era-ultron'));
     });
 }
 
