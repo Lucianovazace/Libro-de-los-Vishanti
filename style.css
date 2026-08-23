@@ -224,6 +224,18 @@ h2 {
     font-weight: bold;
 }
 
+.btn-info-personajes {
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 8px 10px 0 10px;
+    font-weight: bold;
+    display: block;
+}
+
 /* Modal Login */
 .modal {
     position: fixed;

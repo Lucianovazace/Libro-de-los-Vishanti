@@ -44,7 +44,7 @@ const listaMedia = [
     { titulo: "Thor: The Dark World", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 8, crono: 9, poster: "https://shoptrends.com/pub/media/catalog/product/p/o/pod5973-1.jpg" },
     { titulo: "Captain America: The Winter Soldier", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 9, crono: 11, poster: "https://www.hollywoodreporter.com/wp-content/uploads/2014/01/captain_america_the_winter_soldier.jpg" },
     { titulo: "Guardians of The Galaxy", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 10, crono: 12, poster: "https://collider.com/wp-content/uploads/guardians-of-the-galaxy-teaser-poster.jpg" },
-    { titulo: "Avengers: Age of Ultron", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 11, crono: 14, poster: "https://collider.com/wp-content/uploads/avengers-age-of-ultron-poster1.jpg" },
+    { titulo: "Avengers: Age of Ultron", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 11, crono: 14, poster: "https://collider.com/wp-content/uploads/avengers-age-of-ultron-poster1.jpg", infoId: "avengers-era-ultron-personajes" },
     { titulo: "Ant-Man", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 12, crono: 15, poster: "https://m.media-amazon.com/images/I/81rPJLNidFL.jpg" },
     { titulo: "Captain America: Civil War", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 13, crono: 16, poster: "https://heroichollywood.com/wp-content/uploads/2015/11/img-26.jpg" },
     { titulo: "Doctor Strange", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 14, crono: 20, poster: "https://uruloki.org/felipeblog/images2016/20160412-doctorstrange.jpg" },
@@ -2324,25 +2324,6 @@ const colecciones = [
         categoria: "lego",
         poster: "https://w0.peakpx.com/wallpaper/185/537/HD-wallpaper-lego-brand-logo.jpg",
         peliculas: []
-    },
-    {
-        id: "avengers-era-ultron",
-        titulo: "Avengers: La Era de Ultron",
-        categoria: "explorar",
-        poster: "https://collider.com/wp-content/uploads/avengers-age-of-ultron-poster1.jpg",
-        etiqueta: "Película — MCU",
-        esContenedor: true,
-        textoBoton: "Información ℹ️",
-        peliculas: []
-    },
-    {
-        id: "avengers-era-ultron-personajes",
-        titulo: "Personajes",
-        categoria: "avengers-era-ultron",
-        poster: "https://collider.com/wp-content/uploads/avengers-age-of-ultron-poster1.jpg",
-        etiqueta: "Elenco principal",
-        esContenedor: true,
-        peliculas: []
     }
 ];
 
@@ -2741,8 +2722,7 @@ function renderizarColecciones() {
         "pokemon": "seccion-pokemon",
         "pokemon-canon": "seccion-pokemon-canon",
         "dc-multiverso": "seccion-dc-multiverso",
-        "series-independientes": "seccion-series-independientes",
-        "avengers-era-ultron": "seccion-avengers-era-ultron"
+        "series-independientes": "seccion-series-independientes"
     };
 
     colecciones.forEach(col => {
@@ -2858,10 +2838,6 @@ function abrirColeccion(colId) {
     if (colId === 'game-of-thrones') {
         const btnSalida = document.querySelector('.btn-filtro-got[data-tipo="salida"]');
         if (btnSalida) btnSalida.click();
-    }
-
-    if (colId === 'avengers-era-ultron-personajes') {
-        renderizarGaleriaPersonajesAvengersUltron();
     }
 
     // Estas secciones usan filtros (década/categoría) y necesitan forzar el
@@ -3023,6 +2999,7 @@ function renderizarContenido() {
 
             const esVideojuego = item.tipo === "Videojuego";
             const textoInicial = esVideojuego ? "Marcar Jugado" : "Marcar Visto";
+            const botonInfo = item.infoId ? `<button class="btn-info-personajes" data-info-id="${item.infoId}">Información ℹ️</button>` : '';
 
             const htmlTarjeta = `
                 <div class="tarjeta-media" style="${ocultarEstilo}" data-tier="${item.tier || ''}" data-tipo="${item.tipoArrow || ''}" data-crono="${item.crono || ''}" data-subtipo="${item.subtipo || ''}" data-orden="${item.ordenSalida || ''}" data-tierra="${item.tierra || ''}" data-accion="${esVideojuego ? 'jugado' : 'visto'}">
@@ -3030,10 +3007,22 @@ function renderizarContenido() {
                     <h3>${item.titulo}</h3>
                     <p>${item.tipo}</p>
                     <button class="btn-accion">${textoInicial}</button>
+                    ${botonInfo}
                 </div>
             `;
             contenedorDestino.insertAdjacentHTML('beforeend', htmlTarjeta);
         }
+    });
+
+    document.querySelectorAll('.btn-info-personajes').forEach(boton => {
+        boton.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const infoId = this.getAttribute('data-info-id');
+            if (infoId === 'avengers-era-ultron-personajes') {
+                renderizarGaleriaPersonajesAvengersUltron();
+                cambiarSeccion(document.getElementById('seccion-avengers-era-ultron-personajes'));
+            }
+        });
     });
 
     sincronizarVistos();
@@ -5130,17 +5119,39 @@ const elencosDisponibles = {
         titulo: "Avengers: La Era de Ultron",
         icono: "🎬",
         personajes: [
-            { id: "iron_man", nombreMostrado: "Iron Man", actor: "Robert Downey Jr.", color: "rgba(231, 76, 60, 0.45)", imagen: "https://i.ebayimg.com/images/g/-c0AAOSwNSxVQ7Kw/s-l1200.jpg", alias: ["iron man", "ironman", "tony stark", "tony", "stark", "robert downey jr", "rdj"] },
-            { id: "capitan_america", nombreMostrado: "Capitán América", actor: "Chris Evans", color: "rgba(41, 128, 185, 0.45)", imagen: "https://static.posters.cz/image/750/24782.jpg", alias: ["capitan america", "captain america", "steve rogers", "steve", "rogers", "cap"] },
-            { id: "hulk", nombreMostrado: "Hulk", actor: "Mark Ruffalo", color: "rgba(39, 174, 96, 0.45)", imagen: "https://i.ebayimg.com/images/g/IgMAAOSwoaJi9nS6/s-l400.jpg", alias: ["hulk", "bruce banner", "bruce", "banner"] },
-            { id: "thor", nombreMostrado: "Thor", actor: "Chris Hemsworth", color: "rgba(142, 68, 173, 0.45)", imagen: "https://www.mubis.es/media/users/9192/112988/jDukV3I-original.jpg", alias: ["thor", "thor odinson", "odinson", "dios del trueno"] },
-            { id: "hawkeye", nombreMostrado: "Hawkeye", actor: "Jeremy Renner", color: "rgba(75, 0, 130, 0.45)", imagen: "https://media2.firstshowing.net/firstshowing/img8/HawkeyePosterartMainAUltronFull9b.jpg", alias: ["hawkeye", "ojo de halcon", "clint barton", "clint", "barton"] },
-            { id: "black_widow", nombreMostrado: "Black Widow", actor: "Scarlett Johansson", color: "rgba(139, 0, 0, 0.45)", imagen: "https://m.media-amazon.com/images/I/91+iqOflvPL.AC_UF894,1000_QL80.jpg", alias: ["black widow", "viuda negra", "natasha romanoff", "natasha", "romanoff"] },
-            { id: "vision", nombreMostrado: "Vision", actor: "Paul Bettany", color: "rgba(212, 175, 55, 0.45)", imagen: "https://www.slashfilm.com/wp/wp-content/images/Vision-Character-Poster-Avengers-2.jpg", alias: ["vision"] },
-            { id: "scarlet_witch", nombreMostrado: "Scarlet Witch", actor: "Elizabeth Olsen", color: "rgba(183, 28, 28, 0.45)", imagen: "https://i.pinimg.com/736x/a3/de/98/a3de9876bec6ce2bb033e15659565928.jpg", alias: ["scarlet witch", "bruja escarlata", "wanda maximoff", "wanda", "maximoff"] },
-            { id: "quicksilver", nombreMostrado: "Quicksilver", actor: "Aaron Taylor-Johnson", color: "rgba(127, 140, 141, 0.45)", imagen: "https://i.pinimg.com/736x/94/64/b9/9464b91bc6912cf41557575bee7d1bb8.jpg", alias: ["quicksilver", "mercurio", "pietro maximoff", "pietro"] },
-            { id: "falcon", nombreMostrado: "Falcon", actor: "Anthony Mackie", color: "rgba(230, 126, 34, 0.45)", imagen: "https://i.pinimg.com/736x/5c/58/92/5c5892fd3c2aebb8cdb1ae74e5cd7e62.jpg", alias: ["falcon", "halcon", "sam wilson", "sam", "wilson"] },
-            { id: "war_machine", nombreMostrado: "War Machine", actor: "Don Cheadle", color: "rgba(93, 109, 126, 0.45)", imagen: "https://m.media-amazon.com/images/M/MV5BODY1MjA5MDgtMzZhZS00YjdhLTliYjktOWE5NTMzYzUxZmUxXkEyXkFqcGc@.V1.jpg", imagenClase: "recorte-war-machine", alias: ["war machine", "maquina de guerra", "james rhodes", "rhodey", "rhodes", "jim rhodes"] }
+            { id: "iron_man", nombreMostrado: "Iron Man", actor: "Robert Downey Jr.", color: "rgba(231, 76, 60, 0.45)", imagen: "https://i.ebayimg.com/images/g/-c0AAOSwNSxVQ7Kw/s-l1200.jpg", alias: ["iron man", "ironman", "tony stark", "tony", "stark", "robert downey jr", "rdj"],
+              descripcionSinVer: "Genio multimillonario y filántropo que se convirtió en superhéroe gracias a su armadura tecnológica. Es el fundador de los Vengadores y uno de los héroes más reconocidos de la Tierra.",
+              descripcionVista: "Su obsesión por proteger al mundo lo lleva a crear el programa Ultron sin consultar al resto del equipo, desatando una amenaza que pone en jaque a toda la humanidad." },
+            { id: "capitan_america", nombreMostrado: "Capitán América", actor: "Chris Evans", color: "rgba(41, 128, 185, 0.45)", imagen: "https://static.posters.cz/image/750/24782.jpg", alias: ["capitan america", "captain america", "steve rogers", "steve", "rogers", "cap"],
+              descripcionSinVer: "Súper soldado de la Segunda Guerra Mundial que despertó décadas después congelado en hielo. Es el líder moral de los Vengadores.",
+              descripcionVista: "Steve se consolida como el verdadero líder del equipo, cuestionando las decisiones de Tony y manteniendo unido al grupo en medio de la crisis con Ultron." },
+            { id: "hulk", nombreMostrado: "Hulk", actor: "Mark Ruffalo", color: "rgba(39, 174, 96, 0.45)", imagen: "https://i.ebayimg.com/images/g/IgMAAOSwoaJi9nS6/s-l400.jpg", alias: ["hulk", "bruce banner", "bruce", "banner"],
+              descripcionSinVer: "Científico brillante que se transforma en una criatura verde imparable cuando se enoja. Lucha constantemente por controlar a la bestia que lleva dentro.",
+              descripcionVista: "Bruce protagoniza una batalla descontrolada como Hulk en Johannesburgo y desarrolla una relación cercana con Natasha, quien es la única capaz de calmarlo." },
+            { id: "thor", nombreMostrado: "Thor", actor: "Chris Hemsworth", color: "rgba(142, 68, 173, 0.45)", imagen: "https://www.mubis.es/media/users/9192/112988/jDukV3I-original.jpg", alias: ["thor", "thor odinson", "odinson", "dios del trueno"],
+              descripcionSinVer: "Dios del Trueno de Asgard, poderoso guerrero que empuña el martillo Mjolnir. Defiende tanto su reino como la Tierra de amenazas cósmicas.",
+              descripcionVista: "Thor investiga visiones relacionadas con las Gemas del Infinito y regresa brevemente a la Tierra en busca de respuestas, dejando entrever conflictos más grandes que se avecinan." },
+            { id: "hawkeye", nombreMostrado: "Hawkeye", actor: "Jeremy Renner", color: "rgba(75, 0, 130, 0.45)", imagen: "https://media2.firstshowing.net/firstshowing/img8/HawkeyePosterartMainAUltronFull9b.jpg", alias: ["hawkeye", "ojo de halcon", "clint barton", "clint", "barton"],
+              descripcionSinVer: "Arquero de puntería infalible y agente de S.H.I.E.L.D. Es uno de los miembros fundadores del equipo, sin poderes pero con habilidades letales.",
+              descripcionVista: "Se revela que Clint tiene una familia secreta en una granja alejada de todo, lo que le da al equipo un refugio y muestra su lado más humano." },
+            { id: "black_widow", nombreMostrado: "Black Widow", actor: "Scarlett Johansson", color: "rgba(139, 0, 0, 0.45)", imagen: "https://m.media-amazon.com/images/I/91+iqOflvPL.AC_UF894,1000_QL80.jpg", alias: ["black widow", "viuda negra", "natasha romanoff", "natasha", "romanoff"],
+              descripcionSinVer: "Ex espía rusa convertida en agente de S.H.I.E.L.D. y Vengadora. Experta en combate cuerpo a cuerpo y manipulación estratégica.",
+              descripcionVista: "Natasha profundiza su vínculo con Bruce Banner y revela parte de su oscuro pasado como parte del Programa Viuda Negra." },
+            { id: "vision", nombreMostrado: "Vision", actor: "Paul Bettany", color: "rgba(212, 175, 55, 0.45)", imagen: "https://www.slashfilm.com/wp/wp-content/images/Vision-Character-Poster-Avengers-2.jpg", alias: ["vision"],
+              descripcionSinVer: "Ser sintético creado a partir de tecnología e inteligencia artificial, dotado de una de las Gemas del Infinito. Es uno de los aliados más poderosos y enigmáticos del equipo.",
+              descripcionVista: "Vision nace durante la película como resultado de un plan conjunto entre Tony Stark, Bruce Banner y el propio Ultron, y termina del lado de los Vengadores al demostrar ser digno de empuñar el martillo de Thor." },
+            { id: "scarlet_witch", nombreMostrado: "Scarlet Witch", actor: "Elizabeth Olsen", color: "rgba(183, 28, 28, 0.45)", imagen: "https://i.pinimg.com/736x/a3/de/98/a3de9876bec6ce2bb033e15659565928.jpg", alias: ["scarlet witch", "bruja escarlata", "wanda maximoff", "wanda", "maximoff"],
+              descripcionSinVer: "Joven con poderes de manipulación de la realidad y telequinesis, originaria de Sokovia. Su historia está marcada por la pérdida y el deseo de justicia.",
+              descripcionVista: "Wanda comienza la película enfrentando a los Vengadores junto a Ultron, pero cambia de bando al descubrir las verdaderas intenciones destructivas del robot." },
+            { id: "quicksilver", nombreMostrado: "Quicksilver", actor: "Aaron Taylor-Johnson", color: "rgba(127, 140, 141, 0.45)", imagen: "https://i.pinimg.com/736x/94/64/b9/9464b91bc6912cf41557575bee7d1bb8.jpg", alias: ["quicksilver", "mercurio", "pietro maximoff", "pietro"],
+              descripcionSinVer: "Hermano de Wanda Maximoff, capaz de moverse a velocidades sobrehumanas. Comparte con ella un pasado marcado por la guerra en Sokovia.",
+              descripcionVista: "Pietro se une a los Vengadores en la batalla final contra Ultron y sacrifica su vida para salvar a Hawkeye y a un grupo de civiles." },
+            { id: "falcon", nombreMostrado: "Falcon", actor: "Anthony Mackie", color: "rgba(230, 126, 34, 0.45)", imagen: "https://i.pinimg.com/736x/5c/58/92/5c5892fd3c2aebb8cdb1ae74e5cd7e62.jpg", alias: ["falcon", "halcon", "sam wilson", "sam", "wilson"], ocultoSinVer: true,
+              descripcionSinVer: "Ex paracaidista de las fuerzas armadas equipado con un traje alado de combate. Es aliado cercano del Capitán América.",
+              descripcionVista: "Falcon aparece hacia el final de la película ayudando a los Vengadores tras la batalla, sumándose como refuerzo del nuevo equipo que se está formando." },
+            { id: "war_machine", nombreMostrado: "War Machine", actor: "Don Cheadle", color: "rgba(93, 109, 126, 0.45)", imagen: "https://m.media-amazon.com/images/M/MV5BODY1MjA5MDgtMzZhZS00YjdhLTliYjktOWE5NTMzYzUxZmUxXkEyXkFqcGc@.V1.jpg", imagenClase: "recorte-war-machine", alias: ["war machine", "maquina de guerra", "james rhodes", "rhodey", "rhodes", "jim rhodes"],
+              descripcionSinVer: "Mejor amigo de Tony Stark y piloto condecorado, equipado con una armadura de combate pesada similar a la de Iron Man.",
+              descripcionVista: "Rhodey se incorpora oficialmente como miembro activo del equipo, luchando codo a codo con los Vengadores en la batalla final en Sokovia." }
         ]
     }
 };
@@ -5369,8 +5380,12 @@ function renderizarGaleriaPersonajesAvengersUltron() {
     const data = elencosDisponibles['avengers-era-ultron'];
     if (!data) return;
 
+    const peliculaVista = titulosVistosGuardados.has('Avengers: Age of Ultron');
+
     cont.innerHTML = '';
     data.personajes.forEach(p => {
+        if (!peliculaVista && p.ocultoSinVer) return;
+
         const tarjeta = document.createElement('div');
         tarjeta.className = 'tarjeta-personaje-galeria';
         tarjeta.innerHTML = `
@@ -5380,21 +5395,39 @@ function renderizarGaleriaPersonajesAvengersUltron() {
                 <span class="actor-personaje-slot">${p.actor}</span>
             </div>
         `;
+        tarjeta.addEventListener('click', () => abrirModalPersonajeAvengers(p.id, peliculaVista));
         cont.appendChild(tarjeta);
     });
 }
 
-const btnVolverAvengersUltron = document.getElementById('btn-volver-avengers-ultron');
-if (btnVolverAvengersUltron) {
-    btnVolverAvengersUltron.addEventListener('click', () => {
-        cambiarSeccion(document.getElementById('seccion-explorar'));
+function abrirModalPersonajeAvengers(personajeId, peliculaVista) {
+    const data = elencosDisponibles['avengers-era-ultron'];
+    const p = data.personajes.find(per => per.id === personajeId);
+    if (!p) return;
+
+    const imgModal = document.getElementById('imagen-modal-personaje-avengers');
+    imgModal.src = p.imagen;
+    imgModal.className = p.imagenClase || '';
+
+    document.getElementById('nombre-modal-personaje-avengers').textContent = p.nombreMostrado;
+    document.getElementById('actor-modal-personaje-avengers').textContent = p.actor;
+    document.getElementById('descripcion-modal-personaje-avengers').textContent = peliculaVista ? p.descripcionVista : p.descripcionSinVer;
+    document.getElementById('etiqueta-spoiler-personaje-avengers').textContent = peliculaVista ? '' : '👁️ Todavía no viste la película — sin spoilers';
+
+    document.getElementById('modal-personaje-avengers').classList.remove('oculto');
+}
+
+const closeModalPersonajeAvengers = document.getElementById('close-modal-personaje-avengers');
+if (closeModalPersonajeAvengers) {
+    closeModalPersonajeAvengers.addEventListener('click', () => {
+        document.getElementById('modal-personaje-avengers').classList.add('oculto');
     });
 }
 
 const btnVolverPersonajesAvengersUltron = document.getElementById('btn-volver-personajes-avengers-ultron');
 if (btnVolverPersonajesAvengersUltron) {
     btnVolverPersonajesAvengersUltron.addEventListener('click', () => {
-        cambiarSeccion(document.getElementById('seccion-avengers-era-ultron'));
+        cambiarSeccion(document.getElementById('seccion-mcu-infinito'));
     });
 }
 
