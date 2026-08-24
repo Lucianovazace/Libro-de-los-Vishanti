@@ -22,7 +22,7 @@
     <nav class="nav-principal">
         <button id="btn-biblioteca" class="btn-nav" style="background-color: #28a745;">Mi Biblioteca 📚</button>
         <button id="btn-logros" class="btn-nav" style="background-color: #f1c40f; color: #1a1d24;">Logros 🏆</button>
-        <button id="btn-juegos" class="btn-nav" style="background-color: #e67e22;">Juegos 🎮</button>
+        <button id="btn-comics" class="btn-nav" style="background-color: #e74c3c;">Cómics 💥</button>
         <button id="btn-amigos" class="btn-nav" style="background-color: #9b59b6;">Amigos 👥</button>
 
         <!-- Menú Road to Doomsday -->
@@ -133,32 +133,12 @@
     </div>
 </div>
 
-<!-- MODAL: DETALLE DE PERSONAJE (Avengers: La Era de Ultron) -->
-<div id="modal-personaje-avengers" class="modal oculto">
-    <div class="modal-content" style="max-height:85vh; overflow-y:auto;">
-        <span class="close-modal" id="close-modal-personaje-avengers">&times;</span>
-        <img id="imagen-modal-personaje-avengers" src="" alt="" style="width:100%; aspect-ratio:2/3; object-fit:cover; border-radius:8px; margin-bottom:12px;">
-        <h2 id="nombre-modal-personaje-avengers"></h2>
-        <p id="actor-modal-personaje-avengers" style="color:#aaa; font-size:12px; margin-bottom:10px;"></p>
-        <p id="etiqueta-spoiler-personaje-avengers" style="color:#f1c40f; font-size:11px; font-weight:bold; margin-bottom:8px;"></p>
-        <p id="descripcion-modal-personaje-avengers" style="font-size:13px; text-align:left; line-height:1.5; color:#ddd;"></p>
-    </div>
-</div>
-
-
 <main id="contenedor-principal">
     
     <!-- SECCIÓN: EXPLORAR -->
     <section id="seccion-explorar" class="oculto">
         <h2>Explorar</h2>
         <div class="grilla-biblioteca" id="grilla-explorar"></div>
-    </section>
-
-    <!-- GALERÍA: PERSONAJES AVENGERS ERA DE ULTRON -->
-    <section id="seccion-avengers-era-ultron-personajes" class="oculto">
-        <button class="btn-volver" id="btn-volver-personajes-avengers-ultron">← Volver</button>
-        <h2>Personajes — Avengers: La Era de Ultron</h2>
-        <div class="grilla-personajes-avengers" id="grilla-personajes-avengers-ultron"></div>
     </section>
 
     <!-- COLECCIÓN: ACTORES -->
@@ -885,43 +865,62 @@
         <div class="grilla-logros" id="grilla-logros"></div>
     </section>
 
-    <!-- SECCIÓN: JUEGOS (HUB) -->
-    <section id="seccion-juegos" class="oculto">
-        <h2>Juegos 🎮</h2>
-        <p class="subtitulo-juegos">Elegí un juego para poner a prueba tu conocimiento del Multiverso.</p>
-        <div class="grilla-juegos" id="grilla-juegos">
-            <div class="tarjeta-juego" id="tarjeta-completar-elenco">
-                <div class="icono-juego">🎬</div>
-                <h3>Completa el Elenco</h3>
-                <p>Mencioná a todos los personajes de una película o equipo. ¡Ojo con los nombres alternativos!</p>
-            </div>
-        </div>
+    <!-- CÓMICS -->
+    <section id="seccion-comics" class="oculto">
+        <h2>Cómics 💥</h2>
+        <div class="grilla-biblioteca" id="grilla-comics"></div>
     </section>
 
-    <!-- SECCIÓN: JUEGOS - SELECTOR DE ELENCOS -->
-    <section id="seccion-elenco-selector" class="oculto">
-        <button class="btn-volver" id="btn-volver-juegos-desde-selector">← Volver a Juegos</button>
-        <h2>Completa el Elenco 🎬</h2>
-        <p class="subtitulo-juegos">Elegí qué elenco querés completar.</p>
-        <div class="grilla-juegos" id="grilla-elencos"></div>
+    <!-- COLECCIÓN: DC COMICS (hub) -->
+    <section id="seccion-dc-comics-hub" class="oculto">
+        <button class="btn-volver" id="btn-volver-dc-comics-hub">← Volver a Cómics</button>
+        <h2>DC Comics</h2>
+        <div class="grilla-biblioteca" id="grilla-dc-comics-hub"></div>
     </section>
 
-    <!-- SECCIÓN: JUEGO - COMPLETAR ELENCO (JUGANDO) -->
-    <section id="seccion-elenco-jugar" class="oculto">
-        <button class="btn-volver" id="btn-volver-elenco-selector">← Volver a elencos</button>
-        <h2 id="titulo-elenco-jugar">Completa el Elenco</h2>
-        <p class="contador-elenco" id="contador-elenco">0/11 encontrados</p>
+    <!-- COLECCIÓN: DC - EL CAMINO DEL HÉROE -->
+    <section id="seccion-dc-camino-heroe" class="oculto">
+        <button class="btn-volver" id="btn-volver-dc-camino-heroe">← Volver a DC Comics</button>
+        <h2>El Camino del Héroe</h2>
+        <div class="grilla-biblioteca" id="grilla-dc-camino-heroe"></div>
+    </section>
 
-        <div class="grilla-slots-elenco" id="grilla-slots-elenco"></div>
-
-        <div class="fila-input-elenco">
-            <input type="text" id="input-elenco" placeholder="Escribí un nombre..." autocomplete="off">
-            <button class="btn-modal" id="btn-adivinar-elenco">Adivinar</button>
-            <button class="btn-modal" id="btn-pista-elenco" style="background-color:#8e44ad;">💡 Pedir pista</button>
+    <!-- COLECCIÓN: GREEN LANTERN - HAL JORDAN (con filtros por etapa de lectura) -->
+    <section id="seccion-green-lantern-hal-jordan" class="oculto">
+        <button class="btn-volver" id="btn-volver-green-lantern-hal-jordan">← Volver a DC Comics</button>
+        <h2>Green Lantern - Hal Jordan</h2>
+        <div class="filtros-seccion">
+            <button class="btn-filtro-gl-hal activo" data-tipo="origen">Origen</button>
+            <button class="btn-filtro-gl-hal" data-tipo="primeros-anos">Primeros años como Green Lantern / fundación de la Liga</button>
+            <button class="btn-filtro-gl-hal" data-tipo="corps">Años como Corps</button>
+            <button class="btn-filtro-gl-hal" data-tipo="bronze-age">Bronze Age</button>
+            <button class="btn-filtro-gl-hal" data-tipo="silver-bronze-age">Silver/Bronze Age</button>
+            <button class="btn-filtro-gl-hal" data-tipo="crisis">Crisis</button>
+            <button class="btn-filtro-gl-hal" data-tipo="invasion">Invasión alienígena post-Crisis</button>
+            <button class="btn-filtro-gl-hal" data-tipo="post-crisis">Post-Crisis</button>
+            <button class="btn-filtro-gl-hal" data-tipo="caida-hal-jordan">La Caída de Hal Jordan</button>
+            <button class="btn-filtro-gl-hal" data-tipo="regreso-vida">Regreso a la vida</button>
+            <button class="btn-filtro-gl-hal" data-tipo="infinite-crisis">Infinite Crisis y su secuela en la Liga (2005-2007)</button>
+            <button class="btn-filtro-gl-hal" data-tipo="crisis-final-blackest-night">Crisis Final y Blackest Night (2008-2010)</button>
+            <button class="btn-filtro-gl-hal" data-tipo="flashpoint">Flashpoint (versión alterna del personaje)</button>
+            <button class="btn-filtro-gl-hal" data-tipo="nuevos-52">Los Nuevos 52</button>
+            <button class="btn-filtro-gl-hal" data-tipo="regreso-morrison">El regreso de Hal a la Tierra: run de Grant Morrison (2019-2021)</button>
         </div>
+        <div class="grilla-biblioteca"></div>
+    </section>
 
-        <p id="mensaje-elenco" class="mensaje-elenco"></p>
-        <div id="contenedor-confeti-elenco"></div>
+    <!-- COLECCIÓN: MARVEL (hub) -->
+    <section id="seccion-marvel-comics-hub" class="oculto">
+        <button class="btn-volver" id="btn-volver-marvel-comics-hub">← Volver a Cómics</button>
+        <h2>Marvel</h2>
+        <div class="grilla-biblioteca" id="grilla-marvel-comics-hub"></div>
+    </section>
+
+    <!-- COLECCIÓN: MARVEL - EL CAMINO DEL HÉROE -->
+    <section id="seccion-marvel-camino-heroe" class="oculto">
+        <button class="btn-volver" id="btn-volver-marvel-camino-heroe">← Volver a Marvel</button>
+        <h2>El Camino del Héroe</h2>
+        <div class="grilla-biblioteca" id="grilla-marvel-camino-heroe"></div>
     </section>
 
     <!-- SECCIÓN: AMIGOS -->

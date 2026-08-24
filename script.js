@@ -44,7 +44,7 @@ const listaMedia = [
     { titulo: "Thor: The Dark World", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 8, crono: 9, poster: "https://shoptrends.com/pub/media/catalog/product/p/o/pod5973-1.jpg" },
     { titulo: "Captain America: The Winter Soldier", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 9, crono: 11, poster: "https://www.hollywoodreporter.com/wp-content/uploads/2014/01/captain_america_the_winter_soldier.jpg" },
     { titulo: "Guardians of The Galaxy", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 10, crono: 12, poster: "https://collider.com/wp-content/uploads/guardians-of-the-galaxy-teaser-poster.jpg" },
-    { titulo: "Avengers: Age of Ultron", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 11, crono: 14, poster: "https://collider.com/wp-content/uploads/avengers-age-of-ultron-poster1.jpg", infoId: "avengers-era-ultron-personajes" },
+    { titulo: "Avengers: Age of Ultron", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 11, crono: 14, poster: "https://collider.com/wp-content/uploads/avengers-age-of-ultron-poster1.jpg" },
     { titulo: "Ant-Man", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 12, crono: 15, poster: "https://m.media-amazon.com/images/I/81rPJLNidFL.jpg" },
     { titulo: "Captain America: Civil War", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 13, crono: 16, poster: "https://heroichollywood.com/wp-content/uploads/2015/11/img-26.jpg" },
     { titulo: "Doctor Strange", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 14, crono: 20, poster: "https://uruloki.org/felipeblog/images2016/20160412-doctorstrange.jpg" },
@@ -857,6 +857,53 @@ const listaMedia = [
     { titulo: "Se7en", categoria: "david-fincher", subtipo: "1990", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/191nKfP0ehp3uIvWqgPbFmI4lv9.jpg" },
     { titulo: "The Game", categoria: "david-fincher", subtipo: "1990", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/xZ4QX9O8jr0JrfZzRPkt1VLfo7c.jpg" },
     { titulo: "Club de la Pelea", categoria: "david-fincher", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81D+KJkO4SL.jpg" },
+
+    // --- GREEN LANTERN - HAL JORDAN (con filtros por etapa de lectura) ---
+    { titulo: "Green Lantern: Origen Secreto (DC Colección de Novelas Gráficas #6)", categoria: "green-lantern-hal-jordan", subtipo: "origen", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_974824-MLA105818725485_012026-O.webp" },
+    { titulo: "JLA: Año Uno (Parte Uno) (DC Colección Novelas Gráficas #10)", categoria: "green-lantern-hal-jordan", subtipo: "primeros-anos", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_921699-MLA105814877141_012026-O.webp" },
+    { titulo: "JLA: Año Uno (Parte Dos) (DC Colección Novelas Gráficas #11)", categoria: "green-lantern-hal-jordan", subtipo: "primeros-anos", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_793375-MLA99914200433_112025-O.webp" },
+    { titulo: "Green Lantern Corps: Relatos de los Corps (DC Colección Héroes y Villanos #62)", categoria: "green-lantern-hal-jordan", subtipo: "corps", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_817134-MLA96880835826_112025-O.webp" },
+    { titulo: "Green Arrow / Green Lantern: Héroes Errantes (DC Colección Novelas Gráficas #56)", categoria: "green-lantern-hal-jordan", subtipo: "bronze-age", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_794879-MLA53177354049_012023-O.webp" },
+    { titulo: "Esenciales DC #24: Green Lantern / Green Arrow Edición Absoluta (Ovni)", categoria: "green-lantern-hal-jordan", subtipo: "bronze-age", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/green_lantern_green_arrow_cov-96678bddcba5edf30317226036375082-1024-1024.webp" },
+    { titulo: "Liga de la Justicia de América: Crisis en Nueva Génesis (DC Colección Héroes y Villanos #25)", categoria: "green-lantern-hal-jordan", subtipo: "bronze-age", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_868705-MLA100587831008_122025-O.webp" },
+    { titulo: "Batman/Superman: Los Mejores del Mundo #1 al #8 (Ovni)", categoria: "green-lantern-hal-jordan", subtipo: "silver-bronze-age", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_superman_-_los_mejores_del_mundo_cov11-194d38fd286024b77b16853357900328-1024-1024.webp" },
+    { titulo: "Crisis en Tierras Infinitas (ECC)", categoria: "green-lantern-hal-jordan", subtipo: "crisis", tipo: "Cómic", poster: "https://i1.whakoom.com/large/12/3d/151d7198e4e3410eb85e3d3c89c7f001.jpg" },
+    { titulo: "Esenciales DC #2: Crisis en Tierras Infinitas (Ovni)", categoria: "green-lantern-hal-jordan", subtipo: "crisis", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/crisis_cov_arg1-a4a9db904b75118e4315980054342033-1024-1024.webp" },
+    { titulo: "Crisis en Tierras Infinitas Vol. 1 (DC Colección Héroes y Villanos #30)", categoria: "green-lantern-hal-jordan", subtipo: "crisis", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2024/06/Crisis-en-Tierras-Infinitas-coleccion-Heroes-y-Villanos-DC-vol.-30.webp" },
+    { titulo: "Crisis en Tierras Infinitas Vol. 2 (DC Colección Héroes y Villanos #35)", categoria: "green-lantern-hal-jordan", subtipo: "crisis", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2024/08/Crisis-en-Tierras-Infinitas-parte-II-Coleccion-Heroes-y-Villanos-DC-vol.-35.webp" },
+    { titulo: "Esenciales DC #25: ¡Invasión! (Ovni)", categoria: "green-lantern-hal-jordan", subtipo: "invasion", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/invasion_cov-6ce1398de623d16ffd17244156497208-640-0.webp" },
+    { titulo: "Trinidad (DC Colección Novelas Gráficas #25)", categoria: "green-lantern-hal-jordan", subtipo: "post-crisis", tipo: "Cómic", poster: "https://d22fxaf9t8d39k.cloudfront.net/0e80a152fae6360973437a9df2c4f61a9c42d8464e9cde74a0f1f1e3819e9894223891.jpg" },
+    { titulo: "Esenciales DC #6: Green Lantern: Ocaso Esmeralda (Ovni)", categoria: "green-lantern-hal-jordan", subtipo: "caida-hal-jordan", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/green_lantern_ocaso_esmeralda_cov_arg-11-00c3be80324309cba616185454326831-1024-1024.webp" },
+    { titulo: "Green Lantern: Crepúsculo Esmeralda (DC Colección Héroes y Villanos #29)", categoria: "green-lantern-hal-jordan", subtipo: "caida-hal-jordan", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_631881-MLA83939488294_042025-O.webp" },
+    { titulo: "Green Lantern: Caballeros Esmeralda (Ovni Press)", categoria: "green-lantern-hal-jordan", subtipo: "caida-hal-jordan", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/green_lantern_-_caballeros_esmeralda_cov-4346afa99142f6af5f17437478591760-1024-1024.webp" },
+    { titulo: "Esenciales DC #8: Hora Cero: Crisis en el Tiempo (Ovni)", categoria: "green-lantern-hal-jordan", subtipo: "caida-hal-jordan", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/hora-cero-cov-arg1-56b80fe7a5303ce08016221731674919-1024-1024.webp" },
+    { titulo: "Esenciales DC #9: La Noche Final (Ovni)", categoria: "green-lantern-hal-jordan", subtipo: "caida-hal-jordan", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/la-noche-final-cov1-1b10cebc75f426b06b16312248170865-640-0.webp" },
+    { titulo: "Esenciales DC #4: Crisis de Identidad (Ovni)", categoria: "green-lantern-hal-jordan", subtipo: "regreso-vida", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/crisis_de_identidad_cov_arg1-d918043e328c6cfe5016136913511589-1024-1024.webp" },
+    { titulo: "Esenciales DC #18: Green Lantern: Renacimiento (Ovni)", categoria: "green-lantern-hal-jordan", subtipo: "regreso-vida", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/green_lantern_renacimiento1-aa30848fc26ba013fa16778128850771-1024-1024.webp" },
+    { titulo: "Green Lantern: Renacimiento (DC Colección Héroes y Villanos #33)", categoria: "green-lantern-hal-jordan", subtipo: "regreso-vida", tipo: "Cómic", poster: "https://www.cuartomundo.cl/wp-content/uploads/2023/08/Green-Lantern-Renacimiento.jpg" },
+    { titulo: "Green Lantern: Ser un Green Lantern (DC Colección Novelas Gráficas #85)", categoria: "green-lantern-hal-jordan", subtipo: "regreso-vida", tipo: "Cómic", poster: "https://i1.whakoom.com/small/23/1d/fe337151b3e8460ba1391008d2a19e1f.jpg" },
+    { titulo: "Green Lantern: Sin Miedo (Ovni Press)", categoria: "green-lantern-hal-jordan", subtipo: "regreso-vida", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/greenlanter_sin_miedo_cov-9f25a29a48c03b5a6817856279516525-1024-1024.webp" },
+    { titulo: "Green Lantern: La Guerra de los Sinestro Corps Vol. 1 (DC Colección Héroes y Villanos #37)", categoria: "green-lantern-hal-jordan", subtipo: "regreso-vida", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2024/05/37-Green-Lantern-La-guerra-de-los-siniestro-corps-vol.1.webp" },
+    { titulo: "Green Lantern: La Guerra de los Sinestro Corps Vol. 2 (DC Colección Héroes y Villanos #46)", categoria: "green-lantern-hal-jordan", subtipo: "regreso-vida", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_616475-MLA97337905075_112025-O.webp" },
+    { titulo: "Esenciales DC #5: Crisis Infinita (Ovni)", categoria: "green-lantern-hal-jordan", subtipo: "infinite-crisis", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/crisis-infinita-cov-arg1-b62d0ca8cd6287e91416179067865292-1024-1024.webp" },
+    { titulo: "Crisis Infinita: Vol 1 (DC Colección Héroes y Villanos #44)", categoria: "green-lantern-hal-jordan", subtipo: "infinite-crisis", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_674010-MLA78158072397_082024-O.webp" },
+    { titulo: "Crisis Infinita Vol. 2 (DC Colección Héroes y Villanos #48)", categoria: "green-lantern-hal-jordan", subtipo: "infinite-crisis", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_919978-MLA100578724660_122025-O.webp" },
+    { titulo: "Crisis Infinita: La Guerra Rann/Thanagar (DC Colección Héroes y Villanos #32)", categoria: "green-lantern-hal-jordan", subtipo: "infinite-crisis", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_743120-MLA76338165211_052024-O.webp" },
+    { titulo: "Liga de la Justicia de América: La Senda del Tornado (DC Colección Héroes y Villanos #50)", categoria: "green-lantern-hal-jordan", subtipo: "infinite-crisis", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_651256-MLA113922878383_062026-O.webp" },
+    { titulo: "Liga de la Justicia: La Saga del Rayo (DC Colección Héroes y Villanos #56)", categoria: "green-lantern-hal-jordan", subtipo: "infinite-crisis", tipo: "Cómic", poster: "https://www.abacus.coop/on/demandware.static/-/Sites-AbacusMaster/default/dwa182d48d/images/large/1479286.96.jpg" },
+    { titulo: "Esenciales DC #12: Crisis Final (Ovni)", categoria: "green-lantern-hal-jordan", subtipo: "crisis-final-blackest-night", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/crisis_final_cov1-94793d73d957a1245716378555583021-640-0.webp" },
+    { titulo: "Esenciales DC #11: La Noche más Oscura (Ovni)", categoria: "green-lantern-hal-jordan", subtipo: "crisis-final-blackest-night", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/la_noche_mas_oscura_2da_cov-a31e86028f1375b6e917685742571677-1024-1024.webp" },
+    { titulo: "Esenciales DC #1: Flashpoint Absoluto (Ovni)", categoria: "green-lantern-hal-jordan", subtipo: "flashpoint", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/326/487/products/flashpoint-absoluto1-f467ab7a6e3e2c3c2d15987237989496-640-0.webp" },
+    { titulo: "Flashpoint (Novelas Gráficas #60)", categoria: "green-lantern-hal-jordan", subtipo: "flashpoint", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_630959-MLA53159634445_012023-O.webp" },
+    { titulo: "Green Lantern Nuevos 52: #1 al #11", categoria: "green-lantern-hal-jordan", subtipo: "nuevos-52", tipo: "Cómic", poster: "https://i1.whakoom.com/large/38/2e/b3cf9b76a3a649f39f95232ee4a98a56.jpg" },
+    { titulo: "Maldad Eterna (DC Colección Héroes y Villanos #5)", categoria: "green-lantern-hal-jordan", subtipo: "nuevos-52", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/057/977/products/hyv_05_maldad_eterna_cover_def1-4b912f8d3b3006031e16410646277347-640-0.webp" },
+    { titulo: "Green Lantern Nuevos 52: #12 al #19", categoria: "green-lantern-hal-jordan", subtipo: "nuevos-52", tipo: "Cómic", poster: "https://i1.whakoom.com/large/32/12/e467e84f424f48e5ad1329565cc10779.jpg" },
+    { titulo: "Liga de la Justicia: La Guerra de Darkseid Vol. 1 (DC Colección Héroes y Villanos #14)", categoria: "green-lantern-hal-jordan", subtipo: "nuevos-52", tipo: "Cómic", poster: "https://i1.whakoom.com/small/3d/0e/845a8a4d65254cbe9bbeeb9023a72194.jpg" },
+    { titulo: "Liga de la Justicia: La Guerra de Darkseid Vol. 2 (Héroes y Villanos #19)", categoria: "green-lantern-hal-jordan", subtipo: "nuevos-52", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2023/11/5f5a07c0023e42beaeed1025db250b4d.webp" },
+    { titulo: "Green Lantern: Nuevos 52: #20 al #22", categoria: "green-lantern-hal-jordan", subtipo: "nuevos-52", tipo: "Cómic", poster: "https://i1.whakoom.com/large/3b/33/b8e526c1d4cb4bcf9d0aed3496d67dfd.jpg" },
+    { titulo: "Green Lantern: Justicia Intergaláctica (Ovni Press)", categoria: "green-lantern-hal-jordan", subtipo: "regreso-morrison", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/green_lantern_vol_01_cov1-c89f47245b1cc1dff415972488952095-1024-1024.webp" },
+    { titulo: "Green Lantern: Blackstars (Ovni Press)", categoria: "green-lantern-hal-jordan", subtipo: "regreso-morrison", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/green_lantern_blackstars_cov1-a38250e1e185458cfa16136902045048-640-0.webp" },
+    { titulo: "Green Lantern: Temporada Dos (Ovni Press)", categoria: "green-lantern-hal-jordan", subtipo: "regreso-morrison", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/green_lantern_vol_02_cov1-b6c2a2d7bf4fe3677d16263181577273-480-0.webp" },
 ];
 
 // ==========================================
@@ -2117,6 +2164,50 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "dc-comics-hub",
+        titulo: "DC Comics",
+        categoria: "comics",
+        poster: "https://placehold.co/300x450?text=DC+Comics",
+        esContenedor: true,
+        peliculas: []
+    },
+    {
+        id: "dc-camino-heroe",
+        titulo: "El Camino del Héroe",
+        categoria: "dc-comics-hub",
+        poster: "https://placehold.co/300x450?text=El+Camino+del+Heroe",
+        esContenedor: true,
+        etiqueta: "Cómic",
+        peliculas: []
+    },
+    {
+        id: "green-lantern-hal-jordan",
+        titulo: "Green Lantern - Hal Jordan",
+        categoria: "dc-comics-hub",
+        poster: "https://static.wikia.nocookie.net/batman/images/8/88/Linterna-verde.jpg/revision/latest?cb=20170921191634&path-prefix=es",
+        esContenedor: true,
+        etiqueta: "Cómic",
+        progresoCategoria: "green-lantern-hal-jordan",
+        peliculas: []
+    },
+    {
+        id: "marvel-comics-hub",
+        titulo: "Marvel",
+        categoria: "comics",
+        poster: "https://placehold.co/300x450?text=Marvel+Comics",
+        esContenedor: true,
+        peliculas: []
+    },
+    {
+        id: "marvel-camino-heroe",
+        titulo: "El Camino del Héroe",
+        categoria: "marvel-comics-hub",
+        poster: "https://placehold.co/300x450?text=El+Camino+del+Heroe",
+        esContenedor: true,
+        etiqueta: "Cómic",
+        peliculas: []
+    },
+    {
         id: "death-note",
         titulo: "Death Note",
         categoria: "anime",
@@ -2706,6 +2797,9 @@ function renderizarColecciones() {
         "marvel-animacion": "seccion-marvel-animacion",
         "dragonball": "seccion-dragonball",
         "anime": "seccion-anime",
+        "comics": "seccion-comics",
+        "dc-comics-hub": "seccion-dc-comics-hub",
+        "marvel-comics-hub": "seccion-marvel-comics-hub",
         "sw-animacion": "seccion-sw-animacion",
         "franquicias": "seccion-franquicias",
         "videojuegos-explorar": "seccion-videojuegos-explorar",
@@ -2749,7 +2843,7 @@ function renderizarColecciones() {
                     <p>${col.etiqueta || 'Categoría'}</p>
                     ${barraProgreso}
                     <div class="botones-coleccion">
-                        <button class="btn-abrir-coleccion" data-coleccion="${col.id}">${col.textoBoton || 'Abrir 📂'}</button>
+                        <button class="btn-abrir-coleccion" data-coleccion="${col.id}">Abrir 📂</button>
                     </div>
                 </div>
             `;
@@ -2866,6 +2960,7 @@ function abrirColeccion(colId) {
         'andrew-garfield': '.btn-filtro-garfield[data-tipo="2020"]',
         'alfred-hitchcock': '.btn-filtro-hitchcock[data-tipo="1970"]',
         'david-fincher': '.btn-filtro-fincher[data-tipo="2020"]',
+        'green-lantern-hal-jordan': '.btn-filtro-gl-hal[data-tipo="origen"]',
         'tomb-raider': '.btn-filtro-tombraider[data-tipo="survivor"]',
         'pokemon-canon': '.btn-filtro-pokemon[data-tipo="kanto-johto"]'
     };
@@ -2964,6 +3059,7 @@ function renderizarContenido() {
         "andrew-garfield": "seccion-andrew-garfield",
         "alfred-hitchcock": "seccion-alfred-hitchcock",
         "david-fincher": "seccion-david-fincher",
+        "green-lantern-hal-jordan": "seccion-green-lantern-hal-jordan",
         "tomb-raider": "seccion-tomb-raider",
         "oscar-2021": "seccion-oscar-2021",
         "oscar-2022": "seccion-oscar-2022",
@@ -2999,7 +3095,6 @@ function renderizarContenido() {
 
             const esVideojuego = item.tipo === "Videojuego";
             const textoInicial = esVideojuego ? "Marcar Jugado" : "Marcar Visto";
-            const botonInfo = item.infoId ? `<button class="btn-info-personajes" data-info-id="${item.infoId}">Información ℹ️</button>` : '';
 
             const htmlTarjeta = `
                 <div class="tarjeta-media" style="${ocultarEstilo}" data-tier="${item.tier || ''}" data-tipo="${item.tipoArrow || ''}" data-crono="${item.crono || ''}" data-subtipo="${item.subtipo || ''}" data-orden="${item.ordenSalida || ''}" data-tierra="${item.tierra || ''}" data-accion="${esVideojuego ? 'jugado' : 'visto'}">
@@ -3007,22 +3102,10 @@ function renderizarContenido() {
                     <h3>${item.titulo}</h3>
                     <p>${item.tipo}</p>
                     <button class="btn-accion">${textoInicial}</button>
-                    ${botonInfo}
                 </div>
             `;
             contenedorDestino.insertAdjacentHTML('beforeend', htmlTarjeta);
         }
-    });
-
-    document.querySelectorAll('.btn-info-personajes').forEach(boton => {
-        boton.addEventListener('click', function(e) {
-            e.stopPropagation();
-            const infoId = this.getAttribute('data-info-id');
-            if (infoId === 'avengers-era-ultron-personajes') {
-                renderizarGaleriaPersonajesAvengersUltron();
-                cambiarSeccion(document.getElementById('seccion-avengers-era-ultron-personajes'));
-            }
-        });
     });
 
     sincronizarVistos();
@@ -4624,6 +4707,23 @@ botonesFiltroFincher.forEach(boton => {
 });
 
 // ==========================================
+// FILTROS "GREEN LANTERN - HAL JORDAN" (por etapa de lectura)
+// ==========================================
+const botonesFiltroGlHal = document.querySelectorAll('.btn-filtro-gl-hal');
+botonesFiltroGlHal.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroGlHal.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const tipoElegido = this.getAttribute('data-tipo');
+        const tarjetas = document.querySelectorAll('#seccion-green-lantern-hal-jordan .tarjeta-media');
+
+        tarjetas.forEach(tarjeta => {
+            tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
+        });
+    });
+});
+
+// ==========================================
 // FILTROS "TOMB RAIDER"
 // ==========================================
 const botonesFiltroTombRaider = document.querySelectorAll('.btn-filtro-tombraider');
@@ -5108,326 +5208,45 @@ if (btnLogros) {
     });
 }
 
-// ==========================================
-// JUEGOS
-// ==========================================
-
-// --- Datos de elencos disponibles para "Completa el Elenco" ---
-// Para agregar un nuevo elenco, sumar una entrada nueva a este objeto con el mismo formato.
-const elencosDisponibles = {
-    "avengers-era-ultron": {
-        titulo: "Avengers: La Era de Ultron",
-        icono: "🎬",
-        personajes: [
-            { id: "iron_man", nombreMostrado: "Iron Man", actor: "Robert Downey Jr.", color: "rgba(231, 76, 60, 0.45)", imagen: "https://i.ebayimg.com/images/g/-c0AAOSwNSxVQ7Kw/s-l1200.jpg", alias: ["iron man", "ironman", "tony stark", "tony", "stark", "robert downey jr", "rdj"],
-              descripcionSinVer: "Genio multimillonario y filántropo que se convirtió en superhéroe gracias a su armadura tecnológica. Es el fundador de los Vengadores y uno de los héroes más reconocidos de la Tierra.",
-              descripcionVista: "Su obsesión por proteger al mundo lo lleva a crear el programa Ultron sin consultar al resto del equipo, desatando una amenaza que pone en jaque a toda la humanidad." },
-            { id: "capitan_america", nombreMostrado: "Capitán América", actor: "Chris Evans", color: "rgba(41, 128, 185, 0.45)", imagen: "https://static.posters.cz/image/750/24782.jpg", alias: ["capitan america", "captain america", "steve rogers", "steve", "rogers", "cap"],
-              descripcionSinVer: "Súper soldado de la Segunda Guerra Mundial que despertó décadas después congelado en hielo. Es el líder moral de los Vengadores.",
-              descripcionVista: "Steve se consolida como el verdadero líder del equipo, cuestionando las decisiones de Tony y manteniendo unido al grupo en medio de la crisis con Ultron." },
-            { id: "hulk", nombreMostrado: "Hulk", actor: "Mark Ruffalo", color: "rgba(39, 174, 96, 0.45)", imagen: "https://i.ebayimg.com/images/g/IgMAAOSwoaJi9nS6/s-l400.jpg", alias: ["hulk", "bruce banner", "bruce", "banner"],
-              descripcionSinVer: "Científico brillante que se transforma en una criatura verde imparable cuando se enoja. Lucha constantemente por controlar a la bestia que lleva dentro.",
-              descripcionVista: "Bruce protagoniza una batalla descontrolada como Hulk en Johannesburgo y desarrolla una relación cercana con Natasha, quien es la única capaz de calmarlo." },
-            { id: "thor", nombreMostrado: "Thor", actor: "Chris Hemsworth", color: "rgba(142, 68, 173, 0.45)", imagen: "https://www.mubis.es/media/users/9192/112988/jDukV3I-original.jpg", alias: ["thor", "thor odinson", "odinson", "dios del trueno"],
-              descripcionSinVer: "Dios del Trueno de Asgard, poderoso guerrero que empuña el martillo Mjolnir. Defiende tanto su reino como la Tierra de amenazas cósmicas.",
-              descripcionVista: "Thor investiga visiones relacionadas con las Gemas del Infinito y regresa brevemente a la Tierra en busca de respuestas, dejando entrever conflictos más grandes que se avecinan." },
-            { id: "hawkeye", nombreMostrado: "Hawkeye", actor: "Jeremy Renner", color: "rgba(75, 0, 130, 0.45)", imagen: "https://media2.firstshowing.net/firstshowing/img8/HawkeyePosterartMainAUltronFull9b.jpg", alias: ["hawkeye", "ojo de halcon", "clint barton", "clint", "barton"],
-              descripcionSinVer: "Arquero de puntería infalible y agente de S.H.I.E.L.D. Es uno de los miembros fundadores del equipo, sin poderes pero con habilidades letales.",
-              descripcionVista: "Se revela que Clint tiene una familia secreta en una granja alejada de todo, lo que le da al equipo un refugio y muestra su lado más humano." },
-            { id: "black_widow", nombreMostrado: "Black Widow", actor: "Scarlett Johansson", color: "rgba(139, 0, 0, 0.45)", imagen: "https://m.media-amazon.com/images/I/91+iqOflvPL.AC_UF894,1000_QL80.jpg", alias: ["black widow", "viuda negra", "natasha romanoff", "natasha", "romanoff"],
-              descripcionSinVer: "Ex espía rusa convertida en agente de S.H.I.E.L.D. y Vengadora. Experta en combate cuerpo a cuerpo y manipulación estratégica.",
-              descripcionVista: "Natasha profundiza su vínculo con Bruce Banner y revela parte de su oscuro pasado como parte del Programa Viuda Negra." },
-            { id: "vision", nombreMostrado: "Vision", actor: "Paul Bettany", color: "rgba(212, 175, 55, 0.45)", imagen: "https://www.slashfilm.com/wp/wp-content/images/Vision-Character-Poster-Avengers-2.jpg", alias: ["vision"],
-              descripcionSinVer: "Ser sintético creado a partir de tecnología e inteligencia artificial, dotado de una de las Gemas del Infinito. Es uno de los aliados más poderosos y enigmáticos del equipo.",
-              descripcionVista: "Vision nace durante la película como resultado de un plan conjunto entre Tony Stark, Bruce Banner y el propio Ultron, y termina del lado de los Vengadores al demostrar ser digno de empuñar el martillo de Thor." },
-            { id: "scarlet_witch", nombreMostrado: "Scarlet Witch", actor: "Elizabeth Olsen", color: "rgba(183, 28, 28, 0.45)", imagen: "https://i.pinimg.com/736x/a3/de/98/a3de9876bec6ce2bb033e15659565928.jpg", alias: ["scarlet witch", "bruja escarlata", "wanda maximoff", "wanda", "maximoff"],
-              descripcionSinVer: "Joven con poderes de manipulación de la realidad y telequinesis, originaria de Sokovia. Su historia está marcada por la pérdida y el deseo de justicia.",
-              descripcionVista: "Wanda comienza la película enfrentando a los Vengadores junto a Ultron, pero cambia de bando al descubrir las verdaderas intenciones destructivas del robot." },
-            { id: "quicksilver", nombreMostrado: "Quicksilver", actor: "Aaron Taylor-Johnson", color: "rgba(127, 140, 141, 0.45)", imagen: "https://i.pinimg.com/736x/94/64/b9/9464b91bc6912cf41557575bee7d1bb8.jpg", alias: ["quicksilver", "mercurio", "pietro maximoff", "pietro"],
-              descripcionSinVer: "Hermano de Wanda Maximoff, capaz de moverse a velocidades sobrehumanas. Comparte con ella un pasado marcado por la guerra en Sokovia.",
-              descripcionVista: "Pietro se une a los Vengadores en la batalla final contra Ultron y sacrifica su vida para salvar a Hawkeye y a un grupo de civiles." },
-            { id: "falcon", nombreMostrado: "Falcon", actor: "Anthony Mackie", color: "rgba(230, 126, 34, 0.45)", imagen: "https://i.pinimg.com/736x/5c/58/92/5c5892fd3c2aebb8cdb1ae74e5cd7e62.jpg", alias: ["falcon", "halcon", "sam wilson", "sam", "wilson"], ocultoSinVer: true,
-              descripcionSinVer: "Ex paracaidista de las fuerzas armadas equipado con un traje alado de combate. Es aliado cercano del Capitán América.",
-              descripcionVista: "Falcon aparece hacia el final de la película ayudando a los Vengadores tras la batalla, sumándose como refuerzo del nuevo equipo que se está formando." },
-            { id: "war_machine", nombreMostrado: "War Machine", actor: "Don Cheadle", color: "rgba(93, 109, 126, 0.45)", imagen: "https://m.media-amazon.com/images/M/MV5BODY1MjA5MDgtMzZhZS00YjdhLTliYjktOWE5NTMzYzUxZmUxXkEyXkFqcGc@.V1.jpg", imagenClase: "recorte-war-machine", alias: ["war machine", "maquina de guerra", "james rhodes", "rhodey", "rhodes", "jim rhodes"],
-              descripcionSinVer: "Mejor amigo de Tony Stark y piloto condecorado, equipado con una armadura de combate pesada similar a la de Iron Man.",
-              descripcionVista: "Rhodey se incorpora oficialmente como miembro activo del equipo, luchando codo a codo con los Vengadores en la batalla final en Sokovia." }
-        ]
-    }
-};
-
-let elencoActualId = null;
-let personajesEncontradosElenco = new Set();
-
-function normalizarTextoJuego(str) {
-    return str
-        .toLowerCase()
-        .normalize('NFD')
-        .replace(/[\u0300-\u036f]/g, '')
-        .trim()
-        .replace(/\s+/g, ' ');
-}
-
-function lanzarConfetiVerdeElenco() {
-    const contenedor = document.getElementById('contenedor-confeti-elenco');
-    if (!contenedor) return;
-
-    const tonosVerdes = ['#2ecc71', '#27ae60', '#1abc9c', '#58d68d', '#0e6b3a', '#82e0aa'];
-    const cantidadPiezas = 90;
-
-    for (let i = 0; i < cantidadPiezas; i++) {
-        const pieza = document.createElement('div');
-        pieza.className = 'confeti-pieza';
-        pieza.style.left = `${Math.random() * 100}vw`;
-        pieza.style.backgroundColor = tonosVerdes[Math.floor(Math.random() * tonosVerdes.length)];
-        pieza.style.animationDuration = `${2 + Math.random() * 1.5}s`;
-        pieza.style.animationDelay = `${Math.random() * 0.4}s`;
-        pieza.style.transform = `rotate(${Math.random() * 360}deg)`;
-        contenedor.appendChild(pieza);
-
-        setTimeout(() => pieza.remove(), 4500);
-    }
-}
-
-function renderizarSelectorElencos() {
-    const grilla = document.getElementById('grilla-elencos');
-    if (!grilla) return;
-    grilla.innerHTML = '';
-    Object.entries(elencosDisponibles).forEach(([id, data]) => {
-        const tarjeta = document.createElement('div');
-        tarjeta.className = 'tarjeta-juego';
-        tarjeta.innerHTML = `
-            <div class="icono-juego">${data.icono}</div>
-            <h3>${data.titulo}</h3>
-            <p>${data.personajes.length} personajes por adivinar</p>
-        `;
-        tarjeta.addEventListener('click', () => iniciarJuegoElenco(id));
-        grilla.appendChild(tarjeta);
+const btnComics = document.getElementById('btn-comics');
+if (btnComics) {
+    btnComics.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-comics'));
     });
 }
 
-function iniciarJuegoElenco(id) {
-    const data = elencosDisponibles[id];
-    if (!data) return;
-    elencoActualId = id;
-    personajesEncontradosElenco = new Set();
-
-    document.getElementById('titulo-elenco-jugar').textContent = `Completa el Elenco: ${data.titulo}`;
-    const mensaje = document.getElementById('mensaje-elenco');
-    mensaje.textContent = '';
-    mensaje.className = 'mensaje-elenco';
-    document.getElementById('input-elenco').value = '';
-
-    renderizarSlotsElenco();
-    actualizarContadorElenco();
-    cambiarSeccion(document.getElementById('seccion-elenco-jugar'));
-}
-
-function renderizarSlotsElenco() {
-    const cont = document.getElementById('grilla-slots-elenco');
-    if (!cont) return;
-    const data = elencosDisponibles[elencoActualId];
-    cont.innerHTML = '';
-    data.personajes.forEach(p => {
-        const slot = document.createElement('div');
-        slot.className = 'slot-elenco';
-        slot.dataset.personajeId = p.id;
-        if (personajesEncontradosElenco.has(p.id)) {
-            slot.classList.add('resuelto');
-            if (p.imagen) {
-                slot.innerHTML = `
-                    <img class="imagen-personaje-slot ${p.imagenClase || ''}" src="${p.imagen}" alt="${p.nombreMostrado}">
-                    <div class="caption-personaje-slot">
-                        <span class="nombre-personaje-slot">${p.nombreMostrado}</span>
-                        <span class="actor-personaje-slot">${p.actor}</span>
-                    </div>
-                `;
-            } else {
-                slot.innerHTML = `
-                    <div class="caption-personaje-slot" style="position:static; background:transparent;">
-                        <span class="nombre-personaje-slot">${p.nombreMostrado}</span>
-                        <span class="actor-personaje-slot">${p.actor}</span>
-                    </div>
-                `;
-            }
-        } else {
-            slot.innerHTML = `<span class="signo-interrogacion">?</span>`;
-        }
-        cont.appendChild(slot);
+const btnVolverDcComicsHub = document.getElementById('btn-volver-dc-comics-hub');
+if(btnVolverDcComicsHub) {
+    btnVolverDcComicsHub.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-comics'));
     });
 }
 
-function actualizarContadorElenco() {
-    const data = elencosDisponibles[elencoActualId];
-    const contador = document.getElementById('contador-elenco');
-    if (contador) contador.textContent = `${personajesEncontradosElenco.size}/${data.personajes.length} encontrados`;
-}
-
-function pedirPistaElenco() {
-    const data = elencosDisponibles[elencoActualId];
-    const mensaje = document.getElementById('mensaje-elenco');
-    const faltantes = data.personajes.filter(p => !personajesEncontradosElenco.has(p.id));
-
-    if (faltantes.length <= 1) {
-        mensaje.textContent = faltantes.length === 0
-            ? 'Ya completaste el elenco, no hay más pistas para dar.'
-            : 'Solo falta uno, ¡ese te lo tenés que jugar solo!';
-        mensaje.className = 'mensaje-elenco aviso';
-        return;
-    }
-
-    const elegido = faltantes[Math.floor(Math.random() * faltantes.length)];
-    const slot = document.querySelector(`.slot-elenco[data-personaje-id="${elegido.id}"]`);
-    if (slot && !slot.classList.contains('con-pista')) {
-        slot.style.boxShadow = `inset 4px 0 0 0 ${elegido.color}`;
-        slot.classList.add('con-pista');
-    }
-    mensaje.textContent = '💡 Pista revelada en uno de los casilleros vacíos.';
-    mensaje.className = 'mensaje-elenco aviso';
-}
-
-function intentarAdivinarElenco() {
-    const input = document.getElementById('input-elenco');
-    const valorNormalizado = normalizarTextoJuego(input.value);
-    const mensaje = document.getElementById('mensaje-elenco');
-    if (!valorNormalizado) return;
-
-    const data = elencosDisponibles[elencoActualId];
-    const encontrado = data.personajes.find(p =>
-        p.alias.some(alias => normalizarTextoJuego(alias) === valorNormalizado)
-    );
-
-    if (!encontrado) {
-        mensaje.textContent = `❌ "${input.value}" no forma parte de este elenco (o revisá cómo lo escribiste).`;
-        mensaje.className = 'mensaje-elenco error';
-    } else if (personajesEncontradosElenco.has(encontrado.id)) {
-        mensaje.textContent = `Ya habías adivinado a ${encontrado.nombreMostrado}.`;
-        mensaje.className = 'mensaje-elenco aviso';
-    } else {
-        personajesEncontradosElenco.add(encontrado.id);
-        renderizarSlotsElenco();
-        actualizarContadorElenco();
-
-        if (personajesEncontradosElenco.size === data.personajes.length) {
-            mensaje.textContent = `🎉 ¡Completaste el elenco de ${data.titulo}!`;
-            mensaje.className = 'mensaje-elenco victoria';
-            lanzarConfetiVerdeElenco();
-        } else {
-            mensaje.textContent = `✅ ¡Correcto! ${encontrado.nombreMostrado}`;
-            mensaje.className = 'mensaje-elenco exito';
-        }
-    }
-
-    input.value = '';
-    input.focus();
-}
-
-const btnJuegos = document.getElementById('btn-juegos');
-if (btnJuegos) {
-    btnJuegos.addEventListener('click', () => {
-        cambiarSeccion(document.getElementById('seccion-juegos'));
+const btnVolverDcCaminoHeroe = document.getElementById('btn-volver-dc-camino-heroe');
+if(btnVolverDcCaminoHeroe) {
+    btnVolverDcCaminoHeroe.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dc-comics-hub'));
     });
 }
 
-const tarjetaCompletarElenco = document.getElementById('tarjeta-completar-elenco');
-if (tarjetaCompletarElenco) {
-    tarjetaCompletarElenco.addEventListener('click', () => {
-        renderizarSelectorElencos();
-        cambiarSeccion(document.getElementById('seccion-elenco-selector'));
+const btnVolverGreenLanternHalJordan = document.getElementById('btn-volver-green-lantern-hal-jordan');
+if(btnVolverGreenLanternHalJordan) {
+    btnVolverGreenLanternHalJordan.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dc-comics-hub'));
     });
 }
 
-const btnVolverJuegosDesdeSelector = document.getElementById('btn-volver-juegos-desde-selector');
-if (btnVolverJuegosDesdeSelector) {
-    btnVolverJuegosDesdeSelector.addEventListener('click', () => {
-        cambiarSeccion(document.getElementById('seccion-juegos'));
+const btnVolverMarvelComicsHub = document.getElementById('btn-volver-marvel-comics-hub');
+if(btnVolverMarvelComicsHub) {
+    btnVolverMarvelComicsHub.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-comics'));
     });
 }
 
-const btnVolverElencoSelector = document.getElementById('btn-volver-elenco-selector');
-if (btnVolverElencoSelector) {
-    btnVolverElencoSelector.addEventListener('click', () => {
-        renderizarSelectorElencos();
-        cambiarSeccion(document.getElementById('seccion-elenco-selector'));
-    });
-}
-
-const btnAdivinarElenco = document.getElementById('btn-adivinar-elenco');
-if (btnAdivinarElenco) {
-    btnAdivinarElenco.addEventListener('click', intentarAdivinarElenco);
-}
-
-const btnPistaElenco = document.getElementById('btn-pista-elenco');
-if (btnPistaElenco) {
-    btnPistaElenco.addEventListener('click', pedirPistaElenco);
-}
-
-const inputElenco = document.getElementById('input-elenco');
-if (inputElenco) {
-    inputElenco.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter') {
-            e.preventDefault();
-            intentarAdivinarElenco();
-        }
-    });
-}
-
-// --- Galería de personajes (ficha informativa de la película) ---
-// Reutiliza los mismos datos e imágenes cargados para el juego "Completa el Elenco"
-function renderizarGaleriaPersonajesAvengersUltron() {
-    const cont = document.getElementById('grilla-personajes-avengers-ultron');
-    if (!cont) return;
-    const data = elencosDisponibles['avengers-era-ultron'];
-    if (!data) return;
-
-    const peliculaVista = titulosVistosGuardados.has('Avengers: Age of Ultron');
-
-    cont.innerHTML = '';
-    data.personajes.forEach(p => {
-        if (!peliculaVista && p.ocultoSinVer) return;
-
-        const tarjeta = document.createElement('div');
-        tarjeta.className = 'tarjeta-personaje-galeria';
-        tarjeta.innerHTML = `
-            <img class="imagen-personaje-galeria ${p.imagenClase || ''}" src="${p.imagen}" alt="${p.nombreMostrado}">
-            <div class="caption-personaje-galeria">
-                <span class="nombre-personaje-slot">${p.nombreMostrado}</span>
-                <span class="actor-personaje-slot">${p.actor}</span>
-            </div>
-        `;
-        tarjeta.addEventListener('click', () => abrirModalPersonajeAvengers(p.id, peliculaVista));
-        cont.appendChild(tarjeta);
-    });
-}
-
-function abrirModalPersonajeAvengers(personajeId, peliculaVista) {
-    const data = elencosDisponibles['avengers-era-ultron'];
-    const p = data.personajes.find(per => per.id === personajeId);
-    if (!p) return;
-
-    const imgModal = document.getElementById('imagen-modal-personaje-avengers');
-    imgModal.src = p.imagen;
-    imgModal.className = p.imagenClase || '';
-
-    document.getElementById('nombre-modal-personaje-avengers').textContent = p.nombreMostrado;
-    document.getElementById('actor-modal-personaje-avengers').textContent = p.actor;
-    document.getElementById('descripcion-modal-personaje-avengers').textContent = peliculaVista ? p.descripcionVista : p.descripcionSinVer;
-    document.getElementById('etiqueta-spoiler-personaje-avengers').textContent = peliculaVista ? '' : '👁️ Todavía no viste la película — sin spoilers';
-
-    document.getElementById('modal-personaje-avengers').classList.remove('oculto');
-}
-
-const closeModalPersonajeAvengers = document.getElementById('close-modal-personaje-avengers');
-if (closeModalPersonajeAvengers) {
-    closeModalPersonajeAvengers.addEventListener('click', () => {
-        document.getElementById('modal-personaje-avengers').classList.add('oculto');
-    });
-}
-
-const btnVolverPersonajesAvengersUltron = document.getElementById('btn-volver-personajes-avengers-ultron');
-if (btnVolverPersonajesAvengersUltron) {
-    btnVolverPersonajesAvengersUltron.addEventListener('click', () => {
-        cambiarSeccion(document.getElementById('seccion-mcu-infinito'));
+const btnVolverMarvelCaminoHeroe = document.getElementById('btn-volver-marvel-camino-heroe');
+if(btnVolverMarvelCaminoHeroe) {
+    btnVolverMarvelCaminoHeroe.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-marvel-comics-hub'));
     });
 }
 
