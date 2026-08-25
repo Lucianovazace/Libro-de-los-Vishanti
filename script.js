@@ -904,6 +904,40 @@ const listaMedia = [
     { titulo: "Green Lantern: Justicia Intergaláctica (Ovni Press)", categoria: "green-lantern-hal-jordan", subtipo: "regreso-morrison", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/green_lantern_vol_01_cov1-c89f47245b1cc1dff415972488952095-1024-1024.webp" },
     { titulo: "Green Lantern: Blackstars (Ovni Press)", categoria: "green-lantern-hal-jordan", subtipo: "regreso-morrison", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/green_lantern_blackstars_cov1-a38250e1e185458cfa16136902045048-640-0.webp" },
     { titulo: "Green Lantern: Temporada Dos (Ovni Press)", categoria: "green-lantern-hal-jordan", subtipo: "regreso-morrison", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/green_lantern_vol_02_cov1-b6c2a2d7bf4fe3677d16263181577273-480-0.webp" },
+
+    // --- LOS NUEVOS 52: ORDEN DE LECTURA (filtro "Lanzamiento") ---
+    { titulo: "Batman (#1-7)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_827032-MLA99414583894_112025-O.webp" },
+    { titulo: "Nightwing (#1-7)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_898120-MLA76165301350_052024-O.webp" },
+    { titulo: "Catwoman (#1-7)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://m.media-amazon.com/images/I/710KqiymzQL._AC_UF350,350_QL50_.jpg" },
+    { titulo: "Detective Comics (#1-7)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://images.cdn1.buscalibre.com/fit-in/660x660/c6/da/c6da160e8ea3ef233097b2314a768b53.jpg" },
+    { titulo: "Birds of Prey (#1-7)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://m.media-amazon.com/images/I/81PGqjvHTGL._AC_UF1000,1000_QL80_AIweblab1381794,T1_.jpg" },
+    { titulo: "Batgirl (#1-6)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://images.cdn1.buscalibre.com/fit-in/660x660/be/a1/bea13ddb5d49d3ccd3a2f3f1ae8ac627.jpg" },
+    { titulo: "Batwoman (#0-5)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://m.media-amazon.com/images/I/81281dOpB6L._AC_UF1000,1000_QL80_.jpg" },
+    { titulo: "Red Hood and the Outlaws (#1-7)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://images.cdn3.buscalibre.com/fit-in/660x660/52/be/52beaf424e4db137192a211e80dd2823.jpg" },
+    { titulo: "Wonder Woman (#1-6)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_637119-MLA76160885646_052024-O.webp" },
+    { titulo: "Superman (#1-6)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://m.media-amazon.com/images/I/81Z+wNgdx6L._AC_UF1000,1000_QL80_AIweblab1381794,T1_.jpg" },
+    { titulo: "Action Comics (#1-8)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://d22fxaf9t8d39k.cloudfront.net/3d7231a3b8bb2483c5abb866dc3a9b97a84d25c70840b8f59980d83e32b3dd3e3704.jpg" },
+    { titulo: "Supergirl (#1-7)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_693572-MLU77954853680_082024-O.webp" },
+    { titulo: "Superboy (#1-7)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://images.cdn1.buscalibre.com/fit-in/360x360/bc/30/bc300afee470980dfec759d7ba979dcb.jpg" },
+    { titulo: "Justice League (#1-6)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://images.cdn3.buscalibre.com/fit-in/660x660/9d/f1/9df166074d13797b2c3aef34c1a053ab.jpg" },
+    { titulo: "Justice League Dark (#1-6)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_968049-MLU75689058518_042024-O.webp" },
+    { titulo: "The Flash (#1-8)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://images.cdn3.buscalibre.com/fit-in/660x660/9b/09/9b09a8240dd92bc1730da4df336edf3a.jpg" },
+    { titulo: "Green Lantern (#1-6)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://m.media-amazon.com/images/I/91Yw6yaFa7L._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Green Lantern Corps (#1-7)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_827031-MLA51933832817_102022-O.webp" },
+    { titulo: "Green Lantern: New Guardians (#1-7)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://m.media-amazon.com/images/I/81HggBt-1OL._AC_UF1000,1000_QL80_.jpg" },
+    { titulo: "Red Lanterns (#1-7)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://images.cdn3.buscalibre.com/fit-in/360x360/54/c1/54c156d47fffaeaf582986f791d10290.jpg" },
+    { titulo: "Aquaman (#1-6)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_765381-MLA76369928611_052024-O.webp" },
+    { titulo: "Green Arrow (#1-6)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_956976-CBT76346540966_052024-O.webp" },
+    { titulo: "Teen Titans (#1-7)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_920126-MLA112682188809_062026-O.webp" },
+    { titulo: "Suicide Squad (#1-7)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_886585-MLA28245732841_092018-O.webp" },
+    { titulo: "Animal Man (#1-6)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://m.media-amazon.com/images/I/51BxLWvZilL._AC_UF1000,1000_QL80_.jpg" },
+    { titulo: "Swamp Thing (#1-7)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://m.media-amazon.com/images/I/A10w8AwLcqL._AC_UF1000,1000_QL80_.jpg" },
+    { titulo: "Stormwatch (#1-6)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://images.cdn3.buscalibre.com/fit-in/360x360/66/a3/66a3b2bbbc1dfc7d5f987470e913b844.jpg" },
+    { titulo: "I, Vampire (#1-6)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_864997-MLA75479113027_032024-O.webp" },
+    { titulo: "Frankenstein, Agent of S.H.A.D.E. (#1-7)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://m.media-amazon.com/images/I/81BBMrrfqPL._AC_UF1000,1000_QL80_.jpg" },
+    { titulo: "Demon Knights (#1-7)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://m.media-amazon.com/images/I/81Cx0EU94-L._UF1000,1000_QL80_.jpg" },
+    { titulo: "Deathstroke (#1-6)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://m.media-amazon.com/images/I/81G455ZmuQL._AC_UF1000,1000_QL80_.jpg" },
+    { titulo: "All-Star Western (nueva, protagonizada por Jonah Hex) (#1-6)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://m.media-amazon.com/images/I/81S2vrSt2ZL._AC_UF1000,1000_QL80_.jpg" },
 ];
 
 // ==========================================
@@ -2181,9 +2215,28 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "dc-orden-lectura",
+        titulo: "Orden de Lectura",
+        categoria: "dc-comics-hub",
+        poster: "https://placehold.co/300x450?text=Orden+de+Lectura",
+        esContenedor: true,
+        etiqueta: "Cómic",
+        peliculas: []
+    },
+    {
+        id: "nuevos-52-orden-lectura",
+        titulo: "Los Nuevos 52",
+        categoria: "dc-orden-lectura",
+        poster: "https://m.media-amazon.com/images/I/91Yw6yaFa7L._AC_UF894,1000_QL80_.jpg",
+        esContenedor: true,
+        etiqueta: "Cómic",
+        progresoCategoria: "nuevos-52-orden-lectura",
+        peliculas: []
+    },
+    {
         id: "green-lantern-hal-jordan",
         titulo: "Green Lantern - Hal Jordan",
-        categoria: "dc-comics-hub",
+        categoria: "dc-camino-heroe",
         poster: "https://static.wikia.nocookie.net/batman/images/8/88/Linterna-verde.jpg/revision/latest?cb=20170921191634&path-prefix=es",
         esContenedor: true,
         etiqueta: "Cómic",
@@ -2799,6 +2852,8 @@ function renderizarColecciones() {
         "anime": "seccion-anime",
         "comics": "seccion-comics",
         "dc-comics-hub": "seccion-dc-comics-hub",
+        "dc-camino-heroe": "seccion-dc-camino-heroe",
+        "dc-orden-lectura": "seccion-dc-orden-lectura",
         "marvel-comics-hub": "seccion-marvel-comics-hub",
         "sw-animacion": "seccion-sw-animacion",
         "franquicias": "seccion-franquicias",
@@ -2961,6 +3016,7 @@ function abrirColeccion(colId) {
         'alfred-hitchcock': '.btn-filtro-hitchcock[data-tipo="1970"]',
         'david-fincher': '.btn-filtro-fincher[data-tipo="2020"]',
         'green-lantern-hal-jordan': '.btn-filtro-gl-hal[data-tipo="origen"]',
+        'nuevos-52-orden-lectura': '.btn-filtro-nuevos52[data-tipo="lanzamiento"]',
         'tomb-raider': '.btn-filtro-tombraider[data-tipo="survivor"]',
         'pokemon-canon': '.btn-filtro-pokemon[data-tipo="kanto-johto"]'
     };
@@ -3060,6 +3116,7 @@ function renderizarContenido() {
         "alfred-hitchcock": "seccion-alfred-hitchcock",
         "david-fincher": "seccion-david-fincher",
         "green-lantern-hal-jordan": "seccion-green-lantern-hal-jordan",
+        "nuevos-52-orden-lectura": "seccion-nuevos-52-orden-lectura",
         "tomb-raider": "seccion-tomb-raider",
         "oscar-2021": "seccion-oscar-2021",
         "oscar-2022": "seccion-oscar-2022",
@@ -4724,6 +4781,23 @@ botonesFiltroGlHal.forEach(boton => {
 });
 
 // ==========================================
+// FILTROS "LOS NUEVOS 52 - ORDEN DE LECTURA"
+// ==========================================
+const botonesFiltroNuevos52 = document.querySelectorAll('.btn-filtro-nuevos52');
+botonesFiltroNuevos52.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroNuevos52.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const tipoElegido = this.getAttribute('data-tipo');
+        const tarjetas = document.querySelectorAll('#seccion-nuevos-52-orden-lectura .tarjeta-media');
+
+        tarjetas.forEach(tarjeta => {
+            tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
+        });
+    });
+});
+
+// ==========================================
 // FILTROS "TOMB RAIDER"
 // ==========================================
 const botonesFiltroTombRaider = document.querySelectorAll('.btn-filtro-tombraider');
@@ -5229,10 +5303,24 @@ if(btnVolverDcCaminoHeroe) {
     });
 }
 
+const btnVolverDcOrdenLectura = document.getElementById('btn-volver-dc-orden-lectura');
+if(btnVolverDcOrdenLectura) {
+    btnVolverDcOrdenLectura.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dc-comics-hub'));
+    });
+}
+
+const btnVolverNuevos52OrdenLectura = document.getElementById('btn-volver-nuevos-52-orden-lectura');
+if(btnVolverNuevos52OrdenLectura) {
+    btnVolverNuevos52OrdenLectura.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dc-orden-lectura'));
+    });
+}
+
 const btnVolverGreenLanternHalJordan = document.getElementById('btn-volver-green-lantern-hal-jordan');
 if(btnVolverGreenLanternHalJordan) {
     btnVolverGreenLanternHalJordan.addEventListener('click', () => {
-        cambiarSeccion(document.getElementById('seccion-dc-comics-hub'));
+        cambiarSeccion(document.getElementById('seccion-dc-camino-heroe'));
     });
 }
 
