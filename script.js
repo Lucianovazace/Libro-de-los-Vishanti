@@ -428,8 +428,28 @@ const listaMedia = [
     { titulo: "Tár", categoria: "oscar-2023", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/dRVAlaU0vbG6hMf2K45NSiIyoUe.jpg" },
     { titulo: "Top Gun: Maverick", categoria: "oscar-2023", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://filmartgallery.com/cdn/shop/files/Top-Gun-Maverick-Vintage-Movie-Poster-Original_7c07a212.jpg?v=1771974257&width=2048" },
 
+    // --- OSCAR 2023: MEJOR DIRECCIÓN ---
+    { titulo: "Todo en Todas Partes al Mismo Tiempo", categoria: "oscar-2023", subtipo: "mejor-direccion", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61tpckHUmmL._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Tár", categoria: "oscar-2023", subtipo: "mejor-direccion", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/dRVAlaU0vbG6hMf2K45NSiIyoUe.jpg" },
+    { titulo: "The Banshees of Inisherin", categoria: "oscar-2023", subtipo: "mejor-direccion", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOTkzMWI4OTEtMTk0MS00MTUxLWI4NTYtYmRiNWM4Zjc1MGRhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "El Triángulo de la Tristeza", categoria: "oscar-2023", subtipo: "mejor-direccion", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYTViNzUyNDUtZTg3Yy00OTY4LWEyMTYtMmUzYjE3ZmZjYzUwXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Los Fabelman", categoria: "oscar-2023", subtipo: "mejor-direccion", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNDY5OWY4ZWYtYTM3OC00Zjg5LWFlYzYtYWI5ZGM1MDcxYzY4XkEyXkFqcGc@._V1_.jpg" },
+
+    // --- OSCAR 2023: MEJOR ACTOR ---
+    { titulo: "The Whale", categoria: "oscar-2023", subtipo: "mejor-actor", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/bPlmqR1cgK8bYIo8aAVw69KkzxX.jpg" },
+    { titulo: "Elvis", categoria: "oscar-2023", subtipo: "mejor-actor", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNTVhZmUyMDQtY2I5Ny00OWNiLTgzNjUtMTg4YTQwMTc0OTQxXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "The Banshees of Inisherin", categoria: "oscar-2023", subtipo: "mejor-actor", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOTkzMWI4OTEtMTk0MS00MTUxLWI4NTYtYmRiNWM4Zjc1MGRhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Aftersun", categoria: "oscar-2023", subtipo: "mejor-actor", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/iOSHD877d2jfpd8d97CjcwFhOuZ.jpg" },
+    { titulo: "Living", categoria: "oscar-2023", subtipo: "mejor-actor", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/rJD2tGlYCc8ESOtJrfJk2alt2KX.jpg" },
+
+    // --- OSCAR 2023: MEJOR ACTRIZ ---
+    { titulo: "Todo en Todas Partes al Mismo Tiempo", categoria: "oscar-2023", subtipo: "mejor-actriz", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61tpckHUmmL._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Tár", categoria: "oscar-2023", subtipo: "mejor-actriz", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/dRVAlaU0vbG6hMf2K45NSiIyoUe.jpg" },
+    { titulo: "Blonde", categoria: "oscar-2023", subtipo: "mejor-actriz", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/mEeHqtnWOR44vLCutEFku2WK6ou.jpg" },
+    { titulo: "To Leslie", categoria: "oscar-2023", subtipo: "mejor-actriz", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/vcdRUXaejuOxnAolKxHaA1yZxfq.jpg" },
+
     // --- OSCAR 2024 (con filtros por categoría) ---
-    { titulo: "Oppenheimer", categoria: "oscar-2024", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://i.ebayimg.com/images/g/n9MAAOSw6mBktOuN/s-l1200.jpg" },
+    { titulo: "Oppenheimer", categoria: "oscar-2024", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/lrcuwcNiiZjoB68fzvSOPwu9JWv.jpg" },
     { titulo: "American Fiction", categoria: "oscar-2024", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNzdiM2U4ODMtMTEwZC00ZDVmLWI0ZmItYThlMjQzZGRmMzk2XkEyXkFqcGc@._V1_.jpg" },
     { titulo: "Anatomía de una Caída", categoria: "oscar-2024", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/1ho0d4LNZw3Y0voeKmSvPSgJOJ2.jpg" },
     { titulo: "Barbie", categoria: "oscar-2024", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/dekMkQf0kqAmztUca9lX5e5Pjbp.jpg" },
@@ -439,6 +459,27 @@ const listaMedia = [
     { titulo: "Maestro", categoria: "oscar-2024", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://imgproxy.domestika.org/unsafe/w:820/plain/src://content-items/015/204/521/Maestro%20poster-original.jpg?1711983664" },
     { titulo: "Poor Things", categoria: "oscar-2024", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/317259.jpg" },
     { titulo: "Past Lives", categoria: "oscar-2024", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://i.pinimg.com/736x/2b/41/cb/2b41cb65373e7909972ec366c09afa54.jpg" },
+
+    // --- OSCAR 2024: MEJOR DIRECCIÓN ---
+    { titulo: "Oppenheimer", categoria: "oscar-2024", subtipo: "mejor-direccion", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/lrcuwcNiiZjoB68fzvSOPwu9JWv.jpg" },
+    { titulo: "Anatomía de una Caída", categoria: "oscar-2024", subtipo: "mejor-direccion", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/1ho0d4LNZw3Y0voeKmSvPSgJOJ2.jpg" },
+    { titulo: "Killers of the Flower Moon", categoria: "oscar-2024", subtipo: "mejor-direccion", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/vhkmvm2tm4HBec28JET6nBU7b7x.jpg" },
+    { titulo: "Poor Things", categoria: "oscar-2024", subtipo: "mejor-direccion", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/317259.jpg" },
+    { titulo: "La Zona de Interés", categoria: "oscar-2024", subtipo: "mejor-direccion", tipo: "Película", poster: "https://cdn.posteritati.com/posters/000/000/071/328/the-zone-of-interest-md-web.jpg" },
+
+    // --- OSCAR 2024: MEJOR ACTOR ---
+    { titulo: "Oppenheimer", categoria: "oscar-2024", subtipo: "mejor-actor", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/lrcuwcNiiZjoB68fzvSOPwu9JWv.jpg" },
+    { titulo: "Maestro", categoria: "oscar-2024", subtipo: "mejor-actor", tipo: "Película", poster: "https://imgproxy.domestika.org/unsafe/w:820/plain/src://content-items/015/204/521/Maestro%20poster-original.jpg?1711983664" },
+    { titulo: "Rustin", categoria: "oscar-2024", subtipo: "mejor-actor", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/lCawCmTJhKT7c2ZOzLBTXDIR8JS.jpg" },
+    { titulo: "The Holdovers", categoria: "oscar-2024", subtipo: "mejor-actor", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/317446.jpg" },
+    { titulo: "American Fiction", categoria: "oscar-2024", subtipo: "mejor-actor", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNzdiM2U4ODMtMTEwZC00ZDVmLWI0ZmItYThlMjQzZGRmMzk2XkEyXkFqcGc@._V1_.jpg" },
+
+    // --- OSCAR 2024: MEJOR ACTRIZ ---
+    { titulo: "Poor Things", categoria: "oscar-2024", subtipo: "mejor-actriz", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/317259.jpg" },
+    { titulo: "Killers of the Flower Moon", categoria: "oscar-2024", subtipo: "mejor-actriz", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/vhkmvm2tm4HBec28JET6nBU7b7x.jpg" },
+    { titulo: "Anatomía de una Caída", categoria: "oscar-2024", subtipo: "mejor-actriz", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/1ho0d4LNZw3Y0voeKmSvPSgJOJ2.jpg" },
+    { titulo: "Maestro", categoria: "oscar-2024", subtipo: "mejor-actriz", tipo: "Película", poster: "https://imgproxy.domestika.org/unsafe/w:820/plain/src://content-items/015/204/521/Maestro%20poster-original.jpg?1711983664" },
+    { titulo: "Nyad", categoria: "oscar-2024", subtipo: "mejor-actriz", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/tfalAkshPxzt11MAblQzL32A9ES.jpg" },
 
     // --- OSCAR 2025 (con filtros por categoría) ---
     { titulo: "Anora", categoria: "oscar-2025", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/316165.jpg" },
@@ -452,6 +493,27 @@ const listaMedia = [
     { titulo: "A Complete Unknown", categoria: "oscar-2025", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYTA2NTA5NDYtMzlkOC00MTQxLWI0NDQtMzk2M2YzMGE4MTkxXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
     { titulo: "Wicked", categoria: "oscar-2025", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/hDQXqvmmikekQ15uxhisBDwEA63.jpg" },
 
+    // --- OSCAR 2025: MEJOR DIRECCIÓN ---
+    { titulo: "Anora", categoria: "oscar-2025", subtipo: "mejor-direccion", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/316165.jpg" },
+    { titulo: "El Brutalista", categoria: "oscar-2025", subtipo: "mejor-direccion", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BM2U0MWRjZTMtMDVhNC00MzY4LTgwOTktZGQ2MDdiYTI4OWMxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "La Sustancia", categoria: "oscar-2025", subtipo: "mejor-direccion", tipo: "Película", poster: "https://images.fandango.com/ImageRenderer/820/0/redesign/static/img/default_poster.png/0/images/masterrepository/fandango/236765/TS_BATHROOM_OS_EN_US_Sept20.jpg" },
+    { titulo: "A Complete Unknown", categoria: "oscar-2025", subtipo: "mejor-direccion", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYTA2NTA5NDYtMzlkOC00MTQxLWI0NDQtMzk2M2YzMGE4MTkxXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "Emilia Pérez", categoria: "oscar-2025", subtipo: "mejor-direccion", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNDMzMmQ4YzMtNWY2NS00MThjLWI3YzctZTVjNGRiNmU4YTkyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+
+    // --- OSCAR 2025: MEJOR ACTOR ---
+    { titulo: "El Brutalista", categoria: "oscar-2025", subtipo: "mejor-actor", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BM2U0MWRjZTMtMDVhNC00MzY4LTgwOTktZGQ2MDdiYTI4OWMxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "A Complete Unknown", categoria: "oscar-2025", subtipo: "mejor-actor", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYTA2NTA5NDYtMzlkOC00MTQxLWI0NDQtMzk2M2YzMGE4MTkxXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "Sing Sing", categoria: "oscar-2025", subtipo: "mejor-actor", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/umxo2giWjclz4jrsnF9gnQY3teY.jpg" },
+    { titulo: "Cónclave", categoria: "oscar-2025", subtipo: "mejor-actor", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/vYEyxF1UT779RiEalpMjUT6kfdf.jpg" },
+    { titulo: "The Apprentice", categoria: "oscar-2025", subtipo: "mejor-actor", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/lDcBOl7kJVDREmArPBVwvtyND9r.jpg" },
+
+    // --- OSCAR 2025: MEJOR ACTRIZ ---
+    { titulo: "Anora", categoria: "oscar-2025", subtipo: "mejor-actriz", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/316165.jpg" },
+    { titulo: "La Sustancia", categoria: "oscar-2025", subtipo: "mejor-actriz", tipo: "Película", poster: "https://images.fandango.com/ImageRenderer/820/0/redesign/static/img/default_poster.png/0/images/masterrepository/fandango/236765/TS_BATHROOM_OS_EN_US_Sept20.jpg" },
+    { titulo: "Wicked", categoria: "oscar-2025", subtipo: "mejor-actriz", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/hDQXqvmmikekQ15uxhisBDwEA63.jpg" },
+    { titulo: "I'm Still Here", categoria: "oscar-2025", subtipo: "mejor-actriz", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BM2FjMjBiZjgtZDkyYy00YTRlLTk5N2QtODE2ZWIyYWE0Yzg0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Emilia Pérez", categoria: "oscar-2025", subtipo: "mejor-actriz", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNDMzMmQ4YzMtNWY2NS00MThjLWI3YzctZTVjNGRiNmU4YTkyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+
     // --- OSCAR 2026 (con filtros por categoría) ---
     { titulo: "One Battle After Another", categoria: "oscar-2026", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://pics.filmaffinity.com/One_Battle_After_Another-992235034-large.jpg" },
     { titulo: "Bugonia", categoria: "oscar-2026", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/zvTRaQSIx453rOiAFDdSKXifz7T.jpg" },
@@ -463,6 +525,27 @@ const listaMedia = [
     { titulo: "Marty Supreme", categoria: "oscar-2026", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://s3.amazonaws.com/nightjarprod/content/uploads/sites/193/2026/02/09112829/lYWEXbQgRTR4ZQleSXAgRbxAjvq-scaled.jpg" },
     { titulo: "Sueños de Trenes", categoria: "oscar-2026", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZDkzNzkyNTktYzNhMi00YjhiLWI5YmUtZjliMTY0ZDc5NmMyXkEyXkFqcGc@._V1_.jpg" },
     { titulo: "Sentimental Value", categoria: "oscar-2026", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNTMwMTk0Y2QtY2VhNy00OGYwLThkMjMtZjkwMGI3MTJiMjAyXkEyXkFqcGc@._V1_.jpg" },
+
+    // --- OSCAR 2026: MEJOR DIRECCIÓN ---
+    { titulo: "One Battle After Another", categoria: "oscar-2026", subtipo: "mejor-direccion", tipo: "Película", poster: "https://pics.filmaffinity.com/One_Battle_After_Another-992235034-large.jpg" },
+    { titulo: "Hamnet", categoria: "oscar-2026", subtipo: "mejor-direccion", tipo: "Película", poster: "https://competitive.ultracine.com/wp-content/uploads/2025/05/UIP-HAMNET.jpg" },
+    { titulo: "Marty Supreme", categoria: "oscar-2026", subtipo: "mejor-direccion", tipo: "Película", poster: "https://s3.amazonaws.com/nightjarprod/content/uploads/sites/193/2026/02/09112829/lYWEXbQgRTR4ZQleSXAgRbxAjvq-scaled.jpg" },
+    { titulo: "Sentimental Value", categoria: "oscar-2026", subtipo: "mejor-direccion", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNTMwMTk0Y2QtY2VhNy00OGYwLThkMjMtZjkwMGI3MTJiMjAyXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Sinners", categoria: "oscar-2026", subtipo: "mejor-direccion", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNjIwZWY4ZDEtMmIxZS00NDA4LTg4ZGMtMzUwZTYyNzgxMzk5XkEyXkFqcGc@._V1_.jpg" },
+
+    // --- OSCAR 2026: MEJOR ACTOR ---
+    { titulo: "Sinners", categoria: "oscar-2026", subtipo: "mejor-actor", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNjIwZWY4ZDEtMmIxZS00NDA4LTg4ZGMtMzUwZTYyNzgxMzk5XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Marty Supreme", categoria: "oscar-2026", subtipo: "mejor-actor", tipo: "Película", poster: "https://s3.amazonaws.com/nightjarprod/content/uploads/sites/193/2026/02/09112829/lYWEXbQgRTR4ZQleSXAgRbxAjvq-scaled.jpg" },
+    { titulo: "One Battle After Another", categoria: "oscar-2026", subtipo: "mejor-actor", tipo: "Película", poster: "https://pics.filmaffinity.com/One_Battle_After_Another-992235034-large.jpg" },
+    { titulo: "El Agente Secreto", categoria: "oscar-2026", subtipo: "mejor-actor", tipo: "Película", poster: "https://acdn-us.mitiendanube.com/stores/004/687/740/products/pos-04419-d4041a352ba953990517622612447671-1024-1024.webp" },
+    { titulo: "Blue Moon", categoria: "oscar-2026", subtipo: "mejor-actor", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/nij3i5ziQdqfiK29gb4rX1bkmVy.jpg" },
+
+    // --- OSCAR 2026: MEJOR ACTRIZ ---
+    { titulo: "Hamnet", categoria: "oscar-2026", subtipo: "mejor-actriz", tipo: "Película", poster: "https://competitive.ultracine.com/wp-content/uploads/2025/05/UIP-HAMNET.jpg" },
+    { titulo: "Bugonia", categoria: "oscar-2026", subtipo: "mejor-actriz", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/zvTRaQSIx453rOiAFDdSKXifz7T.jpg" },
+    { titulo: "Song Sung Blue", categoria: "oscar-2026", subtipo: "mejor-actriz", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYmQ2YjhjNjgtNGQxNC00NmI0LWEzMjktNWEzMWY2OTUwZjFiXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Sentimental Value", categoria: "oscar-2026", subtipo: "mejor-actriz", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNTMwMTk0Y2QtY2VhNy00OGYwLThkMjMtZjkwMGI3MTJiMjAyXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "If I Had Legs I'd Kick You", categoria: "oscar-2026", subtipo: "mejor-actriz", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMGRlMjIzMDctNzNkMS00MzEwLTlhZWEtM2FjYmE1ZmFjMzZlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
 
     // --- TOM HOLLAND (con filtros por década) ---
     { titulo: "Unidos", categoria: "tom-holland", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81ZnP4DB06L.AC_UF894,1000_QL80.jpg" },
@@ -697,7 +780,7 @@ const listaMedia = [
     { titulo: "The Wonder", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNDU5NzljODgtNjg1OS00NWZlLTg3MzEtMDU0YWI2ZjEwNzk2XkEyXkFqcGc@._V1_.jpg" },
     { titulo: "Gato con Botas: El Último Deseo", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/AasDZ3tlfx4KjBt96QjbvBPmk4p.jpg" },
     { titulo: "A Good Person", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://www.newdvdreleasedates.com/images/posters/large/a-good-person-2023-02.jpg" },
-    { titulo: "Oppenheimer", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://i.ebayimg.com/images/g/n9MAAOSw6mBktOuN/s-l1200.jpg" },
+    { titulo: "Oppenheimer", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/lrcuwcNiiZjoB68fzvSOPwu9JWv.jpg" },
     { titulo: "El Niño y La Garza", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://i.pinimg.com/736x/29/8c/a2/298ca2bc6141194372b913ddd9a450ed.jpg" },
     { titulo: "Dune: Parte Dos", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://deadline.com/wp-content/uploads/2023/05/FvIhyI9aUAUZz6l.jpeg?w=819" },
     { titulo: "We Live in Time", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/vEmiJetB0C7VJjw60QNXO0oMMws.jpg" },
@@ -1013,6 +1096,90 @@ const listaMedia = [
     { titulo: "All-Star Western (#0, 13-16)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-3", tipo: "Cómic", poster: "https://media.mycomicshop.com/n_iv/600/1609238.jpg" },
     { titulo: "Earth 2 (#0, 7-10)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-3", tipo: "Cómic", poster: "https://static.wikia.nocookie.net/marvel_dc/images/0/03/Earth_2_World%27s_End_Vol_1_7.jpg/revision/latest?cb=20141126111200" },
     { titulo: "Worlds' Finest (nueva, 2ª oleada) (#0-5)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-3", tipo: "Cómic", poster: "https://static.wikia.nocookie.net/marvel_dc/images/a/a0/Worlds%27_Finest_Vol_1_0.jpg/revision/latest?cb=20120910205357" },
+
+    // --- LOS NUEVOS 52: ORDEN DE LECTURA (filtro "Tanda 4") ---
+    { titulo: "Batman (#0, #21-27, #29-33)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-4", tipo: "Cómic", poster: "https://m.media-amazon.com/images/I/81B+OfcCx1L._AC_UF1000,1000_QL80_.jpg" },
+    { titulo: "Nightwing (#19-24)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-4", tipo: "Cómic", poster: "https://m.media-amazon.com/images/I/81-Cbncr1NL._AC_UF1000,1000_QL80_.jpg" },
+    { titulo: "Catwoman (#19-24, #23.4)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-4", tipo: "Cómic", poster: "https://static.dc.com/dc/files/default_images/catwoman_vol3_deathfam_5b047c5c0677d1.77344225.jpg" },
+    { titulo: "Detective Comics (#19-24)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-4", tipo: "Cómic", poster: "https://static.wikia.nocookie.net/marvel_dc/images/4/4b/Detective_Comics_Vol_2_21.jpg/revision/latest?cb=20130605183842" },
+    { titulo: "Birds of Prey (#18-24, 26 + Talon #9)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-4", tipo: "Cómic", poster: "https://comicsrus.com.au/cdn/shop/products/IMG_6319_1024x1024.JPG?v=1512358680" },
+    { titulo: "Batgirl (#20-26)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-4", tipo: "Cómic", poster: "https://comicsrus.com.au/cdn/shop/products/3F4B1512-B760-4752-90AC-1B0D98A73353_grande.jpg?v=1590036177" },
+    { titulo: "Batwoman (#18-24)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-4", tipo: "Cómic", poster: "https://static.wikia.nocookie.net/marvel_dc/images/f/f0/Batwoman_Vol_2_21.jpg/revision/latest?cb=20130620205141" },
+    { titulo: "Harley Quinn (#9-13)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-4", tipo: "Cómic", poster: "https://static.dc.com/dc/files/default_images/hquinn_v2_13_5b170d02f04752.68013382.jpg" },
+    { titulo: "Red Hood and the Outlaws (#19-26, Annual #1)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-4", tipo: "Cómic", poster: "https://static.wikia.nocookie.net/marvel_dc/images/a/ad/Red_Hood_and_the_Outlaws_Vol_1_21.jpg/revision/latest?cb=20130621011810" },
+    { titulo: "Wonder Woman (#19-23)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-4", tipo: "Cómic", poster: "https://imgix-media.wbdndc.net/ingest/book/preview/37473b74-550a-4807-ba5c-4460d7892912/fa3b03cc-4959-4326-ac5d-1c57adf9b6fb/0.jpg?w=375&h=576&sharp=50&fit=fill&fill=blur&auto=format%2Ccompress" },
+    { titulo: "Superman (#19-24, Annual #2)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-4", tipo: "Cómic", poster: "https://imgix-media.wbdndc.net/ingest/book/preview/cce897d4-a325-489d-a74c-104d4feb8996/4fe90fac-0339-4fee-b0f9-73ff260ba55c/0.jpg?w=375&h=576&sharp=50&fit=fill&fill=blur&auto=format%2Ccompress" },
+    { titulo: "Action Comics (#19-24)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-4", tipo: "Cómic", poster: "https://static.wikia.nocookie.net/marvel_dc/images/d/d9/Action_Comics_Vol_2_21.jpg/revision/latest?cb=20130607202023" },
+    { titulo: "Justice League (#18-23)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-4", tipo: "Cómic", poster: "https://imgix-media.wbdndc.net/ingest/book/preview/7840d397-c1b7-4189-9bb2-34355f9083f6/67152d4f-7f67-42ce-9663-48973bfc199f/1738183442.jpg?w=375&h=576&sharp=50&fit=fill&fill=blur&auto=format%2Ccompress" },
+    { titulo: "Justice League Dark (#22-29)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-4", tipo: "Cómic", poster: "https://static.dc.com/dc/files/default_images/jldark_vol1_inthedark_5b04a67e70dec8.05627591.jpg" },
+    { titulo: "Justice League of America (#1-7)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-4", tipo: "Cómic", poster: "https://static.wikia.nocookie.net/marvel_dc/images/a/a1/Justice_League_of_America_Vol_2_21.jpg/revision/latest?cb=20080525223350" },
+    { titulo: "The Flash (#20-25, #23.2)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-4", tipo: "Cómic", poster: "https://static.wikia.nocookie.net/marvel_dc/images/b/b5/The_Flash_Vol_4_21.jpg/revision/latest?cb=20130627201357" },
+    { titulo: "Green Lantern (#21-26, #23.1, Annual #2)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-4", tipo: "Cómic", poster: "https://static.wikia.nocookie.net/marvel_dc/images/4/42/Green_Lantern_Vol_5_21.jpg/revision/latest?cb=20130607122907" },
+    { titulo: "Green Lantern Corps (#21-27)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-4", tipo: "Cómic", poster: "https://m.media-amazon.com/images/I/811i7-OFY6L._AC_UF1000,1000_QL80_.jpg" },
+    { titulo: "Green Lantern: New Guardians (#21-27, Annual #2)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-4", tipo: "Cómic", poster: "https://static.wikia.nocookie.net/marvel_dc/images/b/b8/Green_Lantern_New_Guardians_Vol_1_21.jpg/revision/latest?cb=20130622140326" },
+    { titulo: "Red Lanterns (#21-26, GL Annual #2)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-4", tipo: "Cómic", poster: "https://static.dc.com/dc/files/default_images/redlanterns_37_5b22b625229a49.44857388.jpg" },
+    { titulo: "Aquaman (#17-19, 21-25)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-4", tipo: "Cómic", poster: "https://m.media-amazon.com/images/I/91EREWA3GCL._AC_UF1000,1000_QL80_.jpg" },
+    { titulo: "Green Arrow (#17-24)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-4", tipo: "Cómic", poster: "https://static.dc.com/dc/files/default_images/greenarrow_vol2_triple_5b049f96063437.43013267.jpg" },
+    { titulo: "Teen Titans (#18-23)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-4", tipo: "Cómic", poster: "https://static.wikia.nocookie.net/marvel_dc/images/5/5b/Teen_Titans_Vol_4_21.jpg/revision/latest?cb=20130627030830" },
+    { titulo: "Suicide Squad (#20-23)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-4", tipo: "Cómic", poster: "https://static.dc.com/dc/files/default_images/ssquad_v4_21_5b186c86c724d3.65499115.jpg" },
+    { titulo: "Animal Man (#20-23, Annual #2)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-4", tipo: "Cómic", poster: "https://m.media-amazon.com/images/I/91oVU5C-uXL.jpg" },
+    { titulo: "Swamp Thing (#19-23, #23.1)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-4", tipo: "Cómic", poster: "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1389989293i/17671941.jpg" },
+    { titulo: "All-Star Western (#17-20, Hex viaja al presente)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-4", tipo: "Cómic", poster: "https://static.dc.com/dc/files/default_images/allstarwestern_v3_21_5b2982de90dd11.32646337.jpg" },
+    { titulo: "Earth 2 (#13-16, Annual #1)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-4", tipo: "Cómic", poster: "https://static.wikia.nocookie.net/marvel_dc/images/1/1b/Earth_2_Vol_1_1.jpg/revision/latest?cb=20120501224539" },
+    { titulo: "Worlds' Finest (#6-12)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-4", tipo: "Cómic", poster: "https://static.wikia.nocookie.net/marvel_dc/images/3/34/Worlds%27_Finest_Vol_1_6.jpg/revision/latest?cb=20121106032456" },
+
+    // --- LOS NUEVOS 52: ORDEN DE LECTURA (filtro "Trinity War") ---
+    { titulo: "Free Comic Book Day 2012", categoria: "nuevos-52-orden-lectura", subtipo: "trinity-war", tipo: "Cómic", poster: "https://static.wikia.nocookie.net/comicdc/images/a/a2/The_New_52_Free_Comic_Book_Day_Special_Edition_Vol_1_1.jpg/revision/latest/scale-to-width-down/1200?cb=20140329211245&path-prefix=es" },
+    { titulo: "Trinity of Sin: Pandora (#1-3)", categoria: "nuevos-52-orden-lectura", subtipo: "trinity-war", tipo: "Cómic", poster: "https://static.wikia.nocookie.net/marvel_dc/images/e/e0/Trinity_of_Sin_Pandora_Vol_1_1.jpg/revision/latest/thumbnail/width/360/height/360?cb=20130704013104" },
+    { titulo: "Trinity of Sin: Phantom Stranger (#11)", categoria: "nuevos-52-orden-lectura", subtipo: "trinity-war", tipo: "Cómic", poster: "https://pictures.abebooks.com/isbn/9781401240882-us.jpg" },
+    { titulo: "Justice League (#22-23)", categoria: "nuevos-52-orden-lectura", subtipo: "trinity-war", tipo: "Cómic", poster: "https://imgix-media.wbdndc.net/ingest/book/preview/7840d397-c1b7-4189-9bb2-34355f9083f6/67152d4f-7f67-42ce-9663-48973bfc199f/1738183442.jpg?w=375&h=576&sharp=50&fit=fill&fill=blur&auto=format%2Ccompress" },
+    { titulo: "Justice League Dark (#22-23)", categoria: "nuevos-52-orden-lectura", subtipo: "trinity-war", tipo: "Cómic", poster: "https://static.dc.com/dc/files/default_images/jldark_vol1_inthedark_5b04a67e70dec8.05627591.jpg" },
+    { titulo: "Justice League of America (#6-7)", categoria: "nuevos-52-orden-lectura", subtipo: "trinity-war", tipo: "Cómic", poster: "https://static.wikia.nocookie.net/marvel_dc/images/a/a1/Justice_League_of_America_Vol_2_21.jpg/revision/latest?cb=20080525223350" },
+    { titulo: "Constantine (#5)", categoria: "nuevos-52-orden-lectura", subtipo: "trinity-war", tipo: "Cómic", poster: "https://static.wikia.nocookie.net/marvel_dc/images/d/d5/Constantine_Vol_1_14.jpg/revision/latest/scale-to-width-down/1200?cb=20140530193203" },
+
+    // --- LOS NUEVOS 52: ORDEN DE LECTURA (filtro "Forever Evil") ---
+    { titulo: "Forever Evil (#1-7)", categoria: "nuevos-52-orden-lectura", subtipo: "forever-evil", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_650245-MLA79526836054_102024-O.webp" },
+    { titulo: "The Flash (Rogues Rebellion)", categoria: "nuevos-52-orden-lectura", subtipo: "forever-evil", tipo: "Cómic", poster: "https://m.media-amazon.com/images/I/81sOC6ZeY5L._AC_UF1000,1000_QL80_.jpg" },
+    { titulo: "Justice League Dark/Constantine/Pandora/Phantom Stranger (Blight)", categoria: "nuevos-52-orden-lectura", subtipo: "forever-evil", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1d/0f/07324c7066924ebfa33a19690f3a2a71.jpg" },
+    { titulo: "Justice League of America (Vol. 2: Survivors of Evil, #8-14)", categoria: "nuevos-52-orden-lectura", subtipo: "forever-evil", tipo: "Cómic", poster: "https://m.media-amazon.com/images/I/A1II7c1A4UL._AC_UF1000,1000_QL80_.jpg" },
+
+    // --- LOS NUEVOS 52: ORDEN DE LECTURA (filtro "Tanda 5") ---
+    { titulo: "Nightwing (#25-30, Annual #1)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://static.dc.com/dc/files/default_images/nightwing_v3_26_5b16ea52b9cc52.29862784.jpg" },
+    { titulo: "Catwoman (#25-34)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1423837524i/19040884.jpg" },
+    { titulo: "Detective Comics (#25-29)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://www.comicsetc.com.au/cdn/shop/products/c6aa8c7f7dec6d8816418bc4783b59cb_600x600.jpg?v=1540462055" },
+    { titulo: "Birds of Prey (#27-34)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://static.dc.com/dc/files/default_images/birdsofprey_v3_25_5b18842d8cd1e8.29918253.jpg" },
+    { titulo: "Batgirl (#27-34, Annual #2)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://www.comicsetc.com.au/cdn/shop/products/6a0d611fb26e14a7bab7e7f7d8b7ec30.jpg?v=1540466310" },
+    { titulo: "Batwoman (#25-34, Annual #1)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://static.dc.com/dc/files/default_images/batwoman_v2_27_5b172b05b514c1.30604370.jpg" },
+    { titulo: "Harley Quinn (#14-16, Annual #1)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://i0.wp.com/ultimatecomics.com/wp-content/uploads/2021/02/Scan-217-4.jpg?fit=1958%2C3038&ssl=1" },
+    { titulo: "Red Hood and the Outlaws (#27-31)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://static.wikia.nocookie.net/marvel_dc/images/6/65/Red_Hood_and_the_Outlaws_Vol_1_27.jpg/revision/latest/scale-to-width-down/1200?cb=20140123145936" },
+    { titulo: "Batman Eternal (nueva, semanal) (#1-21)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://m.media-amazon.com/images/I/911kWbWDvZL._AC_UF1000,1000_QL80_.jpg" },
+    { titulo: "Wonder Woman (#24-29, #23.2)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://m.media-amazon.com/images/I/81QenN0ZsOL._AC_UF1000,1000_QL80_.jpg" },
+    { titulo: "Superman (#25-29)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1385665861i/19027840.jpg" },
+    { titulo: "Action Comics (#25-29)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://static.wikia.nocookie.net/marvel_dc/images/a/a6/Action_Comics_Vol_2_25.jpg/revision/latest?cb=20131106202718" },
+    { titulo: "Supergirl (#26-33)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://static.wikia.nocookie.net/marvel_dc/images/4/47/Supergirl_Red_Daughter_of_Krypton.jpg/revision/latest?cb=20200525033224" },
+    { titulo: "Superboy (#26-34)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://static.dc.com/dc/files/default_images/superboy_vol5_paradox_5b03662c6cc9c9.52312429.jpg" },
+    { titulo: "Justice League (#24-29)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://m.media-amazon.com/images/I/A1B23wjcdeL._AC_UF1000,1000_QL80_AIweblab1381794,T1_.jpg" },
+    { titulo: "Justice League of America (#8-14)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://static.wikia.nocookie.net/marvel_dc/images/f/f0/Justice_League_Vol_2_8.jpg/revision/latest?cb=20120419215302" },
+    { titulo: "Trinity of Sin: Phantom Stranger (#6-11)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://static.dc.com/dc/files/default_images/tos_phantstrang_vol2_breach_5b046f4a7951a5.62634018.jpg" },
+    { titulo: "Trinity of Sin: Pandora (#6-9)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://static.dc.com/dc/files/default_images/tos_pandora_1_5b318588cfe701.27865616.jpg" },
+    { titulo: "The Flash (#26-29, Annual #2)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://static.wikia.nocookie.net/marvel_dc/images/3/30/The_Flash_Vol_4_26.jpg/revision/latest/scale-to-width-down/1200?cb=20140131211240" },
+    { titulo: "Green Lantern (#27-34)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://m.media-amazon.com/images/I/913mq-bUlYL.jpg" },
+    { titulo: "Green Lantern Corps (#28-34, Annual #2)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://imgix-media.wbdndc.net/ingest/book/preview/cacfc3a5-4f55-4941-9e9a-b4be481657f4/5a999c09-9eaf-4d9f-b290-3ccd07d1a026/0.jpg?w=375&h=576&sharp=50&fit=fill&fill=blur&auto=format%2Ccompress&" },
+    { titulo: "Green Lantern: New Guardians (#28-34, Annual #2)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://static.wikia.nocookie.net/marvel_dc/images/a/a0/Green_Lantern_New_Guardians_Vol_1_26.jpg/revision/latest?cb=20131219012323" },
+    { titulo: "Red Lanterns (#27, 29-34, Annual #1)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://static.wikia.nocookie.net/marvel_dc/images/0/04/Red_Lanterns_Vol_1_26.jpg/revision/latest/scale-to-width-down/1200?cb=20140102185553" },
+    { titulo: "Aquaman (#26-31, Annual #2)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://static.wikia.nocookie.net/comicdc/images/8/83/Aquaman_Vol_7_26.jpg/revision/latest?cb=20140131195711&path-prefix=es" },
+    { titulo: "Green Arrow (#25-31)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://m.media-amazon.com/images/I/91KLE9wTqZL._AC_UF350,350_QL50_.jpg" },
+    { titulo: "Teen Titans (#24-30, Annual #2-3)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://m.media-amazon.com/images/I/81dsYSjvRkL._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Suicide Squad (#24-30)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1722483290i/217045847.jpg" },
+    { titulo: "Animal Man (#24-29)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://static.dc.com/dc/files/default_images/animalman_v2_13_5b2986aed75033.50083756.jpg" },
+    { titulo: "Swamp Thing (#24-27, Annual #2)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://m.media-amazon.com/images/I/91oAt3bck5L._UF1000,1000_QL80_.jpg" },
+    { titulo: "All-Star Western (#21-34)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://static.wikia.nocookie.net/marvel_dc/images/e/e5/All-Star_Western_Vol_3_27.jpg/revision/latest?cb=20140228204122" },
+    { titulo: "Batman/Superman (#1-9)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://m.media-amazon.com/images/I/81ftvEODwWL._AC_UF1000,1000_QL80_.jpg" },
+    { titulo: "Superman/Wonder Woman (#1-6)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_935101-MLA92602655671_092025-O.webp" },
+    { titulo: "Justice League United (#0-5)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://m.media-amazon.com/images/I/91C5klFH-fL._AC_UF1000,1000_QL80_AIweblab1381794,T1_.jpg" },
+    { titulo: "Justice League 3000 (#1-7)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://static.dc.com/dc/files/default_images/jl3000_5_5b29503d479262.30263883.jpg" },
+    { titulo: "Earth 2 (#17-20, Annual #2)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://static.wikia.nocookie.net/marvel_dc/images/4/49/Earth_2_Vol_1_17.jpg/revision/latest?cb=20131108182332" },
+    { titulo: "Worlds' Finest (#13-18)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://static.dc.com/dc/files/default_images/worldsfinest_9_5b2a8830a233a4.99954068.jpg" },
 ];
 
 // ==========================================
@@ -1857,7 +2024,7 @@ const colecciones = [
             { titulo: "Interstellar", poster: "https://m.media-amazon.com/images/I/91obuWzA3XL.jpg" },
             { titulo: "Dunkirk", poster: "https://i.etsystatic.com/36541132/r/il/7c267b/7018214484/il_570xN.7018214484_2wqe.jpg" },
             { titulo: "Tenet", poster: "https://www.originalfilmart.com/cdn/shop/files/tenet_2020_advance_original_film_art_37f46c8f-cdc8-468e-b8b5-2492200deb1c_5000x.webp?v=1756494471" },
-            { titulo: "Oppenheimer", poster: "https://i.ebayimg.com/images/g/n9MAAOSw6mBktOuN/s-l1200.jpg" },
+            { titulo: "Oppenheimer", poster: "https://image.tmdb.org/t/p/original/lrcuwcNiiZjoB68fzvSOPwu9JWv.jpg" },
             { titulo: "The Odyssey", poster: "https://img.asmedia.epimg.net/resizer/v2/AP6RDKAGQVE4DEON7ETUS4UVM4.jpg?auth=5abec700c478bffaa862bc1e153efeb77076781fbd4dc9df918ddb11a11979ea&width=375" }
         ]
     },
@@ -5361,6 +5528,270 @@ const btnComics = document.getElementById('btn-comics');
 if (btnComics) {
     btnComics.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-comics'));
+    });
+}
+
+// ==========================================
+// JUEGOS
+// ==========================================
+
+// --- Datos de elencos disponibles para "Completa el Elenco" ---
+// Para agregar un nuevo elenco, sumar una entrada nueva a este objeto con el mismo formato.
+const elencosDisponibles = {
+    "avengers-era-ultron": {
+        titulo: "Avengers: La Era de Ultron",
+        icono: "🎬",
+        personajes: [
+            { id: "iron_man", nombreMostrado: "Iron Man", actor: "Robert Downey Jr.", color: "rgba(231, 76, 60, 0.45)", imagen: "https://i.ebayimg.com/images/g/-c0AAOSwNSxVQ7Kw/s-l1200.jpg", alias: ["iron man", "ironman", "tony stark", "tony", "stark", "robert downey jr", "rdj"],
+              descripcionSinVer: "Genio multimillonario y filántropo que se convirtió en superhéroe gracias a su armadura tecnológica. Es el fundador de los Vengadores y uno de los héroes más reconocidos de la Tierra.",
+              descripcionVista: "Su obsesión por proteger al mundo lo lleva a crear el programa Ultron sin consultar al resto del equipo, desatando una amenaza que pone en jaque a toda la humanidad." },
+            { id: "capitan_america", nombreMostrado: "Capitán América", actor: "Chris Evans", color: "rgba(41, 128, 185, 0.45)", imagen: "https://static.posters.cz/image/750/24782.jpg", alias: ["capitan america", "captain america", "steve rogers", "steve", "rogers", "cap"],
+              descripcionSinVer: "Súper soldado de la Segunda Guerra Mundial que despertó décadas después congelado en hielo. Es el líder moral de los Vengadores.",
+              descripcionVista: "Steve se consolida como el verdadero líder del equipo, cuestionando las decisiones de Tony y manteniendo unido al grupo en medio de la crisis con Ultron." },
+            { id: "hulk", nombreMostrado: "Hulk", actor: "Mark Ruffalo", color: "rgba(39, 174, 96, 0.45)", imagen: "https://i.ebayimg.com/images/g/IgMAAOSwoaJi9nS6/s-l400.jpg", alias: ["hulk", "bruce banner", "bruce", "banner"],
+              descripcionSinVer: "Científico brillante que se transforma en una criatura verde imparable cuando se enoja. Lucha constantemente por controlar a la bestia que lleva dentro.",
+              descripcionVista: "Bruce protagoniza una batalla descontrolada como Hulk en Johannesburgo y desarrolla una relación cercana con Natasha, quien es la única capaz de calmarlo." },
+            { id: "thor", nombreMostrado: "Thor", actor: "Chris Hemsworth", color: "rgba(142, 68, 173, 0.45)", imagen: "https://www.mubis.es/media/users/9192/112988/jDukV3I-original.jpg", alias: ["thor", "thor odinson", "odinson", "dios del trueno"],
+              descripcionSinVer: "Dios del Trueno de Asgard, poderoso guerrero que empuña el martillo Mjolnir. Defiende tanto su reino como la Tierra de amenazas cósmicas.",
+              descripcionVista: "Thor investiga visiones relacionadas con las Gemas del Infinito y regresa brevemente a la Tierra en busca de respuestas, dejando entrever conflictos más grandes que se avecinan." },
+            { id: "hawkeye", nombreMostrado: "Hawkeye", actor: "Jeremy Renner", color: "rgba(75, 0, 130, 0.45)", imagen: "https://media2.firstshowing.net/firstshowing/img8/HawkeyePosterartMainAUltronFull9b.jpg", alias: ["hawkeye", "ojo de halcon", "clint barton", "clint", "barton"],
+              descripcionSinVer: "Arquero de puntería infalible y agente de S.H.I.E.L.D. Es uno de los miembros fundadores del equipo, sin poderes pero con habilidades letales.",
+              descripcionVista: "Se revela que Clint tiene una familia secreta en una granja alejada de todo, lo que le da al equipo un refugio y muestra su lado más humano." },
+            { id: "black_widow", nombreMostrado: "Black Widow", actor: "Scarlett Johansson", color: "rgba(139, 0, 0, 0.45)", imagen: "https://m.media-amazon.com/images/I/91+iqOflvPL.AC_UF894,1000_QL80.jpg", alias: ["black widow", "viuda negra", "natasha romanoff", "natasha", "romanoff"],
+              descripcionSinVer: "Ex espía rusa convertida en agente de S.H.I.E.L.D. y Vengadora. Experta en combate cuerpo a cuerpo y manipulación estratégica.",
+              descripcionVista: "Natasha profundiza su vínculo con Bruce Banner y revela parte de su oscuro pasado como parte del Programa Viuda Negra." },
+            { id: "vision", nombreMostrado: "Vision", actor: "Paul Bettany", color: "rgba(212, 175, 55, 0.45)", imagen: "https://www.slashfilm.com/wp/wp-content/images/Vision-Character-Poster-Avengers-2.jpg", alias: ["vision"],
+              descripcionSinVer: "Ser sintético creado a partir de tecnología e inteligencia artificial, dotado de una de las Gemas del Infinito. Es uno de los aliados más poderosos y enigmáticos del equipo.",
+              descripcionVista: "Vision nace durante la película como resultado de un plan conjunto entre Tony Stark, Bruce Banner y el propio Ultron, y termina del lado de los Vengadores al demostrar ser digno de empuñar el martillo de Thor." },
+            { id: "scarlet_witch", nombreMostrado: "Scarlet Witch", actor: "Elizabeth Olsen", color: "rgba(183, 28, 28, 0.45)", imagen: "https://i.pinimg.com/736x/a3/de/98/a3de9876bec6ce2bb033e15659565928.jpg", alias: ["scarlet witch", "bruja escarlata", "wanda maximoff", "wanda", "maximoff"],
+              descripcionSinVer: "Joven con poderes de manipulación de la realidad y telequinesis, originaria de Sokovia. Su historia está marcada por la pérdida y el deseo de justicia.",
+              descripcionVista: "Wanda comienza la película enfrentando a los Vengadores junto a Ultron, pero cambia de bando al descubrir las verdaderas intenciones destructivas del robot." },
+            { id: "quicksilver", nombreMostrado: "Quicksilver", actor: "Aaron Taylor-Johnson", color: "rgba(127, 140, 141, 0.45)", imagen: "https://i.pinimg.com/736x/94/64/b9/9464b91bc6912cf41557575bee7d1bb8.jpg", alias: ["quicksilver", "mercurio", "pietro maximoff", "pietro"],
+              descripcionSinVer: "Hermano de Wanda Maximoff, capaz de moverse a velocidades sobrehumanas. Comparte con ella un pasado marcado por la guerra en Sokovia.",
+              descripcionVista: "Pietro se une a los Vengadores en la batalla final contra Ultron y sacrifica su vida para salvar a Hawkeye y a un grupo de civiles." },
+            { id: "falcon", nombreMostrado: "Falcon", actor: "Anthony Mackie", color: "rgba(230, 126, 34, 0.45)", imagen: "https://i.pinimg.com/736x/5c/58/92/5c5892fd3c2aebb8cdb1ae74e5cd7e62.jpg", alias: ["falcon", "halcon", "sam wilson", "sam", "wilson"], ocultoSinVer: true,
+              descripcionSinVer: "Ex paracaidista de las fuerzas armadas equipado con un traje alado de combate. Es aliado cercano del Capitán América.",
+              descripcionVista: "Falcon aparece hacia el final de la película ayudando a los Vengadores tras la batalla, sumándose como refuerzo del nuevo equipo que se está formando." },
+            { id: "war_machine", nombreMostrado: "War Machine", actor: "Don Cheadle", color: "rgba(93, 109, 126, 0.45)", imagen: "https://m.media-amazon.com/images/M/MV5BODY1MjA5MDgtMzZhZS00YjdhLTliYjktOWE5NTMzYzUxZmUxXkEyXkFqcGc@.V1.jpg", imagenClase: "recorte-war-machine", alias: ["war machine", "maquina de guerra", "james rhodes", "rhodey", "rhodes", "jim rhodes"],
+              descripcionSinVer: "Mejor amigo de Tony Stark y piloto condecorado, equipado con una armadura de combate pesada similar a la de Iron Man.",
+              descripcionVista: "Rhodey se incorpora oficialmente como miembro activo del equipo, luchando codo a codo con los Vengadores en la batalla final en Sokovia." }
+        ]
+    }
+};
+
+let elencoActualId = null;
+let personajesEncontradosElenco = new Set();
+
+function normalizarTextoJuego(str) {
+    return str
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .trim()
+        .replace(/\s+/g, ' ');
+}
+
+function lanzarConfetiVerdeElenco() {
+    const contenedor = document.getElementById('contenedor-confeti-elenco');
+    if (!contenedor) return;
+
+    const tonosVerdes = ['#2ecc71', '#27ae60', '#1abc9c', '#58d68d', '#0e6b3a', '#82e0aa'];
+    const cantidadPiezas = 90;
+
+    for (let i = 0; i < cantidadPiezas; i++) {
+        const pieza = document.createElement('div');
+        pieza.className = 'confeti-pieza';
+        pieza.style.left = `${Math.random() * 100}vw`;
+        pieza.style.backgroundColor = tonosVerdes[Math.floor(Math.random() * tonosVerdes.length)];
+        pieza.style.animationDuration = `${2 + Math.random() * 1.5}s`;
+        pieza.style.animationDelay = `${Math.random() * 0.4}s`;
+        pieza.style.transform = `rotate(${Math.random() * 360}deg)`;
+        contenedor.appendChild(pieza);
+
+        setTimeout(() => pieza.remove(), 4500);
+    }
+}
+
+function renderizarSelectorElencos() {
+    const grilla = document.getElementById('grilla-elencos');
+    if (!grilla) return;
+    grilla.innerHTML = '';
+    Object.entries(elencosDisponibles).forEach(([id, data]) => {
+        const tarjeta = document.createElement('div');
+        tarjeta.className = 'tarjeta-juego';
+        tarjeta.innerHTML = `
+            <div class="icono-juego">${data.icono}</div>
+            <h3>${data.titulo}</h3>
+            <p>${data.personajes.length} personajes por adivinar</p>
+        `;
+        tarjeta.addEventListener('click', () => iniciarJuegoElenco(id));
+        grilla.appendChild(tarjeta);
+    });
+}
+
+function iniciarJuegoElenco(id) {
+    const data = elencosDisponibles[id];
+    if (!data) return;
+    elencoActualId = id;
+    personajesEncontradosElenco = new Set();
+
+    document.getElementById('titulo-elenco-jugar').textContent = `Completa el Elenco: ${data.titulo}`;
+    const mensaje = document.getElementById('mensaje-elenco');
+    mensaje.textContent = '';
+    mensaje.className = 'mensaje-elenco';
+    document.getElementById('input-elenco').value = '';
+
+    renderizarSlotsElenco();
+    actualizarContadorElenco();
+    cambiarSeccion(document.getElementById('seccion-elenco-jugar'));
+}
+
+function renderizarSlotsElenco() {
+    const cont = document.getElementById('grilla-slots-elenco');
+    if (!cont) return;
+    const data = elencosDisponibles[elencoActualId];
+    cont.innerHTML = '';
+    data.personajes.forEach(p => {
+        const slot = document.createElement('div');
+        slot.className = 'slot-elenco';
+        slot.dataset.personajeId = p.id;
+        if (personajesEncontradosElenco.has(p.id)) {
+            slot.classList.add('resuelto');
+            if (p.imagen) {
+                slot.innerHTML = `
+                    <img class="imagen-personaje-slot ${p.imagenClase || ''}" src="${p.imagen}" alt="${p.nombreMostrado}">
+                    <div class="caption-personaje-slot">
+                        <span class="nombre-personaje-slot">${p.nombreMostrado}</span>
+                        <span class="actor-personaje-slot">${p.actor}</span>
+                    </div>
+                `;
+            } else {
+                slot.innerHTML = `
+                    <div class="caption-personaje-slot" style="position:static; background:transparent;">
+                        <span class="nombre-personaje-slot">${p.nombreMostrado}</span>
+                        <span class="actor-personaje-slot">${p.actor}</span>
+                    </div>
+                `;
+            }
+        } else {
+            slot.innerHTML = `<span class="signo-interrogacion">?</span>`;
+        }
+        cont.appendChild(slot);
+    });
+}
+
+function actualizarContadorElenco() {
+    const data = elencosDisponibles[elencoActualId];
+    const contador = document.getElementById('contador-elenco');
+    if (contador) contador.textContent = `${personajesEncontradosElenco.size}/${data.personajes.length} encontrados`;
+}
+
+function pedirPistaElenco() {
+    const data = elencosDisponibles[elencoActualId];
+    const mensaje = document.getElementById('mensaje-elenco');
+    const faltantes = data.personajes.filter(p => !personajesEncontradosElenco.has(p.id));
+
+    if (faltantes.length <= 1) {
+        mensaje.textContent = faltantes.length === 0
+            ? 'Ya completaste el elenco, no hay más pistas para dar.'
+            : 'Solo falta uno, ¡ese te lo tenés que jugar solo!';
+        mensaje.className = 'mensaje-elenco aviso';
+        return;
+    }
+
+    const elegido = faltantes[Math.floor(Math.random() * faltantes.length)];
+    const slot = document.querySelector(`.slot-elenco[data-personaje-id="${elegido.id}"]`);
+    if (slot && !slot.classList.contains('con-pista')) {
+        slot.style.boxShadow = `inset 4px 0 0 0 ${elegido.color}`;
+        slot.classList.add('con-pista');
+    }
+    mensaje.textContent = '💡 Pista revelada en uno de los casilleros vacíos.';
+    mensaje.className = 'mensaje-elenco aviso';
+}
+
+function intentarAdivinarElenco() {
+    const input = document.getElementById('input-elenco');
+    const valorNormalizado = normalizarTextoJuego(input.value);
+    const mensaje = document.getElementById('mensaje-elenco');
+    if (!valorNormalizado) return;
+
+    const data = elencosDisponibles[elencoActualId];
+    const encontrado = data.personajes.find(p =>
+        p.alias.some(alias => normalizarTextoJuego(alias) === valorNormalizado)
+    );
+
+    if (!encontrado) {
+        mensaje.textContent = `❌ "${input.value}" no forma parte de este elenco (o revisá cómo lo escribiste).`;
+        mensaje.className = 'mensaje-elenco error';
+    } else if (personajesEncontradosElenco.has(encontrado.id)) {
+        mensaje.textContent = `Ya habías adivinado a ${encontrado.nombreMostrado}.`;
+        mensaje.className = 'mensaje-elenco aviso';
+    } else {
+        personajesEncontradosElenco.add(encontrado.id);
+        renderizarSlotsElenco();
+        actualizarContadorElenco();
+
+        if (personajesEncontradosElenco.size === data.personajes.length) {
+            mensaje.textContent = `🎉 ¡Completaste el elenco de ${data.titulo}!`;
+            mensaje.className = 'mensaje-elenco victoria';
+            lanzarConfetiVerdeElenco();
+        } else {
+            mensaje.textContent = `✅ ¡Correcto! ${encontrado.nombreMostrado}`;
+            mensaje.className = 'mensaje-elenco exito';
+        }
+    }
+
+    input.value = '';
+    input.focus();
+}
+
+const btnJuegos = document.getElementById('btn-juegos');
+if (btnJuegos) {
+    btnJuegos.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-juegos'));
+    });
+}
+
+const tarjetaCompletarElenco = document.getElementById('tarjeta-completar-elenco');
+if (tarjetaCompletarElenco) {
+    tarjetaCompletarElenco.addEventListener('click', () => {
+        renderizarSelectorElencos();
+        cambiarSeccion(document.getElementById('seccion-elenco-selector'));
+    });
+}
+
+const btnVolverJuegosDesdeSelector = document.getElementById('btn-volver-juegos-desde-selector');
+if (btnVolverJuegosDesdeSelector) {
+    btnVolverJuegosDesdeSelector.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-juegos'));
+    });
+}
+
+const btnVolverElencoSelector = document.getElementById('btn-volver-elenco-selector');
+if (btnVolverElencoSelector) {
+    btnVolverElencoSelector.addEventListener('click', () => {
+        renderizarSelectorElencos();
+        cambiarSeccion(document.getElementById('seccion-elenco-selector'));
+    });
+}
+
+const btnAdivinarElenco = document.getElementById('btn-adivinar-elenco');
+if (btnAdivinarElenco) {
+    btnAdivinarElenco.addEventListener('click', intentarAdivinarElenco);
+}
+
+const btnPistaElenco = document.getElementById('btn-pista-elenco');
+if (btnPistaElenco) {
+    btnPistaElenco.addEventListener('click', pedirPistaElenco);
+}
+
+const inputElenco = document.getElementById('input-elenco');
+if (inputElenco) {
+    inputElenco.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            intentarAdivinarElenco();
+        }
     });
 }
 
