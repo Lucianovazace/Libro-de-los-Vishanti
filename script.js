@@ -1180,6 +1180,81 @@ const listaMedia = [
     { titulo: "Justice League 3000 (#1-7)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://static.dc.com/dc/files/default_images/jl3000_5_5b29503d479262.30263883.jpg" },
     { titulo: "Earth 2 (#17-20, Annual #2)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://static.wikia.nocookie.net/marvel_dc/images/4/49/Earth_2_Vol_1_17.jpg/revision/latest?cb=20131108182332" },
     { titulo: "Worlds' Finest (#13-18)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://static.dc.com/dc/files/default_images/worldsfinest_9_5b2a8830a233a4.99954068.jpg" },
+
+    // --- ABSOLUTE (DC) ---
+    { titulo: "Absolute Batman Vol.1", categoria: "absolute-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_batman_cov_-ebfab072bc8f36fd1d17526095371796-1024-1024.webp" },
+    { titulo: "Absolute Wonder Woman Vol. 1", categoria: "absolute-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_wonder_woman_cov_jpg-1c23aad53ac6bc9d9317656506275518-640-0.webp" },
+    { titulo: "Absolute Superman Vol. 1", categoria: "absolute-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_superman_cov-262d809b3bd2c0eda717516349783514-1024-1024.webp" },
+    { titulo: "Absolute Flash Vol. 1", categoria: "absolute-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_flash_cov-a2b471d0bbb411084a17630683922940-640-0.webp" },
+    { titulo: "Absolute Martian Manhunter Vol. 1", categoria: "absolute-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_martian_manhunter_cov-c5b674c457c19f7a6717669292553724-640-0.webp" },
+    { titulo: "Absolute Green Lantern Vol. 1", categoria: "absolute-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_green_lantern_vol_1_cov-d3df472c0b8d7d8c9817776555416834-640-0.webp" },
+    { titulo: "Absolute Batman Vol. 2", categoria: "absolute-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_batman_vol_2_cov-81ca4615dc1a9b636917715399029299-1024-1024.webp" },
+    { titulo: "Absolute Wonder Woman Vol.2", categoria: "absolute-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_wonder_woman_2_cov-8e32be630c3961de3117724571919123-1024-1024.webp" },
+    { titulo: "Absolute Superman Vol. 2", categoria: "absolute-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_superman_vol_2_cov-1e080232d9e14656ac17758462622240-1024-1024.webp" },
+    { titulo: "Absolute Martian Manhunter Vol. 2", categoria: "absolute-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_martian_manhunter_vol_2_cov-c8a61ab0bac1b865f017873357025130-1024-1024.webp" },
+    { titulo: "Absolute Flash Vol. 2", categoria: "absolute-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_flash_2_cov-68dc15eef101c750c217809431890213-1024-1024.webp" },
+    { titulo: "Absolute Batman Vol. 3", categoria: "absolute-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_batman_vol_3_cov-70e9a0d2f0d3db749d17824805883620-1024-1024.webp" },
+
+    // --- RENACIMIENTO (DC Argentina) ---
+    { titulo: "Superman: Lois & Clark — La Llegada", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_lois__clark_cov_arg1-887fa05632c017439c15953344471109-640-0.webp" },
+    { titulo: "Los Últimos Días de Superman", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/last_days_of_superman_cov_arg1-cbf1c701713e4e584915953441617103-1024-1024.webp" },
+    { titulo: "Universo DC Renacimiento", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/dc_rebirth_cov_arg_var1-e50af0cf8063fa961315954507956862-640-0.webp" },
+    { titulo: "Batman Vol. 1: Yo Soy Gotham", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vol_01_cov_arg1-fa7c5ab99dc5a1a5c215952931975077-640-0.webp" },
+    { titulo: "Detective Comics Vol. 1: La Ascensión de Los Hombres Murciélago", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/detective_comics_vol_01_cov_arg1-7aa3d0c5ab3ffcf49615952937595959-1024-1024.webp" },
+    { titulo: "Trinidad Vol. 1: Mejor Juntos", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/trinity_vol_01_cov_arg1-9a9fb1e090f508820f15952953795355-640-0.webp" },
+    { titulo: "Superman Vol. 1: Hijo de Superman", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_vol_01_cov_arg1-27987f7067224c21fb15952951319356-640-0.webp" },
+    { titulo: "Action Comics Vol. 1: Sendero de la Perdición", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_887044-MLU77961783640_082024-O.webp" },
+    { titulo: "Liga de la Justicia Vol. 1: Las Máquinas de la Extinción", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/justice_league_vol_01_cov_arg1-0011a9d12c435da3d215952948711524-1024-1024.webp" },
+    { titulo: "Flash Vol. 1: El Relámpago Cae Dos Veces", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flash_vol_01_cov_arg1-0b6210aa8ebe79480315952940515737-640-0.webp" },
+    { titulo: "Harley Quinn Vol. 1: Morir Riendo", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/harley_quinn_vol_01_cov_arg1-e81a172ea14a0f62ca15952945683425-640-0.webp" },
+    { titulo: "All Star Batman Vol. 1: Yo, Mi Peor Enemigo", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/all_star_batman_01_cov_arg1-5f139fd501888db24e16075508570607-1024-1024.webp" },
+    { titulo: "Batman: La Noche de los Hombres Monstruo", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_night_of_the_monster_men_cov_arg1-e3112d00e5d35b0d2315952936717208-1024-1024.webp" },
+    { titulo: "Action Comics Vol. 2: Bienvenido al Planeta", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/action_comics_vol_02_cov_arg1-5b92bad098fd1c370115952925271170-1024-1024.webp" },
+    { titulo: "Superman Vol. 2: Las Pruebas del Superhijo", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_vol_02_cov_arg1-14390a772e82786b7a15952952098443-1024-1024.webp" },
+    { titulo: "Escuadrón Suicida Vol. 1: La Cámara Negra", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/suicide_squad_vol_01_cov_arg1-2f0f54415aded1ea9415952939549242-1024-1024.webp" },
+    { titulo: "Batman Vol. 2: Yo Soy Suicida", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vol_02_cov_arg1-4dccd9624ff1f1834415952932697950-1024-1024.webp" },
+    { titulo: "Liga de la Justicia Contra El Escuadrón Suicida", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/justice_league_vs_suicide_squad_cov_arg1-2754a6b61b4a6ec17e15952947289683-640-0.webp" },
+    { titulo: "Detective Comics Vol. 2: El Sindicato de las Víctimas", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/detective_comics_vol_02_cov_arg1-dbf4f5137f7fa76c0c15952938628174-1024-1024.webp" },
+    { titulo: "Liga de la Justicia Vol. 2: Estallido", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/justice_league_vol_02_cov_arg1-757289e0e831cb7f7915952949436912-640-0.webp" },
+    { titulo: "Flash Vol. 2: La Velocidad de La Oscuridad", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flash_vol_02_cov_arg1-c128d72136e6faa12f15952941275724-1024-1024.webp" },
+    { titulo: "Harley Quinn Vol. 2: El Joker Ama a Harley", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/harley_quinn_vol_02_cov_arg1-cd45df91c1cbc1874915952946441367-1024-1024.webp" },
+    { titulo: "Batman Vol. 3: Yo Soy Bane", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batmanvol031-07a353ded3be99c52c15908768340469-1024-1024.webp" },
+    { titulo: "Action Comics Vol. 3: Hombres de Acero", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/action_comics_vol_03_cov_arg1-db7681c705f1cb402715952926876922-640-0.webp" },
+    { titulo: "Detective Comics Vol. 3: La Liga de Las Sombras", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/detedtivecomicsvol031-fe8f0889168a8937e915908693968364-1024-1024.webp" },
+    { titulo: "All Star Batman Vol. 2: Los Confines de la Tierra", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/all_star_batman_02_cov_arg1-5f55762324808d556715952929530642-1024-1024.webp" },
+    { titulo: "Flash Vol. 3: Vuelven Los Villanos", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flashvol031-84dc6e1faaf30bbe0115908695935172-1024-1024.webp" },
+    { titulo: "Superman Vol. 3: Renacido", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_704894-MLA105761438885_012026-O.webp" },
+    { titulo: "Batman / Flash: El Prendedor", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/el_prendedor_cov_arg1-5ce8d606c37dab610915908781649542-1024-1024.webp" },
+    { titulo: "Action Comics Vol. 4: El Nuevo Mundo", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/action_comics_vol_4_cov1-28d439ac6e8747ac8a15890329661877-1024-1024.webp" },
+    { titulo: "Superman Vol. 4: Amanecer Negro", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/supermanvolamanecernegro1-8606da905de28e58d315908682240299-1024-1024.webp" },
+    { titulo: "Superhijos Vol. 1: Cuando Sea Mayor", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superhijos_vol_01_cov_arg1-5113e243c407775b1e15952950372346-640-0.webp" },
+    { titulo: "Flash Vol. 4: Corriendo Aterrado", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flashvol041-777c6964b74c9b3cec15908696641721-640-0.webp" },
+    { titulo: "Batman Vol. 4: La Guerra de Las Bromas y Los Acertijos", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batmanvol041-425ea09c9ce6cd032715908769340423-640-0.webp" },
+    { titulo: "Detective Comics Vol. 4: Deus Ex Machina", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/detectivecomicsvol041-ce2f577de41456800115908694856836-640-0.webp" },
+    { titulo: "All Star Batman Vol. 3: El Primer Aliado", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/all_star_batman_03_cov_arg1-dea9d6b38b0847d3f915952930856156-640-0.webp" },
+    { titulo: "Liga de la Justicia Vol. 3: Intemporales", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/laligadelajusticiavol031-fb0338db9f5e2b2f6515908691150457-1024-1024.webp" },
+    { titulo: "Action Comics Vol. 5: El Efecto Oz", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/action_comics_vol_5_cov1-c7d9e379836be611cc16328696499933-640-0.webp" },
+    { titulo: "Flash Vol. 5: Negativo", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flashvol05negativo1-cc1a8b8907bfd6d65f15908697444656-1024-1024.webp" },
+    { titulo: "Batman Vol. 5: Las Reglas del Compromiso", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batmanvol051-732c05e139369515e315908770031759-640-0.webp" },
+    { titulo: "Detective Comics Vol. 5: Un Lugar Solitario Para Vivir", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/detective_comics_vol_05_cov_arg1-d2de0acfcdfcecf27415974064544472-640-0.webp" },
+    { titulo: "Superman Vol. 5: Universo Bizarro", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_vol_05_cov_arg1-dd49239eee9388a50216329488792145-640-0.webp" },
+    { titulo: "Liga de la Justicia Vol. 4: Legado", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/ligadelajusticiavol041-651eec9eca26d2579315908692021526-640-0.webp" },
+    { titulo: "Flash Vol. 6: Un Día Frío en el Infierno", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flashvol061-6fe3abc86636b1898f15908698309154-640-0.webp" },
+    { titulo: "Batman Vol. 6: ¿Novia o Ladrona?", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batmanvol061-e7ba6eceb562bc268015908770965402-640-0.webp" },
+    { titulo: "Batman Vol. 7: La Boda", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_la_boda_cov1-4acd6ce5f7c651e4c115933744435615-640-0.webp" },
+    { titulo: "Detective Comics Vol. 6: Hombres Murciélagos Eternos", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_716264-MLA46450030754_062021-O.webp" },
+    { titulo: "Liga de la Justicia Vol. 5: Justicia Perdida", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/ligadelajusticiavol05justiciaperdida1-047b192b62df08b27e15908693104228-640-0.webp" },
+    { titulo: "Flash Vol. 7: La Guerra de Flash", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flash_vol_07_cov_arg1-3e920e993bef561e9016328688666223-1024-1024.webp" },
+    { titulo: "Batman Vol. 8: Días Fríos", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/326/487/products/9789877246353-aaf4aa4279c037042216450259152333-640-0.webp" },
+    { titulo: "Detective Comics Vol. 7: Mitología", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/detective_comics_vol_07_cov_arg-4642828d2ec5fd47cf16329518739245-640-0.webp" },
+    { titulo: "Flash Vol. 8: La Búsqueda de La Fuerza", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flash_vol_08_cov_arg1-fb081cddf0455a28d516064085767082-1024-1024.webp" },
+    { titulo: "Batman Vol. 9: Pesadillas", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vol_09_cov_arg1-b1828bb60428a2c34716328690822664-640-0.webp" },
+    { titulo: "Flash Vol. 9: El Reino de Los Renegados", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flash_vol_09_cov_arg1-68ad1c5f7e647c3ed016328686424443-1024-1024.webp" },
+    { titulo: "Batman Vol. 10: La Caída y Los Caídos", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vol_10_cov_arg1-6fd39f68d186572aa616328693116362-1024-1024.webp" },
+    { titulo: "Flash Vol. 10: La Era de Flash", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flash_vol_10_cov_arg1-67dc11019d71a8c93616328684478599-1024-1024.webp" },
+    { titulo: "Batman Vol. 11: Ciudad de Bane", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_766233-MLA44443800587_122020-O.webp" },
+    { titulo: "Doomsday Clock: Primera Parte", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/doomsday_clock_vol_01_cov_arg1-0dec0f9c563fc5a6bb16215517985773-640-0.webp" },
+    { titulo: "Doomsday Clock: Segunda Parte", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/doomsdayclockvol021-1d5d82540814ccb66315908689620786-640-0.webp" },
 ];
 
 // ==========================================
@@ -2476,6 +2551,33 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "dc-argentina",
+        titulo: "DC Argentina",
+        categoria: "dc-orden-lectura",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/poster_superman_elmundo-fbd83602489f14740517504389219679-1024-1024.webp",
+        esContenedor: true,
+        etiqueta: "Cómic",
+        peliculas: []
+    },
+    {
+        id: "absolute-dc",
+        titulo: "Absolute",
+        categoria: "dc-argentina",
+        poster: "https://static.dc.com/2024-08/ABS_BM_CV1_JIM-LEE-VARIANT.jpg",
+        esContenedor: true,
+        etiqueta: "Cómic",
+        peliculas: []
+    },
+    {
+        id: "renacimiento-dc",
+        titulo: "Renacimiento",
+        categoria: "dc-argentina",
+        poster: "https://placehold.co/300x450?text=Renacimiento",
+        esContenedor: true,
+        etiqueta: "Cómic",
+        peliculas: []
+    },
+    {
         id: "green-lantern-hal-jordan",
         titulo: "Green Lantern - Hal Jordan",
         categoria: "dc-camino-heroe",
@@ -3096,6 +3198,9 @@ function renderizarColecciones() {
         "dc-comics-hub": "seccion-dc-comics-hub",
         "dc-camino-heroe": "seccion-dc-camino-heroe",
         "dc-orden-lectura": "seccion-dc-orden-lectura",
+        "absolute-dc": "seccion-absolute-dc",
+        "renacimiento-dc": "seccion-renacimiento-dc",
+        "dc-argentina": "seccion-dc-argentina",
         "marvel-comics-hub": "seccion-marvel-comics-hub",
         "sw-animacion": "seccion-sw-animacion",
         "franquicias": "seccion-franquicias",
@@ -5587,6 +5692,7 @@ function normalizarTextoJuego(str) {
         .toLowerCase()
         .normalize('NFD')
         .replace(/[\u0300-\u036f]/g, '')
+        .replace(/['’"]/g, '')
         .trim()
         .replace(/\s+/g, ' ');
 }
@@ -5795,6 +5901,243 @@ if (inputElenco) {
     });
 }
 
+// ==========================================
+// JUEGO "NOMBRALOS" (Green Lantern Corps, contra el reloj)
+// ==========================================
+const personajesNombralosLinternas = [
+    { id: "alan_scott", nombreMostrado: "Alan Scott", alias: ["alan scott", "alan"], imagen: "https://i.pinimg.com/736x/c2/3a/b1/c23ab102b1df03f91272c9feffb510b4.jpg" },
+    { id: "hal_jordan", nombreMostrado: "Hal Jordan", alias: ["hal jordan", "hal"], imagen: "https://i.pinimg.com/736x/eb/3d/27/eb3d27ed19e23cb4ff4e128545507bcb.jpg" },
+    { id: "john_stewart", nombreMostrado: "John Stewart", alias: ["john stewart", "john"], imagen: "https://i.pinimg.com/236x/73/35/ec/7335ec9493653860d5930c85c5fbb3dd.jpg" },
+    { id: "guy_gardner", nombreMostrado: "Guy Gardner", alias: ["guy gardner", "guy"], imagen: "https://i.pinimg.com/originals/14/1d/5d/141d5d996cfa0bac3526bfdce4935ff1.jpg" },
+    { id: "kyle_rayner", nombreMostrado: "Kyle Rayner", alias: ["kyle rayner", "kyle"], imagen: "https://i.pinimg.com/736x/ca/85/61/ca8561ae6c0b568c273527f54d40de8f.jpg" },
+    { id: "simon_baz", nombreMostrado: "Simon Baz", alias: ["simon baz", "simon"], imagen: "https://i.pinimg.com/474x/9b/6e/04/9b6e04e81ff615b706611ab04182a584.jpg" },
+    { id: "jessica_cruz", nombreMostrado: "Jessica Cruz", alias: ["jessica cruz", "jessica"], imagen: "https://i.pinimg.com/originals/b3/08/64/b30864c16110417e76f999d07bf586a2.jpg" },
+    { id: "keli_quintela", nombreMostrado: "Keli Quintela", alias: ["keli quintela", "keli"], imagen: "https://i.pinimg.com/736x/8a/c7/da/8ac7da4ce26febe09d6f2e7bb4b6e292.jpg" },
+    { id: "abin_sur", nombreMostrado: "Abin Sur", alias: ["abin sur", "abin"], imagen: "https://i.pinimg.com/474x/c0/c6/16/c0c616ab22771b6ad3f28c81b8c6aba3.jpg" },
+    { id: "tomar_re", nombreMostrado: "Tomar-Re", alias: ["tomar-re", "tomar re", "tomarre"], imagen: "https://i.pinimg.com/originals/6a/50/03/6a50031541cd8b665f0dc585b4eeabc2.png" },
+    { id: "sinestro", nombreMostrado: "Sinestro", alias: ["sinestro"], imagen: "https://i.pinimg.com/236x/5f/c8/9e/5fc89e02c1f14b4f2cc75d2621e1e28c.jpg" },
+    { id: "kilowog", nombreMostrado: "Kilowog", alias: ["kilowog"], imagen: "https://i.pinimg.com/736x/80/4a/79/804a796a45a2d28bf1315b935e005a72.jpg" },
+    { id: "salaak", nombreMostrado: "Salaak", alias: ["salaak"], imagen: "https://i.pinimg.com/564x/2c/f8/c0/2cf8c0efb523bbbe7394709fbbd0d247.jpg" },
+    { id: "mogo", nombreMostrado: "Mogo", alias: ["mogo"], imagen: "https://i.pinimg.com/736x/5e/b8/62/5eb862a6a5cceeb3146818255325b669.jpg" },
+    { id: "katma_tui", nombreMostrado: "Katma Tui", alias: ["katma tui", "katma"], imagen: "https://i.pinimg.com/474x/42/f1/3b/42f13b08e701e716d57d36bd5a47b8d4.jpg" },
+    { id: "arisia_rrab", nombreMostrado: "Arisia Rrab", alias: ["arisia rrab", "arisia"], imagen: "https://i.pinimg.com/474x/69/0f/b6/690fb67c0ece208c0fa95c249be6a082.jpg" },
+    { id: "chp", nombreMostrado: "Ch'p", alias: ["ch'p", "chp", "chip"], imagen: "https://static.wikia.nocookie.net/injusticegodsamongus/images/4/45/Ch%27p_injustice_comic.jpg/revision/latest?cb=20140527174600" },
+    { id: "bdg", nombreMostrado: "B'dg", alias: ["b'dg", "bdg"], imagen: "https://i.pinimg.com/474x/de/59/e5/de59e5cc493ca77bdc9f0026b16f18b9.jpg" },
+    { id: "sodam_yat", nombreMostrado: "Sodam Yat", alias: ["sodam yat", "sodam"], imagen: "https://i.pinimg.com/originals/a1/06/8f/a1068f5a50e9d75b28d594116133d199.jpg" },
+    { id: "soranik_natu", nombreMostrado: "Soranik Natu", alias: ["soranik natu", "soranik"], imagen: "https://i.pinimg.com/474x/4f/ff/3b/4fff3b9de6d6212e61ab3acace357835.jpg" },
+    { id: "hannu", nombreMostrado: "Hannu", alias: ["hannu"], imagen: "https://i.pinimg.com/736x/b4/ca/1a/b4ca1a9d09a6029880de6cc21da278fc.jpg" },
+    { id: "laira", nombreMostrado: "Laira", alias: ["laira"], imagen: "https://i.pinimg.com/474x/a7/a0/64/a7a06451181e500ffba23914a78c5f36.jpg" },
+    { id: "boodikka", nombreMostrado: "Boodikka", alias: ["boodikka"], imagen: "https://i.pinimg.com/originals/d0/fb/e5/d0fbe572f58dc5ea0d5f74d8964e8cb8.jpg" },
+    { id: "stel", nombreMostrado: "Stel", alias: ["stel"], imagen: "https://comicvine.gamespot.com/a/uploads/original/3/35127/778285-stel.png" },
+    { id: "isamot_kol", nombreMostrado: "Isamot Kol", alias: ["isamot kol", "isamot"], imagen: "https://upload.wikimedia.org/wikipedia/en/6/6b/Isamot_Kol.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" },
+    { id: "vath_sarn", nombreMostrado: "Vath Sarn", alias: ["vath sarn", "vath"], imagen: "https://i.pinimg.com/736x/41/9b/1c/419b1c801d09cb2fcea75b800ed2e170.jpg" },
+    { id: "iolande", nombreMostrado: "Iolande", alias: ["iolande"], imagen: "https://i.pinimg.com/474x/0b/3f/1c/0b3f1c9586e73bb5b6792a3b209b7e3a.jpg" },
+    { id: "rot_lop_fan", nombreMostrado: "Rot Lop Fan", alias: ["rot lop fan"], imagen: "https://i.pinimg.com/474x/96/bd/89/96bd8916a648b50448ff40dc04280566.jpg" },
+    { id: "medphyll", nombreMostrado: "Medphyll", alias: ["medphyll"], imagen: "https://static.wikia.nocookie.net/marvel_dc/images/8/84/Medphyll_01.jpg/revision/latest?cb=20120908142349" },
+    { id: "chaselon", nombreMostrado: "Chaselon", alias: ["chaselon"], imagen: "https://i.pinimg.com/736x/4e/12/fc/4e12fc1a20411e97489c0978e119b08a.jpg" },
+    { id: "gnort", nombreMostrado: "G'nort", alias: ["g'nort", "gnort"], imagen: "https://i.pinimg.com/474x/92/43/92/92439201b2eed87fdef9eb4e5ca5a8bc.jpg" },
+    { id: "xax", nombreMostrado: "Xax", alias: ["xax"], imagen: "https://i.pinimg.com/474x/8c/cd/87/8ccd87c4b7e2bb8387acba5fb2124bd2.jpg" },
+    { id: "green_loontern", nombreMostrado: "Green Loontern", alias: ["green loontern", "pato lucas", "daffy duck", "duck lantern"], imagen: "https://i.pinimg.com/736x/8d/61/83/8d618315bfda3de16614a9247479e880.jpg" },
+    { id: "yalan_gur", nombreMostrado: "Yalan Gur", alias: ["yalan gur", "yalan"], imagen: "https://static.wikia.nocookie.net/dccu/images/e/ea/Yalan_Gur.jpg/revision/latest?cb=20180323175101" }
+];
+
+let personajesEncontradosNombralos = new Set();
+let tiempoRestanteNombralos = 60;
+let intervaloNombralos = null;
+let juegoNombralosActivo = false;
+
+function renderizarSlotsNombralos() {
+    const cont = document.getElementById('grilla-slots-nombralos');
+    if (!cont) return;
+    cont.innerHTML = '';
+    personajesNombralosLinternas.forEach(p => {
+        const slot = document.createElement('div');
+        slot.className = 'slot-elenco';
+        slot.dataset.personajeId = p.id;
+        if (personajesEncontradosNombralos.has(p.id)) {
+            slot.classList.add('resuelto');
+            slot.innerHTML = `
+                <img class="imagen-personaje-slot" src="${p.imagen}" alt="${p.nombreMostrado}">
+                <div class="caption-personaje-slot">
+                    <span class="nombre-personaje-slot">${p.nombreMostrado}</span>
+                </div>
+            `;
+        } else {
+            slot.innerHTML = `<span class="signo-interrogacion">?</span>`;
+        }
+        cont.appendChild(slot);
+    });
+}
+
+function actualizarContadorNombralos() {
+    const contador = document.getElementById('contador-nombralos');
+    if (contador) contador.textContent = `${personajesEncontradosNombralos.size}/${personajesNombralosLinternas.length} encontrados`;
+}
+
+function reiniciarPantallaNombralos() {
+    personajesEncontradosNombralos = new Set();
+    tiempoRestanteNombralos = 60;
+    juegoNombralosActivo = false;
+    if (intervaloNombralos) clearInterval(intervaloNombralos);
+
+    const timer = document.getElementById('timer-nombralos');
+    if (timer) { timer.textContent = '60'; timer.classList.remove('tiempo-poco'); }
+
+    const input = document.getElementById('input-nombralos');
+    const btnAdivinar = document.getElementById('btn-adivinar-nombralos');
+    const btnEmpezar = document.getElementById('btn-empezar-nombralos');
+    if (input) { input.value = ''; input.disabled = true; }
+    if (btnAdivinar) btnAdivinar.disabled = true;
+    if (btnEmpezar) { btnEmpezar.disabled = false; btnEmpezar.textContent = '▶️ Empezar'; }
+
+    const mensaje = document.getElementById('mensaje-nombralos');
+    if (mensaje) { mensaje.textContent = ''; mensaje.className = 'mensaje-elenco'; }
+    const promedio = document.getElementById('promedio-nombralos');
+    if (promedio) promedio.textContent = '';
+
+    renderizarSlotsNombralos();
+    actualizarContadorNombralos();
+}
+
+function empezarJuegoNombralos() {
+    reiniciarPantallaNombralos();
+    juegoNombralosActivo = true;
+
+    const input = document.getElementById('input-nombralos');
+    const btnAdivinar = document.getElementById('btn-adivinar-nombralos');
+    const btnEmpezar = document.getElementById('btn-empezar-nombralos');
+    if (input) { input.disabled = false; input.focus(); }
+    if (btnAdivinar) btnAdivinar.disabled = false;
+    if (btnEmpezar) btnEmpezar.disabled = true;
+
+    const timer = document.getElementById('timer-nombralos');
+    intervaloNombralos = setInterval(() => {
+        tiempoRestanteNombralos--;
+        if (timer) {
+            timer.textContent = tiempoRestanteNombralos;
+            if (tiempoRestanteNombralos <= 10) timer.classList.add('tiempo-poco');
+        }
+        if (tiempoRestanteNombralos <= 0) {
+            finalizarJuegoNombralos();
+        }
+    }, 1000);
+}
+
+function intentarAdivinarNombralos() {
+    if (!juegoNombralosActivo) return;
+    const input = document.getElementById('input-nombralos');
+    const valorNormalizado = normalizarTextoJuego(input.value);
+    const mensaje = document.getElementById('mensaje-nombralos');
+    if (!valorNormalizado) return;
+
+    const encontrado = personajesNombralosLinternas.find(p =>
+        p.alias.some(alias => normalizarTextoJuego(alias) === valorNormalizado)
+    );
+
+    if (!encontrado) {
+        mensaje.textContent = `❌ "${input.value}" no es un Green Lantern reconocido.`;
+        mensaje.className = 'mensaje-elenco error';
+    } else if (personajesEncontradosNombralos.has(encontrado.id)) {
+        mensaje.textContent = `Ya habías nombrado a ${encontrado.nombreMostrado}.`;
+        mensaje.className = 'mensaje-elenco aviso';
+    } else {
+        personajesEncontradosNombralos.add(encontrado.id);
+        renderizarSlotsNombralos();
+        actualizarContadorNombralos();
+        mensaje.textContent = `✅ ¡${encontrado.nombreMostrado}!`;
+        mensaje.className = 'mensaje-elenco exito';
+
+        if (personajesEncontradosNombralos.size === personajesNombralosLinternas.length) {
+            finalizarJuegoNombralos();
+        }
+    }
+
+    input.value = '';
+    input.focus();
+}
+
+function finalizarJuegoNombralos() {
+    if (!juegoNombralosActivo) return;
+    juegoNombralosActivo = false;
+    if (intervaloNombralos) clearInterval(intervaloNombralos);
+
+    const input = document.getElementById('input-nombralos');
+    const btnAdivinar = document.getElementById('btn-adivinar-nombralos');
+    const btnEmpezar = document.getElementById('btn-empezar-nombralos');
+    if (input) input.disabled = true;
+    if (btnAdivinar) btnAdivinar.disabled = true;
+    if (btnEmpezar) { btnEmpezar.disabled = false; btnEmpezar.textContent = '🔁 Jugar de nuevo'; }
+
+    const timer = document.getElementById('timer-nombralos');
+    if (timer) timer.textContent = '0';
+
+    const puntajeFinal = personajesEncontradosNombralos.size;
+    const mensaje = document.getElementById('mensaje-nombralos');
+    mensaje.textContent = `⏱️ ¡Se acabó el tiempo! Nombraste ${puntajeFinal} de ${personajesNombralosLinternas.length}.`;
+    mensaje.className = 'mensaje-elenco victoria';
+
+    guardarYMostrarPromedioNombralos(puntajeFinal);
+}
+
+// Guarda el puntaje de esta partida en un contador global compartido entre
+// todos los usuarios, y muestra el promedio actualizado. No depende de estar
+// logueado: es una estadística pública del juego, no del usuario.
+function guardarYMostrarPromedioNombralos(puntajeFinal) {
+    const promedioEl = document.getElementById('promedio-nombralos');
+    const refStats = db.collection('estadisticas').doc('nombralos-linternas');
+
+    refStats.set({
+        totalPuntaje: firebase.firestore.FieldValue.increment(puntajeFinal),
+        totalPartidas: firebase.firestore.FieldValue.increment(1)
+    }, { merge: true }).then(() => {
+        return refStats.get();
+    }).then(doc => {
+        if (!doc.exists || !promedioEl) return;
+        const datos = doc.data();
+        const promedio = datos.totalPartidas > 0 ? (datos.totalPuntaje / datos.totalPartidas) : 0;
+        promedioEl.textContent = `📊 Promedio de todos los jugadores: ${promedio.toFixed(1)} personajes (sobre ${datos.totalPartidas} partidas jugadas).`;
+    }).catch(err => {
+        console.error('Error guardando estadística de Nombralos:', err);
+    });
+}
+
+const tarjetaNombralos = document.getElementById('tarjeta-nombralos');
+if (tarjetaNombralos) {
+    tarjetaNombralos.addEventListener('click', () => {
+        reiniciarPantallaNombralos();
+        cambiarSeccion(document.getElementById('seccion-nombralos-jugar'));
+    });
+}
+
+const btnVolverJuegosDesdeNombralos = document.getElementById('btn-volver-juegos-desde-nombralos');
+if (btnVolverJuegosDesdeNombralos) {
+    btnVolverJuegosDesdeNombralos.addEventListener('click', () => {
+        if (intervaloNombralos) clearInterval(intervaloNombralos);
+        juegoNombralosActivo = false;
+        cambiarSeccion(document.getElementById('seccion-juegos'));
+    });
+}
+
+const btnEmpezarNombralos = document.getElementById('btn-empezar-nombralos');
+if (btnEmpezarNombralos) {
+    btnEmpezarNombralos.addEventListener('click', empezarJuegoNombralos);
+}
+
+const btnAdivinarNombralos = document.getElementById('btn-adivinar-nombralos');
+if (btnAdivinarNombralos) {
+    btnAdivinarNombralos.addEventListener('click', intentarAdivinarNombralos);
+}
+
+const inputNombralos = document.getElementById('input-nombralos');
+if (inputNombralos) {
+    inputNombralos.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            intentarAdivinarNombralos();
+        }
+    });
+}
+
 const btnVolverDcComicsHub = document.getElementById('btn-volver-dc-comics-hub');
 if(btnVolverDcComicsHub) {
     btnVolverDcComicsHub.addEventListener('click', () => {
@@ -5813,6 +6156,27 @@ const btnVolverDcOrdenLectura = document.getElementById('btn-volver-dc-orden-lec
 if(btnVolverDcOrdenLectura) {
     btnVolverDcOrdenLectura.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-dc-comics-hub'));
+    });
+}
+
+const btnVolverDcArgentina = document.getElementById('btn-volver-dc-argentina');
+if(btnVolverDcArgentina) {
+    btnVolverDcArgentina.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dc-orden-lectura'));
+    });
+}
+
+const btnVolverAbsoluteDc = document.getElementById('btn-volver-absolute-dc');
+if(btnVolverAbsoluteDc) {
+    btnVolverAbsoluteDc.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dc-argentina'));
+    });
+}
+
+const btnVolverRenacimientoDc = document.getElementById('btn-volver-renacimiento-dc');
+if(btnVolverRenacimientoDc) {
+    btnVolverRenacimientoDc.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dc-argentina'));
     });
 }
 

@@ -882,6 +882,11 @@
                 <h3>Completa el Elenco</h3>
                 <p>Mencioná a todos los personajes de una película o equipo. ¡Ojo con los nombres alternativos!</p>
             </div>
+            <div class="tarjeta-juego" id="tarjeta-nombralos">
+                <div class="icono-juego">⏱️</div>
+                <h3>Nombralos</h3>
+                <p>Tenés 60 segundos. Nombrá a todos los Green Lantern que puedas.</p>
+            </div>
         </div>
     </section>
 
@@ -911,6 +916,31 @@
         <div id="contenedor-confeti-elenco"></div>
     </section>
 
+    <!-- SECCIÓN: JUEGO - NOMBRALOS -->
+    <section id="seccion-nombralos-jugar" class="oculto">
+        <button class="btn-volver" id="btn-volver-juegos-desde-nombralos">← Volver a Juegos</button>
+        <h2>Nombralos ⏱️</h2>
+        <p class="subtitulo-juegos">Nombrá a todos los Green Lantern que puedas antes de que se acabe el tiempo.</p>
+
+        <div class="fila-timer-nombralos">
+            <span class="timer-nombralos" id="timer-nombralos">60</span>
+            <button class="btn-modal" id="btn-empezar-nombralos" style="width:auto;">▶️ Empezar</button>
+        </div>
+
+        <p class="contador-elenco" id="contador-nombralos">0 encontrados</p>
+
+        <div class="grilla-slots-elenco" id="grilla-slots-nombralos"></div>
+
+        <div class="fila-input-elenco">
+            <input type="text" id="input-nombralos" placeholder="Escribí un nombre..." autocomplete="off" disabled>
+            <button class="btn-modal" id="btn-adivinar-nombralos" disabled>Adivinar</button>
+        </div>
+
+        <p id="mensaje-nombralos" class="mensaje-elenco"></p>
+        <p id="promedio-nombralos" class="mensaje-elenco" style="color:#aaa; font-size:12px;"></p>
+    </section>
+
+
     <!-- COLECCIÓN: DC COMICS (hub) -->
     <section id="seccion-dc-comics-hub" class="oculto">
         <button class="btn-volver" id="btn-volver-dc-comics-hub">← Volver a Cómics</button>
@@ -930,6 +960,27 @@
         <button class="btn-volver" id="btn-volver-dc-orden-lectura">← Volver a DC Comics</button>
         <h2>Orden de Lectura</h2>
         <div class="grilla-biblioteca" id="grilla-dc-orden-lectura"></div>
+    </section>
+
+    <!-- COLECCIÓN: DC ARGENTINA -->
+    <section id="seccion-dc-argentina" class="oculto">
+        <button class="btn-volver" id="btn-volver-dc-argentina">← Volver a Orden de Lectura</button>
+        <h2>DC Argentina</h2>
+        <div class="grilla-biblioteca" id="grilla-dc-argentina"></div>
+    </section>
+
+    <!-- COLECCIÓN: ABSOLUTE (DC) -->
+    <section id="seccion-absolute-dc" class="oculto">
+        <button class="btn-volver" id="btn-volver-absolute-dc">← Volver a DC Argentina</button>
+        <h2>Absolute</h2>
+        <div class="grilla-biblioteca" id="grilla-absolute-dc"></div>
+    </section>
+
+    <!-- COLECCIÓN: RENACIMIENTO (DC ARGENTINA) -->
+    <section id="seccion-renacimiento-dc" class="oculto">
+        <button class="btn-volver" id="btn-volver-renacimiento-dc">← Volver a DC Argentina</button>
+        <h2>Renacimiento</h2>
+        <div class="grilla-biblioteca" id="grilla-renacimiento-dc"></div>
     </section>
 
     <!-- COLECCIÓN: LOS NUEVOS 52 - ORDEN DE LECTURA -->

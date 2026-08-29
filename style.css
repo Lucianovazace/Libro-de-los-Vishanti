@@ -923,3 +923,32 @@ h2 {
         opacity: 0.4;
     }
 }
+
+/* ========================================== */
+/* JUEGO "NOMBRALOS" */
+/* ========================================== */
+.fila-timer-nombralos {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 10px 0 15px 0;
+}
+
+.timer-nombralos {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2ecc71;
+    min-width: 60px;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+}
+
+.timer-nombralos.tiempo-poco {
+    color: #e74c3c;
+    animation: pulsarTimer 0.6s infinite;
+}
+
+@keyframes pulsarTimer {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+}
