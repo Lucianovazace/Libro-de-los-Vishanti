@@ -962,6 +962,19 @@
         <div class="grilla-biblioteca" id="grilla-dc-orden-lectura"></div>
     </section>
 
+    <!-- COLECCIÓN: POST-CRISIS / EDAD MODERNA - ORDEN DE LECTURA -->
+    <section id="seccion-post-crisis-dc" class="oculto">
+        <button class="btn-volver" id="btn-volver-post-crisis-dc">← Volver a Orden de Lectura</button>
+        <h2>Post-Crisis / Edad Moderna</h2>
+        <div class="filtros-seccion">
+            <button class="btn-filtro-post-crisis activo" data-tipo="todos">Todos</button>
+            <button class="btn-filtro-post-crisis" data-tipo="animal-man">Animal Man</button>
+            <button class="btn-filtro-post-crisis" data-tipo="aquaman">Aquaman</button>
+            <button class="btn-filtro-post-crisis" data-tipo="liga">Liga de la Justicia</button>
+        </div>
+        <div class="grilla-biblioteca" id="grilla-post-crisis-dc"></div>
+    </section>
+
     <!-- COLECCIÓN: DC ARGENTINA -->
     <section id="seccion-dc-argentina" class="oculto">
         <button class="btn-volver" id="btn-volver-dc-argentina">← Volver a Orden de Lectura</button>
@@ -979,31 +992,107 @@
             <button class="btn-filtro-absolute" data-tipo="superman">Superman</button>
             <button class="btn-filtro-absolute" data-tipo="wonder-woman">Wonder Woman</button>
             <button class="btn-filtro-absolute" data-tipo="flash">Flash</button>
-            <button class="btn-filtro-absolute" data-tipo="green-lantern">Green Lantern</button>
+            <button class="btn-filtro-absolute" data-tipo="green-lantern-hal-jordan">Green Lantern (Hal Jordan)</button>
             <button class="btn-filtro-absolute" data-tipo="martian-manhunter">Martian Manhunter</button>
         </div>
         <div class="grilla-biblioteca" id="grilla-absolute-dc"></div>
     </section>
 
-    <!-- COLECCIÓN: CAMINO DEL HÉROE (DC ARGENTINA) -->
+    <!-- COLECCIÓN: CAMINO DEL HÉROE (DC ARGENTINA) — hub con dos cartillas -->
     <section id="seccion-dc-argentina-camino-heroe" class="oculto">
         <button class="btn-volver" id="btn-volver-dc-argentina-camino-heroe">← Volver a DC Argentina</button>
         <h2>Camino del Héroe (DC Argentina)</h2>
-        <p style="font-size:12px; color:#aaa; margin-bottom:12px;">Cruza Absolute y Renacimiento: todo lo que sale de un mismo personaje, sin importar la serie.</p>
-        <div class="filtros-seccion">
-            <button class="btn-filtro-dc-camino activo" data-tipo="batman">Batman</button>
-            <button class="btn-filtro-dc-camino" data-tipo="superman">Superman</button>
-            <button class="btn-filtro-dc-camino" data-tipo="flash">Flash</button>
-            <button class="btn-filtro-dc-camino" data-tipo="wonder-woman">Wonder Woman</button>
-            <button class="btn-filtro-dc-camino" data-tipo="liga">Liga de la Justicia</button>
-            <button class="btn-filtro-dc-camino" data-tipo="harley-quinn">Harley Quinn</button>
-            <button class="btn-filtro-dc-camino" data-tipo="escuadron-suicida">Escuadrón Suicida</button>
-            <button class="btn-filtro-dc-camino" data-tipo="superhijos">Superhijos</button>
-            <button class="btn-filtro-dc-camino" data-tipo="green-lantern">Green Lantern</button>
-            <button class="btn-filtro-dc-camino" data-tipo="martian-manhunter">Martian Manhunter</button>
-            <button class="btn-filtro-dc-camino" data-tipo="dr-manhattan">Dr. Manhattan</button>
-        </div>
+        <p style="font-size:12px; color:#aaa; margin-bottom:12px;">Elegí la continuidad para ver el camino de cada personaje.</p>
         <div class="grilla-biblioteca" id="grilla-dc-argentina-camino-heroe"></div>
+    </section>
+
+    <!-- CAMINO DEL HÉROE: CONTINUIDAD PRINCIPAL (Renacimiento y lo que sigue) -->
+    <section id="seccion-camino-heroe-principal" class="oculto">
+        <button class="btn-volver" id="btn-volver-camino-heroe-principal">← Volver a Camino del Héroe</button>
+        <h2>Continuidad Principal</h2>
+        <p style="font-size:12px; color:#aaa; margin-bottom:12px;">Cruza Renacimiento (y futuras eras de la continuidad principal) por personaje. Incluye a cada héroe también en sus apariciones de equipo.</p>
+        <div class="filtros-seccion">
+            <button class="btn-filtro-camino-principal activo" data-tipo="batman">Batman</button>
+            <button class="btn-filtro-camino-principal" data-tipo="superman">Superman</button>
+            <button class="btn-filtro-camino-principal" data-tipo="flash">Flash</button>
+            <button class="btn-filtro-camino-principal" data-tipo="wonder-woman">Wonder Woman</button>
+            <button class="btn-filtro-camino-principal" data-tipo="aquaman">Aquaman</button>
+            <button class="btn-filtro-camino-principal" data-tipo="animal-man">Animal Man</button>
+            <button class="btn-filtro-camino-principal" data-tipo="cyborg">Cyborg</button>
+            <button class="btn-filtro-camino-principal" data-tipo="green-lantern-simon-baz">Green Lantern (Simon Baz)</button>
+            <button class="btn-filtro-camino-principal" data-tipo="green-lantern-jessica-cruz">Green Lantern (Jessica Cruz)</button>
+            <button class="btn-filtro-camino-principal" data-tipo="green-lantern-hal-jordan">Green Lantern (Hal Jordan)</button>
+            <button class="btn-filtro-camino-principal" data-tipo="harley-quinn">Harley Quinn</button>
+            <button class="btn-filtro-camino-principal" data-tipo="escuadron-suicida">Escuadrón Suicida</button>
+            <button class="btn-filtro-camino-principal" data-tipo="superhijos">Superhijos</button>
+            <button class="btn-filtro-camino-principal" data-tipo="dr-manhattan">Dr. Manhattan</button>
+        </div>
+        <div class="grilla-biblioteca" id="grilla-camino-heroe-principal"></div>
+    </section>
+
+    <!-- CAMINO DEL HÉROE: ELSEWORLDS (Absolute y lo que sigue) -->
+    <section id="seccion-camino-heroe-elseworlds" class="oculto">
+        <button class="btn-volver" id="btn-volver-camino-heroe-elseworlds">← Volver a Camino del Héroe</button>
+        <h2>Elseworlds</h2>
+        <p style="font-size:12px; color:#aaa; margin-bottom:12px;">Universos alternativos fuera de la continuidad principal: Absolute y lo que sumemos después (Black Label, Earth One, etc.).</p>
+        <div class="filtros-seccion">
+            <button class="btn-filtro-camino-elseworlds activo" data-tipo="batman">Batman</button>
+            <button class="btn-filtro-camino-elseworlds" data-tipo="superman">Superman</button>
+            <button class="btn-filtro-camino-elseworlds" data-tipo="flash">Flash</button>
+            <button class="btn-filtro-camino-elseworlds" data-tipo="wonder-woman">Wonder Woman</button>
+            <button class="btn-filtro-camino-elseworlds" data-tipo="green-lantern-hal-jordan">Green Lantern (Hal Jordan)</button>
+            <button class="btn-filtro-camino-elseworlds" data-tipo="green-lantern-simon-baz">Green Lantern (Simon Baz)</button>
+            <button class="btn-filtro-camino-elseworlds" data-tipo="green-lantern-jessica-cruz">Green Lantern (Jessica Cruz)</button>
+            <button class="btn-filtro-camino-elseworlds" data-tipo="martian-manhunter">Martian Manhunter</button>
+        </div>
+        <div class="grilla-biblioteca" id="grilla-camino-heroe-elseworlds"></div>
+    </section>
+
+    <!-- COLECCIÓN: CAMINO DEL VILLANO (DC ARGENTINA) — hub con dos cartillas -->
+    <section id="seccion-dc-argentina-camino-villano" class="oculto">
+        <button class="btn-volver" id="btn-volver-dc-argentina-camino-villano">← Volver a DC Argentina</button>
+        <h2>Camino del Villano (DC Argentina)</h2>
+        <p style="font-size:12px; color:#aaa; margin-bottom:12px;">Elegí la continuidad para ver el camino de cada villano.</p>
+        <div class="grilla-biblioteca" id="grilla-dc-argentina-camino-villano"></div>
+    </section>
+
+    <!-- CAMINO DEL VILLANO: CONTINUIDAD PRINCIPAL -->
+    <section id="seccion-camino-villano-principal" class="oculto">
+        <button class="btn-volver" id="btn-volver-camino-villano-principal">← Volver a Camino del Villano</button>
+        <h2>Continuidad Principal</h2>
+        <div class="filtros-seccion">
+            <button class="btn-filtro-villano-principal activo" data-tipo="joker">Joker</button>
+            <button class="btn-filtro-villano-principal" data-tipo="bane">Bane</button>
+            <button class="btn-filtro-villano-principal" data-tipo="ras-al-ghul">Ra's Al Ghul</button>
+            <button class="btn-filtro-villano-principal" data-tipo="penguin">Pingüino</button>
+            <button class="btn-filtro-villano-principal" data-tipo="riddler">Riddler</button>
+            <button class="btn-filtro-villano-principal" data-tipo="clayface">Clayface</button>
+            <button class="btn-filtro-villano-principal" data-tipo="anarky">Anarky</button>
+            <button class="btn-filtro-villano-principal" data-tipo="mr-zsasz">Mr. Zsasz</button>
+            <button class="btn-filtro-villano-principal" data-tipo="amanda-waller">Amanda Waller</button>
+            <button class="btn-filtro-villano-principal" data-tipo="dr-manhattan">Dr. Manhattan</button>
+            <button class="btn-filtro-villano-principal" data-tipo="lex-luthor">Lex Luthor</button>
+            <button class="btn-filtro-villano-principal" data-tipo="sinestro">Sinestro</button>
+            <button class="btn-filtro-villano-principal" data-tipo="darkseid">Darkseid</button>
+            <button class="btn-filtro-villano-principal" data-tipo="eobard-thawne">Flash Reverso</button>
+            <button class="btn-filtro-villano-principal" data-tipo="black-manta">Black Manta</button>
+        </div>
+        <div class="grilla-biblioteca" id="grilla-camino-villano-principal"></div>
+    </section>
+
+    <!-- CAMINO DEL VILLANO: ELSEWORLDS -->
+    <section id="seccion-camino-villano-elseworlds" class="oculto">
+        <button class="btn-volver" id="btn-volver-camino-villano-elseworlds">← Volver a Camino del Villano</button>
+        <h2>Elseworlds</h2>
+        <div class="filtros-seccion">
+            <button class="btn-filtro-villano-elseworlds activo" data-tipo="joker">Joker</button>
+            <button class="btn-filtro-villano-elseworlds" data-tipo="bane">Bane</button>
+            <button class="btn-filtro-villano-elseworlds" data-tipo="ras-al-ghul">Ra's Al Ghul</button>
+            <button class="btn-filtro-villano-elseworlds" data-tipo="lex-luthor">Lex Luthor</button>
+            <button class="btn-filtro-villano-elseworlds" data-tipo="sinestro">Sinestro</button>
+            <button class="btn-filtro-villano-elseworlds" data-tipo="darkseid">Darkseid</button>
+        </div>
+        <div class="grilla-biblioteca" id="grilla-camino-villano-elseworlds"></div>
     </section>
 
     <!-- COLECCIÓN: RENACIMIENTO (DC ARGENTINA) -->

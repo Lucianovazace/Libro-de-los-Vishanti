@@ -76,7 +76,7 @@ h1 {
     flex-wrap: wrap;
 }
 
-.btn-nav, .btn-categoria, .btn-subcategoria, .btn-filtro, .btn-filtro-arrowverse, .btn-filtro-dcu, .btn-filtro-dcmultiverso, .btn-filtro-it, .btn-filtro-got, .btn-filtro-mcu, .btn-filtro-ac, .btn-filtro-biblioteca, .btn-filtro-disney, .btn-filtro-oscar, .btn-filtro-dicaprio, .btn-filtro-gosling, .btn-filtro-ff, .btn-filtro-sweeney, .btn-filtro-holland, .btn-filtro-pokemon, .btn-filtro-keoghan, .btn-filtro-matrix, .btn-filtro-pixar, .btn-filtro-pitt, .btn-filtro-pugh, .btn-filtro-stone, .btn-filtro-ortega, .btn-filtro-robbie, .btn-filtro-garfield, .btn-filtro-hitchcock, .btn-filtro-tombraider, .btn-filtro-fincher, .btn-filtro-gl-hal, .btn-filtro-nuevos52 {
+.btn-nav, .btn-categoria, .btn-subcategoria, [class*="btn-filtro"] {
     background-color: #2a2d35;
     color: white;
     border: none;
@@ -84,7 +84,12 @@ h1 {
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-    transition: 0.3s;
+    font-size: 13px;
+    transition: 0.2s;
+}
+
+[class*="btn-filtro"]:hover {
+    background-color: #3a3d47;
 }
 
 .btn-nav:hover, .btn-categoria:hover, .btn-subcategoria:hover {
@@ -161,7 +166,7 @@ h2 {
     flex-wrap: wrap;
 }
 
-.btn-filtro.activo, .btn-filtro-arrowverse.activo, .btn-filtro-dcu.activo, .btn-filtro-dcmultiverso.activo, .btn-filtro-it.activo, .btn-filtro-got.activo, .btn-filtro-mcu.activo, .btn-filtro-ac.activo, .btn-filtro-biblioteca.activo, .btn-filtro-disney.activo, .btn-filtro-oscar.activo, .btn-filtro-dicaprio.activo, .btn-filtro-gosling.activo, .btn-filtro-ff.activo, .btn-filtro-sweeney.activo, .btn-filtro-holland.activo, .btn-filtro-pokemon.activo, .btn-filtro-keoghan.activo, .btn-filtro-matrix.activo, .btn-filtro-pixar.activo, .btn-filtro-pitt.activo, .btn-filtro-pugh.activo, .btn-filtro-stone.activo, .btn-filtro-ortega.activo, .btn-filtro-robbie.activo, .btn-filtro-garfield.activo, .btn-filtro-hitchcock.activo, .btn-filtro-tombraider.activo, .btn-filtro-fincher.activo, .btn-filtro-gl-hal.activo, .btn-filtro-nuevos52.activo {
+[class*="btn-filtro"].activo {
     background-color: var(--accent-color) !important;
     color: #fff !important;
 }
@@ -533,9 +538,7 @@ h2 {
         gap: 6px;
     }
 
-    .btn-nav, .btn-categoria, .btn-subcategoria,
-    .btn-filtro, .btn-filtro-arrowverse, .btn-filtro-dcu,
-    .btn-filtro-dcmultiverso, .btn-filtro-it, .btn-filtro-got, .btn-filtro-mcu, .btn-filtro-ac, .btn-filtro-biblioteca, .btn-filtro-disney {
+    .btn-nav, .btn-categoria, .btn-subcategoria, [class*="btn-filtro"] {
         font-size: 12px;
         padding: 7px 10px;
     }
