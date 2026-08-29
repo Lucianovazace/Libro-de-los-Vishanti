@@ -3464,6 +3464,8 @@ function renderizarContenido() {
         "david-fincher": "seccion-david-fincher",
         "green-lantern-hal-jordan": "seccion-green-lantern-hal-jordan",
         "nuevos-52-orden-lectura": "seccion-nuevos-52-orden-lectura",
+        "absolute-dc": "seccion-absolute-dc",
+        "renacimiento-dc": "seccion-renacimiento-dc",
         "tomb-raider": "seccion-tomb-raider",
         "oscar-2021": "seccion-oscar-2021",
         "oscar-2022": "seccion-oscar-2022",
