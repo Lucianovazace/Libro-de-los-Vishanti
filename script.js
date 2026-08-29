@@ -1182,79 +1182,79 @@ const listaMedia = [
     { titulo: "Worlds' Finest (#13-18)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://static.dc.com/dc/files/default_images/worldsfinest_9_5b2a8830a233a4.99954068.jpg" },
 
     // --- ABSOLUTE (DC) ---
-    { titulo: "Absolute Batman Vol.1", categoria: "absolute-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_batman_cov_-ebfab072bc8f36fd1d17526095371796-1024-1024.webp" },
-    { titulo: "Absolute Wonder Woman Vol. 1", categoria: "absolute-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_wonder_woman_cov_jpg-1c23aad53ac6bc9d9317656506275518-640-0.webp" },
-    { titulo: "Absolute Superman Vol. 1", categoria: "absolute-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_superman_cov-262d809b3bd2c0eda717516349783514-1024-1024.webp" },
-    { titulo: "Absolute Flash Vol. 1", categoria: "absolute-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_flash_cov-a2b471d0bbb411084a17630683922940-640-0.webp" },
-    { titulo: "Absolute Martian Manhunter Vol. 1", categoria: "absolute-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_martian_manhunter_cov-c5b674c457c19f7a6717669292553724-640-0.webp" },
-    { titulo: "Absolute Green Lantern Vol. 1", categoria: "absolute-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_green_lantern_vol_1_cov-d3df472c0b8d7d8c9817776555416834-640-0.webp" },
-    { titulo: "Absolute Batman Vol. 2", categoria: "absolute-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_batman_vol_2_cov-81ca4615dc1a9b636917715399029299-1024-1024.webp" },
-    { titulo: "Absolute Wonder Woman Vol.2", categoria: "absolute-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_wonder_woman_2_cov-8e32be630c3961de3117724571919123-1024-1024.webp" },
-    { titulo: "Absolute Superman Vol. 2", categoria: "absolute-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_superman_vol_2_cov-1e080232d9e14656ac17758462622240-1024-1024.webp" },
-    { titulo: "Absolute Martian Manhunter Vol. 2", categoria: "absolute-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_martian_manhunter_vol_2_cov-c8a61ab0bac1b865f017873357025130-1024-1024.webp" },
-    { titulo: "Absolute Flash Vol. 2", categoria: "absolute-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_flash_2_cov-68dc15eef101c750c217809431890213-1024-1024.webp" },
-    { titulo: "Absolute Batman Vol. 3", categoria: "absolute-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_batman_vol_3_cov-70e9a0d2f0d3db749d17824805883620-1024-1024.webp" },
+    { titulo: "Absolute Batman Vol.1", categoria: "absolute-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_batman_cov_-ebfab072bc8f36fd1d17526095371796-1024-1024.webp" },
+    { titulo: "Absolute Wonder Woman Vol. 1", categoria: "absolute-dc", subtipo: "wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_wonder_woman_cov_jpg-1c23aad53ac6bc9d9317656506275518-640-0.webp" },
+    { titulo: "Absolute Superman Vol. 1", categoria: "absolute-dc", subtipo: "superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_superman_cov-262d809b3bd2c0eda717516349783514-1024-1024.webp" },
+    { titulo: "Absolute Flash Vol. 1", categoria: "absolute-dc", subtipo: "flash", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_flash_cov-a2b471d0bbb411084a17630683922940-640-0.webp" },
+    { titulo: "Absolute Martian Manhunter Vol. 1", categoria: "absolute-dc", subtipo: "martian-manhunter", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_martian_manhunter_cov-c5b674c457c19f7a6717669292553724-640-0.webp" },
+    { titulo: "Absolute Green Lantern Vol. 1", categoria: "absolute-dc", subtipo: "green-lantern", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_green_lantern_vol_1_cov-d3df472c0b8d7d8c9817776555416834-640-0.webp" },
+    { titulo: "Absolute Batman Vol. 2", categoria: "absolute-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_batman_vol_2_cov-81ca4615dc1a9b636917715399029299-1024-1024.webp" },
+    { titulo: "Absolute Wonder Woman Vol.2", categoria: "absolute-dc", subtipo: "wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_wonder_woman_2_cov-8e32be630c3961de3117724571919123-1024-1024.webp" },
+    { titulo: "Absolute Superman Vol. 2", categoria: "absolute-dc", subtipo: "superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_superman_vol_2_cov-1e080232d9e14656ac17758462622240-1024-1024.webp" },
+    { titulo: "Absolute Martian Manhunter Vol. 2", categoria: "absolute-dc", subtipo: "martian-manhunter", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_martian_manhunter_vol_2_cov-c8a61ab0bac1b865f017873357025130-1024-1024.webp" },
+    { titulo: "Absolute Flash Vol. 2", categoria: "absolute-dc", subtipo: "flash", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_flash_2_cov-68dc15eef101c750c217809431890213-1024-1024.webp" },
+    { titulo: "Absolute Batman Vol. 3", categoria: "absolute-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_batman_vol_3_cov-70e9a0d2f0d3db749d17824805883620-1024-1024.webp" },
 
     // --- RENACIMIENTO (DC Argentina) ---
-    { titulo: "Superman: Lois & Clark — La Llegada", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_lois__clark_cov_arg1-887fa05632c017439c15953344471109-640-0.webp" },
-    { titulo: "Los Últimos Días de Superman", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/last_days_of_superman_cov_arg1-cbf1c701713e4e584915953441617103-1024-1024.webp" },
-    { titulo: "Universo DC Renacimiento", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/dc_rebirth_cov_arg_var1-e50af0cf8063fa961315954507956862-640-0.webp" },
-    { titulo: "Batman Vol. 1: Yo Soy Gotham", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vol_01_cov_arg1-fa7c5ab99dc5a1a5c215952931975077-640-0.webp" },
-    { titulo: "Detective Comics Vol. 1: La Ascensión de Los Hombres Murciélago", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/detective_comics_vol_01_cov_arg1-7aa3d0c5ab3ffcf49615952937595959-1024-1024.webp" },
-    { titulo: "Trinidad Vol. 1: Mejor Juntos", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/trinity_vol_01_cov_arg1-9a9fb1e090f508820f15952953795355-640-0.webp" },
-    { titulo: "Superman Vol. 1: Hijo de Superman", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_vol_01_cov_arg1-27987f7067224c21fb15952951319356-640-0.webp" },
-    { titulo: "Action Comics Vol. 1: Sendero de la Perdición", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_887044-MLU77961783640_082024-O.webp" },
-    { titulo: "Liga de la Justicia Vol. 1: Las Máquinas de la Extinción", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/justice_league_vol_01_cov_arg1-0011a9d12c435da3d215952948711524-1024-1024.webp" },
-    { titulo: "Flash Vol. 1: El Relámpago Cae Dos Veces", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flash_vol_01_cov_arg1-0b6210aa8ebe79480315952940515737-640-0.webp" },
-    { titulo: "Harley Quinn Vol. 1: Morir Riendo", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/harley_quinn_vol_01_cov_arg1-e81a172ea14a0f62ca15952945683425-640-0.webp" },
-    { titulo: "All Star Batman Vol. 1: Yo, Mi Peor Enemigo", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/all_star_batman_01_cov_arg1-5f139fd501888db24e16075508570607-1024-1024.webp" },
-    { titulo: "Batman: La Noche de los Hombres Monstruo", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_night_of_the_monster_men_cov_arg1-e3112d00e5d35b0d2315952936717208-1024-1024.webp" },
-    { titulo: "Action Comics Vol. 2: Bienvenido al Planeta", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/action_comics_vol_02_cov_arg1-5b92bad098fd1c370115952925271170-1024-1024.webp" },
-    { titulo: "Superman Vol. 2: Las Pruebas del Superhijo", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_vol_02_cov_arg1-14390a772e82786b7a15952952098443-1024-1024.webp" },
-    { titulo: "Escuadrón Suicida Vol. 1: La Cámara Negra", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/suicide_squad_vol_01_cov_arg1-2f0f54415aded1ea9415952939549242-1024-1024.webp" },
-    { titulo: "Batman Vol. 2: Yo Soy Suicida", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vol_02_cov_arg1-4dccd9624ff1f1834415952932697950-1024-1024.webp" },
-    { titulo: "Liga de la Justicia Contra El Escuadrón Suicida", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/justice_league_vs_suicide_squad_cov_arg1-2754a6b61b4a6ec17e15952947289683-640-0.webp" },
-    { titulo: "Detective Comics Vol. 2: El Sindicato de las Víctimas", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/detective_comics_vol_02_cov_arg1-dbf4f5137f7fa76c0c15952938628174-1024-1024.webp" },
-    { titulo: "Liga de la Justicia Vol. 2: Estallido", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/justice_league_vol_02_cov_arg1-757289e0e831cb7f7915952949436912-640-0.webp" },
-    { titulo: "Flash Vol. 2: La Velocidad de La Oscuridad", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flash_vol_02_cov_arg1-c128d72136e6faa12f15952941275724-1024-1024.webp" },
-    { titulo: "Harley Quinn Vol. 2: El Joker Ama a Harley", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/harley_quinn_vol_02_cov_arg1-cd45df91c1cbc1874915952946441367-1024-1024.webp" },
-    { titulo: "Batman Vol. 3: Yo Soy Bane", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batmanvol031-07a353ded3be99c52c15908768340469-1024-1024.webp" },
-    { titulo: "Action Comics Vol. 3: Hombres de Acero", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/action_comics_vol_03_cov_arg1-db7681c705f1cb402715952926876922-640-0.webp" },
-    { titulo: "Detective Comics Vol. 3: La Liga de Las Sombras", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/detedtivecomicsvol031-fe8f0889168a8937e915908693968364-1024-1024.webp" },
-    { titulo: "All Star Batman Vol. 2: Los Confines de la Tierra", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/all_star_batman_02_cov_arg1-5f55762324808d556715952929530642-1024-1024.webp" },
-    { titulo: "Flash Vol. 3: Vuelven Los Villanos", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flashvol031-84dc6e1faaf30bbe0115908695935172-1024-1024.webp" },
-    { titulo: "Superman Vol. 3: Renacido", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_704894-MLA105761438885_012026-O.webp" },
-    { titulo: "Batman / Flash: El Prendedor", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/el_prendedor_cov_arg1-5ce8d606c37dab610915908781649542-1024-1024.webp" },
-    { titulo: "Action Comics Vol. 4: El Nuevo Mundo", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/action_comics_vol_4_cov1-28d439ac6e8747ac8a15890329661877-1024-1024.webp" },
-    { titulo: "Superman Vol. 4: Amanecer Negro", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/supermanvolamanecernegro1-8606da905de28e58d315908682240299-1024-1024.webp" },
-    { titulo: "Superhijos Vol. 1: Cuando Sea Mayor", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superhijos_vol_01_cov_arg1-5113e243c407775b1e15952950372346-640-0.webp" },
-    { titulo: "Flash Vol. 4: Corriendo Aterrado", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flashvol041-777c6964b74c9b3cec15908696641721-640-0.webp" },
-    { titulo: "Batman Vol. 4: La Guerra de Las Bromas y Los Acertijos", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batmanvol041-425ea09c9ce6cd032715908769340423-640-0.webp" },
-    { titulo: "Detective Comics Vol. 4: Deus Ex Machina", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/detectivecomicsvol041-ce2f577de41456800115908694856836-640-0.webp" },
-    { titulo: "All Star Batman Vol. 3: El Primer Aliado", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/all_star_batman_03_cov_arg1-dea9d6b38b0847d3f915952930856156-640-0.webp" },
-    { titulo: "Liga de la Justicia Vol. 3: Intemporales", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/laligadelajusticiavol031-fb0338db9f5e2b2f6515908691150457-1024-1024.webp" },
-    { titulo: "Action Comics Vol. 5: El Efecto Oz", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/action_comics_vol_5_cov1-c7d9e379836be611cc16328696499933-640-0.webp" },
-    { titulo: "Flash Vol. 5: Negativo", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flashvol05negativo1-cc1a8b8907bfd6d65f15908697444656-1024-1024.webp" },
-    { titulo: "Batman Vol. 5: Las Reglas del Compromiso", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batmanvol051-732c05e139369515e315908770031759-640-0.webp" },
-    { titulo: "Detective Comics Vol. 5: Un Lugar Solitario Para Vivir", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/detective_comics_vol_05_cov_arg1-d2de0acfcdfcecf27415974064544472-640-0.webp" },
-    { titulo: "Superman Vol. 5: Universo Bizarro", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_vol_05_cov_arg1-dd49239eee9388a50216329488792145-640-0.webp" },
-    { titulo: "Liga de la Justicia Vol. 4: Legado", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/ligadelajusticiavol041-651eec9eca26d2579315908692021526-640-0.webp" },
-    { titulo: "Flash Vol. 6: Un Día Frío en el Infierno", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flashvol061-6fe3abc86636b1898f15908698309154-640-0.webp" },
-    { titulo: "Batman Vol. 6: ¿Novia o Ladrona?", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batmanvol061-e7ba6eceb562bc268015908770965402-640-0.webp" },
-    { titulo: "Batman Vol. 7: La Boda", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_la_boda_cov1-4acd6ce5f7c651e4c115933744435615-640-0.webp" },
-    { titulo: "Detective Comics Vol. 6: Hombres Murciélagos Eternos", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_716264-MLA46450030754_062021-O.webp" },
-    { titulo: "Liga de la Justicia Vol. 5: Justicia Perdida", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/ligadelajusticiavol05justiciaperdida1-047b192b62df08b27e15908693104228-640-0.webp" },
-    { titulo: "Flash Vol. 7: La Guerra de Flash", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flash_vol_07_cov_arg1-3e920e993bef561e9016328688666223-1024-1024.webp" },
-    { titulo: "Batman Vol. 8: Días Fríos", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/326/487/products/9789877246353-aaf4aa4279c037042216450259152333-640-0.webp" },
-    { titulo: "Detective Comics Vol. 7: Mitología", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/detective_comics_vol_07_cov_arg-4642828d2ec5fd47cf16329518739245-640-0.webp" },
-    { titulo: "Flash Vol. 8: La Búsqueda de La Fuerza", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flash_vol_08_cov_arg1-fb081cddf0455a28d516064085767082-1024-1024.webp" },
-    { titulo: "Batman Vol. 9: Pesadillas", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vol_09_cov_arg1-b1828bb60428a2c34716328690822664-640-0.webp" },
-    { titulo: "Flash Vol. 9: El Reino de Los Renegados", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flash_vol_09_cov_arg1-68ad1c5f7e647c3ed016328686424443-1024-1024.webp" },
-    { titulo: "Batman Vol. 10: La Caída y Los Caídos", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vol_10_cov_arg1-6fd39f68d186572aa616328693116362-1024-1024.webp" },
-    { titulo: "Flash Vol. 10: La Era de Flash", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flash_vol_10_cov_arg1-67dc11019d71a8c93616328684478599-1024-1024.webp" },
-    { titulo: "Batman Vol. 11: Ciudad de Bane", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_766233-MLA44443800587_122020-O.webp" },
-    { titulo: "Doomsday Clock: Primera Parte", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/doomsday_clock_vol_01_cov_arg1-0dec0f9c563fc5a6bb16215517985773-640-0.webp" },
-    { titulo: "Doomsday Clock: Segunda Parte", categoria: "renacimiento-dc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/doomsdayclockvol021-1d5d82540814ccb66315908689620786-640-0.webp" },
+    { titulo: "Superman: Lois & Clark — La Llegada", categoria: "renacimiento-dc", subtipo: "superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_lois__clark_cov_arg1-887fa05632c017439c15953344471109-640-0.webp" },
+    { titulo: "Los Últimos Días de Superman", categoria: "renacimiento-dc", subtipo: "superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/last_days_of_superman_cov_arg1-cbf1c701713e4e584915953441617103-1024-1024.webp" },
+    { titulo: "Universo DC Renacimiento", categoria: "renacimiento-dc", subtipo: "flash,liga", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/dc_rebirth_cov_arg_var1-e50af0cf8063fa961315954507956862-640-0.webp" },
+    { titulo: "Batman Vol. 1: Yo Soy Gotham", categoria: "renacimiento-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vol_01_cov_arg1-fa7c5ab99dc5a1a5c215952931975077-640-0.webp" },
+    { titulo: "Detective Comics Vol. 1: La Ascensión de Los Hombres Murciélago", categoria: "renacimiento-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/detective_comics_vol_01_cov_arg1-7aa3d0c5ab3ffcf49615952937595959-1024-1024.webp" },
+    { titulo: "Trinidad Vol. 1: Mejor Juntos", categoria: "renacimiento-dc", subtipo: "batman,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/trinity_vol_01_cov_arg1-9a9fb1e090f508820f15952953795355-640-0.webp" },
+    { titulo: "Superman Vol. 1: Hijo de Superman", categoria: "renacimiento-dc", subtipo: "superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_vol_01_cov_arg1-27987f7067224c21fb15952951319356-640-0.webp" },
+    { titulo: "Action Comics Vol. 1: Sendero de la Perdición", categoria: "renacimiento-dc", subtipo: "superman", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_887044-MLU77961783640_082024-O.webp" },
+    { titulo: "Liga de la Justicia Vol. 1: Las Máquinas de la Extinción", categoria: "renacimiento-dc", subtipo: "liga", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/justice_league_vol_01_cov_arg1-0011a9d12c435da3d215952948711524-1024-1024.webp" },
+    { titulo: "Flash Vol. 1: El Relámpago Cae Dos Veces", categoria: "renacimiento-dc", subtipo: "flash", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flash_vol_01_cov_arg1-0b6210aa8ebe79480315952940515737-640-0.webp" },
+    { titulo: "Harley Quinn Vol. 1: Morir Riendo", categoria: "renacimiento-dc", subtipo: "harley-quinn", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/harley_quinn_vol_01_cov_arg1-e81a172ea14a0f62ca15952945683425-640-0.webp" },
+    { titulo: "All Star Batman Vol. 1: Yo, Mi Peor Enemigo", categoria: "renacimiento-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/all_star_batman_01_cov_arg1-5f139fd501888db24e16075508570607-1024-1024.webp" },
+    { titulo: "Batman: La Noche de los Hombres Monstruo", categoria: "renacimiento-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_night_of_the_monster_men_cov_arg1-e3112d00e5d35b0d2315952936717208-1024-1024.webp" },
+    { titulo: "Action Comics Vol. 2: Bienvenido al Planeta", categoria: "renacimiento-dc", subtipo: "superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/action_comics_vol_02_cov_arg1-5b92bad098fd1c370115952925271170-1024-1024.webp" },
+    { titulo: "Superman Vol. 2: Las Pruebas del Superhijo", categoria: "renacimiento-dc", subtipo: "superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_vol_02_cov_arg1-14390a772e82786b7a15952952098443-1024-1024.webp" },
+    { titulo: "Escuadrón Suicida Vol. 1: La Cámara Negra", categoria: "renacimiento-dc", subtipo: "escuadron-suicida,harley-quinn", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/suicide_squad_vol_01_cov_arg1-2f0f54415aded1ea9415952939549242-1024-1024.webp" },
+    { titulo: "Batman Vol. 2: Yo Soy Suicida", categoria: "renacimiento-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vol_02_cov_arg1-4dccd9624ff1f1834415952932697950-1024-1024.webp" },
+    { titulo: "Liga de la Justicia Contra El Escuadrón Suicida", categoria: "renacimiento-dc", subtipo: "escuadron-suicida,harley-quinn,liga", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/justice_league_vs_suicide_squad_cov_arg1-2754a6b61b4a6ec17e15952947289683-640-0.webp" },
+    { titulo: "Detective Comics Vol. 2: El Sindicato de las Víctimas", categoria: "renacimiento-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/detective_comics_vol_02_cov_arg1-dbf4f5137f7fa76c0c15952938628174-1024-1024.webp" },
+    { titulo: "Liga de la Justicia Vol. 2: Estallido", categoria: "renacimiento-dc", subtipo: "liga", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/justice_league_vol_02_cov_arg1-757289e0e831cb7f7915952949436912-640-0.webp" },
+    { titulo: "Flash Vol. 2: La Velocidad de La Oscuridad", categoria: "renacimiento-dc", subtipo: "flash", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flash_vol_02_cov_arg1-c128d72136e6faa12f15952941275724-1024-1024.webp" },
+    { titulo: "Harley Quinn Vol. 2: El Joker Ama a Harley", categoria: "renacimiento-dc", subtipo: "harley-quinn", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/harley_quinn_vol_02_cov_arg1-cd45df91c1cbc1874915952946441367-1024-1024.webp" },
+    { titulo: "Batman Vol. 3: Yo Soy Bane", categoria: "renacimiento-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batmanvol031-07a353ded3be99c52c15908768340469-1024-1024.webp" },
+    { titulo: "Action Comics Vol. 3: Hombres de Acero", categoria: "renacimiento-dc", subtipo: "superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/action_comics_vol_03_cov_arg1-db7681c705f1cb402715952926876922-640-0.webp" },
+    { titulo: "Detective Comics Vol. 3: La Liga de Las Sombras", categoria: "renacimiento-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/detedtivecomicsvol031-fe8f0889168a8937e915908693968364-1024-1024.webp" },
+    { titulo: "All Star Batman Vol. 2: Los Confines de la Tierra", categoria: "renacimiento-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/all_star_batman_02_cov_arg1-5f55762324808d556715952929530642-1024-1024.webp" },
+    { titulo: "Flash Vol. 3: Vuelven Los Villanos", categoria: "renacimiento-dc", subtipo: "flash", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flashvol031-84dc6e1faaf30bbe0115908695935172-1024-1024.webp" },
+    { titulo: "Superman Vol. 3: Renacido", categoria: "renacimiento-dc", subtipo: "superman", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_704894-MLA105761438885_012026-O.webp" },
+    { titulo: "Batman / Flash: El Prendedor", categoria: "renacimiento-dc", subtipo: "batman,flash", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/el_prendedor_cov_arg1-5ce8d606c37dab610915908781649542-1024-1024.webp" },
+    { titulo: "Action Comics Vol. 4: El Nuevo Mundo", categoria: "renacimiento-dc", subtipo: "superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/action_comics_vol_4_cov1-28d439ac6e8747ac8a15890329661877-1024-1024.webp" },
+    { titulo: "Superman Vol. 4: Amanecer Negro", categoria: "renacimiento-dc", subtipo: "superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/supermanvolamanecernegro1-8606da905de28e58d315908682240299-1024-1024.webp" },
+    { titulo: "Superhijos Vol. 1: Cuando Sea Mayor", categoria: "renacimiento-dc", subtipo: "batman,superhijos,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superhijos_vol_01_cov_arg1-5113e243c407775b1e15952950372346-640-0.webp" },
+    { titulo: "Flash Vol. 4: Corriendo Aterrado", categoria: "renacimiento-dc", subtipo: "flash", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flashvol041-777c6964b74c9b3cec15908696641721-640-0.webp" },
+    { titulo: "Batman Vol. 4: La Guerra de Las Bromas y Los Acertijos", categoria: "renacimiento-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batmanvol041-425ea09c9ce6cd032715908769340423-640-0.webp" },
+    { titulo: "Detective Comics Vol. 4: Deus Ex Machina", categoria: "renacimiento-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/detectivecomicsvol041-ce2f577de41456800115908694856836-640-0.webp" },
+    { titulo: "All Star Batman Vol. 3: El Primer Aliado", categoria: "renacimiento-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/all_star_batman_03_cov_arg1-dea9d6b38b0847d3f915952930856156-640-0.webp" },
+    { titulo: "Liga de la Justicia Vol. 3: Intemporales", categoria: "renacimiento-dc", subtipo: "liga", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/laligadelajusticiavol031-fb0338db9f5e2b2f6515908691150457-1024-1024.webp" },
+    { titulo: "Action Comics Vol. 5: El Efecto Oz", categoria: "renacimiento-dc", subtipo: "superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/action_comics_vol_5_cov1-c7d9e379836be611cc16328696499933-640-0.webp" },
+    { titulo: "Flash Vol. 5: Negativo", categoria: "renacimiento-dc", subtipo: "flash", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flashvol05negativo1-cc1a8b8907bfd6d65f15908697444656-1024-1024.webp" },
+    { titulo: "Batman Vol. 5: Las Reglas del Compromiso", categoria: "renacimiento-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batmanvol051-732c05e139369515e315908770031759-640-0.webp" },
+    { titulo: "Detective Comics Vol. 5: Un Lugar Solitario Para Vivir", categoria: "renacimiento-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/detective_comics_vol_05_cov_arg1-d2de0acfcdfcecf27415974064544472-640-0.webp" },
+    { titulo: "Superman Vol. 5: Universo Bizarro", categoria: "renacimiento-dc", subtipo: "superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_vol_05_cov_arg1-dd49239eee9388a50216329488792145-640-0.webp" },
+    { titulo: "Liga de la Justicia Vol. 4: Legado", categoria: "renacimiento-dc", subtipo: "liga", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/ligadelajusticiavol041-651eec9eca26d2579315908692021526-640-0.webp" },
+    { titulo: "Flash Vol. 6: Un Día Frío en el Infierno", categoria: "renacimiento-dc", subtipo: "flash", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flashvol061-6fe3abc86636b1898f15908698309154-640-0.webp" },
+    { titulo: "Batman Vol. 6: ¿Novia o Ladrona?", categoria: "renacimiento-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batmanvol061-e7ba6eceb562bc268015908770965402-640-0.webp" },
+    { titulo: "Batman Vol. 7: La Boda", categoria: "renacimiento-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_la_boda_cov1-4acd6ce5f7c651e4c115933744435615-640-0.webp" },
+    { titulo: "Detective Comics Vol. 6: Hombres Murciélagos Eternos", categoria: "renacimiento-dc", subtipo: "batman", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_716264-MLA46450030754_062021-O.webp" },
+    { titulo: "Liga de la Justicia Vol. 5: Justicia Perdida", categoria: "renacimiento-dc", subtipo: "liga", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/ligadelajusticiavol05justiciaperdida1-047b192b62df08b27e15908693104228-640-0.webp" },
+    { titulo: "Flash Vol. 7: La Guerra de Flash", categoria: "renacimiento-dc", subtipo: "flash", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flash_vol_07_cov_arg1-3e920e993bef561e9016328688666223-1024-1024.webp" },
+    { titulo: "Batman Vol. 8: Días Fríos", categoria: "renacimiento-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/326/487/products/9789877246353-aaf4aa4279c037042216450259152333-640-0.webp" },
+    { titulo: "Detective Comics Vol. 7: Mitología", categoria: "renacimiento-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/detective_comics_vol_07_cov_arg-4642828d2ec5fd47cf16329518739245-640-0.webp" },
+    { titulo: "Flash Vol. 8: La Búsqueda de La Fuerza", categoria: "renacimiento-dc", subtipo: "flash", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flash_vol_08_cov_arg1-fb081cddf0455a28d516064085767082-1024-1024.webp" },
+    { titulo: "Batman Vol. 9: Pesadillas", categoria: "renacimiento-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vol_09_cov_arg1-b1828bb60428a2c34716328690822664-640-0.webp" },
+    { titulo: "Flash Vol. 9: El Reino de Los Renegados", categoria: "renacimiento-dc", subtipo: "flash", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flash_vol_09_cov_arg1-68ad1c5f7e647c3ed016328686424443-1024-1024.webp" },
+    { titulo: "Batman Vol. 10: La Caída y Los Caídos", categoria: "renacimiento-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vol_10_cov_arg1-6fd39f68d186572aa616328693116362-1024-1024.webp" },
+    { titulo: "Flash Vol. 10: La Era de Flash", categoria: "renacimiento-dc", subtipo: "flash", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flash_vol_10_cov_arg1-67dc11019d71a8c93616328684478599-1024-1024.webp" },
+    { titulo: "Batman Vol. 11: Ciudad de Bane", categoria: "renacimiento-dc", subtipo: "batman", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_766233-MLA44443800587_122020-O.webp" },
+    { titulo: "Doomsday Clock: Primera Parte", categoria: "renacimiento-dc", subtipo: "batman,dr-manhattan,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/doomsday_clock_vol_01_cov_arg1-0dec0f9c563fc5a6bb16215517985773-640-0.webp" },
+    { titulo: "Doomsday Clock: Segunda Parte", categoria: "renacimiento-dc", subtipo: "batman,dr-manhattan,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/doomsdayclockvol021-1d5d82540814ccb66315908689620786-640-0.webp" },
 ];
 
 // ==========================================
@@ -2578,6 +2578,15 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "dc-argentina-camino-heroe",
+        titulo: "Camino del Héroe",
+        categoria: "dc-argentina",
+        poster: "https://placehold.co/300x450?text=Camino+del+Heroe",
+        esContenedor: true,
+        etiqueta: "Cómic",
+        peliculas: []
+    },
+    {
         id: "green-lantern-hal-jordan",
         titulo: "Green Lantern - Hal Jordan",
         categoria: "dc-camino-heroe",
@@ -3364,6 +3373,7 @@ function abrirColeccion(colId) {
         'david-fincher': '.btn-filtro-fincher[data-tipo="2020"]',
         'green-lantern-hal-jordan': '.btn-filtro-gl-hal[data-tipo="origen"]',
         'nuevos-52-orden-lectura': '.btn-filtro-nuevos52[data-tipo="lanzamiento"]',
+        'dc-argentina-camino-heroe': '.btn-filtro-dc-camino[data-tipo="batman"]',
         'tomb-raider': '.btn-filtro-tombraider[data-tipo="survivor"]',
         'pokemon-canon': '.btn-filtro-pokemon[data-tipo="kanto-johto"]'
     };
@@ -3511,6 +3521,16 @@ function renderizarContenido() {
                 </div>
             `;
             contenedorDestino.insertAdjacentHTML('beforeend', htmlTarjeta);
+
+            // El Camino del Héroe (DC Argentina) es un cruce: no tiene
+            // items propios, muestra los mismos de Renacimiento y Absolute
+            // pero filtrables por personaje en vez de por serie.
+            if (item.categoria === "renacimiento-dc" || item.categoria === "absolute-dc") {
+                const grillaCamino = document.getElementById("grilla-dc-argentina-camino-heroe");
+                if (grillaCamino) {
+                    grillaCamino.insertAdjacentHTML('beforeend', htmlTarjeta);
+                }
+            }
         }
     });
 
@@ -5147,6 +5167,68 @@ botonesFiltroNuevos52.forEach(boton => {
 });
 
 // ==========================================
+// FILTROS "RENACIMIENTO" (DC ARGENTINA) — por personaje
+// ==========================================
+const botonesFiltroRenacimiento = document.querySelectorAll('.btn-filtro-renacimiento');
+botonesFiltroRenacimiento.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroRenacimiento.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const tipoElegido = this.getAttribute('data-tipo');
+        const tarjetas = document.querySelectorAll('#seccion-renacimiento-dc .tarjeta-media');
+
+        tarjetas.forEach(tarjeta => {
+            if (tipoElegido === 'todos') {
+                tarjeta.style.display = 'flex';
+                return;
+            }
+            const etiquetas = (tarjeta.getAttribute('data-subtipo') || '').split(',');
+            tarjeta.style.display = etiquetas.includes(tipoElegido) ? 'flex' : 'none';
+        });
+    });
+});
+
+// ==========================================
+// FILTROS "ABSOLUTE" (DC ARGENTINA) — por personaje
+// ==========================================
+const botonesFiltroAbsolute = document.querySelectorAll('.btn-filtro-absolute');
+botonesFiltroAbsolute.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroAbsolute.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const tipoElegido = this.getAttribute('data-tipo');
+        const tarjetas = document.querySelectorAll('#seccion-absolute-dc .tarjeta-media');
+
+        tarjetas.forEach(tarjeta => {
+            if (tipoElegido === 'todos') {
+                tarjeta.style.display = 'flex';
+                return;
+            }
+            const etiquetas = (tarjeta.getAttribute('data-subtipo') || '').split(',');
+            tarjeta.style.display = etiquetas.includes(tipoElegido) ? 'flex' : 'none';
+        });
+    });
+});
+
+// ==========================================
+// FILTROS "CAMINO DEL HÉROE" (DC ARGENTINA) — cruza Renacimiento + Absolute por personaje
+// ==========================================
+const botonesFiltroDcCamino = document.querySelectorAll('.btn-filtro-dc-camino');
+botonesFiltroDcCamino.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroDcCamino.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const tipoElegido = this.getAttribute('data-tipo');
+        const tarjetas = document.querySelectorAll('#seccion-dc-argentina-camino-heroe .tarjeta-media');
+
+        tarjetas.forEach(tarjeta => {
+            const etiquetas = (tarjeta.getAttribute('data-subtipo') || '').split(',');
+            tarjeta.style.display = etiquetas.includes(tipoElegido) ? 'flex' : 'none';
+        });
+    });
+});
+
+// ==========================================
 // FILTROS "TOMB RAIDER"
 // ==========================================
 const botonesFiltroTombRaider = document.querySelectorAll('.btn-filtro-tombraider');
@@ -6178,6 +6260,13 @@ if(btnVolverAbsoluteDc) {
 const btnVolverRenacimientoDc = document.getElementById('btn-volver-renacimiento-dc');
 if(btnVolverRenacimientoDc) {
     btnVolverRenacimientoDc.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dc-argentina'));
+    });
+}
+
+const btnVolverDcArgentinaCaminoHeroe = document.getElementById('btn-volver-dc-argentina-camino-heroe');
+if(btnVolverDcArgentinaCaminoHeroe) {
+    btnVolverDcArgentinaCaminoHeroe.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-dc-argentina'));
     });
 }
