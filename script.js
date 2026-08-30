@@ -1181,6 +1181,9 @@ const listaMedia = [
     { titulo: "Earth 2 (#17-20, Annual #2)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://static.wikia.nocookie.net/marvel_dc/images/4/49/Earth_2_Vol_1_17.jpg/revision/latest?cb=20131108182332" },
     { titulo: "Worlds' Finest (#13-18)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://static.dc.com/dc/files/default_images/worldsfinest_9_5b2a8830a233a4.99954068.jpg" },
 
+    // --- INFINITE FRONTIER / ACTUALIDAD (DC Argentina) ---
+    { titulo: "Batman: Abismo", categoria: "infinite-frontier-dc", subtipo: "batman,lex-luthor", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_abismo_cov_arg1-47eab233643c4c5cfe16893037408425-640-0.webp" },
+
     // --- POST-CRISIS / EDAD MODERNA: ORDEN DE LECTURA (Ovni Press) ---
     { titulo: "Animal Man de Grant Morrison Vol. 1", categoria: "post-crisis-dc", subtipo: "animal-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/animal_man_vol_01_cov_arg1-65d8d0e2917efd152e16154820963445-640-0.webp" },
     { titulo: "Animal Man de Grant Morrison Vol. 2", categoria: "post-crisis-dc", subtipo: "animal-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/animal-man-vol-2-cov-arg1-6c2d76bbb90e8f3c7116239493651603-640-0.webp" },
@@ -1209,6 +1212,15 @@ const listaMedia = [
     { titulo: "Batman y Los Outsiders #3: ¡La Verdad Sobre Halo!", categoria: "post-crisis-dc", subtipo: "batman,outsiders", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_805207-MLA91020970670_092025-O.webp" },
     { titulo: "Batman y Los Outsiders #4: ¡Galaxias de Guerras!", categoria: "post-crisis-dc", subtipo: "batman,outsiders", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_y_los_outsiders_vol_4_cov-63b9e181f36d8ced5817630685111419-1024-1024.webp" },
     { titulo: "Batman y Los Outsiders #5: La Renuncia del Caballero Oscuro", categoria: "post-crisis-dc", subtipo: "batman,outsiders", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_y_los_outsiders_vol_5_cov-12e103c480cbbe349c17776556503199-1024-1024.webp" },
+    { titulo: "Batman y Robin: Año Uno", categoria: "post-crisis-dc", subtipo: "batman,dick-grayson", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_y_robin_ano_uno_cov-61c0c774c65635afe117770533363007-640-0.webp" },
+    { titulo: "Batman: Año Uno", categoria: "post-crisis-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_a_c3_b1o_uno_3ra_cov-7d43be04a0c1e39ee917745538512217-640-0.webp" },
+    { titulo: "Batman: Año Dos", categoria: "post-crisis-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_ano_dos_cov_arg1-1af52ac45310c42c5d16772101790752-1024-1024.webp" },
+    { titulo: "Batman: Año Tres", categoria: "post-crisis-dc", subtipo: "batman,dick-grayson", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_ano_tres_cov-8bc9839c108672bc9c17093164316321-1024-1024.webp" },
+    { titulo: "Batman: Blanco y Negro Vol. 1", categoria: "post-crisis-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-blanco-y-negro-vol-11-8e1c349be1e11b4c1216300345691139-1024-1024.webp" },
+    { titulo: "Batman: Blanco y Negro Vol. 2", categoria: "post-crisis-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-blanco-y-negro-vol-2-cov1-e836066359817418c016384633303544-1024-1024.webp" },
+    { titulo: "Batman: Blanco y Negro Vol. 3", categoria: "post-crisis-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-blanco-y-negro-cov-vol-3-11-05f267022cdd0a118f16511604478304-1024-1024.webp" },
+    { titulo: "Batman: Blanco y Negro Vol. 4", categoria: "post-crisis-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_blanco_y_negro_cov_vol_41-7879d6bfd39fba365816560444504400-640-0.webp" },
+    { titulo: "Batman: Blanco y Negro Vol. 5", categoria: "post-crisis-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-blanco-y-negro-cov-vol-51-c6a8dcdf4216cba0f116312245596110-1024-1024.webp" },
     { titulo: "Batman de Grant Morrison Vol. 1: Batman e Hijo", categoria: "post-crisis-dc", subtipo: "batman,ras-al-ghul", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_e_hijo_cov-426ce7ca723e67b3fb17673629634909-1024-1024.webp" },
     { titulo: "Batman de Grant Morrison Vol. 2: La Resurrección de Ra's Al Ghul", categoria: "post-crisis-dc", subtipo: "batman,ras-al-ghul", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_morrison_2-d9db3d05365f64f75317724577444484-1024-1024.webp" },
     { titulo: "Batman Por Norm Breyfogle Vol. 1", categoria: "post-crisis-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_de_norm_breyfogle_vol_1_cov-34de9ff1fbb02d84db17543107324464-1024-1024.webp" },
@@ -1230,6 +1242,12 @@ const listaMedia = [
     // --- CROSSOVERS Y ELSEWORLDS (DC Argentina) ---
     { titulo: "Batman x Deadpool #1 (Crossover DC Marvel)", categoria: "elseworlds-otros-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_deadpool_1-713f1940acc054759317744583003786-640-0.webp" },
     { titulo: "Batman y El Joker: Dúo Mortal", categoria: "elseworlds-otros-dc", subtipo: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_y_el_joker_duo_mortal_cov-0656de0f0b2f40c4b516995676897474-640-0.webp" },
+    { titulo: "Batman/Catwoman", categoria: "elseworlds-otros-dc", subtipo: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_catwoman_cov_arg1-a29e5fe25e946ed0f016790240294191-1024-1024.webp" },
+    { titulo: "Batman/Juez Dredd: Juicio Sobre Gotham", categoria: "elseworlds-otros-dc", subtipo: "anarky,batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_juez_dreddcov-6d643a261bb773718117316981111474-1024-1024.webp" },
+    { titulo: "Batman/Spawn", categoria: "elseworlds-otros-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_spawn_deluxe_cov-6e253dfc6cf02c063517527892115016-640-0.webp" },
+    { titulo: "Batman/Tortugas Ninja Vol. 1", categoria: "elseworlds-otros-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_tmnt_cov-86da99168058469aae17159748754352-1024-1024.webp" },
+    { titulo: "Batman/Tortugas Ninja Vol. 2", categoria: "elseworlds-otros-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_tmnt_ii_cov-a33f0608e737889d1717220479701959-1024-1024.webp" },
+    { titulo: "Batman/Tortugas Ninja Vol. 3", categoria: "elseworlds-otros-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_tmnt_iii_cov-2128fe6dd7d35276b717304975288697-1024-1024.webp" },
 
     // --- ABSOLUTE (DC) ---
     { titulo: "Absolute Batman Vol.1", categoria: "absolute-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_batman_cov_-ebfab072bc8f36fd1d17526095371796-1024-1024.webp" },
@@ -2601,25 +2619,6 @@ const colecciones = [
         peliculas: []
     },
     {
-        id: "los-nuevos-52-dc-argentina",
-        titulo: "Los Nuevos 52",
-        categoria: "dc-argentina",
-        poster: "https://placehold.co/300x450?text=Los+Nuevos+52",
-        esContenedor: true,
-        etiqueta: "Cómic",
-        peliculas: []
-    },
-    {
-        id: "post-crisis-dc",
-        titulo: "Post-Crisis / Edad Moderna",
-        categoria: "dc-argentina",
-        poster: "https://placehold.co/300x450?text=Post-Crisis",
-        esContenedor: true,
-        etiqueta: "Cómic",
-        progresoCategoria: "post-crisis-dc",
-        peliculas: []
-    },
-    {
         id: "dc-argentina",
         titulo: "DC Argentina",
         categoria: "dc-orden-lectura",
@@ -2629,10 +2628,38 @@ const colecciones = [
         peliculas: []
     },
     {
-        id: "elseworlds-otros-dc",
-        titulo: "Crossovers y Elseworlds",
+        id: "post-crisis-dc",
+        titulo: "Post-Crisis / Edad Moderna",
         categoria: "dc-argentina",
-        poster: "https://placehold.co/300x450?text=Crossovers",
+        poster: "https://w0.peakpx.com/wallpaper/121/414/HD-wallpaper-dc-comics-super-heroes.jpg",
+        esContenedor: true,
+        etiqueta: "Cómic",
+        progresoCategoria: "post-crisis-dc",
+        peliculas: []
+    },
+    {
+        id: "los-nuevos-52-dc-argentina",
+        titulo: "Los Nuevos 52",
+        categoria: "dc-argentina",
+        poster: "https://w0.peakpx.com/wallpaper/856/559/HD-wallpaper-superman-new-52-comics-dc-hero-justice-league-man-of-steel-new-52-superman-thumbnail.jpg",
+        esContenedor: true,
+        etiqueta: "Cómic",
+        peliculas: []
+    },
+    {
+        id: "renacimiento-dc",
+        titulo: "Renacimiento",
+        categoria: "dc-argentina",
+        poster: "https://wallpaper.forfun.com/fetch/25/25d31e312860ed238f9fa563d89e0425.jpeg",
+        esContenedor: true,
+        etiqueta: "Cómic",
+        peliculas: []
+    },
+    {
+        id: "infinite-frontier-dc",
+        titulo: "Infinite Frontier / Actualidad",
+        categoria: "dc-argentina",
+        poster: "https://placehold.co/300x450?text=Infinite+Frontier",
         esContenedor: true,
         etiqueta: "Cómic",
         peliculas: []
@@ -2647,10 +2674,10 @@ const colecciones = [
         peliculas: []
     },
     {
-        id: "renacimiento-dc",
-        titulo: "Renacimiento",
+        id: "elseworlds-otros-dc",
+        titulo: "Crossovers y Elseworlds",
         categoria: "dc-argentina",
-        poster: "https://placehold.co/300x450?text=Renacimiento",
+        poster: "https://wallpapercave.com/wp/wp4036102.jpg",
         esContenedor: true,
         etiqueta: "Cómic",
         peliculas: []
@@ -2659,7 +2686,7 @@ const colecciones = [
         id: "dc-argentina-camino-heroe",
         titulo: "Camino del Héroe",
         categoria: "dc-argentina",
-        poster: "https://placehold.co/300x450?text=Camino+del+Heroe",
+        poster: "https://w0.peakpx.com/wallpaper/73/40/HD-wallpaper-superman-dc-hero-jim-lee.jpg",
         esContenedor: true,
         etiqueta: "Cómic",
         peliculas: []
@@ -2668,7 +2695,7 @@ const colecciones = [
         id: "dc-argentina-camino-villano",
         titulo: "Camino del Villano",
         categoria: "dc-argentina",
-        poster: "https://placehold.co/300x450?text=Camino+del+Villano",
+        poster: "https://w0.peakpx.com/wallpaper/77/233/HD-wallpaper-legion-of-doom-batman-dc-dc-comics-grodd-joker-lex-luthor-sinestro-villains.jpg",
         esContenedor: true,
         etiqueta: "Cómic",
         peliculas: []
@@ -3336,6 +3363,7 @@ function renderizarColecciones() {
         "dc-argentina-camino-heroe": "seccion-dc-argentina-camino-heroe",
         "dc-argentina-camino-villano": "seccion-dc-argentina-camino-villano",
         "post-crisis-dc": "seccion-post-crisis-dc",
+        "infinite-frontier-dc": "seccion-infinite-frontier-dc",
         "elseworlds-otros-dc": "seccion-elseworlds-otros-dc",
         "los-nuevos-52-dc-argentina": "seccion-los-nuevos-52-dc-argentina",
         "marvel-comics-hub": "seccion-marvel-comics-hub",
@@ -3606,6 +3634,7 @@ function renderizarContenido() {
         "green-lantern-hal-jordan": "seccion-green-lantern-hal-jordan",
         "nuevos-52-orden-lectura": "seccion-nuevos-52-orden-lectura",
         "post-crisis-dc": "seccion-post-crisis-dc",
+        "infinite-frontier-dc": "seccion-infinite-frontier-dc",
         "elseworlds-otros-dc": "seccion-elseworlds-otros-dc",
         "los-nuevos-52-dc-argentina": "seccion-los-nuevos-52-dc-argentina",
         "absolute-dc": "seccion-absolute-dc",
@@ -3660,7 +3689,7 @@ function renderizarContenido() {
             // muestra los mismos de cada continuidad, filtrables por personaje.
             // Continuidad principal: Renacimiento, Post-Crisis y lo que sigamos
             // agregando de la línea histórica. Elseworlds: Absolute y afines.
-            if (item.categoria === "renacimiento-dc" || item.categoria === "post-crisis-dc" || item.categoria === "los-nuevos-52-dc-argentina") {
+            if (item.categoria === "renacimiento-dc" || item.categoria === "post-crisis-dc" || item.categoria === "los-nuevos-52-dc-argentina" || item.categoria === "infinite-frontier-dc") {
                 const grillaPrincipal = document.getElementById("grilla-camino-heroe-principal");
                 if (grillaPrincipal) grillaPrincipal.insertAdjacentHTML('beforeend', htmlTarjeta);
 
@@ -6465,6 +6494,13 @@ if(btnVolverDcOrdenLectura) {
 const btnVolverPostCrisisDc = document.getElementById('btn-volver-post-crisis-dc');
 if(btnVolverPostCrisisDc) {
     btnVolverPostCrisisDc.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dc-argentina'));
+    });
+}
+
+const btnVolverInfiniteFrontierDc = document.getElementById('btn-volver-infinite-frontier-dc');
+if(btnVolverInfiniteFrontierDc) {
+    btnVolverInfiniteFrontierDc.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-dc-argentina'));
     });
 }
