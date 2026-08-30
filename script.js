@@ -989,7 +989,7 @@ const listaMedia = [
     { titulo: "Green Lantern: Temporada Dos (Ovni Press)", categoria: "green-lantern-hal-jordan", subtipo: "regreso-morrison", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/green_lantern_vol_02_cov1-b6c2a2d7bf4fe3677d16263181577273-480-0.webp" },
 
     // --- LOS NUEVOS 52: ORDEN DE LECTURA (filtro "Lanzamiento") ---
-    { titulo: "Batman de Scott Snyder Vol. 1: La Saga de Los Búhos", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-01-el-tribunal-de-los-buhos-cov-arg1-79ad7f69d4b63c7c7616209478666475-1024-1024.webp" },
+    { titulo: "Batman (#1-7)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_827032-MLA99414583894_112025-O.webp" },
     { titulo: "Nightwing (#1-7)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_898120-MLA76165301350_052024-O.webp" },
     { titulo: "Catwoman (#1-7)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://m.media-amazon.com/images/I/710KqiymzQL._AC_UF350,350_QL50_.jpg" },
     { titulo: "Detective Comics (#1-7)", categoria: "nuevos-52-orden-lectura", subtipo: "lanzamiento", tipo: "Cómic", poster: "https://images.cdn1.buscalibre.com/fit-in/660x660/c6/da/c6da160e8ea3ef233097b2314a768b53.jpg" },
@@ -1024,7 +1024,6 @@ const listaMedia = [
 
     // --- LOS NUEVOS 52: ORDEN DE LECTURA (filtro "Tanda 2") ---
     { titulo: "Batman (#8-12, Annual #1)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-2", tipo: "Cómic", poster: "https://images.cdn2.buscalibre.com/fit-in/360x360/ee/d9/eed99a79647288a8ec935ff880f07e72.jpg" },
-    { titulo: "Batman vs Robin", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-2", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vs_robin1-cb8bc14e49046ebd2316812693285754-640-0.webp" },
     { titulo: "Nightwing (#0, 8-12)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-2", tipo: "Cómic", poster: "https://comicsrus.com.au/cdn/shop/files/IMG_5159_0deda41d-475d-44f0-88c3-9ef776a73f1c_1024x1024.jpg?v=1710898341" },
     { titulo: "Catwoman (#8-12, #0)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-2", tipo: "Cómic", poster: "https://static.dc.com/dc/files/default_images/catwoman_v4_40_5b1706bcc08658.53640984.jpg?w=160" },
     { titulo: "Detective Comics (#8-12, #0, Annual #1)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-2", tipo: "Cómic", poster: "https://static.dc.com/dc/files/default_images/BM_DTCG_v5_DJ_54b4742d3bf831.61925973.jpg?w=160" },
@@ -1061,7 +1060,7 @@ const listaMedia = [
     { titulo: "Earth 2 (nueva, 2ª oleada) (#1-6)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-2", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0a/0c/c67bd67c68cb48978a27c7339631a5f7.jpg" },
 
     // --- LOS NUEVOS 52: ORDEN DE LECTURA (filtro "Tanda 3") ---
-    { titulo: "Batman de Scott Snyder Vol. 2: Muerte de La Familia", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-3", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-02-muerte-de-la-familia-cov-arg1-86eecca90561db8b7116263183152854-1024-1024.webp" },
+    { titulo: "Batman (#13-17)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-3", tipo: "Cómic", poster: "https://static.wikia.nocookie.net/marvel_dc/images/a/ad/Batman_Vol_2_13.jpg/revision/latest/scale-to-width/360?cb=20121011173033" },
     { titulo: "Nightwing (#13-18)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-3", tipo: "Cómic", poster: "https://www.southsidecomicspgh.com/cdn/shop/files/large-2756631.jpg?v=1718040284" },
     { titulo: "Catwoman (#0, 13-18)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-3", tipo: "Cómic", poster: "https://i1.whakoom.com/small/20/19/db11c266c55e4f869ec685125a2ecab2.jpg" },
     { titulo: "Detective Comics (#13-18)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-3", tipo: "Cómic", poster: "https://static.wikia.nocookie.net/marvel_dc/images/0/0d/Detective_Comics_Vol_2_13_Combo.jpg/revision/latest?cb=20121011192036" },
@@ -1099,7 +1098,7 @@ const listaMedia = [
     { titulo: "Worlds' Finest (nueva, 2ª oleada) (#0-5)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-3", tipo: "Cómic", poster: "https://static.wikia.nocookie.net/marvel_dc/images/a/a0/Worlds%27_Finest_Vol_1_0.jpg/revision/latest?cb=20120910205357" },
 
     // --- LOS NUEVOS 52: ORDEN DE LECTURA (filtro "Tanda 4") ---
-    { titulo: "Batman de Scott Snyder Vol. 3: Año Cero", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-4", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-03-ano-cero-cov-arg1-0496240b00c09b32ae16372534510955-1024-1024.webp" },
+    { titulo: "Batman (#0, #21-27, #29-33)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-4", tipo: "Cómic", poster: "https://m.media-amazon.com/images/I/81B+OfcCx1L._AC_UF1000,1000_QL80_.jpg" },
     { titulo: "Nightwing (#19-24)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-4", tipo: "Cómic", poster: "https://m.media-amazon.com/images/I/81-Cbncr1NL._AC_UF1000,1000_QL80_.jpg" },
     { titulo: "Catwoman (#19-24, #23.4)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-4", tipo: "Cómic", poster: "https://static.dc.com/dc/files/default_images/catwoman_vol3_deathfam_5b047c5c0677d1.77344225.jpg" },
     { titulo: "Detective Comics (#19-24)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-4", tipo: "Cómic", poster: "https://static.wikia.nocookie.net/marvel_dc/images/4/4b/Detective_Comics_Vol_2_21.jpg/revision/latest?cb=20130605183842" },
@@ -1153,9 +1152,6 @@ const listaMedia = [
     { titulo: "Batwoman (#25-34, Annual #1)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://static.dc.com/dc/files/default_images/batwoman_v2_27_5b172b05b514c1.30604370.jpg" },
     { titulo: "Harley Quinn (#14-16, Annual #1)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://i0.wp.com/ultimatecomics.com/wp-content/uploads/2021/02/Scan-217-4.jpg?fit=1958%2C3038&ssl=1" },
     { titulo: "Red Hood and the Outlaws (#27-31)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://static.wikia.nocookie.net/marvel_dc/images/6/65/Red_Hood_and_the_Outlaws_Vol_1_27.jpg/revision/latest/scale-to-width-down/1200?cb=20140123145936" },
-    { titulo: "Batman de Scott Snyder Vol. 4: Fin de Juego", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-04-fin-del-juego-cov-arg-11-60708f7d67f5ef261d16457506287439-1024-1024.webp" },
-    { titulo: "Batman de Scott Snyder Vol. 5: Superpesado", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_snyder_vol-5_cov1-8cacb929208f5284cf16607990767121-1024-1024.webp" },
-    { titulo: "Batman Inc.", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-3", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_inc_cov-ovni1-ff686204bad49f16b916944446297670-640-0.webp" },
     { titulo: "Batman Eternal (nueva, semanal) (#1-21)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://m.media-amazon.com/images/I/911kWbWDvZL._AC_UF1000,1000_QL80_.jpg" },
     { titulo: "Wonder Woman (#24-29, #23.2)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://m.media-amazon.com/images/I/81QenN0ZsOL._AC_UF1000,1000_QL80_.jpg" },
     { titulo: "Superman (#25-29)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1385665861i/19027840.jpg" },
@@ -1221,6 +1217,15 @@ const listaMedia = [
     { titulo: "Batman Por Norm Breyfogle Vol. 4", categoria: "post-crisis-dc", subtipo: "batman,ras-al-ghul", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_de_norm_breyfogle_vol_4_cov-99e22f5d161fcd13e117699522746163-640-0.webp" },
     { titulo: "Batman Por Norm Breyfogle Vol. 5", categoria: "post-crisis-dc", subtipo: "batman,joker,mr-zsasz,penguin", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_de_norm_breyfogle_vol_5_cov-c39a5a3a6138c4786717794627062229-640-0.webp" },
     { titulo: "Batman Por Norm Breyfogle Vol. 6", categoria: "post-crisis-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_de_norm_breyfogle_vol_6_cov-b2b8d5807c77119e1e17843165059176-640-0.webp" },
+
+    // --- LOS NUEVOS 52 (DC Argentina) — curada, conectada al Camino del Héroe/Villano ---
+    { titulo: "Batman de Scott Snyder Vol. 1: La Saga de Los Búhos", categoria: "los-nuevos-52-dc-argentina", personajes: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-01-el-tribunal-de-los-buhos-cov-arg1-79ad7f69d4b63c7c7616209478666475-1024-1024.webp" },
+    { titulo: "Batman vs Robin", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,ras-al-ghul", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vs_robin1-cb8bc14e49046ebd2316812693285754-640-0.webp" },
+    { titulo: "Batman Inc.", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,ras-al-ghul", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_inc_cov-ovni1-ff686204bad49f16b916944446297670-640-0.webp" },
+    { titulo: "Batman de Scott Snyder Vol. 2: Muerte de La Familia", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-02-muerte-de-la-familia-cov-arg1-86eecca90561db8b7116263183152854-1024-1024.webp" },
+    { titulo: "Batman de Scott Snyder Vol. 3: Año Cero", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,riddler", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-03-ano-cero-cov-arg1-0496240b00c09b32ae16372534510955-1024-1024.webp" },
+    { titulo: "Batman de Scott Snyder Vol. 4: Fin de Juego", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-04-fin-del-juego-cov-arg-11-60708f7d67f5ef261d16457506287439-1024-1024.webp" },
+    { titulo: "Batman de Scott Snyder Vol. 5: Superpesado", categoria: "los-nuevos-52-dc-argentina", personajes: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_snyder_vol-5_cov1-8cacb929208f5284cf16607990767121-1024-1024.webp" },
 
     // --- CROSSOVERS Y ELSEWORLDS (DC Argentina) ---
     { titulo: "Batman x Deadpool #1 (Crossover DC Marvel)", categoria: "elseworlds-otros-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_deadpool_1-713f1940acc054759317744583003786-640-0.webp" },
@@ -2587,12 +2592,21 @@ const colecciones = [
     },
     {
         id: "nuevos-52-orden-lectura",
-        titulo: "Los Nuevos 52",
+        titulo: "The New 52",
         categoria: "dc-orden-lectura",
         poster: "https://m.media-amazon.com/images/I/91Yw6yaFa7L._AC_UF894,1000_QL80_.jpg",
         esContenedor: true,
         etiqueta: "Cómic",
         progresoCategoria: "nuevos-52-orden-lectura",
+        peliculas: []
+    },
+    {
+        id: "los-nuevos-52-dc-argentina",
+        titulo: "Los Nuevos 52",
+        categoria: "dc-argentina",
+        poster: "https://placehold.co/300x450?text=Los+Nuevos+52",
+        esContenedor: true,
+        etiqueta: "Cómic",
         peliculas: []
     },
     {
@@ -3323,6 +3337,7 @@ function renderizarColecciones() {
         "dc-argentina-camino-villano": "seccion-dc-argentina-camino-villano",
         "post-crisis-dc": "seccion-post-crisis-dc",
         "elseworlds-otros-dc": "seccion-elseworlds-otros-dc",
+        "los-nuevos-52-dc-argentina": "seccion-los-nuevos-52-dc-argentina",
         "marvel-comics-hub": "seccion-marvel-comics-hub",
         "sw-animacion": "seccion-sw-animacion",
         "franquicias": "seccion-franquicias",
@@ -3592,6 +3607,7 @@ function renderizarContenido() {
         "nuevos-52-orden-lectura": "seccion-nuevos-52-orden-lectura",
         "post-crisis-dc": "seccion-post-crisis-dc",
         "elseworlds-otros-dc": "seccion-elseworlds-otros-dc",
+        "los-nuevos-52-dc-argentina": "seccion-los-nuevos-52-dc-argentina",
         "absolute-dc": "seccion-absolute-dc",
         "renacimiento-dc": "seccion-renacimiento-dc",
         "tomb-raider": "seccion-tomb-raider",
@@ -3631,7 +3647,7 @@ function renderizarContenido() {
             const textoInicial = esVideojuego ? "Marcar Jugado" : "Marcar Visto";
 
             const htmlTarjeta = `
-                <div class="tarjeta-media" style="${ocultarEstilo}" data-tier="${item.tier || ''}" data-tipo="${item.tipoArrow || ''}" data-crono="${item.crono || ''}" data-subtipo="${item.subtipo || ''}" data-orden="${item.ordenSalida || ''}" data-tierra="${item.tierra || ''}" data-accion="${esVideojuego ? 'jugado' : 'visto'}">
+                <div class="tarjeta-media" style="${ocultarEstilo}" data-tier="${item.tier || ''}" data-tipo="${item.tipoArrow || ''}" data-crono="${item.crono || ''}" data-subtipo="${item.subtipo || ''}" data-personajes="${item.personajes || item.subtipo || ''}" data-orden="${item.ordenSalida || ''}" data-tierra="${item.tierra || ''}" data-accion="${esVideojuego ? 'jugado' : 'visto'}">
                     <img src="${item.poster}" alt="${item.titulo}">
                     <h3>${item.titulo}</h3>
                     <p>${item.tipo}</p>
@@ -3644,7 +3660,7 @@ function renderizarContenido() {
             // muestra los mismos de cada continuidad, filtrables por personaje.
             // Continuidad principal: Renacimiento, Post-Crisis y lo que sigamos
             // agregando de la línea histórica. Elseworlds: Absolute y afines.
-            if (item.categoria === "renacimiento-dc" || item.categoria === "post-crisis-dc") {
+            if (item.categoria === "renacimiento-dc" || item.categoria === "post-crisis-dc" || item.categoria === "los-nuevos-52-dc-argentina") {
                 const grillaPrincipal = document.getElementById("grilla-camino-heroe-principal");
                 if (grillaPrincipal) grillaPrincipal.insertAdjacentHTML('beforeend', htmlTarjeta);
 
@@ -5371,7 +5387,7 @@ botonesFiltroCaminoPrincipal.forEach(boton => {
         const tarjetas = document.querySelectorAll('#seccion-camino-heroe-principal .tarjeta-media');
 
         tarjetas.forEach(tarjeta => {
-            const etiquetas = (tarjeta.getAttribute('data-subtipo') || '').split(',');
+            const etiquetas = (tarjeta.getAttribute('data-personajes') || '').split(',');
             tarjeta.style.display = etiquetas.includes(tipoElegido) ? 'flex' : 'none';
         });
     });
@@ -5389,7 +5405,7 @@ botonesFiltroCaminoElseworlds.forEach(boton => {
         const tarjetas = document.querySelectorAll('#seccion-camino-heroe-elseworlds .tarjeta-media');
 
         tarjetas.forEach(tarjeta => {
-            const etiquetas = (tarjeta.getAttribute('data-subtipo') || '').split(',');
+            const etiquetas = (tarjeta.getAttribute('data-personajes') || '').split(',');
             tarjeta.style.display = etiquetas.includes(tipoElegido) ? 'flex' : 'none';
         });
     });
@@ -5407,7 +5423,7 @@ botonesFiltroVillanoPrincipal.forEach(boton => {
         const tarjetas = document.querySelectorAll('#seccion-camino-villano-principal .tarjeta-media');
 
         tarjetas.forEach(tarjeta => {
-            const etiquetas = (tarjeta.getAttribute('data-subtipo') || '').split(',');
+            const etiquetas = (tarjeta.getAttribute('data-personajes') || '').split(',');
             tarjeta.style.display = etiquetas.includes(tipoElegido) ? 'flex' : 'none';
         });
     });
@@ -5425,7 +5441,7 @@ botonesFiltroVillanoElseworlds.forEach(boton => {
         const tarjetas = document.querySelectorAll('#seccion-camino-villano-elseworlds .tarjeta-media');
 
         tarjetas.forEach(tarjeta => {
-            const etiquetas = (tarjeta.getAttribute('data-subtipo') || '').split(',');
+            const etiquetas = (tarjeta.getAttribute('data-personajes') || '').split(',');
             tarjeta.style.display = etiquetas.includes(tipoElegido) ? 'flex' : 'none';
         });
     });
@@ -6460,6 +6476,13 @@ if(btnVolverElseworldsOtrosDc) {
     });
 }
 
+const btnVolverLosNuevos52DcArgentina = document.getElementById('btn-volver-los-nuevos-52-dc-argentina');
+if(btnVolverLosNuevos52DcArgentina) {
+    btnVolverLosNuevos52DcArgentina.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dc-argentina'));
+    });
+}
+
 const btnVolverDcArgentina = document.getElementById('btn-volver-dc-argentina');
 if(btnVolverDcArgentina) {
     btnVolverDcArgentina.addEventListener('click', () => {
@@ -6526,7 +6549,7 @@ if(btnVolverCaminoVillanoElseworlds) {
 const btnVolverNuevos52OrdenLectura = document.getElementById('btn-volver-nuevos-52-orden-lectura');
 if(btnVolverNuevos52OrdenLectura) {
     btnVolverNuevos52OrdenLectura.addEventListener('click', () => {
-        cambiarSeccion(document.getElementById('seccion-dc-orden-lectura'));
+        cambiarSeccion(document.getElementById('seccion-dc-argentina'));
     });
 }
 
