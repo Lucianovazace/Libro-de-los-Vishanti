@@ -1024,6 +1024,7 @@ const listaMedia = [
 
     // --- LOS NUEVOS 52: ORDEN DE LECTURA (filtro "Tanda 2") ---
     { titulo: "Batman (#8-12, Annual #1)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-2", tipo: "Cómic", poster: "https://images.cdn2.buscalibre.com/fit-in/360x360/ee/d9/eed99a79647288a8ec935ff880f07e72.jpg" },
+    { titulo: "Batman vs Robin", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-2", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vs_robin1-cb8bc14e49046ebd2316812693285754-640-0.webp" },
     { titulo: "Nightwing (#0, 8-12)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-2", tipo: "Cómic", poster: "https://comicsrus.com.au/cdn/shop/files/IMG_5159_0deda41d-475d-44f0-88c3-9ef776a73f1c_1024x1024.jpg?v=1710898341" },
     { titulo: "Catwoman (#8-12, #0)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-2", tipo: "Cómic", poster: "https://static.dc.com/dc/files/default_images/catwoman_v4_40_5b1706bcc08658.53640984.jpg?w=160" },
     { titulo: "Detective Comics (#8-12, #0, Annual #1)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-2", tipo: "Cómic", poster: "https://static.dc.com/dc/files/default_images/BM_DTCG_v5_DJ_54b4742d3bf831.61925973.jpg?w=160" },
@@ -1207,6 +1208,11 @@ const listaMedia = [
     { titulo: "Batman: Knightfall #6: El Fin del Caballero", categoria: "post-crisis-dc", subtipo: "azrael,batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_knightfall_vol_6_cov-4d4fb0f79ca4e7c9b517123204558470-640-0.webp" },
     { titulo: "Batman: Knightfall #7: Pródigo: Epílogo a La Caída del Caballero", categoria: "post-crisis-dc", subtipo: "batman", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_638853-MLA77819651903_072024-O.webp" },
     { titulo: "Batman: Knightfall #8: Troika: Epílogo Final a La Caída del Caballero", categoria: "post-crisis-dc", subtipo: "batman,ras-al-ghul,riddler,two-face", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0a/05/34091f08931b4ba8b30903b647a9710d.jpg" },
+    { titulo: "Batman y Los Outsiders #1", categoria: "post-crisis-dc", subtipo: "batman,outsiders", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_y_los_outsiders_cov-0657f8711c0e4d9b7517262289892152-1024-1024.webp" },
+    { titulo: "Batman y Los Outsiders #2: ¡Contra Los Amos del Desastre!", categoria: "post-crisis-dc", subtipo: "batman,outsiders", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_y_los_outsiders_vol_2_cov-df92c4b68710bc1d9817400878886921-1024-1024.webp" },
+    { titulo: "Batman y Los Outsiders #3: ¡La Verdad Sobre Halo!", categoria: "post-crisis-dc", subtipo: "batman,outsiders", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_805207-MLA91020970670_092025-O.webp" },
+    { titulo: "Batman y Los Outsiders #4: ¡Galaxias de Guerras!", categoria: "post-crisis-dc", subtipo: "batman,outsiders", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_y_los_outsiders_vol_4_cov-63b9e181f36d8ced5817630685111419-1024-1024.webp" },
+    { titulo: "Batman y Los Outsiders #5: La Renuncia del Caballero Oscuro", categoria: "post-crisis-dc", subtipo: "batman,outsiders", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_y_los_outsiders_vol_5_cov-12e103c480cbbe349c17776556503199-1024-1024.webp" },
     { titulo: "Batman de Grant Morrison Vol. 1: Batman e Hijo", categoria: "post-crisis-dc", subtipo: "batman,ras-al-ghul", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_e_hijo_cov-426ce7ca723e67b3fb17673629634909-1024-1024.webp" },
     { titulo: "Batman de Grant Morrison Vol. 2: La Resurrección de Ra's Al Ghul", categoria: "post-crisis-dc", subtipo: "batman,ras-al-ghul", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_morrison_2-d9db3d05365f64f75317724577444484-1024-1024.webp" },
     { titulo: "Batman Por Norm Breyfogle Vol. 1", categoria: "post-crisis-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_de_norm_breyfogle_vol_1_cov-34de9ff1fbb02d84db17543107324464-1024-1024.webp" },
@@ -1215,6 +1221,10 @@ const listaMedia = [
     { titulo: "Batman Por Norm Breyfogle Vol. 4", categoria: "post-crisis-dc", subtipo: "batman,ras-al-ghul", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_de_norm_breyfogle_vol_4_cov-99e22f5d161fcd13e117699522746163-640-0.webp" },
     { titulo: "Batman Por Norm Breyfogle Vol. 5", categoria: "post-crisis-dc", subtipo: "batman,joker,mr-zsasz,penguin", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_de_norm_breyfogle_vol_5_cov-c39a5a3a6138c4786717794627062229-640-0.webp" },
     { titulo: "Batman Por Norm Breyfogle Vol. 6", categoria: "post-crisis-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_de_norm_breyfogle_vol_6_cov-b2b8d5807c77119e1e17843165059176-640-0.webp" },
+
+    // --- CROSSOVERS Y ELSEWORLDS (DC Argentina) ---
+    { titulo: "Batman x Deadpool #1 (Crossover DC Marvel)", categoria: "elseworlds-otros-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_deadpool_1-713f1940acc054759317744583003786-640-0.webp" },
+    { titulo: "Batman y El Joker: Dúo Mortal", categoria: "elseworlds-otros-dc", subtipo: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_y_el_joker_duo_mortal_cov-0656de0f0b2f40c4b516995676897474-640-0.webp" },
 
     // --- ABSOLUTE (DC) ---
     { titulo: "Absolute Batman Vol.1", categoria: "absolute-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_batman_cov_-ebfab072bc8f36fd1d17526095371796-1024-1024.webp" },
@@ -2605,6 +2615,15 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "elseworlds-otros-dc",
+        titulo: "Crossovers y Elseworlds",
+        categoria: "dc-argentina",
+        poster: "https://placehold.co/300x450?text=Crossovers",
+        esContenedor: true,
+        etiqueta: "Cómic",
+        peliculas: []
+    },
+    {
         id: "absolute-dc",
         titulo: "Absolute",
         categoria: "dc-argentina",
@@ -3303,6 +3322,7 @@ function renderizarColecciones() {
         "dc-argentina-camino-heroe": "seccion-dc-argentina-camino-heroe",
         "dc-argentina-camino-villano": "seccion-dc-argentina-camino-villano",
         "post-crisis-dc": "seccion-post-crisis-dc",
+        "elseworlds-otros-dc": "seccion-elseworlds-otros-dc",
         "marvel-comics-hub": "seccion-marvel-comics-hub",
         "sw-animacion": "seccion-sw-animacion",
         "franquicias": "seccion-franquicias",
@@ -3571,6 +3591,7 @@ function renderizarContenido() {
         "green-lantern-hal-jordan": "seccion-green-lantern-hal-jordan",
         "nuevos-52-orden-lectura": "seccion-nuevos-52-orden-lectura",
         "post-crisis-dc": "seccion-post-crisis-dc",
+        "elseworlds-otros-dc": "seccion-elseworlds-otros-dc",
         "absolute-dc": "seccion-absolute-dc",
         "renacimiento-dc": "seccion-renacimiento-dc",
         "tomb-raider": "seccion-tomb-raider",
@@ -3630,7 +3651,7 @@ function renderizarContenido() {
                 const grillaVillanoPrincipal = document.getElementById("grilla-camino-villano-principal");
                 if (grillaVillanoPrincipal) grillaVillanoPrincipal.insertAdjacentHTML('beforeend', htmlTarjeta);
             }
-            if (item.categoria === "absolute-dc") {
+            if (item.categoria === "absolute-dc" || item.categoria === "elseworlds-otros-dc") {
                 const grillaElseworlds = document.getElementById("grilla-camino-heroe-elseworlds");
                 if (grillaElseworlds) grillaElseworlds.insertAdjacentHTML('beforeend', htmlTarjeta);
 
@@ -6428,6 +6449,13 @@ if(btnVolverDcOrdenLectura) {
 const btnVolverPostCrisisDc = document.getElementById('btn-volver-post-crisis-dc');
 if(btnVolverPostCrisisDc) {
     btnVolverPostCrisisDc.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dc-argentina'));
+    });
+}
+
+const btnVolverElseworldsOtrosDc = document.getElementById('btn-volver-elseworlds-otros-dc');
+if(btnVolverElseworldsOtrosDc) {
+    btnVolverElseworldsOtrosDc.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-dc-argentina'));
     });
 }
