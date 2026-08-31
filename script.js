@@ -1181,12 +1181,18 @@ const listaMedia = [
     { titulo: "Earth 2 (#17-20, Annual #2)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://static.wikia.nocookie.net/marvel_dc/images/4/49/Earth_2_Vol_1_17.jpg/revision/latest?cb=20131108182332" },
     { titulo: "Worlds' Finest (#13-18)", categoria: "nuevos-52-orden-lectura", subtipo: "tanda-5", tipo: "Cómic", poster: "https://static.dc.com/dc/files/default_images/worldsfinest_9_5b2a8830a233a4.99954068.jpg" },
 
-    { titulo: "Batman: Justicia Ciega", categoria: "post-crisis-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_justicia_ciega_cov-0e9a5ba00d950b424e17322856530167-1024-1024.webp" },
-    { titulo: "Batman: La Espada de Azrael", categoria: "post-crisis-dc", subtipo: "azrael,batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_la_espada_de_azraelcover1-1e2222cb91816eb1de16632196483116-640-0.webp" },
 
     // --- INFINITE FRONTIER / ACTUALIDAD (DC Argentina) ---
     { titulo: "Batman: La Guerra del Joker", categoria: "infinite-frontier-dc", subtipo: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/la_guerra_del_joker_cov_arg1-5e5a48f69ebd772c2116190652847921-1024-1024.webp" },
     { titulo: "Batman: Estado de Miedo", categoria: "infinite-frontier-dc", subtipo: "batman,scarecrow", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_estado_de_miedo_cov1-7028ca1c5aa7ec852016669068384287-1024-1024.webp" },
+    { titulo: "Batman: Un Mal Dia #1: El Acertijo", categoria: "infinite-frontier-dc", subtipo: "batman,riddler", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-one-bad-day-el-acertijo-a76431189a1d43944a17262291281567-1024-1024.webp" },
+    { titulo: "Batman: Un Mal Dia #2: Dos Caras", categoria: "infinite-frontier-dc", subtipo: "batman,two-face", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-one-bad-day-dos-caras-0859760e5a2d8b8af317274618447984-1024-1024.webp" },
+    { titulo: "Batman: Un Mal Dia #3: El Pinguino", categoria: "infinite-frontier-dc", subtipo: "batman,penguin", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-one-bad-day-el-pinguino-fc827125bada5dfb8e17298077553716-1024-1024.webp" },
+    { titulo: "Batman: Un Mal Dia #4: Mr. Freeze", categoria: "infinite-frontier-dc", subtipo: "batman,mr-freeze", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/imagen-de-whatsapp-2024-12-06-a-las-11-13-57_1868e58d-971c57ca3b97b325a417334949094162-1024-1024.webp" },
+    { titulo: "Batman: Un Mal Dia #5: Catwoman", categoria: "infinite-frontier-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-one-bad-day-catwoman-cov-56f1bfee5b430c387217355680021571-1024-1024.webp" },
+    { titulo: "Batman: Un Mal Dia #6: Bane", categoria: "infinite-frontier-dc", subtipo: "bane,batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-one-bad-day-bane-covs-4a5745f9b2466fcedc17388965100325-640-0.webp" },
+    { titulo: "Batman: Un Mal Dia #7: Clayface", categoria: "infinite-frontier-dc", subtipo: "batman,clayface", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-one-bad-day-clayface-covs-59aad4a37e4d610bde17413632363480-640-0.webp" },
+    { titulo: "Batman: Un Mal Dia #8: Ra's Al Ghul", categoria: "infinite-frontier-dc", subtipo: "batman,ras-al-ghul", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-one-bad-day-rad-covs-29e78f0a558e4c416017433388734434-1024-1024.webp" },
     { titulo: "Batman de Chip Zdarsky #1: Respaldo", categoria: "infinite-frontier-dc", subtipo: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2c/14/79c2dd4302684d059d04eb794367b1b9.jpg" },
     { titulo: "Batman de Chip Zdarsky #2: El Bat-Man de Gotham", categoria: "infinite-frontier-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vol-2_el_batman_de_gotham_cov-3d7f1de02e4ecf05d017256259109998-1024-1024.webp" },
     { titulo: "Batman de Chip Zdarsky #3: La Guerra de Gotham", categoria: "infinite-frontier-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_la_guerra_de_gotham_cov-f7b20f7acc97ce59c717395429904193-1024-1024.webp" },
@@ -1198,27 +1204,53 @@ const listaMedia = [
     { titulo: "Batman: La Guerra de Las Sombras", categoria: "infinite-frontier-dc", subtipo: "batman,deathstroke,ras-al-ghul", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_la_guerra_de_las_sombras_cov1-971c3bad069398502916881505921210-1024-1024.webp" },
     { titulo: "Batman: Luz de Dia", categoria: "infinite-frontier-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/luz-xde-dia-variante-web-e26bb5d717cd701cb117858587932470-640-0.webp" },
 
+    // --- PRE-CRISIS (DC Argentina) ---
+    { titulo: "Esenciales DC #24: Green Lantern/Green Arrow: Edición Absoluta", categoria: "pre-crisis-dc", subtipo: "green-arrow,green-lantern-hal-jordan", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/green_lantern_green_arrow_cov-96678bddcba5edf30317226036375082-1024-1024.webp" },
+    { titulo: "Esenciales DC #21: Batman: Historias del Demonio", categoria: "pre-crisis-dc", subtipo: "batman,ras-al-ghul", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_historias_del_demonio_cov1-76c122f254f0c780b216886877042629-480-0.webp" },
+    { titulo: "Esenciales DC #22: Batman: La Trilogia del Demonio", categoria: "pre-crisis-dc", subtipo: "batman,ras-al-ghul", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_la_trilogia_del_demonio_cov1-499bcec97868228cbf16938879213869-480-0.webp" },
+    { titulo: "Batman y Los Outsiders #1", categoria: "pre-crisis-dc", subtipo: "batman,outsiders", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_y_los_outsiders_cov-0657f8711c0e4d9b7517262289892152-1024-1024.webp" },
+    { titulo: "Batman y Los Outsiders #2: ¡Contra Los Amos del Desastre!", categoria: "pre-crisis-dc", subtipo: "batman,outsiders", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_y_los_outsiders_vol_2_cov-df92c4b68710bc1d9817400878886921-1024-1024.webp" },
+    { titulo: "Batman y Los Outsiders #3: ¡La Verdad Sobre Halo!", categoria: "pre-crisis-dc", subtipo: "batman,outsiders", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_805207-MLA91020970670_092025-O.webp" },
+    { titulo: "Batman y Los Outsiders #4: ¡Galaxias de Guerras!", categoria: "pre-crisis-dc", subtipo: "batman,outsiders", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_y_los_outsiders_vol_4_cov-63b9e181f36d8ced5817630685111419-1024-1024.webp" },
+    { titulo: "Batman y Los Outsiders #5: La Renuncia del Caballero Oscuro", categoria: "pre-crisis-dc", subtipo: "batman,outsiders", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_y_los_outsiders_vol_5_cov-12e103c480cbbe349c17776556503199-1024-1024.webp" },
+
     // --- POST-CRISIS / EDAD MODERNA: ORDEN DE LECTURA (Ovni Press) ---
-    { titulo: "Esenciales DC #24: Green Lantern/Green Arrow: Edición Absoluta", categoria: "post-crisis-dc", subtipo: "green-arrow,green-lantern-hal-jordan", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/green_lantern_green_arrow_cov-96678bddcba5edf30317226036375082-1024-1024.webp" },
-    { titulo: "Esenciales DC #21: Batman: Historias del Demonio", categoria: "post-crisis-dc", subtipo: "batman,ras-al-ghul", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_historias_del_demonio_cov1-76c122f254f0c780b216886877042629-480-0.webp" },
-    { titulo: "Esenciales DC #22: Batman: La Trilogia del Demonio", categoria: "post-crisis-dc", subtipo: "batman,ras-al-ghul", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_la_trilogia_del_demonio_cov1-499bcec97868228cbf16938879213869-480-0.webp" },
-    { titulo: "Batman y Los Outsiders #1", categoria: "post-crisis-dc", subtipo: "batman,outsiders", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_y_los_outsiders_cov-0657f8711c0e4d9b7517262289892152-1024-1024.webp" },
-    { titulo: "Batman y Los Outsiders #2: ¡Contra Los Amos del Desastre!", categoria: "post-crisis-dc", subtipo: "batman,outsiders", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_y_los_outsiders_vol_2_cov-df92c4b68710bc1d9817400878886921-1024-1024.webp" },
-    { titulo: "Batman y Los Outsiders #3: ¡La Verdad Sobre Halo!", categoria: "post-crisis-dc", subtipo: "batman,outsiders", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_805207-MLA91020970670_092025-O.webp" },
-    { titulo: "Batman y Los Outsiders #4: ¡Galaxias de Guerras!", categoria: "post-crisis-dc", subtipo: "batman,outsiders", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_y_los_outsiders_vol_4_cov-63b9e181f36d8ced5817630685111419-1024-1024.webp" },
-    { titulo: "Batman y Los Outsiders #5: La Renuncia del Caballero Oscuro", categoria: "post-crisis-dc", subtipo: "batman,outsiders", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_y_los_outsiders_vol_5_cov-12e103c480cbbe349c17776556503199-1024-1024.webp" },
     { titulo: "Esenciales DC #2: Crisis en Tierras Infinitas", categoria: "post-crisis-dc", subtipo: "batman,flash-barry-allen,liga,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/crisis_cov_arg1-a4a9db904b75118e4315980054342033-1024-1024.webp" },
     { titulo: "Esenciales DC #17: Superman: El Hombre de Acero", categoria: "post-crisis-dc", subtipo: "lex-luthor,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_el_hombre_de_acero_cov1-350021223aab5b6d0f16711637408864-640-0.webp" },
+    { titulo: "Batman/Superman: Los Mejores del Mundo #1: El Demonio Nezha", categoria: "post-crisis-dc", subtipo: "batman,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_superman_-_los_mejores_del_mundo_cov11-194d38fd286024b77b16853357900328-1024-1024.webp" },
+    { titulo: "Batman/Superman: Los Mejores del Mundo #2: Extraño Visitante", categoria: "post-crisis-dc", subtipo: "batman,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/losmejoresdelmundo_vol_2_cov-e3908666777bcce92c17007724826931-640-0.webp" },
+    { titulo: "Batman/Superman: Los Mejores del Mundo #3: Elemental", categoria: "post-crisis-dc", subtipo: "batman,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_superman_-_los_mejores_del_mundo_vol-_3_cov-371860565ce9f93e3c17196702659344-1024-1024.webp" },
+    { titulo: "Batman/Superman: Los Mejores del Mundo #4: Regreso a Kingdom Come", categoria: "post-crisis-dc", subtipo: "batman,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_superman_-_los_mejores_del_mundo_cov-61b5bc5abad186e20f17304977171278-1024-1024.webp" },
+    { titulo: "Batman/Superman: Los Mejores del Mundo #5: Orígenes Secretos", categoria: "post-crisis-dc", subtipo: "batman,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_superman_-_los_mejores_del_mundo_vol-_5_covs-05b32c0edab26f36e717449105294161-1024-1024.webp" },
+    { titulo: "Batman/Superman: Los Mejores del Mundo #6: Imposible", categoria: "post-crisis-dc", subtipo: "batman,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_superman_-_los_mejores_del_mundo_vol-_6-26ec6550b9cff9350e17570145532401-1024-1024.webp" },
+    { titulo: "Batman/Superman: Los Mejores del Mundo #7: Eclipso Total", categoria: "post-crisis-dc", subtipo: "batman,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_superman_-_los_mejores_del_mundo_vol-_7-824ea95feda7f6688a17594375917039-640-0.webp" },
+    { titulo: "Batman/Superman: Los Mejores del Mundo #8: Gira en Mundo Bizarro", categoria: "post-crisis-dc", subtipo: "batman,superman", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_718634-MLA109671972848_042026-O.webp" },
     { titulo: "Batman: Año Uno", categoria: "post-crisis-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_a_c3_b1o_uno_3ra_cov-7d43be04a0c1e39ee917745538512217-640-0.webp" },
     { titulo: "Batman: Año Dos", categoria: "post-crisis-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_ano_dos_cov_arg1-1af52ac45310c42c5d16772101790752-1024-1024.webp" },
+    { titulo: "Batman: Un Mal Dia #9: La Broma Asesina", categoria: "post-crisis-dc", subtipo: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_un_mal_dia_-_joker_-_cov-7a20a882b5ac7c7eff17486503201315-1024-1024.webp" },
     { titulo: "Esenciales DC #14: Batman: Una Muerte en La Familia", categoria: "post-crisis-dc", subtipo: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/bm_muerte_en_la_familia_cov_2da1-19c0c2be49848149f516868722605141-480-0.webp" },
     { titulo: "Animal Man de Grant Morrison Vol. 1", categoria: "post-crisis-dc", subtipo: "animal-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/animal_man_vol_01_cov_arg1-65d8d0e2917efd152e16154820963445-640-0.webp" },
     { titulo: "Esenciales DC #25: ¡Invasión!", categoria: "post-crisis-dc", subtipo: "batman,liga,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/invasion_cov-6ce1398de623d16ffd17244156497208-1024-1024.webp" },
     { titulo: "Esenciales DC #16: Odisea Cosmica", categoria: "post-crisis-dc", subtipo: "batman,darkseid,liga", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/odisea_cosmica_cov_arg-11-e46e20d1d004615d0616572160137359-640-0.webp" },
     { titulo: "Animal Man de Grant Morrison Vol. 2", categoria: "post-crisis-dc", subtipo: "animal-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/animal-man-vol-2-cov-arg1-6c2d76bbb90e8f3c7116239493651603-640-0.webp" },
     { titulo: "Batman: Año Tres", categoria: "post-crisis-dc", subtipo: "batman,dick-grayson", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_ano_tres_cov-8bc9839c108672bc9c17093164316321-1024-1024.webp" },
-    { titulo: "Batman: Leyendas del Caballero Oscuro", categoria: "post-crisis-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/leyendas_del_caballero_oscuro_cov1-00ea1bab939dd7b3f816518571017918-640-0.webp" },
+    { titulo: "Batman: Leyendas del Caballero Oscuro #1: Shaman", categoria: "post-crisis-dc", subtipo: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/18/2d/f04aa1ab7db1450bb86170365abaae44.jpg" },
+    { titulo: "Batman: Tiempo Muerto", categoria: "post-crisis-dc", subtipo: "batman,joker,killer-croc,penguin,riddler", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_tiempo_muerto_cov-2cabf1fb059b817cc117818908125281-1024-1024.webp" },
+    { titulo: "Batman: Leyendas del Caballero Oscuro #2: Presa", categoria: "post-crisis-dc", subtipo: "batman,hugo-strange", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_presa_cov-47a69ad7fa351ffe9d17001638496480-1024-1024.webp" },
+    { titulo: "Batman: Leyendas del Caballero Oscuro #3: Fe", categoria: "post-crisis-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_fe_cov-5cc56597da0bf6763517051585113454-1024-1024.webp" },
+    { titulo: "Batman: Leyendas del Caballero Oscuro #4: Volador y Otras Historias", categoria: "post-crisis-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_volador_cov-829fc22a12a9c0baa017118939253254-640-0.webp" },
+    { titulo: "Batman: Leyendas del Caballero Oscuro #5: Rostros", categoria: "post-crisis-dc", subtipo: "batman,two-face", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_rostros_cov-37930020a8769be68d17165513774512-1024-1024.webp" },
+    { titulo: "Batman: Leyendas del Caballero Oscuro #6: Espadas y Otras Historias", categoria: "post-crisis-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_espadas_cov-7d252dd2957722f09517192292231794-640-0.webp" },
+    { titulo: "Batman: Leyendas del Caballero Oscuro #7: Gotico", categoria: "post-crisis-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_gotico_cov-deb40ff8122a5b8e7317256257603750-1024-1024.webp" },
+    { titulo: "Batman: Leyendas del Caballero Oscuro #8: Destino", categoria: "post-crisis-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_destino_cov-74d2873b836d72d1a717285999613524-1024-1024.webp" },
+    { titulo: "Batman: Leyendas del Caballero Oscuro #9: Mascaras", categoria: "post-crisis-dc", subtipo: "batman,two-face", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_mascaras_cov-ae750a22dc5f8d1c5817370671837025-1024-1024.webp" },
+    { titulo: "Batman: Leyendas del Caballero Oscuro #10: Reflejos", categoria: "post-crisis-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_reflejos-02a0fad5187c37486717455384087837-1024-1024.webp" },
+    { titulo: "Batman: Leyendas del Caballero Oscuro #11: Santuarios y Otras Historias", categoria: "post-crisis-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_santuario_cov-d2aef8fa6be9f3db2317536263533458-1024-1024.webp" },
+    { titulo: "Batman: Leyendas del Caballero Oscuro #12: Calor", categoria: "post-crisis-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_calor_cov-97f6dc6b40b03e0ef917582893403570-1024-1024.webp" },
+    { titulo: "Batman: Leyendas del Caballero Oscuro #14: Criminales", categoria: "post-crisis-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_criminales_cov-c99467c4aebae2441017636682544562-1024-1024.webp" },
+    { titulo: "Batman: Leyendas del Caballero Oscuro #15: Recuperando la Cordura", categoria: "post-crisis-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_-_volviendose_cuerdo_cov-771ed496dd5bc9cc3117679048714763-640-0.webp" },
     { titulo: "Batman: Diez Noches de La Bestia", categoria: "post-crisis-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_-_10_noches_de_la_bestia_cov-382ddc82d9756616c817564914069350-640-0.webp" },
+    { titulo: "Batman: Justicia Ciega", categoria: "post-crisis-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_justicia_ciega_cov-0e9a5ba00d950b424e17322856530167-1024-1024.webp" },
     { titulo: "Batman Por Norm Breyfogle Vol. 1", categoria: "post-crisis-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_de_norm_breyfogle_vol_1_cov-34de9ff1fbb02d84db17543107324464-1024-1024.webp" },
     { titulo: "Batman Por Norm Breyfogle Vol. 2", categoria: "post-crisis-dc", subtipo: "batman,penguin,clayface", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_de_norm_breyfogle_vol_2_cov-7994bcdf11080a6d7317607104087075-1024-1024.webp" },
     { titulo: "Batman Por Norm Breyfogle Vol. 3", categoria: "post-crisis-dc", subtipo: "batman,anarky", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_de_norm_breyfogle_vol_3_cov-4c4e494f26bb4ee81a17661604058407-1024-1024.webp" },
@@ -1229,7 +1261,9 @@ const listaMedia = [
     { titulo: "Animal Man: Nacido Para ser Salvaje", categoria: "post-crisis-dc", subtipo: "animal-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/animal_man_vol_04_cov_arg-0eeae8aa09841733c416990325781147-640-0.webp" },
     { titulo: "Armagedón 2001", categoria: "post-crisis-dc", subtipo: "batman,flash-wally-west,green-lantern-guy-gardner,green-lantern-hal-jordan,liga,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/armagedon_2001_cov_arg-bf9ece492f90aaf6ef17758465134328-1024-1024.webp" },
     { titulo: "Esenciales DC #19: Batman: Veneno", categoria: "post-crisis-dc", subtipo: "bane,batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-veneno_cov_arg1-e9451fa68870b3cf7f16789392570876-640-0.webp" },
+    { titulo: "Batman: Leyendas del Caballero Oscuro #13: Veneno", categoria: "post-crisis-dc", subtipo: "bane,batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_veneno_2da_cov-250c58f861dc0fc03317600407086103-640-0.webp" },
     { titulo: "Esenciales DC #10: La Muerte de Superman", categoria: "post-crisis-dc", subtipo: "doomsday,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/la_muerte_de_superman_cov1-f00b8d36cb38aa084616336649847817-640-0.webp" },
+    { titulo: "Batman: La Espada de Azrael", categoria: "post-crisis-dc", subtipo: "azrael,batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_la_espada_de_azraelcover1-1e2222cb91816eb1de16632196483116-640-0.webp" },
     { titulo: "Aquaman Año Uno", categoria: "post-crisis-dc", subtipo: "aquaman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/aquaman_cov-df88609a441f8b2d9717014681434083-1024-1024.webp" },
     { titulo: "Batman: Knightfall #0: Camino a la Caída del Caballero", categoria: "post-crisis-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_knightfall_vol_0_cov-88dbb35b4d86497e7f17497750812558-640-0.webp" },
     { titulo: "Batman: Knightfall #1: Preludio a La Caída del Caballero", categoria: "post-crisis-dc", subtipo: "bane,batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_knightfall_vol_1_cov1-94c142bad4e22a9b1c16874803037803-1024-1024.webp" },
@@ -1264,14 +1298,6 @@ const listaMedia = [
     { titulo: "Esenciales DC #11: La Noche Mas Oscura", categoria: "post-crisis-dc", subtipo: "batman,green-lantern-hal-jordan,liga", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/la_noche_mas_oscura_2da_cov-a31e86028f1375b6e917685742571677-1024-1024.webp" },
     { titulo: "Esenciales DC #23: Batman: El Espejo Negro", categoria: "post-crisis-dc", subtipo: "batman,dick-grayson", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_the_black_mirror_cov-4189d8cc24746a418217105079252954-1024-1024.webp" },
     { titulo: "Esenciales DC #1: Flashpoint Absoluto", categoria: "post-crisis-dc", subtipo: "batman,flash-barry-allen", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flashpoint_4taed_cov_arg1-4c2c6e6a3c5b6220c316851089691513-1024-1024.webp" },
-    { titulo: "Batman/Superman: Los Mejores del Mundo #1: El Demonio Nezha", categoria: "post-crisis-dc", subtipo: "batman,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_superman_-_los_mejores_del_mundo_cov11-194d38fd286024b77b16853357900328-1024-1024.webp" },
-    { titulo: "Batman/Superman: Los Mejores del Mundo #2: Extraño Visitante", categoria: "post-crisis-dc", subtipo: "batman,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/losmejoresdelmundo_vol_2_cov-e3908666777bcce92c17007724826931-640-0.webp" },
-    { titulo: "Batman/Superman: Los Mejores del Mundo #3: Elemental", categoria: "post-crisis-dc", subtipo: "batman,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_superman_-_los_mejores_del_mundo_vol-_3_cov-371860565ce9f93e3c17196702659344-1024-1024.webp" },
-    { titulo: "Batman/Superman: Los Mejores del Mundo #4: Regreso a Kingdom Come", categoria: "post-crisis-dc", subtipo: "batman,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_superman_-_los_mejores_del_mundo_cov-61b5bc5abad186e20f17304977171278-1024-1024.webp" },
-    { titulo: "Batman/Superman: Los Mejores del Mundo #5: Orígenes Secretos", categoria: "post-crisis-dc", subtipo: "batman,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_superman_-_los_mejores_del_mundo_vol-_5_covs-05b32c0edab26f36e717449105294161-1024-1024.webp" },
-    { titulo: "Batman/Superman: Los Mejores del Mundo #6: Imposible", categoria: "post-crisis-dc", subtipo: "batman,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_superman_-_los_mejores_del_mundo_vol-_6-26ec6550b9cff9350e17570145532401-1024-1024.webp" },
-    { titulo: "Batman/Superman: Los Mejores del Mundo #7: Eclipso Total", categoria: "post-crisis-dc", subtipo: "batman,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_superman_-_los_mejores_del_mundo_vol-_7-824ea95feda7f6688a17594375917039-640-0.webp" },
-    { titulo: "Batman/Superman: Los Mejores del Mundo #8: Gira en Mundo Bizarro", categoria: "post-crisis-dc", subtipo: "batman,superman", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_718634-MLA109671972848_042026-O.webp" },
     { titulo: "Batman: Blanco y Negro Vol. 1", categoria: "elseworlds-otros-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-blanco-y-negro-vol-11-8e1c349be1e11b4c1216300345691139-1024-1024.webp" },
     { titulo: "Batman: Blanco y Negro Vol. 2", categoria: "elseworlds-otros-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-blanco-y-negro-vol-2-cov1-e836066359817418c016384633303544-1024-1024.webp" },
     { titulo: "Batman: Blanco y Negro Vol. 3", categoria: "elseworlds-otros-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-blanco-y-negro-cov-vol-3-11-05f267022cdd0a118f16511604478304-1024-1024.webp" },
@@ -1302,6 +1328,7 @@ const listaMedia = [
     { titulo: "Batman: Justicia Absoluta Vol. 2", categoria: "elseworlds-otros-dc", subtipo: "batman,deathstroke,joker,killer-croc,riddler", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_justicia_absoluta_2_covs-65f7565042a2f415a317437479626735-640-0.webp" },
     { titulo: "Batman: La Carta Ganadora", categoria: "elseworlds-otros-dc", subtipo: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_-la_carta_ganadora-_cov-5197b196c6febef1fd17878513150760-1024-1024.webp" },
     { titulo: "Batman: La Era Oscura", categoria: "elseworlds-otros-dc", subtipo: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_la_era_oscura_cov-2fec9970042e58a66317552251253019-640-0.webp" },
+    { titulo: "Batman: Reptiliano", categoria: "elseworlds-otros-dc", subtipo: "batman,killer-croc,penguin", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_reptiliano_cov1-c39302e4bf5864b44b16469494473838-640-0.webp" },
     { titulo: "Batman: Caballero Blanco", categoria: "elseworlds-otros-dc", subtipo: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_caballero_blanco_cov-3ratapa1-d4ab1e58ab6486868c16693753427572-640-0.webp" },
     { titulo: "Batman: La Maldición del Caballero Blanco", categoria: "elseworlds-otros-dc", subtipo: "azrael,batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_curse_of_the_white_knight_cov_arg11-17941ec2fc2c82f25115948576602496-1024-1024.webp" },
     { titulo: "Batman: El Caballero Blanco Presenta - Harley Quinn", categoria: "elseworlds-otros-dc", subtipo: "batman,harley-quinn", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/bwk_harley_cov1-6a603ddf0c1b3c19b516252260323632-640-0.webp" },
@@ -2697,6 +2724,15 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "pre-crisis-dc",
+        titulo: "Pre-Crisis",
+        categoria: "dc-argentina",
+        poster: "https://placehold.co/300x450?text=Pre-Crisis",
+        esContenedor: true,
+        etiqueta: "Cómic",
+        peliculas: []
+    },
+    {
         id: "post-crisis-dc",
         titulo: "Post-Crisis / Edad Moderna",
         categoria: "dc-argentina",
@@ -3432,6 +3468,7 @@ function renderizarColecciones() {
         "dc-argentina-camino-heroe": "seccion-dc-argentina-camino-heroe",
         "dc-argentina-camino-villano": "seccion-dc-argentina-camino-villano",
         "post-crisis-dc": "seccion-post-crisis-dc",
+        "pre-crisis-dc": "seccion-pre-crisis-dc",
         "infinite-frontier-dc": "seccion-infinite-frontier-dc",
         "elseworlds-otros-dc": "seccion-elseworlds-otros-dc",
         "los-nuevos-52-dc-argentina": "seccion-los-nuevos-52-dc-argentina",
@@ -3703,6 +3740,7 @@ function renderizarContenido() {
         "green-lantern-hal-jordan": "seccion-green-lantern-hal-jordan",
         "nuevos-52-orden-lectura": "seccion-nuevos-52-orden-lectura",
         "post-crisis-dc": "seccion-post-crisis-dc",
+        "pre-crisis-dc": "seccion-pre-crisis-dc",
         "infinite-frontier-dc": "seccion-infinite-frontier-dc",
         "elseworlds-otros-dc": "seccion-elseworlds-otros-dc",
         "los-nuevos-52-dc-argentina": "seccion-los-nuevos-52-dc-argentina",
@@ -3758,7 +3796,7 @@ function renderizarContenido() {
             // muestra los mismos de cada continuidad, filtrables por personaje.
             // Continuidad principal: Renacimiento, Post-Crisis y lo que sigamos
             // agregando de la línea histórica. Elseworlds: Absolute y afines.
-            if (item.categoria === "renacimiento-dc" || item.categoria === "post-crisis-dc" || item.categoria === "los-nuevos-52-dc-argentina" || item.categoria === "infinite-frontier-dc") {
+            if (item.categoria === "renacimiento-dc" || item.categoria === "post-crisis-dc" || item.categoria === "los-nuevos-52-dc-argentina" || item.categoria === "infinite-frontier-dc" || item.categoria === "pre-crisis-dc") {
                 const grillaPrincipal = document.getElementById("grilla-camino-heroe-principal");
                 if (grillaPrincipal) grillaPrincipal.insertAdjacentHTML('beforeend', htmlTarjeta);
 
@@ -5430,6 +5468,50 @@ botonesFiltroPostCrisis.forEach(boton => {
 });
 
 // ==========================================
+// FILTROS "CROSSOVERS Y ELSEWORLDS" (DC ARGENTINA) — por personaje
+// ==========================================
+const botonesFiltroElseworldsOtros = document.querySelectorAll('.btn-filtro-elseworlds-otros');
+botonesFiltroElseworldsOtros.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroElseworldsOtros.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const tipoElegido = this.getAttribute('data-tipo');
+        const tarjetas = document.querySelectorAll('#seccion-elseworlds-otros-dc .tarjeta-media');
+
+        tarjetas.forEach(tarjeta => {
+            if (tipoElegido === 'todos') {
+                tarjeta.style.display = 'flex';
+                return;
+            }
+            const etiquetas = (tarjeta.getAttribute('data-subtipo') || '').split(',');
+            tarjeta.style.display = etiquetas.includes(tipoElegido) ? 'flex' : 'none';
+        });
+    });
+});
+
+// ==========================================
+// FILTROS "PRE-CRISIS" (DC ARGENTINA) — por personaje
+// ==========================================
+const botonesFiltroPreCrisis = document.querySelectorAll('.btn-filtro-pre-crisis');
+botonesFiltroPreCrisis.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroPreCrisis.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const tipoElegido = this.getAttribute('data-tipo');
+        const tarjetas = document.querySelectorAll('#seccion-pre-crisis-dc .tarjeta-media');
+
+        tarjetas.forEach(tarjeta => {
+            if (tipoElegido === 'todos') {
+                tarjeta.style.display = 'flex';
+                return;
+            }
+            const etiquetas = (tarjeta.getAttribute('data-subtipo') || '').split(',');
+            tarjeta.style.display = etiquetas.includes(tipoElegido) ? 'flex' : 'none';
+        });
+    });
+});
+
+// ==========================================
 // FILTROS "RENACIMIENTO" (DC ARGENTINA) — por personaje
 // ==========================================
 const botonesFiltroRenacimiento = document.querySelectorAll('.btn-filtro-renacimiento');
@@ -6557,6 +6639,13 @@ const btnVolverDcOrdenLectura = document.getElementById('btn-volver-dc-orden-lec
 if(btnVolverDcOrdenLectura) {
     btnVolverDcOrdenLectura.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-dc-comics-hub'));
+    });
+}
+
+const btnVolverPreCrisisDc = document.getElementById('btn-volver-pre-crisis-dc');
+if(btnVolverPreCrisisDc) {
+    btnVolverPreCrisisDc.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dc-argentina'));
     });
 }
 
