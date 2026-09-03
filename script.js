@@ -1183,6 +1183,7 @@ const listaMedia = [
 
 
     // --- INFINITE FRONTIER / ACTUALIDAD (DC Argentina) ---
+    { titulo: "El Hombre de Acero", categoria: "infinite-frontier-dc", subtipo: "rogol-zaar,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/el_hombre_de_acero_cov1-9512db395e680cccb316058036624585-640-0.webp" },
     { titulo: "Green Lantern: Justicia Intergaláctica", categoria: "infinite-frontier-dc", subtipo: "green-lantern-hal-jordan", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/green_lantern_vol_01_cov1-c89f47245b1cc1dff415972488952095-1024-1024.webp" },
     { titulo: "Green Lantern: Caballeros Esmeralda", categoria: "infinite-frontier-dc", subtipo: "green-lantern-hal-jordan", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/green_lantern_-_caballeros_esmeralda_cov-4346afa99142f6af5f17437478591760-1024-1024.webp" },
     { titulo: "Green Lantern: Temporada Dos", categoria: "infinite-frontier-dc", subtipo: "green-lantern-hal-jordan", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/green_lantern_vol_02_cov1-b6c2a2d7bf4fe3677d16263181577273-1024-1024.webp" },
@@ -1253,7 +1254,6 @@ const listaMedia = [
     // --- POST-CRISIS / EDAD MODERNA: ORDEN DE LECTURA (Ovni Press) ---
     { titulo: "Esenciales DC #2: Crisis en Tierras Infinitas", categoria: "post-crisis-dc", subtipo: "batman,flash-barry-allen,liga,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/crisis_cov_arg1-a4a9db904b75118e4315980054342033-1024-1024.webp" },
     { titulo: "Esenciales DC #17: Superman: El Hombre de Acero", categoria: "post-crisis-dc", subtipo: "lex-luthor,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_el_hombre_de_acero_cov1-350021223aab5b6d0f16711637408864-640-0.webp" },
-    { titulo: "El Hombre de Acero", categoria: "post-crisis-dc", subtipo: "lex-luthor,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/el_hombre_de_acero_cov1-9512db395e680cccb316058036624585-640-0.webp" },
     { titulo: "Leyendas: Escuadron Suicida", categoria: "post-crisis-dc", subtipo: "batman,darkseid,escuadron-suicida,liga,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/leyendas_escuadron_suicida_cov1-ba28f64d2d8b9c686516276992406403-1024-1024.webp" },
     { titulo: "Batman/Superman: Los Mejores del Mundo #1: El Demonio Nezha", categoria: "post-crisis-dc", subtipo: "batman,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_superman_-_los_mejores_del_mundo_cov11-194d38fd286024b77b16853357900328-1024-1024.webp" },
     { titulo: "Batman/Superman: Los Mejores del Mundo #2: Extraño Visitante", categoria: "post-crisis-dc", subtipo: "batman,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/losmejoresdelmundo_vol_2_cov-e3908666777bcce92c17007724826931-640-0.webp" },
@@ -2747,7 +2747,7 @@ const colecciones = [
         id: "dc-comics-hub",
         titulo: "DC Comics",
         categoria: "comics",
-        poster: "https://placehold.co/300x450?text=DC+Comics",
+        poster: "https://preview.redd.it/wallpaper-made-from-my-favorite-characters-after-diving-v0-98drt5yh11ty.png?auto=webp&s=14a46296481937533f68b1bc01e955b13d870394",
         esContenedor: true,
         peliculas: []
     },
@@ -2792,7 +2792,7 @@ const colecciones = [
         id: "pre-crisis-dc",
         titulo: "Pre-Crisis",
         categoria: "dc-argentina",
-        poster: "https://placehold.co/300x450?text=Pre-Crisis",
+        poster: "https://w0.peakpx.com/wallpaper/775/873/HD-wallpaper-batman-issue-1-need-iphone-s-plus-background-for-iphon-batman-comic-cover-batman-comic-books-batman-comic-book-cover-vintage-batman-thumbnail.jpg",
         esContenedor: true,
         etiqueta: "Cómic",
         peliculas: []
@@ -2829,7 +2829,7 @@ const colecciones = [
         id: "infinite-frontier-dc",
         titulo: "Infinite Frontier / Actualidad",
         categoria: "dc-argentina",
-        poster: "https://placehold.co/300x450?text=Infinite+Frontier",
+        poster: "https://i.pinimg.com/736x/69/bf/59/69bf59a119aa1edc43c9d9a4ae8964a7.jpg",
         esContenedor: true,
         etiqueta: "Cómic",
         peliculas: []
@@ -2920,7 +2920,7 @@ const colecciones = [
         id: "marvel-comics-hub",
         titulo: "Marvel",
         categoria: "comics",
-        poster: "https://placehold.co/300x450?text=Marvel+Comics",
+        poster: "https://w0.peakpx.com/wallpaper/342/495/HD-wallpaper-marvel-comic-hunter-legends-sunset-super.jpg",
         esContenedor: true,
         peliculas: []
     },
