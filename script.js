@@ -4301,6 +4301,13 @@ function actualizarTodasLasColecciones() {
 // ==========================================
 function renderizarContenido() {
     const seccionesMap = {
+        "marvel-edad-plata": "seccion-marvel-edad-plata",
+        "marvel-edad-bronce": "seccion-marvel-edad-bronce",
+        "marvel-edad-moderna-1": "seccion-marvel-edad-moderna-1",
+        "marvel-edad-moderna-2": "seccion-marvel-edad-moderna-2",
+        "marvel-actualidad": "seccion-marvel-actualidad",
+        "marvel-universo-ultimate": "seccion-marvel-universo-ultimate",
+        "marvel-realidades-alternativas": "seccion-marvel-realidades-alternativas",
         "doomsday": "seccion-doomsday",
         "mcu-infinito": "seccion-mcu-infinito",
         "mcu-multiverso": "seccion-mcu-multiverso",
