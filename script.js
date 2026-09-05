@@ -2998,6 +2998,38 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "action-comics-renacimiento-orden",
+        titulo: "Action Comics (Renacimiento)",
+        categoria: "colecciones-hub",
+        poster: "https://http2.mlstatic.com/D_NQ_NP_887044-MLU77961783640_082024-O.webp",
+        esContenedor: true,
+        peliculas: []
+    },
+    {
+        id: "all-star-batman-renacimiento-orden",
+        titulo: "All Star Batman (Renacimiento)",
+        categoria: "colecciones-hub",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/all_star_batman_01_cov_arg1-5f139fd501888db24e16075508570607-1024-1024.webp",
+        esContenedor: true,
+        peliculas: []
+    },
+    {
+        id: "jli-ovni-orden",
+        titulo: "Liga de la Justicia Internacional",
+        categoria: "colecciones-hub",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/jli_cov-9b72618e171087b8c017083668247644-1024-1024.webp",
+        esContenedor: true,
+        peliculas: []
+    },
+    {
+        id: "leyendas-caballero-oscuro-orden",
+        titulo: "Batman: Leyendas del Caballero Oscuro",
+        categoria: "colecciones-hub",
+        poster: "https://i1.whakoom.com/large/18/2d/f04aa1ab7db1450bb86170365abaae44.jpg",
+        esContenedor: true,
+        peliculas: []
+    },
+    {
         id: "dc-camino-heroe",
         titulo: "El Camino del Héroe",
         categoria: "dc-comics-hub",
@@ -3779,6 +3811,10 @@ function renderizarColecciones() {
         "batman-renacimiento-orden": "seccion-batman-renacimiento-orden",
         "detective-renacimiento-orden": "seccion-detective-renacimiento-orden",
         "superman-renacimiento-orden": "seccion-superman-renacimiento-orden",
+        "action-comics-renacimiento-orden": "seccion-action-comics-renacimiento-orden",
+        "all-star-batman-renacimiento-orden": "seccion-all-star-batman-renacimiento-orden",
+        "jli-ovni-orden": "seccion-jli-ovni-orden",
+        "leyendas-caballero-oscuro-orden": "seccion-leyendas-caballero-oscuro-orden",
         "dc-comics-hub": "seccion-dc-comics-hub",
         "dc-camino-heroe": "seccion-dc-camino-heroe",
         "dc-orden-lectura": "seccion-dc-orden-lectura",
@@ -4241,7 +4277,48 @@ function renderizarContenido() {
                     "Superman Vol. 3: Renacido",
                     "Superman Vol. 4: Amanecer Negro",
                     "Superman Vol. 5: Universo Bizarro"
-                ], grillaId: "grilla-superman-renacimiento-orden" }
+                ], grillaId: "grilla-superman-renacimiento-orden" },
+                { titulos: [
+                    "Action Comics Vol. 1: Sendero de la Perdición",
+                    "Action Comics Vol. 2: Bienvenido al Planeta",
+                    "Action Comics Vol. 3: Hombres de Acero",
+                    "Action Comics Vol. 4: El Nuevo Mundo",
+                    "Action Comics Vol. 5: El Efecto Oz"
+                ], grillaId: "grilla-action-comics-renacimiento-orden" },
+                { titulos: [
+                    "All Star Batman Vol. 1: Yo, Mi Peor Enemigo",
+                    "All Star Batman Vol. 2: Los Confines de la Tierra",
+                    "All Star Batman Vol. 3: El Primer Aliado"
+                ], grillaId: "grilla-all-star-batman-renacimiento-orden" },
+                { titulos: [
+                    "Liga de La Justicia Internacional #1: Renacida",
+                    "Liga de La Justicia Internacional #2: El Evangelio Secreto de Maxwell Lord",
+                    "Liga de La Justicia Internacional #3: Alrededor del Mundo",
+                    "Liga de La Justicia Internacional #4: Pasaporte Europeo",
+                    "Liga de La Justicia Internacional #5: El Experimento Teasdale",
+                    "Liga de La Justicia Internacional #6: El Vector Extremista",
+                    "Liga de La Justicia Internacional #7: Nacido Para la Gloria",
+                    "Liga de La Justicia Internacional #8: Quien Porta La Estrella",
+                    "Liga de La Justicia Internacional #9: Rupturas",
+                    "Liga de La Justicia Internacional #10: Origenes Secretos"
+                ], grillaId: "grilla-jli-ovni-orden" },
+                { titulos: [
+                    "Batman: Leyendas del Caballero Oscuro #1: Shaman",
+                    "Batman: Leyendas del Caballero Oscuro #2: Presa",
+                    "Batman: Leyendas del Caballero Oscuro #3: Fe",
+                    "Batman: Leyendas del Caballero Oscuro #4: Volador y Otras Historias",
+                    "Batman: Leyendas del Caballero Oscuro #5: Rostros",
+                    "Batman: Leyendas del Caballero Oscuro #6: Espadas y Otras Historias",
+                    "Batman: Leyendas del Caballero Oscuro #7: Gotico",
+                    "Batman: Leyendas del Caballero Oscuro #8: Destino",
+                    "Batman: Leyendas del Caballero Oscuro #9: Mascaras",
+                    "Batman: Leyendas del Caballero Oscuro #10: Reflejos",
+                    "Batman: Leyendas del Caballero Oscuro #11: Santuarios y Otras Historias",
+                    "Batman: Leyendas del Caballero Oscuro #12: Calor",
+                    "Batman: Leyendas del Caballero Oscuro #13: Veneno",
+                    "Batman: Leyendas del Caballero Oscuro #14: Criminales",
+                    "Batman: Leyendas del Caballero Oscuro #15: Recuperando la Cordura"
+                ], grillaId: "grilla-leyendas-caballero-oscuro-orden" }
             ];
             coleccionesOrdenUnico.forEach(col => {
                 if (col.titulos.includes(item.titulo)) {
@@ -7152,6 +7229,34 @@ if(btnVolverDetectiveRenacimientoOrden) {
 const btnVolverSupermanRenacimientoOrden = document.getElementById('btn-volver-superman-renacimiento-orden');
 if(btnVolverSupermanRenacimientoOrden) {
     btnVolverSupermanRenacimientoOrden.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolverActionComicsRenacimientoOrden = document.getElementById('btn-volver-action-comics-renacimiento-orden');
+if(btnVolverActionComicsRenacimientoOrden) {
+    btnVolverActionComicsRenacimientoOrden.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolverAllStarBatmanRenacimientoOrden = document.getElementById('btn-volver-all-star-batman-renacimiento-orden');
+if(btnVolverAllStarBatmanRenacimientoOrden) {
+    btnVolverAllStarBatmanRenacimientoOrden.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolverJliOvniOrden = document.getElementById('btn-volver-jli-ovni-orden');
+if(btnVolverJliOvniOrden) {
+    btnVolverJliOvniOrden.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolverLeyendasCaballeroOscuroOrden = document.getElementById('btn-volver-leyendas-caballero-oscuro-orden');
+if(btnVolverLeyendasCaballeroOscuroOrden) {
+    btnVolverLeyendasCaballeroOscuroOrden.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
     });
 }
