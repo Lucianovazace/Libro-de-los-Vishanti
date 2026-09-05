@@ -1184,6 +1184,8 @@ const listaMedia = [
 
     // --- PRE-CRISIS (DC Argentina) ---
     { titulo: "Esenciales DC #24: Green Lantern/Green Arrow: Edición Absoluta", categoria: "pre-crisis-dc", subtipo: "green-arrow,green-lantern-hal-jordan", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/green_lantern_green_arrow_cov-96678bddcba5edf30317226036375082-1024-1024.webp" },
+    { titulo: "DC Coleccion Heroes y Villanos #62: Green Lantern Corps: Relatos de Los Corps", categoria: "pre-crisis-dc", subtipo: "green-lantern-hal-jordan", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0e/28/590786f6eb284fd1a2e70f4ac1f4e74d.jpg" },
+    { titulo: "DC Coleccion Heroes y Villanos #73: Superman: La Zona Fantasma", categoria: "pre-crisis-dc", subtipo: "superman", tipo: "Cómic", poster: "https://s3.amazonaws.com/comicgeeks/comics/covers/large-8272281.jpg?1778072622" },
     { titulo: "DC Comics Presenta: Superman/Wonder Woman: Grandes Heroes", categoria: "pre-crisis-dc", subtipo: "superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/dccp_superman_wonder_woman_cov_arg1-3c79b9b23f63c6b92516899570315308-1024-1024.webp" },
     { titulo: "La Nueva Historia del Universo DC", categoria: "pre-crisis-dc", subtipo: "batman,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/la_nueva_historia_del_universo_dc_cov-fa5b6d2b4fe529213217782603281114-1024-1024.webp" },
     { titulo: "La Otra Historia del Universo DC", categoria: "pre-crisis-dc", subtipo: "outsiders", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/la-otra-historia-del-universo-dc-cov1-0065b460bef39851fe16439026062386-1024-1024.webp" },
@@ -1204,13 +1206,13 @@ const listaMedia = [
     { titulo: "Esenciales DC #2: Crisis en Tierras Infinitas", categoria: "post-crisis-dc", subtipo: "batman,flash-barry-allen,liga,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/crisis_cov_arg1-a4a9db904b75118e4315980054342033-1024-1024.webp" },
     { titulo: "DC Coleccion Heroes y Villanos #30: Crisis en Tierras Infinitas", categoria: "post-crisis-dc", subtipo: "batman,flash-barry-allen,liga,superman,wonder-woman", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2024/06/Crisis-en-Tierras-Infinitas-coleccion-Heroes-y-Villanos-DC-vol.-30.webp" },
     { titulo: "DC Coleccion Heroes y Villanos #35: Crisis en Tierras Infinitas Vol. 2", categoria: "post-crisis-dc", subtipo: "batman,flash-barry-allen,liga,superman,wonder-woman", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_858165-MLA77491606369_072024-O.webp" },
-    { titulo: "DC Colección Heroes y Villanos #2: Harley Quinn: Calor en La Ciudad", categoria: "post-crisis-dc", subtipo: "harley-quinn", tipo: "Cómic", poster: "https://i1.whakoom.com/small/38/30/c229e0c97ac547f7986e19d836fcd682.jpg" },
     { titulo: "DC Colección Heroes y Villanos #7: Joker: El Abogado del Diablo", categoria: "post-crisis-dc", subtipo: "joker", tipo: "Cómic", poster: "https://i1.whakoom.com/small/39/21/577ea11e5a4941d7b76b5ac742b29ea7.jpg" },
     { titulo: "Esenciales DC #17: Superman: El Hombre de Acero", categoria: "post-crisis-dc", subtipo: "lex-luthor,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_el_hombre_de_acero_cov1-350021223aab5b6d0f16711637408864-640-0.webp" },
     { titulo: "DC Coleccion Heroes y Villanos #42: Superman: El Hombre de Acero", categoria: "post-crisis-dc", subtipo: "lex-luthor,superman", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_781182-MLA77825068473_072024-O.webp" },
     { titulo: "Superman: Nuevos Comienzos", categoria: "post-crisis-dc", subtipo: "lex-luthor,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_de_john_byrne_cov-00bb343061769ab8f917480046447465-640-0.webp" },
     { titulo: "Leyendas: Escuadron Suicida", categoria: "post-crisis-dc", subtipo: "batman,darkseid,escuadron-suicida,liga,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/leyendas_escuadron_suicida_cov1-ba28f64d2d8b9c686516276992406403-1024-1024.webp" },
     { titulo: "DC Coleccion Heroes y Villanos #45: Escuadron Suicida: Prueba de Fuego", categoria: "post-crisis-dc", subtipo: "amanda-waller,escuadron-suicida", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_992240-MLA75632957737_042024-O.webp" },
+    { titulo: "DC Coleccion Heroes y Villanos #58: Escuadron Suicida: Patada en la Boca", categoria: "post-crisis-dc", subtipo: "amanda-waller,escuadron-suicida", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2024/10/9788447146925-58.webp" },
     { titulo: "Liga de La Justicia Internacional #1: Renacida", categoria: "post-crisis-dc", subtipo: "batman,liga,martian-manhunter", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/jli_cov-9b72618e171087b8c017083668247644-1024-1024.webp" },
     { titulo: "Liga de La Justicia Internacional #2: El Evangelio Secreto de Maxwell Lord", categoria: "post-crisis-dc", subtipo: "liga,martian-manhunter,maxwell-lord", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/liga_de_la_justicia_internacional_02_cov-9e35c825801eb142b717148506995310-1024-1024.webp" },
     { titulo: "Liga de La Justicia Internacional #3: Alrededor del Mundo", categoria: "post-crisis-dc", subtipo: "liga,martian-manhunter,maxwell-lord", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/liga_de_la_justicia_internacional_03_cov-85b5dfb3fb225de3b417238094596148-1024-1024.webp" },
@@ -1236,6 +1238,7 @@ const listaMedia = [
     { titulo: "Flash Vol. 2: Invasion!", categoria: "post-crisis-dc", subtipo: "flash-wally-west", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flash_vol_2_invasion_-_cov-a2911cab6b86d103ac17740242897436-1024-1024.webp" },
     { titulo: "Flash Vol. 3: Conflicto Elemental", categoria: "post-crisis-dc", subtipo: "flash-wally-west", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flash_vol_3_cov-f04dd489fdf37a404b17788694459030-640-0.webp" },
     { titulo: "Flash Vol. 4: Carrera Contra el Tiempo", categoria: "post-crisis-dc", subtipo: "flash-wally-west", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flash_vol_4_cov-dd8cd4e7565031913317873358369731-640-0.webp" },
+    { titulo: "DC Coleccion Heroes y Villanos #64: Flash: Carrera Por La Humanidad", categoria: "post-crisis-dc", subtipo: "flash-wally-west", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_725296-MLA80309288714_112024-O.webp" },
     { titulo: "Esenciales DC #16: Odisea Cosmica", categoria: "post-crisis-dc", subtipo: "batman,darkseid,liga", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/odisea_cosmica_cov_arg-11-e46e20d1d004615d0616572160137359-640-0.webp" },
     { titulo: "Animal Man de Grant Morrison Vol. 2", categoria: "post-crisis-dc", subtipo: "animal-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/animal-man-vol-2-cov-arg1-6c2d76bbb90e8f3c7116239493651603-640-0.webp" },
     { titulo: "Animal Man de Grant Morrison Vol 3", categoria: "post-crisis-dc", subtipo: "animal-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/animal-man-vol-3-cov-arg1-f7020977dfe421c61a16287427772206-1024-1024.webp" },
@@ -1280,6 +1283,9 @@ const listaMedia = [
     { titulo: "Batman: La Espada de Azrael", categoria: "post-crisis-dc", subtipo: "azrael,batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_la_espada_de_azraelcover1-1e2222cb91816eb1de16632196483116-640-0.webp" },
     { titulo: "Aquaman Año Uno", categoria: "post-crisis-dc", subtipo: "aquaman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/aquaman_cov-df88609a441f8b2d9717014681434083-1024-1024.webp" },
     { titulo: "DC Coleccion Heroes y Villanos #36: Starman: Los Pecados del Padre", categoria: "post-crisis-dc", subtipo: "starman", tipo: "Cómic", poster: "https://i1.whakoom.com/small/07/2d/1e627466df774018b85fc9cfb38e225d.jpg" },
+    { titulo: "DC Coleccion Heroes y Villanos #54: Deathstroke Ciudad de Asesinos", categoria: "post-crisis-dc", subtipo: "batman,deathstroke", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_769524-MLA76946409279_062024-O.webp" },
+    { titulo: "DC Coleccion Heroes y Villanos #59: Aquaman: Las Cronicas de Atlantis", categoria: "post-crisis-dc", subtipo: "aquaman", tipo: "Cómic", poster: "https://tajmahalcomics.com/wp-content/uploads/2024/05/HyV_59_Aquaman_Las_cro%CC%81nicas_de_Atlantis_cover_DEF-1-300x455.jpg" },
+    { titulo: "DC Coleccion Heroes y Villanos #57: Legion de Superheroes: La Oscuridad Inmimente", categoria: "post-crisis-dc", subtipo: "legion-superheroes", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/385/701/products/2ac4d913355c4cddb451c2ea7c55c8ca-24913dc671eeab23bc17158046473557-480-0.webp" },
     { titulo: "DC Coleccion Heroes y Villanos #39: Hawkman: Mundo Halcon", categoria: "post-crisis-dc", subtipo: "hawkman", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2024/05/39-Hawkman-Mundo-Halcon-.webp" },
     { titulo: "Batman: Knightfall #0: Camino a la Caída del Caballero", categoria: "post-crisis-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_knightfall_vol_0_cov-88dbb35b4d86497e7f17497750812558-640-0.webp" },
     { titulo: "Batman: Knightfall #1: Preludio a La Caída del Caballero", categoria: "post-crisis-dc", subtipo: "bane,batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_knightfall_vol_1_cov1-94c142bad4e22a9b1c16874803037803-1024-1024.webp" },
@@ -1328,12 +1334,27 @@ const listaMedia = [
     { titulo: "Wonder Woman: Sacrificio", categoria: "post-crisis-dc", subtipo: "liga,maxwell-lord,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/wonder_woman_vol_2_cov-f4638114fd1fcd5e3f17715403785100-640-0.webp" },
     { titulo: "DC Colección Heroes y Villanos #26: Crisis Infinita: Sacrificio", categoria: "post-crisis-dc", subtipo: "liga,maxwell-lord,superman,wonder-woman", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2024/05/26-Crisis-infinita-Sacrificio.webp" },
     { titulo: "DC Colección Heroes y Villanos #9: Wonder Woman: Reflexiones", categoria: "post-crisis-dc", subtipo: "wonder-woman", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_610036-MLA75463330292_042024-O.webp" },
+    { titulo: "DC Coleccion Heroes y Villanos #60: Gotham Central: Blancos Faciles", categoria: "post-crisis-dc", subtipo: "batman", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2024/10/9788447146925-60.webp" },
+    { titulo: "DC Coleccion Heroes y Villanos #61: Aves de Presa: Caceria", categoria: "post-crisis-dc", subtipo: "black-canary", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_740487-MLA79370098422_092024-O.webp" },
     { titulo: "Esenciales DC #18: Green Lantern: Renacimiento", categoria: "post-crisis-dc", subtipo: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/green_lantern_renacimiento1-aa30848fc26ba013fa16778128850771-480-0.webp" },
     { titulo: "DC Coleccion Heroes y Villanos #33: Green Lantern: Renacimiento", categoria: "post-crisis-dc", subtipo: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://cdnx.jumpseller.com/shazam-online/image/25891019/HyV_33_GreenLantern_Renacimiento.jpg?1658778178" },
     { titulo: "Green Lantern: Sin Miedo", categoria: "post-crisis-dc", subtipo: "green-lantern-hal-jordan", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/greenlanter_sin_miedo_cov-9f25a29a48c03b5a6817856279516525-1024-1024.webp" },
     { titulo: "DC Coleccion Heroes y Villanos #37: Green Lantern: La Guerra de Los Sinestro Corps Vol. 1", categoria: "post-crisis-dc", subtipo: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPbIEvA7roAA_Pj5586O7CFV5_xFBsUsjbXSdamT-M6BAhcAIc2pNnhmQ&s=10" },
     { titulo: "DC Coleccion Heroes y Villanos #46 Green Lantern: La Guerra de Los Sinestro Corps Vol. 2", categoria: "post-crisis-dc", subtipo: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_821442-MLA75155983405_032024-O.webp" },
     { titulo: "DC Coleccion Heroes y Villanos #53: Sociedad de La Justicia de America: La Nueva Era", categoria: "post-crisis-dc", subtipo: "jsa", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2024/05/53-Sociedad-de-la-justicia-de-america-la-nueva-era.webp" },
+    { titulo: "DC Coleccion Heroes y Villanos #56: Liga de La Justicia: La Saga del Rayo", categoria: "post-crisis-dc", subtipo: "batman,flash-barry-allen,jsa,liga,superman", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_830627-MLA76316371007_052024-O.webp" },
+    { titulo: "DC Coleccion Heroes y Villanos #63: Sociedad de La Justicia de America: Kingdom Come Vol. 1", categoria: "post-crisis-dc", subtipo: "jsa,superman", tipo: "Cómic", poster: "https://www.milcomics.com/1451323-large_default/coleccion-heroes-y-villanos-vol-63-sociedad-de-la-justicia-de-america-kingdom-come-vol-1.jpg" },
+    { titulo: "DC Coleccion Heroes y Villanos #65: Los Seis Secretos: Seis Grados de Desolacion", categoria: "post-crisis-dc", subtipo: "amanda-waller", tipo: "Cómic", poster: "https://www.tebeosfera.com/T3content/img/T3_numeros/6/5/heroes_y_villanos_2021_ecc_salvat_65/w-200_heroes_y_villanos_2021_ecc_salvat_65.jpg" },
+    { titulo: "DC Coleccion Heroes y Villanos #66: Sociedad de La Justicia de America: Kingdom Come Vol. 2", categoria: "post-crisis-dc", subtipo: "jsa,superman", tipo: "Cómic", poster: "https://i1.whakoom.com/thumb/24/12/2959c005b10349c4bc79af39fd837c0c.jpg" },
+    { titulo: "DC Coleccion Heroes y Villanos #67: Vigilante: Yo Soy La Justicia", categoria: "post-crisis-dc", subtipo: "vigilante", tipo: "Cómic", poster: "https://cuanticagrafica.com/wp-content/uploads/2023/08/vigilante-destacada.jpg?w=640" },
+    { titulo: "DC Coleccion Heroes y Villanos #69: La Legion de Superheroes: Legion de Tres Mundos", categoria: "post-crisis-dc", subtipo: "legion-superheroes", tipo: "Cómic", poster: "https://www.milcomics.com/1454263-medium_default/coleccion-heroes-y-villanos-vol-69-legion-de-superheroes-la-legion-de-tres-mundos.jpg" },
+    { titulo: "DC Coleccion Heroes y Villanos #71: Hawkman: La Leyenda", categoria: "post-crisis-dc", subtipo: "hawkman", tipo: "Cómic", poster: "https://imagessl5.casadellibro.com/a/l/s7/75/9788419263575.webp" },
+    { titulo: "DC Coleccion Heroes y Villanos #75: Nightwing: Un Caballero en Blüdhaven", categoria: "post-crisis-dc", subtipo: "dick-grayson", tipo: "Cómic", poster: "https://www.milcomics.com/1454259-thickbox_default/coleccion-heroes-y-villanos-vol-75-nightwing-un-caballero-en-bludhaven.jpg" },
+    { titulo: "DC Coleccion Heroes y Villanos #76: Aquaman: El Tiempo y La Marea", categoria: "post-crisis-dc", subtipo: "aquaman", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_717657-MLA84737736656_052025-O.webp" },
+    { titulo: "DC Coleccion Heroes y Villanos #77: Supergirl: El Reino de Los Superhombres Ciborg", categoria: "post-crisis-dc", subtipo: "cyborg-superman,supergirl", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_717963-MLA85362108152_062025-O.webp" },
+    { titulo: "DC Coleccion Heroes y Villanos #78: Liga de La Justicia: Pesadilla de Verano", categoria: "post-crisis-dc", subtipo: "liga", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_660154-MLA86040343898_062025-O.webp" },
+    { titulo: "DC Coleccion Heroes y Villanos #79: Batman: Caballeros de Gotham", categoria: "post-crisis-dc", subtipo: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/36/18/1002c0cea69c447392ba6bce228d2295.jpg" },
+    { titulo: "DC Coleccion Heroes y Villanos #80: Superman: Encuentros Cosmicos", categoria: "post-crisis-dc", subtipo: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/3b/15/4daef0b8f87b46e387f522f14c7f8ec8.jpg" },
     { titulo: "DC Colección Heroes y Villanos #12: Crisis Infinita: El Proyecto Omac", categoria: "post-crisis-dc", subtipo: "amanda-waller,batman,liga,maxwell-lord", tipo: "Cómic", poster: "https://cdnx.jumpseller.com/shazam-online/image/20611836/HyV_12_El_proyecto_OMAC_cover_DEF.jpg?1643653510" },
     { titulo: "DC Coleccion Heroes y Villanos #32: Crisis Infinita: La Guerra Rann/Thanagar", categoria: "post-crisis-dc", subtipo: "liga", tipo: "Cómic", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDUitRPBGZKl-CU0dI3Ck1sZdMC2oIh7d-2nPdQVS3TxFMZt7TANji_3zr&s=10" },
     { titulo: "DC Coleccion Heroes y Villanos #41: Crisis Infinita: Villanos Unidos", categoria: "post-crisis-dc", subtipo: "amanda-waller,liga,superman", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_790689-MLA75507172402_042024-O.webp" },
@@ -1348,6 +1369,7 @@ const listaMedia = [
     { titulo: "Esenciales DC #20: Flash: Renacimiento", categoria: "post-crisis-dc", subtipo: "eobard-thawne,flash-barry-allen", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flash_renacimiento_cov_arg1-239ad6e9c4a2434fb616853359103555-1024-1024.webp" },
     { titulo: "DC Colección Heroes y Villanos #4: Flash: Renacimiento", categoria: "post-crisis-dc", subtipo: "eobard-thawne,flash-barry-allen", tipo: "Cómic", poster: "https://i1.whakoom.com/small/29/0d/d3e8a7dfc71349c0b243e9e52e8339de.jpg" },
     { titulo: "DC Coleccion Heroes y Villanos #51: Lex Luthor El Anillo Negro Vol. 1", categoria: "post-crisis-dc", subtipo: "lex-luthor", tipo: "Cómic", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT08i2vvrcwFNnbYOgNekS62ae9vCvfpor2gBhYCBMyT9i7jOfyrj9p8Fg&s=10" },
+    { titulo: "DC Coleccion Heroes y Villanos #55 Lex Luthor: El Anillo Negro Vol. 2", categoria: "post-crisis-dc", subtipo: "lex-luthor", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_915261-MLA75346778886_032024-O.webp" },
     { titulo: "Esenciales DC #11: La Noche Mas Oscura", categoria: "post-crisis-dc", subtipo: "batman,green-lantern-hal-jordan,liga", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/la_noche_mas_oscura_2da_cov-a31e86028f1375b6e917685742571677-1024-1024.webp" },
     { titulo: "Esenciales DC #23: Batman: El Espejo Negro", categoria: "post-crisis-dc", subtipo: "batman,dick-grayson", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_the_black_mirror_cov-4189d8cc24746a418217105079252954-1024-1024.webp" },
     { titulo: "Esenciales DC #1: Flashpoint Absoluto", categoria: "post-crisis-dc", subtipo: "batman,flash-barry-allen", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flashpoint_4taed_cov_arg1-4c2c6e6a3c5b6220c316851089691513-1024-1024.webp" },
@@ -1359,6 +1381,8 @@ const listaMedia = [
 
     // --- LOS NUEVOS 52 (DC Argentina) — curada, conectada al Camino del Héroe/Villano ---
     { titulo: "DC Colección Heroes y Villanos #5: Maldad Eterna", categoria: "los-nuevos-52-dc-argentina", personajes: "lex-luthor,liga", tipo: "Cómic", poster: "https://i1.whakoom.com/small/11/06/3c7d972c97514b098ea5e35283e9c326.jpg" },
+    { titulo: "DC Coleccion Heroes y Villanos #72: Batgirl: El Reflejo Mas Oscuro", categoria: "los-nuevos-52-dc-argentina", personajes: "batgirl", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_926404-MLA82729160314_032025-O.webp" },
+    { titulo: "DC Colección Heroes y Villanos #2: Harley Quinn: Calor en La Ciudad", categoria: "los-nuevos-52-dc-argentina", personajes: "harley-quinn", tipo: "Cómic", poster: "https://i1.whakoom.com/small/38/30/c229e0c97ac547f7986e19d836fcd682.jpg" },
     { titulo: "DC Colección Heroes y Villanos #14: Liga de La Justicia: La Guerra de Darkseid Vol. 1", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,darkseid,liga,superman", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2025/03/9788447146925-14.webp" },
     { titulo: "DC Colección Heroes y Villanos #16: Aquaman: La Fosa", categoria: "los-nuevos-52-dc-argentina", personajes: "aquaman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/057/977/products/hyv_16_la_fosa_cover_def1-fb1d252627fe6a6b2316558407025734-480-0.webp" },
     { titulo: "DC Colección Heroes y Villanos #19: Liga de La Justicia: La Guerra de Darkseid Vol. 2", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,darkseid,liga,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/057/977/products/hyv_19_la_guerra_de_darkseid_2_cover_def1-0e67f440b8cc035eb616613468384272-1024-1024.webp" },
@@ -1375,6 +1399,9 @@ const listaMedia = [
     { titulo: "Los Últimos Días de Superman", categoria: "renacimiento-dc", subtipo: "superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/last_days_of_superman_cov_arg1-cbf1c701713e4e584915953441617103-1024-1024.webp" },
     { titulo: "Universo DC Renacimiento", categoria: "renacimiento-dc", subtipo: "aquaman,batman,cyborg,flash-barry-allen,flash-wally-west,green-lantern-jessica-cruz,green-lantern-simon-baz,liga,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/dc_rebirth_cov_arg_var1-e50af0cf8063fa961315954507956862-640-0.webp" },
     { titulo: "Wonder Woman: Año Uno", categoria: "renacimiento-dc", subtipo: "wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/wonder-woman-ano-uno-cov1-14a63bf5280ee6dd8016082246968697-1024-1024.webp" },
+    { titulo: "DC Coleccion Heroes y Villanos #68: Deathstroke: El Profesional", categoria: "renacimiento-dc", subtipo: "deathstroke,superman", tipo: "Cómic", poster: "https://www.quimeraquiroga.cl/cdn/shop/files/9bb4959ef5574ffa99878797c4c88f5c_580x.jpg?v=1783009684" },
+    { titulo: "DC Coleccion Heroes y Villanos #70: Wonder Woman: Las Mentiras", categoria: "renacimiento-dc", subtipo: "wonder-woman", tipo: "Cómic", poster: "https://dcdn-us.mitiendanube.com/stores/001/690/359/products/70-e61858d1458f962dd017600276135707-1024-1024.webp" },
+    { titulo: "DC Coleccion Heroes y Villanos #74: Wonder Woman: La Verdad", categoria: "renacimiento-dc", subtipo: "wonder-woman", tipo: "Cómic", poster: "https://imagessl5.casadellibro.com/a/l/s7/05/9788419263605.webp" },
     { titulo: "DC Coleccion Heroes y Villanos #34: Wonder Woman: Año Uno", categoria: "renacimiento-dc", subtipo: "wonder-woman", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_645399-MLA77236109975_062024-O.webp" },
     { titulo: "DC Coleccion Heroes y Villanos #40: Aquaman: El Ahogamiento", categoria: "renacimiento-dc", subtipo: "aquaman,black-manta", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2024/05/40-Aquaman-El-ahogamiento.webp" },
     { titulo: "DC Colección Heroes y Villanos #21: Batwoman: Los Muchos Brazos de La Muerte", categoria: "renacimiento-dc", subtipo: "batwoman", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_779413-MLA53460942286_012023-O.webp" },
@@ -2879,6 +2906,22 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "colecciones-hub",
+        titulo: "Colecciones",
+        categoria: "comics",
+        poster: "https://placehold.co/300x450?text=Colecciones",
+        esContenedor: true,
+        peliculas: []
+    },
+    {
+        id: "dc-heroes-y-villanos-salvat",
+        titulo: "DC Colección de Héroes y Villanos",
+        categoria: "colecciones-hub",
+        poster: "https://placehold.co/300x450?text=Heroes+y+Villanos",
+        esContenedor: true,
+        peliculas: []
+    },
+    {
         id: "dc-camino-heroe",
         titulo: "El Camino del Héroe",
         categoria: "dc-comics-hub",
@@ -3651,6 +3694,8 @@ function renderizarColecciones() {
         "dragonball": "seccion-dragonball",
         "anime": "seccion-anime",
         "comics": "seccion-comics",
+        "colecciones-hub": "seccion-colecciones-hub",
+        "dc-heroes-y-villanos-salvat": "seccion-dc-heroes-y-villanos-salvat",
         "dc-comics-hub": "seccion-dc-comics-hub",
         "dc-camino-heroe": "seccion-dc-camino-heroe",
         "dc-orden-lectura": "seccion-dc-orden-lectura",
@@ -4002,10 +4047,50 @@ function renderizarContenido() {
                 const grillaVillanoElseworlds = document.getElementById("grilla-camino-villano-elseworlds");
                 if (grillaVillanoElseworlds) grillaVillanoElseworlds.insertAdjacentHTML('beforeend', htmlTarjeta);
             }
+
+            // Colección Héroes y Villanos de Salvat: cualquier item cuyo título
+            // empiece con "DC Colec... Heroes y Villanos #N" pertenece a esta
+            // colección coleccionable, sin importar en qué era/categoría viva.
+            // Se pushea a las 3 vistas (cronológico ya queda bien porque
+            // listaMedia ya está ordenada cronológicamente; predeterminado y
+            // elseworlds se reordenan/filtran después con data-salvat-num).
+            const matchSalvat = item.titulo.match(/^DC Colec[a-záéíóúñ]* Heroes y Villanos #(\d+)/i);
+            if (matchSalvat) {
+                const numSalvat = matchSalvat[1];
+                const htmlTarjetaSalvat = htmlTarjeta.replace(
+                    'class="tarjeta-media"',
+                    `class="tarjeta-media" data-salvat-num="${numSalvat}"`
+                );
+                const grillaCronologico = document.getElementById("grilla-salvat-cronologico");
+                if (grillaCronologico) grillaCronologico.insertAdjacentHTML('beforeend', htmlTarjetaSalvat);
+
+                const grillaPredeterminado = document.getElementById("grilla-salvat-predeterminado");
+                if (grillaPredeterminado) grillaPredeterminado.insertAdjacentHTML('beforeend', htmlTarjetaSalvat);
+
+                if (item.categoria === "elseworlds-otros-dc" || item.categoria === "absolute-dc") {
+                    const grillaSalvatElseworlds = document.getElementById("grilla-salvat-elseworlds");
+                    if (grillaSalvatElseworlds) grillaSalvatElseworlds.insertAdjacentHTML('beforeend', htmlTarjetaSalvat);
+                }
+            }
         }
     });
 
+    ordenarGrillaPorNumeroSalvat();
     sincronizarVistos();
+}
+
+// Ordena por data-salvat-num ascendente la vista "Predeterminado" (y la
+// de Elseworlds) de la Colección Héroes y Villanos de Salvat. La vista
+// "Cronológico" no se reordena: ya sale en el orden correcto porque
+// listaMedia está armada cronológicamente de punta a punta.
+function ordenarGrillaPorNumeroSalvat() {
+    ['grilla-salvat-predeterminado', 'grilla-salvat-elseworlds'].forEach(gridId => {
+        const contenedor = document.getElementById(gridId);
+        if (!contenedor) return;
+        const tarjetas = Array.from(contenedor.querySelectorAll('.tarjeta-media'));
+        tarjetas.sort((a, b) => parseInt(a.getAttribute('data-salvat-num')) - parseInt(b.getAttribute('data-salvat-num')));
+        tarjetas.forEach(t => contenedor.appendChild(t));
+    });
 }
 
 // Ordena la grilla de "Marvel: Animación" por número de Tierra (ascendente).
@@ -6819,6 +6904,36 @@ if(btnVolverDcComicsHub) {
         cambiarSeccion(document.getElementById('seccion-comics'));
     });
 }
+
+const btnVolverColeccionesHub = document.getElementById('btn-volver-colecciones-hub');
+if(btnVolverColeccionesHub) {
+    btnVolverColeccionesHub.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-comics'));
+    });
+}
+
+const btnVolverDcHeroesYVillanosSalvat = document.getElementById('btn-volver-dc-heroes-y-villanos-salvat');
+if(btnVolverDcHeroesYVillanosSalvat) {
+    btnVolverDcHeroesYVillanosSalvat.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+// ==========================================
+// FILTROS "DC COLECCIÓN DE HÉROES Y VILLANOS" — 3 vistas (predeterminado/cronológico/elseworlds)
+// ==========================================
+const botonesFiltroVistaSalvat = document.querySelectorAll('.btn-filtro-vista-salvat');
+botonesFiltroVistaSalvat.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroVistaSalvat.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const vista = this.getAttribute('data-vista');
+
+        document.getElementById('grilla-salvat-predeterminado').classList.toggle('oculto', vista !== 'predeterminado');
+        document.getElementById('grilla-salvat-cronologico').classList.toggle('oculto', vista !== 'cronologico');
+        document.getElementById('grilla-salvat-elseworlds').classList.toggle('oculto', vista !== 'elseworlds');
+    });
+});
 
 const btnVolverDcCaminoHeroe = document.getElementById('btn-volver-dc-camino-heroe');
 if(btnVolverDcCaminoHeroe) {
