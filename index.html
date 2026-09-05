@@ -887,11 +887,60 @@
         <div class="filtros-seccion">
             <button class="btn-filtro-vista-salvat activo" data-vista="predeterminado">Predeterminado (1-80)</button>
             <button class="btn-filtro-vista-salvat" data-vista="cronologico">Cronológico</button>
-            <button class="btn-filtro-vista-salvat" data-vista="elseworlds">Elseworlds</button>
         </div>
         <div class="grilla-biblioteca" id="grilla-salvat-predeterminado"></div>
         <div class="grilla-biblioteca oculto" id="grilla-salvat-cronologico"></div>
-        <div class="grilla-biblioteca oculto" id="grilla-salvat-elseworlds"></div>
+    </section>
+
+    <!-- DC COLECCIÓN ESENCIALES (OVNI PRESS) -->
+    <section id="seccion-dc-esenciales-salvat" class="oculto">
+        <button class="btn-volver" id="btn-volver-dc-esenciales-salvat">← Volver a Colecciones</button>
+        <h2>DC Colección Esenciales</h2>
+        <p style="font-size:12px; color:#aaa; margin-bottom:12px;">Los tomos de la colección Esenciales de Ovni Press Argentina, en dos vistas distintas.</p>
+        <div class="filtros-seccion">
+            <button class="btn-filtro-vista-esenciales activo" data-vista="predeterminado">Predeterminado</button>
+            <button class="btn-filtro-vista-esenciales" data-vista="cronologico">Cronológico</button>
+            <button class="btn-filtro-vista-esenciales" data-vista="elseworlds">Elseworlds</button>
+        </div>
+        <div class="grilla-biblioteca" id="grilla-esenciales-predeterminado"></div>
+        <div class="grilla-biblioteca oculto" id="grilla-esenciales-cronologico"></div>
+        <div class="grilla-biblioteca oculto" id="grilla-esenciales-elseworlds"></div>
+    </section>
+
+    <!-- FLASH DE MESSNER-LOEBS (COLECCIÓN SIN FILTROS, ORDEN ÚNICO) -->
+    <section id="seccion-flash-messner-loebs" class="oculto">
+        <button class="btn-volver" id="btn-volver-flash-messner-loebs">← Volver a Colecciones</button>
+        <h2>Flash de Messner-Loebs</h2>
+        <p style="font-size:12px; color:#aaa; margin-bottom:12px;">La etapa de Wally West como Flash en los primeros años Post-Crisis, en su único orden de lectura posible.</p>
+        <div class="grilla-biblioteca" id="grilla-flash-messner-loebs"></div>
+    </section>
+
+    <!-- LIGA DE LA JUSTICIA (RENACIMIENTO) - ORDEN ÚNICO -->
+    <section id="seccion-jl-renacimiento-orden" class="oculto">
+        <button class="btn-volver" id="btn-volver-jl-renacimiento-orden">← Volver a Colecciones</button>
+        <h2>Liga de la Justicia (Renacimiento)</h2>
+        <div class="grilla-biblioteca" id="grilla-jl-renacimiento-orden"></div>
+    </section>
+
+    <!-- FLASH (RENACIMIENTO) - ORDEN ÚNICO -->
+    <section id="seccion-flash-renacimiento-orden" class="oculto">
+        <button class="btn-volver" id="btn-volver-flash-renacimiento-orden">← Volver a Colecciones</button>
+        <h2>Flash (Renacimiento)</h2>
+        <div class="grilla-biblioteca" id="grilla-flash-renacimiento-orden"></div>
+    </section>
+
+    <!-- BATMAN (RENACIMIENTO) - ORDEN ÚNICO -->
+    <section id="seccion-batman-renacimiento-orden" class="oculto">
+        <button class="btn-volver" id="btn-volver-batman-renacimiento-orden">← Volver a Colecciones</button>
+        <h2>Batman (Renacimiento)</h2>
+        <div class="grilla-biblioteca" id="grilla-batman-renacimiento-orden"></div>
+    </section>
+
+    <!-- DETECTIVE COMICS (RENACIMIENTO) - ORDEN ÚNICO -->
+    <section id="seccion-detective-renacimiento-orden" class="oculto">
+        <button class="btn-volver" id="btn-volver-detective-renacimiento-orden">← Volver a Colecciones</button>
+        <h2>Detective Comics (Renacimiento)</h2>
+        <div class="grilla-biblioteca" id="grilla-detective-renacimiento-orden"></div>
     </section>
 
     <!-- SECCIÓN: JUEGOS (HUB) -->
@@ -1039,6 +1088,7 @@
             <button class="btn-filtro-post-crisis" data-tipo="jsa">JSA</button>
             <button class="btn-filtro-post-crisis" data-tipo="deathstroke">Deathstroke</button>
             <button class="btn-filtro-post-crisis" data-tipo="legion-superheroes">Legión de Superhéroes</button>
+            <button class="btn-filtro-post-crisis" data-tipo="man-bat">Man-Bat</button>
             <button class="btn-filtro-post-crisis" data-tipo="vigilante">Vigilante</button>
             <button class="btn-filtro-post-crisis" data-tipo="supergirl">Supergirl</button>
             <button class="btn-filtro-post-crisis" data-tipo="cyborg-superman">Cyborg Superman</button>
@@ -1144,6 +1194,7 @@
             <button class="btn-filtro-camino-elseworlds" data-tipo="jason-todd">Jason Todd</button>
             <button class="btn-filtro-camino-elseworlds" data-tipo="escuadron-suicida">Escuadrón Suicida</button>
             <button class="btn-filtro-camino-elseworlds" data-tipo="supergirl">Supergirl</button>
+            <button class="btn-filtro-camino-elseworlds" data-tipo="dick-grayson">Dick Grayson</button>
         </div>
         <div class="grilla-biblioteca" id="grilla-camino-heroe-elseworlds"></div>
     </section>
@@ -1178,6 +1229,7 @@
             <button class="btn-filtro-villano-principal" data-tipo="brainiac">Brainiac</button>
             <button class="btn-filtro-villano-principal" data-tipo="prometheus">Prometheus</button>
             <button class="btn-filtro-villano-principal" data-tipo="ultra-humanite">Ultra-Humanite</button>
+            <button class="btn-filtro-villano-principal" data-tipo="man-bat">Man-Bat</button>
             <button class="btn-filtro-villano-principal" data-tipo="cyborg-superman">Cyborg Superman</button>
             <button class="btn-filtro-villano-principal" data-tipo="black-manta">Black Manta</button>
             <button class="btn-filtro-villano-principal" data-tipo="penguin">Pingüino</button>
@@ -1207,6 +1259,7 @@
             <button class="btn-filtro-villano-elseworlds" data-tipo="killer-croc">Killer Croc</button>
             <button class="btn-filtro-villano-elseworlds" data-tipo="riddler">Riddler</button>
             <button class="btn-filtro-villano-elseworlds" data-tipo="penguin">Pingüino</button>
+            <button class="btn-filtro-villano-elseworlds" data-tipo="scarecrow">Espantapájaros</button>
             <button class="btn-filtro-villano-elseworlds" data-tipo="two-face">Dos Caras</button>
             <button class="btn-filtro-villano-elseworlds" data-tipo="bane">Bane</button>
             <button class="btn-filtro-villano-elseworlds" data-tipo="ras-al-ghul">Ra's Al Ghul</button>
@@ -1228,6 +1281,7 @@
             <button class="btn-filtro-elseworlds-otros" data-tipo="superman">Superman</button>
             <button class="btn-filtro-elseworlds-otros" data-tipo="wonder-woman">Wonder Woman</button>
             <button class="btn-filtro-elseworlds-otros" data-tipo="supergirl">Supergirl</button>
+            <button class="btn-filtro-elseworlds-otros" data-tipo="dick-grayson">Dick Grayson</button>
             <button class="btn-filtro-elseworlds-otros" data-tipo="lex-luthor">Lex Luthor</button>
             <button class="btn-filtro-elseworlds-otros" data-tipo="liga">Liga de la Justicia</button>
             <button class="btn-filtro-elseworlds-otros" data-tipo="green-lantern-hal-jordan">Green Lantern</button>
@@ -1240,6 +1294,8 @@
             <button class="btn-filtro-elseworlds-otros" data-tipo="riddler">Riddler</button>
             <button class="btn-filtro-elseworlds-otros" data-tipo="penguin">Pingüino</button>
             <button class="btn-filtro-elseworlds-otros" data-tipo="killer-croc">Killer Croc</button>
+            <button class="btn-filtro-elseworlds-otros" data-tipo="ras-al-ghul">Ra's Al Ghul</button>
+            <button class="btn-filtro-elseworlds-otros" data-tipo="scarecrow">Espantapájaros</button>
             <button class="btn-filtro-elseworlds-otros" data-tipo="anarky">Anarky</button>
             <button class="btn-filtro-elseworlds-otros" data-tipo="deathstroke">Deathstroke</button>
             <button class="btn-filtro-elseworlds-otros" data-tipo="jason-todd">Jason Todd</button>
