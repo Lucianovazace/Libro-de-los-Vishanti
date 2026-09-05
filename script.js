@@ -2953,7 +2953,7 @@ const colecciones = [
         id: "flash-messner-loebs",
         titulo: "Flash de Messner-Loebs",
         categoria: "colecciones-hub",
-        poster: "https://placehold.co/300x450?text=Flash+Messner-Loebs",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flushman-sobrecubierta-6a284b32bf58c3409f17600404520993-1024-1024.webp",
         esContenedor: true,
         peliculas: []
     },
@@ -2961,7 +2961,7 @@ const colecciones = [
         id: "jl-renacimiento-orden",
         titulo: "Liga de la Justicia (Renacimiento)",
         categoria: "colecciones-hub",
-        poster: "https://placehold.co/300x450?text=Liga+Renacimiento",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/justice_league_vol_01_cov_arg1-0011a9d12c435da3d215952948711524-1024-1024.webp",
         esContenedor: true,
         peliculas: []
     },
@@ -2969,7 +2969,7 @@ const colecciones = [
         id: "flash-renacimiento-orden",
         titulo: "Flash (Renacimiento)",
         categoria: "colecciones-hub",
-        poster: "https://placehold.co/300x450?text=Flash+Renacimiento",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flash_vol_01_cov_arg1-0b6210aa8ebe79480315952940515737-640-0.webp",
         esContenedor: true,
         peliculas: []
     },
@@ -2977,7 +2977,7 @@ const colecciones = [
         id: "batman-renacimiento-orden",
         titulo: "Batman (Renacimiento)",
         categoria: "colecciones-hub",
-        poster: "https://placehold.co/300x450?text=Batman+Renacimiento",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vol_01_cov_arg1-fa7c5ab99dc5a1a5c215952931975077-640-0.webp",
         esContenedor: true,
         peliculas: []
     },
@@ -2985,7 +2985,15 @@ const colecciones = [
         id: "detective-renacimiento-orden",
         titulo: "Detective Comics (Renacimiento)",
         categoria: "colecciones-hub",
-        poster: "https://placehold.co/300x450?text=Detective+Renacimiento",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/detective_comics_vol_01_cov_arg1-7aa3d0c5ab3ffcf49615952937595959-1024-1024.webp",
+        esContenedor: true,
+        peliculas: []
+    },
+    {
+        id: "superman-renacimiento-orden",
+        titulo: "Superman (Renacimiento)",
+        categoria: "colecciones-hub",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_lois__clark_cov_arg1-887fa05632c017439c15953344471109-640-0.webp",
         esContenedor: true,
         peliculas: []
     },
@@ -3770,6 +3778,7 @@ function renderizarColecciones() {
         "flash-renacimiento-orden": "seccion-flash-renacimiento-orden",
         "batman-renacimiento-orden": "seccion-batman-renacimiento-orden",
         "detective-renacimiento-orden": "seccion-detective-renacimiento-orden",
+        "superman-renacimiento-orden": "seccion-superman-renacimiento-orden",
         "dc-comics-hub": "seccion-dc-comics-hub",
         "dc-camino-heroe": "seccion-dc-camino-heroe",
         "dc-orden-lectura": "seccion-dc-orden-lectura",
@@ -4223,7 +4232,16 @@ function renderizarContenido() {
                     "Detective Comics Vol. 5: Un Lugar Solitario Para Vivir",
                     "Detective Comics Vol. 6: Hombres Murciélagos Eternos",
                     "Detective Comics Vol. 7: Mitología"
-                ], grillaId: "grilla-detective-renacimiento-orden" }
+                ], grillaId: "grilla-detective-renacimiento-orden" },
+                { titulos: [
+                    "Superman: Lois & Clark — La Llegada",
+                    "Los Últimos Días de Superman",
+                    "Superman Vol. 1: Hijo de Superman",
+                    "Superman Vol. 2: Las Pruebas del Superhijo",
+                    "Superman Vol. 3: Renacido",
+                    "Superman Vol. 4: Amanecer Negro",
+                    "Superman Vol. 5: Universo Bizarro"
+                ], grillaId: "grilla-superman-renacimiento-orden" }
             ];
             coleccionesOrdenUnico.forEach(col => {
                 if (col.titulos.includes(item.titulo)) {
@@ -7127,6 +7145,13 @@ if(btnVolverBatmanRenacimientoOrden) {
 const btnVolverDetectiveRenacimientoOrden = document.getElementById('btn-volver-detective-renacimiento-orden');
 if(btnVolverDetectiveRenacimientoOrden) {
     btnVolverDetectiveRenacimientoOrden.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolverSupermanRenacimientoOrden = document.getElementById('btn-volver-superman-renacimiento-orden');
+if(btnVolverSupermanRenacimientoOrden) {
+    btnVolverSupermanRenacimientoOrden.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
     });
 }
