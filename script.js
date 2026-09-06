@@ -1663,12 +1663,12 @@ const listaMedia = [
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #I: Origenes Marvel: Los Sesenta", categoria: "marvel-edad-plata", subtipo: "spider-man,x-men,cuatro-fantasticos,hulk,thor,iron-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/09/2f/33c2ff95912f4358b88500bc4a97d59a.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #II: Thor: Historias de Asgard", categoria: "marvel-edad-plata", subtipo: "thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/09/2f/33c2ff95912f4358b88500bc4a97d59a.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #III: Doctor Strange: Nombre Anonimo, Tiempo Eterno", categoria: "marvel-edad-plata", subtipo: "doctor-strange", tipo: "Cómic", poster: "https://i1.whakoom.com/small/29/28/9cbc0e1a383149119f1b4ecc7771aba5.jpg" },
-    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #IV: Cuatro Fantasticos: La Llegada de Galactus", categoria: "marvel-edad-plata", subtipo: "cuatro-fantasticos", tipo: "Cómic", poster: "https://i1.whakoom.com/small/22/13/36e05d88e41043a4b14238d3bcce12e4.jpg" },
-    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #V: Cuatro Fantasticos: El Dia del Juicio", categoria: "marvel-edad-plata", subtipo: "cuatro-fantasticos", tipo: "Cómic", poster: "https://i1.whakoom.com/small/28/2f/e5d3c6fc626a4ab1a814e81cd35a5109.jpg" },
-    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #VI: El Asombroso Spider-Man: Spider-Man Nunca Mas", categoria: "marvel-edad-plata", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/09/27/50eb949215af47108fa2e537773b054b.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #VIII: Nick Fury: Agente de S.H.I.E.L.D. Parte Uno", categoria: "marvel-edad-plata", subtipo: "nick-fury", tipo: "Cómic", poster: "https://i1.whakoom.com/small/18/29/2214d33dbac34636b6bd5016e4d172c4.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #IX: Nick Fury: Agente de S.H.I.E.L.D. Parte Dos", categoria: "marvel-edad-plata", subtipo: "nick-fury", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0d/1a/c9f699d0ff4d452e89f83f0fcd3de5c9.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #X: Inhumanos", categoria: "marvel-edad-plata", subtipo: "inhumanos", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0c/28/23be5b2676e04036977b85a7621eb648.jpg" },
+    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #IV: Cuatro Fantasticos: La Llegada de Galactus", categoria: "marvel-edad-plata", subtipo: "cuatro-fantasticos", tipo: "Cómic", poster: "https://i1.whakoom.com/small/22/13/36e05d88e41043a4b14238d3bcce12e4.jpg" },
+    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #V: Cuatro Fantasticos: El Dia del Juicio", categoria: "marvel-edad-plata", subtipo: "cuatro-fantasticos", tipo: "Cómic", poster: "https://i1.whakoom.com/small/28/2f/e5d3c6fc626a4ab1a814e81cd35a5109.jpg" },
+    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #VI: El Asombroso Spider-Man: Spider-Man Nunca Mas", categoria: "marvel-edad-plata", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/09/27/50eb949215af47108fa2e537773b054b.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #VII: El Invencible Iron Man: Tragedia y Triunfo", categoria: "marvel-edad-plata", subtipo: "iron-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/22/15/cc3f692506314b8a9573e7bfcb1e5380.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XI: El Increible Hulk: Monstruo Desatado", categoria: "marvel-edad-plata", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/small/1f/15/49d0b953807b47889adfef210e455285.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XII: Avengers: El Nacimiento de Ultron", categoria: "marvel-edad-plata", subtipo: "iron-man,capitan-america,thor,ultron", tipo: "Cómic", poster: "https://i1.whakoom.com/small/28/14/e64985551d164b0daa498f7a6c56ef1b.jpg" },
@@ -1710,75 +1710,81 @@ const listaMedia = [
     // --- EDAD MODERNA I ---
     { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #8: Daredevil: Renacido", categoria: "marvel-edad-moderna-1", subtipo: "daredevil,kingpin", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_797368-MLA53026509754_122022-O.webp" },
     { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #9: El Asombroso Spider-Man: La Ultima Caceria de Kraven", categoria: "marvel-edad-moderna-1", subtipo: "spider-man,kraven", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2023/10/la-ultima-caceria.webp" },
-    { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #20: Daredevil: Demonio Guardian", categoria: "marvel-edad-moderna-1", subtipo: "daredevil", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_687813-MLA70564553399_072023-O.webp" },
     { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #10: Wolverine: Arma X", categoria: "marvel-edad-moderna-1", subtipo: "wolverine", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2024/04/01-0002.webp" },
     { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #11: El Increible Hulk: Gritos Silenciosos", categoria: "marvel-edad-moderna-1", subtipo: "hulk", tipo: "Cómic", poster: "https://d22fxaf9t8d39k.cloudfront.net/ceec52fa5b47714b380bb34d1ac78403503d8724703fc5fef5f00df7bc4583f2223891.jpg" },
     { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #12: Marvels", categoria: "marvel-edad-moderna-1", subtipo: "spider-man,thor,iron-man", tipo: "Cómic", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJdPSveSEqCEVac1CJp3A8Jd5hb7_jN065kvjGUlFDA3oIxVUWPQ0DGQlK&s=10" },
+    { titulo: "Coleccion Spider-Man: Universo Araña #6: Venom: Protector Letal", categoria: "marvel-edad-moderna-1", subtipo: "venom", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/06_venom_protector_letal_cov1-b897a892df1b7515d216645158859126-1024-1024.webp" },
+    { titulo: "Coleccion Spider-Man: Universo Araña #4: Spider-Man: La Saga del Clon", categoria: "marvel-edad-moderna-1", subtipo: "spider-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/04_la_saga_del_clon_cov1-cd59dca782de1541b316629984915515-1024-1024.webp" },
+    { titulo: "Coleccion Spider-Man: Universo Araña #10: Venom: Planeta de Simbiontes", categoria: "marvel-edad-moderna-1", subtipo: "venom", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/10_planeta_de_simbiontes_cov1-928457b65a38e7452016656336083401-640-0.webp" },
+    { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #20: Daredevil: Demonio Guardian", categoria: "marvel-edad-moderna-1", subtipo: "daredevil", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_687813-MLA70564553399_072023-O.webp" },
     // --- EDAD MODERNA II ---
-    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #21: El Asombroso Spider-Man: Bienvenido a Casa", categoria: "marvel-edad-moderna-2", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/36/3b/fe34d8c28c82482086e50b021fdc770e.jpg" },
-    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #22: Spider-Man: Azul", categoria: "marvel-edad-moderna-2", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/36/3b/fe34d8c28c82482086e50b021fdc770e.jpg" },
-    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #23: Wolverine: Origen", categoria: "marvel-edad-moderna-2", subtipo: "wolverine", tipo: "Cómic", poster: "https://i1.whakoom.com/small/2c/2e/71396a47c73a4b4ab3b6c854e4e89cae.jpg" },
-    { titulo: "Coleccion Definitiva de Novelas Graficas de Marvel: #24: El Asombroso Spider-Man: Revelaciones", categoria: "marvel-edad-moderna-2", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0a/37/a1b515b28be049b88f6fbe235cb0dcae.jpg" },
-    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #25: Cuatro Fantasticos: Impensado", categoria: "marvel-edad-moderna-2", subtipo: "cuatro-fantasticos", tipo: "Cómic", poster: "https://i1.whakoom.com/small/00/22/65c592541fcc419c93b6a3ede21b7d95.jpg" },
-    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #26: Cuatro Fantasticos: Accion Autoritaria", categoria: "marvel-edad-moderna-2", subtipo: "cuatro-fantasticos", tipo: "Cómic", poster: "https://i1.whakoom.com/small/00/07/ee99ea647a7243ef8b1a968e6f329212.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #16: Punisher: Bienvenido a Casa Frank Parte 1", categoria: "marvel-edad-moderna-2", subtipo: "punisher", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2023/10/Bienvenido-A-Casa-frank-1.webp" },
     { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #17: Punisher: Bienvenido a Casa Frank Parte 2", categoria: "marvel-edad-moderna-2", subtipo: "punisher", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0b/06/1eed429a25314b86aa09a5e1dca191ec.jpg" },
+    { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #18: Nuevos X-Men: E de Extincion", categoria: "marvel-edad-moderna-2", subtipo: "x-men", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_983780-MLA53460812644_012023-O.webp" },
+    { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #19: Nuevos X-Men: Imperial", categoria: "marvel-edad-moderna-2", subtipo: "x-men", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_928255-MLA112135015545_052026-O.webp" },
+    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #21: El Asombroso Spider-Man: Bienvenido a Casa", categoria: "marvel-edad-moderna-2", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/36/3b/fe34d8c28c82482086e50b021fdc770e.jpg" },
+    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #25: Cuatro Fantasticos: Impensado", categoria: "marvel-edad-moderna-2", subtipo: "cuatro-fantasticos", tipo: "Cómic", poster: "https://i1.whakoom.com/small/00/22/65c592541fcc419c93b6a3ede21b7d95.jpg" },
+    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #23: Wolverine: Origen", categoria: "marvel-edad-moderna-2", subtipo: "wolverine", tipo: "Cómic", poster: "https://i1.whakoom.com/small/2c/2e/71396a47c73a4b4ab3b6c854e4e89cae.jpg" },
+    { titulo: "Coleccion Definitiva de Novelas Graficas de Marvel: #24: El Asombroso Spider-Man: Revelaciones", categoria: "marvel-edad-moderna-2", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0a/37/a1b515b28be049b88f6fbe235cb0dcae.jpg" },
+    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #26: Cuatro Fantasticos: Accion Autoritaria", categoria: "marvel-edad-moderna-2", subtipo: "cuatro-fantasticos", tipo: "Cómic", poster: "https://i1.whakoom.com/small/00/07/ee99ea647a7243ef8b1a968e6f329212.jpg" },
+    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #22: Spider-Man: Azul", categoria: "marvel-edad-moderna-2", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/36/3b/fe34d8c28c82482086e50b021fdc770e.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #28: Avengers: El Enfrentamiento", categoria: "marvel-edad-moderna-2", subtipo: "iron-man,thor,capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0d/2b/ccf3bb52aac944d49d78b9e7197524f4.jpg" },
+    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #36: Astonishing X-Men: Dotados", categoria: "marvel-edad-moderna-2", subtipo: "x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/3a/09/1c23307a39c2429b95afb33a087a5cb7.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #29: Guerra Secreta", categoria: "marvel-edad-moderna-2", subtipo: "iron-man,capitan-america,spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/2c/2d/af07971c749d4771b10196e8cc2c556c.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #30: She-Hulk: Verde y Soltera", categoria: "marvel-edad-moderna-2", subtipo: "she-hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/small/30/04/6de4edb0484c42829692dc74a1dc5671.jpg" },
+    { titulo: "Coleccion Spider-Man: Universo Araña #2: Venom vs Carnage", categoria: "marvel-edad-moderna-2", subtipo: "venom", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/02_venomvscarnage_cov1-fd11cbfc24c8a9c35116601974393440-640-0.webp" },
+    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #34: Avengers: Separados", categoria: "marvel-edad-moderna-2", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/36/19/5ba7e647bcc647fcbbef0a3b8200ebab.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #31: Nuevos Avengers: La Fuga", categoria: "marvel-edad-moderna-2", subtipo: "iron-man,capitan-america,spider-man,wolverine", tipo: "Cómic", poster: "https://i1.whakoom.com/small/10/20/3c4ba3daaa3c44dba265610bd3fa2dc8.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #32: Dinastia M", categoria: "marvel-edad-moderna-2", subtipo: "x-men,iron-man,capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/small/31/0a/426ca26a6e45464b80ebcf649451a6d0.jpg" },
-    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #34: Avengers: Separados", categoria: "marvel-edad-moderna-2", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/36/19/5ba7e647bcc647fcbbef0a3b8200ebab.jpg" },
+    { titulo: "Coleccion Spider-Man: Universo Araña #12: Spider-Man: Dinastia M", categoria: "marvel-edad-moderna-2", subtipo: "spider-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/12_spider-man_dinastia_m_cov1-2f8bc19eec8e2246e316687427682012-480-0.webp" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #35: Pantera Negra: ¿Quien es La Pantera Negra?", categoria: "marvel-edad-moderna-2", subtipo: "black-panther", tipo: "Cómic", poster: "https://i1.whakoom.com/small/10/1b/f05aaaac97de4d28998c4fe8ea32b26e.jpg" },
-    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #36: Astonishing X-Men: Dotados", categoria: "marvel-edad-moderna-2", subtipo: "x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/3a/09/1c23307a39c2429b95afb33a087a5cb7.jpg" },
+    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #55: Thunderbolts: Fe en Los Monstruos", categoria: "marvel-edad-moderna-2", subtipo: "thunderbolts", tipo: "Cómic", poster: "https://i1.whakoom.com/small/14/23/c2ec6f050ab547059971beec5e8f3438.jpg" },
+    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #40: Astonishing X-Men: Peligroso", categoria: "marvel-edad-moderna-2", subtipo: "x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/31/00/6220b8bef5d44278b98222a10b01bdc7.jpg" },
+    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #44: Capitan America: Soldado del Invierno", categoria: "marvel-edad-moderna-2", subtipo: "capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/small/39/2a/3e4029e78ff9404cbc0029240d0f9d72.jpg" },
+    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #51: Capitan America: Soldado de Invierno Parte II", categoria: "marvel-edad-moderna-2", subtipo: "capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/small/08/2f/c8f0d104deba4decb33fc526268726a2.jpg" },
+    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #43: Iron Man: Extremis", categoria: "marvel-edad-moderna-2", subtipo: "iron-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/2a/2c/cec1b0b1f43a427c9570bf394765cf52.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #38: Ghost Rider: La Ruta de La Perdicion", categoria: "marvel-edad-moderna-2", subtipo: "ghost-rider", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0c/21/70bdc1846e534743a49e0c3eb89f7ef7.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #39: Heredero de M", categoria: "marvel-edad-moderna-2", subtipo: "x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/2b/29/a23190319f154ad39fc285873d63146c.jpg" },
-    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #40: Astonishing X-Men: Peligroso", categoria: "marvel-edad-moderna-2", subtipo: "x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/31/00/6220b8bef5d44278b98222a10b01bdc7.jpg" },
-    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #42: Guerra Civil", categoria: "marvel-edad-moderna-2", subtipo: "iron-man,capitan-america,spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/02/1a/9c84d1cd8025447886d3977132e0602d.jpg" },
-    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #43: Iron Man: Extremis", categoria: "marvel-edad-moderna-2", subtipo: "iron-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/2a/2c/cec1b0b1f43a427c9570bf394765cf52.jpg" },
-    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #44: Capitan America: Soldado del Invierno", categoria: "marvel-edad-moderna-2", subtipo: "capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/small/39/2a/3e4029e78ff9404cbc0029240d0f9d72.jpg" },
-    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #45: Eternos", categoria: "marvel-edad-moderna-2", subtipo: "eternos", tipo: "Cómic", poster: "https://i1.whakoom.com/small/10/3b/3f13d5b1ff1f4ce6a67dcb2e38af6cb7.jpg" },
     { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #13: El Poderoso Thor: En Busqueda de Los Dioses", categoria: "marvel-edad-moderna-2", subtipo: "thor", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_846530-MLA53132163461_012023-O.webp" },
     { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #14: Capitan America: El Nuevo Pacto", categoria: "marvel-edad-moderna-2", subtipo: "capitan-america", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_808706-MLA53141981142_012023-O.webp" },
-    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #47: Doctor Strange: El Juramento", categoria: "marvel-edad-moderna-2", subtipo: "doctor-strange", tipo: "Cómic", poster: "https://i1.whakoom.com/small/1c/16/941ec80d9967456cbda4d62a15fb167e.jpg" },
-    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #48: Capitan America: El Elegido", categoria: "marvel-edad-moderna-2", subtipo: "capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/small/00/2d/005c69df4bb046b49226a36bc3363f8b.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #49: El Increible Hulk: Planeta Hulk Parte 1", categoria: "marvel-edad-moderna-2", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/small/21/04/b1a70bb128124b0ba237153ca5d34a49.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #50: El Increible Hulk: Planeta Hulk Parte 2", categoria: "marvel-edad-moderna-2", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/small/2c/32/19de22bcad7c4fcbbe882827ebdec2f6.jpg" },
-    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #51: Capitan America: Soldado de Invierno Parte II", categoria: "marvel-edad-moderna-2", subtipo: "capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/small/08/2f/c8f0d104deba4decb33fc526268726a2.jpg" },
+    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #45: Eternos", categoria: "marvel-edad-moderna-2", subtipo: "eternos", tipo: "Cómic", poster: "https://i1.whakoom.com/small/10/3b/3f13d5b1ff1f4ce6a67dcb2e38af6cb7.jpg" },
+    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #42: Guerra Civil", categoria: "marvel-edad-moderna-2", subtipo: "iron-man,capitan-america,spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/02/1a/9c84d1cd8025447886d3977132e0602d.jpg" },
+    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #47: Doctor Strange: El Juramento", categoria: "marvel-edad-moderna-2", subtipo: "doctor-strange", tipo: "Cómic", poster: "https://i1.whakoom.com/small/1c/16/941ec80d9967456cbda4d62a15fb167e.jpg" },
+    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #48: Capitan America: El Elegido", categoria: "marvel-edad-moderna-2", subtipo: "capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/small/00/2d/005c69df4bb046b49226a36bc3363f8b.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #52: Thor: Renacido", categoria: "marvel-edad-moderna-2", subtipo: "thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/19/07/67f91d707f7f4008a465a107071d1304.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #53: La Muerte del Capitan America", categoria: "marvel-edad-moderna-2", subtipo: "capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/small/20/0a/bb04887e7b0a48df8aacc92b7f4429c6.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #54: Guerra Mundial Hulk", categoria: "marvel-edad-moderna-2", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/small/14/23/cc4ff4d779f0453dac156c38340fdb13.jpg" },
-    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #55: Thunderbolts: Fe en Los Monstruos", categoria: "marvel-edad-moderna-2", subtipo: "thunderbolts", tipo: "Cómic", poster: "https://i1.whakoom.com/small/14/23/c2ec6f050ab547059971beec5e8f3438.jpg" },
-    { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #18: Nuevos X-Men: E de Extincion", categoria: "marvel-edad-moderna-2", subtipo: "x-men", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_983780-MLA53460812644_012023-O.webp" },
-    { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #19: Nuevos X-Men: Imperial", categoria: "marvel-edad-moderna-2", subtipo: "x-men", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_928255-MLA112135015545_052026-O.webp" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #57: Invasion Secreta", categoria: "marvel-edad-moderna-2", subtipo: "iron-man,capitan-america,spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/25/38/d505c5be6e2e40528788a13e1817d144.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #58: Iron Man: Las Cinco Pesadillas", categoria: "marvel-edad-moderna-2", subtipo: "iron-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/01/19/2fe168378bdc45c8a64bb3e6be94cfe5.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #59: El Sitio", categoria: "marvel-edad-moderna-2", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/17/10/74fd27d128c0475992bcd8cc399f8773.jpg" },
     // --- ACTUALIDAD ---
-    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #60: Astonishing Thor", categoria: "marvel-actualidad", subtipo: "thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/13/00/54606b03a7f8474b9245292269077d2a.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #61: Avengers: Las Guerras Asgardianas", categoria: "marvel-actualidad", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/1a/2d/6ea5c491b6ff4125940a70616cb73b4d.jpg" },
+    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #60: Astonishing Thor", categoria: "marvel-actualidad", subtipo: "thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/13/00/54606b03a7f8474b9245292269077d2a.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #62: Avengers Secretos: Mision a Marte", categoria: "marvel-actualidad", subtipo: "avengers-secretos", tipo: "Cómic", poster: "https://i1.whakoom.com/small/27/1e/ff560113c517499eb79b10743631728a.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #63: Deadpool: La Guerra de Wade Wilson", categoria: "marvel-actualidad", subtipo: "deadpool", tipo: "Cómic", poster: "https://i1.whakoom.com/small/24/0e/5840f94c89594a7d9e61590df390e456.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #64: El Imperativo Thanos", categoria: "marvel-actualidad", subtipo: "avengers-secretos", tipo: "Cómic", poster: "https://i1.whakoom.com/small/04/35/510cd8a20bf146c4832793b5c418d9a5.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #65: Shadowland", categoria: "marvel-actualidad", subtipo: "daredevil", tipo: "Cómic", poster: "https://i1.whakoom.com/small/18/10/e91af8e9eb904b3a9d2b71c475d1f89d.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel # 66 Avengers: La Cruzada de Los NIños", categoria: "marvel-actualidad", subtipo: "iron-man,capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/small/03/38/f90c35faa7f74415b67cc73519afa2d2.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #67: Hulk: Tierra Quemada", categoria: "marvel-actualidad", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/small/21/07/5527df88c60041a585db9a6ba8f41aef.jpg" },
-    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #68: Venom", categoria: "marvel-actualidad", subtipo: "venom", tipo: "Cómic", poster: "https://i1.whakoom.com/small/03/04/870091ff0b92480aae99543e5f4f7fbe.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #70: El Miedo Mismo Primera Parte", categoria: "marvel-actualidad", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/3d/07/0cee3e6a6dac44aabbadde8969a53416.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #71: El Miedo Mismo Segunda Parte", categoria: "marvel-actualidad", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/04/30/c4d89601ecb3423588204e37deca0568.jpg" },
-    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #72: X-Men: Ruptura", categoria: "marvel-actualidad", subtipo: "x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/3a/32/453c2b2c6a6243338bce283978dbb164.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #73: Daredevil: Sonido y Furia", categoria: "marvel-actualidad", subtipo: "daredevil", tipo: "Cómic", poster: "https://i1.whakoom.com/small/3b/35/30c08aa0a1b542c2b2a63612bdd9911d.jpg" },
+    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #84: El Asombroso Spider-Man: isla Araña - Primera Parte", categoria: "marvel-actualidad", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/37/2c/2ed732f744d446cb86749e0ae392632d.jpg" },
+    { titulo: "Coleccion Spider-Man: Universo Araña #19: Isla Araña", categoria: "marvel-actualidad", subtipo: "spider-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/19-isla-arana1-3fba0767a5eb4a133d16785059331927-1024-1024.webp" },
+    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #85: El Asombroso Spider-Man: Isla Araña - Segunda Parte", categoria: "marvel-actualidad", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/32/28/d2b91943220e4c5282298219186ee71d.jpg" },
+    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #72: X-Men: Ruptura", categoria: "marvel-actualidad", subtipo: "x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/3a/32/453c2b2c6a6243338bce283978dbb164.jpg" },
+    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #80: Wolverine y Los X.Men: Regenesis", categoria: "marvel-actualidad", subtipo: "wolverine,x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/05/36/9e51ea5f8c884080b01c18f20d140149.jpg" },
+    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #68: Venom", categoria: "marvel-actualidad", subtipo: "venom", tipo: "Cómic", poster: "https://i1.whakoom.com/small/03/04/870091ff0b92480aae99543e5f4f7fbe.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #75: Deadpool Hace Equipo", categoria: "marvel-actualidad", subtipo: "deadpool", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0c/29/e696e58fde294712a54998cbb756f57a.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #76: El Miedo Mismo: Los Intrepidos Parte Uno", categoria: "marvel-actualidad", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/3f/13/a6c54edde79c468aa25b01e4ecea661c.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #77: El Miedo Mismo: Los Intrepidos Parte Dos", categoria: "marvel-actualidad", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0f/03/7cca2280c08243aca1545ae939ded7a3.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #78: Aniquiladores", categoria: "marvel-actualidad", subtipo: "aniquiladores", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0b/08/5bcab8e58446415fa8962fc845fe6d8b.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #79: El Increible Hulk: Separados", categoria: "marvel-actualidad", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/small/38/32/d04db50cafbf4625930ca2b55b5d4e58.jpg" },
-    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #80: Wolverine y Los X.Men: Regenesis", categoria: "marvel-actualidad", subtipo: "wolverine,x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/05/36/9e51ea5f8c884080b01c18f20d140149.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #81: Los Defensores: Quebrador de Mundos", categoria: "marvel-actualidad", subtipo: "defensores", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0a/30/5534f4d36e5e46bcac85ce13921ea70f.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #82: Avengers: Reunidos", categoria: "marvel-actualidad", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/23/08/878f12b106ff41f29d24c667c16ff52a.jpg" },
     { titulo: "Coleccion Definitivo de Novelas Graficas de Marvel #83: Heridas de Guerra", categoria: "marvel-actualidad", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/26/06/603cba3032b94566a952331031cfe754.jpg" },
-    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #84: El Asombroso Spider-Man: isla Araña - Primera Parte", categoria: "marvel-actualidad", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/37/2c/2ed732f744d446cb86749e0ae392632d.jpg" },
-    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #85: El Asombroso Spider-Man: Isla Araña - Segunda Parte", categoria: "marvel-actualidad", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/32/28/d2b91943220e4c5282298219186ee71d.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #86: Avengers vs X-Men: Primera Parte", categoria: "marvel-actualidad", subtipo: "iron-man,capitan-america,thor,x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/27/0b/bbcd24ea922c462a9244b20bd6a2afea.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #87: Avengers vs X-Men: Segunda Parte", categoria: "marvel-actualidad", subtipo: "iron-man,capitan-america,thor,x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/36/32/3e86fe6ae25346a0acbd4d426cf9bf8d.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #88 Avengers vs X-Men: Tercera Parte", categoria: "marvel-actualidad", subtipo: "iron-man,capitan-america,thor,x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/2e/22/8eb02cdf87784050b2147af6cdf3cfe5.jpg" },
@@ -1803,14 +1809,33 @@ const listaMedia = [
     { titulo: "Coleccion Definitiva de Novelas Graficas de Marvel #107: El Nuevo Ghost Rider: Motores de Venganza", categoria: "marvel-actualidad", subtipo: "ghost-rider", tipo: "Cómic", poster: "https://i1.whakoom.com/small/1b/06/e0800c8cdae840de8e1578a3893126eb.jpg" },
     { titulo: "Coleccion Definitiva de Novelas Graficas de Marvel #108: Pecado Original Parte Uno", categoria: "marvel-actualidad", subtipo: "iron-man,thor,capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/small/1e/01/d9eee9f95cd945889b5f6abec20a6c0c.jpg" },
     { titulo: "Coleccion Definitiva de Novelas Graficas de Marvel #109: Pecado Original Parte Dos", categoria: "marvel-actualidad", subtipo: "iron-man,thor,capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0d/3d/8fbc5ed043de4b3e8ea29014d9e006eb.jpg" },
+    { titulo: "Coleccion Spider-Man: Universo Araña #18: Venom: Primer Anfitrion", categoria: "marvel-actualidad", subtipo: "venom", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/18-venom_-_primer_anfitrion1-8c9904af638ab9d9c616772103155072-1024-1024.webp" },
+    { titulo: "Coleccion Spider-Man: Universo Araña #24: Venomizados", categoria: "marvel-actualidad", subtipo: "venom", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/24-venomizados1-beb712d17ff1e3d2ad16868724894895-640-0.webp" },
     { titulo: "Coleccion Definitiva de Novelas Graficas de Marvel #110: La Muerte de Wolverine", categoria: "marvel-actualidad", subtipo: "wolverine", tipo: "Cómic", poster: "https://i1.whakoom.com/small/06/2a/cfb083900a564e1483f7651dfb308421.jpg" },
     // --- UNIVERSO ULTIMATE ---
     { titulo: "Coleccion Defintiva de Novelas Graficas de Marvel #15: Ultimate Spider-Man: Poder y Responsabilidad", categoria: "marvel-universo-ultimate", subtipo: "spider-man", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_654316-MLA53124458936_012023-O.webp" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #33: Los Ultimates: Superhumano", categoria: "marvel-universo-ultimate", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/12/3a/193c393337634063b7981a7f2762d408.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #37: Los Ultimates: Seguridad Nacional", categoria: "marvel-universo-ultimate", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0e/2a/a76c5dd694af461eb8b4b9ba56323fc3.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #69: Ultimate Spider-Man: La Muerte de Spider-Man", categoria: "marvel-universo-ultimate", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/34/18/3ab3d11a74f141a79ef1d9618dccb822.jpg" },
+    { titulo: "Coleccion Spider-Man: Universo Araña #16: La Muerte de Spider-Man", categoria: "marvel-universo-ultimate", subtipo: "spider-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/16-la_muerte_de_spider-man_cov1-5e22a337a8b543885a16747939567482-1024-1024.webp" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #74: Ultimate Comics Spider-Man: ¿Quien es Miles Morales?", categoria: "marvel-universo-ultimate", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/32/25/36de4fd8178f465ead8606e040084d8c.jpg" },
     // --- REALIDADES ALTERNATIVAS ---
+    { titulo: "Coleccion Spider-Man: Universo Araña #8: Spider-Man: 2099", categoria: "marvel-realidades-alternativas", subtipo: "spider-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/08_spiderman_2099_cov1-e0f2970499fd9e40c716656334984032-640-0.webp" },
+    { titulo: "Coleccion Spider-Man: Universo Araña #1: Spider-Verse: Primera Parte", categoria: "marvel-realidades-alternativas", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/34/00/fd2621cc15b640c1970eaefd5dd6a985.jpg" },
+    { titulo: "Coleccion Spider-Man: Universo Araña #5: Spider-Verse: Segunda Parte", categoria: "marvel-realidades-alternativas", subtipo: "spider-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/05_universo_arana_02_cov1-7f92a980e7b14252e316931933091988-640-0.webp" },
+    { titulo: "Coleccion Spider-Man: Universo Araña #7: Spider-Verse: Tercera Parte", categoria: "marvel-realidades-alternativas", subtipo: "spider-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/07_universo_arana_03_cov1-8d9565f20ad9e14d9416947509177297-480-0.webp" },
+    { titulo: "Coleccion Spider-Man: Universo Araña #9: Spider-Verse: Conclusion", categoria: "marvel-realidades-alternativas", subtipo: "spider-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/09_universo_arana_04_cov-11c9b5c355cb65740f16971292611462-1024-1024.webp" },
+    { titulo: "Coleccion Spider-Man: Universo Araña #11: Guerreros Araña", categoria: "marvel-realidades-alternativas", subtipo: "spider-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/11_guerreros_arana_cov_front1-38b0f67c7de48b8be016686970300740-640-0.webp" },
+    { titulo: "Coleccion Spider-Man: Universo Araña #3: Spider-Man: Gamerverse", categoria: "marvel-realidades-alternativas", subtipo: "spider-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/03_gameverse_cov-111-57913c776b658f0fe316614916122722-1024-1024.webp" },
+    { titulo: "Coleccion Spider-Man: Universo Araña #13: Spider-Man: ¿Que Pasaria Si...?", categoria: "marvel-realidades-alternativas", subtipo: "spider-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/13_spider-man_que-hubiera_sucedido_si_cov1-c2fdd415ee5067bd8616693498589473-480-0.webp" },
+    { titulo: "Coleccion Spider-Man: Universo Araña #14: Spider-Noir", categoria: "marvel-realidades-alternativas", subtipo: "spider-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/spider-man_noir_universo_arana_14_cov1-a0f8a14d0c30d6730816718536596221-640-0.webp" },
+    { titulo: "Coleccion Spider-Man: Universo Araña #15: Spider-Man: Reino", categoria: "marvel-realidades-alternativas", subtipo: "spider-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/15-spiderman-reino-cov-frente1-147003e78650d2601416735851922198-1024-1024.webp" },
+    { titulo: "Coleccion Spider-Man: Universo Araña #17: Spider-Men: Los Hombres Araña", categoria: "marvel-realidades-alternativas", subtipo: "spider-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/17-spider-men_cov1-3823735685665d472316760520583357-1024-1024.webp" },
+    { titulo: "Coleccion Spider-Man: Universo Araña #20: Spider-Gwen: La Mas Buscada", categoria: "marvel-realidades-alternativas", subtipo: "spider-gwen", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/20-spider-gwen_-_la_mas_buscada11-c4b30adc1cb451ca6316812695516121-1024-1024.webp" },
+    { titulo: "Coleccion Spider-Man: Universo Araña #21: Spider-Verse: Zona de Guerra", categoria: "marvel-realidades-alternativas", subtipo: "spider-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/21-spider-verse_-_zona_de_guerra1-757a6f91bd6ebcb89516820443440210-1024-1024.webp" },
+    { titulo: "Coleccion Spider-Man: Universo Araña #22: Spider-Men II: ¿Quien es el otro Miles?", categoria: "marvel-realidades-alternativas", subtipo: "spider-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/22-spider-men_ii1-5dbf42398dce64bb6816838693878042-480-0.webp" },
+    { titulo: "Coleccion Spider-Man: Universo Araña #23: Spider-Gwen: Gran Poder", categoria: "marvel-realidades-alternativas", subtipo: "spider-gwen", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/23-spider-gwen_-_gran_poder1-b043c4f4ccf90c145116856587413015-640-0.webp" },
+    { titulo: "Coleccion Spider-Man: Universo Araña #25: Renueva Tus Votos", categoria: "marvel-realidades-alternativas", subtipo: "spider-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/25_renueva_tus_votos_cov1-b918a70778e38aa11416893038638654-640-0.webp" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #27: 1602", categoria: "marvel-realidades-alternativas", subtipo: "spider-man,x-men,capitan-america,daredevil,cuatro-fantasticos", tipo: "Cómic", poster: "https://i1.whakoom.com/small/26/01/3f0ac1e2ad14421aad3f8d7c7c200901.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XXXVII: Marvel: ¿Y Si...?", categoria: "marvel-realidades-alternativas", subtipo: "spider-man,x-men,cuatro-fantasticos,iron-man,capitan-america,thor,hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/small/06/04/6a7049579d044061ab46498bf821bac3.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #41: Marvel Zombies", categoria: "marvel-realidades-alternativas", subtipo: "cuatro-fantasticos,spider-man,x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/14/3e/ff25626db13b4e6dbefc1c70ecb92eac.jpg" },
@@ -3196,6 +3221,14 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "spiderman-universo-arana",
+        titulo: "Spider-Man: Universo Araña",
+        categoria: "colecciones-hub",
+        poster: "https://i1.whakoom.com/large/34/00/fd2621cc15b640c1970eaefd5dd6a985.jpg",
+        esContenedor: true,
+        peliculas: []
+    },
+    {
         id: "dc-camino-heroe",
         titulo: "El Camino del Héroe",
         categoria: "dc-comics-hub",
@@ -4067,6 +4100,7 @@ function renderizarColecciones() {
         "jli-ovni-orden": "seccion-jli-ovni-orden",
         "leyendas-caballero-oscuro-orden": "seccion-leyendas-caballero-oscuro-orden",
         "marvel-novelas-graficas-definitiva": "seccion-marvel-novelas-graficas-definitiva",
+        "spiderman-universo-arana": "seccion-spiderman-universo-arana",
         "dc-comics-hub": "seccion-dc-comics-hub",
         "dc-camino-heroe": "seccion-dc-camino-heroe",
         "dc-orden-lectura": "seccion-dc-orden-lectura",
@@ -4484,6 +4518,30 @@ function renderizarContenido() {
                 if (grillaMarvelNGPredeterminado) grillaMarvelNGPredeterminado.insertAdjacentHTML('beforeend', htmlTarjetaMarvelNG);
             }
 
+            // Colección Spider-Man: Universo Araña: mismo criterio (predeterminado por
+            // número, cronológico por fecha real de publicación — como esta colección
+            // cruza épocas y realidades distintas, el orden cronológico se define a
+            // mano, no por número).
+            const matchSpidermanUA = item.titulo.match(/^Colec[a-záéíóúñ]* Spider-Man: Universo Ara[ñn]a #(\d+)/i);
+            if (matchSpidermanUA) {
+                const numSpidermanUA = matchSpidermanUA[1];
+                const cronoSpidermanUA = {
+                    "8": 1, "6": 2, "4": 3, "10": 4, "2": 5, "12": 6,
+                    "15": 7, "16": 8, "1": 9, "5": 10, "7": 11, "9": 12, "11": 13,
+                    "14": 14, "17": 15, "19": 16, "18": 17, "20": 18, "21": 19,
+                    "22": 20, "23": 21, "24": 22, "25": 23, "3": 24, "13": 25
+                }[numSpidermanUA] || 99;
+                const htmlTarjetaSpidermanUA = htmlTarjeta.replace(
+                    'class="tarjeta-media"',
+                    `class="tarjeta-media" data-spiderman-ua-num="${numSpidermanUA}" data-spiderman-ua-crono="${cronoSpidermanUA}"`
+                );
+                const grillaSpidermanUAPredeterminado = document.getElementById("grilla-spiderman-ua-predeterminado");
+                if (grillaSpidermanUAPredeterminado) grillaSpidermanUAPredeterminado.insertAdjacentHTML('beforeend', htmlTarjetaSpidermanUA);
+
+                const grillaSpidermanUACronologico = document.getElementById("grilla-spiderman-ua-cronologico");
+                if (grillaSpidermanUACronologico) grillaSpidermanUACronologico.insertAdjacentHTML('beforeend', htmlTarjetaSpidermanUA);
+            }
+
             // Colección "Flash de Messner-Loebs": los 4 tomos puntuales de esa
             // etapa, sin filtros, en su único orden posible (el mismo orden en
             // que ya aparecen en Post-Crisis, que es el correcto).
@@ -4637,6 +4695,18 @@ function ordenarGrillaPorNumeroSalvat() {
         const tarjetasMarvelNG = Array.from(contenedorMarvelNG.querySelectorAll('.tarjeta-media'));
         tarjetasMarvelNG.sort((a, b) => parseInt(a.getAttribute('data-marvel-ng-num')) - parseInt(b.getAttribute('data-marvel-ng-num')));
         tarjetasMarvelNG.forEach(t => contenedorMarvelNG.appendChild(t));
+    }
+    const contenedorSpidermanUAPre = document.getElementById('grilla-spiderman-ua-predeterminado');
+    if (contenedorSpidermanUAPre) {
+        const tarjetasSpidermanUAPre = Array.from(contenedorSpidermanUAPre.querySelectorAll('.tarjeta-media'));
+        tarjetasSpidermanUAPre.sort((a, b) => parseInt(a.getAttribute('data-spiderman-ua-num')) - parseInt(b.getAttribute('data-spiderman-ua-num')));
+        tarjetasSpidermanUAPre.forEach(t => contenedorSpidermanUAPre.appendChild(t));
+    }
+    const contenedorSpidermanUACrono = document.getElementById('grilla-spiderman-ua-cronologico');
+    if (contenedorSpidermanUACrono) {
+        const tarjetasSpidermanUACrono = Array.from(contenedorSpidermanUACrono.querySelectorAll('.tarjeta-media'));
+        tarjetasSpidermanUACrono.sort((a, b) => parseInt(a.getAttribute('data-spiderman-ua-crono')) - parseInt(b.getAttribute('data-spiderman-ua-crono')));
+        tarjetasSpidermanUACrono.forEach(t => contenedorSpidermanUACrono.appendChild(t));
     }
 }
 
@@ -7479,6 +7549,28 @@ if(btnVolverMarvelNovelasGraficasDefinitiva) {
         cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
     });
 }
+
+const btnVolverSpidermanUniversoArana = document.getElementById('btn-volver-spiderman-universo-arana');
+if(btnVolverSpidermanUniversoArana) {
+    btnVolverSpidermanUniversoArana.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+// ==========================================
+// FILTROS "SPIDER-MAN: UNIVERSO ARAÑA" — 2 vistas
+// ==========================================
+const botonesFiltroVistaSpidermanUA = document.querySelectorAll('.btn-filtro-vista-spiderman-ua');
+botonesFiltroVistaSpidermanUA.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroVistaSpidermanUA.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const vista = this.getAttribute('data-vista');
+
+        document.getElementById('grilla-spiderman-ua-predeterminado').classList.toggle('oculto', vista !== 'predeterminado');
+        document.getElementById('grilla-spiderman-ua-cronologico').classList.toggle('oculto', vista !== 'cronologico');
+    });
+});
 
 // ==========================================
 // FILTROS "COLECCIÓN DEFINITIVA DE NOVELAS GRÁFICAS DE MARVEL" — 2 vistas
