@@ -4958,7 +4958,24 @@ function ordenarGrillaAlfabeticamente(seccionId) {
 }
 
 let contenidoInicialRenderizado = false;
-let loginPendienteDeAplicar = false;
+let usuarioParaCargarProgreso = null;
+let progresoYaCargado = false;
+
+// Se llama tanto desde el final del renderizado inicial como desde el login:
+// no importa cuál de los dos llegue primero, esta función solo dispara
+// la carga real cuando AMBAS condiciones están listas, y solo una vez.
+// Antes esto dependía de un único flag que se leía en un solo momento
+// puntual; si la confirmación de sesión de Firebase llegaba mientras
+// todavía se estaban dibujando las (ahora muchas más) tarjetas, esa
+// lectura puntual podía fallar y el progreso guardado quedaba sin
+// aplicarse, sin ningún aviso de error visible.
+function intentarCargarProgresoUsuario() {
+    if (progresoYaCargado) return;
+    if (!contenidoInicialRenderizado) return;
+    if (!usuarioParaCargarProgreso) return;
+    progresoYaCargado = true;
+    cargarProgresoUsuario();
+}
 
 document.addEventListener("DOMContentLoaded", () => {
     renderizarContenido();
@@ -4970,14 +4987,8 @@ document.addEventListener("DOMContentLoaded", () => {
     ordenarGrillaAlfabeticamente('actores');
     actualizarTodasLasColecciones();
 
-    // Si Firebase ya nos había confirmado la sesión ANTES de que termináramos
-    // de dibujar todas las tarjetas (pasa cada vez más seguido a medida que
-    // el catálogo crece), "aplicarVistosGuardados" se había quedado sin nada
-    // para marcar. Ahora que el contenido ya está listo, lo aplicamos recién.
     contenidoInicialRenderizado = true;
-    if (loginPendienteDeAplicar) {
-        cargarProgresoUsuario();
-    }
+    intentarCargarProgresoUsuario();
 });
 
 // ==========================================
@@ -4996,6 +5007,15 @@ function sincronizarVistos() {
             const esVideojuego = tarjeta.getAttribute('data-accion') === 'jugado';
             const textoPendiente = esVideojuego ? 'Marcar Jugado' : 'Marcar Visto';
             const marcandoComoVisto = this.textContent === textoPendiente;
+
+            // Si todavía no hay sesión iniciada (o Firebase todavía no la
+            // confirmó), marcar como visto/jugado solo cambia el botón en
+            // pantalla pero NO se guarda en ningún lado: al recargar la
+            // página, se pierde. Avisamos esto de entrada en vez de dejar
+            // que el usuario piense que quedó guardado.
+            if (!usuarioActual) {
+                mostrarErrorGuardado('No iniciaste sesión: esto no se va a guardar. Iniciá sesión y volvé a marcarlo.');
+            }
 
             // Recolecta TODOS los títulos afectados por este click (el propio +
             // los de la cascada, si es la ficha madre de una colección) para
@@ -5075,6 +5095,9 @@ function normalizarTipoBiblioteca(tipo, esVideojuego) {
     const t = (tipo || '').toLowerCase();
     if (t.includes('película') || t.includes('pelicula')) return 'pelicula';
     if (t.includes('serie')) return 'serie';
+    if (t.includes('manga')) return 'manga';
+    if (t.includes('cómic') || t.includes('comic')) return 'comic';
+    if (t.includes('libro')) return 'libro';
     return 'otro';
 }
 
@@ -6976,15 +6999,15 @@ auth.onAuthStateChanged(user => {
             console.error('Error guardando email:', err);
             mostrarErrorGuardado(err);
         });
-        if (contenidoInicialRenderizado) {
-            cargarProgresoUsuario();
-        } else {
-            // Todavía no terminamos de dibujar las tarjetas; lo aplicamos
-            // apenas termine el DOMContentLoaded, no antes.
-            loginPendienteDeAplicar = true;
-        }
+        usuarioParaCargarProgreso = user;
+        intentarCargarProgresoUsuario();
     } else {
         if (btnLoginModal) btnLoginModal.textContent = '👤 Cuenta / Registro';
+        // Si se cierra sesión, permitimos que un futuro login vuelva a
+        // disparar la carga (si no reseteáramos esto, un logout+login
+        // dentro de la misma pestaña se quedaría sin progreso aplicado).
+        progresoYaCargado = false;
+        usuarioParaCargarProgreso = null;
         if (huboSesionAntes) location.reload();
     }
 });
