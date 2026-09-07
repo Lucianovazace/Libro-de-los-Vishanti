@@ -3235,7 +3235,7 @@ const colecciones = [
         id: "dc-heroes-y-villanos-salvat",
         titulo: "DC Colección de Héroes y Villanos",
         categoria: "colecciones-hub",
-        poster: "https://placehold.co/300x450?text=Heroes+y+Villanos",
+        poster: "https://i1.whakoom.com/large/08/0c/3cfa8877bf36440c9319b8249a87ef0d.jpg",
         esContenedor: true,
         peliculas: []
     },
@@ -3243,7 +3243,7 @@ const colecciones = [
         id: "dc-esenciales-salvat",
         titulo: "DC Colección Esenciales",
         categoria: "colecciones-hub",
-        poster: "https://placehold.co/300x450?text=Esenciales",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flashpoint_4taed_cov_arg1-4c2c6e6a3c5b6220c316851089691513-1024-1024.webp",
         esContenedor: true,
         peliculas: []
     },
@@ -4624,7 +4624,7 @@ function renderizarContenido() {
 
             // Colección Esenciales de Ovni Press: mismo criterio que Héroes y
             // Villanos, pero detectando el patrón "Esenciales DC #N".
-            const matchEsenciales = item.titulo.match(/^Esenciales DC #(\d+)/i);
+            const matchEsenciales = item.titulo.match(/^Esenciales DC #(\d+)/i) && !item.titulo.includes("(Ovni)") ? item.titulo.match(/^Esenciales DC #(\d+)/i) : null;
             if (matchEsenciales) {
                 const numEsenciales = matchEsenciales[1];
                 const htmlTarjetaEsenciales = htmlTarjeta.replace(
@@ -5145,6 +5145,118 @@ if(btnBiblioteca) {
     btnBiblioteca.addEventListener('click', () => {
         generarBiblioteca(filtroBibliotecaActivo);
         cambiarSeccion(seccionBiblioteca);
+    });
+}
+
+// ==========================================
+// CALENDARIO
+// ==========================================
+function buscarInfoPorTitulo(titulo) {
+    const enLista = listaMedia.find(i => i.titulo === titulo);
+    if (enLista) return { poster: enLista.poster, tipo: enLista.tipo, esVideojuego: enLista.tipo === "Videojuego" };
+
+    const comoColeccion = colecciones.find(c => c.titulo === titulo);
+    if (comoColeccion) return { poster: comoColeccion.poster, tipo: comoColeccion.esVideojuego ? 'Colección de Videojuegos' : 'Colección', esVideojuego: comoColeccion.esVideojuego };
+
+    for (const col of colecciones) {
+        const enPeliculas = col.peliculas.find(p => p.titulo === titulo);
+        if (enPeliculas) return { poster: enPeliculas.poster, tipo: col.esVideojuego ? 'Videojuego' : 'Película', esVideojuego: col.esVideojuego };
+    }
+    return null;
+}
+
+function renderizarCalendario(anio, mes) {
+    calendarioAnioActual = anio;
+    calendarioMesActual = mes;
+    const grilla = document.getElementById('calendario-grilla');
+    const tituloMes = document.getElementById('calendario-titulo-mes');
+    if (!grilla || !tituloMes) return;
+
+    const nombresMeses = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+    tituloMes.textContent = `${nombresMeses[mes]} ${anio}`;
+    grilla.innerHTML = '';
+
+    const primerDiaMes = new Date(anio, mes, 1);
+    const diaSemanaInicio = primerDiaMes.getDay();
+    const diasEnMes = new Date(anio, mes + 1, 0).getDate();
+
+    const hoy = new Date();
+    const esMesActual = hoy.getFullYear() === anio && hoy.getMonth() === mes;
+
+    for (let i = 0; i < diaSemanaInicio; i++) {
+        grilla.insertAdjacentHTML('beforeend', '<div class="calendario-dia vacio"></div>');
+    }
+
+    for (let dia = 1; dia <= diasEnMes; dia++) {
+        const fechaISO = `${anio}-${String(mes + 1).padStart(2, '0')}-${String(dia).padStart(2, '0')}`;
+        const titulosDelDia = historialVistos[fechaISO] || [];
+        const claseHoy = (esMesActual && hoy.getDate() === dia) ? ' es-hoy' : '';
+        const claseActividad = titulosDelDia.length > 0 ? ' con-actividad' : '';
+        const puntito = titulosDelDia.length > 0 ? `<span class="puntito-cantidad">${titulosDelDia.length}</span>` : '';
+
+        const celda = document.createElement('div');
+        celda.className = `calendario-dia${claseActividad}${claseHoy}`;
+        celda.innerHTML = `<span>${dia}</span>${puntito}`;
+        if (titulosDelDia.length > 0) {
+            celda.addEventListener('click', () => mostrarDetalleDiaCalendario(fechaISO, titulosDelDia));
+        }
+        grilla.appendChild(celda);
+    }
+
+    document.getElementById('calendario-detalle-dia').classList.add('oculto');
+}
+
+function mostrarDetalleDiaCalendario(fechaISO, titulos) {
+    const contenedor = document.getElementById('calendario-detalle-dia');
+    const listaEl = document.getElementById('calendario-detalle-lista');
+    const fechaEl = document.getElementById('calendario-detalle-fecha');
+    if (!contenedor || !listaEl || !fechaEl) return;
+
+    const [anio, mes, dia] = fechaISO.split('-');
+    const fechaLegible = new Date(anio, mes - 1, dia).toLocaleDateString('es-AR', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+    fechaEl.textContent = fechaLegible.charAt(0).toUpperCase() + fechaLegible.slice(1);
+
+    listaEl.innerHTML = '';
+    titulos.forEach(titulo => {
+        const info = buscarInfoPorTitulo(titulo);
+        if (!info) return; // por si el título cambió/se eliminó desde entonces
+        const textoBoton = info.esVideojuego ? 'Jugado ✓' : 'Visto ✓';
+        listaEl.insertAdjacentHTML('beforeend', `
+            <div class="tarjeta-media vista" data-accion="${info.esVideojuego ? 'jugado' : 'visto'}">
+                <img src="${info.poster}" alt="${titulo}">
+                <h3>${titulo}</h3>
+                <p>${info.tipo || ''}</p>
+                <button class="btn-accion" style="background-color:#28a745;">${textoBoton}</button>
+            </div>
+        `);
+    });
+    contenedor.classList.remove('oculto');
+}
+
+const btnCalendario = document.getElementById('btn-calendario');
+const seccionCalendario = document.getElementById('seccion-calendario');
+if (btnCalendario) {
+    btnCalendario.addEventListener('click', () => {
+        renderizarCalendario(calendarioAnioActual, calendarioMesActual);
+        cambiarSeccion(seccionCalendario);
+    });
+}
+
+const btnCalendarioMesAnterior = document.getElementById('btn-calendario-mes-anterior');
+if (btnCalendarioMesAnterior) {
+    btnCalendarioMesAnterior.addEventListener('click', () => {
+        calendarioMesActual--;
+        if (calendarioMesActual < 0) { calendarioMesActual = 11; calendarioAnioActual--; }
+        renderizarCalendario(calendarioAnioActual, calendarioMesActual);
+    });
+}
+
+const btnCalendarioMesSiguiente = document.getElementById('btn-calendario-mes-siguiente');
+if (btnCalendarioMesSiguiente) {
+    btnCalendarioMesSiguiente.addEventListener('click', () => {
+        calendarioMesActual++;
+        if (calendarioMesActual > 11) { calendarioMesActual = 0; calendarioAnioActual++; }
+        renderizarCalendario(calendarioAnioActual, calendarioMesActual);
     });
 }
 
@@ -6896,6 +7008,10 @@ db.enablePersistence({ synchronizeTabs: true }).catch(err => {
 let usuarioActual = null;
 let huboSesionAntes = false;
 let titulosVistosGuardados = new Set();
+let historialVistos = {}; // { "YYYY-MM-DD": ["titulo1", "titulo2", ...] }
+const hoyParaCalendario = new Date();
+let calendarioAnioActual = hoyParaCalendario.getFullYear();
+let calendarioMesActual = hoyParaCalendario.getMonth(); // 0-indexado
 let logrosYaNotificados = new Set();
 let ultimoGuardadoPendiente = Promise.resolve();
 let ultimoGuardadoExitoso = true;
@@ -7079,11 +7195,15 @@ function cargarProgresoUsuario() {
         });
 
         titulosVistosGuardados = new Set(vistosCorregidos);
+        historialVistos = doc.exists ? (doc.data().historial || {}) : {};
         // Los logros que ya tenías desbloqueados no deben volver a notificarse
         logrosYaNotificados = new Set(logrosDisponibles.filter(l => l.condicion(titulosVistosGuardados)).map(l => l.id));
         aplicarVistosGuardados(document);
         actualizarTodasLasColecciones();
         renderizarLogros();
+        if (document.getElementById('seccion-calendario') && !document.getElementById('seccion-calendario').classList.contains('oculto')) {
+            renderizarCalendario(calendarioAnioActual, calendarioMesActual);
+        }
 
         // Si corregimos algo, lo guardamos ya mismo para no repetir esto en cada login
         if (huboMigracion) {
@@ -7129,6 +7249,23 @@ function guardarProgresoUsuario(titulos, marcado) {
         actualizacion.vistos = marcado
             ? firebase.firestore.FieldValue.arrayUnion(...listaTitulos)
             : firebase.firestore.FieldValue.arrayRemove(...listaTitulos);
+
+        // Para el Calendario: registramos en qué día se marcó cada título.
+        // Se guarda como un mapa { "YYYY-MM-DD": [titulos...] } usando
+        // notación de punto, así solo se toca la fecha de hoy sin pisar
+        // el resto del historial. Solo se agrega al marcar (no al
+        // desmarcar), para no perder el registro de "cuándo lo agregué".
+        if (marcado) {
+            const hoyISO = new Date().toISOString().slice(0, 10);
+            actualizacion[`historial.${hoyISO}`] = firebase.firestore.FieldValue.arrayUnion(...listaTitulos);
+            listaTitulos.forEach(t => {
+                if (!historialVistos[hoyISO]) historialVistos[hoyISO] = [];
+                if (!historialVistos[hoyISO].includes(t)) historialVistos[hoyISO].push(t);
+            });
+            if (document.getElementById('seccion-calendario') && !document.getElementById('seccion-calendario').classList.contains('oculto')) {
+                renderizarCalendario(calendarioAnioActual, calendarioMesActual);
+            }
+        }
     }
 
     guardadoEnProgreso = true;

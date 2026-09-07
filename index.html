@@ -21,6 +21,7 @@
 
     <nav class="nav-principal">
         <button id="btn-biblioteca" class="btn-nav" style="background-color: #28a745;">Mi Biblioteca 📚</button>
+        <button id="btn-calendario" class="btn-nav" style="background-color: #ff9f43;">Calendario 📅</button>
         <button id="btn-logros" class="btn-nav" style="background-color: #f1c40f; color: #1a1d24;">Logros 🏆</button>
         <button id="btn-comics" class="btn-nav" style="background-color: #e74c3c;">Cómics 💥</button>
         <button id="btn-juegos" class="btn-nav" style="background-color: #16a085;">Juegos 🎮</button>
@@ -860,6 +861,25 @@
             <button class="btn-filtro-biblioteca" data-tipo="otro">Otros</button>
         </div>
         <div class="grilla-biblioteca" id="grilla-mi-biblioteca"></div>
+    </section>
+
+    <!-- SECCIÓN: CALENDARIO -->
+    <section id="seccion-calendario" class="oculto">
+        <h2>Mi Calendario 📅</h2>
+        <p style="font-size:12px; color:#aaa; margin-bottom:15px;">Qué marcaste como visto/jugado, día por día.</p>
+        <div class="calendario-header">
+            <button id="btn-calendario-mes-anterior" class="btn-nav-calendario">←</button>
+            <h3 id="calendario-titulo-mes"></h3>
+            <button id="btn-calendario-mes-siguiente" class="btn-nav-calendario">→</button>
+        </div>
+        <div class="calendario-dias-semana">
+            <span>D</span><span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span>
+        </div>
+        <div class="calendario-grilla" id="calendario-grilla"></div>
+        <div id="calendario-detalle-dia" class="calendario-detalle-dia oculto">
+            <h3 id="calendario-detalle-fecha"></h3>
+            <div class="grilla-biblioteca" id="calendario-detalle-lista"></div>
+        </div>
     </section>
 
     <!-- SECCIÓN: LOGROS -->
