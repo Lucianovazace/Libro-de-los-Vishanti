@@ -1661,7 +1661,7 @@ const listaMedia = [
     // --- MARVEL ARGENTINA (movido aqui desde colecciones[], donde no se renderizaba bien) ---
     // --- EDAD DE PLATA ---
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #I: Origenes Marvel: Los Sesenta", categoria: "marvel-edad-plata", subtipo: "spider-man,x-men,cuatro-fantasticos,hulk,thor,iron-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/09/2f/33c2ff95912f4358b88500bc4a97d59a.jpg" },
-    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #II: Thor: Historias de Asgard", categoria: "marvel-edad-plata", subtipo: "thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/09/2f/33c2ff95912f4358b88500bc4a97d59a.jpg" },
+    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #II: Thor: Historias de Asgard", categoria: "marvel-edad-plata", subtipo: "thor", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_706219-MLA69403173899_052023-O.webp" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #III: Doctor Strange: Nombre Anonimo, Tiempo Eterno", categoria: "marvel-edad-plata", subtipo: "doctor-strange", tipo: "Cómic", poster: "https://i1.whakoom.com/small/29/28/9cbc0e1a383149119f1b4ecc7771aba5.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #VIII: Nick Fury: Agente de S.H.I.E.L.D. Parte Uno", categoria: "marvel-edad-plata", subtipo: "nick-fury", tipo: "Cómic", poster: "https://i1.whakoom.com/small/18/29/2214d33dbac34636b6bd5016e4d172c4.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #IX: Nick Fury: Agente de S.H.I.E.L.D. Parte Dos", categoria: "marvel-edad-plata", subtipo: "nick-fury", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0d/1a/c9f699d0ff4d452e89f83f0fcd3de5c9.jpg" },
@@ -1683,7 +1683,7 @@ const listaMedia = [
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XXIII: Los Defensores: El Dia de Los Defensores", categoria: "marvel-edad-bronce", subtipo: "defensores", tipo: "Cómic", poster: "https://i1.whakoom.com/small/20/2d/dcddc774dce14a7d94678b17ae33a089.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XIX: El Asombroso Spider-Man: La Muerte de Los Stacy", categoria: "marvel-edad-bronce", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/13/0e/2a9692d9116347848bca526bb5e14846.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XXVII: Avengers: La Guerra Avengers/Defensores", categoria: "marvel-edad-bronce", subtipo: "iron-man,capitan-america,thor,defensores", tipo: "Cómic", poster: "https://i1.whakoom.com/small/2e/02/509c720e6af445638c517e533bc5dd75.jpg" },
-    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XXVIII: Pantera Negra: La Furia de La Pantera", categoria: "marvel-edad-bronce", subtipo: "black-panther", tipo: "Cómic", poster: "https://i1.whakoom.com/small/2e/02/509c720e6af445638c517e533bc5dd75.jpg" },
+    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XXVIII: Pantera Negra: La Furia de La Pantera", categoria: "marvel-edad-bronce", subtipo: "black-panther", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_690630-MLA75824266641_042024-O.webp" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XXX: Capitan America y Falcon: Imperio Secreto", categoria: "marvel-edad-bronce", subtipo: "capitan-america,falcon", tipo: "Cómic", poster: "https://i1.whakoom.com/small/11/35/921a24509b8a44b693110e2fc0c71e20.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XL: Daredevil: Marcado Para El Asesinato", categoria: "marvel-edad-bronce", subtipo: "daredevil", tipo: "Cómic", poster: "https://i1.whakoom.com/small/18/31/19d0e7b0d6c24e72b5f1bc8d602234a1.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XXVI: Doctor Strange: Realidad Paralela", categoria: "marvel-edad-bronce", subtipo: "doctor-strange", tipo: "Cómic", poster: "https://i1.whakoom.com/small/1d/00/137b87d3751d457e972a5384c3df021e.jpg" },
@@ -1752,7 +1752,7 @@ const listaMedia = [
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #25: Cuatro Fantasticos: Impensado", categoria: "marvel-edad-moderna-2", subtipo: "cuatro-fantasticos", tipo: "Cómic", poster: "https://i1.whakoom.com/small/00/22/65c592541fcc419c93b6a3ede21b7d95.jpg" },
     { titulo: "Coleccion Definitiva de Novelas Graficas de Marvel: #24: El Asombroso Spider-Man: Revelaciones", categoria: "marvel-edad-moderna-2", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0a/37/a1b515b28be049b88f6fbe235cb0dcae.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #26: Cuatro Fantasticos: Accion Autoritaria", categoria: "marvel-edad-moderna-2", subtipo: "cuatro-fantasticos", tipo: "Cómic", poster: "https://i1.whakoom.com/small/00/07/ee99ea647a7243ef8b1a968e6f329212.jpg" },
-    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #22: Spider-Man: Azul", categoria: "marvel-edad-moderna-2", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/36/3b/fe34d8c28c82482086e50b021fdc770e.jpg" },
+    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #22: Spider-Man: Azul", categoria: "marvel-edad-moderna-2", subtipo: "spider-man", tipo: "Cómic", poster: "https://d22fxaf9t8d39k.cloudfront.net/37901f3be0dba89e6d3919e96e42ccd9be01dc44c849d36ded1b8510cb484490223891.jpg" },
     { titulo: "Marvel Excelsior #10: Spider-Man: Azul", categoria: "marvel-edad-moderna-2", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0e/08/9692811d64374ae5b09aa2accc20c44c.jpg" },
     { titulo: "Must Have #10: Spider-Man/Black Cat: El Mal Que Hacen Los Hombres", categoria: "marvel-edad-moderna-2", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/1d/33/96e30d01332f4fa0a6dae2ffb7af6d48.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #28: Avengers: El Enfrentamiento", categoria: "marvel-edad-moderna-2", subtipo: "iron-man,thor,capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0d/2b/ccf3bb52aac944d49d78b9e7197524f4.jpg" },
@@ -3227,7 +3227,7 @@ const colecciones = [
         id: "colecciones-hub",
         titulo: "Colecciones",
         categoria: "comics",
-        poster: "https://placehold.co/300x450?text=Colecciones",
+        poster: "https://static.dc.com/2025-12/SM_SPDRMN_Cv1_00111_R1.jpg",
         esContenedor: true,
         peliculas: []
     },
@@ -3544,7 +3544,7 @@ const colecciones = [
         id: "marvel-camino-heroe",
         titulo: "El Camino del Héroe",
         categoria: "marvel-comics-hub",
-        poster: "https://placehold.co/300x450?text=El+Camino+del+Heroe",
+        poster: "https://w0.peakpx.com/wallpaper/755/13/HD-wallpaper-spiderman-marvel-comics.jpg",
         esContenedor: true,
         etiqueta: "Cómic",
         peliculas: []
@@ -3553,7 +3553,7 @@ const colecciones = [
         id: "marvel-argentina",
         titulo: "Marvel Argentina",
         categoria: "marvel-comics-hub",
-        poster: "https://placehold.co/300x450?text=Marvel+Argentina",
+        poster: "https://www.clarin.com/img/2025/09/04/qHPYW2is4_300x450__1.jpg",
         esContenedor: true,
         etiqueta: "Cómic",
         peliculas: []
@@ -3562,7 +3562,7 @@ const colecciones = [
         id: "marvel-edad-plata",
         titulo: "Edad de Plata (1961-1970)",
         categoria: "marvel-argentina",
-        poster: "https://placehold.co/300x450?text=Edad+de+Plata",
+        poster: "https://w0.peakpx.com/wallpaper/839/640/HD-wallpaper-ironman-marvel-comics-iron-man-silver-centurion.jpg",
         esContenedor: true,
         etiqueta: "Cómic",
         peliculas: []
@@ -3571,7 +3571,7 @@ const colecciones = [
         id: "marvel-edad-bronce",
         titulo: "Edad de Bronce (1970-1986)",
         categoria: "marvel-argentina",
-        poster: "https://placehold.co/300x450?text=Edad+de+Bronce",
+        poster: "https://w0.peakpx.com/wallpaper/237/907/HD-wallpaper-ironman-acero-comic-de-historieta-hombre-marvel.jpg",
         esContenedor: true,
         etiqueta: "Cómic",
         peliculas: []
@@ -3580,7 +3580,7 @@ const colecciones = [
         id: "marvel-edad-moderna-1",
         titulo: "Edad Moderna I (1986-2000)",
         categoria: "marvel-argentina",
-        poster: "https://placehold.co/300x450?text=Edad+Moderna+I",
+        poster: "https://w0.peakpx.com/wallpaper/213/20/HD-wallpaper-daredevil-comic-book-comics-marvel-marvel-comics-superhero.jpg",
         esContenedor: true,
         etiqueta: "Cómic",
         peliculas: []
@@ -3589,7 +3589,7 @@ const colecciones = [
         id: "marvel-edad-moderna-2",
         titulo: "Edad Moderna II (2000-2010)",
         categoria: "marvel-argentina",
-        poster: "https://placehold.co/300x450?text=Edad+Moderna+II",
+        poster: "https://i.pinimg.com/736x/f0/b7/bd/f0b7bd171bbcf1b9a095283f92b8775b.jpg",
         esContenedor: true,
         etiqueta: "Cómic",
         peliculas: []
@@ -3598,7 +3598,7 @@ const colecciones = [
         id: "marvel-actualidad",
         titulo: "Actualidad (2010-Presente)",
         categoria: "marvel-argentina",
-        poster: "https://placehold.co/300x450?text=Actualidad",
+        poster: "https://cdn.marvel.com/u/prod/marvel/i/mg/7/90/5b748e48ef477/portrait_uncanny.webp",
         esContenedor: true,
         etiqueta: "Cómic",
         peliculas: []
@@ -3607,7 +3607,7 @@ const colecciones = [
         id: "marvel-universo-ultimate",
         titulo: "Universo Ultimate",
         categoria: "marvel-argentina",
-        poster: "https://placehold.co/300x450?text=Universo+Ultimate",
+        poster: "https://w0.peakpx.com/wallpaper/696/373/HD-wallpaper-ultimate-spider-man-marvel-miles-miles-morales-morales-spider-man-spiderman-thumbnail.jpg",
         esContenedor: true,
         etiqueta: "Cómic",
         peliculas: []
