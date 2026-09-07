@@ -5013,7 +5013,7 @@ function sincronizarVistos() {
             // pantalla pero NO se guarda en ningún lado: al recargar la
             // página, se pierde. Avisamos esto de entrada en vez de dejar
             // que el usuario piense que quedó guardado.
-            if (!usuarioActual) {
+            if (!usuarioActual && !(auth && auth.currentUser)) {
                 mostrarErrorGuardado('No iniciaste sesión: esto no se va a guardar. Iniciá sesión y volvé a marcarlo.');
             }
 
@@ -6878,6 +6878,21 @@ firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 const db = firebase.firestore();
 
+// Sin esto, si marcás algo como visto y cerrás/recargás la pestaña antes
+// de que el pedido de guardado termine de confirmarse con el servidor
+// (algo muy común, sobre todo en celular), ya que un guardado normal
+// tarda un instante en viajar), ese cambio se pierde sin ningún aviso:
+// no había ninguna copia local esperando para reintentar. Con la
+// persistencia offline habilitada, Firestore guarda primero en el
+// dispositivo (vía IndexedDB) y lo sincroniza con el servidor apenas
+// puede — incluso si eso pasa recién la próxima vez que se abre la
+// página. Puede fallar si hay otra pestaña del mismo sitio abierta a
+// la vez, o si el navegador no lo soporta: en esos casos seguimos
+// funcionando igual que antes (sin la protección extra), sin romper nada.
+db.enablePersistence({ synchronizeTabs: true }).catch(err => {
+    console.warn('No se pudo habilitar la persistencia offline de Firestore:', err.code || err);
+});
+
 let usuarioActual = null;
 let huboSesionAntes = false;
 let titulosVistosGuardados = new Set();
@@ -7091,6 +7106,16 @@ function guardarProgresoUsuario(titulos, marcado) {
         else titulosVistosGuardados.delete(t);
     });
     renderizarLogros();
+
+    // Respaldo: si por algún motivo nuestra variable propia (usuarioActual)
+    // quedó desincronizada del estado real de Firebase (por ejemplo, si el
+    // usuario marcó algo en el instante justo antes de que onAuthStateChanged
+    // terminara de confirmar la sesión), preguntamos directamente a Firebase
+    // por el usuario actual en vez de confiar ciegamente en la variable.
+    const usuarioReal = usuarioActual || (auth && auth.currentUser) || null;
+    if (usuarioReal && usuarioReal !== usuarioActual) {
+        usuarioActual = usuarioReal;
+    }
 
     if (!usuarioActual) return;
     const idsLogros = logrosDisponibles.filter(l => l.condicion(titulosVistosGuardados)).map(l => l.id);
