@@ -1290,6 +1290,9 @@ const listaMedia = [
     { titulo: "Batman: Leyendas del Caballero Oscuro #13: Veneno", categoria: "post-crisis-dc", subtipo: "bane,batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_veneno_2da_cov-250c58f861dc0fc03317600407086103-640-0.webp" },
     { titulo: "Esenciales DC #10: La Muerte de Superman", categoria: "post-crisis-dc", subtipo: "doomsday,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/la_muerte_de_superman_cov1-f00b8d36cb38aa084616336649847817-640-0.webp" },
     { titulo: "La Muerte de Superman", categoria: "post-crisis-dc", subtipo: "doomsday,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/la_muerte_de_superman_2da_cov1-5b6a1e3579ad88846416336646797558-640-0.webp" },
+    { titulo: "Superman: Funeral Para un Amigo", categoria: "post-crisis-dc", subtipo: "superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/supermanfuneralparaunamigovol011-513a98d50f8afa465c15908683303908-640-0.webp" },
+    { titulo: "Superman: El Reino de Los Supermanes", categoria: "post-crisis-dc", subtipo: "superman,cyborg-superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/reino-de-los-supermanes-cov1-77983b8b7fb40ec32b15997760948652-1024-1024.webp" },
+    { titulo: "Superman: El Regreso de Superman", categoria: "post-crisis-dc", subtipo: "superman,cyborg-superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/el-regreso-de-superman-cov1-ea44b6d18315687f7716076390430895-1024-1024.webp" },
     { titulo: "Superman: La Saga de Superboy", categoria: "post-crisis-dc", subtipo: "superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_-_la_saga_de_superboy_cov-ce700dac78d91226fd17794625957093-640-0.webp" },
     { titulo: "Human Target: El Blanco Humano", categoria: "post-crisis-dc", subtipo: "human-target", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/human_target_el_blanco_humano_cov-deba4a965a611ddcb517679044734174-1024-1024.webp" },
     { titulo: "JLA Vol. 1: Nuevo Orden Mundial", categoria: "post-crisis-dc", subtipo: "aquaman,batman,flash-wally-west,green-lantern-guy-gardner,liga,martian-manhunter,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/jla_vol_1_cov-0b247ca6158935342217656503546676-1024-1024.webp" },
@@ -1396,6 +1399,10 @@ const listaMedia = [
     { titulo: "Esenciales DC #11: La Noche Mas Oscura", categoria: "post-crisis-dc", subtipo: "batman,green-lantern-hal-jordan,liga", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/la_noche_mas_oscura_2da_cov-a31e86028f1375b6e917685742571677-1024-1024.webp" },
     { titulo: "Esenciales DC #23: Batman: El Espejo Negro", categoria: "post-crisis-dc", subtipo: "batman,dick-grayson", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_the_black_mirror_cov-4189d8cc24746a418217105079252954-1024-1024.webp" },
     { titulo: "Esenciales DC #1: Flashpoint Absoluto", categoria: "post-crisis-dc", subtipo: "batman,flash-barry-allen", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flashpoint_4taed_cov_arg1-4c2c6e6a3c5b6220c316851089691513-1024-1024.webp" },
+    { titulo: "Batman: El Largo Halloween", categoria: "post-crisis-dc", subtipo: "batman,two-face,joker,riddler,penguin", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-el-largo-halloween-cov1-f2299cfb84cc81ac4216354359175721-640-0.webp" },
+    { titulo: "Batman: Victoria Oscura", categoria: "post-crisis-dc", subtipo: "batman,two-face,joker,ras-al-ghul", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-victoria-oscura-cov1-fa7ef1a20b9c8ccd2216487826415095-1024-1024.webp" },
+    { titulo: "Superman: Doomsday", categoria: "post-crisis-dc", subtipo: "superman,doomsday", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_814135-MLA45284985089_032021-O.webp" },
+    { titulo: "Flash: Año Uno", categoria: "post-crisis-dc", subtipo: "flash-wally-west", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flash_ano_uno-cov1-50c92b32aff0efc3d116052064368555-640-0.webp" },
     { titulo: "Batman: Blanco y Negro Vol. 1", categoria: "elseworlds-otros-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-blanco-y-negro-vol-11-8e1c349be1e11b4c1216300345691139-1024-1024.webp" },
     { titulo: "Batman: Blanco y Negro Vol. 2", categoria: "elseworlds-otros-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-blanco-y-negro-vol-2-cov1-e836066359817418c016384633303544-1024-1024.webp" },
     { titulo: "Batman: Blanco y Negro Vol. 3", categoria: "elseworlds-otros-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-blanco-y-negro-cov-vol-3-11-05f267022cdd0a118f16511604478304-1024-1024.webp" },
@@ -1574,6 +1581,12 @@ const listaMedia = [
     { titulo: "DC K.O. #7", categoria: "infinite-frontier-dc", subtipo: "batman,darkseid,joker,liga,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/dc_k-o-_7_cov-51448677ef239d1d9f17715400716310-1024-1024.webp" },
     { titulo: "DC K.O. #8", categoria: "infinite-frontier-dc", subtipo: "batman,darkseid,joker,liga,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/dc_k-o-_8_cov-e5e78dd74798de499717727385547731-1024-1024.webp" },
     { titulo: "DC K.O. #9", categoria: "infinite-frontier-dc", subtipo: "batman,darkseid,joker,liga,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/dc_k-o-__239_cov-52addfaf364210075517740244882696-640-0.webp" },
+    { titulo: "El Batman Que Rie", categoria: "infinite-frontier-dc", subtipo: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/el_batman_que_rie_2da-edicion-cov1-8dcb6cacbea86b0f3216209475387363-640-0.webp" },
+    { titulo: "Superman: Arriba en el Cielo", categoria: "infinite-frontier-dc", subtipo: "superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_arriba_en_el_cielo_cov1-00fc87c26069b3aba816287420974121-640-0.webp" },
+    { titulo: "El Batman Que Rie: Los Infectados", categoria: "infinite-frontier-dc", subtipo: "batman,joker,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/el-batman-que-rie-los-infectados-cov1-261097aff4c0dd6ceb16087827099070-1024-1024.webp" },
+    { titulo: "El Batman Que Rie: Emerge el Infierno", categoria: "infinite-frontier-dc", subtipo: "batman,joker,liga,lex-luthor", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/el-batman-que-rie-emerge-el-infierno-cov1-6fd3f8388a012a8bf616142986760916-1024-1024.webp" },
+    { titulo: "Batman: Tres Jokers", categoria: "infinite-frontier-dc", subtipo: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/three_jokers_deluxe_2025_cov-dfc608502148c025fb17564915196306-640-0.webp" },
+    { titulo: "El Desafio de Los Superhijos", categoria: "infinite-frontier-dc", subtipo: "batman,superman,superhijos", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/el_desafio_de_los_superhijos_cov-laca1-e2e98431056608424a16396820805800-640-0.webp" },
 
     // --- ABSOLUTE (DC) ---
     { titulo: "Absolute Batman Vol.1", categoria: "absolute-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_batman_cov_-ebfab072bc8f36fd1d17526095371796-1024-1024.webp" },
@@ -1657,6 +1670,19 @@ const listaMedia = [
     { titulo: "Batman/Tortugas Ninja Vol. 1", categoria: "elseworlds-otros-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_tmnt_cov-86da99168058469aae17159748754352-1024-1024.webp" },
     { titulo: "Batman/Tortugas Ninja Vol. 2", categoria: "elseworlds-otros-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_tmnt_ii_cov-a33f0608e737889d1717220479701959-1024-1024.webp" },
     { titulo: "Batman/Tortugas Ninja Vol. 3", categoria: "elseworlds-otros-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_tmnt_iii_cov-2128fe6dd7d35276b717304975288697-1024-1024.webp" },
+    { titulo: "All Star Superman", categoria: "elseworlds-otros-dc", subtipo: "superman,lex-luthor", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/all-star_superman_cov1-0f7e2491bc6dfae31316584616241314-640-0.webp" },
+    { titulo: "Batman: Condenado", categoria: "elseworlds-otros-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_damned_r_cov1-7533dfa2f667b8410c16070192141853-640-0.webp" },
+    { titulo: "Batman: El Impostor", categoria: "elseworlds-otros-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batmanelimpostor-cov1-a72ea2126771bba64016455383791384-1024-1024.webp" },
+    { titulo: "Batman: Tierra Uno", categoria: "elseworlds-otros-dc", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_tierra_uno_integral_cov1-3044abd6917e90e8d116426961861947-640-0.webp" },
+    { titulo: "Wonder Woman: Tierra Uno", categoria: "elseworlds-otros-dc", subtipo: "wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/wonder_woman_earth_one_cov_arg1-4ca4685a16c11682fa15952955499162-1024-1024.webp" },
+    { titulo: "DCeased: Virus Zombies", categoria: "elseworlds-otros-dc", subtipo: "batman,superman,liga", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/dceased_cov_arg1-c8cfecb30f36b9f6c616360714188285-1024-1024.webp" },
+    { titulo: "DCeased: Imposibles de Matar", categoria: "elseworlds-otros-dc", subtipo: "batman,superman,liga", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/dceased_vol2_cov_arg11-862a33364e654d477416106460352700-1024-1024.webp" },
+    { titulo: "DCeased: Esperanza en El Fin del Mundo", categoria: "elseworlds-otros-dc", subtipo: "batman,superman,liga", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/dceased-esperanza-en-el-fin-del-mundo-cov-arg1-2ea1df4a19843948c016287422176344-640-0.webp" },
+    { titulo: "DCeased: Planeta Muerto", categoria: "elseworlds-otros-dc", subtipo: "batman,superman,liga", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/dceased-planeta-muerto-cov-arg1-a2be88bd9c310197bf16209483078230-1024-1024.webp" },
+    { titulo: "DCeased: La Guerra de Los Dioses Zombies", categoria: "elseworlds-otros-dc", subtipo: "batman,superman,liga", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/dceased_-_la_guerra_de_los_dioses_zombies-820ed271fc0611acd217292743548462-1024-1024.webp" },
+    { titulo: "Kingdom Come", categoria: "elseworlds-otros-dc", subtipo: "batman,superman,liga", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/kingdom-come-cov-arg-11-ee7ba9ae124d4a0ada16130629664661-1024-1024.webp" },
+    { titulo: "Joker: Sonrisa Asesina", categoria: "elseworlds-otros-dc", subtipo: "joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/joker_sonrisa_asesina_cov1-c2afa4b9934b7940e716023875540063-640-0.webp" },
+    { titulo: "Las Aventuras de Batman: Amor Loco", categoria: "elseworlds-otros-dc", subtipo: "batman,harley-quinn,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/amor-lococover1-e41886b3086755bc8a16632199088351-1024-1024.webp" },
 
     // --- MARVEL ARGENTINA (movido aqui desde colecciones[], donde no se renderizaba bien) ---
     // --- EDAD DE PLATA ---
@@ -1911,6 +1937,51 @@ const listaMedia = [
     { titulo: "Marvel Ultimate Edicion Integral #12: Ultimate Adventures: El Duo Definitivo", categoria: "marvel-universo-ultimate", subtipo: "ultimate-adventures", tipo: "Cómic", poster: "https://i1.whakoom.com/small/14/29/6979fdb61d42465192d36d4595a79131.jpg" },
     { titulo: "Marvel Ultimate Edicion Integral #13: Ultimate Daredevil & Elektra: Justicia Para el Diablo", categoria: "marvel-universo-ultimate", subtipo: "daredevil", tipo: "Cómic", poster: "https://i1.whakoom.com/small/27/39/23ee3db8dabd4ca9b2f04d769ac8c0a1.jpg" },
     { titulo: "Marvel Ultimate Edicion Integral #14: Ultimate Spider-Man 06: Los Seis Siniestros", categoria: "marvel-universo-ultimate", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/1e/21/cea1a7d56a3345b6bfa5bb3df307a203.jpg" },
+    { titulo: "Marvel Ultimate Edicion Integral #15: Ultimate Fantastic Four 02: Zona N", categoria: "marvel-universo-ultimate", subtipo: "cuatro-fantasticos", tipo: "Cómic", poster: "https://d22fxaf9t8d39k.cloudfront.net/58f3698a8655120349c299f432f2f2ef28a62b0c90ff5922b3359e4c3da9639e223891.jpg" },
+    { titulo: "Marvel Ultimate Edicion Integral #16: Ultimate X-Men 04: Blockbuster", categoria: "marvel-universo-ultimate", subtipo: "x-men", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_740163-MLA103367602756_012026-O.webp" },
+    { titulo: "Marvel Ultimate Edicion Integral #17: Ultimate Spider-Man 07: Gatas y Reyes", categoria: "marvel-universo-ultimate", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/37/3c/c7d4a4d567a94ff887457017446a47ac.jpg" },
+    { titulo: "Marvel Ultimate Edicion Integral #18: The Ultimates 02: Dioses y Monstruos", categoria: "marvel-universo-ultimate", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_638176-MLA103366731612_012026-O.webp" },
+    { titulo: "Marvel Ultimate Edicion Integral #19: The Ultimates 03: El Gran Robo de America", categoria: "marvel-universo-ultimate", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2f/04/20d3107b2f6649939fb2efe718bfabe7.jpg" },
+    { titulo: "Marvel Ultimate Edicion Integral #20: Ultimate Spider-Man 08: Matanza", categoria: "marvel-universo-ultimate", subtipo: "spider-man,venom", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2024/09/9788447154395-20.webp" },
+    { titulo: "Marvel Ultimate Edicion Integral #21: Ultimate Fantastic Four 03: Los 4 Terribles", categoria: "marvel-universo-ultimate", subtipo: "cuatro-fantasticos", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2024/09/9788447154395-21.webp" },
+    { titulo: "Marvel Ultimate Edicion Integral #22: Ultimate X-Men 05: La Tempestad", categoria: "marvel-universo-ultimate", subtipo: "x-men", tipo: "Cómic", poster: "https://d22fxaf9t8d39k.cloudfront.net/2d835dbc7811804999687dc3ec048afe51f56899ee306adccb3563874e11dcbc223891.jpg" },
+    { titulo: "Marvel Ultimate Edicion Integral #23: Ultimate Spider-Man 09: El Duende", categoria: "marvel-universo-ultimate", subtipo: "spider-man", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2024/09/9788447154395-23.webp" },
+    { titulo: "Marvel Ultimate Edicion Integral #24: Ultimate Power: Supremo", categoria: "marvel-universo-ultimate", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2024/10/9788447154395-24.webp" },
+    { titulo: "Marvel Ultimate Edicion Integral #25: Ultimate Fantastic Four 04: Diablos", categoria: "marvel-universo-ultimate", subtipo: "cuatro-fantasticos", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2024/10/9788447154395-25.webp" },
+    { titulo: "Marvel Ultimate Edicion Integral #26: Ultimate Spider-Man 10: Marta Plateada", categoria: "marvel-universo-ultimate", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1e/33/14fa838addb54d59af111bac5ca7f27c.jpg" },
+    { titulo: "Marvel Ultimate Edicion Integral #27: Ultimate Iron Man: Biografia No Autorizada", categoria: "marvel-universo-ultimate", subtipo: "iron-man", tipo: "Cómic", poster: "https://www.salvat.com/36083-large_default/ultimate-iron-man-biografia-no-autorizada.jpg" },
+    { titulo: "Marvel Ultimate Edicion Integral #28: Ultimate Hulk vs Lobezno & Iron Man", categoria: "marvel-universo-ultimate", subtipo: "hulk,wolverine,iron-man", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_741530-MLA103884517545_012026-O.webp" },
+    { titulo: "Marvel Ultimate Edicion Integral #29: Ultimate Spider-Man 11: La Saga del Clon", categoria: "marvel-universo-ultimate", subtipo: "spider-man", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2025/01/9788447154395-29.webp" },
+    { titulo: "Marvel Ultimate Edicion Integral #30: Ultimate X-Men 06: Norte Magnetico", categoria: "marvel-universo-ultimate", subtipo: "x-men", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_711163-MLA103884746579_012026-O.webp" },
+    { titulo: "Marvel Ultimate Edicion Integral #31: Ultimate Spider-Man 12: Caballeros", categoria: "marvel-universo-ultimate", subtipo: "spider-man", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2025/02/9788447154395-31.webp" },
+    { titulo: "Marvel Ultimate Edicion Integral #32: Ultimate X-Men 07: Cable", categoria: "marvel-universo-ultimate", subtipo: "x-men", tipo: "Cómic", poster: "https://www.salvat.com/36662-large_default/ultimate-x-men-cable.jpg" },
+    { titulo: "Marvel Ultimate Edicion Integral #33: Ultimate Spider-Man 13: Muerte de un Duende", categoria: "marvel-universo-ultimate", subtipo: "spider-man", tipo: "Cómic", poster: "https://www.salvat.com/36865-large_default/muerte-de-un-duende.jpg" },
+    { titulo: "Marvel Ultimate Edicion Integral #34: The Ultimates 04: ¿Quien Mato a la Bruja Escarlata?", categoria: "marvel-universo-ultimate", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_979392-MLA103884816861_012026-O.webp" },
+    { titulo: "Marvel Ultimate Edicion Integral #35: Ultimate X-Men 08: Centinelas", categoria: "marvel-universo-ultimate", subtipo: "x-men", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2025/04/9788447154395-35-1.webp" },
+    { titulo: "Marvel Ultimate Edicion Integral #36: Ultimatum: Apocalipsis Definitivo", categoria: "marvel-universo-ultimate", subtipo: "spider-man,x-men,cuatro-fantasticos,iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1e/2f/3b5aaaf9e90b45469313a059e6e83a1d.jpg" },
+    { titulo: "Marvel Ultimate Edicion Integral #37: Ultimate Spider-Man 14: Ultimatum", categoria: "marvel-universo-ultimate", subtipo: "spider-man", tipo: "Cómic", poster: "https://www.salvat.com/37275-large_default/ultimatum.jpg" },
+    { titulo: "Marvel Ultimate Edicion Integral #38: Ultimate X-Men 09: Ultimatum", categoria: "marvel-universo-ultimate", subtipo: "x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/large/0a/1a/6d68b374fa6440008f695d3ed44f9056.jpg" },
+    { titulo: "Marvel Ultimate Edicion Integral #39: Ultimate Fantastic Four 05: Ultimatum", categoria: "marvel-universo-ultimate", subtipo: "cuatro-fantasticos", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2025/12/9788447154395-39.webp" },
+    { titulo: "Marvel Ultimate Edicion Integral #40: Ultimate Spider-Man 15: El Mundo Segun Peter Parker", categoria: "marvel-universo-ultimate", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/36/2b/5173060b3ec447b0b30bb2948f0680b5.jpg" },
+    { titulo: "Marvel Ultimate Edicion Integral #41: Ultimate Vengadores 01: Craneo Rojo", categoria: "marvel-universo-ultimate", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2025/07/9788447154395-41.webp" },
+    { titulo: "Marvel Ultimate Edicion Integral #42: Ultimate Spider-Man 16: Enemigo Definitivo", categoria: "marvel-universo-ultimate", subtipo: "spider-man", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_769302-MLA87300534383_072025-O.webp" },
+    { titulo: "Marvel Ultimate Edicion Integral #43: Ultimate Iron Man & Capitan America & Thor", categoria: "marvel-universo-ultimate", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2025/08/9788447154395-43.webp" },
+    { titulo: "Marvel Ultimate Edicion Integral #44: Ultimate Vengadores 02: Nuevos Ultimates", categoria: "marvel-universo-ultimate", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_790717-MLA89280800154_082025-O.webp" },
+    { titulo: "Marvel Ultimate Edicion Integral #45: Ultimate Spider-Man 17: La Muerte de Spider-Man", categoria: "marvel-universo-ultimate", subtipo: "spider-man", tipo: "Cómic", poster: "https://www.salvat.com/37992-large_default/ultimate-spiderman-la-muerte-de-spiderman.jpg" },
+    { titulo: "Marvel Ultimate Edicion Integral #46: Ultimate Vengadores 03: La Muerte de Spider-Man", categoria: "marvel-universo-ultimate", subtipo: "iron-man,capitan-america,thor,spider-man", tipo: "Cómic", poster: "https://www.salvat.com/38199-large_default/muerte-de-Spiderman.jpg" },
+    { titulo: "Marvel Ultimate Edicion Integral #47: Ultimate Spider-Man 18: El Nuevo Spider-Man", categoria: "marvel-universo-ultimate", subtipo: "spider-man", tipo: "Cómic", poster: "https://www.salvat.com/38357-large_default/ultimate-spiderman-el-nuevo-spiderman.jpg" },
+    { titulo: "Marvel Ultimate Edicion Integral #48: The Ultimates 05: La Republica Esta Ardiendo", categoria: "marvel-universo-ultimate", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://www.salvat.com/38359-large_default/the-ultimates-la-republica-esta-ardiendo.jpg" },
+    { titulo: "Marvel Ultimate Edicion Integral #49: Ultimate X-Men 09: El Futuro es Hoy", categoria: "marvel-universo-ultimate", subtipo: "x-men", tipo: "Cómic", poster: "https://www.salvat.com/38493-large_default/ultimate-x-men-el-futuro-es-hoy.jpg" },
+    { titulo: "Marvel Ultimate Edicion Integral #50: The Ultimates 06: Divididos Caemos, Unidos Resistimos", categoria: "marvel-universo-ultimate", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://www.salvat.com/38576-large_default/the-ultimates-divididos-caemos-unidos-resistimos.jpg" },
+    { titulo: "Marvel Ultimate Edicion Integral #52: Ultimate X-Men 10\" Dividimos Caemos, Unidos Resistimos", categoria: "marvel-universo-ultimate", subtipo: "x-men", tipo: "Cómic", poster: "https://www.salvat.com/38672-large_default/x-men-dividimos-caemos-unidos-resistimos.jpg" },
+    { titulo: "Marvel Ultimate Edicion Integral #53: Ultimate Spider-Man 20: La Guerra de Veneno", categoria: "marvel-universo-ultimate", subtipo: "spider-man,venom", tipo: "Cómic", poster: "https://www.salvat.com/38899-large_default/spiderman-la-guerra-de-veneno.jpg" },
+    { titulo: "Marvel Ultimate Edicion Integral #54: The Ultimates 07: Ultimates Desunidos", categoria: "marvel-universo-ultimate", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://www.salvat.com/38901-large_default/the-ultimates-ultimates-desunidos.jpg" },
+    { titulo: "Marvel Ultimate Edicion Integral #55: Ultimate X-Men 11: Recursos Naturales", categoria: "marvel-universo-ultimate", subtipo: "x-men", tipo: "Cómic", poster: "https://www.salvat.com/39118-large_default/x-men-recursos-naturales.jpg" },
+    { titulo: "Marvel Ultimate Edicion Integral #56: Cataciclismo: La Batalla Final de Los Ultimates", categoria: "marvel-universo-ultimate", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/large/28/13/3e76025ae2d040909d16ef09037d05ef.jpg" },
+    { titulo: "Marvel Ultimate Edicion Integral #57: Jovenes Ultimates: Poder por Poder", categoria: "marvel-universo-ultimate", subtipo: "jovenes-ultimates", tipo: "Cómic", poster: "https://www.salvat.com/39302-large_default/jovenes-ultimates-poder-por-poder.jpg" },
+    { titulo: "Marvel Ultimate Edicion Integral #58: Ultimate Fantastic Four 06: Los Mas Extraños del Mundo", categoria: "marvel-universo-ultimate", subtipo: "cuatro-fantasticos", tipo: "Cómic", poster: "https://i1.whakoom.com/large/10/19/44f1057f60604b6eac2a71e6336c2ab5.jpg" },
+    { titulo: "Marvel Ultimate Edicion Integral #59: Ultimate Spider-Man 21: Renacimiento", categoria: "marvel-universo-ultimate", subtipo: "spider-man", tipo: "Cómic", poster: "https://www.salvat.com/39492-large_default/renacimiento.jpg" },
+    { titulo: "Marvel Ultimate Edicion Integral #60: Ultimate Spider-Man 22: Fin", categoria: "marvel-universo-ultimate", subtipo: "spider-man", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_975645-MLA109035903459_032026-O.webp" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #33: Los Ultimates: Superhumano", categoria: "marvel-universo-ultimate", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/12/3a/193c393337634063b7981a7f2762d408.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #37: Los Ultimates: Seguridad Nacional", categoria: "marvel-universo-ultimate", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0e/2a/a76c5dd694af461eb8b4b9ba56323fc3.jpg" },
     { titulo: "Marvel Ultimate Edicion Integral #3: The Ultimates 01: Vengadores", categoria: "marvel-universo-ultimate", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/14/34/97b62b00c35046a98ef3323717560d2e.jpg" },
@@ -1942,6 +2013,7 @@ const listaMedia = [
     { titulo: "Marvel Excelsior #3: Wolverine: El Viejo Logan", categoria: "marvel-realidades-alternativas", subtipo: "wolverine", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_620210-MLA76883830202_062024-O.webp" },
     { titulo: "Coleccion Spider-Man: Universo Araña #14: Spider-Noir", categoria: "marvel-realidades-alternativas", subtipo: "spider-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/spider-man_noir_universo_arana_14_cov1-a0f8a14d0c30d6730816718536596221-640-0.webp" },
     { titulo: "Coleccion Spider-Man: Universo Araña #17: Spider-Men: Los Hombres Araña", categoria: "marvel-realidades-alternativas", subtipo: "spider-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/17-spider-men_cov1-3823735685665d472316760520583357-1024-1024.webp" },
+    { titulo: "Marvel Ultimate Edicion Integral #51: Ultimate Spider-Man 19: Spider-Men", categoria: "marvel-realidades-alternativas", subtipo: "spider-man", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_892081-MLA103364681662_012026-O.webp" },
     { titulo: "Coleccion Spider-Man: Universo Araña #1: Spider-Verse: Primera Parte", categoria: "marvel-realidades-alternativas", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/34/00/fd2621cc15b640c1970eaefd5dd6a985.jpg" },
     { titulo: "Coleccion Spider-Man: Universo Araña #5: Spider-Verse: Segunda Parte", categoria: "marvel-realidades-alternativas", subtipo: "spider-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/05_universo_arana_02_cov1-7f92a980e7b14252e316931933091988-640-0.webp" },
     { titulo: "Coleccion Spider-Man: Universo Araña #7: Spider-Verse: Tercera Parte", categoria: "marvel-realidades-alternativas", subtipo: "spider-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/07_universo_arana_03_cov1-8d9565f20ad9e14d9416947509177297-480-0.webp" },
@@ -7724,41 +7796,100 @@ const personajesNombralosLinternas = [
     { id: "yalan_gur", nombreMostrado: "Yalan Gur", alias: ["yalan gur", "yalan"], imagen: "https://static.wikia.nocookie.net/dccu/images/e/ea/Yalan_Gur.jpg/revision/latest?cb=20180323175101" }
 ];
 
+const personajesNombralosBatifamilia = [
+    { id: "batman", nombreMostrado: "Batman", alias: ["batman", "bruce", "wayne", "bruce wayne", "bruno diaz", "amo bruce"], imagen: "https://wallpapercave.com/wp/wp13343903.jpg" },
+    { id: "dick_grayson", nombreMostrado: "Dick Grayson (Nightwing)", alias: ["dick", "grayson", "primer robin", "dick grayson", "señorito tapia", "ricardo tapia", "tapia", "nightwing"], imagen: "https://w0.peakpx.com/wallpaper/142/528/HD-wallpaper-nightwing-dc.jpg" },
+    { id: "damian_wayne", nombreMostrado: "Damian Wayne", alias: ["damian", "robin", "bolita de odio", "damian wayne"], imagen: "https://w0.peakpx.com/wallpaper/616/667/HD-wallpaper-damian-wayne-batman-robin.jpg" },
+    { id: "alfred", nombreMostrado: "Alfred Pennyworth", alias: ["alfred", "pennyworth", "alfred pennyworth", "mayordomo"], imagen: "https://w0.peakpx.com/wallpaper/979/66/HD-wallpaper-alfred-pennyworth-batman-bruce-catwoman-wayne.jpg" },
+    { id: "red_hood", nombreMostrado: "Red Hood (Jason Todd)", alias: ["jason todd", "jason", "todd", "red hood"], imagen: "https://w0.peakpx.com/wallpaper/872/353/HD-wallpaper-red-hood-jason-todd.jpg" },
+    { id: "tim_drake", nombreMostrado: "Tim Drake (Red Robin)", alias: ["red robin", "robin iii", "tim", "drake", "tim drake"], imagen: "https://w0.peakpx.com/wallpaper/972/419/HD-wallpaper-robin-tim-drake-titans-bat-family-comics-robin-tim-drake-lgbt-dc-superheros-thumbnail.jpg" },
+    { id: "barbara_gordon", nombreMostrado: "Barbara Gordon (Batgirl/Oracle)", alias: ["barbara", "oracle", "oraculo", "batichica", "batgirl", "barbara gordon"], imagen: "https://i.pinimg.com/736x/06/19/13/061913ed53331abb7dbd5d9cb60c281c.jpg" },
+    { id: "cassandra_cain", nombreMostrado: "Cassandra Cain (Batgirl II)", alias: ["cassandra", "orphan", "batgirl ii", "batichica ii", "cassandra cain"], imagen: "https://i.pinimg.com/736x/3e/4d/9c/3e4d9cacbf99aa9552d6027fb0a2981c.jpg" },
+    { id: "stephanie_brown", nombreMostrado: "Stephanie Brown (Spoiler/Batgirl III)", alias: ["spoiler", "batgirl iii", "batichica iii", "stephanie", "stephanie brown"], imagen: "https://i.pinimg.com/736x/cc/81/40/cc8140fb531d8976c208e70f02345ddc.jpg" },
+    { id: "batwoman", nombreMostrado: "Batwoman (Kate Kane)", alias: ["batwoman", "kate kane", "kate"], imagen: "https://w0.peakpx.com/wallpaper/144/1014/HD-wallpaper-batwoman-dc-comics-minimal.jpg" },
+    { id: "duke_thomas", nombreMostrado: "Duke Thomas (Signal)", alias: ["duke", "thomas", "signal", "duke thomas"], imagen: "https://i.pinimg.com/736x/d3/f4/d9/d3f4d9207f8eeef60d16281187dcdbd9.jpg" },
+    { id: "luke_fox", nombreMostrado: "Luke Fox (Batwing)", alias: ["batwing", "luke fox", "luke"], imagen: "https://w0.peakpx.com/wallpaper/812/497/HD-wallpaper-batwing-cfdffsd-fvvcvcv-thumbnail.jpg" },
+    { id: "huntress", nombreMostrado: "Huntress (Helena Bertinelli)", alias: ["cazadora", "helena", "bertinelli", "helena bertinelli", "huntress"], imagen: "https://w0.peakpx.com/wallpaper/811/852/HD-wallpaper-huntress-comic-nek.jpg" },
+    { id: "azrael", nombreMostrado: "Azrael (Jean Paul Valley)", alias: ["jean paul", "valley", "azrael", "jean paul valley"], imagen: "https://i.pinimg.com/736x/47/b8/a3/47b8a3d487f8d9cb3bff936ff51a1b3b.jpg" },
+    { id: "bluebird", nombreMostrado: "Bluebird (Harper Row)", alias: ["harper row", "bluebird", "harper"], imagen: "https://static.wikia.nocookie.net/marvel_dc/images/8/86/Harper_Row_Prime_Earth_12.jpg/revision/latest?cb=20230310145835" },
+    { id: "catwoman", nombreMostrado: "Catwoman (Selina Kyle)", alias: ["gatubela", "selina", "selina kyle", "catwoman"], imagen: "https://wallpaper.forfun.com/fetch/94/94f1fab63896aeeef28dc46c9effa4dd.jpeg" },
+    { id: "gordon", nombreMostrado: "Comisionado Gordon", alias: ["comisionado gordon", "jim gordon", "james gordon", "gordon"], imagen: "https://wallpaper.forfun.com/fetch/7c/7ccc82ab60d604e210fdf020668480f8.jpeg" },
+    { id: "ace", nombreMostrado: "Ace (Batperro)", alias: ["batperro", "batiperro", "bathound", "ace"], imagen: "https://i.pinimg.com/736x/d7/ca/52/d7ca52da0f9578eac5266503128e22c2.jpg" }
+];
+
+// Registro de todos los "Nombralos" disponibles, agrupados por categoría.
+// Para agregar un juego nuevo alcanza con sumar una entrada acá y
+// una tarjeta en el HTML (o generarla dinámicamente, como hacemos con DC).
+const juegosNombralosDatasets = {
+    "linternas": {
+        titulo: "Green Lantern: Nombralos",
+        subtitulo: "Nombrá a todos los Green Lantern que puedas antes de que se acabe el tiempo.",
+        icono: "💚",
+        categoria: "dc",
+        personajes: personajesNombralosLinternas
+    },
+    "batifamilia": {
+        titulo: "Batifamilia: Nombralos",
+        subtitulo: "Nombrá a todos los miembros de la Batifamilia que puedas antes de que se acabe el tiempo.",
+        icono: "🦇",
+        categoria: "dc",
+        personajes: personajesNombralosBatifamilia
+    }
+};
+
+let datasetIdActivoNombralos = null;
+let personajesActivosNombralos = [];
 let personajesEncontradosNombralos = new Set();
+let ordenEncontradosNombralos = []; // en qué orden se fueron adivinando, para la galería
 let tiempoRestanteNombralos = 60;
 let intervaloNombralos = null;
 let juegoNombralosActivo = false;
 
-function renderizarSlotsNombralos() {
-    const cont = document.getElementById('grilla-slots-nombralos');
+function renderizarTarjetaCentralNombralos() {
+    const cont = document.getElementById('tarjeta-central-nombralos');
+    if (!cont) return;
+    if (ordenEncontradosNombralos.length === 0) {
+        cont.innerHTML = `<span class="signo-interrogacion">?</span>`;
+        return;
+    }
+    const ultimoId = ordenEncontradosNombralos[ordenEncontradosNombralos.length - 1];
+    const p = personajesActivosNombralos.find(x => x.id === ultimoId);
+    if (!p) return;
+    cont.innerHTML = `
+        <img src="${p.imagen}" alt="${p.nombreMostrado}">
+        <div class="caption-personaje-slot">
+            <span class="nombre-personaje-slot">${p.nombreMostrado}</span>
+        </div>
+    `;
+}
+
+function renderizarGaleriaDescubiertosNombralos() {
+    const cont = document.getElementById('galeria-descubiertos-nombralos');
     if (!cont) return;
     cont.innerHTML = '';
-    personajesNombralosLinternas.forEach(p => {
+    ordenEncontradosNombralos.forEach(id => {
+        const p = personajesActivosNombralos.find(x => x.id === id);
+        if (!p) return;
         const slot = document.createElement('div');
-        slot.className = 'slot-elenco';
-        slot.dataset.personajeId = p.id;
-        if (personajesEncontradosNombralos.has(p.id)) {
-            slot.classList.add('resuelto');
-            slot.innerHTML = `
-                <img class="imagen-personaje-slot" src="${p.imagen}" alt="${p.nombreMostrado}">
-                <div class="caption-personaje-slot">
-                    <span class="nombre-personaje-slot">${p.nombreMostrado}</span>
-                </div>
-            `;
-        } else {
-            slot.innerHTML = `<span class="signo-interrogacion">?</span>`;
-        }
+        slot.className = 'slot-elenco resuelto';
+        slot.innerHTML = `
+            <img class="imagen-personaje-slot" src="${p.imagen}" alt="${p.nombreMostrado}">
+            <div class="caption-personaje-slot">
+                <span class="nombre-personaje-slot">${p.nombreMostrado}</span>
+            </div>
+        `;
         cont.appendChild(slot);
     });
 }
 
 function actualizarContadorNombralos() {
     const contador = document.getElementById('contador-nombralos');
-    if (contador) contador.textContent = `${personajesEncontradosNombralos.size}/${personajesNombralosLinternas.length} encontrados`;
+    if (contador) contador.textContent = `${personajesEncontradosNombralos.size}/${personajesActivosNombralos.length} encontrados`;
 }
 
 function reiniciarPantallaNombralos() {
     personajesEncontradosNombralos = new Set();
+    ordenEncontradosNombralos = [];
     tiempoRestanteNombralos = 60;
     juegoNombralosActivo = false;
     if (intervaloNombralos) clearInterval(intervaloNombralos);
@@ -7778,8 +7909,26 @@ function reiniciarPantallaNombralos() {
     const promedio = document.getElementById('promedio-nombralos');
     if (promedio) promedio.textContent = '';
 
-    renderizarSlotsNombralos();
+    renderizarTarjetaCentralNombralos();
+    renderizarGaleriaDescubiertosNombralos();
     actualizarContadorNombralos();
+}
+
+// Carga el dataset elegido (linternas, batifamilia, etc.), actualiza los
+// textos de la pantalla de juego y entra a jugar.
+function abrirJuegoNombralos(datasetId) {
+    const dataset = juegosNombralosDatasets[datasetId];
+    if (!dataset) return;
+    datasetIdActivoNombralos = datasetId;
+    personajesActivosNombralos = dataset.personajes;
+
+    const titulo = document.getElementById('titulo-nombralos-jugar');
+    const subtitulo = document.getElementById('subtitulo-nombralos-jugar');
+    if (titulo) titulo.textContent = `${dataset.titulo} ⏱️`;
+    if (subtitulo) subtitulo.textContent = dataset.subtitulo;
+
+    reiniciarPantallaNombralos();
+    cambiarSeccion(document.getElementById('seccion-nombralos-jugar'));
 }
 
 function empezarJuegoNombralos() {
@@ -7813,24 +7962,26 @@ function intentarAdivinarNombralos() {
     const mensaje = document.getElementById('mensaje-nombralos');
     if (!valorNormalizado) return;
 
-    const encontrado = personajesNombralosLinternas.find(p =>
+    const encontrado = personajesActivosNombralos.find(p =>
         p.alias.some(alias => normalizarTextoJuego(alias) === valorNormalizado)
     );
 
     if (!encontrado) {
-        mensaje.textContent = `❌ "${input.value}" no es un Green Lantern reconocido.`;
+        mensaje.textContent = `❌ "${input.value}" no es un personaje reconocido.`;
         mensaje.className = 'mensaje-elenco error';
     } else if (personajesEncontradosNombralos.has(encontrado.id)) {
         mensaje.textContent = `Ya habías nombrado a ${encontrado.nombreMostrado}.`;
         mensaje.className = 'mensaje-elenco aviso';
     } else {
         personajesEncontradosNombralos.add(encontrado.id);
-        renderizarSlotsNombralos();
+        ordenEncontradosNombralos.push(encontrado.id);
+        renderizarTarjetaCentralNombralos();
+        renderizarGaleriaDescubiertosNombralos();
         actualizarContadorNombralos();
         mensaje.textContent = `✅ ¡${encontrado.nombreMostrado}!`;
         mensaje.className = 'mensaje-elenco exito';
 
-        if (personajesEncontradosNombralos.size === personajesNombralosLinternas.length) {
+        if (personajesEncontradosNombralos.size === personajesActivosNombralos.length) {
             finalizarJuegoNombralos();
         }
     }
@@ -7856,7 +8007,7 @@ function finalizarJuegoNombralos() {
 
     const puntajeFinal = personajesEncontradosNombralos.size;
     const mensaje = document.getElementById('mensaje-nombralos');
-    mensaje.textContent = `⏱️ ¡Se acabó el tiempo! Nombraste ${puntajeFinal} de ${personajesNombralosLinternas.length}.`;
+    mensaje.textContent = `⏱️ ¡Se acabó el tiempo! Nombraste ${puntajeFinal} de ${personajesActivosNombralos.length}.`;
     mensaje.className = 'mensaje-elenco victoria';
 
     guardarYMostrarPromedioNombralos(puntajeFinal);
@@ -7864,10 +8015,11 @@ function finalizarJuegoNombralos() {
 
 // Guarda el puntaje de esta partida en un contador global compartido entre
 // todos los usuarios, y muestra el promedio actualizado. No depende de estar
-// logueado: es una estadística pública del juego, no del usuario.
+// logueado: es una estadística pública del juego, no del usuario. Cada dataset
+// (Linternas, Batifamilia, etc.) guarda su propio promedio por separado.
 function guardarYMostrarPromedioNombralos(puntajeFinal) {
     const promedioEl = document.getElementById('promedio-nombralos');
-    const refStats = db.collection('estadisticas').doc('nombralos-linternas');
+    const refStats = db.collection('estadisticas').doc(`nombralos-${datasetIdActivoNombralos}`);
 
     refStats.set({
         totalPuntaje: firebase.firestore.FieldValue.increment(puntajeFinal),
@@ -7884,11 +8036,72 @@ function guardarYMostrarPromedioNombralos(puntajeFinal) {
     });
 }
 
+// Tarjeta "Nombralos" del menú de Juegos: ahora lleva al selector de categorías
+// (DC / Marvel) en vez de entrar directo a un juego puntual.
 const tarjetaNombralos = document.getElementById('tarjeta-nombralos');
 if (tarjetaNombralos) {
     tarjetaNombralos.addEventListener('click', () => {
-        reiniciarPantallaNombralos();
-        cambiarSeccion(document.getElementById('seccion-nombralos-jugar'));
+        cambiarSeccion(document.getElementById('seccion-nombralos-categorias'));
+    });
+}
+
+const btnVolverJuegosDesdeNombralosCategorias = document.getElementById('btn-volver-juegos-desde-nombralos-categorias');
+if (btnVolverJuegosDesdeNombralosCategorias) {
+    btnVolverJuegosDesdeNombralosCategorias.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-juegos'));
+    });
+}
+
+// Arma dinámicamente las tarjetas de juegos dentro de cada categoría
+// (DC / Marvel), a partir de juegosNombralosDatasets.
+function renderizarSelectorNombralos(categoria, idGrilla) {
+    const grilla = document.getElementById(idGrilla);
+    if (!grilla) return;
+    grilla.innerHTML = '';
+    Object.entries(juegosNombralosDatasets).forEach(([id, dataset]) => {
+        if (dataset.categoria !== categoria) return;
+        const tarjeta = document.createElement('div');
+        tarjeta.className = 'tarjeta-juego';
+        tarjeta.innerHTML = `
+            <div class="icono-juego">${dataset.icono || '⏱️'}</div>
+            <h3>${dataset.titulo.replace(': Nombralos', '')}</h3>
+            <p>${dataset.personajes.length} personajes para nombrar.</p>
+        `;
+        tarjeta.addEventListener('click', () => abrirJuegoNombralos(id));
+        grilla.appendChild(tarjeta);
+    });
+    if (!grilla.children.length) {
+        grilla.innerHTML = '<p style="color:#aaa;">Todavía no hay juegos acá. ¡Pronto!</p>';
+    }
+}
+
+const tarjetaNombralosDc = document.getElementById('tarjeta-nombralos-dc');
+if (tarjetaNombralosDc) {
+    tarjetaNombralosDc.addEventListener('click', () => {
+        renderizarSelectorNombralos('dc', 'grilla-nombralos-dc');
+        cambiarSeccion(document.getElementById('seccion-nombralos-dc'));
+    });
+}
+
+const tarjetaNombralosMarvel = document.getElementById('tarjeta-nombralos-marvel');
+if (tarjetaNombralosMarvel) {
+    tarjetaNombralosMarvel.addEventListener('click', () => {
+        renderizarSelectorNombralos('marvel', 'grilla-nombralos-marvel');
+        cambiarSeccion(document.getElementById('seccion-nombralos-marvel'));
+    });
+}
+
+const btnVolverNombralosCategoriasDesdeDc = document.getElementById('btn-volver-nombralos-categorias-desde-dc');
+if (btnVolverNombralosCategoriasDesdeDc) {
+    btnVolverNombralosCategoriasDesdeDc.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-nombralos-categorias'));
+    });
+}
+
+const btnVolverNombralosCategoriasDesdeMarvel = document.getElementById('btn-volver-nombralos-categorias-desde-marvel');
+if (btnVolverNombralosCategoriasDesdeMarvel) {
+    btnVolverNombralosCategoriasDesdeMarvel.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-nombralos-categorias'));
     });
 }
 

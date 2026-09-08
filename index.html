@@ -1079,9 +1079,42 @@
             <div class="tarjeta-juego" id="tarjeta-nombralos">
                 <div class="icono-juego">⏱️</div>
                 <h3>Nombralos</h3>
-                <p>Tenés 60 segundos. Nombrá a todos los Green Lantern que puedas.</p>
+                <p>Tenés 60 segundos. Nombrá a todos los personajes que puedas.</p>
             </div>
         </div>
+    </section>
+
+    <!-- SECCIÓN: JUEGOS - NOMBRALOS - CATEGORÍAS (DC / MARVEL) -->
+    <section id="seccion-nombralos-categorias" class="oculto">
+        <button class="btn-volver" id="btn-volver-juegos-desde-nombralos-categorias">← Volver a Juegos</button>
+        <h2>Nombralos ⏱️</h2>
+        <p class="subtitulo-juegos">Elegí una categoría.</p>
+        <div class="grilla-juegos">
+            <div class="tarjeta-juego" id="tarjeta-nombralos-dc">
+                <div class="icono-juego">🦇</div>
+                <h3>DC</h3>
+            </div>
+            <div class="tarjeta-juego" id="tarjeta-nombralos-marvel">
+                <div class="icono-juego">🕸️</div>
+                <h3>Marvel</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: JUEGOS - NOMBRALOS - DC (SELECTOR) -->
+    <section id="seccion-nombralos-dc" class="oculto">
+        <button class="btn-volver" id="btn-volver-nombralos-categorias-desde-dc">← Volver</button>
+        <h2>Nombralos: DC</h2>
+        <p class="subtitulo-juegos">Elegí qué personajes querés nombrar.</p>
+        <div class="grilla-juegos" id="grilla-nombralos-dc"></div>
+    </section>
+
+    <!-- SECCIÓN: JUEGOS - NOMBRALOS - MARVEL (SELECTOR) -->
+    <section id="seccion-nombralos-marvel" class="oculto">
+        <button class="btn-volver" id="btn-volver-nombralos-categorias-desde-marvel">← Volver</button>
+        <h2>Nombralos: Marvel</h2>
+        <p class="subtitulo-juegos">Elegí qué personajes querés nombrar.</p>
+        <div class="grilla-juegos" id="grilla-nombralos-marvel"></div>
     </section>
 
     <!-- SECCIÓN: JUEGOS - SELECTOR DE ELENCOS -->
@@ -1113,8 +1146,8 @@
     <!-- SECCIÓN: JUEGO - NOMBRALOS -->
     <section id="seccion-nombralos-jugar" class="oculto">
         <button class="btn-volver" id="btn-volver-juegos-desde-nombralos">← Volver a Juegos</button>
-        <h2>Nombralos ⏱️</h2>
-        <p class="subtitulo-juegos">Nombrá a todos los Green Lantern que puedas antes de que se acabe el tiempo.</p>
+        <h2 id="titulo-nombralos-jugar">Nombralos ⏱️</h2>
+        <p class="subtitulo-juegos" id="subtitulo-nombralos-jugar">Nombrá a todos los personajes que puedas antes de que se acabe el tiempo.</p>
 
         <div class="fila-timer-nombralos">
             <span class="timer-nombralos" id="timer-nombralos">60</span>
@@ -1123,7 +1156,9 @@
 
         <p class="contador-elenco" id="contador-nombralos">0 encontrados</p>
 
-        <div class="grilla-slots-elenco" id="grilla-slots-nombralos"></div>
+        <div class="tarjeta-central-nombralos" id="tarjeta-central-nombralos">
+            <span class="signo-interrogacion">?</span>
+        </div>
 
         <div class="fila-input-elenco">
             <input type="text" id="input-nombralos" placeholder="Escribí un nombre..." autocomplete="off" disabled>
@@ -1132,6 +1167,9 @@
 
         <p id="mensaje-nombralos" class="mensaje-elenco"></p>
         <p id="promedio-nombralos" class="mensaje-elenco" style="color:#aaa; font-size:12px;"></p>
+
+        <h3 class="titulo-descubiertos-nombralos">Ya descubiertos</h3>
+        <div class="grilla-slots-elenco" id="galeria-descubiertos-nombralos"></div>
     </section>
 
 
@@ -1709,6 +1747,9 @@
             <button class="btn-filtro-marvel-ultimate" data-tipo="venom">Venom</button>
             <button class="btn-filtro-marvel-ultimate" data-tipo="daredevil">Daredevil</button>
             <button class="btn-filtro-marvel-ultimate" data-tipo="ultimate-adventures">Ultimate Adventures</button>
+            <button class="btn-filtro-marvel-ultimate" data-tipo="hulk">Hulk</button>
+            <button class="btn-filtro-marvel-ultimate" data-tipo="wolverine">Wolverine</button>
+            <button class="btn-filtro-marvel-ultimate" data-tipo="jovenes-ultimates">Jóvenes Ultimates</button>
             <button class="btn-filtro-marvel-ultimate" data-tipo="thor">Thor</button>
         </div>
         <div class="grilla-biblioteca" id="grilla-marvel-universo-ultimate"></div>

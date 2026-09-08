@@ -261,6 +261,51 @@ h2 {
     padding-top: 15px;
 }
 
+.tarjeta-central-nombralos {
+    width: 180px;
+    height: 260px;
+    margin: 15px auto;
+    border-radius: 12px;
+    background-color: #1e2129;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    flex-direction: column;
+}
+
+.tarjeta-central-nombralos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tarjeta-central-nombralos .signo-interrogacion {
+    font-size: 60px;
+    color: #444;
+}
+
+.tarjeta-central-nombralos .caption-personaje-slot {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+    padding: 6px 4px;
+    text-align: center;
+}
+
+.tarjeta-central-nombralos {
+    position: relative;
+}
+
+.titulo-descubiertos-nombralos {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #aaa;
+}
+
 .tarjeta-media {
     background-color: #1e2129;
     border-radius: 10px;
