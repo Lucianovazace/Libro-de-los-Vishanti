@@ -1217,6 +1217,35 @@ const listaMedia = [
     { titulo: "Batman de Scott Snyder Vol. 1: La Saga de Los Búhos", categoria: "los-nuevos-52-dc-argentina", personajes: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-01-el-tribunal-de-los-buhos-cov-arg1-79ad7f69d4b63c7c7616209478666475-1024-1024.webp" },
     { titulo: "DC Coleccion Heroes y Villanos #58: Escuadron Suicida: Patada en la Boca", categoria: "los-nuevos-52-dc-argentina", personajes: "amanda-waller,escuadron-suicida,harley-quinn", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2024/10/9788447146925-58.webp" },
     { titulo: "Batman vs Robin", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,ras-al-ghul", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vs_robin1-cb8bc14e49046ebd2316812693285754-640-0.webp" },
+    { titulo: "Batwoman #1: Hidrologia", categoria: "los-nuevos-52-dc-argentina", personajes: "batwoman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1d/2f/63d50a2305ce4ee38a23fcf2ce8a46b9.jpg" },
+    { titulo: "Batwoman #2: Un Mundo Anegado", categoria: "los-nuevos-52-dc-argentina", personajes: "batwoman", tipo: "Cómic", poster: "https://i1.whakoom.com/small/31/13/92aa7e784c054d6fb740291434fad7e7.jpg" },
+    { titulo: "Flash #1: El Nuevo Universo DC Empieza Aqui", categoria: "los-nuevos-52-dc-argentina", personajes: "flash-barry-allen", tipo: "Cómic", poster: "https://i1.whakoom.com/large/0d/21/f9db91af86834d68a456010cdeadc4ff.jpg" },
+    { titulo: "Flash #2: El Nuevo Universo DC", categoria: "los-nuevos-52-dc-argentina", personajes: "flash-barry-allen", tipo: "Cómic", poster: "https://i1.whakoom.com/small/36/08/963b2d162cb44eb492ae1b2edf2fcbc1.jpg" },
+    { titulo: "Flash #3: Lo que Grodd Quiere... ¡Lo Obtiene!", categoria: "los-nuevos-52-dc-argentina", personajes: "flash-barry-allen", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_772396-MLA79257222883_092024-O.webp" },
+    { titulo: "Flash #4: ¡La Guerra de Los Gorilas!", categoria: "los-nuevos-52-dc-argentina", personajes: "flash-barry-allen", tipo: "Cómic", poster: "https://i1.whakoom.com/small/14/28/fc5b316ed2ed4a3eb3554062f02e5317.jpg" },
+    { titulo: "Flash #5: ¡La Guerra de Los Gorilas!: Final", categoria: "los-nuevos-52-dc-argentina", personajes: "flash-barry-allen", tipo: "Cómic", poster: "https://i1.whakoom.com/small/00/3b/eb66671f65aa45b4ad063bdb7dd00bfa.jpg" },
+    { titulo: "Green Lantern #1: El Nuevo Universo DC Comienza Aqui", categoria: "los-nuevos-52-dc-argentina", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/38/2e/b3cf9b76a3a649f39f95232ee4a98a56.jpg" },
+    { titulo: "Green Lantern #2: El Nuevo Universo DC", categoria: "los-nuevos-52-dc-argentina", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1f/12/d65d06f8429a40cc93931ddbcde324fe.jpg" },
+    { titulo: "Green Lantern #3: ¡El Mayor Enemigo de Los Sinestro Corps es Sinestro!", categoria: "los-nuevos-52-dc-argentina", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/35/37/fb2cbc685275440496645f6af2918c28.jpg" },
+    { titulo: "Green Lantern #4: ¡Sin Miedo!", categoria: "los-nuevos-52-dc-argentina", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1c/11/d73a453aa4af4712a29f2e6a398df9ef.jpg" },
+    { titulo: "Green Lantern #5: ¡Dos Contra un Millar!", categoria: "los-nuevos-52-dc-argentina", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2a/17/dd145d0b68c64c9b94e03a62d3d7da45.jpg" },
+    { titulo: "Green Lantern #6: Con Amigos Como Estos", categoria: "los-nuevos-52-dc-argentina", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1b/1b/d574818651cf4289808a23b0dbfbae2c.jpg" },
+    { titulo: "Green Lantern #7: ¡Prisioneros de La Tribu Indigo!", categoria: "los-nuevos-52-dc-argentina", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/25/05/2854f884476148bd87c1ee19444e46fb.jpg" },
+    { titulo: "Green Lantern #8: ¡Sin Poder y a La Fuga!", categoria: "los-nuevos-52-dc-argentina", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/01/2f/993075ebed3b4c96b224623f8b78f0cb.jpg" },
+    { titulo: "Green Lantern #9: ¡Ahogandose en la Locura de Mano Negra!", categoria: "los-nuevos-52-dc-argentina", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/35/38/71c6d6a9543f4b43b71456d6fb00b22d.jpg" },
+    { titulo: "Green Lantern #10: ¡Ascensión Indigo!", categoria: "los-nuevos-52-dc-argentina", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/15/3b/a22909f44e5a4755a289414e10d031e1.jpg" },
+    { titulo: "Green Lantern #11: La Venganza de Mano Negra", categoria: "los-nuevos-52-dc-argentina", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/33/2f/bfcc7e7890864d37a4761197ec2fab46.jpg" },
+    { titulo: "Green Lantern #12: La Negrura... ¡Llega a La Tierra!", categoria: "los-nuevos-52-dc-argentina", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/32/12/e467e84f424f48e5ad1329565cc10779.jpg" },
+    { titulo: "Green Lantern #13: La Ascension del Tercer Ejercito", categoria: "los-nuevos-52-dc-argentina", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/37/2c/8a23102b46b74c90b6af3abae942c59d.jpg" },
+    { titulo: "Green Lantern #14: La Ascension del Tercer Ejercito", categoria: "los-nuevos-52-dc-argentina", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/26/0e/f9a6a74b0d784695bc1c271c9f78579a.jpg" },
+    { titulo: "Green Lantern #15: La Ascension del Tercer Ejercito", categoria: "los-nuevos-52-dc-argentina", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/32/16/8de255098fa94e5d964dc93c4b50a9ec.jpg" },
+    { titulo: "Green Lantern #16: La Ascension del Tercer Ejercito", categoria: "los-nuevos-52-dc-argentina", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1d/1b/3472a6a445654dcfa2d2a971d1950c8e.jpg" },
+    { titulo: "Green Lantern #17: Comienza La Ira del Primer Lantern", categoria: "los-nuevos-52-dc-argentina", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/14/14/5176c35e54f5429791ad49393ba8d50e.jpg" },
+    { titulo: "Green Lantern #18: La Ira del Primer Lantern - Parte 2", categoria: "los-nuevos-52-dc-argentina", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/05/2c/72d256d5cb3946b2a4ccb179b2bf7c09.jpg" },
+    { titulo: "Green Lantern #19: La Ira del Primer Lantern - Parte 3: Cuando Todos Los Corps Estan Hechos Añicos...", categoria: "los-nuevos-52-dc-argentina", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/0c/02/0a6e49eb620f44d4be3bcc09b61dac9f.jpg" },
+    { titulo: "Green Lantern #20", categoria: "los-nuevos-52-dc-argentina", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/3b/33/b8e526c1d4cb4bcf9d0aed3496d67dfd.jpg" },
+    { titulo: "Green Lantern #21: ¿Nuevos Reclutas? Larfleeze ¡Los Anhela!", categoria: "los-nuevos-52-dc-argentina", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/09/3d/b24fab9a403941148753f7a33575603d.jpg" },
+    { titulo: "Green Lantern #22: Sin Anillo... ¡Sin Salida!", categoria: "los-nuevos-52-dc-argentina", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/3f/11/0f3d1eaf89f94f68a4da59157b506056.jpg" },
     { titulo: "Batman Inc.", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,ras-al-ghul", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_inc_cov-ovni1-ff686204bad49f16b916944446297670-640-0.webp" },
     { titulo: "Batman de Scott Snyder Vol. 2: Muerte de La Familia", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-02-muerte-de-la-familia-cov-arg1-86eecca90561db8b7116263183152854-1024-1024.webp" },
     { titulo: "DC Colección Heroes y Villanos #2: Harley Quinn: Calor en La Ciudad", categoria: "los-nuevos-52-dc-argentina", personajes: "harley-quinn", tipo: "Cómic", poster: "https://i1.whakoom.com/small/38/30/c229e0c97ac547f7986e19d836fcd682.jpg" },
@@ -3440,6 +3469,30 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "batwoman-nuevos-52",
+        titulo: "Batwoman (Nuevos 52)",
+        categoria: "colecciones-hub",
+        poster: "https://i1.whakoom.com/large/1d/2f/63d50a2305ce4ee38a23fcf2ce8a46b9.jpg",
+        esContenedor: true,
+        peliculas: []
+    },
+    {
+        id: "flash-nuevos-52",
+        titulo: "Flash (Nuevos 52)",
+        categoria: "colecciones-hub",
+        poster: "https://i1.whakoom.com/large/0d/21/f9db91af86834d68a456010cdeadc4ff.jpg",
+        esContenedor: true,
+        peliculas: []
+    },
+    {
+        id: "green-lantern-nuevos-52",
+        titulo: "Green Lantern (Nuevos 52)",
+        categoria: "colecciones-hub",
+        poster: "https://i1.whakoom.com/large/38/2e/b3cf9b76a3a649f39f95232ee4a98a56.jpg",
+        esContenedor: true,
+        peliculas: []
+    },
+    {
         id: "dc-camino-heroe",
         titulo: "El Camino del Héroe",
         categoria: "dc-comics-hub",
@@ -4315,6 +4368,9 @@ function renderizarColecciones() {
         "marvel-excelsior": "seccion-marvel-excelsior",
         "marvel-must-have": "seccion-marvel-must-have",
         "marvel-secret-wars-2015": "seccion-marvel-secret-wars-2015",
+        "batwoman-nuevos-52": "seccion-batwoman-nuevos-52",
+        "flash-nuevos-52": "seccion-flash-nuevos-52",
+        "green-lantern-nuevos-52": "seccion-green-lantern-nuevos-52",
         "dc-comics-hub": "seccion-dc-comics-hub",
         "dc-camino-heroe": "seccion-dc-camino-heroe",
         "dc-orden-lectura": "seccion-dc-orden-lectura",
@@ -4404,6 +4460,19 @@ function renderizarColecciones() {
             abrirColeccion(this.getAttribute('data-coleccion'));
         });
     });
+
+    // El hub "Colecciones" se ordena alfabéticamente (a diferencia del resto
+    // de los hubs, que respetan el orden en que fueron creados).
+    const contenedorColeccionesHub = document.getElementById('grilla-colecciones-hub');
+    if (contenedorColeccionesHub) {
+        const tarjetasColeccionesHub = Array.from(contenedorColeccionesHub.querySelectorAll('.tarjeta-media'));
+        tarjetasColeccionesHub.sort((a, b) => {
+            const nombreA = a.querySelector('h3') ? a.querySelector('h3').textContent : '';
+            const nombreB = b.querySelector('h3') ? b.querySelector('h3').textContent : '';
+            return nombreA.localeCompare(nombreB, 'es', { sensitivity: 'base' });
+        });
+        tarjetasColeccionesHub.forEach(t => contenedorColeccionesHub.appendChild(t));
+    }
 
     sincronizarVistos();
 }
@@ -4811,6 +4880,42 @@ function renderizarContenido() {
                 if (grillaSecretWarsCronologico) grillaSecretWarsCronologico.insertAdjacentHTML('beforeend', htmlTarjetaSecretWars);
             }
 
+            // Colección Batwoman (Nuevos 52): solo 2 tomos, orden simple por número.
+            const matchBatwomanNuevos52 = item.titulo.match(/^Batwoman #(\d+):/i);
+            if (matchBatwomanNuevos52) {
+                const numBatwomanNuevos52 = matchBatwomanNuevos52[1];
+                const htmlTarjetaBatwomanNuevos52 = htmlTarjeta.replace(
+                    'class="tarjeta-media"',
+                    `class="tarjeta-media" data-batwoman-n52-num="${numBatwomanNuevos52}"`
+                );
+                const grillaBatwomanNuevos52 = document.getElementById("grilla-batwoman-nuevos-52");
+                if (grillaBatwomanNuevos52) grillaBatwomanNuevos52.insertAdjacentHTML('beforeend', htmlTarjetaBatwomanNuevos52);
+            }
+
+            // Colección Flash (Nuevos 52): solo 5 tomos por ahora, orden simple por número.
+            const matchFlashNuevos52 = item.titulo.match(/^Flash #(\d+):/i);
+            if (matchFlashNuevos52) {
+                const numFlashNuevos52 = matchFlashNuevos52[1];
+                const htmlTarjetaFlashNuevos52 = htmlTarjeta.replace(
+                    'class="tarjeta-media"',
+                    `class="tarjeta-media" data-flash-n52-num="${numFlashNuevos52}"`
+                );
+                const grillaFlashNuevos52 = document.getElementById("grilla-flash-nuevos-52");
+                if (grillaFlashNuevos52) grillaFlashNuevos52.insertAdjacentHTML('beforeend', htmlTarjetaFlashNuevos52);
+            }
+
+            // Colección Green Lantern (Nuevos 52): orden simple por número.
+            const matchGreenLanternNuevos52 = item.titulo.match(/^Green Lantern #(\d+)/i);
+            if (matchGreenLanternNuevos52) {
+                const numGreenLanternNuevos52 = matchGreenLanternNuevos52[1];
+                const htmlTarjetaGreenLanternNuevos52 = htmlTarjeta.replace(
+                    'class="tarjeta-media"',
+                    `class="tarjeta-media" data-gl-n52-num="${numGreenLanternNuevos52}"`
+                );
+                const grillaGreenLanternNuevos52 = document.getElementById("grilla-green-lantern-nuevos-52");
+                if (grillaGreenLanternNuevos52) grillaGreenLanternNuevos52.insertAdjacentHTML('beforeend', htmlTarjetaGreenLanternNuevos52);
+            }
+
             // Colección "Flash de Messner-Loebs": los 4 tomos puntuales de esa
             // etapa, sin filtros, en su único orden posible (el mismo orden en
             // que ya aparecen en Post-Crisis, que es el correcto).
@@ -5000,6 +5105,24 @@ function ordenarGrillaPorNumeroSalvat() {
         const tarjetasSecretWarsCrono = Array.from(contenedorSecretWarsCrono.querySelectorAll('.tarjeta-media'));
         tarjetasSecretWarsCrono.sort((a, b) => parseInt(a.getAttribute('data-secret-wars-crono')) - parseInt(b.getAttribute('data-secret-wars-crono')));
         tarjetasSecretWarsCrono.forEach(t => contenedorSecretWarsCrono.appendChild(t));
+    }
+    const contenedorBatwomanNuevos52 = document.getElementById('grilla-batwoman-nuevos-52');
+    if (contenedorBatwomanNuevos52) {
+        const tarjetasBatwomanNuevos52 = Array.from(contenedorBatwomanNuevos52.querySelectorAll('.tarjeta-media'));
+        tarjetasBatwomanNuevos52.sort((a, b) => parseInt(a.getAttribute('data-batwoman-n52-num')) - parseInt(b.getAttribute('data-batwoman-n52-num')));
+        tarjetasBatwomanNuevos52.forEach(t => contenedorBatwomanNuevos52.appendChild(t));
+    }
+    const contenedorFlashNuevos52 = document.getElementById('grilla-flash-nuevos-52');
+    if (contenedorFlashNuevos52) {
+        const tarjetasFlashNuevos52 = Array.from(contenedorFlashNuevos52.querySelectorAll('.tarjeta-media'));
+        tarjetasFlashNuevos52.sort((a, b) => parseInt(a.getAttribute('data-flash-n52-num')) - parseInt(b.getAttribute('data-flash-n52-num')));
+        tarjetasFlashNuevos52.forEach(t => contenedorFlashNuevos52.appendChild(t));
+    }
+    const contenedorGreenLanternNuevos52 = document.getElementById('grilla-green-lantern-nuevos-52');
+    if (contenedorGreenLanternNuevos52) {
+        const tarjetasGreenLanternNuevos52 = Array.from(contenedorGreenLanternNuevos52.querySelectorAll('.tarjeta-media'));
+        tarjetasGreenLanternNuevos52.sort((a, b) => parseInt(a.getAttribute('data-gl-n52-num')) - parseInt(b.getAttribute('data-gl-n52-num')));
+        tarjetasGreenLanternNuevos52.forEach(t => contenedorGreenLanternNuevos52.appendChild(t));
     }
 }
 
@@ -5399,6 +5522,15 @@ function cambiarSeccion(seccionNueva) {
     seccionActivaActual = seccionNueva;
     if(menuCategorias) menuCategorias.classList.add('oculto');
     if(menuDoomsday) menuDoomsday.classList.add('oculto');
+
+    // Las barras de progreso (Directores, sagas, etc.) se calculan a partir
+    // de titulosVistosGuardados. Si esta sección se había dibujado ANTES de
+    // que terminara de llegar tu progreso guardado desde Firebase (algo que
+    // se vuelve más probable cuanto más crece el catálogo), esas barras
+    // se quedaban pisadas en 0% para siempre, aunque los datos reales
+    // estuvieran bien. Recalculamos acá, cada vez que se entra a
+    // cualquier sección, para que siempre reflejen el estado real.
+    actualizarTodasLasColecciones();
 }
 
 const btnDoomsday = document.getElementById('btn-doomsday');
@@ -8193,6 +8325,27 @@ if(btnVolverMarvelMustHave) {
 const btnVolverMarvelSecretWars2015 = document.getElementById('btn-volver-marvel-secret-wars-2015');
 if(btnVolverMarvelSecretWars2015) {
     btnVolverMarvelSecretWars2015.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolverBatwomanNuevos52 = document.getElementById('btn-volver-batwoman-nuevos-52');
+if(btnVolverBatwomanNuevos52) {
+    btnVolverBatwomanNuevos52.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolverFlashNuevos52 = document.getElementById('btn-volver-flash-nuevos-52');
+if(btnVolverFlashNuevos52) {
+    btnVolverFlashNuevos52.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolverGreenLanternNuevos52 = document.getElementById('btn-volver-green-lantern-nuevos-52');
+if(btnVolverGreenLanternNuevos52) {
+    btnVolverGreenLanternNuevos52.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
     });
 }
