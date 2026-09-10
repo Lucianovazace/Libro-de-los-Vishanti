@@ -1246,6 +1246,16 @@ const listaMedia = [
     { titulo: "Green Lantern #20", categoria: "los-nuevos-52-dc-argentina", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/3b/33/b8e526c1d4cb4bcf9d0aed3496d67dfd.jpg" },
     { titulo: "Green Lantern #21: ¿Nuevos Reclutas? Larfleeze ¡Los Anhela!", categoria: "los-nuevos-52-dc-argentina", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/09/3d/b24fab9a403941148753f7a33575603d.jpg" },
     { titulo: "Green Lantern #22: Sin Anillo... ¡Sin Salida!", categoria: "los-nuevos-52-dc-argentina", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/3f/11/0f3d1eaf89f94f68a4da59157b506056.jpg" },
+    { titulo: "Aquaman #1: El Nuevo Universo DC Empieza Aqui", categoria: "los-nuevos-52-dc-argentina", personajes: "aquaman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/37/2d/9f8ef92a988743f69a1effddc98586dc.jpg" },
+    { titulo: "Aquaman #2: El Nuevo Universo DC - El Secreto de Los Otros", categoria: "los-nuevos-52-dc-argentina", personajes: "aquaman", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_904947-MLA78995875244_092024-O.webp" },
+    { titulo: "Aquaman #3: ¡A La Caza de Manta Negra!", categoria: "los-nuevos-52-dc-argentina", personajes: "aquaman,black-manta", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_749224-MLA111802262523_052026-O.webp" },
+    { titulo: "Aquaman #4: El Trono de Atlantis", categoria: "los-nuevos-52-dc-argentina", personajes: "aquaman,black-manta", tipo: "Cómic", poster: "https://i1.whakoom.com/small/30/2e/a532cbd1e65841cd8ef9c34f74c61f73.jpg" },
+    { titulo: "Aquaman #5: El Trono de Atlantis", categoria: "los-nuevos-52-dc-argentina", personajes: "aquaman,black-manta", tipo: "Cómic", poster: "https://i1.whakoom.com/small/36/34/5dc3600bec014f78ac7de3f4f313527e.jpg" },
+    { titulo: "Batman y Robin #1: El Nuevo Universo DC Empieza Aqui", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,dick-grayson,damian-wayne", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1f/03/597bc7f70bf6461b8087dd8b64abdaef.jpg" },
+    { titulo: "Batman y Robin #2: El Nuevo Universo DC - En Los Cielos de Gotham... ¡... El Caballero Oscuro se Enfrenta a La Semilla del Demonio!", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,dick-grayson,damian-wayne,ras-al-ghul", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_705837-MLA27918404417_082018-O.webp" },
+    { titulo: "Batman y Robin #3: ¡La Guerra de Los Robins!", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,dick-grayson,damian-wayne", tipo: "Cómic", poster: "https://i1.whakoom.com/small/31/32/eb98a18f816247cfa7a32f1524201933.jpg" },
+    { titulo: "Batman y Robin #4: ¡La Leyenda Renace de Nuevo!", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,dick-grayson,damian-wayne", tipo: "Cómic", poster: "https://i1.whakoom.com/small/12/29/34be424bbf604782b94cdf2d62a2ee19.jpg" },
+    { titulo: "Batman y Robin #5: ¡La Locura es Cosa de Familia!", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,dick-grayson,damian-wayne,joker", tipo: "Cómic", poster: "https://i1.whakoom.com/small/30/21/75bb6323856643859657dcd9d364b5cc.jpg" },
     { titulo: "Batman Inc.", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,ras-al-ghul", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_inc_cov-ovni1-ff686204bad49f16b916944446297670-640-0.webp" },
     { titulo: "Batman de Scott Snyder Vol. 2: Muerte de La Familia", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-02-muerte-de-la-familia-cov-arg1-86eecca90561db8b7116263183152854-1024-1024.webp" },
     { titulo: "DC Colección Heroes y Villanos #2: Harley Quinn: Calor en La Ciudad", categoria: "los-nuevos-52-dc-argentina", personajes: "harley-quinn", tipo: "Cómic", poster: "https://i1.whakoom.com/small/38/30/c229e0c97ac547f7986e19d836fcd682.jpg" },
@@ -3338,6 +3348,8 @@ const colecciones = [
         categoria: "colecciones-hub",
         poster: "https://i1.whakoom.com/large/08/0c/3cfa8877bf36440c9319b8249a87ef0d.jpg",
         esContenedor: true,
+        categoriaEditorial: "dc",
+        progresoPatron: "^DC Colec[a-záéíóúñ]* Heroes y Villanos #(\\d+)",
         peliculas: []
     },
     {
@@ -3346,6 +3358,9 @@ const colecciones = [
         categoria: "colecciones-hub",
         poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flashpoint_4taed_cov_arg1-4c2c6e6a3c5b6220c316851089691513-1024-1024.webp",
         esContenedor: true,
+        categoriaEditorial: "dc",
+        progresoPatron: "^Esenciales DC #(\\d+)",
+        progresoExcluir: "(Ovni)",
         peliculas: []
     },
     {
@@ -3354,6 +3369,7 @@ const colecciones = [
         categoria: "colecciones-hub",
         poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flushman-sobrecubierta-6a284b32bf58c3409f17600404520993-1024-1024.webp",
         esContenedor: true,
+        categoriaEditorial: "dc",
         peliculas: []
     },
     {
@@ -3362,6 +3378,7 @@ const colecciones = [
         categoria: "colecciones-hub",
         poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/justice_league_vol_01_cov_arg1-0011a9d12c435da3d215952948711524-1024-1024.webp",
         esContenedor: true,
+        categoriaEditorial: "dc",
         peliculas: []
     },
     {
@@ -3370,6 +3387,7 @@ const colecciones = [
         categoria: "colecciones-hub",
         poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flash_vol_01_cov_arg1-0b6210aa8ebe79480315952940515737-640-0.webp",
         esContenedor: true,
+        categoriaEditorial: "dc",
         peliculas: []
     },
     {
@@ -3378,6 +3396,7 @@ const colecciones = [
         categoria: "colecciones-hub",
         poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vol_01_cov_arg1-fa7c5ab99dc5a1a5c215952931975077-640-0.webp",
         esContenedor: true,
+        categoriaEditorial: "dc",
         peliculas: []
     },
     {
@@ -3386,6 +3405,7 @@ const colecciones = [
         categoria: "colecciones-hub",
         poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/detective_comics_vol_01_cov_arg1-7aa3d0c5ab3ffcf49615952937595959-1024-1024.webp",
         esContenedor: true,
+        categoriaEditorial: "dc",
         peliculas: []
     },
     {
@@ -3394,6 +3414,7 @@ const colecciones = [
         categoria: "colecciones-hub",
         poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_lois__clark_cov_arg1-887fa05632c017439c15953344471109-640-0.webp",
         esContenedor: true,
+        categoriaEditorial: "dc",
         peliculas: []
     },
     {
@@ -3402,6 +3423,7 @@ const colecciones = [
         categoria: "colecciones-hub",
         poster: "https://http2.mlstatic.com/D_NQ_NP_887044-MLU77961783640_082024-O.webp",
         esContenedor: true,
+        categoriaEditorial: "dc",
         peliculas: []
     },
     {
@@ -3410,6 +3432,7 @@ const colecciones = [
         categoria: "colecciones-hub",
         poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/all_star_batman_01_cov_arg1-5f139fd501888db24e16075508570607-1024-1024.webp",
         esContenedor: true,
+        categoriaEditorial: "dc",
         peliculas: []
     },
     {
@@ -3418,6 +3441,7 @@ const colecciones = [
         categoria: "colecciones-hub",
         poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/jli_cov-9b72618e171087b8c017083668247644-1024-1024.webp",
         esContenedor: true,
+        categoriaEditorial: "dc",
         peliculas: []
     },
     {
@@ -3426,6 +3450,7 @@ const colecciones = [
         categoria: "colecciones-hub",
         poster: "https://i1.whakoom.com/large/18/2d/f04aa1ab7db1450bb86170365abaae44.jpg",
         esContenedor: true,
+        categoriaEditorial: "dc",
         peliculas: []
     },
     {
@@ -3434,6 +3459,8 @@ const colecciones = [
         categoria: "colecciones-hub",
         poster: "https://i1.whakoom.com/large/21/00/85e5057e0d864d77aeca2375e539112a.jpg",
         esContenedor: true,
+        categoriaEditorial: "marvel",
+        progresoPatron: "^Colec[a-záéíóúñ]* (?:Definitiva |Definitivo |Defintiiva |Defintiva )?de Novelas Gr[aá]ficas? de Marvel:? #\\s*(\\d+)",
         peliculas: []
     },
     {
@@ -3442,6 +3469,8 @@ const colecciones = [
         categoria: "colecciones-hub",
         poster: "https://i1.whakoom.com/large/34/00/fd2621cc15b640c1970eaefd5dd6a985.jpg",
         esContenedor: true,
+        categoriaEditorial: "marvel",
+        progresoPatron: "^Colec[a-záéíóúñ]* Spider-Man: Universo Ara[ñn]a #(\\d+)",
         peliculas: []
     },
     {
@@ -3450,6 +3479,8 @@ const colecciones = [
         categoria: "colecciones-hub",
         poster: "https://http2.mlstatic.com/D_NQ_NP_721658-MLA26101929319_092017-O.webp",
         esContenedor: true,
+        categoriaEditorial: "marvel",
+        progresoPatron: "^Marvel Excelsior #(\\d+)",
         peliculas: []
     },
     {
@@ -3458,6 +3489,8 @@ const colecciones = [
         categoria: "colecciones-hub",
         poster: "https://i1.whakoom.com/large/2e/3c/eb9414b922ea4bb08da1f6cc6a5d3f00.jpg",
         esContenedor: true,
+        categoriaEditorial: "marvel",
+        progresoPatron: "^Must Have #(\\d+)",
         peliculas: []
     },
     {
@@ -3466,6 +3499,8 @@ const colecciones = [
         categoria: "colecciones-hub",
         poster: "https://i1.whakoom.com/small/15/2d/fe8fd8f4fc2048e083d8529bc5743018.jpg",
         esContenedor: true,
+        categoriaEditorial: "marvel",
+        progresoPatron: "^Secret Wars #(\\d+)",
         peliculas: []
     },
     {
@@ -3474,6 +3509,8 @@ const colecciones = [
         categoria: "colecciones-hub",
         poster: "https://i1.whakoom.com/large/1d/2f/63d50a2305ce4ee38a23fcf2ce8a46b9.jpg",
         esContenedor: true,
+        categoriaEditorial: "dc",
+        progresoPatron: "^Batwoman #(\\d+):",
         peliculas: []
     },
     {
@@ -3482,6 +3519,8 @@ const colecciones = [
         categoria: "colecciones-hub",
         poster: "https://i1.whakoom.com/large/0d/21/f9db91af86834d68a456010cdeadc4ff.jpg",
         esContenedor: true,
+        categoriaEditorial: "dc",
+        progresoPatron: "^Flash #(\\d+):",
         peliculas: []
     },
     {
@@ -3490,6 +3529,48 @@ const colecciones = [
         categoria: "colecciones-hub",
         poster: "https://i1.whakoom.com/large/38/2e/b3cf9b76a3a649f39f95232ee4a98a56.jpg",
         esContenedor: true,
+        categoriaEditorial: "dc",
+        progresoPatron: "^Green Lantern #(\\d+)",
+        peliculas: []
+    },
+    {
+        id: "aquaman-nuevos-52",
+        titulo: "Aquaman (Nuevos 52)",
+        categoria: "colecciones-hub",
+        poster: "https://i1.whakoom.com/large/37/2d/9f8ef92a988743f69a1effddc98586dc.jpg",
+        esContenedor: true,
+        categoriaEditorial: "dc",
+        progresoPatron: "^Aquaman #(\\d+):",
+        peliculas: []
+    },
+    {
+        id: "batman-y-robin-nuevos-52",
+        titulo: "Batman y Robin (Nuevos 52)",
+        categoria: "colecciones-hub",
+        poster: "https://i1.whakoom.com/large/1f/03/597bc7f70bf6461b8087dd8b64abdaef.jpg",
+        esContenedor: true,
+        categoriaEditorial: "dc",
+        progresoPatron: "^Batman y Robin #(\\d+):",
+        peliculas: []
+    },
+    {
+        id: "batman-norm-breyfogle",
+        titulo: "Batman por Norm Breyfogle",
+        categoria: "colecciones-hub",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_de_norm_breyfogle_vol_1_cov-34de9ff1fbb02d84db17543107324464-1024-1024.webp",
+        esContenedor: true,
+        categoriaEditorial: "dc",
+        progresoPatron: "^Batman Por Norm Breyfogle Vol\\. (\\d+)",
+        peliculas: []
+    },
+    {
+        id: "avengers-mas-poderosos",
+        titulo: "Avengers: Los Héroes Más Poderosos de La Tierra",
+        categoria: "colecciones-hub",
+        poster: "https://i1.whakoom.com/small/2e/0b/55e93a9fa7bf48c29ea9e829d5cd5315.jpg",
+        esContenedor: true,
+        categoriaEditorial: "marvel",
+        progresoPatron: "^Avengers - Los Heroes Mas Poderosos de La Tierra #(\\d+)",
         peliculas: []
     },
     {
@@ -4371,6 +4452,10 @@ function renderizarColecciones() {
         "batwoman-nuevos-52": "seccion-batwoman-nuevos-52",
         "flash-nuevos-52": "seccion-flash-nuevos-52",
         "green-lantern-nuevos-52": "seccion-green-lantern-nuevos-52",
+        "aquaman-nuevos-52": "seccion-aquaman-nuevos-52",
+        "batman-y-robin-nuevos-52": "seccion-batman-y-robin-nuevos-52",
+        "batman-norm-breyfogle": "seccion-batman-norm-breyfogle",
+        "avengers-mas-poderosos": "seccion-avengers-mas-poderosos",
         "dc-comics-hub": "seccion-dc-comics-hub",
         "dc-camino-heroe": "seccion-dc-camino-heroe",
         "dc-orden-lectura": "seccion-dc-orden-lectura",
@@ -4414,15 +4499,20 @@ function renderizarColecciones() {
 
         if (col.esContenedor) {
             // Ficha "carpeta": poster, título y botón Abrir. Si tiene contenido
-            // propio repartido en listaMedia (progresoCategoria), suma su barra
-            const barraProgreso = col.progresoCategoria ? `
+            // propio repartido en listaMedia, suma su barra de progreso.
+            // Puede identificarse de dos formas: una única categoria compartida
+            // (progresoCategoria, como en Directores) o un patrón de título
+            // (progresoPatron, como en las colecciones numeradas tipo "Marvel
+            // Excelsior #N" o "DC Colección Heroes y Villanos #N", cuyos ítems
+            // están repartidos en varias categorías distintas).
+            const barraProgreso = (col.progresoCategoria || col.progresoPatron) ? `
                     <div class="barra-progreso-container">
                         <div class="barra-progreso-fill" id="barra-${col.id}-fill"></div>
                     </div>
                     <p class="barra-progreso-texto" id="barra-${col.id}-texto">0% completado</p>
             ` : '';
             htmlColeccion = `
-                <div class="tarjeta-media tarjeta-coleccion" data-coleccion="${col.id}">
+                <div class="tarjeta-media tarjeta-coleccion" data-coleccion="${col.id}" data-editorial="${col.categoriaEditorial || ''}">
                     <img src="${col.poster}" alt="${col.titulo}">
                     <h3>${col.titulo}</h3>
                     <p>${col.etiqueta || 'Categoría'}</p>
@@ -4603,9 +4693,30 @@ function actualizarProgresoCategoria(colId, categoria) {
     texto.textContent = porcentaje + '% completado (' + vistas + '/' + total + ')';
 }
 
+// Para las colecciones "numeradas" (Marvel Excelsior, Must Have, Secret Wars,
+// DC Colección Heroes y Villanos, etc.) cuyos ítems no comparten una única
+// categoria (están repartidos en varias eras) pero sí un patrón de título
+// reconocible ("Marvel Excelsior #N", etc.). excluirTexto permite descartar
+// ediciones viejas/duplicadas que matchean el mismo patrón (como los ítems
+// "(Ovni)" de Esenciales DC, que pertenecen a otra colección).
+function actualizarProgresoPatron(colId, patronSource, excluirTexto) {
+    const fill = document.getElementById(`barra-${colId}-fill`);
+    const texto = document.getElementById(`barra-${colId}-texto`);
+    if (!fill || !texto) return;
+    const regex = new RegExp(patronSource, 'i');
+    const titulos = listaMedia.filter(i => regex.test(i.titulo) && (!excluirTexto || !i.titulo.includes(excluirTexto)));
+    const total = titulos.length;
+    const vistas = titulos.filter(i => titulosVistosGuardados.has(i.titulo)).length;
+    const porcentaje = total > 0 ? Math.round((vistas / total) * 100) : 0;
+    fill.style.width = porcentaje + '%';
+    texto.textContent = porcentaje + '% completado (' + vistas + '/' + total + ')';
+}
+
 function actualizarTodasLasColecciones() {
     colecciones.forEach(col => {
-        if (col.progresoCategoria) {
+        if (col.progresoPatron) {
+            actualizarProgresoPatron(col.id, col.progresoPatron, col.progresoExcluir);
+        } else if (col.progresoCategoria) {
             actualizarProgresoCategoria(col.id, col.progresoCategoria);
         } else if (!col.esContenedor) {
             actualizarProgresoColeccion(col.id);
@@ -4916,6 +5027,54 @@ function renderizarContenido() {
                 if (grillaGreenLanternNuevos52) grillaGreenLanternNuevos52.insertAdjacentHTML('beforeend', htmlTarjetaGreenLanternNuevos52);
             }
 
+            // Colección Aquaman (Nuevos 52): orden simple por número.
+            const matchAquamanNuevos52 = item.titulo.match(/^Aquaman #(\d+):/i);
+            if (matchAquamanNuevos52) {
+                const numAquamanNuevos52 = matchAquamanNuevos52[1];
+                const htmlTarjetaAquamanNuevos52 = htmlTarjeta.replace(
+                    'class="tarjeta-media"',
+                    `class="tarjeta-media" data-aquaman-n52-num="${numAquamanNuevos52}"`
+                );
+                const grillaAquamanNuevos52 = document.getElementById("grilla-aquaman-nuevos-52");
+                if (grillaAquamanNuevos52) grillaAquamanNuevos52.insertAdjacentHTML('beforeend', htmlTarjetaAquamanNuevos52);
+            }
+
+            // Colección Batman y Robin (Nuevos 52): orden simple por número.
+            const matchBatmanYRobinNuevos52 = item.titulo.match(/^Batman y Robin #(\d+):/i);
+            if (matchBatmanYRobinNuevos52) {
+                const numBatmanYRobinNuevos52 = matchBatmanYRobinNuevos52[1];
+                const htmlTarjetaBatmanYRobinNuevos52 = htmlTarjeta.replace(
+                    'class="tarjeta-media"',
+                    `class="tarjeta-media" data-bmr-n52-num="${numBatmanYRobinNuevos52}"`
+                );
+                const grillaBatmanYRobinNuevos52 = document.getElementById("grilla-batman-y-robin-nuevos-52");
+                if (grillaBatmanYRobinNuevos52) grillaBatmanYRobinNuevos52.insertAdjacentHTML('beforeend', htmlTarjetaBatmanYRobinNuevos52);
+            }
+
+            // Colección Batman por Norm Breyfogle: orden simple por volumen.
+            const matchBatmanBreyfogle = item.titulo.match(/^Batman Por Norm Breyfogle Vol\. (\d+)/i);
+            if (matchBatmanBreyfogle) {
+                const numBatmanBreyfogle = matchBatmanBreyfogle[1];
+                const htmlTarjetaBatmanBreyfogle = htmlTarjeta.replace(
+                    'class="tarjeta-media"',
+                    `class="tarjeta-media" data-breyfogle-num="${numBatmanBreyfogle}"`
+                );
+                const grillaBatmanBreyfogle = document.getElementById("grilla-batman-norm-breyfogle");
+                if (grillaBatmanBreyfogle) grillaBatmanBreyfogle.insertAdjacentHTML('beforeend', htmlTarjetaBatmanBreyfogle);
+            }
+
+            // Colección Avengers: Los Héroes Más Poderosos de La Tierra: orden simple por número.
+            const matchAvengersMasPoderosos = item.titulo.match(/^Avengers - Los Heroes Mas Poderosos de La Tierra #(\d+)/i);
+            if (matchAvengersMasPoderosos) {
+                const numAvengersMasPoderosos = matchAvengersMasPoderosos[1];
+                const htmlTarjetaAvengersMasPoderosos = htmlTarjeta.replace(
+                    'class="tarjeta-media"',
+                    `class="tarjeta-media" data-avengers-mp-num="${numAvengersMasPoderosos}"`
+                );
+                const grillaAvengersMasPoderosos = document.getElementById("grilla-avengers-mas-poderosos");
+                if (grillaAvengersMasPoderosos) grillaAvengersMasPoderosos.insertAdjacentHTML('beforeend', htmlTarjetaAvengersMasPoderosos);
+            }
+
             // Colección "Flash de Messner-Loebs": los 4 tomos puntuales de esa
             // etapa, sin filtros, en su único orden posible (el mismo orden en
             // que ya aparecen en Post-Crisis, que es el correcto).
@@ -5123,6 +5282,30 @@ function ordenarGrillaPorNumeroSalvat() {
         const tarjetasGreenLanternNuevos52 = Array.from(contenedorGreenLanternNuevos52.querySelectorAll('.tarjeta-media'));
         tarjetasGreenLanternNuevos52.sort((a, b) => parseInt(a.getAttribute('data-gl-n52-num')) - parseInt(b.getAttribute('data-gl-n52-num')));
         tarjetasGreenLanternNuevos52.forEach(t => contenedorGreenLanternNuevos52.appendChild(t));
+    }
+    const contenedorAquamanNuevos52 = document.getElementById('grilla-aquaman-nuevos-52');
+    if (contenedorAquamanNuevos52) {
+        const tarjetasAquamanNuevos52 = Array.from(contenedorAquamanNuevos52.querySelectorAll('.tarjeta-media'));
+        tarjetasAquamanNuevos52.sort((a, b) => parseInt(a.getAttribute('data-aquaman-n52-num')) - parseInt(b.getAttribute('data-aquaman-n52-num')));
+        tarjetasAquamanNuevos52.forEach(t => contenedorAquamanNuevos52.appendChild(t));
+    }
+    const contenedorAvengersMasPoderosos = document.getElementById('grilla-avengers-mas-poderosos');
+    if (contenedorAvengersMasPoderosos) {
+        const tarjetasAvengersMasPoderosos = Array.from(contenedorAvengersMasPoderosos.querySelectorAll('.tarjeta-media'));
+        tarjetasAvengersMasPoderosos.sort((a, b) => parseInt(a.getAttribute('data-avengers-mp-num')) - parseInt(b.getAttribute('data-avengers-mp-num')));
+        tarjetasAvengersMasPoderosos.forEach(t => contenedorAvengersMasPoderosos.appendChild(t));
+    }
+    const contenedorBatmanYRobinNuevos52 = document.getElementById('grilla-batman-y-robin-nuevos-52');
+    if (contenedorBatmanYRobinNuevos52) {
+        const tarjetasBatmanYRobinNuevos52 = Array.from(contenedorBatmanYRobinNuevos52.querySelectorAll('.tarjeta-media'));
+        tarjetasBatmanYRobinNuevos52.sort((a, b) => parseInt(a.getAttribute('data-bmr-n52-num')) - parseInt(b.getAttribute('data-bmr-n52-num')));
+        tarjetasBatmanYRobinNuevos52.forEach(t => contenedorBatmanYRobinNuevos52.appendChild(t));
+    }
+    const contenedorBatmanBreyfogle = document.getElementById('grilla-batman-norm-breyfogle');
+    if (contenedorBatmanBreyfogle) {
+        const tarjetasBatmanBreyfogle = Array.from(contenedorBatmanBreyfogle.querySelectorAll('.tarjeta-media'));
+        tarjetasBatmanBreyfogle.sort((a, b) => parseInt(a.getAttribute('data-breyfogle-num')) - parseInt(b.getAttribute('data-breyfogle-num')));
+        tarjetasBatmanBreyfogle.forEach(t => contenedorBatmanBreyfogle.appendChild(t));
     }
 }
 
@@ -8280,6 +8463,27 @@ if(btnVolverColeccionesHub) {
     });
 }
 
+// ==========================================
+// FILTROS "COLECCIONES" — Todos / DC / Marvel
+// ==========================================
+const botonesFiltroColeccionesHub = document.querySelectorAll('.btn-filtro-colecciones-hub');
+botonesFiltroColeccionesHub.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroColeccionesHub.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const editorialElegida = this.getAttribute('data-editorial');
+        const tarjetas = document.querySelectorAll('#grilla-colecciones-hub .tarjeta-media');
+
+        tarjetas.forEach(tarjeta => {
+            if (editorialElegida === 'todos') {
+                tarjeta.style.display = 'flex';
+                return;
+            }
+            tarjeta.style.display = (tarjeta.getAttribute('data-editorial') === editorialElegida) ? 'flex' : 'none';
+        });
+    });
+});
+
 const btnVolverDcHeroesYVillanosSalvat = document.getElementById('btn-volver-dc-heroes-y-villanos-salvat');
 if(btnVolverDcHeroesYVillanosSalvat) {
     btnVolverDcHeroesYVillanosSalvat.addEventListener('click', () => {
@@ -8346,6 +8550,34 @@ if(btnVolverFlashNuevos52) {
 const btnVolverGreenLanternNuevos52 = document.getElementById('btn-volver-green-lantern-nuevos-52');
 if(btnVolverGreenLanternNuevos52) {
     btnVolverGreenLanternNuevos52.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolverAquamanNuevos52 = document.getElementById('btn-volver-aquaman-nuevos-52');
+if(btnVolverAquamanNuevos52) {
+    btnVolverAquamanNuevos52.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolverAvengersMasPoderosos = document.getElementById('btn-volver-avengers-mas-poderosos');
+if(btnVolverAvengersMasPoderosos) {
+    btnVolverAvengersMasPoderosos.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolverBatmanYRobinNuevos52 = document.getElementById('btn-volver-batman-y-robin-nuevos-52');
+if(btnVolverBatmanYRobinNuevos52) {
+    btnVolverBatmanYRobinNuevos52.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolverBatmanNormBreyfogle = document.getElementById('btn-volver-batman-norm-breyfogle');
+if(btnVolverBatmanNormBreyfogle) {
+    btnVolverBatmanNormBreyfogle.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
     });
 }
