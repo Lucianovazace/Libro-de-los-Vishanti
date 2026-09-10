@@ -184,7 +184,6 @@ const listaMedia = [
 
     // --- DC ELSEWORLDS: MULTIVERSO ---
     // "Stargirl" ahora es una ficha explorable con sus 3 temporadas (ver colecciones)
-    { titulo: "Titans", categoria: "dc-multiverso", subtipo: "liveaction", tierra: 9, tipo: "Serie - Tierra 9", poster: "https://image.tmdb.org/t/p/original/awneRTOXqumB1fOPoUIXjUqksh5.jpg" },
     { titulo: "Green Lantern", categoria: "dc-multiverso", subtipo: "liveaction", tierra: 12, tipo: "Película - Tierra 12", poster: "https://m.media-amazon.com/images/I/71-ckdWvqfL.jpg" },
     { titulo: "Swamp Thing", categoria: "dc-multiverso", subtipo: "liveaction", tierra: 19, tipo: "Serie - Tierra 19", poster: "https://m.media-amazon.com/images/M/MV5BMGQzYzgxZWQtZmI3YS00YTIzLTk4NmQtMGE0YTdiNGNlZjYxXkEyXkFqcGc@.V1.jpg" },
 
@@ -560,6 +559,51 @@ const listaMedia = [
 
     // --- RYAN GOSLING (con filtros por década) ---
     { titulo: "The Gray Man", categoria: "ryan-gosling", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZmFhZTNlNzctZGQzZi00MTA3LThiNjMtYWQzNjUzMjNjZjA3XkEyXkFqcGc@.V1.jpg" },
+    { titulo: "West Side Story", categoria: "steven-spielberg", subtipo: "2020", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/319296.jpg" },
+    { titulo: "The Fabelmans", categoria: "steven-spielberg", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/cvarc1KjUJHXtgCcRRt7NNeZcp1.jpg" },
+    { titulo: "Disclosure Day", categoria: "steven-spielberg", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/w220_and_h330_face/viBKDtgAceQpH4OBuoqvKGMx0jb.jpg" },
+    { titulo: "The Adventures of Tintin", categoria: "steven-spielberg", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNDE5MDExNTQ1OF5BMl5BanBnXkFtZTcwMDIxMTM5Ng@@._V1_.jpg" },
+    { titulo: "War Horse", categoria: "steven-spielberg", subtipo: "2010", tipo: "Película", poster: "https://cdn11.bigcommerce.com/s-ydriczk/products/86352/images/85910/war_horse_original_movie_poster_buy_now_at_starstills__30138__16859.1666082997.450.659.jpg?c=2" },
+    { titulo: "Lincoln", categoria: "steven-spielberg", subtipo: "2010", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/lincoln_2012_advance_original_film_art_5000x.jpg?v=1581227464" },
+    { titulo: "Bridge of Spies", categoria: "steven-spielberg", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMjIxOTI0MjU5NV5BMl5BanBnXkFtZTgwNzM4OTk4NTE@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "The BFG", categoria: "steven-spielberg", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNjAzOTUzNTY3Ml5BMl5BanBnXkFtZTgwMjYwNzE5ODE@._V1_.jpg" },
+    { titulo: "The Post", categoria: "steven-spielberg", subtipo: "2010", tipo: "Película", poster: "https://a.ltrbxd.com/resized/sm/upload/3w/bp/ll/7n/qyRwj5VvuTRdJ76o2grP93grNxt-0-230-0-345-crop.jpg?v=62a9bdd004" },
+    { titulo: "Ready Player One", categoria: "steven-spielberg", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/2iuVrtC5IpwLtSFSgkIIIKLs0Zq.jpg" },
+    { titulo: "A.I. Artificial Intelligence", categoria: "steven-spielberg", subtipo: "2000", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61nnlxr0LML._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Minority Report", categoria: "steven-spielberg", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/qtgFcnwh9dAFLocsDk2ySDVS8UF.jpg" },
+    { titulo: "Catch Me If You Can", categoria: "steven-spielberg", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/ctjEj2xM32OvBXCq8zAdK3ZrsAj.jpg" },
+    { titulo: "The Terminal", categoria: "steven-spielberg", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/pXNomqKcKXAQbuWxehb2N3XFKfn.jpg" },
+    { titulo: "War of the Worlds", categoria: "steven-spielberg", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/6Biy7R9LfumYshur3YKhpj56MpB.jpg" },
+    { titulo: "Munich", categoria: "steven-spielberg", subtipo: "2000", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/Munich_2005_original_film_art_5000x.jpg?v=1551790338" },
+    { titulo: "Indiana Jones y El Reino de La Calavera de Cristal", categoria: "steven-spielberg", subtipo: "2000", tipo: "Película", poster: "https://cdn.europosters.eu/image/1300/3284.jpg" },
+    { titulo: "Hook", categoria: "steven-spielberg", subtipo: "1990", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/hook_1991_teaser_original_film_art_0f36e6d4-409b-40c9-9004-9caa4873cdb5_5000x.jpg?v=1580369826" },
+    { titulo: "Jurassic Park", categoria: "steven-spielberg", subtipo: "1990", tipo: "Película", poster: "https://http2.mlstatic.com/D_NQ_NP_769339-MLA41747833858_052020-O.webp" },
+    { titulo: "Schindler's List", categoria: "steven-spielberg", subtipo: "1990", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg" },
+    { titulo: "The Lost World: Jurassic Park", categoria: "steven-spielberg", subtipo: "1990", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/5zmAU31EaoIyKXKE9FJrijY2rSj.jpg" },
+    { titulo: "Amistad", categoria: "steven-spielberg", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNTE4MzJiNmYtNjI5Ny00Y2M0LTg3MzMtMTE4ZDI2MjY5MzRmXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Saving Private Ryan", categoria: "steven-spielberg", subtipo: "1990", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/uqx37cS8cpHg8U35f9U5IBlrCV3.jpg" },
+    { titulo: "Indiana Jones y Los Cazadores del Arca Perdida", categoria: "steven-spielberg", subtipo: "1980", tipo: "Película", poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2020/05/IMG_5479-scaled.jpeg" },
+    { titulo: "E.T. the Extra-Terrestrial", categoria: "steven-spielberg", subtipo: "1980", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/uzMlN4rtkNewJ5UDNut8yhUxNxa.jpg" },
+    { titulo: "Twilight Zone: The Movie", categoria: "steven-spielberg", subtipo: "1980", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/g8tVnghPYgDniKlznJeAtkzqft5.jpg" },
+    { titulo: "Indiana Jones y El Templo de la Perdición", categoria: "steven-spielberg", subtipo: "1980", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/gOZSOqw5p04SvLDMFQUJR8hz4PN.jpg" },
+    { titulo: "The Color Purple", categoria: "steven-spielberg", subtipo: "1980", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71IhCAcVK-L._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Empire of the Sun", categoria: "steven-spielberg", subtipo: "1980", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/empire_of_the_sun_1987_original_film_art_aab1ca68-019d-4182-baaf-b2cb25bc7ef0_5000x.jpg?v=1677881129" },
+    { titulo: "Indiana Jones y La Última Cruzada", categoria: "steven-spielberg", subtipo: "1980", tipo: "Película", poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2021/06/IMG_2497-scaled.jpeg" },
+    { titulo: "Always", categoria: "steven-spielberg", subtipo: "1980", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTgzNDE0MTYzNF5BMl5BanBnXkFtZTgwMjU4MzkwMzE@._V1_.jpg" },
+    { titulo: "Blue Valentine", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/510CkJsGCuL._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "All Good Things", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTcwMjIyMTc2Nl5BMl5BanBnXkFtZTcwOTQyMzc5Mw@@._V1_.jpg" },
+    { titulo: "Crazy, Stupid, Love", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61I-Y1LHbjL._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Drive", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/drive_2011_original_film_art_5000x.jpg?v=1562543564" },
+    { titulo: "The Ides of March", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNTU4MjkzNTY0OF5BMl5BanBnXkFtZTcwNDI5ODIxNg@@._V1_.jpg" },
+    { titulo: "The Place Beyond the Pines", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/518hww-QjyL._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Gangster Squad", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/324918.jpg" },
+    { titulo: "Only God Forgives", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMzE5NzcxMTk5NF5BMl5BanBnXkFtZTcwNjE2MDg2OQ@@._V1_.jpg" },
+    { titulo: "The Big Short", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZDZkNDQ3YjktYjBlZC00YTY1LTgxOGYtY2RhMWFhZmNkZGY3XkEyXkFqcGc@.V1.jpg" },
+    { titulo: "The Nice Guys", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/clq4So9spa9cXk3MZy2iMdqkxP2.jpg" },
+    { titulo: "La La Land", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://postercity.com.ar/wp-content/uploads/2021/04/La-La-Land-Poster_baja-1.jpg" },
+    { titulo: "Song to Song", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNzI1MTg0MzEyOF5BMl5BanBnXkFtZTgwNzk4Mjk0MTI@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Blade Runner 2049", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/blade_runner_2049_2017_advance_original_film_art_efd5b98a-e898-4999-810d-1a0448114ff4_5000x.jpg?v=1640043899" },
+    { titulo: "First Man", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71kRmoCnC8L._AC_UF894,1000_QL80_.jpg" },
     { titulo: "Barbie", categoria: "ryan-gosling", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/dekMkQf0kqAmztUca9lX5e5Pjbp.jpg" },
     { titulo: "The Fall Guy", categoria: "ryan-gosling", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/e7olqFmzcIX5c23kX4zSmLPJi8c.jpg" },
     { titulo: "Project Hail Mary", categoria: "ryan-gosling", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOGU2OGRmMWYtZGExZS00NmQ1LWI3MmMtMTY5MzEyYTI0ZjNiXkEyXkFqcGc@.V1.jpg" },
@@ -1236,6 +1280,30 @@ const listaMedia = [
     { titulo: "Green Lantern #10: ¡Ascensión Indigo!", categoria: "los-nuevos-52-dc-argentina", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/15/3b/a22909f44e5a4755a289414e10d031e1.jpg" },
     { titulo: "Green Lantern #11: La Venganza de Mano Negra", categoria: "los-nuevos-52-dc-argentina", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/33/2f/bfcc7e7890864d37a4761197ec2fab46.jpg" },
     { titulo: "Green Lantern #12: La Negrura... ¡Llega a La Tierra!", categoria: "los-nuevos-52-dc-argentina", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/32/12/e467e84f424f48e5ad1329565cc10779.jpg" },
+    { titulo: "Aquaman #1: El Nuevo Universo DC Empieza Aqui", categoria: "los-nuevos-52-dc-argentina", personajes: "aquaman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/37/2d/9f8ef92a988743f69a1effddc98586dc.jpg" },
+    { titulo: "Aquaman #2: El Nuevo Universo DC - El Secreto de Los Otros", categoria: "los-nuevos-52-dc-argentina", personajes: "aquaman", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_904947-MLA78995875244_092024-O.webp" },
+    { titulo: "Aquaman #3: ¡A La Caza de Manta Negra!", categoria: "los-nuevos-52-dc-argentina", personajes: "aquaman,black-manta", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_749224-MLA111802262523_052026-O.webp" },
+    { titulo: "Batman y Robin #1: El Nuevo Universo DC Empieza Aqui", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,dick-grayson,damian-wayne", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1f/03/597bc7f70bf6461b8087dd8b64abdaef.jpg" },
+    { titulo: "Batman y Robin #2: El Nuevo Universo DC - En Los Cielos de Gotham... ¡... El Caballero Oscuro se Enfrenta a La Semilla del Demonio!", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,dick-grayson,damian-wayne,ras-al-ghul", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_705837-MLA27918404417_082018-O.webp" },
+    { titulo: "Batman y Robin #3: ¡La Guerra de Los Robins!", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,dick-grayson,damian-wayne", tipo: "Cómic", poster: "https://i1.whakoom.com/small/31/32/eb98a18f816247cfa7a32f1524201933.jpg" },
+    { titulo: "Batman y Robin #4: ¡La Leyenda Renace de Nuevo!", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,dick-grayson,damian-wayne", tipo: "Cómic", poster: "https://i1.whakoom.com/small/12/29/34be424bbf604782b94cdf2d62a2ee19.jpg" },
+    { titulo: "Batman y Robin #5: ¡La Locura es Cosa de Familia!", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,dick-grayson,damian-wayne,joker", tipo: "Cómic", poster: "https://i1.whakoom.com/small/30/21/75bb6323856643859657dcd9d364b5cc.jpg" },
+    { titulo: "Superman #1: El Nuevo Universo DC Comienza Aqui", categoria: "los-nuevos-52-dc-argentina", personajes: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/38/29/3f25ca42beac4362afb44f3c1b5fc33c.jpg" },
+    { titulo: "Superman #2: El Nuevo Universo DC", categoria: "los-nuevos-52-dc-argentina", personajes: "superman", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_976525-MLA81891026904_012025-O.webp" },
+    { titulo: "Superman #3: Batalla con Brainiac... ¡Por el Futuro de Metropolis!", categoria: "los-nuevos-52-dc-argentina", personajes: "superman,brainiac", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2e/33/04c469e7e92745c28cc150da9ec50553.jpg" },
+    { titulo: "Superman #4: Empieza... ¡Otra Vez!", categoria: "los-nuevos-52-dc-argentina", personajes: "superman,brainiac", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1e/10/f1919820e71d462fa0664eb0cb0ac5e9.jpg" },
+    { titulo: "Superman #5", categoria: "los-nuevos-52-dc-argentina", personajes: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2e/20/6ab504bd97dc4819bd8fc35a5f9142a5.jpg" },
+    { titulo: "Superman #6: !Preparate Para Ser Eliminado, Superman!", categoria: "los-nuevos-52-dc-argentina", personajes: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/38/16/05e1348a71ad494a95b697d3d4a6e3b9.jpg" },
+    { titulo: "Superman #7: Cuando Se Vuelve Malo... ¡Huid!", categoria: "los-nuevos-52-dc-argentina", personajes: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/06/04/ac9302afd274453ba7064947247da0b3.jpg" },
+    { titulo: "Superman #8: El Proximo Objetivo de Nimrod El Cazador Es... ¡Clark Kent!", categoria: "los-nuevos-52-dc-argentina", personajes: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/29/31/03c00e986879492f8cdf6ed762858b4f.jpg" },
+    { titulo: "Superman #9: ¡Ya No Es El Hombre Del Pueblo!", categoria: "los-nuevos-52-dc-argentina", personajes: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/27/3d/5674e5b1e1864b138feab45b5013c987.jpg" },
+    { titulo: "Superman #10: El Peon de Acero de Helspont", categoria: "los-nuevos-52-dc-argentina", personajes: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/06/39/c368d969e11a4af0a417093d1442f21d.jpg" },
+    { titulo: "Superman #11: ¡Por Salvar el Submarino, el Mundo Está Perdido!", categoria: "los-nuevos-52-dc-argentina", personajes: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/03/17/df1f3f8d072249c88bdb80a56f933b96.jpg" },
+    { titulo: "Superman #12: ¡El Portal del Terror!", categoria: "los-nuevos-52-dc-argentina", personajes: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1a/25/ebe549ad80724ddfa82277cd3773f099.jpg" },
+    { titulo: "Batman Inc.", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,ras-al-ghul", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_inc_cov-ovni1-ff686204bad49f16b916944446297670-640-0.webp" },
+    { titulo: "Batman de Scott Snyder Vol. 2: Muerte de La Familia", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-02-muerte-de-la-familia-cov-arg1-86eecca90561db8b7116263183152854-1024-1024.webp" },
+    { titulo: "Aquaman #4: El Trono de Atlantis", categoria: "los-nuevos-52-dc-argentina", personajes: "aquaman,black-manta", tipo: "Cómic", poster: "https://i1.whakoom.com/small/30/2e/a532cbd1e65841cd8ef9c34f74c61f73.jpg" },
+    { titulo: "Aquaman #5: El Trono de Atlantis", categoria: "los-nuevos-52-dc-argentina", personajes: "aquaman,black-manta", tipo: "Cómic", poster: "https://i1.whakoom.com/small/36/34/5dc3600bec014f78ac7de3f4f313527e.jpg" },
     { titulo: "Green Lantern #13: La Ascension del Tercer Ejercito", categoria: "los-nuevos-52-dc-argentina", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/37/2c/8a23102b46b74c90b6af3abae942c59d.jpg" },
     { titulo: "Green Lantern #14: La Ascension del Tercer Ejercito", categoria: "los-nuevos-52-dc-argentina", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/26/0e/f9a6a74b0d784695bc1c271c9f78579a.jpg" },
     { titulo: "Green Lantern #15: La Ascension del Tercer Ejercito", categoria: "los-nuevos-52-dc-argentina", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/32/16/8de255098fa94e5d964dc93c4b50a9ec.jpg" },
@@ -1246,18 +1314,21 @@ const listaMedia = [
     { titulo: "Green Lantern #20", categoria: "los-nuevos-52-dc-argentina", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/3b/33/b8e526c1d4cb4bcf9d0aed3496d67dfd.jpg" },
     { titulo: "Green Lantern #21: ¿Nuevos Reclutas? Larfleeze ¡Los Anhela!", categoria: "los-nuevos-52-dc-argentina", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/09/3d/b24fab9a403941148753f7a33575603d.jpg" },
     { titulo: "Green Lantern #22: Sin Anillo... ¡Sin Salida!", categoria: "los-nuevos-52-dc-argentina", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/3f/11/0f3d1eaf89f94f68a4da59157b506056.jpg" },
-    { titulo: "Aquaman #1: El Nuevo Universo DC Empieza Aqui", categoria: "los-nuevos-52-dc-argentina", personajes: "aquaman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/37/2d/9f8ef92a988743f69a1effddc98586dc.jpg" },
-    { titulo: "Aquaman #2: El Nuevo Universo DC - El Secreto de Los Otros", categoria: "los-nuevos-52-dc-argentina", personajes: "aquaman", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_904947-MLA78995875244_092024-O.webp" },
-    { titulo: "Aquaman #3: ¡A La Caza de Manta Negra!", categoria: "los-nuevos-52-dc-argentina", personajes: "aquaman,black-manta", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_749224-MLA111802262523_052026-O.webp" },
-    { titulo: "Aquaman #4: El Trono de Atlantis", categoria: "los-nuevos-52-dc-argentina", personajes: "aquaman,black-manta", tipo: "Cómic", poster: "https://i1.whakoom.com/small/30/2e/a532cbd1e65841cd8ef9c34f74c61f73.jpg" },
-    { titulo: "Aquaman #5: El Trono de Atlantis", categoria: "los-nuevos-52-dc-argentina", personajes: "aquaman,black-manta", tipo: "Cómic", poster: "https://i1.whakoom.com/small/36/34/5dc3600bec014f78ac7de3f4f313527e.jpg" },
-    { titulo: "Batman y Robin #1: El Nuevo Universo DC Empieza Aqui", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,dick-grayson,damian-wayne", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1f/03/597bc7f70bf6461b8087dd8b64abdaef.jpg" },
-    { titulo: "Batman y Robin #2: El Nuevo Universo DC - En Los Cielos de Gotham... ¡... El Caballero Oscuro se Enfrenta a La Semilla del Demonio!", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,dick-grayson,damian-wayne,ras-al-ghul", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_705837-MLA27918404417_082018-O.webp" },
-    { titulo: "Batman y Robin #3: ¡La Guerra de Los Robins!", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,dick-grayson,damian-wayne", tipo: "Cómic", poster: "https://i1.whakoom.com/small/31/32/eb98a18f816247cfa7a32f1524201933.jpg" },
-    { titulo: "Batman y Robin #4: ¡La Leyenda Renace de Nuevo!", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,dick-grayson,damian-wayne", tipo: "Cómic", poster: "https://i1.whakoom.com/small/12/29/34be424bbf604782b94cdf2d62a2ee19.jpg" },
-    { titulo: "Batman y Robin #5: ¡La Locura es Cosa de Familia!", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,dick-grayson,damian-wayne,joker", tipo: "Cómic", poster: "https://i1.whakoom.com/small/30/21/75bb6323856643859657dcd9d364b5cc.jpg" },
-    { titulo: "Batman Inc.", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,ras-al-ghul", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_inc_cov-ovni1-ff686204bad49f16b916944446297670-640-0.webp" },
-    { titulo: "Batman de Scott Snyder Vol. 2: Muerte de La Familia", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-02-muerte-de-la-familia-cov-arg1-86eecca90561db8b7116263183152854-1024-1024.webp" },
+    { titulo: "Superman #13", categoria: "los-nuevos-52-dc-argentina", personajes: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/37/38/39f28b744b8649f6ba6149399bce0ebb.jpg" },
+    { titulo: "Superman #14: ¡El Regreso del Rey de Los Fantasmas!", categoria: "los-nuevos-52-dc-argentina", personajes: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/30/3d/980b37ea8a77447395b2eaedabd59e06.jpg" },
+    { titulo: "Superman #15: ¡La Segunda Muerte de Superman!", categoria: "los-nuevos-52-dc-argentina", personajes: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/30/38/53444052722640c8be768c55949b140c.jpg" },
+    { titulo: "Superman #16: El Triunfo de Lord Vyndktvx", categoria: "los-nuevos-52-dc-argentina", personajes: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/28/22/89685afb957b4be8b6dcf432b08d9aaf.jpg" },
+    { titulo: "Superman #17: ¡Contra el Demonio de la Quinta Dimension!", categoria: "los-nuevos-52-dc-argentina", personajes: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/08/19/df37453667454897828b6a3eb86c5e0f.jpg" },
+    { titulo: "Superman #18: ¡Caida Psiquica!", categoria: "los-nuevos-52-dc-argentina", personajes: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/23/24/b7414330a4374fbbbfb70bb67a5300ce.jpg" },
+    { titulo: "Superman #19: Quien Se Lleva La Gloria es el Vencedor... ", categoria: "los-nuevos-52-dc-argentina", personajes: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2f/20/87b52e7df4cc4c15a58b6b9d0b00eb28.jpg" },
+    { titulo: "Superman #20", categoria: "los-nuevos-52-dc-argentina", personajes: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/16/21/2b820217774c4218ab3e6172ba8f70d3.jpg" },
+    { titulo: "Superman #21: ¡Mentalidad de Colmena!", categoria: "los-nuevos-52-dc-argentina", personajes: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1a/0d/2975497a9bc941bdb9d0d2a2c5002574.jpg" },
+    { titulo: "Superman #22: ¡Juegos Psiquicos!", categoria: "los-nuevos-52-dc-argentina", personajes: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/01/18/e97c67ca38774955b74d01a9239af277.jpg" },
+    { titulo: "Superman #23: Psicoguerra - ¡Anarquia!", categoria: "los-nuevos-52-dc-argentina", personajes: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/0e/2f/8723f2cac069468fa108bf0ab3be8378.jpg" },
+    { titulo: "Superman #24: Psicoguerra - Conclusion", categoria: "los-nuevos-52-dc-argentina", personajes: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/02/20/fd7519da959a42b792b00c3edc2645d5.jpg" },
+    { titulo: "Liga de La Justicia de America #1", categoria: "los-nuevos-52-dc-argentina", personajes: "green-arrow,martian-manhunter,catwoman", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_885427-MLA102185288539_122025-O.webp" },
+    { titulo: "Liga de La Justicia de America #2", categoria: "los-nuevos-52-dc-argentina", personajes: "green-arrow,martian-manhunter,catwoman", tipo: "Cómic", poster: "https://i1.whakoom.com/small/2e/23/82d5ac322ad24258aba7dc1ff9747039.jpg" },
+    { titulo: "Liga de La Justicia de America #3: ¿Quien Les Ha Traicionado?", categoria: "los-nuevos-52-dc-argentina", personajes: "green-arrow,martian-manhunter,catwoman", tipo: "Cómic", poster: "https://i1.whakoom.com/small/26/13/8472cc51b9ac4f348c498610e393c4bc.jpg" },
     { titulo: "DC Colección Heroes y Villanos #2: Harley Quinn: Calor en La Ciudad", categoria: "los-nuevos-52-dc-argentina", personajes: "harley-quinn", tipo: "Cómic", poster: "https://i1.whakoom.com/small/38/30/c229e0c97ac547f7986e19d836fcd682.jpg" },
     { titulo: "Batman de Scott Snyder Vol. 3: Año Cero", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,riddler", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-03-ano-cero-cov-arg1-0496240b00c09b32ae16372534510955-1024-1024.webp" },
     { titulo: "DC Colección Heroes y Villanos #5: Maldad Eterna", categoria: "los-nuevos-52-dc-argentina", personajes: "lex-luthor,liga", tipo: "Cómic", poster: "https://i1.whakoom.com/small/11/06/3c7d972c97514b098ea5e35283e9c326.jpg" },
@@ -2206,6 +2277,22 @@ const colecciones = [
         ]
     },
     {
+        id: "titans",
+        titulo: "Titans",
+        esSerie: true,
+        categoria: "dc-multiverso",
+        poster: "https://image.tmdb.org/t/p/original/awneRTOXqumB1fOPoUIXjUqksh5.jpg",
+        subtipo: "liveaction",
+        tierra: 9,
+        etiqueta: "Serie - Tierra 9",
+        peliculas: [
+            { titulo: "Titans Temporada 1", poster: "https://image.tmdb.org/t/p/original/oCK6fykCZUQjTJG4IDhfWCxcXqG.jpg" },
+            { titulo: "Titans Temporada 2", poster: "https://m.media-amazon.com/images/I/713vv54Qo6L.jpg" },
+            { titulo: "Titans Temporada 3", poster: "https://static.wikia.nocookie.net/batman/images/4/44/Titans_temporada_3.png/revision/latest/scale-to-width-down/1000?cb=20210822234436&path-prefix=es" },
+            { titulo: "Titans Temporada 4", poster: "https://pixieposters.co.uk/cdn/shop/files/titans-movie-poster_117b41c2-9809-4df9-a9ba-4455c5585923.jpg?v=1729977443" }
+        ]
+    },
+    {
         id: "batman-trilogia-nolan",
         titulo: "Batman – Trilogía de Nolan",
         categoria: "dc-multiverso",
@@ -2895,6 +2982,16 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "steven-spielberg",
+        titulo: "Steven Spielberg",
+        categoria: "directores",
+        poster: "https://wallpaper.forfun.com/fetch/1b/1bd6a6e5ca56930d24d0209a56e07fbd.jpeg?h=1200&r=0.5",
+        esContenedor: true,
+        etiqueta: "Director",
+        progresoCategoria: "steven-spielberg",
+        peliculas: []
+    },
+    {
         id: "christopher-nolan",
         titulo: "Christopher Nolan",
         categoria: "directores",
@@ -3561,6 +3658,26 @@ const colecciones = [
         esContenedor: true,
         categoriaEditorial: "dc",
         progresoPatron: "^Batman Por Norm Breyfogle Vol\\. (\\d+)",
+        peliculas: []
+    },
+    {
+        id: "jla-nuevos-52",
+        titulo: "Liga de La Justicia de América (Nuevos 52)",
+        categoria: "colecciones-hub",
+        poster: "https://http2.mlstatic.com/D_NQ_NP_885427-MLA102185288539_122025-O.webp",
+        esContenedor: true,
+        categoriaEditorial: "dc",
+        progresoPatron: "^Liga de La Justicia de America #(\\d+)",
+        peliculas: []
+    },
+    {
+        id: "superman-nuevos-52",
+        titulo: "Superman (Nuevos 52)",
+        categoria: "colecciones-hub",
+        poster: "https://i1.whakoom.com/large/38/29/3f25ca42beac4362afb44f3c1b5fc33c.jpg",
+        esContenedor: true,
+        categoriaEditorial: "dc",
+        progresoPatron: "^Superman #(\\d+)",
         peliculas: []
     },
     {
@@ -4455,6 +4572,8 @@ function renderizarColecciones() {
         "aquaman-nuevos-52": "seccion-aquaman-nuevos-52",
         "batman-y-robin-nuevos-52": "seccion-batman-y-robin-nuevos-52",
         "batman-norm-breyfogle": "seccion-batman-norm-breyfogle",
+        "jla-nuevos-52": "seccion-jla-nuevos-52",
+        "superman-nuevos-52": "seccion-superman-nuevos-52",
         "avengers-mas-poderosos": "seccion-avengers-mas-poderosos",
         "dc-comics-hub": "seccion-dc-comics-hub",
         "dc-camino-heroe": "seccion-dc-camino-heroe",
@@ -4648,6 +4767,7 @@ function abrirColeccion(colId) {
         'andrew-garfield': '.btn-filtro-garfield[data-tipo="2020"]',
         'alfred-hitchcock': '.btn-filtro-hitchcock[data-tipo="1970"]',
         'david-fincher': '.btn-filtro-fincher[data-tipo="2020"]',
+        'steven-spielberg': '.btn-filtro-spielberg[data-tipo="2020"]',
         'green-lantern-hal-jordan': '.btn-filtro-gl-hal[data-tipo="origen"]',
         'nuevos-52-orden-lectura': '.btn-filtro-nuevos52[data-tipo="lanzamiento"]',
         'camino-heroe-principal': '.btn-filtro-camino-principal[data-tipo="batman"]',
@@ -4780,6 +4900,7 @@ function renderizarContenido() {
         "andrew-garfield": "seccion-andrew-garfield",
         "alfred-hitchcock": "seccion-alfred-hitchcock",
         "david-fincher": "seccion-david-fincher",
+        "steven-spielberg": "seccion-steven-spielberg",
         "green-lantern-hal-jordan": "seccion-green-lantern-hal-jordan",
         "nuevos-52-orden-lectura": "seccion-nuevos-52-orden-lectura",
         "post-crisis-dc": "seccion-post-crisis-dc",
@@ -5063,6 +5184,30 @@ function renderizarContenido() {
                 if (grillaBatmanBreyfogle) grillaBatmanBreyfogle.insertAdjacentHTML('beforeend', htmlTarjetaBatmanBreyfogle);
             }
 
+            // Colección Liga de La Justicia de América (Nuevos 52): orden simple por número.
+            const matchJlaNuevos52 = item.titulo.match(/^Liga de La Justicia de America #(\d+)/i);
+            if (matchJlaNuevos52) {
+                const numJlaNuevos52 = matchJlaNuevos52[1];
+                const htmlTarjetaJlaNuevos52 = htmlTarjeta.replace(
+                    'class="tarjeta-media"',
+                    `class="tarjeta-media" data-jla-n52-num="${numJlaNuevos52}"`
+                );
+                const grillaJlaNuevos52 = document.getElementById("grilla-jla-nuevos-52");
+                if (grillaJlaNuevos52) grillaJlaNuevos52.insertAdjacentHTML('beforeend', htmlTarjetaJlaNuevos52);
+            }
+
+            // Colección Superman (Nuevos 52): orden simple por número.
+            const matchSupermanNuevos52 = item.titulo.match(/^Superman #(\d+)/i);
+            if (matchSupermanNuevos52) {
+                const numSupermanNuevos52 = matchSupermanNuevos52[1];
+                const htmlTarjetaSupermanNuevos52 = htmlTarjeta.replace(
+                    'class="tarjeta-media"',
+                    `class="tarjeta-media" data-superman-n52-num="${numSupermanNuevos52}"`
+                );
+                const grillaSupermanNuevos52 = document.getElementById("grilla-superman-nuevos-52");
+                if (grillaSupermanNuevos52) grillaSupermanNuevos52.insertAdjacentHTML('beforeend', htmlTarjetaSupermanNuevos52);
+            }
+
             // Colección Avengers: Los Héroes Más Poderosos de La Tierra: orden simple por número.
             const matchAvengersMasPoderosos = item.titulo.match(/^Avengers - Los Heroes Mas Poderosos de La Tierra #(\d+)/i);
             if (matchAvengersMasPoderosos) {
@@ -5306,6 +5451,18 @@ function ordenarGrillaPorNumeroSalvat() {
         const tarjetasBatmanBreyfogle = Array.from(contenedorBatmanBreyfogle.querySelectorAll('.tarjeta-media'));
         tarjetasBatmanBreyfogle.sort((a, b) => parseInt(a.getAttribute('data-breyfogle-num')) - parseInt(b.getAttribute('data-breyfogle-num')));
         tarjetasBatmanBreyfogle.forEach(t => contenedorBatmanBreyfogle.appendChild(t));
+    }
+    const contenedorJlaNuevos52 = document.getElementById('grilla-jla-nuevos-52');
+    if (contenedorJlaNuevos52) {
+        const tarjetasJlaNuevos52 = Array.from(contenedorJlaNuevos52.querySelectorAll('.tarjeta-media'));
+        tarjetasJlaNuevos52.sort((a, b) => parseInt(a.getAttribute('data-jla-n52-num')) - parseInt(b.getAttribute('data-jla-n52-num')));
+        tarjetasJlaNuevos52.forEach(t => contenedorJlaNuevos52.appendChild(t));
+    }
+    const contenedorSupermanNuevos52 = document.getElementById('grilla-superman-nuevos-52');
+    if (contenedorSupermanNuevos52) {
+        const tarjetasSupermanNuevos52 = Array.from(contenedorSupermanNuevos52.querySelectorAll('.tarjeta-media'));
+        tarjetasSupermanNuevos52.sort((a, b) => parseInt(a.getAttribute('data-superman-n52-num')) - parseInt(b.getAttribute('data-superman-n52-num')));
+        tarjetasSupermanNuevos52.forEach(t => contenedorSupermanNuevos52.appendChild(t));
     }
 }
 
@@ -6433,6 +6590,13 @@ if(btnVolverStargirl) {
     });
 }
 
+const btnVolverTitans = document.getElementById('btn-volver-titans');
+if(btnVolverTitans) {
+    btnVolverTitans.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dc-multiverso'));
+    });
+}
+
 const btnVolverGalardones = document.getElementById('btn-volver-galardones');
 if(btnVolverGalardones) {
     btnVolverGalardones.addEventListener('click', () => {
@@ -6571,6 +6735,13 @@ if(btnVolverAlfredHitchcock) {
 const btnVolverDavidFincher = document.getElementById('btn-volver-david-fincher');
 if(btnVolverDavidFincher) {
     btnVolverDavidFincher.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-directores'));
+    });
+}
+
+const btnVolverStevenSpielberg = document.getElementById('btn-volver-steven-spielberg');
+if(btnVolverStevenSpielberg) {
+    btnVolverStevenSpielberg.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-directores'));
     });
 }
@@ -7041,6 +7212,20 @@ botonesFiltroFincher.forEach(boton => {
         this.classList.add('activo');
         const tipoElegido = this.getAttribute('data-tipo');
         const tarjetas = document.querySelectorAll('#seccion-david-fincher .tarjeta-media');
+
+        tarjetas.forEach(tarjeta => {
+            tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
+        });
+    });
+});
+
+const botonesFiltroSpielberg = document.querySelectorAll('.btn-filtro-spielberg');
+botonesFiltroSpielberg.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroSpielberg.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const tipoElegido = this.getAttribute('data-tipo');
+        const tarjetas = document.querySelectorAll('#seccion-steven-spielberg .tarjeta-media');
 
         tarjetas.forEach(tarjeta => {
             tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
@@ -8578,6 +8763,20 @@ if(btnVolverBatmanYRobinNuevos52) {
 const btnVolverBatmanNormBreyfogle = document.getElementById('btn-volver-batman-norm-breyfogle');
 if(btnVolverBatmanNormBreyfogle) {
     btnVolverBatmanNormBreyfogle.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolverJlaNuevos52 = document.getElementById('btn-volver-jla-nuevos-52');
+if(btnVolverJlaNuevos52) {
+    btnVolverJlaNuevos52.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolverSupermanNuevos52 = document.getElementById('btn-volver-superman-nuevos-52');
+if(btnVolverSupermanNuevos52) {
+    btnVolverSupermanNuevos52.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
     });
 }
