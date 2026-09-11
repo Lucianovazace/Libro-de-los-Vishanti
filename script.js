@@ -590,6 +590,55 @@ const listaMedia = [
     { titulo: "Empire of the Sun", categoria: "steven-spielberg", subtipo: "1980", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/empire_of_the_sun_1987_original_film_art_aab1ca68-019d-4182-baaf-b2cb25bc7ef0_5000x.jpg?v=1677881129" },
     { titulo: "Indiana Jones y La Última Cruzada", categoria: "steven-spielberg", subtipo: "1980", tipo: "Película", poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2021/06/IMG_2497-scaled.jpeg" },
     { titulo: "Always", categoria: "steven-spielberg", subtipo: "1980", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTgzNDE0MTYzNF5BMl5BanBnXkFtZTgwMjU4MzkwMzE@._V1_.jpg" },
+    { titulo: "Ticket to Paradise", categoria: "julia-roberts", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/bowsGPWVbpX40SluymYDW8N4C2Y.jpg" },
+    { titulo: "Leave the World Behind", categoria: "julia-roberts", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/at1EevoMjpMdzJF2eR3TdsX8s3E.jpg" },
+    { titulo: "After the Hunt", categoria: "julia-roberts", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMzYyOTAwODEtZTY4My00MjVkLWJjYjUtMjE2N2UzYTE3MTY3XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Valentine's Day", categoria: "julia-roberts", subtipo: "2010", tipo: "Película", poster: "https://www.movieposters.com/cdn/shop/products/988fb5b52c9a981b445599e034a3de8d_5a4fe266-cda9-4885-85c1-288bcf85c7be_1024x1024.jpg?v=1762470114" },
+    { titulo: "Eat Pray Love", categoria: "julia-roberts", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTY5NDkyNzkyM15BMl5BanBnXkFtZTcwNDQyNDk0Mw@@._V1_.jpg" },
+    { titulo: "Larry Crowne", categoria: "julia-roberts", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/nPyoe9J7Lawx8MHEKQfbG4h6V9n.jpg" },
+    { titulo: "Mirror Mirror", categoria: "julia-roberts", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMjA5Mzk2MDUyM15BMl5BanBnXkFtZTcwODYzOTAyNw@@._V1_.jpg" },
+    { titulo: "August: Osage County", categoria: "julia-roberts", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNzQ5ODE4NTcxNV5BMl5BanBnXkFtZTgwNjkyNDQ0MDE@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Secret in Their Eyes", categoria: "julia-roberts", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTgwNTI3OTczOV5BMl5BanBnXkFtZTcwMTM3MTUyMw@@._V1_.jpg" },
+    { titulo: "Money Monster", categoria: "julia-roberts", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81M0AuwYLuL._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Mother's Day", categoria: "julia-roberts", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/51NhwjiN0gL.jpg" },
+    { titulo: "Smurfs: The Lost Village", categoria: "julia-roberts", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/diYAZ6CKUuRAqLYMB2AyVutEFm0.jpg" },
+    { titulo: "Wonder", categoria: "julia-roberts", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/41NMIpSrSSL._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Ben Is Back", categoria: "julia-roberts", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNDc1NGY5ZDQtNGRhNy00NTYyLWIxNjUtMTZiZGJjNjU5NGYxXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Erin Brockovich", categoria: "julia-roberts", subtipo: "2000", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/263062.jpg" },
+    { titulo: "The Mexican", categoria: "julia-roberts", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/5GqF6rVjUW6CVTuj7w1A2JE49AF.jpg" },
+    { titulo: "America's Sweethearts", categoria: "julia-roberts", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/4TQOYs8rCWi44O1tNbIQiRqHQkA.jpg" },
+    { titulo: "Ocean's Eleven", categoria: "julia-roberts", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/f4fnyMu4VkQ8gOgYOKF1xzugDXJ.jpg" },
+    { titulo: "Grand Champion", categoria: "julia-roberts", subtipo: "2000", tipo: "Película", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_RfBa9IbezLhepwCPrBWAdB46soBgGIoJUI7giXI-zhzEMzJl_eGtOl_a&s=10" },
+    { titulo: "Full Frontal", categoria: "julia-roberts", subtipo: "2000", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71WWzUZb68L._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Confessions of a Dangerous Mind", categoria: "julia-roberts", subtipo: "2000", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZjI1NDZhNDgtNjgyNS00YzJjLWJjNzctZjk3ZmZlMWNlYWI2XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Mona Lisa Smile", categoria: "julia-roberts", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/l1sMSItYV2Wa6v9BH5zQyp2QvqB.jpg" },
+    { titulo: "Closer", categoria: "julia-roberts", subtipo: "2000", tipo: "Película", poster: "https://m.media-amazon.com/images/I/51qYQTmJaQL._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Ocean's Twelve", categoria: "julia-roberts", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/Ad55M8newGWemFWCsMAkxO3fDwl.jpg" },
+    { titulo: "The Ant Bully", categoria: "julia-roberts", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/oFuqX0inTvbA1XAFv2x3CQnI65m.jpg" },
+    { titulo: "Charlotte's Web", categoria: "julia-roberts", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/fU0IR5HF8KxQbZijuWKPTrY81Qv.jpg" },
+    { titulo: "Charlie Wilson's War", categoria: "julia-roberts", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/6RdSGBUbidvHu0pNWob7O6BFib.jpg" },
+    { titulo: "Fireflies in the Garden", categoria: "julia-roberts", subtipo: "2000", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTQ2NjMzMzIzN15BMl5BanBnXkFtZTcwMDM2MzU3Ng@@._V1_.jpg" },
+    { titulo: "Pretty Woman", categoria: "julia-roberts", subtipo: "1990", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/hVHUfT801LQATGd26VPzhorIYza.jpg" },
+    { titulo: "Flatliners", categoria: "julia-roberts", subtipo: "1990", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/wda3j7p7YHXKpFIlSzoTCtP7myF.jpg" },
+    { titulo: "Sleeping with the Enemy", categoria: "julia-roberts", subtipo: "1990", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/m2ClAuZuSOE62eY7Ll6DQvEmY9V.jpg" },
+    { titulo: "Dying Young", categoria: "julia-roberts", subtipo: "1990", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/y7y4JMMPGFKPYSyvLpuuXQ8hm0n.jpg" },
+    { titulo: "Hook", categoria: "julia-roberts", subtipo: "1990", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/hook_1991_teaser_original_film_art_0f36e6d4-409b-40c9-9004-9caa4873cdb5_5000x.jpg?v=1580369826" },
+    { titulo: "The Pelican Brief", categoria: "julia-roberts", subtipo: "1990", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/sO1sEL6uWMQSlpKFPjXy0TG8JLi.jpg" },
+    { titulo: "I Love Trouble", categoria: "julia-roberts", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOTFlZWEzM2QtN2NhYy00NjY4LWFkZWEtYWM1MWI2ZGM3NDhkXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Prêt-à-Porter", categoria: "julia-roberts", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMzM4NzI3ODgtYTc4Zi00MTg4LWEzNzQtNGU3OWM5ZDJhYWFjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Something to Talk About", categoria: "julia-roberts", subtipo: "1990", tipo: "Película", poster: "https://a.ltrbxd.com/resized/film-poster/4/0/3/8/0/40380-something-to-talk-about-0-230-0-345-crop.jpg?v=19696c0f6b" },
+    { titulo: "Mary Reilly", categoria: "julia-roberts", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTI2NjI2MTgyM15BMl5BanBnXkFtZTYwMDM4OTQ5._V1_.jpg" },
+    { titulo: "Michael Collins", categoria: "julia-roberts", subtipo: "1990", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/5FWDleQbOUIRVRUVEHM6nS9x9vn.jpg" },
+    { titulo: "Everyone Says I Love You", categoria: "julia-roberts", subtipo: "1990", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/Everyone_Says_I_love_you_1996_original_film_art_5000x.jpg?v=1577147468" },
+    { titulo: "My Best Friend's Wedding", categoria: "julia-roberts", subtipo: "1990", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/6SHRBJG4xVQXmjEG25sUelVsxhE.jpg" },
+    { titulo: "Conspiracy Theory", categoria: "julia-roberts", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMjQ1MTYxMzA4OF5BMl5BanBnXkFtZTgwNjg2NTM1MTI@._V1_.jpg" },
+    { titulo: "Stepmom", categoria: "julia-roberts", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/I/51o3AgRumML._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Notting Hill", categoria: "julia-roberts", subtipo: "1990", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/z9pPrJjpiVNvfE5Yke9aoq2PjJD.jpg" },
+    { titulo: "Runaway Bride", categoria: "julia-roberts", subtipo: "1990", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/vBiYIvd4GxZO00iqkZzR4v82Jw3.jpg" },
+    { titulo: "Satisfaction", categoria: "julia-roberts", subtipo: "1980", tipo: "Película", poster: "https://m.media-amazon.com/images/I/51QTEFW2MsL.jpg" },
+    { titulo: "Mystic Pizza", categoria: "julia-roberts", subtipo: "1980", tipo: "Película", poster: "https://i.pinimg.com/736x/86/61/37/866137de9c109ea855d2fa80afd59180.jpg" },
+    { titulo: "Blood Red", categoria: "julia-roberts", subtipo: "1980", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTgyODA0MjExMF5BMl5BanBnXkFtZTgwMjY4MzkwMzE@._V1_QL75_UX146_.jpg" },
+    { titulo: "Steel Magnolias", categoria: "julia-roberts", subtipo: "1980", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81rXt9MP5JL._UF1000,1000_QL80_.jpg" },
     { titulo: "Blue Valentine", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/510CkJsGCuL._AC_UF894,1000_QL80_.jpg" },
     { titulo: "All Good Things", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTcwMjIyMTc2Nl5BMl5BanBnXkFtZTcwOTQyMzc5Mw@@._V1_.jpg" },
     { titulo: "Crazy, Stupid, Love", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61I-Y1LHbjL._AC_UF894,1000_QL80_.jpg" },
@@ -1259,6 +1308,17 @@ const listaMedia = [
     { titulo: "DC Coleccion Heroes y Villanos #72: Batgirl: El Reflejo Mas Oscuro", categoria: "los-nuevos-52-dc-argentina", personajes: "batgirl", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_926404-MLA82729160314_032025-O.webp" },
     { titulo: "DC Colección Heroes y Villanos #16: Aquaman: La Fosa", categoria: "los-nuevos-52-dc-argentina", personajes: "aquaman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/057/977/products/hyv_16_la_fosa_cover_def1-fb1d252627fe6a6b2316558407025734-480-0.webp" },
     { titulo: "Batman de Scott Snyder Vol. 1: La Saga de Los Búhos", categoria: "los-nuevos-52-dc-argentina", personajes: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-01-el-tribunal-de-los-buhos-cov-arg1-79ad7f69d4b63c7c7616209478666475-1024-1024.webp" },
+    { titulo: "Batman #1: El Nuevo Universo DC Comienza Aqui", categoria: "los-nuevos-52-dc-argentina", personajes: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/22/07/72f01277e0974100b147a5a9fac94762.jpg" },
+    { titulo: "Batman #2: El Nuevo Universo DC", categoria: "los-nuevos-52-dc-argentina", personajes: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/09/04/69d61a2e26a94406823b33defbea6a3c.jpg" },
+    { titulo: "Batman #3: ¡La Noche del Muñequero!", categoria: "los-nuevos-52-dc-argentina", personajes: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/25/2e/99622a5683fb4533894291f1115dc24b.jpg" },
+    { titulo: "Batman #4", categoria: "los-nuevos-52-dc-argentina", personajes: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/31/3b/ce90d61f557342f3b457ff1ee43e078a.jpg" },
+    { titulo: "Batman #5", categoria: "los-nuevos-52-dc-argentina", personajes: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/3e/04/8e02c2286c45423c811183c2bf154e06.jpg" },
+    { titulo: "Batman #6: La Noche de Los Buhos - Prologo", categoria: "los-nuevos-52-dc-argentina", personajes: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/0b/07/b4afc203cbdb4265bfdfefebb60f7e73.jpg" },
+    { titulo: "Batman #7: La Noche de Los Buhos - Parte 1", categoria: "los-nuevos-52-dc-argentina", personajes: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/38/29/73fcba006ce644dc92e845e613541283.jpg" },
+    { titulo: "Batman #8: La Noche de Los Buhos - Parte 2", categoria: "los-nuevos-52-dc-argentina", personajes: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1d/31/de1e7da178af43a586f027ffd7c6a0d9.jpg" },
+    { titulo: "Batman #9: La Noche de Los Buhos - Parte 3", categoria: "los-nuevos-52-dc-argentina", personajes: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/small/1d/35/b778b852216844748af648932965881a.jpg" },
+    { titulo: "Batman #10: La Noche de Los Buhos - Parte 4", categoria: "los-nuevos-52-dc-argentina", personajes: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/33/05/f5c60e6cd1b046aab1a7756bdd3b3c91.jpg" },
+    { titulo: "Batman #11: La Noche de Los Buhos - Final", categoria: "los-nuevos-52-dc-argentina", personajes: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/21/2d/933049817bf946f59ed848b56d4f7a6e.jpg" },
     { titulo: "DC Coleccion Heroes y Villanos #58: Escuadron Suicida: Patada en la Boca", categoria: "los-nuevos-52-dc-argentina", personajes: "amanda-waller,escuadron-suicida,harley-quinn", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2024/10/9788447146925-58.webp" },
     { titulo: "Batman vs Robin", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,ras-al-ghul", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vs_robin1-cb8bc14e49046ebd2316812693285754-640-0.webp" },
     { titulo: "Batwoman #1: Hidrologia", categoria: "los-nuevos-52-dc-argentina", personajes: "batwoman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1d/2f/63d50a2305ce4ee38a23fcf2ce8a46b9.jpg" },
@@ -1302,6 +1362,14 @@ const listaMedia = [
     { titulo: "Superman #12: ¡El Portal del Terror!", categoria: "los-nuevos-52-dc-argentina", personajes: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1a/25/ebe549ad80724ddfa82277cd3773f099.jpg" },
     { titulo: "Batman Inc.", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,ras-al-ghul", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_inc_cov-ovni1-ff686204bad49f16b916944446297670-640-0.webp" },
     { titulo: "Batman de Scott Snyder Vol. 2: Muerte de La Familia", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-02-muerte-de-la-familia-cov-arg1-86eecca90561db8b7116263183152854-1024-1024.webp" },
+    { titulo: "Batman #12: La Muerte de La Familia - Parte 1", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,joker", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1b/29/8af19fd967cd4cdfadfb79d22e18358f.jpg" },
+    { titulo: "Batman #13: La Muerte de La Familia - Parte 2", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,joker", tipo: "Cómic", poster: "https://i1.whakoom.com/large/00/39/5399073f23a9435ea9f5cc62821d5c23.jpg" },
+    { titulo: "Batman #14: La Muerte de La Familia - Parte 3", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,joker", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2c/38/beb7f465743248d7a5e8010ecc06681e.jpg" },
+    { titulo: "Batman #15: La Muerte de La Familia - Parte 4", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,joker", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2c/06/89527a2643614ac3a5923e51c812ccea.jpg" },
+    { titulo: "Batman #16: La Muerte de La Familia - Final", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,joker", tipo: "Cómic", poster: "https://i1.whakoom.com/large/06/36/f5d75b95e931419695a016601bd03442.jpg" },
+    { titulo: "Batman #17: Requiem", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,joker", tipo: "Cómic", poster: "https://i1.whakoom.com/large/38/10/1d16d56c54fd4c4984ca9c087f1cd1e6.jpg" },
+    { titulo: "Batman #18: El Mayor Enemigo de Batman es...", categoria: "los-nuevos-52-dc-argentina", personajes: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/38/10/1d16d56c54fd4c4984ca9c087f1cd1e6.jpg" },
+    { titulo: "Batman #19: ¿El Caballero Oscuro Contra Bruce Wayne?", categoria: "los-nuevos-52-dc-argentina", personajes: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/08/12/90e9c5fe2aaa42e1b93df506626a6f7d.jpg" },
     { titulo: "Aquaman #4: El Trono de Atlantis", categoria: "los-nuevos-52-dc-argentina", personajes: "aquaman,black-manta", tipo: "Cómic", poster: "https://i1.whakoom.com/small/30/2e/a532cbd1e65841cd8ef9c34f74c61f73.jpg" },
     { titulo: "Aquaman #5: El Trono de Atlantis", categoria: "los-nuevos-52-dc-argentina", personajes: "aquaman,black-manta", tipo: "Cómic", poster: "https://i1.whakoom.com/small/36/34/5dc3600bec014f78ac7de3f4f313527e.jpg" },
     { titulo: "Green Lantern #13: La Ascension del Tercer Ejercito", categoria: "los-nuevos-52-dc-argentina", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/37/2c/8a23102b46b74c90b6af3abae942c59d.jpg" },
@@ -1331,6 +1399,10 @@ const listaMedia = [
     { titulo: "Liga de La Justicia de America #3: ¿Quien Les Ha Traicionado?", categoria: "los-nuevos-52-dc-argentina", personajes: "green-arrow,martian-manhunter,catwoman", tipo: "Cómic", poster: "https://i1.whakoom.com/small/26/13/8472cc51b9ac4f348c498610e393c4bc.jpg" },
     { titulo: "DC Colección Heroes y Villanos #2: Harley Quinn: Calor en La Ciudad", categoria: "los-nuevos-52-dc-argentina", personajes: "harley-quinn", tipo: "Cómic", poster: "https://i1.whakoom.com/small/38/30/c229e0c97ac547f7986e19d836fcd682.jpg" },
     { titulo: "Batman de Scott Snyder Vol. 3: Año Cero", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,riddler", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-03-ano-cero-cov-arg1-0496240b00c09b32ae16372534510955-1024-1024.webp" },
+    { titulo: "Batman #20: Origen", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,riddler", tipo: "Cómic", poster: "https://i1.whakoom.com/large/13/23/0e97400d8cbf47c49ca328fec9fe55ff.jpg" },
+    { titulo: "Batman #21: Origen", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,riddler", tipo: "Cómic", poster: "https://i1.whakoom.com/large/26/18/c4eb49d55afa41dc8b2b9303303f60e2.jpg" },
+    { titulo: "Batman #22: Origen", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,riddler", tipo: "Cómic", poster: "https://i1.whakoom.com/large/37/35/79bedf34143943cdabb42e1ada46c8ef.jpg" },
+    { titulo: "Batman #23: Origen", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,riddler", tipo: "Cómic", poster: "https://i1.whakoom.com/large/31/22/9f28bb62ceeb4927955e4fc822f50509.jpg" },
     { titulo: "DC Colección Heroes y Villanos #5: Maldad Eterna", categoria: "los-nuevos-52-dc-argentina", personajes: "lex-luthor,liga", tipo: "Cómic", poster: "https://i1.whakoom.com/small/11/06/3c7d972c97514b098ea5e35283e9c326.jpg" },
     { titulo: "Batman de Scott Snyder Vol. 4: Fin de Juego", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-04-fin-del-juego-cov-arg-11-60708f7d67f5ef261d16457506287439-1024-1024.webp" },
     { titulo: "DC Colección Heroes y Villanos #14: Liga de La Justicia: La Guerra de Darkseid Vol. 1", categoria: "los-nuevos-52-dc-argentina", personajes: "batman,darkseid,liga,superman", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2025/03/9788447146925-14.webp" },
@@ -1984,7 +2056,19 @@ const listaMedia = [
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #96: Avengers: Mundo Avenger", categoria: "marvel-actualidad", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0c/25/5f0a432c344a402183c8a63d292b8294.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #97: Jovenes Avengers: Estilo > Substancia", categoria: "marvel-actualidad", subtipo: "jovenes-avengers", tipo: "Cómic", poster: "https://i1.whakoom.com/small/28/19/8dc7d794028545879dd5becd7b480154.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #98: Nuevos Avengers: Todo Muere", categoria: "marvel-actualidad", subtipo: "iron-man,capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/small/26/37/b0749f91b18a4cac9134c6f21f35faf5.jpg" },
+    { titulo: "Superior Spider-Man #1", categoria: "marvel-actualidad", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/11/30/0a3b83510edc44978944c051a6a554a9.jpg" },
+    { titulo: "Superior Spider-Man #2", categoria: "marvel-actualidad", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/0b/34/1e6d916dbb7f4ec184087603e38b9eb5.jpg" },
+    { titulo: "Superior Spider-Man #3", categoria: "marvel-actualidad", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/00/28/eaf7874a29c4436bbc308fa1201e0a2e.jpg" },
     { titulo: "Coleccion de Novelas Graficas de Marvel #99: Superior Spider-Man: Mi Propio Peor Enemigo", categoria: "marvel-actualidad", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/24/27/bb817433be7b47de8c371ae0c7fe79f6.jpg" },
+    { titulo: "Superior Spider-Man #4: Mente Traumada", categoria: "marvel-actualidad", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/28/3a/67eb6a81a47141309a9ad9e2ebd485f4.jpg" },
+    { titulo: "Superior Spider-Man #5", categoria: "marvel-actualidad", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/03/19/b2309b953b5b40e0b3dd1bb11e759e3e.jpg" },
+    { titulo: "Superior Spider.Man #6: Sin Salida", categoria: "marvel-actualidad", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2b/20/386b17261d2e4031ad8b411ba823d1a9.jpg" },
+    { titulo: "Superior Spider-Man #7: Corre Goblin, Corre", categoria: "marvel-actualidad", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/0a/3e/03c6eca66c5f4d53918c898a019d0c37.jpg" },
+    { titulo: "Superior Spider-Man #8", categoria: "marvel-actualidad", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/35/19/12232283e0724c3a84a547c86faa32f5.jpg" },
+    { titulo: "Superior Spider-Man #9", categoria: "marvel-actualidad", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/00/2d/47cc93d0e0d44a83aeb191abfb11c985.jpg" },
+    { titulo: "Superior Spider-Man #10: Las Horas Mas Oscuras", categoria: "marvel-actualidad", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/00/39/674480e8c54040c3befe6b640669f9f4.jpg" },
+    { titulo: "Superior Spider-Man #11:  Nacion Goblin #1", categoria: "marvel-actualidad", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2d/18/f6d4eab31f8d465aa8301b70de369e21.jpg" },
+    { titulo: "Superior Spider-Man #12: Nacion Goblin Conclusion", categoria: "marvel-actualidad", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/0b/3f/0ff44227e0984b998e5222a2cb0f4d59.jpg" },
     { titulo: "Coleccion de Novelas Graficas de Marvel #100: Guardianes de La Galaxia: Avengers Cosmicos", categoria: "marvel-actualidad", subtipo: "guardianes-galaxia", tipo: "Cómic", poster: "https://i1.whakoom.com/small/13/24/351ff1c60daa4fd8b9d965c7f3114f7d.jpg" },
     { titulo: "Must Have #30: Guardianes de La Galaxia: Avengers Cosmicos", categoria: "marvel-actualidad", subtipo: "guardianes-galaxia", tipo: "Cómic", poster: "https://i1.whakoom.com/small/06/38/6390af4edd774d9ebc2f530216689ff2.jpg" },
     { titulo: "Coleccion de Novelas Graficas de Marvel #101: Nova: Origenes", categoria: "marvel-actualidad", subtipo: "nova", tipo: "Cómic", poster: "https://i1.whakoom.com/small/26/1a/de5fdcca93e64debaf6b71f56cd3e1a5.jpg" },
@@ -2347,6 +2431,16 @@ const colecciones = [
         esContenedor: true,
         etiqueta: "Actor",
         progresoCategoria: "ryan-gosling",
+        peliculas: []
+    },
+    {
+        id: "julia-roberts",
+        titulo: "Julia Roberts",
+        categoria: "actores",
+        poster: "https://i.pinimg.com/474x/88/3c/f5/883cf50a818797a9f45c26b9e11241d3.jpg",
+        esContenedor: true,
+        etiqueta: "Actriz",
+        progresoCategoria: "julia-roberts",
         peliculas: []
     },
     {
@@ -3120,7 +3214,7 @@ const colecciones = [
         categoria: "dc-animacion",
         poster: "https://i.pinimg.com/736x/0c/63/37/0c6337f890f06802d7aefbf9c87cb788.jpg",
         peliculas: [
-            { titulo: "Teen Titans", poster: "https://image.tmdb.org/t/p/original/gxe4wIp3kYfw4QSkLMt99HfLkok.jpg" },
+            // "Teen Titans" ahora es ficha explorable con sus 5 temporadas (ver colecciones)
             // "The Batman" ahora es "The Batman (2004)", ficha explorable con sus 5 temporadas (ver colecciones)
             { titulo: "Legion of Super Heroes", poster: "https://m.media-amazon.com/images/M/MV5BM2UyODExMTctYmQzZS00OTU1LWJiMmUtMjhjOWI4ODk0MDgwXkEyXkFqcGc@.V1.jpg" },
             { titulo: "Batman: The Brave and the Bold", poster: "https://m.media-amazon.com/images/M/MV5BM2FkYTQ2MzUtNWI1NC00MTM0LTgyNzYtMDM3NmE1OWYyNjRjXkEyXkFqcGc@.V1.jpg" },
@@ -3134,6 +3228,20 @@ const colecciones = [
             { titulo: "My Adventures with Superman", poster: "https://m.media-amazon.com/images/M/MV5BNjU3NmE4MDctMDMzYS00NTc5LTg0MmYtNDg2NDhiOTAxMzhjXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
             { titulo: "Batman: Caped Crusader", poster: "https://m.media-amazon.com/images/M/MV5BMjI1Y2NmNDgtZDVmMy00MjcwLTgwNmItMTFmMjcxMWRlYzQwXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
             { titulo: "Suicide Squad Isekai", poster: "https://m.media-amazon.com/images/M/MV5BM2FkMDljMTctZGRkNS00NTBiLWFlMjQtZDUyMGZhMGE1NDRlXkEyXkFqcGc@.V1.jpg" }
+        ]
+    },
+    {
+        id: "teen-titans",
+        titulo: "Teen Titans",
+        categoria: "series-independientes",
+        poster: "https://image.tmdb.org/t/p/original/gxe4wIp3kYfw4QSkLMt99HfLkok.jpg",
+        esSerie: true,
+        peliculas: [
+            { titulo: "Teen Titans Temporada 1", poster: "https://image.tmdb.org/t/p/original/jKjSCteFyc1nVs7BhDRGf8vZTbH.jpg" },
+            { titulo: "Teen Titans Temporada 2", poster: "https://images.justwatch.com/poster/242521777/s718/season-2.jpg" },
+            { titulo: "Teen Titans Temporada 3", poster: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p186031_b_v8_am.jpg" },
+            { titulo: "Teen Titans Temporada 4", poster: "https://images.justwatch.com/poster/242521778/s718/temporada-4.jpg" },
+            { titulo: "Teen Titans Temporada 5", poster: "https://image.tmdb.org/t/p/original/i5Ku0CZK0xLhGaFeAtjKHjKqni9.jpg" }
         ]
     },
     {
@@ -3651,6 +3759,16 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "batman-nuevos-52",
+        titulo: "Batman (Nuevos 52)",
+        categoria: "colecciones-hub",
+        poster: "https://i1.whakoom.com/large/22/07/72f01277e0974100b147a5a9fac94762.jpg",
+        esContenedor: true,
+        categoriaEditorial: "dc",
+        progresoPatron: "^Batma?n #(\\d+)",
+        peliculas: []
+    },
+    {
         id: "batman-norm-breyfogle",
         titulo: "Batman por Norm Breyfogle",
         categoria: "colecciones-hub",
@@ -3688,6 +3806,16 @@ const colecciones = [
         esContenedor: true,
         categoriaEditorial: "marvel",
         progresoPatron: "^Avengers - Los Heroes Mas Poderosos de La Tierra #(\\d+)",
+        peliculas: []
+    },
+    {
+        id: "superior-spider-man",
+        titulo: "Superior Spider-Man",
+        categoria: "colecciones-hub",
+        poster: "https://i1.whakoom.com/large/11/30/0a3b83510edc44978944c051a6a554a9.jpg",
+        esContenedor: true,
+        categoriaEditorial: "marvel",
+        progresoPatron: "^Superior Spider[-.]Man #(\\d+)",
         peliculas: []
     },
     {
@@ -4571,10 +4699,12 @@ function renderizarColecciones() {
         "green-lantern-nuevos-52": "seccion-green-lantern-nuevos-52",
         "aquaman-nuevos-52": "seccion-aquaman-nuevos-52",
         "batman-y-robin-nuevos-52": "seccion-batman-y-robin-nuevos-52",
+        "batman-nuevos-52": "seccion-batman-nuevos-52",
         "batman-norm-breyfogle": "seccion-batman-norm-breyfogle",
         "jla-nuevos-52": "seccion-jla-nuevos-52",
         "superman-nuevos-52": "seccion-superman-nuevos-52",
         "avengers-mas-poderosos": "seccion-avengers-mas-poderosos",
+        "superior-spider-man": "seccion-superior-spider-man",
         "dc-comics-hub": "seccion-dc-comics-hub",
         "dc-camino-heroe": "seccion-dc-camino-heroe",
         "dc-orden-lectura": "seccion-dc-orden-lectura",
@@ -4754,6 +4884,7 @@ function abrirColeccion(colId) {
         'oscar-2026': '.btn-filtro-oscar[data-tipo="mejor-pelicula"]',
         'leonardo-dicaprio': '.btn-filtro-dicaprio[data-tipo="2020"]',
         'ryan-gosling': '.btn-filtro-gosling[data-tipo="2020"]',
+        'julia-roberts': '.btn-filtro-julia-roberts[data-tipo="2020"]',
         'sydney-sweeney': '.btn-filtro-sweeney[data-tipo="2020"]',
         'tom-holland': '.btn-filtro-holland[data-tipo="2020"]',
         'barry-keoghan': '.btn-filtro-keoghan[data-tipo="2020"]',
@@ -4887,6 +5018,7 @@ function renderizarContenido() {
         "oscar-2020": "seccion-oscar-2020",
         "leonardo-dicaprio": "seccion-leonardo-dicaprio",
         "ryan-gosling": "seccion-ryan-gosling",
+        "julia-roberts": "seccion-julia-roberts",
         "sydney-sweeney": "seccion-sydney-sweeney",
         "tom-holland": "seccion-tom-holland",
         "barry-keoghan": "seccion-barry-keoghan",
@@ -5172,6 +5304,19 @@ function renderizarContenido() {
                 if (grillaBatmanYRobinNuevos52) grillaBatmanYRobinNuevos52.insertAdjacentHTML('beforeend', htmlTarjetaBatmanYRobinNuevos52);
             }
 
+            // Colección Batman (Nuevos 52): orden simple por número. Acepta "Batman #N"
+            // y también "Batma #N" (typo real del título #2 tal cual se cargó).
+            const matchBatmanNuevos52 = item.titulo.match(/^Batma?n #(\d+)/i);
+            if (matchBatmanNuevos52) {
+                const numBatmanNuevos52 = matchBatmanNuevos52[1];
+                const htmlTarjetaBatmanNuevos52 = htmlTarjeta.replace(
+                    'class="tarjeta-media"',
+                    `class="tarjeta-media" data-batman-n52-num="${numBatmanNuevos52}"`
+                );
+                const grillaBatmanNuevos52 = document.getElementById("grilla-batman-nuevos-52");
+                if (grillaBatmanNuevos52) grillaBatmanNuevos52.insertAdjacentHTML('beforeend', htmlTarjetaBatmanNuevos52);
+            }
+
             // Colección Batman por Norm Breyfogle: orden simple por volumen.
             const matchBatmanBreyfogle = item.titulo.match(/^Batman Por Norm Breyfogle Vol\. (\d+)/i);
             if (matchBatmanBreyfogle) {
@@ -5218,6 +5363,20 @@ function renderizarContenido() {
                 );
                 const grillaAvengersMasPoderosos = document.getElementById("grilla-avengers-mas-poderosos");
                 if (grillaAvengersMasPoderosos) grillaAvengersMasPoderosos.insertAdjacentHTML('beforeend', htmlTarjetaAvengersMasPoderosos);
+            }
+
+            // Colección Superior Spider-Man: orden simple por número. Acepta tanto
+            // "Superior Spider-Man #N" como "Superior Spider.Man #N" (typo real
+            // del título #6, con punto en vez de guion).
+            const matchSuperiorSpiderMan = item.titulo.match(/^Superior Spider[-.]Man #(\d+)/i);
+            if (matchSuperiorSpiderMan) {
+                const numSuperiorSpiderMan = matchSuperiorSpiderMan[1];
+                const htmlTarjetaSuperiorSpiderMan = htmlTarjeta.replace(
+                    'class="tarjeta-media"',
+                    `class="tarjeta-media" data-ssm-num="${numSuperiorSpiderMan}"`
+                );
+                const grillaSuperiorSpiderMan = document.getElementById("grilla-superior-spider-man");
+                if (grillaSuperiorSpiderMan) grillaSuperiorSpiderMan.insertAdjacentHTML('beforeend', htmlTarjetaSuperiorSpiderMan);
             }
 
             // Colección "Flash de Messner-Loebs": los 4 tomos puntuales de esa
@@ -5440,11 +5599,23 @@ function ordenarGrillaPorNumeroSalvat() {
         tarjetasAvengersMasPoderosos.sort((a, b) => parseInt(a.getAttribute('data-avengers-mp-num')) - parseInt(b.getAttribute('data-avengers-mp-num')));
         tarjetasAvengersMasPoderosos.forEach(t => contenedorAvengersMasPoderosos.appendChild(t));
     }
+    const contenedorSuperiorSpiderMan = document.getElementById('grilla-superior-spider-man');
+    if (contenedorSuperiorSpiderMan) {
+        const tarjetasSuperiorSpiderMan = Array.from(contenedorSuperiorSpiderMan.querySelectorAll('.tarjeta-media'));
+        tarjetasSuperiorSpiderMan.sort((a, b) => parseInt(a.getAttribute('data-ssm-num')) - parseInt(b.getAttribute('data-ssm-num')));
+        tarjetasSuperiorSpiderMan.forEach(t => contenedorSuperiorSpiderMan.appendChild(t));
+    }
     const contenedorBatmanYRobinNuevos52 = document.getElementById('grilla-batman-y-robin-nuevos-52');
     if (contenedorBatmanYRobinNuevos52) {
         const tarjetasBatmanYRobinNuevos52 = Array.from(contenedorBatmanYRobinNuevos52.querySelectorAll('.tarjeta-media'));
         tarjetasBatmanYRobinNuevos52.sort((a, b) => parseInt(a.getAttribute('data-bmr-n52-num')) - parseInt(b.getAttribute('data-bmr-n52-num')));
         tarjetasBatmanYRobinNuevos52.forEach(t => contenedorBatmanYRobinNuevos52.appendChild(t));
+    }
+    const contenedorBatmanNuevos52 = document.getElementById('grilla-batman-nuevos-52');
+    if (contenedorBatmanNuevos52) {
+        const tarjetasBatmanNuevos52 = Array.from(contenedorBatmanNuevos52.querySelectorAll('.tarjeta-media'));
+        tarjetasBatmanNuevos52.sort((a, b) => parseInt(a.getAttribute('data-batman-n52-num')) - parseInt(b.getAttribute('data-batman-n52-num')));
+        tarjetasBatmanNuevos52.forEach(t => contenedorBatmanNuevos52.appendChild(t));
     }
     const contenedorBatmanBreyfogle = document.getElementById('grilla-batman-norm-breyfogle');
     if (contenedorBatmanBreyfogle) {
@@ -6266,6 +6437,13 @@ if(btnVolverRyanGosling) {
     });
 }
 
+const btnVolverJuliaRoberts = document.getElementById('btn-volver-julia-roberts');
+if(btnVolverJuliaRoberts) {
+    btnVolverJuliaRoberts.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-actores'));
+    });
+}
+
 const btnVolverSydneySweeney = document.getElementById('btn-volver-sydney-sweeney');
 if(btnVolverSydneySweeney) {
     btnVolverSydneySweeney.addEventListener('click', () => {
@@ -6767,6 +6945,13 @@ if(btnVolverSeriesIndependientes) {
     });
 }
 
+const btnVolverTeenTitans = document.getElementById('btn-volver-teen-titans');
+if(btnVolverTeenTitans) {
+    btnVolverTeenTitans.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-series-independientes'));
+    });
+}
+
 const btnVolverTheBatman2004 = document.getElementById('btn-volver-the-batman-2004');
 if(btnVolverTheBatman2004) {
     btnVolverTheBatman2004.addEventListener('click', () => {
@@ -6973,6 +7158,23 @@ botonesFiltroGosling.forEach(boton => {
         this.classList.add('activo');
         const tipoElegido = this.getAttribute('data-tipo');
         const tarjetas = document.querySelectorAll('#seccion-ryan-gosling .tarjeta-media');
+
+        tarjetas.forEach(tarjeta => {
+            tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
+        });
+    });
+});
+
+// ==========================================
+// FILTROS "JULIA ROBERTS" — por década
+// ==========================================
+const botonesFiltroJuliaRoberts = document.querySelectorAll('.btn-filtro-julia-roberts');
+botonesFiltroJuliaRoberts.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroJuliaRoberts.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const tipoElegido = this.getAttribute('data-tipo');
+        const tarjetas = document.querySelectorAll('#seccion-julia-roberts .tarjeta-media');
 
         tarjetas.forEach(tarjeta => {
             tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
@@ -8753,9 +8955,23 @@ if(btnVolverAvengersMasPoderosos) {
     });
 }
 
+const btnVolverSuperiorSpiderMan = document.getElementById('btn-volver-superior-spider-man');
+if(btnVolverSuperiorSpiderMan) {
+    btnVolverSuperiorSpiderMan.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
 const btnVolverBatmanYRobinNuevos52 = document.getElementById('btn-volver-batman-y-robin-nuevos-52');
 if(btnVolverBatmanYRobinNuevos52) {
     btnVolverBatmanYRobinNuevos52.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolverBatmanNuevos52 = document.getElementById('btn-volver-batman-nuevos-52');
+if(btnVolverBatmanNuevos52) {
+    btnVolverBatmanNuevos52.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
     });
 }
