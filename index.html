@@ -1198,7 +1198,40 @@
                 <h3>Nombralos</h3>
                 <p>Tenés 60 segundos. Nombrá a todos los personajes que puedas.</p>
             </div>
+            <div class="tarjeta-juego" id="tarjeta-grillas">
+                <div class="icono-juego">🔲</div>
+                <h3>Grillas</h3>
+                <p>Cruzá una fila con una columna y nombrá a un actor que cumpla las dos condiciones.</p>
+            </div>
         </div>
+    </section>
+
+    <!-- SECCIÓN: JUEGOS - GRILLAS - SELECTOR -->
+    <section id="seccion-grillas-selector" class="oculto">
+        <button class="btn-volver" id="btn-volver-juegos-desde-grillas">← Volver a Juegos</button>
+        <h2>Grillas 🔲</h2>
+        <p class="subtitulo-juegos">Elegí una grilla para jugar.</p>
+        <div class="grilla-juegos" id="grilla-grillas-selector"></div>
+    </section>
+
+    <!-- SECCIÓN: JUEGO - GRILLA (JUGAR) -->
+    <section id="seccion-grilla-jugar" class="oculto">
+        <button class="btn-volver" id="btn-volver-juegos-desde-grilla-jugar">← Volver a Grillas</button>
+        <h2 id="titulo-grilla-jugar">Grilla 🔲</h2>
+        <p class="subtitulo-juegos" id="subtitulo-grilla-jugar">Nombrá un actor que cumpla la fila y la columna a la vez.</p>
+
+        <p class="contador-elenco" id="contador-grilla">0/9 · 0 errores (máx. 9)</p>
+
+        <div class="tabla-grilla-juego" id="tabla-grilla-juego"></div>
+
+        <div class="fila-input-elenco">
+            <input type="text" id="input-grilla" placeholder="Tocá una celda y escribí un actor..." autocomplete="off" disabled>
+            <button class="btn-modal" id="btn-adivinar-grilla" disabled>Adivinar</button>
+        </div>
+        <div id="sugerencias-grilla" class="sugerencias-dropdown oculto"></div>
+
+        <p id="mensaje-grilla" class="mensaje-elenco"></p>
+        <button class="btn-modal" id="btn-reiniciar-grilla" style="width:auto; margin-top:10px;">🔁 Reiniciar</button>
     </section>
 
     <!-- SECCIÓN: JUEGOS - NOMBRALOS - CATEGORÍAS (DC / MARVEL) -->
@@ -1730,6 +1763,13 @@
             <button class="btn-filtro-marvel-plata" data-tipo="silver-surfer">Silver Surfer</button>
             <button class="btn-filtro-marvel-plata" data-tipo="ultron">Ultron</button>
         </div>
+                <div class="filtros-seccion" id="filtro-editorial-seccion-marvel-edad-plata">
+            <button class="btn-filtro-editorial-comic activo" data-editorial="todos">Todas las editoriales</button>
+            <button class="btn-filtro-editorial-comic" data-editorial="ovni">Ovni Press</button>
+            <button class="btn-filtro-editorial-comic" data-editorial="panini">Panini</button>
+            <button class="btn-filtro-editorial-comic" data-editorial="salvat">Salvat</button>
+            <button class="btn-filtro-editorial-comic" data-editorial="ecc-sudamerica">ECC Sudamérica</button>
+        </div>
         <div class="grilla-biblioteca" id="grilla-marvel-edad-plata"></div>
     </section>
 
@@ -1760,6 +1800,13 @@
             <button class="btn-filtro-marvel-bronce" data-tipo="iron-fist">Iron Fist</button>
             <button class="btn-filtro-marvel-bronce" data-tipo="spider-man">Spider-Man</button>
         </div>
+                <div class="filtros-seccion" id="filtro-editorial-seccion-marvel-edad-bronce">
+            <button class="btn-filtro-editorial-comic activo" data-editorial="todos">Todas las editoriales</button>
+            <button class="btn-filtro-editorial-comic" data-editorial="ovni">Ovni Press</button>
+            <button class="btn-filtro-editorial-comic" data-editorial="panini">Panini</button>
+            <button class="btn-filtro-editorial-comic" data-editorial="salvat">Salvat</button>
+            <button class="btn-filtro-editorial-comic" data-editorial="ecc-sudamerica">ECC Sudamérica</button>
+        </div>
         <div class="grilla-biblioteca" id="grilla-marvel-edad-bronce"></div>
     </section>
 
@@ -1780,6 +1827,13 @@
             <button class="btn-filtro-marvel-moderna1" data-tipo="venom">Venom</button>
             <button class="btn-filtro-marvel-moderna1" data-tipo="thor">Thor</button>
             <button class="btn-filtro-marvel-moderna1" data-tipo="iron-man">Iron Man</button>
+        </div>
+                <div class="filtros-seccion" id="filtro-editorial-seccion-marvel-edad-moderna-1">
+            <button class="btn-filtro-editorial-comic activo" data-editorial="todos">Todas las editoriales</button>
+            <button class="btn-filtro-editorial-comic" data-editorial="ovni">Ovni Press</button>
+            <button class="btn-filtro-editorial-comic" data-editorial="panini">Panini</button>
+            <button class="btn-filtro-editorial-comic" data-editorial="salvat">Salvat</button>
+            <button class="btn-filtro-editorial-comic" data-editorial="ecc-sudamerica">ECC Sudamérica</button>
         </div>
         <div class="grilla-biblioteca" id="grilla-marvel-edad-moderna-1"></div>
     </section>
@@ -1809,6 +1863,13 @@
             <button class="btn-filtro-marvel-moderna2" data-tipo="daredevil">Daredevil</button>
             <button class="btn-filtro-marvel-moderna2" data-tipo="silver-surfer">Silver Surfer</button>
             <button class="btn-filtro-marvel-moderna2" data-tipo="annihilation">Annihilation</button>
+        </div>
+                <div class="filtros-seccion" id="filtro-editorial-seccion-marvel-edad-moderna-2">
+            <button class="btn-filtro-editorial-comic activo" data-editorial="todos">Todas las editoriales</button>
+            <button class="btn-filtro-editorial-comic" data-editorial="ovni">Ovni Press</button>
+            <button class="btn-filtro-editorial-comic" data-editorial="panini">Panini</button>
+            <button class="btn-filtro-editorial-comic" data-editorial="salvat">Salvat</button>
+            <button class="btn-filtro-editorial-comic" data-editorial="ecc-sudamerica">ECC Sudamérica</button>
         </div>
         <div class="grilla-biblioteca" id="grilla-marvel-edad-moderna-2"></div>
     </section>
@@ -1846,6 +1907,13 @@
             <button class="btn-filtro-marvel-actualidad" data-tipo="ms-marvel">Ms. Marvel</button>
             <button class="btn-filtro-marvel-actualidad" data-tipo="avengers-arena">Avengers Arena</button>
         </div>
+                <div class="filtros-seccion" id="filtro-editorial-seccion-marvel-actualidad">
+            <button class="btn-filtro-editorial-comic activo" data-editorial="todos">Todas las editoriales</button>
+            <button class="btn-filtro-editorial-comic" data-editorial="ovni">Ovni Press</button>
+            <button class="btn-filtro-editorial-comic" data-editorial="panini">Panini</button>
+            <button class="btn-filtro-editorial-comic" data-editorial="salvat">Salvat</button>
+            <button class="btn-filtro-editorial-comic" data-editorial="ecc-sudamerica">ECC Sudamérica</button>
+        </div>
         <div class="grilla-biblioteca" id="grilla-marvel-actualidad"></div>
     </section>
 
@@ -1868,6 +1936,13 @@
             <button class="btn-filtro-marvel-ultimate" data-tipo="wolverine">Wolverine</button>
             <button class="btn-filtro-marvel-ultimate" data-tipo="jovenes-ultimates">Jóvenes Ultimates</button>
             <button class="btn-filtro-marvel-ultimate" data-tipo="thor">Thor</button>
+        </div>
+                <div class="filtros-seccion" id="filtro-editorial-seccion-marvel-universo-ultimate">
+            <button class="btn-filtro-editorial-comic activo" data-editorial="todos">Todas las editoriales</button>
+            <button class="btn-filtro-editorial-comic" data-editorial="ovni">Ovni Press</button>
+            <button class="btn-filtro-editorial-comic" data-editorial="panini">Panini</button>
+            <button class="btn-filtro-editorial-comic" data-editorial="salvat">Salvat</button>
+            <button class="btn-filtro-editorial-comic" data-editorial="ecc-sudamerica">ECC Sudamérica</button>
         </div>
         <div class="grilla-biblioteca" id="grilla-marvel-universo-ultimate"></div>
     </section>
@@ -1892,6 +1967,13 @@
             <button class="btn-filtro-marvel-alternativas" data-tipo="hulk">Hulk</button>
             <button class="btn-filtro-marvel-alternativas" data-tipo="iron-man">Iron Man</button>
             <button class="btn-filtro-marvel-alternativas" data-tipo="thor">Thor</button>
+        </div>
+                <div class="filtros-seccion" id="filtro-editorial-seccion-marvel-realidades-alternativas">
+            <button class="btn-filtro-editorial-comic activo" data-editorial="todos">Todas las editoriales</button>
+            <button class="btn-filtro-editorial-comic" data-editorial="ovni">Ovni Press</button>
+            <button class="btn-filtro-editorial-comic" data-editorial="panini">Panini</button>
+            <button class="btn-filtro-editorial-comic" data-editorial="salvat">Salvat</button>
+            <button class="btn-filtro-editorial-comic" data-editorial="ecc-sudamerica">ECC Sudamérica</button>
         </div>
         <div class="grilla-biblioteca" id="grilla-marvel-realidades-alternativas"></div>
     </section>

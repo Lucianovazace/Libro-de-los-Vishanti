@@ -306,6 +306,115 @@ h2 {
     color: #aaa;
 }
 
+.tabla-grilla-juego {
+    display: grid;
+    grid-template-columns: 90px repeat(3, 1fr);
+    gap: 4px;
+    margin: 15px 0;
+}
+
+.celda-esquina {
+    background: transparent;
+}
+
+.celda-header-columna, .celda-header-fila {
+    background-color: #1e2129;
+    color: #f1c40f;
+    font-size: 11px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 6px 3px;
+    border-radius: 6px;
+    line-height: 1.2;
+}
+
+.celda-juego {
+    aspect-ratio: 1;
+    background-color: #1e2129;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    text-align: center;
+    padding: 4px;
+    border: 2px solid transparent;
+    overflow: hidden;
+}
+
+.celda-juego .signo-interrogacion {
+    font-size: 28px;
+    color: #444;
+}
+
+.celda-juego.seleccionada {
+    border-color: #f1c40f;
+}
+
+.celda-juego.resuelta {
+    cursor: default;
+    background-color: #1a3a1a;
+    flex-direction: column;
+}
+
+.celda-juego .check-celda-resuelta {
+    font-size: 20px;
+}
+
+.celda-juego .nombre-celda-resuelta {
+    font-size: 11px;
+    color: #4caf50;
+    margin-top: 3px;
+    line-height: 1.15;
+    padding: 0 2px;
+}
+
+.celda-juego.mostrando-coincidencias {
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+.lista-coincidencias-celda {
+    font-size: 8.5px;
+    text-align: left;
+    line-height: 1.3;
+    padding: 4px;
+    overflow-y: auto;
+    color: #ddd;
+}
+
+.lista-coincidencias-celda strong {
+    color: #f1c40f;
+}
+
+.sugerencias-dropdown {
+    background-color: #1e2129;
+    border: 1px solid #333;
+    border-radius: 8px;
+    margin-top: 6px;
+    overflow: hidden;
+}
+
+.sugerencia-item {
+    padding: 8px 12px;
+    font-size: 13px;
+    cursor: pointer;
+    border-bottom: 1px solid #2a2d36;
+}
+
+.sugerencia-item:last-child {
+    border-bottom: none;
+}
+
+.sugerencia-item:hover, .sugerencia-item.resaltada {
+    background-color: #2a2d36;
+    color: #f1c40f;
+}
+
 .tarjeta-media {
     background-color: #1e2129;
     border-radius: 10px;
