@@ -590,6 +590,32 @@ const listaMedia = [
     { titulo: "Empire of the Sun", categoria: "steven-spielberg", subtipo: "1980", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/empire_of_the_sun_1987_original_film_art_aab1ca68-019d-4182-baaf-b2cb25bc7ef0_5000x.jpg?v=1677881129" },
     { titulo: "Indiana Jones y La Última Cruzada", categoria: "steven-spielberg", subtipo: "1980", tipo: "Película", poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2021/06/IMG_2497-scaled.jpeg" },
     { titulo: "Always", categoria: "steven-spielberg", subtipo: "1980", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTgzNDE0MTYzNF5BMl5BanBnXkFtZTgwMjU4MzkwMzE@._V1_.jpg" },
+    { titulo: "Killers of the Flower Moon", categoria: "martin-scorsese", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/vhkmvm2tm4HBec28JET6nBU7b7x.jpg" },
+    { titulo: "Shutter Island", categoria: "martin-scorsese", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/nrmXQ0zcZUL8jFLrakWc90IR8z9.jpg" },
+    { titulo: "Hugo", categoria: "martin-scorsese", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMjAzNzk5MzgyNF5BMl5BanBnXkFtZTcwOTE4NDU5Ng@@._V1_.jpg" },
+    { titulo: "The Wolf of Wall Street", categoria: "martin-scorsese", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@.V1.jpg" },
+    { titulo: "Silence", categoria: "martin-scorsese", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/dIlmZqUGtuAHgsYgXpECrHGtER4.jpg" },
+    { titulo: "The Irishman", categoria: "martin-scorsese", subtipo: "2010", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/750/322410.jpg" },
+    { titulo: "Gangs of New York", categoria: "martin-scorsese", subtipo: "2000", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTQ0MDA0MTUtYzkzMi00NDY3LThhZDEtNGM4MWUwYzMyZDk5XkEyXkFqcGc@.V1.jpg" },
+    { titulo: "The Aviator", categoria: "martin-scorsese", subtipo: "2000", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNTE4ZmE3NjYtMzdiOS00NDNjLWFlNmUtZGRiMGUxOTZjNDE5XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "The Departed", categoria: "martin-scorsese", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/f1JUHBq8JoXBz2NVNWeUpL2eVZs.jpg" },
+    { titulo: "Goodfellas", categoria: "martin-scorsese", subtipo: "1990", tipo: "Película", poster: "https://www.movieposters.com/cdn/shop/files/Goodfellas.mpw.116119.jpg?v=1762964954&width=1680" },
+    { titulo: "Cape Fear", categoria: "martin-scorsese", subtipo: "1990", tipo: "Película", poster: "https://cdn.posteritati.com/posters/000/000/042/020/cape-fear-md-web.jpg" },
+    { titulo: "The Age of Innocence", categoria: "martin-scorsese", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMzFkYjQzZjUtY2NjNi00ZDFkLWI4M2MtN2RjODQ0NDJkMWM0XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Casino", categoria: "martin-scorsese", subtipo: "1990", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/casino_1995_original_film_art_573a1143-a95c-4c47-b259-963f6828bc5e_5000x.jpg?v=1635459424" },
+    { titulo: "Kundun", categoria: "martin-scorsese", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZGFjNDFkMTMtYmM0ZS00NmQwLTkzNjUtZWYwYjA0ZWMxMDI1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Bringing Out the Dead", categoria: "martin-scorsese", subtipo: "1990", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/7L8RzF8syU6cTjoxr6ibBh4O4N1.jpg" },
+    { titulo: "Raging Bull", categoria: "martin-scorsese", subtipo: "1980", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMjlkYmYyZWQtNTZkOS00ZjA0LWEwNWUtNzE2ZGNiYjg0MjA2XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "The King of Comedy", categoria: "martin-scorsese", subtipo: "1980", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYTQxNGUwNmUtMDJhYy00ZjM1LWFjZjQtYmI5ZGY4YTZmZWQyXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "After Hours", categoria: "martin-scorsese", subtipo: "1980", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTUxMjEzMzI2MV5BMl5BanBnXkFtZTgwNTU3ODAxMDE@._V1_.jpg" },
+    { titulo: "The Color of Money", categoria: "martin-scorsese", subtipo: "1980", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZDIxNWQxZjQtZWEzNS00ZDNjLTkzZTUtZmQyYjk0MmE4MTYyXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "The Last Temptation of Christ", categoria: "martin-scorsese", subtipo: "1980", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMmUyYWIxNjItNDg1MC00NWVlLTg4MDAtNGY1OTQyNGIzMGNiXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Boxcar Bertha", categoria: "martin-scorsese", subtipo: "1970", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOGQ3NmViYzEtOTIwMS00YmRlLWI0YWQtZTFmZjVlNWI0M2JlXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Mean Streets", categoria: "martin-scorsese", subtipo: "1970", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMWRlNDdiYWUtYjE1Zi00OWRhLWJiYTYtZWQ0NWFkYzc0NWMxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Alice Doesn't Live Here Anymore", categoria: "martin-scorsese", subtipo: "1970", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZmE2MzdlNjItMzk5My00MDRmLWJmNjMtOTg1NTUxYTczNzNiXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Taxi Driver", categoria: "martin-scorsese", subtipo: "1970", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/266307.jpg" },
+    { titulo: "New York, New York", categoria: "martin-scorsese", subtipo: "1970", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BODk2NmU3ZDEtMzMxNy00ZmQwLWE3NzQtOTljMDM4OWRjYmIxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Who's That Knocking at My Door", categoria: "martin-scorsese", subtipo: "1960", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMjEyNzIyMzMxMV5BMl5BanBnXkFtZTcwMjU1MjYxMQ@@._V1_.jpg" },
     { titulo: "Ticket to Paradise", categoria: "julia-roberts", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/bowsGPWVbpX40SluymYDW8N4C2Y.jpg" },
     { titulo: "Leave the World Behind", categoria: "julia-roberts", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/at1EevoMjpMdzJF2eR3TdsX8s3E.jpg" },
     { titulo: "After the Hunt", categoria: "julia-roberts", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMzYyOTAwODEtZTY4My00MjVkLWJjYjUtMjE2N2UzYTE3MTY3XkEyXkFqcGc@._V1_.jpg" },
@@ -2415,7 +2441,7 @@ const colecciones = [
     },
     {
         id: "leonardo-dicaprio",
-        titulo: "Leonardo Di Caprio",
+        titulo: "Leonardo DiCaprio",
         categoria: "actores",
         poster: "https://i.pinimg.com/564x/e5/23/51/e52351dd0c0ab0da7c2d43d8bf4edc73.jpg",
         esContenedor: true,
@@ -3083,6 +3109,16 @@ const colecciones = [
         esContenedor: true,
         etiqueta: "Director",
         progresoCategoria: "steven-spielberg",
+        peliculas: []
+    },
+    {
+        id: "martin-scorsese",
+        titulo: "Martin Scorsese",
+        categoria: "directores",
+        poster: "https://media.revistagq.com/photos/6511705a14db819c173617b8/master/w_1600%2Cc_limit/GQ1123_Scorsese_03.jpg",
+        esContenedor: true,
+        etiqueta: "Director",
+        progresoCategoria: "martin-scorsese",
         peliculas: []
     },
     {
@@ -4613,7 +4649,7 @@ const logrosDisponibles = [
     {
         id: "rey-del-mundo",
         nombre: "Rey del Mundo",
-        descripcion: "Superá el 70% de las películas de Leonardo Di Caprio",
+        descripcion: "Superá el 70% de las películas de Leonardo DiCaprio",
         icono: "🚢",
         condicion: (vistos) => porcentajeCategoriaVisto(vistos, "leonardo-dicaprio") > 70
     },
@@ -4899,6 +4935,7 @@ function abrirColeccion(colId) {
         'alfred-hitchcock': '.btn-filtro-hitchcock[data-tipo="1970"]',
         'david-fincher': '.btn-filtro-fincher[data-tipo="2020"]',
         'steven-spielberg': '.btn-filtro-spielberg[data-tipo="2020"]',
+        'martin-scorsese': '.btn-filtro-scorsese[data-tipo="2020"]',
         'green-lantern-hal-jordan': '.btn-filtro-gl-hal[data-tipo="origen"]',
         'nuevos-52-orden-lectura': '.btn-filtro-nuevos52[data-tipo="lanzamiento"]',
         'camino-heroe-principal': '.btn-filtro-camino-principal[data-tipo="batman"]',
@@ -4931,7 +4968,7 @@ function actualizarProgresoColeccion(colId) {
 
 // Igual que arriba, pero para fichas "carpeta" cuyo contenido no vive en
 // col.peliculas sino repartido en listaMedia bajo una misma categoría
-// (ej: Leonardo Di Caprio, Disney Animation)
+// (ej: Leonardo DiCaprio, Disney Animation)
 // ==========================================
 // FILTRO POR EDITORIAL (combinado con el de personaje/tanda)
 // ==========================================
@@ -5070,6 +5107,7 @@ function renderizarContenido() {
         "alfred-hitchcock": "seccion-alfred-hitchcock",
         "david-fincher": "seccion-david-fincher",
         "steven-spielberg": "seccion-steven-spielberg",
+        "martin-scorsese": "seccion-martin-scorsese",
         "green-lantern-hal-jordan": "seccion-green-lantern-hal-jordan",
         "nuevos-52-orden-lectura": "seccion-nuevos-52-orden-lectura",
         "post-crisis-dc": "seccion-post-crisis-dc",
@@ -6961,6 +6999,13 @@ if(btnVolverStevenSpielberg) {
     });
 }
 
+const btnVolverMartinScorsese = document.getElementById('btn-volver-martin-scorsese');
+if(btnVolverMartinScorsese) {
+    btnVolverMartinScorsese.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-directores'));
+    });
+}
+
 const btnVolverArkhamverse = document.getElementById('btn-volver-arkhamverse');
 if(btnVolverArkhamverse) {
     btnVolverArkhamverse.addEventListener('click', () => {
@@ -7465,6 +7510,23 @@ botonesFiltroSpielberg.forEach(boton => {
         this.classList.add('activo');
         const tipoElegido = this.getAttribute('data-tipo');
         const tarjetas = document.querySelectorAll('#seccion-steven-spielberg .tarjeta-media');
+
+        tarjetas.forEach(tarjeta => {
+            tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
+        });
+    });
+});
+
+// ==========================================
+// FILTROS "MARTIN SCORSESE" — por década
+// ==========================================
+const botonesFiltroScorsese = document.querySelectorAll('.btn-filtro-scorsese');
+botonesFiltroScorsese.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroScorsese.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const tipoElegido = this.getAttribute('data-tipo');
+        const tarjetas = document.querySelectorAll('#seccion-martin-scorsese .tarjeta-media');
 
         tarjetas.forEach(tarjeta => {
             tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
@@ -8895,13 +8957,13 @@ const gridsDatasets = {
         titulo: "Actores de Cine #1",
         filas: [
             { nombre: "Marvel Studios", tipo: "lista", titulos: ["Iron Man", "The Incredible Hulk", "Iron Man 2", "Thor", "Capitan America: First Avenger", "The Avengers", "Iron Man 3", "Thor: The Dark World", "Capitan America: The Winter Soldier", "Guardianes de La Galaxia", "Avengers: Era de Ultron", "Ant-Man", "Capitan America: Civil War", "Doctor Strange", "Guardianes de La Galaxia Vol. 2", "Spider-Man: Homecoming", "Thor: Ragnarok", "Avengers: Infinity War", "Ant-Man and The Wasp", "Capitana Marvel", "Avengers: Endgame", "Spider-Man: Far From Home", "Pantera Negra", "WandaVision", "The Falcon and The Winter Soldier", "Loki", "Black Widow", "Shang-Chi", "Eternals", "Hawkeye", "Spider-Man: No Way Home", "Moon Knight", "Doctor Strange in The Multiverse of Madness", "Ms. Marvel", "Thor: Love and Thunder", "Yo Soy Groot", "She-Hulk: Attorney At Law", "Werewolf By Night", "Black Panther: Wakanda Forever", "Ant-Man and The Wasp: Quantumania", "Guardianes de La Galaxia Vol. 3", "Echo", "Deadpool y Wolverine", "Capitan America: Brave New World", "Daredevil: Born Again", "Thunderbolts", "Fantastic Four: First Steps", "Eyes of Wakanda", "Secret Invasion", "Wonder Man", "Punisher: One Last Kill", "Spider-Man: Brand New Day"] },
-            { nombre: "DC Studios", tipo: "lista", titulos: [] },
-            { nombre: "Scorsese", tipo: "lista", titulos: [] }
+            { nombre: "DC Studios", tipo: "lista", titulos: ["The Suicide Squad", "Blue Beetle", "Peacemaker", "Creature Commandos", "Superman", "Supergirl"] },
+            { nombre: "Scorsese", tipo: "director", id: "martin-scorsese" }
         ],
         columnas: [
             { nombre: "Nolan", tipo: "director", id: "christopher-nolan" },
             { nombre: "Tarantino", tipo: "director", id: "tarantino" },
-            { nombre: "Academy Award", tipo: "lista", titulos: [] }
+            { nombre: "Academy Award", tipo: "personas", etiquetaConfirmacion: "🏆 Ganador/a del Oscar", nombres: ["Joaquin Phoenix", "Renée Zellweger", "Brad Pitt", "Laura Dern", "Anthony Hopkins", "Frances McDormand", "Daniel Kaluuya", "Yuh-Jung Youn", "Will Smith", "Jessica Chastain", "Troy Kotsur", "Ariana DeBose", "Brendan Fraser", "Michelle Yeoh", "Ke Huy Quan", "Jamie Lee Curtis", "Cillian Murphy", "Emma Stone", "Robert Downey Jr.", "Da'Vine Joy Randolph", "Adrien Brody", "Mikey Madison", "Kieran Culkin", "Zoe Saldaña", "Michael B. Jordan", "Jessie Buckley", "Sean Penn", "Amy Madigan", "Jeff Bridges", "Sandra Bullock", "Christoph Waltz", "Mo'Nique", "Colin Firth", "Natalie Portman", "Christian Bale", "Melissa Leo", "Jean Dujardin", "Meryl Streep", "Christopher Plummer", "Octavia Spencer", "Daniel Day-Lewis", "Jennifer Lawrence", "Anne Hathaway", "Matthew McConaughey", "Cate Blanchett", "Jared Leto", "Lupita Nyong'o", "Eddie Redmayne", "Julianne Moore", "J.K. Simmons", "Patricia Arquette", "Leonardo DiCaprio", "Brie Larson", "Mark Rylance", "Alicia Vikander", "Casey Affleck", "Mahershala Ali", "Viola Davis", "Gary Oldman", "Sam Rockwell", "Allison Janney", "Rami Malek", "Olivia Colman", "Regina King", "Kevin Spacey", "Hilary Swank", "Michael Caine", "Angelina Jolie", "Russell Crowe", "Julia Roberts", "Benicio del Toro", "Marcia Gay Harden", "Denzel Washington", "Halle Berry", "Jim Broadbent", "Jennifer Connelly", "Nicole Kidman", "Chris Cooper", "Catherine Zeta-Jones", "Charlize Theron", "Tim Robbins", "Jamie Foxx", "Morgan Freeman", "Philip Seymour Hoffman", "Reese Witherspoon", "George Clooney", "Rachel Weisz", "Forest Whitaker", "Helen Mirren", "Alan Arkin", "Jennifer Hudson", "Marion Cotillard", "Javier Bardem", "Tilda Swinton", "Kate Winslet", "Heath Ledger", "Penélope Cruz", "Jessica Tandy", "Brenda Fricker", "Jeremy Irons", "Kathy Bates", "Joe Pesci", "Whoopi Goldberg", "Jodie Foster", "Jack Palance", "Mercedes Ruehl", "Al Pacino", "Emma Thompson", "Gene Hackman", "Marisa Tomei", "Tom Hanks", "Holly Hunter", "Tommy Lee Jones", "Anna Paquin", "Jessica Lange", "Martin Landau", "Dianne Wiest", "Nicolas Cage", "Susan Sarandon", "Mira Sorvino", "Geoffrey Rush", "Cuba Gooding Jr.", "Juliette Binoche", "Jack Nicholson", "Helen Hunt", "Robin Williams", "Kim Basinger", "Roberto Benigni", "Gwyneth Paltrow", "James Coburn", "Judi Dench", "Dustin Hoffman", "Sally Field", "Melvyn Douglas", "Robert De Niro", "Sissy Spacek", "Timothy Hutton", "Mary Steenburgen", "Henry Fonda", "Katharine Hepburn", "John Gielgud", "Maureen Stapleton", "Ben Kingsley", "Louis Gossett Jr.", "Robert Duvall", "Shirley MacLaine", "Linda Hunt", "F. Murray Abraham", "Haing S. Ngor", "Peggy Ashcroft", "William Hurt", "Geraldine Page", "Don Ameche", "Anjelica Huston", "Paul Newman", "Marlee Matlin", "Michael Douglas", "Cher", "Sean Connery", "Olympia Dukakis", "Kevin Kline", "Geena Davis", "John Wayne", "Maggie Smith", "Gig Young", "Goldie Hawn", "George C. Scott", "Glenda Jackson", "John Mills", "Helen Hayes", "Jane Fonda", "Ben Johnson", "Cloris Leachman", "Marlon Brando", "Liza Minnelli", "Joel Grey", "Eileen Heckart", "Jack Lemmon", "John Houseman", "Tatum O'Neal", "Art Carney", "Ellen Burstyn", "Ingrid Bergman", "Louise Fletcher", "George Burns", "Lee Grant", "Peter Finch", "Faye Dunaway", "Jason Robards", "Beatrice Straight", "Richard Dreyfuss", "Diane Keaton", "Vanessa Redgrave", "Jon Voight", "Christopher Walken", "Charlton Heston", "Simone Signoret", "Hugh Griffith", "Shelley Winters", "Burt Lancaster", "Elizabeth Taylor", "Peter Ustinov", "Shirley Jones", "Maximilian Schell", "Sophia Loren", "George Chakiris", "Rita Moreno", "Gregory Peck", "Anne Bancroft", "Ed Begley", "Patty Duke", "Sidney Poitier", "Patricia Neal", "Margaret Rutherford", "Rex Harrison", "Julie Andrews", "Lila Kedrova", "Lee Marvin", "Julie Christie", "Martin Balsam", "Paul Scofield", "Walter Matthau", "Sandy Dennis", "Rod Steiger", "George Kennedy", "Estelle Parsons", "Cliff Robertson", "Barbra Streisand", "Jack Albertson", "Ruth Gordon", "Broderick Crawford", "Olivia de Havilland", "Dean Jagger", "Mercedes McCambridge", "José Ferrer", "Judy Holliday", "George Sanders", "Josephine Hull", "Humphrey Bogart", "Vivien Leigh", "Karl Malden", "Kim Hunter", "Gary Cooper", "Shirley Booth", "Anthony Quinn", "Gloria Grahame", "William Holden", "Audrey Hepburn", "Frank Sinatra", "Donna Reed", "Grace Kelly", "Edmond O'Brien", "Eva Marie Saint", "Ernest Borgnine", "Anna Magnani", "Jo Van Fleet", "Yul Brynner", "Dorothy Malone", "Alec Guinness", "Joanne Woodward", "Red Buttons", "Miyoshi Umeki", "David Niven", "Susan Hayward", "Burl Ives", "Wendy Hiller", "Robert Donat", "Thomas Mitchell", "Hattie McDaniel", "James Stewart", "Ginger Rogers", "Walter Brennan", "Jane Darwell", "Joan Fontaine", "Donald Crisp", "Mary Astor", "James Cagney", "Greer Garson", "Van Heflin", "Teresa Wright", "Paul Lukas", "Jennifer Jones", "Charles Coburn", "Katina Paxinou", "Bing Crosby", "Barry Fitzgerald", "Ethel Barrymore", "Ray Milland", "Joan Crawford", "James Dunn", "Anne Revere", "Fredric March", "Harold Russell", "Anne Baxter", "Ronald Colman", "Loretta Young", "Edmund Gwenn", "Celeste Holm", "Laurence Olivier", "Jane Wyman", "Walter Huston", "Claire Trevor", "Emil Jannings", "Janet Gaynor", "Warner Baxter", "Mary Pickford", "George Arliss", "Norma Shearer", "Lionel Barrymore", "Marie Dressler", "Wallace Beery", "Charles Laughton", "Clark Gable", "Claudette Colbert", "Victor McLaglen", "Bette Davis", "Paul Muni", "Luise Rainer", "Gale Sondergaard", "Spencer Tracy", "Joseph Schildkraut", "Alice Brady", "Fay Bainter"] }
         ],
         celdas: [
             [
@@ -8930,6 +8992,9 @@ let filaSeleccionadaGrilla = null;
 let columnaSeleccionadaGrilla = null;
 let erroresGrilla = 0;
 let grillaTerminada = false;
+let modoInfinitoGrilla = false; // false = Modo Clásico (máx. errores), true = Modo Libre
+let nombrePendienteGrilla = null; // nombre ya validado, esperando que el jugador elija en qué celda candidata va
+let celdasCandidatasGrilla = []; // [{fila, columna}, ...] cuando una respuesta sirve para más de una celda libre
 
 function renderizarSelectorGrillas() {
     const cont = document.getElementById('grilla-grillas-selector');
@@ -8956,21 +9021,42 @@ function abrirGrilla(datasetId) {
     const titulo = document.getElementById('titulo-grilla-jugar');
     if (titulo) titulo.textContent = `${dataset.titulo} 🔲`;
 
-    reiniciarGrilla();
+    mostrarSelectorModoGrilla();
     cambiarSeccion(document.getElementById('seccion-grilla-jugar'));
+}
+
+// Muestra la pantalla de "elegí cómo jugar" y oculta el tablero hasta que
+// se elija un modo (clásico o libre).
+function mostrarSelectorModoGrilla() {
+    const selector = document.getElementById('selector-modo-grilla');
+    const contenido = document.getElementById('contenido-grilla-juego');
+    if (selector) selector.classList.remove('oculto');
+    if (contenido) contenido.classList.add('oculto');
+}
+
+// Arranca (o reinicia) la partida ya con el modo elegido.
+function iniciarPartidaGrilla(infinito) {
+    modoInfinitoGrilla = infinito;
+    const selector = document.getElementById('selector-modo-grilla');
+    const contenido = document.getElementById('contenido-grilla-juego');
+    if (selector) selector.classList.add('oculto');
+    if (contenido) contenido.classList.remove('oculto');
+    reiniciarGrilla();
 }
 
 function reiniciarGrilla() {
     celdasResueltasGrilla = {};
     filaSeleccionadaGrilla = null;
     columnaSeleccionadaGrilla = null;
+    nombrePendienteGrilla = null;
+    celdasCandidatasGrilla = [];
     erroresGrilla = 0;
     grillaTerminada = false;
 
     const input = document.getElementById('input-grilla');
     const btnAdivinar = document.getElementById('btn-adivinar-grilla');
-    if (input) { input.value = ''; input.disabled = true; }
-    if (btnAdivinar) btnAdivinar.disabled = true;
+    if (input) { input.value = ''; input.disabled = false; input.placeholder = 'Escribí un nombre...'; }
+    if (btnAdivinar) btnAdivinar.disabled = false;
 
     const mensaje = document.getElementById('mensaje-grilla');
     if (mensaje) { mensaje.textContent = ''; mensaje.className = 'mensaje-elenco'; }
@@ -8990,7 +9076,7 @@ function reiniciarGrilla() {
 // Clave: nombre en minúsculas sin tildes (se normaliza igual que el resto
 // del juego). Valor: array de títulos de películas.
 const filmografiasGrilla = {
-    "robert downey jr.": ["Iron Man", "The Incredible Hulk", "Iron Man 2", "The Avengers", "Iron Man 3", "Avengers: Era de Ultron", "Capitan America: Civil War", "Spider-Man: Homecoming", "Avengers: Infinity War", "Avengers: Endgame"],
+    "robert downey jr.": ["Iron Man", "The Incredible Hulk", "Iron Man 2", "The Avengers", "Iron Man 3", "Avengers: Era de Ultron", "Capitan America: Civil War", "Spider-Man: Homecoming", "Avengers: Infinity War", "Avengers: Endgame", "Oppenheimer"],
     "gwyneth paltrow": ["Iron Man", "Iron Man 2", "The Avengers", "Iron Man 3", "Spider-Man: Homecoming", "Avengers: Infinity War", "Avengers: Endgame"],
     "terrence howard": ["Iron Man"],
     "jeff bridges": ["Iron Man"],
@@ -8998,15 +9084,15 @@ const filmografiasGrilla = {
     "faran tahir": ["Iron Man"],
     "leslie bibb": ["Iron Man", "Iron Man 2"],
     "clark gregg": ["Iron Man", "Iron Man 2", "Thor", "The Avengers", "Capitana Marvel"],
-    "samuel l. jackson": ["Iron Man", "Iron Man 2", "Thor", "Capitan America: First Avenger", "The Avengers", "Capitan America: The Winter Soldier", "Avengers: Era de Ultron", "Capitana Marvel", "Avengers: Endgame", "Spider-Man: Far From Home", "Secret Invasion"],
-    "jon favreau": ["Iron Man", "Iron Man 2", "Iron Man 3", "Spider-Man: Homecoming", "Avengers: Endgame", "Spider-Man: Far From Home", "Spider-Man: No Way Home", "Deadpool y Wolverine"],
+    "samuel l. jackson": ["Iron Man", "Iron Man 2", "Thor", "Capitan America: First Avenger", "The Avengers", "Capitan America: The Winter Soldier", "Avengers: Era de Ultron", "Capitana Marvel", "Avengers: Endgame", "Spider-Man: Far From Home", "Secret Invasion", "Pulp Fiction", "Jackie Brown", "Kill Bill Vol. 2", "Inglorious Basterds", "Django Unchained", "The Hateful Eight", "Goodfellas"],
+    "jon favreau": ["Iron Man", "Iron Man 2", "Iron Man 3", "Spider-Man: Homecoming", "Avengers: Endgame", "Spider-Man: Far From Home", "Spider-Man: No Way Home", "Deadpool y Wolverine", "The Wolf of Wall Street"],
     "paul bettany": ["Iron Man", "Iron Man 2", "The Avengers", "Iron Man 3", "Avengers: Era de Ultron", "Capitan America: Civil War", "Avengers: Infinity War", "WandaVision"],
     "stan lee": ["Iron Man", "The Incredible Hulk", "Iron Man 2", "Thor", "Capitan America: First Avenger", "The Avengers", "Iron Man 3", "Thor: The Dark World", "Capitan America: The Winter Soldier", "Guardianes de La Galaxia", "Avengers: Era de Ultron", "Ant-Man", "Capitan America: Civil War", "Doctor Strange", "Guardianes de La Galaxia Vol. 2", "Spider-Man: Homecoming", "Thor: Ragnarok", "Avengers: Infinity War", "Ant-Man and The Wasp", "Capitana Marvel", "Avengers: Endgame", "Pantera Negra"],
     "peter billingsley": ["Iron Man"],
     "tim guinee": ["Iron Man"],
     "edward norton": ["The Incredible Hulk"],
     "liv tyler": ["The Incredible Hulk", "Capitan America: Brave New World"],
-    "tim roth": ["The Incredible Hulk", "She-Hulk: Attorney At Law"],
+    "tim roth": ["The Incredible Hulk", "She-Hulk: Attorney At Law", "Reservoir Dogs", "Pulp Fiction", "The Hateful Eight"],
     "william hurt": ["The Incredible Hulk", "Capitan America: Civil War", "Avengers: Infinity War", "Avengers: Endgame", "Black Widow"],
     "tim blake nelson": ["The Incredible Hulk", "Capitan America: Brave New World"],
     "ty burrell": ["The Incredible Hulk"],
@@ -9016,9 +9102,9 @@ const filmografiasGrilla = {
     "paul soles": ["The Incredible Hulk"],
     "debora nascimento": ["The Incredible Hulk"],
     "martin starr": ["The Incredible Hulk", "Spider-Man: Homecoming", "Spider-Man: Far From Home", "Spider-Man: No Way Home"],
-    "michael kenneth williams": ["The Incredible Hulk"],
+    "michael kenneth williams": ["The Incredible Hulk", "Bringing Out the Dead"],
     "don cheadle": ["Iron Man 2", "Iron Man 3", "Avengers: Era de Ultron", "Capitan America: Civil War", "Avengers: Infinity War", "Avengers: Endgame", "The Falcon and The Winter Soldier", "Secret Invasion"],
-    "scarlett johansson": ["Iron Man 2", "The Avengers", "Capitan America: The Winter Soldier", "Avengers: Era de Ultron", "Capitan America: Civil War", "Avengers: Infinity War", "Avengers: Endgame", "Black Widow"],
+    "scarlett johansson": ["Iron Man 2", "The Avengers", "Capitan America: The Winter Soldier", "Avengers: Era de Ultron", "Capitan America: Civil War", "Avengers: Infinity War", "Avengers: Endgame", "Black Widow", "The Prestige"],
     "mickey rourke": ["Iron Man 2"],
     "sam rockwell": ["Iron Man 2"],
     "john slattery": ["Iron Man 2", "Ant-Man", "Capitan America: Civil War", "Avengers: Endgame"],
@@ -9031,10 +9117,10 @@ const filmografiasGrilla = {
     "anthony hopkins": ["Thor", "Thor: The Dark World", "Thor: Ragnarok"],
     "stellan skarsgard": ["Thor", "The Avengers", "Thor: The Dark World", "Avengers: Era de Ultron"],
     "kat dennings": ["Thor", "Thor: The Dark World", "WandaVision"],
-    "idris elba": ["Thor", "Thor: The Dark World", "Avengers: Era de Ultron", "Thor: Ragnarok", "Avengers: Infinity War", "Thor: Love and Thunder"],
+    "idris elba": ["Thor", "Thor: The Dark World", "Avengers: Era de Ultron", "Thor: Ragnarok", "Avengers: Infinity War", "Thor: Love and Thunder", "The Suicide Squad"],
     "colm feore": ["Thor"],
     "ray stevenson": ["Thor", "Thor: The Dark World", "Thor: Ragnarok"],
-    "tadanobu asano": ["Thor", "Thor: The Dark World", "Thor: Ragnarok"],
+    "tadanobu asano": ["Thor", "Thor: The Dark World", "Thor: Ragnarok", "Silence"],
     "josh dallas": ["Thor"],
     "jaimie alexander": ["Thor", "Thor: The Dark World", "Thor: Love and Thunder"],
     "rene russo": ["Thor", "Thor: The Dark World", "Avengers: Endgame"],
@@ -9050,18 +9136,18 @@ const filmografiasGrilla = {
     "toby jones": ["Capitan America: First Avenger", "Capitan America: The Winter Soldier"],
     "neal mcdonough": ["Capitan America: First Avenger"],
     "derek luke": ["Capitan America: First Avenger"],
-    "kenneth choi": ["Capitan America: First Avenger", "Spider-Man: Homecoming"],
+    "kenneth choi": ["Capitan America: First Avenger", "Spider-Man: Homecoming", "The Wolf of Wall Street"],
     "bruno ricci": ["Capitan America: First Avenger"],
     "jj feild": ["Capitan America: First Avenger"],
-    "mark ruffalo": ["The Avengers", "Avengers: Era de Ultron", "Thor: Ragnarok", "Avengers: Infinity War", "Avengers: Endgame", "Shang-Chi", "She-Hulk: Attorney At Law", "Spider-Man: Brand New Day"],
+    "mark ruffalo": ["The Avengers", "Avengers: Era de Ultron", "Thor: Ragnarok", "Avengers: Infinity War", "Avengers: Endgame", "Shang-Chi", "She-Hulk: Attorney At Law", "Spider-Man: Brand New Day", "Shutter Island"],
     "cobie smulders": ["The Avengers", "Capitan America: The Winter Soldier", "Avengers: Era de Ultron", "Avengers: Endgame", "Spider-Man: Far From Home", "Secret Invasion"],
     "alexis denisof": ["The Avengers"],
     "powers boothe": ["The Avengers"],
     "jenny agutter": ["The Avengers"],
-    "guy pearce": ["Iron Man 3"],
-    "rebecca hall": ["Iron Man 3"],
-    "ben kingsley": ["Iron Man 3", "Shang-Chi", "Wonder Man"],
-    "james badge dale": ["Iron Man 3"],
+    "guy pearce": ["Iron Man 3", "Memento"],
+    "rebecca hall": ["Iron Man 3", "The Prestige"],
+    "ben kingsley": ["Iron Man 3", "Shang-Chi", "Wonder Man", "Hugo", "Shutter Island"],
+    "james badge dale": ["Iron Man 3", "The Departed"],
     "stephanie szostak": ["Iron Man 3"],
     "ty simpkins": ["Iron Man 3", "Avengers: Endgame"],
     "william sadler": ["Iron Man 3"],
@@ -9071,7 +9157,7 @@ const filmografiasGrilla = {
     "adewale akinnuoye-agbaje": ["Thor: The Dark World"],
     "benicio del toro": ["Thor: The Dark World", "Guardianes de La Galaxia", "Avengers: Infinity War"],
     "anthony mackie": ["Capitan America: The Winter Soldier", "Avengers: Era de Ultron", "Ant-Man", "Capitan America: Civil War", "Avengers: Infinity War", "Avengers: Endgame", "The Falcon and The Winter Soldier", "Capitan America: Brave New World"],
-    "frank grillo": ["Capitan America: The Winter Soldier", "Capitan America: Civil War", "Avengers: Endgame"],
+    "frank grillo": ["Capitan America: The Winter Soldier", "Capitan America: Civil War", "Avengers: Endgame", "Peacemaker", "Creature Commandos", "Superman"],
     "emily vancamp": ["Capitan America: The Winter Soldier", "Capitan America: Civil War", "The Falcon and The Winter Soldier"],
     "maximiliano hernandez": ["Capitan America: The Winter Soldier"],
     "robert redford": ["Capitan America: The Winter Soldier", "Avengers: Endgame"],
@@ -9084,35 +9170,35 @@ const filmografiasGrilla = {
     "vin diesel": ["Guardianes de La Galaxia", "Guardianes de La Galaxia Vol. 2", "Avengers: Infinity War", "Avengers: Endgame", "Thor: Love and Thunder", "Yo Soy Groot", "Guardianes de La Galaxia Vol. 3"],
     "bradley cooper": ["Guardianes de La Galaxia", "Guardianes de La Galaxia Vol. 2", "Avengers: Infinity War", "Avengers: Endgame", "Thor: Love and Thunder", "Yo Soy Groot", "Guardianes de La Galaxia Vol. 3"],
     "lee pace": ["Guardianes de La Galaxia", "Capitana Marvel"],
-    "michael rooker": ["Guardianes de La Galaxia", "Guardianes de La Galaxia Vol. 2", "Guardianes de La Galaxia Vol. 3"],
+    "michael rooker": ["Guardianes de La Galaxia", "Guardianes de La Galaxia Vol. 2", "Guardianes de La Galaxia Vol. 3", "The Suicide Squad", "Creature Commandos"],
     "karen gillan": ["Guardianes de La Galaxia", "Guardianes de La Galaxia Vol. 2", "Avengers: Infinity War", "Avengers: Endgame", "Thor: Love and Thunder", "Guardianes de La Galaxia Vol. 3"],
     "djimon hounsou": ["Guardianes de La Galaxia", "Capitana Marvel"],
-    "john c. reilly": ["Guardianes de La Galaxia"],
+    "john c. reilly": ["Guardianes de La Galaxia", "The Aviator", "Gangs of New York"],
     "glenn close": ["Guardianes de La Galaxia"],
     "laura haddock": ["Guardianes de La Galaxia", "Guardianes de La Galaxia Vol. 2"],
-    "sean gunn": ["Guardianes de La Galaxia", "Guardianes de La Galaxia Vol. 2", "Thor: Love and Thunder", "Guardianes de La Galaxia Vol. 3"],
+    "sean gunn": ["Guardianes de La Galaxia", "Guardianes de La Galaxia Vol. 2", "Thor: Love and Thunder", "Guardianes de La Galaxia Vol. 3", "The Suicide Squad", "Creature Commandos", "Superman"],
     "peter serafinowicz": ["Guardianes de La Galaxia"],
-    "aaron taylor-johnson": ["Avengers: Era de Ultron"],
+    "aaron taylor-johnson": ["Avengers: Era de Ultron", "Tenet"],
     "elizabeth olsen": ["Avengers: Era de Ultron", "Capitan America: Civil War", "Avengers: Infinity War", "Avengers: Endgame", "WandaVision", "Doctor Strange in The Multiverse of Madness"],
     "james spader": ["Avengers: Era de Ultron"],
-    "andy serkis": ["Avengers: Era de Ultron", "Pantera Negra"],
+    "andy serkis": ["Avengers: Era de Ultron", "Pantera Negra", "The Prestige"],
     "julie delpy": ["Avengers: Era de Ultron"],
     "linda cardellini": ["Avengers: Era de Ultron", "Avengers: Endgame", "Hawkeye", "Guardianes de La Galaxia Vol. 3"],
     "paul rudd": ["Ant-Man", "Capitan America: Civil War", "Ant-Man and The Wasp", "Avengers: Endgame", "Ant-Man and The Wasp: Quantumania"],
     "evangeline lilly": ["Ant-Man", "Ant-Man and The Wasp", "Avengers: Endgame", "Ant-Man and The Wasp: Quantumania"],
     "corey stoll": ["Ant-Man", "Ant-Man and The Wasp: Quantumania"],
-    "bobby cannavale": ["Ant-Man", "Ant-Man and The Wasp"],
+    "bobby cannavale": ["Ant-Man", "Ant-Man and The Wasp", "The Irishman"],
     "michael pena": ["Ant-Man", "Ant-Man and The Wasp"],
     "tip t.i. harris": ["Ant-Man", "Ant-Man and The Wasp"],
     "wood harris": ["Ant-Man"],
     "judy greer": ["Ant-Man", "Ant-Man and The Wasp", "Guardianes de La Galaxia Vol. 3"],
-    "david dastmalchian": ["Ant-Man", "Ant-Man and The Wasp", "Ant-Man and The Wasp: Quantumania"],
+    "david dastmalchian": ["Ant-Man", "Ant-Man and The Wasp", "Ant-Man and The Wasp: Quantumania", "The Suicide Squad", "The Dark Knight", "Oppenheimer"],
     "michael douglas": ["Ant-Man", "Ant-Man and The Wasp", "Avengers: Endgame", "Ant-Man and The Wasp: Quantumania"],
     "abby ryder fortson": ["Ant-Man", "Ant-Man and The Wasp"],
-    "martin donovan": ["Ant-Man"],
+    "martin donovan": ["Ant-Man", "Insomnia", "Tenet"],
     "chadwick boseman": ["Capitan America: Civil War", "Avengers: Infinity War", "Avengers: Endgame", "Pantera Negra"],
-    "tom holland": ["Capitan America: Civil War", "Spider-Man: Homecoming", "Avengers: Infinity War", "Avengers: Endgame", "Spider-Man: Far From Home", "Spider-Man: No Way Home", "Spider-Man: Brand New Day"],
-    "daniel bruhl": ["Capitan America: Civil War", "The Falcon and The Winter Soldier"],
+    "tom holland": ["Capitan America: Civil War", "Spider-Man: Homecoming", "Avengers: Infinity War", "Avengers: Endgame", "Spider-Man: Far From Home", "Spider-Man: No Way Home", "Spider-Man: Brand New Day", "The Odyssey"],
+    "daniel bruhl": ["Capitan America: Civil War", "The Falcon and The Winter Soldier", "Inglorious Basterds"],
     "martin freeman": ["Capitan America: Civil War", "Pantera Negra", "Black Panther: Wakanda Forever", "Secret Invasion"],
     "marisa tomei": ["Capitan America: Civil War", "Spider-Man: Homecoming", "Avengers: Endgame", "Spider-Man: Far From Home", "Spider-Man: No Way Home", "Spider-Man: Brand New Day"],
     "hope davis": ["Capitan America: Civil War"],
@@ -9123,7 +9209,7 @@ const filmografiasGrilla = {
     "benedict wong": ["Doctor Strange", "Avengers: Infinity War", "Avengers: Endgame", "Shang-Chi", "Spider-Man: No Way Home", "Doctor Strange in The Multiverse of Madness", "She-Hulk: Attorney At Law"],
     "mads mikkelsen": ["Doctor Strange"],
     "tilda swinton": ["Doctor Strange", "Avengers: Endgame"],
-    "michael stuhlbarg": ["Doctor Strange", "Doctor Strange in The Multiverse of Madness"],
+    "michael stuhlbarg": ["Doctor Strange", "Doctor Strange in The Multiverse of Madness", "Hugo"],
     "benjamin bratt": ["Doctor Strange"],
     "scott adkins": ["Doctor Strange"],
     "zara phythian": ["Doctor Strange"],
@@ -9131,17 +9217,17 @@ const filmografiasGrilla = {
     "mark anthony brighton": ["Doctor Strange"],
     "topo wresniwiro": ["Doctor Strange"],
     "pom klementieff": ["Guardianes de La Galaxia Vol. 2", "Avengers: Infinity War", "Avengers: Endgame", "Thor: Love and Thunder", "Guardianes de La Galaxia Vol. 3"],
-    "sylvester stallone": ["Guardianes de La Galaxia Vol. 2", "Guardianes de La Galaxia Vol. 3"],
-    "kurt russell": ["Guardianes de La Galaxia Vol. 2"],
-    "elizabeth debicki": ["Guardianes de La Galaxia Vol. 2", "Guardianes de La Galaxia Vol. 3"],
+    "sylvester stallone": ["Guardianes de La Galaxia Vol. 2", "Guardianes de La Galaxia Vol. 3", "The Suicide Squad"],
+    "kurt russell": ["Guardianes de La Galaxia Vol. 2", "Death Proof", "The Hateful Eight", "Once Upon a Time in Hollywood"],
+    "elizabeth debicki": ["Guardianes de La Galaxia Vol. 2", "Guardianes de La Galaxia Vol. 3", "Tenet"],
     "chris sullivan": ["Guardianes de La Galaxia Vol. 2"],
     "tommy flanagan": ["Guardianes de La Galaxia Vol. 2"],
     "michelle yeoh": ["Guardianes de La Galaxia Vol. 2", "Shang-Chi"],
-    "ving rhames": ["Guardianes de La Galaxia Vol. 2"],
+    "ving rhames": ["Guardianes de La Galaxia Vol. 2", "Pulp Fiction", "Bringing Out the Dead"],
     "miley cyrus": ["Guardianes de La Galaxia Vol. 2"],
     "david hasselhoff": ["Guardianes de La Galaxia Vol. 2"],
-    "michael keaton": ["Spider-Man: Homecoming"],
-    "zendaya": ["Spider-Man: Homecoming", "Avengers: Endgame", "Spider-Man: Far From Home", "Spider-Man: No Way Home", "Spider-Man: Brand New Day"],
+    "michael keaton": ["Spider-Man: Homecoming", "Jackie Brown"],
+    "zendaya": ["Spider-Man: Homecoming", "Avengers: Endgame", "Spider-Man: Far From Home", "Spider-Man: No Way Home", "Spider-Man: Brand New Day", "The Odyssey"],
     "jacob batalon": ["Spider-Man: Homecoming", "Avengers: Endgame", "Spider-Man: Far From Home", "Spider-Man: No Way Home", "Spider-Man: Brand New Day"],
     "laura harrier": ["Spider-Man: Homecoming"],
     "tony revolori": ["Spider-Man: Homecoming", "Spider-Man: Far From Home", "Spider-Man: No Way Home"],
@@ -9152,14 +9238,14 @@ const filmografiasGrilla = {
     "hannibal buress": ["Spider-Man: Homecoming", "Spider-Man: No Way Home"],
     "michael chernus": ["Spider-Man: Homecoming"],
     "logan marshall-green": ["Spider-Man: Homecoming"],
-    "cate blanchett": ["Thor: Ragnarok"],
+    "cate blanchett": ["Thor: Ragnarok", "The Aviator"],
     "jeff goldblum": ["Thor: Ragnarok"],
     "tessa thompson": ["Thor: Ragnarok", "Avengers: Endgame", "Thor: Love and Thunder"],
     "karl urban": ["Thor: Ragnarok"],
-    "taika waititi": ["Thor: Ragnarok", "Avengers: Endgame", "Thor: Love and Thunder"],
+    "taika waititi": ["Thor: Ragnarok", "Avengers: Endgame", "Thor: Love and Thunder", "The Suicide Squad"],
     "rachel house": ["Thor: Ragnarok"],
     "clancy brown": ["Thor: Ragnarok"],
-    "matt damon": ["Thor: Ragnarok", "Thor: Love and Thunder"],
+    "matt damon": ["Thor: Ragnarok", "Thor: Love and Thunder", "Interstellar", "Oppenheimer", "The Odyssey", "The Departed"],
     "luke hemsworth": ["Thor: Ragnarok", "Thor: Love and Thunder"],
     "sam neill": ["Thor: Ragnarok", "Thor: Love and Thunder"],
     "danai gurira": ["Avengers: Infinity War", "Avengers: Endgame", "Pantera Negra", "Black Panther: Wakanda Forever", "Eyes of Wakanda"],
@@ -9170,17 +9256,17 @@ const filmografiasGrilla = {
     "terry notary": ["Avengers: Infinity War"],
     "michael james shaw": ["Avengers: Infinity War"],
     "ross marquand": ["Avengers: Infinity War", "Avengers: Endgame"],
-    "walton goggins": ["Ant-Man and The Wasp"],
+    "walton goggins": ["Ant-Man and The Wasp", "Django Unchained", "The Hateful Eight"],
     "hannah john-kamen": ["Ant-Man and The Wasp", "Thunderbolts"],
     "randall park": ["Ant-Man and The Wasp", "WandaVision", "Ant-Man and The Wasp: Quantumania"],
-    "michelle pfeiffer": ["Ant-Man and The Wasp", "Avengers: Endgame", "Ant-Man and The Wasp: Quantumania"],
+    "michelle pfeiffer": ["Ant-Man and The Wasp", "Avengers: Endgame", "Ant-Man and The Wasp: Quantumania", "The Age of Innocence"],
     "laurence fishburne": ["Ant-Man and The Wasp"],
     "brie larson": ["Capitana Marvel", "Avengers: Endgame", "Shang-Chi", "Ms. Marvel"],
-    "ben mendelsohn": ["Capitana Marvel", "Spider-Man: Far From Home", "Secret Invasion"],
+    "ben mendelsohn": ["Capitana Marvel", "Spider-Man: Far From Home", "Secret Invasion", "The Dark Knight Rises"],
     "lashana lynch": ["Capitana Marvel", "Doctor Strange in The Multiverse of Madness"],
     "gemma chan": ["Capitana Marvel", "Eternals"],
     "annette bening": ["Capitana Marvel"],
-    "jude law": ["Capitana Marvel"],
+    "jude law": ["Capitana Marvel", "The Aviator", "Hugo"],
     "rune temte": ["Capitana Marvel"],
     "algenis perez soto": ["Capitana Marvel"],
     "chuku modu": ["Capitana Marvel"],
@@ -9188,7 +9274,7 @@ const filmografiasGrilla = {
     "colin ford": ["Capitana Marvel"],
     "angela bassett": ["Avengers: Endgame", "Pantera Negra", "Black Panther: Wakanda Forever"],
     "hiroyuki sanada": ["Avengers: Endgame"],
-    "james darcy": ["Avengers: Endgame"],
+    "james darcy": ["Avengers: Endgame", "Dunkirk", "Oppenheimer"],
     "joe russo": ["Avengers: Endgame"],
     "lexi rabe": ["Avengers: Endgame"],
     "j.b. smoove": ["Spider-Man: Far From Home", "Spider-Man: No Way Home"],
@@ -9200,12 +9286,12 @@ const filmografiasGrilla = {
     "j.k. simmons": ["Spider-Man: Far From Home", "Spider-Man: No Way Home"],
     "sharon blynn": ["Spider-Man: Far From Home"],
     "michael b. jordan": ["Pantera Negra", "Black Panther: Wakanda Forever"],
-    "lupita nyongo": ["Pantera Negra", "Black Panther: Wakanda Forever"],
+    "lupita nyongo": ["Pantera Negra", "Black Panther: Wakanda Forever", "The Odyssey"],
     "daniel kaluuya": ["Pantera Negra"],
     "letitia wright": ["Pantera Negra", "Black Panther: Wakanda Forever"],
     "winston duke": ["Pantera Negra", "Black Panther: Wakanda Forever"],
     "sterling k. brown": ["Pantera Negra"],
-    "forest whitaker": ["Pantera Negra"],
+    "forest whitaker": ["Pantera Negra", "The Color of Money"],
     "john kani": ["Pantera Negra"],
     "florence kasumba": ["Pantera Negra", "The Falcon and The Winter Soldier", "Black Panther: Wakanda Forever"],
     "sydelle noel": ["Pantera Negra"],
@@ -9244,16 +9330,16 @@ const filmografiasGrilla = {
     "sasha lane": ["Loki"],
     "jack veal": ["Loki"],
     "deobia oparei": ["Loki"],
-    "richard e. grant": ["Loki"],
+    "richard e. grant": ["Loki", "The Age of Innocence"],
     "rafael casal": ["Loki"],
     "kate dickie": ["Loki"],
     "liz carr": ["Loki"],
     "neil ellice": ["Loki"],
-    "florence pugh": ["Black Widow", "Hawkeye", "Thunderbolts", "Spider-Man: Brand New Day"],
-    "david harbour": ["Black Widow", "Thunderbolts"],
+    "florence pugh": ["Black Widow", "Hawkeye", "Thunderbolts", "Spider-Man: Brand New Day", "Oppenheimer"],
+    "david harbour": ["Black Widow", "Thunderbolts", "Creature Commandos"],
     "o-t fagbenle": ["Black Widow"],
     "olga kurylenko": ["Black Widow", "Thunderbolts"],
-    "ray winstone": ["Black Widow"],
+    "ray winstone": ["Black Widow", "Hugo", "The Departed"],
     "rachel weisz": ["Black Widow", "Thunderbolts"],
     "ever anderson": ["Black Widow"],
     "violet mcgraw": ["Black Widow", "Thunderbolts"],
@@ -9278,14 +9364,14 @@ const filmografiasGrilla = {
     "lia mchugh": ["Eternals"],
     "brian tyree henry": ["Eternals"],
     "lauren ridloff": ["Eternals"],
-    "barry keoghan": ["Eternals"],
+    "barry keoghan": ["Eternals", "Dunkirk"],
     "don lee": ["Eternals"],
     "kit harington": ["Eternals"],
     "salma hayek": ["Eternals"],
     "angelina jolie": ["Eternals"],
     "harish patel": ["Eternals"],
     "bill skarsgard": ["Eternals"],
-    "harry styles": ["Eternals"],
+    "harry styles": ["Eternals", "Dunkirk"],
     "patton oswalt": ["Eternals"],
     "mahershala ali": ["Eternals"],
     "hailee steinfeld": ["Hawkeye"],
@@ -9295,22 +9381,22 @@ const filmografiasGrilla = {
     "aleks paunovic": ["Hawkeye"],
     "piotr adamczyk": ["Hawkeye"],
     "simon callow": ["Hawkeye"],
-    "vera farmiga": ["Hawkeye"],
+    "vera farmiga": ["Hawkeye", "The Departed"],
     "alaqua cox": ["Hawkeye", "Echo"],
     "zahn mcclarnon": ["Hawkeye", "Echo"],
     "vincent donofrio": ["Hawkeye", "Echo", "Daredevil: Born Again"],
     "cade woodward": ["Hawkeye"],
-    "jamie foxx": ["Spider-Man: No Way Home"],
-    "willem dafoe": ["Spider-Man: No Way Home"],
+    "jamie foxx": ["Spider-Man: No Way Home", "Django Unchained"],
+    "willem dafoe": ["Spider-Man: No Way Home", "The Last Temptation of Christ", "The Aviator"],
     "alfred molina": ["Spider-Man: No Way Home"],
     "alfredo flores": ["Spider-Man: No Way Home"],
     "thomas haden church": ["Spider-Man: No Way Home"],
     "rhys ifans": ["Spider-Man: No Way Home"],
     "tobey maguire": ["Spider-Man: No Way Home"],
-    "andrew garfield": ["Spider-Man: No Way Home"],
-    "jorge lendeborg jr.": ["Spider-Man: No Way Home"],
+    "andrew garfield": ["Spider-Man: No Way Home", "Silence"],
+    "jorge lendeborg jr.": ["Spider-Man: No Way Home", "Blue Beetle"],
     "charlie cox": ["Spider-Man: No Way Home", "She-Hulk: Attorney At Law", "Echo", "Daredevil: Born Again"],
-    "tom hardy": ["Spider-Man: No Way Home"],
+    "tom hardy": ["Spider-Man: No Way Home", "Inception", "The Dark Knight Rises", "Dunkirk"],
     "oscar isaac": ["Moon Knight"],
     "ethan hawke": ["Moon Knight"],
     "may calamawy": ["Moon Knight"],
@@ -9330,7 +9416,7 @@ const filmografiasGrilla = {
     "john krasinski": ["Doctor Strange in The Multiverse of Madness"],
     "patrick stewart": ["Doctor Strange in The Multiverse of Madness"],
     "anson mount": ["Doctor Strange in The Multiverse of Madness"],
-    "charlize theron": ["Doctor Strange in The Multiverse of Madness"],
+    "charlize theron": ["Doctor Strange in The Multiverse of Madness", "The Odyssey"],
     "bruce campbell": ["Doctor Strange in The Multiverse of Madness"],
     "sheila atim": ["Doctor Strange in The Multiverse of Madness"],
     "adam hugill": ["Doctor Strange in The Multiverse of Madness"],
@@ -9351,7 +9437,7 @@ const filmografiasGrilla = {
     "fawad khan": ["Ms. Marvel"],
     "aramis knight": ["Ms. Marvel"],
     "farhan akhtar": ["Ms. Marvel"],
-    "christian bale": ["Thor: Love and Thunder"],
+    "christian bale": ["Thor: Love and Thunder", "Batman Begins", "The Prestige", "The Dark Knight", "The Dark Knight Rises"],
     "russell crowe": ["Thor: Love and Thunder"],
     "melissa mccarthy": ["Thor: Love and Thunder"],
     "ben falcone": ["Thor: Love and Thunder"],
@@ -9379,7 +9465,7 @@ const filmografiasGrilla = {
     "megan thee stallion": ["She-Hulk: Attorney At Law"],
     "gael garcia bernal": ["Werewolf By Night"],
     "laura donnelly": ["Werewolf By Night"],
-    "harriet sansom harris": ["Werewolf By Night"],
+    "harriet sansom harris": ["Werewolf By Night", "Memento"],
     "kirk r. thatcher": ["Werewolf By Night"],
     "eugenie bondurant": ["Werewolf By Night"],
     "leonardo nam": ["Werewolf By Night"],
@@ -9404,26 +9490,26 @@ const filmografiasGrilla = {
     "james cutler": ["Ant-Man and The Wasp: Quantumania"],
     "mike wood": ["Ant-Man and The Wasp: Quantumania"],
     "ruben rabasa": ["Ant-Man and The Wasp: Quantumania"],
-    "chukwudi iwuji": ["Guardianes de La Galaxia Vol. 3"],
+    "chukwudi iwuji": ["Guardianes de La Galaxia Vol. 3", "Peacemaker"],
     "will poulter": ["Guardianes de La Galaxia Vol. 3"],
-    "maria bakalova": ["Guardianes de La Galaxia Vol. 3"],
+    "maria bakalova": ["Guardianes de La Galaxia Vol. 3", "Creature Commandos"],
     "asim chaudhry": ["Guardianes de La Galaxia Vol. 3"],
-    "mikaela hoover": ["Guardianes de La Galaxia Vol. 3"],
-    "nathan fillion": ["Guardianes de La Galaxia Vol. 3"],
-    "daniela melchior": ["Guardianes de La Galaxia Vol. 3"],
+    "mikaela hoover": ["Guardianes de La Galaxia Vol. 3", "The Suicide Squad", "Superman"],
+    "nathan fillion": ["Guardianes de La Galaxia Vol. 3", "The Suicide Squad", "Superman"],
+    "daniela melchior": ["Guardianes de La Galaxia Vol. 3", "The Suicide Squad"],
     "michael rosenbaum": ["Guardianes de La Galaxia Vol. 3"],
     "miriam shor": ["Guardianes de La Galaxia Vol. 3"],
-    "pete davidson": ["Guardianes de La Galaxia Vol. 3"],
+    "pete davidson": ["Guardianes de La Galaxia Vol. 3", "The Suicide Squad"],
     "chaske spencer": ["Echo"],
-    "tantoo cardinal": ["Echo"],
+    "tantoo cardinal": ["Echo", "Killers of the Flower Moon"],
     "devery jacobs": ["Echo"],
     "cody lightning": ["Echo"],
     "graham greene": ["Echo"],
-    "andrew howard": ["Echo"],
+    "andrew howard": ["Echo", "Tenet"],
     "katarina ziervogel": ["Echo"],
     "darnell besaw": ["Echo"],
     "ryan reynolds": ["Deadpool y Wolverine"],
-    "hugh jackman": ["Deadpool y Wolverine"],
+    "hugh jackman": ["Deadpool y Wolverine", "The Prestige"],
     "emma corrin": ["Deadpool y Wolverine"],
     "matthew macfadyen": ["Deadpool y Wolverine"],
     "morena baccarin": ["Deadpool y Wolverine"],
@@ -9438,12 +9524,12 @@ const filmografiasGrilla = {
     "aaron stanford": ["Deadpool y Wolverine"],
     "tyler mane": ["Deadpool y Wolverine"],
     "henry cavill": ["Deadpool y Wolverine"],
-    "channing tatum": ["Deadpool y Wolverine"],
+    "channing tatum": ["Deadpool y Wolverine", "The Hateful Eight"],
     "wesley snipes": ["Deadpool y Wolverine"],
     "jennifer garner": ["Deadpool y Wolverine"],
     "dafne keen": ["Deadpool y Wolverine"],
     "blake lively": ["Deadpool y Wolverine"],
-    "matthew mcconaughey": ["Deadpool y Wolverine"],
+    "matthew mcconaughey": ["Deadpool y Wolverine", "Interstellar", "The Wolf of Wall Street"],
     "harrison ford": ["Capitan America: Brave New World"],
     "shira haas": ["Capitan America: Brave New World"],
     "giancarlo esposito": ["Capitan America: Brave New World"],
@@ -9452,7 +9538,7 @@ const filmografiasGrilla = {
     "takehiro hira": ["Capitan America: Brave New World"],
     "rachael markarian": ["Capitan America: Brave New World"],
     "phuong kubacki": ["Capitan America: Brave New World"],
-    "jon bernthal": ["Daredevil: Born Again", "Punisher: One Last Kill", "Spider-Man: Brand New Day"],
+    "jon bernthal": ["Daredevil: Born Again", "Punisher: One Last Kill", "Spider-Man: Brand New Day", "The Odyssey", "The Wolf of Wall Street"],
     "deborah ann woll": ["Daredevil: Born Again", "Punisher: One Last Kill"],
     "elden henson": ["Daredevil: Born Again"],
     "wilson bethel": ["Daredevil: Born Again"],
@@ -9471,7 +9557,7 @@ const filmografiasGrilla = {
     "krysten ritter": ["Daredevil: Born Again"],
     "lewis pullman": ["Thunderbolts"],
     "geraldine viswanathan": ["Thunderbolts"],
-    "wendell pierce": ["Thunderbolts"],
+    "wendell pierce": ["Thunderbolts", "Superman"],
     "chris bauer": ["Thunderbolts"],
     "alexa swinton": ["Thunderbolts"],
     "eric lange": ["Thunderbolts"],
@@ -9528,13 +9614,13 @@ const filmografiasGrilla = {
     "michael epp": ["Secret Invasion"],
     "yahya abdul-mateen ii": ["Wonder Man"],
     "x mayo": ["Wonder Man"],
-    "zlatko buric": ["Wonder Man"],
+    "zlatko buric": ["Wonder Man", "Superman"],
     "demetrius grosse": ["Wonder Man"],
     "ed harris": ["Wonder Man"],
     "olivia thirlby": ["Wonder Man"],
     "byron bowers": ["Wonder Man"],
     "josh gad": ["Wonder Man"],
-    "joe pantoliano": ["Wonder Man"],
+    "joe pantoliano": ["Wonder Man", "Memento"],
     "lauren glazier": ["Wonder Man"],
     "shola adewusi": ["Wonder Man"],
     "bechir sylvain": ["Wonder Man"],
@@ -9562,6 +9648,921 @@ const filmografiasGrilla = {
     "johnny myers": ["Spider-Man: Brand New Day"],
     "billy clements": ["Spider-Man: Brand New Day"],
     "eman esfandi": ["Spider-Man: Brand New Day"],
+    "margot robbie": ["The Suicide Squad", "Once Upon a Time in Hollywood", "The Wolf of Wall Street"],
+    "john cena": ["The Suicide Squad", "Peacemaker"],
+    "joel kinnaman": ["The Suicide Squad"],
+    "viola davis": ["The Suicide Squad", "Peacemaker", "Creature Commandos"],
+    "jai courtney": ["The Suicide Squad"],
+    "peter capaldi": ["The Suicide Squad"],
+    "alice braga": ["The Suicide Squad"],
+    "flula borg": ["The Suicide Squad"],
+    "mayling ng": ["The Suicide Squad"],
+    "steve agee": ["The Suicide Squad", "Peacemaker", "Creature Commandos"],
+    "joaquin cosio": ["The Suicide Squad"],
+    "juan diego botto": ["The Suicide Squad"],
+    "storm reid": ["The Suicide Squad"],
+    "julio cesar ruiz": ["The Suicide Squad"],
+    "tinashe kajese": ["The Suicide Squad"],
+    "jennifer holland": ["The Suicide Squad", "Peacemaker"],
+    "dee bradley baker": ["The Suicide Squad"],
+    "xolo mariduena": ["Blue Beetle"],
+    "bruna marquezine": ["Blue Beetle"],
+    "susan sarandon": ["Blue Beetle"],
+    "george lopez": ["Blue Beetle"],
+    "adriana barraza": ["Blue Beetle"],
+    "damian alcazar": ["Blue Beetle"],
+    "elpidia carrillo": ["Blue Beetle"],
+    "belissa escobedo": ["Blue Beetle"],
+    "raoul max trujillo": ["Blue Beetle"],
+    "harvey guillen": ["Blue Beetle"],
+    "becky g": ["Blue Beetle"],
+    "modesto lacen": ["Blue Beetle"],
+    "eyra aguero joubert": ["Blue Beetle"],
+    "gabrielle ortiz": ["Blue Beetle"],
+    "carlos ponce": ["Blue Beetle"],
+    "bobby mcgruther": ["Blue Beetle"],
+    "danielle brooks": ["Peacemaker"],
+    "freddie stroma": ["Peacemaker"],
+    "robert patrick": ["Peacemaker"],
+    "nhut le": ["Peacemaker"],
+    "lochlyn munro": ["Peacemaker"],
+    "annie chang": ["Peacemaker"],
+    "christopher heyerdahl": ["Peacemaker"],
+    "elizabeth ludlow": ["Peacemaker"],
+    "rizwan manji": ["Peacemaker"],
+    "alison araya": ["Peacemaker"],
+    "lenny jacobson": ["Peacemaker"],
+    "mel fair": ["Peacemaker"],
+    "sol rodriguez": ["Peacemaker"],
+    "tim meadows": ["Peacemaker"],
+    "indira varma": ["Creature Commandos"],
+    "zoe chao": ["Creature Commandos"],
+    "alan tudyk": ["Creature Commandos", "Superman"],
+    "anya chalotra": ["Creature Commandos"],
+    "benjamin byron davis": ["Creature Commandos"],
+    "gregg henry": ["Creature Commandos"],
+    "david corenswet": ["Superman", "Supergirl"],
+    "rachel brosnahan": ["Superman"],
+    "nicholas hoult": ["Superman"],
+    "edi gathegi": ["Superman"],
+    "anthony carrigan": ["Superman"],
+    "isabela merced": ["Superman"],
+    "skyler gisondo": ["Superman"],
+    "sara sampaio": ["Superman"],
+    "maria gabriela de faria": ["Superman"],
+    "pruitt taylor vince": ["Superman"],
+    "neva howell": ["Superman"],
+    "beck bennett": ["Superman"],
+    "milly alcock": ["Superman", "Supergirl"],
+    "terence rosemore": ["Superman"],
+    "will reeve": ["Superman"],
+    "matthias schoenaerts": ["Supergirl"],
+    "eve ridley": ["Supergirl"],
+    "david krumholtz": ["Supergirl", "Oppenheimer"],
+    "emily beecham": ["Supergirl"],
+    "jason momoa": ["Supergirl"],
+    "ferdinand kingsley": ["Supergirl"],
+    "diarmaid murtagh": ["Supergirl"],
+    "clara rosager": ["Supergirl"],
+    "heather agyepong": ["Supergirl"],
+    "alice hewkin": ["Supergirl"],
+    "seth rogen": ["Supergirl"],
+    "kadiff kirwan": ["Supergirl"],
+    "charlissa teixeira": ["Supergirl"],
+    "harvey keitel": ["Reservoir Dogs", "Pulp Fiction", "Inglorious Basterds", "Who's That Knocking at My Door", "Taxi Driver", "Alice Doesn't Live Here Anymore", "Mean Streets", "The Last Temptation of Christ", "The Irishman"],
+    "michael madsen": ["Reservoir Dogs", "Kill Bill Vol. 1", "Kill Bill Vol. 2", "The Hateful Eight", "Once Upon a Time in Hollywood"],
+    "chris penn": ["Reservoir Dogs"],
+    "steve buscemi": ["Reservoir Dogs", "Pulp Fiction"],
+    "lawrence tierney": ["Reservoir Dogs"],
+    "quentin tarantino": ["Reservoir Dogs", "Pulp Fiction", "Jackie Brown", "Kill Bill Vol. 1", "Kill Bill Vol. 2", "Death Proof", "Inglorious Basterds", "Django Unchained", "The Hateful Eight", "Once Upon a Time in Hollywood"],
+    "edward bunker": ["Reservoir Dogs"],
+    "randy brooks": ["Reservoir Dogs"],
+    "kirk baltz": ["Reservoir Dogs"],
+    "steven wright": ["Reservoir Dogs"],
+    "michael sottile": ["Reservoir Dogs"],
+    "robert ruth": ["Reservoir Dogs"],
+    "lawrence bender": ["Reservoir Dogs", "Kill Bill Vol. 2"],
+    "linda kaye": ["Reservoir Dogs"],
+    "suzanne celentano": ["Reservoir Dogs"],
+    "david steen": ["Reservoir Dogs", "Django Unchained"],
+    "tony cosmo": ["Reservoir Dogs"],
+    "stevo polyi": ["Reservoir Dogs"],
+    "laurie latham": ["Reservoir Dogs"],
+    "maria strova": ["Reservoir Dogs"],
+    "burr steers": ["Reservoir Dogs", "Pulp Fiction"],
+    "craig hamann": ["Reservoir Dogs"],
+    "john travolta": ["Pulp Fiction"],
+    "uma thurman": ["Pulp Fiction", "Kill Bill Vol. 1", "Kill Bill Vol. 2"],
+    "bruce willis": ["Pulp Fiction"],
+    "amanda plummer": ["Pulp Fiction"],
+    "maria de medeiros": ["Pulp Fiction"],
+    "eric stoltz": ["Pulp Fiction"],
+    "rosanna arquette": ["Pulp Fiction", "After Hours"],
+    "christopher walken": ["Pulp Fiction"],
+    "peter greene": ["Pulp Fiction"],
+    "duane whitaker": ["Pulp Fiction"],
+    "phil lamarr": ["Pulp Fiction"],
+    "frank whaley": ["Pulp Fiction"],
+    "bronagh gallagher": ["Pulp Fiction"],
+    "paul calderon": ["Pulp Fiction"],
+    "stephen hibbert": ["Pulp Fiction"],
+    "angela jones": ["Pulp Fiction"],
+    "alexis arquette": ["Pulp Fiction"],
+    "julia sweeney": ["Pulp Fiction"],
+    "kathy griffin": ["Pulp Fiction"],
+    "joseph pilato": ["Pulp Fiction"],
+    "emil sitka": ["Pulp Fiction"],
+    "brenda hillhouse": ["Pulp Fiction"],
+    "susan griffiths": ["Pulp Fiction"],
+    "pam grier": ["Jackie Brown"],
+    "robert forster": ["Jackie Brown"],
+    "bridget fonda": ["Jackie Brown"],
+    "robert de niro": ["Jackie Brown", "New York", "New York", "Taxi Driver", "Mean Streets", "The King of Comedy", "Raging Bull", "Casino", "Cape Fear", "Goodfellas", "Killers of the Flower Moon", "The Irishman"],
+    "michael bowen": ["Jackie Brown", "Kill Bill Vol. 1", "Kill Bill Vol. 2", "Django Unchained"],
+    "chris tucker": ["Jackie Brown"],
+    "lisagay hamilton": ["Jackie Brown"],
+    "tommy tiny lister jr.": ["Jackie Brown"],
+    "hattie winston": ["Jackie Brown"],
+    "sid haig": ["Jackie Brown", "Kill Bill Vol. 2"],
+    "aimee graham": ["Jackie Brown"],
+    "ellis williams": ["Jackie Brown"],
+    "tangie ambrose": ["Jackie Brown"],
+    "tisha campbell": ["Jackie Brown"],
+    "gillian iliana waters": ["Jackie Brown"],
+    "diana uribe": ["Jackie Brown"],
+    "rene assa": ["Jackie Brown"],
+    "michelle berube": ["Jackie Brown"],
+    "laura lovelace": ["Jackie Brown"],
+    "van ness highsmith": ["Jackie Brown"],
+    "michael mauldin": ["Jackie Brown"],
+    "stephen tyler": ["Jackie Brown"],
+    "candice vance": ["Jackie Brown"],
+    "lucy liu": ["Kill Bill Vol. 1", "Kill Bill Vol. 2"],
+    "vivica a. fox": ["Kill Bill Vol. 1", "Kill Bill Vol. 2"],
+    "daryl hannah": ["Kill Bill Vol. 1", "Kill Bill Vol. 2"],
+    "david carradine": ["Kill Bill Vol. 1", "Kill Bill Vol. 2", "Mean Streets", "Boxcar Bertha"],
+    "sonny chiba": ["Kill Bill Vol. 1", "Kill Bill Vol. 2"],
+    "chiaki kuriyama": ["Kill Bill Vol. 1", "Kill Bill Vol. 2"],
+    "julie dreyfus": ["Kill Bill Vol. 1", "Kill Bill Vol. 2", "Inglorious Basterds"],
+    "gordon liu": ["Kill Bill Vol. 1", "Kill Bill Vol. 2"],
+    "michael parks": ["Kill Bill Vol. 1", "Kill Bill Vol. 2", "Death Proof", "Django Unchained"],
+    "jun kunimura": ["Kill Bill Vol. 1"],
+    "kenji ohba": ["Kill Bill Vol. 1"],
+    "yuki kazamatsuri": ["Kill Bill Vol. 1"],
+    "james parks": ["Kill Bill Vol. 1", "Kill Bill Vol. 2", "Death Proof", "Django Unchained", "The Hateful Eight"],
+    "sakichi sato": ["Kill Bill Vol. 1"],
+    "ambrosia kelley": ["Kill Bill Vol. 1", "Kill Bill Vol. 2"],
+    "kazuki kitamura": ["Kill Bill Vol. 1"],
+    "akaji maro": ["Kill Bill Vol. 1"],
+    "goro daimon": ["Kill Bill Vol. 1"],
+    "shun sugata": ["Kill Bill Vol. 1"],
+    "yoji tanaka": ["Kill Bill Vol. 1"],
+    "issey takahashi": ["Kill Bill Vol. 1"],
+    "juri manase": ["Kill Bill Vol. 1"],
+    "tetsuro shimaguchi": ["Kill Bill Vol. 1"],
+    "jonathan loughran": ["Kill Bill Vol. 1", "Death Proof"],
+    "yoshiyuki morishita": ["Kill Bill Vol. 1"],
+    "ai maeda": ["Kill Bill Vol. 1"],
+    "perla haney-jardine": ["Kill Bill Vol. 2", "Once Upon a Time in Hollywood"],
+    "larry bishop": ["Kill Bill Vol. 2"],
+    "bo svenson": ["Kill Bill Vol. 2", "Inglorious Basterds"],
+    "jeannie epper": ["Kill Bill Vol. 2"],
+    "christopher allen nelson": ["Kill Bill Vol. 2"],
+    "helen kim": ["Kill Bill Vol. 2"],
+    "laura cayouette": ["Kill Bill Vol. 2", "Django Unchained"],
+    "clark middleton": ["Kill Bill Vol. 2"],
+    "caitlin keats": ["Kill Bill Vol. 2"],
+    "stephanie l. moore": ["Kill Bill Vol. 2"],
+    "shana stein": ["Kill Bill Vol. 2"],
+    "zoe bell": ["Death Proof", "Django Unchained", "The Hateful Eight", "Once Upon a Time in Hollywood"],
+    "rosario dawson": ["Death Proof"],
+    "vanessa ferlito": ["Death Proof"],
+    "sydney tamiia poitier": ["Death Proof"],
+    "tracie thoms": ["Death Proof"],
+    "rose mcgowan": ["Death Proof"],
+    "jordan ladd": ["Death Proof"],
+    "mary elizabeth winstead": ["Death Proof"],
+    "marcy harriell": ["Death Proof"],
+    "eli roth": ["Death Proof", "Inglorious Basterds"],
+    "omar doom": ["Death Proof", "Inglorious Basterds"],
+    "michael bacall": ["Death Proof", "Inglorious Basterds", "Django Unchained"],
+    "monica staggs": ["Death Proof"],
+    "nicky katt": ["Death Proof", "Insomnia", "The Dark Knight"],
+    "marley shelton": ["Death Proof"],
+    "electra avellan": ["Death Proof"],
+    "elise avellan": ["Death Proof"],
+    "marta mendoza": ["Death Proof"],
+    "tim murphy": ["Death Proof"],
+    "melissa arcaro": ["Death Proof"],
+    "tina rodriguez": ["Death Proof"],
+    "brad pitt": ["Inglorious Basterds", "Once Upon a Time in Hollywood"],
+    "melanie laurent": ["Inglorious Basterds"],
+    "christoph waltz": ["Inglorious Basterds", "Django Unchained"],
+    "michael fassbender": ["Inglorious Basterds"],
+    "diane kruger": ["Inglorious Basterds"],
+    "til schweiger": ["Inglorious Basterds"],
+    "gedeon burkhard": ["Inglorious Basterds"],
+    "jacky ido": ["Inglorious Basterds"],
+    "b.j. novak": ["Inglorious Basterds"],
+    "august diehl": ["Inglorious Basterds"],
+    "denis menochet": ["Inglorious Basterds"],
+    "sylvester groth": ["Inglorious Basterds"],
+    "martin wuttke": ["Inglorious Basterds"],
+    "mike myers": ["Inglorious Basterds"],
+    "richard sammel": ["Inglorious Basterds"],
+    "alexander fehling": ["Inglorious Basterds"],
+    "rod taylor": ["Inglorious Basterds"],
+    "samm levine": ["Inglorious Basterds"],
+    "paul rust": ["Inglorious Basterds"],
+    "christian berkel": ["Inglorious Basterds"],
+    "lea seydoux": ["Inglorious Basterds"],
+    "jana pallaske": ["Inglorious Basterds"],
+    "rainer bock": ["Inglorious Basterds"],
+    "bela b.": ["Inglorious Basterds"],
+    "enzo g. castellari": ["Inglorious Basterds"],
+    "leonardo dicaprio": ["Django Unchained", "Once Upon a Time in Hollywood", "Inception", "The Aviator", "Gangs of New York", "The Departed", "Shutter Island", "The Wolf of Wall Street", "Killers of the Flower Moon"],
+    "kerry washington": ["Django Unchained"],
+    "dennis christopher": ["Django Unchained"],
+    "james remar": ["Django Unchained", "Once Upon a Time in Hollywood", "Oppenheimer"],
+    "dana gourrier": ["Django Unchained", "The Hateful Eight"],
+    "nichole galicia": ["Django Unchained"],
+    "ato essandoh": ["Django Unchained"],
+    "sammi rotibi": ["Django Unchained"],
+    "clay donahue fontenot": ["Django Unchained"],
+    "escalante lundy": ["Django Unchained"],
+    "titus welliver": ["Django Unchained"],
+    "james russo": ["Django Unchained"],
+    "don johnson": ["Django Unchained"],
+    "franco nero": ["Django Unchained"],
+    "russ tamblyn": ["Django Unchained"],
+    "amber tamblyn": ["Django Unchained"],
+    "bruce dern": ["Django Unchained", "The Hateful Eight", "Once Upon a Time in Hollywood"],
+    "m.c. gainey": ["Django Unchained"],
+    "cooper huckabee": ["Django Unchained"],
+    "doc duhame": ["Django Unchained"],
+    "jonah hill": ["Django Unchained", "The Wolf of Wall Street"],
+    "don stroud": ["Django Unchained"],
+    "tom savini": ["Django Unchained"],
+    "robert carradine": ["Django Unchained", "Mean Streets"],
+    "ted neeley": ["Django Unchained"],
+    "tom wopat": ["Django Unchained"],
+    "rex linn": ["Django Unchained"],
+    "omar j. dorsey": ["Django Unchained"],
+    "jarrod bunch": ["Django Unchained"],
+    "jennifer jason leigh": ["The Hateful Eight"],
+    "demian bichir": ["The Hateful Eight"],
+    "lee horsley": ["The Hateful Eight"],
+    "gene jones": ["The Hateful Eight", "Killers of the Flower Moon"],
+    "keith jefferson": ["The Hateful Eight"],
+    "craig stark": ["The Hateful Eight"],
+    "belinda owino": ["The Hateful Eight"],
+    "emile hirsch": ["Once Upon a Time in Hollywood"],
+    "margaret qualley": ["Once Upon a Time in Hollywood"],
+    "timothy olyphant": ["Once Upon a Time in Hollywood"],
+    "julia butters": ["Once Upon a Time in Hollywood"],
+    "austin butler": ["Once Upon a Time in Hollywood"],
+    "dakota fanning": ["Once Upon a Time in Hollywood"],
+    "mike moh": ["Once Upon a Time in Hollywood"],
+    "luke perry": ["Once Upon a Time in Hollywood"],
+    "damian lewis": ["Once Upon a Time in Hollywood"],
+    "al pacino": ["Once Upon a Time in Hollywood", "Insomnia", "The Irishman"],
+    "nicholas hammond": ["Once Upon a Time in Hollywood"],
+    "samantha robinson": ["Once Upon a Time in Hollywood"],
+    "rafał zawierucha": ["Once Upon a Time in Hollywood"],
+    "costa ronin": ["Once Upon a Time in Hollywood"],
+    "damon herriman": ["Once Upon a Time in Hollywood"],
+    "lena dunham": ["Once Upon a Time in Hollywood"],
+    "maya hawke": ["Once Upon a Time in Hollywood"],
+    "victoria pedretti": ["Once Upon a Time in Hollywood"],
+    "sydney sweeney": ["Once Upon a Time in Hollywood"],
+    "harley quinn smith": ["Once Upon a Time in Hollywood"],
+    "madisen beaty": ["Once Upon a Time in Hollywood"],
+    "rumer willis": ["Once Upon a Time in Hollywood"],
+    "dreama walker": ["Once Upon a Time in Hollywood"],
+    "rachel redleaf": ["Once Upon a Time in Hollywood"],
+    "rebecca gayheart": ["Once Upon a Time in Hollywood"],
+    "clifton collins jr.": ["Once Upon a Time in Hollywood"],
+    "martin kove": ["Once Upon a Time in Hollywood"],
+    "james landry hebert": ["Once Upon a Time in Hollywood"],
+    "lew temple": ["Once Upon a Time in Hollywood"],
+    "spencer garrett": ["Once Upon a Time in Hollywood"],
+    "scoot mcnairy": ["Once Upon a Time in Hollywood"],
+    "danny strong": ["Once Upon a Time in Hollywood"],
+    "clint howard": ["Once Upon a Time in Hollywood"],
+    "kate berlant": ["Once Upon a Time in Hollywood"],
+    "daniella pick": ["Once Upon a Time in Hollywood"],
+    "rebecca rittenhouse": ["Once Upon a Time in Hollywood"],
+    "jeremy theobald": ["Following"],
+    "alex haw": ["Following"],
+    "lucy russell": ["Following", "Batman Begins"],
+    "john nolan": ["Following", "Batman Begins", "The Dark Knight Rises"],
+    "dick bradsell": ["Following"],
+    "gillian el-kadi": ["Following"],
+    "jennifer angel": ["Following"],
+    "nicolas carlotti": ["Following"],
+    "darren ormandy": ["Following"],
+    "guy greenway": ["Following"],
+    "tassos stevens": ["Following"],
+    "tristan martin": ["Following"],
+    "rebecca james": ["Following"],
+    "paul mason": ["Following"],
+    "david bovill": ["Following"],
+    "carrie-anne moss": ["Memento"],
+    "mark boone junior": ["Memento", "Batman Begins"],
+    "russ fega": ["Memento", "The Prestige"],
+    "jorja fox": ["Memento"],
+    "stephen tobolowsky": ["Memento"],
+    "thomas lennon": ["Memento", "The Dark Knight Rises"],
+    "callum keith rennie": ["Memento"],
+    "kimberly campbell": ["Memento"],
+    "marianne muellerleile": ["Memento"],
+    "larry holden": ["Memento", "Insomnia", "Batman Begins"],
+    "robin williams": ["Insomnia"],
+    "hilary swank": ["Insomnia"],
+    "maura tierney": ["Insomnia"],
+    "paul dooley": ["Insomnia"],
+    "crystal lowe": ["Insomnia"],
+    "jay brazeau": ["Insomnia"],
+    "kerry sandomirsky": ["Insomnia"],
+    "lorraine landry": ["Insomnia"],
+    "katharine isabelle": ["Insomnia"],
+    "jonathan jackson": ["Insomnia"],
+    "paula shaw": ["Insomnia"],
+    "emily perkins": ["Insomnia"],
+    "ian tracey": ["Insomnia"],
+    "michael caine": ["Batman Begins", "The Prestige", "The Dark Knight", "Inception", "The Dark Knight Rises", "Interstellar", "Dunkirk", "Tenet"],
+    "liam neeson": ["Batman Begins", "The Dark Knight Rises", "Gangs of New York", "Silence"],
+    "katie holmes": ["Batman Begins"],
+    "gary oldman": ["Batman Begins", "The Dark Knight", "The Dark Knight Rises", "Oppenheimer"],
+    "cillian murphy": ["Batman Begins", "The Dark Knight", "Inception", "The Dark Knight Rises", "Dunkirk", "Oppenheimer"],
+    "tom wilkinson": ["Batman Begins"],
+    "rutger hauer": ["Batman Begins"],
+    "ken watanabe": ["Batman Begins", "Inception"],
+    "linus roache": ["Batman Begins"],
+    "morgan freeman": ["Batman Begins", "The Dark Knight", "The Dark Knight Rises"],
+    "gerard murphy": ["Batman Begins"],
+    "colin mcfarlane": ["Batman Begins", "The Dark Knight"],
+    "sara stewart": ["Batman Begins"],
+    "gus lewis": ["Batman Begins"],
+    "richard brake": ["Batman Begins"],
+    "rade serbedzija": ["Batman Begins"],
+    "tim booth": ["Batman Begins"],
+    "vincent wong": ["Batman Begins"],
+    "karen shenaz david": ["Batman Begins"],
+    "jon foo": ["Batman Begins"],
+    "joey ansah": ["Batman Begins"],
+    "piper perabo": ["The Prestige"],
+    "david bowie": ["The Prestige", "The Last Temptation of Christ"],
+    "ricky jay": ["The Prestige"],
+    "roger rees": ["The Prestige"],
+    "edward hibbert": ["The Prestige"],
+    "w. morgan sheppard": ["The Prestige"],
+    "daniel davis": ["The Prestige"],
+    "jim piddock": ["The Prestige"],
+    "christopher neame": ["The Prestige"],
+    "mark ryan": ["The Prestige"],
+    "jamie harris": ["The Prestige", "The Odyssey"],
+    "monty stuart": ["The Prestige"],
+    "ron perkins": ["The Prestige"],
+    "j. paul moore": ["The Prestige"],
+    "anthony demarco": ["The Prestige"],
+    "chao-li chi": ["The Prestige"],
+    "gregory humphreys": ["The Prestige"],
+    "john b. crye": ["The Prestige"],
+    "sean howse": ["The Prestige"],
+    "julie sanford": ["The Prestige"],
+    "ezra buzzington": ["The Prestige"],
+    "james lancaster": ["The Prestige"],
+    "samantha mahurin": ["The Prestige"],
+    "olivia merg": ["The Prestige"],
+    "zoe merg": ["The Prestige"],
+    "johnny liska": ["The Prestige"],
+    "kevin will": ["The Prestige"],
+    "james otis": ["The Prestige"],
+    "sam menning": ["The Prestige"],
+    "brian tahash": ["The Prestige"],
+    "scott davis": ["The Prestige"],
+    "jodi bianca wise": ["The Prestige"],
+    "nikki glick": ["The Prestige"],
+    "enn reitel": ["The Prestige"],
+    "clive kennedy": ["The Prestige"],
+    "robert arbogast": ["The Prestige"],
+    "chris cleveland": ["The Prestige"],
+    "christopher judge": ["The Prestige", "The Dark Knight Rises"],
+    "heath ledger": ["The Dark Knight"],
+    "aaron eckhart": ["The Dark Knight"],
+    "maggie gyllenhaal": ["The Dark Knight"],
+    "monique gabriela curnen": ["The Dark Knight"],
+    "ron dean": ["The Dark Knight"],
+    "chin han": ["The Dark Knight"],
+    "nestor carbonell": ["The Dark Knight", "The Dark Knight Rises"],
+    "eric roberts": ["The Dark Knight"],
+    "ritchie coster": ["The Dark Knight"],
+    "anthony michael hall": ["The Dark Knight"],
+    "keith szarabajka": ["The Dark Knight"],
+    "joshua harto": ["The Dark Knight"],
+    "melinda mcgraw": ["The Dark Knight"],
+    "nathan gamble": ["The Dark Knight"],
+    "michael jai white": ["The Dark Knight"],
+    "danny goldring": ["The Dark Knight"],
+    "michael vieau": ["The Dark Knight"],
+    "matthew oneill": ["The Dark Knight"],
+    "william fichtner": ["The Dark Knight"],
+    "nydia rodriguez terracina": ["The Dark Knight"],
+    "andy luther": ["The Dark Knight"],
+    "james fierro": ["The Dark Knight"],
+    "will zahrn": ["The Dark Knight"],
+    "james scales": ["The Dark Knight"],
+    "patrick leahy": ["The Dark Knight", "The Dark Knight Rises"],
+    "joseph gordon-levitt": ["Inception", "The Dark Knight Rises"],
+    "elliot page": ["Inception", "The Odyssey"],
+    "dileep rao": ["Inception"],
+    "tom berenger": ["Inception"],
+    "marion cotillard": ["Inception", "The Dark Knight Rises"],
+    "lukas haas": ["Inception"],
+    "pete postlethwaite": ["Inception"],
+    "talulah riley": ["Inception"],
+    "miranda nolan": ["Inception", "The Dark Knight Rises"],
+    "andrew pleavin": ["Inception"],
+    "earl cameron": ["Inception"],
+    "tohoru masamune": ["Inception"],
+    "claire geare": ["Inception"],
+    "johnathan geare": ["Inception"],
+    "taylor geare": ["Inception"],
+    "felix scott": ["Inception"],
+    "anne hathaway": ["The Dark Knight Rises", "Interstellar", "The Odyssey"],
+    "matthew modine": ["The Dark Knight Rises", "Oppenheimer"],
+    "alon aboutboul": ["The Dark Knight Rises"],
+    "burn gorman": ["The Dark Knight Rises"],
+    "daniel sunjata": ["The Dark Knight Rises"],
+    "aidan gillen": ["The Dark Knight Rises"],
+    "brett cullen": ["The Dark Knight Rises"],
+    "juno temple": ["The Dark Knight Rises"],
+    "tom conti": ["The Dark Knight Rises", "Oppenheimer"],
+    "joey king": ["The Dark Knight Rises"],
+    "josh pence": ["The Dark Knight Rises"],
+    "josh stewart": ["The Dark Knight Rises", "Interstellar", "Tenet"],
+    "fredric lehne": ["The Dark Knight Rises"],
+    "tomas arana": ["The Dark Knight Rises", "The Last Temptation of Christ"],
+    "desmond harrington": ["The Dark Knight Rises"],
+    "robert wisdom": ["The Dark Knight Rises"],
+    "uri gavriel": ["The Dark Knight Rises"],
+    "noel gugliemi": ["The Dark Knight Rises"],
+    "ian bohen": ["The Dark Knight Rises"],
+    "william devane": ["The Dark Knight Rises", "Interstellar"],
+    "rob brown": ["The Dark Knight Rises"],
+    "ronnie gene blevins": ["The Dark Knight Rises"],
+    "jessica chastain": ["Interstellar"],
+    "bill irwin": ["Interstellar"],
+    "ellen burstyn": ["Interstellar", "Alice Doesn't Live Here Anymore"],
+    "john lithgow": ["Interstellar", "Killers of the Flower Moon"],
+    "mackenzie foy": ["Interstellar"],
+    "timothee chalamet": ["Interstellar"],
+    "david gyasi": ["Interstellar"],
+    "wes bentley": ["Interstellar"],
+    "topher grace": ["Interstellar"],
+    "casey affleck": ["Interstellar", "Oppenheimer"],
+    "david oyelowo": ["Interstellar"],
+    "collette wolfe": ["Interstellar"],
+    "francis x. mccarthy": ["Interstellar"],
+    "andrew borba": ["Interstellar"],
+    "leah cairns": ["Interstellar"],
+    "elyes gabel": ["Interstellar", "The Odyssey"],
+    "liam dickinson": ["Interstellar"],
+    "brooke smith": ["Interstellar"],
+    "fionn whitehead": ["Dunkirk"],
+    "tom glynn-carney": ["Dunkirk"],
+    "jack lowden": ["Dunkirk"],
+    "aneurin barnard": ["Dunkirk"],
+    "kenneth branagh": ["Dunkirk", "Tenet", "Oppenheimer"],
+    "mark rylance": ["Dunkirk"],
+    "elliott tittensor": ["Dunkirk"],
+    "brian vernel": ["Dunkirk"],
+    "kevin guthrie": ["Dunkirk"],
+    "charley palmer rothwell": ["Dunkirk"],
+    "will attenborough": ["Dunkirk"],
+    "bradley hall": ["Dunkirk"],
+    "damien bonnard": ["Dunkirk"],
+    "adam long": ["Dunkirk"],
+    "john david washington": ["Tenet"],
+    "robert pattinson": ["Tenet", "The Odyssey"],
+    "dimple kapadia": ["Tenet"],
+    "clemence poesy": ["Tenet"],
+    "fiona dourif": ["Tenet"],
+    "himesh patel": ["Tenet"],
+    "yuri kolokolnikov": ["Tenet"],
+    "jefferson hall": ["Tenet", "Oppenheimer"],
+    "wes chatham": ["Tenet"],
+    "denzil smith": ["Tenet"],
+    "jack cutmore-scott": ["Tenet"],
+    "emily blunt": ["Oppenheimer"],
+    "josh hartnett": ["Oppenheimer"],
+    "rami malek": ["Oppenheimer"],
+    "benny safdie": ["Oppenheimer"],
+    "jason clarke": ["Oppenheimer"],
+    "dylan arnold": ["Oppenheimer"],
+    "dane dehaan": ["Oppenheimer"],
+    "alden ehrenreich": ["Oppenheimer"],
+    "tony goldwyn": ["Oppenheimer"],
+    "scott grimes": ["Oppenheimer"],
+    "kurt koehler": ["Oppenheimer"],
+    "john gowans": ["Oppenheimer"],
+    "macon blair": ["Oppenheimer"],
+    "harry groener": ["Oppenheimer"],
+    "gregory jbara": ["Oppenheimer"],
+    "ted king": ["Oppenheimer"],
+    "tim dekay": ["Oppenheimer"],
+    "steven houska": ["Oppenheimer"],
+    "christopher denham": ["Oppenheimer", "Shutter Island"],
+    "gustaf skarsgard": ["Oppenheimer"],
+    "trond fausa aurvag": ["Oppenheimer"],
+    "devon bostick": ["Oppenheimer"],
+    "danny deferrari": ["Oppenheimer"],
+    "jack quaid": ["Oppenheimer"],
+    "josh zuckerman": ["Oppenheimer"],
+    "alex wolff": ["Oppenheimer"],
+    "guy burnet": ["Oppenheimer"],
+    "emma dumont": ["Oppenheimer"],
+    "olli haaskivi": ["Oppenheimer"],
+    "louise lombard": ["Oppenheimer"],
+    "michael angarano": ["Oppenheimer"],
+    "josh peck": ["Oppenheimer"],
+    "matthias schweighofer": ["Oppenheimer"],
+    "jarrett j. merz": ["The Odyssey"],
+    "rafi gavron": ["The Odyssey"],
+    "iddo goldberg": ["The Odyssey"],
+    "john ales": ["The Odyssey"],
+    "mason cufari": ["The Odyssey"],
+    "travis scott": ["The Odyssey"],
+    "corey hawkins": ["The Odyssey"],
+    "niko nicotera": ["The Odyssey"],
+    "shiloh fernandez": ["The Odyssey"],
+    "raimy lang": ["The Odyssey"],
+    "john leguizamo": ["The Odyssey"],
+    "zina bethune": ["Who's That Knocking at My Door"],
+    "anne collette": ["Who's That Knocking at My Door"],
+    "lennard kuras": ["Who's That Knocking at My Door"],
+    "michael scala": ["Who's That Knocking at My Door"],
+    "harry ufland": ["Who's That Knocking at My Door", "Taxi Driver", "Alice Doesn't Live Here Anymore", "Mean Streets", "The King of Comedy"],
+    "tuddy coppola": ["Who's That Knocking at My Door"],
+    "philip carlson": ["Who's That Knocking at My Door"],
+    "martin scorsese": ["Who's That Knocking at My Door", "Taxi Driver", "Mean Streets", "After Hours", "The King of Comedy", "Bringing Out the Dead", "The Age of Innocence", "Hugo", "Killers of the Flower Moon"],
+    "pasquale fishantonio": ["Who's That Knocking at My Door"],
+    "saskia holleman": ["Who's That Knocking at My Door"],
+    "bill minkin": ["Who's That Knocking at My Door"],
+    "victor magnotta": ["Who's That Knocking at My Door"],
+    "paul debonde": ["Who's That Knocking at My Door"],
+    "catherine scorsese": ["Who's That Knocking at My Door", "Mean Streets", "The King of Comedy", "Casino", "The Age of Innocence", "Cape Fear", "Goodfellas"],
+    "dominick argo": ["Who's That Knocking at My Door", "Mean Streets"],
+    "liza minnelli": ["New York", "New York", "The King of Comedy"],
+    "lionel stander": ["New York", "New York"],
+    "barry primus": ["New York", "New York", "Boxcar Bertha"],
+    "mary kay place": ["New York", "New York"],
+    "georgie auld": ["New York", "New York"],
+    "george memmoli": ["New York", "New York", "Mean Streets"],
+    "dick miller": ["New York", "New York", "After Hours"],
+    "murray moston": ["New York", "New York", "Alice Doesn't Live Here Anymore", "Mean Streets"],
+    "lenny gaines": ["New York", "New York"],
+    "clarence clemons": ["New York", "New York"],
+    "kathi mcginnis": ["New York", "New York"],
+    "norman palmer": ["New York", "New York"],
+    "adam david richter": ["New York", "New York"],
+    "diahnne abbott": ["New York", "New York", "Taxi Driver", "The King of Comedy"],
+    "margo winkler": ["New York", "New York", "The King of Comedy", "Goodfellas"],
+    "steven prince": ["New York", "New York", "Taxi Driver"],
+    "victor argo": ["New York", "New York", "Taxi Driver", "Mean Streets", "Boxcar Bertha", "The Last Temptation of Christ", "After Hours", "The King of Comedy"],
+    "jodie foster": ["Taxi Driver", "Alice Doesn't Live Here Anymore"],
+    "cybill shepherd": ["Taxi Driver"],
+    "peter boyle": ["Taxi Driver"],
+    "albert brooks": ["Taxi Driver"],
+    "leonard harris": ["Taxi Driver"],
+    "gino ardito": ["Taxi Driver"],
+    "joe spinell": ["Taxi Driver"],
+    "frank adu": ["Taxi Driver"],
+    "richard higgs": ["Taxi Driver"],
+    "garth avery": ["Taxi Driver"],
+    "copper cunningham": ["Taxi Driver"],
+    "harry cohn": ["Taxi Driver"],
+    "bob maroff": ["Taxi Driver"],
+    "norman matlock": ["Taxi Driver"],
+    "harlan cary poe": ["Taxi Driver"],
+    "ralph s. singleton": ["Taxi Driver"],
+    "bill mckinney": ["Taxi Driver"],
+    "kris kristofferson": ["Alice Doesn't Live Here Anymore"],
+    "diane ladd": ["Alice Doesn't Live Here Anymore"],
+    "alfred lutter": ["Alice Doesn't Live Here Anymore"],
+    "billy green bush": ["Alice Doesn't Live Here Anymore"],
+    "vic tayback": ["Alice Doesn't Live Here Anymore"],
+    "valerie curtin": ["Alice Doesn't Live Here Anymore"],
+    "lelia goldoni": ["Alice Doesn't Live Here Anymore"],
+    "lane bradbury": ["Alice Doesn't Live Here Anymore"],
+    "mia bendixsen": ["Alice Doesn't Live Here Anymore"],
+    "laura dern": ["Alice Doesn't Live Here Anymore"],
+    "david proval": ["Mean Streets"],
+    "amy robinson": ["Mean Streets"],
+    "richard romanus": ["Mean Streets"],
+    "cesare danova": ["Mean Streets"],
+    "lenny scaletta": ["Mean Streets"],
+    "jeannie bell": ["Mean Streets"],
+    "durville martin": ["Mean Streets"],
+    "jaime sanchez": ["Mean Streets"],
+    "barbara hershey": ["Boxcar Bertha", "The Last Temptation of Christ"],
+    "bernie casey": ["Boxcar Bertha"],
+    "john carradine": ["Boxcar Bertha"],
+    "david osterhout": ["Boxcar Bertha"],
+    "harry northup": ["Boxcar Bertha", "The Last Temptation of Christ"],
+    "felice orlandi": ["Boxcar Bertha"],
+    "marianne stanichek": ["Boxcar Bertha"],
+    "ann morell": ["Boxcar Bertha"],
+    "chicken holleman": ["Boxcar Bertha"],
+    "john william galt": ["Boxcar Bertha"],
+    "helena kallianiotes": ["Boxcar Bertha"],
+    "joe senior": ["Boxcar Bertha"],
+    "joe williams": ["Boxcar Bertha"],
+    "harry dean stanton": ["The Last Temptation of Christ"],
+    "verna bloom": ["The Last Temptation of Christ", "After Hours"],
+    "andre gregory": ["The Last Temptation of Christ"],
+    "juliette caton": ["The Last Temptation of Christ"],
+    "roberts blossom": ["The Last Temptation of Christ"],
+    "gary basaraba": ["The Last Temptation of Christ", "Killers of the Flower Moon", "The Irishman"],
+    "irvin kershner": ["The Last Temptation of Christ"],
+    "paul greco": ["The Last Temptation of Christ"],
+    "john lurie": ["The Last Temptation of Christ"],
+    "michael been": ["The Last Temptation of Christ"],
+    "leo burmester": ["The Last Temptation of Christ"],
+    "nehemiah persoff": ["The Last Temptation of Christ"],
+    "alan rosenberg": ["The Last Temptation of Christ"],
+    "paul newman": ["The Color of Money"],
+    "tom cruise": ["The Color of Money"],
+    "mary elizabeth mastrantonio": ["The Color of Money"],
+    "helen shaver": ["The Color of Money"],
+    "john turturro": ["The Color of Money", "Raging Bull"],
+    "bill cobbs": ["The Color of Money"],
+    "robert loggia": ["The Color of Money"],
+    "keith mccready": ["The Color of Money"],
+    "carol messing": ["The Color of Money"],
+    "steve mizerak": ["The Color of Money"],
+    "bruce a. young": ["The Color of Money"],
+    "iggy pop": ["The Color of Money"],
+    "griffin dunne": ["After Hours"],
+    "tommy chong": ["After Hours"],
+    "cheech marin": ["After Hours"],
+    "linda fiorentino": ["After Hours"],
+    "teri garr": ["After Hours"],
+    "john heard": ["After Hours"],
+    "catherine ohara": ["After Hours"],
+    "will patton": ["After Hours"],
+    "robert plunket": ["After Hours"],
+    "bronson pinchot": ["After Hours"],
+    "rocco sisto": ["After Hours"],
+    "larry block": ["After Hours"],
+    "jerry lewis": ["The King of Comedy"],
+    "sandra bernhard": ["The King of Comedy"],
+    "shelley hack": ["The King of Comedy"],
+    "ed herlihy": ["The King of Comedy"],
+    "lou brown": ["The King of Comedy"],
+    "loretta tupper": ["The King of Comedy"],
+    "peter fain": ["The King of Comedy"],
+    "cathy scorsese": ["The King of Comedy"],
+    "fred de cordova": ["The King of Comedy"],
+    "edgar scherick": ["The King of Comedy"],
+    "kim chan": ["The King of Comedy"],
+    "cathy moriarty": ["Raging Bull"],
+    "joe pesci": ["Raging Bull", "Casino", "Goodfellas", "The Irishman"],
+    "frank vincent": ["Raging Bull", "Casino", "Goodfellas"],
+    "nicholas colasanto": ["Raging Bull"],
+    "theresa saldana": ["Raging Bull"],
+    "mario gallo": ["Raging Bull"],
+    "frank adonis": ["Raging Bull"],
+    "joseph bono": ["Raging Bull"],
+    "frank topham": ["Raging Bull"],
+    "lori anne flax": ["Raging Bull"],
+    "charles scorsese": ["Raging Bull", "The Age of Innocence", "Cape Fear", "Goodfellas"],
+    "don dunphy": ["Raging Bull"],
+    "bill hanrahan": ["Raging Bull"],
+    "michael badalucco": ["Raging Bull"],
+    "nicolas cage": ["Bringing Out the Dead"],
+    "patricia arquette": ["Bringing Out the Dead"],
+    "john goodman": ["Bringing Out the Dead"],
+    "tom sizemore": ["Bringing Out the Dead"],
+    "marc anthony": ["Bringing Out the Dead"],
+    "mary beth hurt": ["Bringing Out the Dead", "The Age of Innocence"],
+    "cliff curtis": ["Bringing Out the Dead"],
+    "nestor serrano": ["Bringing Out the Dead"],
+    "aida turturro": ["Bringing Out the Dead"],
+    "sonja sohn": ["Bringing Out the Dead"],
+    "cynthia roman": ["Bringing Out the Dead"],
+    "afemo omilami": ["Bringing Out the Dead"],
+    "cullen o. johnson": ["Bringing Out the Dead"],
+    "arthur j. nascarella": ["Bringing Out the Dead"],
+    "julyana soelistyo": ["Bringing Out the Dead"],
+    "graciela lecube": ["Bringing Out the Dead"],
+    "marylouise burke": ["Bringing Out the Dead"],
+    "phyllis somerville": ["Bringing Out the Dead"],
+    "queen latifah": ["Bringing Out the Dead"],
+    "bronson dudley": ["Bringing Out the Dead"],
+    "tenzin thuthob tsarong": ["Kundun"],
+    "gyurme tethong": ["Kundun"],
+    "tulku jamyang kunga tenzin": ["Kundun"],
+    "tenzin yeshi paichang": ["Kundun"],
+    "tencho gyatso": ["Kundun"],
+    "tsewang migyur lechar": ["Kundun"],
+    "tenzin topjar": ["Kundun"],
+    "tsewang jigme pemba": ["Kundun"],
+    "robert lin": ["Kundun"],
+    "ngawang kaldan": ["Kundun"],
+    "sonam phuntsok": ["Kundun"],
+    "gyatso sithole": ["Kundun"],
+    "lobsang samten": ["Kundun"],
+    "jigme tenzing": ["Kundun"],
+    "tenzin lodoe": ["Kundun"],
+    "losang gyatso": ["Kundun"],
+    "sharon stone": ["Casino"],
+    "james woods": ["Casino"],
+    "don rickles": ["Casino"],
+    "alan king": ["Casino"],
+    "kevin pollak": ["Casino"],
+    "l. q. jones": ["Casino"],
+    "dick smothers": ["Casino"],
+    "pasquale cajano": ["Casino"],
+    "melissa prophet": ["Casino"],
+    "bill allison": ["Casino"],
+    "vinny vella": ["Casino"],
+    "philip suriano": ["Casino"],
+    "erika von tagen": ["Casino"],
+    "frankie avalon": ["Casino"],
+    "steve allen": ["Casino"],
+    "jay leno": ["Casino"],
+    "jerry vale": ["Casino"],
+    "oscar goodman": ["Casino"],
+    "paul herman": ["Casino", "The Irishman"],
+    "claudia haro": ["Casino"],
+    "clem caserta": ["Casino"],
+    "daniel day-lewis": ["The Age of Innocence", "Gangs of New York"],
+    "winona ryder": ["The Age of Innocence"],
+    "alexis smith": ["The Age of Innocence"],
+    "geraldine chaplin": ["The Age of Innocence"],
+    "alec mccowen": ["The Age of Innocence", "Gangs of New York"],
+    "miriam margolyes": ["The Age of Innocence"],
+    "robert sean leonard": ["The Age of Innocence"],
+    "sian phillips": ["The Age of Innocence"],
+    "jonathan pryce": ["The Age of Innocence"],
+    "michael gough": ["The Age of Innocence"],
+    "joanne woodward": ["The Age of Innocence"],
+    "stuart wilson": ["The Age of Innocence"],
+    "carolyn farina": ["The Age of Innocence"],
+    "norman lloyd": ["The Age of Innocence"],
+    "domenica cameron-scorsese": ["The Age of Innocence", "Cape Fear"],
+    "nick nolte": ["Cape Fear"],
+    "jessica lange": ["Cape Fear"],
+    "juliette lewis": ["Cape Fear"],
+    "joe don baker": ["Cape Fear"],
+    "robert mitchum": ["Cape Fear"],
+    "gregory peck": ["Cape Fear"],
+    "martin balsam": ["Cape Fear"],
+    "illeana douglas": ["Cape Fear", "Goodfellas"],
+    "fred dalton thompson": ["Cape Fear"],
+    "zakes mokae": ["Cape Fear"],
+    "paul roebling": ["Cape Fear"],
+    "will macmillan": ["Cape Fear"],
+    "fred newman": ["Cape Fear"],
+    "ray liotta": ["Goodfellas"],
+    "lorraine bracco": ["Goodfellas"],
+    "paul sorvino": ["Goodfellas"],
+    "frank sivero": ["Goodfellas"],
+    "tony darrow": ["Goodfellas"],
+    "mike starr": ["Goodfellas"],
+    "chuck low": ["Goodfellas"],
+    "frank dileo": ["Goodfellas"],
+    "henny youngman": ["Goodfellas"],
+    "gina mastrogiacomo": ["Goodfellas"],
+    "suzanne shepherd": ["Goodfellas"],
+    "debi mazar": ["Goodfellas"],
+    "kevin corrigan": ["Goodfellas", "The Departed"],
+    "michael imperioli": ["Goodfellas"],
+    "robbie vinton": ["Goodfellas"],
+    "tony sirico": ["Goodfellas"],
+    "christopher serrone": ["Goodfellas"],
+    "edward mcdonald": ["Goodfellas"],
+    "kate beckinsale": ["The Aviator"],
+    "alec baldwin": ["The Aviator", "The Departed"],
+    "alan alda": ["The Aviator"],
+    "ian holm": ["The Aviator"],
+    "danny huston": ["The Aviator"],
+    "gwen stefani": ["The Aviator"],
+    "matt ross": ["The Aviator"],
+    "kelli garner": ["The Aviator"],
+    "frances conroy": ["The Aviator"],
+    "brent spiner": ["The Aviator"],
+    "stanley desantis": ["The Aviator"],
+    "edward herrmann": ["The Aviator"],
+    "kenneth welsh": ["The Aviator"],
+    "j.c. mackenzie": ["The Aviator", "The Departed"],
+    "adam scott": ["The Aviator"],
+    "cameron diaz": ["Gangs of New York"],
+    "jim broadbent": ["Gangs of New York"],
+    "henry thomas": ["Gangs of New York"],
+    "brendan gleeson": ["Gangs of New York"],
+    "gary lewis": ["Gangs of New York"],
+    "stephen graham": ["Gangs of New York", "The Irishman"],
+    "eddie marsan": ["Gangs of New York"],
+    "david hemmings": ["Gangs of New York"],
+    "lawrence gilliard jr.": ["Gangs of New York"],
+    "cara seymour": ["Gangs of New York"],
+    "peter berling": ["Gangs of New York"],
+    "george aguilar": ["Gangs of New York"],
+    "john kavanagh": ["Gangs of New York"],
+    "barbara bouchet": ["Gangs of New York"],
+    "michael byrne": ["Gangs of New York"],
+    "adam driver": ["Silence"],
+    "ciaran hinds": ["Silence"],
+    "issey ogata": ["Silence"],
+    "shinya tsukamoto": ["Silence"],
+    "yosuke kubozuka": ["Silence"],
+    "yoshi oida": ["Silence"],
+    "ryo kase": ["Silence"],
+    "nana komatsu": ["Silence"],
+    "katsuo nakamura": ["Silence"],
+    "bela baptiste": ["Silence"],
+    "asa butterfield": ["Hugo"],
+    "chloe grace moretz": ["Hugo"],
+    "sacha baron cohen": ["Hugo"],
+    "helen mccrory": ["Hugo"],
+    "christopher lee": ["Hugo"],
+    "emily mortimer": ["Hugo", "Shutter Island"],
+    "frances de la tour": ["Hugo"],
+    "richard griffiths": ["Hugo"],
+    "emun elliott": ["Hugo"],
+    "angus barnett": ["Hugo"],
+    "gulliver mcgrath": ["Hugo"],
+    "shaun dooley": ["Hugo"],
+    "michael pitt": ["Hugo"],
+    "jack nicholson": ["The Departed"],
+    "mark wahlberg": ["The Departed"],
+    "martin sheen": ["The Departed"],
+    "anthony anderson": ["The Departed"],
+    "david ohara": ["The Departed"],
+    "mark rolston": ["The Departed"],
+    "robert wahlberg": ["The Departed"],
+    "kristen dalton": ["The Departed"],
+    "michelle williams": ["Shutter Island"],
+    "patricia clarkson": ["Shutter Island"],
+    "max von sydow": ["Shutter Island"],
+    "jackie earle haley": ["Shutter Island"],
+    "ted levine": ["Shutter Island"],
+    "john carroll lynch": ["Shutter Island"],
+    "elias koteas": ["Shutter Island"],
+    "robin bartlett": ["Shutter Island"],
+    "joseph sikora": ["Shutter Island"],
+    "curtiss cook": ["Shutter Island"],
+    "ruby jerins": ["Shutter Island"],
+    "kyle chandler": ["The Wolf of Wall Street"],
+    "rob reiner": ["The Wolf of Wall Street"],
+    "jean dujardin": ["The Wolf of Wall Street"],
+    "joanna lumley": ["The Wolf of Wall Street"],
+    "cristin milioti": ["The Wolf of Wall Street"],
+    "christine ebersole": ["The Wolf of Wall Street"],
+    "shea whigham": ["The Wolf of Wall Street"],
+    "katarina cas": ["The Wolf of Wall Street"],
+    "p.j. byrne": ["The Wolf of Wall Street"],
+    "brian sacca": ["The Wolf of Wall Street"],
+    "henry zebrowski": ["The Wolf of Wall Street"],
+    "ethan suplee": ["The Wolf of Wall Street"],
+    "barry rothbart": ["The Wolf of Wall Street"],
+    "jake hoffman": ["The Wolf of Wall Street"],
+    "mackenzee leigh": ["The Wolf of Wall Street"],
+    "stephanie kurtzuba": ["The Wolf of Wall Street", "The Irishman"],
+    "spike jonze": ["The Wolf of Wall Street"],
+    "lily gladstone": ["Killers of the Flower Moon"],
+    "jesse plemons": ["Killers of the Flower Moon", "The Irishman"],
+    "brendan fraser": ["Killers of the Flower Moon"],
+    "cara jade myers": ["Killers of the Flower Moon"],
+    "janae collins": ["Killers of the Flower Moon"],
+    "jillian dion": ["Killers of the Flower Moon"],
+    "jason isbell": ["Killers of the Flower Moon"],
+    "william belleau": ["Killers of the Flower Moon"],
+    "louis cancelmi": ["Killers of the Flower Moon", "The Irishman"],
+    "scott shepherd": ["Killers of the Flower Moon"],
+    "everett osborne": ["Killers of the Flower Moon"],
+    "talee redcorn": ["Killers of the Flower Moon"],
+    "yancey red corn": ["Killers of the Flower Moon"],
+    "tatanka means": ["Killers of the Flower Moon"],
+    "tommy schultz": ["Killers of the Flower Moon"],
+    "sturgill simpson": ["Killers of the Flower Moon"],
+    "ty mitchell": ["Killers of the Flower Moon"],
+    "charlie musselwhite": ["Killers of the Flower Moon"],
+    "pat healy": ["Killers of the Flower Moon"],
+    "genevieve angelson": ["Killers of the Flower Moon"],
+    "pete yorn": ["Killers of the Flower Moon"],
+    "ray romano": ["The Irishman"],
+    "anna paquin": ["The Irishman"],
+    "kathrine narducci": ["The Irishman"],
+    "welker white": ["The Irishman"],
+    "jack huston": ["The Irishman"],
+    "domenick lombardozzi": ["The Irishman"],
+    "marin ireland": ["The Irishman"],
+    "sebastian maniscalco": ["The Irishman"],
+    "steven van zandt": ["The Irishman"],
 };
 
 function obtenerFilmografiaGrillaAuxiliar(nombre) {
@@ -9600,8 +10601,16 @@ function obtenerTitulosDeCategoria(categoria) {
 }
 
 // Cruza la filmografía del actor resuelto en una celda contra una categoría
-// (fila o columna) y devuelve los títulos en común.
+// (fila o columna) y devuelve los títulos en común. Si la categoría es de
+// tipo "personas" (un roster directo, como "ganadores del Oscar", donde no
+// nos importa en qué película ganaron sino simplemente si la persona está
+// en la lista), devuelve una confirmación en vez de una lista de películas.
 function calcularCoincidencias(nombreActor, categoria) {
+    if (categoria.tipo === 'personas') {
+        const normalizado = normalizarTextoJuego(nombreActor);
+        const esMiembro = (categoria.nombres || []).some(n => normalizarTextoJuego(n) === normalizado);
+        return esMiembro ? [categoria.etiquetaConfirmacion || '✓ Confirmado'] : [];
+    }
     const coleccionActor = buscarColeccionPorNombre(nombreActor);
     const filmografiaReal = coleccionActor ? obtenerFilmografiaColeccion(coleccionActor.id) : [];
     const filmografiaAuxiliar = obtenerFilmografiaGrillaAuxiliar(nombreActor);
@@ -9637,7 +10646,10 @@ function renderizarTablaGrilla() {
                 celda.addEventListener('click', () => alternarVistaCeldaResuelta(celda, resuelta, fila, col));
             } else {
                 celda.innerHTML = '<span class="signo-interrogacion">?</span>';
-                celda.addEventListener('click', () => seleccionarCeldaGrilla(filaIdx, colIdx));
+                if (celdasCandidatasGrilla.some(c => c.fila === filaIdx && c.columna === colIdx)) {
+                    celda.classList.add('candidata');
+                }
+                celda.addEventListener('click', () => clickCeldaLibreGrilla(filaIdx, colIdx));
             }
             tabla.appendChild(celda);
         });
@@ -9676,85 +10688,128 @@ function alternarVistaCeldaResuelta(celda, resuelta, fila, col) {
     `;
 }
 
-function seleccionarCeldaGrilla(filaIdx, colIdx) {
+// Click en una celda todavía libre. Si hay un nombre pendiente (porque
+// servía para más de una celda) y esta celda es una de las candidatas
+// iluminadas, la resuelve ahí. Si no hay nada pendiente, no hace nada:
+// el juego ahora se juega escribiendo el nombre directamente, no
+// preseleccionando la celda.
+function clickCeldaLibreGrilla(filaIdx, colIdx) {
     if (grillaTerminada) return;
-    filaSeleccionadaGrilla = filaIdx;
-    columnaSeleccionadaGrilla = colIdx;
-
-    document.querySelectorAll('#tabla-grilla-juego .celda-juego').forEach(c => c.classList.remove('seleccionada'));
-    const celda = document.querySelector(`#tabla-grilla-juego .celda-juego[data-fila="${filaIdx}"][data-columna="${colIdx}"]`);
-    if (celda) celda.classList.add('seleccionada');
-
-    const dataset = gridsDatasets[datasetIdActivoGrilla];
-    const input = document.getElementById('input-grilla');
-    const btnAdivinar = document.getElementById('btn-adivinar-grilla');
-    if (input) {
-        input.disabled = false;
-        input.placeholder = `${dataset.filas[filaIdx]} + ${dataset.columnas[colIdx]}...`;
-        input.focus();
-    }
-    if (btnAdivinar) btnAdivinar.disabled = false;
-    ocultarSugerenciasGrilla();
+    if (!nombrePendienteGrilla) return;
+    const esCandidata = celdasCandidatasGrilla.some(c => c.fila === filaIdx && c.columna === colIdx);
+    if (!esCandidata) return;
+    resolverCeldaGrilla(filaIdx, colIdx, nombrePendienteGrilla);
 }
 
 function actualizarContadorGrilla() {
     const contador = document.getElementById('contador-grilla');
-    if (contador) contador.textContent = `${Object.keys(celdasResueltasGrilla).length}/9 · ${erroresGrilla} errores (máx. ${MAX_ERRORES_GRILLA})`;
+    if (!contador) return;
+    const resueltas = Object.keys(celdasResueltasGrilla).length;
+    if (modoInfinitoGrilla) {
+        contador.textContent = `${resueltas}/9 · ${erroresGrilla} errores (intentos infinitos)`;
+    } else {
+        contador.textContent = `${resueltas}/9 · ${erroresGrilla} errores (máx. ${MAX_ERRORES_GRILLA})`;
+    }
 }
 
+// Busca, entre todas las celdas TODAVÍA NO resueltas, en cuáles el nombre
+// escrito es una respuesta válida. Ya no hace falta tocar una celda antes
+// de escribir: si el nombre sirve para una sola celda libre, se resuelve
+// sola; si sirve para más de una, se iluminan esas celdas y el jugador
+// elige en cuál ponerla (no se puede repetir una respuesta usada).
 function intentarAdivinarGrilla() {
     if (grillaTerminada) return;
-    if (filaSeleccionadaGrilla === null || columnaSeleccionadaGrilla === null) return;
-
     const dataset = gridsDatasets[datasetIdActivoGrilla];
     const input = document.getElementById('input-grilla');
     const mensaje = document.getElementById('mensaje-grilla');
     const valorNormalizado = normalizarTextoJuego(input.value);
     if (!valorNormalizado) return;
 
-    const clave = `${filaSeleccionadaGrilla}-${columnaSeleccionadaGrilla}`;
-    const opcionesValidas = dataset.celdas[filaSeleccionadaGrilla][columnaSeleccionadaGrilla];
-    const encontrado = opcionesValidas.find(op => op.alias.some(alias => normalizarTextoJuego(alias) === valorNormalizado));
-
-    if (encontrado) {
-        const filaCategoria = dataset.filas[filaSeleccionadaGrilla];
-        const colCategoria = dataset.columnas[columnaSeleccionadaGrilla];
-        const coleccionActor = buscarColeccionPorNombre(encontrado.nombreMostrado);
-        celdasResueltasGrilla[clave] = {
-            nombreMostrado: encontrado.nombreMostrado,
-            foto: coleccionActor ? coleccionActor.poster : null,
-            coincidenciasFila: calcularCoincidencias(encontrado.nombreMostrado, filaCategoria),
-            coincidenciasColumna: calcularCoincidencias(encontrado.nombreMostrado, colCategoria)
-        };
-        mensaje.textContent = `✅ ¡${encontrado.nombreMostrado}!`;
-        mensaje.className = 'mensaje-elenco exito';
-        filaSeleccionadaGrilla = null;
-        columnaSeleccionadaGrilla = null;
-        renderizarTablaGrilla();
-        actualizarContadorGrilla();
-        input.value = '';
-        input.disabled = true;
-        document.getElementById('btn-adivinar-grilla').disabled = true;
-
-        if (Object.keys(celdasResueltasGrilla).length === 9) {
-            finalizarGrilla(true);
+    let nombreMostradoEncontrado = null;
+    const candidatas = [];
+    for (let f = 0; f < dataset.filas.length; f++) {
+        for (let c = 0; c < dataset.columnas.length; c++) {
+            const clave = `${f}-${c}`;
+            if (celdasResueltasGrilla[clave]) continue;
+            const encontrado = dataset.celdas[f][c].find(op => op.alias.some(alias => normalizarTextoJuego(alias) === valorNormalizado));
+            if (encontrado) {
+                candidatas.push({ fila: f, columna: c });
+                nombreMostradoEncontrado = encontrado.nombreMostrado;
+            }
         }
-    } else {
+    }
+
+    if (candidatas.length === 0) {
         erroresGrilla++;
-        mensaje.textContent = `❌ "${input.value}" no cruza esa fila y columna.`;
+        mensaje.textContent = `❌ "${input.value}" no sirve para ninguna celda libre.`;
         mensaje.className = 'mensaje-elenco error';
         actualizarContadorGrilla();
         input.value = '';
         input.focus();
-
-        if (erroresGrilla >= MAX_ERRORES_GRILLA) {
+        if (erroresGrilla >= MAX_ERRORES_GRILLA && !modoInfinitoGrilla) {
             finalizarGrilla(false);
         }
+        return;
+    }
+
+    if (candidatas.length === 1) {
+        input.value = '';
+        resolverCeldaGrilla(candidatas[0].fila, candidatas[0].columna, nombreMostradoEncontrado);
+        return;
+    }
+
+    // Ambiguo: hay más de una celda libre donde esta respuesta es válida
+    nombrePendienteGrilla = nombreMostradoEncontrado;
+    celdasCandidatasGrilla = candidatas;
+    document.querySelectorAll('#tabla-grilla-juego .celda-juego').forEach(celda => {
+        const f = parseInt(celda.dataset.fila);
+        const c = parseInt(celda.dataset.columna);
+        const esCandidata = candidatas.some(cand => cand.fila === f && cand.columna === c);
+        celda.classList.toggle('candidata', esCandidata);
+    });
+    mensaje.textContent = `🤔 "${nombreMostradoEncontrado}" sirve para ${candidatas.length} celdas — tocá en cuál la ponés.`;
+    mensaje.className = 'mensaje-elenco';
+    input.value = '';
+    ocultarSugerenciasGrilla();
+}
+
+// Resuelve efectivamente una celda con el nombre ya validado (llamado tanto
+// cuando hay una sola opción posible, como cuando el jugador elige entre
+// varias celdas candidatas iluminadas).
+function resolverCeldaGrilla(filaIdx, colIdx, nombreMostrado) {
+    const dataset = gridsDatasets[datasetIdActivoGrilla];
+    const clave = `${filaIdx}-${colIdx}`;
+    const filaCategoria = dataset.filas[filaIdx];
+    const colCategoria = dataset.columnas[colIdx];
+    const coleccionActor = buscarColeccionPorNombre(nombreMostrado);
+    const mensaje = document.getElementById('mensaje-grilla');
+
+    celdasResueltasGrilla[clave] = {
+        nombreMostrado: nombreMostrado,
+        foto: coleccionActor ? coleccionActor.poster : null,
+        coincidenciasFila: calcularCoincidencias(nombreMostrado, filaCategoria),
+        coincidenciasColumna: calcularCoincidencias(nombreMostrado, colCategoria)
+    };
+    if (mensaje) {
+        mensaje.textContent = `✅ ¡${nombreMostrado}!`;
+        mensaje.className = 'mensaje-elenco exito';
+    }
+
+    nombrePendienteGrilla = null;
+    celdasCandidatasGrilla = [];
+    renderizarTablaGrilla();
+    actualizarContadorGrilla();
+
+    if (Object.keys(celdasResueltasGrilla).length === 9) {
+        finalizarGrilla(true);
     }
 }
 
 function finalizarGrilla(gano) {
     grillaTerminada = true;
+    nombrePendienteGrilla = null;
+    celdasCandidatasGrilla = [];
+    document.querySelectorAll('#tabla-grilla-juego .celda-juego.candidata').forEach(c => c.classList.remove('candidata'));
     const input = document.getElementById('input-grilla');
     const btnAdivinar = document.getElementById('btn-adivinar-grilla');
     if (input) input.disabled = true;
@@ -9799,7 +10854,17 @@ if (btnAdivinarGrilla) {
 
 const btnReiniciarGrilla = document.getElementById('btn-reiniciar-grilla');
 if (btnReiniciarGrilla) {
-    btnReiniciarGrilla.addEventListener('click', reiniciarGrilla);
+    btnReiniciarGrilla.addEventListener('click', mostrarSelectorModoGrilla);
+}
+
+const btnModoClasicoGrilla = document.getElementById('btn-modo-clasico-grilla');
+if (btnModoClasicoGrilla) {
+    btnModoClasicoGrilla.addEventListener('click', () => iniciarPartidaGrilla(false));
+}
+
+const btnModoLibreGrilla = document.getElementById('btn-modo-libre-grilla');
+if (btnModoLibreGrilla) {
+    btnModoLibreGrilla.addEventListener('click', () => iniciarPartidaGrilla(true));
 }
 
 const inputGrilla = document.getElementById('input-grilla');

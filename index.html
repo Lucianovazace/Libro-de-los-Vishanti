@@ -153,7 +153,7 @@
     <!-- COLECCIÓN: LEONARDO DI CAPRIO (contenedor con filtros por década) -->
     <section id="seccion-leonardo-dicaprio" class="oculto">
         <button class="btn-volver" id="btn-volver-leonardo-dicaprio">← Volver a Actores</button>
-        <h2>Leonardo Di Caprio</h2>
+        <h2>Leonardo DiCaprio</h2>
         <div class="filtros-seccion">
             <button class="btn-filtro-dicaprio activo" data-tipo="2020">Década de 2020</button>
             <button class="btn-filtro-dicaprio" data-tipo="2010">Década de 2010</button>
@@ -382,6 +382,21 @@
             <button class="btn-filtro-spielberg" data-tipo="2000">Década de 2000</button>
             <button class="btn-filtro-spielberg" data-tipo="1990">Década de 1990</button>
             <button class="btn-filtro-spielberg" data-tipo="1980">Década de 1980</button>
+        </div>
+        <div class="grilla-biblioteca"></div>
+    </section>
+
+    <section id="seccion-martin-scorsese" class="oculto">
+        <button class="btn-volver" id="btn-volver-martin-scorsese">← Volver a Directores</button>
+        <h2>Martin Scorsese</h2>
+        <div class="filtros-seccion">
+            <button class="btn-filtro-scorsese activo" data-tipo="2020">Década de 2020</button>
+            <button class="btn-filtro-scorsese" data-tipo="2010">Década de 2010</button>
+            <button class="btn-filtro-scorsese" data-tipo="2000">Década de 2000</button>
+            <button class="btn-filtro-scorsese" data-tipo="1990">Década de 1990</button>
+            <button class="btn-filtro-scorsese" data-tipo="1980">Década de 1980</button>
+            <button class="btn-filtro-scorsese" data-tipo="1970">Década de 1970</button>
+            <button class="btn-filtro-scorsese" data-tipo="1960">Década de 1960</button>
         </div>
         <div class="grilla-biblioteca"></div>
     </section>
@@ -1220,18 +1235,26 @@
         <h2 id="titulo-grilla-jugar">Grilla 🔲</h2>
         <p class="subtitulo-juegos" id="subtitulo-grilla-jugar">Nombrá un actor que cumpla la fila y la columna a la vez.</p>
 
-        <p class="contador-elenco" id="contador-grilla">0/9 · 0 errores (máx. 9)</p>
-
-        <div class="tabla-grilla-juego" id="tabla-grilla-juego"></div>
-
-        <div class="fila-input-elenco">
-            <input type="text" id="input-grilla" placeholder="Tocá una celda y escribí un actor..." autocomplete="off" disabled>
-            <button class="btn-modal" id="btn-adivinar-grilla" disabled>Adivinar</button>
+        <div id="selector-modo-grilla">
+            <p class="subtitulo-juegos">Elegí cómo querés jugar:</p>
+            <button class="btn-modal" id="btn-modo-clasico-grilla" style="margin-bottom:10px;">🎯 Modo Clásico (9 errores máximo)</button>
+            <button class="btn-modal" id="btn-modo-libre-grilla">♾️ Modo Libre (intentos infinitos)</button>
         </div>
-        <div id="sugerencias-grilla" class="sugerencias-dropdown oculto"></div>
 
-        <p id="mensaje-grilla" class="mensaje-elenco"></p>
-        <button class="btn-modal" id="btn-reiniciar-grilla" style="width:auto; margin-top:10px;">🔁 Reiniciar</button>
+        <div id="contenido-grilla-juego" class="oculto">
+            <p class="contador-elenco" id="contador-grilla">0/9 · 0 errores (máx. 9)</p>
+
+            <div class="tabla-grilla-juego" id="tabla-grilla-juego"></div>
+
+            <div class="fila-input-elenco">
+                <input type="text" id="input-grilla" placeholder="Escribí un nombre..." autocomplete="off">
+                <button class="btn-modal" id="btn-adivinar-grilla">Adivinar</button>
+            </div>
+            <div id="sugerencias-grilla" class="sugerencias-dropdown oculto"></div>
+
+            <p id="mensaje-grilla" class="mensaje-elenco"></p>
+            <button class="btn-modal" id="btn-reiniciar-grilla" style="width:auto; margin-top:10px;">🔁 Cambiar de modo / Reiniciar</button>
+        </div>
     </section>
 
     <!-- SECCIÓN: JUEGOS - NOMBRALOS - CATEGORÍAS (DC / MARVEL) -->
