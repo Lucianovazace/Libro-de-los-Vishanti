@@ -8348,7 +8348,7 @@ function normalizarTextoJuego(str) {
         .toLowerCase()
         .normalize('NFD')
         .replace(/[\u0300-\u036f]/g, '')
-        .replace(/['’"]/g, '')
+        .replace(/['’".]/g, '')
         .trim()
         .replace(/\s+/g, ' ');
 }
@@ -9076,7 +9076,7 @@ function reiniciarGrilla() {
 // Clave: nombre en minúsculas sin tildes (se normaliza igual que el resto
 // del juego). Valor: array de títulos de películas.
 const filmografiasGrilla = {
-    "robert downey jr.": ["Iron Man", "The Incredible Hulk", "Iron Man 2", "The Avengers", "Iron Man 3", "Avengers: Era de Ultron", "Capitan America: Civil War", "Spider-Man: Homecoming", "Avengers: Infinity War", "Avengers: Endgame", "Oppenheimer"],
+    "robert downey jr": ["Iron Man", "The Incredible Hulk", "Iron Man 2", "The Avengers", "Iron Man 3", "Avengers: Era de Ultron", "Capitan America: Civil War", "Spider-Man: Homecoming", "Avengers: Infinity War", "Avengers: Endgame", "Oppenheimer"],
     "gwyneth paltrow": ["Iron Man", "Iron Man 2", "The Avengers", "Iron Man 3", "Spider-Man: Homecoming", "Avengers: Infinity War", "Avengers: Endgame"],
     "terrence howard": ["Iron Man"],
     "jeff bridges": ["Iron Man"],
@@ -9084,7 +9084,7 @@ const filmografiasGrilla = {
     "faran tahir": ["Iron Man"],
     "leslie bibb": ["Iron Man", "Iron Man 2"],
     "clark gregg": ["Iron Man", "Iron Man 2", "Thor", "The Avengers", "Capitana Marvel"],
-    "samuel l. jackson": ["Iron Man", "Iron Man 2", "Thor", "Capitan America: First Avenger", "The Avengers", "Capitan America: The Winter Soldier", "Avengers: Era de Ultron", "Capitana Marvel", "Avengers: Endgame", "Spider-Man: Far From Home", "Secret Invasion", "Pulp Fiction", "Jackie Brown", "Kill Bill Vol. 2", "Inglorious Basterds", "Django Unchained", "The Hateful Eight", "Goodfellas"],
+    "samuel l jackson": ["Iron Man", "Iron Man 2", "Thor", "Capitan America: First Avenger", "The Avengers", "Capitan America: The Winter Soldier", "Avengers: Era de Ultron", "Capitana Marvel", "Avengers: Endgame", "Spider-Man: Far From Home", "Secret Invasion", "Pulp Fiction", "Jackie Brown", "Kill Bill Vol. 2", "Inglorious Basterds", "Django Unchained", "The Hateful Eight", "Goodfellas"],
     "jon favreau": ["Iron Man", "Iron Man 2", "Iron Man 3", "Spider-Man: Homecoming", "Avengers: Endgame", "Spider-Man: Far From Home", "Spider-Man: No Way Home", "Deadpool y Wolverine", "The Wolf of Wall Street"],
     "paul bettany": ["Iron Man", "Iron Man 2", "The Avengers", "Iron Man 3", "Avengers: Era de Ultron", "Capitan America: Civil War", "Avengers: Infinity War", "WandaVision"],
     "stan lee": ["Iron Man", "The Incredible Hulk", "Iron Man 2", "Thor", "Capitan America: First Avenger", "The Avengers", "Iron Man 3", "Thor: The Dark World", "Capitan America: The Winter Soldier", "Guardianes de La Galaxia", "Avengers: Era de Ultron", "Ant-Man", "Capitan America: Civil War", "Doctor Strange", "Guardianes de La Galaxia Vol. 2", "Spider-Man: Homecoming", "Thor: Ragnarok", "Avengers: Infinity War", "Ant-Man and The Wasp", "Capitana Marvel", "Avengers: Endgame", "Pantera Negra"],
@@ -9173,7 +9173,7 @@ const filmografiasGrilla = {
     "michael rooker": ["Guardianes de La Galaxia", "Guardianes de La Galaxia Vol. 2", "Guardianes de La Galaxia Vol. 3", "The Suicide Squad", "Creature Commandos"],
     "karen gillan": ["Guardianes de La Galaxia", "Guardianes de La Galaxia Vol. 2", "Avengers: Infinity War", "Avengers: Endgame", "Thor: Love and Thunder", "Guardianes de La Galaxia Vol. 3"],
     "djimon hounsou": ["Guardianes de La Galaxia", "Capitana Marvel"],
-    "john c. reilly": ["Guardianes de La Galaxia", "The Aviator", "Gangs of New York"],
+    "john c reilly": ["Guardianes de La Galaxia", "The Aviator", "Gangs of New York"],
     "glenn close": ["Guardianes de La Galaxia"],
     "laura haddock": ["Guardianes de La Galaxia", "Guardianes de La Galaxia Vol. 2"],
     "sean gunn": ["Guardianes de La Galaxia", "Guardianes de La Galaxia Vol. 2", "Thor: Love and Thunder", "Guardianes de La Galaxia Vol. 3", "The Suicide Squad", "Creature Commandos", "Superman"],
@@ -9189,7 +9189,7 @@ const filmografiasGrilla = {
     "corey stoll": ["Ant-Man", "Ant-Man and The Wasp: Quantumania"],
     "bobby cannavale": ["Ant-Man", "Ant-Man and The Wasp", "The Irishman"],
     "michael pena": ["Ant-Man", "Ant-Man and The Wasp"],
-    "tip t.i. harris": ["Ant-Man", "Ant-Man and The Wasp"],
+    "tip ti harris": ["Ant-Man", "Ant-Man and The Wasp"],
     "wood harris": ["Ant-Man"],
     "judy greer": ["Ant-Man", "Ant-Man and The Wasp", "Guardianes de La Galaxia Vol. 3"],
     "david dastmalchian": ["Ant-Man", "Ant-Man and The Wasp", "Ant-Man and The Wasp: Quantumania", "The Suicide Squad", "The Dark Knight", "Oppenheimer"],
@@ -9277,20 +9277,20 @@ const filmografiasGrilla = {
     "james darcy": ["Avengers: Endgame", "Dunkirk", "Oppenheimer"],
     "joe russo": ["Avengers: Endgame"],
     "lexi rabe": ["Avengers: Endgame"],
-    "j.b. smoove": ["Spider-Man: Far From Home", "Spider-Man: No Way Home"],
+    "jb smoove": ["Spider-Man: Far From Home", "Spider-Man: No Way Home"],
     "jake gyllenhaal": ["Spider-Man: Far From Home"],
     "angourie rice": ["Spider-Man: Far From Home", "Spider-Man: No Way Home"],
     "remy hii": ["Spider-Man: Far From Home"],
     "numan acar": ["Spider-Man: Far From Home"],
     "zach barack": ["Spider-Man: Far From Home"],
-    "j.k. simmons": ["Spider-Man: Far From Home", "Spider-Man: No Way Home"],
+    "jk simmons": ["Spider-Man: Far From Home", "Spider-Man: No Way Home"],
     "sharon blynn": ["Spider-Man: Far From Home"],
-    "michael b. jordan": ["Pantera Negra", "Black Panther: Wakanda Forever"],
+    "michael b jordan": ["Pantera Negra", "Black Panther: Wakanda Forever"],
     "lupita nyongo": ["Pantera Negra", "Black Panther: Wakanda Forever", "The Odyssey"],
     "daniel kaluuya": ["Pantera Negra"],
     "letitia wright": ["Pantera Negra", "Black Panther: Wakanda Forever"],
     "winston duke": ["Pantera Negra", "Black Panther: Wakanda Forever"],
-    "sterling k. brown": ["Pantera Negra"],
+    "sterling k brown": ["Pantera Negra"],
     "forest whitaker": ["Pantera Negra", "The Color of Money"],
     "john kani": ["Pantera Negra"],
     "florence kasumba": ["Pantera Negra", "The Falcon and The Winter Soldier", "Black Panther: Wakanda Forever"],
@@ -9330,7 +9330,7 @@ const filmografiasGrilla = {
     "sasha lane": ["Loki"],
     "jack veal": ["Loki"],
     "deobia oparei": ["Loki"],
-    "richard e. grant": ["Loki", "The Age of Innocence"],
+    "richard e grant": ["Loki", "The Age of Innocence"],
     "rafael casal": ["Loki"],
     "kate dickie": ["Loki"],
     "liz carr": ["Loki"],
@@ -9394,13 +9394,13 @@ const filmografiasGrilla = {
     "rhys ifans": ["Spider-Man: No Way Home"],
     "tobey maguire": ["Spider-Man: No Way Home"],
     "andrew garfield": ["Spider-Man: No Way Home", "Silence"],
-    "jorge lendeborg jr.": ["Spider-Man: No Way Home", "Blue Beetle"],
+    "jorge lendeborg jr": ["Spider-Man: No Way Home", "Blue Beetle"],
     "charlie cox": ["Spider-Man: No Way Home", "She-Hulk: Attorney At Law", "Echo", "Daredevil: Born Again"],
     "tom hardy": ["Spider-Man: No Way Home", "Inception", "The Dark Knight Rises", "Dunkirk"],
     "oscar isaac": ["Moon Knight"],
     "ethan hawke": ["Moon Knight"],
     "may calamawy": ["Moon Knight"],
-    "f. murray abraham": ["Moon Knight"],
+    "f murray abraham": ["Moon Knight"],
     "khalid abdalla": ["Moon Knight"],
     "gaspard ulliel": ["Moon Knight"],
     "lucy thackeray": ["Moon Knight"],
@@ -9466,10 +9466,10 @@ const filmografiasGrilla = {
     "gael garcia bernal": ["Werewolf By Night"],
     "laura donnelly": ["Werewolf By Night"],
     "harriet sansom harris": ["Werewolf By Night", "Memento"],
-    "kirk r. thatcher": ["Werewolf By Night"],
+    "kirk r thatcher": ["Werewolf By Night"],
     "eugenie bondurant": ["Werewolf By Night"],
     "leonardo nam": ["Werewolf By Night"],
-    "daniel j. watts": ["Werewolf By Night"],
+    "daniel j watts": ["Werewolf By Night"],
     "al hamacher": ["Werewolf By Night"],
     "carey jones": ["Werewolf By Night"],
     "david silverman": ["Werewolf By Night"],
@@ -9545,7 +9545,7 @@ const filmografiasGrilla = {
     "margarita levieva": ["Daredevil: Born Again"],
     "ayelet zurer": ["Daredevil: Born Again"],
     "michael gandolfini": ["Daredevil: Born Again"],
-    "nikki m. james": ["Daredevil: Born Again"],
+    "nikki m james": ["Daredevil: Born Again"],
     "genneya walton": ["Daredevil: Born Again"],
     "arty froushan": ["Daredevil: Born Again"],
     "clark johnson": ["Daredevil: Born Again"],
@@ -9626,7 +9626,7 @@ const filmografiasGrilla = {
     "bechir sylvain": ["Wonder Man"],
     "dan donohue": ["Wonder Man"],
     "judith light": ["Punisher: One Last Kill"],
-    "jason r. moore": ["Punisher: One Last Kill"],
+    "jason r moore": ["Punisher: One Last Kill"],
     "kelli barrett": ["Punisher: One Last Kill"],
     "andre royo": ["Punisher: One Last Kill"],
     "john douglas thompson": ["Punisher: One Last Kill"],
@@ -9781,7 +9781,7 @@ const filmografiasGrilla = {
     "michael bowen": ["Jackie Brown", "Kill Bill Vol. 1", "Kill Bill Vol. 2", "Django Unchained"],
     "chris tucker": ["Jackie Brown"],
     "lisagay hamilton": ["Jackie Brown"],
-    "tommy tiny lister jr.": ["Jackie Brown"],
+    "tommy tiny lister jr": ["Jackie Brown"],
     "hattie winston": ["Jackie Brown"],
     "sid haig": ["Jackie Brown", "Kill Bill Vol. 2"],
     "aimee graham": ["Jackie Brown"],
@@ -9798,7 +9798,7 @@ const filmografiasGrilla = {
     "stephen tyler": ["Jackie Brown"],
     "candice vance": ["Jackie Brown"],
     "lucy liu": ["Kill Bill Vol. 1", "Kill Bill Vol. 2"],
-    "vivica a. fox": ["Kill Bill Vol. 1", "Kill Bill Vol. 2"],
+    "vivica a fox": ["Kill Bill Vol. 1", "Kill Bill Vol. 2"],
     "daryl hannah": ["Kill Bill Vol. 1", "Kill Bill Vol. 2"],
     "david carradine": ["Kill Bill Vol. 1", "Kill Bill Vol. 2", "Mean Streets", "Boxcar Bertha"],
     "sonny chiba": ["Kill Bill Vol. 1", "Kill Bill Vol. 2"],
@@ -9832,7 +9832,7 @@ const filmografiasGrilla = {
     "laura cayouette": ["Kill Bill Vol. 2", "Django Unchained"],
     "clark middleton": ["Kill Bill Vol. 2"],
     "caitlin keats": ["Kill Bill Vol. 2"],
-    "stephanie l. moore": ["Kill Bill Vol. 2"],
+    "stephanie l moore": ["Kill Bill Vol. 2"],
     "shana stein": ["Kill Bill Vol. 2"],
     "zoe bell": ["Death Proof", "Django Unchained", "The Hateful Eight", "Once Upon a Time in Hollywood"],
     "rosario dawson": ["Death Proof"],
@@ -9863,7 +9863,7 @@ const filmografiasGrilla = {
     "til schweiger": ["Inglorious Basterds"],
     "gedeon burkhard": ["Inglorious Basterds"],
     "jacky ido": ["Inglorious Basterds"],
-    "b.j. novak": ["Inglorious Basterds"],
+    "bj novak": ["Inglorious Basterds"],
     "august diehl": ["Inglorious Basterds"],
     "denis menochet": ["Inglorious Basterds"],
     "sylvester groth": ["Inglorious Basterds"],
@@ -9878,8 +9878,8 @@ const filmografiasGrilla = {
     "lea seydoux": ["Inglorious Basterds"],
     "jana pallaske": ["Inglorious Basterds"],
     "rainer bock": ["Inglorious Basterds"],
-    "bela b.": ["Inglorious Basterds"],
-    "enzo g. castellari": ["Inglorious Basterds"],
+    "bela b": ["Inglorious Basterds"],
+    "enzo g castellari": ["Inglorious Basterds"],
     "leonardo dicaprio": ["Django Unchained", "Once Upon a Time in Hollywood", "Inception", "The Aviator", "Gangs of New York", "The Departed", "Shutter Island", "The Wolf of Wall Street", "Killers of the Flower Moon"],
     "kerry washington": ["Django Unchained"],
     "dennis christopher": ["Django Unchained"],
@@ -9897,7 +9897,7 @@ const filmografiasGrilla = {
     "russ tamblyn": ["Django Unchained"],
     "amber tamblyn": ["Django Unchained"],
     "bruce dern": ["Django Unchained", "The Hateful Eight", "Once Upon a Time in Hollywood"],
-    "m.c. gainey": ["Django Unchained"],
+    "mc gainey": ["Django Unchained"],
     "cooper huckabee": ["Django Unchained"],
     "doc duhame": ["Django Unchained"],
     "jonah hill": ["Django Unchained", "The Wolf of Wall Street"],
@@ -9907,7 +9907,7 @@ const filmografiasGrilla = {
     "ted neeley": ["Django Unchained"],
     "tom wopat": ["Django Unchained"],
     "rex linn": ["Django Unchained"],
-    "omar j. dorsey": ["Django Unchained"],
+    "omar j dorsey": ["Django Unchained"],
     "jarrod bunch": ["Django Unchained"],
     "jennifer jason leigh": ["The Hateful Eight"],
     "demian bichir": ["The Hateful Eight"],
@@ -9941,7 +9941,7 @@ const filmografiasGrilla = {
     "dreama walker": ["Once Upon a Time in Hollywood"],
     "rachel redleaf": ["Once Upon a Time in Hollywood"],
     "rebecca gayheart": ["Once Upon a Time in Hollywood"],
-    "clifton collins jr.": ["Once Upon a Time in Hollywood"],
+    "clifton collins jr": ["Once Upon a Time in Hollywood"],
     "martin kove": ["Once Upon a Time in Hollywood"],
     "james landry hebert": ["Once Upon a Time in Hollywood"],
     "lew temple": ["Once Upon a Time in Hollywood"],
@@ -10016,7 +10016,7 @@ const filmografiasGrilla = {
     "ricky jay": ["The Prestige"],
     "roger rees": ["The Prestige"],
     "edward hibbert": ["The Prestige"],
-    "w. morgan sheppard": ["The Prestige"],
+    "w morgan sheppard": ["The Prestige"],
     "daniel davis": ["The Prestige"],
     "jim piddock": ["The Prestige"],
     "christopher neame": ["The Prestige"],
@@ -10024,11 +10024,11 @@ const filmografiasGrilla = {
     "jamie harris": ["The Prestige", "The Odyssey"],
     "monty stuart": ["The Prestige"],
     "ron perkins": ["The Prestige"],
-    "j. paul moore": ["The Prestige"],
+    "j paul moore": ["The Prestige"],
     "anthony demarco": ["The Prestige"],
     "chao-li chi": ["The Prestige"],
     "gregory humphreys": ["The Prestige"],
-    "john b. crye": ["The Prestige"],
+    "john b crye": ["The Prestige"],
     "sean howse": ["The Prestige"],
     "julie sanford": ["The Prestige"],
     "ezra buzzington": ["The Prestige"],
@@ -10124,7 +10124,7 @@ const filmografiasGrilla = {
     "casey affleck": ["Interstellar", "Oppenheimer"],
     "david oyelowo": ["Interstellar"],
     "collette wolfe": ["Interstellar"],
-    "francis x. mccarthy": ["Interstellar"],
+    "francis x mccarthy": ["Interstellar"],
     "andrew borba": ["Interstellar"],
     "leah cairns": ["Interstellar"],
     "elyes gabel": ["Interstellar", "The Odyssey"],
@@ -10188,7 +10188,7 @@ const filmografiasGrilla = {
     "michael angarano": ["Oppenheimer"],
     "josh peck": ["Oppenheimer"],
     "matthias schweighofer": ["Oppenheimer"],
-    "jarrett j. merz": ["The Odyssey"],
+    "jarrett j merz": ["The Odyssey"],
     "rafi gavron": ["The Odyssey"],
     "iddo goldberg": ["The Odyssey"],
     "john ales": ["The Odyssey"],
@@ -10246,7 +10246,7 @@ const filmografiasGrilla = {
     "bob maroff": ["Taxi Driver"],
     "norman matlock": ["Taxi Driver"],
     "harlan cary poe": ["Taxi Driver"],
-    "ralph s. singleton": ["Taxi Driver"],
+    "ralph s singleton": ["Taxi Driver"],
     "bill mckinney": ["Taxi Driver"],
     "kris kristofferson": ["Alice Doesn't Live Here Anymore"],
     "diane ladd": ["Alice Doesn't Live Here Anymore"],
@@ -10302,7 +10302,7 @@ const filmografiasGrilla = {
     "keith mccready": ["The Color of Money"],
     "carol messing": ["The Color of Money"],
     "steve mizerak": ["The Color of Money"],
-    "bruce a. young": ["The Color of Money"],
+    "bruce a young": ["The Color of Money"],
     "iggy pop": ["The Color of Money"],
     "griffin dunne": ["After Hours"],
     "tommy chong": ["After Hours"],
@@ -10353,8 +10353,8 @@ const filmografiasGrilla = {
     "sonja sohn": ["Bringing Out the Dead"],
     "cynthia roman": ["Bringing Out the Dead"],
     "afemo omilami": ["Bringing Out the Dead"],
-    "cullen o. johnson": ["Bringing Out the Dead"],
-    "arthur j. nascarella": ["Bringing Out the Dead"],
+    "cullen o johnson": ["Bringing Out the Dead"],
+    "arthur j nascarella": ["Bringing Out the Dead"],
     "julyana soelistyo": ["Bringing Out the Dead"],
     "graciela lecube": ["Bringing Out the Dead"],
     "marylouise burke": ["Bringing Out the Dead"],
@@ -10382,7 +10382,7 @@ const filmografiasGrilla = {
     "don rickles": ["Casino"],
     "alan king": ["Casino"],
     "kevin pollak": ["Casino"],
-    "l. q. jones": ["Casino"],
+    "l q jones": ["Casino"],
     "dick smothers": ["Casino"],
     "pasquale cajano": ["Casino"],
     "melissa prophet": ["Casino"],
@@ -10457,7 +10457,7 @@ const filmografiasGrilla = {
     "stanley desantis": ["The Aviator"],
     "edward herrmann": ["The Aviator"],
     "kenneth welsh": ["The Aviator"],
-    "j.c. mackenzie": ["The Aviator", "The Departed"],
+    "jc mackenzie": ["The Aviator", "The Departed"],
     "adam scott": ["The Aviator"],
     "cameron diaz": ["Gangs of New York"],
     "jim broadbent": ["Gangs of New York"],
@@ -10467,7 +10467,7 @@ const filmografiasGrilla = {
     "stephen graham": ["Gangs of New York", "The Irishman"],
     "eddie marsan": ["Gangs of New York"],
     "david hemmings": ["Gangs of New York"],
-    "lawrence gilliard jr.": ["Gangs of New York"],
+    "lawrence gilliard jr": ["Gangs of New York"],
     "cara seymour": ["Gangs of New York"],
     "peter berling": ["Gangs of New York"],
     "george aguilar": ["Gangs of New York"],
@@ -10524,7 +10524,7 @@ const filmografiasGrilla = {
     "christine ebersole": ["The Wolf of Wall Street"],
     "shea whigham": ["The Wolf of Wall Street"],
     "katarina cas": ["The Wolf of Wall Street"],
-    "p.j. byrne": ["The Wolf of Wall Street"],
+    "pj byrne": ["The Wolf of Wall Street"],
     "brian sacca": ["The Wolf of Wall Street"],
     "henry zebrowski": ["The Wolf of Wall Street"],
     "ethan suplee": ["The Wolf of Wall Street"],
@@ -10717,31 +10717,80 @@ function actualizarContadorGrilla() {
 // de escribir: si el nombre sirve para una sola celda libre, se resuelve
 // sola; si sirve para más de una, se iluminan esas celdas y el jugador
 // elige en cuál ponerla (no se puede repetir una respuesta usada).
+// Devuelve true si el actor (ya resuelto a su nombre canónico) tiene algo
+// en su filmografía que cumpla esta categoría (fila o columna).
+function actorCumpleCategoria(nombreMostrado, categoria) {
+    if (categoria.tipo === 'personas') {
+        const normalizado = normalizarTextoJuego(nombreMostrado);
+        return (categoria.nombres || []).some(n => normalizarTextoJuego(n) === normalizado);
+    }
+    const coleccionActor = buscarColeccionPorNombre(nombreMostrado);
+    const filmografiaReal = coleccionActor ? obtenerFilmografiaColeccion(coleccionActor.id) : [];
+    const filmografiaAuxiliar = obtenerFilmografiaGrillaAuxiliar(nombreMostrado);
+    const filmografiaActor = [...filmografiaReal, ...filmografiaAuxiliar].map(t => normalizarTextoJuego(t));
+    const titulosCategoria = obtenerTitulosDeCategoria(categoria);
+    return titulosCategoria.some(t => filmografiaActor.includes(normalizarTextoJuego(t)));
+}
+
+// Intenta reconocer a quién se refiere lo que escribió el jugador: primero
+// busca una cartilla real de Actor/Director (mejor escrita, trae foto), y
+// si no existe, busca en la filmografía auxiliar de Grillas. Devuelve null
+// si no lo reconoce en ninguna de las dos fuentes.
+function resolverNombreJugadorGrilla(textoIngresado) {
+    const coleccionActor = buscarColeccionPorNombre(textoIngresado);
+    if (coleccionActor) return { nombreMostrado: coleccionActor.titulo, foto: coleccionActor.poster };
+    const normalizado = normalizarTextoJuego(textoIngresado);
+    if (filmografiasGrilla[normalizado]) return { nombreMostrado: capitalizarNombre(normalizado), foto: null };
+    return null;
+}
+
 function intentarAdivinarGrilla() {
     if (grillaTerminada) return;
     const dataset = gridsDatasets[datasetIdActivoGrilla];
     const input = document.getElementById('input-grilla');
     const mensaje = document.getElementById('mensaje-grilla');
-    const valorNormalizado = normalizarTextoJuego(input.value);
-    if (!valorNormalizado) return;
+    const textoIngresado = input.value.trim();
+    if (!normalizarTextoJuego(textoIngresado)) return;
 
-    let nombreMostradoEncontrado = null;
+    const resuelto = resolverNombreJugadorGrilla(textoIngresado);
+    if (!resuelto) {
+        erroresGrilla++;
+        mensaje.textContent = `❌ No encontré a "${textoIngresado}" en la base cargada.`;
+        mensaje.className = 'mensaje-elenco error';
+        actualizarContadorGrilla();
+        input.value = '';
+        input.focus();
+        if (erroresGrilla >= MAX_ERRORES_GRILLA && !modoInfinitoGrilla) finalizarGrilla(false);
+        return;
+    }
+
+    const normalizadoEncontrado = normalizarTextoJuego(resuelto.nombreMostrado);
+    const yaUsado = Object.values(celdasResueltasGrilla).some(r => normalizarTextoJuego(r.nombreMostrado) === normalizadoEncontrado);
+    if (yaUsado) {
+        erroresGrilla++;
+        mensaje.textContent = `❌ "${resuelto.nombreMostrado}" ya se usó en otra celda.`;
+        mensaje.className = 'mensaje-elenco error';
+        actualizarContadorGrilla();
+        input.value = '';
+        input.focus();
+        if (erroresGrilla >= MAX_ERRORES_GRILLA && !modoInfinitoGrilla) finalizarGrilla(false);
+        return;
+    }
+
     const candidatas = [];
     for (let f = 0; f < dataset.filas.length; f++) {
         for (let c = 0; c < dataset.columnas.length; c++) {
             const clave = `${f}-${c}`;
             if (celdasResueltasGrilla[clave]) continue;
-            const encontrado = dataset.celdas[f][c].find(op => op.alias.some(alias => normalizarTextoJuego(alias) === valorNormalizado));
-            if (encontrado) {
+            if (actorCumpleCategoria(resuelto.nombreMostrado, dataset.filas[f]) && actorCumpleCategoria(resuelto.nombreMostrado, dataset.columnas[c])) {
                 candidatas.push({ fila: f, columna: c });
-                nombreMostradoEncontrado = encontrado.nombreMostrado;
             }
         }
     }
 
     if (candidatas.length === 0) {
         erroresGrilla++;
-        mensaje.textContent = `❌ "${input.value}" no sirve para ninguna celda libre.`;
+        mensaje.textContent = `❌ "${resuelto.nombreMostrado}" no cumple ninguna celda libre.`;
         mensaje.className = 'mensaje-elenco error';
         actualizarContadorGrilla();
         input.value = '';
@@ -10754,12 +10803,12 @@ function intentarAdivinarGrilla() {
 
     if (candidatas.length === 1) {
         input.value = '';
-        resolverCeldaGrilla(candidatas[0].fila, candidatas[0].columna, nombreMostradoEncontrado);
+        resolverCeldaGrilla(candidatas[0].fila, candidatas[0].columna, resuelto.nombreMostrado);
         return;
     }
 
-    // Ambiguo: hay más de una celda libre donde esta respuesta es válida
-    nombrePendienteGrilla = nombreMostradoEncontrado;
+    // Ambiguo: hay más de una celda libre donde esta persona cumple fila+columna
+    nombrePendienteGrilla = resuelto.nombreMostrado;
     celdasCandidatasGrilla = candidatas;
     document.querySelectorAll('#tabla-grilla-juego .celda-juego').forEach(celda => {
         const f = parseInt(celda.dataset.fila);
@@ -10767,7 +10816,7 @@ function intentarAdivinarGrilla() {
         const esCandidata = candidatas.some(cand => cand.fila === f && cand.columna === c);
         celda.classList.toggle('candidata', esCandidata);
     });
-    mensaje.textContent = `🤔 "${nombreMostradoEncontrado}" sirve para ${candidatas.length} celdas — tocá en cuál la ponés.`;
+    mensaje.textContent = `🤔 "${resuelto.nombreMostrado}" sirve para ${candidatas.length} celdas — tocá en cuál la ponés.`;
     mensaje.className = 'mensaje-elenco';
     input.value = '';
     ocultarSugerenciasGrilla();
@@ -10894,15 +10943,23 @@ function capitalizarNombre(claveNormalizada) {
 }
 
 // Junta, sin duplicar, los nombres de la filmografía auxiliar de Grillas
-// con los de las cartillas reales de Actores/Directores del sitio (estas
-// últimas ya tienen el nombre bien escrito, así que se usan tal cual).
+// con los de las cartillas reales de Actores/Directores del sitio. Se
+// deduplica por nombre NORMALIZADO (sin importar mayúsculas/tildes), y
+// cuando el mismo nombre existe en las dos fuentes, se prioriza el de la
+// cartilla real porque ya tiene la escritura correcta (ej. "DiCaprio" con
+// mayúscula en el medio, que la capitalización automática de la
+// filmografía auxiliar no puede reconstruir bien).
 function obtenerNombresParaSugerenciasGrilla() {
-    const nombres = new Set();
-    Object.keys(filmografiasGrilla).forEach(clave => nombres.add(capitalizarNombre(clave)));
-    colecciones.forEach(c => {
-        if (c.categoria === 'actores' || c.categoria === 'directores') nombres.add(c.titulo);
+    const nombresPorClave = new Map();
+    Object.keys(filmografiasGrilla).forEach(clave => {
+        nombresPorClave.set(clave, capitalizarNombre(clave));
     });
-    return Array.from(nombres);
+    colecciones.forEach(c => {
+        if (c.categoria === 'actores' || c.categoria === 'directores') {
+            nombresPorClave.set(normalizarTextoJuego(c.titulo), c.titulo);
+        }
+    });
+    return Array.from(nombresPorClave.values());
 }
 
 const listaNombresSugerenciasGrilla = obtenerNombresParaSugerenciasGrilla();
