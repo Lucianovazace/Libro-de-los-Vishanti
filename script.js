@@ -559,6 +559,64 @@ const listaMedia = [
 
     // --- RYAN GOSLING (con filtros por década) ---
     { titulo: "The Gray Man", categoria: "ryan-gosling", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZmFhZTNlNzctZGQzZi00MTA3LThiNjMtYWQzNjUzMjNjZjA3XkEyXkFqcGc@.V1.jpg" },
+    { titulo: "Men, Women and Children", categoria: "timothee-chalamet", subtipo: "2010", tipo: "Película", poster: "https://i0.wp.com/www.heyuguys.com/images/2014/11/Men-Women-and-Children-Poster.jpg?fit=961%2C1500&ssl=1" },
+    { titulo: "Interstellar", categoria: "timothee-chalamet", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/91obuWzA3XL.jpg" },
+    { titulo: "Worst Friends", categoria: "timothee-chalamet", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMzk3ODA0MzY5M15BMl5BanBnXkFtZTgwMTM3NzMyMjE@._V1_.jpg" },
+    { titulo: "One & Two", categoria: "timothee-chalamet", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTQyZWE3YTQtMzdlYS00OGY3LWEzNDMtZmI3MTRlYTUwNzgwXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "The Aderall Diaries", categoria: "timothee-chalamet", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZGIyNGU0NDYtZmUxYi00MGJjLTkzNDEtYWM0ZTVjOThiZWI1XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Hostiles", categoria: "timothee-chalamet", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61Hoei3PR2L._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Beautiful Boy", categoria: "timothee-chalamet", subtipo: "2010", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/322566.jpg" },
+    { titulo: "A Rainy Day in New York", categoria: "timothee-chalamet", subtipo: "2010", tipo: "Película", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzaHDrp-ZVijte7TIVCzHPU-7iofJqFDvCCU1wnkbGLCE9JZDHMdPf_gT8&s=10" },
+    { titulo: "The King", categoria: "timothee-chalamet", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOTFhZTY4YWUtMmJjMy00OTE0LTlmZjctMDg5MTk4N2ZjZWNjXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "Little Women", categoria: "timothee-chalamet", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61TK-+geKPL.AC_UF894,1000_QL80.jpg" },
+    { titulo: "The French Dispatch", categoria: "timothee-chalamet", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71nWfxOlCTL.jpg" },
+    { titulo: "Dune: Parte Uno", categoria: "timothee-chalamet", subtipo: "2020", tipo: "Película", poster: "https://cdn.europosters.eu/image/1300/302577.jpg" },
+    { titulo: "Don't Look Up", categoria: "timothee-chalamet", subtipo: "2020", tipo: "Película", poster: "https://dnm.nflximg.net/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABaa7zSeOtW5ON9mx0Qmpii1K-9xpKKXfNTwcB7AvclDduYgu9lAQDpnVTG7QBY2BteEMa7TOuFtrz5jL6PYv-cOCn4mmsWyylywc.jpg?r=5b6" },
+    { titulo: "Bones and All", categoria: "timothee-chalamet", subtipo: "2020", tipo: "Película", poster: "https://i.pinimg.com/736x/93/c9/42/93c9420b3cd9e145c6580e2786bbe8c3.jpg" },
+    { titulo: "Wonka", categoria: "timothee-chalamet", subtipo: "2020", tipo: "Película", poster: "https://purodiseno.lat/wp-content/uploads/2023/10/WONKA-POSTER-02.jpg" },
+    { titulo: "Dune: Parte Dos", categoria: "timothee-chalamet", subtipo: "2020", tipo: "Película", poster: "https://deadline.com/wp-content/uploads/2023/05/FvIhyI9aUAUZz6l.jpeg?w=819" },
+    { titulo: "A Complete Unknown", categoria: "timothee-chalamet", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYTA2NTA5NDYtMzlkOC00MTQxLWI0NDQtMzk2M2YzMGE4MTkxXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "Marty Supreme", categoria: "timothee-chalamet", subtipo: "2020", tipo: "Película", poster: "https://s3.amazonaws.com/nightjarprod/content/uploads/sites/193/2026/02/09112829/lYWEXbQgRTR4ZQleSXAgRbxAjvq-scaled.jpg" },
+    { titulo: "The Courier", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/zFIjKtZrzhmc7HecdFXXjsLR2Ig.jpg" },
+    { titulo: "The Mauritanian", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZjkwODkwNTEtZGZlZC00Y2FkLThmMTQtYTI1NGI1OGUwNWUxXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "The Power of the Dog", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNzgyMzA2NDEtZWUxNy00MDNmLTllMDYtNzZmNTU5ZWVmMzhlXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "The Electrical Life of Louis Wain", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNDk2NmJiN2ItMGI3Yi00OGE5LThiMWEtYzU3MjE0ZmU1M2M2XkEyXkFqcGc@.V1.jpg" },
+    { titulo: "Spider-Man: No Way Home", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", poster: "https://www.cinemascomics.com/wp-content/uploads/2022/01/poster-Spider-man-no-way-home.jpg" },
+    { titulo: "Doctor Strange in the Multiverse of Madness", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", poster: "http://www.impawards.com/2022/posters/doctor_strange_in_the_multiverse_of_madness.jpg" },
+    { titulo: "The Book of Clarence", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", poster: "https://www.sonypictures.ca/sites/canada/files/2024-02/DP_8866065_BOOKOFCLARENCE%2CTHE_2000x3000LSR_HEKeyArt_1333x2000_thumbnail-min.jpg" },
+    { titulo: "The End We Start From", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", poster: "https://public-website-assets.paramountpictures.com/paramount2025/s3fs-public/styles/poster_medium/public/theendwestartfrom-pm-800x1200-c.jpg?itok=RkEwDLbG" },
+    { titulo: "The Wonderful Story of Henry Sugar and Three More", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BN2UwOWVlZWQtMmM0YS00Njc2LTlhOWYtYTA1ZTMwY2NjNmM1XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "Four Lions", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/lU9WFPChJ1CsD5kZuYoCdoAlbRd.jpg" },
+    { titulo: "Third Star", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BY2Q5YjAyMGQtYTRkZi00M2Y3LWEwYTQtYjZmZjM4ZDNjZWUzXkEyXkFqcGc@.V1.jpg" },
+    { titulo: "The Whistleblower", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTkwNzU4MDk1OF5BMl5BanBnXkFtZTcwMjIyMjg4NQ@@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "Tinker Tailor Soldier Spy", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/3HlMztiMrTnhU1u807MGUizEXxH.jpg" },
+    { titulo: "War Horse", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://cdn11.bigcommerce.com/s-ydriczk/products/86352/images/85910/war_horse_original_movie_poster_buy_now_at_starstills__30138__16859.1666082997.450.659.jpg?c=2" },
+    { titulo: "Wreckers", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNDAxMzA5ODk0Ml5BMl5BanBnXkFtZTgwOTQ1MTgwMzE@.V1.jpg" },
+    { titulo: "The Hobbit: An Unexpected Journey", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/67DAaVjjFG7qyml1bu34PV17FKS.jpg" },
+    { titulo: "Star Trek Into Darkness", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/7XrRkhMa9lQ71RszzSyVrJVvhyS.jpg" },
+    { titulo: "12 Years a Slave", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "http://www.impawards.com/2013/posters/twelve_years_a_slave.jpg" },
+    { titulo: "The Fifth Estate", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71v3XMCnYqL.AC_UF894,1000_QL80.jpg" },
+    { titulo: "August: Osage County", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://cdn.posteritati.com/posters/000/000/030/057/august-osage-county-md-web.jpg" },
+    { titulo: "The Hobbit: The Desolation of Smaug", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/xQYiXsheRCDBA39DOrmaw1aSpbk.jpg" },
+    { titulo: "The Imitation Game", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNjI3NjY1Mjg3MV5BMl5BanBnXkFtZTgwMzk5MDQ3MjE@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "The Hobbit: The Battle of the Five Armies", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/u1F3Q9fhPmptPKsqMOFJbgiWfRq.jpg" },
+    { titulo: "Black Mass", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/nSbpuyd2UySuW7kaoXzYUfes1Bl.jpg" },
+    { titulo: "Zoolander 2", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/n8AJzALlTPBwe9Tkv3tdxbiAr9i.jpg" },
+    { titulo: "Doctor Strange", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://uruloki.org/felipeblog/images2016/20160412-doctorstrange.jpg" },
+    { titulo: "Thor: Ragnarok", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://tecolotito.elsiglodetorreon.com.mx/cdn-cgi/image/format=webp,width=1546,quality=75/i/2017/04/929651.jpeg" },
+    { titulo: "The Current War", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTk4MzhkMDAtNWMyMi00ZmI4LWEyNTUtZDVkMTVlZjJmYTAzXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "Avengers: Infinity War", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://www.blackfilm.com/read/wp-content/uploads/2017/11/Avengers-Infinity-War-Teaser-Poster.jpg" },
+    { titulo: "The Grinch", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/1Bc9VNd9CIHIyJtPKFqSQzrXWru.jpg" },
+    { titulo: "Mowgli: Legend of the Jungle", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/wdj8FK2bCA7iNtZRSzJHrltAwnr.jpg" },
+    { titulo: "Avengers: Endgame", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://cdn.marvel.com/content/2x/MLou2_Teaser_1-Sht_v6_Lg.jpg" },
+    { titulo: "Between Two Ferns: The Movie", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://www.shutterstock.com/editorial/image-editorial/MaTdAa15M8j4U13bMjUxMzA=/between-two-ferns-movie-2019-poster-art-440nw-10441528i.jpg" },
+    { titulo: "1917", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYzkxZjg2NDQtMGVjMy00NWZkLTk0ZDEtZWE3NDYwYjAyMTg1XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "To Kill a King", categoria: "benedict-cumberbatch", subtipo: "2000", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOWM0OWNjMjAtZGQzYy00MDU0LWFiNWYtYWQyODMxZjc0NTFjXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "Starter for 10", categoria: "benedict-cumberbatch", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/yr6DgwNTqPCyIe0zBeRmXh7bXwG.jpg" },
+    { titulo: "Amazing Grace", categoria: "benedict-cumberbatch", subtipo: "2000", tipo: "Película", poster: "https://i.pinimg.com/736x/0d/df/d6/0ddfd62830a837f220ea2be978f9c127.jpg" },
+    { titulo: "Atonement", categoria: "benedict-cumberbatch", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/bTwkpeOMChZtxDUPtbaQg1AbE5B.jpg" },
+    { titulo: "The Other Boleyn Girl", categoria: "benedict-cumberbatch", subtipo: "2000", tipo: "Película", poster: "https://i.pinimg.com/736x/9e/54/94/9e54947c7b32f8e1bac409230a04fd22.jpg" },
+    { titulo: "Creation", categoria: "benedict-cumberbatch", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/vS6ne76vjRH7Z88rAqYLCcQatB4.jpg" },
     { titulo: "West Side Story", categoria: "steven-spielberg", subtipo: "2020", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/319296.jpg" },
     { titulo: "The Fabelmans", categoria: "steven-spielberg", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/cvarc1KjUJHXtgCcRRt7NNeZcp1.jpg" },
     { titulo: "Disclosure Day", categoria: "steven-spielberg", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/w220_and_h330_face/viBKDtgAceQpH4OBuoqvKGMx0jb.jpg" },
@@ -905,6 +963,13 @@ const listaMedia = [
     { titulo: "We Live in Time", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/vEmiJetB0C7VJjw60QNXO0oMMws.jpg" },
     { titulo: "Thunderbolts*", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71Y2ZfgT+4L.jpg" },
     { titulo: "Marvel Zombies", categoria: "florence-pugh", subtipo: "2020", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/5UbrwzZUR5lcoDds2phuahFHHhi.jpg" },
+    { titulo: "The Falling", categoria: "florence-pugh", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BY2FjNTlhOWYtNzNkZi00MjgwLTkzNmItYTYxMjNkMGUzNWU5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Lady Macbeth", categoria: "florence-pugh", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNzRjMzYwYzMtOTJiMC00ZTM4LThjZGUtNjZkZGE1NGNjYzEyXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Outlaw King", categoria: "florence-pugh", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZjI0MGZkYjItODFmZC00OWIyLTk4MDctYTIwZDZhYThhYWNlXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Malevolent", categoria: "florence-pugh", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZTkwMWNlODQtNzViNi00ZjVjLTg2NjItZTE2MTViM2IyNDI1XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Fighting with My Family", categoria: "florence-pugh", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYjliMDY3N2YtOTI2NS00MjQ0LWFjOGItMjQ1MzYyZGVlMDJiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Midsommar", categoria: "florence-pugh", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMzQxNzQzOTQwM15BMl5BanBnXkFtZTgwMDQ2NTcwODM@._V1_.jpg" },
+    { titulo: "Little Women", categoria: "florence-pugh", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61TK-+geKPL.AC_UF894,1000_QL80.jpg" },
 
     // --- EMMA STONE (con filtros por década) ---
     { titulo: "The Croods: A New Age", categoria: "emma-stone", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61wgHMAdD7L.jpg" },
@@ -2567,27 +2632,20 @@ const colecciones = [
         titulo: "Timothée Chalamet",
         categoria: "actores",
         poster: "https://w0.peakpx.com/wallpaper/349/641/HD-wallpaper-timothee-chalamet-tim-timmy.jpg",
+        esContenedor: true,
         etiqueta: "Actor",
-        peliculas: [
-            { titulo: "Men, Women and Children", poster: "https://i0.wp.com/www.heyuguys.com/images/2014/11/Men-Women-and-Children-Poster.jpg?fit=961%2C1500&ssl=1" },
-            { titulo: "Interstellar", poster: "https://m.media-amazon.com/images/I/91obuWzA3XL.jpg" },
-            { titulo: "Worst Friends", poster: "https://m.media-amazon.com/images/M/MV5BMzk3ODA0MzY5M15BMl5BanBnXkFtZTgwMTM3NzMyMjE@._V1_.jpg" },
-            { titulo: "One & Two", poster: "https://m.media-amazon.com/images/M/MV5BMTQyZWE3YTQtMzdlYS00OGY3LWEzNDMtZmI3MTRlYTUwNzgwXkEyXkFqcGc@._V1_.jpg" },
-            { titulo: "The Aderall Diaries", poster: "https://m.media-amazon.com/images/M/MV5BZGIyNGU0NDYtZmUxYi00MGJjLTkzNDEtYWM0ZTVjOThiZWI1XkEyXkFqcGc@._V1_.jpg" },
-            { titulo: "Hostiles", poster: "https://m.media-amazon.com/images/I/61Hoei3PR2L._AC_UF894,1000_QL80_.jpg" },
-            { titulo: "Beautiful Boy", poster: "https://cdng.europosters.eu/pod_public/1300/322566.jpg" },
-            { titulo: "A Rainy Day in New York", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzaHDrp-ZVijte7TIVCzHPU-7iofJqFDvCCU1wnkbGLCE9JZDHMdPf_gT8&s=10" },
-            { titulo: "The King", poster: "https://m.media-amazon.com/images/M/MV5BOTFhZTY4YWUtMmJjMy00OTE0LTlmZjctMDg5MTk4N2ZjZWNjXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
-            { titulo: "Little Women", poster: "https://m.media-amazon.com/images/I/61TK-+geKPL.AC_UF894,1000_QL80.jpg" },
-            { titulo: "The French Dispatch", poster: "https://m.media-amazon.com/images/I/71nWfxOlCTL.jpg" },
-            { titulo: "Dune: Parte Uno", poster: "https://cdn.europosters.eu/image/1300/302577.jpg" },
-            { titulo: "Don't Look Up", poster: "https://dnm.nflximg.net/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABaa7zSeOtW5ON9mx0Qmpii1K-9xpKKXfNTwcB7AvclDduYgu9lAQDpnVTG7QBY2BteEMa7TOuFtrz5jL6PYv-cOCn4mmsWyylywc.jpg?r=5b6" },
-            { titulo: "Bones and All", poster: "https://i.pinimg.com/736x/93/c9/42/93c9420b3cd9e145c6580e2786bbe8c3.jpg" },
-            { titulo: "Wonka", poster: "https://purodiseno.lat/wp-content/uploads/2023/10/WONKA-POSTER-02.jpg" },
-            { titulo: "Dune: Parte Dos", poster: "https://deadline.com/wp-content/uploads/2023/05/FvIhyI9aUAUZz6l.jpeg?w=819" },
-            { titulo: "A Complete Unknown", poster: "https://m.media-amazon.com/images/M/MV5BYTA2NTA5NDYtMzlkOC00MTQxLWI0NDQtMzk2M2YzMGE4MTkxXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
-            { titulo: "Marty Supreme", poster: "https://s3.amazonaws.com/nightjarprod/content/uploads/sites/193/2026/02/09112829/lYWEXbQgRTR4ZQleSXAgRbxAjvq-scaled.jpg" }
-        ]
+        progresoCategoria: "timothee-chalamet",
+        peliculas: []
+    },
+    {
+        id: "benedict-cumberbatch",
+        titulo: "Benedict Cumberbatch",
+        categoria: "actores",
+        poster: "https://m.media-amazon.com/images/M/MV5BMjE0MDkzMDQwOF5BMl5BanBnXkFtZTgwOTE1Mjg1MzE@.V1.jpg",
+        esContenedor: true,
+        etiqueta: "Actor",
+        progresoCategoria: "benedict-cumberbatch",
+        peliculas: []
     },
     {
         id: "margot-robbie",
@@ -4920,6 +4978,8 @@ function abrirColeccion(colId) {
         'oscar-2026': '.btn-filtro-oscar[data-tipo="mejor-pelicula"]',
         'leonardo-dicaprio': '.btn-filtro-dicaprio[data-tipo="2020"]',
         'ryan-gosling': '.btn-filtro-gosling[data-tipo="2020"]',
+        'timothee-chalamet': '.btn-filtro-chalamet[data-tipo="2020"]',
+        'benedict-cumberbatch': '.btn-filtro-cumberbatch[data-tipo="2020"]',
         'julia-roberts': '.btn-filtro-julia-roberts[data-tipo="2020"]',
         'sydney-sweeney': '.btn-filtro-sweeney[data-tipo="2020"]',
         'tom-holland': '.btn-filtro-holland[data-tipo="2020"]',
@@ -4975,6 +5035,41 @@ function actualizarProgresoColeccion(colId) {
 // Aplica en conjunto el filtro de personaje/año YA activo en la sección más el
 // de editorial: una tarjeta se muestra solo si pasa las DOS condiciones.
 // No reemplaza al filtro de personaje existente, lo restringe más.
+// ==========================================
+// FILTRO "TODO / PELÍCULAS / SERIES" (combinado con el de década, para
+// fichas de Actores). Reutilizable para cualquier actor: solo hace falta
+// agregar la fila de botones en el HTML e inicializarla una vez.
+// ==========================================
+function aplicarFiltroTipoYDecadaActor(seccionId, claseBotonesDecada) {
+    const seccion = document.getElementById(seccionId);
+    if (!seccion) return;
+    const botonDecadaActivo = seccion.querySelector(`.${claseBotonesDecada}.activo`);
+    const decadaElegida = botonDecadaActivo ? botonDecadaActivo.getAttribute('data-tipo') : null;
+    const botonTipoActivo = seccion.querySelector('.btn-filtro-tipo-actor.activo');
+    const tipoElegido = botonTipoActivo ? botonTipoActivo.getAttribute('data-tipo-medio') : 'todo';
+
+    seccion.querySelectorAll('.tarjeta-media').forEach(tarjeta => {
+        const coincideDecada = !decadaElegida || tarjeta.getAttribute('data-subtipo') === decadaElegida;
+        const etiquetaTipo = tarjeta.querySelector('p') ? tarjeta.querySelector('p').textContent : '';
+        const coincideTipo = tipoElegido === 'todo'
+            || (tipoElegido === 'pelis' && etiquetaTipo === 'Película')
+            || (tipoElegido === 'series' && etiquetaTipo === 'Serie');
+        tarjeta.style.display = (coincideDecada && coincideTipo) ? 'flex' : 'none';
+    });
+}
+
+function inicializarFiltroTipoActor(seccionId, claseBotonesDecada) {
+    const seccion = document.getElementById(seccionId);
+    if (!seccion) return;
+    seccion.querySelectorAll('.btn-filtro-tipo-actor').forEach(boton => {
+        boton.addEventListener('click', function() {
+            seccion.querySelectorAll('.btn-filtro-tipo-actor').forEach(b => b.classList.remove('activo'));
+            this.classList.add('activo');
+            aplicarFiltroTipoYDecadaActor(seccionId, claseBotonesDecada);
+        });
+    });
+}
+
 function aplicarFiltroComicCombinado(seccionId, claseBotonesPersonaje, atributoPersonajeTarjeta) {
     const botonPersonajeActivo = document.querySelector(`.${claseBotonesPersonaje}.activo`);
     const tipoElegido = botonPersonajeActivo ? botonPersonajeActivo.getAttribute('data-tipo') : 'todos';
@@ -5092,6 +5187,8 @@ function renderizarContenido() {
         "oscar-2020": "seccion-oscar-2020",
         "leonardo-dicaprio": "seccion-leonardo-dicaprio",
         "ryan-gosling": "seccion-ryan-gosling",
+        "timothee-chalamet": "seccion-timothee-chalamet",
+        "benedict-cumberbatch": "seccion-benedict-cumberbatch",
         "julia-roberts": "seccion-julia-roberts",
         "sydney-sweeney": "seccion-sydney-sweeney",
         "tom-holland": "seccion-tom-holland",
@@ -6589,6 +6686,13 @@ if(btnVolverTimotheeChalamet) {
     });
 }
 
+const btnVolverBenedictCumberbatch = document.getElementById('btn-volver-benedict-cumberbatch');
+if(btnVolverBenedictCumberbatch) {
+    btnVolverBenedictCumberbatch.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-actores'));
+    });
+}
+
 const btnVolverMargotRobbie = document.getElementById('btn-volver-margot-robbie');
 if(btnVolverMargotRobbie) {
     btnVolverMargotRobbie.addEventListener('click', () => {
@@ -7248,6 +7352,40 @@ botonesFiltroGosling.forEach(boton => {
 });
 
 // ==========================================
+// FILTROS "TIMOTHÉE CHALAMET" — por década
+// ==========================================
+const botonesFiltroChalamet = document.querySelectorAll('.btn-filtro-chalamet');
+botonesFiltroChalamet.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroChalamet.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const tipoElegido = this.getAttribute('data-tipo');
+        const tarjetas = document.querySelectorAll('#seccion-timothee-chalamet .tarjeta-media');
+
+        tarjetas.forEach(tarjeta => {
+            tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
+        });
+    });
+});
+
+// ==========================================
+// FILTROS "BENEDICT CUMBERBATCH" — por década
+// ==========================================
+const botonesFiltroCumberbatch = document.querySelectorAll('.btn-filtro-cumberbatch');
+botonesFiltroCumberbatch.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroCumberbatch.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const tipoElegido = this.getAttribute('data-tipo');
+        const tarjetas = document.querySelectorAll('#seccion-benedict-cumberbatch .tarjeta-media');
+
+        tarjetas.forEach(tarjeta => {
+            tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
+        });
+    });
+});
+
+// ==========================================
 // FILTROS "JULIA ROBERTS" — por década
 // ==========================================
 const botonesFiltroJuliaRoberts = document.querySelectorAll('.btn-filtro-julia-roberts');
@@ -7392,14 +7530,10 @@ botonesFiltroPugh.forEach(boton => {
     boton.addEventListener('click', function() {
         botonesFiltroPugh.forEach(b => b.classList.remove('activo'));
         this.classList.add('activo');
-        const tipoElegido = this.getAttribute('data-tipo');
-        const tarjetas = document.querySelectorAll('#seccion-florence-pugh .tarjeta-media');
-
-        tarjetas.forEach(tarjeta => {
-            tarjeta.style.display = (tarjeta.getAttribute('data-subtipo') === tipoElegido) ? 'flex' : 'none';
-        });
+        aplicarFiltroTipoYDecadaActor('seccion-florence-pugh', 'btn-filtro-pugh');
     });
 });
+inicializarFiltroTipoActor('seccion-florence-pugh', 'btn-filtro-pugh');
 
 // ==========================================
 // FILTROS "EMMA STONE" (por década)
@@ -10662,7 +10796,7 @@ function pintarCeldaResuelta(celda, resuelta, fila, col) {
     celda.classList.remove('mostrando-coincidencias');
     if (resuelta.foto) {
         celda.innerHTML = `
-            <img src="${resuelta.foto}" alt="${resuelta.nombreMostrado}" style="width:100%; height:70%; object-fit:cover; border-radius:6px 6px 0 0;">
+            <img src="${resuelta.foto}" alt="${resuelta.nombreMostrado}" style="width:100%; height:70%; object-fit:cover; object-position:center 15%; border-radius:6px 6px 0 0;">
             <span class="nombre-celda-resuelta">${resuelta.nombreMostrado}</span>
         `;
     } else {

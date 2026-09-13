@@ -316,8 +316,10 @@ h2 {
 
 @media (min-width: 700px) {
     .tabla-grilla-juego {
-        max-width: 420px;
-        grid-template-columns: 80px repeat(3, 100px);
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: 90px repeat(3, 120px);
     }
 }
 
