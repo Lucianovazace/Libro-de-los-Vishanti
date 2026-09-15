@@ -3235,8 +3235,9 @@ const colecciones = [
         titulo: "Marvel's Avengers",
         categoria: "marvel-videojuegos",
         poster: "https://m.media-amazon.com/images/M/MV5BMzRkYmUyMGYtYjk4OC00M2NlLThjMDAtZmIwODI4MDI3YTJlXkEyXkFqcGc@.V1.jpg",
-        esContenedor: true,
         etiqueta: "Videojuego",
+        esVideojuego: true,
+        ocultarProgreso: true,
         textoBotonAbrir: "Ficha Técnica 📊",
         peliculas: []
     },
@@ -4993,15 +4994,18 @@ function renderizarColecciones() {
         } else {
             const textoPendiente = col.esVideojuego ? 'Marcar Jugado' : 'Marcar Visto';
             const etiquetaTipo = col.etiqueta || (col.esVideojuego ? 'Colección de Videojuegos' : 'Colección Animada');
+            const barraProgresoSimple = col.ocultarProgreso ? '' : `
+                    <div class="barra-progreso-container">
+                        <div class="barra-progreso-fill" id="barra-${col.id}-fill"></div>
+                    </div>
+                    <p class="barra-progreso-texto" id="barra-${col.id}-texto">0% completado</p>
+            `;
             htmlColeccion = `
                 <div class="tarjeta-media tarjeta-coleccion" data-coleccion="${col.id}" data-accion="${col.esVideojuego ? 'jugado' : 'visto'}" data-tipo="${col.tipoArrow || ''}" data-crono="${col.crono || ''}" data-orden="${col.ordenSalida || ''}" data-tierra="${col.tierra || ''}" data-subtipo="${col.subtipo || ''}">
                     <img src="${col.poster}" alt="${col.titulo}">
                     <h3>${col.titulo}</h3>
                     <p>${etiquetaTipo}</p>
-                    <div class="barra-progreso-container">
-                        <div class="barra-progreso-fill" id="barra-${col.id}-fill"></div>
-                    </div>
-                    <p class="barra-progreso-texto" id="barra-${col.id}-texto">0% completado</p>
+                    ${barraProgresoSimple}
                     <div class="botones-coleccion">
                         <button class="btn-accion">${textoPendiente}</button>
                         <button class="btn-abrir-coleccion" data-coleccion="${col.id}">${col.textoBotonAbrir || 'Abrir 📂'}</button>
