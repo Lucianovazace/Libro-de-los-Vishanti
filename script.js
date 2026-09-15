@@ -285,7 +285,7 @@ const listaMedia = [
 
     // --- MARVEL: VIDEOJUEGOS (sueltos, ver colección "Insomniac" más abajo) ---
     { titulo: "Marvel's Guardians of the Galaxy", categoria: "marvel-videojuegos", tipo: "Videojuego", poster: "https://m.media-amazon.com/images/I/81W8yPIxOlL.jpg" },
-    { titulo: "Marvel's Avengers", categoria: "marvel-videojuegos", tipo: "Videojuego", poster: "https://m.media-amazon.com/images/M/MV5BMzRkYmUyMGYtYjk4OC00M2NlLThjMDAtZmIwODI4MDI3YTJlXkEyXkFqcGc@.V1.jpg" },
+    // (Marvel's Avengers ahora es ficha técnica explorable, ver colecciones)
     { titulo: "Marvel Rivals", categoria: "marvel-videojuegos", tipo: "Videojuego", poster: "https://m.media-amazon.com/images/M/MV5BMDExODM1MjItNDA1Zi00NGQ3LTkwYTctNmFhODhkNjRmNzJkXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
     { titulo: "Marvel Cosmic Invasion", categoria: "marvel-videojuegos", tipo: "Videojuego", poster: "https://store-images.s-microsoft.com/image/apps.45589.14072829118255167.ff1664d8-c187-4947-9c20-847c3ddd6dae.0288dbf2-a78d-45ed-a155-f539ce6bfd40" },
 
@@ -362,7 +362,6 @@ const listaMedia = [
     { titulo: "Bernardo y Bianca", categoria: "disney-animation", subtipo: "1970", tipo: "Película", poster: "https://static.wikia.nocookie.net/yatoroba/images/f/f5/Bernardo_y_Bianca_DVD.jpg/revision/latest?cb=20250818234942&path-prefix=es" },
 
     // --- SITCOMS ---
-    { titulo: "Friends", categoria: "sitcoms", tipo: "Serie", poster: "https://www.yourdecoration.com/cdn/shop/products/Poster-Friends-In-Central-Perk-61x91-5cm-Pyramid-PP32138.jpg?v=1767619925" },
     { titulo: "Seinfeld", categoria: "sitcoms", tipo: "Serie", poster: "https://i.pinimg.com/736x/8f/a1/3f/8fa13fce3f4f078c517c81aa063771e2.jpg" },
     { titulo: "The Fresh Prince of Bel-Air", categoria: "sitcoms", tipo: "Serie", poster: "https://m.media-amazon.com/images/I/61KGeA2XLfL.jpg" },
     { titulo: "The Nanny", categoria: "sitcoms", tipo: "Serie", poster: "https://m.media-amazon.com/images/I/61gtOYwWnPL.AC_UF894,1000_QL80.jpg" },
@@ -373,8 +372,6 @@ const listaMedia = [
     { titulo: "It's Always Sunny in Philadelphia", categoria: "sitcoms", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/o0tMMK33JqmtpcWw0H41cEr9xQB.jpg" },
     { titulo: "Modern Family", categoria: "sitcoms", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/k5Qg5rgPoKdh3yTJJrLtyoyYGwC.jpg" },
     { titulo: "Parks and Recreation", categoria: "sitcoms", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/6KrY1WOj8UaCtrEAIW9rLh0UtD6.jpg" },
-    { titulo: "Brooklyn Nine-Nine", categoria: "sitcoms", tipo: "Serie", poster: "https://i.pinimg.com/736x/52/1d/27/521d271fb4b41a5e19a30de376361a30.jpg" },
-    { titulo: "Community", categoria: "sitcoms", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/3KUjDt8XY7w2Ku70UE0SECmv1zP.jpg" },
     { titulo: "New Girl", categoria: "sitcoms", tipo: "Serie", poster: "https://pics.filmaffinity.com/New_Girl_Serie_de_TV-502564246-large.jpg" },
     { titulo: "The Good Place", categoria: "sitcoms", tipo: "Serie", poster: "https://m.media-amazon.com/images/M/MV5BMTgzMzAyOTg4Ml5BMl5BanBnXkFtZTgwMjA0Mjk0OTE@.V1_FMjpg_UX1000.jpg" },
     { titulo: "The Ranch", categoria: "sitcoms", tipo: "Serie", poster: "https://m.media-amazon.com/images/M/MV5BMTYxOTU5ODE0OV5BMl5BanBnXkFtZTgwNzM0MzQ1MDI@.V1_FMjpg_UX1000.jpg" },
@@ -683,6 +680,40 @@ const listaMedia = [
     { titulo: "Guardianes de La Galaxia", categoria: "james-gunn", subtipo: "2010", tipo: "Película", poster: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p12037541_b_v8_ay.jpg" },
     { titulo: "Guardianes de La Galaxia Vol. 2", categoria: "james-gunn", subtipo: "2010", tipo: "Película", poster: "https://external-preview.redd.it/official-guardians-of-the-galaxy-vol-2-teaser-poster-v0-TjDcWtSjsp7PD12icRxi9UVVWL-38pmlw29-42nNvOI.jpg?auto=webp&s=da143bea206173e3cc2b0d5a4e8f2f84b24a994e" },
     { titulo: "Slither", categoria: "james-gunn", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/zNlJvCY3Pz7SE09Lf4G7uPs5XFZ.jpg" },
+    { titulo: "Nights and Weekends", categoria: "greta-gerwig", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTU5NzM0NjUxOF5BMl5BanBnXkFtZTcwMjUyMTQ5MQ@@.V1.jpg" },
+    { titulo: "Lady Bird", categoria: "greta-gerwig", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/gl66K7zRdtNYGrxyS2YDUP5ASZd.jpg" },
+    { titulo: "Little Women", categoria: "greta-gerwig", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61TK-+geKPL.AC_UF894,1000_QL80.jpg" },
+    { titulo: "Barbie", categoria: "greta-gerwig", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/dekMkQf0kqAmztUca9lX5e5Pjbp.jpg" },
+    { titulo: "Songs My Brothers Taught Me", categoria: "chloe-zhao", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMjZhMTYyOTMtOWNlMi00MDVhLThjM2ItODFjYmI3NGQxNDY2XkEyXkFqcGc@.V1.jpg" },
+    { titulo: "The Rider", categoria: "chloe-zhao", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMjQ3ODM5MjY2N15BMl5BanBnXkFtZTgwOTU5MjM4NDM@.V1.jpg" },
+    { titulo: "Nomadland", categoria: "chloe-zhao", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZWY3YTIwOGItODQ5Mi00NmI4LTgxN2QtZmI2ZjJmZmRkOGY1XkEyXkFqcGc@.V1.jpg" },
+    { titulo: "Eternals", categoria: "chloe-zhao", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/vgUZo9aVvRvCQFXwZC9zq3qCZT9.jpg" },
+    { titulo: "Hamnet", categoria: "chloe-zhao", tipo: "Película", poster: "https://competitive.ultracine.com/wp-content/uploads/2025/05/UIP-HAMNET.jpg" },
+    { titulo: "Past Lives", categoria: "celine-song", tipo: "Película", poster: "https://i.pinimg.com/736x/2b/41/cb/2b41cb65373e7909972ec366c09afa54.jpg" },
+    { titulo: "Materialistas", categoria: "celine-song", tipo: "Película", poster: "https://images.justwatch.com/poster/329711270/s718/materialists.jpg" },
+    { titulo: "Following", categoria: "christopher-nolan", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYTQxYzIwMTAtYjZlNi00YzkwLWI4ZGYtNzNlZjU3N2MyNzI4XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "Memento", categoria: "christopher-nolan", tipo: "Película", poster: "https://m.media-amazon.com/images/I/51jojzqpkPL.AC_UF894,1000_QL80.jpg" },
+    { titulo: "Insomnia", categoria: "christopher-nolan", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOTE2NzQ0MzQtMDRmZi00ZWRiLWE4MDEtY2M1Mjc3OGY5N2JkXkEyXkFqcGc@.V1.jpg" },
+    { titulo: "Batman Begins", categoria: "christopher-nolan", tipo: "Película", poster: "https://i.pinimg.com/736x/67/88/19/678819ae9fc2b7104ecc124f2e586c05.jpg" },
+    { titulo: "The Prestige", categoria: "christopher-nolan", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/prestige_2006_english_advance_original_film_art_5000x.jpg?v=1551795612" },
+    { titulo: "The Dark Knight", categoria: "christopher-nolan", tipo: "Película", poster: "https://www.movieposters.com/cdn/shop/files/darkknight.building.24x36_20e90057-f673-4cc3-9ce7-7b0d3eeb7d83_1024x1024.jpg?v=1762974221" },
+    { titulo: "Inception", categoria: "christopher-nolan", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg" },
+    { titulo: "The Dark Knight Rises", categoria: "christopher-nolan", tipo: "Película", poster: "https://i.pinimg.com/736x/76/bd/14/76bd1451fa0d4e66a83095bfb5ad63a8.jpg" },
+    { titulo: "Interstellar", categoria: "christopher-nolan", tipo: "Película", poster: "https://m.media-amazon.com/images/I/91obuWzA3XL.jpg" },
+    { titulo: "Dunkirk", categoria: "christopher-nolan", tipo: "Película", poster: "https://i.etsystatic.com/36541132/r/il/7c267b/7018214484/il_570xN.7018214484_2wqe.jpg" },
+    { titulo: "Tenet", categoria: "christopher-nolan", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/files/tenet_2020_advance_original_film_art_37f46c8f-cdc8-468e-b8b5-2492200deb1c_5000x.webp?v=1756494471" },
+    { titulo: "Oppenheimer", categoria: "christopher-nolan", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/lrcuwcNiiZjoB68fzvSOPwu9JWv.jpg" },
+    { titulo: "The Odyssey", categoria: "christopher-nolan", tipo: "Película", poster: "https://img.asmedia.epimg.net/resizer/v2/AP6RDKAGQVE4DEON7ETUS4UVM4.jpg?auth=5abec700c478bffaa862bc1e153efeb77076781fbd4dc9df918ddb11a11979ea&width=375" },
+    { titulo: "Reservoir Dogs", categoria: "tarantino", tipo: "Película", poster: "https://i.pinimg.com/736x/df/4c/29/df4c29b0e7d20fae7ec3c7613e8cebd1.jpg" },
+    { titulo: "Pulp Fiction", categoria: "tarantino", tipo: "Película", poster: "https://static.posters.cz/image/1300/pulp-fiction-cover-i1288.jpg" },
+    { titulo: "Jackie Brown", categoria: "tarantino", tipo: "Película", poster: "https://i.pinimg.com/736x/35/29/64/35296495a0ba33742f49cde8510df37d.jpg" },
+    { titulo: "Kill Bill Vol. 1", categoria: "tarantino", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81Az82YYZaS.jpg" },
+    { titulo: "Kill Bill Vol. 2", categoria: "tarantino", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/2yhg0mZQMhDyvUQ4rG1IZ4oIA8L.jpg" },
+    { titulo: "Death Proof", categoria: "tarantino", tipo: "Película", poster: "https://postercity.com.ar/wp-content/uploads/2017/07/Death-Proof.jpg" },
+    { titulo: "Inglorious Basterds", categoria: "tarantino", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BODZhMWJlNjYtNDExNC00MTIzLTllM2ItOGQ2NGVjNDQ3MzkzXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "Django Unchained", categoria: "tarantino", tipo: "Película", poster: "https://i.pinimg.com/736x/6e/46/1f/6e461ff4f41269d0a537d3a52c0ce688.jpg" },
+    { titulo: "The Hateful Eight", categoria: "tarantino", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMjA1MTc1NTg5NV5BMl5BanBnXkFtZTgwOTM2MDEzNzE@.V1.jpg" },
+    { titulo: "Once Upon a Time in Hollywood", categoria: "tarantino", tipo: "Película", poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2019/06/IMG_9717.jpeg" },
     { titulo: "Dawn of the Dead", categoria: "zack-snyder", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/nIZTNd4D2QVYF1wzmbvkJcM91Uk.jpg" },
     { titulo: "300", categoria: "zack-snyder", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/staT76AYYNMF2esLjnoCMimgKSy.jpg" },
     { titulo: "Watchmen", categoria: "zack-snyder", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/bUHDON5dA0oUPsJSDWLvHpPca7D.jpg" },
@@ -2346,6 +2377,7 @@ const colecciones = [
         titulo: "Arrow",
         esSerie: true,
         categoria: "arrowverse",
+        etiqueta: "Serie",
         poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwxzfrMREXF6kfHXLmAJnhvUsAwyw6jgU_8P6tQure44F6W1hTMtwfFFsV&s=10",
         tipoArrow: "principal",
         crono: 1,
@@ -2365,6 +2397,7 @@ const colecciones = [
         titulo: "The Flash",
         esSerie: true,
         categoria: "arrowverse",
+        etiqueta: "Serie",
         poster: "https://hips.hearstapps.com/digitalspyuk.cdnds.net/14/35/ustv-the-flash-poster.jpg",
         tipoArrow: "principal",
         crono: 2,
@@ -2385,6 +2418,7 @@ const colecciones = [
         titulo: "Supergirl",
         esSerie: true,
         categoria: "arrowverse",
+        etiqueta: "Serie",
         poster: "https://static.wikia.nocookie.net/supergirl/images/b/b6/Temporada_1_poster.png/revision/latest/scale-to-width-down/1200?cb=20160210130437&path-prefix=es",
         tipoArrow: "principal",
         crono: 4,
@@ -2402,6 +2436,7 @@ const colecciones = [
         titulo: "Batwoman",
         esSerie: true,
         categoria: "arrowverse",
+        etiqueta: "Serie",
         poster: "https://www.scifinow.co.uk/wp-content/uploads/2019/07/batwoman_xxlg.jpg",
         tipoArrow: "principal",
         crono: 12,
@@ -2416,6 +2451,7 @@ const colecciones = [
         titulo: "DC's Legends of Tomorrow",
         esSerie: true,
         categoria: "arrowverse",
+        etiqueta: "Serie",
         poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR16L1B69PNDrGPa1F6IAudcuDxCRiJn4hBi61UsY9rIn5p5hKahadZ0TU&s=10",
         tipoArrow: "principal",
         crono: 6,
@@ -2432,6 +2468,7 @@ const colecciones = [
         titulo: "Black Lightning",
         esSerie: true,
         categoria: "arrowverse",
+        etiqueta: "Serie",
         poster: "https://i.pinimg.com/564x/d5/44/a4/d544a4236f757cea8e84db91ffb92fff.jpg",
         tipoArrow: "principal",
         crono: 26,
@@ -2959,6 +2996,7 @@ const colecciones = [
         titulo: "Rápidos y Furiosos Saga",
         categoria: "franquicias",
         poster: "https://i.pinimg.com/736x/a8/b0/5f/a8b05f8273dcee523b5e5d3da4139dbd.jpg",
+        etiqueta: "Saga",
         peliculas: [
             { titulo: "Rápido y Furioso", poster: "https://m.media-amazon.com/images/M/MV5BMzFiZTY2OGUtNzZmMC00MTk2LTgyNzMtZmM5YzMzNjIyYTljXkEyXkFqcGc@._V1_.jpg" },
             { titulo: "2 Rápido 2 Furioso", poster: "https://m.media-amazon.com/images/I/71Wo+cFznbL.jpg" },
@@ -2978,6 +3016,7 @@ const colecciones = [
         titulo: "Maze Runner Saga",
         categoria: "franquicias",
         poster: "https://i.pinimg.com/736x/2d/11/37/2d11375e6307f12fa7d666ddf245ae4e.jpg",
+        etiqueta: "Saga",
         peliculas: [
             { titulo: "The Maze Runner", poster: "https://m.media-amazon.com/images/I/71YSw4vEquL._AC_UF894,1000_QL80_.jpg" },
             { titulo: "Maze Runner: Prueba de Fuego", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1ALr06ACcPoCaW91CMBk_yJKA1iQ7ZqL3hOolfj5AzZeADj3dhkLAT0M&s=10" },
@@ -2989,6 +3028,7 @@ const colecciones = [
         titulo: "Los Juegos del Hambre Saga",
         categoria: "franquicias",
         poster: "https://i.pinimg.com/736x/d4/f2/ab/d4f2abfc5927a9adf286f394f4b756ca.jpg",
+        etiqueta: "Saga",
         peliculas: [
             { titulo: "Los Juegos del Hambre", poster: "https://cdng.europosters.eu/pod_public/750/266325.jpg" },
             { titulo: "Los Juegos del Hambre: En Llamas", poster: "https://m.media-amazon.com/images/M/MV5BMTAyMjQ3OTAxMzNeQTJeQWpwZ15BbWU4MDU0NzA1MzAx._V1_.jpg" },
@@ -3003,6 +3043,7 @@ const colecciones = [
         titulo: "Indiana Jones",
         categoria: "franquicias",
         poster: "https://i.pinimg.com/564x/48/53/c3/4853c31098c1fc686c415080b4b761a3.jpg",
+        etiqueta: "Saga",
         peliculas: [
             { titulo: "Indiana Jones y Los Cazadores del Arca Perdida", poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2020/05/IMG_5479-scaled.jpeg" },
             { titulo: "Indiana Jones y El Templo de la Perdición", poster: "https://image.tmdb.org/t/p/original/gOZSOqw5p04SvLDMFQUJR8hz4PN.jpg" },
@@ -3016,6 +3057,7 @@ const colecciones = [
         titulo: "Dune",
         categoria: "franquicias",
         poster: "https://cdn.europosters.eu/image/1300/302577.jpg",
+        etiqueta: "Saga",
         peliculas: [
             { titulo: "Dune: Parte Uno", poster: "https://cdn.europosters.eu/image/1300/302577.jpg" },
             { titulo: "Dune: Parte Dos", poster: "https://deadline.com/wp-content/uploads/2023/05/FvIhyI9aUAUZz6l.jpeg?w=819" },
@@ -3113,53 +3155,40 @@ const colecciones = [
         titulo: "Greta Gerwig",
         categoria: "directores",
         poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcKoJppfiD3MU63f68_DRUbxHM61xV0oxKialV_s_l8VZJD-Qt5xZyA_l7&s=10",
-        peliculas: [
-            { titulo: "Nights and Weekends", poster: "https://m.media-amazon.com/images/M/MV5BMTU5NzM0NjUxOF5BMl5BanBnXkFtZTcwMjUyMTQ5MQ@@.V1.jpg" },
-            { titulo: "Lady Bird", poster: "https://image.tmdb.org/t/p/original/gl66K7zRdtNYGrxyS2YDUP5ASZd.jpg" },
-            { titulo: "Little Women", poster: "https://m.media-amazon.com/images/I/61TK-+geKPL.AC_UF894,1000_QL80.jpg" },
-            { titulo: "Barbie", poster: "https://image.tmdb.org/t/p/original/dekMkQf0kqAmztUca9lX5e5Pjbp.jpg" }
-        ]
+        esContenedor: true,
+        etiqueta: "Director",
+        progresoCategoria: "greta-gerwig",
+        peliculas: []
     },
     {
         id: "chloe-zhao",
         titulo: "Chloé Zhao",
         categoria: "directores",
         poster: "https://static01.nyt.com/images/2026/01/02/magazine/01mag-interview-zhao-image/01mag-interview-zhao-image-mobileMasterAt3x-v2.png",
-        peliculas: [
-            { titulo: "Songs My Brothers Taught Me", poster: "https://m.media-amazon.com/images/M/MV5BMjZhMTYyOTMtOWNlMi00MDVhLThjM2ItODFjYmI3NGQxNDY2XkEyXkFqcGc@.V1.jpg" },
-            { titulo: "The Rider", poster: "https://m.media-amazon.com/images/M/MV5BMjQ3ODM5MjY2N15BMl5BanBnXkFtZTgwOTU5MjM4NDM@.V1.jpg" },
-            { titulo: "Nomadland", poster: "https://m.media-amazon.com/images/M/MV5BZWY3YTIwOGItODQ5Mi00NmI4LTgxN2QtZmI2ZjJmZmRkOGY1XkEyXkFqcGc@.V1.jpg" },
-            { titulo: "Eternals", poster: "https://image.tmdb.org/t/p/original/vgUZo9aVvRvCQFXwZC9zq3qCZT9.jpg" },
-            { titulo: "Hamnet", poster: "https://competitive.ultracine.com/wp-content/uploads/2025/05/UIP-HAMNET.jpg" }
-        ]
+        esContenedor: true,
+        etiqueta: "Director",
+        progresoCategoria: "chloe-zhao",
+        peliculas: []
     },
     {
         id: "celine-song",
         titulo: "Celine Song",
         categoria: "directores",
         poster: "https://m.media-amazon.com/images/M/MV5BNTRiYzNlMDUtYzgwNC00OGM0LWI0NTktYTExN2EyYzVkZWNkXkEyXkFqcGc@.V1.jpg",
-        peliculas: [
-            { titulo: "Past Lives", poster: "https://i.pinimg.com/736x/2b/41/cb/2b41cb65373e7909972ec366c09afa54.jpg" },
-            { titulo: "Materialistas", poster: "https://images.justwatch.com/poster/329711270/s718/materialists.jpg" }
-        ]
+        esContenedor: true,
+        etiqueta: "Director",
+        progresoCategoria: "celine-song",
+        peliculas: []
     },
     {
         id: "tarantino",
         titulo: "Quentin Tarantino",
         categoria: "directores",
         poster: "https://cdna.artstation.com/p/assets/images/images/004/312/852/large/caciano-alison-pulp-fiction-tarantino-by-caciano-alison-da1oe2s.jpg?1482326422",
-        peliculas: [
-            { titulo: "Reservoir Dogs", poster: "https://i.pinimg.com/736x/df/4c/29/df4c29b0e7d20fae7ec3c7613e8cebd1.jpg" },
-            { titulo: "Pulp Fiction", poster: "https://static.posters.cz/image/1300/pulp-fiction-cover-i1288.jpg" },
-            { titulo: "Jackie Brown", poster: "https://i.pinimg.com/736x/35/29/64/35296495a0ba33742f49cde8510df37d.jpg" },
-            { titulo: "Kill Bill Vol. 1", poster: "https://m.media-amazon.com/images/I/81Az82YYZaS.jpg" },
-            { titulo: "Kill Bill Vol. 2", poster: "https://image.tmdb.org/t/p/original/2yhg0mZQMhDyvUQ4rG1IZ4oIA8L.jpg" },
-            { titulo: "Death Proof", poster: "https://postercity.com.ar/wp-content/uploads/2017/07/Death-Proof.jpg" },
-            { titulo: "Inglorious Basterds", poster: "https://m.media-amazon.com/images/M/MV5BODZhMWJlNjYtNDExNC00MTIzLTllM2ItOGQ2NGVjNDQ3MzkzXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
-            { titulo: "Django Unchained", poster: "https://i.pinimg.com/736x/6e/46/1f/6e461ff4f41269d0a537d3a52c0ce688.jpg" },
-            { titulo: "The Hateful Eight", poster: "https://m.media-amazon.com/images/M/MV5BMjA1MTc1NTg5NV5BMl5BanBnXkFtZTgwOTM2MDEzNzE@.V1.jpg" },
-            { titulo: "Once Upon a Time in Hollywood", poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2019/06/IMG_9717.jpeg" }
-        ]
+        esContenedor: true,
+        etiqueta: "Director",
+        progresoCategoria: "tarantino",
+        peliculas: []
     },
     {
         id: "alfred-hitchcock",
@@ -3202,6 +3231,16 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "marvels-avengers",
+        titulo: "Marvel's Avengers",
+        categoria: "marvel-videojuegos",
+        poster: "https://m.media-amazon.com/images/M/MV5BMzRkYmUyMGYtYjk4OC00M2NlLThjMDAtZmIwODI4MDI3YTJlXkEyXkFqcGc@.V1.jpg",
+        esContenedor: true,
+        etiqueta: "Videojuego",
+        textoBotonAbrir: "Ficha Técnica 📊",
+        peliculas: []
+    },
+    {
         id: "james-gunn",
         titulo: "James Gunn",
         categoria: "directores",
@@ -3215,7 +3254,7 @@ const colecciones = [
         id: "zack-snyder",
         titulo: "Zack Snyder",
         categoria: "directores",
-        poster: "PENDIENTE_FALTA_PORTADA",
+        poster: "https://media.gq.com.mx/photos/60a7f1bcfe7c1331bb811d0f/1:1/w_1992,h_1992,c_limit/zack%20snyder.jpg",
         esContenedor: true,
         etiqueta: "Director",
         progresoCategoria: "zack-snyder",
@@ -3226,21 +3265,10 @@ const colecciones = [
         titulo: "Christopher Nolan",
         categoria: "directores",
         poster: "https://w0.peakpx.com/wallpaper/37/420/HD-wallpaper-christopher-nolan-boss-tenet.jpg",
-        peliculas: [
-            { titulo: "Following", poster: "https://m.media-amazon.com/images/M/MV5BYTQxYzIwMTAtYjZlNi00YzkwLWI4ZGYtNzNlZjU3N2MyNzI4XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
-            { titulo: "Memento", poster: "https://m.media-amazon.com/images/I/51jojzqpkPL.AC_UF894,1000_QL80.jpg" },
-            { titulo: "Insomnia", poster: "https://m.media-amazon.com/images/M/MV5BOTE2NzQ0MzQtMDRmZi00ZWRiLWE4MDEtY2M1Mjc3OGY5N2JkXkEyXkFqcGc@.V1.jpg" },
-            { titulo: "Batman Begins", poster: "https://i.pinimg.com/736x/67/88/19/678819ae9fc2b7104ecc124f2e586c05.jpg" },
-            { titulo: "The Prestige", poster: "https://www.originalfilmart.com/cdn/shop/products/prestige_2006_english_advance_original_film_art_5000x.jpg?v=1551795612" },
-            { titulo: "The Dark Knight", poster: "https://www.movieposters.com/cdn/shop/files/darkknight.building.24x36_20e90057-f673-4cc3-9ce7-7b0d3eeb7d83_1024x1024.jpg?v=1762974221" },
-            { titulo: "Inception", poster: "https://image.tmdb.org/t/p/original/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg" },
-            { titulo: "The Dark Knight Rises", poster: "https://i.pinimg.com/736x/76/bd/14/76bd1451fa0d4e66a83095bfb5ad63a8.jpg" },
-            { titulo: "Interstellar", poster: "https://m.media-amazon.com/images/I/91obuWzA3XL.jpg" },
-            { titulo: "Dunkirk", poster: "https://i.etsystatic.com/36541132/r/il/7c267b/7018214484/il_570xN.7018214484_2wqe.jpg" },
-            { titulo: "Tenet", poster: "https://www.originalfilmart.com/cdn/shop/files/tenet_2020_advance_original_film_art_37f46c8f-cdc8-468e-b8b5-2492200deb1c_5000x.webp?v=1756494471" },
-            { titulo: "Oppenheimer", poster: "https://image.tmdb.org/t/p/original/lrcuwcNiiZjoB68fzvSOPwu9JWv.jpg" },
-            { titulo: "The Odyssey", poster: "https://img.asmedia.epimg.net/resizer/v2/AP6RDKAGQVE4DEON7ETUS4UVM4.jpg?auth=5abec700c478bffaa862bc1e153efeb77076781fbd4dc9df918ddb11a11979ea&width=375" }
-        ]
+        esContenedor: true,
+        etiqueta: "Director",
+        progresoCategoria: "christopher-nolan",
+        peliculas: []
     },
     {
         id: "sw-visions",
@@ -3385,6 +3413,7 @@ const colecciones = [
         titulo: "The Batman (2004)",
         categoria: "series-independientes",
         poster: "https://image.tmdb.org/t/p/original/3w7koeOR2x71XYMJDGpygxYtScI.jpg",
+        etiqueta: "Serie",
         esSerie: true,
         peliculas: [
             { titulo: "The Batman (2004) Temporada 1", poster: "https://m.media-amazon.com/images/I/51122Iwfs4L._AC_UF894,1000_QL80_.jpg" },
@@ -3392,6 +3421,60 @@ const colecciones = [
             { titulo: "The Batman (2004) Temporada 3", poster: "https://image.tmdb.org/t/p/original/e1arGUEoveUPQ7p5O8glOq6L9Vw.jpg" },
             { titulo: "The Batman (2004) Temporada 4", poster: "https://m.media-amazon.com/images/I/61TgjrLmJ1L._AC_UF894,1000_QL80_AIweblab1381794,T1_.jpg" },
             { titulo: "The Batman (2004) Temporada 5", poster: "https://image.tmdb.org/t/p/w500/15KR4jWMS1xhPKMkoDGWttAYL6y.jpg" }
+        ]
+    },
+    {
+        id: "community",
+        titulo: "Community",
+        categoria: "sitcoms",
+        poster: "https://image.tmdb.org/t/p/original/a2vh0jmDtpu9sLH7tnNwc5CMGOh.jpg",
+        etiqueta: "Serie",
+        esSerie: true,
+        peliculas: [
+            { titulo: "Community Temporada 1", poster: "https://image.tmdb.org/t/p/original/a2vh0jmDtpu9sLH7tnNwc5CMGOh.jpg" },
+            { titulo: "Community Temporada 2", poster: "https://image.tmdb.org/t/p/original/4TvrCI0nwwugZm7Rk12KptgRscj.jpg" },
+            { titulo: "Community Temporada 3", poster: "https://image.tmdb.org/t/p/original/4vcneRdXS8fMoFYSLwS4Q8UOdsX.jpg" },
+            { titulo: "Community Temporada 4", poster: "https://image.tmdb.org/t/p/original/piT0EWhHi08TVhMghNkOKkRoC6K.jpg" },
+            { titulo: "Community Temporada 5", poster: "https://image.tmdb.org/t/p/w500/rdvRTyEENaItHUrtSjDdyVxmvad.jpg" },
+            { titulo: "Community Temporada 6", poster: "https://image.tmdb.org/t/p/original/4diKFFgxMbKgHvZfbjn50bWcxDH.jpg" }
+        ]
+    },
+    {
+        id: "friends",
+        titulo: "Friends",
+        categoria: "sitcoms",
+        poster: "https://image.tmdb.org/t/p/w500/odCW88Cq5hAF0ZFVOkeJmeQv1nV.jpg",
+        etiqueta: "Serie",
+        esSerie: true,
+        peliculas: [
+            { titulo: "Friends Temporada 1", poster: "https://image.tmdb.org/t/p/w500/odCW88Cq5hAF0ZFVOkeJmeQv1nV.jpg" },
+            { titulo: "Friends Temporada 2", poster: "https://image.tmdb.org/t/p/original/kC9VHoMh1KkoAYfsY3QlHpZRxDy.jpg" },
+            { titulo: "Friends Temporada 3", poster: "https://image.tmdb.org/t/p/original/n9u4pslqb6tpiLc8soldL5IbAyG.jpg" },
+            { titulo: "Friends Temporada 4", poster: "https://image.tmdb.org/t/p/original/3WdH3FNMXgp3Qlx21T7kwKS8Mtc.jpg" },
+            { titulo: "Friends Temporada 5", poster: "https://image.tmdb.org/t/p/original/aEwLXWbo6gV1TNIv9veu4rRwsPZ.jpg" },
+            { titulo: "Friends Temporada 6", poster: "https://image.tmdb.org/t/p/w500/7EU6bV6d8j1Xbc1F8QoNkOZrpsi.jpg" },
+            { titulo: "Friends Temporada 7", poster: "https://image.tmdb.org/t/p/original/o7JaYswXab8RNidPk2OXdZzIoc7.jpg" },
+            { titulo: "Friends Temporada 8", poster: "https://image.tmdb.org/t/p/original/v6uNAPavJva8gPqIMd4FUmfRa5G.jpg" },
+            { titulo: "Friends Temporada 9", poster: "https://image.tmdb.org/t/p/original/zjXWePp4V3NAKEhGX1bavJXYEuo.jpg" },
+            { titulo: "Friends Temporada 10", poster: "https://image.tmdb.org/t/p/w500/67ETB6XIqYc5vZkyAjN8XINOX5i.jpg" }
+        ]
+    },
+    {
+        id: "brooklyn-nine-nine",
+        titulo: "Brooklyn Nine-Nine",
+        categoria: "sitcoms",
+        poster: "https://image.tmdb.org/t/p/w500/9hL8os3A3pGpdvQtt029zj2pURy.jpg",
+        etiqueta: "Serie",
+        esSerie: true,
+        peliculas: [
+            { titulo: "Brooklyn Nine-Nine Temporada 1", poster: "https://image.tmdb.org/t/p/w500/9hL8os3A3pGpdvQtt029zj2pURy.jpg" },
+            { titulo: "Brooklyn Nine-Nine Temporada 2", poster: "https://image.tmdb.org/t/p/w500/lvST5TSkJqN4yyhDy5IgyoBDize.jpg" },
+            { titulo: "Brooklyn Nine-Nine Temporada 3", poster: "https://image.tmdb.org/t/p/w500/nqlpXFbyCGzeBaDVC2E6PO5itCw.jpg" },
+            { titulo: "Brooklyn Nine-Nine Temporada 4", poster: "https://image.tmdb.org/t/p/w500/6fsr582nvms8E4ag3jb3oHL76en.jpg" },
+            { titulo: "Brooklyn Nine-Nine Temporada 5", poster: "https://image.tmdb.org/t/p/w500/dWOF2pJBNfunspM7PpVG6O9LWj3.jpg" },
+            { titulo: "Brooklyn Nine-Nine Temporada 6", poster: "https://image.tmdb.org/t/p/w500/xa9xA4Ieju9cyVkfJ47n1hnbHWB.jpg" },
+            { titulo: "Brooklyn Nine-Nine Temporada 7", poster: "https://image.tmdb.org/t/p/original/mWWqh0Knb01YSY0bZaCX4mEIJJO.jpg" },
+            { titulo: "Brooklyn Nine-Nine Temporada 8", poster: "https://image.tmdb.org/t/p/w500/8PmhuCEB9W3Cc5ZDJunnV1m68IZ.jpg" }
         ]
     },
     {
@@ -4903,7 +4986,7 @@ function renderizarColecciones() {
                     <p>${col.etiqueta || 'Categoría'}</p>
                     ${barraProgreso}
                     <div class="botones-coleccion">
-                        <button class="btn-abrir-coleccion" data-coleccion="${col.id}">Abrir 📂</button>
+                        <button class="btn-abrir-coleccion" data-coleccion="${col.id}">${col.textoBotonAbrir || 'Abrir 📂'}</button>
                     </div>
                 </div>
             `;
@@ -4921,7 +5004,7 @@ function renderizarColecciones() {
                     <p class="barra-progreso-texto" id="barra-${col.id}-texto">0% completado</p>
                     <div class="botones-coleccion">
                         <button class="btn-accion">${textoPendiente}</button>
-                        <button class="btn-abrir-coleccion" data-coleccion="${col.id}">Abrir 📂</button>
+                        <button class="btn-abrir-coleccion" data-coleccion="${col.id}">${col.textoBotonAbrir || 'Abrir 📂'}</button>
                     </div>
                 </div>
             `;
@@ -4936,18 +5019,20 @@ function renderizarColecciones() {
         });
     });
 
-    // El hub "Colecciones" se ordena alfabéticamente (a diferencia del resto
-    // de los hubs, que respetan el orden en que fueron creados).
-    const contenedorColeccionesHub = document.getElementById('grilla-colecciones-hub');
-    if (contenedorColeccionesHub) {
-        const tarjetasColeccionesHub = Array.from(contenedorColeccionesHub.querySelectorAll('.tarjeta-media'));
-        tarjetasColeccionesHub.sort((a, b) => {
+    // El hub "Colecciones" y "Directores" se ordenan alfabéticamente (a
+    // diferencia del resto de los hubs, que respetan el orden en que
+    // fueron creados).
+    ['grilla-colecciones-hub', 'grilla-directores'].forEach(idGrilla => {
+        const contenedorHub = document.getElementById(idGrilla);
+        if (!contenedorHub) return;
+        const tarjetasHub = Array.from(contenedorHub.querySelectorAll('.tarjeta-media'));
+        tarjetasHub.sort((a, b) => {
             const nombreA = a.querySelector('h3') ? a.querySelector('h3').textContent : '';
             const nombreB = b.querySelector('h3') ? b.querySelector('h3').textContent : '';
             return nombreA.localeCompare(nombreB, 'es', { sensitivity: 'base' });
         });
-        tarjetasColeccionesHub.forEach(t => contenedorColeccionesHub.appendChild(t));
-    }
+        tarjetasHub.forEach(t => contenedorHub.appendChild(t));
+    });
 
     sincronizarVistos();
 }
@@ -5254,6 +5339,11 @@ function renderizarContenido() {
         "sydney-sweeney": "seccion-sydney-sweeney",
         "tom-holland": "seccion-tom-holland",
         "barry-keoghan": "seccion-barry-keoghan",
+        "greta-gerwig": "seccion-greta-gerwig",
+        "chloe-zhao": "seccion-chloe-zhao",
+        "celine-song": "seccion-celine-song",
+        "christopher-nolan": "seccion-christopher-nolan",
+        "tarantino": "seccion-tarantino",
         "matrix-saga": "seccion-matrix-saga",
         "pixar": "seccion-pixar",
         "brad-pitt": "seccion-brad-pitt",
@@ -5930,6 +6020,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
     contenidoInicialRenderizado = true;
     intentarCargarProgresoUsuario();
+
+    // Si el celular recargó la página solo (volviendo de otra app, por
+    // ejemplo), esto devuelve a la persona a la sección donde estaba en
+    // vez de mandarla al inicio de nuevo.
+    try {
+        const idGuardado = localStorage.getItem('ultimaSeccionVisitada');
+        if (idGuardado) {
+            const seccionGuardada = document.getElementById(idGuardado);
+            if (seccionGuardada) {
+                cambiarSeccion(seccionGuardada);
+            }
+        }
+    } catch (e) { /* localStorage no disponible, se queda en el inicio */ }
 });
 
 // ==========================================
@@ -6268,6 +6371,16 @@ function cambiarSeccion(seccionNueva) {
     seccionActivaActual = seccionNueva;
     if(menuCategorias) menuCategorias.classList.add('oculto');
     if(menuDoomsday) menuDoomsday.classList.add('oculto');
+
+    // Guardamos en qué sección quedó parado, para poder devolverlo ahí si
+    // el celular recarga la página solo (pasa seguido al volver de otra
+    // app, sobre todo en un catálogo tan grande como este — el sistema
+    // operativo mata la pestaña en segundo plano para liberar memoria).
+    // No evita la recarga en sí (eso escapa a lo que la página controla),
+    // pero hace que no se sienta como arrancar de cero cada vez.
+    try {
+        localStorage.setItem('ultimaSeccionVisitada', seccionNueva.id);
+    } catch (e) { /* localStorage no disponible, no pasa nada */ }
 
     // Las barras de progreso (Directores, sagas, etc.) se calculan a partir
     // de titulosVistosGuardados. Si esta sección se había dibujado ANTES de
@@ -7173,6 +7286,13 @@ if(btnVolverMartinScorsese) {
     });
 }
 
+const btnVolverMarvelsAvengers = document.getElementById('btn-volver-marvels-avengers');
+if(btnVolverMarvelsAvengers) {
+    btnVolverMarvelsAvengers.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-marvel-videojuegos'));
+    });
+}
+
 const btnVolverJamesGunn = document.getElementById('btn-volver-james-gunn');
 if(btnVolverJamesGunn) {
     btnVolverJamesGunn.addEventListener('click', () => {
@@ -7219,6 +7339,27 @@ const btnVolverTheBatman2004 = document.getElementById('btn-volver-the-batman-20
 if(btnVolverTheBatman2004) {
     btnVolverTheBatman2004.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-series-independientes'));
+    });
+}
+
+const btnVolverCommunity = document.getElementById('btn-volver-community');
+if(btnVolverCommunity) {
+    btnVolverCommunity.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-sitcoms'));
+    });
+}
+
+const btnVolverFriends = document.getElementById('btn-volver-friends');
+if(btnVolverFriends) {
+    btnVolverFriends.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-sitcoms'));
+    });
+}
+
+const btnVolverBrooklynNineNine = document.getElementById('btn-volver-brooklyn-nine-nine');
+if(btnVolverBrooklynNineNine) {
+    btnVolverBrooklynNineNine.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-sitcoms'));
     });
 }
 
@@ -9149,7 +9290,7 @@ const gridsDatasets = {
     "grid-actores-1": {
         titulo: "Actores de Cine #1",
         filas: [
-            { nombre: "Marvel Studios", tipo: "lista", titulos: ["Iron Man", "The Incredible Hulk", "Iron Man 2", "Thor", "Capitan America: First Avenger", "The Avengers", "Iron Man 3", "Thor: The Dark World", "Capitan America: The Winter Soldier", "Guardianes de La Galaxia", "Avengers: Era de Ultron", "Ant-Man", "Capitan America: Civil War", "Doctor Strange", "Guardianes de La Galaxia Vol. 2", "Spider-Man: Homecoming", "Thor: Ragnarok", "Avengers: Infinity War", "Ant-Man and The Wasp", "Capitana Marvel", "Avengers: Endgame", "Spider-Man: Far From Home", "Pantera Negra", "WandaVision", "The Falcon and The Winter Soldier", "Loki", "Black Widow", "Shang-Chi", "Eternals", "Hawkeye", "Spider-Man: No Way Home", "Moon Knight", "Doctor Strange in The Multiverse of Madness", "Ms. Marvel", "Thor: Love and Thunder", "Yo Soy Groot", "She-Hulk: Attorney At Law", "Werewolf By Night", "Black Panther: Wakanda Forever", "Ant-Man and The Wasp: Quantumania", "Guardianes de La Galaxia Vol. 3", "Echo", "Deadpool y Wolverine", "Capitan America: Brave New World", "Daredevil: Born Again", "Thunderbolts", "Fantastic Four: First Steps", "Eyes of Wakanda", "Secret Invasion", "Wonder Man", "Punisher: One Last Kill", "Spider-Man: Brand New Day"] },
+            { nombre: "Marvel Studios", logo: "https://www.heyuguys.com/images/2020/11/MArvel-Studios-Logo.jpg", tipo: "lista", titulos: ["Iron Man", "The Incredible Hulk", "Iron Man 2", "Thor", "Capitan America: First Avenger", "The Avengers", "Iron Man 3", "Thor: The Dark World", "Capitan America: The Winter Soldier", "Guardianes de La Galaxia", "Avengers: Era de Ultron", "Ant-Man", "Capitan America: Civil War", "Doctor Strange", "Guardianes de La Galaxia Vol. 2", "Spider-Man: Homecoming", "Thor: Ragnarok", "Avengers: Infinity War", "Ant-Man and The Wasp", "Capitana Marvel", "Avengers: Endgame", "Spider-Man: Far From Home", "Pantera Negra", "WandaVision", "The Falcon and The Winter Soldier", "Loki", "Black Widow", "Shang-Chi", "Eternals", "Hawkeye", "Spider-Man: No Way Home", "Moon Knight", "Doctor Strange in The Multiverse of Madness", "Ms. Marvel", "Thor: Love and Thunder", "Yo Soy Groot", "She-Hulk: Attorney At Law", "Werewolf By Night", "Black Panther: Wakanda Forever", "Ant-Man and The Wasp: Quantumania", "Guardianes de La Galaxia Vol. 3", "Echo", "Deadpool y Wolverine", "Capitan America: Brave New World", "Daredevil: Born Again", "Thunderbolts", "Fantastic Four: First Steps", "Eyes of Wakanda", "Secret Invasion", "Wonder Man", "Punisher: One Last Kill", "Spider-Man: Brand New Day"] },
             { nombre: "DC Studios", tipo: "lista", titulos: ["The Suicide Squad", "Blue Beetle", "Peacemaker", "Creature Commandos", "Superman", "Supergirl", "Man of Steel", "Batman v Superman", "Justice League", "Wonder Woman", "Suicide Squad", "Aquaman", "Shazam!", "Wonder Woman 1984", "Shazam! Fury of the Gods", "The Flash", "Aquaman: The Lost Kingdom", "Birds of Prey", "Zack Snyder's Justice League", "Black Adam", "Batman Begins", "The Dark Knight Rises", "Green Lantern", "The Batman", "The Penguin", "Joker", "Joker: Folie a Deux", "Batman 1989", "Batman Returns", "Batman Forever", "Batman y Robin", "Superman Returns"] },
             { nombre: "Scorsese", tipo: "director", id: "martin-scorsese" }
         ],
@@ -9184,7 +9325,7 @@ const gridsDatasets = {
             { nombre: "Nolan", tipo: "director", id: "christopher-nolan" }
         ],
         columnas: [
-            { nombre: "Marvel Studios", tipo: "lista", titulos: ["Iron Man", "The Incredible Hulk", "Iron Man 2", "Thor", "Capitan America: First Avenger", "The Avengers", "Iron Man 3", "Thor: The Dark World", "Capitan America: The Winter Soldier", "Guardianes de La Galaxia", "Avengers: Era de Ultron", "Ant-Man", "Capitan America: Civil War", "Doctor Strange", "Guardianes de La Galaxia Vol. 2", "Spider-Man: Homecoming", "Thor: Ragnarok", "Avengers: Infinity War", "Ant-Man and The Wasp", "Capitana Marvel", "Avengers: Endgame", "Spider-Man: Far From Home", "Pantera Negra", "WandaVision", "The Falcon and The Winter Soldier", "Loki", "Black Widow", "Shang-Chi", "Eternals", "Hawkeye", "Spider-Man: No Way Home", "Moon Knight", "Doctor Strange in The Multiverse of Madness", "Ms. Marvel", "Thor: Love and Thunder", "Yo Soy Groot", "She-Hulk: Attorney At Law", "Werewolf By Night", "Black Panther: Wakanda Forever", "Ant-Man and The Wasp: Quantumania", "Guardianes de La Galaxia Vol. 3", "Echo", "Deadpool y Wolverine", "Capitan America: Brave New World", "Daredevil: Born Again", "Thunderbolts", "Fantastic Four: First Steps", "Eyes of Wakanda", "Secret Invasion", "Wonder Man", "Punisher: One Last Kill", "Spider-Man: Brand New Day"] },
+            { nombre: "Marvel Studios", logo: "https://www.heyuguys.com/images/2020/11/MArvel-Studios-Logo.jpg", tipo: "lista", titulos: ["Iron Man", "The Incredible Hulk", "Iron Man 2", "Thor", "Capitan America: First Avenger", "The Avengers", "Iron Man 3", "Thor: The Dark World", "Capitan America: The Winter Soldier", "Guardianes de La Galaxia", "Avengers: Era de Ultron", "Ant-Man", "Capitan America: Civil War", "Doctor Strange", "Guardianes de La Galaxia Vol. 2", "Spider-Man: Homecoming", "Thor: Ragnarok", "Avengers: Infinity War", "Ant-Man and The Wasp", "Capitana Marvel", "Avengers: Endgame", "Spider-Man: Far From Home", "Pantera Negra", "WandaVision", "The Falcon and The Winter Soldier", "Loki", "Black Widow", "Shang-Chi", "Eternals", "Hawkeye", "Spider-Man: No Way Home", "Moon Knight", "Doctor Strange in The Multiverse of Madness", "Ms. Marvel", "Thor: Love and Thunder", "Yo Soy Groot", "She-Hulk: Attorney At Law", "Werewolf By Night", "Black Panther: Wakanda Forever", "Ant-Man and The Wasp: Quantumania", "Guardianes de La Galaxia Vol. 3", "Echo", "Deadpool y Wolverine", "Capitan America: Brave New World", "Daredevil: Born Again", "Thunderbolts", "Fantastic Four: First Steps", "Eyes of Wakanda", "Secret Invasion", "Wonder Man", "Punisher: One Last Kill", "Spider-Man: Brand New Day"] },
             { nombre: "DC Studios", tipo: "lista", titulos: ["The Suicide Squad", "Blue Beetle", "Peacemaker", "Creature Commandos", "Superman", "Supergirl", "Man of Steel", "Batman v Superman", "Justice League", "Wonder Woman", "Suicide Squad", "Aquaman", "Shazam!", "Wonder Woman 1984", "Shazam! Fury of the Gods", "The Flash", "Aquaman: The Lost Kingdom", "Birds of Prey", "Zack Snyder's Justice League", "Black Adam", "Batman Begins", "The Dark Knight Rises", "Green Lantern", "The Batman", "The Penguin", "Joker", "Joker: Folie a Deux", "Batman 1989", "Batman Returns", "Batman Forever", "Batman y Robin", "Superman Returns"] },
             { nombre: "Academy Award", tipo: "personas", etiquetaConfirmacion: "🏆 Ganador/a del Oscar", nombres: ["Joaquin Phoenix", "Renée Zellweger", "Brad Pitt", "Laura Dern", "Anthony Hopkins", "Frances McDormand", "Daniel Kaluuya", "Yuh-Jung Youn", "Will Smith", "Jessica Chastain", "Troy Kotsur", "Ariana DeBose", "Brendan Fraser", "Michelle Yeoh", "Ke Huy Quan", "Jamie Lee Curtis", "Cillian Murphy", "Emma Stone", "Robert Downey Jr.", "Da'Vine Joy Randolph", "Adrien Brody", "Mikey Madison", "Kieran Culkin", "Zoe Saldaña", "Michael B. Jordan", "Jessie Buckley", "Sean Penn", "Amy Madigan", "Jeff Bridges", "Sandra Bullock", "Christoph Waltz", "Mo'Nique", "Colin Firth", "Natalie Portman", "Christian Bale", "Melissa Leo", "Jean Dujardin", "Meryl Streep", "Christopher Plummer", "Octavia Spencer", "Daniel Day-Lewis", "Jennifer Lawrence", "Anne Hathaway", "Matthew McConaughey", "Cate Blanchett", "Jared Leto", "Lupita Nyong'o", "Eddie Redmayne", "Julianne Moore", "J.K. Simmons", "Patricia Arquette", "Leonardo DiCaprio", "Brie Larson", "Mark Rylance", "Alicia Vikander", "Casey Affleck", "Mahershala Ali", "Viola Davis", "Gary Oldman", "Sam Rockwell", "Allison Janney", "Rami Malek", "Olivia Colman", "Regina King", "Kevin Spacey", "Hilary Swank", "Michael Caine", "Angelina Jolie", "Russell Crowe", "Julia Roberts", "Benicio del Toro", "Marcia Gay Harden", "Denzel Washington", "Halle Berry", "Jim Broadbent", "Jennifer Connelly", "Nicole Kidman", "Chris Cooper", "Catherine Zeta-Jones", "Charlize Theron", "Tim Robbins", "Jamie Foxx", "Morgan Freeman", "Philip Seymour Hoffman", "Reese Witherspoon", "George Clooney", "Rachel Weisz", "Forest Whitaker", "Helen Mirren", "Alan Arkin", "Jennifer Hudson", "Marion Cotillard", "Javier Bardem", "Tilda Swinton", "Kate Winslet", "Heath Ledger", "Penélope Cruz", "Jessica Tandy", "Brenda Fricker", "Jeremy Irons", "Kathy Bates", "Joe Pesci", "Whoopi Goldberg", "Jodie Foster", "Jack Palance", "Mercedes Ruehl", "Al Pacino", "Emma Thompson", "Gene Hackman", "Marisa Tomei", "Tom Hanks", "Holly Hunter", "Tommy Lee Jones", "Anna Paquin", "Jessica Lange", "Martin Landau", "Dianne Wiest", "Nicolas Cage", "Susan Sarandon", "Mira Sorvino", "Geoffrey Rush", "Cuba Gooding Jr.", "Juliette Binoche", "Jack Nicholson", "Helen Hunt", "Robin Williams", "Kim Basinger", "Roberto Benigni", "Gwyneth Paltrow", "James Coburn", "Judi Dench", "Dustin Hoffman", "Sally Field", "Melvyn Douglas", "Robert De Niro", "Sissy Spacek", "Timothy Hutton", "Mary Steenburgen", "Henry Fonda", "Katharine Hepburn", "John Gielgud", "Maureen Stapleton", "Ben Kingsley", "Louis Gossett Jr.", "Robert Duvall", "Shirley MacLaine", "Linda Hunt", "F. Murray Abraham", "Haing S. Ngor", "Peggy Ashcroft", "William Hurt", "Geraldine Page", "Don Ameche", "Anjelica Huston", "Paul Newman", "Marlee Matlin", "Michael Douglas", "Cher", "Sean Connery", "Olympia Dukakis", "Kevin Kline", "Geena Davis", "John Wayne", "Maggie Smith", "Gig Young", "Goldie Hawn", "George C. Scott", "Glenda Jackson", "John Mills", "Helen Hayes", "Jane Fonda", "Ben Johnson", "Cloris Leachman", "Marlon Brando", "Liza Minnelli", "Joel Grey", "Eileen Heckart", "Jack Lemmon", "John Houseman", "Tatum O'Neal", "Art Carney", "Ellen Burstyn", "Ingrid Bergman", "Louise Fletcher", "George Burns", "Lee Grant", "Peter Finch", "Faye Dunaway", "Jason Robards", "Beatrice Straight", "Richard Dreyfuss", "Diane Keaton", "Vanessa Redgrave", "Jon Voight", "Christopher Walken", "Charlton Heston", "Simone Signoret", "Hugh Griffith", "Shelley Winters", "Burt Lancaster", "Elizabeth Taylor", "Peter Ustinov", "Shirley Jones", "Maximilian Schell", "Sophia Loren", "George Chakiris", "Rita Moreno", "Gregory Peck", "Anne Bancroft", "Ed Begley", "Patty Duke", "Sidney Poitier", "Patricia Neal", "Margaret Rutherford", "Rex Harrison", "Julie Andrews", "Lila Kedrova", "Lee Marvin", "Julie Christie", "Martin Balsam", "Paul Scofield", "Walter Matthau", "Sandy Dennis", "Rod Steiger", "George Kennedy", "Estelle Parsons", "Cliff Robertson", "Barbra Streisand", "Jack Albertson", "Ruth Gordon", "Broderick Crawford", "Olivia de Havilland", "Dean Jagger", "Mercedes McCambridge", "José Ferrer", "Judy Holliday", "George Sanders", "Josephine Hull", "Humphrey Bogart", "Vivien Leigh", "Karl Malden", "Kim Hunter", "Gary Cooper", "Shirley Booth", "Anthony Quinn", "Gloria Grahame", "William Holden", "Audrey Hepburn", "Frank Sinatra", "Donna Reed", "Grace Kelly", "Edmond O'Brien", "Eva Marie Saint", "Ernest Borgnine", "Anna Magnani", "Jo Van Fleet", "Yul Brynner", "Dorothy Malone", "Alec Guinness", "Joanne Woodward", "Red Buttons", "Miyoshi Umeki", "David Niven", "Susan Hayward", "Burl Ives", "Wendy Hiller", "Robert Donat", "Thomas Mitchell", "Hattie McDaniel", "James Stewart", "Ginger Rogers", "Walter Brennan", "Jane Darwell", "Joan Fontaine", "Donald Crisp", "Mary Astor", "James Cagney", "Greer Garson", "Van Heflin", "Teresa Wright", "Paul Lukas", "Jennifer Jones", "Charles Coburn", "Katina Paxinou", "Bing Crosby", "Barry Fitzgerald", "Ethel Barrymore", "Ray Milland", "Joan Crawford", "James Dunn", "Anne Revere", "Fredric March", "Harold Russell", "Anne Baxter", "Ronald Colman", "Loretta Young", "Edmund Gwenn", "Celeste Holm", "Laurence Olivier", "Jane Wyman", "Walter Huston", "Claire Trevor", "Emil Jannings", "Janet Gaynor", "Warner Baxter", "Mary Pickford", "George Arliss", "Norma Shearer", "Lionel Barrymore", "Marie Dressler", "Wallace Beery", "Charles Laughton", "Clark Gable", "Claudette Colbert", "Victor McLaglen", "Bette Davis", "Paul Muni", "Luise Rainer", "Gale Sondergaard", "Spencer Tracy", "Joseph Schildkraut", "Alice Brady", "Fay Bainter"] }
         ]
@@ -11548,7 +11689,76 @@ const personajesGrilla = {
     "Peter Grogan",
     "Ghost-Maker (Minhkhoa Khan)",
     "Clownhunter (Bao Pham)"
-    ],
+    ,
+    "KGBeast (Anatoly Knyazev)",
+    "NKVDemon (Gregor Dosynski)",
+    "Blockbuster (Mark Desmond)",
+    "Blockbuster (Roland Desmond)",
+    "Henri Ducard",
+    "Doctor Death (Karl Hellfern)",
+    "The Monk (Louis Nicole)",
+    "Dala",
+    "The Batman Who Laughs (Bruce Wayne)",
+    "The Grim Knight (Bruce Wayne)",
+    "The Merciless (Bruce Wayne)",
+    "The Devastator (Bruce Wayne)",
+    "The Drowned (Bryce Wayne)",
+    "The Murder Machine (Bruce Wayne)",
+    "The Red Death (Bruce Wayne)",
+    "The Dawnbreaker (Bruce Wayne)",
+    "The Robin King (Bruce Wayne)",
+    "Barbatos",
+    "Mister Bloom",
+    "Black Spider (Eric Needham)",
+    "Black Spider (Johnny LaMonica)",
+    "Gearhead (Nathan Finch)",
+    "Clock King (William Tockman)",
+    "Copperhead (John Nathan)",
+    "The Fox (Warren Lawford)",
+    "The Vulture (Armand Lydecker)",
+    "The Shark (Sheng Tse)",
+    "Crime Doctor (Matthew Thorne)",
+    "Zeiss (Philo Zeiss)",
+    "Nicodemus (Thomas Kinkaid)",
+    "Corrosive Man (Derek Mitchell)",
+    "Brutale (Guillermo Barrera)",
+    "Double Dare (Aliki Marceau)",
+    "Double Dare (Mimi Marceau)",
+    "Nite-Wing (Tad Ryerstad)",
+    "Torque (Dudley Soames)",
+    "Doctor Double X (Simon Atkins)",
+    "Doctor Tzin-Tzin",
+    "Dr. Fang",
+    "Zodiac Master (Joe Carr)",
+    "The Key",
+    "Reaper (Benjamin Gruener)",
+    "Abattoir (Arnold Etchison)",
+    "Headhunter",
+    "Junction Jack",
+    "Silencer (Honor Guest)",
+    "Calendar Girl (Page Monroe)",
+    "Kyodai Ken",
+    "Sewer King",
+    "HARDAC",
+    "Emile Dorian",
+    "Red Claw",
+    "Lloyd Ventrix",
+    "Josiah Wormwood",
+    "Nostromos (Carl Smythe)",
+    "Gardener (Bella Garten)",
+    "Amadeus Arkham",
+    "Frankie Carbone",
+    "Mario Falcone",
+    "Kitrina Falcone",
+    "The Carpenter (Jenna Duffy)",
+    "Captain Stingaree (Karl Latimer)",
+    "Getaway Genius (Roy Reynolds)",
+    "King Tut (William McElroy)",
+    "Egghead",
+    "Bookworm",
+    "Siren",
+    "Ma Parker",
+    "Shame"],
     "universo-martian-manhunter": [
     "Martian Manhunter (J'onn J'onzz)",
     "Miss Martian (M'gann M'orzz)",
@@ -12085,6 +12295,94 @@ const personajesGrilla = {
     "Nemesis Kid (Hart Druiter)",
     "Esper Lass (Meta Ulnoor)"
     ],
+    "universo-dark-multiverse": [
+    "The Darkest Knight (Bruce Wayne)",
+    "Castle Bat (Bruce Wayne)",
+    "The Bat-Mage (Bruce Wayne)",
+    "Mindhunter (Bruce Wayne)",
+    "Darkfather (Bruce Wayne)",
+    "The Batman Who Frags (Bruce Wayne)",
+    "B-Rex (Bruce Wayne)",
+    "Batmobeast (Bruce Wayne)",
+    "The Silenced (Bruce Wayne)",
+    "Quietus (Bruce Wayne)",
+    "The Opener (Bruce Wayne)",
+    "Bathomet (Bruce Wayne)",
+    "The Final Bruce Wayne (Bruce Wayne)",
+    "Saint Batman (Jean-Paul Valley)",
+    "Eradicator (Lois Lane)",
+    "Tempus Fuginaut",
+    "Perpetua",
+    "The Chronicler",
+    "Apex Lex (Lex Luthor)",
+    "Rabid Robin",
+    "Crow Robin",
+    "Superdemon (Etrigan)",
+    "The Pearl (Martha Wayne)",
+    "The Dark Dragon (Bruce Wayne)",
+    "Bat-God (Bruce Wayne)",
+    "Nightmare Batman (Bruce Wayne)",
+    "Bat-Tech (Bruce Wayne)",
+    "Dr. Arkham (Bruce Wayne)",
+    "The Bat-King (Bruce Wayne)",
+    "Culprit",
+    "The Last Sun (Clark Kent)",
+    "The Last 52 Superman (Clark Kent)",
+    "Dark Multiverse Sinestro (Thaal Sinestro)",
+    "Dark Multiverse Flash (Barry Allen)",
+    "Dark Multiverse Lobo (Lobo)",
+    "Dark Multiverse Cyborg (Victor Stone)",
+    "Dark Multiverse Wonder Woman (Diana Prince)",
+    "Dark Multiverse Doomsday (Harvey Dent)",
+    "Dark Multiverse Black Adam (Teth-Adam)",
+    "The Batman of Earth -43",
+    "The Batman of Earth -13",
+    "The Batman of Earth -49"
+    ],
+    "universo-nightwing": [
+    "Tarantula (Catalina Flores)",
+    "Defacer (Shawn Tsang)",
+    "Heartless (Shelton Lyle)",
+    "Raptor",
+    "Shrike (Boone)",
+    "Bridget Clancy",
+    "Amy Rohrbach",
+    "Melinda Zucco",
+    "Bitewing (Haley)",
+    "Stallion",
+    "Mouse",
+    "Guppy",
+    "Wyrm",
+    "Trigger Twin (Tom Trigger)",
+    "Trigger Twin (Tad Trigger)",
+    "Ballistic (Kelvin Mao)",
+    "Deathwing",
+    "Faultline",
+    "L'Hiver",
+    "Svengali",
+    "Chief Redhorn",
+    "James MacIntyre",
+    "Frankie Blasdell",
+    "Sylvia DeWitt",
+    "Tiger Shark",
+    "Feedback",
+    "Overwrite",
+    "Slayer",
+    "Cinder",
+    "Heavy Metal",
+    "Splicer",
+    "False Face",
+    "Visage",
+    "Thrill-Shedder",
+    "Marionette",
+    "Pistol",
+    "Dreadbolt (Terry Bolatinsky)",
+    "Judge Redhorn",
+    "Cisco Blane",
+    "Marlene Zucco",
+    "Isabella Desmond",
+    "Roxanne Payne"
+    ],
     "universo-outsiders": [
     "Geo-Force (Brion Markov)",
     "Metamorpho (Rex Mason)",
@@ -12244,11 +12542,17 @@ function renderizarTablaGrilla() {
 
     tabla.insertAdjacentHTML('beforeend', '<div class="celda-esquina"></div>');
     dataset.columnas.forEach(col => {
-        tabla.insertAdjacentHTML('beforeend', `<div class="celda-header-columna">${col.nombre}</div>`);
+        const contenidoHeader = col.logo
+            ? `<img src="${col.logo}" alt="${col.nombre}" class="logo-header-grilla">`
+            : col.nombre;
+        tabla.insertAdjacentHTML('beforeend', `<div class="celda-header-columna">${contenidoHeader}</div>`);
     });
 
     dataset.filas.forEach((fila, filaIdx) => {
-        tabla.insertAdjacentHTML('beforeend', `<div class="celda-header-fila">${fila.nombre}</div>`);
+        const contenidoHeaderFila = fila.logo
+            ? `<img src="${fila.logo}" alt="${fila.nombre}" class="logo-header-grilla">`
+            : fila.nombre;
+        tabla.insertAdjacentHTML('beforeend', `<div class="celda-header-fila">${contenidoHeaderFila}</div>`);
         dataset.columnas.forEach((col, colIdx) => {
             const clave = `${filaIdx}-${colIdx}`;
             const celda = document.createElement('div');
