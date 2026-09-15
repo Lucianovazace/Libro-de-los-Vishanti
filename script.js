@@ -34,7 +34,7 @@ const listaMedia = [
     { titulo: "The Fantastic Four: First Steps", categoria: "doomsday", tier: 1, tipo: "Película", poster: "https://brainstomping.com/wp-content/uploads/2025/07/fantastic-four-first-steps-primeros-pasos-cuatro-fantasticos-poster-marvel-mcu.jpg" },
 
     // --- MCU: SAGA DEL INFINITO ---
-    { titulo: "Iron Man", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 1, crono: 4, poster: "https://i.pinimg.com/736x/59/51/d8/5951d8c40e27989167c9adb14567fb36.jpg" },
+    { titulo: "Iron Man", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 1, crono: 4, fichaTecnicaId: "iron-man", poster: "https://i.pinimg.com/736x/59/51/d8/5951d8c40e27989167c9adb14567fb36.jpg" },
     { titulo: "The Incredible Hulk", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 2, crono: 6, poster: "https://m.media-amazon.com/images/M/MV5BMTUyNzk3MjA1OF5BMl5BanBnXkFtZTcwMTE1Njg2MQ@@._V1_.jpg" },
     { titulo: "Iron Man 2", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 3, crono: 5, poster: "https://m.media-amazon.com/images/I/81W+53+YFkL._AC_SY879_.jpg" },
     { titulo: "Thor", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 4, crono: 7, poster: "https://m.media-amazon.com/images/I/61MQ3JIiXmL.jpg" },
@@ -575,6 +575,33 @@ const listaMedia = [
     { titulo: "Dune: Parte Dos", categoria: "timothee-chalamet", subtipo: "2020", tipo: "Película", poster: "https://deadline.com/wp-content/uploads/2023/05/FvIhyI9aUAUZz6l.jpeg?w=819" },
     { titulo: "A Complete Unknown", categoria: "timothee-chalamet", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYTA2NTA5NDYtMzlkOC00MTQxLWI0NDQtMzk2M2YzMGE4MTkxXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
     { titulo: "Marty Supreme", categoria: "timothee-chalamet", subtipo: "2020", tipo: "Película", poster: "https://s3.amazonaws.com/nightjarprod/content/uploads/sites/193/2026/02/09112829/lYWEXbQgRTR4ZQleSXAgRbxAjvq-scaled.jpg" },
+    { titulo: "Don't Look Up", categoria: "jennifer-lawrence", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMmRkYWNkM2ItYWM5Ny00M2QxLWEwMmMtMzk3M2RhNTU1MWQxXkEyXkFqcGc@.V1.jpg" },
+    { titulo: "Causeway", categoria: "jennifer-lawrence", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/yX998i1Gn0eGNQYSNnjry3u1F3d.jpg" },
+    { titulo: "No Hard Feelings", categoria: "jennifer-lawrence", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/STMvHyfXDw40ZqoSQfGzzSBufB.jpg" },
+    { titulo: "Die, My Love", categoria: "jennifer-lawrence", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/Pvgy1867nxRFxZlevZUxhSVFHl.jpg" },
+    { titulo: "Winter's Bone", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/a0qhPkNlxLfsf5B2jFyI1Pp04XV.jpg" },
+    { titulo: "Like Crazy", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/8eIhNKnRfayRwWChx0atZh4vGua.jpg" },
+    { titulo: "The Beaver", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/nlaWgS7iIb6MG3t0FitV1xdPqIV.jpg" },
+    { titulo: "X-Men: First Class", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://collider.com/wp-content/uploads/x-men-first-class-teaser-poster.jpg" },
+    { titulo: "Los Juegos del Hambre", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/750/266325.jpg" },
+    { titulo: "Silver Linings Playbook", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/fhHB1uvfFKKFbj6bTKE8xdtsjKi.jpg" },
+    { titulo: "House at the End of the Street", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/bgHeZ5g7YyxKcwWw1tgyAMy0czy.jpg" },
+    { titulo: "The Devil You Know", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/5Mg2mCW1oW5wlcSYva74bEjNyZl.jpg" },
+    { titulo: "Los Juegos del Hambre: En Llamas", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTAyMjQ3OTAxMzNeQTJeQWpwZ15BbWU4MDU0NzA1MzAx._V1_.jpg" },
+    { titulo: "American Hustle", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/z6O1KDhfWDTm5ZBr6Ovr0eg8LqO.jpg" },
+    { titulo: "X-Men: Days of Future Past", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://i0.wp.com/www.dorkaholics.com/wp-content/uploads/2014/04/9kcs.jpg?fit=692%2C1024&ssl=1" },
+    { titulo: "Serena", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/l09skhb3QDPuJPDNOzru0f1Evww.jpg" },
+    { titulo: "Los Juegos del Hambre: Sinsajo Parte Uno", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgpNZKzB0XfI-nJGEcY-QAfnX7vnMo1UYj0rkHcs21wF2MyQkelGnaZNQ&s=10" },
+    { titulo: "Los Juegos del Hambre: Sinsajo Parte Dos", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNjQzNDI2NTU1Ml5BMl5BanBnXkFtZTgwNTAyMDQ5NjE@._V1_.jpg" },
+    { titulo: "Joy", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/nZAs0HbW82TI1i4Xid83M941Pki.jpg" },
+    { titulo: "X-Men: Apocalypse", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://www.scifinow.co.uk/wp-content/uploads/2015/12/xmen_apocalypse_ver2.jpg" },
+    { titulo: "Passengers", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/jK9S6HANSf2no64v1x1HxfcpmcA.jpg" },
+    { titulo: "Mother!", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/zO7WlUOpI1obOJQ7DtpGCKQVeBo.jpg" },
+    { titulo: "Red Sparrow", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/peIkUiWZJpNew57V8Zay2JYGeyW.jpg" },
+    { titulo: "Dark Phoenix", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "http://www.impawards.com/2019/posters/dark_phoenix.jpg" },
+    { titulo: "Garden Party", categoria: "jennifer-lawrence", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/eqCub9nvrZqTtkOSeLhNRT5mzID.jpg" },
+    { titulo: "The Poker House", categoria: "jennifer-lawrence", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/yTaqEbszsqhunQIjIMkkfwNMiiv.jpg" },
+    { titulo: "The Burning Plain", categoria: "jennifer-lawrence", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/lZlChM3LmOLUCQCfnbaf2dQKe9J.jpg" },
     { titulo: "The Courier", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/zFIjKtZrzhmc7HecdFXXjsLR2Ig.jpg" },
     { titulo: "The Mauritanian", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZjkwODkwNTEtZGZlZC00Y2FkLThmMTQtYTI1NGI1OGUwNWUxXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
     { titulo: "The Power of the Dog", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNzgyMzA2NDEtZWUxNy00MDNmLTllMDYtNzZmNTU5ZWVmMzhlXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
@@ -2591,6 +2618,16 @@ const colecciones = [
         esContenedor: true,
         etiqueta: "Actriz",
         progresoCategoria: "julia-roberts",
+        peliculas: []
+    },
+    {
+        id: "jennifer-lawrence",
+        titulo: "Jennifer Lawrence",
+        categoria: "actores",
+        poster: "https://media.vogue.mx/photos/5cfe891727998c247198c76d/2:3/w_2560%2Cc_limit/GettyImages-1153799667.jpg",
+        esContenedor: true,
+        etiqueta: "Actriz",
+        progresoCategoria: "jennifer-lawrence",
         peliculas: []
     },
     {
@@ -5129,6 +5166,7 @@ function abrirColeccion(colId) {
         'timothee-chalamet': '.btn-filtro-chalamet[data-tipo="2020"]',
         'benedict-cumberbatch': '.btn-filtro-cumberbatch[data-tipo="2020"]',
         'julia-roberts': '.btn-filtro-julia-roberts[data-tipo="2020"]',
+        'jennifer-lawrence': '.btn-filtro-jlawrence[data-tipo="2020"]',
         'sydney-sweeney': '.btn-filtro-sweeney[data-tipo="2020"]',
         'tom-holland': '.btn-filtro-holland[data-tipo="2020"]',
         'barry-keoghan': '.btn-filtro-keoghan[data-tipo="2020"]',
@@ -5289,6 +5327,17 @@ function actualizarTodasLasColecciones() {
         } else if (col.progresoCategoria) {
             actualizarProgresoCategoria(col.id, col.progresoCategoria);
         } else if (!col.esContenedor) {
+            // Estas colecciones (ej. Arkhamverse, LEGO DC) guardan sus ítems
+            // "adentro" de la propia ficha (col.peliculas), no repartidos en
+            // listaMedia. El progreso se calcula contando tarjetas ya
+            // dibujadas en su grilla — pero esas tarjetas normalmente recién
+            // se dibujan la primera vez que se abre la ficha. Sin este
+            // paso, la tarjeta del hub queda pisada en 0% para siempre,
+            // aunque el usuario ya haya marcado cosas como vistas/jugadas.
+            asegurarPeliculasRenderizadas(col);
+            if (col.peliculas.length > 0) {
+                aplicarVistosGuardados(document.getElementById(`grilla-${col.id}`));
+            }
             actualizarProgresoColeccion(col.id);
         }
     });
@@ -5340,6 +5389,7 @@ function renderizarContenido() {
         "timothee-chalamet": "seccion-timothee-chalamet",
         "benedict-cumberbatch": "seccion-benedict-cumberbatch",
         "julia-roberts": "seccion-julia-roberts",
+        "jennifer-lawrence": "seccion-jennifer-lawrence",
         "sydney-sweeney": "seccion-sydney-sweeney",
         "tom-holland": "seccion-tom-holland",
         "barry-keoghan": "seccion-barry-keoghan",
@@ -5406,6 +5456,13 @@ function renderizarContenido() {
 
             const esVideojuego = item.tipo === "Videojuego";
             const textoInicial = esVideojuego ? "Marcar Jugado" : "Marcar Visto";
+            // Algunos ítems (ej. Iron Man dentro del orden cronológico del
+            // MCU) además abren una "ficha técnica" propia con sinopsis,
+            // puntuaciones, etc. Se agrega como botón extra para no romper
+            // el orden/tracking de la lista a la que ya pertenecen.
+            const botonFichaTecnica = item.fichaTecnicaId
+                ? `<button class="btn-abrir-coleccion btn-ficha-tecnica-item" data-ficha-tecnica="${item.fichaTecnicaId}">Ficha Técnica 📊</button>`
+                : '';
 
             const htmlTarjeta = `
                 <div class="tarjeta-media" style="${ocultarEstilo}" data-tier="${item.tier || ''}" data-tipo="${item.tipoArrow || ''}" data-crono="${item.crono || ''}" data-subtipo="${item.subtipo || ''}" data-personajes="${item.personajes || item.subtipo || ''}" data-orden="${item.ordenSalida || ''}" data-tierra="${item.tierra || ''}" data-editorial="${item.editorial || ''}" data-accion="${esVideojuego ? 'jugado' : 'visto'}">
@@ -5413,9 +5470,23 @@ function renderizarContenido() {
                     <h3>${item.titulo}</h3>
                     <p>${item.tipo}</p>
                     <button class="btn-accion">${textoInicial}</button>
+                    ${botonFichaTecnica}
                 </div>
             `;
             contenedorDestino.insertAdjacentHTML('beforeend', htmlTarjeta);
+            if (item.fichaTecnicaId) {
+                const btnFicha = contenedorDestino.querySelector(`.tarjeta-media:last-child .btn-ficha-tecnica-item`);
+                if (btnFicha) {
+                    btnFicha.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        const seccionFicha = document.getElementById(`seccion-ficha-${item.fichaTecnicaId}`);
+                        if (seccionFicha) {
+                            seccionFicha.dataset.origen = seccionActivaActual ? seccionActivaActual.id : '';
+                            cambiarSeccion(seccionFicha);
+                        }
+                    });
+                }
+            }
 
             // El Camino del Héroe (DC Argentina) no tiene items propios:
             // muestra los mismos de cada continuidad, filtrables por personaje.
@@ -6796,6 +6867,13 @@ if(btnVolverJuliaRoberts) {
     });
 }
 
+const btnVolverJenniferLawrence = document.getElementById('btn-volver-jennifer-lawrence');
+if(btnVolverJenniferLawrence) {
+    btnVolverJenniferLawrence.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-actores'));
+    });
+}
+
 const btnVolverSydneySweeney = document.getElementById('btn-volver-sydney-sweeney');
 if(btnVolverSydneySweeney) {
     btnVolverSydneySweeney.addEventListener('click', () => {
@@ -7290,6 +7368,16 @@ if(btnVolverMartinScorsese) {
     });
 }
 
+const btnVolverFichaIronMan = document.getElementById('btn-volver-ficha-iron-man');
+if(btnVolverFichaIronMan) {
+    btnVolverFichaIronMan.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-iron-man');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-mcu-infinito'));
+    });
+}
+
 const btnVolverMarvelsAvengers = document.getElementById('btn-volver-marvels-avengers');
 if(btnVolverMarvelsAvengers) {
     btnVolverMarvelsAvengers.addEventListener('click', () => {
@@ -7603,6 +7691,19 @@ botonesFiltroJuliaRoberts.forEach(boton => {
     });
 });
 inicializarFiltroTipoActor('seccion-julia-roberts', 'btn-filtro-julia-roberts');
+
+// ==========================================
+// FILTROS "JENNIFER LAWRENCE" — por década (combinado con tipo)
+// ==========================================
+const botonesFiltroJLawrence = document.querySelectorAll('.btn-filtro-jlawrence');
+botonesFiltroJLawrence.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroJLawrence.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        aplicarFiltroTipoYDecadaActor('seccion-jennifer-lawrence', 'btn-filtro-jlawrence');
+    });
+});
+inicializarFiltroTipoActor('seccion-jennifer-lawrence', 'btn-filtro-jlawrence');
 
 // ==========================================
 // FILTROS "CUATRO FANTÁSTICOS" (Fox, por década)
@@ -8963,7 +9064,7 @@ const juegosNombralosDatasets = {
     "linternas": {
         titulo: "Green Lantern: Nombralos",
         subtitulo: "Nombrá a todos los Green Lantern que puedas antes de que se acabe el tiempo.",
-        icono: "💚",
+        icono: "<img src=\"https://upload.wikimedia.org/wikipedia/commons/c/c8/Green_lantern.png\" alt=\"Green Lantern\" style=\"height: 36px; width: auto;\">",
         categoria: "dc",
         personajes: personajesNombralosLinternas
     },
