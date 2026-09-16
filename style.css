@@ -1381,3 +1381,17 @@ h2 {
     margin-top: -6px;
     margin-bottom: 6px;
 }
+
+.ficha-tecnica-plataformas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: center;
+}
+
+.ficha-tecnica-plataformas img {
+    height: 32px;
+    width: auto;
+    max-width: 60px;
+    object-fit: contain;
+}

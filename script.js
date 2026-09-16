@@ -35,7 +35,7 @@ const listaMedia = [
 
     // --- MCU: SAGA DEL INFINITO ---
     { titulo: "Iron Man", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 1, crono: 4, fichaTecnicaId: "iron-man", poster: "https://i.pinimg.com/736x/59/51/d8/5951d8c40e27989167c9adb14567fb36.jpg" },
-    { titulo: "The Incredible Hulk", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 2, crono: 6, poster: "https://m.media-amazon.com/images/M/MV5BMTUyNzk3MjA1OF5BMl5BanBnXkFtZTcwMTE1Njg2MQ@@._V1_.jpg" },
+    { titulo: "The Incredible Hulk", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 2, crono: 6, fichaTecnicaId: "incredible-hulk", poster: "https://m.media-amazon.com/images/M/MV5BMTUyNzk3MjA1OF5BMl5BanBnXkFtZTcwMTE1Njg2MQ@@._V1_.jpg" },
     { titulo: "Iron Man 2", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 3, crono: 5, poster: "https://m.media-amazon.com/images/I/81W+53+YFkL._AC_SY879_.jpg" },
     { titulo: "Thor", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 4, crono: 7, poster: "https://m.media-amazon.com/images/I/61MQ3JIiXmL.jpg" },
     { titulo: "Captain America: The First Avenger", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 5, crono: 2, poster: "https://m.media-amazon.com/images/I/81U9EbWexxL.jpg" },
@@ -275,7 +275,7 @@ const listaMedia = [
     { titulo: "LEGO Star Wars: The Complete Saga", categoria: "sw-videojuegos", tipo: "Videojuego", poster: "https://m.media-amazon.com/images/M/MV5BM2Q4NzYzMDEtMGM1ZC00YTBkLTgyNzctYjFjYjAwZWY3NTJkXkEyXkFqcGc@.V1.jpg" },
     { titulo: "LEGO Star Wars III: The Clone Wars", categoria: "sw-videojuegos", tipo: "Videojuego", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1mOX8mHIXBiE73YDPXbNy50JeRmudW4Rps4JASYSDWsSgdUNSVF19NkA&s=10" },
     { titulo: "LEGO Star Wars: The Force Awakens", categoria: "sw-videojuegos", tipo: "Videojuego", poster: "https://m.media-amazon.com/images/M/MV5BNjhiYmVmZmItOGE2MS00ZDQ4LTk4MDUtMzAyZjE0NmE3YjZjXkEyXkFqcGc@._V1_.jpg" },
-    { titulo: "LEGO Star Wars: The Skywalker Saga", categoria: "sw-videojuegos", tipo: "Videojuego", poster: "https://m.media-amazon.com/images/M/MV5BZjJhMDExNmQtZDU0ZC00YTk5LThlMGQtNjU0NzZmN2JkOTczXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "LEGO Star Wars: The Skywalker Saga", categoria: "sw-videojuegos", tipo: "Videojuego", fichaTecnicaId: "lego-swss", poster: "https://m.media-amazon.com/images/M/MV5BZjJhMDExNmQtZDU0ZC00YTk5LThlMGQtNjU0NzZmN2JkOTczXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
     { titulo: "Star Wars: Squadrons", categoria: "sw-videojuegos", tipo: "Videojuego", poster: "https://store-images.s-microsoft.com/image/apps.51514.71371953440216666.508e0708-a814-4f11-8420-5f620fd8ce09.59f15fb1-fb46-4166-b1ec-e8bb8d2b3350" },
     { titulo: "Star Wars: The Force Unleashed", categoria: "sw-videojuegos", tipo: "Videojuego", poster: "https://m.media-amazon.com/images/I/71eWBotqfIL._AC_UF1000,1000_QL80_.jpg" },
     { titulo: "Star Wars: The Force Unleashed II", categoria: "sw-videojuegos", tipo: "Videojuego", poster: "https://m.media-amazon.com/images/M/MV5BMTc2YTQwZTEtNjgwNi00MDliLTk3MDYtYjU1MzNiNjNmNTIwXkEyXkFqcGc@._V1_.jpg" },
@@ -704,7 +704,7 @@ const listaMedia = [
     { titulo: "Superman", categoria: "james-gunn", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/712N7RdrlTL.jpg" },
     { titulo: "Super", categoria: "james-gunn", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZTUzMDU3NWUtNjdlMy00MGQ3LTk2M2ItNWVhNTlhZjkyMDExXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
     { titulo: "Movie 43", categoria: "james-gunn", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/uYa06GxHsCsELx9vOQ11vsT0Aa6.jpg" },
-    { titulo: "Guardianes de La Galaxia", categoria: "james-gunn", subtipo: "2010", tipo: "Película", poster: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p12037541_b_v8_ay.jpg" },
+    { titulo: "Guardianes de La Galaxia", categoria: "james-gunn", subtipo: "2010", tipo: "Película", poster: "http://www.impawards.com/2014/posters/guardians_of_the_galaxy.jpg" },
     { titulo: "Guardianes de La Galaxia Vol. 2", categoria: "james-gunn", subtipo: "2010", tipo: "Película", poster: "https://external-preview.redd.it/official-guardians-of-the-galaxy-vol-2-teaser-poster-v0-TjDcWtSjsp7PD12icRxi9UVVWL-38pmlw29-42nNvOI.jpg?auto=webp&s=da143bea206173e3cc2b0d5a4e8f2f84b24a994e" },
     { titulo: "Slither", categoria: "james-gunn", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/zNlJvCY3Pz7SE09Lf4G7uPs5XFZ.jpg" },
     { titulo: "Nights and Weekends", categoria: "greta-gerwig", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTU5NzM0NjUxOF5BMl5BanBnXkFtZTcwMjUyMTQ5MQ@@.V1.jpg" },
@@ -2983,6 +2983,7 @@ const colecciones = [
         categoria: "sitcoms",
         poster: "https://i.pinimg.com/736x/51/99/36/519936a2c4423e4887a441b20aac8cac.jpg",
         etiqueta: "Colección",
+        esSerie: true,
         peliculas: [
             { titulo: "The Big Bang Theory", poster: "https://i.pinimg.com/736x/58/b0/76/58b0765cc93de801cd1db5f5d5b4f0d7.jpg" },
             { titulo: "Young Sheldon", poster: "https://i.pinimg.com/736x/ee/87/2a/ee872a7f0270a08514629efe729d19af.jpg" },
@@ -3501,7 +3502,7 @@ const colecciones = [
         id: "brooklyn-nine-nine",
         titulo: "Brooklyn Nine-Nine",
         categoria: "sitcoms",
-        poster: "https://image.tmdb.org/t/p/w500/9hL8os3A3pGpdvQtt029zj2pURy.jpg",
+        poster: "https://i.pinimg.com/736x/52/1d/27/521d271fb4b41a5e19a30de376361a30.jpg",
         etiqueta: "Serie",
         esSerie: true,
         peliculas: [
@@ -3550,8 +3551,8 @@ const colecciones = [
             { titulo: "LEGO Batman: The Videogame", poster: "https://m.media-amazon.com/images/M/MV5BYjg1OGFiNjItNDJmNS00ZWNjLWJhZGUtNTY0Yzg4YmVkM2U0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
             { titulo: "LEGO Batman 2: DC Super Heroes", poster: "https://m.media-amazon.com/images/M/MV5BMjgyMThmZTgtNzk5MS00ZWQ0LWJhYjMtNmI5NzhhNGM1MWU4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
             { titulo: "LEGO Batman 3: Beyond Gotham", poster: "https://m.media-amazon.com/images/M/MV5BN2E3ZGM5MTAtOGE3NS00OWMyLWFkNmMtOTVlODUwOWNmMWE5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
-            { titulo: "LEGO DC Super-Villains", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtWxQKciBUEcUG1kHfFfAvAcWtvkUZ8j-eOgDLzz5EbuUXN5ts6tIcgqs&s=10" },
-            { titulo: "LEGO Batman: Legacy of the Dark Knight", poster: "https://m.media-amazon.com/images/M/MV5BNDhlYTFmOGMtY2YxZi00ODczLTg0NTQtZDJiMzBjZWQ4YzU2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" }
+            { titulo: "LEGO DC Super-Villains", fichaTecnicaId: "lego-dc-super-villains", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtWxQKciBUEcUG1kHfFfAvAcWtvkUZ8j-eOgDLzz5EbuUXN5ts6tIcgqs&s=10" },
+            { titulo: "LEGO Batman: Legacy of the Dark Knight", fichaTecnicaId: "lego-batman-legacy", poster: "https://m.media-amazon.com/images/M/MV5BNDhlYTFmOGMtY2YxZi00ODczLTg0NTQtZDJiMzBjZWQ4YzU2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" }
         ]
     },
     {
@@ -3576,7 +3577,9 @@ const colecciones = [
             { titulo: "Hulk y Los Agentes de S.M.A.S.H.", poster: "https://m.media-amazon.com/images/M/MV5BMTg1MzIxMzM4Nl5BMl5BanBnXkFtZTcwMTg3Mzc5OQ@@._V1_FMjpg_UX1000_.jpg" },
             { titulo: "Guardianes de La Galaxia", poster: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p12037541_b_v8_ay.jpg" },
             { titulo: "Iron Man y Hulk: Héroes Unidos", poster: "https://m.media-amazon.com/images/M/MV5BNmQ4NDY1YWEtNTdmZi00ZmQ5LTk3MzYtYzBkNzhmNTM2Yzk5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
-            { titulo: "Iron Man y Capitán América: Héroes Unidos", poster: "https://m.media-amazon.com/images/M/MV5BZjkxMTM1YmYtZDRkNC00YWNlLWFiYjAtZGIyMmQyYjI0ZjFjXkEyXkFqcGc@._V1_.jpg" }
+            { titulo: "Iron Man y Capitán América: Héroes Unidos", poster: "https://m.media-amazon.com/images/M/MV5BZjkxMTM1YmYtZDRkNC00YWNlLWFiYjAtZGIyMmQyYjI0ZjFjXkEyXkFqcGc@._V1_.jpg" },
+            { titulo: "Ultimate Spider-Man", poster: "https://static.wikia.nocookie.net/spiderman/images/a/ad/Usmpromo.jpg/revision/latest?cb=20130127003133" },
+            { titulo: "Avengers Assemble", poster: "https://static.wikia.nocookie.net/marvelanimateduniversedisney/images/5/5e/Avengers_Assemble_Season_1_Poster.jpg/revision/latest?cb=20201015075047" }
         ]
     },
     {
@@ -3670,7 +3673,8 @@ const colecciones = [
         peliculas: [
             { titulo: "Marvel's Spider-Man", poster: "https://i.pinimg.com/736x/8a/0e/71/8a0e71a79745c31ad71f2a83f33b91e1.jpg" },
             { titulo: "Marvel's Spider-Man: Miles Morales", poster: "https://image.api.playstation.com/vulcan/ap/rnd/202008/1423/cZaoNGoCXpClHpljuPVPSUlw.jpg" },
-            { titulo: "Marvel's Spider-Man 2", poster: "https://m.media-amazon.com/images/M/MV5BZmUwYTNjZTAtOTYxYS00NmM3LTkwODEtNWM2NDNlOGZlYzMyXkEyXkFqcGc@.V1.jpg" }
+            { titulo: "Marvel's Spider-Man 2", poster: "https://m.media-amazon.com/images/M/MV5BZmUwYTNjZTAtOTYxYS00NmM3LTkwODEtNWM2NDNlOGZlYzMyXkEyXkFqcGc@.V1.jpg" },
+            { titulo: "Marvel's Wolverine", poster: "https://cdnb.artstation.com/p/assets/images/images/092/247/923/large/bat-knight-channel-marvel-swolverine-coverartwallpaper01.webp?1759124311" }
         ]
     },
     {
@@ -3784,7 +3788,7 @@ const colecciones = [
         id: "anime",
         titulo: "Anime",
         categoria: "explorar",
-        poster: "https://placehold.co/300x450?text=Anime",
+        poster: "https://i.pinimg.com/736x/30/8d/fb/308dfbf4832ab7730ac49ee980b94267.jpg",
         esContenedor: true,
         peliculas: []
     },
@@ -4531,9 +4535,9 @@ const colecciones = [
             { titulo: "LEGO Star Wars: The Force Awakens", poster: "https://m.media-amazon.com/images/M/MV5BNjhiYmVmZmItOGE2MS00ZDQ4LTk4MDUtMzAyZjE0NmE3YjZjXkEyXkFqcGc@._V1_.jpg" },
             { titulo: "LEGO Marvel Super Heroes 2", poster: "https://static.wikia.nocookie.net/marveldatabase/images/8/84/LEGO_Marvel_Super_Heroes_2_box_art.jpg/revision/latest?cb=20170516213944" },
             { titulo: "LEGO The Incredibles", poster: "https://store-images.s-microsoft.com/image/apps.47394.63814564947568672.1380b0de-7e85-4ee9-a156-948bc47549ea.9cd49bf2-2c46-4d1d-812c-ab716e7c55ad" },
-            { titulo: "LEGO DC Super-Villains", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtWxQKciBUEcUG1kHfFfAvAcWtvkUZ8j-eOgDLzz5EbuUXN5ts6tIcgqs&s=10" },
-            { titulo: "LEGO Star Wars: The Skywalker Saga", poster: "https://m.media-amazon.com/images/M/MV5BZjJhMDExNmQtZDU0ZC00YTk5LThlMGQtNjU0NzZmN2JkOTczXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
-            { titulo: "LEGO Batman: Legacy of the Dark Knight", poster: "https://m.media-amazon.com/images/M/MV5BNDhlYTFmOGMtY2YxZi00ODczLTg0NTQtZDJiMzBjZWQ4YzU2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" }
+            { titulo: "LEGO DC Super-Villains", fichaTecnicaId: "lego-dc-super-villains", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtWxQKciBUEcUG1kHfFfAvAcWtvkUZ8j-eOgDLzz5EbuUXN5ts6tIcgqs&s=10" },
+            { titulo: "LEGO Star Wars: The Skywalker Saga", fichaTecnicaId: "lego-swss", poster: "https://m.media-amazon.com/images/M/MV5BZjJhMDExNmQtZDU0ZC00YTk5LThlMGQtNjU0NzZmN2JkOTczXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+            { titulo: "LEGO Batman: Legacy of the Dark Knight", fichaTecnicaId: "lego-batman-legacy", poster: "https://m.media-amazon.com/images/M/MV5BNDhlYTFmOGMtY2YxZi00ODczLTg0NTQtZDJiMzBjZWQ4YzU2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" }
         ]
     },
     {
@@ -5102,12 +5106,16 @@ function asegurarPeliculasRenderizadas(col) {
             return;
         }
         const etiquetaItem = peli.etiqueta || etiquetaPorDefecto;
+        const botonFichaTecnica = peli.fichaTecnicaId
+            ? `<button class="btn-abrir-coleccion btn-ficha-tecnica-item" data-ficha-tecnica="${peli.fichaTecnicaId}">Ficha Técnica 📊</button>`
+            : '';
         const htmlPelicula = `
             <div class="tarjeta-media" data-accion="${col.esVideojuego ? 'jugado' : 'visto'}">
                 <img src="${peli.poster}" alt="${peli.titulo}">
                 <h3>${peli.titulo}</h3>
                 <p>${etiquetaItem}</p>
                 <button class="btn-accion">${textoPendiente}</button>
+                ${botonFichaTecnica}
             </div>
         `;
         grilla.insertAdjacentHTML('beforeend', htmlPelicula);
@@ -5115,6 +5123,16 @@ function asegurarPeliculasRenderizadas(col) {
     grilla.dataset.peliculasRenderizadas = 'true';
     grilla.querySelectorAll('.tarjeta-media-enlace').forEach(tarjeta => {
         tarjeta.addEventListener('click', () => abrirColeccion(tarjeta.dataset.coleccionEnlace));
+    });
+    grilla.querySelectorAll('.btn-ficha-tecnica-item').forEach(boton => {
+        boton.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const seccionFicha = document.getElementById(`seccion-ficha-${boton.dataset.fichaTecnica}`);
+            if (seccionFicha) {
+                seccionFicha.dataset.origen = seccionActivaActual ? seccionActivaActual.id : '';
+                cambiarSeccion(seccionFicha);
+            }
+        });
     });
     sincronizarVistos();
 }
@@ -7365,6 +7383,46 @@ const btnVolverMartinScorsese = document.getElementById('btn-volver-martin-scors
 if(btnVolverMartinScorsese) {
     btnVolverMartinScorsese.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-directores'));
+    });
+}
+
+const btnVolverFichaLegoDCSuperVillains = document.getElementById('btn-volver-ficha-lego-dc-super-villains');
+if(btnVolverFichaLegoDCSuperVillains) {
+    btnVolverFichaLegoDCSuperVillains.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-lego-dc-super-villains');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-dc-videojuegos'));
+    });
+}
+
+const btnVolverFichaLegoSWSS = document.getElementById('btn-volver-ficha-lego-swss');
+if(btnVolverFichaLegoSWSS) {
+    btnVolverFichaLegoSWSS.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-lego-swss');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-sw-videojuegos'));
+    });
+}
+
+const btnVolverFichaLegoBatman = document.getElementById('btn-volver-ficha-lego-batman-legacy');
+if(btnVolverFichaLegoBatman) {
+    btnVolverFichaLegoBatman.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-lego-batman-legacy');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-dc-videojuegos'));
+    });
+}
+
+const btnVolverFichaIncredibleHulk = document.getElementById('btn-volver-ficha-incredible-hulk');
+if(btnVolverFichaIncredibleHulk) {
+    btnVolverFichaIncredibleHulk.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-incredible-hulk');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-mcu-infinito'));
     });
 }
 
