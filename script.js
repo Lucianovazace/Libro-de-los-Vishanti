@@ -370,7 +370,6 @@ const listaMedia = [
     { titulo: "Malcolm in the Middle", categoria: "sitcoms", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/ckLLIsNy3Z0Go1PYHA2PHzVymUA.jpg" },
     { titulo: "Scrubs", categoria: "sitcoms", tipo: "Serie", poster: "https://m.media-amazon.com/images/I/713GR2dy8RL.AC_UF894,1000_QL80.jpg" },
     { titulo: "It's Always Sunny in Philadelphia", categoria: "sitcoms", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/o0tMMK33JqmtpcWw0H41cEr9xQB.jpg" },
-    { titulo: "Modern Family", categoria: "sitcoms", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/k5Qg5rgPoKdh3yTJJrLtyoyYGwC.jpg" },
     { titulo: "Parks and Recreation", categoria: "sitcoms", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/6KrY1WOj8UaCtrEAIW9rLh0UtD6.jpg" },
     { titulo: "New Girl", categoria: "sitcoms", tipo: "Serie", poster: "https://pics.filmaffinity.com/New_Girl_Serie_de_TV-502564246-large.jpg" },
     { titulo: "The Good Place", categoria: "sitcoms", tipo: "Serie", poster: "https://m.media-amazon.com/images/M/MV5BMTgzMzAyOTg4Ml5BMl5BanBnXkFtZTgwMjA0Mjk0OTE@.V1_FMjpg_UX1000.jpg" },
@@ -3514,6 +3513,27 @@ const colecciones = [
             { titulo: "Brooklyn Nine-Nine Temporada 6", poster: "https://image.tmdb.org/t/p/w500/xa9xA4Ieju9cyVkfJ47n1hnbHWB.jpg" },
             { titulo: "Brooklyn Nine-Nine Temporada 7", poster: "https://image.tmdb.org/t/p/original/mWWqh0Knb01YSY0bZaCX4mEIJJO.jpg" },
             { titulo: "Brooklyn Nine-Nine Temporada 8", poster: "https://image.tmdb.org/t/p/w500/8PmhuCEB9W3Cc5ZDJunnV1m68IZ.jpg" }
+        ]
+    },
+    {
+        id: "modern-family",
+        titulo: "Modern Family",
+        categoria: "sitcoms",
+        poster: "https://image.tmdb.org/t/p/original/k5Qg5rgPoKdh3yTJJrLtyoyYGwC.jpg",
+        etiqueta: "Serie",
+        esSerie: true,
+        peliculas: [
+            { titulo: "Modern Family Temporada 1", poster: "https://image.tmdb.org/t/p/original/vBcUqxncy8HRXeST68Lych9kSCU.jpg" },
+            { titulo: "Modern Family Temporada 2", poster: "https://image.tmdb.org/t/p/original/yvBc8av9K1g5QRtBDnP5xY69jb4.jpg" },
+            { titulo: "Modern Family Temporada 3", poster: "https://image.tmdb.org/t/p/w500/a4EJOG8VOV02veUIYtu4lX6FVdr.jpg" },
+            { titulo: "Modern Family Temporada 4", poster: "https://image.tmdb.org/t/p/original/3fpusiurM5qBwiHVpMFBkLYxgIx.jpg" },
+            { titulo: "Modern Family Temporada 5", poster: "https://image.tmdb.org/t/p/original/aVXRPicTiLJHtAUOUJEpTXaa3i9.jpg" },
+            { titulo: "Modern Family Temporada 6", poster: "https://image.tmdb.org/t/p/original/jStJYAnYgwlvdfYbdyImkavgmqC.jpg" },
+            { titulo: "Modern Family Temporada 7", poster: "https://image.tmdb.org/t/p/original/825aF6sf43gIyPsX0oeNNhqMzuH.jpg" },
+            { titulo: "Modern Family Temporada 8", poster: "https://image.tmdb.org/t/p/original/coOmsK9sWpScfLDlRXQ2xUJdzZ8.jpg" },
+            { titulo: "Modern Family Temporada 9", poster: "https://image.tmdb.org/t/p/original/6C6M5xtrvDPXiG3PHo3CbPlztas.jpg" },
+            { titulo: "Modern Family Temporada 10", poster: "https://image.tmdb.org/t/p/original/mXYC6CZ3uhGMSke1ysxp1elTmDl.jpg" },
+            { titulo: "Modern Family Temporada 11", poster: "https://image.tmdb.org/t/p/w500/sMIhyJw2s1PRS8S7UtVnQrHAlNB.jpg" }
         ]
     },
     {
@@ -7396,6 +7416,35 @@ if(btnVolverFichaLegoDCSuperVillains) {
     });
 }
 
+const btnDlcLegoSWSS = document.getElementById('btn-dlc-lego-swss');
+if (btnDlcLegoSWSS) {
+    btnDlcLegoSWSS.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-lego-swss'));
+    });
+}
+
+const btnVolverDlcLegoSWSS = document.getElementById('btn-volver-dlc-lego-swss');
+if (btnVolverDlcLegoSWSS) {
+    btnVolverDlcLegoSWSS.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-lego-swss'));
+    });
+}
+
+// Tarjetas de la grilla de DLC: cada una abre su propia ficha individual.
+document.querySelectorAll('#seccion-dlc-lego-swss [data-dlc-abrir]').forEach(tarjeta => {
+    tarjeta.addEventListener('click', () => {
+        const seccionDlc = document.getElementById(`seccion-dlc-${tarjeta.dataset.dlcAbrir}`);
+        if (seccionDlc) cambiarSeccion(seccionDlc);
+    });
+});
+
+// Todas las fichas individuales de DLC vuelven directo a la grilla de DLC.
+document.querySelectorAll('.btn-volver-dlc-individual').forEach(boton => {
+    boton.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-lego-swss'));
+    });
+});
+
 const btnVolverFichaLegoSWSS = document.getElementById('btn-volver-ficha-lego-swss');
 if(btnVolverFichaLegoSWSS) {
     btnVolverFichaLegoSWSS.addEventListener('click', () => {
@@ -7502,6 +7551,13 @@ if(btnVolverCommunity) {
 const btnVolverFriends = document.getElementById('btn-volver-friends');
 if(btnVolverFriends) {
     btnVolverFriends.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-sitcoms'));
+    });
+}
+
+const btnVolverModernFamily = document.getElementById('btn-volver-modern-family');
+if(btnVolverModernFamily) {
+    btnVolverModernFamily.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-sitcoms'));
     });
 }

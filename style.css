@@ -1395,3 +1395,9 @@ h2 {
     max-width: 60px;
     object-fit: contain;
 }
+
+.btn-dlc-ficha-tecnica {
+    margin-top: 20px;
+    display: inline-block;
+    width: auto;
+}
