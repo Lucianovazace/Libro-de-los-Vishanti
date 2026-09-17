@@ -2863,6 +2863,17 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "mi-pc",
+        titulo: "Mi PC",
+        categoria: "videojuegos-explorar",
+        poster: "https://cdn-icons-png.flaticon.com/512/2933/2933245.png",
+        esContenedor: true,
+        etiqueta: "Herramienta",
+        ocultarProgreso: true,
+        textoBotonAbrir: "Configurar 🖥️",
+        peliculas: []
+    },
+    {
         id: "assassins-creed",
         titulo: "Assassin's Creed",
         categoria: "videojuegos-explorar",
@@ -6503,6 +6514,19 @@ function cambiarSeccion(seccionNueva) {
     // estuvieran bien. Recalculamos acá, cada vez que se entra a
     // cualquier sección, para que siempre reflejen el estado real.
     actualizarTodasLasColecciones();
+
+    // "Mi PC": precargar el formulario con lo ya guardado, y armar la
+    // comparación "¿Te corre?" en cualquier ficha de Requisitos que la
+    // tenga disponible.
+    if (seccionNueva.id === 'seccion-mi-pc' && typeof precargarFormularioMiPC === 'function') {
+        precargarFormularioMiPC();
+    }
+    if (seccionNueva.id === 'seccion-requisitos-lego-swss' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-lego-swss', REQUISITOS_LEGO_SWSS);
+    }
+    if (seccionNueva.id === 'seccion-requisitos-lego-batman-legacy' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-lego-batman-legacy', REQUISITOS_LEGO_BATMAN_LEGACY);
+    }
 }
 
 const btnDoomsday = document.getElementById('btn-doomsday');
@@ -7416,6 +7440,169 @@ if(btnVolverFichaLegoDCSuperVillains) {
     });
 }
 
+// ==========================================
+// "MI PC" — guarda las specs del usuario en localStorage para comparar
+// contra los requisitos de cada juego que los tenga cargados.
+// ==========================================
+function cargarEspecificacionesMiPC() {
+    try {
+        const guardado = localStorage.getItem('especificacionesMiPC');
+        return guardado ? JSON.parse(guardado) : null;
+    } catch (e) {
+        return null;
+    }
+}
+
+function precargarFormularioMiPC() {
+    const specs = cargarEspecificacionesMiPC();
+    if (!specs) return;
+    const campos = { so: 'mipc-so', cpu: 'mipc-cpu', ram: 'mipc-ram', almacenamiento: 'mipc-almacenamiento', directx: 'mipc-directx', gpu: 'mipc-gpu' };
+    Object.entries(campos).forEach(([clave, id]) => {
+        const input = document.getElementById(id);
+        if (input && specs[clave] !== undefined) input.value = specs[clave];
+    });
+}
+
+const btnVolverMiPC = document.getElementById('btn-volver-mi-pc');
+if (btnVolverMiPC) {
+    btnVolverMiPC.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-videojuegos-explorar'));
+    });
+}
+
+const btnGuardarMiPC = document.getElementById('btn-guardar-mi-pc');
+if (btnGuardarMiPC) {
+    btnGuardarMiPC.addEventListener('click', () => {
+        const specs = {
+            so: document.getElementById('mipc-so').value.trim(),
+            cpu: document.getElementById('mipc-cpu').value.trim(),
+            ram: document.getElementById('mipc-ram').value.trim(),
+            almacenamiento: document.getElementById('mipc-almacenamiento').value.trim(),
+            directx: document.getElementById('mipc-directx').value.trim(),
+            gpu: document.getElementById('mipc-gpu').value.trim()
+        };
+        try {
+            localStorage.setItem('especificacionesMiPC', JSON.stringify(specs));
+            const okMsg = document.getElementById('mipc-guardado-ok');
+            if (okMsg) {
+                okMsg.classList.remove('oculto');
+                setTimeout(() => okMsg.classList.add('oculto'), 2500);
+            }
+        } catch (e) { /* localStorage no disponible */ }
+    });
+}
+
+// Arma, para una sección de Requisitos dada, el bloque de comparación
+// "¿Te corre?" a partir de las specs guardadas en Mi PC. Los campos
+// numéricos (RAM, almacenamiento) se comparan automáticamente; CPU, GPU,
+// SO y DirectX se muestran uno al lado del otro para que la persona los
+// compare a ojo, porque no hay forma confiable de saber automáticamente
+// si un modelo de placa de video es mejor que otro sin una base de datos
+// de benchmarks — mejor mostrar los datos claros que dar un veredicto
+// que puede estar mal.
+function armarComparacionMiPC(idSeccionRequisitos, requisitos) {
+    const specs = cargarEspecificacionesMiPC();
+    const contenedor = document.getElementById(idSeccionRequisitos);
+    if (!contenedor) return;
+    let bloque = contenedor.querySelector('.mipc-comparacion');
+    if (bloque) bloque.remove();
+    if (!specs) return;
+
+    const filas = [];
+    const ramUsuario = parseFloat(specs.ram);
+    const ramMinima = parseFloat(requisitos.minimos.ram);
+    if (!isNaN(ramUsuario) && !isNaN(ramMinima)) {
+        const cumple = ramUsuario >= ramMinima;
+        filas.push(`<div class="mipc-comparacion-fila"><span class="mipc-comparacion-etiqueta">Memoria RAM</span><span class="mipc-comparacion-valores">${specs.ram} GB vs ${requisitos.minimos.ram} GB mín. — <span class="${cumple ? 'mipc-ok' : 'mipc-falta'}">${cumple ? '✅ Cumple' : '❌ No alcanza'}</span></span></div>`);
+    }
+    const almUsuario = parseFloat(specs.almacenamiento);
+    const almMinimo = parseFloat(requisitos.minimos.almacenamiento);
+    if (!isNaN(almUsuario) && !isNaN(almMinimo)) {
+        const cumple = almUsuario >= almMinimo;
+        filas.push(`<div class="mipc-comparacion-fila"><span class="mipc-comparacion-etiqueta">Almacenamiento</span><span class="mipc-comparacion-valores">${specs.almacenamiento} GB vs ${requisitos.minimos.almacenamiento} GB mín. — <span class="${cumple ? 'mipc-ok' : 'mipc-falta'}">${cumple ? '✅ Cumple' : '❌ No alcanza'}</span></span></div>`);
+    }
+    if (specs.cpu) {
+        filas.push(`<div class="mipc-comparacion-fila"><span class="mipc-comparacion-etiqueta">Procesador</span><span class="mipc-comparacion-valores">Tuyo: ${specs.cpu}<br>Mín: ${requisitos.minimos.cpu}<br><span class="mipc-manual">Comparar a ojo ⚠️</span></span></div>`);
+    }
+    if (specs.gpu) {
+        filas.push(`<div class="mipc-comparacion-fila"><span class="mipc-comparacion-etiqueta">GPU</span><span class="mipc-comparacion-valores">Tuya: ${specs.gpu}<br>Mín: ${requisitos.minimos.gpu}<br><span class="mipc-manual">Comparar a ojo ⚠️</span></span></div>`);
+    }
+    if (specs.so) {
+        filas.push(`<div class="mipc-comparacion-fila"><span class="mipc-comparacion-etiqueta">Sistema Operativo</span><span class="mipc-comparacion-valores">Tuyo: ${specs.so}<br>Mín: ${requisitos.minimos.so}</span></div>`);
+    }
+    if (specs.directx && requisitos.minimos.directx) {
+        filas.push(`<div class="mipc-comparacion-fila"><span class="mipc-comparacion-etiqueta">DirectX</span><span class="mipc-comparacion-valores">Tuyo: ${specs.directx}<br>Mín: ${requisitos.minimos.directx}</span></div>`);
+    }
+
+    if (filas.length === 0) return;
+    const html = `
+        <div class="mipc-comparacion">
+            <h3 class="subtitulo-ficha-tecnica">¿Te corre? (comparado con tu Mi PC)</h3>
+            ${filas.join('')}
+        </div>
+    `;
+    contenedor.insertAdjacentHTML('beforeend', html);
+}
+
+const REQUISITOS_LEGO_SWSS = {
+    minimos: { so: "Windows 10 de 64 bits", cpu: "Intel Core i5-2400 o AMD Ryzen 3 1200", ram: "8", almacenamiento: "40", directx: "DirectX 11", gpu: "GeForce GTX 750 Ti o Radeon HD 7850" },
+    recomendado: { so: "Windows 10 de 64 bits", cpu: "Intel Core i5-6600 o AMD Ryzen 3 3100", ram: "8", almacenamiento: "40", directx: "DirectX 11", gpu: "GeForce GTX 780 o Radeon R9 290" }
+};
+
+const btnRequisitosLegoSWSS = document.getElementById('btn-requisitos-lego-swss');
+if (btnRequisitosLegoSWSS) {
+    btnRequisitosLegoSWSS.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-lego-swss'));
+    });
+}
+
+const btnVolverRequisitosLegoSWSS = document.getElementById('btn-volver-requisitos-lego-swss');
+if (btnVolverRequisitosLegoSWSS) {
+    btnVolverRequisitosLegoSWSS.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-lego-swss'));
+    });
+}
+
+const btnDlcLegoBatman = document.getElementById('btn-dlc-lego-batman-legacy');
+if (btnDlcLegoBatman) {
+    btnDlcLegoBatman.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-lego-batman-legacy'));
+    });
+}
+
+const btnVolverDlcLegoBatman = document.getElementById('btn-volver-dlc-lego-batman-legacy');
+if (btnVolverDlcLegoBatman) {
+    btnVolverDlcLegoBatman.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-lego-batman-legacy'));
+    });
+}
+
+// Los DLC individuales de LEGO Batman vuelven directo a SU grilla de DLC.
+document.querySelectorAll('.btn-volver-dlc-individual-batman').forEach(boton => {
+    boton.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-lego-batman-legacy'));
+    });
+});
+
+const btnRequisitosLegoBatman = document.getElementById('btn-requisitos-lego-batman-legacy');
+if (btnRequisitosLegoBatman) {
+    btnRequisitosLegoBatman.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-lego-batman-legacy'));
+    });
+}
+
+const btnVolverRequisitosLegoBatman = document.getElementById('btn-volver-requisitos-lego-batman-legacy');
+if (btnVolverRequisitosLegoBatman) {
+    btnVolverRequisitosLegoBatman.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-lego-batman-legacy'));
+    });
+}
+
+const REQUISITOS_LEGO_BATMAN_LEGACY = {
+    minimos: { so: "Windows 11 (64 bits)", cpu: "Intel Core i5-10600K o AMD Ryzen 5 1600", ram: "16", almacenamiento: "50", directx: "", gpu: "NVIDIA GeForce GTX 960 (o equivalente)" },
+    recomendado: { so: "Windows 11 (64 bits)", cpu: "Intel Core i7-12700 o AMD Ryzen 7 5800X", ram: "16", almacenamiento: "50", directx: "", gpu: "NVIDIA GeForce RTX 2070 SUPER (8 GB) o AMD Radeon RX 6650 XT (8 GB) o Intel Arc B580 (12 GB)" }
+};
+
 const btnDlcLegoSWSS = document.getElementById('btn-dlc-lego-swss');
 if (btnDlcLegoSWSS) {
     btnDlcLegoSWSS.addEventListener('click', () => {
@@ -7431,7 +7618,7 @@ if (btnVolverDlcLegoSWSS) {
 }
 
 // Tarjetas de la grilla de DLC: cada una abre su propia ficha individual.
-document.querySelectorAll('#seccion-dlc-lego-swss [data-dlc-abrir]').forEach(tarjeta => {
+document.querySelectorAll('[data-dlc-abrir]').forEach(tarjeta => {
     tarjeta.addEventListener('click', () => {
         const seccionDlc = document.getElementById(`seccion-dlc-${tarjeta.dataset.dlcAbrir}`);
         if (seccionDlc) cambiarSeccion(seccionDlc);
