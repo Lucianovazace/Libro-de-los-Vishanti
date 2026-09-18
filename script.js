@@ -3717,7 +3717,7 @@ const colecciones = [
         peliculas: [
             { titulo: "LEGO Marvel Super Heroes", poster: "https://m.media-amazon.com/images/M/MV5BOTA5ODA2NTI2M15BMl5BanBnXkFtZTgwNTcxMzU1MDE@._V1_.jpg" },
             { titulo: "LEGO Marvel's Avengers", poster: "https://icemanvideogames.com/cdn/shop/products/ps4_legoavengers_2_f47f382b-b692-4508-aed2-3b4299dfaeb7_1024x1024.jpg?v=1734139316" },
-            { titulo: "LEGO Marvel Super Heroes 2", poster: "https://static.wikia.nocookie.net/marveldatabase/images/8/84/LEGO_Marvel_Super_Heroes_2_box_art.jpg/revision/latest?cb=20170516213944" }
+            { titulo: "LEGO Marvel Super Heroes 2", fichaTecnicaId: "lego-marvel-sh2", poster: "https://static.wikia.nocookie.net/marveldatabase/images/8/84/LEGO_Marvel_Super_Heroes_2_box_art.jpg/revision/latest?cb=20170516213944" }
         ]
     },
     {
@@ -4564,7 +4564,7 @@ const colecciones = [
             { titulo: "LEGO Jurassic World", poster: "https://i.etsystatic.com/20730899/r/il/ec922c/3399416948/il_fullxfull.3399416948_j66g.jpg" },
             { titulo: "LEGO Marvel's Avengers", poster: "https://icemanvideogames.com/cdn/shop/products/ps4_legoavengers_2_f47f382b-b692-4508-aed2-3b4299dfaeb7_1024x1024.jpg?v=1734139316" },
             { titulo: "LEGO Star Wars: The Force Awakens", poster: "https://m.media-amazon.com/images/M/MV5BNjhiYmVmZmItOGE2MS00ZDQ4LTk4MDUtMzAyZjE0NmE3YjZjXkEyXkFqcGc@._V1_.jpg" },
-            { titulo: "LEGO Marvel Super Heroes 2", poster: "https://static.wikia.nocookie.net/marveldatabase/images/8/84/LEGO_Marvel_Super_Heroes_2_box_art.jpg/revision/latest?cb=20170516213944" },
+            { titulo: "LEGO Marvel Super Heroes 2", fichaTecnicaId: "lego-marvel-sh2", poster: "https://static.wikia.nocookie.net/marveldatabase/images/8/84/LEGO_Marvel_Super_Heroes_2_box_art.jpg/revision/latest?cb=20170516213944" },
             { titulo: "LEGO The Incredibles", poster: "https://store-images.s-microsoft.com/image/apps.47394.63814564947568672.1380b0de-7e85-4ee9-a156-948bc47549ea.9cd49bf2-2c46-4d1d-812c-ab716e7c55ad" },
             { titulo: "LEGO DC Super-Villains", fichaTecnicaId: "lego-dc-super-villains", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtWxQKciBUEcUG1kHfFfAvAcWtvkUZ8j-eOgDLzz5EbuUXN5ts6tIcgqs&s=10" },
             { titulo: "LEGO Star Wars: The Skywalker Saga", fichaTecnicaId: "lego-swss", poster: "https://m.media-amazon.com/images/M/MV5BZjJhMDExNmQtZDU0ZC00YTk5LThlMGQtNjU0NzZmN2JkOTczXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
@@ -6527,6 +6527,9 @@ function cambiarSeccion(seccionNueva) {
     if (seccionNueva.id === 'seccion-requisitos-lego-batman-legacy' && typeof armarComparacionMiPC === 'function') {
         armarComparacionMiPC('seccion-requisitos-lego-batman-legacy', REQUISITOS_LEGO_BATMAN_LEGACY);
     }
+    if (seccionNueva.id === 'seccion-requisitos-lego-marvel-sh2' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-lego-marvel-sh2', REQUISITOS_LEGO_MARVEL_SH2);
+    }
 }
 
 const btnDoomsday = document.getElementById('btn-doomsday');
@@ -7562,6 +7565,45 @@ if (btnVolverRequisitosLegoSWSS) {
         cambiarSeccion(document.getElementById('seccion-ficha-lego-swss'));
     });
 }
+
+const btnDlcLegoMarvelSH2 = document.getElementById('btn-dlc-lego-marvel-sh2');
+if (btnDlcLegoMarvelSH2) {
+    btnDlcLegoMarvelSH2.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-lego-marvel-sh2'));
+    });
+}
+
+const btnVolverDlcLegoMarvelSH2 = document.getElementById('btn-volver-dlc-lego-marvel-sh2');
+if (btnVolverDlcLegoMarvelSH2) {
+    btnVolverDlcLegoMarvelSH2.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-lego-marvel-sh2'));
+    });
+}
+
+document.querySelectorAll('.btn-volver-dlc-individual-lmsh2').forEach(boton => {
+    boton.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-lego-marvel-sh2'));
+    });
+});
+
+const btnRequisitosLegoMarvelSH2 = document.getElementById('btn-requisitos-lego-marvel-sh2');
+if (btnRequisitosLegoMarvelSH2) {
+    btnRequisitosLegoMarvelSH2.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-lego-marvel-sh2'));
+    });
+}
+
+const btnVolverRequisitosLegoMarvelSH2 = document.getElementById('btn-volver-requisitos-lego-marvel-sh2');
+if (btnVolverRequisitosLegoMarvelSH2) {
+    btnVolverRequisitosLegoMarvelSH2.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-lego-marvel-sh2'));
+    });
+}
+
+const REQUISITOS_LEGO_MARVEL_SH2 = {
+    minimos: { so: "Windows 7 / 8 / 8.1 / 10 (64 bits)", cpu: "Intel Core i3-3240 (2 núcleos, 3.4 GHz) o AMD Athlon X4 740 (4 núcleos, 3.2 GHz) o equivalente", ram: "4", almacenamiento: "16", directx: "DirectX 11", gpu: "NVIDIA GeForce GTX 460 (1 GB), AMD Radeon HD 5850 (1 GB) o Intel Iris Pro 5200" },
+    recomendado: { so: "Windows 7 / 8 / 8.1 / 10 (64 bits)", cpu: "Intel Core i5-4570T (2 núcleos, 2.9 GHz) o AMD FX-6350 (6 núcleos, 3.9 GHz) o equivalente", ram: "4", almacenamiento: "16", directx: "DirectX 11", gpu: "NVIDIA GeForce GTX 750 Ti (2 GB) o AMD Radeon HD 7970 / R9 280X (3 GB)" }
+};
 
 const btnDlcLegoDCSV = document.getElementById('btn-dlc-lego-dc-super-villains');
 if (btnDlcLegoDCSV) {
