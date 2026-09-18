@@ -1348,6 +1348,16 @@ h2 {
     margin-top: 10px;
 }
 
+.ficha-tecnica-nota-exclusiva {
+    background-color: rgba(241, 196, 15, 0.12);
+    border: 1px solid #f1c40f;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 13px;
+    color: #f1c40f;
+    margin: 10px 0;
+}
+
 .ficha-tecnica-videos {
     display: flex;
     flex-direction: column;

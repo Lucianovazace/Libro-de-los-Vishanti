@@ -274,7 +274,7 @@ const listaMedia = [
     { titulo: "Star Wars Battlefront II", categoria: "sw-videojuegos", tipo: "Videojuego", poster: "https://m.media-amazon.com/images/M/MV5BOTY3NzM1OTI3OV5BMl5BanBnXkFtZTgwOTUyNzMwMjI@._V1_.jpg" },
     { titulo: "LEGO Star Wars: The Complete Saga", categoria: "sw-videojuegos", tipo: "Videojuego", poster: "https://m.media-amazon.com/images/M/MV5BM2Q4NzYzMDEtMGM1ZC00YTBkLTgyNzctYjFjYjAwZWY3NTJkXkEyXkFqcGc@.V1.jpg" },
     { titulo: "LEGO Star Wars III: The Clone Wars", categoria: "sw-videojuegos", tipo: "Videojuego", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1mOX8mHIXBiE73YDPXbNy50JeRmudW4Rps4JASYSDWsSgdUNSVF19NkA&s=10" },
-    { titulo: "LEGO Star Wars: The Force Awakens", categoria: "sw-videojuegos", tipo: "Videojuego", poster: "https://m.media-amazon.com/images/M/MV5BNjhiYmVmZmItOGE2MS00ZDQ4LTk4MDUtMzAyZjE0NmE3YjZjXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "LEGO Star Wars: The Force Awakens", categoria: "sw-videojuegos", tipo: "Videojuego", fichaTecnicaId: "lego-sw-tfa", poster: "https://m.media-amazon.com/images/M/MV5BNjhiYmVmZmItOGE2MS00ZDQ4LTk4MDUtMzAyZjE0NmE3YjZjXkEyXkFqcGc@._V1_.jpg" },
     { titulo: "LEGO Star Wars: The Skywalker Saga", categoria: "sw-videojuegos", tipo: "Videojuego", fichaTecnicaId: "lego-swss", poster: "https://m.media-amazon.com/images/M/MV5BZjJhMDExNmQtZDU0ZC00YTk5LThlMGQtNjU0NzZmN2JkOTczXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
     { titulo: "Star Wars: Squadrons", categoria: "sw-videojuegos", tipo: "Videojuego", poster: "https://store-images.s-microsoft.com/image/apps.51514.71371953440216666.508e0708-a814-4f11-8420-5f620fd8ce09.59f15fb1-fb46-4166-b1ec-e8bb8d2b3350" },
     { titulo: "Star Wars: The Force Unleashed", categoria: "sw-videojuegos", tipo: "Videojuego", poster: "https://m.media-amazon.com/images/I/71eWBotqfIL._AC_UF1000,1000_QL80_.jpg" },
@@ -4563,9 +4563,9 @@ const colecciones = [
             { titulo: "LEGO Batman 3: Beyond Gotham", poster: "https://m.media-amazon.com/images/M/MV5BN2E3ZGM5MTAtOGE3NS00OWMyLWFkNmMtOTVlODUwOWNmMWE5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
             { titulo: "LEGO Jurassic World", poster: "https://i.etsystatic.com/20730899/r/il/ec922c/3399416948/il_fullxfull.3399416948_j66g.jpg" },
             { titulo: "LEGO Marvel's Avengers", poster: "https://icemanvideogames.com/cdn/shop/products/ps4_legoavengers_2_f47f382b-b692-4508-aed2-3b4299dfaeb7_1024x1024.jpg?v=1734139316" },
-            { titulo: "LEGO Star Wars: The Force Awakens", poster: "https://m.media-amazon.com/images/M/MV5BNjhiYmVmZmItOGE2MS00ZDQ4LTk4MDUtMzAyZjE0NmE3YjZjXkEyXkFqcGc@._V1_.jpg" },
+            { titulo: "LEGO Star Wars: The Force Awakens", fichaTecnicaId: "lego-sw-tfa", poster: "https://m.media-amazon.com/images/M/MV5BNjhiYmVmZmItOGE2MS00ZDQ4LTk4MDUtMzAyZjE0NmE3YjZjXkEyXkFqcGc@._V1_.jpg" },
             { titulo: "LEGO Marvel Super Heroes 2", fichaTecnicaId: "lego-marvel-sh2", poster: "https://static.wikia.nocookie.net/marveldatabase/images/8/84/LEGO_Marvel_Super_Heroes_2_box_art.jpg/revision/latest?cb=20170516213944" },
-            { titulo: "LEGO The Incredibles", poster: "https://store-images.s-microsoft.com/image/apps.47394.63814564947568672.1380b0de-7e85-4ee9-a156-948bc47549ea.9cd49bf2-2c46-4d1d-812c-ab716e7c55ad" },
+            { titulo: "LEGO The Incredibles", fichaTecnicaId: "lego-incredibles", poster: "https://store-images.s-microsoft.com/image/apps.47394.63814564947568672.1380b0de-7e85-4ee9-a156-948bc47549ea.9cd49bf2-2c46-4d1d-812c-ab716e7c55ad" },
             { titulo: "LEGO DC Super-Villains", fichaTecnicaId: "lego-dc-super-villains", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtWxQKciBUEcUG1kHfFfAvAcWtvkUZ8j-eOgDLzz5EbuUXN5ts6tIcgqs&s=10" },
             { titulo: "LEGO Star Wars: The Skywalker Saga", fichaTecnicaId: "lego-swss", poster: "https://m.media-amazon.com/images/M/MV5BZjJhMDExNmQtZDU0ZC00YTk5LThlMGQtNjU0NzZmN2JkOTczXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
             { titulo: "LEGO Batman: Legacy of the Dark Knight", fichaTecnicaId: "lego-batman-legacy", poster: "https://m.media-amazon.com/images/M/MV5BNDhlYTFmOGMtY2YxZi00ODczLTg0NTQtZDJiMzBjZWQ4YzU2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" }
@@ -6530,6 +6530,12 @@ function cambiarSeccion(seccionNueva) {
     if (seccionNueva.id === 'seccion-requisitos-lego-marvel-sh2' && typeof armarComparacionMiPC === 'function') {
         armarComparacionMiPC('seccion-requisitos-lego-marvel-sh2', REQUISITOS_LEGO_MARVEL_SH2);
     }
+    if (seccionNueva.id === 'seccion-requisitos-lego-incredibles' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-lego-incredibles', REQUISITOS_LEGO_INCREDIBLES);
+    }
+    if (seccionNueva.id === 'seccion-requisitos-lego-sw-tfa' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-lego-sw-tfa', REQUISITOS_LEGO_SW_TFA);
+    }
 }
 
 const btnDoomsday = document.getElementById('btn-doomsday');
@@ -7565,6 +7571,84 @@ if (btnVolverRequisitosLegoSWSS) {
         cambiarSeccion(document.getElementById('seccion-ficha-lego-swss'));
     });
 }
+
+const btnDlcLegoSWTFA = document.getElementById('btn-dlc-lego-sw-tfa');
+if (btnDlcLegoSWTFA) {
+    btnDlcLegoSWTFA.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-lego-sw-tfa'));
+    });
+}
+
+const btnVolverDlcLegoSWTFA = document.getElementById('btn-volver-dlc-lego-sw-tfa');
+if (btnVolverDlcLegoSWTFA) {
+    btnVolverDlcLegoSWTFA.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-lego-sw-tfa'));
+    });
+}
+
+document.querySelectorAll('.btn-volver-dlc-individual-swtfa').forEach(boton => {
+    boton.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-lego-sw-tfa'));
+    });
+});
+
+const btnRequisitosLegoSWTFA = document.getElementById('btn-requisitos-lego-sw-tfa');
+if (btnRequisitosLegoSWTFA) {
+    btnRequisitosLegoSWTFA.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-lego-sw-tfa'));
+    });
+}
+
+const btnVolverRequisitosLegoSWTFA = document.getElementById('btn-volver-requisitos-lego-sw-tfa');
+if (btnVolverRequisitosLegoSWTFA) {
+    btnVolverRequisitosLegoSWTFA.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-lego-sw-tfa'));
+    });
+}
+
+const REQUISITOS_LEGO_SW_TFA = {
+    minimos: { so: "Windows XP / Vista / 7 / 8 / 10", cpu: "Intel Core 2 Quad Q6600 (2.4 GHz) o AMD Phenom X4 9850 (2.5 GHz)", ram: "4", almacenamiento: "14", directx: "DirectX 9.0c", gpu: "NVIDIA GeForce GT 430 (1 GB) o AMD Radeon HD 6850 (1 GB)" },
+    recomendado: { so: "Windows 7 / 8 / 10 (64 bits recomendado)", cpu: "Intel Core i5 (4 núcleos, 2.6 GHz) o equivalente de AMD", ram: "4", almacenamiento: "14", directx: "DirectX 11", gpu: "NVIDIA GeForce GTX 480 (1 GB) o AMD Radeon HD 5850 (1 GB)" }
+};
+
+const btnDlcLegoIncredibles = document.getElementById('btn-dlc-lego-incredibles');
+if (btnDlcLegoIncredibles) {
+    btnDlcLegoIncredibles.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-lego-incredibles'));
+    });
+}
+
+const btnVolverDlcLegoIncredibles = document.getElementById('btn-volver-dlc-lego-incredibles');
+if (btnVolverDlcLegoIncredibles) {
+    btnVolverDlcLegoIncredibles.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-lego-incredibles'));
+    });
+}
+
+document.querySelectorAll('.btn-volver-dlc-individual-incredibles').forEach(boton => {
+    boton.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-lego-incredibles'));
+    });
+});
+
+const btnRequisitosLegoIncredibles = document.getElementById('btn-requisitos-lego-incredibles');
+if (btnRequisitosLegoIncredibles) {
+    btnRequisitosLegoIncredibles.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-lego-incredibles'));
+    });
+}
+
+const btnVolverRequisitosLegoIncredibles = document.getElementById('btn-volver-requisitos-lego-incredibles');
+if (btnVolverRequisitosLegoIncredibles) {
+    btnVolverRequisitosLegoIncredibles.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-lego-incredibles'));
+    });
+}
+
+const REQUISITOS_LEGO_INCREDIBLES = {
+    minimos: { so: "Windows 7 / 8 / 8.1 / 10 (64 bits)", cpu: "Intel Core i3-3240 (2 núcleos, 3.4 GHz) o AMD FX-4350 (4 núcleos, 4.2 GHz) o equivalente", ram: "4", almacenamiento: "16", directx: "DirectX 11", gpu: "NVIDIA GeForce GTX 560 Ti (1 GB), AMD Radeon HD 6850 (1 GB) o Intel Iris Pro 5200" },
+    recomendado: { so: "Windows 7 / 8 / 8.1 / 10 (64 bits)", cpu: "Intel Core i5-2300 (4 núcleos, 2.8 GHz) o AMD FX-8350 (8 núcleos, 4.0 GHz) o equivalente", ram: "4", almacenamiento: "16", directx: "DirectX 11", gpu: "NVIDIA GeForce GTX 660 Ti (2 GB) o AMD Radeon HD 7870 (2 GB)" }
+};
 
 const btnDlcLegoMarvelSH2 = document.getElementById('btn-dlc-lego-marvel-sh2');
 if (btnDlcLegoMarvelSH2) {
