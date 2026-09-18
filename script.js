@@ -7563,6 +7563,27 @@ if (btnVolverRequisitosLegoSWSS) {
     });
 }
 
+const btnDlcLegoDCSV = document.getElementById('btn-dlc-lego-dc-super-villains');
+if (btnDlcLegoDCSV) {
+    btnDlcLegoDCSV.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-lego-dc-super-villains'));
+    });
+}
+
+const btnVolverDlcLegoDCSV = document.getElementById('btn-volver-dlc-lego-dc-super-villains');
+if (btnVolverDlcLegoDCSV) {
+    btnVolverDlcLegoDCSV.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-lego-dc-super-villains'));
+    });
+}
+
+// Los DLC individuales de LEGO DC Super-Villains vuelven directo a SU grilla de DLC.
+document.querySelectorAll('.btn-volver-dlc-individual-dcsv').forEach(boton => {
+    boton.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-lego-dc-super-villains'));
+    });
+});
+
 const btnDlcLegoBatman = document.getElementById('btn-dlc-lego-batman-legacy');
 if (btnDlcLegoBatman) {
     btnDlcLegoBatman.addEventListener('click', () => {
