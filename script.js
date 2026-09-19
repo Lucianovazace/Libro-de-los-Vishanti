@@ -3580,8 +3580,8 @@ const colecciones = [
         esVideojuego: true,
         peliculas: [
             { titulo: "LEGO Batman: The Videogame", poster: "https://m.media-amazon.com/images/M/MV5BYjg1OGFiNjItNDJmNS00ZWNjLWJhZGUtNTY0Yzg4YmVkM2U0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
-            { titulo: "LEGO Batman 2: DC Super Heroes", poster: "https://m.media-amazon.com/images/M/MV5BMjgyMThmZTgtNzk5MS00ZWQ0LWJhYjMtNmI5NzhhNGM1MWU4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
-            { titulo: "LEGO Batman 3: Beyond Gotham", poster: "https://m.media-amazon.com/images/M/MV5BN2E3ZGM5MTAtOGE3NS00OWMyLWFkNmMtOTVlODUwOWNmMWE5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+            { titulo: "LEGO Batman 2: DC Super Heroes", fichaTecnicaId: "lego-batman-2", poster: "https://m.media-amazon.com/images/M/MV5BMjgyMThmZTgtNzk5MS00ZWQ0LWJhYjMtNmI5NzhhNGM1MWU4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+            { titulo: "LEGO Batman 3: Beyond Gotham", fichaTecnicaId: "lego-batman-3", poster: "https://m.media-amazon.com/images/M/MV5BN2E3ZGM5MTAtOGE3NS00OWMyLWFkNmMtOTVlODUwOWNmMWE5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
             { titulo: "LEGO DC Super-Villains", fichaTecnicaId: "lego-dc-super-villains", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtWxQKciBUEcUG1kHfFfAvAcWtvkUZ8j-eOgDLzz5EbuUXN5ts6tIcgqs&s=10" },
             { titulo: "LEGO Batman: Legacy of the Dark Knight", fichaTecnicaId: "lego-batman-legacy", poster: "https://m.media-amazon.com/images/M/MV5BNDhlYTFmOGMtY2YxZi00ODczLTg0NTQtZDJiMzBjZWQ4YzU2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" }
         ]
@@ -3715,8 +3715,8 @@ const colecciones = [
         poster: "https://i.pinimg.com/736x/b1/81/e1/b181e1dbfcc00f18ed6661181c07e16e.jpg",
         esVideojuego: true,
         peliculas: [
-            { titulo: "LEGO Marvel Super Heroes", poster: "https://m.media-amazon.com/images/M/MV5BOTA5ODA2NTI2M15BMl5BanBnXkFtZTgwNTcxMzU1MDE@._V1_.jpg" },
-            { titulo: "LEGO Marvel's Avengers", poster: "https://icemanvideogames.com/cdn/shop/products/ps4_legoavengers_2_f47f382b-b692-4508-aed2-3b4299dfaeb7_1024x1024.jpg?v=1734139316" },
+            { titulo: "LEGO Marvel Super Heroes", fichaTecnicaId: "lego-marvel-sh1", poster: "https://m.media-amazon.com/images/M/MV5BOTA5ODA2NTI2M15BMl5BanBnXkFtZTgwNTcxMzU1MDE@._V1_.jpg" },
+            { titulo: "LEGO Marvel's Avengers", fichaTecnicaId: "lego-marvel-avengers", poster: "https://store-images.s-microsoft.com/image/apps.53351.69418729968339172.e0511a41-4d32-4c9b-b786-629dba4b131f.b93252f6-c40e-489f-91bd-89f392ba663a" },
             { titulo: "LEGO Marvel Super Heroes 2", fichaTecnicaId: "lego-marvel-sh2", poster: "https://static.wikia.nocookie.net/marveldatabase/images/8/84/LEGO_Marvel_Super_Heroes_2_box_art.jpg/revision/latest?cb=20170516213944" }
         ]
     },
@@ -4555,14 +4555,14 @@ const colecciones = [
             { titulo: "LEGO Harry Potter: Years 1-4", poster: "https://static.wikia.nocookie.net/harrypotter/images/f/f2/Lego_Harry_Potter_Years_1-4.jpg/revision/latest?cb=20240714143408" },
             { titulo: "LEGO Star Wars III: The Clone Wars", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1mOX8mHIXBiE73YDPXbNy50JeRmudW4Rps4JASYSDWsSgdUNSVF19NkA&s=10" },
             { titulo: "LEGO Pirates of the Caribbean: The Video Game", poster: "https://static.wikia.nocookie.net/lego/images/0/00/Lego-Pirates.png/revision/latest?cb=20170412000441" },
-            { titulo: "LEGO Harry Potter: Years 5-7", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyjMxJglqEX0Bc2YSBdH-PoLSx-e_GyUB3m0imvP9yVLg798SYP2Y5gaw&s=10" },
-            { titulo: "LEGO Batman 2: DC Super Heroes", poster: "https://m.media-amazon.com/images/M/MV5BMjgyMThmZTgtNzk5MS00ZWQ0LWJhYjMtNmI5NzhhNGM1MWU4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
-            { titulo: "LEGO The Lord of the Rings", poster: "https://m.media-amazon.com/images/M/MV5BYWUyOGRlYjEtNWI0ZS00YTZiLTkxOWYtMWE1NTU1ZjMwMzFmXkEyXkFqcGc@._V1_.jpg" },
-            { titulo: "LEGO Marvel Super Heroes", poster: "https://m.media-amazon.com/images/M/MV5BOTA5ODA2NTI2M15BMl5BanBnXkFtZTgwNTcxMzU1MDE@._V1_.jpg" },
-            { titulo: "LEGO: The Hobbit", poster: "https://m.media-amazon.com/images/M/MV5BMzc3ODhiYmQtZjRhZS00NTRhLTk5NTMtYjRmNjRjYTE4NjQzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
-            { titulo: "LEGO Batman 3: Beyond Gotham", poster: "https://m.media-amazon.com/images/M/MV5BN2E3ZGM5MTAtOGE3NS00OWMyLWFkNmMtOTVlODUwOWNmMWE5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
-            { titulo: "LEGO Jurassic World", poster: "https://i.etsystatic.com/20730899/r/il/ec922c/3399416948/il_fullxfull.3399416948_j66g.jpg" },
-            { titulo: "LEGO Marvel's Avengers", poster: "https://icemanvideogames.com/cdn/shop/products/ps4_legoavengers_2_f47f382b-b692-4508-aed2-3b4299dfaeb7_1024x1024.jpg?v=1734139316" },
+            { titulo: "LEGO Harry Potter: Years 5-7", fichaTecnicaId: "lego-hp-5-7", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyjMxJglqEX0Bc2YSBdH-PoLSx-e_GyUB3m0imvP9yVLg798SYP2Y5gaw&s=10" },
+            { titulo: "LEGO Batman 2: DC Super Heroes", fichaTecnicaId: "lego-batman-2", poster: "https://m.media-amazon.com/images/M/MV5BMjgyMThmZTgtNzk5MS00ZWQ0LWJhYjMtNmI5NzhhNGM1MWU4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+            { titulo: "LEGO The Lord of the Rings", fichaTecnicaId: "lego-lotr", poster: "https://m.media-amazon.com/images/M/MV5BYWUyOGRlYjEtNWI0ZS00YTZiLTkxOWYtMWE1NTU1ZjMwMzFmXkEyXkFqcGc@._V1_.jpg" },
+            { titulo: "LEGO Marvel Super Heroes", fichaTecnicaId: "lego-marvel-sh1", poster: "https://m.media-amazon.com/images/M/MV5BOTA5ODA2NTI2M15BMl5BanBnXkFtZTgwNTcxMzU1MDE@._V1_.jpg" },
+            { titulo: "LEGO: The Hobbit", fichaTecnicaId: "lego-hobbit", poster: "https://m.media-amazon.com/images/M/MV5BMzc3ODhiYmQtZjRhZS00NTRhLTk5NTMtYjRmNjRjYTE4NjQzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+            { titulo: "LEGO Batman 3: Beyond Gotham", fichaTecnicaId: "lego-batman-3", poster: "https://m.media-amazon.com/images/M/MV5BN2E3ZGM5MTAtOGE3NS00OWMyLWFkNmMtOTVlODUwOWNmMWE5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+            { titulo: "LEGO Jurassic World", fichaTecnicaId: "lego-jurassic-world", poster: "https://store-images.s-microsoft.com/image/apps.52089.68158406662702906.9c84b6a8-f1ed-4ffd-af04-0f6efe4c4473.5645ea6b-a4d9-4914-be1e-652b9d950fd7" },
+            { titulo: "LEGO Marvel's Avengers", fichaTecnicaId: "lego-marvel-avengers", poster: "https://store-images.s-microsoft.com/image/apps.53351.69418729968339172.e0511a41-4d32-4c9b-b786-629dba4b131f.b93252f6-c40e-489f-91bd-89f392ba663a" },
             { titulo: "LEGO Star Wars: The Force Awakens", fichaTecnicaId: "lego-sw-tfa", poster: "https://m.media-amazon.com/images/M/MV5BNjhiYmVmZmItOGE2MS00ZDQ4LTk4MDUtMzAyZjE0NmE3YjZjXkEyXkFqcGc@._V1_.jpg" },
             { titulo: "LEGO Marvel Super Heroes 2", fichaTecnicaId: "lego-marvel-sh2", poster: "https://static.wikia.nocookie.net/marveldatabase/images/8/84/LEGO_Marvel_Super_Heroes_2_box_art.jpg/revision/latest?cb=20170516213944" },
             { titulo: "LEGO The Incredibles", fichaTecnicaId: "lego-incredibles", poster: "https://store-images.s-microsoft.com/image/apps.47394.63814564947568672.1380b0de-7e85-4ee9-a156-948bc47549ea.9cd49bf2-2c46-4d1d-812c-ab716e7c55ad" },
@@ -6536,6 +6536,30 @@ function cambiarSeccion(seccionNueva) {
     if (seccionNueva.id === 'seccion-requisitos-lego-sw-tfa' && typeof armarComparacionMiPC === 'function') {
         armarComparacionMiPC('seccion-requisitos-lego-sw-tfa', REQUISITOS_LEGO_SW_TFA);
     }
+    if (seccionNueva.id === 'seccion-requisitos-lego-marvel-avengers' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-lego-marvel-avengers', REQUISITOS_LEGO_MARVEL_AVENGERS);
+    }
+    if (seccionNueva.id === 'seccion-requisitos-lego-jurassic-world' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-lego-jurassic-world', REQUISITOS_LEGO_JURASSIC_WORLD);
+    }
+    if (seccionNueva.id === 'seccion-requisitos-lego-batman-3' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-lego-batman-3', REQUISITOS_LEGO_BATMAN_3);
+    }
+    if (seccionNueva.id === 'seccion-requisitos-lego-hobbit' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-lego-hobbit', REQUISITOS_LEGO_HOBBIT);
+    }
+    if (seccionNueva.id === 'seccion-requisitos-lego-marvel-sh1' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-lego-marvel-sh1', REQUISITOS_LEGO_MARVEL_SH1);
+    }
+    if (seccionNueva.id === 'seccion-requisitos-lego-lotr' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-lego-lotr', REQUISITOS_LEGO_LOTR);
+    }
+    if (seccionNueva.id === 'seccion-requisitos-lego-batman-2' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-lego-batman-2', REQUISITOS_LEGO_BATMAN_2);
+    }
+    if (seccionNueva.id === 'seccion-requisitos-lego-hp-5-7' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-lego-hp-5-7', REQUISITOS_LEGO_HP_5_7);
+    }
 }
 
 const btnDoomsday = document.getElementById('btn-doomsday');
@@ -7649,6 +7673,388 @@ const REQUISITOS_LEGO_INCREDIBLES = {
     minimos: { so: "Windows 7 / 8 / 8.1 / 10 (64 bits)", cpu: "Intel Core i3-3240 (2 núcleos, 3.4 GHz) o AMD FX-4350 (4 núcleos, 4.2 GHz) o equivalente", ram: "4", almacenamiento: "16", directx: "DirectX 11", gpu: "NVIDIA GeForce GTX 560 Ti (1 GB), AMD Radeon HD 6850 (1 GB) o Intel Iris Pro 5200" },
     recomendado: { so: "Windows 7 / 8 / 8.1 / 10 (64 bits)", cpu: "Intel Core i5-2300 (4 núcleos, 2.8 GHz) o AMD FX-8350 (8 núcleos, 4.0 GHz) o equivalente", ram: "4", almacenamiento: "16", directx: "DirectX 11", gpu: "NVIDIA GeForce GTX 660 Ti (2 GB) o AMD Radeon HD 7870 (2 GB)" }
 };
+
+const btnVolverFichaLegoBatman3 = document.getElementById('btn-volver-ficha-lego-batman-3');
+if (btnVolverFichaLegoBatman3) {
+    btnVolverFichaLegoBatman3.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-lego-batman-3');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-dc-videojuegos'));
+    });
+}
+
+const btnDlcLegoBatman3 = document.getElementById('btn-dlc-lego-batman-3');
+if (btnDlcLegoBatman3) {
+    btnDlcLegoBatman3.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-lego-batman-3'));
+    });
+}
+
+const btnVolverDlcLegoBatman3 = document.getElementById('btn-volver-dlc-lego-batman-3');
+if (btnVolverDlcLegoBatman3) {
+    btnVolverDlcLegoBatman3.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-lego-batman-3'));
+    });
+}
+
+document.querySelectorAll('.btn-volver-dlc-individual-lb3').forEach(boton => {
+    boton.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-lego-batman-3'));
+    });
+});
+
+const btnRequisitosLegoBatman3 = document.getElementById('btn-requisitos-lego-batman-3');
+if (btnRequisitosLegoBatman3) {
+    btnRequisitosLegoBatman3.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-lego-batman-3'));
+    });
+}
+
+const btnVolverRequisitosLegoBatman3 = document.getElementById('btn-volver-requisitos-lego-batman-3');
+if (btnVolverRequisitosLegoBatman3) {
+    btnVolverRequisitosLegoBatman3.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-lego-batman-3'));
+    });
+}
+
+const REQUISITOS_LEGO_BATMAN_3 = {
+    minimos: { so: "Windows XP SP3 / Vista / 7 / 8 / 10", cpu: "Intel Core 2 Quad Q6600 (2.4 GHz) o AMD Phenom X4 9850 (2.5 GHz)", ram: "2", almacenamiento: "10", directx: "DirectX 9.0c", gpu: "NVIDIA GeForce GT 430 (1 GB) o AMD Radeon HD 5850 (1 GB)" },
+    recomendado: { so: "Windows 7 / 8 / 10 (64 bits)", cpu: "Intel Core i5-750 (2.67 GHz) o AMD Phenom II X4 965 (3.4 GHz)", ram: "4", almacenamiento: "10", directx: "DirectX 11", gpu: "NVIDIA GeForce GTX 480 (1 GB) o AMD Radeon HD 5850 (1 GB)" }
+};
+
+const btnVolverFichaLegoHobbit = document.getElementById('btn-volver-ficha-lego-hobbit');
+if (btnVolverFichaLegoHobbit) {
+    btnVolverFichaLegoHobbit.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-lego-hobbit');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-videojuegos-explorar'));
+    });
+}
+
+const btnDlcLegoHobbit = document.getElementById('btn-dlc-lego-hobbit');
+if (btnDlcLegoHobbit) {
+    btnDlcLegoHobbit.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-lego-hobbit'));
+    });
+}
+
+const btnVolverDlcLegoHobbit = document.getElementById('btn-volver-dlc-lego-hobbit');
+if (btnVolverDlcLegoHobbit) {
+    btnVolverDlcLegoHobbit.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-lego-hobbit'));
+    });
+}
+
+document.querySelectorAll('.btn-volver-dlc-individual-lh').forEach(boton => {
+    boton.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-lego-hobbit'));
+    });
+});
+
+const btnRequisitosLegoHobbit = document.getElementById('btn-requisitos-lego-hobbit');
+if (btnRequisitosLegoHobbit) {
+    btnRequisitosLegoHobbit.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-lego-hobbit'));
+    });
+}
+
+const btnVolverRequisitosLegoHobbit = document.getElementById('btn-volver-requisitos-lego-hobbit');
+if (btnVolverRequisitosLegoHobbit) {
+    btnVolverRequisitosLegoHobbit.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-lego-hobbit'));
+    });
+}
+
+const REQUISITOS_LEGO_HOBBIT = {
+    minimos: { so: "Windows XP SP3 / Vista / 7 / 8 / 10", cpu: "AMD Athlon 64 X2 Dual Core 3800+ (2.0 GHz) o Intel Pentium Dual Core E2180 (2.0 GHz)", ram: "2", almacenamiento: "10", directx: "DirectX 10", gpu: "NVIDIA GeForce 7600 GS o ATI Radeon X1950 Pro (256 MB)" },
+    recomendado: { so: "Windows 7 / 8 / 10 (64 bits)", cpu: "Intel Core i5-750 (2.67 GHz) o AMD Phenom II X4 965 (3.4 GHz)", ram: "4", almacenamiento: "10", directx: "DirectX 11", gpu: "NVIDIA GeForce GTX 480 (1 GB) o AMD Radeon HD 5850 (1 GB)" }
+};
+
+const btnVolverFichaLegoMarvelSH1 = document.getElementById('btn-volver-ficha-lego-marvel-sh1');
+if (btnVolverFichaLegoMarvelSH1) {
+    btnVolverFichaLegoMarvelSH1.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-lego-marvel-sh1');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-marvel-videojuegos'));
+    });
+}
+
+const btnDlcLegoMarvelSH1 = document.getElementById('btn-dlc-lego-marvel-sh1');
+if (btnDlcLegoMarvelSH1) {
+    btnDlcLegoMarvelSH1.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-lego-marvel-sh1'));
+    });
+}
+
+const btnVolverDlcLegoMarvelSH1 = document.getElementById('btn-volver-dlc-lego-marvel-sh1');
+if (btnVolverDlcLegoMarvelSH1) {
+    btnVolverDlcLegoMarvelSH1.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-lego-marvel-sh1'));
+    });
+}
+
+document.querySelectorAll('.btn-volver-dlc-individual-lmsh1').forEach(boton => {
+    boton.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-lego-marvel-sh1'));
+    });
+});
+
+const btnRequisitosLegoMarvelSH1 = document.getElementById('btn-requisitos-lego-marvel-sh1');
+if (btnRequisitosLegoMarvelSH1) {
+    btnRequisitosLegoMarvelSH1.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-lego-marvel-sh1'));
+    });
+}
+
+const btnVolverRequisitosLegoMarvelSH1 = document.getElementById('btn-volver-requisitos-lego-marvel-sh1');
+if (btnVolverRequisitosLegoMarvelSH1) {
+    btnVolverRequisitosLegoMarvelSH1.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-lego-marvel-sh1'));
+    });
+}
+
+const REQUISITOS_LEGO_MARVEL_SH1 = {
+    minimos: { so: "Windows XP SP3 / Vista / 7 / 8 / 10", cpu: "AMD Athlon 64 X2 Dual Core 3800+ (2.0 GHz) o Intel Pentium Dual Core E2180 (2.0 GHz)", ram: "2", almacenamiento: "7", directx: "DirectX 9.0c", gpu: "NVIDIA GeForce 7600 GS o ATI Radeon X1950 Pro (256 MB)" },
+    recomendado: { so: "Windows 7 / 8 / 10 (64 bits)", cpu: "Intel Core i5-750 (2.67 GHz) o AMD Phenom II X4 965 (3.4 GHz)", ram: "4", almacenamiento: "7", directx: "DirectX 11", gpu: "NVIDIA GeForce GTX 480 (1 GB) o AMD Radeon HD 5850 (1 GB)" }
+};
+
+const btnVolverFichaLegoLotr = document.getElementById('btn-volver-ficha-lego-lotr');
+if (btnVolverFichaLegoLotr) {
+    btnVolverFichaLegoLotr.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-lego-lotr');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-videojuegos-explorar'));
+    });
+}
+
+const btnRequisitosLegoLotr = document.getElementById('btn-requisitos-lego-lotr');
+if (btnRequisitosLegoLotr) {
+    btnRequisitosLegoLotr.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-lego-lotr'));
+    });
+}
+
+const btnVolverRequisitosLegoLotr = document.getElementById('btn-volver-requisitos-lego-lotr');
+if (btnVolverRequisitosLegoLotr) {
+    btnVolverRequisitosLegoLotr.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-lego-lotr'));
+    });
+}
+
+const REQUISITOS_LEGO_LOTR = {
+    minimos: { so: "Windows XP SP3 / Vista / 7 / 8 / 10", cpu: "Intel Pentium Dual Core E2180 (2.0 GHz) o AMD Athlon 64 X2 Dual Core 3800+ (2.0 GHz)", ram: "1", almacenamiento: "8", directx: "DirectX 9.0c", gpu: "NVIDIA GeForce 7600 GS o ATI Radeon X1950 Pro (256 MB)" },
+    recomendado: { so: "Windows 7 / 8 / 10 (64 bits)", cpu: "Intel Core i5-750 (2.67 GHz) o AMD Phenom II X4 965 (3.4 GHz)", ram: "4", almacenamiento: "8", directx: "DirectX 11", gpu: "NVIDIA GeForce GTX 480 (1 GB) o AMD Radeon HD 5850 (1 GB)" }
+};
+
+const btnVolverFichaLegoBatman2 = document.getElementById('btn-volver-ficha-lego-batman-2');
+if (btnVolverFichaLegoBatman2) {
+    btnVolverFichaLegoBatman2.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-lego-batman-2');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-dc-videojuegos'));
+    });
+}
+
+const btnDlcLegoBatman2 = document.getElementById('btn-dlc-lego-batman-2');
+if (btnDlcLegoBatman2) {
+    btnDlcLegoBatman2.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-lego-batman-2'));
+    });
+}
+
+const btnVolverDlcLegoBatman2 = document.getElementById('btn-volver-dlc-lego-batman-2');
+if (btnVolverDlcLegoBatman2) {
+    btnVolverDlcLegoBatman2.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-lego-batman-2'));
+    });
+}
+
+document.querySelectorAll('.btn-volver-dlc-individual-lb2').forEach(boton => {
+    boton.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-lego-batman-2'));
+    });
+});
+
+const btnRequisitosLegoBatman2 = document.getElementById('btn-requisitos-lego-batman-2');
+if (btnRequisitosLegoBatman2) {
+    btnRequisitosLegoBatman2.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-lego-batman-2'));
+    });
+}
+
+const btnVolverRequisitosLegoBatman2 = document.getElementById('btn-volver-requisitos-lego-batman-2');
+if (btnVolverRequisitosLegoBatman2) {
+    btnVolverRequisitosLegoBatman2.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-lego-batman-2'));
+    });
+}
+
+const REQUISITOS_LEGO_BATMAN_2 = {
+    minimos: { so: "Windows XP SP3 / Vista / 7 / 8 / 10", cpu: "Intel Core 2 Duo (2.0 GHz) o AMD Athlon 64 X2 3800+ (2.0 GHz)", ram: "1", almacenamiento: "10", directx: "DirectX 9.0c", gpu: "NVIDIA GeForce 7600 GS o ATI Radeon X1950 Pro (256 MB)" },
+    recomendado: { so: "Windows 7 / 8 / 10 (64 bits)", cpu: "Quad Core a 2.7 GHz (Intel Core i5-750 o AMD Phenom II X4 965)", ram: "4", almacenamiento: "10", directx: "DirectX 11", gpu: "NVIDIA GeForce GTX 460 (1 GB) o AMD Radeon HD 5850 (1 GB)" }
+};
+
+const btnVolverFichaLegoHP57 = document.getElementById('btn-volver-ficha-lego-hp-5-7');
+if (btnVolverFichaLegoHP57) {
+    btnVolverFichaLegoHP57.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-lego-hp-5-7');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-videojuegos-explorar'));
+    });
+}
+
+const btnRequisitosLegoHP57 = document.getElementById('btn-requisitos-lego-hp-5-7');
+if (btnRequisitosLegoHP57) {
+    btnRequisitosLegoHP57.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-lego-hp-5-7'));
+    });
+}
+
+const btnVolverRequisitosLegoHP57 = document.getElementById('btn-volver-requisitos-lego-hp-5-7');
+if (btnVolverRequisitosLegoHP57) {
+    btnVolverRequisitosLegoHP57.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-lego-hp-5-7'));
+    });
+}
+
+const REQUISITOS_LEGO_HP_5_7 = {
+    minimos: { so: "Windows XP SP3 / Vista / 7 / 8 / 10", cpu: "Intel Dual Core (2.0 GHz) o AMD Athlon 64 X2 Dual Core 3800+", ram: "1", almacenamiento: "8.5", directx: "DirectX 9.0c", gpu: "NVIDIA GeForce 7600 GS o ATI Radeon X1950 Pro (256 MB)" },
+    recomendado: { so: "Windows 7 / 8 / 10 (64 bits)", cpu: "Quad Core a 2.7 GHz (Intel Core i5 o AMD Phenom II X4)", ram: "4", almacenamiento: "8.5", directx: "DirectX 11", gpu: "NVIDIA GeForce GTX 460 (1 GB) o AMD Radeon HD 5850 (1 GB)" }
+};
+
+const btnVolverFichaLegoJurassicWorld = document.getElementById('btn-volver-ficha-lego-jurassic-world');
+if (btnVolverFichaLegoJurassicWorld) {
+    btnVolverFichaLegoJurassicWorld.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-lego-jurassic-world');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-videojuegos-explorar'));
+    });
+}
+
+const btnDlcLegoJurassicWorld = document.getElementById('btn-dlc-lego-jurassic-world');
+if (btnDlcLegoJurassicWorld) {
+    btnDlcLegoJurassicWorld.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-lego-jurassic-world'));
+    });
+}
+
+const btnVolverDlcLegoJurassicWorld = document.getElementById('btn-volver-dlc-lego-jurassic-world');
+if (btnVolverDlcLegoJurassicWorld) {
+    btnVolverDlcLegoJurassicWorld.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-lego-jurassic-world'));
+    });
+}
+
+document.querySelectorAll('.btn-volver-dlc-individual-ljw').forEach(boton => {
+    boton.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-lego-jurassic-world'));
+    });
+});
+
+const btnRequisitosLegoJurassicWorld = document.getElementById('btn-requisitos-lego-jurassic-world');
+if (btnRequisitosLegoJurassicWorld) {
+    btnRequisitosLegoJurassicWorld.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-lego-jurassic-world'));
+    });
+}
+
+const btnVolverRequisitosLegoJurassicWorld = document.getElementById('btn-volver-requisitos-lego-jurassic-world');
+if (btnVolverRequisitosLegoJurassicWorld) {
+    btnVolverRequisitosLegoJurassicWorld.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-lego-jurassic-world'));
+    });
+}
+
+const REQUISITOS_LEGO_JURASSIC_WORLD = {
+    minimos: { so: "Windows XP SP3 / Vista / 7 / 8 / 10", cpu: "Intel Core 2 Quad Q6600 (2.4 GHz) o AMD Phenom X4 9850 (2.5 GHz)", ram: "2", almacenamiento: "10", directx: "DirectX 9.0c", gpu: "NVIDIA GeForce GT 430 (1 GB) o AMD Radeon HD 5850 (1 GB)" },
+    recomendado: { so: "Windows 7 / 8 / 10 (64 bits)", cpu: "Intel Core i5-750 (2.67 GHz) o AMD Phenom II X4 965 (3.4 GHz)", ram: "4", almacenamiento: "10", directx: "DirectX 11", gpu: "NVIDIA GeForce GTX 480 (1 GB) o AMD Radeon HD 5850 (1 GB)" }
+};
+
+const btnVolverFichaLegoMarvelAvengers = document.getElementById('btn-volver-ficha-lego-marvel-avengers');
+if (btnVolverFichaLegoMarvelAvengers) {
+    btnVolverFichaLegoMarvelAvengers.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-lego-marvel-avengers');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-marvel-videojuegos'));
+    });
+}
+
+const btnDlcLegoMarvelAvengers = document.getElementById('btn-dlc-lego-marvel-avengers');
+if (btnDlcLegoMarvelAvengers) {
+    btnDlcLegoMarvelAvengers.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-lego-marvel-avengers'));
+    });
+}
+
+const btnVolverDlcLegoMarvelAvengers = document.getElementById('btn-volver-dlc-lego-marvel-avengers');
+if (btnVolverDlcLegoMarvelAvengers) {
+    btnVolverDlcLegoMarvelAvengers.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-lego-marvel-avengers'));
+    });
+}
+
+document.querySelectorAll('.btn-volver-dlc-individual-lmavengers').forEach(boton => {
+    boton.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-lego-marvel-avengers'));
+    });
+});
+
+const btnRequisitosLegoMarvelAvengers = document.getElementById('btn-requisitos-lego-marvel-avengers');
+if (btnRequisitosLegoMarvelAvengers) {
+    btnRequisitosLegoMarvelAvengers.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-lego-marvel-avengers'));
+    });
+}
+
+const btnVolverRequisitosLegoMarvelAvengers = document.getElementById('btn-volver-requisitos-lego-marvel-avengers');
+if (btnVolverRequisitosLegoMarvelAvengers) {
+    btnVolverRequisitosLegoMarvelAvengers.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-lego-marvel-avengers'));
+    });
+}
+
+const REQUISITOS_LEGO_MARVEL_AVENGERS = {
+    minimos: { so: "Windows XP / Vista / 7 / 8 / 10", cpu: "Intel Core 2 Quad Q6600 (2.4 GHz) o AMD Phenom X4 9850 (2.5 GHz)", ram: "4", almacenamiento: "14", directx: "DirectX 9.0c", gpu: "NVIDIA GeForce GT 430 (1 GB) o AMD Radeon HD 6850 (1 GB)" },
+    recomendado: { so: "Windows 7 / 8 / 10 (64 bits)", cpu: "Intel Core i5 (4 núcleos, 2.6 GHz) o equivalente de AMD", ram: "4", almacenamiento: "14", directx: "DirectX 11", gpu: "NVIDIA GeForce GTX 480 (1 GB) o AMD Radeon HD 5850 (1 GB)" }
+};
+
+const btnVolverFichaLegoMarvelSH2 = document.getElementById('btn-volver-ficha-lego-marvel-sh2');
+if (btnVolverFichaLegoMarvelSH2) {
+    btnVolverFichaLegoMarvelSH2.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-lego-marvel-sh2');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-marvel-videojuegos'));
+    });
+}
+
+const btnVolverFichaLegoIncredibles = document.getElementById('btn-volver-ficha-lego-incredibles');
+if (btnVolverFichaLegoIncredibles) {
+    btnVolverFichaLegoIncredibles.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-lego-incredibles');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-videojuegos-explorar'));
+    });
+}
+
+const btnVolverFichaLegoSWTFA = document.getElementById('btn-volver-ficha-lego-sw-tfa');
+if (btnVolverFichaLegoSWTFA) {
+    btnVolverFichaLegoSWTFA.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-lego-sw-tfa');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-sw-videojuegos'));
+    });
+}
 
 const btnDlcLegoMarvelSH2 = document.getElementById('btn-dlc-lego-marvel-sh2');
 if (btnDlcLegoMarvelSH2) {
