@@ -268,8 +268,8 @@ const listaMedia = [
     { titulo: "Heir to the Empire", categoria: "sw-libros", tipo: "Libro", poster: "https://placehold.co/300x450?text=Heir+to+the+Empire" },
 
     // --- STAR WARS: VIDEOJUEGOS ---
-    { titulo: "Star Wars Jedi: Fallen Order", categoria: "sw-videojuegos", tipo: "Videojuego", poster: "https://lumiere-a.akamaihd.net/v1/images/image_25a0f282.jpeg" },
-    { titulo: "Star Wars Jedi: Survivor", categoria: "sw-videojuegos", tipo: "Videojuego", poster: "https://m.media-amazon.com/images/I/71g6jLNF04L.AC_UF894,1000_QL80.jpg" },
+    { titulo: "Star Wars Jedi: Fallen Order", categoria: "sw-videojuegos", tipo: "Videojuego", fichaTecnicaId: "sw-jedi-fallen-order", poster: "https://lumiere-a.akamaihd.net/v1/images/image_25a0f282.jpeg" },
+    { titulo: "Star Wars Jedi: Survivor", categoria: "sw-videojuegos", tipo: "Videojuego", fichaTecnicaId: "sw-jedi-survivor", poster: "https://m.media-amazon.com/images/I/71g6jLNF04L.AC_UF894,1000_QL80.jpg" },
     { titulo: "Star Wars: Knights of the Old Republic", categoria: "sw-videojuegos", tipo: "Videojuego", poster: "https://lumiere-a.akamaihd.net/v1/images/game_poster_knightsoftheoldrepub_1_d341747d.jpeg?region=0,0,500,750" },
     { titulo: "Star Wars Battlefront II", categoria: "sw-videojuegos", tipo: "Videojuego", poster: "https://m.media-amazon.com/images/M/MV5BOTY3NzM1OTI3OV5BMl5BanBnXkFtZTgwOTUyNzMwMjI@._V1_.jpg" },
     { titulo: "LEGO Star Wars: The Complete Saga", categoria: "sw-videojuegos", tipo: "Videojuego", fichaTecnicaId: "lego-sw-complete-saga", poster: "https://m.media-amazon.com/images/M/MV5BM2Q4NzYzMDEtMGM1ZC00YTBkLTgyNzctYjFjYjAwZWY3NTJkXkEyXkFqcGc@.V1.jpg" },
@@ -1175,9 +1175,9 @@ const listaMedia = [
     { titulo: "Blackmail", categoria: "alfred-hitchcock", subtipo: "1920", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/aMH3UBjlX4ChgGsEvbDRSOkz5Hk.jpg" },
 
     // --- TOMB RAIDER (con filtro "Survivor") ---
-    { titulo: "Tomb Raider (2013)", categoria: "tomb-raider", subtipo: "survivor", tipo: "Videojuego", poster: "https://m.media-amazon.com/images/M/MV5BZWRhNDIwMDQtOTE1ZS00YTQ1LThlYmYtYzBhZjE4NTEwZTIyXkEyXkFqcGc@._V1_.jpg" },
-    { titulo: "Rise of The Tomb Raider", categoria: "tomb-raider", subtipo: "survivor", tipo: "Videojuego", poster: "https://m.media-amazon.com/images/M/MV5BMzI0NDJkNGUtOTc1MS00MzgyLThmYjgtOGU1YzdmYjhlMGU5XkEyXkFqcGc@._V1_.jpg" },
-    { titulo: "Shadow of The Tomb Raider", categoria: "tomb-raider", subtipo: "survivor", tipo: "Videojuego", poster: "https://m.media-amazon.com/images/M/MV5BNTI1ZTM4YjgtZjY0My00YTE2LTlhMTUtMGJlY2UwNzY1NjZmXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Tomb Raider (2013)", categoria: "tomb-raider", subtipo: "survivor", tipo: "Videojuego", fichaTecnicaId: "tomb-raider-2013", poster: "https://m.media-amazon.com/images/M/MV5BZWRhNDIwMDQtOTE1ZS00YTQ1LThlYmYtYzBhZjE4NTEwZTIyXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Rise of The Tomb Raider", categoria: "tomb-raider", subtipo: "survivor", tipo: "Videojuego", fichaTecnicaId: "rise-tomb-raider", poster: "https://m.media-amazon.com/images/M/MV5BMzI0NDJkNGUtOTc1MS00MzgyLThmYjgtOGU1YzdmYjhlMGU5XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Shadow of The Tomb Raider", categoria: "tomb-raider", subtipo: "survivor", tipo: "Videojuego", fichaTecnicaId: "shadow-tomb-raider", poster: "https://m.media-amazon.com/images/M/MV5BNTI1ZTM4YjgtZjY0My00YTE2LTlhMTUtMGJlY2UwNzY1NjZmXkEyXkFqcGc@._V1_.jpg" },
 
     // --- ANDREW GARFIELD: Década de 2010 ---
     { titulo: "Never Let Me Go", categoria: "andrew-garfield", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/yUFrKRBLbVAtgSBMTVAL4wOXq6z.jpg" },
@@ -3554,8 +3554,8 @@ const colecciones = [
         poster: "https://i.pinimg.com/564x/95/9b/f5/959bf5176a963ae78455679cf0103473.jpg",
         esVideojuego: true,
         peliculas: [
-            { titulo: "Injustice: Gods Among Us", poster: "https://m.media-amazon.com/images/M/MV5BZjVjNTg1MWUtM2ZhYi00YzA2LWI2ZTctZTVjNzFhZGM2NDMxXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
-            { titulo: "Injustice 2", poster: "https://m.media-amazon.com/images/M/MV5BZWI5ZDhjMmItMGZiZi00M2VlLTgxMmMtNDIzZDg0Njk2NmE3XkEyXkFqcGc@.V1.jpg" }
+            { titulo: "Injustice: Gods Among Us", fichaTecnicaId: "injustice-1", poster: "https://m.media-amazon.com/images/M/MV5BZjVjNTg1MWUtM2ZhYi00YzA2LWI2ZTctZTVjNzFhZGM2NDMxXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+            { titulo: "Injustice 2", fichaTecnicaId: "injustice-2", poster: "https://m.media-amazon.com/images/M/MV5BZWI5ZDhjMmItMGZiZi00M2VlLTgxMmMtNDIzZDg0Njk2NmE3XkEyXkFqcGc@.V1.jpg" }
         ]
     },
     {
@@ -6633,6 +6633,27 @@ function cambiarSeccion(seccionNueva) {
     if (seccionNueva.id === 'seccion-requisitos-lego-sw-complete-saga' && typeof armarComparacionMiPC === 'function') {
         armarComparacionMiPC('seccion-requisitos-lego-sw-complete-saga', REQUISITOS_LEGO_SW_COMPLETE_SAGA);
     }
+    if (seccionNueva.id === 'seccion-requisitos-sw-jedi-fallen-order' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-sw-jedi-fallen-order', REQUISITOS_SW_JEDI_FALLEN_ORDER);
+    }
+    if (seccionNueva.id === 'seccion-requisitos-sw-jedi-survivor' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-sw-jedi-survivor', REQUISITOS_SW_JEDI_SURVIVOR);
+    }
+    if (seccionNueva.id === 'seccion-requisitos-tomb-raider-2013' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-tomb-raider-2013', REQUISITOS_TOMB_RAIDER_2013);
+    }
+    if (seccionNueva.id === 'seccion-requisitos-rise-tomb-raider' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-rise-tomb-raider', REQUISITOS_RISE_TOMB_RAIDER);
+    }
+    if (seccionNueva.id === 'seccion-requisitos-shadow-tomb-raider' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-shadow-tomb-raider', REQUISITOS_SHADOW_TOMB_RAIDER);
+    }
+    if (seccionNueva.id === 'seccion-requisitos-injustice-1' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-injustice-1', REQUISITOS_INJUSTICE_1);
+    }
+    if (seccionNueva.id === 'seccion-requisitos-injustice-2' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-injustice-2', REQUISITOS_INJUSTICE_2);
+    }
 }
 
 const btnDoomsday = document.getElementById('btn-doomsday');
@@ -7716,6 +7737,141 @@ function configurarAutocompletadoMiPC(campoId, listaOpciones, claveIndice) {
 configurarAutocompletadoMiPC('gpu', LISTA_GPUS_MIPC, 'gpu');
 configurarAutocompletadoMiPC('cpu', LISTA_CPUS_MIPC, 'cpu');
 
+// ==========================================
+// BUSCADOR DE JUEGOS EN "MI PC" — salta directo a los Requisitos de
+// cualquier juego que ya los tenga cargados, sin pasar por su categoría.
+// Se arma a partir de los mismos objetos REQUISITOS_* que ya alimentan la
+// comparación "¿Te corre?" de cada ficha técnica, así que no hay que
+// mantener una segunda lista aparte: agregar un juego nuevo acá es solo
+// sumar una línea cuando se le crean sus Requisitos.
+// ==========================================
+const JUEGOS_CON_REQUISITOS_MIPC = [
+    { titulo: "LEGO Batman: The Videogame", seccion: "lego-batman-1", requisitos: () => REQUISITOS_LEGO_BATMAN_1 },
+    { titulo: "LEGO Batman 2: DC Super Heroes", seccion: "lego-batman-2", requisitos: () => REQUISITOS_LEGO_BATMAN_2 },
+    { titulo: "LEGO Batman 3: Beyond Gotham", seccion: "lego-batman-3", requisitos: () => REQUISITOS_LEGO_BATMAN_3 },
+    { titulo: "LEGO Batman: Legacy of the Dark Knight", seccion: "lego-batman-legacy", requisitos: () => REQUISITOS_LEGO_BATMAN_LEGACY },
+    { titulo: "LEGO: The Hobbit", seccion: "lego-hobbit", requisitos: () => REQUISITOS_LEGO_HOBBIT },
+    { titulo: "LEGO Harry Potter: Years 1-4", seccion: "lego-hp-1-4", requisitos: () => REQUISITOS_LEGO_HP_1_4 },
+    { titulo: "LEGO Harry Potter: Years 5-7", seccion: "lego-hp-5-7", requisitos: () => REQUISITOS_LEGO_HP_5_7 },
+    { titulo: "LEGO Indiana Jones: The Original Adventures", seccion: "lego-ij1", requisitos: () => REQUISITOS_LEGO_IJ1 },
+    { titulo: "LEGO Indiana Jones 2: The Adventure Continues", seccion: "lego-ij2", requisitos: () => REQUISITOS_LEGO_IJ2 },
+    { titulo: "LEGO The Incredibles", seccion: "lego-incredibles", requisitos: () => REQUISITOS_LEGO_INCREDIBLES },
+    { titulo: "LEGO Jurassic World", seccion: "lego-jurassic-world", requisitos: () => REQUISITOS_LEGO_JURASSIC_WORLD },
+    { titulo: "LEGO The Lord of the Rings", seccion: "lego-lotr", requisitos: () => REQUISITOS_LEGO_LOTR },
+    { titulo: "LEGO Marvel's Avengers", seccion: "lego-marvel-avengers", requisitos: () => REQUISITOS_LEGO_MARVEL_AVENGERS },
+    { titulo: "LEGO Marvel Super Heroes", seccion: "lego-marvel-sh1", requisitos: () => REQUISITOS_LEGO_MARVEL_SH1 },
+    { titulo: "LEGO Marvel Super Heroes 2", seccion: "lego-marvel-sh2", requisitos: () => REQUISITOS_LEGO_MARVEL_SH2 },
+    { titulo: "LEGO Pirates of the Caribbean: The Video Game", seccion: "lego-pirates", requisitos: () => REQUISITOS_LEGO_PIRATES },
+    { titulo: "LEGO Star Wars III: The Clone Wars", seccion: "lego-sw3-clone-wars", requisitos: () => REQUISITOS_LEGO_SW3 },
+    { titulo: "LEGO Star Wars: The Skywalker Saga", seccion: "lego-swss", requisitos: () => REQUISITOS_LEGO_SWSS },
+    { titulo: "LEGO Star Wars: The Complete Saga", seccion: "lego-sw-complete-saga", requisitos: () => REQUISITOS_LEGO_SW_COMPLETE_SAGA },
+    { titulo: "LEGO Star Wars: The Force Awakens", seccion: "lego-sw-tfa", requisitos: () => REQUISITOS_LEGO_SW_TFA },
+    { titulo: "Star Wars Jedi: Fallen Order", seccion: "sw-jedi-fallen-order", requisitos: () => REQUISITOS_SW_JEDI_FALLEN_ORDER },
+    { titulo: "Star Wars Jedi: Survivor", seccion: "sw-jedi-survivor", requisitos: () => REQUISITOS_SW_JEDI_SURVIVOR },
+    { titulo: "Tomb Raider (2013)", seccion: "tomb-raider-2013", requisitos: () => REQUISITOS_TOMB_RAIDER_2013 },
+    { titulo: "Rise of The Tomb Raider", seccion: "rise-tomb-raider", requisitos: () => REQUISITOS_RISE_TOMB_RAIDER },
+    { titulo: "Shadow of The Tomb Raider", seccion: "shadow-tomb-raider", requisitos: () => REQUISITOS_SHADOW_TOMB_RAIDER },
+    { titulo: "Injustice: Gods Among Us", seccion: "injustice-1", requisitos: () => REQUISITOS_INJUSTICE_1 },
+    { titulo: "Injustice 2", seccion: "injustice-2", requisitos: () => REQUISITOS_INJUSTICE_2 }
+];
+
+// Comparación rápida (mismo criterio numérico que armarComparacionMiPC)
+// para mostrar un ✅/❌ al lado de cada resultado del buscador, sin tener
+// que entrar al juego para saberlo.
+function calcularTeCorreRapido(requisitos) {
+    const specs = cargarEspecificacionesMiPC();
+    if (!specs || !requisitos) return null;
+    const ramUsuario = parseFloat(specs.ram);
+    const ramMinima = parseFloat(requisitos.minimos.ram);
+    const almUsuario = parseFloat(specs.almacenamiento);
+    const almMinimo = parseFloat(requisitos.minimos.almacenamiento);
+    if (isNaN(ramUsuario) || isNaN(ramMinima) || isNaN(almUsuario) || isNaN(almMinimo)) return null;
+    return (ramUsuario >= ramMinima && almUsuario >= almMinimo);
+}
+
+(function configurarBuscadorJuegosMiPC() {
+    const input = document.getElementById('mipc-buscar-juego');
+    const cont = document.getElementById('sugerencias-mipc-juego');
+    if (!input || !cont) return;
+    let indiceResaltado = -1;
+
+    function ocultar() {
+        cont.classList.add('oculto');
+        cont.innerHTML = '';
+        indiceResaltado = -1;
+    }
+
+    function irAJuego(juego) {
+        const seccionFicha = document.getElementById(`seccion-ficha-${juego.seccion}`);
+        const seccionReq = document.getElementById(`seccion-requisitos-${juego.seccion}`);
+        if (seccionReq && seccionFicha) {
+            // El botón volver de Requisitos vuelve a la ficha técnica del
+            // juego (comportamiento normal); dejamos esa como su origen.
+            seccionFicha.dataset.origen = 'seccion-mi-pc';
+            cambiarSeccion(seccionReq);
+        }
+        input.value = '';
+        ocultar();
+    }
+
+    function mostrar(texto) {
+        indiceResaltado = -1;
+        const textoNormalizado = texto.trim().toLowerCase();
+        if (textoNormalizado.length < 2) { ocultar(); return; }
+
+        const coincidencias = JUEGOS_CON_REQUISITOS_MIPC
+            .filter(j => j.titulo.toLowerCase().includes(textoNormalizado))
+            .slice(0, 8);
+
+        if (coincidencias.length === 0) {
+            cont.innerHTML = `<div class="sugerencia-item">Ningún juego con Requisitos cargados coincide.</div>`;
+            cont.classList.remove('oculto');
+            return;
+        }
+
+        cont.innerHTML = coincidencias.map(juego => {
+            const teCorre = calcularTeCorreRapido(juego.requisitos());
+            const indicador = teCorre === null ? '' : (teCorre ? '<span class="sugerencia-juego-te-corre ok">✅ Te corre</span>' : '<span class="sugerencia-juego-te-corre no">❌ No te corre</span>');
+            return `<div class="sugerencia-item sugerencia-item-juego" data-seccion="${juego.seccion}"><span class="sugerencia-juego-titulo">${juego.titulo}</span>${indicador}</div>`;
+        }).join('');
+        cont.classList.remove('oculto');
+
+        cont.querySelectorAll('.sugerencia-item-juego').forEach(item => {
+            item.addEventListener('mousedown', (e) => {
+                e.preventDefault();
+                const juego = JUEGOS_CON_REQUISITOS_MIPC.find(j => j.seccion === item.dataset.seccion);
+                if (juego) irAJuego(juego);
+            });
+        });
+    }
+
+    function moverResaltado(delta) {
+        const items = cont.querySelectorAll('.sugerencia-item-juego');
+        if (items.length === 0) return;
+        indiceResaltado = (indiceResaltado + delta + items.length) % items.length;
+        items.forEach((item, i) => item.classList.toggle('resaltada', i === indiceResaltado));
+        const elegido = items[indiceResaltado];
+        if (elegido && elegido.scrollIntoView) elegido.scrollIntoView({ block: 'nearest' });
+    }
+
+    input.addEventListener('input', () => mostrar(input.value));
+    input.addEventListener('blur', () => setTimeout(ocultar, 150));
+    input.addEventListener('keydown', (e) => {
+        const hayDropdownVisible = !cont.classList.contains('oculto') && cont.querySelectorAll('.sugerencia-item-juego').length > 0;
+        if (hayDropdownVisible && e.key === 'ArrowDown') { e.preventDefault(); moverResaltado(1); return; }
+        if (hayDropdownVisible && e.key === 'ArrowUp') { e.preventDefault(); moverResaltado(-1); return; }
+        if (hayDropdownVisible && e.key === 'Enter' && indiceResaltado >= 0) {
+            e.preventDefault();
+            const items = cont.querySelectorAll('.sugerencia-item-juego');
+            const elegido = items[indiceResaltado];
+            const juego = JUEGOS_CON_REQUISITOS_MIPC.find(j => j.seccion === elegido.dataset.seccion);
+            if (juego) irAJuego(juego);
+            return;
+        }
+        if (e.key === 'Escape') ocultar();
+    });
+})();
+
 // Arma, para una sección de Requisitos dada, el bloque de comparación
 // "¿Te corre?" a partir de las specs guardadas en Mi PC. Los campos
 // numéricos (RAM, almacenamiento) se comparan automáticamente; CPU, GPU,
@@ -8408,6 +8564,208 @@ const SECCIONES_COMICS_CON_MENU_FILTROS = {
 Object.entries(SECCIONES_COMICS_CON_MENU_FILTROS).forEach(([seccionId, gridIds]) => {
     convertirEnMenuFiltros(seccionId, gridIds);
 });
+
+const btnVolverFichaSWJediFallenOrder = document.getElementById('btn-volver-ficha-sw-jedi-fallen-order');
+if (btnVolverFichaSWJediFallenOrder) {
+    btnVolverFichaSWJediFallenOrder.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-sw-jedi-fallen-order');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-sw-videojuegos'));
+    });
+}
+
+const btnRequisitosSWJediFallenOrder = document.getElementById('btn-requisitos-sw-jedi-fallen-order');
+if (btnRequisitosSWJediFallenOrder) {
+    btnRequisitosSWJediFallenOrder.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-sw-jedi-fallen-order'));
+    });
+}
+
+const btnVolverRequisitosSWJediFallenOrder = document.getElementById('btn-volver-requisitos-sw-jedi-fallen-order');
+if (btnVolverRequisitosSWJediFallenOrder) {
+    btnVolverRequisitosSWJediFallenOrder.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-sw-jedi-fallen-order'));
+    });
+}
+
+const REQUISITOS_SW_JEDI_FALLEN_ORDER = {
+    minimos: { so: "Windows 7 / 8.1 / 10 (64 bits)", cpu: "Intel Core i3-3220 o AMD FX-6100", ram: "8", almacenamiento: "55", directx: "DirectX 11", gpu: "NVIDIA GeForce GTX 650 Ti (2 GB) o AMD Radeon HD 7850 (2 GB)" },
+    recomendado: { so: "Windows 7 / 8.1 / 10 (64 bits)", cpu: "Intel Core i7-6700K o AMD Ryzen 7 1700", ram: "16", almacenamiento: "55", directx: "DirectX 11", gpu: "NVIDIA GeForce GTX 1070 / GTX 1660 Ti (6/8 GB) o AMD Radeon RX Vega 56 (8 GB)" }
+};
+
+const btnVolverFichaSWJediSurvivor = document.getElementById('btn-volver-ficha-sw-jedi-survivor');
+if (btnVolverFichaSWJediSurvivor) {
+    btnVolverFichaSWJediSurvivor.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-sw-jedi-survivor');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-sw-videojuegos'));
+    });
+}
+const btnRequisitosSWJediSurvivor = document.getElementById('btn-requisitos-sw-jedi-survivor');
+if (btnRequisitosSWJediSurvivor) {
+    btnRequisitosSWJediSurvivor.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-sw-jedi-survivor'));
+    });
+}
+const btnVolverRequisitosSWJediSurvivor = document.getElementById('btn-volver-requisitos-sw-jedi-survivor');
+if (btnVolverRequisitosSWJediSurvivor) {
+    btnVolverRequisitosSWJediSurvivor.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-sw-jedi-survivor'));
+    });
+}
+const REQUISITOS_SW_JEDI_SURVIVOR = {
+    minimos: { so: "Windows 10 (64 bits)", cpu: "Intel Core i7-7700 o AMD Ryzen 5 1400", ram: "8", almacenamiento: "150", directx: "DirectX 12", gpu: "NVIDIA GeForce GTX 1070 (8 GB) o AMD Radeon RX 580 (8 GB)" },
+    recomendado: { so: "Windows 10 / 11 (64 bits)", cpu: "Intel Core i5-11600K o AMD Ryzen 5 5600X", ram: "16", almacenamiento: "150", directx: "DirectX 12", gpu: "NVIDIA GeForce RTX 2070 (8 GB) o AMD Radeon RX 6700 XT (12 GB)" }
+};
+
+const btnVolverFichaTombRaider2013 = document.getElementById('btn-volver-ficha-tomb-raider-2013');
+if (btnVolverFichaTombRaider2013) {
+    btnVolverFichaTombRaider2013.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-tomb-raider-2013');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-tomb-raider'));
+    });
+}
+const btnRequisitosTombRaider2013 = document.getElementById('btn-requisitos-tomb-raider-2013');
+if (btnRequisitosTombRaider2013) {
+    btnRequisitosTombRaider2013.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-tomb-raider-2013'));
+    });
+}
+const btnVolverRequisitosTombRaider2013 = document.getElementById('btn-volver-requisitos-tomb-raider-2013');
+if (btnVolverRequisitosTombRaider2013) {
+    btnVolverRequisitosTombRaider2013.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-tomb-raider-2013'));
+    });
+}
+const REQUISITOS_TOMB_RAIDER_2013 = {
+    minimos: { so: "Windows XP SP3 / Vista / 7 / 8 / 10", cpu: "Intel Core 2 Duo E6300 (1.86 GHz) o AMD Athlon 64 X2 4050+ (2.1 GHz)", ram: "1", almacenamiento: "12", directx: "DirectX 9.0c", gpu: "NVIDIA GeForce 8600 GTS (512 MB) o AMD Radeon HD 2600 XT (512 MB)" },
+    recomendado: { so: "Windows Vista / 7 / 8 / 10 (64 bits)", cpu: "Intel Core i5-750 (2.67 GHz) o AMD Phenom II X4 955 (3.2 GHz)", ram: "4", almacenamiento: "12", directx: "DirectX 11", gpu: "NVIDIA GeForce GTX 480 (1 GB) o AMD Radeon HD 4870 / HD 5870 (1 GB)" }
+};
+
+const btnVolverFichaRiseTombRaider = document.getElementById('btn-volver-ficha-rise-tomb-raider');
+if (btnVolverFichaRiseTombRaider) {
+    btnVolverFichaRiseTombRaider.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-rise-tomb-raider');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-tomb-raider'));
+    });
+}
+const btnRequisitosRiseTombRaider = document.getElementById('btn-requisitos-rise-tomb-raider');
+if (btnRequisitosRiseTombRaider) {
+    btnRequisitosRiseTombRaider.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-rise-tomb-raider'));
+    });
+}
+const btnVolverRequisitosRiseTombRaider = document.getElementById('btn-volver-requisitos-rise-tomb-raider');
+if (btnVolverRequisitosRiseTombRaider) {
+    btnVolverRequisitosRiseTombRaider.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-rise-tomb-raider'));
+    });
+}
+const REQUISITOS_RISE_TOMB_RAIDER = {
+    minimos: { so: "Windows 7 (64 bits)", cpu: "Intel Core i3-2100 o AMD FX-4100", ram: "6", almacenamiento: "25", directx: "DirectX 11", gpu: "NVIDIA GeForce GTX 650 (2 GB) o AMD Radeon HD 7770 (2 GB)" },
+    recomendado: { so: "Windows 10 (64 bits)", cpu: "Intel Core i7-3770K (3.5 GHz) o AMD FX-8350 (4.0 GHz)", ram: "8", almacenamiento: "25", directx: "DirectX 11 / 12", gpu: "NVIDIA GeForce GTX 970 (4 GB) o AMD Radeon R9 290X (4 GB)" }
+};
+
+const btnVolverFichaShadowTombRaider = document.getElementById('btn-volver-ficha-shadow-tomb-raider');
+if (btnVolverFichaShadowTombRaider) {
+    btnVolverFichaShadowTombRaider.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-shadow-tomb-raider');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-tomb-raider'));
+    });
+}
+const btnRequisitosShadowTombRaider = document.getElementById('btn-requisitos-shadow-tomb-raider');
+if (btnRequisitosShadowTombRaider) {
+    btnRequisitosShadowTombRaider.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-shadow-tomb-raider'));
+    });
+}
+const btnVolverRequisitosShadowTombRaider = document.getElementById('btn-volver-requisitos-shadow-tomb-raider');
+if (btnVolverRequisitosShadowTombRaider) {
+    btnVolverRequisitosShadowTombRaider.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-shadow-tomb-raider'));
+    });
+}
+const REQUISITOS_SHADOW_TOMB_RAIDER = {
+    minimos: { so: "Windows 7 (64 bits)", cpu: "Intel Core i3-3220 o AMD FX-4300", ram: "8", almacenamiento: "40", directx: "DirectX 11", gpu: "NVIDIA GeForce GTX 660 / GTX 1050 (2 GB) o AMD Radeon HD 7770 (2 GB)" },
+    recomendado: { so: "Windows 10 (64 bits)", cpu: "Intel Core i7-4770K (3.4 GHz) o AMD Ryzen 5 1600 (3.2 GHz)", ram: "16", almacenamiento: "40", directx: "DirectX 12", gpu: "NVIDIA GeForce GTX 1060 (6 GB) o AMD Radeon RX 480 (8 GB)" }
+};
+
+const btnVolverFichaInjustice1 = document.getElementById('btn-volver-ficha-injustice-1');
+if (btnVolverFichaInjustice1) {
+    btnVolverFichaInjustice1.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-injustice-1');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-videojuegos-explorar'));
+    });
+}
+const btnRequisitosInjustice1 = document.getElementById('btn-requisitos-injustice-1');
+if (btnRequisitosInjustice1) {
+    btnRequisitosInjustice1.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-injustice-1'));
+    });
+}
+const btnVolverRequisitosInjustice1 = document.getElementById('btn-volver-requisitos-injustice-1');
+if (btnVolverRequisitosInjustice1) {
+    btnVolverRequisitosInjustice1.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-injustice-1'));
+    });
+}
+const REQUISITOS_INJUSTICE_1 = {
+    minimos: { so: "Windows Vista / 7 / 8 / 10 (32 o 64 bits)", cpu: "Intel Core 2 Duo (2.4 GHz) o AMD Athlon X2 (2.8 GHz)", ram: "2", almacenamiento: "22", directx: "DirectX 10", gpu: "NVIDIA GeForce 8800 GTS (512 MB) o AMD Radeon HD 3850 (512 MB)" },
+    recomendado: { so: "Windows 7 / 8 / 10 (64 bits)", cpu: "Intel Core i5-750 (2.67 GHz) o AMD Phenom II X4 965 (3.4 GHz)", ram: "4", almacenamiento: "22", directx: "DirectX 11", gpu: "NVIDIA GeForce GTX 560 (1 GB) o AMD Radeon HD 6950 (1 GB)" }
+};
+
+const btnVolverFichaInjustice2 = document.getElementById('btn-volver-ficha-injustice-2');
+if (btnVolverFichaInjustice2) {
+    btnVolverFichaInjustice2.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-injustice-2');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-videojuegos-explorar'));
+    });
+}
+const btnDlcInjustice2 = document.getElementById('btn-dlc-injustice-2');
+if (btnDlcInjustice2) {
+    btnDlcInjustice2.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-injustice-2'));
+    });
+}
+const btnVolverDlcInjustice2 = document.getElementById('btn-volver-dlc-injustice-2');
+if (btnVolverDlcInjustice2) {
+    btnVolverDlcInjustice2.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-injustice-2'));
+    });
+}
+document.querySelectorAll('.btn-volver-dlc-individual-inj2').forEach(boton => {
+    boton.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-injustice-2'));
+    });
+});
+const btnRequisitosInjustice2 = document.getElementById('btn-requisitos-injustice-2');
+if (btnRequisitosInjustice2) {
+    btnRequisitosInjustice2.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-injustice-2'));
+    });
+}
+const btnVolverRequisitosInjustice2 = document.getElementById('btn-volver-requisitos-injustice-2');
+if (btnVolverRequisitosInjustice2) {
+    btnVolverRequisitosInjustice2.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-injustice-2'));
+    });
+}
+const REQUISITOS_INJUSTICE_2 = {
+    minimos: { so: "Windows 7 / 10 (64 bits)", cpu: "Intel Core i5-2300 (2.8 GHz) o AMD FX-6300 (3.5 GHz) / AMD Ryzen 5 1400 (3.2 GHz)", ram: "8", almacenamiento: "52", directx: "DirectX 11", gpu: "NVIDIA GeForce GTX 780 (3 GB) o AMD Radeon R9 290 (4 GB) / AMD Radeon RX 570 (4 GB)" },
+    recomendado: { so: "Windows 10 (64 bits)", cpu: "Intel Core i5-6600 (3.3 GHz) o AMD Ryzen 5 1600 (3.2 GHz)", ram: "8", almacenamiento: "60", directx: "DirectX 11", gpu: "NVIDIA GeForce GTX 970 (4 GB) o GTX 1060 (6 GB) / AMD Radeon R9 390 (8 GB) o RX 580 (8 GB)" }
+};
 
 const btnVolverFichaLegoJurassicWorld = document.getElementById('btn-volver-ficha-lego-jurassic-world');
 

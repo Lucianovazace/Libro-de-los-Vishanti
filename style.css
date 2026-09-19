@@ -1539,6 +1539,46 @@ h2 {
     gap: 4px;
 }
 
+.mi-pc-buscador {
+    max-width: 420px;
+    margin-bottom: 10px;
+}
+
+.mi-pc-buscador input {
+    width: 100%;
+    background-color: #1e2129;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 10px 12px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.mi-pc-buscador .sugerencias-dropdown {
+    max-height: 260px;
+    overflow-y: auto;
+}
+
+.sugerencia-item-juego {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.sugerencia-item-juego .sugerencia-juego-titulo {
+    flex: 1;
+}
+
+.sugerencia-item-juego .sugerencia-juego-te-corre {
+    font-size: 11px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.sugerencia-item-juego .sugerencia-juego-te-corre.ok { color: #2ecc71; }
+.sugerencia-item-juego .sugerencia-juego-te-corre.no { color: #e74c3c; }
+
 .mi-pc-formulario label {
     font-size: 12px;
     color: #aaa;
