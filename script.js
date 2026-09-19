@@ -272,8 +272,8 @@ const listaMedia = [
     { titulo: "Star Wars Jedi: Survivor", categoria: "sw-videojuegos", tipo: "Videojuego", poster: "https://m.media-amazon.com/images/I/71g6jLNF04L.AC_UF894,1000_QL80.jpg" },
     { titulo: "Star Wars: Knights of the Old Republic", categoria: "sw-videojuegos", tipo: "Videojuego", poster: "https://lumiere-a.akamaihd.net/v1/images/game_poster_knightsoftheoldrepub_1_d341747d.jpeg?region=0,0,500,750" },
     { titulo: "Star Wars Battlefront II", categoria: "sw-videojuegos", tipo: "Videojuego", poster: "https://m.media-amazon.com/images/M/MV5BOTY3NzM1OTI3OV5BMl5BanBnXkFtZTgwOTUyNzMwMjI@._V1_.jpg" },
-    { titulo: "LEGO Star Wars: The Complete Saga", categoria: "sw-videojuegos", tipo: "Videojuego", poster: "https://m.media-amazon.com/images/M/MV5BM2Q4NzYzMDEtMGM1ZC00YTBkLTgyNzctYjFjYjAwZWY3NTJkXkEyXkFqcGc@.V1.jpg" },
-    { titulo: "LEGO Star Wars III: The Clone Wars", categoria: "sw-videojuegos", tipo: "Videojuego", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1mOX8mHIXBiE73YDPXbNy50JeRmudW4Rps4JASYSDWsSgdUNSVF19NkA&s=10" },
+    { titulo: "LEGO Star Wars: The Complete Saga", categoria: "sw-videojuegos", tipo: "Videojuego", fichaTecnicaId: "lego-sw-complete-saga", poster: "https://m.media-amazon.com/images/M/MV5BM2Q4NzYzMDEtMGM1ZC00YTBkLTgyNzctYjFjYjAwZWY3NTJkXkEyXkFqcGc@.V1.jpg" },
+    { titulo: "LEGO Star Wars III: The Clone Wars", categoria: "sw-videojuegos", tipo: "Videojuego", fichaTecnicaId: "lego-sw3-clone-wars", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1mOX8mHIXBiE73YDPXbNy50JeRmudW4Rps4JASYSDWsSgdUNSVF19NkA&s=10" },
     { titulo: "LEGO Star Wars: The Force Awakens", categoria: "sw-videojuegos", tipo: "Videojuego", fichaTecnicaId: "lego-sw-tfa", poster: "https://m.media-amazon.com/images/M/MV5BNjhiYmVmZmItOGE2MS00ZDQ4LTk4MDUtMzAyZjE0NmE3YjZjXkEyXkFqcGc@._V1_.jpg" },
     { titulo: "LEGO Star Wars: The Skywalker Saga", categoria: "sw-videojuegos", tipo: "Videojuego", fichaTecnicaId: "lego-swss", poster: "https://m.media-amazon.com/images/M/MV5BZjJhMDExNmQtZDU0ZC00YTk5LThlMGQtNjU0NzZmN2JkOTczXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
     { titulo: "Star Wars: Squadrons", categoria: "sw-videojuegos", tipo: "Videojuego", poster: "https://store-images.s-microsoft.com/image/apps.51514.71371953440216666.508e0708-a814-4f11-8420-5f620fd8ce09.59f15fb1-fb46-4166-b1ec-e8bb8d2b3350" },
@@ -3579,7 +3579,7 @@ const colecciones = [
         poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy-P8ozs-75ixhoOjwsLnDm-azOf78e-BGJ6Lr0_bw1uHp0QaK1uVyKgY&s=10",
         esVideojuego: true,
         peliculas: [
-            { titulo: "LEGO Batman: The Videogame", poster: "https://m.media-amazon.com/images/M/MV5BYjg1OGFiNjItNDJmNS00ZWNjLWJhZGUtNTY0Yzg4YmVkM2U0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+            { titulo: "LEGO Batman: The Videogame", fichaTecnicaId: "lego-batman-1", poster: "https://m.media-amazon.com/images/M/MV5BYjg1OGFiNjItNDJmNS00ZWNjLWJhZGUtNTY0Yzg4YmVkM2U0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
             { titulo: "LEGO Batman 2: DC Super Heroes", fichaTecnicaId: "lego-batman-2", poster: "https://m.media-amazon.com/images/M/MV5BMjgyMThmZTgtNzk5MS00ZWQ0LWJhYjMtNmI5NzhhNGM1MWU4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
             { titulo: "LEGO Batman 3: Beyond Gotham", fichaTecnicaId: "lego-batman-3", poster: "https://m.media-amazon.com/images/M/MV5BN2E3ZGM5MTAtOGE3NS00OWMyLWFkNmMtOTVlODUwOWNmMWE5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
             { titulo: "LEGO DC Super-Villains", fichaTecnicaId: "lego-dc-super-villains", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtWxQKciBUEcUG1kHfFfAvAcWtvkUZ8j-eOgDLzz5EbuUXN5ts6tIcgqs&s=10" },
@@ -4548,13 +4548,13 @@ const colecciones = [
         poster: "https://w0.peakpx.com/wallpaper/185/537/HD-wallpaper-lego-brand-logo.jpg",
         esVideojuego: true,
         peliculas: [
-            { titulo: "LEGO Star Wars: The Complete Saga", poster: "https://m.media-amazon.com/images/M/MV5BM2Q4NzYzMDEtMGM1ZC00YTBkLTgyNzctYjFjYjAwZWY3NTJkXkEyXkFqcGc@.V1.jpg" },
-            { titulo: "LEGO Indiana Jones: The Original Adventures", poster: "https://m.media-amazon.com/images/M/MV5BNzJhZDQ3MzgtMWE3MS00M2U0LWI4MDUtN2UxZmE3MDIxZDYxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
-            { titulo: "LEGO Batman: The Videogame", poster: "https://m.media-amazon.com/images/M/MV5BYjg1OGFiNjItNDJmNS00ZWNjLWJhZGUtNTY0Yzg4YmVkM2U0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
-            { titulo: "LEGO Indiana Jones 2: The Adventure Continues", poster: "https://m.media-amazon.com/images/M/MV5BNDg2NWI5MmUtNmYxYy00NDRhLWJjZjUtNmNhY2NjZGVmZjgxXkEyXkFqcGc@._V1_.jpg" },
-            { titulo: "LEGO Harry Potter: Years 1-4", poster: "https://static.wikia.nocookie.net/harrypotter/images/f/f2/Lego_Harry_Potter_Years_1-4.jpg/revision/latest?cb=20240714143408" },
-            { titulo: "LEGO Star Wars III: The Clone Wars", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1mOX8mHIXBiE73YDPXbNy50JeRmudW4Rps4JASYSDWsSgdUNSVF19NkA&s=10" },
-            { titulo: "LEGO Pirates of the Caribbean: The Video Game", poster: "https://static.wikia.nocookie.net/lego/images/0/00/Lego-Pirates.png/revision/latest?cb=20170412000441" },
+            { titulo: "LEGO Star Wars: The Complete Saga", fichaTecnicaId: "lego-sw-complete-saga", poster: "https://m.media-amazon.com/images/M/MV5BM2Q4NzYzMDEtMGM1ZC00YTBkLTgyNzctYjFjYjAwZWY3NTJkXkEyXkFqcGc@.V1.jpg" },
+            { titulo: "LEGO Indiana Jones: The Original Adventures", fichaTecnicaId: "lego-ij1", poster: "https://m.media-amazon.com/images/M/MV5BNzJhZDQ3MzgtMWE3MS00M2U0LWI4MDUtN2UxZmE3MDIxZDYxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+            { titulo: "LEGO Batman: The Videogame", fichaTecnicaId: "lego-batman-1", poster: "https://m.media-amazon.com/images/M/MV5BYjg1OGFiNjItNDJmNS00ZWNjLWJhZGUtNTY0Yzg4YmVkM2U0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+            { titulo: "LEGO Indiana Jones 2: The Adventure Continues", fichaTecnicaId: "lego-ij2", poster: "https://m.media-amazon.com/images/M/MV5BNDg2NWI5MmUtNmYxYy00NDRhLWJjZjUtNmNhY2NjZGVmZjgxXkEyXkFqcGc@._V1_.jpg" },
+            { titulo: "LEGO Harry Potter: Years 1-4", fichaTecnicaId: "lego-hp-1-4", poster: "https://static.wikia.nocookie.net/harrypotter/images/f/f2/Lego_Harry_Potter_Years_1-4.jpg/revision/latest?cb=20240714143408" },
+            { titulo: "LEGO Star Wars III: The Clone Wars", fichaTecnicaId: "lego-sw3-clone-wars", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1mOX8mHIXBiE73YDPXbNy50JeRmudW4Rps4JASYSDWsSgdUNSVF19NkA&s=10" },
+            { titulo: "LEGO Pirates of the Caribbean: The Video Game", fichaTecnicaId: "lego-pirates", poster: "https://static.wikia.nocookie.net/lego/images/0/00/Lego-Pirates.png/revision/latest?cb=20170412000441" },
             { titulo: "LEGO Harry Potter: Years 5-7", fichaTecnicaId: "lego-hp-5-7", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyjMxJglqEX0Bc2YSBdH-PoLSx-e_GyUB3m0imvP9yVLg798SYP2Y5gaw&s=10" },
             { titulo: "LEGO Batman 2: DC Super Heroes", fichaTecnicaId: "lego-batman-2", poster: "https://m.media-amazon.com/images/M/MV5BMjgyMThmZTgtNzk5MS00ZWQ0LWJhYjMtNmI5NzhhNGM1MWU4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
             { titulo: "LEGO The Lord of the Rings", fichaTecnicaId: "lego-lotr", poster: "https://m.media-amazon.com/images/M/MV5BYWUyOGRlYjEtNWI0ZS00YTZiLTkxOWYtMWE1NTU1ZjMwMzFmXkEyXkFqcGc@._V1_.jpg" },
@@ -5504,6 +5504,7 @@ function renderizarContenido() {
             }
 
             const esVideojuego = item.tipo === "Videojuego";
+            const esComic = item.tipo === "Cómic";
             const textoInicial = esVideojuego ? "Marcar Jugado" : "Marcar Visto";
             // Algunos ítems (ej. Iron Man dentro del orden cronológico del
             // MCU) además abren una "ficha técnica" propia con sinopsis,
@@ -5512,17 +5513,33 @@ function renderizarContenido() {
             const botonFichaTecnica = item.fichaTecnicaId
                 ? `<button class="btn-abrir-coleccion btn-ficha-tecnica-item" data-ficha-tecnica="${item.fichaTecnicaId}">Ficha Técnica 📊</button>`
                 : '';
+            // "Tengo": posesión física del tomo/ejemplar, independiente de
+            // si ya se leyó. Solo aplica a cómics.
+            const tieneEsteComic = esComic && titulosTengoGuardados.has(item.titulo);
+            const botonTengo = esComic
+                ? `<button class="btn-tengo ${tieneEsteComic ? 'activo' : ''}" data-titulo-tengo="${item.titulo}">${tieneEsteComic ? '📗 Lo tengo' : '📘 No lo tengo'}</button>`
+                : '';
 
             const htmlTarjeta = `
-                <div class="tarjeta-media" style="${ocultarEstilo}" data-tier="${item.tier || ''}" data-tipo="${item.tipoArrow || ''}" data-crono="${item.crono || ''}" data-subtipo="${item.subtipo || ''}" data-personajes="${item.personajes || item.subtipo || ''}" data-orden="${item.ordenSalida || ''}" data-tierra="${item.tierra || ''}" data-editorial="${item.editorial || ''}" data-accion="${esVideojuego ? 'jugado' : 'visto'}">
+                <div class="tarjeta-media" style="${ocultarEstilo}" data-tier="${item.tier || ''}" data-tipo="${item.tipoArrow || ''}" data-crono="${item.crono || ''}" data-subtipo="${item.subtipo || ''}" data-personajes="${item.personajes || item.subtipo || ''}" data-orden="${item.ordenSalida || ''}" data-tierra="${item.tierra || ''}" data-editorial="${item.editorial || ''}" data-accion="${esVideojuego ? 'jugado' : 'visto'}" data-tengo="${esComic ? (tieneEsteComic ? 'si' : 'no') : ''}">
                     <img src="${item.poster}" alt="${item.titulo}">
                     <h3>${item.titulo}</h3>
                     <p>${item.tipo}</p>
                     <button class="btn-accion">${textoInicial}</button>
                     ${botonFichaTecnica}
+                    ${botonTengo}
                 </div>
             `;
             contenedorDestino.insertAdjacentHTML('beforeend', htmlTarjeta);
+            if (esComic) {
+                const btnTengo = contenedorDestino.querySelector(`.tarjeta-media:last-child .btn-tengo`);
+                if (btnTengo) {
+                    btnTengo.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        alternarTengo(btnTengo);
+                    });
+                }
+            }
             if (item.fichaTecnicaId) {
                 const btnFicha = contenedorDestino.querySelector(`.tarjeta-media:last-child .btn-ficha-tecnica-item`);
                 if (btnFicha) {
@@ -6162,7 +6179,42 @@ document.addEventListener("DOMContentLoaded", () => {
 // ==========================================
 // SISTEMA DE VISTOS Y BIBLIOTECA
 // ==========================================
+// Igual que sincronizarVistos, pero para el botón "Tengo": los mismos
+// títulos suelen aparecer duplicados en varias grillas a la vez (Camino
+// del Héroe, Salvat, Esenciales, etc. insertan copias del mismo HTML por
+// cada grilla a la que pertenecen), así que necesita el mismo patrón de
+// re-wireo global + cascada por título, en vez de un listener por tarjeta.
+function sincronizarTengo() {
+    document.querySelectorAll('.btn-tengo').forEach(boton => {
+        const nuevoBoton = boton.cloneNode(true);
+        boton.parentNode.replaceChild(nuevoBoton, boton);
+    });
+
+    document.querySelectorAll('.btn-tengo').forEach(boton => {
+        boton.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const titulo = this.dataset.tituloTengo;
+            if (!titulo) return;
+            if (titulosTengoGuardados.has(titulo)) {
+                titulosTengoGuardados.delete(titulo);
+            } else {
+                titulosTengoGuardados.add(titulo);
+            }
+            guardarTengoEnStorage();
+            const ahoraTengo = titulosTengoGuardados.has(titulo);
+            document.querySelectorAll(`.btn-tengo[data-titulo-tengo="${CSS.escape(titulo)}"]`).forEach(btn => {
+                btn.classList.toggle('activo', ahoraTengo);
+                btn.textContent = ahoraTengo ? '📗 Lo tengo' : '📘 No lo tengo';
+                const tarjeta = btn.closest('.tarjeta-media');
+                if (tarjeta) tarjeta.dataset.tengo = ahoraTengo ? 'si' : 'no';
+            });
+        });
+    });
+}
+
 function sincronizarVistos() {
+    sincronizarTengo();
+
     document.querySelectorAll('.btn-accion').forEach(boton => {
         const nuevoBoton = boton.cloneNode(true);
         boton.parentNode.replaceChild(nuevoBoton, boton);
@@ -6559,6 +6611,27 @@ function cambiarSeccion(seccionNueva) {
     }
     if (seccionNueva.id === 'seccion-requisitos-lego-hp-5-7' && typeof armarComparacionMiPC === 'function') {
         armarComparacionMiPC('seccion-requisitos-lego-hp-5-7', REQUISITOS_LEGO_HP_5_7);
+    }
+    if (seccionNueva.id === 'seccion-requisitos-lego-pirates' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-lego-pirates', REQUISITOS_LEGO_PIRATES);
+    }
+    if (seccionNueva.id === 'seccion-requisitos-lego-sw3-clone-wars' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-lego-sw3-clone-wars', REQUISITOS_LEGO_SW3);
+    }
+    if (seccionNueva.id === 'seccion-requisitos-lego-hp-1-4' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-lego-hp-1-4', REQUISITOS_LEGO_HP_1_4);
+    }
+    if (seccionNueva.id === 'seccion-requisitos-lego-batman-1' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-lego-batman-1', REQUISITOS_LEGO_BATMAN_1);
+    }
+    if (seccionNueva.id === 'seccion-requisitos-lego-ij2' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-lego-ij2', REQUISITOS_LEGO_IJ2);
+    }
+    if (seccionNueva.id === 'seccion-requisitos-lego-ij1' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-lego-ij1', REQUISITOS_LEGO_IJ1);
+    }
+    if (seccionNueva.id === 'seccion-requisitos-lego-sw-complete-saga' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-lego-sw-complete-saga', REQUISITOS_LEGO_SW_COMPLETE_SAGA);
     }
 }
 
@@ -7928,7 +8001,298 @@ const REQUISITOS_LEGO_HP_5_7 = {
     recomendado: { so: "Windows 7 / 8 / 10 (64 bits)", cpu: "Quad Core a 2.7 GHz (Intel Core i5 o AMD Phenom II X4)", ram: "4", almacenamiento: "8.5", directx: "DirectX 11", gpu: "NVIDIA GeForce GTX 460 (1 GB) o AMD Radeon HD 5850 (1 GB)" }
 };
 
+const btnVolverFichaLegoPirates = document.getElementById('btn-volver-ficha-lego-pirates');
+if (btnVolverFichaLegoPirates) {
+    btnVolverFichaLegoPirates.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-lego-pirates');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-videojuegos-explorar'));
+    });
+}
+
+const btnRequisitosLegoPirates = document.getElementById('btn-requisitos-lego-pirates');
+if (btnRequisitosLegoPirates) {
+    btnRequisitosLegoPirates.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-lego-pirates'));
+    });
+}
+
+const btnVolverRequisitosLegoPirates = document.getElementById('btn-volver-requisitos-lego-pirates');
+if (btnVolverRequisitosLegoPirates) {
+    btnVolverRequisitosLegoPirates.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-lego-pirates'));
+    });
+}
+
+const REQUISITOS_LEGO_PIRATES = {
+    minimos: { so: "Windows XP SP3 / Vista / 7 / 8 / 10", cpu: "Intel Pentium 4 (2.7 GHz) o AMD Athlon 64 3000+ (o Dual Core a 2.0 GHz)", ram: "2", almacenamiento: "8", directx: "DirectX 9.0c", gpu: "NVIDIA GeForce 7600 GT (256 MB) o ATI Radeon X1600 (256 MB)" },
+    recomendado: { so: "Windows 7 / 8 / 10 (64 bits)", cpu: "Intel Core 2 Duo (2.56 GHz) o AMD Athlon 64 X2 5000+ (2.6 GHz)", ram: "4", almacenamiento: "8", directx: "DirectX 9.0c / 11", gpu: "NVIDIA GeForce GTX 260 (512 MB) o ATI Radeon HD 4870 (512 MB)" }
+};
+
+const btnVolverFichaLegoSW3 = document.getElementById('btn-volver-ficha-lego-sw3-clone-wars');
+if (btnVolverFichaLegoSW3) {
+    btnVolverFichaLegoSW3.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-lego-sw3-clone-wars');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-sw-videojuegos'));
+    });
+}
+
+const btnRequisitosLegoSW3 = document.getElementById('btn-requisitos-lego-sw3-clone-wars');
+if (btnRequisitosLegoSW3) {
+    btnRequisitosLegoSW3.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-lego-sw3-clone-wars'));
+    });
+}
+
+const btnVolverRequisitosLegoSW3 = document.getElementById('btn-volver-requisitos-lego-sw3-clone-wars');
+if (btnVolverRequisitosLegoSW3) {
+    btnVolverRequisitosLegoSW3.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-lego-sw3-clone-wars'));
+    });
+}
+
+const REQUISITOS_LEGO_SW3 = {
+    minimos: { so: "Windows XP SP3 / Vista SP2 / 7 / 8 / 10", cpu: "Intel Pentium 4 (2.24 GHz) o AMD Athlon 64 2200+", ram: "0.5", almacenamiento: "8", directx: "DirectX 9.0c", gpu: "NVIDIA GeForce FX 5800 (256 MB) o ATI Radeon X1300 (256 MB) con Shader Model 3.0" },
+    recomendado: { so: "Windows 7 / 8 / 10 (64 bits)", cpu: "Intel Core 2 Duo (2.4 GHz) o AMD Athlon X2 (2.8 GHz)", ram: "2", almacenamiento: "8", directx: "DirectX 9.0c / 11", gpu: "NVIDIA GeForce 8800 GT (512 MB) o ATI Radeon HD 2900 (512 MB)" }
+};
+
+const btnVolverFichaLegoHP14 = document.getElementById('btn-volver-ficha-lego-hp-1-4');
+if (btnVolverFichaLegoHP14) {
+    btnVolverFichaLegoHP14.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-lego-hp-1-4');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-videojuegos-explorar'));
+    });
+}
+
+const btnRequisitosLegoHP14 = document.getElementById('btn-requisitos-lego-hp-1-4');
+if (btnRequisitosLegoHP14) {
+    btnRequisitosLegoHP14.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-lego-hp-1-4'));
+    });
+}
+
+const btnVolverRequisitosLegoHP14 = document.getElementById('btn-volver-requisitos-lego-hp-1-4');
+if (btnVolverRequisitosLegoHP14) {
+    btnVolverRequisitosLegoHP14.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-lego-hp-1-4'));
+    });
+}
+
+const REQUISITOS_LEGO_HP_1_4 = {
+    minimos: { so: "Windows XP SP3 / Vista / 7 / 8 / 10", cpu: "Intel Pentium 4 (1.8 GHz) o AMD Athlon XP 2200+", ram: "0.25", almacenamiento: "5", directx: "DirectX 9.0c", gpu: "NVIDIA GeForce FX 5800 (256 MB), ATI Radeon X1300 (256 MB) o Intel GMA 3-Series con Shader Model 3.0" },
+    recomendado: { so: "Windows 7 / 8 / 10 (64 bits)", cpu: "Intel Core 2 Duo (2.0 GHz) o AMD Athlon 64 X2 (2.0 GHz)", ram: "2", almacenamiento: "5", directx: "DirectX 9.0c / 11", gpu: "NVIDIA GeForce 8800 GT (512 MB) o ATI Radeon HD 2900 (512 MB)" }
+};
+
+const btnVolverFichaLegoBatman1 = document.getElementById('btn-volver-ficha-lego-batman-1');
+if (btnVolverFichaLegoBatman1) {
+    btnVolverFichaLegoBatman1.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-lego-batman-1');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-dc-videojuegos'));
+    });
+}
+
+const btnRequisitosLegoBatman1 = document.getElementById('btn-requisitos-lego-batman-1');
+if (btnRequisitosLegoBatman1) {
+    btnRequisitosLegoBatman1.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-lego-batman-1'));
+    });
+}
+
+const btnVolverRequisitosLegoBatman1 = document.getElementById('btn-volver-requisitos-lego-batman-1');
+if (btnVolverRequisitosLegoBatman1) {
+    btnVolverRequisitosLegoBatman1.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-lego-batman-1'));
+    });
+}
+
+const REQUISITOS_LEGO_BATMAN_1 = {
+    minimos: { so: "Windows XP / Vista / 7 / 8 / 10", cpu: "Intel Pentium 4 (1.8 GHz) o AMD Athlon XP 2200+", ram: "0.25", almacenamiento: "4.5", directx: "DirectX 9.0c", gpu: "128 MB con soporte Shader Model 2.0 (NVIDIA GeForce FX 5200 / ATI Radeon 9500 o superior)" },
+    recomendado: { so: "Windows 7 / 8 / 10 (64 bits)", cpu: "Intel Core 2 Duo (2.0 GHz) o AMD Athlon 64 X2 (2.0 GHz)", ram: "1", almacenamiento: "4.5", directx: "DirectX 9.0c / 11", gpu: "NVIDIA GeForce 8600 GS (256 MB) o ATI Radeon HD 2600 XT (256 MB)" }
+};
+
+const btnVolverFichaLegoIJ2 = document.getElementById('btn-volver-ficha-lego-ij2');
+if (btnVolverFichaLegoIJ2) {
+    btnVolverFichaLegoIJ2.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-lego-ij2');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-videojuegos-explorar'));
+    });
+}
+
+const btnRequisitosLegoIJ2 = document.getElementById('btn-requisitos-lego-ij2');
+if (btnRequisitosLegoIJ2) {
+    btnRequisitosLegoIJ2.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-lego-ij2'));
+    });
+}
+
+const btnVolverRequisitosLegoIJ2 = document.getElementById('btn-volver-requisitos-lego-ij2');
+if (btnVolverRequisitosLegoIJ2) {
+    btnVolverRequisitosLegoIJ2.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-lego-ij2'));
+    });
+}
+
+const REQUISITOS_LEGO_IJ2 = {
+    minimos: { so: "Windows XP / Vista / 7 / 8 / 10", cpu: "Intel Pentium 4 (3.0 GHz) o AMD Athlon 64 3000+", ram: "0.5", almacenamiento: "5", directx: "DirectX 9.0c", gpu: "NVIDIA GeForce 7800 (256 MB) o ATI Radeon X1800 (256 MB) con Shader Model 3.0" },
+    recomendado: { so: "Windows 7 / 8 / 10 (64 bits)", cpu: "Intel Core 2 Duo (2.0 GHz) o AMD Athlon 64 X2 (2.0 GHz)", ram: "2", almacenamiento: "5", directx: "DirectX 9.0c / 11", gpu: "NVIDIA GeForce 8800 GT (512 MB) o ATI Radeon HD 2900 (512 MB)" }
+};
+
+const btnVolverFichaLegoIJ1 = document.getElementById('btn-volver-ficha-lego-ij1');
+if (btnVolverFichaLegoIJ1) {
+    btnVolverFichaLegoIJ1.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-lego-ij1');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-videojuegos-explorar'));
+    });
+}
+
+const btnRequisitosLegoIJ1 = document.getElementById('btn-requisitos-lego-ij1');
+if (btnRequisitosLegoIJ1) {
+    btnRequisitosLegoIJ1.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-lego-ij1'));
+    });
+}
+
+const btnVolverRequisitosLegoIJ1 = document.getElementById('btn-volver-requisitos-lego-ij1');
+if (btnVolverRequisitosLegoIJ1) {
+    btnVolverRequisitosLegoIJ1.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-lego-ij1'));
+    });
+}
+
+const REQUISITOS_LEGO_IJ1 = {
+    minimos: { so: "Windows XP / Vista / 7 / 8 / 10", cpu: "Intel Pentium 4 (1.8 GHz) o AMD Athlon XP 2200+", ram: "0.25", almacenamiento: "4", directx: "DirectX 9.0c", gpu: "128 MB con soporte Shader Model 2.0 (NVIDIA GeForce FX 5200 / ATI Radeon 9500 o superior)" },
+    recomendado: { so: "Windows 7 / 8 / 10 (64 bits)", cpu: "Intel Core 2 Duo (2.0 GHz) o AMD Athlon 64 X2 (2.0 GHz)", ram: "1", almacenamiento: "4", directx: "DirectX 9.0c / 11", gpu: "NVIDIA GeForce 8600 GS (256 MB) o ATI Radeon HD 2600 XT (256 MB)" }
+};
+
+const btnVolverFichaLegoSWCompleteSaga = document.getElementById('btn-volver-ficha-lego-sw-complete-saga');
+if (btnVolverFichaLegoSWCompleteSaga) {
+    btnVolverFichaLegoSWCompleteSaga.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-lego-sw-complete-saga');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-sw-videojuegos'));
+    });
+}
+
+const btnRequisitosLegoSWCompleteSaga = document.getElementById('btn-requisitos-lego-sw-complete-saga');
+if (btnRequisitosLegoSWCompleteSaga) {
+    btnRequisitosLegoSWCompleteSaga.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-lego-sw-complete-saga'));
+    });
+}
+
+const btnVolverRequisitosLegoSWCompleteSaga = document.getElementById('btn-volver-requisitos-lego-sw-complete-saga');
+if (btnVolverRequisitosLegoSWCompleteSaga) {
+    btnVolverRequisitosLegoSWCompleteSaga.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-lego-sw-complete-saga'));
+    });
+}
+
+const REQUISITOS_LEGO_SW_COMPLETE_SAGA = {
+    minimos: { so: "Windows XP SP2 / Vista / 7 / 8 / 10", cpu: "Intel Pentium 4 (2.4 GHz) o AMD Athlon XP 2200+ (o Dual Core a 1.8 GHz)", ram: "0.5", almacenamiento: "5", directx: "DirectX 9.0c", gpu: "128 MB con soporte Shader Model 2.0 (NVIDIA GeForce FX 5800 / ATI Radeon 9800 o superior)" },
+    recomendado: { so: "Windows 7 / 8 / 10 (64 bits)", cpu: "Intel Core 2 Duo (2.0 GHz) o AMD Athlon 64 X2 (2.0 GHz)", ram: "1", almacenamiento: "5", directx: "DirectX 9.0c / 11", gpu: "NVIDIA GeForce 8600 GS (256 MB) o ATI Radeon HD 2600 XT (256 MB)" }
+};
+
+// Convierte el .filtros-seccion de una sección de cómics en un menú
+// colapsable: envuelve los botones existentes (sin tocarlos ni sus
+// listeners) detrás de un botón "Filtrar", y le agrega debajo una fila
+// fija de Todos / Tengo / No tengo que actúa como un segundo filtro
+// independiente (ver aplicarFiltroTengo).
+function convertirEnMenuFiltros(seccionId, gridIds) {
+    const seccion = document.getElementById(`seccion-${seccionId}`);
+    if (!seccion) return;
+    const filtrosOriginales = seccion.querySelector(':scope > .filtros-seccion');
+    if (!filtrosOriginales) return;
+
+    const wrapper = document.createElement('div');
+    wrapper.className = 'filtros-menu-wrapper';
+
+    const toggle = document.createElement('button');
+    toggle.className = 'filtros-menu-toggle';
+    toggle.type = 'button';
+    toggle.innerHTML = '<span>Filtrar ▾</span><span class="filtros-menu-toggle-flecha">▾</span>';
+    toggle.addEventListener('click', () => {
+        wrapper.classList.toggle('abierto');
+    });
+
+    const panel = document.createElement('div');
+    panel.className = 'filtros-menu-panel';
+
+    filtrosOriginales.parentNode.insertBefore(wrapper, filtrosOriginales);
+    panel.appendChild(filtrosOriginales);
+
+    const filaTengo = document.createElement('div');
+    filaTengo.className = 'filtros-menu-seccion-tengo';
+    filaTengo.innerHTML = `
+        <button class="btn-filtro-tengo activo" data-valor="todos">Todos</button>
+        <button class="btn-filtro-tengo" data-valor="tengo">📗 Tengo</button>
+        <button class="btn-filtro-tengo" data-valor="no-tengo">📘 No tengo</button>
+    `;
+    panel.appendChild(filaTengo);
+    filaTengo.querySelectorAll('.btn-filtro-tengo').forEach(boton => {
+        boton.addEventListener('click', () => {
+            filaTengo.querySelectorAll('.btn-filtro-tengo').forEach(b => b.classList.remove('activo'));
+            boton.classList.add('activo');
+            aplicarFiltroTengo(gridIds, boton.dataset.valor);
+        });
+    });
+
+    wrapper.appendChild(toggle);
+    wrapper.appendChild(panel);
+
+    // Cerrar el panel al elegir un filtro de personaje/era (no cambia
+    // nada de su comportamiento, solo colapsa el menú por prolijidad).
+    filtrosOriginales.querySelectorAll('button').forEach(boton => {
+        boton.addEventListener('click', () => wrapper.classList.remove('abierto'));
+    });
+}
+
+const SECCIONES_COMICS_CON_MENU_FILTROS = {
+    "colecciones-hub": ["grilla-colecciones-hub"],
+    "dc-heroes-y-villanos-salvat": ["grilla-salvat-predeterminado", "grilla-salvat-cronologico"],
+    "dc-esenciales-salvat": ["grilla-esenciales-predeterminado", "grilla-esenciales-cronologico", "grilla-esenciales-elseworlds"],
+    "marvel-novelas-graficas-definitiva": ["grilla-marvel-ng-predeterminado", "grilla-marvel-ng-cronologico"],
+    "spiderman-universo-arana": ["grilla-spiderman-ua-predeterminado", "grilla-spiderman-ua-cronologico"],
+    "marvel-excelsior": ["grilla-marvel-excelsior-predeterminado", "grilla-marvel-excelsior-cronologico"],
+    "marvel-must-have": ["grilla-marvel-must-have-predeterminado", "grilla-marvel-must-have-cronologico"],
+    "marvel-secret-wars-2015": ["grilla-secret-wars-predeterminado", "grilla-secret-wars-cronologico"],
+    "post-crisis-dc": ["grilla-post-crisis-dc"],
+    "absolute-dc": ["grilla-absolute-dc"],
+    "camino-heroe-principal": ["grilla-camino-heroe-principal"],
+    "camino-heroe-elseworlds": ["grilla-camino-heroe-elseworlds"],
+    "camino-villano-principal": ["grilla-camino-villano-principal"],
+    "camino-villano-elseworlds": ["grilla-camino-villano-elseworlds"],
+    "elseworlds-otros-dc": ["grilla-elseworlds-otros-dc"],
+    "renacimiento-dc": ["grilla-renacimiento-dc"],
+    "pre-crisis-dc": ["grilla-pre-crisis-dc"],
+    "nuevos-52-orden-lectura": ["grilla-nuevos-52-orden-lectura"],
+    "green-lantern-hal-jordan": ["grilla-green-lantern-hal-jordan"],
+    "marvel-edad-plata": ["grilla-marvel-edad-plata"],
+    "marvel-edad-bronce": ["grilla-marvel-edad-bronce"],
+    "marvel-edad-moderna-1": ["grilla-marvel-edad-moderna-1"],
+    "marvel-edad-moderna-2": ["grilla-marvel-edad-moderna-2"],
+    "marvel-actualidad": ["grilla-marvel-actualidad"],
+    "marvel-universo-ultimate": ["grilla-marvel-universo-ultimate"],
+    "marvel-realidades-alternativas": ["grilla-marvel-realidades-alternativas"]
+};
+
+Object.entries(SECCIONES_COMICS_CON_MENU_FILTROS).forEach(([seccionId, gridIds]) => {
+    convertirEnMenuFiltros(seccionId, gridIds);
+});
+
 const btnVolverFichaLegoJurassicWorld = document.getElementById('btn-volver-ficha-lego-jurassic-world');
+
 if (btnVolverFichaLegoJurassicWorld) {
     btnVolverFichaLegoJurassicWorld.addEventListener('click', () => {
         const seccionFicha = document.getElementById('seccion-ficha-lego-jurassic-world');
@@ -9174,6 +9538,62 @@ db.enablePersistence({ synchronizeTabs: true }).catch(err => {
 let usuarioActual = null;
 let huboSesionAntes = false;
 let titulosVistosGuardados = new Set();
+// "Tengo": posesión física de tomos/ejemplares de cómics. Es independiente
+// de "visto" (que trackea lectura) y se guarda en el navegador (localStorage),
+// no en Firebase, para no tocar el sistema de sincronización existente.
+let titulosTengoGuardados = new Set();
+(function cargarTengoGuardado() {
+    try {
+        const guardado = localStorage.getItem('titulosTengoGuardados');
+        if (guardado) titulosTengoGuardados = new Set(JSON.parse(guardado));
+    } catch (e) { /* localStorage no disponible */ }
+})();
+
+function guardarTengoEnStorage() {
+    try {
+        localStorage.setItem('titulosTengoGuardados', JSON.stringify([...titulosTengoGuardados]));
+    } catch (e) { /* localStorage no disponible */ }
+}
+
+function alternarTengo(boton) {
+    const titulo = boton.dataset.tituloTengo;
+    if (!titulo) return;
+    if (titulosTengoGuardados.has(titulo)) {
+        titulosTengoGuardados.delete(titulo);
+    } else {
+        titulosTengoGuardados.add(titulo);
+    }
+    guardarTengoEnStorage();
+    // Actualizar TODAS las tarjetas con este título (puede aparecer en
+    // más de una sección/colección a la vez).
+    const ahoraTengo = titulosTengoGuardados.has(titulo);
+    document.querySelectorAll(`.btn-tengo[data-titulo-tengo="${CSS.escape(titulo)}"]`).forEach(btn => {
+        btn.classList.toggle('activo', ahoraTengo);
+        btn.textContent = ahoraTengo ? '📗 Lo tengo' : '📘 No lo tengo';
+        const tarjeta = btn.closest('.tarjeta-media');
+        if (tarjeta) tarjeta.dataset.tengo = ahoraTengo ? 'si' : 'no';
+    });
+}
+
+// Aplica el filtro Tengo/No tengo/Todos sobre una o más grillas, sin tocar
+// el filtro de personaje/era que ya esté activo: usa una clase con
+// !important que se superpone al display que haya puesto ese otro filtro,
+// y se saca sin dejar rastro al volver a "Todos".
+function aplicarFiltroTengo(gridIds, valor) {
+    gridIds.forEach(gridId => {
+        const grid = document.getElementById(gridId);
+        if (!grid) return;
+        grid.querySelectorAll('.tarjeta-media[data-tengo]').forEach(tarjeta => {
+            const tengo = tarjeta.dataset.tengo;
+            let ocultar = false;
+            if (valor === 'tengo') ocultar = tengo !== 'si';
+            else if (valor === 'no-tengo') ocultar = tengo !== 'no';
+            tarjeta.classList.toggle('oculto-por-tengo', ocultar);
+        });
+    });
+}
+
+
 let historialVistos = {}; // { "YYYY-MM-DD": ["titulo1", "titulo2", ...] }
 const hoyParaCalendario = new Date();
 let calendarioAnioActual = hoyParaCalendario.getFullYear();

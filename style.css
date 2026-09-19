@@ -510,6 +510,89 @@ h2 {
     font-weight: bold;
 }
 
+.btn-tengo {
+    background-color: #2a2e38;
+    color: #ccc;
+    border: 1px solid #444;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 6px 0 0;
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+}
+
+.btn-tengo.activo {
+    background-color: rgba(46, 204, 113, 0.15);
+    border-color: #2ecc71;
+    color: #2ecc71;
+}
+
+.oculto-por-tengo {
+    display: none !important;
+}
+
+/* ===== MENÚ DE FILTROS COLAPSABLE (cómics) =====
+   Envuelve un .filtros-seccion existente sin tocar los botones ni sus
+   listeners: solo agrega un botón que muestra/oculta el panel. */
+.filtros-menu-wrapper {
+    margin-bottom: 20px;
+}
+
+.filtros-menu-toggle {
+    background-color: #1e2129;
+    color: #f1c40f;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    max-width: 420px;
+}
+
+.filtros-menu-toggle-flecha {
+    transition: transform 0.2s;
+}
+
+.filtros-menu-wrapper.abierto .filtros-menu-toggle-flecha {
+    transform: rotate(180deg);
+}
+
+.filtros-menu-panel {
+    display: none;
+    margin-top: 10px;
+    padding: 12px;
+    background-color: #1a1d24;
+    border-radius: 8px;
+    border: 1px solid #2a2e38;
+    max-height: 320px;
+    overflow-y: auto;
+}
+
+.filtros-menu-wrapper.abierto .filtros-menu-panel {
+    display: block;
+}
+
+.filtros-menu-panel .filtros-seccion {
+    margin-bottom: 0;
+}
+
+.filtros-menu-seccion-tengo {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #2a2e38;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
 /* Modal Login */
 .modal {
     position: fixed;
