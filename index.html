@@ -3629,7 +3629,8 @@
             <input type="text" id="mipc-so" placeholder="ej. Windows 10 de 64 bits">
 
             <label for="mipc-cpu">Procesador (CPU)</label>
-            <input type="text" id="mipc-cpu" placeholder="ej. Intel Core i5-10400">
+            <input type="text" id="mipc-cpu" placeholder="ej. Intel Core i5-10400" autocomplete="off">
+            <div id="sugerencias-mipc-cpu" class="sugerencias-dropdown oculto"></div>
 
             <label for="mipc-ram">Memoria RAM (GB)</label>
             <input type="number" id="mipc-ram" placeholder="ej. 16" min="0">
@@ -3641,7 +3642,8 @@
             <input type="text" id="mipc-directx" placeholder="ej. DirectX 12">
 
             <label for="mipc-gpu">Placa de video (GPU)</label>
-            <input type="text" id="mipc-gpu" placeholder="ej. GeForce RTX 3060">
+            <input type="text" id="mipc-gpu" placeholder="ej. GeForce RTX 3060" autocomplete="off">
+            <div id="sugerencias-mipc-gpu" class="sugerencias-dropdown oculto"></div>
 
             <button class="btn-modal" id="btn-guardar-mi-pc" style="margin-top: 14px;">Guardar</button>
             <p id="mipc-guardado-ok" class="mipc-guardado-ok oculto">✅ Guardado</p>

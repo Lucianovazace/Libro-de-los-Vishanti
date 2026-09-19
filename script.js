@@ -7598,6 +7598,124 @@ if (btnGuardarMiPC) {
     });
 }
 
+// ==========================================
+// AUTOCOMPLETADO DE "MI PC" (GPU y CPU) — mismo mecanismo que el de
+// Grillas: al escribir, muestra una lista de modelos que coinciden, para
+// que sea más fácil encontrar el propio sin tener que escribirlo entero
+// y a la letra.
+// ==========================================
+const LISTA_GPUS_MIPC = [
+    // NVIDIA GeForce (series 700 a 50, incluyendo Ti/Super)
+    "NVIDIA GeForce GT 710", "NVIDIA GeForce GT 730",
+    "NVIDIA GeForce GTX 750", "NVIDIA GeForce GTX 750 Ti",
+    "NVIDIA GeForce GTX 950", "NVIDIA GeForce GTX 960", "NVIDIA GeForce GTX 970", "NVIDIA GeForce GTX 980", "NVIDIA GeForce GTX 980 Ti",
+    "NVIDIA GeForce GTX 1050", "NVIDIA GeForce GTX 1050 Ti", "NVIDIA GeForce GTX 1060", "NVIDIA GeForce GTX 1070", "NVIDIA GeForce GTX 1070 Ti", "NVIDIA GeForce GTX 1080", "NVIDIA GeForce GTX 1080 Ti",
+    "NVIDIA GeForce GTX 1630", "NVIDIA GeForce GTX 1650", "NVIDIA GeForce GTX 1650 Super", "NVIDIA GeForce GTX 1660", "NVIDIA GeForce GTX 1660 Super", "NVIDIA GeForce GTX 1660 Ti",
+    "NVIDIA GeForce RTX 2060", "NVIDIA GeForce RTX 2060 Super", "NVIDIA GeForce RTX 2070", "NVIDIA GeForce RTX 2070 Super", "NVIDIA GeForce RTX 2080", "NVIDIA GeForce RTX 2080 Super", "NVIDIA GeForce RTX 2080 Ti",
+    "NVIDIA GeForce RTX 3050", "NVIDIA GeForce RTX 3060", "NVIDIA GeForce RTX 3060 Ti", "NVIDIA GeForce RTX 3070", "NVIDIA GeForce RTX 3070 Ti", "NVIDIA GeForce RTX 3080", "NVIDIA GeForce RTX 3080 Ti", "NVIDIA GeForce RTX 3090", "NVIDIA GeForce RTX 3090 Ti",
+    "NVIDIA GeForce RTX 4060", "NVIDIA GeForce RTX 4060 Ti", "NVIDIA GeForce RTX 4070", "NVIDIA GeForce RTX 4070 Super", "NVIDIA GeForce RTX 4070 Ti", "NVIDIA GeForce RTX 4070 Ti Super", "NVIDIA GeForce RTX 4080", "NVIDIA GeForce RTX 4080 Super", "NVIDIA GeForce RTX 4090",
+    "NVIDIA GeForce RTX 5060", "NVIDIA GeForce RTX 5060 Ti", "NVIDIA GeForce RTX 5070", "NVIDIA GeForce RTX 5070 Ti", "NVIDIA GeForce RTX 5080", "NVIDIA GeForce RTX 5090",
+    // AMD Radeon (series 500 a 9000, incluyendo XT)
+    "AMD Radeon RX 550", "AMD Radeon RX 560", "AMD Radeon RX 570", "AMD Radeon RX 580", "AMD Radeon RX 590",
+    "AMD Radeon RX 5500 XT", "AMD Radeon RX 5600 XT", "AMD Radeon RX 5700", "AMD Radeon RX 5700 XT",
+    "AMD Radeon RX 6400", "AMD Radeon RX 6500 XT", "AMD Radeon RX 6600", "AMD Radeon RX 6600 XT", "AMD Radeon RX 6650 XT", "AMD Radeon RX 6700", "AMD Radeon RX 6700 XT", "AMD Radeon RX 6750 XT", "AMD Radeon RX 6800", "AMD Radeon RX 6800 XT", "AMD Radeon RX 6900 XT", "AMD Radeon RX 6950 XT",
+    "AMD Radeon RX 7600", "AMD Radeon RX 7600 XT", "AMD Radeon RX 7700 XT", "AMD Radeon RX 7800 XT", "AMD Radeon RX 7900 GRE", "AMD Radeon RX 7900 XT", "AMD Radeon RX 7900 XTX",
+    "AMD Radeon RX 9060 XT", "AMD Radeon RX 9070", "AMD Radeon RX 9070 XT",
+    // Intel Arc
+    "Intel Arc A380", "Intel Arc A580", "Intel Arc A750", "Intel Arc A770",
+    "Intel Arc B570", "Intel Arc B580"
+];
+
+const LISTA_CPUS_MIPC = [
+    // Intel Core (generaciones 2ª a 14ª, i3/i5/i7/i9)
+    "Intel Core i3-2100", "Intel Core i5-2400", "Intel Core i7-2600",
+    "Intel Core i3-3220", "Intel Core i5-3470", "Intel Core i7-3770",
+    "Intel Core i3-4130", "Intel Core i5-4460", "Intel Core i5-4590", "Intel Core i7-4770",
+    "Intel Core i3-6100", "Intel Core i5-6500", "Intel Core i5-6600", "Intel Core i7-6700",
+    "Intel Core i3-7100", "Intel Core i5-7500", "Intel Core i5-7600", "Intel Core i7-7700",
+    "Intel Core i3-8100", "Intel Core i5-8400", "Intel Core i5-8600", "Intel Core i7-8700",
+    "Intel Core i3-9100", "Intel Core i5-9400", "Intel Core i5-9600", "Intel Core i7-9700", "Intel Core i9-9900",
+    "Intel Core i3-10100", "Intel Core i5-10400", "Intel Core i5-10600K", "Intel Core i7-10700", "Intel Core i9-10900",
+    "Intel Core i3-12100", "Intel Core i5-12400", "Intel Core i5-12600K", "Intel Core i7-12700", "Intel Core i9-12900",
+    "Intel Core i3-13100", "Intel Core i5-13400", "Intel Core i5-13600K", "Intel Core i7-13700", "Intel Core i9-13900",
+    "Intel Core i5-14400", "Intel Core i5-14600K", "Intel Core i7-14700", "Intel Core i9-14900",
+    "Intel Core Ultra 5 245K", "Intel Core Ultra 7 265K", "Intel Core Ultra 9 285K",
+    // AMD Ryzen (series 1000 a 9000, incluyendo X3D)
+    "AMD Ryzen 3 1200", "AMD Ryzen 5 1600", "AMD Ryzen 7 1700",
+    "AMD Ryzen 5 2600", "AMD Ryzen 7 2700",
+    "AMD Ryzen 3 3100", "AMD Ryzen 5 3600", "AMD Ryzen 7 3700X", "AMD Ryzen 9 3900X",
+    "AMD Ryzen 5 5600", "AMD Ryzen 5 5600X", "AMD Ryzen 7 5700X", "AMD Ryzen 7 5800X", "AMD Ryzen 7 5800X3D", "AMD Ryzen 9 5900X", "AMD Ryzen 9 5950X",
+    "AMD Ryzen 5 7600", "AMD Ryzen 5 7600X", "AMD Ryzen 7 7700", "AMD Ryzen 7 7700X", "AMD Ryzen 7 7800X3D", "AMD Ryzen 9 7900X", "AMD Ryzen 9 7950X", "AMD Ryzen 9 7950X3D",
+    "AMD Ryzen 5 9600X", "AMD Ryzen 7 9700X", "AMD Ryzen 7 9800X3D", "AMD Ryzen 9 9900X", "AMD Ryzen 9 9950X", "AMD Ryzen 9 9950X3D"
+];
+
+let indiceResaltadoSugerenciasMiPC = { gpu: -1, cpu: -1 };
+
+// Reutilizable para cualquier campo de texto + lista de opciones: muestra
+// hasta 8 coincidencias, navegables con flechas, seleccionables con click
+// o Enter — el mismo comportamiento que ya usa el buscador de Grillas.
+function configurarAutocompletadoMiPC(campoId, listaOpciones, claveIndice) {
+    const input = document.getElementById(`mipc-${campoId}`);
+    const cont = document.getElementById(`sugerencias-mipc-${campoId}`);
+    if (!input || !cont) return;
+
+    function ocultarSugerencias() {
+        cont.classList.add('oculto');
+        cont.innerHTML = '';
+        indiceResaltadoSugerenciasMiPC[claveIndice] = -1;
+    }
+
+    function mostrarSugerencias(texto) {
+        indiceResaltadoSugerenciasMiPC[claveIndice] = -1;
+        const textoNormalizado = texto.trim().toLowerCase();
+        if (textoNormalizado.length < 2) { ocultarSugerencias(); return; }
+
+        const coincidencias = listaOpciones
+            .filter(nombre => nombre.toLowerCase().includes(textoNormalizado))
+            .slice(0, 8);
+
+        if (coincidencias.length === 0) { ocultarSugerencias(); return; }
+
+        cont.innerHTML = coincidencias.map(nombre => `<div class="sugerencia-item">${nombre}</div>`).join('');
+        cont.classList.remove('oculto');
+        cont.querySelectorAll('.sugerencia-item').forEach(item => {
+            item.addEventListener('mousedown', (e) => {
+                e.preventDefault();
+                input.value = item.textContent;
+                ocultarSugerencias();
+            });
+        });
+    }
+
+    function moverResaltado(delta) {
+        const items = cont.querySelectorAll('.sugerencia-item');
+        if (items.length === 0) return;
+        indiceResaltadoSugerenciasMiPC[claveIndice] = (indiceResaltadoSugerenciasMiPC[claveIndice] + delta + items.length) % items.length;
+        items.forEach((item, i) => item.classList.toggle('resaltada', i === indiceResaltadoSugerenciasMiPC[claveIndice]));
+        const elegido = items[indiceResaltadoSugerenciasMiPC[claveIndice]];
+        if (elegido && elegido.scrollIntoView) elegido.scrollIntoView({ block: 'nearest' });
+    }
+
+    input.addEventListener('input', () => mostrarSugerencias(input.value));
+    input.addEventListener('blur', () => setTimeout(ocultarSugerencias, 150));
+    input.addEventListener('keydown', (e) => {
+        const hayDropdownVisible = !cont.classList.contains('oculto') && cont.children.length > 0;
+        if (hayDropdownVisible && e.key === 'ArrowDown') { e.preventDefault(); moverResaltado(1); return; }
+        if (hayDropdownVisible && e.key === 'ArrowUp') { e.preventDefault(); moverResaltado(-1); return; }
+        if (hayDropdownVisible && e.key === 'Enter' && indiceResaltadoSugerenciasMiPC[claveIndice] >= 0) {
+            e.preventDefault();
+            const items = cont.querySelectorAll('.sugerencia-item');
+            const elegido = items[indiceResaltadoSugerenciasMiPC[claveIndice]];
+            if (elegido) { input.value = elegido.textContent; ocultarSugerencias(); }
+            return;
+        }
+        if (e.key === 'Escape') ocultarSugerencias();
+    });
+}
+
+configurarAutocompletadoMiPC('gpu', LISTA_GPUS_MIPC, 'gpu');
+configurarAutocompletadoMiPC('cpu', LISTA_CPUS_MIPC, 'cpu');
+
 // Arma, para una sección de Requisitos dada, el bloque de comparación
 // "¿Te corre?" a partir de las specs guardadas en Mi PC. Los campos
 // numéricos (RAM, almacenamiento) se comparan automáticamente; CPU, GPU,
