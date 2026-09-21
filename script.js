@@ -284,10 +284,10 @@ const listaMedia = [
     { titulo: "Star Wars: Battlefront II (Clásico)", categoria: "sw-videojuegos", tipo: "Videojuego", poster: "https://m.media-amazon.com/images/M/MV5BOWYyMGI5MWYtZGU4Zi00YzA2LTk0OGEtZmQ2OGJiYWJlZDA0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
 
     // --- MARVEL: VIDEOJUEGOS (sueltos, ver colección "Insomniac" más abajo) ---
-    { titulo: "Marvel's Guardians of the Galaxy", categoria: "marvel-videojuegos", tipo: "Videojuego", poster: "https://m.media-amazon.com/images/I/81W8yPIxOlL.jpg" },
+    { titulo: "Marvel's Guardians of the Galaxy", categoria: "marvel-videojuegos", tipo: "Videojuego", fichaTecnicaId: "marvel-gotg", poster: "https://m.media-amazon.com/images/I/81W8yPIxOlL.jpg" },
     // (Marvel's Avengers ahora es ficha técnica explorable, ver colecciones)
     { titulo: "Marvel Rivals", categoria: "marvel-videojuegos", tipo: "Videojuego", poster: "https://m.media-amazon.com/images/M/MV5BMDExODM1MjItNDA1Zi00NGQ3LTkwYTctNmFhODhkNjRmNzJkXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
-    { titulo: "Marvel Cosmic Invasion", categoria: "marvel-videojuegos", tipo: "Videojuego", poster: "https://store-images.s-microsoft.com/image/apps.45589.14072829118255167.ff1664d8-c187-4947-9c20-847c3ddd6dae.0288dbf2-a78d-45ed-a155-f539ce6bfd40" },
+    { titulo: "Marvel Cosmic Invasion", categoria: "marvel-videojuegos", tipo: "Videojuego", fichaTecnicaId: "marvel-cosmic-invasion", poster: "https://store-images.s-microsoft.com/image/apps.45589.14072829118255167.ff1664d8-c187-4947-9c20-847c3ddd6dae.0288dbf2-a78d-45ed-a155-f539ce6bfd40" },
 
     // --- IT (colección "contenedor" con filtros) ---
     { titulo: "It", categoria: "it", subtipo: "muschietti", tipo: "Película", poster: "https://m.media-amazon.com/images/I/617t0rMU9vL.AC_UF894,1000_QL80.jpg" },
@@ -3702,7 +3702,7 @@ const colecciones = [
         poster: "https://i.pinimg.com/736x/e1/ec/6d/e1ec6d6a442eeb11e7cd0cf6b8669614.jpg",
         esVideojuego: true,
         peliculas: [
-            { titulo: "Marvel's Spider-Man", poster: "https://i.pinimg.com/736x/8a/0e/71/8a0e71a79745c31ad71f2a83f33b91e1.jpg" },
+            { titulo: "Marvel's Spider-Man", fichaTecnicaId: "marvel-spiderman-1", poster: "https://i.pinimg.com/736x/8a/0e/71/8a0e71a79745c31ad71f2a83f33b91e1.jpg" },
             { titulo: "Marvel's Spider-Man: Miles Morales", poster: "https://image.api.playstation.com/vulcan/ap/rnd/202008/1423/cZaoNGoCXpClHpljuPVPSUlw.jpg" },
             { titulo: "Marvel's Spider-Man 2", poster: "https://m.media-amazon.com/images/M/MV5BZmUwYTNjZTAtOTYxYS00NmM3LTkwODEtNWM2NDNlOGZlYzMyXkEyXkFqcGc@.V1.jpg" },
             { titulo: "Marvel's Wolverine", poster: "https://cdnb.artstation.com/p/assets/images/images/092/247/923/large/bat-knight-channel-marvel-swolverine-coverartwallpaper01.webp?1759124311" }
@@ -6654,6 +6654,15 @@ function cambiarSeccion(seccionNueva) {
     if (seccionNueva.id === 'seccion-requisitos-injustice-2' && typeof armarComparacionMiPC === 'function') {
         armarComparacionMiPC('seccion-requisitos-injustice-2', REQUISITOS_INJUSTICE_2);
     }
+    if (seccionNueva.id === 'seccion-requisitos-marvels-avengers-real' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-marvels-avengers-real', REQUISITOS_MARVELS_AVENGERS_REAL);
+    }
+    if (seccionNueva.id === 'seccion-requisitos-marvel-gotg' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-marvel-gotg', REQUISITOS_MARVEL_GOTG);
+    }
+    if (seccionNueva.id === 'seccion-requisitos-marvel-spiderman-1' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-marvel-spiderman-1', REQUISITOS_MARVEL_SPIDERMAN_1);
+    }
 }
 
 const btnDoomsday = document.getElementById('btn-doomsday');
@@ -7772,7 +7781,10 @@ const JUEGOS_CON_REQUISITOS_MIPC = [
     { titulo: "Rise of The Tomb Raider", seccion: "rise-tomb-raider", requisitos: () => REQUISITOS_RISE_TOMB_RAIDER },
     { titulo: "Shadow of The Tomb Raider", seccion: "shadow-tomb-raider", requisitos: () => REQUISITOS_SHADOW_TOMB_RAIDER },
     { titulo: "Injustice: Gods Among Us", seccion: "injustice-1", requisitos: () => REQUISITOS_INJUSTICE_1 },
-    { titulo: "Injustice 2", seccion: "injustice-2", requisitos: () => REQUISITOS_INJUSTICE_2 }
+    { titulo: "Injustice 2", seccion: "injustice-2", requisitos: () => REQUISITOS_INJUSTICE_2 },
+    { titulo: "Marvel's Avengers", seccion: "marvels-avengers-real", seccionFichaId: "seccion-marvels-avengers", requisitos: () => REQUISITOS_MARVELS_AVENGERS_REAL },
+    { titulo: "Marvel's Guardians of the Galaxy", seccion: "marvel-gotg", requisitos: () => REQUISITOS_MARVEL_GOTG },
+    { titulo: "Marvel's Spider-Man", seccion: "marvel-spiderman-1", requisitos: () => REQUISITOS_MARVEL_SPIDERMAN_1 }
 ];
 
 // Comparación rápida (mismo criterio numérico que armarComparacionMiPC)
@@ -7802,12 +7814,13 @@ function calcularTeCorreRapido(requisitos) {
     }
 
     function irAJuego(juego) {
-        const seccionFicha = document.getElementById(`seccion-ficha-${juego.seccion}`);
+        const idFicha = juego.seccionFichaId || `seccion-ficha-${juego.seccion}`;
+        const seccionFicha = document.getElementById(idFicha);
         const seccionReq = document.getElementById(`seccion-requisitos-${juego.seccion}`);
-        if (seccionReq && seccionFicha) {
+        if (seccionReq) {
             // El botón volver de Requisitos vuelve a la ficha técnica del
             // juego (comportamiento normal); dejamos esa como su origen.
-            seccionFicha.dataset.origen = 'seccion-mi-pc';
+            if (seccionFicha) seccionFicha.dataset.origen = 'seccion-mi-pc';
             cambiarSeccion(seccionReq);
         }
         input.value = '';
@@ -8522,6 +8535,29 @@ function convertirEnMenuFiltros(seccionId, gridIds) {
         });
     });
 
+    // Filtro por editorial: independiente de los otros dos, mismo
+    // mecanismo de superposición con !important. Se agrega siempre (no
+    // solo si detectamos datos, porque en este punto las tarjetas todavía
+    // no se renderizaron); si la sección no tiene ítems con editorial,
+    // simplemente no hace nada al usarse.
+    const filaEditorial = document.createElement('div');
+    filaEditorial.className = 'filtros-menu-seccion-tengo filtros-menu-seccion-editorial';
+    filaEditorial.innerHTML = `
+        <button class="btn-filtro-editorial activo" data-valor="todos">Todas las editoriales</button>
+        <button class="btn-filtro-editorial" data-valor="ovni">Ovni Press</button>
+        <button class="btn-filtro-editorial" data-valor="ecc-sudamerica">ECC Sudamérica</button>
+        <button class="btn-filtro-editorial" data-valor="panini">Panini</button>
+        <button class="btn-filtro-editorial" data-valor="salvat">Salvat</button>
+    `;
+    panel.appendChild(filaEditorial);
+    filaEditorial.querySelectorAll('.btn-filtro-editorial').forEach(boton => {
+        boton.addEventListener('click', () => {
+            filaEditorial.querySelectorAll('.btn-filtro-editorial').forEach(b => b.classList.remove('activo'));
+            boton.classList.add('activo');
+            aplicarFiltroEditorial(gridIds, boton.dataset.valor);
+        });
+    });
+
     wrapper.appendChild(toggle);
     wrapper.appendChild(panel);
 
@@ -8765,6 +8801,138 @@ if (btnVolverRequisitosInjustice2) {
 const REQUISITOS_INJUSTICE_2 = {
     minimos: { so: "Windows 7 / 10 (64 bits)", cpu: "Intel Core i5-2300 (2.8 GHz) o AMD FX-6300 (3.5 GHz) / AMD Ryzen 5 1400 (3.2 GHz)", ram: "8", almacenamiento: "52", directx: "DirectX 11", gpu: "NVIDIA GeForce GTX 780 (3 GB) o AMD Radeon R9 290 (4 GB) / AMD Radeon RX 570 (4 GB)" },
     recomendado: { so: "Windows 10 (64 bits)", cpu: "Intel Core i5-6600 (3.3 GHz) o AMD Ryzen 5 1600 (3.2 GHz)", ram: "8", almacenamiento: "60", directx: "DirectX 11", gpu: "NVIDIA GeForce GTX 970 (4 GB) o GTX 1060 (6 GB) / AMD Radeon R9 390 (8 GB) o RX 580 (8 GB)" }
+};
+
+const btnDlcMarvelsAvengersReal = document.getElementById('btn-dlc-marvels-avengers-real');
+if (btnDlcMarvelsAvengersReal) {
+    btnDlcMarvelsAvengersReal.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-marvels-avengers-real'));
+    });
+}
+const btnVolverDlcMarvelsAvengersReal = document.getElementById('btn-volver-dlc-marvels-avengers-real');
+if (btnVolverDlcMarvelsAvengersReal) {
+    btnVolverDlcMarvelsAvengersReal.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-marvels-avengers'));
+    });
+}
+document.querySelectorAll('.btn-volver-dlc-individual-mareal').forEach(boton => {
+    boton.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-marvels-avengers-real'));
+    });
+});
+const btnRequisitosMarvelsAvengersReal = document.getElementById('btn-requisitos-marvels-avengers-real');
+if (btnRequisitosMarvelsAvengersReal) {
+    btnRequisitosMarvelsAvengersReal.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-marvels-avengers-real'));
+    });
+}
+const btnVolverRequisitosMarvelsAvengersReal = document.getElementById('btn-volver-requisitos-marvels-avengers-real');
+if (btnVolverRequisitosMarvelsAvengersReal) {
+    btnVolverRequisitosMarvelsAvengersReal.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-marvels-avengers'));
+    });
+}
+const REQUISITOS_MARVELS_AVENGERS_REAL = {
+    minimos: { so: "Windows 10 (64 bits)", cpu: "Intel Core i3-4160 o equivalente de AMD", ram: "8", almacenamiento: "75", directx: "DirectX 12", gpu: "NVIDIA GeForce GTX 950 (2 GB) o AMD Radeon R9 270 (2 GB)" },
+    recomendado: { so: "Windows 10 (64 bits)", cpu: "Intel Core i7-4770K (3.4 GHz) o AMD Ryzen 5 1600 (3.2 GHz)", ram: "16", almacenamiento: "110", directx: "DirectX 12", gpu: "NVIDIA GeForce GTX 1060 (6 GB) o AMD Radeon RX 480 (8 GB)" }
+};
+
+const btnVolverFichaMarvelGotg = document.getElementById('btn-volver-ficha-marvel-gotg');
+if (btnVolverFichaMarvelGotg) {
+    btnVolverFichaMarvelGotg.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-marvel-gotg');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-marvel-videojuegos'));
+    });
+}
+const btnRequisitosMarvelGotg = document.getElementById('btn-requisitos-marvel-gotg');
+if (btnRequisitosMarvelGotg) {
+    btnRequisitosMarvelGotg.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-marvel-gotg'));
+    });
+}
+const btnVolverRequisitosMarvelGotg = document.getElementById('btn-volver-requisitos-marvel-gotg');
+if (btnVolverRequisitosMarvelGotg) {
+    btnVolverRequisitosMarvelGotg.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-marvel-gotg'));
+    });
+}
+const REQUISITOS_MARVEL_GOTG = {
+    minimos: { so: "Windows 10 (64 bits, compilación 1903+)", cpu: "Intel Core i5-4460 o AMD Ryzen 5 1400", ram: "8", almacenamiento: "80", directx: "DirectX 12", gpu: "NVIDIA GeForce GTX 1060 (6 GB) o AMD Radeon RX 570" },
+    recomendado: { so: "Windows 10 (64 bits, compilación 1903+)", cpu: "Intel Core i7-4790 o AMD Ryzen 5 1600", ram: "16", almacenamiento: "80", directx: "DirectX 12", gpu: "NVIDIA GeForce GTX 1660 Super (6 GB) o AMD Radeon RX 590" }
+};
+
+const btnVolverFichaMarvelCosmicInvasion = document.getElementById('btn-volver-ficha-marvel-cosmic-invasion');
+if (btnVolverFichaMarvelCosmicInvasion) {
+    btnVolverFichaMarvelCosmicInvasion.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-marvel-cosmic-invasion');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-marvel-videojuegos'));
+    });
+}
+const btnDlcMarvelCosmicInvasion = document.getElementById('btn-dlc-marvel-cosmic-invasion');
+if (btnDlcMarvelCosmicInvasion) {
+    btnDlcMarvelCosmicInvasion.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-marvel-cosmic-invasion'));
+    });
+}
+const btnVolverDlcMarvelCosmicInvasion = document.getElementById('btn-volver-dlc-marvel-cosmic-invasion');
+if (btnVolverDlcMarvelCosmicInvasion) {
+    btnVolverDlcMarvelCosmicInvasion.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-marvel-cosmic-invasion'));
+    });
+}
+const btnVolverDlcCiclopeCosaMci = document.getElementById('btn-volver-dlc-ciclope-cosa-mci');
+if (btnVolverDlcCiclopeCosaMci) {
+    btnVolverDlcCiclopeCosaMci.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-marvel-cosmic-invasion'));
+    });
+}
+
+const btnVolverFichaMarvelSpiderman1 = document.getElementById('btn-volver-ficha-marvel-spiderman-1');
+if (btnVolverFichaMarvelSpiderman1) {
+    btnVolverFichaMarvelSpiderman1.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-marvel-spiderman-1');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-videojuegos-explorar'));
+    });
+}
+const btnDlcMarvelSpiderman1 = document.getElementById('btn-dlc-marvel-spiderman-1');
+if (btnDlcMarvelSpiderman1) {
+    btnDlcMarvelSpiderman1.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-marvel-spiderman-1'));
+    });
+}
+const btnVolverDlcMarvelSpiderman1 = document.getElementById('btn-volver-dlc-marvel-spiderman-1');
+if (btnVolverDlcMarvelSpiderman1) {
+    btnVolverDlcMarvelSpiderman1.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-marvel-spiderman-1'));
+    });
+}
+const btnVolverDlcCiudadNuncaDuermeSpm1 = document.getElementById('btn-volver-dlc-ciudad-nunca-duerme-spm1');
+if (btnVolverDlcCiudadNuncaDuermeSpm1) {
+    btnVolverDlcCiudadNuncaDuermeSpm1.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-marvel-spiderman-1'));
+    });
+}
+const btnRequisitosMarvelSpiderman1 = document.getElementById('btn-requisitos-marvel-spiderman-1');
+if (btnRequisitosMarvelSpiderman1) {
+    btnRequisitosMarvelSpiderman1.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-marvel-spiderman-1'));
+    });
+}
+const btnVolverRequisitosMarvelSpiderman1 = document.getElementById('btn-volver-requisitos-marvel-spiderman-1');
+if (btnVolverRequisitosMarvelSpiderman1) {
+    btnVolverRequisitosMarvelSpiderman1.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-marvel-spiderman-1'));
+    });
+}
+const REQUISITOS_MARVEL_SPIDERMAN_1 = {
+    minimos: { so: "Windows 10 (64 bits)", cpu: "Intel Core i3-4160 (3.6 GHz) o AMD equivalente", ram: "8", almacenamiento: "75", directx: "DirectX 12", gpu: "NVIDIA GeForce GTX 950 o AMD Radeon RX 470" },
+    recomendado: { so: "Windows 10 (64 bits)", cpu: "Intel Core i5-4670 (3.4 GHz) o AMD Ryzen 5 1600 (3.2 GHz)", ram: "16", almacenamiento: "75", directx: "DirectX 12", gpu: "NVIDIA GeForce GTX 1060 (6 GB) o AMD Radeon RX 580 (8 GB)" }
 };
 
 const btnVolverFichaLegoJurassicWorld = document.getElementById('btn-volver-ficha-lego-jurassic-world');
@@ -10065,6 +10233,21 @@ function aplicarFiltroTengo(gridIds, valor) {
             if (valor === 'tengo') ocultar = tengo !== 'si';
             else if (valor === 'no-tengo') ocultar = tengo !== 'no';
             tarjeta.classList.toggle('oculto-por-tengo', ocultar);
+        });
+    });
+}
+
+// Mismo mecanismo independiente que aplicarFiltroTengo (clase con
+// !important, no toca el display que haya puesto el filtro de
+// personaje/era), pero para la editorial de cada tomo/ejemplar.
+function aplicarFiltroEditorial(gridIds, valor) {
+    gridIds.forEach(gridId => {
+        const grid = document.getElementById(gridId);
+        if (!grid) return;
+        grid.querySelectorAll('.tarjeta-media[data-editorial]').forEach(tarjeta => {
+            const editorial = tarjeta.dataset.editorial;
+            const ocultar = valor !== 'todos' && editorial !== valor;
+            tarjeta.classList.toggle('oculto-por-editorial', ocultar);
         });
     });
 }

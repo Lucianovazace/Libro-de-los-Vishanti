@@ -533,6 +533,10 @@ h2 {
     display: none !important;
 }
 
+.oculto-por-editorial {
+    display: none !important;
+}
+
 /* ===== MENÚ DE FILTROS COLAPSABLE (cómics) =====
    Envuelve un .filtros-seccion existente sin tocar los botones ni sus
    listeners: solo agrega un botón que muestra/oculta el panel. */
