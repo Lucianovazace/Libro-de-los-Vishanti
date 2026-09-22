@@ -11,8 +11,12 @@
 </head>
 <body>
 <header>
+    <div class="halloween-arana">
+        <div class="hilo"></div>
+        <div class="cuerpo-arana">🕷️</div>
+    </div>
     <div class="header-top">
-        <h1>EL MULTIVERSO</h1>
+        <h1 id="titulo-principal">EL MULTIVERSO</h1>
         <div class="buscador-container">
             <input type="text" id="buscador-global" placeholder="🔍 Buscar película o serie..." autocomplete="off" name="buscador-peliculas">
         </div>
@@ -115,6 +119,11 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Sección Halloween (permanente en el sitio, con temática de terror) -->
+                <button class="btn-categoria" id="btn-peliculas-halloween">🎃 Películas</button>
+                <button class="btn-categoria" id="btn-videojuegos-halloween">🎃 Videojuegos (Halloween)</button>
+                <button class="btn-categoria" id="btn-comics-halloween">🎃 Comics (Halloween)</button>
             </div>
         </div>
     </nav>
@@ -4391,6 +4400,7 @@
         </div>
 
         <button class="btn-abrir-coleccion btn-dlc-ficha-tecnica" id="btn-dlc-marvel-cosmic-invasion">DLC 📦</button>
+        <button class="btn-abrir-coleccion btn-dlc-ficha-tecnica" id="btn-requisitos-marvel-cosmic-invasion">Requisitos 🖥️</button>
     </section>
 
     <section id="seccion-dlc-marvel-cosmic-invasion" class="oculto">
@@ -4419,6 +4429,28 @@
         ¡Es la hora de las tortas! El peso pesado de los Cuatro Fantásticos entra en combate con toda la fuerza que le otorgó la radiación cósmica, y destaca como una auténtica potencia especializada en agarres. Gracias a una movilidad sorprendente que le permite rebotar por el entorno para caer sobre sus enemigos por sorpresa, este antiguo piloto de élite adopta su nuevo papel como protector acorazado de su familia y sus aliados, convirtiéndose en un recurso increíble para cualquier equipo.
         <br><br>
         Juntos, Cíclope y la Cosa forman la combinación perfecta para dominar el combate en tierra y hacer frente a las amenazas aéreas.</p>
+    </section>
+
+    <section id="seccion-requisitos-marvel-cosmic-invasion" class="oculto">
+        <button class="btn-volver" id="btn-volver-requisitos-marvel-cosmic-invasion">← Volver a Marvel Cosmic Invasion</button>
+        <h2>Requisitos — Marvel Cosmic Invasion</h2>
+        <div class="ficha-tecnica-requisitos">
+            <div class="requisitos-columna">
+                <h3 class="subtitulo-ficha-tecnica subtitulo-ficha-tecnica-centrado">Mínimos</h3>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Versión de sistema operativo</span><span class="requisito-valor">Windows 10 (64 bits)</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Procesador</span><span class="requisito-valor">Intel Core 2 Duo E6550 o AMD Athlon 64 X2 6400+</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Memoria</span><span class="requisito-valor">4 GB</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Almacenamiento</span><span class="requisito-valor">1 GB</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">GPU</span><span class="requisito-valor">NVIDIA GeForce GT 320 (1 GB), AMD Radeon HD 6570 (1 GB) o Intel HD Graphics</span></div>
+            </div>
+            <div class="requisitos-columna">
+                <h3 class="subtitulo-ficha-tecnica subtitulo-ficha-tecnica-centrado">Recomendado</h3>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Versión de sistema operativo</span><span class="requisito-valor">Windows 10 (64 bits)</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Procesador</span><span class="requisito-valor">Intel Core i3-540 o AMD Phenom II X2 550</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Memoria</span><span class="requisito-valor">8 GB</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">GPU</span><span class="requisito-valor">NVIDIA GeForce GT 730 (2 GB), AMD Radeon R7 240 (2 GB) o Intel HD Graphics</span></div>
+            </div>
+        </div>
     </section>
 
     <section id="seccion-ficha-marvel-spiderman-1" class="oculto">
@@ -4520,6 +4552,504 @@
                 <div class="requisito-fila"><span class="requisito-etiqueta">GPU</span><span class="requisito-valor">NVIDIA GeForce GTX 1060 (6 GB) o AMD Radeon RX 580 (8 GB)</span></div>
             </div>
         </div>
+    </section>
+
+    <section id="seccion-ficha-marvel-spiderman-mm" class="oculto">
+        <button class="btn-volver" id="btn-volver-ficha-marvel-spiderman-mm">← Volver</button>
+
+        <div class="ficha-tecnica-encabezado">
+            <img src="https://image.api.playstation.com/vulcan/ap/rnd/202008/1423/cZaoNGoCXpClHpljuPVPSUlw.jpg" alt="Marvel's Spider-Man: Miles Morales" class="ficha-tecnica-poster">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/078277ed-5380-4deb-b166-997beba79634/dfn9p9n-ca27da19-a27e-490b-bdb6-ce1e47de479f.png" alt="Marvel's Spider-Man: Miles Morales" class="ficha-tecnica-logo-titulo">
+        </div>
+
+        <h3 class="subtitulo-ficha-tecnica subtitulo-ficha-tecnica-centrado">Sinopsis</h3>
+        <p class="ficha-tecnica-sinopsis">En la última aventura del universo de Spider-Man de Marvel, el adolescente Miles Morales intenta ajustarse a su nuevo hogar mientras que sigue los pasos de su mentor, Peter Parker, para convertirse en el nuevo Spider-Man.
+        <br><br>
+        Pero cuando un feroz enfrentamiento por el poder amenaza con destruir su hogar, el aspirante a héroe entiende que un gran poder conlleva una gran responsabilidad. Para salvar a la Nueva York de Marvel, Miles debe adoptar el manto de Spider-Man y volverlo propio.</p>
+
+        <h3 class="subtitulo-ficha-tecnica">Puntuaciones</h3>
+        <div class="ficha-tecnica-puntuaciones">
+            <div class="puntuacion-card">
+                <span class="puntuacion-fuente">Metacritic</span>
+                <span class="puntuacion-valor">85</span>
+                <span class="puntuacion-escala">/ 100</span>
+            </div>
+            <div class="puntuacion-card">
+                <span class="puntuacion-fuente">GameSpot</span>
+                <span class="puntuacion-valor">7</span>
+                <span class="puntuacion-escala">/ 10</span>
+            </div>
+            <div class="puntuacion-card">
+                <span class="puntuacion-fuente">Vandal</span>
+                <span class="puntuacion-valor">8</span>
+                <span class="puntuacion-escala">/ 10</span>
+            </div>
+        </div>
+        <p class="ficha-tecnica-nota">Falta tu puntuación personal — mandámela cuando quieras.</p>
+
+        <h3 class="subtitulo-ficha-tecnica">Plataformas Disponibles</h3>
+        <div class="ficha-tecnica-plataformas">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXZzq16NWF0nGH0kaRZw4fP4Y9GkVR1qMQa3-5PkQAeBLIfLqQaGjO684&s=10" alt="PS4">
+            <img src="https://w7.pngwing.com/pngs/614/492/png-transparent-ps5-hd-logo.png" alt="PS5">
+            <img src="https://www.realclipart.com/png/small/287-2874322_pc-pc-logo-png.png" alt="PC">
+        </div>
+
+        <button class="btn-abrir-coleccion btn-dlc-ficha-tecnica" id="btn-requisitos-marvel-spiderman-mm">Requisitos 🖥️</button>
+    </section>
+
+    <section id="seccion-requisitos-marvel-spiderman-mm" class="oculto">
+        <button class="btn-volver" id="btn-volver-requisitos-marvel-spiderman-mm">← Volver a Marvel's Spider-Man: Miles Morales</button>
+        <h2>Requisitos — Marvel's Spider-Man: Miles Morales</h2>
+        <div class="ficha-tecnica-requisitos">
+            <div class="requisitos-columna">
+                <h3 class="subtitulo-ficha-tecnica subtitulo-ficha-tecnica-centrado">Mínimos (720p a 30 FPS - Gráficos Muy Bajos)</h3>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Versión de sistema operativo</span><span class="requisito-valor">Windows 10 de 64 bits (versión 1909 o superior)</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Procesador</span><span class="requisito-valor">Intel Core i3-4160 (3.6 GHz) o AMD equivalente</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Memoria</span><span class="requisito-valor">8 GB</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Almacenamiento</span><span class="requisito-valor">75 GB</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">DirectX</span><span class="requisito-valor">DirectX 12</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">GPU</span><span class="requisito-valor">NVIDIA GeForce GTX 950 o AMD Radeon RX 470</span></div>
+            </div>
+            <div class="requisitos-columna">
+                <h3 class="subtitulo-ficha-tecnica subtitulo-ficha-tecnica-centrado">Recomendado (1080p a 60 FPS / Gráficos Medios-Altos)</h3>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Versión de sistema operativo</span><span class="requisito-valor">Windows 10 de 64 bits (versión 1909 o superior)</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Procesador</span><span class="requisito-valor">Intel Core i5-4670 (3.4 GHz) o AMD Ryzen 5 1600 (3.2 GHz)</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Memoria</span><span class="requisito-valor">16 GB</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Almacenamiento</span><span class="requisito-valor">75 GB (se recomienda SSD)</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">DirectX</span><span class="requisito-valor">DirectX 12</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">GPU</span><span class="requisito-valor">NVIDIA GeForce GTX 1060 (6 GB) o AMD Radeon RX 580 (8 GB)</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="seccion-ficha-marvel-spiderman-2" class="oculto">
+        <button class="btn-volver" id="btn-volver-ficha-marvel-spiderman-2">← Volver</button>
+
+        <div class="ficha-tecnica-encabezado">
+            <img src="https://m.media-amazon.com/images/M/MV5BZmUwYTNjZTAtOTYxYS00NmM3LTkwODEtNWM2NDNlOGZlYzMyXkEyXkFqcGc@.V1.jpg" alt="Marvel's Spider-Man 2" class="ficha-tecnica-poster">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Marvel%27s_Spider-Man_2_%282025%29_logo_official_%28SGDB_124347%29.png" alt="Marvel's Spider-Man 2" class="ficha-tecnica-logo-titulo">
+        </div>
+
+        <h3 class="subtitulo-ficha-tecnica subtitulo-ficha-tecnica-centrado">Sinopsis</h3>
+        <p class="ficha-tecnica-sinopsis">Los Spider-Men Peter Parker y Miles Morales regresan para una nueva y emocionante aventura de la aclamada franquicia Marvel's Spider-Man para PS5.
+        <br><br>
+        Balancéate, salta y utiliza las nuevas alas de telaraña para recorrer toda la ciudad de Nueva York de Marvel. También podrás cambiar rápidamente entre Peter Parker y Miles Morales para vivir diferentes historias y canalizar poderes nuevos y épicos, mientras el emblemático villano Venom amenaza con destruir sus vidas, la ciudad y a todos sus seres queridos.</p>
+
+        <h3 class="subtitulo-ficha-tecnica">Puntuaciones</h3>
+        <div class="ficha-tecnica-puntuaciones">
+            <div class="puntuacion-card">
+                <span class="puntuacion-fuente">Metacritic</span>
+                <span class="puntuacion-valor">91</span>
+                <span class="puntuacion-escala">/ 100</span>
+            </div>
+            <div class="puntuacion-card">
+                <span class="puntuacion-fuente">GameSpot</span>
+                <span class="puntuacion-valor">8</span>
+                <span class="puntuacion-escala">/ 10</span>
+            </div>
+            <div class="puntuacion-card">
+                <span class="puntuacion-fuente">Vandal</span>
+                <span class="puntuacion-valor">9.3</span>
+                <span class="puntuacion-escala">/ 10</span>
+            </div>
+        </div>
+        <p class="ficha-tecnica-nota">Falta tu puntuación personal — mandámela cuando quieras.</p>
+
+        <h3 class="subtitulo-ficha-tecnica">Plataformas Disponibles</h3>
+        <div class="ficha-tecnica-plataformas">
+            <img src="https://w7.pngwing.com/pngs/614/492/png-transparent-ps5-hd-logo.png" alt="PS5">
+            <img src="https://www.realclipart.com/png/small/287-2874322_pc-pc-logo-png.png" alt="PC">
+        </div>
+
+        <button class="btn-abrir-coleccion btn-dlc-ficha-tecnica" id="btn-requisitos-marvel-spiderman-2">Requisitos 🖥️</button>
+    </section>
+
+    <section id="seccion-requisitos-marvel-spiderman-2" class="oculto">
+        <button class="btn-volver" id="btn-volver-requisitos-marvel-spiderman-2">← Volver a Marvel's Spider-Man 2</button>
+        <h2>Requisitos — Marvel's Spider-Man 2</h2>
+        <div class="ficha-tecnica-requisitos">
+            <div class="requisitos-columna">
+                <h3 class="subtitulo-ficha-tecnica subtitulo-ficha-tecnica-centrado">Mínimos</h3>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Versión de sistema operativo</span><span class="requisito-valor">Windows 10 / 11 de 64 bits (versión 1909 o superior)</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Procesador</span><span class="requisito-valor">Intel Core i3-8100 o AMD Ryzen 3 3100</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Memoria</span><span class="requisito-valor">16 GB</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Almacenamiento</span><span class="requisito-valor">140 GB (se requiere SSD obligatoriamente)</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">GPU</span><span class="requisito-valor">NVIDIA GeForce GTX 1650 o AMD Radeon RX 5500 XT</span></div>
+            </div>
+            <div class="requisitos-columna">
+                <h3 class="subtitulo-ficha-tecnica subtitulo-ficha-tecnica-centrado">Recomendado</h3>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Versión de sistema operativo</span><span class="requisito-valor">Windows 10 / 11 de 64 bits (versión 1909 o superior)</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Procesador</span><span class="requisito-valor">Intel Core i5-8400 o AMD Ryzen 5 3600</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Memoria</span><span class="requisito-valor">16 GB</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Almacenamiento</span><span class="requisito-valor">140 GB (se requiere SSD obligatoriamente)</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">GPU</span><span class="requisito-valor">NVIDIA GeForce RTX 3060 o AMD Radeon RX 5700</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="seccion-ficha-assassins-creed-1" class="oculto">
+        <button class="btn-volver" id="btn-volver-ficha-assassins-creed-1">← Volver</button>
+
+        <div class="ficha-tecnica-encabezado">
+            <img src="https://m.media-amazon.com/images/M/MV5BNmI1NDQ4ZjYtZmFjMy00MjZkLTkyNzktYjE2NzU4MmVmNTg2XkEyXkFqcGc@._V1_.jpg" alt="Assassin's Creed" class="ficha-tecnica-poster">
+            <img src="https://www.freepnglogos.com/uploads/assassins-creed-logo-png/assassins-creed-logo-assassin-creed-logos-download-20.png" alt="Assassin's Creed" class="ficha-tecnica-logo-titulo">
+        </div>
+
+        <h3 class="subtitulo-ficha-tecnica subtitulo-ficha-tecnica-centrado">Sinopsis</h3>
+        <p class="ficha-tecnica-sinopsis">Año 1191 DC. La Tercera Cruzada está haciendo estragos en Tierra Santa. Eres Altaïr, un maestro asesino enviado para matar a nobles y señores corruptos de uno y otro bando que se aprovechan de la guerra. Al llevar a cabo tus misiones, te ves envuelto en un conflicto que amenaza no sólo Tierra Santa, sino el mundo entero.
+        <br><br>
+        Domina las habilidades, tácticas y armas de la hermandad de guerreros más secreta y letal de toda la historia. Planea tus ataques, golpea sin piedad y ábrete paso para escapar. Entra en un mundo que vive, que respira, y en el que todas tus acciones tienen consecuencias. La multitud reacciona a tus movimientos y puede convertirse en un aliado o un enemigo. Pero, sobre todo, haz lo que sea necesario para lograr tu objetivo.</p>
+
+        <h3 class="subtitulo-ficha-tecnica">Puntuaciones</h3>
+        <div class="ficha-tecnica-puntuaciones">
+            <div class="puntuacion-card puntuacion-card-propia">
+                <span class="puntuacion-fuente">Mi Puntuación</span>
+                <span class="puntuacion-estrellas">★★★<span class="estrella-media">★</span>☆</span>
+            </div>
+            <div class="puntuacion-card">
+                <span class="puntuacion-fuente">Metacritic</span>
+                <span class="puntuacion-valor">81</span>
+                <span class="puntuacion-escala">/ 100</span>
+            </div>
+            <div class="puntuacion-card">
+                <span class="puntuacion-fuente">GameSpot</span>
+                <span class="puntuacion-valor">9</span>
+                <span class="puntuacion-escala">/ 10</span>
+            </div>
+            <div class="puntuacion-card">
+                <span class="puntuacion-fuente">Vandal</span>
+                <span class="puntuacion-valor">9.7</span>
+                <span class="puntuacion-escala">/ 10</span>
+            </div>
+        </div>
+
+        <h3 class="subtitulo-ficha-tecnica">Plataformas Disponibles</h3>
+        <div class="ficha-tecnica-plataformas">
+            <img src="https://www.realclipart.com/png/middle/448-4488055_playstation-3-logo-png.png" alt="PS3">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Xbox_360_logo.svg/3840px-Xbox_360_logo.svg.png" alt="Xbox 360">
+            <img src="https://www.realclipart.com/png/small/287-2874322_pc-pc-logo-png.png" alt="PC">
+        </div>
+
+        <button class="btn-abrir-coleccion btn-dlc-ficha-tecnica" id="btn-requisitos-assassins-creed-1">Requisitos 🖥️</button>
+    </section>
+
+    <section id="seccion-requisitos-assassins-creed-1" class="oculto">
+        <button class="btn-volver" id="btn-volver-requisitos-assassins-creed-1">← Volver a Assassin's Creed</button>
+        <h2>Requisitos — Assassin's Creed</h2>
+        <div class="ficha-tecnica-requisitos">
+            <div class="requisitos-columna">
+                <h3 class="subtitulo-ficha-tecnica subtitulo-ficha-tecnica-centrado">Mínimos</h3>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Versión de sistema operativo</span><span class="requisito-valor">Windows XP o Windows Vista (únicamente de forma oficial)</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Procesador</span><span class="requisito-valor">Intel Pentium D Dual Core (2.6 GHz) o AMD Athlon 64 X2 3800+</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Memoria</span><span class="requisito-valor">1 GB (Windows XP) / 2 GB (Windows Vista)</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Almacenamiento</span><span class="requisito-valor">8 GB</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">GPU</span><span class="requisito-valor">Compatible con DirectX 9.0 o 10.0 y Shader Model 3.0 (NVIDIA GeForce 6800 o ATI Radeon X1600 en adelante)</span></div>
+            </div>
+            <div class="requisitos-columna">
+                <h3 class="subtitulo-ficha-tecnica subtitulo-ficha-tecnica-centrado">Recomendado</h3>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Versión de sistema operativo</span><span class="requisito-valor">Windows XP o Windows Vista</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Procesador</span><span class="requisito-valor">Intel Core 2 Duo (2.2 GHz) o AMD Athlon 64 X2 4400+ (o superior)</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Memoria</span><span class="requisito-valor">2 GB</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Almacenamiento</span><span class="requisito-valor">8 GB</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">GPU</span><span class="requisito-valor">512 MB de VRAM (NVIDIA GeForce serie 7/8/9 o ATI Radeon serie HD 2000/3000)</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="seccion-ficha-assassins-creed-2" class="oculto">
+        <button class="btn-volver" id="btn-volver-ficha-assassins-creed-2">← Volver</button>
+
+        <div class="ficha-tecnica-encabezado">
+            <img src="https://cdn1.epicgames.com/salesEvent/salesEvent/AC2_GameName_Store_Portrait_1200x1600_1200x1600-2c5e000213988c5dde375bb2602e9986" alt="Assassin's Creed II" class="ficha-tecnica-poster">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Assassin%E2%80%99s_Creed_II_v1_logo.svg" alt="Assassin's Creed II" class="ficha-tecnica-logo-titulo">
+        </div>
+
+        <h3 class="subtitulo-ficha-tecnica subtitulo-ficha-tecnica-centrado">Sinopsis</h3>
+        <p class="ficha-tecnica-sinopsis">Traicionado por las familias que controlan Italia, un joven noble se embarca en una épica búsqueda de venganza. Para acabar con la corrupción y recuperar el honor de su familia, estudiará los secretos de un antiguo códice, escrito por Altaïr. Para sus aliados se convertirá en el símbolo de un cambio, por su lucha por la libertad y la justicia. Para sus enemigos se convertirá en un ángel negro, dedicado a la destrucción de los tiranos que abusan del pueblo de Italia.
+        <br><br>
+        Su nombre es Ezio Auditore de Florencia. Es un Asesino.</p>
+
+        <h3 class="subtitulo-ficha-tecnica">Puntuaciones</h3>
+        <div class="ficha-tecnica-puntuaciones">
+            <div class="puntuacion-card">
+                <span class="puntuacion-fuente">Metacritic</span>
+                <span class="puntuacion-valor">90</span>
+                <span class="puntuacion-escala">/ 100</span>
+            </div>
+            <div class="puntuacion-card">
+                <span class="puntuacion-fuente">GameSpot</span>
+                <span class="puntuacion-valor">9</span>
+                <span class="puntuacion-escala">/ 10</span>
+            </div>
+            <div class="puntuacion-card">
+                <span class="puntuacion-fuente">Vandal</span>
+                <span class="puntuacion-valor">9.4</span>
+                <span class="puntuacion-escala">/ 10</span>
+            </div>
+        </div>
+        <p class="ficha-tecnica-nota">Falta tu puntuación personal — mandámela cuando quieras.</p>
+
+        <h3 class="subtitulo-ficha-tecnica">Plataformas Disponibles</h3>
+        <div class="ficha-tecnica-plataformas">
+            <img src="https://www.realclipart.com/png/middle/448-4488055_playstation-3-logo-png.png" alt="PS3">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Xbox_360_logo.svg/3840px-Xbox_360_logo.svg.png" alt="Xbox 360">
+            <img src="https://www.realclipart.com/png/small/287-2874322_pc-pc-logo-png.png" alt="PC">
+        </div>
+
+        <button class="btn-abrir-coleccion btn-dlc-ficha-tecnica" id="btn-requisitos-assassins-creed-2">Requisitos 🖥️</button>
+    </section>
+
+    <section id="seccion-requisitos-assassins-creed-2" class="oculto">
+        <button class="btn-volver" id="btn-volver-requisitos-assassins-creed-2">← Volver a Assassin's Creed II</button>
+        <h2>Requisitos — Assassin's Creed II</h2>
+        <div class="ficha-tecnica-requisitos">
+            <div class="requisitos-columna">
+                <h3 class="subtitulo-ficha-tecnica subtitulo-ficha-tecnica-centrado">Mínimos</h3>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Versión de sistema operativo</span><span class="requisito-valor">Windows XP / Vista / 7</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Procesador</span><span class="requisito-valor">Intel Core 2 Duo (1.8 GHz) o AMD Athlon X2 64 (2.4 GHz)</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Memoria</span><span class="requisito-valor">1.5 GB (XP) / 2 GB (Vista o 7)</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Almacenamiento</span><span class="requisito-valor">8 GB</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">DirectX</span><span class="requisito-valor">DirectX 9.0c</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">GPU</span><span class="requisito-valor">256 MB de VRAM compatible con Shader Model 3.0 (NVIDIA GeForce serie 8800 o ATI Radeon serie HD 2000 en adelante)</span></div>
+            </div>
+            <div class="requisitos-columna">
+                <h3 class="subtitulo-ficha-tecnica subtitulo-ficha-tecnica-centrado">Recomendado</h3>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Versión de sistema operativo</span><span class="requisito-valor">Windows XP / Vista / 7</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Procesador</span><span class="requisito-valor">Intel Core 2 Duo E6700 (2.6 GHz) o AMD Athlon 64 X2 6000+ (o superior)</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Memoria</span><span class="requisito-valor">1.5 GB (XP) / 2 GB (Vista o 7)</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Almacenamiento</span><span class="requisito-valor">8 GB</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">GPU</span><span class="requisito-valor">512 MB de VRAM (NVIDIA GeForce serie 9800 o ATI Radeon serie HD 4000 en adelante)</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="seccion-ficha-assassins-creed-brotherhood" class="oculto">
+        <button class="btn-volver" id="btn-volver-ficha-assassins-creed-brotherhood">← Volver</button>
+
+        <div class="ficha-tecnica-encabezado">
+            <img src="https://images.g2a.com/323x433/1x1x1/assassins-creed-brotherhood-p10000043255/dc54b5ec98ab409c9c9332e3" alt="Assassin's Creed: Brotherhood" class="ficha-tecnica-poster">
+            <img src="https://cdn2.steamgriddb.com/logo_thumb/a57890dbb6b700bf240ff749ebfd913e.png" alt="Assassin's Creed: Brotherhood" class="ficha-tecnica-logo-titulo">
+        </div>
+
+        <h3 class="subtitulo-ficha-tecnica subtitulo-ficha-tecnica-centrado">Sinopsis</h3>
+        <p class="ficha-tecnica-sinopsis">Para derrotar a los corruptos tiranos atrincherados en la Ciudad Eterna, Ezio no solo deberá demostrar su fuerza, sino también su capacidad de liderazgo, ya que dirigirá a toda una Hermandad que estará a su lado. Solo luchando juntos podrán los Assassins derrotar a sus enemigos mortales.
+        <br><br>
+        Por primera vez, el juego introduce un galardonado sistema multijugador que te permite elegir entre un amplio elenco de personajes únicos, cada cual con sus técnicas de asesinato y armas características. Ponte a prueba contra otros jugadores de todo el mundo.</p>
+
+        <h3 class="subtitulo-ficha-tecnica">Puntuaciones</h3>
+        <div class="ficha-tecnica-puntuaciones">
+            <div class="puntuacion-card">
+                <span class="puntuacion-fuente">Metacritic</span>
+                <span class="puntuacion-valor">89</span>
+                <span class="puntuacion-escala">/ 100</span>
+            </div>
+            <div class="puntuacion-card">
+                <span class="puntuacion-fuente">GameSpot</span>
+                <span class="puntuacion-valor">8.5</span>
+                <span class="puntuacion-escala">/ 10</span>
+            </div>
+        </div>
+        <p class="ficha-tecnica-nota">No encontramos una nota numérica propia de Vandal para este juego. Falta también tu puntuación personal — mandámela cuando quieras.</p>
+
+        <h3 class="subtitulo-ficha-tecnica">Plataformas Disponibles</h3>
+        <div class="ficha-tecnica-plataformas">
+            <img src="https://www.realclipart.com/png/middle/448-4488055_playstation-3-logo-png.png" alt="PS3">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Xbox_360_logo.svg/3840px-Xbox_360_logo.svg.png" alt="Xbox 360">
+            <img src="https://www.realclipart.com/png/small/287-2874322_pc-pc-logo-png.png" alt="PC">
+        </div>
+
+        <button class="btn-abrir-coleccion btn-dlc-ficha-tecnica" id="btn-dlc-assassins-creed-brotherhood">DLC 📦</button>
+        <button class="btn-abrir-coleccion btn-dlc-ficha-tecnica" id="btn-requisitos-assassins-creed-brotherhood">Requisitos 🖥️</button>
+    </section>
+
+    <section id="seccion-dlc-assassins-creed-brotherhood" class="oculto">
+        <button class="btn-volver" id="btn-volver-dlc-assassins-creed-brotherhood">← Volver a Assassin's Creed: Brotherhood</button>
+        <h2>DLC — Assassin's Creed: Brotherhood</h2>
+        <div class="grilla-biblioteca">
+            <div class="tarjeta-media tarjeta-media-enlace" data-dlc-abrir="copernico-acb">
+                <img src="https://assets-prd.ignimgs.com/2022/09/18/accopernicus-1663526968001.jpg" alt="La Conspiración de Copérnico">
+                <h3>La Conspiración de Copérnico</h3>
+                <p>DLC</p>
+            </div>
+            <div class="tarjeta-media tarjeta-media-enlace" data-dlc-abrir="davinci-acb">
+                <img src="https://assets-prd.ignimgs.com/2022/09/19/davinciac-1663617146961.jpg" alt="La Desaparición de Da Vinci">
+                <h3>La Desaparición de Da Vinci</h3>
+                <p>DLC</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="seccion-dlc-copernico-acb" class="oculto">
+        <button class="btn-volver btn-volver-dlc-individual-acb" id="btn-volver-dlc-copernico-acb">← Volver</button>
+        <div class="ficha-tecnica-encabezado">
+            <img src="https://assets-prd.ignimgs.com/2022/09/18/accopernicus-1663526968001.jpg" alt="La Conspiración de Copérnico" class="ficha-tecnica-poster">
+            <h2>La Conspiración de Copérnico</h2>
+        </div>
+        <p class="ficha-tecnica-nota">Fecha de lanzamiento: 9 de noviembre de 2010</p>
+    </section>
+
+    <section id="seccion-dlc-davinci-acb" class="oculto">
+        <button class="btn-volver btn-volver-dlc-individual-acb" id="btn-volver-dlc-davinci-acb">← Volver</button>
+        <div class="ficha-tecnica-encabezado">
+            <img src="https://assets-prd.ignimgs.com/2022/09/19/davinciac-1663617146961.jpg" alt="La Desaparición de Da Vinci" class="ficha-tecnica-poster">
+            <h2>La Desaparición de Da Vinci</h2>
+        </div>
+        <h3 class="subtitulo-ficha-tecnica subtitulo-ficha-tecnica-centrado">Descripción</h3>
+        <p class="ficha-tecnica-sinopsis">Tras la caída de los Borgia en Roma, Leonardo Da Vinci es secuestrado por un culto secreto que quiere transformar la sociedad. Ezio se embarcará en una búsqueda sin descanso para recuperar los cuadros robados y encontrar a Leonardo antes de que sea tarde... y así descubrirás dos nuevos lugares y dos nuevas características de juego.
+        <br><br>
+        El contenido adicional es la mayor expansión del modo multijugador, que ya ha cosechado varios premios. Incluye un mapa, cuatro personajes y dos modos de juego. El nuevo mapa, La Alhambra, dispone de zonas interiores y exteriores en diferentes niveles, perfectas para que los cazadores se oculten entre el gentío. Los cuatro personajes añadidos son La Dama Roja, El Caballero, El Marqués y El Paria.
+        <br><br>
+        En el modo Escolta, dos equipos de cuatro jugadores compiten para proteger al personaje importante, o para asesinar al del otro equipo. En el modo Asesinato, de seis a ocho jugadores compiten en un combate a muerte, todos contra todos, en rondas de 10 minutos.</p>
+        <p class="ficha-tecnica-nota">Fecha de lanzamiento: 8 de marzo de 2011</p>
+    </section>
+
+    <section id="seccion-requisitos-assassins-creed-brotherhood" class="oculto">
+        <button class="btn-volver" id="btn-volver-requisitos-assassins-creed-brotherhood">← Volver a Assassin's Creed: Brotherhood</button>
+        <h2>Requisitos — Assassin's Creed: Brotherhood</h2>
+        <div class="ficha-tecnica-requisitos">
+            <div class="requisitos-columna">
+                <h3 class="subtitulo-ficha-tecnica subtitulo-ficha-tecnica-centrado">Mínimos</h3>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Versión de sistema operativo</span><span class="requisito-valor">Windows XP / Vista / 7</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Procesador</span><span class="requisito-valor">Intel Core 2 Duo (1.8 GHz) o AMD Athlon X2 64 (2.4 GHz)</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Memoria</span><span class="requisito-valor">1.5 GB (XP) / 2 GB (Vista o 7)</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Almacenamiento</span><span class="requisito-valor">8 GB</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">DirectX</span><span class="requisito-valor">DirectX 9.0c</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">GPU</span><span class="requisito-valor">256 MB de VRAM compatible con Shader Model 3.0 (NVIDIA GeForce serie 7900 o ATI Radeon serie X1950 en adelante)</span></div>
+            </div>
+            <div class="requisitos-columna">
+                <h3 class="subtitulo-ficha-tecnica subtitulo-ficha-tecnica-centrado">Recomendado</h3>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Versión de sistema operativo</span><span class="requisito-valor">Windows XP / Vista / 7</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Procesador</span><span class="requisito-valor">Intel Core 2 Duo E6700 (2.6 GHz) o AMD Athlon 64 X2 6000+ (o superior)</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Memoria</span><span class="requisito-valor">1.5 GB (XP) / 2 GB (Vista o 7)</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">Almacenamiento</span><span class="requisito-valor">8 GB</span></div>
+                <div class="requisito-fila"><span class="requisito-etiqueta">GPU</span><span class="requisito-valor">512 MB de VRAM (NVIDIA GeForce serie 8800 o ATI Radeon serie HD 4700 en adelante)</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="seccion-ficha-assassins-creed-revelations" class="oculto">
+        <button class="btn-volver" id="btn-volver-ficha-assassins-creed-revelations">← Volver</button>
+
+        <div class="ficha-tecnica-encabezado">
+            <img src="https://m.media-amazon.com/images/M/MV5BOWM3YjRkM2MtZmU3My00OTc4LTg0MDMtMmEzYjc3NWNjMjIxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Assassin's Creed: Revelations" class="ficha-tecnica-poster">
+            <img src="https://images.steamusercontent.com/ugc/1667986590234904531/82997C1257BDC24110FB62A4377757F53553F73B/" alt="Assassin's Creed: Revelations" class="ficha-tecnica-logo-titulo">
+        </div>
+
+        <h3 class="subtitulo-ficha-tecnica subtitulo-ficha-tecnica-centrado">Sinopsis</h3>
+        <p class="ficha-tecnica-sinopsis">¿Qué más le queda por hacer a un hombre tras ganar sus batallas y derrotar a sus enemigos? ¿Dónde encuentra la determinación y la motivación para seguir adelante? Para responder a estas preguntas, Ezio Auditore viaja a Oriente en busca de la biblioteca perdida de los Assassins.
+        <br><br>
+        En Assassin's Creed® Revelations, el Maestro Assassin Ezio Auditore sigue los pasos de su legendario mentor, Altaïr, en un viaje de descubrimiento y revelación. Es un camino peligroso que lleva a nuestro héroe a Constantinopla (el corazón del Imperio otomano), donde un creciente ejército templario amenaza con desestabilizar la región. Además de la aclamada historia de Ezio, el juego ofrece una experiencia multijugador en línea perfeccionada y ampliada —con nuevos modos, mapas y personajes— que permite a los jugadores poner a prueba sus habilidades como Assassin frente a oponentes de todo el mundo.</p>
+
+        <h3 class="subtitulo-ficha-tecnica">Puntuaciones</h3>
+        <div class="ficha-tecnica-puntuaciones">
+            <div class="puntuacion-card">
+                <span class="puntuacion-fuente">Metacritic</span>
+                <span class="puntuacion-valor">80</span>
+                <span class="puntuacion-escala">/ 100</span>
+            </div>
+            <div class="puntuacion-card">
+                <span class="puntuacion-fuente">GameSpot</span>
+                <span class="puntuacion-valor">8</span>
+                <span class="puntuacion-escala">/ 10</span>
+            </div>
+            <div class="puntuacion-card">
+                <span class="puntuacion-fuente">Vandal</span>
+                <span class="puntuacion-valor">9.2</span>
+                <span class="puntuacion-escala">/ 10</span>
+            </div>
+        </div>
+        <p class="ficha-tecnica-nota">Falta tu puntuación personal — mandámela cuando quieras.</p>
+
+        <h3 class="subtitulo-ficha-tecnica">Plataformas Disponibles</h3>
+        <div class="ficha-tecnica-plataformas">
+            <img src="https://www.realclipart.com/png/middle/448-4488055_playstation-3-logo-png.png" alt="PS3">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Xbox_360_logo.svg/3840px-Xbox_360_logo.svg.png" alt="Xbox 360">
+            <img src="https://www.realclipart.com/png/small/287-2874322_pc-pc-logo-png.png" alt="PC">
+        </div>
+
+        <button class="btn-abrir-coleccion btn-dlc-ficha-tecnica" id="btn-dlc-assassins-creed-revelations">DLC 📦</button>
+    </section>
+
+    <section id="seccion-dlc-assassins-creed-revelations" class="oculto">
+        <button class="btn-volver" id="btn-volver-dlc-assassins-creed-revelations">← Volver a Assassin's Creed: Revelations</button>
+        <h2>DLC — Assassin's Creed: Revelations</h2>
+        <div class="grilla-biblioteca">
+            <div class="tarjeta-media tarjeta-media-enlace" data-dlc-abrir="archivo-perdido-acr">
+                <img src="https://static.wikia.nocookie.net/assassinscreed/images/a/a7/LA_logo.png/revision/latest?cb=20120304115018" alt="El Archivo Perdido">
+                <h3>El Archivo Perdido</h3>
+                <p>DLC</p>
+            </div>
+            <div class="tarjeta-media tarjeta-media-enlace" data-dlc-abrir="ancestros-acr">
+                <img src="https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co6c8o.jpg" alt="Los Ancestros">
+                <h3>Los Ancestros</h3>
+                <p>DLC</p>
+            </div>
+            <div class="tarjeta-media tarjeta-media-enlace" data-dlc-abrir="viajero-mediterraneo-acr">
+                <img src="https://www.allkeyshop.com/blog/wp-content/uploads/buy-assassins-creed-revelations-mediterranean-traveler-map-pack-cd-key-pc-download-img1.jpg" alt="Pack del Viajero Mediterráneo">
+                <h3>Pack del Viajero Mediterráneo</h3>
+                <p>DLC</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="seccion-dlc-archivo-perdido-acr" class="oculto">
+        <button class="btn-volver btn-volver-dlc-individual-acr" id="btn-volver-dlc-archivo-perdido-acr">← Volver</button>
+        <div class="ficha-tecnica-encabezado">
+            <img src="https://static.wikia.nocookie.net/assassinscreed/images/a/a7/LA_logo.png/revision/latest?cb=20120304115018" alt="El Archivo Perdido" class="ficha-tecnica-poster">
+            <h2>El Archivo Perdido</h2>
+        </div>
+        <h3 class="subtitulo-ficha-tecnica subtitulo-ficha-tecnica-centrado">Descripción</h3>
+        <p class="ficha-tecnica-sinopsis">Explora el misterioso pasado del Sujeto 16 y de Lucy Stillman en 2 horas de contenido inédito para un jugador, que emplea el innovador estilo narrativo y la jugabilidad de plataformas y puzles estrenados en las secuencias de Desmond en el presente de Assassin's Creed Revelations.
+        <br><br>
+        Descarga The Lost Archive y desbloquea nuevo contenido:
+        <br>• Nuevas características para un jugador: 3 aspectos (Armadura de asesino turco de Ezio, túnica de Altaïr y Armadura de Bruto).
+        <br>• Mejoras de capacidad (para pistola, ballesta y bombas).
+        <br>• 1 misión adicional: «Prisión de Vlad el Empalador».
+        <br>• Nuevas características multijugador: 3 personajes (el Cruzado, el Bufón otomano y el Médico otomano).</p>
+        <p class="ficha-tecnica-nota">Fecha de lanzamiento: 28 de febrero de 2012</p>
+    </section>
+
+    <section id="seccion-dlc-ancestros-acr" class="oculto">
+        <button class="btn-volver btn-volver-dlc-individual-acr" id="btn-volver-dlc-ancestros-acr">← Volver</button>
+        <div class="ficha-tecnica-encabezado">
+            <img src="https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co6c8o.jpg" alt="Los Ancestros" class="ficha-tecnica-poster">
+            <h2>Los Ancestros</h2>
+        </div>
+        <h3 class="subtitulo-ficha-tecnica subtitulo-ficha-tecnica-centrado">Descripción</h3>
+        <p class="ficha-tecnica-sinopsis">Descarga el paquete de personajes multijugador «Ancestors» de Assassin's Creed Revelations y obtén 4 nuevos personajes para el modo multijugador: el audaz Corsario, la letal sirena Corsaria, el oportunista Bandido y el sanguinario Gladiador. El contenido descargable (DLC) «Ancestors» también incluye nuevos objetos de personalización para tus personajes.</p>
+        <p class="ficha-tecnica-nota">Fecha de lanzamiento: 13 de diciembre de 2011</p>
+    </section>
+
+    <section id="seccion-dlc-viajero-mediterraneo-acr" class="oculto">
+        <button class="btn-volver btn-volver-dlc-individual-acr" id="btn-volver-dlc-viajero-mediterraneo-acr">← Volver</button>
+        <div class="ficha-tecnica-encabezado">
+            <img src="https://www.allkeyshop.com/blog/wp-content/uploads/buy-assassins-creed-revelations-mediterranean-traveler-map-pack-cd-key-pc-download-img1.jpg" alt="Pack del Viajero Mediterráneo" class="ficha-tecnica-poster">
+            <h2>Pack del Viajero Mediterráneo</h2>
+        </div>
+        <h3 class="subtitulo-ficha-tecnica subtitulo-ficha-tecnica-centrado">Descripción</h3>
+        <p class="ficha-tecnica-sinopsis">Descarga gratis el «Maps Pack - Trial Version» de Assassin's Creed Revelations y juega en 6 mapas multijugador, que incluyen 3 ubicaciones nuevas (Jerusalén, Imperial y Dyers) y 3 mapas de Assassin's Creed Brotherhood (Siena, Florencia y San Donato).</p>
+        <p class="ficha-tecnica-nota">Fecha de lanzamiento: 24 de enero de 2012</p>
+    </section>
+
+    <section id="seccion-peliculas-halloween" class="oculto">
+        <button class="btn-volver" id="btn-volver-peliculas-halloween">← Volver</button>
+        <h2>🎃 Películas</h2>
+        <div class="carrusel-horizontal-contenedor">
+            <div class="carrusel-horizontal grilla-biblioteca" id="grilla-peliculas-halloween"></div>
+            <button class="btn-carrusel-flecha" id="btn-carrusel-peliculas-siguiente">▶</button>
+        </div>
+    </section>
+
+    <section id="seccion-videojuegos-halloween" class="oculto">
+        <button class="btn-volver" id="btn-volver-videojuegos-halloween">← Volver</button>
+        <h2>🎃 Videojuegos (Halloween)</h2>
+        <div class="grilla-biblioteca" id="grilla-videojuegos-halloween"></div>
+    </section>
+
+    <section id="seccion-comics-halloween" class="oculto">
+        <button class="btn-volver" id="btn-volver-comics-halloween">← Volver</button>
+        <h2>🎃 Comics (Halloween)</h2>
+        <div class="grilla-biblioteca" id="grilla-comics-halloween"></div>
     </section>
 
     <section id="seccion-james-gunn" class="oculto">

@@ -1,4 +1,30 @@
 const listaMedia = [
+    // --- HALLOWEEN (terror: películas, videojuegos y cómics) ---
+    // Posters provisorios (placeholder) hasta que se carguen los reales.
+    { titulo: "Nosferatu (1922)", categoria: "peliculas-halloween", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "Frankenstein (1931)", categoria: "peliculas-halloween", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "Psicosis", categoria: "peliculas-halloween", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "El Exorcista", categoria: "peliculas-halloween", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "Halloween (1978)", categoria: "peliculas-halloween", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "El Resplandor", categoria: "peliculas-halloween", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "El Conjuro", categoria: "peliculas-halloween", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "It", categoria: "peliculas-halloween", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+
+    { titulo: "Dead by Daylight", categoria: "videojuegos-halloween", tipo: "Videojuego", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "Resident Evil", categoria: "videojuegos-halloween", tipo: "Videojuego", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "Halloween", categoria: "videojuegos-halloween", tipo: "Videojuego", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "Dead Space", categoria: "videojuegos-halloween", tipo: "Videojuego", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "Silent Hill 2", categoria: "videojuegos-halloween", tipo: "Videojuego", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "The Last of Us Parte I", categoria: "videojuegos-halloween", tipo: "Videojuego", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "Outlast", categoria: "videojuegos-halloween", tipo: "Videojuego", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+
+    { titulo: "Batman: El Largo Halloween", categoria: "comics-halloween", tipo: "Cómic", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "Marvel Zombies", categoria: "comics-halloween", tipo: "Cómic", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "Horror Marvel", categoria: "comics-halloween", tipo: "Cómic", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "Batman Vampiro", categoria: "comics-halloween", tipo: "Cómic", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "DCeased", categoria: "comics-halloween", tipo: "Cómic", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "Virus Zombie", categoria: "comics-halloween", tipo: "Cómic", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+
     // --- ROAD TO DOOMSDAY (ordenado por fecha de estreno) ---
     { titulo: "X-Men (2000)", categoria: "doomsday", tier: 3, tipo: "Película", poster: "https://i.pinimg.com/736x/f9/7c/3f/f97c3f94f67ca6fd6ae7ad0470d6d553.jpg" },
     { titulo: "X2: X-Men United", categoria: "doomsday", tier: 3, tipo: "Película", poster: "https://m.media-amazon.com/images/I/714SAYP7EQL.AC_UF894,1000_QL80.jpg" },
@@ -193,10 +219,10 @@ const listaMedia = [
     { titulo: "A Knight of the Seven Kingdoms", categoria: "game-of-thrones", tipo: "Serie", ordenSalida: 3, crono: 2, poster: "https://image.tmdb.org/t/p/original/mBDO4PLEiFaBrj4RO0mWdW6tSUs.jpg" },
 
     // --- ASSASSIN'S CREED (con doble orden: lanzamiento / cronológico histórico) ---
-    { titulo: "Assassin's Creed", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 1, crono: 5, poster: "https://m.media-amazon.com/images/M/MV5BNmI1NDQ4ZjYtZmFjMy00MjZkLTkyNzktYjE2NzU4MmVmNTg2XkEyXkFqcGc@._V1_.jpg" },
-    { titulo: "Assassin's Creed II", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 2, crono: 6, poster: "https://cdn1.epicgames.com/salesEvent/salesEvent/AC2_GameName_Store_Portrait_1200x1600_1200x1600-2c5e000213988c5dde375bb2602e9986" },
-    { titulo: "Assassin's Creed: Brotherhood", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 3, crono: 7, poster: "https://images.g2a.com/323x433/1x1x1/assassins-creed-brotherhood-p10000043255/dc54b5ec98ab409c9c9332e3" },
-    { titulo: "Assassin's Creed: Revelations", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 4, crono: 8, poster: "https://m.media-amazon.com/images/M/MV5BOWM3YjRkM2MtZmU3My00OTc4LTg0MDMtMmEzYjc3NWNjMjIxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Assassin's Creed", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 1, crono: 5, fichaTecnicaId: "assassins-creed-1", poster: "https://m.media-amazon.com/images/M/MV5BNmI1NDQ4ZjYtZmFjMy00MjZkLTkyNzktYjE2NzU4MmVmNTg2XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Assassin's Creed II", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 2, crono: 6, fichaTecnicaId: "assassins-creed-2", poster: "https://cdn1.epicgames.com/salesEvent/salesEvent/AC2_GameName_Store_Portrait_1200x1600_1200x1600-2c5e000213988c5dde375bb2602e9986" },
+    { titulo: "Assassin's Creed: Brotherhood", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 3, crono: 7, fichaTecnicaId: "assassins-creed-brotherhood", poster: "https://images.g2a.com/323x433/1x1x1/assassins-creed-brotherhood-p10000043255/dc54b5ec98ab409c9c9332e3" },
+    { titulo: "Assassin's Creed: Revelations", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 4, crono: 8, fichaTecnicaId: "assassins-creed-revelations", poster: "https://m.media-amazon.com/images/M/MV5BOWM3YjRkM2MtZmU3My00OTc4LTg0MDMtMmEzYjc3NWNjMjIxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
     { titulo: "Assassin's Creed III", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 5, crono: 12, poster: "https://static.posters.cz/image/1300/12811.jpg" },
     { titulo: "Assassin's Creed IV: Black Flag", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 6, crono: 10, poster: "https://mir-s3-cdn-cf.behance.net/project_modules/hd/4c4b7612856287.5626e31d6576f.jpg" },
     { titulo: "Assassin's Creed: Rogue", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 7, crono: 11, poster: "https://images.gog.com/ec9bdb99d06eb876d115146abd005e9fa18a586f69efcc87dd874e483317e941_glx_vertical_cover.webp?namespace=gamesdb" },
@@ -3703,8 +3729,8 @@ const colecciones = [
         esVideojuego: true,
         peliculas: [
             { titulo: "Marvel's Spider-Man", fichaTecnicaId: "marvel-spiderman-1", poster: "https://i.pinimg.com/736x/8a/0e/71/8a0e71a79745c31ad71f2a83f33b91e1.jpg" },
-            { titulo: "Marvel's Spider-Man: Miles Morales", poster: "https://image.api.playstation.com/vulcan/ap/rnd/202008/1423/cZaoNGoCXpClHpljuPVPSUlw.jpg" },
-            { titulo: "Marvel's Spider-Man 2", poster: "https://m.media-amazon.com/images/M/MV5BZmUwYTNjZTAtOTYxYS00NmM3LTkwODEtNWM2NDNlOGZlYzMyXkEyXkFqcGc@.V1.jpg" },
+            { titulo: "Marvel's Spider-Man: Miles Morales", fichaTecnicaId: "marvel-spiderman-mm", poster: "https://image.api.playstation.com/vulcan/ap/rnd/202008/1423/cZaoNGoCXpClHpljuPVPSUlw.jpg" },
+            { titulo: "Marvel's Spider-Man 2", fichaTecnicaId: "marvel-spiderman-2", poster: "https://m.media-amazon.com/images/M/MV5BZmUwYTNjZTAtOTYxYS00NmM3LTkwODEtNWM2NDNlOGZlYzMyXkEyXkFqcGc@.V1.jpg" },
             { titulo: "Marvel's Wolverine", poster: "https://cdnb.artstation.com/p/assets/images/images/092/247/923/large/bat-knight-channel-marvel-swolverine-coverartwallpaper01.webp?1759124311" }
         ]
     },
@@ -5479,7 +5505,10 @@ function renderizarContenido() {
         "oscar-2026": "seccion-oscar-2026",
         "marvel-animacion": "seccion-marvel-animacion",
         "sitcoms": "seccion-sitcoms",
-        "pokemon-canon": "seccion-pokemon-canon"
+        "pokemon-canon": "seccion-pokemon-canon",
+        "peliculas-halloween": "seccion-peliculas-halloween",
+        "videojuegos-halloween": "seccion-videojuegos-halloween",
+        "comics-halloween": "seccion-comics-halloween"
     };
 
     listaMedia.forEach(item => {
@@ -6663,6 +6692,24 @@ function cambiarSeccion(seccionNueva) {
     if (seccionNueva.id === 'seccion-requisitos-marvel-spiderman-1' && typeof armarComparacionMiPC === 'function') {
         armarComparacionMiPC('seccion-requisitos-marvel-spiderman-1', REQUISITOS_MARVEL_SPIDERMAN_1);
     }
+    if (seccionNueva.id === 'seccion-requisitos-marvel-cosmic-invasion' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-marvel-cosmic-invasion', REQUISITOS_MARVEL_COSMIC_INVASION);
+    }
+    if (seccionNueva.id === 'seccion-requisitos-marvel-spiderman-mm' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-marvel-spiderman-mm', REQUISITOS_MARVEL_SPIDERMAN_MM);
+    }
+    if (seccionNueva.id === 'seccion-requisitos-marvel-spiderman-2' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-marvel-spiderman-2', REQUISITOS_MARVEL_SPIDERMAN_2);
+    }
+    if (seccionNueva.id === 'seccion-requisitos-assassins-creed-1' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-assassins-creed-1', REQUISITOS_ASSASSINS_CREED_1);
+    }
+    if (seccionNueva.id === 'seccion-requisitos-assassins-creed-2' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-assassins-creed-2', REQUISITOS_ASSASSINS_CREED_2);
+    }
+    if (seccionNueva.id === 'seccion-requisitos-assassins-creed-brotherhood' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-assassins-creed-brotherhood', REQUISITOS_ASSASSINS_CREED_BROTHERHOOD);
+    }
 }
 
 const btnDoomsday = document.getElementById('btn-doomsday');
@@ -7784,7 +7831,13 @@ const JUEGOS_CON_REQUISITOS_MIPC = [
     { titulo: "Injustice 2", seccion: "injustice-2", requisitos: () => REQUISITOS_INJUSTICE_2 },
     { titulo: "Marvel's Avengers", seccion: "marvels-avengers-real", seccionFichaId: "seccion-marvels-avengers", requisitos: () => REQUISITOS_MARVELS_AVENGERS_REAL },
     { titulo: "Marvel's Guardians of the Galaxy", seccion: "marvel-gotg", requisitos: () => REQUISITOS_MARVEL_GOTG },
-    { titulo: "Marvel's Spider-Man", seccion: "marvel-spiderman-1", requisitos: () => REQUISITOS_MARVEL_SPIDERMAN_1 }
+    { titulo: "Marvel's Spider-Man", seccion: "marvel-spiderman-1", requisitos: () => REQUISITOS_MARVEL_SPIDERMAN_1 },
+    { titulo: "Marvel's Spider-Man: Miles Morales", seccion: "marvel-spiderman-mm", requisitos: () => REQUISITOS_MARVEL_SPIDERMAN_MM },
+    { titulo: "Marvel Cosmic Invasion", seccion: "marvel-cosmic-invasion", requisitos: () => REQUISITOS_MARVEL_COSMIC_INVASION },
+    { titulo: "Marvel's Spider-Man 2", seccion: "marvel-spiderman-2", requisitos: () => REQUISITOS_MARVEL_SPIDERMAN_2 },
+    { titulo: "Assassin's Creed", seccion: "assassins-creed-1", requisitos: () => REQUISITOS_ASSASSINS_CREED_1 },
+    { titulo: "Assassin's Creed II", seccion: "assassins-creed-2", requisitos: () => REQUISITOS_ASSASSINS_CREED_2 },
+    { titulo: "Assassin's Creed: Brotherhood", seccion: "assassins-creed-brotherhood", requisitos: () => REQUISITOS_ASSASSINS_CREED_BROTHERHOOD }
 ];
 
 // Comparación rápida (mismo criterio numérico que armarComparacionMiPC)
@@ -8935,7 +8988,398 @@ const REQUISITOS_MARVEL_SPIDERMAN_1 = {
     recomendado: { so: "Windows 10 (64 bits)", cpu: "Intel Core i5-4670 (3.4 GHz) o AMD Ryzen 5 1600 (3.2 GHz)", ram: "16", almacenamiento: "75", directx: "DirectX 12", gpu: "NVIDIA GeForce GTX 1060 (6 GB) o AMD Radeon RX 580 (8 GB)" }
 };
 
+const btnVolverFichaMarvelSpidermanMM = document.getElementById('btn-volver-ficha-marvel-spiderman-mm');
+if (btnVolverFichaMarvelSpidermanMM) {
+    btnVolverFichaMarvelSpidermanMM.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-marvel-spiderman-mm');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-videojuegos-explorar'));
+    });
+}
+const btnRequisitosMarvelSpidermanMM = document.getElementById('btn-requisitos-marvel-spiderman-mm');
+if (btnRequisitosMarvelSpidermanMM) {
+    btnRequisitosMarvelSpidermanMM.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-marvel-spiderman-mm'));
+    });
+}
+const btnVolverRequisitosMarvelSpidermanMM = document.getElementById('btn-volver-requisitos-marvel-spiderman-mm');
+if (btnVolverRequisitosMarvelSpidermanMM) {
+    btnVolverRequisitosMarvelSpidermanMM.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-marvel-spiderman-mm'));
+    });
+}
+const REQUISITOS_MARVEL_SPIDERMAN_MM = {
+    minimos: { so: "Windows 10 de 64 bits (1909+)", cpu: "Intel Core i3-4160 (3.6 GHz) o AMD equivalente", ram: "8", almacenamiento: "75", directx: "DirectX 12", gpu: "NVIDIA GeForce GTX 950 o AMD Radeon RX 470" }
+};
+
+const btnRequisitosMarvelCosmicInvasion = document.getElementById('btn-requisitos-marvel-cosmic-invasion');
+if (btnRequisitosMarvelCosmicInvasion) {
+    btnRequisitosMarvelCosmicInvasion.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-marvel-cosmic-invasion'));
+    });
+}
+const btnVolverRequisitosMarvelCosmicInvasion = document.getElementById('btn-volver-requisitos-marvel-cosmic-invasion');
+if (btnVolverRequisitosMarvelCosmicInvasion) {
+    btnVolverRequisitosMarvelCosmicInvasion.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-marvel-cosmic-invasion'));
+    });
+}
+const REQUISITOS_MARVEL_COSMIC_INVASION = {
+    minimos: { so: "Windows 10 (64 bits)", cpu: "Intel Core 2 Duo E6550 o AMD Athlon 64 X2 6400+", ram: "4", almacenamiento: "1", directx: "", gpu: "NVIDIA GeForce GT 320 (1 GB), AMD Radeon HD 6570 (1 GB) o Intel HD Graphics" },
+    recomendado: { so: "Windows 10 (64 bits)", cpu: "Intel Core i3-540 o AMD Phenom II X2 550", ram: "8", almacenamiento: "1", directx: "", gpu: "NVIDIA GeForce GT 730 (2 GB), AMD Radeon R7 240 (2 GB) o Intel HD Graphics" }
+};
+
+// Se completan los Requisitos Recomendados de Miles Morales que faltaban.
+REQUISITOS_MARVEL_SPIDERMAN_MM.recomendado = { so: "Windows 10 de 64 bits (1909+)", cpu: "Intel Core i5-4670 (3.4 GHz) o AMD Ryzen 5 1600 (3.2 GHz)", ram: "16", almacenamiento: "75", directx: "DirectX 12", gpu: "NVIDIA GeForce GTX 1060 (6 GB) o AMD Radeon RX 580 (8 GB)" };
+
+const btnVolverFichaMarvelSpiderman2 = document.getElementById('btn-volver-ficha-marvel-spiderman-2');
+if (btnVolverFichaMarvelSpiderman2) {
+    btnVolverFichaMarvelSpiderman2.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-marvel-spiderman-2');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-videojuegos-explorar'));
+    });
+}
+const btnRequisitosMarvelSpiderman2 = document.getElementById('btn-requisitos-marvel-spiderman-2');
+if (btnRequisitosMarvelSpiderman2) {
+    btnRequisitosMarvelSpiderman2.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-marvel-spiderman-2'));
+    });
+}
+const btnVolverRequisitosMarvelSpiderman2 = document.getElementById('btn-volver-requisitos-marvel-spiderman-2');
+if (btnVolverRequisitosMarvelSpiderman2) {
+    btnVolverRequisitosMarvelSpiderman2.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-marvel-spiderman-2'));
+    });
+}
+const REQUISITOS_MARVEL_SPIDERMAN_2 = {
+    minimos: { so: "Windows 10 / 11 de 64 bits (1909+)", cpu: "Intel Core i3-8100 o AMD Ryzen 3 3100", ram: "16", almacenamiento: "140", directx: "", gpu: "NVIDIA GeForce GTX 1650 o AMD Radeon RX 5500 XT" },
+    recomendado: { so: "Windows 10 / 11 de 64 bits (1909+)", cpu: "Intel Core i5-8400 o AMD Ryzen 5 3600", ram: "16", almacenamiento: "140", directx: "", gpu: "NVIDIA GeForce RTX 3060 o AMD Radeon RX 5700" }
+};
+
+const btnVolverFichaAssassinsCreed1 = document.getElementById('btn-volver-ficha-assassins-creed-1');
+if (btnVolverFichaAssassinsCreed1) {
+    btnVolverFichaAssassinsCreed1.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-assassins-creed-1');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-assassins-creed'));
+    });
+}
+const btnRequisitosAssassinsCreed1 = document.getElementById('btn-requisitos-assassins-creed-1');
+if (btnRequisitosAssassinsCreed1) {
+    btnRequisitosAssassinsCreed1.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-assassins-creed-1'));
+    });
+}
+const btnVolverRequisitosAssassinsCreed1 = document.getElementById('btn-volver-requisitos-assassins-creed-1');
+if (btnVolverRequisitosAssassinsCreed1) {
+    btnVolverRequisitosAssassinsCreed1.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-assassins-creed-1'));
+    });
+}
+const REQUISITOS_ASSASSINS_CREED_1 = {
+    minimos: { so: "Windows XP o Windows Vista (oficial)", cpu: "Intel Pentium D Dual Core (2.6 GHz) o AMD Athlon 64 X2 3800+", ram: "1", almacenamiento: "8", directx: "", gpu: "Compatible con DirectX 9.0 o 10.0 y Shader Model 3.0 (NVIDIA GeForce 6800 o ATI Radeon X1600 en adelante)" },
+    recomendado: { so: "Windows XP o Windows Vista", cpu: "Intel Core 2 Duo (2.2 GHz) o AMD Athlon 64 X2 4400+ (o superior)", ram: "2", almacenamiento: "8", directx: "", gpu: "512 MB de VRAM (NVIDIA GeForce serie 7/8/9 o ATI Radeon serie HD 2000/3000)" }
+};
+
+const btnVolverFichaAssassinsCreed2 = document.getElementById('btn-volver-ficha-assassins-creed-2');
+if (btnVolverFichaAssassinsCreed2) {
+    btnVolverFichaAssassinsCreed2.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-assassins-creed-2');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-assassins-creed'));
+    });
+}
+const btnRequisitosAssassinsCreed2 = document.getElementById('btn-requisitos-assassins-creed-2');
+if (btnRequisitosAssassinsCreed2) {
+    btnRequisitosAssassinsCreed2.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-assassins-creed-2'));
+    });
+}
+const btnVolverRequisitosAssassinsCreed2 = document.getElementById('btn-volver-requisitos-assassins-creed-2');
+if (btnVolverRequisitosAssassinsCreed2) {
+    btnVolverRequisitosAssassinsCreed2.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-assassins-creed-2'));
+    });
+}
+const REQUISITOS_ASSASSINS_CREED_2 = {
+    minimos: { so: "Windows XP / Vista / 7", cpu: "Intel Core 2 Duo (1.8 GHz) o AMD Athlon X2 64 (2.4 GHz)", ram: "1.5", almacenamiento: "8", directx: "DirectX 9.0c", gpu: "256 MB de VRAM compatible con Shader Model 3.0 (NVIDIA GeForce serie 8800 o ATI Radeon serie HD 2000 en adelante)" },
+    recomendado: { so: "Windows XP / Vista / 7", cpu: "Intel Core 2 Duo E6700 (2.6 GHz) o AMD Athlon 64 X2 6000+ (o superior)", ram: "1.5", almacenamiento: "8", directx: "", gpu: "512 MB de VRAM (NVIDIA GeForce serie 9800 o ATI Radeon serie HD 4000 en adelante)" }
+};
+
+const btnVolverFichaAssassinsCreedBrotherhood = document.getElementById('btn-volver-ficha-assassins-creed-brotherhood');
+if (btnVolverFichaAssassinsCreedBrotherhood) {
+    btnVolverFichaAssassinsCreedBrotherhood.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-assassins-creed-brotherhood');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-assassins-creed'));
+    });
+}
+const btnDlcAssassinsCreedBrotherhood = document.getElementById('btn-dlc-assassins-creed-brotherhood');
+if (btnDlcAssassinsCreedBrotherhood) {
+    btnDlcAssassinsCreedBrotherhood.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-assassins-creed-brotherhood'));
+    });
+}
+const btnVolverDlcAssassinsCreedBrotherhood = document.getElementById('btn-volver-dlc-assassins-creed-brotherhood');
+if (btnVolverDlcAssassinsCreedBrotherhood) {
+    btnVolverDlcAssassinsCreedBrotherhood.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-assassins-creed-brotherhood'));
+    });
+}
+document.querySelectorAll('.btn-volver-dlc-individual-acb').forEach(boton => {
+    boton.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-assassins-creed-brotherhood'));
+    });
+});
+const btnRequisitosAssassinsCreedBrotherhood = document.getElementById('btn-requisitos-assassins-creed-brotherhood');
+if (btnRequisitosAssassinsCreedBrotherhood) {
+    btnRequisitosAssassinsCreedBrotherhood.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-assassins-creed-brotherhood'));
+    });
+}
+const btnVolverRequisitosAssassinsCreedBrotherhood = document.getElementById('btn-volver-requisitos-assassins-creed-brotherhood');
+if (btnVolverRequisitosAssassinsCreedBrotherhood) {
+    btnVolverRequisitosAssassinsCreedBrotherhood.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-assassins-creed-brotherhood'));
+    });
+}
+const REQUISITOS_ASSASSINS_CREED_BROTHERHOOD = {
+    minimos: { so: "Windows XP / Vista / 7", cpu: "Intel Core 2 Duo (1.8 GHz) o AMD Athlon X2 64 (2.4 GHz)", ram: "1.5", almacenamiento: "8", directx: "DirectX 9.0c", gpu: "256 MB de VRAM compatible con Shader Model 3.0 (NVIDIA GeForce serie 7900 o ATI Radeon serie X1950 en adelante)" },
+    recomendado: { so: "Windows XP / Vista / 7", cpu: "Intel Core 2 Duo E6700 (2.6 GHz) o AMD Athlon 64 X2 6000+ (o superior)", ram: "1.5", almacenamiento: "8", directx: "", gpu: "512 MB de VRAM (NVIDIA GeForce serie 8800 o ATI Radeon serie HD 4700 en adelante)" }
+};
+
+const btnVolverFichaAssassinsCreedRevelations = document.getElementById('btn-volver-ficha-assassins-creed-revelations');
+if (btnVolverFichaAssassinsCreedRevelations) {
+    btnVolverFichaAssassinsCreedRevelations.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-assassins-creed-revelations');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-assassins-creed'));
+    });
+}
+const btnDlcAssassinsCreedRevelations = document.getElementById('btn-dlc-assassins-creed-revelations');
+if (btnDlcAssassinsCreedRevelations) {
+    btnDlcAssassinsCreedRevelations.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-assassins-creed-revelations'));
+    });
+}
+const btnVolverDlcAssassinsCreedRevelations = document.getElementById('btn-volver-dlc-assassins-creed-revelations');
+if (btnVolverDlcAssassinsCreedRevelations) {
+    btnVolverDlcAssassinsCreedRevelations.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-assassins-creed-revelations'));
+    });
+}
+document.querySelectorAll('.btn-volver-dlc-individual-acr').forEach(boton => {
+    boton.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-assassins-creed-revelations'));
+    });
+});
+
+// ==========================================
+// TEMA HALLOWEEN — se activa solo del 1 al 31 de octubre (cualquier
+// año), sin tocar nada a mano. Usa la fecha del dispositivo, así que
+// cada visitante lo ve prender y apagar automáticamente según el día.
+// ==========================================
+function activarTemaHalloweenSiCorresponde() {
+    const hoy = new Date();
+    const esOctubre = hoy.getMonth() === 9; // 0-indexado: 9 = octubre
+    const titulo = document.getElementById('titulo-principal');
+
+    document.documentElement.classList.toggle('halloween-activo', esOctubre);
+
+    if (titulo) {
+        titulo.textContent = esOctubre ? 'LIBRO DE LOS VISHANTI' : 'EL MULTIVERSO';
+    }
+}
+
+activarTemaHalloweenSiCorresponde();
+
+const btnPeliculasHalloween = document.getElementById('btn-peliculas-halloween');
+if (btnPeliculasHalloween) {
+    btnPeliculasHalloween.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-peliculas-halloween'));
+    });
+}
+const btnVolverPeliculasHalloween = document.getElementById('btn-volver-peliculas-halloween');
+if (btnVolverPeliculasHalloween) {
+    btnVolverPeliculasHalloween.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-doomsday'));
+    });
+}
+const btnCarruselPeliculasSiguiente = document.getElementById('btn-carrusel-peliculas-siguiente');
+if (btnCarruselPeliculasSiguiente) {
+    btnCarruselPeliculasSiguiente.addEventListener('click', () => {
+        const carrusel = document.getElementById('grilla-peliculas-halloween');
+        if (!carrusel) return;
+        const anchoTarjeta = 176; // 160px de tarjeta + 16px de gap
+        // Al llegar al final, vuelve al principio para poder seguir dando vueltas.
+        const alFinal = carrusel.scrollLeft + carrusel.clientWidth >= carrusel.scrollWidth - 10;
+        carrusel.scrollTo({ left: alFinal ? 0 : carrusel.scrollLeft + anchoTarjeta * 3, behavior: 'smooth' });
+    });
+}
+
+const btnVideojuegosHalloween = document.getElementById('btn-videojuegos-halloween');
+if (btnVideojuegosHalloween) {
+    btnVideojuegosHalloween.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-videojuegos-halloween'));
+    });
+}
+const btnVolverVideojuegosHalloween = document.getElementById('btn-volver-videojuegos-halloween');
+if (btnVolverVideojuegosHalloween) {
+    btnVolverVideojuegosHalloween.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-doomsday'));
+    });
+}
+
+const btnComicsHalloween = document.getElementById('btn-comics-halloween');
+if (btnComicsHalloween) {
+    btnComicsHalloween.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-comics-halloween'));
+    });
+}
+const btnVolverComicsHalloween = document.getElementById('btn-volver-comics-halloween');
+if (btnVolverComicsHalloween) {
+    btnVolverComicsHalloween.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-doomsday'));
+    });
+}
+
 const btnVolverFichaLegoJurassicWorld = document.getElementById('btn-volver-ficha-lego-jurassic-world');
+
+
+// ==========================================
+// "RELACIONADO" — al pie de cada ficha técnica, muestra a qué
+// colección(es) pertenece ese juego, con un botón que lleva directo a
+// esa colección. Se calcula solo, buscando el título en el array
+// `colecciones`: no hay que tocar esto cada vez que se crea una ficha
+// nueva, mientras el juego ya esté agregado a alguna colección.
+// ==========================================
+const FICHAS_TECNICAS_TITULOS = {
+    "iron-man": "Iron Man",
+    "incredible-hulk": "The Incredible Hulk",
+    "lego-batman-legacy": "LEGO Batman: Legacy of the Dark Knight",
+    "lego-swss": "LEGO Star Wars: The Skywalker Saga",
+    "lego-dc-super-villains": "LEGO DC Super-Villains",
+    "lego-marvel-sh2": "LEGO Marvel Super Heroes 2",
+    "lego-incredibles": "LEGO The Incredibles",
+    "lego-sw-tfa": "LEGO Star Wars: The Force Awakens",
+    "lego-marvel-avengers": "LEGO Marvel's Avengers",
+    "lego-jurassic-world": "LEGO Jurassic World",
+    "lego-batman-3": "LEGO Batman 3: Beyond Gotham",
+    "lego-hobbit": "LEGO: The Hobbit",
+    "lego-marvel-sh1": "LEGO Marvel Super Heroes",
+    "lego-lotr": "LEGO The Lord of the Rings",
+    "lego-batman-2": "LEGO Batman 2: DC Super Heroes",
+    "lego-hp-5-7": "LEGO Harry Potter: Years 5-7",
+    "lego-pirates": "LEGO Pirates of the Caribbean: The Video Game",
+    "lego-sw3-clone-wars": "LEGO Star Wars III: The Clone Wars",
+    "lego-hp-1-4": "LEGO Harry Potter: Years 1-4",
+    "lego-batman-1": "LEGO Batman: The Videogame",
+    "lego-ij2": "LEGO Indiana Jones 2: The Adventure Continues",
+    "lego-ij1": "LEGO Indiana Jones: The Original Adventures",
+    "lego-sw-complete-saga": "LEGO Star Wars: The Complete Saga",
+    "sw-jedi-fallen-order": "Star Wars Jedi: Fallen Order",
+    "sw-jedi-survivor": "Star Wars Jedi: Survivor",
+    "tomb-raider-2013": "Tomb Raider (2013)",
+    "rise-tomb-raider": "Rise of The Tomb Raider",
+    "shadow-tomb-raider": "Shadow of The Tomb Raider",
+    "injustice-1": "Injustice: Gods Among Us",
+    "injustice-2": "Injustice 2",
+    "marvel-gotg": "Marvel's Guardians of the Galaxy",
+    "marvel-cosmic-invasion": "Marvel Cosmic Invasion",
+    "marvel-spiderman-1": "Marvel's Spider-Man",
+    "marvel-spiderman-mm": "Marvel's Spider-Man: Miles Morales",
+    "marvel-spiderman-2": "Marvel's Spider-Man 2",
+    "assassins-creed-1": "Assassin's Creed",
+    "assassins-creed-2": "Assassin's Creed II",
+    "assassins-creed-brotherhood": "Assassin's Creed: Brotherhood",
+    "assassins-creed-revelations": "Assassin's Creed: Revelations"
+};
+
+// Casos con id de sección no estándar (no siguen "seccion-ficha-<id>").
+const FICHAS_TECNICAS_SECCION_ESPECIAL = {
+    "marvels-avengers-real": { seccionId: "seccion-marvels-avengers", titulo: "Marvel's Avengers" }
+};
+
+function calcularColeccionesRelacionadas(titulo) {
+    const encontradas = [];
+    const idsYaAgregados = new Set();
+
+    colecciones.forEach(col => {
+        if (col.peliculas && col.peliculas.some(p => p.titulo === titulo)) {
+            encontradas.push({ id: col.id, titulo: col.titulo });
+            idsYaAgregados.add(col.id);
+        }
+    });
+
+    // Segundo patrón: el ítem vive como listaMedia plano con una
+    // "categoria" que coincide con el id de una colección-hub (ej.
+    // Assassin's Creed, Iron Man dentro del MCU cronológico): ahí la
+    // relación no es por "peliculas", sino por esa categoría compartida.
+    const itemPlano = listaMedia.find(m => m.titulo === titulo && m.categoria);
+    if (itemPlano) {
+        const colHub = colecciones.find(c => c.id === itemPlano.categoria);
+        if (colHub && !idsYaAgregados.has(colHub.id)) {
+            encontradas.push({ id: colHub.id, titulo: colHub.titulo });
+            idsYaAgregados.add(colHub.id);
+        }
+    }
+
+    // Tercer patrón: la categoría apunta a una sección estática que no
+    // tiene un objeto `colecciones` propio (ej. Iron Man dentro de
+    // "MCU: Saga del Infinito"). Se toma el <h2> de esa sección como
+    // nombre a mostrar.
+    if (itemPlano && !encontradas.some(e => e.id === itemPlano.categoria)) {
+        const seccionEstatica = document.getElementById(`seccion-${itemPlano.categoria}`);
+        const encabezado = seccionEstatica ? seccionEstatica.querySelector(':scope > h2') : null;
+        if (seccionEstatica && encabezado) {
+            encontradas.push({ id: itemPlano.categoria, titulo: encabezado.textContent });
+        }
+    }
+
+    return encontradas;
+}
+
+function inyectarRelacionados(seccionFichaId, titulo) {
+    const seccion = document.getElementById(seccionFichaId);
+    if (!seccion) return;
+    if (seccion.querySelector('.ficha-tecnica-relacionados')) return; // ya inyectado
+    const relacionadas = calcularColeccionesRelacionadas(titulo);
+    if (relacionadas.length === 0) return;
+
+    const bloque = document.createElement('div');
+    bloque.className = 'ficha-tecnica-relacionados';
+    bloque.innerHTML = `
+        <h3 class="subtitulo-ficha-tecnica">Relacionado</h3>
+        <div class="ficha-tecnica-relacionados-lista"></div>
+    `;
+    const lista = bloque.querySelector('.ficha-tecnica-relacionados-lista');
+    relacionadas.forEach(col => {
+        const boton = document.createElement('button');
+        boton.className = 'btn-relacionado';
+        boton.textContent = `📁 ${col.titulo}`;
+        boton.addEventListener('click', () => {
+            const seccionDestino = document.getElementById(`seccion-${col.id}`);
+            if (seccionDestino) cambiarSeccion(seccionDestino);
+        });
+        lista.appendChild(boton);
+    });
+    seccion.appendChild(bloque);
+}
+
+Object.entries(FICHAS_TECNICAS_TITULOS).forEach(([fichaId, titulo]) => {
+    inyectarRelacionados(`seccion-ficha-${fichaId}`, titulo);
+});
+Object.values(FICHAS_TECNICAS_SECCION_ESPECIAL).forEach(({ seccionId, titulo }) => {
+    inyectarRelacionados(seccionId, titulo);
+});
+
 
 if (btnVolverFichaLegoJurassicWorld) {
     btnVolverFichaLegoJurassicWorld.addEventListener('click', () => {

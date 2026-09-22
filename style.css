@@ -6,6 +6,74 @@
     --success-color: #28a745;
 }
 
+/* ===== TEMA HALLOWEEN (1 al 31 de octubre) =====
+   Se activa/desactiva solo agregando/quitando la clase .halloween-activo
+   en <html> (ver activarTemaHalloweenSiCorresponde en script.js). Cambiar
+   --accent-color en un solo lugar alcanza para que TODO lo que ya usa esa
+   variable (título, bordes, fondos de botones, etc.) pase a naranja sin
+   tocar el resto del CSS; los pocos rojos "duros" (#e74c3c, no ligados a
+   la variable) se pisan acá aparte.
+*/
+html.halloween-activo {
+    --accent-color: #ff8c00;
+}
+
+.halloween-activo #btn-comics {
+    background-color: #ff8c00 !important;
+}
+
+.halloween-activo .notificacion-error,
+.halloween-activo .logro-texto-notif small,
+.halloween-activo .mensaje-elenco.error,
+.halloween-activo .timer-nombralos.tiempo-poco,
+.halloween-activo .sugerencia-item-juego .sugerencia-juego-te-corre.no,
+.halloween-activo .mipc-falta {
+    color: #ff8c00 !important;
+}
+
+.halloween-activo .header-top h1::after {
+    content: " 🎃";
+}
+
+.halloween-arana {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 40px;
+    width: 70px;
+    height: 140px;
+    z-index: 999;
+    pointer-events: none;
+}
+
+.halloween-activo .halloween-arana {
+    display: block;
+}
+
+.halloween-arana .hilo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1px;
+    height: 90px;
+    background-color: #ccc;
+}
+
+.halloween-arana .cuerpo-arana {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 28px;
+    animation: halloween-balanceo 3.5s ease-in-out infinite;
+    transform-origin: top center;
+}
+
+@keyframes halloween-balanceo {
+    0%, 100% { transform: translateX(-50%) rotate(-8deg); }
+    50% { transform: translateX(-50%) rotate(8deg); }
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -1491,6 +1559,85 @@ h2 {
     width: auto;
     max-width: 60px;
     object-fit: contain;
+}
+
+.carrusel-horizontal-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.carrusel-horizontal {
+    display: flex;
+    gap: 16px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    flex: 1;
+    padding: 4px 0;
+}
+
+.carrusel-horizontal .tarjeta-media {
+    flex: 0 0 160px;
+}
+
+.btn-carrusel-flecha {
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.btn-carrusel-flecha:hover {
+    opacity: 0.85;
+}
+
+.tarjeta-media-poster-pendiente {
+    background-color: #1e2129;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+    height: 100%;
+    min-height: 220px;
+}
+
+.ficha-tecnica-relacionados {
+    margin-top: 26px;
+    padding-top: 18px;
+    border-top: 1px solid #2a2e38;
+}
+
+.ficha-tecnica-relacionados h3 {
+    margin-bottom: 10px;
+}
+
+.ficha-tecnica-relacionados-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.btn-relacionado {
+    background-color: #1e2129;
+    color: #f1c40f;
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 8px 14px;
+    font-size: 13px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.btn-relacionado:hover {
+    background-color: #2a2e38;
 }
 
 .btn-dlc-ficha-tecnica {
