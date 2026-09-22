@@ -1,9 +1,9 @@
 const listaMedia = [
     // --- HALLOWEEN (terror: películas, videojuegos y cómics) ---
     // Posters provisorios (placeholder) hasta que se carguen los reales.
-    { titulo: "Nosferatu (1922)", categoria: "peliculas-halloween", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
-    { titulo: "Frankenstein (1931)", categoria: "peliculas-halloween", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
-    { titulo: "Psicosis", categoria: "peliculas-halloween", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "Nosferatu (1922)", categoria: "peliculas-halloween", tipo: "Película", fichaTecnicaId: "nosferatu-1922", poster: "https://image.tmdb.org/t/p/original/zv7J85D8CC9qYagAEhPM63CIG6j.jpg" },
+    { titulo: "Frankenstein (1931)", categoria: "peliculas-halloween", tipo: "Película", fichaTecnicaId: "frankenstein-1931", poster: "https://m.media-amazon.com/images/I/71SArjhZzaL._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Psicosis", categoria: "peliculas-halloween", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/zdaucUFApic9SDmmmuShxhTeAyv.jpg" },
     { titulo: "El Exorcista", categoria: "peliculas-halloween", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
     { titulo: "Halloween (1978)", categoria: "peliculas-halloween", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
     { titulo: "El Resplandor", categoria: "peliculas-halloween", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
@@ -9250,6 +9250,25 @@ if (btnVolverComicsHalloween) {
     });
 }
 
+const btnVolverFichaNosferatu1922 = document.getElementById('btn-volver-ficha-nosferatu-1922');
+if (btnVolverFichaNosferatu1922) {
+    btnVolverFichaNosferatu1922.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-nosferatu-1922');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-peliculas-halloween'));
+    });
+}
+const btnVolverFichaFrankenstein1931 = document.getElementById('btn-volver-ficha-frankenstein-1931');
+if (btnVolverFichaFrankenstein1931) {
+    btnVolverFichaFrankenstein1931.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-frankenstein-1931');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-peliculas-halloween'));
+    });
+}
+
 const btnVolverFichaLegoJurassicWorld = document.getElementById('btn-volver-ficha-lego-jurassic-world');
 
 
@@ -9299,7 +9318,9 @@ const FICHAS_TECNICAS_TITULOS = {
     "assassins-creed-1": "Assassin's Creed",
     "assassins-creed-2": "Assassin's Creed II",
     "assassins-creed-brotherhood": "Assassin's Creed: Brotherhood",
-    "assassins-creed-revelations": "Assassin's Creed: Revelations"
+    "assassins-creed-revelations": "Assassin's Creed: Revelations",
+    "nosferatu-1922": "Nosferatu (1922)",
+    "frankenstein-1931": "Frankenstein (1931)"
 };
 
 // Casos con id de sección no estándar (no siguen "seccion-ficha-<id>").
