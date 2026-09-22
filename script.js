@@ -3,9 +3,9 @@ const listaMedia = [
     // Posters provisorios (placeholder) hasta que se carguen los reales.
     { titulo: "Nosferatu (1922)", categoria: "peliculas-halloween", tipo: "Película", fichaTecnicaId: "nosferatu-1922", poster: "https://image.tmdb.org/t/p/original/zv7J85D8CC9qYagAEhPM63CIG6j.jpg" },
     { titulo: "Frankenstein (1931)", categoria: "peliculas-halloween", tipo: "Película", fichaTecnicaId: "frankenstein-1931", poster: "https://m.media-amazon.com/images/I/71SArjhZzaL._AC_UF894,1000_QL80_.jpg" },
-    { titulo: "Psicosis", categoria: "peliculas-halloween", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/zdaucUFApic9SDmmmuShxhTeAyv.jpg" },
-    { titulo: "El Exorcista", categoria: "peliculas-halloween", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
-    { titulo: "Halloween (1978)", categoria: "peliculas-halloween", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "Psicosis", categoria: "peliculas-halloween", tipo: "Película", fichaTecnicaId: "psicosis", poster: "https://image.tmdb.org/t/p/original/zdaucUFApic9SDmmmuShxhTeAyv.jpg" },
+    { titulo: "El Exorcista", categoria: "peliculas-halloween", tipo: "Película", fichaTecnicaId: "el-exorcista", poster: "https://cdng.europosters.eu/pod_public/1300/262784.jpg" },
+    { titulo: "Halloween (1978)", categoria: "peliculas-halloween", tipo: "Película", fichaTecnicaId: "halloween-1978", poster: "https://image.tmdb.org/t/p/w220_and_h330_face/7CR8uDcGkdJFQeq6DxnbzyE2F3u.jpg" },
     { titulo: "El Resplandor", categoria: "peliculas-halloween", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
     { titulo: "El Conjuro", categoria: "peliculas-halloween", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
     { titulo: "It", categoria: "peliculas-halloween", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
@@ -31,7 +31,7 @@ const listaMedia = [
     { titulo: "X-Men: The Last Stand", categoria: "doomsday", tier: 3, tipo: "Película", poster: "https://pics.filmaffinity.com/x3_x_men_3_the_last_stand-992099331-large.jpg" },
     { titulo: "X-Men Origins: Wolverine", categoria: "doomsday", tier: 4, tipo: "Película", poster: "https://i.blogs.es/b07389/x_men_origins_wolverine/450_1000.jpg" },
     { titulo: "X-Men: First Class", categoria: "doomsday", tier: 3, tipo: "Película", poster: "https://collider.com/wp-content/uploads/x-men-first-class-teaser-poster.jpg" },
-    { titulo: "The Wolverine", categoria: "doomsday", tier: 4, tipo: "Película", poster: "https://www.mubis.es/media/articles/4563/45592/lobezno-inmortal-poster-imagenes-y-adelanto-del-primer-teaser-trailer-original.jpg" },
+    { titulo: "The Wolverine", categoria: "doomsday", tier: 4, tipo: "Película", poster: "https://image.tmdb.org/t/p/original/8lzmovtARDXnE7kTDOum02i6fXv.jpg" },
     { titulo: "X-Men: Days of Future Past", categoria: "doomsday", tier: 3, tipo: "Película", poster: "https://i0.wp.com/www.dorkaholics.com/wp-content/uploads/2014/04/9kcs.jpg?fit=692%2C1024&ssl=1" },
     { titulo: "Deadpool", categoria: "doomsday", tier: 4, tipo: "Película", poster: "https://m.media-amazon.com/images/I/71SBA4bdx8L._AC_UF894,1000_QL80_AIweblab1381794,T1_.jpg" },
     { titulo: "X-Men: Apocalypse", categoria: "doomsday", tier: 4, tipo: "Película", poster: "https://www.scifinow.co.uk/wp-content/uploads/2015/12/xmen_apocalypse_ver2.jpg" },
@@ -136,7 +136,7 @@ const listaMedia = [
     { titulo: "X2: X-Men United", categoria: "fox-xmen", tipo: "Película", poster: "https://m.media-amazon.com/images/I/714SAYP7EQL.AC_UF894,1000_QL80.jpg" },
     { titulo: "X-Men: The Last Stand", categoria: "fox-xmen", tipo: "Película", poster: "https://pics.filmaffinity.com/x3_x_men_3_the_last_stand-992099331-large.jpg" },
     { titulo: "X-Men Origins: Wolverine", categoria: "fox-xmen", tipo: "Película", poster: "https://i.blogs.es/b07389/x_men_origins_wolverine/450_1000.jpg" },
-    { titulo: "The Wolverine", categoria: "fox-xmen", tipo: "Película", poster: "https://www.mubis.es/media/articles/4563/45592/lobezno-inmortal-poster-imagenes-y-adelanto-del-primer-teaser-trailer-original.jpg" },
+    { titulo: "The Wolverine", categoria: "fox-xmen", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/8lzmovtARDXnE7kTDOum02i6fXv.jpg" },
     { titulo: "X-Men: First Class", categoria: "fox-xmen", tipo: "Película", poster: "https://collider.com/wp-content/uploads/x-men-first-class-teaser-poster.jpg" },
     { titulo: "X-Men: Days of Future Past", categoria: "fox-xmen", tipo: "Película", poster: "https://i0.wp.com/www.dorkaholics.com/wp-content/uploads/2014/04/9kcs.jpg?fit=692%2C1024&ssl=1" },
     { titulo: "X-Men: Apocalypse", categoria: "fox-xmen", tipo: "Película", poster: "https://www.scifinow.co.uk/wp-content/uploads/2015/12/xmen_apocalypse_ver2.jpg" },
@@ -6710,6 +6710,9 @@ function cambiarSeccion(seccionNueva) {
     if (seccionNueva.id === 'seccion-requisitos-assassins-creed-brotherhood' && typeof armarComparacionMiPC === 'function') {
         armarComparacionMiPC('seccion-requisitos-assassins-creed-brotherhood', REQUISITOS_ASSASSINS_CREED_BROTHERHOOD);
     }
+    if (seccionNueva.id === 'seccion-requisitos-assassins-creed-revelations' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-assassins-creed-revelations', REQUISITOS_ASSASSINS_CREED_REVELATIONS);
+    }
 }
 
 const btnDoomsday = document.getElementById('btn-doomsday');
@@ -7837,7 +7840,8 @@ const JUEGOS_CON_REQUISITOS_MIPC = [
     { titulo: "Marvel's Spider-Man 2", seccion: "marvel-spiderman-2", requisitos: () => REQUISITOS_MARVEL_SPIDERMAN_2 },
     { titulo: "Assassin's Creed", seccion: "assassins-creed-1", requisitos: () => REQUISITOS_ASSASSINS_CREED_1 },
     { titulo: "Assassin's Creed II", seccion: "assassins-creed-2", requisitos: () => REQUISITOS_ASSASSINS_CREED_2 },
-    { titulo: "Assassin's Creed: Brotherhood", seccion: "assassins-creed-brotherhood", requisitos: () => REQUISITOS_ASSASSINS_CREED_BROTHERHOOD }
+    { titulo: "Assassin's Creed: Brotherhood", seccion: "assassins-creed-brotherhood", requisitos: () => REQUISITOS_ASSASSINS_CREED_BROTHERHOOD },
+    { titulo: "Assassin's Creed: Revelations", seccion: "assassins-creed-revelations", requisitos: () => REQUISITOS_ASSASSINS_CREED_REVELATIONS }
 ];
 
 // Comparación rápida (mismo criterio numérico que armarComparacionMiPC)
@@ -9269,6 +9273,50 @@ if (btnVolverFichaFrankenstein1931) {
     });
 }
 
+const btnVolverFichaPsicosis = document.getElementById('btn-volver-ficha-psicosis');
+if (btnVolverFichaPsicosis) {
+    btnVolverFichaPsicosis.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-psicosis');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-peliculas-halloween'));
+    });
+}
+const btnVolverFichaElExorcista = document.getElementById('btn-volver-ficha-el-exorcista');
+if (btnVolverFichaElExorcista) {
+    btnVolverFichaElExorcista.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-el-exorcista');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-peliculas-halloween'));
+    });
+}
+const btnVolverFichaHalloween1978 = document.getElementById('btn-volver-ficha-halloween-1978');
+if (btnVolverFichaHalloween1978) {
+    btnVolverFichaHalloween1978.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-halloween-1978');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-peliculas-halloween'));
+    });
+}
+const btnRequisitosAssassinsCreedRevelations = document.getElementById('btn-requisitos-assassins-creed-revelations');
+if (btnRequisitosAssassinsCreedRevelations) {
+    btnRequisitosAssassinsCreedRevelations.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-assassins-creed-revelations'));
+    });
+}
+const btnVolverRequisitosAssassinsCreedRevelations = document.getElementById('btn-volver-requisitos-assassins-creed-revelations');
+if (btnVolverRequisitosAssassinsCreedRevelations) {
+    btnVolverRequisitosAssassinsCreedRevelations.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-assassins-creed-revelations'));
+    });
+}
+const REQUISITOS_ASSASSINS_CREED_REVELATIONS = {
+    minimos: { so: "Windows XP, Vista, 7 o superiores de 64 bits", cpu: "Intel Core 2 Duo E4400 (2.0 GHz) o AMD Athlon 64 X2 4000+ (2.1 GHz)", ram: "1.5", almacenamiento: "12", directx: "", gpu: "256 MB de VRAM compatible con DirectX 9.0 y Shader Model 4.0 (NVIDIA GeForce 8 o superior / AMD Radeon HD2000 o superior)" },
+    recomendado: { so: "Windows XP, Vista, 7 o superiores de 64 bits", cpu: "Intel Core 2 Duo E6700 (2.6 GHz) o AMD Athlon 64 X2 6000+ (3.0 GHz)", ram: "3", almacenamiento: "12", directx: "", gpu: "512 MB o 1 GB de VRAM compatible con DirectX 9.0 y Shader Model 5.0 (NVIDIA GeForce GT 500 / AMD Radeon HD 6000 o superior)" }
+};
+
 const btnVolverFichaLegoJurassicWorld = document.getElementById('btn-volver-ficha-lego-jurassic-world');
 
 
@@ -9320,7 +9368,10 @@ const FICHAS_TECNICAS_TITULOS = {
     "assassins-creed-brotherhood": "Assassin's Creed: Brotherhood",
     "assassins-creed-revelations": "Assassin's Creed: Revelations",
     "nosferatu-1922": "Nosferatu (1922)",
-    "frankenstein-1931": "Frankenstein (1931)"
+    "frankenstein-1931": "Frankenstein (1931)",
+    "psicosis": "Psicosis",
+    "el-exorcista": "El Exorcista",
+    "halloween-1978": "Halloween (1978)"
 };
 
 // Casos con id de sección no estándar (no siguen "seccion-ficha-<id>").
