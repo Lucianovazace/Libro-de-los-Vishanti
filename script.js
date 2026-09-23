@@ -73,7 +73,7 @@ const listaMedia = [
     { titulo: "Thor", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 4, crono: 7, fichaTecnicaId: "thor-1", poster: "https://m.media-amazon.com/images/I/61MQ3JIiXmL.jpg" },
     { titulo: "Captain America: The First Avenger", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 5, crono: 2, fichaTecnicaId: "capitan-america-1", poster: "https://m.media-amazon.com/images/I/81U9EbWexxL.jpg" },
     { titulo: "The Avengers", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 6, crono: 8, fichaTecnicaId: "avengers-1", poster: "https://filmartgallery.com/cdn/shop/products/The-Avengers-Vintage-Movie-Poster-Original_1024x1024.jpg?v=1771946695" },
-    { titulo: "Iron Man 3", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 7, crono: 10, poster: "https://collider.com/wp-content/uploads/iron-man-3-poster.jpg" },
+    { titulo: "Iron Man 3", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 7, crono: 10, fichaTecnicaId: "iron-man-3", poster: "https://collider.com/wp-content/uploads/iron-man-3-poster.jpg" },
     { titulo: "Thor: The Dark World", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 8, crono: 9, poster: "https://shoptrends.com/pub/media/catalog/product/p/o/pod5973-1.jpg" },
     { titulo: "Captain America: The Winter Soldier", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 9, crono: 11, poster: "https://www.hollywoodreporter.com/wp-content/uploads/2014/01/captain_america_the_winter_soldier.jpg" },
     { titulo: "Guardians of The Galaxy", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 10, crono: 12, poster: "https://collider.com/wp-content/uploads/guardians-of-the-galaxy-teaser-poster.jpg" },
@@ -3635,9 +3635,9 @@ const colecciones = [
         poster: "https://cdn.europosters.eu/image/1300/167589.jpg",
         esVideojuego: true,
         peliculas: [
-            { titulo: "Batman: Arkham Asylum", poster: "https://static.posters.cz/image/1300/167596.jpg" },
-            { titulo: "Batman: Arkham City", poster: "https://static.posters.cz/image/1300/167587.jpg" },
-            { titulo: "Batman: Arkham Origins", poster: "https://m.media-amazon.com/images/M/MV5BMWZiMGViNmMtMGQ0OS00MjBkLWEwNDItNzA3MzgxMjQ3Y2M4XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+            { titulo: "Batman: Arkham Asylum", fichaTecnicaId: "arkham-asylum", poster: "https://static.posters.cz/image/1300/167596.jpg" },
+            { titulo: "Batman: Arkham City", fichaTecnicaId: "arkham-city", poster: "https://static.posters.cz/image/1300/167587.jpg" },
+            { titulo: "Batman: Arkham Origins", fichaTecnicaId: "arkham-origins", poster: "https://m.media-amazon.com/images/M/MV5BMWZiMGViNmMtMGQ0OS00MjBkLWEwNDItNzA3MzgxMjQ3Y2M4XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
             { titulo: "Batman: Arkham Knight", poster: "https://m.media-amazon.com/images/I/819Ow-bF-6L.jpg" },
             { titulo: "Suicide Squad: Kill the Justice League", poster: "https://m.media-amazon.com/images/M/MV5BZmYyMWVkMGMtMzk1NC00ZTFiLTg5MGEtMGQxODE0YTJlYzZkXkEyXkFqcGc@._V1_.jpg" }
         ]
@@ -6793,6 +6793,15 @@ function cambiarSeccion(seccionNueva) {
     if (seccionNueva.id === 'seccion-requisitos-assassins-creed-revelations' && typeof armarComparacionMiPC === 'function') {
         armarComparacionMiPC('seccion-requisitos-assassins-creed-revelations', REQUISITOS_ASSASSINS_CREED_REVELATIONS);
     }
+    if (seccionNueva.id === 'seccion-requisitos-arkham-asylum' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-arkham-asylum', REQUISITOS_ARKHAM_ASYLUM);
+    }
+    if (seccionNueva.id === 'seccion-requisitos-arkham-city' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-arkham-city', REQUISITOS_ARKHAM_CITY);
+    }
+    if (seccionNueva.id === 'seccion-requisitos-arkham-origins' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-arkham-origins', REQUISITOS_ARKHAM_ORIGINS);
+    }
 }
 
 const btnDoomsday = document.getElementById('btn-doomsday');
@@ -7921,7 +7930,10 @@ const JUEGOS_CON_REQUISITOS_MIPC = [
     { titulo: "Assassin's Creed", seccion: "assassins-creed-1", requisitos: () => REQUISITOS_ASSASSINS_CREED_1 },
     { titulo: "Assassin's Creed II", seccion: "assassins-creed-2", requisitos: () => REQUISITOS_ASSASSINS_CREED_2 },
     { titulo: "Assassin's Creed: Brotherhood", seccion: "assassins-creed-brotherhood", requisitos: () => REQUISITOS_ASSASSINS_CREED_BROTHERHOOD },
-    { titulo: "Assassin's Creed: Revelations", seccion: "assassins-creed-revelations", requisitos: () => REQUISITOS_ASSASSINS_CREED_REVELATIONS }
+    { titulo: "Assassin's Creed: Revelations", seccion: "assassins-creed-revelations", requisitos: () => REQUISITOS_ASSASSINS_CREED_REVELATIONS },
+    { titulo: "Batman: Arkham Asylum", seccion: "arkham-asylum", requisitos: () => REQUISITOS_ARKHAM_ASYLUM },
+    { titulo: "Batman: Arkham City", seccion: "arkham-city", requisitos: () => REQUISITOS_ARKHAM_CITY },
+    { titulo: "Batman: Arkham Origins", seccion: "arkham-origins", requisitos: () => REQUISITOS_ARKHAM_ORIGINS }
 ];
 
 // Comparación rápida (mismo criterio numérico que armarComparacionMiPC)
@@ -9526,6 +9538,144 @@ if (btnVolverFichaAvengers1) {
     });
 }
 
+const btnVolverFichaIronMan3 = document.getElementById('btn-volver-ficha-iron-man-3');
+if (btnVolverFichaIronMan3) {
+    btnVolverFichaIronMan3.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-iron-man-3');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-mcu-infinito'));
+    });
+}
+
+const btnVolverFichaArkhamAsylum = document.getElementById('btn-volver-ficha-arkham-asylum');
+if (btnVolverFichaArkhamAsylum) {
+    btnVolverFichaArkhamAsylum.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-arkham-asylum');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-arkhamverse'));
+    });
+}
+const btnRequisitosArkhamAsylum = document.getElementById('btn-requisitos-arkham-asylum');
+if (btnRequisitosArkhamAsylum) {
+    btnRequisitosArkhamAsylum.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-arkham-asylum'));
+    });
+}
+const btnVolverRequisitosArkhamAsylum = document.getElementById('btn-volver-requisitos-arkham-asylum');
+if (btnVolverRequisitosArkhamAsylum) {
+    btnVolverRequisitosArkhamAsylum.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-arkham-asylum'));
+    });
+}
+const REQUISITOS_ARKHAM_ASYLUM = {
+    minimos: { so: "Windows XP, Vista o superior", cpu: "Intel a 3 GHz o cualquier AMD Dual Core", ram: "1", almacenamiento: "8", directx: "DirectX 9.0c", gpu: "NVIDIA 6600 o ATI 1300 con Shader Model 3" }
+};
+
+const btnVolverFichaArkhamCity = document.getElementById('btn-volver-ficha-arkham-city');
+if (btnVolverFichaArkhamCity) {
+    btnVolverFichaArkhamCity.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-arkham-city');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-arkhamverse'));
+    });
+}
+const btnDlcArkhamCity = document.getElementById('btn-dlc-arkham-city');
+if (btnDlcArkhamCity) {
+    btnDlcArkhamCity.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-arkham-city'));
+    });
+}
+const btnVolverDlcArkhamCity = document.getElementById('btn-volver-dlc-arkham-city');
+if (btnVolverDlcArkhamCity) {
+    btnVolverDlcArkhamCity.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-arkham-city'));
+    });
+}
+const btnVolverDlcHarleyVenganzaArkhamCity = document.getElementById('btn-volver-dlc-harley-venganza-arkham-city');
+if (btnVolverDlcHarleyVenganzaArkhamCity) {
+    btnVolverDlcHarleyVenganzaArkhamCity.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-arkham-city'));
+    });
+}
+const btnRequisitosArkhamCity = document.getElementById('btn-requisitos-arkham-city');
+if (btnRequisitosArkhamCity) {
+    btnRequisitosArkhamCity.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-arkham-city'));
+    });
+}
+const btnVolverRequisitosArkhamCity = document.getElementById('btn-volver-requisitos-arkham-city');
+if (btnVolverRequisitosArkhamCity) {
+    btnVolverRequisitosArkhamCity.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-arkham-city'));
+    });
+}
+const REQUISITOS_ARKHAM_CITY = {
+    minimos: { so: "Windows XP, Vista o 7 (funciona bien en 10/11)", cpu: "Intel Core 2 Duo (2.4 GHz) o AMD Athlon X2 4800+", ram: "2", almacenamiento: "17", directx: "", gpu: "NVIDIA GeForce 8800 o ATI Radeon 3800 (512 MB de VRAM)" },
+    recomendado: { so: "Windows XP, Vista o 7", cpu: "Dual-Core a 2.5 GHz", ram: "4", almacenamiento: "17.5", directx: "DirectX 11", gpu: "NVIDIA GeForce GTX 460 o ATI Radeon HD 6850 (768 MB+ de VRAM)" }
+};
+
+const btnVolverFichaArkhamOrigins = document.getElementById('btn-volver-ficha-arkham-origins');
+if (btnVolverFichaArkhamOrigins) {
+    btnVolverFichaArkhamOrigins.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-arkham-origins');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-arkhamverse'));
+    });
+}
+const btnDlcArkhamOrigins = document.getElementById('btn-dlc-arkham-origins');
+if (btnDlcArkhamOrigins) {
+    btnDlcArkhamOrigins.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-arkham-origins'));
+    });
+}
+const btnVolverDlcArkhamOrigins = document.getElementById('btn-volver-dlc-arkham-origins');
+if (btnVolverDlcArkhamOrigins) {
+    btnVolverDlcArkhamOrigins.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-arkham-origins'));
+    });
+}
+document.querySelectorAll('.btn-volver-dlc-individual-ao').forEach(boton => {
+    boton.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-arkham-origins'));
+    });
+});
+const btnRequisitosArkhamOrigins = document.getElementById('btn-requisitos-arkham-origins');
+if (btnRequisitosArkhamOrigins) {
+    btnRequisitosArkhamOrigins.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-arkham-origins'));
+    });
+}
+const btnVolverRequisitosArkhamOrigins = document.getElementById('btn-volver-requisitos-arkham-origins');
+if (btnVolverRequisitosArkhamOrigins) {
+    btnVolverRequisitosArkhamOrigins.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-arkham-origins'));
+    });
+}
+const REQUISITOS_ARKHAM_ORIGINS = {
+    minimos: { so: "Windows Vista, 7 u 8 (32 o 64 bits)", cpu: "Intel Core 2 Duo (2.4 GHz) o AMD Athlon X2 (2.8 GHz)", ram: "2", almacenamiento: "20", directx: "DirectX 9.0c", gpu: "NVIDIA GeForce 8800 GTS o AMD Radeon HD 3850 (512 MB de VRAM)" },
+    recomendado: { so: "Windows Vista, 7 u 8 de 64 bits", cpu: "Intel Core i5-750 (2.67 GHz) o AMD Phenom II X4 965 (3.4 GHz)", ram: "4", almacenamiento: "20", directx: "DirectX 11", gpu: "NVIDIA GeForce GTX 560 o AMD Radeon HD 6950 (768 MB+ de VRAM)" }
+};
+
+// Bug encontrado en auditoría: estos 7 botones "Volver" nunca tuvieron
+// wiring — no hacían nada al clickearlos.
+const IDS_VOLVER_MARVEL_ARGENTINA_SIN_WIRING = [
+    "marvel-edad-plata", "marvel-edad-bronce", "marvel-edad-moderna-1",
+    "marvel-edad-moderna-2", "marvel-actualidad", "marvel-universo-ultimate",
+    "marvel-realidades-alternativas"
+];
+IDS_VOLVER_MARVEL_ARGENTINA_SIN_WIRING.forEach(id => {
+    const btn = document.getElementById(`btn-volver-${id}`);
+    if (btn) {
+        btn.addEventListener('click', () => {
+            cambiarSeccion(document.getElementById('seccion-marvel-argentina'));
+        });
+    }
+});
+
 const btnVolverFichaLegoJurassicWorld = document.getElementById('btn-volver-ficha-lego-jurassic-world');
 
 
@@ -9597,7 +9747,11 @@ const FICHAS_TECNICAS_TITULOS = {
     "iron-man-2": "Iron Man 2",
     "thor-1": "Thor",
     "capitan-america-1": "Captain America: The First Avenger",
-    "avengers-1": "The Avengers"
+    "avengers-1": "The Avengers",
+    "iron-man-3": "Iron Man 3",
+    "arkham-asylum": "Batman: Arkham Asylum",
+    "arkham-city": "Batman: Arkham City",
+    "arkham-origins": "Batman: Arkham Origins"
 };
 
 // Casos con id de sección no estándar (no siguen "seccion-ficha-<id>").
@@ -9668,8 +9822,16 @@ function inyectarRelacionados(seccionFichaId, titulo) {
         boton.className = 'btn-relacionado';
         boton.textContent = `📁 ${col.titulo}`;
         boton.addEventListener('click', () => {
-            const seccionDestino = document.getElementById(`seccion-${col.id}`);
-            if (seccionDestino) cambiarSeccion(seccionDestino);
+            // Si es una colección real (con filtro por defecto, progreso,
+            // etc.) usamos abrirColeccion para que se aplique todo eso —
+            // si no (ej. una sección estática sin colección propia, como
+            // "MCU: Saga del Infinito"), vamos directo con cambiarSeccion.
+            if (colecciones.some(c => c.id === col.id)) {
+                abrirColeccion(col.id);
+            } else {
+                const seccionDestino = document.getElementById(`seccion-${col.id}`);
+                if (seccionDestino) cambiarSeccion(seccionDestino);
+            }
         });
         lista.appendChild(boton);
     });
@@ -9728,10 +9890,7 @@ function inyectarReparto(seccionFichaId, elenco, director) {
             </div>
         `;
         if (cartilla) {
-            const irACartilla = () => {
-                const seccionDestino = document.getElementById(`seccion-${cartilla.id}`);
-                if (seccionDestino) cambiarSeccion(seccionDestino);
-            };
+            const irACartilla = () => abrirColeccion(cartilla.id);
             item.querySelector('.reparto-item-foto').addEventListener('click', irACartilla);
             item.querySelector('.reparto-item-actor').addEventListener('click', irACartilla);
         }
@@ -9745,10 +9904,7 @@ function inyectarReparto(seccionFichaId, elenco, director) {
         const cartillaDirector = buscarCartillaPersona(director);
         crew.innerHTML = `Dirección: ${cartillaDirector ? `<span class="reparto-item-enlazable" style="cursor:pointer;">${director}</span>` : director}`;
         if (cartillaDirector) {
-            crew.querySelector('span').addEventListener('click', () => {
-                const seccionDestino = document.getElementById(`seccion-${cartillaDirector.id}`);
-                if (seccionDestino) cambiarSeccion(seccionDestino);
-            });
+            crew.querySelector('span').addEventListener('click', () => abrirColeccion(cartillaDirector.id));
         }
         panel.appendChild(crew);
     }
@@ -9967,6 +10123,23 @@ const REPARTO_PELICULAS = {
             { actor: "Samuel L. Jackson", personaje: "Nick Fury" },
             { actor: "Gwyneth Paltrow", personaje: "Pepper Potts" },
             { actor: "Paul Bettany", personaje: "Jarvis (voz)" }
+        ]
+    },
+    "iron-man-3": {
+        director: "Shane Black",
+        elenco: [
+            { actor: "Robert Downey Jr.", personaje: "Tony Stark / Iron Man" },
+            { actor: "Gwyneth Paltrow", personaje: "Pepper Potts" },
+            { actor: "Don Cheadle", personaje: "Coronel James Rhodes" },
+            { actor: "Guy Pearce", personaje: "Aldrich Killian" },
+            { actor: "Rebecca Hall", personaje: "Maya Hansen" },
+            { actor: "Jon Favreau", personaje: "Happy Hogan" },
+            { actor: "Ben Kingsley", personaje: "Trevor Slattery / Mandarín" },
+            { actor: "James Badge Dale", personaje: "Savin" },
+            { actor: "Stephanie Szostak", personaje: "Brandt" },
+            { actor: "Paul Bettany", personaje: "Jarvis (voz)" },
+            { actor: "William Sadler", personaje: "Presidente Ellis" },
+            { actor: "Ty Simpkins", personaje: "Harley Keener" }
         ]
     }
 };
