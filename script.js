@@ -6,9 +6,16 @@ const listaMedia = [
     { titulo: "Psicosis", categoria: "peliculas-halloween", tipo: "Película", fichaTecnicaId: "psicosis", poster: "https://image.tmdb.org/t/p/original/zdaucUFApic9SDmmmuShxhTeAyv.jpg" },
     { titulo: "El Exorcista", categoria: "peliculas-halloween", tipo: "Película", fichaTecnicaId: "el-exorcista", poster: "https://cdng.europosters.eu/pod_public/1300/262784.jpg" },
     { titulo: "Halloween (1978)", categoria: "peliculas-halloween", tipo: "Película", fichaTecnicaId: "halloween-1978", poster: "https://image.tmdb.org/t/p/w220_and_h330_face/7CR8uDcGkdJFQeq6DxnbzyE2F3u.jpg" },
-    { titulo: "El Resplandor", categoria: "peliculas-halloween", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
-    { titulo: "El Conjuro", categoria: "peliculas-halloween", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
-    { titulo: "It", categoria: "peliculas-halloween", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+
+    // --- SAGA HALLOWEEN (dentro de Explorar > Películas > Género > Terror) ---
+    { titulo: "Halloween (1978)", categoria: "saga-halloween", tipo: "Película", fichaTecnicaId: "halloween-1978", poster: "https://image.tmdb.org/t/p/w220_and_h330_face/7CR8uDcGkdJFQeq6DxnbzyE2F3u.jpg" },
+    { titulo: "Halloween II", categoria: "saga-halloween", tipo: "Película", fichaTecnicaId: "halloween-2", poster: "https://m.media-amazon.com/images/M/MV5BY2M5ZGEwZjItODgwOC00OWM3LTliYmQtNzlmY2NmODE1MzAwXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Halloween III: El Día de La Bruja", categoria: "saga-halloween", tipo: "Película", fichaTecnicaId: "halloween-3", poster: "https://m.media-amazon.com/images/M/MV5BODRhZjBjNmUtYTcxOC00YzJmLTk3OTYtYTBiNzg5OGU5YmM5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Halloween IV: El Regreso de Michael Myers", categoria: "saga-halloween", tipo: "Película", fichaTecnicaId: "halloween-4", poster: "https://image.tmdb.org/t/p/original/hfnrQvYjn6QoFS0FT3XamBdHuLs.jpg" },
+    { titulo: "Halloween 5", categoria: "saga-halloween", tipo: "Película", fichaTecnicaId: "halloween-5", poster: "https://image.tmdb.org/t/p/original/n8AAlFWh3qI4LM722vggGBB6p5c.jpg" },
+    { titulo: "El Resplandor", categoria: "peliculas-halloween", tipo: "Película", fichaTecnicaId: "el-resplandor", poster: "https://www.originalfilmart.com/cdn/shop/files/the_shining_1980_original_film_art_5000x.webp" },
+    { titulo: "El Conjuro", categoria: "peliculas-halloween", tipo: "Película", fichaTecnicaId: "el-conjuro", poster: "https://www.movieposters.com/cdn/shop/files/the-conjuring-last-rites_3fmkdwug_1024x1024.jpg" },
+    { titulo: "It", categoria: "peliculas-halloween", tipo: "Película", fichaTecnicaId: "it-2017", poster: "https://m.media-amazon.com/images/I/617t0rMU9vL.AC_UF894,1000_QL80.jpg" },
 
     { titulo: "Dead by Daylight", categoria: "videojuegos-halloween", tipo: "Videojuego", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
     { titulo: "Resident Evil", categoria: "videojuegos-halloween", tipo: "Videojuego", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
@@ -18,11 +25,11 @@ const listaMedia = [
     { titulo: "The Last of Us Parte I", categoria: "videojuegos-halloween", tipo: "Videojuego", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
     { titulo: "Outlast", categoria: "videojuegos-halloween", tipo: "Videojuego", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
 
-    { titulo: "Batman: El Largo Halloween", categoria: "comics-halloween", tipo: "Cómic", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
-    { titulo: "Marvel Zombies", categoria: "comics-halloween", tipo: "Cómic", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
-    { titulo: "Horror Marvel", categoria: "comics-halloween", tipo: "Cómic", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
-    { titulo: "Batman Vampiro", categoria: "comics-halloween", tipo: "Cómic", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
-    { titulo: "DCeased", categoria: "comics-halloween", tipo: "Cómic", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "Batman: El Largo Halloween", categoria: "comics-halloween", tipo: "Cómic", fichaTecnicaId: "batman-largo-halloween", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-el-largo-halloween-cov1-f2299cfb84cc81ac4216354359175721-640-0.webp" },
+    { titulo: "Marvel Zombies", categoria: "comics-halloween", tipo: "Cómic", fichaTecnicaId: "marvel-zombies-comic", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "Horror Marvel", categoria: "comics-halloween", tipo: "Cómic", fichaTecnicaId: "horror-marvel", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "Batman Vampiro", categoria: "comics-halloween", tipo: "Cómic", fichaTecnicaId: "batman-vampiro", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vampiro_cov-b7c08d5a081549ecf317065413017457-1024-1024.webp" },
+    { titulo: "DCeased", categoria: "comics-halloween", tipo: "Cómic", fichaTecnicaId: "dceased", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/dceased_cov_arg1-c8cfecb30f36b9f6c616360714188285-1024-1024.webp" },
     { titulo: "Virus Zombie", categoria: "comics-halloween", tipo: "Cómic", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
 
     // --- ROAD TO DOOMSDAY (ordenado por fecha de estreno) ---
@@ -62,10 +69,10 @@ const listaMedia = [
     // --- MCU: SAGA DEL INFINITO ---
     { titulo: "Iron Man", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 1, crono: 4, fichaTecnicaId: "iron-man", poster: "https://i.pinimg.com/736x/59/51/d8/5951d8c40e27989167c9adb14567fb36.jpg" },
     { titulo: "The Incredible Hulk", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 2, crono: 6, fichaTecnicaId: "incredible-hulk", poster: "https://m.media-amazon.com/images/M/MV5BMTUyNzk3MjA1OF5BMl5BanBnXkFtZTcwMTE1Njg2MQ@@._V1_.jpg" },
-    { titulo: "Iron Man 2", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 3, crono: 5, poster: "https://m.media-amazon.com/images/I/81W+53+YFkL._AC_SY879_.jpg" },
-    { titulo: "Thor", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 4, crono: 7, poster: "https://m.media-amazon.com/images/I/61MQ3JIiXmL.jpg" },
-    { titulo: "Captain America: The First Avenger", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 5, crono: 2, poster: "https://m.media-amazon.com/images/I/81U9EbWexxL.jpg" },
-    { titulo: "The Avengers", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 6, crono: 8, poster: "https://filmartgallery.com/cdn/shop/products/The-Avengers-Vintage-Movie-Poster-Original_1024x1024.jpg?v=1771946695" },
+    { titulo: "Iron Man 2", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 3, crono: 5, fichaTecnicaId: "iron-man-2", poster: "https://m.media-amazon.com/images/I/81W+53+YFkL._AC_SY879_.jpg" },
+    { titulo: "Thor", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 4, crono: 7, fichaTecnicaId: "thor-1", poster: "https://m.media-amazon.com/images/I/61MQ3JIiXmL.jpg" },
+    { titulo: "Captain America: The First Avenger", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 5, crono: 2, fichaTecnicaId: "capitan-america-1", poster: "https://m.media-amazon.com/images/I/81U9EbWexxL.jpg" },
+    { titulo: "The Avengers", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 6, crono: 8, fichaTecnicaId: "avengers-1", poster: "https://filmartgallery.com/cdn/shop/products/The-Avengers-Vintage-Movie-Poster-Original_1024x1024.jpg?v=1771946695" },
     { titulo: "Iron Man 3", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 7, crono: 10, poster: "https://collider.com/wp-content/uploads/iron-man-3-poster.jpg" },
     { titulo: "Thor: The Dark World", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 8, crono: 9, poster: "https://shoptrends.com/pub/media/catalog/product/p/o/pod5973-1.jpg" },
     { titulo: "Captain America: The Winter Soldier", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 9, crono: 11, poster: "https://www.hollywoodreporter.com/wp-content/uploads/2014/01/captain_america_the_winter_soldier.jpg" },
@@ -235,7 +242,7 @@ const listaMedia = [
     { titulo: "Assassin's Creed: Shadows", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 14, crono: 9, poster: "https://pics.filmaffinity.com/Assassin_s_Creed_Shadows-438700494-large.jpg" },
 
     // --- DC COMICS: VIDEOJUEGOS ---
-    { titulo: "Gotham Knights", categoria: "dc-videojuegos", tipo: "Videojuego", poster: "https://m.media-amazon.com/images/I/81zkE4hKUjL.jpg" },
+    { titulo: "Gotham Knights", categoria: "dc-videojuegos", tipo: "Videojuego", fichaTecnicaId: "gotham-knights", poster: "https://m.media-amazon.com/images/I/81zkE4hKUjL.jpg" },
     // (Ver colección "Arkhamverse" más abajo, incluye Suicide Squad: Kill the Justice League)
 
     // --- STAR WARS: EPISODIOS ---
@@ -2616,6 +2623,43 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "peliculas-explorar",
+        titulo: "Películas",
+        categoria: "explorar",
+        poster: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=800",
+        esContenedor: true,
+        etiqueta: "Colección",
+        peliculas: []
+    },
+    {
+        id: "genero-explorar",
+        titulo: "Género",
+        categoria: "peliculas-explorar",
+        poster: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800",
+        esContenedor: true,
+        etiqueta: "Colección",
+        peliculas: []
+    },
+    {
+        id: "terror-explorar",
+        titulo: "Terror",
+        categoria: "genero-explorar",
+        poster: "https://image.tmdb.org/t/p/w220_and_h330_face/7CR8uDcGkdJFQeq6DxnbzyE2F3u.jpg",
+        esContenedor: true,
+        etiqueta: "Colección",
+        peliculas: []
+    },
+    {
+        id: "saga-halloween",
+        titulo: "Saga Halloween",
+        categoria: "terror-explorar",
+        poster: "https://image.tmdb.org/t/p/w220_and_h330_face/7CR8uDcGkdJFQeq6DxnbzyE2F3u.jpg",
+        esContenedor: true,
+        etiqueta: "Colección",
+        progresoCategoria: "saga-halloween",
+        peliculas: []
+    },
+    {
         id: "leonardo-dicaprio",
         titulo: "Leonardo DiCaprio",
         categoria: "actores",
@@ -3851,6 +3895,7 @@ const colecciones = [
     },
     {
         id: "dc-comics-hub",
+        etiqueta: "Colección",
         titulo: "DC Comics",
         categoria: "comics",
         poster: "https://preview.redd.it/wallpaper-made-from-my-favorite-characters-after-diving-v0-98drt5yh11ty.png?auto=webp&s=14a46296481937533f68b1bc01e955b13d870394",
@@ -3859,6 +3904,7 @@ const colecciones = [
     },
     {
         id: "colecciones-hub",
+        etiqueta: "Colección",
         titulo: "Colecciones",
         categoria: "comics",
         poster: "https://static.dc.com/2025-12/SM_SPDRMN_Cv1_00111_R1.jpg",
@@ -3867,6 +3913,7 @@ const colecciones = [
     },
     {
         id: "dc-heroes-y-villanos-salvat",
+        etiqueta: "Colección",
         titulo: "DC Colección de Héroes y Villanos",
         categoria: "colecciones-hub",
         poster: "https://i1.whakoom.com/large/08/0c/3cfa8877bf36440c9319b8249a87ef0d.jpg",
@@ -3877,6 +3924,7 @@ const colecciones = [
     },
     {
         id: "dc-esenciales-salvat",
+        etiqueta: "Colección",
         titulo: "DC Colección Esenciales",
         categoria: "colecciones-hub",
         poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flashpoint_4taed_cov_arg1-4c2c6e6a3c5b6220c316851089691513-1024-1024.webp",
@@ -3888,6 +3936,7 @@ const colecciones = [
     },
     {
         id: "flash-messner-loebs",
+        etiqueta: "Colección",
         titulo: "Flash de Messner-Loebs",
         categoria: "colecciones-hub",
         poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flushman-sobrecubierta-6a284b32bf58c3409f17600404520993-1024-1024.webp",
@@ -3897,6 +3946,7 @@ const colecciones = [
     },
     {
         id: "jl-renacimiento-orden",
+        etiqueta: "Colección",
         titulo: "Liga de la Justicia (Renacimiento)",
         categoria: "colecciones-hub",
         poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/justice_league_vol_01_cov_arg1-0011a9d12c435da3d215952948711524-1024-1024.webp",
@@ -3906,6 +3956,7 @@ const colecciones = [
     },
     {
         id: "flash-renacimiento-orden",
+        etiqueta: "Colección",
         titulo: "Flash (Renacimiento)",
         categoria: "colecciones-hub",
         poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flash_vol_01_cov_arg1-0b6210aa8ebe79480315952940515737-640-0.webp",
@@ -3915,6 +3966,7 @@ const colecciones = [
     },
     {
         id: "batman-renacimiento-orden",
+        etiqueta: "Colección",
         titulo: "Batman (Renacimiento)",
         categoria: "colecciones-hub",
         poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vol_01_cov_arg1-fa7c5ab99dc5a1a5c215952931975077-640-0.webp",
@@ -3924,6 +3976,7 @@ const colecciones = [
     },
     {
         id: "detective-renacimiento-orden",
+        etiqueta: "Colección",
         titulo: "Detective Comics (Renacimiento)",
         categoria: "colecciones-hub",
         poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/detective_comics_vol_01_cov_arg1-7aa3d0c5ab3ffcf49615952937595959-1024-1024.webp",
@@ -3933,6 +3986,7 @@ const colecciones = [
     },
     {
         id: "superman-renacimiento-orden",
+        etiqueta: "Colección",
         titulo: "Superman (Renacimiento)",
         categoria: "colecciones-hub",
         poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_lois__clark_cov_arg1-887fa05632c017439c15953344471109-640-0.webp",
@@ -3942,6 +3996,7 @@ const colecciones = [
     },
     {
         id: "action-comics-renacimiento-orden",
+        etiqueta: "Colección",
         titulo: "Action Comics (Renacimiento)",
         categoria: "colecciones-hub",
         poster: "https://http2.mlstatic.com/D_NQ_NP_887044-MLU77961783640_082024-O.webp",
@@ -3951,6 +4006,7 @@ const colecciones = [
     },
     {
         id: "all-star-batman-renacimiento-orden",
+        etiqueta: "Colección",
         titulo: "All Star Batman (Renacimiento)",
         categoria: "colecciones-hub",
         poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/all_star_batman_01_cov_arg1-5f139fd501888db24e16075508570607-1024-1024.webp",
@@ -3960,6 +4016,7 @@ const colecciones = [
     },
     {
         id: "jli-ovni-orden",
+        etiqueta: "Colección",
         titulo: "Liga de la Justicia Internacional",
         categoria: "colecciones-hub",
         poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/jli_cov-9b72618e171087b8c017083668247644-1024-1024.webp",
@@ -3969,6 +4026,7 @@ const colecciones = [
     },
     {
         id: "leyendas-caballero-oscuro-orden",
+        etiqueta: "Colección",
         titulo: "Batman: Leyendas del Caballero Oscuro",
         categoria: "colecciones-hub",
         poster: "https://i1.whakoom.com/large/18/2d/f04aa1ab7db1450bb86170365abaae44.jpg",
@@ -3978,6 +4036,7 @@ const colecciones = [
     },
     {
         id: "marvel-novelas-graficas-definitiva",
+        etiqueta: "Colección",
         titulo: "Colección Definitiva de Novelas Gráficas de Marvel",
         categoria: "colecciones-hub",
         poster: "https://i1.whakoom.com/large/21/00/85e5057e0d864d77aeca2375e539112a.jpg",
@@ -3988,6 +4047,7 @@ const colecciones = [
     },
     {
         id: "spiderman-universo-arana",
+        etiqueta: "Colección",
         titulo: "Spider-Man: Universo Araña",
         categoria: "colecciones-hub",
         poster: "https://i1.whakoom.com/large/34/00/fd2621cc15b640c1970eaefd5dd6a985.jpg",
@@ -3998,6 +4058,7 @@ const colecciones = [
     },
     {
         id: "marvel-excelsior",
+        etiqueta: "Colección",
         titulo: "Marvel Excelsior",
         categoria: "colecciones-hub",
         poster: "https://http2.mlstatic.com/D_NQ_NP_721658-MLA26101929319_092017-O.webp",
@@ -4008,6 +4069,7 @@ const colecciones = [
     },
     {
         id: "marvel-must-have",
+        etiqueta: "Colección",
         titulo: "Marvel Must Have",
         categoria: "colecciones-hub",
         poster: "https://i1.whakoom.com/large/2e/3c/eb9414b922ea4bb08da1f6cc6a5d3f00.jpg",
@@ -4018,6 +4080,7 @@ const colecciones = [
     },
     {
         id: "marvel-secret-wars-2015",
+        etiqueta: "Colección",
         titulo: "Secret Wars (2015)",
         categoria: "colecciones-hub",
         poster: "https://i1.whakoom.com/small/15/2d/fe8fd8f4fc2048e083d8529bc5743018.jpg",
@@ -4028,6 +4091,7 @@ const colecciones = [
     },
     {
         id: "batwoman-nuevos-52",
+        etiqueta: "Colección",
         titulo: "Batwoman (Nuevos 52)",
         categoria: "colecciones-hub",
         poster: "https://i1.whakoom.com/large/1d/2f/63d50a2305ce4ee38a23fcf2ce8a46b9.jpg",
@@ -4038,6 +4102,7 @@ const colecciones = [
     },
     {
         id: "flash-nuevos-52",
+        etiqueta: "Colección",
         titulo: "Flash (Nuevos 52)",
         categoria: "colecciones-hub",
         poster: "https://i1.whakoom.com/large/0d/21/f9db91af86834d68a456010cdeadc4ff.jpg",
@@ -4048,6 +4113,7 @@ const colecciones = [
     },
     {
         id: "green-lantern-nuevos-52",
+        etiqueta: "Colección",
         titulo: "Green Lantern (Nuevos 52)",
         categoria: "colecciones-hub",
         poster: "https://i1.whakoom.com/large/38/2e/b3cf9b76a3a649f39f95232ee4a98a56.jpg",
@@ -4058,6 +4124,7 @@ const colecciones = [
     },
     {
         id: "aquaman-nuevos-52",
+        etiqueta: "Colección",
         titulo: "Aquaman (Nuevos 52)",
         categoria: "colecciones-hub",
         poster: "https://i1.whakoom.com/large/37/2d/9f8ef92a988743f69a1effddc98586dc.jpg",
@@ -4068,6 +4135,7 @@ const colecciones = [
     },
     {
         id: "batman-y-robin-nuevos-52",
+        etiqueta: "Colección",
         titulo: "Batman y Robin (Nuevos 52)",
         categoria: "colecciones-hub",
         poster: "https://i1.whakoom.com/large/1f/03/597bc7f70bf6461b8087dd8b64abdaef.jpg",
@@ -4078,6 +4146,7 @@ const colecciones = [
     },
     {
         id: "batman-nuevos-52",
+        etiqueta: "Colección",
         titulo: "Batman (Nuevos 52)",
         categoria: "colecciones-hub",
         poster: "https://i1.whakoom.com/large/22/07/72f01277e0974100b147a5a9fac94762.jpg",
@@ -4088,6 +4157,7 @@ const colecciones = [
     },
     {
         id: "batman-norm-breyfogle",
+        etiqueta: "Colección",
         titulo: "Batman por Norm Breyfogle",
         categoria: "colecciones-hub",
         poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_de_norm_breyfogle_vol_1_cov-34de9ff1fbb02d84db17543107324464-1024-1024.webp",
@@ -4098,6 +4168,7 @@ const colecciones = [
     },
     {
         id: "jla-nuevos-52",
+        etiqueta: "Colección",
         titulo: "Liga de La Justicia de América (Nuevos 52)",
         categoria: "colecciones-hub",
         poster: "https://http2.mlstatic.com/D_NQ_NP_885427-MLA102185288539_122025-O.webp",
@@ -4108,6 +4179,7 @@ const colecciones = [
     },
     {
         id: "superman-nuevos-52",
+        etiqueta: "Colección",
         titulo: "Superman (Nuevos 52)",
         categoria: "colecciones-hub",
         poster: "https://i1.whakoom.com/large/38/29/3f25ca42beac4362afb44f3c1b5fc33c.jpg",
@@ -4118,6 +4190,7 @@ const colecciones = [
     },
     {
         id: "avengers-mas-poderosos",
+        etiqueta: "Colección",
         titulo: "Avengers: Los Héroes Más Poderosos de La Tierra",
         categoria: "colecciones-hub",
         poster: "https://i1.whakoom.com/small/2e/0b/55e93a9fa7bf48c29ea9e829d5cd5315.jpg",
@@ -4128,6 +4201,7 @@ const colecciones = [
     },
     {
         id: "superior-spider-man",
+        etiqueta: "Colección",
         titulo: "Superior Spider-Man",
         categoria: "colecciones-hub",
         poster: "https://i1.whakoom.com/large/11/30/0a3b83510edc44978944c051a6a554a9.jpg",
@@ -4303,6 +4377,7 @@ const colecciones = [
     },
     {
         id: "marvel-comics-hub",
+        etiqueta: "Colección",
         titulo: "Marvel",
         categoria: "comics",
         poster: "https://w0.peakpx.com/wallpaper/342/495/HD-wallpaper-marvel-comic-hunter-legends-sunset-super.jpg",
@@ -5045,6 +5120,10 @@ function renderizarColecciones() {
         "oscar-anios": "seccion-oscar-2020-actualidad",
         "directores": "seccion-directores",
         "actores": "seccion-actores",
+        "peliculas-explorar": "seccion-peliculas-explorar",
+        "genero-explorar": "seccion-genero-explorar",
+        "terror-explorar": "seccion-terror-explorar",
+        "saga-halloween": "seccion-saga-halloween",
         "arrowverse": "seccion-arrowverse",
         "mundo-magico": "seccion-mundo-magico",
         "estudios": "seccion-estudios",
@@ -5508,7 +5587,8 @@ function renderizarContenido() {
         "pokemon-canon": "seccion-pokemon-canon",
         "peliculas-halloween": "seccion-peliculas-halloween",
         "videojuegos-halloween": "seccion-videojuegos-halloween",
-        "comics-halloween": "seccion-comics-halloween"
+        "comics-halloween": "seccion-comics-halloween",
+        "saga-halloween": "seccion-saga-halloween"
     };
 
     listaMedia.forEach(item => {
@@ -9317,6 +9397,135 @@ const REQUISITOS_ASSASSINS_CREED_REVELATIONS = {
     recomendado: { so: "Windows XP, Vista, 7 o superiores de 64 bits", cpu: "Intel Core 2 Duo E6700 (2.6 GHz) o AMD Athlon 64 X2 6000+ (3.0 GHz)", ram: "3", almacenamiento: "12", directx: "", gpu: "512 MB o 1 GB de VRAM compatible con DirectX 9.0 y Shader Model 5.0 (NVIDIA GeForce GT 500 / AMD Radeon HD 6000 o superior)" }
 };
 
+const btnVolverFichaIt2017 = document.getElementById('btn-volver-ficha-it-2017');
+if (btnVolverFichaIt2017) {
+    btnVolverFichaIt2017.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-it-2017');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-peliculas-halloween'));
+    });
+}
+const btnVolverFichaElResplandor = document.getElementById('btn-volver-ficha-el-resplandor');
+if (btnVolverFichaElResplandor) {
+    btnVolverFichaElResplandor.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-el-resplandor');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-peliculas-halloween'));
+    });
+}
+const btnVolverFichaElConjuro = document.getElementById('btn-volver-ficha-el-conjuro');
+if (btnVolverFichaElConjuro) {
+    btnVolverFichaElConjuro.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-el-conjuro');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-peliculas-halloween'));
+    });
+}
+
+const IDS_FICHAS_COMICS_HALLOWEEN = ["batman-largo-halloween", "marvel-zombies-comic", "horror-marvel", "batman-vampiro", "dceased"];
+IDS_FICHAS_COMICS_HALLOWEEN.forEach(fichaId => {
+    const btnVolver = document.getElementById(`btn-volver-ficha-${fichaId}`);
+    if (btnVolver) {
+        btnVolver.addEventListener('click', () => {
+            const seccionFicha = document.getElementById(`seccion-ficha-${fichaId}`);
+            const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+            const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+            cambiarSeccion(seccionOrigen || document.getElementById('seccion-comics-halloween'));
+        });
+    }
+});
+
+const btnVolverFichaGothamKnights = document.getElementById('btn-volver-ficha-gotham-knights');
+if (btnVolverFichaGothamKnights) {
+    btnVolverFichaGothamKnights.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-gotham-knights');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-dc-videojuegos'));
+    });
+}
+
+const btnVolverPeliculasExplorar = document.getElementById('btn-volver-peliculas-explorar');
+if (btnVolverPeliculasExplorar) {
+    btnVolverPeliculasExplorar.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-explorar'));
+    });
+}
+const btnVolverGeneroExplorar = document.getElementById('btn-volver-genero-explorar');
+if (btnVolverGeneroExplorar) {
+    btnVolverGeneroExplorar.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-peliculas-explorar'));
+    });
+}
+const btnVolverTerrorExplorar = document.getElementById('btn-volver-terror-explorar');
+if (btnVolverTerrorExplorar) {
+    btnVolverTerrorExplorar.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-genero-explorar'));
+    });
+}
+const btnVolverSagaHalloween = document.getElementById('btn-volver-saga-halloween');
+if (btnVolverSagaHalloween) {
+    btnVolverSagaHalloween.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-terror-explorar'));
+    });
+}
+
+const IDS_FICHAS_SAGA_HALLOWEEN = ["halloween-2", "halloween-3", "halloween-4", "halloween-5"];
+IDS_FICHAS_SAGA_HALLOWEEN.forEach(fichaId => {
+    const btnVolver = document.getElementById(`btn-volver-ficha-${fichaId}`);
+    if (btnVolver) {
+        btnVolver.addEventListener('click', () => {
+            const seccionFicha = document.getElementById(`seccion-ficha-${fichaId}`);
+            const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+            const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+            cambiarSeccion(seccionOrigen || document.getElementById('seccion-saga-halloween'));
+        });
+    }
+});
+
+const btnVolverFichaIronMan2 = document.getElementById('btn-volver-ficha-iron-man-2');
+if (btnVolverFichaIronMan2) {
+    btnVolverFichaIronMan2.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-iron-man-2');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-mcu-infinito'));
+    });
+}
+
+const btnVolverFichaThor1 = document.getElementById('btn-volver-ficha-thor-1');
+if (btnVolverFichaThor1) {
+    btnVolverFichaThor1.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-thor-1');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-mcu-infinito'));
+    });
+}
+
+const btnVolverFichaCapitanAmerica1 = document.getElementById('btn-volver-ficha-capitan-america-1');
+if (btnVolverFichaCapitanAmerica1) {
+    btnVolverFichaCapitanAmerica1.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-capitan-america-1');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-mcu-infinito'));
+    });
+}
+
+const btnVolverFichaAvengers1 = document.getElementById('btn-volver-ficha-avengers-1');
+if (btnVolverFichaAvengers1) {
+    btnVolverFichaAvengers1.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-avengers-1');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-mcu-infinito'));
+    });
+}
+
 const btnVolverFichaLegoJurassicWorld = document.getElementById('btn-volver-ficha-lego-jurassic-world');
 
 
@@ -9371,7 +9580,24 @@ const FICHAS_TECNICAS_TITULOS = {
     "frankenstein-1931": "Frankenstein (1931)",
     "psicosis": "Psicosis",
     "el-exorcista": "El Exorcista",
-    "halloween-1978": "Halloween (1978)"
+    "halloween-1978": "Halloween (1978)",
+    "it-2017": "It",
+    "el-resplandor": "El Resplandor",
+    "el-conjuro": "El Conjuro",
+    "batman-largo-halloween": "Batman: El Largo Halloween",
+    "marvel-zombies-comic": "Marvel Zombies",
+    "horror-marvel": "Horror Marvel",
+    "batman-vampiro": "Batman Vampiro",
+    "dceased": "DCeased",
+    "gotham-knights": "Gotham Knights",
+    "halloween-2": "Halloween II",
+    "halloween-3": "Halloween III: El Día de La Bruja",
+    "halloween-4": "Halloween IV: El Regreso de Michael Myers",
+    "halloween-5": "Halloween 5",
+    "iron-man-2": "Iron Man 2",
+    "thor-1": "Thor",
+    "capitan-america-1": "Captain America: The First Avenger",
+    "avengers-1": "The Avengers"
 };
 
 // Casos con id de sección no estándar (no siguen "seccion-ficha-<id>").
@@ -9394,26 +9620,31 @@ function calcularColeccionesRelacionadas(titulo) {
     // "categoria" que coincide con el id de una colección-hub (ej.
     // Assassin's Creed, Iron Man dentro del MCU cronológico): ahí la
     // relación no es por "peliculas", sino por esa categoría compartida.
-    const itemPlano = listaMedia.find(m => m.titulo === titulo && m.categoria);
-    if (itemPlano) {
+    // Un mismo título puede vivir en MÁS de una categoría a la vez (ej.
+    // "It" en peliculas-halloween Y en su categoría original "it"), así
+    // que se revisan TODAS las apariciones, no solo la primera.
+    const itemsPlanos = listaMedia.filter(m => m.titulo === titulo && m.categoria);
+    itemsPlanos.forEach(itemPlano => {
         const colHub = colecciones.find(c => c.id === itemPlano.categoria);
         if (colHub && !idsYaAgregados.has(colHub.id)) {
             encontradas.push({ id: colHub.id, titulo: colHub.titulo });
             idsYaAgregados.add(colHub.id);
         }
-    }
+    });
 
     // Tercer patrón: la categoría apunta a una sección estática que no
     // tiene un objeto `colecciones` propio (ej. Iron Man dentro de
     // "MCU: Saga del Infinito"). Se toma el <h2> de esa sección como
     // nombre a mostrar.
-    if (itemPlano && !encontradas.some(e => e.id === itemPlano.categoria)) {
+    itemsPlanos.forEach(itemPlano => {
+        if (idsYaAgregados.has(itemPlano.categoria)) return;
         const seccionEstatica = document.getElementById(`seccion-${itemPlano.categoria}`);
         const encabezado = seccionEstatica ? seccionEstatica.querySelector(':scope > h2') : null;
         if (seccionEstatica && encabezado) {
             encontradas.push({ id: itemPlano.categoria, titulo: encabezado.textContent });
+            idsYaAgregados.add(itemPlano.categoria);
         }
-    }
+    });
 
     return encontradas;
 }
@@ -9450,6 +9681,298 @@ Object.entries(FICHAS_TECNICAS_TITULOS).forEach(([fichaId, titulo]) => {
 });
 Object.values(FICHAS_TECNICAS_SECCION_ESPECIAL).forEach(({ seccionId, titulo }) => {
     inyectarRelacionados(seccionId, titulo);
+});
+
+// ==========================================
+// "REPARTO" — menú colapsable al pie de cada ficha técnica de película,
+// con el elenco (actor + personaje) y la dirección. Si el actor ya tiene
+// su propia cartilla en Exploradores (misma lógica de detección que
+// "Relacionado": buscar el nombre en `colecciones` bajo categoria
+// "actores" o "directores"), se muestra con una foto chica clickeable
+// que lleva directo ahí; si no, aparece solo como texto — así el día que
+// se le arme la cartilla a alguien, esto empieza a enlazar solo, sin
+// tener que volver a tocar esta lista.
+// ==========================================
+function buscarCartillaPersona(nombre) {
+    return colecciones.find(c => (c.categoria === 'actores' || c.categoria === 'directores') && c.titulo === nombre);
+}
+
+function inyectarReparto(seccionFichaId, elenco, director) {
+    const seccion = document.getElementById(seccionFichaId);
+    if (!seccion) return;
+    if (seccion.querySelector('.ficha-tecnica-reparto')) return; // ya inyectado
+
+    const wrapper = document.createElement('div');
+    wrapper.className = 'filtros-menu-wrapper ficha-tecnica-reparto';
+
+    const toggle = document.createElement('button');
+    toggle.className = 'filtros-menu-toggle';
+    toggle.type = 'button';
+    toggle.innerHTML = '<span>Reparto ▾</span><span class="filtros-menu-toggle-flecha">▾</span>';
+    toggle.addEventListener('click', () => wrapper.classList.toggle('abierto'));
+
+    const panel = document.createElement('div');
+    panel.className = 'filtros-menu-panel';
+
+    const lista = document.createElement('div');
+    lista.className = 'ficha-tecnica-reparto-lista';
+    elenco.forEach(({ actor, personaje }) => {
+        const cartilla = buscarCartillaPersona(actor);
+        const item = document.createElement('div');
+        item.className = 'reparto-item';
+        item.innerHTML = `
+            ${cartilla ? `<img src="${cartilla.poster}" alt="${actor}" class="reparto-item-foto">` : ''}
+            <div class="reparto-item-texto">
+                <span class="reparto-item-actor${cartilla ? ' reparto-item-enlazable' : ''}">${actor}</span>
+                <span class="reparto-item-personaje">${personaje}</span>
+            </div>
+        `;
+        if (cartilla) {
+            const irACartilla = () => {
+                const seccionDestino = document.getElementById(`seccion-${cartilla.id}`);
+                if (seccionDestino) cambiarSeccion(seccionDestino);
+            };
+            item.querySelector('.reparto-item-foto').addEventListener('click', irACartilla);
+            item.querySelector('.reparto-item-actor').addEventListener('click', irACartilla);
+        }
+        lista.appendChild(item);
+    });
+    panel.appendChild(lista);
+
+    if (director) {
+        const crew = document.createElement('p');
+        crew.className = 'ficha-tecnica-reparto-crew';
+        const cartillaDirector = buscarCartillaPersona(director);
+        crew.innerHTML = `Dirección: ${cartillaDirector ? `<span class="reparto-item-enlazable" style="cursor:pointer;">${director}</span>` : director}`;
+        if (cartillaDirector) {
+            crew.querySelector('span').addEventListener('click', () => {
+                const seccionDestino = document.getElementById(`seccion-${cartillaDirector.id}`);
+                if (seccionDestino) cambiarSeccion(seccionDestino);
+            });
+        }
+        panel.appendChild(crew);
+    }
+
+    wrapper.appendChild(toggle);
+    wrapper.appendChild(panel);
+    seccion.appendChild(wrapper);
+}
+
+const REPARTO_PELICULAS = {
+    "nosferatu-1922": {
+        director: "F.W. Murnau",
+        elenco: [
+            { actor: "Max Schreck", personaje: "Conde Orlok" },
+            { actor: "Gustav von Wangenheim", personaje: "Thomas Hutter" },
+            { actor: "Greta Schröder", personaje: "Ellen Hutter" },
+            { actor: "Alexander Granach", personaje: "Knock" },
+            { actor: "Georg H. Schnell", personaje: "Harding" },
+            { actor: "Ruth Landshoff", personaje: "Annie" },
+            { actor: "John Gottowt", personaje: "Profesor Bulwer" },
+            { actor: "Gustav Botz", personaje: "Profesor Sievers" },
+            { actor: "Max Nemetz", personaje: "Capitán del barco" },
+            { actor: "Wolfgang Heinz", personaje: "Primer oficial" }
+        ]
+    },
+    "frankenstein-1931": {
+        director: "James Whale",
+        elenco: [
+            { actor: "Colin Clive", personaje: "Henry Frankenstein" },
+            { actor: "Mae Clarke", personaje: "Elizabeth" },
+            { actor: "Boris Karloff", personaje: "El Monstruo" },
+            { actor: "John Boles", personaje: "Victor Moritz" },
+            { actor: "Edward Van Sloan", personaje: "Doctor Waldman" },
+            { actor: "Dwight Frye", personaje: "Fritz" },
+            { actor: "Frederick Kerr", personaje: "Barón Frankenstein" },
+            { actor: "Lionel Belmore", personaje: "Alcalde" },
+            { actor: "Marilyn Harris", personaje: "María" }
+        ]
+    },
+    "psicosis": {
+        director: "Alfred Hitchcock",
+        elenco: [
+            { actor: "Anthony Perkins", personaje: "Norman Bates" },
+            { actor: "Janet Leigh", personaje: "Marion Crane" },
+            { actor: "Vera Miles", personaje: "Lila Crane" },
+            { actor: "John Gavin", personaje: "Sam Loomis" },
+            { actor: "Martin Balsam", personaje: "Milton Arbogast" },
+            { actor: "John McIntire", personaje: "Al Chambers" },
+            { actor: "Simon Oakland", personaje: "Dr. Fred Richman" },
+            { actor: "Frank Albertson", personaje: "Tom Cassidy" },
+            { actor: "Patricia Hitchcock", personaje: "Caroline" },
+            { actor: "Vaughn Taylor", personaje: "George Lowery" },
+            { actor: "Lurene Tuttle", personaje: "Sra. Chambers" }
+        ]
+    },
+    "el-exorcista": {
+        director: "William Friedkin",
+        elenco: [
+            { actor: "Ellen Burstyn", personaje: "Chris MacNeil" },
+            { actor: "Max von Sydow", personaje: "Padre Merrin" },
+            { actor: "Linda Blair", personaje: "Regan MacNeil" },
+            { actor: "Jason Miller", personaje: "Padre Karras" },
+            { actor: "Kitty Winn", personaje: "Sharon Spencer" },
+            { actor: "Jack MacGowran", personaje: "Burke Dennings" },
+            { actor: "William O'Malley", personaje: "Padre Dyer" },
+            { actor: "Lee J. Cobb", personaje: "Teniente Kinderman" }
+        ]
+    },
+    "halloween-1978": {
+        director: "John Carpenter",
+        elenco: [
+            { actor: "Donald Pleasence", personaje: "Dr. Sam Loomis" },
+            { actor: "Jamie Lee Curtis", personaje: "Laurie Strode" },
+            { actor: "Nancy Kyes", personaje: "Annie Brackett" },
+            { actor: "P.J. Soles", personaje: "Lynda" },
+            { actor: "Charles Cyphers", personaje: "Sheriff Brackett" },
+            { actor: "Kyle Richards", personaje: "Lindsey" },
+            { actor: "Brian Andrews", personaje: "Tommy" },
+            { actor: "Nick Castle", personaje: "Michael Myers" }
+        ]
+    },
+    "el-resplandor": {
+        director: "Stanley Kubrick",
+        elenco: [
+            { actor: "Jack Nicholson", personaje: "Jack Torrance" },
+            { actor: "Shelley Duvall", personaje: "Wendy Torrance" },
+            { actor: "Danny Lloyd", personaje: "Danny Torrance" },
+            { actor: "Scatman Crothers", personaje: "Dick Hallorann" },
+            { actor: "Barry Nelson", personaje: "Stuart Ullman" },
+            { actor: "Philip Stone", personaje: "Delbert Grady" },
+            { actor: "Joe Turkel", personaje: "Lloyd (el barman)" },
+            { actor: "Anne Jackson", personaje: "Doctora" }
+        ]
+    },
+    "el-conjuro": {
+        director: "James Wan",
+        elenco: [
+            { actor: "Vera Farmiga", personaje: "Lorraine Warren" },
+            { actor: "Patrick Wilson", personaje: "Ed Warren" },
+            { actor: "Lili Taylor", personaje: "Carolyn Perron" },
+            { actor: "Ron Livingston", personaje: "Roger Perron" },
+            { actor: "Shanley Caswell", personaje: "Andrea Perron" },
+            { actor: "Joey King", personaje: "Christine Perron" },
+            { actor: "Mackenzie Foy", personaje: "Cindy Perron" },
+            { actor: "Hayley McFarland", personaje: "Nancy Perron" },
+            { actor: "Kyla Deaver", personaje: "April Perron" },
+            { actor: "Sterling Jerins", personaje: "Judy Warren" }
+        ]
+    },
+    "it-2017": {
+        director: "Andy Muschietti",
+        elenco: [
+            { actor: "Bill Skarsgård", personaje: "Pennywise" },
+            { actor: "Jaeden Martell", personaje: "Bill Denbrough" },
+            { actor: "Finn Wolfhard", personaje: "Richie Tozier" },
+            { actor: "Sophia Lillis", personaje: "Beverly Marsh" },
+            { actor: "Jack Dylan Grazer", personaje: "Eddie Kaspbrak" },
+            { actor: "Wyatt Oleff", personaje: "Stanley Uris" },
+            { actor: "Chosen Jacobs", personaje: "Mike Hanlon" },
+            { actor: "Jeremy Ray Taylor", personaje: "Ben Hanscom" },
+            { actor: "Nicholas Hamilton", personaje: "Henry Bowers" },
+            { actor: "Jackson Robert Scott", personaje: "Georgie Denbrough" }
+        ]
+    },
+    "iron-man": {
+        director: "Jon Favreau",
+        elenco: [
+            { actor: "Robert Downey Jr.", personaje: "Tony Stark / Iron Man" },
+            { actor: "Terrence Howard", personaje: "James Rhodes" },
+            { actor: "Jeff Bridges", personaje: "Obadiah Stane" },
+            { actor: "Gwyneth Paltrow", personaje: "Pepper Potts" },
+            { actor: "Leslie Bibb", personaje: "Christine Everhart" },
+            { actor: "Shaun Toub", personaje: "Yinsen" },
+            { actor: "Faran Tahir", personaje: "Raza" }
+        ]
+    },
+    "incredible-hulk": {
+        director: "Louis Leterrier",
+        elenco: [
+            { actor: "Edward Norton", personaje: "Bruce Banner / Hulk" },
+            { actor: "Liv Tyler", personaje: "Betty Ross" },
+            { actor: "Tim Roth", personaje: "Emil Blonsky / Abominación" },
+            { actor: "William Hurt", personaje: "General Ross" },
+            { actor: "Tim Blake Nelson", personaje: "Samuel Sterns" },
+            { actor: "Ty Burrell", personaje: "Leonard Samson" }
+        ]
+    },
+    "iron-man-2": {
+        director: "Jon Favreau",
+        elenco: [
+            { actor: "Robert Downey Jr.", personaje: "Tony Stark / Iron Man" },
+            { actor: "Gwyneth Paltrow", personaje: "Pepper Potts" },
+            { actor: "Don Cheadle", personaje: "James 'Rhodey' Rhodes" },
+            { actor: "Scarlett Johansson", personaje: "Natasha Romanoff / Black Widow" },
+            { actor: "Sam Rockwell", personaje: "Justin Hammer" },
+            { actor: "Mickey Rourke", personaje: "Ivan Vanko / Whiplash" },
+            { actor: "Samuel L. Jackson", personaje: "Nick Fury" },
+            { actor: "Clark Gregg", personaje: "Agente Coulson" },
+            { actor: "John Slattery", personaje: "Howard Stark" },
+            { actor: "Garry Shandling", personaje: "Senador Stern" },
+            { actor: "Paul Bettany", personaje: "Jarvis (voz)" },
+            { actor: "Leslie Bibb", personaje: "Christine Everhart" },
+            { actor: "Jon Favreau", personaje: "Happy Hogan" },
+            { actor: "Stan Lee", personaje: "Cameo" }
+        ]
+    },
+    "thor-1": {
+        director: "Kenneth Branagh",
+        elenco: [
+            { actor: "Chris Hemsworth", personaje: "Thor" },
+            { actor: "Natalie Portman", personaje: "Jane Foster" },
+            { actor: "Tom Hiddleston", personaje: "Loki" },
+            { actor: "Anthony Hopkins", personaje: "Odín" },
+            { actor: "Stellan Skarsgård", personaje: "Erik Selvig" },
+            { actor: "Kat Dennings", personaje: "Darcy Lewis" },
+            { actor: "Clark Gregg", personaje: "Agente Coulson" },
+            { actor: "Idris Elba", personaje: "Heimdall" },
+            { actor: "Ray Stevenson", personaje: "Volstagg" },
+            { actor: "Tadanobu Asano", personaje: "Hogun" },
+            { actor: "Josh Dallas", personaje: "Fandral" },
+            { actor: "Jaimie Alexander", personaje: "Sif" },
+            { actor: "Rene Russo", personaje: "Frigga" },
+            { actor: "Colm Feore", personaje: "Rey Laufey" }
+        ]
+    },
+    "capitan-america-1": {
+        director: "Joe Johnston",
+        elenco: [
+            { actor: "Chris Evans", personaje: "Steve Rogers / Capitán América" },
+            { actor: "Hayley Atwell", personaje: "Peggy Carter" },
+            { actor: "Sebastian Stan", personaje: "James 'Bucky' Barnes" },
+            { actor: "Tommy Lee Jones", personaje: "Coronel Chester Phillips" },
+            { actor: "Hugo Weaving", personaje: "Johann Schmidt / Cráneo Rojo" },
+            { actor: "Dominic Cooper", personaje: "Howard Stark" },
+            { actor: "Richard Armitage", personaje: "Heinz Kruger" },
+            { actor: "Stanley Tucci", personaje: "Dr. Abraham Erskine" },
+            { actor: "Samuel L. Jackson", personaje: "Nick Fury" },
+            { actor: "Toby Jones", personaje: "Dr. Arnim Zola" },
+            { actor: "Neal McDonough", personaje: "Timothy 'Dum Dum' Dugan" },
+            { actor: "Derek Luke", personaje: "Gabe Jones" }
+        ]
+    },
+    "avengers-1": {
+        director: "Joss Whedon",
+        elenco: [
+            { actor: "Robert Downey Jr.", personaje: "Tony Stark / Iron Man" },
+            { actor: "Chris Evans", personaje: "Steve Rogers / Capitán América" },
+            { actor: "Mark Ruffalo", personaje: "Bruce Banner / Hulk" },
+            { actor: "Chris Hemsworth", personaje: "Thor" },
+            { actor: "Scarlett Johansson", personaje: "Natasha Romanoff / Black Widow" },
+            { actor: "Jeremy Renner", personaje: "Clint Barton / Hawkeye" },
+            { actor: "Tom Hiddleston", personaje: "Loki" },
+            { actor: "Clark Gregg", personaje: "Agente Phil Coulson" },
+            { actor: "Cobie Smulders", personaje: "Agente Maria Hill" },
+            { actor: "Stellan Skarsgård", personaje: "Erik Selvig" },
+            { actor: "Samuel L. Jackson", personaje: "Nick Fury" },
+            { actor: "Gwyneth Paltrow", personaje: "Pepper Potts" },
+            { actor: "Paul Bettany", personaje: "Jarvis (voz)" }
+        ]
+    }
+};
+
+Object.entries(REPARTO_PELICULAS).forEach(([fichaId, { director, elenco }]) => {
+    inyectarReparto(`seccion-ficha-${fichaId}`, elenco, director);
 });
 
 

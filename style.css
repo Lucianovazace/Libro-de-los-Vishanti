@@ -1609,6 +1609,72 @@ h2 {
     min-height: 220px;
 }
 
+.ficha-tecnica-reparto-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 10px;
+}
+
+.reparto-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #1a1d24;
+    border-radius: 8px;
+    padding: 6px 10px;
+}
+
+.reparto-item-foto {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.reparto-item-foto:hover {
+    outline: 2px solid var(--accent-color);
+}
+
+.reparto-item-texto {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.reparto-item-actor {
+    font-size: 13px;
+    font-weight: bold;
+    color: #f1f1f1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.reparto-item-actor.reparto-item-enlazable {
+    cursor: pointer;
+    color: #f1c40f;
+}
+
+.reparto-item-actor.reparto-item-enlazable:hover {
+    text-decoration: underline;
+}
+
+.reparto-item-personaje {
+    font-size: 11px;
+    color: #999;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ficha-tecnica-reparto-crew {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #999;
+}
+
 .ficha-tecnica-relacionados {
     margin-top: 26px;
     padding-top: 18px;
