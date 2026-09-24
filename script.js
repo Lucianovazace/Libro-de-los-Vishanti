@@ -26,22 +26,22 @@ const listaMedia = [
     { titulo: "Outlast", categoria: "videojuegos-halloween", tipo: "Videojuego", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
 
     { titulo: "Batman: El Largo Halloween", categoria: "comics-halloween", tipo: "Cómic", fichaTecnicaId: "batman-largo-halloween", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-el-largo-halloween-cov1-f2299cfb84cc81ac4216354359175721-640-0.webp" },
-    { titulo: "Marvel Zombies", categoria: "comics-halloween", tipo: "Cómic", fichaTecnicaId: "marvel-zombies-comic", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "Marvel Zombies", categoria: "comics-halloween", tipo: "Cómic", fichaTecnicaId: "marvel-zombies-comic", poster: "https://www.quimeraquiroga.cl/cdn/shop/products/41_1200x1200.jpg?v=1629473875" },
     { titulo: "Horror Marvel", categoria: "comics-halloween", tipo: "Cómic", fichaTecnicaId: "horror-marvel", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
     { titulo: "Batman Vampiro", categoria: "comics-halloween", tipo: "Cómic", fichaTecnicaId: "batman-vampiro", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vampiro_cov-b7c08d5a081549ecf317065413017457-1024-1024.webp" },
     { titulo: "DCeased", categoria: "comics-halloween", tipo: "Cómic", fichaTecnicaId: "dceased", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/dceased_cov_arg1-c8cfecb30f36b9f6c616360714188285-1024-1024.webp" },
     { titulo: "Virus Zombie", categoria: "comics-halloween", tipo: "Cómic", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
 
     // --- ROAD TO DOOMSDAY (ordenado por fecha de estreno) ---
-    { titulo: "X-Men (2000)", categoria: "doomsday", tier: 3, tipo: "Película", poster: "https://i.pinimg.com/736x/f9/7c/3f/f97c3f94f67ca6fd6ae7ad0470d6d553.jpg" },
-    { titulo: "X2: X-Men United", categoria: "doomsday", tier: 3, tipo: "Película", poster: "https://m.media-amazon.com/images/I/714SAYP7EQL.AC_UF894,1000_QL80.jpg" },
-    { titulo: "X-Men: The Last Stand", categoria: "doomsday", tier: 3, tipo: "Película", poster: "https://pics.filmaffinity.com/x3_x_men_3_the_last_stand-992099331-large.jpg" },
-    { titulo: "X-Men Origins: Wolverine", categoria: "doomsday", tier: 4, tipo: "Película", poster: "https://i.blogs.es/b07389/x_men_origins_wolverine/450_1000.jpg" },
-    { titulo: "X-Men: First Class", categoria: "doomsday", tier: 3, tipo: "Película", poster: "https://collider.com/wp-content/uploads/x-men-first-class-teaser-poster.jpg" },
-    { titulo: "The Wolverine", categoria: "doomsday", tier: 4, tipo: "Película", poster: "https://image.tmdb.org/t/p/original/8lzmovtARDXnE7kTDOum02i6fXv.jpg" },
-    { titulo: "X-Men: Days of Future Past", categoria: "doomsday", tier: 3, tipo: "Película", poster: "https://i0.wp.com/www.dorkaholics.com/wp-content/uploads/2014/04/9kcs.jpg?fit=692%2C1024&ssl=1" },
+    { titulo: "X-Men (2000)", categoria: "doomsday", tier: 3, tipo: "Película", fichaTecnicaId: "xmen-2000", poster: "https://i.pinimg.com/736x/f9/7c/3f/f97c3f94f67ca6fd6ae7ad0470d6d553.jpg" },
+    { titulo: "X2: X-Men United", categoria: "doomsday", tier: 3, tipo: "Película", fichaTecnicaId: "x2-xmen-united", poster: "https://m.media-amazon.com/images/I/714SAYP7EQL.AC_UF894,1000_QL80.jpg" },
+    { titulo: "X-Men: The Last Stand", categoria: "doomsday", tier: 3, tipo: "Película", fichaTecnicaId: "xmen-last-stand", poster: "https://pics.filmaffinity.com/x3_x_men_3_the_last_stand-992099331-large.jpg" },
+    { titulo: "X-Men Origins: Wolverine", categoria: "doomsday", tier: 4, tipo: "Película", fichaTecnicaId: "xmen-origins-wolverine", poster: "https://i.blogs.es/b07389/x_men_origins_wolverine/450_1000.jpg" },
+    { titulo: "X-Men: First Class", categoria: "doomsday", tier: 3, tipo: "Película", fichaTecnicaId: "xmen-first-class", poster: "https://collider.com/wp-content/uploads/x-men-first-class-teaser-poster.jpg" },
+    { titulo: "The Wolverine", categoria: "doomsday", tier: 4, tipo: "Película", fichaTecnicaId: "the-wolverine", poster: "https://image.tmdb.org/t/p/original/8lzmovtARDXnE7kTDOum02i6fXv.jpg" },
+    { titulo: "X-Men: Days of Future Past", categoria: "doomsday", tier: 3, tipo: "Película", fichaTecnicaId: "xmen-days-future-past", poster: "https://i0.wp.com/www.dorkaholics.com/wp-content/uploads/2014/04/9kcs.jpg?fit=692%2C1024&ssl=1" },
     { titulo: "Deadpool", categoria: "doomsday", tier: 4, tipo: "Película", poster: "https://m.media-amazon.com/images/I/71SBA4bdx8L._AC_UF894,1000_QL80_AIweblab1381794,T1_.jpg" },
-    { titulo: "X-Men: Apocalypse", categoria: "doomsday", tier: 4, tipo: "Película", poster: "https://www.scifinow.co.uk/wp-content/uploads/2015/12/xmen_apocalypse_ver2.jpg" },
+    { titulo: "X-Men: Apocalypse", categoria: "doomsday", tier: 4, tipo: "Película", fichaTecnicaId: "xmen-apocalypse", poster: "https://www.scifinow.co.uk/wp-content/uploads/2015/12/xmen_apocalypse_ver2.jpg" },
     { titulo: "Logan", categoria: "doomsday", tier: 1, tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/Logan_2017_teaser_original_film_art_5000x.webp?v=1677273260" },
     { titulo: "Avengers: Infinity War", categoria: "doomsday", tier: 1, tipo: "Película", poster: "https://www.blackfilm.com/read/wp-content/uploads/2017/11/Avengers-Infinity-War-Teaser-Poster.jpg" },
     { titulo: "Deadpool 2", categoria: "doomsday", tier: 4, tipo: "Película", poster: "https://preview.redd.it/new-deadpool-2-poster-v0-878r7e1hmle01.jpg?auto=webp&s=2f03e75ff6a45766bbbf16a95cbe0ecc3d6c7046" },
@@ -74,8 +74,8 @@ const listaMedia = [
     { titulo: "Captain America: The First Avenger", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 5, crono: 2, fichaTecnicaId: "capitan-america-1", poster: "https://m.media-amazon.com/images/I/81U9EbWexxL.jpg" },
     { titulo: "The Avengers", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 6, crono: 8, fichaTecnicaId: "avengers-1", poster: "https://filmartgallery.com/cdn/shop/products/The-Avengers-Vintage-Movie-Poster-Original_1024x1024.jpg?v=1771946695" },
     { titulo: "Iron Man 3", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 7, crono: 10, fichaTecnicaId: "iron-man-3", poster: "https://collider.com/wp-content/uploads/iron-man-3-poster.jpg" },
-    { titulo: "Thor: The Dark World", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 8, crono: 9, poster: "https://shoptrends.com/pub/media/catalog/product/p/o/pod5973-1.jpg" },
-    { titulo: "Captain America: The Winter Soldier", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 9, crono: 11, poster: "https://www.hollywoodreporter.com/wp-content/uploads/2014/01/captain_america_the_winter_soldier.jpg" },
+    { titulo: "Thor: The Dark World", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 8, crono: 9, fichaTecnicaId: "thor-dark-world", poster: "https://shoptrends.com/pub/media/catalog/product/p/o/pod5973-1.jpg" },
+    { titulo: "Captain America: The Winter Soldier", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 9, crono: 11, fichaTecnicaId: "capitan-america-winter-soldier", poster: "https://www.hollywoodreporter.com/wp-content/uploads/2014/01/captain_america_the_winter_soldier.jpg" },
     { titulo: "Guardians of The Galaxy", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 10, crono: 12, poster: "https://collider.com/wp-content/uploads/guardians-of-the-galaxy-teaser-poster.jpg" },
     { titulo: "Avengers: Age of Ultron", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 11, crono: 14, poster: "https://collider.com/wp-content/uploads/avengers-age-of-ultron-poster1.jpg" },
     { titulo: "Ant-Man", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 12, crono: 15, poster: "https://m.media-amazon.com/images/I/81rPJLNidFL.jpg" },
@@ -139,18 +139,19 @@ const listaMedia = [
     { titulo: "Armageddon", categoria: "arrowverse", tipoArrow: "eventos", crono: 37, tipo: "Evento", poster: "https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2021/11/The-Flash-Armageddon.jpg?resize=1280%2C1600&ssl=1" },
 
     // --- FOX: X-MEN ---
-    { titulo: "X-Men (2000)", categoria: "fox-xmen", tipo: "Película", poster: "https://i.pinimg.com/736x/f9/7c/3f/f97c3f94f67ca6fd6ae7ad0470d6d553.jpg" },
-    { titulo: "X2: X-Men United", categoria: "fox-xmen", tipo: "Película", poster: "https://m.media-amazon.com/images/I/714SAYP7EQL.AC_UF894,1000_QL80.jpg" },
-    { titulo: "X-Men: The Last Stand", categoria: "fox-xmen", tipo: "Película", poster: "https://pics.filmaffinity.com/x3_x_men_3_the_last_stand-992099331-large.jpg" },
-    { titulo: "X-Men Origins: Wolverine", categoria: "fox-xmen", tipo: "Película", poster: "https://i.blogs.es/b07389/x_men_origins_wolverine/450_1000.jpg" },
-    { titulo: "The Wolverine", categoria: "fox-xmen", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/8lzmovtARDXnE7kTDOum02i6fXv.jpg" },
-    { titulo: "X-Men: First Class", categoria: "fox-xmen", tipo: "Película", poster: "https://collider.com/wp-content/uploads/x-men-first-class-teaser-poster.jpg" },
-    { titulo: "X-Men: Days of Future Past", categoria: "fox-xmen", tipo: "Película", poster: "https://i0.wp.com/www.dorkaholics.com/wp-content/uploads/2014/04/9kcs.jpg?fit=692%2C1024&ssl=1" },
-    { titulo: "X-Men: Apocalypse", categoria: "fox-xmen", tipo: "Película", poster: "https://www.scifinow.co.uk/wp-content/uploads/2015/12/xmen_apocalypse_ver2.jpg" },
-    { titulo: "X-Men Dark Phoenix", categoria: "fox-xmen", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81SP4dCrQyL.jpg" },
-    { titulo: "Logan", categoria: "fox-xmen", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/Logan_2017_teaser_original_film_art_5000x.webp?v=1677273260" },
-    { titulo: "Deadpool", categoria: "fox-xmen", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71SBA4bdx8L._AC_UF894,1000_QL80_AIweblab1381794,T1_.jpg" },
-    { titulo: "Deadpool 2", categoria: "fox-xmen", tipo: "Película", poster: "https://preview.redd.it/new-deadpool-2-poster-v0-878r7e1hmle01.jpg?auto=webp&s=2f03e75ff6a45766bbbf16a95cbe0ecc3d6c7046" },
+    { titulo: "X-Men (2000)", categoria: "fox-xmen", tipo: "Película", fichaTecnicaId: "xmen-2000", crono: 3, poster: "https://i.pinimg.com/736x/f9/7c/3f/f97c3f94f67ca6fd6ae7ad0470d6d553.jpg" },
+    { titulo: "X2: X-Men United", categoria: "fox-xmen", tipo: "Película", fichaTecnicaId: "x2-xmen-united", crono: 4, poster: "https://m.media-amazon.com/images/I/714SAYP7EQL.AC_UF894,1000_QL80.jpg" },
+    { titulo: "X-Men: The Last Stand", categoria: "fox-xmen", tipo: "Película", fichaTecnicaId: "xmen-last-stand", crono: 5, poster: "https://pics.filmaffinity.com/x3_x_men_3_the_last_stand-992099331-large.jpg" },
+    { titulo: "X-Men Origins: Wolverine", categoria: "fox-xmen", tipo: "Película", fichaTecnicaId: "xmen-origins-wolverine", crono: 2, poster: "https://i.blogs.es/b07389/x_men_origins_wolverine/450_1000.jpg" },
+    { titulo: "The Wolverine", categoria: "fox-xmen", tipo: "Película", fichaTecnicaId: "the-wolverine", crono: 6, poster: "https://image.tmdb.org/t/p/original/8lzmovtARDXnE7kTDOum02i6fXv.jpg" },
+    { titulo: "X-Men: First Class", categoria: "fox-xmen", tipo: "Película", fichaTecnicaId: "xmen-first-class", crono: 1, poster: "https://collider.com/wp-content/uploads/x-men-first-class-teaser-poster.jpg" },
+    { titulo: "X-Men: Days of Future Past", categoria: "fox-xmen", tipo: "Película", fichaTecnicaId: "xmen-days-future-past", crono: 7, poster: "https://i0.wp.com/www.dorkaholics.com/wp-content/uploads/2014/04/9kcs.jpg?fit=692%2C1024&ssl=1" },
+    { titulo: "X-Men: Apocalypse", categoria: "fox-xmen", tipo: "Película", fichaTecnicaId: "xmen-apocalypse", crono: 8, poster: "https://www.scifinow.co.uk/wp-content/uploads/2015/12/xmen_apocalypse_ver2.jpg" },
+    { titulo: "X-Men Dark Phoenix", categoria: "fox-xmen", tipo: "Película", crono: 9, poster: "https://m.media-amazon.com/images/I/81SP4dCrQyL.jpg" },
+    { titulo: "Logan", categoria: "fox-xmen", tipo: "Película", crono: 13, poster: "https://www.originalfilmart.com/cdn/shop/products/Logan_2017_teaser_original_film_art_5000x.webp?v=1677273260" },
+    { titulo: "Deadpool", categoria: "fox-xmen", tipo: "Película", crono: 10, poster: "https://m.media-amazon.com/images/I/71SBA4bdx8L._AC_UF894,1000_QL80_AIweblab1381794,T1_.jpg" },
+    { titulo: "Deadpool 2", categoria: "fox-xmen", tipo: "Película", crono: 11, poster: "https://preview.redd.it/new-deadpool-2-poster-v0-878r7e1hmle01.jpg?auto=webp&s=2f03e75ff6a45766bbbf16a95cbe0ecc3d6c7046" },
+    { titulo: "The New Mutants", categoria: "fox-xmen", tipo: "Película", crono: 12, poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5OVOtNIm-bqGtCUI1SICMA58EJGV7_5_y7oDu9Zf27WcV6YdCE64CVQSf&s=10" },
 
     // --- FOX: CUATRO FANTÁSTICOS ---
     { titulo: "Fantastic Four (2005)", categoria: "fox-ff", subtipo: "2000", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71nlKnBmb4L.jpg" },
@@ -614,19 +615,19 @@ const listaMedia = [
     { titulo: "Winter's Bone", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/a0qhPkNlxLfsf5B2jFyI1Pp04XV.jpg" },
     { titulo: "Like Crazy", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/8eIhNKnRfayRwWChx0atZh4vGua.jpg" },
     { titulo: "The Beaver", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/nlaWgS7iIb6MG3t0FitV1xdPqIV.jpg" },
-    { titulo: "X-Men: First Class", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://collider.com/wp-content/uploads/x-men-first-class-teaser-poster.jpg" },
+    { titulo: "X-Men: First Class", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", fichaTecnicaId: "xmen-first-class", poster: "https://collider.com/wp-content/uploads/x-men-first-class-teaser-poster.jpg" },
     { titulo: "Los Juegos del Hambre", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/750/266325.jpg" },
     { titulo: "Silver Linings Playbook", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/fhHB1uvfFKKFbj6bTKE8xdtsjKi.jpg" },
     { titulo: "House at the End of the Street", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/bgHeZ5g7YyxKcwWw1tgyAMy0czy.jpg" },
     { titulo: "The Devil You Know", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/5Mg2mCW1oW5wlcSYva74bEjNyZl.jpg" },
     { titulo: "Los Juegos del Hambre: En Llamas", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTAyMjQ3OTAxMzNeQTJeQWpwZ15BbWU4MDU0NzA1MzAx._V1_.jpg" },
     { titulo: "American Hustle", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/z6O1KDhfWDTm5ZBr6Ovr0eg8LqO.jpg" },
-    { titulo: "X-Men: Days of Future Past", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://i0.wp.com/www.dorkaholics.com/wp-content/uploads/2014/04/9kcs.jpg?fit=692%2C1024&ssl=1" },
+    { titulo: "X-Men: Days of Future Past", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", fichaTecnicaId: "xmen-days-future-past", poster: "https://i0.wp.com/www.dorkaholics.com/wp-content/uploads/2014/04/9kcs.jpg?fit=692%2C1024&ssl=1" },
     { titulo: "Serena", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/l09skhb3QDPuJPDNOzru0f1Evww.jpg" },
     { titulo: "Los Juegos del Hambre: Sinsajo Parte Uno", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgpNZKzB0XfI-nJGEcY-QAfnX7vnMo1UYj0rkHcs21wF2MyQkelGnaZNQ&s=10" },
     { titulo: "Los Juegos del Hambre: Sinsajo Parte Dos", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNjQzNDI2NTU1Ml5BMl5BanBnXkFtZTgwNTAyMDQ5NjE@._V1_.jpg" },
     { titulo: "Joy", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/nZAs0HbW82TI1i4Xid83M941Pki.jpg" },
-    { titulo: "X-Men: Apocalypse", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://www.scifinow.co.uk/wp-content/uploads/2015/12/xmen_apocalypse_ver2.jpg" },
+    { titulo: "X-Men: Apocalypse", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", fichaTecnicaId: "xmen-apocalypse", poster: "https://www.scifinow.co.uk/wp-content/uploads/2015/12/xmen_apocalypse_ver2.jpg" },
     { titulo: "Passengers", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/jK9S6HANSf2no64v1x1HxfcpmcA.jpg" },
     { titulo: "Mother!", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/zO7WlUOpI1obOJQ7DtpGCKQVeBo.jpg" },
     { titulo: "Red Sparrow", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/peIkUiWZJpNew57V8Zay2JYGeyW.jpg" },
@@ -2319,6 +2320,9 @@ const listaMedia = [
     { titulo: "Avengers - Los Heroes Mas Poderosos de La Tierra #11: Los Pilares", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/1b/20/b71008fbbc594aa98ee4f17673f5218f.jpg" },
     { titulo: "Avengers - Los Heroes Mas Poderosos de La Tierra #12: Avengers Assemble: Parte 1", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/3c/3e/35f0c594dfab45eeb75effa97ea4dc12.jpg" },
     { titulo: "Avengers - Los Heroes Mas Poderosos de La Tierra #13: Avengers Assemble: Parte 2", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/3b/1b/ad8227d8af3b43f9b1d1901b68c3074a.jpg" },
+
+    // --- COLECCIÓN DEFINITIVA DE NOVELAS GRÁFICAS DE MARVEL (Salvat) ---
+    { titulo: "Colección Definitiva de Novelas Gráficas de Marvel: #41", categoria: "marvel-novelas-graficas-definitiva", editorial: "salvat", subtipo: "marvel-zombies", tipo: "Cómic", poster: "https://www.quimeraquiroga.cl/cdn/shop/products/41_1200x1200.jpg?v=1629473875" },
     // --- UNIVERSO ULTIMATE ---
     { titulo: "Coleccion Defintiva de Novelas Graficas de Marvel #15: Ultimate Spider-Man: Poder y Responsabilidad", categoria: "marvel-universo-ultimate", editorial: "panini", subtipo: "spider-man", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_654316-MLA53124458936_012023-O.webp" },
     { titulo: "Marvel Ultimate Edicion Integral #1: Ultimate Spider-Man 01: Poder y Responsabilidad", categoria: "marvel-universo-ultimate", editorial: "salvat", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/33/01/6e1e8f4e0e744f9d8355035308852a85.jpg" },
@@ -3179,7 +3183,7 @@ const colecciones = [
         peliculas: [
             { titulo: "Dune: Parte Uno", poster: "https://cdn.europosters.eu/image/1300/302577.jpg" },
             { titulo: "Dune: Parte Dos", poster: "https://deadline.com/wp-content/uploads/2023/05/FvIhyI9aUAUZz6l.jpeg?w=819" },
-            { titulo: "Dune: Prophecy", poster: "https://image.tmdb.org/t/p/original/pgrv9C8qLjLll58CGosCwBa7VoH.jpg" }
+            { titulo: "Dune: Prophecy", etiqueta: "Serie", poster: "https://image.tmdb.org/t/p/original/pgrv9C8qLjLll58CGosCwBa7VoH.jpg" }
         ]
     },
     {
@@ -4494,10 +4498,10 @@ const colecciones = [
         categoria: "dragonball",
         poster: "https://m.media-amazon.com/images/I/81fhdW8tx3L.jpg",
         peliculas: [
-            { titulo: "Saga Saiyan", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxSr-aKYyKPVySvy3CpUF--Z9UM-IVdRuDam6yMP8zxu6MUkNLSgMkLG0&s=10" },
-            { titulo: "Saga de Freezer", poster: "https://static.wikia.nocookie.net/dragonball/images/2/2e/Arco_de_Freezer_Artwork_DBZ.png/revision/latest?cb=20180612015408&path-prefix=es" },
-            { titulo: "Saga de Cell", poster: "https://www.wallister.de/cdn/shop/products/G868340_01.jpg?v=1677662334" },
-            { titulo: "Saga de Majin Buu", poster: "https://i.pinimg.com/736x/8a/a2/e4/8aa2e46c01ae0c287901c25449979902.jpg" }
+            { titulo: "Saga Saiyan", etiqueta: "Anime", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxSr-aKYyKPVySvy3CpUF--Z9UM-IVdRuDam6yMP8zxu6MUkNLSgMkLG0&s=10" },
+            { titulo: "Saga de Freezer", etiqueta: "Anime", poster: "https://static.wikia.nocookie.net/dragonball/images/2/2e/Arco_de_Freezer_Artwork_DBZ.png/revision/latest?cb=20180612015408&path-prefix=es" },
+            { titulo: "Saga de Cell", etiqueta: "Anime", poster: "https://www.wallister.de/cdn/shop/products/G868340_01.jpg?v=1677662334" },
+            { titulo: "Saga de Majin Buu", etiqueta: "Anime", poster: "https://i.pinimg.com/736x/8a/a2/e4/8aa2e46c01ae0c287901c25449979902.jpg" }
         ]
     },
     {
@@ -4506,13 +4510,13 @@ const colecciones = [
         categoria: "dragonball",
         poster: "https://m.media-amazon.com/images/I/81Z-WeVM-sS._AC_UF894,1000_QL80_.jpg",
         peliculas: [
-            { titulo: "Saga de Bills", poster: "https://image.tmdb.org/t/p/original/oV8aSngwg5YPpcaNvlC8VOMCYtK.jpg" },
+            { titulo: "Saga de Bills", etiqueta: "Anime", poster: "https://image.tmdb.org/t/p/original/oV8aSngwg5YPpcaNvlC8VOMCYtK.jpg" },
             { titulo: "La Batalla de los Dioses", poster: "https://www.cinepremiere.com.mx/assets/images/noticias/2013/07-julio/DragonBallZ-batalla-poster.jpg" },
-            { titulo: "Saga de la Resurrección de Freezer", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdp8uz95HVMymEVGeUIdyp0bl5juJj8QU0yCSGQqRLt9MVgZputG5v5dI&s=10" },
+            { titulo: "Saga de la Resurrección de Freezer", etiqueta: "Anime", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdp8uz95HVMymEVGeUIdyp0bl5juJj8QU0yCSGQqRLt9MVgZputG5v5dI&s=10" },
             { titulo: "La Resurrección de F", poster: "https://www.cinepremiere.com.mx/assets/images/noticias/2013/07-julio/DragonBallZ-batalla-poster.jpg" },
-            { titulo: "Saga del Torneo del Universo 6", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9SdBgNJvPZZuQwqniUbOgAOyETZ30L8dDP1VwpIIyOw&s=10" },
-            { titulo: "Saga de Black", poster: "https://i.pinimg.com/736x/a0/b0/73/a0b0732ee82a57b35ca1b379810196b4.jpg" },
-            { titulo: "Saga del Torneo de Poder", poster: "https://i.pinimg.com/736x/c7/92/95/c79295cb907936831832bf5ec1ae17d5.jpg" },
+            { titulo: "Saga del Torneo del Universo 6", etiqueta: "Anime", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9SdBgNJvPZZuQwqniUbOgAOyETZ30L8dDP1VwpIIyOw&s=10" },
+            { titulo: "Saga de Black", etiqueta: "Anime", poster: "https://i.pinimg.com/736x/a0/b0/73/a0b0732ee82a57b35ca1b379810196b4.jpg" },
+            { titulo: "Saga del Torneo de Poder", etiqueta: "Anime", poster: "https://i.pinimg.com/736x/c7/92/95/c79295cb907936831832bf5ec1ae17d5.jpg" },
             { titulo: "Dragon Ball Super: Broly", poster: "https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/media/imagenes/recursos/dragon-ball-super-broly-poster/138134866-1-esl-ES/Dragon-ball-super-Broly-poster.jpg" },
             { titulo: "Dragon Ball Super: Hero", poster: "https://m.media-amazon.com/images/I/61Oo8yO7qKL._AC_UF894,1000_QL80_.jpg" }
         ]
@@ -4523,17 +4527,17 @@ const colecciones = [
         categoria: "dragonball",
         poster: "https://i.pinimg.com/736x/ce/0a/2e/ce0a2ee7177fbfde6bb24596ee21ae5f.jpg",
         peliculas: [
-            { titulo: "Saga Saiyan", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxSr-aKYyKPVySvy3CpUF--Z9UM-IVdRuDam6yMP8zxu6MUkNLSgMkLG0&s=10" },
-            { titulo: "Saga de Freezer", poster: "https://static.wikia.nocookie.net/dragonball/images/2/2e/Arco_de_Freezer_Artwork_DBZ.png/revision/latest?cb=20180612015408&path-prefix=es" },
-            { titulo: "Saga de Cell", poster: "https://www.wallister.de/cdn/shop/products/G868340_01.jpg?v=1677662334" },
-            { titulo: "Saga de Majin Buu", poster: "https://i.pinimg.com/736x/8a/a2/e4/8aa2e46c01ae0c287901c25449979902.jpg" },
-            { titulo: "Saga de Bills", poster: "https://image.tmdb.org/t/p/original/oV8aSngwg5YPpcaNvlC8VOMCYtK.jpg" },
+            { titulo: "Saga Saiyan", etiqueta: "Anime", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxSr-aKYyKPVySvy3CpUF--Z9UM-IVdRuDam6yMP8zxu6MUkNLSgMkLG0&s=10" },
+            { titulo: "Saga de Freezer", etiqueta: "Anime", poster: "https://static.wikia.nocookie.net/dragonball/images/2/2e/Arco_de_Freezer_Artwork_DBZ.png/revision/latest?cb=20180612015408&path-prefix=es" },
+            { titulo: "Saga de Cell", etiqueta: "Anime", poster: "https://www.wallister.de/cdn/shop/products/G868340_01.jpg?v=1677662334" },
+            { titulo: "Saga de Majin Buu", etiqueta: "Anime", poster: "https://i.pinimg.com/736x/8a/a2/e4/8aa2e46c01ae0c287901c25449979902.jpg" },
+            { titulo: "Saga de Bills", etiqueta: "Anime", poster: "https://image.tmdb.org/t/p/original/oV8aSngwg5YPpcaNvlC8VOMCYtK.jpg" },
             { titulo: "La Batalla de los Dioses", poster: "https://www.cinepremiere.com.mx/assets/images/noticias/2013/07-julio/DragonBallZ-batalla-poster.jpg" },
-            { titulo: "Saga de la Resurrección de Freezer", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdp8uz95HVMymEVGeUIdyp0bl5juJj8QU0yCSGQqRLt9MVgZputG5v5dI&s=10" },
+            { titulo: "Saga de la Resurrección de Freezer", etiqueta: "Anime", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdp8uz95HVMymEVGeUIdyp0bl5juJj8QU0yCSGQqRLt9MVgZputG5v5dI&s=10" },
             { titulo: "La Resurrección de F", poster: "https://www.cinepremiere.com.mx/assets/images/noticias/2013/07-julio/DragonBallZ-batalla-poster.jpg" },
-            { titulo: "Saga del Torneo del Universo 6", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9SdBgNJvPZZuQwqniUbOgAOyETZ30L8dDP1VwpIIyOw&s=10" },
-            { titulo: "Saga de Black", poster: "https://i.pinimg.com/736x/a0/b0/73/a0b0732ee82a57b35ca1b379810196b4.jpg" },
-            { titulo: "Saga del Torneo de Poder", poster: "https://i.pinimg.com/736x/c7/92/95/c79295cb907936831832bf5ec1ae17d5.jpg" },
+            { titulo: "Saga del Torneo del Universo 6", etiqueta: "Anime", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9SdBgNJvPZZuQwqniUbOgAOyETZ30L8dDP1VwpIIyOw&s=10" },
+            { titulo: "Saga de Black", etiqueta: "Anime", poster: "https://i.pinimg.com/736x/a0/b0/73/a0b0732ee82a57b35ca1b379810196b4.jpg" },
+            { titulo: "Saga del Torneo de Poder", etiqueta: "Anime", poster: "https://i.pinimg.com/736x/c7/92/95/c79295cb907936831832bf5ec1ae17d5.jpg" },
             { titulo: "Dragon Ball Super: Broly", poster: "https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/media/imagenes/recursos/dragon-ball-super-broly-poster/138134866-1-esl-ES/Dragon-ball-super-Broly-poster.jpg" },
             { titulo: "Dragon Ball Super: Hero", poster: "https://m.media-amazon.com/images/I/61Oo8yO7qKL._AC_UF894,1000_QL80_.jpg" }
         ]
@@ -4559,11 +4563,11 @@ const colecciones = [
         categoria: "dragonball",
         poster: "https://w0.peakpx.com/wallpaper/957/291/HD-wallpaper-dragon-ball-gt-anime-goku-trunks.jpg",
         peliculas: [
-            { titulo: "Saga del Gran Viaje", poster: "https://pics.filmaffinity.com/dragon_ball_gt-891071273-large.jpg" },
-            { titulo: "Saga de Baby", poster: "https://i.pinimg.com/736x/74/bb/97/74bb9786b2eef3f4a1a730655d6e7475.jpg" },
-            { titulo: "Saga de Super A-17", poster: "https://i.pinimg.com/736x/51/3f/27/513f277d4ceeff41610c07ac62cfa348.jpg" },
-            { titulo: "Saga de los Dragones Oscuros", poster: "https://images.justwatch.com/poster/1444330/s718/temporada-4.jpg" },
-            { titulo: "100 Años Después", poster: "https://m.media-amazon.com/images/M/MV5BZWYyZmZmYzQtMzVmYS00MWI5LWJiMzctNGEzMTM3N2ZjYTJlXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" }
+            { titulo: "Saga del Gran Viaje", etiqueta: "Anime", poster: "https://pics.filmaffinity.com/dragon_ball_gt-891071273-large.jpg" },
+            { titulo: "Saga de Baby", etiqueta: "Anime", poster: "https://i.pinimg.com/736x/74/bb/97/74bb9786b2eef3f4a1a730655d6e7475.jpg" },
+            { titulo: "Saga de Super A-17", etiqueta: "Anime", poster: "https://i.pinimg.com/736x/51/3f/27/513f277d4ceeff41610c07ac62cfa348.jpg" },
+            { titulo: "Saga de los Dragones Oscuros", etiqueta: "Anime", poster: "https://images.justwatch.com/poster/1444330/s718/temporada-4.jpg" },
+            { titulo: "100 Años Después", etiqueta: "Anime", poster: "https://m.media-amazon.com/images/M/MV5BZWYyZmZmYzQtMzVmYS00MWI5LWJiMzctNGEzMTM3N2ZjYTJlXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" }
         ]
     },
     {
@@ -4593,37 +4597,37 @@ const colecciones = [
         categoria: "dragonball",
         poster: "https://i.pinimg.com/originals/6f/4d/73/6f4d73d1afc0702a6e9d31f36d1628bc.jpg?nii=t",
         peliculas: [
-            { titulo: "Saga Saiyan", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxSr-aKYyKPVySvy3CpUF--Z9UM-IVdRuDam6yMP8zxu6MUkNLSgMkLG0&s=10" },
+            { titulo: "Saga Saiyan", etiqueta: "Anime", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxSr-aKYyKPVySvy3CpUF--Z9UM-IVdRuDam6yMP8zxu6MUkNLSgMkLG0&s=10" },
             { titulo: "¡Devuélveme a mi Gohan!", poster: "https://image.tmdb.org/t/p/w500/86ECobJsXdqcBzAKWS56EbawbOK.jpg" },
             { titulo: "El Hombre Más Fuerte de Este Mundo", poster: "https://i.pinimg.com/564x/d2/0e/6c/d20e6cb1317bcb88f514c34a19a83627.jpg" },
-            { titulo: "Saga de Freezer", poster: "https://static.wikia.nocookie.net/dragonball/images/2/2e/Arco_de_Freezer_Artwork_DBZ.png/revision/latest?cb=20180612015408&path-prefix=es" },
+            { titulo: "Saga de Freezer", etiqueta: "Anime", poster: "https://static.wikia.nocookie.net/dragonball/images/2/2e/Arco_de_Freezer_Artwork_DBZ.png/revision/latest?cb=20180612015408&path-prefix=es" },
             { titulo: "La Súper Batalla Decisiva por La Tierra", poster: "https://image.tmdb.org/t/p/original/uGadvCa5w8X6zAWzdZlVQYNd6QR.jpg" },
             { titulo: "El Súper Guerrero Son Goku", poster: "https://m.media-amazon.com/images/M/MV5BODE2NDUzMjk3M15BMl5BanBnXkFtZTYwOTA3MDc5._V1_FMjpg_UX1000_.jpg" },
             { titulo: "Los Rivales Más Poderosos", poster: "https://static.wikia.nocookie.net/dragonball/images/7/7a/DBZ_Pel%C3%ADcula_5_p%C3%B3ster.png/revision/latest?cb=20180805032322&path-prefix=es" },
-            { titulo: "Saga de Cell", poster: "https://www.wallister.de/cdn/shop/products/G868340_01.jpg?v=1677662334" },
+            { titulo: "Saga de Cell", etiqueta: "Anime", poster: "https://www.wallister.de/cdn/shop/products/G868340_01.jpg?v=1677662334" },
             { titulo: "El Regreso de Cooler", poster: "https://play-lh.googleusercontent.com/0BXSfNu39g6fzcQe5Sg67KbEvxWLu1WI7qnKLmzGbwLAgk-FWxu-9_AXHbjNH5d1DITM0ca_aIIs6GA1Cw" },
             { titulo: "¡¡Batalla Extrema!! Los Tres Grandes Súper Saiyajines", poster: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/5b86e15beaedd745eeff303cb6ef8d20.png" },
-            { titulo: "Saga de Majin Buu", poster: "https://i.pinimg.com/736x/8a/a2/e4/8aa2e46c01ae0c287901c25449979902.jpg" },
+            { titulo: "Saga de Majin Buu", etiqueta: "Anime", poster: "https://i.pinimg.com/736x/8a/a2/e4/8aa2e46c01ae0c287901c25449979902.jpg" },
             { titulo: "El Poder Invencible", poster: "https://image.tmdb.org/t/p/original/QWjeZq3sMcDPQpgWDwoJrkqgTu.jpg" },
             { titulo: "La Galaxia Corre Peligro", poster: "https://m.media-amazon.com/images/M/MV5BMTUwODQ3MjQwN15BMl5BanBnXkFtZTcwMDgyOTUyMQ@@._V1_.jpg" },
             { titulo: "El Regreso del Guerrero Legendario", poster: "https://image.tmdb.org/t/p/original/x83JFWT3zeqI1j2ubPp1xfPhJq4.jpg" },
             { titulo: "El Combate Definitivo", poster: "https://static.wikia.nocookie.net/dragonball/images/a/ad/DBZ_Pel%C3%ADcula_11_p%C3%B3ster.png/revision/latest?cb=20180805032326&path-prefix=es" },
             { titulo: "¡El Renacer de la Fusión! Goku y Vegeta", poster: "https://i.pinimg.com/736x/fc/cc/10/fccc109144bc20921f2d01a3c8451e84.jpg" },
             { titulo: "El Ataque del Dragón", poster: "https://m.media-amazon.com/images/M/MV5BMTk4MDIxNzk1N15BMl5BanBnXkFtZTcwNDk0MDQzMQ@@._V1_.jpg" },
-            { titulo: "Saga de Bills", poster: "https://image.tmdb.org/t/p/original/oV8aSngwg5YPpcaNvlC8VOMCYtK.jpg" },
+            { titulo: "Saga de Bills", etiqueta: "Anime", poster: "https://image.tmdb.org/t/p/original/oV8aSngwg5YPpcaNvlC8VOMCYtK.jpg" },
             { titulo: "La Batalla de los Dioses", poster: "https://www.cinepremiere.com.mx/assets/images/noticias/2013/07-julio/DragonBallZ-batalla-poster.jpg" },
-            { titulo: "Saga de la Resurrección de Freezer", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdp8uz95HVMymEVGeUIdyp0bl5juJj8QU0yCSGQqRLt9MVgZputG5v5dI&s=10" },
+            { titulo: "Saga de la Resurrección de Freezer", etiqueta: "Anime", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdp8uz95HVMymEVGeUIdyp0bl5juJj8QU0yCSGQqRLt9MVgZputG5v5dI&s=10" },
             { titulo: "La Resurrección de F", poster: "https://www.cinepremiere.com.mx/assets/images/noticias/2013/07-julio/DragonBallZ-batalla-poster.jpg" },
-            { titulo: "Saga del Torneo del Universo 6", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9SdBgNJvPZZuQwqniUbOgAOyETZ30L8dDP1VwpIIyOw&s=10" },
-            { titulo: "Saga de Black", poster: "https://i.pinimg.com/736x/a0/b0/73/a0b0732ee82a57b35ca1b379810196b4.jpg" },
-            { titulo: "Saga del Torneo de Poder", poster: "https://i.pinimg.com/736x/c7/92/95/c79295cb907936831832bf5ec1ae17d5.jpg" },
+            { titulo: "Saga del Torneo del Universo 6", etiqueta: "Anime", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9SdBgNJvPZZuQwqniUbOgAOyETZ30L8dDP1VwpIIyOw&s=10" },
+            { titulo: "Saga de Black", etiqueta: "Anime", poster: "https://i.pinimg.com/736x/a0/b0/73/a0b0732ee82a57b35ca1b379810196b4.jpg" },
+            { titulo: "Saga del Torneo de Poder", etiqueta: "Anime", poster: "https://i.pinimg.com/736x/c7/92/95/c79295cb907936831832bf5ec1ae17d5.jpg" },
             { titulo: "Dragon Ball Super: Broly", poster: "https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/media/imagenes/recursos/dragon-ball-super-broly-poster/138134866-1-esl-ES/Dragon-ball-super-Broly-poster.jpg" },
             { titulo: "Dragon Ball Super: Hero", poster: "https://m.media-amazon.com/images/I/61Oo8yO7qKL._AC_UF894,1000_QL80_.jpg" },
-            { titulo: "Saga del Gran Viaje", poster: "https://pics.filmaffinity.com/dragon_ball_gt-891071273-large.jpg" },
-            { titulo: "Saga de Baby", poster: "https://i.pinimg.com/736x/74/bb/97/74bb9786b2eef3f4a1a730655d6e7475.jpg" },
-            { titulo: "Saga de Super A-17", poster: "https://i.pinimg.com/736x/51/3f/27/513f277d4ceeff41610c07ac62cfa348.jpg" },
-            { titulo: "Saga de los Dragones Oscuros", poster: "https://images.justwatch.com/poster/1444330/s718/temporada-4.jpg" },
-            { titulo: "100 Años Después", poster: "https://m.media-amazon.com/images/M/MV5BZWYyZmZmYzQtMzVmYS00MWI5LWJiMzctNGEzMTM3N2ZjYTJlXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" }
+            { titulo: "Saga del Gran Viaje", etiqueta: "Anime", poster: "https://pics.filmaffinity.com/dragon_ball_gt-891071273-large.jpg" },
+            { titulo: "Saga de Baby", etiqueta: "Anime", poster: "https://i.pinimg.com/736x/74/bb/97/74bb9786b2eef3f4a1a730655d6e7475.jpg" },
+            { titulo: "Saga de Super A-17", etiqueta: "Anime", poster: "https://i.pinimg.com/736x/51/3f/27/513f277d4ceeff41610c07ac62cfa348.jpg" },
+            { titulo: "Saga de los Dragones Oscuros", etiqueta: "Anime", poster: "https://images.justwatch.com/poster/1444330/s718/temporada-4.jpg" },
+            { titulo: "100 Años Después", etiqueta: "Anime", poster: "https://m.media-amazon.com/images/M/MV5BZWYyZmZmYzQtMzVmYS00MWI5LWJiMzctNGEzMTM3N2ZjYTJlXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" }
         ]
     },
     {
@@ -5170,7 +5174,7 @@ function renderizarColecciones() {
             `;
         } else {
             const textoPendiente = col.esVideojuego ? 'Marcar Jugado' : 'Marcar Visto';
-            const etiquetaTipo = col.etiqueta || (col.esVideojuego ? 'Colección de Videojuegos' : 'Colección Animada');
+            const etiquetaTipo = col.etiqueta || (col.esVideojuego ? 'Colección de Videojuegos' : (col.esSerie ? 'Serie' : 'Película'));
             const barraProgresoSimple = col.ocultarProgreso ? '' : `
                     <div class="barra-progreso-container">
                         <div class="barra-progreso-fill" id="barra-${col.id}-fill"></div>
@@ -5725,10 +5729,15 @@ function renderizarContenido() {
 
             // Colección Definitiva de Novelas Gráficas de Marvel: mismo
             // criterio que las de DC (predeterminado por número, cronológico
-            // por orden real de aparición en listaMedia).
+            // por orden real de aparición en listaMedia). Los primeros 60
+            // tomos van con número arábigo (#41, #27...); los 40 "Clásicos"
+            // que le siguen usan numeración romana (#LXII, #LXIII...) — se
+            // extraen por separado y se convierten a un valor numérico para
+            // poder ordenarlos igual en la vista "predeterminado".
             const matchMarvelNG = item.titulo.match(/^Colec[a-záéíóúñ]* (?:Definitiva |Definitivo |Defintiiva |Defintiva )?de Novelas Gr[aá]ficas? de Marvel:? #\s*(\d+)/i);
-            if (matchMarvelNG) {
-                const numMarvelNG = matchMarvelNG[1];
+            const matchMarvelNGRomano = !matchMarvelNG ? item.titulo.match(/^Colec[a-záéíóúñ]* (?:Definitiva |Definitivo |Defintiiva |Defintiva )?de Novelas Gr[aá]ficas? de Marvel:? #\s*([IVXLCDM]+)\b/i) : null;
+            if (matchMarvelNG || matchMarvelNGRomano) {
+                const numMarvelNG = matchMarvelNG ? matchMarvelNG[1] : romanoANumero(matchMarvelNGRomano[1]);
                 const htmlTarjetaMarvelNG = htmlTarjeta.replace(
                     'class="tarjeta-media"',
                     `class="tarjeta-media" data-marvel-ng-num="${numMarvelNG}"`
@@ -6801,6 +6810,9 @@ function cambiarSeccion(seccionNueva) {
     }
     if (seccionNueva.id === 'seccion-requisitos-arkham-origins' && typeof armarComparacionMiPC === 'function') {
         armarComparacionMiPC('seccion-requisitos-arkham-origins', REQUISITOS_ARKHAM_ORIGINS);
+    }
+    if (seccionNueva.id === 'seccion-fox-xmen') {
+        guardarOrdenEstrenoFoxXmenSiHaceFalta();
     }
 }
 
@@ -9676,6 +9688,149 @@ IDS_VOLVER_MARVEL_ARGENTINA_SIN_WIRING.forEach(id => {
     }
 });
 
+// Guarda el orden natural (de estreno) de las tarjetas de X-Men Fox la
+// primera vez que se abre la sección (recién ahí existen en el DOM), para
+// poder volver a él después de haber ordenado por cronología in-universo.
+function guardarOrdenEstrenoFoxXmenSiHaceFalta() {
+    const grid = document.getElementById('grilla-fox-xmen');
+    if (!grid) return;
+    const tarjetas = grid.querySelectorAll('.tarjeta-media');
+    if (tarjetas.length === 0 || tarjetas[0].hasAttribute('data-orden-estreno')) return;
+    tarjetas.forEach((t, i) => t.setAttribute('data-orden-estreno', i));
+}
+
+document.querySelectorAll('.btn-filtro-fox-xmen-orden').forEach(boton => {
+    boton.addEventListener('click', () => {
+        document.querySelectorAll('.btn-filtro-fox-xmen-orden').forEach(b => b.classList.remove('activo'));
+        boton.classList.add('activo');
+        const grid = document.getElementById('grilla-fox-xmen');
+        if (!grid) return;
+        const tarjetas = Array.from(grid.querySelectorAll('.tarjeta-media'));
+        if (boton.dataset.orden === 'cronologico') {
+            tarjetas.sort((a, b) => parseFloat(a.getAttribute('data-crono')) - parseFloat(b.getAttribute('data-crono')));
+        } else {
+            tarjetas.sort((a, b) => parseFloat(a.getAttribute('data-orden-estreno')) - parseFloat(b.getAttribute('data-orden-estreno')));
+        }
+        tarjetas.forEach(t => grid.appendChild(t));
+    });
+});
+
+// Convierte un número romano (I, IV, LXII, ...) a su valor decimal, para
+// poder ordenar junto con los tomos numerados en arábigo de la misma
+// colección (ej. "Colección Definitiva de Novelas Gráficas de Marvel").
+function romanoANumero(romano) {
+    const valores = { I: 1, V: 5, X: 10, L: 50, C: 100, D: 500, M: 1000 };
+    let total = 0;
+    const letras = romano.toUpperCase().split('');
+    for (let i = 0; i < letras.length; i++) {
+        const actual = valores[letras[i]];
+        const siguiente = valores[letras[i + 1]];
+        if (siguiente && actual < siguiente) {
+            total -= actual;
+        } else {
+            total += actual;
+        }
+    }
+    return total;
+}
+
+const btnVolverFichaXmenFirstClass = document.getElementById('btn-volver-ficha-xmen-first-class');
+if (btnVolverFichaXmenFirstClass) {
+    btnVolverFichaXmenFirstClass.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-xmen-first-class');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-fox-xmen'));
+    });
+}
+const btnVolverFichaXmenOriginsWolverine = document.getElementById('btn-volver-ficha-xmen-origins-wolverine');
+if (btnVolverFichaXmenOriginsWolverine) {
+    btnVolverFichaXmenOriginsWolverine.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-xmen-origins-wolverine');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-fox-xmen'));
+    });
+}
+
+const btnVolverFichaXmen2000 = document.getElementById('btn-volver-ficha-xmen-2000');
+if (btnVolverFichaXmen2000) {
+    btnVolverFichaXmen2000.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-xmen-2000');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-fox-xmen'));
+    });
+}
+const btnVolverFichaX2XmenUnited = document.getElementById('btn-volver-ficha-x2-xmen-united');
+if (btnVolverFichaX2XmenUnited) {
+    btnVolverFichaX2XmenUnited.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-x2-xmen-united');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-fox-xmen'));
+    });
+}
+
+const btnVolverFichaXmenLastStand = document.getElementById('btn-volver-ficha-xmen-last-stand');
+if (btnVolverFichaXmenLastStand) {
+    btnVolverFichaXmenLastStand.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-xmen-last-stand');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-fox-xmen'));
+    });
+}
+const btnVolverFichaTheWolverine = document.getElementById('btn-volver-ficha-the-wolverine');
+if (btnVolverFichaTheWolverine) {
+    btnVolverFichaTheWolverine.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-the-wolverine');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-fox-xmen'));
+    });
+}
+
+const btnVolverFichaThorDarkWorld = document.getElementById('btn-volver-ficha-thor-dark-world');
+if (btnVolverFichaThorDarkWorld) {
+    btnVolverFichaThorDarkWorld.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-thor-dark-world');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-mcu-infinito'));
+    });
+}
+
+const btnVolverFichaCapitanAmericaWinterSoldier = document.getElementById('btn-volver-ficha-capitan-america-winter-soldier');
+if (btnVolverFichaCapitanAmericaWinterSoldier) {
+    btnVolverFichaCapitanAmericaWinterSoldier.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-capitan-america-winter-soldier');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-mcu-infinito'));
+    });
+}
+
+const btnVolverFichaXmenDaysFuturePast = document.getElementById('btn-volver-ficha-xmen-days-future-past');
+if (btnVolverFichaXmenDaysFuturePast) {
+    btnVolverFichaXmenDaysFuturePast.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-xmen-days-future-past');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-fox-xmen'));
+    });
+}
+
+const btnVolverFichaXmenApocalypse = document.getElementById('btn-volver-ficha-xmen-apocalypse');
+if (btnVolverFichaXmenApocalypse) {
+    btnVolverFichaXmenApocalypse.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-xmen-apocalypse');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-fox-xmen'));
+    });
+}
+
 const btnVolverFichaLegoJurassicWorld = document.getElementById('btn-volver-ficha-lego-jurassic-world');
 
 
@@ -9751,7 +9906,17 @@ const FICHAS_TECNICAS_TITULOS = {
     "iron-man-3": "Iron Man 3",
     "arkham-asylum": "Batman: Arkham Asylum",
     "arkham-city": "Batman: Arkham City",
-    "arkham-origins": "Batman: Arkham Origins"
+    "arkham-origins": "Batman: Arkham Origins",
+    "xmen-first-class": "X-Men: First Class",
+    "xmen-origins-wolverine": "X-Men Origins: Wolverine",
+    "xmen-2000": "X-Men (2000)",
+    "x2-xmen-united": "X2: X-Men United",
+    "xmen-last-stand": "X-Men: The Last Stand",
+    "the-wolverine": "The Wolverine",
+    "thor-dark-world": "Thor: The Dark World",
+    "capitan-america-winter-soldier": "Captain America: The Winter Soldier",
+    "xmen-days-future-past": "X-Men: Days of Future Past",
+    "xmen-apocalypse": "X-Men: Apocalypse"
 };
 
 // Casos con id de sección no estándar (no siguen "seccion-ficha-<id>").
@@ -10140,6 +10305,184 @@ const REPARTO_PELICULAS = {
             { actor: "Paul Bettany", personaje: "Jarvis (voz)" },
             { actor: "William Sadler", personaje: "Presidente Ellis" },
             { actor: "Ty Simpkins", personaje: "Harley Keener" }
+        ]
+    },
+    "xmen-first-class": {
+        director: "Matthew Vaughn",
+        elenco: [
+            { actor: "James McAvoy", personaje: "Charles Xavier / Profesor X" },
+            { actor: "Michael Fassbender", personaje: "Erik Lehnsherr / Magneto" },
+            { actor: "Jennifer Lawrence", personaje: "Raven / Mystique" },
+            { actor: "Rose Byrne", personaje: "Moira MacTaggert" },
+            { actor: "Kevin Bacon", personaje: "Sebastian Shaw" },
+            { actor: "January Jones", personaje: "Emma Frost" },
+            { actor: "Nicholas Hoult", personaje: "Hank McCoy / Bestia" },
+            { actor: "Lucas Till", personaje: "Alex Summers / Havoc" },
+            { actor: "Zoë Kravitz", personaje: "Angel Salvadore" },
+            { actor: "Caleb Landry Jones", personaje: "Sean Cassidy / Banshee" },
+            { actor: "Jason Flemyng", personaje: "Azazel" },
+            { actor: "Edi Gathegi", personaje: "Darwin" },
+            { actor: "Álex González", personaje: "Janos Quested / Riptide" }
+        ]
+    },
+    "xmen-origins-wolverine": {
+        director: "Gavin Hood",
+        elenco: [
+            { actor: "Hugh Jackman", personaje: "Logan / Wolverine" },
+            { actor: "Liev Schreiber", personaje: "Victor Creed / Dientes de Sable" },
+            { actor: "Danny Huston", personaje: "William Stryker" },
+            { actor: "Lynn Collins", personaje: "Kayla Silverfox" },
+            { actor: "Kevin Durand", personaje: "Fred Dukes / Blob" },
+            { actor: "Dominic Monaghan", personaje: "Chris Bradley / Bolt" },
+            { actor: "Taylor Kitsch", personaje: "Remy LeBeau / Gambito" },
+            { actor: "Daniel Henney", personaje: "Agente Zero" },
+            { actor: "Ryan Reynolds", personaje: "Wade Wilson / Deadpool" },
+            { actor: "will.i.am", personaje: "John Wraith" },
+            { actor: "Patrick Stewart", personaje: "Charles Xavier / Profesor X" }
+        ]
+    },
+    "xmen-2000": {
+        director: "Bryan Singer",
+        elenco: [
+            { actor: "Hugh Jackman", personaje: "Logan / Wolverine" },
+            { actor: "Patrick Stewart", personaje: "Charles Xavier / Profesor X" },
+            { actor: "Ian McKellen", personaje: "Erik Lehnsherr / Magneto" },
+            { actor: "Famke Janssen", personaje: "Jean Grey" },
+            { actor: "James Marsden", personaje: "Scott Summers / Cíclope" },
+            { actor: "Halle Berry", personaje: "Ororo Munroe / Tormenta" },
+            { actor: "Anna Paquin", personaje: "Rogue" },
+            { actor: "Tyler Mane", personaje: "Sabretooth" },
+            { actor: "Ray Park", personaje: "Toad" },
+            { actor: "Rebecca Romijn", personaje: "Mystique" },
+            { actor: "Bruce Davison", personaje: "Senador Kelly" }
+        ]
+    },
+    "x2-xmen-united": {
+        director: "Bryan Singer",
+        elenco: [
+            { actor: "Hugh Jackman", personaje: "Logan / Wolverine" },
+            { actor: "Patrick Stewart", personaje: "Charles Xavier / Profesor X" },
+            { actor: "Ian McKellen", personaje: "Erik Lehnsherr / Magneto" },
+            { actor: "James Marsden", personaje: "Scott Summers / Cíclope" },
+            { actor: "Brian Cox", personaje: "William Stryker" },
+            { actor: "Famke Janssen", personaje: "Jean Grey" },
+            { actor: "Halle Berry", personaje: "Ororo Munroe / Tormenta" },
+            { actor: "Alan Cumming", personaje: "Kurt Wagner / Nightcrawler" },
+            { actor: "Aaron Stanford", personaje: "John Allerdyce / Pyro" },
+            { actor: "Rebecca Romijn", personaje: "Mystique" },
+            { actor: "Shawn Ashmore", personaje: "Bobby Drake / Iceman" },
+            { actor: "Anna Paquin", personaje: "Rogue" },
+            { actor: "Kelly Hu", personaje: "Yuriko Oyama / Lady Deathstrike" }
+        ]
+    },
+    "xmen-last-stand": {
+        director: "Brett Ratner",
+        elenco: [
+            { actor: "Hugh Jackman", personaje: "Logan / Wolverine" },
+            { actor: "Halle Berry", personaje: "Ororo Munroe / Tormenta" },
+            { actor: "Ian McKellen", personaje: "Erik Lehnsherr / Magneto" },
+            { actor: "Patrick Stewart", personaje: "Charles Xavier / Profesor X" },
+            { actor: "Famke Janssen", personaje: "Jean Grey / Fénix" },
+            { actor: "Anna Paquin", personaje: "Marie / Rogue" },
+            { actor: "Kelsey Grammer", personaje: "Dr. Henry 'Hank' McCoy / Bestia" },
+            { actor: "James Marsden", personaje: "Scott Summers / Cíclope" },
+            { actor: "Rebecca Romijn", personaje: "Raven Darkholme / Mystique" },
+            { actor: "Shawn Ashmore", personaje: "Bobby Drake / Iceman" },
+            { actor: "Aaron Stanford", personaje: "John Allerdyce / Pyro" },
+            { actor: "Vinnie Jones", personaje: "Cain Marko / Juggernaut" },
+            { actor: "Elliot Page", personaje: "Kitty Pryde" },
+            { actor: "Ben Foster", personaje: "Warren Worthington III / Ángel" }
+        ]
+    },
+    "the-wolverine": {
+        director: "James Mangold",
+        elenco: [
+            { actor: "Hugh Jackman", personaje: "Logan / Wolverine" },
+            { actor: "Hiroyuki Sanada", personaje: "Shingen Harada" },
+            { actor: "Tao Okamoto", personaje: "Mariko Yashida" },
+            { actor: "Rila Fukushima", personaje: "Yukio" },
+            { actor: "Famke Janssen", personaje: "Jean Grey" },
+            { actor: "Will Yun Lee", personaje: "Harada" },
+            { actor: "Svetlana Khodchenkova", personaje: "Madame Hydra / Viper" },
+            { actor: "Hal Yamanouchi", personaje: "Ichiro Yashida / Silver Samurai" },
+            { actor: "Brian Tee", personaje: "Noburo Mori" },
+            { actor: "Patrick Stewart", personaje: "Charles Xavier / Profesor X" },
+            { actor: "Ian McKellen", personaje: "Erik Lehnsherr / Magneto" }
+        ]
+    },
+    "thor-dark-world": {
+        director: "Alan Taylor",
+        elenco: [
+            { actor: "Chris Hemsworth", personaje: "Thor" },
+            { actor: "Natalie Portman", personaje: "Jane Foster" },
+            { actor: "Tom Hiddleston", personaje: "Loki" },
+            { actor: "Christopher Eccleston", personaje: "Malekith" },
+            { actor: "Anthony Hopkins", personaje: "Odín" },
+            { actor: "Jaimie Alexander", personaje: "Sif" },
+            { actor: "Zachary Levi", personaje: "Fandral" },
+            { actor: "Ray Stevenson", personaje: "Volstagg" },
+            { actor: "Tadanobu Asano", personaje: "Hogun" },
+            { actor: "Idris Elba", personaje: "Heimdall" },
+            { actor: "Rene Russo", personaje: "Frigga" },
+            { actor: "Kat Dennings", personaje: "Darcy Lewis" },
+            { actor: "Stellan Skarsgård", personaje: "Erik Selvig" }
+        ]
+    },
+    "capitan-america-winter-soldier": {
+        director: "Joe Russo, Anthony Russo",
+        elenco: [
+            { actor: "Chris Evans", personaje: "Steve Rogers / Capitán América" },
+            { actor: "Samuel L. Jackson", personaje: "Nick Fury" },
+            { actor: "Scarlett Johansson", personaje: "Natasha Romanoff / Black Widow" },
+            { actor: "Robert Redford", personaje: "Alexander Pierce" },
+            { actor: "Sebastian Stan", personaje: "Bucky Barnes / Soldado de Invierno" },
+            { actor: "Anthony Mackie", personaje: "Sam Wilson / Falcon" },
+            { actor: "Cobie Smulders", personaje: "Maria Hill" },
+            { actor: "Frank Grillo", personaje: "Brock Rumlow" },
+            { actor: "Emily VanCamp", personaje: "Kate / Agente 13" },
+            { actor: "Hayley Atwell", personaje: "Peggy Carter" },
+            { actor: "Toby Jones", personaje: "Dr. Arnim Zola" },
+            { actor: "Callan Mulvey", personaje: "Jack Rollins" },
+            { actor: "Georges St-Pierre", personaje: "Georges Batroc" }
+        ]
+    },
+    "xmen-days-future-past": {
+        director: "Bryan Singer",
+        elenco: [
+            { actor: "Hugh Jackman", personaje: "Logan / Wolverine" },
+            { actor: "James McAvoy", personaje: "Charles Xavier" },
+            { actor: "Michael Fassbender", personaje: "Erik Lehnsherr" },
+            { actor: "Patrick Stewart", personaje: "Profesor X" },
+            { actor: "Ian McKellen", personaje: "Magneto" },
+            { actor: "Jennifer Lawrence", personaje: "Raven / Mystique" },
+            { actor: "Halle Berry", personaje: "Ororo Munroe / Tormenta" },
+            { actor: "Nicholas Hoult", personaje: "Hank McCoy / Bestia" },
+            { actor: "Anna Paquin", personaje: "Rogue" },
+            { actor: "Elliot Page", personaje: "Kitty Pryde" },
+            { actor: "Peter Dinklage", personaje: "Dr. Bolivar Trask" },
+            { actor: "Shawn Ashmore", personaje: "Bobby Drake / Iceman" },
+            { actor: "Omar Sy", personaje: "Bishop" },
+            { actor: "Evan Peters", personaje: "Peter Maximoff / Quicksilver" },
+            { actor: "Fan Bingbing", personaje: "Blink" }
+        ]
+    },
+    "xmen-apocalypse": {
+        director: "Bryan Singer",
+        elenco: [
+            { actor: "James McAvoy", personaje: "Charles Xavier / Profesor X" },
+            { actor: "Michael Fassbender", personaje: "Erik Lehnsherr / Magneto" },
+            { actor: "Jennifer Lawrence", personaje: "Raven / Mystique" },
+            { actor: "Nicholas Hoult", personaje: "Hank McCoy / Bestia" },
+            { actor: "Oscar Isaac", personaje: "En Sabah Nur / Apocalypse" },
+            { actor: "Rose Byrne", personaje: "Moira MacTaggert" },
+            { actor: "Evan Peters", personaje: "Peter Maximoff / Quicksilver" },
+            { actor: "Sophie Turner", personaje: "Jean Grey" },
+            { actor: "Tye Sheridan", personaje: "Scott Summers / Cíclope" },
+            { actor: "Lucas Till", personaje: "Alex Summers / Havoc" },
+            { actor: "Kodi Smit-McPhee", personaje: "Kurt Wagner / Nightcrawler" },
+            { actor: "Ben Hardy", personaje: "Ángel" },
+            { actor: "Alexandra Shipp", personaje: "Ororo Munroe / Tormenta" },
+            { actor: "Olivia Munn", personaje: "Psylocke" }
         ]
     }
 };
