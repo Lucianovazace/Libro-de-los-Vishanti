@@ -40,13 +40,13 @@ const listaMedia = [
     { titulo: "X-Men: First Class", categoria: "doomsday", tier: 3, tipo: "Película", fichaTecnicaId: "xmen-first-class", poster: "https://collider.com/wp-content/uploads/x-men-first-class-teaser-poster.jpg" },
     { titulo: "The Wolverine", categoria: "doomsday", tier: 4, tipo: "Película", fichaTecnicaId: "the-wolverine", poster: "https://image.tmdb.org/t/p/original/8lzmovtARDXnE7kTDOum02i6fXv.jpg" },
     { titulo: "X-Men: Days of Future Past", categoria: "doomsday", tier: 3, tipo: "Película", fichaTecnicaId: "xmen-days-future-past", poster: "https://i0.wp.com/www.dorkaholics.com/wp-content/uploads/2014/04/9kcs.jpg?fit=692%2C1024&ssl=1" },
-    { titulo: "Deadpool", categoria: "doomsday", tier: 4, tipo: "Película", poster: "https://m.media-amazon.com/images/I/71SBA4bdx8L._AC_UF894,1000_QL80_AIweblab1381794,T1_.jpg" },
+    { titulo: "Deadpool", categoria: "doomsday", tier: 4, tipo: "Película", fichaTecnicaId: "deadpool-1", poster: "https://m.media-amazon.com/images/I/71SBA4bdx8L._AC_UF894,1000_QL80_AIweblab1381794,T1_.jpg" },
     { titulo: "X-Men: Apocalypse", categoria: "doomsday", tier: 4, tipo: "Película", fichaTecnicaId: "xmen-apocalypse", poster: "https://www.scifinow.co.uk/wp-content/uploads/2015/12/xmen_apocalypse_ver2.jpg" },
     { titulo: "Logan", categoria: "doomsday", tier: 1, tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/Logan_2017_teaser_original_film_art_5000x.webp?v=1677273260" },
     { titulo: "Avengers: Infinity War", categoria: "doomsday", tier: 1, tipo: "Película", poster: "https://www.blackfilm.com/read/wp-content/uploads/2017/11/Avengers-Infinity-War-Teaser-Poster.jpg" },
-    { titulo: "Deadpool 2", categoria: "doomsday", tier: 4, tipo: "Película", poster: "https://preview.redd.it/new-deadpool-2-poster-v0-878r7e1hmle01.jpg?auto=webp&s=2f03e75ff6a45766bbbf16a95cbe0ecc3d6c7046" },
+    { titulo: "Deadpool 2", categoria: "doomsday", tier: 4, tipo: "Película", fichaTecnicaId: "deadpool-2", poster: "https://preview.redd.it/new-deadpool-2-poster-v0-878r7e1hmle01.jpg?auto=webp&s=2f03e75ff6a45766bbbf16a95cbe0ecc3d6c7046" },
     { titulo: "Avengers: Endgame", categoria: "doomsday", tier: 1, tipo: "Película", poster: "https://cdn.marvel.com/content/2x/MLou2_Teaser_1-Sht_v6_Lg.jpg" },
-    { titulo: "X-Men Dark Phoenix", categoria: "doomsday", tier: 4, tipo: "Película", poster: "https://m.media-amazon.com/images/I/81SP4dCrQyL.jpg" },
+    { titulo: "X-Men Dark Phoenix", categoria: "doomsday", tier: 4, tipo: "Película", fichaTecnicaId: "xmen-dark-phoenix", poster: "https://m.media-amazon.com/images/I/81SP4dCrQyL.jpg" },
     { titulo: "The New Mutants", categoria: "doomsday", tier: 4, tipo: "Película", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5OVOtNIm-bqGtCUI1SICMA58EJGV7_5_y7oDu9Zf27WcV6YdCE64CVQSf&s=10" },
     { titulo: "WandaVision", categoria: "doomsday", tier: 1, tipo: "Serie", poster: "https://picarouno.com/wp-content/uploads/2025/12/wandavision_001-1037x1536.jpg" },
     { titulo: "The Falcon and The Winter Soldier", categoria: "doomsday", tier: 3, tipo: "Serie", poster: "https://www.hellofriki.com/wp-content/uploads/2020/12/falcon-soldado-de-invierno-serie-poste-691x1024.jpg" },
@@ -147,10 +147,10 @@ const listaMedia = [
     { titulo: "X-Men: First Class", categoria: "fox-xmen", tipo: "Película", fichaTecnicaId: "xmen-first-class", crono: 1, poster: "https://collider.com/wp-content/uploads/x-men-first-class-teaser-poster.jpg" },
     { titulo: "X-Men: Days of Future Past", categoria: "fox-xmen", tipo: "Película", fichaTecnicaId: "xmen-days-future-past", crono: 7, poster: "https://i0.wp.com/www.dorkaholics.com/wp-content/uploads/2014/04/9kcs.jpg?fit=692%2C1024&ssl=1" },
     { titulo: "X-Men: Apocalypse", categoria: "fox-xmen", tipo: "Película", fichaTecnicaId: "xmen-apocalypse", crono: 8, poster: "https://www.scifinow.co.uk/wp-content/uploads/2015/12/xmen_apocalypse_ver2.jpg" },
-    { titulo: "X-Men Dark Phoenix", categoria: "fox-xmen", tipo: "Película", crono: 9, poster: "https://m.media-amazon.com/images/I/81SP4dCrQyL.jpg" },
+    { titulo: "X-Men Dark Phoenix", categoria: "fox-xmen", tipo: "Película", fichaTecnicaId: "xmen-dark-phoenix", crono: 9, poster: "https://m.media-amazon.com/images/I/81SP4dCrQyL.jpg" },
     { titulo: "Logan", categoria: "fox-xmen", tipo: "Película", crono: 13, poster: "https://www.originalfilmart.com/cdn/shop/products/Logan_2017_teaser_original_film_art_5000x.webp?v=1677273260" },
-    { titulo: "Deadpool", categoria: "fox-xmen", tipo: "Película", crono: 10, poster: "https://m.media-amazon.com/images/I/71SBA4bdx8L._AC_UF894,1000_QL80_AIweblab1381794,T1_.jpg" },
-    { titulo: "Deadpool 2", categoria: "fox-xmen", tipo: "Película", crono: 11, poster: "https://preview.redd.it/new-deadpool-2-poster-v0-878r7e1hmle01.jpg?auto=webp&s=2f03e75ff6a45766bbbf16a95cbe0ecc3d6c7046" },
+    { titulo: "Deadpool", categoria: "fox-xmen", tipo: "Película", fichaTecnicaId: "deadpool-1", crono: 10, poster: "https://m.media-amazon.com/images/I/71SBA4bdx8L._AC_UF894,1000_QL80_AIweblab1381794,T1_.jpg" },
+    { titulo: "Deadpool 2", categoria: "fox-xmen", tipo: "Película", fichaTecnicaId: "deadpool-2", crono: 11, poster: "https://preview.redd.it/new-deadpool-2-poster-v0-878r7e1hmle01.jpg?auto=webp&s=2f03e75ff6a45766bbbf16a95cbe0ecc3d6c7046" },
     { titulo: "The New Mutants", categoria: "fox-xmen", tipo: "Película", crono: 12, poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5OVOtNIm-bqGtCUI1SICMA58EJGV7_5_y7oDu9Zf27WcV6YdCE64CVQSf&s=10" },
 
     // --- FOX: CUATRO FANTÁSTICOS ---
@@ -231,7 +231,7 @@ const listaMedia = [
     { titulo: "Assassin's Creed II", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 2, crono: 6, fichaTecnicaId: "assassins-creed-2", poster: "https://cdn1.epicgames.com/salesEvent/salesEvent/AC2_GameName_Store_Portrait_1200x1600_1200x1600-2c5e000213988c5dde375bb2602e9986" },
     { titulo: "Assassin's Creed: Brotherhood", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 3, crono: 7, fichaTecnicaId: "assassins-creed-brotherhood", poster: "https://images.g2a.com/323x433/1x1x1/assassins-creed-brotherhood-p10000043255/dc54b5ec98ab409c9c9332e3" },
     { titulo: "Assassin's Creed: Revelations", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 4, crono: 8, fichaTecnicaId: "assassins-creed-revelations", poster: "https://m.media-amazon.com/images/M/MV5BOWM3YjRkM2MtZmU3My00OTc4LTg0MDMtMmEzYjc3NWNjMjIxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
-    { titulo: "Assassin's Creed III", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 5, crono: 12, poster: "https://static.posters.cz/image/1300/12811.jpg" },
+    { titulo: "Assassin's Creed III", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 5, crono: 12, fichaTecnicaId: "assassins-creed-3", poster: "https://static.posters.cz/image/1300/12811.jpg" },
     { titulo: "Assassin's Creed IV: Black Flag", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 6, crono: 10, poster: "https://mir-s3-cdn-cf.behance.net/project_modules/hd/4c4b7612856287.5626e31d6576f.jpg" },
     { titulo: "Assassin's Creed: Rogue", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 7, crono: 11, poster: "https://images.gog.com/ec9bdb99d06eb876d115146abd005e9fa18a586f69efcc87dd874e483317e941_glx_vertical_cover.webp?namespace=gamesdb" },
     { titulo: "Assassin's Creed: Unity", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 8, crono: 13, poster: "https://m.media-amazon.com/images/M/MV5BMDY1NmE5YzgtYTRiYS00ZDVlLTkxNDktYzU2YzIyZWE3NjQ2XkEyXkFqcGc@._V1_.jpg" },
@@ -1027,7 +1027,7 @@ const listaMedia = [
     { titulo: "The Big Short", categoria: "brad-pitt", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZDZkNDQ3YjktYjBlZC00YTY1LTgxOGYtY2RhMWFhZmNkZGY3XkEyXkFqcGc@.V1.jpg" },
     { titulo: "Allied", categoria: "brad-pitt", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNWJiOTUzODItNTYzYS00NGY0LWIzZmEtZDA4MGI5ZWMxMjM2XkEyXkFqcGc@._V1_.jpg" },
     { titulo: "War Machine", categoria: "brad-pitt", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTg0ODE5NzE0OV5BMl5BanBnXkFtZTgwOTExODcyMjI@._V1_.jpg" },
-    { titulo: "Deadpool 2", categoria: "brad-pitt", subtipo: "2010", tipo: "Película", poster: "https://preview.redd.it/new-deadpool-2-poster-v0-878r7e1hmle01.jpg?auto=webp&s=2f03e75ff6a45766bbbf16a95cbe0ecc3d6c7046" },
+    { titulo: "Deadpool 2", categoria: "brad-pitt", subtipo: "2010", tipo: "Película", fichaTecnicaId: "deadpool-2", poster: "https://preview.redd.it/new-deadpool-2-poster-v0-878r7e1hmle01.jpg?auto=webp&s=2f03e75ff6a45766bbbf16a95cbe0ecc3d6c7046" },
     { titulo: "Once Upon a Time in Hollywood", categoria: "brad-pitt", subtipo: "2010", tipo: "Película", poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2019/06/IMG_9717.jpeg" },
     { titulo: "Ad Astra", categoria: "brad-pitt", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/i37759GsWqeWAf0pUcaY9nNKFa3.jpg" },
     { titulo: "Snatch", categoria: "brad-pitt", subtipo: "2000", tipo: "Película", poster: "https://m.media-amazon.com/images/I/717j6p4oeRL.jpg" },
@@ -3193,6 +3193,44 @@ const colecciones = [
         poster: "https://w0.peakpx.com/wallpaper/414/260/HD-wallpaper-wizarding-world-fantastic-beasts-harry-potter-magic.jpg",
         esContenedor: true,
         peliculas: []
+    },
+    {
+        id: "toy-story",
+        titulo: "Toy Story",
+        categoria: "franquicias",
+        poster: "https://i.pinimg.com/736x/24/d6/52/24d652b3ce14247edb83207b95476b2b.jpg",
+        peliculas: [
+            { titulo: "Toy Story", poster: "https://m.media-amazon.com/images/I/71aBLaC4TzL.jpg" },
+            { titulo: "Toy Story 2", poster: "https://m.media-amazon.com/images/I/719aV3ujFKL.jpg" },
+            { titulo: "Toy Story 3", poster: "https://image.tmdb.org/t/p/original/xNMYWGov98EySsv31FVEcnMKt9q.jpg" },
+            { titulo: "Toy Story Toons: Vacaciones en Hawaii", fichaTecnicaId: "ts-hawaii", poster: "https://image.tmdb.org/t/p/original/zK0tA15d6Ltr1FK7sEXv9zIpzEJ.jpg" },
+            { titulo: "Toy Story Toons: Pequeño Gran Buzz", fichaTecnicaId: "ts-pequeno-gran-buzz", poster: "https://image.tmdb.org/t/p/original/vlnHxqUoVhGnquIQIQRptx67ouO.jpg" },
+            { titulo: "Toy Story Toons: Fiesta-Saurio Rex", fichaTecnicaId: "ts-fiesta-saurio-rex", poster: "https://image.tmdb.org/t/p/original/uvaJu47RrDMTP7GAz3eDvveMC5X.jpg" },
+            { titulo: "Toy Story de Terror", fichaTecnicaId: "ts-terror", poster: "https://m.media-amazon.com/images/M/MV5BNDU5MWI4ZTctYTdlNi00MmQ1LTkzZGUtZmYxYWMyNmQ4MjdiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+            { titulo: "Toy Story: Olvidados en el Tiempo", fichaTecnicaId: "ts-olvidados-tiempo", poster: "https://image.tmdb.org/t/p/original/yvP2nJL0V5Epey58Y2hNi43Ndkb.jpg" },
+            { titulo: "Lamp Life", fichaTecnicaId: "ts-lamp-life", poster: "https://m.media-amazon.com/images/M/MV5BZWFlZmViODItZmQ1Mi00NDdmLTk5Y2ItYzVkNTlkNzJkZjJmXkEyXkFqcGc@._V1_.jpg" },
+            { titulo: "Toy Story 4", poster: "https://hips.hearstapps.com/hmg-prod/images/toy-story-4-poster-1543427531.jpg" },
+            { titulo: "Forky Pregunta", fichaTecnicaId: "ts-forky-pregunta", poster: "https://m.media-amazon.com/images/M/MV5BNjZlZWYyMTEtMzQwOS00YzgxLWIzYzQtM2MyOGU4MDQ4NDY0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+            { titulo: "Toy Story 5", fichaTecnicaId: "toy-story-5", poster: "http://www.impawards.com/2026/posters/toy_story_five.jpg" }
+        ]
+    },
+    {
+        id: "halloween-franquicias",
+        titulo: "Halloween",
+        categoria: "franquicias",
+        poster: "https://m.media-amazon.com/images/M/MV5BNDU5MWI4ZTctYTdlNi00MmQ1LTkzZGUtZmYxYWMyNmQ4MjdiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        peliculas: [
+            { titulo: "Toy Story de Terror", fichaTecnicaId: "ts-terror", poster: "https://m.media-amazon.com/images/M/MV5BNDU5MWI4ZTctYTdlNi00MmQ1LTkzZGUtZmYxYWMyNmQ4MjdiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" }
+        ]
+    },
+    {
+        id: "navidad-franquicias",
+        titulo: "Navidad",
+        categoria: "franquicias",
+        poster: "https://image.tmdb.org/t/p/original/yvP2nJL0V5Epey58Y2hNi43Ndkb.jpg",
+        peliculas: [
+            { titulo: "Toy Story: Olvidados en el Tiempo", fichaTecnicaId: "ts-olvidados-tiempo", poster: "https://image.tmdb.org/t/p/original/yvP2nJL0V5Epey58Y2hNi43Ndkb.jpg" }
+        ]
     },
     {
         id: "harry-potter",
@@ -6811,6 +6849,9 @@ function cambiarSeccion(seccionNueva) {
     if (seccionNueva.id === 'seccion-requisitos-arkham-origins' && typeof armarComparacionMiPC === 'function') {
         armarComparacionMiPC('seccion-requisitos-arkham-origins', REQUISITOS_ARKHAM_ORIGINS);
     }
+    if (seccionNueva.id === 'seccion-requisitos-assassins-creed-3' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-assassins-creed-3', REQUISITOS_ASSASSINS_CREED_3);
+    }
     if (seccionNueva.id === 'seccion-fox-xmen') {
         guardarOrdenEstrenoFoxXmenSiHaceFalta();
     }
@@ -7433,6 +7474,25 @@ if(btnVolverDune) {
     });
 }
 
+const btnVolverToyStory = document.getElementById('btn-volver-toy-story');
+if (btnVolverToyStory) {
+    btnVolverToyStory.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-franquicias'));
+    });
+}
+const btnVolverHalloweenFranquicias = document.getElementById('btn-volver-halloween-franquicias');
+if (btnVolverHalloweenFranquicias) {
+    btnVolverHalloweenFranquicias.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-franquicias'));
+    });
+}
+const btnVolverNavidadFranquicias = document.getElementById('btn-volver-navidad-franquicias');
+if (btnVolverNavidadFranquicias) {
+    btnVolverNavidadFranquicias.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-franquicias'));
+    });
+}
+
 const btnVolverMundoMagico = document.getElementById('btn-volver-mundo-magico');
 if(btnVolverMundoMagico) {
     btnVolverMundoMagico.addEventListener('click', () => {
@@ -7945,7 +8005,8 @@ const JUEGOS_CON_REQUISITOS_MIPC = [
     { titulo: "Assassin's Creed: Revelations", seccion: "assassins-creed-revelations", requisitos: () => REQUISITOS_ASSASSINS_CREED_REVELATIONS },
     { titulo: "Batman: Arkham Asylum", seccion: "arkham-asylum", requisitos: () => REQUISITOS_ARKHAM_ASYLUM },
     { titulo: "Batman: Arkham City", seccion: "arkham-city", requisitos: () => REQUISITOS_ARKHAM_CITY },
-    { titulo: "Batman: Arkham Origins", seccion: "arkham-origins", requisitos: () => REQUISITOS_ARKHAM_ORIGINS }
+    { titulo: "Batman: Arkham Origins", seccion: "arkham-origins", requisitos: () => REQUISITOS_ARKHAM_ORIGINS },
+    { titulo: "Assassin's Creed III", seccion: "assassins-creed-3", requisitos: () => REQUISITOS_ASSASSINS_CREED_3 }
 ];
 
 // Comparación rápida (mismo criterio numérico que armarComparacionMiPC)
@@ -9831,6 +9892,91 @@ if (btnVolverFichaXmenApocalypse) {
     });
 }
 
+const btnVolverFichaXmenDarkPhoenix = document.getElementById('btn-volver-ficha-xmen-dark-phoenix');
+if (btnVolverFichaXmenDarkPhoenix) {
+    btnVolverFichaXmenDarkPhoenix.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-xmen-dark-phoenix');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-fox-xmen'));
+    });
+}
+
+const btnVolverFichaAssassinsCreed3 = document.getElementById('btn-volver-ficha-assassins-creed-3');
+if (btnVolverFichaAssassinsCreed3) {
+    btnVolverFichaAssassinsCreed3.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-assassins-creed-3');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-assassins-creed'));
+    });
+}
+const btnDlcAssassinsCreed3 = document.getElementById('btn-dlc-assassins-creed-3');
+if (btnDlcAssassinsCreed3) {
+    btnDlcAssassinsCreed3.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-assassins-creed-3'));
+    });
+}
+const btnVolverDlcAssassinsCreed3 = document.getElementById('btn-volver-dlc-assassins-creed-3');
+if (btnVolverDlcAssassinsCreed3) {
+    btnVolverDlcAssassinsCreed3.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-assassins-creed-3'));
+    });
+}
+document.querySelectorAll('.btn-volver-dlc-individual-ac3').forEach(boton => {
+    boton.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-assassins-creed-3'));
+    });
+});
+const btnRequisitosAssassinsCreed3 = document.getElementById('btn-requisitos-assassins-creed-3');
+if (btnRequisitosAssassinsCreed3) {
+    btnRequisitosAssassinsCreed3.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-assassins-creed-3'));
+    });
+}
+const btnVolverRequisitosAssassinsCreed3 = document.getElementById('btn-volver-requisitos-assassins-creed-3');
+if (btnVolverRequisitosAssassinsCreed3) {
+    btnVolverRequisitosAssassinsCreed3.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-assassins-creed-3'));
+    });
+}
+const REQUISITOS_ASSASSINS_CREED_3 = {
+    minimos: { so: "Windows 7 SP1, 8.1, 10 (solo 64 bits)", cpu: "Intel Core i5 2400 (3.1 GHz) o AMD FX 6350 (3.9 GHz)", ram: "8", almacenamiento: "45", directx: "DirectX 11", gpu: "NVIDIA GeForce GTX 660 o AMD Radeon R9 270X (2 GB de VRAM)" }
+};
+
+const IDS_FICHAS_TOY_STORY = ["ts-hawaii", "ts-pequeno-gran-buzz", "ts-fiesta-saurio-rex", "ts-terror", "ts-olvidados-tiempo", "ts-lamp-life", "ts-forky-pregunta", "toy-story-5"];
+IDS_FICHAS_TOY_STORY.forEach(fichaId => {
+    const btnVolver = document.getElementById(`btn-volver-ficha-${fichaId}`);
+    if (btnVolver) {
+        btnVolver.addEventListener('click', () => {
+            const seccionFicha = document.getElementById(`seccion-ficha-${fichaId}`);
+            const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+            const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+            cambiarSeccion(seccionOrigen || document.getElementById('seccion-toy-story'));
+        });
+    }
+});
+
+const btnVolverFichaDeadpool1 = document.getElementById('btn-volver-ficha-deadpool-1');
+if (btnVolverFichaDeadpool1) {
+    btnVolverFichaDeadpool1.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-deadpool-1');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-fox-xmen'));
+    });
+}
+
+const btnVolverFichaDeadpool2 = document.getElementById('btn-volver-ficha-deadpool-2');
+if (btnVolverFichaDeadpool2) {
+    btnVolverFichaDeadpool2.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-deadpool-2');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-fox-xmen'));
+    });
+}
+
 const btnVolverFichaLegoJurassicWorld = document.getElementById('btn-volver-ficha-lego-jurassic-world');
 
 
@@ -9916,7 +10062,19 @@ const FICHAS_TECNICAS_TITULOS = {
     "thor-dark-world": "Thor: The Dark World",
     "capitan-america-winter-soldier": "Captain America: The Winter Soldier",
     "xmen-days-future-past": "X-Men: Days of Future Past",
-    "xmen-apocalypse": "X-Men: Apocalypse"
+    "xmen-apocalypse": "X-Men: Apocalypse",
+    "xmen-dark-phoenix": "X-Men Dark Phoenix",
+    "assassins-creed-3": "Assassin's Creed III",
+    "ts-hawaii": "Toy Story Toons: Vacaciones en Hawaii",
+    "ts-pequeno-gran-buzz": "Toy Story Toons: Pequeño Gran Buzz",
+    "ts-fiesta-saurio-rex": "Toy Story Toons: Fiesta-Saurio Rex",
+    "ts-terror": "Toy Story de Terror",
+    "ts-olvidados-tiempo": "Toy Story: Olvidados en el Tiempo",
+    "ts-lamp-life": "Lamp Life",
+    "ts-forky-pregunta": "Forky Pregunta",
+    "toy-story-5": "Toy Story 5",
+    "deadpool-1": "Deadpool",
+    "deadpool-2": "Deadpool 2"
 };
 
 // Casos con id de sección no estándar (no siguen "seccion-ficha-<id>").
@@ -10483,6 +10641,54 @@ const REPARTO_PELICULAS = {
             { actor: "Ben Hardy", personaje: "Ángel" },
             { actor: "Alexandra Shipp", personaje: "Ororo Munroe / Tormenta" },
             { actor: "Olivia Munn", personaje: "Psylocke" }
+        ]
+    },
+    "xmen-dark-phoenix": {
+        director: "Simon Kinberg",
+        elenco: [
+            { actor: "Sophie Turner", personaje: "Jean Grey / Fénix Oscura" },
+            { actor: "James McAvoy", personaje: "Charles Xavier / Profesor X" },
+            { actor: "Michael Fassbender", personaje: "Erik Lehnsherr / Magneto" },
+            { actor: "Jennifer Lawrence", personaje: "Raven / Mystique" },
+            { actor: "Nicholas Hoult", personaje: "Hank McCoy / Bestia" },
+            { actor: "Tye Sheridan", personaje: "Scott Summers / Cíclope" },
+            { actor: "Alexandra Shipp", personaje: "Ororo Munroe / Tormenta" },
+            { actor: "Evan Peters", personaje: "Peter Maximoff / Quicksilver" },
+            { actor: "Jessica Chastain", personaje: "Vuk" },
+            { actor: "Kodi Smit-McPhee", personaje: "Kurt Wagner / Nightcrawler" }
+        ]
+    },
+    "deadpool-1": {
+        director: "Tim Miller",
+        elenco: [
+            { actor: "Ryan Reynolds", personaje: "Wade Wilson / Deadpool" },
+            { actor: "Morena Baccarin", personaje: "Vanessa" },
+            { actor: "Ed Skrein", personaje: "Ajax" },
+            { actor: "T.J. Miller", personaje: "Weasel" },
+            { actor: "Gina Carano", personaje: "Angel Dust" },
+            { actor: "Leslie Uggams", personaje: "Blind Al" },
+            { actor: "Brianna Hildebrand", personaje: "Negasonic Teenage Warhead" },
+            { actor: "Stefan Kapičić", personaje: "Colossus (voz)" },
+            { actor: "Karan Soni", personaje: "Dopinder" }
+        ]
+    },
+    "deadpool-2": {
+        director: "David Leitch",
+        elenco: [
+            { actor: "Ryan Reynolds", personaje: "Wade Wilson / Deadpool" },
+            { actor: "Josh Brolin", personaje: "Cable" },
+            { actor: "Morena Baccarin", personaje: "Vanessa" },
+            { actor: "Julian Dennison", personaje: "Russell / Firefist" },
+            { actor: "Zazie Beetz", personaje: "Domino" },
+            { actor: "T.J. Miller", personaje: "Weasel" },
+            { actor: "Leslie Uggams", personaje: "Blind Al" },
+            { actor: "Karan Soni", personaje: "Dopinder" },
+            { actor: "Brianna Hildebrand", personaje: "Negasonic Teenage Warhead" },
+            { actor: "Shioli Kutsuna", personaje: "Yukio" },
+            { actor: "Stefan Kapičić", personaje: "Colossus (voz)" },
+            { actor: "Terry Crews", personaje: "Bedlam" },
+            { actor: "Lewis Tan", personaje: "Shatterstar" },
+            { actor: "Bill Skarsgård", personaje: "Zeitgeist" }
         ]
     }
 };
