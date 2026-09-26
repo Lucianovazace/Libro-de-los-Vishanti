@@ -42,7 +42,7 @@ const listaMedia = [
     { titulo: "X-Men: Days of Future Past", categoria: "doomsday", tier: 3, tipo: "Película", fichaTecnicaId: "xmen-days-future-past", poster: "https://i0.wp.com/www.dorkaholics.com/wp-content/uploads/2014/04/9kcs.jpg?fit=692%2C1024&ssl=1" },
     { titulo: "Deadpool", categoria: "doomsday", tier: 4, tipo: "Película", fichaTecnicaId: "deadpool-1", poster: "https://m.media-amazon.com/images/I/71SBA4bdx8L._AC_UF894,1000_QL80_AIweblab1381794,T1_.jpg" },
     { titulo: "X-Men: Apocalypse", categoria: "doomsday", tier: 4, tipo: "Película", fichaTecnicaId: "xmen-apocalypse", poster: "https://www.scifinow.co.uk/wp-content/uploads/2015/12/xmen_apocalypse_ver2.jpg" },
-    { titulo: "Logan", categoria: "doomsday", tier: 1, tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/Logan_2017_teaser_original_film_art_5000x.webp?v=1677273260" },
+    { titulo: "Logan", categoria: "doomsday", tier: 1, tipo: "Película", fichaTecnicaId: "logan-1", poster: "https://www.originalfilmart.com/cdn/shop/products/Logan_2017_teaser_original_film_art_5000x.webp?v=1677273260" },
     { titulo: "Avengers: Infinity War", categoria: "doomsday", tier: 1, tipo: "Película", poster: "https://www.blackfilm.com/read/wp-content/uploads/2017/11/Avengers-Infinity-War-Teaser-Poster.jpg" },
     { titulo: "Deadpool 2", categoria: "doomsday", tier: 4, tipo: "Película", fichaTecnicaId: "deadpool-2", poster: "https://preview.redd.it/new-deadpool-2-poster-v0-878r7e1hmle01.jpg?auto=webp&s=2f03e75ff6a45766bbbf16a95cbe0ecc3d6c7046" },
     { titulo: "Avengers: Endgame", categoria: "doomsday", tier: 1, tipo: "Película", poster: "https://cdn.marvel.com/content/2x/MLou2_Teaser_1-Sht_v6_Lg.jpg" },
@@ -148,7 +148,7 @@ const listaMedia = [
     { titulo: "X-Men: Days of Future Past", categoria: "fox-xmen", tipo: "Película", fichaTecnicaId: "xmen-days-future-past", crono: 7, poster: "https://i0.wp.com/www.dorkaholics.com/wp-content/uploads/2014/04/9kcs.jpg?fit=692%2C1024&ssl=1" },
     { titulo: "X-Men: Apocalypse", categoria: "fox-xmen", tipo: "Película", fichaTecnicaId: "xmen-apocalypse", crono: 8, poster: "https://www.scifinow.co.uk/wp-content/uploads/2015/12/xmen_apocalypse_ver2.jpg" },
     { titulo: "X-Men Dark Phoenix", categoria: "fox-xmen", tipo: "Película", fichaTecnicaId: "xmen-dark-phoenix", crono: 9, poster: "https://m.media-amazon.com/images/I/81SP4dCrQyL.jpg" },
-    { titulo: "Logan", categoria: "fox-xmen", tipo: "Película", crono: 13, poster: "https://www.originalfilmart.com/cdn/shop/products/Logan_2017_teaser_original_film_art_5000x.webp?v=1677273260" },
+    { titulo: "Logan", categoria: "fox-xmen", tipo: "Película", fichaTecnicaId: "logan-1", crono: 13, poster: "https://www.originalfilmart.com/cdn/shop/products/Logan_2017_teaser_original_film_art_5000x.webp?v=1677273260" },
     { titulo: "Deadpool", categoria: "fox-xmen", tipo: "Película", fichaTecnicaId: "deadpool-1", crono: 10, poster: "https://m.media-amazon.com/images/I/71SBA4bdx8L._AC_UF894,1000_QL80_AIweblab1381794,T1_.jpg" },
     { titulo: "Deadpool 2", categoria: "fox-xmen", tipo: "Película", fichaTecnicaId: "deadpool-2", crono: 11, poster: "https://preview.redd.it/new-deadpool-2-poster-v0-878r7e1hmle01.jpg?auto=webp&s=2f03e75ff6a45766bbbf16a95cbe0ecc3d6c7046" },
     { titulo: "The New Mutants", categoria: "fox-xmen", tipo: "Película", crono: 12, poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5OVOtNIm-bqGtCUI1SICMA58EJGV7_5_y7oDu9Zf27WcV6YdCE64CVQSf&s=10" },
@@ -167,7 +167,7 @@ const listaMedia = [
     { titulo: "The Amazing Spider-Man 2", categoria: "sony-andrew", tipo: "Película", poster: "https://cdn.europosters.eu/image/750/20688.jpg" },
     
     // --- SONY SSU (Universo Spider-Man de Sony) ---
-    { titulo: "Venom", categoria: "sony-ssu", tipo: "Película", poster: "https://ew.com/thmb/ZB6f77bkGWakc1G6ZMf84TWHfC8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/venom-dom-vnm_online_1sht_tsr_rd3dimax_01_rgb-2000-1aa5bc8ab6bf4dc38a719c55500ddbde.jpg" },
+    { titulo: "Venom", categoria: "sony-ssu", tipo: "Película", fichaTecnicaId: "venom-1", poster: "https://ew.com/thmb/ZB6f77bkGWakc1G6ZMf84TWHfC8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/venom-dom-vnm_online_1sht_tsr_rd3dimax_01_rgb-2000-1aa5bc8ab6bf4dc38a719c55500ddbde.jpg" },
     { titulo: "Venom: Let There Be Carnage", categoria: "sony-ssu", tipo: "Película", poster: "https://m.media-amazon.com/images/I/91Aoh6wnnJL.jpg" },
     { titulo: "Morbius", categoria: "sony-ssu", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61H81z3Iu-L._AC_UF894,1000_QL80_.jpg" },
     { titulo: "Madame Web", categoria: "sony-ssu", tipo: "Película", poster: "https://m.media-amazon.com/images/S/pv-target-images/cb36ea6f3f53777aea24eec9d1560470e6c6d1f260abc72bcb13ae9bccfcb678.jpg" },
@@ -977,7 +977,7 @@ const listaMedia = [
     { titulo: "The Matrix Resurrections", categoria: "matrix-saga", subtipo: "peliculas,todo", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71PQje4I99L._AC_UF894,1000_QL80_.jpg" },
 
     // --- PIXAR (con filtros por década) ---
-    { titulo: "Toy Story", categoria: "pixar", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71aBLaC4TzL.jpg" },
+    { titulo: "Toy Story", categoria: "pixar", subtipo: "1990", tipo: "Película", fichaTecnicaId: "toy-story-1", poster: "https://m.media-amazon.com/images/I/71aBLaC4TzL.jpg" },
     { titulo: "Bichos", categoria: "pixar", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNGI3Mjc1ZjUtYTJhYS00NjBiLTgyYjctODU5NTNlMWJiYjYzXkEyXkFqcGc@.V1.jpg" },
     { titulo: "Toy Story 2", categoria: "pixar", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/I/719aV3ujFKL.jpg" },
     { titulo: "Monsters Inc.", categoria: "pixar", subtipo: "2000", tipo: "Película", poster: "https://i.pinimg.com/736x/59/10/23/59102333312c8ceae749027c5193539d.jpg" },
@@ -1007,7 +1007,7 @@ const listaMedia = [
     { titulo: "Intensa-Mente 2", categoria: "pixar", subtipo: "2020", tipo: "Película", poster: "https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2023/11/IO2_Teaser_Manhole_1s_v7.2_KA_Mech7_FS.jpg" },
     { titulo: "Elio", categoria: "pixar", subtipo: "2020", tipo: "Película", poster: "https://lumiere-a.akamaihd.net/v1/images/elio_teaser2_poster_spain_1e0faa4d.jpeg" },
     { titulo: "Hoppers", categoria: "pixar", subtipo: "2020", tipo: "Película", poster: "https://lumiere-a.akamaihd.net/v1/images/lifespan_payoff_posters_united_kingdom_1_f4464a86.jpeg?region=0,0,770,1100" },
-    { titulo: "Toy Story 5", categoria: "pixar", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/j3TpFDOfFBlKNR1TScIfw1h2Oa6.jpg" },
+    { titulo: "Toy Story 5", categoria: "pixar", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/7fe3lr1lMvuPZgOwwwPGuccipYj.jpg" },
 
     // --- BRAD PITT (con filtros por década) ---
     { titulo: "Bullet Train", categoria: "brad-pitt", subtipo: "2020", tipo: "Película", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVVLHRnA4ZPXNF5W9x3WgmhJvYQ6hxEJF4tT6EzsyPHofiYNKQYS7X423L&s=10" },
@@ -1777,6 +1777,7 @@ const listaMedia = [
     { titulo: "DC Coleccion Heroes y Villanos #50: Liga de La Justicia de America: La Senda del Tornado", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,liga,superman,wonder-woman", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2024/05/50-Liga-de-la-justicia-de-america-La-senda-del-tornado.webp" },
     { titulo: "Batman de Grant Morrison Vol. 1: Batman e Hijo", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "batman,ras-al-ghul", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_e_hijo_cov-426ce7ca723e67b3fb17673629634909-1024-1024.webp" },
     { titulo: "Batman de Grant Morrison Vol. 2: La Resurrección de Ra's Al Ghul", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "batman,ras-al-ghul", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_morrison_2-d9db3d05365f64f75317724577444484-1024-1024.webp" },
+    { titulo: "Batman de Grant Morrison Vol. 3: Batman R.I.P.", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-de-grant-morrison-vol-3-batman-r-i-p-f716cfa60dcca2d31b17896750216279-1024-1024.webp" },
     { titulo: "Esenciales DC #12: Crisis Final", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,darkseid,liga,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/crisis_final_cov1-94793d73d957a1245716378555583021-1024-1024.webp" },
     { titulo: "Esenciales DC #20: Flash: Renacimiento", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "eobard-thawne,flash-barry-allen", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flash_renacimiento_cov_arg1-239ad6e9c4a2434fb616853359103555-1024-1024.webp" },
     { titulo: "DC Colección Heroes y Villanos #4: Flash: Renacimiento", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "eobard-thawne,flash-barry-allen", tipo: "Cómic", poster: "https://i1.whakoom.com/small/29/0d/d3e8a7dfc71349c0b243e9e52e8339de.jpg" },
@@ -2320,6 +2321,20 @@ const listaMedia = [
     { titulo: "Avengers - Los Heroes Mas Poderosos de La Tierra #11: Los Pilares", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/1b/20/b71008fbbc594aa98ee4f17673f5218f.jpg" },
     { titulo: "Avengers - Los Heroes Mas Poderosos de La Tierra #12: Avengers Assemble: Parte 1", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/3c/3e/35f0c594dfab45eeb75effa97ea4dc12.jpg" },
     { titulo: "Avengers - Los Heroes Mas Poderosos de La Tierra #13: Avengers Assemble: Parte 2", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/3b/1b/ad8227d8af3b43f9b1d1901b68c3074a.jpg" },
+
+    // --- EL INMORTAL HULK (2018) ---
+    { titulo: "El Inmortal Hulk #1: ¡El Retorno de Bruce Banner!", categoria: "marvel-actualidad", editorial: "panini", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/large/22/04/fca91a542e6344a6867567cc9787259d.jpg" },
+    { titulo: "El Inmortal Hulk #2: La Puerta Verde", categoria: "marvel-actualidad", editorial: "panini", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/large/31/32/e898c1355ca747849fd164263c66a33e.jpg" },
+    { titulo: "El Inmortal Hulk #3: Hulk en el Infierno", categoria: "marvel-actualidad", editorial: "panini", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/large/09/10/ca2437f3fb25416dada9f751dfc7ecb3.jpg" },
+    { titulo: "El Inmortal Hulk #4: Abominación", categoria: "marvel-actualidad", editorial: "panini", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/large/01/04/e8b64a4139124e649f34289287edcff7.jpg" },
+    { titulo: "El Inmortal Hulk #5: Destructor de Mundos", categoria: "marvel-actualidad", editorial: "panini", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/large/06/23/211419b79d144ab59dc891e9599ce907.jpg" },
+    { titulo: "El Inmortal Hulk #6: Creemos en Bruce Banner", categoria: "marvel-actualidad", editorial: "panini", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2b/03/08a40567e71549b186f6963b13ddd132.jpg" },
+    { titulo: "El Inmortal Hulk #7: Hulk es Hulk", categoria: "marvel-actualidad", editorial: "panini", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/large/0a/3c/ffa5645994344133b8f379ac22a1e763.jpg" },
+    { titulo: "El Inmortal Hulk #8: El Guardián de la Puerta", categoria: "marvel-actualidad", editorial: "panini", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/large/35/03/3e58be179124467f8ed552c20b0740b8.jpg" },
+    { titulo: "El Inmortal Hulk #9: El Más Débil de Todos", categoria: "marvel-actualidad", editorial: "panini", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/large/20/3a/1cf938dd480d422fbd1a3034400032b8.jpg" },
+    { titulo: "El Inmortal Hulk #10: Del Infierno y de La Muerte", categoria: "marvel-actualidad", editorial: "panini", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/large/3e/34/86c3d9df49cf4448b08a896d5761503c.jpg" },
+    { titulo: "El Inmortal Hulk #11: Relatos Apócrifos", categoria: "marvel-actualidad", editorial: "panini", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/large/13/1e/2c45f6696b864009a4e92bb9e42eba29.jpg" },
+    { titulo: "El Inmortal Hulk #12: Grandes Poderes", categoria: "marvel-actualidad", editorial: "panini", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/large/16/12/94cdd70f19be48c8b824ed479ef65ee7.jpg" },
 
     // --- COLECCIÓN DEFINITIVA DE NOVELAS GRÁFICAS DE MARVEL (Salvat) ---
     { titulo: "Colección Definitiva de Novelas Gráficas de Marvel: #41", categoria: "marvel-novelas-graficas-definitiva", editorial: "salvat", subtipo: "marvel-zombies", tipo: "Cómic", poster: "https://www.quimeraquiroga.cl/cdn/shop/products/41_1200x1200.jpg?v=1629473875" },
@@ -2983,6 +2998,15 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "atajo-dragonball-videojuegos",
+        titulo: "Dragon Ball Videojuegos",
+        categoria: "videojuegos-explorar",
+        poster: "https://images.wallpapersden.com/image/download/dragon-ball-z-kakarot-game-poster_a2xsbGeUmZqaraWkpJRnamVlrWhqaGo.jpg",
+        esContenedor: true,
+        atajoId: "dragonball-videojuegos",
+        peliculas: []
+    },
+    {
         id: "grand-theft-auto",
         titulo: "Grand Theft Auto",
         categoria: "videojuegos-explorar",
@@ -3200,7 +3224,7 @@ const colecciones = [
         categoria: "franquicias",
         poster: "https://i.pinimg.com/736x/24/d6/52/24d652b3ce14247edb83207b95476b2b.jpg",
         peliculas: [
-            { titulo: "Toy Story", poster: "https://m.media-amazon.com/images/I/71aBLaC4TzL.jpg" },
+            { titulo: "Toy Story", fichaTecnicaId: "toy-story-1", poster: "https://m.media-amazon.com/images/I/71aBLaC4TzL.jpg" },
             { titulo: "Toy Story 2", poster: "https://m.media-amazon.com/images/I/719aV3ujFKL.jpg" },
             { titulo: "Toy Story 3", poster: "https://image.tmdb.org/t/p/original/xNMYWGov98EySsv31FVEcnMKt9q.jpg" },
             { titulo: "Toy Story Toons: Vacaciones en Hawaii", fichaTecnicaId: "ts-hawaii", poster: "https://image.tmdb.org/t/p/original/zK0tA15d6Ltr1FK7sEXv9zIpzEJ.jpg" },
@@ -3211,7 +3235,7 @@ const colecciones = [
             { titulo: "Lamp Life", fichaTecnicaId: "ts-lamp-life", poster: "https://m.media-amazon.com/images/M/MV5BZWFlZmViODItZmQ1Mi00NDdmLTk5Y2ItYzVkNTlkNzJkZjJmXkEyXkFqcGc@._V1_.jpg" },
             { titulo: "Toy Story 4", poster: "https://hips.hearstapps.com/hmg-prod/images/toy-story-4-poster-1543427531.jpg" },
             { titulo: "Forky Pregunta", fichaTecnicaId: "ts-forky-pregunta", poster: "https://m.media-amazon.com/images/M/MV5BNjZlZWYyMTEtMzQwOS00YzgxLWIzYzQtM2MyOGU4MDQ4NDY0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
-            { titulo: "Toy Story 5", fichaTecnicaId: "toy-story-5", poster: "http://www.impawards.com/2026/posters/toy_story_five.jpg" }
+            { titulo: "Toy Story 5", fichaTecnicaId: "toy-story-5", poster: "https://image.tmdb.org/t/p/original/7fe3lr1lMvuPZgOwwwPGuccipYj.jpg" }
         ]
     },
     {
@@ -3680,8 +3704,8 @@ const colecciones = [
             { titulo: "Batman: Arkham Asylum", fichaTecnicaId: "arkham-asylum", poster: "https://static.posters.cz/image/1300/167596.jpg" },
             { titulo: "Batman: Arkham City", fichaTecnicaId: "arkham-city", poster: "https://static.posters.cz/image/1300/167587.jpg" },
             { titulo: "Batman: Arkham Origins", fichaTecnicaId: "arkham-origins", poster: "https://m.media-amazon.com/images/M/MV5BMWZiMGViNmMtMGQ0OS00MjBkLWEwNDItNzA3MzgxMjQ3Y2M4XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
-            { titulo: "Batman: Arkham Knight", poster: "https://m.media-amazon.com/images/I/819Ow-bF-6L.jpg" },
-            { titulo: "Suicide Squad: Kill the Justice League", poster: "https://m.media-amazon.com/images/M/MV5BZmYyMWVkMGMtMzk1NC00ZTFiLTg5MGEtMGQxODE0YTJlYzZkXkEyXkFqcGc@._V1_.jpg" }
+            { titulo: "Batman: Arkham Knight", fichaTecnicaId: "arkham-knight", poster: "https://m.media-amazon.com/images/I/819Ow-bF-6L.jpg" },
+            { titulo: "Suicide Squad: Kill the Justice League", fichaTecnicaId: "suicide-squad-kjl", poster: "https://m.media-amazon.com/images/M/MV5BZmYyMWVkMGMtMzk1NC00ZTFiLTg5MGEtMGQxODE0YTJlYzZkXkEyXkFqcGc@._V1_.jpg" }
         ]
     },
     {
@@ -4532,26 +4556,28 @@ const colecciones = [
     },
     {
         id: "dragonball-z",
+        etiqueta: "Anime",
         titulo: "Dragon Ball Z",
         categoria: "dragonball",
         poster: "https://m.media-amazon.com/images/I/81fhdW8tx3L.jpg",
         peliculas: [
             { titulo: "Saga Saiyan", etiqueta: "Anime", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxSr-aKYyKPVySvy3CpUF--Z9UM-IVdRuDam6yMP8zxu6MUkNLSgMkLG0&s=10" },
             { titulo: "Saga de Freezer", etiqueta: "Anime", poster: "https://static.wikia.nocookie.net/dragonball/images/2/2e/Arco_de_Freezer_Artwork_DBZ.png/revision/latest?cb=20180612015408&path-prefix=es" },
-            { titulo: "Saga de Cell", etiqueta: "Anime", poster: "https://www.wallister.de/cdn/shop/products/G868340_01.jpg?v=1677662334" },
+            { titulo: "Saga de Cell", etiqueta: "Anime", poster: "https://static.posters.cz/image/750/32841.jpg" },
             { titulo: "Saga de Majin Buu", etiqueta: "Anime", poster: "https://i.pinimg.com/736x/8a/a2/e4/8aa2e46c01ae0c287901c25449979902.jpg" }
         ]
     },
     {
         id: "dragonball-super",
+        etiqueta: "Anime",
         titulo: "Dragon Ball Super",
         categoria: "dragonball",
         poster: "https://m.media-amazon.com/images/I/81Z-WeVM-sS._AC_UF894,1000_QL80_.jpg",
         peliculas: [
             { titulo: "Saga de Bills", etiqueta: "Anime", poster: "https://image.tmdb.org/t/p/original/oV8aSngwg5YPpcaNvlC8VOMCYtK.jpg" },
-            { titulo: "La Batalla de los Dioses", poster: "https://www.cinepremiere.com.mx/assets/images/noticias/2013/07-julio/DragonBallZ-batalla-poster.jpg" },
+            { titulo: "La Batalla de los Dioses", poster: "https://image.tmdb.org/t/p/original/oBkUyWvoMmtski8UplBj2GuO66V.jpg" },
             { titulo: "Saga de la Resurrección de Freezer", etiqueta: "Anime", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdp8uz95HVMymEVGeUIdyp0bl5juJj8QU0yCSGQqRLt9MVgZputG5v5dI&s=10" },
-            { titulo: "La Resurrección de F", poster: "https://www.cinepremiere.com.mx/assets/images/noticias/2013/07-julio/DragonBallZ-batalla-poster.jpg" },
+            { titulo: "La Resurrección de F", poster: "https://m.media-amazon.com/images/M/MV5BNGZkMWExNjctN2I3ZC00NDYwLTk5ODQtYWMxNTdhNmMzMDA1XkEyXkFqcGc@._V1_.jpg" },
             { titulo: "Saga del Torneo del Universo 6", etiqueta: "Anime", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9SdBgNJvPZZuQwqniUbOgAOyETZ30L8dDP1VwpIIyOw&s=10" },
             { titulo: "Saga de Black", etiqueta: "Anime", poster: "https://i.pinimg.com/736x/a0/b0/73/a0b0732ee82a57b35ca1b379810196b4.jpg" },
             { titulo: "Saga del Torneo de Poder", etiqueta: "Anime", poster: "https://i.pinimg.com/736x/c7/92/95/c79295cb907936831832bf5ec1ae17d5.jpg" },
@@ -4561,18 +4587,19 @@ const colecciones = [
     },
     {
         id: "dragonball-historia-canon",
+        etiqueta: "Anime",
         titulo: "Historia Canon",
         categoria: "dragonball",
         poster: "https://i.pinimg.com/736x/ce/0a/2e/ce0a2ee7177fbfde6bb24596ee21ae5f.jpg",
         peliculas: [
             { titulo: "Saga Saiyan", etiqueta: "Anime", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxSr-aKYyKPVySvy3CpUF--Z9UM-IVdRuDam6yMP8zxu6MUkNLSgMkLG0&s=10" },
             { titulo: "Saga de Freezer", etiqueta: "Anime", poster: "https://static.wikia.nocookie.net/dragonball/images/2/2e/Arco_de_Freezer_Artwork_DBZ.png/revision/latest?cb=20180612015408&path-prefix=es" },
-            { titulo: "Saga de Cell", etiqueta: "Anime", poster: "https://www.wallister.de/cdn/shop/products/G868340_01.jpg?v=1677662334" },
+            { titulo: "Saga de Cell", etiqueta: "Anime", poster: "https://static.posters.cz/image/750/32841.jpg" },
             { titulo: "Saga de Majin Buu", etiqueta: "Anime", poster: "https://i.pinimg.com/736x/8a/a2/e4/8aa2e46c01ae0c287901c25449979902.jpg" },
             { titulo: "Saga de Bills", etiqueta: "Anime", poster: "https://image.tmdb.org/t/p/original/oV8aSngwg5YPpcaNvlC8VOMCYtK.jpg" },
-            { titulo: "La Batalla de los Dioses", poster: "https://www.cinepremiere.com.mx/assets/images/noticias/2013/07-julio/DragonBallZ-batalla-poster.jpg" },
+            { titulo: "La Batalla de los Dioses", poster: "https://image.tmdb.org/t/p/original/oBkUyWvoMmtski8UplBj2GuO66V.jpg" },
             { titulo: "Saga de la Resurrección de Freezer", etiqueta: "Anime", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdp8uz95HVMymEVGeUIdyp0bl5juJj8QU0yCSGQqRLt9MVgZputG5v5dI&s=10" },
-            { titulo: "La Resurrección de F", poster: "https://www.cinepremiere.com.mx/assets/images/noticias/2013/07-julio/DragonBallZ-batalla-poster.jpg" },
+            { titulo: "La Resurrección de F", poster: "https://m.media-amazon.com/images/M/MV5BNGZkMWExNjctN2I3ZC00NDYwLTk5ODQtYWMxNTdhNmMzMDA1XkEyXkFqcGc@._V1_.jpg" },
             { titulo: "Saga del Torneo del Universo 6", etiqueta: "Anime", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9SdBgNJvPZZuQwqniUbOgAOyETZ30L8dDP1VwpIIyOw&s=10" },
             { titulo: "Saga de Black", etiqueta: "Anime", poster: "https://i.pinimg.com/736x/a0/b0/73/a0b0732ee82a57b35ca1b379810196b4.jpg" },
             { titulo: "Saga del Torneo de Poder", etiqueta: "Anime", poster: "https://i.pinimg.com/736x/c7/92/95/c79295cb907936831832bf5ec1ae17d5.jpg" },
@@ -4587,7 +4614,7 @@ const colecciones = [
         poster: "https://images.wallpapersden.com/image/download/dragon-ball-z-kakarot-game-poster_a2xsbGeUmZqaraWkpJRnamVlrWhqaGo.jpg",
         esVideojuego: true,
         peliculas: [
-            { titulo: "Dragon Ball Xenoverse", poster: "https://m.media-amazon.com/images/M/MV5BYzMwZWUwODEtMTU3Zi00MDYwLTg1MjUtNGVlMDVlZDBkNGZmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+            { titulo: "Dragon Ball Xenoverse", fichaTecnicaId: "dragon-ball-xenoverse", poster: "https://m.media-amazon.com/images/M/MV5BYzMwZWUwODEtMTU3Zi00MDYwLTg1MjUtNGVlMDVlZDBkNGZmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
             { titulo: "Dragon Ball Xenoverse 2", poster: "https://myhotposters.com/cdn/shop/products/mL2170_361002e7-d15c-4843-9c0d-f63f9c575649_1024x1024.jpg?v=1748535523" },
             { titulo: "Dragon Ball FighterZ", poster: "https://m.media-amazon.com/images/M/MV5BY2E1YmJjMzktZTkwNC00ODY1LWIyNzMtMWVmZWRhOWY4MjE0XkEyXkFqcGc@._V1_.jpg" },
             { titulo: "Dragon Ball Kakarot", poster: "https://m.media-amazon.com/images/M/MV5BODNkY2M4M2MtODY0ZS00MzJiLWEzOTktMjEzZmMwM2ZmN2ZmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
@@ -4597,6 +4624,7 @@ const colecciones = [
     },
     {
         id: "dragonball-gt",
+        etiqueta: "Anime",
         titulo: "Dragon Ball GT",
         categoria: "dragonball",
         poster: "https://w0.peakpx.com/wallpaper/957/291/HD-wallpaper-dragon-ball-gt-anime-goku-trunks.jpg",
@@ -4631,6 +4659,7 @@ const colecciones = [
     },
     {
         id: "dragonball-todo",
+        etiqueta: "Anime",
         titulo: "Todo Dragon Ball",
         categoria: "dragonball",
         poster: "https://i.pinimg.com/originals/6f/4d/73/6f4d73d1afc0702a6e9d31f36d1628bc.jpg?nii=t",
@@ -4642,7 +4671,7 @@ const colecciones = [
             { titulo: "La Súper Batalla Decisiva por La Tierra", poster: "https://image.tmdb.org/t/p/original/uGadvCa5w8X6zAWzdZlVQYNd6QR.jpg" },
             { titulo: "El Súper Guerrero Son Goku", poster: "https://m.media-amazon.com/images/M/MV5BODE2NDUzMjk3M15BMl5BanBnXkFtZTYwOTA3MDc5._V1_FMjpg_UX1000_.jpg" },
             { titulo: "Los Rivales Más Poderosos", poster: "https://static.wikia.nocookie.net/dragonball/images/7/7a/DBZ_Pel%C3%ADcula_5_p%C3%B3ster.png/revision/latest?cb=20180805032322&path-prefix=es" },
-            { titulo: "Saga de Cell", etiqueta: "Anime", poster: "https://www.wallister.de/cdn/shop/products/G868340_01.jpg?v=1677662334" },
+            { titulo: "Saga de Cell", etiqueta: "Anime", poster: "https://static.posters.cz/image/750/32841.jpg" },
             { titulo: "El Regreso de Cooler", poster: "https://play-lh.googleusercontent.com/0BXSfNu39g6fzcQe5Sg67KbEvxWLu1WI7qnKLmzGbwLAgk-FWxu-9_AXHbjNH5d1DITM0ca_aIIs6GA1Cw" },
             { titulo: "¡¡Batalla Extrema!! Los Tres Grandes Súper Saiyajines", poster: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/5b86e15beaedd745eeff303cb6ef8d20.png" },
             { titulo: "Saga de Majin Buu", etiqueta: "Anime", poster: "https://i.pinimg.com/736x/8a/a2/e4/8aa2e46c01ae0c287901c25449979902.jpg" },
@@ -4653,9 +4682,9 @@ const colecciones = [
             { titulo: "¡El Renacer de la Fusión! Goku y Vegeta", poster: "https://i.pinimg.com/736x/fc/cc/10/fccc109144bc20921f2d01a3c8451e84.jpg" },
             { titulo: "El Ataque del Dragón", poster: "https://m.media-amazon.com/images/M/MV5BMTk4MDIxNzk1N15BMl5BanBnXkFtZTcwNDk0MDQzMQ@@._V1_.jpg" },
             { titulo: "Saga de Bills", etiqueta: "Anime", poster: "https://image.tmdb.org/t/p/original/oV8aSngwg5YPpcaNvlC8VOMCYtK.jpg" },
-            { titulo: "La Batalla de los Dioses", poster: "https://www.cinepremiere.com.mx/assets/images/noticias/2013/07-julio/DragonBallZ-batalla-poster.jpg" },
+            { titulo: "La Batalla de los Dioses", poster: "https://image.tmdb.org/t/p/original/oBkUyWvoMmtski8UplBj2GuO66V.jpg" },
             { titulo: "Saga de la Resurrección de Freezer", etiqueta: "Anime", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdp8uz95HVMymEVGeUIdyp0bl5juJj8QU0yCSGQqRLt9MVgZputG5v5dI&s=10" },
-            { titulo: "La Resurrección de F", poster: "https://www.cinepremiere.com.mx/assets/images/noticias/2013/07-julio/DragonBallZ-batalla-poster.jpg" },
+            { titulo: "La Resurrección de F", poster: "https://m.media-amazon.com/images/M/MV5BNGZkMWExNjctN2I3ZC00NDYwLTk5ODQtYWMxNTdhNmMzMDA1XkEyXkFqcGc@._V1_.jpg" },
             { titulo: "Saga del Torneo del Universo 6", etiqueta: "Anime", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9SdBgNJvPZZuQwqniUbOgAOyETZ30L8dDP1VwpIIyOw&s=10" },
             { titulo: "Saga de Black", etiqueta: "Anime", poster: "https://i.pinimg.com/736x/a0/b0/73/a0b0732ee82a57b35ca1b379810196b4.jpg" },
             { titulo: "Saga del Torneo de Poder", etiqueta: "Anime", poster: "https://i.pinimg.com/736x/c7/92/95/c79295cb907936831832bf5ec1ae17d5.jpg" },
@@ -6852,6 +6881,12 @@ function cambiarSeccion(seccionNueva) {
     if (seccionNueva.id === 'seccion-requisitos-assassins-creed-3' && typeof armarComparacionMiPC === 'function') {
         armarComparacionMiPC('seccion-requisitos-assassins-creed-3', REQUISITOS_ASSASSINS_CREED_3);
     }
+    if (seccionNueva.id === 'seccion-requisitos-arkham-knight' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-arkham-knight', REQUISITOS_ARKHAM_KNIGHT);
+    }
+    if (seccionNueva.id === 'seccion-requisitos-suicide-squad-kjl' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-suicide-squad-kjl', REQUISITOS_SUICIDE_SQUAD_KJL);
+    }
     if (seccionNueva.id === 'seccion-fox-xmen') {
         guardarOrdenEstrenoFoxXmenSiHaceFalta();
     }
@@ -8006,7 +8041,9 @@ const JUEGOS_CON_REQUISITOS_MIPC = [
     { titulo: "Batman: Arkham Asylum", seccion: "arkham-asylum", requisitos: () => REQUISITOS_ARKHAM_ASYLUM },
     { titulo: "Batman: Arkham City", seccion: "arkham-city", requisitos: () => REQUISITOS_ARKHAM_CITY },
     { titulo: "Batman: Arkham Origins", seccion: "arkham-origins", requisitos: () => REQUISITOS_ARKHAM_ORIGINS },
-    { titulo: "Assassin's Creed III", seccion: "assassins-creed-3", requisitos: () => REQUISITOS_ASSASSINS_CREED_3 }
+    { titulo: "Assassin's Creed III", seccion: "assassins-creed-3", requisitos: () => REQUISITOS_ASSASSINS_CREED_3 },
+    { titulo: "Batman: Arkham Knight", seccion: "arkham-knight", requisitos: () => REQUISITOS_ARKHAM_KNIGHT },
+    { titulo: "Suicide Squad: Kill the Justice League", seccion: "suicide-squad-kjl", requisitos: () => REQUISITOS_SUICIDE_SQUAD_KJL }
 ];
 
 // Comparación rápida (mismo criterio numérico que armarComparacionMiPC)
@@ -9977,6 +10014,132 @@ if (btnVolverFichaDeadpool2) {
     });
 }
 
+const btnVolverFichaLogan1 = document.getElementById('btn-volver-ficha-logan-1');
+if (btnVolverFichaLogan1) {
+    btnVolverFichaLogan1.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-logan-1');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-fox-xmen'));
+    });
+}
+
+const btnVolverFichaArkhamKnight = document.getElementById('btn-volver-ficha-arkham-knight');
+if (btnVolverFichaArkhamKnight) {
+    btnVolverFichaArkhamKnight.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-arkham-knight');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-arkhamverse'));
+    });
+}
+const btnDlcArkhamKnight = document.getElementById('btn-dlc-arkham-knight');
+if (btnDlcArkhamKnight) {
+    btnDlcArkhamKnight.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-arkham-knight'));
+    });
+}
+const btnVolverDlcArkhamKnight = document.getElementById('btn-volver-dlc-arkham-knight');
+if (btnVolverDlcArkhamKnight) {
+    btnVolverDlcArkhamKnight.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-arkham-knight'));
+    });
+}
+document.querySelectorAll('.btn-volver-dlc-individual-ak').forEach(boton => {
+    boton.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-arkham-knight'));
+    });
+});
+const btnRequisitosArkhamKnight = document.getElementById('btn-requisitos-arkham-knight');
+if (btnRequisitosArkhamKnight) {
+    btnRequisitosArkhamKnight.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-arkham-knight'));
+    });
+}
+const btnVolverRequisitosArkhamKnight = document.getElementById('btn-volver-requisitos-arkham-knight');
+if (btnVolverRequisitosArkhamKnight) {
+    btnVolverRequisitosArkhamKnight.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-arkham-knight'));
+    });
+}
+const REQUISITOS_ARKHAM_KNIGHT = {
+    minimos: { so: "Windows 7 SP1 u 8.1 (64 bits)", cpu: "Intel Core i5-750 (2.67 GHz) o AMD Phenom II X4 965 (3.4 GHz)", ram: "6", almacenamiento: "45", directx: "DirectX 11", gpu: "NVIDIA GeForce GTX 660 (2 GB VRAM) o AMD Radeon HD 7950 (3 GB VRAM)" },
+    recomendado: { so: "Windows 7 SP1 u 8.1 (64 bits)", cpu: "Intel Core i7-3770 (3.4 GHz) o AMD FX-8350 (4.0 GHz)", ram: "8", almacenamiento: "45", directx: "DirectX 11", gpu: "NVIDIA GeForce GTX 760" }
+};
+
+const btnVolverFichaVenom1 = document.getElementById('btn-volver-ficha-venom-1');
+if (btnVolverFichaVenom1) {
+    btnVolverFichaVenom1.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-venom-1');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-sony-ssu'));
+    });
+}
+
+const btnVolverFichaSuicideSquadKjl = document.getElementById('btn-volver-ficha-suicide-squad-kjl');
+if (btnVolverFichaSuicideSquadKjl) {
+    btnVolverFichaSuicideSquadKjl.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-suicide-squad-kjl');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-arkhamverse'));
+    });
+}
+const btnRequisitosSuicideSquadKjl = document.getElementById('btn-requisitos-suicide-squad-kjl');
+if (btnRequisitosSuicideSquadKjl) {
+    btnRequisitosSuicideSquadKjl.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-suicide-squad-kjl'));
+    });
+}
+const btnVolverRequisitosSuicideSquadKjl = document.getElementById('btn-volver-requisitos-suicide-squad-kjl');
+if (btnVolverRequisitosSuicideSquadKjl) {
+    btnVolverRequisitosSuicideSquadKjl.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-suicide-squad-kjl'));
+    });
+}
+const REQUISITOS_SUICIDE_SQUAD_KJL = {
+    minimos: { so: "Windows 10 (64 bits)", cpu: "Intel i5-8400 o AMD Ryzen 5 1600 (3.20 GHz)", ram: "16", almacenamiento: "65", directx: "DirectX 12", gpu: "NVIDIA GTX 1070 o AMD Radeon RX Vega 56" },
+    recomendado: { so: "Windows 10 (64 bits)", cpu: "Intel i7-10700K o AMD Ryzen 7 5800X3D", ram: "16", almacenamiento: "65", directx: "DirectX 12", gpu: "NVIDIA RTX 2080 o AMD RX 6800-XT (16 GB)" }
+};
+
+const btnVolverFichaDragonBallXenoverse = document.getElementById('btn-volver-ficha-dragon-ball-xenoverse');
+if (btnVolverFichaDragonBallXenoverse) {
+    btnVolverFichaDragonBallXenoverse.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-dragon-ball-xenoverse');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-dragonball-videojuegos'));
+    });
+}
+const btnDlcDragonBallXenoverse = document.getElementById('btn-dlc-dragon-ball-xenoverse');
+if (btnDlcDragonBallXenoverse) {
+    btnDlcDragonBallXenoverse.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-dragon-ball-xenoverse'));
+    });
+}
+const btnVolverDlcDragonBallXenoverse = document.getElementById('btn-volver-dlc-dragon-ball-xenoverse');
+if (btnVolverDlcDragonBallXenoverse) {
+    btnVolverDlcDragonBallXenoverse.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-dragon-ball-xenoverse'));
+    });
+}
+document.querySelectorAll('.btn-volver-dlc-individual-dbx').forEach(boton => {
+    boton.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-dragon-ball-xenoverse'));
+    });
+});
+
+const btnVolverFichaToyStory1 = document.getElementById('btn-volver-ficha-toy-story-1');
+if (btnVolverFichaToyStory1) {
+    btnVolverFichaToyStory1.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-toy-story-1');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-toy-story'));
+    });
+}
+
 const btnVolverFichaLegoJurassicWorld = document.getElementById('btn-volver-ficha-lego-jurassic-world');
 
 
@@ -10074,7 +10237,13 @@ const FICHAS_TECNICAS_TITULOS = {
     "ts-forky-pregunta": "Forky Pregunta",
     "toy-story-5": "Toy Story 5",
     "deadpool-1": "Deadpool",
-    "deadpool-2": "Deadpool 2"
+    "deadpool-2": "Deadpool 2",
+    "logan-1": "Logan",
+    "arkham-knight": "Batman: Arkham Knight",
+    "venom-1": "Venom",
+    "suicide-squad-kjl": "Suicide Squad: Kill the Justice League",
+    "dragon-ball-xenoverse": "Dragon Ball Xenoverse",
+    "toy-story-1": "Toy Story"
 };
 
 // Casos con id de sección no estándar (no siguen "seccion-ficha-<id>").
@@ -10689,6 +10858,46 @@ const REPARTO_PELICULAS = {
             { actor: "Terry Crews", personaje: "Bedlam" },
             { actor: "Lewis Tan", personaje: "Shatterstar" },
             { actor: "Bill Skarsgård", personaje: "Zeitgeist" }
+        ]
+    },
+    "logan-1": {
+        director: "James Mangold",
+        elenco: [
+            { actor: "Hugh Jackman", personaje: "Logan / Wolverine / X-24" },
+            { actor: "Dafne Keen", personaje: "Laura" },
+            { actor: "Patrick Stewart", personaje: "Charles Xavier" },
+            { actor: "Elizabeth Rodriguez", personaje: "Gabriela" },
+            { actor: "Boyd Holbrook", personaje: "Pierce" },
+            { actor: "Stephen Merchant", personaje: "Caliban" },
+            { actor: "Richard E. Grant", personaje: "Dr. Rice" },
+            { actor: "Eriq La Salle", personaje: "Will Munson" }
+        ]
+    },
+    "venom-1": {
+        director: "Ruben Fleischer",
+        elenco: [
+            { actor: "Tom Hardy", personaje: "Eddie Brock / Venom" },
+            { actor: "Michelle Williams", personaje: "Anne Weying" },
+            { actor: "Riz Ahmed", personaje: "Carlton Drake / Riot" },
+            { actor: "Scott Haze", personaje: "Roland Treece" },
+            { actor: "Reid Scott", personaje: "Dr. Dan Lewis" },
+            { actor: "Jenny Slate", personaje: "Dra. Dora Skirth" },
+            { actor: "Woody Harrelson", personaje: "Cletus Kasady" }
+        ]
+    },
+    "toy-story-1": {
+        director: "John Lasseter",
+        elenco: [
+            { actor: "Tom Hanks", personaje: "Woody (voz)" },
+            { actor: "Tim Allen", personaje: "Buzz Lightyear (voz)" },
+            { actor: "Don Rickles", personaje: "Sr. Cara de Papa (voz)" },
+            { actor: "Jim Varney", personaje: "Slinky (voz)" },
+            { actor: "Wallace Shawn", personaje: "Rex (voz)" },
+            { actor: "John Ratzenberger", personaje: "Hamm (voz)" },
+            { actor: "Annie Potts", personaje: "Bo Peep (voz)" },
+            { actor: "John Morris", personaje: "Andy (voz)" },
+            { actor: "Erik von Detten", personaje: "Sid (voz)" },
+            { actor: "Laurie Metcalf", personaje: "Sra. Davis (voz)" }
         ]
     }
 };
