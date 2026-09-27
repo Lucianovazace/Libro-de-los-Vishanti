@@ -17,6 +17,9 @@ const listaMedia = [
     { titulo: "El Conjuro", categoria: "peliculas-halloween", tipo: "Película", fichaTecnicaId: "el-conjuro", poster: "https://www.movieposters.com/cdn/shop/files/the-conjuring-last-rites_3fmkdwug_1024x1024.jpg" },
     { titulo: "It", categoria: "peliculas-halloween", tipo: "Película", fichaTecnicaId: "it-2017", poster: "https://m.media-amazon.com/images/I/617t0rMU9vL.AC_UF894,1000_QL80.jpg" },
 
+    // Familiar (dentro de la ficha de Halloween, en su propio carrusel)
+    { titulo: "Hotel Transylvania", categoria: "familiar-halloween", tipo: "Película", fichaTecnicaId: "hotel-transylvania-1", poster: "https://www.sonypictures.com.ar/sites/argentina/files/2022-05/608871_HotelTransylvania_2012_LSR_2000x3000_UK_1333x2000_thumbnail.jpg" },
+
     { titulo: "Dead by Daylight", categoria: "videojuegos-halloween", tipo: "Videojuego", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
     { titulo: "Resident Evil", categoria: "videojuegos-halloween", tipo: "Videojuego", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
     { titulo: "Halloween", categoria: "videojuegos-halloween", tipo: "Videojuego", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
@@ -9402,8 +9405,15 @@ function activarTemaHalloweenSiCorresponde() {
     if (titulo) {
         titulo.textContent = esOctubre ? 'LIBRO DE LOS VISHANTI' : 'EL MULTIVERSO';
     }
+
+    document.querySelectorAll('.halloween-solo').forEach(bloque => {
+        bloque.classList.toggle('oculto', !esOctubre);
+    });
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+    renderizarBloquesFamiliarYTerrorHome();
+});
 activarTemaHalloweenSiCorresponde();
 
 const btnPeliculasHalloween = document.getElementById('btn-peliculas-halloween');
@@ -10137,6 +10147,85 @@ if (btnVolverFichaToyStory1) {
         const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
         const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
         cambiarSeccion(seccionOrigen || document.getElementById('seccion-toy-story'));
+    });
+}
+
+// ==========================================
+// "FAMILIAR" (dentro de Halloween Películas) y los 2 bloques de la
+// pantalla principal (Películas de Terror / Familiar, visibles solo en
+// octubre). Se arman a mano porque el renderizador genérico solo busca
+// el PRIMER ".grilla-biblioteca" de la sección donde caen, y estos
+// grids conviven con otro ya existente en la misma sección.
+// ==========================================
+function crearTarjetaManual(item) {
+    const div = document.createElement('div');
+    div.className = 'tarjeta-media';
+    div.innerHTML = `
+        <img src="${item.poster}" alt="${item.titulo}">
+        <h3>${item.titulo}</h3>
+        <p>Película</p>
+        <button class="btn-accion">Marcar Visto</button>
+        ${item.fichaTecnicaId ? `<button class="btn-abrir-coleccion btn-ficha-tecnica-item" data-ficha-tecnica="${item.fichaTecnicaId}">Ficha Técnica 📊</button>` : ''}
+    `;
+    if (item.fichaTecnicaId) {
+        div.querySelector('.btn-ficha-tecnica-item').addEventListener('click', (e) => {
+            e.stopPropagation();
+            const seccionFicha = document.getElementById(`seccion-ficha-${item.fichaTecnicaId}`);
+            if (seccionFicha) {
+                seccionFicha.dataset.origen = seccionActivaActual ? seccionActivaActual.id : '';
+                cambiarSeccion(seccionFicha);
+            }
+        });
+    }
+    return div;
+}
+
+function renderizarBloquesFamiliarYTerrorHome() {
+    const peliculasTerror = listaMedia.filter(m => m.categoria === 'peliculas-halloween');
+    const peliculasFamiliar = listaMedia.filter(m => m.categoria === 'familiar-halloween');
+
+    const grillaFamiliarHalloween = document.getElementById('grilla-familiar-halloween');
+    if (grillaFamiliarHalloween && grillaFamiliarHalloween.children.length === 0) {
+        peliculasFamiliar.forEach(item => grillaFamiliarHalloween.appendChild(crearTarjetaManual(item)));
+    }
+
+    const grillaTerrorHome = document.getElementById('grilla-terror-home');
+    if (grillaTerrorHome && grillaTerrorHome.children.length === 0) {
+        peliculasTerror.forEach(item => grillaTerrorHome.appendChild(crearTarjetaManual(item)));
+    }
+
+    const grillaFamiliarHome = document.getElementById('grilla-familiar-home');
+    if (grillaFamiliarHome && grillaFamiliarHome.children.length === 0) {
+        peliculasFamiliar.forEach(item => grillaFamiliarHome.appendChild(crearTarjetaManual(item)));
+    }
+
+    // Recién agregadas al DOM: hace falta volver a conectar sus botones
+    // de "Marcar Visto" y aplicarles el estado ya guardado.
+    if (typeof sincronizarVistos === 'function') sincronizarVistos();
+    if (typeof aplicarVistosGuardados === 'function') {
+        aplicarVistosGuardados(grillaFamiliarHalloween);
+        aplicarVistosGuardados(grillaTerrorHome);
+        aplicarVistosGuardados(grillaFamiliarHome);
+    }
+}
+const btnCarruselTerrorHomeSiguiente = document.getElementById('btn-carrusel-terror-home-siguiente');
+if (btnCarruselTerrorHomeSiguiente) {
+    btnCarruselTerrorHomeSiguiente.addEventListener('click', () => {
+        const carrusel = document.getElementById('grilla-terror-home');
+        if (!carrusel) return;
+        const anchoTarjeta = 176;
+        const alFinal = carrusel.scrollLeft + carrusel.clientWidth >= carrusel.scrollWidth - 10;
+        carrusel.scrollTo({ left: alFinal ? 0 : carrusel.scrollLeft + anchoTarjeta * 3, behavior: 'smooth' });
+    });
+}
+
+const btnVolverFichaHotelTransylvania1 = document.getElementById('btn-volver-ficha-hotel-transylvania-1');
+if (btnVolverFichaHotelTransylvania1) {
+    btnVolverFichaHotelTransylvania1.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-hotel-transylvania-1');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-peliculas-halloween'));
     });
 }
 
