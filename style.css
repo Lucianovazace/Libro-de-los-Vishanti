@@ -1561,6 +1561,30 @@ h2 {
     object-fit: contain;
 }
 
+.ficha-tecnica-disponible-en {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.badge-streaming {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #1a1d24;
+    border-radius: 8px;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.badge-streaming.badge-streaming-alquiler {
+    color: #999;
+    font-weight: normal;
+}
+
 .carrusel-horizontal-contenedor {
     display: flex;
     align-items: center;
