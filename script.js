@@ -179,11 +179,11 @@ const listaMedia = [
 
     // --- DC COMICS (DCU, DCEU Principal, The Batman, Joker) ---
     { titulo: "The Suicide Squad", categoria: "dcu", tipo: "Película", fichaTecnicaId: "the-suicide-squad-2021", poster: "https://postercity.com.ar/wp-content/uploads/2021/10/the-SUICIDE-SQUAD-60-X-90.jpg" },
-    { titulo: "Peacemaker Temporada 1", categoria: "dcu", tipo: "Serie", fichaTecnicaId: "peacemaker-t1", poster: "https://image.tmdb.org/t/p/original/acnLxzOF7QaWjM20Er6HsetCnGh.png" },
+    { titulo: "Peacemaker Temporada 1", categoria: "dcu", tipo: "Serie", fichaTecnicaId: "peacemaker-t1", poster: "http://www.impawards.com/tv/posters/peacemaker.jpg" },
     { titulo: "Blue Beetle", categoria: "dcu", tipo: "Película", fichaTecnicaId: "blue-beetle-2023", poster: "https://www.awn.com/sites/default/files/styles/original/public/image/attached/1058733-bbeetle1-1280.jpg?itok=NxX9BPXh" },
     { titulo: "Creature Commandos", categoria: "dcu", tipo: "Animación", fichaTecnicaId: "creature-commandos", poster: "https://static.dc.com/2024-11/ProdPage_CreatureCommandos_Thumb.jpg" },
     { titulo: "Superman", categoria: "dcu", tipo: "Película", fichaTecnicaId: "superman-2025", poster: "https://m.media-amazon.com/images/I/712N7RdrlTL.jpg" },
-    { titulo: "Peacemaker Temporada 2", categoria: "dcu", tipo: "Serie", fichaTecnicaId: "peacemaker-t2", poster: "https://image.tmdb.org/t/p/original/1PUbmhKK52zCGjfoRM1IcIUcm1m.png" },
+    { titulo: "Peacemaker Temporada 2", categoria: "dcu", tipo: "Serie", fichaTecnicaId: "peacemaker-t2", poster: "http://www.impawards.com/tv/posters/peacemaker_ver16.jpg" },
     { titulo: "Supergirl", categoria: "dcu", tipo: "Película", fichaTecnicaId: "supergirl-2026", poster: "https://cdn.kinocheck.com/i/1sxsgm3x7s.jpg" },
     { titulo: "Lanterns", categoria: "dcu", tipo: "Serie", fichaTecnicaId: "lanterns-2026", poster: "https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2026/06/Screenshot_20260604-112025_Threads.jpg" },
     
@@ -235,7 +235,7 @@ const listaMedia = [
     { titulo: "Assassin's Creed: Brotherhood", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 3, crono: 7, fichaTecnicaId: "assassins-creed-brotherhood", poster: "https://images.g2a.com/323x433/1x1x1/assassins-creed-brotherhood-p10000043255/dc54b5ec98ab409c9c9332e3" },
     { titulo: "Assassin's Creed: Revelations", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 4, crono: 8, fichaTecnicaId: "assassins-creed-revelations", poster: "https://m.media-amazon.com/images/M/MV5BOWM3YjRkM2MtZmU3My00OTc4LTg0MDMtMmEzYjc3NWNjMjIxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
     { titulo: "Assassin's Creed III", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 5, crono: 12, fichaTecnicaId: "assassins-creed-3", poster: "https://static.posters.cz/image/1300/12811.jpg" },
-    { titulo: "Assassin's Creed IV: Black Flag", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 6, crono: 10, poster: "https://mir-s3-cdn-cf.behance.net/project_modules/hd/4c4b7612856287.5626e31d6576f.jpg" },
+    { titulo: "Assassin's Creed IV: Black Flag", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 6, crono: 10, fichaTecnicaId: "assassins-creed-4", poster: "https://mir-s3-cdn-cf.behance.net/project_modules/hd/4c4b7612856287.5626e31d6576f.jpg" },
     { titulo: "Assassin's Creed: Rogue", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 7, crono: 11, poster: "https://images.gog.com/ec9bdb99d06eb876d115146abd005e9fa18a586f69efcc87dd874e483317e941_glx_vertical_cover.webp?namespace=gamesdb" },
     { titulo: "Assassin's Creed: Unity", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 8, crono: 13, poster: "https://m.media-amazon.com/images/M/MV5BMDY1NmE5YzgtYTRiYS00ZDVlLTkxNDktYzU2YzIyZWE3NjQ2XkEyXkFqcGc@._V1_.jpg" },
     { titulo: "Assassin's Creed: Syndicate", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 9, crono: 14, poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzNM-CgSDkidzczZOhBHxIkV4aJwbZG1Z-42nX5F8Hb-XuMCx05_cZT8dl&s=10" },
@@ -425,6 +425,19 @@ const listaMedia = [
     { titulo: "Echo Valley", categoria: "sydney-sweeney", subtipo: "2020", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/315875.jpg" },
     { titulo: "Christy", categoria: "sydney-sweeney", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BM2E5MjhjODgtYzg0MS00NTlhLWIyZTktYjRjOTM1MDJlZWI4XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
     { titulo: "The Housemaid", categoria: "sydney-sweeney", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/jv6LRUjOh9X2dWs2htkntXj4NiB.jpg" },
+
+    // --- GLEN POWELL ---
+    { titulo: "Apollo 10 ½: A Space Age Childhood", categoria: "glen-powell", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/ms3qa9LH9kosaGCSe22NJ7fDPv9.jpg" },
+    { titulo: "Top Gun: Maverick", categoria: "glen-powell", subtipo: "2020", tipo: "Película", poster: "https://filmartgallery.com/cdn/shop/files/Top-Gun-Maverick-Vintage-Movie-Poster-Original_7c07a212.jpg?v=1771974257&width=2048" },
+    { titulo: "Devotion", categoria: "glen-powell", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/y2i9XOHgRzoN4raHZqLj8q7QPXQ.jpg" },
+    { titulo: "Hit Man", categoria: "glen-powell", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/5BfcYFhRVlgWLFo4SCkQNsIWzyy.jpg" },
+    { titulo: "Anyone but You", categoria: "glen-powell", subtipo: "2020", tipo: "Película", poster: "https://images.squarespace-cdn.com/content/v1/521dec4de4b0912f523f3b56/1731842299016-URJG1EVDKU4B2G48XIFG/anyone-but-you-poster.jpg?format=2500w" },
+    { titulo: "The Blue Angels", categoria: "glen-powell", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/7WpeYv3rEhHtsqymb1JQJEM1nrs.jpg" },
+    { titulo: "Twisters", categoria: "glen-powell", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/vebaLV3eE3xsTxBNSqFHEhY3gnw.jpg" },
+    { titulo: "The Running Man", categoria: "glen-powell", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/bnGKTYXVkQp0TKWRfAvTTY1y2XC.jpg" },
+    { titulo: "Chad Powers", categoria: "glen-powell", subtipo: "2020", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/ovfOq7OirvflUvKTHKUmkFwPqCU.jpg" },
+    { titulo: "How to Make a Killing", categoria: "glen-powell", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/w220_and_h330_face/kw7x5mSmHhoeeqwXLwXTBsofD1N.jpg" },
+    { titulo: "Super Mario Galaxy", categoria: "glen-powell", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/4Js0gYWxuvTN6b8iAaSF1cSQzBs.jpg" },
 
     // --- OSCAR 2021 (con filtros por categoría) ---
     { titulo: "Nomadland", categoria: "oscar-2021", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZWY3YTIwOGItODQ5Mi00NmI4LTgxN2QtZmI2ZjJmZmRkOGY1XkEyXkFqcGc@._V1_.jpg" },
@@ -2325,18 +2338,18 @@ const listaMedia = [
     { titulo: "Avengers - Los Heroes Mas Poderosos de La Tierra #13: Avengers Assemble: Parte 2", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/3b/1b/ad8227d8af3b43f9b1d1901b68c3074a.jpg" },
 
     // --- EL INMORTAL HULK (2018) ---
-    { titulo: "El Inmortal Hulk #1: ¡El Retorno de Bruce Banner!", categoria: "marvel-actualidad", editorial: "panini", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/large/22/04/fca91a542e6344a6867567cc9787259d.jpg" },
-    { titulo: "El Inmortal Hulk #2: La Puerta Verde", categoria: "marvel-actualidad", editorial: "panini", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/large/31/32/e898c1355ca747849fd164263c66a33e.jpg" },
-    { titulo: "El Inmortal Hulk #3: Hulk en el Infierno", categoria: "marvel-actualidad", editorial: "panini", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/large/09/10/ca2437f3fb25416dada9f751dfc7ecb3.jpg" },
-    { titulo: "El Inmortal Hulk #4: Abominación", categoria: "marvel-actualidad", editorial: "panini", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/large/01/04/e8b64a4139124e649f34289287edcff7.jpg" },
-    { titulo: "El Inmortal Hulk #5: Destructor de Mundos", categoria: "marvel-actualidad", editorial: "panini", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/large/06/23/211419b79d144ab59dc891e9599ce907.jpg" },
-    { titulo: "El Inmortal Hulk #6: Creemos en Bruce Banner", categoria: "marvel-actualidad", editorial: "panini", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2b/03/08a40567e71549b186f6963b13ddd132.jpg" },
-    { titulo: "El Inmortal Hulk #7: Hulk es Hulk", categoria: "marvel-actualidad", editorial: "panini", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/large/0a/3c/ffa5645994344133b8f379ac22a1e763.jpg" },
-    { titulo: "El Inmortal Hulk #8: El Guardián de la Puerta", categoria: "marvel-actualidad", editorial: "panini", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/large/35/03/3e58be179124467f8ed552c20b0740b8.jpg" },
-    { titulo: "El Inmortal Hulk #9: El Más Débil de Todos", categoria: "marvel-actualidad", editorial: "panini", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/large/20/3a/1cf938dd480d422fbd1a3034400032b8.jpg" },
-    { titulo: "El Inmortal Hulk #10: Del Infierno y de La Muerte", categoria: "marvel-actualidad", editorial: "panini", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/large/3e/34/86c3d9df49cf4448b08a896d5761503c.jpg" },
-    { titulo: "El Inmortal Hulk #11: Relatos Apócrifos", categoria: "marvel-actualidad", editorial: "panini", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/large/13/1e/2c45f6696b864009a4e92bb9e42eba29.jpg" },
-    { titulo: "El Inmortal Hulk #12: Grandes Poderes", categoria: "marvel-actualidad", editorial: "panini", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/large/16/12/94cdd70f19be48c8b824ed479ef65ee7.jpg" },
+    { titulo: "El Inmortal Hulk #1: ¡El Retorno de Bruce Banner!", categoria: "el-inmortal-hulk", editorial: "panini", tipo: "Cómic", poster: "https://i1.whakoom.com/large/22/04/fca91a542e6344a6867567cc9787259d.jpg" },
+    { titulo: "El Inmortal Hulk #2: La Puerta Verde", categoria: "el-inmortal-hulk", editorial: "panini", tipo: "Cómic", poster: "https://i1.whakoom.com/large/31/32/e898c1355ca747849fd164263c66a33e.jpg" },
+    { titulo: "El Inmortal Hulk #3: Hulk en el Infierno", categoria: "el-inmortal-hulk", editorial: "panini", tipo: "Cómic", poster: "https://i1.whakoom.com/large/09/10/ca2437f3fb25416dada9f751dfc7ecb3.jpg" },
+    { titulo: "El Inmortal Hulk #4: Abominación", categoria: "el-inmortal-hulk", editorial: "panini", tipo: "Cómic", poster: "https://i1.whakoom.com/large/01/04/e8b64a4139124e649f34289287edcff7.jpg" },
+    { titulo: "El Inmortal Hulk #5: Destructor de Mundos", categoria: "el-inmortal-hulk", editorial: "panini", tipo: "Cómic", poster: "https://i1.whakoom.com/large/06/23/211419b79d144ab59dc891e9599ce907.jpg" },
+    { titulo: "El Inmortal Hulk #6: Creemos en Bruce Banner", categoria: "el-inmortal-hulk", editorial: "panini", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2b/03/08a40567e71549b186f6963b13ddd132.jpg" },
+    { titulo: "El Inmortal Hulk #7: Hulk es Hulk", categoria: "el-inmortal-hulk", editorial: "panini", tipo: "Cómic", poster: "https://i1.whakoom.com/large/0a/3c/ffa5645994344133b8f379ac22a1e763.jpg" },
+    { titulo: "El Inmortal Hulk #8: El Guardián de la Puerta", categoria: "el-inmortal-hulk", editorial: "panini", tipo: "Cómic", poster: "https://i1.whakoom.com/large/35/03/3e58be179124467f8ed552c20b0740b8.jpg" },
+    { titulo: "El Inmortal Hulk #9: El Más Débil de Todos", categoria: "el-inmortal-hulk", editorial: "panini", tipo: "Cómic", poster: "https://i1.whakoom.com/large/20/3a/1cf938dd480d422fbd1a3034400032b8.jpg" },
+    { titulo: "El Inmortal Hulk #10: Del Infierno y de La Muerte", categoria: "el-inmortal-hulk", editorial: "panini", tipo: "Cómic", poster: "https://i1.whakoom.com/large/3e/34/86c3d9df49cf4448b08a896d5761503c.jpg" },
+    { titulo: "El Inmortal Hulk #11: Relatos Apócrifos", categoria: "el-inmortal-hulk", editorial: "panini", tipo: "Cómic", poster: "https://i1.whakoom.com/large/13/1e/2c45f6696b864009a4e92bb9e42eba29.jpg" },
+    { titulo: "El Inmortal Hulk #12: Grandes Poderes", categoria: "el-inmortal-hulk", editorial: "panini", tipo: "Cómic", poster: "https://i1.whakoom.com/large/16/12/94cdd70f19be48c8b824ed479ef65ee7.jpg" },
 
     // --- COLECCIÓN DEFINITIVA DE NOVELAS GRÁFICAS DE MARVEL (Salvat) ---
     { titulo: "Colección Definitiva de Novelas Gráficas de Marvel: #41", categoria: "marvel-novelas-graficas-definitiva", editorial: "salvat", subtipo: "marvel-zombies", tipo: "Cómic", poster: "https://www.quimeraquiroga.cl/cdn/shop/products/41_1200x1200.jpg?v=1629473875" },
@@ -2452,6 +2465,15 @@ const listaMedia = [
 // COLECCIONES (fichas que se abren y muestran progreso)
 // ==========================================
 const colecciones = [
+    {
+        id: "el-inmortal-hulk",
+        titulo: "El Inmortal Hulk",
+        categoria: "marvel-actualidad",
+        poster: "https://i1.whakoom.com/large/22/04/fca91a542e6344a6867567cc9787259d.jpg",
+        esContenedor: true,
+        etiqueta: "Cómic",
+        peliculas: []
+    },
     {
         id: "arrow",
         titulo: "Arrow",
@@ -2831,6 +2853,16 @@ const colecciones = [
         esContenedor: true,
         etiqueta: "Actor",
         progresoCategoria: "benedict-cumberbatch",
+        peliculas: []
+    },
+    {
+        id: "glen-powell",
+        titulo: "Glen Powell",
+        categoria: "actores",
+        poster: "https://i.pinimg.com/1200x/da/fe/33/dafe33f0d655e8713ddbdd31bccb3245.jpg",
+        esContenedor: true,
+        etiqueta: "Actor",
+        progresoCategoria: "glen-powell",
         peliculas: []
     },
     {
@@ -3485,10 +3517,10 @@ const colecciones = [
         categoria: "dc-animacion",
         poster: "https://image.tmdb.org/t/p/original/1KS9d4yun6Ok8u5m4lU9dpFbJcc.jpg",
         peliculas: [
-            { titulo: "Superman: Man of Tomorrow", poster: "https://m.media-amazon.com/images/M/MV5BOTE2OWJlZTgtNTBlNC00MTVlLWIxNzItMzUyZjY3YTIwZTgxXkEyXkFqcGc@.V1.jpg" },
-            { titulo: "Justice Society: World War II", poster: "https://m.media-amazon.com/images/M/MV5BZjFkN2E5MWEtNjJjYy00Nzk3LTg0YzEtN2U5ZmM1YzdiMTczXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
-            { titulo: "Batman: The Long Halloween - Part One", poster: "https://cdng.europosters.eu/pod_public/1300/318711.jpg" },
-            { titulo: "Batman: The Long Halloween - Part Two", poster: "https://cdng.europosters.eu/pod_public/1300/318712.jpg" },
+            { titulo: "Superman: Man of Tomorrow", fichaTecnicaId: "superman-man-tomorrow", poster: "https://m.media-amazon.com/images/M/MV5BOTE2OWJlZTgtNTBlNC00MTVlLWIxNzItMzUyZjY3YTIwZTgxXkEyXkFqcGc@.V1.jpg" },
+            { titulo: "Justice Society: World War II", fichaTecnicaId: "justice-society-wwii", poster: "https://m.media-amazon.com/images/M/MV5BZjFkN2E5MWEtNjJjYy00Nzk3LTg0YzEtN2U5ZmM1YzdiMTczXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+            { titulo: "Batman: The Long Halloween - Part One", fichaTecnicaId: "batman-long-halloween-p1", poster: "https://cdng.europosters.eu/pod_public/1300/318711.jpg" },
+            { titulo: "Batman: The Long Halloween - Part Two", fichaTecnicaId: "batman-long-halloween-p2", poster: "https://cdng.europosters.eu/pod_public/1300/318712.jpg" },
             { titulo: "Green Lantern: Beware My Power", poster: "https://cdng.europosters.eu/pod_public/1300/317857.jpg" },
             { titulo: "Legion of Super-Heroes", poster: "https://static.wikia.nocookie.net/tomorrowverse/images/9/92/Legion_Artwork2.jpeg/revision/latest/scale-to-width-down/1200?cb=20221210224747" },
             { titulo: "Justice League: Warworld", poster: "https://cdng.europosters.eu/pod_public/1300/317094.jpg" },
@@ -3876,6 +3908,226 @@ const colecciones = [
             { titulo: "LEGO Marvel's Avengers", fichaTecnicaId: "lego-marvel-avengers", poster: "https://store-images.s-microsoft.com/image/apps.53351.69418729968339172.e0511a41-4d32-4c9b-b786-629dba4b131f.b93252f6-c40e-489f-91bd-89f392ba663a" },
             { titulo: "LEGO Marvel Super Heroes 2", fichaTecnicaId: "lego-marvel-sh2", poster: "https://static.wikia.nocookie.net/marveldatabase/images/8/84/LEGO_Marvel_Super_Heroes_2_box_art.jpg/revision/latest?cb=20170516213944" }
         ]
+    },
+    {
+        id: "batman-personaje",
+        titulo: "Batman",
+        categoria: "dc-personajes",
+        poster: "https://w0.peakpx.com/wallpaper/242/275/HD-wallpaper-batman-bruce-wayne-rebirth.jpg",
+        esContenedor: true,
+        etiqueta: "Personaje",
+        peliculas: []
+    },
+    {
+        id: "batman-contiene-comics",
+        titulo: "Cómics",
+        categoria: "batman-personaje",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vol_01_cov_arg1-fa7c5ab99dc5a1a5c215952931975077-640-0.webp",
+        esContenedor: true,
+        peliculas: []
+    },
+    {
+        id: "batman-comic-renacimiento",
+        titulo: "Batman (Renacimiento)",
+        categoria: "batman-contiene-comics",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vol_01_cov_arg1-fa7c5ab99dc5a1a5c215952931975077-640-0.webp",
+        esContenedor: true,
+        atajoId: "batman-renacimiento-orden",
+        peliculas: []
+    },
+    {
+        id: "batman-comic-nuevos-52",
+        titulo: "Batman (Nuevos 52)",
+        categoria: "batman-contiene-comics",
+        poster: "https://i1.whakoom.com/large/22/07/72f01277e0974100b147a5a9fac94762.jpg",
+        esContenedor: true,
+        atajoId: "batman-nuevos-52",
+        peliculas: []
+    },
+    {
+        id: "batman-comic-y-robin-nuevos-52",
+        titulo: "Batman y Robin (Nuevos 52)",
+        categoria: "batman-contiene-comics",
+        poster: "https://i1.whakoom.com/large/1f/03/597bc7f70bf6461b8087dd8b64abdaef.jpg",
+        esContenedor: true,
+        atajoId: "batman-y-robin-nuevos-52",
+        peliculas: []
+    },
+    {
+        id: "batman-comic-breyfogle",
+        titulo: "Batman por Norm Breyfogle",
+        categoria: "batman-contiene-comics",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_de_norm_breyfogle_vol_1_cov-34de9ff1fbb02d84db17543107324464-1024-1024.webp",
+        esContenedor: true,
+        atajoId: "batman-norm-breyfogle",
+        peliculas: []
+    },
+    {
+        id: "batman-comic-pre-crisis",
+        titulo: "Pre-Crisis",
+        categoria: "batman-contiene-comics",
+        poster: "https://w0.peakpx.com/wallpaper/775/873/HD-wallpaper-batman-issue-1-need-iphone-s-plus-background-for-iphon-batman-comic-cover-batman-comic-books-batman-comic-book-cover-vintage-batman-thumbnail.jpg",
+        esContenedor: true,
+        atajoId: "pre-crisis-dc",
+        peliculas: []
+    },
+    {
+        id: "batman-comic-post-crisis",
+        titulo: "Post-Crisis / Edad Moderna",
+        categoria: "batman-contiene-comics",
+        poster: "https://w0.peakpx.com/wallpaper/121/414/HD-wallpaper-dc-comics-super-heroes.jpg",
+        esContenedor: true,
+        atajoId: "post-crisis-dc",
+        peliculas: []
+    },
+    {
+        id: "batman-contiene-videojuegos",
+        titulo: "Videojuegos",
+        categoria: "batman-personaje",
+        poster: "https://images4.alphacoders.com/158/thumb-1920-1581153.jpg",
+        esContenedor: true,
+        peliculas: []
+    },
+    {
+        id: "batman-vj-arkhamverse",
+        titulo: "Arkhamverse",
+        categoria: "batman-contiene-videojuegos",
+        poster: "https://images4.alphacoders.com/158/thumb-1920-1581153.jpg",
+        esContenedor: true,
+        atajoId: "arkhamverse",
+        peliculas: []
+    },
+    {
+        id: "batman-vj-lego-dc",
+        titulo: "LEGO DC",
+        categoria: "batman-contiene-videojuegos",
+        poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy-P8ozs-75ixhoOjwsLnDm-azOf78e-BGJ6Lr0_bw1uHp0QaK1uVyKgY&s=10",
+        esContenedor: true,
+        atajoId: "lego-dc",
+        peliculas: []
+    },
+    {
+        id: "batman-vj-telltale",
+        titulo: "Batman: The Telltale Series",
+        categoria: "batman-contiene-videojuegos",
+        poster: "https://i.pinimg.com/736x/4e/1a/3c/4e1a3c35938fff68e0db0064d92ee14d.jpg",
+        esContenedor: true,
+        atajoId: "batman-telltale",
+        peliculas: []
+    },
+    {
+        id: "batman-vj-injustice",
+        titulo: "Injustice",
+        categoria: "batman-contiene-videojuegos",
+        poster: "https://i.pinimg.com/564x/95/9b/f5/959bf5176a963ae78455679cf0103473.jpg",
+        esContenedor: true,
+        atajoId: "injustice",
+        peliculas: []
+    },
+    {
+        id: "batman-contiene-peliculas",
+        titulo: "Películas (Live Action)",
+        categoria: "batman-personaje",
+        poster: "https://i.pinimg.com/736x/d7/36/c2/d736c2ebc5976a2b9390199f015871a9.jpg",
+        esContenedor: true,
+        peliculas: []
+    },
+    {
+        id: "batman-lv-nolan",
+        titulo: "Trilogía de Nolan",
+        categoria: "batman-contiene-peliculas",
+        poster: "https://i.pinimg.com/736x/d7/36/c2/d736c2ebc5976a2b9390199f015871a9.jpg",
+        esContenedor: true,
+        atajoId: "batman-trilogia-nolan",
+        peliculas: []
+    },
+    {
+        id: "batman-lv-90s",
+        titulo: "Batman 90's",
+        categoria: "batman-contiene-peliculas",
+        poster: "https://i.pinimg.com/474x/92/14/fd/9214fd62db2562734efa3e7698735033.jpg",
+        esContenedor: true,
+        atajoId: "batman-90s",
+        peliculas: []
+    },
+    {
+        id: "batman-lv-affleck",
+        titulo: "Batman: Ben Affleck",
+        categoria: "batman-contiene-peliculas",
+        poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTfVC1CneZcljEkjQExYzjKpYa_ShQDgjvQRB8vwEsfvXrX8zZ28KIcznR&s=10",
+        esContenedor: true,
+        atajoId: "batman-ben-affleck",
+        peliculas: []
+    },
+    {
+        id: "batman-lv-the-batman",
+        titulo: "The Batman",
+        categoria: "batman-contiene-peliculas",
+        poster: "https://m.media-amazon.com/images/I/71kUTilIdiL.jpg",
+        esContenedor: true,
+        atajoId: "the-batman",
+        peliculas: []
+    },
+    {
+        id: "batman-lv-joker",
+        titulo: "Joker",
+        categoria: "batman-contiene-peliculas",
+        poster: "https://i.ebayimg.com/images/g/rI0AAOSw89NiRZ6k/s-l1200.jpg",
+        esContenedor: true,
+        atajoId: "joker",
+        peliculas: []
+    },
+    {
+        id: "batman-contiene-series",
+        titulo: "Series",
+        categoria: "batman-personaje",
+        poster: "https://image.tmdb.org/t/p/original/awneRTOXqumB1fOPoUIXjUqksh5.jpg",
+        esContenedor: true,
+        peliculas: []
+    },
+    {
+        id: "batman-serie-titans",
+        titulo: "Titans",
+        categoria: "batman-contiene-series",
+        poster: "https://image.tmdb.org/t/p/original/awneRTOXqumB1fOPoUIXjUqksh5.jpg",
+        esContenedor: true,
+        atajoId: "titans",
+        peliculas: []
+    },
+    {
+        id: "batman-serie-batwoman",
+        titulo: "Batwoman",
+        categoria: "batman-contiene-series",
+        poster: "https://www.scifinow.co.uk/wp-content/uploads/2019/07/batwoman_xxlg.jpg",
+        esContenedor: true,
+        atajoId: "batwoman",
+        peliculas: []
+    },
+    {
+        id: "batman-contiene-animacion",
+        titulo: "Animación",
+        categoria: "batman-personaje",
+        poster: "https://image.tmdb.org/t/p/original/1KS9d4yun6Ok8u5m4lU9dpFbJcc.jpg",
+        esContenedor: true,
+        peliculas: []
+    },
+    {
+        id: "batman-anim-tomorrowverse",
+        titulo: "Tomorrowverse",
+        categoria: "batman-contiene-animacion",
+        poster: "https://image.tmdb.org/t/p/original/1KS9d4yun6Ok8u5m4lU9dpFbJcc.jpg",
+        esContenedor: true,
+        atajoId: "tomorrowverse",
+        peliculas: []
+    },
+    {
+        id: "batman-anim-2004",
+        titulo: "The Batman (2004)",
+        categoria: "batman-contiene-animacion",
+        poster: "https://image.tmdb.org/t/p/original/3w7koeOR2x71XYMJDGpygxYtScI.jpg",
+        esContenedor: true,
+        atajoId: "the-batman-2004",
+        peliculas: []
     },
     {
         id: "batman-ben-affleck",
@@ -5145,6 +5397,13 @@ function renderizarColecciones() {
         "dc-animacion": "seccion-dc-animacion",
         "dc-videojuegos": "seccion-dc-videojuegos",
         "dc-personajes": "seccion-dc-personajes",
+        "batman-personaje": "seccion-batman-personaje",
+        "batman-contiene-comics": "seccion-batman-contiene-comics",
+        "el-inmortal-hulk": "seccion-el-inmortal-hulk",
+        "batman-contiene-peliculas": "seccion-batman-contiene-peliculas",
+        "batman-contiene-series": "seccion-batman-contiene-series",
+        "batman-contiene-animacion": "seccion-batman-contiene-animacion",
+        "batman-contiene-videojuegos": "seccion-batman-contiene-videojuegos",
         "explorar": "seccion-explorar",
         "lego": "seccion-lego",
         "ben10": "seccion-ben10",
@@ -5414,6 +5673,7 @@ function abrirColeccion(colId) {
         'julia-roberts': '.btn-filtro-julia-roberts[data-tipo="2020"]',
         'jennifer-lawrence': '.btn-filtro-jlawrence[data-tipo="2020"]',
         'sydney-sweeney': '.btn-filtro-sweeney[data-tipo="2020"]',
+        'glen-powell': '.btn-filtro-powell[data-tipo="2020"]',
         'tom-holland': '.btn-filtro-holland[data-tipo="2020"]',
         'barry-keoghan': '.btn-filtro-keoghan[data-tipo="2020"]',
         'matrix-saga': '.btn-filtro-matrix[data-tipo="peliculas"]',
@@ -5637,6 +5897,14 @@ function renderizarContenido() {
         "julia-roberts": "seccion-julia-roberts",
         "jennifer-lawrence": "seccion-jennifer-lawrence",
         "sydney-sweeney": "seccion-sydney-sweeney",
+        "glen-powell": "seccion-glen-powell",
+        "batman-personaje": "seccion-batman-personaje",
+        "batman-contiene-comics": "seccion-batman-contiene-comics",
+        "el-inmortal-hulk": "seccion-el-inmortal-hulk",
+        "batman-contiene-peliculas": "seccion-batman-contiene-peliculas",
+        "batman-contiene-series": "seccion-batman-contiene-series",
+        "batman-contiene-animacion": "seccion-batman-contiene-animacion",
+        "batman-contiene-videojuegos": "seccion-batman-contiene-videojuegos",
         "tom-holland": "seccion-tom-holland",
         "barry-keoghan": "seccion-barry-keoghan",
         "greta-gerwig": "seccion-greta-gerwig",
@@ -10374,6 +10642,71 @@ const REQUISITOS_BATMAN_TELLTALE_T1 = {
     minimos: { so: "Windows 7 (64 bits) SP1", cpu: "Intel Core 2 Duo (2.4 GHz)", ram: "3", almacenamiento: "", directx: "DirectX 11", gpu: "NVIDIA GTS 450+ (1 GB+ de VRAM, excluyendo GT)" }
 };
 
+const btnVolverFichaSupermanManTomorrow = document.getElementById('btn-volver-ficha-superman-man-tomorrow');
+if (btnVolverFichaSupermanManTomorrow) {
+    btnVolverFichaSupermanManTomorrow.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-superman-man-tomorrow');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-tomorrowverse'));
+    });
+}
+const btnVolverFichaJusticeSocietyWwii = document.getElementById('btn-volver-ficha-justice-society-wwii');
+if (btnVolverFichaJusticeSocietyWwii) {
+    btnVolverFichaJusticeSocietyWwii.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-justice-society-wwii');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-tomorrowverse'));
+    });
+}
+
+const btnVolverFichaBatmanLongHalloweenP1 = document.getElementById('btn-volver-ficha-batman-long-halloween-p1');
+if (btnVolverFichaBatmanLongHalloweenP1) {
+    btnVolverFichaBatmanLongHalloweenP1.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-batman-long-halloween-p1');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-tomorrowverse'));
+    });
+}
+const btnVolverFichaBatmanLongHalloweenP2 = document.getElementById('btn-volver-ficha-batman-long-halloween-p2');
+if (btnVolverFichaBatmanLongHalloweenP2) {
+    btnVolverFichaBatmanLongHalloweenP2.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-batman-long-halloween-p2');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-tomorrowverse'));
+    });
+}
+
+const btnVolverFichaAssassinsCreed4 = document.getElementById('btn-volver-ficha-assassins-creed-4');
+if (btnVolverFichaAssassinsCreed4) {
+    btnVolverFichaAssassinsCreed4.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-assassins-creed-4');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-assassins-creed'));
+    });
+}
+const btnDlcAssassinsCreed4 = document.getElementById('btn-dlc-assassins-creed-4');
+if (btnDlcAssassinsCreed4) {
+    btnDlcAssassinsCreed4.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-assassins-creed-4'));
+    });
+}
+const btnVolverDlcAssassinsCreed4 = document.getElementById('btn-volver-dlc-assassins-creed-4');
+if (btnVolverDlcAssassinsCreed4) {
+    btnVolverDlcAssassinsCreed4.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-assassins-creed-4'));
+    });
+}
+document.querySelectorAll('.btn-volver-dlc-individual-ac4').forEach(boton => {
+    boton.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-assassins-creed-4'));
+    });
+});
+
 const btnVolverFichaLegoJurassicWorld = document.getElementById('btn-volver-ficha-lego-jurassic-world');
 
 
@@ -10489,7 +10822,12 @@ const FICHAS_TECNICAS_TITULOS = {
     "lanterns-2026": "Lanterns",
     "avengers-infinity-war": "Avengers: Infinity War",
     "creature-commandos": "Creature Commandos",
-    "batman-telltale-t1": "Batman: The Telltale Series (Temporada 1)"
+    "batman-telltale-t1": "Batman: The Telltale Series (Temporada 1)",
+    "superman-man-tomorrow": "Superman: Man of Tomorrow",
+    "justice-society-wwii": "Justice Society: World War II",
+    "batman-long-halloween-p1": "Batman: The Long Halloween - Part One",
+    "batman-long-halloween-p2": "Batman: The Long Halloween - Part Two",
+    "assassins-creed-4": "Assassin's Creed IV: Black Flag"
 };
 
 // Casos con id de sección no estándar (no siguen "seccion-ficha-<id>").
@@ -11318,6 +11656,57 @@ const REPARTO_PELICULAS = {
             { actor: "Maria Bakalova", personaje: "Princesa Ilana (voz)" },
             { actor: "Steve Agee", personaje: "John Economos (voz)" }
         ]
+    },
+    "superman-man-tomorrow": {
+        director: "Chris Palmer",
+        elenco: [
+            { actor: "Darren Criss", personaje: "Clark Kent / Superman (voz)" },
+            { actor: "Alexandra Daddario", personaje: "Lois Lane (voz)" },
+            { actor: "Zach Braff", personaje: "Lex Luthor (voz)" },
+            { actor: "Ike Amadi", personaje: "J'onn J'onzz / Martian Manhunter (voz)" },
+            { actor: "Jennifer Hale", personaje: "Martha Kent (voz)" },
+            { actor: "Neil Flynn", personaje: "Jonathan Kent (voz)" },
+            { actor: "Ryan Hurst", personaje: "Lobo (voz)" },
+            { actor: "Brett Dalton", personaje: "Parasite (voz)" }
+        ]
+    },
+    "justice-society-wwii": {
+        director: "Jeff Wamester",
+        elenco: [
+            { actor: "Matt Bomer", personaje: "Barry Allen / Flash (voz)" },
+            { actor: "Stana Katic", personaje: "Diana Prince / Wonder Woman (voz)" },
+            { actor: "Omid Abtahi", personaje: "Carter Hall / Hawkman (voz)" },
+            { actor: "Elysia Rotaru", personaje: "Dinah Drake / Black Canary (voz)" },
+            { actor: "Matthew Mercer", personaje: "Rex Tyler / Hourman (voz)" },
+            { actor: "Chris Diamantopoulos", personaje: "Steve Trevor (voz)" },
+            { actor: "Armen Taylor", personaje: "Jay Garrick / Flash (voz)" },
+            { actor: "Liam McIntyre", personaje: "Steamboat Boyle / Advisor (voz)" }
+        ]
+    },
+    "batman-long-halloween-p1": {
+        director: "Chris Palmer",
+        elenco: [
+            { actor: "Jensen Ackles", personaje: "Bruce Wayne / Batman (voz)" },
+            { actor: "Josh Duhamel", personaje: "Harvey Dent (voz)" },
+            { actor: "Naya Rivera", personaje: "Selina Kyle / Catwoman (voz)" },
+            { actor: "Troy Baker", personaje: "Joker (voz)" },
+            { actor: "Billy Burke", personaje: "James Gordon (voz)" },
+            { actor: "Titus Welliver", personaje: "Carmine Falcone (voz)" },
+            { actor: "Julie Nathanson", personaje: "Alberto Falcone (voz)" }
+        ]
+    },
+    "batman-long-halloween-p2": {
+        director: "Chris Palmer",
+        elenco: [
+            { actor: "Jensen Ackles", personaje: "Bruce Wayne / Batman (voz)" },
+            { actor: "Josh Duhamel", personaje: "Harvey Dent / Dos Caras (voz)" },
+            { actor: "Naya Rivera", personaje: "Selina Kyle / Catwoman (voz)" },
+            { actor: "Troy Baker", personaje: "Joker (voz)" },
+            { actor: "Billy Burke", personaje: "James Gordon (voz)" },
+            { actor: "Alastair Duncan", personaje: "Alfred Pennyworth (voz)" },
+            { actor: "David Dastmalchian", personaje: "Poison Ivy (voz)" },
+            { actor: "Robin Atkin Downes", personaje: "Sombrerero Loco (voz)" }
+        ]
     }
 };
 
@@ -11992,6 +12381,75 @@ botonesFiltroSweeney.forEach(boton => {
     });
 });
 inicializarFiltroTipoActor('seccion-sydney-sweeney', 'btn-filtro-sweeney');
+
+// ==========================================
+// FILTROS "GLEN POWELL" (por década)
+// ==========================================
+const botonesFiltroPowell = document.querySelectorAll('.btn-filtro-powell');
+botonesFiltroPowell.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroPowell.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        aplicarFiltroTipoYDecadaActor('seccion-glen-powell', 'btn-filtro-powell');
+    });
+});
+inicializarFiltroTipoActor('seccion-glen-powell', 'btn-filtro-powell');
+
+const btnVolverGlenPowell = document.getElementById('btn-volver-glen-powell');
+if (btnVolverGlenPowell) {
+    btnVolverGlenPowell.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-actores'));
+    });
+}
+
+const btnVolverBatmanPersonaje = document.getElementById('btn-volver-batman-personaje');
+if (btnVolverBatmanPersonaje) {
+    btnVolverBatmanPersonaje.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dc-personajes'));
+    });
+}
+
+const btnVolverBatmanContieneComics = document.getElementById('btn-volver-batman-contiene-comics');
+if (btnVolverBatmanContieneComics) {
+    btnVolverBatmanContieneComics.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-batman-personaje'));
+    });
+}
+
+const btnVolverBatmanContieneVideojuegos = document.getElementById('btn-volver-batman-contiene-videojuegos');
+if (btnVolverBatmanContieneVideojuegos) {
+    btnVolverBatmanContieneVideojuegos.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-batman-personaje'));
+    });
+}
+
+const btnVolverElInmortalHulk = document.getElementById('btn-volver-el-inmortal-hulk');
+if (btnVolverElInmortalHulk) {
+    btnVolverElInmortalHulk.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-marvel-actualidad'));
+    });
+}
+
+const btnVolverBatmanContienePeliculas = document.getElementById('btn-volver-batman-contiene-peliculas');
+if (btnVolverBatmanContienePeliculas) {
+    btnVolverBatmanContienePeliculas.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-batman-personaje'));
+    });
+}
+
+const btnVolverBatmanContieneSeries = document.getElementById('btn-volver-batman-contiene-series');
+if (btnVolverBatmanContieneSeries) {
+    btnVolverBatmanContieneSeries.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-batman-personaje'));
+    });
+}
+
+const btnVolverBatmanContieneAnimacion = document.getElementById('btn-volver-batman-contiene-animacion');
+if (btnVolverBatmanContieneAnimacion) {
+    btnVolverBatmanContieneAnimacion.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-batman-personaje'));
+    });
+}
 
 // ==========================================
 // FILTROS "TOM HOLLAND" (por década)
