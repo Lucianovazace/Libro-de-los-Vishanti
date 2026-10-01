@@ -224,6 +224,8 @@ const listaMedia = [
     { titulo: "Green Lantern", categoria: "dc-multiverso", subtipo: "liveaction", tierra: 12, tipo: "Película - Tierra 12", poster: "https://m.media-amazon.com/images/I/71-ckdWvqfL.jpg" },
     { titulo: "Swamp Thing", categoria: "dc-multiverso", subtipo: "liveaction", tierra: 19, tipo: "Serie - Tierra 19", poster: "https://m.media-amazon.com/images/M/MV5BMGQzYzgxZWQtZmI3YS00YTIzLTk4NmQtMGE0YTdiNGNlZjYxXkEyXkFqcGc@.V1.jpg" },
     { titulo: "Watchmen", categoria: "dc-multiverso", subtipo: "liveaction", tierra: 4, tipo: "Película - Tierra 4", poster: "https://m.media-amazon.com/images/M/MV5BMjc5NGFlMzMtZjkwZS00MzliLTg5NzktZDYzNGNhNjdjNzAzXkEyXkFqcGc@.V1.jpg" },
+    { titulo: "The Flash (1990)", categoria: "dc-multiverso", subtipo: "liveaction", tierra: 90, tipo: "Serie - Tierra 90", poster: "https://image.tmdb.org/t/p/original/2WBh74OGK3NY7lhcqxNyeNj1WCc.jpg" },
+    { titulo: "Birds of Prey (2002)", categoria: "dc-multiverso", subtipo: "liveaction", tipo: "Serie", fichaTecnicaId: "birds-of-prey-2002", poster: "https://image.tmdb.org/t/p/original/jTDjI5SYLdTKezCj4DRsR5sszLS.jpg" },
 
     // --- GAME OF THRONES (con doble orden: salida / cronológico) ---
     // "Game of Thrones" y "House of the Dragon" ahora son fichas explorables (ver colecciones)
@@ -2091,19 +2093,19 @@ const listaMedia = [
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #I: Origenes Marvel: Los Sesenta", categoria: "marvel-edad-plata", editorial: "panini", subtipo: "spider-man,x-men,cuatro-fantasticos,hulk,thor,iron-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/09/2f/33c2ff95912f4358b88500bc4a97d59a.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #II: Thor: Historias de Asgard", categoria: "marvel-edad-plata", editorial: "panini", subtipo: "thor", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_706219-MLA69403173899_052023-O.webp" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #III: Doctor Strange: Nombre Anonimo, Tiempo Eterno", categoria: "marvel-edad-plata", editorial: "panini", subtipo: "doctor-strange", tipo: "Cómic", poster: "https://i1.whakoom.com/small/29/28/9cbc0e1a383149119f1b4ecc7771aba5.jpg" },
-    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #VIII: Nick Fury: Agente de S.H.I.E.L.D. Parte Uno", categoria: "marvel-edad-plata", editorial: "panini", subtipo: "nick-fury", tipo: "Cómic", poster: "https://i1.whakoom.com/small/18/29/2214d33dbac34636b6bd5016e4d172c4.jpg" },
-    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #IX: Nick Fury: Agente de S.H.I.E.L.D. Parte Dos", categoria: "marvel-edad-plata", editorial: "panini", subtipo: "nick-fury", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0d/1a/c9f699d0ff4d452e89f83f0fcd3de5c9.jpg" },
-    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #X: Inhumanos", categoria: "marvel-edad-plata", editorial: "panini", subtipo: "inhumanos", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0c/28/23be5b2676e04036977b85a7621eb648.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #IV: Cuatro Fantasticos: La Llegada de Galactus", categoria: "marvel-edad-plata", editorial: "panini", subtipo: "cuatro-fantasticos", tipo: "Cómic", poster: "https://i1.whakoom.com/small/22/13/36e05d88e41043a4b14238d3bcce12e4.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #V: Cuatro Fantasticos: El Dia del Juicio", categoria: "marvel-edad-plata", editorial: "panini", subtipo: "cuatro-fantasticos", tipo: "Cómic", poster: "https://i1.whakoom.com/small/28/2f/e5d3c6fc626a4ab1a814e81cd35a5109.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #VI: El Asombroso Spider-Man: Spider-Man Nunca Mas", categoria: "marvel-edad-plata", editorial: "panini", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/09/27/50eb949215af47108fa2e537773b054b.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #VII: El Invencible Iron Man: Tragedia y Triunfo", categoria: "marvel-edad-plata", editorial: "panini", subtipo: "iron-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/22/15/cc3f692506314b8a9573e7bfcb1e5380.jpg" },
+    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #VIII: Nick Fury: Agente de S.H.I.E.L.D. Parte Uno", categoria: "marvel-edad-plata", editorial: "panini", subtipo: "nick-fury", tipo: "Cómic", poster: "https://i1.whakoom.com/small/18/29/2214d33dbac34636b6bd5016e4d172c4.jpg" },
+    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #IX: Nick Fury: Agente de S.H.I.E.L.D. Parte Dos", categoria: "marvel-edad-plata", editorial: "panini", subtipo: "nick-fury", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0d/1a/c9f699d0ff4d452e89f83f0fcd3de5c9.jpg" },
+    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #X: Inhumanos", categoria: "marvel-edad-plata", editorial: "panini", subtipo: "inhumanos", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0c/28/23be5b2676e04036977b85a7621eb648.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XI: El Increible Hulk: Monstruo Desatado", categoria: "marvel-edad-plata", editorial: "panini", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/small/1f/15/49d0b953807b47889adfef210e455285.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XII: Avengers: El Nacimiento de Ultron", categoria: "marvel-edad-plata", editorial: "panini", subtipo: "iron-man,capitan-america,thor,ultron", tipo: "Cómic", poster: "https://i1.whakoom.com/small/28/14/e64985551d164b0daa498f7a6c56ef1b.jpg" },
-    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XIV: Silver Surfer Origenes", categoria: "marvel-edad-plata", editorial: "panini", subtipo: "silver-surfer", tipo: "Cómic", poster: "https://i1.whakoom.com/small/22/09/f2bcaf968c244ec691e3a6ec5b32670b.jpg" },
-    { titulo: "Coleccion Defintiiva de Novelas Graficas de Marvel #XVI: X-Men: A La Sombra de Sauron", categoria: "marvel-edad-plata", editorial: "panini", subtipo: "x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/06/3e/83d6b37217824dcf8f724a2ab6392fd3.jpg" },
-    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XV: X-Men: Ocaso de Los Mutantes", categoria: "marvel-edad-plata", editorial: "panini", subtipo: "x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/2d/18/74900bc9466545d5a9156e4921fcd4b8.jpg" },
     { titulo: "Colección Definiiva de Novelas Graficas de Marvel #XIII: Thor: Ragnarok", categoria: "marvel-edad-plata", editorial: "panini", subtipo: "thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/1f/28/30915749227e40bc92a279395058a942.jpg" },
+    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XIV: Silver Surfer Origenes", categoria: "marvel-edad-plata", editorial: "panini", subtipo: "silver-surfer", tipo: "Cómic", poster: "https://i1.whakoom.com/small/22/09/f2bcaf968c244ec691e3a6ec5b32670b.jpg" },
+    { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XV: X-Men: Ocaso de Los Mutantes", categoria: "marvel-edad-plata", editorial: "panini", subtipo: "x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/2d/18/74900bc9466545d5a9156e4921fcd4b8.jpg" },
+    { titulo: "Coleccion Defintiiva de Novelas Graficas de Marvel #XVI: X-Men: A La Sombra de Sauron", categoria: "marvel-edad-plata", editorial: "panini", subtipo: "x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/06/3e/83d6b37217824dcf8f724a2ab6392fd3.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XVII: El Invencible Iron Man: El Principio del Fin", categoria: "marvel-edad-plata", editorial: "panini", subtipo: "iron-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/1c/13/0ced340c1eda417b93d7fd01b8a977a9.jpg" },
     // --- EDAD DE BRONCE ---
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XVIII: Origenes Marvel: Los Setenta", categoria: "marvel-edad-bronce", editorial: "panini", subtipo: "spider-man,x-men,cuatro-fantasticos,hulk,thor,iron-man,capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/small/22/3b/4787493c587e4ab08852e94734e8a137.jpg" },
@@ -2140,35 +2142,35 @@ const listaMedia = [
     { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #6: Superheroes Marvel: Guerras Secretas Parte I", categoria: "marvel-edad-bronce", editorial: "panini", subtipo: "iron-man,spider-man,thor,wolverine,x-men", tipo: "Cómic", poster: "https://s3.amazonaws.com/comicgeeks/comics/covers/large-8317277.jpg?1756900641" },
     { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #7: Superheroes Marvel: Guerras Secretas Parte II", categoria: "marvel-edad-bronce", editorial: "panini", subtipo: "iron-man,spider-man,thor,wolverine,x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/34/0e/22460ec7cd6648b99e0a2061f24e90e4.jpg" },
     // --- EDAD MODERNA I ---
-    { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #8: Daredevil: Renacido", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "daredevil,kingpin", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_797368-MLA53026509754_122022-O.webp" },
-    { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #9: El Asombroso Spider-Man: La Ultima Caceria de Kraven", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "spider-man,kraven", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2023/10/la-ultima-caceria.webp" },
-    { titulo: "Must Have #24: Spider-Man: La Ultima Caceria de Kraven", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "spider-man,kraven", tipo: "Cómic", poster: "https://i1.whakoom.com/small/05/27/a52f3376bc6d4a399235b860ee1a5838.jpg" },
-    { titulo: "Marvel Excelsior #5: Daredevil: Elektra Vive De Nuevo + Amor y Furia", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "daredevil", tipo: "Cómic", poster: "https://i1.whakoom.com/small/2e/2f/6abe127089044ad280ec3e89f3e9cd4c.jpg" },
-    { titulo: "Marvel Excelsior #6: Elektra: Asesina", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "daredevil", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_942846-MLU69754853582_062023-O.webp" },
-    { titulo: "Marvel Excelsior #15: X-Men: Resurrecion del Fenix", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "x-men", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_745030-MLA28469672883_102018-O.webp" },
-    { titulo: "Marvel Excelsior #16: El Invencible Iron Man: La Busqueda de Tony Stark", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "iron-man", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_2X_852237-MLA42492325286_072020-F.webp" },
     { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #10: Wolverine: Arma X", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "wolverine", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2024/04/01-0002.webp" },
+    { titulo: "Marvel Excelsior #6: Elektra: Asesina", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "daredevil", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_942846-MLU69754853582_062023-O.webp" },
+    { titulo: "Must Have #7: Daredevil: El Hombre Sin Miedo", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "daredevil", tipo: "Cómic", poster: "https://i1.whakoom.com/small/1f/09/e2d17883bc0a4282ad71e684179af974.jpg" },
+    { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #12: Marvels", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "spider-man,thor,iron-man", tipo: "Cómic", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJdPSveSEqCEVac1CJp3A8Jd5hb7_jN065kvjGUlFDA3oIxVUWPQ0DGQlK&s=10" },
+    { titulo: "Must Have #13: Marvels", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "spider-man,thor,iron-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/3b/06/77844475f1854bcbbd115a0f734c4d48.jpg" },
+    { titulo: "Marvel Excelsior #4: Marvels", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "spider-man,thor,iron-man", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_721658-MLA26101929319_092017-O.webp" },
+    { titulo: "Marvel Excelsior #15: X-Men: Resurrecion del Fenix", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "x-men", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_745030-MLA28469672883_102018-O.webp" },
     { titulo: "Marvel Excelsior #7: X-Men: Genesis Mutante", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/1e/32/7c225ed7d1634d898ee9b76955f04306.jpg" },
     { titulo: "Must Have #37: X-Men: Genesis Mutante 2.0", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/34/1d/dbbbe4b1ec88493fae98a2053a996022.jpg" },
+    { titulo: "Marvel Excelsior #21: X-Men: El Regreso de Longshot", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "x-men", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_935158-MLA77003951712_062024-O.webp" },
+    { titulo: "Marvel Excelsior #16: El Invencible Iron Man: La Busqueda de Tony Stark", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "iron-man", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_2X_852237-MLA42492325286_072020-F.webp" },
+    { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #8: Daredevil: Renacido", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "daredevil,kingpin", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_797368-MLA53026509754_122022-O.webp" },
+    { titulo: "Marvel Excelsior #5: Daredevil: Elektra Vive De Nuevo + Amor y Furia", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "daredevil", tipo: "Cómic", poster: "https://i1.whakoom.com/small/2e/2f/6abe127089044ad280ec3e89f3e9cd4c.jpg" },
+    { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #9: El Asombroso Spider-Man: La Ultima Caceria de Kraven", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "spider-man,kraven", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2023/10/la-ultima-caceria.webp" },
+    { titulo: "Must Have #24: Spider-Man: La Ultima Caceria de Kraven", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "spider-man,kraven", tipo: "Cómic", poster: "https://i1.whakoom.com/small/05/27/a52f3376bc6d4a399235b860ee1a5838.jpg" },
     { titulo: "Marvel Excelsior #24: Avengers: La Busqueda de Thanos", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/15/24/4eea9fe8200645cd9b0780b5fe97a48b.jpg" },
     { titulo: "Marvel Excelsior #14: Avengers: El Guantelete del Infinito", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_934714-MLA80642441836_112024-O.webp" },
     { titulo: "Must Have #17: El Guantelete del Infinito", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/26/00/a6d9aa3f831348d5b119a5de12f8fc9c.jpg" },
     { titulo: "Marvel Excelsior #12: Avengers: La Guerra del Infinito", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/326/487/products/97898772440901-2a15a6855b017b3e1016040725514350-640-0.webp" },
-    { titulo: "Marvel Excelsior #21: X-Men: El Regreso de Longshot", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "x-men", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_935158-MLA77003951712_062024-O.webp" },
-    { titulo: "Must Have #7: Daredevil: El Hombre Sin Miedo", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "daredevil", tipo: "Cómic", poster: "https://i1.whakoom.com/small/1f/09/e2d17883bc0a4282ad71e684179af974.jpg" },
-    { titulo: "Must Have #31: Avengers Forever", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/33/30/92d0da5c12e840cda86ed68bfa3f4845.jpg" },
-    { titulo: "Must Have #12: Avengers: Ultron Ilimitado", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/13/3e/56aeb77d25da4aabbac55a37ef08ceb3.jpg" },
-    { titulo: "Marvel Excelsior #22: Avengers: Cruzada del Infinito", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_626962-MLA73071719816_112023-O.webp" },
-    { titulo: "Marvel Excelsior #25: Avengers: El Enemigo Interior", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/36/3e/9b49ecf0c51f490c9466f810cd710edb.jpg" },
     { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #11: El Increible Hulk: Gritos Silenciosos", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "hulk", tipo: "Cómic", poster: "https://d22fxaf9t8d39k.cloudfront.net/ceec52fa5b47714b380bb34d1ac78403503d8724703fc5fef5f00df7bc4583f2223891.jpg" },
-    { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #12: Marvels", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "spider-man,thor,iron-man", tipo: "Cómic", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJdPSveSEqCEVac1CJp3A8Jd5hb7_jN065kvjGUlFDA3oIxVUWPQ0DGQlK&s=10" },
-    { titulo: "Must Have #13: Marvels", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "spider-man,thor,iron-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/3b/06/77844475f1854bcbbd115a0f734c4d48.jpg" },
-    { titulo: "Marvel Excelsior #4: Marvels", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "spider-man,thor,iron-man", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_721658-MLA26101929319_092017-O.webp" },
+    { titulo: "Marvel Excelsior #22: Avengers: Cruzada del Infinito", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_626962-MLA73071719816_112023-O.webp" },
     { titulo: "Coleccion Spider-Man: Universo Araña #6: Venom: Protector Letal", categoria: "marvel-edad-moderna-1", editorial: "ovni", subtipo: "venom", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/06_venom_protector_letal_cov1-b897a892df1b7515d216645158859126-1024-1024.webp" },
     { titulo: "Coleccion Spider-Man: Universo Araña #4: Spider-Man: La Saga del Clon", categoria: "marvel-edad-moderna-1", editorial: "ovni", subtipo: "spider-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/04_la_saga_del_clon_cov1-cd59dca782de1541b316629984915515-1024-1024.webp" },
     { titulo: "Coleccion Spider-Man: Universo Araña #10: Venom: Planeta de Simbiontes", categoria: "marvel-edad-moderna-1", editorial: "ovni", subtipo: "venom", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/10_planeta_de_simbiontes_cov1-928457b65a38e7452016656336083401-640-0.webp" },
+    { titulo: "Must Have #31: Avengers Forever", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/33/30/92d0da5c12e840cda86ed68bfa3f4845.jpg" },
+    { titulo: "Must Have #12: Avengers: Ultron Ilimitado", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/13/3e/56aeb77d25da4aabbac55a37ef08ceb3.jpg" },
     { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #20: Daredevil: Demonio Guardian", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "daredevil", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_687813-MLA70564553399_072023-O.webp" },
     { titulo: "Must Have #33: Daredevil: Diablo Guardian", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "daredevil", tipo: "Cómic", poster: "https://i1.whakoom.com/small/28/23/3f3372aa0da04147b7b2e846bc83956b.jpg" },
+    { titulo: "Marvel Excelsior #25: Avengers: El Enemigo Interior", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/36/3e/9b49ecf0c51f490c9466f810cd710edb.jpg" },
     // --- EDAD MODERNA II ---
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #23: Wolverine: Origen", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "wolverine", tipo: "Cómic", poster: "https://i1.whakoom.com/small/2c/2e/71396a47c73a4b4ab3b6c854e4e89cae.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #16: Punisher: Bienvenido a Casa Frank Parte 1", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "punisher", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2023/10/Bienvenido-A-Casa-frank-1.webp" },
@@ -2465,6 +2467,19 @@ const listaMedia = [
 // COLECCIONES (fichas que se abren y muestran progreso)
 // ==========================================
 const colecciones = [
+    {
+        id: "pennyworth",
+        titulo: "Pennyworth",
+        categoria: "dc-multiverso",
+        esSerie: true,
+        etiqueta: "Serie",
+        poster: "https://image.tmdb.org/t/p/original/mEHMfWe7pCWMelEkdrtRvVULopT.jpg",
+        peliculas: [
+            { titulo: "Pennyworth Temporada 1", fichaTecnicaId: "pennyworth", poster: "https://static.wikia.nocookie.net/pennyworth/images/0/04/Pennyworth_Poster.jpg" },
+            { titulo: "Pennyworth Temporada 2", fichaTecnicaId: "pennyworth", poster: "https://m.media-amazon.com/images/M/MV5BYjJkNjk5ZjgtOGY1NS00NmQ2LWE2ZDYtNGZmOWZlNTM0YWRmXkEyXkFqcGc@._V1_.jpg" },
+            { titulo: "Pennyworth Temporada 3", fichaTecnicaId: "pennyworth", poster: "https://rumblevfx.com/wp-content/uploads/2022/09/pennyworth3_poster001_v001.jpg" }
+        ]
+    },
     {
         id: "el-inmortal-hulk",
         titulo: "El Inmortal Hulk",
@@ -4889,7 +4904,7 @@ const colecciones = [
         peliculas: [
             { titulo: "Dragon Ball Xenoverse", fichaTecnicaId: "dragon-ball-xenoverse", poster: "https://m.media-amazon.com/images/M/MV5BYzMwZWUwODEtMTU3Zi00MDYwLTg1MjUtNGVlMDVlZDBkNGZmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
             { titulo: "Dragon Ball Xenoverse 2", poster: "https://myhotposters.com/cdn/shop/products/mL2170_361002e7-d15c-4843-9c0d-f63f9c575649_1024x1024.jpg?v=1748535523" },
-            { titulo: "Dragon Ball FighterZ", poster: "https://m.media-amazon.com/images/M/MV5BY2E1YmJjMzktZTkwNC00ODY1LWIyNzMtMWVmZWRhOWY4MjE0XkEyXkFqcGc@._V1_.jpg" },
+            { titulo: "Dragon Ball FighterZ", fichaTecnicaId: "dragon-ball-fighterz", poster: "https://m.media-amazon.com/images/M/MV5BY2E1YmJjMzktZTkwNC00ODY1LWIyNzMtMWVmZWRhOWY4MjE0XkEyXkFqcGc@._V1_.jpg" },
             { titulo: "Dragon Ball Kakarot", poster: "https://m.media-amazon.com/images/M/MV5BODNkY2M4M2MtODY0ZS00MzJiLWEzOTktMjEzZmMwM2ZmN2ZmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
             { titulo: "Dragon Ball: The Breakers", poster: "https://image.api.playstation.com/vulcan/ap/rnd/202207/1919/mBaTykC1xLU8XfSKelYnOOnc.png" },
             { titulo: "Dragon Ball Sparkling Zero", poster: "https://m.media-amazon.com/images/M/MV5BMzQ4ZGY4MGYtZTA0NC00MWFiLTkwNjgtNmQ2ZDFlMzgzOTJmXkEyXkFqcGc@._V1_.jpg" }
@@ -5398,6 +5413,7 @@ function renderizarColecciones() {
         "dc-videojuegos": "seccion-dc-videojuegos",
         "dc-personajes": "seccion-dc-personajes",
         "batman-personaje": "seccion-batman-personaje",
+        "pennyworth": "seccion-pennyworth",
         "batman-contiene-comics": "seccion-batman-contiene-comics",
         "el-inmortal-hulk": "seccion-el-inmortal-hulk",
         "batman-contiene-peliculas": "seccion-batman-contiene-peliculas",
@@ -5899,6 +5915,7 @@ function renderizarContenido() {
         "sydney-sweeney": "seccion-sydney-sweeney",
         "glen-powell": "seccion-glen-powell",
         "batman-personaje": "seccion-batman-personaje",
+        "pennyworth": "seccion-pennyworth",
         "batman-contiene-comics": "seccion-batman-contiene-comics",
         "el-inmortal-hulk": "seccion-el-inmortal-hulk",
         "batman-contiene-peliculas": "seccion-batman-contiene-peliculas",
@@ -10707,6 +10724,53 @@ document.querySelectorAll('.btn-volver-dlc-individual-ac4').forEach(boton => {
     });
 });
 
+const btnVolverFichaPennyworth = document.getElementById('btn-volver-ficha-pennyworth');
+if (btnVolverFichaPennyworth) {
+    btnVolverFichaPennyworth.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-pennyworth');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-pennyworth'));
+    });
+}
+
+const btnVolverFichaBirdsOfPrey2002 = document.getElementById('btn-volver-ficha-birds-of-prey-2002');
+if (btnVolverFichaBirdsOfPrey2002) {
+    btnVolverFichaBirdsOfPrey2002.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-birds-of-prey-2002');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-dc-multiverso'));
+    });
+}
+
+const btnVolverFichaDragonBallFighterz = document.getElementById('btn-volver-ficha-dragon-ball-fighterz');
+if (btnVolverFichaDragonBallFighterz) {
+    btnVolverFichaDragonBallFighterz.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-dragon-ball-fighterz');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-dragonball-videojuegos'));
+    });
+}
+const btnDlcDragonBallFighterz = document.getElementById('btn-dlc-dragon-ball-fighterz');
+if (btnDlcDragonBallFighterz) {
+    btnDlcDragonBallFighterz.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-dragon-ball-fighterz'));
+    });
+}
+const btnVolverDlcDragonBallFighterz = document.getElementById('btn-volver-dlc-dragon-ball-fighterz');
+if (btnVolverDlcDragonBallFighterz) {
+    btnVolverDlcDragonBallFighterz.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-dragon-ball-fighterz'));
+    });
+}
+document.querySelectorAll('.btn-volver-dlc-individual-dbfz').forEach(boton => {
+    boton.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-dragon-ball-fighterz'));
+    });
+});
+
 const btnVolverFichaLegoJurassicWorld = document.getElementById('btn-volver-ficha-lego-jurassic-world');
 
 
@@ -10827,7 +10891,10 @@ const FICHAS_TECNICAS_TITULOS = {
     "justice-society-wwii": "Justice Society: World War II",
     "batman-long-halloween-p1": "Batman: The Long Halloween - Part One",
     "batman-long-halloween-p2": "Batman: The Long Halloween - Part Two",
-    "assassins-creed-4": "Assassin's Creed IV: Black Flag"
+    "assassins-creed-4": "Assassin's Creed IV: Black Flag",
+    "pennyworth": "Pennyworth",
+    "birds-of-prey-2002": "Birds of Prey (2002)",
+    "dragon-ball-fighterz": "Dragon Ball FighterZ"
 };
 
 // Casos con id de sección no estándar (no siguen "seccion-ficha-<id>").
@@ -11707,6 +11774,32 @@ const REPARTO_PELICULAS = {
             { actor: "David Dastmalchian", personaje: "Poison Ivy (voz)" },
             { actor: "Robin Atkin Downes", personaje: "Sombrerero Loco (voz)" }
         ]
+    },
+    "pennyworth": {
+        director: "Danny Cannon",
+        elenco: [
+            { actor: "Jack Bannon", personaje: "Alfred Pennyworth" },
+            { actor: "Ben Aldridge", personaje: "Thomas Wayne" },
+            { actor: "Emma Paetz", personaje: "Martha Kane" },
+            { actor: "Ryan Fletcher", personaje: "Dave Boy" },
+            { actor: "Hainsley Bennett", personaje: "Bazza" },
+            { actor: "Dorothy Atkinson", personaje: "Mary Pennyworth" },
+            { actor: "Polly Walker", personaje: "Peggy Sykes" },
+            { actor: "Ramon Tikaram", personaje: "Lord Harwood" },
+            { actor: "Harriet Slater", personaje: "Sandra" },
+            { actor: "Paloma Faith", personaje: "Bet Sykes" }
+        ]
+    },
+    "birds-of-prey-2002": {
+        director: "Laeta Kalogridis (creadora)",
+        elenco: [
+            { actor: "Dina Meyer", personaje: "Barbara Gordon / Oracle" },
+            { actor: "Ashley Scott", personaje: "Helena Kyle / Huntress" },
+            { actor: "Rachel Skarsten", personaje: "Dinah Lance" },
+            { actor: "Shemar Moore", personaje: "Jesse Reese" },
+            { actor: "Ian Abercrombie", personaje: "Alfred Pennyworth" },
+            { actor: "Mia Sara", personaje: "Dra. Harleen Quinzel / Harley Quinn" }
+        ]
     }
 };
 
@@ -12406,6 +12499,13 @@ const btnVolverBatmanPersonaje = document.getElementById('btn-volver-batman-pers
 if (btnVolverBatmanPersonaje) {
     btnVolverBatmanPersonaje.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-dc-personajes'));
+    });
+}
+
+const btnVolverPennyworth = document.getElementById('btn-volver-pennyworth');
+if (btnVolverPennyworth) {
+    btnVolverPennyworth.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dc-multiverso'));
     });
 }
 
