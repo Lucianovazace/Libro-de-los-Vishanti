@@ -1873,3 +1873,19 @@ h2 {
 .mipc-ok { color: #2ecc71; font-weight: bold; }
 .mipc-falta { color: #e74c3c; font-weight: bold; }
 .mipc-manual { color: #f1c40f; }
+
+
+.nota-orden-seccion {
+    font-size: 13px;
+    color: #888;
+    text-align: center;
+    margin: -6px 0 14px;
+}
+
+
+.fecha-juego {
+    font-size: 12px;
+    color: #9aa0a6;
+    text-align: center;
+    margin: 2px 0 6px;
+}

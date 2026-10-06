@@ -50,13 +50,13 @@ const listaMedia = [
     { titulo: "Logan", categoria: "doomsday", tier: 1, tipo: "Película", fichaTecnicaId: "logan-1", poster: "https://www.originalfilmart.com/cdn/shop/products/Logan_2017_teaser_original_film_art_5000x.webp?v=1677273260" },
     { titulo: "Avengers: Infinity War", categoria: "doomsday", tier: 1, tipo: "Película", fichaTecnicaId: "avengers-infinity-war", poster: "https://www.blackfilm.com/read/wp-content/uploads/2017/11/Avengers-Infinity-War-Teaser-Poster.jpg" },
     { titulo: "Deadpool 2", categoria: "doomsday", tier: 4, tipo: "Película", fichaTecnicaId: "deadpool-2", poster: "https://preview.redd.it/new-deadpool-2-poster-v0-878r7e1hmle01.jpg?auto=webp&s=2f03e75ff6a45766bbbf16a95cbe0ecc3d6c7046" },
-    { titulo: "Avengers: Endgame", categoria: "doomsday", tier: 1, tipo: "Película", poster: "https://cdn.marvel.com/content/2x/MLou2_Teaser_1-Sht_v6_Lg.jpg" },
+    { titulo: "Avengers: Endgame", categoria: "doomsday", tier: 1, tipo: "Película", fichaTecnicaId: "avengers-endgame", poster: "https://cdn.marvel.com/content/2x/MLou2_Teaser_1-Sht_v6_Lg.jpg" },
     { titulo: "X-Men Dark Phoenix", categoria: "doomsday", tier: 4, tipo: "Película", fichaTecnicaId: "xmen-dark-phoenix", poster: "https://m.media-amazon.com/images/I/81SP4dCrQyL.jpg" },
-    { titulo: "The New Mutants", categoria: "doomsday", tier: 4, tipo: "Película", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5OVOtNIm-bqGtCUI1SICMA58EJGV7_5_y7oDu9Zf27WcV6YdCE64CVQSf&s=10" },
-    { titulo: "WandaVision", categoria: "doomsday", tier: 1, tipo: "Serie", poster: "https://picarouno.com/wp-content/uploads/2025/12/wandavision_001-1037x1536.jpg" },
-    { titulo: "The Falcon and The Winter Soldier", categoria: "doomsday", tier: 3, tipo: "Serie", poster: "https://www.hellofriki.com/wp-content/uploads/2020/12/falcon-soldado-de-invierno-serie-poste-691x1024.jpg" },
+    { titulo: "The New Mutants", categoria: "doomsday", tier: 4, tipo: "Película", fichaTecnicaId: "the-new-mutants", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5OVOtNIm-bqGtCUI1SICMA58EJGV7_5_y7oDu9Zf27WcV6YdCE64CVQSf&s=10" },
+    { titulo: "WandaVision", categoria: "doomsday", tier: 1, tipo: "Serie", fichaTecnicaId: "wandavision", poster: "https://picarouno.com/wp-content/uploads/2025/12/wandavision_001-1037x1536.jpg" },
+    { titulo: "The Falcon and The Winter Soldier", categoria: "doomsday", tier: 3, tipo: "Serie", fichaTecnicaId: "falcon-winter-soldier", poster: "https://www.hellofriki.com/wp-content/uploads/2020/12/falcon-soldado-de-invierno-serie-poste-691x1024.jpg" },
     { titulo: "Loki (Temporada 1)", categoria: "doomsday", tier: 1, tipo: "Serie", poster: "https://m.media-amazon.com/images/I/81fdQ6kl4JS.jpg" },
-    { titulo: "Shang-Chi", categoria: "doomsday", tier: 3, tipo: "Película", poster: "https://m.media-amazon.com/images/I/81orh-NSiTL.jpg" },
+    { titulo: "Shang-Chi", categoria: "doomsday", tier: 3, tipo: "Película", fichaTecnicaId: "shang-chi", poster: "https://m.media-amazon.com/images/I/81orh-NSiTL.jpg" },
     { titulo: "Spider-Man: No Way Home", categoria: "doomsday", tier: 2, tipo: "Película", poster: "https://www.cinemascomics.com/wp-content/uploads/2022/01/poster-Spider-man-no-way-home.jpg" },
     { titulo: "Dr. Strange: Multiverse of Madness", categoria: "doomsday", tier: 1, tipo: "Película", poster: "https://img.buzzfeed.com/buzzfeed-static/static/2022-02/18/13/asset/e9954361afcd/sub-buzz-772-1645190837-7.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto" },
     { titulo: "Ms. Marvel", categoria: "doomsday", tier: 3, tipo: "Serie", poster: "https://lumiere-a.akamaihd.net/v1/images/ms_979c8372.jpeg" },
@@ -81,28 +81,28 @@ const listaMedia = [
     { titulo: "Iron Man 3", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 7, crono: 10, fichaTecnicaId: "iron-man-3", poster: "https://collider.com/wp-content/uploads/iron-man-3-poster.jpg" },
     { titulo: "Thor: The Dark World", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 8, crono: 9, fichaTecnicaId: "thor-dark-world", poster: "https://shoptrends.com/pub/media/catalog/product/p/o/pod5973-1.jpg" },
     { titulo: "Captain America: The Winter Soldier", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 9, crono: 11, fichaTecnicaId: "capitan-america-winter-soldier", poster: "https://www.hollywoodreporter.com/wp-content/uploads/2014/01/captain_america_the_winter_soldier.jpg" },
-    { titulo: "Guardians of The Galaxy", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 10, crono: 12, poster: "https://collider.com/wp-content/uploads/guardians-of-the-galaxy-teaser-poster.jpg" },
+    { titulo: "Guardians of The Galaxy", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 10, crono: 12, fichaTecnicaId: "guardians-of-the-galaxy-1", poster: "https://collider.com/wp-content/uploads/guardians-of-the-galaxy-teaser-poster.jpg" },
     { titulo: "Avengers: Age of Ultron", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 11, crono: 14, fichaTecnicaId: "avengers-age-of-ultron", poster: "https://collider.com/wp-content/uploads/avengers-age-of-ultron-poster1.jpg" },
-    { titulo: "Ant-Man", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 12, crono: 15, poster: "https://m.media-amazon.com/images/I/81rPJLNidFL.jpg" },
+    { titulo: "Ant-Man", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 12, crono: 15, fichaTecnicaId: "ant-man-1", poster: "https://m.media-amazon.com/images/I/81rPJLNidFL.jpg" },
     { titulo: "Captain America: Civil War", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 13, crono: 16, fichaTecnicaId: "capitan-america-civil-war", poster: "https://heroichollywood.com/wp-content/uploads/2015/11/img-26.jpg" },
     { titulo: "Doctor Strange", categoria: "mcu-infinito", tipo: "Película", fichaTecnicaId: "doctor-strange-1", ordenSalida: 14, crono: 20, poster: "https://uruloki.org/felipeblog/images2016/20160412-doctorstrange.jpg" },
-    { titulo: "Guardians of the Galaxy Vol. 2", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 15, crono: 13, poster: "https://external-preview.redd.it/official-guardians-of-the-galaxy-vol-2-teaser-poster-v0-TjDcWtSjsp7PD12icRxi9UVVWL-38pmlw29-42nNvOI.jpg?auto=webp&s=da143bea206173e3cc2b0d5a4e8f2f84b24a994e" },
+    { titulo: "Guardians of the Galaxy Vol. 2", categoria: "mcu-infinito", tipo: "Película", fichaTecnicaId: "guardians-of-the-galaxy-2", ordenSalida: 15, crono: 13, poster: "https://external-preview.redd.it/official-guardians-of-the-galaxy-vol-2-teaser-poster-v0-TjDcWtSjsp7PD12icRxi9UVVWL-38pmlw29-42nNvOI.jpg?auto=webp&s=da143bea206173e3cc2b0d5a4e8f2f84b24a994e" },
     { titulo: "Spider-Man: Homecoming", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 16, crono: 19, fichaTecnicaId: "spiderman-homecoming", poster: "https://m.media-amazon.com/images/I/A1mjWWH6mFL.jpg" },
-    { titulo: "Thor: Ragnarok", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 17, crono: 21, poster: "https://tecolotito.elsiglodetorreon.com.mx/cdn-cgi/image/format=webp,width=1546,quality=75/i/2017/04/929651.jpeg" },
+    { titulo: "Thor: Ragnarok", categoria: "mcu-infinito", tipo: "Película", fichaTecnicaId: "thor-ragnarok", ordenSalida: 17, crono: 21, poster: "https://tecolotito.elsiglodetorreon.com.mx/cdn-cgi/image/format=webp,width=1546,quality=75/i/2017/04/929651.jpeg" },
     { titulo: "Black Panther", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 18, crono: 18, fichaTecnicaId: "black-panther-1", poster: "https://www.blackfilm.com/read/wp-content/uploads/2017/06/Black-Panther-Teaser-Poster.jpg" },
-    { titulo: "Ant-Man and The Wasp", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 19, crono: 22, poster: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLtqLiFTTgBzM0lEPQBOPMngE9PDz1hpIhLddHtm40y0kBH7ouoG1cPiHTqMwY8-3IPEL-SknAxPA_RrQHogXsiOm8vNQn5BlFaOuMq8k6rKgAgGE0kxtGnOH8SuLcSXQ_sTkE3bHTADk/s1600/Ant-Man_and_The_Wasp_poster_LatAm.JPG" },
+    { titulo: "Ant-Man and The Wasp", categoria: "mcu-infinito", tipo: "Película", fichaTecnicaId: "ant-man-and-the-wasp", ordenSalida: 19, crono: 22, poster: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLtqLiFTTgBzM0lEPQBOPMngE9PDz1hpIhLddHtm40y0kBH7ouoG1cPiHTqMwY8-3IPEL-SknAxPA_RrQHogXsiOm8vNQn5BlFaOuMq8k6rKgAgGE0kxtGnOH8SuLcSXQ_sTkE3bHTADk/s1600/Ant-Man_and_The_Wasp_poster_LatAm.JPG" },
     { titulo: "Avengers: Infinity War", categoria: "mcu-infinito", tipo: "Película", fichaTecnicaId: "avengers-infinity-war", ordenSalida: 20, crono: 23, poster: "https://www.blackfilm.com/read/wp-content/uploads/2017/11/Avengers-Infinity-War-Teaser-Poster.jpg" },
-    { titulo: "Captain Marvel", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 21, crono: 3, poster: "https://cdn.marvel.com/content/2x/ow_character_1-sht_brie_v3_lg.webp" },
-    { titulo: "Avengers: Endgame", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 22, crono: 24, poster: "https://cdn.marvel.com/content/2x/MLou2_Teaser_1-Sht_v6_Lg.jpg" },
+    { titulo: "Captain Marvel", categoria: "mcu-infinito", tipo: "Película", fichaTecnicaId: "captain-marvel", ordenSalida: 21, crono: 3, poster: "https://cdn.marvel.com/content/2x/ow_character_1-sht_brie_v3_lg.webp" },
+    { titulo: "Avengers: Endgame", categoria: "mcu-infinito", tipo: "Película", fichaTecnicaId: "avengers-endgame", ordenSalida: 22, crono: 24, poster: "https://cdn.marvel.com/content/2x/MLou2_Teaser_1-Sht_v6_Lg.jpg" },
 
     // --- MCU: SAGA DEL MULTIVERSO ---
-    { titulo: "Spider-Man: Far From Home", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 23, crono: 25, fichaTecnicaId: "spiderman-far-from-home", poster: "https://cdn.marvel.com/content/2x/ffh_poster_onesheet.webp" },
-    { titulo: "WandaVision", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 24, crono: 27, poster: "https://picarouno.com/wp-content/uploads/2025/12/wandavision_001-1037x1536.jpg" },
-    { titulo: "The Falcon and The Winter Soldier", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 25, crono: 28, poster: "https://www.hellofriki.com/wp-content/uploads/2020/12/falcon-soldado-de-invierno-serie-poste-691x1024.jpg" },
-    { titulo: "Loki (Temporada 1)", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 26, crono: 29, poster: "https://m.media-amazon.com/images/I/81fdQ6kl4JS.jpg" },
-    { titulo: "Black Widow", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 27, crono: 17, poster: "https://m.media-amazon.com/images/M/MV5BNjZjOGVhOTEtNzY4Mi00MjQzLTlmYjktNzMyMDExMWJlODEwXkEyXkFqcGc@.V1.jpg" },
-    { titulo: "Shang-Chi", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 28, crono: 31, poster: "https://m.media-amazon.com/images/I/81orh-NSiTL.jpg" },
-    { titulo: "Eternals", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 29, crono: 32, poster: "https://image.tmdb.org/t/p/original/vgUZo9aVvRvCQFXwZC9zq3qCZT9.jpg" },
+    { titulo: "Spider-Man: Far From Home", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 23, crono: 29, fichaTecnicaId: "spiderman-far-from-home", poster: "https://cdn.marvel.com/content/2x/ffh_poster_onesheet.webp" },
+    { titulo: "WandaVision", categoria: "mcu-multiverso", tipo: "Serie", fichaTecnicaId: "wandavision", ordenSalida: 24, crono: 27, poster: "https://picarouno.com/wp-content/uploads/2025/12/wandavision_001-1037x1536.jpg" },
+    { titulo: "The Falcon and The Winter Soldier", categoria: "mcu-multiverso", tipo: "Serie", fichaTecnicaId: "falcon-winter-soldier", ordenSalida: 25, crono: 28, poster: "https://www.hellofriki.com/wp-content/uploads/2020/12/falcon-soldado-de-invierno-serie-poste-691x1024.jpg" },
+    { titulo: "Loki (Temporada 1)", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 26, crono: 24.3, poster: "https://m.media-amazon.com/images/I/81fdQ6kl4JS.jpg" },
+    { titulo: "Black Widow", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "black-widow-2021", ordenSalida: 27, crono: 17, poster: "https://m.media-amazon.com/images/M/MV5BNjZjOGVhOTEtNzY4Mi00MjQzLTlmYjktNzMyMDExMWJlODEwXkEyXkFqcGc@.V1.jpg" },
+    { titulo: "Shang-Chi", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "shang-chi", ordenSalida: 28, crono: 31, poster: "https://m.media-amazon.com/images/I/81orh-NSiTL.jpg" },
+    { titulo: "Eternals", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "eternals", ordenSalida: 29, crono: 32, poster: "https://image.tmdb.org/t/p/original/vgUZo9aVvRvCQFXwZC9zq3qCZT9.jpg" },
     { titulo: "Hawkeye", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 30, crono: 33, poster: "https://lumiere-a.akamaihd.net/v1/images/unknown_61ca7b47.png" },
     { titulo: "Spider-Man: No Way Home", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 31, crono: 35, poster: "https://www.cinemascomics.com/wp-content/uploads/2022/01/poster-Spider-man-no-way-home.jpg" },
     { titulo: "Moon Knight", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 32, crono: 36, poster: "https://m.media-amazon.com/images/I/71pAwt4KT6L.jpg" },
@@ -115,7 +115,7 @@ const listaMedia = [
     { titulo: "Black Panther: Wakanda Forever", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 39, crono: 41, poster: "https://artofthemovies.co.uk/cdn/shop/products/IMG_0184-338579.jpg?v=1668148930&width=900" },
     { titulo: "Ant-Man and The Wasp: Quantumania", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 40, crono: 42, poster: "https://lumiere-a.akamaihd.net/v1/images/antman_b843a521.jpeg?region=0,0,658,898" },
     { titulo: "Guardians of the Galaxy Vol. 3", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 41, crono: 43, poster: "https://assets-prd.ignimgs.com/2022/12/01/guardians-of-the-galaxy-vol-3-1669932411159.jfif" },
-    { titulo: "Loki (Temporada 2)", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 42, crono: 44, poster: "https://preview.redd.it/official-poster-for-loki-season-2-v0-mjczxxkptafb1.jpg?auto=webp&s=b52be74ed745f4c481074ffd739feb43c7c0214f" },
+    { titulo: "Loki (Temporada 2)", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 42, crono: 24.6, poster: "https://preview.redd.it/official-poster-for-loki-season-2-v0-mjczxxkptafb1.jpg?auto=webp&s=b52be74ed745f4c481074ffd739feb43c7c0214f" },
     { titulo: "Echo", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 43, crono: 34, poster: "https://m.media-amazon.com/images/I/81f3aW-ovVL.jpg" },
     { titulo: "Deadpool & Wolverine", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 44, crono: 45, poster: "https://m.media-amazon.com/images/I/61AwaBKmGXL.jpg" },
     { titulo: "Captain America: Brave New World", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 45, crono: 46, poster: "https://i.pinimg.com/736x/19/85/1d/19851d768bfcc73a6942ae30c69f03a8.jpg" },
@@ -156,7 +156,7 @@ const listaMedia = [
     { titulo: "Logan", categoria: "fox-xmen", tipo: "Película", fichaTecnicaId: "logan-1", crono: 13, poster: "https://www.originalfilmart.com/cdn/shop/products/Logan_2017_teaser_original_film_art_5000x.webp?v=1677273260" },
     { titulo: "Deadpool", categoria: "fox-xmen", tipo: "Película", fichaTecnicaId: "deadpool-1", crono: 10, poster: "https://m.media-amazon.com/images/I/71SBA4bdx8L._AC_UF894,1000_QL80_AIweblab1381794,T1_.jpg" },
     { titulo: "Deadpool 2", categoria: "fox-xmen", tipo: "Película", fichaTecnicaId: "deadpool-2", crono: 11, poster: "https://preview.redd.it/new-deadpool-2-poster-v0-878r7e1hmle01.jpg?auto=webp&s=2f03e75ff6a45766bbbf16a95cbe0ecc3d6c7046" },
-    { titulo: "The New Mutants", categoria: "fox-xmen", tipo: "Película", crono: 12, poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5OVOtNIm-bqGtCUI1SICMA58EJGV7_5_y7oDu9Zf27WcV6YdCE64CVQSf&s=10" },
+    { titulo: "The New Mutants", categoria: "fox-xmen", tipo: "Película", fichaTecnicaId: "the-new-mutants", crono: 12, poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5OVOtNIm-bqGtCUI1SICMA58EJGV7_5_y7oDu9Zf27WcV6YdCE64CVQSf&s=10" },
 
     // --- FOX: CUATRO FANTÁSTICOS ---
     { titulo: "Fantastic Four (2005)", categoria: "fox-ff", subtipo: "2000", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71nlKnBmb4L.jpg" },
@@ -175,30 +175,30 @@ const listaMedia = [
     { titulo: "Venom", categoria: "sony-ssu", tipo: "Película", fichaTecnicaId: "venom-1", poster: "https://ew.com/thmb/ZB6f77bkGWakc1G6ZMf84TWHfC8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/venom-dom-vnm_online_1sht_tsr_rd3dimax_01_rgb-2000-1aa5bc8ab6bf4dc38a719c55500ddbde.jpg" },
     { titulo: "Venom: Let There Be Carnage", categoria: "sony-ssu", tipo: "Película", poster: "https://m.media-amazon.com/images/I/91Aoh6wnnJL.jpg" },
     { titulo: "Morbius", categoria: "sony-ssu", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61H81z3Iu-L._AC_UF894,1000_QL80_.jpg" },
-    { titulo: "Madame Web", categoria: "sony-ssu", tipo: "Película", poster: "https://m.media-amazon.com/images/S/pv-target-images/cb36ea6f3f53777aea24eec9d1560470e6c6d1f260abc72bcb13ae9bccfcb678.jpg" },
+    { titulo: "Madame Web", categoria: "sony-ssu", tipo: "Película", fichaTecnicaId: "madame-web", poster: "https://m.media-amazon.com/images/S/pv-target-images/cb36ea6f3f53777aea24eec9d1560470e6c6d1f260abc72bcb13ae9bccfcb678.jpg" },
     { titulo: "Venom: The Last Dance", categoria: "sony-ssu", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/316750.jpg" },
     { titulo: "Kraven the Hunter", categoria: "sony-ssu", tipo: "Película", poster: "https://www.infobae.com/new-resizer/TCpnPIXVaCBLAgI9qPNyP_LHIlI=/arc-anglerfish-arc2-prod-infobae/public/TIWZB56GRBGONDHJMXY5NJFWMY.jpg" },
 
     // --- DC COMICS (DCU, DCEU Principal, The Batman, Joker) ---
     { titulo: "The Suicide Squad", categoria: "dcu", tipo: "Película", fichaTecnicaId: "the-suicide-squad-2021", poster: "https://postercity.com.ar/wp-content/uploads/2021/10/the-SUICIDE-SQUAD-60-X-90.jpg" },
-    { titulo: "Peacemaker Temporada 1", categoria: "dcu", tipo: "Serie", fichaTecnicaId: "peacemaker-t1", poster: "http://www.impawards.com/tv/posters/peacemaker.jpg" },
+    { titulo: "Peacemaker Temporada 1", categoria: "dcu", tipo: "Serie", fichaTecnicaId: "peacemaker-t1", poster: "https://image.tmdb.org/t/p/w500/yb4F1Oocq8GfQt6iIuAgYEBokhG.jpg" },
     { titulo: "Blue Beetle", categoria: "dcu", tipo: "Película", fichaTecnicaId: "blue-beetle-2023", poster: "https://www.awn.com/sites/default/files/styles/original/public/image/attached/1058733-bbeetle1-1280.jpg?itok=NxX9BPXh" },
     { titulo: "Creature Commandos", categoria: "dcu", tipo: "Animación", fichaTecnicaId: "creature-commandos", poster: "https://static.dc.com/2024-11/ProdPage_CreatureCommandos_Thumb.jpg" },
     { titulo: "Superman", categoria: "dcu", tipo: "Película", fichaTecnicaId: "superman-2025", poster: "https://m.media-amazon.com/images/I/712N7RdrlTL.jpg" },
-    { titulo: "Peacemaker Temporada 2", categoria: "dcu", tipo: "Serie", fichaTecnicaId: "peacemaker-t2", poster: "http://www.impawards.com/tv/posters/peacemaker_ver16.jpg" },
+    { titulo: "Peacemaker Temporada 2", categoria: "dcu", tipo: "Serie", fichaTecnicaId: "peacemaker-t2", poster: "https://image.tmdb.org/t/p/w500/yb4F1Oocq8GfQt6iIuAgYEBokhG.jpg" },
     { titulo: "Supergirl", categoria: "dcu", tipo: "Película", fichaTecnicaId: "supergirl-2026", poster: "https://cdn.kinocheck.com/i/1sxsgm3x7s.jpg" },
     { titulo: "Lanterns", categoria: "dcu", tipo: "Serie", fichaTecnicaId: "lanterns-2026", poster: "https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2026/06/Screenshot_20260604-112025_Threads.jpg" },
     
     // --- DCEU DE ZACK SNYDER (Con el orden pedido por Lando) ---
-    { titulo: "Man of Steel", categoria: "dceu-snyder", tipo: "Película", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtrrTBfKpVp5mWI445MSXcFokIqvkHM737oEbS9U38ayvSDd4eIG8IVpkn&s=10" },
-    { titulo: "Batman v Superman", categoria: "dceu-snyder", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81o7zaih1mL._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Man of Steel", categoria: "dceu-snyder", tipo: "Película", fichaTecnicaId: "man-of-steel", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtrrTBfKpVp5mWI445MSXcFokIqvkHM737oEbS9U38ayvSDd4eIG8IVpkn&s=10" },
+    { titulo: "Batman v Superman", categoria: "dceu-snyder", tipo: "Película", fichaTecnicaId: "batman-v-superman", poster: "https://m.media-amazon.com/images/I/81o7zaih1mL._AC_UF894,1000_QL80_.jpg" },
     { titulo: "Suicide Squad", categoria: "dceu-snyder", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/sk3FZgh3sRrmr8vyhaitNobMcfh.jpg" },
     { titulo: "Wonder Woman", categoria: "dceu-snyder", tipo: "Película", poster: "https://im.ziffdavisinternational.com/ign_es/screenshot/default/wonder-woman-sp_q9yz.jpg" },
     { titulo: "Zack Snyder's Justice League", categoria: "dceu-snyder", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNDA0MzM5YTctZTU2My00NGQ5LWE2NTEtNDM0MjZmMDBkOTZkXkEyXkFqcGc@._V1_.jpg" },
     
     // --- DCEU PRINCIPAL (orden de estreno) ---
-    { titulo: "Man of Steel", categoria: "dceu-principal", tipo: "Película", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtrrTBfKpVp5mWI445MSXcFokIqvkHM737oEbS9U38ayvSDd4eIG8IVpkn&s=10" },
-    { titulo: "Batman v Superman", categoria: "dceu-principal", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81o7zaih1mL._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Man of Steel", categoria: "dceu-principal", tipo: "Película", fichaTecnicaId: "man-of-steel", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtrrTBfKpVp5mWI445MSXcFokIqvkHM737oEbS9U38ayvSDd4eIG8IVpkn&s=10" },
+    { titulo: "Batman v Superman", categoria: "dceu-principal", tipo: "Película", fichaTecnicaId: "batman-v-superman", poster: "https://m.media-amazon.com/images/I/81o7zaih1mL._AC_UF894,1000_QL80_.jpg" },
     { titulo: "Suicide Squad", categoria: "dceu-principal", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/sk3FZgh3sRrmr8vyhaitNobMcfh.jpg" },
     { titulo: "Wonder Woman", categoria: "dceu-principal", tipo: "Película", poster: "https://im.ziffdavisinternational.com/ign_es/screenshot/default/wonder-woman-sp_q9yz.jpg" },
     { titulo: "Justice League", categoria: "dceu-principal", tipo: "Película", poster: "https://www.guioteca.com/comics/files/2017/10/justice-league-final-poster-1039055.jpeg" },
@@ -240,9 +240,8 @@ const listaMedia = [
     { titulo: "Assassin's Creed: Revelations", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 4, crono: 8, fichaTecnicaId: "assassins-creed-revelations", poster: "https://m.media-amazon.com/images/M/MV5BOWM3YjRkM2MtZmU3My00OTc4LTg0MDMtMmEzYjc3NWNjMjIxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
     { titulo: "Assassin's Creed III", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 5, crono: 12, fichaTecnicaId: "assassins-creed-3", poster: "https://static.posters.cz/image/1300/12811.jpg" },
     { titulo: "Assassin's Creed IV: Black Flag", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 6, crono: 10, fichaTecnicaId: "assassins-creed-4", poster: "https://mir-s3-cdn-cf.behance.net/project_modules/hd/4c4b7612856287.5626e31d6576f.jpg" },
-    { titulo: "Assassin's Creed Unity", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 6.5, crono: 10.5, fichaTecnicaId: "assassins-creed-unity", poster: "https://store-images.s-microsoft.com/image/apps.51396.69296710537599543.9e7afb5a-8195-4e25-bfc8-08e94d687949.fc8b8b4a-70e0-4d84-a5c8-a91fd9773feb" },
-    { titulo: "Assassin's Creed: Rogue", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 7, crono: 11, poster: "https://images.gog.com/ec9bdb99d06eb876d115146abd005e9fa18a586f69efcc87dd874e483317e941_glx_vertical_cover.webp?namespace=gamesdb" },
-    { titulo: "Assassin's Creed: Unity", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 8, crono: 13, poster: "https://m.media-amazon.com/images/M/MV5BMDY1NmE5YzgtYTRiYS00ZDVlLTkxNDktYzU2YzIyZWE3NjQ2XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Assassin's Creed: Rogue", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 7, crono: 11, fichaTecnicaId: "assassins-creed-rogue", poster: "https://images.gog.com/ec9bdb99d06eb876d115146abd005e9fa18a586f69efcc87dd874e483317e941_glx_vertical_cover.webp?namespace=gamesdb" },
+    { titulo: "Assassin's Creed: Unity", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 8, crono: 13, fichaTecnicaId: "assassins-creed-unity", poster: "https://m.media-amazon.com/images/M/MV5BMDY1NmE5YzgtYTRiYS00ZDVlLTkxNDktYzU2YzIyZWE3NjQ2XkEyXkFqcGc@._V1_.jpg" },
     { titulo: "Assassin's Creed: Syndicate", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 9, crono: 14, poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzNM-CgSDkidzczZOhBHxIkV4aJwbZG1Z-42nX5F8Hb-XuMCx05_cZT8dl&s=10" },
     { titulo: "Assassin's Creed: Origins", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 10, crono: 2, poster: "https://m.media-amazon.com/images/I/A1Lc+0V8SfL.jpg" },
     { titulo: "Assassin's Creed: Odyssey", categoria: "assassins-creed", tipo: "Videojuego", ordenSalida: 11, crono: 1, poster: "https://m.media-amazon.com/images/I/81c8SRTpiIL.jpg" },
@@ -423,7 +422,7 @@ const listaMedia = [
     { titulo: "Reality", categoria: "sydney-sweeney", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMDNhNzNiMzMtYTBmMi00OWEzLThkYTYtNjU2YjhhZDMyYjE0XkEyXkFqcGc@.V1.jpg" },
     { titulo: "Americana", categoria: "sydney-sweeney", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNTZlZTk4OGQtYjE3ZS00OTUwLThiNWYtOWIwMjUxYTIwNjNiXkEyXkFqcGc@.V1.jpg" },
     { titulo: "Anyone but You", categoria: "sydney-sweeney", subtipo: "2020", tipo: "Película", poster: "https://images.squarespace-cdn.com/content/v1/521dec4de4b0912f523f3b56/1731842299016-URJG1EVDKU4B2G48XIFG/anyone-but-you-poster.jpg?format=2500w" },
-    { titulo: "Madame Web", categoria: "sydney-sweeney", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/S/pv-target-images/cb36ea6f3f53777aea24eec9d1560470e6c6d1f260abc72bcb13ae9bccfcb678.jpg" },
+    { titulo: "Madame Web", categoria: "sydney-sweeney", subtipo: "2020", tipo: "Película", fichaTecnicaId: "madame-web", poster: "https://m.media-amazon.com/images/S/pv-target-images/cb36ea6f3f53777aea24eec9d1560470e6c6d1f260abc72bcb13ae9bccfcb678.jpg" },
     { titulo: "Immaculate", categoria: "sydney-sweeney", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMWEzYjYyMjQtNTJjYi00ZDQ5LWE4N2MtNWY2ZTgxODNhYWM4XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
     { titulo: "Eden", categoria: "sydney-sweeney", subtipo: "2020", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/750/315877.jpg" },
     { titulo: "Echo Valley", categoria: "sydney-sweeney", subtipo: "2020", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/315875.jpg" },
@@ -443,6 +442,21 @@ const listaMedia = [
     { titulo: "How to Make a Killing", categoria: "glen-powell", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/w220_and_h330_face/kw7x5mSmHhoeeqwXLwXTBsofD1N.jpg" },
     { titulo: "Super Mario Galaxy", categoria: "glen-powell", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/4Js0gYWxuvTN6b8iAaSF1cSQzBs.jpg" },
 
+    // --- ISABELA MERCED ---
+    { titulo: "Spirit Untamed", categoria: "isabela-merced", subtipo: "2020", tipo: "Película", fichaTecnicaId: "spirit-untamed", poster: "https://image.tmdb.org/t/p/original/q4WaFHk9Vp1poc88X1szwFRtYc5.jpg" },
+    { titulo: "Sweet Girl", categoria: "isabela-merced", subtipo: "2020", tipo: "Película", fichaTecnicaId: "sweet-girl", poster: "https://image.tmdb.org/t/p/w500/cP7odDzzFBD9ycxj2laTeFWGLjD.jpg" },
+    { titulo: "Maya and the Three", categoria: "isabela-merced", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "maya-and-the-three", poster: "https://image.tmdb.org/t/p/w500/zUBixNeHU0cbSUH7JMktl9OMEMV.jpg" },
+    { titulo: "Spirit & Friends", categoria: "isabela-merced", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "spirit-and-friends", poster: "https://image.tmdb.org/t/p/original/76IiQsf0anzneirt3DIhguYuXMw.jpg" },
+    { titulo: "Father of the Bride", categoria: "isabela-merced", subtipo: "2020", tipo: "Película", fichaTecnicaId: "father-of-the-bride-2022", poster: "https://image.tmdb.org/t/p/original/aRvwJoqO7121AIpEnIMgP0omNj6.jpg" },
+    { titulo: "Rosaline", categoria: "isabela-merced", subtipo: "2020", tipo: "Película", fichaTecnicaId: "rosaline", poster: "https://image.tmdb.org/t/p/original/VxTK2vQc6Z4L40c5DxYdBAyGZ3.jpg" },
+    { titulo: "¡Patos!", categoria: "isabela-merced", subtipo: "2020", tipo: "Película", fichaTecnicaId: "migration-2023", poster: "https://image.tmdb.org/t/p/original/ldfCF9RhR40mppkzmftxapaHeTo.jpg" },
+    { titulo: "Madame Web", categoria: "isabela-merced", subtipo: "2020", tipo: "Película", fichaTecnicaId: "madame-web", poster: "https://m.media-amazon.com/images/S/pv-target-images/cb36ea6f3f53777aea24eec9d1560470e6c6d1f260abc72bcb13ae9bccfcb678.jpg" },
+    { titulo: "Rock, Paper, Scissors", categoria: "isabela-merced", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "rock-paper-scissors", poster: "https://image.tmdb.org/t/p/w500/2DZI8fK4eFlKqAsroe3YlPCaXEo.jpg" },
+    { titulo: "Turtles All the Way Down", categoria: "isabela-merced", subtipo: "2020", tipo: "Película", fichaTecnicaId: "turtles-all-the-way-down", poster: "https://image.tmdb.org/t/p/w500/tDKlFXWCvIkP2Xl2nMdI49kzwZx.jpg" },
+    { titulo: "Alien: Romulus", categoria: "isabela-merced", subtipo: "2020", tipo: "Película", fichaTecnicaId: "alien-romulus", poster: "https://image.tmdb.org/t/p/w220_and_h330_face/b33nnKl1GSFbao4l3fZDDqsMx0F.jpg" },
+    { titulo: "Superman", categoria: "isabela-merced", subtipo: "2020", tipo: "Película", fichaTecnicaId: "superman-2025", poster: "https://m.media-amazon.com/images/I/712N7RdrlTL.jpg" },
+    { titulo: "Peacemaker Temporada 2", categoria: "isabela-merced", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "peacemaker-t2", poster: "https://image.tmdb.org/t/p/w500/yb4F1Oocq8GfQt6iIuAgYEBokhG.jpg" },
+
     // --- OSCAR 2021 (con filtros por categoría) ---
     { titulo: "Nomadland", categoria: "oscar-2021", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZWY3YTIwOGItODQ5Mi00NmI4LTgxN2QtZmI2ZjJmZmRkOGY1XkEyXkFqcGc@._V1_.jpg" },
     { titulo: "El Padre", categoria: "oscar-2021", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYzUxMDAyMDAtNzIyZi00OGQ1LTllMjEtYzRjOThkZTUxNTliXkEyXkFqcGc@._V1_.jpg" },
@@ -455,15 +469,36 @@ const listaMedia = [
 
     // --- OSCAR 2022 (con filtros por categoría) ---
     { titulo: "CODA: Señales del Corazón", categoria: "oscar-2022", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/318745.jpg" },
-    { titulo: "Belfast", categoria: "oscar-2022", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOGU1MmMyNTMtMGE3Ni00N2E0LWFlYjEtMDIwNDk5NzUyODAzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Belfast", categoria: "oscar-2022", subtipo: "mejor-pelicula", tipo: "Película", fichaTecnicaId: "belfast-2021", poster: "https://m.media-amazon.com/images/M/MV5BOGU1MmMyNTMtMGE3Ni00N2E0LWFlYjEtMDIwNDk5NzUyODAzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
     { titulo: "Don't Look Up", categoria: "oscar-2022", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMmRkYWNkM2ItYWM5Ny00M2QxLWEwMmMtMzk3M2RhNTU1MWQxXkEyXkFqcGc@.V1.jpg" },
-    { titulo: "Drive My Car", categoria: "oscar-2022", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://i.pinimg.com/564x/6f/a0/ca/6fa0ca9b2da9fb4e2fc737ea1cfffaaf.jpg" },
+    { titulo: "Drive My Car", categoria: "oscar-2022", subtipo: "mejor-pelicula", tipo: "Película", fichaTecnicaId: "drive-my-car", poster: "https://i.pinimg.com/564x/6f/a0/ca/6fa0ca9b2da9fb4e2fc737ea1cfffaaf.jpg" },
     { titulo: "Dune: Parte Uno", categoria: "oscar-2022", subtipo: "mejor-pelicula", tipo: "Película", fichaTecnicaId: "dune-parte-uno", poster: "https://cdn.europosters.eu/image/1300/302577.jpg" },
-    { titulo: "Rey Richard", categoria: "oscar-2022", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61W3DBZYm2L._AC_UF894,1000_QL80_.jpg" },
-    { titulo: "Licorice Pizza", categoria: "oscar-2022", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZTNmMTRmNDUtNjY1ZS00YmQxLTk0MjEtZGY0NzA1ZDgwNTFjXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Rey Richard", categoria: "oscar-2022", subtipo: "mejor-pelicula", tipo: "Película", fichaTecnicaId: "king-richard", poster: "https://m.media-amazon.com/images/I/61W3DBZYm2L._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Licorice Pizza", categoria: "oscar-2022", subtipo: "mejor-pelicula", tipo: "Película", fichaTecnicaId: "licorice-pizza", poster: "https://m.media-amazon.com/images/M/MV5BZTNmMTRmNDUtNjY1ZS00YmQxLTk0MjEtZGY0NzA1ZDgwNTFjXkEyXkFqcGc@._V1_.jpg" },
     { titulo: "El Callejón de las Almas Perdidas", categoria: "oscar-2022", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNThlMDUzMDEtOTY1ZC00MzI3LThlOGItYjI0MTdkZDliNDEzXkEyXkFqcGc@._V1_.jpg" },
-    { titulo: "El Poder del Perro", categoria: "oscar-2022", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNzgyMzA2NDEtZWUxNy00MDNmLTllMDYtNzZmNTU5ZWVmMzhlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
-    { titulo: "West Side Story", categoria: "oscar-2022", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOWZkYzY2OGUtOGU4Ni00NmI0LTg2ZjAtZDA5OWE0YTNiZWRiXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "El Poder del Perro", categoria: "oscar-2022", subtipo: "mejor-pelicula", tipo: "Película", fichaTecnicaId: "power-of-the-dog", poster: "https://m.media-amazon.com/images/M/MV5BNzgyMzA2NDEtZWUxNy00MDNmLTllMDYtNzZmNTU5ZWVmMzhlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "West Side Story", categoria: "oscar-2022", subtipo: "mejor-pelicula", tipo: "Película", fichaTecnicaId: "west-side-story-2021", poster: "https://m.media-amazon.com/images/M/MV5BOWZkYzY2OGUtOGU4Ni00NmI0LTg2ZjAtZDA5OWE0YTNiZWRiXkEyXkFqcGc@._V1_.jpg" },
+
+    // --- OSCAR 2022: MEJOR DIRECCIÓN ---
+    { titulo: "El Poder del Perro", categoria: "oscar-2022", subtipo: "mejor-direccion", tipo: "Película", fichaTecnicaId: "power-of-the-dog", poster: "https://m.media-amazon.com/images/M/MV5BNzgyMzA2NDEtZWUxNy00MDNmLTllMDYtNzZmNTU5ZWVmMzhlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Belfast", categoria: "oscar-2022", subtipo: "mejor-direccion", tipo: "Película", fichaTecnicaId: "belfast-2021", poster: "https://m.media-amazon.com/images/M/MV5BOGU1MmMyNTMtMGE3Ni00N2E0LWFlYjEtMDIwNDk5NzUyODAzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Drive My Car", categoria: "oscar-2022", subtipo: "mejor-direccion", tipo: "Película", fichaTecnicaId: "drive-my-car", poster: "https://i.pinimg.com/564x/6f/a0/ca/6fa0ca9b2da9fb4e2fc737ea1cfffaaf.jpg" },
+    { titulo: "Licorice Pizza", categoria: "oscar-2022", subtipo: "mejor-direccion", tipo: "Película", fichaTecnicaId: "licorice-pizza", poster: "https://m.media-amazon.com/images/M/MV5BZTNmMTRmNDUtNjY1ZS00YmQxLTk0MjEtZGY0NzA1ZDgwNTFjXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "West Side Story", categoria: "oscar-2022", subtipo: "mejor-direccion", tipo: "Película", fichaTecnicaId: "west-side-story-2021", poster: "https://m.media-amazon.com/images/M/MV5BOWZkYzY2OGUtOGU4Ni00NmI0LTg2ZjAtZDA5OWE0YTNiZWRiXkEyXkFqcGc@._V1_.jpg" },
+
+    // --- OSCAR 2022: MEJOR ACTOR ---
+    { titulo: "Rey Richard", categoria: "oscar-2022", subtipo: "mejor-actor", tipo: "Película", fichaTecnicaId: "king-richard", poster: "https://m.media-amazon.com/images/I/61W3DBZYm2L._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "El Poder del Perro", categoria: "oscar-2022", subtipo: "mejor-actor", tipo: "Película", fichaTecnicaId: "power-of-the-dog", poster: "https://m.media-amazon.com/images/M/MV5BNzgyMzA2NDEtZWUxNy00MDNmLTllMDYtNzZmNTU5ZWVmMzhlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Tick, Tick... Boom!", categoria: "oscar-2022", subtipo: "mejor-actor", tipo: "Película", fichaTecnicaId: "tick-tick-boom", poster: "https://m.media-amazon.com/images/M/MV5BOGYyNGJmNzctYzZjZi00MzUzLTg3YTYtYjk0OTNjMzA1OTE4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "The Tragedy of Macbeth", categoria: "oscar-2022", subtipo: "mejor-actor", tipo: "Película", fichaTecnicaId: "tragedy-of-macbeth", poster: "https://i.pinimg.com/736x/6b/67/e0/6b67e02f6bc13623faeabb447904f003.jpg" },
+    { titulo: "Being The Ricardos", categoria: "oscar-2022", subtipo: "mejor-actor", tipo: "Película", fichaTecnicaId: "being-the-ricardos", poster: "https://m.media-amazon.com/images/M/MV5BNTdkY2Y0MzgtMmE2ZS00NTc3LWE5MjMtMDk0ZDk3ZTgxZTM0XkEyXkFqcGc@._V1_.jpg" },
+
+    // --- OSCAR 2022: MEJOR ACTRIZ ---
+    { titulo: "Los Ojos de Tammy Faye", categoria: "oscar-2022", subtipo: "mejor-actriz", tipo: "Película", fichaTecnicaId: "eyes-of-tammy-faye", poster: "https://m.media-amazon.com/images/M/MV5BMzcyY2JkZDYtMDEwNS00YzRlLTgxZTAtMDc1YTJmNWIxZjRlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "The Lost Daughter", categoria: "oscar-2022", subtipo: "mejor-actriz", tipo: "Película", fichaTecnicaId: "lost-daughter", poster: "https://m.media-amazon.com/images/M/MV5BOGQ2OTNiNzMtMjA5Ny00Zjg4LWE1NTMtZDJlMWEyMDhhYmU4XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Parallel Mothers", categoria: "oscar-2022", subtipo: "mejor-actriz", tipo: "Película", fichaTecnicaId: "parallel-mothers", poster: "https://cdng.europosters.eu/pod_public/1300/319033.jpg" },
+    { titulo: "Being The Ricardos", categoria: "oscar-2022", subtipo: "mejor-actriz", tipo: "Película", fichaTecnicaId: "being-the-ricardos", poster: "https://m.media-amazon.com/images/M/MV5BNTdkY2Y0MzgtMmE2ZS00NTc3LWE5MjMtMDk0ZDk3ZTgxZTM0XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Spencer", categoria: "oscar-2022", subtipo: "mejor-actriz", tipo: "Película", fichaTecnicaId: "spencer-2021", poster: "https://m.media-amazon.com/images/M/MV5BZjMwN2Q1ODctNGI5My00YTFkLTk3NGItYWJjZWEzMDc0MjhlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
 
     // --- OSCAR 2023 (con filtros por categoría) ---
     { titulo: "Todo en Todas Partes al Mismo Tiempo", categoria: "oscar-2023", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61tpckHUmmL._AC_UF894,1000_QL80_.jpg" },
@@ -625,6 +660,15 @@ const listaMedia = [
     { titulo: "Bones and All", categoria: "timothee-chalamet", subtipo: "2020", tipo: "Película", poster: "https://i.pinimg.com/736x/93/c9/42/93c9420b3cd9e145c6580e2786bbe8c3.jpg" },
     { titulo: "Wonka", categoria: "timothee-chalamet", subtipo: "2020", tipo: "Película", poster: "https://purodiseno.lat/wp-content/uploads/2023/10/WONKA-POSTER-02.jpg" },
     { titulo: "Dune: Parte Dos", categoria: "timothee-chalamet", subtipo: "2020", tipo: "Película", fichaTecnicaId: "dune-parte-dos", poster: "https://deadline.com/wp-content/uploads/2023/05/FvIhyI9aUAUZz6l.jpeg?w=819" },
+    { titulo: "Dune: Parte Uno", categoria: "denis-villeneuve", subtipo: "2020", tipo: "Película", fichaTecnicaId: "dune-parte-uno", poster: "https://cdn.europosters.eu/image/1300/302577.jpg" },
+    { titulo: "Dune: Parte Dos", categoria: "denis-villeneuve", subtipo: "2020", tipo: "Película", fichaTecnicaId: "dune-parte-dos", poster: "https://deadline.com/wp-content/uploads/2023/05/FvIhyI9aUAUZz6l.jpeg?w=819" },
+    { titulo: "Incendies", categoria: "denis-villeneuve", subtipo: "2010", tipo: "Película", fichaTecnicaId: "incendies", poster: "https://cdng.europosters.eu/pod_public/1300/319409.jpg" },
+    { titulo: "Prisoners", categoria: "denis-villeneuve", subtipo: "2010", tipo: "Película", fichaTecnicaId: "prisoners", poster: "https://m.media-amazon.com/images/M/MV5BMTg0NTIzMjQ1NV5BMl5BanBnXkFtZTcwNDc3MzM5OQ@@._V1_.jpg" },
+    { titulo: "Enemy", categoria: "denis-villeneuve", subtipo: "2010", tipo: "Película", fichaTecnicaId: "enemy", poster: "https://m.media-amazon.com/images/M/MV5BMTQ2NzA5NjE4N15BMl5BanBnXkFtZTgwMjQ4NzMxMTE@._V1_.jpg" },
+    { titulo: "Sicario", categoria: "denis-villeneuve", subtipo: "2010", tipo: "Película", fichaTecnicaId: "sicario", poster: "https://www.originalfilmart.com/cdn/shop/products/Sicario_2015_teaser_original_film_art_5000x.webp?v=1678214595" },
+    { titulo: "Arrival", categoria: "denis-villeneuve", subtipo: "2010", tipo: "Película", fichaTecnicaId: "arrival", poster: "https://cdng.europosters.eu/pod_public/1300/323453.jpg" },
+    { titulo: "Blade Runner 2049", categoria: "denis-villeneuve", subtipo: "2010", tipo: "Película", fichaTecnicaId: "blade-runner-2049", poster: "https://image.tmdb.org/t/p/original/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg" },
+    { titulo: "Maelström", categoria: "denis-villeneuve", subtipo: "2000", tipo: "Película", fichaTecnicaId: "maelstrom", poster: "https://cdng.europosters.eu/image/750/329355.jpg" },
     { titulo: "A Complete Unknown", categoria: "timothee-chalamet", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYTA2NTA5NDYtMzlkOC00MTQxLWI0NDQtMzk2M2YzMGE4MTkxXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
     { titulo: "Marty Supreme", categoria: "timothee-chalamet", subtipo: "2020", tipo: "Película", poster: "https://s3.amazonaws.com/nightjarprod/content/uploads/sites/193/2026/02/09112829/lYWEXbQgRTR4ZQleSXAgRbxAjvq-scaled.jpg" },
     { titulo: "Don't Look Up", categoria: "jennifer-lawrence", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMmRkYWNkM2ItYWM5Ny00M2QxLWEwMmMtMzk3M2RhNTU1MWQxXkEyXkFqcGc@.V1.jpg" },
@@ -650,7 +694,7 @@ const listaMedia = [
     { titulo: "Passengers", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/jK9S6HANSf2no64v1x1HxfcpmcA.jpg" },
     { titulo: "Mother!", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/zO7WlUOpI1obOJQ7DtpGCKQVeBo.jpg" },
     { titulo: "Red Sparrow", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/peIkUiWZJpNew57V8Zay2JYGeyW.jpg" },
-    { titulo: "Dark Phoenix", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "http://www.impawards.com/2019/posters/dark_phoenix.jpg" },
+    { titulo: "Dark Phoenix", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://www.impawards.com/2019/posters/dark_phoenix.jpg" },
     { titulo: "Garden Party", categoria: "jennifer-lawrence", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/eqCub9nvrZqTtkOSeLhNRT5mzID.jpg" },
     { titulo: "The Poker House", categoria: "jennifer-lawrence", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/yTaqEbszsqhunQIjIMkkfwNMiiv.jpg" },
     { titulo: "The Burning Plain", categoria: "jennifer-lawrence", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/lZlChM3LmOLUCQCfnbaf2dQKe9J.jpg" },
@@ -659,7 +703,7 @@ const listaMedia = [
     { titulo: "The Power of the Dog", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNzgyMzA2NDEtZWUxNy00MDNmLTllMDYtNzZmNTU5ZWVmMzhlXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
     { titulo: "The Electrical Life of Louis Wain", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNDk2NmJiN2ItMGI3Yi00OGE5LThiMWEtYzU3MjE0ZmU1M2M2XkEyXkFqcGc@.V1.jpg" },
     { titulo: "Spider-Man: No Way Home", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", poster: "https://www.cinemascomics.com/wp-content/uploads/2022/01/poster-Spider-man-no-way-home.jpg" },
-    { titulo: "Doctor Strange in the Multiverse of Madness", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", poster: "http://www.impawards.com/2022/posters/doctor_strange_in_the_multiverse_of_madness.jpg" },
+    { titulo: "Doctor Strange in the Multiverse of Madness", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", poster: "https://www.impawards.com/2022/posters/doctor_strange_in_the_multiverse_of_madness.jpg" },
     { titulo: "The Book of Clarence", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", poster: "https://www.sonypictures.ca/sites/canada/files/2024-02/DP_8866065_BOOKOFCLARENCE%2CTHE_2000x3000LSR_HEKeyArt_1333x2000_thumbnail-min.jpg" },
     { titulo: "The End We Start From", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", poster: "https://public-website-assets.paramountpictures.com/paramount2025/s3fs-public/styles/poster_medium/public/theendwestartfrom-pm-800x1200-c.jpg?itok=RkEwDLbG" },
     { titulo: "The Wonderful Story of Henry Sugar and Three More", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BN2UwOWVlZWQtMmM0YS00Njc2LTlhOWYtYTA1ZTMwY2NjNmM1XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
@@ -671,7 +715,7 @@ const listaMedia = [
     { titulo: "Wreckers", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNDAxMzA5ODk0Ml5BMl5BanBnXkFtZTgwOTQ1MTgwMzE@.V1.jpg" },
     { titulo: "The Hobbit: An Unexpected Journey", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/67DAaVjjFG7qyml1bu34PV17FKS.jpg" },
     { titulo: "Star Trek Into Darkness", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/7XrRkhMa9lQ71RszzSyVrJVvhyS.jpg" },
-    { titulo: "12 Years a Slave", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "http://www.impawards.com/2013/posters/twelve_years_a_slave.jpg" },
+    { titulo: "12 Years a Slave", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://www.impawards.com/2013/posters/twelve_years_a_slave.jpg" },
     { titulo: "The Fifth Estate", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71v3XMCnYqL.AC_UF894,1000_QL80.jpg" },
     { titulo: "August: Osage County", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://cdn.posteritati.com/posters/000/000/030/057/august-osage-county-md-web.jpg" },
     { titulo: "The Hobbit: The Desolation of Smaug", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/xQYiXsheRCDBA39DOrmaw1aSpbk.jpg" },
@@ -680,12 +724,12 @@ const listaMedia = [
     { titulo: "Black Mass", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/nSbpuyd2UySuW7kaoXzYUfes1Bl.jpg" },
     { titulo: "Zoolander 2", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/n8AJzALlTPBwe9Tkv3tdxbiAr9i.jpg" },
     { titulo: "Doctor Strange", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", fichaTecnicaId: "doctor-strange-1", poster: "https://uruloki.org/felipeblog/images2016/20160412-doctorstrange.jpg" },
-    { titulo: "Thor: Ragnarok", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://tecolotito.elsiglodetorreon.com.mx/cdn-cgi/image/format=webp,width=1546,quality=75/i/2017/04/929651.jpeg" },
+    { titulo: "Thor: Ragnarok", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", fichaTecnicaId: "thor-ragnarok", poster: "https://tecolotito.elsiglodetorreon.com.mx/cdn-cgi/image/format=webp,width=1546,quality=75/i/2017/04/929651.jpeg" },
     { titulo: "The Current War", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTk4MzhkMDAtNWMyMi00ZmI4LWEyNTUtZDVkMTVlZjJmYTAzXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
     { titulo: "Avengers: Infinity War", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", fichaTecnicaId: "avengers-infinity-war", poster: "https://www.blackfilm.com/read/wp-content/uploads/2017/11/Avengers-Infinity-War-Teaser-Poster.jpg" },
     { titulo: "The Grinch", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/1Bc9VNd9CIHIyJtPKFqSQzrXWru.jpg" },
     { titulo: "Mowgli: Legend of the Jungle", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/wdj8FK2bCA7iNtZRSzJHrltAwnr.jpg" },
-    { titulo: "Avengers: Endgame", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://cdn.marvel.com/content/2x/MLou2_Teaser_1-Sht_v6_Lg.jpg" },
+    { titulo: "Avengers: Endgame", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", fichaTecnicaId: "avengers-endgame", poster: "https://cdn.marvel.com/content/2x/MLou2_Teaser_1-Sht_v6_Lg.jpg" },
     { titulo: "Between Two Ferns: The Movie", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://www.shutterstock.com/editorial/image-editorial/MaTdAa15M8j4U13bMjUxMzA=/between-two-ferns-movie-2019-poster-art-440nw-10441528i.jpg" },
     { titulo: "1917", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYzkxZjg2NDQtMGVjMy00NWZkLTk0ZDEtZWE3NDYwYjAyMTg1XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
     { titulo: "To Kill a King", categoria: "benedict-cumberbatch", subtipo: "2000", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOWM0OWNjMjAtZGQzYy00MDU0LWFiNWYtYWQyODMxZjc0NTFjXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
@@ -756,7 +800,7 @@ const listaMedia = [
     { titulo: "Superman", categoria: "james-gunn", subtipo: "2020", tipo: "Película", fichaTecnicaId: "superman-2025", poster: "https://m.media-amazon.com/images/I/712N7RdrlTL.jpg" },
     { titulo: "Super", categoria: "james-gunn", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZTUzMDU3NWUtNjdlMy00MGQ3LTk2M2ItNWVhNTlhZjkyMDExXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
     { titulo: "Movie 43", categoria: "james-gunn", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/uYa06GxHsCsELx9vOQ11vsT0Aa6.jpg" },
-    { titulo: "Guardianes de La Galaxia", categoria: "james-gunn", subtipo: "2010", tipo: "Película", poster: "http://www.impawards.com/2014/posters/guardians_of_the_galaxy.jpg" },
+    { titulo: "Guardianes de La Galaxia", categoria: "james-gunn", subtipo: "2010", tipo: "Película", poster: "https://www.impawards.com/2014/posters/guardians_of_the_galaxy.jpg" },
     { titulo: "Guardianes de La Galaxia Vol. 2", categoria: "james-gunn", subtipo: "2010", tipo: "Película", poster: "https://external-preview.redd.it/official-guardians-of-the-galaxy-vol-2-teaser-poster-v0-TjDcWtSjsp7PD12icRxi9UVVWL-38pmlw29-42nNvOI.jpg?auto=webp&s=da143bea206173e3cc2b0d5a4e8f2f84b24a994e" },
     { titulo: "Slither", categoria: "james-gunn", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/zNlJvCY3Pz7SE09Lf4G7uPs5XFZ.jpg" },
     { titulo: "Nights and Weekends", categoria: "greta-gerwig", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTU5NzM0NjUxOF5BMl5BanBnXkFtZTcwMjUyMTQ5MQ@@.V1.jpg" },
@@ -766,7 +810,7 @@ const listaMedia = [
     { titulo: "Songs My Brothers Taught Me", categoria: "chloe-zhao", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMjZhMTYyOTMtOWNlMi00MDVhLThjM2ItODFjYmI3NGQxNDY2XkEyXkFqcGc@.V1.jpg" },
     { titulo: "The Rider", categoria: "chloe-zhao", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMjQ3ODM5MjY2N15BMl5BanBnXkFtZTgwOTU5MjM4NDM@.V1.jpg" },
     { titulo: "Nomadland", categoria: "chloe-zhao", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZWY3YTIwOGItODQ5Mi00NmI4LTgxN2QtZmI2ZjJmZmRkOGY1XkEyXkFqcGc@.V1.jpg" },
-    { titulo: "Eternals", categoria: "chloe-zhao", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/vgUZo9aVvRvCQFXwZC9zq3qCZT9.jpg" },
+    { titulo: "Eternals", categoria: "chloe-zhao", tipo: "Película", fichaTecnicaId: "eternals", poster: "https://image.tmdb.org/t/p/original/vgUZo9aVvRvCQFXwZC9zq3qCZT9.jpg" },
     { titulo: "Hamnet", categoria: "chloe-zhao", tipo: "Película", poster: "https://competitive.ultracine.com/wp-content/uploads/2025/05/UIP-HAMNET.jpg" },
     { titulo: "Past Lives", categoria: "celine-song", tipo: "Película", poster: "https://i.pinimg.com/736x/2b/41/cb/2b41cb65373e7909972ec366c09afa54.jpg" },
     { titulo: "Materialistas", categoria: "celine-song", tipo: "Película", poster: "https://images.justwatch.com/poster/329711270/s718/materialists.jpg" },
@@ -798,8 +842,8 @@ const listaMedia = [
     { titulo: "Watchmen", categoria: "zack-snyder", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/bUHDON5dA0oUPsJSDWLvHpPca7D.jpg" },
     { titulo: "Legend of the Guardians: The Owls of Ga'Hoole", categoria: "zack-snyder", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/8YzzgB2Y2rfb9zhEok88UjvHuLJ.jpg" },
     { titulo: "Sucker Punch", categoria: "zack-snyder", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/8oBc33JEnYm3rqPIwGtQXQbP96j.jpg" },
-    { titulo: "Man of Steel", categoria: "zack-snyder", subtipo: "2010", tipo: "Película", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtrrTBfKpVp5mWI445MSXcFokIqvkHM737oEbS9U38ayvSDd4eIG8IVpkn&s=10" },
-    { titulo: "Batman v Superman: Dawn of Justice", categoria: "zack-snyder", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81o7zaih1mL._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Man of Steel", categoria: "zack-snyder", subtipo: "2010", tipo: "Película", fichaTecnicaId: "man-of-steel", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtrrTBfKpVp5mWI445MSXcFokIqvkHM737oEbS9U38ayvSDd4eIG8IVpkn&s=10" },
+    { titulo: "Batman v Superman: Dawn of Justice", categoria: "zack-snyder", subtipo: "2010", tipo: "Película", fichaTecnicaId: "batman-v-superman", poster: "https://m.media-amazon.com/images/I/81o7zaih1mL._AC_UF894,1000_QL80_.jpg" },
     { titulo: "Zack Snyder's Justice League", categoria: "zack-snyder", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNDA0MzM5YTctZTU2My00NGQ5LWE2NTEtNDM0MjZmMDBkOTZkXkEyXkFqcGc@._V1_.jpg" },
     { titulo: "Army of the Dead", categoria: "zack-snyder", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/jU5nft1SIE2HW5DSSiDcStyMIzL.jpg" },
     { titulo: "Rebel Moon – Part One: A Child of Fire", categoria: "zack-snyder", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/ui4DrH1cKk2vkHshcUcGt2lKxCm.jpg" },
@@ -977,7 +1021,7 @@ const listaMedia = [
 
     // --- BARRY KEOGHAN (con filtros por década) ---
     { titulo: "La Leyenda de el Caballero Verde", categoria: "barry-keoghan", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNjRjNmU1M2ItNDU4Ni00ZGY2LTlmNzItY2MxYmY3OTllZjMwXkEyXkFqcGc@._V1_.jpg" },
-    { titulo: "Eternals", categoria: "barry-keoghan", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/vgUZo9aVvRvCQFXwZC9zq3qCZT9.jpg" },
+    { titulo: "Eternals", categoria: "barry-keoghan", subtipo: "2020", tipo: "Película", fichaTecnicaId: "eternals", poster: "https://image.tmdb.org/t/p/original/vgUZo9aVvRvCQFXwZC9zq3qCZT9.jpg" },
     { titulo: "The Batman", categoria: "barry-keoghan", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71kUTilIdiL.jpg" },
     { titulo: "The Banshees of Inisherin", categoria: "barry-keoghan", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOTkzMWI4OTEtMTk0MS00MTUxLWI4NTYtYmRiNWM4Zjc1MGRhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
     { titulo: "Saltburn", categoria: "barry-keoghan", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZjk4NGE3MWItMDRhMy00YzhiLTk0MGUtZDlkNmQxYWIxYzc2XkEyXkFqcGc@._V1_.jpg" },
@@ -1083,7 +1127,7 @@ const listaMedia = [
     { titulo: "Cutting Class", categoria: "brad-pitt", subtipo: "1980", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYWVhNDNiMDItNzJmMy00YjJmLTg0MjQtMWFlMTI4ZGJkNDdkXkEyXkFqcGc@._V1_.jpg" },
 
     // --- FLORENCE PUGH (con filtros por década) ---
-    { titulo: "Black Widow", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNjZjOGVhOTEtNzY4Mi00MjQzLTlmYjktNzMyMDExMWJlODEwXkEyXkFqcGc@.V1.jpg" },
+    { titulo: "Black Widow", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", fichaTecnicaId: "black-widow-2021", poster: "https://m.media-amazon.com/images/M/MV5BNjZjOGVhOTEtNzY4Mi00MjQzLTlmYjktNzMyMDExMWJlODEwXkEyXkFqcGc@.V1.jpg" },
     { titulo: "Hawkeye", categoria: "florence-pugh", subtipo: "2020", tipo: "Serie", poster: "https://lumiere-a.akamaihd.net/v1/images/unknown_61ca7b47.png" },
     { titulo: "Don't Worry Darling", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BODVhYzM3M2YtMTUwYi00NjE4LWIwYzktOTM1MTYwZWU0ZTBiXkEyXkFqcGc@._V1_.jpg" },
     { titulo: "The Wonder", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNDU5NzljODgtNjg1OS00NWZlLTg3MzEtMDU0YWI2ZjEwNzk2XkEyXkFqcGc@._V1_.jpg" },
@@ -1161,8 +1205,8 @@ const listaMedia = [
 
     // --- ANDREW GARFIELD (con filtros por década) ---
     { titulo: "Mainstream", categoria: "andrew-garfield", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYzNjYzVlYzktMTEzZS00ZjViLTg0MmQtOWRkZjNlYWQ0MGQ1XkEyXkFqcGc@._V1_.jpg" },
-    { titulo: "Los Ojos de Tammy Faye", categoria: "andrew-garfield", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMzcyY2JkZDYtMDEwNS00YzRlLTgxZTAtMDc1YTJmNWIxZjRlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
-    { titulo: "Tick, Tick... Boom!", categoria: "andrew-garfield", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOGYyNGJmNzctYzZjZi00MzUzLTg3YTYtYjk0OTNjMzA1OTE4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Los Ojos de Tammy Faye", categoria: "andrew-garfield", subtipo: "2020", tipo: "Película", fichaTecnicaId: "eyes-of-tammy-faye", poster: "https://m.media-amazon.com/images/M/MV5BMzcyY2JkZDYtMDEwNS00YzRlLTgxZTAtMDc1YTJmNWIxZjRlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Tick, Tick... Boom!", categoria: "andrew-garfield", subtipo: "2020", tipo: "Película", fichaTecnicaId: "tick-tick-boom", poster: "https://m.media-amazon.com/images/M/MV5BOGYyNGJmNzctYzZjZi00MzUzLTg3YTYtYjk0OTNjMzA1OTE4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
     { titulo: "Spider-Man: No Way Home", categoria: "andrew-garfield", subtipo: "2020", tipo: "Película", poster: "https://www.cinemascomics.com/wp-content/uploads/2022/01/poster-Spider-man-no-way-home.jpg" },
     { titulo: "Under The Banner of Heaven", categoria: "andrew-garfield", subtipo: "2020", tipo: "Serie", poster: "https://m.media-amazon.com/images/M/MV5BMDM2ZTA1ZjItMDlhNS00ZTMyLWI5MDEtOTk0YWI5ZmZjZjBkXkEyXkFqcGc@._V1_.jpg" },
     { titulo: "We Live in Time", categoria: "andrew-garfield", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/vEmiJetB0C7VJjw60QNXO0oMMws.jpg" },
@@ -2470,6 +2514,20 @@ const listaMedia = [
 // ==========================================
 const colecciones = [
     {
+        id: "the-last-of-us-serie",
+        titulo: "The Last of Us",
+        categoria: "isabela-merced",
+        subtipo: "2020",
+        esSerie: true,
+        etiqueta: "Serie",
+        poster: "https://image.tmdb.org/t/p/original/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg",
+        peliculas: [
+            { titulo: "The Last of Us (Serie)", fichaTecnicaId: "the-last-of-us-serie", poster: "https://image.tmdb.org/t/p/original/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg" },
+            { titulo: "The Last of Us Temporada 1", fichaTecnicaId: "tlou-t1", poster: "https://image.tmdb.org/t/p/original/aUQKIpZZ31KWbpdHMCmaV76u78T.jpg" },
+            { titulo: "The Last of Us Temporada 2", fichaTecnicaId: "tlou-t2", poster: "https://image.tmdb.org/t/p/original/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg" }
+        ]
+    },
+    {
         id: "pennyworth",
         titulo: "Pennyworth",
         categoria: "dc-multiverso",
@@ -2873,6 +2931,16 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "isabela-merced",
+        titulo: "Isabela Merced",
+        categoria: "actores",
+        poster: "https://w0.peakpx.com/wallpaper/186/885/HD-wallpaper-isabela-moner-2020-thumbnail.jpg",
+        esContenedor: true,
+        etiqueta: "Actor",
+        progresoCategoria: "isabela-merced",
+        peliculas: []
+    },
+    {
         id: "glen-powell",
         titulo: "Glen Powell",
         categoria: "actores",
@@ -3082,6 +3150,17 @@ const colecciones = [
             { titulo: "Tiny Tina's Wonderlands", poster: "https://m.media-amazon.com/images/M/MV5BYzQ2OGUwNzQtN2RkZS00MjYzLWFiNzctNjhiOTRlNmViZjFiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
             { titulo: "New Tales from the Borderlands", poster: "https://m.media-amazon.com/images/M/MV5BZTcwYzcyYWMtMWZlZS00NzQwLTljMDctZmM3ZGQ2MjllMDcxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
             { titulo: "Borderlands 4", poster: "https://m.media-amazon.com/images/M/MV5BZmE1OGFkMmEtMDhlYS00OTI2LTllMzQtNDA4ODhlYzZhMGY4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" }
+        ]
+    },
+    {
+        id: "call-of-duty",
+        titulo: "Call of Duty",
+        categoria: "videojuegos-explorar",
+        poster: "https://thumb.wikimedia.org/wikipedia/en/thumb/6/69/WAW_Cover_Art.jpg/250px-WAW_Cover_Art.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+        esVideojuego: true,
+        peliculas: [
+            { titulo: "Call of Duty 4: Modern Warfare", fichaTecnicaId: "call-of-duty-4-modern-warfare", poster: "https://static.wikia.nocookie.net/cod/images/b/b9/Car%C3%A1tula_COD4_MW.jpg/revision/latest?cb=20100107222404&path-prefix=es" },
+            { titulo: "Call of Duty: World at War", fichaTecnicaId: "call-of-duty-world-at-war", poster: "https://thumb.wikimedia.org/wikipedia/en/thumb/6/69/WAW_Cover_Art.jpg/250px-WAW_Cover_Art.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" }
         ]
     },
     {
@@ -3384,6 +3463,15 @@ const colecciones = [
             { titulo: "House of the Dragon Temporada 2", poster: "https://i0.wp.com/img-tomatazos.buscafs.com/437722/437722.jpeg" },
             { titulo: "House of the Dragon Temporada 3", poster: "https://i.pinimg.com/736x/f9/7b/6a/f97b6a91b29bbe9a85f5fa03050eaaab.jpg" }
         ]
+    },
+    {
+        id: "denis-villeneuve",
+        titulo: "Denis Villeneuve",
+        categoria: "directores",
+        poster: "https://i.pinimg.com/736x/09/7f/bc/097fbc704e0f735dfb4d15603c33a126.jpg",
+        esContenedor: true,
+        etiqueta: "Director",
+        peliculas: []
     },
     {
         id: "greta-gerwig",
@@ -4168,7 +4256,7 @@ const colecciones = [
         categoria: "dc-personajes",
         poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTfVC1CneZcljEkjQExYzjKpYa_ShQDgjvQRB8vwEsfvXrX8zZ28KIcznR&s=10",
         peliculas: [
-            { titulo: "Batman v Superman", poster: "https://m.media-amazon.com/images/I/81o7zaih1mL._AC_UF894,1000_QL80_.jpg" },
+            { titulo: "Batman v Superman", fichaTecnicaId: "batman-v-superman", poster: "https://m.media-amazon.com/images/I/81o7zaih1mL._AC_UF894,1000_QL80_.jpg" },
             { titulo: "Suicide Squad", poster: "https://image.tmdb.org/t/p/original/sk3FZgh3sRrmr8vyhaitNobMcfh.jpg" },
             { titulo: "Justice League", poster: "https://www.guioteca.com/comics/files/2017/10/justice-league-final-poster-1039055.jpeg" },
             { titulo: "The Flash", poster: "https://cdng.europosters.eu/pod_public/1300/317434.jpg" },
@@ -4181,8 +4269,8 @@ const colecciones = [
         categoria: "dc-personajes",
         poster: "https://i.ebayimg.com/00/s/MTYwMFgxMDc5/z/F~4AAOSwzDxi5tqG/$_57.JPG?set_id=880000500F",
         peliculas: [
-            { titulo: "Man of Steel", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtrrTBfKpVp5mWI445MSXcFokIqvkHM737oEbS9U38ayvSDd4eIG8IVpkn&s=10" },
-            { titulo: "Batman v Superman", poster: "https://m.media-amazon.com/images/I/81o7zaih1mL._AC_UF894,1000_QL80_.jpg" },
+            { titulo: "Man of Steel", fichaTecnicaId: "man-of-steel", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtrrTBfKpVp5mWI445MSXcFokIqvkHM737oEbS9U38ayvSDd4eIG8IVpkn&s=10" },
+            { titulo: "Batman v Superman", fichaTecnicaId: "batman-v-superman", poster: "https://m.media-amazon.com/images/I/81o7zaih1mL._AC_UF894,1000_QL80_.jpg" },
             { titulo: "Justice League", poster: "https://www.guioteca.com/comics/files/2017/10/justice-league-final-poster-1039055.jpeg" },
             { titulo: "Black Adam", poster: "https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2022/06/black-adam.jpg?resize=1638%2C2048&ssl=1" },
             { titulo: "The Flash", poster: "https://cdng.europosters.eu/pod_public/1300/317434.jpg" },
@@ -4195,7 +4283,7 @@ const colecciones = [
         categoria: "dc-personajes",
         poster: "https://i.ebayimg.com/images/g/3psAAOSw4P9i5ryR/s-l1200.jpg",
         peliculas: [
-            { titulo: "Batman v Superman", poster: "https://m.media-amazon.com/images/I/81o7zaih1mL._AC_UF894,1000_QL80_.jpg" },
+            { titulo: "Batman v Superman", fichaTecnicaId: "batman-v-superman", poster: "https://m.media-amazon.com/images/I/81o7zaih1mL._AC_UF894,1000_QL80_.jpg" },
             { titulo: "Wonder Woman", poster: "https://im.ziffdavisinternational.com/ign_es/screenshot/default/wonder-woman-sp_q9yz.jpg" },
             { titulo: "Justice League", poster: "https://www.guioteca.com/comics/files/2017/10/justice-league-final-poster-1039055.jpeg" },
             { titulo: "Wonder Woman 1984", poster: "https://cdn.europosters.eu/image/1300/83411.jpg" },
@@ -5431,6 +5519,8 @@ function renderizarColecciones() {
         "dc-videojuegos": "seccion-dc-videojuegos",
         "dc-personajes": "seccion-dc-personajes",
         "batman-personaje": "seccion-batman-personaje",
+        "isabela-merced": "seccion-isabela-merced",
+        "the-last-of-us-serie": "seccion-the-last-of-us-serie",
         "pennyworth": "seccion-pennyworth",
         "batman-contiene-comics": "seccion-batman-contiene-comics",
         "el-inmortal-hulk": "seccion-el-inmortal-hulk",
@@ -5708,6 +5798,7 @@ function abrirColeccion(colId) {
         'jennifer-lawrence': '.btn-filtro-jlawrence[data-tipo="2020"]',
         'sydney-sweeney': '.btn-filtro-sweeney[data-tipo="2020"]',
         'glen-powell': '.btn-filtro-powell[data-tipo="2020"]',
+        'isabela-merced': '.btn-filtro-isabela[data-tipo="2020"]',
         'tom-holland': '.btn-filtro-holland[data-tipo="2020"]',
         'barry-keoghan': '.btn-filtro-keoghan[data-tipo="2020"]',
         'matrix-saga': '.btn-filtro-matrix[data-tipo="peliculas"]',
@@ -5932,7 +6023,10 @@ function renderizarContenido() {
         "jennifer-lawrence": "seccion-jennifer-lawrence",
         "sydney-sweeney": "seccion-sydney-sweeney",
         "glen-powell": "seccion-glen-powell",
+        "denis-villeneuve": "seccion-denis-villeneuve",
         "batman-personaje": "seccion-batman-personaje",
+        "isabela-merced": "seccion-isabela-merced",
+        "the-last-of-us-serie": "seccion-the-last-of-us-serie",
         "pennyworth": "seccion-pennyworth",
         "batman-contiene-comics": "seccion-batman-contiene-comics",
         "el-inmortal-hulk": "seccion-el-inmortal-hulk",
@@ -7214,6 +7308,18 @@ function cambiarSeccion(seccionNueva) {
     if (seccionNueva.id === 'seccion-requisitos-batman-telltale-t1' && typeof armarComparacionMiPC === 'function') {
         armarComparacionMiPC('seccion-requisitos-batman-telltale-t1', REQUISITOS_BATMAN_TELLTALE_T1);
     }
+    if (seccionNueva.id === 'seccion-requisitos-assassins-creed-rogue' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-assassins-creed-rogue', REQUISITOS_ASSASSINS_CREED_ROGUE);
+    }
+    if (seccionNueva.id === 'seccion-requisitos-call-of-duty-4-modern-warfare' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-call-of-duty-4-modern-warfare', REQUISITOS_CALL_OF_DUTY_4);
+    }
+    if (seccionNueva.id === 'seccion-requisitos-call-of-duty-world-at-war' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-call-of-duty-world-at-war', REQUISITOS_CALL_OF_DUTY_WAW);
+    }
+    if (seccionNueva.id === 'seccion-requisitos-assassins-creed-4' && typeof armarComparacionMiPC === 'function') {
+        armarComparacionMiPC('seccion-requisitos-assassins-creed-4', REQUISITOS_ASSASSINS_CREED_4);
+    }
     if (seccionNueva.id === 'seccion-fox-xmen') {
         guardarOrdenEstrenoFoxXmenSiHaceFalta();
     }
@@ -7894,6 +8000,13 @@ if(btnVolverGrandTheftAuto) {
     });
 }
 
+const btnVolverCallOfDuty = document.getElementById('btn-volver-call-of-duty');
+if(btnVolverCallOfDuty) {
+    btnVolverCallOfDuty.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-videojuegos-explorar'));
+    });
+}
+
 const btnVolverBorderlands = document.getElementById('btn-volver-borderlands');
 if(btnVolverBorderlands) {
     btnVolverBorderlands.addEventListener('click', () => {
@@ -8373,7 +8486,11 @@ const JUEGOS_CON_REQUISITOS_MIPC = [
     { titulo: "Assassin's Creed III", seccion: "assassins-creed-3", requisitos: () => REQUISITOS_ASSASSINS_CREED_3 },
     { titulo: "Batman: Arkham Knight", seccion: "arkham-knight", requisitos: () => REQUISITOS_ARKHAM_KNIGHT },
     { titulo: "Suicide Squad: Kill the Justice League", seccion: "suicide-squad-kjl", requisitos: () => REQUISITOS_SUICIDE_SQUAD_KJL },
-    { titulo: "Batman: The Telltale Series (Temporada 1)", seccion: "batman-telltale-t1", requisitos: () => REQUISITOS_BATMAN_TELLTALE_T1 }
+    { titulo: "Batman: The Telltale Series (Temporada 1)", seccion: "batman-telltale-t1", requisitos: () => REQUISITOS_BATMAN_TELLTALE_T1 },
+    { titulo: "Assassin's Creed: Rogue", seccion: "assassins-creed-rogue", requisitos: () => REQUISITOS_ASSASSINS_CREED_ROGUE },
+    { titulo: "Assassin's Creed IV: Black Flag", seccion: "assassins-creed-4", requisitos: () => REQUISITOS_ASSASSINS_CREED_4 },
+    { titulo: "Call of Duty: World at War", seccion: "call-of-duty-world-at-war", requisitos: () => REQUISITOS_CALL_OF_DUTY_WAW },
+    { titulo: "Call of Duty 4: Modern Warfare", seccion: "call-of-duty-4-modern-warfare", requisitos: () => REQUISITOS_CALL_OF_DUTY_4 }
 ];
 
 // Comparación rápida (mismo criterio numérico que armarComparacionMiPC)
@@ -10917,6 +11034,257 @@ if (btnVolverFichaDuneProphecy) {
     });
 }
 
+const btnVolverFichaTheNewMutants = document.getElementById('btn-volver-ficha-the-new-mutants');
+if (btnVolverFichaTheNewMutants) {
+    btnVolverFichaTheNewMutants.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-the-new-mutants');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-fox-xmen'));
+    });
+}
+
+const btnVolverFichaAssassinsCreedRogue = document.getElementById('btn-volver-ficha-assassins-creed-rogue');
+if (btnVolverFichaAssassinsCreedRogue) {
+    btnVolverFichaAssassinsCreedRogue.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-assassins-creed-rogue');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-assassins-creed'));
+    });
+}
+const btnDlcAssassinsCreedRogue = document.getElementById('btn-dlc-assassins-creed-rogue');
+if (btnDlcAssassinsCreedRogue) {
+    btnDlcAssassinsCreedRogue.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-assassins-creed-rogue'));
+    });
+}
+const btnVolverDlcAssassinsCreedRogue = document.getElementById('btn-volver-dlc-assassins-creed-rogue');
+if (btnVolverDlcAssassinsCreedRogue) {
+    btnVolverDlcAssassinsCreedRogue.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-assassins-creed-rogue'));
+    });
+}
+document.querySelectorAll('.btn-volver-dlc-individual-acr').forEach(boton => {
+    boton.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dlc-assassins-creed-rogue'));
+    });
+});
+const btnRequisitosAssassinsCreedRogue = document.getElementById('btn-requisitos-assassins-creed-rogue');
+if (btnRequisitosAssassinsCreedRogue) {
+    btnRequisitosAssassinsCreedRogue.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-assassins-creed-rogue'));
+    });
+}
+const btnVolverRequisitosAssassinsCreedRogue = document.getElementById('btn-volver-requisitos-assassins-creed-rogue');
+if (btnVolverRequisitosAssassinsCreedRogue) {
+    btnVolverRequisitosAssassinsCreedRogue.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-assassins-creed-rogue'));
+    });
+}
+const REQUISITOS_ASSASSINS_CREED_ROGUE = {
+    minimos: { so: "Windows 7 SP1, 8/8.1 o 10 (64 bits)", cpu: "Intel Core 2 Quad Q6600 (2.4 GHz) o AMD Athlon II X4 620 (2.6 GHz)", ram: "2", almacenamiento: "12", directx: "DirectX 11", gpu: "NVIDIA GeForce GTS 450, AMD Radeon HD 5670 (1 GB VRAM) o Intel HD 4600" },
+    recomendado: { so: "Windows 7 SP1, 8/8.1 o 10 (64 bits)", cpu: "Intel Core i5-2400S (2.5 GHz) o AMD FX-6100 (3.3 GHz)", ram: "4", almacenamiento: "12", directx: "DirectX 11", gpu: "NVIDIA GeForce GTX 560 Ti (1 GB VRAM) o AMD Radeon HD 6870 (1 GB VRAM)" }
+};
+
+[
+    ['incendies', 'seccion-denis-villeneuve'],
+    ['prisoners', 'seccion-denis-villeneuve'],
+    ['enemy', 'seccion-denis-villeneuve'],
+    ['sicario', 'seccion-denis-villeneuve'],
+    ['arrival', 'seccion-denis-villeneuve'],
+    ['blade-runner-2049', 'seccion-denis-villeneuve'],
+    ['maelstrom', 'seccion-denis-villeneuve']
+].forEach(([id, fallback]) => {
+    const btn = document.getElementById('btn-volver-ficha-' + id);
+    if (btn) {
+        btn.addEventListener('click', () => {
+            const seccionFicha = document.getElementById('seccion-ficha-' + id);
+            const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+            const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+            cambiarSeccion(seccionOrigen || document.getElementById(fallback));
+        });
+    }
+});
+
+[
+    'power-of-the-dog', 'belfast-2021', 'drive-my-car', 'licorice-pizza', 'west-side-story-2021',
+    'king-richard', 'tick-tick-boom', 'tragedy-of-macbeth', 'being-the-ricardos',
+    'eyes-of-tammy-faye', 'lost-daughter', 'parallel-mothers', 'spencer-2021'
+].forEach(id => {
+    const btn = document.getElementById('btn-volver-ficha-' + id);
+    if (btn) {
+        btn.addEventListener('click', () => {
+            const seccionFicha = document.getElementById('seccion-ficha-' + id);
+            const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+            const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+            cambiarSeccion(seccionOrigen || document.getElementById('seccion-oscar-2022'));
+        });
+    }
+});
+
+['guardians-of-the-galaxy-1', 'ant-man-1'].forEach(id => {
+    const btn = document.getElementById('btn-volver-ficha-' + id);
+    if (btn) {
+        btn.addEventListener('click', () => {
+            const seccionFicha = document.getElementById('seccion-ficha-' + id);
+            const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+            const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+            cambiarSeccion(seccionOrigen || document.getElementById('seccion-mcu-infinito'));
+        });
+    }
+});
+
+['guardians-of-the-galaxy-2', 'thor-ragnarok'].forEach(id => {
+    const btn = document.getElementById('btn-volver-ficha-' + id);
+    if (btn) {
+        btn.addEventListener('click', () => {
+            const seccionFicha = document.getElementById('seccion-ficha-' + id);
+            const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+            const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+            cambiarSeccion(seccionOrigen || document.getElementById('seccion-mcu-infinito'));
+        });
+    }
+});
+
+['ant-man-and-the-wasp', 'captain-marvel', 'avengers-endgame'].forEach(id => {
+    const btn = document.getElementById('btn-volver-ficha-' + id);
+    if (btn) {
+        btn.addEventListener('click', () => {
+            const seccionFicha = document.getElementById('seccion-ficha-' + id);
+            const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+            const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+            cambiarSeccion(seccionOrigen || document.getElementById('seccion-mcu-infinito'));
+        });
+    }
+});
+
+['wandavision', 'falcon-winter-soldier', 'black-widow-2021'].forEach(id => {
+    const btn = document.getElementById('btn-volver-ficha-' + id);
+    if (btn) {
+        btn.addEventListener('click', () => {
+            const seccionFicha = document.getElementById('seccion-ficha-' + id);
+            const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+            const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+            cambiarSeccion(seccionOrigen || document.getElementById('seccion-mcu-multiverso'));
+        });
+    }
+});
+
+const btnRequisitosAssassinsCreed4 = document.getElementById('btn-requisitos-assassins-creed-4');
+if (btnRequisitosAssassinsCreed4) {
+    btnRequisitosAssassinsCreed4.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-assassins-creed-4'));
+    });
+}
+const btnVolverRequisitosAssassinsCreed4 = document.getElementById('btn-volver-requisitos-assassins-creed-4');
+if (btnVolverRequisitosAssassinsCreed4) {
+    btnVolverRequisitosAssassinsCreed4.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-assassins-creed-4'));
+    });
+}
+const REQUISITOS_ASSASSINS_CREED_4 = {
+    minimos: { so: "Windows 10 (64 bits)", cpu: "Intel Core 2 Quad Q8400 (2,6 GHz) o AMD Athlon II X4 620 (2,6 GHz)", ram: "2", almacenamiento: "30", directx: "DirectX 9.0", gpu: "NVIDIA GeForce GTX 260 o AMD Radeon HD 4870 (512 MB VRAM)" },
+    recomendado: { so: "Windows 10 (64 bits)", cpu: "Intel Core i5 2400S (2,5 GHz) o AMD Phenom II X4 940 (3,0 GHz)", ram: "4", almacenamiento: "30", directx: "DirectX 11", gpu: "NVIDIA GeForce GTX 470 o AMD Radeon HD 5850 (1 GB VRAM)" }
+};
+
+['spirit-untamed', 'sweet-girl', 'maya-and-the-three', 'spirit-and-friends', 'father-of-the-bride-2022', 'rosaline', 'migration-2023', 'madame-web', 'rock-paper-scissors', 'turtles-all-the-way-down', 'alien-romulus'].forEach(id => {
+    const btn = document.getElementById('btn-volver-ficha-' + id);
+    if (btn) {
+        btn.addEventListener('click', () => {
+            const seccionFicha = document.getElementById('seccion-ficha-' + id);
+            const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+            const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+            cambiarSeccion(seccionOrigen || document.getElementById('seccion-isabela-merced'));
+        });
+    }
+});
+['the-last-of-us-serie', 'tlou-t1', 'tlou-t2'].forEach(id => {
+    const btn = document.getElementById('btn-volver-ficha-' + id);
+    if (btn) {
+        btn.addEventListener('click', () => {
+            const seccionFicha = document.getElementById('seccion-ficha-' + id);
+            const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+            const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+            cambiarSeccion(seccionOrigen || document.getElementById('seccion-the-last-of-us-serie'));
+        });
+    }
+});
+
+const btnVolverFichaCodWaw = document.getElementById('btn-volver-ficha-call-of-duty-world-at-war');
+if (btnVolverFichaCodWaw) {
+    btnVolverFichaCodWaw.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-call-of-duty-world-at-war');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-call-of-duty'));
+    });
+}
+const btnRequisitosCodWaw = document.getElementById('btn-requisitos-call-of-duty-world-at-war');
+if (btnRequisitosCodWaw) {
+    btnRequisitosCodWaw.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-call-of-duty-world-at-war'));
+    });
+}
+const btnVolverRequisitosCodWaw = document.getElementById('btn-volver-requisitos-call-of-duty-world-at-war');
+if (btnVolverRequisitosCodWaw) {
+    btnVolverRequisitosCodWaw.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-call-of-duty-world-at-war'));
+    });
+}
+const REQUISITOS_CALL_OF_DUTY_WAW = {
+    minimos: { so: "Windows XP, Windows Vista o Windows 7", cpu: "Intel Pentium 4 (3.0 GHz) o AMD Athlon 64 3200+", ram: "1", almacenamiento: "8", directx: "DirectX 9.0c", gpu: "256 MB de VRAM compatible con Shader 3.0 (NVIDIA GeForce 6600 o ATI Radeon X1600 / 1600XT)" }
+};
+
+const btnVolverFichaCod4 = document.getElementById('btn-volver-ficha-call-of-duty-4-modern-warfare');
+if (btnVolverFichaCod4) {
+    btnVolverFichaCod4.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-call-of-duty-4-modern-warfare');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-call-of-duty'));
+    });
+}
+const btnRequisitosCod4 = document.getElementById('btn-requisitos-call-of-duty-4-modern-warfare');
+if (btnRequisitosCod4) {
+    btnRequisitosCod4.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-requisitos-call-of-duty-4-modern-warfare'));
+    });
+}
+const btnVolverRequisitosCod4 = document.getElementById('btn-volver-requisitos-call-of-duty-4-modern-warfare');
+if (btnVolverRequisitosCod4) {
+    btnVolverRequisitosCod4.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-ficha-call-of-duty-4-modern-warfare'));
+    });
+}
+const REQUISITOS_CALL_OF_DUTY_4 = {
+    minimos: { so: "Windows XP o Windows Vista (también funciona en versiones más nuevas, como Windows 7, 8 y 10)", cpu: "Intel Pentium 4 (2.4 GHz) o AMD Athlon 64 2800+ (o Dual Core a 1.8 GHz)", ram: "0.75", almacenamiento: "8", directx: "DirectX 9.0c", gpu: "NVIDIA GeForce 6600 o ATI Radeon 9800 Pro con 128 MB de VRAM" }
+};
+
+['man-of-steel', 'batman-v-superman'].forEach(id => {
+    const btn = document.getElementById('btn-volver-ficha-' + id);
+    if (btn) {
+        btn.addEventListener('click', () => {
+            const seccionFicha = document.getElementById('seccion-ficha-' + id);
+            const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+            const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+            cambiarSeccion(seccionOrigen || document.getElementById('seccion-dceu-principal'));
+        });
+    }
+});
+
+['shang-chi', 'eternals'].forEach(id => {
+    const btn = document.getElementById('btn-volver-ficha-' + id);
+    if (btn) {
+        btn.addEventListener('click', () => {
+            const seccionFicha = document.getElementById('seccion-ficha-' + id);
+            const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+            const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+            cambiarSeccion(seccionOrigen || document.getElementById('seccion-mcu-multiverso'));
+        });
+    }
+});
+
 const btnVolverFichaLegoJurassicWorld = document.getElementById('btn-volver-ficha-lego-jurassic-world');
 
 
@@ -11051,7 +11419,59 @@ const FICHAS_TECNICAS_TITULOS = {
     "spiderman-far-from-home": "Spider-Man: Far From Home",
     "dune-parte-uno": "Dune: Parte Uno",
     "dune-parte-dos": "Dune: Parte Dos",
-    "dune-prophecy": "Dune: Prophecy"
+    "dune-prophecy": "Dune: Prophecy",
+    "the-new-mutants": "The New Mutants",
+    "assassins-creed-rogue": "Assassin's Creed: Rogue",
+    "incendies": "Incendies",
+    "prisoners": "Prisoners",
+    "enemy": "Enemy",
+    "sicario": "Sicario",
+    "arrival": "Arrival",
+    "blade-runner-2049": "Blade Runner 2049",
+    "maelstrom": "Maelström",
+    "power-of-the-dog": "El Poder del Perro",
+    "belfast-2021": "Belfast",
+    "drive-my-car": "Drive My Car",
+    "licorice-pizza": "Licorice Pizza",
+    "west-side-story-2021": "West Side Story",
+    "king-richard": "Rey Richard",
+    "tick-tick-boom": "Tick, Tick... Boom!",
+    "tragedy-of-macbeth": "The Tragedy of Macbeth",
+    "being-the-ricardos": "Being The Ricardos",
+    "eyes-of-tammy-faye": "Los Ojos de Tammy Faye",
+    "lost-daughter": "The Lost Daughter",
+    "parallel-mothers": "Parallel Mothers",
+    "spencer-2021": "Spencer",
+    "guardians-of-the-galaxy-1": "Guardians of The Galaxy",
+    "ant-man-1": "Ant-Man",
+    "guardians-of-the-galaxy-2": "Guardians of the Galaxy Vol. 2",
+    "thor-ragnarok": "Thor: Ragnarok",
+    "ant-man-and-the-wasp": "Ant-Man and The Wasp",
+    "captain-marvel": "Captain Marvel",
+    "avengers-endgame": "Avengers: Endgame",
+    "wandavision": "WandaVision",
+    "falcon-winter-soldier": "The Falcon and The Winter Soldier",
+    "black-widow-2021": "Black Widow",
+    "spirit-untamed": "Spirit Untamed",
+    "sweet-girl": "Sweet Girl",
+    "maya-and-the-three": "Maya and the Three",
+    "spirit-and-friends": "Spirit & Friends",
+    "father-of-the-bride-2022": "Father of the Bride",
+    "rosaline": "Rosaline",
+    "migration-2023": "¡Patos!",
+    "madame-web": "Madame Web",
+    "rock-paper-scissors": "Rock, Paper, Scissors",
+    "turtles-all-the-way-down": "Turtles All the Way Down",
+    "alien-romulus": "Alien: Romulus",
+    "the-last-of-us-serie": "The Last of Us (Serie)",
+    "tlou-t1": "The Last of Us Temporada 1",
+    "tlou-t2": "The Last of Us Temporada 2",
+    "call-of-duty-world-at-war": "Call of Duty: World at War",
+    "call-of-duty-4-modern-warfare": "Call of Duty 4: Modern Warfare",
+    "man-of-steel": "Man of Steel",
+    "batman-v-superman": ["Batman v Superman", "Batman v Superman: Dawn of Justice"],
+    "shang-chi": "Shang-Chi",
+    "eternals": "Eternals"
 };
 
 // Casos con id de sección no estándar (no siguen "seccion-ficha-<id>").
@@ -11059,7 +11479,19 @@ const FICHAS_TECNICAS_SECCION_ESPECIAL = {
     "marvels-avengers-real": { seccionId: "seccion-marvels-avengers", titulo: "Marvel's Avengers" }
 };
 
+// Acepta un título o una lista de títulos (para películas que figuran con
+// más de un nombre en el sitio) y devuelve las colecciones sin repetir.
 function calcularColeccionesRelacionadas(titulo) {
+    if (!Array.isArray(titulo)) return calcularColeccionesRelacionadasUnTitulo(titulo);
+    const vistas = new Set();
+    const resultado = [];
+    titulo.forEach(t => calcularColeccionesRelacionadasUnTitulo(t).forEach(col => {
+        if (!vistas.has(col.id)) { vistas.add(col.id); resultado.push(col); }
+    }));
+    return resultado;
+}
+
+function calcularColeccionesRelacionadasUnTitulo(titulo) {
     const encontradas = [];
     const idsYaAgregados = new Set();
 
@@ -12124,6 +12556,614 @@ const REPARTO_PELICULAS = {
             { actor: "Jade Anouka", personaje: "Sor Jen" },
             { actor: "Sarah-Sofie Boussnina", personaje: "Joven Tula Harkonnen" }
         ]
+    },
+    "the-new-mutants": {
+        director: "Josh Boone",
+        elenco: [
+            { actor: "Maisie Williams", personaje: "Rahne Sinclair / Wolfsbane" },
+            { actor: "Anya Taylor-Joy", personaje: "Illyana Rasputin / Magik" },
+            { actor: "Charlie Heaton", personaje: "Sam Guthrie / Cannonball" },
+            { actor: "Alice Braga", personaje: "Dra. Cecilia Reyes" },
+            { actor: "Blu Hunt", personaje: "Dani Moonstar / Mirage" },
+            { actor: "Henry Zaga", personaje: "Roberto da Costa / Sunspot" }
+        ]
+    },
+    "assassins-creed-rogue": {
+        director: "Ubisoft Sofia",
+        elenco: [
+            { actor: "Steven Piovesan", personaje: "Shay Patrick Cormac (voz)" },
+            { actor: "Andreas Apergis", personaje: "Juhani Otso Berg (voz)" },
+            { actor: "Lucinda Davis", personaje: "Violet da Costa (voz)" },
+            { actor: "Stefanie Buxton", personaje: "Cassidy Finnegan (voz)" },
+            { actor: "Julian Casey", personaje: "Liam O'Brien (voz)" },
+            { actor: "Al Goulem", personaje: "Samuel Smith (voz)" },
+            { actor: "Vincent Hoss-Desmarais", personaje: "James Wardrop (voz)" },
+            { actor: "Adrian Hough", personaje: "Haytham Kenway (voz)" }
+        ]
+    },
+    "incendies": {
+        director: "Denis Villeneuve",
+        elenco: [
+            { actor: "Lubna Azabal", personaje: "Nawal Marwan" },
+            { actor: "Mélissa Désormeaux-Poulin", personaje: "Jeanne Marwan" },
+            { actor: "Maxim Gaudette", personaje: "Simon Marwan" },
+            { actor: "Rémy Girard", personaje: "Notario Lebel" }
+        ]
+    },
+    "prisoners": {
+        director: "Denis Villeneuve",
+        elenco: [
+            { actor: "Hugh Jackman", personaje: "Keller Dover" },
+            { actor: "Jake Gyllenhaal", personaje: "Detective Loki" },
+            { actor: "Viola Davis", personaje: "Nancy Birch" },
+            { actor: "Maria Bello", personaje: "Grace Dover" },
+            { actor: "Terrence Howard", personaje: "Franklin Birch" },
+            { actor: "Melissa Leo", personaje: "Holly Jones" },
+            { actor: "Paul Dano", personaje: "Alex Jones" }
+        ]
+    },
+    "enemy": {
+        director: "Denis Villeneuve",
+        elenco: [
+            { actor: "Jake Gyllenhaal", personaje: "Adam Bell / Anthony Claire" },
+            { actor: "Mélanie Laurent", personaje: "Mary" },
+            { actor: "Sarah Gadon", personaje: "Helen" },
+            { actor: "Isabella Rossellini", personaje: "Madre de Adam" }
+        ]
+    },
+    "sicario": {
+        director: "Denis Villeneuve",
+        elenco: [
+            { actor: "Emily Blunt", personaje: "Kate Macer" },
+            { actor: "Benicio del Toro", personaje: "Alejandro Gillick" },
+            { actor: "Josh Brolin", personaje: "Matt Graver" },
+            { actor: "Victor Garber", personaje: "Dave Jennings" },
+            { actor: "Jon Bernthal", personaje: "Ted" },
+            { actor: "Daniel Kaluuya", personaje: "Reggie Wayne" }
+        ]
+    },
+    "arrival": {
+        director: "Denis Villeneuve",
+        elenco: [
+            { actor: "Amy Adams", personaje: "Louise Banks" },
+            { actor: "Jeremy Renner", personaje: "Ian Donnelly" },
+            { actor: "Forest Whitaker", personaje: "Coronel Weber" },
+            { actor: "Michael Stuhlbarg", personaje: "Agente Halpern" }
+        ]
+    },
+    "blade-runner-2049": {
+        director: "Denis Villeneuve",
+        elenco: [
+            { actor: "Ryan Gosling", personaje: "K" },
+            { actor: "Harrison Ford", personaje: "Rick Deckard" },
+            { actor: "Ana de Armas", personaje: "Joi" },
+            { actor: "Sylvia Hoeks", personaje: "Luv" },
+            { actor: "Robin Wright", personaje: "Teniente Joshi" },
+            { actor: "Jared Leto", personaje: "Niander Wallace" },
+            { actor: "Dave Bautista", personaje: "Sapper Morton" },
+            { actor: "Mackenzie Davis", personaje: "Mariette" }
+        ]
+    },
+    "maelstrom": {
+        director: "Denis Villeneuve",
+        elenco: [
+            { actor: "Marie-Josée Croze", personaje: "Bibiane Champagne" },
+            { actor: "Jean-Nicolas Verreault", personaje: "Evian" },
+            { actor: "Stephanie Morgenstern", personaje: "Claire Gunderson" },
+            { actor: "Pierre Lebeau", personaje: "El Pez (narrador, voz)" }
+        ]
+    },
+    "power-of-the-dog": {
+        director: "Jane Campion",
+        elenco: [
+            { actor: "Benedict Cumberbatch", personaje: "Phil Burbank" },
+            { actor: "Kirsten Dunst", personaje: "Rose Gordon" },
+            { actor: "Jesse Plemons", personaje: "George Burbank" },
+            { actor: "Kodi Smit-McPhee", personaje: "Peter Gordon" }
+        ]
+    },
+    "belfast-2021": {
+        director: "Kenneth Branagh",
+        elenco: [
+            { actor: "Jude Hill", personaje: "Buddy" },
+            { actor: "Caitríona Balfe", personaje: "Ma" },
+            { actor: "Jamie Dornan", personaje: "Pa" },
+            { actor: "Judi Dench", personaje: "Granny" },
+            { actor: "Ciarán Hinds", personaje: "Pop" }
+        ]
+    },
+    "drive-my-car": {
+        director: "Ryusuke Hamaguchi",
+        elenco: [
+            { actor: "Hidetoshi Nishijima", personaje: "Yusuke Kafuku" },
+            { actor: "Tōko Miura", personaje: "Misaki Watari" },
+            { actor: "Masaki Okada", personaje: "Kōji Takatsuki" },
+            { actor: "Reika Kirishima", personaje: "Oto Kafuku" }
+        ]
+    },
+    "licorice-pizza": {
+        director: "Paul Thomas Anderson",
+        elenco: [
+            { actor: "Alana Haim", personaje: "Alana Kane" },
+            { actor: "Cooper Hoffman", personaje: "Gary Valentine" },
+            { actor: "Sean Penn", personaje: "Jack Holden" },
+            { actor: "Bradley Cooper", personaje: "Jon Peters" }
+        ]
+    },
+    "west-side-story-2021": {
+        director: "Steven Spielberg",
+        elenco: [
+            { actor: "Ansel Elgort", personaje: "Tony" },
+            { actor: "Rachel Zegler", personaje: "María" },
+            { actor: "Ariana DeBose", personaje: "Anita" },
+            { actor: "David Alvarez", personaje: "Bernardo" },
+            { actor: "Rita Moreno", personaje: "Valentina" }
+        ]
+    },
+    "king-richard": {
+        director: "Reinaldo Marcus Green",
+        elenco: [
+            { actor: "Will Smith", personaje: "Richard Williams" },
+            { actor: "Aunjanue Ellis", personaje: "Oracene 'Brandy' Price" },
+            { actor: "Saniyya Sidney", personaje: "Venus Williams" },
+            { actor: "Demi Singleton", personaje: "Serena Williams" }
+        ]
+    },
+    "tick-tick-boom": {
+        director: "Lin-Manuel Miranda",
+        elenco: [
+            { actor: "Andrew Garfield", personaje: "Jonathan Larson" },
+            { actor: "Alexandra Shipp", personaje: "Susan" },
+            { actor: "Robin de Jesús", personaje: "Michael" },
+            { actor: "Vanessa Hudgens", personaje: "Karessa" }
+        ]
+    },
+    "tragedy-of-macbeth": {
+        director: "Joel Coen",
+        elenco: [
+            { actor: "Denzel Washington", personaje: "Lord Macbeth" },
+            { actor: "Frances McDormand", personaje: "Lady Macbeth" },
+            { actor: "Corey Hawkins", personaje: "Macduff" },
+            { actor: "Bertie Carvel", personaje: "Banquo" }
+        ]
+    },
+    "being-the-ricardos": {
+        director: "Aaron Sorkin",
+        elenco: [
+            { actor: "Nicole Kidman", personaje: "Lucille Ball" },
+            { actor: "Javier Bardem", personaje: "Desi Arnaz" },
+            { actor: "J.K. Simmons", personaje: "William Frawley" },
+            { actor: "Nina Arianda", personaje: "Vivian Vance" }
+        ]
+    },
+    "eyes-of-tammy-faye": {
+        director: "Michael Showalter",
+        elenco: [
+            { actor: "Jessica Chastain", personaje: "Tammy Faye Bakker" },
+            { actor: "Andrew Garfield", personaje: "Jim Bakker" },
+            { actor: "Cherry Jones", personaje: "Rachel Grover" },
+            { actor: "Vincent D'Onofrio", personaje: "Jerry Falwell" }
+        ]
+    },
+    "lost-daughter": {
+        director: "Maggie Gyllenhaal",
+        elenco: [
+            { actor: "Olivia Colman", personaje: "Leda Caruso" },
+            { actor: "Jessie Buckley", personaje: "Joven Leda" },
+            { actor: "Dakota Johnson", personaje: "Nina" },
+            { actor: "Ed Harris", personaje: "Lyle" }
+        ]
+    },
+    "parallel-mothers": {
+        director: "Pedro Almodóvar",
+        elenco: [
+            { actor: "Penélope Cruz", personaje: "Janis Martínez" },
+            { actor: "Milena Smit", personaje: "Ana" },
+            { actor: "Aitana Sánchez-Gijón", personaje: "Teresa" },
+            { actor: "Israel Elejalde", personaje: "Arturo" }
+        ]
+    },
+    "spencer-2021": {
+        director: "Pablo Larraín",
+        elenco: [
+            { actor: "Kristen Stewart", personaje: "Diana, Princesa de Gales" },
+            { actor: "Timothy Spall", personaje: "Mayor Alistair Gregory" },
+            { actor: "Jack Farthing", personaje: "Príncipe Carlos" },
+            { actor: "Sally Hawkins", personaje: "Maggie" }
+        ]
+    },
+    "guardians-of-the-galaxy-1": {
+        director: "James Gunn",
+        elenco: [
+            { actor: "Chris Pratt", personaje: "Peter Quill / Star-Lord" },
+            { actor: "Zoe Saldana", personaje: "Gamora" },
+            { actor: "Dave Bautista", personaje: "Drax" },
+            { actor: "Vin Diesel", personaje: "Groot (voz)" },
+            { actor: "Bradley Cooper", personaje: "Rocket (voz)" },
+            { actor: "Lee Pace", personaje: "Ronan" },
+            { actor: "Michael Rooker", personaje: "Yondu Udonta" },
+            { actor: "Karen Gillan", personaje: "Nebula" },
+            { actor: "Djimon Hounsou", personaje: "Korath" },
+            { actor: "John C. Reilly", personaje: "Rhomann Dey" },
+            { actor: "Glenn Close", personaje: "Nova Prime" },
+            { actor: "Benicio del Toro", personaje: "El Coleccionista" }
+        ]
+    },
+    "ant-man-1": {
+        director: "Peyton Reed",
+        elenco: [
+            { actor: "Paul Rudd", personaje: "Scott Lang / Ant-Man" },
+            { actor: "Michael Douglas", personaje: "Dr. Hank Pym" },
+            { actor: "Evangeline Lilly", personaje: "Hope van Dyne" },
+            { actor: "Corey Stoll", personaje: "Darren Cross / Yellowjacket" },
+            { actor: "Bobby Cannavale", personaje: "Paxton" },
+            { actor: "Anthony Mackie", personaje: "Sam Wilson / Falcon" },
+            { actor: "Judy Greer", personaje: "Maggie Lang" },
+            { actor: "Michael Peña", personaje: "Luis" },
+            { actor: "David Dastmalchian", personaje: "Kurt" },
+            { actor: "Hayley Atwell", personaje: "Peggy Carter" }
+        ]
+    },
+    "guardians-of-the-galaxy-2": {
+        director: "James Gunn",
+        elenco: [
+            { actor: "Chris Pratt", personaje: "Peter Quill / Star-Lord" },
+            { actor: "Zoe Saldana", personaje: "Gamora" },
+            { actor: "Dave Bautista", personaje: "Drax" },
+            { actor: "Vin Diesel", personaje: "Baby Groot (voz)" },
+            { actor: "Bradley Cooper", personaje: "Rocket (voz)" },
+            { actor: "Kurt Russell", personaje: "Ego" },
+            { actor: "Michael Rooker", personaje: "Yondu" },
+            { actor: "Karen Gillan", personaje: "Nebula" },
+            { actor: "Pom Klementieff", personaje: "Mantis" },
+            { actor: "Sylvester Stallone", personaje: "Stakar Ogord" },
+            { actor: "Elizabeth Debicki", personaje: "Ayesha" },
+            { actor: "Chris Sullivan", personaje: "Taserface" }
+        ]
+    },
+    "thor-ragnarok": {
+        director: "Taika Waititi",
+        elenco: [
+            { actor: "Chris Hemsworth", personaje: "Thor" },
+            { actor: "Mark Ruffalo", personaje: "Bruce Banner / Hulk" },
+            { actor: "Tom Hiddleston", personaje: "Loki" },
+            { actor: "Cate Blanchett", personaje: "Hela" },
+            { actor: "Idris Elba", personaje: "Heimdall" },
+            { actor: "Jeff Goldblum", personaje: "Grandmaster" },
+            { actor: "Tessa Thompson", personaje: "Valkyrie" },
+            { actor: "Karl Urban", personaje: "Skurge" },
+            { actor: "Anthony Hopkins", personaje: "Odín" },
+            { actor: "Benedict Cumberbatch", personaje: "Doctor Strange" },
+            { actor: "Taika Waititi", personaje: "Korg (voz)" }
+        ]
+    },
+    "ant-man-and-the-wasp": {
+        director: "Peyton Reed",
+        elenco: [
+            { actor: "Paul Rudd", personaje: "Scott Lang / Ant-Man" },
+            { actor: "Evangeline Lilly", personaje: "Hope van Dyne / Wasp" },
+            { actor: "Michael Douglas", personaje: "Dr. Hank Pym" },
+            { actor: "Michelle Pfeiffer", personaje: "Janet van Dyne" },
+            { actor: "Laurence Fishburne", personaje: "Dr. Bill Foster" },
+            { actor: "Hannah John-Kamen", personaje: "Ava / Ghost" },
+            { actor: "Walton Goggins", personaje: "Sonny Burch" },
+            { actor: "Michael Peña", personaje: "Luis" },
+            { actor: "Randall Park", personaje: "Jimmy Woo" },
+            { actor: "Judy Greer", personaje: "Maggie Lang" },
+            { actor: "Bobby Cannavale", personaje: "Paxton" },
+            { actor: "David Dastmalchian", personaje: "Kurt" }
+        ]
+    },
+    "captain-marvel": {
+        director: "Anna Boden, Ryan Fleck",
+        elenco: [
+            { actor: "Brie Larson", personaje: "Carol Danvers / Capitana Marvel" },
+            { actor: "Samuel L. Jackson", personaje: "Nick Fury" },
+            { actor: "Ben Mendelsohn", personaje: "Talos" },
+            { actor: "Jude Law", personaje: "Yon-Rogg" },
+            { actor: "Annette Bening", personaje: "Supreme Intelligence / Dra. Lawson" },
+            { actor: "Lashana Lynch", personaje: "Maria Rambeau" },
+            { actor: "Djimon Hounsou", personaje: "Korath" },
+            { actor: "Gemma Chan", personaje: "Minn-Erva" },
+            { actor: "Clark Gregg", personaje: "Phil Coulson" },
+            { actor: "Lee Pace", personaje: "Ronan" }
+        ]
+    },
+    "avengers-endgame": {
+        director: "Anthony Russo, Joe Russo",
+        elenco: [
+            { actor: "Robert Downey Jr.", personaje: "Tony Stark / Iron Man" },
+            { actor: "Chris Evans", personaje: "Steve Rogers / Capitán América" },
+            { actor: "Mark Ruffalo", personaje: "Bruce Banner / Hulk" },
+            { actor: "Chris Hemsworth", personaje: "Thor" },
+            { actor: "Scarlett Johansson", personaje: "Natasha Romanoff / Black Widow" },
+            { actor: "Jeremy Renner", personaje: "Clint Barton / Hawkeye" },
+            { actor: "Don Cheadle", personaje: "James Rhodes / War Machine" },
+            { actor: "Paul Rudd", personaje: "Scott Lang / Ant-Man" },
+            { actor: "Brie Larson", personaje: "Carol Danvers / Capitana Marvel" },
+            { actor: "Karen Gillan", personaje: "Nebula" },
+            { actor: "Danai Gurira", personaje: "Okoye" },
+            { actor: "Josh Brolin", personaje: "Thanos" }
+        ]
+    },
+    "wandavision": {
+        director: "Jac Schaeffer (creadora), Matt Shakman",
+        elenco: [
+            { actor: "Elizabeth Olsen", personaje: "Wanda Maximoff / Bruja Escarlata" },
+            { actor: "Paul Bettany", personaje: "Vision" },
+            { actor: "Kathryn Hahn", personaje: "Agnes / Agatha Harkness" },
+            { actor: "Teyonah Parris", personaje: "Monica Rambeau" },
+            { actor: "Randall Park", personaje: "Jimmy Woo" },
+            { actor: "Kat Dennings", personaje: "Darcy Lewis" }
+        ]
+    },
+    "falcon-winter-soldier": {
+        director: "Malcolm Spellman (guionista principal), Kari Skogland",
+        elenco: [
+            { actor: "Anthony Mackie", personaje: "Sam Wilson / Falcon" },
+            { actor: "Sebastian Stan", personaje: "Bucky Barnes / Soldado de Invierno" },
+            { actor: "Wyatt Russell", personaje: "John Walker" },
+            { actor: "Erin Kellyman", personaje: "Karli Morgenthau" },
+            { actor: "Danny Ramirez", personaje: "Joaquin Torres" },
+            { actor: "Georges St-Pierre", personaje: "Batroc" },
+            { actor: "Emily VanCamp", personaje: "Sharon Carter" },
+            { actor: "Daniel Brühl", personaje: "Helmut Zemo" },
+            { actor: "Don Cheadle", personaje: "James Rhodes" }
+        ]
+    },
+    "black-widow-2021": {
+        director: "Cate Shortland",
+        elenco: [
+            { actor: "Scarlett Johansson", personaje: "Natasha Romanoff / Black Widow" },
+            { actor: "Florence Pugh", personaje: "Yelena Belova" },
+            { actor: "David Harbour", personaje: "Alexei Shostakov / Red Guardian" },
+            { actor: "Rachel Weisz", personaje: "Melina Vostokoff" },
+            { actor: "O-T Fagbenle", personaje: "Rick Mason" },
+            { actor: "Olga Kurylenko", personaje: "Antonia Dreykov / Taskmaster" },
+            { actor: "William Hurt", personaje: "Thaddeus Ross" },
+            { actor: "Ray Winstone", personaje: "Dreykov" }
+        ]
+    },
+    "spirit-untamed": {
+        director: "Elaine Bogan, Ennio Torresan Jr.",
+        elenco: [
+            { actor: "Isabela Merced", personaje: "Lucky Prescott (voz)" },
+            { actor: "Jake Gyllenhaal", personaje: "Jim Prescott (voz)" },
+            { actor: "Julianne Moore", personaje: "Cora Prescott (voz)" },
+            { actor: "Marsai Martin", personaje: "Pru Granger (voz)" },
+            { actor: "Mckenna Grace", personaje: "Abigail Stone (voz)" },
+            { actor: "Eiza González", personaje: "Milagro Navarro (voz)" },
+            { actor: "Walton Goggins", personaje: "Hendricks (voz)" },
+            { actor: "Andre Braugher", personaje: "Al Granger (voz)" }
+        ]
+    },
+    "sweet-girl": {
+        director: "Brian Andrew Mendoza",
+        elenco: [
+            { actor: "Jason Momoa", personaje: "Ray Cooper" },
+            { actor: "Isabela Merced", personaje: "Rachel Cooper" },
+            { actor: "Manuel Garcia-Rulfo", personaje: "Amos Santos" },
+            { actor: "Amy Brenneman", personaje: "Diana Morgan" },
+            { actor: "Adria Arjona", personaje: "Amanda Cooper" },
+            { actor: "Justin Bartha", personaje: "Simon Keeley" },
+            { actor: "Raza Jaffrey", personaje: "Vinod Shah" },
+            { actor: "Lex Scott Davis", personaje: "Sarah Meeker" }
+        ]
+    },
+    "maya-and-the-three": {
+        director: "Jorge R. Gutiérrez (creador)",
+        elenco: [
+            { actor: "Isabela Merced", personaje: "Widow Queen (voz)" },
+            { actor: "Jorge R. Gutiérrez", personaje: "Rey Teca (voz)" },
+            { actor: "Sandra Equihua", personaje: "Reina Teca (voz)" },
+            { actor: "John DiMaggio", personaje: "Bear Killah (voz)" }
+        ]
+    },
+    "spirit-and-friends": {
+        director: "Andrew Wilson",
+        elenco: [
+            { actor: "Isabela Merced", personaje: "Lucky Prescott (voz)" },
+            { actor: "Mckenna Grace", personaje: "Abigail Stone (voz)" },
+            { actor: "Marsai Martin", personaje: "Pru Granger (voz)" },
+            { actor: "Mara Junot", personaje: "Sra. Johnson (voz)" }
+        ]
+    },
+    "father-of-the-bride-2022": {
+        director: "Gary Alazraki",
+        elenco: [
+            { actor: "Andy Garcia", personaje: "Billy Herrera" },
+            { actor: "Gloria Estefan", personaje: "Ingrid Herrera" },
+            { actor: "Adria Arjona", personaje: "Sofia Herrera" },
+            { actor: "Isabela Merced", personaje: "Cora Herrera" },
+            { actor: "Diego Boneta", personaje: "Adan Castillo" },
+            { actor: "Pedro Damián", personaje: "Hernan Castillo" },
+            { actor: "Chloe Fineman", personaje: "Natalie Vance" }
+        ]
+    },
+    "rosaline": {
+        director: "Karen Maine",
+        elenco: [
+            { actor: "Kaitlyn Dever", personaje: "Rosaline" },
+            { actor: "Isabela Merced", personaje: "Julieta" },
+            { actor: "Kyle Allen", personaje: "Romeo" },
+            { actor: "Sean Teale", personaje: "Dario" },
+            { actor: "Christopher McDonald", personaje: "Lord Capuleto" },
+            { actor: "Minnie Driver", personaje: "Nana Janet" },
+            { actor: "Bradley Whitford", personaje: "Adrian Capuleto" }
+        ]
+    },
+    "migration-2023": {
+        director: "Benjamin Renner",
+        elenco: [
+            { actor: "Kumail Nanjiani", personaje: "Mack (voz)" },
+            { actor: "Elizabeth Banks", personaje: "Pam (voz)" },
+            { actor: "Awkwafina", personaje: "Chump (voz)" },
+            { actor: "Keegan-Michael Key", personaje: "Delroy (voz)" },
+            { actor: "David Mitchell", personaje: "Goo Goo (voz)" },
+            { actor: "Danny DeVito", personaje: "Tío Dan (voz)" },
+            { actor: "Tresi Gazal", personaje: "Gwen (voz)" },
+            { actor: "Caspar Jennings", personaje: "Dax (voz)" },
+            { actor: "Isabela Merced", personaje: "Kim (voz)" },
+            { actor: "Carol Kane", personaje: "Erin (voz)" }
+        ]
+    },
+    "madame-web": {
+        director: "S.J. Clarkson",
+        elenco: [
+            { actor: "Dakota Johnson", personaje: "Cassandra Webb" },
+            { actor: "Sydney Sweeney", personaje: "Julia Cornwall" },
+            { actor: "Isabela Merced", personaje: "Anya Corazon" },
+            { actor: "Celeste O'Connor", personaje: "Mattie Franklin" },
+            { actor: "Tahar Rahim", personaje: "Ezekiel Sims" },
+            { actor: "Adam Scott", personaje: "Ben Parker" },
+            { actor: "Emma Roberts", personaje: "Mary Parker" }
+        ]
+    },
+    "rock-paper-scissors": {
+        director: "Kyle Stegina, Josh Lehrman (creadores)",
+        elenco: [
+            { actor: "Ron Funches", personaje: "Rock (voz)" },
+            { actor: "Thomas Lennon", personaje: "Paper (voz)" },
+            { actor: "Carlos Alazraqui", personaje: "Scissors (voz)" },
+            { actor: "Melissa Villaseñor", personaje: "Pencil (voz)" },
+            { actor: "Isabela Merced", personaje: "The Susan (voz)" },
+            { actor: "Alessia Cara", personaje: "Lolly (voz)" },
+            { actor: "Jason Alexander", personaje: "Jonathan FartJoke (voz)" }
+        ]
+    },
+    "turtles-all-the-way-down": {
+        director: "Hannah Marks",
+        elenco: [
+            { actor: "Isabela Merced", personaje: "Aza Holmes" },
+            { actor: "Cree Cicchino", personaje: "Daisy" },
+            { actor: "Felix Mallard", personaje: "Davis" },
+            { actor: "Maliq Johnson", personaje: "Mychal" },
+            { actor: "Poorna Jagannathan", personaje: "Dra. Kira Singh" }
+        ]
+    },
+    "alien-romulus": {
+        director: "Fede Álvarez",
+        elenco: [
+            { actor: "Cailee Spaeny", personaje: "Rain Carradine" },
+            { actor: "David Jonsson", personaje: "Andy" },
+            { actor: "Archie Renaux", personaje: "Tyler" },
+            { actor: "Isabela Merced", personaje: "Kay" },
+            { actor: "Spike Fearn", personaje: "Bjorn" },
+            { actor: "Aileen Wu", personaje: "Navarro" }
+        ]
+    },
+    "the-last-of-us-serie": {
+        director: "Craig Mazin, Neil Druckmann (creadores)",
+        elenco: [
+            { actor: "Pedro Pascal", personaje: "Joel Miller" },
+            { actor: "Bella Ramsey", personaje: "Ellie" },
+            { actor: "Gabriel Luna", personaje: "Tommy Miller" },
+            { actor: "Isabela Merced", personaje: "Dina" },
+            { actor: "Young Mazino", personaje: "Jesse" },
+            { actor: "Kaitlyn Dever", personaje: "Abby" }
+        ]
+    },
+    "tlou-t1": {
+        director: "Craig Mazin, Neil Druckmann (creadores)",
+        elenco: [
+            { actor: "Pedro Pascal", personaje: "Joel Miller" },
+            { actor: "Bella Ramsey", personaje: "Ellie" },
+            { actor: "Gabriel Luna", personaje: "Tommy Miller" }
+        ]
+    },
+    "tlou-t2": {
+        director: "Craig Mazin, Neil Druckmann (creadores)",
+        elenco: [
+            { actor: "Pedro Pascal", personaje: "Joel Miller" },
+            { actor: "Bella Ramsey", personaje: "Ellie" },
+            { actor: "Gabriel Luna", personaje: "Tommy Miller" },
+            { actor: "Isabela Merced", personaje: "Dina" },
+            { actor: "Young Mazino", personaje: "Jesse" },
+            { actor: "Kaitlyn Dever", personaje: "Abby" }
+        ]
+    },
+    "call-of-duty-world-at-war": {
+        director: "Treyarch",
+        elenco: [
+            { actor: "Gary Oldman", personaje: "Sgt. Viktor Reznov (voz)" },
+            { actor: "Kiefer Sutherland", personaje: "Sgt. Roebuck (voz)" },
+            { actor: "Craig Houston", personaje: "Pvt. Chernov (voz)" },
+            { actor: "Chris Fries", personaje: "Sgt. Sullivan (voz)" },
+            { actor: "Aaron Stanford", personaje: "Pvt. Polonsky (voz)" },
+            { actor: "Dimitri Diatchenko", personaje: "El Comisario (voz)" }
+        ]
+    },
+    "call-of-duty-4-modern-warfare": {
+        director: "Infinity Ward",
+        elenco: [
+            { actor: "Billy Murray", personaje: "Capitán John Price (voz)" },
+            { actor: "Craig Fairbrass", personaje: "Gaz (voz)" },
+            { actor: "David Sobolov", personaje: "Teniente Vasquez (voz)" },
+            { actor: "Mark Grigsby", personaje: "Sargento Griggs (voz)" },
+            { actor: "Zach Hanks", personaje: "Capitán MacMillan (voz)" }
+        ]
+    },
+    "man-of-steel": {
+        director: "Zack Snyder",
+        elenco: [
+            { actor: "Henry Cavill", personaje: "Clark Kent / Kal-El / Superman" },
+            { actor: "Amy Adams", personaje: "Lois Lane" },
+            { actor: "Michael Shannon", personaje: "General Zod" },
+            { actor: "Kevin Costner", personaje: "Jonathan Kent" },
+            { actor: "Diane Lane", personaje: "Martha Kent" },
+            { actor: "Russell Crowe", personaje: "Jor-El" },
+            { actor: "Laurence Fishburne", personaje: "Perry White" },
+            { actor: "Antje Traue", personaje: "Faora-Ul" },
+            { actor: "Ayelet Zurer", personaje: "Lara Lor-Van" },
+            { actor: "Christopher Meloni", personaje: "Coronel Nathan Hardy" }
+        ]
+    },
+    "batman-v-superman": {
+        director: "Zack Snyder",
+        elenco: [
+            { actor: "Ben Affleck", personaje: "Bruce Wayne / Batman" },
+            { actor: "Henry Cavill", personaje: "Clark Kent / Superman" },
+            { actor: "Amy Adams", personaje: "Lois Lane" },
+            { actor: "Jesse Eisenberg", personaje: "Lex Luthor" },
+            { actor: "Gal Gadot", personaje: "Diana Prince / Wonder Woman" },
+            { actor: "Diane Lane", personaje: "Martha Kent" },
+            { actor: "Laurence Fishburne", personaje: "Perry White" },
+            { actor: "Jeremy Irons", personaje: "Alfred Pennyworth" },
+            { actor: "Holly Hunter", personaje: "Senadora Finch" },
+            { actor: "Scoot McNairy", personaje: "Wallace Keefe" }
+        ]
+    },
+    "shang-chi": {
+        director: "Destin Daniel Cretton",
+        elenco: [
+            { actor: "Simu Liu", personaje: "Shang-Chi / Shaun" },
+            { actor: "Awkwafina", personaje: "Katy" },
+            { actor: "Tony Leung", personaje: "Xu Wenwu / El Mandarín" },
+            { actor: "Meng'er Zhang", personaje: "Xu Xialing" },
+            { actor: "Fala Chen", personaje: "Ying Li" },
+            { actor: "Florian Munteanu", personaje: "Razor Fist" },
+            { actor: "Benedict Wong", personaje: "Wong" },
+            { actor: "Michelle Yeoh", personaje: "Ying Nan" },
+            { actor: "Ben Kingsley", personaje: "Trevor Slattery" },
+            { actor: "Tim Roth", personaje: "Emil Blonsky / Abominación" }
+        ]
+    },
+    "eternals": {
+        director: "Chloé Zhao",
+        elenco: [
+            { actor: "Gemma Chan", personaje: "Sersi" },
+            { actor: "Richard Madden", personaje: "Ikaris" },
+            { actor: "Angelina Jolie", personaje: "Thena" },
+            { actor: "Salma Hayek", personaje: "Ajak" },
+            { actor: "Kumail Nanjiani", personaje: "Kingo" },
+            { actor: "Lia McHugh", personaje: "Sprite" },
+            { actor: "Brian Tyree Henry", personaje: "Phastos" },
+            { actor: "Lauren Ridloff", personaje: "Makkari" },
+            { actor: "Barry Keoghan", personaje: "Druig" },
+            { actor: "Don Lee", personaje: "Gilgamesh" },
+            { actor: "Kit Harington", personaje: "Dane Whitman" },
+            { actor: "Harry Styles", personaje: "Eros" }
+        ]
     }
 };
 
@@ -12823,6 +13863,52 @@ const btnVolverGlenPowell = document.getElementById('btn-volver-glen-powell');
 if (btnVolverGlenPowell) {
     btnVolverGlenPowell.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-actores'));
+    });
+}
+
+// ==========================================
+// FILTROS "DENIS VILLENEUVE" (por década)
+// ==========================================
+const botonesFiltroVilleneuve = document.querySelectorAll('.btn-filtro-villeneuve');
+botonesFiltroVilleneuve.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroVilleneuve.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        aplicarFiltroTipoYDecadaActor('seccion-denis-villeneuve', 'btn-filtro-villeneuve');
+    });
+});
+inicializarFiltroTipoActor('seccion-denis-villeneuve', 'btn-filtro-villeneuve');
+
+const btnVolverDenisVilleneuve = document.getElementById('btn-volver-denis-villeneuve');
+if (btnVolverDenisVilleneuve) {
+    btnVolverDenisVilleneuve.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-directores'));
+    });
+}
+
+// ==========================================
+// FILTROS "ISABELA MERCED" (por década)
+// ==========================================
+const botonesFiltroIsabela = document.querySelectorAll('.btn-filtro-isabela');
+botonesFiltroIsabela.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroIsabela.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        aplicarFiltroTipoYDecadaActor('seccion-isabela-merced', 'btn-filtro-isabela');
+    });
+});
+inicializarFiltroTipoActor('seccion-isabela-merced', 'btn-filtro-isabela');
+
+const btnVolverIsabelaMerced = document.getElementById('btn-volver-isabela-merced');
+if (btnVolverIsabelaMerced) {
+    btnVolverIsabelaMerced.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-actores'));
+    });
+}
+const btnVolverTheLastOfUsSerie = document.getElementById('btn-volver-the-last-of-us-serie');
+if (btnVolverTheLastOfUsSerie) {
+    btnVolverTheLastOfUsSerie.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-isabela-merced'));
     });
 }
 
@@ -19110,3 +20196,189 @@ if (btnVolverBibliotecaAmigo) {
         cambiarSeccion(document.getElementById('seccion-amigos'));
     });
 }
+
+// ==========================================
+// FECHAS DE LANZAMIENTO DE VIDEOJUEGOS
+// (título tal como aparece en la tarjeta → "AAAA-MM-DD"; vacío = por confirmar)
+// ==========================================
+const FECHAS_JUEGOS = {
+    "Resident Evil": "1996-03-22",
+    "Silent Hill 2": "2001-09-24",
+    "Star Wars: Knights of the Old Republic": "2003-07-15",
+    "Star Wars: Battlefront (Clásico)": "2004-09-21",
+    "Star Wars: Battlefront II (Clásico)": "2005-11-01",
+    "LEGO Star Wars: The Complete Saga": "2007-11-06",
+    "Assassin's Creed": "2007-11-13",
+    "LEGO Indiana Jones: The Original Adventures": "2008-06-03",
+    "Star Wars: The Force Unleashed": "2008-09-16",
+    "LEGO Batman: The Videogame": "2008-09-23",
+    "Dead Space": "2008-10-14",
+    "Call of Duty: World at War": "2008-11-11",
+    "Batman: Arkham Asylum": "2009-08-25",
+    "Borderlands (2009)": "2009-10-20",
+    "LEGO Indiana Jones 2: The Adventure Continues": "2009-11-16",
+    "Assassin's Creed II": "2009-11-17",
+    "LEGO Harry Potter: Years 1-4": "2010-06-25",
+    "Star Wars: The Force Unleashed II": "2010-10-26",
+    "Assassin's Creed: Brotherhood": "2010-11-16",
+    "LEGO Star Wars III: The Clone Wars": "2011-03-22",
+    "LEGO Pirates of the Caribbean: The Video Game": "2011-05-10",
+    "Batman: Arkham City": "2011-10-18",
+    "LEGO Harry Potter: Years 5-7": "2011-11-11",
+    "Assassin's Creed: Revelations": "2011-11-15",
+    "LEGO Batman 2: DC Super Heroes": "2012-06-19",
+    "Borderlands 2": "2012-09-18",
+    "Assassin's Creed III": "2012-10-30",
+    "LEGO The Lord of the Rings": "2012-11-13",
+    "Tomb Raider (2013)": "2013-03-05",
+    "Injustice: Gods Among Us": "2013-04-16",
+    "Outlast": "2013-09-04",
+    "GTA V": "2013-09-17",
+    "LEGO Marvel Super Heroes": "2013-10-22",
+    "Batman: Arkham Origins": "2013-10-25",
+    "Assassin's Creed IV: Black Flag": "2013-10-29",
+    "LEGO: The Hobbit": "2014-04-08",
+    "Borderlands: The Pre-Sequel": "2014-10-14",
+    "Assassin's Creed: Rogue": "2014-11-11",
+    "Assassin's Creed: Unity": "2014-11-11",
+    "LEGO Batman 3: Beyond Gotham": "2014-11-11",
+    "Tales From The Borderlands": "2014-11-25",
+    "Dragon Ball Xenoverse": "2015-02-05",
+    "LEGO Jurassic World": "2015-06-12",
+    "Batman: Arkham Knight": "2015-06-23",
+    "Assassin's Creed: Syndicate": "2015-10-23",
+    "Rise of The Tomb Raider": "2015-11-10",
+    "Star Wars: Battlefront": "2015-11-17",
+    "LEGO Marvel's Avengers": "2016-01-26",
+    "Dead by Daylight": "2016-06-14",
+    "LEGO Star Wars: The Force Awakens": "2016-06-28",
+    "Batman: The Telltale Series (Temporada 1)": "2016-08-02",
+    "Dragon Ball Xenoverse 2": "2016-10-25",
+    "Injustice 2": "2017-05-16",
+    "Batman: The Enemy Within (Temporada 2)": "2017-08-08",
+    "Assassin's Creed: Origins": "2017-10-27",
+    "LEGO Marvel Super Heroes 2": "2017-11-14",
+    "Star Wars Battlefront II": "2017-11-17",
+    "Dragon Ball FighterZ": "2018-01-26",
+    "LEGO The Incredibles": "2018-06-15",
+    "Marvel's Spider-Man": "2018-09-07",
+    "Shadow of The Tomb Raider": "2018-09-14",
+    "Assassin's Creed: Odyssey": "2018-10-05",
+    "LEGO DC Super-Villains": "2018-10-16",
+    "Borderlands 3": "2019-09-13",
+    "Star Wars Jedi: Fallen Order": "2019-11-15",
+    "Dragon Ball Kakarot": "2020-01-16",
+    "Star Wars: Squadrons": "2020-10-02",
+    "Assassin's Creed: Valhalla": "2020-11-10",
+    "Marvel's Spider-Man: Miles Morales": "2020-11-12",
+    "Marvel's Guardians of the Galaxy": "2021-10-26",
+    "Tiny Tina's Wonderlands": "2022-03-25",
+    "LEGO Star Wars: The Skywalker Saga": "2022-04-05",
+    "The Last of Us Parte I": "2022-09-02",
+    "Dragon Ball: The Breakers": "2022-10-14",
+    "Gotham Knights": "2022-10-21",
+    "New Tales from the Borderlands": "2022-10-21",
+    "Hogwarts Legacy": "2023-02-10",
+    "Star Wars Jedi: Survivor": "2023-04-28",
+    "Assassin's Creed: Mirage": "2023-10-05",
+    "Marvel's Spider-Man 2": "2023-10-20",
+    "Suicide Squad: Kill the Justice League": "2024-02-02",
+    "Dragon Ball Sparkling Zero": "2024-10-11",
+    "Marvel Rivals": "2024-12-06",
+    "Assassin's Creed: Shadows": "2025-03-20",
+    "Borderlands 4": "2025-09-12",
+    "Marvel Cosmic Invasion": "2025-12-01",
+    "LEGO Batman: Legacy of the Dark Knight": "2026-05-22",
+    "Marvel's Wolverine": "2026-09-15",
+    "Halloween": "",
+    "Call of Duty 4: Modern Warfare": "2007-11-05"
+};
+const MESES_CORTOS_ES = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
+
+function formatearFechaJuego(iso) {
+    if (!iso) return 'Fecha por confirmar';
+    const p = iso.split('-');
+    if (p.length === 3) return `${parseInt(p[2], 10)} ${MESES_CORTOS_ES[parseInt(p[1], 10) - 1]} ${p[0]}`;
+    return p[0];
+}
+
+function aplicarFechasJuegos() {
+    document.querySelectorAll('.tarjeta-media[data-accion="jugado"]').forEach(tarjeta => {
+        if (tarjeta.classList.contains('tarjeta-coleccion') || tarjeta.hasAttribute('data-fecha')) return;
+        const h3 = tarjeta.querySelector('h3');
+        if (!h3 || !(h3.textContent in FECHAS_JUEGOS)) return;
+        const iso = FECHAS_JUEGOS[h3.textContent];
+        tarjeta.setAttribute('data-fecha', iso);
+        tarjeta.setAttribute('data-anio', iso ? iso.slice(0, 4) : '');
+        const linea = document.createElement('p');
+        linea.className = 'fecha-juego';
+        linea.textContent = '📅 ' + formatearFechaJuego(iso);
+        const tipo = tarjeta.querySelector('p');
+        if (tipo) tipo.insertAdjacentElement('afterend', linea); else h3.insertAdjacentElement('afterend', linea);
+    });
+}
+document.addEventListener('DOMContentLoaded', aplicarFechasJuegos);
+
+// ==========================================
+// VIDEOJUEGOS: vista "Por franquicia" / "Por año"
+// ==========================================
+let vistaPorAnioJuegosConstruida = false;
+
+function construirVistaPorAnioJuegos() {
+    if (vistaPorAnioJuegosConstruida) return;
+    const grilla = document.getElementById('grilla-videojuegos-por-anio');
+    const contAnios = document.getElementById('filtros-anio-videojuegos');
+    if (!grilla || !contAnios) return;
+    aplicarFechasJuegos();
+    const vistos = new Set();
+    const origen = Array.from(document.querySelectorAll('.tarjeta-media[data-accion="jugado"][data-fecha]'))
+        .filter(t => !t.classList.contains('tarjeta-coleccion') && !t.closest('#grilla-videojuegos-por-anio') && t.getAttribute('data-fecha'))
+        .filter(t => { const k = t.querySelector('h3').textContent; if (vistos.has(k)) return false; vistos.add(k); return true; })
+        .sort((a, b) => a.getAttribute('data-fecha').localeCompare(b.getAttribute('data-fecha')));
+    origen.forEach(t => {
+        const copia = t.cloneNode(true);
+        copia.style.display = '';
+        const btnFicha = copia.querySelector('.btn-ficha-tecnica-item');
+        if (btnFicha) {
+            btnFicha.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const seccionFicha = document.getElementById(`seccion-ficha-${btnFicha.dataset.fichaTecnica}`);
+                if (seccionFicha) {
+                    seccionFicha.dataset.origen = 'seccion-videojuegos-explorar';
+                    cambiarSeccion(seccionFicha);
+                }
+            });
+        }
+        grilla.appendChild(copia);
+    });
+    const anios = Array.from(new Set(origen.map(t => t.getAttribute('data-anio')))).sort();
+    contAnios.innerHTML = '';
+    ['todos'].concat(anios).forEach(a => {
+        const b = document.createElement('button');
+        b.className = 'btn-filtro-anio-juegos' + (a === 'todos' ? ' activo' : '');
+        b.setAttribute('data-anio', a);
+        b.textContent = a === 'todos' ? 'Todos' : a;
+        b.addEventListener('click', () => {
+            contAnios.querySelectorAll('.btn-filtro-anio-juegos').forEach(x => x.classList.remove('activo'));
+            b.classList.add('activo');
+            grilla.querySelectorAll('.tarjeta-media').forEach(t => {
+                t.style.display = (a === 'todos' || t.getAttribute('data-anio') === a) ? '' : 'none';
+            });
+        });
+        contAnios.appendChild(b);
+    });
+    sincronizarVistos();
+    vistaPorAnioJuegosConstruida = true;
+}
+
+document.querySelectorAll('.btn-filtro-vistajuegos').forEach(boton => {
+    boton.addEventListener('click', function() {
+        document.querySelectorAll('.btn-filtro-vistajuegos').forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const porAnio = this.getAttribute('data-vista') === 'anio';
+        if (porAnio) construirVistaPorAnioJuegos();
+        document.getElementById('grilla-videojuegos-explorar').classList.toggle('oculto', porAnio);
+        document.getElementById('grilla-videojuegos-por-anio').classList.toggle('oculto', !porAnio);
+        document.getElementById('filtros-anio-videojuegos').classList.toggle('oculto', !porAnio);
+    });
+});
