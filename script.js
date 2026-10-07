@@ -21,6 +21,8 @@ const listaMedia = [
     { titulo: "Hotel Transylvania", categoria: "familiar-halloween", tipo: "Película", fichaTecnicaId: "hotel-transylvania-1", poster: "https://www.sonypictures.com.ar/sites/argentina/files/2022-05/608871_HotelTransylvania_2012_LSR_2000x3000_UK_1333x2000_thumbnail.jpg" },
     { titulo: "Toy Story de Terror", categoria: "familiar-halloween", tipo: "Película", fichaTecnicaId: "ts-terror", poster: "https://m.media-amazon.com/images/M/MV5BNDU5MWI4ZTctYTdlNi00MmQ1LTkzZGUtZmYxYWMyNmQ4MjdiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
     { titulo: "LEGO Star Wars: Terrifying Tales", categoria: "familiar-halloween", tipo: "Película", fichaTecnicaId: "lego-sw-terrifying-tales", poster: "https://image.tmdb.org/t/p/w500/fYiaBZDjyXjvlY6EDZMAxIhBO1I.jpg" },
+    { titulo: "El Extraño Mundo de Jack", categoria: "familiar-halloween", tipo: "Película", fichaTecnicaId: "extrano-mundo-de-jack", poster: "https://m.media-amazon.com/images/M/MV5BNmYxOTAzZWYtOGI3Yi00ODc3LTk5ZjYtZTY0MzVkZTg3YmRiXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Los Mundos de Coraline", categoria: "familiar-halloween", tipo: "Película", fichaTecnicaId: "coraline", poster: "https://image.tmdb.org/t/p/original/4jeFXQYytChdZYE9JYO7Un87IlW.jpg" },
 
     { titulo: "Dead by Daylight", categoria: "videojuegos-halloween", tipo: "Videojuego", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
     { titulo: "Resident Evil", categoria: "videojuegos-halloween", tipo: "Videojuego", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
@@ -40,7 +42,7 @@ const listaMedia = [
     // --- ROAD TO DOOMSDAY (ordenado por fecha de estreno) ---
     { titulo: "X-Men (2000)", categoria: "doomsday", tier: 3, tipo: "Película", fichaTecnicaId: "xmen-2000", poster: "https://i.pinimg.com/736x/f9/7c/3f/f97c3f94f67ca6fd6ae7ad0470d6d553.jpg" },
     { titulo: "X2: X-Men United", categoria: "doomsday", tier: 3, tipo: "Película", fichaTecnicaId: "x2-xmen-united", poster: "https://m.media-amazon.com/images/I/714SAYP7EQL.AC_UF894,1000_QL80.jpg" },
-    { titulo: "X-Men: The Last Stand", categoria: "doomsday", tier: 3, tipo: "Película", fichaTecnicaId: "xmen-last-stand", poster: "https://pics.filmaffinity.com/x3_x_men_3_the_last_stand-992099331-large.jpg" },
+    { titulo: "X-Men: The Last Stand", categoria: "doomsday", tier: 3, tipo: "Película", fichaTecnicaId: "xmen-last-stand", poster: "https://image.tmdb.org/t/p/original/f6Mc9si1uwrxVfEpsZeU7d1HpVb.jpg" },
     { titulo: "X-Men Origins: Wolverine", categoria: "doomsday", tier: 4, tipo: "Película", fichaTecnicaId: "xmen-origins-wolverine", poster: "https://i.blogs.es/b07389/x_men_origins_wolverine/450_1000.jpg" },
     { titulo: "X-Men: First Class", categoria: "doomsday", tier: 3, tipo: "Película", fichaTecnicaId: "xmen-first-class", poster: "https://collider.com/wp-content/uploads/x-men-first-class-teaser-poster.jpg" },
     { titulo: "The Wolverine", categoria: "doomsday", tier: 4, tipo: "Película", fichaTecnicaId: "the-wolverine", poster: "https://image.tmdb.org/t/p/original/8lzmovtARDXnE7kTDOum02i6fXv.jpg" },
@@ -103,7 +105,7 @@ const listaMedia = [
     { titulo: "Black Widow", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "black-widow-2021", ordenSalida: 27, crono: 17, poster: "https://m.media-amazon.com/images/M/MV5BNjZjOGVhOTEtNzY4Mi00MjQzLTlmYjktNzMyMDExMWJlODEwXkEyXkFqcGc@.V1.jpg" },
     { titulo: "Shang-Chi", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "shang-chi", ordenSalida: 28, crono: 31, poster: "https://m.media-amazon.com/images/I/81orh-NSiTL.jpg" },
     { titulo: "Eternals", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "eternals", ordenSalida: 29, crono: 32, poster: "https://image.tmdb.org/t/p/original/vgUZo9aVvRvCQFXwZC9zq3qCZT9.jpg" },
-    { titulo: "Hawkeye", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 30, crono: 33, poster: "https://lumiere-a.akamaihd.net/v1/images/unknown_61ca7b47.png" },
+    { titulo: "Hawkeye", categoria: "mcu-multiverso", tipo: "Serie", fichaTecnicaId: "hawkeye-serie", ordenSalida: 30, crono: 33, poster: "https://lumiere-a.akamaihd.net/v1/images/unknown_61ca7b47.png" },
     { titulo: "Spider-Man: No Way Home", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 31, crono: 35, poster: "https://www.cinemascomics.com/wp-content/uploads/2022/01/poster-Spider-man-no-way-home.jpg" },
     { titulo: "Moon Knight", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 32, crono: 36, poster: "https://m.media-amazon.com/images/I/71pAwt4KT6L.jpg" },
     { titulo: "Dr. Strange: Multiverse of Madness", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 33, crono: 37, poster: "https://img.buzzfeed.com/buzzfeed-static/static/2022-02/18/13/asset/e9954361afcd/sub-buzz-772-1645190837-7.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto" },
@@ -146,7 +148,7 @@ const listaMedia = [
     // --- FOX: X-MEN ---
     { titulo: "X-Men (2000)", categoria: "fox-xmen", tipo: "Película", fichaTecnicaId: "xmen-2000", crono: 3, poster: "https://i.pinimg.com/736x/f9/7c/3f/f97c3f94f67ca6fd6ae7ad0470d6d553.jpg" },
     { titulo: "X2: X-Men United", categoria: "fox-xmen", tipo: "Película", fichaTecnicaId: "x2-xmen-united", crono: 4, poster: "https://m.media-amazon.com/images/I/714SAYP7EQL.AC_UF894,1000_QL80.jpg" },
-    { titulo: "X-Men: The Last Stand", categoria: "fox-xmen", tipo: "Película", fichaTecnicaId: "xmen-last-stand", crono: 5, poster: "https://pics.filmaffinity.com/x3_x_men_3_the_last_stand-992099331-large.jpg" },
+    { titulo: "X-Men: The Last Stand", categoria: "fox-xmen", tipo: "Película", fichaTecnicaId: "xmen-last-stand", crono: 5, poster: "https://image.tmdb.org/t/p/original/f6Mc9si1uwrxVfEpsZeU7d1HpVb.jpg" },
     { titulo: "X-Men Origins: Wolverine", categoria: "fox-xmen", tipo: "Película", fichaTecnicaId: "xmen-origins-wolverine", crono: 2, poster: "https://i.blogs.es/b07389/x_men_origins_wolverine/450_1000.jpg" },
     { titulo: "The Wolverine", categoria: "fox-xmen", tipo: "Película", fichaTecnicaId: "the-wolverine", crono: 6, poster: "https://image.tmdb.org/t/p/original/8lzmovtARDXnE7kTDOum02i6fXv.jpg" },
     { titulo: "X-Men: First Class", categoria: "fox-xmen", tipo: "Película", fichaTecnicaId: "xmen-first-class", crono: 1, poster: "https://collider.com/wp-content/uploads/x-men-first-class-teaser-poster.jpg" },
@@ -254,39 +256,39 @@ const listaMedia = [
     // (Ver colección "Arkhamverse" más abajo, incluye Suicide Squad: Kill the Justice League)
 
     // --- STAR WARS: EPISODIOS ---
-    { titulo: "Star Wars: Episodio I - La Amenaza Fantasma", categoria: "sw-episodios", crono: 2, tipo: "Película", poster: "https://postercity.com.ar/wp-content/uploads/2017/08/Episode1.jpg" },
-    { titulo: "Star Wars: Episodio II - El Ataque de los Clones", categoria: "sw-episodios", crono: 3, tipo: "Película", poster: "https://m.media-amazon.com/images/I/61nFfWio-sL.AC_UF894,1000_QL80.jpg" },
-    { titulo: "Star Wars: Episodio III - La Venganza de los Sith", categoria: "sw-episodios", crono: 6, tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/266305.jpg" },
-    { titulo: "Star Wars: Episodio IV - Una Nueva Esperanza", categoria: "sw-episodios", crono: 14, tipo: "Película", poster: "https://cinemaposters.com.ar/wp-content/uploads/2020/09/Star-Wars-Episodio-IV-Una-Nueva-Esperanza-Cinema-Posters.jpg" },
-    { titulo: "Star Wars: Episodio V - El Imperio Contraataca", categoria: "sw-episodios", crono: 15, tipo: "Película", poster: "https://cdn.europosters.eu/image/1300/251620.jpg" },
-    { titulo: "Star Wars: Episodio VI - El Retorno del Jedi", categoria: "sw-episodios", crono: 16, tipo: "Película", poster: "https://static.wikia.nocookie.net/esstarwars/images/b/b2/ReturnOfTheJediPoster1983.jpg/revision/latest?cb=20200623214315" },
-    { titulo: "Star Wars: Episodio VII - El Despertar de la Fuerza", categoria: "sw-episodios", crono: 22, tipo: "Película", poster: "https://lumiere-a.akamaihd.net/v1/images/image_34e17244.jpeg" },
-    { titulo: "Star Wars: Episodio VIII - Los Últimos Jedi", categoria: "sw-episodios", crono: 23, tipo: "Película", poster: "https://lumiere-a.akamaihd.net/v1/images/image_b81e5aed.jpeg" },
-    { titulo: "Star Wars: Episodio IX - El Ascenso de Skywalker", categoria: "sw-episodios", crono: 24, tipo: "Película", poster: "https://ew.com/thmb/ET-SRSQ4HIdJuBOZ7mAKXWOc3aQ=/2000x0/filters:no_upscale():max_bytes(150000):strip_icc()/ecwe_nmu0aaqbms-2000-7ab12ead751644029b8235a49bdf9906.jpg" },
+    { titulo: "Star Wars: Episodio I - La Amenaza Fantasma", categoria: "sw-episodios", crono: 2, tipo: "Película", fichaTecnicaId: "sw-episodio-1", poster: "https://postercity.com.ar/wp-content/uploads/2017/08/Episode1.jpg" },
+    { titulo: "Star Wars: Episodio II - El Ataque de los Clones", categoria: "sw-episodios", crono: 3, tipo: "Película", fichaTecnicaId: "sw-episodio-2", poster: "https://m.media-amazon.com/images/I/61nFfWio-sL.AC_UF894,1000_QL80.jpg" },
+    { titulo: "Star Wars: Episodio III - La Venganza de los Sith", categoria: "sw-episodios", crono: 6, tipo: "Película", fichaTecnicaId: "sw-episodio-3", poster: "https://cdng.europosters.eu/pod_public/1300/266305.jpg" },
+    { titulo: "Star Wars: Episodio IV - Una Nueva Esperanza", categoria: "sw-episodios", crono: 14, tipo: "Película", fichaTecnicaId: "sw-episodio-4", poster: "https://cinemaposters.com.ar/wp-content/uploads/2020/09/Star-Wars-Episodio-IV-Una-Nueva-Esperanza-Cinema-Posters.jpg" },
+    { titulo: "Star Wars: Episodio V - El Imperio Contraataca", categoria: "sw-episodios", crono: 15, tipo: "Película", fichaTecnicaId: "sw-episodio-5", poster: "https://cdn.europosters.eu/image/1300/251620.jpg" },
+    { titulo: "Star Wars: Episodio VI - El Retorno del Jedi", categoria: "sw-episodios", crono: 16, tipo: "Película", fichaTecnicaId: "sw-episodio-6", poster: "https://static.wikia.nocookie.net/esstarwars/images/b/b2/ReturnOfTheJediPoster1983.jpg/revision/latest?cb=20200623214315" },
+    { titulo: "Star Wars: Episodio VII - El Despertar de la Fuerza", categoria: "sw-episodios", crono: 22, tipo: "Película", fichaTecnicaId: "sw-episodio-7", poster: "https://lumiere-a.akamaihd.net/v1/images/image_34e17244.jpeg" },
+    { titulo: "Star Wars: Episodio VIII - Los Últimos Jedi", categoria: "sw-episodios", crono: 23, tipo: "Película", fichaTecnicaId: "sw-episodio-8", poster: "https://lumiere-a.akamaihd.net/v1/images/image_b81e5aed.jpeg" },
+    { titulo: "Star Wars: Episodio IX - El Ascenso de Skywalker", categoria: "sw-episodios", crono: 24, tipo: "Película", fichaTecnicaId: "sw-episodio-9", poster: "https://ew.com/thmb/ET-SRSQ4HIdJuBOZ7mAKXWOc3aQ=/2000x0/filters:no_upscale():max_bytes(150000):strip_icc()/ecwe_nmu0aaqbms-2000-7ab12ead751644029b8235a49bdf9906.jpg" },
 
     // --- STAR WARS: LIVE ACTION (incluye Episodios en orden cronológico) ---
-    { titulo: "The Acolyte", categoria: "sw-liveaction", crono: 1, tipo: "Serie", poster: "https://lumiere-a.akamaihd.net/v1/images/acolyte-key-art-poster_577d99a1.jpeg?region=0,0,729,1080" },
-    { titulo: "Star Wars: Episodio I - La Amenaza Fantasma", categoria: "sw-liveaction", crono: 2, tipo: "Película", poster: "https://postercity.com.ar/wp-content/uploads/2017/08/Episode1.jpg" },
-    { titulo: "Star Wars: Episodio II - El Ataque de los Clones", categoria: "sw-liveaction", crono: 3, tipo: "Película", poster: "https://m.media-amazon.com/images/I/61nFfWio-sL.AC_UF894,1000_QL80.jpg" },
-    { titulo: "Star Wars: Episodio III - La Venganza de los Sith", categoria: "sw-liveaction", crono: 6, tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/266305.jpg" },
+    { titulo: "The Acolyte", categoria: "sw-liveaction", crono: 1, tipo: "Serie", fichaTecnicaId: "the-acolyte", poster: "https://lumiere-a.akamaihd.net/v1/images/acolyte-key-art-poster_577d99a1.jpeg?region=0,0,729,1080" },
+    { titulo: "Star Wars: Episodio I - La Amenaza Fantasma", categoria: "sw-liveaction", crono: 2, tipo: "Película", fichaTecnicaId: "sw-episodio-1", poster: "https://postercity.com.ar/wp-content/uploads/2017/08/Episode1.jpg" },
+    { titulo: "Star Wars: Episodio II - El Ataque de los Clones", categoria: "sw-liveaction", crono: 3, tipo: "Película", fichaTecnicaId: "sw-episodio-2", poster: "https://m.media-amazon.com/images/I/61nFfWio-sL.AC_UF894,1000_QL80.jpg" },
+    { titulo: "Star Wars: Episodio III - La Venganza de los Sith", categoria: "sw-liveaction", crono: 6, tipo: "Película", fichaTecnicaId: "sw-episodio-3", poster: "https://cdng.europosters.eu/pod_public/1300/266305.jpg" },
     { titulo: "Solo: A Star Wars Story", categoria: "sw-liveaction", crono: 8, tipo: "Película", poster: "https://lumiere-a.akamaihd.net/v1/images/solo-theatrical-poster_f98a86eb.jpeg?region=0,0,864,1280" },
     { titulo: "Obi-Wan Kenobi", categoria: "sw-liveaction", crono: 10, tipo: "Serie", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Ea5Zhl73NttD-fuEjBpy5zvc0CHgbAK65cdKieScq9sYL53sOtIFfaMO&s=10" },
     { titulo: "Andor", categoria: "sw-liveaction", crono: 12, tipo: "Serie", poster: "https://lumiere-a.akamaihd.net/v1/images/andor-character-poster-cassian-andor_cacda283.jpeg" },
-    { titulo: "Rogue One: A Star Wars Story", categoria: "sw-liveaction", crono: 13, tipo: "Película", poster: "https://im.ziffdavisinternational.com/ign_es/screenshot/default/cnamojjumaqgodbjpg-large_1nv3.jpg" },
-    { titulo: "Star Wars: Episodio IV - Una Nueva Esperanza", categoria: "sw-liveaction", crono: 14, tipo: "Película", poster: "https://cinemaposters.com.ar/wp-content/uploads/2020/09/Star-Wars-Episodio-IV-Una-Nueva-Esperanza-Cinema-Posters.jpg" },
-    { titulo: "Star Wars: Episodio V - El Imperio Contraataca", categoria: "sw-liveaction", crono: 15, tipo: "Película", poster: "https://cdn.europosters.eu/image/1300/251620.jpg" },
-    { titulo: "Star Wars: Episodio VI - El Retorno del Jedi", categoria: "sw-liveaction", crono: 16, tipo: "Película", poster: "https://static.wikia.nocookie.net/esstarwars/images/b/b2/ReturnOfTheJediPoster1983.jpg/revision/latest?cb=20200623214315" },
+    { titulo: "Rogue One: A Star Wars Story", categoria: "sw-liveaction", crono: 13, tipo: "Película", fichaTecnicaId: "rogue-one", poster: "https://im.ziffdavisinternational.com/ign_es/screenshot/default/cnamojjumaqgodbjpg-large_1nv3.jpg" },
+    { titulo: "Star Wars: Episodio IV - Una Nueva Esperanza", categoria: "sw-liveaction", crono: 14, tipo: "Película", fichaTecnicaId: "sw-episodio-4", poster: "https://cinemaposters.com.ar/wp-content/uploads/2020/09/Star-Wars-Episodio-IV-Una-Nueva-Esperanza-Cinema-Posters.jpg" },
+    { titulo: "Star Wars: Episodio V - El Imperio Contraataca", categoria: "sw-liveaction", crono: 15, tipo: "Película", fichaTecnicaId: "sw-episodio-5", poster: "https://cdn.europosters.eu/image/1300/251620.jpg" },
+    { titulo: "Star Wars: Episodio VI - El Retorno del Jedi", categoria: "sw-liveaction", crono: 16, tipo: "Película", fichaTecnicaId: "sw-episodio-6", poster: "https://static.wikia.nocookie.net/esstarwars/images/b/b2/ReturnOfTheJediPoster1983.jpg/revision/latest?cb=20200623214315" },
     { titulo: "The Mandalorian", categoria: "sw-liveaction", crono: 17, tipo: "Serie", poster: "https://lumiere-a.akamaihd.net/v1/images/image_09049f79.jpeg" },
     { titulo: "The Book of Boba Fett", categoria: "sw-liveaction", crono: 18, tipo: "Serie", poster: "https://m.media-amazon.com/images/I/610KLfk0DZL.jpg" },
     { titulo: "Ahsoka", categoria: "sw-liveaction", crono: 19, tipo: "Serie", poster: "https://lumiere-a.akamaihd.net/v1/images/ahsoka-character-posters-ahsoka_bb400512.jpeg?width=1136" },
     { titulo: "Skeleton Crew", categoria: "sw-liveaction", crono: 20, tipo: "Serie", poster: "https://lumiere-a.akamaihd.net/v1/images/skeleton-crew-teaster-poster-4866453125478789_3179e794.jpeg?region=0,0,729,1080" },
-    { titulo: "Star Wars: Episodio VII - El Despertar de la Fuerza", categoria: "sw-liveaction", crono: 22, tipo: "Película", poster: "https://lumiere-a.akamaihd.net/v1/images/image_34e17244.jpeg" },
-    { titulo: "Star Wars: Episodio VIII - Los Últimos Jedi", categoria: "sw-liveaction", crono: 23, tipo: "Película", poster: "https://lumiere-a.akamaihd.net/v1/images/image_b81e5aed.jpeg" },
-    { titulo: "Star Wars: Episodio IX - El Ascenso de Skywalker", categoria: "sw-liveaction", crono: 24, tipo: "Película", poster: "https://ew.com/thmb/ET-SRSQ4HIdJuBOZ7mAKXWOc3aQ=/2000x0/filters:no_upscale():max_bytes(150000):strip_icc()/ecwe_nmu0aaqbms-2000-7ab12ead751644029b8235a49bdf9906.jpg" },
+    { titulo: "Star Wars: Episodio VII - El Despertar de la Fuerza", categoria: "sw-liveaction", crono: 22, tipo: "Película", fichaTecnicaId: "sw-episodio-7", poster: "https://lumiere-a.akamaihd.net/v1/images/image_34e17244.jpeg" },
+    { titulo: "Star Wars: Episodio VIII - Los Últimos Jedi", categoria: "sw-liveaction", crono: 23, tipo: "Película", fichaTecnicaId: "sw-episodio-8", poster: "https://lumiere-a.akamaihd.net/v1/images/image_b81e5aed.jpeg" },
+    { titulo: "Star Wars: Episodio IX - El Ascenso de Skywalker", categoria: "sw-liveaction", crono: 24, tipo: "Película", fichaTecnicaId: "sw-episodio-9", poster: "https://ew.com/thmb/ET-SRSQ4HIdJuBOZ7mAKXWOc3aQ=/2000x0/filters:no_upscale():max_bytes(150000):strip_icc()/ecwe_nmu0aaqbms-2000-7ab12ead751644029b8235a49bdf9906.jpg" },
 
     // --- STAR WARS: ANIMACIÓN ---
-    { titulo: "The Clone Wars (Película)", categoria: "sw-animacion", crono: 4, tipo: "Película", poster: "https://cdn.europosters.eu/image/750/3335.jpg" },
-    { titulo: "The Clone Wars (Serie)", categoria: "sw-animacion", crono: 5, tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/e1nWfnnCVqxS2LeTO3dwGyAsG2V.jpg" },
+    { titulo: "The Clone Wars (Película)", categoria: "sw-animacion", crono: 4, tipo: "Película", fichaTecnicaId: "sw-clone-wars-pelicula", poster: "https://cdn.europosters.eu/image/750/3335.jpg" },
+    { titulo: "The Clone Wars (Serie)", categoria: "sw-animacion", crono: 5, tipo: "Serie", fichaTecnicaId: "sw-clone-wars-serie", poster: "https://image.tmdb.org/t/p/original/e1nWfnnCVqxS2LeTO3dwGyAsG2V.jpg" },
     // "The Bad Batch" ahora es una ficha explorable con sus 3 temporadas (ver colecciones)
     { titulo: "Star Wars: Tales of the Underworld", categoria: "sw-animacion", crono: 7.5, tipo: "Serie (Antología)", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNFK8wlF1QPEfZkNraIHz1OgEvm4VhlXvAJMCN8uV_9r5gUdFFbIirvigX&s=10" },
     { titulo: "Maul: Shadow Lord", categoria: "sw-animacion", crono: 9, tipo: "Audiodrama", poster: "https://cdn.europosters.eu/image/1300/307057.jpg" },
@@ -300,7 +302,7 @@ const listaMedia = [
     { titulo: "LEGO Star Wars: All-Stars", categoria: "sw-animacion", crono: 29, tipo: "Especial", poster: "https://lumiere-a.akamaihd.net/v1/images/image_c0db4cb3.jpeg" },
     { titulo: "LEGO Star Wars: Crónicas Droide", categoria: "sw-animacion", crono: 30, tipo: "Especial", poster: "https://static.wikia.nocookie.net/esstarwars/images/d/d0/LEGO_Cr%C3%B3nicas_Droides.jpg/revision/latest/thumbnail/width/360/height/360?cb=20200911035550" },
     { titulo: "LEGO Star Wars: Vacaciones de Verano", categoria: "sw-animacion", crono: 31, tipo: "Especial", poster: "https://m.media-amazon.com/images/M/MV5BYjg3MTdiMTAtZWFhZS00Y2M0LWEwNzYtMjEyMTU0ZGYwOGJmXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
-    { titulo: "Star Wars: Tales of the Jedi", categoria: "sw-animacion", crono: 1.5, tipo: "Serie (Antología)", poster: "https://lumiere-a.akamaihd.net/v1/images/tales-of-the-jedi-poster_dc892101.jpeg" },
+    { titulo: "Star Wars: Tales of the Jedi", categoria: "sw-animacion", crono: 1.5, tipo: "Serie (Antología)", fichaTecnicaId: "sw-tales-of-the-jedi", poster: "https://lumiere-a.akamaihd.net/v1/images/tales-of-the-jedi-poster_dc892101.jpeg" },
 
     // --- STAR WARS: LIBROS Y CÓMICS ---
     { titulo: "Thrawn (Trilogía)", categoria: "sw-libros", tipo: "Libro", poster: "https://placehold.co/300x450?text=Thrawn" },
@@ -337,7 +339,7 @@ const listaMedia = [
     { titulo: "It (1990)", categoria: "it", subtipo: "clasico", tipo: "Miniserie", poster: "https://m.media-amazon.com/images/M/MV5BZDFhODExOTctNTFkZS00NjE1LWE2MWMtY2Q1ZThhMGY5NjJkXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
 
     // --- DISNEY ANIMATION (con filtros por década) ---
-    { titulo: "Raya y El Último Dragón", categoria: "disney-animation", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/5nVhgCzxKbK47OLIKxCR1syulOn.jpg" },
+    { titulo: "Raya y El Último Dragón", categoria: "disney-animation", subtipo: "2020", tipo: "Película", fichaTecnicaId: "raya-ultimo-dragon", poster: "https://image.tmdb.org/t/p/original/5nVhgCzxKbK47OLIKxCR1syulOn.jpg" },
     { titulo: "Encanto", categoria: "disney-animation", subtipo: "2020", tipo: "Película", poster: "https://static.posters.cz/image/1300/120006.jpg" },
     { titulo: "Un Mundo Extraño", categoria: "disney-animation", subtipo: "2020", tipo: "Película", poster: "https://i.pinimg.com/736x/ea/c5/da/eac5da7bd43097e5288adad835ec28cc.jpg" },
     { titulo: "Wish", categoria: "disney-animation", subtipo: "2020", tipo: "Película", poster: "https://lumiere-a.akamaihd.net/v1/images/screenshot_2023-04-27_at_14_930d2ffc.png?region=0,0,986,1458" },
@@ -406,7 +408,6 @@ const listaMedia = [
     { titulo: "Seinfeld", categoria: "sitcoms", tipo: "Serie", poster: "https://i.pinimg.com/736x/8f/a1/3f/8fa13fce3f4f078c517c81aa063771e2.jpg" },
     { titulo: "The Fresh Prince of Bel-Air", categoria: "sitcoms", tipo: "Serie", poster: "https://m.media-amazon.com/images/I/61KGeA2XLfL.jpg" },
     { titulo: "The Nanny", categoria: "sitcoms", tipo: "Serie", poster: "https://m.media-amazon.com/images/I/61gtOYwWnPL.AC_UF894,1000_QL80.jpg" },
-    { titulo: "Two and a Half Men", categoria: "sitcoms", tipo: "Serie", poster: "https://i.pinimg.com/736x/b7/1f/e1/b71fe1055840e258a35922f103b715d3.jpg" },
     { titulo: "Malcolm in the Middle", categoria: "sitcoms", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/ckLLIsNy3Z0Go1PYHA2PHzVymUA.jpg" },
     { titulo: "Scrubs", categoria: "sitcoms", tipo: "Serie", poster: "https://m.media-amazon.com/images/I/713GR2dy8RL.AC_UF894,1000_QL80.jpg" },
     { titulo: "It's Always Sunny in Philadelphia", categoria: "sitcoms", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/o0tMMK33JqmtpcWw0H41cEr9xQB.jpg" },
@@ -456,6 +457,19 @@ const listaMedia = [
     { titulo: "Alien: Romulus", categoria: "isabela-merced", subtipo: "2020", tipo: "Película", fichaTecnicaId: "alien-romulus", poster: "https://image.tmdb.org/t/p/w220_and_h330_face/b33nnKl1GSFbao4l3fZDDqsMx0F.jpg" },
     { titulo: "Superman", categoria: "isabela-merced", subtipo: "2020", tipo: "Película", fichaTecnicaId: "superman-2025", poster: "https://m.media-amazon.com/images/I/712N7RdrlTL.jpg" },
     { titulo: "Peacemaker Temporada 2", categoria: "isabela-merced", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "peacemaker-t2", poster: "https://image.tmdb.org/t/p/w500/yb4F1Oocq8GfQt6iIuAgYEBokhG.jpg" },
+
+    // --- GEMMA CHAN ---
+    { titulo: "Let Them All Talk", categoria: "gemma-chan", subtipo: "2020", tipo: "Película", fichaTecnicaId: "let-them-all-talk", poster: "https://m.media-amazon.com/images/M/MV5BYWM3ODA1MzktMjI1Zi00OTNhLThjNjUtZDhlNDViYjJjMGYyXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Thunderbirds Are Go", categoria: "gemma-chan", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "thunderbirds-are-go", poster: "https://m.media-amazon.com/images/I/61cldRqzLVL._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Eternals", categoria: "gemma-chan", subtipo: "2020", tipo: "Película", fichaTecnicaId: "eternals", poster: "https://image.tmdb.org/t/p/original/vgUZo9aVvRvCQFXwZC9zq3qCZT9.jpg" },
+    { titulo: "Raya y El Último Dragón", categoria: "gemma-chan", subtipo: "2020", tipo: "Película", fichaTecnicaId: "raya-ultimo-dragon", poster: "https://image.tmdb.org/t/p/original/5nVhgCzxKbK47OLIKxCR1syulOn.jpg" },
+    { titulo: "Don't Worry Darling", categoria: "gemma-chan", subtipo: "2020", tipo: "Película", fichaTecnicaId: "dont-worry-darling", poster: "https://m.media-amazon.com/images/M/MV5BODVhYzM3M2YtMTUwYi00NjE4LWIwYzktOTM1MTYwZWU0ZTBiXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "The Creator", categoria: "gemma-chan", subtipo: "2020", tipo: "Película", fichaTecnicaId: "the-creator-2023", poster: "https://image.tmdb.org/t/p/original/vBZ0qvaRxqEhZwl6LWmruJqWE8Z.jpg" },
+    { titulo: "Extrapolations", categoria: "gemma-chan", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "extrapolations", poster: "https://m.media-amazon.com/images/M/MV5BNTg3NTBhNmYtNjY4MS00NDZkLWIxMmUtZDkwYWE0ODRlYTE3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "The Afterparty", categoria: "gemma-chan", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "the-afterparty", poster: "https://m.media-amazon.com/images/M/MV5BYmExMDQzODgtNTA4OC00NTE1LWI2MTktNTM1MzA5NWY0YzQ4XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "The Actor", categoria: "gemma-chan", subtipo: "2020", tipo: "Película", fichaTecnicaId: "the-actor-2025", poster: "https://m.media-amazon.com/images/M/MV5BOGU4NjQyZjEtMWFhNS00MzU2LTk4OWMtNjExN2VkYTg4YmIyXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Josephine", categoria: "gemma-chan", subtipo: "2020", tipo: "Película", fichaTecnicaId: "josephine-2026", poster: "https://image.tmdb.org/t/p/original/eqMWdviWwaRahQ7QkHLpXCpqIfu.jpg" },
+    { titulo: "The Five-Star Weekend", categoria: "gemma-chan", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "five-star-weekend", poster: "https://m.media-amazon.com/images/M/MV5BNDc1MjBiMDUtNzYxNS00ODE4LWI2NmYtYTlmYmQwOWJiMTIxXkEyXkFqcGc@._V1_.jpg" },
 
     // --- OSCAR 2021 (con filtros por categoría) ---
     { titulo: "Nomadland", categoria: "oscar-2021", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZWY3YTIwOGItODQ5Mi00NmI4LTgxN2QtZmI2ZjJmZmRkOGY1XkEyXkFqcGc@._V1_.jpg" },
@@ -1128,8 +1142,8 @@ const listaMedia = [
 
     // --- FLORENCE PUGH (con filtros por década) ---
     { titulo: "Black Widow", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", fichaTecnicaId: "black-widow-2021", poster: "https://m.media-amazon.com/images/M/MV5BNjZjOGVhOTEtNzY4Mi00MjQzLTlmYjktNzMyMDExMWJlODEwXkEyXkFqcGc@.V1.jpg" },
-    { titulo: "Hawkeye", categoria: "florence-pugh", subtipo: "2020", tipo: "Serie", poster: "https://lumiere-a.akamaihd.net/v1/images/unknown_61ca7b47.png" },
-    { titulo: "Don't Worry Darling", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BODVhYzM3M2YtMTUwYi00NjE4LWIwYzktOTM1MTYwZWU0ZTBiXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Hawkeye", categoria: "florence-pugh", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "hawkeye-serie", poster: "https://lumiere-a.akamaihd.net/v1/images/unknown_61ca7b47.png" },
+    { titulo: "Don't Worry Darling", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", fichaTecnicaId: "dont-worry-darling", poster: "https://m.media-amazon.com/images/M/MV5BODVhYzM3M2YtMTUwYi00NjE4LWIwYzktOTM1MTYwZWU0ZTBiXkEyXkFqcGc@._V1_.jpg" },
     { titulo: "The Wonder", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNDU5NzljODgtNjg1OS00NWZlLTg3MzEtMDU0YWI2ZjEwNzk2XkEyXkFqcGc@._V1_.jpg" },
     { titulo: "Gato con Botas: El Último Deseo", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/AasDZ3tlfx4KjBt96QjbvBPmk4p.jpg" },
     { titulo: "A Good Person", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://www.newdvdreleasedates.com/images/posters/large/a-good-person-2023-02.jpg" },
@@ -1296,7 +1310,7 @@ const listaMedia = [
     { titulo: "Panic Room", categoria: "david-fincher", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/qdiEI16Ax9EPBbx5oSwp7eBclX9.jpg" },
     { titulo: "Zodiac", categoria: "david-fincher", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/7osnnJ0QRfsUYzp3Pk2WUzmiJJa.jpg" },
     { titulo: "El Curioso Caso de Benjamin Button", categoria: "david-fincher", subtipo: "2000", tipo: "Película", poster: "https://a.ltrbxd.com/resized/sm/upload/yh/ob/ip/lw/gjMR102u5hPdIAWX7O2rim8ZWgA-0-600-0-900-crop.jpg?v=3beffc5097" },
-    { titulo: "Alien 3", categoria: "david-fincher", subtipo: "1990", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/hlabk6APJUeihZDaSD9N6iI0f4g.jpg" },
+    { titulo: "Alien 3", categoria: "david-fincher", subtipo: "1990", tipo: "Película", fichaTecnicaId: "alien-3", poster: "https://image.tmdb.org/t/p/original/hlabk6APJUeihZDaSD9N6iI0f4g.jpg" },
     { titulo: "Se7en", categoria: "david-fincher", subtipo: "1990", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/191nKfP0ehp3uIvWqgPbFmI4lv9.jpg" },
     { titulo: "The Game", categoria: "david-fincher", subtipo: "1990", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/xZ4QX9O8jr0JrfZzRPkt1VLfo7c.jpg" },
     { titulo: "Club de la Pelea", categoria: "david-fincher", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81D+KJkO4SL.jpg" },
@@ -2931,6 +2945,16 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "gemma-chan",
+        titulo: "Gemma Chan",
+        categoria: "actores",
+        poster: "https://i.pinimg.com/236x/28/a7/c5/28a7c5fc30826d63584bf3c090d2460b.jpg",
+        esContenedor: true,
+        etiqueta: "Actor",
+        progresoCategoria: "gemma-chan",
+        peliculas: []
+    },
+    {
         id: "isabela-merced",
         titulo: "Isabela Merced",
         categoria: "actores",
@@ -3374,7 +3398,33 @@ const colecciones = [
         categoria: "franquicias",
         poster: "https://m.media-amazon.com/images/M/MV5BNDU5MWI4ZTctYTdlNi00MmQ1LTkzZGUtZmYxYWMyNmQ4MjdiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         peliculas: [
-            { titulo: "Toy Story de Terror", fichaTecnicaId: "ts-terror", poster: "https://m.media-amazon.com/images/M/MV5BNDU5MWI4ZTctYTdlNi00MmQ1LTkzZGUtZmYxYWMyNmQ4MjdiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" }
+            { titulo: "Toy Story de Terror", fichaTecnicaId: "ts-terror", poster: "https://m.media-amazon.com/images/M/MV5BNDU5MWI4ZTctYTdlNi00MmQ1LTkzZGUtZmYxYWMyNmQ4MjdiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+            { titulo: "El Extraño Mundo de Jack", fichaTecnicaId: "extrano-mundo-de-jack", poster: "https://m.media-amazon.com/images/M/MV5BNmYxOTAzZWYtOGI3Yi00ODc3LTk5ZjYtZTY0MzVkZTg3YmRiXkEyXkFqcGc@._V1_.jpg" },
+            { titulo: "Los Mundos de Coraline", fichaTecnicaId: "coraline", poster: "https://image.tmdb.org/t/p/original/4jeFXQYytChdZYE9JYO7Un87IlW.jpg" }
+        ]
+    },
+    {
+        id: "alien-depredador",
+        titulo: "Alien / Depredador",
+        categoria: "franquicias",
+        poster: "https://wallpaper.forfun.com/fetch/a4/a4d237827df902ce4618ea97e7cf6cb7.jpeg",
+        peliculas: [
+            { titulo: "Alien (1979)", fichaTecnicaId: "alien-1979", poster: "https://image.tmdb.org/t/p/w220_and_h330_face/g5SXGkbPj72vdAOMwtMm1ADOcO.jpg" },
+            { titulo: "Aliens", fichaTecnicaId: "aliens-1986", poster: "https://image.tmdb.org/t/p/w220_and_h330_face/owEMnZwoIRXQcF0IXRV85Y9gad4.jpg" },
+            { titulo: "Alien 3", fichaTecnicaId: "alien-3", poster: "https://image.tmdb.org/t/p/original/hlabk6APJUeihZDaSD9N6iI0f4g.jpg" },
+            { titulo: "Alien: Resurrección", fichaTecnicaId: "alien-resurreccion", poster: "https://image.tmdb.org/t/p/original/9aRDMlU5Zwpysilm0WCWzU2PCFv.jpg" },
+            { titulo: "Depredador", fichaTecnicaId: "depredador-1987", poster: "https://image.tmdb.org/t/p/original/k3mW4qfJo6SKqe6laRyNGnbB9n5.jpg" },
+            { titulo: "Depredador 2", fichaTecnicaId: "depredador-2", poster: "https://image.tmdb.org/t/p/original/yVIG15536lO0FaWEgcivVwkUknt.jpg" },
+            { titulo: "Alien vs. Depredador", fichaTecnicaId: "avp-2004", poster: "https://image.tmdb.org/t/p/original/vP2Y3oTJQhP4rJehbTa2yUxn6df.jpg" },
+            { titulo: "Alien vs. Depredador: Requiem", fichaTecnicaId: "avp-requiem", poster: "https://image.tmdb.org/t/p/original/5271Y6P5Z97hgOh55zeSGMdcHSS.jpg" },
+            { titulo: "Depredadores", fichaTecnicaId: "depredadores-2010", poster: "https://image.tmdb.org/t/p/original/gsnUhWMYLSD8VZS7nrMT9mj9BYr.jpg" },
+            { titulo: "Prometeo", fichaTecnicaId: "prometeo", poster: "https://image.tmdb.org/t/p/original/haYckth3UrCVd1WdUMTl0PJCX3q.jpg" },
+            { titulo: "Alien: Covenant", fichaTecnicaId: "alien-covenant", poster: "https://image.tmdb.org/t/p/original/nIpegNL9CoAHvG94vsUfLcnMnW0.jpg" },
+            { titulo: "El Depredador", fichaTecnicaId: "el-depredador-2018", poster: "https://image.tmdb.org/t/p/original/a3eWGF6YPF7No5Rbtjc8QpDvz7l.jpg" },
+            { titulo: "Prey", fichaTecnicaId: "prey-2022", poster: "https://image.tmdb.org/t/p/original/2FKjLRt7oK1bRRIrxgWmthbBdFh.jpg" },
+            { titulo: "Alien: Romulus", fichaTecnicaId: "alien-romulus", poster: "https://image.tmdb.org/t/p/w220_and_h330_face/b33nnKl1GSFbao4l3fZDDqsMx0F.jpg" },
+            { titulo: "Depredador: Killer of Killers", fichaTecnicaId: "depredador-killer-of-killers", poster: "https://m.media-amazon.com/images/M/MV5BNjM2MjA4YzQtYjBkNS00YmU3LTllOTgtMDQzMjkzM2Q4MmM5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+            { titulo: "Depredador: Tierras Salvajes", fichaTecnicaId: "depredador-tierras-salvajes", poster: "https://image.tmdb.org/t/p/original/r7TEWHLr1lsIsTkiEFwtM3hAWma.jpg" }
         ]
     },
     {
@@ -3527,7 +3577,7 @@ const colecciones = [
         id: "david-fincher",
         titulo: "David Fincher",
         categoria: "directores",
-        poster: "https://image.tmdb.org/t/p/original/jDiPSt9oMcJbNzf8FZRtvU4rR98.jpg",
+        poster: "https://i.pinimg.com/474x/9f/18/d4/9f18d46b6d6689c6a4702503f91f441d.jpg",
         esContenedor: true,
         etiqueta: "Director",
         progresoCategoria: "david-fincher",
@@ -3818,6 +3868,28 @@ const colecciones = [
             { titulo: "How I Met Your Mother Temporada 7", poster: "https://m.media-amazon.com/images/M/MV5BMGY5ODU4ZjYtOGE4Ny00ODFlLWFkYTItOWRlNjU4YzUzM2I1XkEyXkFqcGc@._V1_.jpg" },
             { titulo: "How I Met Your Mother Temporada 8", poster: "https://static.wikia.nocookie.net/himym/images/3/3e/Season_8_DVD_Cover.jpg" },
             { titulo: "How I Met Your Mother Temporada 9", poster: "https://image.tmdb.org/t/p/original/ynDSoB5ilvp2qnSJp1WFCZSRjbm.jpg" }
+        ]
+    },
+    {
+        id: "two-and-a-half-men",
+        titulo: "Two and a Half Men",
+        categoria: "sitcoms",
+        poster: "https://i.pinimg.com/736x/b7/1f/e1/b71fe1055840e258a35922f103b715d3.jpg",
+        etiqueta: "Serie",
+        esSerie: true,
+        peliculas: [
+            { titulo: "Two and a Half Men Temporada 1", poster: "https://upload.wikimedia.org/wikipedia/en/c/c9/Twoandahalfmen1.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" },
+            { titulo: "Two and a Half Men Temporada 2", poster: "https://image.tmdb.org/t/p/original/l03f6HTmnc82LlDCvR2q6pfWO87.jpg" },
+            { titulo: "Two and a Half Men Temporada 3", poster: "https://m.media-amazon.com/images/I/71bzzHERvOL.jpg" },
+            { titulo: "Two and a Half Men Temporada 4", poster: "https://m.media-amazon.com/images/I/71Egjr1TbYL.jpg" },
+            { titulo: "Two and a Half Men Temporada 5", poster: "https://image.tmdb.org/t/p/original/g52E3BZ6jKydQVxoGM15ePOEFXg.jpg" },
+            { titulo: "Two and a Half Men Temporada 6", poster: "https://static.wikia.nocookie.net/twohalfmen/images/8/84/Two_and_a_Half_Men_The_Complete_Sixth_Season.png/revision/latest?cb=20200324061531" },
+            { titulo: "Two and a Half Men Temporada 7", poster: "https://m.media-amazon.com/images/I/91DaiIc04RL._AC_UF350,350_QL80_.jpg" },
+            { titulo: "Two and a Half Men Temporada 8", poster: "https://mx.web.img3.acsta.net/r_1280_720/pictures/19/08/22/20/01/5499677.jpg" },
+            { titulo: "Two and a Half Men Temporada 9", poster: "https://www.horizont.net/news/media/6/Da-ne-Dre-Te-vo-Tw-an-a-Ha-Me--Warn-Brothe-Enterta-53954-detailpp.jpeg" },
+            { titulo: "Two and a Half Men Temporada 10", poster: "https://image.tmdb.org/t/p/original/r2qiOEQcI9tSIk9KiJfuQ8hmPp7.jpg" },
+            { titulo: "Two and a Half Men Temporada 11", poster: "https://image.tmdb.org/t/p/original/qH1E5VDtEHZFtOIYHajTe31JUHm.jpg" },
+            { titulo: "Two and a Half Men Temporada 12", poster: "https://image.tmdb.org/t/p/original/t4oM4aGZzeDWHBL2VEToUwpehDj.jpg" }
         ]
     },
     {
@@ -5520,6 +5592,7 @@ function renderizarColecciones() {
         "dc-personajes": "seccion-dc-personajes",
         "batman-personaje": "seccion-batman-personaje",
         "isabela-merced": "seccion-isabela-merced",
+        "gemma-chan": "seccion-gemma-chan",
         "the-last-of-us-serie": "seccion-the-last-of-us-serie",
         "pennyworth": "seccion-pennyworth",
         "batman-contiene-comics": "seccion-batman-contiene-comics",
@@ -5756,7 +5829,14 @@ function abrirColeccion(colId) {
     // ya existe y ya está poblada por otro camino (para no duplicar datos)
     if (col.atajoId) {
         const seccionAtajo = document.getElementById(`seccion-${col.atajoId}`);
-        if (seccionAtajo) cambiarSeccion(seccionAtajo);
+        if (seccionAtajo) {
+            const origenId = seccionActivaActual ? seccionActivaActual.id : '';
+            if (ORIGENES_ATAJO_CON_RETORNO.includes(origenId)) {
+                atajoPendiente = { destino: seccionAtajo.id, origen: origenId };
+            }
+            cambiarSeccion(seccionAtajo);
+            atajoPendiente = null;
+        }
         return;
     }
 
@@ -5799,6 +5879,7 @@ function abrirColeccion(colId) {
         'sydney-sweeney': '.btn-filtro-sweeney[data-tipo="2020"]',
         'glen-powell': '.btn-filtro-powell[data-tipo="2020"]',
         'isabela-merced': '.btn-filtro-isabela[data-tipo="2020"]',
+        'gemma-chan': '.btn-filtro-gemma[data-tipo="2020"]',
         'tom-holland': '.btn-filtro-holland[data-tipo="2020"]',
         'barry-keoghan': '.btn-filtro-keoghan[data-tipo="2020"]',
         'matrix-saga': '.btn-filtro-matrix[data-tipo="peliculas"]',
@@ -6026,6 +6107,7 @@ function renderizarContenido() {
         "denis-villeneuve": "seccion-denis-villeneuve",
         "batman-personaje": "seccion-batman-personaje",
         "isabela-merced": "seccion-isabela-merced",
+        "gemma-chan": "seccion-gemma-chan",
         "the-last-of-us-serie": "seccion-the-last-of-us-serie",
         "pennyworth": "seccion-pennyworth",
         "batman-contiene-comics": "seccion-batman-contiene-comics",
@@ -7144,7 +7226,103 @@ let seccionActivaActual = document.getElementById('seccion-doomsday');
 const menuCategorias = document.getElementById('menu-categorias');
 const menuDoomsday = document.getElementById('menu-doomsday');
 
+// ==========================================
+// "VOLVER" DESDE UN ATAJO
+// Cuando una ficha-atajo (ej: "Marvel Videojuegos", "Dragon Ball Videojuegos")
+// se abre desde Videojuegos, el "Volver" tiene que regresar a Videojuegos y no a
+// la sección de siempre. Si se entra por otro camino, todo sigue como antes.
+// ==========================================
+var ORIGENES_ATAJO_CON_RETORNO = ['seccion-videojuegos-explorar'];
+var atajoPendiente = null;      // { destino, origen } mientras se abre un atajo
+var origenesAtajo = {};         // idSeccionDestino -> idSeccionOrigen
+
+function actualizarOrigenAtajo(seccionNueva) {
+    const previa = (typeof seccionActivaActual !== 'undefined' && seccionActivaActual) ? seccionActivaActual.id : '';
+    if (atajoPendiente && atajoPendiente.destino === seccionNueva.id) {
+        origenesAtajo[seccionNueva.id] = atajoPendiente.origen;
+    } else if (origenesAtajo[seccionNueva.id] && previa !== seccionNueva.id
+               && !/^seccion-(ficha|dlc|requisitos)-/.test(previa)) {
+        // Se llegó por otro camino (menú, otra cartilla...): vuelve el "Volver" original.
+        delete origenesAtajo[seccionNueva.id];
+    }
+    // Al regresar al origen, el recuerdo ya no hace falta.
+    Object.keys(origenesAtajo).forEach(k => { if (origenesAtajo[k] === seccionNueva.id) delete origenesAtajo[k]; });
+    actualizarBotonVolverAtajo(seccionNueva);
+}
+
+function actualizarBotonVolverAtajo(seccion) {
+    if (!seccion) return;
+    const origenId = origenesAtajo[seccion.id];
+    let boton = seccion.querySelector(':scope > .btn-volver');
+    if (!origenId) {
+        if (boton) {
+            if (boton.dataset.textoOriginal) boton.textContent = boton.dataset.textoOriginal;
+            if (boton.classList.contains('btn-volver-atajo-inyectado')) boton.style.display = 'none';
+        }
+        return;
+    }
+    const origen = document.getElementById(origenId);
+    const titulo = origen && origen.querySelector('h2') ? origen.querySelector('h2').textContent.trim() : 'atrás';
+    if (!boton) {
+        boton = document.createElement('button');
+        boton.className = 'btn-volver btn-volver-atajo-inyectado';
+        seccion.insertBefore(boton, seccion.firstChild);
+    }
+    if (!boton.dataset.textoOriginal) boton.dataset.textoOriginal = boton.textContent;
+    boton.textContent = `← Volver a ${titulo}`;
+    boton.style.display = '';
+}
+
+// En fase de captura, para pasar antes que el "Volver" fijo de cada sección.
+document.addEventListener('click', (e) => {
+    const boton = e.target.closest ? e.target.closest('.btn-volver') : null;
+    if (!boton) return;
+    const seccion = boton.closest('section');
+    if (!seccion || !origenesAtajo[seccion.id]) return;
+    const destino = document.getElementById(origenesAtajo[seccion.id]);
+    if (!destino) return;
+    e.stopImmediatePropagation();
+    e.preventDefault();
+    cambiarSeccion(destino);
+}, true);
+
+// ==========================================
+// ORDEN POR FECHA DE LANZAMIENTO EN CARTILLAS DE PERSONAS
+// (de la más antigua a la más nueva; título de la tarjeta -> "AAAA-MM-DD")
+// Para sumar otra cartilla, agregá su grilla acá.
+// ==========================================
+var ORDEN_LANZAMIENTO_CARTILLAS = {
+    'seccion-isabela-merced': {
+        'Spirit Untamed': '2021-06-04', 'Sweet Girl': '2021-08-20', 'Maya and the Three': '2021-10-22',
+        'Spirit & Friends': '2022-02-12', 'Father of the Bride': '2022-06-16', 'Rosaline': '2022-10-14',
+        'The Last of Us': '2023-01-15', '¡Patos!': '2023-12-22', 'Rock, Paper, Scissors': '2024-02-11',
+        'Madame Web': '2024-02-14', 'Turtles All the Way Down': '2024-05-02', 'Alien: Romulus': '2024-08-16',
+        'Superman': '2025-07-11', 'Peacemaker Temporada 2': '2025-08-21'
+    },
+    'seccion-denis-villeneuve': {
+        'Maelström': '2000-09-15', 'Incendies': '2010-09-17', 'Prisoners': '2013-09-20', 'Enemy': '2014-02-06',
+        'Sicario': '2015-10-02', 'Arrival': '2016-11-11', 'Blade Runner 2049': '2017-10-06',
+        'Dune: Parte Uno': '2021-10-22', 'Dune: Parte Dos': '2024-03-01'
+    }
+};
+
+function ordenarCartillaPorLanzamiento(seccion) {
+    if (!seccion || !ORDEN_LANZAMIENTO_CARTILLAS[seccion.id]) return;
+    const fechas = ORDEN_LANZAMIENTO_CARTILLAS[seccion.id];
+    const grilla = seccion.querySelector('.grilla-biblioteca');
+    if (!grilla) return;
+    const tarjetas = Array.from(grilla.querySelectorAll(':scope > .tarjeta-media'));
+    const fechaDe = t => fechas[t.querySelector('h3').textContent] || '9999-12-31';
+    const ordenadas = tarjetas.map((t, i) => ({ t, i })).sort((a, b) => fechaDe(a.t).localeCompare(fechaDe(b.t)) || a.i - b.i);
+    ordenadas.forEach(o => grilla.appendChild(o.t));
+}
+document.addEventListener('DOMContentLoaded', () => {
+    Object.keys(ORDEN_LANZAMIENTO_CARTILLAS).forEach(id => ordenarCartillaPorLanzamiento(document.getElementById(id)));
+});
+
 function cambiarSeccion(seccionNueva) {
+    actualizarOrigenAtajo(seccionNueva);
+    ordenarCartillaPorLanzamiento(seccionNueva);
     todasLasSecciones.forEach(sec => sec.classList.add('oculto'));
     seccionNueva.classList.remove('oculto');
     seccionActivaActual = seccionNueva;
@@ -7414,6 +7592,23 @@ botonesNavegacion.forEach(nav => {
     }
 });
 
+// Las tarjetas clonadas (cloneNode) no conservan los listeners de sus botones.
+// Este enlazador devuelve la función al botón "Ficha Técnica" de cada copia; al volver
+// desde la ficha se regresa a la sección desde la que se abrió (la vista combinada).
+function enlazarBotonesFichaEnClones(contenedor) {
+    if (!contenedor) return;
+    contenedor.querySelectorAll('.btn-ficha-tecnica-item').forEach(boton => {
+        boton.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const seccionFicha = document.getElementById(`seccion-ficha-${boton.dataset.fichaTecnica}`);
+            if (seccionFicha) {
+                seccionFicha.dataset.origen = seccionActivaActual ? seccionActivaActual.id : '';
+                cambiarSeccion(seccionFicha);
+            }
+        });
+    });
+}
+
 // Lógica de MCU Cronológico
 const btnCronologico = document.getElementById('btn-mcu-cronologico');
 if(btnCronologico) {
@@ -7423,6 +7618,7 @@ if(btnCronologico) {
             document.querySelectorAll('#seccion-mcu-infinito .tarjeta-media, #seccion-mcu-multiverso .tarjeta-media').forEach(t => {
                 grillaCronologica.appendChild(t.cloneNode(true));
             });
+            enlazarBotonesFichaEnClones(grillaCronologica);
             sincronizarVistos();
         }
         cambiarSeccion(document.getElementById('seccion-mcu-cronologico'));
@@ -7471,6 +7667,7 @@ if(btnSwHistoria) {
                 (a, b) => parseFloat(a.getAttribute('data-crono')) - parseFloat(b.getAttribute('data-crono'))
             );
             arrayTarjetas.forEach(t => grillaHistoria.appendChild(t.cloneNode(true)));
+            enlazarBotonesFichaEnClones(grillaHistoria);
             sincronizarVistos();
         }
         cambiarSeccion(document.getElementById('seccion-sw-historia'));
@@ -7954,6 +8151,273 @@ const btnVolverHalloweenFranquicias = document.getElementById('btn-volver-hallow
 if (btnVolverHalloweenFranquicias) {
     btnVolverHalloweenFranquicias.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-franquicias'));
+    });
+}
+const btnVolverAlienDepredador = document.getElementById('btn-volver-alien-depredador');
+if (btnVolverAlienDepredador) {
+    btnVolverAlienDepredador.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-franquicias'));
+    });
+}
+const btnVolverFichaAlien1979 = document.getElementById('btn-volver-ficha-alien-1979');
+if (btnVolverFichaAlien1979) {
+    btnVolverFichaAlien1979.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-alien-1979');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-alien-depredador'));
+    });
+}
+const btnVolverFichaAliens1986 = document.getElementById('btn-volver-ficha-aliens-1986');
+if (btnVolverFichaAliens1986) {
+    btnVolverFichaAliens1986.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-aliens-1986');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-alien-depredador'));
+    });
+}
+const btnVolverFichaDepredador1987 = document.getElementById('btn-volver-ficha-depredador-1987');
+if (btnVolverFichaDepredador1987) {
+    btnVolverFichaDepredador1987.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-depredador-1987');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-alien-depredador'));
+    });
+}
+const btnVolverFichaDepredador2 = document.getElementById('btn-volver-ficha-depredador-2');
+if (btnVolverFichaDepredador2) {
+    btnVolverFichaDepredador2.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-depredador-2');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-alien-depredador'));
+    });
+}
+const btnVolverFichaAlien3 = document.getElementById('btn-volver-ficha-alien-3');
+if (btnVolverFichaAlien3) {
+    btnVolverFichaAlien3.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-alien-3');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-alien-depredador'));
+    });
+}
+const btnVolverFichaAlienResurreccion = document.getElementById('btn-volver-ficha-alien-resurreccion');
+if (btnVolverFichaAlienResurreccion) {
+    btnVolverFichaAlienResurreccion.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-alien-resurreccion');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-alien-depredador'));
+    });
+}
+const btnVolverFichaAvp2004 = document.getElementById('btn-volver-ficha-avp-2004');
+if (btnVolverFichaAvp2004) {
+    btnVolverFichaAvp2004.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-avp-2004');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-alien-depredador'));
+    });
+}
+const btnVolverFichaAvpRequiem = document.getElementById('btn-volver-ficha-avp-requiem');
+if (btnVolverFichaAvpRequiem) {
+    btnVolverFichaAvpRequiem.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-avp-requiem');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-alien-depredador'));
+    });
+}
+const btnVolverFichaDepredadores2010 = document.getElementById('btn-volver-ficha-depredadores-2010');
+if (btnVolverFichaDepredadores2010) {
+    btnVolverFichaDepredadores2010.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-depredadores-2010');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-alien-depredador'));
+    });
+}
+const btnVolverFichaPrometeo = document.getElementById('btn-volver-ficha-prometeo');
+if (btnVolverFichaPrometeo) {
+    btnVolverFichaPrometeo.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-prometeo');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-alien-depredador'));
+    });
+}
+const btnVolverFichaAlienCovenant = document.getElementById('btn-volver-ficha-alien-covenant');
+if (btnVolverFichaAlienCovenant) {
+    btnVolverFichaAlienCovenant.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-alien-covenant');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-alien-depredador'));
+    });
+}
+const btnVolverFichaElDepredador2018 = document.getElementById('btn-volver-ficha-el-depredador-2018');
+if (btnVolverFichaElDepredador2018) {
+    btnVolverFichaElDepredador2018.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-el-depredador-2018');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-alien-depredador'));
+    });
+}
+const btnVolverFichaPrey2022 = document.getElementById('btn-volver-ficha-prey-2022');
+if (btnVolverFichaPrey2022) {
+    btnVolverFichaPrey2022.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-prey-2022');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-alien-depredador'));
+    });
+}
+const btnVolverFichaDepredadorKillerOfKillers = document.getElementById('btn-volver-ficha-depredador-killer-of-killers');
+if (btnVolverFichaDepredadorKillerOfKillers) {
+    btnVolverFichaDepredadorKillerOfKillers.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-depredador-killer-of-killers');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-alien-depredador'));
+    });
+}
+const btnVolverFichaDepredadorTierrasSalvajes = document.getElementById('btn-volver-ficha-depredador-tierras-salvajes');
+if (btnVolverFichaDepredadorTierrasSalvajes) {
+    btnVolverFichaDepredadorTierrasSalvajes.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-depredador-tierras-salvajes');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-alien-depredador'));
+    });
+}
+const btnVolverFichaSwEpisodio1 = document.getElementById('btn-volver-ficha-sw-episodio-1');
+if (btnVolverFichaSwEpisodio1) {
+    btnVolverFichaSwEpisodio1.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-sw-episodio-1');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-sw-episodios'));
+    });
+}
+const btnVolverFichaSwEpisodio2 = document.getElementById('btn-volver-ficha-sw-episodio-2');
+if (btnVolverFichaSwEpisodio2) {
+    btnVolverFichaSwEpisodio2.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-sw-episodio-2');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-sw-episodios'));
+    });
+}
+const btnVolverFichaSwEpisodio3 = document.getElementById('btn-volver-ficha-sw-episodio-3');
+if (btnVolverFichaSwEpisodio3) {
+    btnVolverFichaSwEpisodio3.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-sw-episodio-3');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-sw-episodios'));
+    });
+}
+const btnVolverFichaSwEpisodio4 = document.getElementById('btn-volver-ficha-sw-episodio-4');
+if (btnVolverFichaSwEpisodio4) {
+    btnVolverFichaSwEpisodio4.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-sw-episodio-4');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-sw-episodios'));
+    });
+}
+const btnVolverFichaSwEpisodio5 = document.getElementById('btn-volver-ficha-sw-episodio-5');
+if (btnVolverFichaSwEpisodio5) {
+    btnVolverFichaSwEpisodio5.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-sw-episodio-5');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-sw-episodios'));
+    });
+}
+const btnVolverFichaSwEpisodio6 = document.getElementById('btn-volver-ficha-sw-episodio-6');
+if (btnVolverFichaSwEpisodio6) {
+    btnVolverFichaSwEpisodio6.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-sw-episodio-6');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-sw-episodios'));
+    });
+}
+const btnVolverFichaSwEpisodio7 = document.getElementById('btn-volver-ficha-sw-episodio-7');
+if (btnVolverFichaSwEpisodio7) {
+    btnVolverFichaSwEpisodio7.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-sw-episodio-7');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-sw-episodios'));
+    });
+}
+const btnVolverFichaSwEpisodio8 = document.getElementById('btn-volver-ficha-sw-episodio-8');
+if (btnVolverFichaSwEpisodio8) {
+    btnVolverFichaSwEpisodio8.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-sw-episodio-8');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-sw-episodios'));
+    });
+}
+const btnVolverFichaSwEpisodio9 = document.getElementById('btn-volver-ficha-sw-episodio-9');
+if (btnVolverFichaSwEpisodio9) {
+    btnVolverFichaSwEpisodio9.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-sw-episodio-9');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-sw-episodios'));
+    });
+}
+const btnVolverFichaRogueOne = document.getElementById('btn-volver-ficha-rogue-one');
+if (btnVolverFichaRogueOne) {
+    btnVolverFichaRogueOne.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-rogue-one');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-sw-liveaction'));
+    });
+}
+const btnVolverFichaTheAcolyte = document.getElementById('btn-volver-ficha-the-acolyte');
+if (btnVolverFichaTheAcolyte) {
+    btnVolverFichaTheAcolyte.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-the-acolyte');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-sw-liveaction'));
+    });
+}
+const btnVolverFichaSwTalesOfTheJedi = document.getElementById('btn-volver-ficha-sw-tales-of-the-jedi');
+if (btnVolverFichaSwTalesOfTheJedi) {
+    btnVolverFichaSwTalesOfTheJedi.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-sw-tales-of-the-jedi');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-sw-animacion'));
+    });
+}
+const btnVolverFichaSwCloneWarsPelicula = document.getElementById('btn-volver-ficha-sw-clone-wars-pelicula');
+if (btnVolverFichaSwCloneWarsPelicula) {
+    btnVolverFichaSwCloneWarsPelicula.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-sw-clone-wars-pelicula');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-sw-animacion'));
+    });
+}
+const btnVolverFichaSwCloneWarsSerie = document.getElementById('btn-volver-ficha-sw-clone-wars-serie');
+if (btnVolverFichaSwCloneWarsSerie) {
+    btnVolverFichaSwCloneWarsSerie.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-sw-clone-wars-serie');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-sw-animacion'));
     });
 }
 const btnVolverNavidadFranquicias = document.getElementById('btn-volver-navidad-franquicias');
@@ -10918,6 +11382,26 @@ if (btnVolverFichaLegoSwTerrifyingTales) {
     });
 }
 
+const btnVolverFichaExtranoMundoDeJack = document.getElementById('btn-volver-ficha-extrano-mundo-de-jack');
+if (btnVolverFichaExtranoMundoDeJack) {
+    btnVolverFichaExtranoMundoDeJack.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-extrano-mundo-de-jack');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-peliculas-halloween'));
+    });
+}
+
+const btnVolverFichaCoraline = document.getElementById('btn-volver-ficha-coraline');
+if (btnVolverFichaCoraline) {
+    btnVolverFichaCoraline.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-coraline');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-peliculas-halloween'));
+    });
+}
+
 const btnVolverFichaAssassinsCreedUnity = document.getElementById('btn-volver-ficha-assassins-creed-unity');
 if (btnVolverFichaAssassinsCreedUnity) {
     btnVolverFichaAssassinsCreedUnity.addEventListener('click', () => {
@@ -11285,6 +11769,28 @@ const REQUISITOS_CALL_OF_DUTY_4 = {
     }
 });
 
+const btnVolverFichaHawkeyeSerie = document.getElementById('btn-volver-ficha-hawkeye-serie');
+if (btnVolverFichaHawkeyeSerie) {
+    btnVolverFichaHawkeyeSerie.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-hawkeye-serie');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-mcu-multiverso'));
+    });
+}
+
+['let-them-all-talk', 'thunderbirds-are-go', 'raya-ultimo-dragon', 'dont-worry-darling', 'the-creator-2023', 'extrapolations', 'the-afterparty', 'the-actor-2025', 'josephine-2026', 'five-star-weekend'].forEach(id => {
+    const btn = document.getElementById('btn-volver-ficha-' + id);
+    if (btn) {
+        btn.addEventListener('click', () => {
+            const seccionFicha = document.getElementById('seccion-ficha-' + id);
+            const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+            const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+            cambiarSeccion(seccionOrigen || document.getElementById('seccion-gemma-chan'));
+        });
+    }
+});
+
 const btnVolverFichaLegoJurassicWorld = document.getElementById('btn-volver-ficha-lego-jurassic-world');
 
 
@@ -11410,6 +11916,8 @@ const FICHAS_TECNICAS_TITULOS = {
     "birds-of-prey-2002": "Birds of Prey (2002)",
     "dragon-ball-fighterz": "Dragon Ball FighterZ",
     "lego-sw-terrifying-tales": "LEGO Star Wars: Terrifying Tales",
+    "extrano-mundo-de-jack": "El Extraño Mundo de Jack",
+    "coraline": "Los Mundos de Coraline",
     "assassins-creed-unity": "Assassin's Creed Unity",
     "avengers-age-of-ultron": "Avengers: Age of Ultron",
     "doctor-strange-1": "Doctor Strange",
@@ -11463,6 +11971,35 @@ const FICHAS_TECNICAS_TITULOS = {
     "rock-paper-scissors": "Rock, Paper, Scissors",
     "turtles-all-the-way-down": "Turtles All the Way Down",
     "alien-romulus": "Alien: Romulus",
+    "alien-1979": "Alien (1979)",
+    "aliens-1986": "Aliens",
+    "alien-3": "Alien 3",
+    "alien-resurreccion": "Alien: Resurrección",
+    "depredador-1987": "Depredador",
+    "depredador-2": "Depredador 2",
+    "avp-2004": "Alien vs. Depredador",
+    "avp-requiem": "Alien vs. Depredador: Requiem",
+    "depredadores-2010": "Depredadores",
+    "prometeo": "Prometeo",
+    "alien-covenant": "Alien: Covenant",
+    "el-depredador-2018": "El Depredador",
+    "prey-2022": "Prey",
+    "sw-episodio-1": "Star Wars: Episodio I - La Amenaza Fantasma",
+    "sw-episodio-2": "Star Wars: Episodio II - El Ataque de los Clones",
+    "sw-episodio-3": "Star Wars: Episodio III - La Venganza de los Sith",
+    "sw-episodio-4": "Star Wars: Episodio IV - Una Nueva Esperanza",
+    "sw-episodio-5": "Star Wars: Episodio V - El Imperio Contraataca",
+    "sw-episodio-6": "Star Wars: Episodio VI - El Retorno del Jedi",
+    "sw-episodio-7": "Star Wars: Episodio VII - El Despertar de la Fuerza",
+    "sw-episodio-8": "Star Wars: Episodio VIII - Los Últimos Jedi",
+    "sw-episodio-9": "Star Wars: Episodio IX - El Ascenso de Skywalker",
+    "rogue-one": "Rogue One: A Star Wars Story",
+    "the-acolyte": "The Acolyte",
+    "sw-tales-of-the-jedi": "Star Wars: Tales of the Jedi",
+    "sw-clone-wars-pelicula": "The Clone Wars (Película)",
+    "sw-clone-wars-serie": "The Clone Wars (Serie)",
+    "depredador-killer-of-killers": "Depredador: Killer of Killers",
+    "depredador-tierras-salvajes": "Depredador: Tierras Salvajes",
     "the-last-of-us-serie": "The Last of Us (Serie)",
     "tlou-t1": "The Last of Us Temporada 1",
     "tlou-t2": "The Last of Us Temporada 2",
@@ -11471,7 +12008,18 @@ const FICHAS_TECNICAS_TITULOS = {
     "man-of-steel": "Man of Steel",
     "batman-v-superman": ["Batman v Superman", "Batman v Superman: Dawn of Justice"],
     "shang-chi": "Shang-Chi",
-    "eternals": "Eternals"
+    "eternals": "Eternals",
+    "hawkeye-serie": "Hawkeye",
+    "let-them-all-talk": "Let Them All Talk",
+    "thunderbirds-are-go": "Thunderbirds Are Go",
+    "raya-ultimo-dragon": "Raya y El Último Dragón",
+    "dont-worry-darling": "Don't Worry Darling",
+    "the-creator-2023": "The Creator",
+    "extrapolations": "Extrapolations",
+    "the-afterparty": "The Afterparty",
+    "the-actor-2025": "The Actor",
+    "josephine-2026": "Josephine",
+    "five-star-weekend": "The Five-Star Weekend"
 };
 
 // Casos con id de sección no estándar (no siguen "seccion-ficha-<id>").
@@ -12390,6 +12938,32 @@ const REPARTO_PELICULAS = {
             { actor: "Mia Sara", personaje: "Dra. Harleen Quinzel / Harley Quinn" }
         ]
     },
+    "extrano-mundo-de-jack": {
+        director: "Henry Selick",
+        elenco: [
+            { actor: "Chris Sarandon", personaje: "Jack Skellington (voz)" },
+            { actor: "Danny Elfman", personaje: "Jack Skellington (canto) (voz)" },
+            { actor: "Catherine O'Hara", personaje: "Sally (voz)" },
+            { actor: "William Hickey", personaje: "Dr. Finkelstein (voz)" },
+            { actor: "Glenn Shadix", personaje: "El Alcalde (voz)" },
+            { actor: "Paul Reubens", personaje: "Lock (voz)" },
+            { actor: "Ken Page", personaje: "Oogie Boogie (voz)" },
+            { actor: "Ed Ivory", personaje: "Santa Claus (voz)" }
+        ]
+    },
+    "coraline": {
+        director: "Henry Selick",
+        elenco: [
+            { actor: "Dakota Fanning", personaje: "Coraline Jones (voz)" },
+            { actor: "Teri Hatcher", personaje: "Mel Jones / Otra Madre (voz)" },
+            { actor: "Jennifer Saunders", personaje: "Miss April Spink (voz)" },
+            { actor: "Dawn French", personaje: "Miss Miriam Forcible (voz)" },
+            { actor: "Keith David", personaje: "El Gato (voz)" },
+            { actor: "John Hodgman", personaje: "Charlie Jones / Otro Padre (voz)" },
+            { actor: "Robert Bailey Jr.", personaje: "Wybie Lovat (voz)" },
+            { actor: "Ian McShane", personaje: "Sr. Bobinsky (voz)" }
+        ]
+    },
     "lego-sw-terrifying-tales": {
         director: "Ken Cunningham",
         elenco: [
@@ -13041,6 +13615,388 @@ const REPARTO_PELICULAS = {
             { actor: "Poorna Jagannathan", personaje: "Dra. Kira Singh" }
         ]
     },
+    "alien-1979": {
+        director: "Ridley Scott",
+        elenco: [
+            { actor: "Sigourney Weaver", personaje: "Ellen Ripley" },
+            { actor: "Tom Skerritt", personaje: "Dallas" },
+            { actor: "Veronica Cartwright", personaje: "Lambert" },
+            { actor: "Harry Dean Stanton", personaje: "Brett" },
+            { actor: "John Hurt", personaje: "Kane" },
+            { actor: "Ian Holm", personaje: "Ash" },
+            { actor: "Yaphet Kotto", personaje: "Parker" }
+        ]
+    },
+    "aliens-1986": {
+        director: "James Cameron",
+        elenco: [
+            { actor: "Sigourney Weaver", personaje: "Ellen Ripley" },
+            { actor: "Michael Biehn", personaje: "Cabo Hicks" },
+            { actor: "Carrie Henn", personaje: "Newt" },
+            { actor: "Paul Reiser", personaje: "Carter Burke" },
+            { actor: "Lance Henriksen", personaje: "Bishop" },
+            { actor: "Bill Paxton", personaje: "Hudson" },
+            { actor: "Jenette Goldstein", personaje: "Vasquez" },
+            { actor: "William Hope", personaje: "Teniente Gorman" }
+        ]
+    },
+    "depredador-1987": {
+        director: "John McTiernan",
+        elenco: [
+            { actor: "Arnold Schwarzenegger", personaje: "Mayor Alan \"Dutch\" Schaefer" },
+            { actor: "Carl Weathers", personaje: "George Dillon" },
+            { actor: "Elpidia Carrillo", personaje: "Anna" },
+            { actor: "Bill Duke", personaje: "Mac" },
+            { actor: "Jesse Ventura", personaje: "Blain" },
+            { actor: "Sonny Landham", personaje: "Billy" },
+            { actor: "Richard Chaves", personaje: "Poncho" },
+            { actor: "Shane Black", personaje: "Hawkins" },
+            { actor: "Kevin Peter Hall", personaje: "El Depredador" }
+        ]
+    },
+    "depredador-2": {
+        director: "Stephen Hopkins",
+        elenco: [
+            { actor: "Danny Glover", personaje: "Teniente Mike Harrigan" },
+            { actor: "Gary Busey", personaje: "Peter Keyes" },
+            { actor: "Rubén Blades", personaje: "Danny Archuleta" },
+            { actor: "María Conchita Alonso", personaje: "Leona Cantrell" },
+            { actor: "Bill Paxton", personaje: "Jerry Lambert" },
+            { actor: "Robert Davi", personaje: "Agente Heinemann" },
+            { actor: "Adam Baldwin", personaje: "Garber" },
+            { actor: "Kevin Peter Hall", personaje: "El Depredador" }
+        ]
+    },
+    "alien-3": {
+        director: "David Fincher",
+        elenco: [
+            { actor: "Sigourney Weaver", personaje: "Ellen Ripley" },
+            { actor: "Charles S. Dutton", personaje: "Dillon" },
+            { actor: "Charles Dance", personaje: "Clemens" },
+            { actor: "Paul McGann", personaje: "Golic" },
+            { actor: "Brian Glover", personaje: "Andrews" },
+            { actor: "Ralph Brown", personaje: "Aaron" },
+            { actor: "Danny Webb", personaje: "Morse" },
+            { actor: "Pete Postlethwaite", personaje: "David" }
+        ]
+    },
+    "alien-resurreccion": {
+        director: "Jean-Pierre Jeunet",
+        elenco: [
+            { actor: "Sigourney Weaver", personaje: "Ripley 8" },
+            { actor: "Winona Ryder", personaje: "Call" },
+            { actor: "Dominique Pinon", personaje: "Vriess" },
+            { actor: "Ron Perlman", personaje: "Johner" },
+            { actor: "Gary Dourdan", personaje: "Christie" },
+            { actor: "Michael Wincott", personaje: "Elgyn" },
+            { actor: "Dan Hedaya", personaje: "General Pérez" },
+            { actor: "Brad Dourif", personaje: "Dr. Gediman" }
+        ]
+    },
+    "avp-2004": {
+        director: "Paul W. S. Anderson",
+        elenco: [
+            { actor: "Sanaa Lathan", personaje: "Alexa Woods" },
+            { actor: "Raoul Bova", personaje: "Sebastian de Rosa" },
+            { actor: "Lance Henriksen", personaje: "Charles Bishop Weyland" },
+            { actor: "Ewen Bremner", personaje: "Graeme Miller" },
+            { actor: "Colin Salmon", personaje: "Maxwell Stafford" },
+            { actor: "Tommy Flanagan", personaje: "Mark Verheiden" }
+        ]
+    },
+    "avp-requiem": {
+        director: "Colin Strause y Greg Strause",
+        elenco: [
+            { actor: "Steven Pasquale", personaje: "Dallas Howard" },
+            { actor: "Reiko Aylesworth", personaje: "Kelly O'Brien" },
+            { actor: "John Ortiz", personaje: "Sheriff Eddie Morales" },
+            { actor: "Johnny Lewis", personaje: "Ricky Howard" },
+            { actor: "Ariel Gade", personaje: "Molly O'Brien" },
+            { actor: "Kristen Hager", personaje: "Jesse Salinger" },
+            { actor: "Sam Trammell", personaje: "Tim O'Brien" }
+        ]
+    },
+    "depredadores-2010": {
+        director: "Nimród Antal",
+        elenco: [
+            { actor: "Adrien Brody", personaje: "Royce" },
+            { actor: "Topher Grace", personaje: "Edwin" },
+            { actor: "Alice Braga", personaje: "Isabelle" },
+            { actor: "Walton Goggins", personaje: "Stans" },
+            { actor: "Oleg Taktarov", personaje: "Nikolai" },
+            { actor: "Laurence Fishburne", personaje: "Noland" },
+            { actor: "Danny Trejo", personaje: "Cuchillo" },
+            { actor: "Mahershala Ali", personaje: "Mombasa" }
+        ]
+    },
+    "prometeo": {
+        director: "Ridley Scott",
+        elenco: [
+            { actor: "Noomi Rapace", personaje: "Elizabeth Shaw" },
+            { actor: "Michael Fassbender", personaje: "David" },
+            { actor: "Charlize Theron", personaje: "Meredith Vickers" },
+            { actor: "Idris Elba", personaje: "Janek" },
+            { actor: "Guy Pearce", personaje: "Peter Weyland" },
+            { actor: "Logan Marshall-Green", personaje: "Charlie Holloway" },
+            { actor: "Sean Harris", personaje: "Fifield" },
+            { actor: "Rafe Spall", personaje: "Millburn" }
+        ]
+    },
+    "alien-covenant": {
+        director: "Ridley Scott",
+        elenco: [
+            { actor: "Michael Fassbender", personaje: "Walter / David" },
+            { actor: "Katherine Waterston", personaje: "Daniels" },
+            { actor: "Billy Crudup", personaje: "Oram" },
+            { actor: "Danny McBride", personaje: "Tennessee" },
+            { actor: "Demián Bichir", personaje: "Lope" },
+            { actor: "Carmen Ejogo", personaje: "Karine" },
+            { actor: "Jussie Smollett", personaje: "Ricks" },
+            { actor: "Callie Hernandez", personaje: "Upworth" }
+        ]
+    },
+    "el-depredador-2018": {
+        director: "Shane Black",
+        elenco: [
+            { actor: "Boyd Holbrook", personaje: "Quinn McKenna" },
+            { actor: "Trevante Rhodes", personaje: "Nebraska Williams" },
+            { actor: "Jacob Tremblay", personaje: "Rory McKenna" },
+            { actor: "Keegan-Michael Key", personaje: "Coyle" },
+            { actor: "Olivia Munn", personaje: "Casey Bracket" },
+            { actor: "Sterling K. Brown", personaje: "Traeger" },
+            { actor: "Thomas Jane", personaje: "Baxley" },
+            { actor: "Alfie Allen", personaje: "Lynch" }
+        ]
+    },
+    "prey-2022": {
+        director: "Dan Trachtenberg",
+        elenco: [
+            { actor: "Amber Midthunder", personaje: "Naru" },
+            { actor: "Dakota Beavers", personaje: "Taabe" },
+            { actor: "Dane DiLiegro", personaje: "El Depredador" },
+            { actor: "Stormee Kipp", personaje: "Wasape" },
+            { actor: "Michelle Thrush", personaje: "Aruka" }
+        ]
+    },
+    "depredador-killer-of-killers": {
+        director: "Dan Trachtenberg",
+        elenco: [
+            { actor: "Lindsay LaVanchy", personaje: "Ursa (voz)" },
+            { actor: "Louis Ozawa", personaje: "Kenji (voz)" },
+            { actor: "Rick Gonzalez", personaje: "Torres (voz)" },
+            { actor: "Michael Biehn", personaje: "Piloto (voz)" }
+        ]
+    },
+    "depredador-tierras-salvajes": {
+        director: "Dan Trachtenberg",
+        elenco: [
+            { actor: "Elle Fanning", personaje: "Thia / Tessa" },
+            { actor: "Dimitrius Schuster-Koloamatangi", personaje: "Dek" },
+            { actor: "Reuben de Jong", personaje: "Kwei" }
+        ]
+    },
+    "sw-episodio-1": {
+        director: "George Lucas",
+        elenco: [
+            { actor: "Liam Neeson", personaje: "Qui-Gon Jinn" },
+            { actor: "Ewan McGregor", personaje: "Obi-Wan Kenobi" },
+            { actor: "Natalie Portman", personaje: "Reina Amidala / Padmé" },
+            { actor: "Jake Lloyd", personaje: "Anakin Skywalker" },
+            { actor: "Ian McDiarmid", personaje: "Canciller Palpatine" },
+            { actor: "Pernilla August", personaje: "Shmi Skywalker" },
+            { actor: "Samuel L. Jackson", personaje: "Mace Windu" },
+            { actor: "Ahmed Best", personaje: "Jar Jar Binks (voz)" },
+            { actor: "Frank Oz", personaje: "Yoda (voz)" },
+            { actor: "Ray Park", personaje: "Darth Maul" }
+        ]
+    },
+    "sw-episodio-2": {
+        director: "George Lucas",
+        elenco: [
+            { actor: "Hayden Christensen", personaje: "Anakin Skywalker" },
+            { actor: "Ewan McGregor", personaje: "Obi-Wan Kenobi" },
+            { actor: "Natalie Portman", personaje: "Padmé Amidala" },
+            { actor: "Christopher Lee", personaje: "Conde Dooku" },
+            { actor: "Samuel L. Jackson", personaje: "Mace Windu" },
+            { actor: "Ian McDiarmid", personaje: "Canciller Palpatine" },
+            { actor: "Frank Oz", personaje: "Yoda (voz)" },
+            { actor: "Temuera Morrison", personaje: "Jango Fett" },
+            { actor: "Anthony Daniels", personaje: "C-3PO" },
+            { actor: "Jimmy Smits", personaje: "Bail Organa" }
+        ]
+    },
+    "sw-episodio-3": {
+        director: "George Lucas",
+        elenco: [
+            { actor: "Ewan McGregor", personaje: "Obi-Wan Kenobi" },
+            { actor: "Hayden Christensen", personaje: "Anakin Skywalker / Darth Vader" },
+            { actor: "Natalie Portman", personaje: "Padmé Amidala" },
+            { actor: "Ian McDiarmid", personaje: "Canciller Palpatine / Darth Sidious" },
+            { actor: "Samuel L. Jackson", personaje: "Mace Windu" },
+            { actor: "Frank Oz", personaje: "Yoda (voz)" },
+            { actor: "Jimmy Smits", personaje: "Bail Organa" },
+            { actor: "Anthony Daniels", personaje: "C-3PO" },
+            { actor: "Christopher Lee", personaje: "Conde Dooku" },
+            { actor: "Matthew Wood", personaje: "General Grievous (voz)" }
+        ]
+    },
+    "sw-episodio-4": {
+        director: "George Lucas",
+        elenco: [
+            { actor: "Mark Hamill", personaje: "Luke Skywalker" },
+            { actor: "Harrison Ford", personaje: "Han Solo" },
+            { actor: "Carrie Fisher", personaje: "Princesa Leia" },
+            { actor: "Alec Guinness", personaje: "Obi-Wan Kenobi" },
+            { actor: "Peter Cushing", personaje: "Gran Moff Tarkin" },
+            { actor: "Anthony Daniels", personaje: "C-3PO" },
+            { actor: "Kenny Baker", personaje: "R2-D2" },
+            { actor: "Peter Mayhew", personaje: "Chewbacca" },
+            { actor: "David Prowse", personaje: "Darth Vader" },
+            { actor: "James Earl Jones", personaje: "Darth Vader (voz)" }
+        ]
+    },
+    "sw-episodio-5": {
+        director: "Irvin Kershner",
+        elenco: [
+            { actor: "Mark Hamill", personaje: "Luke Skywalker" },
+            { actor: "Harrison Ford", personaje: "Han Solo" },
+            { actor: "Carrie Fisher", personaje: "Princesa Leia" },
+            { actor: "Billy Dee Williams", personaje: "Lando Calrissian" },
+            { actor: "Anthony Daniels", personaje: "C-3PO" },
+            { actor: "David Prowse", personaje: "Darth Vader" },
+            { actor: "Peter Mayhew", personaje: "Chewbacca" },
+            { actor: "Kenny Baker", personaje: "R2-D2" },
+            { actor: "Frank Oz", personaje: "Yoda (voz)" },
+            { actor: "James Earl Jones", personaje: "Darth Vader (voz)" }
+        ]
+    },
+    "sw-episodio-6": {
+        director: "Richard Marquand",
+        elenco: [
+            { actor: "Mark Hamill", personaje: "Luke Skywalker" },
+            { actor: "Harrison Ford", personaje: "Han Solo" },
+            { actor: "Carrie Fisher", personaje: "Princesa Leia" },
+            { actor: "Billy Dee Williams", personaje: "Lando Calrissian" },
+            { actor: "Ian McDiarmid", personaje: "El Emperador" },
+            { actor: "Anthony Daniels", personaje: "C-3PO" },
+            { actor: "Peter Mayhew", personaje: "Chewbacca" },
+            { actor: "Kenny Baker", personaje: "R2-D2" },
+            { actor: "Frank Oz", personaje: "Yoda (voz)" },
+            { actor: "James Earl Jones", personaje: "Darth Vader (voz)" }
+        ]
+    },
+    "sw-episodio-7": {
+        director: "J. J. Abrams",
+        elenco: [
+            { actor: "Daisy Ridley", personaje: "Rey" },
+            { actor: "John Boyega", personaje: "Finn" },
+            { actor: "Oscar Isaac", personaje: "Poe Dameron" },
+            { actor: "Adam Driver", personaje: "Kylo Ren" },
+            { actor: "Harrison Ford", personaje: "Han Solo" },
+            { actor: "Carrie Fisher", personaje: "General Leia Organa" },
+            { actor: "Mark Hamill", personaje: "Luke Skywalker" },
+            { actor: "Domhnall Gleeson", personaje: "General Hux" },
+            { actor: "Gwendoline Christie", personaje: "Capitán Phasma" },
+            { actor: "Lupita Nyong'o", personaje: "Maz Kanata (voz)" },
+            { actor: "Andy Serkis", personaje: "Líder Supremo Snoke" }
+        ]
+    },
+    "sw-episodio-8": {
+        director: "Rian Johnson",
+        elenco: [
+            { actor: "Daisy Ridley", personaje: "Rey" },
+            { actor: "Mark Hamill", personaje: "Luke Skywalker" },
+            { actor: "Carrie Fisher", personaje: "General Leia Organa" },
+            { actor: "Adam Driver", personaje: "Kylo Ren" },
+            { actor: "John Boyega", personaje: "Finn" },
+            { actor: "Oscar Isaac", personaje: "Poe Dameron" },
+            { actor: "Kelly Marie Tran", personaje: "Rose Tico" },
+            { actor: "Laura Dern", personaje: "Vicealmirante Holdo" },
+            { actor: "Benicio del Toro", personaje: "DJ" },
+            { actor: "Domhnall Gleeson", personaje: "General Hux" },
+            { actor: "Andy Serkis", personaje: "Líder Supremo Snoke" }
+        ]
+    },
+    "sw-episodio-9": {
+        director: "J. J. Abrams",
+        elenco: [
+            { actor: "Daisy Ridley", personaje: "Rey" },
+            { actor: "Adam Driver", personaje: "Kylo Ren / Ben Solo" },
+            { actor: "John Boyega", personaje: "Finn" },
+            { actor: "Oscar Isaac", personaje: "Poe Dameron" },
+            { actor: "Carrie Fisher", personaje: "General Leia Organa" },
+            { actor: "Mark Hamill", personaje: "Luke Skywalker" },
+            { actor: "Billy Dee Williams", personaje: "Lando Calrissian" },
+            { actor: "Ian McDiarmid", personaje: "Emperador Palpatine" },
+            { actor: "Keri Russell", personaje: "Zorii Bliss" },
+            { actor: "Naomi Ackie", personaje: "Jannah" },
+            { actor: "Richard E. Grant", personaje: "Allegiant General Pryde" }
+        ]
+    },
+    "rogue-one": {
+        director: "Gareth Edwards",
+        elenco: [
+            { actor: "Felicity Jones", personaje: "Jyn Erso" },
+            { actor: "Diego Luna", personaje: "Cassian Andor" },
+            { actor: "Ben Mendelsohn", personaje: "Director Krennic" },
+            { actor: "Donnie Yen", personaje: "Chirrut Îmwe" },
+            { actor: "Mads Mikkelsen", personaje: "Galen Erso" },
+            { actor: "Alan Tudyk", personaje: "K-2SO (voz)" },
+            { actor: "Riz Ahmed", personaje: "Bodhi Rook" },
+            { actor: "Jiang Wen", personaje: "Baze Malbus" },
+            { actor: "Forest Whitaker", personaje: "Saw Gerrera" },
+            { actor: "James Earl Jones", personaje: "Darth Vader (voz)" }
+        ]
+    },
+    "the-acolyte": {
+        director: "Leslye Headland (creadora)",
+        elenco: [
+            { actor: "Amandla Stenberg", personaje: "Osha / Mae" },
+            { actor: "Lee Jung-jae", personaje: "Maestro Sol" },
+            { actor: "Manny Jacinto", personaje: "Qimir" },
+            { actor: "Dafne Keen", personaje: "Jecki Lon" },
+            { actor: "Charlie Barnett", personaje: "Yord Fandar" },
+            { actor: "Rebecca Henderson", personaje: "Vernestra Rwoh" },
+            { actor: "Jodie Turner-Smith", personaje: "Madre Aniseya" },
+            { actor: "Carrie-Anne Moss", personaje: "Maestra Indara" }
+        ]
+    },
+    "sw-tales-of-the-jedi": {
+        director: "Dave Filoni (creador)",
+        elenco: [
+            { actor: "Ashley Eckstein", personaje: "Ahsoka Tano (voz)" },
+            { actor: "Corey Burton", personaje: "Conde Dooku (voz)" },
+            { actor: "Liam Neeson", personaje: "Qui-Gon Jinn (voz)" }
+        ]
+    },
+    "sw-clone-wars-pelicula": {
+        director: "Dave Filoni",
+        elenco: [
+            { actor: "Matt Lanter", personaje: "Anakin Skywalker (voz)" },
+            { actor: "Ashley Eckstein", personaje: "Ahsoka Tano (voz)" },
+            { actor: "James Arnold Taylor", personaje: "Obi-Wan Kenobi (voz)" },
+            { actor: "Tom Kane", personaje: "Yoda (voz)" },
+            { actor: "Christopher Lee", personaje: "Conde Dooku (voz)" },
+            { actor: "Catherine Taber", personaje: "Padmé Amidala (voz)" },
+            { actor: "Anthony Daniels", personaje: "C-3PO (voz)" },
+            { actor: "Samuel L. Jackson", personaje: "Mace Windu (voz)" },
+            { actor: "Nika Futterman", personaje: "Asajj Ventress (voz)" }
+        ]
+    },
+    "sw-clone-wars-serie": {
+        director: "Dave Filoni (showrunner) / George Lucas (creador)",
+        elenco: [
+            { actor: "Matt Lanter", personaje: "Anakin Skywalker (voz)" },
+            { actor: "Ashley Eckstein", personaje: "Ahsoka Tano (voz)" },
+            { actor: "James Arnold Taylor", personaje: "Obi-Wan Kenobi (voz)" },
+            { actor: "Tom Kane", personaje: "Yoda (voz)" },
+            { actor: "Christopher Lee", personaje: "Conde Dooku (voz)" },
+            { actor: "Catherine Taber", personaje: "Padmé Amidala (voz)" },
+            { actor: "Anthony Daniels", personaje: "C-3PO (voz)" },
+            { actor: "Samuel L. Jackson", personaje: "Mace Windu (voz)" },
+            { actor: "Nika Futterman", personaje: "Asajj Ventress (voz)" }
+        ]
+    },
     "alien-romulus": {
         director: "Fede Álvarez",
         elenco: [
@@ -13163,6 +14119,138 @@ const REPARTO_PELICULAS = {
             { actor: "Don Lee", personaje: "Gilgamesh" },
             { actor: "Kit Harington", personaje: "Dane Whitman" },
             { actor: "Harry Styles", personaje: "Eros" }
+        ]
+    },
+    "hawkeye-serie": {
+        director: "Jonathan Igla (creador), Rhys Thomas",
+        elenco: [
+            { actor: "Jeremy Renner", personaje: "Clint Barton / Hawkeye" },
+            { actor: "Hailee Steinfeld", personaje: "Kate Bishop" },
+            { actor: "Vera Farmiga", personaje: "Eleanor Bishop" },
+            { actor: "Tony Dalton", personaje: "Jack Duquesne" },
+            { actor: "Fra Fee", personaje: "Kazi" },
+            { actor: "Alaqua Cox", personaje: "Maya Lopez / Echo" },
+            { actor: "Zahn McClarnon", personaje: "William Lopez" },
+            { actor: "Brian d'Arcy James", personaje: "Derek Bishop" },
+            { actor: "Florence Pugh", personaje: "Yelena Belova" },
+            { actor: "Vincent D'Onofrio", personaje: "Wilson Fisk" },
+            { actor: "Linda Cardellini", personaje: "Laura Barton" }
+        ]
+    },
+    "let-them-all-talk": {
+        director: "Steven Soderbergh",
+        elenco: [
+            { actor: "Meryl Streep", personaje: "Alice Hughes" },
+            { actor: "Candice Bergen", personaje: "Roberta" },
+            { actor: "Gemma Chan", personaje: "Karen" },
+            { actor: "Lucas Hedges", personaje: "Tyler Hughes" },
+            { actor: "Dianne Wiest", personaje: "Susan" }
+        ]
+    },
+    "thunderbirds-are-go": {
+        director: "Richard Taylor (creador)",
+        elenco: [
+            { actor: "Gemma Chan", personaje: "Profesora Kwark (voz, invitada)" },
+            { actor: "Rasmus Hardiker", personaje: "Scott / Alan Tracy (voz)" },
+            { actor: "David Menkin", personaje: "Virgil / Gordon Tracy (voz)" },
+            { actor: "Thomas Brodie-Sangster", personaje: "John Tracy (voz)" },
+            { actor: "Angel Coulby", personaje: "Kayo (voz)" },
+            { actor: "David Graham", personaje: "Parker (voz)" },
+            { actor: "Sandra Dickinson", personaje: "Abuela Tracy (voz)" },
+            { actor: "Jenna Coleman", personaje: "Baines (voz)" },
+            { actor: "Adjoa Andoh", personaje: "Coronel Casey (voz)" }
+        ]
+    },
+    "raya-ultimo-dragon": {
+        director: "Don Hall, Carlos López Estrada",
+        elenco: [
+            { actor: "Kelly Marie Tran", personaje: "Raya (voz)" },
+            { actor: "Awkwafina", personaje: "Sisu (voz)" },
+            { actor: "Gemma Chan", personaje: "Namaari (voz)" },
+            { actor: "Izaac Wang", personaje: "Boun (voz)" },
+            { actor: "Daniel Dae Kim", personaje: "Benja (voz)" },
+            { actor: "Benedict Wong", personaje: "Tong (voz)" },
+            { actor: "Sandra Oh", personaje: "Virana (voz)" },
+            { actor: "Thalia Tran", personaje: "Little Noi (voz)" }
+        ]
+    },
+    "dont-worry-darling": {
+        director: "Olivia Wilde",
+        elenco: [
+            { actor: "Florence Pugh", personaje: "Alice Chambers" },
+            { actor: "Harry Styles", personaje: "Jack Chambers" },
+            { actor: "Olivia Wilde", personaje: "Bunny" },
+            { actor: "Gemma Chan", personaje: "Shelley" },
+            { actor: "KiKi Layne", personaje: "Margaret" },
+            { actor: "Nick Kroll", personaje: "Bill" },
+            { actor: "Chris Pine", personaje: "Frank" }
+        ]
+    },
+    "the-creator-2023": {
+        director: "Gareth Edwards",
+        elenco: [
+            { actor: "John David Washington", personaje: "Joshua Taylor" },
+            { actor: "Madeleine Yuna Voyles", personaje: "Alfie" },
+            { actor: "Gemma Chan", personaje: "Maya Fey" },
+            { actor: "Ken Watanabe", personaje: "Harun" },
+            { actor: "Allison Janney", personaje: "Coronel Howell" }
+        ]
+    },
+    "extrapolations": {
+        director: "Scott Z. Burns (creador)",
+        elenco: [
+            { actor: "Meryl Streep", personaje: "Eve (voz)" },
+            { actor: "Kit Harington", personaje: "Nicholas Bilton" },
+            { actor: "Sienna Miller", personaje: "Rebecca" },
+            { actor: "Daveed Diggs", personaje: "Rabino Marshall Zucker" },
+            { actor: "Tahar Rahim", personaje: "Omar" },
+            { actor: "Gemma Chan", personaje: "Natasha Alper" }
+        ]
+    },
+    "the-afterparty": {
+        director: "Christopher Miller (creador)",
+        elenco: [
+            { actor: "Tiffany Haddish", personaje: "Detective Danner" },
+            { actor: "Sam Richardson", personaje: "Aniq" },
+            { actor: "Zoë Chao", personaje: "Zoë" },
+            { actor: "Ben Schwartz", personaje: "Yasper" },
+            { actor: "Ike Barinholtz", personaje: "Brett" },
+            { actor: "Ilana Glazer", personaje: "Chelsea" },
+            { actor: "Jamie Demetriou", personaje: "Walt" },
+            { actor: "Dave Franco", personaje: "Xavier" },
+            { actor: "Gemma Chan", personaje: "Aparición especial" }
+        ]
+    },
+    "the-actor-2025": {
+        director: "Duke Johnson",
+        elenco: [
+            { actor: "André Holland", personaje: "Paul Cole" },
+            { actor: "Gemma Chan", personaje: "Edna" },
+            { actor: "May Calamawy", personaje: "Varios personajes" },
+            { actor: "Tracey Ullman", personaje: "Varios personajes" },
+            { actor: "Toby Jones", personaje: "Varios personajes" },
+            { actor: "Simon McBurney", personaje: "Varios personajes" },
+            { actor: "Joe Cole", personaje: "Elenco principal" }
+        ]
+    },
+    "josephine-2026": {
+        director: "Beth de Araújo",
+        elenco: [
+            { actor: "Mason Reeves", personaje: "Josephine" },
+            { actor: "Channing Tatum", personaje: "Damien" },
+            { actor: "Gemma Chan", personaje: "Claire" }
+        ]
+    },
+    "five-star-weekend": {
+        director: "Bekah Brunstetter (creadora), Minkie Spiro",
+        elenco: [
+            { actor: "Jennifer Garner", personaje: "Hollis Shaw" },
+            { actor: "Gemma Chan", personaje: "Gigi Ling" },
+            { actor: "D'Arcy Carden", personaje: "Elenco principal" },
+            { actor: "Regina Hall", personaje: "Elenco principal" },
+            { actor: "Chloë Sevigny", personaje: "Elenco principal" },
+            { actor: "Timothy Olyphant", personaje: "Elenco principal" },
+            { actor: "Harlow Jane", personaje: "Elenco principal" }
         ]
     }
 };
@@ -13545,6 +14633,13 @@ if (btnVolverHowIMetYourMother) {
     });
 }
 
+const btnVolverTwoAndAHalfMen = document.getElementById('btn-volver-two-and-a-half-men');
+if (btnVolverTwoAndAHalfMen) {
+    btnVolverTwoAndAHalfMen.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-sitcoms'));
+    });
+}
+
 const btnVolverNewGirl = document.getElementById('btn-volver-new-girl');
 if (btnVolverNewGirl) {
     btnVolverNewGirl.addEventListener('click', () => {
@@ -13909,6 +15004,26 @@ const btnVolverTheLastOfUsSerie = document.getElementById('btn-volver-the-last-o
 if (btnVolverTheLastOfUsSerie) {
     btnVolverTheLastOfUsSerie.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-isabela-merced'));
+    });
+}
+
+// ==========================================
+// FILTROS "GEMMA CHAN" (por década)
+// ==========================================
+const botonesFiltroGemma = document.querySelectorAll('.btn-filtro-gemma');
+botonesFiltroGemma.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroGemma.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        aplicarFiltroTipoYDecadaActor('seccion-gemma-chan', 'btn-filtro-gemma');
+    });
+});
+inicializarFiltroTipoActor('seccion-gemma-chan', 'btn-filtro-gemma');
+
+const btnVolverGemmaChan = document.getElementById('btn-volver-gemma-chan');
+if (btnVolverGemmaChan) {
+    btnVolverGemmaChan.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-actores'));
     });
 }
 
