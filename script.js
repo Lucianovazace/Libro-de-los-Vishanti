@@ -1141,11 +1141,16 @@ const listaMedia = [
     { titulo: "Cutting Class", categoria: "brad-pitt", subtipo: "1980", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYWVhNDNiMDItNzJmMy00YjJmLTg0MjQtMWFlMTI4ZGJkNDdkXkEyXkFqcGc@._V1_.jpg" },
 
     // --- FLORENCE PUGH (con filtros por década) ---
+    { titulo: "The Killer", categoria: "michael-fassbender", subtipo: "2020", tipo: "Película", fichaTecnicaId: "the-killer", poster: "https://image.tmdb.org/t/p/original/2q719JbdFBMPo22DEW4VDZpsCuk.jpg" },
+    { titulo: "Next Goal Wins", categoria: "michael-fassbender", subtipo: "2020", tipo: "Película", fichaTecnicaId: "next-goal-wins", poster: "https://image.tmdb.org/t/p/original/z0uigCKep9y2m6fWvcMJZq4FBNs.jpg" },
+    { titulo: "Kneecap", categoria: "michael-fassbender", subtipo: "2020", tipo: "Película", fichaTecnicaId: "kneecap", poster: "https://image.tmdb.org/t/p/w500/gEbQi5QWUg3CQ9R5dwvPBvbOX17.jpg" },
+    { titulo: "Black Bag", categoria: "michael-fassbender", subtipo: "2020", tipo: "Película", fichaTecnicaId: "black-bag", poster: "https://m.media-amazon.com/images/M/MV5BNWJlYzU0NWQtMjdmZS00OWRjLWExY2YtNmIxNGQ1MDQ1ZjU5XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Hope", categoria: "michael-fassbender", subtipo: "2020", tipo: "Película", fichaTecnicaId: "hope-2026", poster: "https://m.media-amazon.com/images/M/MV5BZjE3ZDI0MmItMDIyMC00NzU2LTk2OTQtZTUxYTlkMjlkNmY3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
     { titulo: "Black Widow", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", fichaTecnicaId: "black-widow-2021", poster: "https://m.media-amazon.com/images/M/MV5BNjZjOGVhOTEtNzY4Mi00MjQzLTlmYjktNzMyMDExMWJlODEwXkEyXkFqcGc@.V1.jpg" },
     { titulo: "Hawkeye", categoria: "florence-pugh", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "hawkeye-serie", poster: "https://lumiere-a.akamaihd.net/v1/images/unknown_61ca7b47.png" },
     { titulo: "Don't Worry Darling", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", fichaTecnicaId: "dont-worry-darling", poster: "https://m.media-amazon.com/images/M/MV5BODVhYzM3M2YtMTUwYi00NjE4LWIwYzktOTM1MTYwZWU0ZTBiXkEyXkFqcGc@._V1_.jpg" },
     { titulo: "The Wonder", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNDU5NzljODgtNjg1OS00NWZlLTg3MzEtMDU0YWI2ZjEwNzk2XkEyXkFqcGc@._V1_.jpg" },
-    { titulo: "Gato con Botas: El Último Deseo", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/AasDZ3tlfx4KjBt96QjbvBPmk4p.jpg" },
+    { titulo: "Gato con Botas: El Último Deseo", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", fichaTecnicaId: "gato-con-botas-2", poster: "https://image.tmdb.org/t/p/original/AasDZ3tlfx4KjBt96QjbvBPmk4p.jpg" },
     { titulo: "A Good Person", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://www.newdvdreleasedates.com/images/posters/large/a-good-person-2023-02.jpg" },
     { titulo: "Oppenheimer", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/lrcuwcNiiZjoB68fzvSOPwu9JWv.jpg" },
     { titulo: "El Niño y La Garza", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://i.pinimg.com/736x/29/8c/a2/298ca2bc6141194372b913ddd9a450ed.jpg" },
@@ -1303,7 +1308,7 @@ const listaMedia = [
 
     // --- DAVID FINCHER (con filtros por década) ---
     { titulo: "Mank", categoria: "david-fincher", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/vqYPkLSKESdWvUsTJiAYAHuGOpj.jpg" },
-    { titulo: "The Killer", categoria: "david-fincher", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/2q719JbdFBMPo22DEW4VDZpsCuk.jpg" },
+    { titulo: "The Killer", categoria: "david-fincher", subtipo: "2020", tipo: "Película", fichaTecnicaId: "the-killer", poster: "https://image.tmdb.org/t/p/original/2q719JbdFBMPo22DEW4VDZpsCuk.jpg" },
     { titulo: "The Social Network", categoria: "david-fincher", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/n0ybibhJtQ5icDqTp8eRytcIHJx.jpg" },
     { titulo: "The Girl with the Dragon Tattoo", categoria: "david-fincher", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/vbLedKc1BUF4FOH1GyHW62FulCc.jpg" },
     { titulo: "Gone Girl", categoria: "david-fincher", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/tQf4DUygWo64AOuqgk4jEDCE3Ws.jpg" },
@@ -2985,6 +2990,16 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "michael-fassbender",
+        titulo: "Michael Fassbender",
+        categoria: "actores",
+        poster: "https://image.tmdb.org/t/p/original/2q719JbdFBMPo22DEW4VDZpsCuk.jpg",
+        esContenedor: true,
+        etiqueta: "Actor",
+        progresoCategoria: "michael-fassbender",
+        peliculas: []
+    },
+    {
         id: "directores",
         titulo: "Directores",
         categoria: "explorar",
@@ -3425,6 +3440,32 @@ const colecciones = [
             { titulo: "Alien: Romulus", fichaTecnicaId: "alien-romulus", poster: "https://image.tmdb.org/t/p/w220_and_h330_face/b33nnKl1GSFbao4l3fZDDqsMx0F.jpg" },
             { titulo: "Depredador: Killer of Killers", fichaTecnicaId: "depredador-killer-of-killers", poster: "https://m.media-amazon.com/images/M/MV5BNjM2MjA4YzQtYjBkNS00YmU3LTllOTgtMDQzMjkzM2Q4MmM5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
             { titulo: "Depredador: Tierras Salvajes", fichaTecnicaId: "depredador-tierras-salvajes", poster: "https://image.tmdb.org/t/p/original/r7TEWHLr1lsIsTkiEFwtM3hAWma.jpg" }
+        ]
+    },
+    {
+        id: "hotel-transilvania",
+        titulo: "Hotel Transilvania",
+        categoria: "franquicias",
+        poster: "https://www.sonypictures.com.ar/sites/argentina/files/2022-05/608871_HotelTransylvania_2012_LSR_2000x3000_UK_1333x2000_thumbnail.jpg",
+        peliculas: [
+            { titulo: "Hotel Transylvania", fichaTecnicaId: "hotel-transylvania-1", poster: "https://www.sonypictures.com.ar/sites/argentina/files/2022-05/608871_HotelTransylvania_2012_LSR_2000x3000_UK_1333x2000_thumbnail.jpg" },
+            { titulo: "Hotel Transilvania 2", fichaTecnicaId: "hotel-transylvania-2", poster: "https://www.sonypictures.com.ar/sites/argentina/files/2022-05/604509_HT2_2015_INTL_1400x2100_MEX.jpg" },
+            { titulo: "Hotel Transilvania 3: Monstruos de Vacaciones", fichaTecnicaId: "hotel-transylvania-3", poster: "https://www.sonypictures.com.ar/sites/argentina/files/2022-05/HotelTransylvania3SummerVacation_2018_1400x2100_MEX.jpg" },
+            { titulo: "Hotel Transilvania 4: Transformania", fichaTecnicaId: "hotel-transylvania-4", poster: "https://image.tmdb.org/t/p/original/xSscuNajtxQHvZd7zrcwVASrCto.jpg" }
+        ]
+    },
+    {
+        id: "shrek",
+        titulo: "Shrek",
+        categoria: "franquicias",
+        poster: "https://image.tmdb.org/t/p/original/rkT5zCK1Zock3t8Y6YhuLPSrcou.jpg",
+        peliculas: [
+            { titulo: "Shrek", fichaTecnicaId: "shrek-1", poster: "https://image.tmdb.org/t/p/original/rkT5zCK1Zock3t8Y6YhuLPSrcou.jpg" },
+            { titulo: "Shrek 2", fichaTecnicaId: "shrek-2", poster: "https://image.tmdb.org/t/p/original/2yYP0PQjG8zVqturh1BAqu2Tixl.jpg" },
+            { titulo: "Shrek Tercero", fichaTecnicaId: "shrek-3", poster: "https://image.tmdb.org/t/p/original/hQW5BiQl1IgEKaYbm0EIHl7PTtF.jpg" },
+            { titulo: "Shrek Para Siempre", fichaTecnicaId: "shrek-4", poster: "https://image.tmdb.org/t/p/original/6HrfPZtKcGmX2tUWW3cnciZTaSD.jpg" },
+            { titulo: "El Gato con Botas", fichaTecnicaId: "gato-con-botas-1", poster: "https://image.tmdb.org/t/p/original/1VmrC82zY4U33l9UHlZTWDB1asN.jpg" },
+            { titulo: "Gato con Botas: El Último Deseo", fichaTecnicaId: "gato-con-botas-2", poster: "https://image.tmdb.org/t/p/original/zePOFPoSkE8I5GsOAD6QImyjlrG.jpg" }
         ]
     },
     {
@@ -5888,6 +5929,7 @@ function abrirColeccion(colId) {
         'florence-pugh': '.btn-filtro-pugh[data-tipo="2020"]',
         'emma-stone': '.btn-filtro-stone[data-tipo="2020"]',
         'jenna-ortega': '.btn-filtro-ortega[data-tipo="2020"]',
+        'michael-fassbender': '.btn-filtro-fassbender[data-tipo="2020"]',
         'margot-robbie': '.btn-filtro-robbie[data-tipo="2020"]',
         'andrew-garfield': '.btn-filtro-garfield[data-tipo="2020"]',
         'alfred-hitchcock': '.btn-filtro-hitchcock[data-tipo="1970"]',
@@ -6129,6 +6171,7 @@ function renderizarContenido() {
         "florence-pugh": "seccion-florence-pugh",
         "emma-stone": "seccion-emma-stone",
         "jenna-ortega": "seccion-jenna-ortega",
+        "michael-fassbender": "seccion-michael-fassbender",
         "margot-robbie": "seccion-margot-robbie",
         "andrew-garfield": "seccion-andrew-garfield",
         "alfred-hitchcock": "seccion-alfred-hitchcock",
@@ -7945,6 +7988,59 @@ if(btnVolverIndeNavarrette) {
     });
 }
 
+const btnVolverMichaelFassbender = document.getElementById('btn-volver-michael-fassbender');
+if(btnVolverMichaelFassbender) {
+    btnVolverMichaelFassbender.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-actores'));
+    });
+}
+
+const btnVolverFichaTheKiller = document.getElementById('btn-volver-ficha-the-killer');
+if (btnVolverFichaTheKiller) {
+    btnVolverFichaTheKiller.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-the-killer');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-michael-fassbender'));
+    });
+}
+const btnVolverFichaNextGoalWins = document.getElementById('btn-volver-ficha-next-goal-wins');
+if (btnVolverFichaNextGoalWins) {
+    btnVolverFichaNextGoalWins.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-next-goal-wins');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-michael-fassbender'));
+    });
+}
+const btnVolverFichaKneecap = document.getElementById('btn-volver-ficha-kneecap');
+if (btnVolverFichaKneecap) {
+    btnVolverFichaKneecap.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-kneecap');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-michael-fassbender'));
+    });
+}
+const btnVolverFichaBlackBag = document.getElementById('btn-volver-ficha-black-bag');
+if (btnVolverFichaBlackBag) {
+    btnVolverFichaBlackBag.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-black-bag');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-michael-fassbender'));
+    });
+}
+const btnVolverFichaHope2026 = document.getElementById('btn-volver-ficha-hope-2026');
+if (btnVolverFichaHope2026) {
+    btnVolverFichaHope2026.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-hope-2026');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-michael-fassbender'));
+    });
+}
+
 const btnVolverFlorencePugh = document.getElementById('btn-volver-florence-pugh');
 if(btnVolverFlorencePugh) {
     btnVolverFlorencePugh.addEventListener('click', () => {
@@ -8418,6 +8514,99 @@ if (btnVolverFichaSwCloneWarsSerie) {
         const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
         const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
         cambiarSeccion(seccionOrigen || document.getElementById('seccion-sw-animacion'));
+    });
+}
+const btnVolverHotelTransilvania = document.getElementById('btn-volver-hotel-transilvania');
+if (btnVolverHotelTransilvania) {
+    btnVolverHotelTransilvania.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-franquicias'));
+    });
+}
+const btnVolverFichaHotelTransylvania2 = document.getElementById('btn-volver-ficha-hotel-transylvania-2');
+if (btnVolverFichaHotelTransylvania2) {
+    btnVolverFichaHotelTransylvania2.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-hotel-transylvania-2');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-hotel-transilvania'));
+    });
+}
+const btnVolverFichaHotelTransylvania3 = document.getElementById('btn-volver-ficha-hotel-transylvania-3');
+if (btnVolverFichaHotelTransylvania3) {
+    btnVolverFichaHotelTransylvania3.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-hotel-transylvania-3');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-hotel-transilvania'));
+    });
+}
+const btnVolverFichaHotelTransylvania4 = document.getElementById('btn-volver-ficha-hotel-transylvania-4');
+if (btnVolverFichaHotelTransylvania4) {
+    btnVolverFichaHotelTransylvania4.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-hotel-transylvania-4');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-hotel-transilvania'));
+    });
+}
+const btnVolverShrek = document.getElementById('btn-volver-shrek');
+if (btnVolverShrek) {
+    btnVolverShrek.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-franquicias'));
+    });
+}
+const btnVolverFichaShrek1 = document.getElementById('btn-volver-ficha-shrek-1');
+if (btnVolverFichaShrek1) {
+    btnVolverFichaShrek1.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-shrek-1');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-shrek'));
+    });
+}
+const btnVolverFichaShrek2 = document.getElementById('btn-volver-ficha-shrek-2');
+if (btnVolverFichaShrek2) {
+    btnVolverFichaShrek2.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-shrek-2');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-shrek'));
+    });
+}
+const btnVolverFichaShrek3 = document.getElementById('btn-volver-ficha-shrek-3');
+if (btnVolverFichaShrek3) {
+    btnVolverFichaShrek3.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-shrek-3');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-shrek'));
+    });
+}
+const btnVolverFichaShrek4 = document.getElementById('btn-volver-ficha-shrek-4');
+if (btnVolverFichaShrek4) {
+    btnVolverFichaShrek4.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-shrek-4');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-shrek'));
+    });
+}
+const btnVolverFichaGatoConBotas1 = document.getElementById('btn-volver-ficha-gato-con-botas-1');
+if (btnVolverFichaGatoConBotas1) {
+    btnVolverFichaGatoConBotas1.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-gato-con-botas-1');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-shrek'));
+    });
+}
+const btnVolverFichaGatoConBotas2 = document.getElementById('btn-volver-ficha-gato-con-botas-2');
+if (btnVolverFichaGatoConBotas2) {
+    btnVolverFichaGatoConBotas2.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-gato-con-botas-2');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-shrek'));
     });
 }
 const btnVolverNavidadFranquicias = document.getElementById('btn-volver-navidad-franquicias');
@@ -11896,6 +12085,20 @@ const FICHAS_TECNICAS_TITULOS = {
     "dragon-ball-xenoverse": "Dragon Ball Xenoverse",
     "toy-story-1": "Toy Story",
     "hotel-transylvania-1": "Hotel Transylvania",
+    "hotel-transylvania-2": "Hotel Transilvania 2",
+    "hotel-transylvania-3": "Hotel Transilvania 3: Monstruos de Vacaciones",
+    "hotel-transylvania-4": "Hotel Transilvania 4: Transformania",
+    "the-killer": "The Killer",
+    "next-goal-wins": "Next Goal Wins",
+    "kneecap": "Kneecap",
+    "black-bag": "Black Bag",
+    "hope-2026": "Hope",
+    "shrek-1": "Shrek",
+    "shrek-2": "Shrek 2",
+    "shrek-3": "Shrek Tercero",
+    "shrek-4": "Shrek Para Siempre",
+    "gato-con-botas-1": "El Gato con Botas",
+    "gato-con-botas-2": "Gato con Botas: El Último Deseo",
     "the-marvels-1": "The Marvels",
     "superman-2025": "Superman",
     "supergirl-2026": "Supergirl",
@@ -12686,6 +12889,50 @@ const REPARTO_PELICULAS = {
             { actor: "John Morris", personaje: "Andy (voz)" },
             { actor: "Erik von Detten", personaje: "Sid (voz)" },
             { actor: "Laurie Metcalf", personaje: "Sra. Davis (voz)" }
+        ]
+    },
+    "hotel-transylvania-2": {
+        director: "Genndy Tartakovsky",
+        elenco: [
+            { actor: "Adam Sandler", personaje: "Conde Drácula (voz)" },
+            { actor: "Andy Samberg", personaje: "Jonathan (voz)" },
+            { actor: "Selena Gomez", personaje: "Mavis (voz)" },
+            { actor: "Kevin James", personaje: "Frank (voz)" },
+            { actor: "Keegan-Michael Key", personaje: "Murray (voz)" },
+            { actor: "Fran Drescher", personaje: "Eunice (voz)" },
+            { actor: "David Spade", personaje: "Griffin (voz)" },
+            { actor: "Steve Buscemi", personaje: "Wayne (voz)" },
+            { actor: "Mel Brooks", personaje: "Vlad (voz)" }
+        ]
+    },
+    "hotel-transylvania-3": {
+        director: "Genndy Tartakovsky",
+        elenco: [
+            { actor: "Adam Sandler", personaje: "Conde Drácula (voz)" },
+            { actor: "Andy Samberg", personaje: "Jonathan (voz)" },
+            { actor: "Selena Gomez", personaje: "Mavis (voz)" },
+            { actor: "Kevin James", personaje: "Frank (voz)" },
+            { actor: "Keegan-Michael Key", personaje: "Murray (voz)" },
+            { actor: "Fran Drescher", personaje: "Eunice (voz)" },
+            { actor: "David Spade", personaje: "Griffin (voz)" },
+            { actor: "Steve Buscemi", personaje: "Wayne (voz)" },
+            { actor: "Kathryn Hahn", personaje: "Ericka (voz)" },
+            { actor: "Jim Gaffigan", personaje: "Van Helsing (voz)" },
+            { actor: "Mel Brooks", personaje: "Vlad (voz)" }
+        ]
+    },
+    "hotel-transylvania-4": {
+        director: "Jennifer Kluska y Derek Drymon",
+        elenco: [
+            { actor: "Brian Hull", personaje: "Conde Drácula (voz)" },
+            { actor: "Andy Samberg", personaje: "Jonathan (voz)" },
+            { actor: "Selena Gomez", personaje: "Mavis (voz)" },
+            { actor: "Kevin James", personaje: "Frank (voz)" },
+            { actor: "Keegan-Michael Key", personaje: "Murray (voz)" },
+            { actor: "Fran Drescher", personaje: "Eunice (voz)" },
+            { actor: "David Spade", personaje: "Griffin (voz)" },
+            { actor: "Kathryn Hahn", personaje: "Ericka (voz)" },
+            { actor: "Jim Gaffigan", personaje: "Van Helsing (voz)" }
         ]
     },
     "hotel-transylvania-1": {
@@ -13997,6 +14244,138 @@ const REPARTO_PELICULAS = {
             { actor: "Nika Futterman", personaje: "Asajj Ventress (voz)" }
         ]
     },
+    "shrek-1": {
+        director: "Andrew Adamson y Vicky Jenson",
+        elenco: [
+            { actor: "Mike Myers", personaje: "Shrek (voz)" },
+            { actor: "Eddie Murphy", personaje: "Burro (voz)" },
+            { actor: "Cameron Diaz", personaje: "Princesa Fiona (voz)" },
+            { actor: "John Lithgow", personaje: "Lord Farquaad (voz)" },
+            { actor: "Vincent Cassel", personaje: "Monsieur Hood (voz)" }
+        ]
+    },
+    "shrek-2": {
+        director: "Andrew Adamson, Kelly Asbury y Conrad Vernon",
+        elenco: [
+            { actor: "Mike Myers", personaje: "Shrek (voz)" },
+            { actor: "Eddie Murphy", personaje: "Burro (voz)" },
+            { actor: "Cameron Diaz", personaje: "Princesa Fiona (voz)" },
+            { actor: "Antonio Banderas", personaje: "Gato con Botas (voz)" },
+            { actor: "Julie Andrews", personaje: "Reina Lillian (voz)" },
+            { actor: "John Cleese", personaje: "Rey Harold (voz)" },
+            { actor: "Rupert Everett", personaje: "Príncipe Encantador (voz)" },
+            { actor: "Jennifer Saunders", personaje: "Hada Madrina (voz)" }
+        ]
+    },
+    "shrek-3": {
+        director: "Chris Miller y Raman Hui",
+        elenco: [
+            { actor: "Mike Myers", personaje: "Shrek (voz)" },
+            { actor: "Eddie Murphy", personaje: "Burro (voz)" },
+            { actor: "Cameron Diaz", personaje: "Princesa Fiona (voz)" },
+            { actor: "Antonio Banderas", personaje: "Gato con Botas (voz)" },
+            { actor: "Justin Timberlake", personaje: "Arturo (voz)" },
+            { actor: "Rupert Everett", personaje: "Príncipe Encantador (voz)" },
+            { actor: "Eric Idle", personaje: "Merlín (voz)" },
+            { actor: "Amy Poehler", personaje: "Cenicienta (voz)" }
+        ]
+    },
+    "shrek-4": {
+        director: "Mike Mitchell",
+        elenco: [
+            { actor: "Mike Myers", personaje: "Shrek (voz)" },
+            { actor: "Eddie Murphy", personaje: "Burro (voz)" },
+            { actor: "Cameron Diaz", personaje: "Princesa Fiona (voz)" },
+            { actor: "Antonio Banderas", personaje: "Gato con Botas (voz)" },
+            { actor: "Walt Dohrn", personaje: "Rumpelstiltskin (voz)" },
+            { actor: "Jon Hamm", personaje: "Brogan (voz)" },
+            { actor: "Craig Robinson", personaje: "Cookie (voz)" }
+        ]
+    },
+    "gato-con-botas-1": {
+        director: "Chris Miller",
+        elenco: [
+            { actor: "Antonio Banderas", personaje: "Gato con Botas (voz)" },
+            { actor: "Salma Hayek", personaje: "Kitty Softpaws (voz)" },
+            { actor: "Zach Galifianakis", personaje: "Humpty Dumpty (voz)" },
+            { actor: "Billy Bob Thornton", personaje: "Jack (voz)" },
+            { actor: "Amy Sedaris", personaje: "Jill (voz)" },
+            { actor: "Guillermo del Toro", personaje: "Comandante (voz)" }
+        ]
+    },
+    "gato-con-botas-2": {
+        director: "Joel Crawford y Januel Mercado",
+        elenco: [
+            { actor: "Antonio Banderas", personaje: "Gato con Botas (voz)" },
+            { actor: "Salma Hayek", personaje: "Kitty Softpaws (voz)" },
+            { actor: "Harvey Guillén", personaje: "Perrito (voz)" },
+            { actor: "Florence Pugh", personaje: "Ricitos de Oro (voz)" },
+            { actor: "Olivia Colman", personaje: "Mamá Osa (voz)" },
+            { actor: "Ray Winstone", personaje: "Papá Oso (voz)" },
+            { actor: "John Mulaney", personaje: "Jack Horner (voz)" },
+            { actor: "Wagner Moura", personaje: "El Lobo (voz)" }
+        ]
+    },
+    "the-killer": {
+        director: "David Fincher",
+        elenco: [
+            { actor: "Michael Fassbender", personaje: "El Asesino" },
+            { actor: "Tilda Swinton", personaje: "La Experta" },
+            { actor: "Charles Parnell", personaje: "Hodges" },
+            { actor: "Arliss Howard", personaje: "Claybourne" },
+            { actor: "Kerry O'Malley", personaje: "Dolores" },
+            { actor: "Sala Baker", personaje: "El Bruto" },
+            { actor: "Sophie Charlotte", personaje: "Magdala" }
+        ]
+    },
+    "next-goal-wins": {
+        director: "Taika Waititi",
+        elenco: [
+            { actor: "Michael Fassbender", personaje: "Thomas Rongen" },
+            { actor: "Oscar Kightley", personaje: "Tavita" },
+            { actor: "Kaimana", personaje: "Jaiyah Saelua" },
+            { actor: "David Fane", personaje: "Ace" },
+            { actor: "Rachel House", personaje: "Ruth" },
+            { actor: "Will Arnett", personaje: "Alex Magnussen" },
+            { actor: "Elisabeth Moss", personaje: "Gail Rongen" },
+            { actor: "Taika Waititi", personaje: "Reverendo" }
+        ]
+    },
+    "kneecap": {
+        director: "Rich Peppiatt",
+        elenco: [
+            { actor: "Liam Óg Ó hAnnaidh (Mo Chara)", personaje: "Naoise" },
+            { actor: "Naoise Ó Cairealláin (Móglaí Bap)", personaje: "Liam Óg" },
+            { actor: "JJ Ó Dochartaigh (DJ Próvaí)", personaje: "JJ" },
+            { actor: "Michael Fassbender", personaje: "Arlo" },
+            { actor: "Josie Walker", personaje: "Joan" },
+            { actor: "Simone Kirby", personaje: "Máire" }
+        ]
+    },
+    "black-bag": {
+        director: "Steven Soderbergh",
+        elenco: [
+            { actor: "Michael Fassbender", personaje: "George Woodhouse" },
+            { actor: "Cate Blanchett", personaje: "Kathryn St. Jean" },
+            { actor: "Marisa Abela", personaje: "Clarissa Dubose" },
+            { actor: "Tom Burke", personaje: "Freddie Smalls" },
+            { actor: "Naomie Harris", personaje: "Dra. Zoe Vaughan" },
+            { actor: "Regé-Jean Page", personaje: "Col. James Stokes" },
+            { actor: "Pierce Brosnan", personaje: "Arthur Stieglitz" }
+        ]
+    },
+    "hope-2026": {
+        director: "Na Hong-jin",
+        elenco: [
+            { actor: "Hwang Jung-min", personaje: "Bum-seok" },
+            { actor: "Zo In-sung", personaje: "Sung-ki" },
+            { actor: "Hoyeon", personaje: "Sung-ae" },
+            { actor: "Michael Fassbender", personaje: "Alienígena" },
+            { actor: "Alicia Vikander", personaje: "Alienígena" },
+            { actor: "Taylor Russell", personaje: "Alienígena" },
+            { actor: "Cameron Britton", personaje: "Alienígena" }
+        ]
+    },
     "alien-romulus": {
         director: "Fede Álvarez",
         elenco: [
@@ -15169,6 +15548,19 @@ botonesFiltroPugh.forEach(boton => {
     });
 });
 inicializarFiltroTipoActor('seccion-florence-pugh', 'btn-filtro-pugh');
+
+// ==========================================
+// FILTROS "MICHAEL FASSBENDER" (por década)
+// ==========================================
+const botonesFiltroFassbender = document.querySelectorAll('.btn-filtro-fassbender');
+botonesFiltroFassbender.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroFassbender.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        aplicarFiltroTipoYDecadaActor('seccion-michael-fassbender', 'btn-filtro-fassbender');
+    });
+});
+inicializarFiltroTipoActor('seccion-michael-fassbender', 'btn-filtro-fassbender');
 
 // ==========================================
 // FILTROS "EMMA STONE" (por década)
