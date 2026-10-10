@@ -26,6 +26,7 @@
     <nav class="nav-principal">
         <button id="btn-biblioteca" class="btn-nav" style="background-color: #28a745;">Mi Biblioteca 📚</button>
         <button id="btn-calendario" class="btn-nav" style="background-color: #ff9f43;">Calendario 📅</button>
+        <button id="btn-recomendaciones" class="btn-nav" style="background-color: #8e44ad;">¿Qué leo? 🎯</button>
         <button id="btn-logros" class="btn-nav" style="background-color: #f1c40f; color: #1a1d24;">Logros 🏆</button>
         <button id="btn-comics" class="btn-nav" style="background-color: #e74c3c;">Cómics 💥</button>
         <button id="btn-juegos" class="btn-nav" style="background-color: #16a085;">Juegos 🎮</button>
@@ -12339,6 +12340,20 @@
         <div class="grilla-biblioteca" id="grilla-mi-biblioteca"></div>
     </section>
 
+    <!-- SECCIÓN: RECOMENDACIONES DE CÓMICS -->
+    <section id="seccion-recomendaciones" class="oculto">
+        <h2>¿Qué leo ahora? 🎯</h2>
+        <p id="recomendaciones-aviso" style="font-size:12px; color:#aaa; margin-bottom:12px;"></p>
+        <div class="filtros-seccion">
+            <button class="btn-filtro-reco activo" data-criterio="todas">Para vos</button>
+            <button class="btn-filtro-reco" data-criterio="coleccion">Por colección</button>
+            <button class="btn-filtro-reco" data-criterio="personaje">Por personaje / equipo</button>
+            <button class="btn-filtro-reco" data-criterio="tiempo">Línea de tiempo</button>
+            <button class="btn-filtro-reco" data-criterio="tengo">Los tengo sin leer</button>
+        </div>
+        <div class="grilla-biblioteca" id="grilla-recomendaciones"></div>
+    </section>
+
     <!-- SECCIÓN: CALENDARIO -->
     <section id="seccion-calendario" class="oculto">
         <h2>Mi Calendario 📅</h2>
@@ -12545,6 +12560,19 @@
         </div>
         <div class="grilla-biblioteca" id="grilla-marvel-ultimate-integral-predeterminado"></div>
         <div class="grilla-biblioteca oculto" id="grilla-marvel-ultimate-integral-cronologico"></div>
+    </section>
+
+    <!-- DC COLECCIÓN NOVELAS GRÁFICAS (SALVAT) -->
+    <section id="seccion-dc-novelas-graficas-salvat" class="oculto">
+        <button class="btn-volver" id="btn-volver-dc-novelas-graficas-salvat">← Volver a Colecciones</button>
+        <h2>DC Colección Novelas Gráficas</h2>
+        <p style="font-size:12px; color:#aaa; margin-bottom:12px;">Los tomos de la colección coleccionable de Salvat Argentina, en dos vistas distintas.</p>
+        <div class="filtros-seccion">
+            <button class="btn-filtro-vista-dc-ng activo" data-vista="predeterminado">Predeterminado</button>
+            <button class="btn-filtro-vista-dc-ng" data-vista="cronologico">Cronológico</button>
+        </div>
+        <div class="grilla-biblioteca" id="grilla-dc-ng-predeterminado"></div>
+        <div class="grilla-biblioteca oculto" id="grilla-dc-ng-cronologico"></div>
     </section>
 
     <!-- LOS HÉROES MÁS PODEROSOS DE MARVEL -->

@@ -1580,6 +1580,7 @@ const listaMedia = [
     { titulo: "Batman y Los Outsiders #3: ¡La Verdad Sobre Halo!", categoria: "pre-crisis-dc", editorial: "ovni", subtipo: "batman,outsiders", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_805207-MLA91020970670_092025-O.webp" },
     { titulo: "Batman y Los Outsiders #4: ¡Galaxias de Guerras!", categoria: "pre-crisis-dc", editorial: "ovni", subtipo: "batman,outsiders", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_y_los_outsiders_vol_4_cov-63b9e181f36d8ced5817630685111419-1024-1024.webp" },
     { titulo: "Batman y Los Outsiders #5: La Renuncia del Caballero Oscuro", categoria: "pre-crisis-dc", editorial: "ovni", subtipo: "batman,outsiders", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_y_los_outsiders_vol_5_cov-12e103c480cbbe349c17776556503199-1024-1024.webp" },
+    { titulo: "DC Coleccion Novelas Graficas #26: Nuevos Titanes: El Contrato de Judas", categoria: "pre-crisis-dc", editorial: "salvat", subtipo: "titans,dick-grayson", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2d/38/ed878e8348dc46a984eda0a9abb1eb7d.jpg" },
 
     // --- POST-CRISIS / EDAD MODERNA: ORDEN DE LECTURA (Ovni Press) ---
     { titulo: "Esenciales DC #2: Crisis en Tierras Infinitas", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,flash-barry-allen,liga,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/crisis_cov_arg1-a4a9db904b75118e4315980054342033-1024-1024.webp" },
@@ -1627,10 +1628,10 @@ const listaMedia = [
     { titulo: "Green Lantern #11: La Venganza de Mano Negra", categoria: "los-nuevos-52-dc-argentina", editorial: "ecc-sudamerica", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/33/2f/bfcc7e7890864d37a4761197ec2fab46.jpg" },
     { titulo: "Green Lantern #12: La Negrura... ¡Llega a La Tierra!", categoria: "los-nuevos-52-dc-argentina", editorial: "ecc-sudamerica", personajes: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://i1.whakoom.com/large/32/12/e467e84f424f48e5ad1329565cc10779.jpg" },
     { titulo: "Aquaman #1: El Nuevo Universo DC Empieza Aqui", categoria: "los-nuevos-52-dc-argentina", editorial: "ecc-sudamerica", personajes: "aquaman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/37/2d/9f8ef92a988743f69a1effddc98586dc.jpg" },
-    { titulo: "Aquaman #2: El Nuevo Universo DC - El Secreto de Los Otros", categoria: "los-nuevos-52-dc-argentina", editorial: "ecc-sudamerica", personajes: "aquaman", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_904947-MLA78995875244_092024-O.webp" },
-    { titulo: "Aquaman #3: ¡A La Caza de Manta Negra!", categoria: "los-nuevos-52-dc-argentina", editorial: "ecc-sudamerica", personajes: "aquaman,black-manta", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_749224-MLA111802262523_052026-O.webp" },
+    { titulo: "Aquaman #2: El Nuevo Universo DC - El Secreto de Los Otros", categoria: "los-nuevos-52-dc-argentina", editorial: "ecc-sudamerica", personajes: "aquaman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/26/2f/19cb4af325a446b39d605278adb478ea.jpg" },
+    { titulo: "Aquaman #3: ¡A La Caza de Manta Negra!", categoria: "los-nuevos-52-dc-argentina", editorial: "ecc-sudamerica", personajes: "aquaman,black-manta", tipo: "Cómic", poster: "https://i1.whakoom.com/large/24/14/d2ceaf2fa581486d9387e7b23fb55822.jpg" },
     { titulo: "Batman y Robin #1: El Nuevo Universo DC Empieza Aqui", categoria: "los-nuevos-52-dc-argentina", editorial: "ecc-sudamerica", personajes: "batman,dick-grayson,damian-wayne", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1f/03/597bc7f70bf6461b8087dd8b64abdaef.jpg" },
-    { titulo: "Batman y Robin #2: El Nuevo Universo DC - En Los Cielos de Gotham... ¡... El Caballero Oscuro se Enfrenta a La Semilla del Demonio!", categoria: "los-nuevos-52-dc-argentina", editorial: "ecc-sudamerica", personajes: "batman,dick-grayson,damian-wayne,ras-al-ghul", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_705837-MLA27918404417_082018-O.webp" },
+    { titulo: "Batman y Robin #2: El Nuevo Universo DC - En Los Cielos de Gotham... ¡... El Caballero Oscuro se Enfrenta a La Semilla del Demonio!", categoria: "los-nuevos-52-dc-argentina", editorial: "ecc-sudamerica", personajes: "batman,dick-grayson,damian-wayne,ras-al-ghul", tipo: "Cómic", poster: "https://i1.whakoom.com/large/26/22/29b1f8a695684b378fb438b11f096886.jpg" },
     { titulo: "Batman y Robin #3: ¡La Guerra de Los Robins!", categoria: "los-nuevos-52-dc-argentina", editorial: "ecc-sudamerica", personajes: "batman,dick-grayson,damian-wayne", tipo: "Cómic", poster: "https://i1.whakoom.com/small/31/32/eb98a18f816247cfa7a32f1524201933.jpg" },
     { titulo: "Batman y Robin #4: ¡La Leyenda Renace de Nuevo!", categoria: "los-nuevos-52-dc-argentina", editorial: "ecc-sudamerica", personajes: "batman,dick-grayson,damian-wayne", tipo: "Cómic", poster: "https://i1.whakoom.com/small/12/29/34be424bbf604782b94cdf2d62a2ee19.jpg" },
     { titulo: "Batman y Robin #5: ¡La Locura es Cosa de Familia!", categoria: "los-nuevos-52-dc-argentina", editorial: "ecc-sudamerica", personajes: "batman,dick-grayson,damian-wayne,joker", tipo: "Cómic", poster: "https://i1.whakoom.com/small/30/21/75bb6323856643859657dcd9d364b5cc.jpg" },
@@ -1706,14 +1707,18 @@ const listaMedia = [
     { titulo: "Liga de La Justicia Internacional #10: Origenes Secretos", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "liga,martian-manhunter,maxwell-lord", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/liga_de_la_justicia_internacional_10_cov_arg-44e365a90106c4c33e17830148082395-1024-1024.webp" },
     { titulo: "Batman: Año Uno", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_a_c3_b1o_uno_3ra_cov-7d43be04a0c1e39ee917745538512217-640-0.webp" },
     { titulo: "Batman: Año Dos", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_ano_dos_cov_arg1-1af52ac45310c42c5d16772101790752-1024-1024.webp" },
+    { titulo: "DC Coleccion Novelas Graficas #23: Robin: Año Uno", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,dick-grayson", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2b/0c/9b1127894c1d448fb62514c9c2190b0d.jpg" },
     { titulo: "Batman: Tiempo Muerto", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "batman,killer-croc,penguin,riddler", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_tiempo_muerto_cov-2cabf1fb059b817cc117818908125281-1024-1024.webp" },
     { titulo: "Flash Vol. 1: Velocidad Salvaje", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "flash-wally-west", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flushman-sobrecubierta-6a284b32bf58c3409f17600404520993-1024-1024.webp" },
+    { titulo: "DC Coleccion Novelas Graficas #15: Green Arrow: Año Uno", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "green-arrow", tipo: "Cómic", poster: "https://i1.whakoom.com/large/01/39/4b0a3a8160ad43478e99a03165c3d341.jpg" },
     { titulo: "Green Arrow: Los Cazadores del Arco Largo", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "green-arrow", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/green_arrow_-_vol_1_cov-bb22732e58954a20b217867162623748-1024-1024.webp" },
     { titulo: "Lobo: El Ultimo Czarniano", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "lobo", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/lobo_cov1-e05a10553fe0492cbf16910770910131-640-0.webp" },
     { titulo: "Lobo: Greatest Hits", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "lobo", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/lobo_-_grandes_exitos_cov-992d23d0b7ad30e1a917080397103074-1024-1024.webp" },
+    { titulo: "DC Coleccion Novelas Graficas #29: Lobo: Desatado", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "lobo", tipo: "Cómic", poster: "https://i1.whakoom.com/large/0f/0f/436fcf6db1b841b18de697138fa1dd60.jpg" },
     { titulo: "Nightwing: Año Uno", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "dick-grayson", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/nightwing_a_c3_91o_uno_cov-b1876679e396b50f3117835530418207-1024-1024.webp" },
     { titulo: "Batman: Un Mal Dia #9: La Broma Asesina", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_un_mal_dia_-_joker_-_cov-7a20a882b5ac7c7eff17486503201315-1024-1024.webp" },
     { titulo: "Esenciales DC #14: Batman: Una Muerte en La Familia", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/bm_muerte_en_la_familia_cov_2da1-19c0c2be49848149f516868722605141-480-0.webp" },
+    { titulo: "DC Coleccion Novelas Graficas #14: Batman: Una Muerte en la Familia", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,joker", tipo: "Cómic", poster: "https://i1.whakoom.com/large/14/23/1e32a7ffff334df8a9115509e1dd7a4b.jpg" },
     { titulo: "Animal Man de Grant Morrison Vol. 1", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "animal-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/animal_man_vol_01_cov_arg1-65d8d0e2917efd152e16154820963445-640-0.webp" },
     { titulo: "Esenciales DC #25: ¡Invasión!", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,liga,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/invasion_cov-6ce1398de623d16ffd17244156497208-1024-1024.webp" },
     { titulo: "Flash Vol. 2: Invasion!", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "flash-wally-west", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flash_vol_2_invasion_-_cov-a2911cab6b86d103ac17740242897436-1024-1024.webp" },
@@ -1724,6 +1729,8 @@ const listaMedia = [
     { titulo: "Animal Man de Grant Morrison Vol. 2", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "animal-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/animal-man-vol-2-cov-arg1-6c2d76bbb90e8f3c7116239493651603-640-0.webp" },
     { titulo: "Animal Man de Grant Morrison Vol 3", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "animal-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/animal-man-vol-3-cov-arg1-f7020977dfe421c61a16287427772206-1024-1024.webp" },
     { titulo: "Batman: Año Tres", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "batman,dick-grayson", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_ano_tres_cov-8bc9839c108672bc9c17093164316321-1024-1024.webp" },
+    { titulo: "DC Coleccion Novelas Graficas #27: Batman: El Nacimiento del Demonio - Parte 1", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,ras-al-ghul", tipo: "Cómic", poster: "https://i1.whakoom.com/large/3b/18/da35fb52657c465fa225ea1dc3f29c12.jpg" },
+    { titulo: "DC Coleccion Novelas Graficas #28: Batman: El Nacimiento del Demonio - Parte 2", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,ras-al-ghul", tipo: "Cómic", poster: "https://i1.whakoom.com/large/00/06/33a35afb560f4c97b5208a5a014b113e.jpg" },
     { titulo: "Batman: Leyendas del Caballero Oscuro #1: Shaman", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/18/2d/f04aa1ab7db1450bb86170365abaae44.jpg" },
     { titulo: "Doom Patrol Libro Uno", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "doom-patrol", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/doom_patrol_vol_1_cov_arg-8474aae7748946314917788695777603-640-0.webp" },
     { titulo: "Doom Patrol Libro Dos", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "doom-patrol", tipo: "Cómic", poster: "https://i1.whakoom.com/small/2b/0f/a6d63815c6a5413792cd715c46a68c61.jpg" },
@@ -1758,14 +1765,20 @@ const listaMedia = [
     { titulo: "Batman: Leyendas del Caballero Oscuro #13: Veneno", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "bane,batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_veneno_2da_cov-250c58f861dc0fc03317600407086103-640-0.webp" },
     { titulo: "Esenciales DC #10: La Muerte de Superman", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "doomsday,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/la_muerte_de_superman_cov1-f00b8d36cb38aa084616336649847817-640-0.webp" },
     { titulo: "La Muerte de Superman", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "doomsday,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/la_muerte_de_superman_2da_cov1-5b6a1e3579ad88846416336646797558-640-0.webp" },
+    { titulo: "DC Coleccion Novelas Graficas #18: Superman: La Muerte de Superman", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "doomsday,superman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/36/25/425b729305ea46ddba40b573a84f07dc.jpg" },
     { titulo: "Superman: Funeral Para un Amigo", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/supermanfuneralparaunamigovol011-513a98d50f8afa465c15908683303908-640-0.webp" },
     { titulo: "Superman: El Reino de Los Supermanes", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "superman,cyborg-superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/reino-de-los-supermanes-cov1-77983b8b7fb40ec32b15997760948652-1024-1024.webp" },
     { titulo: "Superman: El Regreso de Superman", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "superman,cyborg-superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/el-regreso-de-superman-cov1-ea44b6d18315687f7716076390430895-1024-1024.webp" },
     { titulo: "Superman: La Saga de Superboy", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_-_la_saga_de_superboy_cov-ce700dac78d91226fd17794625957093-640-0.webp" },
     { titulo: "Human Target: El Blanco Humano", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "human-target", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/human_target_el_blanco_humano_cov-deba4a965a611ddcb517679044734174-1024-1024.webp" },
+    { titulo: "DC Coleccion Novelas Graficas #10: JLA: Año Uno - Parte 1", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,liga,superman,wonder-woman,martian-manhunter,flash-barry-allen,green-lantern-hal-jordan,aquaman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/14/09/7c1fbd1fbac14248b4fe564342eafafc.jpg" },
+    { titulo: "DC Coleccion Novelas Graficas #11: JLA: Año Uno - Parte 2", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,liga,superman,wonder-woman,martian-manhunter,flash-barry-allen,green-lantern-hal-jordan,aquaman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/0c/3e/9124410c305443d3a9465de57b081ef0.jpg" },
     { titulo: "JLA Vol. 1: Nuevo Orden Mundial", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "aquaman,batman,flash-wally-west,green-lantern-guy-gardner,liga,martian-manhunter,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/jla_vol_1_cov-0b247ca6158935342217656503546676-1024-1024.webp" },
     { titulo: "JLA Vol. 2: La Roca de La Eternidad", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "aquaman,batman,darkseid,flash-wally-west,green-lantern-guy-gardner,liga,martian-manhunter,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/jla_vol_2_cov-34862d46fe23ae829217703293944799-640-0.webp" },
     { titulo: "DC Coleccion Heroes y Villanos #38: JLA: El Valven de Los Tiempos", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "liga,prometheus", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_939627-MLA75507862034_042024-O.webp" },
+    { titulo: "DC Coleccion Novelas Graficas #4: JLA: Torre de Babel", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,liga,ras-al-ghul,superman,wonder-woman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/38/1c/97935d21d74c43979ba55ea5e5c72f16.jpg" },
+    { titulo: "DC Coleccion Novelas Graficas #9: Harley Quinn: Preludios y Chistes Malos", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "harley-quinn", tipo: "Cómic", poster: "https://i1.whakoom.com/large/15/0a/ac391ca5a0914d3999df7a74dd9eccf5.jpg" },
+    { titulo: "DC Coleccion Novelas Graficas #17: JLA: Tierra 2", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "liga,batman,superman,wonder-woman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/39/19/495e0311aef8424aaa37665cc90eca1e.jpg" },
     { titulo: "Batman: La Espada de Azrael", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "azrael,batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_la_espada_de_azraelcover1-1e2222cb91816eb1de16632196483116-640-0.webp" },
     { titulo: "Aquaman Año Uno", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "aquaman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/aquaman_cov-df88609a441f8b2d9717014681434083-1024-1024.webp" },
     { titulo: "DC Coleccion Heroes y Villanos #76: Aquaman: El Tiempo y La Marea", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "aquaman", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_717657-MLA84737736656_052025-O.webp" },
@@ -1804,7 +1817,13 @@ const listaMedia = [
     { titulo: "Batman/Superman: Los Mejores del Mundo #7: Eclipso Total", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "batman,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_superman_-_los_mejores_del_mundo_vol-_7-824ea95feda7f6688a17594375917039-640-0.webp" },
     { titulo: "Batman/Superman: Los Mejores del Mundo #8: Gira en Mundo Bizarro", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "batman,superman", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_718634-MLA109671972848_042026-O.webp" },
     { titulo: "DC Comics Presenta: Liga de La Justicia: Escalera al Cielo", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "aquaman,batman,flash-barry-allen,liga,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/dccp_jla_escalera_al_cielo_cov_arg1-f4dee3204768e266ee16917280897798-1024-1024.webp" },
+    { titulo: "DC Coleccion Novelas Graficas #21: Wonder Woman: Paraiso Perdido", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "wonder-woman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/3a/0c/05b7fd7375654647a7e983035b979f3d.jpg" },
     { titulo: "Esenciales DC #7: Batman: Hush", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,hush,ras-al-ghul,riddler", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_hush_cov_arg1-6c97c77eda6c89941116197122413850-640-0.webp" },
+    { titulo: "DC Coleccion Novelas Graficas #1: Batman: Silencio - Parte 1", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,hush,ras-al-ghul,riddler", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2e/23/dcb67b01d46a49df987df0ea64401853.jpg" },
+    { titulo: "DC Coleccion Novelas Graficas #2: Batman: Silencio - Parte 2", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,hush,ras-al-ghul,riddler", tipo: "Cómic", poster: "https://i1.whakoom.com/large/0b/27/cdcc7fb6b4b240eba0922a4cd9da1ef2.jpg" },
+    { titulo: "DC Coleccion Novelas Graficas #5: Superman / Batman: Enemigos Publicos", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,superman,lex-luthor", tipo: "Cómic", poster: "https://i1.whakoom.com/large/35/11/f61c226219874f889cb00228dcbcb3be.jpg" },
+    { titulo: "DC Coleccion Novelas Graficas #24: Superman / Batman: Supergirl", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,superman,supergirl", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2e/12/bab84d09d4984a6fa72c85bf74160a37.jpg" },
+    { titulo: "DC Coleccion Novelas Graficas #25: Trinidad", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,superman,wonder-woman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/12/0b/cbb8533bd4c74f5a86d3f8aec1b9324e.jpg" },
     { titulo: "Catwoman: Si Vas a Roma", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/catwoman_si_vas_a_roma_cov-f7e362ae92a5c1e88917038799544731-640-0.webp" },
     { titulo: "Batman: Ciudad Rota", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "batman,killer-croc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_-_ciudad_rota_cov-a216c6c1e5ab6048c317546019948811-640-0.webp" },
     { titulo: "DC Colección Heroes y Villanos #15: Batman: Ciudad Rota", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,killer-croc", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/hyv_15_ciudad_rota_cover_def1-e23dd815e29c27868416578527877301-1024-1024.webp" },
@@ -1818,16 +1837,22 @@ const listaMedia = [
     { titulo: "DC Colección Heroes y Villanos #27: Shazam! El Poder de Shazam", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "shazam", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/057/977/products/hyv_27_el_poder_de_shazam_cover_def1-da6269d301dfda958b16864044473714-480-0.webp" },
     { titulo: "Esenciales DC #27: Superman: Por El Mañana", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_-_for_tomorrow_covs-9b3beaaf26c425e96117329970574354-1024-1024.webp" },
     { titulo: "Esenciales DC #4: Crisis de Identidad", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,liga", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/crisis_de_identidad_cov_arg1-d918043e328c6cfe5016136913511589-1024-1024.webp" },
+    { titulo: "DC Coleccion Novelas Graficas #12: Superman / Shazam: Primer Trueno", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "superman,shazam", tipo: "Cómic", poster: "https://i1.whakoom.com/large/27/35/476c43c3486c44a0bd5d1fd227c9494e.jpg" },
+    { titulo: "DC Coleccion Novelas Graficas #22: Lex Luthor: El Hombre de Acero", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "lex-luthor,superman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/07/12/7f83879679434eacb3a2548b56eba950.jpg" },
     { titulo: "Wonder Woman: Sacrificio", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "liga,maxwell-lord,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/wonder_woman_vol_2_cov-f4638114fd1fcd5e3f17715403785100-640-0.webp" },
     { titulo: "DC Colección Heroes y Villanos #26: Crisis Infinita: Sacrificio", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "liga,maxwell-lord,superman,wonder-woman", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2024/05/26-Crisis-infinita-Sacrificio.webp" },
     { titulo: "DC Colección Heroes y Villanos #9: Wonder Woman: Reflexiones", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "wonder-woman", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_610036-MLA75463330292_042024-O.webp" },
     { titulo: "DC Coleccion Heroes y Villanos #60: Gotham Central: Blancos Faciles", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2024/10/9788447146925-60.webp" },
     { titulo: "DC Coleccion Heroes y Villanos #61: Aves de Presa: Caceria", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "black-canary", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_740487-MLA79370098422_092024-O.webp" },
+    { titulo: "DC Coleccion Novelas Graficas #8: Batman: Batman e Hijo", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,ras-al-ghul", tipo: "Cómic", poster: "https://i1.whakoom.com/large/24/07/d6bf70a46b6d4249aa292aef76a66711.jpg" },
     { titulo: "Esenciales DC #18: Green Lantern: Renacimiento", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/green_lantern_renacimiento1-aa30848fc26ba013fa16778128850771-480-0.webp" },
     { titulo: "DC Coleccion Heroes y Villanos #33: Green Lantern: Renacimiento", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://cdnx.jumpseller.com/shazam-online/image/25891019/HyV_33_GreenLantern_Renacimiento.jpg?1658778178" },
     { titulo: "Green Lantern: Sin Miedo", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "green-lantern-hal-jordan", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/greenlanter_sin_miedo_cov-9f25a29a48c03b5a6817856279516525-1024-1024.webp" },
     { titulo: "DC Coleccion Heroes y Villanos #37: Green Lantern: La Guerra de Los Sinestro Corps Vol. 1", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPbIEvA7roAA_Pj5586O7CFV5_xFBsUsjbXSdamT-M6BAhcAIc2pNnhmQ&s=10" },
     { titulo: "DC Coleccion Heroes y Villanos #46 Green Lantern: La Guerra de Los Sinestro Corps Vol. 2", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "green-lantern-hal-jordan,sinestro", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_821442-MLA75155983405_032024-O.webp" },
+    { titulo: "DC Coleccion Novelas Graficas #6: Green Lantern: Origen Secreto", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "green-lantern-hal-jordan", tipo: "Cómic", poster: "https://i1.whakoom.com/large/32/29/72fb4bfb646446409ae9035940837842.jpg" },
+    { titulo: "DC Coleccion Novelas Graficas #7: Wonder Woman: El Circulo", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "wonder-woman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2e/1f/16298ae7d6fb4cfaa8ff1e04d3c6f81a.jpg" },
+    { titulo: "DC Coleccion Novelas Graficas #16: The Brave and The Bold: Los Señores de La Suerte", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,green-lantern-hal-jordan", tipo: "Cómic", poster: "https://i1.whakoom.com/large/12/25/e533ec45c36e4be3becb53375ffe8b90.jpg" },
     { titulo: "DC Coleccion Heroes y Villanos #53: Sociedad de La Justicia de America: La Nueva Era", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "jsa", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2024/05/53-Sociedad-de-la-justicia-de-america-la-nueva-era.webp" },
     { titulo: "DC Coleccion Heroes y Villanos #56: Liga de La Justicia: La Saga del Rayo", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,flash-barry-allen,jsa,liga,superman", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_830627-MLA76316371007_052024-O.webp" },
     { titulo: "DC Coleccion Heroes y Villanos #63: Sociedad de La Justicia de America: Kingdom Come Vol. 1", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "jsa,superman", tipo: "Cómic", poster: "https://www.milcomics.com/1451323-large_default/coleccion-heroes-y-villanos-vol-63-sociedad-de-la-justicia-de-america-kingdom-come-vol-1.jpg" },
@@ -1869,6 +1894,8 @@ const listaMedia = [
     { titulo: "Esenciales DC #23: Batman: El Espejo Negro", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,dick-grayson", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_the_black_mirror_cov-4189d8cc24746a418217105079252954-1024-1024.webp" },
     { titulo: "Esenciales DC #1: Flashpoint Absoluto", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,flash-barry-allen", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flashpoint_4taed_cov_arg1-4c2c6e6a3c5b6220c316851089691513-1024-1024.webp" },
     { titulo: "Batman: El Largo Halloween", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "batman,two-face,joker,riddler,penguin", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-el-largo-halloween-cov1-f2299cfb84cc81ac4216354359175721-640-0.webp" },
+    { titulo: "DC Coleccion Novelas Graficas #19: Batman: El Largo Halloween - Parte 1", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,two-face,joker,riddler,penguin", tipo: "Cómic", poster: "https://i1.whakoom.com/large/0c/02/ee663d1614f74dbdb3de5f84d9a0232a.jpg" },
+    { titulo: "DC Coleccion Novelas Graficas #20: Batman: El Largo Halloween - Parte 2", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,two-face,joker,riddler,penguin", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2c/04/a0671895dd314c3b97fc4b0754318f10.jpg" },
     { titulo: "Batman: Victoria Oscura", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "batman,two-face,joker,ras-al-ghul", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-victoria-oscura-cov1-fa7ef1a20b9c8ccd2216487826415095-1024-1024.webp" },
     { titulo: "Superman: Doomsday", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "superman,doomsday", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_814135-MLA45284985089_032021-O.webp" },
     { titulo: "Flash: Año Uno", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "flash-wally-west", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flash_ano_uno-cov1-50c92b32aff0efc3d116052064368555-640-0.webp" },
@@ -1952,7 +1979,7 @@ const listaMedia = [
     { titulo: "Flash Vol. 9: El Reino de Los Renegados", categoria: "renacimiento-dc", editorial: "ovni", subtipo: "flash-barry-allen", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flash_vol_09_cov_arg1-68ad1c5f7e647c3ed016328686424443-1024-1024.webp" },
     { titulo: "Batman Vol. 10: La Caída y Los Caídos", categoria: "renacimiento-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vol_10_cov_arg1-6fd39f68d186572aa616328693116362-1024-1024.webp" },
     { titulo: "Flash Vol. 10: La Era de Flash", categoria: "renacimiento-dc", editorial: "ovni", subtipo: "flash-barry-allen", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flash_vol_10_cov_arg1-67dc11019d71a8c93616328684478599-1024-1024.webp" },
-    { titulo: "Batman Vol. 11: Ciudad de Bane", categoria: "renacimiento-dc", editorial: "ovni", subtipo: "bane,batman", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_766233-MLA44443800587_122020-O.webp" },
+    { titulo: "Batman Vol. 11: Ciudad de Bane", categoria: "renacimiento-dc", editorial: "ovni", subtipo: "bane,batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/326/487/products/9789877246780-79b253924634f3c12e16395023480322-1024-1024.webp" },
     { titulo: "Esenciales DC #3: Heroes en Crisis", categoria: "renacimiento-dc", editorial: "salvat", subtipo: "batman,flash-wally-west,harley-quinn,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/heroes_en_crisis_cov_arg1-00ebd9cbc28987035f16046669498029-640-0.webp" },
     { titulo: "Doomsday Clock: Primera Parte", categoria: "renacimiento-dc", editorial: "ovni", subtipo: "batman,dr-manhattan,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/doomsday_clock_vol_01_cov_arg1-0dec0f9c563fc5a6bb16215517985773-640-0.webp" },
     { titulo: "Mister Miracle: Edicion Absoluta", categoria: "renacimiento-dc", editorial: "ovni", subtipo: "darkseid,mister-miracle", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/mister_miracle_covv_2da-e6619ee2c8c11ce65c17801459090091-1024-1024.webp" },
@@ -2142,6 +2169,8 @@ const listaMedia = [
     { titulo: "All Star Superman", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "superman,lex-luthor", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/all-star_superman_cov1-0f7e2491bc6dfae31316584616241314-640-0.webp" },
     { titulo: "Batman: Condenado", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_damned_r_cov1-7533dfa2f667b8410c16070192141853-640-0.webp" },
     { titulo: "Batman: El Impostor", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batmanelimpostor-cov1-a72ea2126771bba64016455383791384-1024-1024.webp" },
+    { titulo: "DC Coleccion Novelas Graficas #3: Superman: Tierra Uno - Parte 1", categoria: "elseworlds-otros-dc", editorial: "salvat", subtipo: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/27/18/d1e2b7382104439389f2148e49c8cb87.jpg" },
+    { titulo: "DC Coleccion Novelas Graficas #13: Superman: Tierra Uno - Parte 2", categoria: "elseworlds-otros-dc", editorial: "salvat", subtipo: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2f/10/a4f721976ec04c89916d944dd31357a6.jpg" },
     { titulo: "Batman: Tierra Uno", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_tierra_uno_integral_cov1-3044abd6917e90e8d116426961861947-640-0.webp" },
     { titulo: "Wonder Woman: Tierra Uno", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/wonder_woman_earth_one_cov_arg1-4ca4685a16c11682fa15952955499162-1024-1024.webp" },
     { titulo: "DCeased: Virus Zombies", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman,superman,liga", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/dceased_cov_arg1-c8cfecb30f36b9f6c616360714188285-1024-1024.webp" },
@@ -2169,6 +2198,7 @@ const listaMedia = [
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XII: Avengers: El Nacimiento de Ultron", categoria: "marvel-edad-plata", editorial: "panini", subtipo: "iron-man,capitan-america,thor,ultron", tipo: "Cómic", poster: "https://i1.whakoom.com/small/28/14/e64985551d164b0daa498f7a6c56ef1b.jpg" },
     { titulo: "Colección Definiiva de Novelas Graficas de Marvel #XIII: Thor: Ragnarok", categoria: "marvel-edad-plata", editorial: "panini", subtipo: "thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/1f/28/30915749227e40bc92a279395058a942.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XIV: Silver Surfer Origenes", categoria: "marvel-edad-plata", editorial: "panini", subtipo: "silver-surfer", tipo: "Cómic", poster: "https://i1.whakoom.com/small/22/09/f2bcaf968c244ec691e3a6ec5b32670b.jpg" },
+    { titulo: "Los Heroes Mas Poderosos de Marvel #67: Namor", categoria: "marvel-edad-plata", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2d/25/95abe4bee0a34952bdc478d1dfd9aae2.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XV: X-Men: Ocaso de Los Mutantes", categoria: "marvel-edad-plata", editorial: "panini", subtipo: "x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/2d/18/74900bc9466545d5a9156e4921fcd4b8.jpg" },
     { titulo: "Coleccion Defintiiva de Novelas Graficas de Marvel #XVI: X-Men: A La Sombra de Sauron", categoria: "marvel-edad-plata", editorial: "panini", subtipo: "x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/06/3e/83d6b37217824dcf8f724a2ab6392fd3.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XVII: El Invencible Iron Man: El Principio del Fin", categoria: "marvel-edad-plata", editorial: "panini", subtipo: "iron-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/1c/13/0ced340c1eda417b93d7fd01b8a977a9.jpg" },
@@ -2188,6 +2218,7 @@ const listaMedia = [
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XXXII: Warlock: Primera Parte", categoria: "marvel-edad-bronce", editorial: "panini", subtipo: "warlock", tipo: "Cómic", poster: "https://i1.whakoom.com/small/09/2a/34780793e2144723a953fbcaba5608df.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XXXIV: Uncanny X-Men: Segundo Genesis", categoria: "marvel-edad-bronce", editorial: "panini", subtipo: "x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/3a/0c/efe9f1be28ab416eae4e54c89bc10bd1.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #62: Los Invasores", categoria: "marvel-edad-bronce", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/06/0d/8708f291da31425ab9271ccc67d1067d.jpg" },
+    { titulo: "Los Heroes Mas Poderosos de Marvel #90: Killraven", categoria: "marvel-edad-bronce", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/17/32/35289f1fa2ba4bc485fbe6b25723579e.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XXXV: Iron Fist: La Busqueda de Colleen Wing", categoria: "marvel-edad-bronce", editorial: "panini", subtipo: "iron-fist", tipo: "Cómic", poster: "https://i1.whakoom.com/small/31/11/b7b2176587a44b9ba8529956fc28d265.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XXXIII: Warlock: Segunda Parte", categoria: "marvel-edad-bronce", editorial: "panini", subtipo: "warlock", tipo: "Cómic", poster: "https://i1.whakoom.com/small/37/2b/12cd21508c4247f895f49b54bfe071f3.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XXIX: Howard El Pato", categoria: "marvel-edad-bronce", editorial: "panini", subtipo: "howard-el-pato", tipo: "Cómic", poster: "https://i1.whakoom.com/small/20/21/8cba2a35be2d46a09f8fe688f9675384.jpg" },
@@ -2208,11 +2239,14 @@ const listaMedia = [
     { titulo: "Los Heroes Mas Poderosos de Marvel #41: Elektra", categoria: "marvel-edad-bronce", editorial: "salvat", subtipo: "daredevil", tipo: "Cómic", poster: "https://i1.whakoom.com/large/0a/30/c112074fb94c4e058e5fb9642af31011.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XXV: Vida y Muerte del Capitan Marvel Segunda Parte", categoria: "marvel-edad-bronce", editorial: "panini", subtipo: "capitan-marvel", tipo: "Cómic", poster: "https://i1.whakoom.com/small/20/1f/f9ee6715ae3f4017a414f9d603aced7c.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #52: Cloak & Dagger", categoria: "marvel-edad-bronce", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/14/0c/1f3826a7e4ef4649a0e0cf37b785d0b9.jpg" },
-    { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #5: Wolverine", categoria: "marvel-edad-bronce", editorial: "panini", subtipo: "wolverine", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_790305-MLA48742054341_012022-O.webp" },
+    { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #5: Wolverine", categoria: "marvel-edad-bronce", editorial: "panini", subtipo: "wolverine", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1f/04/535fb8eb3ed549bba8a5c66a730c7b4f.jpg" },
     { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #4: Thor: El Ultimo Vikingo", categoria: "marvel-edad-bronce", editorial: "panini", subtipo: "thor", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2023/10/el-ultimo-vikingo.webp" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #7: Hawkeye", categoria: "marvel-edad-bronce", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/3d/23/cdd0c5b168934b8f94d49d25bea55dbf.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #17: El Halcon", categoria: "marvel-edad-bronce", editorial: "salvat", subtipo: "falcon", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1c/3a/9855c4087fb14e148c2ea8a62992f8eb.jpg" },
+    { titulo: "Los Heroes Mas Poderosos de Marvel #83: Beta Ray Bill", categoria: "marvel-edad-bronce", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/3c/32/7a75451283e343a5b0af9f1690d4408b.jpg" },
     { titulo: "Must Have #28: The New Mutants: La Saga del Oso Mistico", categoria: "marvel-edad-bronce", editorial: "panini", subtipo: "new-mutants", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0a/31/f92dc8c041734788b5601f46b9fa5d9d.jpg" },
+    { titulo: "Los Heroes Mas Poderosos de Marvel #72: Los Nuevos Mutantes", categoria: "marvel-edad-bronce", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/31/0f/0991e92845c54e84bd2f685a776eadd7.jpg" },
+    { titulo: "Los Heroes Mas Poderosos de Marvel #78: Alpha Flight", categoria: "marvel-edad-bronce", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/3a/2a/dd98fe37e32d425491f45348dcc7f835.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #26: Doctor Strange", categoria: "marvel-edad-bronce", editorial: "salvat", subtipo: "doctor-strange", tipo: "Cómic", poster: "https://i1.whakoom.com/large/3b/18/6ed8e1e3ff184f92b5254e6254251da8.jpg" },
     { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #6: Superheroes Marvel: Guerras Secretas Parte I", categoria: "marvel-edad-bronce", editorial: "panini", subtipo: "iron-man,spider-man,thor,wolverine,x-men", tipo: "Cómic", poster: "https://s3.amazonaws.com/comicgeeks/comics/covers/large-8317277.jpg?1756900641" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #48: El Hombre Maquina", categoria: "marvel-edad-bronce", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/24/3a/a76d99a3dedb4fe5a6245bd180410ace.jpg" },
@@ -2223,6 +2257,8 @@ const listaMedia = [
     { titulo: "Los Heroes Mas Poderosos de Marvel #20: Punisher", categoria: "marvel-edad-moderna-1", editorial: "salvat", subtipo: "punisher", tipo: "Cómic", poster: "https://i1.whakoom.com/large/13/26/4d625333c1fc48d7bbaa70318a890605.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #37: Avispa", categoria: "marvel-edad-moderna-1", editorial: "salvat", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/large/33/07/ff78704baaac4ef2820d2c1835576d87.jpg" },
     { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #10: Wolverine: Arma X", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "wolverine", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2024/04/01-0002.webp" },
+    { titulo: "Los Heroes Mas Poderosos de Marvel #76: Excalibur", categoria: "marvel-edad-moderna-1", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/14/19/99ceffad735943fb8d2b5a1db7836e98.jpg" },
+    { titulo: "Los Heroes Mas Poderosos de Marvel #81: Quasar", categoria: "marvel-edad-moderna-1", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/0c/14/0e7897cafdc84c47b31cb07f49e03c33.jpg" },
     { titulo: "Marvel Excelsior #6: Elektra: Asesina", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "daredevil", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_942846-MLU69754853582_062023-O.webp" },
     { titulo: "Must Have #7: Daredevil: El Hombre Sin Miedo", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "daredevil", tipo: "Cómic", poster: "https://i1.whakoom.com/small/1f/09/e2d17883bc0a4282ad71e684179af974.jpg" },
     { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #12: Marvels", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "spider-man,thor,iron-man", tipo: "Cómic", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJdPSveSEqCEVac1CJp3A8Jd5hb7_jN065kvjGUlFDA3oIxVUWPQ0DGQlK&s=10" },
@@ -2233,26 +2269,31 @@ const listaMedia = [
     { titulo: "Must Have #37: X-Men: Genesis Mutante 2.0", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/34/1d/dbbbe4b1ec88493fae98a2053a996022.jpg" },
     { titulo: "Marvel Excelsior #21: X-Men: El Regreso de Longshot", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "x-men", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_935158-MLA77003951712_062024-O.webp" },
     { titulo: "Marvel Excelsior #16: El Invencible Iron Man: La Busqueda de Tony Stark", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "iron-man", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_2X_852237-MLA42492325286_072020-F.webp" },
+    { titulo: "Los Heroes Mas Poderosos de Marvel #75: Los Nuevos Guerreros", categoria: "marvel-edad-moderna-1", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/18/06/089fee9042344f249a1adc8c81341094.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #27: Scarlet Witch", categoria: "marvel-edad-moderna-1", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/26/1d/91c5633ce7fc48c3a1f601fcefcca01f.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #51: She-Hulk", categoria: "marvel-edad-moderna-1", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/21/35/bc8e62a63f6446469eb7100631af88c4.jpg" },
-    { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #8: Daredevil: Renacido", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "daredevil,kingpin", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_797368-MLA53026509754_122022-O.webp" },
+    { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #8: Daredevil: Renacido", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "daredevil,kingpin", tipo: "Cómic", poster: "https://i1.whakoom.com/large/15/2f/5ec2a4879a3f4c738d8b91e0c5167270.jpg" },
     { titulo: "Marvel Excelsior #5: Daredevil: Elektra Vive De Nuevo + Amor y Furia", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "daredevil", tipo: "Cómic", poster: "https://i1.whakoom.com/small/2e/2f/6abe127089044ad280ec3e89f3e9cd4c.jpg" },
     { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #9: El Asombroso Spider-Man: La Ultima Caceria de Kraven", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "spider-man,kraven", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2023/10/la-ultima-caceria.webp" },
     { titulo: "Must Have #24: Spider-Man: La Ultima Caceria de Kraven", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "spider-man,kraven", tipo: "Cómic", poster: "https://i1.whakoom.com/small/05/27/a52f3376bc6d4a399235b860ee1a5838.jpg" },
     { titulo: "Marvel Excelsior #24: Avengers: La Busqueda de Thanos", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/15/24/4eea9fe8200645cd9b0780b5fe97a48b.jpg" },
     { titulo: "Marvel Excelsior #14: Avengers: El Guantelete del Infinito", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_934714-MLA80642441836_112024-O.webp" },
     { titulo: "Must Have #17: El Guantelete del Infinito", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/26/00/a6d9aa3f831348d5b119a5de12f8fc9c.jpg" },
+    { titulo: "Los Heroes Mas Poderosos de Marvel #74: Spider-Man 2099", categoria: "marvel-edad-moderna-1", editorial: "salvat", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1b/09/9df2be30b9f649008df3b9c338defb7a.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #34: Warlock", categoria: "marvel-edad-moderna-1", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1a/2c/5851799e5af047afa35de5baad3d952a.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #40: Silver Surfer", categoria: "marvel-edad-moderna-1", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/01/37/6ebf3f55debe457d9aada1efe0eca991.jpg" },
     { titulo: "Marvel Excelsior #12: Avengers: La Guerra del Infinito", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/326/487/products/97898772440901-2a15a6855b017b3e1016040725514350-640-0.webp" },
     { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #11: El Increible Hulk: Gritos Silenciosos", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "hulk", tipo: "Cómic", poster: "https://d22fxaf9t8d39k.cloudfront.net/ceec52fa5b47714b380bb34d1ac78403503d8724703fc5fef5f00df7bc4583f2223891.jpg" },
     { titulo: "Marvel Excelsior #22: Avengers: Cruzada del Infinito", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_626962-MLA73071719816_112023-O.webp" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #61: Generacion X", categoria: "marvel-edad-moderna-1", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/3d/26/42f7b92f0e5d4d73a73961dc79600eb2.jpg" },
+    { titulo: "Los Heroes Mas Poderosos de Marvel #71: Profesor X", categoria: "marvel-edad-moderna-1", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/13/06/57efdfbc13ad442ea47054b866395621.jpg" },
     { titulo: "Coleccion Spider-Man: Universo Araña #6: Venom: Protector Letal", categoria: "marvel-edad-moderna-1", editorial: "ovni", subtipo: "venom", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/06_venom_protector_letal_cov1-b897a892df1b7515d216645158859126-1024-1024.webp" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #25: Daredevil", categoria: "marvel-edad-moderna-1", editorial: "salvat", subtipo: "daredevil", tipo: "Cómic", poster: "https://i1.whakoom.com/large/34/1d/a1fca44aad034c618625f74a59bda858.jpg" },
     { titulo: "Coleccion Spider-Man: Universo Araña #4: Spider-Man: La Saga del Clon", categoria: "marvel-edad-moderna-1", editorial: "ovni", subtipo: "spider-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/04_la_saga_del_clon_cov1-cd59dca782de1541b316629984915515-1024-1024.webp" },
+    { titulo: "Los Heroes Mas Poderosos de Marvel #80: Ben Reilly - La Araña Escarlata", categoria: "marvel-edad-moderna-1", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0e/12/946962bf62d94fc98948993a1ea1bc52.jpg" },
     { titulo: "Coleccion Spider-Man: Universo Araña #10: Venom: Planeta de Simbiontes", categoria: "marvel-edad-moderna-1", editorial: "ovni", subtipo: "venom", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/10_planeta_de_simbiontes_cov1-928457b65a38e7452016656336083401-640-0.webp" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #55: Spider-Girl", categoria: "marvel-edad-moderna-1", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/22/06/f19f664fb3334b75b9e54f5b07bfba27.jpg" },
+    { titulo: "Los Heroes Mas Poderosos de Marvel #82: Los Thunderbolts", categoria: "marvel-edad-moderna-1", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/0e/35/86fb43588bd34f0ea394861a2d792045.jpg" },
     { titulo: "Must Have #31: Avengers Forever", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/33/30/92d0da5c12e840cda86ed68bfa3f4845.jpg" },
     { titulo: "Must Have #12: Avengers: Ultron Ilimitado", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/13/3e/56aeb77d25da4aabbac55a37ef08ceb3.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #1: Avengers", categoria: "marvel-edad-moderna-1", editorial: "salvat", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/35/12/3bb46f07d8e84d7ebdab1e0861b703ce.jpg" },
@@ -2298,6 +2339,7 @@ const listaMedia = [
     { titulo: "Must Have #2 Avengers: Separados", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/33/3e/5769962321c5483db8360827f9afa6e5.jpg" },
     { titulo: "Marvel Excelsior #26: Avengers: Separados", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/large/0b/25/258380687d0e4ef08f2a7009fa762119.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #69: Avengers de Los Grandes Lagos", categoria: "marvel-edad-moderna-2", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/09/15/1cc70828d6ea44b2bbead72602c382d4.jpg" },
+    { titulo: "Los Heroes Mas Poderosos de Marvel #91: Madrox - El Hombre Multiple", categoria: "marvel-edad-moderna-2", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/3c/11/98c6ffab75224238abfacf409b8a6b3a.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #31: Nuevos Avengers: La Fuga", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "iron-man,capitan-america,spider-man,wolverine", tipo: "Cómic", poster: "https://i1.whakoom.com/small/10/20/3c4ba3daaa3c44dba265610bd3fa2dc8.jpg" },
     { titulo: "Must Have #15: Los Nuevos Avengers: La Fuga", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "iron-man,capitan-america,spider-man,wolverine", tipo: "Cómic", poster: "https://i1.whakoom.com/small/20/1f/45d1a65f893447d5971f7d4b695170d1.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #32: Dinastia M", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "x-men,iron-man,capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/small/31/0a/426ca26a6e45464b80ebcf649451a6d0.jpg" },
@@ -2319,8 +2361,8 @@ const listaMedia = [
     { titulo: "Must Have #29: Capitan America: La Muerte del Sueño", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/small/29/0a/8d2313a51975436fbb0ad3ed02eb1a71.jpg" },
     { titulo: "Must Have #35: Silver Surfer: Requiem", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "silver-surfer", tipo: "Cómic", poster: "https://i1.whakoom.com/small/16/00/f2a1d4c9e76e4b2e9fe3f622e0a9a530.jpg" },
     { titulo: "Must Have #14: Venom: Origen Oscuro", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "venom", tipo: "Cómic", poster: "https://i1.whakoom.com/small/28/19/a8d5c954aef1411586994dd53e36456c.jpg" },
-    { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #13: El Poderoso Thor: En Busqueda de Los Dioses", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "thor", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_846530-MLA53132163461_012023-O.webp" },
-    { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #14: Capitan America: El Nuevo Pacto", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "capitan-america", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_808706-MLA53141981142_012023-O.webp" },
+    { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #13: El Poderoso Thor: En Busqueda de Los Dioses", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "thor", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1f/26/fe5b23eeab3c4c7d893903097059e86c.jpg" },
+    { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #14: Capitan America: El Nuevo Pacto", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1a/3e/146d436912d243fda05ce1974382e334.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #49: El Increible Hulk: Planeta Hulk Parte 1", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/small/21/04/b1a70bb128124b0ba237153ca5d34a49.jpg" },
     { titulo: "Must Have #18: Planeta Hulk", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/small/35/0a/439aa6c6681e4e149d2c5516a2c9857a.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #50: El Increible Hulk: Planeta Hulk Parte 2", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/small/2c/32/19de22bcad7c4fcbbe882827ebdec2f6.jpg" },
@@ -2328,6 +2370,7 @@ const listaMedia = [
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #42: Guerra Civil", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "iron-man,capitan-america,spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/02/1a/9c84d1cd8025447886d3977132e0602d.jpg" },
     { titulo: "Must Have #1: Civil War", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "iron-man,capitan-america,spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2e/3c/eb9414b922ea4bb08da1f6cc6a5d3f00.jpg" },
     { titulo: "Marvel Excelsior #2: Civil War", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "iron-man,capitan-america,spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/32/33/267ca3ebf1e04726a07ba61349136f90.jpg" },
+    { titulo: "Los Heroes Mas Poderosos de Marvel #73: Union Jack", categoria: "marvel-edad-moderna-2", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/04/3d/755fc64897c34223b3fb830ce0488a5a.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #28: Iron Fist", categoria: "marvel-edad-moderna-2", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/07/18/0cd13664b1c347d0a1e754dbe58a9ada.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #29: Blade", categoria: "marvel-edad-moderna-2", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/12/08/6353697e6b4c4ca8a5bf540bfbcde352.jpg" },
     { titulo: "Marvel Excelsior #8: Mythos", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "spider-man,hulk,cuatro-fantasticos,ghost-rider,capitan-america,x-men", tipo: "Cómic", poster: "https://entelequia.com.ar/storage/product_arch/2019/07/3378.webp" },
@@ -2355,6 +2398,7 @@ const listaMedia = [
     { titulo: "Los Heroes Mas Poderosos de Marvel #54: Maquina de Guerra", categoria: "marvel-edad-moderna-2", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/23/09/4fadf772c32046c7ae7b58ceeeabfcb2.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #23: Mockingbird", categoria: "marvel-edad-moderna-2", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1c/17/08d2ac94483a450ab773d31989397681.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #42: El Caballero Negro", categoria: "marvel-edad-moderna-2", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/23/29/798733cfeb8a46b59622d1532a4b9780.jpg" },
+    { titulo: "Los Heroes Mas Poderosos de Marvel #70: Avengers Mascotas", categoria: "marvel-edad-moderna-2", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/39/22/c179b93f23ee4d27a25bd87738119970.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #59: El Sitio", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/17/10/74fd27d128c0475992bcd8cc399f8773.jpg" },
     // --- ACTUALIDAD ---
     { titulo: "Los Heroes Mas Poderosos de Marvel #8: Luke Cage", categoria: "marvel-actualidad", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/0e/09/17c95dd1735840d499be1a17fe61da55.jpg" },
@@ -2363,9 +2407,9 @@ const listaMedia = [
     { titulo: "Marvel Excelsior #27: Avengers: Las Guerras Asgardianas", categoria: "marvel-actualidad", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_996807-MLA77215082803_062024-O.webp" },
     { titulo: "Must Have #25: Los Cuatro Fantasticos: Resuelvelo Todo", categoria: "marvel-actualidad", editorial: "panini", subtipo: "cuatro-fantasticos", tipo: "Cómic", poster: "https://i1.whakoom.com/small/3d/3c/2d094edfb69745e693e5e9e6980d1ed6.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #60: Astonishing Thor", categoria: "marvel-actualidad", editorial: "panini", subtipo: "thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/13/00/54606b03a7f8474b9245292269077d2a.jpg" },
-    { titulo: "Los Heroes Mas Poderosos de Marvel #67: Namor", categoria: "marvel-actualidad", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2d/25/95abe4bee0a34952bdc478d1dfd9aae2.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #68: Academia Avengers", categoria: "marvel-actualidad", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/06/35/d5d61a071c8f43d5bb91777608c577c1.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #62: Avengers Secretos: Mision a Marte", categoria: "marvel-actualidad", editorial: "panini", subtipo: "avengers-secretos", tipo: "Cómic", poster: "https://i1.whakoom.com/small/27/1e/ff560113c517499eb79b10743631728a.jpg" },
+    { titulo: "Los Heroes Mas Poderosos de Marvel #93: Avengers Secretos", categoria: "marvel-actualidad", editorial: "salvat", subtipo: "avengers-secretos", tipo: "Cómic", poster: "https://i1.whakoom.com/large/0b/0c/b9287631cb44490f9a8a9c4ed8c52df7.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #63: Deadpool: La Guerra de Wade Wilson", categoria: "marvel-actualidad", editorial: "panini", subtipo: "deadpool", tipo: "Cómic", poster: "https://i1.whakoom.com/small/24/0e/5840f94c89594a7d9e61590df390e456.jpg" },
     { titulo: "Must Have #27: Deadpool: La Guerra de Wade Wilson", categoria: "marvel-actualidad", editorial: "panini", subtipo: "deadpool", tipo: "Cómic", poster: "https://i1.whakoom.com/small/17/2a/1ffb629218564298a0c3e5403b52ba27.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #64: El Imperativo Thanos", categoria: "marvel-actualidad", editorial: "panini", subtipo: "avengers-secretos", tipo: "Cómic", poster: "https://i1.whakoom.com/small/04/35/510cd8a20bf146c4832793b5c418d9a5.jpg" },
@@ -2381,8 +2425,10 @@ const listaMedia = [
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #85: El Asombroso Spider-Man: Isla Araña - Segunda Parte", categoria: "marvel-actualidad", editorial: "panini", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/32/28/d2b91943220e4c5282298219186ee71d.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #72: X-Men: Ruptura", categoria: "marvel-actualidad", editorial: "panini", subtipo: "x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/3a/32/453c2b2c6a6243338bce283978dbb164.jpg" },
     { titulo: "Must Have #34: X-Men: Cisma", categoria: "marvel-actualidad", editorial: "panini", subtipo: "x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/29/00/eceaa1c446f1423d96d33773efb224bd.jpg" },
+    { titulo: "Los Heroes Mas Poderosos de Marvel #79: Miles Morales - Ultimate Spider-Man", categoria: "marvel-actualidad", editorial: "salvat", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/31/37/f8fc45f8d8384cd48d2db45af0ca75bf.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #80: Wolverine y Los X.Men: Regenesis", categoria: "marvel-actualidad", editorial: "panini", subtipo: "wolverine,x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/05/36/9e51ea5f8c884080b01c18f20d140149.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #68: Venom", categoria: "marvel-actualidad", editorial: "panini", subtipo: "venom", tipo: "Cómic", poster: "https://i1.whakoom.com/small/03/04/870091ff0b92480aae99543e5f4f7fbe.jpg" },
+    { titulo: "Los Heroes Mas Poderosos de Marvel #77: Venom (Flash Thompson)", categoria: "marvel-actualidad", editorial: "salvat", subtipo: "venom", tipo: "Cómic", poster: "https://i1.whakoom.com/large/17/3c/e9a793e71810402890cd9dcafe081d9b.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #75: Deadpool Hace Equipo", categoria: "marvel-actualidad", editorial: "panini", subtipo: "deadpool", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0c/29/e696e58fde294712a54998cbb756f57a.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #76: El Miedo Mismo: Los Intrepidos Parte Uno", categoria: "marvel-actualidad", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/3f/13/a6c54edde79c468aa25b01e4ecea661c.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #77: El Miedo Mismo: Los Intrepidos Parte Dos", categoria: "marvel-actualidad", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0f/03/7cca2280c08243aca1545ae939ded7a3.jpg" },
@@ -2391,6 +2437,8 @@ const listaMedia = [
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #81: Los Defensores: Quebrador de Mundos", categoria: "marvel-actualidad", editorial: "panini", subtipo: "defensores", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0a/30/5534f4d36e5e46bcac85ce13921ea70f.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #82: Avengers: Reunidos", categoria: "marvel-actualidad", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/23/08/878f12b106ff41f29d24c667c16ff52a.jpg" },
     { titulo: "Coleccion Definitivo de Novelas Graficas de Marvel #83: Heridas de Guerra", categoria: "marvel-actualidad", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/26/06/603cba3032b94566a952331031cfe754.jpg" },
+    { titulo: "Los Heroes Mas Poderosos de Marvel #95: Nick Fury Jr.", categoria: "marvel-actualidad", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1d/2e/4c50b1d2c7cb42688308ffd03cc74859.jpg" },
+    { titulo: "Los Heroes Mas Poderosos de Marvel #96: Agente Coulson", categoria: "marvel-actualidad", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/3d/34/09fee2d0904c4fe69f32fc04e5fcba0c.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #86: Avengers vs X-Men: Primera Parte", categoria: "marvel-actualidad", editorial: "panini", subtipo: "iron-man,capitan-america,thor,x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/27/0b/bbcd24ea922c462a9244b20bd6a2afea.jpg" },
     { titulo: "Marvel Excelsior #13: Avengers vs X-Men", categoria: "marvel-actualidad", editorial: "panini", subtipo: "iron-man,capitan-america,thor,x-men", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_669729-MLA28699507052_112018-O.webp" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #87: Avengers vs X-Men: Segunda Parte", categoria: "marvel-actualidad", editorial: "panini", subtipo: "iron-man,capitan-america,thor,x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/36/32/3e86fe6ae25346a0acbd4d426cf9bf8d.jpg" },
@@ -2409,6 +2457,7 @@ const listaMedia = [
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #96: Avengers: Mundo Avenger", categoria: "marvel-actualidad", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0c/25/5f0a432c344a402183c8a63d292b8294.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #97: Jovenes Avengers: Estilo > Substancia", categoria: "marvel-actualidad", editorial: "panini", subtipo: "jovenes-avengers", tipo: "Cómic", poster: "https://i1.whakoom.com/small/28/19/8dc7d794028545879dd5becd7b480154.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #98: Nuevos Avengers: Todo Muere", categoria: "marvel-actualidad", editorial: "panini", subtipo: "iron-man,capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/small/26/37/b0749f91b18a4cac9134c6f21f35faf5.jpg" },
+    { titulo: "Los Heroes Mas Poderosos de Marvel #86: Quicksilver", categoria: "marvel-actualidad", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/21/35/f136b0d2330843b9b71ddb55ece088e1.jpg" },
     { titulo: "Superior Spider-Man #1", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/11/30/0a3b83510edc44978944c051a6a554a9.jpg" },
     { titulo: "Superior Spider-Man #2", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/0b/34/1e6d916dbb7f4ec184087603e38b9eb5.jpg" },
     { titulo: "Superior Spider-Man #3", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/00/28/eaf7874a29c4436bbc308fa1201e0a2e.jpg" },
@@ -2422,9 +2471,11 @@ const listaMedia = [
     { titulo: "Superior Spider-Man #10: Las Horas Mas Oscuras", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/00/39/674480e8c54040c3befe6b640669f9f4.jpg" },
     { titulo: "Superior Spider-Man #11:  Nacion Goblin #1", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2d/18/f6d4eab31f8d465aa8301b70de369e21.jpg" },
     { titulo: "Superior Spider-Man #12: Nacion Goblin Conclusion", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/0b/3f/0ff44227e0984b998e5222a2cb0f4d59.jpg" },
+    { titulo: "Los Heroes Mas Poderosos de Marvel #97: Spider-Man - Superior", categoria: "marvel-actualidad", editorial: "salvat", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/36/1f/92c690d409944ba2a8256671c3086ca1.jpg" },
     { titulo: "Coleccion de Novelas Graficas de Marvel #100: Guardianes de La Galaxia: Avengers Cosmicos", categoria: "marvel-actualidad", editorial: "panini", subtipo: "guardianes-galaxia", tipo: "Cómic", poster: "https://i1.whakoom.com/small/13/24/351ff1c60daa4fd8b9d965c7f3114f7d.jpg" },
     { titulo: "Must Have #30: Guardianes de La Galaxia: Avengers Cosmicos", categoria: "marvel-actualidad", editorial: "panini", subtipo: "guardianes-galaxia", tipo: "Cómic", poster: "https://i1.whakoom.com/small/06/38/6390af4edd774d9ebc2f530216689ff2.jpg" },
     { titulo: "Coleccion de Novelas Graficas de Marvel #101: Nova: Origenes", categoria: "marvel-actualidad", editorial: "panini", subtipo: "nova", tipo: "Cómic", poster: "https://i1.whakoom.com/small/26/1a/de5fdcca93e64debaf6b71f56cd3e1a5.jpg" },
+    { titulo: "Los Heroes Mas Poderosos de Marvel #94: Nova (San Alexander)", categoria: "marvel-actualidad", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/3c/02/3a3ae5783d844be7a9ae9e71618b6a21.jpg" },
     { titulo: "Coleccion Definitiva de Novelas Graficas de Marvel #102: Infinito: Parte Uno", categoria: "marvel-actualidad", editorial: "panini", subtipo: "iron-man,capitan-america,thor,cuatro-fantasticos", tipo: "Cómic", poster: "https://i1.whakoom.com/small/37/17/a40ba32a1c044890bfe1dfe95e3f1635.jpg" },
     { titulo: "Coleccion Definitiva de Novelas Graficas de Marvel #103: Infinito: Parte Dos", categoria: "marvel-actualidad", editorial: "panini", subtipo: "iron-man,capitan-america,thor,cuatro-fantasticos", tipo: "Cómic", poster: "https://i1.whakoom.com/small/39/35/e270041771a4453c84345c799894f6f4.jpg" },
     { titulo: "Marvel Excelsior #11: Avengers: Infinito", categoria: "marvel-actualidad", editorial: "panini", subtipo: "iron-man,capitan-america,thor,cuatro-fantasticos", tipo: "Cómic", poster: "https://i1.whakoom.com/small/2f/2d/dd62421c28ac41e79443bac64e0d9862.jpg" },
@@ -2442,8 +2493,11 @@ const listaMedia = [
     { titulo: "Must Have #21: Spider-Man: Negocios Familiares", categoria: "marvel-actualidad", editorial: "panini", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/29/37/231b189bf9f74cda89bbc5069af789ba.jpg" },
     { titulo: "Coleccion Definitiva de Novelas Graficas de Marvel #104: Avengers Arena: Matar o Morir", categoria: "marvel-actualidad", editorial: "panini", subtipo: "avengers-arena", tipo: "Cómic", poster: "https://i1.whakoom.com/small/26/0f/253e1dfaa3834d26b70cf5af4540649a.jpg" },
     { titulo: "Coleccion Definitiva de Novelas Graficas de Marvel #105: Ms. Marvel: Fuera de lo Normal", categoria: "marvel-actualidad", editorial: "panini", subtipo: "ms-marvel", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0f/02/a41b1ed170994cb2834c8bbb4a6eefa4.jpg" },
+    { titulo: "Los Heroes Mas Poderosos de Marvel #98: Ms. Marvel (Kamala Khan)", categoria: "marvel-actualidad", editorial: "salvat", subtipo: "ms-marvel", tipo: "Cómic", poster: "https://i1.whakoom.com/large/37/3f/3782e4bb70da4e26bc27cfe3e71d93e1.jpg" },
     { titulo: "Coleccion Definitiva de Novelas Graficas de Marvel #106: Silver Surfer: Nuevo Amanecer", categoria: "marvel-actualidad", editorial: "panini", subtipo: "silver-surfer", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0f/36/cd993120adfd42ffa82f0c04e2fa8e6a.jpg" },
     { titulo: "Coleccion Definitiva de Novelas Graficas de Marvel #107: El Nuevo Ghost Rider: Motores de Venganza", categoria: "marvel-actualidad", editorial: "panini", subtipo: "ghost-rider", tipo: "Cómic", poster: "https://i1.whakoom.com/small/1b/06/e0800c8cdae840de8e1578a3893126eb.jpg" },
+    { titulo: "Los Heroes Mas Poderosos de Marvel #87: Ghost Rider (Robbie Reyes)", categoria: "marvel-actualidad", editorial: "salvat", subtipo: "ghost-rider", tipo: "Cómic", poster: "https://i1.whakoom.com/large/27/21/ab6799774cb04a05a0c5e2f060eb21f7.jpg" },
+    { titulo: "Los Heroes Mas Poderosos de Marvel #88: Ciclope", categoria: "marvel-actualidad", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/3e/3c/a71b531e2ab64285a22a5f50aa5fa872.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #43: Moon Knight", categoria: "marvel-actualidad", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/3e/37/3fbf082bf7f947adb2cadf87a710dcba.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #59: El Soldado de Invierno", categoria: "marvel-actualidad", editorial: "salvat", subtipo: "capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/large/04/35/8b1ed3a14c92420982114ea058ab9eb2.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #33: Shang-Chi", categoria: "marvel-actualidad", editorial: "salvat", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/10/36/bfb72ec3ccbc483589efd3dcf63caa3d.jpg" },
@@ -2452,12 +2506,18 @@ const listaMedia = [
     { titulo: "Secret Wars #1: Volumen 1", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "iron-man,capitan-america,thor,spider-man,x-men,cuatro-fantasticos", tipo: "Cómic", poster: "https://i1.whakoom.com/small/15/2d/fe8fd8f4fc2048e083d8529bc5743018.jpg" },
     { titulo: "Secret Wars #2: Volumen 2", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "iron-man,capitan-america,thor,spider-man,x-men,cuatro-fantasticos", tipo: "Cómic", poster: "https://i1.whakoom.com/small/3e/16/173cac6e7a674e458664cd06c0456bad.jpg" },
     { titulo: "Secret Wars #16:  Volumen 3", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "iron-man,capitan-america,thor,spider-man,x-men,cuatro-fantasticos", tipo: "Cómic", poster: "https://i1.whakoom.com/small/16/26/7e5058f886d642bfbfbab48066b7c98f.jpg" },
+    { titulo: "Los Heroes Mas Poderosos de Marvel #84: Squirrel Girl", categoria: "marvel-actualidad", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/0c/07/7fa7c16aeb064762a5766a8777a6a864.jpg" },
+    { titulo: "Los Heroes Mas Poderosos de Marvel #99: Silk", categoria: "marvel-actualidad", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2b/2c/c8cecbc9bd0d475c89083f287290ff99.jpg" },
+    { titulo: "Los Heroes Mas Poderosos de Marvel #100: Spider-Gwen", categoria: "marvel-actualidad", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/small/04/25/1e5d28311df04a75af756b400f6e3f2a.jpg" },
     { titulo: "Coleccion Spider-Man: Universo Araña #18: Venom: Primer Anfitrion", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "venom", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/18-venom_-_primer_anfitrion1-8c9904af638ab9d9c616772103155072-1024-1024.webp" },
     { titulo: "Marvel Excelsior #17: Venom: Primer Anfitrion", categoria: "marvel-actualidad", editorial: "panini", subtipo: "venom", tipo: "Cómic", poster: "https://i1.whakoom.com/small/20/01/b8edfce352b54c60aa302574cfdcca72.jpg" },
     { titulo: "Coleccion Spider-Man: Universo Araña #24: Venomizados", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "venom", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/24-venomizados1-beb712d17ff1e3d2ad16868724894895-640-0.webp" },
     { titulo: "Coleccion Definitiva de Novelas Graficas de Marvel #110: La Muerte de Wolverine", categoria: "marvel-actualidad", editorial: "panini", subtipo: "wolverine", tipo: "Cómic", poster: "https://i1.whakoom.com/small/06/2a/cfb083900a564e1483f7651dfb308421.jpg" },
     { titulo: "Must Have #8: La Muerte de Wolverine", categoria: "marvel-actualidad", editorial: "panini", subtipo: "wolverine", tipo: "Cómic", poster: "https://i1.whakoom.com/small/13/26/ca54af0b40bd4b7bacb1ba4e7ab94559.jpg" },
     { titulo: "Marvel Excelsior #20: La Muerte de Wolverine", categoria: "marvel-actualidad", editorial: "panini", subtipo: "wolverine", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2024/01/muerte-wolv.webp" },
+    { titulo: "Los Heroes Mas Poderosos de Marvel #92: Deathlok", categoria: "marvel-actualidad", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/20/1e/66ad957012f343b7a2d9864d8af0e0e1.jpg" },
+    { titulo: "Los Heroes Mas Poderosos de Marvel #85: Jean Grey", categoria: "marvel-actualidad", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/08/1c/d278425c44444ef89916fb6773baf0d7.jpg" },
+    { titulo: "Los Heroes Mas Poderosos de Marvel #89: La Mujer Invisible", categoria: "marvel-actualidad", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/12/1e/b91e6ed25e094dc5acc29b465c8c3bc0.jpg" },
     { titulo: "Avengers - Los Heroes Mas Poderosos de La Tierra #0: La Amenaza Final", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/2e/0b/55e93a9fa7bf48c29ea9e829d5cd5315.jpg" },
     { titulo: "Avengers - Los Heroes Mas Poderosos de La Tierra #1: La Guerra de Los Vampiros", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/37/25/63ea1617beeb439b8c67ebb79581440c.jpg" },
     { titulo: "Avengers - Los Heroes Mas Poderosos de La Tierra #2: La Guerra de Los Reinos", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/2b/0c/32c968461c9d45558f24f9866de9381d.jpg" },
@@ -2490,7 +2550,7 @@ const listaMedia = [
     // --- COLECCIÓN DEFINITIVA DE NOVELAS GRÁFICAS DE MARVEL (Salvat) ---
     { titulo: "Colección Definitiva de Novelas Gráficas de Marvel: #41", categoria: "marvel-novelas-graficas-definitiva", editorial: "salvat", subtipo: "marvel-zombies", tipo: "Cómic", poster: "https://www.quimeraquiroga.cl/cdn/shop/products/41_1200x1200.jpg?v=1629473875" },
     // --- UNIVERSO ULTIMATE ---
-    { titulo: "Coleccion Defintiva de Novelas Graficas de Marvel #15: Ultimate Spider-Man: Poder y Responsabilidad", categoria: "marvel-universo-ultimate", editorial: "panini", subtipo: "spider-man", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_654316-MLA53124458936_012023-O.webp" },
+    { titulo: "Coleccion Defintiva de Novelas Graficas de Marvel #15: Ultimate Spider-Man: Poder y Responsabilidad", categoria: "marvel-universo-ultimate", editorial: "panini", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2c/23/4231f0eef1bf48139259a54fe94e8ed6.jpg" },
     { titulo: "Marvel Ultimate Edicion Integral #1: Ultimate Spider-Man 01: Poder y Responsabilidad", categoria: "marvel-universo-ultimate", editorial: "salvat", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/33/01/6e1e8f4e0e744f9d8355035308852a85.jpg" },
     { titulo: "Marvel Ultimate Edicion Integral #2: Ultimate X-Men 01: La Gente del Mañana", categoria: "marvel-universo-ultimate", editorial: "salvat", subtipo: "x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/3d/28/bd85082961594ad7aa56e82dfadae150.jpg" },
     { titulo: "Marvel Ultimate Edicion Integral #4: Ultimate Spider-Man 02: Un Mundo Compartido", categoria: "marvel-universo-ultimate", editorial: "salvat", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/10/35/60750e058a5c4ba3b95b996ce0d7059d.jpg" },
@@ -4556,6 +4616,17 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "dc-novelas-graficas-salvat",
+        etiqueta: "Colección",
+        titulo: "DC Colección Novelas Gráficas",
+        categoria: "colecciones-hub",
+        poster: "https://i1.whakoom.com/large/2e/23/dcb67b01d46a49df987df0ea64401853.jpg",
+        esContenedor: true,
+        categoriaEditorial: "dc",
+        progresoPatron: "^DC Coleccion Novelas Graficas #(\\d+)",
+        peliculas: []
+    },
+    {
         id: "dc-esenciales-salvat",
         etiqueta: "Colección",
         titulo: "DC Colección Esenciales",
@@ -5745,6 +5816,7 @@ function renderizarColecciones() {
         "colecciones-hub": "seccion-colecciones-hub",
         "dc-heroes-y-villanos-salvat": "seccion-dc-heroes-y-villanos-salvat",
         "dc-esenciales-salvat": "seccion-dc-esenciales-salvat",
+        "dc-novelas-graficas-salvat": "seccion-dc-novelas-graficas-salvat",
         "flash-messner-loebs": "seccion-flash-messner-loebs",
         "marvel-argentina": "seccion-marvel-argentina",
         "marvel-edad-plata": "seccion-marvel-edad-plata",
@@ -6442,9 +6514,14 @@ function renderizarContenido() {
             const matchMarvelNGRomano = !matchMarvelNG ? item.titulo.match(/^Colec[a-záéíóúñ]* (?:Definitiva |Definitivo |Defintiiva |Defintiva )?de Novelas Gr[aá]ficas? de Marvel:? #\s*([IVXLCDM]+)\b/i) : null;
             if (matchMarvelNG || matchMarvelNGRomano) {
                 const numMarvelNG = matchMarvelNG ? matchMarvelNG[1] : romanoANumero(matchMarvelNGRomano[1]);
+                // Orden de salida: primero los tomos arábigos #1-#60, después los
+                // "Clásicos" (romanos I-XL) y al final la extensión #61 en adelante.
+                // Antes se mezclaban porque el romano se convertía a su valor
+                // numérico (XIV quedaba pegado al #14).
+                const grupoMarvelNG = matchMarvelNGRomano ? 1 : (parseInt(numMarvelNG, 10) > 60 ? 2 : 0);
                 const htmlTarjetaMarvelNG = htmlTarjeta.replace(
                     'class="tarjeta-media"',
-                    `class="tarjeta-media" data-marvel-ng-num="${numMarvelNG}"`
+                    `class="tarjeta-media" data-marvel-ng-num="${numMarvelNG}" data-marvel-ng-grupo="${grupoMarvelNG}"`
                 );
                 const grillaMarvelNGCronologico = document.getElementById("grilla-marvel-ng-cronologico");
                 if (grillaMarvelNGCronologico) grillaMarvelNGCronologico.insertAdjacentHTML('beforeend', htmlTarjetaMarvelNG);
@@ -6533,6 +6610,18 @@ function renderizarContenido() {
                 if (grillaUltimateIntegralCronologico) grillaUltimateIntegralCronologico.insertAdjacentHTML('beforeend', htmlUltimateIntegral);
                 const grillaUltimateIntegralPredeterminado = document.getElementById("grilla-marvel-ultimate-integral-predeterminado");
                 if (grillaUltimateIntegralPredeterminado) grillaUltimateIntegralPredeterminado.insertAdjacentHTML('beforeend', htmlUltimateIntegral);
+            }
+
+            const matchDcNG = item.titulo.match(/^DC Coleccion Novelas Graficas #(\d+)/i);
+            if (matchDcNG) {
+                const htmlDcNG = htmlTarjeta.replace(
+                    'class="tarjeta-media"',
+                    `class="tarjeta-media" data-dc-ng-num="${matchDcNG[1]}"`
+                );
+                const gDcNGCro = document.getElementById("grilla-dc-ng-cronologico");
+                if (gDcNGCro) gDcNGCro.insertAdjacentHTML('beforeend', htmlDcNG);
+                const gDcNGPre = document.getElementById("grilla-dc-ng-predeterminado");
+                if (gDcNGPre) gDcNGPre.insertAdjacentHTML('beforeend', htmlDcNG);
             }
 
             const matchHeroesMasPoderosos = item.titulo.match(/^Los Heroes Mas Poderosos de Marvel #(\d+)/i);
@@ -6855,7 +6944,9 @@ function ordenarGrillaPorNumeroSalvat() {
     const contenedorMarvelNG = document.getElementById('grilla-marvel-ng-predeterminado');
     if (contenedorMarvelNG) {
         const tarjetasMarvelNG = Array.from(contenedorMarvelNG.querySelectorAll('.tarjeta-media'));
-        tarjetasMarvelNG.sort((a, b) => parseInt(a.getAttribute('data-marvel-ng-num')) - parseInt(b.getAttribute('data-marvel-ng-num')));
+        tarjetasMarvelNG.sort((a, b) =>
+            (parseInt(a.getAttribute('data-marvel-ng-grupo')) * 1000 + parseInt(a.getAttribute('data-marvel-ng-num'))) -
+            (parseInt(b.getAttribute('data-marvel-ng-grupo')) * 1000 + parseInt(b.getAttribute('data-marvel-ng-num'))));
         tarjetasMarvelNG.forEach(t => contenedorMarvelNG.appendChild(t));
     }
     const contenedorSpidermanUAPre = document.getElementById('grilla-spiderman-ua-predeterminado');
@@ -6893,6 +6984,12 @@ function ordenarGrillaPorNumeroSalvat() {
         const tarjetasUltimateIntegral = Array.from(contenedorUltimateIntegral.querySelectorAll('.tarjeta-media'));
         tarjetasUltimateIntegral.sort((a, b) => parseInt(a.getAttribute('data-marvel-ultimate-integral-num')) - parseInt(b.getAttribute('data-marvel-ultimate-integral-num')));
         tarjetasUltimateIntegral.forEach(t => contenedorUltimateIntegral.appendChild(t));
+    }
+    const contenedorDcNG = document.getElementById('grilla-dc-ng-predeterminado');
+    if (contenedorDcNG) {
+        Array.from(contenedorDcNG.querySelectorAll('.tarjeta-media'))
+            .sort((a, b) => parseInt(a.getAttribute('data-dc-ng-num')) - parseInt(b.getAttribute('data-dc-ng-num')))
+            .forEach(t => contenedorDcNG.appendChild(t));
     }
     const contenedorHeroesMasPoderosos = document.getElementById('grilla-marvel-heroes-mas-poderosos-predeterminado');
     if (contenedorHeroesMasPoderosos) {
@@ -7079,6 +7176,7 @@ function sincronizarTengo() {
             }
             guardarTengoEnStorage();
             const ahoraTengo = titulosTengoGuardados.has(titulo);
+            if (ahoraTengo) propagarTengoAVistos(titulo);
             document.querySelectorAll(`.btn-tengo[data-titulo-tengo="${CSS.escape(titulo)}"]`).forEach(btn => {
                 btn.classList.toggle('activo', ahoraTengo);
                 btn.textContent = ahoraTengo ? '📗 Lo tengo' : '📘 No lo tengo';
@@ -7087,6 +7185,41 @@ function sincronizarTengo() {
             });
         });
     });
+}
+
+
+// Refleja en TODAS las tarjetas visibles con ese título el estado visto/no visto.
+function aplicarVistoEnTarjetas(titulo, marcado) {
+    document.querySelectorAll('.tarjeta-media').forEach(t => {
+        const h3 = t.querySelector('h3');
+        if (!h3 || h3.textContent !== titulo) return;
+        const btn = t.querySelector('.btn-accion');
+        if (!btn) return;
+        const esVJ = t.getAttribute('data-accion') === 'jugado';
+        if (marcado) {
+            btn.textContent = esVJ ? 'Jugado ✓' : 'Visto ✓';
+            btn.style.backgroundColor = '#28a745';
+            t.classList.add('vista');
+        } else {
+            btn.textContent = esVJ ? 'Marcar Jugado' : 'Marcar Visto';
+            btn.style.backgroundColor = '';
+            t.classList.remove('vista');
+        }
+    });
+}
+
+// Al marcar "Lo tengo" en un cómic, las otras ediciones que recopilan lo
+// mismo (ej. Hush de Ovni -> Silencio de Salvat) se marcan como vistas.
+function propagarTengoAVistos(titulo) {
+    const pendientes = titulosEquivalentes(titulo).filter(t => !titulosVistosGuardados.has(t));
+    if (!pendientes.length) return;
+    pendientes.forEach(t => aplicarVistoEnTarjetas(t, true));
+    guardarProgresoUsuario(pendientes, true);
+    if (typeof actualizarTodasLasColecciones === 'function') actualizarTodasLasColecciones();
+    const bib = document.getElementById('seccion-biblioteca');
+    if (bib && !bib.classList.contains('oculto') && typeof generarBiblioteca === 'function') generarBiblioteca();
+    const secReco = document.getElementById('seccion-recomendaciones');
+    if (secReco && !secReco.classList.contains('oculto') && typeof renderizarRecomendaciones === 'function') renderizarRecomendaciones();
 }
 
 function sincronizarVistos() {
@@ -7138,6 +7271,13 @@ function sincronizarVistos() {
                 }
             });
 
+            // Si es un cómic, las otras ediciones que recopilan lo mismo (otra
+            // colección, otro nombre) se marcan/desmarcan juntas.
+            titulosEquivalentes(titulo).forEach(t => {
+                titulosAfectados.push(t);
+                aplicarVistoEnTarjetas(t, marcandoComoVisto);
+            });
+
             // Si lo que se tocó es la ficha madre de una colección, marca/desmarca
             // también todo lo que contiene, para que quede al 100% (o 0%)
             const colIdTocado = tarjeta.getAttribute('data-coleccion');
@@ -7176,6 +7316,10 @@ function sincronizarVistos() {
 
             if (!document.getElementById('seccion-biblioteca').classList.contains('oculto')) {
                 generarBiblioteca();
+            }
+            const secReco = document.getElementById('seccion-recomendaciones');
+            if (secReco && !secReco.classList.contains('oculto') && typeof renderizarRecomendaciones === 'function') {
+                renderizarRecomendaciones();
             }
         });
     });
@@ -10084,6 +10228,7 @@ const SECCIONES_COMICS_CON_MENU_FILTROS = {
     "spiderman-universo-arana": ["grilla-spiderman-ua-predeterminado", "grilla-spiderman-ua-cronologico"],
     "marvel-excelsior": ["grilla-marvel-excelsior-predeterminado", "grilla-marvel-excelsior-cronologico"],
     "marvel-must-have": ["grilla-marvel-must-have-predeterminado", "grilla-marvel-must-have-cronologico"],
+    "dc-novelas-graficas-salvat": ["grilla-dc-ng-predeterminado", "grilla-dc-ng-cronologico"],
     "marvel-heroes-mas-poderosos": ["grilla-marvel-heroes-mas-poderosos-predeterminado", "grilla-marvel-heroes-mas-poderosos-cronologico"],
     "marvel-inmortal-hulk": ["grilla-marvel-inmortal-hulk-predeterminado", "grilla-marvel-inmortal-hulk-cronologico"],
     "marvel-ultimate-integral": ["grilla-marvel-ultimate-integral-predeterminado", "grilla-marvel-ultimate-integral-cronologico"],
@@ -16234,6 +16379,7 @@ function alternarTengo(boton) {
     // Actualizar TODAS las tarjetas con este título (puede aparecer en
     // más de una sección/colección a la vez).
     const ahoraTengo = titulosTengoGuardados.has(titulo);
+    if (ahoraTengo) propagarTengoAVistos(titulo);
     document.querySelectorAll(`.btn-tengo[data-titulo-tengo="${CSS.escape(titulo)}"]`).forEach(btn => {
         btn.classList.toggle('activo', ahoraTengo);
         btn.textContent = ahoraTengo ? '📗 Lo tengo' : '📘 No lo tengo';
@@ -21146,6 +21292,24 @@ botonesFiltroVistaMarvelUltimateIntegral.forEach(boton => {
     });
 });
 
+const btnVolverDcNG = document.getElementById('btn-volver-dc-novelas-graficas-salvat');
+if (btnVolverDcNG) {
+    btnVolverDcNG.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const botonesFiltroVistaDcNG = document.querySelectorAll('.btn-filtro-vista-dc-ng');
+botonesFiltroVistaDcNG.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroVistaDcNG.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        const vista = this.getAttribute('data-vista');
+        document.getElementById('grilla-dc-ng-predeterminado').classList.toggle('oculto', vista !== 'predeterminado');
+        document.getElementById('grilla-dc-ng-cronologico').classList.toggle('oculto', vista !== 'cronologico');
+    });
+});
+
 const btnVolverMarvelHeroesMasPoderosos = document.getElementById('btn-volver-marvel-heroes-mas-poderosos');
 if(btnVolverMarvelHeroesMasPoderosos) {
     btnVolverMarvelHeroesMasPoderosos.addEventListener('click', () => {
@@ -22088,3 +22252,316 @@ document.querySelectorAll('.btn-filtro-vistajuegos').forEach(boton => {
         document.getElementById('filtros-anio-videojuegos').classList.toggle('oculto', !porAnio);
     });
 });
+
+
+// ==========================================
+// RECOMENDADOR DE CÓMICS: "¿Qué leo ahora?"
+// ==========================================
+// Mira qué cómics ya marcaste como vistos (titulosVistosGuardados) y puntúa
+// los que NO leíste con 4 criterios independientes + un bonus:
+//   1) COLECCIÓN:   siguiente tomo (por número) de las colecciones donde ya
+//                   leíste algo; los huecos anteriores valen menos.
+//   2) PERSONAJE:   afinidad con los personajes/equipos de lo que leíste
+//                   (lo leído hace poco pesa más).
+//   3) LÍNEA DE TIEMPO: lo que viene justo después de lo que leíste dentro
+//                   del mismo Orden de Lectura (el orden de listaMedia es el
+//                   orden cronológico dentro de cada era).
+//   4) LO TENGO:    tomos que ya tenés en mano y están sin leer.
+//   + bonus "a punto de completar" para colecciones leídas en un 70% o más.
+// Un mismo relato publicado en varias ediciones (ej. "Marvels" en tres
+// colecciones) se cuenta como leído si leíste cualquiera, y se muestra una
+// sola vez con la lista de ediciones alternativas.
+const RECO_PESOS = { coleccion: 3, tiempo: 2.5, personaje: 2, tengo: 2.5, completar: 1 };
+const RECO_TOKENS_IGNORADOS = new Set([
+    'origen', 'primeros-anos', 'bronze-age', 'corps', 'crisis', 'invasion', 'flashpoint',
+    'infinite-crisis', 'regreso-vida', 'caida-hal-jordan', 'crisis-final-blackest-night',
+    'trinity-war', 'todos', 'liga', 'jsa'
+]);
+
+function recoNormalizarClave(titulo) {
+    let t = String(titulo || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+    // Solo se descartan los paréntesis que nombran la edición/colección; los de
+    // rangos como "(#1-7)" distinguen volúmenes distintos y se conservan.
+    t = t.replace(/\([^)]*(?:colec|heroes|ovni|ecc|novelas|salvat|esenciales)[^)]*\)/g, ' ');
+    t = t.replace(/^\s*(dc colec\w*\s+(de\s+)?(heroes y villanos|novelas graficas|esenciales)|esenciales dc|marvel excelsior|must have|colec\w*\s+(definitiv\w+\s+|defintiiva\s+)?de novelas grafica?s? de marvel|coleccion spider-man:?\s*universo arana|coleccion batman 80 aniversario|dc comics presenta)\s*:?\s*#?\s*[ivxlcdm\d]*\s*:?/, ' ');
+    t = t.replace(/[^a-z0-9]+/g, ' ').trim();
+    return t;
+}
+
+// Mismo relato publicado con nombres distintos en distintas ediciones
+// (ej. "Batman: Hush" de Ovni = "Batman: Silencio" de Salvat). Cada grupo
+// lista las claves normalizadas (ver recoNormalizarClave) que son lo mismo.
+const EQUIV_ALIAS_GRUPOS = [
+    ['la muerte de superman', 'superman la muerte de superman'],
+    ['civil war', 'guerra civil'],
+    ['dinastia m', 'dinastia de m'],
+    ['capitan america soldado del invierno', 'capitan america winter soldier'],
+    ['daredevil demonio guardian', 'daredevil diablo guardian'],
+    ['el asombroso spider man la ultima caceria de kraven', 'spider man la ultima caceria de kraven'],
+    ['batman veneno', 'batman leyendas del caballero oscuro 13 veneno']
+];
+// Ediciones completas que en otra edición vienen partidas en tomos: marcar
+// la completa implica sus partes, pero una parte NO implica la completa ni
+// a las otras partes.
+const EQUIV_ALIAS_PARTES = [
+    { todo: ['batman hush'], partes: [['batman silencio parte 1'], ['batman silencio parte 2']] },
+    { todo: ['batman el largo halloween'], partes: [['batman el largo halloween parte 1'], ['batman el largo halloween parte 2']] },
+    { todo: ['planeta hulk'], partes: [['el increible hulk planeta hulk parte 1'], ['el increible hulk planeta hulk parte 2']] },
+    { todo: [], partes: [['jla ano uno parte 1', 'jla ano uno parte uno'], ['jla ano uno parte 2', 'jla ano uno parte dos']] }
+];
+const EQUIV_ALIAS_MAPA = (() => {
+    const m = {};
+    EQUIV_ALIAS_GRUPOS.forEach(g => g.forEach(k => { m[k] = g[0]; }));
+    EQUIV_ALIAS_PARTES.forEach(g => {
+        g.todo.forEach(k => { m[k] = g.todo[0]; });
+        g.partes.forEach(parte => parte.forEach(k => { m[k] = parte[0]; }));
+    });
+    return m;
+})();
+// Para una clave canónica "completa": las claves canónicas de sus partes.
+const EQUIV_PARTES_DE_TODO = (() => {
+    const m = {};
+    EQUIV_ALIAS_PARTES.forEach(g => { if (g.todo.length) m[g.todo[0]] = g.partes.map(p => p[0]); });
+    return m;
+})();
+function claveEquivalencia(titulo) {
+    const k = recoNormalizarClave(titulo);
+    return EQUIV_ALIAS_MAPA[k] || k;
+}
+// Claves que quedan cubiertas al leer algo con esta clave canónica.
+function clavesCubiertas(clave) {
+    return [clave].concat(EQUIV_PARTES_DE_TODO[clave] || []);
+}
+let _equivCache = null;
+let _equivComicsSet = null;
+function titulosEquivalentes(titulo) {
+    if (!_equivCache) {
+        _equivCache = {};
+        listaMedia.forEach(i => {
+            if (i.tipo !== 'Cómic') return;
+            const k = claveEquivalencia(i.titulo);
+            if (!k) return;
+            (_equivCache[k] = _equivCache[k] || new Set()).add(i.titulo);
+        });
+    }
+    if (!_equivComicsSet) _equivComicsSet = new Set(listaMedia.filter(i => i.tipo === 'Cómic').map(i => i.titulo));
+    if (!_equivComicsSet.has(titulo)) return [];
+    const resultado = new Set();
+    clavesCubiertas(claveEquivalencia(titulo)).forEach(k => {
+        (_equivCache[k] || []).forEach(t => { if (t !== titulo) resultado.add(t); });
+    });
+    return [...resultado];
+}
+
+function recoPrepararCatalogo() {
+    const vistos = new Set();
+    const comics = [];
+    listaMedia.forEach((item, idx) => {
+        if (item.tipo !== 'Cómic' || vistos.has(item.titulo)) return;
+        vistos.add(item.titulo);
+        const tokens = String(item.personajes || item.subtipo || '').split(',')
+            .map(s => s.trim()).filter(s => s && !RECO_TOKENS_IGNORADOS.has(s));
+        comics.push({
+            titulo: item.titulo, idx, cat: item.categoria, poster: item.poster,
+            editorial: item.editorial || '', tokens, clave: claveEquivalencia(item.titulo),
+            cols: []
+        });
+    });
+    // Colecciones coleccionables (hubs con progresoPatron)
+    const hubs = [];
+    colecciones.forEach(col => {
+        if (!col.progresoPatron) return;
+        let re, excl = null;
+        try { re = new RegExp(col.progresoPatron, 'i'); if (col.progresoExcluir) excl = new RegExp(col.progresoExcluir, 'i'); } catch (e) { return; }
+        const miembros = [];
+        comics.forEach(c => {
+            const m = c.titulo.match(re);
+            if (!m || (excl && excl.test(c.titulo))) return;
+            let n = parseInt(m[1], 10);
+            if (isNaN(n)) n = (typeof romanoANumero === 'function') ? romanoANumero(m[1]) : NaN;
+            if (isNaN(n)) return;
+            c.cols.push({ id: col.id, nombre: col.titulo, num: n });
+            miembros.push({ c, n });
+        });
+        if (miembros.length) hubs.push({ id: col.id, nombre: col.titulo, miembros });
+    });
+    return { comics, hubs };
+}
+
+function calcularRecomendaciones(leidosSet, tengoSet, historial, hoyMs) {
+    const { comics, hubs } = recoPrepararCatalogo();
+    const leidoTitulo = t => leidosSet.has(t.titulo);
+    const clavesLeidas = new Set();
+    comics.filter(leidoTitulo).forEach(c => { if (c.clave) clavesCubiertas(c.clave).forEach(k => clavesLeidas.add(k)); });
+    const esLeido = c => leidoTitulo(c) || (c.clave && clavesLeidas.has(c.clave));
+
+    // Fecha de lectura más reciente por título (para ponderar recencia)
+    const ultimaLectura = {};
+    Object.keys(historial || {}).forEach(fecha => (historial[fecha] || []).forEach(t => {
+        if (!ultimaLectura[t] || fecha > ultimaLectura[t]) ultimaLectura[t] = fecha;
+    }));
+    const pesoRecencia = titulo => {
+        const f = ultimaLectura[titulo];
+        if (!f) return 1;
+        const dias = Math.max(0, ((hoyMs || Date.now()) - new Date(f + 'T12:00:00').getTime()) / 86400000);
+        return 1 + Math.max(0, 1 - dias / 60);
+    };
+
+    const leidos = comics.filter(leidoTitulo);
+    const cand = new Map(); // titulo -> info
+    const nuevo = c => ({ c, col: 0, tiempo: 0, personaje: 0, tengo: 0, completar: 0, razones: [] });
+    const get = c => { if (!cand.has(c.titulo)) cand.set(c.titulo, nuevo(c)); return cand.get(c.titulo); };
+
+    // 1) COLECCIÓN
+    hubs.forEach(h => {
+        const leidosHub = h.miembros.filter(m => esLeido(m.c));
+        if (!leidosHub.length) return;
+        const cobertura = leidosHub.length / h.miembros.length;
+        const maxLeido = Math.max(...leidosHub.map(m => m.n));
+        const sinLeer = h.miembros.filter(m => !esLeido(m.c)).sort((a, b) => a.n - b.n);
+        const siguientes = sinLeer.filter(m => m.n > maxLeido);
+        const huecos = sinLeer.filter(m => m.n < maxLeido);
+        const base = 0.5 + cobertura;
+        siguientes.slice(0, 3).forEach((m, i) => {
+            const e = get(m.c);
+            const v = base / (1 + i * 0.6);
+            if (v > e.col) { e.col = v; }
+            e.razones.push({ tipo: 'coleccion', txt: `📚 ${i === 0 ? 'Siguiente tomo' : 'Más adelante'} de «${h.nombre}» (${leidosHub.length}/${h.miembros.length} leídos)` });
+            if (cobertura >= 0.7) { e.completar = Math.max(e.completar, cobertura); e.razones.push({ tipo: 'completar', txt: `🏁 Estás a punto de completar «${h.nombre}»` }); }
+        });
+        huecos.slice(0, 2).forEach(m => {
+            const e = get(m.c);
+            e.col = Math.max(e.col, base * 0.5);
+            e.razones.push({ tipo: 'coleccion', txt: `🕳️ Hueco en «${h.nombre}»: te saltaste el #${m.n}` });
+            if (cobertura >= 0.7) { e.completar = Math.max(e.completar, cobertura); }
+        });
+    });
+
+    // 2) PERSONAJE / EQUIPO
+    const afinidad = {};
+    leidos.forEach(c => c.tokens.forEach(t => { afinidad[t] = (afinidad[t] || 0) + pesoRecencia(c.titulo); }));
+    comics.forEach(c => {
+        if (esLeido(c) || !c.tokens.length) return;
+        let s = 0, mejor = null;
+        c.tokens.forEach(t => {
+            const a = afinidad[t] || 0;
+            if (a > 0) { s += Math.log(1 + a); if (!mejor || a > afinidad[mejor]) mejor = t; }
+        });
+        s = Math.min(s, 3) / 3;
+        if (s <= 0) return;
+        const e = get(c);
+        e.personaje = s;
+        const cant = leidos.filter(x => x.tokens.includes(mejor)).length;
+        e.razones.push({ tipo: 'personaje', txt: `🦸 Seguís con «${mejor}» (${cant} leído${cant === 1 ? '' : 's'})` });
+    });
+
+    // 3) LÍNEA DE TIEMPO (siguiente sin leer dentro de la misma era)
+    const porEra = {};
+    comics.forEach(c => { (porEra[c.cat] = porEra[c.cat] || []).push(c); });
+    Object.values(porEra).forEach(lista => {
+        lista.sort((a, b) => a.idx - b.idx);
+        lista.forEach((c, i) => {
+            if (!leidoTitulo(c)) return;
+            const w = pesoRecencia(c.titulo);
+            let saltados = 0;
+            for (let j = i + 1; j < lista.length && saltados < 4; j++) {
+                const n = lista[j];
+                if (esLeido(n)) continue; // ya leído: seguimos buscando el siguiente pendiente
+                const v = (1 / (1 + saltados)) * (w / 2);
+                const e = get(n);
+                if (v > e.tiempo) {
+                    e.tiempo = v;
+                    e.razones = e.razones.filter(r => r.tipo !== 'tiempo');
+                    e.razones.push({ tipo: 'tiempo', txt: `🧭 En la línea de tiempo viene después de «${c.titulo}»` });
+                }
+                saltados++;
+                break; // solo el primer pendiente tras cada lectura
+            }
+        });
+    });
+
+    // 4) LO TENGO
+    comics.forEach(c => {
+        if (esLeido(c) || !tengoSet.has(c.titulo)) return;
+        const e = get(c);
+        e.tengo = 1;
+        e.razones.push({ tipo: 'tengo', txt: '📗 Ya lo tenés en mano y está sin leer' });
+    });
+
+    // Puntaje final + dedupe de ediciones alternativas del mismo relato
+    const lista = [...cand.values()].filter(e => !esLeido(e.c)).map(e => {
+        e.total = e.col * RECO_PESOS.coleccion + e.tiempo * RECO_PESOS.tiempo + e.personaje * RECO_PESOS.personaje +
+                  e.tengo * RECO_PESOS.tengo + e.completar * RECO_PESOS.completar;
+        return e;
+    }).filter(e => e.total > 0);
+    const porClave = {};
+    lista.forEach(e => { const k = e.c.clave || e.c.titulo; (porClave[k] = porClave[k] || []).push(e); });
+    const final = [];
+    Object.values(porClave).forEach(grupo => {
+        grupo.sort((a, b) => b.total - a.total);
+        const mejor = grupo[0];
+        mejor.alternativas = grupo.slice(1).map(g => g.c.titulo);
+        // Si alguna edición alternativa la tenés, esa gana el bonus "tengo"
+        const tenida = grupo.find(g => g.tengo);
+        if (tenida && tenida !== mejor) { mejor.tengo = 1; mejor.total += RECO_PESOS.tengo; mejor.razones.push({ tipo: 'tengo', txt: `📗 Tenés otra edición: «${tenida.c.titulo}»` }); }
+        final.push(mejor);
+    });
+    final.sort((a, b) => b.total - a.total);
+    return { items: final, totalLeidos: leidos.length };
+}
+
+let recoFiltroActivo = 'todas';
+function renderizarRecomendaciones() {
+    const grilla = document.getElementById('grilla-recomendaciones');
+    const aviso = document.getElementById('recomendaciones-aviso');
+    if (!grilla) return;
+    const { items, totalLeidos } = calcularRecomendaciones(titulosVistosGuardados, titulosTengoGuardados, historialVistos, Date.now());
+    grilla.innerHTML = '';
+    if (aviso) {
+        aviso.textContent = totalLeidos === 0
+            ? 'Todavía no marcaste ningún cómic como visto: marcá algunos en Cómics y vuelvo con recomendaciones.'
+            : `Calculado con tus ${totalLeidos} cómics leídos. Los números de cada tarjeta son el puntaje de cada criterio.`;
+    }
+    const clave = { todas: 'total', coleccion: 'col', personaje: 'personaje', tiempo: 'tiempo', tengo: 'tengo' }[recoFiltroActivo] || 'total';
+    const mostrar = items.filter(e => clave === 'total' || e[clave] > 0)
+        .sort((a, b) => b[clave] - a[clave] || b.total - a.total).slice(0, 24);
+    if (!mostrar.length) {
+        grilla.innerHTML = '<p style="color:#aaa; padding:20px 0;">No hay recomendaciones para este criterio todavía.</p>';
+        return;
+    }
+    mostrar.forEach(e => {
+        const razones = [...new Map(e.razones.map(r => [r.txt, r])).values()].slice(0, 4)
+            .map(r => `<li>${r.txt}</li>`).join('');
+        const alt = (e.alternativas && e.alternativas.length)
+            ? `<p style="font-size:11px;color:#aaa;margin:4px 0;">También en: ${e.alternativas.slice(0, 3).join(' · ')}</p>` : '';
+        const tiene = titulosTengoGuardados.has(e.c.titulo);
+        grilla.insertAdjacentHTML('beforeend', `
+            <div class="tarjeta-media" data-accion="visto">
+                <img src="${e.c.poster}" alt="${e.c.titulo}">
+                <h3>${e.c.titulo}</h3>
+                <p>⭐ ${e.total.toFixed(1)} · 📚${e.col.toFixed(1)} 🦸${e.personaje.toFixed(1)} 🧭${e.tiempo.toFixed(1)}</p>
+                <ul style="text-align:left;font-size:11px;color:#ccc;padding-left:16px;margin:4px 0;">${razones}</ul>
+                ${alt}
+                <button class="btn-accion">Marcar Visto</button>
+                <button class="btn-tengo ${tiene ? 'activo' : ''}" data-titulo-tengo="${e.c.titulo}">${tiene ? '📗 Lo tengo' : '📘 No lo tengo'}</button>
+            </div>
+        `);
+    });
+    sincronizarVistos();
+}
+
+(function conectarRecomendaciones() {
+    const btn = document.getElementById('btn-recomendaciones');
+    const sec = document.getElementById('seccion-recomendaciones');
+    if (btn && sec) {
+        btn.addEventListener('click', () => { renderizarRecomendaciones(); cambiarSeccion(sec); });
+    }
+    document.querySelectorAll('.btn-filtro-reco').forEach(b => {
+        b.addEventListener('click', function () {
+            document.querySelectorAll('.btn-filtro-reco').forEach(x => x.classList.remove('activo'));
+            this.classList.add('activo');
+            recoFiltroActivo = this.getAttribute('data-criterio');
+            renderizarRecomendaciones();
+        });
+    });
+})();
