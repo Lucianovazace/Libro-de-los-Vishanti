@@ -16624,7 +16624,29 @@ function cargarProgresoUsuario() {
         });
 
         titulosVistosGuardados = new Set(vistosCorregidos);
-        historialVistos = doc.exists ? (doc.data().historial || {}) : {};
+        historialVistos = doc.exists ? JSON.parse(JSON.stringify(doc.data().historial || {})) : {};
+        // Recuperación: versiones anteriores guardaban cada día como un campo
+        // literal "historial.YYYY-MM-DD" (con el punto en el nombre) en vez de
+        // dentro del mapa "historial". Los juntamos y los re-guardamos bien.
+        let historialRecuperado = {};
+        if (doc.exists) {
+            const datosDoc = doc.data();
+            Object.keys(datosDoc).forEach(k => {
+                const m = /^historial\.(\d{4}-\d{2}-\d{2})$/.exec(k);
+                if (!m || !Array.isArray(datosDoc[k])) return;
+                const lista = historialVistos[m[1]] || (historialVistos[m[1]] = []);
+                datosDoc[k].forEach(t => { if (!lista.includes(t)) lista.push(t); });
+                historialRecuperado[m[1]] = datosDoc[k];
+            });
+        }
+        if (Object.keys(historialRecuperado).length > 0) {
+            const mapa = {};
+            Object.keys(historialRecuperado).forEach(f => {
+                mapa[f] = firebase.firestore.FieldValue.arrayUnion(...historialRecuperado[f]);
+            });
+            db.collection('usuarios').doc(usuarioActual.uid).set({ historial: mapa }, { merge: true })
+                .catch(err => console.error('Error recuperando historial del calendario:', err));
+        }
         // Los logros que ya tenías desbloqueados no deben volver a notificarse
         logrosYaNotificados = new Set(logrosDisponibles.filter(l => l.condicion(titulosVistosGuardados)).map(l => l.id));
         aplicarVistosGuardados(document);
@@ -16685,8 +16707,13 @@ function guardarProgresoUsuario(titulos, marcado) {
         // el resto del historial. Solo se agrega al marcar (no al
         // desmarcar), para no perder el registro de "cuándo lo agregué".
         if (marcado) {
-            const hoyISO = new Date().toISOString().slice(0, 10);
-            actualizacion[`historial.${hoyISO}`] = firebase.firestore.FieldValue.arrayUnion(...listaTitulos);
+            // Fecha LOCAL (no UTC): de noche en Argentina toISOString ya daría el día siguiente.
+            const ahoraCal = new Date();
+            const hoyISO = `${ahoraCal.getFullYear()}-${String(ahoraCal.getMonth() + 1).padStart(2, '0')}-${String(ahoraCal.getDate()).padStart(2, '0')}`;
+            // OJO: con set()+merge las claves con punto NO son rutas anidadas (se
+            // guardaban como campo literal y al recargar el historial quedaba vacío).
+            // Por eso se manda como objeto anidado.
+            actualizacion.historial = { [hoyISO]: firebase.firestore.FieldValue.arrayUnion(...listaTitulos) };
             listaTitulos.forEach(t => {
                 if (!historialVistos[hoyISO]) historialVistos[hoyISO] = [];
                 if (!historialVistos[hoyISO].includes(t)) historialVistos[hoyISO].push(t);
