@@ -764,6 +764,13 @@ h2 {
     cursor: pointer;
     font-weight: bold;
     margin-bottom: 15px;
+    /* Acompaña al scroll: queda pegado justo debajo del header fijo para
+       no tener que subir hasta arriba para volver atrás. --header-alto la
+       calcula script.js con la altura real del header (cambia en celular). */
+    position: sticky;
+    top: calc(var(--header-alto, 150px) + 8px);
+    z-index: 900;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.55);
 }
 
 /* ==========================================
