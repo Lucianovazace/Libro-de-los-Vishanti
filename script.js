@@ -1918,6 +1918,7 @@ const listaMedia = [
     { titulo: "Esenciales DC #23: Batman: El Espejo Negro", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,dick-grayson", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_the_black_mirror_cov-4189d8cc24746a418217105079252954-1024-1024.webp" },
     { titulo: "Esenciales DC #1: Flashpoint Absoluto", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,flash-barry-allen", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flashpoint_4taed_cov_arg1-4c2c6e6a3c5b6220c316851089691513-1024-1024.webp" },
     { titulo: "Batman: El Largo Halloween", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "batman,two-face,joker,riddler,penguin", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-el-largo-halloween-cov1-f2299cfb84cc81ac4216354359175721-640-0.webp" },
+    { titulo: "Batman: El Largo Halloween (2da Edicion)", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "batman,two-face,joker,riddler,penguin", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2f/15/6f7b68e3e634460487f0000da2ebb56c.jpg" },
     { titulo: "DC Coleccion Novelas Graficas #19: Batman: El Largo Halloween - Parte 1", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,two-face,joker,riddler,penguin", tipo: "Cómic", poster: "https://i1.whakoom.com/large/0c/02/ee663d1614f74dbdb3de5f84d9a0232a.jpg" },
     { titulo: "DC Coleccion Novelas Graficas #20: Batman: El Largo Halloween - Parte 2", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,two-face,joker,riddler,penguin", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2c/04/a0671895dd314c3b97fc4b0754318f10.jpg" },
     { titulo: "Batman: Victoria Oscura", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "batman,two-face,joker,ras-al-ghul", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-victoria-oscura-cov1-fa7ef1a20b9c8ccd2216487826415095-1024-1024.webp" },
@@ -22372,7 +22373,8 @@ const EQUIV_ALIAS_GRUPOS = [
     ['el asombroso spider man la ultima caceria de kraven', 'spider man la ultima caceria de kraven'],
     ['batman veneno', 'batman leyendas del caballero oscuro 13 veneno'],
     ['green arrow los cazadores del arco largo', 'green arrow el arco del cazador'],
-    ['jla vol 1 nuevo orden mundial', 'jla nuevo orden mundial']
+    ['jla vol 1 nuevo orden mundial', 'jla nuevo orden mundial'],
+    ['batman el largo halloween', 'batman el largo halloween 2da edicion']
 ];
 // Ediciones completas que en otra edición vienen partidas en tomos: marcar
 // la completa implica sus partes, pero una parte NO implica la completa ni
