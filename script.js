@@ -337,8 +337,8 @@ const listaMedia = [
     { titulo: "It Parte Dos", categoria: "it", subtipo: "muschietti", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYzUxM2VhOGItZTY2My00OTA4LWI4NjUtMDA5YWJjM2M2NDJjXkEyXkFqcGc@.V1.jpg" },
     { titulo: "It: Bienvenidos a Derry", categoria: "it", subtipo: "muschietti", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/nyy3BITeIjviv6PFIXtqvc8i6xi.jpg" },
     { titulo: "It (1990)", categoria: "it", subtipo: "clasico", tipo: "Miniserie", poster: "https://m.media-amazon.com/images/M/MV5BZDFhODExOTctNTFkZS00NjE1LWE2MWMtY2Q1ZThhMGY5NjJkXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
-    { titulo: "It (Libro)", categoria: "it", subtipo: "libro", tipo: "Libro", poster: "portadas/libro-it.svg" },
-    { titulo: "It (Libro)", categoria: "libros", tipo: "Libro", poster: "portadas/libro-it.svg" },
+    { titulo: "It (Libro)", categoria: "it", subtipo: "libro", tipo: "Libro", poster: "portadas/libro-it.webp" },
+    { titulo: "It (Libro)", categoria: "libros", tipo: "Libro", poster: "portadas/libro-it.webp" },
 
     // --- DISNEY ANIMATION (con filtros por década) ---
     { titulo: "Raya y El Último Dragón", categoria: "disney-animation", subtipo: "2020", tipo: "Película", fichaTecnicaId: "raya-ultimo-dragon", poster: "https://image.tmdb.org/t/p/original/5nVhgCzxKbK47OLIKxCR1syulOn.jpg" },
@@ -3025,7 +3025,7 @@ const colecciones = [
         id: "libros",
         titulo: "Libros",
         categoria: "explorar",
-        poster: "portadas/libro-it.svg",
+        poster: "portadas/libro-it.webp",
         esContenedor: true,
         etiqueta: "Colección",
         peliculas: []
