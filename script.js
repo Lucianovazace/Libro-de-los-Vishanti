@@ -337,6 +337,8 @@ const listaMedia = [
     { titulo: "It Parte Dos", categoria: "it", subtipo: "muschietti", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYzUxM2VhOGItZTY2My00OTA4LWI4NjUtMDA5YWJjM2M2NDJjXkEyXkFqcGc@.V1.jpg" },
     { titulo: "It: Bienvenidos a Derry", categoria: "it", subtipo: "muschietti", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/nyy3BITeIjviv6PFIXtqvc8i6xi.jpg" },
     { titulo: "It (1990)", categoria: "it", subtipo: "clasico", tipo: "Miniserie", poster: "https://m.media-amazon.com/images/M/MV5BZDFhODExOTctNTFkZS00NjE1LWE2MWMtY2Q1ZThhMGY5NjJkXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "It (Libro)", categoria: "it", subtipo: "libro", tipo: "Libro", poster: "portadas/libro-it.svg" },
+    { titulo: "It (Libro)", categoria: "libros", tipo: "Libro", poster: "portadas/libro-it.svg" },
 
     // --- DISNEY ANIMATION (con filtros por década) ---
     { titulo: "Raya y El Último Dragón", categoria: "disney-animation", subtipo: "2020", tipo: "Película", fichaTecnicaId: "raya-ultimo-dragon", poster: "https://image.tmdb.org/t/p/original/5nVhgCzxKbK47OLIKxCR1syulOn.jpg" },
@@ -3017,6 +3019,15 @@ const colecciones = [
         categoria: "explorar",
         poster: "https://wallpapercat.com/w/full/e/c/a/126634-1152x2048-mobile-hd-la-la-land-wallpaper-photo.jpg",
         esContenedor: true,
+        peliculas: []
+    },
+    {
+        id: "libros",
+        titulo: "Libros",
+        categoria: "explorar",
+        poster: "portadas/libro-it.svg",
+        esContenedor: true,
+        etiqueta: "Colección",
         peliculas: []
     },
     {
@@ -6016,6 +6027,7 @@ function renderizarColecciones() {
         "oscar-anios": "seccion-oscar-2020-actualidad",
         "directores": "seccion-directores",
         "actores": "seccion-actores",
+        "libros": "seccion-libros",
         "peliculas-explorar": "seccion-peliculas-explorar",
         "genero-explorar": "seccion-genero-explorar",
         "terror-explorar": "seccion-terror-explorar",
@@ -7177,6 +7189,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ordenarGrillaAlfabeticamente('sitcoms');
     ordenarGrillaAlfabeticamente('franquicias');
     ordenarGrillaAlfabeticamente('actores');
+    ordenarGrillaAlfabeticamente('libros');
     actualizarTodasLasColecciones();
 
     contenidoInicialRenderizado = true;
@@ -8275,6 +8288,13 @@ const btnVolverIt = document.getElementById('btn-volver-it');
 if(btnVolverIt) {
     btnVolverIt.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-franquicias'));
+    });
+}
+
+const btnVolverLibros = document.getElementById('btn-volver-libros');
+if(btnVolverLibros) {
+    btnVolverLibros.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-explorar'));
     });
 }
 
