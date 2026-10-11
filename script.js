@@ -2202,11 +2202,11 @@ const listaMedia = [
     { titulo: "DC Coleccion Novelas Graficas #13: Superman: Tierra Uno - Parte 2", categoria: "elseworlds-otros-dc", editorial: "salvat", subtipo: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2f/10/a4f721976ec04c89916d944dd31357a6.jpg" },
     { titulo: "Batman: Tierra Uno", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_tierra_uno_integral_cov1-3044abd6917e90e8d116426961861947-640-0.webp" },
     { titulo: "Wonder Woman: Tierra Uno", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/wonder_woman_earth_one_cov_arg1-4ca4685a16c11682fa15952955499162-1024-1024.webp" },
-    { titulo: "DCeased: Virus Zombies", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman,superman,liga", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/dceased_cov_arg1-c8cfecb30f36b9f6c616360714188285-1024-1024.webp" },
+    { titulo: "DCeased: Virus Zombie", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman,superman,liga", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/dceased_cov_arg1-c8cfecb30f36b9f6c616360714188285-1024-1024.webp" },
     { titulo: "DCeased: Imposibles de Matar", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman,superman,liga", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/dceased_vol2_cov_arg11-862a33364e654d477416106460352700-1024-1024.webp" },
     { titulo: "DCeased: Esperanza en El Fin del Mundo", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman,superman,liga", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/dceased-esperanza-en-el-fin-del-mundo-cov-arg1-2ea1df4a19843948c016287422176344-640-0.webp" },
     { titulo: "DCeased: Planeta Muerto", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman,superman,liga", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/dceased-planeta-muerto-cov-arg1-a2be88bd9c310197bf16209483078230-1024-1024.webp" },
-    { titulo: "DCeased: La Guerra de Los Dioses Zombies", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman,superman,liga", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/dceased_-_la_guerra_de_los_dioses_zombies-820ed271fc0611acd217292743548462-1024-1024.webp" },
+    { titulo: "DCeased: La Guerra de los Dioses Zombie", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman,superman,liga", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/dceased_-_la_guerra_de_los_dioses_zombies-820ed271fc0611acd217292743548462-1024-1024.webp" },
     { titulo: "Kingdom Come", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman,superman,liga", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/kingdom-come-cov-arg-11-ee7ba9ae124d4a0ada16130629664661-1024-1024.webp" },
     { titulo: "DC Coleccion Novelas Graficas #30: JLA: El Clavo", categoria: "elseworlds-otros-dc", editorial: "salvat", subtipo: "liga,batman,superman,wonder-woman,flash-barry-allen,green-lantern-hal-jordan", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2c/37/18d7e71861ee425e8bc319876d64c68e.jpg" },
     { titulo: "DC Coleccion Novelas Graficas #50: Batman: La Maldicion que Cayó Sobre Gotham", categoria: "elseworlds-otros-dc", editorial: "salvat", subtipo: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/25/0a/339f1ad5ed8e45778c2cbfdb8e95bc66.jpg" },
@@ -22385,6 +22385,8 @@ function recoNormalizarClave(titulo) {
 // (ej. "Batman: Hush" de Ovni = "Batman: Silencio" de Salvat). Cada grupo
 // lista las claves normalizadas (ver recoNormalizarClave) que son lo mismo.
 const EQUIV_ALIAS_GRUPOS = [
+    ['dceased virus zombies', 'dceased virus zombie'],
+    ['dceased la guerra de los dioses zombies', 'dceased la guerra de los dioses zombie'],
     ['la muerte de superman', 'superman la muerte de superman'],
     ['civil war', 'guerra civil'],
     ['dinastia m', 'dinastia de m'],
