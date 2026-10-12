@@ -2303,6 +2303,7 @@ const listaMedia = [
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XXVIII: Pantera Negra: La Furia de La Pantera", categoria: "marvel-edad-bronce", editorial: "panini", subtipo: "black-panther", tipo: "Cómic", poster: "https://i1.whakoom.com/large/06/28/130de06be58d41718f6d89de2bbfd770.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XXX: Capitan America y Falcon: Imperio Secreto", categoria: "marvel-edad-bronce", editorial: "panini", subtipo: "capitan-america,falcon", tipo: "Cómic", poster: "https://i1.whakoom.com/small/11/35/921a24509b8a44b693110e2fc0c71e20.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XL: Daredevil: Marcado Para El Asesinato", categoria: "marvel-edad-bronce", editorial: "panini", subtipo: "daredevil", tipo: "Cómic", poster: "https://i1.whakoom.com/small/18/31/19d0e7b0d6c24e72b5f1bc8d602234a1.jpg" },
+    { titulo: "The Best of Marvel #12: Daredevil: Marcado por la Muerte", categoria: "marvel-edad-bronce", editorial: "salvat", subtipo: "daredevil", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/08/Best-of-marvel-12.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XXVI: Doctor Strange: Realidad Paralela", categoria: "marvel-edad-bronce", editorial: "panini", subtipo: "doctor-strange", tipo: "Cómic", poster: "https://i1.whakoom.com/small/1d/00/137b87d3751d457e972a5384c3df021e.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XXXI: Deathlok: Origenes", categoria: "marvel-edad-bronce", editorial: "panini", subtipo: "deathlok", tipo: "Cómic", poster: "https://i1.whakoom.com/small/2f/30/db8fa610cd7d45af8b8d08cc91b9fdd1.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XXXII: Warlock: Primera Parte", categoria: "marvel-edad-bronce", editorial: "panini", subtipo: "warlock", tipo: "Cómic", poster: "https://i1.whakoom.com/small/09/2a/34780793e2144723a953fbcaba5608df.jpg" },
@@ -2334,6 +2335,9 @@ const listaMedia = [
     { titulo: "Los Heroes Mas Poderosos de Marvel #7: Hawkeye", categoria: "marvel-edad-bronce", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/3d/23/cdd0c5b168934b8f94d49d25bea55dbf.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #17: El Halcon", categoria: "marvel-edad-bronce", editorial: "salvat", subtipo: "falcon", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1c/3a/9855c4087fb14e148c2ea8a62992f8eb.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #83: Beta Ray Bill", categoria: "marvel-edad-bronce", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/3c/32/7a75451283e343a5b0af9f1690d4408b.jpg" },
+    { titulo: "The Best of Marvel #4: Los 4 Fantásticos: El Juicio de Galactus", categoria: "marvel-edad-bronce", editorial: "salvat", subtipo: "cuatro-fantasticos", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/05/Best-of-marvel-04.jpg" },
+    { titulo: "The Best of Marvel #11: Thor: La Balada de Bill Rayos Beta", categoria: "marvel-edad-bronce", editorial: "salvat", subtipo: "thor", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/08/Best-of-marvel-11.jpg" },
+    { titulo: "The Best of Marvel #13: Thor: La Saga de Surtur 1", categoria: "marvel-edad-bronce", editorial: "salvat", subtipo: "thor", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/09/Best-of-marvel-13.jpg" },
     { titulo: "Must Have #28: The New Mutants: La Saga del Oso Mistico", categoria: "marvel-edad-bronce", editorial: "panini", subtipo: "new-mutants", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0a/31/f92dc8c041734788b5601f46b9fa5d9d.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #72: Los Nuevos Mutantes", categoria: "marvel-edad-bronce", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/31/0f/0991e92845c54e84bd2f685a776eadd7.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #78: Alpha Flight", categoria: "marvel-edad-bronce", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/3a/2a/dd98fe37e32d425491f45348dcc7f835.jpg" },
@@ -2344,6 +2348,7 @@ const listaMedia = [
     { titulo: "Los Heroes Mas Poderosos de Marvel #63: Avengers Costa Oeste", categoria: "marvel-edad-bronce", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2e/3d/62de39e70d8048da9b4ce5f4615dcac1.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #45: Rocket Racoon", categoria: "marvel-edad-bronce", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/23/3a/27b7a79b9eeb45b29acdfd3c1cd62ac2.jpg" },
     // --- EDAD MODERNA I ---
+    { titulo: "The Best of Marvel #6: Hulk de John Byrne", categoria: "marvel-edad-moderna-1", editorial: "salvat", subtipo: "hulk", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/07/Best-of-marvel-06.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #20: Punisher", categoria: "marvel-edad-moderna-1", editorial: "salvat", subtipo: "punisher", tipo: "Cómic", poster: "https://i1.whakoom.com/large/13/26/4d625333c1fc48d7bbaa70318a890605.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #37: Avispa", categoria: "marvel-edad-moderna-1", editorial: "salvat", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/large/33/07/ff78704baaac4ef2820d2c1835576d87.jpg" },
     { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #10: Wolverine: Arma X", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "wolverine", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2024/04/01-0002.webp" },
@@ -2364,8 +2369,10 @@ const listaMedia = [
     { titulo: "Los Heroes Mas Poderosos de Marvel #51: She-Hulk", categoria: "marvel-edad-moderna-1", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/21/35/bc8e62a63f6446469eb7100631af88c4.jpg" },
     { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #8: Daredevil: Renacido", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "daredevil,kingpin", tipo: "Cómic", poster: "https://i1.whakoom.com/large/15/2f/5ec2a4879a3f4c738d8b91e0c5167270.jpg" },
     { titulo: "Marvel Excelsior #5: Daredevil: Elektra Vive De Nuevo + Amor y Furia", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "daredevil", tipo: "Cómic", poster: "https://i1.whakoom.com/small/2e/2f/6abe127089044ad280ec3e89f3e9cd4c.jpg" },
+    { titulo: "The Best of Marvel #9: Los Vengadores: Asalto a la Mansión", categoria: "marvel-edad-moderna-1", editorial: "salvat", subtipo: "capitan-america,iron-man,thor", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/07/Best-of-marvel-09.jpg" },
     { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #9: El Asombroso Spider-Man: La Ultima Caceria de Kraven", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "spider-man,kraven", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2023/10/la-ultima-caceria.webp" },
     { titulo: "Must Have #24: Spider-Man: La Ultima Caceria de Kraven", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "spider-man,kraven", tipo: "Cómic", poster: "https://i1.whakoom.com/small/05/27/a52f3376bc6d4a399235b860ee1a5838.jpg" },
+    { titulo: "The Best of Marvel #8: Spider-Man: La Última Cacería de Kraven", categoria: "marvel-edad-moderna-1", editorial: "salvat", subtipo: "spider-man", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/07/Best-of-marvel-08.jpg" },
     { titulo: "Marvel Excelsior #24: Avengers: La Busqueda de Thanos", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/15/24/4eea9fe8200645cd9b0780b5fe97a48b.jpg" },
     { titulo: "Marvel Excelsior #14: Avengers: El Guantelete del Infinito", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_934714-MLA80642441836_112024-O.webp" },
     { titulo: "Must Have #17: El Guantelete del Infinito", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/26/00/a6d9aa3f831348d5b119a5de12f8fc9c.jpg" },
@@ -2443,7 +2450,9 @@ const listaMedia = [
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #51: Capitan America: Soldado de Invierno Parte II", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/small/08/2f/c8f0d104deba4decb33fc526268726a2.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #43: Iron Man: Extremis", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "iron-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/2a/2c/cec1b0b1f43a427c9570bf394765cf52.jpg" },
     { titulo: "Must Have #22: Iron Man: Extremis", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "iron-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/20/00/81c68c4b7c5d457aa7d05e72ef942f70.jpg" },
+    { titulo: "The Best of Marvel #5: Iron Man: Las Cinco Pesadillas", categoria: "marvel-edad-moderna-2", editorial: "salvat", subtipo: "iron-man", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/05/Best-of-marvel-05.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #38: Ghost Rider: La Ruta de La Perdicion", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "ghost-rider", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0c/21/70bdc1846e534743a49e0c3eb89f7ef7.jpg" },
+    { titulo: "The Best of Marvel #10: Motorista Fantasma: Autopista al Infierno", categoria: "marvel-edad-moderna-2", editorial: "salvat", subtipo: "ghost-rider", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/08/Best-of-marvel-10.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #38: Ghost Rider", categoria: "marvel-edad-moderna-2", editorial: "salvat", subtipo: "ghost-rider", tipo: "Cómic", poster: "https://i1.whakoom.com/large/27/1c/8b8b95699c9440c584ebfcdf7a077235.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #47: Nova", categoria: "marvel-edad-moderna-2", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/18/1d/05fbb0c593e0496a81a9a77eae2c5026.jpg" },
     { titulo: "Must Have #36: Annihilation", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "annihilation", tipo: "Cómic", poster: "https://i1.whakoom.com/small/04/0b/7d2bc64d019b476ebcb7fbfb9786175f.jpg" },
@@ -2640,6 +2649,9 @@ const listaMedia = [
     { titulo: "El Inmortal Hulk #10: Del Infierno y de La Muerte", categoria: "marvel-actualidad", editorial: "panini", tipo: "Cómic", poster: "https://i1.whakoom.com/large/3e/34/86c3d9df49cf4448b08a896d5761503c.jpg" },
     { titulo: "El Inmortal Hulk #11: Relatos Apócrifos", categoria: "marvel-actualidad", editorial: "panini", tipo: "Cómic", poster: "https://i1.whakoom.com/large/13/1e/2c45f6696b864009a4e92bb9e42eba29.jpg" },
     { titulo: "El Inmortal Hulk #12: Grandes Poderes", categoria: "marvel-actualidad", editorial: "panini", tipo: "Cómic", poster: "https://i1.whakoom.com/large/16/12/94cdd70f19be48c8b824ed479ef65ee7.jpg" },
+    { titulo: "The Best of Marvel #3: Los Vengadores: La Hueste Final", categoria: "marvel-actualidad", editorial: "salvat", subtipo: "iron-man,thor,hulk,capitan-america", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/04/Best-of-marvel-03.jpg" },
+    { titulo: "The Best of Marvel #2: X-Men: Dinastía de X / Potencias de X 1", categoria: "marvel-actualidad", editorial: "salvat", subtipo: "x-men", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/04/Best-of-marvel-02.jpg" },
+    { titulo: "The Best of Marvel #7: X-Men: Dinastía de X / Potencias de X 2", categoria: "marvel-actualidad", editorial: "salvat", subtipo: "x-men", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/07/Best-of-marvel-07.jpg" },
 
     // --- COLECCIÓN DEFINITIVA DE NOVELAS GRÁFICAS DE MARVEL (Salvat) ---
     { titulo: "Colección Definitiva de Novelas Gráficas de Marvel: #41", categoria: "marvel-novelas-graficas-definitiva", editorial: "salvat", subtipo: "marvel-zombies", tipo: "Cómic", poster: "https://www.quimeraquiroga.cl/cdn/shop/products/41_1200x1200.jpg?v=1629473875" },
@@ -2750,6 +2762,9 @@ const listaMedia = [
     { titulo: "Coleccion Spider-Man: Universo Araña #22: Spider-Men II: ¿Quien es el otro Miles?", categoria: "marvel-realidades-alternativas", editorial: "ovni", subtipo: "spider-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/22-spider-men_ii1-5dbf42398dce64bb6816838693878042-480-0.webp" },
     { titulo: "Coleccion Spider-Man: Universo Araña #3: Spider-Man: Gamerverse", categoria: "marvel-realidades-alternativas", editorial: "ovni", subtipo: "spider-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/03_gameverse_cov-111-57913c776b658f0fe316614916122722-1024-1024.webp" },
     { titulo: "Coleccion Spider-Man: Universo Araña #13: Spider-Man: ¿Que Pasaria Si...?", categoria: "marvel-realidades-alternativas", editorial: "ovni", subtipo: "spider-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/13_spider-man_que-hubiera_sucedido_si_cov1-c2fdd415ee5067bd8616693498589473-480-0.webp" },
+    { titulo: "The Best of Marvel #14: Spider-Man Noir: Origen", categoria: "marvel-realidades-alternativas", editorial: "salvat", subtipo: "spider-man", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/09/Best-of-marvel-14.jpg" },
+    { titulo: "The Best of Marvel #15: Masacre Mata el Universo Marvel", categoria: "marvel-realidades-alternativas", editorial: "salvat", subtipo: "deadpool", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/10/Best-of-marvel-15.jpg" },
+    { titulo: "The Best of Marvel #1: Spider-Man: Toda una Vida", categoria: "marvel-realidades-alternativas", editorial: "salvat", subtipo: "spider-man", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/03/BOM-01.jpg" },
 ];
 
 // ==========================================
@@ -5161,6 +5176,17 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "marvel-best-of",
+        etiqueta: "Colección",
+        titulo: "The Best of Marvel (Salvat)",
+        categoria: "colecciones-hub",
+        poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/03/BOM-01.jpg",
+        esContenedor: true,
+        categoriaEditorial: "marvel",
+        progresoPatron: "^The Best of Marvel #(\\d+)",
+        peliculas: []
+    },
+    {
         id: "dc-camino-heroe",
         titulo: "El Camino del Héroe",
         categoria: "dc-comics-hub",
@@ -6067,6 +6093,7 @@ function renderizarColecciones() {
         "superman-nuevos-52": "seccion-superman-nuevos-52",
         "avengers-mas-poderosos": "seccion-avengers-mas-poderosos",
         "superior-spider-man": "seccion-superior-spider-man",
+        "marvel-best-of": "seccion-marvel-best-of",
         "dc-comics-hub": "seccion-dc-comics-hub",
         "dc-camino-heroe": "seccion-dc-camino-heroe",
         "dc-orden-lectura": "seccion-dc-orden-lectura",
@@ -7022,6 +7049,17 @@ function renderizarContenido() {
                 if (grillaSuperiorSpiderMan) grillaSuperiorSpiderMan.insertAdjacentHTML('beforeend', htmlTarjetaSuperiorSpiderMan);
             }
 
+            // Colección The Best of Marvel (Salvat): orden simple por número de entrega.
+            const matchBestOfMarvel = item.titulo.match(/^The Best of Marvel #(\d+)/i);
+            if (matchBestOfMarvel) {
+                const htmlTarjetaBestOfMarvel = htmlTarjeta.replace(
+                    'class="tarjeta-media"',
+                    `class="tarjeta-media" data-bom-num="${matchBestOfMarvel[1]}"`
+                );
+                const grillaBestOfMarvel = document.getElementById("grilla-marvel-best-of");
+                if (grillaBestOfMarvel) grillaBestOfMarvel.insertAdjacentHTML('beforeend', htmlTarjetaBestOfMarvel);
+            }
+
             // Colecciones de orden único (Flash de Messner-Loebs y las de
             // Renacimiento/JLI/Leyendas): sin filtros, cada una con su lista fija
             // de títulos en el orden correcto de lectura (COLECCIONES_LISTA_FIJA).
@@ -7164,6 +7202,13 @@ function ordenarGrillaPorNumeroSalvat() {
         const tarjetasSuperiorSpiderMan = Array.from(contenedorSuperiorSpiderMan.querySelectorAll('.tarjeta-media'));
         tarjetasSuperiorSpiderMan.sort((a, b) => parseInt(a.getAttribute('data-ssm-num')) - parseInt(b.getAttribute('data-ssm-num')));
         tarjetasSuperiorSpiderMan.forEach(t => contenedorSuperiorSpiderMan.appendChild(t));
+    }
+
+    const contenedorBestOfMarvel = document.getElementById('grilla-marvel-best-of');
+    if (contenedorBestOfMarvel) {
+        const tarjetasBestOfMarvel = Array.from(contenedorBestOfMarvel.querySelectorAll('.tarjeta-media'));
+        tarjetasBestOfMarvel.sort((a, b) => parseInt(a.getAttribute('data-bom-num')) - parseInt(b.getAttribute('data-bom-num')));
+        tarjetasBestOfMarvel.forEach(t => contenedorBestOfMarvel.appendChild(t));
     }
     const contenedorBatmanYRobinNuevos52 = document.getElementById('grilla-batman-y-robin-nuevos-52');
     if (contenedorBatmanYRobinNuevos52) {
@@ -21534,6 +21579,13 @@ if(btnVolverAvengersMasPoderosos) {
 const btnVolverSuperiorSpiderMan = document.getElementById('btn-volver-superior-spider-man');
 if(btnVolverSuperiorSpiderMan) {
     btnVolverSuperiorSpiderMan.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolverMarvelBestOf = document.getElementById('btn-volver-marvel-best-of');
+if(btnVolverMarvelBestOf) {
+    btnVolverMarvelBestOf.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
     });
 }
