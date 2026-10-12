@@ -22567,6 +22567,13 @@ const RECOPILA_OVNI = {
     "Superman: La Saga de Superboy": "Action Comics #587-593, Superman #5-9 y Legion of Super-Heroes #37-38",
     "Liga de La Justicia Vol. 3: Hawkworld": "Justice League #13-18 y Justice League Annual #1",
     "Batman: Tierra Uno": "Batman: Earth One vol. 1-3",
+    "Batman de Grant Morrison Vol. 3: Batman R.I.P.": "DC Universe #0 y Batman #676-683",
+    "Batman Por Norm Breyfogle Vol. 6": "Batman #475-476, Detective #641-642, Shadow of the Bat #1-5 y 13, Batman: Holy Terror",
+    "Batman: Gargola de Gotham": "Batman: Gargoyle of Gotham #1-4",
+    "Batman: La Carta Ganadora": "Batman: The Brave and the Bold #1-2, 5 y 9",
+    "Batman: Luz de Dia": "Batman #1-6",
+    "Batman: No Man's Land Vol. 6: Camino a Tierra de Nadie": "Azrael #47-50, Batman #560-562, Detective #727-729, Shadow of the Bat #80-82, No Man's Land #1",
+    "Nightwing: Año Uno": "Nightwing #101-106",
     "Esenciales DC #25: ¡Invasión! (Ovni)": "Invasion! #1-3"
 };
 
@@ -22635,6 +22642,12 @@ const RECOPILA_OVNI_EXTRA = {
     "Sandman Vol. 10: El Velatorio (Ovni)": "The Sandman #70-75",
     "Sandman Vol. 11: Noches Eternas (Ovni)": "Sandman: Endless Nights #1-6",
     "Watchmen (Ovni)": "Watchmen #1-12",
+    "Liga de la Justicia Internacional Vol. 11 (Final, Ovni)": "Formerly Known as the Justice League #1-6 y JLA Classified #4-9",
+    "Batman: Asilo Arkham - Edición Deluxe (Ovni)": "Arkham Asylum: Absolute Edition",
+    "Transmetropolitan Vol. 3: La Nueva Escoria (Ovni)": "Transmetropolitan #19-31 y Vertigo: Winter's Edge #2-3",
+    "Saga de Swamp Thing Libro 6 (Ovni)": "Swamp Thing #57-64 y DC Comics Presents #85",
+    "Question Vol. 5: Pacificador (Ovni)": "The Question #29-36 y Green Arrow Annual #3",
+    "Sandman: Muerte (Ovni)": "Death: High Cost of Living #1-3, Time of Your Life #1-3, Death Talks About Life, The Wheel, A Winter's Tale",
     "Batman: El Mundo": "Batman: The World (con historia inédita para la edición argentina)",
     "Superman: Año Uno": "Superman: Year One #1-3"
 };
@@ -22642,10 +22655,10 @@ const RECOPILA_OVNI_EXTRA = {
 
 // Tomos cuya página de Ovni todavía no pude encontrar o leer (buscar de nuevo):
 const RECOPILA_OVNI_PENDIENTES = [
-    "Batman: Tiempo Muerto", "Nightwing: Año Uno (Ovni)", "Titanes: Fuera de las Sombras (sin Recopila en la página)", "One Operation Joker Vol. 1 (sin Recopila)", "Harley Quinn Vol. 2 y Yo Soy Suicida: sin Recopila en la página",
-    "Batman de Grant Morrison Vol. 2: La Resurrección de Ra's Al Ghul", "Batman de Grant Morrison Vol. 3: Batman R.I.P.",
+    "Batman: Tiempo Muerto", "Titanes: Fuera de las Sombras (sin Recopila en la página)", "One Operation Joker Vol. 1 (sin Recopila)", "Harley Quinn Vol. 2 y Yo Soy Suicida: sin Recopila en la página",
+    "Batman de Grant Morrison Vol. 2: La Resurrección de Ra's Al Ghul",
     "Doom Patrol: Flex Mentallo", "Batman: No Man's Land Vol. 2: Legado", "Batman: No Man's Land Vol. 5: Cataciclismo Parte III",
-    "Batman: No Man's Land Vol. 6: Camino a Tierra de Nadie", "Leyendas del Caballero Oscuro #9 Máscaras, #11 Santuarios, #12 Calor",
+    "Leyendas del Caballero Oscuro #9 Máscaras, #11 Santuarios, #12 Calor",
     "JLA: Justicia / JSA: Kingdom Come / Joker: Asylum / Plastic Man (solo Salvat: confirmar con ECC/Salvat)",
     "Salvat NG #70 Batman: Presagios y #71 Batman: Forajidos (identificar historia original)"
 ];
