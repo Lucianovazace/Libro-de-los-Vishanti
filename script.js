@@ -22503,6 +22503,18 @@ const RECOPILA_OVNI = {
     "Animal Man de Grant Morrison Vol 3": "Animal Man #18-26",
     "Liga de La Justicia: Infinita": "Justice League Infinity #1-7",
     "Liga de La Justicia: Ultimo Viaje": "Justice League: Last Ride #1-7",
+    "Batman: Knightfall #2: La Caída del Caballero": "Detective #663-666, Batman #497-500, Showcase '93 #7-8, Shadow of the Bat #16-18, Batman Villains Secret Files #1",
+    "Batman: Knightfall #3: La Cruzada del Caballero I": "Detective #667-670, Robin #1-2, Shadow of the Bat #19-20, Batman #501-504, Catwoman #6-7",
+    "Batman: No Man's Land Vol. 3: Cataciclismo Parte I": "Detective #719-720, Shadow of the Bat #73-74, Nightwing #19-20, Batman #553, Azrael #40 y más",
+    "Batman: No Man's Land Vol. 4: Cataciclismo Parte II": "Batman #554-555, Huntress & Spoiler #1, Catwoman #57, Detective #721-722, Arkham Asylum: Tales of Madness #1, Robin #53-54, Shadow of the Bat #75-76",
+    "Batman: Ciudad Rota": "Batman #620-625 = Salvat HyV #15",
+    "Batman: Victoria Oscura": "Batman: Dark Victory #1-13 (Loeb/Sale)",
+    "Catwoman: Si Vas a Roma": "Catwoman: When in Rome #1-6 y epílogo de Dark Victory #13",
+    "Lobo: El Ultimo Czarniano": "Lobo #1-4 y Lobo's Back #1-4",
+    "Lobo: Greatest Hits": "páginas de Lobo: Greatest Hits, Omega Men, Superman, Adventures of Superman, L.E.G.I.O.N., JLI y Mister Miracle",
+    "Batman/Catwoman": "Batman/Catwoman #1-12 y Special #1 (Tom King, 2020-22)",
+    "Doom Patrol Libro Dos": "Doom Patrol #30-41",
+    "Animal Man de Grant Morrison Vol. 2": "Secret Origins #39, Animal Man #10-17",
     "Esenciales DC #25: ¡Invasión! (Ovni)": "Invasion! #1-3"
 };
 
@@ -22519,9 +22531,27 @@ const RECOPILA_OVNI_EXTRA = {
     "Batman: La Trilogía del Demonio": "tres novelas gráficas de Ra's al Ghul = Salvat Esenciales #22",
     "Batman: La Era Oscura": "Batman: Dark Age #1-6",
     "Superman/Batman: Los Mejores del Mundo (Gibbons/Rude)": "Superman/Batman: World's Finest #1-3 (1990)",
+    "Doom Patrol Libro Tres (Ovni)": "Doom Patrol #42-53",
+    "Doom Patrol Libro Cuatro (Ovni)": "Doom Patrol #54-63",
+    "Estado Futuro: Batman Vol. 2 (Ovni)": "Future State: The Next Batman #1-4 y Future State: Batman/Superman #2",
+    "Batman: Camino a la Guerra del Joker (Ovni)": "Batman #85-94, Detective Comics #1020-1024 (2019-20)",
+    "Batman/Superman: Los Mejores del Mundo Vol. 2 (Ovni)": "World's Finest #6-11 (Waid)",
+    "DC Comics Presenta: Batman: Año Uno (Ovni)": "Batman #404-407 (misma historia que Batman: Año Uno)",
+    "Estado Futuro: Superman/Wonder Woman, Batman Vol. 1 y otros": "ver listado de Ovni",
     "Batman: El Mundo": "Batman: The World (con historia inédita para la edición argentina)",
     "Superman: Año Uno": "Superman: Year One #1-3"
 };
+
+
+// Tomos cuya página de Ovni todavía no pude encontrar o leer (buscar de nuevo):
+const RECOPILA_OVNI_PENDIENTES = [
+    "Batman: Tiempo Muerto", "Nightwing: Año Uno (Ovni)",
+    "Batman de Grant Morrison Vol. 2: La Resurrección de Ra's Al Ghul", "Batman de Grant Morrison Vol. 3: Batman R.I.P.",
+    "Doom Patrol: Flex Mentallo", "Batman: No Man's Land Vol. 2: Legado", "Batman: No Man's Land Vol. 5: Cataciclismo Parte III",
+    "Batman: No Man's Land Vol. 6: Camino a Tierra de Nadie", "Leyendas del Caballero Oscuro #9 Máscaras, #11 Santuarios, #12 Calor",
+    "JLA: Justicia / JSA: Kingdom Come / Joker: Asylum / Plastic Man (solo Salvat: confirmar con ECC/Salvat)",
+    "Salvat NG #70 Batman: Presagios y #71 Batman: Forajidos (identificar historia original)"
+];
 
 function recoNormalizarClave(titulo) {
     let t = String(titulo || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
