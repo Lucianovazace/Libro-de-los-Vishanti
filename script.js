@@ -22434,6 +22434,8 @@ const EQUIV_ALIAS_PARTES = [
     { todo: ['batman el largo halloween'], partes: [['batman el largo halloween parte 1'], ['batman el largo halloween parte 2']] },
     { todo: ['planeta hulk'], partes: [['el increible hulk planeta hulk parte 1'], ['el increible hulk planeta hulk parte 2']] },
     { todo: ['marvel ultimate edicion integral 3 the ultimates 01 vengadores'], partes: [['los ultimates superhumano'], ['los ultimates seguridad nacional']] },
+    // Ovni incluye además Legends #1-6; el Salvat (HyV #45) es Suicide Squad #1-8 + Secret Origins #14
+    { todo: ['leyendas escuadron suicida'], partes: [['escuadron suicida prueba de fuego']] },
     { todo: ['batman el detective'], partes: [['batman detective parte 1'], ['batman detective parte 2']] },
     { todo: ['dc la nueva frontera'], partes: [['dc la nueva frontera parte 1'], ['dc la nueva frontera parte 2']] },
     { todo: [], partes: [['jla ano uno parte 1', 'jla ano uno parte uno'], ['jla ano uno parte 2', 'jla ano uno parte dos']] }
