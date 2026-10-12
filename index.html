@@ -27,6 +27,7 @@
         <button id="btn-biblioteca" class="btn-nav" style="background-color: #28a745;">Mi Biblioteca 📚</button>
         <button id="btn-calendario" class="btn-nav" style="background-color: #ff9f43;">Calendario 📅</button>
         <button id="btn-recomendaciones" class="btn-nav" style="background-color: #8e44ad;">¿Qué leo? 🎯</button>
+        <button id="btn-que-miro" class="btn-nav" style="background-color: #c0392b;">¿Qué miro? 🍿</button>
         <button id="btn-logros" class="btn-nav" style="background-color: #f1c40f; color: #1a1d24;">Logros 🏆</button>
         <button id="btn-comics" class="btn-nav" style="background-color: #e74c3c;">Cómics 💥</button>
         <button id="btn-juegos" class="btn-nav" style="background-color: #16a085;">Juegos 🎮</button>
@@ -12361,6 +12362,21 @@
             <button class="btn-filtro-reco" data-criterio="tengo">Los tengo sin leer</button>
         </div>
         <div class="grilla-biblioteca" id="grilla-recomendaciones"></div>
+    </section>
+
+    <!-- SECCIÓN: RECOMENDACIONES DE PELÍCULAS Y SERIES -->
+    <section id="seccion-que-miro" class="oculto">
+        <h2>¿Qué miro? 🍿</h2>
+        <p id="que-miro-aviso" style="font-size:12px; color:#aaa; margin-bottom:12px;"></p>
+        <div class="filtros-seccion">
+            <button class="btn-filtro-miro activo" data-criterio="todas">Para vos</button>
+            <button class="btn-filtro-miro" data-criterio="saga">Siguiente de saga</button>
+            <button class="btn-filtro-miro" data-criterio="afinidad">Actor / director / estudio</button>
+            <button class="btn-filtro-miro" data-criterio="premios">Oscar</button>
+            <button class="btn-filtro-miro" data-criterio="Película">Solo películas</button>
+            <button class="btn-filtro-miro" data-criterio="Serie">Solo series</button>
+        </div>
+        <div class="grilla-biblioteca" id="grilla-que-miro"></div>
     </section>
 
     <!-- SECCIÓN: CALENDARIO -->

@@ -7279,6 +7279,8 @@ function propagarTengoAVistos(titulo) {
     if (bib && !bib.classList.contains('oculto') && typeof generarBiblioteca === 'function') generarBiblioteca();
     const secReco = document.getElementById('seccion-recomendaciones');
     if (secReco && !secReco.classList.contains('oculto') && typeof renderizarRecomendaciones === 'function') renderizarRecomendaciones();
+    const secMiro = document.getElementById('seccion-que-miro');
+    if (secMiro && !secMiro.classList.contains('oculto') && typeof renderizarQueMiro === 'function') renderizarQueMiro();
 }
 
 function sincronizarVistos() {
@@ -7379,6 +7381,10 @@ function sincronizarVistos() {
             const secReco = document.getElementById('seccion-recomendaciones');
             if (secReco && !secReco.classList.contains('oculto') && typeof renderizarRecomendaciones === 'function') {
                 renderizarRecomendaciones();
+            }
+            const secMiro = document.getElementById('seccion-que-miro');
+            if (secMiro && !secMiro.classList.contains('oculto') && typeof renderizarQueMiro === 'function') {
+                renderizarQueMiro();
             }
         });
     });
@@ -22673,6 +22679,188 @@ function renderizarRecomendaciones() {
             this.classList.add('activo');
             recoFiltroActivo = this.getAttribute('data-criterio');
             renderizarRecomendaciones();
+        });
+    });
+})();
+
+
+// ==========================================
+// RECOMENDADOR DE PELÍCULAS Y SERIES: "¿Qué miro?"
+// ==========================================
+// Misma idea que "¿Qué leo ahora?" pero con películas y series. Puntúa lo
+// que NO viste con 4 criterios + un bonus:
+//   1) SAGA:     siguiente título (por orden de la saga) donde ya viste algo.
+//   2) AFINIDAD: actores, directores y estudios de lo que viste (lo reciente pesa más).
+//   3) PREMIOS:  películas de las mismas ceremonias de los Oscar que ya viste.
+//   4) ORDEN:    el que viene justo después de lo último que viste en la misma lista.
+//   + bonus "a punto de completar" para listas vistas en un 70% o más.
+const MIRO_PESOS = { saga: 3, afinidad: 2, premios: 1.5, orden: 2, completar: 1 };
+// Categorías que son sagas / universos con orden propio (el orden de listaMedia es el de visionado)
+const MIRO_SAGAS = {
+    'mcu-infinito': 'MCU: Saga del Infinito', 'mcu-multiverso': 'MCU: Saga del Multiverso', 'doomsday': 'MCU: Doomsday',
+    'sw-liveaction': 'Star Wars: Live Action', 'sw-episodios': 'Star Wars: Episodios', 'sw-animacion': 'Star Wars: Animación',
+    'dceu-principal': 'DCEU', 'dceu-snyder': 'Snyderverse', 'dcu': 'DCU', 'dc-multiverso': 'DC Multiverso', 'the-batman': 'The Batman',
+    'fox-xmen': 'X-Men (Fox)', 'fox-ff': 'Los 4 Fantásticos (Fox)', 'sony-ssu': 'Universo Spider-Man de Sony',
+    'sony-tobey': 'Spider-Man (Tobey)', 'sony-andrew': 'The Amazing Spider-Man', 'matrix-saga': 'The Matrix',
+    'saga-halloween': 'Saga Halloween', 'it': 'It', 'pokemon-canon': 'Pokémon (canon)', 'marvel-animacion': 'Marvel Animación',
+    'joker': 'Joker', 'game-of-thrones': 'Game of Thrones'
+};
+const MIRO_TIPOS = new Set(['Película', 'Serie', 'Miniserie']);
+
+function miroNombreCategoria(cat) {
+    if (MIRO_SAGAS[cat]) return MIRO_SAGAS[cat];
+    const c = (typeof colecciones !== 'undefined') ? colecciones.find(x => x.id === cat) : null;
+    if (c && c.titulo) return c.titulo;
+    return cat.replace(/-/g, ' ').replace(/\b\w/g, m => m.toUpperCase());
+}
+
+function calcularQueMiro(vistosSet, historial, hoyMs) {
+    // Catálogo único por título, con las categorías donde aparece
+    const porTitulo = new Map();
+    const listas = {}; // categoria -> [titulo] en orden
+    listaMedia.forEach(it => {
+        if (!MIRO_TIPOS.has(it.tipo)) return;
+        let e = porTitulo.get(it.titulo);
+        if (!e) { e = { titulo: it.titulo, poster: it.poster, tipo: it.tipo === 'Miniserie' ? 'Serie' : it.tipo, cats: new Set() }; porTitulo.set(it.titulo, e); }
+        if (!e.cats.has(it.categoria)) {
+            e.cats.add(it.categoria);
+            (listas[it.categoria] = listas[it.categoria] || []).push(it.titulo);
+        }
+    });
+    const visto = t => vistosSet.has(t);
+    const ultima = {};
+    Object.keys(historial || {}).forEach(f => (historial[f] || []).forEach(t => { if (!ultima[t] || f > ultima[t]) ultima[t] = f; }));
+    const pesoRec = t => {
+        const f = ultima[t];
+        if (!f) return 1;
+        const dias = Math.max(0, ((hoyMs || Date.now()) - new Date(f + 'T12:00:00').getTime()) / 86400000);
+        return 1 + Math.max(0, 1 - dias / 60);
+    };
+    const vistosCat = [...porTitulo.values()].filter(e => visto(e.titulo));
+    const cand = new Map();
+    const get = t => { if (!cand.has(t)) cand.set(t, { e: porTitulo.get(t), saga: 0, afinidad: 0, premios: 0, orden: 0, completar: 0, razones: [] }); return cand.get(t); };
+    const esOscar = c => /^oscar-/.test(c);
+
+    Object.entries(listas).forEach(([cat, tits]) => {
+        const nombre = miroNombreCategoria(cat);
+        const idxVistos = tits.map((t, i) => visto(t) ? i : -1).filter(i => i >= 0);
+        if (!idxVistos.length) return;
+        const cobertura = idxVistos.length / tits.length;
+        const maxVisto = Math.max(...idxVistos);
+        const pendientes = tits.map((t, i) => ({ t, i })).filter(x => !visto(x.t));
+        // 1) SAGA
+        if (MIRO_SAGAS[cat]) {
+            const base = 0.5 + cobertura;
+            pendientes.filter(x => x.i > maxVisto).slice(0, 3).forEach((x, k) => {
+                const c = get(x.t);
+                c.saga = Math.max(c.saga, base / (1 + k * 0.6));
+                c.razones.push({ txt: `🎬 ${k === 0 ? 'Siguiente' : 'Más adelante'} en «${nombre}» (${idxVistos.length}/${tits.length} vistos)` });
+            });
+            pendientes.filter(x => x.i < maxVisto).slice(0, 2).forEach(x => {
+                const c = get(x.t);
+                c.saga = Math.max(c.saga, base * 0.5);
+                c.razones.push({ txt: `🕳️ Hueco en «${nombre}»: te saltaste esta` });
+            });
+        }
+        // 4) ORDEN: primer pendiente tras cada visto de la lista
+        if (MIRO_SAGAS[cat]) idxVistos.forEach(i => {
+            const sig = pendientes.find(x => x.i > i);
+            if (!sig) return;
+            const c = get(sig.t);
+            const v = pesoRec(tits[i]) / 2;
+            if (v > c.orden) { c.orden = v; c.razones = c.razones.filter(r => !r.orden); c.razones.push({ orden: 1, txt: `🧭 En «${nombre}» viene después de «${tits[i]}»` }); }
+        });
+        // bonus completar
+        if (cobertura >= 0.7 && pendientes.length) {
+            pendientes.slice(0, 3).forEach(x => {
+                const c = get(x.t);
+                c.completar = Math.max(c.completar, cobertura);
+                c.razones.push({ txt: `🏁 Estás a punto de completar «${nombre}»` });
+            });
+        }
+    });
+
+    // 2) AFINIDAD (actores, directores, estudios) y 3) PREMIOS
+    const afin = {};
+    vistosCat.forEach(e => e.cats.forEach(c => { if (MIRO_SAGAS[c]) return; afin[c] = (afin[c] || 0) + pesoRec(e.titulo); }));
+    porTitulo.forEach(e => {
+        if (visto(e.titulo)) return;
+        let sA = 0, sP = 0, mejorA = null, mejorP = null;
+        e.cats.forEach(c => {
+            const a = afin[c] || 0;
+            if (a <= 0) return;
+            if (esOscar(c)) { sP += Math.log(1 + a); if (!mejorP || a > afin[mejorP]) mejorP = c; }
+            else { sA += Math.log(1 + a); if (!mejorA || a > afin[mejorA]) mejorA = c; }
+        });
+        if (sA > 0) {
+            const c = get(e.titulo);
+            c.afinidad = Math.min(sA, 3) / 3;
+            const n = vistosCat.filter(x => x.cats.has(mejorA)).length;
+            c.razones.push({ txt: `⭐ Seguís con «${miroNombreCategoria(mejorA)}» (${n} visto${n === 1 ? '' : 's'})` });
+        }
+        if (sP > 0) {
+            const c = get(e.titulo);
+            c.premios = Math.min(sP, 3) / 3;
+            const n = vistosCat.filter(x => x.cats.has(mejorP)).length;
+            c.razones.push({ txt: `🏆 Oscar ${miroNombreCategoria(mejorP)}: ya viste ${n} de esa ceremonia` });
+        }
+    });
+
+    const items = [...cand.values()].filter(c => !visto(c.e.titulo)).map(c => {
+        c.total = c.saga * MIRO_PESOS.saga + c.afinidad * MIRO_PESOS.afinidad + c.premios * MIRO_PESOS.premios +
+                  c.orden * MIRO_PESOS.orden + c.completar * MIRO_PESOS.completar;
+        return c;
+    }).filter(c => c.total > 0);
+    items.sort((a, b) => b.total - a.total);
+    return { items, totalVistos: vistosCat.length };
+}
+
+let miroFiltroActivo = 'todas';
+function renderizarQueMiro() {
+    const grilla = document.getElementById('grilla-que-miro');
+    const aviso = document.getElementById('que-miro-aviso');
+    if (!grilla) return;
+    const { items, totalVistos } = calcularQueMiro(titulosVistosGuardados, historialVistos, Date.now());
+    grilla.innerHTML = '';
+    if (aviso) {
+        aviso.textContent = totalVistos === 0
+            ? 'Todavía no marcaste ninguna película ni serie como vista: marcá algunas y vuelvo con recomendaciones.'
+            : `Calculado con tus ${totalVistos} películas y series vistas. Los números de cada tarjeta son el puntaje de cada criterio.`;
+    }
+    let lista = items;
+    if (miroFiltroActivo === 'Película' || miroFiltroActivo === 'Serie') lista = items.filter(c => c.e.tipo === miroFiltroActivo);
+    const clave = { saga: 'saga', afinidad: 'afinidad', premios: 'premios' }[miroFiltroActivo] || 'total';
+    if (clave !== 'total') lista = lista.filter(c => c[clave] > 0).sort((a, b) => b[clave] - a[clave] || b.total - a.total);
+    lista = lista.slice(0, 24);
+    if (!lista.length) {
+        grilla.innerHTML = '<p style="color:#aaa; padding:20px 0;">No hay recomendaciones para este criterio todavía.</p>';
+        return;
+    }
+    lista.forEach(c => {
+        const razones = [...new Map(c.razones.map(r => [r.txt, r])).values()].slice(0, 4).map(r => `<li>${r.txt}</li>`).join('');
+        grilla.insertAdjacentHTML('beforeend', `
+            <div class="tarjeta-media" data-accion="visto">
+                <img src="${c.e.poster}" alt="${c.e.titulo}">
+                <h3>${c.e.titulo}</h3>
+                <p>⭐ ${c.total.toFixed(1)} · 🎬${c.saga.toFixed(1)} 🎭${c.afinidad.toFixed(1)} 🏆${c.premios.toFixed(1)} 🧭${c.orden.toFixed(1)}</p>
+                <ul style="text-align:left;font-size:11px;color:#ccc;padding-left:16px;margin:4px 0;">${razones}</ul>
+                <button class="btn-accion">Marcar Visto</button>
+            </div>
+        `);
+    });
+    sincronizarVistos();
+}
+
+(function conectarQueMiro() {
+    const btn = document.getElementById('btn-que-miro');
+    const sec = document.getElementById('seccion-que-miro');
+    if (btn && sec) btn.addEventListener('click', () => { renderizarQueMiro(); cambiarSeccion(sec); });
+    document.querySelectorAll('.btn-filtro-miro').forEach(b => {
+        b.addEventListener('click', function () {
+            document.querySelectorAll('.btn-filtro-miro').forEach(x => x.classList.remove('activo'));
+            this.classList.add('activo');
+            miroFiltroActivo = this.getAttribute('data-criterio');
+            renderizarQueMiro();
         });
     });
 })();
