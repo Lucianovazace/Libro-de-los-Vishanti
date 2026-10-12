@@ -12368,15 +12368,19 @@
     <section id="seccion-que-miro" class="oculto">
         <h2>¿Qué miro? 🍿</h2>
         <p id="que-miro-aviso" style="font-size:12px; color:#aaa; margin-bottom:12px;"></p>
-        <div class="filtros-seccion">
-            <button class="btn-filtro-miro activo" data-criterio="todas">Para vos</button>
-            <button class="btn-filtro-miro" data-criterio="saga">Siguiente de saga</button>
-            <button class="btn-filtro-miro" data-criterio="afinidad">Actor / director / estudio</button>
-            <button class="btn-filtro-miro" data-criterio="premios">Oscar</button>
-            <button class="btn-filtro-miro" data-criterio="Película">Solo películas</button>
-            <button class="btn-filtro-miro" data-criterio="Serie">Solo series</button>
+        <div id="miro-paso-tipo" class="miro-elegir">
+            <button class="miro-grande" data-tipo="Película">🎬<span>Película</span></button>
+            <button class="miro-grande" data-tipo="Serie">📺<span>Serie</span></button>
         </div>
-        <div class="grilla-biblioteca" id="grilla-que-miro"></div>
+        <div id="miro-paso-duracion" class="miro-elegir oculto">
+            <button class="miro-grande" data-dur="corta">⏱️<span>Menos de 30 min</span><small>por episodio</small></button>
+            <button class="miro-grande" data-dur="larga">🕐<span>Más de 30 min</span><small>por episodio</small></button>
+        </div>
+        <div id="miro-barra-resultados" class="oculto" style="margin-bottom:12px;">
+            <button id="btn-miro-cambiar" class="btn-filtro">← Cambiar</button>
+            <span id="miro-etiqueta" style="margin-left:10px; color:#ccc; font-size:14px;"></span>
+        </div>
+        <div class="grilla-biblioteca oculto" id="grilla-que-miro"></div>
     </section>
 
     <!-- SECCIÓN: CALENDARIO -->

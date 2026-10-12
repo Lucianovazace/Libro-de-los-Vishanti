@@ -24378,25 +24378,48 @@ function calcularQueMiro(vistosSet, historial, hoyMs) {
     return { items, totalVistos: vistosCat.length };
 }
 
-let miroFiltroActivo = 'todas';
+// Duración típica por episodio: series de hasta ~30 min van en "menos de 30"; el resto en "más de 30".
+// (Estimación por duración habitual; las series que no figuran acá cuentan como "más de 30".)
+const MIRO_SERIES_CORTAS = new Set([
+    'Seinfeld', 'The Fresh Prince of Bel-Air', 'The Nanny', 'Malcolm in the Middle', 'Scrubs', "It's Always Sunny in Philadelphia",
+    'Parks and Recreation', 'The Good Place', "That '70s Show", 'Chad Powers', 'Spirit & Friends', 'Thunderbirds Are Go',
+    'Marvel Zombies', 'Jurassic World: Camp Cretaceous', 'The Clone Wars (Serie)', 'Star Wars Rebels', 'Star Wars Resistance',
+    'Spider-Man: Unlimited (Tierra-6513)', 'Spider-Man: The New Animated Series (Tierra-554)', 'The Spectacular Spider-Man (Tierra-26496)',
+    'The Super-Hero Squad Show (Tierra-91119)', 'The Avengers: United They Stand (Tierra-730784)', 'Tu Amistoso Vecino Spider-Man (Tierra-86445)'
+]);
+function miroEsSerieCorta(t) { return MIRO_SERIES_CORTAS.has(t) || /^Pokémon Temporada/.test(t); }
+
+let miroTipo = null, miroDur = null;
+function miroMostrarPaso(paso) {
+    const q = id => document.getElementById(id);
+    q('miro-paso-tipo').classList.toggle('oculto', paso !== 'tipo');
+    q('miro-paso-duracion').classList.toggle('oculto', paso !== 'duracion');
+    q('miro-barra-resultados').classList.toggle('oculto', paso !== 'resultados');
+    q('grilla-que-miro').classList.toggle('oculto', paso !== 'resultados');
+    const av = q('que-miro-aviso');
+    if (av) av.classList.toggle('oculto', paso !== 'resultados');
+}
+function miroReiniciar() { miroTipo = null; miroDur = null; miroMostrarPaso('tipo'); }
+
 function renderizarQueMiro() {
     const grilla = document.getElementById('grilla-que-miro');
     const aviso = document.getElementById('que-miro-aviso');
     if (!grilla) return;
+    if (!miroTipo || (miroTipo === 'Serie' && !miroDur)) return; // todavía en los pasos de elección
     const { items, totalVistos } = calcularQueMiro(titulosVistosGuardados, historialVistos, Date.now());
     grilla.innerHTML = '';
+    const etiqueta = document.getElementById('miro-etiqueta');
+    if (etiqueta) etiqueta.textContent = miroTipo === 'Película' ? '🎬 Películas' : (miroDur === 'corta' ? '📺 Series · menos de 30 min' : '📺 Series · más de 30 min');
     if (aviso) {
         aviso.textContent = totalVistos === 0
             ? 'Todavía no marcaste ninguna película ni serie como vista: marcá algunas y vuelvo con recomendaciones.'
-            : `Calculado con tus ${totalVistos} películas y series vistas. Los números de cada tarjeta son el puntaje de cada criterio.`;
+            : `Ordenado de mejor a peor para vos (puntaje del proyecto), calculado con tus ${totalVistos} películas y series vistas.`;
     }
-    let lista = items;
-    if (miroFiltroActivo === 'Película' || miroFiltroActivo === 'Serie') lista = items.filter(c => c.e.tipo === miroFiltroActivo);
-    const clave = { saga: 'saga', afinidad: 'afinidad', premios: 'premios' }[miroFiltroActivo] || 'total';
-    if (clave !== 'total') lista = lista.filter(c => c[clave] > 0).sort((a, b) => b[clave] - a[clave] || b.total - a.total);
+    let lista = items.filter(c => c.e.tipo === miroTipo);
+    if (miroTipo === 'Serie') lista = lista.filter(c => miroEsSerieCorta(c.e.titulo) === (miroDur === 'corta'));
     lista = lista.slice(0, 24);
     if (!lista.length) {
-        grilla.innerHTML = '<p style="color:#aaa; padding:20px 0;">No hay recomendaciones para este criterio todavía.</p>';
+        grilla.innerHTML = '<p style="color:#aaa; padding:20px 0;">No hay recomendaciones en esta categoría todavía.</p>';
         return;
     }
     lista.forEach(c => {
@@ -24417,15 +24440,24 @@ function renderizarQueMiro() {
 (function conectarQueMiro() {
     const btn = document.getElementById('btn-que-miro');
     const sec = document.getElementById('seccion-que-miro');
-    if (btn && sec) btn.addEventListener('click', () => { renderizarQueMiro(); cambiarSeccion(sec); });
-    document.querySelectorAll('.btn-filtro-miro').forEach(b => {
+    if (btn && sec) btn.addEventListener('click', () => { miroReiniciar(); cambiarSeccion(sec); });
+    document.querySelectorAll('#miro-paso-tipo .miro-grande').forEach(b => {
         b.addEventListener('click', function () {
-            document.querySelectorAll('.btn-filtro-miro').forEach(x => x.classList.remove('activo'));
-            this.classList.add('activo');
-            miroFiltroActivo = this.getAttribute('data-criterio');
+            miroTipo = this.getAttribute('data-tipo');
+            miroDur = null;
+            if (miroTipo === 'Serie') miroMostrarPaso('duracion');
+            else { miroMostrarPaso('resultados'); renderizarQueMiro(); }
+        });
+    });
+    document.querySelectorAll('#miro-paso-duracion .miro-grande').forEach(b => {
+        b.addEventListener('click', function () {
+            miroDur = this.getAttribute('data-dur');
+            miroMostrarPaso('resultados');
             renderizarQueMiro();
         });
     });
+    const cambiar = document.getElementById('btn-miro-cambiar');
+    if (cambiar) cambiar.addEventListener('click', miroReiniciar);
 })();
 
 
