@@ -22537,6 +22537,16 @@ const RECOPILA_OVNI = {
     "Batman Vol. 7: La Boda": "DC Nation #0, Robin vs. Ra's, Nightwing vs. Hush, Batgirl vs. Riddler, Red Hood vs. Anarky, Harley vs. Joker y Batman #45-50",
     "Batman: Un Mal Dia #8: Ra's Al Ghul": "Batman: One Bad Day - Ra's Al Ghul",
     "Batman: La Maldición del Caballero Blanco": "Batman: Curse of the White Knight #1-8 y White Knight Presents: Von Freeze #1",
+    "Absolute Flash Vol. 1": "Absolute Flash #1-6",
+    "Absolute Flash Vol. 2": "Absolute Flash #7-12",
+    "Absolute Green Lantern Vol. 1": "Absolute Green Lantern #1-6",
+    "Batman / Flash: El Prendedor": "Batman #21-22 y Flash #21-22",
+    "Liga de La Justicia Vol. 1: La Totalidad": "Justice League #1-7, Justice League: No Justice #1-4 y una historia de DC Nation #0",
+    "Liga de La Justicia Ilimitada Vol. 1: Somos Ayer": "Batman/Superman: World's Finest #38-39, Justice League Unlimited #6-8 y World's Finest 2025 Annual #1 (según Ovni; 'En el Infierno' recopila JLU #1-5)",
+    "Crisis Oscura Vol. 2": "Dark Crisis #4-5, Worlds Without a Justice League (GL, WW), Flash #785-786, Young Justice #3-4, The Deadly Green #1",
+    "Crisis Oscura Vol. 3": "Dark Crisis #6-7, WWAJL Green Arrow #1 y Batman #1, Young Justice #5-6, The Dark Army #1, War Zone #1, Big Bang #1",
+    "Knight Terrors: Pesadillas Nocturnas": "Knight Terrors #1-4, First Blood #1, Night's End #1 y una historia de FCBD 2023",
+    "DC La Nueva Frontera": "DC: The New Frontier #1-6, Justice League: The New Frontier Special #1 y una historia de Solo #5",
     "Esenciales DC #25: ¡Invasión! (Ovni)": "Invasion! #1-3"
 };
 
@@ -22564,6 +22574,11 @@ const RECOPILA_OVNI_EXTRA = {
     "Batman: Hush 2 (Ovni)": "Batman #158-163",
     "Wonder Woman Vol. 3: Furia (Ovni)": "Wonder Woman #14-19 (Tom King)",
     "Diana: Princesa de Las Amazonas (Ovni)": "Diana: Princess of the Amazons (novela gráfica)",
+    "Flash: El Hombre Más Rápido del Mundo (Ovni)": "The Flash: The Fastest Man Alive #1-3",
+    "Universo DC por Enrique Alcatena (Ovni)": "Hawkworld #1-3, L.E.G.I.O.N. #51, Detective Annual #7, LOTDK #89-90, Batman Chronicles #6 y 11, GL Annual #5, Adventures of Superman Annual #9, Flash Annual #13, Convergence: Hawkman #1-2 y más",
+    "Universo DC por Ariel Olivetti (Ovni)": "JLA Paradise Lost #1-3, Martian Manhunter Annual #1, Lobo #63-64, JLA Primeval #1, Green Lantern/Space Ghost Special #1, Future Quest Presents #1-3",
+    "Green Lantern/Green Arrow: Edición Absoluta (Ovni)": "Green Lantern #76-87 y 89, material de Flash #217-219 y 226",
+    "Liga de La Justicia Ilimitada: En el Infierno (Ovni)": "Justice League Unlimited #1-5",
     "Batman: El Mundo": "Batman: The World (con historia inédita para la edición argentina)",
     "Superman: Año Uno": "Superman: Year One #1-3"
 };
