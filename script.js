@@ -23775,6 +23775,11 @@ const RECOPILA_OVNI = {
     "Estado Futuro: Batman Vol. 2": "Future State: The Next Batman #1-4 y Future State: Batman/Superman #2",
     "V de Vendetta": "V for Vendetta (30th Anniversary Deluxe Edition; Ovni tiene también Edición Absoluta)",
     "The Amazing Spider-Man #22": "Amazing Spider-Man (2022) #29-30 y Amazing Spider-Man Annual (2023) #1",
+    "Batman: No Man's Land Vol. 2: Legado": "Legends of the Dark Knight #119-121, Shadow of the Bat #87-88, Batman #567-568, Detective #734-735, Young Justice in No Man's Land #1, Robin #67, Azrael #56, Batman Chronicles #17, Nightwing #35-37, Catwoman #72-74",
+    "Batman: Un Mal Dia #1: El Acertijo": "Batman: One Bad Day - The Riddler (2022)",
+    "Batman: Un Mal Dia #2: Dos Caras": "Batman: One Bad Day - Two-Face (2023)",
+    "Batman: Un Mal Dia #3: El Pinguino": "Batman: One Bad Day - The Penguin (2023)",
+    "Batman: Un Mal Dia #4: Mr. Freeze": "Batman: One Bad Day - Mr. Freeze (2023)",
     "Esenciales DC #25: ¡Invasión! (Ovni)": "Invasion! #1-3"
 };
 
@@ -23910,7 +23915,6 @@ const RECOPILA_OVNI_EXTRA = {
 // Tomos cuya página de Ovni todavía no pude encontrar o leer (buscar de nuevo):
 const RECOPILA_OVNI_PENDIENTES = [
     "Titanes: Fuera de las Sombras (sin Recopila en la página)", "One Operation Joker Vol. 1 (sin Recopila)", "Harley Quinn Vol. 2 y Yo Soy Suicida: sin Recopila en la página",
-    "Batman: No Man's Land Vol. 2: Legado",
     
     "JLA: Justicia / JSA: Kingdom Come / Joker: Asylum / Plastic Man (solo Salvat: confirmar con ECC/Salvat)",
     "Salvat NG #70 Batman: Presagios y #71 Batman: Forajidos (identificar historia original)"
