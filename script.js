@@ -2064,6 +2064,7 @@ const listaMedia = [
     { titulo: "Nightwing Vol. 2: Estado de Miedo", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "dick-grayson,scarecrow", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/nightwing_vol_2_cov1-ee5de7ddaa20dee56516747940728616-1024-1024.webp" },
     { titulo: "Nightwing Vol. 3: Maten a Grayson", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "blockbuster,dick-grayson", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/nightwing_vol_3_cov1-33e3b0a930f3f4aca316856584888178-1024-1024.webp" },
     { titulo: "Nightwing Vol. 4 La Batalla por El Corazon de Bludhaven", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "blockbuster,dick-grayson", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_947401-MLA72183657275_102023-O.webp" },
+    { titulo: "La Muerte de la Liga de la Justicia", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "liga", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/la_muerte_de_la_liga_de_la_justicia_cov1-c51b78b7a94b9dabc116686966661354-1024-1024.webp" },
     { titulo: "Nightwing Vol. 5: El Salto", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "dick-grayson", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/nightwing_vol_5_cov-1dcbcf1ca3b0348bcd17172465146935-1024-1024.webp" },
     { titulo: "Nightwing Vol. 6: La Hora de Los Titanes", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "dick-grayson", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/nightwing_vol_6_covs-448b6df0cf1c6617dc17310210926901-1024-1024.webp" },
     { titulo: "Nightwing Vol. 7: Al Limite", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "dick-grayson", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/nightwing_vol_7_covs3-c6d13c046a1f5d4de817433390012797-640-0.webp" },
@@ -2217,6 +2218,9 @@ const listaMedia = [
     { titulo: "Batman: Más Allá del Caballero Blanco", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "azrael,batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_-_caballero_blanco_del_futuro1-9ccad08ac05b2c4f6616838692507247-640-0.webp" },
     { titulo: "Batman: El Caballero Blanco Presenta - Generación Joker", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_-_caballero_blanco__generacion_joker_cov-6938a10ab9dc3c971017377252359794-1024-1024.webp" },
     { titulo: "Batman: Caballero de La Venganza", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-flashpoint-caballero-de-la-venganza-cov1-99b0736d7f8ac3bb2e16700426190697-1024-1024.webp" },
+    { titulo: "Batman '89", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman89_sobre1-b9133af127add1c86416657195674213-1024-1024.webp" },
+    { titulo: "DC Comics Presenta: Batman/Fortnite: Punto Cero", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/dccp_batman_fortnite_cov_arg-509cbb22fbeb597f3816977288339733-1024-1024.webp" },
+    { titulo: "Flashpoint Beyond", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman,flash-barry-allen", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flashpoint_beyond_cov1-16cfa47e9f45e2322716760517211326-1024-1024.webp" },
     { titulo: "Batman/Catwoman", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_catwoman_cov_arg1-a29e5fe25e946ed0f016790240294191-1024-1024.webp" },
     { titulo: "Batman/Juez Dredd: Juicio Sobre Gotham", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "anarky,batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_juez_dreddcov-6d643a261bb773718117316981111474-1024-1024.webp" },
     { titulo: "Batman/Spawn", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_spawn_deluxe_cov-6e253dfc6cf02c063517527892115016-640-0.webp" },
@@ -22661,6 +22665,20 @@ const RECOPILA_OVNI = {
     "Noches Oscuras: Metal Vol. 2": "Teen Titans #12, Nightwing #29, Suicide Squad #26, Green Arrow #32, Flash #33, Justice League #32-33 y más",
     "DC K.O. #9": "DC K.O. #4-5",
     "All Star Superman": "All-Star Superman #1-12",
+    "Liga de La Justicia Internacional #1: Renacida": "Justice League International #1-7 y Justice League of America Annual 1987-1991 #1",
+    "Batman: El Largo Halloween (2da Edicion)": "Batman: The Long Halloween #1-13 y Special #1",
+    "Nightwing Vol. 2: Estado de Miedo": "Nightwing #84-86, 2021 Annual y Batman: Urban Legend #10",
+    "Nightwing Vol. 3: Maten a Grayson": "Nightwing #87-91 y Superman: Son of Kal-El #9",
+    "Nightwing Vol. 4 La Batalla por El Corazon de Bludhaven": "Nightwing #92-96",
+    "Batman de Chip Zdarsky #1: Respaldo": "Batman #125-130",
+    "Batman: Caballero de La Venganza": "Flashpoint - Batman: Knight of Vengeance #1-3",
+    "Kingdom Come": "Kingdom Come y Kingdom Come 20th Anniversary Deluxe Edition",
+    "La Muerte de la Liga de la Justicia": "Justice League Incarnate #1-5 y Justice League #75",
+    "Batman '89": "Batman: The 1989 Movie Adaptation, Batman Returns y Batman '89 #1-6",
+    "DC Comics Presenta: Batman/Fortnite: Punto Cero": "Batman/Fortnite: Zero Point #1-6",
+    "Flashpoint Beyond": "Flashpoint Beyond #0-6 y galería de extras",
+    "Batman: Leyendas del Caballero Oscuro #13: Veneno": "LOTDK #16-20 y Batman: Vengeance of Bane",
+    "Batman: Más Allá del Caballero Blanco": "Batman: Beyond the White Knight #1-8 y White Knight Presents: Red Hood #1-2 (en Ovni: Caballero Blanco del Futuro)",
     "Esenciales DC #25: ¡Invasión! (Ovni)": "Invasion! #1-3"
 };
 
@@ -22774,6 +22792,8 @@ const RECOPILA_OVNI_EXTRA = {
     "Batman: Arquitectura Mortal (Ovni)": "Batman: Death by Design (= Salvat Batman 80 Aniv. #15)",
     "Batman: Año Uno, Edición del Artista (Ovni)": "Batman #404-407 (edición del artista)",
     "All-Star Superman: Edición Deluxe (Ovni)": "All-Star Superman #1-12 y galería extra",
+    "Batman: El Largo Halloween Absoluto (Ovni)": "Batman: The Long Halloween #1-13 y Special #1 (= Largo Halloween 2da edición)",
+    "Kingdom Come: Edición Deluxe (Ovni)": "Kingdom Come y Kingdom Come 20th Anniversary Deluxe Edition",
     "Batman: El Mundo": "Batman: The World (con historia inédita para la edición argentina)",
     "Superman: Año Uno": "Superman: Year One #1-3"
 };
