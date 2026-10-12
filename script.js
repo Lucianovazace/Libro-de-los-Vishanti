@@ -22694,6 +22694,12 @@ const RECOPILA_OVNI = {
     "Liga de La Justicia: Querida Liga de La Justicia": "Dear Justice League (novela gráfica)",
     "Detective Comics: 80 Años": "Detective Comics #1027, The Joker, Catwoman y Robin 80th Anniversary 100-Page Super Spectacular",
     "Superman: Arriba en el Cielo": "Superman: Up in the Sky #1-6, Superman Giant #3-13 y #15-16",
+    "Liga de La Justicia Vol. 4: La Sexta Dimension": "Justice League #19-28",
+    "Coleccion Batman 80 Aniversario #16: Noel (y Otras Historias)": "Batman: Noël (2011) y selección de historias navideñas desde Batman #15 (1943)",
+    "Universo DC Renacimiento": "DC Universe: Rebirth #1 (2016)",
+    "Historias del Multiverso Oscuro DC": "Tales from the Dark Multiverse: Batman: Knightfall, The Death of Superman, Blackest Night, Infinite Crisis y The Judas Contract",
+    "Flash Forward": "Flash Forward #1-5",
+    "Superman: Lois & Clark — La Llegada": "Superman: Lois and Clark #1-8",
     "Esenciales DC #25: ¡Invasión! (Ovni)": "Invasion! #1-3"
 };
 
