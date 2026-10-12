@@ -2047,6 +2047,7 @@ const listaMedia = [
     { titulo: "Noches Oscuras: Death Metal #7", categoria: "renacimiento-dc", editorial: "ovni", subtipo: "batman,liga,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/death-metal-7-cov-31b4482adc2ee2280f16306272721612-640-0.webp" },
     { titulo: "Liga de La Justicia: Death Metal", categoria: "renacimiento-dc", editorial: "ovni", subtipo: "batman,darkseid,liga,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/death-metal-liga-de-la-justicia-cov1-302ba8702c86c8b47016324180074118-1024-1024.webp" },
     { titulo: "Batman: La Guerra del Joker", categoria: "renacimiento-dc", editorial: "ovni", subtipo: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/la_guerra_del_joker_cov_arg1-5e5a48f69ebd772c2116190652847921-1024-1024.webp" },
+    { titulo: "Batman: Historias de Fantasmas", categoria: "renacimiento-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-historias-de-fantasmas-cov1-66449bc94e09a45d3d16455389003619-1024-1024.webp" },
     { titulo: "Batman: Tres Jokers", categoria: "renacimiento-dc", editorial: "ovni", subtipo: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/three_jokers_deluxe_2025_cov-dfc608502148c025fb17564915196306-640-0.webp" },
     { titulo: "Liga de La Justicia: Invierno Interminable", categoria: "renacimiento-dc", editorial: "ovni", subtipo: "batman,liga,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/jl-invierno-interminable-cov1-d55364083f72bdb65816245718635575-640-0.webp" },
     // --- INFINITE FRONTIER / ACTUALIDAD (DC Argentina) ---
@@ -2175,6 +2176,12 @@ const listaMedia = [
     { titulo: "Wonder Woman: Guerrera", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/wonder_woman_guerrera-cov1-9236ece9a2e3d1ef7316185452090277-1024-1024.webp" },
     { titulo: "Batman: A Toda Velocidad", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-a-toda-velocidad-cov1-78ddd586fbed67beb316154824525508-1024-1024.webp" },
     { titulo: "Batman: Caminante Nocturno", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-caminante-nocturno-cov1-a3adba6c8b73b0e9e216034067264033-1024-1024.webp" },
+    { titulo: "Superman: Las Cuatro Estaciones", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_las_cuatro_estaciones_cov1-3aafc1003e9aad525116499954742567-1024-1024.webp" },
+    { titulo: "Rorschach", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "rorschach", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/rorschach_cov1-98911d989a403d3b3f16396819438723-1024-1024.webp" },
+    { titulo: "Batman/Fortnite: Fundación", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-fortnite-fundacion-cov1-39e9718bb18e2a34ec16348356521115-1024-1024.webp" },
+    { titulo: "Batman: Año 100", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/tomo-17-vol-20-batman-ano-100-cov1-cac0ff4ba37267dfad16124596888540-1024-1024.webp" },
+    { titulo: "Liga de La Justicia: Querida Liga de La Justicia", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "liga", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/querida-liga-de-la-justicia-cov1-9a5635d86df439604816136907198245-1024-1024.webp" },
+    { titulo: "Detective Comics: 80 Años", categoria: "renacimiento-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/especial-detective-comics-cov-arg1-2675cc7c5fd9c23ce816160971056109-1024-1024.webp" },
     { titulo: "Joker/Harley: Cordura Criminal", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "harley-quinn,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/joker-harley-cov-arg1-ec5ec6e55fa91c684116215522353607-1024-1024.webp" },
     { titulo: "Joker: El Mundo", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/joker_el_mundo_variant_cov-9e747e22ab82dd607c17267850222091-1024-1024.webp" },
     { titulo: "Las Aventuras de Batman Vol. 1", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/las_aventuras_de_batman_vol_1_cov1-772dd524ebe6c4ab6e16620061796734-1024-1024.webp" },
@@ -22679,6 +22686,14 @@ const RECOPILA_OVNI = {
     "Flashpoint Beyond": "Flashpoint Beyond #0-6 y galería de extras",
     "Batman: Leyendas del Caballero Oscuro #13: Veneno": "LOTDK #16-20 y Batman: Vengeance of Bane",
     "Batman: Más Allá del Caballero Blanco": "Batman: Beyond the White Knight #1-8 y White Knight Presents: Red Hood #1-2 (en Ovni: Caballero Blanco del Futuro)",
+    "Batman: Historias de Fantasmas": "Batman #101-111 y Batman Annual #5 (borderline Renacimiento / Infinite Frontier)",
+    "Superman: Las Cuatro Estaciones": "Superman for All Seasons #1-4 y historias de Batman Secret Files #1, Superman/Batman #26 y Solo #1",
+    "Rorschach": "Rorschach #1-12",
+    "Batman/Fortnite: Fundación": "Batman/Fortnite: Foundation #1",
+    "Batman: Año 100": "Batman: Year 100 #1-4",
+    "Liga de La Justicia: Querida Liga de La Justicia": "Dear Justice League (novela gráfica)",
+    "Detective Comics: 80 Años": "Detective Comics #1027, The Joker, Catwoman y Robin 80th Anniversary 100-Page Super Spectacular",
+    "Superman: Arriba en el Cielo": "Superman: Up in the Sky #1-6, Superman Giant #3-13 y #15-16",
     "Esenciales DC #25: ¡Invasión! (Ovni)": "Invasion! #1-3"
 };
 
@@ -22794,6 +22809,14 @@ const RECOPILA_OVNI_EXTRA = {
     "All-Star Superman: Edición Deluxe (Ovni)": "All-Star Superman #1-12 y galería extra",
     "Batman: El Largo Halloween Absoluto (Ovni)": "Batman: The Long Halloween #1-13 y Special #1 (= Largo Halloween 2da edición)",
     "Kingdom Come: Edición Deluxe (Ovni)": "Kingdom Come y Kingdom Come 20th Anniversary Deluxe Edition",
+    "Sandman Vol. 3: País de Sueños (Ovni)": "The Sandman #17-20",
+    "Batman: Asilo Arkham, Edición Absoluta (Ovni)": "Arkham Asylum: Absolute Edition y LOTDK #6-10",
+    "Hora Cero: Crisis en el Tiempo (Ovni)": "Zero Hour #4-0, Showcase '94 #8-9, Batman #511, Man of Steel #37, Superboy #8, Superman #93, Green Arrow #90, Robin #10, GL #0, Flash #0 (= Salvat Esenciales #8)",
+    "La Noche Final (Ovni)": "The Final Night Preview, Final Night #1-4, Parallax: Emerald Night #1 y GL #81 (= Salvat Esenciales #9)",
+    "Crisis Infinita (Ovni)": "Countdown to Infinite Crisis #1, Infinite Crisis #1-7 y Secret Files (= Salvat Esenciales #5)",
+    "Odisea Cósmica (Ovni)": "Cosmic Odyssey #1-4 (= Salvat Esenciales #16)",
+    "Noches Oscuras: Death Metal Edición Integral (Ovni)": "Death Metal #1-7, Trinity Crisis y Speed Metal",
+    "Batman: Año Uno Deluxe (Ovni)": "Batman #404-407",
     "Batman: El Mundo": "Batman: The World (con historia inédita para la edición argentina)",
     "Superman: Año Uno": "Superman: Year One #1-3"
 };
