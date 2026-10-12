@@ -1795,6 +1795,20 @@ const listaMedia = [
 
 
     // --- PRE-CRISIS (DC Argentina) ---
+    { titulo: "Superman: Las Primeras 100 Historietas #1", categoria: "pre-crisis-dc", editorial: "clarin", subtipo: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/small/3d/3d/ed96a211db2448dd812c60386beb1c0f.jpg" },
+    { titulo: "Superman: Las Primeras 100 Historietas #2", categoria: "pre-crisis-dc", editorial: "clarin", subtipo: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/small/39/18/0db94af52ae24b18982117c28f9b80e1.jpg" },
+    { titulo: "Superman: Las Primeras 100 Historietas #3", categoria: "pre-crisis-dc", editorial: "clarin", subtipo: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/small/3b/2a/fd31f975fdf347a2a5ae91055960bab3.jpg" },
+    { titulo: "Superman: Las Primeras 100 Historietas #4", categoria: "pre-crisis-dc", editorial: "clarin", subtipo: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/small/39/38/e7b9a8b33e9b464a8188eabf83ec6f23.jpg" },
+    { titulo: "Superman: Las Primeras 100 Historietas #5", categoria: "pre-crisis-dc", editorial: "clarin", subtipo: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/small/3d/0e/d6f8231fa9ef42aa960cc6e237e9eb14.jpg" },
+    { titulo: "Superman: Las Primeras 100 Historietas #6", categoria: "pre-crisis-dc", editorial: "clarin", subtipo: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/small/2c/36/2803f1af126749fcb2496723292a32c0.jpg" },
+    { titulo: "Superman: Las Primeras 100 Historietas #7", categoria: "pre-crisis-dc", editorial: "clarin", subtipo: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/small/24/35/7decd25dba1c4f6d9db332fe1f953341.jpg" },
+    { titulo: "Superman: Las Primeras 100 Historietas #8", categoria: "pre-crisis-dc", editorial: "clarin", subtipo: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/small/19/3c/be4f9107fd204bd78323fdddc2666bb7.jpg" },
+    { titulo: "Superman: Las Primeras 100 Historietas #9", categoria: "pre-crisis-dc", editorial: "clarin", subtipo: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/small/12/05/9a7f04ffd93747058139fd4e7c6149fe.jpg" },
+    { titulo: "Superman: Las Primeras 100 Historietas #10", categoria: "pre-crisis-dc", editorial: "clarin", subtipo: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/small/06/1d/d967a8130b954755b17f4f57c9654049.jpg" },
+    { titulo: "Superman: Las Primeras 100 Historietas #11", categoria: "pre-crisis-dc", editorial: "clarin", subtipo: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/small/1c/20/9e37b7f40498491b827fd7ca6b023ecb.jpg" },
+    { titulo: "Superman: Las Primeras 100 Historietas #12", categoria: "pre-crisis-dc", editorial: "clarin", subtipo: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/small/3f/2e/7e8ee8f9505c457b987ceba5bedc6cd5.jpg" },
+    { titulo: "Superman: Las Primeras 100 Historietas #13", categoria: "pre-crisis-dc", editorial: "clarin", subtipo: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/small/18/18/35585d5098fe4562a6da14f741b73d84.jpg" },
+    { titulo: "Superman: Las Primeras 100 Historietas #14", categoria: "pre-crisis-dc", editorial: "clarin", subtipo: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/small/00/0e/ca0cc1ba583e497eaaa7e49ec2f1e8d6.jpg" },
     { titulo: "Batman: Las Primeras 100 Historietas #1", categoria: "pre-crisis-dc", editorial: "clarin", subtipo: "batman", tipo: "Cómic", poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328279256i/13450921._SY180_.jpg" },
     { titulo: "Batman: Las Primeras 100 Historietas #2", categoria: "pre-crisis-dc", editorial: "clarin", subtipo: "batman", tipo: "Cómic", poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1390588103i/13477475._SY180_.jpg" },
     { titulo: "Batman: Las Primeras 100 Historietas #3", categoria: "pre-crisis-dc", editorial: "clarin", subtipo: "batman", tipo: "Cómic", poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1329492142i/13489001._SY180_.jpg" },
@@ -5610,6 +5624,17 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "dc-superman-primeras-100",
+        etiqueta: "Colección",
+        titulo: "Superman: Las Primeras 100 Historietas (Clarín)",
+        categoria: "colecciones-hub",
+        poster: "https://i1.whakoom.com/small/3d/3d/ed96a211db2448dd812c60386beb1c0f.jpg",
+        esContenedor: true,
+        categoriaEditorial: "dc",
+        progresoPatron: "^Superman: Las Primeras 100 Historietas #(\\d+)",
+        peliculas: []
+    },
+    {
         id: "dc-batman-primeras-100",
         etiqueta: "Colección",
         titulo: "Batman: Las Primeras 100 Historietas (Clarín)",
@@ -6594,6 +6619,7 @@ function renderizarColecciones() {
         "avengers-mas-poderosos": "seccion-avengers-mas-poderosos",
         "superior-spider-man": "seccion-superior-spider-man",
         "marvel-best-of": "seccion-marvel-best-of",
+        "dc-superman-primeras-100": "seccion-dc-superman-primeras-100",
         "dc-batman-primeras-100": "seccion-dc-batman-primeras-100",
         "marvel-spiderman-clarin": "seccion-marvel-spiderman-clarin",
         "marvel-spiderman-coleccion-definitiva": "seccion-marvel-spiderman-coleccion-definitiva",
@@ -7600,6 +7626,17 @@ function renderizarContenido() {
                 if (grillaBatman100) grillaBatman100.insertAdjacentHTML('beforeend', htmlTarjetaBatman100);
             }
 
+            // Superman: Las Primeras 100 Historietas (Clarín): orden por número.
+            const matchSuperman100 = item.titulo.match(/^Superman: Las Primeras 100 Historietas #(\d+)/i);
+            if (matchSuperman100) {
+                const htmlTarjetaSuperman100 = htmlTarjeta.replace(
+                    'class="tarjeta-media"',
+                    `class="tarjeta-media" data-s100-num="${matchSuperman100[1]}"`
+                );
+                const grillaSuperman100 = document.getElementById("grilla-dc-superman-primeras-100");
+                if (grillaSuperman100) grillaSuperman100.insertAdjacentHTML('beforeend', htmlTarjetaSuperman100);
+            }
+
             // Colección Deadpool y Wolverine (La Nación - Ovni): orden simple por número de tomo.
             const matchDeadpoolWolverineLN = item.titulo.match(/^Deadpool y Wolverine #(\d+)/i);
             if (matchDeadpoolWolverineLN) {
@@ -7814,6 +7851,13 @@ function ordenarGrillaPorNumeroSalvat() {
         const tarjetasBatman100 = Array.from(contenedorBatman100.querySelectorAll('.tarjeta-media'));
         tarjetasBatman100.sort((a, b) => parseInt(a.getAttribute('data-b100-num')) - parseInt(b.getAttribute('data-b100-num')));
         tarjetasBatman100.forEach(t => contenedorBatman100.appendChild(t));
+    }
+
+    const contenedorSuperman100 = document.getElementById('grilla-dc-superman-primeras-100');
+    if (contenedorSuperman100) {
+        const tarjetasSuperman100 = Array.from(contenedorSuperman100.querySelectorAll('.tarjeta-media'));
+        tarjetasSuperman100.sort((a, b) => parseInt(a.getAttribute('data-s100-num')) - parseInt(b.getAttribute('data-s100-num')));
+        tarjetasSuperman100.forEach(t => contenedorSuperman100.appendChild(t));
     }
 
     const contenedorDeadpoolWolverineLN = document.getElementById('grilla-marvel-deadpool-wolverine');
@@ -22240,6 +22284,13 @@ if(btnVolverMarvelSpiderManClarin) {
 const btnVolverBatman100 = document.getElementById('btn-volver-dc-batman-primeras-100');
 if(btnVolverBatman100) {
     btnVolverBatman100.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolverSuperman100 = document.getElementById('btn-volver-dc-superman-primeras-100');
+if(btnVolverSuperman100) {
+    btnVolverSuperman100.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
     });
 }
