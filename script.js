@@ -2163,6 +2163,9 @@ const listaMedia = [
     { titulo: "La Edad de Oro: Edición Absoluta (Ovni)", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/la_edad_de_oro_cov1-02c48988cd7bb6a27116554004286086-1024-1024.webp" },
     { titulo: "Batman: El Mundo", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_el_mundo_-cov-_arg_jpg-eede9c3b95140ae74117644341491578-1024-1024.webp" },
     { titulo: "Batman: El Regreso del Caballero Oscuro", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman,joker,two-face", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_tdkr_cov-3ea11f0f5bfc30a81317183184295034-640-0.webp" },
+    { titulo: "Batman: Último Caballero en la Tierra", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_ultimo_caballero_en_la_tierra_cov1-ac627f9f4cc855560715948590044699-1024-1024.webp" },
+    { titulo: "Batman: Joker", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batmanjokervol011-442925537bd1ad6f2915908776239475-1024-1024.webp" },
+    { titulo: "Batman: Europa", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batmantomo05europacovvol171-fc694c67089b18979615908775681882-1024-1024.webp" },
     { titulo: "Batman: Caballero Oscuro III: La Raza Superior", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/dark_knight_iii_cov_arg1-b2ad2a2b32c21e690715952935768246-1024-1024.webp" },
     { titulo: "Batman: Gargola de Gotham", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_-la_g_c3_81rgola_de_gotham-_cov-c9ffb9636b712c1ffe17849040300962-1024-1024.webp" },
     { titulo: "Batman: Gotham: Luz de Gas", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_luz_de_gas_cov_2da_ed-4c12259aa42c33930517835531990716-640-0.webp" },
@@ -22704,6 +22707,9 @@ const RECOPILA_OVNI = {
     "Superman: Lois & Clark — La Llegada": "Superman: Lois and Clark #1-8",
     "Batman: Caballero Oscuro III: La Raza Superior": "The Dark Knight III: The Master Race (la página no detalla números; confirmar #1-9)",
     "Liga de la Justicia contra Escuadrón Suicida": "Justice League vs. Suicide Squad (la página no detalla números; confirmar #1-6)",
+    "Batman: Último Caballero en la Tierra": "Batman: Last Knight on Earth #1-3",
+    "Batman: Joker": "Joker (2008, Azzarello/Bermejo)",
+    "Batman: Europa": "Batman: Europa #1-4",
     "Esenciales DC #25: ¡Invasión! (Ovni)": "Invasion! #1-3"
 };
 
