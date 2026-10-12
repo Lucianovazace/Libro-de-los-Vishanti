@@ -22547,6 +22547,12 @@ const RECOPILA_OVNI = {
     "Crisis Oscura Vol. 3": "Dark Crisis #6-7, WWAJL Green Arrow #1 y Batman #1, Young Justice #5-6, The Dark Army #1, War Zone #1, Big Bang #1",
     "Knight Terrors: Pesadillas Nocturnas": "Knight Terrors #1-4, First Blood #1, Night's End #1 y una historia de FCBD 2023",
     "DC La Nueva Frontera": "DC: The New Frontier #1-6, Justice League: The New Frontier Special #1 y una historia de Solo #5",
+    "Titanes: Mundo Bestia": "Beast World #1-6, Titans (2023) #6-7, Nightwing #109-110",
+    "Titanes: La Reina de Alas Negras": "Titans (2023) #8-15",
+    "Harley Quinn Vol. 2: El Joker Ama a Harley": "Harley Quinn (2016) #8-13",
+    "Joker/Harley: Cordura Criminal": "Joker/Harley: Criminal Sanity #1-7 y Secret Files",
+    "Batman: El Caballero Blanco Presenta - Harley Quinn": "Batman: White Knight Presents Harley Quinn #1-6",
+    "Noches Oscuras: Death Metal #3": "Death Metal: Trinity Crisis y Death Metal: Speed Metal",
     "Esenciales DC #25: ¡Invasión! (Ovni)": "Invasion! #1-3"
 };
 
@@ -22586,6 +22592,8 @@ const RECOPILA_OVNI_EXTRA = {
     "Sandman: Obertura (Ovni)": "Sandman: Overture #1-6",
     "Sandman Vol. 4: Estación de Nieblas (Ovni)": "The Sandman #21-28",
     "Sandman Vol. 5: Un Juego de Ti (Ovni)": "The Sandman #32-37",
+    "Jóvenes Titanes: Raven (Ovni)": "Teen Titans: Raven",
+    "Harley Quinn: Blanco + Negro + Rojo (Ovni)": "Harley Quinn Black + White + Red #1-17 y dos historias nuevas",
     "Batman: El Mundo": "Batman: The World (con historia inédita para la edición argentina)",
     "Superman: Año Uno": "Superman: Year One #1-3"
 };
@@ -22593,7 +22601,7 @@ const RECOPILA_OVNI_EXTRA = {
 
 // Tomos cuya página de Ovni todavía no pude encontrar o leer (buscar de nuevo):
 const RECOPILA_OVNI_PENDIENTES = [
-    "Batman: Tiempo Muerto", "Nightwing: Año Uno (Ovni)",
+    "Batman: Tiempo Muerto", "Nightwing: Año Uno (Ovni)", "Titanes: Fuera de las Sombras (sin Recopila en la página)", "One Operation Joker Vol. 1 (sin Recopila)", "Harley Quinn Vol. 2 y Yo Soy Suicida: sin Recopila en la página",
     "Batman de Grant Morrison Vol. 2: La Resurrección de Ra's Al Ghul", "Batman de Grant Morrison Vol. 3: Batman R.I.P.",
     "Doom Patrol: Flex Mentallo", "Batman: No Man's Land Vol. 2: Legado", "Batman: No Man's Land Vol. 5: Cataciclismo Parte III",
     "Batman: No Man's Land Vol. 6: Camino a Tierra de Nadie", "Leyendas del Caballero Oscuro #9 Máscaras, #11 Santuarios, #12 Calor",
