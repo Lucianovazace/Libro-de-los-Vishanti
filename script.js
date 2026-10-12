@@ -22591,6 +22591,13 @@ const RECOPILA_OVNI = {
     "Batman: Leyendas del Caballero Oscuro #12: Calor": "LOTDK #46-49 y LOTDK Annual #7",
     "Batman: El Regreso del Caballero Oscuro": "Batman: The Dark Knight Returns #1-4",
     "Batman/Spawn": "Batman/Spawn: War Devil (1994), Spawn/Batman (1994) y Spawn/Batman (2022)",
+    "Nightwing Vol. 7: Al Limite": "Nightwing #106-109 y 111-113",
+    "Nightwing Vol. 8: La Caida de Grayson": "Nightwing #114-118",
+    "Superman: La Casa de Brainiac": "Action Comics #1064-1066, Superman (2023) #13-15, House of Brainiac Special",
+    "Batman: Un Mal Dia #7: Clayface": "Batman: One Bad Day - Clayface",
+    "Batman de Chip Zdarsky #3: La Guerra de Gotham": "Batman #137-138, Catwoman #57-58, Gotham War: Battle Lines #1, Scorched Earth y Red Hood",
+    "Liga de La Justicia Internacional #5: El Experimento Teasdale": "Justice League America #31-36, Justice League Europe #7-12, JLI Special #1 y JLI Annual #4",
+    "Batman/Superman: Los Mejores del Mundo #5: Orígenes Secretos": "World's Finest #18-19, #25 y Annual 2024",
     "Esenciales DC #25: ¡Invasión! (Ovni)": "Invasion! #1-3"
 };
 
@@ -22692,6 +22699,7 @@ const RECOPILA_OVNI_EXTRA = {
     "Hitman: Furia en Arkham (Ovni)": "The Demon Annual #2, Batman Chronicles #4 y Hitman #1-7",
     "Hora Cero: Especial Aniversario (Ovni)": "Zero Hour 30th Anniversary Special #1 y nueve cruces de 1995 más una historia de Showcase '94",
     "Superman/Batman: Los Mejores del Mundo (Gibbons/Rude, Ovni)": "Superman/Batman: World's Finest #1-3",
+    "Lucifer Vol. 1: El Diablo en el Umbral (Ovni)": "Sandman Presents: Lucifer #1-3 y Lucifer #1-4",
     "Batman: El Mundo": "Batman: The World (con historia inédita para la edición argentina)",
     "Superman: Año Uno": "Superman: Year One #1-3"
 };
