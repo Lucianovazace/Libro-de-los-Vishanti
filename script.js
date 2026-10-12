@@ -22553,6 +22553,13 @@ const RECOPILA_OVNI = {
     "Joker/Harley: Cordura Criminal": "Joker/Harley: Criminal Sanity #1-7 y Secret Files",
     "Batman: El Caballero Blanco Presenta - Harley Quinn": "Batman: White Knight Presents Harley Quinn #1-6",
     "Noches Oscuras: Death Metal #3": "Death Metal: Trinity Crisis y Death Metal: Speed Metal",
+    "La Nueva Historia del Universo DC": "The New History of the DC Universe #1-4",
+    "Liga de la Justicia Vol. 3: Intemporales": "Justice League (2016) #14-20",
+    "Liga de la Justicia Vol. 5: Justicia Perdida": "Justice League #34-43",
+    "Absolute Batman Vol.1": "Absolute Batman #1-6",
+    "Absolute Batman Vol. 2": "Absolute Batman #7-14",
+    "Absolute Batman Vol. 3": "Absolute Batman #15-18, 2025 Annual #1 y Ark M Special #1",
+    "Absolute Martian Manhunter Vol. 1": "Absolute Martian Manhunter #1-6",
     "Esenciales DC #25: ¡Invasión! (Ovni)": "Invasion! #1-3"
 };
 
@@ -22594,6 +22601,14 @@ const RECOPILA_OVNI_EXTRA = {
     "Sandman Vol. 5: Un Juego de Ti (Ovni)": "The Sandman #32-37",
     "Jóvenes Titanes: Raven (Ovni)": "Teen Titans: Raven",
     "Harley Quinn: Blanco + Negro + Rojo (Ovni)": "Harley Quinn Black + White + Red #1-17 y dos historias nuevas",
+    "Liga de la Justicia: Los Superhéroes Más Grandiosos de la Tierra (Ovni)": "Superman: Peace on Earth, Batman: War on Crime, Shazam!: Power of Hope, Wonder Woman: Spirit of Truth, JLA: Secret Origins, JLA: Liberty and Justice",
+    "Hellblazer de Jamie Delano: Pecados Originales (Ovni)": "Hellblazer #1-9",
+    "Hellblazer: Hábitos Peligrosos (Ovni)": "Hellblazer #41-46",
+    "Hellblazer: Escalera al Cielo (Ovni)": "Hellblazer #56-61 (la página lo llama Fear and Loathing; dudoso)",
+    "Hellblazer: Miedo y Odio (Ovni)": "Hellblazer #62-71 y Vertigo Jam #1",
+    "Hellblazer: Llamas de la Perdición (Ovni)": "Hellblazer #72-77 y Hellblazer Special #1",
+    "Hellblazer: Un Cínico a las Puertas del Infierno (Ovni)": "Hellblazer #78-83 y Heartland",
+    "Hellblazer: Hijo del Hombre (Ovni)": "Hellblazer #129-133",
     "Batman: El Mundo": "Batman: The World (con historia inédita para la edición argentina)",
     "Superman: Año Uno": "Superman: Year One #1-3"
 };
