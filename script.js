@@ -2638,6 +2638,10 @@ const listaMedia = [
     { titulo: "Must Have #14: Venom: Origen Oscuro", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "venom", tipo: "Cómic", poster: "https://i1.whakoom.com/small/28/19/a8d5c954aef1411586994dd53e36456c.jpg" },
     { titulo: "Los Villanos Mas Malvados de Marvel #4: MODOK: Equipo de Supervillanos MODOK's 11", categoria: "marvel-edad-moderna-2", editorial: "salvat", subtipo: "", tipo: "Cómic", poster: "https://i1.whakoom.com/large/16/35/1f3a5b5fc8ea45b6a30ca197fe958969" },
     { titulo: "Los Villanos Mas Malvados de Marvel #8: Venom: Origen Oscuro", categoria: "marvel-edad-moderna-2", editorial: "salvat", subtipo: "venom,spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/26/06/58a4b9812719400dae6e7665682786a8" },
+    { titulo: "Deadpool y Wolverine #1: Deadpool vs. Wolverine", categoria: "marvel-edad-moderna-2", editorial: "ovni", subtipo: "deadpool,x-men", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/004/072/631/products/deadpool-wolverine-2026-1000x1000_1-6e744c7a90a060c82617818770271746-640-0.webp" },
+    { titulo: "Deadpool y Wolverine #3: Deadpool: Todo en Familia", categoria: "marvel-edad-moderna-2", editorial: "ovni", subtipo: "deadpool", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/004/072/631/products/deadpool-wolverine-2026-1000x1000_3-cd38b835fa511cfe2e17818795660745-640-0.webp" },
+    { titulo: "Deadpool y Wolverine #4: Wolverine: Primera Generación", categoria: "marvel-edad-moderna-2", editorial: "ovni", subtipo: "x-men", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/004/072/631/products/deadpool-wolverine-2026-1000x1000_4-08e0f2724315301f8917818799158595-640-0.webp" },
+    { titulo: "Deadpool y Wolverine #9: Wolverine: Para Rusia con Amor", categoria: "marvel-edad-moderna-2", editorial: "ovni", subtipo: "x-men", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/004/072/631/products/deadpool-wolverine-2026-1000x1000_9-09-6c59a422d2eda62c6617818827525137-640-0.webp" },
     { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #13: El Poderoso Thor: En Busqueda de Los Dioses", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "thor", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1f/26/fe5b23eeab3c4c7d893903097059e86c.jpg" },
     { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #14: Capitan America: El Nuevo Pacto", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1a/3e/146d436912d243fda05ce1974382e334.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #49: El Increible Hulk: Planeta Hulk Parte 1", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/small/21/04/b1a70bb128124b0ba237153ca5d34a49.jpg" },
@@ -2845,6 +2849,12 @@ const listaMedia = [
     { titulo: "The Best of Marvel #3: Los Vengadores: La Hueste Final", categoria: "marvel-actualidad", editorial: "salvat", subtipo: "iron-man,thor,hulk,capitan-america", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/04/Best-of-marvel-03.jpg" },
     { titulo: "The Best of Marvel #2: X-Men: Dinastía de X / Potencias de X 1", categoria: "marvel-actualidad", editorial: "salvat", subtipo: "x-men", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/04/Best-of-marvel-02.jpg" },
     { titulo: "The Best of Marvel #7: X-Men: Dinastía de X / Potencias de X 2", categoria: "marvel-actualidad", editorial: "salvat", subtipo: "x-men", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/07/Best-of-marvel-07.jpg" },
+    { titulo: "Deadpool y Wolverine #2: X-Men '92: La Saga Continúa", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "x-men", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/004/072/631/products/deadpool-wolverine-2026-1000x1000_2-15d9ba82ce68c97b5517821488048166-640-0.webp" },
+    { titulo: "Deadpool y Wolverine #5: X-Men '92: Génesis X-Trema", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "x-men", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/004/072/631/products/deadpool-wolverine-2026-1000x1000_5-6182babf2f199fd16117821488281082-640-0.webp" },
+    { titulo: "Deadpool y Wolverine #8: X-Men '92: Lilapalooza", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "x-men", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/004/072/631/products/deadpool-wolverine-2026-1000x1000_8-9cc9c64661f74783e817821488461983-640-0.webp" },
+    { titulo: "Deadpool y Wolverine #10: X-Men '92: La Era de Krakoa", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "x-men", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/004/072/631/products/deadpool-wolverine-2026-1000x1000_10-f45f6514ce4eab888a17821488681767-640-0.webp" },
+    { titulo: "Deadpool y Wolverine #6: Wolverine: Parche", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "x-men", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/004/072/631/products/deadpool-wolverine-2026-1000x1000_6-1ecf17b2212573634d17818811205566-640-0.webp" },
+    { titulo: "Deadpool y Wolverine #7: Deadpool: Juegos Mentales", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "deadpool", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/004/072/631/products/deadpool-wolverine-2026-1000x1000_7-90635457bfed2942f917818815167690-640-0.webp" },
 
     // --- COLECCIÓN DEFINITIVA DE NOVELAS GRÁFICAS DE MARVEL (Salvat) ---
     { titulo: "Colección Definitiva de Novelas Gráficas de Marvel: #41", categoria: "marvel-novelas-graficas-definitiva", editorial: "salvat", subtipo: "marvel-zombies", tipo: "Cómic", poster: "https://www.quimeraquiroga.cl/cdn/shop/products/41_1200x1200.jpg?v=1629473875" },
@@ -5380,6 +5390,17 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "marvel-deadpool-wolverine",
+        etiqueta: "Colección",
+        titulo: "Deadpool y Wolverine (La Nación - Ovni)",
+        categoria: "colecciones-hub",
+        poster: "https://acdn-us.mitiendanube.com/stores/004/072/631/products/deadpool-wolverine-2026-1000x1000_1-6e744c7a90a060c82617818770271746-640-0.webp",
+        esContenedor: true,
+        categoriaEditorial: "marvel",
+        progresoPatron: "^Deadpool y Wolverine #(\\d+)",
+        peliculas: []
+    },
+    {
         id: "marvel-coleccion-clasica",
         etiqueta: "Colección",
         titulo: "Colección Clásica de Marvel (Salvat)",
@@ -6320,6 +6341,7 @@ function renderizarColecciones() {
         "avengers-mas-poderosos": "seccion-avengers-mas-poderosos",
         "superior-spider-man": "seccion-superior-spider-man",
         "marvel-best-of": "seccion-marvel-best-of",
+        "marvel-deadpool-wolverine": "seccion-marvel-deadpool-wolverine",
         "marvel-coleccion-clasica": "seccion-marvel-coleccion-clasica",
         "marvel-grandes-batallas": "seccion-marvel-grandes-batallas",
         "marvel-villanos-malvados": "seccion-marvel-villanos-malvados",
@@ -7289,6 +7311,17 @@ function renderizarContenido() {
                 if (grillaBestOfMarvel) grillaBestOfMarvel.insertAdjacentHTML('beforeend', htmlTarjetaBestOfMarvel);
             }
 
+            // Colección Deadpool y Wolverine (La Nación - Ovni): orden simple por número de tomo.
+            const matchDeadpoolWolverineLN = item.titulo.match(/^Deadpool y Wolverine #(\d+)/i);
+            if (matchDeadpoolWolverineLN) {
+                const htmlTarjetaDeadpoolWolverineLN = htmlTarjeta.replace(
+                    'class="tarjeta-media"',
+                    `class="tarjeta-media" data-dwln-num="${matchDeadpoolWolverineLN[1]}"`
+                );
+                const grillaDeadpoolWolverineLN = document.getElementById("grilla-marvel-deadpool-wolverine");
+                if (grillaDeadpoolWolverineLN) grillaDeadpoolWolverineLN.insertAdjacentHTML('beforeend', htmlTarjetaDeadpoolWolverineLN);
+            }
+
             // Colección Clásica de Marvel (Salvat): orden simple por número de entrega.
             const matchColClasicaMarvel = item.titulo.match(/^Coleccion Clasica de Marvel #(\d+)/i);
             if (matchColClasicaMarvel) {
@@ -7471,6 +7504,13 @@ function ordenarGrillaPorNumeroSalvat() {
         const tarjetasBestOfMarvel = Array.from(contenedorBestOfMarvel.querySelectorAll('.tarjeta-media'));
         tarjetasBestOfMarvel.sort((a, b) => parseInt(a.getAttribute('data-bom-num')) - parseInt(b.getAttribute('data-bom-num')));
         tarjetasBestOfMarvel.forEach(t => contenedorBestOfMarvel.appendChild(t));
+    }
+
+    const contenedorDeadpoolWolverineLN = document.getElementById('grilla-marvel-deadpool-wolverine');
+    if (contenedorDeadpoolWolverineLN) {
+        const tarjetasDeadpoolWolverineLN = Array.from(contenedorDeadpoolWolverineLN.querySelectorAll('.tarjeta-media'));
+        tarjetasDeadpoolWolverineLN.sort((a, b) => parseInt(a.getAttribute('data-dwln-num')) - parseInt(b.getAttribute('data-dwln-num')));
+        tarjetasDeadpoolWolverineLN.forEach(t => contenedorDeadpoolWolverineLN.appendChild(t));
     }
 
     const contenedorColClasicaMarvel = document.getElementById('grilla-marvel-coleccion-clasica');
@@ -21890,6 +21930,13 @@ if(btnVolverMarvelVillanosMalvados) {
 const btnVolverMarvelColClasica = document.getElementById('btn-volver-marvel-coleccion-clasica');
 if(btnVolverMarvelColClasica) {
     btnVolverMarvelColClasica.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolverMarvelDeadpoolWolverine = document.getElementById('btn-volver-marvel-deadpool-wolverine');
+if(btnVolverMarvelDeadpoolWolverine) {
+    btnVolverMarvelDeadpoolWolverine.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
     });
 }
