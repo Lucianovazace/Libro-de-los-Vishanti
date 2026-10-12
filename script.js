@@ -1614,7 +1614,6 @@ const listaMedia = [
     { titulo: "Batman #10: La Noche de Los Buhos - Parte 4", categoria: "los-nuevos-52-dc-argentina", editorial: "ecc-sudamerica", personajes: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/33/05/f5c60e6cd1b046aab1a7756bdd3b3c91.jpg" },
     { titulo: "Batman #11: La Noche de Los Buhos - Final", categoria: "los-nuevos-52-dc-argentina", editorial: "ecc-sudamerica", personajes: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/21/2d/933049817bf946f59ed848b56d4f7a6e.jpg" },
     { titulo: "DC Coleccion Heroes y Villanos #58: Escuadron Suicida: Patada en la Boca", categoria: "los-nuevos-52-dc-argentina", editorial: "salvat", personajes: "amanda-waller,escuadron-suicida,harley-quinn", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2024/10/9788447146925-58.webp" },
-    { titulo: "Batman vs Robin", categoria: "los-nuevos-52-dc-argentina", editorial: "ovni", personajes: "batman,ras-al-ghul", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vs_robin1-cb8bc14e49046ebd2316812693285754-640-0.webp" },
     { titulo: "Batwoman #1: Hidrologia", categoria: "los-nuevos-52-dc-argentina", editorial: "ecc-sudamerica", personajes: "batwoman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1d/2f/63d50a2305ce4ee38a23fcf2ce8a46b9.jpg" },
     { titulo: "Batwoman #2: Un Mundo Anegado", categoria: "los-nuevos-52-dc-argentina", editorial: "ecc-sudamerica", personajes: "batwoman", tipo: "Cómic", poster: "https://i1.whakoom.com/small/31/13/92aa7e784c054d6fb740291434fad7e7.jpg" },
     { titulo: "Flash #1: El Nuevo Universo DC Empieza Aqui", categoria: "los-nuevos-52-dc-argentina", editorial: "ecc-sudamerica", personajes: "flash-barry-allen", tipo: "Cómic", poster: "https://i1.whakoom.com/large/0d/21/f9db91af86834d68a456010cdeadc4ff.jpg" },
@@ -2095,6 +2094,7 @@ const listaMedia = [
     { titulo: "Detective Comics: Gotham Nocturna #4: Interludio", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,mr-freeze,ras-al-ghul,two-face", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/detective_comics_cov_vol_4-1b0117835bfbea4a3317558647010493-1024-1024.webp" },
     { titulo: "Detective Comics: Gotham Nocturna #5: Acto III", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,ras-al-ghul,two-face", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/detective_comics_cov_vol_5-f4daf93af63fe49f5b17636681072346-1024-1024.webp" },
     { titulo: "Batman de Chip Zdarsky #1: Respaldo", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2c/14/79c2dd4302684d059d04eb794367b1b9.jpg" },
+    { titulo: "Batman vs Robin", categoria: "infinite-frontier-dc", editorial: "ovni", personajes: "batman,ras-al-ghul", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vs_robin1-cb8bc14e49046ebd2316812693285754-640-0.webp" },
     { titulo: "Batman de Chip Zdarsky #2: El Bat-Man de Gotham", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vol-2_el_batman_de_gotham_cov-3d7f1de02e4ecf05d017256259109998-1024-1024.webp" },
     { titulo: "Batman de Chip Zdarsky #3: La Guerra de Gotham", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_la_guerra_de_gotham_cov-f7b20f7acc97ce59c717395429904193-1024-1024.webp" },
     { titulo: "Batman de Chip Zdarsky #4: Joker: Año Uno", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,joker", tipo: "Cómic", poster: "https://i1.whakoom.com/small/23/16/7462b97696174890ad9896ff42be22b9.jpg" },
@@ -2161,7 +2161,6 @@ const listaMedia = [
     { titulo: "Batman: Justicia Absoluta Vol. 1", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman,deathstroke,joker,killer-croc,riddler", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_justicia_absoluta_1_covs-2b2e46114a0a32b76617322857547468-1024-1024.webp" },
     { titulo: "Batman: Justicia Absoluta Vol. 2", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman,deathstroke,joker,killer-croc,riddler", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_justicia_absoluta_2_covs-65f7565042a2f415a317437479626735-640-0.webp" },
     { titulo: "Batman: La Carta Ganadora", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_-la_carta_ganadora-_cov-5197b196c6febef1fd17878513150760-1024-1024.webp" },
-    { titulo: "Batman y el Joker: Dúo Mortal", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman,harley-quinn,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_y_el_joker_duo_mortal_cov-0656de0f0b2f40c4b516995676897474-1024-1024.webp" },
     { titulo: "Batman: La Era Oscura", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_la_era_oscura_cov-2fec9970042e58a66317552251253019-640-0.webp" },
     { titulo: "Batman: Reptiliano", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman,killer-croc,penguin", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_reptiliano_cov1-c39302e4bf5864b44b16469494473838-640-0.webp" },
     { titulo: "Batman: Vampiro", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vampiro_cov-b7c08d5a081549ecf317065413017457-1024-1024.webp" },
@@ -22612,11 +22611,18 @@ const RECOPILA_OVNI = {
     "Batman: El Caballero Blanco Presenta - Generación Joker": "White Knight Presents: Generation Joker #1-6",
     "DCeased: La Guerra de los Dioses Zombie": "DCeased: War of the Undead Gods #1-8",
     "Batman: El Espejo Negro (Ovni)": "Detective Comics #871-881 (= Salvat Esenciales #23)",
-    "Batman y el Joker: Dúo Mortal": "Batman & The Joker: The Deadly Duo #1-7",
+    "Batman y El Joker: Dúo Mortal": "Batman & The Joker: The Deadly Duo #1-7",
     "Batman: Vampiro": "Batman & Dracula: Red Rain, Batman: Bloodstorm y Batman: Crimson Mist",
     "Superman: La Era Espacial": "Superman: Space Age #1-3",
     "Batman Inc.": "Batman Incorporated #1-8 y Leviathan Strikes! #1",
     "Las Aventuras de Batman Vol. 5": "The Batman Adventures #31-36 y Annual #2",
+    "El Joker Vol. 2": "The Joker (2020) #6-9 y Annual #1",
+    "El Joker Vol. 3": "The Joker (2020) #10-15",
+    "Batman vs Robin": "Batman vs. Robin #1-5, Lazarus Planet: Alpha y Omega",
+    "Escuadron Suicida: ¡Atrapen al Joker!": "Suicide Squad: Get Joker! #1-3",
+    "Batman: El Detective": "Batman: The Detective #1-6",
+    "Batman: Blanco y Negro Vol. 4": "Batman: Black & White (2013) #1-6",
+    "DC Comics Presenta: Superman/Wonder Woman: Grandes Heroes": "Wonder Woman 80th Anniversary 100-Page Super Spectacular y ¿Qué le sucedió al Hombre del Mañana? (Moore)",
     "Esenciales DC #25: ¡Invasión! (Ovni)": "Invasion! #1-3"
 };
 
@@ -22721,6 +22727,9 @@ const RECOPILA_OVNI_EXTRA = {
     "Lucifer Vol. 1: El Diablo en el Umbral (Ovni)": "Sandman Presents: Lucifer #1-3 y Lucifer #1-4",
     "Superman/Batman: Enemigos Públicos (Ovni)": "Superman/Batman #1-7",
     "Swamp Thing: Raíz de Toda Maldad (Ovni)": "Swamp Thing #140-150",
+    "Universo DC por Eduardo Risso (Ovni)": "Jonny Double #1-4, Heartthrobs #3, Flinch #2, Winter's Edge #1, Weird Western Tales #3, JSA All-Stars #6, Wednesday Comics y más",
+    "Batmanga Vol. 1 (Ovni)": "Batman: The Jiro Kuwata Batmanga cap. 1-19",
+    "La Muerte de Superman: 30 Aniversario (Ovni)": "The Death of Superman 30th Anniversary Special y Day of Doom",
     "Batman: El Mundo": "Batman: The World (con historia inédita para la edición argentina)",
     "Superman: Año Uno": "Superman: Year One #1-3"
 };
