@@ -1780,7 +1780,6 @@ const listaMedia = [
     { titulo: "Armagedón 2001", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "batman,flash-wally-west,green-lantern-guy-gardner,green-lantern-hal-jordan,liga,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/armagedon_2001_cov_arg-bf9ece492f90aaf6ef17758465134328-1024-1024.webp" },
     { titulo: "Esenciales DC #19: Batman: Veneno", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "bane,batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-veneno_cov_arg1-e9451fa68870b3cf7f16789392570876-640-0.webp" },
     { titulo: "Batman: Leyendas del Caballero Oscuro #13: Veneno", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "bane,batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_veneno_2da_cov-250c58f861dc0fc03317600407086103-640-0.webp" },
-    { titulo: "Superman: Doomsday", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "superman,doomsday", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_814135-MLA45284985089_032021-O.webp" },
     { titulo: "Esenciales DC #10: La Muerte de Superman", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "doomsday,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/la_muerte_de_superman_cov1-f00b8d36cb38aa084616336649847817-640-0.webp" },
     { titulo: "La Muerte de Superman", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "doomsday,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/la_muerte_de_superman_2da_cov1-5b6a1e3579ad88846416336646797558-640-0.webp" },
     { titulo: "DC Coleccion Novelas Graficas #18: Superman: La Muerte de Superman", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "doomsday,superman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/36/25/425b729305ea46ddba40b573a84f07dc.jpg" },
@@ -1788,8 +1787,8 @@ const listaMedia = [
     { titulo: "Superman: El Reino de Los Supermanes", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "superman,cyborg-superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/reino-de-los-supermanes-cov1-77983b8b7fb40ec32b15997760948652-1024-1024.webp" },
     { titulo: "Superman: El Regreso de Superman", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "superman,cyborg-superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/el-regreso-de-superman-cov1-ea44b6d18315687f7716076390430895-1024-1024.webp" },
     { titulo: "Superman: La Saga de Superboy", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_-_la_saga_de_superboy_cov-ce700dac78d91226fd17794625957093-640-0.webp" },
+    { titulo: "Superman: Doomsday", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "superman,doomsday", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_814135-MLA45284985089_032021-O.webp" },
     { titulo: "DC Coleccion Novelas Graficas #63: Superman: Krisis de la Kryptonita Karmesí", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "superman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1a/01/34845a557dad4e5ebf41846184fc24b8.jpg" },
-    { titulo: "Human Target: El Blanco Humano", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "human-target", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/human_target_el_blanco_humano_cov-deba4a965a611ddcb517679044734174-1024-1024.webp" },
     { titulo: "DC Coleccion Novelas Graficas #10: JLA: Año Uno - Parte 1", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,liga,superman,wonder-woman,martian-manhunter,flash-barry-allen,green-lantern-hal-jordan,aquaman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/14/09/7c1fbd1fbac14248b4fe564342eafafc.jpg" },
     { titulo: "DC Coleccion Novelas Graficas #11: JLA: Año Uno - Parte 2", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,liga,superman,wonder-woman,martian-manhunter,flash-barry-allen,green-lantern-hal-jordan,aquaman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/0c/3e/9124410c305443d3a9465de57b081ef0.jpg" },
     { titulo: "JLA Vol. 1: Nuevo Orden Mundial", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "aquaman,batman,flash-wally-west,green-lantern-guy-gardner,liga,martian-manhunter,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/jla_vol_1_cov-0b247ca6158935342217656503546676-1024-1024.webp" },
@@ -1862,7 +1861,6 @@ const listaMedia = [
     { titulo: "DC Coleccion Novelas Graficas #47: Wonder Woman: Los Ojos de La Gorgona", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "wonder-woman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1d/02/462e6db3eaf04f198b20f544daf46f11.jpg" },
     { titulo: "DC Coleccion Novelas Graficas #12: Superman / Shazam: Primer Trueno", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "superman,shazam", tipo: "Cómic", poster: "https://i1.whakoom.com/large/27/35/476c43c3486c44a0bd5d1fd227c9494e.jpg" },
     { titulo: "DC Coleccion Novelas Graficas #22: Lex Luthor: El Hombre de Acero", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "lex-luthor,superman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/07/12/7f83879679434eacb3a2548b56eba950.jpg" },
-    { titulo: "Wonder Woman: Sacrificio", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "liga,maxwell-lord,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/wonder_woman_vol_2_cov-f4638114fd1fcd5e3f17715403785100-640-0.webp" },
     { titulo: "DC Colección Heroes y Villanos #26: Crisis Infinita: Sacrificio", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "liga,maxwell-lord,superman,wonder-woman", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2024/05/26-Crisis-infinita-Sacrificio.webp" },
     { titulo: "DC Colección Heroes y Villanos #9: Wonder Woman: Reflexiones", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "wonder-woman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/14/38/e73080822150466b87410be3be7af449.jpg" },
     { titulo: "DC Coleccion Heroes y Villanos #60: Gotham Central: Blancos Faciles", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman", tipo: "Cómic", poster: "https://revisterianippur.com/wp-content/uploads/2024/10/9788447146925-60.webp" },
@@ -2051,6 +2049,7 @@ const listaMedia = [
     { titulo: "Estado Futuro: Superman/Wonder Woman Vol. 1", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/estado-futuro-superman-wonder-woman-vol-1-cov1-376cec8edd4c9e1f1516354361046045-640-0.webp" },
     { titulo: "Estado Futuro: Superman/Wonder Woman Vol. 2", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/estado-futuro-superman-wonder-woman-vol-21-bb88eb73c41f7fdea416378557927035-640-0.webp" },
     { titulo: "Frontera Infinita", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,liga,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/frontera-infinita-cov1-3dea1773da7ef4adbf16451886015034-640-0.webp" },
+    { titulo: "Human Target: El Blanco Humano", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "human-target", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/human_target_el_blanco_humano_cov-deba4a965a611ddcb517679044734174-1024-1024.webp" },
     { titulo: "Superman y Authority", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman-y-authority-cov1-d95cc91e4d3a0d170d16486984811993-640-0.webp" },
     { titulo: "Supergirl: La Mujer del Mañana", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "supergirl", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/super_girl_la_mujer_del_ma_c3_91ana_cov_2da_edicion-e2f22413a6a642e07317763666144014-1024-1024.webp" },
     { titulo: "Nightwing Vol. 1: Saltando a La Luz", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "dick-grayson", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/nightwing_cov-72451bc64a5779c7c617750833285312-640-0.webp" },
@@ -2096,6 +2095,7 @@ const listaMedia = [
     { titulo: "Poder Absoluto", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "amanda-waller,batman,liga,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/poder-absoluto-int-cov-2d7250dea58724471f17468211899245-640-0.webp" },
     { titulo: "Superman: El Ascenso de Superwoman", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "doomsday,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_el_ascenso_de_superwoman_cov-a1166e01a78a2534a017648981356569-1024-1024.webp" },
     { titulo: "Batman de Chip Zdarsky #6: Poder Absoluto", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "amanda-waller,batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vol_6_covs-7fb6dd2e994c21a41517473614887660-1024-1024.webp" },
+    { titulo: "Wonder Woman: Sacrificio", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "amanda-waller,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/wonder_woman_vol_2_cov-f4638114fd1fcd5e3f17715403785100-640-0.webp" },
     { titulo: "Batman de Chip Zdarsky #7: Ciudad Moribunda", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_ciudad_moribunda_cov-0a01a8c7faa9d26e6417576312593064-640-0.webp" },
     { titulo: "Liga de La Justicia Ilimitada Vol. 1: Somos Ayer", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,liga,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/liga_de_la_justicia_ilimitada_cov-e5f7fbdbcb94c867e017613104129096-640-0.webp" },
     { titulo: "Liga de La Justicia Ilimitada Vol. 2: El Acto Omega", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,liga,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/liga_de_la_justicia_ilimitada_el_acto_omega_cov-4ddff38cec55137caf17625197595223-1024-1024.webp" },
@@ -22386,6 +22386,33 @@ const RECO_TOKENS_IGNORADOS = new Set([
     'infinite-crisis', 'regreso-vida', 'caida-hal-jordan', 'crisis-final-blackest-night',
     'trinity-war', 'todos', 'liga', 'jsa'
 ]);
+
+// Contenido ("Recopila"/"Corresponde a") de los tomos de Ovni Press, leído de su
+// página oficial. Sirve para detectar tomos repetidos con otras ediciones.
+const RECOPILA_OVNI = {
+    "Batman: Justicia Ciega": "Detective Comics #598-600",
+    "Batman: Caballero Oscuro, Ciudad Oscura": "Batman #452-454, Detective Comics #629-633, 638 y 643",
+    "Flash Vol. 1: Velocidad Salvaje": "The Flash #1-14 y Annual #1 (1987)",
+    "Green Lantern: Sin Miedo": "Green Lantern #1-6 y Green Lantern: Recharge #1-5",
+    "JLA Vol. 2: La Roca de La Eternidad": "JLA #10-17, New Year's Evil: Prometheus #1, JLA/Wildcats #1, JLA Secret Files #2",
+    "Wonder Woman: Sacrificio": "Wonder Woman #7-12 (Tom King, 2024; incluye Poder Absoluto)",
+    "Universo DC Renacimiento": "DC Universe: Rebirth #1",
+    "Flash Vol. 1: El Relámpago Cae Dos Veces": "Flash Rebirth #1, Flash (2016) #1-8",
+    "Flash Vol. 4: Corriendo Aterrado": "Flash #23-27 (2016)",
+    "Superman: Nuevos Comienzos": "Superman #1-4, Action Comics #584-586, Adventures of Superman #424-426",
+    "Leyendas: Escuadron Suicida": "Suicide Squad #1-8, Secret Origins #14, Legends #1-6",
+    "Superman: Doomsday": "Doomsday Annual #1, Superman: The Doomsday Wars #1-3, Superman/Doomsday: Hunter/Prey #1-3",
+    "Superman: Funeral Para un Amigo": "Action #685-686, Adventures of Superman #498-500, Justice League America #70, Legacy of Superman #1, Supergirl and Team Luthor Special #1, Superman #76-77, Man of Steel #20-21",
+    "Superman: El Reino de Los Supermanes": "Action #687-688, Adventures of Superman #500-502, Superman #78-79, Superman Annual #5, Man of Steel #22-23 y Annual #2",
+    "Superman: El Regreso de Superman": "Action #689-692, Action Annual #5, Adventures of Superman #503-505, Adventures Annual #5, Green Lantern #46, Superman #80-83, Man of Steel #24-26",
+    "Batman: Diez Noches de La Bestia": "Batman #417-420 y #445-447",
+    "Batman: La Espada de Azrael": "Batman: Sword of Azrael #1-4",
+    "Batman: Año Dos": "Detective Comics #575-578 y Batman: Full Circle",
+    "Batman: Año Uno": "Batman #404-407",
+    "Human Target: El Blanco Humano": "Human Target #1-12 y Tales of the Human Target #1 (Tom King, 2021-22)",
+    "Batman: Una Muerte en La Familia ¡Robin Vive!": "(el Ovni 'Batman: Una Muerte en La Familia' recopila Batman #426-429, 440-442 y New Titans #60-61)",
+    "Esenciales DC #25: ¡Invasión! (Ovni)": "Invasion! #1-3"
+};
 
 function recoNormalizarClave(titulo) {
     let t = String(titulo || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
