@@ -1820,6 +1820,7 @@ const listaMedia = [
     { titulo: "DC Colección Heroes y Villanos #29: Green Lantern: Ocaso Esmeralda", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "green-lantern-hal-jordan", tipo: "Cómic", poster: "https://images.cdn2.buscalibre.com/fit-in/360x360/82/a4/82a4f1b4f6726adf76926464634c4d3f.jpg" },
     { titulo: "Esenciales DC #8: Hora Cero: Crisis en el Tiempo", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,green-lantern-hal-jordan,liga,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/hora-cero-cov-arg1-56b80fe7a5303ce08016221731674919-1024-1024.webp" },
     { titulo: "Esenciales DC #9: La Noche Final", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "green-lantern-hal-jordan,liga,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/la-noche-final-cov1-1b10cebc75f426b06b16312248170865-640-0.webp" },
+    { titulo: "Green Lantern: Caballeros Esmeralda", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "green-lantern-hal-jordan", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/green_lantern_-_caballeros_esmeralda_cov-4346afa99142f6af5f17437478591760-1024-1024.webp" },
     { titulo: "Batman: No Man's Land Vol. 1: Contagio", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_contagio_cov-2dcf32bf3bb4b03f4e17576310122216-1024-1024.webp" },
     { titulo: "Batman: No Man's Land Vol. 2: Legado", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "batman,ras-al-ghul", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_legado_cov-9e1019d9584d94661c17621746894434-1024-1024.webp" },
     { titulo: "Batman: No Man's Land Vol. 3: Cataciclismo Parte I", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_cataclismo_1_cov-d16053f47c149e24df17685738501642-1024-1024.webp" },
@@ -2040,7 +2041,6 @@ const listaMedia = [
     { titulo: "Superman de Brian Michael Bendis: Vol. 1 La Saga de La Unidad", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "rogol-zaar,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_bendis_vol_01_cov_arg1-06a81c185a1447b2d616190656058486-1024-1024.webp" },
     { titulo: "Superman de Brian Michael Bendis Vol. 2: La Verdad Revelada", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_bendis_vol_02_cov_arg1-d2edb58e31d0172c8f16294179181553-1024-1024.webp" },
     { titulo: "Green Lantern: Justicia Intergaláctica", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "green-lantern-hal-jordan", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/green_lantern_vol_01_cov1-c89f47245b1cc1dff415972488952095-1024-1024.webp" },
-    { titulo: "Green Lantern: Caballeros Esmeralda", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "green-lantern-hal-jordan", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/green_lantern_-_caballeros_esmeralda_cov-4346afa99142f6af5f17437478591760-1024-1024.webp" },
     { titulo: "Green Lantern: Temporada Dos", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "green-lantern-hal-jordan", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/green_lantern_vol_02_cov1-b6c2a2d7bf4fe3677d16263181577273-1024-1024.webp" },
     { titulo: "Green Lantern: Blackstars", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "green-lantern-hal-jordan", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/green_lantern_blackstars_cov1-a38250e1e185458cfa16136902045048-1024-1024.webp" },
     { titulo: "DC Comics: Generaciones", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/dc-comics-generaciones-cov1-ab5d7cc5dced5a503116348358169838-640-0.webp" },
@@ -22411,7 +22411,42 @@ const RECOPILA_OVNI = {
     "Batman: Año Uno": "Batman #404-407",
     "Human Target: El Blanco Humano": "Human Target #1-12 y Tales of the Human Target #1 (Tom King, 2021-22)",
     "Batman: Una Muerte en La Familia ¡Robin Vive!": "(el Ovni 'Batman: Una Muerte en La Familia' recopila Batman #426-429, 440-442 y New Titans #60-61)",
+    "Batman: Año Tres": "Batman #436-439 y Detective Comics #38",
+    "Batman: Caballero Maldito": "Legends of the Dark Knight Halloween Special, Madness y Ghosts (Haunted Knight, Loeb/Sale)",
+    "Superman: Hijo Rojo": "Superman: Red Son #1-3",
+    "Flash: Invasión (Flash Vol. 2: Invasion!)": "The Flash #15-28 y Manhunter #8-9",
+    "Flash Vol. 3: Conflicto Elemental": "The Flash Annual #2, The Flash #29-45",
+    "Flash Vol. 4: Carrera Contra el Tiempo": "The Flash Annual #3 y The Flash #45-55",
+    "Esenciales DC #1: Flashpoint Absoluto (Ovni)": "Flashpoint #1-5, Flashpoint: Reverse Flash y Flash #0",
+    "Esenciales DC #20: Flash: Renacimiento": "Flash: Rebirth #1-6",
+    "Esenciales DC #4: Crisis de Identidad": "Identity Crisis #1-7",
+    "JLA: El Clavo": "JLA: The Nail #1-3 y JLA: Another Nail #1-3",
+    "Esenciales DC #18: Green Lantern: Renacimiento": "Green Lantern: Rebirth #1-6 y dos historias de GL Secret Files & Origins 2005",
+    "Esenciales DC #6: Green Lantern: Ocaso Esmeralda": "Green Lantern #48-55 (1994)",
+    "Green Lantern: Caballeros Esmeralda": "Green Lantern #100-106 y Green Arrow #136 (1998)",
+    "Esenciales DC #11: La Noche Mas Oscura": "DC Universe #0, Blackest Night #0-8, Green Lantern #43, Untold Tales of Blackest Night #1, Batman #682-683",
+    "Armagedón 2001": "Armageddon 2001 #1-2, Justice League Annual #5, JL Europe Annual #2, Armageddon 2001: Alien Agenda #1-4",
+    "Wonder Woman: Año Uno": "Wonder Woman (2016) #2, 4, 6, 8, 10, 12, 14 y Annual #1 = Salvat HyV #34",
+    "JLA Vol. 1: Nuevo Orden Mundial": "JLA #1-9 y JLA Secret Files #1 = Salvat NG #52",
+    "El Día Más Brillante": "Brightest Day #0-24",
+    "Crisis en Tierras Infinitas (Deluxe, 2da ed.)": "Crisis on Infinite Earths #1-12, Legends of the DC Universe: Crisis on Infinite Earths y History of the DC Universe = Salvat Es #2 / HyV #30 y #35",
     "Esenciales DC #25: ¡Invasión! (Ovni)": "Invasion! #1-3"
+};
+
+
+// Productos de Ovni que todavía no están cargados en el sitio. Si se agregan,
+// sirven para saber con qué otra edición coinciden.
+const RECOPILA_OVNI_EXTRA = {
+    "Superman: El Hombre de Acero (Ovni)": "The Man of Steel #1-6 (Byrne, 1986) = Salvat Esenciales #17 / HyV #42",
+    "El Hombre de Acero (Ovni, Bendis)": "Action Comics #1000, DC Nation #0, The Man of Steel #1-6 (Bendis, 2018)",
+    "La Muerte de Superman (Ovni)": "Action #683-684, Adventures of Superman #496-497, Justice League America #69, Superman #73-75, Man of Steel #17-19, Newstime: The Life and Death of the Man of Steel = Salvat Esenciales #10 / NG #18",
+    "Superman: Por el Mañana (Ovni)": "Superman #204-215 (Azzarello/Lee, 2004) = Salvat Esenciales #27",
+    "Batman: Hush (2da edición)": "Batman #608-619, Wizard #0 = Salvat Esenciales #7 / NG #1-2",
+    "Batman: Historias del Demonio": "Batman #232, 235, 240, 242-244, DC Special Series #15, Detective Comics #411, 485, 489-490 = Salvat Esenciales #21",
+    "Batman: La Trilogía del Demonio": "tres novelas gráficas de Ra's al Ghul = Salvat Esenciales #22",
+    "Batman: La Era Oscura": "Batman: Dark Age #1-6",
+    "Batman: El Mundo": "Batman: The World (con historia inédita para la edición argentina)",
+    "Superman: Año Uno": "Superman: Year One #1-3"
 };
 
 function recoNormalizarClave(titulo) {
@@ -22463,6 +22498,7 @@ const EQUIV_ALIAS_PARTES = [
     { todo: ['marvel ultimate edicion integral 3 the ultimates 01 vengadores'], partes: [['los ultimates superhumano'], ['los ultimates seguridad nacional']] },
     // Ovni incluye además Legends #1-6; el Salvat (HyV #45) es Suicide Squad #1-8 + Secret Origins #14
     { todo: ['leyendas escuadron suicida'], partes: [['escuadron suicida prueba de fuego']] },
+    { todo: ['flashpoint absoluto'], partes: [['flashpoint']] },
     { todo: ['batman el detective'], partes: [['batman detective parte 1'], ['batman detective parte 2']] },
     { todo: ['dc la nueva frontera'], partes: [['dc la nueva frontera parte 1'], ['dc la nueva frontera parte 2']] },
     { todo: [], partes: [['jla ano uno parte 1', 'jla ano uno parte uno'], ['jla ano uno parte 2', 'jla ano uno parte dos']] }
