@@ -2777,6 +2777,9 @@ const listaMedia = [
     { titulo: "Spider-Man: La Colección Definitiva #43: La araña y la llama", categoria: "marvel-edad-moderna-2", editorial: "salvat", subtipo: "spider-man", tipo: "Cómic", poster: "data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 300%22%3E%3Crect width=%22200%22 height=%22300%22 fill=%22%23a6192e%22/%3E%3Crect x=%2210%22 y=%2210%22 width=%22180%22 height=%22280%22 fill=%22none%22 stroke=%22%231b3a8a%22 stroke-width=%224%22/%3E%3Ctext x=%22100%22 y=%2250%22 font-size=%2215%22 font-family=%22Georgia,serif%22 fill=%22%23fff%22 text-anchor=%22middle%22%3ESPIDER-MAN%3C/text%3E%3Ctext x=%22100%22 y=%22140%22 font-size=%2222%22 font-family=%22Georgia,serif%22 fill=%22%23fff%22 text-anchor=%22middle%22%3ELa ara%C3%B1a y la%3C/text%3E%3Ctext x=%22100%22 y=%22166%22 font-size=%2222%22 font-family=%22Georgia,serif%22 fill=%22%23fff%22 text-anchor=%22middle%22%3Ellama%3C/text%3E%3C/svg%3E" },
     { titulo: "Spider-Man: La Colección Definitiva #48: El otro. Primera parte", categoria: "marvel-edad-moderna-2", editorial: "salvat", subtipo: "spider-man", tipo: "Cómic", poster: "data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 300%22%3E%3Crect width=%22200%22 height=%22300%22 fill=%22%23a6192e%22/%3E%3Crect x=%2210%22 y=%2210%22 width=%22180%22 height=%22280%22 fill=%22none%22 stroke=%22%231b3a8a%22 stroke-width=%224%22/%3E%3Ctext x=%22100%22 y=%2250%22 font-size=%2215%22 font-family=%22Georgia,serif%22 fill=%22%23fff%22 text-anchor=%22middle%22%3ESPIDER-MAN%3C/text%3E%3Ctext x=%22100%22 y=%22140%22 font-size=%2222%22 font-family=%22Georgia,serif%22 fill=%22%23fff%22 text-anchor=%22middle%22%3EEl otro.%3C/text%3E%3Ctext x=%22100%22 y=%22166%22 font-size=%2222%22 font-family=%22Georgia,serif%22 fill=%22%23fff%22 text-anchor=%22middle%22%3EPrimera parte%3C/text%3E%3C/svg%3E" },
     { titulo: "Spider-Man: La Colección Definitiva #49: El otro. Segunda parte", categoria: "marvel-edad-moderna-2", editorial: "salvat", subtipo: "spider-man", tipo: "Cómic", poster: "data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 300%22%3E%3Crect width=%22200%22 height=%22300%22 fill=%22%23a6192e%22/%3E%3Crect x=%2210%22 y=%2210%22 width=%22180%22 height=%22280%22 fill=%22none%22 stroke=%22%231b3a8a%22 stroke-width=%224%22/%3E%3Ctext x=%22100%22 y=%2250%22 font-size=%2215%22 font-family=%22Georgia,serif%22 fill=%22%23fff%22 text-anchor=%22middle%22%3ESPIDER-MAN%3C/text%3E%3Ctext x=%22100%22 y=%22140%22 font-size=%2222%22 font-family=%22Georgia,serif%22 fill=%22%23fff%22 text-anchor=%22middle%22%3EEl otro.%3C/text%3E%3Ctext x=%22100%22 y=%22166%22 font-size=%2222%22 font-family=%22Georgia,serif%22 fill=%22%23fff%22 text-anchor=%22middle%22%3ESegunda parte%3C/text%3E%3C/svg%3E" },
+    { titulo: "Coleccionable Clarín Spider-Man #1: El Otro (Evoluciona o Muere) Parte 1", categoria: "marvel-edad-moderna-2", editorial: "clarin", subtipo: "spider-man", tipo: "Cómic", poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1367687475i/17882398._SY180_.jpg" },
+    { titulo: "Coleccionable Clarín Spider-Man #2: El Otro (Evoluciona o Muere) Parte 2", categoria: "marvel-edad-moderna-2", editorial: "clarin", subtipo: "spider-man", tipo: "Cómic", poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1370309039i/18038479._SY180_.jpg" },
+    { titulo: "Coleccionable Clarín Spider-Man #3: El Otro (Evoluciona o Muere) Parte 3", categoria: "marvel-edad-moderna-2", editorial: "clarin", subtipo: "spider-man", tipo: "Cómic", poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1370309662i/18038485._SY180_.jpg" },
     { titulo: "Spider-Man: La Colección Definitiva #50: Salvaje", categoria: "marvel-edad-moderna-2", editorial: "salvat", subtipo: "spider-man", tipo: "Cómic", poster: "data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 300%22%3E%3Crect width=%22200%22 height=%22300%22 fill=%22%23a6192e%22/%3E%3Crect x=%2210%22 y=%2210%22 width=%22180%22 height=%22280%22 fill=%22none%22 stroke=%22%231b3a8a%22 stroke-width=%224%22/%3E%3Ctext x=%22100%22 y=%2250%22 font-size=%2215%22 font-family=%22Georgia,serif%22 fill=%22%23fff%22 text-anchor=%22middle%22%3ESPIDER-MAN%3C/text%3E%3Ctext x=%22100%22 y=%22140%22 font-size=%2222%22 font-family=%22Georgia,serif%22 fill=%22%23fff%22 text-anchor=%22middle%22%3ESalvaje%3C/text%3E%3C/svg%3E" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #29: Guerra Secreta", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "iron-man,capitan-america,spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/2c/2d/af07971c749d4771b10196e8cc2c556c.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #30: She-Hulk: Verde y Soltera", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "she-hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/small/30/04/6de4edb0484c42829692dc74a1dc5671.jpg" },
@@ -2834,6 +2837,12 @@ const listaMedia = [
     { titulo: "Marvel Excelsior #2: Civil War", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "iron-man,capitan-america,spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/32/33/267ca3ebf1e04726a07ba61349136f90.jpg" },
     { titulo: "Marvel Grandes Batallas #1: Civil War: Parte 1", categoria: "marvel-edad-moderna-2", editorial: "salvat", subtipo: "iron-man,capitan-america,spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/11/3c/6feda79c912a45f79f8d95756e513e6b" },
     { titulo: "Marvel Grandes Batallas #11: Civil War: Parte 2", categoria: "marvel-edad-moderna-2", editorial: "salvat", subtipo: "iron-man,capitan-america,spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/01/01/581f23078ea245dbb00eb99b3897a415" },
+    { titulo: "Coleccionable Clarín Spider-Man #4: Guerra Civil Parte 1", categoria: "marvel-edad-moderna-2", editorial: "clarin", subtipo: "spider-man", tipo: "Cómic", poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1370310285i/18038502._SY180_.jpg" },
+    { titulo: "Coleccionable Clarín Spider-Man #5: Guerra Civil Parte 2", categoria: "marvel-edad-moderna-2", editorial: "clarin", subtipo: "spider-man", tipo: "Cómic", poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1370311982i/18038507._SY180_.jpg" },
+    { titulo: "Coleccionable Clarín Spider-Man #6: Guerra Civil Parte 3", categoria: "marvel-edad-moderna-2", editorial: "clarin", subtipo: "spider-man", tipo: "Cómic", poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1370312353i/18038540._SY180_.jpg" },
+    { titulo: "Coleccionable Clarín Spider-Man #7: Guerra Civil Parte 4", categoria: "marvel-edad-moderna-2", editorial: "clarin", subtipo: "spider-man", tipo: "Cómic", poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1370313807i/18038553._SX120_.jpg" },
+    { titulo: "Coleccionable Clarín Spider-Man #8: De Vuelta al Negro Parte 1", categoria: "marvel-edad-moderna-2", editorial: "clarin", subtipo: "spider-man", tipo: "Cómic", poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1370314909i/18038568._SY180_.jpg" },
+    { titulo: "Coleccionable Clarín Spider-Man #9: De Vuelta al Negro Parte 2", categoria: "marvel-edad-moderna-2", editorial: "clarin", subtipo: "spider-man", tipo: "Cómic", poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1370315193i/18038577._SY180_.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #73: Union Jack", categoria: "marvel-edad-moderna-2", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/04/3d/755fc64897c34223b3fb830ce0488a5a.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #28: Iron Fist", categoria: "marvel-edad-moderna-2", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/07/18/0cd13664b1c347d0a1e754dbe58a9ada.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #29: Blade", categoria: "marvel-edad-moderna-2", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/12/08/6353697e6b4c4ca8a5bf540bfbcde352.jpg" },
@@ -2843,8 +2852,14 @@ const listaMedia = [
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #52: Thor: Renacido", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/19/07/67f91d707f7f4008a465a107071d1304.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #53: La Muerte del Capitan America", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/small/20/0a/bb04887e7b0a48df8aacc92b7f4429c6.jpg" },
     { titulo: "Marvel Excelsior #9: La Muerte del Capitan America", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0a/01/a64b29d160c5402db97902f711eaa69f.jpg" },
+    { titulo: "Coleccionable Clarín Spider-Man #10: Un Día Más (One More Day)", categoria: "marvel-edad-moderna-2", editorial: "clarin", subtipo: "spider-man", tipo: "Cómic", poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348517721i/1791288._SY180_.jpg" },
     { titulo: "Spider-Man: La Colección Definitiva #51: Un día más", categoria: "marvel-edad-moderna-2", editorial: "salvat", subtipo: "spider-man", tipo: "Cómic", poster: "data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 300%22%3E%3Crect width=%22200%22 height=%22300%22 fill=%22%23a6192e%22/%3E%3Crect x=%2210%22 y=%2210%22 width=%22180%22 height=%22280%22 fill=%22none%22 stroke=%22%231b3a8a%22 stroke-width=%224%22/%3E%3Ctext x=%22100%22 y=%2250%22 font-size=%2215%22 font-family=%22Georgia,serif%22 fill=%22%23fff%22 text-anchor=%22middle%22%3ESPIDER-MAN%3C/text%3E%3Ctext x=%22100%22 y=%22140%22 font-size=%2222%22 font-family=%22Georgia,serif%22 fill=%22%23fff%22 text-anchor=%22middle%22%3EUn d%C3%ADa m%C3%A1s%3C/text%3E%3C/svg%3E" },
     { titulo: "Spider-Man: La Colección Definitiva #52: Un nuevo día", categoria: "marvel-edad-moderna-2", editorial: "salvat", subtipo: "spider-man", tipo: "Cómic", poster: "data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 300%22%3E%3Crect width=%22200%22 height=%22300%22 fill=%22%23a6192e%22/%3E%3Crect x=%2210%22 y=%2210%22 width=%22180%22 height=%22280%22 fill=%22none%22 stroke=%22%231b3a8a%22 stroke-width=%224%22/%3E%3Ctext x=%22100%22 y=%2250%22 font-size=%2215%22 font-family=%22Georgia,serif%22 fill=%22%23fff%22 text-anchor=%22middle%22%3ESPIDER-MAN%3C/text%3E%3Ctext x=%22100%22 y=%22140%22 font-size=%2222%22 font-family=%22Georgia,serif%22 fill=%22%23fff%22 text-anchor=%22middle%22%3EUn nuevo d%C3%ADa%3C/text%3E%3C/svg%3E" },
+    { titulo: "Coleccionable Clarín Spider-Man #11: Un Nuevo Día Parte 1", categoria: "marvel-edad-moderna-2", editorial: "clarin", subtipo: "spider-man", tipo: "Cómic", poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1370327449i/18038714._SY180_.jpg" },
+    { titulo: "Coleccionable Clarín Spider-Man #12: Un Nuevo Día Parte 2", categoria: "marvel-edad-moderna-2", editorial: "clarin", subtipo: "spider-man", tipo: "Cómic", poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1370328738i/18038732._SY180_.jpg" },
+    { titulo: "Coleccionable Clarín Spider-Man #13: Un Nuevo Día Parte 3", categoria: "marvel-edad-moderna-2", editorial: "clarin", subtipo: "spider-man", tipo: "Cómic", poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1370329155i/18038743._SY180_.jpg" },
+    { titulo: "Coleccionable Clarín Spider-Man #14: Un Nuevo Día Parte 4", categoria: "marvel-edad-moderna-2", editorial: "clarin", subtipo: "spider-man", tipo: "Cómic", poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1370329344i/18038747._SY180_.jpg" },
+    { titulo: "Coleccionable Clarín Spider-Man #15: Un Nuevo Día Parte 5", categoria: "marvel-edad-moderna-2", editorial: "clarin", subtipo: "spider-man", tipo: "Cómic", poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1370329514i/18038749._SY180_.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #54: Guerra Mundial Hulk", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/small/14/23/cc4ff4d779f0453dac156c38340fdb13.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #3: Wolverine", categoria: "marvel-edad-moderna-2", editorial: "salvat", subtipo: "wolverine", tipo: "Cómic", poster: "https://i1.whakoom.com/large/19/23/3270ab39a803486eb6f91f72cb27a324.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #64: Hulk Rojo", categoria: "marvel-edad-moderna-2", editorial: "salvat", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/large/36/32/14467d7a10704889b0dd10da7df7248d.jpg" },
@@ -5579,6 +5594,17 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "marvel-spiderman-clarin",
+        etiqueta: "Colección",
+        titulo: "Spider-Man (Coleccionable Clarín)",
+        categoria: "colecciones-hub",
+        poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1367687475i/17882398._SY180_.jpg",
+        esContenedor: true,
+        categoriaEditorial: "marvel",
+        progresoPatron: "^Coleccionable Clar[ií]n Spider-Man #(\\d+)",
+        peliculas: []
+    },
+    {
         id: "marvel-spiderman-coleccion-definitiva",
         etiqueta: "Colección",
         titulo: "Spider-Man: La Colección Definitiva (Salvat)",
@@ -6541,6 +6567,7 @@ function renderizarColecciones() {
         "avengers-mas-poderosos": "seccion-avengers-mas-poderosos",
         "superior-spider-man": "seccion-superior-spider-man",
         "marvel-best-of": "seccion-marvel-best-of",
+        "marvel-spiderman-clarin": "seccion-marvel-spiderman-clarin",
         "marvel-spiderman-coleccion-definitiva": "seccion-marvel-spiderman-coleccion-definitiva",
         "marvel-deadpool-wolverine": "seccion-marvel-deadpool-wolverine",
         "marvel-coleccion-clasica": "seccion-marvel-coleccion-clasica",
@@ -7523,6 +7550,17 @@ function renderizarContenido() {
                 if (grillaSpiderManCD) grillaSpiderManCD.insertAdjacentHTML('beforeend', htmlTarjetaSpiderManCD);
             }
 
+            // Coleccionable Clarín Spider-Man: orden por número.
+            const matchSpiderManClarin = item.titulo.match(/^Coleccionable Clar[ií]n Spider-Man #(\d+)/i);
+            if (matchSpiderManClarin) {
+                const htmlTarjetaSpiderManClarin = htmlTarjeta.replace(
+                    'class="tarjeta-media"',
+                    `class="tarjeta-media" data-smcl-num="${matchSpiderManClarin[1]}"`
+                );
+                const grillaSpiderManClarin = document.getElementById("grilla-marvel-spiderman-clarin");
+                if (grillaSpiderManClarin) grillaSpiderManClarin.insertAdjacentHTML('beforeend', htmlTarjetaSpiderManClarin);
+            }
+
             // Colección Deadpool y Wolverine (La Nación - Ovni): orden simple por número de tomo.
             const matchDeadpoolWolverineLN = item.titulo.match(/^Deadpool y Wolverine #(\d+)/i);
             if (matchDeadpoolWolverineLN) {
@@ -7723,6 +7761,13 @@ function ordenarGrillaPorNumeroSalvat() {
         const tarjetasSpiderManCD = Array.from(contenedorSpiderManCD.querySelectorAll('.tarjeta-media'));
         tarjetasSpiderManCD.sort((a, b) => parseInt(a.getAttribute('data-smcd-num')) - parseInt(b.getAttribute('data-smcd-num')));
         tarjetasSpiderManCD.forEach(t => contenedorSpiderManCD.appendChild(t));
+    }
+
+    const contenedorSpiderManClarin = document.getElementById('grilla-marvel-spiderman-clarin');
+    if (contenedorSpiderManClarin) {
+        const tarjetasSpiderManClarin = Array.from(contenedorSpiderManClarin.querySelectorAll('.tarjeta-media'));
+        tarjetasSpiderManClarin.sort((a, b) => parseInt(a.getAttribute('data-smcl-num')) - parseInt(b.getAttribute('data-smcl-num')));
+        tarjetasSpiderManClarin.forEach(t => contenedorSpiderManClarin.appendChild(t));
     }
 
     const contenedorDeadpoolWolverineLN = document.getElementById('grilla-marvel-deadpool-wolverine');
@@ -22135,6 +22180,13 @@ if(btnVolverMarvelBestOf) {
 const btnVolverMarvelSpiderManCD = document.getElementById('btn-volver-marvel-spiderman-coleccion-definitiva');
 if(btnVolverMarvelSpiderManCD) {
     btnVolverMarvelSpiderManCD.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolverMarvelSpiderManClarin = document.getElementById('btn-volver-marvel-spiderman-clarin');
+if(btnVolverMarvelSpiderManClarin) {
+    btnVolverMarvelSpiderManClarin.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
     });
 }
