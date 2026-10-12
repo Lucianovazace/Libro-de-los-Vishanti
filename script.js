@@ -22564,6 +22564,9 @@ const RECOPILA_OVNI = {
     "Absolute Wonder Woman Vol.2": "Absolute Wonder Woman #8-14",
     "Absolute Martian Manhunter Vol. 2": "Absolute Martian Manhunter #7-12",
     "Batman: El Contraataque del Caballero Oscuro": "Batman: The Dark Knight Strikes Again #1-3",
+    "Superman: La Saga de Superboy": "Action Comics #587-593, Superman #5-9 y Legion of Super-Heroes #37-38",
+    "Liga de La Justicia Vol. 3: Hawkworld": "Justice League #13-18 y Justice League Annual #1",
+    "Batman: Tierra Uno": "Batman: Earth One vol. 1-3",
     "Esenciales DC #25: ¡Invasión! (Ovni)": "Invasion! #1-3"
 };
 
@@ -22625,6 +22628,13 @@ const RECOPILA_OVNI_EXTRA = {
     "Preacher Libro Cinco (Ovni)": "Preacher #41-54",
     "Preacher Libro Seis (Ovni)": "Preacher #55-66",
     "Hellblazer: Sangre Real (Ovni)": "Hellblazer #47-50 y 52-55",
+    "Preacher Libro Dos (Ovni)": "Preacher #13-26",
+    "Sandman Vol. 1: Preludios y Nocturnos (Ovni)": "The Sandman #1-8",
+    "Sandman Vol. 2: La Casa de Muñecas (Ovni)": "The Sandman #9-16",
+    "Sandman Vol. 9: Las Benévolas (Ovni)": "The Sandman #57-69 y Vertigo Jam #1",
+    "Sandman Vol. 10: El Velatorio (Ovni)": "The Sandman #70-75",
+    "Sandman Vol. 11: Noches Eternas (Ovni)": "Sandman: Endless Nights #1-6",
+    "Watchmen (Ovni)": "Watchmen #1-12",
     "Batman: El Mundo": "Batman: The World (con historia inédita para la edición argentina)",
     "Superman: Año Uno": "Superman: Year One #1-3"
 };
