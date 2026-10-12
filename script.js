@@ -1571,6 +1571,7 @@ const listaMedia = [
     { titulo: "DC Comics Presenta: Superman/Wonder Woman: Grandes Heroes", categoria: "pre-crisis-dc", editorial: "ovni", subtipo: "superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/dccp_superman_wonder_woman_cov_arg1-3c79b9b23f63c6b92516899570315308-1024-1024.webp" },
     { titulo: "La Nueva Historia del Universo DC", categoria: "pre-crisis-dc", editorial: "ovni", subtipo: "batman,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/la_nueva_historia_del_universo_dc_cov-fa5b6d2b4fe529213217782603281114-1024-1024.webp" },
     { titulo: "La Otra Historia del Universo DC", categoria: "pre-crisis-dc", editorial: "ovni", subtipo: "outsiders", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/la-otra-historia-del-universo-dc-cov1-0065b460bef39851fe16439026062386-1024-1024.webp" },
+    { titulo: "Saga de Swamp Thing: Libro Uno", categoria: "pre-crisis-dc", editorial: "ovni", subtipo: "", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/swampthingvol011-421da42f50800df83f15908676751765-1024-1024.webp" },
     { titulo: "Watchmen", categoria: "pre-crisis-dc", editorial: "ovni", subtipo: "dr-manhattan", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/watchmen-4ta-edicion-cov1-c72d3ff28b55f5382616209476061039-1024-1024.webp" },
     { titulo: "DC Colección Heroes y Villanos #25: Liga de La Justicia de America: Crisis en Nueva Genesis", categoria: "pre-crisis-dc", editorial: "salvat", subtipo: "darkseid,liga", tipo: "Cómic", poster: "https://i1.whakoom.com/large/0c/08/0128bc65f3654ac4a69d33c65725c2e6.jpg" },
     { titulo: "DC Colección Heroes y Villanos #22: Superman: El Hombre Que Lo Tenia Todo", categoria: "pre-crisis-dc", editorial: "salvat", subtipo: "superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/057/977/products/hyv_22_superman_el_hombre_que_lo_tenia_todo_cover_def1-faf3821dfd373b747316714217370660-640-0.webp" },
@@ -2166,6 +2167,7 @@ const listaMedia = [
     { titulo: "Batman: Último Caballero en la Tierra", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_ultimo_caballero_en_la_tierra_cov1-ac627f9f4cc855560715948590044699-1024-1024.webp" },
     { titulo: "Batman: Joker", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batmanjokervol011-442925537bd1ad6f2915908776239475-1024-1024.webp" },
     { titulo: "Batman: Europa", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batmantomo05europacovvol171-fc694c67089b18979615908775681882-1024-1024.webp" },
+    { titulo: "Harleen", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "harley-quinn", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/harleen_cov1-8f90211022555f620415948599218803-1024-1024.webp" },
     { titulo: "Batman: Caballero Oscuro III: La Raza Superior", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/dark_knight_iii_cov_arg1-b2ad2a2b32c21e690715952935768246-1024-1024.webp" },
     { titulo: "Batman: Gargola de Gotham", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_-la_g_c3_81rgola_de_gotham-_cov-c9ffb9636b712c1ffe17849040300962-1024-1024.webp" },
     { titulo: "Batman: Gotham: Luz de Gas", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_luz_de_gas_cov_2da_ed-4c12259aa42c33930517835531990716-640-0.webp" },
@@ -22710,6 +22712,9 @@ const RECOPILA_OVNI = {
     "Batman: Último Caballero en la Tierra": "Batman: Last Knight on Earth #1-3",
     "Batman: Joker": "Joker (2008, Azzarello/Bermejo)",
     "Batman: Europa": "Batman: Europa #1-4",
+    "Saga de Swamp Thing: Libro Uno": "Saga of the Swamp Thing #20-27",
+    "Harleen": "Harleen (Black Label, Stjepan Šejić; 3 libros)",
+    "Esenciales DC #3: Heroes en Crisis": "Heroes in Crisis #1-9",
     "Esenciales DC #25: ¡Invasión! (Ovni)": "Invasion! #1-3"
 };
 
