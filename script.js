@@ -1884,6 +1884,7 @@ const listaMedia = [
     { titulo: "DC Coleccion Heroes y Villanos #71: Hawkman: La Leyenda", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "hawkman", tipo: "Cómic", poster: "https://imagessl5.casadellibro.com/a/l/s7/75/9788419263575.webp" },
     { titulo: "DC Coleccion Heroes y Villanos #75: Nightwing: Un Caballero en Blüdhaven", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "dick-grayson", tipo: "Cómic", poster: "https://www.milcomics.com/1454259-thickbox_default/coleccion-heroes-y-villanos-vol-75-nightwing-un-caballero-en-bludhaven.jpg" },
     { titulo: "DC Coleccion Heroes y Villanos #77: Supergirl: El Reino de Los Superhombres Ciborg", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "cyborg-superman,supergirl", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_717963-MLA85362108152_062025-O.webp" },
+    { titulo: "Supergirl: Cuerpo y Alma", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "supergirl", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/supergirl_cov-2a62546fd56ccbd35017812119110045-1024-1024.webp" },
     { titulo: "DC Coleccion Heroes y Villanos #78: Liga de La Justicia: Pesadilla de Verano", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "liga", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_660154-MLA86040343898_062025-O.webp" },
     { titulo: "DC Coleccion Heroes y Villanos #79: Batman: Caballeros de Gotham", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/36/18/1002c0cea69c447392ba6bce228d2295.jpg" },
     { titulo: "Coleccion Batman 80 Aniversario #7: La Secta", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batmanlasectavol071-7bfa990057aebf78d715908777068862-1024-1024.webp" },
@@ -2174,7 +2175,6 @@ const listaMedia = [
     { titulo: "Nuevas Historias del Multiverso Oscuro DC", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman,liga,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/historias_del_multiverso_oscuro_2_cov_arg1-639855692f47b4df7d16179069654538-640-0.webp" },
     { titulo: "One Operation Joker Vol. 1", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/oneoperationjoker1jacket-46766b9e7cea90ee8b17262292260465-640-0.webp" },
     { titulo: "One Operation Joker Vol. 2", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/oneoperationjoker2portada_v2-1-ab5e51daaabda5093a17669295237293-1024-1024.webp" },
-    { titulo: "Supergirl: Cuerpo y Alma", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "supergirl", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/supergirl_cov-2a62546fd56ccbd35017812119110045-1024-1024.webp" },
     { titulo: "Supergirl: El Mundo", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "supergirl", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/supergirl_el_mundo_cov_a-4703e04502708c232c17801456762231-1024-1024.webp" },
     { titulo: "Superman: Año Uno", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_ano_uno-cov-arg1-7fb6a708400d7a3d4616021734925874-640-0.webp" },
     { titulo: "Coleccion Batman 80 Aniversario #1: Batman a Traves de las Decadas", categoria: "elseworlds-otros-dc", editorial: "salvat", subtipo: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/3c/2d/d74ccbaba7834b07997258e8b0b48ae6.jpg" },
@@ -22574,6 +22574,14 @@ const RECOPILA_OVNI = {
     "Batman: Luz de Dia": "Batman #1-6",
     "Batman: No Man's Land Vol. 6: Camino a Tierra de Nadie": "Azrael #47-50, Batman #560-562, Detective #727-729, Shadow of the Bat #80-82, No Man's Land #1",
     "Nightwing: Año Uno": "Nightwing #101-106",
+    "Batman: Tiempo Muerto": "Batman: Killing Time #1-6",
+    "Batman: No Man's Land Vol. 5: Cataciclismo Parte III": "Batman #556-559, Shadow of the Bat #77-79, Detective #724-726, Batman Chronicles #14-15",
+    "Doom Patrol: Flex Mentallo": "Flex Mentallo #1-4",
+    "Supergirl: Cuerpo y Alma": "Supergirl #1-9 (1996), Supergirl Plus #1, Annual #1, Showcase '96 #8",
+    "Supergirl: El Mundo": "Supergirl: The World",
+    "Supergirl: La Mujer del Mañana": "Supergirl: Woman of Tomorrow #1-8",
+    "Nightwing Vol. 1: Saltando a La Luz": "Nightwing #78-83",
+    "Batman y Robin: Año Uno": "Batman and Robin Year One #1-12",
     "Esenciales DC #25: ¡Invasión! (Ovni)": "Invasion! #1-3"
 };
 
@@ -22648,6 +22656,12 @@ const RECOPILA_OVNI_EXTRA = {
     "Saga de Swamp Thing Libro 6 (Ovni)": "Swamp Thing #57-64 y DC Comics Presents #85",
     "Question Vol. 5: Pacificador (Ovni)": "The Question #29-36 y Green Arrow Annual #3",
     "Sandman: Muerte (Ovni)": "Death: High Cost of Living #1-3, Time of Your Life #1-3, Death Talks About Life, The Wheel, A Winter's Tale",
+    "Lucifer Vol. 5: Infierno (Ovni)": "Lucifer #29-35",
+    "Question Vol. 4: Bienvenidos a Oz (Ovni)": "The Question #22-28, Annual #2, Green Arrow Annual #2",
+    "Batman y Los Outsiders Vol. 5 (Ovni)": "Batman and the Outsiders #29-32, Adventures of the Outsiders #33-39",
+    "Saga de Swamp Thing Libro 1 (Ovni)": "Saga of the Swamp Thing #20-27",
+    "Hellblazer: Abrázame y Otras Historias (Ovni)": "Hellblazer #25-27, 32, 51, 85-88",
+    "Batman: Último Caballero en la Tierra (Ovni)": "Batman: Last Knight on Earth #1-3",
     "Batman: El Mundo": "Batman: The World (con historia inédita para la edición argentina)",
     "Superman: Año Uno": "Superman: Year One #1-3"
 };
@@ -22655,9 +22669,9 @@ const RECOPILA_OVNI_EXTRA = {
 
 // Tomos cuya página de Ovni todavía no pude encontrar o leer (buscar de nuevo):
 const RECOPILA_OVNI_PENDIENTES = [
-    "Batman: Tiempo Muerto", "Titanes: Fuera de las Sombras (sin Recopila en la página)", "One Operation Joker Vol. 1 (sin Recopila)", "Harley Quinn Vol. 2 y Yo Soy Suicida: sin Recopila en la página",
+    "Titanes: Fuera de las Sombras (sin Recopila en la página)", "One Operation Joker Vol. 1 (sin Recopila)", "Harley Quinn Vol. 2 y Yo Soy Suicida: sin Recopila en la página",
     "Batman de Grant Morrison Vol. 2: La Resurrección de Ra's Al Ghul",
-    "Doom Patrol: Flex Mentallo", "Batman: No Man's Land Vol. 2: Legado", "Batman: No Man's Land Vol. 5: Cataciclismo Parte III",
+    "Batman: No Man's Land Vol. 2: Legado",
     "Leyendas del Caballero Oscuro #9 Máscaras, #11 Santuarios, #12 Calor",
     "JLA: Justicia / JSA: Kingdom Come / Joker: Asylum / Plastic Man (solo Salvat: confirmar con ECC/Salvat)",
     "Salvat NG #70 Batman: Presagios y #71 Batman: Forajidos (identificar historia original)"
