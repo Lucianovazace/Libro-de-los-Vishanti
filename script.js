@@ -2296,6 +2296,8 @@ const listaMedia = [
     // --- EDAD DE BRONCE ---
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XVIII: Origenes Marvel: Los Setenta", categoria: "marvel-edad-bronce", editorial: "panini", subtipo: "spider-man,x-men,cuatro-fantasticos,hulk,thor,iron-man,capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/small/22/3b/4787493c587e4ab08852e94734e8a137.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XX: La Guerra Kree-Skrull", categoria: "marvel-edad-bronce", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/15/1a/8147e4df0e9f4f1f861934a3dcc9e648.jpg" },
+    { titulo: "Marvel Grandes Batallas #10: La Guerra Kree-Skrull: Parte 1", categoria: "marvel-edad-bronce", editorial: "salvat", subtipo: "iron-man,capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/large/06/21/a0e26710c37e4fb489929da386609485" },
+    { titulo: "Marvel Grandes Batallas #17: La Guerra Kree-Skrull: Parte 2", categoria: "marvel-edad-bronce", editorial: "salvat", subtipo: "iron-man,capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/large/3b/1e/755933a0258d4241afdd13dc0daff400" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #31: Bestia", categoria: "marvel-edad-bronce", editorial: "salvat", subtipo: "x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/large/33/37/15377fc2d1274d66ae98a2d05c92823f.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XXIII: Los Defensores: El Dia de Los Defensores", categoria: "marvel-edad-bronce", editorial: "panini", subtipo: "defensores", tipo: "Cómic", poster: "https://i1.whakoom.com/small/20/2d/dcddc774dce14a7d94678b17ae33a089.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #XIX: El Asombroso Spider-Man: La Muerte de Los Stacy", categoria: "marvel-edad-bronce", editorial: "panini", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/13/0e/2a9692d9116347848bca526bb5e14846.jpg" },
@@ -2360,6 +2362,8 @@ const listaMedia = [
     { titulo: "Must Have #13: Marvels", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "spider-man,thor,iron-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/3b/06/77844475f1854bcbbd115a0f734c4d48.jpg" },
     { titulo: "Marvel Excelsior #4: Marvels", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "spider-man,thor,iron-man", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_721658-MLA26101929319_092017-O.webp" },
     { titulo: "Marvel Excelsior #15: X-Men: Resurrecion del Fenix", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "x-men", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_745030-MLA28469672883_102018-O.webp" },
+    { titulo: "Los Villanos Mas Malvados de Marvel #7: Apocalipsis: El Nacimiento de Apocalipsis", categoria: "marvel-edad-moderna-1", editorial: "salvat", subtipo: "x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/large/10/2d/f47690711b324f9288111ebad021b91d" },
+    { titulo: "Los Villanos Mas Malvados de Marvel #3: Magneto: La Guerra de Magneto", categoria: "marvel-edad-moderna-1", editorial: "salvat", subtipo: "x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/large/16/13/80b0e75ebcc34c339a84745663fb63ea" },
     { titulo: "Marvel Excelsior #7: X-Men: Genesis Mutante", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/1e/32/7c225ed7d1634d898ee9b76955f04306.jpg" },
     { titulo: "Must Have #37: X-Men: Genesis Mutante 2.0", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/34/1d/dbbbe4b1ec88493fae98a2053a996022.jpg" },
     { titulo: "Marvel Excelsior #21: X-Men: El Regreso de Longshot", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "x-men", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_935158-MLA77003951712_062024-O.webp" },
@@ -2374,8 +2378,11 @@ const listaMedia = [
     { titulo: "Must Have #24: Spider-Man: La Ultima Caceria de Kraven", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "spider-man,kraven", tipo: "Cómic", poster: "https://i1.whakoom.com/small/05/27/a52f3376bc6d4a399235b860ee1a5838.jpg" },
     { titulo: "The Best of Marvel #8: Spider-Man: La Última Cacería de Kraven", categoria: "marvel-edad-moderna-1", editorial: "salvat", subtipo: "spider-man", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/07/Best-of-marvel-08.jpg" },
     { titulo: "Marvel Excelsior #24: Avengers: La Busqueda de Thanos", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/15/24/4eea9fe8200645cd9b0780b5fe97a48b.jpg" },
+    { titulo: "Los Villanos Mas Malvados de Marvel #6: Thanos: La Búsqueda de Thanos", categoria: "marvel-edad-moderna-1", editorial: "salvat", subtipo: "", tipo: "Cómic", poster: "https://i1.whakoom.com/large/31/12/05f7f29bbe5a4750a9d26eaad05ddfe0" },
     { titulo: "Marvel Excelsior #14: Avengers: El Guantelete del Infinito", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_934714-MLA80642441836_112024-O.webp" },
     { titulo: "Must Have #17: El Guantelete del Infinito", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/26/00/a6d9aa3f831348d5b119a5de12f8fc9c.jpg" },
+    { titulo: "Marvel Grandes Batallas #5: El Guantelete del Infinito: Parte 1", categoria: "marvel-edad-moderna-1", editorial: "salvat", subtipo: "", tipo: "Cómic", poster: "https://i1.whakoom.com/large/13/0f/5e4043dae0de4e1581f034e83c735fd1" },
+    { titulo: "Marvel Grandes Batallas #15: El Guantelete del Infinito: Parte 2", categoria: "marvel-edad-moderna-1", editorial: "salvat", subtipo: "", tipo: "Cómic", poster: "https://i1.whakoom.com/large/39/30/fde6ce303aee4f19981aacb21669d4f3" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #74: Spider-Man 2099", categoria: "marvel-edad-moderna-1", editorial: "salvat", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1b/09/9df2be30b9f649008df3b9c338defb7a.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #34: Warlock", categoria: "marvel-edad-moderna-1", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1a/2c/5851799e5af047afa35de5baad3d952a.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #40: Silver Surfer", categoria: "marvel-edad-moderna-1", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/01/37/6ebf3f55debe457d9aada1efe0eca991.jpg" },
@@ -2393,6 +2400,7 @@ const listaMedia = [
     { titulo: "Los Heroes Mas Poderosos de Marvel #82: Los Thunderbolts", categoria: "marvel-edad-moderna-1", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/0e/35/86fb43588bd34f0ea394861a2d792045.jpg" },
     { titulo: "Must Have #31: Avengers Forever", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/33/30/92d0da5c12e840cda86ed68bfa3f4845.jpg" },
     { titulo: "Must Have #12: Avengers: Ultron Ilimitado", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/13/3e/56aeb77d25da4aabbac55a37ef08ceb3.jpg" },
+    { titulo: "Los Villanos Mas Malvados de Marvel #5: Ultrón: La Ira de Ultrón", categoria: "marvel-edad-moderna-1", editorial: "salvat", subtipo: "iron-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/02/34/c130eb1039af42f9bf17d068dfc769b9" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #1: Avengers", categoria: "marvel-edad-moderna-1", editorial: "salvat", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/35/12/3bb46f07d8e84d7ebdab1e0861b703ce.jpg" },
     { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #20: Daredevil: Demonio Guardian", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "daredevil", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2a/2a/c15cf3b471a440f5a1b3ac658736e170.jpg" },
     { titulo: "Must Have #33: Daredevil: Diablo Guardian", categoria: "marvel-edad-moderna-1", editorial: "panini", subtipo: "daredevil", tipo: "Cómic", poster: "https://i1.whakoom.com/small/28/23/3f3372aa0da04147b7b2e846bc83956b.jpg" },
@@ -2451,6 +2459,9 @@ const listaMedia = [
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #43: Iron Man: Extremis", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "iron-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/2a/2c/cec1b0b1f43a427c9570bf394765cf52.jpg" },
     { titulo: "Must Have #22: Iron Man: Extremis", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "iron-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/20/00/81c68c4b7c5d457aa7d05e72ef942f70.jpg" },
     { titulo: "The Best of Marvel #5: Iron Man: Las Cinco Pesadillas", categoria: "marvel-edad-moderna-2", editorial: "salvat", subtipo: "iron-man", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/05/Best-of-marvel-05.jpg" },
+    { titulo: "Marvel Grandes Batallas #6: Desunidos", categoria: "marvel-edad-moderna-2", editorial: "salvat", subtipo: "capitan-america,iron-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2a/32/17e2aa099752442bad012c154474a5f8" },
+    { titulo: "Los Villanos Mas Malvados de Marvel #1: Cráneo Rojo: Zona Roja", categoria: "marvel-edad-moderna-2", editorial: "salvat", subtipo: "capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/large/29/23/75649ceab79f4cd4becf9965c516039e" },
+    { titulo: "Los Villanos Mas Malvados de Marvel #2: Doctor Doom: Los Libros de Doom", categoria: "marvel-edad-moderna-2", editorial: "salvat", subtipo: "cuatro-fantasticos", tipo: "Cómic", poster: "https://i1.whakoom.com/large/30/2b/c1da6ca73a3647b7939d545c088f1b9c" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #38: Ghost Rider: La Ruta de La Perdicion", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "ghost-rider", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0c/21/70bdc1846e534743a49e0c3eb89f7ef7.jpg" },
     { titulo: "The Best of Marvel #10: Motorista Fantasma: Autopista al Infierno", categoria: "marvel-edad-moderna-2", editorial: "salvat", subtipo: "ghost-rider", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/08/Best-of-marvel-10.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #38: Ghost Rider", categoria: "marvel-edad-moderna-2", editorial: "salvat", subtipo: "ghost-rider", tipo: "Cómic", poster: "https://i1.whakoom.com/large/27/1c/8b8b95699c9440c584ebfcdf7a077235.jpg" },
@@ -2460,15 +2471,22 @@ const listaMedia = [
     { titulo: "Must Have #29: Capitan America: La Muerte del Sueño", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/small/29/0a/8d2313a51975436fbb0ad3ed02eb1a71.jpg" },
     { titulo: "Must Have #35: Silver Surfer: Requiem", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "silver-surfer", tipo: "Cómic", poster: "https://i1.whakoom.com/small/16/00/f2a1d4c9e76e4b2e9fe3f622e0a9a530.jpg" },
     { titulo: "Must Have #14: Venom: Origen Oscuro", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "venom", tipo: "Cómic", poster: "https://i1.whakoom.com/small/28/19/a8d5c954aef1411586994dd53e36456c.jpg" },
+    { titulo: "Los Villanos Mas Malvados de Marvel #4: MODOK: Equipo de Supervillanos MODOK's 11", categoria: "marvel-edad-moderna-2", editorial: "salvat", subtipo: "", tipo: "Cómic", poster: "https://i1.whakoom.com/large/16/35/1f3a5b5fc8ea45b6a30ca197fe958969" },
+    { titulo: "Los Villanos Mas Malvados de Marvel #8: Venom: Origen Oscuro", categoria: "marvel-edad-moderna-2", editorial: "salvat", subtipo: "venom,spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/26/06/58a4b9812719400dae6e7665682786a8" },
     { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #13: El Poderoso Thor: En Busqueda de Los Dioses", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "thor", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1f/26/fe5b23eeab3c4c7d893903097059e86c.jpg" },
     { titulo: "Colección Definitiva de Novelas Gráficas de Marvel #14: Capitan America: El Nuevo Pacto", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1a/3e/146d436912d243fda05ce1974382e334.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #49: El Increible Hulk: Planeta Hulk Parte 1", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/small/21/04/b1a70bb128124b0ba237153ca5d34a49.jpg" },
     { titulo: "Must Have #18: Planeta Hulk", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/small/35/0a/439aa6c6681e4e149d2c5516a2c9857a.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #50: El Increible Hulk: Planeta Hulk Parte 2", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/small/2c/32/19de22bcad7c4fcbbe882827ebdec2f6.jpg" },
+    { titulo: "Marvel Grandes Batallas #4: Planeta Hulk: Parte 1", categoria: "marvel-edad-moderna-2", editorial: "salvat", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/large/30/3b/94140282d7ee47f8a7ad6eb097bc1f61" },
+    { titulo: "Marvel Grandes Batallas #14: Planeta Hulk: Parte 2", categoria: "marvel-edad-moderna-2", editorial: "salvat", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/large/24/20/f881c1197b3e4e38b41adaa3a6d39414" },
+    { titulo: "Marvel Grandes Batallas #19: Planeta Hulk: Parte 3", categoria: "marvel-edad-moderna-2", editorial: "salvat", subtipo: "hulk", tipo: "Cómic", poster: "https://i1.whakoom.com/large/29/1b/058db62abc1f418b8d80d95b6d4adddd" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #45: Eternos", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "eternos", tipo: "Cómic", poster: "https://i1.whakoom.com/small/10/3b/3f13d5b1ff1f4ce6a67dcb2e38af6cb7.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #42: Guerra Civil", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "iron-man,capitan-america,spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/02/1a/9c84d1cd8025447886d3977132e0602d.jpg" },
     { titulo: "Must Have #1: Civil War", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "iron-man,capitan-america,spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2e/3c/eb9414b922ea4bb08da1f6cc6a5d3f00.jpg" },
     { titulo: "Marvel Excelsior #2: Civil War", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "iron-man,capitan-america,spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/32/33/267ca3ebf1e04726a07ba61349136f90.jpg" },
+    { titulo: "Marvel Grandes Batallas #1: Civil War: Parte 1", categoria: "marvel-edad-moderna-2", editorial: "salvat", subtipo: "iron-man,capitan-america,spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/11/3c/6feda79c912a45f79f8d95756e513e6b" },
+    { titulo: "Marvel Grandes Batallas #11: Civil War: Parte 2", categoria: "marvel-edad-moderna-2", editorial: "salvat", subtipo: "iron-man,capitan-america,spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/01/01/581f23078ea245dbb00eb99b3897a415" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #73: Union Jack", categoria: "marvel-edad-moderna-2", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/04/3d/755fc64897c34223b3fb830ce0488a5a.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #28: Iron Fist", categoria: "marvel-edad-moderna-2", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/07/18/0cd13664b1c347d0a1e754dbe58a9ada.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #29: Blade", categoria: "marvel-edad-moderna-2", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/12/08/6353697e6b4c4ca8a5bf540bfbcde352.jpg" },
@@ -2484,6 +2502,9 @@ const listaMedia = [
     { titulo: "Los Heroes Mas Poderosos de Marvel #60: Jovenes Avengers", categoria: "marvel-edad-moderna-2", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/14/3c/cdd5d3bffa4d49c3bec788e93aa43003.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #57: Invasion Secreta", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "iron-man,capitan-america,spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/25/38/d505c5be6e2e40528788a13e1817d144.jpg" },
     { titulo: "Must Have #11: Invasion Secreta", categoria: "marvel-edad-moderna-2", editorial: "panini", subtipo: "iron-man,capitan-america,spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/19/3a/b25563c2205244ee998cb69039fc2b3a.jpg" },
+    { titulo: "Marvel Grandes Batallas #7: Invasión Secreta: Parte 1", categoria: "marvel-edad-moderna-2", editorial: "salvat", subtipo: "iron-man,capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/large/31/20/9880b4ff4c0b4cbabbfc490cf449c6e4" },
+    { titulo: "Marvel Grandes Batallas #13: Invasión Secreta: Parte 2", categoria: "marvel-edad-moderna-2", editorial: "salvat", subtipo: "iron-man,capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/large/38/33/2e70b3e0a9174041ae1e9b6e24126e93" },
+    { titulo: "Marvel Grandes Batallas #16: Reinado Oscuro", categoria: "marvel-edad-moderna-2", editorial: "salvat", subtipo: "iron-man,capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/large/08/08/fe64eeecc1374da594489b6d12bb4c08" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #22: Pantera Negra", categoria: "marvel-edad-moderna-2", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2c/25/d42f448d516f4d009f2621ea35b5a7fd.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #30: Los Inhumanos", categoria: "marvel-edad-moderna-2", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1d/16/b14bf78c3a524090b705dc351444e6a8.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #46: Capitan Britania", categoria: "marvel-edad-moderna-2", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/30/0e/10a0f61ccae8457b84580ae0cb554cd9.jpg" },
@@ -2538,12 +2559,19 @@ const listaMedia = [
     { titulo: "Coleccion Definitivo de Novelas Graficas de Marvel #83: Heridas de Guerra", categoria: "marvel-actualidad", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/26/06/603cba3032b94566a952331031cfe754.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #95: Nick Fury Jr.", categoria: "marvel-actualidad", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1d/2e/4c50b1d2c7cb42688308ffd03cc74859.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #96: Agente Coulson", categoria: "marvel-actualidad", editorial: "salvat", tipo: "Cómic", poster: "https://i1.whakoom.com/large/3d/34/09fee2d0904c4fe69f32fc04e5fcba0c.jpg" },
+    { titulo: "Marvel Grandes Batallas #8: Miedo Encarnado: Parte 1", categoria: "marvel-actualidad", editorial: "salvat", subtipo: "thor,iron-man,capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/large/37/37/acd67d75838c4e1cb3fcd090486ad671" },
+    { titulo: "Marvel Grandes Batallas #20: Miedo Encarnado: Parte 2", categoria: "marvel-actualidad", editorial: "salvat", subtipo: "thor,iron-man,capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1c/30/52ea89dababb4242ad5d4cb60d4e7598" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #86: Avengers vs X-Men: Primera Parte", categoria: "marvel-actualidad", editorial: "panini", subtipo: "iron-man,capitan-america,thor,x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/27/0b/bbcd24ea922c462a9244b20bd6a2afea.jpg" },
     { titulo: "Marvel Excelsior #13: Avengers vs X-Men", categoria: "marvel-actualidad", editorial: "panini", subtipo: "iron-man,capitan-america,thor,x-men", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_669729-MLA28699507052_112018-O.webp" },
+    { titulo: "Marvel Grandes Batallas #2: Los Vengadores vs. X-Men: Parte 1", categoria: "marvel-actualidad", editorial: "salvat", subtipo: "x-men,capitan-america,iron-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/32/27/a100b214f76d407481e5e8af663fa38f" },
+    { titulo: "Marvel Grandes Batallas #12: Los Vengadores vs. X-Men: Parte 2", categoria: "marvel-actualidad", editorial: "salvat", subtipo: "x-men,capitan-america,iron-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/37/05/5f75d9933a9e46e9aeb6766db229b84d" },
+    { titulo: "Marvel Grandes Batallas #18: Los Vengadores vs. X-Men: Parte 3", categoria: "marvel-actualidad", editorial: "salvat", subtipo: "x-men,capitan-america,iron-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/0c/29/3d7820ec48d94b5daf4df11c8c7a3e42" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #87: Avengers vs X-Men: Segunda Parte", categoria: "marvel-actualidad", editorial: "panini", subtipo: "iron-man,capitan-america,thor,x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/36/32/3e86fe6ae25346a0acbd4d426cf9bf8d.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #88 Avengers vs X-Men: Tercera Parte", categoria: "marvel-actualidad", editorial: "panini", subtipo: "iron-man,capitan-america,thor,x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/2e/22/8eb02cdf87784050b2147af6cdf3cfe5.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #89: Avengers: Fin de Los Tiempos", categoria: "marvel-actualidad", editorial: "panini", subtipo: "iron-man,capitan-america,thor", tipo: "Cómic", poster: "https://i1.whakoom.com/small/07/39/eea852c244784abeab65c63d83412bb6.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #90: Avengers vs X-Men: Consecuencias", categoria: "marvel-actualidad", editorial: "panini", subtipo: "iron-man,capitan-america,thor,x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/27/21/429b617071b842c682dae79338cfb698.jpg" },
+    { titulo: "Marvel Grandes Batallas #3: La Era de Ultrón: Parte 1", categoria: "marvel-actualidad", editorial: "salvat", subtipo: "iron-man,capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/large/0b/13/b155b04fe9054b90a8394e36e6a14984" },
+    { titulo: "Marvel Grandes Batallas #9: La Era de Ultrón: Parte 2", categoria: "marvel-actualidad", editorial: "salvat", subtipo: "iron-man,capitan-america", tipo: "Cómic", poster: "https://i1.whakoom.com/large/36/16/7e6aa01d61d843acb496cfe4af5f3cd5" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #18: Carol Danvers (Ms Marvel / Capitana Marvel)", categoria: "marvel-actualidad", editorial: "salvat", subtipo: "capitana-marvel,ms-marvel", tipo: "Cómic", poster: "https://i1.whakoom.com/large/04/23/edda6c65b8e94189893d179721a4fa62.jpg" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #12: X-Men", categoria: "marvel-actualidad", editorial: "salvat", subtipo: "x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/large/1e/3d/d1de8048dcc446ad8ee08287f1d6f979.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #91: Hawkeye: Mi Vida Como Arma", categoria: "marvel-actualidad", editorial: "panini", subtipo: "hawkeye", tipo: "Cómic", poster: "https://i1.whakoom.com/small/1c/1c/ff2b4f47c79343db8376793cfc715ad2.jpg" },
@@ -5187,6 +5215,28 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "marvel-grandes-batallas",
+        etiqueta: "Colección",
+        titulo: "Marvel Grandes Batallas (Salvat)",
+        categoria: "colecciones-hub",
+        poster: "https://i1.whakoom.com/large/11/3c/6feda79c912a45f79f8d95756e513e6b.jpg",
+        esContenedor: true,
+        categoriaEditorial: "marvel",
+        progresoPatron: "^Marvel Grandes Batallas #(\\d+)",
+        peliculas: []
+    },
+    {
+        id: "marvel-villanos-malvados",
+        etiqueta: "Colección",
+        titulo: "Los Villanos Más Malvados de Marvel (Salvat)",
+        categoria: "colecciones-hub",
+        poster: "https://i1.whakoom.com/large/29/23/75649ceab79f4cd4becf9965c516039e.jpg",
+        esContenedor: true,
+        categoriaEditorial: "marvel",
+        progresoPatron: "^Los Villanos Mas Malvados de Marvel #(\\d+)",
+        peliculas: []
+    },
+    {
         id: "dc-camino-heroe",
         titulo: "El Camino del Héroe",
         categoria: "dc-comics-hub",
@@ -6094,6 +6144,8 @@ function renderizarColecciones() {
         "avengers-mas-poderosos": "seccion-avengers-mas-poderosos",
         "superior-spider-man": "seccion-superior-spider-man",
         "marvel-best-of": "seccion-marvel-best-of",
+        "marvel-grandes-batallas": "seccion-marvel-grandes-batallas",
+        "marvel-villanos-malvados": "seccion-marvel-villanos-malvados",
         "dc-comics-hub": "seccion-dc-comics-hub",
         "dc-camino-heroe": "seccion-dc-camino-heroe",
         "dc-orden-lectura": "seccion-dc-orden-lectura",
@@ -7060,6 +7112,28 @@ function renderizarContenido() {
                 if (grillaBestOfMarvel) grillaBestOfMarvel.insertAdjacentHTML('beforeend', htmlTarjetaBestOfMarvel);
             }
 
+            // Colección Marvel Grandes Batallas (Salvat): orden simple por número de entrega.
+            const matchGrandesBatallas = item.titulo.match(/^Marvel Grandes Batallas #(\d+)/i);
+            if (matchGrandesBatallas) {
+                const htmlTarjetaGrandesBatallas = htmlTarjeta.replace(
+                    'class="tarjeta-media"',
+                    `class="tarjeta-media" data-mgb-num="${matchGrandesBatallas[1]}"`
+                );
+                const grillaGrandesBatallas = document.getElementById("grilla-marvel-grandes-batallas");
+                if (grillaGrandesBatallas) grillaGrandesBatallas.insertAdjacentHTML('beforeend', htmlTarjetaGrandesBatallas);
+            }
+
+            // Colección Los Villanos Más Malvados de Marvel (Salvat): orden simple por número de entrega.
+            const matchVillanosMalvados = item.titulo.match(/^Los Villanos Mas Malvados de Marvel #(\d+)/i);
+            if (matchVillanosMalvados) {
+                const htmlTarjetaVillanosMalvados = htmlTarjeta.replace(
+                    'class="tarjeta-media"',
+                    `class="tarjeta-media" data-mvm-num="${matchVillanosMalvados[1]}"`
+                );
+                const grillaVillanosMalvados = document.getElementById("grilla-marvel-villanos-malvados");
+                if (grillaVillanosMalvados) grillaVillanosMalvados.insertAdjacentHTML('beforeend', htmlTarjetaVillanosMalvados);
+            }
+
             // Colecciones de orden único (Flash de Messner-Loebs y las de
             // Renacimiento/JLI/Leyendas): sin filtros, cada una con su lista fija
             // de títulos en el orden correcto de lectura (COLECCIONES_LISTA_FIJA).
@@ -7209,6 +7283,20 @@ function ordenarGrillaPorNumeroSalvat() {
         const tarjetasBestOfMarvel = Array.from(contenedorBestOfMarvel.querySelectorAll('.tarjeta-media'));
         tarjetasBestOfMarvel.sort((a, b) => parseInt(a.getAttribute('data-bom-num')) - parseInt(b.getAttribute('data-bom-num')));
         tarjetasBestOfMarvel.forEach(t => contenedorBestOfMarvel.appendChild(t));
+    }
+
+    const contenedorGrandesBatallas = document.getElementById('grilla-marvel-grandes-batallas');
+    if (contenedorGrandesBatallas) {
+        const tarjetasGrandesBatallas = Array.from(contenedorGrandesBatallas.querySelectorAll('.tarjeta-media'));
+        tarjetasGrandesBatallas.sort((a, b) => parseInt(a.getAttribute('data-mgb-num')) - parseInt(b.getAttribute('data-mgb-num')));
+        tarjetasGrandesBatallas.forEach(t => contenedorGrandesBatallas.appendChild(t));
+    }
+
+    const contenedorVillanosMalvados = document.getElementById('grilla-marvel-villanos-malvados');
+    if (contenedorVillanosMalvados) {
+        const tarjetasVillanosMalvados = Array.from(contenedorVillanosMalvados.querySelectorAll('.tarjeta-media'));
+        tarjetasVillanosMalvados.sort((a, b) => parseInt(a.getAttribute('data-mvm-num')) - parseInt(b.getAttribute('data-mvm-num')));
+        tarjetasVillanosMalvados.forEach(t => contenedorVillanosMalvados.appendChild(t));
     }
     const contenedorBatmanYRobinNuevos52 = document.getElementById('grilla-batman-y-robin-nuevos-52');
     if (contenedorBatmanYRobinNuevos52) {
@@ -21586,6 +21674,20 @@ if(btnVolverSuperiorSpiderMan) {
 const btnVolverMarvelBestOf = document.getElementById('btn-volver-marvel-best-of');
 if(btnVolverMarvelBestOf) {
     btnVolverMarvelBestOf.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolverMarvelGrandesBatallas = document.getElementById('btn-volver-marvel-grandes-batallas');
+if(btnVolverMarvelGrandesBatallas) {
+    btnVolverMarvelGrandesBatallas.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolverMarvelVillanosMalvados = document.getElementById('btn-volver-marvel-villanos-malvados');
+if(btnVolverMarvelVillanosMalvados) {
+    btnVolverMarvelVillanosMalvados.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
     });
 }
