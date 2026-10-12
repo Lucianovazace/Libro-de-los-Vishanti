@@ -1930,6 +1930,7 @@ const listaMedia = [
     { titulo: "DC Coleccion Novelas Graficas #61: Liga de La Justicia: Auge y Caida", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "liga", tipo: "Cómic", poster: "https://i1.whakoom.com/large/06/14/6f1e48fac5974822948f82f82bb0af25.jpg" },
     { titulo: "DC Coleccion Novelas Graficas #72: Señores del Tiempo: Punto de Fuga", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "liga,booster-gold", tipo: "Cómic", poster: "https://i1.whakoom.com/large/37/09/3be84ea58e204af2855b706d1daff1f2.jpg" },
     { titulo: "Esenciales DC #23: Batman: El Espejo Negro", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,dick-grayson", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_the_black_mirror_cov-4189d8cc24746a418217105079252954-1024-1024.webp" },
+    { titulo: "Batman: El Espejo Negro (Ovni)", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "batman,dick-grayson,gordon", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_the_black_mirror_cov-4189d8cc24746a418217105079252954-1024-1024.webp" },
     { titulo: "Esenciales DC #1: Flashpoint Absoluto", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,flash-barry-allen", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flashpoint_4taed_cov_arg1-4c2c6e6a3c5b6220c316851089691513-1024-1024.webp" },
     { titulo: "DC Coleccion Novelas Graficas #60: Flashpoint", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,flash-barry-allen", tipo: "Cómic", poster: "https://i1.whakoom.com/large/01/08/10f485cc43504af4ac23591e5f7d91e7.jpg" },
     { titulo: "Batman: Blanco y Negro Vol. 1", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-blanco-y-negro-vol-11-8e1c349be1e11b4c1216300345691139-1024-1024.webp" },
@@ -2160,6 +2161,7 @@ const listaMedia = [
     { titulo: "Batman: Justicia Absoluta Vol. 1", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman,deathstroke,joker,killer-croc,riddler", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_justicia_absoluta_1_covs-2b2e46114a0a32b76617322857547468-1024-1024.webp" },
     { titulo: "Batman: Justicia Absoluta Vol. 2", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman,deathstroke,joker,killer-croc,riddler", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_justicia_absoluta_2_covs-65f7565042a2f415a317437479626735-640-0.webp" },
     { titulo: "Batman: La Carta Ganadora", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_-la_carta_ganadora-_cov-5197b196c6febef1fd17878513150760-1024-1024.webp" },
+    { titulo: "Batman y el Joker: Dúo Mortal", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman,harley-quinn,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_y_el_joker_duo_mortal_cov-0656de0f0b2f40c4b516995676897474-1024-1024.webp" },
     { titulo: "Batman: La Era Oscura", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_la_era_oscura_cov-2fec9970042e58a66317552251253019-640-0.webp" },
     { titulo: "Batman: Reptiliano", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman,killer-croc,penguin", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_reptiliano_cov1-c39302e4bf5864b44b16469494473838-640-0.webp" },
     { titulo: "Batman: Vampiro", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vampiro_cov-b7c08d5a081549ecf317065413017457-1024-1024.webp" },
@@ -22609,6 +22611,12 @@ const RECOPILA_OVNI = {
     "Batman: Un Mal Dia #6: Bane": "Batman: One Bad Day - Bane",
     "Batman: El Caballero Blanco Presenta - Generación Joker": "White Knight Presents: Generation Joker #1-6",
     "DCeased: La Guerra de los Dioses Zombie": "DCeased: War of the Undead Gods #1-8",
+    "Batman: El Espejo Negro (Ovni)": "Detective Comics #871-881 (= Salvat Esenciales #23)",
+    "Batman y el Joker: Dúo Mortal": "Batman & The Joker: The Deadly Duo #1-7",
+    "Batman: Vampiro": "Batman & Dracula: Red Rain, Batman: Bloodstorm y Batman: Crimson Mist",
+    "Superman: La Era Espacial": "Superman: Space Age #1-3",
+    "Batman Inc.": "Batman Incorporated #1-8 y Leviathan Strikes! #1",
+    "Las Aventuras de Batman Vol. 5": "The Batman Adventures #31-36 y Annual #2",
     "Esenciales DC #25: ¡Invasión! (Ovni)": "Invasion! #1-3"
 };
 
@@ -22712,6 +22720,7 @@ const RECOPILA_OVNI_EXTRA = {
     "Superman/Batman: Los Mejores del Mundo (Gibbons/Rude, Ovni)": "Superman/Batman: World's Finest #1-3",
     "Lucifer Vol. 1: El Diablo en el Umbral (Ovni)": "Sandman Presents: Lucifer #1-3 y Lucifer #1-4",
     "Superman/Batman: Enemigos Públicos (Ovni)": "Superman/Batman #1-7",
+    "Swamp Thing: Raíz de Toda Maldad (Ovni)": "Swamp Thing #140-150",
     "Batman: El Mundo": "Batman: The World (con historia inédita para la edición argentina)",
     "Superman: Año Uno": "Superman: Year One #1-3"
 };
