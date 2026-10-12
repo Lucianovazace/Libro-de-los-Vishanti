@@ -1795,6 +1795,22 @@ const listaMedia = [
 
 
     // --- PRE-CRISIS (DC Argentina) ---
+    { titulo: "Batman: Las Primeras 100 Historietas #1", categoria: "pre-crisis-dc", editorial: "clarin", subtipo: "batman", tipo: "Cómic", poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328279256i/13450921._SY180_.jpg" },
+    { titulo: "Batman: Las Primeras 100 Historietas #2", categoria: "pre-crisis-dc", editorial: "clarin", subtipo: "batman", tipo: "Cómic", poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1390588103i/13477475._SY180_.jpg" },
+    { titulo: "Batman: Las Primeras 100 Historietas #3", categoria: "pre-crisis-dc", editorial: "clarin", subtipo: "batman", tipo: "Cómic", poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1329492142i/13489001._SY180_.jpg" },
+    { titulo: "Batman: Las Primeras 100 Historietas #4", categoria: "pre-crisis-dc", editorial: "clarin", subtipo: "batman", tipo: "Cómic", poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1335455070i/13617940._SY180_.jpg" },
+    { titulo: "Batman: Las Primeras 100 Historietas #5", categoria: "pre-crisis-dc", editorial: "clarin", subtipo: "batman", tipo: "Cómic", poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1335455303i/13617944._SY180_.jpg" },
+    { titulo: "Batman: Las Primeras 100 Historietas #6", categoria: "pre-crisis-dc", editorial: "clarin", subtipo: "batman", tipo: "Cómic", poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1335455990i/13617951._SY180_.jpg" },
+    { titulo: "Batman: Las Primeras 100 Historietas #7", categoria: "pre-crisis-dc", editorial: "clarin", subtipo: "batman", tipo: "Cómic", poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1415637771i/23524334._SY180_.jpg" },
+    { titulo: "Batman: Las Primeras 100 Historietas #8", categoria: "pre-crisis-dc", editorial: "clarin", subtipo: "batman", tipo: "Cómic", poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1421008007i/24264486._SY180_.jpg" },
+    { titulo: "Batman: Las Primeras 100 Historietas #9", categoria: "pre-crisis-dc", editorial: "clarin", subtipo: "batman", tipo: "Cómic", poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1432060547i/25565645._SY180_.jpg" },
+    { titulo: "Batman: Las Primeras 100 Historietas #10", categoria: "pre-crisis-dc", editorial: "clarin", subtipo: "batman", tipo: "Cómic", poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1431710686i/25543871._SY180_.jpg" },
+    { titulo: "Batman: Las Primeras 100 Historietas #11", categoria: "pre-crisis-dc", editorial: "clarin", subtipo: "batman", tipo: "Cómic", poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1379049038i/18485180._SY180_.jpg" },
+    { titulo: "Batman: Las Primeras 100 Historietas #12", categoria: "pre-crisis-dc", editorial: "clarin", subtipo: "batman", tipo: "Cómic", poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1451706299i/26053605._SY180_.jpg" },
+    { titulo: "Batman: Las Primeras 100 Historietas #13", categoria: "pre-crisis-dc", editorial: "clarin", subtipo: "batman", tipo: "Cómic", poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1478434686i/32881499._SY180_.jpg" },
+    { titulo: "Batman: Las Primeras 100 Historietas #14", categoria: "pre-crisis-dc", editorial: "clarin", subtipo: "batman", tipo: "Cómic", poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1379049085i/18485181._SY180_.jpg" },
+    { titulo: "Batman: Las Primeras 100 Historietas #15", categoria: "pre-crisis-dc", editorial: "clarin", subtipo: "batman", tipo: "Cómic", poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1478434825i/32881521._SY180_.jpg" },
+    { titulo: "Batman: Las Primeras 100 Historietas #16", categoria: "pre-crisis-dc", editorial: "clarin", subtipo: "batman", tipo: "Cómic", poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1478435409i/32881568._SY180_.jpg" },
     { titulo: "Esenciales DC #24: Green Lantern/Green Arrow: Edición Absoluta", categoria: "pre-crisis-dc", editorial: "salvat", subtipo: "green-arrow,green-lantern-hal-jordan", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/green_lantern_green_arrow_cov-96678bddcba5edf30317226036375082-1024-1024.webp" },
     { titulo: "DC Coleccion Novelas Graficas #56: Green Lantern / Green Arrow: Heroes Errantes", categoria: "pre-crisis-dc", editorial: "salvat", subtipo: "green-lantern-hal-jordan,green-arrow", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2f/3e/22c5e2cea98a4e6f82df96dd8d86f9f6.jpg" },
     { titulo: "DC Coleccion Heroes y Villanos #62: Green Lantern Corps: Relatos de Los Corps", categoria: "pre-crisis-dc", editorial: "salvat", subtipo: "green-lantern-hal-jordan", tipo: "Cómic", poster: "https://i1.whakoom.com/small/0e/28/590786f6eb284fd1a2e70f4ac1f4e74d.jpg" },
@@ -5594,6 +5610,17 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "dc-batman-primeras-100",
+        etiqueta: "Colección",
+        titulo: "Batman: Las Primeras 100 Historietas (Clarín)",
+        categoria: "colecciones-hub",
+        poster: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328279256i/13450921._SY180_.jpg",
+        esContenedor: true,
+        categoriaEditorial: "dc",
+        progresoPatron: "^Batman: Las Primeras 100 Historietas #(\\d+)",
+        peliculas: []
+    },
+    {
         id: "marvel-spiderman-clarin",
         etiqueta: "Colección",
         titulo: "Spider-Man (Coleccionable Clarín)",
@@ -6567,6 +6594,7 @@ function renderizarColecciones() {
         "avengers-mas-poderosos": "seccion-avengers-mas-poderosos",
         "superior-spider-man": "seccion-superior-spider-man",
         "marvel-best-of": "seccion-marvel-best-of",
+        "dc-batman-primeras-100": "seccion-dc-batman-primeras-100",
         "marvel-spiderman-clarin": "seccion-marvel-spiderman-clarin",
         "marvel-spiderman-coleccion-definitiva": "seccion-marvel-spiderman-coleccion-definitiva",
         "marvel-deadpool-wolverine": "seccion-marvel-deadpool-wolverine",
@@ -7561,6 +7589,17 @@ function renderizarContenido() {
                 if (grillaSpiderManClarin) grillaSpiderManClarin.insertAdjacentHTML('beforeend', htmlTarjetaSpiderManClarin);
             }
 
+            // Batman: Las Primeras 100 Historietas (Clarín): orden por número.
+            const matchBatman100 = item.titulo.match(/^Batman: Las Primeras 100 Historietas #(\d+)/i);
+            if (matchBatman100) {
+                const htmlTarjetaBatman100 = htmlTarjeta.replace(
+                    'class="tarjeta-media"',
+                    `class="tarjeta-media" data-b100-num="${matchBatman100[1]}"`
+                );
+                const grillaBatman100 = document.getElementById("grilla-dc-batman-primeras-100");
+                if (grillaBatman100) grillaBatman100.insertAdjacentHTML('beforeend', htmlTarjetaBatman100);
+            }
+
             // Colección Deadpool y Wolverine (La Nación - Ovni): orden simple por número de tomo.
             const matchDeadpoolWolverineLN = item.titulo.match(/^Deadpool y Wolverine #(\d+)/i);
             if (matchDeadpoolWolverineLN) {
@@ -7768,6 +7807,13 @@ function ordenarGrillaPorNumeroSalvat() {
         const tarjetasSpiderManClarin = Array.from(contenedorSpiderManClarin.querySelectorAll('.tarjeta-media'));
         tarjetasSpiderManClarin.sort((a, b) => parseInt(a.getAttribute('data-smcl-num')) - parseInt(b.getAttribute('data-smcl-num')));
         tarjetasSpiderManClarin.forEach(t => contenedorSpiderManClarin.appendChild(t));
+    }
+
+    const contenedorBatman100 = document.getElementById('grilla-dc-batman-primeras-100');
+    if (contenedorBatman100) {
+        const tarjetasBatman100 = Array.from(contenedorBatman100.querySelectorAll('.tarjeta-media'));
+        tarjetasBatman100.sort((a, b) => parseInt(a.getAttribute('data-b100-num')) - parseInt(b.getAttribute('data-b100-num')));
+        tarjetasBatman100.forEach(t => contenedorBatman100.appendChild(t));
     }
 
     const contenedorDeadpoolWolverineLN = document.getElementById('grilla-marvel-deadpool-wolverine');
@@ -22187,6 +22233,13 @@ if(btnVolverMarvelSpiderManCD) {
 const btnVolverMarvelSpiderManClarin = document.getElementById('btn-volver-marvel-spiderman-clarin');
 if(btnVolverMarvelSpiderManClarin) {
     btnVolverMarvelSpiderManClarin.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolverBatman100 = document.getElementById('btn-volver-dc-batman-primeras-100');
+if(btnVolverBatman100) {
+    btnVolverBatman100.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
     });
 }
