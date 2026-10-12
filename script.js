@@ -2554,6 +2554,7 @@ const listaMedia = [
     { titulo: "Superior Spider-Man #3", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/00/28/eaf7874a29c4436bbc308fa1201e0a2e.jpg" },
     { titulo: "Coleccion de Novelas Graficas de Marvel #99: Superior Spider-Man: Mi Propio Peor Enemigo", categoria: "marvel-actualidad", editorial: "panini", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/24/27/bb817433be7b47de8c371ae0c7fe79f6.jpg" },
     { titulo: "Superior Spider-Man #4: Mente Traumada", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/28/3a/67eb6a81a47141309a9ad9e2ebd485f4.jpg" },
+    { titulo: "The Amazing Spider-Man #22", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "spider-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/the-amazing-spider-man-22-bfb6c7ea1a221c49ae17896748026807-1024-1024.webp" },
     { titulo: "Superior Spider-Man #5", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/03/19/b2309b953b5b40e0b3dd1bb11e759e3e.jpg" },
     { titulo: "Superior Spider.Man #6: Sin Salida", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2b/20/386b17261d2e4031ad8b411ba823d1a9.jpg" },
     { titulo: "Superior Spider-Man #7: Corre Goblin, Corre", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/0a/3e/03c6eca66c5f4d53918c898a019d0c37.jpg" },
@@ -2562,6 +2563,9 @@ const listaMedia = [
     { titulo: "Superior Spider-Man #10: Las Horas Mas Oscuras", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/00/39/674480e8c54040c3befe6b640669f9f4.jpg" },
     { titulo: "Superior Spider-Man #11:  Nacion Goblin #1", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2d/18/f6d4eab31f8d465aa8301b70de369e21.jpg" },
     { titulo: "Superior Spider-Man #12: Nacion Goblin Conclusion", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/0b/3f/0ff44227e0984b998e5222a2cb0f4d59.jpg" },
+    { titulo: "Araña y Spider-Man 2099: Un Futuro Oscuro", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "spider-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/arana_y_spider_-20991-7e453fcc0c09eaf1b916874816872351-1024-1024.webp" },
+    { titulo: "Spider-Man: ¡Batallas Espectaculares!", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "spider-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/portada_spider-man-batallas-espectaculares_marvel_202606072239-796c059fd057fb43e217830160285793-1024-1024.webp" },
+    { titulo: "Deadpool: 30 Años de Locura", categoria: "marvel-actualidad", editorial: "ovni", subtipo: "deadpool", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/deadpool-_30_anos_de_locura-170b1ca309ed2e31ba17192295324436-1024-1024.webp" },
     { titulo: "Los Heroes Mas Poderosos de Marvel #97: Spider-Man - Superior", categoria: "marvel-actualidad", editorial: "salvat", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/36/1f/92c690d409944ba2a8256671c3086ca1.jpg" },
     { titulo: "Coleccion de Novelas Graficas de Marvel #100: Guardianes de La Galaxia: Avengers Cosmicos", categoria: "marvel-actualidad", editorial: "panini", subtipo: "guardianes-galaxia", tipo: "Cómic", poster: "https://i1.whakoom.com/small/13/24/351ff1c60daa4fd8b9d965c7f3114f7d.jpg" },
     { titulo: "Must Have #30: Guardianes de La Galaxia: Avengers Cosmicos", categoria: "marvel-actualidad", editorial: "panini", subtipo: "guardianes-galaxia", tipo: "Cómic", poster: "https://i1.whakoom.com/small/06/38/6390af4edd774d9ebc2f530216689ff2.jpg" },
@@ -2643,6 +2647,7 @@ const listaMedia = [
     // --- UNIVERSO ULTIMATE ---
     { titulo: "Coleccion Defintiva de Novelas Graficas de Marvel #15: Ultimate Spider-Man: Poder y Responsabilidad", categoria: "marvel-universo-ultimate", editorial: "panini", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2c/23/4231f0eef1bf48139259a54fe94e8ed6.jpg" },
     { titulo: "Marvel Ultimate Edicion Integral #1: Ultimate Spider-Man 01: Poder y Responsabilidad", categoria: "marvel-universo-ultimate", editorial: "salvat", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/33/01/6e1e8f4e0e744f9d8355035308852a85.jpg" },
+    { titulo: "Ultimate Spider-Man Vol. 1 (Ovni)", categoria: "marvel-universo-ultimate", editorial: "ovni", subtipo: "spider-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/ultimate-spider-man-vol-01-97e58584ff5c147bca17896738726026-1024-1024.webp" },
     { titulo: "Marvel Ultimate Edicion Integral #2: Ultimate X-Men 01: La Gente del Mañana", categoria: "marvel-universo-ultimate", editorial: "salvat", subtipo: "x-men", tipo: "Cómic", poster: "https://i1.whakoom.com/small/3d/28/bd85082961594ad7aa56e82dfadae150.jpg" },
     { titulo: "Marvel Ultimate Edicion Integral #4: Ultimate Spider-Man 02: Un Mundo Compartido", categoria: "marvel-universo-ultimate", editorial: "salvat", subtipo: "spider-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/10/35/60750e058a5c4ba3b95b996ce0d7059d.jpg" },
     { titulo: "Marvel Ultimate Edicion Integral #5: Ultimate Fantastic Four 01: Lo Fantastico", categoria: "marvel-universo-ultimate", editorial: "salvat", subtipo: "cuatro-fantasticos", tipo: "Cómic", poster: "https://i1.whakoom.com/small/29/04/c6d4a27528104498b53d467d2acd1348.jpg" },
@@ -22731,6 +22736,7 @@ const RECOPILA_OVNI = {
     "Estado Futuro: Batman Vol. 1": "Future State: Dark Detective #1-4 y Future State: Batman/Superman #1",
     "Estado Futuro: Batman Vol. 2": "Future State: The Next Batman #1-4 y Future State: Batman/Superman #2",
     "V de Vendetta": "V for Vendetta (30th Anniversary Deluxe Edition; Ovni tiene también Edición Absoluta)",
+    "The Amazing Spider-Man #22": "Amazing Spider-Man (2022) #29-30 y Amazing Spider-Man Annual (2023) #1",
     "Esenciales DC #25: ¡Invasión! (Ovni)": "Invasion! #1-3"
 };
 
