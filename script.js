@@ -22579,6 +22579,13 @@ const RECOPILA_OVNI_EXTRA = {
     "Universo DC por Ariel Olivetti (Ovni)": "JLA Paradise Lost #1-3, Martian Manhunter Annual #1, Lobo #63-64, JLA Primeval #1, Green Lantern/Space Ghost Special #1, Future Quest Presents #1-3",
     "Green Lantern/Green Arrow: Edición Absoluta (Ovni)": "Green Lantern #76-87 y 89, material de Flash #217-219 y 226",
     "Liga de La Justicia Ilimitada: En el Infierno (Ovni)": "Justice League Unlimited #1-5",
+    "Saga de Swamp Thing Libro 2 (Ovni)": "Saga of the Swamp Thing #28-34 y Annual #2",
+    "Saga de Swamp Thing Libro 3 (Ovni)": "Swamp Thing #35-42",
+    "Saga de Swamp Thing Libro 4 (Ovni)": "Swamp Thing #43-50",
+    "Saga de Swamp Thing Libro 5 (Ovni)": "Swamp Thing #51-56",
+    "Sandman: Obertura (Ovni)": "Sandman: Overture #1-6",
+    "Sandman Vol. 4: Estación de Nieblas (Ovni)": "The Sandman #21-28",
+    "Sandman Vol. 5: Un Juego de Ti (Ovni)": "The Sandman #32-37",
     "Batman: El Mundo": "Batman: The World (con historia inédita para la edición argentina)",
     "Superman: Año Uno": "Superman: Year One #1-3"
 };
