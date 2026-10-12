@@ -2089,6 +2089,7 @@ const listaMedia = [
     { titulo: "Titanes: La Reina de Alas Negras", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "dick-grayson,titans", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/titanes_vol_2_cov-05cfbade6d18142fd917425640331938-640-0.webp" },
     { titulo: "Titanes: Mundo Bestia", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "dick-grayson,titans", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/titanes_-_mundo_bestia_cov-0400b963e61015eb5517407109961248-1024-1024.webp" },
     { titulo: "Detective Comics: Gotham Nocturna #1: Obertura", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,ras-al-ghul", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/detective_comics_ram_v_vol_1-253da28d32b179c7e017142346537133-640-0.webp" },
+    { titulo: "Detective Comics: Gotham Nocturna #2: Acto Primero", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,mr-freeze,two-face", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/detective_comics_ram_v_cov_vol_2-a0561742808cb5851317274617174155-640-0.webp" },
     { titulo: "Detective Comics: Gotham Nocturna #3: Acto Segundo", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,ras-al-ghul,two-face", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/detective-comics-cov-vol-3-38a1c9680afdd3052a17468216274007-1024-1024.webp" },
     { titulo: "Detective Comics: Gotham Nocturna #4: Interludio", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,mr-freeze,ras-al-ghul,two-face", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/detective_comics_cov_vol_4-1b0117835bfbea4a3317558647010493-1024-1024.webp" },
     { titulo: "Detective Comics: Gotham Nocturna #5: Acto III", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,ras-al-ghul,two-face", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/detective_comics_cov_vol_5-f4daf93af63fe49f5b17636681072346-1024-1024.webp" },
@@ -22573,7 +22574,7 @@ const RECOPILA_OVNI = {
     "Batman: La Carta Ganadora": "Batman: The Brave and the Bold #1-2, 5 y 9",
     "Batman: Luz de Dia": "Batman #1-6",
     "Batman: No Man's Land Vol. 6: Camino a Tierra de Nadie": "Azrael #47-50, Batman #560-562, Detective #727-729, Shadow of the Bat #80-82, No Man's Land #1",
-    "Nightwing: Año Uno": "Nightwing #101-106",
+    "Nightwing: Año Uno": "Nightwing (1996) #101-106",
     "Batman: Tiempo Muerto": "Batman: Killing Time #1-6",
     "Batman: No Man's Land Vol. 5: Cataciclismo Parte III": "Batman #556-559, Shadow of the Bat #77-79, Detective #724-726, Batman Chronicles #14-15",
     "Doom Patrol: Flex Mentallo": "Flex Mentallo #1-4",
@@ -22598,6 +22599,16 @@ const RECOPILA_OVNI = {
     "Batman de Chip Zdarsky #3: La Guerra de Gotham": "Batman #137-138, Catwoman #57-58, Gotham War: Battle Lines #1, Scorched Earth y Red Hood",
     "Liga de La Justicia Internacional #5: El Experimento Teasdale": "Justice League America #31-36, Justice League Europe #7-12, JLI Special #1 y JLI Annual #4",
     "Batman/Superman: Los Mejores del Mundo #5: Orígenes Secretos": "World's Finest #18-19, #25 y Annual 2024",
+    "Detective Comics: Gotham Nocturna #2: Acto Primero": "Detective Comics #1066-1070 y Detective Comics 2022 Annual #1",
+    "Batman: Leyendas del Caballero Oscuro #9: Mascaras": "LOTDK #39-41 y #44-45",
+    "Batman: Leyendas del Caballero Oscuro #7: Gotico": "LOTDK #6-10",
+    "Batman: Leyendas del Caballero Oscuro #8: Destino": "LOTDK #35-36 y #76-78",
+    "Batman/Juez Dredd: Juicio Sobre Gotham": "Batman/Judge Dredd: Judgement Over Gotham",
+    "Batman/Tortugas Ninja Vol. 3": "Batman/Teenage Mutant Ninja Turtles III #1-6",
+    "Nightwing Vol. 6: La Hora de Los Titanes": "Nightwing (2016) #101-105",
+    "Batman: Un Mal Dia #6: Bane": "Batman: One Bad Day - Bane",
+    "Batman: El Caballero Blanco Presenta - Generación Joker": "White Knight Presents: Generation Joker #1-6",
+    "DCeased: La Guerra de los Dioses Zombie": "DCeased: War of the Undead Gods #1-8",
     "Esenciales DC #25: ¡Invasión! (Ovni)": "Invasion! #1-3"
 };
 
@@ -22700,6 +22711,7 @@ const RECOPILA_OVNI_EXTRA = {
     "Hora Cero: Especial Aniversario (Ovni)": "Zero Hour 30th Anniversary Special #1 y nueve cruces de 1995 más una historia de Showcase '94",
     "Superman/Batman: Los Mejores del Mundo (Gibbons/Rude, Ovni)": "Superman/Batman: World's Finest #1-3",
     "Lucifer Vol. 1: El Diablo en el Umbral (Ovni)": "Sandman Presents: Lucifer #1-3 y Lucifer #1-4",
+    "Superman/Batman: Enemigos Públicos (Ovni)": "Superman/Batman #1-7",
     "Batman: El Mundo": "Batman: The World (con historia inédita para la edición argentina)",
     "Superman: Año Uno": "Superman: Year One #1-3"
 };
@@ -22709,7 +22721,7 @@ const RECOPILA_OVNI_EXTRA = {
 const RECOPILA_OVNI_PENDIENTES = [
     "Titanes: Fuera de las Sombras (sin Recopila en la página)", "One Operation Joker Vol. 1 (sin Recopila)", "Harley Quinn Vol. 2 y Yo Soy Suicida: sin Recopila en la página",
     "Batman: No Man's Land Vol. 2: Legado",
-    "Leyendas del Caballero Oscuro #9 Máscaras",
+    
     "JLA: Justicia / JSA: Kingdom Come / Joker: Asylum / Plastic Man (solo Salvat: confirmar con ECC/Salvat)",
     "Salvat NG #70 Batman: Presagios y #71 Batman: Forajidos (identificar historia original)"
 ];
