@@ -22402,7 +22402,19 @@ const EQUIV_ALIAS_GRUPOS = [
     ['batman veneno', 'batman leyendas del caballero oscuro 13 veneno'],
     ['green arrow los cazadores del arco largo', 'green arrow el arco del cazador'],
     ['jla vol 1 nuevo orden mundial', 'jla nuevo orden mundial'],
-    ['batman el largo halloween', 'batman el largo halloween 2da edicion']
+    ['batman el largo halloween', 'batman el largo halloween 2da edicion'],
+    // Ovni Press <-> Salvat (mismo tomo con otro nombre)
+    ['liga de la justicia contra el escuadron suicida', 'escuadron suicida contra la liga de la justicia'],
+    ['escuadron suicida vol 1 la camara negra', 'escuadron suicida la camara negra'],
+    ['batman vol 1 yo soy gotham', 'batman yo soy gotham'],
+    ['superman vol 1 hijo de superman', 'superman el hijo de superman'],
+    ['harley quinn vol 1 morir riendo', 'harley quinn morir riendo'],
+    ['all star batman vol 1 yo mi peor enemigo', 'batman yo mi peor enemigo'],
+    ['superman vol 2 las pruebas del superhijo', 'superman las pruebas del superhijo'],
+    ['superhijos vol 1 cuando sea mayor', 'superhijos cuando sea mayor'],
+    ['batman caballero maldito', 'caballero maldito'],
+    ['batman de grant morrison vol 1 batman e hijo', 'batman batman e hijo'],
+    ['la muerte de spider man', 'ultimate spider man la muerte de spider man']
 ];
 // Ediciones completas que en otra edición vienen partidas en tomos: marcar
 // la completa implica sus partes, pero una parte NO implica la completa ni
@@ -22412,6 +22424,8 @@ const EQUIV_ALIAS_PARTES = [
     { todo: ['batman el largo halloween'], partes: [['batman el largo halloween parte 1'], ['batman el largo halloween parte 2']] },
     { todo: ['planeta hulk'], partes: [['el increible hulk planeta hulk parte 1'], ['el increible hulk planeta hulk parte 2']] },
     { todo: ['marvel ultimate edicion integral 3 the ultimates 01 vengadores'], partes: [['los ultimates superhumano'], ['los ultimates seguridad nacional']] },
+    { todo: ['batman el detective'], partes: [['batman detective parte 1'], ['batman detective parte 2']] },
+    { todo: ['dc la nueva frontera'], partes: [['dc la nueva frontera parte 1'], ['dc la nueva frontera parte 2']] },
     { todo: [], partes: [['jla ano uno parte 1', 'jla ano uno parte uno'], ['jla ano uno parte 2', 'jla ano uno parte dos']] }
 ];
 const EQUIV_ALIAS_MAPA = (() => {
