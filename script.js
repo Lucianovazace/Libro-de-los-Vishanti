@@ -2111,6 +2111,7 @@ const listaMedia = [
     { titulo: "Batman/Superman: Los Mejores del Mundo #7: Eclipso Total", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_superman_-_los_mejores_del_mundo_vol-_7-824ea95feda7f6688a17594375917039-640-0.webp" },
     { titulo: "Batman/Superman: Los Mejores del Mundo #8: Gira en Mundo Bizarro", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,superman", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_718634-MLA109671972848_042026-O.webp" },
     { titulo: "Poder Absoluto", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "amanda-waller,batman,liga,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/poder-absoluto-int-cov-2d7250dea58724471f17468211899245-640-0.webp" },
+    { titulo: "Especial DC All In", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/especial_all_in_cov-e2167ace37adc6d53717486500351799-1024-1024.webp" },
     { titulo: "Superman: El Ascenso de Superwoman", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "doomsday,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_el_ascenso_de_superwoman_cov-a1166e01a78a2534a017648981356569-1024-1024.webp" },
     { titulo: "Batman de Chip Zdarsky #6: Poder Absoluto", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "amanda-waller,batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vol_6_covs-7fb6dd2e994c21a41517473614887660-1024-1024.webp" },
     { titulo: "Wonder Woman: Fuera de La Ley", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "wonder-woman", tipo: "Cómic", poster: "https://coleccionablesblog.com.ar/wp-content/uploads/2025/08/1-Fuera-de-la-Ley-725x1024.jpg" },
@@ -22656,6 +22657,10 @@ const RECOPILA_OVNI = {
     "Noches Oscuras: Death Metal #2": "Death Metal #3 y Death Metal Guidebook",
     "Noches Oscuras: Death Metal #4": "Death Metal #4, Multiverse's End y Robin King",
     "Noches Oscuras: Death Metal #5": "Death Metal #5, Rise of the New God e Infinite Hour Exxxtreme!",
+    "Nightwing Vol. 5: El Salto": "Nightwing #97-100 y Annual 2022",
+    "Noches Oscuras: Metal Vol. 2": "Teen Titans #12, Nightwing #29, Suicide Squad #26, Green Arrow #32, Flash #33, Justice League #32-33 y más",
+    "DC K.O. #9": "DC K.O. #4-5",
+    "All Star Superman": "All-Star Superman #1-12",
     "Esenciales DC #25: ¡Invasión! (Ovni)": "Invasion! #1-3"
 };
 
@@ -22764,6 +22769,11 @@ const RECOPILA_OVNI_EXTRA = {
     "Batmanga Vol. 1 (Ovni)": "Batman: The Jiro Kuwata Batmanga cap. 1-19",
     "La Muerte de Superman: 30 Aniversario (Ovni)": "The Death of Superman 30th Anniversary Special y Day of Doom",
     "Universo Batman (Ovni)": "Batman: Universe #1-6",
+    "Batman: Condado de Gotham (Ovni)": "Gotham County Line #1-3 (= Salvat Batman 80 Aniv. #11)",
+    "Batman: Oscuro Príncipe Encantado (Ovni)": "Batman: The Dark Prince Charming #1-2 (= Salvat Batman 80 Aniv. #18)",
+    "Batman: Arquitectura Mortal (Ovni)": "Batman: Death by Design (= Salvat Batman 80 Aniv. #15)",
+    "Batman: Año Uno, Edición del Artista (Ovni)": "Batman #404-407 (edición del artista)",
+    "All-Star Superman: Edición Deluxe (Ovni)": "All-Star Superman #1-12 y galería extra",
     "Batman: El Mundo": "Batman: The World (con historia inédita para la edición argentina)",
     "Superman: Año Uno": "Superman: Year One #1-3"
 };
