@@ -2029,6 +2029,9 @@ const listaMedia = [
     { titulo: "Doomsday Clock: Segunda Parte", categoria: "renacimiento-dc", editorial: "ovni", subtipo: "batman,dr-manhattan,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/doomsdayclockvol021-1d5d82540814ccb66315908689620786-640-0.webp" },
     { titulo: "Green Lantern: Justicia Intergaláctica", categoria: "renacimiento-dc", editorial: "ovni", subtipo: "green-lantern-hal-jordan", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/green_lantern_vol_01_cov1-c89f47245b1cc1dff415972488952095-1024-1024.webp" },
     { titulo: "Green Lantern: Blackstars", categoria: "renacimiento-dc", editorial: "ovni", subtipo: "green-lantern-hal-jordan", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/green_lantern_blackstars_cov1-a38250e1e185458cfa16136902045048-1024-1024.webp" },
+    { titulo: "El Batman Que Rie", categoria: "renacimiento-dc", editorial: "ovni", subtipo: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/el_batman_que_rie_2da-edicion-cov1-8dcb6cacbea86b0f3216209475387363-640-0.webp" },
+    { titulo: "El Batman Que Rie: Los Infectados", categoria: "renacimiento-dc", editorial: "ovni", subtipo: "batman,joker,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/el-batman-que-rie-los-infectados-cov1-261097aff4c0dd6ceb16087827099070-1024-1024.webp" },
+    { titulo: "El Batman Que Rie: Emerge el Infierno", categoria: "renacimiento-dc", editorial: "ovni", subtipo: "batman,joker,liga,lex-luthor", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/el-batman-que-rie-emerge-el-infierno-cov1-6fd3f8388a012a8bf616142986760916-1024-1024.webp" },
     { titulo: "Flash Forward", categoria: "renacimiento-dc", editorial: "ovni", subtipo: "flash-wally-west", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flash_forward_cov1-8ffddab2e57247384015955918200197-480-0.webp" },
     { titulo: "Noches Oscuras: Death Metal #1", categoria: "renacimiento-dc", editorial: "ovni", subtipo: "batman,liga,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/death-metal-1-cov1-05d4f2ac020183a8db16166925032131-1024-1024.webp" },
     { titulo: "Noches Oscuras: Death Metal #2", categoria: "renacimiento-dc", editorial: "ovni", subtipo: "batman,dick-grayson,liga,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/death-metal-2-cov1-62bdc43ad73efab9cf16185417935330-640-0.webp" },
@@ -2039,6 +2042,7 @@ const listaMedia = [
     { titulo: "Noches Oscuras: Death Metal #7", categoria: "renacimiento-dc", editorial: "ovni", subtipo: "batman,liga,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/death-metal-7-cov-31b4482adc2ee2280f16306272721612-640-0.webp" },
     { titulo: "Liga de La Justicia: Death Metal", categoria: "renacimiento-dc", editorial: "ovni", subtipo: "batman,darkseid,liga,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/death-metal-liga-de-la-justicia-cov1-302ba8702c86c8b47016324180074118-1024-1024.webp" },
     { titulo: "Batman: La Guerra del Joker", categoria: "renacimiento-dc", editorial: "ovni", subtipo: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/la_guerra_del_joker_cov_arg1-5e5a48f69ebd772c2116190652847921-1024-1024.webp" },
+    { titulo: "Batman: Tres Jokers", categoria: "renacimiento-dc", editorial: "ovni", subtipo: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/three_jokers_deluxe_2025_cov-dfc608502148c025fb17564915196306-640-0.webp" },
     { titulo: "Liga de La Justicia: Invierno Interminable", categoria: "renacimiento-dc", editorial: "ovni", subtipo: "batman,liga,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/jl-invierno-interminable-cov1-d55364083f72bdb65816245718635575-640-0.webp" },
     // --- INFINITE FRONTIER / ACTUALIDAD (DC Argentina) ---
     { titulo: "El Hombre de Acero", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "rogol-zaar,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/el_hombre_de_acero_cov1-9512db395e680cccb316058036624585-640-0.webp" },
@@ -2122,11 +2126,7 @@ const listaMedia = [
     { titulo: "DC K.O. #7", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,darkseid,joker,liga,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/dc_k-o-_7_cov-51448677ef239d1d9f17715400716310-1024-1024.webp" },
     { titulo: "DC K.O. #8", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,darkseid,joker,liga,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/dc_k-o-_8_cov-e5e78dd74798de499717727385547731-1024-1024.webp" },
     { titulo: "DC K.O. #9", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,darkseid,joker,liga,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/dc_k-o-__239_cov-52addfaf364210075517740244882696-640-0.webp" },
-    { titulo: "El Batman Que Rie", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/el_batman_que_rie_2da-edicion-cov1-8dcb6cacbea86b0f3216209475387363-640-0.webp" },
     { titulo: "Superman: Arriba en el Cielo", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_arriba_en_el_cielo_cov1-00fc87c26069b3aba816287420974121-640-0.webp" },
-    { titulo: "El Batman Que Rie: Los Infectados", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,joker,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/el-batman-que-rie-los-infectados-cov1-261097aff4c0dd6ceb16087827099070-1024-1024.webp" },
-    { titulo: "El Batman Que Rie: Emerge el Infierno", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,joker,liga,lex-luthor", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/el-batman-que-rie-emerge-el-infierno-cov1-6fd3f8388a012a8bf616142986760916-1024-1024.webp" },
-    { titulo: "Batman: Tres Jokers", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/three_jokers_deluxe_2025_cov-dfc608502148c025fb17564915196306-640-0.webp" },
     { titulo: "El Desafio de Los Superhijos", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,superman,superhijos", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/el_desafio_de_los_superhijos_cov-laca1-e2e98431056608424a16396820805800-640-0.webp" },
 
     // --- ABSOLUTE (DC) ---
@@ -22469,6 +22469,12 @@ const RECOPILA_OVNI = {
     "Batman: La Guerra de Las Sombras": "Batman #122-123, Robin #13-14, Deathstroke Inc. #8-9, Shadow War Alpha/Omega/Zone",
     "Batman de Chip Zdarsky #5: Prisiones Oscuras": "Batman #145-150",
     "Superman: Legion de Darkseid": "Summer of Superman Special #1, Superman #28-30",
+    "El Batman Que Rie": "The Batman Who Laughs #1-7 (Snyder/Jock, 2018-19)",
+    "El Batman Que Rie: Los Infectados": "The Infected: King Shazam, Scarab, Deathbringer, The Commissioner..., Hawkman #18, Supergirl #36, Superman/Batman #1-5 (2019)",
+    "El Batman Que Rie: Emerge el Infierno": "Year of the Villain Special #1 y Hell Arisen #1-4 (2019-20)",
+    "Batman: Tres Jokers": "Batman: Three Jokers #1-3 (Johns/Fabok, 2020)",
+    "El Desafio de Los Superhijos": "Challenge of the Super Sons #1-7 (2021)",
+    "Batman: Abismo": "Batman #118-121 y 124 (2022)",
     "Esenciales DC #25: ¡Invasión! (Ovni)": "Invasion! #1-3"
 };
 
