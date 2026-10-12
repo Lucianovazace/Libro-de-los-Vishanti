@@ -2377,6 +2377,69 @@ const listaMedia = [
     // --- MARVEL ARGENTINA (movido aqui desde colecciones[], donde no se renderizaba bien) ---
     // --- EDAD DE PLATA ---
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #I: Origenes Marvel: Los Sesenta", categoria: "marvel-edad-plata", editorial: "panini", subtipo: "spider-man,x-men,cuatro-fantasticos,hulk,thor,iron-man", tipo: "Cómic", poster: "https://i1.whakoom.com/small/09/2f/33c2ff95912f4358b88500bc4a97d59a.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #1: El Asombroso Spider-Man: ¡Poder y Responsabilidad!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "spider-man", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2025/10/MCC01.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #2: Los Cuatro Fantásticos: Prisioneros del Doctor Destino", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "cuatro-fantasticos", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2025/10/C-C-MARVEL-02.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #3: Thor: ¡Será Digno el...!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "thor", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2025/10/C-C-MARVEL-03.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #4: Hulk: El Hombre o el Monstruo", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "hulk", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2025/10/C-C-MARVEL-04.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #5: Los Cuatro Fantásticos: El Príncipe Submarino", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "cuatro-fantasticos", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2025/10/C-C-MARVEL-05.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #6: Iron Man 1: El Vengador Dorado", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "iron-man", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2025/10/C-C-MARVEL-06.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #7: Los Cuatro Fantásticos: Amenaza en la Luna", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "cuatro-fantasticos", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2025/10/C-C-MARVEL-07.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #8: Thor 2: Cuentos de Asgard", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "thor", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2025/10/C-C-MARVEL-08.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #9: Los Cuatro Fantásticos: Un Skrull entre Nosotros", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "cuatro-fantasticos", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2025/10/C-C-MARVEL-09.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #10: Spider-Man: Todos contra la Araña", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "spider-man", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2025/10/C-C-MARVEL-10.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #11: Avengers: ¡Y Llegó el Día!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "iron-man,thor,hulk", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2025/10/C-C-MARVEL-11.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #12: X-Men: ¡La Hermandad de los Mutantes!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "x-men", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2025/10/C-C-MARVEL-12.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #13: Los Cuatro Fantásticos: ¡Prisiones del Faraón!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "cuatro-fantasticos", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2025/10/C-C-MARVEL-13.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #14: Thor: ¡Encantadora y Verdugo!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "thor", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2025/10/C-C-MARVEL-14-1.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #15: El Asombroso Spider-Man: ¡La Terrible Amenaza del Duende Verde!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "spider-man", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2025/10/C-C-MARVEL-15-1.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #16: Iron Man: El Dínamo Escarlata", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "iron-man", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2025/10/C-C-MARVEL-16-1.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #17: Daredevil: ¡Sin Miedo!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "daredevil", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2025/10/C-C-MARVEL-17-1.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #18: Los Cuatro Fantásticos: ¡Hulk contra la Cosa!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "cuatro-fantasticos,hulk", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2025/10/C-C-MARVEL-18-1.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #19: Hulk: ¡De Vuelta a la Vida!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "hulk", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2025/10/C-C-MARVEL-19.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #20: Thor: Un Dios contra Todo", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "thor", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2025/10/C-C-MARVEL-20.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #21: Amazing Spider-Man: ¡El Sexteto Siniestro!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "spider-man", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2025/10/C-C-MARVEL-20-1.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #22: El Invencible Iron Man: Cuentos de Suspenso", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "iron-man", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2025/10/MCC2025-1-420x510.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #23: Vengadores: ¡Kang el Conquistador!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "iron-man,thor,hulk", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2025/10/C-C-MARVEL-23.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #24: X-Men: ¡La Llegada de los Vengadores!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "x-men", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2025/11/C-C-MARVEL-24.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #25: Capitán América: ¡Nace una Leyenda!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "capitan-america", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2025/11/C-C-MARVEL-25.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #26: Los Cuatro Fantásticos: ¡Todo Empezó en la Calle Yancy!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "cuatro-fantasticos", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2025/12/C-C-MARVEL-26.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #27: Avengers: ¡Los Nuevos Vengadores!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "capitan-america,iron-man", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2025/12/C-C-MARVEL-27.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #28: The Amazing Spider-Man: ¡El Vuelo del Escarabajo!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "spider-man", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2025/12/C-C-MARVEL-28.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #29: Thor: ¡La Venganza del Dios del Trueno!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "thor", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2025/12/C-C-MARVEL-29.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #30: Los Cuatro Fantásticos: ¡El Cuarteto Terrible!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "cuatro-fantasticos", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/01/C-C-MARVEL-30.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #31: Iron Man: ¡Cuando Titán se Enfrentó a...!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "iron-man", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/01/C-C-MARVEL-31.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #32: Daredevil: ¡La Llegada del Metaloide!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "daredevil", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/01/C-C-MARVEL-32.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #33: Amazing Spider-Man: ¡El Duende y los Gánsteres!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "spider-man", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/01/C-C-MARVEL-33.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #34: Los Cuatro Fantásticos: ¡Batalla en el Edificio Baxter!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "cuatro-fantasticos", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/02/03.02-C-C-MARVEL-34.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #35: Thor: ¡El Juicio de los Dioses!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "thor", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/02/C-C-MARVEL-35.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #36: Avengers: ¡La Venganza es Nuestra!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "capitan-america,iron-man", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/02/C-C-MARVEL-36.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #37: Hulk: ¡Bruce Banner es Hulk!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "hulk", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/03/C-C-MARVEL-37-1.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #38: Amazing Spider-Man: ¡Otros Mundos!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "spider-man", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/03/C-C-MARVEL-38.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #39: Capitán América: ¡El Despertar de la Hibernación!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "capitan-america", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/03/C-C-MARVEL-39.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #40: Los Cuatro Fantásticos: ¡Pánico en el Edificio Baxter!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "cuatro-fantasticos", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/03/C-C-MARVEL-40-1.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #41: Iron Man: ¿Cuál es el Precio de la Victoria?", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "iron-man", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/03/C-C-MARVEL-40.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #42: Thor: ¡Cuando los Inmortales se Encuentran!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "thor", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/03/C-C-MARVEL-42.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #43: Daredevil: ¡En una Tierra Salvaje!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "daredevil", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/04/C-C-MARVEL-43.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #44: Los Vengadores: ¡De las Cenizas de Derrotas!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "capitan-america,iron-man", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/04/C-C-MARVEL-44.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #45: Amazing Spider-Man: ¡El Capítulo Final!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "spider-man", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/04/C-C-MARVEL-45.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #46: Los Cuatro Fantásticos: ¡La Asombrosa Saga de Estela Plateada!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "cuatro-fantasticos", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/04/C-C-MARVEL-46.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #47: Thor: ¡Aquel al que los Dioses Destruirán!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "thor", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/05/C-C-MARVEL-47.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #48: Hulk: ¡Más que un Monstruo, Menos que un Hombre!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "hulk", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/05/C-C-MARVEL-48.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #49: Daredevil: ¡Llega Spider-Man!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "daredevil,spider-man", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/05/C-C-MARVEL-49.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #50: Capitán América: ¡Aquel que Posea el Cubo Cósmico!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "capitan-america", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/06/C-C-MARVEL-50.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #51: Iron Man: ¡El Regreso del Hombre de Titanio!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "iron-man", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/06/C-C-MARVEL-51.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #52: Avengers: ¡El Signo de la Serpiente!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "capitan-america,iron-man", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/06/C-C-MARVEL-52.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #53: Amazing Spider-Man: ¡El Fin del Duende Verde!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "spider-man", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/06/C-C-MARVEL-53.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #54: Los Cuatro Fantásticos: Este Hombre... ¡Este Monstruo!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "cuatro-fantasticos", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/06/C-C-MARVEL-54.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #55: Thor: ¡Donde los Dioses Temen Pisar!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "thor", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/07/C-C-MARVEL-55.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #56: Daredevil: ¡El Misterio del Cazador Nocturno!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "daredevil", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/07/C-C-MARVEL-56.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #57: X-Men: ¡Por Donde Camina el Juggernaut!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "x-men", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/07/C-C-MARVEL-57.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #58: Amazing Spider-Man: ¡Donde Acecha el Lagarto!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "spider-man", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/07/C-C-MARVEL-58.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #59: Los Cuatro Fantásticos: ¡La Ira del Dr. Muerte!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "cuatro-fantasticos", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/07/C-C-MARVEL-59.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #60: X-Men: ¡El Sacrificio Supremo!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "x-men", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/08/C-C-MARVEL-60.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #61: Spider-Man: ¡El Fin de Spider-Man!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "spider-man", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/08/C-C-MARVEL-61.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #62: Thor: ¡Si Asgard Cae...!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "thor", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/08/C-C-MARVEL-62.jpg" },
+    { titulo: "Coleccion Clasica de Marvel #63: Los Vengadores: ¡El Tormento y el Triunfo!", categoria: "marvel-edad-plata", editorial: "salvat", subtipo: "capitan-america,iron-man", tipo: "Cómic", poster: "https://salvat.brihet.com.ar/wp-content/uploads/2026/08/C-C-MARVEL-63.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #II: Thor: Historias de Asgard", categoria: "marvel-edad-plata", editorial: "panini", subtipo: "thor", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_706219-MLA69403173899_052023-O.webp" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #III: Doctor Strange: Nombre Anonimo, Tiempo Eterno", categoria: "marvel-edad-plata", editorial: "panini", subtipo: "doctor-strange", tipo: "Cómic", poster: "https://i1.whakoom.com/small/29/28/9cbc0e1a383149119f1b4ecc7771aba5.jpg" },
     { titulo: "Colección Definitiva de Novelas Graficas de Marvel #IV: Cuatro Fantasticos: La Llegada de Galactus", categoria: "marvel-edad-plata", editorial: "panini", subtipo: "cuatro-fantasticos", tipo: "Cómic", poster: "https://i1.whakoom.com/small/22/13/36e05d88e41043a4b14238d3bcce12e4.jpg" },
@@ -5317,6 +5380,17 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "marvel-coleccion-clasica",
+        etiqueta: "Colección",
+        titulo: "Colección Clásica de Marvel (Salvat)",
+        categoria: "colecciones-hub",
+        poster: "https://salvat.brihet.com.ar/wp-content/uploads/2025/10/MCC01.jpg",
+        esContenedor: true,
+        categoriaEditorial: "marvel",
+        progresoPatron: "^Coleccion Clasica de Marvel #(\\d+)",
+        peliculas: []
+    },
+    {
         id: "marvel-grandes-batallas",
         etiqueta: "Colección",
         titulo: "Marvel Grandes Batallas (Salvat)",
@@ -6246,6 +6320,7 @@ function renderizarColecciones() {
         "avengers-mas-poderosos": "seccion-avengers-mas-poderosos",
         "superior-spider-man": "seccion-superior-spider-man",
         "marvel-best-of": "seccion-marvel-best-of",
+        "marvel-coleccion-clasica": "seccion-marvel-coleccion-clasica",
         "marvel-grandes-batallas": "seccion-marvel-grandes-batallas",
         "marvel-villanos-malvados": "seccion-marvel-villanos-malvados",
         "dc-comics-hub": "seccion-dc-comics-hub",
@@ -7214,6 +7289,17 @@ function renderizarContenido() {
                 if (grillaBestOfMarvel) grillaBestOfMarvel.insertAdjacentHTML('beforeend', htmlTarjetaBestOfMarvel);
             }
 
+            // Colección Clásica de Marvel (Salvat): orden simple por número de entrega.
+            const matchColClasicaMarvel = item.titulo.match(/^Coleccion Clasica de Marvel #(\d+)/i);
+            if (matchColClasicaMarvel) {
+                const htmlTarjetaColClasicaMarvel = htmlTarjeta.replace(
+                    'class="tarjeta-media"',
+                    `class="tarjeta-media" data-mcc-num="${matchColClasicaMarvel[1]}"`
+                );
+                const grillaColClasicaMarvel = document.getElementById("grilla-marvel-coleccion-clasica");
+                if (grillaColClasicaMarvel) grillaColClasicaMarvel.insertAdjacentHTML('beforeend', htmlTarjetaColClasicaMarvel);
+            }
+
             // Colección Marvel Grandes Batallas (Salvat): orden simple por número de entrega.
             const matchGrandesBatallas = item.titulo.match(/^Marvel Grandes Batallas #(\d+)/i);
             if (matchGrandesBatallas) {
@@ -7385,6 +7471,13 @@ function ordenarGrillaPorNumeroSalvat() {
         const tarjetasBestOfMarvel = Array.from(contenedorBestOfMarvel.querySelectorAll('.tarjeta-media'));
         tarjetasBestOfMarvel.sort((a, b) => parseInt(a.getAttribute('data-bom-num')) - parseInt(b.getAttribute('data-bom-num')));
         tarjetasBestOfMarvel.forEach(t => contenedorBestOfMarvel.appendChild(t));
+    }
+
+    const contenedorColClasicaMarvel = document.getElementById('grilla-marvel-coleccion-clasica');
+    if (contenedorColClasicaMarvel) {
+        const tarjetasColClasicaMarvel = Array.from(contenedorColClasicaMarvel.querySelectorAll('.tarjeta-media'));
+        tarjetasColClasicaMarvel.sort((a, b) => parseInt(a.getAttribute('data-mcc-num')) - parseInt(b.getAttribute('data-mcc-num')));
+        tarjetasColClasicaMarvel.forEach(t => contenedorColClasicaMarvel.appendChild(t));
     }
 
     const contenedorGrandesBatallas = document.getElementById('grilla-marvel-grandes-batallas');
@@ -21790,6 +21883,13 @@ if(btnVolverMarvelGrandesBatallas) {
 const btnVolverMarvelVillanosMalvados = document.getElementById('btn-volver-marvel-villanos-malvados');
 if(btnVolverMarvelVillanosMalvados) {
     btnVolverMarvelVillanosMalvados.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolverMarvelColClasica = document.getElementById('btn-volver-marvel-coleccion-clasica');
+if(btnVolverMarvelColClasica) {
+    btnVolverMarvelColClasica.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
     });
 }
