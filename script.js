@@ -22582,6 +22582,11 @@ const RECOPILA_OVNI = {
     "Supergirl: La Mujer del Mañana": "Supergirl: Woman of Tomorrow #1-8",
     "Nightwing Vol. 1: Saltando a La Luz": "Nightwing #78-83",
     "Batman y Robin: Año Uno": "Batman and Robin Year One #1-12",
+    "Batman de Grant Morrison Vol. 1: Batman e Hijo": "Batman #655-658, 663-669 y 672-675",
+    "Batman de Grant Morrison Vol. 2: La Resurrección de Ra's Al Ghul": "Batman Annual #26, Batman #670-671, Robin #168-169, Robin Annual #7, Nightwing #138-139, Detective #838-839",
+    "Liga de La Justicia Ilimitada Vol. 4": "Justice League Unlimited #12-16",
+    "Superman: Los Ultimos Dias de Lex Luthor": "Superman: The Last Days of Lex Luthor #1-3",
+    "DC K.O. #8": "DC K.O. #3 y DC K.O.: Knightfight #4",
     "Esenciales DC #25: ¡Invasión! (Ovni)": "Invasion! #1-3"
 };
 
@@ -22662,6 +22667,14 @@ const RECOPILA_OVNI_EXTRA = {
     "Saga de Swamp Thing Libro 1 (Ovni)": "Saga of the Swamp Thing #20-27",
     "Hellblazer: Abrázame y Otras Historias (Ovni)": "Hellblazer #25-27, 32, 51, 85-88",
     "Batman: Último Caballero en la Tierra (Ovni)": "Batman: Last Knight on Earth #1-3",
+    "Transmetropolitan: El Año del Bastardo (Ovni)": "Transmetropolitan #7-18",
+    "Question Vol. 3: Fábulas (Ovni)": "The Question #17-22, Detective Annual #1, Green Arrow Annual #1, Question Annual #1",
+    "Hellblazer de Jamie Delano Vol. 5: Pandemonio (Ovni)": "Hellblazer #84 y #250, Vertigo Secret Files: Hellblazer #1, Hellblazer: Pandemonium, Hellblazer: Bad Blood #1-4",
+    "Lucifer Vol. 3: Coqueteando con los Condenados (Ovni)": "Lucifer #14-20",
+    "Sandman: La Cruzada de los Niños (Ovni)": "The Children's Crusade #1-2",
+    "Sandman: Los Libros de la Magia (Ovni)": "The Books of Magic #1-4",
+    "DC K.O. Especial: Boss Battle (Ovni)": "DC K.O.: Green Lantern Galactic Slam #1, The Kids Are All Fight Special #1, Boss Battle #1",
+    "Multiversity #9: Justicia Encarnada (Ovni)": "The Multiversity #2 (la página dice solo eso; dudoso)",
     "Batman: El Mundo": "Batman: The World (con historia inédita para la edición argentina)",
     "Superman: Año Uno": "Superman: Year One #1-3"
 };
@@ -22670,7 +22683,6 @@ const RECOPILA_OVNI_EXTRA = {
 // Tomos cuya página de Ovni todavía no pude encontrar o leer (buscar de nuevo):
 const RECOPILA_OVNI_PENDIENTES = [
     "Titanes: Fuera de las Sombras (sin Recopila en la página)", "One Operation Joker Vol. 1 (sin Recopila)", "Harley Quinn Vol. 2 y Yo Soy Suicida: sin Recopila en la página",
-    "Batman de Grant Morrison Vol. 2: La Resurrección de Ra's Al Ghul",
     "Batman: No Man's Land Vol. 2: Legado",
     "Leyendas del Caballero Oscuro #9 Máscaras, #11 Santuarios, #12 Calor",
     "JLA: Justicia / JSA: Kingdom Come / Joker: Asylum / Plastic Man (solo Salvat: confirmar con ECC/Salvat)",
@@ -22715,7 +22727,6 @@ const EQUIV_ALIAS_GRUPOS = [
     ['superman vol 2 las pruebas del superhijo', 'superman las pruebas del superhijo'],
     ['superhijos vol 1 cuando sea mayor', 'superhijos cuando sea mayor'],
     ['batman caballero maldito', 'caballero maldito'],
-    ['batman de grant morrison vol 1 batman e hijo', 'batman batman e hijo'],
     ['la muerte de spider man', 'ultimate spider man la muerte de spider man']
 ];
 // Ediciones completas que en otra edición vienen partidas en tomos: marcar
@@ -22730,6 +22741,7 @@ const EQUIV_ALIAS_PARTES = [
     { todo: ['leyendas escuadron suicida'], partes: [['escuadron suicida prueba de fuego']] },
     { todo: ['flashpoint absoluto'], partes: [['flashpoint']] },
     { todo: ['aquaman ano uno'], partes: [['aquaman el tiempo y la marea']] },
+    { todo: ['batman de grant morrison vol 1 batman e hijo'], partes: [['batman batman e hijo']] },
     { todo: ['batman el detective'], partes: [['batman detective parte 1'], ['batman detective parte 2']] },
     { todo: ['dc la nueva frontera'], partes: [['dc la nueva frontera parte 1'], ['dc la nueva frontera parte 2']] },
     { todo: [], partes: [['jla ano uno parte 1', 'jla ano uno parte uno'], ['jla ano uno parte 2', 'jla ano uno parte dos']] }
