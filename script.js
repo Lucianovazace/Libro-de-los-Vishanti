@@ -22587,6 +22587,10 @@ const RECOPILA_OVNI = {
     "Liga de La Justicia Ilimitada Vol. 4": "Justice League Unlimited #12-16",
     "Superman: Los Ultimos Dias de Lex Luthor": "Superman: The Last Days of Lex Luthor #1-3",
     "DC K.O. #8": "DC K.O. #3 y DC K.O.: Knightfight #4",
+    "Batman: Leyendas del Caballero Oscuro #11: Santuarios y Otras Historias": "LOTDK #51-57",
+    "Batman: Leyendas del Caballero Oscuro #12: Calor": "LOTDK #46-49 y LOTDK Annual #7",
+    "Batman: El Regreso del Caballero Oscuro": "Batman: The Dark Knight Returns #1-4",
+    "Batman/Spawn": "Batman/Spawn: War Devil (1994), Spawn/Batman (1994) y Spawn/Batman (2022)",
     "Esenciales DC #25: ¡Invasión! (Ovni)": "Invasion! #1-3"
 };
 
@@ -22675,6 +22679,19 @@ const RECOPILA_OVNI_EXTRA = {
     "Sandman: Los Libros de la Magia (Ovni)": "The Books of Magic #1-4",
     "DC K.O. Especial: Boss Battle (Ovni)": "DC K.O.: Green Lantern Galactic Slam #1, The Kids Are All Fight Special #1, Boss Battle #1",
     "Multiversity #9: Justicia Encarnada (Ovni)": "The Multiversity #2 (la página dice solo eso; dudoso)",
+    "Transmetropolitan: De Regreso a las Calles (Ovni)": "Transmetropolitan #1-5",
+    "Lucifer Vol. 2: Niños y Monstruos (Ovni)": "Lucifer #5-13",
+    "Multiversity #4 (Ovni)": "The Multiversity: Pax Americana #1",
+    "Multiversity #6 (Ovni)": "The Multiversity Guidebook #1",
+    "DC vs. Vampiros (Ovni)": "DC vs. Vampires #1-12",
+    "Question Vol. 1: Zen y Violencia (Ovni)": "The Question #1-6",
+    "Question Vol. 2: Tierra Envenenada (Ovni)": "The Question #7-16",
+    "Hellblazer de Jamie Delano: Newcastle (Ovni)": "Hellblazer #10-13, The Horrorist #1-2, Annual #1",
+    "Hellblazer de Jamie Delano: La Máquina del Miedo (Ovni)": "Hellblazer #14-24",
+    "V de Vendetta (Ovni)": "V for Vendetta #1-10",
+    "Hitman: Furia en Arkham (Ovni)": "The Demon Annual #2, Batman Chronicles #4 y Hitman #1-7",
+    "Hora Cero: Especial Aniversario (Ovni)": "Zero Hour 30th Anniversary Special #1 y nueve cruces de 1995 más una historia de Showcase '94",
+    "Superman/Batman: Los Mejores del Mundo (Gibbons/Rude, Ovni)": "Superman/Batman: World's Finest #1-3",
     "Batman: El Mundo": "Batman: The World (con historia inédita para la edición argentina)",
     "Superman: Año Uno": "Superman: Year One #1-3"
 };
@@ -22684,7 +22701,7 @@ const RECOPILA_OVNI_EXTRA = {
 const RECOPILA_OVNI_PENDIENTES = [
     "Titanes: Fuera de las Sombras (sin Recopila en la página)", "One Operation Joker Vol. 1 (sin Recopila)", "Harley Quinn Vol. 2 y Yo Soy Suicida: sin Recopila en la página",
     "Batman: No Man's Land Vol. 2: Legado",
-    "Leyendas del Caballero Oscuro #9 Máscaras, #11 Santuarios, #12 Calor",
+    "Leyendas del Caballero Oscuro #9 Máscaras",
     "JLA: Justicia / JSA: Kingdom Come / Joker: Asylum / Plastic Man (solo Salvat: confirmar con ECC/Salvat)",
     "Salvat NG #70 Batman: Presagios y #71 Batman: Forajidos (identificar historia original)"
 ];
