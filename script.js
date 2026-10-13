@@ -3472,6 +3472,23 @@ const COLECCIONES_LISTA_FIJA = [
         "Las Aventuras de Batman Vol. 5",
         "Las Aventuras de Batman: Amor Loco"
     ] },
+    { id: "dc-ko-orden", titulos: [
+        "DC K.O. #1",
+        "DC K.O. #2",
+        "DC K.O. #3",
+        "DC K.O. #4",
+        "DC K.O. #5",
+        "DC K.O. #6",
+        "DC K.O. #7",
+        "DC K.O. #8",
+        "DC K.O. #9"
+    ] },
+    { id: "animal-man-orden", titulos: [
+        "Animal Man de Grant Morrison Vol. 1",
+        "Animal Man de Grant Morrison Vol. 2",
+        "Animal Man de Grant Morrison Vol 3",
+        "Animal Man: Nacido Para ser Salvaje"
+    ] },
 ];
 function titulosFijosDe(colId) {
     const f = COLECCIONES_LISTA_FIJA.find(x => x.id === colId);
@@ -5646,6 +5663,26 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "dc-ko-orden",
+        etiqueta: "Colección",
+        titulo: "DC K.O.",
+        categoria: "colecciones-hub",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/dc_k-o-_-_cov-8f3ae4208a7618d24517636679510102-640-0.webp",
+        esContenedor: true,
+        categoriaEditorial: "dc",
+        peliculas: []
+    },
+    {
+        id: "animal-man-orden",
+        etiqueta: "Colección",
+        titulo: "Animal Man",
+        categoria: "colecciones-hub",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/animal_man_vol_01_cov_arg1-65d8d0e2917efd152e16154820963445-640-0.webp",
+        esContenedor: true,
+        categoriaEditorial: "dc",
+        peliculas: []
+    },
+    {
         id: "marvel-novelas-graficas-definitiva",
         etiqueta: "Colección",
         titulo: "Colección Definitiva de Novelas Gráficas de Marvel",
@@ -6903,6 +6940,8 @@ function renderizarColecciones() {
         "swamp-thing-saga-orden": "seccion-swamp-thing-saga-orden",
         "jl-ilimitada-orden": "seccion-jl-ilimitada-orden",
         "aventuras-batman-orden": "seccion-aventuras-batman-orden",
+        "dc-ko-orden": "seccion-dc-ko-orden",
+        "animal-man-orden": "seccion-animal-man-orden",
         "marvel-novelas-graficas-definitiva": "seccion-marvel-novelas-graficas-definitiva",
         "spiderman-universo-arana": "seccion-spiderman-universo-arana",
         "marvel-excelsior": "seccion-marvel-excelsior",
@@ -23656,6 +23695,20 @@ if(btnVolver_jl_ilimitada_orden) {
 const btnVolver_aventuras_batman_orden = document.getElementById('btn-volver-aventuras-batman-orden');
 if(btnVolver_aventuras_batman_orden) {
     btnVolver_aventuras_batman_orden.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolver_dc_ko_orden = document.getElementById('btn-volver-dc-ko-orden');
+if(btnVolver_dc_ko_orden) {
+    btnVolver_dc_ko_orden.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolver_animal_man_orden = document.getElementById('btn-volver-animal-man-orden');
+if(btnVolver_animal_man_orden) {
+    btnVolver_animal_man_orden.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
     });
 }
