@@ -1401,6 +1401,9 @@ const listaMedia = [
     { titulo: "The Light Between Oceans", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "light-between-oceans", poster: "https://m.media-amazon.com/images/M/MV5BNTI1NzQzMjgxOF5BMl5BanBnXkFtZTgwOTY1OTY2OTE@._V1_.jpg" },
     { titulo: "Trespass Against Us", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "trespass-against-us", poster: "https://m.media-amazon.com/images/M/MV5BMTQ5Njk4OTgzNV5BMl5BanBnXkFtZTgwMDc0OTAxMDI@._V1_.jpg" },
     { titulo: "Alien: Covenant", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "alien-covenant", poster: "https://image.tmdb.org/t/p/original/nIpegNL9CoAHvG94vsUfLcnMnW0.jpg" },
+    { titulo: "The Snowman", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-snowman-2017", poster: "https://image.tmdb.org/t/p/original/mKsQ8KMOk0VBX26Ev0Lj6EmfGJu.jpg" },
+    { titulo: "Song to Song", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "song-to-song", poster: "https://m.media-amazon.com/images/M/MV5BNzI1MTg0MzEyOF5BMl5BanBnXkFtZTgwNzk4Mjk0MTI@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "X-Men Dark Phoenix", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "xmen-dark-phoenix", poster: "https://m.media-amazon.com/images/I/81SP4dCrQyL.jpg" },
     { titulo: "Black Widow", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", fichaTecnicaId: "black-widow-2021", poster: "https://m.media-amazon.com/images/M/MV5BNjZjOGVhOTEtNzY4Mi00MjQzLTlmYjktNzMyMDExMWJlODEwXkEyXkFqcGc@.V1.jpg" },
     { titulo: "Hawkeye", categoria: "florence-pugh", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "hawkeye-serie", poster: "https://lumiere-a.akamaihd.net/v1/images/unknown_61ca7b47.png" },
     { titulo: "Don't Worry Darling", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", fichaTecnicaId: "dont-worry-darling", poster: "https://m.media-amazon.com/images/M/MV5BODVhYzM3M2YtMTUwYi00NjE4LWIwYzktOTM1MTYwZWU0ZTBiXkEyXkFqcGc@._V1_.jpg" },
@@ -9385,7 +9388,7 @@ if(btnVolverMichaelFassbender) {
     });
 }
 
-['centurion-2010', 'jonah-hex-2010', 'shame-2011', 'a-dangerous-method', 'jane-eyre-2011', 'pitch-black-heist', 'haywire-2011', '12-anos-de-esclavitud', 'the-counselor-2013', 'frank-2014', 'steve-jobs-2015', 'macbeth-2015', 'slow-west', 'assassins-creed-2016', 'light-between-oceans', 'trespass-against-us'].forEach(id => {
+['centurion-2010', 'jonah-hex-2010', 'shame-2011', 'a-dangerous-method', 'jane-eyre-2011', 'pitch-black-heist', 'haywire-2011', '12-anos-de-esclavitud', 'the-counselor-2013', 'frank-2014', 'steve-jobs-2015', 'macbeth-2015', 'slow-west', 'assassins-creed-2016', 'light-between-oceans', 'trespass-against-us', 'the-snowman-2017', 'song-to-song'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -13618,6 +13621,8 @@ const FICHAS_TECNICAS_TITULOS = {
     "batman-v-superman": ["Batman v Superman", "Batman v Superman: Dawn of Justice"],
     "shang-chi": "Shang-Chi",
     "eternals": "Eternals",
+    "the-snowman-2017": "The Snowman",
+    "song-to-song": "Song to Song",
     "assassins-creed-2016": "Assassin's Creed (Película)",
     "light-between-oceans": "The Light Between Oceans",
     "trespass-against-us": "Trespass Against Us",
@@ -16275,6 +16280,30 @@ const REPARTO_PELICULAS = {
             { actor: "Michael Fassbender", personaje: "Chad Cutler" },
             { actor: "Brendan Gleeson", personaje: "Colby Cutler" },
             { actor: "Lyndsey Marshal", personaje: "Kelly Cutler" }
+        ]
+    },
+    "the-snowman-2017": {
+        director: "Tomas Alfredson",
+        elenco: [
+            { actor: "Michael Fassbender", personaje: "Harry Hole" },
+            { actor: "Rebecca Ferguson", personaje: "Katrine Bratt" },
+            { actor: "Charlotte Gainsbourg", personaje: "Rakel" },
+            { actor: "Val Kilmer", personaje: "Rafto" },
+            { actor: "J.K. Simmons", personaje: "Arve Støp" },
+            { actor: "Chloë Sevigny", personaje: "Sylvia Ottersen" },
+            { actor: "Toby Jones", personaje: "Svensson" }
+        ]
+    },
+    "song-to-song": {
+        director: "Terrence Malick",
+        elenco: [
+            { actor: "Ryan Gosling", personaje: "BV" },
+            { actor: "Rooney Mara", personaje: "Faye" },
+            { actor: "Michael Fassbender", personaje: "Cook" },
+            { actor: "Natalie Portman", personaje: "Rhonda" },
+            { actor: "Cate Blanchett", personaje: "Amanda" },
+            { actor: "Holly Hunter", personaje: "Miranda" },
+            { actor: "Val Kilmer", personaje: "Duane" }
         ]
     },
     "eternals": {
