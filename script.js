@@ -70,8 +70,8 @@ const listaMedia = [
     { titulo: "The Marvels", categoria: "doomsday", tier: 2, tipo: "Película", fichaTecnicaId: "the-marvels-1", poster: "https://cdn.marvel.com/content/2x/captain_marvel_2.webp" },
     { titulo: "Deadpool & Wolverine", categoria: "doomsday", tier: 1, tipo: "Película", poster: "https://m.media-amazon.com/images/I/61AwaBKmGXL.jpg" },
     { titulo: "Captain America: Brave New World", categoria: "doomsday", tier: 1, tipo: "Película", poster: "https://i.pinimg.com/736x/19/85/1d/19851d768bfcc73a6942ae30c69f03a8.jpg" },
-    { titulo: "Thunderbolts*", categoria: "doomsday", tier: 1, tipo: "Película", poster: "https://m.media-amazon.com/images/I/71Y2ZfgT+4L.jpg" },
-    { titulo: "The Fantastic Four: First Steps", categoria: "doomsday", tier: 1, tipo: "Película", poster: "https://brainstomping.com/wp-content/uploads/2025/07/fantastic-four-first-steps-primeros-pasos-cuatro-fantasticos-poster-marvel-mcu.jpg" },
+    { titulo: "Thunderbolts*", categoria: "doomsday", tier: 1, tipo: "Película", fichaTecnicaId: "thunderbolts-2025", poster: "https://m.media-amazon.com/images/I/71Y2ZfgT+4L.jpg" },
+    { titulo: "The Fantastic Four: First Steps", categoria: "doomsday", tier: 1, tipo: "Película", fichaTecnicaId: "fantastic-four-first-steps", poster: "https://brainstomping.com/wp-content/uploads/2025/07/fantastic-four-first-steps-primeros-pasos-cuatro-fantasticos-poster-marvel-mcu.jpg" },
 
     // --- MCU: SAGA DEL INFINITO ---
     { titulo: "Iron Man", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 1, crono: 4, fichaTecnicaId: "iron-man", poster: "https://i.pinimg.com/736x/59/51/d8/5951d8c40e27989167c9adb14567fb36.jpg" },
@@ -122,8 +122,8 @@ const listaMedia = [
     { titulo: "Deadpool & Wolverine", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 44, crono: 45, poster: "https://m.media-amazon.com/images/I/61AwaBKmGXL.jpg" },
     { titulo: "Captain America: Brave New World", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 45, crono: 46, poster: "https://i.pinimg.com/736x/19/85/1d/19851d768bfcc73a6942ae30c69f03a8.jpg" },
     { titulo: "Daredevil: Born Again", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 46, crono: 47, poster: "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/7f/Daredevil_Born_Again_Cracks_Tall_Poster.jpg/revision/latest/scale-to-width-down/1200?cb=20250416124716" },
-    { titulo: "Thunderbolts*", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 47, crono: 48, poster: "https://m.media-amazon.com/images/I/71Y2ZfgT+4L.jpg" },
-    { titulo: "The Fantastic Four: First Steps", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 48, crono: 51, poster: "https://brainstomping.com/wp-content/uploads/2025/07/fantastic-four-first-steps-primeros-pasos-cuatro-fantasticos-poster-marvel-mcu.jpg" },
+    { titulo: "Thunderbolts*", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "thunderbolts-2025", ordenSalida: 47, crono: 48, poster: "https://m.media-amazon.com/images/I/71Y2ZfgT+4L.jpg" },
+    { titulo: "The Fantastic Four: First Steps", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "fantastic-four-first-steps", ordenSalida: 48, crono: 51, poster: "https://brainstomping.com/wp-content/uploads/2025/07/fantastic-four-first-steps-primeros-pasos-cuatro-fantasticos-poster-marvel-mcu.jpg" },
     { titulo: "Ojos de Wakanda", categoria: "mcu-multiverso", tipo: "Serie (Antología)", ordenSalida: 49, crono: 1, poster: "https://cdn.marvel.com/content/2x/eyesofwakanda_lob_crd_02.jpg" },
     { titulo: "Wonder Man", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 50, crono: 49, poster: "https://cdn.marvel.com/content/2x/wonderman_lob_crd_03.jpg" },
     { titulo: "Punisher: One Last Kill", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 51, crono: 50, poster: "https://cdn.marvel.com/content/2x/thepunisheronelastkill_lob_crd_01.jpg" },
@@ -1389,7 +1389,7 @@ const listaMedia = [
     { titulo: "El Niño y La Garza", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://i.pinimg.com/736x/29/8c/a2/298ca2bc6141194372b913ddd9a450ed.jpg" },
     { titulo: "Dune: Parte Dos", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", fichaTecnicaId: "dune-parte-dos", poster: "https://deadline.com/wp-content/uploads/2023/05/FvIhyI9aUAUZz6l.jpeg?w=819" },
     { titulo: "We Live in Time", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/vEmiJetB0C7VJjw60QNXO0oMMws.jpg" },
-    { titulo: "Thunderbolts*", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71Y2ZfgT+4L.jpg" },
+    { titulo: "Thunderbolts*", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", fichaTecnicaId: "thunderbolts-2025", poster: "https://m.media-amazon.com/images/I/71Y2ZfgT+4L.jpg" },
     { titulo: "Marvel Zombies", categoria: "florence-pugh", subtipo: "2020", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/5UbrwzZUR5lcoDds2phuahFHHhi.jpg" },
     { titulo: "The Falling", categoria: "florence-pugh", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BY2FjNTlhOWYtNzNkZi00MjgwLTkzNmItYTYxMjNkMGUzNWU5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
     { titulo: "Lady Macbeth", categoria: "florence-pugh", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNzRjMzYwYzMtOTJiMC00ZTM4LThjZGUtNjZkZGE1NGNjYzEyXkEyXkFqcGc@._V1_.jpg" },
@@ -13318,7 +13318,7 @@ const REQUISITOS_CALL_OF_DUTY_4 = {
     }
 });
 
-['shang-chi', 'eternals'].forEach(id => {
+['shang-chi', 'eternals', 'fantastic-four-first-steps', 'thunderbolts-2025'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -13584,6 +13584,8 @@ const FICHAS_TECNICAS_TITULOS = {
     "batman-v-superman": ["Batman v Superman", "Batman v Superman: Dawn of Justice"],
     "shang-chi": "Shang-Chi",
     "eternals": "Eternals",
+    "fantastic-four-first-steps": "The Fantastic Four: First Steps",
+    "thunderbolts-2025": "Thunderbolts*",
     "hawkeye-serie": "Hawkeye",
     "let-them-all-talk": "Let Them All Talk",
     "thunderbirds-are-go": "Thunderbirds Are Go",
@@ -15853,6 +15855,35 @@ const REPARTO_PELICULAS = {
             { actor: "Michelle Yeoh", personaje: "Ying Nan" },
             { actor: "Ben Kingsley", personaje: "Trevor Slattery" },
             { actor: "Tim Roth", personaje: "Emil Blonsky / Abominación" }
+        ]
+    },
+    "fantastic-four-first-steps": {
+        director: "Matt Shakman",
+        elenco: [
+            { actor: "Pedro Pascal", personaje: "Reed Richards / Mister Fantástico" },
+            { actor: "Vanessa Kirby", personaje: "Sue Storm / Mujer Invisible" },
+            { actor: "Joseph Quinn", personaje: "Johnny Storm / Antorcha Humana" },
+            { actor: "Ebon Moss-Bachrach", personaje: "Ben Grimm / La Cosa" },
+            { actor: "Ralph Ineson", personaje: "Galactus" },
+            { actor: "Julia Garner", personaje: "Shalla-Bal / Silver Surfer" },
+            { actor: "Paul Walter Hauser", personaje: "Topo" },
+            { actor: "John Malkovich", personaje: "Red Ghost" },
+            { actor: "Natasha Lyonne", personaje: "Rachel Rozman" },
+            { actor: "Sarah Niles", personaje: "Lynne Nichols" }
+        ]
+    },
+    "thunderbolts-2025": {
+        director: "Jake Schreier",
+        elenco: [
+            { actor: "Florence Pugh", personaje: "Yelena Belova" },
+            { actor: "Sebastian Stan", personaje: "Bucky Barnes / Soldado del Invierno" },
+            { actor: "David Harbour", personaje: "Alexei Shostakov / Red Guardian" },
+            { actor: "Wyatt Russell", personaje: "John Walker / U.S. Agent" },
+            { actor: "Olga Kurylenko", personaje: "Antonia Dreykov / Taskmaster" },
+            { actor: "Hannah John-Kamen", personaje: "Ava Starr / Ghost" },
+            { actor: "Julia Louis-Dreyfus", personaje: "Valentina Allegra de Fontaine" },
+            { actor: "Lewis Pullman", personaje: "Bob" },
+            { actor: "Geraldine Viswanathan", personaje: "Mel" }
         ]
     },
     "eternals": {
