@@ -57,16 +57,16 @@ const listaMedia = [
     { titulo: "The New Mutants", categoria: "doomsday", tier: 4, tipo: "Película", fichaTecnicaId: "the-new-mutants", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5OVOtNIm-bqGtCUI1SICMA58EJGV7_5_y7oDu9Zf27WcV6YdCE64CVQSf&s=10" },
     { titulo: "WandaVision", categoria: "doomsday", tier: 1, tipo: "Serie", fichaTecnicaId: "wandavision", poster: "https://picarouno.com/wp-content/uploads/2025/12/wandavision_001-1037x1536.jpg" },
     { titulo: "The Falcon and The Winter Soldier", categoria: "doomsday", tier: 3, tipo: "Serie", fichaTecnicaId: "falcon-winter-soldier", poster: "https://www.hellofriki.com/wp-content/uploads/2020/12/falcon-soldado-de-invierno-serie-poste-691x1024.jpg" },
-    { titulo: "Loki (Temporada 1)", categoria: "doomsday", tier: 1, tipo: "Serie", poster: "https://m.media-amazon.com/images/I/81fdQ6kl4JS.jpg" },
+    { titulo: "Loki (Temporada 1)", categoria: "doomsday", tier: 1, tipo: "Serie", fichaTecnicaId: "loki-temporada-1", poster: "https://m.media-amazon.com/images/I/81fdQ6kl4JS.jpg" },
     { titulo: "Shang-Chi", categoria: "doomsday", tier: 3, tipo: "Película", fichaTecnicaId: "shang-chi", poster: "https://m.media-amazon.com/images/I/81orh-NSiTL.jpg" },
     { titulo: "Spider-Man: No Way Home", categoria: "doomsday", tier: 2, tipo: "Película", fichaTecnicaId: "spider-man-no-way-home", poster: "https://www.cinemascomics.com/wp-content/uploads/2022/01/poster-Spider-man-no-way-home.jpg" },
     { titulo: "Dr. Strange: Multiverse of Madness", categoria: "doomsday", tier: 1, tipo: "Película", fichaTecnicaId: "doctor-strange-multiverse-of-madness", poster: "https://img.buzzfeed.com/buzzfeed-static/static/2022-02/18/13/asset/e9954361afcd/sub-buzz-772-1645190837-7.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto" },
-    { titulo: "Ms. Marvel", categoria: "doomsday", tier: 3, tipo: "Serie", poster: "https://lumiere-a.akamaihd.net/v1/images/ms_979c8372.jpeg" },
+    { titulo: "Ms. Marvel", categoria: "doomsday", tier: 3, tipo: "Serie", fichaTecnicaId: "ms-marvel-serie", poster: "https://lumiere-a.akamaihd.net/v1/images/ms_979c8372.jpeg" },
     { titulo: "Thor: Love and Thunder", categoria: "doomsday", tier: 2, tipo: "Película", fichaTecnicaId: "thor-love-and-thunder", poster: "https://lumiere-a.akamaihd.net/v1/images/fb83262af061c44d518c601e3956c3b4_2764x4096_e4f0eee2.jpeg" },
     { titulo: "Black Panther: Wakanda Forever", categoria: "doomsday", tier: 2, tipo: "Película", fichaTecnicaId: "black-panther-wakanda-forever", poster: "https://artofthemovies.co.uk/cdn/shop/products/IMG_0184-338579.jpg?v=1668148930&width=900" },
     { titulo: "Ant-Man and The Wasp: Quantumania", categoria: "doomsday", tier: 2, tipo: "Película", fichaTecnicaId: "ant-man-quantumania", poster: "https://lumiere-a.akamaihd.net/v1/images/antman_b843a521.jpeg?region=0,0,658,898" },
     { titulo: "Guardians of the Galaxy Vol. 3", categoria: "doomsday", tier: 3, tipo: "Película", fichaTecnicaId: "guardians-of-the-galaxy-3", poster: "https://assets-prd.ignimgs.com/2022/12/01/guardians-of-the-galaxy-vol-3-1669932411159.jfif" },
-    { titulo: "Loki (Temporada 2)", categoria: "doomsday", tier: 1, tipo: "Serie", poster: "https://preview.redd.it/official-poster-for-loki-season-2-v0-mjczxxkptafb1.jpg?auto=webp&s=b52be74ed745f4c481074ffd739feb43c7c0214f" },
+    { titulo: "Loki (Temporada 2)", categoria: "doomsday", tier: 1, tipo: "Serie", fichaTecnicaId: "loki-temporada-2", poster: "https://preview.redd.it/official-poster-for-loki-season-2-v0-mjczxxkptafb1.jpg?auto=webp&s=b52be74ed745f4c481074ffd739feb43c7c0214f" },
     { titulo: "The Marvels", categoria: "doomsday", tier: 2, tipo: "Película", fichaTecnicaId: "the-marvels-1", poster: "https://cdn.marvel.com/content/2x/captain_marvel_2.webp" },
     { titulo: "Deadpool & Wolverine", categoria: "doomsday", tier: 1, tipo: "Película", fichaTecnicaId: "deadpool-wolverine-2024", poster: "https://m.media-amazon.com/images/I/61AwaBKmGXL.jpg" },
     { titulo: "Captain America: Brave New World", categoria: "doomsday", tier: 1, tipo: "Película", fichaTecnicaId: "captain-america-brave-new-world", poster: "https://i.pinimg.com/736x/19/85/1d/19851d768bfcc73a6942ae30c69f03a8.jpg" },
@@ -101,7 +101,7 @@ const listaMedia = [
     { titulo: "Spider-Man: Far From Home", categoria: "mcu-infinito", tipo: "Película", ordenSalida: 23, crono: 29, fichaTecnicaId: "spiderman-far-from-home", poster: "https://cdn.marvel.com/content/2x/ffh_poster_onesheet.webp" },
     { titulo: "WandaVision", categoria: "mcu-multiverso", tipo: "Serie", fichaTecnicaId: "wandavision", ordenSalida: 24, crono: 27, poster: "https://picarouno.com/wp-content/uploads/2025/12/wandavision_001-1037x1536.jpg" },
     { titulo: "The Falcon and The Winter Soldier", categoria: "mcu-multiverso", tipo: "Serie", fichaTecnicaId: "falcon-winter-soldier", ordenSalida: 25, crono: 28, poster: "https://www.hellofriki.com/wp-content/uploads/2020/12/falcon-soldado-de-invierno-serie-poste-691x1024.jpg" },
-    { titulo: "Loki (Temporada 1)", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 26, crono: 24.3, poster: "https://m.media-amazon.com/images/I/81fdQ6kl4JS.jpg" },
+    { titulo: "Loki (Temporada 1)", categoria: "mcu-multiverso", tipo: "Serie", fichaTecnicaId: "loki-temporada-1", ordenSalida: 26, crono: 24.3, poster: "https://m.media-amazon.com/images/I/81fdQ6kl4JS.jpg" },
     { titulo: "Black Widow", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "black-widow-2021", ordenSalida: 27, crono: 17, poster: "https://m.media-amazon.com/images/M/MV5BNjZjOGVhOTEtNzY4Mi00MjQzLTlmYjktNzMyMDExMWJlODEwXkEyXkFqcGc@.V1.jpg" },
     { titulo: "Shang-Chi", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "shang-chi", ordenSalida: 28, crono: 31, poster: "https://m.media-amazon.com/images/I/81orh-NSiTL.jpg" },
     { titulo: "Eternals", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "eternals", ordenSalida: 29, crono: 32, poster: "https://image.tmdb.org/t/p/original/vgUZo9aVvRvCQFXwZC9zq3qCZT9.jpg" },
@@ -109,7 +109,7 @@ const listaMedia = [
     { titulo: "Spider-Man: No Way Home", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "spider-man-no-way-home", ordenSalida: 31, crono: 35, poster: "https://www.cinemascomics.com/wp-content/uploads/2022/01/poster-Spider-man-no-way-home.jpg" },
     { titulo: "Moon Knight", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 32, crono: 36, poster: "https://m.media-amazon.com/images/I/71pAwt4KT6L.jpg" },
     { titulo: "Dr. Strange: Multiverse of Madness", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "doctor-strange-multiverse-of-madness", ordenSalida: 33, crono: 37, poster: "https://img.buzzfeed.com/buzzfeed-static/static/2022-02/18/13/asset/e9954361afcd/sub-buzz-772-1645190837-7.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto" },
-    { titulo: "Ms. Marvel", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 34, crono: 38, poster: "https://lumiere-a.akamaihd.net/v1/images/ms_979c8372.jpeg" },
+    { titulo: "Ms. Marvel", categoria: "mcu-multiverso", tipo: "Serie", fichaTecnicaId: "ms-marvel-serie", ordenSalida: 34, crono: 38, poster: "https://lumiere-a.akamaihd.net/v1/images/ms_979c8372.jpeg" },
     { titulo: "Thor: Love and Thunder", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "thor-love-and-thunder", ordenSalida: 35, crono: 39, poster: "https://lumiere-a.akamaihd.net/v1/images/fb83262af061c44d518c601e3956c3b4_2764x4096_e4f0eee2.jpeg" },
     { titulo: "Yo Soy Groot", categoria: "mcu-multiverso", tipo: "Serie de Cortos", ordenSalida: 36, crono: 26, poster: "https://cdn.marvel.com/content/2x/iamgroot_lob_crd_04.jpg" },
     { titulo: "She-Hulk: Attorney at Law", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 37, crono: 40, poster: "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/LXR4DQCCMFFW7CEWUE7QRUGJTU.jpg" },
@@ -117,7 +117,7 @@ const listaMedia = [
     { titulo: "Black Panther: Wakanda Forever", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "black-panther-wakanda-forever", ordenSalida: 39, crono: 41, poster: "https://artofthemovies.co.uk/cdn/shop/products/IMG_0184-338579.jpg?v=1668148930&width=900" },
     { titulo: "Ant-Man and The Wasp: Quantumania", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "ant-man-quantumania", ordenSalida: 40, crono: 42, poster: "https://lumiere-a.akamaihd.net/v1/images/antman_b843a521.jpeg?region=0,0,658,898" },
     { titulo: "Guardians of the Galaxy Vol. 3", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "guardians-of-the-galaxy-3", ordenSalida: 41, crono: 43, poster: "https://assets-prd.ignimgs.com/2022/12/01/guardians-of-the-galaxy-vol-3-1669932411159.jfif" },
-    { titulo: "Loki (Temporada 2)", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 42, crono: 24.6, poster: "https://preview.redd.it/official-poster-for-loki-season-2-v0-mjczxxkptafb1.jpg?auto=webp&s=b52be74ed745f4c481074ffd739feb43c7c0214f" },
+    { titulo: "Loki (Temporada 2)", categoria: "mcu-multiverso", tipo: "Serie", fichaTecnicaId: "loki-temporada-2", ordenSalida: 42, crono: 24.6, poster: "https://preview.redd.it/official-poster-for-loki-season-2-v0-mjczxxkptafb1.jpg?auto=webp&s=b52be74ed745f4c481074ffd739feb43c7c0214f" },
     { titulo: "Echo", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 43, crono: 34, poster: "https://m.media-amazon.com/images/I/81f3aW-ovVL.jpg" },
     { titulo: "Deadpool & Wolverine", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "deadpool-wolverine-2024", ordenSalida: 44, crono: 45, poster: "https://m.media-amazon.com/images/I/61AwaBKmGXL.jpg" },
     { titulo: "Captain America: Brave New World", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "captain-america-brave-new-world", ordenSalida: 45, crono: 46, poster: "https://i.pinimg.com/736x/19/85/1d/19851d768bfcc73a6942ae30c69f03a8.jpg" },
@@ -13318,7 +13318,7 @@ const REQUISITOS_CALL_OF_DUTY_4 = {
     }
 });
 
-['shang-chi', 'eternals', 'fantastic-four-first-steps', 'thunderbolts-2025', 'captain-america-brave-new-world', 'deadpool-wolverine-2024', 'guardians-of-the-galaxy-3', 'ant-man-quantumania', 'spider-man-no-way-home', 'black-panther-wakanda-forever', 'doctor-strange-multiverse-of-madness', 'thor-love-and-thunder'].forEach(id => {
+['shang-chi', 'eternals', 'fantastic-four-first-steps', 'thunderbolts-2025', 'captain-america-brave-new-world', 'deadpool-wolverine-2024', 'guardians-of-the-galaxy-3', 'ant-man-quantumania', 'spider-man-no-way-home', 'black-panther-wakanda-forever', 'doctor-strange-multiverse-of-madness', 'thor-love-and-thunder', 'ms-marvel-serie', 'loki-temporada-1', 'loki-temporada-2'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -13584,6 +13584,9 @@ const FICHAS_TECNICAS_TITULOS = {
     "batman-v-superman": ["Batman v Superman", "Batman v Superman: Dawn of Justice"],
     "shang-chi": "Shang-Chi",
     "eternals": "Eternals",
+    "ms-marvel-serie": "Ms. Marvel",
+    "loki-temporada-1": "Loki (Temporada 1)",
+    "loki-temporada-2": "Loki (Temporada 2)",
     "doctor-strange-multiverse-of-madness": "Doctor Strange in the Multiverse of Madness",
     "thor-love-and-thunder": "Thor: Love and Thunder",
     "spider-man-no-way-home": "Spider-Man: No Way Home",
@@ -16009,6 +16012,45 @@ const REPARTO_PELICULAS = {
             { actor: "Russell Crowe", personaje: "Zeus" },
             { actor: "Chris Pratt", personaje: "Peter Quill / Star-Lord" },
             { actor: "Jaimie Alexander", personaje: "Sif" }
+        ]
+    },
+    "ms-marvel-serie": {
+        director: "Bisha K. Ali (creadora), Adil El Arbi & Bilall Fallah, Meera Menon, Sharmeen Obaid-Chinoy",
+        elenco: [
+            { actor: "Iman Vellani", personaje: "Kamala Khan / Ms. Marvel" },
+            { actor: "Matt Lintz", personaje: "Bruno Carrelli" },
+            { actor: "Yasmeen Fletcher", personaje: "Nakia Bahadir" },
+            { actor: "Zenobia Shroff", personaje: "Muneeba Khan" },
+            { actor: "Mohan Kapur", personaje: "Yusuf Khan" },
+            { actor: "Saagar Shaikh", personaje: "Aamir Khan" },
+            { actor: "Rish Shah", personaje: "Kamran" },
+            { actor: "Aramis Knight", personaje: "Red Dagger" }
+        ]
+    },
+    "loki-temporada-1": {
+        director: "Michael Waldron (guionista principal), Kate Herron",
+        elenco: [
+            { actor: "Tom Hiddleston", personaje: "Loki" },
+            { actor: "Owen Wilson", personaje: "Mobius M. Mobius" },
+            { actor: "Sophia Di Martino", personaje: "Sylvie" },
+            { actor: "Gugu Mbatha-Raw", personaje: "Ravonna Renslayer" },
+            { actor: "Wunmi Mosaku", personaje: "Hunter B-15" },
+            { actor: "Richard E. Grant", personaje: "Loki Clásico" },
+            { actor: "Jonathan Majors", personaje: "El que Permanece" },
+            { actor: "Tara Strong", personaje: "Miss Minutes (voz)" }
+        ]
+    },
+    "loki-temporada-2": {
+        director: "Eric Martin (guionista principal), Justin Benson & Aaron Moorhead",
+        elenco: [
+            { actor: "Tom Hiddleston", personaje: "Loki" },
+            { actor: "Owen Wilson", personaje: "Mobius M. Mobius" },
+            { actor: "Sophia Di Martino", personaje: "Sylvie" },
+            { actor: "Gugu Mbatha-Raw", personaje: "Ravonna Renslayer" },
+            { actor: "Wunmi Mosaku", personaje: "Hunter B-15" },
+            { actor: "Jonathan Majors", personaje: "Kang el Conquistador" },
+            { actor: "Ke Huy Quan", personaje: "Ouroboros \"O.B.\"" },
+            { actor: "Tara Strong", personaje: "Miss Minutes (voz)" }
         ]
     },
     "eternals": {
