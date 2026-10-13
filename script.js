@@ -1380,9 +1380,13 @@ const listaMedia = [
     { titulo: "Kneecap", categoria: "michael-fassbender", subtipo: "2020", tipo: "Película", fichaTecnicaId: "kneecap", poster: "https://image.tmdb.org/t/p/w500/gEbQi5QWUg3CQ9R5dwvPBvbOX17.jpg" },
     { titulo: "Black Bag", categoria: "michael-fassbender", subtipo: "2020", tipo: "Película", fichaTecnicaId: "black-bag", poster: "https://m.media-amazon.com/images/M/MV5BNWJlYzU0NWQtMjdmZS00OWRjLWExY2YtNmIxNGQ1MDQ1ZjU5XkEyXkFqcGc@._V1_.jpg" },
     { titulo: "Hope", categoria: "michael-fassbender", subtipo: "2020", tipo: "Película", fichaTecnicaId: "hope-2026", poster: "https://m.media-amazon.com/images/M/MV5BZjE3ZDI0MmItMDIyMC00NzU2LTk2OTQtZTUxYTlkMjlkNmY3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Pitch Black Heist", categoria: "michael-fassbender", subtipo: "2020", tipo: "Película", fichaTecnicaId: "pitch-black-heist", poster: "https://image.tmdb.org/t/p/original/cRlNDFlRSLeiqZ0X4YOEO0WtuqG.jpg" },
     { titulo: "Centurion", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "centurion-2010", poster: "https://image.tmdb.org/t/p/original/ytnSLYJDDuzST66JXmhpbJMywOD.jpg" },
     { titulo: "Jonah Hex", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "jonah-hex-2010", poster: "https://m.media-amazon.com/images/M/MV5BMTQ2NzYxNjQyMF5BMl5BanBnXkFtZTcwOTQ0OTI0Mw@@._V1_FMjpg_UX1000_.jpg" },
     { titulo: "X-Men: First Class", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "xmen-first-class", poster: "https://collider.com/wp-content/uploads/x-men-first-class-teaser-poster.jpg" },
+    { titulo: "Shame", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "shame-2011", poster: "https://image.tmdb.org/t/p/original/cnhkx7bXvNh4Nu5OR7CEqvuXvCx.jpg" },
+    { titulo: "A Dangerous Method", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "a-dangerous-method", poster: "https://m.media-amazon.com/images/M/MV5BMTU5Mjk3NjgxMl5BMl5BanBnXkFtZTcwMDM5MjA5Ng@@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Jane Eyre", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "jane-eyre-2011", poster: "https://m.media-amazon.com/images/M/MV5BNjU0Mjc0NzU3NF5BMl5BanBnXkFtZTcwMTU4OTkwNA@@._V1_.jpg" },
     { titulo: "Black Widow", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", fichaTecnicaId: "black-widow-2021", poster: "https://m.media-amazon.com/images/M/MV5BNjZjOGVhOTEtNzY4Mi00MjQzLTlmYjktNzMyMDExMWJlODEwXkEyXkFqcGc@.V1.jpg" },
     { titulo: "Hawkeye", categoria: "florence-pugh", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "hawkeye-serie", poster: "https://lumiere-a.akamaihd.net/v1/images/unknown_61ca7b47.png" },
     { titulo: "Don't Worry Darling", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", fichaTecnicaId: "dont-worry-darling", poster: "https://m.media-amazon.com/images/M/MV5BODVhYzM3M2YtMTUwYi00NjE4LWIwYzktOTM1MTYwZWU0ZTBiXkEyXkFqcGc@._V1_.jpg" },
@@ -9367,7 +9371,7 @@ if(btnVolverMichaelFassbender) {
     });
 }
 
-['centurion-2010', 'jonah-hex-2010'].forEach(id => {
+['centurion-2010', 'jonah-hex-2010', 'shame-2011', 'a-dangerous-method', 'jane-eyre-2011', 'pitch-black-heist'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -13600,6 +13604,10 @@ const FICHAS_TECNICAS_TITULOS = {
     "batman-v-superman": ["Batman v Superman", "Batman v Superman: Dawn of Justice"],
     "shang-chi": "Shang-Chi",
     "eternals": "Eternals",
+    "shame-2011": "Shame",
+    "a-dangerous-method": "A Dangerous Method",
+    "jane-eyre-2011": "Jane Eyre",
+    "pitch-black-heist": "Pitch Black Heist",
     "centurion-2010": "Centurion",
     "jonah-hex-2010": "Jonah Hex",
     "ms-marvel-serie": "Ms. Marvel",
@@ -16093,6 +16101,44 @@ const REPARTO_PELICULAS = {
             { actor: "Michael Shannon", personaje: "Doc Cross-Williams" },
             { actor: "Aidan Quinn", personaje: "General Slocum" },
             { actor: "Wes Bentley", personaje: "Adleman Lusk" }
+        ]
+    },
+    "shame-2011": {
+        director: "Steve McQueen",
+        elenco: [
+            { actor: "Michael Fassbender", personaje: "Brandon Sullivan" },
+            { actor: "Carey Mulligan", personaje: "Sissy Sullivan" },
+            { actor: "James Badge Dale", personaje: "David" },
+            { actor: "Nicole Beharie", personaje: "Marianne" },
+            { actor: "Hannah Ware", personaje: "Elizabeth" }
+        ]
+    },
+    "a-dangerous-method": {
+        director: "David Cronenberg",
+        elenco: [
+            { actor: "Michael Fassbender", personaje: "Carl Jung" },
+            { actor: "Viggo Mortensen", personaje: "Sigmund Freud" },
+            { actor: "Keira Knightley", personaje: "Sabina Spielrein" },
+            { actor: "Vincent Cassel", personaje: "Otto Gross" },
+            { actor: "Sarah Gadon", personaje: "Emma Jung" }
+        ]
+    },
+    "jane-eyre-2011": {
+        director: "Cary Joji Fukunaga",
+        elenco: [
+            { actor: "Mia Wasikowska", personaje: "Jane Eyre" },
+            { actor: "Michael Fassbender", personaje: "Edward Rochester" },
+            { actor: "Jamie Bell", personaje: "St. John Rivers" },
+            { actor: "Judi Dench", personaje: "Sra. Fairfax" },
+            { actor: "Sally Hawkins", personaje: "Sra. Reed" },
+            { actor: "Imogen Poots", personaje: "Blanche Ingram" }
+        ]
+    },
+    "pitch-black-heist": {
+        director: "John Maclean",
+        elenco: [
+            { actor: "Michael Fassbender", personaje: "Ladrón" },
+            { actor: "Liam Cunningham", personaje: "Ladrón" }
         ]
     },
     "eternals": {
