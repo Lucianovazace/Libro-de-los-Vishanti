@@ -1396,6 +1396,11 @@ const listaMedia = [
     { titulo: "Steve Jobs", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "steve-jobs-2015", poster: "https://image.tmdb.org/t/p/original/lCzMkFxRE9IolEKSJBt2LlyQCg0.jpg" },
     { titulo: "Macbeth", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "macbeth-2015", poster: "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20300%22%3E%3Crect%20width%3D%22200%22%20height%3D%22300%22%20fill%3D%22%231c1c24%22/%3E%3Crect%20x%3D%2210%22%20y%3D%2210%22%20width%3D%22180%22%20height%3D%22280%22%20fill%3D%22none%22%20stroke%3D%22%23c9a24a%22%20stroke-width%3D%222%22/%3E%3Ctext%20x%3D%22100%22%20y%3D%2250%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23c9a24a%22%20text-anchor%3D%22middle%22%3EMICHAEL%20FASSBENDER%3C/text%3E%3Ctext%20x%3D%22100%22%20y%3D%22150%22%20font-size%3D%2226%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23e8e0d0%22%20text-anchor%3D%22middle%22%3EMacbeth%3C/text%3E%3Ctext%20x%3D%22100%22%20y%3D%22180%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23c9a24a%22%20text-anchor%3D%22middle%22%3E2015%3C/text%3E%3C/svg%3E" },
     { titulo: "Slow West", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "slow-west", poster: "https://image.tmdb.org/t/p/original/kcokbapVg4GrXcYvG82wfi4nUU6.jpg" },
+    { titulo: "X-Men: Apocalypse", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "xmen-apocalypse", poster: "https://www.scifinow.co.uk/wp-content/uploads/2015/12/xmen_apocalypse_ver2.jpg" },
+    { titulo: "Assassin's Creed (Película)", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "assassins-creed-2016", poster: "https://image.tmdb.org/t/p/original/bZlAF6knnat8bzeN9CF0HPuqoCB.jpg" },
+    { titulo: "The Light Between Oceans", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "light-between-oceans", poster: "https://m.media-amazon.com/images/M/MV5BNTI1NzQzMjgxOF5BMl5BanBnXkFtZTgwOTY1OTY2OTE@._V1_.jpg" },
+    { titulo: "Trespass Against Us", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "trespass-against-us", poster: "https://m.media-amazon.com/images/M/MV5BMTQ5Njk4OTgzNV5BMl5BanBnXkFtZTgwMDc0OTAxMDI@._V1_.jpg" },
+    { titulo: "Alien: Covenant", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "alien-covenant", poster: "https://image.tmdb.org/t/p/original/nIpegNL9CoAHvG94vsUfLcnMnW0.jpg" },
     { titulo: "Black Widow", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", fichaTecnicaId: "black-widow-2021", poster: "https://m.media-amazon.com/images/M/MV5BNjZjOGVhOTEtNzY4Mi00MjQzLTlmYjktNzMyMDExMWJlODEwXkEyXkFqcGc@.V1.jpg" },
     { titulo: "Hawkeye", categoria: "florence-pugh", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "hawkeye-serie", poster: "https://lumiere-a.akamaihd.net/v1/images/unknown_61ca7b47.png" },
     { titulo: "Don't Worry Darling", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", fichaTecnicaId: "dont-worry-darling", poster: "https://m.media-amazon.com/images/M/MV5BODVhYzM3M2YtMTUwYi00NjE4LWIwYzktOTM1MTYwZWU0ZTBiXkEyXkFqcGc@._V1_.jpg" },
@@ -9380,7 +9385,7 @@ if(btnVolverMichaelFassbender) {
     });
 }
 
-['centurion-2010', 'jonah-hex-2010', 'shame-2011', 'a-dangerous-method', 'jane-eyre-2011', 'pitch-black-heist', 'haywire-2011', '12-anos-de-esclavitud', 'the-counselor-2013', 'frank-2014', 'steve-jobs-2015', 'macbeth-2015', 'slow-west'].forEach(id => {
+['centurion-2010', 'jonah-hex-2010', 'shame-2011', 'a-dangerous-method', 'jane-eyre-2011', 'pitch-black-heist', 'haywire-2011', '12-anos-de-esclavitud', 'the-counselor-2013', 'frank-2014', 'steve-jobs-2015', 'macbeth-2015', 'slow-west', 'assassins-creed-2016', 'light-between-oceans', 'trespass-against-us'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -13613,6 +13618,9 @@ const FICHAS_TECNICAS_TITULOS = {
     "batman-v-superman": ["Batman v Superman", "Batman v Superman: Dawn of Justice"],
     "shang-chi": "Shang-Chi",
     "eternals": "Eternals",
+    "assassins-creed-2016": "Assassin's Creed (Película)",
+    "light-between-oceans": "The Light Between Oceans",
+    "trespass-against-us": "Trespass Against Us",
     "macbeth-2015": "Macbeth",
     "slow-west": "Slow West",
     "frank-2014": "Frank",
@@ -16236,6 +16244,37 @@ const REPARTO_PELICULAS = {
             { actor: "Michael Fassbender", personaje: "Silas Selleck" },
             { actor: "Ben Mendelsohn", personaje: "Payne" },
             { actor: "Caren Pistorius", personaje: "Rose Ross" }
+        ]
+    },
+    "assassins-creed-2016": {
+        director: "Justin Kurzel",
+        elenco: [
+            { actor: "Michael Fassbender", personaje: "Callum Lynch / Aguilar" },
+            { actor: "Marion Cotillard", personaje: "Sofia Rikkin" },
+            { actor: "Jeremy Irons", personaje: "Alan Rikkin" },
+            { actor: "Brendan Gleeson", personaje: "Joseph Lynch" },
+            { actor: "Charlotte Rampling", personaje: "Ellen Kaye" },
+            { actor: "Michael K. Williams", personaje: "Moussa" },
+            { actor: "Ariane Labed", personaje: "María" },
+            { actor: "Denis Ménochet", personaje: "Ojeda" }
+        ]
+    },
+    "light-between-oceans": {
+        director: "Derek Cianfrance",
+        elenco: [
+            { actor: "Michael Fassbender", personaje: "Tom Sherbourne" },
+            { actor: "Alicia Vikander", personaje: "Isabel Sherbourne" },
+            { actor: "Rachel Weisz", personaje: "Hannah Roennfeldt" },
+            { actor: "Bryan Brown", personaje: "Septimus Potts" },
+            { actor: "Jack Thompson", personaje: "Ralph Addicott" }
+        ]
+    },
+    "trespass-against-us": {
+        director: "Adam Smith",
+        elenco: [
+            { actor: "Michael Fassbender", personaje: "Chad Cutler" },
+            { actor: "Brendan Gleeson", personaje: "Colby Cutler" },
+            { actor: "Lyndsey Marshal", personaje: "Kelly Cutler" }
         ]
     },
     "eternals": {
