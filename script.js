@@ -64,8 +64,8 @@ const listaMedia = [
     { titulo: "Ms. Marvel", categoria: "doomsday", tier: 3, tipo: "Serie", poster: "https://lumiere-a.akamaihd.net/v1/images/ms_979c8372.jpeg" },
     { titulo: "Thor: Love and Thunder", categoria: "doomsday", tier: 2, tipo: "Película", poster: "https://lumiere-a.akamaihd.net/v1/images/fb83262af061c44d518c601e3956c3b4_2764x4096_e4f0eee2.jpeg" },
     { titulo: "Black Panther: Wakanda Forever", categoria: "doomsday", tier: 2, tipo: "Película", poster: "https://artofthemovies.co.uk/cdn/shop/products/IMG_0184-338579.jpg?v=1668148930&width=900" },
-    { titulo: "Ant-Man and The Wasp: Quantumania", categoria: "doomsday", tier: 2, tipo: "Película", poster: "https://lumiere-a.akamaihd.net/v1/images/antman_b843a521.jpeg?region=0,0,658,898" },
-    { titulo: "Guardians of the Galaxy Vol. 3", categoria: "doomsday", tier: 3, tipo: "Película", poster: "https://assets-prd.ignimgs.com/2022/12/01/guardians-of-the-galaxy-vol-3-1669932411159.jfif" },
+    { titulo: "Ant-Man and The Wasp: Quantumania", categoria: "doomsday", tier: 2, tipo: "Película", fichaTecnicaId: "ant-man-quantumania", poster: "https://lumiere-a.akamaihd.net/v1/images/antman_b843a521.jpeg?region=0,0,658,898" },
+    { titulo: "Guardians of the Galaxy Vol. 3", categoria: "doomsday", tier: 3, tipo: "Película", fichaTecnicaId: "guardians-of-the-galaxy-3", poster: "https://assets-prd.ignimgs.com/2022/12/01/guardians-of-the-galaxy-vol-3-1669932411159.jfif" },
     { titulo: "Loki (Temporada 2)", categoria: "doomsday", tier: 1, tipo: "Serie", poster: "https://preview.redd.it/official-poster-for-loki-season-2-v0-mjczxxkptafb1.jpg?auto=webp&s=b52be74ed745f4c481074ffd739feb43c7c0214f" },
     { titulo: "The Marvels", categoria: "doomsday", tier: 2, tipo: "Película", fichaTecnicaId: "the-marvels-1", poster: "https://cdn.marvel.com/content/2x/captain_marvel_2.webp" },
     { titulo: "Deadpool & Wolverine", categoria: "doomsday", tier: 1, tipo: "Película", fichaTecnicaId: "deadpool-wolverine-2024", poster: "https://m.media-amazon.com/images/I/61AwaBKmGXL.jpg" },
@@ -115,8 +115,8 @@ const listaMedia = [
     { titulo: "She-Hulk: Attorney at Law", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 37, crono: 40, poster: "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/LXR4DQCCMFFW7CEWUE7QRUGJTU.jpg" },
     { titulo: "Hombre Lobo por la Noche", categoria: "mcu-multiverso", tipo: "Especial", ordenSalida: 38, crono: 30, poster: "https://m.media-amazon.com/images/M/MV5BODUzMGFkYzgtYzhjNC00ZmFjLTg3ZTYtYWJkMWRjMzJmYTQ2XkEyXkFqcGc@.V1.jpg" },
     { titulo: "Black Panther: Wakanda Forever", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 39, crono: 41, poster: "https://artofthemovies.co.uk/cdn/shop/products/IMG_0184-338579.jpg?v=1668148930&width=900" },
-    { titulo: "Ant-Man and The Wasp: Quantumania", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 40, crono: 42, poster: "https://lumiere-a.akamaihd.net/v1/images/antman_b843a521.jpeg?region=0,0,658,898" },
-    { titulo: "Guardians of the Galaxy Vol. 3", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 41, crono: 43, poster: "https://assets-prd.ignimgs.com/2022/12/01/guardians-of-the-galaxy-vol-3-1669932411159.jfif" },
+    { titulo: "Ant-Man and The Wasp: Quantumania", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "ant-man-quantumania", ordenSalida: 40, crono: 42, poster: "https://lumiere-a.akamaihd.net/v1/images/antman_b843a521.jpeg?region=0,0,658,898" },
+    { titulo: "Guardians of the Galaxy Vol. 3", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "guardians-of-the-galaxy-3", ordenSalida: 41, crono: 43, poster: "https://assets-prd.ignimgs.com/2022/12/01/guardians-of-the-galaxy-vol-3-1669932411159.jfif" },
     { titulo: "Loki (Temporada 2)", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 42, crono: 24.6, poster: "https://preview.redd.it/official-poster-for-loki-season-2-v0-mjczxxkptafb1.jpg?auto=webp&s=b52be74ed745f4c481074ffd739feb43c7c0214f" },
     { titulo: "Echo", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 43, crono: 34, poster: "https://m.media-amazon.com/images/I/81f3aW-ovVL.jpg" },
     { titulo: "Deadpool & Wolverine", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "deadpool-wolverine-2024", ordenSalida: 44, crono: 45, poster: "https://m.media-amazon.com/images/I/61AwaBKmGXL.jpg" },
@@ -13318,7 +13318,7 @@ const REQUISITOS_CALL_OF_DUTY_4 = {
     }
 });
 
-['shang-chi', 'eternals', 'fantastic-four-first-steps', 'thunderbolts-2025', 'captain-america-brave-new-world', 'deadpool-wolverine-2024'].forEach(id => {
+['shang-chi', 'eternals', 'fantastic-four-first-steps', 'thunderbolts-2025', 'captain-america-brave-new-world', 'deadpool-wolverine-2024', 'guardians-of-the-galaxy-3', 'ant-man-quantumania'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -13584,6 +13584,8 @@ const FICHAS_TECNICAS_TITULOS = {
     "batman-v-superman": ["Batman v Superman", "Batman v Superman: Dawn of Justice"],
     "shang-chi": "Shang-Chi",
     "eternals": "Eternals",
+    "guardians-of-the-galaxy-3": "Guardians of the Galaxy Vol. 3",
+    "ant-man-quantumania": "Ant-Man and The Wasp: Quantumania",
     "captain-america-brave-new-world": "Captain America: Brave New World",
     "deadpool-wolverine-2024": "Deadpool & Wolverine",
     "fantastic-four-first-steps": "The Fantastic Four: First Steps",
@@ -15914,6 +15916,34 @@ const REPARTO_PELICULAS = {
             { actor: "Brianna Hildebrand", personaje: "Negasonic Teenage Warhead" },
             { actor: "Karan Soni", personaje: "Dopinder" },
             { actor: "Dafne Keen", personaje: "Laura / X-23" }
+        ]
+    },
+    "guardians-of-the-galaxy-3": {
+        director: "James Gunn",
+        elenco: [
+            { actor: "Chris Pratt", personaje: "Peter Quill / Star-Lord" },
+            { actor: "Zoe Saldaña", personaje: "Gamora" },
+            { actor: "Dave Bautista", personaje: "Drax" },
+            { actor: "Karen Gillan", personaje: "Nebula" },
+            { actor: "Pom Klementieff", personaje: "Mantis" },
+            { actor: "Vin Diesel", personaje: "Groot (voz)" },
+            { actor: "Bradley Cooper", personaje: "Rocket (voz)" },
+            { actor: "Will Poulter", personaje: "Adam Warlock" },
+            { actor: "Chukwudi Iwuji", personaje: "El Alto Evolucionario" },
+            { actor: "Sean Gunn", personaje: "Kraglin" }
+        ]
+    },
+    "ant-man-quantumania": {
+        director: "Peyton Reed",
+        elenco: [
+            { actor: "Paul Rudd", personaje: "Scott Lang / Ant-Man" },
+            { actor: "Evangeline Lilly", personaje: "Hope van Dyne / Avispa" },
+            { actor: "Jonathan Majors", personaje: "Kang el Conquistador" },
+            { actor: "Kathryn Newton", personaje: "Cassie Lang" },
+            { actor: "Michael Douglas", personaje: "Hank Pym" },
+            { actor: "Michelle Pfeiffer", personaje: "Janet van Dyne" },
+            { actor: "Bill Murray", personaje: "Krylar" },
+            { actor: "Corey Stoll", personaje: "M.O.D.O.K." }
         ]
     },
     "eternals": {
