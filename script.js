@@ -1394,6 +1394,8 @@ const listaMedia = [
     { titulo: "X-Men: Days of Future Past", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "xmen-days-future-past", poster: "https://i0.wp.com/www.dorkaholics.com/wp-content/uploads/2014/04/9kcs.jpg?fit=692%2C1024&ssl=1" },
     { titulo: "Frank", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "frank-2014", poster: "https://image.tmdb.org/t/p/original/etqPktnnXLBtFIkKZ3XezrlZqSQ.jpg" },
     { titulo: "Steve Jobs", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "steve-jobs-2015", poster: "https://image.tmdb.org/t/p/original/lCzMkFxRE9IolEKSJBt2LlyQCg0.jpg" },
+    { titulo: "Macbeth", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "macbeth-2015", poster: "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20300%22%3E%3Crect%20width%3D%22200%22%20height%3D%22300%22%20fill%3D%22%231c1c24%22/%3E%3Crect%20x%3D%2210%22%20y%3D%2210%22%20width%3D%22180%22%20height%3D%22280%22%20fill%3D%22none%22%20stroke%3D%22%23c9a24a%22%20stroke-width%3D%222%22/%3E%3Ctext%20x%3D%22100%22%20y%3D%2250%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23c9a24a%22%20text-anchor%3D%22middle%22%3EMICHAEL%20FASSBENDER%3C/text%3E%3Ctext%20x%3D%22100%22%20y%3D%22150%22%20font-size%3D%2226%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23e8e0d0%22%20text-anchor%3D%22middle%22%3EMacbeth%3C/text%3E%3Ctext%20x%3D%22100%22%20y%3D%22180%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23c9a24a%22%20text-anchor%3D%22middle%22%3E2015%3C/text%3E%3C/svg%3E" },
+    { titulo: "Slow West", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "slow-west", poster: "https://image.tmdb.org/t/p/original/kcokbapVg4GrXcYvG82wfi4nUU6.jpg" },
     { titulo: "Black Widow", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", fichaTecnicaId: "black-widow-2021", poster: "https://m.media-amazon.com/images/M/MV5BNjZjOGVhOTEtNzY4Mi00MjQzLTlmYjktNzMyMDExMWJlODEwXkEyXkFqcGc@.V1.jpg" },
     { titulo: "Hawkeye", categoria: "florence-pugh", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "hawkeye-serie", poster: "https://lumiere-a.akamaihd.net/v1/images/unknown_61ca7b47.png" },
     { titulo: "Don't Worry Darling", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", fichaTecnicaId: "dont-worry-darling", poster: "https://m.media-amazon.com/images/M/MV5BODVhYzM3M2YtMTUwYi00NjE4LWIwYzktOTM1MTYwZWU0ZTBiXkEyXkFqcGc@._V1_.jpg" },
@@ -9378,7 +9380,7 @@ if(btnVolverMichaelFassbender) {
     });
 }
 
-['centurion-2010', 'jonah-hex-2010', 'shame-2011', 'a-dangerous-method', 'jane-eyre-2011', 'pitch-black-heist', 'haywire-2011', '12-anos-de-esclavitud', 'the-counselor-2013', 'frank-2014', 'steve-jobs-2015'].forEach(id => {
+['centurion-2010', 'jonah-hex-2010', 'shame-2011', 'a-dangerous-method', 'jane-eyre-2011', 'pitch-black-heist', 'haywire-2011', '12-anos-de-esclavitud', 'the-counselor-2013', 'frank-2014', 'steve-jobs-2015', 'macbeth-2015', 'slow-west'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -13611,6 +13613,8 @@ const FICHAS_TECNICAS_TITULOS = {
     "batman-v-superman": ["Batman v Superman", "Batman v Superman: Dawn of Justice"],
     "shang-chi": "Shang-Chi",
     "eternals": "Eternals",
+    "macbeth-2015": "Macbeth",
+    "slow-west": "Slow West",
     "frank-2014": "Frank",
     "steve-jobs-2015": "Steve Jobs",
     "haywire-2011": "Haywire",
@@ -16211,6 +16215,27 @@ const REPARTO_PELICULAS = {
             { actor: "Jeff Daniels", personaje: "John Sculley" },
             { actor: "Michael Stuhlbarg", personaje: "Andy Hertzfeld" },
             { actor: "Katherine Waterston", personaje: "Chrisann Brennan" }
+        ]
+    },
+    "macbeth-2015": {
+        director: "Justin Kurzel",
+        elenco: [
+            { actor: "Michael Fassbender", personaje: "Macbeth" },
+            { actor: "Marion Cotillard", personaje: "Lady Macbeth" },
+            { actor: "Paddy Considine", personaje: "Banquo" },
+            { actor: "Sean Harris", personaje: "Macduff" },
+            { actor: "Elizabeth Debicki", personaje: "Lady Macduff" },
+            { actor: "David Thewlis", personaje: "Duncan" },
+            { actor: "Jack Reynor", personaje: "Malcolm" }
+        ]
+    },
+    "slow-west": {
+        director: "John Maclean",
+        elenco: [
+            { actor: "Kodi Smit-McPhee", personaje: "Jay Cavendish" },
+            { actor: "Michael Fassbender", personaje: "Silas Selleck" },
+            { actor: "Ben Mendelsohn", personaje: "Payne" },
+            { actor: "Caren Pistorius", personaje: "Rose Ross" }
         ]
     },
     "eternals": {
