@@ -1392,6 +1392,8 @@ const listaMedia = [
     { titulo: "12 Años de Esclavitud", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "12-anos-de-esclavitud", poster: "https://image.tmdb.org/t/p/original/aoDss4auoSgShf665dYCFGv7Ao0.jpg" },
     { titulo: "The Counselor", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-counselor-2013", poster: "https://m.media-amazon.com/images/M/MV5BMTc3ODk0MTY0N15BMl5BanBnXkFtZTgwOTU2MTEzMDE@._V1_FMjpg_UX1000_.jpg" },
     { titulo: "X-Men: Days of Future Past", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "xmen-days-future-past", poster: "https://i0.wp.com/www.dorkaholics.com/wp-content/uploads/2014/04/9kcs.jpg?fit=692%2C1024&ssl=1" },
+    { titulo: "Frank", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "frank-2014", poster: "https://image.tmdb.org/t/p/original/etqPktnnXLBtFIkKZ3XezrlZqSQ.jpg" },
+    { titulo: "Steve Jobs", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "steve-jobs-2015", poster: "https://image.tmdb.org/t/p/original/lCzMkFxRE9IolEKSJBt2LlyQCg0.jpg" },
     { titulo: "Black Widow", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", fichaTecnicaId: "black-widow-2021", poster: "https://m.media-amazon.com/images/M/MV5BNjZjOGVhOTEtNzY4Mi00MjQzLTlmYjktNzMyMDExMWJlODEwXkEyXkFqcGc@.V1.jpg" },
     { titulo: "Hawkeye", categoria: "florence-pugh", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "hawkeye-serie", poster: "https://lumiere-a.akamaihd.net/v1/images/unknown_61ca7b47.png" },
     { titulo: "Don't Worry Darling", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", fichaTecnicaId: "dont-worry-darling", poster: "https://m.media-amazon.com/images/M/MV5BODVhYzM3M2YtMTUwYi00NjE4LWIwYzktOTM1MTYwZWU0ZTBiXkEyXkFqcGc@._V1_.jpg" },
@@ -9376,7 +9378,7 @@ if(btnVolverMichaelFassbender) {
     });
 }
 
-['centurion-2010', 'jonah-hex-2010', 'shame-2011', 'a-dangerous-method', 'jane-eyre-2011', 'pitch-black-heist', 'haywire-2011', '12-anos-de-esclavitud', 'the-counselor-2013'].forEach(id => {
+['centurion-2010', 'jonah-hex-2010', 'shame-2011', 'a-dangerous-method', 'jane-eyre-2011', 'pitch-black-heist', 'haywire-2011', '12-anos-de-esclavitud', 'the-counselor-2013', 'frank-2014', 'steve-jobs-2015'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -13609,6 +13611,8 @@ const FICHAS_TECNICAS_TITULOS = {
     "batman-v-superman": ["Batman v Superman", "Batman v Superman: Dawn of Justice"],
     "shang-chi": "Shang-Chi",
     "eternals": "Eternals",
+    "frank-2014": "Frank",
+    "steve-jobs-2015": "Steve Jobs",
     "haywire-2011": "Haywire",
     "12-anos-de-esclavitud": "12 Años de Esclavitud",
     "the-counselor-2013": "The Counselor",
@@ -16185,6 +16189,28 @@ const REPARTO_PELICULAS = {
             { actor: "Brad Pitt", personaje: "Westray" },
             { actor: "Rubén Blades", personaje: "El Jefe" },
             { actor: "Bruno Ganz", personaje: "El Diamantero" }
+        ]
+    },
+    "frank-2014": {
+        director: "Lenny Abrahamson",
+        elenco: [
+            { actor: "Michael Fassbender", personaje: "Frank" },
+            { actor: "Domhnall Gleeson", personaje: "Jon" },
+            { actor: "Maggie Gyllenhaal", personaje: "Clara" },
+            { actor: "Scoot McNairy", personaje: "Don" },
+            { actor: "François Civil", personaje: "Baraque" },
+            { actor: "Carla Azar", personaje: "Nana" }
+        ]
+    },
+    "steve-jobs-2015": {
+        director: "Danny Boyle",
+        elenco: [
+            { actor: "Michael Fassbender", personaje: "Steve Jobs" },
+            { actor: "Kate Winslet", personaje: "Joanna Hoffman" },
+            { actor: "Seth Rogen", personaje: "Steve Wozniak" },
+            { actor: "Jeff Daniels", personaje: "John Sculley" },
+            { actor: "Michael Stuhlbarg", personaje: "Andy Hertzfeld" },
+            { actor: "Katherine Waterston", personaje: "Chrisann Brennan" }
         ]
     },
     "eternals": {
