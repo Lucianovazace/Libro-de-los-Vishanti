@@ -60,9 +60,9 @@ const listaMedia = [
     { titulo: "Loki (Temporada 1)", categoria: "doomsday", tier: 1, tipo: "Serie", poster: "https://m.media-amazon.com/images/I/81fdQ6kl4JS.jpg" },
     { titulo: "Shang-Chi", categoria: "doomsday", tier: 3, tipo: "Película", fichaTecnicaId: "shang-chi", poster: "https://m.media-amazon.com/images/I/81orh-NSiTL.jpg" },
     { titulo: "Spider-Man: No Way Home", categoria: "doomsday", tier: 2, tipo: "Película", fichaTecnicaId: "spider-man-no-way-home", poster: "https://www.cinemascomics.com/wp-content/uploads/2022/01/poster-Spider-man-no-way-home.jpg" },
-    { titulo: "Dr. Strange: Multiverse of Madness", categoria: "doomsday", tier: 1, tipo: "Película", poster: "https://img.buzzfeed.com/buzzfeed-static/static/2022-02/18/13/asset/e9954361afcd/sub-buzz-772-1645190837-7.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto" },
+    { titulo: "Dr. Strange: Multiverse of Madness", categoria: "doomsday", tier: 1, tipo: "Película", fichaTecnicaId: "doctor-strange-multiverse-of-madness", poster: "https://img.buzzfeed.com/buzzfeed-static/static/2022-02/18/13/asset/e9954361afcd/sub-buzz-772-1645190837-7.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto" },
     { titulo: "Ms. Marvel", categoria: "doomsday", tier: 3, tipo: "Serie", poster: "https://lumiere-a.akamaihd.net/v1/images/ms_979c8372.jpeg" },
-    { titulo: "Thor: Love and Thunder", categoria: "doomsday", tier: 2, tipo: "Película", poster: "https://lumiere-a.akamaihd.net/v1/images/fb83262af061c44d518c601e3956c3b4_2764x4096_e4f0eee2.jpeg" },
+    { titulo: "Thor: Love and Thunder", categoria: "doomsday", tier: 2, tipo: "Película", fichaTecnicaId: "thor-love-and-thunder", poster: "https://lumiere-a.akamaihd.net/v1/images/fb83262af061c44d518c601e3956c3b4_2764x4096_e4f0eee2.jpeg" },
     { titulo: "Black Panther: Wakanda Forever", categoria: "doomsday", tier: 2, tipo: "Película", fichaTecnicaId: "black-panther-wakanda-forever", poster: "https://artofthemovies.co.uk/cdn/shop/products/IMG_0184-338579.jpg?v=1668148930&width=900" },
     { titulo: "Ant-Man and The Wasp: Quantumania", categoria: "doomsday", tier: 2, tipo: "Película", fichaTecnicaId: "ant-man-quantumania", poster: "https://lumiere-a.akamaihd.net/v1/images/antman_b843a521.jpeg?region=0,0,658,898" },
     { titulo: "Guardians of the Galaxy Vol. 3", categoria: "doomsday", tier: 3, tipo: "Película", fichaTecnicaId: "guardians-of-the-galaxy-3", poster: "https://assets-prd.ignimgs.com/2022/12/01/guardians-of-the-galaxy-vol-3-1669932411159.jfif" },
@@ -108,9 +108,9 @@ const listaMedia = [
     { titulo: "Hawkeye", categoria: "mcu-multiverso", tipo: "Serie", fichaTecnicaId: "hawkeye-serie", ordenSalida: 30, crono: 33, poster: "https://lumiere-a.akamaihd.net/v1/images/unknown_61ca7b47.png" },
     { titulo: "Spider-Man: No Way Home", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "spider-man-no-way-home", ordenSalida: 31, crono: 35, poster: "https://www.cinemascomics.com/wp-content/uploads/2022/01/poster-Spider-man-no-way-home.jpg" },
     { titulo: "Moon Knight", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 32, crono: 36, poster: "https://m.media-amazon.com/images/I/71pAwt4KT6L.jpg" },
-    { titulo: "Dr. Strange: Multiverse of Madness", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 33, crono: 37, poster: "https://img.buzzfeed.com/buzzfeed-static/static/2022-02/18/13/asset/e9954361afcd/sub-buzz-772-1645190837-7.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto" },
+    { titulo: "Dr. Strange: Multiverse of Madness", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "doctor-strange-multiverse-of-madness", ordenSalida: 33, crono: 37, poster: "https://img.buzzfeed.com/buzzfeed-static/static/2022-02/18/13/asset/e9954361afcd/sub-buzz-772-1645190837-7.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto" },
     { titulo: "Ms. Marvel", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 34, crono: 38, poster: "https://lumiere-a.akamaihd.net/v1/images/ms_979c8372.jpeg" },
-    { titulo: "Thor: Love and Thunder", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 35, crono: 39, poster: "https://lumiere-a.akamaihd.net/v1/images/fb83262af061c44d518c601e3956c3b4_2764x4096_e4f0eee2.jpeg" },
+    { titulo: "Thor: Love and Thunder", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "thor-love-and-thunder", ordenSalida: 35, crono: 39, poster: "https://lumiere-a.akamaihd.net/v1/images/fb83262af061c44d518c601e3956c3b4_2764x4096_e4f0eee2.jpeg" },
     { titulo: "Yo Soy Groot", categoria: "mcu-multiverso", tipo: "Serie de Cortos", ordenSalida: 36, crono: 26, poster: "https://cdn.marvel.com/content/2x/iamgroot_lob_crd_04.jpg" },
     { titulo: "She-Hulk: Attorney at Law", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 37, crono: 40, poster: "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/LXR4DQCCMFFW7CEWUE7QRUGJTU.jpg" },
     { titulo: "Hombre Lobo por la Noche", categoria: "mcu-multiverso", tipo: "Especial", ordenSalida: 38, crono: 30, poster: "https://m.media-amazon.com/images/M/MV5BODUzMGFkYzgtYzhjNC00ZmFjLTg3ZTYtYWJkMWRjMzJmYTQ2XkEyXkFqcGc@.V1.jpg" },
@@ -950,7 +950,7 @@ const listaMedia = [
     { titulo: "The Power of the Dog", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNzgyMzA2NDEtZWUxNy00MDNmLTllMDYtNzZmNTU5ZWVmMzhlXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
     { titulo: "The Electrical Life of Louis Wain", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNDk2NmJiN2ItMGI3Yi00OGE5LThiMWEtYzU3MjE0ZmU1M2M2XkEyXkFqcGc@.V1.jpg" },
     { titulo: "Spider-Man: No Way Home", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", fichaTecnicaId: "spider-man-no-way-home", poster: "https://www.cinemascomics.com/wp-content/uploads/2022/01/poster-Spider-man-no-way-home.jpg" },
-    { titulo: "Doctor Strange in the Multiverse of Madness", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", poster: "https://www.impawards.com/2022/posters/doctor_strange_in_the_multiverse_of_madness.jpg" },
+    { titulo: "Doctor Strange in the Multiverse of Madness", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", fichaTecnicaId: "doctor-strange-multiverse-of-madness", poster: "https://www.impawards.com/2022/posters/doctor_strange_in_the_multiverse_of_madness.jpg" },
     { titulo: "The Book of Clarence", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", poster: "https://www.sonypictures.ca/sites/canada/files/2024-02/DP_8866065_BOOKOFCLARENCE%2CTHE_2000x3000LSR_HEKeyArt_1333x2000_thumbnail-min.jpg" },
     { titulo: "The End We Start From", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", poster: "https://public-website-assets.paramountpictures.com/paramount2025/s3fs-public/styles/poster_medium/public/theendwestartfrom-pm-800x1200-c.jpg?itok=RkEwDLbG" },
     { titulo: "The Wonderful Story of Henry Sugar and Three More", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BN2UwOWVlZWQtMmM0YS00Njc2LTlhOWYtYTA1ZTMwY2NjNmM1XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
@@ -13318,7 +13318,7 @@ const REQUISITOS_CALL_OF_DUTY_4 = {
     }
 });
 
-['shang-chi', 'eternals', 'fantastic-four-first-steps', 'thunderbolts-2025', 'captain-america-brave-new-world', 'deadpool-wolverine-2024', 'guardians-of-the-galaxy-3', 'ant-man-quantumania', 'spider-man-no-way-home', 'black-panther-wakanda-forever'].forEach(id => {
+['shang-chi', 'eternals', 'fantastic-four-first-steps', 'thunderbolts-2025', 'captain-america-brave-new-world', 'deadpool-wolverine-2024', 'guardians-of-the-galaxy-3', 'ant-man-quantumania', 'spider-man-no-way-home', 'black-panther-wakanda-forever', 'doctor-strange-multiverse-of-madness', 'thor-love-and-thunder'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -13584,6 +13584,8 @@ const FICHAS_TECNICAS_TITULOS = {
     "batman-v-superman": ["Batman v Superman", "Batman v Superman: Dawn of Justice"],
     "shang-chi": "Shang-Chi",
     "eternals": "Eternals",
+    "doctor-strange-multiverse-of-madness": "Doctor Strange in the Multiverse of Madness",
+    "thor-love-and-thunder": "Thor: Love and Thunder",
     "spider-man-no-way-home": "Spider-Man: No Way Home",
     "black-panther-wakanda-forever": "Black Panther: Wakanda Forever",
     "guardians-of-the-galaxy-3": "Guardians of the Galaxy Vol. 3",
@@ -15979,6 +15981,34 @@ const REPARTO_PELICULAS = {
             { actor: "Tenoch Huerta", personaje: "Namor" },
             { actor: "Michaela Coel", personaje: "Aneka" },
             { actor: "Martin Freeman", personaje: "Everett Ross" }
+        ]
+    },
+    "doctor-strange-multiverse-of-madness": {
+        director: "Sam Raimi",
+        elenco: [
+            { actor: "Benedict Cumberbatch", personaje: "Stephen Strange / Doctor Strange" },
+            { actor: "Elizabeth Olsen", personaje: "Wanda Maximoff / Bruja Escarlata" },
+            { actor: "Xochitl Gomez", personaje: "America Chavez" },
+            { actor: "Chiwetel Ejiofor", personaje: "Karl Mordo" },
+            { actor: "Benedict Wong", personaje: "Wong" },
+            { actor: "Rachel McAdams", personaje: "Christine Palmer" },
+            { actor: "Patrick Stewart", personaje: "Charles Xavier" },
+            { actor: "Hayley Atwell", personaje: "Peggy Carter (Capitana Carter)" },
+            { actor: "Anson Mount", personaje: "Black Bolt" },
+            { actor: "John Krasinski", personaje: "Reed Richards" }
+        ]
+    },
+    "thor-love-and-thunder": {
+        director: "Taika Waititi",
+        elenco: [
+            { actor: "Chris Hemsworth", personaje: "Thor" },
+            { actor: "Natalie Portman", personaje: "Jane Foster / La Poderosa Thor" },
+            { actor: "Christian Bale", personaje: "Gorr el Carnicero de Dioses" },
+            { actor: "Tessa Thompson", personaje: "Valkiria" },
+            { actor: "Taika Waititi", personaje: "Korg" },
+            { actor: "Russell Crowe", personaje: "Zeus" },
+            { actor: "Chris Pratt", personaje: "Peter Quill / Star-Lord" },
+            { actor: "Jaimie Alexander", personaje: "Sif" }
         ]
     },
     "eternals": {
