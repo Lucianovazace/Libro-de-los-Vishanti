@@ -3412,6 +3412,42 @@ const COLECCIONES_LISTA_FIJA = [
         "Batman: Leyendas del Caballero Oscuro #14: Criminales",
         "Batman: Leyendas del Caballero Oscuro #15: Recuperando la Cordura"
     ] },
+    { id: "batman-snyder-orden", titulos: [
+        "Batman de Scott Snyder Vol. 1: La Saga de Los Búhos",
+        "Batman de Scott Snyder Vol. 2: Muerte de La Familia",
+        "Batman de Scott Snyder Vol. 3: Año Cero",
+        "Batman de Scott Snyder Vol. 4: Fin de Juego",
+        "Batman de Scott Snyder Vol. 5: Superpesado"
+    ] },
+    { id: "batman-zdarsky-orden", titulos: [
+        "Batman de Chip Zdarsky #1: Respaldo",
+        "Batman de Chip Zdarsky #2: El Bat-Man de Gotham",
+        "Batman de Chip Zdarsky #3: La Guerra de Gotham",
+        "Batman de Chip Zdarsky #4: Joker: Año Uno",
+        "Batman de Chip Zdarsky #5: Prisiones Oscuras",
+        "Batman de Chip Zdarsky #6: Poder Absoluto",
+        "Batman de Chip Zdarsky #7: Ciudad Moribunda"
+    ] },
+    { id: "batman-superman-mejores-orden", titulos: [
+        "Batman/Superman: Los Mejores del Mundo #1: El Demonio Nezha",
+        "Batman/Superman: Los Mejores del Mundo #2: Extraño Visitante",
+        "Batman/Superman: Los Mejores del Mundo #3: Elemental",
+        "Batman/Superman: Los Mejores del Mundo #4: Regreso a Kingdom Come",
+        "Batman/Superman: Los Mejores del Mundo #5: Orígenes Secretos",
+        "Batman/Superman: Los Mejores del Mundo #6: Imposible",
+        "Batman/Superman: Los Mejores del Mundo #7: Eclipso Total",
+        "Batman/Superman: Los Mejores del Mundo #8: Gira en Mundo Bizarro"
+    ] },
+    { id: "nightwing-taylor-orden", titulos: [
+        "Nightwing Vol. 1: Saltando a La Luz",
+        "Nightwing Vol. 2: Estado de Miedo",
+        "Nightwing Vol. 3: Maten a Grayson",
+        "Nightwing Vol. 4 La Batalla por El Corazon de Bludhaven",
+        "Nightwing Vol. 5: El Salto",
+        "Nightwing Vol. 6: La Hora de Los Titanes",
+        "Nightwing Vol. 7: Al Limite",
+        "Nightwing Vol. 8: La Caida de Grayson"
+    ] },
 ];
 function titulosFijosDe(colId) {
     const f = COLECCIONES_LISTA_FIJA.find(x => x.id === colId);
@@ -5516,6 +5552,46 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "batman-snyder-orden",
+        etiqueta: "Colección",
+        titulo: "Batman de Scott Snyder",
+        categoria: "colecciones-hub",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman-01-el-tribunal-de-los-buhos-cov-arg1-79ad7f69d4b63c7c7616209478666475-1024-1024.webp",
+        esContenedor: true,
+        categoriaEditorial: "dc",
+        peliculas: []
+    },
+    {
+        id: "batman-zdarsky-orden",
+        etiqueta: "Colección",
+        titulo: "Batman de Chip Zdarsky",
+        categoria: "colecciones-hub",
+        poster: "https://i1.whakoom.com/large/2c/14/79c2dd4302684d059d04eb794367b1b9.jpg",
+        esContenedor: true,
+        categoriaEditorial: "dc",
+        peliculas: []
+    },
+    {
+        id: "batman-superman-mejores-orden",
+        etiqueta: "Colección",
+        titulo: "Batman/Superman: Los Mejores del Mundo",
+        categoria: "colecciones-hub",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_superman_-_los_mejores_del_mundo_cov11-194d38fd286024b77b16853357900328-1024-1024.webp",
+        esContenedor: true,
+        categoriaEditorial: "dc",
+        peliculas: []
+    },
+    {
+        id: "nightwing-taylor-orden",
+        etiqueta: "Colección",
+        titulo: "Nightwing de Tom Taylor",
+        categoria: "colecciones-hub",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/nightwing_cov-72451bc64a5779c7c617750833285312-640-0.webp",
+        esContenedor: true,
+        categoriaEditorial: "dc",
+        peliculas: []
+    },
+    {
         id: "marvel-novelas-graficas-definitiva",
         etiqueta: "Colección",
         titulo: "Colección Definitiva de Novelas Gráficas de Marvel",
@@ -6766,6 +6842,10 @@ function renderizarColecciones() {
         "all-star-batman-renacimiento-orden": "seccion-all-star-batman-renacimiento-orden",
         "jli-ovni-orden": "seccion-jli-ovni-orden",
         "leyendas-caballero-oscuro-orden": "seccion-leyendas-caballero-oscuro-orden",
+        "batman-snyder-orden": "seccion-batman-snyder-orden",
+        "batman-zdarsky-orden": "seccion-batman-zdarsky-orden",
+        "batman-superman-mejores-orden": "seccion-batman-superman-mejores-orden",
+        "nightwing-taylor-orden": "seccion-nightwing-taylor-orden",
         "marvel-novelas-graficas-definitiva": "seccion-marvel-novelas-graficas-definitiva",
         "spiderman-universo-arana": "seccion-spiderman-universo-arana",
         "marvel-excelsior": "seccion-marvel-excelsior",
@@ -23470,6 +23550,34 @@ if(btnVolverJliOvniOrden) {
 const btnVolverLeyendasCaballeroOscuroOrden = document.getElementById('btn-volver-leyendas-caballero-oscuro-orden');
 if(btnVolverLeyendasCaballeroOscuroOrden) {
     btnVolverLeyendasCaballeroOscuroOrden.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolver_batman_snyder_orden = document.getElementById('btn-volver-batman-snyder-orden');
+if(btnVolver_batman_snyder_orden) {
+    btnVolver_batman_snyder_orden.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolver_batman_zdarsky_orden = document.getElementById('btn-volver-batman-zdarsky-orden');
+if(btnVolver_batman_zdarsky_orden) {
+    btnVolver_batman_zdarsky_orden.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolver_batman_superman_mejores_orden = document.getElementById('btn-volver-batman-superman-mejores-orden');
+if(btnVolver_batman_superman_mejores_orden) {
+    btnVolver_batman_superman_mejores_orden.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolver_nightwing_taylor_orden = document.getElementById('btn-volver-nightwing-taylor-orden');
+if(btnVolver_nightwing_taylor_orden) {
+    btnVolver_nightwing_taylor_orden.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
     });
 }
