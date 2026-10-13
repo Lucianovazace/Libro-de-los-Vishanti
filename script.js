@@ -59,11 +59,11 @@ const listaMedia = [
     { titulo: "The Falcon and The Winter Soldier", categoria: "doomsday", tier: 3, tipo: "Serie", fichaTecnicaId: "falcon-winter-soldier", poster: "https://www.hellofriki.com/wp-content/uploads/2020/12/falcon-soldado-de-invierno-serie-poste-691x1024.jpg" },
     { titulo: "Loki (Temporada 1)", categoria: "doomsday", tier: 1, tipo: "Serie", poster: "https://m.media-amazon.com/images/I/81fdQ6kl4JS.jpg" },
     { titulo: "Shang-Chi", categoria: "doomsday", tier: 3, tipo: "Película", fichaTecnicaId: "shang-chi", poster: "https://m.media-amazon.com/images/I/81orh-NSiTL.jpg" },
-    { titulo: "Spider-Man: No Way Home", categoria: "doomsday", tier: 2, tipo: "Película", poster: "https://www.cinemascomics.com/wp-content/uploads/2022/01/poster-Spider-man-no-way-home.jpg" },
+    { titulo: "Spider-Man: No Way Home", categoria: "doomsday", tier: 2, tipo: "Película", fichaTecnicaId: "spider-man-no-way-home", poster: "https://www.cinemascomics.com/wp-content/uploads/2022/01/poster-Spider-man-no-way-home.jpg" },
     { titulo: "Dr. Strange: Multiverse of Madness", categoria: "doomsday", tier: 1, tipo: "Película", poster: "https://img.buzzfeed.com/buzzfeed-static/static/2022-02/18/13/asset/e9954361afcd/sub-buzz-772-1645190837-7.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto" },
     { titulo: "Ms. Marvel", categoria: "doomsday", tier: 3, tipo: "Serie", poster: "https://lumiere-a.akamaihd.net/v1/images/ms_979c8372.jpeg" },
     { titulo: "Thor: Love and Thunder", categoria: "doomsday", tier: 2, tipo: "Película", poster: "https://lumiere-a.akamaihd.net/v1/images/fb83262af061c44d518c601e3956c3b4_2764x4096_e4f0eee2.jpeg" },
-    { titulo: "Black Panther: Wakanda Forever", categoria: "doomsday", tier: 2, tipo: "Película", poster: "https://artofthemovies.co.uk/cdn/shop/products/IMG_0184-338579.jpg?v=1668148930&width=900" },
+    { titulo: "Black Panther: Wakanda Forever", categoria: "doomsday", tier: 2, tipo: "Película", fichaTecnicaId: "black-panther-wakanda-forever", poster: "https://artofthemovies.co.uk/cdn/shop/products/IMG_0184-338579.jpg?v=1668148930&width=900" },
     { titulo: "Ant-Man and The Wasp: Quantumania", categoria: "doomsday", tier: 2, tipo: "Película", fichaTecnicaId: "ant-man-quantumania", poster: "https://lumiere-a.akamaihd.net/v1/images/antman_b843a521.jpeg?region=0,0,658,898" },
     { titulo: "Guardians of the Galaxy Vol. 3", categoria: "doomsday", tier: 3, tipo: "Película", fichaTecnicaId: "guardians-of-the-galaxy-3", poster: "https://assets-prd.ignimgs.com/2022/12/01/guardians-of-the-galaxy-vol-3-1669932411159.jfif" },
     { titulo: "Loki (Temporada 2)", categoria: "doomsday", tier: 1, tipo: "Serie", poster: "https://preview.redd.it/official-poster-for-loki-season-2-v0-mjczxxkptafb1.jpg?auto=webp&s=b52be74ed745f4c481074ffd739feb43c7c0214f" },
@@ -106,7 +106,7 @@ const listaMedia = [
     { titulo: "Shang-Chi", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "shang-chi", ordenSalida: 28, crono: 31, poster: "https://m.media-amazon.com/images/I/81orh-NSiTL.jpg" },
     { titulo: "Eternals", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "eternals", ordenSalida: 29, crono: 32, poster: "https://image.tmdb.org/t/p/original/vgUZo9aVvRvCQFXwZC9zq3qCZT9.jpg" },
     { titulo: "Hawkeye", categoria: "mcu-multiverso", tipo: "Serie", fichaTecnicaId: "hawkeye-serie", ordenSalida: 30, crono: 33, poster: "https://lumiere-a.akamaihd.net/v1/images/unknown_61ca7b47.png" },
-    { titulo: "Spider-Man: No Way Home", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 31, crono: 35, poster: "https://www.cinemascomics.com/wp-content/uploads/2022/01/poster-Spider-man-no-way-home.jpg" },
+    { titulo: "Spider-Man: No Way Home", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "spider-man-no-way-home", ordenSalida: 31, crono: 35, poster: "https://www.cinemascomics.com/wp-content/uploads/2022/01/poster-Spider-man-no-way-home.jpg" },
     { titulo: "Moon Knight", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 32, crono: 36, poster: "https://m.media-amazon.com/images/I/71pAwt4KT6L.jpg" },
     { titulo: "Dr. Strange: Multiverse of Madness", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 33, crono: 37, poster: "https://img.buzzfeed.com/buzzfeed-static/static/2022-02/18/13/asset/e9954361afcd/sub-buzz-772-1645190837-7.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto" },
     { titulo: "Ms. Marvel", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 34, crono: 38, poster: "https://lumiere-a.akamaihd.net/v1/images/ms_979c8372.jpeg" },
@@ -114,7 +114,7 @@ const listaMedia = [
     { titulo: "Yo Soy Groot", categoria: "mcu-multiverso", tipo: "Serie de Cortos", ordenSalida: 36, crono: 26, poster: "https://cdn.marvel.com/content/2x/iamgroot_lob_crd_04.jpg" },
     { titulo: "She-Hulk: Attorney at Law", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 37, crono: 40, poster: "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/LXR4DQCCMFFW7CEWUE7QRUGJTU.jpg" },
     { titulo: "Hombre Lobo por la Noche", categoria: "mcu-multiverso", tipo: "Especial", ordenSalida: 38, crono: 30, poster: "https://m.media-amazon.com/images/M/MV5BODUzMGFkYzgtYzhjNC00ZmFjLTg3ZTYtYWJkMWRjMzJmYTQ2XkEyXkFqcGc@.V1.jpg" },
-    { titulo: "Black Panther: Wakanda Forever", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 39, crono: 41, poster: "https://artofthemovies.co.uk/cdn/shop/products/IMG_0184-338579.jpg?v=1668148930&width=900" },
+    { titulo: "Black Panther: Wakanda Forever", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "black-panther-wakanda-forever", ordenSalida: 39, crono: 41, poster: "https://artofthemovies.co.uk/cdn/shop/products/IMG_0184-338579.jpg?v=1668148930&width=900" },
     { titulo: "Ant-Man and The Wasp: Quantumania", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "ant-man-quantumania", ordenSalida: 40, crono: 42, poster: "https://lumiere-a.akamaihd.net/v1/images/antman_b843a521.jpeg?region=0,0,658,898" },
     { titulo: "Guardians of the Galaxy Vol. 3", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "guardians-of-the-galaxy-3", ordenSalida: 41, crono: 43, poster: "https://assets-prd.ignimgs.com/2022/12/01/guardians-of-the-galaxy-vol-3-1669932411159.jfif" },
     { titulo: "Loki (Temporada 2)", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 42, crono: 24.6, poster: "https://preview.redd.it/official-poster-for-loki-season-2-v0-mjczxxkptafb1.jpg?auto=webp&s=b52be74ed745f4c481074ffd739feb43c7c0214f" },
@@ -884,7 +884,7 @@ const listaMedia = [
     { titulo: "El Diablo a Todas Horas", categoria: "tom-holland", subtipo: "2020", tipo: "Película", poster: "https://i.pinimg.com/736x/3f/2b/1b/3f2b1ba88daef2d2226517b3e49688fa.jpg" },
     { titulo: "Cherry", categoria: "tom-holland", subtipo: "2020", tipo: "Película", poster: "https://pics.filmaffinity.com/Cherry-459820854-large.jpg" },
     { titulo: "Chaos Walking", categoria: "tom-holland", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61LcnT-4RxL._AC_UF894,1000_QL80_.jpg" },
-    { titulo: "Spider-Man: No Way Home", categoria: "tom-holland", subtipo: "2020", tipo: "Película", poster: "https://www.cinemascomics.com/wp-content/uploads/2022/01/poster-Spider-man-no-way-home.jpg" },
+    { titulo: "Spider-Man: No Way Home", categoria: "tom-holland", subtipo: "2020", tipo: "Película", fichaTecnicaId: "spider-man-no-way-home", poster: "https://www.cinemascomics.com/wp-content/uploads/2022/01/poster-Spider-man-no-way-home.jpg" },
     { titulo: "Uncharted", categoria: "tom-holland", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71Pzfv1skmL.jpg" },
     { titulo: "The Odyssey", categoria: "tom-holland", subtipo: "2020", tipo: "Película", poster: "https://img.asmedia.epimg.net/resizer/v2/AP6RDKAGQVE4DEON7ETUS4UVM4.jpg?auth=5abec700c478bffaa862bc1e153efeb77076781fbd4dc9df918ddb11a11979ea&width=375" },
     { titulo: "Spider-Man: Brand New Day", categoria: "tom-holland", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOWNjYWM3NWItOGE0ZS00MWRjLThiZWEtYjc4ZmNmMmU5ZTVmXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
@@ -949,7 +949,7 @@ const listaMedia = [
     { titulo: "The Mauritanian", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZjkwODkwNTEtZGZlZC00Y2FkLThmMTQtYTI1NGI1OGUwNWUxXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
     { titulo: "The Power of the Dog", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNzgyMzA2NDEtZWUxNy00MDNmLTllMDYtNzZmNTU5ZWVmMzhlXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
     { titulo: "The Electrical Life of Louis Wain", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNDk2NmJiN2ItMGI3Yi00OGE5LThiMWEtYzU3MjE0ZmU1M2M2XkEyXkFqcGc@.V1.jpg" },
-    { titulo: "Spider-Man: No Way Home", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", poster: "https://www.cinemascomics.com/wp-content/uploads/2022/01/poster-Spider-man-no-way-home.jpg" },
+    { titulo: "Spider-Man: No Way Home", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", fichaTecnicaId: "spider-man-no-way-home", poster: "https://www.cinemascomics.com/wp-content/uploads/2022/01/poster-Spider-man-no-way-home.jpg" },
     { titulo: "Doctor Strange in the Multiverse of Madness", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", poster: "https://www.impawards.com/2022/posters/doctor_strange_in_the_multiverse_of_madness.jpg" },
     { titulo: "The Book of Clarence", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", poster: "https://www.sonypictures.ca/sites/canada/files/2024-02/DP_8866065_BOOKOFCLARENCE%2CTHE_2000x3000LSR_HEKeyArt_1333x2000_thumbnail-min.jpg" },
     { titulo: "The End We Start From", categoria: "benedict-cumberbatch", subtipo: "2020", tipo: "Película", poster: "https://public-website-assets.paramountpictures.com/paramount2025/s3fs-public/styles/poster_medium/public/theendwestartfrom-pm-800x1200-c.jpg?itok=RkEwDLbG" },
@@ -1459,7 +1459,7 @@ const listaMedia = [
     { titulo: "Mainstream", categoria: "andrew-garfield", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYzNjYzVlYzktMTEzZS00ZjViLTg0MmQtOWRkZjNlYWQ0MGQ1XkEyXkFqcGc@._V1_.jpg" },
     { titulo: "Los Ojos de Tammy Faye", categoria: "andrew-garfield", subtipo: "2020", tipo: "Película", fichaTecnicaId: "eyes-of-tammy-faye", poster: "https://m.media-amazon.com/images/M/MV5BMzcyY2JkZDYtMDEwNS00YzRlLTgxZTAtMDc1YTJmNWIxZjRlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
     { titulo: "Tick, Tick... Boom!", categoria: "andrew-garfield", subtipo: "2020", tipo: "Película", fichaTecnicaId: "tick-tick-boom", poster: "https://m.media-amazon.com/images/M/MV5BOGYyNGJmNzctYzZjZi00MzUzLTg3YTYtYjk0OTNjMzA1OTE4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
-    { titulo: "Spider-Man: No Way Home", categoria: "andrew-garfield", subtipo: "2020", tipo: "Película", poster: "https://www.cinemascomics.com/wp-content/uploads/2022/01/poster-Spider-man-no-way-home.jpg" },
+    { titulo: "Spider-Man: No Way Home", categoria: "andrew-garfield", subtipo: "2020", tipo: "Película", fichaTecnicaId: "spider-man-no-way-home", poster: "https://www.cinemascomics.com/wp-content/uploads/2022/01/poster-Spider-man-no-way-home.jpg" },
     { titulo: "Under The Banner of Heaven", categoria: "andrew-garfield", subtipo: "2020", tipo: "Serie", poster: "https://m.media-amazon.com/images/M/MV5BMDM2ZTA1ZjItMDlhNS00ZTMyLWI5MDEtOTk0YWI5ZmZjZjBkXkEyXkFqcGc@._V1_.jpg" },
     { titulo: "We Live in Time", categoria: "andrew-garfield", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/vEmiJetB0C7VJjw60QNXO0oMMws.jpg" },
     { titulo: "After the Hunt", categoria: "andrew-garfield", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMzYyOTAwODEtZTY4My00MjVkLWJjYjUtMjE2N2UzYTE3MTY3XkEyXkFqcGc@._V1_.jpg" },
@@ -13318,7 +13318,7 @@ const REQUISITOS_CALL_OF_DUTY_4 = {
     }
 });
 
-['shang-chi', 'eternals', 'fantastic-four-first-steps', 'thunderbolts-2025', 'captain-america-brave-new-world', 'deadpool-wolverine-2024', 'guardians-of-the-galaxy-3', 'ant-man-quantumania'].forEach(id => {
+['shang-chi', 'eternals', 'fantastic-four-first-steps', 'thunderbolts-2025', 'captain-america-brave-new-world', 'deadpool-wolverine-2024', 'guardians-of-the-galaxy-3', 'ant-man-quantumania', 'spider-man-no-way-home', 'black-panther-wakanda-forever'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -13584,6 +13584,8 @@ const FICHAS_TECNICAS_TITULOS = {
     "batman-v-superman": ["Batman v Superman", "Batman v Superman: Dawn of Justice"],
     "shang-chi": "Shang-Chi",
     "eternals": "Eternals",
+    "spider-man-no-way-home": "Spider-Man: No Way Home",
+    "black-panther-wakanda-forever": "Black Panther: Wakanda Forever",
     "guardians-of-the-galaxy-3": "Guardians of the Galaxy Vol. 3",
     "ant-man-quantumania": "Ant-Man and The Wasp: Quantumania",
     "captain-america-brave-new-world": "Captain America: Brave New World",
@@ -15944,6 +15946,39 @@ const REPARTO_PELICULAS = {
             { actor: "Michelle Pfeiffer", personaje: "Janet van Dyne" },
             { actor: "Bill Murray", personaje: "Krylar" },
             { actor: "Corey Stoll", personaje: "M.O.D.O.K." }
+        ]
+    },
+    "spider-man-no-way-home": {
+        director: "Jon Watts",
+        elenco: [
+            { actor: "Tom Holland", personaje: "Peter Parker / Spider-Man" },
+            { actor: "Zendaya", personaje: "MJ" },
+            { actor: "Benedict Cumberbatch", personaje: "Stephen Strange / Doctor Strange" },
+            { actor: "Jacob Batalon", personaje: "Ned Leeds" },
+            { actor: "Jon Favreau", personaje: "Happy Hogan" },
+            { actor: "Marisa Tomei", personaje: "May Parker" },
+            { actor: "Jamie Foxx", personaje: "Max Dillon / Electro" },
+            { actor: "Willem Dafoe", personaje: "Norman Osborn / Duende Verde" },
+            { actor: "Alfred Molina", personaje: "Otto Octavius / Doctor Octopus" },
+            { actor: "Thomas Haden Church", personaje: "Flint Marko / Hombre de Arena" },
+            { actor: "Rhys Ifans", personaje: "Curt Connors / Lagarto" },
+            { actor: "Andrew Garfield", personaje: "Peter Parker (Tierra-120703)" },
+            { actor: "Tobey Maguire", personaje: "Peter Parker (Tierra-96283)" }
+        ]
+    },
+    "black-panther-wakanda-forever": {
+        director: "Ryan Coogler",
+        elenco: [
+            { actor: "Letitia Wright", personaje: "Shuri" },
+            { actor: "Angela Bassett", personaje: "Reina Ramonda" },
+            { actor: "Lupita Nyong'o", personaje: "Nakia" },
+            { actor: "Danai Gurira", personaje: "Okoye" },
+            { actor: "Winston Duke", personaje: "M'Baku" },
+            { actor: "Florence Kasumba", personaje: "Ayo" },
+            { actor: "Dominique Thorne", personaje: "Riri Williams / Ironheart" },
+            { actor: "Tenoch Huerta", personaje: "Namor" },
+            { actor: "Michaela Coel", personaje: "Aneka" },
+            { actor: "Martin Freeman", personaje: "Everett Ross" }
         ]
     },
     "eternals": {
