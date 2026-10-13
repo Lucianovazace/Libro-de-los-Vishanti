@@ -3545,6 +3545,14 @@ const COLECCIONES_LISTA_FIJA = [
         "Batman: Knightfall #7: Pródigo: Epílogo a La Caída del Caballero",
         "Batman: Knightfall #8: Troika: Epílogo Final a La Caída del Caballero"
     ] },
+    { id: "no-mans-land-orden", titulos: [
+        "Batman: No Man's Land Vol. 1: Contagio",
+        "Batman: No Man's Land Vol. 2: Legado",
+        "Batman: No Man's Land Vol. 3: Cataciclismo Parte I",
+        "Batman: No Man's Land Vol. 4: Cataciclismo Parte II",
+        "Batman: No Man's Land Vol. 5: Cataciclismo Parte III",
+        "Batman: No Man's Land Vol. 6: Camino a Tierra de Nadie"
+    ] },
 ];
 function titulosFijosDe(colId) {
     const f = COLECCIONES_LISTA_FIJA.find(x => x.id === colId);
@@ -5809,6 +5817,16 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "no-mans-land-orden",
+        etiqueta: "Colección",
+        titulo: "Batman: No Man's Land",
+        categoria: "colecciones-hub",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_contagio_cov-2dcf32bf3bb4b03f4e17576310122216-1024-1024.webp",
+        esContenedor: true,
+        categoriaEditorial: "dc",
+        peliculas: []
+    },
+    {
         id: "marvel-novelas-graficas-definitiva",
         etiqueta: "Colección",
         titulo: "Colección Definitiva de Novelas Gráficas de Marvel",
@@ -7075,6 +7093,7 @@ function renderizarColecciones() {
         "muerte-regreso-superman-orden": "seccion-muerte-regreso-superman-orden",
         "anio-uno-ovni-orden": "seccion-anio-uno-ovni-orden",
         "knightfall-ovni-orden": "seccion-knightfall-ovni-orden",
+        "no-mans-land-orden": "seccion-no-mans-land-orden",
         "marvel-novelas-graficas-definitiva": "seccion-marvel-novelas-graficas-definitiva",
         "spiderman-universo-arana": "seccion-spiderman-universo-arana",
         "marvel-excelsior": "seccion-marvel-excelsior",
@@ -23903,6 +23922,13 @@ if(btnVolver_anio_uno_ovni_orden) {
 const btnVolver_knightfall_ovni_orden = document.getElementById('btn-volver-knightfall-ovni-orden');
 if(btnVolver_knightfall_ovni_orden) {
     btnVolver_knightfall_ovni_orden.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolver_no_mans_land_orden = document.getElementById('btn-volver-no-mans-land-orden');
+if(btnVolver_no_mans_land_orden) {
+    btnVolver_no_mans_land_orden.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
     });
 }
