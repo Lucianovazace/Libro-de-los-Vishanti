@@ -3524,6 +3524,27 @@ const COLECCIONES_LISTA_FIJA = [
         "Superman: El Reino de Los Supermanes",
         "Superman: El Regreso de Superman"
     ] },
+    { id: "anio-uno-ovni-orden", titulos: [
+        "Batman: Año Uno",
+        "Batman: Año Dos",
+        "Batman y Robin: Año Uno",
+        "Nightwing: Año Uno",
+        "Flash: Año Uno",
+        "Wonder Woman: Año Uno",
+        "Aquaman Año Uno",
+        "Superman: Año Uno"
+    ] },
+    { id: "knightfall-ovni-orden", titulos: [
+        "Batman: Knightfall #0: Camino a la Caída del Caballero",
+        "Batman: Knightfall #1: Preludio a La Caída del Caballero",
+        "Batman: Knightfall #2: La Caída del Caballero",
+        "Batman: Knightfall #3: La Cruzada del Caballero I",
+        "Batman: Knightfall #4: La Cruzada del Caballero II",
+        "Batman: Knightfall #5: La Búsqueda del Caballero",
+        "Batman: Knightfall #6: El Fin del Caballero",
+        "Batman: Knightfall #7: Pródigo: Epílogo a La Caída del Caballero",
+        "Batman: Knightfall #8: Troika: Epílogo Final a La Caída del Caballero"
+    ] },
 ];
 function titulosFijosDe(colId) {
     const f = COLECCIONES_LISTA_FIJA.find(x => x.id === colId);
@@ -5768,6 +5789,26 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "anio-uno-ovni-orden",
+        etiqueta: "Colección",
+        titulo: "Año Uno (Ovni)",
+        categoria: "colecciones-hub",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_a_c3_b1o_uno_3ra_cov-7d43be04a0c1e39ee917745538512217-640-0.webp",
+        esContenedor: true,
+        categoriaEditorial: "dc",
+        peliculas: []
+    },
+    {
+        id: "knightfall-ovni-orden",
+        etiqueta: "Colección",
+        titulo: "Batman: Knightfall",
+        categoria: "colecciones-hub",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_knightfall_vol_0_cov-88dbb35b4d86497e7f17497750812558-640-0.webp",
+        esContenedor: true,
+        categoriaEditorial: "dc",
+        peliculas: []
+    },
+    {
         id: "marvel-novelas-graficas-definitiva",
         etiqueta: "Colección",
         titulo: "Colección Definitiva de Novelas Gráficas de Marvel",
@@ -7032,6 +7073,8 @@ function renderizarColecciones() {
         "batman-que-rie-orden": "seccion-batman-que-rie-orden",
         "noches-oscuras-orden": "seccion-noches-oscuras-orden",
         "muerte-regreso-superman-orden": "seccion-muerte-regreso-superman-orden",
+        "anio-uno-ovni-orden": "seccion-anio-uno-ovni-orden",
+        "knightfall-ovni-orden": "seccion-knightfall-ovni-orden",
         "marvel-novelas-graficas-definitiva": "seccion-marvel-novelas-graficas-definitiva",
         "spiderman-universo-arana": "seccion-spiderman-universo-arana",
         "marvel-excelsior": "seccion-marvel-excelsior",
@@ -8188,6 +8231,18 @@ function renderizarContenido() {
         }
     });
 
+    // Reordenar las colecciones de orden único según su lista fija
+    COLECCIONES_LISTA_FIJA.forEach(col => {
+        const grillaFija = document.getElementById('grilla-' + col.id);
+        if (!grillaFija) return;
+        const tarjetasFijas = [...grillaFija.children];
+        const posicion = c => {
+            const h3 = c.querySelector('h3');
+            const idx = h3 ? col.titulos.indexOf(h3.textContent.trim()) : -1;
+            return idx === -1 ? 9999 : idx;
+        };
+        tarjetasFijas.sort((x, y) => posicion(x) - posicion(y)).forEach(c => grillaFija.appendChild(c));
+    });
     ordenarGrillaPorNumeroSalvat();
     sincronizarVistos();
 }
@@ -23834,6 +23889,20 @@ if(btnVolver_noches_oscuras_orden) {
 const btnVolver_muerte_regreso_superman_orden = document.getElementById('btn-volver-muerte-regreso-superman-orden');
 if(btnVolver_muerte_regreso_superman_orden) {
     btnVolver_muerte_regreso_superman_orden.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolver_anio_uno_ovni_orden = document.getElementById('btn-volver-anio-uno-ovni-orden');
+if(btnVolver_anio_uno_ovni_orden) {
+    btnVolver_anio_uno_ovni_orden.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolver_knightfall_ovni_orden = document.getElementById('btn-volver-knightfall-ovni-orden');
+if(btnVolver_knightfall_ovni_orden) {
+    btnVolver_knightfall_ovni_orden.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
     });
 }
