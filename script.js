@@ -1893,6 +1893,7 @@ const listaMedia = [
     { titulo: "Saga de Swamp Thing: Libro Cuatro", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/swamp_thing_vol_04_cov_arg1-db344ee1ccf3ebeadd16365816639694-1024-1024.webp" },
     { titulo: "Saga de Swamp Thing: Libro Cinco", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/swamp_thing_vol_05_cov_arg21-6c7b9349a30886830616076398469565-1024-1024.webp" },
     { titulo: "Saga de Swamp Thing: Libro Seis", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/swamp_thing_vol_06_cov_arg11-f8644ac69ffd30d17116130632535685-1024-1024.webp" },
+    { titulo: "Swamp Thing: Raíz de Toda Maldad", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/swamp_thing_-_la_raiz_de_toda_maldad_cov-434b69e8239fe2bddc169622035003501-80cfae5fbe627d585716962204039461-640-0.webp" },
     { titulo: "DC Colección Heroes y Villanos #7: Joker: El Abogado del Diablo", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "joker", tipo: "Cómic", poster: "https://i1.whakoom.com/small/39/21/577ea11e5a4941d7b76b5ac742b29ea7.jpg" },
     { titulo: "Esenciales DC #17: Superman: El Hombre de Acero", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "lex-luthor,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_el_hombre_de_acero_cov1-350021223aab5b6d0f16711637408864-640-0.webp" },
     { titulo: "DC Coleccion Heroes y Villanos #42: Superman: El Hombre de Acero", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "lex-luthor,superman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2b/31/00c8ec2168bf443984b4fc2c290216c9.jpg" },
@@ -3447,6 +3448,29 @@ const COLECCIONES_LISTA_FIJA = [
         "Nightwing Vol. 6: La Hora de Los Titanes",
         "Nightwing Vol. 7: Al Limite",
         "Nightwing Vol. 8: La Caida de Grayson"
+    ] },
+    { id: "swamp-thing-saga-orden", titulos: [
+        "Saga de Swamp Thing: Libro Uno",
+        "Saga de Swamp Thing: Libro Dos",
+        "Saga de Swamp Thing: Libro Tres",
+        "Saga de Swamp Thing: Libro Cuatro",
+        "Saga de Swamp Thing: Libro Cinco",
+        "Saga de Swamp Thing: Libro Seis",
+        "Swamp Thing: Raíz de Toda Maldad"
+    ] },
+    { id: "jl-ilimitada-orden", titulos: [
+        "Liga de La Justicia Ilimitada Vol. 1: Somos Ayer",
+        "Liga de La Justicia Ilimitada Vol. 2: El Acto Omega",
+        "Liga de La Justicia Ilimitada Vol. 3",
+        "Liga de La Justicia Ilimitada Vol. 4"
+    ] },
+    { id: "aventuras-batman-orden", titulos: [
+        "Las Aventuras de Batman Vol. 1",
+        "Las Aventuras de Batman Vol. 2",
+        "Las Aventuras de Batman Vol. 3",
+        "Las Aventuras de Batman Vol. 4",
+        "Las Aventuras de Batman Vol. 5",
+        "Las Aventuras de Batman: Amor Loco"
     ] },
 ];
 function titulosFijosDe(colId) {
@@ -5592,6 +5616,36 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "swamp-thing-saga-orden",
+        etiqueta: "Colección",
+        titulo: "Saga de Swamp Thing",
+        categoria: "colecciones-hub",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/swampthingvol011-421da42f50800df83f15908676751765-1024-1024.webp",
+        esContenedor: true,
+        categoriaEditorial: "dc",
+        peliculas: []
+    },
+    {
+        id: "jl-ilimitada-orden",
+        etiqueta: "Colección",
+        titulo: "Liga de la Justicia Ilimitada",
+        categoria: "colecciones-hub",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/liga_de_la_justicia_ilimitada_cov-e5f7fbdbcb94c867e017613104129096-640-0.webp",
+        esContenedor: true,
+        categoriaEditorial: "dc",
+        peliculas: []
+    },
+    {
+        id: "aventuras-batman-orden",
+        etiqueta: "Colección",
+        titulo: "Las Aventuras de Batman",
+        categoria: "colecciones-hub",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/las_aventuras_de_batman_vol_1_cov1-772dd524ebe6c4ab6e16620061796734-1024-1024.webp",
+        esContenedor: true,
+        categoriaEditorial: "dc",
+        peliculas: []
+    },
+    {
         id: "marvel-novelas-graficas-definitiva",
         etiqueta: "Colección",
         titulo: "Colección Definitiva de Novelas Gráficas de Marvel",
@@ -6846,6 +6900,9 @@ function renderizarColecciones() {
         "batman-zdarsky-orden": "seccion-batman-zdarsky-orden",
         "batman-superman-mejores-orden": "seccion-batman-superman-mejores-orden",
         "nightwing-taylor-orden": "seccion-nightwing-taylor-orden",
+        "swamp-thing-saga-orden": "seccion-swamp-thing-saga-orden",
+        "jl-ilimitada-orden": "seccion-jl-ilimitada-orden",
+        "aventuras-batman-orden": "seccion-aventuras-batman-orden",
         "marvel-novelas-graficas-definitiva": "seccion-marvel-novelas-graficas-definitiva",
         "spiderman-universo-arana": "seccion-spiderman-universo-arana",
         "marvel-excelsior": "seccion-marvel-excelsior",
@@ -23582,6 +23639,27 @@ if(btnVolver_nightwing_taylor_orden) {
     });
 }
 
+const btnVolver_swamp_thing_saga_orden = document.getElementById('btn-volver-swamp-thing-saga-orden');
+if(btnVolver_swamp_thing_saga_orden) {
+    btnVolver_swamp_thing_saga_orden.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolver_jl_ilimitada_orden = document.getElementById('btn-volver-jl-ilimitada-orden');
+if(btnVolver_jl_ilimitada_orden) {
+    btnVolver_jl_ilimitada_orden.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolver_aventuras_batman_orden = document.getElementById('btn-volver-aventuras-batman-orden');
+if(btnVolver_aventuras_batman_orden) {
+    btnVolver_aventuras_batman_orden.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
 // ==========================================
 // FILTROS "DC COLECCIÓN DE HÉROES Y VILLANOS" — 2 vistas (predeterminado/cronológico)
 // ==========================================
@@ -24489,6 +24567,7 @@ const RECOPILA_OVNI = {
     "Saga de Swamp Thing: Libro Cuatro": "Swamp Thing #43-50",
     "Saga de Swamp Thing: Libro Cinco": "Swamp Thing #51-56",
     "Saga de Swamp Thing: Libro Seis": "Swamp Thing #57-64 y DC Comics Presents #85",
+    "Swamp Thing: Raíz de Toda Maldad": "Swamp Thing #140-150",
     "Estado Futuro: Batman Vol. 1": "Future State: Dark Detective #1-4 y Future State: Batman/Superman #1",
     "Estado Futuro: Batman Vol. 2": "Future State: The Next Batman #1-4 y Future State: Batman/Superman #2",
     "V de Vendetta": "V for Vendetta (30th Anniversary Deluxe Edition; Ovni tiene también Edición Absoluta)",
@@ -24601,7 +24680,6 @@ const RECOPILA_OVNI_EXTRA = {
     "Superman/Batman: Los Mejores del Mundo (Gibbons/Rude, Ovni)": "Superman/Batman: World's Finest #1-3",
     "Lucifer Vol. 1: El Diablo en el Umbral (Ovni)": "Sandman Presents: Lucifer #1-3 y Lucifer #1-4",
     "Superman/Batman: Enemigos Públicos (Ovni)": "Superman/Batman #1-7",
-    "Swamp Thing: Raíz de Toda Maldad (Ovni)": "Swamp Thing #140-150",
     "Universo DC por Eduardo Risso (Ovni)": "Jonny Double #1-4, Heartthrobs #3, Flinch #2, Winter's Edge #1, Weird Western Tales #3, JSA All-Stars #6, Wednesday Comics y más",
     "Batmanga Vol. 1 (Ovni)": "Batman: The Jiro Kuwata Batmanga cap. 1-19",
     "La Muerte de Superman: 30 Aniversario (Ovni)": "The Death of Superman 30th Anniversary Special y Day of Doom",
