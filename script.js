@@ -1387,6 +1387,11 @@ const listaMedia = [
     { titulo: "Shame", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "shame-2011", poster: "https://image.tmdb.org/t/p/original/cnhkx7bXvNh4Nu5OR7CEqvuXvCx.jpg" },
     { titulo: "A Dangerous Method", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "a-dangerous-method", poster: "https://m.media-amazon.com/images/M/MV5BMTU5Mjk3NjgxMl5BMl5BanBnXkFtZTcwMDM5MjA5Ng@@._V1_FMjpg_UX1000_.jpg" },
     { titulo: "Jane Eyre", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "jane-eyre-2011", poster: "https://m.media-amazon.com/images/M/MV5BNjU0Mjc0NzU3NF5BMl5BanBnXkFtZTcwMTU4OTkwNA@@._V1_.jpg" },
+    { titulo: "Prometeo", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "prometeo", poster: "https://image.tmdb.org/t/p/original/haYckth3UrCVd1WdUMTl0PJCX3q.jpg" },
+    { titulo: "Haywire", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "haywire-2011", poster: "https://image.tmdb.org/t/p/original/iUQzR9IIwrw55NkPjSVtImzq9wK.jpg" },
+    { titulo: "12 Años de Esclavitud", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "12-anos-de-esclavitud", poster: "https://image.tmdb.org/t/p/original/aoDss4auoSgShf665dYCFGv7Ao0.jpg" },
+    { titulo: "The Counselor", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-counselor-2013", poster: "https://m.media-amazon.com/images/M/MV5BMTc3ODk0MTY0N15BMl5BanBnXkFtZTgwOTU2MTEzMDE@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "X-Men: Days of Future Past", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "xmen-days-future-past", poster: "https://i0.wp.com/www.dorkaholics.com/wp-content/uploads/2014/04/9kcs.jpg?fit=692%2C1024&ssl=1" },
     { titulo: "Black Widow", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", fichaTecnicaId: "black-widow-2021", poster: "https://m.media-amazon.com/images/M/MV5BNjZjOGVhOTEtNzY4Mi00MjQzLTlmYjktNzMyMDExMWJlODEwXkEyXkFqcGc@.V1.jpg" },
     { titulo: "Hawkeye", categoria: "florence-pugh", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "hawkeye-serie", poster: "https://lumiere-a.akamaihd.net/v1/images/unknown_61ca7b47.png" },
     { titulo: "Don't Worry Darling", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", fichaTecnicaId: "dont-worry-darling", poster: "https://m.media-amazon.com/images/M/MV5BODVhYzM3M2YtMTUwYi00NjE4LWIwYzktOTM1MTYwZWU0ZTBiXkEyXkFqcGc@._V1_.jpg" },
@@ -9371,7 +9376,7 @@ if(btnVolverMichaelFassbender) {
     });
 }
 
-['centurion-2010', 'jonah-hex-2010', 'shame-2011', 'a-dangerous-method', 'jane-eyre-2011', 'pitch-black-heist'].forEach(id => {
+['centurion-2010', 'jonah-hex-2010', 'shame-2011', 'a-dangerous-method', 'jane-eyre-2011', 'pitch-black-heist', 'haywire-2011', '12-anos-de-esclavitud', 'the-counselor-2013'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -13604,6 +13609,9 @@ const FICHAS_TECNICAS_TITULOS = {
     "batman-v-superman": ["Batman v Superman", "Batman v Superman: Dawn of Justice"],
     "shang-chi": "Shang-Chi",
     "eternals": "Eternals",
+    "haywire-2011": "Haywire",
+    "12-anos-de-esclavitud": "12 Años de Esclavitud",
+    "the-counselor-2013": "The Counselor",
     "shame-2011": "Shame",
     "a-dangerous-method": "A Dangerous Method",
     "jane-eyre-2011": "Jane Eyre",
@@ -16139,6 +16147,44 @@ const REPARTO_PELICULAS = {
         elenco: [
             { actor: "Michael Fassbender", personaje: "Ladrón" },
             { actor: "Liam Cunningham", personaje: "Ladrón" }
+        ]
+    },
+    "haywire-2011": {
+        director: "Steven Soderbergh",
+        elenco: [
+            { actor: "Gina Carano", personaje: "Mallory Kane" },
+            { actor: "Ewan McGregor", personaje: "Kenneth" },
+            { actor: "Michael Fassbender", personaje: "Paul" },
+            { actor: "Channing Tatum", personaje: "Aaron" },
+            { actor: "Michael Douglas", personaje: "Coblenz" },
+            { actor: "Antonio Banderas", personaje: "Rodrigo" },
+            { actor: "Bill Paxton", personaje: "John Kane" },
+            { actor: "Mathieu Kassovitz", personaje: "Studer" }
+        ]
+    },
+    "12-anos-de-esclavitud": {
+        director: "Steve McQueen",
+        elenco: [
+            { actor: "Chiwetel Ejiofor", personaje: "Solomon Northup" },
+            { actor: "Michael Fassbender", personaje: "Edwin Epps" },
+            { actor: "Lupita Nyong'o", personaje: "Patsey" },
+            { actor: "Benedict Cumberbatch", personaje: "William Ford" },
+            { actor: "Paul Dano", personaje: "John Tibeats" },
+            { actor: "Sarah Paulson", personaje: "Mary Epps" },
+            { actor: "Brad Pitt", personaje: "Samuel Bass" },
+            { actor: "Alfre Woodard", personaje: "Sra. Shaw" }
+        ]
+    },
+    "the-counselor-2013": {
+        director: "Ridley Scott",
+        elenco: [
+            { actor: "Michael Fassbender", personaje: "El Abogado" },
+            { actor: "Penélope Cruz", personaje: "Laura" },
+            { actor: "Cameron Diaz", personaje: "Malkina" },
+            { actor: "Javier Bardem", personaje: "Reiner" },
+            { actor: "Brad Pitt", personaje: "Westray" },
+            { actor: "Rubén Blades", personaje: "El Jefe" },
+            { actor: "Bruno Ganz", personaje: "El Diamantero" }
         ]
     },
     "eternals": {
