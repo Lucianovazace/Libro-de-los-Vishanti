@@ -3518,6 +3518,12 @@ const COLECCIONES_LISTA_FIJA = [
         "Noches Oscuras: Death Metal #6",
         "Noches Oscuras: Death Metal #7"
     ] },
+    { id: "muerte-regreso-superman-orden", titulos: [
+        "La Muerte de Superman",
+        "Superman: Funeral Para un Amigo",
+        "Superman: El Reino de Los Supermanes",
+        "Superman: El Regreso de Superman"
+    ] },
 ];
 function titulosFijosDe(colId) {
     const f = COLECCIONES_LISTA_FIJA.find(x => x.id === colId);
@@ -5752,6 +5758,16 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "muerte-regreso-superman-orden",
+        etiqueta: "Colección",
+        titulo: "La Muerte y el Regreso de Superman",
+        categoria: "colecciones-hub",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/la_muerte_de_superman_2da_cov1-5b6a1e3579ad88846416336646797558-640-0.webp",
+        esContenedor: true,
+        categoriaEditorial: "dc",
+        peliculas: []
+    },
+    {
         id: "marvel-novelas-graficas-definitiva",
         etiqueta: "Colección",
         titulo: "Colección Definitiva de Novelas Gráficas de Marvel",
@@ -7015,6 +7031,7 @@ function renderizarColecciones() {
         "joker-ovni-orden": "seccion-joker-ovni-orden",
         "batman-que-rie-orden": "seccion-batman-que-rie-orden",
         "noches-oscuras-orden": "seccion-noches-oscuras-orden",
+        "muerte-regreso-superman-orden": "seccion-muerte-regreso-superman-orden",
         "marvel-novelas-graficas-definitiva": "seccion-marvel-novelas-graficas-definitiva",
         "spiderman-universo-arana": "seccion-spiderman-universo-arana",
         "marvel-excelsior": "seccion-marvel-excelsior",
@@ -23810,6 +23827,13 @@ if(btnVolver_batman_que_rie_orden) {
 const btnVolver_noches_oscuras_orden = document.getElementById('btn-volver-noches-oscuras-orden');
 if(btnVolver_noches_oscuras_orden) {
     btnVolver_noches_oscuras_orden.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolver_muerte_regreso_superman_orden = document.getElementById('btn-volver-muerte-regreso-superman-orden');
+if(btnVolver_muerte_regreso_superman_orden) {
+    btnVolver_muerte_regreso_superman_orden.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
     });
 }
