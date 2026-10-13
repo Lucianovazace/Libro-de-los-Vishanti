@@ -3489,6 +3489,35 @@ const COLECCIONES_LISTA_FIJA = [
         "Animal Man de Grant Morrison Vol 3",
         "Animal Man: Nacido Para ser Salvaje"
     ] },
+    { id: "batman-outsiders-orden", titulos: [
+        "Batman y Los Outsiders #1",
+        "Batman y Los Outsiders #2: ¡Contra Los Amos del Desastre!",
+        "Batman y Los Outsiders #3: ¡La Verdad Sobre Halo!",
+        "Batman y Los Outsiders #4: ¡Galaxias de Guerras!",
+        "Batman y Los Outsiders #5: La Renuncia del Caballero Oscuro"
+    ] },
+    { id: "joker-ovni-orden", titulos: [
+        "El Joker Vol. 1",
+        "El Joker Vol. 2",
+        "El Joker Vol. 3"
+    ] },
+    { id: "batman-que-rie-orden", titulos: [
+        "El Batman Que Rie",
+        "El Batman Que Rie: Los Infectados",
+        "El Batman Que Rie: Emerge el Infierno"
+    ] },
+    { id: "noches-oscuras-orden", titulos: [
+        "Noches Oscuras: Metal Vol. 1",
+        "Noches Oscuras: Metal Vol. 2",
+        "Noches Oscuras: Metal Vol. 3",
+        "Noches Oscuras: Death Metal #1",
+        "Noches Oscuras: Death Metal #2",
+        "Noches Oscuras: Death Metal #3",
+        "Noches Oscuras: Death Metal #4",
+        "Noches Oscuras: Death Metal #5",
+        "Noches Oscuras: Death Metal #6",
+        "Noches Oscuras: Death Metal #7"
+    ] },
 ];
 function titulosFijosDe(colId) {
     const f = COLECCIONES_LISTA_FIJA.find(x => x.id === colId);
@@ -5683,6 +5712,46 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "batman-outsiders-orden",
+        etiqueta: "Colección",
+        titulo: "Batman y Los Outsiders",
+        categoria: "colecciones-hub",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_y_los_outsiders_cov-0657f8711c0e4d9b7517262289892152-1024-1024.webp",
+        esContenedor: true,
+        categoriaEditorial: "dc",
+        peliculas: []
+    },
+    {
+        id: "joker-ovni-orden",
+        etiqueta: "Colección",
+        titulo: "El Joker",
+        categoria: "colecciones-hub",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/joker-vol-1-cov1-509a8ec8c57675b73d16481574654376-640-0.webp",
+        esContenedor: true,
+        categoriaEditorial: "dc",
+        peliculas: []
+    },
+    {
+        id: "batman-que-rie-orden",
+        etiqueta: "Colección",
+        titulo: "El Batman Que Ríe",
+        categoria: "colecciones-hub",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/el_batman_que_rie_2da-edicion-cov1-8dcb6cacbea86b0f3216209475387363-640-0.webp",
+        esContenedor: true,
+        categoriaEditorial: "dc",
+        peliculas: []
+    },
+    {
+        id: "noches-oscuras-orden",
+        etiqueta: "Colección",
+        titulo: "Noches Oscuras",
+        categoria: "colecciones-hub",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/dark_nights_metal_vol_01_cov1-22394e6d978258b46a15948577697242-1024-1024.webp",
+        esContenedor: true,
+        categoriaEditorial: "dc",
+        peliculas: []
+    },
+    {
         id: "marvel-novelas-graficas-definitiva",
         etiqueta: "Colección",
         titulo: "Colección Definitiva de Novelas Gráficas de Marvel",
@@ -6942,6 +7011,10 @@ function renderizarColecciones() {
         "aventuras-batman-orden": "seccion-aventuras-batman-orden",
         "dc-ko-orden": "seccion-dc-ko-orden",
         "animal-man-orden": "seccion-animal-man-orden",
+        "batman-outsiders-orden": "seccion-batman-outsiders-orden",
+        "joker-ovni-orden": "seccion-joker-ovni-orden",
+        "batman-que-rie-orden": "seccion-batman-que-rie-orden",
+        "noches-oscuras-orden": "seccion-noches-oscuras-orden",
         "marvel-novelas-graficas-definitiva": "seccion-marvel-novelas-graficas-definitiva",
         "spiderman-universo-arana": "seccion-spiderman-universo-arana",
         "marvel-excelsior": "seccion-marvel-excelsior",
@@ -23709,6 +23782,34 @@ if(btnVolver_dc_ko_orden) {
 const btnVolver_animal_man_orden = document.getElementById('btn-volver-animal-man-orden');
 if(btnVolver_animal_man_orden) {
     btnVolver_animal_man_orden.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolver_batman_outsiders_orden = document.getElementById('btn-volver-batman-outsiders-orden');
+if(btnVolver_batman_outsiders_orden) {
+    btnVolver_batman_outsiders_orden.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolver_joker_ovni_orden = document.getElementById('btn-volver-joker-ovni-orden');
+if(btnVolver_joker_ovni_orden) {
+    btnVolver_joker_ovni_orden.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolver_batman_que_rie_orden = document.getElementById('btn-volver-batman-que-rie-orden');
+if(btnVolver_batman_que_rie_orden) {
+    btnVolver_batman_que_rie_orden.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolver_noches_oscuras_orden = document.getElementById('btn-volver-noches-oscuras-orden');
+if(btnVolver_noches_oscuras_orden) {
+    btnVolver_noches_oscuras_orden.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
     });
 }
