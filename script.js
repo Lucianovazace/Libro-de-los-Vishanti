@@ -1404,6 +1404,14 @@ const listaMedia = [
     { titulo: "The Snowman", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-snowman-2017", poster: "https://image.tmdb.org/t/p/original/mKsQ8KMOk0VBX26Ev0Lj6EmfGJu.jpg" },
     { titulo: "Song to Song", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "song-to-song", poster: "https://m.media-amazon.com/images/M/MV5BNzI1MTg0MzEyOF5BMl5BanBnXkFtZTgwNzk4Mjk0MTI@._V1_FMjpg_UX1000_.jpg" },
     { titulo: "X-Men Dark Phoenix", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "xmen-dark-phoenix", poster: "https://m.media-amazon.com/images/I/81SP4dCrQyL.jpg" },
+
+    // --- JAMES MCAVOY (con filtros por década) ---
+    { titulo: "Together", categoria: "james-mcavoy", subtipo: "2020", tipo: "Película", fichaTecnicaId: "together-2021", poster: "https://m.media-amazon.com/images/M/MV5BZjI4ZWZmZTQtM2I3MS00ODhiLTlhOGQtODY5M2NlYTc5OTlhXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "My Son", categoria: "james-mcavoy", subtipo: "2020", tipo: "Película", fichaTecnicaId: "my-son-2021", poster: "https://m.media-amazon.com/images/M/MV5BMjRmNzM5MWEtNjNkZi00OTM4LWFhYjktMzNmZTY0OTIzNDhmXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "The Bubble", categoria: "james-mcavoy", subtipo: "2020", tipo: "Película", fichaTecnicaId: "the-bubble-2022", poster: "https://m.media-amazon.com/images/M/MV5BZDJhNjdiY2YtZjExMS00MzljLWEyNWEtMWVjMGYzMGNiNzFiXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "The Sandman (Audible)", categoria: "james-mcavoy", subtipo: "2020", tipo: "Audiodrama", fichaTecnicaId: "the-sandman-audible", poster: "https://image.tmdb.org/t/p/original/dnDGWdBwBC1zexCYcv8ihQKQPVT.jpg" },
+    { titulo: "The Book of Clarence", categoria: "james-mcavoy", subtipo: "2020", tipo: "Película", fichaTecnicaId: "the-book-of-clarence", poster: "https://image.tmdb.org/t/p/original/p6rz1Kz9YA9TOVRk0R5OUJhg7ry.jpg" },
+    { titulo: "Speak No Evil", categoria: "james-mcavoy", subtipo: "2020", tipo: "Película", fichaTecnicaId: "speak-no-evil-2024", poster: "https://m.media-amazon.com/images/M/MV5BMWI2OWFjNjgtOTQ2Zi00MjlmLTg2MGYtNmE4MjMyZjIzMDA0XkEyXkFqcGc@._V1_.jpg" },
     { titulo: "Black Widow", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", fichaTecnicaId: "black-widow-2021", poster: "https://m.media-amazon.com/images/M/MV5BNjZjOGVhOTEtNzY4Mi00MjQzLTlmYjktNzMyMDExMWJlODEwXkEyXkFqcGc@.V1.jpg" },
     { titulo: "Hawkeye", categoria: "florence-pugh", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "hawkeye-serie", poster: "https://lumiere-a.akamaihd.net/v1/images/unknown_61ca7b47.png" },
     { titulo: "Don't Worry Darling", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", fichaTecnicaId: "dont-worry-darling", poster: "https://m.media-amazon.com/images/M/MV5BODVhYzM3M2YtMTUwYi00NjE4LWIwYzktOTM1MTYwZWU0ZTBiXkEyXkFqcGc@._V1_.jpg" },
@@ -3876,6 +3884,16 @@ const colecciones = [
         esContenedor: true,
         etiqueta: "Actor",
         progresoCategoria: "michael-fassbender",
+        peliculas: []
+    },
+    {
+        id: "james-mcavoy",
+        titulo: "James McAvoy",
+        categoria: "actores",
+        poster: "https://w0.peakpx.com/wallpaper/991/799/HD-wallpaper-james-casual-james-mcavoy.jpg",
+        esContenedor: true,
+        etiqueta: "Actor",
+        progresoCategoria: "james-mcavoy",
         peliculas: []
     },
     {
@@ -7025,6 +7043,7 @@ function abrirColeccion(colId) {
         'emma-stone': '.btn-filtro-stone[data-tipo="2020"]',
         'jenna-ortega': '.btn-filtro-ortega[data-tipo="2020"]',
         'michael-fassbender': '.btn-filtro-fassbender[data-tipo="2020"]',
+        'james-mcavoy': '.btn-filtro-mcavoy[data-tipo="2020"]',
         'margot-robbie': '.btn-filtro-robbie[data-tipo="2020"]',
         'andrew-garfield': '.btn-filtro-garfield[data-tipo="2020"]',
         'alfred-hitchcock': '.btn-filtro-hitchcock[data-tipo="1970"]',
@@ -7281,6 +7300,7 @@ function renderizarContenido() {
         "emma-stone": "seccion-emma-stone",
         "jenna-ortega": "seccion-jenna-ortega",
         "michael-fassbender": "seccion-michael-fassbender",
+        "james-mcavoy": "seccion-james-mcavoy",
         "margot-robbie": "seccion-margot-robbie",
         "andrew-garfield": "seccion-andrew-garfield",
         "alfred-hitchcock": "seccion-alfred-hitchcock",
@@ -9396,6 +9416,24 @@ if(btnVolverMichaelFassbender) {
             const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
             const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
             cambiarSeccion(seccionOrigen || document.getElementById('seccion-michael-fassbender'));
+        });
+    }
+});
+
+const btnVolverJamesMcAvoy = document.getElementById('btn-volver-james-mcavoy');
+if (btnVolverJamesMcAvoy) {
+    btnVolverJamesMcAvoy.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-actores'));
+    });
+}
+['together-2021', 'my-son-2021', 'the-bubble-2022', 'the-sandman-audible', 'the-book-of-clarence', 'speak-no-evil-2024'].forEach(id => {
+    const btn = document.getElementById('btn-volver-ficha-' + id);
+    if (btn) {
+        btn.addEventListener('click', () => {
+            const seccionFicha = document.getElementById('seccion-ficha-' + id);
+            const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+            const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+            cambiarSeccion(seccionOrigen || document.getElementById('seccion-james-mcavoy'));
         });
     }
 });
@@ -13621,6 +13659,12 @@ const FICHAS_TECNICAS_TITULOS = {
     "batman-v-superman": ["Batman v Superman", "Batman v Superman: Dawn of Justice"],
     "shang-chi": "Shang-Chi",
     "eternals": "Eternals",
+    "together-2021": "Together",
+    "my-son-2021": "My Son",
+    "the-bubble-2022": "The Bubble",
+    "the-sandman-audible": "The Sandman (Audible)",
+    "the-book-of-clarence": "The Book of Clarence",
+    "speak-no-evil-2024": "Speak No Evil",
     "the-snowman-2017": "The Snowman",
     "song-to-song": "Song to Song",
     "assassins-creed-2016": "Assassin's Creed (Película)",
@@ -16306,6 +16350,66 @@ const REPARTO_PELICULAS = {
             { actor: "Val Kilmer", personaje: "Duane" }
         ]
     },
+    "together-2021": {
+        director: "Stephen Daldry",
+        elenco: [
+            { actor: "James McAvoy", personaje: "Él" },
+            { actor: "Sharon Horgan", personaje: "Ella" }
+        ]
+    },
+    "my-son-2021": {
+        director: "Christian Carion",
+        elenco: [
+            { actor: "James McAvoy", personaje: "Edmond Murray" },
+            { actor: "Claire Foy", personaje: "Joan Richmond" },
+            { actor: "Tom Cullen", personaje: "Frank Gilchrist" },
+            { actor: "Gary Lewis", personaje: "Inspector Roy" }
+        ]
+    },
+    "the-bubble-2022": {
+        director: "Judd Apatow",
+        elenco: [
+            { actor: "Karen Gillan", personaje: "Carol Cobb" },
+            { actor: "Pedro Pascal", personaje: "Dustin Mulligan" },
+            { actor: "Keegan-Michael Key", personaje: "Sean Knox" },
+            { actor: "Leslie Mann", personaje: "Lauren Van Dyke" },
+            { actor: "Fred Armisen", personaje: "Gavin" },
+            { actor: "Maria Bakalova", personaje: "Lili" },
+            { actor: "James McAvoy", personaje: "Él mismo (cameo)" }
+        ]
+    },
+    "the-sandman-audible": {
+        director: "Dirk Maggs (adaptación y dirección), Neil Gaiman (narrador y director creativo)",
+        elenco: [
+            { actor: "James McAvoy", personaje: "Sueño / Morfeo (voz)" },
+            { actor: "Kat Dennings", personaje: "Muerte (voz)" },
+            { actor: "Michael Sheen", personaje: "Lucifer (voz)" },
+            { actor: "Justin Vivian Bond", personaje: "Deseo (voz)" },
+            { actor: "Miriam Margolyes", personaje: "Desesperación (voz)" }
+        ]
+    },
+    "the-book-of-clarence": {
+        director: "Jeymes Samuel",
+        elenco: [
+            { actor: "LaKeith Stanfield", personaje: "Clarence" },
+            { actor: "Omar Sy", personaje: "Barrabás" },
+            { actor: "Anna Diop", personaje: "Varinia" },
+            { actor: "RJ Cyler", personaje: "Elijah" },
+            { actor: "Teyana Taylor", personaje: "Mary" },
+            { actor: "James McAvoy", personaje: "Poncio Pilato" },
+            { actor: "Benedict Cumberbatch", personaje: "Jedediah el Judío" }
+        ]
+    },
+    "speak-no-evil-2024": {
+        director: "James Watkins",
+        elenco: [
+            { actor: "James McAvoy", personaje: "Paddy" },
+            { actor: "Mackenzie Davis", personaje: "Ciara" },
+            { actor: "Scoot McNairy", personaje: "Ben" },
+            { actor: "Aisling Franciosi", personaje: "Louise" },
+            { actor: "Alix West Lefler", personaje: "Agnes" }
+        ]
+    },
     "eternals": {
         director: "Chloé Zhao",
         elenco: [
@@ -17377,6 +17481,19 @@ botonesFiltroFassbender.forEach(boton => {
     });
 });
 inicializarFiltroTipoActor('seccion-michael-fassbender', 'btn-filtro-fassbender');
+
+// ==========================================
+// FILTROS "JAMES MCAVOY" (por década)
+// ==========================================
+const botonesFiltroMcAvoy = document.querySelectorAll('.btn-filtro-mcavoy');
+botonesFiltroMcAvoy.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroMcAvoy.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        aplicarFiltroTipoYDecadaActor('seccion-james-mcavoy', 'btn-filtro-mcavoy');
+    });
+});
+inicializarFiltroTipoActor('seccion-james-mcavoy', 'btn-filtro-mcavoy');
 
 // ==========================================
 // FILTROS "EMMA STONE" (por década)
