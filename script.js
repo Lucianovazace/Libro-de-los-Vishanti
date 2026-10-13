@@ -68,8 +68,8 @@ const listaMedia = [
     { titulo: "Guardians of the Galaxy Vol. 3", categoria: "doomsday", tier: 3, tipo: "Película", poster: "https://assets-prd.ignimgs.com/2022/12/01/guardians-of-the-galaxy-vol-3-1669932411159.jfif" },
     { titulo: "Loki (Temporada 2)", categoria: "doomsday", tier: 1, tipo: "Serie", poster: "https://preview.redd.it/official-poster-for-loki-season-2-v0-mjczxxkptafb1.jpg?auto=webp&s=b52be74ed745f4c481074ffd739feb43c7c0214f" },
     { titulo: "The Marvels", categoria: "doomsday", tier: 2, tipo: "Película", fichaTecnicaId: "the-marvels-1", poster: "https://cdn.marvel.com/content/2x/captain_marvel_2.webp" },
-    { titulo: "Deadpool & Wolverine", categoria: "doomsday", tier: 1, tipo: "Película", poster: "https://m.media-amazon.com/images/I/61AwaBKmGXL.jpg" },
-    { titulo: "Captain America: Brave New World", categoria: "doomsday", tier: 1, tipo: "Película", poster: "https://i.pinimg.com/736x/19/85/1d/19851d768bfcc73a6942ae30c69f03a8.jpg" },
+    { titulo: "Deadpool & Wolverine", categoria: "doomsday", tier: 1, tipo: "Película", fichaTecnicaId: "deadpool-wolverine-2024", poster: "https://m.media-amazon.com/images/I/61AwaBKmGXL.jpg" },
+    { titulo: "Captain America: Brave New World", categoria: "doomsday", tier: 1, tipo: "Película", fichaTecnicaId: "captain-america-brave-new-world", poster: "https://i.pinimg.com/736x/19/85/1d/19851d768bfcc73a6942ae30c69f03a8.jpg" },
     { titulo: "Thunderbolts*", categoria: "doomsday", tier: 1, tipo: "Película", fichaTecnicaId: "thunderbolts-2025", poster: "https://m.media-amazon.com/images/I/71Y2ZfgT+4L.jpg" },
     { titulo: "The Fantastic Four: First Steps", categoria: "doomsday", tier: 1, tipo: "Película", fichaTecnicaId: "fantastic-four-first-steps", poster: "https://brainstomping.com/wp-content/uploads/2025/07/fantastic-four-first-steps-primeros-pasos-cuatro-fantasticos-poster-marvel-mcu.jpg" },
 
@@ -119,8 +119,8 @@ const listaMedia = [
     { titulo: "Guardians of the Galaxy Vol. 3", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 41, crono: 43, poster: "https://assets-prd.ignimgs.com/2022/12/01/guardians-of-the-galaxy-vol-3-1669932411159.jfif" },
     { titulo: "Loki (Temporada 2)", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 42, crono: 24.6, poster: "https://preview.redd.it/official-poster-for-loki-season-2-v0-mjczxxkptafb1.jpg?auto=webp&s=b52be74ed745f4c481074ffd739feb43c7c0214f" },
     { titulo: "Echo", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 43, crono: 34, poster: "https://m.media-amazon.com/images/I/81f3aW-ovVL.jpg" },
-    { titulo: "Deadpool & Wolverine", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 44, crono: 45, poster: "https://m.media-amazon.com/images/I/61AwaBKmGXL.jpg" },
-    { titulo: "Captain America: Brave New World", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 45, crono: 46, poster: "https://i.pinimg.com/736x/19/85/1d/19851d768bfcc73a6942ae30c69f03a8.jpg" },
+    { titulo: "Deadpool & Wolverine", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "deadpool-wolverine-2024", ordenSalida: 44, crono: 45, poster: "https://m.media-amazon.com/images/I/61AwaBKmGXL.jpg" },
+    { titulo: "Captain America: Brave New World", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "captain-america-brave-new-world", ordenSalida: 45, crono: 46, poster: "https://i.pinimg.com/736x/19/85/1d/19851d768bfcc73a6942ae30c69f03a8.jpg" },
     { titulo: "Daredevil: Born Again", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 46, crono: 47, poster: "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/7f/Daredevil_Born_Again_Cracks_Tall_Poster.jpg/revision/latest/scale-to-width-down/1200?cb=20250416124716" },
     { titulo: "Thunderbolts*", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "thunderbolts-2025", ordenSalida: 47, crono: 48, poster: "https://m.media-amazon.com/images/I/71Y2ZfgT+4L.jpg" },
     { titulo: "The Fantastic Four: First Steps", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "fantastic-four-first-steps", ordenSalida: 48, crono: 51, poster: "https://brainstomping.com/wp-content/uploads/2025/07/fantastic-four-first-steps-primeros-pasos-cuatro-fantasticos-poster-marvel-mcu.jpg" },
@@ -13318,7 +13318,7 @@ const REQUISITOS_CALL_OF_DUTY_4 = {
     }
 });
 
-['shang-chi', 'eternals', 'fantastic-four-first-steps', 'thunderbolts-2025'].forEach(id => {
+['shang-chi', 'eternals', 'fantastic-four-first-steps', 'thunderbolts-2025', 'captain-america-brave-new-world', 'deadpool-wolverine-2024'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -13584,6 +13584,8 @@ const FICHAS_TECNICAS_TITULOS = {
     "batman-v-superman": ["Batman v Superman", "Batman v Superman: Dawn of Justice"],
     "shang-chi": "Shang-Chi",
     "eternals": "Eternals",
+    "captain-america-brave-new-world": "Captain America: Brave New World",
+    "deadpool-wolverine-2024": "Deadpool & Wolverine",
     "fantastic-four-first-steps": "The Fantastic Four: First Steps",
     "thunderbolts-2025": "Thunderbolts*",
     "hawkeye-serie": "Hawkeye",
@@ -15884,6 +15886,34 @@ const REPARTO_PELICULAS = {
             { actor: "Julia Louis-Dreyfus", personaje: "Valentina Allegra de Fontaine" },
             { actor: "Lewis Pullman", personaje: "Bob" },
             { actor: "Geraldine Viswanathan", personaje: "Mel" }
+        ]
+    },
+    "captain-america-brave-new-world": {
+        director: "Julius Onah",
+        elenco: [
+            { actor: "Anthony Mackie", personaje: "Sam Wilson / Capitán América" },
+            { actor: "Danny Ramirez", personaje: "Joaquin Torres / Falcon" },
+            { actor: "Harrison Ford", personaje: "Thaddeus Ross / Hulk Rojo" },
+            { actor: "Shira Haas", personaje: "Ruth Bat-Seraph / Sabra" },
+            { actor: "Carl Lumbly", personaje: "Isaiah Bradley" },
+            { actor: "Giancarlo Esposito", personaje: "Seth Voelker / Sidewinder" },
+            { actor: "Tim Blake Nelson", personaje: "Samuel Sterns / El Líder" },
+            { actor: "Xosha Roquemore", personaje: "Leila Taylor" }
+        ]
+    },
+    "deadpool-wolverine-2024": {
+        director: "Shawn Levy",
+        elenco: [
+            { actor: "Ryan Reynolds", personaje: "Wade Wilson / Deadpool" },
+            { actor: "Hugh Jackman", personaje: "Logan / Wolverine" },
+            { actor: "Emma Corrin", personaje: "Cassandra Nova" },
+            { actor: "Matthew Macfadyen", personaje: "Sr. Paradox" },
+            { actor: "Rob Delaney", personaje: "Peter" },
+            { actor: "Leslie Uggams", personaje: "Blind Al" },
+            { actor: "Morena Baccarin", personaje: "Vanessa" },
+            { actor: "Brianna Hildebrand", personaje: "Negasonic Teenage Warhead" },
+            { actor: "Karan Soni", personaje: "Dopinder" },
+            { actor: "Dafne Keen", personaje: "Laura / X-23" }
         ]
     },
     "eternals": {
