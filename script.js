@@ -230,6 +230,7 @@ const listaMedia = [
     { titulo: "Watchmen", categoria: "dc-multiverso", subtipo: "liveaction", tierra: 4, tipo: "Película - Tierra 4", poster: "https://m.media-amazon.com/images/M/MV5BMjc5NGFlMzMtZjkwZS00MzliLTg5NzktZDYzNGNhNjdjNzAzXkEyXkFqcGc@.V1.jpg" },
     { titulo: "The Flash (1990)", categoria: "dc-multiverso", subtipo: "liveaction", tierra: 90, tipo: "Serie - Tierra 90", poster: "https://image.tmdb.org/t/p/original/2WBh74OGK3NY7lhcqxNyeNj1WCc.jpg" },
     { titulo: "Birds of Prey (2002)", categoria: "dc-multiverso", subtipo: "liveaction", tipo: "Serie", fichaTecnicaId: "birds-of-prey-2002", poster: "https://image.tmdb.org/t/p/original/jTDjI5SYLdTKezCj4DRsR5sszLS.jpg" },
+    { titulo: "Jonah Hex", categoria: "dc-multiverso", subtipo: "liveaction", tipo: "Película", fichaTecnicaId: "jonah-hex-2010", poster: "https://m.media-amazon.com/images/M/MV5BMTQ2NzYxNjQyMF5BMl5BanBnXkFtZTcwOTQ0OTI0Mw@@._V1_FMjpg_UX1000_.jpg" },
 
     // --- GAME OF THRONES (con doble orden: salida / cronológico) ---
     // "Game of Thrones" y "House of the Dragon" ahora son fichas explorables (ver colecciones)
@@ -1379,6 +1380,9 @@ const listaMedia = [
     { titulo: "Kneecap", categoria: "michael-fassbender", subtipo: "2020", tipo: "Película", fichaTecnicaId: "kneecap", poster: "https://image.tmdb.org/t/p/w500/gEbQi5QWUg3CQ9R5dwvPBvbOX17.jpg" },
     { titulo: "Black Bag", categoria: "michael-fassbender", subtipo: "2020", tipo: "Película", fichaTecnicaId: "black-bag", poster: "https://m.media-amazon.com/images/M/MV5BNWJlYzU0NWQtMjdmZS00OWRjLWExY2YtNmIxNGQ1MDQ1ZjU5XkEyXkFqcGc@._V1_.jpg" },
     { titulo: "Hope", categoria: "michael-fassbender", subtipo: "2020", tipo: "Película", fichaTecnicaId: "hope-2026", poster: "https://m.media-amazon.com/images/M/MV5BZjE3ZDI0MmItMDIyMC00NzU2LTk2OTQtZTUxYTlkMjlkNmY3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Centurion", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "centurion-2010", poster: "https://image.tmdb.org/t/p/original/ytnSLYJDDuzST66JXmhpbJMywOD.jpg" },
+    { titulo: "Jonah Hex", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "jonah-hex-2010", poster: "https://m.media-amazon.com/images/M/MV5BMTQ2NzYxNjQyMF5BMl5BanBnXkFtZTcwOTQ0OTI0Mw@@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "X-Men: First Class", categoria: "michael-fassbender", subtipo: "2010", tipo: "Película", fichaTecnicaId: "xmen-first-class", poster: "https://collider.com/wp-content/uploads/x-men-first-class-teaser-poster.jpg" },
     { titulo: "Black Widow", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", fichaTecnicaId: "black-widow-2021", poster: "https://m.media-amazon.com/images/M/MV5BNjZjOGVhOTEtNzY4Mi00MjQzLTlmYjktNzMyMDExMWJlODEwXkEyXkFqcGc@.V1.jpg" },
     { titulo: "Hawkeye", categoria: "florence-pugh", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "hawkeye-serie", poster: "https://lumiere-a.akamaihd.net/v1/images/unknown_61ca7b47.png" },
     { titulo: "Don't Worry Darling", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", fichaTecnicaId: "dont-worry-darling", poster: "https://m.media-amazon.com/images/M/MV5BODVhYzM3M2YtMTUwYi00NjE4LWIwYzktOTM1MTYwZWU0ZTBiXkEyXkFqcGc@._V1_.jpg" },
@@ -3847,7 +3851,7 @@ const colecciones = [
         id: "michael-fassbender",
         titulo: "Michael Fassbender",
         categoria: "actores",
-        poster: "https://image.tmdb.org/t/p/original/2q719JbdFBMPo22DEW4VDZpsCuk.jpg",
+        poster: "https://w0.peakpx.com/wallpaper/424/915/HD-wallpaper-fassinating-michael-fassbender-serious.jpg",
         esContenedor: true,
         etiqueta: "Actor",
         progresoCategoria: "michael-fassbender",
@@ -9363,6 +9367,18 @@ if(btnVolverMichaelFassbender) {
     });
 }
 
+['centurion-2010', 'jonah-hex-2010'].forEach(id => {
+    const btn = document.getElementById('btn-volver-ficha-' + id);
+    if (btn) {
+        btn.addEventListener('click', () => {
+            const seccionFicha = document.getElementById('seccion-ficha-' + id);
+            const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+            const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+            cambiarSeccion(seccionOrigen || document.getElementById('seccion-michael-fassbender'));
+        });
+    }
+});
+
 const btnVolverFichaTheKiller = document.getElementById('btn-volver-ficha-the-killer');
 if (btnVolverFichaTheKiller) {
     btnVolverFichaTheKiller.addEventListener('click', () => {
@@ -13584,6 +13600,8 @@ const FICHAS_TECNICAS_TITULOS = {
     "batman-v-superman": ["Batman v Superman", "Batman v Superman: Dawn of Justice"],
     "shang-chi": "Shang-Chi",
     "eternals": "Eternals",
+    "centurion-2010": "Centurion",
+    "jonah-hex-2010": "Jonah Hex",
     "ms-marvel-serie": "Ms. Marvel",
     "loki-temporada-1": "Loki (Temporada 1)",
     "loki-temporada-2": "Loki (Temporada 2)",
@@ -16051,6 +16069,30 @@ const REPARTO_PELICULAS = {
             { actor: "Jonathan Majors", personaje: "Kang el Conquistador" },
             { actor: "Ke Huy Quan", personaje: "Ouroboros \"O.B.\"" },
             { actor: "Tara Strong", personaje: "Miss Minutes (voz)" }
+        ]
+    },
+    "centurion-2010": {
+        director: "Neil Marshall",
+        elenco: [
+            { actor: "Michael Fassbender", personaje: "Quintus Dias" },
+            { actor: "Olga Kurylenko", personaje: "Etain" },
+            { actor: "Dominic West", personaje: "General Titus Flavius Virilus" },
+            { actor: "Liam Cunningham", personaje: "Brick" },
+            { actor: "Noel Clarke", personaje: "Thax" },
+            { actor: "Imogen Poots", personaje: "Arianne" }
+        ]
+    },
+    "jonah-hex-2010": {
+        director: "Jimmy Hayward",
+        elenco: [
+            { actor: "Josh Brolin", personaje: "Jonah Hex" },
+            { actor: "John Malkovich", personaje: "Quentin Turnbull" },
+            { actor: "Megan Fox", personaje: "Lilah" },
+            { actor: "Michael Fassbender", personaje: "Burke" },
+            { actor: "Will Arnett", personaje: "Teniente Grass" },
+            { actor: "Michael Shannon", personaje: "Doc Cross-Williams" },
+            { actor: "Aidan Quinn", personaje: "General Slocum" },
+            { actor: "Wes Bentley", personaje: "Adleman Lusk" }
         ]
     },
     "eternals": {
