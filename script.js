@@ -21126,6 +21126,48 @@ const filmografiasGrilla = {
     "stephan bender": ["Superman Returns"],
 };
 
+// Reparto de películas de Steven Spielberg (para "Directores Cruzados").
+// Se suma a filmografiasGrilla: si el actor ya existe, se agregan sus títulos sin duplicar.
+const REPARTO_SPIELBERG_GRILLA = {
+    "Jurassic Park": ["Sam Neill", "Laura Dern", "Jeff Goldblum", "Richard Attenborough", "Samuel L. Jackson", "Bob Peck", "Martin Ferrero", "Wayne Knight", "Ariana Richards", "Joseph Mazzello"],
+    "The Lost World: Jurassic Park": ["Jeff Goldblum", "Julianne Moore", "Pete Postlethwaite", "Vince Vaughn", "Arliss Howard", "Richard Schiff", "Vanessa Lee Chester"],
+    "Indiana Jones y Los Cazadores del Arca Perdida": ["Harrison Ford", "Karen Allen", "Paul Freeman", "John Rhys-Davies", "Ronald Lacey", "Denholm Elliott"],
+    "Indiana Jones y El Templo de la Perdición": ["Harrison Ford", "Kate Capshaw", "Ke Huy Quan"],
+    "Indiana Jones y La Última Cruzada": ["Harrison Ford", "Sean Connery", "Denholm Elliott", "Alison Doody", "John Rhys-Davies", "River Phoenix", "Julian Glover"],
+    "Indiana Jones y El Reino de La Calavera de Cristal": ["Harrison Ford", "Cate Blanchett", "Karen Allen", "Ray Winstone", "John Hurt", "Jim Broadbent", "Shia LaBeouf"],
+    "Schindler's List": ["Liam Neeson", "Ralph Fiennes", "Ben Kingsley"],
+    "Saving Private Ryan": ["Tom Hanks", "Matt Damon", "Tom Sizemore", "Edward Burns", "Barry Pepper", "Vin Diesel", "Giovanni Ribisi", "Jeremy Davies", "Adam Goldberg", "Ted Danson"],
+    "Catch Me If You Can": ["Leonardo DiCaprio", "Tom Hanks", "Christopher Walken", "Martin Sheen", "Amy Adams", "Jennifer Garner", "Nathalie Baye"],
+    "The Terminal": ["Tom Hanks", "Catherine Zeta-Jones", "Stanley Tucci", "Chi McBride", "Diego Luna", "Zoe Saldana"],
+    "Bridge of Spies": ["Tom Hanks", "Mark Rylance", "Amy Ryan", "Alan Alda", "Sebastian Koch", "Jesse Plemons", "Austin Stowell"],
+    "The Post": ["Tom Hanks", "Meryl Streep", "Bob Odenkirk", "Sarah Paulson", "Tracy Letts", "Bradley Whitford", "Matthew Rhys", "Carrie Coon", "Jesse Plemons"],
+    "Lincoln": ["Daniel Day-Lewis", "Sally Field", "Tommy Lee Jones", "David Strathairn", "Joseph Gordon-Levitt", "James Spader", "Hal Holbrook", "Jackie Earle Haley", "Lee Pace", "Jared Harris", "John Hawkes", "Tim Blake Nelson"],
+    "War Horse": ["Emily Watson", "Tom Hiddleston", "Benedict Cumberbatch", "Jeremy Irvine", "David Thewlis", "Peter Mullan"],
+    "The Adventures of Tintin": ["Jamie Bell", "Andy Serkis", "Daniel Craig", "Simon Pegg", "Nick Frost"],
+    "Ready Player One": ["Tye Sheridan", "Olivia Cooke", "Ben Mendelsohn", "Mark Rylance", "Simon Pegg", "T.J. Miller", "Lena Waithe"],
+    "The BFG": ["Mark Rylance", "Ruby Barnhill", "Penelope Wilton", "Jemaine Clement", "Rebecca Hall", "Bill Hader"],
+    "Minority Report": ["Tom Cruise", "Colin Farrell", "Samantha Morton", "Max von Sydow", "Lois Smith", "Neal McDonough", "Kathryn Morris"],
+    "War of the Worlds": ["Tom Cruise", "Dakota Fanning", "Tim Robbins", "Miranda Otto", "Justin Chatwin"],
+    "Munich": ["Eric Bana", "Daniel Craig", "Ciarán Hinds", "Geoffrey Rush", "Mathieu Kassovitz", "Mathieu Amalric", "Ayelet Zurer"],
+    "A.I. Artificial Intelligence": ["Haley Joel Osment", "Jude Law", "Frances O'Connor", "Sam Robards", "William Hurt", "Brendan Gleeson"],
+    "Amistad": ["Morgan Freeman", "Anthony Hopkins", "Matthew McConaughey", "Djimon Hounsou", "Stellan Skarsgård", "Pete Postlethwaite", "Nigel Hawthorne"],
+    "Hook": ["Robin Williams", "Dustin Hoffman", "Julia Roberts", "Bob Hoskins", "Maggie Smith", "Gwyneth Paltrow"],
+    "E.T. the Extra-Terrestrial": ["Henry Thomas", "Drew Barrymore", "Dee Wallace", "Peter Coyote", "Robert MacNaughton"],
+    "The Color Purple": ["Whoopi Goldberg", "Danny Glover", "Oprah Winfrey", "Margaret Avery"],
+    "Empire of the Sun": ["Christian Bale", "John Malkovich", "Miranda Richardson", "Joe Pantoliano", "Ben Stiller"],
+    "Always": ["Richard Dreyfuss", "Holly Hunter", "John Goodman", "Audrey Hepburn", "Brad Johnson"],
+    "West Side Story": ["Ansel Elgort", "Rachel Zegler", "Ariana DeBose", "David Alvarez", "Mike Faist", "Rita Moreno", "Brian d'Arcy James"],
+    "The Fabelmans": ["Michelle Williams", "Gabriel LaBelle", "Paul Dano", "Seth Rogen", "Judd Hirsch", "Jeannie Berlin", "David Lynch"],
+    "Twilight Zone: The Movie": ["Dan Aykroyd", "Albert Brooks", "Vic Morrow", "Scatman Crothers", "John Lithgow", "Kathleen Quinlan"]
+};
+Object.keys(REPARTO_SPIELBERG_GRILLA).forEach(titulo => {
+    REPARTO_SPIELBERG_GRILLA[titulo].forEach(actor => {
+        const clave = normalizarTextoJuego(actor);
+        if (!filmografiasGrilla[clave]) filmografiasGrilla[clave] = [];
+        if (!filmografiasGrilla[clave].includes(titulo)) filmografiasGrilla[clave].push(titulo);
+    });
+});
+
 // ==========================================
 // PERSONAJES POR EQUIPO/GRUPO (para futuras categorías tipo "personas"
 // en Grillas, como "Batifamilia" o "Green Lantern Corps": no hace falta
