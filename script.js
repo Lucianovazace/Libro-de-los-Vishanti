@@ -3553,6 +3553,40 @@ const COLECCIONES_LISTA_FIJA = [
         "Batman: No Man's Land Vol. 5: Cataciclismo Parte III",
         "Batman: No Man's Land Vol. 6: Camino a Tierra de Nadie"
     ] },
+    { id: "estado-futuro-orden", titulos: [
+        "Estado Futuro: Batman Vol. 1",
+        "Estado Futuro: Batman Vol. 2",
+        "Estado Futuro: Superman/Wonder Woman Vol. 1",
+        "Estado Futuro: Superman/Wonder Woman Vol. 2",
+        "Estado Futuro: Liga de La Justicia"
+    ] },
+    { id: "titanes-ovni-orden", titulos: [
+        "Titanes: Fuera de Las Sombras",
+        "Titanes: La Reina de Alas Negras",
+        "Titanes: Mundo Bestia"
+    ] },
+    { id: "crisis-oscura-orden", titulos: [
+        "Crisis Oscura Vol. 1",
+        "Crisis Oscura Vol. 2",
+        "Crisis Oscura Vol. 3"
+    ] },
+    { id: "batman-tortugas-orden", titulos: [
+        "Batman/Tortugas Ninja Vol. 1",
+        "Batman/Tortugas Ninja Vol. 2",
+        "Batman/Tortugas Ninja Vol. 3"
+    ] },
+    { id: "batman-morrison-orden", titulos: [
+        "Batman de Grant Morrison Vol. 1: Batman e Hijo",
+        "Batman de Grant Morrison Vol. 2: La Resurrección de Ra's Al Ghul",
+        "Batman de Grant Morrison Vol. 3: Batman R.I.P."
+    ] },
+    { id: "dceased-orden", titulos: [
+        "DCeased: Virus Zombie",
+        "DCeased: Imposibles de Matar",
+        "DCeased: Esperanza en El Fin del Mundo",
+        "DCeased: Planeta Muerto",
+        "DCeased: La Guerra de los Dioses Zombie"
+    ] },
 ];
 function titulosFijosDe(colId) {
     const f = COLECCIONES_LISTA_FIJA.find(x => x.id === colId);
@@ -5827,6 +5861,66 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "estado-futuro-orden",
+        etiqueta: "Colección",
+        titulo: "Estado Futuro",
+        categoria: "colecciones-hub",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/estado-futuro-batman-vol-1-cov1-d18918d7d28e3e677f16318171401725-1024-1024.webp",
+        esContenedor: true,
+        categoriaEditorial: "dc",
+        peliculas: []
+    },
+    {
+        id: "titanes-ovni-orden",
+        etiqueta: "Colección",
+        titulo: "Titanes",
+        categoria: "colecciones-hub",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/titanes_cov-519d1f0fd5b7eb399b17201879402404-1024-1024.webp",
+        esContenedor: true,
+        categoriaEditorial: "dc",
+        peliculas: []
+    },
+    {
+        id: "crisis-oscura-orden",
+        etiqueta: "Colección",
+        titulo: "Crisis Oscura",
+        categoria: "colecciones-hub",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/crisis_oscura_vol_1_cov1-645bfff20444480cc116729826379669-1024-1024.webp",
+        esContenedor: true,
+        categoriaEditorial: "dc",
+        peliculas: []
+    },
+    {
+        id: "batman-tortugas-orden",
+        etiqueta: "Colección",
+        titulo: "Batman/Tortugas Ninja",
+        categoria: "colecciones-hub",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_tmnt_cov-86da99168058469aae17159748754352-1024-1024.webp",
+        esContenedor: true,
+        categoriaEditorial: "dc",
+        peliculas: []
+    },
+    {
+        id: "batman-morrison-orden",
+        etiqueta: "Colección",
+        titulo: "Batman de Grant Morrison",
+        categoria: "colecciones-hub",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_e_hijo_cov-426ce7ca723e67b3fb17673629634909-1024-1024.webp",
+        esContenedor: true,
+        categoriaEditorial: "dc",
+        peliculas: []
+    },
+    {
+        id: "dceased-orden",
+        etiqueta: "Colección",
+        titulo: "DCeased",
+        categoria: "colecciones-hub",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/dceased_cov_arg1-c8cfecb30f36b9f6c616360714188285-1024-1024.webp",
+        esContenedor: true,
+        categoriaEditorial: "dc",
+        peliculas: []
+    },
+    {
         id: "marvel-novelas-graficas-definitiva",
         etiqueta: "Colección",
         titulo: "Colección Definitiva de Novelas Gráficas de Marvel",
@@ -7094,6 +7188,12 @@ function renderizarColecciones() {
         "anio-uno-ovni-orden": "seccion-anio-uno-ovni-orden",
         "knightfall-ovni-orden": "seccion-knightfall-ovni-orden",
         "no-mans-land-orden": "seccion-no-mans-land-orden",
+        "estado-futuro-orden": "seccion-estado-futuro-orden",
+        "titanes-ovni-orden": "seccion-titanes-ovni-orden",
+        "crisis-oscura-orden": "seccion-crisis-oscura-orden",
+        "batman-tortugas-orden": "seccion-batman-tortugas-orden",
+        "batman-morrison-orden": "seccion-batman-morrison-orden",
+        "dceased-orden": "seccion-dceased-orden",
         "marvel-novelas-graficas-definitiva": "seccion-marvel-novelas-graficas-definitiva",
         "spiderman-universo-arana": "seccion-spiderman-universo-arana",
         "marvel-excelsior": "seccion-marvel-excelsior",
@@ -19507,7 +19607,7 @@ const gridsDatasets = {
     "grid-actores-1": {
         titulo: "Actores de Cine #1",
         filas: [
-            { nombre: "Marvel Studios", logo: "https://www.heyuguys.com/images/2020/11/MArvel-Studios-Logo.jpg", tipo: "lista", titulos: ["Iron Man", "The Incredible Hulk", "Iron Man 2", "Thor", "Capitan America: First Avenger", "The Avengers", "Iron Man 3", "Thor: The Dark World", "Capitan America: The Winter Soldier", "Guardianes de La Galaxia", "Avengers: Era de Ultron", "Ant-Man", "Capitan America: Civil War", "Doctor Strange", "Guardianes de La Galaxia Vol. 2", "Spider-Man: Homecoming", "Thor: Ragnarok", "Avengers: Infinity War", "Ant-Man and The Wasp", "Capitana Marvel", "Avengers: Endgame", "Spider-Man: Far From Home", "Pantera Negra", "WandaVision", "The Falcon and The Winter Soldier", "Loki", "Black Widow", "Shang-Chi", "Eternals", "Hawkeye", "Spider-Man: No Way Home", "Moon Knight", "Doctor Strange in The Multiverse of Madness", "Ms. Marvel", "Thor: Love and Thunder", "Yo Soy Groot", "She-Hulk: Attorney At Law", "Werewolf By Night", "Black Panther: Wakanda Forever", "Ant-Man and The Wasp: Quantumania", "Guardianes de La Galaxia Vol. 3", "Echo", "Deadpool y Wolverine", "Capitan America: Brave New World", "Daredevil: Born Again", "Thunderbolts", "Fantastic Four: First Steps", "Eyes of Wakanda", "Secret Invasion", "Wonder Man", "Punisher: One Last Kill", "Spider-Man: Brand New Day"] },
+            { nombre: "Marvel Studios", logo: "https://www.heyuguys.com/images/2020/11/MArvel-Studios-Logo.jpg", tipo: "lista", titulos: ["Iron Man", "The Incredible Hulk", "Iron Man 2", "Thor", "Capitan America: First Avenger", "The Avengers", "Iron Man 3", "Thor: The Dark World", "Capitan America: The Winter Soldier", "Guardianes de La Galaxia", "Avengers: Era de Ultron", "Ant-Man", "Capitan America: Civil War", "Doctor Strange", "Guardianes de La Galaxia Vol. 2", "Spider-Man: Homecoming", "Thor: Ragnarok", "Avengers: Infinity War", "Ant-Man and The Wasp", "Capitana Marvel", "Avengers: Endgame", "Spider-Man: Far From Home", "Pantera Negra", "WandaVision", "The Falcon and The Winter Soldier", "Loki", "Black Widow", "Shang-Chi", "Eternals", "Hawkeye", "Spider-Man: No Way Home", "Moon Knight", "Doctor Strange in The Multiverse of Madness", "Ms. Marvel", "Thor: Love and Thunder", "Yo Soy Groot", "She-Hulk: Attorney At Law", "Werewolf By Night", "Black Panther: Wakanda Forever", "Ant-Man and The Wasp: Quantumania", "Guardianes de La Galaxia Vol. 3", "Echo", "Deadpool y Wolverine", "Capitan America: Brave New World", "Daredevil: Born Again", "Thunderbolts", "The Fantastic Four: First Steps", "Eyes of Wakanda", "Secret Invasion", "Wonder Man", "Punisher: One Last Kill", "Spider-Man: Brand New Day"] },
             { nombre: "DC Studios", tipo: "lista", titulos: ["The Suicide Squad", "Blue Beetle", "Peacemaker", "Creature Commandos", "Superman", "Supergirl", "Man of Steel", "Batman v Superman", "Justice League", "Wonder Woman", "Suicide Squad", "Aquaman", "Shazam!", "Wonder Woman 1984", "Shazam! Fury of the Gods", "The Flash", "Aquaman: The Lost Kingdom", "Birds of Prey", "Zack Snyder's Justice League", "Black Adam", "Batman Begins", "The Dark Knight Rises", "Green Lantern", "The Batman", "The Penguin", "Joker", "Joker: Folie a Deux", "Batman 1989", "Batman Returns", "Batman Forever", "Batman y Robin", "Superman Returns"] },
             { nombre: "Scorsese", tipo: "director", id: "martin-scorsese" }
         ],
@@ -19542,7 +19642,7 @@ const gridsDatasets = {
             { nombre: "Nolan", tipo: "director", id: "christopher-nolan" }
         ],
         columnas: [
-            { nombre: "Marvel Studios", logo: "https://www.heyuguys.com/images/2020/11/MArvel-Studios-Logo.jpg", tipo: "lista", titulos: ["Iron Man", "The Incredible Hulk", "Iron Man 2", "Thor", "Capitan America: First Avenger", "The Avengers", "Iron Man 3", "Thor: The Dark World", "Capitan America: The Winter Soldier", "Guardianes de La Galaxia", "Avengers: Era de Ultron", "Ant-Man", "Capitan America: Civil War", "Doctor Strange", "Guardianes de La Galaxia Vol. 2", "Spider-Man: Homecoming", "Thor: Ragnarok", "Avengers: Infinity War", "Ant-Man and The Wasp", "Capitana Marvel", "Avengers: Endgame", "Spider-Man: Far From Home", "Pantera Negra", "WandaVision", "The Falcon and The Winter Soldier", "Loki", "Black Widow", "Shang-Chi", "Eternals", "Hawkeye", "Spider-Man: No Way Home", "Moon Knight", "Doctor Strange in The Multiverse of Madness", "Ms. Marvel", "Thor: Love and Thunder", "Yo Soy Groot", "She-Hulk: Attorney At Law", "Werewolf By Night", "Black Panther: Wakanda Forever", "Ant-Man and The Wasp: Quantumania", "Guardianes de La Galaxia Vol. 3", "Echo", "Deadpool y Wolverine", "Capitan America: Brave New World", "Daredevil: Born Again", "Thunderbolts", "Fantastic Four: First Steps", "Eyes of Wakanda", "Secret Invasion", "Wonder Man", "Punisher: One Last Kill", "Spider-Man: Brand New Day"] },
+            { nombre: "Marvel Studios", logo: "https://www.heyuguys.com/images/2020/11/MArvel-Studios-Logo.jpg", tipo: "lista", titulos: ["Iron Man", "The Incredible Hulk", "Iron Man 2", "Thor", "Capitan America: First Avenger", "The Avengers", "Iron Man 3", "Thor: The Dark World", "Capitan America: The Winter Soldier", "Guardianes de La Galaxia", "Avengers: Era de Ultron", "Ant-Man", "Capitan America: Civil War", "Doctor Strange", "Guardianes de La Galaxia Vol. 2", "Spider-Man: Homecoming", "Thor: Ragnarok", "Avengers: Infinity War", "Ant-Man and The Wasp", "Capitana Marvel", "Avengers: Endgame", "Spider-Man: Far From Home", "Pantera Negra", "WandaVision", "The Falcon and The Winter Soldier", "Loki", "Black Widow", "Shang-Chi", "Eternals", "Hawkeye", "Spider-Man: No Way Home", "Moon Knight", "Doctor Strange in The Multiverse of Madness", "Ms. Marvel", "Thor: Love and Thunder", "Yo Soy Groot", "She-Hulk: Attorney At Law", "Werewolf By Night", "Black Panther: Wakanda Forever", "Ant-Man and The Wasp: Quantumania", "Guardianes de La Galaxia Vol. 3", "Echo", "Deadpool y Wolverine", "Capitan America: Brave New World", "Daredevil: Born Again", "Thunderbolts", "The Fantastic Four: First Steps", "Eyes of Wakanda", "Secret Invasion", "Wonder Man", "Punisher: One Last Kill", "Spider-Man: Brand New Day"] },
             { nombre: "DC Studios", tipo: "lista", titulos: ["The Suicide Squad", "Blue Beetle", "Peacemaker", "Creature Commandos", "Superman", "Supergirl", "Man of Steel", "Batman v Superman", "Justice League", "Wonder Woman", "Suicide Squad", "Aquaman", "Shazam!", "Wonder Woman 1984", "Shazam! Fury of the Gods", "The Flash", "Aquaman: The Lost Kingdom", "Birds of Prey", "Zack Snyder's Justice League", "Black Adam", "Batman Begins", "The Dark Knight Rises", "Green Lantern", "The Batman", "The Penguin", "Joker", "Joker: Folie a Deux", "Batman 1989", "Batman Returns", "Batman Forever", "Batman y Robin", "Superman Returns"] },
             { nombre: "Academy Award", tipo: "personas", etiquetaConfirmacion: "🏆 Ganador/a del Oscar", nombres: ["Joaquin Phoenix", "Renée Zellweger", "Brad Pitt", "Laura Dern", "Anthony Hopkins", "Frances McDormand", "Daniel Kaluuya", "Yuh-Jung Youn", "Will Smith", "Jessica Chastain", "Troy Kotsur", "Ariana DeBose", "Brendan Fraser", "Michelle Yeoh", "Ke Huy Quan", "Jamie Lee Curtis", "Cillian Murphy", "Emma Stone", "Robert Downey Jr.", "Da'Vine Joy Randolph", "Adrien Brody", "Mikey Madison", "Kieran Culkin", "Zoe Saldaña", "Michael B. Jordan", "Jessie Buckley", "Sean Penn", "Amy Madigan", "Jeff Bridges", "Sandra Bullock", "Christoph Waltz", "Mo'Nique", "Colin Firth", "Natalie Portman", "Christian Bale", "Melissa Leo", "Jean Dujardin", "Meryl Streep", "Christopher Plummer", "Octavia Spencer", "Daniel Day-Lewis", "Jennifer Lawrence", "Anne Hathaway", "Matthew McConaughey", "Cate Blanchett", "Jared Leto", "Lupita Nyong'o", "Eddie Redmayne", "Julianne Moore", "J.K. Simmons", "Patricia Arquette", "Leonardo DiCaprio", "Brie Larson", "Mark Rylance", "Alicia Vikander", "Casey Affleck", "Mahershala Ali", "Viola Davis", "Gary Oldman", "Sam Rockwell", "Allison Janney", "Rami Malek", "Olivia Colman", "Regina King", "Kevin Spacey", "Hilary Swank", "Michael Caine", "Angelina Jolie", "Russell Crowe", "Julia Roberts", "Benicio del Toro", "Marcia Gay Harden", "Denzel Washington", "Halle Berry", "Jim Broadbent", "Jennifer Connelly", "Nicole Kidman", "Chris Cooper", "Catherine Zeta-Jones", "Charlize Theron", "Tim Robbins", "Jamie Foxx", "Morgan Freeman", "Philip Seymour Hoffman", "Reese Witherspoon", "George Clooney", "Rachel Weisz", "Forest Whitaker", "Helen Mirren", "Alan Arkin", "Jennifer Hudson", "Marion Cotillard", "Javier Bardem", "Tilda Swinton", "Kate Winslet", "Heath Ledger", "Penélope Cruz", "Jessica Tandy", "Brenda Fricker", "Jeremy Irons", "Kathy Bates", "Joe Pesci", "Whoopi Goldberg", "Jodie Foster", "Jack Palance", "Mercedes Ruehl", "Al Pacino", "Emma Thompson", "Gene Hackman", "Marisa Tomei", "Tom Hanks", "Holly Hunter", "Tommy Lee Jones", "Anna Paquin", "Jessica Lange", "Martin Landau", "Dianne Wiest", "Nicolas Cage", "Susan Sarandon", "Mira Sorvino", "Geoffrey Rush", "Cuba Gooding Jr.", "Juliette Binoche", "Jack Nicholson", "Helen Hunt", "Robin Williams", "Kim Basinger", "Roberto Benigni", "Gwyneth Paltrow", "James Coburn", "Judi Dench", "Dustin Hoffman", "Sally Field", "Melvyn Douglas", "Robert De Niro", "Sissy Spacek", "Timothy Hutton", "Mary Steenburgen", "Henry Fonda", "Katharine Hepburn", "John Gielgud", "Maureen Stapleton", "Ben Kingsley", "Louis Gossett Jr.", "Robert Duvall", "Shirley MacLaine", "Linda Hunt", "F. Murray Abraham", "Haing S. Ngor", "Peggy Ashcroft", "William Hurt", "Geraldine Page", "Don Ameche", "Anjelica Huston", "Paul Newman", "Marlee Matlin", "Michael Douglas", "Cher", "Sean Connery", "Olympia Dukakis", "Kevin Kline", "Geena Davis", "John Wayne", "Maggie Smith", "Gig Young", "Goldie Hawn", "George C. Scott", "Glenda Jackson", "John Mills", "Helen Hayes", "Jane Fonda", "Ben Johnson", "Cloris Leachman", "Marlon Brando", "Liza Minnelli", "Joel Grey", "Eileen Heckart", "Jack Lemmon", "John Houseman", "Tatum O'Neal", "Art Carney", "Ellen Burstyn", "Ingrid Bergman", "Louise Fletcher", "George Burns", "Lee Grant", "Peter Finch", "Faye Dunaway", "Jason Robards", "Beatrice Straight", "Richard Dreyfuss", "Diane Keaton", "Vanessa Redgrave", "Jon Voight", "Christopher Walken", "Charlton Heston", "Simone Signoret", "Hugh Griffith", "Shelley Winters", "Burt Lancaster", "Elizabeth Taylor", "Peter Ustinov", "Shirley Jones", "Maximilian Schell", "Sophia Loren", "George Chakiris", "Rita Moreno", "Gregory Peck", "Anne Bancroft", "Ed Begley", "Patty Duke", "Sidney Poitier", "Patricia Neal", "Margaret Rutherford", "Rex Harrison", "Julie Andrews", "Lila Kedrova", "Lee Marvin", "Julie Christie", "Martin Balsam", "Paul Scofield", "Walter Matthau", "Sandy Dennis", "Rod Steiger", "George Kennedy", "Estelle Parsons", "Cliff Robertson", "Barbra Streisand", "Jack Albertson", "Ruth Gordon", "Broderick Crawford", "Olivia de Havilland", "Dean Jagger", "Mercedes McCambridge", "José Ferrer", "Judy Holliday", "George Sanders", "Josephine Hull", "Humphrey Bogart", "Vivien Leigh", "Karl Malden", "Kim Hunter", "Gary Cooper", "Shirley Booth", "Anthony Quinn", "Gloria Grahame", "William Holden", "Audrey Hepburn", "Frank Sinatra", "Donna Reed", "Grace Kelly", "Edmond O'Brien", "Eva Marie Saint", "Ernest Borgnine", "Anna Magnani", "Jo Van Fleet", "Yul Brynner", "Dorothy Malone", "Alec Guinness", "Joanne Woodward", "Red Buttons", "Miyoshi Umeki", "David Niven", "Susan Hayward", "Burl Ives", "Wendy Hiller", "Robert Donat", "Thomas Mitchell", "Hattie McDaniel", "James Stewart", "Ginger Rogers", "Walter Brennan", "Jane Darwell", "Joan Fontaine", "Donald Crisp", "Mary Astor", "James Cagney", "Greer Garson", "Van Heflin", "Teresa Wright", "Paul Lukas", "Jennifer Jones", "Charles Coburn", "Katina Paxinou", "Bing Crosby", "Barry Fitzgerald", "Ethel Barrymore", "Ray Milland", "Joan Crawford", "James Dunn", "Anne Revere", "Fredric March", "Harold Russell", "Anne Baxter", "Ronald Colman", "Loretta Young", "Edmund Gwenn", "Celeste Holm", "Laurence Olivier", "Jane Wyman", "Walter Huston", "Claire Trevor", "Emil Jannings", "Janet Gaynor", "Warner Baxter", "Mary Pickford", "George Arliss", "Norma Shearer", "Lionel Barrymore", "Marie Dressler", "Wallace Beery", "Charles Laughton", "Clark Gable", "Claudette Colbert", "Victor McLaglen", "Bette Davis", "Paul Muni", "Luise Rainer", "Gale Sondergaard", "Spencer Tracy", "Joseph Schildkraut", "Alice Brady", "Fay Bainter"] }
         ]
@@ -20133,17 +20233,17 @@ const filmografiasGrilla = {
     "gabrielle byndloss": ["Thunderbolts"],
     "regina ting chen": ["Thunderbolts"],
     "mallory hoff": ["Thunderbolts"],
-    "pedro pascal": ["Fantastic Four: First Steps", "Wonder Woman 1984"],
-    "vanessa kirby": ["Fantastic Four: First Steps"],
-    "joseph quinn": ["Fantastic Four: First Steps"],
-    "ebon moss-bachrach": ["Fantastic Four: First Steps"],
-    "ralph ineson": ["Fantastic Four: First Steps"],
-    "julia garner": ["Fantastic Four: First Steps"],
-    "paul walter hauser": ["Fantastic Four: First Steps"],
-    "john malkovich": ["Fantastic Four: First Steps"],
-    "natasha lyonne": ["Fantastic Four: First Steps"],
-    "sarah niles": ["Fantastic Four: First Steps"],
-    "isla mcrae": ["Fantastic Four: First Steps"],
+    "pedro pascal": ["The Fantastic Four: First Steps", "Wonder Woman 1984"],
+    "vanessa kirby": ["The Fantastic Four: First Steps"],
+    "joseph quinn": ["The Fantastic Four: First Steps"],
+    "ebon moss-bachrach": ["The Fantastic Four: First Steps"],
+    "ralph ineson": ["The Fantastic Four: First Steps"],
+    "julia garner": ["The Fantastic Four: First Steps"],
+    "paul walter hauser": ["The Fantastic Four: First Steps"],
+    "john malkovich": ["The Fantastic Four: First Steps"],
+    "natasha lyonne": ["The Fantastic Four: First Steps"],
+    "sarah niles": ["The Fantastic Four: First Steps"],
+    "isla mcrae": ["The Fantastic Four: First Steps"],
     "winnie harlow": ["Eyes of Wakanda"],
     "cress williams": ["Eyes of Wakanda"],
     "patricia belcher": ["Eyes of Wakanda"],
@@ -23929,6 +24029,48 @@ if(btnVolver_knightfall_ovni_orden) {
 const btnVolver_no_mans_land_orden = document.getElementById('btn-volver-no-mans-land-orden');
 if(btnVolver_no_mans_land_orden) {
     btnVolver_no_mans_land_orden.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolver_estado_futuro_orden = document.getElementById('btn-volver-estado-futuro-orden');
+if(btnVolver_estado_futuro_orden) {
+    btnVolver_estado_futuro_orden.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolver_titanes_ovni_orden = document.getElementById('btn-volver-titanes-ovni-orden');
+if(btnVolver_titanes_ovni_orden) {
+    btnVolver_titanes_ovni_orden.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolver_crisis_oscura_orden = document.getElementById('btn-volver-crisis-oscura-orden');
+if(btnVolver_crisis_oscura_orden) {
+    btnVolver_crisis_oscura_orden.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolver_batman_tortugas_orden = document.getElementById('btn-volver-batman-tortugas-orden');
+if(btnVolver_batman_tortugas_orden) {
+    btnVolver_batman_tortugas_orden.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolver_batman_morrison_orden = document.getElementById('btn-volver-batman-morrison-orden');
+if(btnVolver_batman_morrison_orden) {
+    btnVolver_batman_morrison_orden.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
+const btnVolver_dceased_orden = document.getElementById('btn-volver-dceased-orden');
+if(btnVolver_dceased_orden) {
+    btnVolver_dceased_orden.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
     });
 }
