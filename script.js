@@ -272,7 +272,7 @@ const listaMedia = [
     { titulo: "Star Wars: Episodio I - La Amenaza Fantasma", categoria: "sw-liveaction", crono: 2, tipo: "Película", fichaTecnicaId: "sw-episodio-1", poster: "https://postercity.com.ar/wp-content/uploads/2017/08/Episode1.jpg" },
     { titulo: "Star Wars: Episodio II - El Ataque de los Clones", categoria: "sw-liveaction", crono: 3, tipo: "Película", fichaTecnicaId: "sw-episodio-2", poster: "https://m.media-amazon.com/images/I/61nFfWio-sL.AC_UF894,1000_QL80.jpg" },
     { titulo: "Star Wars: Episodio III - La Venganza de los Sith", categoria: "sw-liveaction", crono: 6, tipo: "Película", fichaTecnicaId: "sw-episodio-3", poster: "https://cdng.europosters.eu/pod_public/1300/266305.jpg" },
-    { titulo: "Solo: A Star Wars Story", categoria: "sw-liveaction", crono: 8, tipo: "Película", poster: "https://lumiere-a.akamaihd.net/v1/images/solo-theatrical-poster_f98a86eb.jpeg?region=0,0,864,1280" },
+    { titulo: "Solo: A Star Wars Story", categoria: "sw-liveaction", crono: 8, tipo: "Película", fichaTecnicaId: "solo-star-wars-story", poster: "https://lumiere-a.akamaihd.net/v1/images/solo-theatrical-poster_f98a86eb.jpeg?region=0,0,864,1280" },
     { titulo: "Obi-Wan Kenobi", categoria: "sw-liveaction", crono: 10, tipo: "Serie", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Ea5Zhl73NttD-fuEjBpy5zvc0CHgbAK65cdKieScq9sYL53sOtIFfaMO&s=10" },
     { titulo: "Andor", categoria: "sw-liveaction", crono: 12, tipo: "Serie", poster: "https://lumiere-a.akamaihd.net/v1/images/andor-character-poster-cassian-andor_cacda283.jpeg" },
     { titulo: "Rogue One: A Star Wars Story", categoria: "sw-liveaction", crono: 13, tipo: "Película", fichaTecnicaId: "rogue-one", poster: "https://im.ziffdavisinternational.com/ign_es/screenshot/default/cnamojjumaqgodbjpg-large_1nv3.jpg" },
@@ -291,8 +291,8 @@ const listaMedia = [
     { titulo: "The Clone Wars (Película)", categoria: "sw-animacion", crono: 4, tipo: "Película", fichaTecnicaId: "sw-clone-wars-pelicula", poster: "https://cdn.europosters.eu/image/750/3335.jpg" },
     { titulo: "The Clone Wars (Serie)", categoria: "sw-animacion", crono: 5, tipo: "Serie", fichaTecnicaId: "sw-clone-wars-serie", poster: "https://image.tmdb.org/t/p/original/e1nWfnnCVqxS2LeTO3dwGyAsG2V.jpg" },
     // "The Bad Batch" ahora es una ficha explorable con sus 3 temporadas (ver colecciones)
-    { titulo: "Star Wars: Tales of the Underworld", categoria: "sw-animacion", crono: 7.5, tipo: "Serie (Antología)", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNFK8wlF1QPEfZkNraIHz1OgEvm4VhlXvAJMCN8uV_9r5gUdFFbIirvigX&s=10" },
-    { titulo: "Maul: Shadow Lord", categoria: "sw-animacion", crono: 9, tipo: "Audiodrama", poster: "https://cdn.europosters.eu/image/1300/307057.jpg" },
+    { titulo: "Star Wars: Tales of the Underworld", categoria: "sw-animacion", crono: 7.5, tipo: "Serie (Antología)", fichaTecnicaId: "sw-tales-of-the-underworld", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNFK8wlF1QPEfZkNraIHz1OgEvm4VhlXvAJMCN8uV_9r5gUdFFbIirvigX&s=10" },
+    { titulo: "Maul: Shadow Lord", categoria: "sw-animacion", crono: 9, tipo: "Audiodrama", fichaTecnicaId: "sw-maul-shadow-lord", poster: "https://cdn.europosters.eu/image/1300/307057.jpg" },
     { titulo: "Star Wars Rebels", categoria: "sw-animacion", crono: 11, tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/eLrScs6Bs26JMcS8hiZhf7YRROr.jpg" },
     { titulo: "Star Wars: Tales of the Empire", categoria: "sw-animacion", crono: 18.5, tipo: "Serie (Antología)", poster: "https://lumiere-a.akamaihd.net/v1/images/tales-of-the-empire-key-art_2b34360a.jpeg?region=0,0,1688,2500" },
     { titulo: "Star Wars Resistance", categoria: "sw-animacion", crono: 21, tipo: "Serie", poster: "https://m.media-amazon.com/images/M/MV5BMTkyMTc3NjAwNF5BMl5BanBnXkFtZTgwNTU1ODIyNjM@.V1.jpg" },
@@ -312,8 +312,8 @@ const listaMedia = [
     { titulo: "Heir to the Empire", categoria: "sw-libros", tipo: "Libro", poster: "https://placehold.co/300x450?text=Heir+to+the+Empire" },
 
     // --- STAR WARS: VIDEOJUEGOS ---
-    { titulo: "Star Wars Jedi: Fallen Order", categoria: "sw-videojuegos", tipo: "Videojuego", fichaTecnicaId: "sw-jedi-fallen-order", poster: "https://lumiere-a.akamaihd.net/v1/images/image_25a0f282.jpeg" },
-    { titulo: "Star Wars Jedi: Survivor", categoria: "sw-videojuegos", tipo: "Videojuego", fichaTecnicaId: "sw-jedi-survivor", poster: "https://m.media-amazon.com/images/I/71g6jLNF04L.AC_UF894,1000_QL80.jpg" },
+    { titulo: "Star Wars Jedi: Fallen Order", categoria: "sw-videojuegos", crono: 7.8, tipo: "Videojuego", fichaTecnicaId: "sw-jedi-fallen-order", poster: "https://lumiere-a.akamaihd.net/v1/images/image_25a0f282.jpeg" },
+    { titulo: "Star Wars Jedi: Survivor", categoria: "sw-videojuegos", crono: 10.5, tipo: "Videojuego", fichaTecnicaId: "sw-jedi-survivor", poster: "https://m.media-amazon.com/images/I/71g6jLNF04L.AC_UF894,1000_QL80.jpg" },
     { titulo: "Star Wars: Knights of the Old Republic", categoria: "sw-videojuegos", tipo: "Videojuego", poster: "https://lumiere-a.akamaihd.net/v1/images/game_poster_knightsoftheoldrepub_1_d341747d.jpeg?region=0,0,500,750" },
     { titulo: "Star Wars Battlefront II", categoria: "sw-videojuegos", tipo: "Videojuego", poster: "https://m.media-amazon.com/images/M/MV5BOTY3NzM1OTI3OV5BMl5BanBnXkFtZTgwOTUyNzMwMjI@._V1_.jpg" },
     { titulo: "LEGO Star Wars: The Complete Saga", categoria: "sw-videojuegos", tipo: "Videojuego", fichaTecnicaId: "lego-sw-complete-saga", poster: "https://m.media-amazon.com/images/M/MV5BM2Q4NzYzMDEtMGM1ZC00YTBkLTgyNzctYjFjYjAwZWY3NTJkXkEyXkFqcGc@.V1.jpg" },
@@ -9608,12 +9608,16 @@ if(btnSwHistoria) {
         const grillaHistoria = document.getElementById('grilla-sw-historia');
         if(grillaHistoria && grillaHistoria.children.length === 0) {
             const tarjetasSW = document.querySelectorAll(
-                '#seccion-sw-animacion .tarjeta-media, #seccion-sw-episodios .tarjeta-media, #seccion-sw-liveaction .tarjeta-media'
+                '#seccion-sw-animacion .tarjeta-media, #seccion-sw-episodios .tarjeta-media, #seccion-sw-liveaction .tarjeta-media, #seccion-sw-videojuegos .tarjeta-media'
             );
+            // Videojuegos: solo los canónicos con crono (Jedi: Fallen Order / Survivor). LEGO no es canon.
+            const juegosCanon = ['Star Wars Jedi: Fallen Order', 'Star Wars Jedi: Survivor'];
             const titulosVistos = new Set();
             const arrayTarjetas = Array.from(tarjetasSW).filter(t => {
                 if (t.classList.contains('tarjeta-coleccion')) return false;
                 const titulo = t.querySelector('h3').textContent;
+                if (/^LEGO\b/i.test(titulo.trim())) return false;
+                if (t.closest('#seccion-sw-videojuegos') && !juegosCanon.includes(titulo.trim())) return false;
                 if (titulosVistos.has(titulo)) return false;
                 titulosVistos.add(titulo);
                 return true;
@@ -10426,6 +10430,33 @@ if (btnVolverFichaRogueOne) {
         const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
         const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
         cambiarSeccion(seccionOrigen || document.getElementById('seccion-sw-liveaction'));
+    });
+}
+const btnVolverFichaSoloStarWarsStory = document.getElementById('btn-volver-ficha-solo-star-wars-story');
+if (btnVolverFichaSoloStarWarsStory) {
+    btnVolverFichaSoloStarWarsStory.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-solo-star-wars-story');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-sw-liveaction'));
+    });
+}
+const btnVolverFichaSwTalesUnderworld = document.getElementById('btn-volver-ficha-sw-tales-of-the-underworld');
+if (btnVolverFichaSwTalesUnderworld) {
+    btnVolverFichaSwTalesUnderworld.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-sw-tales-of-the-underworld');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-sw-animacion'));
+    });
+}
+const btnVolverFichaSwMaulShadowLord = document.getElementById('btn-volver-ficha-sw-maul-shadow-lord');
+if (btnVolverFichaSwMaulShadowLord) {
+    btnVolverFichaSwMaulShadowLord.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-sw-maul-shadow-lord');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-sw-animacion'));
     });
 }
 const btnVolverFichaTheAcolyte = document.getElementById('btn-volver-ficha-the-acolyte');
@@ -14149,6 +14180,9 @@ const FICHAS_TECNICAS_TITULOS = {
     "sw-episodio-8": "Star Wars: Episodio VIII - Los Últimos Jedi",
     "sw-episodio-9": "Star Wars: Episodio IX - El Ascenso de Skywalker",
     "rogue-one": "Rogue One: A Star Wars Story",
+    "solo-star-wars-story": "Solo: A Star Wars Story",
+    "sw-tales-of-the-underworld": "Star Wars: Tales of the Underworld",
+    "sw-maul-shadow-lord": "Maul: Shadow Lord",
     "the-acolyte": "The Acolyte",
     "sw-tales-of-the-jedi": "Star Wars: Tales of the Jedi",
     "sw-clone-wars-pelicula": "The Clone Wars (Película)",
@@ -16167,6 +16201,38 @@ const REPARTO_PELICULAS = {
             { actor: "Keri Russell", personaje: "Zorii Bliss" },
             { actor: "Naomi Ackie", personaje: "Jannah" },
             { actor: "Richard E. Grant", personaje: "Allegiant General Pryde" }
+        ]
+    },
+    "solo-star-wars-story": {
+        director: "Ron Howard",
+        elenco: [
+            { actor: "Alden Ehrenreich", personaje: "Han Solo" },
+            { actor: "Emilia Clarke", personaje: "Qi'ra" },
+            { actor: "Woody Harrelson", personaje: "Tobias Beckett" },
+            { actor: "Donald Glover", personaje: "Lando Calrissian" },
+            { actor: "Thandiwe Newton", personaje: "Val" },
+            { actor: "Phoebe Waller-Bridge", personaje: "L3-37 (voz)" },
+            { actor: "Joonas Suotamo", personaje: "Chewbacca" },
+            { actor: "Paul Bettany", personaje: "Dryden Vos" }
+        ]
+    },
+    "sw-tales-of-the-underworld": {
+        director: "Dave Filoni (creador)",
+        elenco: [
+            { actor: "Nika Futterman", personaje: "Asajj Ventress (voz)" },
+            { actor: "Corey Burton", personaje: "Cad Bane (voz)" }
+        ]
+    },
+    "sw-maul-shadow-lord": {
+        director: "Dave Filoni (creador)",
+        elenco: [
+            { actor: "Sam Witwer", personaje: "Maul (voz)" },
+            { actor: "Wagner Moura", personaje: "Brander Lawson (voz)" },
+            { actor: "Charlie Bushnell", personaje: "Rylee Lawson (voz)" },
+            { actor: "Richard Ayoade", personaje: "Two-Boots (voz)" },
+            { actor: "Dennis Haysbert", personaje: "Maestro Eeko-Dio Daki (voz)" },
+            { actor: "Gideon Adlon", personaje: "Devon Izara (voz)" },
+            { actor: "Vanessa Marshall", personaje: "Rook Kast (voz)" }
         ]
     },
     "rogue-one": {
