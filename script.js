@@ -677,6 +677,17 @@ const listaMedia = [
     { titulo: "It's Kind of a Funny Story", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Película", fichaTecnicaId: "its-kind-of-a-funny-story", poster: "https://image.tmdb.org/t/p/original/3IJRSjetWo6I84WdYmCr8ZETFYD.jpg" },
     { titulo: "Beware the Gonzo", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Película", fichaTecnicaId: "beware-the-gonzo", poster: "https://m.media-amazon.com/images/M/MV5BMTk0NDE3MDMyNF5BMl5BanBnXkFtZTcwNTgzMDQ0Ng@@._V1_.jpg" },
     { titulo: "Yelling to the Sky", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Película", fichaTecnicaId: "yelling-to-the-sky", poster: "https://image.tmdb.org/t/p/w500/qfAYPc5ZRnPkPBSZMvepbno8XNC.jpg" },
+    // --- ZOË KRAVITZ, década de 2010 (cont.) ---
+    { titulo: "X-Men: First Class", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Película", fichaTecnicaId: "xmen-first-class", poster: "https://collider.com/wp-content/uploads/x-men-first-class-teaser-poster.jpg" },
+    { titulo: "Californication", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Serie", fichaTecnicaId: "californication", poster: "https://image.tmdb.org/t/p/original/yz46AmvMqeGGkziIl6BMjGTHBzv.jpg" },
+    { titulo: "After Earth", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Película", fichaTecnicaId: "after-earth", poster: "https://image.tmdb.org/t/p/original/5HP8TgFLSu2XG59psSuyrUSMsVj.jpg" },
+    { titulo: "The Boy Who Smells Like Fish", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-boy-who-smells-like-fish", poster: "https://m.media-amazon.com/images/M/MV5BMjE4MjI4NzE3Nl5BMl5BanBnXkFtZTgwODE3OTg4MTE@._V1_.jpg" },
+    { titulo: "Divergente", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Película", fichaTecnicaId: "divergente", poster: "https://image.tmdb.org/t/p/original/ngZAyR0qlTjcQ2IxONBQ3krxNDm.jpg" },
+    { titulo: "The Road Within", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-road-within", poster: "https://image.tmdb.org/t/p/original/pBlzi4KTVzdBWlG1x0E2eIZEaR5.jpg" },
+    { titulo: "Good Kill", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Película", fichaTecnicaId: "good-kill", poster: "https://m.media-amazon.com/images/M/MV5BMTkzNDIxNzE5OF5BMl5BanBnXkFtZTgwODMxMTExNTE@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Dope", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Película", fichaTecnicaId: "dope", poster: "https://image.tmdb.org/t/p/w500/n6u00imN7AX2NiyWUc5kTgHXmEf.jpg" },
+    { titulo: "Insurgente", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Película", fichaTecnicaId: "insurgente", poster: "https://image.tmdb.org/t/p/original/7NxN2kJI1EsNrtMTuS6L7pHd6lg.jpg" },
+    { titulo: "Mad Max: Fury Road", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Película", fichaTecnicaId: "mad-max-fury-road", poster: "https://image.tmdb.org/t/p/w220_and_h330_face/jcnebguIweSr16AaBOdzsUL4Dzl.jpg" },
 
     // --- GLEN POWELL ---
     { titulo: "Apollo 10 ½: A Space Age Childhood", categoria: "glen-powell", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/ms3qa9LH9kosaGCSe22NJ7fDPv9.jpg" },
@@ -10593,6 +10604,87 @@ if (btnVolverFichaKravitzyellingtothesky) {
         cambiarSeccion(seccionOrigen || document.getElementById('seccion-zoe-kravitz'));
     });
 }
+const btnVolverFichaKravitzcalifornication = document.getElementById('btn-volver-ficha-californication');
+if (btnVolverFichaKravitzcalifornication) {
+    btnVolverFichaKravitzcalifornication.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-californication');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-zoe-kravitz'));
+    });
+}
+const btnVolverFichaKravitzafterearth = document.getElementById('btn-volver-ficha-after-earth');
+if (btnVolverFichaKravitzafterearth) {
+    btnVolverFichaKravitzafterearth.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-after-earth');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-zoe-kravitz'));
+    });
+}
+const btnVolverFichaKravitztheboywhosmellslikefish = document.getElementById('btn-volver-ficha-the-boy-who-smells-like-fish');
+if (btnVolverFichaKravitztheboywhosmellslikefish) {
+    btnVolverFichaKravitztheboywhosmellslikefish.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-the-boy-who-smells-like-fish');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-zoe-kravitz'));
+    });
+}
+const btnVolverFichaKravitzdivergente = document.getElementById('btn-volver-ficha-divergente');
+if (btnVolverFichaKravitzdivergente) {
+    btnVolverFichaKravitzdivergente.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-divergente');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-zoe-kravitz'));
+    });
+}
+const btnVolverFichaKravitztheroadwithin = document.getElementById('btn-volver-ficha-the-road-within');
+if (btnVolverFichaKravitztheroadwithin) {
+    btnVolverFichaKravitztheroadwithin.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-the-road-within');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-zoe-kravitz'));
+    });
+}
+const btnVolverFichaKravitzgoodkill = document.getElementById('btn-volver-ficha-good-kill');
+if (btnVolverFichaKravitzgoodkill) {
+    btnVolverFichaKravitzgoodkill.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-good-kill');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-zoe-kravitz'));
+    });
+}
+const btnVolverFichaKravitzdope = document.getElementById('btn-volver-ficha-dope');
+if (btnVolverFichaKravitzdope) {
+    btnVolverFichaKravitzdope.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-dope');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-zoe-kravitz'));
+    });
+}
+const btnVolverFichaKravitzinsurgente = document.getElementById('btn-volver-ficha-insurgente');
+if (btnVolverFichaKravitzinsurgente) {
+    btnVolverFichaKravitzinsurgente.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-insurgente');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-zoe-kravitz'));
+    });
+}
+const btnVolverFichaKravitzmadmaxfuryroad = document.getElementById('btn-volver-ficha-mad-max-fury-road');
+if (btnVolverFichaKravitzmadmaxfuryroad) {
+    btnVolverFichaKravitzmadmaxfuryroad.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-mad-max-fury-road');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-zoe-kravitz'));
+    });
+}
 const btnVolverFichaTheAcolyte = document.getElementById('btn-volver-ficha-the-acolyte');
 if (btnVolverFichaTheAcolyte) {
     btnVolverFichaTheAcolyte.addEventListener('click', () => {
@@ -14314,6 +14406,15 @@ const FICHAS_TECNICAS_TITULOS = {
     "sw-episodio-8": "Star Wars: Episodio VIII - Los Últimos Jedi",
     "sw-episodio-9": "Star Wars: Episodio IX - El Ascenso de Skywalker",
     "rogue-one": "Rogue One: A Star Wars Story",
+    "californication": "Californication",
+    "after-earth": "After Earth",
+    "the-boy-who-smells-like-fish": "The Boy Who Smells Like Fish",
+    "divergente": "Divergente",
+    "the-road-within": "The Road Within",
+    "good-kill": "Good Kill",
+    "dope": "Dope",
+    "insurgente": "Insurgente",
+    "mad-max-fury-road": "Mad Max: Fury Road",
     "twelve": "Twelve",
     "its-kind-of-a-funny-story": "It's Kind of a Funny Story",
     "beware-the-gonzo": "Beware the Gonzo",
@@ -16516,6 +16617,106 @@ const REPARTO_PELICULAS = {
             { actor: "Gabourey Sidibe", personaje: "Latonya Williams" },
             { actor: "Tim Blake Nelson", personaje: "Coleman" },
             { actor: "Shareeka Epps", personaje: "Fatima Harris" }
+        ]
+    },
+    "californication": {
+        director: "Tom Kapinos (creador)",
+        elenco: [
+            { actor: "David Duchovny", personaje: "Hank Moody" },
+            { actor: "Natascha McElhone", personaje: "Karen Van Der Beek" },
+            { actor: "Madeleine Martin", personaje: "Becca Moody" },
+            { actor: "Evan Handler", personaje: "Charlie Runkle" },
+            { actor: "Pamela Adlon", personaje: "Marcy Runkle" },
+            { actor: "Zoë Kravitz", personaje: "Pearl (temporada 4)" }
+        ]
+    },
+    "after-earth": {
+        director: "M. Night Shyamalan",
+        elenco: [
+            { actor: "Will Smith", personaje: "Cypher Raige" },
+            { actor: "Jaden Smith", personaje: "Kitai Raige" },
+            { actor: "Sophie Okonedo", personaje: "Faia Raige" },
+            { actor: "Zoë Kravitz", personaje: "Senshi Raige" },
+            { actor: "Glenn Morshower", personaje: "Comandante Velan" }
+        ]
+    },
+    "the-boy-who-smells-like-fish": {
+        director: "Analeine Cal y Mayor",
+        elenco: [
+            { actor: "Douglas Smith", personaje: "Mica" },
+            { actor: "Zoë Kravitz", personaje: "Laura" },
+            { actor: "Carrie-Anne Moss", personaje: "Catherine" },
+            { actor: "Ariadna Gil", personaje: "Sophie" },
+            { actor: "Gonzalo Vega", personaje: "Guillermo Garibai" },
+            { actor: "Don McKellar", personaje: "Richard" }
+        ]
+    },
+    "divergente": {
+        director: "Neil Burger",
+        elenco: [
+            { actor: "Shailene Woodley", personaje: "Beatrice \"Tris\" Prior" },
+            { actor: "Theo James", personaje: "Tobias \"Cuatro\" Eaton" },
+            { actor: "Zoë Kravitz", personaje: "Christina" },
+            { actor: "Miles Teller", personaje: "Peter Hayes" },
+            { actor: "Ansel Elgort", personaje: "Caleb Prior" },
+            { actor: "Kate Winslet", personaje: "Jeanine Matthews" },
+            { actor: "Ashley Judd", personaje: "Natalie Prior" },
+            { actor: "Maggie Q", personaje: "Tori Wu" }
+        ]
+    },
+    "the-road-within": {
+        director: "Gren Wells",
+        elenco: [
+            { actor: "Robert Sheehan", personaje: "Vincent" },
+            { actor: "Dev Patel", personaje: "Alex" },
+            { actor: "Zoë Kravitz", personaje: "Marie" },
+            { actor: "Robert Patrick", personaje: "Robert" },
+            { actor: "Kyra Sedgwick", personaje: "Mia Rose" }
+        ]
+    },
+    "good-kill": {
+        director: "Andrew Niccol",
+        elenco: [
+            { actor: "Ethan Hawke", personaje: "Mayor Tommy Egan" },
+            { actor: "January Jones", personaje: "Molly Egan" },
+            { actor: "Zoë Kravitz", personaje: "Aviadora Vera Suarez" },
+            { actor: "Bruce Greenwood", personaje: "Tte. Coronel Jack Johns" },
+            { actor: "Jake Abel", personaje: "Joe Zimmer" }
+        ]
+    },
+    "dope": {
+        director: "Rick Famuyiwa",
+        elenco: [
+            { actor: "Shameik Moore", personaje: "Malcolm" },
+            { actor: "Tony Revolori", personaje: "Jib" },
+            { actor: "Kiersey Clemons", personaje: "Diggy" },
+            { actor: "Zoë Kravitz", personaje: "Nakia" },
+            { actor: "A$AP Rocky", personaje: "Dom" },
+            { actor: "LaKeith Stanfield", personaje: "Bug" },
+            { actor: "Forest Whitaker", personaje: "Narrador" }
+        ]
+    },
+    "insurgente": {
+        director: "Robert Schwentke",
+        elenco: [
+            { actor: "Shailene Woodley", personaje: "Tris" },
+            { actor: "Theo James", personaje: "Cuatro" },
+            { actor: "Zoë Kravitz", personaje: "Christina" },
+            { actor: "Kate Winslet", personaje: "Jeanine" },
+            { actor: "Octavia Spencer", personaje: "Johanna" },
+            { actor: "Naomi Watts", personaje: "Evelyn" },
+            { actor: "Miles Teller", personaje: "Peter" },
+            { actor: "Ansel Elgort", personaje: "Caleb" }
+        ]
+    },
+    "mad-max-fury-road": {
+        director: "George Miller",
+        elenco: [
+            { actor: "Tom Hardy", personaje: "Max Rockatansky" },
+            { actor: "Charlize Theron", personaje: "Imperator Furiosa" },
+            { actor: "Nicholas Hoult", personaje: "Nux" },
+            { actor: "Hugh Keays-Byrne", personaje: "Immortan Joe" },
+            { actor: "Zoë Kravitz", personaje: "Toast la Sabia" }
         ]
     },
     "rogue-one": {
@@ -21860,7 +22061,7 @@ const filmografiasGrilla = {
     "geoffrey rush": ["Green Lantern"],
     "michael clarke duncan": ["Green Lantern"],
     "salome jens": ["Green Lantern"],
-    "zoe kravitz": ["The Batman", "Kimi", "Caught Stealing", "High Fidelity", "The Studio", "Twelve", "It's Kind of a Funny Story", "Beware the Gonzo", "Yelling to the Sky"],
+    "zoe kravitz": ["The Batman", "Kimi", "Caught Stealing", "High Fidelity", "The Studio", "Twelve", "It's Kind of a Funny Story", "Beware the Gonzo", "Yelling to the Sky", "X-Men: First Class", "Californication", "After Earth", "Divergente", "Insurgente", "The Road Within", "Good Kill", "Dope", "Mad Max: Fury Road"],
     "paul dano": ["The Batman"],
     "colin farrell": ["The Batman", "The Penguin"],
     "jayme lawson": ["The Batman"],
