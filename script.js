@@ -2067,6 +2067,8 @@ const listaMedia = [
     { titulo: "Batman: Leyendas del Caballero Oscuro #1: Shaman", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/18/2d/f04aa1ab7db1450bb86170365abaae44.jpg" },
     { titulo: "Doom Patrol Libro Uno", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "doom-patrol", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/doom_patrol_vol_1_cov_arg-8474aae7748946314917788695777603-640-0.webp" },
     { titulo: "Doom Patrol Libro Dos", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "doom-patrol", tipo: "Cómic", poster: "https://i1.whakoom.com/small/2b/0f/a6d63815c6a5413792cd715c46a68c61.jpg" },
+    { titulo: "Doom Patrol Libro Tres", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "doom-patrol", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/doom_patrol_vol_3_cov_arg1-ff8bf4cbd252ceeb4c16572161606152-640-0.webp" },
+    { titulo: "Doom Patrol Libro Cuatro", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "doom-patrol", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/doom_patrol_vol_4_cov_arg1-447300ded3de3e2f3e16645157434325-640-0.webp" },
     { titulo: "Doom Patrol: Flex Mentallo", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "doom-patrol", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flex_mentallo_cov-8175c7b31dd363f29c17788693406430-640-0.webp" },
     { titulo: "Batman: Leyendas del Caballero Oscuro #2: Presa", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "batman,hugo-strange", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_presa_cov-47a69ad7fa351ffe9d17001638496480-1024-1024.webp" },
     { titulo: "Batman: Leyendas del Caballero Oscuro #3: Fe", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_fe_cov-5cc56597da0bf6763517051585113454-1024-1024.webp" },
@@ -3586,6 +3588,13 @@ const COLECCIONES_LISTA_FIJA = [
         "DCeased: Esperanza en El Fin del Mundo",
         "DCeased: Planeta Muerto",
         "DCeased: La Guerra de los Dioses Zombie"
+    ] },
+    { id: "doom-patrol-morrison-orden", titulos: [
+        "Doom Patrol Libro Uno",
+        "Doom Patrol Libro Dos",
+        "Doom Patrol Libro Tres",
+        "Doom Patrol Libro Cuatro",
+        "Doom Patrol: Flex Mentallo"
     ] },
 ];
 function titulosFijosDe(colId) {
@@ -5921,6 +5930,16 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "doom-patrol-morrison-orden",
+        etiqueta: "Colección",
+        titulo: "Doom Patrol de Grant Morrison",
+        categoria: "colecciones-hub",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/doom_patrol_vol_1_cov_arg-8474aae7748946314917788695777603-640-0.webp",
+        esContenedor: true,
+        categoriaEditorial: "dc",
+        peliculas: []
+    },
+    {
         id: "marvel-novelas-graficas-definitiva",
         etiqueta: "Colección",
         titulo: "Colección Definitiva de Novelas Gráficas de Marvel",
@@ -7194,6 +7213,7 @@ function renderizarColecciones() {
         "batman-tortugas-orden": "seccion-batman-tortugas-orden",
         "batman-morrison-orden": "seccion-batman-morrison-orden",
         "dceased-orden": "seccion-dceased-orden",
+        "doom-patrol-morrison-orden": "seccion-doom-patrol-morrison-orden",
         "marvel-novelas-graficas-definitiva": "seccion-marvel-novelas-graficas-definitiva",
         "spiderman-universo-arana": "seccion-spiderman-universo-arana",
         "marvel-excelsior": "seccion-marvel-excelsior",
@@ -24075,6 +24095,13 @@ if(btnVolver_dceased_orden) {
     });
 }
 
+const btnVolver_doom_patrol_morrison_orden = document.getElementById('btn-volver-doom-patrol-morrison-orden');
+if(btnVolver_doom_patrol_morrison_orden) {
+    btnVolver_doom_patrol_morrison_orden.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-colecciones-hub'));
+    });
+}
+
 // ==========================================
 // FILTROS "DC COLECCIÓN DE HÉROES Y VILLANOS" — 2 vistas (predeterminado/cronológico)
 // ==========================================
@@ -24792,6 +24819,8 @@ const RECOPILA_OVNI = {
     "Liga de La Justicia Internacional #10: Origenes Secretos": "JL Quarterly #5, Secret Origins #32-35, DC Retroactive: JLA The '90s #1, JLA 80-Page Giant #1",
     "DC Comics Presenta: Liga de La Justicia: Escalera al Cielo": "JLA: Heaven's Ladder (Waid/Hitch, 2000)",
     "Doom Patrol Libro Dos": "Doom Patrol #30-41",
+    "Doom Patrol Libro Tres": "Doom Patrol #42-53",
+    "Doom Patrol Libro Cuatro": "Doom Patrol #54-63",
     "Animal Man de Grant Morrison Vol 3": "Animal Man #18-26",
     "Liga de La Justicia: Infinita": "Justice League Infinity #1-7",
     "Liga de La Justicia: Ultimo Viaje": "Justice League: Last Ride #1-7",
@@ -25032,8 +25061,6 @@ const RECOPILA_OVNI_EXTRA = {
     "Batman: La Trilogía del Demonio": "tres novelas gráficas de Ra's al Ghul = Salvat Esenciales #22",
     "Batman: La Era Oscura": "Batman: Dark Age #1-6",
     "Superman/Batman: Los Mejores del Mundo (Gibbons/Rude)": "Superman/Batman: World's Finest #1-3 (1990)",
-    "Doom Patrol Libro Tres (Ovni)": "Doom Patrol #42-53",
-    "Doom Patrol Libro Cuatro (Ovni)": "Doom Patrol #54-63",
     "Estado Futuro: Batman Vol. 2 (Ovni)": "Future State: The Next Batman #1-4 y Future State: Batman/Superman #2",
     "Batman: Camino a la Guerra del Joker (Ovni)": "Batman #85-94, Detective Comics #1020-1024 (2019-20)",
     "DC Comics Presenta: Batman: Año Uno (Ovni)": "Batman #404-407 (misma historia que Batman: Año Uno)",
