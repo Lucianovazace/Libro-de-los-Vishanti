@@ -664,6 +664,15 @@ const listaMedia = [
     { titulo: "Christy", categoria: "sydney-sweeney", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BM2E5MjhjODgtYzg0MS00NTlhLWIyZTktYjRjOTM1MDJlZWI4XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
     { titulo: "The Housemaid", categoria: "sydney-sweeney", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/jv6LRUjOh9X2dWs2htkntXj4NiB.jpg" },
 
+    // --- ZOË KRAVITZ (con filtros por década) ---
+    { titulo: "High Fidelity", categoria: "zoe-kravitz", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "high-fidelity-2020", poster: "https://image.tmdb.org/t/p/w500/6OTZ66ZlJvOVb5A8ALiPzTD0n3H.jpg" },
+    { titulo: "Viena and the Fantomes", categoria: "zoe-kravitz", subtipo: "2020", tipo: "Película", fichaTecnicaId: "viena-and-the-fantomes", poster: "https://image.tmdb.org/t/p/w500/1c4GhelRi8VF6M51CIgkMPKH90O.jpg" },
+    { titulo: "Kimi", categoria: "zoe-kravitz", subtipo: "2020", tipo: "Película", fichaTecnicaId: "kimi", poster: "https://image.tmdb.org/t/p/w500/pdtYfXjnOeBMMuE4UpL8FbbnKBd.jpg" },
+    { titulo: "The Batman", categoria: "zoe-kravitz", subtipo: "2020", tipo: "Película", fichaTecnicaId: "the-batman-2022", poster: "https://m.media-amazon.com/images/I/71kUTilIdiL.jpg" },
+    { titulo: "The Studio", categoria: "zoe-kravitz", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "the-studio", poster: "https://image.tmdb.org/t/p/original/bM8dzMZp7WxaLhhdl3d08M4hv3z.jpg" },
+    { titulo: "Caught Stealing", categoria: "zoe-kravitz", subtipo: "2020", tipo: "Película", fichaTecnicaId: "caught-stealing", poster: "https://image.tmdb.org/t/p/original/5Bhw0H5eajUGDTXsQkLdCme1wTK.jpg" },
+    { titulo: "How to Rob a Bank", categoria: "zoe-kravitz", subtipo: "2020", tipo: "Película", fichaTecnicaId: "how-to-rob-a-bank", poster: "https://m.media-amazon.com/images/M/MV5BODY5YWIzZTAtMzA5OC00MDgwLTgxZjQtZGIwZTg2YTk3YWE1XkEyXkFqcGc@._V1_.jpg" },
+
     // --- GLEN POWELL ---
     { titulo: "Apollo 10 ½: A Space Age Childhood", categoria: "glen-powell", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/ms3qa9LH9kosaGCSe22NJ7fDPv9.jpg" },
     { titulo: "Top Gun: Maverick", categoria: "glen-powell", subtipo: "2020", tipo: "Película", poster: "https://filmartgallery.com/cdn/shop/files/Top-Gun-Maverick-Vintage-Movie-Poster-Original_7c07a212.jpg?v=1771974257&width=2048" },
@@ -4072,6 +4081,16 @@ const colecciones = [
         esContenedor: true,
         etiqueta: "Actor",
         progresoCategoria: "isabela-merced",
+        peliculas: []
+    },
+    {
+        id: "zoe-kravitz",
+        titulo: "Zoë Kravitz",
+        categoria: "actores",
+        poster: "https://4kwallpapers.com/images/wallpapers/zoe-kravitz-elle-magazine-cover-shoot-2023-5k-8k-768x1024-8903.jpg",
+        esContenedor: true,
+        etiqueta: "Actriz",
+        progresoCategoria: "zoe-kravitz",
         peliculas: []
     },
     {
@@ -7525,6 +7544,7 @@ function abrirColeccion(colId) {
         'jennifer-lawrence': '.btn-filtro-jlawrence[data-tipo="2020"]',
         'sydney-sweeney': '.btn-filtro-sweeney[data-tipo="2020"]',
         'glen-powell': '.btn-filtro-powell[data-tipo="2020"]',
+        'zoe-kravitz': '.btn-filtro-kravitz[data-tipo="2020"]',
         'isabela-merced': '.btn-filtro-isabela[data-tipo="2020"]',
         'gemma-chan': '.btn-filtro-gemma[data-tipo="2020"]',
         'tom-holland': '.btn-filtro-holland[data-tipo="2020"]',
@@ -7768,6 +7788,7 @@ function renderizarContenido() {
         "jennifer-lawrence": "seccion-jennifer-lawrence",
         "sydney-sweeney": "seccion-sydney-sweeney",
         "glen-powell": "seccion-glen-powell",
+        "zoe-kravitz": "seccion-zoe-kravitz",
         "denis-villeneuve": "seccion-denis-villeneuve",
         "batman-personaje": "seccion-batman-personaje",
         "isabela-merced": "seccion-isabela-merced",
@@ -10466,6 +10487,69 @@ if (btnVolverFichaObiWan) {
         const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
         const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
         cambiarSeccion(seccionOrigen || document.getElementById('seccion-sw-liveaction'));
+    });
+}
+const btnVolverFichaKravitzhighfidelity2020 = document.getElementById('btn-volver-ficha-high-fidelity-2020');
+if (btnVolverFichaKravitzhighfidelity2020) {
+    btnVolverFichaKravitzhighfidelity2020.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-high-fidelity-2020');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-zoe-kravitz'));
+    });
+}
+const btnVolverFichaKravitzvienaandthefantomes = document.getElementById('btn-volver-ficha-viena-and-the-fantomes');
+if (btnVolverFichaKravitzvienaandthefantomes) {
+    btnVolverFichaKravitzvienaandthefantomes.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-viena-and-the-fantomes');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-zoe-kravitz'));
+    });
+}
+const btnVolverFichaKravitzkimi = document.getElementById('btn-volver-ficha-kimi');
+if (btnVolverFichaKravitzkimi) {
+    btnVolverFichaKravitzkimi.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-kimi');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-zoe-kravitz'));
+    });
+}
+const btnVolverFichaKravitzthebatman2022 = document.getElementById('btn-volver-ficha-the-batman-2022');
+if (btnVolverFichaKravitzthebatman2022) {
+    btnVolverFichaKravitzthebatman2022.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-the-batman-2022');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-zoe-kravitz'));
+    });
+}
+const btnVolverFichaKravitzthestudio = document.getElementById('btn-volver-ficha-the-studio');
+if (btnVolverFichaKravitzthestudio) {
+    btnVolverFichaKravitzthestudio.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-the-studio');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-zoe-kravitz'));
+    });
+}
+const btnVolverFichaKravitzcaughtstealing = document.getElementById('btn-volver-ficha-caught-stealing');
+if (btnVolverFichaKravitzcaughtstealing) {
+    btnVolverFichaKravitzcaughtstealing.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-caught-stealing');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-zoe-kravitz'));
+    });
+}
+const btnVolverFichaKravitzhowtorobabank = document.getElementById('btn-volver-ficha-how-to-rob-a-bank');
+if (btnVolverFichaKravitzhowtorobabank) {
+    btnVolverFichaKravitzhowtorobabank.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-how-to-rob-a-bank');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-zoe-kravitz'));
     });
 }
 const btnVolverFichaTheAcolyte = document.getElementById('btn-volver-ficha-the-acolyte');
@@ -14189,6 +14273,13 @@ const FICHAS_TECNICAS_TITULOS = {
     "sw-episodio-8": "Star Wars: Episodio VIII - Los Últimos Jedi",
     "sw-episodio-9": "Star Wars: Episodio IX - El Ascenso de Skywalker",
     "rogue-one": "Rogue One: A Star Wars Story",
+    "high-fidelity-2020": "High Fidelity",
+    "viena-and-the-fantomes": "Viena and the Fantomes",
+    "kimi": "Kimi",
+    "the-batman-2022": "The Batman",
+    "the-studio": "The Studio",
+    "caught-stealing": "Caught Stealing",
+    "how-to-rob-a-bank": "How to Rob a Bank",
     "obi-wan-kenobi": "Obi-Wan Kenobi",
     "solo-star-wars-story": "Solo: A Star Wars Story",
     "sw-tales-of-the-underworld": "Star Wars: Tales of the Underworld",
@@ -16259,6 +16350,81 @@ const REPARTO_PELICULAS = {
             { actor: "Kumail Nanjiani", personaje: "Haja Fjord" }
         ]
     },
+    "high-fidelity-2020": {
+        director: "Veronica West y Sarah Kucserka (creadoras)",
+        elenco: [
+            { actor: "Zoë Kravitz", personaje: "Robyn \"Rob\" Brooks" },
+            { actor: "Jake Lacy", personaje: "Clyde" },
+            { actor: "Da'Vine Joy Randolph", personaje: "Cherise" },
+            { actor: "Kingsley Ben-Adir", personaje: "Simon" }
+        ]
+    },
+    "viena-and-the-fantomes": {
+        director: "Gerardo Naranjo",
+        elenco: [
+            { actor: "Dakota Fanning", personaje: "Viena" },
+            { actor: "Jon Bernthal", personaje: "Reparto" },
+            { actor: "Evan Rachel Wood", personaje: "Reparto" },
+            { actor: "Zoë Kravitz", personaje: "Reparto" }
+        ]
+    },
+    "kimi": {
+        director: "Steven Soderbergh",
+        elenco: [
+            { actor: "Zoë Kravitz", personaje: "Angela Childs" },
+            { actor: "Byron Bowers", personaje: "Terry Hughes" },
+            { actor: "Jaime Camil", personaje: "Antonio Rivas" },
+            { actor: "Erika Christensen", personaje: "Samantha Gerrity" },
+            { actor: "Rita Wilson", personaje: "Natalie Chowdhury" }
+        ]
+    },
+    "the-batman-2022": {
+        director: "Matt Reeves",
+        elenco: [
+            { actor: "Robert Pattinson", personaje: "Bruce Wayne / Batman" },
+            { actor: "Zoë Kravitz", personaje: "Selina Kyle / Catwoman" },
+            { actor: "Paul Dano", personaje: "Edward Nashton / Acertijo" },
+            { actor: "Jeffrey Wright", personaje: "James Gordon" },
+            { actor: "John Turturro", personaje: "Carmine Falcone" },
+            { actor: "Colin Farrell", personaje: "Oz / Pingüino" },
+            { actor: "Andy Serkis", personaje: "Alfred Pennyworth" },
+            { actor: "Peter Sarsgaard", personaje: "Gil Colson" }
+        ]
+    },
+    "the-studio": {
+        director: "Seth Rogen y Evan Goldberg (creadores)",
+        elenco: [
+            { actor: "Seth Rogen", personaje: "Matt Remick" },
+            { actor: "Catherine O'Hara", personaje: "Patty Leigh" },
+            { actor: "Ike Barinholtz", personaje: "Sal Saperstein" },
+            { actor: "Chase Sui Wonders", personaje: "Quinn Hackett" },
+            { actor: "Kathryn Hahn", personaje: "Maya Mason" },
+            { actor: "Zoë Kravitz", personaje: "Invitada especial" }
+        ]
+    },
+    "caught-stealing": {
+        director: "Darren Aronofsky",
+        elenco: [
+            { actor: "Austin Butler", personaje: "Henry \"Hank\" Thompson" },
+            { actor: "Zoë Kravitz", personaje: "Yvonne" },
+            { actor: "Matt Smith", personaje: "Russ Miner" },
+            { actor: "Regina King", personaje: "Det. Elise Roman" },
+            { actor: "Liev Schreiber", personaje: "Lipa Drucker" },
+            { actor: "Vincent D'Onofrio", personaje: "Shmully Drucker" },
+            { actor: "Bad Bunny", personaje: "Colorado" }
+        ]
+    },
+    "how-to-rob-a-bank": {
+        director: "David Leitch",
+        elenco: [
+            { actor: "Nicholas Hoult", personaje: "Ryan" },
+            { actor: "Zoë Kravitz", personaje: "Reagan Gardner" },
+            { actor: "Pete Davidson", personaje: "Vince" },
+            { actor: "John C. Reilly", personaje: "Agente West" },
+            { actor: "Christian Slater", personaje: "Walton" },
+            { actor: "Tati Gabrielle", personaje: "Skyler" }
+        ]
+    },
     "rogue-one": {
         director: "Gareth Edwards",
         elenco: [
@@ -17854,6 +18020,23 @@ botonesFiltroPowell.forEach(boton => {
     });
 });
 inicializarFiltroTipoActor('seccion-glen-powell', 'btn-filtro-powell');
+
+const botonesFiltroKravitz = document.querySelectorAll('.btn-filtro-kravitz');
+botonesFiltroKravitz.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroKravitz.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        aplicarFiltroTipoYDecadaActor('seccion-zoe-kravitz', 'btn-filtro-kravitz');
+    });
+});
+inicializarFiltroTipoActor('seccion-zoe-kravitz', 'btn-filtro-kravitz');
+
+const btnVolverZoeKravitz = document.getElementById('btn-volver-zoe-kravitz');
+if (btnVolverZoeKravitz) {
+    btnVolverZoeKravitz.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-actores'));
+    });
+}
 
 const btnVolverGlenPowell = document.getElementById('btn-volver-glen-powell');
 if (btnVolverGlenPowell) {
@@ -21584,7 +21767,7 @@ const filmografiasGrilla = {
     "geoffrey rush": ["Green Lantern"],
     "michael clarke duncan": ["Green Lantern"],
     "salome jens": ["Green Lantern"],
-    "zoe kravitz": ["The Batman"],
+    "zoe kravitz": ["The Batman", "Kimi", "Caught Stealing", "High Fidelity", "The Studio"],
     "paul dano": ["The Batman"],
     "colin farrell": ["The Batman", "The Penguin"],
     "jayme lawson": ["The Batman"],
