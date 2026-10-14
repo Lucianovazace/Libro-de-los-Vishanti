@@ -24850,7 +24850,28 @@ const RECOPILA_OVNI = {
     "Batman: Un Mal Dia #2: Dos Caras": "Batman: One Bad Day - Two-Face (2023)",
     "Batman: Un Mal Dia #3: El Pinguino": "Batman: One Bad Day - The Penguin (2023)",
     "Batman: Un Mal Dia #4: Mr. Freeze": "Batman: One Bad Day - Mr. Freeze (2023)",
-    "Esenciales DC #25: ¡Invasión! (Ovni)": "Invasion! #1-3"
+    "Esenciales DC #25: ¡Invasión! (Ovni)": "Invasion! #1-3",
+    "Coleccion Spider-Man: Universo Araña #3: Spider-Man: Gamerverse": "Spider-Man: City at War #1-6",
+    "Coleccion Spider-Man: Universo Araña #4: Spider-Man: La Saga del Clon": "Spider-Man: The Clone Saga #1-6",
+    "Coleccion Spider-Man: Universo Araña #5: Spider-Verse: Segunda Parte": "The Amazing Spider-Man #10-11, Spider-Verse Team-Up #1-2, Spider-Man 2099 #6 y Scarlet Spiders #1",
+    "Coleccion Spider-Man: Universo Araña #6: Venom: Protector Letal": "Venom: Lethal Protector #1-6",
+    "Coleccion Spider-Man: Universo Araña #7: Spider-Verse: Tercera Parte": "The Amazing Spider-Man #12, Scarlet Spiders #2-3, Spider-Man 2099 #7 y Spider-Woman #1-2",
+    "Coleccion Spider-Man: Universo Araña #8: Spider-Man: 2099": "Spider-Man 2099 (1992) #1-3 y Spider-Man 2099 meets Spider-Man",
+    "Coleccion Spider-Man: Universo Araña #9: Spider-Verse: Conclusion": "The Amazing Spider-Man #14-15, Spider-Verse Team-Up #3, Spider-Man 2099 #8, Spider-Woman #3-4 y Spider-Verse #2",
+    "Coleccion Spider-Man: Universo Araña #10: Venom: Planeta de Simbiontes": "Amazing Spider-Man Super Special, Spider-Man Super Special, Venom Super Special, Spectacular Spider-Man Super Special y Web of Spider-Man Super Special (la página de Ovni no da los números)",
+    "Coleccion Spider-Man: Universo Araña #11: Guerreros Araña": "Web Warriors #1-5 y la historia complementaria de The Amazing Spider-Man (2015) #1",
+    "Coleccion Spider-Man: Universo Araña #12: Spider-Man: Dinastia M": "Spider-Man: House of M (2015) #1-5",
+    "Coleccion Spider-Man: Universo Araña #13: Spider-Man: ¿Que Pasaria Si...?": "What If? #1 (1977), #24, #46 y What If? Spider-Man House of M (2010)",
+    "Coleccion Spider-Man: Universo Araña #14: Spider-Noir": "Spider-Man: Noir #1-4",
+    "Coleccion Spider-Man: Universo Araña #15: Spider-Man: Reino": "Spider-Man: Reign #1-4",
+    "Coleccion Spider-Man: Universo Araña #16: La Muerte de Spider-Man": "Ultimate Spider-Man #156-160",
+    "Coleccion Spider-Man: Universo Araña #17: Spider-Men: Los Hombres Araña": "Spider-Men #1-5",
+    "Coleccion Spider-Man: Universo Araña #18: Venom: Primer Anfitrion": "Venom: First Host #1-5",
+    "Coleccion Spider-Man: Universo Araña #19: Isla Araña": "Spider-Island #1-5",
+    "Coleccion Spider-Man: Universo Araña #21: Spider-Verse: Zona de Guerra": "Spider-Verse #1-5",
+    "Coleccion Spider-Man: Universo Araña #22: Spider-Men II: ¿Quien es el otro Miles?": "Spider-Men II #1-5",
+    "Coleccion Spider-Man: Universo Araña #23: Spider-Gwen: Gran Poder": "Spider-Gwen (2015, v.2) #1-6",
+    "Coleccion Spider-Man: Universo Araña #24: Venomizados": "Venomized #1-5"
 };
 
 
