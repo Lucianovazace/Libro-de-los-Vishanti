@@ -688,6 +688,18 @@ const listaMedia = [
     { titulo: "Dope", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Película", fichaTecnicaId: "dope", poster: "https://image.tmdb.org/t/p/w500/n6u00imN7AX2NiyWUc5kTgHXmEf.jpg" },
     { titulo: "Insurgente", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Película", fichaTecnicaId: "insurgente", poster: "https://image.tmdb.org/t/p/original/7NxN2kJI1EsNrtMTuS6L7pHd6lg.jpg" },
     { titulo: "Mad Max: Fury Road", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Película", fichaTecnicaId: "mad-max-fury-road", poster: "https://image.tmdb.org/t/p/w220_and_h330_face/jcnebguIweSr16AaBOdzsUL4Dzl.jpg" },
+    // --- ZOË KRAVITZ, década de 2010 (2016-2018) ---
+    { titulo: "Leal", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Película", fichaTecnicaId: "leal", poster: "https://image.tmdb.org/t/p/original/cRqkY3tA3D21ymZg3mGjGkmbo4j.jpg" },
+    { titulo: "Vincent N Roxxy", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Película", fichaTecnicaId: "vincent-n-roxxy", poster: "https://image.tmdb.org/t/p/w500/pK5pEto2thTo8fRcSQIJc63IbSK.jpg" },
+    { titulo: "Adam Green's Aladdin", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Película", fichaTecnicaId: "adam-greens-aladdin", poster: "https://image.tmdb.org/t/p/w500/fESlhzujz9TrpGjKTrJXr9LUQfU.jpg" },
+    { titulo: "Animales Fantásticos y Dónde Encontrarlos", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Película", fichaTecnicaId: "animales-fantasticos-1", poster: "https://m.media-amazon.com/images/M/MV5BMjczYmNkYzctMDhmOC00YjFjLWE1ZjktNDVlMjZjODJhZGI0XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "The Lego Batman Movie", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Película", fichaTecnicaId: "lego-batman-movie", poster: "https://image.tmdb.org/t/p/original/5uweUhWe9obPJgpbPb3unHsKkK3.jpg" },
+    { titulo: "Gemini", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Película", fichaTecnicaId: "gemini-2017", poster: "https://image.tmdb.org/t/p/original/n1Ygs7CXW2QIwJTwEdzOdrtYkBj.jpg" },
+    { titulo: "Rough Night", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Película", fichaTecnicaId: "rough-night", poster: "https://image.tmdb.org/t/p/original/i66xbL1C6FEWDm2KoX11DHmP4Rz.jpg" },
+    { titulo: "Big Little Lies", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Serie", fichaTecnicaId: "big-little-lies", poster: "https://image.tmdb.org/t/p/original/3MaGqE20QWC9ZI7Ri6pyPiioL19.jpg" },
+    { titulo: "Kin", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Película", fichaTecnicaId: "kin-2018", poster: "https://image.tmdb.org/t/p/original/lOnvphyxNoEH9Z5DOouF6DGR8pH.jpg" },
+    { titulo: "Animales Fantásticos: Los Crímenes de Grindelwald", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Película", fichaTecnicaId: "animales-fantasticos-2", poster: "https://m.media-amazon.com/images/M/MV5BZGIyZjk5ODctNDg3MC00YTgyLThmYTAtNjZkNzk4Y2JhMDRhXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Spider-Man: Into the Spider-Verse", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Película", fichaTecnicaId: "spider-man-into-the-spider-verse", poster: "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22300%22%20height%3D%22450%22%3E%3Crect%20width%3D%22300%22%20height%3D%22450%22%20fill%3D%22%231b1f3b%22/%3E%3Crect%20x%3D%2212%22%20y%3D%2212%22%20width%3D%22276%22%20height%3D%22426%22%20fill%3D%22none%22%20stroke%3D%22%23e23636%22%20stroke-width%3D%224%22/%3E%3Ctext%20x%3D%22150%22%20y%3D%22215%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20font-weight%3D%22bold%22%20text-anchor%3D%22middle%22%3ESpider-Man%3A%3C/text%3E%3Ctext%20x%3D%22150%22%20y%3D%22250%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%22%20font-size%3D%2222%22%20text-anchor%3D%22middle%22%3EInto%20the%20Spider-Verse%3C/text%3E%3C/svg%3E" },
 
     // --- GLEN POWELL ---
     { titulo: "Apollo 10 ½: A Space Age Childhood", categoria: "glen-powell", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/ms3qa9LH9kosaGCSe22NJ7fDPv9.jpg" },
@@ -10685,6 +10697,105 @@ if (btnVolverFichaKravitzmadmaxfuryroad) {
         cambiarSeccion(seccionOrigen || document.getElementById('seccion-zoe-kravitz'));
     });
 }
+const btnVolverFichaKravitzleal = document.getElementById('btn-volver-ficha-leal');
+if (btnVolverFichaKravitzleal) {
+    btnVolverFichaKravitzleal.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-leal');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-zoe-kravitz'));
+    });
+}
+const btnVolverFichaKravitzvincentnroxxy = document.getElementById('btn-volver-ficha-vincent-n-roxxy');
+if (btnVolverFichaKravitzvincentnroxxy) {
+    btnVolverFichaKravitzvincentnroxxy.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-vincent-n-roxxy');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-zoe-kravitz'));
+    });
+}
+const btnVolverFichaKravitzadamgreensaladdin = document.getElementById('btn-volver-ficha-adam-greens-aladdin');
+if (btnVolverFichaKravitzadamgreensaladdin) {
+    btnVolverFichaKravitzadamgreensaladdin.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-adam-greens-aladdin');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-zoe-kravitz'));
+    });
+}
+const btnVolverFichaKravitzanimalesfantasticos1 = document.getElementById('btn-volver-ficha-animales-fantasticos-1');
+if (btnVolverFichaKravitzanimalesfantasticos1) {
+    btnVolverFichaKravitzanimalesfantasticos1.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-animales-fantasticos-1');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-zoe-kravitz'));
+    });
+}
+const btnVolverFichaKravitzlegobatmanmovie = document.getElementById('btn-volver-ficha-lego-batman-movie');
+if (btnVolverFichaKravitzlegobatmanmovie) {
+    btnVolverFichaKravitzlegobatmanmovie.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-lego-batman-movie');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-zoe-kravitz'));
+    });
+}
+const btnVolverFichaKravitzgemini2017 = document.getElementById('btn-volver-ficha-gemini-2017');
+if (btnVolverFichaKravitzgemini2017) {
+    btnVolverFichaKravitzgemini2017.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-gemini-2017');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-zoe-kravitz'));
+    });
+}
+const btnVolverFichaKravitzroughnight = document.getElementById('btn-volver-ficha-rough-night');
+if (btnVolverFichaKravitzroughnight) {
+    btnVolverFichaKravitzroughnight.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-rough-night');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-zoe-kravitz'));
+    });
+}
+const btnVolverFichaKravitzbiglittlelies = document.getElementById('btn-volver-ficha-big-little-lies');
+if (btnVolverFichaKravitzbiglittlelies) {
+    btnVolverFichaKravitzbiglittlelies.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-big-little-lies');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-zoe-kravitz'));
+    });
+}
+const btnVolverFichaKravitzkin2018 = document.getElementById('btn-volver-ficha-kin-2018');
+if (btnVolverFichaKravitzkin2018) {
+    btnVolverFichaKravitzkin2018.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-kin-2018');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-zoe-kravitz'));
+    });
+}
+const btnVolverFichaKravitzanimalesfantasticos2 = document.getElementById('btn-volver-ficha-animales-fantasticos-2');
+if (btnVolverFichaKravitzanimalesfantasticos2) {
+    btnVolverFichaKravitzanimalesfantasticos2.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-animales-fantasticos-2');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-zoe-kravitz'));
+    });
+}
+const btnVolverFichaKravitzspidermanintothespiderverse = document.getElementById('btn-volver-ficha-spider-man-into-the-spider-verse');
+if (btnVolverFichaKravitzspidermanintothespiderverse) {
+    btnVolverFichaKravitzspidermanintothespiderverse.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-spider-man-into-the-spider-verse');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-zoe-kravitz'));
+    });
+}
 const btnVolverFichaTheAcolyte = document.getElementById('btn-volver-ficha-the-acolyte');
 if (btnVolverFichaTheAcolyte) {
     btnVolverFichaTheAcolyte.addEventListener('click', () => {
@@ -14406,6 +14517,17 @@ const FICHAS_TECNICAS_TITULOS = {
     "sw-episodio-8": "Star Wars: Episodio VIII - Los Últimos Jedi",
     "sw-episodio-9": "Star Wars: Episodio IX - El Ascenso de Skywalker",
     "rogue-one": "Rogue One: A Star Wars Story",
+    "leal": "Leal",
+    "vincent-n-roxxy": "Vincent N Roxxy",
+    "adam-greens-aladdin": "Adam Green's Aladdin",
+    "animales-fantasticos-1": "Animales Fantásticos y Dónde Encontrarlos",
+    "lego-batman-movie": "The Lego Batman Movie",
+    "gemini-2017": "Gemini",
+    "rough-night": "Rough Night",
+    "big-little-lies": "Big Little Lies",
+    "kin-2018": "Kin",
+    "animales-fantasticos-2": "Animales Fantásticos: Los Crímenes de Grindelwald",
+    "spider-man-into-the-spider-verse": "Spider-Man: Into the Spider-Verse",
     "californication": "Californication",
     "after-earth": "After Earth",
     "the-boy-who-smells-like-fish": "The Boy Who Smells Like Fish",
@@ -16717,6 +16839,134 @@ const REPARTO_PELICULAS = {
             { actor: "Nicholas Hoult", personaje: "Nux" },
             { actor: "Hugh Keays-Byrne", personaje: "Immortan Joe" },
             { actor: "Zoë Kravitz", personaje: "Toast la Sabia" }
+        ]
+    },
+    "leal": {
+        director: "Robert Schwentke",
+        elenco: [
+            { actor: "Shailene Woodley", personaje: "Tris" },
+            { actor: "Theo James", personaje: "Cuatro" },
+            { actor: "Zoë Kravitz", personaje: "Christina" },
+            { actor: "Miles Teller", personaje: "Peter" },
+            { actor: "Jeff Daniels", personaje: "David" },
+            { actor: "Naomi Watts", personaje: "Evelyn" },
+            { actor: "Ansel Elgort", personaje: "Caleb" }
+        ]
+    },
+    "vincent-n-roxxy": {
+        director: "Gary Michael Schultz",
+        elenco: [
+            { actor: "Emile Hirsch", personaje: "Vincent" },
+            { actor: "Zoë Kravitz", personaje: "Roxxy" },
+            { actor: "Emory Cohen", personaje: "J.C." },
+            { actor: "Zoey Deutch", personaje: "Kate" },
+            { actor: "Kid Cudi", personaje: "Suga" },
+            { actor: "Jason Mitchell", personaje: "Cordell" }
+        ]
+    },
+    "adam-greens-aladdin": {
+        director: "Adam Green",
+        elenco: [
+            { actor: "Adam Green", personaje: "Aladdin" },
+            { actor: "Alia Shawkat", personaje: "Emily" },
+            { actor: "Natasha Lyonne", personaje: "Mamá" },
+            { actor: "Macaulay Culkin", personaje: "Ralph" },
+            { actor: "Jack Dishel", personaje: "Tío Gary / El Sultán" },
+            { actor: "Zoë Kravitz", personaje: "Minera con la lámpara" },
+            { actor: "Penn Badgley", personaje: "Príncipe de Mónaco" }
+        ]
+    },
+    "animales-fantasticos-1": {
+        director: "David Yates",
+        elenco: [
+            { actor: "Eddie Redmayne", personaje: "Newt Scamander" },
+            { actor: "Katherine Waterston", personaje: "Tina Goldstein" },
+            { actor: "Dan Fogler", personaje: "Jacob Kowalski" },
+            { actor: "Alison Sudol", personaje: "Queenie Goldstein" },
+            { actor: "Colin Farrell", personaje: "Percival Graves" },
+            { actor: "Zoë Kravitz", personaje: "Leta Lestrange (aparición mínima)" }
+        ]
+    },
+    "lego-batman-movie": {
+        director: "Chris McKay",
+        elenco: [
+            { actor: "Will Arnett", personaje: "Batman / Bruce Wayne (voz)" },
+            { actor: "Zoë Kravitz", personaje: "Catwoman (voz)" },
+            { actor: "Michael Cera", personaje: "Robin (voz)" },
+            { actor: "Rosario Dawson", personaje: "Batichica (voz)" },
+            { actor: "Ralph Fiennes", personaje: "Alfred (voz)" },
+            { actor: "Zach Galifianakis", personaje: "Joker (voz)" }
+        ]
+    },
+    "gemini-2017": {
+        director: "Aaron Katz",
+        elenco: [
+            { actor: "Lola Kirke", personaje: "Jill LaBeau" },
+            { actor: "Zoë Kravitz", personaje: "Heather Anderson" },
+            { actor: "Greta Lee", personaje: "Tracy" },
+            { actor: "John Cho", personaje: "Detective Edward Ahn" },
+            { actor: "Reeve Carney", personaje: "Devin" },
+            { actor: "Michelle Forbes", personaje: "Jamie Finnegan" }
+        ]
+    },
+    "rough-night": {
+        director: "Lucia Aniello",
+        elenco: [
+            { actor: "Scarlett Johansson", personaje: "Jessica \"Jess\" Thayer" },
+            { actor: "Kate McKinnon", personaje: "Pippa" },
+            { actor: "Jillian Bell", personaje: "Alice" },
+            { actor: "Ilana Glazer", personaje: "Frankie" },
+            { actor: "Zoë Kravitz", personaje: "Blair" },
+            { actor: "Demi Moore", personaje: "Lea" }
+        ]
+    },
+    "big-little-lies": {
+        director: "David E. Kelley (creador)",
+        elenco: [
+            { actor: "Nicole Kidman", personaje: "Celeste Wright" },
+            { actor: "Reese Witherspoon", personaje: "Madeline Martha Mackenzie" },
+            { actor: "Shailene Woodley", personaje: "Jane Chapman" },
+            { actor: "Laura Dern", personaje: "Renata Klein" },
+            { actor: "Zoë Kravitz", personaje: "Bonnie Carlson" },
+            { actor: "Alexander Skarsgård", personaje: "Perry Wright" },
+            { actor: "Adam Scott", personaje: "Ed Mackenzie" },
+            { actor: "Meryl Streep", personaje: "Mary Louise Wright (temporada 2)" }
+        ]
+    },
+    "kin-2018": {
+        director: "Jonathan y Josh Baker",
+        elenco: [
+            { actor: "Myles Truitt", personaje: "Elijah \"Eli\" Solinski" },
+            { actor: "Jack Reynor", personaje: "Jimmy Solinski" },
+            { actor: "Zoë Kravitz", personaje: "Milly" },
+            { actor: "James Franco", personaje: "Taylor Balik" },
+            { actor: "Dennis Quaid", personaje: "Hal Solinski" },
+            { actor: "Carrie Coon", personaje: "Morgan Hunter" }
+        ]
+    },
+    "animales-fantasticos-2": {
+        director: "David Yates",
+        elenco: [
+            { actor: "Eddie Redmayne", personaje: "Newt Scamander" },
+            { actor: "Jude Law", personaje: "Albus Dumbledore" },
+            { actor: "Johnny Depp", personaje: "Gellert Grindelwald" },
+            { actor: "Zoë Kravitz", personaje: "Leta Lestrange" },
+            { actor: "Katherine Waterston", personaje: "Tina Goldstein" },
+            { actor: "Dan Fogler", personaje: "Jacob Kowalski" },
+            { actor: "Ezra Miller", personaje: "Credence Barebone" },
+            { actor: "Callum Turner", personaje: "Theseus Scamander" }
+        ]
+    },
+    "spider-man-into-the-spider-verse": {
+        director: "Bob Persichetti, Peter Ramsey y Rodney Rothman",
+        elenco: [
+            { actor: "Shameik Moore", personaje: "Miles Morales (voz)" },
+            { actor: "Jake Johnson", personaje: "Peter B. Parker (voz)" },
+            { actor: "Hailee Steinfeld", personaje: "Gwen Stacey (voz)" },
+            { actor: "Zoë Kravitz", personaje: "Mary Jane (voz)" },
+            { actor: "Mahershala Ali", personaje: "Aaron Davis / Prowler (voz)" },
+            { actor: "Liev Schreiber", personaje: "Kingpin (voz)" },
+            { actor: "Nicolas Cage", personaje: "Spider-Man Noir (voz)" }
         ]
     },
     "rogue-one": {
@@ -22061,7 +22311,7 @@ const filmografiasGrilla = {
     "geoffrey rush": ["Green Lantern"],
     "michael clarke duncan": ["Green Lantern"],
     "salome jens": ["Green Lantern"],
-    "zoe kravitz": ["The Batman", "Kimi", "Caught Stealing", "High Fidelity", "The Studio", "Twelve", "It's Kind of a Funny Story", "Beware the Gonzo", "Yelling to the Sky", "X-Men: First Class", "Californication", "After Earth", "Divergente", "Insurgente", "The Road Within", "Good Kill", "Dope", "Mad Max: Fury Road"],
+    "zoe kravitz": ["The Batman", "Kimi", "Caught Stealing", "High Fidelity", "The Studio", "Twelve", "It's Kind of a Funny Story", "Beware the Gonzo", "Yelling to the Sky", "X-Men: First Class", "Californication", "After Earth", "Divergente", "Insurgente", "The Road Within", "Good Kill", "Dope", "Mad Max: Fury Road", "Leal", "Vincent N Roxxy", "Adam Green's Aladdin", "Animales Fantásticos y Dónde Encontrarlos", "The Lego Batman Movie", "Gemini", "Rough Night", "Big Little Lies", "Kin", "Animales Fantásticos: Los Crímenes de Grindelwald", "Spider-Man: Into the Spider-Verse"],
     "paul dano": ["The Batman"],
     "colin farrell": ["The Batman", "The Penguin"],
     "jayme lawson": ["The Batman"],
