@@ -672,6 +672,11 @@ const listaMedia = [
     { titulo: "The Studio", categoria: "zoe-kravitz", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "the-studio", poster: "https://image.tmdb.org/t/p/original/bM8dzMZp7WxaLhhdl3d08M4hv3z.jpg" },
     { titulo: "Caught Stealing", categoria: "zoe-kravitz", subtipo: "2020", tipo: "Película", fichaTecnicaId: "caught-stealing", poster: "https://image.tmdb.org/t/p/original/5Bhw0H5eajUGDTXsQkLdCme1wTK.jpg" },
     { titulo: "How to Rob a Bank", categoria: "zoe-kravitz", subtipo: "2020", tipo: "Película", fichaTecnicaId: "how-to-rob-a-bank", poster: "https://m.media-amazon.com/images/M/MV5BODY5YWIzZTAtMzA5OC00MDgwLTgxZjQtZGIwZTg2YTk3YWE1XkEyXkFqcGc@._V1_.jpg" },
+    // --- ZOË KRAVITZ, década de 2010 ---
+    { titulo: "Twelve", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Película", fichaTecnicaId: "twelve", poster: "https://image.tmdb.org/t/p/w500/cGcoACE6AQQWekvHMr4TVd5KOpH.jpg" },
+    { titulo: "It's Kind of a Funny Story", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Película", fichaTecnicaId: "its-kind-of-a-funny-story", poster: "https://image.tmdb.org/t/p/original/3IJRSjetWo6I84WdYmCr8ZETFYD.jpg" },
+    { titulo: "Beware the Gonzo", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Película", fichaTecnicaId: "beware-the-gonzo", poster: "https://m.media-amazon.com/images/M/MV5BMTk0NDE3MDMyNF5BMl5BanBnXkFtZTcwNTgzMDQ0Ng@@._V1_.jpg" },
+    { titulo: "Yelling to the Sky", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Película", fichaTecnicaId: "yelling-to-the-sky", poster: "https://image.tmdb.org/t/p/w500/qfAYPc5ZRnPkPBSZMvepbno8XNC.jpg" },
 
     // --- GLEN POWELL ---
     { titulo: "Apollo 10 ½: A Space Age Childhood", categoria: "glen-powell", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/ms3qa9LH9kosaGCSe22NJ7fDPv9.jpg" },
@@ -10552,6 +10557,42 @@ if (btnVolverFichaKravitzhowtorobabank) {
         cambiarSeccion(seccionOrigen || document.getElementById('seccion-zoe-kravitz'));
     });
 }
+const btnVolverFichaKravitztwelve = document.getElementById('btn-volver-ficha-twelve');
+if (btnVolverFichaKravitztwelve) {
+    btnVolverFichaKravitztwelve.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-twelve');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-zoe-kravitz'));
+    });
+}
+const btnVolverFichaKravitzitskindofafunnystory = document.getElementById('btn-volver-ficha-its-kind-of-a-funny-story');
+if (btnVolverFichaKravitzitskindofafunnystory) {
+    btnVolverFichaKravitzitskindofafunnystory.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-its-kind-of-a-funny-story');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-zoe-kravitz'));
+    });
+}
+const btnVolverFichaKravitzbewarethegonzo = document.getElementById('btn-volver-ficha-beware-the-gonzo');
+if (btnVolverFichaKravitzbewarethegonzo) {
+    btnVolverFichaKravitzbewarethegonzo.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-beware-the-gonzo');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-zoe-kravitz'));
+    });
+}
+const btnVolverFichaKravitzyellingtothesky = document.getElementById('btn-volver-ficha-yelling-to-the-sky');
+if (btnVolverFichaKravitzyellingtothesky) {
+    btnVolverFichaKravitzyellingtothesky.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-yelling-to-the-sky');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-zoe-kravitz'));
+    });
+}
 const btnVolverFichaTheAcolyte = document.getElementById('btn-volver-ficha-the-acolyte');
 if (btnVolverFichaTheAcolyte) {
     btnVolverFichaTheAcolyte.addEventListener('click', () => {
@@ -14273,6 +14314,10 @@ const FICHAS_TECNICAS_TITULOS = {
     "sw-episodio-8": "Star Wars: Episodio VIII - Los Últimos Jedi",
     "sw-episodio-9": "Star Wars: Episodio IX - El Ascenso de Skywalker",
     "rogue-one": "Rogue One: A Star Wars Story",
+    "twelve": "Twelve",
+    "its-kind-of-a-funny-story": "It's Kind of a Funny Story",
+    "beware-the-gonzo": "Beware the Gonzo",
+    "yelling-to-the-sky": "Yelling to the Sky",
     "high-fidelity-2020": "High Fidelity",
     "viena-and-the-fantomes": "Viena and the Fantomes",
     "kimi": "Kimi",
@@ -16423,6 +16468,54 @@ const REPARTO_PELICULAS = {
             { actor: "John C. Reilly", personaje: "Agente West" },
             { actor: "Christian Slater", personaje: "Walton" },
             { actor: "Tati Gabrielle", personaje: "Skyler" }
+        ]
+    },
+    "twelve": {
+        director: "Joel Schumacher",
+        elenco: [
+            { actor: "Chace Crawford", personaje: "Michael \"White Mike\"" },
+            { actor: "Emma Roberts", personaje: "Molly Norton" },
+            { actor: "Zoë Kravitz", personaje: "Gabby" },
+            { actor: "Rory Culkin", personaje: "Chris Kenton" },
+            { actor: "Curtis \"50 Cent\" Jackson", personaje: "Lionel" },
+            { actor: "Emily Meade", personaje: "Jessica Brayson" },
+            { actor: "Jeremy Allen White", personaje: "Charlie" },
+            { actor: "Philip Ettinger", personaje: "Hunter McCulloch" },
+            { actor: "Kiefer Sutherland", personaje: "Narrador" }
+        ]
+    },
+    "its-kind-of-a-funny-story": {
+        director: "Anna Boden y Ryan Fleck",
+        elenco: [
+            { actor: "Keir Gilchrist", personaje: "Craig Gilner" },
+            { actor: "Zach Galifianakis", personaje: "Bobby" },
+            { actor: "Emma Roberts", personaje: "Noelle" },
+            { actor: "Zoë Kravitz", personaje: "Nia" },
+            { actor: "Viola Davis", personaje: "Dra. Eden Minerva" },
+            { actor: "Lauren Graham", personaje: "Lynn Gilner" },
+            { actor: "Jim Gaffigan", personaje: "George Gilner" }
+        ]
+    },
+    "beware-the-gonzo": {
+        director: "Bryan Goluboff",
+        elenco: [
+            { actor: "Ezra Miller", personaje: "Eddie \"Gonzo\" Gilman" },
+            { actor: "Zoë Kravitz", personaje: "Evie Wallace" },
+            { actor: "Griffin Newman", personaje: "Rob Becker" },
+            { actor: "Jesse McCartney", personaje: "Gavin Reilly" },
+            { actor: "Amy Sedaris", personaje: "Diane Gilman" },
+            { actor: "Campbell Scott", personaje: "Arthur Gilman" }
+        ]
+    },
+    "yelling-to-the-sky": {
+        director: "Victoria Mahoney",
+        elenco: [
+            { actor: "Zoë Kravitz", personaje: "Sweetness O'Hara" },
+            { actor: "Jason Clarke", personaje: "Gordon O'Hara" },
+            { actor: "Antonique Smith", personaje: "Ola O'Hara" },
+            { actor: "Gabourey Sidibe", personaje: "Latonya Williams" },
+            { actor: "Tim Blake Nelson", personaje: "Coleman" },
+            { actor: "Shareeka Epps", personaje: "Fatima Harris" }
         ]
     },
     "rogue-one": {
@@ -21767,7 +21860,7 @@ const filmografiasGrilla = {
     "geoffrey rush": ["Green Lantern"],
     "michael clarke duncan": ["Green Lantern"],
     "salome jens": ["Green Lantern"],
-    "zoe kravitz": ["The Batman", "Kimi", "Caught Stealing", "High Fidelity", "The Studio"],
+    "zoe kravitz": ["The Batman", "Kimi", "Caught Stealing", "High Fidelity", "The Studio", "Twelve", "It's Kind of a Funny Story", "Beware the Gonzo", "Yelling to the Sky"],
     "paul dano": ["The Batman"],
     "colin farrell": ["The Batman", "The Penguin"],
     "jayme lawson": ["The Batman"],
