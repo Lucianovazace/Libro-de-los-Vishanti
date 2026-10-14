@@ -24871,7 +24871,10 @@ const RECOPILA_OVNI = {
     "Coleccion Spider-Man: Universo Araña #21: Spider-Verse: Zona de Guerra": "Spider-Verse #1-5",
     "Coleccion Spider-Man: Universo Araña #22: Spider-Men II: ¿Quien es el otro Miles?": "Spider-Men II #1-5",
     "Coleccion Spider-Man: Universo Araña #23: Spider-Gwen: Gran Poder": "Spider-Gwen (2015, v.2) #1-6",
-    "Coleccion Spider-Man: Universo Araña #24: Venomizados": "Venomized #1-5"
+    "Coleccion Spider-Man: Universo Araña #24: Venomizados": "Venomized #1-5",
+    "Secret Wars #1: Volumen 1": "Secret Wars #0-3, Battleworld #1-2 y Secret Wars Journal #1 (según Goodreads; no confirmado en Ovni)",
+    "Secret Wars #2: Volumen 2": "Secret Wars #4-6, Battleworld #3 y Secret Wars Journal #2-3 (según Goodreads; no confirmado en Ovni)",
+    "Secret Wars #16:  Volumen 3": "Secret Wars #7-9 y Secret Wars Journal #4-5 (según Goodreads; no confirmado en Ovni)"
 };
 
 
