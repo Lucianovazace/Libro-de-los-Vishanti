@@ -273,7 +273,7 @@ const listaMedia = [
     { titulo: "Star Wars: Episodio II - El Ataque de los Clones", categoria: "sw-liveaction", crono: 3, tipo: "Película", fichaTecnicaId: "sw-episodio-2", poster: "https://m.media-amazon.com/images/I/61nFfWio-sL.AC_UF894,1000_QL80.jpg" },
     { titulo: "Star Wars: Episodio III - La Venganza de los Sith", categoria: "sw-liveaction", crono: 6, tipo: "Película", fichaTecnicaId: "sw-episodio-3", poster: "https://cdng.europosters.eu/pod_public/1300/266305.jpg" },
     { titulo: "Solo: A Star Wars Story", categoria: "sw-liveaction", crono: 8, tipo: "Película", fichaTecnicaId: "solo-star-wars-story", poster: "https://lumiere-a.akamaihd.net/v1/images/solo-theatrical-poster_f98a86eb.jpeg?region=0,0,864,1280" },
-    { titulo: "Obi-Wan Kenobi", categoria: "sw-liveaction", crono: 10, tipo: "Serie", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Ea5Zhl73NttD-fuEjBpy5zvc0CHgbAK65cdKieScq9sYL53sOtIFfaMO&s=10" },
+    { titulo: "Obi-Wan Kenobi", categoria: "sw-liveaction", crono: 10, tipo: "Serie", fichaTecnicaId: "obi-wan-kenobi", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Ea5Zhl73NttD-fuEjBpy5zvc0CHgbAK65cdKieScq9sYL53sOtIFfaMO&s=10" },
     { titulo: "Andor", categoria: "sw-liveaction", crono: 12, tipo: "Serie", poster: "https://lumiere-a.akamaihd.net/v1/images/andor-character-poster-cassian-andor_cacda283.jpeg" },
     { titulo: "Rogue One: A Star Wars Story", categoria: "sw-liveaction", crono: 13, tipo: "Película", fichaTecnicaId: "rogue-one", poster: "https://im.ziffdavisinternational.com/ign_es/screenshot/default/cnamojjumaqgodbjpg-large_1nv3.jpg" },
     { titulo: "Star Wars: Episodio IV - Una Nueva Esperanza", categoria: "sw-liveaction", crono: 14, tipo: "Película", fichaTecnicaId: "sw-episodio-4", poster: "https://cinemaposters.com.ar/wp-content/uploads/2020/09/Star-Wars-Episodio-IV-Una-Nueva-Esperanza-Cinema-Posters.jpg" },
@@ -10459,6 +10459,15 @@ if (btnVolverFichaSwMaulShadowLord) {
         cambiarSeccion(seccionOrigen || document.getElementById('seccion-sw-animacion'));
     });
 }
+const btnVolverFichaObiWan = document.getElementById('btn-volver-ficha-obi-wan-kenobi');
+if (btnVolverFichaObiWan) {
+    btnVolverFichaObiWan.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-obi-wan-kenobi');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-sw-liveaction'));
+    });
+}
 const btnVolverFichaTheAcolyte = document.getElementById('btn-volver-ficha-the-acolyte');
 if (btnVolverFichaTheAcolyte) {
     btnVolverFichaTheAcolyte.addEventListener('click', () => {
@@ -14180,6 +14189,7 @@ const FICHAS_TECNICAS_TITULOS = {
     "sw-episodio-8": "Star Wars: Episodio VIII - Los Últimos Jedi",
     "sw-episodio-9": "Star Wars: Episodio IX - El Ascenso de Skywalker",
     "rogue-one": "Rogue One: A Star Wars Story",
+    "obi-wan-kenobi": "Obi-Wan Kenobi",
     "solo-star-wars-story": "Solo: A Star Wars Story",
     "sw-tales-of-the-underworld": "Star Wars: Tales of the Underworld",
     "sw-maul-shadow-lord": "Maul: Shadow Lord",
@@ -16233,6 +16243,20 @@ const REPARTO_PELICULAS = {
             { actor: "Dennis Haysbert", personaje: "Maestro Eeko-Dio Daki (voz)" },
             { actor: "Gideon Adlon", personaje: "Devon Izara (voz)" },
             { actor: "Vanessa Marshall", personaje: "Rook Kast (voz)" }
+        ]
+    },
+    "obi-wan-kenobi": {
+        director: "Deborah Chow (directora)",
+        elenco: [
+            { actor: "Ewan McGregor", personaje: "Obi-Wan Kenobi" },
+            { actor: "Hayden Christensen", personaje: "Darth Vader" },
+            { actor: "Moses Ingram", personaje: "Reva Sevander / Tercera Hermana" },
+            { actor: "Vivien Lyra Blair", personaje: "Leia Organa" },
+            { actor: "Joel Edgerton", personaje: "Owen Lars" },
+            { actor: "Bonnie Piesse", personaje: "Beru Lars" },
+            { actor: "Rupert Friend", personaje: "Gran Inquisidor" },
+            { actor: "Indira Varma", personaje: "Tala Durith" },
+            { actor: "Kumail Nanjiani", personaje: "Haja Fjord" }
         ]
     },
     "rogue-one": {
