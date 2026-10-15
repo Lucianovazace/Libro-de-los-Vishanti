@@ -26055,6 +26055,59 @@ const CON_CATALOGOS = [
     { clave: 'los Eternos', lista: () => PERSONAJES_MARVEL_ETERNOS, nivel: 'dificil' },
     { clave: 'los Cuatro Fantásticos', lista: () => PERSONAJES_MARVEL_CUATRO_FANTASTICOS, nivel: 'medio', soloTipos: ['Villano'] }
 ];
+// Grupos temáticos armados a mano (no salen de los catálogos). Cada miembro: [nombre, nivel(0 fácil,1 medio,2 difícil), alias opcional para evitar duplicados].
+// incompat: títulos de otros grupos con los que se solaparía demasiado (no salen en el mismo tablero).
+const CON_TEMAS = [
+    // ---- Lugares y mundos
+    { t: 'Ciudades de DC', u: 'DC', m: [['Gotham', 0], ['Metrópolis', 0], ['Ciudad Central', 1], ['Star City', 1], ['Smallville', 0], ['Bludhaven', 1], ['Coast City', 1], ['Keystone', 2], ['Themyscira', 1], ['Ciudad Fortuna', 2]] },
+    { t: 'Lugares de Marvel', u: 'Marvel', m: [['Wakanda', 0], ['Latveria', 1], ['Genosha', 1], ['Asgard', 0], ['Attilan', 2], ['Madripoor', 2], ['Sokovia', 1], ['Tierra Salvaje', 2], ['Atlantis', 1], ['Knowhere', 1]] },
+    { t: 'Planetas de DC', u: 'DC', m: [['Krypton', 0], ['Oa', 1], ['Apokolips', 1], ['Thanagar', 2], ['Rann', 2], ['Daxam', 2], ['Tamaran', 2], ['Nuevo Génesis', 2]] },
+    { t: 'Planetas de Marvel', u: 'Marvel', m: [['Titán', 0], ['Xandar', 1], ['Sakaar', 1], ['Hala', 2], ['Vormir', 1], ['Morag', 2], ['Ego', 1], ['Contraxia', 2]] },
+    { t: 'Razas alienígenas de Marvel', u: 'Marvel', m: [['Kree', 0], ['Skrull', 0], ['Chitauri', 1], ['Shi\'ar', 2], ['Badoon', 2], ['Celestiales', 1], ['Desviantes', 2], ['Acólitos de Thanos', 2]] },
+    { t: 'Pueblos y razas de DC', u: 'DC', m: [['Kryptonianos', 0], ['Amazonas', 0], ['Atlantes', 1], ['Marcianos', 1], ['Tamaranianos', 2], ['Thanagarianos', 2], ['Daxamitas', 2], ['Dominadores', 2]] },
+    // ---- Objetos
+    { t: 'Gemas del Infinito', u: 'Marvel', m: [['Gema de la Mente', 0], ['Gema del Poder', 0], ['Gema del Alma', 0], ['Gema del Tiempo', 0], ['Gema del Espacio', 0], ['Gema de la Realidad', 0]] },
+    { t: 'Armas y objetos de héroes', u: 'Mixto', m: [['Mjolnir', 0], ['Batarang', 0], ['Lazo de la Verdad', 0], ['Escudo del Capitán América', 0], ['Garras de adamantium', 1], ['Stormbreaker', 1], ['Anillo de Linterna', 0], ['Reactor Arc', 1], ['Tridente de Aquaman', 1], ['Ojo de Agamotto', 2]] },
+    { t: 'Vehículos de héroes', u: 'Mixto', m: [['Batimóvil', 0], ['Quinjet', 1], ['Helicarrier', 1], ['Batiala', 1], ['Avión Invisible', 1], ['Blackbird', 2], ['Bat-Pod', 2], ['Fantasticar', 2]] },
+    { t: 'Bases y guaridas', u: 'Mixto', m: [['Batcueva', 0], ['Fortaleza de la Soledad', 0], ['Torre de los Vengadores', 0], ['Mansión X', 0], ['Baxter Building', 1], ['Sanctum Sanctorum', 1], ['Atalaya de la Liga', 2], ['Torre Stark', 1]] },
+    // ---- Apellidos e identidades
+    { t: 'Apellidos civiles de héroes Marvel', u: 'Marvel', m: [['Parker', 0, 'Peter Parker'], ['Stark', 0, 'Tony Stark'], ['Banner', 0, 'Bruce Banner'], ['Rogers', 0, 'Steve Rogers'], ['Murdock', 1, 'Matt Murdock'], ['Castle', 1, 'Frank Castle'], ['Barton', 1, 'Clint Barton'], ['Strange', 1, 'Stephen Strange'], ['Romanoff', 1, 'Natasha Romanoff'], ['Pym', 2, 'Hank Pym'], ['Maximoff', 2, 'Wanda Maximoff']] },
+    { t: 'Apellidos civiles de héroes DC', u: 'DC', m: [['Wayne', 0, 'Bruce Wayne'], ['Kent', 0, 'Clark Kent'], ['Allen', 1, 'Barry Allen'], ['Jordan', 1, 'Hal Jordan'], ['Prince', 1, 'Diana Prince'], ['Queen', 1, 'Oliver Queen'], ['Curry', 2, 'Arthur Curry'], ['Stone', 2, 'Victor Stone'], ['Grayson', 1, 'Dick Grayson'], ['Kyle', 2, 'Selina Kyle']], incompat: ['Villanos de Gotham'] },
+    { t: 'Han sido Robin', u: 'DC', m: [['Dick Grayson', 0], ['Jason Todd', 1], ['Tim Drake', 1], ['Damian Wayne', 1], ['Stephanie Brown', 2], ['Carrie Kelley', 2]], incompat: ['Batifamilia', 'Jóvenes Titanes', 'Compañeros juveniles (sidekicks)'] },
+    // ---- Prensa
+    { t: 'Trabajan en el Daily Planet', u: 'DC', m: [['Lois Lane', 0], ['Jimmy Olsen', 0], ['Perry White', 1], ['Clark Kent', 0, 'Superman'], ['Cat Grant', 2], ['Steve Lombard', 2]], incompat: ['Familia Superman', 'Villanos de Superman', 'Krypton'] },
+    { t: 'Trabajan en el Daily Bugle', u: 'Marvel', m: [['J. Jonah Jameson', 0], ['Betty Brant', 1], ['Robbie Robertson', 1], ['Ben Urich', 1], ['Eddie Brock', 1], ['Peter Parker', 0, 'Spider-Man'], ['Phil Urich', 2]], incompat: ['Universo Spider-Man', 'Aliados de Spider-Man', 'Arañas del Multiverso', 'Simbiontes'] },
+    // ---- Amores
+    { t: 'Amores de Peter Parker', u: 'Marvel', m: [['Mary Jane Watson', 0], ['Gwen Stacy', 0], ['Felicia Hardy', 1, 'Gata Negra'], ['Liz Allan', 2], ['Betty Brant', 2], ['Silk', 2, 'Cindy Moon']], incompat: ['Universo Spider-Man', 'Aliados de Spider-Man', 'Arañas del Multiverso', 'Trabajan en el Daily Bugle'] },
+    { t: 'Amores de Bruce Wayne', u: 'DC', m: [['Selina Kyle', 0, 'Catwoman'], ['Talia al Ghul', 1], ['Vicki Vale', 1], ['Silver St. Cloud', 2], ['Rachel Dawes', 1], ['Julie Madison', 2]], incompat: ['Villanos de Gotham', 'Liga de Asesinos', 'Batifamilia', 'Aves de Presa'] },
+    // ---- Nombres con animal
+    { t: 'Héroes con nombre de bicho', u: 'Mixto', m: [['Spider-Man', 0], ['Ant-Man', 0], ['Avispa', 0], ['Blue Beetle', 1], ['Mantis', 1], ['Black Widow', 0], ['Firefly', 2]], incompat: ['Universo Spider-Man', 'Arañas del Multiverso', 'Vengadores'] },
+    { t: 'Héroes con nombre de ave', u: 'Mixto', m: [['Falcon', 0], ['Ojo de Halcón', 0, 'Hawkeye'], ['Hawkman', 1], ['Robin', 0], ['Black Canary', 1], ['Raven', 1], ['Phoenix', 1], ['Nightwing', 2, 'Dick Grayson']], incompat: ['Batifamilia', 'Jóvenes Titanes', 'Han sido Robin', 'Familia Green Arrow'] },
+    { t: 'Felinos', u: 'Mixto', m: [['Black Panther', 0], ['Catwoman', 0], ['Tigra', 1], ['Cheetah', 1], ['Wildcat', 2], ['Gata Negra', 1], ['Puma', 2], ['Sabretooth', 1]], incompat: ['Amores de Bruce Wayne', 'Villanos de Gotham', 'Villanos de Wonder Woman', 'Wakanda'] },
+    // ---- Cine
+    { t: 'Actores que fueron Batman', u: 'DC', m: [['Michael Keaton', 0], ['Christian Bale', 0], ['Ben Affleck', 0], ['Robert Pattinson', 0], ['George Clooney', 1], ['Val Kilmer', 1], ['Adam West', 1], ['Kevin Conroy', 2], ['Will Arnett', 2]] },
+    { t: 'Actores que fueron Joker', u: 'DC', m: [['Heath Ledger', 0], ['Joaquin Phoenix', 0], ['Jack Nicholson', 0], ['Jared Leto', 0], ['Cesar Romero', 1], ['Mark Hamill', 1], ['Barry Keoghan', 2]] },
+    { t: 'Actores que fueron Superman', u: 'DC', m: [['Christopher Reeve', 0], ['Henry Cavill', 0], ['Brandon Routh', 1], ['Dean Cain', 1], ['Tom Welling', 1], ['David Corenswet', 1], ['George Reeves', 2], ['Tyler Hoechlin', 2]] },
+    { t: 'Actores que fueron Spider-Man', u: 'Marvel', m: [['Tobey Maguire', 0], ['Andrew Garfield', 0], ['Tom Holland', 0], ['Nicholas Hammond', 2], ['Shameik Moore', 2], ['Jake Johnson', 2]] },
+    { t: 'Actores que fueron Hulk', u: 'Marvel', m: [['Mark Ruffalo', 0], ['Edward Norton', 0], ['Eric Bana', 1], ['Lou Ferrigno', 1], ['Bill Bixby', 2]] },
+    { t: 'Los Chris del cine', u: 'Mixto', m: [['Chris Evans', 0], ['Chris Hemsworth', 0], ['Chris Pratt', 0], ['Chris Pine', 1]] },
+    { t: 'Directores de cine de superhéroes', u: 'Mixto', m: [['Christopher Nolan', 0], ['Zack Snyder', 0], ['James Gunn', 0], ['Sam Raimi', 0], ['Tim Burton', 1], ['Taika Waititi', 1], ['Jon Favreau', 1], ['Joss Whedon', 1], ['Ryan Coogler', 2], ['Matt Reeves', 2], ['Patty Jenkins', 2]] },
+    { t: 'Películas del MCU: Fase 1', u: 'Marvel', m: [['Iron Man', 0], ['El Increíble Hulk', 1], ['Iron Man 2', 1], ['Thor', 0], ['Capitán América: El primer vengador', 1], ['Los Vengadores', 0]], incompat: ['Películas del MCU: Fase 2'] },
+    { t: 'Películas del MCU: Fase 2', u: 'Marvel', m: [['Iron Man 3', 1], ['Thor: El mundo oscuro', 1], ['El soldado del invierno', 1], ['Guardianes de la Galaxia', 0], ['Vengadores: Era de Ultrón', 0], ['Ant-Man', 0]] },
+    { t: 'Películas del MCU: Fase 3', u: 'Marvel', m: [['Civil War', 0], ['Doctor Strange', 0], ['Black Panther', 0], ['Ragnarok', 1], ['Infinity War', 0], ['Endgame', 0], ['Capitana Marvel', 1], ['Homecoming', 1]] },
+    { t: 'Películas del MCU: Fase 4', u: 'Marvel', m: [['Shang-Chi', 1], ['Eternals', 1], ['No Way Home', 0], ['Multiverso de la Locura', 1], ['Black Widow', 1], ['Love and Thunder', 1], ['Wakanda Forever', 1]] },
+    // ---- Poderes y roles
+    { t: 'Arqueros', u: 'Mixto', m: [['Ojo de Halcón', 0, 'Hawkeye'], ['Flecha Verde', 0, 'Oliver Queen'], ['Arsenal', 2, 'Roy Harper'], ['Kate Bishop', 1], ['Speedy', 2, 'Roy Harper'], ['Red Arrow', 2]], incompat: ['Familia Green Arrow', 'Héroes con nombre de ave', 'Apellidos civiles de héroes DC'] },
+    { t: 'Velocistas', u: 'Mixto', m: [['Flash', 0, 'Barry Allen'], ['Quicksilver', 0, 'Pietro Maximoff'], ['Kid Flash', 1], ['Impulso', 2], ['Zoom', 2], ['Jesse Quick', 2], ['Max Mercury', 2]], incompat: ['Familia Flash', 'Villanos de Flash'] },
+    { t: 'Androides y robots', u: 'Mixto', m: [['Visión', 0], ['Ultron', 0], ['Red Tornado', 1], ['Jocasta', 2], ['Amazo', 2], ['Centinela', 1], ['Metal Men', 2]] },
+    { t: 'Telépatas', u: 'Mixto', m: [['Profesor X', 0], ['Jean Grey', 0], ['Martian Manhunter', 1], ['Emma Frost', 1], ['Psylocke', 2], ['Miss Martian', 2], ['Saturn Girl', 2], ['Mento', 2]], incompat: ['X-Men', 'Universo Wolverine'] },
+    { t: 'Genios científicos', u: 'Mixto', m: [['Reed Richards', 0], ['Tony Stark', 0], ['Bruce Banner', 0], ['Hank Pym', 1], ['Shuri', 1], ['Ray Palmer', 2], ['Lex Luthor', 1], ['Mister Terrific', 2]], incompat: ['Cuatro Fantásticos', 'Aliados de Iron Man', 'Universo Iron Man', 'Universo Hulk', 'Villanos de Superman', 'Apellidos civiles de héroes Marvel'] },
+    { t: 'Gobernantes de reinos', u: 'Mixto', m: [['Namor', 0], ['Aquaman', 0], ['Black Bolt', 1], ['Doctor Doom', 0], ['Odín', 0], ['T\'Challa', 0], ['Darkseid', 1], ['Ra\'s al Ghul', 2]], incompat: ['Asgard', 'Wakanda', 'Atlantis', 'Nuevos Dioses', 'Inhumanos', 'Familia Real de los Inhumanos'] },
+    { t: 'Héroes sin superpoderes', u: 'Mixto', m: [['Batman', 0], ['Punisher', 0], ['Ojo de Halcón', 1, 'Hawkeye'], ['Flecha Verde', 1], ['Black Widow', 1], ['Nightwing', 2], ['Rorschach', 1], ['Mister Terrific', 2]], incompat: ['Batifamilia', 'Universo Punisher', 'Vengadores'] },
+    { t: 'Compañeros juveniles (sidekicks)', u: 'Mixto', m: [['Robin', 0], ['Bucky', 0], ['Kid Flash', 1], ['Speedy', 1], ['Aqualad', 2], ['Rick Jones', 2], ['Jimmy Olsen', 1], ['Wonder Girl', 2]], incompat: ['Batifamilia', 'Jóvenes Titanes', 'Han sido Robin', 'Familia Flash', 'Familia Green Arrow', 'Universo Capitán América', 'Trabajan en el Daily Planet'] },
+    { t: 'Mascotas de superhéroes', u: 'Mixto', m: [['Krypto', 0], ['Goose', 0], ['Lockjaw', 1], ['Cosmo', 1], ['Lockheed', 2], ['Ace el Bat-sabueso', 2], ['Redwing', 2], ['Zabu', 2], ['Beppo', 2]] },
+    { t: 'Cuerpos de Linternas', u: 'DC', m: [['Verdes', 0], ['Rojos', 1], ['Amarillos', 1], ['Azules', 1], ['Naranjas', 2], ['Violetas', 2], ['Índigo', 2]], incompat: ['Green Lantern Corps'] }
+];
 const CON_COLORES = ['amarillo', 'verde', 'azul', 'violeta'];
 const CON_EMOJI = { amarillo: '🟨', verde: '🟩', azul: '🟦', violeta: '🟪' };
 const CON_NIVEL_TXT = { facil: 'Fácil', medio: 'Medio', dificil: 'Difícil' };
@@ -26147,6 +26200,15 @@ function conConstruirGrupos() {
             }
         });
     });
+    // 3) Grupos temáticos armados a mano.
+    CON_TEMAS.forEach(t => {
+        const miembros = t.m.map(x => ({ nombre: x[0], completo: x[0] + ' ' + (x[2] || ''), nivel: x[1], imagen: null }));
+        grupos.push({
+            titulo: t.t, universo: t.u, origen: 'tema', miembros, incompat: t.incompat || [],
+            aptoFacil: miembros.filter(m => m.nivel === 0).length >= 4,
+            aptoMedio: miembros.filter(m => m.nivel <= 1).length >= 4
+        });
+    });
     conGruposCache = grupos;
     return grupos;
 }
@@ -26161,11 +26223,15 @@ function conGenerar(nivel, rng) {
         for (const g of conBarajar(aptos, rng)) {
             if (elegidos.length === 4) break;
             if (elegidos.some(e => e.titulo === g.titulo)) continue;
-            if (nivel === 'dificil' && elegidos.length >= 1 && g.universo !== elegidos[0].universo) continue;
+            if (elegidos.some(e => e.incompat.includes(g.titulo) || (g.incompat || []).includes(e.titulo))) continue;
+            if (nivel === 'dificil' && g.universo !== 'Mixto') {
+                const ref = elegidos.find(e => e.universo !== 'Mixto');
+                if (ref && ref.universo !== g.universo) continue;
+            }
             const permitidos = g.miembros.filter(m => m.nivel <= maxNivel && !nombresUsados.some(u => conMismoPersonaje(u, m.completo) || conNorm(u) === conNorm(m.completo)));
             if (permitidos.length < 4) continue;
             const ms = conBarajar(permitidos, rng).slice(0, 4);
-            elegidos.push({ titulo: g.titulo, universo: g.universo, miembros: ms, dif: ms.reduce((a, m) => a + m.nivel, 0) / 4 });
+            elegidos.push({ titulo: g.titulo, universo: g.universo, incompat: g.incompat || [], miembros: ms, dif: ms.reduce((a, m) => a + m.nivel, 0) / 4 });
             ms.forEach(m => nombresUsados.push(m.completo));
         }
         if (elegidos.length === 4) {
