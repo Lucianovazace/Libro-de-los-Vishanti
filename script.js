@@ -26749,6 +26749,7 @@ const AH_TECLADO = ['qwertyuiop', 'asdfghjklñ', 'zxcvbnm'];
 const AH_RE = /^[a-zñ]$/;
 let ahAnimar = 0;            // número de la parte del muñeco que hay que dibujar con el lápiz
 let ahAnimId = 0;
+let ahIntroActivo = false;
 let ahNivel = (function () { try { const n = localStorage.getItem('ahorcado-nivel'); return ['facil', 'medio', 'dificil'].includes(n) ? n : 'medio'; } catch (e) { return 'medio'; } })();
 let ahModo = 'diaria';
 let ahItem = null;           // { nombre, palabra, universo, equipo }
@@ -26847,10 +26848,75 @@ function ahMensaje(t, tipo) {
     m.className = 'mensaje-elenco' + (tipo ? ' ' + tipo : '');
 }
 
-// Dibuja el muñeco: las partes ya hechas quedan fijas y la nueva se dibuja con un lápiz (animación simple).
+// Traza un elemento SVG con el lápiz (animación simple). alTerminar se llama cuando termina el trazo.
+function ahTrazar(el, dur, miId, alTerminar) {
+    const lapiz = document.getElementById('ah-lapiz');
+    let largo = 0;
+    try { largo = el.getTotalLength(); } catch (e) { largo = 0; }
+    if (!largo) { el.style.opacity = '1'; if (alTerminar) alTerminar(); else lapiz.style.display = 'none'; return; }
+    el.style.strokeDasharray = largo;
+    el.style.strokeDashoffset = largo;
+    el.style.opacity = '1';
+    lapiz.style.display = '';
+    const t0 = performance.now();
+    const paso = (ahora) => {
+        if (miId !== ahAnimId) return;
+        const f = Math.min(1, (ahora - t0) / dur);
+        const e = f < 0.5 ? 2 * f * f : 1 - Math.pow(-2 * f + 2, 2) / 2;
+        el.style.strokeDashoffset = String(largo * (1 - e));
+        const pt = el.getPointAtLength(largo * e);
+        const wob = Math.sin(f * 30) * 1.2;
+        lapiz.setAttribute('transform', `translate(${pt.x.toFixed(1)},${(pt.y + wob).toFixed(1)}) rotate(-45) scale(0.62)`);
+        if (f < 1) requestAnimationFrame(paso);
+        else { el.style.strokeDasharray = ''; el.style.strokeDashoffset = ''; if (alTerminar) alTerminar(); else lapiz.style.display = 'none'; }
+    };
+    requestAnimationFrame(paso);
+}
+
+function ahMovimientoReducido() {
+    return !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+}
+
+function ahGalloElems() { return Array.from(document.querySelectorAll('#ah-dibujo .ah-g')); }
+
+// Intro: el lápiz dibuja la horca (hay un botón para saltear la animación).
+function ahIntro() {
+    const gs = ahGalloElems();
+    const lapiz = document.getElementById('ah-lapiz');
+    const btn = document.getElementById('ah-btn-saltear');
+    if (!gs.length || !lapiz || ahMovimientoReducido() || typeof gs[0].getTotalLength !== 'function') { ahSaltearIntro(); return; }
+    ahAnimId++;
+    const miId = ahAnimId;
+    ahIntroActivo = true;
+    gs.forEach(g => { g.style.opacity = '0'; g.style.strokeDasharray = ''; g.style.strokeDashoffset = ''; });
+    if (btn) btn.classList.remove('oculto');
+    const durs = [350, 550, 400, 250];
+    const siguiente = (i) => {
+        if (miId !== ahAnimId) return;
+        if (i >= gs.length) { ahIntroActivo = false; lapiz.style.display = 'none'; if (btn) btn.classList.add('oculto'); return; }
+        ahTrazar(gs[i], durs[i] || 350, miId, () => siguiente(i + 1));
+    };
+    siguiente(0);
+}
+
+function ahSaltearIntro() {
+    ahAnimId++;
+    ahIntroActivo = false;
+    const lapiz = document.getElementById('ah-lapiz');
+    if (lapiz) lapiz.style.display = 'none';
+    ahGalloElems().forEach(g => { g.style.opacity = '1'; g.style.strokeDasharray = ''; g.style.strokeDashoffset = ''; });
+    const btn = document.getElementById('ah-btn-saltear');
+    if (btn) btn.classList.add('oculto');
+}
+
+// Dibuja el muñeco: las partes ya hechas quedan fijas y la nueva se dibuja con un lápiz.
 function ahDibujarMuneco() {
     const nueva = ahAnimar;
     ahAnimar = 0;
+    if (ahIntroActivo) {
+        if (!nueva) { for (let i = 1; i <= AH_MAX_ERRORES; i++) { const p = document.getElementById('ah-p' + i); if (p) p.style.opacity = ahErrores >= i ? '1' : '0'; } return; }
+        ahSaltearIntro();
+    }
     ahAnimId++;
     const miId = ahAnimId;
     const lapiz = document.getElementById('ah-lapiz');
@@ -26862,28 +26928,9 @@ function ahDibujarMuneco() {
         p.style.strokeDashoffset = '';
         p.style.opacity = ahErrores >= i ? '1' : '0';
     }
-    const sinMov = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const parte = nueva ? document.getElementById('ah-p' + nueva) : null;
-    if (!parte || !lapiz || sinMov || typeof parte.getTotalLength !== 'function') return;
-    const largo = parte.getTotalLength();
-    const dur = nueva === 1 ? 900 : 650;
-    parte.style.strokeDasharray = largo;
-    parte.style.strokeDashoffset = largo;
-    parte.style.opacity = '1';
-    lapiz.style.display = '';
-    const t0 = performance.now();
-    const paso = (ahora) => {
-        if (miId !== ahAnimId) return;
-        const f = Math.min(1, (ahora - t0) / dur);
-        const e = f < 0.5 ? 2 * f * f : 1 - Math.pow(-2 * f + 2, 2) / 2;
-        parte.style.strokeDashoffset = String(largo * (1 - e));
-        const pt = parte.getPointAtLength(largo * e);
-        const wob = Math.sin(f * 30) * 1.2;
-        lapiz.setAttribute('transform', `translate(${pt.x.toFixed(1)},${(pt.y + wob).toFixed(1)}) rotate(-45) scale(0.62)`);
-        if (f < 1) requestAnimationFrame(paso);
-        else { parte.style.strokeDasharray = ''; parte.style.strokeDashoffset = ''; lapiz.style.display = 'none'; }
-    };
-    requestAnimationFrame(paso);
+    if (!parte || !lapiz || ahMovimientoReducido() || typeof parte.getTotalLength !== 'function') return;
+    ahTrazar(parte, nueva === 1 ? 900 : 650, miId, null);
 }
 
 function ahDibujar() {
@@ -27012,14 +27059,15 @@ function ahIniciar(modo) {
     }
     ahMensaje('');
     ahDibujar();
+    if (ahTerminado || ahErrores > 0 || ahLetras.size > 0) ahSaltearIntro(); else ahIntro();
     if (ahTerminado) ahMostrarFinal();
 }
 
 const tarjetaAhorcado = document.getElementById('tarjeta-ahorcado');
 if (tarjetaAhorcado) {
     tarjetaAhorcado.addEventListener('click', () => {
-        ahIniciar('diaria');
         cambiarSeccion(document.getElementById('seccion-ahorcado'));
+        ahIniciar('diaria');
     });
 }
 const btnVolverJuegosDesdeAh = document.getElementById('btn-volver-juegos-desde-ahorcado');
@@ -27029,6 +27077,8 @@ document.querySelectorAll('.ah-nivel').forEach(b => b.addEventListener('click', 
     try { localStorage.setItem('ahorcado-nivel', ahNivel); } catch (e) {}
     ahIniciar('diaria');
 }));
+const ahBtnSaltear = document.getElementById('ah-btn-saltear');
+if (ahBtnSaltear) ahBtnSaltear.addEventListener('click', ahSaltearIntro);
 const ahBtnAzar = document.getElementById('ah-btn-azar');
 if (ahBtnAzar) ahBtnAzar.addEventListener('click', () => ahIniciar('azar'));
 const ahBtnCompartir = document.getElementById('ah-btn-compartir');
