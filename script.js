@@ -24194,6 +24194,102 @@ const PERSONAJES_MARVEL_SPIDERMAN = [
     { nombre: "Wraith", real: "Yuri Watanabe", tipo: "Héroe" }
 ];
 
+// Personajes de Marvel del universo del Capitán América (lista pasada por el usuario, completa).
+// Solo catálogo: el Wordle usa las palabras de 5-6 letras que salen de acá (ver WORDLE_PALABRAS).
+const PERSONAJES_MARVEL_CAPITAN_AMERICA = [
+    { nombre: "Agent 13 / Sharon Carter", real: "Sharon Carter", tipo: "Aliado" },
+    { nombre: "Agent 00 / Agent X", real: "N'Gassi", tipo: "Aliado" },
+    { nombre: "Agente de S.H.I.E.L.D. Eric Koenig", real: "Eric Koenig", tipo: "Aliado" },
+    { nombre: "Ameridroid", real: "Lyle Dekker", tipo: "Villano" },
+    { nombre: "Armadillo", real: "Antonio Rodriguez", tipo: "Villano" },
+    { nombre: "Arnim Zola", real: "Arnim Zola", tipo: "Villano" },
+    { nombre: "Batroc el Saltador / Batroc the Leaper", real: "Georges Batroc", tipo: "Villano" },
+    { nombre: "Battlestar", real: "Lemar Hoskins", tipo: "Héroe" },
+    { nombre: "Barón Blood / Baron Blood", real: "John Falsworth", tipo: "Villano" },
+    { nombre: "Barón Strucker / Baron Strucker", real: "Wolfgang von Strucker", tipo: "Villano" },
+    { nombre: "Barón Zemo I", real: "Heinrich von Zemo", tipo: "Villano" },
+    { nombre: "Barón Zemo II", real: "Helmut Zemo", tipo: "Villano" },
+    { nombre: "Bernie Rosenthal", real: "Bernadette Rosenthal", tipo: "Aliado" },
+    { nombre: "Black Crow", real: "Jesse Black Crow", tipo: "Héroe" },
+    { nombre: "Black Widow / Viuda Negra", real: "Natasha Romanoff", tipo: "Héroe" },
+    { nombre: "Bucky Barnes / Winter Soldier / Soldado del Invierno", real: "James Buchanan Barnes", tipo: "Antihéroe" },
+    { nombre: "Capitán América I", real: "Steve Rogers", tipo: "Héroe" },
+    { nombre: "Capitán América II / Patriot", real: "Jeffrey Mace", tipo: "Héroe" },
+    { nombre: "Capitán América III / Grand Director", real: "William Burnside", tipo: "Héroe" },
+    { nombre: "Capitán América IV / U.S. Agent", real: "John Walker", tipo: "Héroe" },
+    { nombre: "Capitán América V / Falcon", real: "Sam Wilson", tipo: "Héroe" },
+    { nombre: "Capitán América VI / Bucky", real: "James Buchanan Barnes", tipo: "Héroe" },
+    { nombre: "Capitán Britania / Captain Britain", real: "Brian Braddock", tipo: "Héroe" },
+    { nombre: "Captain Germany / Hauptmann Deutschland", real: "Markus Ettlinger", tipo: "Aliado" },
+    { nombre: "Centurión / Centurius", real: "Noah Black", tipo: "Villano" },
+    { nombre: "Constrictor", real: "Frank Payne", tipo: "Villano" },
+    { nombre: "Crossbones", real: "Brock Rumlow", tipo: "Villano" },
+    { nombre: "Crang", real: "Warlord Crang", tipo: "Villano" },
+    { nombre: "Diamondback", real: "Rachel Leighton", tipo: "Antihéroe" },
+    { nombre: "Demolition Man / D-Man", real: "Dennis Dunphy", tipo: "Héroe" },
+    { nombre: "Doctor Faustus", real: "Johann Fennhoff", tipo: "Villano" },
+    { nombre: "Doughboy", real: "Creación bio-sintética de Arnim Zola", tipo: "Villano" },
+    { nombre: "Falcon", real: "Joaquín Torres", tipo: "Héroe" },
+    { nombre: "Flag-Smasher I", real: "Karl Morgenthau", tipo: "Villano" },
+    { nombre: "Flag-Smasher II", real: "Guy Thierrault", tipo: "Villano" },
+    { nombre: "Free Spirit", real: "Cathy Webster", tipo: "Héroe" },
+    { nombre: "G.I. Max", real: "Experimentado supersoldado fallido", tipo: "Villano" },
+    { nombre: "Grandmaster / Gran Maestro", real: "En Dwi Gast", tipo: "Villano" },
+    { nombre: "Grand Director", real: "William Burnside", tipo: "Villano" },
+    { nombre: "Grizzly", real: "A.I.M. Operativo / versión clásica", tipo: "Villano" },
+    { nombre: "Guardian / Guardián Rojo I", real: "Aleksey Shostakov", tipo: "Aliado" },
+    { nombre: "Guardián Rojo II", real: "Tania Belinsky", tipo: "Aliado" },
+    { nombre: "Guardián Rojo III", real: "Josef Petkus", tipo: "Aliado" },
+    { nombre: "Jack Flag", real: "Jack Harrison", tipo: "Héroe" },
+    { nombre: "Jack O'Lantern / Madcap", real: "Madcap", tipo: "Villano" },
+    { nombre: "John F. Walker / U.S. Agent", real: "John Walker", tipo: "Antihéroe" },
+    { nombre: "La Iguana / Iguana", real: "Iguana - Serpent Society", tipo: "Villano" },
+    { nombre: "Lady Lotus", real: "Lady Lotus", tipo: "Villano" },
+    { nombre: "Leaper / Batroc's Brigade", real: "Zaran the Weapon Master", tipo: "Villano" },
+    { nombre: "M.O.D.O.K.", real: "George Tarleton", tipo: "Villano" },
+    { nombre: "Machine Man", real: "X-51 / Aaron Stack", tipo: "Héroe" },
+    { nombre: "Machinesmith", real: "Samuel \"Starr\" Saxon", tipo: "Villano" },
+    { nombre: "Madbomb", real: "Artefacto / Entidad de control psíquico de Arnim Zola", tipo: "Villano" },
+    { nombre: "Major Victory", real: "Vance Astrovik", tipo: "Héroe" },
+    { nombre: "Master Man", real: "Wilhelm Lohmer", tipo: "Villano" },
+    { nombre: "Machete", real: "Ferdinand Lopez", tipo: "Villano" },
+    { nombre: "Midnight Face / Midnite", real: "Lamented Mercenary", tipo: "Antihéroe" },
+    { nombre: "Nuke", real: "Frank Simpson", tipo: "Villano" },
+    { nombre: "Nomad II", real: "Jack Monroe", tipo: "Héroe" },
+    { nombre: "Nomad III", real: "Rikki Barnes", tipo: "Héroe" },
+    { nombre: "Nomad IV", real: "Ian Rogers", tipo: "Héroe" },
+    { nombre: "Overlord / Overmind", real: "Grom", tipo: "Villano" },
+    { nombre: "Patriot", real: "Elijah Bradley", tipo: "Héroe" },
+    { nombre: "Porcupine", real: "Alexander Gentry", tipo: "Villano" },
+    { nombre: "Puff Adder", real: "Gordon Fraley", tipo: "Villano" },
+    { nombre: "Red Skull / Cráneo Rojo", real: "Johann Shmidt", tipo: "Villano" },
+    { nombre: "Red Skull II", real: "George Maxon", tipo: "Villano" },
+    { nombre: "Red Skull III", real: "Albert Malik", tipo: "Villano" },
+    { nombre: "Scourge of the Underworld", real: "Iniciativa de ejecutores", tipo: "Villano" },
+    { nombre: "Secret Empire Number One", real: "Líder encubierto del Imperio Secreto", tipo: "Villano" },
+    { nombre: "Serpent Supreme", real: "Steve Rogers - versión Hydra Supreme", tipo: "Villano" },
+    { nombre: "Sin / Sinthea Shmidt", real: "Sinthea Shmidt", tipo: "Villano" },
+    { nombre: "Slug", real: "Jlynn", tipo: "Villano" },
+    { nombre: "Snapping Turtle", real: "Agente de Hydra", tipo: "Villano" },
+    { nombre: "Spitfire", real: "Lady Jacqueline Falsworth-Crichton", tipo: "Héroe" },
+    { nombre: "Superia", real: "Deidre Wentworth", tipo: "Villano" },
+    { nombre: "Tarantula", real: "Luis Alvarez", tipo: "Villano" },
+    { nombre: "The Anarchist", real: "Anárquico enemigo del Cáp", tipo: "Villano" },
+    { nombre: "The Commission / Commissioner", real: "Raymond Sikorski", tipo: "Villano" },
+    { nombre: "The Controller", real: "Basil Sandhurst", tipo: "Villano" },
+    { nombre: "The Hate-Monger", real: "Clon de Adolf Hitler", tipo: "Villano" },
+    { nombre: "The Iron Hand", real: "General Eisen", tipo: "Villano" },
+    { nombre: "The Porcupine", real: "Roger Gocking", tipo: "Villano" },
+    { nombre: "Union Jack I", real: "Montgomery Falsworth", tipo: "Héroe" },
+    { nombre: "Union Jack II", real: "Brian Falsworth", tipo: "Héroe" },
+    { nombre: "Union Jack III", real: "Joseph Chapman", tipo: "Héroe" },
+    { nombre: "Viper / Madame Hydra", real: "Ophelia Sarkissian", tipo: "Villano" },
+    { nombre: "Vagabond", real: "Priscilla Lyons", tipo: "Héroe" },
+    { nombre: "Vermin", real: "Edward Whelan", tipo: "Villano" },
+    { nombre: "Warrior Woman", real: "Julia Koenig", tipo: "Villano" },
+    { nombre: "Yellow Claw", real: "Plan Chu", tipo: "Villano" }
+];
+
 // ==========================================
 // JUEGO "WORDLE DE PERSONAJES" (palabra del día)
 // ==========================================
@@ -24389,8 +24485,65 @@ const WORDLE_PALABRAS = [
     { palabra: "toomes", nombre: "Vulture (Adrian Toomes)", universo: "Marvel", equipo: "Seis Siniestros", tipo: "Villano" },
     { palabra: "walrus", nombre: "Walrus (Hubert Carpenter)", universo: "Marvel", equipo: "Villanos de Spider-Man", tipo: "Villano" },
     { palabra: "rabbit", nombre: "White Rabbit (Lorina Dodson)", universo: "Marvel", equipo: "Villanos de Spider-Man", tipo: "Villano" },
-    { palabra: "wraith", nombre: "Wraith (Yuri Watanabe)", universo: "Marvel", equipo: "Universo Spider-Man", tipo: "Héroe" }
+    { palabra: "wraith", nombre: "Wraith (Yuri Watanabe)", universo: "Marvel", equipo: "Universo Spider-Man", tipo: "Héroe" },
+    { palabra: "batroc", nombre: "Batroc el Saltador", universo: "Marvel", equipo: "Villanos del Capitán América", tipo: "Villano" },
+    { palabra: "leaper", nombre: "Batroc el Saltador (The Leaper)", universo: "Marvel", equipo: "Villanos del Capitán América", tipo: "Villano" },
+    { palabra: "falcon", nombre: "Falcon (Sam Wilson)", universo: "Marvel", equipo: "Universo Capitán América", tipo: "Héroe" },
+    { palabra: "wilson", nombre: "Sam Wilson (Falcon)", universo: "Marvel", equipo: "Universo Capitán América", tipo: "Héroe" },
+    { palabra: "widow", nombre: "Black Widow (Natasha Romanoff)", universo: "Marvel", equipo: "Universo Capitán América", tipo: "Héroe" },
+    { palabra: "winter", nombre: "Bucky Barnes (Soldado del Invierno)", universo: "Marvel", equipo: "Universo Capitán América", tipo: "Antihéroe" },
+    { palabra: "barnes", nombre: "Bucky Barnes", universo: "Marvel", equipo: "Universo Capitán América", tipo: "Antihéroe" },
+    { palabra: "rogers", nombre: "Steve Rogers (Capitán América)", universo: "Marvel", equipo: "Universo Capitán América", tipo: "Héroe" },
+    { palabra: "skull", nombre: "Red Skull (Cráneo Rojo)", universo: "Marvel", equipo: "Villanos del Capitán América", tipo: "Villano" },
+    { palabra: "craneo", nombre: "Cráneo Rojo (Red Skull)", universo: "Marvel", equipo: "Villanos del Capitán América", tipo: "Villano" },
+    { palabra: "nomad", nombre: "Nomad", universo: "Marvel", equipo: "Universo Capitán América", tipo: "Héroe" },
+    { palabra: "monroe", nombre: "Jack Monroe (Nomad II)", universo: "Marvel", equipo: "Universo Capitán América", tipo: "Héroe" },
+    { palabra: "rikki", nombre: "Rikki Barnes (Nomad III)", universo: "Marvel", equipo: "Universo Capitán América", tipo: "Héroe" },
+    { palabra: "walker", nombre: "John Walker (U.S. Agent)", universo: "Marvel", equipo: "Universo Capitán América", tipo: "Antihéroe" },
+    { palabra: "helmut", nombre: "Helmut Zemo (Barón Zemo II)", universo: "Marvel", equipo: "Hydra", tipo: "Villano" },
+    { palabra: "baron", nombre: "Barón (Zemo / Strucker / Blood)", universo: "Marvel", equipo: "Hydra", tipo: "Villano" },
+    { palabra: "blood", nombre: "Barón Blood (John Falsworth)", universo: "Marvel", equipo: "Villanos del Capitán América", tipo: "Villano" },
+    { palabra: "arnim", nombre: "Arnim Zola", universo: "Marvel", equipo: "Hydra", tipo: "Villano" },
+    { palabra: "rumlow", nombre: "Brock Rumlow (Crossbones)", universo: "Marvel", equipo: "Hydra", tipo: "Villano" },
+    { palabra: "viper", nombre: "Viper (Madame Hydra)", universo: "Marvel", equipo: "Hydra", tipo: "Villano" },
+    { palabra: "madame", nombre: "Madame Hydra", universo: "Marvel", equipo: "Hydra", tipo: "Villano" },
+    { palabra: "carter", nombre: "Sharon Carter (Agent 13)", universo: "Marvel", equipo: "Universo Capitán América", tipo: "Aliado" },
+    { palabra: "koenig", nombre: "Eric Koenig (Agente de S.H.I.E.L.D.)", universo: "Marvel", equipo: "Universo Capitán América", tipo: "Aliado" },
+    { palabra: "dekker", nombre: "Ameridroid (Lyle Dekker)", universo: "Marvel", equipo: "Villanos del Capitán América", tipo: "Villano" },
+    { palabra: "crang", nombre: "Crang", universo: "Marvel", equipo: "Villanos del Capitán América", tipo: "Villano" },
+    { palabra: "madcap", nombre: "Madcap", universo: "Marvel", equipo: "Villanos del Capitán América", tipo: "Villano" },
+    { palabra: "iguana", nombre: "Iguana", universo: "Marvel", equipo: "Serpent Society", tipo: "Villano" },
+    { palabra: "lotus", nombre: "Lady Lotus", universo: "Marvel", equipo: "Villanos del Capitán América", tipo: "Villano" },
+    { palabra: "zaran", nombre: "Zaran (Leaper / Weapon Master)", universo: "Marvel", equipo: "Villanos del Capitán América", tipo: "Villano" },
+    { palabra: "payne", nombre: "Frank Payne (Constrictor)", universo: "Marvel", equipo: "Serpent Society", tipo: "Villano" },
+    { palabra: "gentry", nombre: "Alexander Gentry (Porcupine)", universo: "Marvel", equipo: "Villanos del Capitán América", tipo: "Villano" },
+    { palabra: "dunphy", nombre: "Dennis Dunphy (Demolition Man)", universo: "Marvel", equipo: "Universo Capitán América", tipo: "Héroe" },
+    { palabra: "saxon", nombre: "Samuel Saxon (Machinesmith)", universo: "Marvel", equipo: "Villanos del Capitán América", tipo: "Villano" },
+    { palabra: "major", nombre: "Major Victory", universo: "Marvel", equipo: "Universo Capitán América", tipo: "Héroe" },
+    { palabra: "vance", nombre: "Vance Astrovik (Major Victory)", universo: "Marvel", equipo: "Universo Capitán América", tipo: "Héroe" },
+    { palabra: "lohmer", nombre: "Wilhelm Lohmer (Master Man)", universo: "Marvel", equipo: "Villanos del Capitán América", tipo: "Villano" },
+    { palabra: "elijah", nombre: "Elijah Bradley (Patriot)", universo: "Marvel", equipo: "Universo Capitán América", tipo: "Héroe" },
+    { palabra: "adder", nombre: "Puff Adder", universo: "Marvel", equipo: "Serpent Society", tipo: "Villano" },
+    { palabra: "maxon", nombre: "George Maxon (Red Skull II)", universo: "Marvel", equipo: "Villanos del Capitán América", tipo: "Villano" },
+    { palabra: "malik", nombre: "Albert Malik (Red Skull III)", universo: "Marvel", equipo: "Villanos del Capitán América", tipo: "Villano" },
+    { palabra: "turtle", nombre: "Snapping Turtle", universo: "Marvel", equipo: "Hydra", tipo: "Villano" },
+    { palabra: "eisen", nombre: "General Eisen (The Iron Hand)", universo: "Marvel", equipo: "Villanos del Capitán América", tipo: "Villano" },
+    { palabra: "bernie", nombre: "Bernie Rosenthal", universo: "Marvel", equipo: "Universo Capitán América", tipo: "Aliado" },
+    { palabra: "rachel", nombre: "Rachel Leighton (Diamondback)", universo: "Marvel", equipo: "Serpent Society", tipo: "Antihéroe" },
+    { palabra: "cathy", nombre: "Cathy Webster (Free Spirit)", universo: "Marvel", equipo: "Universo Capitán América", tipo: "Héroe" },
+    { palabra: "deidre", nombre: "Deidre Wentworth (Superia)", universo: "Marvel", equipo: "Villanos del Capitán América", tipo: "Villano" },
+    { palabra: "basil", nombre: "Basil Sandhurst (The Controller)", universo: "Marvel", equipo: "Villanos del Capitán América", tipo: "Villano" },
+    { palabra: "joseph", nombre: "Joseph Chapman (Union Jack III)", universo: "Marvel", equipo: "Union Jack y aliados", tipo: "Héroe" },
+    { palabra: "torres", nombre: "Joaquín Torres (Falcon)", universo: "Marvel", equipo: "Universo Capitán América", tipo: "Héroe" },
+    { palabra: "tania", nombre: "Tania Belinsky (Guardián Rojo II)", universo: "Marvel", equipo: "Universo Capitán América", tipo: "Aliado" },
+    { palabra: "lyons", nombre: "Priscilla Lyons (Vagabond)", universo: "Marvel", equipo: "Universo Capitán América", tipo: "Héroe" },
+    { palabra: "spirit", nombre: "Free Spirit", universo: "Marvel", equipo: "Universo Capitán América", tipo: "Héroe" }
 ];
+// Dificultad: FÁCIL = los más famosos, DIFÍCIL = los menos conocidos (asignado por Claude, se puede ajustar), MEDIO = el resto.
+const WORDLE_FACIL = new Set(["joker", "robin", "flash", "bruce", "clark", "diana", "batman", "alfred", "selina", "harley", "shazam", "cyborg", "luthor", "quinn", "arrow", "raven", "storm", "cable", "wanda", "groot", "venom", "carol", "peter", "steve", "bucky", "clint", "scott", "rogue", "beast", "namor", "logan", "miles", "rhino", "stark", "spider", "vision", "banner", "thing", "hydra", "blade", "angel", "kitty", "medusa", "lizard", "kraven", "goblin", "rider", "johnny", "falcon", "widow", "skull", "winter", "swamp"]);
+const WORDLE_DIFICIL = new Set(["nimue", "hannu", "yalan", "sodam", "laira", "katma", "alura", "faora", "nubia", "mento", "thorn", "talon", "tatsu", "shado", "vandal", "dibny", "metron", "starro", "faust", "kobra", "circe", "piper", "snart", "tetch", "nygma", "zatara", "terrax", "herbie", "reece", "harvey", "julius", "psycho", "skrull", "puppet", "maker", "darla", "sharon", "agony", "smythe", "arcade", "wheel", "hardy", "gibbon", "cletus", "dmitri", "clash", "debra", "eugene", "melvin", "hydro", "hypno", "judas", "kaine", "lasher", "looter", "mendel", "molten", "morlun", "leeds", "phage", "robbie", "scream", "gargan", "shriek", "sable", "cindy", "speed", "porker", "miguel", "pavitr", "hobart", "mayday", "mattie", "swarm", "slyde", "lonnie", "toxin", "uncle", "toomes", "walrus", "rabbit", "wraith", "hobie", "madam", "crang", "madcap", "iguana", "lotus", "zaran", "payne", "gentry", "dunphy", "saxon", "lohmer", "adder", "maxon", "malik", "turtle", "eisen", "bernie", "rachel", "cathy", "deidre", "basil", "joseph", "torres", "tania", "lyons", "spirit", "dekker", "koenig", "monroe", "rikki", "vance", "elijah", "major", "leaper", "craneo", "arnim"]);
+function wordleNivelDe(p) { return WORDLE_FACIL.has(p.palabra) ? 'facil' : (WORDLE_DIFICIL.has(p.palabra) ? 'dificil' : 'medio'); }
+
 const WORDLE_INTENTOS = 6;
 let WORDLE_LARGO = 5;
 const WORDLE_FILAS_TECLADO = ["qwertyuiop", "asdfghjkl", "zxcvbnm"];
@@ -24400,6 +24553,8 @@ let wordleIntentos = [];
 let wordleActual = '';
 let wordleTerminado = false;
 let wordleEstadosTeclas = {};
+let wordleNivel = (function(){ try { const n = localStorage.getItem('wordle-nivel'); return ['facil','medio','dificil'].includes(n) ? n : 'medio'; } catch (e) { return 'medio'; } })();
+const WORDLE_NIVEL_TXT = { facil: 'Fácil', medio: 'Medio', dificil: 'Difícil' };
 let wordlePistasVistas = 0; // 0 = ninguna, 1 = pista de tipo y universo, 2 = también el equipo
 
 function wordleFechaHoy() {
@@ -24408,9 +24563,13 @@ function wordleFechaHoy() {
 }
 
 // Orden barajado fijo (misma semilla para todos), así el día no avanza en orden alfabético ni por universo.
+function wordlePool() {
+    return WORDLE_PALABRAS.filter(p => wordleNivelDe(p) === wordleNivel);
+}
+
 function wordleOrdenFijo() {
-    const idx = WORDLE_PALABRAS.map((_, i) => i);
-    let semilla = 20261015;
+    const idx = wordlePool().map((_, i) => i);
+    let semilla = 20261015 + ({ facil: 0, medio: 7, dificil: 13 })[wordleNivel];
     const azar = () => { semilla = (semilla * 1664525 + 1013904223) % 4294967296; return semilla / 4294967296; };
     for (let i = idx.length - 1; i > 0; i--) {
         const j = Math.floor(azar() * (i + 1));
@@ -24423,7 +24582,7 @@ function wordlePalabraDelDia() {
     const [a, m, d] = wordleFechaHoy().split('-').map(Number);
     const dias = Math.floor(Date.UTC(a, m - 1, d) / 86400000);
     const orden = wordleOrdenFijo();
-    return WORDLE_PALABRAS[orden[((dias % orden.length) + orden.length) % orden.length]];
+    return wordlePool()[orden[((dias % orden.length) + orden.length) % orden.length]];
 }
 
 function wordleEvaluar(intento, secreta) {
@@ -24443,13 +24602,13 @@ function wordleEvaluar(intento, secreta) {
 function wordleGuardarLocal() {
     if (wordleModo !== 'diaria') return;
     try {
-        localStorage.setItem('wordle-personajes-dia', JSON.stringify({ fecha: wordleFechaHoy(), palabra: wordleSecreta.palabra, intentos: wordleIntentos, terminado: wordleTerminado, pistas: wordlePistasVistas }));
+        localStorage.setItem('wordle-personajes-dia-' + wordleNivel, JSON.stringify({ fecha: wordleFechaHoy(), palabra: wordleSecreta.palabra, intentos: wordleIntentos, terminado: wordleTerminado, pistas: wordlePistasVistas }));
     } catch (e) {}
 }
 
 function wordleCargarLocal() {
     try {
-        const g = JSON.parse(localStorage.getItem('wordle-personajes-dia') || 'null');
+        const g = JSON.parse(localStorage.getItem('wordle-personajes-dia-' + wordleNivel) || 'null');
         if (g && g.fecha === wordleFechaHoy() && Array.isArray(g.intentos)) return g;
     } catch (e) {}
     return null;
@@ -24457,7 +24616,7 @@ function wordleCargarLocal() {
 
 function wordleActualizarRacha(gano) {
     try {
-        const r = JSON.parse(localStorage.getItem('wordle-personajes-racha') || '{}');
+        const r = JSON.parse(localStorage.getItem('wordle-personajes-racha-' + wordleNivel) || '{}');
         const hoy = wordleFechaHoy();
         if (r.ultimaFecha === hoy) return r;
         const ayer = new Date(Date.UTC(...hoy.split('-').map((n, i) => i === 1 ? Number(n) - 1 : Number(n))) - 86400000);
@@ -24469,14 +24628,14 @@ function wordleActualizarRacha(gano) {
             ganadas: (r.ganadas || 0) + (gano ? 1 : 0)
         };
         nueva.mejor = Math.max(r.mejor || 0, nueva.racha);
-        localStorage.setItem('wordle-personajes-racha', JSON.stringify(nueva));
+        localStorage.setItem('wordle-personajes-racha-' + wordleNivel, JSON.stringify(nueva));
         return nueva;
     } catch (e) { return null; }
 }
 
 function wordleGuardarEstadistica(gano, nIntentos) {
     try {
-        const ref = db.collection('estadisticas').doc('wordle-personajes');
+        const ref = db.collection('estadisticas').doc(wordleNivel === 'medio' ? 'wordle-personajes' : 'wordle-personajes-' + wordleNivel);
         const inc = firebase.firestore.FieldValue.increment;
         const datos = { totalPartidas: inc(1), totalGanadas: inc(gano ? 1 : 0), totalIntentosGanados: inc(gano ? nIntentos : 0) };
         ref.set(datos, { merge: true }).then(() => ref.get()).then(doc => {
@@ -24593,7 +24752,7 @@ function wordleMensaje(texto, tipo) {
 function wordleTextoCompartir() {
     const emoji = { correcta: '🟩', presente: '🟨', ausente: '⬛' };
     const gano = wordleIntentos[wordleIntentos.length - 1] === wordleSecreta.palabra;
-    const titulo = wordleModo === 'diaria' ? 'Wordle de Personajes ' + wordleFechaHoy() : 'Wordle de Personajes (al azar)';
+    const titulo = wordleModo === 'diaria' ? 'Wordle de Personajes [' + WORDLE_NIVEL_TXT[wordleNivel] + '] ' + wordleFechaHoy() : 'Wordle de Personajes [' + WORDLE_NIVEL_TXT[wordleNivel] + '] (al azar)';
     const lineas = wordleIntentos.map(i => wordleEvaluar(i, wordleSecreta.palabra).map(e => emoji[e]).join(''));
     return `${titulo} ${gano ? wordleIntentos.length : 'X'}/${WORDLE_INTENTOS}${wordlePistasVistas ? ' 💡'.repeat(wordlePistasVistas) : ''}\n\n${lineas.join('\n')}`;
 }
@@ -24602,7 +24761,7 @@ function wordleMostrarFinal(gano) {
     const fin = document.getElementById('wordle-final');
     if (!fin) return;
     fin.classList.remove('oculto');
-    const racha = JSON.parse(localStorage.getItem('wordle-personajes-racha') || 'null');
+    const racha = JSON.parse(localStorage.getItem('wordle-personajes-racha-' + wordleNivel) || 'null');
     const rachaTxt = (wordleModo === 'diaria' && racha) ? `<p>🔥 Racha: ${racha.racha} · Mejor: ${racha.mejor} · Ganadas: ${racha.ganadas}/${racha.jugadas}</p>` : '';
     fin.querySelector('#wordle-final-texto').innerHTML = `
         <h3>${gano ? '¡Lo adivinaste!' : 'Se acabaron los intentos'}</h3>
@@ -24670,11 +24829,12 @@ function wordleIniciar(modo) {
             wordleTerminado = guardado.terminado;
             wordlePistasVistas = guardado.pistas || 0;
         }
-        if (titulo) titulo.textContent = `Palabra del día: hoy tiene ${WORDLE_LARGO} letras (a veces 5, a veces 6). Tenés 6 intentos. Es la misma para todos.`;
+        if (titulo) titulo.textContent = `Palabra del día (${WORDLE_NIVEL_TXT[wordleNivel]}): hoy tiene ${WORDLE_LARGO} letras (a veces 5, a veces 6). Tenés 6 intentos. Es la misma para todos.`;
     } else {
-        wordleSecreta = WORDLE_PALABRAS[Math.floor(Math.random() * WORDLE_PALABRAS.length)];
+        const pool = wordlePool();
+        wordleSecreta = pool[Math.floor(Math.random() * pool.length)];
         WORDLE_LARGO = wordleSecreta.palabra.length;
-        if (titulo) titulo.textContent = `Modo al azar (${WORDLE_LARGO} letras): no cuenta para la racha ni para las estadísticas.`;
+        if (titulo) titulo.textContent = `Modo al azar, nivel ${WORDLE_NIVEL_TXT[wordleNivel]} (${WORDLE_LARGO} letras): no cuenta para la racha ni para las estadísticas.`;
     }
     wordleRecalcularTeclas();
     wordleDibujarTablero();
@@ -24699,9 +24859,20 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
+function wordleMarcarNiveles() {
+    document.querySelectorAll('.wordle-nivel').forEach(b => b.classList.toggle('activo', b.dataset.nivel === wordleNivel));
+}
+document.querySelectorAll('.wordle-nivel').forEach(b => b.addEventListener('click', () => {
+    wordleNivel = b.dataset.nivel;
+    try { localStorage.setItem('wordle-nivel', wordleNivel); } catch (e) {}
+    wordleMarcarNiveles();
+    wordleIniciar('diaria');
+}));
+
 const tarjetaWordle = document.getElementById('tarjeta-wordle');
 if (tarjetaWordle) {
     tarjetaWordle.addEventListener('click', () => {
+        wordleMarcarNiveles();
         wordleIniciar('diaria');
         cambiarSeccion(document.getElementById('seccion-wordle'));
     });
