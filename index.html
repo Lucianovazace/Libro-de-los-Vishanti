@@ -14473,6 +14473,11 @@
                 <h3>Adiviná el póster</h3>
                 <p>Un póster pixelado que se aclara con cada error. ¿Qué película, serie o juego es? Uno por día.</p>
             </div>
+            <div class="tarjeta-juego" id="tarjeta-bingo">
+                <div class="icono-juego">🎱</div>
+                <h3>Bingo del Multiverso</h3>
+                <p>Cartón de personajes, bolillero y dos rivales. Cantá línea o cartón lleno antes que ellos. Uno por día.</p>
+            </div>
             <div class="tarjeta-juego" id="tarjeta-grillas">
                 <div class="icono-juego">🔲</div>
                 <h3>Grillas</h3>
@@ -14611,6 +14616,53 @@
                 <button type="button" class="btn-modal" id="adp-btn-azar">Jugar otro al azar</button>
             </div>
             <p id="adp-stats" class="subtitulo-juegos"></p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: JUEGO - BINGO -->
+    <section id="seccion-bingo" class="oculto">
+        <button class="btn-volver" id="btn-volver-juegos-desde-bingo">← Volver a Juegos</button>
+        <h2>Bingo del Multiverso 🎱</h2>
+        <div class="wordle-niveles">
+            <button type="button" class="btn-modal bg-fuente" data-fuente="todo">Marvel y DC</button>
+            <button type="button" class="btn-modal bg-fuente" data-fuente="marvel">Marvel</button>
+            <button type="button" class="btn-modal bg-fuente" data-fuente="dc">DC</button>
+            <button type="button" class="btn-modal bg-fuente" data-fuente="obras">Películas y series</button>
+        </div>
+        <div class="wordle-niveles">
+            <button type="button" class="btn-modal bg-modo" data-modo="linea">Línea</button>
+            <button type="button" class="btn-modal bg-modo" data-modo="lleno">Cartón lleno</button>
+        </div>
+        <p class="subtitulo-juegos" id="bg-subtitulo"></p>
+        <div class="bg-mesa">
+            <div class="bg-bolillero">
+                <div id="bg-bola" class="bg-bola">🎱</div>
+                <div id="bg-bola-n" class="subtitulo-juegos">Bolilla 0 / 75</div>
+                <div id="bg-historial" class="bg-historial"></div>
+            </div>
+            <div class="bg-controles">
+                <button type="button" class="btn-modal" id="bg-btn-sacar">🎱 Sacar bolilla</button>
+                <div class="bg-auto">
+                    <button type="button" class="btn-modal" id="bg-btn-auto">▶ Auto</button>
+                    <select id="bg-vel" class="bg-vel">
+                        <option value="4000">Lento</option>
+                        <option value="2500" selected>Normal</option>
+                        <option value="1200">Rápido</option>
+                    </select>
+                </div>
+                <label class="bg-check"><input type="checkbox" id="bg-automarcar"> Marcar solo lo que sale</label>
+                <button type="button" class="btn-modal bg-btn-bingo" id="bg-btn-bingo">¡BINGO!</button>
+            </div>
+        </div>
+        <div id="bg-carton" class="bg-carton"></div>
+        <div id="bg-rivales" class="bg-rivales"></div>
+        <div id="bg-mensaje" class="mensaje-elenco"></div>
+        <div id="bg-final" class="wordle-final oculto">
+            <div class="wordle-acciones">
+                <button type="button" class="btn-modal" id="bg-btn-compartir">Copiar resultado</button>
+                <button type="button" class="btn-modal" id="bg-btn-azar">Jugar otro al azar</button>
+            </div>
+            <p id="bg-stats" class="subtitulo-juegos"></p>
         </div>
     </section>
 

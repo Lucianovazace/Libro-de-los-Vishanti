@@ -27849,6 +27849,290 @@ if (adpBtnCompartir) {
     });
 }
 
+// ============================================================
+// JUEGO "BINGO DEL MULTIVERSO" (cartón 5x5 + bolillero + 2 rivales CPU)
+// ============================================================
+const BG_FUENTES = { todo: 'Marvel y DC', marvel: 'Marvel', dc: 'DC', obras: 'Películas y series' };
+const BG_MODOS = { linea: 'Línea', lleno: 'Cartón lleno' };
+const BG_TOTAL = 75;
+const BG_RIVALES = ['Nick Fury', 'Alfred', 'Rocket', 'Amanda Waller', 'Mayordomo de Stark', 'Oracle'];
+const BG_LINEAS = (function () {
+    const l = [];
+    for (let i = 0; i < 5; i++) { l.push([0, 1, 2, 3, 4].map(j => i * 5 + j)); l.push([0, 1, 2, 3, 4].map(j => j * 5 + i)); }
+    l.push([0, 6, 12, 18, 24]); l.push([4, 8, 12, 16, 20]);
+    return l;
+})();
+let bgFuente = (function () { try { const t = localStorage.getItem('bg-fuente'); return BG_FUENTES[t] ? t : 'todo'; } catch (e) { return 'todo'; } })();
+let bgModo = (function () { try { const t = localStorage.getItem('bg-modo'); return BG_MODOS[t] ? t : 'linea'; } catch (e) { return 'linea'; } })();
+let bgPartida = 'diaria';
+let bgItems = [];        // 75 elementos { n, u, img }
+let bgOrden = [];        // orden en que salen (índices de bgItems)
+let bgSalidas = 0;
+let bgCarton = [];       // 25 índices (el 12 es -1 = libre)
+let bgMarcas = [];       // 25 booleanos
+let bgRivales = [];      // { nombre, carton, marcas }
+let bgTerminado = false;
+let bgGano = false;
+let bgGanador = '';
+let bgFalsos = 0;
+let bgTimer = null;
+let bgRngCpu = Math.random;
+
+function bgPoolFuente() {
+    const vistos = new Set();
+    const out = [];
+    const add = (n, u, img) => { const k = conNorm(n); if (!k || vistos.has(k)) return; vistos.add(k); out.push({ n, u, img: img || null }); };
+    if (bgFuente === 'obras') {
+        adpConstruirTodo().filter(p => p.tipo === 'Película' || p.tipo === 'Serie').forEach(p => { if (p.titulo.length <= 30) add(p.titulo, 'Obra', p.poster); });
+    } else {
+        WORDLE_PALABRAS.forEach(p => {
+            if (bgFuente === 'marvel' && p.universo !== 'Marvel') return;
+            if (bgFuente === 'dc' && p.universo !== 'DC') return;
+            let img = null;
+            try { img = imagenDePersonaje(p.palabra); } catch (e) {}
+            add(ahNombreDe(p), p.universo, img);
+        });
+    }
+    return out;
+}
+
+function bgLineaCompleta(marcas) { return BG_LINEAS.some(l => l.every(i => marcas[i])); }
+function bgGanaCon(marcas) { return bgModo === 'lleno' ? marcas.every(Boolean) : bgLineaCompleta(marcas); }
+function bgFaltan(marcas) {
+    if (bgModo === 'lleno') return marcas.filter(m => !m).length;
+    return Math.min(...BG_LINEAS.map(l => l.filter(i => !marcas[i]).length));
+}
+function bgSalio(idx) { for (let k = 0; k < bgSalidas; k++) if (bgOrden[k] === idx) return true; return false; }
+
+function bgDetener() { if (bgTimer) { clearInterval(bgTimer); bgTimer = null; } const b = document.getElementById('bg-btn-auto'); if (b) b.textContent = '▶ Auto'; }
+
+function bgMensaje(t, tipo) {
+    const m = document.getElementById('bg-mensaje');
+    if (!m) return;
+    m.textContent = t || '';
+    m.className = 'mensaje-elenco' + (tipo ? ' ' + tipo : '');
+}
+
+function bgClaveLocal() { return 'bingo-dia-' + bgFuente + '-' + bgModo; }
+function bgStats() {
+    try { return JSON.parse(localStorage.getItem('bingo-stats') || 'null') || { jugadas: 0, ganadas: 0, racha: 0, mejor: 0 }; } catch (e) { return { jugadas: 0, ganadas: 0, racha: 0, mejor: 0 }; }
+}
+function bgGuardarStats(gano, bolillas) {
+    const s = bgStats();
+    s.jugadas++;
+    if (gano) { s.ganadas++; s.racha++; if (!s.mejor || bolillas < s.mejor) s.mejor = bolillas; } else s.racha = 0;
+    try { localStorage.setItem('bingo-stats', JSON.stringify(s)); } catch (e) {}
+}
+
+function bgDibujarCarton() {
+    const cont = document.getElementById('bg-carton');
+    if (!cont) return;
+    cont.innerHTML = '';
+    'BINGO'.split('').forEach(l => { const d = document.createElement('div'); d.className = 'bg-letra'; d.textContent = l; cont.appendChild(d); });
+    bgCarton.forEach((idx, i) => {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'bg-celda' + (idx === -1 ? ' libre' : '') + (bgMarcas[i] ? ' marcada' : '');
+        b.dataset.pos = i;
+        b.textContent = idx === -1 ? '★ LIBRE' : bgItems[idx].n;
+        if (idx !== -1) b.classList.add('u-' + bgItems[idx].u.toLowerCase());
+        b.addEventListener('click', () => bgMarcar(i));
+        cont.appendChild(b);
+    });
+}
+
+function bgDibujarRivales() {
+    const c = document.getElementById('bg-rivales');
+    if (!c) return;
+    c.innerHTML = '';
+    bgRivales.forEach(r => {
+        const f = bgFaltan(r.marcas);
+        const d = document.createElement('div');
+        d.className = 'bg-rival' + (bgTerminado && bgGanador === r.nombre ? ' gano' : '');
+        d.textContent = `🤖 ${r.nombre}: ${f === 0 ? '¡BINGO!' : 'le ' + (f === 1 ? 'falta 1' : 'faltan ' + f)}`;
+        c.appendChild(d);
+    });
+}
+
+function bgDibujarBola(animar) {
+    const bola = document.getElementById('bg-bola');
+    const num = document.getElementById('bg-bola-n');
+    const hist = document.getElementById('bg-historial');
+    if (num) num.textContent = `Bolilla ${bgSalidas} / ${BG_TOTAL}`;
+    if (bola) {
+        bola.innerHTML = '';
+        bola.className = 'bg-bola';
+        if (bgSalidas > 0) {
+            const it = bgItems[bgOrden[bgSalidas - 1]];
+            bola.classList.add('u-' + it.u.toLowerCase());
+            if (it.img) { const im = document.createElement('img'); im.src = it.img; im.alt = ''; im.className = 'bg-bola-img'; im.referrerPolicy = 'no-referrer'; im.onerror = () => im.remove(); bola.appendChild(im); }
+            const t = document.createElement('div'); t.className = 'bg-bola-nombre'; t.textContent = it.n; bola.appendChild(t);
+            if (animar) { void bola.offsetWidth; bola.classList.add('bg-giro'); }
+        } else {
+            bola.textContent = '🎱';
+        }
+    }
+    if (hist) {
+        hist.innerHTML = '';
+        for (let k = bgSalidas - 2; k >= Math.max(0, bgSalidas - 12); k--) {
+            const s = document.createElement('span'); s.className = 'bg-chip'; s.textContent = bgItems[bgOrden[k]].n; hist.appendChild(s);
+        }
+    }
+}
+
+function bgActualizarBotones() {
+    const sacar = document.getElementById('bg-btn-sacar'), bingo = document.getElementById('bg-btn-bingo'), auto = document.getElementById('bg-btn-auto');
+    if (sacar) sacar.disabled = bgTerminado || bgSalidas >= BG_TOTAL;
+    if (bingo) bingo.disabled = bgTerminado;
+    if (auto) auto.disabled = bgTerminado;
+}
+
+function bgMarcar(i) {
+    if (bgTerminado) return;
+    const idx = bgCarton[i];
+    if (idx === -1) return;
+    const cel = document.querySelector(`.bg-celda[data-pos="${i}"]`);
+    if (bgMarcas[i]) { bgMarcas[i] = false; if (cel) cel.classList.remove('marcada'); return; }
+    if (!bgSalio(idx)) {
+        bgMensaje('Esa todavía no salió del bolillero.', 'error');
+        if (cel) { cel.classList.remove('bg-no'); void cel.offsetWidth; cel.classList.add('bg-no'); }
+        return;
+    }
+    bgMarcas[i] = true;
+    if (cel) cel.classList.add('marcada');
+    bgMensaje('');
+}
+
+function bgTerminar(gano, ganador) {
+    bgTerminado = true;
+    bgGano = gano;
+    bgGanador = ganador || (gano ? 'Vos' : '');
+    bgDetener();
+    if (bgPartida === 'diaria') {
+        let previo = null;
+        try { previo = JSON.parse(localStorage.getItem(bgClaveLocal()) || 'null'); } catch (e) {}
+        if (!(previo && previo.fecha === wordleFechaHoy() && previo.terminado)) bgGuardarStats(gano, bgSalidas);
+        try { localStorage.setItem(bgClaveLocal(), JSON.stringify({ fecha: wordleFechaHoy(), terminado: true, gano, bolillas: bgSalidas, ganador: bgGanador })); } catch (e) {}
+    } else bgGuardarStats(gano, bgSalidas);
+    bgMostrarFinal();
+}
+
+function bgMostrarFinal() {
+    if (bgGano) bgMensaje(`🎉 ¡BINGO! Ganaste con ${bgSalidas} bolillas${bgFalsos ? ` (${bgFalsos} falsa${bgFalsos > 1 ? 's' : ''} alarma${bgFalsos > 1 ? 's' : ''})` : ''}.`, 'victoria');
+    else if (bgGanador === 'Descalificado') bgMensaje('Te descalificaron por cantar bingo en falso 3 veces. 😬', 'error');
+    else if (bgGanador) bgMensaje(`${bgGanador} cantó bingo antes que vos (bolilla ${bgSalidas}).`, 'error');
+    else bgMensaje('Se acabó el bolillero sin ganador.', 'error');
+    const fin = document.getElementById('bg-final');
+    if (fin) fin.classList.remove('oculto');
+    const st = document.getElementById('bg-stats');
+    if (st) { const s = bgStats(); st.textContent = `Partidas: ${s.jugadas} · Ganadas: ${s.ganadas} · Racha: ${s.racha}` + (s.mejor ? ` · Mejor: ${s.mejor} bolillas` : ''); }
+    bgDibujarRivales();
+    bgActualizarBotones();
+}
+
+function bgSacar() {
+    if (bgTerminado) return;
+    // Si algún rival ya tenía bingo con la bolilla anterior, lo canta antes de que salga la siguiente
+    const rival = bgRivales.find(r => bgGanaCon(r.marcas));
+    if (rival) return bgTerminar(false, rival.nombre);
+    if (bgSalidas >= BG_TOTAL) return bgTerminar(false, '');
+    const idx = bgOrden[bgSalidas];
+    bgSalidas++;
+    bgRivales.forEach(r => { const p = r.carton.indexOf(idx); if (p !== -1 && bgRngCpu() < 0.88) r.marcas[p] = true; });  // los rivales a veces se distraen
+    const auto = document.getElementById('bg-automarcar');
+    if (auto && auto.checked) { const p = bgCarton.indexOf(idx); if (p !== -1) { bgMarcas[p] = true; const cel = document.querySelector(`.bg-celda[data-pos="${p}"]`); if (cel) cel.classList.add('marcada'); } }
+    bgMensaje('');
+    bgDibujarBola(true);
+    bgDibujarRivales();
+    bgActualizarBotones();
+}
+
+function bgCantar() {
+    if (bgTerminado) return;
+    if (bgGanaCon(bgMarcas)) return bgTerminar(true);
+    bgFalsos++;
+    if (bgFalsos >= 3) { bgTerminar(false, 'Descalificado'); return; }
+    bgMensaje(`¡Falsa alarma! Todavía no tenés ${bgModo === 'lleno' ? 'el cartón lleno' : 'una línea'}. (${bgFalsos}/3 — a la tercera quedás afuera)`, 'error');
+}
+
+function bgAuto() {
+    if (bgTimer) { bgDetener(); return; }
+    const vel = parseInt((document.getElementById('bg-vel') || {}).value, 10) || 2500;
+    const b = document.getElementById('bg-btn-auto');
+    if (b) b.textContent = '⏸ Pausa';
+    bgSacar();
+    bgTimer = setInterval(() => {
+        const sec = document.getElementById('seccion-bingo');
+        if (!sec || sec.classList.contains('oculto') || bgTerminado) { bgDetener(); return; }
+        bgSacar();
+    }, vel);
+}
+
+function bgIniciar(partida) {
+    bgDetener();
+    bgPartida = partida;
+    bgTerminado = false; bgGano = false; bgGanador = ''; bgFalsos = 0; bgSalidas = 0;
+    document.getElementById('bg-final').classList.add('oculto');
+    document.querySelectorAll('.bg-fuente').forEach(b => b.classList.toggle('activo', b.dataset.fuente === bgFuente));
+    document.querySelectorAll('.bg-modo').forEach(b => b.classList.toggle('activo', b.dataset.modo === bgModo));
+    const todos = bgPoolFuente();
+    const sub = document.getElementById('bg-subtitulo');
+    if (todos.length < BG_TOTAL) {
+        // fuente chica: se usan todos los disponibles (mínimo para armar 3 cartones)
+        if (todos.length < 40) { if (sub) sub.textContent = 'Todavía no hay suficientes elementos para esta categoría.'; return; }
+    }
+    const rng = partida === 'diaria'
+        ? conRng(conFechaSemilla(4242 + Object.keys(BG_FUENTES).indexOf(bgFuente) * 911 + Object.keys(BG_MODOS).indexOf(bgModo) * 37))
+        : conRng((Math.random() * 4294967296) >>> 0);
+    bgRngCpu = conRng((conFechaSemilla(99) + (partida === 'diaria' ? Object.keys(BG_FUENTES).indexOf(bgFuente) * 7 + Object.keys(BG_MODOS).indexOf(bgModo) : Math.floor(Math.random() * 1e6))) >>> 0);
+    bgItems = conBarajar(todos, rng).slice(0, BG_TOTAL);
+    bgOrden = conBarajar(bgItems.map((_, i) => i), rng);
+    const armar = () => { const c = conBarajar(bgItems.map((_, i) => i), rng).slice(0, 24); c.splice(12, 0, -1); return c; };
+    bgCarton = armar();
+    bgMarcas = bgCarton.map(i => i === -1);
+    const nombres = conBarajar(BG_RIVALES, rng).slice(0, 2);
+    bgRivales = nombres.map(n => { const c = armar(); return { nombre: n, carton: c, marcas: c.map(i => i === -1) }; });
+    if (sub) sub.textContent = (partida === 'diaria' ? 'Bingo del día' : 'Bingo al azar') + ` (${BG_FUENTES[bgFuente]}, ${BG_MODOS[bgModo]}): marcá en tu cartón lo que va saliendo y cantá ¡BINGO! antes que tus rivales.`;
+    bgMensaje('');
+    bgDibujarCarton();
+    bgDibujarBola(false);
+    bgDibujarRivales();
+    bgActualizarBotones();
+    if (partida === 'diaria') {
+        let g = null;
+        try { g = JSON.parse(localStorage.getItem(bgClaveLocal()) || 'null'); } catch (e) {}
+        if (g && g.fecha === wordleFechaHoy() && g.terminado) {
+            // ya se jugó hoy: se muestra el resultado y el tablero como quedó
+            bgSalidas = Math.min(BG_TOTAL, g.bolillas || 0);
+            bgOrden.slice(0, bgSalidas).forEach(idx => { const p = bgCarton.indexOf(idx); if (p !== -1 && g.gano) bgMarcas[p] = true; bgRivales.forEach(r => { const q = r.carton.indexOf(idx); if (q !== -1) r.marcas[q] = true; }); });
+            bgTerminado = true; bgGano = !!g.gano; bgGanador = g.ganador || '';
+            bgDibujarCarton(); bgDibujarBola(false); bgMostrarFinal();
+        }
+    }
+}
+
+function bgTextoCompartir() {
+    return `Bingo del Multiverso (${BG_FUENTES[bgFuente]}, ${BG_MODOS[bgModo]}) ${bgGano ? '🎉 ¡BINGO en ' + bgSalidas + ' bolillas!' : '❌ ' + (bgGanador ? 'Ganó ' + bgGanador : 'sin ganador')}\nEl Multiverso`;
+}
+
+const tarjetaBingo = document.getElementById('tarjeta-bingo');
+if (tarjetaBingo) tarjetaBingo.addEventListener('click', () => { cambiarSeccion(document.getElementById('seccion-bingo')); bgIniciar('diaria'); });
+const btnVolverJuegosDesdeBingo = document.getElementById('btn-volver-juegos-desde-bingo');
+if (btnVolverJuegosDesdeBingo) btnVolverJuegosDesdeBingo.addEventListener('click', () => { bgDetener(); cambiarSeccion(document.getElementById('seccion-juegos')); });
+document.querySelectorAll('.bg-fuente').forEach(b => b.addEventListener('click', () => { bgFuente = b.dataset.fuente; try { localStorage.setItem('bg-fuente', bgFuente); } catch (e) {} bgIniciar('diaria'); }));
+document.querySelectorAll('.bg-modo').forEach(b => b.addEventListener('click', () => { bgModo = b.dataset.modo; try { localStorage.setItem('bg-modo', bgModo); } catch (e) {} bgIniciar('diaria'); }));
+const bgBtnSacar = document.getElementById('bg-btn-sacar'); if (bgBtnSacar) bgBtnSacar.addEventListener('click', bgSacar);
+const bgBtnAuto = document.getElementById('bg-btn-auto'); if (bgBtnAuto) bgBtnAuto.addEventListener('click', bgAuto);
+const bgSelVel = document.getElementById('bg-vel'); if (bgSelVel) bgSelVel.addEventListener('change', () => { if (bgTimer) { bgDetener(); bgAuto(); } });
+const bgBtnBingo = document.getElementById('bg-btn-bingo'); if (bgBtnBingo) bgBtnBingo.addEventListener('click', bgCantar);
+const bgBtnAzar = document.getElementById('bg-btn-azar'); if (bgBtnAzar) bgBtnAzar.addEventListener('click', () => bgIniciar('azar'));
+const bgBtnCompartir = document.getElementById('bg-btn-compartir');
+if (bgBtnCompartir) bgBtnCompartir.addEventListener('click', () => {
+    const aviso = () => { bgBtnCompartir.textContent = '¡Copiado!'; setTimeout(() => { bgBtnCompartir.textContent = 'Copiar resultado'; }, 1800); };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(bgTextoCompartir()).then(aviso).catch(() => {});
+    else aviso();
+});
+
 const tarjetaGrillas = document.getElementById('tarjeta-grillas');
 if (tarjetaGrillas) {
     tarjetaGrillas.addEventListener('click', () => {
