@@ -25789,6 +25789,7 @@ const MOM_METRICAS = {
     lb: { fuente: 'Letterboxd', sufijo: '/5', decimales: 2 }
 };
 let momMetrica = (function () { try { const m = localStorage.getItem('masomenos-metrica'); return MOM_METRICAS[m] ? m : 'rt'; } catch (e) { return 'rt'; } })();
+let momTipo = 'todo';
 let momPool = [];
 let momUsados = new Set();
 let momIzq = null;
@@ -25801,6 +25802,8 @@ function momConstruirPool() {
     const fuente = MOM_METRICAS[momMetrica].fuente;
     const vistos = new Set();
     const pool = [];
+    const tipoPorFicha = {};
+    (typeof listaMedia !== 'undefined' ? listaMedia : []).forEach(x => { if (x.fichaTecnicaId && !tipoPorFicha[x.fichaTecnicaId]) tipoPorFicha[x.fichaTecnicaId] = x.tipo; });
     document.querySelectorAll('section[id^="seccion-ficha-"]').forEach(sec => {
         const poster = sec.querySelector('.ficha-tecnica-poster');
         if (!poster || !poster.alt) return;
@@ -25815,7 +25818,14 @@ function momConstruirPool() {
         });
         if (valor === null || vistos.has(poster.alt)) return;
         vistos.add(poster.alt);
-        pool.push({ titulo: poster.alt, poster: poster.getAttribute('src'), valor });
+        const idFicha = sec.id.replace('seccion-ficha-', '');
+        const esJuego = [...sec.querySelectorAll('.puntuacion-fuente')].some(f => ['GameSpot', 'Vandal'].includes(f.textContent.trim()));
+        let tipo = tipoPorFicha[idFicha] || ((esJuego || /^LEGO/i.test(poster.alt)) ? 'Videojuego' : 'Película');
+        if (/^Serie/.test(tipo)) tipo = 'Serie';
+        else if (tipo === 'Videojuego') tipo = 'Videojuego';
+        else if (tipo === 'Película' || tipo === 'Animación') tipo = 'Película';
+        else tipo = 'Otro';
+        pool.push({ titulo: poster.alt, poster: poster.getAttribute('src'), valor, tipo });
     });
     return pool;
 }
@@ -25839,6 +25849,14 @@ function momElegirNueva(izq) {
         momUsados = new Set(izq ? [izq.titulo] : []);
         candidatos = momPool.filter(p => !izq || (p.valor !== izq.valor && p.titulo !== izq.titulo));
     }
+    // Dificultad progresiva: a medida que sube la racha, las dos obras tienen puntuaciones cada vez más cercanas.
+    if (izq && momRacha > 0) {
+        const valores = momPool.map(p => p.valor);
+        const rango = Math.max(...valores) - Math.min(...valores);
+        const tope = rango * Math.max(0.06, 0.5 - 0.05 * momRacha);
+        const cercanos = candidatos.filter(p => Math.abs(p.valor - izq.valor) <= tope);
+        if (cercanos.length >= 3) candidatos = cercanos;
+    }
     const elegida = candidatos[Math.floor(Math.random() * candidatos.length)];
     momUsados.add(elegida.titulo);
     return elegida;
@@ -25854,10 +25872,13 @@ function momCarta(item, oculto) {
     const t = document.createElement('div');
     t.className = 'mom-titulo';
     t.textContent = item.titulo;
+    const ti = document.createElement('div');
+    ti.className = 'mom-tipo';
+    ti.textContent = item.tipo;
     const p = document.createElement('div');
     p.className = 'mom-puntaje';
     p.textContent = oculto ? '?' : momFormato(item.valor);
-    d.append(img, t, p);
+    d.append(img, t, ti, p);
     return d;
 }
 
@@ -25867,15 +25888,48 @@ function momDibujar(revelarDer, acerto) {
     cont.innerHTML = '';
     const izq = momCarta(momIzq, false);
     const der = momCarta(momDer, !revelarDer);
-    if (revelarDer) der.classList.add(acerto ? 'mom-acierto' : 'mom-error');
+    if (revelarDer) {
+        der.classList.add(acerto ? 'mom-acierto' : 'mom-error');
+        const pu = der.querySelector('.mom-puntaje');
+        const dec = MOM_METRICAS[momMetrica].decimales;
+        const meta = momDer.valor;
+        const t0 = performance.now();
+        const paso = (t) => {
+            const f = Math.min(1, (t - t0) / 700);
+            pu.textContent = (meta * f).toFixed(dec) + MOM_METRICAS[momMetrica].sufijo;
+            if (f < 1) requestAnimationFrame(paso);
+        };
+        requestAnimationFrame(paso);
+    }
     cont.append(izq, der);
     document.getElementById('mom-racha').textContent = momRacha;
     document.getElementById('mom-mejor').textContent = Math.max(momMejor(), momRacha);
     document.getElementById('mom-botones').classList.toggle('oculto', momTerminado || revelarDer);
 }
 
+function momDibujarTipos(todas) {
+    const cont = document.getElementById('mom-tipos');
+    if (!cont) return;
+    const tipos = ['todo'].concat(['Película', 'Serie', 'Videojuego'].filter(t => todas.some(p => p.tipo === t)));
+    if (tipos.length <= 2) { cont.classList.add('oculto'); momTipo = 'todo'; return; }
+    if (!tipos.includes(momTipo)) momTipo = 'todo';
+    cont.classList.remove('oculto');
+    cont.innerHTML = '';
+    tipos.forEach(t => {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'btn-modal mom-tipo-btn' + (t === momTipo ? ' activo' : '');
+        b.textContent = t === 'todo' ? 'Todo' : t === 'Película' ? 'Películas' : t === 'Serie' ? 'Series' : 'Juegos';
+        b.addEventListener('click', () => { momTipo = t; momIniciar(); });
+        cont.appendChild(b);
+    });
+}
+
 function momIniciar() {
-    momPool = momConstruirPool();
+    const todas = momConstruirPool();
+    momDibujarTipos(todas);
+    momPool = momTipo === 'todo' ? todas : todas.filter(p => p.tipo === momTipo);
+    momMostrarGlobal(false);
     momUsados = new Set();
     momRacha = 0;
     momTerminado = false;
@@ -25895,6 +25949,32 @@ function momIniciar() {
     momDibujar(false, false);
 }
 
+function momDocGlobal() {
+    return db.collection('estadisticas').doc('mas-o-menos-' + momMetrica);
+}
+
+function momMostrarGlobal(sumar) {
+    const el = document.getElementById('mom-global');
+    if (!el) return;
+    try {
+        const ref = momDocGlobal();
+        const previo = sumar ? ref.set({ totalPartidas: firebase.firestore.FieldValue.increment(1), totalRacha: firebase.firestore.FieldValue.increment(momRacha) }, { merge: true }) : Promise.resolve();
+        previo.then(() => ref.get()).then(doc => {
+            if (!doc.exists) { el.textContent = ''; return; }
+            const d = doc.data();
+            if (sumar && momRacha > (d.mejorRacha || 0)) ref.set({ mejorRacha: momRacha }, { merge: true });
+            const mejor = Math.max(d.mejorRacha || 0, sumar ? momRacha : 0);
+            const prom = d.totalPartidas ? (d.totalRacha / d.totalPartidas).toFixed(1) : '-';
+            el.textContent = `📊 Entre todos: racha promedio de ${prom}, mejor racha ${mejor} (${d.totalPartidas || 0} partidas en ${MOM_METRICAS[momMetrica].fuente}).`;
+        }).catch(() => {});
+    } catch (e) {}
+}
+
+function momTextoCompartir() {
+    const tipo = momTipo === 'todo' ? '' : ' · ' + (momTipo === 'Película' ? 'Películas' : momTipo === 'Serie' ? 'Series' : 'Juegos');
+    return `Más o Menos (${MOM_METRICAS[momMetrica].fuente}${tipo}): racha de ${momRacha} 🔥\n${'🟩'.repeat(Math.min(momRacha, 15))}${'🟥'}`;
+}
+
 function momResponder(mayor) {
     if (momTerminado || momBloqueado) return;
     momBloqueado = true;
@@ -25912,6 +25992,7 @@ function momResponder(mayor) {
     } else {
         momTerminado = true;
         momGuardarMejor();
+        momMostrarGlobal(true);
         document.getElementById('mom-mejor').textContent = momMejor();
         const fin = document.getElementById('mom-final');
         fin.classList.remove('oculto');
@@ -25937,6 +26018,21 @@ const momBtnMayor = document.getElementById('mom-btn-mayor');
 if (momBtnMayor) momBtnMayor.addEventListener('click', () => momResponder(true));
 const momBtnMenor = document.getElementById('mom-btn-menor');
 if (momBtnMenor) momBtnMenor.addEventListener('click', () => momResponder(false));
+document.addEventListener('keydown', (e) => {
+    const sec = document.getElementById('seccion-masomenos');
+    if (!sec || sec.classList.contains('oculto') || e.ctrlKey || e.metaKey || e.altKey) return;
+    if (e.key === 'ArrowUp') { e.preventDefault(); momResponder(true); }
+    else if (e.key === 'ArrowDown') { e.preventDefault(); momResponder(false); }
+});
+const momBtnCompartir = document.getElementById('mom-btn-compartir');
+if (momBtnCompartir) {
+    momBtnCompartir.addEventListener('click', () => {
+        const texto = momTextoCompartir();
+        const aviso = () => { momBtnCompartir.textContent = '¡Copiado!'; setTimeout(() => { momBtnCompartir.textContent = 'Copiar resultado'; }, 1800); };
+        if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(texto).then(aviso).catch(() => {});
+        else aviso();
+    });
+}
 const momBtnReintentar = document.getElementById('mom-btn-reintentar');
 if (momBtnReintentar) momBtnReintentar.addEventListener('click', momIniciar);
 

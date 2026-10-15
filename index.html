@@ -14456,7 +14456,7 @@
             <div class="tarjeta-juego" id="tarjeta-masomenos">
                 <div class="icono-juego">📊</div>
                 <h3>Más o Menos</h3>
-                <p>Dos obras, una puntuación: ¿la de la derecha es mayor o menor? Cuántas seguidas podés acertar.</p>
+                <p>Dos obras, una puntuación: ¿la de la derecha es mayor o menor? Cuántas seguidas podés acertar (cada vez más difícil).</p>
             </div>
             <div class="tarjeta-juego" id="tarjeta-grillas">
                 <div class="icono-juego">🔲</div>
@@ -14497,9 +14497,10 @@
         <h2>Más o Menos 📊</h2>
         <div class="wordle-niveles">
             <button type="button" class="btn-modal mom-metrica" data-metrica="rt">Rotten Tomatoes</button>
-            <button type="button" class="btn-modal mom-metrica" data-metrica="mc">Metacritic (juegos)</button>
+            <button type="button" class="btn-modal mom-metrica" data-metrica="mc">Metacritic</button>
             <button type="button" class="btn-modal mom-metrica" data-metrica="lb">Letterboxd</button>
         </div>
+        <div id="mom-tipos" class="wordle-niveles oculto"></div>
         <p class="subtitulo-juegos" id="mom-subtitulo"></p>
         <p class="subtitulo-juegos">Racha: <strong id="mom-racha">0</strong> · Mejor: <strong id="mom-mejor">0</strong></p>
         <div id="mom-juego" class="mom-juego"></div>
@@ -14509,7 +14510,8 @@
         </div>
         <div id="mom-final" class="wordle-final oculto">
             <div id="mom-final-texto"></div>
-            <div class="wordle-acciones"><button type="button" class="btn-modal" id="mom-btn-reintentar">Jugar de nuevo</button></div>
+            <div class="wordle-acciones"><button type="button" class="btn-modal" id="mom-btn-compartir">Copiar resultado</button><button type="button" class="btn-modal" id="mom-btn-reintentar">Jugar de nuevo</button></div>
+            <p id="mom-global" class="subtitulo-juegos"></p>
         </div>
     </section>
 

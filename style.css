@@ -1943,3 +1943,9 @@ h2 {
 #mom-botones .btn-modal, #mom-final .btn-modal { flex: 0 1 200px; }
 
 .wordle-final-img { display: block; margin: 8px auto; max-width: 220px; max-height: 260px; object-fit: contain; border-radius: 10px; }
+
+.mom-tipo { font-size: 0.75rem; opacity: 0.7; margin-bottom: 4px; }
+.mom-tipo-btn.activo { outline: 2px solid currentColor; font-weight: bold; }
+@keyframes mom-sacudir { 0%,100% { transform: translateX(0); } 25% { transform: translateX(-6px); } 75% { transform: translateX(6px); } }
+.mom-error { animation: mom-sacudir 0.35s; }
+#mom-final .btn-modal { flex: 0 1 200px; }
