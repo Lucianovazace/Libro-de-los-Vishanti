@@ -25706,6 +25706,168 @@ if (wordleBtnCompartir) {
     });
 }
 
+
+// ==========================================
+// JUEGO "MÁS O MENOS" (¿tiene mejor o peor puntuación?)
+// ==========================================
+// Sale de las puntuaciones que ya están en las fichas del sitio (Rotten Tomatoes, Metacritic, Letterboxd).
+const MOM_METRICAS = {
+    rt: { fuente: 'Rotten Tomatoes', sufijo: '%', decimales: 0 },
+    mc: { fuente: 'Metacritic', sufijo: '/100', decimales: 0 },
+    lb: { fuente: 'Letterboxd', sufijo: '/5', decimales: 2 }
+};
+let momMetrica = (function () { try { const m = localStorage.getItem('masomenos-metrica'); return MOM_METRICAS[m] ? m : 'rt'; } catch (e) { return 'rt'; } })();
+let momPool = [];
+let momUsados = new Set();
+let momIzq = null;
+let momDer = null;
+let momRacha = 0;
+let momTerminado = false;
+let momBloqueado = false;
+
+function momConstruirPool() {
+    const fuente = MOM_METRICAS[momMetrica].fuente;
+    const vistos = new Set();
+    const pool = [];
+    document.querySelectorAll('section[id^="seccion-ficha-"]').forEach(sec => {
+        const poster = sec.querySelector('.ficha-tecnica-poster');
+        if (!poster || !poster.alt) return;
+        let valor = null;
+        sec.querySelectorAll('.puntuacion-card').forEach(card => {
+            const f = card.querySelector('.puntuacion-fuente');
+            const v = card.querySelector('.puntuacion-valor');
+            if (f && v && f.textContent.trim() === fuente) {
+                const n = parseFloat(v.textContent.replace('%', '').replace(',', '.'));
+                if (!isNaN(n)) valor = n;
+            }
+        });
+        if (valor === null || vistos.has(poster.alt)) return;
+        vistos.add(poster.alt);
+        pool.push({ titulo: poster.alt, poster: poster.getAttribute('src'), valor });
+    });
+    return pool;
+}
+
+function momFormato(valor) {
+    const m = MOM_METRICAS[momMetrica];
+    return valor.toFixed(m.decimales) + m.sufijo;
+}
+
+function momMejor() {
+    try { return Number(localStorage.getItem('masomenos-mejor-' + momMetrica)) || 0; } catch (e) { return 0; }
+}
+
+function momGuardarMejor() {
+    try { if (momRacha > momMejor()) localStorage.setItem('masomenos-mejor-' + momMetrica, String(momRacha)); } catch (e) {}
+}
+
+function momElegirNueva(izq) {
+    let candidatos = momPool.filter(p => !momUsados.has(p.titulo) && (!izq || (p.valor !== izq.valor && p.titulo !== izq.titulo)));
+    if (!candidatos.length) {
+        momUsados = new Set(izq ? [izq.titulo] : []);
+        candidatos = momPool.filter(p => !izq || (p.valor !== izq.valor && p.titulo !== izq.titulo));
+    }
+    const elegida = candidatos[Math.floor(Math.random() * candidatos.length)];
+    momUsados.add(elegida.titulo);
+    return elegida;
+}
+
+function momCarta(item, oculto) {
+    const d = document.createElement('div');
+    d.className = 'mom-carta';
+    const img = document.createElement('img');
+    img.className = 'mom-poster';
+    img.src = item.poster;
+    img.alt = item.titulo;
+    const t = document.createElement('div');
+    t.className = 'mom-titulo';
+    t.textContent = item.titulo;
+    const p = document.createElement('div');
+    p.className = 'mom-puntaje';
+    p.textContent = oculto ? '?' : momFormato(item.valor);
+    d.append(img, t, p);
+    return d;
+}
+
+function momDibujar(revelarDer, acerto) {
+    const cont = document.getElementById('mom-juego');
+    if (!cont) return;
+    cont.innerHTML = '';
+    const izq = momCarta(momIzq, false);
+    const der = momCarta(momDer, !revelarDer);
+    if (revelarDer) der.classList.add(acerto ? 'mom-acierto' : 'mom-error');
+    cont.append(izq, der);
+    document.getElementById('mom-racha').textContent = momRacha;
+    document.getElementById('mom-mejor').textContent = Math.max(momMejor(), momRacha);
+    document.getElementById('mom-botones').classList.toggle('oculto', momTerminado || revelarDer);
+}
+
+function momIniciar() {
+    momPool = momConstruirPool();
+    momUsados = new Set();
+    momRacha = 0;
+    momTerminado = false;
+    momBloqueado = false;
+    document.querySelectorAll('.mom-metrica').forEach(b => b.classList.toggle('activo', b.dataset.metrica === momMetrica));
+    document.getElementById('mom-final').classList.add('oculto');
+    const sub = document.getElementById('mom-subtitulo');
+    if (momPool.length < 2) {
+        if (sub) sub.textContent = 'Todavía no hay suficientes puntuaciones de esta fuente.';
+        document.getElementById('mom-juego').innerHTML = '';
+        document.getElementById('mom-botones').classList.add('oculto');
+        return;
+    }
+    if (sub) sub.textContent = `¿La obra de la derecha tiene una puntuación mayor o menor en ${MOM_METRICAS[momMetrica].fuente} que la de la izquierda? (${momPool.length} obras)`;
+    momIzq = momElegirNueva(null);
+    momDer = momElegirNueva(momIzq);
+    momDibujar(false, false);
+}
+
+function momResponder(mayor) {
+    if (momTerminado || momBloqueado) return;
+    momBloqueado = true;
+    const acerto = mayor ? momDer.valor > momIzq.valor : momDer.valor < momIzq.valor;
+    momDibujar(true, acerto);
+    if (acerto) {
+        momRacha++;
+        document.getElementById('mom-racha').textContent = momRacha;
+        setTimeout(() => {
+            momIzq = momDer;
+            momDer = momElegirNueva(momIzq);
+            momBloqueado = false;
+            momDibujar(false, false);
+        }, 1400);
+    } else {
+        momTerminado = true;
+        momGuardarMejor();
+        document.getElementById('mom-mejor').textContent = momMejor();
+        const fin = document.getElementById('mom-final');
+        fin.classList.remove('oculto');
+        document.getElementById('mom-final-texto').innerHTML = `<h3>${momRacha === 0 ? 'Fallaste a la primera' : '¡Racha de ' + momRacha + '!'}</h3><p>Mejor racha en ${MOM_METRICAS[momMetrica].fuente}: <strong>${momMejor()}</strong></p>`;
+    }
+}
+
+const tarjetaMasOMenos = document.getElementById('tarjeta-masomenos');
+if (tarjetaMasOMenos) {
+    tarjetaMasOMenos.addEventListener('click', () => {
+        momIniciar();
+        cambiarSeccion(document.getElementById('seccion-masomenos'));
+    });
+}
+const btnVolverJuegosDesdeMom = document.getElementById('btn-volver-juegos-desde-masomenos');
+if (btnVolverJuegosDesdeMom) btnVolverJuegosDesdeMom.addEventListener('click', () => cambiarSeccion(document.getElementById('seccion-juegos')));
+document.querySelectorAll('.mom-metrica').forEach(b => b.addEventListener('click', () => {
+    momMetrica = b.dataset.metrica;
+    try { localStorage.setItem('masomenos-metrica', momMetrica); } catch (e) {}
+    momIniciar();
+}));
+const momBtnMayor = document.getElementById('mom-btn-mayor');
+if (momBtnMayor) momBtnMayor.addEventListener('click', () => momResponder(true));
+const momBtnMenor = document.getElementById('mom-btn-menor');
+if (momBtnMenor) momBtnMenor.addEventListener('click', () => momResponder(false));
+const momBtnReintentar = document.getElementById('mom-btn-reintentar');
+if (momBtnReintentar) momBtnReintentar.addEventListener('click', momIniciar);
+
 const tarjetaGrillas = document.getElementById('tarjeta-grillas');
 if (tarjetaGrillas) {
     tarjetaGrillas.addEventListener('click', () => {

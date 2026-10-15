@@ -14453,6 +14453,11 @@
                 <h3>Wordle de Personajes</h3>
                 <p>Una palabra por día: adiviná el nombre o alias de 5 o 6 letras de un personaje (fácil, medio o difícil) de DC o Marvel.</p>
             </div>
+            <div class="tarjeta-juego" id="tarjeta-masomenos">
+                <div class="icono-juego">📊</div>
+                <h3>Más o Menos</h3>
+                <p>Dos obras, una puntuación: ¿la de la derecha es mayor o menor? Cuántas seguidas podés acertar.</p>
+            </div>
             <div class="tarjeta-juego" id="tarjeta-grillas">
                 <div class="icono-juego">🔲</div>
                 <h3>Grillas</h3>
@@ -14486,6 +14491,28 @@
     </section>
 
     <!-- SECCIÓN: JUEGOS - GRILLAS - SELECTOR -->
+    <!-- SECCIÓN: JUEGO - MÁS O MENOS -->
+    <section id="seccion-masomenos" class="oculto">
+        <button class="btn-volver" id="btn-volver-juegos-desde-masomenos">← Volver a Juegos</button>
+        <h2>Más o Menos 📊</h2>
+        <div class="wordle-niveles">
+            <button type="button" class="btn-modal mom-metrica" data-metrica="rt">Rotten Tomatoes</button>
+            <button type="button" class="btn-modal mom-metrica" data-metrica="mc">Metacritic (juegos)</button>
+            <button type="button" class="btn-modal mom-metrica" data-metrica="lb">Letterboxd</button>
+        </div>
+        <p class="subtitulo-juegos" id="mom-subtitulo"></p>
+        <p class="subtitulo-juegos">Racha: <strong id="mom-racha">0</strong> · Mejor: <strong id="mom-mejor">0</strong></p>
+        <div id="mom-juego" class="mom-juego"></div>
+        <div id="mom-botones" class="wordle-acciones oculto">
+            <button type="button" class="btn-modal" id="mom-btn-mayor">▲ Mayor</button>
+            <button type="button" class="btn-modal" id="mom-btn-menor">▼ Menor</button>
+        </div>
+        <div id="mom-final" class="wordle-final oculto">
+            <div id="mom-final-texto"></div>
+            <div class="wordle-acciones"><button type="button" class="btn-modal" id="mom-btn-reintentar">Jugar de nuevo</button></div>
+        </div>
+    </section>
+
     <section id="seccion-grillas-selector" class="oculto">
         <button class="btn-volver" id="btn-volver-juegos-desde-grillas">← Volver a Juegos</button>
         <h2>Grillas 🔲</h2>
