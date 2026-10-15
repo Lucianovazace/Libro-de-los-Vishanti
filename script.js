@@ -27135,6 +27135,390 @@ document.addEventListener('keydown', (e) => {
 // JUEGO "ADIVINÁ EL PÓSTER" (póster pixelado que se va aclarando)
 // ==========================================
 // Los pósters y títulos salen de las fichas técnicas del sitio (section[id^="seccion-ficha-"]), igual que Más o Menos.
+// Títulos alternativos (español/inglés) que también se aceptan y se buscan
+const ADP_ALIAS = {
+ "The Incredible Hulk": [
+  "El Increíble Hulk",
+  "Hulk"
+ ],
+ "Captain America: The First Avenger": [
+  "Capitán América: El primer vengador",
+  "Capitán América"
+ ],
+ "The Avengers": [
+  "Los Vengadores",
+  "Avengers",
+  "Vengadores"
+ ],
+ "Thor: The Dark World": [
+  "Thor: El mundo oscuro"
+ ],
+ "Captain America: The Winter Soldier": [
+  "Capitán América: El soldado de invierno"
+ ],
+ "X-Men: First Class": [
+  "X-Men: Primera generación"
+ ],
+ "X-Men Origins: Wolverine": [
+  "X-Men Orígenes: Wolverine",
+  "Wolverine Orígenes"
+ ],
+ "X-Men (2000)": [
+  "X-Men"
+ ],
+ "X2: X-Men United": [
+  "X-Men 2",
+  "X2"
+ ],
+ "X-Men: The Last Stand": [
+  "X-Men: La batalla final",
+  "X-Men 3"
+ ],
+ "The Wolverine": [
+  "Wolverine Inmortal",
+  "Lobezno Inmortal"
+ ],
+ "X-Men: Days of Future Past": [
+  "X-Men: Días del futuro pasado"
+ ],
+ "X-Men: Apocalypse": [
+  "X-Men: Apocalipsis"
+ ],
+ "X-Men Dark Phoenix": [
+  "X-Men: Fénix Oscura",
+  "Dark Phoenix"
+ ],
+ "Avengers: Infinity War": [
+  "Avengers: Guerra del Infinito",
+  "Vengadores: Infinity War"
+ ],
+ "Avengers: Endgame": [
+  "Vengadores: Endgame",
+  "Avengers: Fin del juego"
+ ],
+ "Avengers: Era de Ultron": [
+  "Avengers: Age of Ultron",
+  "Vengadores: La era de Ultrón"
+ ],
+ "Capitán América: Civil War": [
+  "Captain America: Civil War"
+ ],
+ "Black Panther": [
+  "Pantera Negra"
+ ],
+ "Black Panther: Wakanda Forever": [
+  "Pantera Negra: Wakanda por siempre"
+ ],
+ "Doctor Strange": [
+  "Doctor Strange: Hechicero Supremo",
+  "Doctor Extraño"
+ ],
+ "Doctor Strange in the Multiverse of Madness": [
+  "Doctor Strange en el multiverso de la locura",
+  "Doctor Strange 2"
+ ],
+ "Spider-Man: Homecoming": [
+  "Spider-Man: De regreso a casa"
+ ],
+ "Spider-Man: Far From Home": [
+  "Spider-Man: Lejos de casa"
+ ],
+ "Spider-Man: No Way Home": [
+  "Spider-Man: Sin camino a casa"
+ ],
+ "Spider-Man: Into the Spider-Verse": [
+  "Spider-Man: Un nuevo universo",
+  "Spider-Verse"
+ ],
+ "Ant-Man": [
+  "El Hombre Hormiga"
+ ],
+ "Ant-Man and The Wasp": [
+  "Ant-Man y la Avispa"
+ ],
+ "Ant-Man and The Wasp: Quantumania": [
+  "Ant-Man y la Avispa: Quantumanía"
+ ],
+ "Guardians of the Galaxy Vol. 2": [
+  "Guardianes de la Galaxia Vol. 2"
+ ],
+ "Guardians of the Galaxy Vol. 3": [
+  "Guardianes de la Galaxia Vol. 3"
+ ],
+ "Guardianes de la Galaxia": [
+  "Guardians of the Galaxy"
+ ],
+ "Thor: Love and Thunder": [
+  "Thor: Amor y trueno"
+ ],
+ "Captain Marvel": [
+  "Capitana Marvel"
+ ],
+ "The Marvels": [
+  "Las Marvels"
+ ],
+ "Black Widow": [
+  "Viuda Negra"
+ ],
+ "Shang-Chi y la leyenda de los Diez Anillos": [
+  "Shang-Chi",
+  "Shang-Chi and the Legend of the Ten Rings"
+ ],
+ "Eternals": [
+  "Los Eternos"
+ ],
+ "Hawkeye": [
+  "Ojo de Halcón"
+ ],
+ "Thunderbolts*": [
+  "Thunderbolts"
+ ],
+ "Captain America: Brave New World": [
+  "Capitán América: Un nuevo mundo"
+ ],
+ "The Fantastic Four: First Steps": [
+  "Los 4 Fantásticos: Primeros pasos",
+  "Los Cuatro Fantásticos",
+  "Los Cuatro Fantásticos: Primeros pasos"
+ ],
+ "Deadpool & Wolverine": [
+  "Deadpool y Wolverine"
+ ],
+ "The New Mutants": [
+  "Los Nuevos Mutantes"
+ ],
+ "Man of Steel": [
+  "El Hombre de Acero"
+ ],
+ "Batman v Superman: Dawn of Justice": [
+  "Batman vs Superman: El origen de la justicia",
+  "Batman v Superman"
+ ],
+ "The Suicide Squad": [
+  "El Escuadrón Suicida"
+ ],
+ "Birds of Prey (2002)": [
+  "Aves de Presa"
+ ],
+ "Batman: El Largo Halloween": [
+  "Batman: The Long Halloween"
+ ],
+ "It": [
+  "Eso",
+  "IT"
+ ],
+ "El Exorcista": [
+  "The Exorcist"
+ ],
+ "Psicosis": [
+  "Psycho"
+ ],
+ "El Resplandor": [
+  "The Shining",
+  "Shining"
+ ],
+ "El Conjuro": [
+  "The Conjuring"
+ ],
+ "Halloween (1978)": [
+  "Halloween"
+ ],
+ "Toy Story de Terror": [
+  "Toy Story of Terror"
+ ],
+ "Hotel Transylvania": [
+  "Hotel Transilvania"
+ ],
+ "El Extraño Mundo de Jack": [
+  "The Nightmare Before Christmas",
+  "Pesadilla antes de Navidad"
+ ],
+ "Los Mundos de Coraline": [
+  "Coraline"
+ ],
+ "Prometeo": [
+  "Prometheus"
+ ],
+ "Star Wars: Episodio I - La Amenaza Fantasma": [
+  "La Amenaza Fantasma",
+  "The Phantom Menace",
+  "Star Wars Episodio I"
+ ],
+ "Star Wars: Episodio II - El Ataque de los Clones": [
+  "El Ataque de los Clones",
+  "Attack of the Clones",
+  "Star Wars Episodio II"
+ ],
+ "Star Wars: Episodio III - La Venganza de los Sith": [
+  "La Venganza de los Sith",
+  "Revenge of the Sith",
+  "Star Wars Episodio III"
+ ],
+ "Star Wars: Episodio IV - Una Nueva Esperanza": [
+  "Una Nueva Esperanza",
+  "A New Hope",
+  "Star Wars"
+ ],
+ "Star Wars: Episodio V - El Imperio Contraataca": [
+  "El Imperio Contraataca",
+  "The Empire Strikes Back",
+  "Star Wars Episodio V"
+ ],
+ "Star Wars: Episodio VI - El Retorno del Jedi": [
+  "El Retorno del Jedi",
+  "Return of the Jedi",
+  "Star Wars Episodio VI"
+ ],
+ "Star Wars: Episodio VII - El Despertar de la Fuerza": [
+  "El Despertar de la Fuerza",
+  "The Force Awakens",
+  "Star Wars Episodio VII"
+ ],
+ "Star Wars: Episodio VIII - Los Últimos Jedi": [
+  "Los Últimos Jedi",
+  "The Last Jedi",
+  "Star Wars Episodio VIII"
+ ],
+ "Star Wars: Episodio IX - El Ascenso de Skywalker": [
+  "El Ascenso de Skywalker",
+  "The Rise of Skywalker",
+  "Star Wars Episodio IX"
+ ],
+ "Rogue One: A Star Wars Story": [
+  "Rogue One"
+ ],
+ "Solo: A Star Wars Story": [
+  "Han Solo: Una historia de Star Wars",
+  "Solo"
+ ],
+ "The Acolyte": [
+  "El Acólito"
+ ],
+ "Star Wars: Tales of the Jedi": [
+  "Relatos de los Jedi"
+ ],
+ "Star Wars: Tales of the Underworld": [
+  "Relatos del Inframundo"
+ ],
+ "The Clone Wars (Película)": [
+  "Star Wars: The Clone Wars",
+  "Las Guerras Clon"
+ ],
+ "The Clone Wars (Serie)": [
+  "Star Wars: The Clone Wars",
+  "Las Guerras Clon"
+ ],
+ "Dune: Parte Uno": [
+  "Dune",
+  "Dune: Part One"
+ ],
+ "Dune: Parte Dos": [
+  "Dune: Part Two",
+  "Dune 2"
+ ],
+ "Arrival": [
+  "La llegada"
+ ],
+ "Prisoners": [
+  "Prisioneros"
+ ],
+ "Mad Max: Fury Road": [
+  "Mad Max: Furia en el camino"
+ ],
+ "Animales Fantásticos y Dónde Encontrarlos": [
+  "Fantastic Beasts and Where to Find Them"
+ ],
+ "Animales Fantásticos: Los Crímenes de Grindelwald": [
+  "Fantastic Beasts: The Crimes of Grindelwald"
+ ],
+ "The Lego Batman Movie": [
+  "Batman: La Lego película",
+  "LEGO Batman: La película"
+ ],
+ "Gato con Botas: El Último Deseo": [
+  "Puss in Boots: The Last Wish"
+ ],
+ "El Gato con Botas": [
+  "Puss in Boots"
+ ],
+ "Shrek Tercero": [
+  "Shrek 3",
+  "Shrek the Third"
+ ],
+ "Shrek Para Siempre": [
+  "Shrek Forever After",
+  "Shrek 4"
+ ],
+ "Raya y El Último Dragón": [
+  "Raya and the Last Dragon"
+ ],
+ "12 Años de Esclavitud": [
+  "12 Years a Slave"
+ ],
+ "El Poder del Perro": [
+  "The Power of the Dog"
+ ],
+ "Rey Richard": [
+  "King Richard"
+ ],
+ "Los Ojos de Tammy Faye": [
+  "The Eyes of Tammy Faye"
+ ],
+ "West Side Story": [
+  "Amor sin barreras"
+ ],
+ "Parallel Mothers": [
+  "Madres paralelas"
+ ],
+ "The Lost Daughter": [
+  "La hija oscura"
+ ],
+ "The Tragedy of Macbeth": [
+  "La tragedia de Macbeth"
+ ],
+ "The Book of Clarence": [
+  "El libro de Clarence"
+ ],
+ "Don't Worry Darling": [
+  "No te preocupes cariño"
+ ],
+ "The Creator": [
+  "El creador"
+ ],
+ "The Counselor": [
+  "El abogado"
+ ],
+ "The Snowman": [
+  "El muñeco de nieve"
+ ],
+ "The Killer": [
+  "El asesino"
+ ],
+ "A Dangerous Method": [
+  "Un método peligroso"
+ ],
+ "The Light Between Oceans": [
+  "La luz entre los océanos"
+ ],
+ "Speak No Evil": [
+  "No hables con extraños"
+ ],
+ "Tomb Raider (2013)": [
+  "Tomb Raider"
+ ],
+ "Big Little Lies": [
+  "Pequeñas grandes mentiras"
+ ],
+ "High Fidelity": [
+  "Alta fidelidad"
+ ],
+ "The Sandman (Audible)": [
+  "Sandman"
+ ],
+ "Marvel's Spider-Man 2": [
+  "Spider-Man 2"
+ ]
+};
 const ADP_MAX = 5;
 const ADP_PIXELES = [6, 9, 14, 24, 42];   // ancho en "píxeles" del póster según cantidad de errores (0..4)
 const ADP_TIPOS = { todo: 'Todo', 'Película': 'Películas', 'Serie': 'Series', 'Videojuego': 'Juegos' };
@@ -27155,7 +27539,12 @@ function adpConstruirTodo() {
     const vistos = new Set();
     const pool = [];
     const tipoPorFicha = {};
-    (typeof listaMedia !== 'undefined' ? listaMedia : []).forEach(x => { if (x.fichaTecnicaId && !tipoPorFicha[x.fichaTecnicaId]) tipoPorFicha[x.fichaTecnicaId] = x.tipo; });
+    const titulosPorFicha = {};
+    (typeof listaMedia !== 'undefined' ? listaMedia : []).forEach(x => {
+        if (!x.fichaTecnicaId) return;
+        if (!tipoPorFicha[x.fichaTecnicaId]) tipoPorFicha[x.fichaTecnicaId] = x.tipo;
+        (titulosPorFicha[x.fichaTecnicaId] = titulosPorFicha[x.fichaTecnicaId] || []).push(x.titulo);
+    });
     document.querySelectorAll('section[id^="seccion-ficha-"]').forEach(sec => {
         const poster = sec.querySelector('.ficha-tecnica-poster');
         if (!poster || !poster.alt || !poster.getAttribute('src')) return;
@@ -27169,7 +27558,14 @@ function adpConstruirTodo() {
         else if (tipo === 'Videojuego') tipo = 'Videojuego';
         else if (tipo === 'Película' || tipo === 'Animación') tipo = 'Película';
         else tipo = 'Otro';
-        pool.push({ titulo: poster.alt.trim(), poster: poster.getAttribute('src'), tipo });
+        const titulo = poster.alt.trim();
+        const alias = [];
+        const kt = conNorm(titulo);
+        [...(titulosPorFicha[idFicha] || []), ...(ADP_ALIAS[titulo] || [])].forEach(a => {
+            const ka = conNorm(a);
+            if (ka && ka !== kt && !alias.some(x => conNorm(x) === ka)) alias.push(a);
+        });
+        pool.push({ titulo, alias, poster: poster.getAttribute('src'), tipo });
     });
     adpPoolCache = pool;
     return pool;
@@ -27263,7 +27659,7 @@ function adpTerminar(gano) {
 
 function adpIntentar(titulo) {
     if (adpTerminado || !adpItem) return;
-    if (conNorm(titulo) === conNorm(adpItem.titulo)) return adpTerminar(true);
+    if (conNorm(titulo) === conNorm(adpItem.titulo) || (adpItem.alias || []).some(a => conNorm(a) === conNorm(titulo))) return adpTerminar(true);
     if (adpFallos.some(f => conNorm(f) === conNorm(titulo))) { adpMensaje('Ya probaste ese título.', 'error'); return; }
     adpFallos.push(titulo);
     adpMensaje('');
@@ -27295,7 +27691,12 @@ function adpActualizarSug() {
     if (!ent || !l) return;
     const q = conNorm(ent.value);
     if (!q || adpTerminado) { adpOcultarSug(); return; }
-    adpSug = adpPool.filter(p => conNorm(p.titulo).includes(q)).slice(0, 8);
+    adpSug = [];
+    adpPool.forEach(p => {
+        if (conNorm(p.titulo).includes(q)) adpSug.push({ titulo: p.titulo });
+        else { const a = (p.alias || []).find(x => conNorm(x).includes(q)); if (a) adpSug.push({ titulo: p.titulo, via: a }); }
+    });
+    adpSug = adpSug.slice(0, 8);
     adpSugIdx = adpSug.length ? 0 : -1;
     l.innerHTML = '';
     if (!adpSug.length) { l.classList.add('oculto'); return; }
@@ -27304,6 +27705,7 @@ function adpActualizarSug() {
         b.type = 'button';
         b.className = 'adp-sug' + (i === 0 ? ' activa' : '');
         b.textContent = p.titulo;
+        if (p.via) { const sm = document.createElement('small'); sm.textContent = ' · ' + p.via; sm.style.opacity = '.6'; b.appendChild(sm); }
         b.addEventListener('mousedown', (e) => { e.preventDefault(); ent.value = ''; adpOcultarSug(); adpIntentar(p.titulo); });
         l.appendChild(b);
     });
@@ -27410,7 +27812,7 @@ if (adpEntrada) {
             e.preventDefault();
             let t = null;
             if (adpSug.length && adpSugIdx >= 0) t = adpSug[adpSugIdx].titulo;
-            else { const q = conNorm(adpEntrada.value); const ex = adpPool.find(p => conNorm(p.titulo) === q); if (ex) t = ex.titulo; }
+            else { const q = conNorm(adpEntrada.value); const ex = adpPool.find(p => conNorm(p.titulo) === q || (p.alias || []).some(a => conNorm(a) === q)); if (ex) t = ex.titulo; }
             if (t) { adpEntrada.value = ''; adpOcultarSug(); adpIntentar(t); }
         } else if (e.key === 'Escape') adpOcultarSug();
     });
