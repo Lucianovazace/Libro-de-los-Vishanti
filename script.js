@@ -24290,6 +24290,59 @@ const PERSONAJES_MARVEL_CAPITAN_AMERICA = [
     { nombre: "Yellow Claw", real: "Plan Chu", tipo: "Villano" }
 ];
 
+// Personajes de Marvel de los Inhumanos (lista pasada por el usuario, completa; tipos y equipos asignados por Claude).
+// Solo catálogo: el Wordle usa las palabras de 5-6 letras que salen de acá (ver WORDLE_PALABRAS).
+const PERSONAJES_MARVEL_INHUMANOS = [
+    { nombre: "Ahura", real: "Ahura Boltagon", tipo: "Villano" },
+    { nombre: "Alistaire", real: "Alistaire Alphonso", tipo: "Aliado" },
+    { nombre: "Alecto", real: "Alecto", tipo: "Villano" },
+    { nombre: "Avoe", real: "Avoe", tipo: "Aliado" },
+    { nombre: "Black Bolt / Rayo Negro", real: "Blackagar Boltagon", tipo: "Héroe" },
+    { nombre: "Blight", real: "Tyler Stone", tipo: "Villano" },
+    { nombre: "Carnak / Karnak", real: "Karnak Mander-Azur", tipo: "Héroe" },
+    { nombre: "Centaurius", real: "Centaurius", tipo: "Aliado" },
+    { nombre: "Crystalia / Crystal", real: "Crystalia Amaquelin", tipo: "Héroe" },
+    { nombre: "Dante / Inferno", real: "Dante Pertuz", tipo: "Héroe" },
+    { nombre: "Devoz", real: "Devoz", tipo: "Aliado" },
+    { nombre: "Doc Green / Iso", real: "Xiaoyi Chen", tipo: "Héroe" },
+    { nombre: "Dora", real: "Dora", tipo: "Aliado" },
+    { nombre: "Eldrac el Portal Viviente", real: "Eldrac", tipo: "Aliado" },
+    { nombre: "Flagman", real: "Desconocido", tipo: "Villano" },
+    { nombre: "Flint", real: "Jason", tipo: "Héroe" },
+    { nombre: "Gorgon", real: "Gorgon Petragon", tipo: "Héroe" },
+    { nombre: "Grid", real: "Dinesh Deol", tipo: "Héroe" },
+    { nombre: "Infernus", real: "Infernus", tipo: "Aliado" },
+    { nombre: "Iso", real: "Xiaoyi Chen", tipo: "Héroe" },
+    { nombre: "Jolena", real: "Jolena", tipo: "Aliado" },
+    { nombre: "Kala", real: "Kala", tipo: "Aliado" },
+    { nombre: "Kalikya", real: "Kalikya", tipo: "Aliado" },
+    { nombre: "Kora", real: "Kora", tipo: "Aliado" },
+    { nombre: "Korath el Perseguidor", real: "Korath-Thak", tipo: "Villano" },
+    { nombre: "Kren", real: "Kren", tipo: "Aliado" },
+    { nombre: "Lash", real: "Lash", tipo: "Villano" },
+    { nombre: "Lineage", real: "Gordon Nobili", tipo: "Aliado" },
+    { nombre: "Lockjaw / Mandíbulas", real: "Lockjaw", tipo: "Aliado" },
+    { nombre: "Luna", real: "Luna Maximoff", tipo: "Héroe" },
+    { nombre: "Maelstrom", real: "Maelstrom", tipo: "Villano" },
+    { nombre: "Maximum / Maximus el Loco", real: "Maximus Boltagon", tipo: "Villano" },
+    { nombre: "Medusa", real: "Medusalith Amaquelin-Boltagon", tipo: "Héroe" },
+    { nombre: "Ms. Marvel", real: "Kamala Khan", tipo: "Héroe" },
+    { nombre: "Mosaic", real: "Morris Sackett", tipo: "Héroe" },
+    { nombre: "Naja", real: "Naja", tipo: "Aliado" },
+    { nombre: "Nebo", real: "Nebo", tipo: "Aliado" },
+    { nombre: "Phaeder", real: "Phaeder", tipo: "Aliado" },
+    { nombre: "Quake", real: "Daisy Johnson", tipo: "Héroe" },
+    { nombre: "Randac", real: "Randac", tipo: "Aliado" },
+    { nombre: "Reader", real: "Reader", tipo: "Aliado" },
+    { nombre: "Romeo", real: "Romeo", tipo: "Aliado" },
+    { nombre: "San", real: "San", tipo: "Aliado" },
+    { nombre: "Seeker", real: "Kadlec", tipo: "Aliado" },
+    { nombre: "Sensational / Synapse", real: "Emily Guerrero", tipo: "Héroe" },
+    { nombre: "Triton", real: "Triton Mander-Azur", tipo: "Héroe" },
+    { nombre: "Unspoken / El Innombrable", real: "Antiguo Rey de Attilan", tipo: "Villano" },
+    { nombre: "Ying", real: "Ying", tipo: "Aliado" }
+];
+
 // ==========================================
 // JUEGO "WORDLE DE PERSONAJES" (palabra del día)
 // ==========================================
@@ -24537,11 +24590,33 @@ const WORDLE_PALABRAS = [
     { palabra: "torres", nombre: "Joaquín Torres (Falcon)", universo: "Marvel", equipo: "Universo Capitán América", tipo: "Héroe" },
     { palabra: "tania", nombre: "Tania Belinsky (Guardián Rojo II)", universo: "Marvel", equipo: "Universo Capitán América", tipo: "Aliado" },
     { palabra: "lyons", nombre: "Priscilla Lyons (Vagabond)", universo: "Marvel", equipo: "Universo Capitán América", tipo: "Héroe" },
-    { palabra: "spirit", nombre: "Free Spirit", universo: "Marvel", equipo: "Universo Capitán América", tipo: "Héroe" }
+    { palabra: "spirit", nombre: "Free Spirit", universo: "Marvel", equipo: "Universo Capitán América", tipo: "Héroe" },
+    { palabra: "ahura", nombre: "Ahura Boltagon", universo: "Marvel", equipo: "Familia Real de los Inhumanos", tipo: "Villano" },
+    { palabra: "alecto", nombre: "Alecto", universo: "Marvel", equipo: "Villanos de los Inhumanos", tipo: "Villano" },
+    { palabra: "blight", nombre: "Blight (Tyler Stone)", universo: "Marvel", equipo: "Villanos de los Inhumanos", tipo: "Villano" },
+    { palabra: "carnak", nombre: "Carnak / Karnak", universo: "Marvel", equipo: "Familia Real de los Inhumanos", tipo: "Héroe" },
+    { palabra: "dante", nombre: "Dante Pertuz (Inferno)", universo: "Marvel", equipo: "Inhumanos", tipo: "Héroe" },
+    { palabra: "devoz", nombre: "Devoz", universo: "Marvel", equipo: "Inhumanos", tipo: "Aliado" },
+    { palabra: "gorgon", nombre: "Gorgon", universo: "Marvel", equipo: "Familia Real de los Inhumanos", tipo: "Héroe" },
+    { palabra: "jolena", nombre: "Jolena", universo: "Marvel", equipo: "Inhumanos", tipo: "Aliado" },
+    { palabra: "korath", nombre: "Korath el Perseguidor", universo: "Marvel", equipo: "Villanos de los Inhumanos", tipo: "Villano" },
+    { palabra: "mosaic", nombre: "Mosaic (Morris Sackett)", universo: "Marvel", equipo: "Inhumanos", tipo: "Héroe" },
+    { palabra: "quake", nombre: "Quake (Daisy Johnson)", universo: "Marvel", equipo: "Inhumanos", tipo: "Héroe" },
+    { palabra: "randac", nombre: "Randac", universo: "Marvel", equipo: "Inhumanos", tipo: "Aliado" },
+    { palabra: "reader", nombre: "Reader", universo: "Marvel", equipo: "Inhumanos", tipo: "Aliado" },
+    { palabra: "romeo", nombre: "Romeo", universo: "Marvel", equipo: "Inhumanos", tipo: "Aliado" },
+    { palabra: "seeker", nombre: "Seeker (Kadlec)", universo: "Marvel", equipo: "Inhumanos", tipo: "Aliado" },
+    { palabra: "triton", nombre: "Triton", universo: "Marvel", equipo: "Familia Real de los Inhumanos", tipo: "Héroe" },
+    { palabra: "flint", nombre: "Flint (Jason)", universo: "Marvel", equipo: "Inhumanos", tipo: "Héroe" },
+    { palabra: "eldrac", nombre: "Eldrac el Portal Viviente", universo: "Marvel", equipo: "Inhumanos", tipo: "Aliado" },
+    { palabra: "kamala", nombre: "Kamala Khan (Ms. Marvel)", universo: "Marvel", equipo: "Inhumanos", tipo: "Héroe" },
+    { palabra: "daisy", nombre: "Daisy Johnson (Quake)", universo: "Marvel", equipo: "Inhumanos", tipo: "Héroe" },
+    { palabra: "dinesh", nombre: "Dinesh Deol (Grid)", universo: "Marvel", equipo: "Inhumanos", tipo: "Héroe" },
+    { palabra: "nobili", nombre: "Gordon Nobili (Lineage)", universo: "Marvel", equipo: "Inhumanos", tipo: "Aliado" }
 ];
 // Dificultad: FÁCIL = los más famosos, DIFÍCIL = los menos conocidos (asignado por Claude, se puede ajustar), MEDIO = el resto.
 const WORDLE_FACIL = new Set(["joker", "robin", "flash", "bruce", "clark", "diana", "batman", "alfred", "selina", "harley", "shazam", "cyborg", "luthor", "quinn", "arrow", "raven", "storm", "cable", "wanda", "groot", "venom", "carol", "peter", "steve", "bucky", "clint", "scott", "rogue", "beast", "namor", "logan", "miles", "rhino", "stark", "spider", "vision", "banner", "thing", "hydra", "blade", "angel", "kitty", "medusa", "lizard", "kraven", "goblin", "rider", "johnny", "falcon", "widow", "skull", "winter", "swamp"]);
-const WORDLE_DIFICIL = new Set(["nimue", "hannu", "yalan", "sodam", "laira", "katma", "alura", "faora", "nubia", "mento", "thorn", "talon", "tatsu", "shado", "vandal", "dibny", "metron", "starro", "faust", "kobra", "circe", "piper", "snart", "tetch", "nygma", "zatara", "terrax", "herbie", "reece", "harvey", "julius", "psycho", "skrull", "puppet", "maker", "darla", "sharon", "agony", "smythe", "arcade", "wheel", "hardy", "gibbon", "cletus", "dmitri", "clash", "debra", "eugene", "melvin", "hydro", "hypno", "judas", "kaine", "lasher", "looter", "mendel", "molten", "morlun", "leeds", "phage", "robbie", "scream", "gargan", "shriek", "sable", "cindy", "speed", "porker", "miguel", "pavitr", "hobart", "mayday", "mattie", "swarm", "slyde", "lonnie", "toxin", "uncle", "toomes", "walrus", "rabbit", "wraith", "hobie", "madam", "crang", "madcap", "iguana", "lotus", "zaran", "payne", "gentry", "dunphy", "saxon", "lohmer", "adder", "maxon", "malik", "turtle", "eisen", "bernie", "rachel", "cathy", "deidre", "basil", "joseph", "torres", "tania", "lyons", "spirit", "dekker", "koenig", "monroe", "rikki", "vance", "elijah", "major", "leaper", "craneo", "arnim"]);
+const WORDLE_DIFICIL = new Set(["nimue", "hannu", "yalan", "sodam", "laira", "katma", "alura", "faora", "nubia", "mento", "thorn", "talon", "tatsu", "shado", "vandal", "dibny", "metron", "starro", "faust", "kobra", "circe", "piper", "snart", "tetch", "nygma", "zatara", "terrax", "herbie", "reece", "harvey", "julius", "psycho", "skrull", "puppet", "maker", "darla", "sharon", "agony", "smythe", "arcade", "wheel", "hardy", "gibbon", "cletus", "dmitri", "clash", "debra", "eugene", "melvin", "hydro", "hypno", "judas", "kaine", "lasher", "looter", "mendel", "molten", "morlun", "leeds", "phage", "robbie", "scream", "gargan", "shriek", "sable", "cindy", "speed", "porker", "miguel", "pavitr", "hobart", "mayday", "mattie", "swarm", "slyde", "lonnie", "toxin", "uncle", "toomes", "walrus", "rabbit", "wraith", "hobie", "madam", "crang", "madcap", "iguana", "lotus", "zaran", "payne", "gentry", "dunphy", "saxon", "lohmer", "adder", "maxon", "malik", "turtle", "eisen", "bernie", "rachel", "cathy", "deidre", "basil", "joseph", "torres", "tania", "lyons", "spirit", "dekker", "koenig", "monroe", "rikki", "vance", "elijah", "major", "leaper", "craneo", "arnim", "ahura", "alecto", "blight", "dante", "devoz", "jolena", "korath", "mosaic", "randac", "reader", "romeo", "seeker", "flint", "eldrac", "dinesh", "nobili", "helmut"]);
 function wordleNivelDe(p) { return WORDLE_FACIL.has(p.palabra) ? 'facil' : (WORDLE_DIFICIL.has(p.palabra) ? 'dificil' : 'medio'); }
 
 const WORDLE_INTENTOS = 6;
