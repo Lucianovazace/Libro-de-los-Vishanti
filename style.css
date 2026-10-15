@@ -1993,7 +1993,7 @@ h2 {
 }
 
 /* ===== Adiviná el póster ===== */
-.adp-tipo.activo { outline: 2px solid currentColor; font-weight: bold; }
+.adp-tipo.activo, .adp-nivel.activo { outline: 2px solid currentColor; font-weight: bold; }
 .adp-poster-cont { display: flex; justify-content: center; margin: 10px auto; }
 .adp-canvas { width: 100%; max-width: 300px; height: auto; border-radius: 6px; background: #1a1a1a; box-shadow: 0 2px 12px rgba(0,0,0,.5); }
 .adp-entrada-cont { position: relative; max-width: 420px; margin: 10px auto; }

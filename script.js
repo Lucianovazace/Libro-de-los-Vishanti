@@ -27519,8 +27519,14 @@ const ADP_ALIAS = {
   "Spider-Man 2"
  ]
 };
-const ADP_MAX = 5;
-const ADP_PIXELES = [6, 9, 14, 24, 42];   // ancho en "píxeles" del póster según cantidad de errores (0..4)
+// Niveles: intentos, ancho en "píxeles" del póster según cantidad de errores, y cuándo aparece la pista de la inicial (null = nunca)
+const ADP_NIVELES = {
+    facil:   { nombre: 'Fácil',   max: 6, px: [10, 16, 26, 42, 70, 120], pista: 1 },
+    normal:  { nombre: 'Normal',  max: 5, px: [6, 9, 14, 24, 42],       pista: 2 },
+    dificil: { nombre: 'Difícil', max: 4, px: [4, 6, 9, 14],            pista: null }
+};
+let adpNivel = (function () { try { const n = localStorage.getItem('adp-nivel'); return ADP_NIVELES[n] ? n : 'normal'; } catch (e) { return 'normal'; } })();
+function adpMax() { return ADP_NIVELES[adpNivel].max; }
 const ADP_TIPOS = { todo: 'Todo', 'Película': 'Películas', 'Serie': 'Series', 'Videojuego': 'Juegos' };
 let adpTipo = (function () { try { const t = localStorage.getItem('adp-tipo'); return ADP_TIPOS[t] ? t : 'todo'; } catch (e) { return 'todo'; } })();
 let adpModo = 'diaria';
@@ -27578,7 +27584,8 @@ function adpMensaje(t, tipo) {
     m.className = 'mensaje-elenco' + (tipo ? ' ' + tipo : '');
 }
 
-function adpClaveLocal() { return 'adp-dia-' + adpTipo; }
+function adpSufijoNivel() { return adpNivel === 'normal' ? '' : '-' + adpNivel; }
+function adpClaveLocal() { return 'adp-dia-' + adpTipo + adpSufijoNivel(); }
 function adpGuardarLocal() {
     if (adpModo !== 'diaria' || !adpItem) return;
     try { localStorage.setItem(adpClaveLocal(), JSON.stringify({ fecha: wordleFechaHoy(), titulo: adpItem.titulo, fallos: adpFallos, terminado: adpTerminado, gano: adpGano })); } catch (e) {}
@@ -27588,13 +27595,13 @@ function adpCargarLocal() {
     return null;
 }
 function adpStats() {
-    try { return JSON.parse(localStorage.getItem('adp-stats') || 'null') || { jugadas: 0, ganadas: 0, racha: 0, mejor: 0 }; } catch (e) { return { jugadas: 0, ganadas: 0, racha: 0, mejor: 0 }; }
+    try { return JSON.parse(localStorage.getItem('adp-stats' + adpSufijoNivel()) || 'null') || { jugadas: 0, ganadas: 0, racha: 0, mejor: 0 }; } catch (e) { return { jugadas: 0, ganadas: 0, racha: 0, mejor: 0 }; }
 }
 function adpGuardarStats(gano) {
     const s = adpStats();
     s.jugadas++;
     if (gano) { s.ganadas++; s.racha++; s.mejor = Math.max(s.mejor, s.racha); } else s.racha = 0;
-    try { localStorage.setItem('adp-stats', JSON.stringify(s)); } catch (e) {}
+    try { localStorage.setItem('adp-stats' + adpSufijoNivel(), JSON.stringify(s)); } catch (e) {}
 }
 
 // Dibuja el póster pixelado (o completo). Solo se dibuja en un <canvas>: no se lee ningún píxel, así que funciona con imágenes de otros sitios.
@@ -27605,7 +27612,8 @@ function adpPintar() {
     cv.width = W; cv.height = H;
     const ctx = cv.getContext('2d');
     if (adpTerminado) { ctx.imageSmoothingEnabled = true; ctx.drawImage(adpImg, 0, 0, W, H); return; }
-    const px = ADP_PIXELES[Math.min(adpFallos.length, ADP_PIXELES.length - 1)];
+    const pxs = ADP_NIVELES[adpNivel].px;
+    const px = pxs[Math.min(adpFallos.length, pxs.length - 1)];
     const chico = document.createElement('canvas');
     chico.width = px; chico.height = Math.max(2, Math.round(px * adpImg.naturalHeight / adpImg.naturalWidth));
     chico.getContext('2d').drawImage(adpImg, 0, 0, chico.width, chico.height);
@@ -27615,13 +27623,17 @@ function adpPintar() {
 
 function adpDibujarEstado() {
     const intentos = document.getElementById('adp-intentos');
-    if (intentos) intentos.textContent = '❤️'.repeat(Math.max(0, ADP_MAX - adpFallos.length)) + '🖤'.repeat(Math.min(ADP_MAX, adpFallos.length));
+    if (intentos) intentos.textContent = '❤️'.repeat(Math.max(0, adpMax() - adpFallos.length)) + '🖤'.repeat(Math.min(adpMax(), adpFallos.length));
     const pista = document.getElementById('adp-pista');
     if (pista && adpItem) {
         const pal = adpItem.titulo.split(/\s+/).length;
         let t = `Tipo: ${adpItem.tipo}`;
-        if (adpFallos.length >= 2) t += ` · ${pal} ${pal === 1 ? 'palabra' : 'palabras'} · empieza con "${adpItem.titulo[0].toUpperCase()}"`;
-        else t += ' · (más pistas al segundo error)';
+        const desde = ADP_NIVELES[adpNivel].pista;
+        if (desde !== null) {
+            if (adpFallos.length >= desde) t += ` · ${pal} ${pal === 1 ? 'palabra' : 'palabras'} · empieza con "${adpItem.titulo[0].toUpperCase()}"`;
+            else t += ` · (más pistas al ${desde === 1 ? 'primer' : 'segundo'} error)`;
+        } else if (adpFallos.length >= adpMax() - 1) t += ` · ${pal} ${pal === 1 ? 'palabra' : 'palabras'}`;
+        else t += ' · (sin más pistas hasta el último intento)';
         pista.textContent = t;
     }
     const hist = document.getElementById('adp-historial');
@@ -27663,7 +27675,7 @@ function adpIntentar(titulo) {
     if (adpFallos.some(f => conNorm(f) === conNorm(titulo))) { adpMensaje('Ya probaste ese título.', 'error'); return; }
     adpFallos.push(titulo);
     adpMensaje('');
-    if (adpFallos.length >= ADP_MAX) return adpTerminar(false);
+    if (adpFallos.length >= adpMax()) return adpTerminar(false);
     adpGuardarLocal();
     adpPintar();
     adpDibujarEstado();
@@ -27673,7 +27685,7 @@ function adpSaltear() {
     if (adpTerminado || !adpItem) return;
     adpFallos.push('(salteado)');
     adpMensaje('');
-    if (adpFallos.length >= ADP_MAX) return adpTerminar(false);
+    if (adpFallos.length >= adpMax()) return adpTerminar(false);
     adpGuardarLocal();
     adpPintar();
     adpDibujarEstado();
@@ -27749,6 +27761,7 @@ function adpIniciar(modo) {
     if (ent) ent.value = '';
     document.getElementById('adp-final').classList.add('oculto');
     document.querySelectorAll('.adp-tipo').forEach(b => b.classList.toggle('activo', b.dataset.tipo === adpTipo));
+    document.querySelectorAll('.adp-nivel').forEach(b => b.classList.toggle('activo', b.dataset.nivel === adpNivel));
     const todas = adpConstruirTodo();
     adpPool = adpTipo === 'todo' ? todas : todas.filter(p => p.tipo === adpTipo);
     const sub = document.getElementById('adp-subtitulo');
@@ -27766,10 +27779,10 @@ function adpIniciar(modo) {
             const rng = conRng(conFechaSemilla(777 + Object.keys(ADP_TIPOS).indexOf(adpTipo) * 1013));
             adpItem = adpPool[Math.floor(rng() * adpPool.length)];
         }
-        if (sub) sub.textContent = `Póster del día (${ADP_TIPOS[adpTipo]}): adiviná la obra. Se va aclarando con cada error. Tenés ${ADP_MAX} intentos.`;
+        if (sub) sub.textContent = `Póster del día (${ADP_TIPOS[adpTipo]}, ${ADP_NIVELES[adpNivel].nombre}): adiviná la obra. Se va aclarando con cada error. Tenés ${adpMax()} intentos.`;
     } else {
         adpItem = adpPool[Math.floor(Math.random() * adpPool.length)];
-        if (sub) sub.textContent = `Póster al azar (${ADP_TIPOS[adpTipo]}): no se guarda. Tenés ${ADP_MAX} intentos.`;
+        if (sub) sub.textContent = `Póster al azar (${ADP_TIPOS[adpTipo]}, ${ADP_NIVELES[adpNivel].nombre}): no se guarda. Tenés ${adpMax()} intentos.`;
     }
     adpMensaje('');
     adpDibujarEstado();
@@ -27780,8 +27793,8 @@ function adpIniciar(modo) {
 function adpTextoCompartir() {
     const usados = adpFallos.length + (adpGano ? 1 : 0);
     let linea = '';
-    for (let i = 0; i < ADP_MAX; i++) linea += i < adpFallos.length ? '🟥' : (i === adpFallos.length && adpGano ? '🟩' : '⬜');
-    return `Adiviná el póster (${ADP_TIPOS[adpTipo]}) ${adpGano ? '✅ ' + usados + '/' + ADP_MAX : '❌'}\n${linea}\nEl Multiverso`;
+    for (let i = 0; i < adpMax(); i++) linea += i < adpFallos.length ? '🟥' : (i === adpFallos.length && adpGano ? '🟩' : '⬜');
+    return `Adiviná el póster (${ADP_TIPOS[adpTipo]}${adpNivel === 'normal' ? '' : ', ' + ADP_NIVELES[adpNivel].nombre}) ${adpGano ? '✅ ' + usados + '/' + adpMax() : '❌'}\n${linea}\nEl Multiverso`;
 }
 
 const tarjetaAdp = document.getElementById('tarjeta-adivinaposter');
@@ -27796,6 +27809,11 @@ if (btnVolverJuegosDesdeAdp) btnVolverJuegosDesdeAdp.addEventListener('click', (
 document.querySelectorAll('.adp-tipo').forEach(b => b.addEventListener('click', () => {
     adpTipo = b.dataset.tipo;
     try { localStorage.setItem('adp-tipo', adpTipo); } catch (e) {}
+    adpIniciar('diaria');
+}));
+document.querySelectorAll('.adp-nivel').forEach(b => b.addEventListener('click', () => {
+    adpNivel = b.dataset.nivel;
+    try { localStorage.setItem('adp-nivel', adpNivel); } catch (e) {}
     adpIniciar('diaria');
 }));
 const adpEntrada = document.getElementById('adp-entrada');
