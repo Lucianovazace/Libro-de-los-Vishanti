@@ -27131,6 +27131,304 @@ document.addEventListener('keydown', (e) => {
     if (AH_RE.test(l) && e.key.length === 1) ahJugar(l);
 });
 
+// ==========================================
+// JUEGO "ADIVINÁ EL PÓSTER" (póster pixelado que se va aclarando)
+// ==========================================
+// Los pósters y títulos salen de las fichas técnicas del sitio (section[id^="seccion-ficha-"]), igual que Más o Menos.
+const ADP_MAX = 5;
+const ADP_PIXELES = [6, 9, 14, 24, 42];   // ancho en "píxeles" del póster según cantidad de errores (0..4)
+const ADP_TIPOS = { todo: 'Todo', 'Película': 'Películas', 'Serie': 'Series', 'Videojuego': 'Juegos' };
+let adpTipo = (function () { try { const t = localStorage.getItem('adp-tipo'); return ADP_TIPOS[t] ? t : 'todo'; } catch (e) { return 'todo'; } })();
+let adpModo = 'diaria';
+let adpPoolCache = null;
+let adpPool = [];
+let adpItem = null;
+let adpFallos = [];       // títulos adivinados mal (o 'saltear')
+let adpTerminado = false;
+let adpGano = false;
+let adpImg = null;
+let adpSug = [];
+let adpSugIdx = -1;
+
+function adpConstruirTodo() {
+    if (adpPoolCache) return adpPoolCache;
+    const vistos = new Set();
+    const pool = [];
+    const tipoPorFicha = {};
+    (typeof listaMedia !== 'undefined' ? listaMedia : []).forEach(x => { if (x.fichaTecnicaId && !tipoPorFicha[x.fichaTecnicaId]) tipoPorFicha[x.fichaTecnicaId] = x.tipo; });
+    document.querySelectorAll('section[id^="seccion-ficha-"]').forEach(sec => {
+        const poster = sec.querySelector('.ficha-tecnica-poster');
+        if (!poster || !poster.alt || !poster.getAttribute('src')) return;
+        const k = conNorm(poster.alt);
+        if (!k || vistos.has(k)) return;
+        vistos.add(k);
+        const idFicha = sec.id.replace('seccion-ficha-', '');
+        const esJuego = [...sec.querySelectorAll('.puntuacion-fuente')].some(f => ['GameSpot', 'Vandal'].includes(f.textContent.trim()));
+        let tipo = tipoPorFicha[idFicha] || ((esJuego || /^LEGO/i.test(poster.alt)) ? 'Videojuego' : 'Película');
+        if (/^Serie/.test(tipo)) tipo = 'Serie';
+        else if (tipo === 'Videojuego') tipo = 'Videojuego';
+        else if (tipo === 'Película' || tipo === 'Animación') tipo = 'Película';
+        else tipo = 'Otro';
+        pool.push({ titulo: poster.alt.trim(), poster: poster.getAttribute('src'), tipo });
+    });
+    adpPoolCache = pool;
+    return pool;
+}
+
+function adpMensaje(t, tipo) {
+    const m = document.getElementById('adp-mensaje');
+    if (!m) return;
+    m.textContent = t || '';
+    m.className = 'mensaje-elenco' + (tipo ? ' ' + tipo : '');
+}
+
+function adpClaveLocal() { return 'adp-dia-' + adpTipo; }
+function adpGuardarLocal() {
+    if (adpModo !== 'diaria' || !adpItem) return;
+    try { localStorage.setItem(adpClaveLocal(), JSON.stringify({ fecha: wordleFechaHoy(), titulo: adpItem.titulo, fallos: adpFallos, terminado: adpTerminado, gano: adpGano })); } catch (e) {}
+}
+function adpCargarLocal() {
+    try { const g = JSON.parse(localStorage.getItem(adpClaveLocal()) || 'null'); if (g && g.fecha === wordleFechaHoy() && g.titulo) return g; } catch (e) {}
+    return null;
+}
+function adpStats() {
+    try { return JSON.parse(localStorage.getItem('adp-stats') || 'null') || { jugadas: 0, ganadas: 0, racha: 0, mejor: 0 }; } catch (e) { return { jugadas: 0, ganadas: 0, racha: 0, mejor: 0 }; }
+}
+function adpGuardarStats(gano) {
+    const s = adpStats();
+    s.jugadas++;
+    if (gano) { s.ganadas++; s.racha++; s.mejor = Math.max(s.mejor, s.racha); } else s.racha = 0;
+    try { localStorage.setItem('adp-stats', JSON.stringify(s)); } catch (e) {}
+}
+
+// Dibuja el póster pixelado (o completo). Solo se dibuja en un <canvas>: no se lee ningún píxel, así que funciona con imágenes de otros sitios.
+function adpPintar() {
+    const cv = document.getElementById('adp-canvas');
+    if (!cv || !adpImg || !adpImg.naturalWidth) return;
+    const W = 300, H = Math.round(300 * adpImg.naturalHeight / adpImg.naturalWidth);
+    cv.width = W; cv.height = H;
+    const ctx = cv.getContext('2d');
+    if (adpTerminado) { ctx.imageSmoothingEnabled = true; ctx.drawImage(adpImg, 0, 0, W, H); return; }
+    const px = ADP_PIXELES[Math.min(adpFallos.length, ADP_PIXELES.length - 1)];
+    const chico = document.createElement('canvas');
+    chico.width = px; chico.height = Math.max(2, Math.round(px * adpImg.naturalHeight / adpImg.naturalWidth));
+    chico.getContext('2d').drawImage(adpImg, 0, 0, chico.width, chico.height);
+    ctx.imageSmoothingEnabled = false;
+    ctx.drawImage(chico, 0, 0, W, H);
+}
+
+function adpDibujarEstado() {
+    const intentos = document.getElementById('adp-intentos');
+    if (intentos) intentos.textContent = '❤️'.repeat(Math.max(0, ADP_MAX - adpFallos.length)) + '🖤'.repeat(Math.min(ADP_MAX, adpFallos.length));
+    const pista = document.getElementById('adp-pista');
+    if (pista && adpItem) {
+        const pal = adpItem.titulo.split(/\s+/).length;
+        let t = `Tipo: ${adpItem.tipo}`;
+        if (adpFallos.length >= 2) t += ` · ${pal} ${pal === 1 ? 'palabra' : 'palabras'} · empieza con "${adpItem.titulo[0].toUpperCase()}"`;
+        else t += ' · (más pistas al segundo error)';
+        pista.textContent = t;
+    }
+    const hist = document.getElementById('adp-historial');
+    if (hist) {
+        hist.innerHTML = '';
+        adpFallos.forEach(f => { const d = document.createElement('div'); d.className = 'adp-fallo'; d.textContent = '✗ ' + f; hist.appendChild(d); });
+    }
+    const ent = document.getElementById('adp-entrada');
+    if (ent) { ent.disabled = adpTerminado; }
+    const sal = document.getElementById('adp-btn-saltear');
+    if (sal) sal.disabled = adpTerminado;
+}
+
+function adpMostrarFinal() {
+    adpMensaje(adpGano ? `🎉 ¡Era ${adpItem.titulo}! (${adpFallos.length + 1}.º intento)` : `Era: ${adpItem.titulo}`, adpGano ? 'victoria' : 'error');
+    const fin = document.getElementById('adp-final');
+    if (fin) fin.classList.remove('oculto');
+    const st = document.getElementById('adp-stats');
+    if (st) { const s = adpStats(); st.textContent = `Partidas: ${s.jugadas} · Ganadas: ${s.ganadas} · Racha: ${s.racha} · Mejor racha: ${s.mejor}`; }
+    adpOcultarSug();
+}
+
+function adpTerminar(gano) {
+    adpTerminado = true;
+    adpGano = gano;
+    if (adpModo === 'diaria') {
+        const g = adpCargarLocal();
+        if (!(g && g.terminado)) adpGuardarStats(gano);
+    }
+    adpGuardarLocal();
+    adpPintar();
+    adpDibujarEstado();
+    adpMostrarFinal();
+}
+
+function adpIntentar(titulo) {
+    if (adpTerminado || !adpItem) return;
+    if (conNorm(titulo) === conNorm(adpItem.titulo)) return adpTerminar(true);
+    if (adpFallos.some(f => conNorm(f) === conNorm(titulo))) { adpMensaje('Ya probaste ese título.', 'error'); return; }
+    adpFallos.push(titulo);
+    adpMensaje('');
+    if (adpFallos.length >= ADP_MAX) return adpTerminar(false);
+    adpGuardarLocal();
+    adpPintar();
+    adpDibujarEstado();
+}
+
+function adpSaltear() {
+    if (adpTerminado || !adpItem) return;
+    adpFallos.push('(salteado)');
+    adpMensaje('');
+    if (adpFallos.length >= ADP_MAX) return adpTerminar(false);
+    adpGuardarLocal();
+    adpPintar();
+    adpDibujarEstado();
+}
+
+function adpOcultarSug() {
+    const l = document.getElementById('adp-sugerencias');
+    if (l) { l.classList.add('oculto'); l.innerHTML = ''; }
+    adpSug = []; adpSugIdx = -1;
+}
+
+function adpActualizarSug() {
+    const ent = document.getElementById('adp-entrada');
+    const l = document.getElementById('adp-sugerencias');
+    if (!ent || !l) return;
+    const q = conNorm(ent.value);
+    if (!q || adpTerminado) { adpOcultarSug(); return; }
+    adpSug = adpPool.filter(p => conNorm(p.titulo).includes(q)).slice(0, 8);
+    adpSugIdx = adpSug.length ? 0 : -1;
+    l.innerHTML = '';
+    if (!adpSug.length) { l.classList.add('oculto'); return; }
+    adpSug.forEach((p, i) => {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'adp-sug' + (i === 0 ? ' activa' : '');
+        b.textContent = p.titulo;
+        b.addEventListener('mousedown', (e) => { e.preventDefault(); ent.value = ''; adpOcultarSug(); adpIntentar(p.titulo); });
+        l.appendChild(b);
+    });
+    l.classList.remove('oculto');
+}
+
+function adpCargarImagen(item, intento) {
+    const cont = document.getElementById('adp-poster-cont');
+    if (cont && cont.offsetHeight) cont.style.minHeight = cont.offsetHeight + 'px';
+    adpImg = null;
+    const img = new Image();
+    img.onload = () => {
+        if (adpItem !== item) return;
+        adpImg = img;
+        adpPintar();
+        if (cont) requestAnimationFrame(() => { cont.style.minHeight = ''; });
+    };
+    img.onerror = () => {
+        if (adpItem !== item) return;
+        if (adpModo === 'azar' && intento < 5 && adpPool.length > 1) {
+            adpItem = adpPool[Math.floor(Math.random() * adpPool.length)];
+            adpFallos = [];
+            adpDibujarEstado();
+            adpCargarImagen(adpItem, intento + 1);
+        } else {
+            adpMensaje('No se pudo cargar el póster. Probá con otro.', 'error');
+            if (cont) cont.style.minHeight = '';
+        }
+    };
+    img.src = item.poster;
+}
+
+function adpIniciar(modo) {
+    adpModo = modo;
+    adpFallos = [];
+    adpTerminado = false;
+    adpGano = false;
+    adpItem = null;
+    adpOcultarSug();
+    const ent = document.getElementById('adp-entrada');
+    if (ent) ent.value = '';
+    document.getElementById('adp-final').classList.add('oculto');
+    document.querySelectorAll('.adp-tipo').forEach(b => b.classList.toggle('activo', b.dataset.tipo === adpTipo));
+    const todas = adpConstruirTodo();
+    adpPool = adpTipo === 'todo' ? todas : todas.filter(p => p.tipo === adpTipo);
+    const sub = document.getElementById('adp-subtitulo');
+    if (adpPool.length < 5) {
+        if (sub) sub.textContent = 'Todavía no hay suficientes pósters de este tipo.';
+        return;
+    }
+    if (modo === 'diaria') {
+        const g = adpCargarLocal();
+        if (g) {
+            adpItem = adpPool.find(p => p.titulo === g.titulo) || null;
+            if (adpItem) { adpFallos = g.fallos || []; adpTerminado = !!g.terminado; adpGano = !!g.gano; }
+        }
+        if (!adpItem) {
+            const rng = conRng(conFechaSemilla(777 + Object.keys(ADP_TIPOS).indexOf(adpTipo) * 1013));
+            adpItem = adpPool[Math.floor(rng() * adpPool.length)];
+        }
+        if (sub) sub.textContent = `Póster del día (${ADP_TIPOS[adpTipo]}): adiviná la obra. Se va aclarando con cada error. Tenés ${ADP_MAX} intentos.`;
+    } else {
+        adpItem = adpPool[Math.floor(Math.random() * adpPool.length)];
+        if (sub) sub.textContent = `Póster al azar (${ADP_TIPOS[adpTipo]}): no se guarda. Tenés ${ADP_MAX} intentos.`;
+    }
+    adpMensaje('');
+    adpDibujarEstado();
+    adpCargarImagen(adpItem, 0);
+    if (adpTerminado) adpMostrarFinal();
+}
+
+function adpTextoCompartir() {
+    const usados = adpFallos.length + (adpGano ? 1 : 0);
+    let linea = '';
+    for (let i = 0; i < ADP_MAX; i++) linea += i < adpFallos.length ? '🟥' : (i === adpFallos.length && adpGano ? '🟩' : '⬜');
+    return `Adiviná el póster (${ADP_TIPOS[adpTipo]}) ${adpGano ? '✅ ' + usados + '/' + ADP_MAX : '❌'}\n${linea}\nEl Multiverso`;
+}
+
+const tarjetaAdp = document.getElementById('tarjeta-adivinaposter');
+if (tarjetaAdp) {
+    tarjetaAdp.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-adivinaposter'));
+        adpIniciar('diaria');
+    });
+}
+const btnVolverJuegosDesdeAdp = document.getElementById('btn-volver-juegos-desde-adivinaposter');
+if (btnVolverJuegosDesdeAdp) btnVolverJuegosDesdeAdp.addEventListener('click', () => cambiarSeccion(document.getElementById('seccion-juegos')));
+document.querySelectorAll('.adp-tipo').forEach(b => b.addEventListener('click', () => {
+    adpTipo = b.dataset.tipo;
+    try { localStorage.setItem('adp-tipo', adpTipo); } catch (e) {}
+    adpIniciar('diaria');
+}));
+const adpEntrada = document.getElementById('adp-entrada');
+if (adpEntrada) {
+    adpEntrada.addEventListener('input', adpActualizarSug);
+    adpEntrada.addEventListener('blur', () => setTimeout(adpOcultarSug, 120));
+    adpEntrada.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+            if (!adpSug.length) return;
+            e.preventDefault();
+            adpSugIdx = (adpSugIdx + (e.key === 'ArrowDown' ? 1 : -1) + adpSug.length) % adpSug.length;
+            document.querySelectorAll('.adp-sug').forEach((b, i) => b.classList.toggle('activa', i === adpSugIdx));
+        } else if (e.key === 'Enter') {
+            e.preventDefault();
+            let t = null;
+            if (adpSug.length && adpSugIdx >= 0) t = adpSug[adpSugIdx].titulo;
+            else { const q = conNorm(adpEntrada.value); const ex = adpPool.find(p => conNorm(p.titulo) === q); if (ex) t = ex.titulo; }
+            if (t) { adpEntrada.value = ''; adpOcultarSug(); adpIntentar(t); }
+        } else if (e.key === 'Escape') adpOcultarSug();
+    });
+}
+const adpBtnSaltear = document.getElementById('adp-btn-saltear');
+if (adpBtnSaltear) adpBtnSaltear.addEventListener('click', adpSaltear);
+const adpBtnAzar = document.getElementById('adp-btn-azar');
+if (adpBtnAzar) adpBtnAzar.addEventListener('click', () => adpIniciar('azar'));
+const adpBtnCompartir = document.getElementById('adp-btn-compartir');
+if (adpBtnCompartir) {
+    adpBtnCompartir.addEventListener('click', () => {
+        const texto = adpTextoCompartir();
+        const aviso = () => { adpBtnCompartir.textContent = '¡Copiado!'; setTimeout(() => { adpBtnCompartir.textContent = 'Copiar resultado'; }, 1800); };
+        if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(texto).then(aviso).catch(() => {});
+        else aviso();
+    });
+}
+
 const tarjetaGrillas = document.getElementById('tarjeta-grillas');
 if (tarjetaGrillas) {
     tarjetaGrillas.addEventListener('click', () => {

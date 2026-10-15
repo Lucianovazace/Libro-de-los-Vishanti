@@ -14468,6 +14468,11 @@
                 <h3>Ahorcado</h3>
                 <p>Adiviná el nombre del personaje letra por letra. Solo se ve la inicial. Uno por día.</p>
             </div>
+            <div class="tarjeta-juego" id="tarjeta-adivinaposter">
+                <div class="icono-juego">🖼️</div>
+                <h3>Adiviná el póster</h3>
+                <p>Un póster pixelado que se aclara con cada error. ¿Qué película, serie o juego es? Uno por día.</p>
+            </div>
             <div class="tarjeta-juego" id="tarjeta-grillas">
                 <div class="icono-juego">🔲</div>
                 <h3>Grillas</h3>
@@ -14571,6 +14576,36 @@
                 <button type="button" class="btn-modal" id="ah-btn-azar">Jugar otro al azar</button>
             </div>
             <p id="ah-stats" class="subtitulo-juegos"></p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: JUEGO - ADIVINÁ EL PÓSTER -->
+    <section id="seccion-adivinaposter" class="oculto">
+        <button class="btn-volver" id="btn-volver-juegos-desde-adivinaposter">← Volver a Juegos</button>
+        <h2>Adiviná el póster 🖼️</h2>
+        <div class="wordle-niveles">
+            <button type="button" class="btn-modal adp-tipo" data-tipo="todo">Todo</button>
+            <button type="button" class="btn-modal adp-tipo" data-tipo="Película">Películas</button>
+            <button type="button" class="btn-modal adp-tipo" data-tipo="Serie">Series</button>
+            <button type="button" class="btn-modal adp-tipo" data-tipo="Videojuego">Juegos</button>
+        </div>
+        <p class="subtitulo-juegos" id="adp-subtitulo"></p>
+        <p class="subtitulo-juegos">Intentos restantes: <span id="adp-intentos"></span></p>
+        <div id="adp-poster-cont" class="adp-poster-cont"><canvas id="adp-canvas" class="adp-canvas" width="300" height="450"></canvas></div>
+        <p class="subtitulo-juegos" id="adp-pista"></p>
+        <div class="adp-entrada-cont">
+            <input type="text" id="adp-entrada" class="adp-entrada" placeholder="Escribí el título y elegilo de la lista…" autocomplete="off">
+            <div id="adp-sugerencias" class="adp-sugerencias oculto"></div>
+        </div>
+        <div class="wordle-acciones"><button type="button" class="btn-modal" id="adp-btn-saltear">Saltear (revela más)</button></div>
+        <div id="adp-historial" class="adp-historial"></div>
+        <div id="adp-mensaje" class="mensaje-elenco"></div>
+        <div id="adp-final" class="wordle-final oculto">
+            <div class="wordle-acciones">
+                <button type="button" class="btn-modal" id="adp-btn-compartir">Copiar resultado</button>
+                <button type="button" class="btn-modal" id="adp-btn-azar">Jugar otro al azar</button>
+            </div>
+            <p id="adp-stats" class="subtitulo-juegos"></p>
         </div>
     </section>
 

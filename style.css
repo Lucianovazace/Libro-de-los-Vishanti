@@ -1991,3 +1991,16 @@ h2 {
     90% { opacity: 1; transform: translate(22px, -4px) rotate(-45deg); }
     100% { opacity: 0; transform: translate(24px, -4px) rotate(-45deg); }
 }
+
+/* ===== Adiviná el póster ===== */
+.adp-tipo.activo { outline: 2px solid currentColor; font-weight: bold; }
+.adp-poster-cont { display: flex; justify-content: center; margin: 10px auto; }
+.adp-canvas { width: 100%; max-width: 300px; height: auto; border-radius: 6px; background: #1a1a1a; box-shadow: 0 2px 12px rgba(0,0,0,.5); }
+.adp-entrada-cont { position: relative; max-width: 420px; margin: 10px auto; }
+.adp-entrada { width: 100%; box-sizing: border-box; padding: 12px 14px; border-radius: 6px; border: 2px solid #444; background: #1a1a1a; color: #fff; font-size: 1rem; }
+.adp-entrada:focus { outline: none; border-color: #888; }
+.adp-sugerencias { position: absolute; left: 0; right: 0; top: 100%; z-index: 20; background: #1f1f1f; border: 1px solid #555; border-radius: 6px; max-height: 280px; overflow-y: auto; box-shadow: 0 6px 18px rgba(0,0,0,.6); }
+.adp-sug { display: block; width: 100%; text-align: left; padding: 10px 12px; background: transparent; border: none; color: #eee; font-size: 0.95rem; cursor: pointer; }
+.adp-sug.activa, .adp-sug:hover { background: #333; }
+.adp-historial { display: flex; flex-direction: column; gap: 4px; align-items: center; margin: 8px auto; }
+.adp-fallo { color: #e57373; font-size: 0.95rem; }
