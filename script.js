@@ -26739,6 +26739,271 @@ if (conBtnCompartir) {
     });
 }
 
+// ==========================================
+// JUEGO "AHORCADO" (adiviná el nombre del personaje)
+// ==========================================
+// Se usa la lista de personajes del Wordle (WORDLE_PALABRAS) con el nombre completo (puede tener varias palabras).
+// Solo se muestra la letra inicial del nombre completo (las iniciales de las demás palabras quedan ocultas).
+const AH_MAX_ERRORES = 6;
+const AH_TECLADO = ['qwertyuiop', 'asdfghjkl', 'zxcvbnm'];
+let ahNivel = (function () { try { const n = localStorage.getItem('ahorcado-nivel'); return ['facil', 'medio', 'dificil'].includes(n) ? n : 'medio'; } catch (e) { return 'medio'; } })();
+let ahModo = 'diaria';
+let ahItem = null;           // { nombre, palabra, universo, equipo }
+let ahLetras = new Set();    // letras jugadas (a-z)
+let ahErrores = 0;
+let ahTerminado = false;
+let ahGano = false;
+let ahPoolCache = {};
+
+function ahNormLetra(c) { return String(c).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase(); }
+
+// Elige el nombre "de personaje" a adivinar a partir de nombres como "Edward Nygma (Acertijo)" o "Oráculo (Barbara Gordon)".
+const AH_NOMBRE_FIJO = { logan: 'Wolverine' };
+function ahNombreDe(p) {
+    if (AH_NOMBRE_FIJO[p.palabra]) return AH_NOMBRE_FIJO[p.palabra];
+    let n = String(p.nombre);
+    const m = n.match(/^(.*?)\s*\((.*)\)\s*$/);
+    if (m) {
+        const a = m[1].trim(), b = m[2].trim();
+        const contiene = (t) => t.split(/[^A-Za-zÀ-ÿ0-9]+/).some(w => conNorm(w) === p.palabra);
+        const pal = (t) => t.split(/\s+/).length;
+        if (conNorm(a) === p.palabra) n = a;
+        else if (contiene(a) && !contiene(b)) n = b;
+        else if (contiene(b) && !contiene(a)) n = a;
+        else n = pal(a) <= pal(b) ? a : b;
+    }
+    n = n.split(' / ')[0].replace(/\(.*?\)/g, '').replace(/,.*$/, '').replace(/\s+/g, ' ').trim();
+    return n;
+}
+
+function ahPool(nivel) {
+    if (ahPoolCache[nivel]) return ahPoolCache[nivel];
+    const vistos = new Set();
+    const lista = [];
+    WORDLE_PALABRAS.forEach(p => {
+        if (wordleNivelDe(p) !== nivel) return;
+        const nombre = ahNombreDe(p);
+        const letras = nombre.split('').filter(c => /[a-z]/.test(ahNormLetra(c))).length;
+        if (letras < 4 || nombre.length > 26) return;
+        const k = conNorm(nombre);
+        if (vistos.has(k)) return;
+        vistos.add(k);
+        lista.push({ nombre, palabra: p.palabra, universo: p.universo, equipo: p.equipo });
+    });
+    ahPoolCache[nivel] = lista;
+    return lista;
+}
+
+function ahLetrasDe(nombre) {
+    return nombre.split('').map(ahNormLetra).filter(c => /^[a-z]$/.test(c));
+}
+function ahInicial() {
+    const l = ahLetrasDe(ahItem.nombre);
+    return l[0];
+}
+function ahReveladas() {
+    const s = new Set(ahLetras);
+    s.add(ahInicial());
+    return s;
+}
+function ahCompleto() {
+    const rev = ahReveladas();
+    return ahLetrasDe(ahItem.nombre).every(c => rev.has(c));
+}
+
+function ahClaveLocal() { return 'ahorcado-dia-' + ahNivel; }
+function ahGuardarLocal() {
+    if (ahModo !== 'diaria' || !ahItem) return;
+    try { localStorage.setItem(ahClaveLocal(), JSON.stringify({ fecha: wordleFechaHoy(), palabra: ahItem.palabra, letras: Array.from(ahLetras), errores: ahErrores, terminado: ahTerminado, gano: ahGano })); } catch (e) {}
+}
+function ahCargarLocal() {
+    try {
+        const g = JSON.parse(localStorage.getItem(ahClaveLocal()) || 'null');
+        if (g && g.fecha === wordleFechaHoy() && g.palabra) return g;
+    } catch (e) {}
+    return null;
+}
+function ahStats() {
+    try { return JSON.parse(localStorage.getItem('ahorcado-stats-' + ahNivel) || 'null') || { jugadas: 0, ganadas: 0, racha: 0, mejor: 0 }; } catch (e) { return { jugadas: 0, ganadas: 0, racha: 0, mejor: 0 }; }
+}
+function ahGuardarStats(gano) {
+    const s = ahStats();
+    s.jugadas++;
+    if (gano) { s.ganadas++; s.racha++; s.mejor = Math.max(s.mejor, s.racha); } else { s.racha = 0; }
+    try { localStorage.setItem('ahorcado-stats-' + ahNivel, JSON.stringify(s)); } catch (e) {}
+}
+
+function ahMensaje(t, tipo) {
+    const m = document.getElementById('ah-mensaje');
+    if (!m) return;
+    m.textContent = t || '';
+    m.className = 'mensaje-elenco' + (tipo ? ' ' + tipo : '');
+}
+
+function ahDibujar() {
+    const palabra = document.getElementById('ah-palabra');
+    if (!palabra || !ahItem) return;
+    const rev = ahReveladas();
+    const fin = ahTerminado;
+    palabra.innerHTML = '';
+    ahItem.nombre.split(' ').forEach(pal => {
+        const g = document.createElement('div');
+        g.className = 'ah-grupo';
+        pal.split('').forEach(c => {
+            const n = ahNormLetra(c);
+            const cel = document.createElement('div');
+            cel.className = 'ah-celda';
+            if (!/^[a-z]$/.test(n)) { cel.textContent = c; cel.classList.add('signo'); }
+            else if (rev.has(n)) { cel.textContent = c.toUpperCase(); cel.classList.add('visible'); }
+            else if (fin) { cel.textContent = c.toUpperCase(); cel.classList.add('perdida'); }
+            g.appendChild(cel);
+        });
+        palabra.appendChild(g);
+    });
+    for (let i = 1; i <= AH_MAX_ERRORES; i++) {
+        const p = document.getElementById('ah-p' + i);
+        if (p) p.style.opacity = ahErrores >= i ? '1' : '0.08';
+    }
+    const vidas = document.getElementById('ah-vidas');
+    if (vidas) vidas.textContent = '❤️'.repeat(Math.max(0, AH_MAX_ERRORES - ahErrores)) + '🖤'.repeat(Math.min(AH_MAX_ERRORES, ahErrores));
+    const pista = document.getElementById('ah-pista');
+    if (pista) pista.textContent = `Universo: ${ahItem.universo}` + (ahErrores >= 3 ? ` · Equipo: ${ahItem.equipo}` : ' · (la pista del equipo aparece al tercer error)');
+    const tec = document.getElementById('ah-teclado');
+    if (tec) {
+        tec.innerHTML = '';
+        AH_TECLADO.forEach(fila => {
+            const f = document.createElement('div');
+            f.className = 'wordle-fila-teclado';
+            fila.split('').forEach(l => {
+                const b = document.createElement('button');
+                b.type = 'button';
+                b.className = 'wordle-tecla';
+                b.textContent = l.toUpperCase();
+                const jugada = ahLetras.has(l) || l === ahInicial();
+                if (jugada) {
+                    const esta = ahLetrasDe(ahItem.nombre).includes(l);
+                    b.classList.add(esta ? 'correcta' : 'ausente');
+                    b.disabled = true;
+                }
+                if (ahTerminado) b.disabled = true;
+                b.addEventListener('click', () => ahJugar(l));
+                f.appendChild(b);
+            });
+            tec.appendChild(f);
+        });
+    }
+}
+
+function ahJugar(l) {
+    if (ahTerminado || !ahItem || !/^[a-z]$/.test(l)) return;
+    if (ahLetras.has(l) || l === ahInicial()) return;
+    ahLetras.add(l);
+    if (!ahLetrasDe(ahItem.nombre).includes(l)) ahErrores++;
+    if (ahCompleto()) return ahTerminar(true);
+    if (ahErrores >= AH_MAX_ERRORES) return ahTerminar(false);
+    ahMensaje('');
+    ahGuardarLocal();
+    ahDibujar();
+}
+
+function ahTerminar(gano) {
+    ahTerminado = true;
+    ahGano = gano;
+    if (ahModo === 'diaria') {
+        const guardado = ahCargarLocal();
+        if (!(guardado && guardado.terminado)) ahGuardarStats(gano);
+    }
+    ahGuardarLocal();
+    ahMostrarFinal();
+    ahDibujar();
+}
+
+function ahMostrarFinal() {
+    ahMensaje(ahGano ? `🎉 ¡Era ${ahItem.nombre}! (${ahErrores} ${ahErrores === 1 ? 'error' : 'errores'})` : `Era: ${ahItem.nombre}`, ahGano ? 'victoria' : 'error');
+    const fin = document.getElementById('ah-final');
+    if (fin) fin.classList.remove('oculto');
+    const img = document.getElementById('ah-final-img');
+    if (img) {
+        const u = typeof imagenDePersonaje === 'function' ? imagenDePersonaje(ahItem.palabra) : null;
+        if (u) { img.src = u; img.classList.remove('oculto'); img.onerror = () => img.classList.add('oculto'); } else { img.classList.add('oculto'); }
+    }
+    const st = document.getElementById('ah-stats');
+    if (st && ahModo === 'diaria') {
+        const s = ahStats();
+        st.textContent = `Partidas: ${s.jugadas} · Ganadas: ${s.ganadas} · Racha: ${s.racha} · Mejor racha: ${s.mejor}`;
+    } else if (st) st.textContent = '';
+}
+
+function ahTextoCompartir() {
+    const nom = { facil: 'Fácil', medio: 'Medio', dificil: 'Difícil' }[ahNivel];
+    const dib = '🟥'.repeat(ahErrores) + '⬜'.repeat(AH_MAX_ERRORES - ahErrores);
+    return `Ahorcado de Personajes (${nom}) ${ahGano ? '✅' : '❌'}\n${dib}\nEl Multiverso`;
+}
+
+function ahIniciar(modo) {
+    ahModo = modo;
+    ahLetras = new Set();
+    ahErrores = 0;
+    ahTerminado = false;
+    ahGano = false;
+    document.getElementById('ah-final').classList.add('oculto');
+    document.querySelectorAll('.ah-nivel').forEach(b => b.classList.toggle('activo', b.dataset.nivel === ahNivel));
+    const pool = ahPool(ahNivel);
+    const sub = document.getElementById('ah-subtitulo');
+    if (!pool.length) { if (sub) sub.textContent = 'No hay personajes para este nivel.'; return; }
+    if (modo === 'diaria') {
+        const g = ahCargarLocal();
+        const nombreNivel = { facil: 'Fácil', medio: 'Medio', dificil: 'Difícil' }[ahNivel];
+        if (g) {
+            ahItem = pool.find(x => x.palabra === g.palabra) || null;
+            if (ahItem) { ahLetras = new Set(g.letras || []); ahErrores = g.errores || 0; ahTerminado = !!g.terminado; ahGano = !!g.gano; }
+        }
+        if (!ahItem || !g) {
+            const rng = conRng(conFechaSemilla({ facil: 11, medio: 13, dificil: 17 }[ahNivel] * 104729));
+            ahItem = pool[Math.floor(rng() * pool.length)];
+        }
+        if (sub) sub.textContent = `Ahorcado del día (${nombreNivel}): adiviná el nombre del personaje. Solo se ve la letra inicial. Tenés ${AH_MAX_ERRORES} errores.`;
+    } else {
+        ahItem = pool[Math.floor(Math.random() * pool.length)];
+        if (sub) sub.textContent = `Ahorcado al azar: no se guarda. Solo se ve la letra inicial. Tenés ${AH_MAX_ERRORES} errores.`;
+    }
+    ahMensaje('');
+    ahDibujar();
+    if (ahTerminado) ahMostrarFinal();
+}
+
+const tarjetaAhorcado = document.getElementById('tarjeta-ahorcado');
+if (tarjetaAhorcado) {
+    tarjetaAhorcado.addEventListener('click', () => {
+        ahIniciar('diaria');
+        cambiarSeccion(document.getElementById('seccion-ahorcado'));
+    });
+}
+const btnVolverJuegosDesdeAh = document.getElementById('btn-volver-juegos-desde-ahorcado');
+if (btnVolverJuegosDesdeAh) btnVolverJuegosDesdeAh.addEventListener('click', () => cambiarSeccion(document.getElementById('seccion-juegos')));
+document.querySelectorAll('.ah-nivel').forEach(b => b.addEventListener('click', () => {
+    ahNivel = b.dataset.nivel;
+    try { localStorage.setItem('ahorcado-nivel', ahNivel); } catch (e) {}
+    ahIniciar('diaria');
+}));
+const ahBtnAzar = document.getElementById('ah-btn-azar');
+if (ahBtnAzar) ahBtnAzar.addEventListener('click', () => ahIniciar('azar'));
+const ahBtnCompartir = document.getElementById('ah-btn-compartir');
+if (ahBtnCompartir) {
+    ahBtnCompartir.addEventListener('click', () => {
+        const texto = ahTextoCompartir();
+        const aviso = () => { ahBtnCompartir.textContent = '¡Copiado!'; setTimeout(() => { ahBtnCompartir.textContent = 'Copiar resultado'; }, 1800); };
+        if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(texto).then(aviso).catch(() => {});
+        else aviso();
+    });
+}
+document.addEventListener('keydown', (e) => {
+    const sec = document.getElementById('seccion-ahorcado');
+    if (!sec || sec.classList.contains('oculto') || e.ctrlKey || e.metaKey || e.altKey) return;
+    const l = ahNormLetra(e.key);
+    if (/^[a-z]$/.test(l) && e.key.length === 1) ahJugar(l);
+});
+
 const tarjetaGrillas = document.getElementById('tarjeta-grillas');
 if (tarjetaGrillas) {
     tarjetaGrillas.addEventListener('click', () => {

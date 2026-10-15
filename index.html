@@ -14463,6 +14463,11 @@
                 <h3>Conexiones</h3>
                 <p>16 personajes, 4 grupos ocultos. Encontrá qué equipo o bando une a cada cuatro. Una por día.</p>
             </div>
+            <div class="tarjeta-juego" id="tarjeta-ahorcado">
+                <div class="icono-juego">🪢</div>
+                <h3>Ahorcado</h3>
+                <p>Adiviná el nombre del personaje letra por letra. Solo se ve la inicial. Uno por día.</p>
+            </div>
             <div class="tarjeta-juego" id="tarjeta-grillas">
                 <div class="icono-juego">🔲</div>
                 <h3>Grillas</h3>
@@ -14519,6 +14524,44 @@
                 <button type="button" class="btn-modal" id="con-btn-compartir">Copiar resultado</button>
                 <button type="button" class="btn-modal" id="con-btn-azar">Jugar una al azar</button>
             </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: JUEGO - AHORCADO -->
+    <section id="seccion-ahorcado" class="oculto">
+        <button class="btn-volver" id="btn-volver-juegos-desde-ahorcado">← Volver a Juegos</button>
+        <h2>Ahorcado 🪢</h2>
+        <div class="wordle-niveles">
+            <button type="button" class="btn-modal ah-nivel" data-nivel="facil">Fácil</button>
+            <button type="button" class="btn-modal ah-nivel" data-nivel="medio">Medio</button>
+            <button type="button" class="btn-modal ah-nivel" data-nivel="dificil">Difícil</button>
+        </div>
+        <p class="subtitulo-juegos" id="ah-subtitulo"></p>
+        <p class="subtitulo-juegos">Errores restantes: <span id="ah-vidas"></span></p>
+        <svg id="ah-dibujo" class="ah-dibujo" viewBox="0 0 120 140" aria-hidden="true">
+            <g stroke="#bbb" stroke-width="4" stroke-linecap="round" fill="none">
+                <line x1="15" y1="132" x2="75" y2="132"/><line x1="30" y1="132" x2="30" y2="10"/><line x1="30" y1="10" x2="85" y2="10"/><line x1="85" y1="10" x2="85" y2="26"/>
+            </g>
+            <g stroke="#e8e8e8" stroke-width="4" stroke-linecap="round" fill="none">
+                <circle id="ah-p1" cx="85" cy="36" r="10"/>
+                <line id="ah-p2" x1="85" y1="46" x2="85" y2="86"/>
+                <line id="ah-p3" x1="85" y1="56" x2="68" y2="74"/>
+                <line id="ah-p4" x1="85" y1="56" x2="102" y2="74"/>
+                <line id="ah-p5" x1="85" y1="86" x2="70" y2="112"/>
+                <line id="ah-p6" x1="85" y1="86" x2="100" y2="112"/>
+            </g>
+        </svg>
+        <p class="subtitulo-juegos" id="ah-pista"></p>
+        <div id="ah-palabra" class="ah-palabra"></div>
+        <div id="ah-mensaje" class="mensaje-elenco"></div>
+        <div id="ah-teclado" class="wordle-teclado"></div>
+        <div id="ah-final" class="wordle-final oculto">
+            <img id="ah-final-img" class="wordle-final-img oculto" alt="">
+            <div class="wordle-acciones">
+                <button type="button" class="btn-modal" id="ah-btn-compartir">Copiar resultado</button>
+                <button type="button" class="btn-modal" id="ah-btn-azar">Jugar otro al azar</button>
+            </div>
+            <p id="ah-stats" class="subtitulo-juegos"></p>
         </div>
     </section>
 

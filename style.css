@@ -1965,3 +1965,14 @@ h2 {
 #con-btn-enviar:disabled { opacity: 0.5; cursor: not-allowed; }
 @media (max-width: 480px) { .con-ficha { font-size: 0.72rem; min-height: 60px; } .con-ficha img { width: 34px; height: 34px; } }
 .con-nivel.activo { outline: 2px solid currentColor; font-weight: bold; }
+
+/* ===== Ahorcado ===== */
+.ah-dibujo { display: block; width: 130px; height: 150px; margin: 6px auto; }
+.ah-palabra { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 22px; margin: 12px auto; max-width: 640px; }
+.ah-grupo { display: flex; gap: 5px; }
+.ah-celda { width: 30px; height: 40px; border-bottom: 3px solid #888; display: flex; align-items: flex-end; justify-content: center; font-size: 1.5rem; font-weight: bold; color: #fff; padding-bottom: 2px; }
+.ah-celda.signo { border-bottom-color: transparent; width: 18px; }
+.ah-celda.visible { border-bottom-color: #2e7d32; }
+.ah-celda.perdida { color: #e57373; border-bottom-color: #b71c1c; }
+.ah-nivel.activo { outline: 2px solid currentColor; font-weight: bold; }
+@media (max-width: 480px) { .ah-celda { width: 24px; height: 34px; font-size: 1.2rem; } .ah-grupo { gap: 3px; } }
