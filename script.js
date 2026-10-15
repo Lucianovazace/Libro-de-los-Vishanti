@@ -26161,6 +26161,9 @@ function momCarta(item, oculto) {
 function momDibujar(revelarDer, acerto) {
     const cont = document.getElementById('mom-juego');
     if (!cont) return;
+    // Evita que la página "salte": mantiene la altura mientras se recrean las cartas y cargan los pósters.
+    const alturaPrev = cont.offsetHeight;
+    if (alturaPrev) cont.style.minHeight = alturaPrev + 'px';
     cont.innerHTML = '';
     const izq = momCarta(momIzq, false);
     const der = momCarta(momDer, !revelarDer);
@@ -26180,7 +26183,18 @@ function momDibujar(revelarDer, acerto) {
     cont.append(izq, der);
     document.getElementById('mom-racha').textContent = momRacha;
     document.getElementById('mom-mejor').textContent = Math.max(momMejor(), momRacha);
-    document.getElementById('mom-botones').classList.toggle('oculto', momTerminado || revelarDer);
+    const botones = document.getElementById('mom-botones');
+    botones.classList.toggle('oculto', momTerminado);
+    botones.style.visibility = revelarDer ? 'hidden' : '';
+    if (alturaPrev) {
+        const imgs = Array.from(cont.querySelectorAll('img')).filter(i => !i.complete);
+        let pendientes = imgs.length;
+        let liberado = false;
+        const liberar = () => { if (liberado) return; liberado = true; cont.style.minHeight = ''; };
+        if (!pendientes) requestAnimationFrame(() => requestAnimationFrame(liberar));
+        else imgs.forEach(i => { const ok = () => { pendientes--; if (pendientes <= 0) liberar(); }; i.addEventListener('load', ok); i.addEventListener('error', ok); });
+        setTimeout(liberar, 2000);
+    }
 }
 
 function momDibujarTipos(todas) {
@@ -26271,6 +26285,7 @@ function momResponder(mayor) {
         momMostrarGlobal(true);
         document.getElementById('mom-mejor').textContent = momMejor();
         const fin = document.getElementById('mom-final');
+        document.getElementById('mom-botones').classList.add('oculto');
         fin.classList.remove('oculto');
         document.getElementById('mom-final-texto').innerHTML = `<h3>${momRacha === 0 ? 'Fallaste a la primera' : '¡Racha de ' + momRacha + '!'}</h3><p>Mejor racha en ${MOM_METRICAS[momMetrica].fuente}: <strong>${momMejor()}</strong></p>`;
     }
