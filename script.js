@@ -26745,7 +26745,10 @@ if (conBtnCompartir) {
 // Se usa la lista de personajes del Wordle (WORDLE_PALABRAS) con el nombre completo (puede tener varias palabras).
 // Solo se muestra la letra inicial del nombre completo (las iniciales de las demás palabras quedan ocultas).
 const AH_MAX_ERRORES = 6;
-const AH_TECLADO = ['qwertyuiop', 'asdfghjkl', 'zxcvbnm'];
+const AH_TECLADO = ['qwertyuiop', 'asdfghjklñ', 'zxcvbnm'];
+const AH_RE = /^[a-zñ]$/;
+let ahAnimar = 0;            // número de la parte del muñeco que hay que dibujar con el lápiz
+let ahAnimId = 0;
 let ahNivel = (function () { try { const n = localStorage.getItem('ahorcado-nivel'); return ['facil', 'medio', 'dificil'].includes(n) ? n : 'medio'; } catch (e) { return 'medio'; } })();
 let ahModo = 'diaria';
 let ahItem = null;           // { nombre, palabra, universo, equipo }
@@ -26755,7 +26758,11 @@ let ahTerminado = false;
 let ahGano = false;
 let ahPoolCache = {};
 
-function ahNormLetra(c) { return String(c).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase(); }
+function ahNormLetra(c) {
+    const x = String(c).toLowerCase();
+    if (x === 'ñ') return 'ñ';
+    return x.normalize('NFD').replace(/[̀-ͯ]/g, '');
+}
 
 // Elige el nombre "de personaje" a adivinar a partir de nombres como "Edward Nygma (Acertijo)" o "Oráculo (Barbara Gordon)".
 const AH_NOMBRE_FIJO = { logan: 'Wolverine' };
@@ -26783,7 +26790,7 @@ function ahPool(nivel) {
     WORDLE_PALABRAS.forEach(p => {
         if (wordleNivelDe(p) !== nivel) return;
         const nombre = ahNombreDe(p);
-        const letras = nombre.split('').filter(c => /[a-z]/.test(ahNormLetra(c))).length;
+        const letras = nombre.split('').filter(c => AH_RE.test(ahNormLetra(c))).length;
         if (letras < 4 || nombre.length > 26) return;
         const k = conNorm(nombre);
         if (vistos.has(k)) return;
@@ -26795,7 +26802,7 @@ function ahPool(nivel) {
 }
 
 function ahLetrasDe(nombre) {
-    return nombre.split('').map(ahNormLetra).filter(c => /^[a-z]$/.test(c));
+    return nombre.split('').map(ahNormLetra).filter(c => AH_RE.test(c));
 }
 function ahInicial() {
     const l = ahLetrasDe(ahItem.nombre);
@@ -26840,6 +26847,45 @@ function ahMensaje(t, tipo) {
     m.className = 'mensaje-elenco' + (tipo ? ' ' + tipo : '');
 }
 
+// Dibuja el muñeco: las partes ya hechas quedan fijas y la nueva se dibuja con un lápiz (animación simple).
+function ahDibujarMuneco() {
+    const nueva = ahAnimar;
+    ahAnimar = 0;
+    ahAnimId++;
+    const miId = ahAnimId;
+    const lapiz = document.getElementById('ah-lapiz');
+    if (lapiz) lapiz.style.display = 'none';
+    for (let i = 1; i <= AH_MAX_ERRORES; i++) {
+        const p = document.getElementById('ah-p' + i);
+        if (!p) continue;
+        p.style.strokeDasharray = '';
+        p.style.strokeDashoffset = '';
+        p.style.opacity = ahErrores >= i ? '1' : '0';
+    }
+    const sinMov = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const parte = nueva ? document.getElementById('ah-p' + nueva) : null;
+    if (!parte || !lapiz || sinMov || typeof parte.getTotalLength !== 'function') return;
+    const largo = parte.getTotalLength();
+    const dur = nueva === 1 ? 900 : 650;
+    parte.style.strokeDasharray = largo;
+    parte.style.strokeDashoffset = largo;
+    parte.style.opacity = '1';
+    lapiz.style.display = '';
+    const t0 = performance.now();
+    const paso = (ahora) => {
+        if (miId !== ahAnimId) return;
+        const f = Math.min(1, (ahora - t0) / dur);
+        const e = f < 0.5 ? 2 * f * f : 1 - Math.pow(-2 * f + 2, 2) / 2;
+        parte.style.strokeDashoffset = String(largo * (1 - e));
+        const pt = parte.getPointAtLength(largo * e);
+        const wob = Math.sin(f * 30) * 1.2;
+        lapiz.setAttribute('transform', `translate(${pt.x.toFixed(1)},${(pt.y + wob).toFixed(1)}) rotate(-45) scale(0.62)`);
+        if (f < 1) requestAnimationFrame(paso);
+        else { parte.style.strokeDasharray = ''; parte.style.strokeDashoffset = ''; lapiz.style.display = 'none'; }
+    };
+    requestAnimationFrame(paso);
+}
+
 function ahDibujar() {
     const palabra = document.getElementById('ah-palabra');
     if (!palabra || !ahItem) return;
@@ -26853,17 +26899,14 @@ function ahDibujar() {
             const n = ahNormLetra(c);
             const cel = document.createElement('div');
             cel.className = 'ah-celda';
-            if (!/^[a-z]$/.test(n)) { cel.textContent = c; cel.classList.add('signo'); }
+            if (!AH_RE.test(n)) { cel.textContent = c; cel.classList.add('signo'); }
             else if (rev.has(n)) { cel.textContent = c.toUpperCase(); cel.classList.add('visible'); }
             else if (fin) { cel.textContent = c.toUpperCase(); cel.classList.add('perdida'); }
             g.appendChild(cel);
         });
         palabra.appendChild(g);
     });
-    for (let i = 1; i <= AH_MAX_ERRORES; i++) {
-        const p = document.getElementById('ah-p' + i);
-        if (p) p.style.opacity = ahErrores >= i ? '1' : '0.08';
-    }
+    ahDibujarMuneco();
     const vidas = document.getElementById('ah-vidas');
     if (vidas) vidas.textContent = '❤️'.repeat(Math.max(0, AH_MAX_ERRORES - ahErrores)) + '🖤'.repeat(Math.min(AH_MAX_ERRORES, ahErrores));
     const pista = document.getElementById('ah-pista');
@@ -26895,10 +26938,10 @@ function ahDibujar() {
 }
 
 function ahJugar(l) {
-    if (ahTerminado || !ahItem || !/^[a-z]$/.test(l)) return;
+    if (ahTerminado || !ahItem || !AH_RE.test(l)) return;
     if (ahLetras.has(l) || l === ahInicial()) return;
     ahLetras.add(l);
-    if (!ahLetrasDe(ahItem.nombre).includes(l)) ahErrores++;
+    if (!ahLetrasDe(ahItem.nombre).includes(l)) { ahErrores++; ahAnimar = ahErrores; }
     if (ahCompleto()) return ahTerminar(true);
     if (ahErrores >= AH_MAX_ERRORES) return ahTerminar(false);
     ahMensaje('');
@@ -27001,7 +27044,7 @@ document.addEventListener('keydown', (e) => {
     const sec = document.getElementById('seccion-ahorcado');
     if (!sec || sec.classList.contains('oculto') || e.ctrlKey || e.metaKey || e.altKey) return;
     const l = ahNormLetra(e.key);
-    if (/^[a-z]$/.test(l) && e.key.length === 1) ahJugar(l);
+    if (AH_RE.test(l) && e.key.length === 1) ahJugar(l);
 });
 
 const tarjetaGrillas = document.getElementById('tarjeta-grillas');
