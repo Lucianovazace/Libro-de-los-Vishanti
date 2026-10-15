@@ -25208,7 +25208,7 @@ const WORDLE_PALABRAS = [
     { palabra: "demara", nombre: "Rita DeMara (Yellowjacket)", universo: "Marvel", equipo: "Universo Iron Man", tipo: "Héroe" },
     { palabra: "masque", nombre: "Madame Masque", universo: "Marvel", equipo: "Villanos de Iron Man", tipo: "Villano" },
     { palabra: "mallen", nombre: "Mallen (Extremis)", universo: "Marvel", equipo: "Villanos de Iron Man", tipo: "Villano" },
-    { palabra: "barton", nombre: "Clint Barton (Hawkeye)", universo: "Marvel", equipo: "Universo Iron Man", tipo: "Héroe" },
+    { palabra: "barton", nombre: "Clint Barton (Hawkeye)", universo: "Marvel", equipo: "Vengadores", tipo: "Héroe" },
     { palabra: "morgan", nombre: "Morgan Stark", universo: "Marvel", equipo: "Aliados de Iron Man", tipo: "Aliado" },
     { palabra: "frost", nombre: "Whitney Frost (Madame Masque)", universo: "Marvel", equipo: "Villanos de Iron Man", tipo: "Villano" },
     { palabra: "angela", nombre: "Angela (Aldrif Odinsdottir)", universo: "Marvel", equipo: "Asgard", tipo: "Héroe" },
@@ -26035,6 +26035,340 @@ if (momBtnCompartir) {
 }
 const momBtnReintentar = document.getElementById('mom-btn-reintentar');
 if (momBtnReintentar) momBtnReintentar.addEventListener('click', momIniciar);
+
+
+// ==========================================
+// JUEGO "CONEXIONES" (agrupá 16 personajes en 4 grupos)
+// ==========================================
+// Los grupos salen de los datos que ya hay: los equipos del Wordle (WORDLE_PALABRAS) y los catálogos
+// de personajes de Marvel (PERSONAJES_MARVEL_*), separados por tipo (héroes, villanos, aliados).
+const CON_CATALOGOS = [
+    { clave: 'Spider-Man', lista: () => PERSONAJES_MARVEL_SPIDERMAN, nivel: 'medio' },
+    { clave: 'el Capitán América', lista: () => PERSONAJES_MARVEL_CAPITAN_AMERICA, nivel: 'dificil' },
+    { clave: 'los Inhumanos', lista: () => PERSONAJES_MARVEL_INHUMANOS, nivel: 'dificil' },
+    { clave: 'Iron Man', lista: () => PERSONAJES_MARVEL_IRON_MAN, nivel: 'dificil' },
+    { clave: 'Thor', lista: () => PERSONAJES_MARVEL_THOR, nivel: 'dificil' },
+    { clave: 'Wolverine', lista: () => PERSONAJES_MARVEL_LOBEZNO, nivel: 'dificil' },
+    { clave: 'los Defensores', lista: () => PERSONAJES_MARVEL_DEFENSORES, nivel: 'dificil' },
+    { clave: 'Daredevil', lista: () => PERSONAJES_MARVEL_DAREDEVIL, nivel: 'dificil' },
+    { clave: 'los Guardianes de la Galaxia', lista: () => PERSONAJES_MARVEL_GUARDIANES, nivel: 'medio' },
+    { clave: 'los Eternos', lista: () => PERSONAJES_MARVEL_ETERNOS, nivel: 'dificil' },
+    { clave: 'los Cuatro Fantásticos', lista: () => PERSONAJES_MARVEL_CUATRO_FANTASTICOS, nivel: 'medio', soloTipos: ['Villano'] }
+];
+const CON_COLORES = ['amarillo', 'verde', 'azul', 'violeta'];
+const CON_EMOJI = { amarillo: '🟨', verde: '🟩', azul: '🟦', violeta: '🟪' };
+const CON_NIVEL_TXT = { facil: 'Fácil', medio: 'Medio', dificil: 'Difícil' };
+let conNivel = (function () { try { const n = localStorage.getItem('conexiones-nivel'); return ['facil', 'medio', 'dificil'].includes(n) ? n : 'medio'; } catch (e) { return 'medio'; } })();
+let conModo = 'diaria';
+let conGruposCache = null;
+let conPuzzle = null;      // { grupos: [{titulo, color, miembros:[{nombre, imagen}]}], fichas: [{id, nombre, imagen, g}] }
+let conOrden = [];
+let conSeleccion = [];
+let conResueltos = [];
+let conErrores = 0;
+let conIntentos = [];      // cada intento: lista de índices de grupo de las 4 fichas
+let conTerminado = false;
+
+function conNorm(x) { return String(x).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]/g, ''); }
+
+const CON_GENERICAS = new Set(['hombre', 'mujer', 'doctor', 'lady', 'captain', 'capitan', 'spider', 'iron', 'black', 'white', 'dark', 'king', 'queen', 'mister', 'agent', 'agente', 'woman', 'girl', 'from', 'with']);
+// Palabras "con identidad" del nombre completo (incluye lo que va entre paréntesis): sirven para detectar al mismo personaje con dos nombres.
+function conTokens(n) {
+    return String(n).split(/[^A-Za-zÀ-ÿ0-9']+/).map(conNorm).filter(t => t.length >= 4 && !CON_GENERICAS.has(t));
+}
+function conMismoPersonaje(a, b) {
+    const ta = conTokens(a);
+    return conTokens(b).some(t => ta.includes(t));
+}
+
+function conNombreCorto(n) {
+    const partes = String(n).split(' / ');
+    const base = (/^Agent(e)? (of|de) /i.test(partes[0]) && partes[1]) ? partes[1] : partes[0];
+    return base.split(' (')[0].trim();
+}
+
+function conFechaSemilla(extra) {
+    const [a, m, d] = wordleFechaHoy().split('-').map(Number);
+    return a * 10000 + m * 100 + d + extra;
+}
+
+function conRng(semilla) {
+    let s = semilla >>> 0;
+    return () => { s = (s * 1664525 + 1013904223) % 4294967296; return s / 4294967296; };
+}
+
+function conBarajar(arr, rng) {
+    const a = arr.slice();
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(rng() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+}
+
+function conConstruirGrupos() {
+    if (conGruposCache) return conGruposCache;
+    const nivelDe = { facil: 0, medio: 1, dificil: 2 };
+    const grupos = [];
+    // 1) Equipos del Wordle: miembros con su nivel de fama.
+    const porEquipo = {};
+    WORDLE_PALABRAS.forEach(p => {
+        const k = p.universo + '|' + p.equipo;
+        (porEquipo[k] = porEquipo[k] || { titulo: p.equipo, universo: p.universo, miembros: [] });
+        const nombre = conNombreCorto(p.nombre);
+        if (porEquipo[k].miembros.some(m => conMismoPersonaje(m.completo, p.nombre) || conNorm(m.nombre) === conNorm(nombre))) return;
+        porEquipo[k].miembros.push({ nombre, completo: p.nombre, nivel: nivelDe[wordleNivelDe(p)], imagen: imagenDePersonaje(p.palabra) });
+    });
+    Object.values(porEquipo).forEach(g => {
+        const n0 = g.miembros.filter(m => m.nivel === 0).length;
+        const n1 = g.miembros.filter(m => m.nivel <= 1).length;
+        if (g.miembros.length >= 4) grupos.push({ titulo: g.titulo, universo: g.universo, origen: 'equipo', miembros: g.miembros, aptoFacil: n0 >= 4, aptoMedio: n1 >= 4 });
+    });
+    // 2) Catálogos de Marvel por tipo.
+    const famosos = new Set(WORDLE_PALABRAS.filter(p => wordleNivelDe(p) !== 'dificil').map(p => p.palabra));
+    const esFamoso = (m) => (m.nombre + ' ' + (m.real || '')).split(/[^A-Za-zÀ-ÿ]+/).some(t => famosos.has(conNorm(t)));
+    const etiqueta = { 'Villano': 'Villanos de', 'Héroe': 'Héroes de', 'Aliado': 'Aliados de', 'Antihéroe': 'Antihéroes de' };
+    CON_CATALOGOS.forEach(cat => {
+        let lista = [];
+        try { lista = cat.lista(); } catch (e) { return; }
+        ['Villano', 'Héroe', 'Aliado', 'Antihéroe'].filter(t => !cat.soloTipos || cat.soloTipos.includes(t)).forEach(tipo => {
+            const miembros = [];
+            lista.filter(x => x.tipo === tipo).forEach(x => {
+                const nombre = conNombreCorto(x.nombre);
+                if (nombre.length > 24 || /^(the|el|la|los) /i.test(nombre)) return;
+                if (miembros.some(m => conNorm(m.nombre) === conNorm(nombre) || conMismoPersonaje(m.completo, x.nombre + ' ' + (x.real || '').split(' - ')[0]))) return;
+                const m = { nombre, completo: x.nombre + ' ' + (x.real || '').split(' - ')[0], real: x.real, imagen: null };
+                m.nivel = esFamoso(m) ? 1 : 2;
+                miembros.push(m);
+            });
+            if (miembros.length >= 4) {
+                const nMedio = miembros.filter(m => m.nivel <= 1).length;
+                grupos.push({ titulo: etiqueta[tipo] + ' ' + cat.clave, universo: 'Marvel', origen: 'catalogo', miembros, aptoFacil: false, aptoMedio: cat.nivel === 'medio' && nMedio >= 4 });
+            }
+        });
+    });
+    conGruposCache = grupos;
+    return grupos;
+}
+
+function conGenerar(nivel, rng) {
+    const todos = conConstruirGrupos();
+    const maxNivel = nivel === 'facil' ? 0 : nivel === 'medio' ? 1 : 2;
+    let aptos = todos.filter(g => nivel === 'facil' ? g.aptoFacil : nivel === 'medio' ? (g.aptoMedio || g.aptoFacil) : true);
+    for (let intento = 0; intento < 300; intento++) {
+        const elegidos = [];
+        const nombresUsados = [];
+        for (const g of conBarajar(aptos, rng)) {
+            if (elegidos.length === 4) break;
+            if (elegidos.some(e => e.titulo === g.titulo)) continue;
+            if (nivel === 'dificil' && elegidos.length >= 1 && g.universo !== elegidos[0].universo) continue;
+            const permitidos = g.miembros.filter(m => m.nivel <= maxNivel && !nombresUsados.some(u => conMismoPersonaje(u, m.completo) || conNorm(u) === conNorm(m.completo)));
+            if (permitidos.length < 4) continue;
+            const ms = conBarajar(permitidos, rng).slice(0, 4);
+            elegidos.push({ titulo: g.titulo, universo: g.universo, miembros: ms, dif: ms.reduce((a, m) => a + m.nivel, 0) / 4 });
+            ms.forEach(m => nombresUsados.push(m.completo));
+        }
+        if (elegidos.length === 4) {
+            elegidos.sort((a, b) => a.dif - b.dif);
+            const grupos = elegidos.map((g, i) => ({ titulo: g.titulo, color: CON_COLORES[i], miembros: g.miembros.map(m => ({ nombre: m.nombre, imagen: m.imagen })) }));
+            const fichas = [];
+            grupos.forEach((g, gi) => g.miembros.forEach(m => fichas.push({ id: fichas.length, nombre: m.nombre, imagen: m.imagen, g: gi })));
+            return { grupos, fichas };
+        }
+    }
+    return null;
+}
+
+function conClaveLocal() { return 'conexiones-dia-' + conNivel; }
+
+function conGuardarLocal() {
+    if (conModo !== 'diaria' || !conPuzzle) return;
+    try {
+        localStorage.setItem(conClaveLocal(), JSON.stringify({ fecha: wordleFechaHoy(), puzzle: conPuzzle, orden: conOrden, resueltos: conResueltos, errores: conErrores, intentos: conIntentos, terminado: conTerminado }));
+    } catch (e) {}
+}
+
+function conCargarLocal() {
+    try {
+        const g = JSON.parse(localStorage.getItem(conClaveLocal()) || 'null');
+        if (g && g.fecha === wordleFechaHoy() && g.puzzle && Array.isArray(g.orden)) return g;
+    } catch (e) {}
+    return null;
+}
+
+function conMensaje(texto, tipo) {
+    const m = document.getElementById('con-mensaje');
+    if (!m) return;
+    m.textContent = texto || '';
+    m.className = 'mensaje-elenco' + (tipo ? ' ' + tipo : '');
+}
+
+function conDibujar() {
+    const cont = document.getElementById('con-grilla');
+    if (!cont || !conPuzzle) return;
+    cont.innerHTML = '';
+    conResueltos.forEach(gi => {
+        const g = conPuzzle.grupos[gi];
+        const b = document.createElement('div');
+        b.className = 'con-banda con-' + g.color;
+        b.innerHTML = '<strong></strong><span></span>';
+        b.querySelector('strong').textContent = g.titulo;
+        b.querySelector('span').textContent = g.miembros.map(m => m.nombre).join(', ');
+        cont.appendChild(b);
+    });
+    const resto = document.createElement('div');
+    resto.className = 'con-fichas';
+    conOrden.filter(id => !conResueltos.includes(conPuzzle.fichas[id].g)).forEach(id => {
+        const f = conPuzzle.fichas[id];
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'con-ficha' + (conSeleccion.includes(id) ? ' seleccionada' : '');
+        if (f.imagen) {
+            const img = document.createElement('img');
+            img.src = f.imagen;
+            img.alt = '';
+            img.loading = 'lazy';
+            b.appendChild(img);
+        }
+        const sp = document.createElement('span');
+        sp.textContent = f.nombre;
+        b.appendChild(sp);
+        b.addEventListener('click', () => conAlternar(id));
+        resto.appendChild(b);
+    });
+    cont.appendChild(resto);
+    const vidas = document.getElementById('con-vidas');
+    if (vidas) vidas.textContent = '❤️'.repeat(4 - conErrores) + '🖤'.repeat(conErrores);
+    const acciones = document.getElementById('con-acciones');
+    if (acciones) acciones.classList.toggle('oculto', conTerminado);
+    const enviar = document.getElementById('con-btn-enviar');
+    if (enviar) enviar.disabled = conSeleccion.length !== 4;
+}
+
+function conAlternar(id) {
+    if (conTerminado) return;
+    const i = conSeleccion.indexOf(id);
+    if (i >= 0) conSeleccion.splice(i, 1);
+    else if (conSeleccion.length < 4) conSeleccion.push(id);
+    conMensaje('');
+    conDibujar();
+}
+
+function conTextoCompartir() {
+    const titulo = conModo === 'diaria' ? 'Conexiones ' + wordleFechaHoy() : 'Conexiones (al azar)';
+    const lineas = conIntentos.map(it => it.map(gi => CON_EMOJI[conPuzzle.grupos[gi].color]).join(''));
+    return `${titulo} [${CON_NIVEL_TXT[conNivel]}] ${conResueltos.length === 4 && conErrores < 4 ? conErrores + ' errores' : 'X'}\n\n${lineas.join('\n')}`;
+}
+
+function conTerminar(gano) {
+    conTerminado = true;
+    if (!gano) {
+        [0, 1, 2, 3].forEach(gi => { if (!conResueltos.includes(gi)) conResueltos.push(gi); });
+    }
+    conGuardarLocal();
+    conDibujar();
+    conMensaje(gano ? (conErrores === 0 ? '🎉 ¡Perfecto, sin errores!' : '🎉 ¡Lo resolviste!') : 'Se acabaron los intentos. Estos eran los grupos.', gano ? 'victoria' : 'error');
+    const fin = document.getElementById('con-final');
+    if (fin) fin.classList.remove('oculto');
+}
+
+function conEnviar() {
+    if (conTerminado || conSeleccion.length !== 4) return;
+    const gs = conSeleccion.map(id => conPuzzle.fichas[id].g);
+    const clave = conSeleccion.slice().sort((a, b) => a - b).join(',');
+    if (conIntentos.some(it => it.__clave === clave)) { conMensaje('Ya probaste esa combinación.', 'error'); return; }
+    const registro = gs.slice();
+    registro.__clave = clave;
+    const cuenta = {};
+    gs.forEach(g => { cuenta[g] = (cuenta[g] || 0) + 1; });
+    const mejor = Math.max(...Object.values(cuenta));
+    conIntentos.push(registro);
+    if (mejor === 4) {
+        conResueltos.push(gs[0]);
+        conSeleccion = [];
+        conMensaje('');
+        if (conResueltos.length === 4) return conTerminar(true);
+    } else {
+        conErrores++;
+        conSeleccion = [];
+        conMensaje(mejor === 3 ? '¡Casi! Hay tres que van juntos.' : 'Esos no van juntos.', 'error');
+        if (conErrores >= 4) return conTerminar(false);
+    }
+    conGuardarLocal();
+    conDibujar();
+}
+
+function conIniciar(modo) {
+    conModo = modo;
+    conSeleccion = [];
+    conResueltos = [];
+    conErrores = 0;
+    conIntentos = [];
+    conTerminado = false;
+    conPuzzle = null;
+    document.getElementById('con-final').classList.add('oculto');
+    document.querySelectorAll('.con-nivel').forEach(b => b.classList.toggle('activo', b.dataset.nivel === conNivel));
+    const sub = document.getElementById('con-subtitulo');
+    if (modo === 'diaria') {
+        const g = conCargarLocal();
+        if (g) {
+            conPuzzle = g.puzzle; conOrden = g.orden; conResueltos = g.resueltos || []; conErrores = g.errores || 0; conIntentos = g.intentos || []; conTerminado = !!g.terminado;
+        } else {
+            conPuzzle = conGenerar(conNivel, conRng(conFechaSemilla({ facil: 1, medio: 2, dificil: 3 }[conNivel] * 7919)));
+        }
+        if (sub) sub.textContent = `Conexiones del día (${CON_NIVEL_TXT[conNivel]}): encontrá los 4 grupos de 4 personajes. Es la misma para todos. Tenés 4 errores.`;
+    } else {
+        conPuzzle = conGenerar(conNivel, Math.random);
+        if (sub) sub.textContent = `Conexiones al azar (${CON_NIVEL_TXT[conNivel]}): no se guarda. Tenés 4 errores.`;
+    }
+    if (!conPuzzle) {
+        if (sub) sub.textContent = 'No se pudo armar un tablero con los datos actuales.';
+        document.getElementById('con-grilla').innerHTML = '';
+        return;
+    }
+    if (!conOrden.length || modo !== 'diaria' || conPuzzle.fichas.length !== conOrden.length) {
+        conOrden = conBarajar(conPuzzle.fichas.map(f => f.id), modo === 'diaria' ? conRng(conFechaSemilla(99)) : Math.random);
+    }
+    conMensaje('');
+    conDibujar();
+    if (conTerminado) {
+        const gano = conResueltos.length === 4 && conErrores < 4;
+        conMensaje(gano ? '🎉 Ya resolviste la de hoy.' : 'Hoy no salió. Estos eran los grupos.', gano ? 'victoria' : 'error');
+        document.getElementById('con-final').classList.remove('oculto');
+    }
+}
+
+const tarjetaConexiones = document.getElementById('tarjeta-conexiones');
+if (tarjetaConexiones) {
+    tarjetaConexiones.addEventListener('click', () => {
+        conIniciar('diaria');
+        cambiarSeccion(document.getElementById('seccion-conexiones'));
+    });
+}
+const btnVolverJuegosDesdeCon = document.getElementById('btn-volver-juegos-desde-conexiones');
+if (btnVolverJuegosDesdeCon) btnVolverJuegosDesdeCon.addEventListener('click', () => cambiarSeccion(document.getElementById('seccion-juegos')));
+document.querySelectorAll('.con-nivel').forEach(b => b.addEventListener('click', () => {
+    conNivel = b.dataset.nivel;
+    try { localStorage.setItem('conexiones-nivel', conNivel); } catch (e) {}
+    conIniciar('diaria');
+}));
+const conBtnEnviar = document.getElementById('con-btn-enviar');
+if (conBtnEnviar) conBtnEnviar.addEventListener('click', conEnviar);
+const conBtnMezclar = document.getElementById('con-btn-mezclar');
+if (conBtnMezclar) conBtnMezclar.addEventListener('click', () => { conOrden = conBarajar(conOrden, Math.random); conDibujar(); conGuardarLocal(); });
+const conBtnLimpiar = document.getElementById('con-btn-limpiar');
+if (conBtnLimpiar) conBtnLimpiar.addEventListener('click', () => { conSeleccion = []; conDibujar(); });
+const conBtnAzar = document.getElementById('con-btn-azar');
+if (conBtnAzar) conBtnAzar.addEventListener('click', () => conIniciar('azar'));
+const conBtnCompartir = document.getElementById('con-btn-compartir');
+if (conBtnCompartir) {
+    conBtnCompartir.addEventListener('click', () => {
+        const texto = conTextoCompartir();
+        const aviso = () => { conBtnCompartir.textContent = '¡Copiado!'; setTimeout(() => { conBtnCompartir.textContent = 'Copiar resultado'; }, 1800); };
+        if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(texto).then(aviso).catch(() => {});
+        else aviso();
+    });
+}
 
 const tarjetaGrillas = document.getElementById('tarjeta-grillas');
 if (tarjetaGrillas) {

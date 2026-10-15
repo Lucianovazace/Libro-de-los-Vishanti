@@ -1949,3 +1949,19 @@ h2 {
 @keyframes mom-sacudir { 0%,100% { transform: translateX(0); } 25% { transform: translateX(-6px); } 75% { transform: translateX(6px); } }
 .mom-error { animation: mom-sacudir 0.35s; }
 #mom-final .btn-modal { flex: 0 1 200px; }
+
+.con-grilla { display: flex; flex-direction: column; gap: 8px; max-width: 640px; margin: 12px auto; }
+.con-fichas { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.con-ficha { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; min-height: 70px; padding: 6px; border-radius: 8px; border: 2px solid transparent; background: rgba(255,255,255,0.08); color: inherit; font-weight: bold; font-size: 0.85rem; cursor: pointer; overflow-wrap: anywhere; text-align: center; }
+.con-ficha img { width: 44px; height: 44px; object-fit: cover; border-radius: 50%; }
+.con-ficha.seleccionada { border-color: #fff; background: rgba(255,255,255,0.22); }
+.con-banda { display: flex; flex-direction: column; align-items: center; padding: 10px; border-radius: 8px; color: #111; text-align: center; }
+.con-banda span { font-size: 0.85rem; }
+.con-amarillo { background: #f1c40f; }
+.con-verde { background: #5cb85c; }
+.con-azul { background: #5dade2; }
+.con-violeta { background: #b07cd8; }
+#con-acciones .btn-modal, #con-final .btn-modal { flex: 0 1 160px; }
+#con-btn-enviar:disabled { opacity: 0.5; cursor: not-allowed; }
+@media (max-width: 480px) { .con-ficha { font-size: 0.72rem; min-height: 60px; } .con-ficha img { width: 34px; height: 34px; } }
+.con-nivel.activo { outline: 2px solid currentColor; font-weight: bold; }

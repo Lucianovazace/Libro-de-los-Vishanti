@@ -14458,6 +14458,11 @@
                 <h3>Más o Menos</h3>
                 <p>Dos obras, una puntuación: ¿la de la derecha es mayor o menor? Cuántas seguidas podés acertar (cada vez más difícil).</p>
             </div>
+            <div class="tarjeta-juego" id="tarjeta-conexiones">
+                <div class="icono-juego">🧩</div>
+                <h3>Conexiones</h3>
+                <p>16 personajes, 4 grupos ocultos. Encontrá qué equipo o bando une a cada cuatro. Una por día.</p>
+            </div>
             <div class="tarjeta-juego" id="tarjeta-grillas">
                 <div class="icono-juego">🔲</div>
                 <h3>Grillas</h3>
@@ -14491,6 +14496,32 @@
     </section>
 
     <!-- SECCIÓN: JUEGOS - GRILLAS - SELECTOR -->
+    <!-- SECCIÓN: JUEGO - CONEXIONES -->
+    <section id="seccion-conexiones" class="oculto">
+        <button class="btn-volver" id="btn-volver-juegos-desde-conexiones">← Volver a Juegos</button>
+        <h2>Conexiones 🧩</h2>
+        <div class="wordle-niveles">
+            <button type="button" class="btn-modal con-nivel" data-nivel="facil">Fácil</button>
+            <button type="button" class="btn-modal con-nivel" data-nivel="medio">Medio</button>
+            <button type="button" class="btn-modal con-nivel" data-nivel="dificil">Difícil</button>
+        </div>
+        <p class="subtitulo-juegos" id="con-subtitulo"></p>
+        <p class="subtitulo-juegos">Errores restantes: <span id="con-vidas">❤️❤️❤️❤️</span></p>
+        <div id="con-grilla" class="con-grilla"></div>
+        <div id="con-mensaje" class="mensaje-elenco"></div>
+        <div id="con-acciones" class="wordle-acciones">
+            <button type="button" class="btn-modal" id="con-btn-mezclar">Mezclar</button>
+            <button type="button" class="btn-modal" id="con-btn-limpiar">Deseleccionar</button>
+            <button type="button" class="btn-modal" id="con-btn-enviar" disabled>Enviar</button>
+        </div>
+        <div id="con-final" class="wordle-final oculto">
+            <div class="wordle-acciones">
+                <button type="button" class="btn-modal" id="con-btn-compartir">Copiar resultado</button>
+                <button type="button" class="btn-modal" id="con-btn-azar">Jugar una al azar</button>
+            </div>
+        </div>
+    </section>
+
     <!-- SECCIÓN: JUEGO - MÁS O MENOS -->
     <section id="seccion-masomenos" class="oculto">
         <button class="btn-volver" id="btn-volver-juegos-desde-masomenos">← Volver a Juegos</button>
