@@ -24858,6 +24858,32 @@ const PERSONAJES_MARVEL_DAREDEVIL = [
     { nombre: "Shou-Lao the Undying", real: "Dragón místico fuente del poder del Iron Fist", tipo: "Aliado" }
 ];
 
+// Personajes de Marvel del universo de los Guardianes de la Galaxia (solo los no repetidos con otros catálogos) (lista pasada por el usuario, completa; tipos y equipos asignados por Claude).
+// Solo catálogo: el Wordle usa las palabras de 5-6 letras que salen de acá (ver WORDLE_PALABRAS).
+const PERSONAJES_MARVEL_GUARDIANES = [
+    { nombre: "Aleta Ogord", real: "Aleta Ogord - Miembro de los Guardianes del futuro / 3000", tipo: "Héroe" },
+    { nombre: "Charlie-27", real: "Charlie-27 - Miembro fundador de los Guardianes de la Galaxia del siglo XXXI", tipo: "Héroe" },
+    { nombre: "Cosmo el Perro Espacial", real: "Cosmo - Jefe de seguridad de Knowhere", tipo: "Aliado" },
+    { nombre: "Crux", real: "Crux - Guerrero de la Vía Láctea", tipo: "Aliado" },
+    { nombre: "Drax el Destructor", real: "Arthur Douglas - Guerrero creado para destruir a Thanos", tipo: "Héroe" },
+    { nombre: "Ego el Planeta Viviente", real: "Ego - Entidad planetaria consciente", tipo: "Villano" },
+    { nombre: "Gammora / Gamora", real: "Gamora Zen Whoberi Ben Titan - La mujer más letal de la galaxia y miembro fundadora del equipo moderno", tipo: "Héroe" },
+    { nombre: "High Evolutionary / El Alto Evolucionador", real: "Herbert Wyndham", tipo: "Villano" },
+    { nombre: "Major Victory / Vance Astro", real: "Vance Astrovik - Líder temporal de los Guardianes con el escudo del Capitán América", tipo: "Héroe" },
+    { nombre: "Martinex", real: "Martinex T'Naga - Científico cristalino de los Guardianes del 3000", tipo: "Héroe" },
+    { nombre: "Maxam", real: "Maxam - Guerrero con habilidades de viaje temporal", tipo: "Héroe" },
+    { nombre: "Nebula", real: "Nebula - Pirata espacial y ciborg", tipo: "Antihéroe" },
+    { nombre: "Nova / Richard Rider", real: "Richard Rider - Líder del Cuerpo Nova", tipo: "Héroe" },
+    { nombre: "Phyla-Vell", real: "Phyla-Vell - Guerrera Kree y portadora de las Bandas Cuánticas", tipo: "Héroe" },
+    { nombre: "Pip el Troll", real: "Pip - Compañero fiel de Warlock, juerguista espacial", tipo: "Antihéroe" },
+    { nombre: "Quill / Star-Lord", real: "Peter Jason Quill - Líder de los Guardianes de la Galaxia", tipo: "Héroe" },
+    { nombre: "Rages", real: "Guerrero espacial", tipo: "Aliado" },
+    { nombre: "Rann", real: "Rann - Habitante del sistema estelar aliado", tipo: "Aliado" },
+    { nombre: "Rocket Raccoon", real: "Mapache táctico modificado genéticamente", tipo: "Héroe" },
+    { nombre: "Stakar Ogord", real: "Starhawk - Entidad unificada de luz y líder de los Guardianes originales", tipo: "Héroe" },
+    { nombre: "Yondu Udonta", real: "Yondu Udonta", tipo: "Antihéroe" }
+];
+
 // ==========================================
 // JUEGO "WORDLE DE PERSONAJES" (palabra del día)
 // ==========================================
@@ -25313,11 +25339,22 @@ const WORDLE_PALABRAS = [
     { palabra: "willie", nombre: "Willie Lincoln", universo: "Marvel", equipo: "Universo Daredevil", tipo: "Aliado" },
     { palabra: "jones", nombre: "Jessica Jones", universo: "Marvel", equipo: "Universo Daredevil", tipo: "Héroe" },
     { palabra: "dakota", nombre: "Dakota North", universo: "Marvel", equipo: "Universo Daredevil", tipo: "Aliado" },
-    { palabra: "brett", nombre: "Brett Mahoney", universo: "Marvel", equipo: "Universo Daredevil", tipo: "Aliado" }
+    { palabra: "brett", nombre: "Brett Mahoney", universo: "Marvel", equipo: "Universo Daredevil", tipo: "Aliado" },
+    { palabra: "aleta", nombre: "Aleta Ogord", universo: "Marvel", equipo: "Guardianes del Futuro (3000)", tipo: "Héroe" },
+    { palabra: "ogord", nombre: "Stakar / Aleta Ogord", universo: "Marvel", equipo: "Guardianes del Futuro (3000)", tipo: "Héroe" },
+    { palabra: "stakar", nombre: "Stakar Ogord (Starhawk)", universo: "Marvel", equipo: "Guardianes del Futuro (3000)", tipo: "Héroe" },
+    { palabra: "cosmo", nombre: "Cosmo el Perro Espacial", universo: "Marvel", equipo: "Guardianes de la Galaxia", tipo: "Aliado" },
+    { palabra: "gamora", nombre: "Gamora", universo: "Marvel", equipo: "Guardianes de la Galaxia", tipo: "Héroe" },
+    { palabra: "maxam", nombre: "Maxam", universo: "Marvel", equipo: "Guardianes del Futuro (3000)", tipo: "Héroe" },
+    { palabra: "nebula", nombre: "Nebula", universo: "Marvel", equipo: "Guardianes de la Galaxia", tipo: "Antihéroe" },
+    { palabra: "rages", nombre: "Rages", universo: "Marvel", equipo: "Cósmicos", tipo: "Aliado" },
+    { palabra: "rocket", nombre: "Rocket Raccoon", universo: "Marvel", equipo: "Guardianes de la Galaxia", tipo: "Héroe" },
+    { palabra: "yondu", nombre: "Yondu Udonta", universo: "Marvel", equipo: "Guardianes de la Galaxia", tipo: "Antihéroe" },
+    { palabra: "udonta", nombre: "Yondu Udonta", universo: "Marvel", equipo: "Guardianes de la Galaxia", tipo: "Antihéroe" }
 ];
 // Dificultad: FÁCIL = los más famosos, DIFÍCIL = los menos conocidos (asignado por Claude, se puede ajustar), MEDIO = el resto.
-const WORDLE_FACIL = new Set(["alfred", "amora", "angel", "angela", "antman", "arana", "arrow", "azrael", "balder", "banner", "barnes", "barry", "barton", "batman", "batroc", "beast", "blade", "brock", "bruce", "bucky", "cable", "carol", "carter", "cassie", "castle", "challa", "clark", "clint", "crane", "cyborg", "diana", "dillon", "dinah", "donna", "drake", "falcon", "fenris", "flash", "foster", "freeze", "friday", "goblin", "gordon", "gorgon", "grimm", "grodd", "groot", "hades", "hammer", "happy", "harley", "havok", "hogun", "hulka", "hydra", "ikaris", "isley", "jackal", "janet", "jarvis", "jason", "johnny", "joker", "jonah", "kaine", "kamala", "kitty", "korvac", "kraven", "laufey", "laura", "lizard", "logan", "lucas", "luthor", "magik", "mantis", "maria", "medusa", "miles", "misty", "modok", "mongul", "mordo", "namor", "nomad", "okoye", "olsen", "oracle", "orion", "osborn", "pepper", "peter", "pietro", "porker", "potts", "quake", "quasar", "queen", "quill", "quinn", "raven", "rescue", "rhino", "rhodes", "rhodey", "rider", "robin", "rogers", "rogue", "ronan", "rumlow", "scott", "selina", "sentry", "shang", "shazam", "shuri", "skull", "skurge", "slade", "spider", "stane", "stark", "steel", "steve", "storm", "surfer", "surtur", "swamp", "talia", "thanos", "thing", "tigra", "toxin", "triton", "venom", "vermin", "victor", "viper", "vision", "vixen", "waller", "wally", "wanda", "wiccan", "widow", "wilson", "winter", "wizard"]);
-const WORDLE_DIFICIL = new Set(["abyss", "adder", "agger", "ahura", "albert", "alecto", "algrim", "alura", "amber", "amiko", "angmo", "aquon", "arkin", "ayala", "basil", "bernie", "brett", "caiera", "cathy", "chondu", "chung", "clash", "crang", "curse", "daemon", "dargo", "darla", "davos", "debra", "deeds", "deidre", "dekker", "demara", "desak", "devoux", "devoz", "dinesh", "dollar", "dunphy", "eisen", "eldrac", "elijah", "elsie", "ferro", "flint", "freyja", "frost", "gazer", "gentry", "gibney", "gnucci", "gorath", "greer", "grotto", "hannu", "hermod", "hoder", "hudson", "ithan", "jolena", "joseph", "juarez", "justin", "kaplan", "katma", "kelda", "koenig", "krylov", "kudzu", "kurse", "laira", "lasher", "lazaer", "leland", "lohmer", "lotus", "lucca", "lulumu", "lyons", "macha", "madcap", "madman", "magni", "mahkwa", "major", "malik", "mallen", "maxon", "mciver", "menace", "mendel", "metron", "mogul", "mosaic", "nadia", "nagan", "native", "nimue", "nobili", "payne", "phage", "pierce", "powell", "pratt", "quire", "rachel", "randac", "razer", "reader", "rikki", "romeo", "roxxon", "saxon", "scurry", "seeker", "shado", "sharon", "shuma", "skagg", "slyde", "sodam", "solem", "spirit", "sterns", "stryke", "sunset", "tania", "teddy", "thorne", "torres", "tucker", "turtle", "twain", "tyger", "utgard", "uumaru", "vance", "vapor", "vaughn", "vector", "vidar", "vortex", "wallow", "wheel", "willie", "yalan", "zander", "zaran", "zarrko", "zyozi"]);
+const WORDLE_FACIL = new Set(["alfred", "amora", "angel", "angela", "antman", "arana", "arrow", "azrael", "balder", "banner", "barnes", "barry", "barton", "batman", "batroc", "beast", "blade", "brock", "bruce", "bucky", "cable", "carol", "carter", "cassie", "castle", "challa", "clark", "clint", "crane", "cyborg", "diana", "dillon", "dinah", "donna", "drake", "falcon", "fenris", "flash", "foster", "freeze", "friday", "gamora", "goblin", "gordon", "gorgon", "grimm", "grodd", "groot", "hades", "hammer", "happy", "harley", "havok", "hogun", "hulka", "hydra", "ikaris", "isley", "jackal", "janet", "jarvis", "jason", "johnny", "joker", "jonah", "kaine", "kamala", "kitty", "korvac", "kraven", "laufey", "laura", "lizard", "logan", "lucas", "luthor", "magik", "mantis", "maria", "medusa", "miles", "misty", "modok", "mongul", "mordo", "namor", "nomad", "okoye", "olsen", "oracle", "orion", "osborn", "pepper", "peter", "pietro", "porker", "potts", "quake", "quasar", "queen", "quill", "quinn", "raven", "rescue", "rhino", "rhodes", "rhodey", "rider", "robin", "rocket", "rogers", "rogue", "ronan", "rumlow", "scott", "selina", "sentry", "shang", "shazam", "shuri", "skull", "skurge", "slade", "spider", "stane", "stark", "steel", "steve", "storm", "surfer", "surtur", "swamp", "talia", "thanos", "thing", "tigra", "toxin", "triton", "venom", "vermin", "victor", "viper", "vision", "vixen", "waller", "wally", "wanda", "wiccan", "widow", "wilson", "winter", "wizard"]);
+const WORDLE_DIFICIL = new Set(["abyss", "adder", "agger", "ahura", "albert", "alecto", "aleta", "algrim", "alura", "amber", "amiko", "angmo", "aquon", "arkin", "ayala", "basil", "bernie", "brett", "caiera", "cathy", "chondu", "chung", "clash", "crang", "curse", "daemon", "dargo", "darla", "davos", "debra", "deeds", "deidre", "dekker", "demara", "desak", "devoux", "devoz", "dinesh", "dollar", "dunphy", "eisen", "eldrac", "elijah", "elsie", "ferro", "flint", "freyja", "frost", "gazer", "gentry", "gibney", "gnucci", "gorath", "greer", "grotto", "hannu", "hermod", "hoder", "hudson", "ithan", "jolena", "joseph", "juarez", "justin", "kaplan", "katma", "kelda", "koenig", "krylov", "kudzu", "kurse", "laira", "lasher", "lazaer", "leland", "lohmer", "lotus", "lucca", "lulumu", "lyons", "macha", "madcap", "madman", "magni", "mahkwa", "major", "malik", "mallen", "maxam", "maxon", "mciver", "menace", "mendel", "metron", "mogul", "mosaic", "nadia", "nagan", "native", "nimue", "nobili", "ogord", "payne", "phage", "pierce", "powell", "pratt", "quire", "rachel", "rages", "randac", "razer", "reader", "rikki", "romeo", "roxxon", "saxon", "scurry", "seeker", "shado", "sharon", "shuma", "skagg", "slyde", "sodam", "solem", "spirit", "stakar", "sterns", "stryke", "sunset", "tania", "teddy", "thorne", "torres", "tucker", "turtle", "twain", "tyger", "utgard", "uumaru", "vance", "vapor", "vaughn", "vector", "vidar", "vortex", "wallow", "wheel", "willie", "yalan", "zander", "zaran", "zarrko", "zyozi"]);
 function wordleNivelDe(p) { return WORDLE_FACIL.has(p.palabra) ? 'facil' : (WORDLE_DIFICIL.has(p.palabra) ? 'dificil' : 'medio'); }
 
 const WORDLE_INTENTOS = 6;
