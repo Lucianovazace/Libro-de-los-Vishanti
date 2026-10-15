@@ -1923,3 +1923,7 @@ h2 {
 .wordle-final { text-align: center; margin: 14px auto; max-width: 520px; }
 .wordle-acciones { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 10px; }
 @media (max-width: 480px) { .wordle-celda { width: 46px; height: 46px; font-size: 1.35rem; } .wordle-tecla { height: 48px; } }
+
+.wordle-pistas { display: flex; flex-direction: column; align-items: center; gap: 8px; margin: 8px auto; }
+.wordle-pistas .wordle-btn-pista:disabled { opacity: 0.45; cursor: not-allowed; }
+.wordle-pista-texto { margin: 0; padding: 8px 14px; background: #1f2a3a; border-left: 3px solid #f5a623; border-radius: 4px; color: #fff; }

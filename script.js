@@ -24037,106 +24037,191 @@ function finalizarGrilla(gano) {
 }
 
 
+// Personajes de Marvel del universo de los Cuatro Fantásticos (lista pasada por el usuario, completa).
+// Es solo un catálogo: el Wordle usa las palabras de 5-6 letras que salen de acá (ver WORDLE_PALABRAS).
+const PERSONAJES_MARVEL_CUATRO_FANTASTICOS = [
+    { nombre: "Amo de las Marionetas", ingles: "Puppet Master", real: "Philip Masters", tipo: "Villano" },
+    { nombre: "Antorcha Humana", ingles: "Human Torch", real: "Johnny Storm", tipo: "Héroe" },
+    { nombre: "Annihilus", ingles: "Annihilus", real: "Annihilus", tipo: "Villano" },
+    { nombre: "Blastaar", ingles: "Blastaar", real: "Blastaar", tipo: "Villano" },
+    { nombre: "Crystal", ingles: "Crystal", real: "Crystalia Amaquelin", tipo: "Héroe" },
+    { nombre: "Doctor Doom / Doctor Muerte", ingles: "Doctor Doom", real: "Victor von Doom", tipo: "Villano" },
+    { nombre: "El Creador", ingles: "The Maker", real: "Reed Richards (Tierra-1610)", tipo: "Villano" },
+    { nombre: "Elfo", ingles: "The Wizard", real: "Bentley Wittman", tipo: "Villano" },
+    { nombre: "Franklin Richards", ingles: "Franklin Richards", real: "Franklin Benjamin Richards", tipo: "Héroe" },
+    { nombre: "Galactus", ingles: "Galactus", real: "Galan de Taa", tipo: "Villano" },
+    { nombre: "Ghost Rider / El Vengador Fantasma", ingles: "Ghost Rider", real: "Danny Ketch", tipo: "Antihéroe" },
+    { nombre: "H.E.R.B.I.E.", ingles: "H.E.R.B.I.E.", real: "Humanoid Experimental Robot, Highly Evolving Type, Species 1", tipo: "Aliado" },
+    { nombre: "Hulk", ingles: "Hulk", real: "Bruce Banner", tipo: "Héroe" },
+    { nombre: "Hombre Araña", ingles: "Spider-Man", real: "Peter Parker", tipo: "Héroe" },
+    { nombre: "Hombre Hormiga", ingles: "Ant-Man", real: "Scott Lang", tipo: "Héroe" },
+    { nombre: "Hombre Molécula", ingles: "Molecule Man", real: "Owen Reece", tipo: "Villano" },
+    { nombre: "Hombre Topo", ingles: "Mole Man", real: "Harvey Rupert Elder", tipo: "Villano" },
+    { nombre: "Klaw", ingles: "Klaw", real: "Ulysses Klaw", tipo: "Villano" },
+    { nombre: "La Cosa / La Mole", ingles: "The Thing", real: "Ben Grimm", tipo: "Héroe" },
+    { nombre: "Luke Cage", ingles: "Power Man", real: "Carl Lucas", tipo: "Héroe" },
+    { nombre: "Lyja", ingles: "Lyja the Lazerfist", real: "Lyja", tipo: "Antihéroe" },
+    { nombre: "Medusa", ingles: "Medusa", real: "Medusalith Amaquelin", tipo: "Héroe" },
+    { nombre: "Ms. Marvel", ingles: "She-Thing", real: "Sharon Ventura", tipo: "Héroe" },
+    { nombre: "Ms. Thing", ingles: "Ms. Thing", real: "Darla Deering", tipo: "Héroe" },
+    { nombre: "Mujer Invisible", ingles: "Invisible Woman", real: "Sue Storm-Richards", tipo: "Héroe" },
+    { nombre: "Namor", ingles: "Namor", real: "Namor McKenzie", tipo: "Antihéroe" },
+    { nombre: "Nova", ingles: "Nova", real: "Frankie Raye", tipo: "Antihéroe" },
+    { nombre: "Pantera Negra", ingles: "Black Panther", real: "T'Challa", tipo: "Héroe" },
+    { nombre: "Pensador Loco", ingles: "Mad Thinker", real: "Julius", tipo: "Villano" },
+    { nombre: "Psicoman", ingles: "Psycho-Man", real: "Sin nombre real conocido", tipo: "Villano" },
+    { nombre: "Ronan el Acusador", ingles: "Ronan the Accuser", real: "Ronan", tipo: "Villano" },
+    { nombre: "Señor Fantástico", ingles: "Mr. Fantastic", real: "Reed Richards", tipo: "Héroe" },
+    { nombre: "Super-Skrull", ingles: "Super-Skrull", real: "Kl'rt", tipo: "Villano" },
+    { nombre: "Terrax el Conquistador", ingles: "Terrax the Tamer", real: "Tyros de Birj", tipo: "Villano" },
+    { nombre: "Titania / She-Hulk", ingles: "She-Hulk", real: "Jennifer Walters", tipo: "Héroe" },
+    { nombre: "Tormenta", ingles: "Storm", real: "Ororo Munroe", tipo: "Héroe" },
+    { nombre: "Trampero", ingles: "Trapster / Paste-Pot Pete", real: "Peter Petruski", tipo: "Villano" },
+    { nombre: "Valeria Richards", ingles: "Valeria Richards", real: "Valeria Meghan Richards", tipo: "Héroe" },
+    { nombre: "Wolverine / Lobezno", ingles: "Wolverine", real: "Logan / James Howlett", tipo: "Héroe" }
+];
+
 // ==========================================
 // JUEGO "WORDLE DE PERSONAJES" (palabra del día)
 // ==========================================
-// Palabras de 5 letras (sin tildes) sacadas de nombres y alias de personajes de DC y Marvel.
+// Palabras de 5 o 6 letras (sin tildes ni guiones) sacadas de nombres y alias de personajes de DC y Marvel.
+// Cada una trae universo, equipo y tipo (Héroe / Villano / Antihéroe / Aliado) para las pistas.
 // La palabra del día es la misma para todos: se elige por la fecha (zona horaria de Argentina).
 const WORDLE_PALABRAS = [
-    { palabra: "joker", nombre: "Joker", universo: "DC" },
-    { palabra: "robin", nombre: "Robin", universo: "DC" },
-    { palabra: "flash", nombre: "Flash", universo: "DC" },
-    { palabra: "barry", nombre: "Barry Allen", universo: "DC" },
-    { palabra: "wally", nombre: "Wally West", universo: "DC" },
-    { palabra: "bruce", nombre: "Bruce Wayne", universo: "DC" },
-    { palabra: "clark", nombre: "Clark Kent", universo: "DC" },
-    { palabra: "diana", nombre: "Diana Prince", universo: "DC" },
-    { palabra: "donna", nombre: "Donna Troy", universo: "DC" },
-    { palabra: "dinah", nombre: "Dinah Lance (Canario Negro)", universo: "DC" },
-    { palabra: "talia", nombre: "Talia al Ghul", universo: "DC" },
-    { palabra: "raven", nombre: "Raven", universo: "DC" },
-    { palabra: "slade", nombre: "Slade Wilson (Deathstroke)", universo: "DC" },
-    { palabra: "nyssa", nombre: "Nyssa al Ghul", universo: "DC" },
-    { palabra: "vixen", nombre: "Vixen", universo: "DC" },
-    { palabra: "steel", nombre: "Steel", universo: "DC" },
-    { palabra: "shade", nombre: "Shade (El Hombre Cambiante)", universo: "DC" },
-    { palabra: "siren", nombre: "Siren", universo: "DC" },
-    { palabra: "grodd", nombre: "Gorilla Grodd", universo: "DC" },
-    { palabra: "circe", nombre: "Circe", universo: "DC" },
-    { palabra: "faust", nombre: "Felix Faust", universo: "DC" },
-    { palabra: "magog", nombre: "Magog", universo: "DC" },
-    { palabra: "hades", nombre: "Hades", universo: "DC" },
-    { palabra: "kobra", nombre: "Kobra", universo: "DC" },
-    { palabra: "mento", nombre: "Mento", universo: "DC" },
-    { palabra: "cupid", nombre: "Cupid", universo: "DC" },
-    { palabra: "nimue", nombre: "Nimue Inwudu", universo: "DC" },
-    { palabra: "nubia", nombre: "Nubia", universo: "DC" },
-    { palabra: "piper", nombre: "Piper (Flautista)", universo: "DC" },
-    { palabra: "thorn", nombre: "Thorn", universo: "DC" },
-    { palabra: "talon", nombre: "Talon", universo: "DC" },
-    { palabra: "tatsu", nombre: "Tatsu (Katana)", universo: "DC" },
-    { palabra: "shado", nombre: "Shado", universo: "DC" },
-    { palabra: "shiva", nombre: "Lady Shiva", universo: "DC" },
-    { palabra: "wayne", nombre: "Bruce Wayne", universo: "DC" },
-    { palabra: "drake", nombre: "Tim Drake", universo: "DC" },
-    { palabra: "jason", nombre: "Jason Todd", universo: "DC" },
-    { palabra: "simon", nombre: "Simon Baz", universo: "DC" },
-    { palabra: "katma", nombre: "Katma Tui", universo: "DC" },
-    { palabra: "laira", nombre: "Laira", universo: "DC" },
-    { palabra: "sodam", nombre: "Sodam Yat", universo: "DC" },
-    { palabra: "yalan", nombre: "Yalan Gur", universo: "DC" },
-    { palabra: "hannu", nombre: "Hannu", universo: "DC" },
-    { palabra: "quinn", nombre: "Harley Quinn", universo: "DC" },
-    { palabra: "nygma", nombre: "Edward Nygma (Acertijo)", universo: "DC" },
-    { palabra: "crane", nombre: "Jonathan Crane (Espantapájaros)", universo: "DC" },
-    { palabra: "tetch", nombre: "Jervis Tetch (Sombrerero Loco)", universo: "DC" },
-    { palabra: "isley", nombre: "Pamela Isley (Hiedra Venenosa)", universo: "DC" },
-    { palabra: "brand", nombre: "Boston Brand (Deadman)", universo: "DC" },
-    { palabra: "stone", nombre: "Victor Stone (Cyborg)", universo: "DC" },
-    { palabra: "queen", nombre: "Oliver Queen", universo: "DC" },
-    { palabra: "snart", nombre: "Leonard Snart (Capitán Frío)", universo: "DC" },
-    { palabra: "olsen", nombre: "Jimmy Olsen", universo: "DC" },
-    { palabra: "ramon", nombre: "Ray Palmer / Ramón", universo: "DC" },
-    { palabra: "cisco", nombre: "Cisco Ramon", universo: "DC" },
-    { palabra: "faora", nombre: "Faora", universo: "DC" },
-    { palabra: "alura", nombre: "Alura", universo: "DC" },
-    { palabra: "brain", nombre: "Brainiac", universo: "DC" },
-    { palabra: "arrow", nombre: "Green Arrow", universo: "DC" },
-    { palabra: "storm", nombre: "Storm", universo: "Marvel" },
-    { palabra: "cable", nombre: "Cable", universo: "Marvel" },
-    { palabra: "wanda", nombre: "Wanda Maximoff", universo: "Marvel" },
-    { palabra: "groot", nombre: "Groot", universo: "Marvel" },
-    { palabra: "venom", nombre: "Venom", universo: "Marvel" },
-    { palabra: "carol", nombre: "Carol Danvers", universo: "Marvel" },
-    { palabra: "peter", nombre: "Peter Parker", universo: "Marvel" },
-    { palabra: "steve", nombre: "Steve Rogers", universo: "Marvel" },
-    { palabra: "bucky", nombre: "Bucky Barnes", universo: "Marvel" },
-    { palabra: "clint", nombre: "Clint Barton", universo: "Marvel" },
-    { palabra: "scott", nombre: "Scott Lang / Scott Summers", universo: "Marvel" },
-    { palabra: "okoye", nombre: "Okoye", universo: "Marvel" },
-    { palabra: "shuri", nombre: "Shuri", universo: "Marvel" },
-    { palabra: "namor", nombre: "Namor", universo: "Marvel" },
-    { palabra: "magik", nombre: "Magik", universo: "Marvel" },
-    { palabra: "rogue", nombre: "Rogue", universo: "Marvel" },
-    { palabra: "beast", nombre: "Beast (Hank McCoy)", universo: "Marvel" },
-    { palabra: "havok", nombre: "Havok", universo: "Marvel" },
-    { palabra: "angel", nombre: "Ángel (Warren Worthington)", universo: "Marvel" },
-    { palabra: "ronan", nombre: "Ronan el Acusador", universo: "Marvel" },
-    { palabra: "blade", nombre: "Blade", universo: "Marvel" },
-    { palabra: "mordo", nombre: "Karl Mordo", universo: "Marvel" },
-    { palabra: "miles", nombre: "Miles Morales", universo: "Marvel" },
-    { palabra: "rhino", nombre: "Rhino", universo: "Marvel" },
-    { palabra: "quill", nombre: "Peter Quill (Star-Lord)", universo: "Marvel" },
-    { palabra: "stark", nombre: "Tony Stark", universo: "Marvel" },
-    { palabra: "laura", nombre: "Laura Kinney (X-23)", universo: "Marvel" },
-    { palabra: "kitty", nombre: "Kitty Pryde", universo: "Marvel" },
-    { palabra: "pryde", nombre: "Kitty Pryde", universo: "Marvel" },
-    { palabra: "ororo", nombre: "Ororo Munroe", universo: "Marvel" },
-    { palabra: "hydra", nombre: "Hydra", universo: "Marvel" },
-    { palabra: "logan", nombre: "Logan (Wolverine)", universo: "Marvel" }
+    { palabra: "joker", nombre: "Joker", universo: "DC", equipo: "Villanos de Gotham", tipo: "Villano" },
+    { palabra: "robin", nombre: "Robin", universo: "DC", equipo: "Batifamilia", tipo: "Héroe" },
+    { palabra: "flash", nombre: "Flash", universo: "DC", equipo: "Familia Flash", tipo: "Héroe" },
+    { palabra: "barry", nombre: "Barry Allen", universo: "DC", equipo: "Familia Flash", tipo: "Héroe" },
+    { palabra: "wally", nombre: "Wally West", universo: "DC", equipo: "Familia Flash", tipo: "Héroe" },
+    { palabra: "bruce", nombre: "Bruce Wayne", universo: "DC", equipo: "Batifamilia", tipo: "Héroe" },
+    { palabra: "clark", nombre: "Clark Kent", universo: "DC", equipo: "Familia Superman", tipo: "Héroe" },
+    { palabra: "diana", nombre: "Diana Prince", universo: "DC", equipo: "Liga de la Justicia", tipo: "Héroe" },
+    { palabra: "donna", nombre: "Donna Troy", universo: "DC", equipo: "Jóvenes Titanes", tipo: "Héroe" },
+    { palabra: "dinah", nombre: "Dinah Lance (Canario Negro)", universo: "DC", equipo: "Aves de Presa", tipo: "Héroe" },
+    { palabra: "talia", nombre: "Talia al Ghul", universo: "DC", equipo: "Liga de Asesinos", tipo: "Villano" },
+    { palabra: "raven", nombre: "Raven", universo: "DC", equipo: "Jóvenes Titanes", tipo: "Héroe" },
+    { palabra: "slade", nombre: "Slade Wilson (Deathstroke)", universo: "DC", equipo: "Villanos de los Titanes", tipo: "Villano" },
+    { palabra: "nyssa", nombre: "Nyssa al Ghul", universo: "DC", equipo: "Liga de Asesinos", tipo: "Villano" },
+    { palabra: "vixen", nombre: "Vixen", universo: "DC", equipo: "Liga de la Justicia", tipo: "Héroe" },
+    { palabra: "steel", nombre: "Steel (John Henry Irons)", universo: "DC", equipo: "Familia Superman", tipo: "Héroe" },
+    { palabra: "shade", nombre: "Shade (El Hombre Cambiante)", universo: "DC", equipo: "Liga de la Justicia Oscura", tipo: "Antihéroe" },
+    { palabra: "grodd", nombre: "Gorilla Grodd", universo: "DC", equipo: "Villanos de Flash", tipo: "Villano" },
+    { palabra: "circe", nombre: "Circe", universo: "DC", equipo: "Villanos de Wonder Woman", tipo: "Villano" },
+    { palabra: "faust", nombre: "Felix Faust", universo: "DC", equipo: "Liga de la Justicia Oscura", tipo: "Villano" },
+    { palabra: "hades", nombre: "Hades", universo: "DC", equipo: "Villanos de Wonder Woman", tipo: "Villano" },
+    { palabra: "kobra", nombre: "Kobra", universo: "DC", equipo: "Organización Kobra", tipo: "Villano" },
+    { palabra: "mento", nombre: "Mento", universo: "DC", equipo: "Patrulla Fatal", tipo: "Héroe" },
+    { palabra: "cupid", nombre: "Cupid", universo: "DC", equipo: "Villanos de Wonder Woman", tipo: "Villano" },
+    { palabra: "nimue", nombre: "Nimue Inwudu", universo: "DC", equipo: "Liga de la Justicia Oscura", tipo: "Antihéroe" },
+    { palabra: "nubia", nombre: "Nubia", universo: "DC", equipo: "Amazonas", tipo: "Héroe" },
+    { palabra: "piper", nombre: "Piper (Flautista)", universo: "DC", equipo: "Villanos de Flash", tipo: "Villano" },
+    { palabra: "thorn", nombre: "Thorn", universo: "DC", equipo: "Aves de Presa", tipo: "Héroe" },
+    { palabra: "talon", nombre: "Talon", universo: "DC", equipo: "Tribunal de los Búhos", tipo: "Villano" },
+    { palabra: "tatsu", nombre: "Tatsu (Katana)", universo: "DC", equipo: "Outsiders", tipo: "Héroe" },
+    { palabra: "shado", nombre: "Shado", universo: "DC", equipo: "Familia Green Arrow", tipo: "Aliado" },
+    { palabra: "shiva", nombre: "Lady Shiva", universo: "DC", equipo: "Liga de Asesinos", tipo: "Antihéroe" },
+    { palabra: "drake", nombre: "Tim Drake", universo: "DC", equipo: "Batifamilia", tipo: "Héroe" },
+    { palabra: "jason", nombre: "Jason Todd", universo: "DC", equipo: "Batifamilia", tipo: "Antihéroe" },
+    { palabra: "simon", nombre: "Simon Baz", universo: "DC", equipo: "Green Lantern Corps", tipo: "Héroe" },
+    { palabra: "katma", nombre: "Katma Tui", universo: "DC", equipo: "Green Lantern Corps", tipo: "Héroe" },
+    { palabra: "laira", nombre: "Laira", universo: "DC", equipo: "Green Lantern Corps", tipo: "Héroe" },
+    { palabra: "sodam", nombre: "Sodam Yat", universo: "DC", equipo: "Green Lantern Corps", tipo: "Héroe" },
+    { palabra: "yalan", nombre: "Yalan Gur", universo: "DC", equipo: "Green Lantern Corps", tipo: "Héroe" },
+    { palabra: "hannu", nombre: "Hannu", universo: "DC", equipo: "Green Lantern Corps", tipo: "Héroe" },
+    { palabra: "quinn", nombre: "Harley Quinn", universo: "DC", equipo: "Escuadrón Suicida", tipo: "Antihéroe" },
+    { palabra: "nygma", nombre: "Edward Nygma (Acertijo)", universo: "DC", equipo: "Villanos de Gotham", tipo: "Villano" },
+    { palabra: "crane", nombre: "Jonathan Crane (Espantapájaros)", universo: "DC", equipo: "Villanos de Gotham", tipo: "Villano" },
+    { palabra: "tetch", nombre: "Jervis Tetch (Sombrerero Loco)", universo: "DC", equipo: "Villanos de Gotham", tipo: "Villano" },
+    { palabra: "isley", nombre: "Pamela Isley (Hiedra Venenosa)", universo: "DC", equipo: "Villanos de Gotham", tipo: "Antihéroe" },
+    { palabra: "brand", nombre: "Boston Brand (Deadman)", universo: "DC", equipo: "Liga de la Justicia Oscura", tipo: "Héroe" },
+    { palabra: "stone", nombre: "Victor Stone (Cyborg)", universo: "DC", equipo: "Jóvenes Titanes", tipo: "Héroe" },
+    { palabra: "queen", nombre: "Oliver Queen", universo: "DC", equipo: "Familia Green Arrow", tipo: "Héroe" },
+    { palabra: "snart", nombre: "Leonard Snart (Capitán Frío)", universo: "DC", equipo: "Villanos de Flash", tipo: "Villano" },
+    { palabra: "olsen", nombre: "Jimmy Olsen", universo: "DC", equipo: "Familia Superman", tipo: "Aliado" },
+    { palabra: "faora", nombre: "Faora", universo: "DC", equipo: "Krypton", tipo: "Villano" },
+    { palabra: "alura", nombre: "Alura", universo: "DC", equipo: "Krypton", tipo: "Aliado" },
+    { palabra: "arrow", nombre: "Green Arrow", universo: "DC", equipo: "Familia Green Arrow", tipo: "Héroe" },
+    { palabra: "batman", nombre: "Batman", universo: "DC", equipo: "Batifamilia", tipo: "Héroe" },
+    { palabra: "gordon", nombre: "Comisionado Gordon", universo: "DC", equipo: "Batifamilia", tipo: "Aliado" },
+    { palabra: "alfred", nombre: "Alfred Pennyworth", universo: "DC", equipo: "Batifamilia", tipo: "Aliado" },
+    { palabra: "selina", nombre: "Selina Kyle (Catwoman)", universo: "DC", equipo: "Batifamilia", tipo: "Antihéroe" },
+    { palabra: "harley", nombre: "Harley Quinn", universo: "DC", equipo: "Escuadrón Suicida", tipo: "Antihéroe" },
+    { palabra: "shazam", nombre: "Shazam", universo: "DC", equipo: "Familia Shazam", tipo: "Héroe" },
+    { palabra: "cyborg", nombre: "Cyborg", universo: "DC", equipo: "Liga de la Justicia", tipo: "Héroe" },
+    { palabra: "luthor", nombre: "Lex Luthor", universo: "DC", equipo: "Villanos de Superman", tipo: "Villano" },
+    { palabra: "oracle", nombre: "Oráculo (Barbara Gordon)", universo: "DC", equipo: "Aves de Presa", tipo: "Héroe" },
+    { palabra: "azrael", nombre: "Azrael", universo: "DC", equipo: "Batifamilia", tipo: "Antihéroe" },
+    { palabra: "freeze", nombre: "Mr. Freeze", universo: "DC", equipo: "Villanos de Gotham", tipo: "Villano" },
+    { palabra: "orion", nombre: "Orion", universo: "DC", equipo: "Nuevos Dioses", tipo: "Héroe" },
+    { palabra: "barda", nombre: "Big Barda", universo: "DC", equipo: "Nuevos Dioses", tipo: "Héroe" },
+    { palabra: "metron", nombre: "Metron", universo: "DC", equipo: "Nuevos Dioses", tipo: "Aliado" },
+    { palabra: "waller", nombre: "Amanda Waller", universo: "DC", equipo: "Escuadrón Suicida", tipo: "Antihéroe" },
+    { palabra: "vandal", nombre: "Vandal Savage", universo: "DC", equipo: "Villanos Inmortales", tipo: "Villano" },
+    { palabra: "cassie", nombre: "Cassandra Cain", universo: "DC", equipo: "Batifamilia", tipo: "Héroe" },
+    { palabra: "swamp", nombre: "Swamp Thing", universo: "DC", equipo: "Liga de la Justicia Oscura", tipo: "Héroe" },
+    { palabra: "zatara", nombre: "Zatara", universo: "DC", equipo: "Liga de la Justicia Oscura", tipo: "Héroe" },
+    { palabra: "dibny", nombre: "Ralph Dibny (Hombre Elástico)", universo: "DC", equipo: "Liga de la Justicia Internacional", tipo: "Héroe" },
+    { palabra: "starro", nombre: "Starro", universo: "DC", equipo: "Villanos de la Liga", tipo: "Villano" },
+    { palabra: "mongul", nombre: "Mongul", universo: "DC", equipo: "Villanos de Superman", tipo: "Villano" },
+    { palabra: "storm", nombre: "Storm (Ororo Munroe)", universo: "Marvel", equipo: "X-Men", tipo: "Héroe" },
+    { palabra: "cable", nombre: "Cable", universo: "Marvel", equipo: "X-Force", tipo: "Antihéroe" },
+    { palabra: "wanda", nombre: "Wanda Maximoff", universo: "Marvel", equipo: "Vengadores", tipo: "Héroe" },
+    { palabra: "groot", nombre: "Groot", universo: "Marvel", equipo: "Guardianes de la Galaxia", tipo: "Héroe" },
+    { palabra: "venom", nombre: "Venom", universo: "Marvel", equipo: "Universo Spider-Man", tipo: "Antihéroe" },
+    { palabra: "carol", nombre: "Carol Danvers", universo: "Marvel", equipo: "Vengadores", tipo: "Héroe" },
+    { palabra: "peter", nombre: "Peter Parker", universo: "Marvel", equipo: "Universo Spider-Man", tipo: "Héroe" },
+    { palabra: "steve", nombre: "Steve Rogers", universo: "Marvel", equipo: "Vengadores", tipo: "Héroe" },
+    { palabra: "bucky", nombre: "Bucky Barnes", universo: "Marvel", equipo: "Vengadores", tipo: "Antihéroe" },
+    { palabra: "clint", nombre: "Clint Barton", universo: "Marvel", equipo: "Vengadores", tipo: "Héroe" },
+    { palabra: "scott", nombre: "Scott Lang (Hombre Hormiga)", universo: "Marvel", equipo: "Vengadores", tipo: "Héroe" },
+    { palabra: "okoye", nombre: "Okoye", universo: "Marvel", equipo: "Wakanda", tipo: "Aliado" },
+    { palabra: "shuri", nombre: "Shuri", universo: "Marvel", equipo: "Wakanda", tipo: "Héroe" },
+    { palabra: "namor", nombre: "Namor", universo: "Marvel", equipo: "Atlantis", tipo: "Antihéroe" },
+    { palabra: "magik", nombre: "Magik", universo: "Marvel", equipo: "X-Men", tipo: "Héroe" },
+    { palabra: "rogue", nombre: "Rogue", universo: "Marvel", equipo: "X-Men", tipo: "Héroe" },
+    { palabra: "beast", nombre: "Beast (Hank McCoy)", universo: "Marvel", equipo: "X-Men", tipo: "Héroe" },
+    { palabra: "havok", nombre: "Havok", universo: "Marvel", equipo: "X-Men", tipo: "Héroe" },
+    { palabra: "angel", nombre: "Ángel (Warren Worthington)", universo: "Marvel", equipo: "X-Men", tipo: "Héroe" },
+    { palabra: "ronan", nombre: "Ronan el Acusador", universo: "Marvel", equipo: "Imperio Kree", tipo: "Villano" },
+    { palabra: "blade", nombre: "Blade", universo: "Marvel", equipo: "Cazadores de Noche", tipo: "Antihéroe" },
+    { palabra: "mordo", nombre: "Karl Mordo", universo: "Marvel", equipo: "Místicos", tipo: "Villano" },
+    { palabra: "miles", nombre: "Miles Morales", universo: "Marvel", equipo: "Universo Spider-Man", tipo: "Héroe" },
+    { palabra: "rhino", nombre: "Rhino", universo: "Marvel", equipo: "Villanos de Spider-Man", tipo: "Villano" },
+    { palabra: "quill", nombre: "Peter Quill (Star-Lord)", universo: "Marvel", equipo: "Guardianes de la Galaxia", tipo: "Héroe" },
+    { palabra: "stark", nombre: "Tony Stark", universo: "Marvel", equipo: "Vengadores", tipo: "Héroe" },
+    { palabra: "laura", nombre: "Laura Kinney (X-23)", universo: "Marvel", equipo: "X-Men", tipo: "Héroe" },
+    { palabra: "kitty", nombre: "Kitty Pryde", universo: "Marvel", equipo: "X-Men", tipo: "Héroe" },
+    { palabra: "hydra", nombre: "Hydra", universo: "Marvel", equipo: "Hydra", tipo: "Villano" },
+    { palabra: "vision", nombre: "Visión", universo: "Marvel", equipo: "Vengadores", tipo: "Héroe" },
+    { palabra: "logan", nombre: "Logan (Wolverine)", universo: "Marvel", equipo: "X-Men", tipo: "Héroe" },
+    { palabra: "jarvis", nombre: "J.A.R.V.I.S.", universo: "Marvel", equipo: "Vengadores", tipo: "Aliado" },
+    { palabra: "arana", nombre: "Hombre Araña (Spider-Man)", universo: "Marvel", equipo: "Universo Spider-Man", tipo: "Héroe" },
+    { palabra: "spider", nombre: "Spider-Man", universo: "Marvel", equipo: "Universo Spider-Man", tipo: "Héroe" },
+    { palabra: "puppet", nombre: "Amo de las Marionetas (Philip Masters)", universo: "Marvel", equipo: "Villanos de los Cuatro Fantásticos", tipo: "Villano" },
+    { palabra: "johnny", nombre: "Antorcha Humana (Johnny Storm)", universo: "Marvel", equipo: "Cuatro Fantásticos", tipo: "Héroe" },
+    { palabra: "victor", nombre: "Doctor Doom (Victor von Doom)", universo: "Marvel", equipo: "Villanos de los Cuatro Fantásticos", tipo: "Villano" },
+    { palabra: "maker", nombre: "El Creador (Reed Richards, Tierra-1610)", universo: "Marvel", equipo: "Universo Ultimate", tipo: "Villano" },
+    { palabra: "wizard", nombre: "Elfo / The Wizard (Bentley Wittman)", universo: "Marvel", equipo: "Villanos de los Cuatro Fantásticos", tipo: "Villano" },
+    { palabra: "herbie", nombre: "H.E.R.B.I.E.", universo: "Marvel", equipo: "Cuatro Fantásticos", tipo: "Aliado" },
+    { palabra: "reece", nombre: "Hombre Molécula (Owen Reece)", universo: "Marvel", equipo: "Villanos de los Cuatro Fantásticos", tipo: "Villano" },
+    { palabra: "harvey", nombre: "Hombre Topo (Harvey Rupert Elder)", universo: "Marvel", equipo: "Villanos de los Cuatro Fantásticos", tipo: "Villano" },
+    { palabra: "thing", nombre: "La Cosa (Ben Grimm)", universo: "Marvel", equipo: "Cuatro Fantásticos", tipo: "Héroe" },
+    { palabra: "grimm", nombre: "La Cosa (Ben Grimm)", universo: "Marvel", equipo: "Cuatro Fantásticos", tipo: "Héroe" },
+    { palabra: "lucas", nombre: "Luke Cage (Carl Lucas)", universo: "Marvel", equipo: "Héroes de Alquiler", tipo: "Héroe" },
+    { palabra: "medusa", nombre: "Medusa", universo: "Marvel", equipo: "Inhumanos", tipo: "Héroe" },
+    { palabra: "sharon", nombre: "Ms. Marvel / She-Thing (Sharon Ventura)", universo: "Marvel", equipo: "Cuatro Fantásticos", tipo: "Héroe" },
+    { palabra: "darla", nombre: "Ms. Thing (Darla Deering)", universo: "Marvel", equipo: "Cuatro Fantásticos", tipo: "Héroe" },
+    { palabra: "challa", nombre: "Pantera Negra (T'Challa)", universo: "Marvel", equipo: "Wakanda", tipo: "Héroe" },
+    { palabra: "julius", nombre: "Pensador Loco (Julius)", universo: "Marvel", equipo: "Villanos de los Cuatro Fantásticos", tipo: "Villano" },
+    { palabra: "psycho", nombre: "Psicoman (Psycho-Man)", universo: "Marvel", equipo: "Villanos de los Cuatro Fantásticos", tipo: "Villano" },
+    { palabra: "skrull", nombre: "Super-Skrull (Kl'rt)", universo: "Marvel", equipo: "Villanos de los Cuatro Fantásticos", tipo: "Villano" },
+    { palabra: "terrax", nombre: "Terrax el Conquistador", universo: "Marvel", equipo: "Heraldos de Galactus", tipo: "Villano" },
+    { palabra: "antman", nombre: "Hombre Hormiga / Ant-Man (Scott Lang)", universo: "Marvel", equipo: "Vengadores", tipo: "Héroe" },
+    { palabra: "banner", nombre: "Hulk (Bruce Banner)", universo: "Marvel", equipo: "Vengadores", tipo: "Héroe" },
+    { palabra: "rider", nombre: "Ghost Rider (Danny Ketch)", universo: "Marvel", equipo: "Universo Ghost Rider", tipo: "Antihéroe" }
 ];
 const WORDLE_INTENTOS = 6;
-const WORDLE_LARGO = 5;
+let WORDLE_LARGO = 5;
 const WORDLE_FILAS_TECLADO = ["qwertyuiop", "asdfghjkl", "zxcvbnm"];
 let wordleSecreta = null;
 let wordleModo = 'diaria';
@@ -24144,6 +24229,7 @@ let wordleIntentos = [];
 let wordleActual = '';
 let wordleTerminado = false;
 let wordleEstadosTeclas = {};
+let wordlePistasVistas = 0; // 0 = ninguna, 1 = pista de tipo y universo, 2 = también el equipo
 
 function wordleFechaHoy() {
     const f = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/Argentina/Buenos_Aires' }));
@@ -24186,7 +24272,7 @@ function wordleEvaluar(intento, secreta) {
 function wordleGuardarLocal() {
     if (wordleModo !== 'diaria') return;
     try {
-        localStorage.setItem('wordle-personajes-dia', JSON.stringify({ fecha: wordleFechaHoy(), intentos: wordleIntentos, terminado: wordleTerminado }));
+        localStorage.setItem('wordle-personajes-dia', JSON.stringify({ fecha: wordleFechaHoy(), palabra: wordleSecreta.palabra, intentos: wordleIntentos, terminado: wordleTerminado, pistas: wordlePistasVistas }));
     } catch (e) {}
 }
 
@@ -24292,6 +24378,40 @@ function wordleRecalcularTeclas() {
     });
 }
 
+
+// Pistas: se habilitan después del intento 3 (tipo y universo) y del intento 5 (equipo).
+function wordleActualizarPistas() {
+    const cont = document.getElementById('wordle-pistas');
+    if (!cont || !wordleSecreta) return;
+    const n = wordleIntentos.length;
+    const reglas = [
+        { desde: 3, boton: '💡 Pista 1 (disponible tras 3 intentos)', texto: () => `💡 Es ${articuloTipo(wordleSecreta.tipo)} de ${wordleSecreta.universo}.` },
+        { desde: 5, boton: '💡 Pista 2 (disponible tras 5 intentos)', texto: () => `💡 Equipo o grupo: ${wordleSecreta.equipo}.` }
+    ];
+    cont.innerHTML = '';
+    reglas.forEach((r, i) => {
+        if (wordlePistasVistas > i) {
+            const p = document.createElement('p');
+            p.className = 'wordle-pista-texto';
+            p.textContent = r.texto();
+            cont.appendChild(p);
+        } else if (!wordleTerminado) {
+            const b = document.createElement('button');
+            b.type = 'button';
+            b.className = 'btn-modal wordle-btn-pista';
+            b.textContent = r.boton;
+            const disponible = n >= r.desde && wordlePistasVistas === i;
+            b.disabled = !disponible;
+            if (disponible) b.addEventListener('click', () => { wordlePistasVistas = i + 1; wordleGuardarLocal(); wordleActualizarPistas(); });
+            cont.appendChild(b);
+        }
+    });
+}
+
+function articuloTipo(tipo) {
+    return { 'Héroe': 'un Héroe', 'Villano': 'un Villano', 'Antihéroe': 'un Antihéroe', 'Aliado': 'un Aliado (de los héroes)' }[tipo] || tipo;
+}
+
 function wordleMensaje(texto, tipo) {
     const m = document.getElementById('wordle-mensaje');
     if (!m) return;
@@ -24304,7 +24424,7 @@ function wordleTextoCompartir() {
     const gano = wordleIntentos[wordleIntentos.length - 1] === wordleSecreta.palabra;
     const titulo = wordleModo === 'diaria' ? 'Wordle de Personajes ' + wordleFechaHoy() : 'Wordle de Personajes (al azar)';
     const lineas = wordleIntentos.map(i => wordleEvaluar(i, wordleSecreta.palabra).map(e => emoji[e]).join(''));
-    return `${titulo} ${gano ? wordleIntentos.length : 'X'}/${WORDLE_INTENTOS}\n\n${lineas.join('\n')}`;
+    return `${titulo} ${gano ? wordleIntentos.length : 'X'}/${WORDLE_INTENTOS}${wordlePistasVistas ? ' 💡'.repeat(wordlePistasVistas) : ''}\n\n${lineas.join('\n')}`;
 }
 
 function wordleMostrarFinal(gano) {
@@ -24315,7 +24435,7 @@ function wordleMostrarFinal(gano) {
     const rachaTxt = (wordleModo === 'diaria' && racha) ? `<p>🔥 Racha: ${racha.racha} · Mejor: ${racha.mejor} · Ganadas: ${racha.ganadas}/${racha.jugadas}</p>` : '';
     fin.querySelector('#wordle-final-texto').innerHTML = `
         <h3>${gano ? '¡Lo adivinaste!' : 'Se acabaron los intentos'}</h3>
-        <p>Era <strong>${wordleSecreta.palabra.toUpperCase()}</strong> — ${wordleSecreta.nombre} (${wordleSecreta.universo}).</p>
+        <p>Era <strong>${wordleSecreta.palabra.toUpperCase()}</strong> — ${wordleSecreta.nombre} (${wordleSecreta.universo} · ${wordleSecreta.tipo} · ${wordleSecreta.equipo}).</p>
         ${rachaTxt}`;
     const btnAzar = document.getElementById('wordle-btn-azar');
     if (btnAzar) btnAzar.classList.remove('oculto');
@@ -24331,12 +24451,13 @@ function wordleTerminar(gano) {
     wordleMensaje(gano ? '🎉 ¡Correcto!' : `La palabra era ${wordleSecreta.palabra.toUpperCase()}.`, gano ? 'victoria' : 'error');
     wordleMostrarFinal(gano);
     wordleDibujarTablero();
+    wordleActualizarPistas();
 }
 
 function wordleEnviar() {
     if (wordleTerminado) return;
     if (wordleActual.length < WORDLE_LARGO) {
-        wordleMensaje('Faltan letras: son 5.', 'error');
+        wordleMensaje(`Faltan letras: son ${WORDLE_LARGO}.`, 'error');
         return;
     }
     wordleIntentos.push(wordleActual);
@@ -24347,6 +24468,7 @@ function wordleEnviar() {
     wordleDibujarTeclado();
     wordleMensaje('');
     wordleGuardarLocal();
+    wordleActualizarPistas();
     if (intento === wordleSecreta.palabra) wordleTerminar(true);
     else if (wordleIntentos.length >= WORDLE_INTENTOS) wordleTerminar(false);
 }
@@ -24367,19 +24489,27 @@ function wordleIniciar(modo) {
     document.getElementById('wordle-final').classList.add('oculto');
     document.getElementById('wordle-btn-azar').classList.add('oculto');
     const titulo = document.getElementById('wordle-subtitulo');
+    wordlePistasVistas = 0;
     if (modo === 'diaria') {
         wordleSecreta = wordlePalabraDelDia();
+        WORDLE_LARGO = wordleSecreta.palabra.length;
         const guardado = wordleCargarLocal();
-        if (guardado) { wordleIntentos = guardado.intentos; wordleTerminado = guardado.terminado; }
-        if (titulo) titulo.textContent = 'Palabra del día: 5 letras, 6 intentos. Es la misma para todos.';
+        if (guardado && guardado.palabra === wordleSecreta.palabra && guardado.intentos.every(i => i.length === WORDLE_LARGO)) {
+            wordleIntentos = guardado.intentos;
+            wordleTerminado = guardado.terminado;
+            wordlePistasVistas = guardado.pistas || 0;
+        }
+        if (titulo) titulo.textContent = `Palabra del día: hoy tiene ${WORDLE_LARGO} letras (a veces 5, a veces 6). Tenés 6 intentos. Es la misma para todos.`;
     } else {
         wordleSecreta = WORDLE_PALABRAS[Math.floor(Math.random() * WORDLE_PALABRAS.length)];
-        if (titulo) titulo.textContent = 'Modo al azar: no cuenta para la racha ni para las estadísticas.';
+        WORDLE_LARGO = wordleSecreta.palabra.length;
+        if (titulo) titulo.textContent = `Modo al azar (${WORDLE_LARGO} letras): no cuenta para la racha ni para las estadísticas.`;
     }
     wordleRecalcularTeclas();
     wordleDibujarTablero();
     wordleDibujarTeclado();
     wordleMensaje('');
+    wordleActualizarPistas();
     if (wordleTerminado) {
         const gano = wordleIntentos[wordleIntentos.length - 1] === wordleSecreta.palabra;
         wordleMensaje(gano ? '🎉 Ya resolviste la de hoy.' : `Hoy no salió. La palabra era ${wordleSecreta.palabra.toUpperCase()}.`, gano ? 'victoria' : 'error');
