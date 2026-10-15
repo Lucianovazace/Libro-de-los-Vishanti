@@ -2042,5 +2042,21 @@ h2 {
 .bg-rivales { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin: 8px 0; }
 .bg-rival { font-size: 0.85rem; padding: 5px 12px; border-radius: 14px; background: rgba(255,255,255,0.07); color: #ccc; }
 .bg-rival.gano { background: #c0392b; color: #fff; font-weight: bold; }
-@media (max-width: 480px) { .bg-celda { font-size: 0.6rem; padding: 2px; border-radius: 6px; } .bg-bola { width: 160px; height: 160px; } .bg-carton { gap: 3px; padding: 6px; } }
+@media (max-width: 480px) {
+    .bg-celda { font-size: 0.6rem; padding: 2px; border-radius: 6px; }
+    .bg-carton { gap: 3px; padding: 6px; }
+    /* En celular el bolillero se compacta para ver bola y cartón juntos */
+    .bg-mesa { gap: 6px; margin: 6px auto; }
+    .bg-bolillero { flex: 1 1 100%; display: flex; align-items: center; gap: 10px; text-align: left; flex-wrap: wrap; }
+    .bg-bola { width: 104px; height: 104px; margin: 0; font-size: 2rem; padding: 4px; border-width: 3px; flex: 0 0 auto; }
+    .bg-bola-img { max-height: 36px; margin-bottom: 2px; }
+    .bg-bola-nombre { font-size: 0.72rem; }
+    #bg-bola-n { flex: 1 1 0; text-align: center; }
+    .bg-historial { flex: 1 1 100%; margin-top: 0; min-height: 0; justify-content: flex-start; }
+    .bg-controles { flex: 1 1 100%; flex-direction: row; flex-wrap: wrap; gap: 6px; }
+    .bg-controles .btn-modal { width: auto; max-width: none; flex: 1 1 44%; padding: 8px 6px; }
+    .bg-auto { flex: 1 1 44%; max-width: none; }
+    .bg-check { flex: 1 1 100%; text-align: center; }
+    .bg-btn-bingo { flex: 1 1 100% !important; }
+}
 @media (prefers-reduced-motion: reduce) { .bg-giro, .bg-no { animation: none; } }
