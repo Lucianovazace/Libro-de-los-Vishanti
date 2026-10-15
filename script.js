@@ -24718,6 +24718,66 @@ const PERSONAJES_MARVEL_LOBEZNO = [
     { nombre: "Zander Rice", real: "Científico responsable de la creación de X-23", tipo: "Villano" }
 ];
 
+// Personajes de Marvel del universo de Los Defensores (solo los no repetidos con otros catálogos) (lista pasada por el usuario, completa; tipos y equipos asignados por Claude).
+// Solo catálogo: el Wordle usa las palabras de 5-6 letras que salen de acá (ver WORDLE_PALABRAS).
+const PERSONAJES_MARVEL_DEFENSORES = [
+    { nombre: "Andromeda", real: "Andromeda Attumasdottir - Guerrera atlante y Defensora", tipo: "Héroe" },
+    { nombre: "Aquarian / Wundarr the Aquarian", real: "Wundarr", tipo: "Héroe" },
+    { nombre: "Aragorn", real: "Caballo alado místico de Valkyrie", tipo: "Aliado" },
+    { nombre: "Arak", real: "Arak", tipo: "Héroe" },
+    { nombre: "Angel / Thomas Halloway", real: "Thomas Halloway", tipo: "Héroe" },
+    { nombre: "Balthakk", real: "Entidad mística de los Octessence", tipo: "Villano" },
+    { nombre: "Beyonder / El Todopoderoso", real: "Entidad cósmica", tipo: "Aliado" },
+    { nombre: "Bird-Brain", real: "Bird-Brain", tipo: "Antihéroe" },
+    { nombre: "Capitán Universo / Captain Universe", real: "Unipower / Fuerza Enigma", tipo: "Héroe" },
+    { nombre: "Chondu the Magician", real: "Chondu - Miembro de los Headmen", tipo: "Villano" },
+    { nombre: "Cloud", real: "Entidad cósmica con forma humana y miembro del grupo", tipo: "Antihéroe" },
+    { nombre: "Clea", real: "Clea Strange - Hechicera Suprema de la Dimensión Oscura", tipo: "Héroe" },
+    { nombre: "Daffodil", real: "Daffodil", tipo: "Aliado" },
+    { nombre: "Daemon", real: "Daemon", tipo: "Villano" },
+    { nombre: "D'Spayre", real: "Entidad de miedo creada por Dweller-in-Darkness", tipo: "Villano" },
+    { nombre: "Devil-Slayer", real: "Eric Simon Payne", tipo: "Héroe" },
+    { nombre: "Dollar Bill", real: "William \"Dollar Bill\" Wesley - Documentalista de los Defensores", tipo: "Aliado" },
+    { nombre: "Dormammu", real: "Gobernante de la Dimensión Oscura y archienemigo místico", tipo: "Villano" },
+    { nombre: "Dr. Nemesis / Doctor NÉMESIS", real: "James Bradley", tipo: "Villano" },
+    { nombre: "Dragon Lord", real: "Tako Shamara", tipo: "Villano" },
+    { nombre: "Dweller-in-Darkness", real: "Señor del Miedo", tipo: "Villano" },
+    { nombre: "El Toro Negro", real: "El Toro Negro", tipo: "Antihéroe" },
+    { nombre: "Gargoyle / Isaac Christians", real: "Isaac Christians", tipo: "Villano" },
+    { nombre: "Gorilla-Man", real: "Arthur Nagan - Miembro de los Headmen", tipo: "Villano" },
+    { nombre: "Headsman", real: "Cleavon Twain", tipo: "Villano" },
+    { nombre: "Interloper", real: "Inmortal aliado de los Defensores", tipo: "Héroe" },
+    { nombre: "Ithan", real: "Ithan", tipo: "Aliado" },
+    { nombre: "Lulumu", real: "Lulumu", tipo: "Villano" },
+    { nombre: "Lunatik", real: "Mercenario espacial", tipo: "Villano" },
+    { nombre: "Manslaughter", real: "Manslaughter", tipo: "Villano" },
+    { nombre: "Mind-Monster", real: "Manifestación psíquica", tipo: "Villano" },
+    { nombre: "Moondark", real: "Mago enemigo", tipo: "Villano" },
+    { nombre: "Nighthawk", real: "Kyle Richmond - Líder histórico y pilar financiero de los Defensores", tipo: "Héroe" },
+    { nombre: "Nightmare / Pesadilla", real: "Gobernante de la Dimensión del Sueño", tipo: "Villano" },
+    { nombre: "Raggadorr", real: "Entidad mística", tipo: "Villano" },
+    { nombre: "Red Guardian / Guardián Rojo", real: "Tania Belinsky - Se unió como defensora", tipo: "Héroe" },
+    { nombre: "Ruby Thursday", real: "Thursday Rubinstein - Científica de los Headmen con cabeza orgánica de plástico", tipo: "Villano" },
+    { nombre: "Shanzar", real: "Hechicero Supremo de la Dimensión Extraña", tipo: "Villano" },
+    { nombre: "Shuma-Gorath", real: "Entidad primigenia del caos", tipo: "Villano" },
+    { nombre: "Silver Surfer / Surfista de Plata", real: "Norrin Radd - Miembro fundador del núcleo cósmico", tipo: "Héroe" },
+    { nombre: "Six-Man", real: "Six-Man", tipo: "Antihéroe" },
+    { nombre: "Solarman", real: "Benjamin Tucker", tipo: "Héroe" },
+    { nombre: "Son of Satan / Hellstrom", real: "Daimon Hellstrom", tipo: "Antihéroe" },
+    { nombre: "Spike", real: "Gary Cody", tipo: "Antihéroe" },
+    { nombre: "Star-Dancer", real: "Shanna", tipo: "Héroe" },
+    { nombre: "Starlight", real: "Dr. Tania Belinsky", tipo: "Héroe" },
+    { nombre: "The Cat / Greer Nelson", real: "Greer Grant Nelson antes de ser Tigra", tipo: "Héroe" },
+    { nombre: "The Headmen", real: "Grupo de villanos estrafalarios liderados por Arthur Nagan", tipo: "Villano" },
+    { nombre: "The Presence", real: "Sergei Krylov", tipo: "Villano" },
+    { nombre: "The Unnamed", real: "Entidad mística", tipo: "Villano" },
+    { nombre: "Uumaru", real: "Uumaru", tipo: "Villano" },
+    { nombre: "Umar", real: "Hermana de Dormammu", tipo: "Villano" },
+    { nombre: "Valkyrie / Samantha Parrington", real: "Samantha Parrington - Primera mortal que alojó a Valkyrie", tipo: "Héroe" },
+    { nombre: "Wallow", real: "Wallow", tipo: "Villano" },
+    { nombre: "Yandroth", real: "Científico y hechicero de Yann, villano recurrente del equipo", tipo: "Villano" }
+];
+
 // ==========================================
 // JUEGO "WORDLE DE PERSONAJES" (palabra del día)
 // ==========================================
@@ -25128,11 +25188,30 @@ const WORDLE_PALABRAS = [
     { palabra: "cortez", nombre: "Clayton Cortez (Weapon H)", universo: "Marvel", equipo: "Universo Wolverine", tipo: "Héroe" },
     { palabra: "zander", nombre: "Zander Rice", universo: "Marvel", equipo: "Villanos de Wolverine", tipo: "Villano" },
     { palabra: "kinney", nombre: "Laura Kinney (X-23)", universo: "Marvel", equipo: "Universo Wolverine", tipo: "Héroe" },
-    { palabra: "elsie", nombre: "Elsie-Dee", universo: "Marvel", equipo: "Villanos de Wolverine", tipo: "Aliado" }
+    { palabra: "elsie", nombre: "Elsie-Dee", universo: "Marvel", equipo: "Villanos de Wolverine", tipo: "Aliado" },
+    { palabra: "chondu", nombre: "Chondu el Mago (Headmen)", universo: "Marvel", equipo: "Headmen", tipo: "Villano" },
+    { palabra: "cloud", nombre: "Cloud", universo: "Marvel", equipo: "Los Defensores", tipo: "Antihéroe" },
+    { palabra: "daemon", nombre: "Daemon", universo: "Marvel", equipo: "Villanos de los Defensores", tipo: "Villano" },
+    { palabra: "dollar", nombre: "Dollar Bill (William Wesley)", universo: "Marvel", equipo: "Los Defensores", tipo: "Aliado" },
+    { palabra: "nagan", nombre: "Arthur Nagan (Gorilla-Man)", universo: "Marvel", equipo: "Headmen", tipo: "Villano" },
+    { palabra: "twain", nombre: "Cleavon Twain (Headsman)", universo: "Marvel", equipo: "Villanos de los Defensores", tipo: "Villano" },
+    { palabra: "ithan", nombre: "Ithan", universo: "Marvel", equipo: "Los Defensores", tipo: "Aliado" },
+    { palabra: "lulumu", nombre: "Lulumu", universo: "Marvel", equipo: "Villanos de los Defensores", tipo: "Villano" },
+    { palabra: "shuma", nombre: "Shuma-Gorath", universo: "Marvel", equipo: "Villanos de los Defensores", tipo: "Villano" },
+    { palabra: "gorath", nombre: "Shuma-Gorath", universo: "Marvel", equipo: "Villanos de los Defensores", tipo: "Villano" },
+    { palabra: "tucker", nombre: "Benjamin Tucker (Solarman)", universo: "Marvel", equipo: "Los Defensores", tipo: "Héroe" },
+    { palabra: "daimon", nombre: "Daimon Hellstrom (Son of Satan)", universo: "Marvel", equipo: "Los Defensores", tipo: "Antihéroe" },
+    { palabra: "spike", nombre: "Spike (Gary Cody)", universo: "Marvel", equipo: "Los Defensores", tipo: "Antihéroe" },
+    { palabra: "shanna", nombre: "Shanna (Star-Dancer)", universo: "Marvel", equipo: "Los Defensores", tipo: "Héroe" },
+    { palabra: "krylov", nombre: "Sergei Krylov (The Presence)", universo: "Marvel", equipo: "Villanos de los Defensores", tipo: "Villano" },
+    { palabra: "uumaru", nombre: "Uumaru", universo: "Marvel", equipo: "Villanos de los Defensores", tipo: "Villano" },
+    { palabra: "wallow", nombre: "Wallow", universo: "Marvel", equipo: "Villanos de los Defensores", tipo: "Villano" },
+    { palabra: "norrin", nombre: "Norrin Radd (Silver Surfer)", universo: "Marvel", equipo: "Los Defensores", tipo: "Héroe" },
+    { palabra: "surfer", nombre: "Silver Surfer", universo: "Marvel", equipo: "Los Defensores", tipo: "Héroe" }
 ];
 // Dificultad: FÁCIL = los más famosos, DIFÍCIL = los menos conocidos (asignado por Claude, se puede ajustar), MEDIO = el resto.
 const WORDLE_FACIL = new Set(["alfred", "amora", "angel", "angela", "antman", "arana", "arrow", "balder", "banner", "barnes", "barry", "batman", "batroc", "beast", "blade", "brock", "bruce", "bucky", "cable", "carol", "carter", "challa", "clark", "clint", "crane", "cyborg", "diana", "dinah", "donna", "drake", "falcon", "fenris", "flash", "foster", "freeze", "goblin", "gordon", "gorgon", "grimm", "grodd", "groot", "hades", "happy", "harley", "havok", "hogun", "hydra", "ikaris", "isley", "jackal", "jason", "johnny", "joker", "kamala", "kitty", "korvac", "kraven", "laufey", "laura", "lizard", "logan", "lucas", "luthor", "magik", "mantis", "medusa", "miles", "namor", "okoye", "olsen", "oracle", "orion", "osborn", "pepper", "peter", "pietro", "quake", "quasar", "queen", "quill", "quinn", "raven", "rhino", "rhodey", "rider", "robin", "rogers", "rogue", "ronan", "rumlow", "scott", "selina", "sentry", "shang", "shazam", "shuri", "skull", "slade", "spider", "stark", "steel", "steve", "storm", "surtur", "swamp", "talia", "thanos", "thing", "tigra", "triton", "venom", "vermin", "victor", "vision", "vixen", "waller", "wally", "wanda", "wiccan", "widow", "wilson", "winter"]);
-const WORDLE_DIFICIL = new Set(["abyss", "adder", "agger", "agony", "ahura", "alecto", "algrim", "alura", "amber", "angmo", "anvil", "aquon", "arkin", "basil", "bernie", "blight", "caiera", "cathy", "clash", "crang", "curse", "dante", "dargo", "darla", "debra", "deeds", "deidre", "dekker", "demara", "desak", "devoux", "devoz", "dinesh", "druid", "dunphy", "eisen", "eldrac", "elijah", "flint", "freyja", "frost", "gentry", "greer", "hannu", "harpy", "hermod", "hoder", "hypno", "jolena", "joseph", "juarez", "justin", "kaplan", "katma", "kelda", "koenig", "korath", "kurse", "laira", "lasher", "lohmer", "lotus", "lyons", "madcap", "madman", "magni", "major", "malik", "mallen", "maxon", "menace", "mendel", "metron", "mogul", "mosaic", "nadia", "nimue", "nobili", "payne", "phage", "phyla", "quire", "rachel", "randac", "razer", "reader", "rikki", "romeo", "roxxon", "saxon", "seeker", "shado", "sharon", "skagg", "slyde", "sodam", "spirit", "sterns", "sunset", "tania", "teddy", "tivan", "torres", "turtle", "utgard", "vance", "vapor", "vaughn", "vector", "vidar", "vortex", "wheel", "yalan", "zaran", "zarrko", "albert", "pierce", "ferro", "amiko", "gazer", "kimura", "harada", "kudzu", "oyama", "lazaer", "mahkwa", "hudson", "native", "pratt", "sierra", "solem", "thorne", "tyger", "gibney", "cortez", "zander", "elsie"]);
+const WORDLE_DIFICIL = new Set(["abyss", "adder", "agger", "agony", "ahura", "alecto", "algrim", "alura", "amber", "angmo", "anvil", "aquon", "arkin", "basil", "bernie", "blight", "caiera", "cathy", "clash", "crang", "curse", "dante", "dargo", "darla", "debra", "deeds", "deidre", "dekker", "demara", "desak", "devoux", "devoz", "dinesh", "druid", "dunphy", "eisen", "eldrac", "elijah", "flint", "freyja", "frost", "gentry", "greer", "hannu", "harpy", "hermod", "hoder", "hypno", "jolena", "joseph", "juarez", "justin", "kaplan", "katma", "kelda", "koenig", "korath", "kurse", "laira", "lasher", "lohmer", "lotus", "lyons", "madcap", "madman", "magni", "major", "malik", "mallen", "maxon", "menace", "mendel", "metron", "mogul", "mosaic", "nadia", "nimue", "nobili", "payne", "phage", "phyla", "quire", "rachel", "randac", "razer", "reader", "rikki", "romeo", "roxxon", "saxon", "seeker", "shado", "sharon", "skagg", "slyde", "sodam", "spirit", "sterns", "sunset", "tania", "teddy", "tivan", "torres", "turtle", "utgard", "vance", "vapor", "vaughn", "vector", "vidar", "vortex", "wheel", "yalan", "zaran", "zarrko", "albert", "pierce", "ferro", "amiko", "gazer", "kimura", "harada", "kudzu", "oyama", "lazaer", "mahkwa", "hudson", "native", "pratt", "sierra", "solem", "thorne", "tyger", "gibney", "cortez", "zander", "elsie", "chondu", "cloud", "daemon", "dollar", "nagan", "twain", "ithan", "lulumu", "shuma", "gorath", "tucker", "spike", "shanna", "krylov", "uumaru", "wallow"]);
 function wordleNivelDe(p) { return WORDLE_FACIL.has(p.palabra) ? 'facil' : (WORDLE_DIFICIL.has(p.palabra) ? 'dificil' : 'medio'); }
 
 const WORDLE_INTENTOS = 6;
