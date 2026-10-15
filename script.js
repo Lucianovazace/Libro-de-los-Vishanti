@@ -24884,6 +24884,30 @@ const PERSONAJES_MARVEL_GUARDIANES = [
     { nombre: "Yondu Udonta", real: "Yondu Udonta", tipo: "Antihéroe" }
 ];
 
+// Personajes de Marvel del universo de los Eternos (solo los no repetidos con otros catálogos) (lista pasada por el usuario, completa; tipos y equipos asignados por Claude).
+// Solo catálogo: el Wordle usa las palabras de 5-6 letras que salen de acá (ver WORDLE_PALABRAS).
+const PERSONAJES_MARVEL_ETERNOS = [
+    { nombre: "Ajax / Ajak", real: "Ajak - Líder espiritual y canalizador de la comunicación con los Celestiales", tipo: "Héroe" },
+    { nombre: "Arishem el Juez", real: "Arishem - Líder de los Celestiales", tipo: "Villano" },
+    { nombre: "Atropos", real: "Atropos - Miembro de los Eternos de Urano", tipo: "Villano" },
+    { nombre: "Capers", real: "Capers - Humano mutado y aliado", tipo: "Aliado" },
+    { nombre: "Chronos", real: "Chronos - Padre de Kronos y mentor antiguo", tipo: "Aliado" },
+    { nombre: "Circe / Sersi", real: "Sersi - Maestra de la transmutación molecular y Vengadora honoraria", tipo: "Héroe" },
+    { nombre: "Domisto", real: "Domisto - Líder disidente de los Deviants", tipo: "Villano" },
+    { nombre: "Druig", real: "Druig - Eterno especialista en manipulación mental y política", tipo: "Antihéroe" },
+    { nombre: "Gilgamesh / El Héroe Olvidado", real: "Gilgamesh - El Eterno con mayor fuerza física y compañero de los Vengadores", tipo: "Héroe" },
+    { nombre: "Kingo Sunen", real: "Kingo - Eterno espadachín y estrella de cine en el mundo humano", tipo: "Héroe" },
+    { nombre: "Kro", real: "Kro - Líder inmortal de los Deviants y amante clandestino de Thena", tipo: "Villano" },
+    { nombre: "Kronos", real: "Kronos - Científico primordial cuyo experimento dio origen al poder cósmico de los Eternos", tipo: "Aliado" },
+    { nombre: "Makkari", real: "Makkari - Eterno velocista cósmico, sordo en su versión moderna", tipo: "Héroe" },
+    { nombre: "Phastos", real: "Phastos - Inventor, armero y genio tecnológico de la raza", tipo: "Héroe" },
+    { nombre: "Sprite", real: "Sprite - Eterno con apariencia de niño y poderes de ilusión", tipo: "Héroe" },
+    { nombre: "Starfox / Eros de Titán", real: "Eros - Hermano de Thanos con la capacidad de estimular placer y emociones positivas", tipo: "Héroe" },
+    { nombre: "Sersi", real: "Sersi", tipo: "Héroe" },
+    { nombre: "Thena", real: "Thena - Guerrera aristócrata y maestra de armas", tipo: "Héroe" },
+    { nombre: "Zuras", real: "Zuras", tipo: "Aliado" }
+];
+
 // ==========================================
 // JUEGO "WORDLE DE PERSONAJES" (palabra del día)
 // ==========================================
@@ -25350,11 +25374,56 @@ const WORDLE_PALABRAS = [
     { palabra: "rages", nombre: "Rages", universo: "Marvel", equipo: "Cósmicos", tipo: "Aliado" },
     { palabra: "rocket", nombre: "Rocket Raccoon", universo: "Marvel", equipo: "Guardianes de la Galaxia", tipo: "Héroe" },
     { palabra: "yondu", nombre: "Yondu Udonta", universo: "Marvel", equipo: "Guardianes de la Galaxia", tipo: "Antihéroe" },
-    { palabra: "udonta", nombre: "Yondu Udonta", universo: "Marvel", equipo: "Guardianes de la Galaxia", tipo: "Antihéroe" }
+    { palabra: "udonta", nombre: "Yondu Udonta", universo: "Marvel", equipo: "Guardianes de la Galaxia", tipo: "Antihéroe" },
+    { palabra: "capers", nombre: "Capers", universo: "Marvel", equipo: "Eternos", tipo: "Aliado" },
+    { palabra: "sersi", nombre: "Sersi", universo: "Marvel", equipo: "Eternos", tipo: "Héroe" },
+    { palabra: "druig", nombre: "Druig", universo: "Marvel", equipo: "Eternos", tipo: "Antihéroe" },
+    { palabra: "kingo", nombre: "Kingo Sunen", universo: "Marvel", equipo: "Eternos", tipo: "Héroe" },
+    { palabra: "sunen", nombre: "Kingo Sunen", universo: "Marvel", equipo: "Eternos", tipo: "Héroe" },
+    { palabra: "kronos", nombre: "Kronos", universo: "Marvel", equipo: "Eternos", tipo: "Aliado" },
+    { palabra: "sprite", nombre: "Sprite", universo: "Marvel", equipo: "Eternos", tipo: "Héroe" },
+    { palabra: "thena", nombre: "Thena", universo: "Marvel", equipo: "Eternos", tipo: "Héroe" },
+    { palabra: "zuras", nombre: "Zuras", universo: "Marvel", equipo: "Eternos", tipo: "Aliado" }
 ];
+// Imágenes de personajes. La clave es el personaje; WORDLE_IMAGEN_DE mapea cada palabra del juego a su personaje.
+// Si una palabra no está acá, se busca por alias en los juegos Nombralos (Linternas, Batifamilia).
+const IMAGENES_PERSONAJES = {
+    joker: "https://i.pinimg.com/736x/eb/c5/ba/ebc5ba197ba1aac94541543f3a2da590.jpg",
+    batman: "https://wallpapercave.com/wp/wp13343903.jpg",
+    robin: "https://w0.peakpx.com/wallpaper/616/667/HD-wallpaper-damian-wayne-batman-robin.jpg",
+    flash: "https://i.pinimg.com/474x/0a/e0/a0/0ae0a0f6b8abfd380b6da3f4178db8e6.jpg",
+    harley: "https://i.pinimg.com/564x/a3/78/4d/a3784d6995924f17c3c737c42e03acc4.jpg",
+    luthor: "https://i.pinimg.com/236x/46/8a/12/468a12296c5149baba22f9fd397468b2.jpg",
+    shazam: "https://i.pinimg.com/originals/85/98/04/859804e75cce201d125170cb5096963e.jpg",
+    groot: "https://i.pinimg.com/236x/bf/bb/a6/bfbba6426b397d5abacbaa858cf18676.jpg",
+    venom: "https://i.pinimg.com/736x/3c/0c/09/3c0c09297f38dda91414b3386a9fd444.jpg",
+    wolverine: "https://i.pinimg.com/564x/4a/cc/75/4acc756ad09c44ca4824aa6177ef5f33.jpg",
+    storm: "https://i.pinimg.com/736x/33/c8/21/33c8218f3db464dea2dcf29e4878f8a3.jpg",
+    thanos: "https://i.pinimg.com/736x/07/4c/c9/074cc9aee40882a3e05cbe0a33ba5b30.jpg",
+    spiderman: "https://i.pinimg.com/736x/92/94/09/9294090bc19631bdaa1f3b6b6249f114.jpg",
+    rocket: "https://i.pinimg.com/236x/c4/f3/d6/c4f3d643269eca12b0d69fa89b288e21.jpg",
+    gamora: "https://i.pinimg.com/736x/7d/58/63/7d5863d2144bbaf645b4affdef23ef9c.jpg"
+};
+const WORDLE_IMAGEN_DE = {
+    joker: 'joker', batman: 'batman', bruce: 'batman', robin: 'robin', flash: 'flash', barry: 'flash',
+    quinn: 'harley', harley: 'harley', luthor: 'luthor', shazam: 'shazam', groot: 'groot', venom: 'venom', brock: 'venom',
+    logan: 'wolverine', storm: 'storm', thanos: 'thanos', spider: 'spiderman', arana: 'spiderman', peter: 'spiderman',
+    rocket: 'rocket', gamora: 'gamora'
+};
+function imagenDePersonaje(palabra) {
+    if (WORDLE_IMAGEN_DE[palabra]) return IMAGENES_PERSONAJES[WORDLE_IMAGEN_DE[palabra]] || null;
+    const norm = x => String(x).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    const listas = [typeof personajesNombralosLinternas !== 'undefined' ? personajesNombralosLinternas : [], typeof personajesNombralosBatifamilia !== 'undefined' ? personajesNombralosBatifamilia : []];
+    for (const lista of listas) {
+        const p = lista.find(x => x.imagen && (x.alias || []).some(a => norm(a) === palabra));
+        if (p) return p.imagen;
+    }
+    return null;
+}
+
 // Dificultad: FÁCIL = los más famosos, DIFÍCIL = los menos conocidos (asignado por Claude, se puede ajustar), MEDIO = el resto.
 const WORDLE_FACIL = new Set(["alfred", "amora", "angel", "angela", "antman", "arana", "arrow", "azrael", "balder", "banner", "barnes", "barry", "barton", "batman", "batroc", "beast", "blade", "brock", "bruce", "bucky", "cable", "carol", "carter", "cassie", "castle", "challa", "clark", "clint", "crane", "cyborg", "diana", "dillon", "dinah", "donna", "drake", "falcon", "fenris", "flash", "foster", "freeze", "friday", "gamora", "goblin", "gordon", "gorgon", "grimm", "grodd", "groot", "hades", "hammer", "happy", "harley", "havok", "hogun", "hulka", "hydra", "ikaris", "isley", "jackal", "janet", "jarvis", "jason", "johnny", "joker", "jonah", "kaine", "kamala", "kitty", "korvac", "kraven", "laufey", "laura", "lizard", "logan", "lucas", "luthor", "magik", "mantis", "maria", "medusa", "miles", "misty", "modok", "mongul", "mordo", "namor", "nomad", "okoye", "olsen", "oracle", "orion", "osborn", "pepper", "peter", "pietro", "porker", "potts", "quake", "quasar", "queen", "quill", "quinn", "raven", "rescue", "rhino", "rhodes", "rhodey", "rider", "robin", "rocket", "rogers", "rogue", "ronan", "rumlow", "scott", "selina", "sentry", "shang", "shazam", "shuri", "skull", "skurge", "slade", "spider", "stane", "stark", "steel", "steve", "storm", "surfer", "surtur", "swamp", "talia", "thanos", "thing", "tigra", "toxin", "triton", "venom", "vermin", "victor", "viper", "vision", "vixen", "waller", "wally", "wanda", "wiccan", "widow", "wilson", "winter", "wizard"]);
-const WORDLE_DIFICIL = new Set(["abyss", "adder", "agger", "ahura", "albert", "alecto", "aleta", "algrim", "alura", "amber", "amiko", "angmo", "aquon", "arkin", "ayala", "basil", "bernie", "brett", "caiera", "cathy", "chondu", "chung", "clash", "crang", "curse", "daemon", "dargo", "darla", "davos", "debra", "deeds", "deidre", "dekker", "demara", "desak", "devoux", "devoz", "dinesh", "dollar", "dunphy", "eisen", "eldrac", "elijah", "elsie", "ferro", "flint", "freyja", "frost", "gazer", "gentry", "gibney", "gnucci", "gorath", "greer", "grotto", "hannu", "hermod", "hoder", "hudson", "ithan", "jolena", "joseph", "juarez", "justin", "kaplan", "katma", "kelda", "koenig", "krylov", "kudzu", "kurse", "laira", "lasher", "lazaer", "leland", "lohmer", "lotus", "lucca", "lulumu", "lyons", "macha", "madcap", "madman", "magni", "mahkwa", "major", "malik", "mallen", "maxam", "maxon", "mciver", "menace", "mendel", "metron", "mogul", "mosaic", "nadia", "nagan", "native", "nimue", "nobili", "ogord", "payne", "phage", "pierce", "powell", "pratt", "quire", "rachel", "rages", "randac", "razer", "reader", "rikki", "romeo", "roxxon", "saxon", "scurry", "seeker", "shado", "sharon", "shuma", "skagg", "slyde", "sodam", "solem", "spirit", "stakar", "sterns", "stryke", "sunset", "tania", "teddy", "thorne", "torres", "tucker", "turtle", "twain", "tyger", "utgard", "uumaru", "vance", "vapor", "vaughn", "vector", "vidar", "vortex", "wallow", "wheel", "willie", "yalan", "zander", "zaran", "zarrko", "zyozi"]);
+const WORDLE_DIFICIL = new Set(["abyss", "adder", "agger", "ahura", "albert", "alecto", "aleta", "algrim", "alura", "amber", "amiko", "angmo", "aquon", "arkin", "ayala", "basil", "bernie", "brett", "caiera", "cathy", "chondu", "chung", "clash", "crang", "curse", "daemon", "dargo", "darla", "davos", "debra", "deeds", "deidre", "dekker", "demara", "desak", "devoux", "devoz", "dinesh", "dollar", "dunphy", "eisen", "eldrac", "elijah", "elsie", "ferro", "flint", "freyja", "frost", "gazer", "gentry", "gibney", "gnucci", "gorath", "greer", "grotto", "hannu", "hermod", "hoder", "hudson", "ithan", "jolena", "joseph", "juarez", "justin", "kaplan", "katma", "kelda", "koenig", "krylov", "kudzu", "kurse", "laira", "lasher", "lazaer", "leland", "lohmer", "lotus", "lucca", "lulumu", "lyons", "macha", "madcap", "madman", "magni", "mahkwa", "major", "malik", "mallen", "maxam", "maxon", "mciver", "menace", "mendel", "metron", "mogul", "mosaic", "nadia", "nagan", "native", "nimue", "nobili", "ogord", "payne", "phage", "pierce", "powell", "pratt", "quire", "rachel", "rages", "randac", "razer", "reader", "rikki", "romeo", "roxxon", "saxon", "scurry", "seeker", "shado", "sharon", "shuma", "skagg", "slyde", "sodam", "solem", "spirit", "stakar", "sterns", "stryke", "sunset", "tania", "teddy", "thorne", "torres", "tucker", "turtle", "twain", "tyger", "utgard", "uumaru", "vance", "vapor", "vaughn", "vector", "vidar", "vortex", "wallow", "wheel", "willie", "yalan", "zander", "zaran", "zarrko", "zyozi", "capers", "sunen", "kronos", "zuras"]);
 function wordleNivelDe(p) { return WORDLE_FACIL.has(p.palabra) ? 'facil' : (WORDLE_DIFICIL.has(p.palabra) ? 'dificil' : 'medio'); }
 
 const WORDLE_INTENTOS = 6;
@@ -25576,8 +25645,11 @@ function wordleMostrarFinal(gano) {
     fin.classList.remove('oculto');
     const racha = JSON.parse(localStorage.getItem('wordle-personajes-racha-' + wordleNivel) || 'null');
     const rachaTxt = (wordleModo === 'diaria' && racha) ? `<p>🔥 Racha: ${racha.racha} · Mejor: ${racha.mejor} · Ganadas: ${racha.ganadas}/${racha.jugadas}</p>` : '';
+    const imgPers = imagenDePersonaje(wordleSecreta.palabra);
+    const imgHtml = imgPers ? `<img class="wordle-final-img" src="${imgPers}" alt="${wordleSecreta.nombre}">` : '';
     fin.querySelector('#wordle-final-texto').innerHTML = `
         <h3>${gano ? '¡Lo adivinaste!' : 'Se acabaron los intentos'}</h3>
+        ${imgHtml}
         <p>Era <strong>${wordleSecreta.palabra.toUpperCase()}</strong> — ${wordleSecreta.nombre} (${wordleSecreta.universo} · ${wordleSecreta.tipo} · ${wordleSecreta.equipo}).</p>
         ${rachaTxt}`;
     const btnAzar = document.getElementById('wordle-btn-azar');

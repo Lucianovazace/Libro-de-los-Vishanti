@@ -1941,3 +1941,5 @@ h2 {
 .mom-metrica.activo { outline: 2px solid currentColor; font-weight: bold; }
 @media (max-width: 480px) { .mom-juego { gap: 8px; } .mom-puntaje { font-size: 1.4rem; } .mom-poster { max-height: 200px; } }
 #mom-botones .btn-modal, #mom-final .btn-modal { flex: 0 1 200px; }
+
+.wordle-final-img { display: block; margin: 8px auto; max-width: 220px; max-height: 260px; object-fit: contain; border-radius: 10px; }
