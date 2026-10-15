@@ -27855,7 +27855,12 @@ if (adpBtnCompartir) {
 const BG_FUENTES = { todo: 'Marvel y DC', marvel: 'Marvel', dc: 'DC', obras: 'Películas y series' };
 const BG_MODOS = { linea: 'Línea', lleno: 'Cartón lleno' };
 const BG_TOTAL = 75;
-const BG_RIVALES = ['Nick Fury', 'Alfred', 'Rocket', 'Amanda Waller', 'Mayordomo de Stark', 'Oracle'];
+const BG_RIVALES = {
+    marvel: ['Nick Fury', 'Rocket', 'Jarvis', 'Maria Hill', 'Happy Hogan', 'Howard el Pato'],
+    dc: ['Alfred', 'Amanda Waller', 'Oracle', 'Lucius Fox', 'Detective Chimp', 'Krypto'],
+    obras: ['Stan Lee', 'Cinéfilo del barrio', 'Crítico de turno', 'Tío del videoclub', 'Maratonero', 'Fan de las post-créditos']
+};
+BG_RIVALES.todo = [...BG_RIVALES.marvel.slice(0, 3), ...BG_RIVALES.dc.slice(0, 3)];
 const BG_LINEAS = (function () {
     const l = [];
     for (let i = 0; i < 5; i++) { l.push([0, 1, 2, 3, 4].map(j => i * 5 + j)); l.push([0, 1, 2, 3, 4].map(j => j * 5 + i)); }
@@ -28090,7 +28095,7 @@ function bgIniciar(partida) {
     const armar = () => { const c = conBarajar(bgItems.map((_, i) => i), rng).slice(0, 24); c.splice(12, 0, -1); return c; };
     bgCarton = armar();
     bgMarcas = bgCarton.map(i => i === -1);
-    const nombres = conBarajar(BG_RIVALES, rng).slice(0, 2);
+    const nombres = conBarajar(BG_RIVALES[bgFuente], rng).slice(0, 2);
     bgRivales = nombres.map(n => { const c = armar(); return { nombre: n, carton: c, marcas: c.map(i => i === -1) }; });
     if (sub) sub.textContent = (partida === 'diaria' ? 'Bingo del día' : 'Bingo al azar') + ` (${BG_FUENTES[bgFuente]}, ${BG_MODOS[bgModo]}): marcá en tu cartón lo que va saliendo y cantá ¡BINGO! antes que tus rivales.`;
     bgMensaje('');
