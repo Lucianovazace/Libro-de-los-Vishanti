@@ -24036,6 +24036,391 @@ function finalizarGrilla(gano) {
     }
 }
 
+
+// ==========================================
+// JUEGO "WORDLE DE PERSONAJES" (palabra del día)
+// ==========================================
+// Palabras de 5 letras (sin tildes) sacadas de nombres y alias de personajes de DC y Marvel.
+// La palabra del día es la misma para todos: se elige por la fecha (zona horaria de Argentina).
+const WORDLE_PALABRAS = [
+    { palabra: "joker", nombre: "Joker", universo: "DC" },
+    { palabra: "robin", nombre: "Robin", universo: "DC" },
+    { palabra: "flash", nombre: "Flash", universo: "DC" },
+    { palabra: "barry", nombre: "Barry Allen", universo: "DC" },
+    { palabra: "wally", nombre: "Wally West", universo: "DC" },
+    { palabra: "bruce", nombre: "Bruce Wayne", universo: "DC" },
+    { palabra: "clark", nombre: "Clark Kent", universo: "DC" },
+    { palabra: "diana", nombre: "Diana Prince", universo: "DC" },
+    { palabra: "donna", nombre: "Donna Troy", universo: "DC" },
+    { palabra: "dinah", nombre: "Dinah Lance (Canario Negro)", universo: "DC" },
+    { palabra: "talia", nombre: "Talia al Ghul", universo: "DC" },
+    { palabra: "raven", nombre: "Raven", universo: "DC" },
+    { palabra: "slade", nombre: "Slade Wilson (Deathstroke)", universo: "DC" },
+    { palabra: "nyssa", nombre: "Nyssa al Ghul", universo: "DC" },
+    { palabra: "vixen", nombre: "Vixen", universo: "DC" },
+    { palabra: "steel", nombre: "Steel", universo: "DC" },
+    { palabra: "shade", nombre: "Shade (El Hombre Cambiante)", universo: "DC" },
+    { palabra: "siren", nombre: "Siren", universo: "DC" },
+    { palabra: "grodd", nombre: "Gorilla Grodd", universo: "DC" },
+    { palabra: "circe", nombre: "Circe", universo: "DC" },
+    { palabra: "faust", nombre: "Felix Faust", universo: "DC" },
+    { palabra: "magog", nombre: "Magog", universo: "DC" },
+    { palabra: "hades", nombre: "Hades", universo: "DC" },
+    { palabra: "kobra", nombre: "Kobra", universo: "DC" },
+    { palabra: "mento", nombre: "Mento", universo: "DC" },
+    { palabra: "cupid", nombre: "Cupid", universo: "DC" },
+    { palabra: "nimue", nombre: "Nimue Inwudu", universo: "DC" },
+    { palabra: "nubia", nombre: "Nubia", universo: "DC" },
+    { palabra: "piper", nombre: "Piper (Flautista)", universo: "DC" },
+    { palabra: "thorn", nombre: "Thorn", universo: "DC" },
+    { palabra: "talon", nombre: "Talon", universo: "DC" },
+    { palabra: "tatsu", nombre: "Tatsu (Katana)", universo: "DC" },
+    { palabra: "shado", nombre: "Shado", universo: "DC" },
+    { palabra: "shiva", nombre: "Lady Shiva", universo: "DC" },
+    { palabra: "wayne", nombre: "Bruce Wayne", universo: "DC" },
+    { palabra: "drake", nombre: "Tim Drake", universo: "DC" },
+    { palabra: "jason", nombre: "Jason Todd", universo: "DC" },
+    { palabra: "simon", nombre: "Simon Baz", universo: "DC" },
+    { palabra: "katma", nombre: "Katma Tui", universo: "DC" },
+    { palabra: "laira", nombre: "Laira", universo: "DC" },
+    { palabra: "sodam", nombre: "Sodam Yat", universo: "DC" },
+    { palabra: "yalan", nombre: "Yalan Gur", universo: "DC" },
+    { palabra: "hannu", nombre: "Hannu", universo: "DC" },
+    { palabra: "quinn", nombre: "Harley Quinn", universo: "DC" },
+    { palabra: "nygma", nombre: "Edward Nygma (Acertijo)", universo: "DC" },
+    { palabra: "crane", nombre: "Jonathan Crane (Espantapájaros)", universo: "DC" },
+    { palabra: "tetch", nombre: "Jervis Tetch (Sombrerero Loco)", universo: "DC" },
+    { palabra: "isley", nombre: "Pamela Isley (Hiedra Venenosa)", universo: "DC" },
+    { palabra: "brand", nombre: "Boston Brand (Deadman)", universo: "DC" },
+    { palabra: "stone", nombre: "Victor Stone (Cyborg)", universo: "DC" },
+    { palabra: "queen", nombre: "Oliver Queen", universo: "DC" },
+    { palabra: "snart", nombre: "Leonard Snart (Capitán Frío)", universo: "DC" },
+    { palabra: "olsen", nombre: "Jimmy Olsen", universo: "DC" },
+    { palabra: "ramon", nombre: "Ray Palmer / Ramón", universo: "DC" },
+    { palabra: "cisco", nombre: "Cisco Ramon", universo: "DC" },
+    { palabra: "faora", nombre: "Faora", universo: "DC" },
+    { palabra: "alura", nombre: "Alura", universo: "DC" },
+    { palabra: "brain", nombre: "Brainiac", universo: "DC" },
+    { palabra: "arrow", nombre: "Green Arrow", universo: "DC" },
+    { palabra: "storm", nombre: "Storm", universo: "Marvel" },
+    { palabra: "cable", nombre: "Cable", universo: "Marvel" },
+    { palabra: "wanda", nombre: "Wanda Maximoff", universo: "Marvel" },
+    { palabra: "groot", nombre: "Groot", universo: "Marvel" },
+    { palabra: "venom", nombre: "Venom", universo: "Marvel" },
+    { palabra: "carol", nombre: "Carol Danvers", universo: "Marvel" },
+    { palabra: "peter", nombre: "Peter Parker", universo: "Marvel" },
+    { palabra: "steve", nombre: "Steve Rogers", universo: "Marvel" },
+    { palabra: "bucky", nombre: "Bucky Barnes", universo: "Marvel" },
+    { palabra: "clint", nombre: "Clint Barton", universo: "Marvel" },
+    { palabra: "scott", nombre: "Scott Lang / Scott Summers", universo: "Marvel" },
+    { palabra: "okoye", nombre: "Okoye", universo: "Marvel" },
+    { palabra: "shuri", nombre: "Shuri", universo: "Marvel" },
+    { palabra: "namor", nombre: "Namor", universo: "Marvel" },
+    { palabra: "magik", nombre: "Magik", universo: "Marvel" },
+    { palabra: "rogue", nombre: "Rogue", universo: "Marvel" },
+    { palabra: "beast", nombre: "Beast (Hank McCoy)", universo: "Marvel" },
+    { palabra: "havok", nombre: "Havok", universo: "Marvel" },
+    { palabra: "angel", nombre: "Ángel (Warren Worthington)", universo: "Marvel" },
+    { palabra: "ronan", nombre: "Ronan el Acusador", universo: "Marvel" },
+    { palabra: "blade", nombre: "Blade", universo: "Marvel" },
+    { palabra: "mordo", nombre: "Karl Mordo", universo: "Marvel" },
+    { palabra: "miles", nombre: "Miles Morales", universo: "Marvel" },
+    { palabra: "rhino", nombre: "Rhino", universo: "Marvel" },
+    { palabra: "quill", nombre: "Peter Quill (Star-Lord)", universo: "Marvel" },
+    { palabra: "stark", nombre: "Tony Stark", universo: "Marvel" },
+    { palabra: "laura", nombre: "Laura Kinney (X-23)", universo: "Marvel" },
+    { palabra: "kitty", nombre: "Kitty Pryde", universo: "Marvel" },
+    { palabra: "pryde", nombre: "Kitty Pryde", universo: "Marvel" },
+    { palabra: "ororo", nombre: "Ororo Munroe", universo: "Marvel" },
+    { palabra: "hydra", nombre: "Hydra", universo: "Marvel" },
+    { palabra: "logan", nombre: "Logan (Wolverine)", universo: "Marvel" }
+];
+const WORDLE_INTENTOS = 6;
+const WORDLE_LARGO = 5;
+const WORDLE_FILAS_TECLADO = ["qwertyuiop", "asdfghjkl", "zxcvbnm"];
+let wordleSecreta = null;
+let wordleModo = 'diaria';
+let wordleIntentos = [];
+let wordleActual = '';
+let wordleTerminado = false;
+let wordleEstadosTeclas = {};
+
+function wordleFechaHoy() {
+    const f = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/Argentina/Buenos_Aires' }));
+    return f.getFullYear() + '-' + String(f.getMonth() + 1).padStart(2, '0') + '-' + String(f.getDate()).padStart(2, '0');
+}
+
+// Orden barajado fijo (misma semilla para todos), así el día no avanza en orden alfabético ni por universo.
+function wordleOrdenFijo() {
+    const idx = WORDLE_PALABRAS.map((_, i) => i);
+    let semilla = 20261015;
+    const azar = () => { semilla = (semilla * 1664525 + 1013904223) % 4294967296; return semilla / 4294967296; };
+    for (let i = idx.length - 1; i > 0; i--) {
+        const j = Math.floor(azar() * (i + 1));
+        [idx[i], idx[j]] = [idx[j], idx[i]];
+    }
+    return idx;
+}
+
+function wordlePalabraDelDia() {
+    const [a, m, d] = wordleFechaHoy().split('-').map(Number);
+    const dias = Math.floor(Date.UTC(a, m - 1, d) / 86400000);
+    const orden = wordleOrdenFijo();
+    return WORDLE_PALABRAS[orden[((dias % orden.length) + orden.length) % orden.length]];
+}
+
+function wordleEvaluar(intento, secreta) {
+    const res = Array(WORDLE_LARGO).fill('ausente');
+    const resto = {};
+    for (let i = 0; i < WORDLE_LARGO; i++) {
+        if (intento[i] === secreta[i]) res[i] = 'correcta';
+        else resto[secreta[i]] = (resto[secreta[i]] || 0) + 1;
+    }
+    for (let i = 0; i < WORDLE_LARGO; i++) {
+        if (res[i] === 'correcta') continue;
+        if (resto[intento[i]] > 0) { res[i] = 'presente'; resto[intento[i]]--; }
+    }
+    return res;
+}
+
+function wordleGuardarLocal() {
+    if (wordleModo !== 'diaria') return;
+    try {
+        localStorage.setItem('wordle-personajes-dia', JSON.stringify({ fecha: wordleFechaHoy(), intentos: wordleIntentos, terminado: wordleTerminado }));
+    } catch (e) {}
+}
+
+function wordleCargarLocal() {
+    try {
+        const g = JSON.parse(localStorage.getItem('wordle-personajes-dia') || 'null');
+        if (g && g.fecha === wordleFechaHoy() && Array.isArray(g.intentos)) return g;
+    } catch (e) {}
+    return null;
+}
+
+function wordleActualizarRacha(gano) {
+    try {
+        const r = JSON.parse(localStorage.getItem('wordle-personajes-racha') || '{}');
+        const hoy = wordleFechaHoy();
+        if (r.ultimaFecha === hoy) return r;
+        const ayer = new Date(Date.UTC(...hoy.split('-').map((n, i) => i === 1 ? Number(n) - 1 : Number(n))) - 86400000);
+        const ayerStr = ayer.getUTCFullYear() + '-' + String(ayer.getUTCMonth() + 1).padStart(2, '0') + '-' + String(ayer.getUTCDate()).padStart(2, '0');
+        const nueva = {
+            ultimaFecha: hoy,
+            racha: gano ? ((r.ultimaFecha === ayerStr ? (r.racha || 0) : 0) + 1) : 0,
+            jugadas: (r.jugadas || 0) + 1,
+            ganadas: (r.ganadas || 0) + (gano ? 1 : 0)
+        };
+        nueva.mejor = Math.max(r.mejor || 0, nueva.racha);
+        localStorage.setItem('wordle-personajes-racha', JSON.stringify(nueva));
+        return nueva;
+    } catch (e) { return null; }
+}
+
+function wordleGuardarEstadistica(gano, nIntentos) {
+    try {
+        const ref = db.collection('estadisticas').doc('wordle-personajes');
+        const inc = firebase.firestore.FieldValue.increment;
+        const datos = { totalPartidas: inc(1), totalGanadas: inc(gano ? 1 : 0), totalIntentosGanados: inc(gano ? nIntentos : 0) };
+        ref.set(datos, { merge: true }).then(() => ref.get()).then(doc => {
+            const el = document.getElementById('wordle-promedio');
+            if (!el || !doc.exists) return;
+            const d = doc.data();
+            const prom = d.totalGanadas > 0 ? (d.totalIntentosGanados / d.totalGanadas).toFixed(1) : '-';
+            el.textContent = `📊 Entre todos los jugadores: ganan el ${Math.round(100 * d.totalGanadas / d.totalPartidas)}% de las partidas, en promedio en ${prom} intentos (${d.totalPartidas} partidas).`;
+        }).catch(() => {});
+    } catch (e) {}
+}
+
+function wordleDibujarTablero() {
+    const cont = document.getElementById('wordle-tablero');
+    if (!cont) return;
+    cont.innerHTML = '';
+    for (let f = 0; f < WORDLE_INTENTOS; f++) {
+        const fila = document.createElement('div');
+        fila.className = 'wordle-fila';
+        const intento = wordleIntentos[f];
+        const estados = intento ? wordleEvaluar(intento, wordleSecreta.palabra) : null;
+        for (let c = 0; c < WORDLE_LARGO; c++) {
+            const celda = document.createElement('div');
+            celda.className = 'wordle-celda';
+            if (intento) {
+                celda.textContent = intento[c];
+                celda.classList.add(estados[c]);
+            } else if (f === wordleIntentos.length && !wordleTerminado && wordleActual[c]) {
+                celda.textContent = wordleActual[c];
+                celda.classList.add('llena');
+            }
+            fila.appendChild(celda);
+        }
+        cont.appendChild(fila);
+    }
+}
+
+function wordleDibujarTeclado() {
+    const cont = document.getElementById('wordle-teclado');
+    if (!cont) return;
+    cont.innerHTML = '';
+    const agregarFila = (teclas) => {
+        const fila = document.createElement('div');
+        fila.className = 'wordle-fila-teclado';
+        teclas.forEach(t => {
+            const b = document.createElement('button');
+            b.className = 'wordle-tecla';
+            b.type = 'button';
+            if (t === 'enter') { b.textContent = 'Enviar'; b.classList.add('ancha'); }
+            else if (t === 'borrar') { b.textContent = '⌫'; b.classList.add('ancha'); }
+            else { b.textContent = t.toUpperCase(); if (wordleEstadosTeclas[t]) b.classList.add(wordleEstadosTeclas[t]); }
+            b.addEventListener('click', () => wordleTecla(t));
+            fila.appendChild(b);
+        });
+        cont.appendChild(fila);
+    };
+    agregarFila(WORDLE_FILAS_TECLADO[0].split(''));
+    agregarFila(WORDLE_FILAS_TECLADO[1].split(''));
+    agregarFila(['enter', ...WORDLE_FILAS_TECLADO[2].split(''), 'borrar']);
+}
+
+function wordleRecalcularTeclas() {
+    wordleEstadosTeclas = {};
+    const peso = { ausente: 1, presente: 2, correcta: 3 };
+    wordleIntentos.forEach(intento => {
+        const est = wordleEvaluar(intento, wordleSecreta.palabra);
+        intento.split('').forEach((l, i) => {
+            if (!wordleEstadosTeclas[l] || peso[est[i]] > peso[wordleEstadosTeclas[l]]) wordleEstadosTeclas[l] = est[i];
+        });
+    });
+}
+
+function wordleMensaje(texto, tipo) {
+    const m = document.getElementById('wordle-mensaje');
+    if (!m) return;
+    m.textContent = texto || '';
+    m.className = 'mensaje-elenco' + (tipo ? ' ' + tipo : '');
+}
+
+function wordleTextoCompartir() {
+    const emoji = { correcta: '🟩', presente: '🟨', ausente: '⬛' };
+    const gano = wordleIntentos[wordleIntentos.length - 1] === wordleSecreta.palabra;
+    const titulo = wordleModo === 'diaria' ? 'Wordle de Personajes ' + wordleFechaHoy() : 'Wordle de Personajes (al azar)';
+    const lineas = wordleIntentos.map(i => wordleEvaluar(i, wordleSecreta.palabra).map(e => emoji[e]).join(''));
+    return `${titulo} ${gano ? wordleIntentos.length : 'X'}/${WORDLE_INTENTOS}\n\n${lineas.join('\n')}`;
+}
+
+function wordleMostrarFinal(gano) {
+    const fin = document.getElementById('wordle-final');
+    if (!fin) return;
+    fin.classList.remove('oculto');
+    const racha = JSON.parse(localStorage.getItem('wordle-personajes-racha') || 'null');
+    const rachaTxt = (wordleModo === 'diaria' && racha) ? `<p>🔥 Racha: ${racha.racha} · Mejor: ${racha.mejor} · Ganadas: ${racha.ganadas}/${racha.jugadas}</p>` : '';
+    fin.querySelector('#wordle-final-texto').innerHTML = `
+        <h3>${gano ? '¡Lo adivinaste!' : 'Se acabaron los intentos'}</h3>
+        <p>Era <strong>${wordleSecreta.palabra.toUpperCase()}</strong> — ${wordleSecreta.nombre} (${wordleSecreta.universo}).</p>
+        ${rachaTxt}`;
+    const btnAzar = document.getElementById('wordle-btn-azar');
+    if (btnAzar) btnAzar.classList.remove('oculto');
+}
+
+function wordleTerminar(gano) {
+    wordleTerminado = true;
+    wordleGuardarLocal();
+    if (wordleModo === 'diaria') {
+        wordleActualizarRacha(gano);
+        wordleGuardarEstadistica(gano, wordleIntentos.length);
+    }
+    wordleMensaje(gano ? '🎉 ¡Correcto!' : `La palabra era ${wordleSecreta.palabra.toUpperCase()}.`, gano ? 'victoria' : 'error');
+    wordleMostrarFinal(gano);
+    wordleDibujarTablero();
+}
+
+function wordleEnviar() {
+    if (wordleTerminado) return;
+    if (wordleActual.length < WORDLE_LARGO) {
+        wordleMensaje('Faltan letras: son 5.', 'error');
+        return;
+    }
+    wordleIntentos.push(wordleActual);
+    const intento = wordleActual;
+    wordleActual = '';
+    wordleRecalcularTeclas();
+    wordleDibujarTablero();
+    wordleDibujarTeclado();
+    wordleMensaje('');
+    wordleGuardarLocal();
+    if (intento === wordleSecreta.palabra) wordleTerminar(true);
+    else if (wordleIntentos.length >= WORDLE_INTENTOS) wordleTerminar(false);
+}
+
+function wordleTecla(t) {
+    if (wordleTerminado) return;
+    if (t === 'enter') return wordleEnviar();
+    if (t === 'borrar') { wordleActual = wordleActual.slice(0, -1); wordleMensaje(''); }
+    else if (/^[a-z]$/.test(t) && wordleActual.length < WORDLE_LARGO) wordleActual += t;
+    wordleDibujarTablero();
+}
+
+function wordleIniciar(modo) {
+    wordleModo = modo;
+    wordleActual = '';
+    wordleIntentos = [];
+    wordleTerminado = false;
+    document.getElementById('wordle-final').classList.add('oculto');
+    document.getElementById('wordle-btn-azar').classList.add('oculto');
+    const titulo = document.getElementById('wordle-subtitulo');
+    if (modo === 'diaria') {
+        wordleSecreta = wordlePalabraDelDia();
+        const guardado = wordleCargarLocal();
+        if (guardado) { wordleIntentos = guardado.intentos; wordleTerminado = guardado.terminado; }
+        if (titulo) titulo.textContent = 'Palabra del día: 5 letras, 6 intentos. Es la misma para todos.';
+    } else {
+        wordleSecreta = WORDLE_PALABRAS[Math.floor(Math.random() * WORDLE_PALABRAS.length)];
+        if (titulo) titulo.textContent = 'Modo al azar: no cuenta para la racha ni para las estadísticas.';
+    }
+    wordleRecalcularTeclas();
+    wordleDibujarTablero();
+    wordleDibujarTeclado();
+    wordleMensaje('');
+    if (wordleTerminado) {
+        const gano = wordleIntentos[wordleIntentos.length - 1] === wordleSecreta.palabra;
+        wordleMensaje(gano ? '🎉 Ya resolviste la de hoy.' : `Hoy no salió. La palabra era ${wordleSecreta.palabra.toUpperCase()}.`, gano ? 'victoria' : 'error');
+        wordleMostrarFinal(gano);
+    }
+}
+
+document.addEventListener('keydown', (e) => {
+    const sec = document.getElementById('seccion-wordle');
+    if (!sec || sec.classList.contains('oculto') || e.ctrlKey || e.metaKey || e.altKey) return;
+    if (e.key === 'Enter') { e.preventDefault(); wordleTecla('enter'); }
+    else if (e.key === 'Backspace') { e.preventDefault(); wordleTecla('borrar'); }
+    else {
+        const l = e.key.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        if (/^[a-z]$/.test(l)) wordleTecla(l);
+    }
+});
+
+const tarjetaWordle = document.getElementById('tarjeta-wordle');
+if (tarjetaWordle) {
+    tarjetaWordle.addEventListener('click', () => {
+        wordleIniciar('diaria');
+        cambiarSeccion(document.getElementById('seccion-wordle'));
+    });
+}
+const btnVolverJuegosDesdeWordle = document.getElementById('btn-volver-juegos-desde-wordle');
+if (btnVolverJuegosDesdeWordle) {
+    btnVolverJuegosDesdeWordle.addEventListener('click', () => cambiarSeccion(document.getElementById('seccion-juegos')));
+}
+const wordleBtnAzar = document.getElementById('wordle-btn-azar');
+if (wordleBtnAzar) wordleBtnAzar.addEventListener('click', () => wordleIniciar('azar'));
+const wordleBtnCompartir = document.getElementById('wordle-btn-compartir');
+if (wordleBtnCompartir) {
+    wordleBtnCompartir.addEventListener('click', () => {
+        const texto = wordleTextoCompartir();
+        const aviso = () => { wordleBtnCompartir.textContent = '¡Copiado!'; setTimeout(() => { wordleBtnCompartir.textContent = 'Copiar resultado'; }, 1800); };
+        if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(texto).then(aviso).catch(() => {});
+        else aviso();
+    });
+}
+
 const tarjetaGrillas = document.getElementById('tarjeta-grillas');
 if (tarjetaGrillas) {
     tarjetaGrillas.addEventListener('click', () => {

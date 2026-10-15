@@ -14448,11 +14448,34 @@
                 <h3>Nombralos</h3>
                 <p>Tenés 60 segundos. Nombrá a todos los personajes que puedas.</p>
             </div>
+            <div class="tarjeta-juego" id="tarjeta-wordle">
+                <div class="icono-juego">🔤</div>
+                <h3>Wordle de Personajes</h3>
+                <p>Una palabra por día: adiviná el nombre o alias de 5 letras de un personaje de DC o Marvel.</p>
+            </div>
             <div class="tarjeta-juego" id="tarjeta-grillas">
                 <div class="icono-juego">🔲</div>
                 <h3>Grillas</h3>
                 <p>Cruzá una fila con una columna y nombrá a un actor que cumpla las dos condiciones.</p>
             </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: JUEGO - WORDLE DE PERSONAJES -->
+    <section id="seccion-wordle" class="oculto">
+        <button class="btn-volver" id="btn-volver-juegos-desde-wordle">← Volver a Juegos</button>
+        <h2>Wordle de Personajes 🔤</h2>
+        <p class="subtitulo-juegos" id="wordle-subtitulo"></p>
+        <div id="wordle-tablero" class="wordle-tablero"></div>
+        <div id="wordle-mensaje" class="mensaje-elenco"></div>
+        <div id="wordle-teclado" class="wordle-teclado"></div>
+        <div id="wordle-final" class="wordle-final oculto">
+            <div id="wordle-final-texto"></div>
+            <div class="wordle-acciones">
+                <button class="btn-modal" id="wordle-btn-compartir" type="button">Copiar resultado</button>
+                <button class="btn-modal oculto" id="wordle-btn-azar" type="button">Jugar una al azar</button>
+            </div>
+            <p id="wordle-promedio" class="subtitulo-juegos"></p>
         </div>
     </section>
 

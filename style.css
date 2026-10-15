@@ -1904,3 +1904,22 @@ h2 {
 .miro-grande small { font-size:12px; color:#aaa; }
 .miro-grande:hover { transform:translateY(-4px); background:#2a3040; }
 @media (max-width:600px) { .miro-grande { width:100%; max-width:320px; height:130px; font-size:40px; } }
+
+/* ===== WORDLE DE PERSONAJES ===== */
+.wordle-tablero { display: flex; flex-direction: column; gap: 6px; align-items: center; margin: 18px auto 10px; }
+.wordle-fila { display: flex; gap: 6px; }
+.wordle-celda { width: 54px; height: 54px; border: 2px solid #444; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; font-weight: bold; text-transform: uppercase; color: #fff; background: #1a1a1a; border-radius: 4px; }
+.wordle-celda.llena { border-color: #888; }
+.wordle-celda.correcta { background: #2e7d32; border-color: #2e7d32; }
+.wordle-celda.presente { background: #b08900; border-color: #b08900; }
+.wordle-celda.ausente { background: #333; border-color: #333; color: #aaa; }
+.wordle-teclado { display: flex; flex-direction: column; gap: 6px; align-items: center; margin: 14px auto; max-width: 520px; }
+.wordle-fila-teclado { display: flex; gap: 5px; justify-content: center; width: 100%; }
+.wordle-tecla { flex: 1 1 0; max-width: 44px; min-width: 0; height: 52px; border: none; border-radius: 4px; background: #555; color: #fff; font-weight: bold; font-size: 0.95rem; cursor: pointer; padding: 0; }
+.wordle-tecla.ancha { max-width: 70px; flex: 1.5 1 0; font-size: 0.8rem; }
+.wordle-tecla.correcta { background: #2e7d32; }
+.wordle-tecla.presente { background: #b08900; }
+.wordle-tecla.ausente { background: #222; color: #777; }
+.wordle-final { text-align: center; margin: 14px auto; max-width: 520px; }
+.wordle-acciones { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 10px; }
+@media (max-width: 480px) { .wordle-celda { width: 46px; height: 46px; font-size: 1.35rem; } .wordle-tecla { height: 48px; } }
