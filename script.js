@@ -26750,6 +26750,7 @@ const AH_RE = /^[a-zñ]$/;
 let ahAnimar = 0;            // número de la parte del muñeco que hay que dibujar con el lápiz
 let ahAnimId = 0;
 let ahIntroActivo = false;
+let ahNuevaLetra = '';       // letra acertada en la última jugada: se escribe con el lápiz
 let ahNivel = (function () { try { const n = localStorage.getItem('ahorcado-nivel'); return ['facil', 'medio', 'dificil'].includes(n) ? n : 'medio'; } catch (e) { return 'medio'; } })();
 let ahModo = 'diaria';
 let ahItem = null;           // { nombre, palabra, universo, equipo }
@@ -26939,6 +26940,7 @@ function ahDibujar() {
     const rev = ahReveladas();
     const fin = ahTerminado;
     palabra.innerHTML = '';
+    let kEscribir = 0;
     ahItem.nombre.split(' ').forEach(pal => {
         const g = document.createElement('div');
         g.className = 'ah-grupo';
@@ -26947,12 +26949,29 @@ function ahDibujar() {
             const cel = document.createElement('div');
             cel.className = 'ah-celda';
             if (!AH_RE.test(n)) { cel.textContent = c; cel.classList.add('signo'); }
-            else if (rev.has(n)) { cel.textContent = c.toUpperCase(); cel.classList.add('visible'); }
+            else if (rev.has(n)) {
+                const t = document.createElement('span');
+                t.className = 'ah-letra-txt';
+                t.textContent = c.toUpperCase();
+                cel.appendChild(t);
+                cel.classList.add('visible');
+                if (n === ahNuevaLetra && !ahMovimientoReducido()) {
+                    const d = (kEscribir * 0.5).toFixed(2) + 's';
+                    kEscribir++;
+                    cel.classList.add('escribiendo');
+                    cel.style.setProperty('--d', d);
+                    const lp = document.createElement('span');
+                    lp.className = 'ah-lapiz-mini';
+                    lp.innerHTML = '<svg viewBox="0 -3.5 47 7" width="30" height="8" aria-hidden="true"><polygon points="0,0 9,-3.5 9,3.5" fill="#e8c999"/><polygon points="0,0 3.4,-1.35 3.4,1.35" fill="#333"/><rect x="9" y="-3.5" width="29" height="7" fill="#f4c20d"/><rect x="38" y="-3.5" width="4" height="7" fill="#aaa"/><rect x="42" y="-3.5" width="5" height="7" rx="1.5" fill="#e57399"/></svg>';
+                    cel.appendChild(lp);
+                }
+            }
             else if (fin) { cel.textContent = c.toUpperCase(); cel.classList.add('perdida'); }
             g.appendChild(cel);
         });
         palabra.appendChild(g);
     });
+    ahNuevaLetra = '';
     ahDibujarMuneco();
     const vidas = document.getElementById('ah-vidas');
     if (vidas) vidas.textContent = '❤️'.repeat(Math.max(0, AH_MAX_ERRORES - ahErrores)) + '🖤'.repeat(Math.min(AH_MAX_ERRORES, ahErrores));
@@ -26988,7 +27007,7 @@ function ahJugar(l) {
     if (ahTerminado || !ahItem || !AH_RE.test(l)) return;
     if (ahLetras.has(l) || l === ahInicial()) return;
     ahLetras.add(l);
-    if (!ahLetrasDe(ahItem.nombre).includes(l)) { ahErrores++; ahAnimar = ahErrores; }
+    if (!ahLetrasDe(ahItem.nombre).includes(l)) { ahErrores++; ahAnimar = ahErrores; } else ahNuevaLetra = l;
     if (ahCompleto()) return ahTerminar(true);
     if (ahErrores >= AH_MAX_ERRORES) return ahTerminar(false);
     ahMensaje('');

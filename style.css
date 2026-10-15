@@ -1976,3 +1976,18 @@ h2 {
 .ah-celda.perdida { color: #e57373; border-bottom-color: #b71c1c; }
 .ah-nivel.activo { outline: 2px solid currentColor; font-weight: bold; }
 @media (max-width: 480px) { .ah-celda { width: 24px; height: 34px; font-size: 1.2rem; } .ah-grupo { gap: 3px; } }
+
+.ah-celda { position: relative; }
+.ah-celda.escribiendo .ah-letra-txt { display: inline-block; animation: ahEscribir 0.5s linear var(--d, 0s) both; }
+.ah-lapiz-mini { position: absolute; left: 0; bottom: 8px; width: 30px; height: 8px; transform-origin: 0 50%; pointer-events: none; opacity: 0; animation: ahLapizMini 0.5s ease-in-out var(--d, 0s) both; z-index: 2; }
+.ah-lapiz-mini svg { display: block; }
+@keyframes ahEscribir { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }
+@keyframes ahLapizMini {
+    0% { opacity: 0; transform: translate(0, 0) rotate(-45deg); }
+    10% { opacity: 1; }
+    30% { transform: translate(6px, -12px) rotate(-45deg); }
+    50% { transform: translate(10px, -2px) rotate(-45deg); }
+    70% { transform: translate(16px, -14px) rotate(-45deg); }
+    90% { opacity: 1; transform: translate(22px, -4px) rotate(-45deg); }
+    100% { opacity: 0; transform: translate(24px, -4px) rotate(-45deg); }
+}
