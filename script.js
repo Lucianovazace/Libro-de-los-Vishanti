@@ -25658,7 +25658,114 @@ const WORDLE_PALABRAS = [
     { palabra: "howard", nombre: "Howard el Pato", universo: "Marvel", equipo: "Guardianes de la Galaxia", tipo: "Aliado" },
     { palabra: "nikki", nombre: "Nikki", universo: "Marvel", equipo: "Guardianes de la Galaxia", tipo: "Aliado" },
     { palabra: "bobbi", nombre: "Bobbi Morse (Mockingbird)", universo: "Marvel", equipo: "Vengadores", tipo: "Héroe" },
-    { palabra: "aaron", nombre: "Aaron Stack (Machine Man)", universo: "Marvel", equipo: "Vengadores", tipo: "Héroe" }
+    { palabra: "aaron", nombre: "Aaron Stack (Machine Man)", universo: "Marvel", equipo: "Vengadores", tipo: "Héroe" },
+    { palabra: "kenobi", nombre: "Obi-Wan Kenobi", universo: "Star Wars", equipo: "Jedi", tipo: "Héroe" },
+    { palabra: "windu", nombre: "Mace Windu", universo: "Star Wars", equipo: "Jedi", tipo: "Héroe" },
+    { palabra: "anakin", nombre: "Anakin Skywalker (Darth Vader)", universo: "Star Wars", equipo: "Jedi", tipo: "Héroe" },
+    { palabra: "ahsoka", nombre: "Ahsoka Tano", universo: "Star Wars", equipo: "Jedi", tipo: "Héroe" },
+    { palabra: "quigon", nombre: "Qui-Gon Jinn", universo: "Star Wars", equipo: "Jedi", tipo: "Héroe" },
+    { palabra: "fisto", nombre: "Kit Fisto", universo: "Star Wars", equipo: "Jedi", tipo: "Héroe" },
+    { palabra: "aayla", nombre: "Aayla Secura", universo: "Star Wars", equipo: "Jedi", tipo: "Héroe" },
+    { palabra: "mundi", nombre: "Ki-Adi-Mundi", universo: "Star Wars", equipo: "Jedi", tipo: "Héroe" },
+    { palabra: "shaak", nombre: "Shaak Ti", universo: "Star Wars", equipo: "Jedi", tipo: "Héroe" },
+    { palabra: "yaddle", nombre: "Yaddle", universo: "Star Wars", equipo: "Jedi", tipo: "Héroe" },
+    { palabra: "bendu", nombre: "Bendu", universo: "Star Wars", equipo: "Jedi", tipo: "Aliado" },
+    { palabra: "vader", nombre: "Darth Vader (Anakin Skywalker)", universo: "Star Wars", equipo: "Sith", tipo: "Villano" },
+    { palabra: "dooku", nombre: "Conde Dooku (Darth Tyranus)", universo: "Star Wars", equipo: "Sith", tipo: "Villano" },
+    { palabra: "sheev", nombre: "Darth Sidious (Sheev Palpatine)", universo: "Star Wars", equipo: "Sith", tipo: "Villano" },
+    { palabra: "malak", nombre: "Darth Malak", universo: "Star Wars", equipo: "Sith", tipo: "Villano" },
+    { palabra: "asajj", nombre: "Asajj Ventress", universo: "Star Wars", equipo: "Sith", tipo: "Villano" },
+    { palabra: "savage", nombre: "Savage Opress", universo: "Star Wars", equipo: "Sith", tipo: "Villano" },
+    { palabra: "tarkin", nombre: "Gran Moff Tarkin", universo: "Star Wars", equipo: "Imperio Galáctico", tipo: "Villano" },
+    { palabra: "thrawn", nombre: "Gran Almirante Thrawn", universo: "Star Wars", equipo: "Imperio Galáctico", tipo: "Villano" },
+    { palabra: "veers", nombre: "General Veers", universo: "Star Wars", equipo: "Imperio Galáctico", tipo: "Villano" },
+    { palabra: "piett", nombre: "Almirante Piett", universo: "Star Wars", equipo: "Imperio Galáctico", tipo: "Villano" },
+    { palabra: "ozzel", nombre: "Almirante Ozzel", universo: "Star Wars", equipo: "Imperio Galáctico", tipo: "Villano" },
+    { palabra: "needa", nombre: "Capitán Needa", universo: "Star Wars", equipo: "Imperio Galáctico", tipo: "Villano" },
+    { palabra: "motti", nombre: "Almirante Motti", universo: "Star Wars", equipo: "Imperio Galáctico", tipo: "Villano" },
+    { palabra: "kallus", nombre: "Agente Kallus", universo: "Star Wars", equipo: "Imperio Galáctico", tipo: "Antihéroe" },
+    { palabra: "dedra", nombre: "Dedra Meero", universo: "Star Wars", equipo: "Imperio Galáctico", tipo: "Villano" },
+    { palabra: "syril", nombre: "Syril Karn", universo: "Star Wars", equipo: "Imperio Galáctico", tipo: "Villano" },
+    { palabra: "organa", nombre: "Leia Organa", universo: "Star Wars", equipo: "Rebelión", tipo: "Héroe" },
+    { palabra: "mothma", nombre: "Mon Mothma", universo: "Star Wars", equipo: "Rebelión", tipo: "Héroe" },
+    { palabra: "ackbar", nombre: "Almirante Ackbar", universo: "Star Wars", equipo: "Rebelión", tipo: "Héroe" },
+    { palabra: "madine", nombre: "General Madine", universo: "Star Wars", equipo: "Rebelión", tipo: "Héroe" },
+    { palabra: "andor", nombre: "Cassian Andor", universo: "Star Wars", equipo: "Rebelión", tipo: "Héroe" },
+    { palabra: "bodhi", nombre: "Bodhi Rook", universo: "Star Wars", equipo: "Rebelión", tipo: "Héroe" },
+    { palabra: "wedge", nombre: "Wedge Antilles", universo: "Star Wars", equipo: "Rebelión", tipo: "Héroe" },
+    { palabra: "biggs", nombre: "Biggs Darklighter", universo: "Star Wars", equipo: "Rebelión", tipo: "Héroe" },
+    { palabra: "kanan", nombre: "Kanan Jarrus", universo: "Star Wars", equipo: "Rebelión", tipo: "Héroe" },
+    { palabra: "sabine", nombre: "Sabine Wren", universo: "Star Wars", equipo: "Rebelión", tipo: "Héroe" },
+    { palabra: "lando", nombre: "Lando Calrissian", universo: "Star Wars", equipo: "Rebelión", tipo: "Aliado" },
+    { palabra: "lobot", nombre: "Lobot", universo: "Star Wars", equipo: "Rebelión", tipo: "Aliado" },
+    { palabra: "jango", nombre: "Jango Fett", universo: "Star Wars", equipo: "Cazarrecompensas", tipo: "Villano" },
+    { palabra: "bossk", nombre: "Bossk", universo: "Star Wars", equipo: "Cazarrecompensas", tipo: "Villano" },
+    { palabra: "dengar", nombre: "Dengar", universo: "Star Wars", equipo: "Cazarrecompensas", tipo: "Villano" },
+    { palabra: "greedo", nombre: "Greedo", universo: "Star Wars", equipo: "Cazarrecompensas", tipo: "Villano" },
+    { palabra: "fennec", nombre: "Fennec Shand", universo: "Star Wars", equipo: "Cazarrecompensas", tipo: "Antihéroe" },
+    { palabra: "wesell", nombre: "Zam Wesell", universo: "Star Wars", equipo: "Cazarrecompensas", tipo: "Villano" },
+    { palabra: "aurra", nombre: "Aurra Sing", universo: "Star Wars", equipo: "Cazarrecompensas", tipo: "Villano" },
+    { palabra: "vanth", nombre: "Cobb Vanth", universo: "Star Wars", equipo: "Cazarrecompensas", tipo: "Héroe" },
+    { palabra: "djarin", nombre: "Din Djarin", universo: "Star Wars", equipo: "Mandalorianos", tipo: "Héroe" },
+    { palabra: "mando", nombre: "Mando (Din Djarin)", universo: "Star Wars", equipo: "Mandalorianos", tipo: "Héroe" },
+    { palabra: "grogu", nombre: "Grogu", universo: "Star Wars", equipo: "Mandalorianos", tipo: "Aliado" },
+    { palabra: "kryze", nombre: "Bo-Katan Kryze", universo: "Star Wars", equipo: "Mandalorianos", tipo: "Antihéroe" },
+    { palabra: "satine", nombre: "Duquesa Satine Kryze", universo: "Star Wars", equipo: "Mandalorianos", tipo: "Aliado" },
+    { palabra: "vizsla", nombre: "Pre Vizsla", universo: "Star Wars", equipo: "Mandalorianos", tipo: "Villano" },
+    { palabra: "karga", nombre: "Greef Karga", universo: "Star Wars", equipo: "Mandalorianos", tipo: "Aliado" },
+    { palabra: "kuiil", nombre: "Kuiil", universo: "Star Wars", equipo: "Mandalorianos", tipo: "Aliado" },
+    { palabra: "gunray", nombre: "Nute Gunray", universo: "Star Wars", equipo: "Separatistas", tipo: "Villano" },
+    { palabra: "poggle", nombre: "Poggle el Menor", universo: "Star Wars", equipo: "Separatistas", tipo: "Villano" },
+    { palabra: "trench", nombre: "Almirante Trench", universo: "Star Wars", equipo: "Separatistas", tipo: "Villano" },
+    { palabra: "durge", nombre: "Durge", universo: "Star Wars", equipo: "Separatistas", tipo: "Villano" },
+    { palabra: "fives", nombre: "Fives", universo: "Star Wars", equipo: "Soldados Clon", tipo: "Héroe" },
+    { palabra: "wolffe", nombre: "Comandante Wolffe", universo: "Star Wars", equipo: "Soldados Clon", tipo: "Héroe" },
+    { palabra: "waxer", nombre: "Waxer", universo: "Star Wars", equipo: "Soldados Clon", tipo: "Héroe" },
+    { palabra: "dogma", nombre: "Dogma", universo: "Star Wars", equipo: "Soldados Clon", tipo: "Villano" },
+    { palabra: "hunter", nombre: "Hunter (Bad Batch)", universo: "Star Wars", equipo: "Soldados Clon", tipo: "Héroe" },
+    { palabra: "omega", nombre: "Omega (Bad Batch)", universo: "Star Wars", equipo: "Soldados Clon", tipo: "Héroe" },
+    { palabra: "padme", nombre: "Padmé Amidala", universo: "Star Wars", equipo: "Naboo", tipo: "Héroe" },
+    { palabra: "jarjar", nombre: "Jar Jar Binks", universo: "Star Wars", equipo: "Naboo", tipo: "Aliado" },
+    { palabra: "panaka", nombre: "Capitán Panaka", universo: "Star Wars", equipo: "Naboo", tipo: "Aliado" },
+    { palabra: "typho", nombre: "Capitán Typho", universo: "Star Wars", equipo: "Naboo", tipo: "Aliado" },
+    { palabra: "bibble", nombre: "Sio Bibble", universo: "Star Wars", equipo: "Naboo", tipo: "Aliado" },
+    { palabra: "jabba", nombre: "Jabba el Hutt", universo: "Star Wars", equipo: "Crimen Organizado", tipo: "Villano" },
+    { palabra: "dryden", nombre: "Dryden Vos", universo: "Star Wars", equipo: "Crimen Organizado", tipo: "Villano" },
+    { palabra: "zorba", nombre: "Zorba el Hutt", universo: "Star Wars", equipo: "Crimen Organizado", tipo: "Villano" },
+    { palabra: "rotta", nombre: "Rotta el Hutt", universo: "Star Wars", equipo: "Crimen Organizado", tipo: "Aliado" },
+    { palabra: "hondo", nombre: "Hondo Ohnaka", universo: "Star Wars", equipo: "Crimen Organizado", tipo: "Antihéroe" },
+    { palabra: "watto", nombre: "Watto", universo: "Star Wars", equipo: "Crimen Organizado", tipo: "Villano" },
+    { palabra: "plutt", nombre: "Unkar Plutt", universo: "Star Wars", equipo: "Crimen Organizado", tipo: "Villano" },
+    { palabra: "tobias", nombre: "Tobias Beckett", universo: "Star Wars", equipo: "Crimen Organizado", tipo: "Antihéroe" },
+    { palabra: "artoo", nombre: "R2-D2", universo: "Star Wars", equipo: "Droides", tipo: "Aliado" },
+    { palabra: "kaytoo", nombre: "K-2SO", universo: "Star Wars", equipo: "Droides", tipo: "Aliado" },
+    { palabra: "huyang", nombre: "Huyang", universo: "Star Wars", equipo: "Droides", tipo: "Aliado" },
+    { palabra: "chewie", nombre: "Chewbacca", universo: "Star Wars", equipo: "Wookiees y Ewoks", tipo: "Aliado" },
+    { palabra: "wicket", nombre: "Wicket W. Warrick", universo: "Star Wars", equipo: "Wookiees y Ewoks", tipo: "Aliado" },
+    { palabra: "logray", nombre: "Logray", universo: "Star Wars", equipo: "Wookiees y Ewoks", tipo: "Aliado" },
+    { palabra: "paploo", nombre: "Paploo", universo: "Star Wars", equipo: "Wookiees y Ewoks", tipo: "Aliado" },
+    { palabra: "teebo", nombre: "Teebo", universo: "Star Wars", equipo: "Wookiees y Ewoks", tipo: "Aliado" },
+    { palabra: "snoke", nombre: "Líder Supremo Snoke", universo: "Star Wars", equipo: "Primera Orden", tipo: "Villano" },
+    { palabra: "phasma", nombre: "Capitana Phasma", universo: "Star Wars", equipo: "Primera Orden", tipo: "Villano" },
+    { palabra: "pryde", nombre: "General Pryde", universo: "Star Wars", equipo: "Primera Orden", tipo: "Villano" },
+    { palabra: "holdo", nombre: "Vicealmirante Holdo", universo: "Star Wars", equipo: "Resistencia", tipo: "Héroe" },
+    { palabra: "connix", nombre: "Kaydel Connix", universo: "Star Wars", equipo: "Resistencia", tipo: "Héroe" },
+    { palabra: "ematt", nombre: "Coronel Ematt", universo: "Star Wars", equipo: "Resistencia", tipo: "Héroe" },
+    { palabra: "tallie", nombre: "Tallie Lintra", universo: "Star Wars", equipo: "Resistencia", tipo: "Héroe" },
+    { palabra: "tekka", nombre: "Lor San Tekka", universo: "Star Wars", equipo: "Resistencia", tipo: "Aliado" },
+    { palabra: "revan", nombre: "Darth Revan", universo: "Star Wars", equipo: "Antigua República", tipo: "Antihéroe" },
+    { palabra: "carth", nombre: "Carth Onasi", universo: "Star Wars", equipo: "Antigua República", tipo: "Héroe" },
+    { palabra: "jolee", nombre: "Jolee Bindo", universo: "Star Wars", equipo: "Antigua República", tipo: "Héroe" },
+    { palabra: "juhani", nombre: "Juhani", universo: "Star Wars", equipo: "Antigua República", tipo: "Héroe" },
+    { palabra: "visas", nombre: "Visas Marr", universo: "Star Wars", equipo: "Antigua República", tipo: "Héroe" },
+    { palabra: "kreia", nombre: "Kreia", universo: "Star Wars", equipo: "Antigua República", tipo: "Antihéroe" },
+    { palabra: "atton", nombre: "Atton Rand", universo: "Star Wars", equipo: "Antigua República", tipo: "Antihéroe" },
+    { palabra: "kestis", nombre: "Cal Kestis", universo: "Star Wars", equipo: "Jedi Fallen Order", tipo: "Héroe" },
+    { palabra: "merrin", nombre: "Merrin", universo: "Star Wars", equipo: "Jedi Fallen Order", tipo: "Héroe" },
+    { palabra: "greez", nombre: "Greez Dritus", universo: "Star Wars", equipo: "Jedi Fallen Order", tipo: "Aliado" },
+    { palabra: "trilla", nombre: "Trilla Suduri (Segunda Hermana)", universo: "Star Wars", equipo: "Jedi Fallen Order", tipo: "Villano" },
+    { palabra: "baylan", nombre: "Baylan Skoll", universo: "Star Wars", equipo: "Serie Ahsoka", tipo: "Antihéroe" },
+    { palabra: "marrok", nombre: "Marrok", universo: "Star Wars", equipo: "Serie Ahsoka", tipo: "Villano" },
 ];
 // Imágenes de personajes. La clave es el personaje; WORDLE_IMAGEN_DE mapea cada palabra del juego a su personaje.
 // Si una palabra no está acá, se busca por alias en los juegos Nombralos (Linternas, Batifamilia).
@@ -25697,8 +25804,8 @@ function imagenDePersonaje(palabra) {
 }
 
 // Dificultad: FÁCIL = los más famosos, DIFÍCIL = los menos conocidos (asignado por Claude, se puede ajustar), MEDIO = el resto.
-const WORDLE_FACIL = new Set(["alfred", "amora", "angel", "angela", "antman", "arana", "arrow", "azrael", "balder", "banner", "barnes", "barry", "barton", "batman", "batroc", "beast", "blade", "brock", "bruce", "bucky", "cable", "carol", "carter", "cassie", "castle", "challa", "clark", "clint", "crane", "cyborg", "diana", "dillon", "dinah", "donna", "drake", "falcon", "fenris", "flash", "foster", "freeze", "friday", "gamora", "goblin", "gordon", "gorgon", "grimm", "grodd", "groot", "hades", "hammer", "happy", "harley", "havok", "hogun", "hulka", "hydra", "ikaris", "isley", "jackal", "janet", "jarvis", "jason", "johnny", "joker", "jonah", "kaine", "kamala", "kitty", "korvac", "kraven", "laufey", "laura", "lizard", "logan", "lucas", "luthor", "magik", "mantis", "maria", "medusa", "miles", "misty", "modok", "mongul", "mordo", "namor", "nomad", "okoye", "olsen", "oracle", "orion", "osborn", "pepper", "peter", "pietro", "porker", "potts", "quake", "quasar", "queen", "quill", "quinn", "raven", "rescue", "rhino", "rhodes", "rhodey", "rider", "robin", "rocket", "rogers", "rogue", "ronan", "rumlow", "scott", "selina", "sentry", "shang", "shazam", "shuri", "skull", "skurge", "slade", "spider", "stane", "stark", "steel", "steve", "storm", "surfer", "surtur", "swamp", "talia", "thanos", "thing", "tigra", "toxin", "triton", "venom", "vermin", "victor", "viper", "vision", "vixen", "waller", "wally", "wanda", "wiccan", "widow", "wilson", "winter", "wizard", "krypto", "damian", "jordan", "kovacs", "oswald", "billy", "manta", "ocean", "thawne", "trigon", "lucius", "vicki", "terra", "conner", "dream", "death", "veidt", "grundy", "chloe", "anarky", "apollo", "hermes", "kendra", "palmer", "trevor", "jonzz", "merlin", "lawton", "diablo", "shark", "rayner", "sivana", "xavier", "iceman", "gambit", "harry", "blaze", "domino", "knull", "selene", "legion", "betsy", "sauron", "stryfe", "madrox", "howard", "pixie", "marrow", "leech", "belova", "karla"]);
-const WORDLE_DIFICIL = new Set(["relic", "abyss", "adder", "agger", "ahura", "albert", "alecto", "aleta", "algrim", "alura", "amber", "amiko", "angmo", "aquon", "arkin", "ayala", "basil", "bernie", "brett", "caiera", "cathy", "chondu", "chung", "clash", "crang", "curse", "daemon", "dargo", "darla", "davos", "debra", "deeds", "deidre", "dekker", "demara", "desak", "devoux", "devoz", "dinesh", "dollar", "dunphy", "eisen", "eldrac", "elijah", "elsie", "ferro", "flint", "freyja", "frost", "gazer", "gentry", "gibney", "gnucci", "gorath", "greer", "grotto", "hannu", "hermod", "hoder", "hudson", "ithan", "jolena", "joseph", "juarez", "justin", "kaplan", "katma", "kelda", "koenig", "krylov", "kudzu", "kurse", "laira", "lasher", "lazaer", "leland", "lohmer", "lotus", "lucca", "lulumu", "lyons", "macha", "madcap", "madman", "magni", "mahkwa", "major", "malik", "mallen", "maxam", "maxon", "mciver", "menace", "mendel", "metron", "mogul", "mosaic", "nadia", "nagan", "native", "nimue", "nobili", "ogord", "payne", "phage", "pierce", "powell", "pratt", "quire", "rachel", "rages", "randac", "razer", "reader", "rikki", "romeo", "roxxon", "saxon", "scurry", "seeker", "shado", "sharon", "shuma", "skagg", "slyde", "sodam", "solem", "spirit", "stakar", "sterns", "stryke", "sunset", "tania", "teddy", "thorne", "torres", "tucker", "turtle", "twain", "tyger", "utgard", "uumaru", "vance", "vapor", "vaughn", "vector", "vidar", "vortex", "wallow", "wheel", "willie", "yalan", "zander", "zaran", "zarrko", "zyozi", "capers", "sunen", "kronos", "zuras", "sawyer", "zorel", "renee", "julie", "maroni", "sionis", "mardon", "emiko", "salaak", "arisia", "bleez", "krona", "oberon", "phobos", "deimos", "mervyn", "hollis", "pedro", "tawky", "larry", "rouge", "dodds", "knight", "jakeem", "damage", "pieter", "ranzz", "tyroc", "bibbo", "mercy", "drury", "maxie", "harper", "psimon", "lilith", "eddie", "skeets", "isabel", "siren", "catman", "zucco", "hestia", "hecate", "arella", "chimp", "occult", "bufkin", "prince", "beauty", "maxine", "osiris", "bekka", "vykin", "takion", "lonar", "heggra", "hiroim", "xemnu", "wyatt", "chance", "topaz", "byrrah", "lopez", "genis", "sunder", "mimic", "nikki", "aaron", "static", "xombi"]);
+const WORDLE_FACIL = new Set(["alfred", "amora", "angel", "angela", "antman", "arana", "arrow", "azrael", "balder", "banner", "barnes", "barry", "barton", "batman", "batroc", "beast", "blade", "brock", "bruce", "bucky", "cable", "carol", "carter", "cassie", "castle", "challa", "clark", "clint", "crane", "cyborg", "diana", "dillon", "dinah", "donna", "drake", "falcon", "fenris", "flash", "foster", "freeze", "friday", "gamora", "goblin", "gordon", "gorgon", "grimm", "grodd", "groot", "hades", "hammer", "happy", "harley", "havok", "hogun", "hulka", "hydra", "ikaris", "isley", "jackal", "janet", "jarvis", "jason", "johnny", "joker", "jonah", "kaine", "kamala", "kitty", "korvac", "kraven", "laufey", "laura", "lizard", "logan", "lucas", "luthor", "magik", "mantis", "maria", "medusa", "miles", "misty", "modok", "mongul", "mordo", "namor", "nomad", "okoye", "olsen", "oracle", "orion", "osborn", "pepper", "peter", "pietro", "porker", "potts", "quake", "quasar", "queen", "quill", "quinn", "raven", "rescue", "rhino", "rhodes", "rhodey", "rider", "robin", "rocket", "rogers", "rogue", "ronan", "rumlow", "scott", "selina", "sentry", "shang", "shazam", "shuri", "skull", "skurge", "slade", "spider", "stane", "stark", "steel", "steve", "storm", "surfer", "surtur", "swamp", "talia", "thanos", "thing", "tigra", "toxin", "triton", "venom", "vermin", "victor", "viper", "vision", "vixen", "waller", "wally", "wanda", "wiccan", "widow", "wilson", "winter", "wizard", "krypto", "damian", "jordan", "kovacs", "oswald", "billy", "manta", "ocean", "thawne", "trigon", "lucius", "vicki", "terra", "conner", "dream", "death", "veidt", "grundy", "chloe", "anarky", "apollo", "hermes", "kendra", "palmer", "trevor", "jonzz", "merlin", "lawton", "diablo", "shark", "rayner", "sivana", "xavier", "iceman", "gambit", "harry", "blaze", "domino", "knull", "selene", "legion", "betsy", "sauron", "stryfe", "madrox", "howard", "pixie", "marrow", "leech", "belova", "karla", "kenobi", "windu", "anakin", "ahsoka", "quigon", "vader", "dooku", "tarkin", "thrawn", "organa", "ackbar", "wedge", "lando", "jango", "bossk", "greedo", "djarin", "mando", "grogu", "padme", "jarjar", "jabba", "artoo", "chewie"]);
+const WORDLE_DIFICIL = new Set(["relic", "abyss", "adder", "agger", "ahura", "albert", "alecto", "aleta", "algrim", "alura", "amber", "amiko", "angmo", "aquon", "arkin", "ayala", "basil", "bernie", "brett", "caiera", "cathy", "chondu", "chung", "clash", "crang", "curse", "daemon", "dargo", "darla", "davos", "debra", "deeds", "deidre", "dekker", "demara", "desak", "devoux", "devoz", "dinesh", "dollar", "dunphy", "eisen", "eldrac", "elijah", "elsie", "ferro", "flint", "freyja", "frost", "gazer", "gentry", "gibney", "gnucci", "gorath", "greer", "grotto", "hannu", "hermod", "hoder", "hudson", "ithan", "jolena", "joseph", "juarez", "justin", "kaplan", "katma", "kelda", "koenig", "krylov", "kudzu", "kurse", "laira", "lasher", "lazaer", "leland", "lohmer", "lotus", "lucca", "lulumu", "lyons", "macha", "madcap", "madman", "magni", "mahkwa", "major", "malik", "mallen", "maxam", "maxon", "mciver", "menace", "mendel", "metron", "mogul", "mosaic", "nadia", "nagan", "native", "nimue", "nobili", "ogord", "payne", "phage", "pierce", "powell", "pratt", "quire", "rachel", "rages", "randac", "razer", "reader", "rikki", "romeo", "roxxon", "saxon", "scurry", "seeker", "shado", "sharon", "shuma", "skagg", "slyde", "sodam", "solem", "spirit", "stakar", "sterns", "stryke", "sunset", "tania", "teddy", "thorne", "torres", "tucker", "turtle", "twain", "tyger", "utgard", "uumaru", "vance", "vapor", "vaughn", "vector", "vidar", "vortex", "wallow", "wheel", "willie", "yalan", "zander", "zaran", "zarrko", "zyozi", "capers", "sunen", "kronos", "zuras", "sawyer", "zorel", "renee", "julie", "maroni", "sionis", "mardon", "emiko", "salaak", "arisia", "bleez", "krona", "oberon", "phobos", "deimos", "mervyn", "hollis", "pedro", "tawky", "larry", "rouge", "dodds", "knight", "jakeem", "damage", "pieter", "ranzz", "tyroc", "bibbo", "mercy", "drury", "maxie", "harper", "psimon", "lilith", "eddie", "skeets", "isabel", "siren", "catman", "zucco", "hestia", "hecate", "arella", "chimp", "occult", "bufkin", "prince", "beauty", "maxine", "osiris", "bekka", "vykin", "takion", "lonar", "heggra", "hiroim", "xemnu", "wyatt", "chance", "topaz", "byrrah", "lopez", "genis", "sunder", "mimic", "nikki", "aaron", "static", "xombi", "mundi", "shaak", "yaddle", "bendu", "sheev", "savage", "ozzel", "needa", "motti", "dedra", "syril", "biggs", "lobot", "wesell", "aurra", "vanth", "satine", "gunray", "poggle", "trench", "durge", "waxer", "dogma", "typho", "bibble", "dryden", "zorba", "rotta", "plutt", "tobias", "huyang", "logray", "paploo", "teebo", "pryde", "connix", "ematt", "tallie", "tekka", "jolee", "juhani", "visas", "kreia", "atton", "greez", "trilla", "baylan", "marrok"]);
 function wordleNivelDe(p) { return WORDLE_FACIL.has(p.palabra) ? 'facil' : (WORDLE_DIFICIL.has(p.palabra) ? 'dificil' : 'medio'); }
 
 const WORDLE_INTENTOS = 6;
@@ -25711,6 +25818,11 @@ let wordleActual = '';
 let wordleTerminado = false;
 let wordleEstadosTeclas = {};
 let wordleNivel = (function(){ try { const n = localStorage.getItem('wordle-nivel'); return ['facil','medio','dificil'].includes(n) ? n : 'medio'; } catch (e) { return 'medio'; } })();
+// Categoría de personajes compartida por Wordle, Ahorcado y Conexiones: 'mdc' = Marvel y DC, 'sw' = Star Wars.
+let juegoCat = (function () { try { return localStorage.getItem('juego-cat') === 'sw' ? 'sw' : 'mdc'; } catch (e) { return 'mdc'; } })();
+const JUEGO_CAT_TXT = { mdc: 'Marvel y DC', sw: 'Star Wars' };
+function catSuf() { return juegoCat === 'sw' ? '-sw' : ''; }
+function catDe(p) { return (p.universo === 'Star Wars') === (juegoCat === 'sw'); }
 const WORDLE_NIVEL_TXT = { facil: 'Fácil', medio: 'Medio', dificil: 'Difícil' };
 let wordlePistasVistas = 0; // 0 = ninguna, 1 = pista de tipo y universo, 2 = también el equipo
 
@@ -25721,12 +25833,12 @@ function wordleFechaHoy() {
 
 // Orden barajado fijo (misma semilla para todos), así el día no avanza en orden alfabético ni por universo.
 function wordlePool() {
-    return WORDLE_PALABRAS.filter(p => wordleNivelDe(p) === wordleNivel);
+    return WORDLE_PALABRAS.filter(p => catDe(p) && wordleNivelDe(p) === wordleNivel);
 }
 
 function wordleOrdenFijo() {
     const idx = wordlePool().map((_, i) => i);
-    let semilla = 20261015 + ({ facil: 0, medio: 7, dificil: 13 })[wordleNivel];
+    let semilla = 20261015 + ({ facil: 0, medio: 7, dificil: 13 })[wordleNivel] + (juegoCat === 'sw' ? 5000 : 0);
     const azar = () => { semilla = (semilla * 1664525 + 1013904223) % 4294967296; return semilla / 4294967296; };
     for (let i = idx.length - 1; i > 0; i--) {
         const j = Math.floor(azar() * (i + 1));
@@ -25759,13 +25871,13 @@ function wordleEvaluar(intento, secreta) {
 function wordleGuardarLocal() {
     if (wordleModo !== 'diaria') return;
     try {
-        localStorage.setItem('wordle-personajes-dia-' + wordleNivel, JSON.stringify({ fecha: wordleFechaHoy(), palabra: wordleSecreta.palabra, intentos: wordleIntentos, terminado: wordleTerminado, pistas: wordlePistasVistas }));
+        localStorage.setItem('wordle-personajes-dia-' + wordleNivel + catSuf(), JSON.stringify({ fecha: wordleFechaHoy(), palabra: wordleSecreta.palabra, intentos: wordleIntentos, terminado: wordleTerminado, pistas: wordlePistasVistas }));
     } catch (e) {}
 }
 
 function wordleCargarLocal() {
     try {
-        const g = JSON.parse(localStorage.getItem('wordle-personajes-dia-' + wordleNivel) || 'null');
+        const g = JSON.parse(localStorage.getItem('wordle-personajes-dia-' + wordleNivel + catSuf()) || 'null');
         if (g && g.fecha === wordleFechaHoy() && Array.isArray(g.intentos)) return g;
     } catch (e) {}
     return null;
@@ -25773,7 +25885,7 @@ function wordleCargarLocal() {
 
 function wordleActualizarRacha(gano) {
     try {
-        const r = JSON.parse(localStorage.getItem('wordle-personajes-racha-' + wordleNivel) || '{}');
+        const r = JSON.parse(localStorage.getItem('wordle-personajes-racha-' + wordleNivel + catSuf()) || '{}');
         const hoy = wordleFechaHoy();
         if (r.ultimaFecha === hoy) return r;
         const ayer = new Date(Date.UTC(...hoy.split('-').map((n, i) => i === 1 ? Number(n) - 1 : Number(n))) - 86400000);
@@ -25785,14 +25897,14 @@ function wordleActualizarRacha(gano) {
             ganadas: (r.ganadas || 0) + (gano ? 1 : 0)
         };
         nueva.mejor = Math.max(r.mejor || 0, nueva.racha);
-        localStorage.setItem('wordle-personajes-racha-' + wordleNivel, JSON.stringify(nueva));
+        localStorage.setItem('wordle-personajes-racha-' + wordleNivel + catSuf(), JSON.stringify(nueva));
         return nueva;
     } catch (e) { return null; }
 }
 
 function wordleGuardarEstadistica(gano, nIntentos) {
     try {
-        const ref = db.collection('estadisticas').doc(wordleNivel === 'medio' ? 'wordle-personajes' : 'wordle-personajes-' + wordleNivel);
+        const ref = db.collection('estadisticas').doc(juegoCat === 'sw' ? 'wordle-personajes-sw-' + wordleNivel : (wordleNivel === 'medio' ? 'wordle-personajes' : 'wordle-personajes-' + wordleNivel));
         const inc = firebase.firestore.FieldValue.increment;
         const datos = { totalPartidas: inc(1), totalGanadas: inc(gano ? 1 : 0), totalIntentosGanados: inc(gano ? nIntentos : 0) };
         ref.set(datos, { merge: true }).then(() => ref.get()).then(doc => {
@@ -25909,7 +26021,7 @@ function wordleMensaje(texto, tipo) {
 function wordleTextoCompartir() {
     const emoji = { correcta: '🟩', presente: '🟨', ausente: '⬛' };
     const gano = wordleIntentos[wordleIntentos.length - 1] === wordleSecreta.palabra;
-    const titulo = wordleModo === 'diaria' ? 'Wordle de Personajes [' + WORDLE_NIVEL_TXT[wordleNivel] + '] ' + wordleFechaHoy() : 'Wordle de Personajes [' + WORDLE_NIVEL_TXT[wordleNivel] + '] (al azar)';
+    const titulo = wordleModo === 'diaria' ? 'Wordle de Personajes' + (juegoCat === 'sw' ? ' Star Wars' : '') + ' [' + WORDLE_NIVEL_TXT[wordleNivel] + '] ' + wordleFechaHoy() : 'Wordle de Personajes' + (juegoCat === 'sw' ? ' Star Wars' : '') + ' [' + WORDLE_NIVEL_TXT[wordleNivel] + '] (al azar)';
     const lineas = wordleIntentos.map(i => wordleEvaluar(i, wordleSecreta.palabra).map(e => emoji[e]).join(''));
     return `${titulo} ${gano ? wordleIntentos.length : 'X'}/${WORDLE_INTENTOS}${wordlePistasVistas ? ' 💡'.repeat(wordlePistasVistas) : ''}\n\n${lineas.join('\n')}`;
 }
@@ -25918,7 +26030,7 @@ function wordleMostrarFinal(gano) {
     const fin = document.getElementById('wordle-final');
     if (!fin) return;
     fin.classList.remove('oculto');
-    const racha = JSON.parse(localStorage.getItem('wordle-personajes-racha-' + wordleNivel) || 'null');
+    const racha = JSON.parse(localStorage.getItem('wordle-personajes-racha-' + wordleNivel + catSuf()) || 'null');
     const rachaTxt = (wordleModo === 'diaria' && racha) ? `<p>🔥 Racha: ${racha.racha} · Mejor: ${racha.mejor} · Ganadas: ${racha.ganadas}/${racha.jugadas}</p>` : '';
     const imgPers = imagenDePersonaje(wordleSecreta.palabra);
     const imgHtml = imgPers ? `<img class="wordle-final-img" src="${imgPers}" alt="${wordleSecreta.nombre}">` : '';
@@ -25989,12 +26101,12 @@ function wordleIniciar(modo) {
             wordleTerminado = guardado.terminado;
             wordlePistasVistas = guardado.pistas || 0;
         }
-        if (titulo) titulo.textContent = `Palabra del día (${WORDLE_NIVEL_TXT[wordleNivel]}): hoy tiene ${WORDLE_LARGO} letras (a veces 5, a veces 6). Tenés 6 intentos. Es la misma para todos.`;
+        if (titulo) titulo.textContent = `Palabra del día (${JUEGO_CAT_TXT[juegoCat]}, ${WORDLE_NIVEL_TXT[wordleNivel]}): hoy tiene ${WORDLE_LARGO} letras (a veces 5, a veces 6). Tenés 6 intentos. Es la misma para todos.`;
     } else {
         const pool = wordlePool();
         wordleSecreta = pool[Math.floor(Math.random() * pool.length)];
         WORDLE_LARGO = wordleSecreta.palabra.length;
-        if (titulo) titulo.textContent = `Modo al azar, nivel ${WORDLE_NIVEL_TXT[wordleNivel]} (${WORDLE_LARGO} letras): no cuenta para la racha ni para las estadísticas.`;
+        if (titulo) titulo.textContent = `Modo al azar, ${JUEGO_CAT_TXT[juegoCat]}, nivel ${WORDLE_NIVEL_TXT[wordleNivel]} (${WORDLE_LARGO} letras): no cuenta para la racha ni para las estadísticas.`;
     }
     wordleRecalcularTeclas();
     wordleDibujarTablero();
@@ -26423,7 +26535,25 @@ const CON_TEMAS = [
     { t: 'Series del Arrowverso', u: 'DC', m: [['Arrow', 0], ['The Flash', 0], ['Supergirl', 0], ['Legends of Tomorrow', 1], ['Batwoman', 1], ['Superman & Lois', 1], ['Black Lightning', 2]], incompat: ['Series de DC en TV (otras)'] },
     { t: 'Series de DC en TV (otras)', u: 'DC', m: [['Smallville', 0], ['Gotham', 0], ['Titans', 1], ['Doom Patrol', 1], ['Peacemaker', 1], ['Lois & Clark', 2], ['Pennyworth', 2], ['Lucifer', 1]], incompat: ['Ciudades de DC', 'Series del Arrowverso', 'Escuadrón Suicida de James Gunn'] },
     { t: 'Juegos de Batman Arkham', u: 'DC', m: [['Arkham Asylum', 0], ['Arkham City', 0], ['Arkham Origins', 1], ['Arkham Knight', 0], ['Arkham VR', 2], ['Gotham Knights', 1]] },
-    { t: 'Videojuegos de Marvel', u: 'Marvel', m: [['Marvel\'s Spider-Man', 0], ['Marvel\'s Avengers', 0], ['Midnight Suns', 1], ['Marvel Rivals', 1], ['Ultimate Alliance', 2], ['Marvel vs. Capcom', 1], ['Guardians of the Galaxy', 1]] }
+    { t: 'Videojuegos de Marvel', u: 'Marvel', m: [['Marvel\'s Spider-Man', 0], ['Marvel\'s Avengers', 0], ['Midnight Suns', 1], ['Marvel Rivals', 1], ['Ultimate Alliance', 2], ['Marvel vs. Capcom', 1], ['Guardians of the Galaxy', 1]] },
+    // ---- Star Wars
+    { t: 'Maestros del Consejo Jedi', u: 'Star Wars', m: [['Yoda', 0], ['Mace Windu', 0], ['Obi-Wan Kenobi', 0], ['Anakin Skywalker', 0], ['Plo Koon', 1], ['Kit Fisto', 1], ['Ki-Adi-Mundi', 2], ['Shaak Ti', 2], ['Saesee Tiin', 2], ['Even Piell', 2], ['Yaddle', 2]], incompat: ['Jedi', 'Padawans famosos'] },
+    { t: 'Lores Sith', u: 'Star Wars', m: [['Darth Vader', 0], ['Darth Sidious', 0], ['Darth Maul', 0], ['Conde Dooku', 0], ['Darth Revan', 2], ['Darth Bane', 2], ['Darth Plagueis', 2], ['Darth Malak', 2], ['Darth Nihilus', 2]], incompat: ['Sith'] },
+    { t: 'Planetas de Star Wars', u: 'Star Wars', m: [['Tatooine', 0], ['Hoth', 0], ['Endor', 0], ['Naboo', 0], ['Coruscant', 0], ['Dagobah', 1], ['Bespin', 1], ['Kamino', 1], ['Mustafar', 1], ['Geonosis', 1], ['Alderaan', 1], ['Jakku', 1], ['Kashyyyk', 1], ['Scarif', 2], ['Crait', 2], ['Ahch-To', 2], ['Mandalore', 2], ['Yavin 4', 2]] },
+    { t: 'Naves de Star Wars', u: 'Star Wars', m: [['Halcón Milenario', 0], ['Estrella de la Muerte', 0], ['Destructor Estelar', 0], ['X-Wing', 0], ['TIE Fighter', 0], ['AT-AT', 0], ['Slave I', 1], ['Y-Wing', 1], ['Razor Crest', 1], ['Tantive IV', 2], ['Ghost', 2], ['Executor', 2], ['Naboo N-1', 2]] },
+    { t: 'Droides de Star Wars', u: 'Star Wars', m: [['R2-D2', 0], ['C-3PO', 0], ['BB-8', 0], ['K-2SO', 0], ['IG-11', 1], ['Chopper', 1], ['BD-1', 2], ['L3-37', 2], ['HK-47', 2], ['Droideka', 2], ['4-LOM', 2], ['IG-88', 2]], incompat: ['Droides'] },
+    { t: 'Series de Star Wars', u: 'Star Wars', m: [['The Mandalorian', 0], ['Andor', 0], ['Obi-Wan Kenobi', 0], ['The Clone Wars', 0], ['Ahsoka', 1], ['El libro de Boba Fett', 1], ['Star Wars Rebels', 1], ['The Bad Batch', 1], ['Star Wars: Visions', 2], ['The Acolyte', 2], ['Skeleton Crew', 2], ['Tales of the Jedi', 2]] },
+    { t: 'Películas de Star Wars', u: 'Star Wars', m: [['Una nueva esperanza', 0], ['El imperio contraataca', 0], ['El retorno del Jedi', 0], ['La amenaza fantasma', 0], ['Rogue One', 0], ['El ataque de los clones', 1], ['La venganza de los Sith', 1], ['El despertar de la Fuerza', 1], ['Los últimos Jedi', 1], ['El ascenso de Skywalker', 1], ['Han Solo: una historia de Star Wars', 2]] },
+    { t: 'Razas de Star Wars', u: 'Star Wars', m: [['Wookiees', 0], ['Ewoks', 0], ['Hutts', 0], ['Jawas', 0], ['Twi\'leks', 1], ['Mon Calamari', 1], ['Gungans', 1], ['Rodianos', 2], ['Togruta', 2], ['Zabrak', 2], ['Kaminoanos', 2], ['Sullustanos', 2]] },
+    { t: 'La familia Skywalker', u: 'Star Wars', m: [['Anakin Skywalker', 0], ['Luke Skywalker', 0], ['Leia Organa', 0], ['Padmé Amidala', 0], ['Han Solo', 1], ['Ben Solo', 1], ['Shmi Skywalker', 2], ['Owen Lars', 2], ['Beru Lars', 2]], incompat: ['Maestros del Consejo Jedi', 'Padawans famosos'] },
+    { t: 'Pilotos de la Rebelión', u: 'Star Wars', m: [['Luke Skywalker', 0], ['Han Solo', 0], ['Wedge Antilles', 1], ['Lando Calrissian', 1], ['Biggs Darklighter', 2], ['Poe Dameron', 1], ['Hera Syndulla', 2], ['Jek Porkins', 2], ['Dutch Vander', 2]], incompat: ['Rebelión'] },
+    { t: 'Héroes de la trilogía original', u: 'Star Wars', m: [['Luke Skywalker', 0], ['Leia Organa', 0], ['Han Solo', 0], ['Chewbacca', 0], ['Lando Calrissian', 1], ['Obi-Wan Kenobi', 1], ['Yoda', 1], ['R2-D2', 1]], incompat: ['Rebelión', 'La familia Skywalker', 'Pilotos de la Rebelión'] },
+    { t: 'Trilogía de secuelas', u: 'Star Wars', m: [['Rey', 0], ['Finn', 0], ['Poe Dameron', 0], ['Kylo Ren', 0], ['BB-8', 1], ['Maz Kanata', 1], ['General Hux', 1], ['Snoke', 1], ['Capitana Phasma', 2], ['Rose Tico', 2], ['Vicealmirante Holdo', 2]], incompat: ['Primera Orden', 'Resistencia'] },
+    { t: 'Cazarrecompensas de Star Wars', u: 'Star Wars', m: [['Boba Fett', 0], ['Jango Fett', 0], ['Din Djarin', 0], ['Bossk', 0], ['Fennec Shand', 1], ['Cad Bane', 1], ['Dengar', 2], ['IG-88', 2], ['Zuckuss', 2], ['4-LOM', 2], ['Aurra Sing', 2], ['Zam Wesell', 2]], incompat: ['Cazarrecompensas'] },
+    { t: 'Líderes del Imperio', u: 'Star Wars', m: [['Darth Vader', 0], ['Emperador Palpatine', 0], ['Gran Moff Tarkin', 0], ['Gran Almirante Thrawn', 0], ['Director Krennic', 1], ['Moff Gideon', 1], ['General Veers', 2], ['Almirante Piett', 2], ['Almirante Ozzel', 2], ['Capitán Needa', 2]], incompat: ['Imperio Galáctico', 'Lores Sith'] },
+    { t: 'Personajes de The Mandalorian', u: 'Star Wars', m: [['Din Djarin', 0], ['Grogu', 0], ['Greef Karga', 1], ['Cara Dune', 1], ['Kuiil', 1], ['Moff Gideon', 1], ['Bo-Katan Kryze', 1], ['Fennec Shand', 1], ['Cobb Vanth', 2], ['La Armera', 2], ['Peli Motto', 2]], incompat: ['Mandalorianos'] },
+    { t: 'Personajes de Andor', u: 'Star Wars', m: [['Cassian Andor', 0], ['K-2SO', 1], ['Mon Mothma', 1], ['Luthen Rael', 1], ['Dedra Meero', 2], ['Syril Karn', 2], ['Maarva Andor', 2], ['Kino Loy', 2], ['Vel Sartha', 2], ['Bix Caleen', 2]] },
+    { t: 'Padawans famosos', u: 'Star Wars', m: [['Anakin Skywalker', 0], ['Ahsoka Tano', 0], ['Obi-Wan Kenobi', 0], ['Luke Skywalker', 0], ['Ezra Bridger', 1], ['Rey', 1], ['Cal Kestis', 2], ['Barriss Offee', 2], ['Ben Solo', 1]], incompat: ['Jedi', 'Maestros del Consejo Jedi', 'La familia Skywalker'] },
 ];
 const CON_COLORES = ['amarillo', 'verde', 'azul', 'violeta'];
 const CON_EMOJI = { amarillo: '🟨', verde: '🟩', azul: '🟦', violeta: '🟪' };
@@ -26531,7 +26661,7 @@ function conConstruirGrupos() {
 }
 
 function conGenerar(nivel, rng) {
-    const todos = conConstruirGrupos();
+    const todos = conConstruirGrupos().filter(g => (g.universo === 'Star Wars') === (juegoCat === 'sw'));
     const maxNivel = nivel === 'facil' ? 0 : nivel === 'medio' ? 1 : 2;
     let aptos = todos.filter(g => nivel === 'facil' ? g.aptoFacil : nivel === 'medio' ? (g.aptoMedio || g.aptoFacil) : true);
     for (let intento = 0; intento < 300; intento++) {
@@ -26562,7 +26692,7 @@ function conGenerar(nivel, rng) {
     return null;
 }
 
-function conClaveLocal() { return 'conexiones-dia-' + conNivel; }
+function conClaveLocal() { return 'conexiones-dia-' + conNivel + catSuf(); }
 
 function conGuardarLocal() {
     if (conModo !== 'diaria' || !conPuzzle) return;
@@ -26640,7 +26770,7 @@ function conAlternar(id) {
 function conTextoCompartir() {
     const titulo = conModo === 'diaria' ? 'Conexiones ' + wordleFechaHoy() : 'Conexiones (al azar)';
     const lineas = conIntentos.map(it => it.map(gi => CON_EMOJI[conPuzzle.grupos[gi].color]).join(''));
-    return `${titulo} [${CON_NIVEL_TXT[conNivel]}] ${conResueltos.length === 4 && conErrores < 4 ? conErrores + ' errores' : 'X'}\n\n${lineas.join('\n')}`;
+    return `${titulo}${juegoCat === 'sw' ? ' Star Wars' : ''} [${CON_NIVEL_TXT[conNivel]}] ${conResueltos.length === 4 && conErrores < 4 ? conErrores + ' errores' : 'X'}\n\n${lineas.join('\n')}`;
 }
 
 function conTerminar(gano) {
@@ -26697,12 +26827,12 @@ function conIniciar(modo) {
         if (g) {
             conPuzzle = g.puzzle; conOrden = g.orden; conResueltos = g.resueltos || []; conErrores = g.errores || 0; conIntentos = g.intentos || []; conTerminado = !!g.terminado;
         } else {
-            conPuzzle = conGenerar(conNivel, conRng(conFechaSemilla({ facil: 1, medio: 2, dificil: 3 }[conNivel] * 7919)));
+            conPuzzle = conGenerar(conNivel, conRng(conFechaSemilla({ facil: 1, medio: 2, dificil: 3 }[conNivel] * 7919 + (juegoCat === 'sw' ? 211 : 0))));
         }
-        if (sub) sub.textContent = `Conexiones del día (${CON_NIVEL_TXT[conNivel]}): encontrá los 4 grupos de 4 personajes. Es la misma para todos. Tenés 4 errores.`;
+        if (sub) sub.textContent = `Conexiones del día (${JUEGO_CAT_TXT[juegoCat]}, ${CON_NIVEL_TXT[conNivel]}): encontrá los 4 grupos de 4 personajes. Es la misma para todos. Tenés 4 errores.`;
     } else {
         conPuzzle = conGenerar(conNivel, Math.random);
-        if (sub) sub.textContent = `Conexiones al azar (${CON_NIVEL_TXT[conNivel]}): no se guarda. Tenés 4 errores.`;
+        if (sub) sub.textContent = `Conexiones al azar (${JUEGO_CAT_TXT[juegoCat]}, ${CON_NIVEL_TXT[conNivel]}): no se guarda. Tenés 4 errores.`;
     }
     if (!conPuzzle) {
         if (sub) sub.textContent = 'No se pudo armar un tablero con los datos actuales.';
@@ -26781,7 +26911,13 @@ function ahNormLetra(c) {
 }
 
 // Elige el nombre "de personaje" a adivinar a partir de nombres como "Edward Nygma (Acertijo)" o "Oráculo (Barbara Gordon)".
-const AH_NOMBRE_FIJO = { logan: 'Wolverine' };
+const AH_NOMBRE_FIJO = {
+    logan: 'Wolverine',
+    // Star Wars: nombre con el que se conoce al personaje
+    anakin: 'Anakin Skywalker', vader: 'Darth Vader', dooku: 'Conde Dooku', sheev: 'Darth Sidious', kenobi: 'Obi-Wan Kenobi',
+    organa: 'Leia Organa', mando: 'El Mandaloriano', trilla: 'Trilla Suduri', chewie: 'Chewbacca', artoo: 'R2-D2', kaytoo: 'K-2SO',
+    hunter: 'Hunter', omega: 'Omega'
+};
 function ahNombreDe(p) {
     if (AH_NOMBRE_FIJO[p.palabra]) return AH_NOMBRE_FIJO[p.palabra];
     let n = String(p.nombre);
@@ -26800,11 +26936,12 @@ function ahNombreDe(p) {
 }
 
 function ahPool(nivel) {
-    if (ahPoolCache[nivel]) return ahPoolCache[nivel];
+    const ck = nivel + catSuf();
+    if (ahPoolCache[ck]) return ahPoolCache[ck];
     const vistos = new Set();
     const lista = [];
     WORDLE_PALABRAS.forEach(p => {
-        if (wordleNivelDe(p) !== nivel) return;
+        if (!catDe(p) || wordleNivelDe(p) !== nivel) return;
         const nombre = ahNombreDe(p);
         const letras = nombre.split('').filter(c => AH_RE.test(ahNormLetra(c))).length;
         if (letras < 4 || nombre.length > 26) return;
@@ -26813,7 +26950,7 @@ function ahPool(nivel) {
         vistos.add(k);
         lista.push({ nombre, palabra: p.palabra, universo: p.universo, equipo: p.equipo });
     });
-    ahPoolCache[nivel] = lista;
+    ahPoolCache[ck] = lista;
     return lista;
 }
 
@@ -26834,7 +26971,7 @@ function ahCompleto() {
     return ahLetrasDe(ahItem.nombre).every(c => rev.has(c));
 }
 
-function ahClaveLocal() { return 'ahorcado-dia-' + ahNivel; }
+function ahClaveLocal() { return 'ahorcado-dia-' + ahNivel + catSuf(); }
 function ahGuardarLocal() {
     if (ahModo !== 'diaria' || !ahItem) return;
     try { localStorage.setItem(ahClaveLocal(), JSON.stringify({ fecha: wordleFechaHoy(), palabra: ahItem.palabra, letras: Array.from(ahLetras), errores: ahErrores, terminado: ahTerminado, gano: ahGano })); } catch (e) {}
@@ -26867,13 +27004,13 @@ function statsGlobalesJuego(docId, sumar, gano, valor, elId, texto) {
 let ahSumarGlobal = false;
 
 function ahStats() {
-    try { return JSON.parse(localStorage.getItem('ahorcado-stats-' + ahNivel) || 'null') || { jugadas: 0, ganadas: 0, racha: 0, mejor: 0 }; } catch (e) { return { jugadas: 0, ganadas: 0, racha: 0, mejor: 0 }; }
+    try { return JSON.parse(localStorage.getItem('ahorcado-stats-' + ahNivel + catSuf()) || 'null') || { jugadas: 0, ganadas: 0, racha: 0, mejor: 0 }; } catch (e) { return { jugadas: 0, ganadas: 0, racha: 0, mejor: 0 }; }
 }
 function ahGuardarStats(gano) {
     const s = ahStats();
     s.jugadas++;
     if (gano) { s.ganadas++; s.racha++; s.mejor = Math.max(s.mejor, s.racha); } else { s.racha = 0; }
-    try { localStorage.setItem('ahorcado-stats-' + ahNivel, JSON.stringify(s)); } catch (e) {}
+    try { localStorage.setItem('ahorcado-stats-' + ahNivel + catSuf(), JSON.stringify(s)); } catch (e) {}
 }
 
 function ahMensaje(t, tipo) {
@@ -27078,7 +27215,7 @@ function ahMostrarFinal() {
     const gl = document.getElementById('ah-global');
     if (gl) gl.textContent = '';
     if (ahModo === 'diaria') {
-        statsGlobalesJuego('ahorcado-' + ahNivel, ahSumarGlobal, ahGano, ahErrores, 'ah-global',
+        statsGlobalesJuego('ahorcado-' + ahNivel + catSuf(), ahSumarGlobal, ahGano, ahErrores, 'ah-global',
             (pct, prom, n) => `📊 Entre todos los jugadores: ganan el ${pct}% de las partidas, con ${prom} errores en promedio (${n} partidas).`);
     }
     ahSumarGlobal = false;
@@ -27087,7 +27224,7 @@ function ahMostrarFinal() {
 function ahTextoCompartir() {
     const nom = { facil: 'Fácil', medio: 'Medio', dificil: 'Difícil' }[ahNivel];
     const dib = '🟥'.repeat(ahErrores) + '⬜'.repeat(AH_MAX_ERRORES - ahErrores);
-    return `Ahorcado de Personajes (${nom}) ${ahGano ? '✅' : '❌'}\n${dib}\nEl Multiverso`;
+    return `Ahorcado de Personajes${juegoCat === 'sw' ? ' Star Wars' : ''} (${nom}) ${ahGano ? '✅' : '❌'}\n${dib}\nEl Multiverso`;
 }
 
 function ahIniciar(modo) {
@@ -27109,13 +27246,13 @@ function ahIniciar(modo) {
             if (ahItem) { ahLetras = new Set(g.letras || []); ahErrores = g.errores || 0; ahTerminado = !!g.terminado; ahGano = !!g.gano; }
         }
         if (!ahItem || !g) {
-            const rng = conRng(conFechaSemilla({ facil: 11, medio: 13, dificil: 17 }[ahNivel] * 104729));
+            const rng = conRng(conFechaSemilla({ facil: 11, medio: 13, dificil: 17 }[ahNivel] * 104729 + (juegoCat === 'sw' ? 331 : 0)));
             ahItem = pool[Math.floor(rng() * pool.length)];
         }
-        if (sub) sub.textContent = `Ahorcado del día (${nombreNivel}): adiviná el nombre del personaje. Solo se ve la letra inicial. Tenés ${AH_MAX_ERRORES} errores.`;
+        if (sub) sub.textContent = `Ahorcado del día (${JUEGO_CAT_TXT[juegoCat]}, ${nombreNivel}): adiviná el nombre del personaje. Solo se ve la letra inicial. Tenés ${AH_MAX_ERRORES} errores.`;
     } else {
         ahItem = pool[Math.floor(Math.random() * pool.length)];
-        if (sub) sub.textContent = `Ahorcado al azar: no se guarda. Solo se ve la letra inicial. Tenés ${AH_MAX_ERRORES} errores.`;
+        if (sub) sub.textContent = `Ahorcado al azar (${JUEGO_CAT_TXT[juegoCat]}): no se guarda. Solo se ve la letra inicial. Tenés ${AH_MAX_ERRORES} errores.`;
     }
     ahMensaje('');
     ahDibujar();
@@ -27886,12 +28023,13 @@ if (adpBtnCompartir) {
 // ============================================================
 // JUEGO "BINGO DEL MULTIVERSO" (cartón 5x5 + bolillero + 2 rivales CPU)
 // ============================================================
-const BG_FUENTES = { todo: 'Marvel y DC', marvel: 'Marvel', dc: 'DC', obras: 'Películas y series' };
+const BG_FUENTES = { todo: 'Marvel y DC', marvel: 'Marvel', dc: 'DC', starwars: 'Star Wars', obras: 'Películas y series' };
 const BG_MODOS = { linea: 'Línea', lleno: 'Cartón lleno' };
 const BG_TOTAL = 75;
 const BG_RIVALES = {
     marvel: ['Nick Fury', 'Rocket', 'Jarvis', 'Maria Hill', 'Happy Hogan', 'Howard el Pato'],
     dc: ['Alfred', 'Amanda Waller', 'Oracle', 'Lucius Fox', 'Detective Chimp', 'Krypto'],
+    starwars: ['Almirante Ackbar', 'Maz Kanata', 'Jabba', 'Lando', 'Mon Mothma', 'Huyang'],
     obras: ['Stan Lee', 'Cinéfilo del barrio', 'Crítico de turno', 'Tío del videoclub', 'Maratonero', 'Fan de las post-créditos']
 };
 BG_RIVALES.todo = [...BG_RIVALES.marvel.slice(0, 3), ...BG_RIVALES.dc.slice(0, 3)];
@@ -27927,6 +28065,7 @@ function bgPoolFuente() {
         WORDLE_PALABRAS.forEach(p => {
             if (bgFuente === 'marvel' && p.universo !== 'Marvel') return;
             if (bgFuente === 'dc' && p.universo !== 'DC') return;
+            if (bgFuente === 'starwars' ? p.universo !== 'Star Wars' : p.universo === 'Star Wars') return;
             let img = null;
             try { img = imagenDePersonaje(p.palabra); } catch (e) {}
             add(ahNombreDe(p), p.universo, img);
@@ -27974,7 +28113,7 @@ function bgDibujarCarton() {
         b.className = 'bg-celda' + (idx === -1 ? ' libre' : '') + (bgMarcas[i] ? ' marcada' : '');
         b.dataset.pos = i;
         b.textContent = idx === -1 ? '★ LIBRE' : bgItems[idx].n;
-        if (idx !== -1) b.classList.add('u-' + bgItems[idx].u.toLowerCase());
+        if (idx !== -1) b.classList.add('u-' + bgItems[idx].u.toLowerCase().replace(/\s/g, ''));
         b.addEventListener('click', () => bgMarcar(i));
         cont.appendChild(b);
     });
@@ -28003,7 +28142,7 @@ function bgDibujarBola(animar) {
         bola.className = 'bg-bola';
         if (bgSalidas > 0) {
             const it = bgItems[bgOrden[bgSalidas - 1]];
-            bola.classList.add('u-' + it.u.toLowerCase());
+            bola.classList.add('u-' + it.u.toLowerCase().replace(/\s/g, ''));
             if (it.img) { const im = document.createElement('img'); im.src = it.img; im.alt = ''; im.className = 'bg-bola-img'; im.referrerPolicy = 'no-referrer'; im.onerror = () => im.remove(); bola.appendChild(im); }
             const t = document.createElement('div'); t.className = 'bg-bola-nombre'; t.textContent = it.n; bola.appendChild(t);
             if (animar) { void bola.offsetWidth; bola.classList.add('bg-giro'); }
@@ -28153,6 +28292,22 @@ function bgIniciar(partida) {
 function bgTextoCompartir() {
     return `Bingo del Multiverso (${BG_FUENTES[bgFuente]}, ${BG_MODOS[bgModo]}) ${bgGano ? '🎉 ¡BINGO en ' + bgSalidas + ' bolillas!' : '❌ ' + (bgGanador ? 'Ganó ' + bgGanador : 'sin ganador')}\nEl Multiverso`;
 }
+
+// Selector de categoría (Marvel y DC / Star Wars) compartido por Wordle, Ahorcado y Conexiones
+function juegoMarcarCat() {
+    document.querySelectorAll('.juego-cat').forEach(b => b.classList.toggle('activo', b.dataset.cat === juegoCat));
+}
+document.querySelectorAll('.juego-cat').forEach(b => b.addEventListener('click', () => {
+    if (b.dataset.cat === juegoCat) return;
+    juegoCat = b.dataset.cat;
+    try { localStorage.setItem('juego-cat', juegoCat); } catch (e) {}
+    juegoMarcarCat();
+    const vis = id => { const s = document.getElementById(id); return s && !s.classList.contains('oculto'); };
+    if (vis('seccion-wordle')) wordleIniciar('diaria');
+    else if (vis('seccion-ahorcado')) ahIniciar('diaria');
+    else if (vis('seccion-conexiones')) conIniciar('diaria');
+}));
+juegoMarcarCat();
 
 const tarjetaBingo = document.getElementById('tarjeta-bingo');
 if (tarjetaBingo) tarjetaBingo.addEventListener('click', () => { cambiarSeccion(document.getElementById('seccion-bingo')); bgIniciar('diaria'); });
