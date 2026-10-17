@@ -26846,6 +26846,26 @@ function ahCargarLocal() {
     } catch (e) {}
     return null;
 }
+// Estadística global (Firestore estadisticas/<docId>): partidas, ganadas y suma de errores/intentos de las ganadas.
+// Solo suma la primera vez que se termina la partida diaria; si Firestore falla, no se muestra nada.
+function statsGlobalesJuego(docId, sumar, gano, valor, elId, texto) {
+    const el = document.getElementById(elId);
+    if (!el) return;
+    try {
+        const ref = db.collection('estadisticas').doc(docId);
+        const inc = firebase.firestore.FieldValue.increment;
+        const previo = sumar ? ref.set({ totalPartidas: inc(1), totalGanadas: inc(gano ? 1 : 0), totalValorGanados: inc(gano ? valor : 0) }, { merge: true }) : Promise.resolve();
+        previo.then(() => ref.get()).then(doc => {
+            if (!doc.exists) { el.textContent = ''; return; }
+            const d = doc.data();
+            if (!d.totalPartidas) { el.textContent = ''; return; }
+            const prom = d.totalGanadas > 0 ? (d.totalValorGanados / d.totalGanadas).toFixed(1) : '-';
+            el.textContent = texto(Math.round(100 * d.totalGanadas / d.totalPartidas), prom, d.totalPartidas);
+        }).catch(() => {});
+    } catch (e) {}
+}
+let ahSumarGlobal = false;
+
 function ahStats() {
     try { return JSON.parse(localStorage.getItem('ahorcado-stats-' + ahNivel) || 'null') || { jugadas: 0, ganadas: 0, racha: 0, mejor: 0 }; } catch (e) { return { jugadas: 0, ganadas: 0, racha: 0, mejor: 0 }; }
 }
@@ -27034,7 +27054,7 @@ function ahTerminar(gano) {
     ahGano = gano;
     if (ahModo === 'diaria') {
         const guardado = ahCargarLocal();
-        if (!(guardado && guardado.terminado)) ahGuardarStats(gano);
+        if (!(guardado && guardado.terminado)) { ahGuardarStats(gano); ahSumarGlobal = true; }
     }
     ahGuardarLocal();
     ahMostrarFinal();
@@ -27055,6 +27075,13 @@ function ahMostrarFinal() {
         const s = ahStats();
         st.textContent = `Partidas: ${s.jugadas} · Ganadas: ${s.ganadas} · Racha: ${s.racha} · Mejor racha: ${s.mejor}`;
     } else if (st) st.textContent = '';
+    const gl = document.getElementById('ah-global');
+    if (gl) gl.textContent = '';
+    if (ahModo === 'diaria') {
+        statsGlobalesJuego('ahorcado-' + ahNivel, ahSumarGlobal, ahGano, ahErrores, 'ah-global',
+            (pct, prom, n) => `📊 Entre todos los jugadores: ganan el ${pct}% de las partidas, con ${prom} errores en promedio (${n} partidas).`);
+    }
+    ahSumarGlobal = false;
 }
 
 function ahTextoCompartir() {
@@ -27536,6 +27563,7 @@ let adpFallos = [];       // títulos adivinados mal (o 'saltear')
 let adpTerminado = false;
 let adpGano = false;
 let adpImg = null;
+let adpSumarGlobal = false;
 let adpSug = [];
 let adpSugIdx = -1;
 
@@ -27653,6 +27681,13 @@ function adpMostrarFinal() {
     const st = document.getElementById('adp-stats');
     if (st) { const s = adpStats(); st.textContent = `Partidas: ${s.jugadas} · Ganadas: ${s.ganadas} · Racha: ${s.racha} · Mejor racha: ${s.mejor}`; }
     adpOcultarSug();
+    const gl = document.getElementById('adp-global');
+    if (gl) gl.textContent = '';
+    if (adpModo === 'diaria') {
+        statsGlobalesJuego('adivina-poster-' + adpNivel, adpSumarGlobal, adpGano, adpFallos.length + 1, 'adp-global',
+            (pct, prom, n) => `📊 Entre todos los jugadores: aciertan el ${pct}% de los pósters, en promedio al intento ${prom} (${n} partidas).`);
+    }
+    adpSumarGlobal = false;
 }
 
 function adpTerminar(gano) {
@@ -27660,7 +27695,7 @@ function adpTerminar(gano) {
     adpGano = gano;
     if (adpModo === 'diaria') {
         const g = adpCargarLocal();
-        if (!(g && g.terminado)) adpGuardarStats(gano);
+        if (!(g && g.terminado)) { adpGuardarStats(gano); adpSumarGlobal = true; }
     }
     adpGuardarLocal();
     adpPintar();
