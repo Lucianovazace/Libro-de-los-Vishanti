@@ -2069,3 +2069,5 @@ h2 {
 
 .bg-bola.u-pokémon, .bg-bola.u-pokemon { background: radial-gradient(circle at 35% 30%, #ff9a9a, #e53935 55%, #7a1010); border-color: #fff; }
 .bg-celda.u-pokémon, .bg-celda.u-pokemon { border-color: #a82525; }
+.bg-bola.u-dragonball { background: radial-gradient(circle at 35% 30%, #ffd27a, #ff8a00 58%, #8a3d00); border-color: #fff3c4; }
+.bg-celda.u-dragonball { border-color: #d66b00; }
