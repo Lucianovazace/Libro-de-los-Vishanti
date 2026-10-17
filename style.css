@@ -2079,6 +2079,8 @@ h2 {
 .bg-celda.u-ben10 { border-color: #1faa34; }
 .bg-bola.u-tierramedia { background: radial-gradient(circle at 35% 30%, #fff3b0, #d4a017 58%, #5c3d00); border-color: #fff8dc; color: #2b1c00; }
 .bg-celda.u-tierramedia { border-color: #b8860b; }
+.bg-bola.u-cartoonnetwork { background: radial-gradient(circle at 35% 30%, #ffffff, #f2f2f2 40%, #111 62%); border-color: #ffe600; color: #111; }
+.bg-celda.u-cartoonnetwork { border-color: #111; }
 
 /* Menú de Juegos (Cine / Fútbol) y pantalla de Fútbol en construcción */
 .grilla-juegos-menu { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
