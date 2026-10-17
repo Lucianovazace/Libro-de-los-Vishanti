@@ -25766,6 +25766,92 @@ const WORDLE_PALABRAS = [
     { palabra: "trilla", nombre: "Trilla Suduri (Segunda Hermana)", universo: "Star Wars", equipo: "Jedi Fallen Order", tipo: "Villano" },
     { palabra: "baylan", nombre: "Baylan Skoll", universo: "Star Wars", equipo: "Serie Ahsoka", tipo: "Antihéroe" },
     { palabra: "marrok", nombre: "Marrok", universo: "Star Wars", equipo: "Serie Ahsoka", tipo: "Villano" },
+    { palabra: "potter", nombre: "Harry Potter", universo: "Harry Potter", equipo: "Gryffindor", tipo: "Héroe" },
+    { palabra: "seamus", nombre: "Seamus Finnigan", universo: "Harry Potter", equipo: "Gryffindor", tipo: "Héroe" },
+    { palabra: "ginny", nombre: "Ginny Weasley", universo: "Harry Potter", equipo: "Familia Weasley", tipo: "Héroe" },
+    { palabra: "ronald", nombre: "Ron Weasley", universo: "Harry Potter", equipo: "Familia Weasley", tipo: "Héroe" },
+    { palabra: "percy", nombre: "Percy Weasley", universo: "Harry Potter", equipo: "Familia Weasley", tipo: "Aliado" },
+    { palabra: "sirius", nombre: "Sirius Black", universo: "Harry Potter", equipo: "Gryffindor", tipo: "Héroe" },
+    { palabra: "lupin", nombre: "Remus Lupin", universo: "Harry Potter", equipo: "Gryffindor", tipo: "Héroe" },
+    { palabra: "james", nombre: "James Potter", universo: "Harry Potter", equipo: "Gryffindor", tipo: "Héroe" },
+    { palabra: "draco", nombre: "Draco Malfoy", universo: "Harry Potter", equipo: "Slytherin", tipo: "Antihéroe" },
+    { palabra: "crabbe", nombre: "Vincent Crabbe", universo: "Harry Potter", equipo: "Slytherin", tipo: "Villano" },
+    { palabra: "goyle", nombre: "Gregory Goyle", universo: "Harry Potter", equipo: "Slytherin", tipo: "Villano" },
+    { palabra: "pansy", nombre: "Pansy Parkinson", universo: "Harry Potter", equipo: "Slytherin", tipo: "Villano" },
+    { palabra: "horace", nombre: "Horace Slughorn", universo: "Harry Potter", equipo: "Slytherin", tipo: "Aliado" },
+    { palabra: "riddle", nombre: "Lord Voldemort (Tom Riddle)", universo: "Harry Potter", equipo: "Mortífagos", tipo: "Villano" },
+    { palabra: "nagini", nombre: "Nagini", universo: "Harry Potter", equipo: "Mortífagos", tipo: "Villano" },
+    { palabra: "malfoy", nombre: "Lucius Malfoy", universo: "Harry Potter", equipo: "Mortífagos", tipo: "Villano" },
+    { palabra: "barty", nombre: "Barty Crouch Jr.", universo: "Harry Potter", equipo: "Mortífagos", tipo: "Villano" },
+    { palabra: "avery", nombre: "Avery", universo: "Harry Potter", equipo: "Mortífagos", tipo: "Villano" },
+    { palabra: "yaxley", nombre: "Yaxley", universo: "Harry Potter", equipo: "Mortífagos", tipo: "Villano" },
+    { palabra: "fenrir", nombre: "Fenrir Greyback", universo: "Harry Potter", equipo: "Mortífagos", tipo: "Villano" },
+    { palabra: "amycus", nombre: "Amycus Carrow", universo: "Harry Potter", equipo: "Mortífagos", tipo: "Villano" },
+    { palabra: "albus", nombre: "Albus Dumbledore", universo: "Harry Potter", equipo: "Profesores de Hogwarts", tipo: "Héroe" },
+    { palabra: "snape", nombre: "Severus Snape", universo: "Harry Potter", equipo: "Profesores de Hogwarts", tipo: "Antihéroe" },
+    { palabra: "hagrid", nombre: "Rubeus Hagrid", universo: "Harry Potter", equipo: "Profesores de Hogwarts", tipo: "Héroe" },
+    { palabra: "sprout", nombre: "Pomona Sprout", universo: "Harry Potter", equipo: "Profesores de Hogwarts", tipo: "Héroe" },
+    { palabra: "hooch", nombre: "Madame Hooch", universo: "Harry Potter", equipo: "Profesores de Hogwarts", tipo: "Héroe" },
+    { palabra: "binns", nombre: "Profesor Binns", universo: "Harry Potter", equipo: "Profesores de Hogwarts", tipo: "Aliado" },
+    { palabra: "filch", nombre: "Argus Filch", universo: "Harry Potter", equipo: "Profesores de Hogwarts", tipo: "Aliado" },
+    { palabra: "moody", nombre: "Alastor Moody", universo: "Harry Potter", equipo: "Profesores de Hogwarts", tipo: "Héroe" },
+    { palabra: "filius", nombre: "Filius Flitwick", universo: "Harry Potter", equipo: "Profesores de Hogwarts", tipo: "Héroe" },
+    { palabra: "sybill", nombre: "Sybill Trelawney", universo: "Harry Potter", equipo: "Profesores de Hogwarts", tipo: "Aliado" },
+    { palabra: "chang", nombre: "Cho Chang", universo: "Harry Potter", equipo: "Ravenclaw", tipo: "Aliado" },
+    { palabra: "padma", nombre: "Padma Patil", universo: "Harry Potter", equipo: "Ravenclaw", tipo: "Aliado" },
+    { palabra: "hannah", nombre: "Hannah Abbott", universo: "Harry Potter", equipo: "Hufflepuff", tipo: "Aliado" },
+    { palabra: "ernie", nombre: "Ernie Macmillan", universo: "Harry Potter", equipo: "Hufflepuff", tipo: "Aliado" },
+    { palabra: "tonks", nombre: "Nymphadora Tonks", universo: "Harry Potter", equipo: "Hufflepuff", tipo: "Héroe" },
+    { palabra: "susan", nombre: "Susan Bones", universo: "Harry Potter", equipo: "Hufflepuff", tipo: "Aliado" },
+    { palabra: "cedric", nombre: "Cedric Diggory", universo: "Harry Potter", equipo: "Torneo de los Tres Magos", tipo: "Héroe" },
+    { palabra: "fleur", nombre: "Fleur Delacour", universo: "Harry Potter", equipo: "Torneo de los Tres Magos", tipo: "Héroe" },
+    { palabra: "viktor", nombre: "Viktor Krum", universo: "Harry Potter", equipo: "Torneo de los Tres Magos", tipo: "Héroe" },
+    { palabra: "maxime", nombre: "Madame Maxime", universo: "Harry Potter", equipo: "Torneo de los Tres Magos", tipo: "Aliado" },
+    { palabra: "dobby", nombre: "Dobby", universo: "Harry Potter", equipo: "Criaturas mágicas", tipo: "Aliado" },
+    { palabra: "winky", nombre: "Winky", universo: "Harry Potter", equipo: "Criaturas mágicas", tipo: "Aliado" },
+    { palabra: "hedwig", nombre: "Hedwig", universo: "Harry Potter", equipo: "Criaturas mágicas", tipo: "Aliado" },
+    { palabra: "fawkes", nombre: "Fawkes", universo: "Harry Potter", equipo: "Criaturas mágicas", tipo: "Aliado" },
+    { palabra: "aragog", nombre: "Aragog", universo: "Harry Potter", equipo: "Criaturas mágicas", tipo: "Villano" },
+    { palabra: "fluffy", nombre: "Fluffy", universo: "Harry Potter", equipo: "Criaturas mágicas", tipo: "Villano" },
+    { palabra: "grawp", nombre: "Grawp", universo: "Harry Potter", equipo: "Criaturas mágicas", tipo: "Aliado" },
+    { palabra: "vernon", nombre: "Vernon Dursley", universo: "Harry Potter", equipo: "Los Dursley", tipo: "Villano" },
+    { palabra: "dudley", nombre: "Dudley Dursley", universo: "Harry Potter", equipo: "Los Dursley", tipo: "Villano" },
+    { palabra: "marge", nombre: "Tía Marge", universo: "Harry Potter", equipo: "Los Dursley", tipo: "Villano" },
+    { palabra: "fudge", nombre: "Cornelius Fudge", universo: "Harry Potter", equipo: "Ministerio de Magia", tipo: "Antihéroe" },
+    { palabra: "crouch", nombre: "Bartemius Crouch Sr.", universo: "Harry Potter", equipo: "Ministerio de Magia", tipo: "Antihéroe" },
+    { palabra: "rufus", nombre: "Rufus Scrimgeour", universo: "Harry Potter", equipo: "Ministerio de Magia", tipo: "Aliado" },
+    { palabra: "bagman", nombre: "Ludo Bagman", universo: "Harry Potter", equipo: "Ministerio de Magia", tipo: "Antihéroe" },
+    { palabra: "godric", nombre: "Godric Gryffindor", universo: "Harry Potter", equipo: "Fundadores de Hogwarts", tipo: "Héroe" },
+    { palabra: "rowena", nombre: "Rowena Ravenclaw", universo: "Harry Potter", equipo: "Fundadores de Hogwarts", tipo: "Héroe" },
+    { palabra: "helga", nombre: "Helga Hufflepuff", universo: "Harry Potter", equipo: "Fundadores de Hogwarts", tipo: "Héroe" },
+    { palabra: "gallia", nombre: "Adi Gallia", universo: "Star Wars", equipo: "Jedi", tipo: "Héroe" },
+    { palabra: "unduli", nombre: "Luminara Unduli", universo: "Star Wars", equipo: "Jedi", tipo: "Héroe" },
+    { palabra: "offee", nombre: "Barriss Offee", universo: "Star Wars", equipo: "Jedi", tipo: "Antihéroe" },
+    { palabra: "saesee", nombre: "Saesee Tiin", universo: "Star Wars", equipo: "Jedi", tipo: "Héroe" },
+    { palabra: "indara", nombre: "Indara", universo: "Star Wars", equipo: "Jedi", tipo: "Héroe" },
+    { palabra: "qimir", nombre: "Qimir (El Extraño)", universo: "Star Wars", equipo: "Sith", tipo: "Villano" },
+    { palabra: "malgus", nombre: "Darth Malgus", universo: "Star Wars", equipo: "Sith", tipo: "Villano" },
+    { palabra: "tagge", nombre: "General Tagge", universo: "Star Wars", equipo: "Imperio Galáctico", tipo: "Villano" },
+    { palabra: "wexley", nombre: "Snap Wexley", universo: "Star Wars", equipo: "Resistencia", tipo: "Héroe" },
+    { palabra: "kanata", nombre: "Maz Kanata", universo: "Star Wars", equipo: "Resistencia", tipo: "Aliado" },
+    { palabra: "jannah", nombre: "Jannah", universo: "Star Wars", equipo: "Resistencia", tipo: "Héroe" },
+    { palabra: "zorii", nombre: "Zorii Bliss", universo: "Star Wars", equipo: "Crimen Organizado", tipo: "Antihéroe" },
+    { palabra: "bazine", nombre: "Bazine Netal", universo: "Star Wars", equipo: "Crimen Organizado", tipo: "Villano" },
+    { palabra: "ketsu", nombre: "Ketsu Onyo", universo: "Star Wars", equipo: "Cazarrecompensas", tipo: "Antihéroe" },
+    { palabra: "tambor", nombre: "Wat Tambor", universo: "Star Wars", equipo: "Separatistas", tipo: "Villano" },
+    { palabra: "cliegg", nombre: "Cliegg Lars", universo: "Star Wars", equipo: "Tatooine", tipo: "Aliado" },
+    { palabra: "dexter", nombre: "Dexter Jettster", universo: "Star Wars", equipo: "Tatooine", tipo: "Aliado" },
+    { palabra: "beebee", nombre: "BB-8", universo: "Star Wars", equipo: "Droides", tipo: "Aliado" },
+    { palabra: "rancor", nombre: "Rancor", universo: "Star Wars", equipo: "Criaturas de Star Wars", tipo: "Villano" },
+    { palabra: "wampa", nombre: "Wampa", universo: "Star Wars", equipo: "Criaturas de Star Wars", tipo: "Villano" },
+    { palabra: "bantha", nombre: "Bantha", universo: "Star Wars", equipo: "Criaturas de Star Wars", tipo: "Aliado" },
+    { palabra: "mynock", nombre: "Mynock", universo: "Star Wars", equipo: "Criaturas de Star Wars", tipo: "Villano" },
+    { palabra: "krayt", nombre: "Dragón Krayt", universo: "Star Wars", equipo: "Criaturas de Star Wars", tipo: "Villano" },
+    { palabra: "acklay", nombre: "Acklay", universo: "Star Wars", equipo: "Criaturas de Star Wars", tipo: "Villano" },
+    { palabra: "daala", nombre: "Almirante Daala", universo: "Star Wars", equipo: "Legends", tipo: "Villano" },
+    { palabra: "jacen", nombre: "Jacen Solo", universo: "Star Wars", equipo: "Legends", tipo: "Antihéroe" },
+    { palabra: "jaina", nombre: "Jaina Solo", universo: "Star Wars", equipo: "Legends", tipo: "Héroe" },
+    { palabra: "karrde", nombre: "Talon Karrde", universo: "Star Wars", equipo: "Legends", tipo: "Aliado" },
 ];
 // Imágenes de personajes. La clave es el personaje; WORDLE_IMAGEN_DE mapea cada palabra del juego a su personaje.
 // Si una palabra no está acá, se busca por alias en los juegos Nombralos (Linternas, Batifamilia).
@@ -25804,8 +25890,8 @@ function imagenDePersonaje(palabra) {
 }
 
 // Dificultad: FÁCIL = los más famosos, DIFÍCIL = los menos conocidos (asignado por Claude, se puede ajustar), MEDIO = el resto.
-const WORDLE_FACIL = new Set(["alfred", "amora", "angel", "angela", "antman", "arana", "arrow", "azrael", "balder", "banner", "barnes", "barry", "barton", "batman", "batroc", "beast", "blade", "brock", "bruce", "bucky", "cable", "carol", "carter", "cassie", "castle", "challa", "clark", "clint", "crane", "cyborg", "diana", "dillon", "dinah", "donna", "drake", "falcon", "fenris", "flash", "foster", "freeze", "friday", "gamora", "goblin", "gordon", "gorgon", "grimm", "grodd", "groot", "hades", "hammer", "happy", "harley", "havok", "hogun", "hulka", "hydra", "ikaris", "isley", "jackal", "janet", "jarvis", "jason", "johnny", "joker", "jonah", "kaine", "kamala", "kitty", "korvac", "kraven", "laufey", "laura", "lizard", "logan", "lucas", "luthor", "magik", "mantis", "maria", "medusa", "miles", "misty", "modok", "mongul", "mordo", "namor", "nomad", "okoye", "olsen", "oracle", "orion", "osborn", "pepper", "peter", "pietro", "porker", "potts", "quake", "quasar", "queen", "quill", "quinn", "raven", "rescue", "rhino", "rhodes", "rhodey", "rider", "robin", "rocket", "rogers", "rogue", "ronan", "rumlow", "scott", "selina", "sentry", "shang", "shazam", "shuri", "skull", "skurge", "slade", "spider", "stane", "stark", "steel", "steve", "storm", "surfer", "surtur", "swamp", "talia", "thanos", "thing", "tigra", "toxin", "triton", "venom", "vermin", "victor", "viper", "vision", "vixen", "waller", "wally", "wanda", "wiccan", "widow", "wilson", "winter", "wizard", "krypto", "damian", "jordan", "kovacs", "oswald", "billy", "manta", "ocean", "thawne", "trigon", "lucius", "vicki", "terra", "conner", "dream", "death", "veidt", "grundy", "chloe", "anarky", "apollo", "hermes", "kendra", "palmer", "trevor", "jonzz", "merlin", "lawton", "diablo", "shark", "rayner", "sivana", "xavier", "iceman", "gambit", "harry", "blaze", "domino", "knull", "selene", "legion", "betsy", "sauron", "stryfe", "madrox", "howard", "pixie", "marrow", "leech", "belova", "karla", "kenobi", "windu", "anakin", "ahsoka", "quigon", "vader", "dooku", "tarkin", "thrawn", "organa", "ackbar", "wedge", "lando", "jango", "bossk", "greedo", "djarin", "mando", "grogu", "padme", "jarjar", "jabba", "artoo", "chewie"]);
-const WORDLE_DIFICIL = new Set(["relic", "abyss", "adder", "agger", "ahura", "albert", "alecto", "aleta", "algrim", "alura", "amber", "amiko", "angmo", "aquon", "arkin", "ayala", "basil", "bernie", "brett", "caiera", "cathy", "chondu", "chung", "clash", "crang", "curse", "daemon", "dargo", "darla", "davos", "debra", "deeds", "deidre", "dekker", "demara", "desak", "devoux", "devoz", "dinesh", "dollar", "dunphy", "eisen", "eldrac", "elijah", "elsie", "ferro", "flint", "freyja", "frost", "gazer", "gentry", "gibney", "gnucci", "gorath", "greer", "grotto", "hannu", "hermod", "hoder", "hudson", "ithan", "jolena", "joseph", "juarez", "justin", "kaplan", "katma", "kelda", "koenig", "krylov", "kudzu", "kurse", "laira", "lasher", "lazaer", "leland", "lohmer", "lotus", "lucca", "lulumu", "lyons", "macha", "madcap", "madman", "magni", "mahkwa", "major", "malik", "mallen", "maxam", "maxon", "mciver", "menace", "mendel", "metron", "mogul", "mosaic", "nadia", "nagan", "native", "nimue", "nobili", "ogord", "payne", "phage", "pierce", "powell", "pratt", "quire", "rachel", "rages", "randac", "razer", "reader", "rikki", "romeo", "roxxon", "saxon", "scurry", "seeker", "shado", "sharon", "shuma", "skagg", "slyde", "sodam", "solem", "spirit", "stakar", "sterns", "stryke", "sunset", "tania", "teddy", "thorne", "torres", "tucker", "turtle", "twain", "tyger", "utgard", "uumaru", "vance", "vapor", "vaughn", "vector", "vidar", "vortex", "wallow", "wheel", "willie", "yalan", "zander", "zaran", "zarrko", "zyozi", "capers", "sunen", "kronos", "zuras", "sawyer", "zorel", "renee", "julie", "maroni", "sionis", "mardon", "emiko", "salaak", "arisia", "bleez", "krona", "oberon", "phobos", "deimos", "mervyn", "hollis", "pedro", "tawky", "larry", "rouge", "dodds", "knight", "jakeem", "damage", "pieter", "ranzz", "tyroc", "bibbo", "mercy", "drury", "maxie", "harper", "psimon", "lilith", "eddie", "skeets", "isabel", "siren", "catman", "zucco", "hestia", "hecate", "arella", "chimp", "occult", "bufkin", "prince", "beauty", "maxine", "osiris", "bekka", "vykin", "takion", "lonar", "heggra", "hiroim", "xemnu", "wyatt", "chance", "topaz", "byrrah", "lopez", "genis", "sunder", "mimic", "nikki", "aaron", "static", "xombi", "mundi", "shaak", "yaddle", "bendu", "sheev", "savage", "ozzel", "needa", "motti", "dedra", "syril", "biggs", "lobot", "wesell", "aurra", "vanth", "satine", "gunray", "poggle", "trench", "durge", "waxer", "dogma", "typho", "bibble", "dryden", "zorba", "rotta", "plutt", "tobias", "huyang", "logray", "paploo", "teebo", "pryde", "connix", "ematt", "tallie", "tekka", "jolee", "juhani", "visas", "kreia", "atton", "greez", "trilla", "baylan", "marrok"]);
+const WORDLE_FACIL = new Set(["alfred", "amora", "angel", "angela", "antman", "arana", "arrow", "azrael", "balder", "banner", "barnes", "barry", "barton", "batman", "batroc", "beast", "blade", "brock", "bruce", "bucky", "cable", "carol", "carter", "cassie", "castle", "challa", "clark", "clint", "crane", "cyborg", "diana", "dillon", "dinah", "donna", "drake", "falcon", "fenris", "flash", "foster", "freeze", "friday", "gamora", "goblin", "gordon", "gorgon", "grimm", "grodd", "groot", "hades", "hammer", "happy", "harley", "havok", "hogun", "hulka", "hydra", "ikaris", "isley", "jackal", "janet", "jarvis", "jason", "johnny", "joker", "jonah", "kaine", "kamala", "kitty", "korvac", "kraven", "laufey", "laura", "lizard", "logan", "lucas", "luthor", "magik", "mantis", "maria", "medusa", "miles", "misty", "modok", "mongul", "mordo", "namor", "nomad", "okoye", "olsen", "oracle", "orion", "osborn", "pepper", "peter", "pietro", "porker", "potts", "quake", "quasar", "queen", "quill", "quinn", "raven", "rescue", "rhino", "rhodes", "rhodey", "rider", "robin", "rocket", "rogers", "rogue", "ronan", "rumlow", "scott", "selina", "sentry", "shang", "shazam", "shuri", "skull", "skurge", "slade", "spider", "stane", "stark", "steel", "steve", "storm", "surfer", "surtur", "swamp", "talia", "thanos", "thing", "tigra", "toxin", "triton", "venom", "vermin", "victor", "viper", "vision", "vixen", "waller", "wally", "wanda", "wiccan", "widow", "wilson", "winter", "wizard", "krypto", "damian", "jordan", "kovacs", "oswald", "billy", "manta", "ocean", "thawne", "trigon", "lucius", "vicki", "terra", "conner", "dream", "death", "veidt", "grundy", "chloe", "anarky", "apollo", "hermes", "kendra", "palmer", "trevor", "jonzz", "merlin", "lawton", "diablo", "shark", "rayner", "sivana", "xavier", "iceman", "gambit", "harry", "blaze", "domino", "knull", "selene", "legion", "betsy", "sauron", "stryfe", "madrox", "howard", "pixie", "marrow", "leech", "belova", "karla", "kenobi", "windu", "anakin", "ahsoka", "quigon", "vader", "dooku", "tarkin", "thrawn", "organa", "ackbar", "wedge", "lando", "jango", "bossk", "greedo", "djarin", "mando", "grogu", "padme", "jarjar", "jabba", "artoo", "chewie", "potter", "ginny", "ronald", "sirius", "lupin", "draco", "riddle", "nagini", "albus", "snape", "hagrid", "dobby", "hedwig", "vernon", "dudley"]);
+const WORDLE_DIFICIL = new Set(["relic", "abyss", "adder", "agger", "ahura", "albert", "alecto", "aleta", "algrim", "alura", "amber", "amiko", "angmo", "aquon", "arkin", "ayala", "basil", "bernie", "brett", "caiera", "cathy", "chondu", "chung", "clash", "crang", "curse", "daemon", "dargo", "darla", "davos", "debra", "deeds", "deidre", "dekker", "demara", "desak", "devoux", "devoz", "dinesh", "dollar", "dunphy", "eisen", "eldrac", "elijah", "elsie", "ferro", "flint", "freyja", "frost", "gazer", "gentry", "gibney", "gnucci", "gorath", "greer", "grotto", "hannu", "hermod", "hoder", "hudson", "ithan", "jolena", "joseph", "juarez", "justin", "kaplan", "katma", "kelda", "koenig", "krylov", "kudzu", "kurse", "laira", "lasher", "lazaer", "leland", "lohmer", "lotus", "lucca", "lulumu", "lyons", "macha", "madcap", "madman", "magni", "mahkwa", "major", "malik", "mallen", "maxam", "maxon", "mciver", "menace", "mendel", "metron", "mogul", "mosaic", "nadia", "nagan", "native", "nimue", "nobili", "ogord", "payne", "phage", "pierce", "powell", "pratt", "quire", "rachel", "rages", "randac", "razer", "reader", "rikki", "romeo", "roxxon", "saxon", "scurry", "seeker", "shado", "sharon", "shuma", "skagg", "slyde", "sodam", "solem", "spirit", "stakar", "sterns", "stryke", "sunset", "tania", "teddy", "thorne", "torres", "tucker", "turtle", "twain", "tyger", "utgard", "uumaru", "vance", "vapor", "vaughn", "vector", "vidar", "vortex", "wallow", "wheel", "willie", "yalan", "zander", "zaran", "zarrko", "zyozi", "capers", "sunen", "kronos", "zuras", "sawyer", "zorel", "renee", "julie", "maroni", "sionis", "mardon", "emiko", "salaak", "arisia", "bleez", "krona", "oberon", "phobos", "deimos", "mervyn", "hollis", "pedro", "tawky", "larry", "rouge", "dodds", "knight", "jakeem", "damage", "pieter", "ranzz", "tyroc", "bibbo", "mercy", "drury", "maxie", "harper", "psimon", "lilith", "eddie", "skeets", "isabel", "siren", "catman", "zucco", "hestia", "hecate", "arella", "chimp", "occult", "bufkin", "prince", "beauty", "maxine", "osiris", "bekka", "vykin", "takion", "lonar", "heggra", "hiroim", "xemnu", "wyatt", "chance", "topaz", "byrrah", "lopez", "genis", "sunder", "mimic", "nikki", "aaron", "static", "xombi", "mundi", "shaak", "yaddle", "bendu", "sheev", "savage", "ozzel", "needa", "motti", "dedra", "syril", "biggs", "lobot", "wesell", "aurra", "vanth", "satine", "gunray", "poggle", "trench", "durge", "waxer", "dogma", "typho", "bibble", "dryden", "zorba", "rotta", "plutt", "tobias", "huyang", "logray", "paploo", "teebo", "pryde", "connix", "ematt", "tallie", "tekka", "jolee", "juhani", "visas", "kreia", "atton", "greez", "trilla", "baylan", "marrok", "seamus", "crabbe", "goyle", "pansy", "horace", "barty", "avery", "yaxley", "fenrir", "amycus", "sprout", "hooch", "binns", "filius", "sybill", "padma", "hannah", "ernie", "susan", "maxime", "winky", "grawp", "marge", "crouch", "rufus", "bagman", "rowena", "helga", "gallia", "unduli", "offee", "saesee", "indara", "qimir", "malgus", "tagge", "wexley", "jannah", "zorii", "bazine", "ketsu", "tambor", "cliegg", "dexter", "mynock", "krayt", "acklay", "daala", "jacen", "jaina", "karrde"]);
 function wordleNivelDe(p) { return WORDLE_FACIL.has(p.palabra) ? 'facil' : (WORDLE_DIFICIL.has(p.palabra) ? 'dificil' : 'medio'); }
 
 const WORDLE_INTENTOS = 6;
@@ -25819,10 +25905,14 @@ let wordleTerminado = false;
 let wordleEstadosTeclas = {};
 let wordleNivel = (function(){ try { const n = localStorage.getItem('wordle-nivel'); return ['facil','medio','dificil'].includes(n) ? n : 'medio'; } catch (e) { return 'medio'; } })();
 // Categoría de personajes compartida por Wordle, Ahorcado y Conexiones: 'mdc' = Marvel y DC, 'sw' = Star Wars.
-let juegoCat = (function () { try { return localStorage.getItem('juego-cat') === 'sw' ? 'sw' : 'mdc'; } catch (e) { return 'mdc'; } })();
-const JUEGO_CAT_TXT = { mdc: 'Marvel y DC', sw: 'Star Wars' };
-function catSuf() { return juegoCat === 'sw' ? '-sw' : ''; }
-function catDe(p) { return (p.universo === 'Star Wars') === (juegoCat === 'sw'); }
+let juegoCat = (function () { try { const c = localStorage.getItem('juego-cat'); return c === 'sw' || c === 'hp' ? c : 'mdc'; } catch (e) { return 'mdc'; } })();
+const JUEGO_CAT_TXT = { mdc: 'Marvel y DC', sw: 'Star Wars', hp: 'Harry Potter' };
+const CAT_UNIVERSO = { sw: 'Star Wars', hp: 'Harry Potter' };   // universo de cada categoría (mdc = todo lo demás)
+const CAT_SEMILLA = { mdc: 0, sw: 1, hp: 2 };
+function catSuf() { return juegoCat === 'mdc' ? '' : '-' + juegoCat; }
+function catUniversoEs(u) { return juegoCat === 'mdc' ? !Object.values(CAT_UNIVERSO).includes(u) : u === CAT_UNIVERSO[juegoCat]; }
+function catDe(p) { return catUniversoEs(p.universo); }
+function catTitulo() { return juegoCat === 'mdc' ? '' : ' ' + JUEGO_CAT_TXT[juegoCat]; }
 const WORDLE_NIVEL_TXT = { facil: 'Fácil', medio: 'Medio', dificil: 'Difícil' };
 let wordlePistasVistas = 0; // 0 = ninguna, 1 = pista de tipo y universo, 2 = también el equipo
 
@@ -25838,7 +25928,7 @@ function wordlePool() {
 
 function wordleOrdenFijo() {
     const idx = wordlePool().map((_, i) => i);
-    let semilla = 20261015 + ({ facil: 0, medio: 7, dificil: 13 })[wordleNivel] + (juegoCat === 'sw' ? 5000 : 0);
+    let semilla = 20261015 + ({ facil: 0, medio: 7, dificil: 13 })[wordleNivel] + CAT_SEMILLA[juegoCat] * 5000;
     const azar = () => { semilla = (semilla * 1664525 + 1013904223) % 4294967296; return semilla / 4294967296; };
     for (let i = idx.length - 1; i > 0; i--) {
         const j = Math.floor(azar() * (i + 1));
@@ -25904,7 +25994,7 @@ function wordleActualizarRacha(gano) {
 
 function wordleGuardarEstadistica(gano, nIntentos) {
     try {
-        const ref = db.collection('estadisticas').doc(juegoCat === 'sw' ? 'wordle-personajes-sw-' + wordleNivel : (wordleNivel === 'medio' ? 'wordle-personajes' : 'wordle-personajes-' + wordleNivel));
+        const ref = db.collection('estadisticas').doc(juegoCat !== 'mdc' ? 'wordle-personajes' + catSuf() + '-' + wordleNivel : (wordleNivel === 'medio' ? 'wordle-personajes' : 'wordle-personajes-' + wordleNivel));
         const inc = firebase.firestore.FieldValue.increment;
         const datos = { totalPartidas: inc(1), totalGanadas: inc(gano ? 1 : 0), totalIntentosGanados: inc(gano ? nIntentos : 0) };
         ref.set(datos, { merge: true }).then(() => ref.get()).then(doc => {
@@ -26021,7 +26111,7 @@ function wordleMensaje(texto, tipo) {
 function wordleTextoCompartir() {
     const emoji = { correcta: '🟩', presente: '🟨', ausente: '⬛' };
     const gano = wordleIntentos[wordleIntentos.length - 1] === wordleSecreta.palabra;
-    const titulo = wordleModo === 'diaria' ? 'Wordle de Personajes' + (juegoCat === 'sw' ? ' Star Wars' : '') + ' [' + WORDLE_NIVEL_TXT[wordleNivel] + '] ' + wordleFechaHoy() : 'Wordle de Personajes' + (juegoCat === 'sw' ? ' Star Wars' : '') + ' [' + WORDLE_NIVEL_TXT[wordleNivel] + '] (al azar)';
+    const titulo = wordleModo === 'diaria' ? 'Wordle de Personajes' + catTitulo() + ' [' + WORDLE_NIVEL_TXT[wordleNivel] + '] ' + wordleFechaHoy() : 'Wordle de Personajes' + catTitulo() + ' [' + WORDLE_NIVEL_TXT[wordleNivel] + '] (al azar)';
     const lineas = wordleIntentos.map(i => wordleEvaluar(i, wordleSecreta.palabra).map(e => emoji[e]).join(''));
     return `${titulo} ${gano ? wordleIntentos.length : 'X'}/${WORDLE_INTENTOS}${wordlePistasVistas ? ' 💡'.repeat(wordlePistasVistas) : ''}\n\n${lineas.join('\n')}`;
 }
@@ -26554,6 +26644,26 @@ const CON_TEMAS = [
     { t: 'Personajes de The Mandalorian', u: 'Star Wars', m: [['Din Djarin', 0], ['Grogu', 0], ['Greef Karga', 1], ['Cara Dune', 1], ['Kuiil', 1], ['Moff Gideon', 1], ['Bo-Katan Kryze', 1], ['Fennec Shand', 1], ['Cobb Vanth', 2], ['La Armera', 2], ['Peli Motto', 2]], incompat: ['Mandalorianos'] },
     { t: 'Personajes de Andor', u: 'Star Wars', m: [['Cassian Andor', 0], ['K-2SO', 1], ['Mon Mothma', 1], ['Luthen Rael', 1], ['Dedra Meero', 2], ['Syril Karn', 2], ['Maarva Andor', 2], ['Kino Loy', 2], ['Vel Sartha', 2], ['Bix Caleen', 2]] },
     { t: 'Padawans famosos', u: 'Star Wars', m: [['Anakin Skywalker', 0], ['Ahsoka Tano', 0], ['Obi-Wan Kenobi', 0], ['Luke Skywalker', 0], ['Ezra Bridger', 1], ['Rey', 1], ['Cal Kestis', 2], ['Barriss Offee', 2], ['Ben Solo', 1]], incompat: ['Jedi', 'Maestros del Consejo Jedi', 'La familia Skywalker'] },
+    // ---- Harry Potter
+    { t: 'El trío de oro y amigos', u: 'Harry Potter', m: [['Harry Potter', 0], ['Hermione Granger', 0], ['Ron Weasley', 0], ['Neville Longbottom', 1], ['Luna Lovegood', 1], ['Ginny Weasley', 1], ['Dean Thomas', 2], ['Seamus Finnigan', 2]], incompat: ['Familia Weasley', 'Familia Weasley (hijos)'] },
+    { t: 'Familia Weasley (hijos)', u: 'Harry Potter', m: [['Ron Weasley', 0], ['Ginny Weasley', 0], ['Fred Weasley', 0], ['George Weasley', 0], ['Percy Weasley', 1], ['Bill Weasley', 1], ['Charlie Weasley', 2]], incompat: ['Familia Weasley', 'El trío de oro y amigos'] },
+    { t: 'Casas de Hogwarts', u: 'Harry Potter', m: [['Gryffindor', 0], ['Slytherin', 0], ['Ravenclaw', 0], ['Hufflepuff', 0]] },
+    { t: 'Fundadores de Hogwarts', u: 'Harry Potter', m: [['Godric Gryffindor', 0], ['Salazar Slytherin', 0], ['Rowena Ravenclaw', 1], ['Helga Hufflepuff', 1]], incompat: ['Fundadores de Hogwarts (equipo)'] },
+    { t: 'Profesores de Defensa Contra las Artes Oscuras', u: 'Harry Potter', m: [['Remus Lupin', 0], ['Severus Snape', 0], ['Dolores Umbridge', 0], ['Quirinus Quirrell', 1], ['Gilderoy Lockhart', 1], ['Alastor Moody', 1], ['Amycus Carrow', 2]], incompat: ['Profesores de Hogwarts'] },
+    { t: 'Mortífagos famosos', u: 'Harry Potter', m: [['Bellatrix Lestrange', 0], ['Lucius Malfoy', 0], ['Peter Pettigrew', 1], ['Severus Snape', 1], ['Fenrir Greyback', 2], ['Barty Crouch Jr.', 2], ['Antonin Dolohov', 2], ['Yaxley', 2], ['Walden Macnair', 2]], incompat: ['Mortífagos'] },
+    { t: 'Horrocruxes', u: 'Harry Potter', m: [['Diario de Tom Riddle', 0], ['Nagini', 0], ['Anillo de Gaunt', 1], ['Guardapelo de Slytherin', 1], ['Copa de Hufflepuff', 1], ['Diadema de Ravenclaw', 1], ['Harry Potter', 2]], incompat: ['Mortífagos'] },
+    { t: 'Hechizos', u: 'Harry Potter', m: [['Expelliarmus', 0], ['Expecto Patronum', 0], ['Avada Kedavra', 0], ['Wingardium Leviosa', 0], ['Lumos', 0], ['Crucio', 1], ['Alohomora', 1], ['Accio', 1], ['Stupefy', 1], ['Obliviate', 2], ['Riddikulus', 2], ['Sectumsempra', 2], ['Petrificus Totalus', 2]] },
+    { t: 'Asignaturas de Hogwarts', u: 'Harry Potter', m: [['Pociones', 0], ['Transformaciones', 0], ['Herbología', 1], ['Encantamientos', 1], ['Adivinación', 1], ['Astronomía', 2], ['Historia de la Magia', 2], ['Aritmancia', 2], ['Runas Antiguas', 2], ['Cuidado de Criaturas Mágicas', 2], ['Vuelo', 2]] },
+    { t: 'Criaturas mágicas', u: 'Harry Potter', m: [['Hipogrifo', 0], ['Dementor', 0], ['Basilisco', 0], ['Fénix', 0], ['Dragón', 0], ['Thestral', 1], ['Acromántula', 1], ['Boggart', 1], ['Troll', 1], ['Centauro', 1], ['Elfo doméstico', 1]], incompat: ['Criaturas mágicas (equipo)'] },
+    { t: 'Lugares del mundo mágico', u: 'Harry Potter', m: [['Hogwarts', 0], ['Hogsmeade', 0], ['Callejón Diagon', 0], ['Azkaban', 0], ['Gringotts', 1], ['Bosque Prohibido', 1], ['La Madriguera', 1], ['Ministerio de Magia', 1], ['Cámara de los Secretos', 1], ['Sala de los Menesteres', 2], ['Grimmauld Place', 2], ['Valle de Godric', 2], ['Sauce Boxeador', 2]] },
+    { t: 'Libros de Harry Potter', u: 'Harry Potter', m: [['La piedra filosofal', 0], ['La cámara secreta', 0], ['El prisionero de Azkaban', 0], ['El cáliz de fuego', 0], ['La orden del Fénix', 1], ['El misterio del príncipe', 1], ['Las reliquias de la muerte', 1], ['El niño maldito', 2]] },
+    { t: 'Quidditch', u: 'Harry Potter', m: [['Buscador', 0], ['Snitch Dorada', 0], ['Cazador', 1], ['Golpeador', 1], ['Guardián', 1], ['Quaffle', 1], ['Bludger', 1], ['Saeta de Fuego', 2], ['Nimbus 2000', 2]] },
+    { t: 'Actores de Harry Potter', u: 'Harry Potter', m: [['Daniel Radcliffe', 0], ['Emma Watson', 0], ['Rupert Grint', 0], ['Alan Rickman', 0], ['Ralph Fiennes', 0], ['Tom Felton', 1], ['Maggie Smith', 1], ['Michael Gambon', 1], ['Richard Harris', 1], ['Helena Bonham Carter', 1], ['Gary Oldman', 1], ['Robbie Coltrane', 1]] },
+    // ---- Star Wars (más)
+    { t: 'Criaturas de Star Wars (fauna)', u: 'Star Wars', m: [['Rancor', 0], ['Wampa', 0], ['Tauntaun', 0], ['Porg', 0], ['Bantha', 1], ['Sarlacc', 1], ['Dewback', 2], ['Mynock', 2], ['Dragón Krayt', 2]], incompat: ['Criaturas de Star Wars'] },
+    { t: 'Armas y objetos de Star Wars', u: 'Star Wars', m: [['Sable de luz', 0], ['Blaster', 0], ['Sable oscuro', 2], ['Ballesta wookiee', 2], ['Detonador térmico', 2], ['Sable de luz doble', 1], ['Holocrón', 2], ['Beskar', 1]] },
+    { t: 'Actores de Star Wars', u: 'Star Wars', m: [['Mark Hamill', 0], ['Harrison Ford', 0], ['Carrie Fisher', 0], ['Ewan McGregor', 0], ['Pedro Pascal', 0], ['Samuel L. Jackson', 0], ['Natalie Portman', 1], ['Hayden Christensen', 1], ['Daisy Ridley', 1], ['Adam Driver', 1], ['Oscar Isaac', 1], ['Diego Luna', 1], ['Alec Guinness', 1], ['Liam Neeson', 1], ['Ian McDiarmid', 2], ['Anthony Daniels', 2]] },
+    { t: 'Bandos de las Guerras Clon', u: 'Star Wars', m: [['República Galáctica', 0], ['Separatistas', 0], ['Orden Jedi', 1], ['Ejército Droide', 1], ['Soldados Clon', 0], ['Gremio Bancario', 2], ['Federación de Comercio', 2], ['Hermanas de la Noche', 2]] },
 ];
 const CON_COLORES = ['amarillo', 'verde', 'azul', 'violeta'];
 const CON_EMOJI = { amarillo: '🟨', verde: '🟩', azul: '🟦', violeta: '🟪' };
@@ -26661,7 +26771,7 @@ function conConstruirGrupos() {
 }
 
 function conGenerar(nivel, rng) {
-    const todos = conConstruirGrupos().filter(g => (g.universo === 'Star Wars') === (juegoCat === 'sw'));
+    const todos = conConstruirGrupos().filter(g => catUniversoEs(g.universo));
     const maxNivel = nivel === 'facil' ? 0 : nivel === 'medio' ? 1 : 2;
     let aptos = todos.filter(g => nivel === 'facil' ? g.aptoFacil : nivel === 'medio' ? (g.aptoMedio || g.aptoFacil) : true);
     for (let intento = 0; intento < 300; intento++) {
@@ -26770,7 +26880,7 @@ function conAlternar(id) {
 function conTextoCompartir() {
     const titulo = conModo === 'diaria' ? 'Conexiones ' + wordleFechaHoy() : 'Conexiones (al azar)';
     const lineas = conIntentos.map(it => it.map(gi => CON_EMOJI[conPuzzle.grupos[gi].color]).join(''));
-    return `${titulo}${juegoCat === 'sw' ? ' Star Wars' : ''} [${CON_NIVEL_TXT[conNivel]}] ${conResueltos.length === 4 && conErrores < 4 ? conErrores + ' errores' : 'X'}\n\n${lineas.join('\n')}`;
+    return `${titulo}${catTitulo()} [${CON_NIVEL_TXT[conNivel]}] ${conResueltos.length === 4 && conErrores < 4 ? conErrores + ' errores' : 'X'}\n\n${lineas.join('\n')}`;
 }
 
 function conTerminar(gano) {
@@ -26827,7 +26937,7 @@ function conIniciar(modo) {
         if (g) {
             conPuzzle = g.puzzle; conOrden = g.orden; conResueltos = g.resueltos || []; conErrores = g.errores || 0; conIntentos = g.intentos || []; conTerminado = !!g.terminado;
         } else {
-            conPuzzle = conGenerar(conNivel, conRng(conFechaSemilla({ facil: 1, medio: 2, dificil: 3 }[conNivel] * 7919 + (juegoCat === 'sw' ? 211 : 0))));
+            conPuzzle = conGenerar(conNivel, conRng(conFechaSemilla({ facil: 1, medio: 2, dificil: 3 }[conNivel] * 7919 + CAT_SEMILLA[juegoCat] * 211)));
         }
         if (sub) sub.textContent = `Conexiones del día (${JUEGO_CAT_TXT[juegoCat]}, ${CON_NIVEL_TXT[conNivel]}): encontrá los 4 grupos de 4 personajes. Es la misma para todos. Tenés 4 errores.`;
     } else {
@@ -26916,7 +27026,9 @@ const AH_NOMBRE_FIJO = {
     // Star Wars: nombre con el que se conoce al personaje
     anakin: 'Anakin Skywalker', vader: 'Darth Vader', dooku: 'Conde Dooku', sheev: 'Darth Sidious', kenobi: 'Obi-Wan Kenobi',
     organa: 'Leia Organa', mando: 'El Mandaloriano', trilla: 'Trilla Suduri', chewie: 'Chewbacca', artoo: 'R2-D2', kaytoo: 'K-2SO',
-    hunter: 'Hunter', omega: 'Omega'
+    hunter: 'Hunter', omega: 'Omega', qimir: 'Qimir', beebee: 'BB-8',
+    // Harry Potter
+    riddle: 'Lord Voldemort', potter: 'Harry Potter', ronald: 'Ron Weasley', lupin: 'Remus Lupin', malfoy: 'Lucius Malfoy', draco: 'Draco Malfoy'
 };
 function ahNombreDe(p) {
     if (AH_NOMBRE_FIJO[p.palabra]) return AH_NOMBRE_FIJO[p.palabra];
@@ -27224,7 +27336,7 @@ function ahMostrarFinal() {
 function ahTextoCompartir() {
     const nom = { facil: 'Fácil', medio: 'Medio', dificil: 'Difícil' }[ahNivel];
     const dib = '🟥'.repeat(ahErrores) + '⬜'.repeat(AH_MAX_ERRORES - ahErrores);
-    return `Ahorcado de Personajes${juegoCat === 'sw' ? ' Star Wars' : ''} (${nom}) ${ahGano ? '✅' : '❌'}\n${dib}\nEl Multiverso`;
+    return `Ahorcado de Personajes${catTitulo()} (${nom}) ${ahGano ? '✅' : '❌'}\n${dib}\nEl Multiverso`;
 }
 
 function ahIniciar(modo) {
@@ -27246,7 +27358,7 @@ function ahIniciar(modo) {
             if (ahItem) { ahLetras = new Set(g.letras || []); ahErrores = g.errores || 0; ahTerminado = !!g.terminado; ahGano = !!g.gano; }
         }
         if (!ahItem || !g) {
-            const rng = conRng(conFechaSemilla({ facil: 11, medio: 13, dificil: 17 }[ahNivel] * 104729 + (juegoCat === 'sw' ? 331 : 0)));
+            const rng = conRng(conFechaSemilla({ facil: 11, medio: 13, dificil: 17 }[ahNivel] * 104729 + CAT_SEMILLA[juegoCat] * 331));
             ahItem = pool[Math.floor(rng() * pool.length)];
         }
         if (sub) sub.textContent = `Ahorcado del día (${JUEGO_CAT_TXT[juegoCat]}, ${nombreNivel}): adiviná el nombre del personaje. Solo se ve la letra inicial. Tenés ${AH_MAX_ERRORES} errores.`;
@@ -28023,13 +28135,14 @@ if (adpBtnCompartir) {
 // ============================================================
 // JUEGO "BINGO DEL MULTIVERSO" (cartón 5x5 + bolillero + 2 rivales CPU)
 // ============================================================
-const BG_FUENTES = { todo: 'Marvel y DC', marvel: 'Marvel', dc: 'DC', starwars: 'Star Wars', obras: 'Películas y series' };
+const BG_FUENTES = { todo: 'Marvel y DC', marvel: 'Marvel', dc: 'DC', starwars: 'Star Wars', hp: 'Harry Potter', obras: 'Películas y series' };
 const BG_MODOS = { linea: 'Línea', lleno: 'Cartón lleno' };
 const BG_TOTAL = 75;
 const BG_RIVALES = {
     marvel: ['Nick Fury', 'Rocket', 'Jarvis', 'Maria Hill', 'Happy Hogan', 'Howard el Pato'],
     dc: ['Alfred', 'Amanda Waller', 'Oracle', 'Lucius Fox', 'Detective Chimp', 'Krypto'],
     starwars: ['Almirante Ackbar', 'Maz Kanata', 'Jabba', 'Lando', 'Mon Mothma', 'Huyang'],
+    hp: ['Hagrid', 'Dobby', 'Fawkes', 'Argus Filch', 'Madame Pomfrey', 'Kreacher'],
     obras: ['Stan Lee', 'Cinéfilo del barrio', 'Crítico de turno', 'Tío del videoclub', 'Maratonero', 'Fan de las post-créditos']
 };
 BG_RIVALES.todo = [...BG_RIVALES.marvel.slice(0, 3), ...BG_RIVALES.dc.slice(0, 3)];
@@ -28065,7 +28178,7 @@ function bgPoolFuente() {
         WORDLE_PALABRAS.forEach(p => {
             if (bgFuente === 'marvel' && p.universo !== 'Marvel') return;
             if (bgFuente === 'dc' && p.universo !== 'DC') return;
-            if (bgFuente === 'starwars' ? p.universo !== 'Star Wars' : p.universo === 'Star Wars') return;
+            if (bgFuente === 'starwars' ? p.universo !== 'Star Wars' : (bgFuente === 'hp' ? p.universo !== 'Harry Potter' : (p.universo === 'Star Wars' || p.universo === 'Harry Potter'))) return;
             let img = null;
             try { img = imagenDePersonaje(p.palabra); } catch (e) {}
             add(ahNombreDe(p), p.universo, img);
@@ -28136,7 +28249,7 @@ function bgDibujarBola(animar) {
     const bola = document.getElementById('bg-bola');
     const num = document.getElementById('bg-bola-n');
     const hist = document.getElementById('bg-historial');
-    if (num) num.textContent = `Bolilla ${bgSalidas} / ${BG_TOTAL}`;
+    if (num) num.textContent = `Bolilla ${bgSalidas} / ${bgOrden.length || BG_TOTAL}`;
     if (bola) {
         bola.innerHTML = '';
         bola.className = 'bg-bola';
@@ -28160,7 +28273,7 @@ function bgDibujarBola(animar) {
 
 function bgActualizarBotones() {
     const sacar = document.getElementById('bg-btn-sacar'), bingo = document.getElementById('bg-btn-bingo'), auto = document.getElementById('bg-btn-auto');
-    if (sacar) sacar.disabled = bgTerminado || bgSalidas >= BG_TOTAL;
+    if (sacar) sacar.disabled = bgTerminado || bgSalidas >= bgOrden.length;
     if (bingo) bingo.disabled = bgTerminado;
     if (auto) auto.disabled = bgTerminado;
 }
@@ -28213,7 +28326,7 @@ function bgSacar() {
     // Si algún rival ya tenía bingo con la bolilla anterior, lo canta antes de que salga la siguiente
     const rival = bgRivales.find(r => bgGanaCon(r.marcas));
     if (rival) return bgTerminar(false, rival.nombre);
-    if (bgSalidas >= BG_TOTAL) return bgTerminar(false, '');
+    if (bgSalidas >= bgOrden.length) return bgTerminar(false, '');
     const idx = bgOrden[bgSalidas];
     bgSalidas++;
     bgRivales.forEach(r => { const p = r.carton.indexOf(idx); if (p !== -1 && bgRngCpu() < 0.88) r.marcas[p] = true; });  // los rivales a veces se distraen
@@ -28281,7 +28394,7 @@ function bgIniciar(partida) {
         try { g = JSON.parse(localStorage.getItem(bgClaveLocal()) || 'null'); } catch (e) {}
         if (g && g.fecha === wordleFechaHoy() && g.terminado) {
             // ya se jugó hoy: se muestra el resultado y el tablero como quedó
-            bgSalidas = Math.min(BG_TOTAL, g.bolillas || 0);
+            bgSalidas = Math.min(bgOrden.length, g.bolillas || 0);
             bgOrden.slice(0, bgSalidas).forEach(idx => { const p = bgCarton.indexOf(idx); if (p !== -1 && g.gano) bgMarcas[p] = true; bgRivales.forEach(r => { const q = r.carton.indexOf(idx); if (q !== -1) r.marcas[q] = true; }); });
             bgTerminado = true; bgGano = !!g.gano; bgGanador = g.ganador || '';
             bgDibujarCarton(); bgDibujarBola(false); bgMostrarFinal();

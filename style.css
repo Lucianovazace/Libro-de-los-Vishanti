@@ -2063,3 +2063,6 @@ h2 {
 
 .bg-bola.u-starwars { background: radial-gradient(circle at 35% 30%, #ffe27a, #b8860b 62%, #4a3500); border-color: #fff0b3; }
 .bg-celda.u-starwars { border-color: #8a6d00; }
+
+.bg-bola.u-harrypotter { background: radial-gradient(circle at 35% 30%, #c9a0ff, #6a3fb0 62%, #26104a); border-color: #e6d4ff; }
+.bg-celda.u-harrypotter { border-color: #5b3a99; }
