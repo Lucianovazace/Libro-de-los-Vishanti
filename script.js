@@ -25852,6 +25852,193 @@ const WORDLE_PALABRAS = [
     { palabra: "jacen", nombre: "Jacen Solo", universo: "Star Wars", equipo: "Legends", tipo: "Antihéroe" },
     { palabra: "jaina", nombre: "Jaina Solo", universo: "Star Wars", equipo: "Legends", tipo: "Héroe" },
     { palabra: "karrde", nombre: "Talon Karrde", universo: "Star Wars", equipo: "Legends", tipo: "Aliado" },
+    { palabra: "eevee", nombre: "Eevee", universo: "Pokémon", equipo: "Kanto (1.ª gen)", tipo: "Normal" },
+    { palabra: "raichu", nombre: "Raichu", universo: "Pokémon", equipo: "Kanto (1.ª gen)", tipo: "Eléctrico" },
+    { palabra: "mewtwo", nombre: "Mewtwo", universo: "Pokémon", equipo: "Legendarios y Míticos", tipo: "Psíquico" },
+    { palabra: "gengar", nombre: "Gengar", universo: "Pokémon", equipo: "Kanto (1.ª gen)", tipo: "Fantasma" },
+    { palabra: "lapras", nombre: "Lapras", universo: "Pokémon", equipo: "Kanto (1.ª gen)", tipo: "Agua" },
+    { palabra: "ditto", nombre: "Ditto", universo: "Pokémon", equipo: "Kanto (1.ª gen)", tipo: "Normal" },
+    { palabra: "vulpix", nombre: "Vulpix", universo: "Pokémon", equipo: "Kanto (1.ª gen)", tipo: "Fuego" },
+    { palabra: "meowth", nombre: "Meowth", universo: "Pokémon", equipo: "Kanto (1.ª gen)", tipo: "Normal" },
+    { palabra: "zubat", nombre: "Zubat", universo: "Pokémon", equipo: "Kanto (1.ª gen)", tipo: "Veneno" },
+    { palabra: "golbat", nombre: "Golbat", universo: "Pokémon", equipo: "Kanto (1.ª gen)", tipo: "Veneno" },
+    { palabra: "mankey", nombre: "Mankey", universo: "Pokémon", equipo: "Kanto (1.ª gen)", tipo: "Lucha" },
+    { palabra: "ponyta", nombre: "Ponyta", universo: "Pokémon", equipo: "Kanto (1.ª gen)", tipo: "Fuego" },
+    { palabra: "cubone", nombre: "Cubone", universo: "Pokémon", equipo: "Kanto (1.ª gen)", tipo: "Tierra" },
+    { palabra: "rhydon", nombre: "Rhydon", universo: "Pokémon", equipo: "Kanto (1.ª gen)", tipo: "Tierra" },
+    { palabra: "staryu", nombre: "Staryu", universo: "Pokémon", equipo: "Kanto (1.ª gen)", tipo: "Agua" },
+    { palabra: "magmar", nombre: "Magmar", universo: "Pokémon", equipo: "Kanto (1.ª gen)", tipo: "Fuego" },
+    { palabra: "pinsir", nombre: "Pinsir", universo: "Pokémon", equipo: "Kanto (1.ª gen)", tipo: "Bicho" },
+    { palabra: "tauros", nombre: "Tauros", universo: "Pokémon", equipo: "Kanto (1.ª gen)", tipo: "Normal" },
+    { palabra: "kabuto", nombre: "Kabuto", universo: "Pokémon", equipo: "Kanto (1.ª gen)", tipo: "Roca" },
+    { palabra: "zapdos", nombre: "Zapdos", universo: "Pokémon", equipo: "Legendarios y Míticos", tipo: "Eléctrico" },
+    { palabra: "gastly", nombre: "Gastly", universo: "Pokémon", equipo: "Kanto (1.ª gen)", tipo: "Fantasma" },
+    { palabra: "machop", nombre: "Machop", universo: "Pokémon", equipo: "Kanto (1.ª gen)", tipo: "Lucha" },
+    { palabra: "oddish", nombre: "Oddish", universo: "Pokémon", equipo: "Kanto (1.ª gen)", tipo: "Planta" },
+    { palabra: "gloom", nombre: "Gloom", universo: "Pokémon", equipo: "Kanto (1.ª gen)", tipo: "Planta" },
+    { palabra: "paras", nombre: "Paras", universo: "Pokémon", equipo: "Kanto (1.ª gen)", tipo: "Bicho" },
+    { palabra: "doduo", nombre: "Doduo", universo: "Pokémon", equipo: "Kanto (1.ª gen)", tipo: "Normal" },
+    { palabra: "dodrio", nombre: "Dodrio", universo: "Pokémon", equipo: "Kanto (1.ª gen)", tipo: "Normal" },
+    { palabra: "grimer", nombre: "Grimer", universo: "Pokémon", equipo: "Kanto (1.ª gen)", tipo: "Veneno" },
+    { palabra: "krabby", nombre: "Krabby", universo: "Pokémon", equipo: "Kanto (1.ª gen)", tipo: "Agua" },
+    { palabra: "horsea", nombre: "Horsea", universo: "Pokémon", equipo: "Kanto (1.ª gen)", tipo: "Agua" },
+    { palabra: "seadra", nombre: "Seadra", universo: "Pokémon", equipo: "Kanto (1.ª gen)", tipo: "Agua" },
+    { palabra: "golem", nombre: "Golem", universo: "Pokémon", equipo: "Kanto (1.ª gen)", tipo: "Roca" },
+    { palabra: "pichu", nombre: "Pichu", universo: "Pokémon", equipo: "Johto (2.ª gen)", tipo: "Eléctrico" },
+    { palabra: "togepi", nombre: "Togepi", universo: "Pokémon", equipo: "Johto (2.ª gen)", tipo: "Hada" },
+    { palabra: "mareep", nombre: "Mareep", universo: "Pokémon", equipo: "Johto (2.ª gen)", tipo: "Eléctrico" },
+    { palabra: "marill", nombre: "Marill", universo: "Pokémon", equipo: "Johto (2.ª gen)", tipo: "Agua" },
+    { palabra: "hoppip", nombre: "Hoppip", universo: "Pokémon", equipo: "Johto (2.ª gen)", tipo: "Planta" },
+    { palabra: "wooper", nombre: "Wooper", universo: "Pokémon", equipo: "Johto (2.ª gen)", tipo: "Agua" },
+    { palabra: "espeon", nombre: "Espeon", universo: "Pokémon", equipo: "Johto (2.ª gen)", tipo: "Psíquico" },
+    { palabra: "unown", nombre: "Unown", universo: "Pokémon", equipo: "Johto (2.ª gen)", tipo: "Psíquico" },
+    { palabra: "pineco", nombre: "Pineco", universo: "Pokémon", equipo: "Johto (2.ª gen)", tipo: "Bicho" },
+    { palabra: "gligar", nombre: "Gligar", universo: "Pokémon", equipo: "Johto (2.ª gen)", tipo: "Tierra" },
+    { palabra: "scizor", nombre: "Scizor", universo: "Pokémon", equipo: "Johto (2.ª gen)", tipo: "Bicho" },
+    { palabra: "slugma", nombre: "Slugma", universo: "Pokémon", equipo: "Johto (2.ª gen)", tipo: "Fuego" },
+    { palabra: "swinub", nombre: "Swinub", universo: "Pokémon", equipo: "Johto (2.ª gen)", tipo: "Hielo" },
+    { palabra: "phanpy", nombre: "Phanpy", universo: "Pokémon", equipo: "Johto (2.ª gen)", tipo: "Tierra" },
+    { palabra: "elekid", nombre: "Elekid", universo: "Pokémon", equipo: "Johto (2.ª gen)", tipo: "Eléctrico" },
+    { palabra: "magby", nombre: "Magby", universo: "Pokémon", equipo: "Johto (2.ª gen)", tipo: "Fuego" },
+    { palabra: "raikou", nombre: "Raikou", universo: "Pokémon", equipo: "Legendarios y Míticos", tipo: "Eléctrico" },
+    { palabra: "entei", nombre: "Entei", universo: "Pokémon", equipo: "Legendarios y Míticos", tipo: "Fuego" },
+    { palabra: "lugia", nombre: "Lugia", universo: "Pokémon", equipo: "Legendarios y Míticos", tipo: "Psíquico" },
+    { palabra: "celebi", nombre: "Celebi", universo: "Pokémon", equipo: "Legendarios y Míticos", tipo: "Planta" },
+    { palabra: "mudkip", nombre: "Mudkip", universo: "Pokémon", equipo: "Hoenn (3.ª gen)", tipo: "Agua" },
+    { palabra: "ralts", nombre: "Ralts", universo: "Pokémon", equipo: "Hoenn (3.ª gen)", tipo: "Psíquico" },
+    { palabra: "kirlia", nombre: "Kirlia", universo: "Pokémon", equipo: "Hoenn (3.ª gen)", tipo: "Psíquico" },
+    { palabra: "absol", nombre: "Absol", universo: "Pokémon", equipo: "Hoenn (3.ª gen)", tipo: "Siniestro" },
+    { palabra: "lairon", nombre: "Lairon", universo: "Pokémon", equipo: "Hoenn (3.ª gen)", tipo: "Acero" },
+    { palabra: "aggron", nombre: "Aggron", universo: "Pokémon", equipo: "Hoenn (3.ª gen)", tipo: "Acero" },
+    { palabra: "mawile", nombre: "Mawile", universo: "Pokémon", equipo: "Hoenn (3.ª gen)", tipo: "Acero" },
+    { palabra: "flygon", nombre: "Flygon", universo: "Pokémon", equipo: "Hoenn (3.ª gen)", tipo: "Tierra" },
+    { palabra: "cacnea", nombre: "Cacnea", universo: "Pokémon", equipo: "Hoenn (3.ª gen)", tipo: "Planta" },
+    { palabra: "swablu", nombre: "Swablu", universo: "Pokémon", equipo: "Hoenn (3.ª gen)", tipo: "Normal" },
+    { palabra: "baltoy", nombre: "Baltoy", universo: "Pokémon", equipo: "Hoenn (3.ª gen)", tipo: "Tierra" },
+    { palabra: "feebas", nombre: "Feebas", universo: "Pokémon", equipo: "Hoenn (3.ª gen)", tipo: "Agua" },
+    { palabra: "glalie", nombre: "Glalie", universo: "Pokémon", equipo: "Hoenn (3.ª gen)", tipo: "Hielo" },
+    { palabra: "spheal", nombre: "Spheal", universo: "Pokémon", equipo: "Hoenn (3.ª gen)", tipo: "Hielo" },
+    { palabra: "bagon", nombre: "Bagon", universo: "Pokémon", equipo: "Hoenn (3.ª gen)", tipo: "Dragón" },
+    { palabra: "beldum", nombre: "Beldum", universo: "Pokémon", equipo: "Hoenn (3.ª gen)", tipo: "Acero" },
+    { palabra: "metang", nombre: "Metang", universo: "Pokémon", equipo: "Hoenn (3.ª gen)", tipo: "Acero" },
+    { palabra: "latias", nombre: "Latias", universo: "Pokémon", equipo: "Legendarios y Míticos", tipo: "Dragón" },
+    { palabra: "latios", nombre: "Latios", universo: "Pokémon", equipo: "Legendarios y Míticos", tipo: "Dragón" },
+    { palabra: "kyogre", nombre: "Kyogre", universo: "Pokémon", equipo: "Legendarios y Míticos", tipo: "Agua" },
+    { palabra: "deoxys", nombre: "Deoxys", universo: "Pokémon", equipo: "Legendarios y Míticos", tipo: "Psíquico" },
+    { palabra: "piplup", nombre: "Piplup", universo: "Pokémon", equipo: "Sinnoh (4.ª gen)", tipo: "Agua" },
+    { palabra: "shinx", nombre: "Shinx", universo: "Pokémon", equipo: "Sinnoh (4.ª gen)", tipo: "Eléctrico" },
+    { palabra: "luxray", nombre: "Luxray", universo: "Pokémon", equipo: "Sinnoh (4.ª gen)", tipo: "Eléctrico" },
+    { palabra: "budew", nombre: "Budew", universo: "Pokémon", equipo: "Sinnoh (4.ª gen)", tipo: "Planta" },
+    { palabra: "gible", nombre: "Gible", universo: "Pokémon", equipo: "Sinnoh (4.ª gen)", tipo: "Dragón" },
+    { palabra: "gabite", nombre: "Gabite", universo: "Pokémon", equipo: "Sinnoh (4.ª gen)", tipo: "Dragón" },
+    { palabra: "riolu", nombre: "Riolu", universo: "Pokémon", equipo: "Sinnoh (4.ª gen)", tipo: "Lucha" },
+    { palabra: "rotom", nombre: "Rotom", universo: "Pokémon", equipo: "Sinnoh (4.ª gen)", tipo: "Eléctrico" },
+    { palabra: "azelf", nombre: "Azelf", universo: "Pokémon", equipo: "Legendarios y Míticos", tipo: "Psíquico" },
+    { palabra: "dialga", nombre: "Dialga", universo: "Pokémon", equipo: "Legendarios y Míticos", tipo: "Acero" },
+    { palabra: "palkia", nombre: "Palkia", universo: "Pokémon", equipo: "Legendarios y Míticos", tipo: "Agua" },
+    { palabra: "arceus", nombre: "Arceus", universo: "Pokémon", equipo: "Legendarios y Míticos", tipo: "Normal" },
+    { palabra: "buizel", nombre: "Buizel", universo: "Pokémon", equipo: "Sinnoh (4.ª gen)", tipo: "Agua" },
+    { palabra: "stunky", nombre: "Stunky", universo: "Pokémon", equipo: "Sinnoh (4.ª gen)", tipo: "Veneno" },
+    { palabra: "bonsly", nombre: "Bonsly", universo: "Pokémon", equipo: "Sinnoh (4.ª gen)", tipo: "Roca" },
+    { palabra: "chatot", nombre: "Chatot", universo: "Pokémon", equipo: "Sinnoh (4.ª gen)", tipo: "Normal" },
+    { palabra: "snivy", nombre: "Snivy", universo: "Pokémon", equipo: "Teselia (5.ª gen)", tipo: "Planta" },
+    { palabra: "tepig", nombre: "Tepig", universo: "Pokémon", equipo: "Teselia (5.ª gen)", tipo: "Fuego" },
+    { palabra: "zorua", nombre: "Zorua", universo: "Pokémon", equipo: "Teselia (5.ª gen)", tipo: "Siniestro" },
+    { palabra: "klink", nombre: "Klink", universo: "Pokémon", equipo: "Teselia (5.ª gen)", tipo: "Acero" },
+    { palabra: "deino", nombre: "Deino", universo: "Pokémon", equipo: "Teselia (5.ª gen)", tipo: "Siniestro" },
+    { palabra: "zekrom", nombre: "Zekrom", universo: "Pokémon", equipo: "Legendarios y Míticos", tipo: "Dragón" },
+    { palabra: "kyurem", nombre: "Kyurem", universo: "Pokémon", equipo: "Legendarios y Míticos", tipo: "Dragón" },
+    { palabra: "keldeo", nombre: "Keldeo", universo: "Pokémon", equipo: "Legendarios y Míticos", tipo: "Agua" },
+    { palabra: "emolga", nombre: "Emolga", universo: "Pokémon", equipo: "Teselia (5.ª gen)", tipo: "Eléctrico" },
+    { palabra: "joltik", nombre: "Joltik", universo: "Pokémon", equipo: "Teselia (5.ª gen)", tipo: "Bicho" },
+    { palabra: "golett", nombre: "Golett", universo: "Pokémon", equipo: "Teselia (5.ª gen)", tipo: "Tierra" },
+    { palabra: "munna", nombre: "Munna", universo: "Pokémon", equipo: "Teselia (5.ª gen)", tipo: "Psíquico" },
+    { palabra: "pidove", nombre: "Pidove", universo: "Pokémon", equipo: "Teselia (5.ª gen)", tipo: "Normal" },
+    { palabra: "archen", nombre: "Archen", universo: "Pokémon", equipo: "Teselia (5.ª gen)", tipo: "Roca" },
+    { palabra: "yamask", nombre: "Yamask", universo: "Pokémon", equipo: "Teselia (5.ª gen)", tipo: "Fantasma" },
+    { palabra: "goomy", nombre: "Goomy", universo: "Pokémon", equipo: "Kalos (6.ª gen)", tipo: "Dragón" },
+    { palabra: "goodra", nombre: "Goodra", universo: "Pokémon", equipo: "Kalos (6.ª gen)", tipo: "Dragón" },
+    { palabra: "klefki", nombre: "Klefki", universo: "Pokémon", equipo: "Kalos (6.ª gen)", tipo: "Acero" },
+    { palabra: "noibat", nombre: "Noibat", universo: "Pokémon", equipo: "Kalos (6.ª gen)", tipo: "Volador" },
+    { palabra: "hoopa", nombre: "Hoopa", universo: "Pokémon", equipo: "Legendarios y Míticos", tipo: "Psíquico" },
+    { palabra: "litleo", nombre: "Litleo", universo: "Pokémon", equipo: "Kalos (6.ª gen)", tipo: "Fuego" },
+    { palabra: "pyroar", nombre: "Pyroar", universo: "Pokémon", equipo: "Kalos (6.ª gen)", tipo: "Fuego" },
+    { palabra: "espurr", nombre: "Espurr", universo: "Pokémon", equipo: "Kalos (6.ª gen)", tipo: "Psíquico" },
+    { palabra: "inkay", nombre: "Inkay", universo: "Pokémon", equipo: "Kalos (6.ª gen)", tipo: "Siniestro" },
+    { palabra: "skrelp", nombre: "Skrelp", universo: "Pokémon", equipo: "Kalos (6.ª gen)", tipo: "Veneno" },
+    { palabra: "tyrunt", nombre: "Tyrunt", universo: "Pokémon", equipo: "Kalos (6.ª gen)", tipo: "Roca" },
+    { palabra: "amaura", nombre: "Amaura", universo: "Pokémon", equipo: "Kalos (6.ª gen)", tipo: "Roca" },
+    { palabra: "rowlet", nombre: "Rowlet", universo: "Pokémon", equipo: "Alola (7.ª gen)", tipo: "Planta" },
+    { palabra: "litten", nombre: "Litten", universo: "Pokémon", equipo: "Alola (7.ª gen)", tipo: "Fuego" },
+    { palabra: "cosmog", nombre: "Cosmog", universo: "Pokémon", equipo: "Legendarios y Míticos", tipo: "Psíquico" },
+    { palabra: "lunala", nombre: "Lunala", universo: "Pokémon", equipo: "Legendarios y Míticos", tipo: "Psíquico" },
+    { palabra: "meltan", nombre: "Meltan", universo: "Pokémon", equipo: "Legendarios y Míticos", tipo: "Acero" },
+    { palabra: "minior", nombre: "Minior", universo: "Pokémon", equipo: "Alola (7.ª gen)", tipo: "Roca" },
+    { palabra: "komala", nombre: "Komala", universo: "Pokémon", equipo: "Alola (7.ª gen)", tipo: "Normal" },
+    { palabra: "drampa", nombre: "Drampa", universo: "Pokémon", equipo: "Alola (7.ª gen)", tipo: "Normal" },
+    { palabra: "comfey", nombre: "Comfey", universo: "Pokémon", equipo: "Alola (7.ª gen)", tipo: "Hada" },
+    { palabra: "wimpod", nombre: "Wimpod", universo: "Pokémon", equipo: "Alola (7.ª gen)", tipo: "Bicho" },
+    { palabra: "sobble", nombre: "Sobble", universo: "Pokémon", equipo: "Galar (8.ª gen)", tipo: "Agua" },
+    { palabra: "toxel", nombre: "Toxel", universo: "Pokémon", equipo: "Galar (8.ª gen)", tipo: "Eléctrico" },
+    { palabra: "dreepy", nombre: "Dreepy", universo: "Pokémon", equipo: "Galar (8.ª gen)", tipo: "Dragón" },
+    { palabra: "zacian", nombre: "Zacian", universo: "Pokémon", equipo: "Legendarios y Míticos", tipo: "Hada" },
+    { palabra: "kubfu", nombre: "Kubfu", universo: "Pokémon", equipo: "Legendarios y Míticos", tipo: "Lucha" },
+    { palabra: "zarude", nombre: "Zarude", universo: "Pokémon", equipo: "Legendarios y Míticos", tipo: "Siniestro" },
+    { palabra: "nickit", nombre: "Nickit", universo: "Pokémon", equipo: "Galar (8.ª gen)", tipo: "Siniestro" },
+    { palabra: "wooloo", nombre: "Wooloo", universo: "Pokémon", equipo: "Galar (8.ª gen)", tipo: "Normal" },
+    { palabra: "yamper", nombre: "Yamper", universo: "Pokémon", equipo: "Galar (8.ª gen)", tipo: "Eléctrico" },
+    { palabra: "applin", nombre: "Applin", universo: "Pokémon", equipo: "Galar (8.ª gen)", tipo: "Planta" },
+    { palabra: "eiscue", nombre: "Eiscue", universo: "Pokémon", equipo: "Galar (8.ª gen)", tipo: "Hielo" },
+    { palabra: "cufant", nombre: "Cufant", universo: "Pokémon", equipo: "Galar (8.ª gen)", tipo: "Acero" },
+    { palabra: "pawmi", nombre: "Pawmi", universo: "Pokémon", equipo: "Paldea (9.ª gen)", tipo: "Eléctrico" },
+    { palabra: "nacli", nombre: "Nacli", universo: "Pokémon", equipo: "Paldea (9.ª gen)", tipo: "Roca" },
+    { palabra: "klawf", nombre: "Klawf", universo: "Pokémon", equipo: "Paldea (9.ª gen)", tipo: "Roca" },
+    { palabra: "quaxly", nombre: "Quaxly", universo: "Pokémon", equipo: "Paldea (9.ª gen)", tipo: "Agua" },
+    { palabra: "smoliv", nombre: "Smoliv", universo: "Pokémon", equipo: "Paldea (9.ª gen)", tipo: "Planta" },
+    { palabra: "rellor", nombre: "Rellor", universo: "Pokémon", equipo: "Paldea (9.ª gen)", tipo: "Bicho" },
+    { palabra: "varoom", nombre: "Varoom", universo: "Pokémon", equipo: "Paldea (9.ª gen)", tipo: "Acero" },
+    { palabra: "veluza", nombre: "Veluza", universo: "Pokémon", equipo: "Paldea (9.ª gen)", tipo: "Agua" },
+    { palabra: "nymble", nombre: "Nymble", universo: "Pokémon", equipo: "Paldea (9.ª gen)", tipo: "Bicho" },
+    { palabra: "jessie", nombre: "Jessie", universo: "Pokémon", equipo: "Equipo Rocket", tipo: "Villano" },
+    { palabra: "archer", nombre: "Archer", universo: "Pokémon", equipo: "Equipo Rocket", tipo: "Villano" },
+    { palabra: "ariana", nombre: "Ariana", universo: "Pokémon", equipo: "Equipo Rocket", tipo: "Villano" },
+    { palabra: "proton", nombre: "Proton", universo: "Pokémon", equipo: "Equipo Rocket", tipo: "Villano" },
+    { palabra: "petrel", nombre: "Petrel", universo: "Pokémon", equipo: "Equipo Rocket", tipo: "Villano" },
+    { palabra: "butch", nombre: "Butch", universo: "Pokémon", equipo: "Equipo Rocket", tipo: "Villano" },
+    { palabra: "archie", nombre: "Archie", universo: "Pokémon", equipo: "Equipos villanos de Pokémon", tipo: "Villano" },
+    { palabra: "shelly", nombre: "Shelly", universo: "Pokémon", equipo: "Equipos villanos de Pokémon", tipo: "Villano" },
+    { palabra: "cyrus", nombre: "Cyrus", universo: "Pokémon", equipo: "Equipos villanos de Pokémon", tipo: "Villano" },
+    { palabra: "guzma", nombre: "Guzma", universo: "Pokémon", equipo: "Equipos villanos de Pokémon", tipo: "Villano" },
+    { palabra: "oleana", nombre: "Oleana", universo: "Pokémon", equipo: "Equipos villanos de Pokémon", tipo: "Villano" },
+    { palabra: "lance", nombre: "Lance", universo: "Pokémon", equipo: "Líderes y Campeones", tipo: "Campeón" },
+    { palabra: "steven", nombre: "Steven Stone", universo: "Pokémon", equipo: "Líderes y Campeones", tipo: "Campeón" },
+    { palabra: "alder", nombre: "Alder", universo: "Pokémon", equipo: "Líderes y Campeones", tipo: "Campeón" },
+    { palabra: "erika", nombre: "Erika", universo: "Pokémon", equipo: "Líderes y Campeones", tipo: "Líder de gimnasio" },
+    { palabra: "blaine", nombre: "Blaine", universo: "Pokémon", equipo: "Líderes y Campeones", tipo: "Líder de gimnasio" },
+    { palabra: "janine", nombre: "Janine", universo: "Pokémon", equipo: "Líderes y Campeones", tipo: "Líder de gimnasio" },
+    { palabra: "morty", nombre: "Morty", universo: "Pokémon", equipo: "Líderes y Campeones", tipo: "Líder de gimnasio" },
+    { palabra: "clair", nombre: "Clair", universo: "Pokémon", equipo: "Líderes y Campeones", tipo: "Líder de gimnasio" },
+    { palabra: "brawly", nombre: "Brawly", universo: "Pokémon", equipo: "Líderes y Campeones", tipo: "Líder de gimnasio" },
+    { palabra: "norman", nombre: "Norman", universo: "Pokémon", equipo: "Líderes y Campeones", tipo: "Líder de gimnasio" },
+    { palabra: "winona", nombre: "Winona", universo: "Pokémon", equipo: "Líderes y Campeones", tipo: "Líder de gimnasio" },
+    { palabra: "byron", nombre: "Byron", universo: "Pokémon", equipo: "Líderes y Campeones", tipo: "Líder de gimnasio" },
+    { palabra: "raihan", nombre: "Raihan", universo: "Pokémon", equipo: "Líderes y Campeones", tipo: "Líder de gimnasio" },
+    { palabra: "nessa", nombre: "Nessa", universo: "Pokémon", equipo: "Líderes y Campeones", tipo: "Líder de gimnasio" },
+    { palabra: "piers", nombre: "Piers", universo: "Pokémon", equipo: "Líderes y Campeones", tipo: "Líder de gimnasio" },
+    { palabra: "geeta", nombre: "Geeta", universo: "Pokémon", equipo: "Líderes y Campeones", tipo: "Campeón" },
+    { palabra: "rowan", nombre: "Profesor Rowan", universo: "Pokémon", equipo: "Profesores", tipo: "Profesor" },
+    { palabra: "birch", nombre: "Profesor Birch", universo: "Pokémon", equipo: "Profesores", tipo: "Profesor" },
+    { palabra: "kukui", nombre: "Profesor Kukui", universo: "Pokémon", equipo: "Profesores", tipo: "Profesor" },
+    { palabra: "cilan", nombre: "Cilan", universo: "Pokémon", equipo: "Entrenadores", tipo: "Entrenador" },
+    { palabra: "bonnie", nombre: "Bonnie", universo: "Pokémon", equipo: "Entrenadores", tipo: "Entrenador" },
+    { palabra: "serena", nombre: "Serena", universo: "Pokémon", equipo: "Entrenadores", tipo: "Entrenador" },
+    { palabra: "lillie", nombre: "Lillie", universo: "Pokémon", equipo: "Entrenadores", tipo: "Entrenador" },
+    { palabra: "mallow", nombre: "Mallow", universo: "Pokémon", equipo: "Entrenadores", tipo: "Entrenador" },
+    { palabra: "gloria", nombre: "Gloria", universo: "Pokémon", equipo: "Entrenadores", tipo: "Entrenador" },
+    { palabra: "marnie", nombre: "Marnie", universo: "Pokémon", equipo: "Entrenadores", tipo: "Entrenador" },
+    { palabra: "nemona", nombre: "Nemona", universo: "Pokémon", equipo: "Entrenadores", tipo: "Entrenador" },
+    { palabra: "arven", nombre: "Arven", universo: "Pokémon", equipo: "Entrenadores", tipo: "Entrenador" },
+    { palabra: "penny", nombre: "Penny", universo: "Pokémon", equipo: "Entrenadores", tipo: "Entrenador" },
 ];
 // Imágenes de personajes. La clave es el personaje; WORDLE_IMAGEN_DE mapea cada palabra del juego a su personaje.
 // Si una palabra no está acá, se busca por alias en los juegos Nombralos (Linternas, Batifamilia).
@@ -25890,8 +26077,8 @@ function imagenDePersonaje(palabra) {
 }
 
 // Dificultad: FÁCIL = los más famosos, DIFÍCIL = los menos conocidos (asignado por Claude, se puede ajustar), MEDIO = el resto.
-const WORDLE_FACIL = new Set(["alfred", "amora", "angel", "angela", "antman", "arana", "arrow", "azrael", "balder", "banner", "barnes", "barry", "barton", "batman", "batroc", "beast", "blade", "brock", "bruce", "bucky", "cable", "carol", "carter", "cassie", "castle", "challa", "clark", "clint", "crane", "cyborg", "diana", "dillon", "dinah", "donna", "drake", "falcon", "fenris", "flash", "foster", "freeze", "friday", "gamora", "goblin", "gordon", "gorgon", "grimm", "grodd", "groot", "hades", "hammer", "happy", "harley", "havok", "hogun", "hulka", "hydra", "ikaris", "isley", "jackal", "janet", "jarvis", "jason", "johnny", "joker", "jonah", "kaine", "kamala", "kitty", "korvac", "kraven", "laufey", "laura", "lizard", "logan", "lucas", "luthor", "magik", "mantis", "maria", "medusa", "miles", "misty", "modok", "mongul", "mordo", "namor", "nomad", "okoye", "olsen", "oracle", "orion", "osborn", "pepper", "peter", "pietro", "porker", "potts", "quake", "quasar", "queen", "quill", "quinn", "raven", "rescue", "rhino", "rhodes", "rhodey", "rider", "robin", "rocket", "rogers", "rogue", "ronan", "rumlow", "scott", "selina", "sentry", "shang", "shazam", "shuri", "skull", "skurge", "slade", "spider", "stane", "stark", "steel", "steve", "storm", "surfer", "surtur", "swamp", "talia", "thanos", "thing", "tigra", "toxin", "triton", "venom", "vermin", "victor", "viper", "vision", "vixen", "waller", "wally", "wanda", "wiccan", "widow", "wilson", "winter", "wizard", "krypto", "damian", "jordan", "kovacs", "oswald", "billy", "manta", "ocean", "thawne", "trigon", "lucius", "vicki", "terra", "conner", "dream", "death", "veidt", "grundy", "chloe", "anarky", "apollo", "hermes", "kendra", "palmer", "trevor", "jonzz", "merlin", "lawton", "diablo", "shark", "rayner", "sivana", "xavier", "iceman", "gambit", "harry", "blaze", "domino", "knull", "selene", "legion", "betsy", "sauron", "stryfe", "madrox", "howard", "pixie", "marrow", "leech", "belova", "karla", "kenobi", "windu", "anakin", "ahsoka", "quigon", "vader", "dooku", "tarkin", "thrawn", "organa", "ackbar", "wedge", "lando", "jango", "bossk", "greedo", "djarin", "mando", "grogu", "padme", "jarjar", "jabba", "artoo", "chewie", "potter", "ginny", "ronald", "sirius", "lupin", "draco", "riddle", "nagini", "albus", "snape", "hagrid", "dobby", "hedwig", "vernon", "dudley"]);
-const WORDLE_DIFICIL = new Set(["relic", "abyss", "adder", "agger", "ahura", "albert", "alecto", "aleta", "algrim", "alura", "amber", "amiko", "angmo", "aquon", "arkin", "ayala", "basil", "bernie", "brett", "caiera", "cathy", "chondu", "chung", "clash", "crang", "curse", "daemon", "dargo", "darla", "davos", "debra", "deeds", "deidre", "dekker", "demara", "desak", "devoux", "devoz", "dinesh", "dollar", "dunphy", "eisen", "eldrac", "elijah", "elsie", "ferro", "flint", "freyja", "frost", "gazer", "gentry", "gibney", "gnucci", "gorath", "greer", "grotto", "hannu", "hermod", "hoder", "hudson", "ithan", "jolena", "joseph", "juarez", "justin", "kaplan", "katma", "kelda", "koenig", "krylov", "kudzu", "kurse", "laira", "lasher", "lazaer", "leland", "lohmer", "lotus", "lucca", "lulumu", "lyons", "macha", "madcap", "madman", "magni", "mahkwa", "major", "malik", "mallen", "maxam", "maxon", "mciver", "menace", "mendel", "metron", "mogul", "mosaic", "nadia", "nagan", "native", "nimue", "nobili", "ogord", "payne", "phage", "pierce", "powell", "pratt", "quire", "rachel", "rages", "randac", "razer", "reader", "rikki", "romeo", "roxxon", "saxon", "scurry", "seeker", "shado", "sharon", "shuma", "skagg", "slyde", "sodam", "solem", "spirit", "stakar", "sterns", "stryke", "sunset", "tania", "teddy", "thorne", "torres", "tucker", "turtle", "twain", "tyger", "utgard", "uumaru", "vance", "vapor", "vaughn", "vector", "vidar", "vortex", "wallow", "wheel", "willie", "yalan", "zander", "zaran", "zarrko", "zyozi", "capers", "sunen", "kronos", "zuras", "sawyer", "zorel", "renee", "julie", "maroni", "sionis", "mardon", "emiko", "salaak", "arisia", "bleez", "krona", "oberon", "phobos", "deimos", "mervyn", "hollis", "pedro", "tawky", "larry", "rouge", "dodds", "knight", "jakeem", "damage", "pieter", "ranzz", "tyroc", "bibbo", "mercy", "drury", "maxie", "harper", "psimon", "lilith", "eddie", "skeets", "isabel", "siren", "catman", "zucco", "hestia", "hecate", "arella", "chimp", "occult", "bufkin", "prince", "beauty", "maxine", "osiris", "bekka", "vykin", "takion", "lonar", "heggra", "hiroim", "xemnu", "wyatt", "chance", "topaz", "byrrah", "lopez", "genis", "sunder", "mimic", "nikki", "aaron", "static", "xombi", "mundi", "shaak", "yaddle", "bendu", "sheev", "savage", "ozzel", "needa", "motti", "dedra", "syril", "biggs", "lobot", "wesell", "aurra", "vanth", "satine", "gunray", "poggle", "trench", "durge", "waxer", "dogma", "typho", "bibble", "dryden", "zorba", "rotta", "plutt", "tobias", "huyang", "logray", "paploo", "teebo", "pryde", "connix", "ematt", "tallie", "tekka", "jolee", "juhani", "visas", "kreia", "atton", "greez", "trilla", "baylan", "marrok", "seamus", "crabbe", "goyle", "pansy", "horace", "barty", "avery", "yaxley", "fenrir", "amycus", "sprout", "hooch", "binns", "filius", "sybill", "padma", "hannah", "ernie", "susan", "maxime", "winky", "grawp", "marge", "crouch", "rufus", "bagman", "rowena", "helga", "gallia", "unduli", "offee", "saesee", "indara", "qimir", "malgus", "tagge", "wexley", "jannah", "zorii", "bazine", "ketsu", "tambor", "cliegg", "dexter", "mynock", "krayt", "acklay", "daala", "jacen", "jaina", "karrde"]);
+const WORDLE_FACIL = new Set(["alfred", "amora", "angel", "angela", "antman", "arana", "arrow", "azrael", "balder", "banner", "barnes", "barry", "barton", "batman", "batroc", "beast", "blade", "brock", "bruce", "bucky", "cable", "carol", "carter", "cassie", "castle", "challa", "clark", "clint", "crane", "cyborg", "diana", "dillon", "dinah", "donna", "drake", "falcon", "fenris", "flash", "foster", "freeze", "friday", "gamora", "goblin", "gordon", "gorgon", "grimm", "grodd", "groot", "hades", "hammer", "happy", "harley", "havok", "hogun", "hulka", "hydra", "ikaris", "isley", "jackal", "janet", "jarvis", "jason", "johnny", "joker", "jonah", "kaine", "kamala", "kitty", "korvac", "kraven", "laufey", "laura", "lizard", "logan", "lucas", "luthor", "magik", "mantis", "maria", "medusa", "miles", "misty", "modok", "mongul", "mordo", "namor", "nomad", "okoye", "olsen", "oracle", "orion", "osborn", "pepper", "peter", "pietro", "porker", "potts", "quake", "quasar", "queen", "quill", "quinn", "raven", "rescue", "rhino", "rhodes", "rhodey", "rider", "robin", "rocket", "rogers", "rogue", "ronan", "rumlow", "scott", "selina", "sentry", "shang", "shazam", "shuri", "skull", "skurge", "slade", "spider", "stane", "stark", "steel", "steve", "storm", "surfer", "surtur", "swamp", "talia", "thanos", "thing", "tigra", "toxin", "triton", "venom", "vermin", "victor", "viper", "vision", "vixen", "waller", "wally", "wanda", "wiccan", "widow", "wilson", "winter", "wizard", "krypto", "damian", "jordan", "kovacs", "oswald", "billy", "manta", "ocean", "thawne", "trigon", "lucius", "vicki", "terra", "conner", "dream", "death", "veidt", "grundy", "chloe", "anarky", "apollo", "hermes", "kendra", "palmer", "trevor", "jonzz", "merlin", "lawton", "diablo", "shark", "rayner", "sivana", "xavier", "iceman", "gambit", "harry", "blaze", "domino", "knull", "selene", "legion", "betsy", "sauron", "stryfe", "madrox", "howard", "pixie", "marrow", "leech", "belova", "karla", "kenobi", "windu", "anakin", "ahsoka", "quigon", "vader", "dooku", "tarkin", "thrawn", "organa", "ackbar", "wedge", "lando", "jango", "bossk", "greedo", "djarin", "mando", "grogu", "padme", "jarjar", "jabba", "artoo", "chewie", "potter", "ginny", "ronald", "sirius", "lupin", "draco", "riddle", "nagini", "albus", "snape", "hagrid", "dobby", "hedwig", "vernon", "dudley", "eevee", "raichu", "mewtwo", "gengar", "lapras", "ditto", "vulpix", "meowth", "zubat", "cubone", "zapdos", "gastly", "pichu", "togepi", "espeon", "lugia", "mudkip", "kyogre", "piplup", "riolu", "goodra", "rowlet", "litten", "jessie"]);
+const WORDLE_DIFICIL = new Set(["relic", "abyss", "adder", "agger", "ahura", "albert", "alecto", "aleta", "algrim", "alura", "amber", "amiko", "angmo", "aquon", "arkin", "ayala", "basil", "bernie", "brett", "caiera", "cathy", "chondu", "chung", "clash", "crang", "curse", "daemon", "dargo", "darla", "davos", "debra", "deeds", "deidre", "dekker", "demara", "desak", "devoux", "devoz", "dinesh", "dollar", "dunphy", "eisen", "eldrac", "elijah", "elsie", "ferro", "flint", "freyja", "frost", "gazer", "gentry", "gibney", "gnucci", "gorath", "greer", "grotto", "hannu", "hermod", "hoder", "hudson", "ithan", "jolena", "joseph", "juarez", "justin", "kaplan", "katma", "kelda", "koenig", "krylov", "kudzu", "kurse", "laira", "lasher", "lazaer", "leland", "lohmer", "lotus", "lucca", "lulumu", "lyons", "macha", "madcap", "madman", "magni", "mahkwa", "major", "malik", "mallen", "maxam", "maxon", "mciver", "menace", "mendel", "metron", "mogul", "mosaic", "nadia", "nagan", "native", "nimue", "nobili", "ogord", "payne", "phage", "pierce", "powell", "pratt", "quire", "rachel", "rages", "randac", "razer", "reader", "rikki", "romeo", "roxxon", "saxon", "scurry", "seeker", "shado", "sharon", "shuma", "skagg", "slyde", "sodam", "solem", "spirit", "stakar", "sterns", "stryke", "sunset", "tania", "teddy", "thorne", "torres", "tucker", "turtle", "twain", "tyger", "utgard", "uumaru", "vance", "vapor", "vaughn", "vector", "vidar", "vortex", "wallow", "wheel", "willie", "yalan", "zander", "zaran", "zarrko", "zyozi", "capers", "sunen", "kronos", "zuras", "sawyer", "zorel", "renee", "julie", "maroni", "sionis", "mardon", "emiko", "salaak", "arisia", "bleez", "krona", "oberon", "phobos", "deimos", "mervyn", "hollis", "pedro", "tawky", "larry", "rouge", "dodds", "knight", "jakeem", "damage", "pieter", "ranzz", "tyroc", "bibbo", "mercy", "drury", "maxie", "harper", "psimon", "lilith", "eddie", "skeets", "isabel", "siren", "catman", "zucco", "hestia", "hecate", "arella", "chimp", "occult", "bufkin", "prince", "beauty", "maxine", "osiris", "bekka", "vykin", "takion", "lonar", "heggra", "hiroim", "xemnu", "wyatt", "chance", "topaz", "byrrah", "lopez", "genis", "sunder", "mimic", "nikki", "aaron", "static", "xombi", "mundi", "shaak", "yaddle", "bendu", "sheev", "savage", "ozzel", "needa", "motti", "dedra", "syril", "biggs", "lobot", "wesell", "aurra", "vanth", "satine", "gunray", "poggle", "trench", "durge", "waxer", "dogma", "typho", "bibble", "dryden", "zorba", "rotta", "plutt", "tobias", "huyang", "logray", "paploo", "teebo", "pryde", "connix", "ematt", "tallie", "tekka", "jolee", "juhani", "visas", "kreia", "atton", "greez", "trilla", "baylan", "marrok", "seamus", "crabbe", "goyle", "pansy", "horace", "barty", "avery", "yaxley", "fenrir", "amycus", "sprout", "hooch", "binns", "filius", "sybill", "padma", "hannah", "ernie", "susan", "maxime", "winky", "grawp", "marge", "crouch", "rufus", "bagman", "rowena", "helga", "gallia", "unduli", "offee", "saesee", "indara", "qimir", "malgus", "tagge", "wexley", "jannah", "zorii", "bazine", "ketsu", "tambor", "cliegg", "dexter", "mynock", "krayt", "acklay", "daala", "jacen", "jaina", "karrde", "gloom", "paras", "doduo", "horsea", "seadra", "hoppip", "pineco", "gligar", "slugma", "swinub", "phanpy", "elekid", "magby", "kirlia", "lairon", "mawile", "cacnea", "swablu", "baltoy", "glalie", "spheal", "beldum", "metang", "budew", "gabite", "azelf", "buizel", "stunky", "bonsly", "chatot", "klink", "deino", "keldeo", "emolga", "joltik", "golett", "munna", "pidove", "archen", "yamask", "noibat", "hoopa", "litleo", "pyroar", "inkay", "skrelp", "tyrunt", "amaura", "minior", "komala", "drampa", "comfey", "wimpod", "toxel", "kubfu", "zarude", "nickit", "yamper", "applin", "eiscue", "cufant", "nacli", "klawf", "smoliv", "rellor", "varoom", "veluza", "nymble", "archer", "ariana", "proton", "petrel", "butch", "archie", "shelly", "oleana", "alder", "janine", "morty", "clair", "brawly", "norman", "winona", "byron", "raihan", "nessa", "piers", "geeta", "rowan", "birch", "kukui", "cilan", "bonnie", "lillie", "mallow", "marnie", "nemona", "arven", "penny"]);
 function wordleNivelDe(p) { return WORDLE_FACIL.has(p.palabra) ? 'facil' : (WORDLE_DIFICIL.has(p.palabra) ? 'dificil' : 'medio'); }
 
 const WORDLE_INTENTOS = 6;
@@ -25905,10 +26092,10 @@ let wordleTerminado = false;
 let wordleEstadosTeclas = {};
 let wordleNivel = (function(){ try { const n = localStorage.getItem('wordle-nivel'); return ['facil','medio','dificil'].includes(n) ? n : 'medio'; } catch (e) { return 'medio'; } })();
 // Categoría de personajes compartida por Wordle, Ahorcado y Conexiones: 'mdc' = Marvel y DC, 'sw' = Star Wars.
-let juegoCat = (function () { try { const c = localStorage.getItem('juego-cat'); return c === 'sw' || c === 'hp' ? c : 'mdc'; } catch (e) { return 'mdc'; } })();
-const JUEGO_CAT_TXT = { mdc: 'Marvel y DC', sw: 'Star Wars', hp: 'Harry Potter' };
-const CAT_UNIVERSO = { sw: 'Star Wars', hp: 'Harry Potter' };   // universo de cada categoría (mdc = todo lo demás)
-const CAT_SEMILLA = { mdc: 0, sw: 1, hp: 2 };
+let juegoCat = (function () { try { const c = localStorage.getItem('juego-cat'); return c === 'sw' || c === 'hp' || c === 'pk' ? c : 'mdc'; } catch (e) { return 'mdc'; } })();
+const JUEGO_CAT_TXT = { mdc: 'Marvel y DC', sw: 'Star Wars', hp: 'Harry Potter', pk: 'Pokémon' };
+const CAT_UNIVERSO = { sw: 'Star Wars', hp: 'Harry Potter', pk: 'Pokémon' };   // universo de cada categoría (mdc = todo lo demás)
+const CAT_SEMILLA = { mdc: 0, sw: 1, hp: 2, pk: 3 };
 function catSuf() { return juegoCat === 'mdc' ? '' : '-' + juegoCat; }
 function catUniversoEs(u) { return juegoCat === 'mdc' ? !Object.values(CAT_UNIVERSO).includes(u) : u === CAT_UNIVERSO[juegoCat]; }
 function catDe(p) { return catUniversoEs(p.universo); }
@@ -26074,7 +26261,7 @@ function wordleActualizarPistas() {
     if (!cont || !wordleSecreta) return;
     const n = wordleIntentos.length;
     const reglas = [
-        { desde: 3, boton: '💡 Pista 1 (disponible tras 3 intentos)', texto: () => `💡 Es ${articuloTipo(wordleSecreta.tipo)} de ${wordleSecreta.universo}.` },
+        { desde: 3, boton: '💡 Pista 1 (disponible tras 3 intentos)', texto: () => (wordleSecreta.universo === 'Pokémon' && POKE_TIPOS.includes(wordleSecreta.tipo)) ? `💡 Es un Pokémon de tipo ${wordleSecreta.tipo}.` : `💡 Es ${articuloTipo(wordleSecreta.tipo)} de ${wordleSecreta.universo}.` },
         { desde: 5, boton: '💡 Pista 2 (disponible tras 5 intentos)', texto: () => `💡 Equipo o grupo: ${wordleSecreta.equipo}.` }
     ];
     cont.innerHTML = '';
@@ -26097,8 +26284,9 @@ function wordleActualizarPistas() {
     });
 }
 
+const POKE_TIPOS = ['Normal', 'Fuego', 'Agua', 'Planta', 'Eléctrico', 'Hielo', 'Lucha', 'Veneno', 'Tierra', 'Volador', 'Psíquico', 'Bicho', 'Roca', 'Fantasma', 'Dragón', 'Siniestro', 'Acero', 'Hada'];
 function articuloTipo(tipo) {
-    return { 'Héroe': 'un Héroe', 'Villano': 'un Villano', 'Antihéroe': 'un Antihéroe', 'Aliado': 'un Aliado (de los héroes)' }[tipo] || tipo;
+    return { 'Héroe': 'un Héroe', 'Villano': 'un Villano', 'Antihéroe': 'un Antihéroe', 'Aliado': 'un Aliado (de los héroes)', 'Entrenador': 'un Entrenador', 'Líder de gimnasio': 'un Líder de gimnasio', 'Campeón': 'un Campeón de la Liga', 'Profesor': 'un Profesor' }[tipo] || tipo;
 }
 
 function wordleMensaje(texto, tipo) {
@@ -26664,6 +26852,35 @@ const CON_TEMAS = [
     { t: 'Armas y objetos de Star Wars', u: 'Star Wars', m: [['Sable de luz', 0], ['Blaster', 0], ['Sable oscuro', 2], ['Ballesta wookiee', 2], ['Detonador térmico', 2], ['Sable de luz doble', 1], ['Holocrón', 2], ['Beskar', 1]] },
     { t: 'Actores de Star Wars', u: 'Star Wars', m: [['Mark Hamill', 0], ['Harrison Ford', 0], ['Carrie Fisher', 0], ['Ewan McGregor', 0], ['Pedro Pascal', 0], ['Samuel L. Jackson', 0], ['Natalie Portman', 1], ['Hayden Christensen', 1], ['Daisy Ridley', 1], ['Adam Driver', 1], ['Oscar Isaac', 1], ['Diego Luna', 1], ['Alec Guinness', 1], ['Liam Neeson', 1], ['Ian McDiarmid', 2], ['Anthony Daniels', 2]] },
     { t: 'Bandos de las Guerras Clon', u: 'Star Wars', m: [['República Galáctica', 0], ['Separatistas', 0], ['Orden Jedi', 1], ['Ejército Droide', 1], ['Soldados Clon', 0], ['Gremio Bancario', 2], ['Federación de Comercio', 2], ['Hermanas de la Noche', 2]] },
+    // ---- Pokémon
+    { t: 'Iniciales de Kanto', u: 'Pokémon', m: [['Bulbasaur', 0], ['Charmander', 0], ['Squirtle', 0], ['Pikachu', 1]], incompat: ['Iniciales de Kanto y sus evoluciones'] },
+    { t: 'Iniciales de tipo Fuego', u: 'Pokémon', m: [['Charmander', 0], ['Cyndaquil', 0], ['Torchic', 0], ['Chimchar', 1], ['Tepig', 1], ['Fennekin', 1], ['Litten', 1], ['Scorbunny', 1], ['Fuecoco', 2]] },
+    { t: 'Iniciales de tipo Agua', u: 'Pokémon', m: [['Squirtle', 0], ['Totodile', 0], ['Mudkip', 0], ['Piplup', 1], ['Oshawott', 1], ['Froakie', 1], ['Popplio', 1], ['Sobble', 1], ['Quaxly', 2]] },
+    { t: 'Iniciales de tipo Planta', u: 'Pokémon', m: [['Bulbasaur', 0], ['Chikorita', 0], ['Treecko', 0], ['Turtwig', 1], ['Snivy', 1], ['Chespin', 1], ['Rowlet', 1], ['Grookey', 1], ['Sprigatito', 2]] },
+    { t: 'Evoluciones de Eevee', u: 'Pokémon', m: [['Vaporeon', 0], ['Jolteon', 0], ['Flareon', 0], ['Espeon', 1], ['Umbreon', 1], ['Leafeon', 1], ['Glaceon', 1], ['Sylveon', 1]] },
+    { t: 'Pokémon legendarios', u: 'Pokémon', m: [['Mewtwo', 0], ['Articuno', 0], ['Zapdos', 0], ['Moltres', 0], ['Lugia', 0], ['Ho-Oh', 1], ['Rayquaza', 0], ['Kyogre', 1], ['Groudon', 1], ['Dialga', 1], ['Palkia', 1], ['Giratina', 1], ['Arceus', 1], ['Reshiram', 2], ['Zekrom', 2], ['Xerneas', 2], ['Yveltal', 2], ['Solgaleo', 2], ['Lunala', 2], ['Zacian', 2], ['Zamazenta', 2], ['Koraidon', 2], ['Miraidon', 2]], incompat: ['Legendarios y Míticos'] },
+    { t: 'Pokémon míticos', u: 'Pokémon', m: [['Mew', 0], ['Celebi', 1], ['Jirachi', 1], ['Deoxys', 1], ['Manaphy', 2], ['Darkrai', 1], ['Shaymin', 2], ['Victini', 2], ['Keldeo', 2], ['Meloetta', 2], ['Diancie', 2], ['Hoopa', 2], ['Volcanion', 2], ['Marshadow', 2], ['Zeraora', 2], ['Meltan', 2]], incompat: ['Legendarios y Míticos'] },
+    { t: 'Líneas evolutivas de Pikachu', u: 'Pokémon', m: [['Pichu', 0], ['Pikachu', 0], ['Raichu', 0], ['Raichu de Alola', 2]] },
+    { t: 'Pseudolegendarios', u: 'Pokémon', m: [['Dragonite', 0], ['Tyranitar', 0], ['Salamence', 0], ['Metagross', 1], ['Garchomp', 0], ['Hydreigon', 1], ['Goodra', 1], ['Kommo-o', 2], ['Dragapult', 2], ['Baxcalibur', 2]] },
+    { t: 'Pokémon de tipo Fantasma', u: 'Pokémon', m: [['Gengar', 0], ['Gastly', 0], ['Haunter', 0], ['Misdreavus', 1], ['Mismagius', 1], ['Banette', 1], ['Dusknoir', 2], ['Chandelure', 1], ['Mimikyu', 1], ['Sableye', 2], ['Shuppet', 2], ['Drifblim', 2]] },
+    { t: 'Pokémon de tipo Eléctrico', u: 'Pokémon', m: [['Pikachu', 0], ['Raichu', 0], ['Jolteon', 0], ['Zapdos', 0], ['Electabuzz', 1], ['Magnemite', 1], ['Voltorb', 1], ['Ampharos', 1], ['Luxray', 2], ['Manectric', 2], ['Rotom', 2], ['Toxtricity', 2]] },
+    { t: 'Pokémon de tipo Dragón', u: 'Pokémon', m: [['Dratini', 0], ['Dragonair', 0], ['Dragonite', 0], ['Rayquaza', 0], ['Garchomp', 0], ['Salamence', 1], ['Haxorus', 2], ['Goodra', 1], ['Kyurem', 2], ['Altaria', 2], ['Flygon', 2], ['Latias', 2]] },
+    { t: 'Pokémon de tipo Hada', u: 'Pokémon', m: [['Clefairy', 0], ['Jigglypuff', 0], ['Togepi', 1], ['Sylveon', 1], ['Gardevoir', 1], ['Snubbull', 2], ['Mawile', 2], ['Flabébé', 2], ['Hatterene', 2], ['Zacian', 2]] },
+    { t: 'Pokémon de tipo Fuego', u: 'Pokémon', m: [['Charmander', 0], ['Charizard', 0], ['Vulpix', 0], ['Arcanine', 0], ['Ponyta', 1], ['Magmar', 1], ['Flareon', 1], ['Typhlosion', 1], ['Blaziken', 1], ['Infernape', 2], ['Entei', 2], ['Talonflame', 2]] },
+    { t: 'Pokémon de tipo Agua', u: 'Pokémon', m: [['Squirtle', 0], ['Blastoise', 0], ['Magikarp', 0], ['Gyarados', 0], ['Psyduck', 0], ['Lapras', 0], ['Vaporeon', 1], ['Totodile', 1], ['Mudkip', 1], ['Greninja', 1], ['Staryu', 2], ['Wailord', 2]] },
+    { t: 'Pokémon de tipo Planta', u: 'Pokémon', m: [['Bulbasaur', 0], ['Ivysaur', 0], ['Venusaur', 0], ['Oddish', 1], ['Exeggutor', 1], ['Chikorita', 1], ['Leafeon', 1], ['Sceptile', 2], ['Roserade', 2], ['Tangela', 2], ['Snivy', 2], ['Rillaboom', 2]] },
+    { t: 'Pokémon de tipo Normal', u: 'Pokémon', m: [['Snorlax', 0], ['Eevee', 0], ['Meowth', 0], ['Ditto', 0], ['Jigglypuff', 0], ['Chansey', 1], ['Kangaskhan', 1], ['Tauros', 1], ['Persian', 1], ['Porygon', 2], ['Miltank', 2], ['Zigzagoon', 2]] },
+    { t: 'Pokémon de tipo Psíquico', u: 'Pokémon', m: [['Mewtwo', 0], ['Abra', 0], ['Alakazam', 0], ['Mew', 0], ['Espeon', 1], ['Slowpoke', 1], ['Gardevoir', 1], ['Lugia', 1], ['Hypno', 2], ['Xatu', 2], ['Metagross', 2], ['Jynx', 2]] },
+    { t: 'Pokémon de tipo Hielo', u: 'Pokémon', m: [['Articuno', 0], ['Lapras', 0], ['Jynx', 1], ['Glaceon', 1], ['Dewgong', 2], ['Cloyster', 1], ['Glalie', 2], ['Walrein', 2], ['Abomasnow', 2], ['Weavile', 1], ['Vanilluxe', 2], ['Baxcalibur', 2]] },
+    { t: 'Líderes de gimnasio de Kanto', u: 'Pokémon', m: [['Brock', 0], ['Misty', 0], ['Lt. Surge', 0], ['Erika', 1], ['Koga', 1], ['Sabrina', 1], ['Blaine', 1], ['Giovanni', 0]], incompat: ['Líderes y Campeones'] },
+    { t: 'Campeones de la Liga Pokémon', u: 'Pokémon', m: [['Lance', 0], ['Cynthia', 0], ['Steven Stone', 1], ['Wallace', 1], ['Alder', 2], ['Iris', 1], ['Diantha', 1], ['Leon', 0], ['Geeta', 2], ['Blue', 0]], incompat: ['Líderes y Campeones'] },
+    { t: 'Compañeros de Ash', u: 'Pokémon', m: [['Misty', 0], ['Brock', 0], ['May', 1], ['Max', 2], ['Dawn', 1], ['Iris', 1], ['Cilan', 1], ['Serena', 1], ['Clemont', 1], ['Goh', 1], ['Tracey', 2]], incompat: ['Entrenadores'] },
+    { t: 'Equipo Rocket', u: 'Pokémon', m: [['Giovanni', 0], ['Jessie', 0], ['James', 0], ['Meowth', 0], ['Archer', 2], ['Ariana', 2], ['Butch', 2], ['Cassidy', 1], ['Proton', 2], ['Petrel', 2]], incompat: ['Equipo Rocket (equipo)'] },
+    { t: 'Juegos principales de Pokémon', u: 'Pokémon', m: [['Rojo y Azul', 0], ['Oro y Plata', 0], ['Rubí y Zafiro', 0], ['Diamante y Perla', 0], ['Negro y Blanco', 1], ['X e Y', 1], ['Sol y Luna', 1], ['Espada y Escudo', 1], ['Escarlata y Púrpura', 1], ['Leyendas: Arceus', 2], ['Amarillo', 1], ['Cristal', 1]] },
+    { t: 'Regiones Pokémon', u: 'Pokémon', m: [['Kanto', 0], ['Johto', 0], ['Hoenn', 0], ['Sinnoh', 0], ['Teselia', 1], ['Kalos', 1], ['Alola', 1], ['Galar', 1], ['Paldea', 1], ['Hisui', 2], ['Kitakami', 2]] },
+    { t: 'Objetos de Pokémon', u: 'Pokémon', m: [['Poké Ball', 0], ['Super Ball', 0], ['Ultra Ball', 0], ['Master Ball', 0], ['Poción', 0], ['Revivir', 1], ['Caramelo raro', 1], ['Piedra Fuego', 1], ['Pokédex', 0], ['MT', 1], ['Bicicleta', 2], ['Caña vieja', 2]] },
+    { t: 'Movimientos de Pokémon', u: 'Pokémon', m: [['Placaje', 0], ['Impactrueno', 0], ['Lanzallamas', 0], ['Hidrobomba', 0], ['Rayo solar', 1], ['Surf', 1], ['Hiperrayo', 1], ['Ataque rápido', 1], ['Danza espada', 2], ['Protección', 2], ['Puño trueno', 2], ['Terremoto', 1]] },
+    { t: 'Pokémon de Ash', u: 'Pokémon', m: [['Pikachu', 0], ['Charizard', 0], ['Greninja', 1], ['Bulbasaur', 1], ['Squirtle', 1], ['Lucario', 1], ['Snivy', 2], ['Infernape', 2], ['Sceptile', 2], ['Gengar', 2], ['Goodra', 2], ['Dragonite', 2]] },
 ];
 const CON_COLORES = ['amarillo', 'verde', 'azul', 'violeta'];
 const CON_EMOJI = { amarillo: '🟨', verde: '🟩', azul: '🟦', violeta: '🟪' };
@@ -28135,13 +28352,14 @@ if (adpBtnCompartir) {
 // ============================================================
 // JUEGO "BINGO DEL MULTIVERSO" (cartón 5x5 + bolillero + 2 rivales CPU)
 // ============================================================
-const BG_FUENTES = { todo: 'Marvel y DC', marvel: 'Marvel', dc: 'DC', starwars: 'Star Wars', hp: 'Harry Potter', obras: 'Películas y series' };
+const BG_FUENTES = { todo: 'Marvel y DC', marvel: 'Marvel', dc: 'DC', starwars: 'Star Wars', hp: 'Harry Potter', pk: 'Pokémon', obras: 'Películas y series' };
 const BG_MODOS = { linea: 'Línea', lleno: 'Cartón lleno' };
 const BG_TOTAL = 75;
 const BG_RIVALES = {
     marvel: ['Nick Fury', 'Rocket', 'Jarvis', 'Maria Hill', 'Happy Hogan', 'Howard el Pato'],
     dc: ['Alfred', 'Amanda Waller', 'Oracle', 'Lucius Fox', 'Detective Chimp', 'Krypto'],
     starwars: ['Almirante Ackbar', 'Maz Kanata', 'Jabba', 'Lando', 'Mon Mothma', 'Huyang'],
+    pk: ['Profesor Oak', 'Pikachu', 'Meowth', 'Enfermera Joy', 'Oficial Jenny', 'Brock'],
     hp: ['Hagrid', 'Dobby', 'Fawkes', 'Argus Filch', 'Madame Pomfrey', 'Kreacher'],
     obras: ['Stan Lee', 'Cinéfilo del barrio', 'Crítico de turno', 'Tío del videoclub', 'Maratonero', 'Fan de las post-créditos']
 };
@@ -28178,7 +28396,7 @@ function bgPoolFuente() {
         WORDLE_PALABRAS.forEach(p => {
             if (bgFuente === 'marvel' && p.universo !== 'Marvel') return;
             if (bgFuente === 'dc' && p.universo !== 'DC') return;
-            if (bgFuente === 'starwars' ? p.universo !== 'Star Wars' : (bgFuente === 'hp' ? p.universo !== 'Harry Potter' : (p.universo === 'Star Wars' || p.universo === 'Harry Potter'))) return;
+            if (bgFuente === 'starwars' ? p.universo !== 'Star Wars' : (bgFuente === 'hp' ? p.universo !== 'Harry Potter' : (bgFuente === 'pk' ? p.universo !== 'Pokémon' : ['Star Wars', 'Harry Potter', 'Pokémon'].includes(p.universo)))) return;
             let img = null;
             try { img = imagenDePersonaje(p.palabra); } catch (e) {}
             add(ahNombreDe(p), p.universo, img);
