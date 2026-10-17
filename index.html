@@ -14433,9 +14433,46 @@
         <div class="grilla-biblioteca" id="grilla-marvel-villanos-malvados"></div>
     </section>
 
-    <!-- SECCIÓN: JUEGOS (HUB) -->
-    <section id="seccion-juegos" class="oculto">
+    <!-- SECCIÓN: JUEGOS (MENÚ PRINCIPAL: Cine / Fútbol) -->
+    <section id="seccion-juegos-menu" class="oculto">
         <h2>Juegos 🎮</h2>
+        <p class="subtitulo-juegos">Elegí de qué querés jugar.</p>
+        <div class="grilla-juegos grilla-juegos-menu">
+            <div class="tarjeta-juego" id="tarjeta-menu-cine">
+                <div class="icono-juego">🎬</div>
+                <h3>Cine, series y entretenimiento</h3>
+                <p>Wordle, Ahorcado, Conexiones, Bingo, Adiviná el póster, Más o Menos y más. Con todas las categorías.</p>
+            </div>
+            <div class="tarjeta-juego" id="tarjeta-menu-futbol">
+                <div class="icono-juego">⚽</div>
+                <h3>Fútbol</h3>
+                <p>Próximamente: juegos con jugadores y clubes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: JUEGOS DE FÚTBOL (EN CONSTRUCCIÓN) -->
+    <section id="seccion-futbol" class="oculto">
+        <button class="btn-volver" id="btn-volver-futbol">← Volver a Juegos</button>
+        <h2>Fútbol ⚽</h2>
+        <div class="futbol-construccion">
+            <div class="icono-juego">🚧</div>
+            <h3>En construcción</h3>
+            <p>La cancha todavía se está armando. Estamos cargando jugadores, empezando por Boca Juniors, década por década.</p>
+            <p class="futbol-lista-titulo">Lo que viene:</p>
+            <ul>
+                <li>Wordle de jugadores: adiviná el apellido del crack.</li>
+                <li>Ahorcado de futbolistas, con solo la inicial a la vista.</li>
+                <li>Conexiones entre jugadores, clubes y campeonatos.</li>
+                <li>Más clubes y más décadas, a medida que se carguen los planteles.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: JUEGOS DE CINE, SERIES Y ENTRETENIMIENTO (HUB) -->
+    <section id="seccion-juegos" class="oculto">
+        <button class="btn-volver" id="btn-volver-juegos-menu">← Volver a Juegos</button>
+        <h2>Cine, series y entretenimiento 🎬</h2>
         <p class="subtitulo-juegos">Elegí un juego para poner a prueba tu conocimiento del Multiverso.</p>
         <div class="grilla-juegos" id="grilla-juegos">
             <div class="tarjeta-juego" id="tarjeta-completar-elenco">
@@ -16090,6 +16127,7 @@
 <!-- NOTIFICACIONES DE LOGROS -->
 <div id="contenedor-notificaciones-logros"></div>
 
+<script src="futbol-data.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

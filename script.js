@@ -20046,9 +20046,19 @@ function intentarAdivinarElenco() {
 const btnJuegos = document.getElementById('btn-juegos');
 if (btnJuegos) {
     btnJuegos.addEventListener('click', () => {
-        cambiarSeccion(document.getElementById('seccion-juegos'));
+        cambiarSeccion(document.getElementById('seccion-juegos-menu'));
     });
 }
+
+// Menú de Juegos: Cine/series/entretenimiento (hub con todos los juegos) o Fútbol (en construcción)
+const tarjetaMenuCine = document.getElementById('tarjeta-menu-cine');
+if (tarjetaMenuCine) tarjetaMenuCine.addEventListener('click', () => cambiarSeccion(document.getElementById('seccion-juegos')));
+const tarjetaMenuFutbol = document.getElementById('tarjeta-menu-futbol');
+if (tarjetaMenuFutbol) tarjetaMenuFutbol.addEventListener('click', () => cambiarSeccion(document.getElementById('seccion-futbol')));
+const btnVolverJuegosMenu = document.getElementById('btn-volver-juegos-menu');
+if (btnVolverJuegosMenu) btnVolverJuegosMenu.addEventListener('click', () => cambiarSeccion(document.getElementById('seccion-juegos-menu')));
+const btnVolverFutbol = document.getElementById('btn-volver-futbol');
+if (btnVolverFutbol) btnVolverFutbol.addEventListener('click', () => cambiarSeccion(document.getElementById('seccion-juegos-menu')));
 
 const tarjetaCompletarElenco = document.getElementById('tarjeta-completar-elenco');
 if (tarjetaCompletarElenco) {
