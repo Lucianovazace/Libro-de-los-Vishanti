@@ -26288,6 +26288,202 @@ const WORDLE_PALABRAS = [
     { palabra: "blinky", nombre: "Blinky", universo: "Los Simpson", equipo: "Mascotas de Springfield", tipo: "Mascota" },
     { palabra: "stampy", nombre: "Stampy", universo: "Los Simpson", equipo: "Mascotas de Springfield", tipo: "Mascota" },
     { palabra: "pinchy", nombre: "Pinchy", universo: "Los Simpson", equipo: "Mascotas de Springfield", tipo: "Mascota" },
+    // ---- Directores de cine
+    { palabra: "welles", nombre: "Orson Welles", universo: "Directores de Cine", equipo: "Clásicos de Hollywood", tipo: "Director" },
+    { palabra: "wilder", nombre: "Billy Wilder", universo: "Directores de Cine", equipo: "Clásicos de Hollywood", tipo: "Director" },
+    { palabra: "capra", nombre: "Frank Capra", universo: "Directores de Cine", equipo: "Clásicos de Hollywood", tipo: "Director" },
+    { palabra: "hawks", nombre: "Howard Hawks", universo: "Directores de Cine", equipo: "Clásicos de Hollywood", tipo: "Director" },
+    { palabra: "huston", nombre: "John Huston", universo: "Directores de Cine", equipo: "Clásicos de Hollywood", tipo: "Director" },
+    { palabra: "kazan", nombre: "Elia Kazan", universo: "Directores de Cine", equipo: "Clásicos de Hollywood", tipo: "Director" },
+    { palabra: "wyler", nombre: "William Wyler", universo: "Directores de Cine", equipo: "Clásicos de Hollywood", tipo: "Director" },
+    { palabra: "curtiz", nombre: "Michael Curtiz", universo: "Directores de Cine", equipo: "Clásicos de Hollywood", tipo: "Director" },
+    { palabra: "vidor", nombre: "King Vidor", universo: "Directores de Cine", equipo: "Clásicos de Hollywood", tipo: "Director" },
+    { palabra: "cukor", nombre: "George Cukor", universo: "Directores de Cine", equipo: "Clásicos de Hollywood", tipo: "Director" },
+    { palabra: "siegel", nombre: "Don Siegel", universo: "Directores de Cine", equipo: "Clásicos de Hollywood", tipo: "Director" },
+    { palabra: "fuller", nombre: "Samuel Fuller", universo: "Directores de Cine", equipo: "Clásicos de Hollywood", tipo: "Director" },
+    { palabra: "whale", nombre: "James Whale", universo: "Directores de Cine", equipo: "Clásicos de Hollywood", tipo: "Director" },
+    { palabra: "walsh", nombre: "Raoul Walsh", universo: "Directores de Cine", equipo: "Clásicos de Hollywood", tipo: "Director" },
+    { palabra: "ulmer", nombre: "Edgar G. Ulmer", universo: "Directores de Cine", equipo: "Clásicos de Hollywood", tipo: "Director" },
+    { palabra: "keaton", nombre: "Buster Keaton", universo: "Directores de Cine", equipo: "Cine mudo", tipo: "Director" },
+    { palabra: "melies", nombre: "Georges Méliès", universo: "Directores de Cine", equipo: "Cine mudo", tipo: "Director" },
+    { palabra: "murnau", nombre: "F. W. Murnau", universo: "Directores de Cine", equipo: "Cine mudo", tipo: "Director" },
+    { palabra: "gance", nombre: "Abel Gance", universo: "Directores de Cine", equipo: "Cine mudo", tipo: "Director" },
+    { palabra: "porter", nombre: "Edwin S. Porter", universo: "Directores de Cine", equipo: "Cine mudo", tipo: "Director" },
+    { palabra: "wiene", nombre: "Robert Wiene", universo: "Directores de Cine", equipo: "Cine mudo", tipo: "Director" },
+    { palabra: "pabst", nombre: "G. W. Pabst", universo: "Directores de Cine", equipo: "Cine mudo", tipo: "Director" },
+    { palabra: "vertov", nombre: "Dziga Vertov", universo: "Directores de Cine", equipo: "Cine mudo", tipo: "Director" },
+    { palabra: "altman", nombre: "Robert Altman", universo: "Directores de Cine", equipo: "Nuevo Hollywood", tipo: "Director" },
+    { palabra: "malick", nombre: "Terrence Malick", universo: "Directores de Cine", equipo: "Nuevo Hollywood", tipo: "Director" },
+    { palabra: "hopper", nombre: "Dennis Hopper", universo: "Directores de Cine", equipo: "Nuevo Hollywood", tipo: "Director" },
+    { palabra: "lumet", nombre: "Sidney Lumet", universo: "Directores de Cine", equipo: "Nuevo Hollywood", tipo: "Director" },
+    { palabra: "forman", nombre: "Milos Forman", universo: "Directores de Cine", equipo: "Nuevo Hollywood", tipo: "Director" },
+    { palabra: "demme", nombre: "Jonathan Demme", universo: "Directores de Cine", equipo: "Nuevo Hollywood", tipo: "Director" },
+    { palabra: "palma", nombre: "Brian De Palma", universo: "Directores de Cine", equipo: "Nuevo Hollywood", tipo: "Director" },
+    { palabra: "ashby", nombre: "Hal Ashby", universo: "Directores de Cine", equipo: "Nuevo Hollywood", tipo: "Director" },
+    { palabra: "cimino", nombre: "Michael Cimino", universo: "Directores de Cine", equipo: "Nuevo Hollywood", tipo: "Director" },
+    { palabra: "pakula", nombre: "Alan J. Pakula", universo: "Directores de Cine", equipo: "Nuevo Hollywood", tipo: "Director" },
+    { palabra: "nolan", nombre: "Christopher Nolan", universo: "Directores de Cine", equipo: "Hollywood moderno", tipo: "Director" },
+    { palabra: "burton", nombre: "Tim Burton", universo: "Directores de Cine", equipo: "Hollywood moderno", tipo: "Director" },
+    { palabra: "lynch", nombre: "David Lynch", universo: "Directores de Cine", equipo: "Hollywood moderno", tipo: "Director" },
+    { palabra: "gerwig", nombre: "Greta Gerwig", universo: "Directores de Cine", equipo: "Hollywood moderno", tipo: "Directora" },
+    { palabra: "sofia", nombre: "Sofia Coppola", universo: "Directores de Cine", equipo: "Hollywood moderno", tipo: "Directora" },
+    { palabra: "jonze", nombre: "Spike Jonze", universo: "Directores de Cine", equipo: "Hollywood moderno", tipo: "Director" },
+    { palabra: "gibson", nombre: "Mel Gibson", universo: "Directores de Cine", equipo: "Hollywood moderno", tipo: "Director" },
+    { palabra: "sorkin", nombre: "Aaron Sorkin", universo: "Directores de Cine", equipo: "Hollywood moderno", tipo: "Director" },
+    { palabra: "mamet", nombre: "David Mamet", universo: "Directores de Cine", equipo: "Hollywood moderno", tipo: "Director" },
+    { palabra: "kasdan", nombre: "Lawrence Kasdan", universo: "Directores de Cine", equipo: "Hollywood moderno", tipo: "Director" },
+    { palabra: "zwick", nombre: "Edward Zwick", universo: "Directores de Cine", equipo: "Hollywood moderno", tipo: "Director" },
+    { palabra: "fuqua", nombre: "Antoine Fuqua", universo: "Directores de Cine", equipo: "Hollywood moderno", tipo: "Director" },
+    { palabra: "brooks", nombre: "Mel Brooks", universo: "Directores de Cine", equipo: "Comedia", tipo: "Director" },
+    { palabra: "hughes", nombre: "John Hughes", universo: "Directores de Cine", equipo: "Comedia", tipo: "Director" },
+    { palabra: "ramis", nombre: "Harold Ramis", universo: "Directores de Cine", equipo: "Comedia", tipo: "Director" },
+    { palabra: "reiner", nombre: "Rob Reiner", universo: "Directores de Cine", equipo: "Comedia", tipo: "Director" },
+    { palabra: "landis", nombre: "John Landis", universo: "Directores de Cine", equipo: "Comedia", tipo: "Director" },
+    { palabra: "apatow", nombre: "Judd Apatow", universo: "Directores de Cine", equipo: "Comedia", tipo: "Director" },
+    { palabra: "mckay", nombre: "Adam McKay", universo: "Directores de Cine", equipo: "Comedia", tipo: "Director" },
+    { palabra: "ephron", nombre: "Nora Ephron", universo: "Directores de Cine", equipo: "Comedia", tipo: "Directora" },
+    { palabra: "smith", nombre: "Kevin Smith", universo: "Directores de Cine", equipo: "Comedia", tipo: "Director" },
+    { palabra: "zucker", nombre: "David Zucker", universo: "Directores de Cine", equipo: "Comedia", tipo: "Director" },
+    { palabra: "meyers", nombre: "Nancy Meyers", universo: "Directores de Cine", equipo: "Comedia", tipo: "Directora" },
+    { palabra: "roach", nombre: "Jay Roach", universo: "Directores de Cine", equipo: "Comedia", tipo: "Director" },
+    { palabra: "devito", nombre: "Danny DeVito", universo: "Directores de Cine", equipo: "Comedia", tipo: "Director" },
+    { palabra: "craven", nombre: "Wes Craven", universo: "Directores de Cine", equipo: "Terror", tipo: "Director" },
+    { palabra: "romero", nombre: "George A. Romero", universo: "Directores de Cine", equipo: "Terror", tipo: "Director" },
+    { palabra: "raimi", nombre: "Sam Raimi", universo: "Directores de Cine", equipo: "Terror", tipo: "Director" },
+    { palabra: "peele", nombre: "Jordan Peele", universo: "Directores de Cine", equipo: "Terror", tipo: "Director" },
+    { palabra: "hooper", nombre: "Tobe Hooper", universo: "Directores de Cine", equipo: "Terror", tipo: "Director" },
+    { palabra: "dario", nombre: "Dario Argento", universo: "Directores de Cine", equipo: "Terror", tipo: "Director" },
+    { palabra: "aster", nombre: "Ari Aster", universo: "Directores de Cine", equipo: "Terror", tipo: "Director" },
+    { palabra: "eggers", nombre: "Robert Eggers", universo: "Directores de Cine", equipo: "Terror", tipo: "Director" },
+    { palabra: "fulci", nombre: "Lucio Fulci", universo: "Directores de Cine", equipo: "Terror", tipo: "Director" },
+    { palabra: "barker", nombre: "Clive Barker", universo: "Directores de Cine", equipo: "Terror", tipo: "Director" },
+    { palabra: "yuzna", nombre: "Brian Yuzna", universo: "Directores de Cine", equipo: "Terror", tipo: "Director" },
+    { palabra: "fisher", nombre: "Terence Fisher", universo: "Directores de Cine", equipo: "Terror", tipo: "Director" },
+    { palabra: "whedon", nombre: "Joss Whedon", universo: "Directores de Cine", equipo: "Directores de superhéroes", tipo: "Director" },
+    { palabra: "russo", nombre: "Anthony Russo", universo: "Directores de Cine", equipo: "Directores de superhéroes", tipo: "Director" },
+    { palabra: "reeves", nombre: "Matt Reeves", universo: "Directores de Cine", equipo: "Directores de superhéroes", tipo: "Director" },
+    { palabra: "singer", nombre: "Bryan Singer", universo: "Directores de Cine", equipo: "Directores de superhéroes", tipo: "Director" },
+    { palabra: "donner", nombre: "Richard Donner", universo: "Directores de Cine", equipo: "Directores de superhéroes", tipo: "Director" },
+    { palabra: "watts", nombre: "Jon Watts", universo: "Directores de Cine", equipo: "Directores de superhéroes", tipo: "Director" },
+    { palabra: "lester", nombre: "Richard Lester", universo: "Directores de Cine", equipo: "Directores de superhéroes", tipo: "Director" },
+    { palabra: "ratner", nombre: "Brett Ratner", universo: "Directores de Cine", equipo: "Directores de superhéroes", tipo: "Director" },
+    { palabra: "story", nombre: "Tim Story", universo: "Directores de Cine", equipo: "Directores de superhéroes", tipo: "Director" },
+    { palabra: "trank", nombre: "Josh Trank", universo: "Directores de Cine", equipo: "Directores de superhéroes", tipo: "Director" },
+    { palabra: "taylor", nombre: "Alan Taylor", universo: "Directores de Cine", equipo: "Directores de superhéroes", tipo: "Director" },
+    { palabra: "ridley", nombre: "Ridley Scott", universo: "Directores de Cine", equipo: "Ciencia ficción", tipo: "Director" },
+    { palabra: "miller", nombre: "George Miller", universo: "Directores de Cine", equipo: "Ciencia ficción", tipo: "Director" },
+    { palabra: "abrams", nombre: "J. J. Abrams", universo: "Directores de Cine", equipo: "Ciencia ficción", tipo: "Director" },
+    { palabra: "proyas", nombre: "Alex Proyas", universo: "Directores de Cine", equipo: "Ciencia ficción", tipo: "Director" },
+    { palabra: "kelly", nombre: "Richard Kelly", universo: "Directores de Cine", equipo: "Ciencia ficción", tipo: "Director" },
+    { palabra: "hyams", nombre: "Peter Hyams", universo: "Directores de Cine", equipo: "Ciencia ficción", tipo: "Director" },
+    { palabra: "nimoy", nombre: "Leonard Nimoy", universo: "Directores de Cine", equipo: "Ciencia ficción", tipo: "Director" },
+    { palabra: "meyer", nombre: "Nicholas Meyer", universo: "Directores de Cine", equipo: "Ciencia ficción", tipo: "Director" },
+    { palabra: "wilcox", nombre: "Fred M. Wilcox", universo: "Directores de Cine", equipo: "Ciencia ficción", tipo: "Director" },
+    { palabra: "hayao", nombre: "Hayao Miyazaki", universo: "Directores de Cine", equipo: "Animación", tipo: "Director" },
+    { palabra: "docter", nombre: "Pete Docter", universo: "Directores de Cine", equipo: "Animación", tipo: "Director" },
+    { palabra: "musker", nombre: "John Musker", universo: "Directores de Cine", equipo: "Animación", tipo: "Director" },
+    { palabra: "selick", nombre: "Henry Selick", universo: "Directores de Cine", equipo: "Animación", tipo: "Director" },
+    { palabra: "hosoda", nombre: "Mamoru Hosoda", universo: "Directores de Cine", equipo: "Animación", tipo: "Director" },
+    { palabra: "otomo", nombre: "Katsuhiro Otomo", universo: "Directores de Cine", equipo: "Animación", tipo: "Director" },
+    { palabra: "oshii", nombre: "Mamoru Oshii", universo: "Directores de Cine", equipo: "Animación", tipo: "Director" },
+    { palabra: "chomet", nombre: "Sylvain Chomet", universo: "Directores de Cine", equipo: "Animación", tipo: "Director" },
+    { palabra: "ocelot", nombre: "Michel Ocelot", universo: "Directores de Cine", equipo: "Animación", tipo: "Director" },
+    { palabra: "bluth", nombre: "Don Bluth", universo: "Directores de Cine", equipo: "Animación", tipo: "Director" },
+    { palabra: "bakshi", nombre: "Ralph Bakshi", universo: "Directores de Cine", equipo: "Animación", tipo: "Director" },
+    { palabra: "hanna", nombre: "William Hanna", universo: "Directores de Cine", equipo: "Animación", tipo: "Director" },
+    { palabra: "genndy", nombre: "Genndy Tartakovsky", universo: "Directores de Cine", equipo: "Animación", tipo: "Director" },
+    { palabra: "godard", nombre: "Jean-Luc Godard", universo: "Directores de Cine", equipo: "Nouvelle Vague", tipo: "Director" },
+    { palabra: "rohmer", nombre: "Éric Rohmer", universo: "Directores de Cine", equipo: "Nouvelle Vague", tipo: "Director" },
+    { palabra: "varda", nombre: "Agnès Varda", universo: "Directores de Cine", equipo: "Nouvelle Vague", tipo: "Directora" },
+    { palabra: "malle", nombre: "Louis Malle", universo: "Directores de Cine", equipo: "Nouvelle Vague", tipo: "Director" },
+    { palabra: "marker", nombre: "Chris Marker", universo: "Directores de Cine", equipo: "Nouvelle Vague", tipo: "Director" },
+    { palabra: "besson", nombre: "Luc Besson", universo: "Directores de Cine", equipo: "Cine francés", tipo: "Director" },
+    { palabra: "renoir", nombre: "Jean Renoir", universo: "Directores de Cine", equipo: "Cine francés", tipo: "Director" },
+    { palabra: "jeunet", nombre: "Jean-Pierre Jeunet", universo: "Directores de Cine", equipo: "Cine francés", tipo: "Director" },
+    { palabra: "gondry", nombre: "Michel Gondry", universo: "Directores de Cine", equipo: "Cine francés", tipo: "Director" },
+    { palabra: "annaud", nombre: "Jean-Jacques Annaud", universo: "Directores de Cine", equipo: "Cine francés", tipo: "Director" },
+    { palabra: "carne", nombre: "Marcel Carné", universo: "Directores de Cine", equipo: "Cine francés", tipo: "Director" },
+    { palabra: "ophuls", nombre: "Max Ophüls", universo: "Directores de Cine", equipo: "Cine francés", tipo: "Director" },
+    { palabra: "denis", nombre: "Claire Denis", universo: "Directores de Cine", equipo: "Cine francés", tipo: "Directora" },
+    { palabra: "carax", nombre: "Leos Carax", universo: "Directores de Cine", equipo: "Cine francés", tipo: "Director" },
+    { palabra: "pialat", nombre: "Maurice Pialat", universo: "Directores de Cine", equipo: "Cine francés", tipo: "Director" },
+    { palabra: "herzog", nombre: "Werner Herzog", universo: "Directores de Cine", equipo: "Cine europeo", tipo: "Director" },
+    { palabra: "trier", nombre: "Lars von Trier", universo: "Directores de Cine", equipo: "Cine europeo", tipo: "Director" },
+    { palabra: "haneke", nombre: "Michael Haneke", universo: "Directores de Cine", equipo: "Cine europeo", tipo: "Director" },
+    { palabra: "dreyer", nombre: "Carl Theodor Dreyer", universo: "Directores de Cine", equipo: "Cine europeo", tipo: "Director" },
+    { palabra: "wajda", nombre: "Andrzej Wajda", universo: "Directores de Cine", equipo: "Cine europeo", tipo: "Director" },
+    { palabra: "kluge", nombre: "Alexander Kluge", universo: "Directores de Cine", equipo: "Cine europeo", tipo: "Director" },
+    { palabra: "tykwer", nombre: "Tom Tykwer", universo: "Directores de Cine", equipo: "Cine europeo", tipo: "Director" },
+    { palabra: "menzel", nombre: "Jiří Menzel", universo: "Directores de Cine", equipo: "Cine europeo", tipo: "Director" },
+    { palabra: "jancso", nombre: "Miklós Jancsó", universo: "Directores de Cine", equipo: "Cine europeo", tipo: "Director" },
+    { palabra: "szabo", nombre: "István Szabó", universo: "Directores de Cine", equipo: "Cine europeo", tipo: "Director" },
+    { palabra: "boyle", nombre: "Danny Boyle", universo: "Directores de Cine", equipo: "Cine británico", tipo: "Director" },
+    { palabra: "mendes", nombre: "Sam Mendes", universo: "Directores de Cine", equipo: "Cine británico", tipo: "Director" },
+    { palabra: "loach", nombre: "Ken Loach", universo: "Directores de Cine", equipo: "Cine británico", tipo: "Director" },
+    { palabra: "wright", nombre: "Edgar Wright", universo: "Directores de Cine", equipo: "Cine británico", tipo: "Director" },
+    { palabra: "leigh", nombre: "Mike Leigh", universo: "Directores de Cine", equipo: "Cine británico", tipo: "Director" },
+    { palabra: "frears", nombre: "Stephen Frears", universo: "Directores de Cine", equipo: "Cine británico", tipo: "Director" },
+    { palabra: "ramsay", nombre: "Lynne Ramsay", universo: "Directores de Cine", equipo: "Cine británico", tipo: "Directora" },
+    { palabra: "newell", nombre: "Mike Newell", universo: "Directores de Cine", equipo: "Cine británico", tipo: "Director" },
+    { palabra: "hodges", nombre: "Mike Hodges", universo: "Directores de Cine", equipo: "Cine británico", tipo: "Director" },
+    { palabra: "arnold", nombre: "Andrea Arnold", universo: "Directores de Cine", equipo: "Cine británico", tipo: "Directora" },
+    { palabra: "saura", nombre: "Carlos Saura", universo: "Directores de Cine", equipo: "Cine español", tipo: "Director" },
+    { palabra: "trueba", nombre: "Fernando Trueba", universo: "Directores de Cine", equipo: "Cine español", tipo: "Director" },
+    { palabra: "bayona", nombre: "J. A. Bayona", universo: "Directores de Cine", equipo: "Cine español", tipo: "Director" },
+    { palabra: "erice", nombre: "Víctor Erice", universo: "Directores de Cine", equipo: "Cine español", tipo: "Director" },
+    { palabra: "medem", nombre: "Julio Medem", universo: "Directores de Cine", equipo: "Cine español", tipo: "Director" },
+    { palabra: "coixet", nombre: "Isabel Coixet", universo: "Directores de Cine", equipo: "Cine español", tipo: "Directora" },
+    { palabra: "bardem", nombre: "Juan Antonio Bardem", universo: "Directores de Cine", equipo: "Cine español", tipo: "Director" },
+    { palabra: "plaza", nombre: "Paco Plaza", universo: "Directores de Cine", equipo: "Cine español", tipo: "Director" },
+    { palabra: "cuaron", nombre: "Alfonso Cuarón", universo: "Directores de Cine", equipo: "Cine latinoamericano", tipo: "Director" },
+    { palabra: "salles", nombre: "Walter Salles", universo: "Directores de Cine", equipo: "Cine latinoamericano", tipo: "Director" },
+    { palabra: "rocha", nombre: "Glauber Rocha", universo: "Directores de Cine", equipo: "Cine latinoamericano", tipo: "Director" },
+    { palabra: "lelio", nombre: "Sebastián Lelio", universo: "Directores de Cine", equipo: "Cine latinoamericano", tipo: "Director" },
+    { palabra: "franco", nombre: "Michel Franco", universo: "Directores de Cine", equipo: "Cine latinoamericano", tipo: "Director" },
+    { palabra: "littin", nombre: "Miguel Littín", universo: "Directores de Cine", equipo: "Cine latinoamericano", tipo: "Director" },
+    { palabra: "solas", nombre: "Humberto Solás", universo: "Directores de Cine", equipo: "Cine latinoamericano", tipo: "Director" },
+    { palabra: "favio", nombre: "Leonardo Favio", universo: "Directores de Cine", equipo: "Cine argentino", tipo: "Director" },
+    { palabra: "martel", nombre: "Lucrecia Martel", universo: "Directores de Cine", equipo: "Cine argentino", tipo: "Directora" },
+    { palabra: "burman", nombre: "Daniel Burman", universo: "Directores de Cine", equipo: "Cine argentino", tipo: "Director" },
+    { palabra: "duprat", nombre: "Gastón Duprat", universo: "Directores de Cine", equipo: "Cine argentino", tipo: "Director" },
+    { palabra: "puenzo", nombre: "Luis Puenzo", universo: "Directores de Cine", equipo: "Cine argentino", tipo: "Director" },
+    { palabra: "mitre", nombre: "Santiago Mitre", universo: "Directores de Cine", equipo: "Cine argentino", tipo: "Director" },
+    { palabra: "doria", nombre: "Alejandro Doria", universo: "Directores de Cine", equipo: "Cine argentino", tipo: "Director" },
+    { palabra: "alonso", nombre: "Lisandro Alonso", universo: "Directores de Cine", equipo: "Cine argentino", tipo: "Director" },
+    { palabra: "sorin", nombre: "Carlos Sorín", universo: "Directores de Cine", equipo: "Cine argentino", tipo: "Director" },
+    { palabra: "jusid", nombre: "Juan José Jusid", universo: "Directores de Cine", equipo: "Cine argentino", tipo: "Director" },
+    { palabra: "birri", nombre: "Fernando Birri", universo: "Directores de Cine", equipo: "Cine argentino", tipo: "Director" },
+    { palabra: "carril", nombre: "Hugo del Carril", universo: "Directores de Cine", equipo: "Cine argentino", tipo: "Director" },
+    { palabra: "demare", nombre: "Lucas Demare", universo: "Directores de Cine", equipo: "Cine argentino", tipo: "Director" },
+    { palabra: "antin", nombre: "Manuel Antín", universo: "Directores de Cine", equipo: "Cine argentino", tipo: "Director" },
+    { palabra: "mugica", nombre: "René Mugica", universo: "Directores de Cine", equipo: "Cine argentino", tipo: "Director" },
+    { palabra: "carri", nombre: "Albertina Carri", universo: "Directores de Cine", equipo: "Cine argentino", tipo: "Directora" },
+    { palabra: "akira", nombre: "Akira Kurosawa", universo: "Directores de Cine", equipo: "Cine asiático", tipo: "Director" },
+    { palabra: "kitano", nombre: "Takeshi Kitano", universo: "Directores de Cine", equipo: "Cine asiático", tipo: "Director" },
+    { palabra: "zhang", nombre: "Zhang Yimou", universo: "Directores de Cine", equipo: "Cine asiático", tipo: "Director" },
+    { palabra: "miike", nombre: "Takashi Miike", universo: "Directores de Cine", equipo: "Cine asiático", tipo: "Director" },
+    { palabra: "naruse", nombre: "Mikio Naruse", universo: "Directores de Cine", equipo: "Cine asiático", tipo: "Director" },
+    { palabra: "oshima", nombre: "Nagisa Oshima", universo: "Directores de Cine", equipo: "Cine asiático", tipo: "Director" },
+    { palabra: "suzuki", nombre: "Seijun Suzuki", universo: "Directores de Cine", equipo: "Cine asiático", tipo: "Director" },
+    { palabra: "kawase", nombre: "Naomi Kawase", universo: "Directores de Cine", equipo: "Cine asiático", tipo: "Directora" },
+    { palabra: "panahi", nombre: "Jafar Panahi", universo: "Directores de Cine", equipo: "Cine asiático", tipo: "Director" },
+    { palabra: "nakata", nombre: "Hideo Nakata", universo: "Directores de Cine", equipo: "Cine asiático", tipo: "Director" },
+    { palabra: "kapur", nombre: "Shekhar Kapur", universo: "Directores de Cine", equipo: "Cine indio", tipo: "Director" },
+    { palabra: "chopra", nombre: "Yash Chopra", universo: "Directores de Cine", equipo: "Cine indio", tipo: "Director" },
+    { palabra: "kapoor", nombre: "Raj Kapoor", universo: "Directores de Cine", equipo: "Cine indio", tipo: "Director" },
+    { palabra: "hirani", nombre: "Rajkumar Hirani", universo: "Directores de Cine", equipo: "Cine indio", tipo: "Director" },
+    { palabra: "johar", nombre: "Karan Johar", universo: "Directores de Cine", equipo: "Cine indio", tipo: "Director" },
+    { palabra: "ratnam", nombre: "Mani Ratnam", universo: "Directores de Cine", equipo: "Cine indio", tipo: "Director" },
+    { palabra: "mehta", nombre: "Deepa Mehta", universo: "Directores de Cine", equipo: "Cine indio", tipo: "Directora" },
+    { palabra: "leone", nombre: "Sergio Leone", universo: "Directores de Cine", equipo: "Cine italiano", tipo: "Director" },
+    { palabra: "avati", nombre: "Pupi Avati", universo: "Directores de Cine", equipo: "Cine italiano", tipo: "Director" },
+    { palabra: "scola", nombre: "Ettore Scola", universo: "Directores de Cine", equipo: "Cine italiano", tipo: "Director" },
+    { palabra: "petri", nombre: "Elio Petri", universo: "Directores de Cine", equipo: "Cine italiano", tipo: "Director" },
+    { palabra: "germi", nombre: "Pietro Germi", universo: "Directores de Cine", equipo: "Cine italiano", tipo: "Director" },
+    { palabra: "moore", nombre: "Michael Moore", universo: "Directores de Cine", equipo: "Documentalistas", tipo: "Director" },
+    { palabra: "morris", nombre: "Errol Morris", universo: "Directores de Cine", equipo: "Documentalistas", tipo: "Director" },
+    { palabra: "guzman", nombre: "Patricio Guzmán", universo: "Directores de Cine", equipo: "Documentalistas", tipo: "Director" },
+    { palabra: "kopple", nombre: "Barbara Kopple", universo: "Directores de Cine", equipo: "Documentalistas", tipo: "Directora" },
 ];
 // Imágenes de personajes. La clave es el personaje; WORDLE_IMAGEN_DE mapea cada palabra del juego a su personaje.
 // Si una palabra no está acá, se busca por alias en los juegos Nombralos (Linternas, Batifamilia).
@@ -26326,8 +26522,8 @@ function imagenDePersonaje(palabra) {
 }
 
 // Dificultad: FÁCIL = los más famosos, DIFÍCIL = los menos conocidos (asignado por Claude, se puede ajustar), MEDIO = el resto.
-const WORDLE_FACIL = new Set(["alfred", "amora", "angel", "angela", "antman", "arana", "arrow", "azrael", "balder", "banner", "barnes", "barry", "barton", "batman", "batroc", "beast", "blade", "brock", "bruce", "bucky", "cable", "carol", "carter", "cassie", "castle", "challa", "clark", "clint", "crane", "cyborg", "diana", "dillon", "dinah", "donna", "drake", "falcon", "fenris", "flash", "foster", "freeze", "friday", "gamora", "goblin", "gordon", "gorgon", "grimm", "grodd", "groot", "hades", "hammer", "happy", "harley", "havok", "hogun", "hulka", "hydra", "ikaris", "isley", "jackal", "janet", "jarvis", "jason", "johnny", "joker", "jonah", "kaine", "kamala", "kitty", "korvac", "kraven", "laufey", "laura", "lizard", "logan", "lucas", "luthor", "magik", "mantis", "maria", "medusa", "miles", "misty", "modok", "mongul", "mordo", "namor", "nomad", "okoye", "olsen", "oracle", "orion", "osborn", "pepper", "peter", "pietro", "porker", "potts", "quake", "quasar", "queen", "quill", "quinn", "raven", "rescue", "rhino", "rhodes", "rhodey", "rider", "robin", "rocket", "rogers", "rogue", "ronan", "rumlow", "scott", "selina", "sentry", "shang", "shazam", "shuri", "skull", "skurge", "slade", "spider", "stane", "stark", "steel", "steve", "storm", "surfer", "surtur", "swamp", "talia", "thanos", "thing", "tigra", "toxin", "triton", "venom", "vermin", "victor", "viper", "vision", "vixen", "waller", "wally", "wanda", "wiccan", "widow", "wilson", "winter", "wizard", "krypto", "damian", "jordan", "kovacs", "oswald", "billy", "manta", "ocean", "thawne", "trigon", "lucius", "vicki", "terra", "conner", "dream", "death", "veidt", "grundy", "chloe", "anarky", "apollo", "hermes", "kendra", "palmer", "trevor", "jonzz", "merlin", "lawton", "diablo", "shark", "rayner", "sivana", "xavier", "iceman", "gambit", "harry", "blaze", "domino", "knull", "selene", "legion", "betsy", "sauron", "stryfe", "madrox", "howard", "pixie", "marrow", "leech", "belova", "karla", "kenobi", "windu", "anakin", "ahsoka", "quigon", "vader", "dooku", "tarkin", "thrawn", "organa", "ackbar", "wedge", "lando", "jango", "bossk", "greedo", "djarin", "mando", "grogu", "padme", "jarjar", "jabba", "artoo", "chewie", "potter", "ginny", "ronald", "sirius", "lupin", "draco", "riddle", "nagini", "albus", "snape", "hagrid", "dobby", "hedwig", "vernon", "dudley", "eevee", "raichu", "mewtwo", "gengar", "lapras", "ditto", "vulpix", "meowth", "zubat", "cubone", "zapdos", "gastly", "pichu", "togepi", "espeon", "lugia", "mudkip", "kyogre", "piplup", "riolu", "goodra", "rowlet", "litten", "jessie", "gohan", "krilin", "trunks", "vegeta", "beerus", "bulma", "homero", "maggie", "burns", "barney", "krusty", "ralph", "wiggum"]);
-const WORDLE_DIFICIL = new Set(["relic", "abyss", "adder", "agger", "ahura", "albert", "alecto", "aleta", "algrim", "alura", "amber", "amiko", "angmo", "aquon", "arkin", "ayala", "basil", "bernie", "brett", "caiera", "cathy", "chondu", "chung", "clash", "crang", "curse", "daemon", "dargo", "darla", "davos", "debra", "deeds", "deidre", "dekker", "demara", "desak", "devoux", "devoz", "dinesh", "dollar", "dunphy", "eisen", "eldrac", "elijah", "elsie", "ferro", "flint", "freyja", "frost", "gazer", "gentry", "gibney", "gnucci", "gorath", "greer", "grotto", "hannu", "hermod", "hoder", "hudson", "ithan", "jolena", "joseph", "juarez", "justin", "kaplan", "katma", "kelda", "koenig", "krylov", "kudzu", "kurse", "laira", "lasher", "lazaer", "leland", "lohmer", "lotus", "lucca", "lulumu", "lyons", "macha", "madcap", "madman", "magni", "mahkwa", "major", "malik", "mallen", "maxam", "maxon", "mciver", "menace", "mendel", "metron", "mogul", "mosaic", "nadia", "nagan", "native", "nimue", "nobili", "ogord", "payne", "phage", "pierce", "powell", "pratt", "quire", "rachel", "rages", "randac", "razer", "reader", "rikki", "romeo", "roxxon", "saxon", "scurry", "seeker", "shado", "sharon", "shuma", "skagg", "slyde", "sodam", "solem", "spirit", "stakar", "sterns", "stryke", "sunset", "tania", "teddy", "thorne", "torres", "tucker", "turtle", "twain", "tyger", "utgard", "uumaru", "vance", "vapor", "vaughn", "vector", "vidar", "vortex", "wallow", "wheel", "willie", "yalan", "zander", "zaran", "zarrko", "zyozi", "capers", "sunen", "kronos", "zuras", "sawyer", "zorel", "renee", "julie", "maroni", "sionis", "mardon", "emiko", "salaak", "arisia", "bleez", "krona", "oberon", "phobos", "deimos", "mervyn", "hollis", "pedro", "tawky", "larry", "rouge", "dodds", "knight", "jakeem", "damage", "pieter", "ranzz", "tyroc", "bibbo", "mercy", "drury", "maxie", "harper", "psimon", "lilith", "eddie", "skeets", "isabel", "siren", "catman", "zucco", "hestia", "hecate", "arella", "chimp", "occult", "bufkin", "prince", "beauty", "maxine", "osiris", "bekka", "vykin", "takion", "lonar", "heggra", "hiroim", "xemnu", "wyatt", "chance", "topaz", "byrrah", "lopez", "genis", "sunder", "mimic", "nikki", "aaron", "static", "xombi", "mundi", "shaak", "yaddle", "bendu", "sheev", "savage", "ozzel", "needa", "motti", "dedra", "syril", "biggs", "lobot", "wesell", "aurra", "vanth", "satine", "gunray", "poggle", "trench", "durge", "waxer", "dogma", "typho", "bibble", "dryden", "zorba", "rotta", "plutt", "tobias", "huyang", "logray", "paploo", "teebo", "pryde", "connix", "ematt", "tallie", "tekka", "jolee", "juhani", "visas", "kreia", "atton", "greez", "trilla", "baylan", "marrok", "seamus", "crabbe", "goyle", "pansy", "horace", "barty", "avery", "yaxley", "fenrir", "amycus", "sprout", "hooch", "binns", "filius", "sybill", "padma", "hannah", "ernie", "susan", "maxime", "winky", "grawp", "marge", "crouch", "rufus", "bagman", "rowena", "helga", "gallia", "unduli", "offee", "saesee", "indara", "qimir", "malgus", "tagge", "wexley", "jannah", "zorii", "bazine", "ketsu", "tambor", "cliegg", "dexter", "mynock", "krayt", "acklay", "daala", "jacen", "jaina", "karrde", "gloom", "paras", "doduo", "horsea", "seadra", "hoppip", "pineco", "gligar", "slugma", "swinub", "phanpy", "elekid", "magby", "kirlia", "lairon", "mawile", "cacnea", "swablu", "baltoy", "glalie", "spheal", "beldum", "metang", "budew", "gabite", "azelf", "buizel", "stunky", "bonsly", "chatot", "klink", "deino", "keldeo", "emolga", "joltik", "golett", "munna", "pidove", "archen", "yamask", "noibat", "hoopa", "litleo", "pyroar", "inkay", "skrelp", "tyrunt", "amaura", "minior", "komala", "drampa", "comfey", "wimpod", "toxel", "kubfu", "zarude", "nickit", "yamper", "applin", "eiscue", "cufant", "nacli", "klawf", "smoliv", "rellor", "varoom", "veluza", "nymble", "archer", "ariana", "proton", "petrel", "butch", "archie", "shelly", "oleana", "alder", "janine", "morty", "clair", "brawly", "norman", "winona", "byron", "raihan", "nessa", "piers", "geeta", "rowan", "birch", "kukui", "cilan", "bonnie", "lillie", "mallow", "marnie", "nemona", "arven", "penny", "fearow", "ledian", "aipom", "yanma", "dustox", "lombre", "seedot", "plusle", "minun", "gulpin", "swalot", "numel", "spoink", "spinda", "lileep", "wynaut", "sealeo", "regice", "grotle", "luxio", "burmy", "mothim", "combee", "snover", "phione", "emboar", "dewott", "patrat", "woobat", "audino", "throh", "swanna", "klang", "tynamo", "elgyem", "golurk", "durant", "spewpa", "skiddo", "gogoat", "bewear", "raboot", "carkol", "lokix", "pawmo", "pawmot", "dolliv", "rabsca", "bugsy", "chuck", "pryce", "sidney", "phoebe", "glacia", "roark", "bertha", "lucian", "lenora", "burgh", "skyla", "brycen", "marlon", "viola", "grant", "ramos", "malva", "drasna", "olivia", "gordie", "melony", "peony", "tulip", "grusha", "poppy", "hassel", "ortega", "tracey", "looker", "hilda", "emmet", "calem", "shauna", "tierno", "ilima", "kiawe", "kahili", "ryuki", "sonia", "klara", "miriam", "kieran", "briar", "chaos", "kibito", "tapion", "pikkon", "turles", "tarble", "fasha", "burter", "jeice", "guldo", "appule", "sauzer", "dabura", "yakon", "belmod", "heles", "toppo", "dyspo", "botamo", "karin", "marron", "tights", "lunch", "cymbal", "piano", "garlic", "black", "gamma", "bojack", "zangya", "bujin", "pamput", "bibidi", "brief", "panchy", "erasa", "ledgic", "sorbet", "tagoma", "gowasu", "merus", "kunshi", "zoiray", "vikal", "glorio", "panzy", "degesu", "arinsu", "gomah", "rildo", "wheelo", "kochin", "raichi", "salza", "violet", "cargo", "katas", "tsuno", "borgos", "selypa", "olibu", "giran", "clancy", "tatum", "mcbain", "gabbo", "murphy", "lewis", "sherri", "terri", "janey", "luann", "doris", "hoover", "largo", "snyder", "louie", "cecil", "grimes", "agnes", "jasper", "luigi", "sanjay", "mindy", "ziggy", "arnie", "blinky", "stampy", "pinchy"]);
+const WORDLE_FACIL = new Set(["alfred", "amora", "angel", "angela", "antman", "arana", "arrow", "azrael", "balder", "banner", "barnes", "barry", "barton", "batman", "batroc", "beast", "blade", "brock", "bruce", "bucky", "cable", "carol", "carter", "cassie", "castle", "challa", "clark", "clint", "crane", "cyborg", "diana", "dillon", "dinah", "donna", "drake", "falcon", "fenris", "flash", "foster", "freeze", "friday", "gamora", "goblin", "gordon", "gorgon", "grimm", "grodd", "groot", "hades", "hammer", "happy", "harley", "havok", "hogun", "hulka", "hydra", "ikaris", "isley", "jackal", "janet", "jarvis", "jason", "johnny", "joker", "jonah", "kaine", "kamala", "kitty", "korvac", "kraven", "laufey", "laura", "lizard", "logan", "lucas", "luthor", "magik", "mantis", "maria", "medusa", "miles", "misty", "modok", "mongul", "mordo", "namor", "nomad", "okoye", "olsen", "oracle", "orion", "osborn", "pepper", "peter", "pietro", "porker", "potts", "quake", "quasar", "queen", "quill", "quinn", "raven", "rescue", "rhino", "rhodes", "rhodey", "rider", "robin", "rocket", "rogers", "rogue", "ronan", "rumlow", "scott", "selina", "sentry", "shang", "shazam", "shuri", "skull", "skurge", "slade", "spider", "stane", "stark", "steel", "steve", "storm", "surfer", "surtur", "swamp", "talia", "thanos", "thing", "tigra", "toxin", "triton", "venom", "vermin", "victor", "viper", "vision", "vixen", "waller", "wally", "wanda", "wiccan", "widow", "wilson", "winter", "wizard", "krypto", "damian", "jordan", "kovacs", "oswald", "billy", "manta", "ocean", "thawne", "trigon", "lucius", "vicki", "terra", "conner", "dream", "death", "veidt", "grundy", "chloe", "anarky", "apollo", "hermes", "kendra", "palmer", "trevor", "jonzz", "merlin", "lawton", "diablo", "shark", "rayner", "sivana", "xavier", "iceman", "gambit", "harry", "blaze", "domino", "knull", "selene", "legion", "betsy", "sauron", "stryfe", "madrox", "howard", "pixie", "marrow", "leech", "belova", "karla", "kenobi", "windu", "anakin", "ahsoka", "quigon", "vader", "dooku", "tarkin", "thrawn", "organa", "ackbar", "wedge", "lando", "jango", "bossk", "greedo", "djarin", "mando", "grogu", "padme", "jarjar", "jabba", "artoo", "chewie", "potter", "ginny", "ronald", "sirius", "lupin", "draco", "riddle", "nagini", "albus", "snape", "hagrid", "dobby", "hedwig", "vernon", "dudley", "eevee", "raichu", "mewtwo", "gengar", "lapras", "ditto", "vulpix", "meowth", "zubat", "cubone", "zapdos", "gastly", "pichu", "togepi", "espeon", "lugia", "mudkip", "kyogre", "piplup", "riolu", "goodra", "rowlet", "litten", "jessie", "gohan", "krilin", "trunks", "vegeta", "beerus", "bulma", "homero", "maggie", "burns", "barney", "krusty", "ralph", "wiggum", "welles", "wilder", "keaton", "nolan", "burton", "lynch", "gerwig", "sofia", "brooks", "hughes", "reiner", "craven", "romero", "raimi", "peele", "whedon", "russo", "reeves", "singer", "ridley", "miller", "hayao", "godard", "besson", "herzog", "boyle", "mendes", "cuaron", "akira", "leone", "moore"]);
+const WORDLE_DIFICIL = new Set(["relic", "abyss", "adder", "agger", "ahura", "albert", "alecto", "aleta", "algrim", "alura", "amber", "amiko", "angmo", "aquon", "arkin", "ayala", "basil", "bernie", "brett", "caiera", "cathy", "chondu", "chung", "clash", "crang", "curse", "daemon", "dargo", "darla", "davos", "debra", "deeds", "deidre", "dekker", "demara", "desak", "devoux", "devoz", "dinesh", "dollar", "dunphy", "eisen", "eldrac", "elijah", "elsie", "ferro", "flint", "freyja", "frost", "gazer", "gentry", "gibney", "gnucci", "gorath", "greer", "grotto", "hannu", "hermod", "hoder", "hudson", "ithan", "jolena", "joseph", "juarez", "justin", "kaplan", "katma", "kelda", "koenig", "krylov", "kudzu", "kurse", "laira", "lasher", "lazaer", "leland", "lohmer", "lotus", "lucca", "lulumu", "lyons", "macha", "madcap", "madman", "magni", "mahkwa", "major", "malik", "mallen", "maxam", "maxon", "mciver", "menace", "mendel", "metron", "mogul", "mosaic", "nadia", "nagan", "native", "nimue", "nobili", "ogord", "payne", "phage", "pierce", "powell", "pratt", "quire", "rachel", "rages", "randac", "razer", "reader", "rikki", "romeo", "roxxon", "saxon", "scurry", "seeker", "shado", "sharon", "shuma", "skagg", "slyde", "sodam", "solem", "spirit", "stakar", "sterns", "stryke", "sunset", "tania", "teddy", "thorne", "torres", "tucker", "turtle", "twain", "tyger", "utgard", "uumaru", "vance", "vapor", "vaughn", "vector", "vidar", "vortex", "wallow", "wheel", "willie", "yalan", "zander", "zaran", "zarrko", "zyozi", "capers", "sunen", "kronos", "zuras", "sawyer", "zorel", "renee", "julie", "maroni", "sionis", "mardon", "emiko", "salaak", "arisia", "bleez", "krona", "oberon", "phobos", "deimos", "mervyn", "hollis", "pedro", "tawky", "larry", "rouge", "dodds", "knight", "jakeem", "damage", "pieter", "ranzz", "tyroc", "bibbo", "mercy", "drury", "maxie", "harper", "psimon", "lilith", "eddie", "skeets", "isabel", "siren", "catman", "zucco", "hestia", "hecate", "arella", "chimp", "occult", "bufkin", "prince", "beauty", "maxine", "osiris", "bekka", "vykin", "takion", "lonar", "heggra", "hiroim", "xemnu", "wyatt", "chance", "topaz", "byrrah", "lopez", "genis", "sunder", "mimic", "nikki", "aaron", "static", "xombi", "mundi", "shaak", "yaddle", "bendu", "sheev", "savage", "ozzel", "needa", "motti", "dedra", "syril", "biggs", "lobot", "wesell", "aurra", "vanth", "satine", "gunray", "poggle", "trench", "durge", "waxer", "dogma", "typho", "bibble", "dryden", "zorba", "rotta", "plutt", "tobias", "huyang", "logray", "paploo", "teebo", "pryde", "connix", "ematt", "tallie", "tekka", "jolee", "juhani", "visas", "kreia", "atton", "greez", "trilla", "baylan", "marrok", "seamus", "crabbe", "goyle", "pansy", "horace", "barty", "avery", "yaxley", "fenrir", "amycus", "sprout", "hooch", "binns", "filius", "sybill", "padma", "hannah", "ernie", "susan", "maxime", "winky", "grawp", "marge", "crouch", "rufus", "bagman", "rowena", "helga", "gallia", "unduli", "offee", "saesee", "indara", "qimir", "malgus", "tagge", "wexley", "jannah", "zorii", "bazine", "ketsu", "tambor", "cliegg", "dexter", "mynock", "krayt", "acklay", "daala", "jacen", "jaina", "karrde", "gloom", "paras", "doduo", "horsea", "seadra", "hoppip", "pineco", "gligar", "slugma", "swinub", "phanpy", "elekid", "magby", "kirlia", "lairon", "mawile", "cacnea", "swablu", "baltoy", "glalie", "spheal", "beldum", "metang", "budew", "gabite", "azelf", "buizel", "stunky", "bonsly", "chatot", "klink", "deino", "keldeo", "emolga", "joltik", "golett", "munna", "pidove", "archen", "yamask", "noibat", "hoopa", "litleo", "pyroar", "inkay", "skrelp", "tyrunt", "amaura", "minior", "komala", "drampa", "comfey", "wimpod", "toxel", "kubfu", "zarude", "nickit", "yamper", "applin", "eiscue", "cufant", "nacli", "klawf", "smoliv", "rellor", "varoom", "veluza", "nymble", "archer", "ariana", "proton", "petrel", "butch", "archie", "shelly", "oleana", "alder", "janine", "morty", "clair", "brawly", "norman", "winona", "byron", "raihan", "nessa", "piers", "geeta", "rowan", "birch", "kukui", "cilan", "bonnie", "lillie", "mallow", "marnie", "nemona", "arven", "penny", "fearow", "ledian", "aipom", "yanma", "dustox", "lombre", "seedot", "plusle", "minun", "gulpin", "swalot", "numel", "spoink", "spinda", "lileep", "wynaut", "sealeo", "regice", "grotle", "luxio", "burmy", "mothim", "combee", "snover", "phione", "emboar", "dewott", "patrat", "woobat", "audino", "throh", "swanna", "klang", "tynamo", "elgyem", "golurk", "durant", "spewpa", "skiddo", "gogoat", "bewear", "raboot", "carkol", "lokix", "pawmo", "pawmot", "dolliv", "rabsca", "bugsy", "chuck", "pryce", "sidney", "phoebe", "glacia", "roark", "bertha", "lucian", "lenora", "burgh", "skyla", "brycen", "marlon", "viola", "grant", "ramos", "malva", "drasna", "olivia", "gordie", "melony", "peony", "tulip", "grusha", "poppy", "hassel", "ortega", "tracey", "looker", "hilda", "emmet", "calem", "shauna", "tierno", "ilima", "kiawe", "kahili", "ryuki", "sonia", "klara", "miriam", "kieran", "briar", "chaos", "kibito", "tapion", "pikkon", "turles", "tarble", "fasha", "burter", "jeice", "guldo", "appule", "sauzer", "dabura", "yakon", "belmod", "heles", "toppo", "dyspo", "botamo", "karin", "marron", "tights", "lunch", "cymbal", "piano", "garlic", "black", "gamma", "bojack", "zangya", "bujin", "pamput", "bibidi", "brief", "panchy", "erasa", "ledgic", "sorbet", "tagoma", "gowasu", "merus", "kunshi", "zoiray", "vikal", "glorio", "panzy", "degesu", "arinsu", "gomah", "rildo", "wheelo", "kochin", "raichi", "salza", "violet", "cargo", "katas", "tsuno", "borgos", "selypa", "olibu", "giran", "clancy", "tatum", "mcbain", "gabbo", "murphy", "lewis", "sherri", "terri", "janey", "luann", "doris", "hoover", "largo", "snyder", "louie", "cecil", "grimes", "agnes", "jasper", "luigi", "sanjay", "mindy", "ziggy", "arnie", "blinky", "stampy", "pinchy", "vidor", "cukor", "siegel", "fuller", "whale", "walsh", "ulmer", "gance", "porter", "wiene", "pabst", "vertov", "ashby", "cimino", "pakula", "mamet", "kasdan", "zwick", "fuqua", "zucker", "meyers", "roach", "devito", "fulci", "barker", "yuzna", "fisher", "lester", "ratner", "story", "trank", "taylor", "proyas", "kelly", "hyams", "nimoy", "meyer", "wilcox", "musker", "selick", "hosoda", "otomo", "oshii", "chomet", "ocelot", "bluth", "bakshi", "hanna", "genndy", "malle", "marker", "carne", "ophuls", "denis", "carax", "pialat", "dreyer", "wajda", "kluge", "tykwer", "menzel", "jancso", "szabo", "leigh", "frears", "ramsay", "newell", "hodges", "arnold", "erice", "medem", "coixet", "bardem", "plaza", "rocha", "lelio", "franco", "littin", "solas", "alonso", "sorin", "jusid", "birri", "carril", "demare", "antin", "mugica", "carri", "miike", "naruse", "oshima", "suzuki", "kawase", "panahi", "nakata", "kapoor", "hirani", "johar", "ratnam", "mehta", "avati", "scola", "petri", "germi", "guzman", "kopple"]);
 function wordleNivelDe(p) { return WORDLE_FACIL.has(p.palabra) ? 'facil' : (WORDLE_DIFICIL.has(p.palabra) ? 'dificil' : 'medio'); }
 
 const WORDLE_INTENTOS = 6;
@@ -26341,10 +26537,10 @@ let wordleTerminado = false;
 let wordleEstadosTeclas = {};
 let wordleNivel = (function(){ try { const n = localStorage.getItem('wordle-nivel'); return ['facil','medio','dificil'].includes(n) ? n : 'medio'; } catch (e) { return 'medio'; } })();
 // Categoría de personajes compartida por Wordle, Ahorcado y Conexiones: 'mdc' = Marvel y DC, 'sw' = Star Wars.
-let juegoCat = (function () { try { const c = localStorage.getItem('juego-cat'); return c === 'sw' || c === 'hp' || c === 'pk' || c === 'db' || c === 'sp' ? c : 'mdc'; } catch (e) { return 'mdc'; } })();
-const JUEGO_CAT_TXT = { mdc: 'Marvel y DC', sw: 'Star Wars', hp: 'Harry Potter', pk: 'Pokémon', db: 'Dragon Ball', sp: 'Los Simpson' };
-const CAT_UNIVERSO = { sw: 'Star Wars', hp: 'Harry Potter', pk: 'Pokémon', db: 'Dragon Ball', sp: 'Los Simpson' };   // universo de cada categoría (mdc = todo lo demás)
-const CAT_SEMILLA = { mdc: 0, sw: 1, hp: 2, pk: 3, db: 4, sp: 5 };
+let juegoCat = (function () { try { const c = localStorage.getItem('juego-cat'); return c === 'sw' || c === 'hp' || c === 'pk' || c === 'db' || c === 'sp' || c === 'dr' ? c : 'mdc'; } catch (e) { return 'mdc'; } })();
+const JUEGO_CAT_TXT = { mdc: 'Marvel y DC', sw: 'Star Wars', hp: 'Harry Potter', pk: 'Pokémon', db: 'Dragon Ball', sp: 'Los Simpson', dr: 'Directores de Cine' };
+const CAT_UNIVERSO = { sw: 'Star Wars', hp: 'Harry Potter', pk: 'Pokémon', db: 'Dragon Ball', sp: 'Los Simpson', dr: 'Directores de Cine' };   // universo de cada categoría (mdc = todo lo demás)
+const CAT_SEMILLA = { mdc: 0, sw: 1, hp: 2, pk: 3, db: 4, sp: 5, dr: 6 };
 function catSuf() { return juegoCat === 'mdc' ? '' : '-' + juegoCat; }
 function catUniversoEs(u) { return juegoCat === 'mdc' ? !Object.values(CAT_UNIVERSO).includes(u) : u === CAT_UNIVERSO[juegoCat]; }
 function catDe(p) { return catUniversoEs(p.universo); }
@@ -26510,7 +26706,7 @@ function wordleActualizarPistas() {
     if (!cont || !wordleSecreta) return;
     const n = wordleIntentos.length;
     const reglas = [
-        { desde: 3, boton: '💡 Pista 1 (disponible tras 3 intentos)', texto: () => (wordleSecreta.universo === 'Pokémon' && POKE_TIPOS.includes(wordleSecreta.tipo)) ? `💡 Es un Pokémon de tipo ${wordleSecreta.tipo}.` : `💡 Es ${articuloTipo(wordleSecreta.tipo)} de ${wordleSecreta.universo}.` },
+        { desde: 3, boton: '💡 Pista 1 (disponible tras 3 intentos)', texto: () => (wordleSecreta.universo === 'Pokémon' && POKE_TIPOS.includes(wordleSecreta.tipo)) ? `💡 Es un Pokémon de tipo ${wordleSecreta.tipo}.` : (wordleSecreta.universo === 'Directores de Cine' ? `💡 Es ${articuloTipo(wordleSecreta.tipo)} de cine.` : `💡 Es ${articuloTipo(wordleSecreta.tipo)} de ${wordleSecreta.universo}.`) },
         { desde: 5, boton: '💡 Pista 2 (disponible tras 5 intentos)', texto: () => `💡 Equipo o grupo: ${wordleSecreta.equipo}.` }
     ];
     cont.innerHTML = '';
@@ -26535,7 +26731,7 @@ function wordleActualizarPistas() {
 
 const POKE_TIPOS = ['Normal', 'Fuego', 'Agua', 'Planta', 'Eléctrico', 'Hielo', 'Lucha', 'Veneno', 'Tierra', 'Volador', 'Psíquico', 'Bicho', 'Roca', 'Fantasma', 'Dragón', 'Siniestro', 'Acero', 'Hada'];
 function articuloTipo(tipo) {
-    return { 'Héroe': 'un Héroe', 'Villano': 'un Villano', 'Antihéroe': 'un Antihéroe', 'Aliado': 'un Aliado (de los héroes)', 'Entrenador': 'un Entrenador', 'Alto Mando': 'un miembro del Alto Mando', 'Líder de gimnasio': 'un Líder de gimnasio', 'Campeón': 'un Campeón de la Liga', 'Profesor': 'un Profesor', 'Familiar': 'un miembro de la familia', 'Vecino': 'un vecino', 'Alumno': 'un alumno', 'Docente': 'un docente', 'Empleado': 'un empleado', 'Famoso': 'un famoso', 'Policía': 'un policía', 'Político': 'un político', 'Delincuente': 'un delincuente', 'Científico': 'un científico', 'Extraterrestre': 'un extraterrestre', 'Mascota': 'una mascota' }[tipo] || tipo;
+    return { 'Héroe': 'un Héroe', 'Villano': 'un Villano', 'Antihéroe': 'un Antihéroe', 'Aliado': 'un Aliado (de los héroes)', 'Entrenador': 'un Entrenador', 'Alto Mando': 'un miembro del Alto Mando', 'Líder de gimnasio': 'un Líder de gimnasio', 'Campeón': 'un Campeón de la Liga', 'Profesor': 'un Profesor', 'Familiar': 'un miembro de la familia', 'Vecino': 'un vecino', 'Alumno': 'un alumno', 'Docente': 'un docente', 'Empleado': 'un empleado', 'Famoso': 'un famoso', 'Policía': 'un policía', 'Político': 'un político', 'Delincuente': 'un delincuente', 'Científico': 'un científico', 'Extraterrestre': 'un extraterrestre', 'Mascota': 'una mascota', 'Director': 'un director', 'Directora': 'una directora' }[tipo] || tipo;
 }
 
 function wordleMensaje(texto, tipo) {
@@ -27215,6 +27411,37 @@ const CON_TEMAS = [
     { t: 'Locutores y presentadores', u: 'Los Simpson', m: [['Kent Brockman', 0], ['Krusty', 0], ['Troy McClure', 1], ['Lionel Hutz', 2]] },
     { t: 'Personajes indios de Springfield', u: 'Los Simpson', m: [['Apu', 0], ['Manjula', 1], ['Sanjay', 2], ['Jessica Lovejoy', 2]] },
     { t: 'Los cuatro Simpson menores', u: 'Los Simpson', m: [['Bart', 0], ['Lisa', 0], ['Maggie', 0], ['Santa', 2]] },
+    // ---- Directores de cine
+    { t: "Películas de Christopher Nolan", u: 'Directores de Cine', m: [["El origen", 0], ["Interestelar", 0], ["Memento", 0], ["Oppenheimer", 0], ["Dunkerque", 1], ["Tenet", 1], ["El gran truco", 1], ["Insomnia", 2], ["Following", 2]], incompat: ["Películas ganadoras del Oscar a Mejor Película"] },
+    { t: "Películas de Quentin Tarantino", u: 'Directores de Cine', m: [["Pulp Fiction", 0], ["Kill Bill", 0], ["Perros de la calle", 0], ["Bastardos sin gloria", 0], ["Django sin cadenas", 1], ["Los ocho más odiados", 1], ["Jackie Brown", 1], ["Había una vez... en Hollywood", 1], ["A prueba de muerte", 2]] },
+    { t: "Películas de Steven Spielberg", u: 'Directores de Cine', m: [["Tiburón", 0], ["E.T.", 0], ["Jurassic Park", 0], ["La lista de Schindler", 0], ["Rescatando al soldado Ryan", 0], ["Hook", 1], ["Atrápame si puedes", 1], ["Minority Report", 1], ["Lincoln", 2], ["Munich", 2], ["Duelo", 2]], incompat: ["Películas ganadoras del Oscar a Mejor Película"] },
+    { t: "Películas de Martin Scorsese", u: 'Directores de Cine', m: [["Taxi Driver", 0], ["Toro salvaje", 0], ["Buenos muchachos", 0], ["El lobo de Wall Street", 0], ["Casino", 1], ["Cabo de miedo", 1], ["Los infiltrados", 1], ["Pandillas de Nueva York", 1], ["El irlandés", 1], ["La invención de Hugo", 2], ["Silencio", 2]], incompat: ["Películas ganadoras del Oscar a Mejor Película"] },
+    { t: "Películas de Stanley Kubrick", u: 'Directores de Cine', m: [["2001: Odisea del espacio", 0], ["El resplandor", 0], ["La naranja mecánica", 0], ["Full Metal Jacket", 1], ["Espartaco", 1], ["Dr. Insólito", 1], ["Barry Lyndon", 1], ["Ojos bien cerrados", 1], ["Lolita", 2], ["Senderos de gloria", 2]] },
+    { t: "Películas de Alfred Hitchcock", u: 'Directores de Cine', m: [["Psicosis", 0], ["Los pájaros", 0], ["Vértigo", 0], ["La ventana indiscreta", 0], ["Con la muerte en los talones", 1], ["Rebeca", 1], ["Extraños en un tren", 1], ["Atrapa a un ladrón", 2], ["Soga", 2], ["Cortina rasgada", 2], ["Frenesí", 2]] },
+    { t: "Películas de Tim Burton", u: 'Directores de Cine', m: [["Beetlejuice", 0], ["Batman", 0], ["Eduardo Manos de Tijera", 0], ["Charlie y la fábrica de chocolate", 1], ["Sweeney Todd", 1], ["Big Fish", 1], ["La novia cadáver", 1], ["Ed Wood", 2], ["Marte ataca", 2], ["Dumbo", 2], ["Frankenweenie", 2]] },
+    { t: "Películas de Ridley Scott", u: 'Directores de Cine', m: [["Alien", 0], ["Blade Runner", 0], ["Gladiador", 0], ["Thelma & Louise", 1], ["Prometheus", 1], ["Napoleón", 1], ["Black Hawk derribado", 1], ["Hannibal", 2], ["El reino de los cielos", 2], ["Los duelistas", 2]], incompat: ["Películas de Denis Villeneuve", "Películas ganadoras del Oscar a Mejor Película"] },
+    { t: "Películas de Hayao Miyazaki", u: 'Directores de Cine', m: [["El viaje de Chihiro", 0], ["Mi vecino Totoro", 0], ["La princesa Mononoke", 0], ["El castillo ambulante", 0], ["Ponyo", 1], ["Nausicaä del Valle del Viento", 1], ["Porco Rosso", 1], ["Kiki: entregas a domicilio", 1], ["El niño y la garza", 1], ["Se levanta el viento", 2]] },
+    { t: "Películas de los hermanos Coen", u: 'Directores de Cine', m: [["Fargo", 0], ["El gran Lebowski", 0], ["Sin lugar para los débiles", 0], ["Barton Fink", 1], ["Valor de ley", 1], ["Quemar después de leer", 1], ["Crueldad intolerable", 2], ["Un tipo serio", 2], ["¡Ave, César!", 2]] },
+    { t: "Películas de Guillermo del Toro", u: 'Directores de Cine', m: [["El laberinto del fauno", 0], ["La forma del agua", 0], ["Hellboy", 1], ["Pacific Rim", 1], ["Frankenstein", 1], ["El espinazo del diablo", 2], ["Cronos", 2], ["La cumbre escarlata", 2], ["El callejón de las almas perdidas", 2], ["Pinocho de Guillermo del Toro", 2]], incompat: ["Películas ganadoras del Oscar a Mejor Película"] },
+    { t: "Películas de Denis Villeneuve", u: 'Directores de Cine', m: [["Dune", 0], ["Dune: Parte dos", 0], ["Blade Runner 2049", 0], ["La llegada", 0], ["Sicario", 1], ["Prisioneros", 1], ["Enemy", 2], ["Incendies", 2], ["Polytechnique", 2]], incompat: ["Películas de Ridley Scott"] },
+    { t: "Ganadores del Oscar a Mejor Director", u: 'Directores de Cine', pers: true, m: [["Steven Spielberg", 0], ["Martin Scorsese", 0], ["Christopher Nolan", 0], ["James Cameron", 0], ["Francis Ford Coppola", 1], ["Clint Eastwood", 1], ["Peter Jackson", 1], ["Ang Lee", 1], ["Alfonso Cuarón", 1], ["Alejandro González Iñárritu", 1], ["Guillermo del Toro", 1], ["Bong Joon-ho", 1], ["Kathryn Bigelow", 1], ["Chloé Zhao", 2], ["Danny Boyle", 2], ["Damien Chazelle", 2], ["Sean Baker", 2], ["Oliver Stone", 2]], incompat: ["Directoras de cine", "Directores de ciencia ficción", "Directores mexicanos", "Hollywood moderno"] },
+    { t: "Directoras de cine", u: 'Directores de Cine', pers: true, m: [["Greta Gerwig", 0], ["Sofia Coppola", 0], ["Kathryn Bigelow", 0], ["Jane Campion", 1], ["Agnès Varda", 1], ["Lucrecia Martel", 1], ["Patty Jenkins", 1], ["Chloé Zhao", 1], ["Nora Ephron", 1], ["Ava DuVernay", 1], ["Céline Sciamma", 2], ["Lina Wertmüller", 2], ["Claire Denis", 2], ["Lynne Ramsay", 2], ["Nancy Meyers", 2]], incompat: ["Comedia", "Directores de comedia", "Ganadores del Oscar a Mejor Director", "Hollywood moderno"] },
+    { t: "Directores de películas de Batman", u: 'Directores de Cine', pers: true, m: [["Tim Burton", 0], ["Christopher Nolan", 0], ["Matt Reeves", 0], ["Joel Schumacher", 1], ["Zack Snyder", 1], ["Todd Phillips", 2], ["Leslie H. Martinson", 2]], incompat: ["Hollywood moderno"] },
+    { t: "Directores del Universo Cinematográfico de Marvel", u: 'Directores de Cine', pers: true, m: [["Jon Favreau", 0], ["Joss Whedon", 0], ["Anthony Russo", 0], ["James Gunn", 0], ["Taika Waititi", 0], ["Ryan Coogler", 0], ["Kenneth Branagh", 1], ["Scott Derrickson", 1], ["Peyton Reed", 1], ["Sam Raimi", 1], ["Joe Johnston", 1], ["Louis Leterrier", 2], ["Alan Taylor", 2], ["Destin Daniel Cretton", 2], ["Shane Black", 2]], incompat: ["Directores de superhéroes"] },
+    { t: "Directores de las películas de Star Wars", u: 'Directores de Cine', pers: true, m: [["George Lucas", 0], ["J. J. Abrams", 0], ["Rian Johnson", 0], ["Irvin Kershner", 1], ["Gareth Edwards", 1], ["Ron Howard", 1], ["Richard Marquand", 2]] },
+    { t: "Maestros del terror", u: 'Directores de Cine', pers: true, m: [["John Carpenter", 0], ["Wes Craven", 0], ["George A. Romero", 0], ["James Wan", 0], ["Jordan Peele", 0], ["Tobe Hooper", 1], ["Dario Argento", 1], ["Sam Raimi", 1], ["Ari Aster", 1], ["Robert Eggers", 1], ["Mike Flanagan", 1], ["Eli Roth", 1], ["Lucio Fulci", 2], ["Mario Bava", 2], ["Clive Barker", 2]], incompat: ["Terror"] },
+    { t: "Clásicos del cine de terror", u: 'Directores de Cine', m: [["Halloween", 0], ["Pesadilla en Elm Street", 0], ["El exorcista", 0], ["La masacre de Texas", 0], ["Scream", 0], ["Viernes 13", 1], ["Carrie", 1], ["La noche de los muertos vivos", 1], ["Hellraiser", 1], ["El proyecto de la bruja de Blair", 1], ["Poltergeist", 1], ["El bebé de Rosemary", 1], ["Nosferatu", 1], ["Suspiria", 2], ["Hereditary", 2]] },
+    { t: "Películas ganadoras del Oscar a Mejor Película", u: 'Directores de Cine', m: [["El Padrino", 0], ["Titanic", 0], ["Gladiador", 0], ["Forrest Gump", 0], ["Parásitos", 0], ["Oppenheimer", 0], ["La lista de Schindler", 0], ["El silencio de los inocentes", 0], ["Casablanca", 1], ["Lo que el viento se llevó", 1], ["Ben-Hur", 1], ["Rocky", 1], ["Braveheart", 1], ["Slumdog Millonario", 1], ["Todo en todas partes al mismo tiempo", 1], ["La forma del agua", 1], ["12 años de esclavitud", 1], ["El discurso del rey", 1], ["Los infiltrados", 1], ["Una mente brillante", 2], ["Moonlight", 2], ["Anora", 2], ["Argo", 2], ["CODA", 2], ["Nomadland", 2], ["Green Book", 2], ["Birdman", 2], ["Spotlight", 2], ["Chicago", 2]], incompat: ["Películas de Christopher Nolan", "Películas de Guillermo del Toro", "Películas de Martin Scorsese", "Películas de Ridley Scott", "Películas de Steven Spielberg"] },
+    { t: "Directores de Pixar", u: 'Directores de Cine', pers: true, m: [["Pete Docter", 0], ["Andrew Stanton", 0], ["Brad Bird", 0], ["John Lasseter", 0], ["Lee Unkrich", 1], ["Brenda Chapman", 2], ["Dan Scanlon", 2], ["Domee Shi", 2], ["Enrico Casarosa", 2]] },
+    { t: "Directores del cine argentino", u: 'Directores de Cine', pers: true, m: [["Juan José Campanella", 0], ["Damián Szifron", 0], ["Pablo Trapero", 0], ["Lucrecia Martel", 1], ["Adrián Caetano", 1], ["Fabián Bielinsky", 1], ["Fernando Solanas", 1], ["Leonardo Favio", 1], ["Luis Puenzo", 1], ["Marcelo Piñeyro", 1], ["Daniel Burman", 1], ["Santiago Mitre", 1], ["Eliseo Subiela", 2], ["Adolfo Aristarain", 2], ["Lisandro Alonso", 2], ["Gastón Duprat", 2], ["Carlos Sorín", 2], ["Hugo del Carril", 2], ["Leopoldo Torre Nilsson", 2]], incompat: ["Cine argentino"] },
+    { t: "Películas argentinas", u: 'Directores de Cine', m: [["El secreto de sus ojos", 0], ["Relatos salvajes", 0], ["Nueve reinas", 0], ["Esperando la carroza", 0], ["La historia oficial", 0], ["Argentina, 1985", 1], ["El hijo de la novia", 1], ["Un cuento chino", 1], ["El ciudadano ilustre", 1], ["Wakolda", 2], ["Las aguas bajan turbias", 2], ["La ciénaga", 2], ["Luna de Avellaneda", 2], ["Plata quemada", 2], ["Pizza, birra, faso", 2], ["El abrazo partido", 2], ["Crónica de un niño solo", 2], ["XXY", 2]] },
+    { t: "Directores de ciencia ficción", u: 'Directores de Cine', pers: true, m: [["Ridley Scott", 0], ["James Cameron", 0], ["George Lucas", 0], ["Steven Spielberg", 0], ["Denis Villeneuve", 0], ["Stanley Kubrick", 1], ["Paul Verhoeven", 1], ["Alfonso Cuarón", 1], ["George Miller", 1], ["Robert Zemeckis", 1], ["Andréi Tarkovski", 2], ["Fritz Lang", 2], ["Neill Blomkamp", 2], ["Alex Garland", 2]], incompat: ["Ciencia ficción", "Ganadores del Oscar a Mejor Director"] },
+    { t: "Maestros de la Nouvelle Vague", u: 'Directores de Cine', pers: true, m: [["Jean-Luc Godard", 0], ["François Truffaut", 0], ["Éric Rohmer", 1], ["Claude Chabrol", 1], ["Agnès Varda", 1], ["Jacques Rivette", 2], ["Louis Malle", 2], ["Alain Resnais", 2], ["Jacques Demy", 2], ["Chris Marker", 2]], incompat: ["Nouvelle Vague"] },
+    { t: "Directores japoneses", u: 'Directores de Cine', pers: true, m: [["Akira Kurosawa", 0], ["Hayao Miyazaki", 0], ["Yasujirō Ozu", 1], ["Takeshi Kitano", 1], ["Hirokazu Kore-eda", 1], ["Makoto Shinkai", 1], ["Kenji Mizoguchi", 2], ["Takashi Miike", 2], ["Ryūsuke Hamaguchi", 2], ["Nagisa Oshima", 2], ["Hideo Nakata", 2], ["Seijun Suzuki", 2]], incompat: ["Cine asiático"] },
+    { t: "Directores de comedia", u: 'Directores de Cine', pers: true, m: [["Mel Brooks", 0], ["Woody Allen", 0], ["John Hughes", 0], ["Billy Wilder", 1], ["Harold Ramis", 1], ["Rob Reiner", 1], ["Judd Apatow", 1], ["Adam McKay", 1], ["Ivan Reitman", 1], ["Edgar Wright", 1], ["John Landis", 1], ["Nora Ephron", 1], ["Paul Feig", 2], ["David Zucker", 2], ["Nancy Meyers", 2]], incompat: ["Comedia", "Directoras de cine"] },
+    { t: "Directores del cine británico", u: 'Directores de Cine', pers: true, m: [["Alfred Hitchcock", 0], ["Ridley Scott", 0], ["Danny Boyle", 0], ["Guy Ritchie", 0], ["Sam Mendes", 1], ["Ken Loach", 1], ["Steve McQueen", 1], ["David Lean", 1], ["Edgar Wright", 1], ["Mike Leigh", 2], ["Stephen Frears", 2], ["Lynne Ramsay", 2], ["Michael Powell", 2]], incompat: ["Cine británico"] },
+    { t: "Directores mexicanos", u: 'Directores de Cine', pers: true, m: [["Guillermo del Toro", 0], ["Alfonso Cuarón", 0], ["Alejandro González Iñárritu", 0], ["Luis Buñuel", 1], ["Carlos Reygadas", 2], ["Michel Franco", 2], ["Alfonso Arau", 2], ["Emilio Fernández", 2], ["Amat Escalante", 2]], incompat: ["Cine latinoamericano", "Ganadores del Oscar a Mejor Director"] },
+    { t: "Directores del cine italiano", u: 'Directores de Cine', pers: true, m: [["Federico Fellini", 0], ["Sergio Leone", 0], ["Bernardo Bertolucci", 1], ["Luchino Visconti", 1], ["Michelangelo Antonioni", 1], ["Pier Paolo Pasolini", 1], ["Roberto Rossellini", 1], ["Vittorio De Sica", 1], ["Paolo Sorrentino", 1], ["Giuseppe Tornatore", 1], ["Dario Argento", 1], ["Roberto Benigni", 1], ["Matteo Garrone", 2], ["Nanni Moretti", 2], ["Ermanno Olmi", 2]] },
 ];
 const CON_COLORES = ['amarillo', 'verde', 'azul', 'violeta'];
 const CON_EMOJI = { amarillo: '🟨', verde: '🟩', azul: '🟦', violeta: '🟪' };
@@ -27237,7 +27464,19 @@ const CON_GENERICAS = new Set(['hombre', 'mujer', 'doctor', 'lady', 'captain', '
 function conTokens(n) {
     return String(n).split(/[^A-Za-zÀ-ÿ0-9']+/).map(conNorm).filter(t => t.length >= 4 && !CON_GENERICAS.has(t));
 }
+// Directores de cine: dos directores con el mismo nombre de pila (Peter, David, Steven...) no son "el mismo personaje"; se comparan por nombre completo.
+let CON_DIR_SET = null;
+function conDirSet() {
+    if (!CON_DIR_SET) {
+        CON_DIR_SET = new Set();
+        WORDLE_PALABRAS.forEach(p => { if (p.universo === 'Directores de Cine') CON_DIR_SET.add(conNorm(p.nombre)); });
+        CON_TEMAS.forEach(t => { if (t.pers) t.m.forEach(x => CON_DIR_SET.add(conNorm(x[0]))); });
+    }
+    return CON_DIR_SET;
+}
 function conMismoPersonaje(a, b) {
+    const na = conNorm(a), nb = conNorm(b), d = conDirSet();
+    if (d.has(na) && d.has(nb)) return na === nb;
     const ta = conTokens(a);
     return conTokens(b).some(t => ta.includes(t));
 }
@@ -28687,13 +28926,14 @@ if (adpBtnCompartir) {
 // ============================================================
 // JUEGO "BINGO DEL MULTIVERSO" (cartón 5x5 + bolillero + 2 rivales CPU)
 // ============================================================
-const BG_FUENTES = { todo: 'Marvel y DC', marvel: 'Marvel', dc: 'DC', starwars: 'Star Wars', hp: 'Harry Potter', pk: 'Pokémon', db: 'Dragon Ball', sp: 'Los Simpson', obras: 'Películas y series' };
+const BG_FUENTES = { todo: 'Marvel y DC', marvel: 'Marvel', dc: 'DC', starwars: 'Star Wars', hp: 'Harry Potter', pk: 'Pokémon', db: 'Dragon Ball', sp: 'Los Simpson', dr: 'Directores de Cine', obras: 'Películas y series' };
 const BG_MODOS = { linea: 'Línea', lleno: 'Cartón lleno' };
 const BG_TOTAL = 75;
 const BG_RIVALES = {
     marvel: ['Nick Fury', 'Rocket', 'Jarvis', 'Maria Hill', 'Happy Hogan', 'Howard el Pato'],
     dc: ['Alfred', 'Amanda Waller', 'Oracle', 'Lucius Fox', 'Detective Chimp', 'Krypto'],
     starwars: ['Almirante Ackbar', 'Maz Kanata', 'Jabba', 'Lando', 'Mon Mothma', 'Huyang'],
+    dr: ['Crítico del cineclub', 'Proyeccionista', 'Productor ejecutivo', 'Claquetista', 'Guionista de turno', 'Cinéfilo del barrio'],
     sp: ['Moe', 'Krusty', 'Apu', 'Ned Flanders', 'Jefe Gorgory', 'Milhouse'],
     db: ['Bulma', 'Maestro Roshi', 'Krilin', 'Mr. Satán', 'Yamcha', 'Chichi'],
     pk: ['Profesor Oak', 'Pikachu', 'Meowth', 'Enfermera Joy', 'Oficial Jenny', 'Brock'],
@@ -28733,7 +28973,7 @@ function bgPoolFuente() {
         WORDLE_PALABRAS.forEach(p => {
             if (bgFuente === 'marvel' && p.universo !== 'Marvel') return;
             if (bgFuente === 'dc' && p.universo !== 'DC') return;
-            if (bgFuente === 'starwars' ? p.universo !== 'Star Wars' : (bgFuente === 'hp' ? p.universo !== 'Harry Potter' : (bgFuente === 'pk' ? p.universo !== 'Pokémon' : (bgFuente === 'db' ? p.universo !== 'Dragon Ball' : (bgFuente === 'sp' ? p.universo !== 'Los Simpson' : ['Star Wars', 'Harry Potter', 'Pokémon', 'Dragon Ball', 'Los Simpson'].includes(p.universo)))))) return;
+            if (bgFuente === 'starwars' ? p.universo !== 'Star Wars' : (bgFuente === 'hp' ? p.universo !== 'Harry Potter' : (bgFuente === 'pk' ? p.universo !== 'Pokémon' : (bgFuente === 'db' ? p.universo !== 'Dragon Ball' : (bgFuente === 'sp' ? p.universo !== 'Los Simpson' : (bgFuente === 'dr' ? p.universo !== 'Directores de Cine' : ['Star Wars', 'Harry Potter', 'Pokémon', 'Dragon Ball', 'Los Simpson', 'Directores de Cine'].includes(p.universo))))))) return;
             let img = null;
             try { img = imagenDePersonaje(p.palabra); } catch (e) {}
             add(ahNombreDe(p), p.universo, img);
