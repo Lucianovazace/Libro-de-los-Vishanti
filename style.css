@@ -2075,3 +2075,5 @@ h2 {
 .bg-celda.u-lossimpson { border-color: #c79a00; }
 .bg-bola.u-directoresdecine { background: radial-gradient(circle at 35% 30%, #d0d8dc, #37474f 58%, #10181c); border-color: #eceff1; }
 .bg-celda.u-directoresdecine { border-color: #546e7a; }
+.bg-bola.u-ben10 { background: radial-gradient(circle at 35% 30%, #b9f6ca, #2ecc40 58%, #0b4d17); border-color: #e8fff0; color: #04230c; }
+.bg-celda.u-ben10 { border-color: #1faa34; }
