@@ -14455,18 +14455,34 @@
     <section id="seccion-futbol" class="oculto">
         <button class="btn-volver" id="btn-volver-futbol">← Volver a Juegos</button>
         <h2>Fútbol ⚽</h2>
+        <div class="grilla-juegos">
+            <div class="tarjeta-juego" id="tarjeta-adivina-camiseta">
+                <div class="icono-juego">👕</div>
+                <h3>Adiviná la camiseta</h3>
+                <p>Te mostramos un recorte de una camiseta: adiviná de qué temporada es.</p>
+            </div>
+        </div>
         <div class="futbol-construccion">
             <div class="icono-juego">🚧</div>
-            <h3>En construcción</h3>
-            <p>La cancha todavía se está armando. Estamos cargando jugadores, empezando por Boca Juniors, década por década.</p>
-            <p class="futbol-lista-titulo">Lo que viene:</p>
+            <h3>Más en construcción</h3>
+            <p>Seguimos cargando jugadores y camisetas, club por club.</p>
             <ul>
                 <li>Wordle de jugadores: adiviná el apellido del crack.</li>
                 <li>Ahorcado de futbolistas, con solo la inicial a la vista.</li>
                 <li>Conexiones entre jugadores, clubes y campeonatos.</li>
-                <li>Más clubes y más décadas, a medida que se carguen los planteles.</li>
             </ul>
         </div>
+    </section>
+
+    <!-- SECCIÓN: ADIVINÁ LA CAMISETA -->
+    <section id="seccion-adivina-camiseta" class="oculto">
+        <button class="btn-volver" id="btn-volver-adivina-camiseta">← Volver a Fútbol</button>
+        <h2>Adiviná la camiseta 👕</h2>
+        <p class="subtitulo-juegos" id="adc-info"></p>
+        <div class="adc-marco"><img id="adc-img" alt="Camiseta a adivinar" referrerpolicy="no-referrer"></div>
+        <p id="adc-estado" class="adc-estado"></p>
+        <div class="adc-opciones" id="adc-opciones"></div>
+        <button class="btn-nav" id="adc-siguiente" style="display:none;">Siguiente ▶</button>
     </section>
 
     <!-- SECCIÓN: JUEGOS DE CINE, SERIES Y ENTRETENIMIENTO (HUB) -->

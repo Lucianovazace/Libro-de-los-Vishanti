@@ -14,7 +14,10 @@ const FUTBOL_ESCUDOS = {
 // Camisetas (imágenes) por club y temporada, para el juego de adivinar la camiseta.
 const FUTBOL_CAMISETAS = [
     { club: "Boca Juniors", temporada: "2020/21", anio: 2020, tipo: "Titular", url: "https://www.ole.com.ar/images/2021/01/17/JxT2OOwpy_720x0__1.jpg" },
-    { club: "Boca Juniors", temporada: "2020/21", anio: 2020, tipo: "Suplente", url: "https://www.ole.com.ar/images/2020/11/09/AwaFrinjz_720x0__1.jpg" }
+    { club: "Boca Juniors", temporada: "2020/21", anio: 2020, tipo: "Suplente", url: "https://www.ole.com.ar/images/2020/11/09/AwaFrinjz_720x0__1.jpg" },
+    { club: "Boca Juniors", temporada: "2021/22", anio: 2021, tipo: "Titular", url: "https://media.tycsports.com/files/2021/08/15/320188/boca_1440x810_wmk.jpg?v=1" },
+    { club: "Boca Juniors", temporada: "2021/22", anio: 2021, tipo: "Suplente", url: "https://media.tycsports.com/files/2021/09/04/327888/boca-festejo-vazquez_862x485.jpg?v=1" },
+    { club: "Boca Juniors", temporada: "2021/22", anio: 2021, tipo: "Alternativa", url: "https://media.puntal.com.ar/p/66871f9a70d70f3aaa8b97a928c4de76/adjuntos/270/imagenes/001/495/0001495141/advincula.jpg" }
 ];
 const FUTBOL_JUGADORES = [
     // ---- Boca Juniors 2020 ----

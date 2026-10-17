@@ -32310,3 +32310,79 @@ function renderizarQueMiro() {
         if (h) new ResizeObserver(actualizar).observe(h);
     }
 })();
+
+
+// ===== FÚTBOL: ADIVINÁ LA CAMISETA =====
+// Muchas fotos son anchas y enfocan al jugador: se muestran en un marco 4:3 con zoom sobre
+// el torso (cada camiseta puede traer `pos` "x% y%" y `zoom` para afinar el recorte).
+(function () {
+    const tarjeta = document.getElementById('tarjeta-adivina-camiseta');
+    if (!tarjeta || typeof FUTBOL_CAMISETAS === 'undefined') return;
+    const img = document.getElementById('adc-img');
+    const info = document.getElementById('adc-info');
+    const estado = document.getElementById('adc-estado');
+    const opc = document.getElementById('adc-opciones');
+    const sig = document.getElementById('adc-siguiente');
+    let ronda = [], idx = 0, aciertos = 0, intentos = 0, actual = null;
+
+    const etiqueta = (anio) => anio + '/' + String((anio + 1) % 100).padStart(2, '0');
+    const mezclar = (a) => { for (let i = a.length - 1; i > 0; i--) { const k = Math.floor(Math.random() * (i + 1)); [a[i], a[k]] = [a[k], a[i]]; } return a; };
+
+    function mostrar() {
+        if (idx >= ronda.length) {
+            img.style.display = 'none'; opc.innerHTML = ''; sig.style.display = 'none';
+            info.textContent = '¡Terminaste! Aciertos: ' + aciertos + ' de ' + ronda.length + ' (' + intentos + ' intentos).';
+            estado.textContent = '';
+            sig.textContent = 'Jugar de nuevo'; sig.style.display = 'block'; sig.onclick = empezar;
+            return;
+        }
+        actual = ronda[idx];
+        img.style.display = '';
+        img.src = actual.url;
+        img.style.objectPosition = actual.pos || '50% 35%';
+        img.style.transformOrigin = actual.pos || '50% 35%';
+        img.style.transform = 'scale(' + (actual.zoom || 1.6) + ')';
+        info.textContent = actual.club + ' · ' + actual.tipo + ' · Camiseta ' + (idx + 1) + ' de ' + ronda.length;
+        estado.textContent = '¿De qué temporada es?';
+        sig.style.display = 'none';
+        const set = new Set([actual.anio]);
+        const posibles = [];
+        for (let d = -6; d <= 6; d++) if (d !== 0 && actual.anio + d >= 1990 && actual.anio + d <= 2026) posibles.push(actual.anio + d);
+        mezclar(posibles).slice(0, 3).forEach(a => set.add(a));
+        opc.innerHTML = '';
+        mezclar([...set]).forEach(a => {
+            const b = document.createElement('button');
+            b.textContent = etiqueta(a);
+            b.addEventListener('click', () => responder(a, b));
+            opc.appendChild(b);
+        });
+    }
+
+    function responder(a, boton) {
+        intentos++;
+        if (a === actual.anio) {
+            aciertos++;
+            boton.classList.add('ok');
+            estado.textContent = '¡Correcto! ' + actual.club + ' ' + actual.temporada + ' (' + actual.tipo + ')';
+        } else {
+            boton.classList.add('mal');
+            [...opc.children].forEach(b => { if (b.textContent === etiqueta(actual.anio)) b.classList.add('ok'); });
+            estado.textContent = 'Era ' + actual.club + ' ' + actual.temporada + ' (' + actual.tipo + ')';
+        }
+        [...opc.children].forEach(b => b.disabled = true);
+        img.style.transform = 'scale(1)';
+        sig.textContent = 'Siguiente ▶';
+        sig.style.display = 'block';
+        sig.onclick = () => { idx++; mostrar(); };
+    }
+
+    function empezar() {
+        ronda = mezclar(FUTBOL_CAMISETAS.slice());
+        idx = 0; aciertos = 0; intentos = 0;
+        mostrar();
+    }
+
+    tarjeta.addEventListener('click', () => { empezar(); cambiarSeccion(document.getElementById('seccion-adivina-camiseta')); });
+    const volver = document.getElementById('btn-volver-adivina-camiseta');
+    if (volver) volver.addEventListener('click', () => cambiarSeccion(document.getElementById('seccion-futbol')));
+})();
