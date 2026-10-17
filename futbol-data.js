@@ -17,7 +17,16 @@ const FUTBOL_CAMISETAS = [
     { club: "Boca Juniors", temporada: "2020/21", anio: 2020, tipo: "Suplente", url: "https://www.ole.com.ar/images/2020/11/09/AwaFrinjz_720x0__1.jpg" },
     { club: "Boca Juniors", temporada: "2021/22", anio: 2021, tipo: "Titular", url: "https://media.tycsports.com/files/2021/08/15/320188/boca_1440x810_wmk.jpg?v=1" },
     { club: "Boca Juniors", temporada: "2021/22", anio: 2021, tipo: "Suplente", url: "https://media.tycsports.com/files/2021/09/04/327888/boca-festejo-vazquez_862x485.jpg?v=1" },
-    { club: "Boca Juniors", temporada: "2021/22", anio: 2021, tipo: "Alternativa", url: "https://media.puntal.com.ar/p/66871f9a70d70f3aaa8b97a928c4de76/adjuntos/270/imagenes/001/495/0001495141/advincula.jpg" }
+    { club: "Boca Juniors", temporada: "2021/22", anio: 2021, tipo: "Alternativa", url: "https://media.puntal.com.ar/p/66871f9a70d70f3aaa8b97a928c4de76/adjuntos/270/imagenes/001/495/0001495141/advincula.jpg" },
+    { club: "Boca Juniors", temporada: "2022/23", anio: 2022, tipo: "Titular", url: "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/K5EDIFQ52FAIHPGDVC6LZCKXGY.jpg" },
+    { club: "Boca Juniors", temporada: "2022/23", anio: 2022, tipo: "Suplente", url: "https://www.ole.com.ar/images/2022/09/04/AC2VDg0sd_2000x1500__1.jpg" },
+    { club: "Boca Juniors", temporada: "2022/23", anio: 2022, tipo: "Alternativa", url: "https://infobae-infobae-prod.web.arc-cdn.net/resizer/v2/BKOBXJHF3RBOHEMVP4LX223ZSY.JPG?auth=20659f524b7380c9247f30da1d00d4a64093ecd9662a0e182c83fcaab951ee57" },
+    { club: "Boca Juniors", temporada: "2023/24", anio: 2023, tipo: "Titular", url: "https://www.ole.com.ar/images/2023/08/18/K33T8dWa1_400x400__1.jpg" },
+    { club: "Boca Juniors", temporada: "2023/24", anio: 2023, tipo: "Suplente", url: "https://historiadeboca.com.ar/Fotos/Jugadores/1323.jpg" },
+    { club: "Boca Juniors", temporada: "2024/25", anio: 2024, tipo: "Titular", url: "https://www.ole.com.ar/images/2024/08/15/ChU3ntPD-_400x400__1.jpg" },
+    { club: "Boca Juniors", temporada: "2024/25", anio: 2024, tipo: "Suplente", url: "https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2024%2F0928%2Fr1393246_1296x729_16%2D9.jpg" },
+    { club: "Boca Juniors", temporada: "2024/25", anio: 2024, tipo: "Alternativa", url: "https://historiadeboca.com.ar/Fotos/Partidos/6502.jpg" },
+    { club: "Boca Juniors", temporada: "2025/26", anio: 2025, tipo: "Titular", url: "https://www.clarin.com/img/2025/11/02/L_20-ZqdZ_2000x1500__1.jpg" }
 ];
 const FUTBOL_JUGADORES = [
     // ---- Boca Juniors 2020 ----
