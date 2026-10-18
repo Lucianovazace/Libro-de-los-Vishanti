@@ -4,7 +4,7 @@
 //   (las filas de la década de 1990 tienen además 'temporada' (ej. "1995/96") y anio = año de inicio de la temporada)
 //   palabra = apellido en minúsculas a-z sin acentos SOLO si tiene 5 o 6 letras; si no, null.
 // Para agregar más: sumar objetos al arreglo (misma estructura). Documentación: Project "Biblioteca De Comics", claude/futbol-jugadores.md
-// Hoy: Manchester City (1979/80, 1997/98, 2000/01 a 2004/05, 2006/07 a 2014/15, 2017/18 a 2020/21, 2023/24 y 2025/26), Liverpool (1946/47 a 2025/26), Chelsea (1964/65, 1969/70, 1970/71, 1983/84, 1995/96 a 2013/14, 2018/19 a 2020/21 y 2022/23 a 2025/26), River Plate (2019/20, 2021 a 2023, solo liga), Manchester United (1930/31, 1932/33 a 1934/35, 1946/47 a 2007/08 y 2011/12 a 2025/26), FC Barcelona (1969/70 a 2026/27), Selección Argentina (por torneo: Mundiales 2026 a 1978 y 1974, 1966, 1962, 1958, 1934, 1930; Copa América 2024 a 1991 y 1989, 1987, 1983, 1979, 1975, 1967, 1963, 1959 (dos), 1957, 1955, 1947, 1946, 1945, 1942, 1941, 1937), Real Madrid (1933/34 a 1935/36, 1939/40, 1940/41 a 1949/50, 1950/51 a 1959/60, 1960/61 a 1969/70, 1970/71 a 1979/80, 1980/81 a 1989/90, 1990/91 a 1999/00, 2000/01 a 2009/10, 2010/11 a 2019/20 y 2020/21 en adelante) y Boca Juniors, décadas 1960-1979 (por año), 1980 (1980-1989 con 'temporada'), 1990 (temporadas 1990/91 a 1999/00), 2000 (2000-2009), 2010 (2010-2019) y 2020 (2020-2026).
+// Hoy: Manchester City (1965/66, 1967/68, 1979/80, 1997/98, 2000/01 a 2004/05, 2006/07 a 2014/15, 2017/18 a 2020/21, 2023/24 y 2025/26), Liverpool (1946/47 a 2025/26), Chelsea (1964/65, 1969/70, 1970/71, 1983/84, 1995/96 a 2013/14, 2018/19 a 2020/21 y 2022/23 a 2025/26), River Plate (2019/20, 2021 a 2023, solo liga), Manchester United (1930/31, 1932/33 a 1934/35, 1946/47 a 2007/08 y 2011/12 a 2025/26), FC Barcelona (1969/70 a 2026/27), Selección Argentina (por torneo: Mundiales 2026 a 1978 y 1974, 1966, 1962, 1958, 1934, 1930; Copa América 2024 a 1991 y 1989, 1987, 1983, 1979, 1975, 1967, 1963, 1959 (dos), 1957, 1955, 1947, 1946, 1945, 1942, 1941, 1937), Real Madrid (1933/34 a 1935/36, 1939/40, 1940/41 a 1949/50, 1950/51 a 1959/60, 1960/61 a 1969/70, 1970/71 a 1979/80, 1980/81 a 1989/90, 1990/91 a 1999/00, 2000/01 a 2009/10, 2010/11 a 2019/20 y 2020/21 en adelante) y Boca Juniors, décadas 1960-1979 (por año), 1980 (1980-1989 con 'temporada'), 1990 (temporadas 1990/91 a 1999/00), 2000 (2000-2009), 2010 (2010-2019) y 2020 (2020-2026).
 // ============================================================
 // Escudos de los clubes (imágenes). Boca y Real Madrid.
 const FUTBOL_ESCUDOS = {
@@ -11558,4 +11558,48 @@ const FUTBOL_JUGADORES = [
     { anio: 1979, temporada: "1979/80", club: "Manchester City", nombre: "Paul Sugrue", apellido: "Sugrue", posicion: "Mediocampista", palabra: "sugrue" },
     { anio: 1979, temporada: "1979/80", club: "Manchester City", nombre: "Dennis Tueart", apellido: "Tueart", posicion: "Mediocampista", palabra: "tueart" },
     { anio: 1979, temporada: "1979/80", club: "Manchester City", nombre: "Colin Viljoen", apellido: "Viljoen", posicion: "Mediocampista", palabra: null },
+    // ---- Manchester City temporada 1965/66 ----
+    { anio: 1965, temporada: "1965/66", club: "Manchester City", nombre: "Harry Dowd", apellido: "Dowd", posicion: "Arquero", palabra: null },
+    { anio: 1965, temporada: "1965/66", club: "Manchester City", nombre: "Alan Ogley", apellido: "Ogley", posicion: "Arquero", palabra: "ogley" },
+    { anio: 1965, temporada: "1965/66", club: "Manchester City", nombre: "Dave Bacuzzi", apellido: "Bacuzzi", posicion: "Defensor", palabra: null },
+    { anio: 1965, temporada: "1965/66", club: "Manchester City", nombre: "David Connor", apellido: "Connor", posicion: "Defensor", palabra: "connor" },
+    { anio: 1965, temporada: "1965/66", club: "Manchester City", nombre: "Mike Doyle", apellido: "Doyle", posicion: "Defensor", palabra: "doyle" },
+    { anio: 1965, temporada: "1965/66", club: "Manchester City", nombre: "George Heslop", apellido: "Heslop", posicion: "Defensor", palabra: "heslop" },
+    { anio: 1965, temporada: "1965/66", club: "Manchester City", nombre: "Glyn Pardoe", apellido: "Pardoe", posicion: "Defensor", palabra: "pardoe" },
+    { anio: 1965, temporada: "1965/66", club: "Manchester City", nombre: "Cliff Sear", apellido: "Sear", posicion: "Defensor", palabra: null },
+    { anio: 1965, temporada: "1965/66", club: "Manchester City", nombre: "Colin Bell", apellido: "Bell", posicion: "Mediocampista", palabra: null },
+    { anio: 1965, temporada: "1965/66", club: "Manchester City", nombre: "Roy Cheetham", apellido: "Cheetham", posicion: "Mediocampista", palabra: null },
+    { anio: 1965, temporada: "1965/66", club: "Manchester City", nombre: "Stan Horne", apellido: "Horne", posicion: "Mediocampista", palabra: "horne" },
+    { anio: 1965, temporada: "1965/66", club: "Manchester City", nombre: "Bobby Kennedy", apellido: "Kennedy", posicion: "Mediocampista", palabra: null },
+    { anio: 1965, temporada: "1965/66", club: "Manchester City", nombre: "Alan Oakes", apellido: "Oakes", posicion: "Mediocampista", palabra: "oakes" },
+    { anio: 1965, temporada: "1965/66", club: "Manchester City", nombre: "Ralph Brand", apellido: "Brand", posicion: "Delantero", palabra: "brand" },
+    { anio: 1965, temporada: "1965/66", club: "Manchester City", nombre: "Johnny Crossan", apellido: "Crossan", posicion: "Delantero", palabra: null },
+    { anio: 1965, temporada: "1965/66", club: "Manchester City", nombre: "Matt Gray", apellido: "Gray", posicion: "Delantero", palabra: null },
+    { anio: 1965, temporada: "1965/66", club: "Manchester City", nombre: "Jimmy Murray", apellido: "Murray", posicion: "Delantero", palabra: "murray" },
+    { anio: 1965, temporada: "1965/66", club: "Manchester City", nombre: "Mike Summerbee", apellido: "Summerbee", posicion: "Delantero", palabra: null },
+    { anio: 1965, temporada: "1965/66", club: "Manchester City", nombre: "Alf Wood", apellido: "Wood", posicion: "Delantero", palabra: null },
+    { anio: 1965, temporada: "1965/66", club: "Manchester City", nombre: "Neil Young", apellido: "Young", posicion: "Delantero", palabra: "young" },
+    // ---- Manchester City temporada 1967/68 ----
+    { anio: 1967, temporada: "1967/68", club: "Manchester City", nombre: "Joe Corrigan", apellido: "Corrigan", posicion: "Arquero", palabra: null },
+    { anio: 1967, temporada: "1967/68", club: "Manchester City", nombre: "Harry Dowd", apellido: "Dowd", posicion: "Arquero", palabra: null },
+    { anio: 1967, temporada: "1967/68", club: "Manchester City", nombre: "Ken Mulhearn", apellido: "Mulhearn", posicion: "Arquero", palabra: null },
+    { anio: 1967, temporada: "1967/68", club: "Manchester City", nombre: "Alan Ogley", apellido: "Ogley", posicion: "Arquero", palabra: "ogley" },
+    { anio: 1967, temporada: "1967/68", club: "Manchester City", nombre: "Tony Book", apellido: "Book", posicion: "Defensor", palabra: null },
+    { anio: 1967, temporada: "1967/68", club: "Manchester City", nombre: "Mike Doyle", apellido: "Doyle", posicion: "Defensor", palabra: "doyle" },
+    { anio: 1967, temporada: "1967/68", club: "Manchester City", nombre: "George Heslop", apellido: "Heslop", posicion: "Defensor", palabra: "heslop" },
+    { anio: 1967, temporada: "1967/68", club: "Manchester City", nombre: "Glyn Pardoe", apellido: "Pardoe", posicion: "Defensor", palabra: "pardoe" },
+    { anio: 1967, temporada: "1967/68", club: "Manchester City", nombre: "Jeff Street", apellido: "Street", posicion: "Defensor", palabra: "street" },
+    { anio: 1967, temporada: "1967/68", club: "Manchester City", nombre: "Colin Bell", apellido: "Bell", posicion: "Mediocampista", palabra: null },
+    { anio: 1967, temporada: "1967/68", club: "Manchester City", nombre: "Roy Cheetham", apellido: "Cheetham", posicion: "Mediocampista", palabra: null },
+    { anio: 1967, temporada: "1967/68", club: "Manchester City", nombre: "David Connor", apellido: "Connor", posicion: "Mediocampista", palabra: "connor" },
+    { anio: 1967, temporada: "1967/68", club: "Manchester City", nombre: "Stan Horne", apellido: "Horne", posicion: "Mediocampista", palabra: "horne" },
+    { anio: 1967, temporada: "1967/68", club: "Manchester City", nombre: "Bobby Kennedy", apellido: "Kennedy", posicion: "Mediocampista", palabra: null },
+    { anio: 1967, temporada: "1967/68", club: "Manchester City", nombre: "Alan Oakes", apellido: "Oakes", posicion: "Mediocampista", palabra: "oakes" },
+    { anio: 1967, temporada: "1967/68", club: "Manchester City", nombre: "Stan Bowles", apellido: "Bowles", posicion: "Delantero", palabra: "bowles" },
+    { anio: 1967, temporada: "1967/68", club: "Manchester City", nombre: "Tony Coleman", apellido: "Coleman", posicion: "Delantero", palabra: null },
+    { anio: 1967, temporada: "1967/68", club: "Manchester City", nombre: "Paul Hince", apellido: "Hince", posicion: "Delantero", palabra: "hince" },
+    { anio: 1967, temporada: "1967/68", club: "Manchester City", nombre: "Francis Lee", apellido: "Lee", posicion: "Delantero", palabra: null },
+    { anio: 1967, temporada: "1967/68", club: "Manchester City", nombre: "Chris Jones", apellido: "Jones", posicion: "Delantero", palabra: "jones" },
+    { anio: 1967, temporada: "1967/68", club: "Manchester City", nombre: "Mike Summerbee", apellido: "Summerbee", posicion: "Delantero", palabra: null },
+    { anio: 1967, temporada: "1967/68", club: "Manchester City", nombre: "Neil Young", apellido: "Young", posicion: "Delantero", palabra: "young" },
 ];
