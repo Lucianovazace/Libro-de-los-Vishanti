@@ -4,7 +4,7 @@
 //   (las filas de la década de 1990 tienen además 'temporada' (ej. "1995/96") y anio = año de inicio de la temporada)
 //   palabra = apellido en minúsculas a-z sin acentos SOLO si tiene 5 o 6 letras; si no, null.
 // Para agregar más: sumar objetos al arreglo (misma estructura). Documentación: Project "Biblioteca De Comics", claude/futbol-jugadores.md
-// Hoy: Manchester City (1965/66, 1967/68, 1979/80, 1997/98, 2000/01 a 2004/05, 2006/07 a 2014/15, 2017/18 a 2020/21, 2023/24 y 2025/26), Liverpool (1946/47 a 2025/26), Chelsea (1964/65, 1969/70, 1970/71, 1983/84, 1995/96 a 2013/14, 2018/19 a 2020/21 y 2022/23 a 2025/26), Tottenham Hotspur (1981/82, 1986/87, 1988/89 a 2025/26), River Plate (2019/20, 2021 a 2023, solo liga), Manchester United (1930/31, 1932/33 a 1934/35, 1946/47 a 2007/08 y 2011/12 a 2025/26), FC Barcelona (1969/70 a 2026/27), Selección Argentina (por torneo: Mundiales 2026 a 1978 y 1974, 1966, 1962, 1958, 1934, 1930; Copa América 2024 a 1991 y 1989, 1987, 1983, 1979, 1975, 1967, 1963, 1959 (dos), 1957, 1955, 1947, 1946, 1945, 1942, 1941, 1937), Real Madrid (1933/34 a 1935/36, 1939/40, 1940/41 a 1949/50, 1950/51 a 1959/60, 1960/61 a 1969/70, 1970/71 a 1979/80, 1980/81 a 1989/90, 1990/91 a 1999/00, 2000/01 a 2009/10, 2010/11 a 2019/20 y 2020/21 en adelante) y Boca Juniors, décadas 1960-1979 (por año), 1980 (1980-1989 con 'temporada'), 1990 (temporadas 1990/91 a 1999/00), 2000 (2000-2009), 2010 (2010-2019) y 2020 (2020-2026).
+// Hoy: Manchester City (1965/66, 1967/68, 1979/80, 1997/98, 2000/01 a 2004/05, 2006/07 a 2014/15, 2017/18 a 2020/21, 2023/24 y 2025/26), Liverpool (1946/47 a 2025/26), Chelsea (1964/65, 1969/70, 1970/71, 1983/84, 1995/96 a 2013/14, 2018/19 a 2020/21 y 2022/23 a 2025/26), Tottenham Hotspur (1972/73, 1973/74, 1981/82, 1986/87, 1988/89 a 2025/26), River Plate (2019/20, 2021 a 2023, solo liga), Manchester United (1930/31, 1932/33 a 1934/35, 1946/47 a 2007/08 y 2011/12 a 2025/26), FC Barcelona (1969/70 a 2026/27), Selección Argentina (por torneo: Mundiales 2026 a 1978 y 1974, 1966, 1962, 1958, 1934, 1930; Copa América 2024 a 1991 y 1989, 1987, 1983, 1979, 1975, 1967, 1963, 1959 (dos), 1957, 1955, 1947, 1946, 1945, 1942, 1941, 1937), Real Madrid (1933/34 a 1935/36, 1939/40, 1940/41 a 1949/50, 1950/51 a 1959/60, 1960/61 a 1969/70, 1970/71 a 1979/80, 1980/81 a 1989/90, 1990/91 a 1999/00, 2000/01 a 2009/10, 2010/11 a 2019/20 y 2020/21 en adelante) y Boca Juniors, décadas 1960-1979 (por año), 1980 (1980-1989 con 'temporada'), 1990 (temporadas 1990/91 a 1999/00), 2000 (2000-2009), 2010 (2010-2019) y 2020 (2020-2026).
 // ============================================================
 // Escudos de los clubes (imágenes). Boca y Real Madrid.
 const FUTBOL_ESCUDOS = {
@@ -12819,4 +12819,44 @@ const FUTBOL_JUGADORES = [
     { anio: 1989, temporada: "1989/90", club: "Tottenham Hotspur", nombre: "Gary Lineker", apellido: "Lineker", posicion: "Delantero", palabra: null },
     { anio: 1989, temporada: "1989/90", club: "Tottenham Hotspur", nombre: "Paul Moran", apellido: "Moran", posicion: "Delantero", palabra: "moran" },
     { anio: 1989, temporada: "1989/90", club: "Tottenham Hotspur", nombre: "Paul Walsh", apellido: "Walsh", posicion: "Delantero", palabra: "walsh" },
+    // ---- Tottenham Hotspur temporada 1972/73 ----
+    { anio: 1972, temporada: "1972/73", club: "Tottenham Hotspur", nombre: "Pat Jennings", apellido: "Jennings", posicion: "Arquero", palabra: null },
+    { anio: 1972, temporada: "1972/73", club: "Tottenham Hotspur", nombre: "Barry Daines", apellido: "Daines", posicion: "Arquero", palabra: "daines" },
+    { anio: 1972, temporada: "1972/73", club: "Tottenham Hotspur", nombre: "Phil Beal", apellido: "Beal", posicion: "Defensor", palabra: null },
+    { anio: 1972, temporada: "1972/73", club: "Tottenham Hotspur", nombre: "Mike Dillon", apellido: "Dillon", posicion: "Defensor", palabra: "dillon" },
+    { anio: 1972, temporada: "1972/73", club: "Tottenham Hotspur", nombre: "Ray Evans", apellido: "Evans", posicion: "Defensor", palabra: "evans" },
+    { anio: 1972, temporada: "1972/73", club: "Tottenham Hotspur", nombre: "Cyril Knowles", apellido: "Knowles", posicion: "Defensor", palabra: null },
+    { anio: 1972, temporada: "1972/73", club: "Tottenham Hotspur", nombre: "Terry Naylor", apellido: "Naylor", posicion: "Defensor", palabra: "naylor" },
+    { anio: 1972, temporada: "1972/73", club: "Tottenham Hotspur", nombre: "Mike England", apellido: "England", posicion: "Defensor", palabra: null },
+    { anio: 1972, temporada: "1972/73", club: "Tottenham Hotspur", nombre: "Joe Kinnear", apellido: "Kinnear", posicion: "Defensor", palabra: null },
+    { anio: 1972, temporada: "1972/73", club: "Tottenham Hotspur", nombre: "Peter Collins", apellido: "Collins", posicion: "Defensor", palabra: null },
+    { anio: 1972, temporada: "1972/73", club: "Tottenham Hotspur", nombre: "Ralph Coates", apellido: "Coates", posicion: "Mediocampista", palabra: "coates" },
+    { anio: 1972, temporada: "1972/73", club: "Tottenham Hotspur", nombre: "Phil Holder", apellido: "Holder", posicion: "Mediocampista", palabra: "holder" },
+    { anio: 1972, temporada: "1972/73", club: "Tottenham Hotspur", nombre: "Steve Perryman", apellido: "Perryman", posicion: "Mediocampista", palabra: null },
+    { anio: 1972, temporada: "1972/73", club: "Tottenham Hotspur", nombre: "Martin Peters", apellido: "Peters", posicion: "Mediocampista", palabra: "peters" },
+    { anio: 1972, temporada: "1972/73", club: "Tottenham Hotspur", nombre: "John Pratt", apellido: "Pratt", posicion: "Mediocampista", palabra: "pratt" },
+    { anio: 1972, temporada: "1972/73", club: "Tottenham Hotspur", nombre: "Jimmy Neighbour", apellido: "Neighbour", posicion: "Mediocampista", palabra: null },
+    { anio: 1972, temporada: "1972/73", club: "Tottenham Hotspur", nombre: "Jimmy Pearce", apellido: "Pearce", posicion: "Mediocampista", palabra: "pearce" },
+    { anio: 1972, temporada: "1972/73", club: "Tottenham Hotspur", nombre: "Martin Chivers", apellido: "Chivers", posicion: "Delantero", palabra: null },
+    { anio: 1972, temporada: "1972/73", club: "Tottenham Hotspur", nombre: "Alan Gilzean", apellido: "Gilzean", posicion: "Delantero", palabra: null },
+    { anio: 1972, temporada: "1972/73", club: "Tottenham Hotspur", nombre: "Ray Clarke", apellido: "Clarke", posicion: "Delantero", palabra: "clarke" },
+    // ---- Tottenham Hotspur temporada 1973/74 ----
+    { anio: 1973, temporada: "1973/74", club: "Tottenham Hotspur", nombre: "Barry Daines", apellido: "Daines", posicion: "Arquero", palabra: "daines" },
+    { anio: 1973, temporada: "1973/74", club: "Tottenham Hotspur", nombre: "Pat Jennings", apellido: "Jennings", posicion: "Arquero", palabra: null },
+    { anio: 1973, temporada: "1973/74", club: "Tottenham Hotspur", nombre: "Phil Beal", apellido: "Beal", posicion: "Defensor", palabra: null },
+    { anio: 1973, temporada: "1973/74", club: "Tottenham Hotspur", nombre: "Mike Dillon", apellido: "Dillon", posicion: "Defensor", palabra: "dillon" },
+    { anio: 1973, temporada: "1973/74", club: "Tottenham Hotspur", nombre: "Ray Evans", apellido: "Evans", posicion: "Defensor", palabra: "evans" },
+    { anio: 1973, temporada: "1973/74", club: "Tottenham Hotspur", nombre: "Cyril Knowles", apellido: "Knowles", posicion: "Defensor", palabra: null },
+    { anio: 1973, temporada: "1973/74", club: "Tottenham Hotspur", nombre: "Terry Naylor", apellido: "Naylor", posicion: "Defensor", palabra: "naylor" },
+    { anio: 1973, temporada: "1973/74", club: "Tottenham Hotspur", nombre: "Mike England", apellido: "England", posicion: "Defensor", palabra: null },
+    { anio: 1973, temporada: "1973/74", club: "Tottenham Hotspur", nombre: "Joe Kinnear", apellido: "Kinnear", posicion: "Defensor", palabra: null },
+    { anio: 1973, temporada: "1973/74", club: "Tottenham Hotspur", nombre: "Ralph Coates", apellido: "Coates", posicion: "Mediocampista", palabra: "coates" },
+    { anio: 1973, temporada: "1973/74", club: "Tottenham Hotspur", nombre: "Phil Holder", apellido: "Holder", posicion: "Mediocampista", palabra: "holder" },
+    { anio: 1973, temporada: "1973/74", club: "Tottenham Hotspur", nombre: "Steve Perryman", apellido: "Perryman", posicion: "Mediocampista", palabra: null },
+    { anio: 1973, temporada: "1973/74", club: "Tottenham Hotspur", nombre: "Martin Peters", apellido: "Peters", posicion: "Mediocampista", palabra: "peters" },
+    { anio: 1973, temporada: "1973/74", club: "Tottenham Hotspur", nombre: "John Pratt", apellido: "Pratt", posicion: "Mediocampista", palabra: "pratt" },
+    { anio: 1973, temporada: "1973/74", club: "Tottenham Hotspur", nombre: "Jimmy Neighbour", apellido: "Neighbour", posicion: "Mediocampista", palabra: null },
+    { anio: 1973, temporada: "1973/74", club: "Tottenham Hotspur", nombre: "Chris McGrath", apellido: "McGrath", posicion: "Mediocampista", palabra: null },
+    { anio: 1973, temporada: "1973/74", club: "Tottenham Hotspur", nombre: "Martin Chivers", apellido: "Chivers", posicion: "Delantero", palabra: null },
+    { anio: 1973, temporada: "1973/74", club: "Tottenham Hotspur", nombre: "Alan Gilzean", apellido: "Gilzean", posicion: "Delantero", palabra: null },
 ];
