@@ -4,7 +4,7 @@
 //   (las filas de la década de 1990 tienen además 'temporada' (ej. "1995/96") y anio = año de inicio de la temporada)
 //   palabra = apellido en minúsculas a-z sin acentos SOLO si tiene 5 o 6 letras; si no, null.
 // Para agregar más: sumar objetos al arreglo (misma estructura). Documentación: Project "Biblioteca De Comics", claude/futbol-jugadores.md
-// Hoy: Manchester City (1997/98, 2000/01 a 2004/05, 2006/07 a 2014/15, 2017/18 a 2020/21, 2023/24 y 2025/26), Liverpool (1946/47 a 2025/26), Chelsea (1964/65, 1969/70, 1970/71, 1983/84, 1995/96 a 2013/14, 2018/19 a 2020/21 y 2022/23 a 2025/26), River Plate (2019/20, 2021 a 2023, solo liga), Manchester United (1930/31, 1932/33 a 1934/35, 1946/47 a 2007/08 y 2011/12 a 2025/26), FC Barcelona (1969/70 a 2026/27), Selección Argentina (por torneo: Mundiales 2026 a 1978 y 1974, 1966, 1962, 1958, 1934, 1930; Copa América 2024 a 1991 y 1989, 1987, 1983, 1979, 1975, 1967, 1963, 1959 (dos), 1957, 1955, 1947, 1946, 1945, 1942, 1941, 1937), Real Madrid (1933/34 a 1935/36, 1939/40, 1940/41 a 1949/50, 1950/51 a 1959/60, 1960/61 a 1969/70, 1970/71 a 1979/80, 1980/81 a 1989/90, 1990/91 a 1999/00, 2000/01 a 2009/10, 2010/11 a 2019/20 y 2020/21 en adelante) y Boca Juniors, décadas 1960-1979 (por año), 1980 (1980-1989 con 'temporada'), 1990 (temporadas 1990/91 a 1999/00), 2000 (2000-2009), 2010 (2010-2019) y 2020 (2020-2026).
+// Hoy: Manchester City (1979/80, 1997/98, 2000/01 a 2004/05, 2006/07 a 2014/15, 2017/18 a 2020/21, 2023/24 y 2025/26), Liverpool (1946/47 a 2025/26), Chelsea (1964/65, 1969/70, 1970/71, 1983/84, 1995/96 a 2013/14, 2018/19 a 2020/21 y 2022/23 a 2025/26), River Plate (2019/20, 2021 a 2023, solo liga), Manchester United (1930/31, 1932/33 a 1934/35, 1946/47 a 2007/08 y 2011/12 a 2025/26), FC Barcelona (1969/70 a 2026/27), Selección Argentina (por torneo: Mundiales 2026 a 1978 y 1974, 1966, 1962, 1958, 1934, 1930; Copa América 2024 a 1991 y 1989, 1987, 1983, 1979, 1975, 1967, 1963, 1959 (dos), 1957, 1955, 1947, 1946, 1945, 1942, 1941, 1937), Real Madrid (1933/34 a 1935/36, 1939/40, 1940/41 a 1949/50, 1950/51 a 1959/60, 1960/61 a 1969/70, 1970/71 a 1979/80, 1980/81 a 1989/90, 1990/91 a 1999/00, 2000/01 a 2009/10, 2010/11 a 2019/20 y 2020/21 en adelante) y Boca Juniors, décadas 1960-1979 (por año), 1980 (1980-1989 con 'temporada'), 1990 (temporadas 1990/91 a 1999/00), 2000 (2000-2009), 2010 (2010-2019) y 2020 (2020-2026).
 // ============================================================
 // Escudos de los clubes (imágenes). Boca y Real Madrid.
 const FUTBOL_ESCUDOS = {
@@ -11533,4 +11533,29 @@ const FUTBOL_JUGADORES = [
     { anio: 2009, temporada: "2009/10", club: "Manchester City", nombre: "Greg Cunningham", apellido: "Cunningham", posicion: "Defensor", palabra: null },
     { anio: 2009, temporada: "2009/10", club: "Manchester City", nombre: "Abdisalam Ibrahim", apellido: "Ibrahim", posicion: "Mediocampista", palabra: null },
     { anio: 2009, temporada: "2009/10", club: "Manchester City", nombre: "Alex Nimely", apellido: "Nimely", posicion: "Delantero", palabra: "nimely" },
+    // ---- Manchester City temporada 1979/80 ----
+    { anio: 1979, temporada: "1979/80", club: "Manchester City", nombre: "Dave Bennett", apellido: "Bennett", posicion: "Mediocampista", palabra: null },
+    { anio: 1979, temporada: "1979/80", club: "Manchester City", nombre: "Tommy Booth", apellido: "Booth", posicion: "Defensor", palabra: "booth" },
+    { anio: 1979, temporada: "1979/80", club: "Manchester City", nombre: "Tommy Caton", apellido: "Caton", posicion: "Defensor", palabra: "caton" },
+    { anio: 1979, temporada: "1979/80", club: "Manchester City", nombre: "Mick Channon", apellido: "Channon", posicion: "Delantero", palabra: null },
+    { anio: 1979, temporada: "1979/80", club: "Manchester City", nombre: "Joe Corrigan", apellido: "Corrigan", posicion: "Arquero", palabra: null },
+    { anio: 1979, temporada: "1979/80", club: "Manchester City", nombre: "Steve Daley", apellido: "Daley", posicion: "Mediocampista", palabra: "daley" },
+    { anio: 1979, temporada: "1979/80", club: "Manchester City", nombre: "Kazimierz Deyna", apellido: "Deyna", posicion: "Delantero", palabra: "deyna" },
+    { anio: 1979, temporada: "1979/80", club: "Manchester City", nombre: "Willie Donachie", apellido: "Donachie", posicion: "Defensor", palabra: null },
+    { anio: 1979, temporada: "1979/80", club: "Manchester City", nombre: "Paul Futcher", apellido: "Futcher", posicion: "Defensor", palabra: null },
+    { anio: 1979, temporada: "1979/80", club: "Manchester City", nombre: "Tony Henry", apellido: "Henry", posicion: "Mediocampista", palabra: "henry" },
+    { anio: 1979, temporada: "1979/80", club: "Manchester City", nombre: "Stuart Lee", apellido: "Lee", posicion: "Delantero", palabra: null },
+    { anio: 1979, temporada: "1979/80", club: "Manchester City", nombre: "Steve MacKenzie", apellido: "MacKenzie", posicion: "Mediocampista", palabra: null },
+    { anio: 1979, temporada: "1979/80", club: "Manchester City", nombre: "Roger Palmer", apellido: "Palmer", posicion: "Delantero", palabra: "palmer" },
+    { anio: 1979, temporada: "1979/80", club: "Manchester City", nombre: "Paul Power", apellido: "Power", posicion: "Mediocampista", palabra: "power" },
+    { anio: 1979, temporada: "1979/80", club: "Manchester City", nombre: "Ray Ranson", apellido: "Ranson", posicion: "Defensor", palabra: "ranson" },
+    { anio: 1979, temporada: "1979/80", club: "Manchester City", nombre: "Kevin Reeves", apellido: "Reeves", posicion: "Delantero", palabra: "reeves" },
+    { anio: 1979, temporada: "1979/80", club: "Manchester City", nombre: "Nicky Reid", apellido: "Reid", posicion: "Defensor", palabra: null },
+    { anio: 1979, temporada: "1979/80", club: "Manchester City", nombre: "Michael Robinson", apellido: "Robinson", posicion: "Delantero", palabra: null },
+    { anio: 1979, temporada: "1979/80", club: "Manchester City", nombre: "Bobby Shinton", apellido: "Shinton", posicion: "Delantero", palabra: null },
+    { anio: 1979, temporada: "1979/80", club: "Manchester City", nombre: "Barry Silkman", apellido: "Silkman", posicion: "Mediocampista", palabra: null },
+    { anio: 1979, temporada: "1979/80", club: "Manchester City", nombre: "Dragoslav Stepanović", apellido: "Stepanović", posicion: "Defensor", palabra: null },
+    { anio: 1979, temporada: "1979/80", club: "Manchester City", nombre: "Paul Sugrue", apellido: "Sugrue", posicion: "Mediocampista", palabra: "sugrue" },
+    { anio: 1979, temporada: "1979/80", club: "Manchester City", nombre: "Dennis Tueart", apellido: "Tueart", posicion: "Mediocampista", palabra: "tueart" },
+    { anio: 1979, temporada: "1979/80", club: "Manchester City", nombre: "Colin Viljoen", apellido: "Viljoen", posicion: "Mediocampista", palabra: null },
 ];
