@@ -4,7 +4,7 @@
 //   (las filas de la década de 1990 tienen además 'temporada' (ej. "1995/96") y anio = año de inicio de la temporada)
 //   palabra = apellido en minúsculas a-z sin acentos SOLO si tiene 5 o 6 letras; si no, null.
 // Para agregar más: sumar objetos al arreglo (misma estructura). Documentación: Project "Biblioteca De Comics", claude/futbol-jugadores.md
-// Hoy: Manchester City (1965/66, 1967/68, 1979/80, 1997/98, 2000/01 a 2004/05, 2006/07 a 2014/15, 2017/18 a 2020/21, 2023/24 y 2025/26), Liverpool (1946/47 a 2025/26), Chelsea (1964/65, 1969/70, 1970/71, 1983/84, 1995/96 a 2013/14, 2018/19 a 2020/21 y 2022/23 a 2025/26), Tottenham Hotspur (1972/73, 1973/74, 1981/82, 1986/87, 1988/89 a 2025/26), Arsenal (1988/89, 1990/91 a 1994/95, 1996/97 a 2011/12 y 2014/15 a 2019/20), Bayern Munich (2011/12, 2016/17 a 2025/26), River Plate (2019/20, 2021 a 2023, solo liga), Manchester United (1930/31, 1932/33 a 1934/35, 1946/47 a 2007/08 y 2011/12 a 2025/26), FC Barcelona (1969/70 a 2026/27), Selección Argentina (por torneo: Mundiales 2026 a 1978 y 1974, 1966, 1962, 1958, 1934, 1930; Copa América 2024 a 1991 y 1989, 1987, 1983, 1979, 1975, 1967, 1963, 1959 (dos), 1957, 1955, 1947, 1946, 1945, 1942, 1941, 1937), Real Madrid (1933/34 a 1935/36, 1939/40, 1940/41 a 1949/50, 1950/51 a 1959/60, 1960/61 a 1969/70, 1970/71 a 1979/80, 1980/81 a 1989/90, 1990/91 a 1999/00, 2000/01 a 2009/10, 2010/11 a 2019/20 y 2020/21 en adelante), Inter de Milán (1960/61, 1961/62, 1963/64, 1964/65, 1979/80 a 1982/83, 1985/86, 1986/87, 1990/91 a 1992/93, 2009/10, 2010/11, 2011/12, 2013/14 a 2016/17, 2018/19 a 2023/24, 2025/26 y 2026/27) y Boca Juniors, décadas 1960-1979 (por año), 1980 (1980-1989 con 'temporada'), 1990 (temporadas 1990/91 a 1999/00), 2000 (2000-2009), 2010 (2010-2019) y 2020 (2020-2026).
+// Hoy: Manchester City (1965/66, 1967/68, 1979/80, 1997/98, 2000/01 a 2004/05, 2006/07 a 2014/15, 2017/18 a 2020/21, 2023/24 y 2025/26), Liverpool (1946/47 a 2025/26), Chelsea (1964/65, 1969/70, 1970/71, 1983/84, 1995/96 a 2013/14, 2018/19 a 2020/21 y 2022/23 a 2025/26), Tottenham Hotspur (1972/73, 1973/74, 1981/82, 1986/87, 1988/89 a 2025/26), Arsenal (1946/47, 1988/89, 1990/91 a 1994/95, 1996/97 a 2011/12 y 2014/15 a 2019/20), Bayern Munich (2011/12, 2016/17 a 2025/26), River Plate (2019/20, 2021 a 2023, solo liga), Manchester United (1930/31, 1932/33 a 1934/35, 1946/47 a 2007/08 y 2011/12 a 2025/26), FC Barcelona (1969/70 a 2026/27), Selección Argentina (por torneo: Mundiales 2026 a 1978 y 1974, 1966, 1962, 1958, 1934, 1930; Copa América 2024 a 1991 y 1989, 1987, 1983, 1979, 1975, 1967, 1963, 1959 (dos), 1957, 1955, 1947, 1946, 1945, 1942, 1941, 1937), Real Madrid (1933/34 a 1935/36, 1939/40, 1940/41 a 1949/50, 1950/51 a 1959/60, 1960/61 a 1969/70, 1970/71 a 1979/80, 1980/81 a 1989/90, 1990/91 a 1999/00, 2000/01 a 2009/10, 2010/11 a 2019/20 y 2020/21 en adelante), Inter de Milán (1960/61, 1961/62, 1963/64, 1964/65, 1979/80 a 1982/83, 1985/86, 1986/87, 1990/91 a 1992/93, 2009/10, 2010/11, 2011/12, 2013/14 a 2016/17, 2018/19 a 2023/24, 2025/26 y 2026/27) y Boca Juniors, décadas 1960-1979 (por año), 1980 (1980-1989 con 'temporada'), 1990 (temporadas 1990/91 a 1999/00), 2000 (2000-2009), 2010 (2010-2019) y 2020 (2020-2026).
 // ============================================================
 // Escudos de los clubes (imágenes). Boca y Real Madrid.
 const FUTBOL_ESCUDOS = {
@@ -14791,4 +14791,36 @@ const FUTBOL_JUGADORES = [
     { anio: 1988, temporada: "1988/89", club: "Arsenal", nombre: "Paul Merson", apellido: "Merson", posicion: "Delantero", palabra: "merson" },
     { anio: 1988, temporada: "1988/89", club: "Arsenal", nombre: "Martin Hayes", apellido: "Hayes", posicion: "Mediocampista", palabra: "hayes" },
     { anio: 1988, temporada: "1988/89", club: "Arsenal", nombre: "Niall Quinn", apellido: "Quinn", posicion: "Delantero", palabra: "quinn" },
+    // ---- Arsenal temporada 1946/47 ----
+    { anio: 1946, temporada: "1946/47", club: "Arsenal", nombre: "Walley Barnes", apellido: "Barnes", posicion: "Defensor", palabra: "barnes" },
+    { anio: 1946, temporada: "1946/47", club: "Arsenal", nombre: "Cliff Bastin", apellido: "Bastin", posicion: "Delantero", palabra: "bastin" },
+    { anio: 1946, temporada: "1946/47", club: "Arsenal", nombre: "Alf Calverley", apellido: "Calverley", posicion: "Delantero", palabra: null },
+    { anio: 1946, temporada: "1946/47", club: "Arsenal", nombre: "Ernie Collett", apellido: "Collett", posicion: "Mediocampista", palabra: null },
+    { anio: 1946, temporada: "1946/47", club: "Arsenal", nombre: "Leslie Compton", apellido: "Leslie Compton", posicion: "Defensor", palabra: null },
+    { anio: 1946, temporada: "1946/47", club: "Arsenal", nombre: "Denis Compton", apellido: "Denis Compton", posicion: "Delantero", palabra: null },
+    { anio: 1946, temporada: "1946/47", club: "Arsenal", nombre: "George Curtis", apellido: "Curtis", posicion: "Delantero", palabra: "curtis" },
+    { anio: 1946, temporada: "1946/47", club: "Arsenal", nombre: "George Drury", apellido: "Drury", posicion: "Delantero", palabra: "drury" },
+    { anio: 1946, temporada: "1946/47", club: "Arsenal", nombre: "Alf Fields", apellido: "Fields", posicion: "Defensor", palabra: "fields" },
+    { anio: 1946, temporada: "1946/47", club: "Arsenal", nombre: "Cyril Grant", apellido: "Grant", posicion: "Delantero", palabra: "grant" },
+    { anio: 1946, temporada: "1946/47", club: "Arsenal", nombre: "Albert Guðmundsson", apellido: "Guðmundsson", posicion: "Delantero", palabra: null },
+    { anio: 1946, temporada: "1946/47", club: "Arsenal", nombre: "Cyril Hodges", apellido: "Hodges", posicion: "Delantero", palabra: "hodges" },
+    { anio: 1946, temporada: "1946/47", club: "Arsenal", nombre: "Bryn Jones", apellido: "Jones", posicion: "Delantero", palabra: "jones" },
+    { anio: 1946, temporada: "1946/47", club: "Arsenal", nombre: "Bernard Joy", apellido: "Joy", posicion: "Defensor", palabra: null },
+    { anio: 1946, temporada: "1946/47", club: "Arsenal", nombre: "Reg Lewis", apellido: "Lewis", posicion: "Delantero", palabra: "lewis" },
+    { anio: 1946, temporada: "1946/47", club: "Arsenal", nombre: "Jimmy Logie", apellido: "Logie", posicion: "Delantero", palabra: "logie" },
+    { anio: 1946, temporada: "1946/47", club: "Arsenal", nombre: "George Male", apellido: "Male", posicion: "Defensor", palabra: null },
+    { anio: 1946, temporada: "1946/47", club: "Arsenal", nombre: "Ian McPherson", apellido: "McPherson", posicion: "Mediocampista", palabra: null },
+    { anio: 1946, temporada: "1946/47", club: "Arsenal", nombre: "Joe Mercer", apellido: "Mercer", posicion: "Defensor", palabra: "mercer" },
+    { anio: 1946, temporada: "1946/47", club: "Arsenal", nombre: "Stan Morgan", apellido: "Morgan", posicion: "Delantero", palabra: "morgan" },
+    { anio: 1946, temporada: "1946/47", club: "Arsenal", nombre: "David Nelson", apellido: "Nelson", posicion: "Mediocampista", palabra: "nelson" },
+    { anio: 1946, temporada: "1946/47", club: "Arsenal", nombre: "Kevin O'Flanagan", apellido: "O'Flanagan", posicion: "Delantero", palabra: null },
+    { anio: 1946, temporada: "1946/47", club: "Arsenal", nombre: "Ted Platt", apellido: "Platt", posicion: "Arquero", palabra: "platt" },
+    { anio: 1946, temporada: "1946/47", club: "Arsenal", nombre: "Ronnie Rooke", apellido: "Rooke", posicion: "Delantero", palabra: "rooke" },
+    { anio: 1946, temporada: "1946/47", club: "Arsenal", nombre: "Tommy Rudkin", apellido: "Rudkin", posicion: "Delantero", palabra: "rudkin" },
+    { anio: 1946, temporada: "1946/47", club: "Arsenal", nombre: "Laurie Scott", apellido: "Scott", posicion: "Defensor", palabra: "scott" },
+    { anio: 1946, temporada: "1946/47", club: "Arsenal", nombre: "Paddy Sloan", apellido: "Sloan", posicion: "Defensor", palabra: "sloan" },
+    { anio: 1946, temporada: "1946/47", club: "Arsenal", nombre: "Alan Smith", apellido: "Smith", posicion: "Delantero", palabra: "smith" },
+    { anio: 1946, temporada: "1946/47", club: "Arsenal", nombre: "George Swindin", apellido: "Swindin", posicion: "Arquero", palabra: null },
+    { anio: 1946, temporada: "1946/47", club: "Arsenal", nombre: "Joe Wade", apellido: "Wade", posicion: "Defensor", palabra: null },
+    { anio: 1946, temporada: "1946/47", club: "Arsenal", nombre: "Harry Waller", apellido: "Waller", posicion: "Defensor", palabra: "waller" },
 ];
