@@ -4,7 +4,7 @@
 //   (las filas de la década de 1990 tienen además 'temporada' (ej. "1995/96") y anio = año de inicio de la temporada)
 //   palabra = apellido en minúsculas a-z sin acentos SOLO si tiene 5 o 6 letras; si no, null.
 // Para agregar más: sumar objetos al arreglo (misma estructura). Documentación: Project "Biblioteca De Comics", claude/futbol-jugadores.md
-// Hoy: Manchester City (1965/66, 1967/68, 1979/80, 1997/98, 2000/01 a 2004/05, 2006/07 a 2014/15, 2017/18 a 2020/21, 2023/24 y 2025/26), Liverpool (1946/47 a 2025/26), Chelsea (1964/65, 1969/70, 1970/71, 1983/84, 1995/96 a 2013/14, 2018/19 a 2020/21 y 2022/23 a 2025/26), Tottenham Hotspur (1972/73, 1973/74, 1981/82, 1986/87, 1988/89 a 2025/26), Arsenal (1946/47, 1988/89, 1990/91 a 1994/95, 1996/97 a 2011/12 y 2014/15 a 2019/20), Bayern Munich (2011/12, 2016/17 a 2025/26), River Plate (2019/20, 2021 a 2023, solo liga), Manchester United (1930/31, 1932/33 a 1934/35, 1946/47 a 2007/08 y 2011/12 a 2025/26), FC Barcelona (1969/70 a 2026/27), Selección Argentina (por torneo: Mundiales 2026 a 1978 y 1974, 1966, 1962, 1958, 1934, 1930; Copa América 2024 a 1991 y 1989, 1987, 1983, 1979, 1975, 1967, 1963, 1959 (dos), 1957, 1955, 1947, 1946, 1945, 1942, 1941, 1937), Real Madrid (1933/34 a 1935/36, 1939/40, 1940/41 a 1949/50, 1950/51 a 1959/60, 1960/61 a 1969/70, 1970/71 a 1979/80, 1980/81 a 1989/90, 1990/91 a 1999/00, 2000/01 a 2009/10, 2010/11 a 2019/20 y 2020/21 en adelante), Inter de Milán (1960/61, 1961/62, 1963/64, 1964/65, 1979/80 a 1982/83, 1985/86, 1986/87, 1990/91 a 1992/93, 2009/10, 2010/11, 2011/12, 2013/14 a 2016/17, 2018/19 a 2023/24, 2025/26 y 2026/27), Atlético de Madrid (1981/82 a 1984/85, 1987/88, 1989/90, 1990/91 a 1999/00, 2000/01, 2001/02 y 2011/12 a 2025/26) y Boca Juniors, décadas 1960-1979 (por año), 1980 (1980-1989 con 'temporada'), 1990 (temporadas 1990/91 a 1999/00), 2000 (2000-2009), 2010 (2010-2019) y 2020 (2020-2026).
+// Hoy: Manchester City (1965/66, 1967/68, 1979/80, 1997/98, 2000/01 a 2004/05, 2006/07 a 2014/15, 2017/18 a 2020/21, 2023/24 y 2025/26), Liverpool (1946/47 a 2025/26), Chelsea (1964/65, 1969/70, 1970/71, 1983/84, 1995/96 a 2013/14, 2018/19 a 2020/21 y 2022/23 a 2025/26), Tottenham Hotspur (1972/73, 1973/74, 1981/82, 1986/87, 1988/89 a 2025/26), Arsenal (1946/47, 1988/89, 1990/91 a 1994/95, 1996/97 a 2011/12 y 2014/15 a 2019/20), Bayern Munich (2011/12, 2016/17 a 2025/26), River Plate (2019/20, 2021 a 2023, solo liga), Manchester United (1930/31, 1932/33 a 1934/35, 1946/47 a 2007/08 y 2011/12 a 2025/26), FC Barcelona (1969/70 a 2026/27), Selección Argentina (por torneo: Mundiales 2026 a 1978 y 1974, 1966, 1962, 1958, 1934, 1930; Copa América 2024 a 1991 y 1989, 1987, 1983, 1979, 1975, 1967, 1963, 1959 (dos), 1957, 1955, 1947, 1946, 1945, 1942, 1941, 1937), Real Madrid (1933/34 a 1935/36, 1939/40, 1940/41 a 1949/50, 1950/51 a 1959/60, 1960/61 a 1969/70, 1970/71 a 1979/80, 1980/81 a 1989/90, 1990/91 a 1999/00, 2000/01 a 2009/10, 2010/11 a 2019/20 y 2020/21 en adelante), Inter de Milán (1960/61, 1961/62, 1963/64, 1964/65, 1979/80 a 1982/83, 1985/86, 1986/87, 1990/91 a 1992/93, 2009/10, 2010/11, 2011/12, 2013/14 a 2016/17, 2018/19 a 2023/24, 2025/26 y 2026/27), Atlético de Madrid (1972/73, 1976/77, 1981/82 a 1984/85, 1987/88, 1989/90, 1990/91 a 1999/00, 2000/01, 2001/02 y 2011/12 a 2025/26) y Boca Juniors, décadas 1960-1979 (por año), 1980 (1980-1989 con 'temporada'), 1990 (temporadas 1990/91 a 1999/00), 2000 (2000-2009), 2010 (2010-2019) y 2020 (2020-2026).
 // ============================================================
 // Escudos de los clubes (imágenes). Boca y Real Madrid.
 const FUTBOL_ESCUDOS = {
@@ -15735,4 +15735,49 @@ const FUTBOL_JUGADORES = [
     { anio: 1989, temporada: "1989/90", club: "Atlético de Madrid", nombre: "Baltazar", apellido: "Baltazar", posicion: "Delantero", palabra: null },
     { anio: 1989, temporada: "1989/90", club: "Atlético de Madrid", nombre: "Manolo", apellido: "Manolo", posicion: "Delantero", palabra: "manolo" },
     { anio: 1989, temporada: "1989/90", club: "Atlético de Madrid", nombre: "Manuel Alfaro", apellido: "Alfaro", posicion: "Delantero", palabra: "alfaro" },
+    // ---- Atlético de Madrid temporada 1972/73 ----
+    { anio: 1972, temporada: "1972/73", club: "Atlético de Madrid", nombre: "Rodri", apellido: "Rodri", posicion: "Arquero", palabra: "rodri" },
+    { anio: 1972, temporada: "1972/73", club: "Atlético de Madrid", nombre: "Iselín Santos Ovejero", apellido: "Santos Ovejero", posicion: "Defensor", palabra: null },
+    { anio: 1972, temporada: "1972/73", club: "Atlético de Madrid", nombre: "Quique", apellido: "Quique", posicion: "Defensor", palabra: "quique" },
+    { anio: 1972, temporada: "1972/73", club: "Atlético de Madrid", nombre: "José Luis Capón", apellido: "Capón", posicion: "Defensor", palabra: "capon" },
+    { anio: 1972, temporada: "1972/73", club: "Atlético de Madrid", nombre: "Domingo Benegas", apellido: "Benegas", posicion: "Mediocampista", palabra: null },
+    { anio: 1972, temporada: "1972/73", club: "Atlético de Madrid", nombre: "Adelardo", apellido: "Adelardo", posicion: "Mediocampista", palabra: null },
+    { anio: 1972, temporada: "1972/73", club: "Atlético de Madrid", nombre: "Alberto Fernández", apellido: "Fernández", posicion: "Mediocampista", palabra: null },
+    { anio: 1972, temporada: "1972/73", club: "Atlético de Madrid", nombre: "Javier Irureta", apellido: "Irureta", posicion: "Mediocampista", palabra: null },
+    { anio: 1972, temporada: "1972/73", club: "Atlético de Madrid", nombre: "Luis Aragonés", apellido: "Aragonés", posicion: "Delantero", palabra: null },
+    { anio: 1972, temporada: "1972/73", club: "Atlético de Madrid", nombre: "José Eulogio Gárate", apellido: "Gárate", posicion: "Delantero", palabra: "garate" },
+    { anio: 1972, temporada: "1972/73", club: "Atlético de Madrid", nombre: "Heraldo Bezerra", apellido: "Bezerra", posicion: "Delantero", palabra: null },
+    { anio: 1972, temporada: "1972/73", club: "Atlético de Madrid", nombre: "José Pacheco", apellido: "Pacheco", posicion: "Arquero", palabra: null },
+    { anio: 1972, temporada: "1972/73", club: "Atlético de Madrid", nombre: "Francisco Melo", apellido: "Melo", posicion: "Defensor", palabra: null },
+    { anio: 1972, temporada: "1972/73", club: "Atlético de Madrid", nombre: "José Ufarte", apellido: "Ufarte", posicion: "Delantero", palabra: "ufarte" },
+    { anio: 1972, temporada: "1972/73", club: "Atlético de Madrid", nombre: "Ignacio Salcedo", apellido: "Salcedo", posicion: "Mediocampista", palabra: null },
+    { anio: 1972, temporada: "1972/73", club: "Atlético de Madrid", nombre: "Julio Iglesias", apellido: "Iglesias", posicion: "Defensor", palabra: null },
+    { anio: 1972, temporada: "1972/73", club: "Atlético de Madrid", nombre: "Jesús Martínez Jayo", apellido: "Martínez Jayo", posicion: "Defensor", palabra: null },
+    { anio: 1972, temporada: "1972/73", club: "Atlético de Madrid", nombre: "Eusebio Bejarano", apellido: "Bejarano", posicion: "Defensor", palabra: null },
+    { anio: 1972, temporada: "1972/73", club: "Atlético de Madrid", nombre: "Eugenio Leal", apellido: "Leal", posicion: "Mediocampista", palabra: null },
+    { anio: 1972, temporada: "1972/73", club: "Atlético de Madrid", nombre: "Pataco", apellido: "Pataco", posicion: "Delantero", palabra: "pataco" },
+    { anio: 1972, temporada: "1972/73", club: "Atlético de Madrid", nombre: "Julio Orozco", apellido: "Orozco", posicion: "Mediocampista", palabra: "orozco" },
+    // ---- Atlético de Madrid temporada 1976/77 ----
+    { anio: 1976, temporada: "1976/77", club: "Atlético de Madrid", nombre: "Miguel Reina", apellido: "Reina", posicion: "Arquero", palabra: "reina" },
+    { anio: 1976, temporada: "1976/77", club: "Atlético de Madrid", nombre: "Marcelino", apellido: "Marcelino", posicion: "Defensor", palabra: null },
+    { anio: 1976, temporada: "1976/77", club: "Atlético de Madrid", nombre: "Luís Pereira", apellido: "Pereira", posicion: "Defensor", palabra: null },
+    { anio: 1976, temporada: "1976/77", club: "Atlético de Madrid", nombre: "Eusebio Bejarano", apellido: "Bejarano", posicion: "Defensor", palabra: null },
+    { anio: 1976, temporada: "1976/77", club: "Atlético de Madrid", nombre: "José Luis Capón", apellido: "Capón", posicion: "Defensor", palabra: "capon" },
+    { anio: 1976, temporada: "1976/77", club: "Atlético de Madrid", nombre: "Robi", apellido: "Robi", posicion: "Mediocampista", palabra: null },
+    { anio: 1976, temporada: "1976/77", club: "Atlético de Madrid", nombre: "Alberto Fernández", apellido: "Fernández", posicion: "Mediocampista", palabra: null },
+    { anio: 1976, temporada: "1976/77", club: "Atlético de Madrid", nombre: "Eugenio Leal", apellido: "Leal", posicion: "Mediocampista", palabra: null },
+    { anio: 1976, temporada: "1976/77", club: "Atlético de Madrid", nombre: "Leivinha", apellido: "Leivinha", posicion: "Delantero", palabra: null },
+    { anio: 1976, temporada: "1976/77", club: "Atlético de Madrid", nombre: "Rubén Ayala", apellido: "Ayala", posicion: "Delantero", palabra: "ayala" },
+    { anio: 1976, temporada: "1976/77", club: "Atlético de Madrid", nombre: "Rubén Cano", apellido: "Cano", posicion: "Delantero", palabra: null },
+    { anio: 1976, temporada: "1976/77", club: "Atlético de Madrid", nombre: "José Pacheco Gómez", apellido: "Pacheco Gómez", posicion: "Arquero", palabra: null },
+    { anio: 1976, temporada: "1976/77", club: "Atlético de Madrid", nombre: "Domingo Benegas", apellido: "Benegas", posicion: "Mediocampista", palabra: null },
+    { anio: 1976, temporada: "1976/77", club: "Atlético de Madrid", nombre: "Panadero Diaz", apellido: "Panadero Diaz", posicion: "Defensor", palabra: null },
+    { anio: 1976, temporada: "1976/77", club: "Atlético de Madrid", nombre: "Ramón Heredia", apellido: "Heredia", posicion: "Defensor", palabra: null },
+    { anio: 1976, temporada: "1976/77", club: "Atlético de Madrid", nombre: "Francisco Bermejo", apellido: "Bermejo", posicion: "Mediocampista", palabra: null },
+    { anio: 1976, temporada: "1976/77", club: "Atlético de Madrid", nombre: "Francisco Aguilar", apellido: "Aguilar", posicion: "Delantero", palabra: null },
+    { anio: 1976, temporada: "1976/77", club: "Atlético de Madrid", nombre: "Ignacio Salcedo", apellido: "Salcedo", posicion: "Mediocampista", palabra: null },
+    { anio: 1976, temporada: "1976/77", club: "Atlético de Madrid", nombre: "Juan Sierra", apellido: "Sierra", posicion: "Defensor", palabra: "sierra" },
+    { anio: 1976, temporada: "1976/77", club: "Atlético de Madrid", nombre: "Heraldo Bezerra", apellido: "Bezerra", posicion: "Delantero", palabra: null },
+    { anio: 1976, temporada: "1976/77", club: "Atlético de Madrid", nombre: "José Eulogio Gárate", apellido: "Gárate", posicion: "Delantero", palabra: "garate" },
+    { anio: 1976, temporada: "1976/77", club: "Atlético de Madrid", nombre: "Juan José Rubio", apellido: "Rubio", posicion: "Defensor", palabra: "rubio" },
 ];
