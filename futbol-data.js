@@ -25069,7 +25069,7 @@ const FUTBOL_JUGADORES = [
     { anio: 2009, temporada: "2009/10", club: "Bayer Leverkusen", nombre: "Stefan Kießling", apellido: "Kießling", posicion: "Delantero", palabra: null },
     // ---- Bayer Leverkusen temporada 1991/92 ----
     { anio: 1991, temporada: "1991/92", club: "Bayer Leverkusen", nombre: "Rüdiger Vollborn", apellido: "Vollborn", posicion: "Arquero", palabra: null },
-    { anio: 1991, temporada: "1991/92", club: "Bayer Leverkusen", nombre: "Andreas Fischer", apellido: "Fischer", posicion: "Defensor", palabra: null },
+    { anio: 1991, temporada: "1991/92", club: "Bayer Leverkusen", nombre: "Andreas Fischer", apellido: "Fischer", posicion: "Defensor", palabra: "fischer" },
     { anio: 1991, temporada: "1991/92", club: "Bayer Leverkusen", nombre: "Franco Foda", apellido: "Foda", posicion: "Defensor", palabra: null },
     { anio: 1991, temporada: "1991/92", club: "Bayer Leverkusen", nombre: "Markus Happe", apellido: "Happe", posicion: "Defensor", palabra: "happe" },
     { anio: 1991, temporada: "1991/92", club: "Bayer Leverkusen", nombre: "Jorginho", apellido: "Jorginho", posicion: "Defensor", palabra: null },
