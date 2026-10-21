@@ -24,11 +24,13 @@ const FUTBOL_CAMISETAS = [
     { club: "Boca Juniors", temporada: "2022/23", anio: 2022, tipo: "Alternativa", url: "https://infobae-infobae-prod.web.arc-cdn.net/resizer/v2/BKOBXJHF3RBOHEMVP4LX223ZSY.JPG?auth=20659f524b7380c9247f30da1d00d4a64093ecd9662a0e182c83fcaab951ee57" },
     { club: "Boca Juniors", temporada: "2023/24", anio: 2023, tipo: "Titular", url: "https://www.ole.com.ar/images/2023/08/18/K33T8dWa1_400x400__1.jpg" },
     { club: "Boca Juniors", temporada: "2023/24", anio: 2023, tipo: "Suplente", url: "https://historiadeboca.com.ar/Fotos/Jugadores/1323.jpg" },
+    { club: "Boca Juniors", temporada: "2023/24", anio: 2023, tipo: "Alternativa", url: "https://media.tycsports.com/files/2023/09/19/620214/lucas-blondel_1440x810_wmk.webp?v=2" },
     { club: "Boca Juniors", temporada: "2024/25", anio: 2024, tipo: "Titular", url: "https://www.ole.com.ar/images/2024/08/15/ChU3ntPD-_400x400__1.jpg" },
     { club: "Boca Juniors", temporada: "2024/25", anio: 2024, tipo: "Suplente", url: "https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2024%2F0928%2Fr1393246_1296x729_16%2D9.jpg" },
-    { club: "Boca Juniors", temporada: "2024/25", anio: 2024, tipo: "Alternativa", url: "https://historiadeboca.com.ar/Fotos/Partidos/6502.jpg" },
+    { club: "Boca Juniors", temporada: "2024/25", anio: 2024, tipo: "Alternativa", url: "https://media.tycsports.com/files/2024/04/16/704721/edinson-cavani_1440x810_wmk.webp?v=3" },
     { club: "Boca Juniors", temporada: "2025/26", anio: 2025, tipo: "Titular", url: "https://www.clarin.com/img/2025/11/02/L_20-ZqdZ_2000x1500__1.jpg" },
-    { club: "Boca Juniors", temporada: "2025/26", anio: 2025, tipo: "Suplente", url: "https://www.soccerbible.com/media/170688/boca-5-min.jpg" }
+    { club: "Boca Juniors", temporada: "2025/26", anio: 2025, tipo: "Suplente", url: "https://www.clarin.com/img/2025/06/21/nDJEtOsn1_2000x1500__1.jpg" },
+    { club: "Boca Juniors", temporada: "2025/26", anio: 2025, tipo: "Alternativa", url: "https://media.tycsports.com/files/2025/04/06/829309/rodrigo-battaglia_1440x810.webp" }
 ];
 const FUTBOL_JUGADORES = [
     // ---- Boca Juniors 2020 ----
