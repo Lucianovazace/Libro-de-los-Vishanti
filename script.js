@@ -32314,8 +32314,7 @@ function renderizarQueMiro() {
 
 
 // ===== FÚTBOL: ADIVINÁ LA CAMISETA =====
-// Muchas fotos son anchas y enfocan al jugador: se muestran en un marco 4:3 con zoom sobre
-// el torso (cada camiseta puede traer `pos` "x% y%" y `zoom` para afinar el recorte).
+// La foto se muestra completa (sin recorte) desde el principio.
 // Modos: "General" (hay que acertar club + tipo + temporada) o un club puntual (tipo + temporada).
 // Puntos por camiseta: General -> club 1, tipo 1, todo correcto 3. Club -> tipo 1, todo correcto 3.
 (function () {
@@ -32394,9 +32393,6 @@ function renderizarQueMiro() {
         actual = ronda[idx];
         img.style.display = ''; $('adc-entrada-cont').style.display = '';
         img.src = actual.url;
-        img.style.objectPosition = actual.pos || '50% 35%';
-        img.style.transformOrigin = actual.pos || '50% 35%';
-        img.style.transform = 'scale(' + (actual.zoom || 1.6) + ')';
         info.textContent = (modo || 'General') + ' · Camiseta ' + (idx + 1) + ' de ' + ronda.length + ' · ' + puntos + ' pts';
         estado.className = 'adc-estado';
         estado.textContent = modo ? '¿Titular, suplente o alternativa? ¿De qué temporada?' : '¿De qué club, tipo y temporada es?';
@@ -32417,7 +32413,6 @@ function renderizarQueMiro() {
         estado.className = 'adc-estado adc-resultado ' + (pts === 3 ? 'ok' : pts > 0 ? 'parcial' : 'mal');
         estado.textContent = (pts === 3 ? '¡Perfecto! ' : 'Era ') + real + ' · +' + pts + (pts === 1 ? ' punto' : ' puntos');
         entrada.disabled = true; cerrarSug();
-        img.style.transform = 'scale(1)';
         info.textContent = (modo || 'General') + ' · Camiseta ' + (idx + 1) + ' de ' + ronda.length + ' · ' + puntos + ' pts';
         sig.textContent = idx + 1 >= ronda.length ? 'Ver resultado ▶' : 'Siguiente ▶';
         sig.style.display = 'block';
