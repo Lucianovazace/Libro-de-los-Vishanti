@@ -7876,7 +7876,8 @@ function renderizarContenido() {
         "peliculas-halloween": "seccion-peliculas-halloween",
         "videojuegos-halloween": "seccion-videojuegos-halloween",
         "comics-halloween": "seccion-comics-halloween",
-        "saga-halloween": "seccion-saga-halloween"
+        "saga-halloween": "seccion-saga-halloween",
+        "libros": "seccion-libros"
     };
 
     listaMedia.forEach(item => {
