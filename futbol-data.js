@@ -13,6 +13,8 @@ const FUTBOL_ESCUDOS = {
 };
 // Camisetas (imágenes) por club y temporada, para el juego de adivinar la camiseta.
 const FUTBOL_CAMISETAS = [
+    { club: "Boca Juniors", temporada: "2018/19", anio: 2018, tipo: "Titular", url: "https://historiadeboca.com.ar/Fotos/Partidos/6208.jpg" },
+    { club: "Boca Juniors", temporada: "2018/19", anio: 2018, tipo: "Suplente", url: "https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2018/12/02212322/indepediente-vs-boca-superliga-2018-1920-festejo-cardona-7.jpg" },
     { club: "Boca Juniors", temporada: "2019/20", anio: 2019, tipo: "Titular", url: "https://a.espncdn.com/photo/2019/0729/r576362_1296x729_16-9.jpg" },
     { club: "Boca Juniors", temporada: "2019/20", anio: 2019, tipo: "Alternativa", url: "https://www.ole.com.ar/images/2019/07/24/HDlgmGURj_720x0__1.jpg" },
     { club: "Boca Juniors", temporada: "2020/21", anio: 2020, tipo: "Titular", url: "https://www.ole.com.ar/images/2021/01/17/JxT2OOwpy_720x0__1.jpg" },
