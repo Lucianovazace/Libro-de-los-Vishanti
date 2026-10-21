@@ -4519,6 +4519,24 @@ const colecciones = [
         ]
     },
     {
+        id: "rocky-creed",
+        titulo: "Rocky / Creed",
+        categoria: "franquicias",
+        poster: "https://image.tmdb.org/t/p/original/hEjK9A9BkNXejFW4tfacVAEHtkn.jpg",
+        etiqueta: "Saga",
+        peliculas: [
+            { titulo: "Rocky", fichaTecnicaId: "rocky-1", poster: "https://image.tmdb.org/t/p/original/hEjK9A9BkNXejFW4tfacVAEHtkn.jpg" },
+            { titulo: "Rocky II", fichaTecnicaId: "rocky-2", poster: "https://image.tmdb.org/t/p/original/nMaiiu0CzT77U4JZkUYV7KqdAjK.jpg" },
+            { titulo: "Rocky III", fichaTecnicaId: "rocky-3", poster: "https://image.tmdb.org/t/p/original/9jS3wG3cNSEu8sVUFAFQ8exyaaH.jpg" },
+            { titulo: "Rocky IV", fichaTecnicaId: "rocky-4", poster: "https://image.tmdb.org/t/p/original/v33qcJ5NTYIcoII9CB0A8rSU8VA.jpg" },
+            { titulo: "Rocky V", fichaTecnicaId: "rocky-5", poster: "https://image.tmdb.org/t/p/original/xumNKOOLLSy4TqwaCPGgFxyOHt2.jpg" },
+            { titulo: "Rocky Balboa", fichaTecnicaId: "rocky-balboa", poster: "https://image.tmdb.org/t/p/original/2WNKifvNcE4qRqSdh31WPHbRNb9.jpg" },
+            { titulo: "Creed", fichaTecnicaId: "creed-1", poster: "https://image.tmdb.org/t/p/original/dY555h5FMZBCrdtvaBS4TcVQo3n.jpg" },
+            { titulo: "Creed II", fichaTecnicaId: "creed-2", poster: "https://image.tmdb.org/t/p/original/gNZDpmEPwICj93R7pslR5b7oxSP.jpg" },
+            { titulo: "Creed III", fichaTecnicaId: "creed-3", poster: "https://image.tmdb.org/t/p/original/aHU3n2H4ErlYN9ArHXY0AcjqJq5.jpg" }
+        ]
+    },
+    {
         id: "indiana-jones",
         titulo: "Indiana Jones",
         categoria: "franquicias",
@@ -10228,6 +10246,25 @@ if(btnVolverLosJuegosDelHambre) {
     });
 }
 
+['rocky-1', 'rocky-2', 'rocky-3', 'rocky-4', 'rocky-5', 'rocky-balboa', 'creed-1', 'creed-2', 'creed-3'].forEach(id => {
+    const btn = document.getElementById('btn-volver-ficha-' + id);
+    if (btn) {
+        btn.addEventListener('click', () => {
+            const seccionFicha = document.getElementById('seccion-ficha-' + id);
+            const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+            const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+            cambiarSeccion(seccionOrigen || document.getElementById('seccion-rocky-creed'));
+        });
+    }
+});
+
+const btnVolverRockyCreed = document.getElementById('btn-volver-rocky-creed');
+if (btnVolverRockyCreed) {
+    btnVolverRockyCreed.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-franquicias'));
+    });
+}
+
 const btnVolverIndianaJones = document.getElementById('btn-volver-indiana-jones');
 if(btnVolverIndianaJones) {
     btnVolverIndianaJones.addEventListener('click', () => {
@@ -14455,6 +14492,15 @@ const FICHAS_TECNICAS_TITULOS = {
     "dune-parte-uno": "Dune: Parte Uno",
     "dune-parte-dos": "Dune: Parte Dos",
     "dune-prophecy": "Dune: Prophecy",
+    "rocky-1": "Rocky",
+    "rocky-2": "Rocky II",
+    "rocky-3": "Rocky III",
+    "rocky-4": "Rocky IV",
+    "rocky-5": "Rocky V",
+    "rocky-balboa": "Rocky Balboa",
+    "creed-1": "Creed",
+    "creed-2": "Creed II",
+    "creed-3": "Creed III",
     "the-new-mutants": "The New Mutants",
     "assassins-creed-rogue": "Assassin's Creed: Rogue",
     "incendies": "Incendies",
@@ -15772,6 +15818,117 @@ const REPARTO_PELICULAS = {
             { actor: "Jodhi May", personaje: "Reina Natalya Corrino" },
             { actor: "Jade Anouka", personaje: "Sor Jen" },
             { actor: "Sarah-Sofie Boussnina", personaje: "Joven Tula Harkonnen" }
+        ]
+    },
+    "rocky-1": {
+        director: "John G. Avildsen",
+        elenco: [
+            { actor: "Sylvester Stallone", personaje: "Rocky Balboa" },
+            { actor: "Talia Shire", personaje: "Adrian Pennino" },
+            { actor: "Burt Young", personaje: "Paulie Pennino" },
+            { actor: "Carl Weathers", personaje: "Apollo Creed" },
+            { actor: "Burgess Meredith", personaje: "Mickey Goldmill" },
+            { actor: "Thayer David", personaje: "George 'Miles' Jergens" },
+            { actor: "Joe Spinell", personaje: "Tony Gazzo" }
+        ]
+    },
+    "rocky-2": {
+        director: "Sylvester Stallone",
+        elenco: [
+            { actor: "Sylvester Stallone", personaje: "Rocky Balboa" },
+            { actor: "Talia Shire", personaje: "Adrian Balboa" },
+            { actor: "Burt Young", personaje: "Paulie Pennino" },
+            { actor: "Carl Weathers", personaje: "Apollo Creed" },
+            { actor: "Burgess Meredith", personaje: "Mickey Goldmill" },
+            { actor: "Tony Burton", personaje: "Tony 'Duke' Evers" },
+            { actor: "Joe Spinell", personaje: "Tony Gazzo" }
+        ]
+    },
+    "rocky-3": {
+        director: "Sylvester Stallone",
+        elenco: [
+            { actor: "Sylvester Stallone", personaje: "Rocky Balboa" },
+            { actor: "Talia Shire", personaje: "Adrian Balboa" },
+            { actor: "Burt Young", personaje: "Paulie Pennino" },
+            { actor: "Carl Weathers", personaje: "Apollo Creed" },
+            { actor: "Mr. T", personaje: "Clubber Lang" },
+            { actor: "Burgess Meredith", personaje: "Mickey Goldmill" }
+        ]
+    },
+    "rocky-4": {
+        director: "Sylvester Stallone",
+        elenco: [
+            { actor: "Sylvester Stallone", personaje: "Rocky Balboa" },
+            { actor: "Dolph Lundgren", personaje: "Ivan Drago" },
+            { actor: "Carl Weathers", personaje: "Apollo Creed" },
+            { actor: "Talia Shire", personaje: "Adrian Balboa" },
+            { actor: "Burt Young", personaje: "Paulie Pennino" },
+            { actor: "Brigitte Nielsen", personaje: "Ludmilla Vobet Drago" },
+            { actor: "Tony Burton", personaje: "Tony 'Duke' Evers" },
+            { actor: "Michael Pataki", personaje: "Nicoli Koloff" }
+        ]
+    },
+    "rocky-5": {
+        director: "John G. Avildsen",
+        elenco: [
+            { actor: "Sylvester Stallone", personaje: "Rocky Balboa" },
+            { actor: "Talia Shire", personaje: "Adrian Balboa" },
+            { actor: "Burt Young", personaje: "Paulie Pennino" },
+            { actor: "Richard Gant", personaje: "George Washington Duke" },
+            { actor: "Tommy Morrison", personaje: "Tommy 'Machine' Gunn" },
+            { actor: "Sage Stallone", personaje: "Robert 'Rocky' Balboa Jr." },
+            { actor: "Burgess Meredith", personaje: "Mickey Goldmill" },
+            { actor: "Tony Burton", personaje: "Tony 'Duke' Evers" }
+        ]
+    },
+    "rocky-balboa": {
+        director: "Sylvester Stallone",
+        elenco: [
+            { actor: "Sylvester Stallone", personaje: "Rocky Balboa" },
+            { actor: "Burt Young", personaje: "Paulie Pennino" },
+            { actor: "Antonio Tarver", personaje: "Mason 'The Line' Dixon" },
+            { actor: "Geraldine Hughes", personaje: "Marie" },
+            { actor: "Milo Ventimiglia", personaje: "Robert 'Rocky' Balboa Jr." },
+            { actor: "Tony Burton", personaje: "Tony 'Duke' Evers" },
+            { actor: "A.J. Benza", personaje: "L.C." },
+            { actor: "James Francis Kelly III", personaje: "Steps" }
+        ]
+    },
+    "creed-1": {
+        director: "Ryan Coogler",
+        elenco: [
+            { actor: "Michael B. Jordan", personaje: "Adonis Johnson" },
+            { actor: "Sylvester Stallone", personaje: "Rocky Balboa" },
+            { actor: "Tessa Thompson", personaje: "Bianca" },
+            { actor: "Phylicia Rashād", personaje: "Mary Anne Creed" },
+            { actor: "Andre Ward", personaje: "Danny Wheeler" },
+            { actor: "Tony Bellew", personaje: "Ricky Conlan" }
+        ]
+    },
+    "creed-2": {
+        director: "Steven Caple Jr.",
+        elenco: [
+            { actor: "Michael B. Jordan", personaje: "Adonis Creed" },
+            { actor: "Sylvester Stallone", personaje: "Rocky Balboa" },
+            { actor: "Tessa Thompson", personaje: "Bianca" },
+            { actor: "Wood Harris", personaje: "Tony 'Little Duke' Evers" },
+            { actor: "Russell Hornsby", personaje: "Buddy Marcelle" },
+            { actor: "Phylicia Rashād", personaje: "Mary Anne Creed" },
+            { actor: "Dolph Lundgren", personaje: "Ivan Drago" },
+            { actor: "Florian Munteanu", personaje: "Viktor Drago" },
+            { actor: "Brigitte Nielsen", personaje: "Ludmilla Drago" },
+            { actor: "Milo Ventimiglia", personaje: "Robert Balboa" }
+        ]
+    },
+    "creed-3": {
+        director: "Michael B. Jordan",
+        elenco: [
+            { actor: "Michael B. Jordan", personaje: "Adonis Creed" },
+            { actor: "Tessa Thompson", personaje: "Bianca Creed" },
+            { actor: "Jonathan Majors", personaje: "Damian 'Dame' Anderson" },
+            { actor: "Phylicia Rashād", personaje: "Mary-Anne Creed" },
+            { actor: "Mila Davis-Kent", personaje: "Amara Creed" },
+            { actor: "Wood Harris", personaje: "Tony 'Little Duke' Evers" }
         ]
     },
     "the-new-mutants": {
