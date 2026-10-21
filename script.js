@@ -32316,74 +32316,134 @@ function renderizarQueMiro() {
 // ===== FÚTBOL: ADIVINÁ LA CAMISETA =====
 // Muchas fotos son anchas y enfocan al jugador: se muestran en un marco 4:3 con zoom sobre
 // el torso (cada camiseta puede traer `pos` "x% y%" y `zoom` para afinar el recorte).
+// Modos: "General" (hay que acertar club + tipo + temporada) o un club puntual (tipo + temporada).
+// Puntos por camiseta: General -> club 1, tipo 1, todo correcto 3. Club -> tipo 1, todo correcto 3.
 (function () {
     const tarjeta = document.getElementById('tarjeta-adivina-camiseta');
     if (!tarjeta || typeof FUTBOL_CAMISETAS === 'undefined') return;
-    const img = document.getElementById('adc-img');
-    const info = document.getElementById('adc-info');
-    const estado = document.getElementById('adc-estado');
-    const opc = document.getElementById('adc-opciones');
-    const sig = document.getElementById('adc-siguiente');
-    let ronda = [], idx = 0, aciertos = 0, intentos = 0, actual = null;
+    const $ = (id) => document.getElementById(id);
+    const menu = $('adc-menu'), juego = $('adc-juego'), modosEl = $('adc-modos'), reglas = $('adc-reglas');
+    const img = $('adc-img'), info = $('adc-info'), estado = $('adc-estado');
+    const entrada = $('adc-entrada'), sugEl = $('adc-sugerencias'), sig = $('adc-siguiente');
+    const TIPOS = ['Titular', 'Suplente', 'Alternativa'];
+    let modo = null;            // null = General, o nombre de club
+    let ronda = [], idx = 0, puntos = 0, actual = null, opciones = [], visibles = [], sel = -1, respondida = false;
 
-    const etiqueta = (anio) => anio + '/' + String((anio + 1) % 100).padStart(2, '0');
+    const corta = (anio) => String(anio % 100).padStart(2, '0') + '/' + String((anio + 1) % 100).padStart(2, '0');
+    const larga = (anio) => anio + '/' + String((anio + 1) % 100).padStart(2, '0');
     const mezclar = (a) => { for (let i = a.length - 1; i > 0; i--) { const k = Math.floor(Math.random() * (i + 1)); [a[i], a[k]] = [a[k], a[i]]; } return a; };
+    const norm = (t) => t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+    const clubes = () => [...new Set(FUTBOL_CAMISETAS.map(c => c.club))];
+
+    // Todas las combinaciones club × tipo × temporada (del rango de años cargado de cada club)
+    function armarOpciones() {
+        const out = [];
+        clubes().forEach(club => {
+            const anios = FUTBOL_CAMISETAS.filter(c => c.club === club).map(c => c.anio);
+            const mn = Math.min(...anios), mx = Math.max(...anios);
+            for (let a = mx; a >= mn; a--) TIPOS.forEach(t => out.push({ club, tipo: t, anio: a }));
+        });
+        return out;
+    }
+    const etiquetaOp = (o) => (modo ? '' : o.club + ' ') + o.tipo + ' ' + corta(o.anio);
+    const textoBusqueda = (o) => norm(o.club + ' ' + o.tipo + ' ' + corta(o.anio) + ' ' + larga(o.anio));
+
+    function mostrarMenu() {
+        juego.classList.add('oculto'); menu.classList.remove('oculto');
+        modosEl.innerHTML = '';
+        const crear = (txt, escudo, m) => {
+            const b = document.createElement('button');
+            b.className = 'adc-modo';
+            if (escudo) { const i = document.createElement('img'); i.src = escudo; i.alt = ''; i.referrerPolicy = 'no-referrer'; b.appendChild(i); }
+            b.appendChild(document.createTextNode(txt));
+            b.addEventListener('click', () => empezar(m));
+            modosEl.appendChild(b);
+        };
+        crear('General', null, null);
+        clubes().forEach(c => crear(c, (typeof FUTBOL_ESCUDOS !== 'undefined' && FUTBOL_ESCUDOS[c]) || null, c));
+        reglas.textContent = 'General: 1 punto si acertás el club, 1 si acertás titular/suplente/alternativa (se suman), y 3 si acertás todo, temporada incluida. En un club: 1 punto por el tipo y 3 si acertás todo.';
+    }
+
+    function cerrarSug() { sugEl.classList.add('oculto'); sugEl.innerHTML = ''; visibles = []; sel = -1; }
+    function pintarSug() {
+        const q = norm(entrada.value).trim();
+        if (!q) { cerrarSug(); return; }
+        const toks = q.split(/\s+/);
+        visibles = opciones.filter(o => { const t = textoBusqueda(o); return toks.every(k => t.includes(k)); }).slice(0, 30);
+        sugEl.innerHTML = '';
+        if (!visibles.length) { cerrarSug(); return; }
+        visibles.forEach((o, i) => {
+            const b = document.createElement('button');
+            b.type = 'button'; b.className = 'adp-sug' + (i === sel ? ' activa' : '');
+            b.textContent = etiquetaOp(o);
+            b.addEventListener('mousedown', (ev) => { ev.preventDefault(); responder(o); });
+            sugEl.appendChild(b);
+        });
+        sugEl.classList.remove('oculto');
+    }
 
     function mostrar() {
         if (idx >= ronda.length) {
-            img.style.display = 'none'; opc.innerHTML = ''; sig.style.display = 'none';
-            info.textContent = '¡Terminaste! Aciertos: ' + aciertos + ' de ' + ronda.length + ' (' + intentos + ' intentos).';
-            estado.textContent = '';
-            sig.textContent = 'Jugar de nuevo'; sig.style.display = 'block'; sig.onclick = empezar;
+            img.style.display = 'none'; cerrarSug(); $('adc-entrada-cont').style.display = 'none'; sig.style.display = 'none';
+            info.textContent = '¡Terminaste! Sumaste ' + puntos + ' de ' + (ronda.length * 3) + ' puntos.';
+            estado.textContent = ''; estado.className = 'adc-estado';
+            sig.textContent = 'Jugar de nuevo'; sig.style.display = 'block'; sig.onclick = () => empezar(modo);
             return;
         }
+        respondida = false;
         actual = ronda[idx];
-        img.style.display = '';
+        img.style.display = ''; $('adc-entrada-cont').style.display = '';
         img.src = actual.url;
         img.style.objectPosition = actual.pos || '50% 35%';
         img.style.transformOrigin = actual.pos || '50% 35%';
         img.style.transform = 'scale(' + (actual.zoom || 1.6) + ')';
-        info.textContent = actual.club + ' · ' + actual.tipo + ' · Camiseta ' + (idx + 1) + ' de ' + ronda.length;
-        estado.textContent = '¿De qué temporada es?';
+        info.textContent = (modo || 'General') + ' · Camiseta ' + (idx + 1) + ' de ' + ronda.length + ' · ' + puntos + ' pts';
+        estado.className = 'adc-estado';
+        estado.textContent = modo ? '¿Titular, suplente o alternativa? ¿De qué temporada?' : '¿De qué club, tipo y temporada es?';
         sig.style.display = 'none';
-        const set = new Set([actual.anio]);
-        const posibles = [];
-        for (let d = -6; d <= 6; d++) if (d !== 0 && actual.anio + d >= 1990 && actual.anio + d <= 2026) posibles.push(actual.anio + d);
-        mezclar(posibles).slice(0, 3).forEach(a => set.add(a));
-        opc.innerHTML = '';
-        mezclar([...set]).forEach(a => {
-            const b = document.createElement('button');
-            b.textContent = etiqueta(a);
-            b.addEventListener('click', () => responder(a, b));
-            opc.appendChild(b);
-        });
+        entrada.value = ''; entrada.disabled = false; cerrarSug();
+        entrada.focus({ preventScroll: true });
     }
 
-    function responder(a, boton) {
-        intentos++;
-        if (a === actual.anio) {
-            aciertos++;
-            boton.classList.add('ok');
-            estado.textContent = '¡Correcto! ' + actual.club + ' ' + actual.temporada + ' (' + actual.tipo + ')';
-        } else {
-            boton.classList.add('mal');
-            [...opc.children].forEach(b => { if (b.textContent === etiqueta(actual.anio)) b.classList.add('ok'); });
-            estado.textContent = 'Era ' + actual.club + ' ' + actual.temporada + ' (' + actual.tipo + ')';
-        }
-        [...opc.children].forEach(b => b.disabled = true);
+    function responder(o) {
+        if (respondida) return;
+        respondida = true;
+        let pts = 0;
+        const tipoOk = o.tipo === actual.tipo, clubOk = o.club === actual.club, anioOk = o.anio === actual.anio;
+        if (clubOk && tipoOk && anioOk) pts = 3;
+        else { if (tipoOk) pts += 1; if (!modo && clubOk) pts += 1; }
+        puntos += pts;
+        const real = (modo ? '' : actual.club + ' ') + actual.tipo + ' ' + corta(actual.anio);
+        estado.className = 'adc-estado adc-resultado ' + (pts === 3 ? 'ok' : pts > 0 ? 'parcial' : 'mal');
+        estado.textContent = (pts === 3 ? '¡Perfecto! ' : 'Era ') + real + ' · +' + pts + (pts === 1 ? ' punto' : ' puntos');
+        entrada.disabled = true; cerrarSug();
         img.style.transform = 'scale(1)';
-        sig.textContent = 'Siguiente ▶';
+        info.textContent = (modo || 'General') + ' · Camiseta ' + (idx + 1) + ' de ' + ronda.length + ' · ' + puntos + ' pts';
+        sig.textContent = idx + 1 >= ronda.length ? 'Ver resultado ▶' : 'Siguiente ▶';
         sig.style.display = 'block';
         sig.onclick = () => { idx++; mostrar(); };
     }
 
-    function empezar() {
-        ronda = mezclar(FUTBOL_CAMISETAS.slice());
-        idx = 0; aciertos = 0; intentos = 0;
+    function empezar(m) {
+        modo = m;
+        const base = m ? FUTBOL_CAMISETAS.filter(c => c.club === m) : FUTBOL_CAMISETAS.slice();
+        ronda = mezclar(base.slice());
+        opciones = armarOpciones().filter(o => !m || o.club === m);
+        idx = 0; puntos = 0;
+        menu.classList.add('oculto'); juego.classList.remove('oculto');
         mostrar();
     }
 
-    tarjeta.addEventListener('click', () => { empezar(); cambiarSeccion(document.getElementById('seccion-adivina-camiseta')); });
-    const volver = document.getElementById('btn-volver-adivina-camiseta');
-    if (volver) volver.addEventListener('click', () => cambiarSeccion(document.getElementById('seccion-futbol')));
+    entrada.addEventListener('input', () => { sel = -1; pintarSug(); });
+    entrada.addEventListener('keydown', (ev) => {
+        if (ev.key === 'ArrowDown' && visibles.length) { ev.preventDefault(); sel = (sel + 1) % visibles.length; pintarSug(); }
+        else if (ev.key === 'ArrowUp' && visibles.length) { ev.preventDefault(); sel = (sel - 1 + visibles.length) % visibles.length; pintarSug(); }
+        else if (ev.key === 'Enter') { ev.preventDefault(); if (visibles.length) responder(visibles[sel >= 0 ? sel : 0]); }
+        else if (ev.key === 'Escape') cerrarSug();
+    });
+    entrada.addEventListener('blur', () => setTimeout(cerrarSug, 150));
+    $('adc-cambiar-modo').addEventListener('click', mostrarMenu);
+    tarjeta.addEventListener('click', () => { mostrarMenu(); cambiarSeccion($('seccion-adivina-camiseta')); });
+    const volver = $('btn-volver-adivina-camiseta');
+    if (volver) volver.addEventListener('click', () => cambiarSeccion($('seccion-futbol')));
 })();

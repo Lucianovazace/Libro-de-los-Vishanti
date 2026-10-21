@@ -14459,7 +14459,7 @@
             <div class="tarjeta-juego" id="tarjeta-adivina-camiseta">
                 <div class="icono-juego">👕</div>
                 <h3>Adiviná la camiseta</h3>
-                <p>Te mostramos un recorte de una camiseta: adiviná de qué temporada es.</p>
+                <p>Te mostramos un recorte de una camiseta: adiviná el club, si es titular, suplente o alternativa, y la temporada.</p>
             </div>
         </div>
         <div class="futbol-construccion">
@@ -14478,11 +14478,22 @@
     <section id="seccion-adivina-camiseta" class="oculto">
         <button class="btn-volver" id="btn-volver-adivina-camiseta">← Volver a Fútbol</button>
         <h2>Adiviná la camiseta 👕</h2>
-        <p class="subtitulo-juegos" id="adc-info"></p>
-        <div class="adc-marco"><img id="adc-img" alt="Camiseta a adivinar" referrerpolicy="no-referrer"></div>
-        <p id="adc-estado" class="adc-estado"></p>
-        <div class="adc-opciones" id="adc-opciones"></div>
-        <button class="btn-nav" id="adc-siguiente" style="display:none;">Siguiente ▶</button>
+        <div id="adc-menu">
+            <p class="subtitulo-juegos">Elegí cómo querés jugar.</p>
+            <div class="adc-modos" id="adc-modos"></div>
+            <p class="subtitulo-juegos adc-reglas" id="adc-reglas"></p>
+        </div>
+        <div id="adc-juego" class="oculto">
+            <p class="subtitulo-juegos" id="adc-info"></p>
+            <div class="adc-marco"><img id="adc-img" alt="Camiseta a adivinar" referrerpolicy="no-referrer"></div>
+            <p id="adc-estado" class="adc-estado"></p>
+            <div class="adp-entrada-cont" id="adc-entrada-cont">
+                <input type="text" id="adc-entrada" class="adp-entrada" placeholder="Escribí y elegilo de la lista…" autocomplete="off">
+                <div id="adc-sugerencias" class="adp-sugerencias oculto"></div>
+            </div>
+            <button class="btn-nav" id="adc-siguiente" style="display:none;">Siguiente ▶</button>
+            <button class="btn-nav" id="adc-cambiar-modo">Cambiar modo</button>
+        </div>
     </section>
 
     <!-- SECCIÓN: JUEGOS DE CINE, SERIES Y ENTRETENIMIENTO (HUB) -->
