@@ -15,6 +15,7 @@ const FUTBOL_ESCUDOS = {
 const FUTBOL_CAMISETAS = [
     { club: "Boca Juniors", temporada: "2020/21", anio: 2020, tipo: "Titular", url: "https://www.ole.com.ar/images/2021/01/17/JxT2OOwpy_720x0__1.jpg" },
     { club: "Boca Juniors", temporada: "2020/21", anio: 2020, tipo: "Suplente", url: "https://www.ole.com.ar/images/2020/11/09/AwaFrinjz_720x0__1.jpg" },
+    { club: "Boca Juniors", temporada: "2020/21", anio: 2020, tipo: "Alternativa", url: "https://www.infobae.com/resizer/v2/JPZ7NCBJERESVDHVN24TZZPKWA.jpg?auth=bac1c071a89146c07f531bfd32290db9575b5d140d60865522d27e122a5f47d6&smart=true&width=1200&height=675&quality=85" },
     { club: "Boca Juniors", temporada: "2021/22", anio: 2021, tipo: "Titular", url: "https://media.tycsports.com/files/2021/08/15/320188/boca_1440x810_wmk.jpg?v=1" },
     { club: "Boca Juniors", temporada: "2021/22", anio: 2021, tipo: "Suplente", url: "https://media.tycsports.com/files/2021/09/04/327888/boca-festejo-vazquez_862x485.jpg?v=1" },
     { club: "Boca Juniors", temporada: "2021/22", anio: 2021, tipo: "Alternativa", url: "https://media.puntal.com.ar/p/66871f9a70d70f3aaa8b97a928c4de76/adjuntos/270/imagenes/001/495/0001495141/advincula.jpg" },
