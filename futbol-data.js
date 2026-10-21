@@ -13,6 +13,8 @@ const FUTBOL_ESCUDOS = {
 };
 // Camisetas (imágenes) por club y temporada, para el juego de adivinar la camiseta.
 const FUTBOL_CAMISETAS = [
+    { club: "Boca Juniors", temporada: "2019/20", anio: 2019, tipo: "Titular", url: "https://a.espncdn.com/photo/2019/0729/r576362_1296x729_16-9.jpg" },
+    { club: "Boca Juniors", temporada: "2019/20", anio: 2019, tipo: "Alternativa", url: "https://www.ole.com.ar/images/2019/07/24/HDlgmGURj_720x0__1.jpg" },
     { club: "Boca Juniors", temporada: "2020/21", anio: 2020, tipo: "Titular", url: "https://www.ole.com.ar/images/2021/01/17/JxT2OOwpy_720x0__1.jpg" },
     { club: "Boca Juniors", temporada: "2020/21", anio: 2020, tipo: "Suplente", url: "https://www.ole.com.ar/images/2020/11/09/AwaFrinjz_720x0__1.jpg" },
     { club: "Boca Juniors", temporada: "2020/21", anio: 2020, tipo: "Alternativa", url: "https://www.infobae.com/resizer/v2/JPZ7NCBJERESVDHVN24TZZPKWA.jpg?auth=bac1c071a89146c07f531bfd32290db9575b5d140d60865522d27e122a5f47d6&smart=true&width=1200&height=675&quality=85" },
