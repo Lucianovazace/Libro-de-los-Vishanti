@@ -4537,6 +4537,35 @@ const colecciones = [
         ]
     },
     {
+        id: "el-ultimo-maestro-del-aire",
+        titulo: "El Último Maestro del Aire",
+        categoria: "franquicias",
+        poster: "https://i.pinimg.com/736x/00/57/d6/0057d68a81285aa728adfce3ea38ce4e.jpg",
+        esContenedor: true,
+        peliculas: []
+    },
+    {
+        id: "avatar-ultimo-maestro-del-aire",
+        titulo: "Avatar: El Último Maestro del Aire",
+        categoria: "el-ultimo-maestro-del-aire",
+        poster: "https://i.pinimg.com/736x/00/57/d6/0057d68a81285aa728adfce3ea38ce4e.jpg",
+        etiqueta: "Serie",
+        peliculas: [
+            { titulo: "Capítulo Uno: Libro de Agua", etiqueta: "Serie", fichaTecnicaId: "avatar-lla-t1", poster: "https://i.pinimg.com/736x/00/57/d6/0057d68a81285aa728adfce3ea38ce4e.jpg" },
+            { titulo: "Capítulo Dos: Libro de Tierra", etiqueta: "Serie", fichaTecnicaId: "avatar-lla-t2", poster: "https://image.tmdb.org/t/p/original/Apo0IFtqh0rr6wx4NBBTgdlP0Su.jpg" },
+            { titulo: "Capítulo Tres: Libro de Fuego", etiqueta: "Serie", fichaTecnicaId: "avatar-lla-t3", poster: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p8655176_b_v8_aa.jpg" }
+        ]
+    },
+    {
+        id: "avatar-aang-ultimo-maestro-del-aire",
+        titulo: "Avatar Aang: El Último Maestro del Aire",
+        categoria: "el-ultimo-maestro-del-aire",
+        poster: "https://image.tmdb.org/t/p/original/vVIrAp4yb8QUyVYB19Ez9WeIswT.jpg",
+        peliculas: [
+            { titulo: "Avatar Aang: El Último Maestro del Aire", fichaTecnicaId: "avatar-aang-2026", poster: "https://image.tmdb.org/t/p/original/vVIrAp4yb8QUyVYB19Ez9WeIswT.jpg" }
+        ]
+    },
+    {
         id: "indiana-jones",
         titulo: "Indiana Jones",
         categoria: "franquicias",
@@ -7389,6 +7418,7 @@ function renderizarColecciones() {
         "saga-halloween": "seccion-saga-halloween",
         "arrowverse": "seccion-arrowverse",
         "mundo-magico": "seccion-mundo-magico",
+        "el-ultimo-maestro-del-aire": "seccion-el-ultimo-maestro-del-aire",
         "estudios": "seccion-estudios",
         "game-of-thrones": "seccion-game-of-thrones",
         "sitcoms": "seccion-sitcoms",
@@ -10262,6 +10292,44 @@ const btnVolverRockyCreed = document.getElementById('btn-volver-rocky-creed');
 if (btnVolverRockyCreed) {
     btnVolverRockyCreed.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-franquicias'));
+    });
+}
+
+const btnVolverElUltimoMaestroDelAire = document.getElementById('btn-volver-el-ultimo-maestro-del-aire');
+if (btnVolverElUltimoMaestroDelAire) {
+    btnVolverElUltimoMaestroDelAire.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-franquicias'));
+    });
+}
+
+['btn-volver-avatar-ultimo-maestro-del-aire', 'btn-volver-avatar-aang-ultimo-maestro-del-aire'].forEach(id => {
+    const btn = document.getElementById(id);
+    if (btn) {
+        btn.addEventListener('click', () => {
+            cambiarSeccion(document.getElementById('seccion-el-ultimo-maestro-del-aire'));
+        });
+    }
+});
+
+['avatar-lla-t1', 'avatar-lla-t2', 'avatar-lla-t3'].forEach(id => {
+    const btn = document.getElementById('btn-volver-ficha-' + id);
+    if (btn) {
+        btn.addEventListener('click', () => {
+            const seccionFicha = document.getElementById('seccion-ficha-' + id);
+            const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+            const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+            cambiarSeccion(seccionOrigen || document.getElementById('seccion-avatar-ultimo-maestro-del-aire'));
+        });
+    }
+});
+
+const btnVolverFichaAvatarAang = document.getElementById('btn-volver-ficha-avatar-aang-2026');
+if (btnVolverFichaAvatarAang) {
+    btnVolverFichaAvatarAang.addEventListener('click', () => {
+        const seccionFicha = document.getElementById('seccion-ficha-avatar-aang-2026');
+        const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+        const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+        cambiarSeccion(seccionOrigen || document.getElementById('seccion-avatar-aang-ultimo-maestro-del-aire'));
     });
 }
 
@@ -14492,6 +14560,10 @@ const FICHAS_TECNICAS_TITULOS = {
     "dune-parte-uno": "Dune: Parte Uno",
     "dune-parte-dos": "Dune: Parte Dos",
     "dune-prophecy": "Dune: Prophecy",
+    "avatar-lla-t1": "Capítulo Uno: Libro de Agua",
+    "avatar-lla-t2": "Capítulo Dos: Libro de Tierra",
+    "avatar-lla-t3": "Capítulo Tres: Libro de Fuego",
+    "avatar-aang-2026": "Avatar Aang: El Último Maestro del Aire",
     "rocky-1": "Rocky",
     "rocky-2": "Rocky II",
     "rocky-3": "Rocky III",
@@ -15929,6 +16001,21 @@ const REPARTO_PELICULAS = {
             { actor: "Phylicia Rashād", personaje: "Mary-Anne Creed" },
             { actor: "Mila Davis-Kent", personaje: "Amara Creed" },
             { actor: "Wood Harris", personaje: "Tony 'Little Duke' Evers" }
+        ]
+    },
+    "avatar-aang-2026": {
+        director: "Lauren Montgomery",
+        elenco: [
+            { actor: "Eric Nam", personaje: "Aang" },
+            { actor: "Jessica Matten", personaje: "Katara" },
+            { actor: "Román Zaragoza", personaje: "Sokka" },
+            { actor: "Steven Yeun", personaje: "Zuko" },
+            { actor: "Dionne Quan", personaje: "Toph" },
+            { actor: "Dave Bautista", personaje: "Tagah" },
+            { actor: "Dee Bradley Baker", personaje: "Appa / Momo" },
+            { actor: "Freida Pinto", personaje: "Avatar Sonam" },
+            { actor: "Ke Huy Quan", personaje: "Avatar Xian" },
+            { actor: "Taika Waititi", personaje: "Gorillavark" }
         ]
     },
     "the-new-mutants": {
