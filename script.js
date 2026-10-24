@@ -1658,6 +1658,7 @@ const listaMedia = [
     { titulo: "Liga de la Justicia: La Saga del Rayo (DC Colección Héroes y Villanos #56)", categoria: "green-lantern-hal-jordan", subtipo: "infinite-crisis", tipo: "Cómic", poster: "https://www.abacus.coop/on/demandware.static/-/Sites-AbacusMaster/default/dwa182d48d/images/large/1479286.96.jpg" },
     { titulo: "Esenciales DC #12: Crisis Final (Ovni)", categoria: "green-lantern-hal-jordan", subtipo: "crisis-final-blackest-night", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/crisis_final_cov1-94793d73d957a1245716378555583021-640-0.webp" },
     { titulo: "Esenciales DC #11: La Noche más Oscura (Ovni)", categoria: "green-lantern-hal-jordan", subtipo: "crisis-final-blackest-night", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/la_noche_mas_oscura_2da_cov-a31e86028f1375b6e917685742571677-1024-1024.webp" },
+    { titulo: "Green Lantern de Geoff Johns: El Día Más Brillante", categoria: "green-lantern-hal-jordan", subtipo: "crisis-final-blackest-night", tipo: "Cómic", poster: "https://coleccionablesblog.com.ar/wp-content/uploads/2026/10/2-El-Dia-Mas-Brillante.jpg" },
     { titulo: "Esenciales DC #1: Flashpoint Absoluto (Ovni)", categoria: "green-lantern-hal-jordan", subtipo: "flashpoint", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/326/487/products/flashpoint-absoluto1-f467ab7a6e3e2c3c2d15987237989496-640-0.webp" },
     { titulo: "Flashpoint (Novelas Gráficas #60)", categoria: "green-lantern-hal-jordan", subtipo: "flashpoint", tipo: "Cómic", poster: "https://http2.mlstatic.com/D_NQ_NP_630959-MLA53159634445_012023-O.webp" },
     { titulo: "Green Lantern Nuevos 52: #1 al #11", categoria: "green-lantern-hal-jordan", subtipo: "nuevos-52", tipo: "Cómic", poster: "https://i1.whakoom.com/large/38/2e/b3cf9b76a3a649f39f95232ee4a98a56.jpg" },
@@ -2051,6 +2052,7 @@ const listaMedia = [
     { titulo: "Liga de La Justicia Internacional #8: Quien Porta La Estrella", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "liga,martian-manhunter,maxwell-lord", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/liga_de_la_justicia_internacional_08_cov_arg-5b68fd5d367100524717661605680788-640-0.webp" },
     { titulo: "Liga de La Justicia Internacional #9: Rupturas", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "liga,martian-manhunter,maxwell-lord", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/liga_de_la_justicia_internacional_09_cov_arg-b6499c3f54b39d2d5a17758463789756-1024-1024.webp" },
     { titulo: "Liga de La Justicia Internacional #10: Origenes Secretos", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "liga,martian-manhunter,maxwell-lord", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/liga_de_la_justicia_internacional_10_cov_arg-44e365a90106c4c33e17830148082395-1024-1024.webp" },
+    { titulo: "Liga de La Justicia Internacional #11: Antes Conocidos como la Liga de la Justicia", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "liga,martian-manhunter,maxwell-lord", tipo: "Cómic", poster: "https://coleccionablesblog.com.ar/wp-content/uploads/2026/10/11-Antes-Conocidos-como-Liga-de-la-Justicia.jpg" },
     { titulo: "Batman: Año Uno", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_a_c3_b1o_uno_3ra_cov-7d43be04a0c1e39ee917745538512217-640-0.webp" },
     { titulo: "Batman: La Historia y la Leyenda #1: Año Uno", categoria: "post-crisis-dc", editorial: "clarin", subtipo: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/small/06/0d/8fba09a74d4b4b31a9b93f7b65f2ff9a.jpg" },
     { titulo: "Batman: La Historia y la Leyenda #3: El Ojo del Observador", categoria: "post-crisis-dc", editorial: "clarin", subtipo: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/small/10/35/b665ddde87f1407eb248854892898cf8.jpg" },
@@ -2090,6 +2092,7 @@ const listaMedia = [
     { titulo: "Flash Vol. 2: Invasion!", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "flash-wally-west", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flash_vol_2_invasion_-_cov-a2911cab6b86d103ac17740242897436-1024-1024.webp" },
     { titulo: "Flash Vol. 3: Conflicto Elemental", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "flash-wally-west", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flash_vol_3_cov-f04dd489fdf37a404b17788694459030-640-0.webp" },
     { titulo: "Flash Vol. 4: Carrera Contra el Tiempo", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "flash-wally-west", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/flash_vol_4_cov-dd8cd4e7565031913317873358369731-640-0.webp" },
+    { titulo: "Flash Vol. 5: Últimos Recursos", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "flash-wally-west", tipo: "Cómic", poster: "https://coleccionablesblog.com.ar/wp-content/uploads/2026/10/5-Ultimos-Recursos.jpg" },
     { titulo: "DC Coleccion Heroes y Villanos #64: Flash: Carrera Por La Humanidad", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "flash-wally-west", tipo: "Cómic", poster: "https://i1.whakoom.com/large/02/02/ad658c2eb6c94946b0877f2dcde827e4.jpg" },
     { titulo: "Esenciales DC #16: Odisea Cosmica", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,darkseid,liga", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/odisea_cosmica_cov_arg-11-e46e20d1d004615d0616572160137359-640-0.webp" },
     { titulo: "Animal Man de Grant Morrison Vol. 2", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "animal-man", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/animal-man-vol-2-cov-arg1-6c2d76bbb90e8f3c7116239493651603-640-0.webp" },
@@ -2314,6 +2317,7 @@ const listaMedia = [
     { titulo: "DC Coleccion Heroes y Villanos #51: Lex Luthor El Anillo Negro Vol. 1", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "lex-luthor", tipo: "Cómic", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT08i2vvrcwFNnbYOgNekS62ae9vCvfpor2gBhYCBMyT9i7jOfyrj9p8Fg&s=10" },
     { titulo: "DC Coleccion Heroes y Villanos #55 Lex Luthor: El Anillo Negro Vol. 2", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "lex-luthor", tipo: "Cómic", poster: "https://i1.whakoom.com/large/22/0f/a503de60b76f486b846565cba11d4d2d.jpg" },
     { titulo: "Esenciales DC #11: La Noche Mas Oscura", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,green-lantern-hal-jordan,liga", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/la_noche_mas_oscura_2da_cov-a31e86028f1375b6e917685742571677-1024-1024.webp" },
+    { titulo: "Green Lantern de Geoff Johns: El Día Más Brillante", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "green-lantern-hal-jordan,martian-manhunter", tipo: "Cómic", poster: "https://coleccionablesblog.com.ar/wp-content/uploads/2026/10/2-El-Dia-Mas-Brillante.jpg" },
     { titulo: "DC Coleccion Novelas Graficas #61: Liga de La Justicia: Auge y Caida", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "liga", tipo: "Cómic", poster: "https://i1.whakoom.com/large/06/14/6f1e48fac5974822948f82f82bb0af25.jpg" },
     { titulo: "DC Coleccion Novelas Graficas #72: Señores del Tiempo: Punto de Fuga", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "liga,booster-gold", tipo: "Cómic", poster: "https://i1.whakoom.com/large/37/09/3be84ea58e204af2855b706d1daff1f2.jpg" },
     { titulo: "Esenciales DC #23: Batman: El Espejo Negro", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,dick-grayson", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_the_black_mirror_cov-4189d8cc24746a418217105079252954-1024-1024.webp" },
@@ -2541,6 +2545,7 @@ const listaMedia = [
     { titulo: "Absolute Flash Vol. 2", categoria: "absolute-dc", editorial: "ovni", subtipo: "flash-wally-west", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_flash_2_cov-68dc15eef101c750c217809431890213-1024-1024.webp" },
     { titulo: "Absolute Batman Vol. 3", categoria: "absolute-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/absolute_batman_vol_3_cov-70e9a0d2f0d3db749d17824805883620-1024-1024.webp" },
     { titulo: "Absolute Wonder Woman Vol. 3: Temporada de Brujas", categoria: "absolute-dc", editorial: "ovni", subtipo: "wonder-woman", tipo: "Cómic", poster: "https://coleccionablesblog.com.ar/wp-content/uploads/2026/09/3-Temporada-de-Brujas.jpg" },
+    { titulo: "Absolute Green Lantern Vol. 2: Viajera", categoria: "absolute-dc", editorial: "ovni", subtipo: "green-lantern-hal-jordan", tipo: "Cómic", poster: "https://coleccionablesblog.com.ar/wp-content/uploads/2026/10/2-Viajera.jpg" },
 
     // --- CROSSOVERS Y ELSEWORLDS (DC Argentina) ---
     { titulo: "Batman x Deadpool #1 (Crossover DC Marvel)", categoria: "elseworlds-otros-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_deadpool_1-713f1940acc054759317744583003786-640-0.webp" },
@@ -3376,7 +3381,8 @@ const COLECCIONES_LISTA_FIJA = [
         "Flash Vol. 1: Velocidad Salvaje",
         "Flash Vol. 2: Invasion!",
         "Flash Vol. 3: Conflicto Elemental",
-        "Flash Vol. 4: Carrera Contra el Tiempo"
+        "Flash Vol. 4: Carrera Contra el Tiempo",
+        "Flash Vol. 5: Últimos Recursos"
     ] },
     { id: "jl-renacimiento-orden", titulos: [
         "Liga de la Justicia Vol. 1: Las Máquinas de la Extinción",
@@ -3452,7 +3458,8 @@ const COLECCIONES_LISTA_FIJA = [
         "Liga de La Justicia Internacional #7: Nacido Para la Gloria",
         "Liga de La Justicia Internacional #8: Quien Porta La Estrella",
         "Liga de La Justicia Internacional #9: Rupturas",
-        "Liga de La Justicia Internacional #10: Origenes Secretos"
+        "Liga de La Justicia Internacional #10: Origenes Secretos",
+        "Liga de La Justicia Internacional #11: Antes Conocidos como la Liga de la Justicia"
     ] },
     { id: "leyendas-caballero-oscuro-orden", titulos: [
         "Batman: Leyendas del Caballero Oscuro #1: Shaman",
@@ -31552,6 +31559,7 @@ const RECOPILA_OVNI = {
     "Flash: Invasión (Flash Vol. 2: Invasion!)": "The Flash #15-28 y Manhunter #8-9",
     "Flash Vol. 3: Conflicto Elemental": "The Flash Annual #2, The Flash #29-45",
     "Flash Vol. 4: Carrera Contra el Tiempo": "The Flash Annual #3 y The Flash #45-55",
+    "Flash Vol. 5: Últimos Recursos": "The Flash #56-61, Annual #4, Flash Special #1, DC Retroactive: The Flash The 80s #1, Flash 80-Page Giant #2 y Speed Force #1",
     "Esenciales DC #1: Flashpoint Absoluto (Ovni)": "Flashpoint #1-5, Flashpoint: Reverse Flash y Flash #0",
     "Esenciales DC #20: Flash: Renacimiento": "Flash: Rebirth #1-6",
     "Esenciales DC #4: Crisis de Identidad": "Identity Crisis #1-7",
@@ -31564,6 +31572,7 @@ const RECOPILA_OVNI = {
     "Wonder Woman: Año Uno": "Wonder Woman (2016) #2, 4, 6, 8, 10, 12, 14 y Annual #1 = Salvat HyV #34",
     "JLA Vol. 1: Nuevo Orden Mundial": "JLA #1-9 y JLA Secret Files #1 = Salvat NG #52",
     "El Día Más Brillante": "Brightest Day #0-24",
+    "Green Lantern de Geoff Johns: El Día Más Brillante": "Brightest Day #0-24",
     "Crisis en Tierras Infinitas (Deluxe, 2da ed.)": "Crisis on Infinite Earths #1-12, Legends of the DC Universe: Crisis on Infinite Earths y History of the DC Universe = Salvat Es #2 / HyV #30 y #35",
     "Batman/Superman: Los Mejores del Mundo #1 a #8": "Batman/Superman: World's Finest #1-5 (Waid, 2022-24) en el vol. 1; el resto sigue la serie",
     "Batman: Knightfall #0": "Batman #484-487, Detective Comics #654-658",
@@ -31623,6 +31632,7 @@ const RECOPILA_OVNI = {
     "Liga de La Justicia Internacional #8: Quien Porta La Estrella": "JLA #51-52, JL Europe #23-28, JL Quarterly #3-4",
     "Liga de La Justicia Internacional #9: Rupturas": "JLA #53-60, JL Europe #29-36 y Green Lantern #18",
     "Liga de La Justicia Internacional #10: Origenes Secretos": "JL Quarterly #5, Secret Origins #32-35, DC Retroactive: JLA The '90s #1, JLA 80-Page Giant #1",
+    "Liga de La Justicia Internacional #11: Antes Conocidos como la Liga de la Justicia": "Formerly Known as the Justice League #1-6 y JLA Classified #4-9",
     "DC Comics Presenta: Liga de La Justicia: Escalera al Cielo": "JLA: Heaven's Ladder (Waid/Hitch, 2000)",
     "Doom Patrol Libro Dos": "Doom Patrol #30-41",
     "Doom Patrol Libro Tres": "Doom Patrol #42-53",
@@ -31699,6 +31709,7 @@ const RECOPILA_OVNI = {
     "Absolute Wonder Woman Vol. 1": "Absolute Wonder Woman #1-7",
     "Absolute Wonder Woman Vol.2": "Absolute Wonder Woman #8-14",
     "Absolute Wonder Woman Vol. 3: Temporada de Brujas": "Absolute Wonder Woman #15-20 y Annual #1",
+    "Absolute Green Lantern Vol. 2: Viajera": "Absolute Green Lantern #7-12",
     "Absolute Martian Manhunter Vol. 2": "Absolute Martian Manhunter #7-12",
     "Batman: El Contraataque del Caballero Oscuro": "Batman: The Dark Knight Strikes Again #1-3",
     "Superman: La Saga de Superboy": "Action Comics #587-593, Superman #5-9 y Legion of Super-Heroes #37-38",
