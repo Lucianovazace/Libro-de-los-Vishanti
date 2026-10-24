@@ -600,7 +600,7 @@ const listaMedia = [
     { titulo: "Enredados", categoria: "disney-animation", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71b8JiX-tWL.AC_UF894,1000_QL80.jpg" },
     { titulo: "Winnie the Pooh", categoria: "disney-animation", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BODg2MGEyODMtNDJhNy00ZmNlLWEzYzMtYzc0NzM1OTQxNTgzXkEyXkFqcGc@.V1.jpg" },
     { titulo: "Ralph el Demoledor", categoria: "disney-animation", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNzMxNTExOTkyMF5BMl5BanBnXkFtZTcwMzEyNDc0OA@@.V1.jpg" },
-    { titulo: "Frozen: Una Aventura Congelada", categoria: "disney-animation", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81UoBlyJ2zL.AC_UF894,1000_QL80.jpg" },
+    { titulo: "Frozen: Una Aventura Congelada", categoria: "disney-animation", fichaTecnicaId: "frozen-2013", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81UoBlyJ2zL.AC_UF894,1000_QL80.jpg" },
     { titulo: "Grandes Héroes", categoria: "disney-animation", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61DJ8d3PtcL.AC_UF894,1000_QL80.jpg" },
     { titulo: "Zootopia", categoria: "disney-animation", subtipo: "2010", tipo: "Película", poster: "https://cinefreaksargentina.wordpress.com/wp-content/uploads/2015/09/af-zoot.jpg" },
     { titulo: "Moana: Un Mar de Aventuras", categoria: "disney-animation", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81rjqvHFtkL.AC_UF894,1000_QL80.jpg" },
@@ -643,12 +643,12 @@ const listaMedia = [
     { titulo: "Diversión y Fantasía", categoria: "disney-animation", subtipo: "1930-1940", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZGU3NDU5YTYtYWI1NC00YmM2LWE5NDItNGNmMjAwYjEwZTdiXkEyXkFqcGc@.V1.jpg" },
     { titulo: "Tiempo de Melodía", categoria: "disney-animation", subtipo: "1930-1940", tipo: "Película", poster: "https://static.wikia.nocookie.net/disneyypixar/images/a/a4/Melody_Time.jpg/revision/latest/scale-to-width-down/1200?cb=20250426061039&path-prefix=es" },
     { titulo: "Las Aventuras de Ichabod y el Sr. Sapo", categoria: "disney-animation", subtipo: "1930-1940", tipo: "Película", poster: "https://m.media-amazon.com/images/S/pv-target-images/59d01ca68220e6738915efb4eee84add3339039979df0ecbae24603a19a5b7b9.jpg" },
-    { titulo: "Cenicienta", categoria: "disney-animation", subtipo: "1950", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/cinderella_1950_R73_original_film_art_5000x.jpg?v=1562540161" },
+    { titulo: "Cenicienta", categoria: "disney-animation", fichaTecnicaId: "cenicienta-1950", subtipo: "1950", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/cinderella_1950_R73_original_film_art_5000x.jpg?v=1562540161" },
     { titulo: "Alicia en el País de las Maravillas", categoria: "disney-animation", subtipo: "1950", tipo: "Película", poster: "https://i.pinimg.com/736x/3b/f5/82/3bf5825cc4271cae154247b9b1b5ed71.jpg" },
     { titulo: "Peter Pan", categoria: "disney-animation", subtipo: "1950", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71LwwUyNAoL.AC_UF894,1000_QL80.jpg" },
     { titulo: "La Dama y el Vagabundo", categoria: "disney-animation", subtipo: "1950", tipo: "Película", poster: "https://www.posterpalace.com/cdn/shop/products/walt-disneys-lady-and-the-tramp-us-one-sheet-1955-original-release-posterpalacecom-859493.jpg?v=1671389343" },
     { titulo: "La Bella Durmiente", categoria: "disney-animation", subtipo: "1950", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/n3pxoMDDxp10c1smgbDzW4bwlzq.jpg" },
-    { titulo: "101 Dálmatas", categoria: "disney-animation", subtipo: "1960", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81L6aMRis1L.AC_UF894,1000_QL80.jpg" },
+    { titulo: "101 Dálmatas", categoria: "disney-animation", fichaTecnicaId: "101-dalmatas-1961", subtipo: "1960", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81L6aMRis1L.AC_UF894,1000_QL80.jpg" },
     { titulo: "La Espada en la Piedra", categoria: "disney-animation", subtipo: "1960", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/c1H3jTJUZLrprxOMH1w8cQD1PBl.jpg" },
     { titulo: "El Libro de la Selva", categoria: "disney-animation", subtipo: "1960", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81JzIeOhnaL.jpg" },
     { titulo: "Los Aristogatos", categoria: "disney-animation", subtipo: "1970", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/s9DsxlbVE1HvHnCz50GdHDBeZRy.jpg" },
@@ -5001,7 +5001,7 @@ const colecciones = [
             { titulo: "Superman/Batman: Apocalypse", poster: "https://image.tmdb.org/t/p/original/3zZKtQAMcCWEq6EVh2mraJOAajY.jpg" },
             { titulo: "Justice League: Crisis on Two Earths", poster: "https://m.media-amazon.com/images/M/MV5BNTVlMjI4NzQtNTU0MC00Y2UwLWJkOWMtYjNmMzI2MTgwZjY1XkEyXkFqcGc@.V1.jpg" },
             { titulo: "Justice League: Doom", poster: "https://m.media-amazon.com/images/M/MV5BYmIwNjg5NjItZjRmZi00MDVlLThhYmQtNTBmNTRiY2I5Nzg1XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
-            { titulo: "Batman: Under the Red Hood", poster: "https://m.media-amazon.com/images/M/MV5BOTI2MWFkNjQtMzViMy00ZGJjLThiYzQtY2M2NDFhMTcxYzRhXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+            { titulo: "Batman: Under the Red Hood", fichaTecnicaId: "batman-under-the-red-hood-2010", poster: "https://m.media-amazon.com/images/M/MV5BOTI2MWFkNjQtMzViMy00ZGJjLThiYzQtY2M2NDFhMTcxYzRhXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
             { titulo: "All-Star Superman", poster: "https://m.media-amazon.com/images/M/MV5BNDM0Nzc3YjAtODIwMy00NWZiLTk4YzgtZGQ0OTk1ZDRhYmNkXkEyXkFqcGc@.V1.jpg" },
             { titulo: "Green Lantern: Emerald Knights", poster: "https://m.media-amazon.com/images/M/MV5BY2QyZjVhM2EtNWM2NC00OTY1LTlhNTItYWZkNDFiYmJjYjljXkEyXkFqcGc@.V1.jpg" },
             { titulo: "Batman: Year One", poster: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p8859432_p_v10_al.jpg" },
@@ -10549,7 +10549,7 @@ if (btnVolverFichaAvatarAang) {
     });
 }
 
-['mary-poppins-1964', 'novicia-rebelde-1965', 'rocky-horror-1975', 'grease-1978', 'el-rey-leon-1994', 'moulin-rouge-2001', 'chicago-2002', 'mamma-mia-2008', 'los-miserables-2012', 'la-la-land-2016', 'el-gran-showman-2017', 'wicked-2024', 'cantando-bajo-la-lluvia-1952', 'wicked-por-siempre-2025'].forEach(id => {
+['mary-poppins-1964', 'novicia-rebelde-1965', 'rocky-horror-1975', 'grease-1978', 'el-rey-leon-1994', 'moulin-rouge-2001', 'chicago-2002', 'mamma-mia-2008', 'los-miserables-2012', 'la-la-land-2016', 'el-gran-showman-2017', 'wicked-2024', 'cantando-bajo-la-lluvia-1952', 'wicked-por-siempre-2025', 'batman-under-the-red-hood-2010', '101-dalmatas-1961', 'cenicienta-1950', 'frozen-2013'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -14839,6 +14839,10 @@ const FICHAS_TECNICAS_TITULOS = {
     "el-gran-showman-2017": "El gran showman",
     "wicked-2024": "Wicked",
     "cantando-bajo-la-lluvia-1952": "Cantando bajo la lluvia",
+    "batman-under-the-red-hood-2010": "Batman: Under the Red Hood",
+    "101-dalmatas-1961": "101 Dálmatas",
+    "cenicienta-1950": "Cenicienta",
+    "frozen-2013": "Frozen: Una Aventura Congelada",
     "wicked-por-siempre-2025": "Wicked: Por Siempre",
     "avatar-lla-t1": "Capítulo Uno: Libro de Agua",
     "avatar-lla-t2": "Capítulo Dos: Libro de Tierra",
@@ -16470,6 +16474,48 @@ const REPARTO_PELICULAS = {
             { actor: "Richard Gere", personaje: "Billy Flynn" },
             { actor: "Queen Latifah", personaje: "Matron Mama Morton" },
             { actor: "John C. Reilly", personaje: "Amos Hart" }
+        ]
+    },
+    "batman-under-the-red-hood-2010": {
+        director: "Brandon Vietti",
+        elenco: [
+            { actor: "Bruce Greenwood", personaje: "Bruce Wayne / Batman (voz)" },
+            { actor: "Jensen Ackles", personaje: "Jason Todd / Red Hood (voz)" },
+            { actor: "Neil Patrick Harris", personaje: "Dick Grayson / Nightwing (voz)" },
+            { actor: "Jason Isaacs", personaje: "Ra's al Ghul (voz)" },
+            { actor: "Vincent Martella", personaje: "Jason Todd joven / Robin (voz)" },
+            { actor: "John DiMaggio", personaje: "Joker (voz)" },
+            { actor: "Wade Williams", personaje: "Roman Sionis / Black Mask (voz)" },
+            { actor: "Jim Piddock", personaje: "Alfred Pennyworth (voz)" }
+        ]
+    },
+    "101-dalmatas-1961": {
+        director: "Wolfgang Reitherman, Hamilton Luske y Clyde Geronimi",
+        elenco: [
+            { actor: "Rod Taylor", personaje: "Pongo (voz)" },
+            { actor: "Cate Bauer", personaje: "Perdita (voz)" },
+            { actor: "Betty Lou Gerson", personaje: "Cruella de Vil (voz)" },
+            { actor: "Lisa Davis", personaje: "Anita (voz)" },
+            { actor: "Ben Wright", personaje: "Roger (voz)" }
+        ]
+    },
+    "cenicienta-1950": {
+        director: "Clyde Geronimi, Wilfred Jackson y Hamilton Luske",
+        elenco: [
+            { actor: "Ilene Woods", personaje: "Cenicienta (voz)" },
+            { actor: "Eleanor Audley", personaje: "Lady Tremaine (voz)" },
+            { actor: "Verna Felton", personaje: "Hada Madrina (voz)" },
+            { actor: "Rhoda Williams", personaje: "Anastasia (voz)" },
+            { actor: "Lucille Bliss", personaje: "Drizella (voz)" }
+        ]
+    },
+    "frozen-2013": {
+        director: "Chris Buck y Jennifer Lee",
+        elenco: [
+            { actor: "Kristen Bell", personaje: "Anna (voz)" },
+            { actor: "Idina Menzel", personaje: "Elsa (voz)" },
+            { actor: "Jonathan Groff", personaje: "Kristoff (voz)" },
+            { actor: "Josh Gad", personaje: "Olaf (voz)" }
         ]
     },
     "the-new-mutants": {
