@@ -2,13 +2,13 @@ const listaMedia = [
     // --- MUSICALES (tema de noviembre; ordenadas por fecha de estreno) ---
     // Posters provisorios (placeholder) hasta que se carguen los reales.
     { titulo: "Cantando bajo la lluvia", categoria: "peliculas-musicales", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
-    { titulo: "Mary Poppins", categoria: "peliculas-musicales", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
-    { titulo: "La novicia rebelde", categoria: "peliculas-musicales", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
-    { titulo: "The Rocky Horror Picture Show", categoria: "peliculas-musicales", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
-    { titulo: "Grease", categoria: "peliculas-musicales", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
-    { titulo: "El Rey León", categoria: "peliculas-musicales", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
-    { titulo: "Moulin Rouge!", categoria: "peliculas-musicales", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
-    { titulo: "Chicago", categoria: "peliculas-musicales", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "Mary Poppins", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "mary-poppins-1964", poster: "https://image.tmdb.org/t/p/original/rCHBmqz3OtzSiT5P2rihpuVrWlk.jpg" },
+    { titulo: "La Novicia Rebelde", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "novicia-rebelde-1965", poster: "https://image.tmdb.org/t/p/original/m1NMxd9xugcnapQNTRHxlmvhpaW.jpg" },
+    { titulo: "The Rocky Horror Picture Show", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "rocky-horror-1975", poster: "https://image.tmdb.org/t/p/original/3lBv4MRr2XsZnI3I1Xvi3jbAmGf.jpg" },
+    { titulo: "Grease", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "grease-1978", poster: "https://image.tmdb.org/t/p/original/3SJ2BXp5ibGky6fJAYGgtJci1hV.jpg" },
+    { titulo: "El Rey León", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "el-rey-leon-1994", poster: "https://i.pinimg.com/736x/f6/77/40/f6774073f35f5a2749fba406a4e8d99d.jpg" },
+    { titulo: "Moulin Rouge!", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "moulin-rouge-2001", poster: "https://image.tmdb.org/t/p/original/ugPzOWtGVHLeHkiJLlN19hLM9yK.jpg" },
+    { titulo: "Chicago", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "chicago-2002", poster: "https://image.tmdb.org/t/p/original/g2RtGYe0mkbQf7s8grxF6eX5obR.jpg" },
     { titulo: "Mamma Mia!", categoria: "peliculas-musicales", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
     { titulo: "Los miserables", categoria: "peliculas-musicales", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
     { titulo: "La La Land", categoria: "peliculas-musicales", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
@@ -32,6 +32,7 @@ const listaMedia = [
     { titulo: "Halloween 5", categoria: "saga-halloween", tipo: "Película", fichaTecnicaId: "halloween-5", poster: "https://image.tmdb.org/t/p/original/n8AAlFWh3qI4LM722vggGBB6p5c.jpg" },
     { titulo: "El Resplandor", categoria: "peliculas-halloween", tipo: "Película", fichaTecnicaId: "el-resplandor", poster: "https://www.originalfilmart.com/cdn/shop/files/the_shining_1980_original_film_art_5000x.webp" },
     { titulo: "El Conjuro", categoria: "peliculas-halloween", tipo: "Película", fichaTecnicaId: "el-conjuro", poster: "https://www.movieposters.com/cdn/shop/files/the-conjuring-last-rites_3fmkdwug_1024x1024.jpg" },
+    { titulo: "The Rocky Horror Picture Show", categoria: "peliculas-halloween", tipo: "Película", fichaTecnicaId: "rocky-horror-1975", poster: "https://image.tmdb.org/t/p/original/3lBv4MRr2XsZnI3I1Xvi3jbAmGf.jpg" },
     { titulo: "It", categoria: "peliculas-halloween", tipo: "Película", fichaTecnicaId: "it-2017", poster: "https://m.media-amazon.com/images/I/617t0rMU9vL.AC_UF894,1000_QL80.jpg" },
 
     // Familiar (dentro de la ficha de Halloween, en su propio carrusel)
@@ -619,7 +620,7 @@ const listaMedia = [
     { titulo: "Bernardo y Bianca en Cangurolandia", categoria: "disney-animation", subtipo: "1990", tipo: "Película", poster: "https://i.pinimg.com/736x/48/ac/04/48ac04581d24fc86c0439c2105b817dd.jpg" },
     { titulo: "La Bella y La Bestia", categoria: "disney-animation", subtipo: "1990", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/7oCAPOphDKpIaxTrnukmDrZ8XKD.jpg" },
     { titulo: "Aladdín", categoria: "disney-animation", subtipo: "1990", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/aladdin_1992_lamp_style_original_film_art_f_1200x.jpg?v=1562976486" },
-    { titulo: "El Rey León", categoria: "disney-animation", subtipo: "1990", tipo: "Película", poster: "https://i.pinimg.com/736x/f6/77/40/f6774073f35f5a2749fba406a4e8d99d.jpg" },
+    { titulo: "El Rey León", categoria: "disney-animation", subtipo: "1990", tipo: "Película", fichaTecnicaId: "el-rey-leon-1994", poster: "https://i.pinimg.com/736x/f6/77/40/f6774073f35f5a2749fba406a4e8d99d.jpg" },
     { titulo: "Pocahontas", categoria: "disney-animation", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71fk6ri1K+L._AC_UF894,1000_QL80_.jpg" },
     { titulo: "El Jorobado de Notre Dame", categoria: "disney-animation", subtipo: "1990", tipo: "Película", poster: "https://i.pinimg.com/736x/af/07/35/af0735c9baa799f12e311a82d2192b01.jpg" },
     { titulo: "Hércules", categoria: "disney-animation", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71NtQTeIYfL._AC_UF894,1000_QL80_.jpg" },
@@ -10548,6 +10549,18 @@ if (btnVolverFichaAvatarAang) {
     });
 }
 
+['mary-poppins-1964', 'novicia-rebelde-1965', 'rocky-horror-1975', 'grease-1978', 'el-rey-leon-1994', 'moulin-rouge-2001', 'chicago-2002'].forEach(id => {
+    const btn = document.getElementById('btn-volver-ficha-' + id);
+    if (btn) {
+        btn.addEventListener('click', () => {
+            const seccionFicha = document.getElementById('seccion-ficha-' + id);
+            const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+            const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+            cambiarSeccion(seccionOrigen || document.getElementById('seccion-peliculas-musicales'));
+        });
+    }
+});
+
 const btnVolverIndianaJones = document.getElementById('btn-volver-indiana-jones');
 if(btnVolverIndianaJones) {
     btnVolverIndianaJones.addEventListener('click', () => {
@@ -13139,13 +13152,7 @@ document.querySelectorAll('.btn-volver-dlc-individual-acr').forEach(boton => {
 function activarTemaHalloweenSiCorresponde() {
     const hoy = new Date();
     const esOctubre = hoy.getMonth() === 9; // 0-indexado: 9 = octubre
-    const titulo = document.getElementById('titulo-principal');
-
     document.documentElement.classList.toggle('halloween-activo', esOctubre);
-
-    if (titulo) {
-        titulo.textContent = esOctubre ? 'LIBRO DE LOS VISHANTI' : 'EL MULTIVERSO';
-    }
 
     document.querySelectorAll('.halloween-solo').forEach(bloque => {
         bloque.classList.toggle('oculto', !esOctubre);
@@ -14819,6 +14826,13 @@ const FICHAS_TECNICAS_TITULOS = {
     "dune-parte-uno": "Dune: Parte Uno",
     "dune-parte-dos": "Dune: Parte Dos",
     "dune-prophecy": "Dune: Prophecy",
+    "mary-poppins-1964": "Mary Poppins",
+    "novicia-rebelde-1965": "La Novicia Rebelde",
+    "rocky-horror-1975": "The Rocky Horror Picture Show",
+    "grease-1978": "Grease",
+    "el-rey-leon-1994": "El Rey León",
+    "moulin-rouge-2001": "Moulin Rouge!",
+    "chicago-2002": "Chicago",
     "avatar-lla-t1": "Capítulo Uno: Libro de Agua",
     "avatar-lla-t2": "Capítulo Dos: Libro de Tierra",
     "avatar-lla-t3": "Capítulo Tres: Libro de Fuego",
@@ -16275,6 +16289,102 @@ const REPARTO_PELICULAS = {
             { actor: "Freida Pinto", personaje: "Avatar Sonam" },
             { actor: "Ke Huy Quan", personaje: "Avatar Xian" },
             { actor: "Taika Waititi", personaje: "Gorillavark" }
+        ]
+    },
+    "mary-poppins-1964": {
+        director: "Robert Stevenson",
+        elenco: [
+            { actor: "Julie Andrews", personaje: "Mary Poppins" },
+            { actor: "Dick Van Dyke", personaje: "Bert / Sr. Dawes padre" },
+            { actor: "David Tomlinson", personaje: "Sr. Banks" },
+            { actor: "Glynis Johns", personaje: "Sra. Banks" },
+            { actor: "Karen Dotrice", personaje: "Jane Banks" },
+            { actor: "Matthew Garber", personaje: "Michael Banks" },
+            { actor: "Hermione Baddeley", personaje: "Ellen" },
+            { actor: "Elsa Lanchester", personaje: "Katie Nanna" }
+        ]
+    },
+    "novicia-rebelde-1965": {
+        director: "Robert Wise",
+        elenco: [
+            { actor: "Julie Andrews", personaje: "María" },
+            { actor: "Christopher Plummer", personaje: "Capitán Georg von Trapp" },
+            { actor: "Eleanor Parker", personaje: "La Baronesa" },
+            { actor: "Charmian Carr", personaje: "Liesl von Trapp" },
+            { actor: "Nicholas Hammond", personaje: "Friedrich von Trapp" },
+            { actor: "Heather Menzies", personaje: "Louisa von Trapp" },
+            { actor: "Richard Haydn", personaje: "Max Detweiler" },
+            { actor: "Peggy Wood", personaje: "Madre Superiora" }
+        ]
+    },
+    "rocky-horror-1975": {
+        director: "Jim Sharman",
+        elenco: [
+            { actor: "Tim Curry", personaje: "Dr. Frank-N-Furter" },
+            { actor: "Susan Sarandon", personaje: "Janet Weiss" },
+            { actor: "Barry Bostwick", personaje: "Brad Majors" },
+            { actor: "Richard O'Brien", personaje: "Riff Raff" },
+            { actor: "Patricia Quinn", personaje: "Magenta" },
+            { actor: "Little Nell", personaje: "Columbia" },
+            { actor: "Jonathan Adams", personaje: "Dr. Everett V. Scott" },
+            { actor: "Peter Hinwood", personaje: "Rocky Horror" },
+            { actor: "Meat Loaf", personaje: "Eddie" },
+            { actor: "Charles Gray", personaje: "El Criminólogo (narrador)" }
+        ]
+    },
+    "grease-1978": {
+        director: "Randal Kleiser",
+        elenco: [
+            { actor: "Olivia Newton-John", personaje: "Sandy" },
+            { actor: "John Travolta", personaje: "Danny" },
+            { actor: "Stockard Channing", personaje: "Rizzo" },
+            { actor: "Jeff Conaway", personaje: "Kenickie" },
+            { actor: "Barry Pearl", personaje: "Doody" },
+            { actor: "Michael Tucci", personaje: "Sonny" },
+            { actor: "Kelly Ward", personaje: "Putzie" },
+            { actor: "Didi Conn", personaje: "Frenchy" },
+            { actor: "Jamie Donnelly", personaje: "Jan" },
+            { actor: "Dinah Manoff", personaje: "Marty" },
+            { actor: "Eve Arden", personaje: "Directora McGee" },
+            { actor: "Frankie Avalon", personaje: "Ángel Adolescente" }
+        ]
+    },
+    "el-rey-leon-1994": {
+        director: "Roger Allers, Rob Minkoff",
+        elenco: [
+            { actor: "Matthew Broderick", personaje: "Simba (adulto)" },
+            { actor: "Moira Kelly", personaje: "Nala (adulta)" },
+            { actor: "Jeremy Irons", personaje: "Scar" },
+            { actor: "Nathan Lane", personaje: "Timón" },
+            { actor: "Ernie Sabella", personaje: "Pumba" },
+            { actor: "James Earl Jones", personaje: "Mufasa" },
+            { actor: "Robert Guillaume", personaje: "Rafiki" },
+            { actor: "Rowan Atkinson", personaje: "Zazu" },
+            { actor: "Whoopi Goldberg", personaje: "Shenzi" },
+            { actor: "Cheech Marin", personaje: "Banzai" },
+            { actor: "Jim Cummings", personaje: "Ed" },
+            { actor: "Madge Sinclair", personaje: "Sarabi" }
+        ]
+    },
+    "moulin-rouge-2001": {
+        director: "Baz Luhrmann",
+        elenco: [
+            { actor: "Ewan McGregor", personaje: "Christian" },
+            { actor: "Nicole Kidman", personaje: "Satine" },
+            { actor: "John Leguizamo", personaje: "Toulouse-Lautrec" },
+            { actor: "Jim Broadbent", personaje: "Harold Zidler" },
+            { actor: "Richard Roxburgh", personaje: "El Duque" },
+            { actor: "Garry McDonald", personaje: "El Doctor" }
+        ]
+    },
+    "chicago-2002": {
+        director: "Rob Marshall",
+        elenco: [
+            { actor: "Renée Zellweger", personaje: "Roxie Hart" },
+            { actor: "Catherine Zeta-Jones", personaje: "Velma Kelly" },
+            { actor: "Richard Gere", personaje: "Billy Flynn" },
+            { actor: "Queen Latifah", personaje: "Matron Mama Morton" },
+            { actor: "John C. Reilly", personaje: "Amos Hart" }
         ]
     },
     "the-new-mutants": {
