@@ -9663,32 +9663,54 @@ botonesNavegacion.forEach(nav => {
 // agregá un nodo en ARBOL_NODOS y su rama en ARBOL_RAMAS. Si tenés el logo real,
 // poné `logo: "url"` en el nodo y reemplaza al símbolo.
 // ==========================================
-const ARBOL_PUNTOS = {
-    raiz: [500, 600], A: [500, 450], L: [280, 345], C: [500, 310], R: [725, 345]
-};
 const ARBOL_NODOS = [
-    { id: 'mcu',    nombre: 'MCU',                      simbolo: '∞',  color: '#e23636', pos: [500, 105], btn: 'btn-mcu-cronologico', desde: 'C' },
-    { id: 'universal', nombre: 'Universal',             simbolo: 'U',  color: '#2e9e4f', pos: [372, 215], btn: 'btn-universal',       desde: 'C' },
-    { id: 'xmen',   nombre: 'X-Men (Fox)',              simbolo: 'X',  color: '#f2b705', pos: [110, 195], btn: 'btn-fox-xmen',        desde: 'L' },
-    { id: 'ff',     nombre: 'Cuatro Fantásticos (Fox)', simbolo: '4',  color: '#1f78d1', pos: [262, 112], btn: 'btn-fox-ff',          desde: 'L' },
-    { id: 'ssu',    nombre: 'Universo Spider-Man (SSU)', simbolo: '🕸️', color: '#6a3fb5', pos: [622, 212], btn: 'btn-sony-ssu',       desde: 'R' },
-    { id: 'andrew', nombre: 'Spider-Man (Andrew)',      simbolo: '🕷️', color: '#1c4e9e', pos: [748, 112], btn: 'btn-sony-andrew',    desde: 'R' },
-    { id: 'tobey',  nombre: 'Spider-Man (Tobey)',       simbolo: '🕷️', color: '#c0281f', pos: [888, 205], btn: 'btn-sony-tobey',     desde: 'R' }
+    { id: 'mcu',    nombre: 'MCU',                      simbolo: '∞',  color: '#e23636', btn: 'btn-mcu-cronologico', desde: 'C' },
+    { id: 'universal', nombre: 'Universal',             simbolo: 'U',  color: '#2e9e4f', btn: 'btn-universal',       desde: 'C' },
+    { id: 'xmen',   nombre: 'X-Men (Fox)',              simbolo: 'X',  color: '#f2b705', btn: 'btn-fox-xmen',        desde: 'L' },
+    { id: 'ff',     nombre: 'Cuatro Fantásticos (Fox)', simbolo: '4',  color: '#1f78d1', btn: 'btn-fox-ff',          desde: 'L' },
+    { id: 'ssu',    nombre: 'Universo Spider-Man (SSU)', simbolo: '🕸️', color: '#6a3fb5', btn: 'btn-sony-ssu',       desde: 'R' },
+    { id: 'andrew', nombre: 'Spider-Man (Andrew)',      simbolo: '🕷️', color: '#1c4e9e', btn: 'btn-sony-andrew',    desde: 'R' },
+    { id: 'tobey',  nombre: 'Spider-Man (Tobey)',       simbolo: '🕷️', color: '#c0281f', btn: 'btn-sony-tobey',     desde: 'R' }
 ];
-// Ramitas decorativas (universos sin cartilla): [desde, x, y]
-const ARBOL_RAMITAS = [
-    ['L', 60, 330], ['L', 150, 440], ['A', 330, 500], ['A', 660, 505], ['C', 565, 215],
-    ['R', 860, 330], ['R', 820, 440], ['C', 440, 120], ['R', 690, 120]
-];
+// Dos distribuciones: escritorio (apaisada) y celular (vertical, con textos más grandes).
+// puntos = bifurcaciones; pos = posición de cada universo; ramitas = [desde, x, y] decorativas.
+const ARBOL_LAYOUTS = {
+    escritorio: {
+        vb: [1000, 660], fuente: 15,
+        puntos: { raiz: [500, 600], A: [500, 450], L: [280, 345], C: [500, 310], R: [725, 345] },
+        pos: { mcu: [500, 105], universal: [372, 215], xmen: [110, 195], ff: [262, 112], ssu: [622, 212], andrew: [748, 112], tobey: [888, 205] },
+        ramitas: [['L', 60, 330], ['L', 150, 440], ['A', 330, 500], ['A', 660, 505], ['C', 565, 215], ['R', 860, 330], ['R', 820, 440], ['C', 440, 120], ['R', 690, 120]]
+    },
+    movil: {
+        vb: [600, 960], fuente: 21,
+        puntos: { raiz: [300, 880], A: [300, 740], L: [150, 650], C: [300, 620], R: [450, 650] },
+        pos: { mcu: [300, 95], ff: [100, 235], andrew: [500, 235], universal: [180, 385], ssu: [420, 385], xmen: [75, 520], tobey: [525, 520] },
+        ramitas: [['L', 25, 600], ['L', 90, 760], ['A', 190, 830], ['A', 410, 830], ['C', 300, 330], ['R', 575, 640], ['R', 520, 770]]
+    }
+};
+// Parte el nombre en líneas de hasta ~18 caracteres, cortando por palabras.
+function ariLineas(nombre) {
+    const out = []; let linea = '';
+    nombre.split(' ').forEach(w => {
+        if (linea && (linea + ' ' + w).length > 18) { out.push(linea); linea = w; }
+        else linea = linea ? linea + ' ' + w : w;
+    });
+    if (linea) out.push(linea);
+    return out;
+}
 
 function construirArbolMultiverso() {
     const cont = document.getElementById('arbol-multiverso-contenedor');
     if (!cont) return;
+    const movil = window.matchMedia('(max-width: 640px)').matches;
+    const L = ARBOL_LAYOUTS[movil ? 'movil' : 'escritorio'];
+    const P = L.puntos;
+    cont.dataset.layout = movil ? 'movil' : 'escritorio';
     const NS = 'http://www.w3.org/2000/svg';
     const sinAnim = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     cont.innerHTML = '';
     const svg = document.createElementNS(NS, 'svg');
-    svg.setAttribute('viewBox', '0 0 1000 660');
+    svg.setAttribute('viewBox', `0 0 ${L.vb[0]} ${L.vb[1]}`);
     svg.setAttribute('class', 'arbol-svg');
     svg.setAttribute('role', 'group');
     svg.setAttribute('aria-label', 'Árbol del Multiverso Marvel');
@@ -9709,21 +9731,22 @@ function construirArbolMultiverso() {
         return path;
     };
 
-    agregarRama(ARBOL_PUNTOS.raiz, ARBOL_PUNTOS.A, 0, 'arbol-tronco', 9);
-    ['L', 'C', 'R'].forEach(k => agregarRama(ARBOL_PUNTOS.A, ARBOL_PUNTOS[k], 1, '', 6));
-    ARBOL_RAMITAS.forEach(([desde, x, y]) => {
-        agregarRama(ARBOL_PUNTOS[desde], [x, y], 2, 'arbol-ramita', 2);
+    agregarRama(P.raiz, P.A, 0, 'arbol-tronco', 9);
+    ['L', 'C', 'R'].forEach(k => agregarRama(P.A, P[k], 1, '', 6));
+    L.ramitas.forEach(([desde, x, y]) => {
+        agregarRama(P[desde], [x, y], 2, 'arbol-ramita', 2);
         const punto = document.createElementNS(NS, 'circle');
         punto.setAttribute('cx', x); punto.setAttribute('cy', y); punto.setAttribute('r', 4);
         punto.setAttribute('class', 'arbol-punto');
         svg.appendChild(punto);
         ramas[ramas.length - 1].punto = punto;
     });
-    ARBOL_NODOS.forEach(n => agregarRama(ARBOL_PUNTOS[n.desde], n.pos, 2, '', 4));
+    ARBOL_NODOS.forEach(n => agregarRama(P[n.desde], L.pos[n.id], 2, '', 4));
 
     // Raíz
     const raiz = document.createElementNS(NS, 'text');
-    raiz.setAttribute('x', ARBOL_PUNTOS.raiz[0]); raiz.setAttribute('y', ARBOL_PUNTOS.raiz[1] + 40);
+    raiz.setAttribute('x', P.raiz[0]); raiz.setAttribute('y', P.raiz[1] + 40);
+    raiz.style.fontSize = (L.fuente + 1) + 'px';
     raiz.setAttribute('class', 'arbol-raiz-texto');
     raiz.textContent = 'MULTIVERSO MARVEL';
     svg.appendChild(raiz);
@@ -9735,7 +9758,8 @@ function construirArbolMultiverso() {
         g.setAttribute('tabindex', '0');
         g.setAttribute('role', 'button');
         g.setAttribute('aria-label', 'Abrir cartilla: ' + n.nombre);
-        g.setAttribute('transform', `translate(${n.pos[0]},${n.pos[1]})`);
+        const pos = L.pos[n.id];
+        g.setAttribute('transform', `translate(${pos[0]},${pos[1]})`);
         g.style.setProperty('--nodo-color', n.color);
         const interior = document.createElementNS(NS, 'g');
         interior.setAttribute('class', 'arbol-nodo-interior');
@@ -9757,8 +9781,14 @@ function construirArbolMultiverso() {
             interior.appendChild(t);
         }
         const etiqueta = document.createElementNS(NS, 'text');
-        etiqueta.setAttribute('class', 'arbol-etiqueta'); etiqueta.setAttribute('y', 62);
-        etiqueta.textContent = n.nombre;
+        etiqueta.setAttribute('class', 'arbol-etiqueta');
+        etiqueta.style.fontSize = L.fuente + 'px';
+        ariLineas(n.nombre).forEach((txt, i) => {
+            const ts = document.createElementNS(NS, 'tspan');
+            ts.setAttribute('x', 0); ts.setAttribute('y', 62 + i * (L.fuente + 3));
+            ts.textContent = txt;
+            etiqueta.appendChild(ts);
+        });
         const entrada = document.createElementNS(NS, 'g');
         entrada.setAttribute('class', 'arbol-entrada');
         entrada.appendChild(interior);
@@ -9805,6 +9835,14 @@ function construirArbolMultiverso() {
 }
 const btnArbolMultiverso = document.getElementById('btn-arbol-multiverso');
 if (btnArbolMultiverso) btnArbolMultiverso.addEventListener('click', construirArbolMultiverso);
+// Si se gira el celular / cambia el ancho y cruza el límite, se redibuja con la otra distribución.
+window.addEventListener('resize', () => {
+    const cont = document.getElementById('arbol-multiverso-contenedor');
+    const sec = document.getElementById('seccion-arbol-multiverso');
+    if (!cont || !sec || sec.classList.contains('oculto')) return;
+    const movil = window.matchMedia('(max-width: 640px)').matches ? 'movil' : 'escritorio';
+    if (cont.dataset.layout !== movil) construirArbolMultiverso();
+});
 
 // Las tarjetas clonadas (cloneNode) no conservan los listeners de sus botones.
 // Este enlazador devuelve la función al botón "Ficha Técnica" de cada copia; al volver

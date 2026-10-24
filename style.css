@@ -2141,7 +2141,7 @@ h2 {
 .arbol-halo { fill: var(--nodo-color); opacity: 0.22; animation: arbol-pulso 3.2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
 .arbol-disco { fill: #12151c; stroke: var(--nodo-color); stroke-width: 4; filter: drop-shadow(0 0 8px var(--nodo-color)); }
 .arbol-simbolo { fill: #fff; font-size: 30px; font-weight: 800; text-anchor: middle; dominant-baseline: central; }
-.arbol-etiqueta { fill: #f1f1f1; font-size: 15px; text-anchor: middle; font-weight: 600; paint-order: stroke; stroke: #0b0d12; stroke-width: 4px; }
+.arbol-etiqueta { fill: #f1f1f1; text-anchor: middle; font-weight: 600; paint-order: stroke; stroke: #0b0d12; stroke-width: 4px; }
 .arbol-nodo:hover .arbol-nodo-interior, .arbol-nodo:focus-visible .arbol-nodo-interior { transform: scale(1.18); }
 .arbol-nodo:hover .arbol-halo, .arbol-nodo:focus-visible .arbol-halo { opacity: 0.45; }
 .arbol-oculto { opacity: 0; }
@@ -2152,4 +2152,3 @@ h2 {
 @keyframes arbol-pop { from { transform: scale(0.2); } to { transform: scale(1); } }
 @keyframes arbol-pulso { 0%,100% { transform: scale(1); } 50% { transform: scale(1.15); } }
 @media (prefers-reduced-motion: reduce) { .arbol-halo { animation: none; } }
-@media (max-width: 600px) { .arbol-etiqueta { font-size: 19px; } .arbol-raiz-texto { font-size: 18px; } }
