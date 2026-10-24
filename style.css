@@ -2121,3 +2121,35 @@ h2 {
 .adc-resultado.parcial { color: #f1c40f; }
 .adc-resultado.mal { color: #e57373; }
 #adc-entrada:disabled { opacity: .5; }
+
+/* ===== ÁRBOL DEL MULTIVERSO ===== */
+#seccion-arbol-multiverso { text-align: center; }
+.arbol-ayuda { color: #9aa0ad; margin: 0 0 10px; font-size: 0.95rem; }
+.arbol-contenedor {
+    max-width: 1000px; margin: 0 auto; padding: 8px;
+    border-radius: 14px; border: 1px solid rgba(255,255,255,0.08);
+    background: radial-gradient(ellipse at 50% 100%, rgba(229,9,20,0.10), transparent 60%), #0b0d12;
+}
+.arbol-svg { width: 100%; height: auto; display: block; overflow: visible; }
+.arbol-rama { fill: none; stroke: #6b7385; stroke-linecap: round; filter: drop-shadow(0 0 4px rgba(150,170,255,0.35)); }
+.arbol-tronco { stroke: #8892a8; }
+.arbol-ramita { stroke: #3b4254; filter: none; }
+.arbol-punto { fill: #4a5268; }
+.arbol-raiz-texto { fill: #8892a8; font-size: 15px; letter-spacing: 3px; text-anchor: middle; font-weight: 600; }
+.arbol-nodo { cursor: pointer; outline: none; }
+.arbol-nodo-interior { transition: transform .2s ease; transform-box: fill-box; transform-origin: center; }
+.arbol-halo { fill: var(--nodo-color); opacity: 0.22; animation: arbol-pulso 3.2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+.arbol-disco { fill: #12151c; stroke: var(--nodo-color); stroke-width: 4; filter: drop-shadow(0 0 8px var(--nodo-color)); }
+.arbol-simbolo { fill: #fff; font-size: 30px; font-weight: 800; text-anchor: middle; dominant-baseline: central; }
+.arbol-etiqueta { fill: #f1f1f1; font-size: 15px; text-anchor: middle; font-weight: 600; paint-order: stroke; stroke: #0b0d12; stroke-width: 4px; }
+.arbol-nodo:hover .arbol-nodo-interior, .arbol-nodo:focus-visible .arbol-nodo-interior { transform: scale(1.18); }
+.arbol-nodo:hover .arbol-halo, .arbol-nodo:focus-visible .arbol-halo { opacity: 0.45; }
+.arbol-oculto { opacity: 0; }
+.arbol-entrada { transform-box: fill-box; transform-origin: center; }
+.arbol-aparece { animation: arbol-fade .5s ease both; }
+.arbol-aparece .arbol-entrada { animation: arbol-pop .7s cubic-bezier(.2,1.4,.4,1) both; }
+@keyframes arbol-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes arbol-pop { from { transform: scale(0.2); } to { transform: scale(1); } }
+@keyframes arbol-pulso { 0%,100% { transform: scale(1); } 50% { transform: scale(1.15); } }
+@media (prefers-reduced-motion: reduce) { .arbol-halo { animation: none; } }
+@media (max-width: 600px) { .arbol-etiqueta { font-size: 19px; } .arbol-raiz-texto { font-size: 18px; } }

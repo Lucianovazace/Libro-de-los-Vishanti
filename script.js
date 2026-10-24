@@ -9619,6 +9619,7 @@ const botonesNavegacion = [
     { btn: 'btn-dc-personajes', sec: 'seccion-dc-personajes' },
     { btn: 'btn-mcu-infinito', sec: 'seccion-mcu-infinito' },
     { btn: 'btn-mcu-multiverso', sec: 'seccion-mcu-multiverso' },
+    { btn: 'btn-arbol-multiverso', sec: 'seccion-arbol-multiverso' },
     { btn: 'btn-fox-xmen', sec: 'seccion-fox-xmen' },
     { btn: 'btn-fox-ff', sec: 'seccion-fox-ff' },
     { btn: 'btn-universal', sec: 'seccion-universal' },
@@ -9653,6 +9654,157 @@ botonesNavegacion.forEach(nav => {
         });
     }
 });
+
+// ==========================================
+// ÁRBOL DEL MULTIVERSO (Marvel > Árbol del Multiverso)
+// Mapa animado de ramas, al estilo del árbol de Loki / Across the Spider-Verse.
+// Cada nodo es un universo y al tocarlo se abre su cartilla (se dispara el mismo
+// botón del menú, así conserva sus filtros por defecto). Para sumar un universo:
+// agregá un nodo en ARBOL_NODOS y su rama en ARBOL_RAMAS. Si tenés el logo real,
+// poné `logo: "url"` en el nodo y reemplaza al símbolo.
+// ==========================================
+const ARBOL_PUNTOS = {
+    raiz: [500, 600], A: [500, 450], L: [280, 345], C: [500, 310], R: [725, 345]
+};
+const ARBOL_NODOS = [
+    { id: 'mcu',    nombre: 'MCU',                      simbolo: '∞',  color: '#e23636', pos: [500, 105], btn: 'btn-mcu-cronologico', desde: 'C' },
+    { id: 'universal', nombre: 'Universal',             simbolo: 'U',  color: '#2e9e4f', pos: [372, 215], btn: 'btn-universal',       desde: 'C' },
+    { id: 'xmen',   nombre: 'X-Men (Fox)',              simbolo: 'X',  color: '#f2b705', pos: [110, 195], btn: 'btn-fox-xmen',        desde: 'L' },
+    { id: 'ff',     nombre: 'Cuatro Fantásticos (Fox)', simbolo: '4',  color: '#1f78d1', pos: [262, 112], btn: 'btn-fox-ff',          desde: 'L' },
+    { id: 'ssu',    nombre: 'Universo Spider-Man (SSU)', simbolo: '🕸️', color: '#6a3fb5', pos: [622, 212], btn: 'btn-sony-ssu',       desde: 'R' },
+    { id: 'andrew', nombre: 'Spider-Man (Andrew)',      simbolo: '🕷️', color: '#1c4e9e', pos: [748, 112], btn: 'btn-sony-andrew',    desde: 'R' },
+    { id: 'tobey',  nombre: 'Spider-Man (Tobey)',       simbolo: '🕷️', color: '#c0281f', pos: [888, 205], btn: 'btn-sony-tobey',     desde: 'R' }
+];
+// Ramitas decorativas (universos sin cartilla): [desde, x, y]
+const ARBOL_RAMITAS = [
+    ['L', 60, 330], ['L', 150, 440], ['A', 330, 500], ['A', 660, 505], ['C', 565, 215],
+    ['R', 860, 330], ['R', 820, 440], ['C', 440, 120], ['R', 690, 120]
+];
+
+function construirArbolMultiverso() {
+    const cont = document.getElementById('arbol-multiverso-contenedor');
+    if (!cont) return;
+    const NS = 'http://www.w3.org/2000/svg';
+    const sinAnim = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    cont.innerHTML = '';
+    const svg = document.createElementNS(NS, 'svg');
+    svg.setAttribute('viewBox', '0 0 1000 660');
+    svg.setAttribute('class', 'arbol-svg');
+    svg.setAttribute('role', 'group');
+    svg.setAttribute('aria-label', 'Árbol del Multiverso Marvel');
+    cont.appendChild(svg);
+
+    const curva = (a, b) => {
+        const my = (a[1] + b[1]) / 2;
+        return `M${a[0]},${a[1]} C${a[0]},${my} ${b[0]},${my} ${b[0]},${b[1]}`;
+    };
+    const ramas = []; // { el, prof }
+    const agregarRama = (a, b, prof, clase, ancho) => {
+        const path = document.createElementNS(NS, 'path');
+        path.setAttribute('d', curva(a, b));
+        path.setAttribute('class', 'arbol-rama ' + (clase || ''));
+        if (ancho) path.setAttribute('stroke-width', ancho);
+        svg.appendChild(path);
+        ramas.push({ el: path, prof });
+        return path;
+    };
+
+    agregarRama(ARBOL_PUNTOS.raiz, ARBOL_PUNTOS.A, 0, 'arbol-tronco', 9);
+    ['L', 'C', 'R'].forEach(k => agregarRama(ARBOL_PUNTOS.A, ARBOL_PUNTOS[k], 1, '', 6));
+    ARBOL_RAMITAS.forEach(([desde, x, y]) => {
+        agregarRama(ARBOL_PUNTOS[desde], [x, y], 2, 'arbol-ramita', 2);
+        const punto = document.createElementNS(NS, 'circle');
+        punto.setAttribute('cx', x); punto.setAttribute('cy', y); punto.setAttribute('r', 4);
+        punto.setAttribute('class', 'arbol-punto');
+        svg.appendChild(punto);
+        ramas[ramas.length - 1].punto = punto;
+    });
+    ARBOL_NODOS.forEach(n => agregarRama(ARBOL_PUNTOS[n.desde], n.pos, 2, '', 4));
+
+    // Raíz
+    const raiz = document.createElementNS(NS, 'text');
+    raiz.setAttribute('x', ARBOL_PUNTOS.raiz[0]); raiz.setAttribute('y', ARBOL_PUNTOS.raiz[1] + 40);
+    raiz.setAttribute('class', 'arbol-raiz-texto');
+    raiz.textContent = 'MULTIVERSO MARVEL';
+    svg.appendChild(raiz);
+
+    // Nodos
+    const nodosEl = ARBOL_NODOS.map(n => {
+        const g = document.createElementNS(NS, 'g');
+        g.setAttribute('class', 'arbol-nodo');
+        g.setAttribute('tabindex', '0');
+        g.setAttribute('role', 'button');
+        g.setAttribute('aria-label', 'Abrir cartilla: ' + n.nombre);
+        g.setAttribute('transform', `translate(${n.pos[0]},${n.pos[1]})`);
+        g.style.setProperty('--nodo-color', n.color);
+        const interior = document.createElementNS(NS, 'g');
+        interior.setAttribute('class', 'arbol-nodo-interior');
+        const halo = document.createElementNS(NS, 'circle');
+        halo.setAttribute('r', 46); halo.setAttribute('class', 'arbol-halo');
+        const disco = document.createElementNS(NS, 'circle');
+        disco.setAttribute('r', 36); disco.setAttribute('class', 'arbol-disco');
+        interior.appendChild(halo); interior.appendChild(disco);
+        if (n.logo) {
+            const img = document.createElementNS(NS, 'image');
+            img.setAttribute('href', n.logo);
+            img.setAttribute('x', -26); img.setAttribute('y', -26);
+            img.setAttribute('width', 52); img.setAttribute('height', 52);
+            interior.appendChild(img);
+        } else {
+            const t = document.createElementNS(NS, 'text');
+            t.setAttribute('class', 'arbol-simbolo'); t.setAttribute('y', 2);
+            t.textContent = n.simbolo;
+            interior.appendChild(t);
+        }
+        const etiqueta = document.createElementNS(NS, 'text');
+        etiqueta.setAttribute('class', 'arbol-etiqueta'); etiqueta.setAttribute('y', 62);
+        etiqueta.textContent = n.nombre;
+        const entrada = document.createElementNS(NS, 'g');
+        entrada.setAttribute('class', 'arbol-entrada');
+        entrada.appendChild(interior);
+        g.appendChild(entrada); g.appendChild(etiqueta);
+        const abrir = () => {
+            const b = document.getElementById(n.btn);
+            if (b) b.click();
+        };
+        g.addEventListener('click', abrir);
+        g.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); abrir(); } });
+        svg.appendChild(g);
+        return g;
+    });
+
+    // Animación: las ramas se "dibujan" por niveles y al final aparecen los universos
+    const DUR = 0.9; // segundos por nivel
+    if (sinAnim) return;
+    ramas.forEach(r => {
+        const largo = r.el.getTotalLength();
+        r.el.style.strokeDasharray = largo;
+        r.el.style.strokeDashoffset = largo;
+        if (r.punto) { r.punto.style.opacity = 0; }
+    });
+    raiz.style.opacity = 0;
+    nodosEl.forEach(g => { g.classList.add('arbol-oculto'); });
+    void svg.getBoundingClientRect(); // fuerza reflow
+    ramas.forEach(r => {
+        const delay = r.prof * DUR;
+        r.el.style.transition = `stroke-dashoffset ${DUR}s ease-in-out ${delay}s`;
+        r.el.style.strokeDashoffset = 0;
+        if (r.punto) {
+            r.punto.style.transition = `opacity .4s ease ${delay + DUR}s`;
+            r.punto.style.opacity = 1;
+        }
+    });
+    raiz.style.transition = 'opacity .8s ease .2s';
+    raiz.style.opacity = 1;
+    nodosEl.forEach((g, i) => {
+        g.style.animationDelay = `${2 * DUR + i * 0.15}s`;
+        g.querySelector('.arbol-entrada').style.animationDelay = `${2 * DUR + i * 0.15}s`;
+        g.classList.remove('arbol-oculto');
+        g.classList.add('arbol-aparece');
+    });
+}
+const btnArbolMultiverso = document.getElementById('btn-arbol-multiverso');
+if (btnArbolMultiverso) btnArbolMultiverso.addEventListener('click', construirArbolMultiverso);
 
 // Las tarjetas clonadas (cloneNode) no conservan los listeners de sus botones.
 // Este enlazador devuelve la función al botón "Ficha Técnica" de cada copia; al volver
