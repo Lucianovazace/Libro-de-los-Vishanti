@@ -1,20 +1,23 @@
 const listaMedia = [
     // --- MUSICALES (tema de noviembre; ordenadas por fecha de estreno) ---
     // Posters provisorios (placeholder) hasta que se carguen los reales.
-    { titulo: "Cantando bajo la lluvia", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "cantando-bajo-la-lluvia-1952", poster: "https://image.tmdb.org/t/p/original/671EPwBsHGHBk0cdOeZqmOK0XB3.jpg" },
-    { titulo: "Mary Poppins", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "mary-poppins-1964", poster: "https://image.tmdb.org/t/p/original/rCHBmqz3OtzSiT5P2rihpuVrWlk.jpg" },
-    { titulo: "La Novicia Rebelde", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "novicia-rebelde-1965", poster: "https://image.tmdb.org/t/p/original/m1NMxd9xugcnapQNTRHxlmvhpaW.jpg" },
-    { titulo: "The Rocky Horror Picture Show", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "rocky-horror-1975", poster: "https://image.tmdb.org/t/p/original/3lBv4MRr2XsZnI3I1Xvi3jbAmGf.jpg" },
-    { titulo: "Grease", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "grease-1978", poster: "https://image.tmdb.org/t/p/original/3SJ2BXp5ibGky6fJAYGgtJci1hV.jpg" },
-    { titulo: "El Rey León", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "el-rey-leon-1994", poster: "https://i.pinimg.com/736x/f6/77/40/f6774073f35f5a2749fba406a4e8d99d.jpg" },
-    { titulo: "Moulin Rouge!", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "moulin-rouge-2001", poster: "https://image.tmdb.org/t/p/original/ugPzOWtGVHLeHkiJLlN19hLM9yK.jpg" },
-    { titulo: "Chicago", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "chicago-2002", poster: "https://image.tmdb.org/t/p/original/g2RtGYe0mkbQf7s8grxF6eX5obR.jpg" },
-    { titulo: "Mamma Mia!", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "mamma-mia-2008", poster: "https://image.tmdb.org/t/p/original/n6pi11Cn7ktABXVKPXvv5Feo6yX.jpg" },
-    { titulo: "Los miserables", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "los-miserables-2012", poster: "https://image.tmdb.org/t/p/original/8lgrziT1rmQLQN3CKIVbwofK3y9.jpg" },
-    { titulo: "La La Land", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "la-la-land-2016", poster: "https://image.tmdb.org/t/p/original/3mbeAvLnFo9N74vlexb4DuUcuKH.jpg" },
-    { titulo: "El gran showman", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "el-gran-showman-2017", poster: "https://image.tmdb.org/t/p/original/kXHTyYMrJwuFGEXg5RXtJOboIpD.jpg" },
-    { titulo: "Wicked", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "wicked-2024", poster: "https://image.tmdb.org/t/p/original/1ZSVA2pNpc89C07RDgsR6p0GMs7.jpg" },
-    { titulo: "Wicked: Por Siempre", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "wicked-por-siempre-2025", poster: "https://m.media-amazon.com/images/M/MV5BNzRhNTE4ZTYtNTM0Mi00MzU3LTk4MTktYWE3MzQ2NTU0MDNlXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Cantando bajo la lluvia", categoria: "peliculas-musicales", anio: 1952, rt: 100, formato: "Live Action", tipo: "Película", fichaTecnicaId: "cantando-bajo-la-lluvia-1952", poster: "https://image.tmdb.org/t/p/original/671EPwBsHGHBk0cdOeZqmOK0XB3.jpg" },
+    { titulo: "Mary Poppins", categoria: "peliculas-musicales", anio: 1964, rt: 95, formato: "Live Action", tipo: "Película", fichaTecnicaId: "mary-poppins-1964", poster: "https://image.tmdb.org/t/p/original/rCHBmqz3OtzSiT5P2rihpuVrWlk.jpg" },
+    { titulo: "La Novicia Rebelde", categoria: "peliculas-musicales", anio: 1965, rt: 83, formato: "Live Action", tipo: "Película", fichaTecnicaId: "novicia-rebelde-1965", poster: "https://image.tmdb.org/t/p/original/m1NMxd9xugcnapQNTRHxlmvhpaW.jpg" },
+    { titulo: "The Rocky Horror Picture Show", categoria: "peliculas-musicales", anio: 1975, rt: 82, formato: "Live Action", tipo: "Película", fichaTecnicaId: "rocky-horror-1975", poster: "https://image.tmdb.org/t/p/original/3lBv4MRr2XsZnI3I1Xvi3jbAmGf.jpg" },
+    { titulo: "Grease", categoria: "peliculas-musicales", anio: 1978, rt: 65, formato: "Live Action", tipo: "Película", fichaTecnicaId: "grease-1978", poster: "https://image.tmdb.org/t/p/original/3SJ2BXp5ibGky6fJAYGgtJci1hV.jpg" },
+    { titulo: "El Rey León", categoria: "peliculas-musicales", anio: 1994, rt: 92, formato: "Animación", tipo: "Película", fichaTecnicaId: "el-rey-leon-1994", poster: "https://i.pinimg.com/736x/f6/77/40/f6774073f35f5a2749fba406a4e8d99d.jpg" },
+    { titulo: "Moulin Rouge!", categoria: "peliculas-musicales", anio: 2001, rt: 75, formato: "Live Action", tipo: "Película", fichaTecnicaId: "moulin-rouge-2001", poster: "https://image.tmdb.org/t/p/original/ugPzOWtGVHLeHkiJLlN19hLM9yK.jpg" },
+    { titulo: "Chicago", categoria: "peliculas-musicales", anio: 2002, rt: 87, formato: "Live Action", tipo: "Película", fichaTecnicaId: "chicago-2002", poster: "https://image.tmdb.org/t/p/original/g2RtGYe0mkbQf7s8grxF6eX5obR.jpg" },
+    { titulo: "Mamma Mia!", categoria: "peliculas-musicales", anio: 2008, rt: 54, formato: "Live Action", tipo: "Película", fichaTecnicaId: "mamma-mia-2008", poster: "https://image.tmdb.org/t/p/original/n6pi11Cn7ktABXVKPXvv5Feo6yX.jpg" },
+    { titulo: "Los miserables", categoria: "peliculas-musicales", anio: 2012, rt: 70, formato: "Live Action", tipo: "Película", fichaTecnicaId: "los-miserables-2012", poster: "https://image.tmdb.org/t/p/original/8lgrziT1rmQLQN3CKIVbwofK3y9.jpg" },
+    { titulo: "La La Land", categoria: "peliculas-musicales", anio: 2016, rt: 91, formato: "Live Action", tipo: "Película", fichaTecnicaId: "la-la-land-2016", poster: "https://image.tmdb.org/t/p/original/3mbeAvLnFo9N74vlexb4DuUcuKH.jpg" },
+    { titulo: "El gran showman", categoria: "peliculas-musicales", anio: 2017, rt: 56, formato: "Live Action", tipo: "Película", fichaTecnicaId: "el-gran-showman-2017", poster: "https://image.tmdb.org/t/p/original/kXHTyYMrJwuFGEXg5RXtJOboIpD.jpg" },
+    { titulo: "Wicked", categoria: "peliculas-musicales", anio: 2024, rt: 88, formato: "Live Action", tipo: "Película", fichaTecnicaId: "wicked-2024", poster: "https://image.tmdb.org/t/p/original/1ZSVA2pNpc89C07RDgsR6p0GMs7.jpg" },
+    { titulo: "Wicked: Por Siempre", categoria: "peliculas-musicales", anio: 2025, rt: 66, formato: "Live Action", tipo: "Película", fichaTecnicaId: "wicked-por-siempre-2025", poster: "https://m.media-amazon.com/images/M/MV5BNzRhNTE4ZTYtNTM0Mi00MzU3LTk4MTktYWE3MzQ2NTU0MDNlXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Cenicienta", categoria: "peliculas-musicales", soloSeccion: true, anio: 1950, rt: 95, formato: "Animación", tipo: "Película", fichaTecnicaId: "cenicienta-1950", poster: "https://www.originalfilmart.com/cdn/shop/products/cinderella_1950_R73_original_film_art_5000x.jpg?v=1562540161" },
+    { titulo: "101 Dálmatas", categoria: "peliculas-musicales", soloSeccion: true, anio: 1961, rt: 98, formato: "Animación", tipo: "Película", fichaTecnicaId: "101-dalmatas-1961", poster: "https://m.media-amazon.com/images/I/81L6aMRis1L.AC_UF894,1000_QL80.jpg" },
+    { titulo: "Frozen: Una Aventura Congelada", categoria: "peliculas-musicales", soloSeccion: true, anio: 2013, rt: 89, formato: "Animación", tipo: "Película", fichaTecnicaId: "frozen-2013", poster: "https://m.media-amazon.com/images/I/81UoBlyJ2zL.AC_UF894,1000_QL80.jpg" },
 
     // --- HALLOWEEN (terror: películas, videojuegos y cómics) ---
     // Posters provisorios (placeholder) hasta que se carguen los reales.
@@ -13189,6 +13192,34 @@ if (btnVolverPeliculasMusicales) {
         cambiarSeccion(document.getElementById('seccion-doomsday'));
     });
 }
+// Filtros del listado completo de Películas Musicales (solo en la sección, no en el home)
+(function() {
+    const grilla = document.getElementById('grilla-peliculas-musicales');
+    const selFormato = document.getElementById('filtro-musicales-formato');
+    const selOrden = document.getElementById('orden-musicales');
+    if (!grilla || !selFormato || !selOrden) return;
+    function aplicar() {
+        const tarjetas = Array.from(grilla.querySelectorAll('.tarjeta-media'));
+        tarjetas.forEach((t, i) => { if (t.dataset.ordenOriginal === undefined) t.dataset.ordenOriginal = i; });
+        const datos = t => listaMedia.find(m => m.categoria === 'peliculas-musicales' && m.titulo === t.querySelector('h3').textContent) || {};
+        tarjetas.forEach(t => {
+            const d = datos(t);
+            t.style.display = (selFormato.value === 'todas' || d.formato === selFormato.value) ? '' : 'none';
+        });
+        const orden = selOrden.value;
+        const clave = {
+            'rt-desc': (a, b) => (datos(b).rt || 0) - (datos(a).rt || 0),
+            'rt-asc': (a, b) => (datos(a).rt || 0) - (datos(b).rt || 0),
+            'anio-desc': (a, b) => (datos(b).anio || 0) - (datos(a).anio || 0),
+            'anio-asc': (a, b) => (datos(a).anio || 0) - (datos(b).anio || 0),
+            'original': (a, b) => a.dataset.ordenOriginal - b.dataset.ordenOriginal
+        }[orden];
+        tarjetas.sort(clave).forEach(t => grilla.appendChild(t));
+    }
+    selFormato.addEventListener('change', aplicar);
+    selOrden.addEventListener('change', aplicar);
+})();
+
 ['btn-carrusel-musicales-siguiente', 'btn-carrusel-musicales-home-siguiente'].forEach(idBtn => {
     const btn = document.getElementById(idBtn);
     if (!btn) return;
@@ -13969,7 +14000,7 @@ function renderizarBloquesFamiliarYTerrorHome() {
     const peliculasTerror = listaMedia.filter(m => m.categoria === 'peliculas-halloween');
     const peliculasFamiliar = listaMedia.filter(m => m.categoria === 'familiar-halloween');
 
-    const peliculasMusicales = listaMedia.filter(m => m.categoria === 'peliculas-musicales');
+    const peliculasMusicales = listaMedia.filter(m => m.categoria === 'peliculas-musicales' && !m.soloSeccion);
     const grillaMusicalesHome = document.getElementById('grilla-musicales-home');
     if (grillaMusicalesHome && grillaMusicalesHome.children.length === 0) {
         peliculasMusicales.forEach(item => grillaMusicalesHome.appendChild(crearTarjetaManual(item)));

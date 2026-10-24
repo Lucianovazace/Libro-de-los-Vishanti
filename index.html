@@ -5334,6 +5334,28 @@
     <section id="seccion-peliculas-musicales" class="oculto">
         <button class="btn-volver" id="btn-volver-peliculas-musicales">← Volver</button>
         <h2>🎵 Películas Musicales</h2>
+        <details class="musicales-filtros">
+            <summary>🔎 Filtrar y ordenar</summary>
+            <div class="musicales-filtros-contenido">
+                <label>Tipo
+                    <select id="filtro-musicales-formato">
+                        <option value="todas">Todas</option>
+                        <option value="Live Action">Live Action</option>
+                        <option value="Animación">Animación</option>
+                    </select>
+                </label>
+                <label>Ordenar por
+                    <select id="orden-musicales">
+                        <option value="original">Orden original</option>
+                        <option value="rt-desc">Puntuación (mayor a menor)</option>
+                        <option value="rt-asc">Puntuación (menor a mayor)</option>
+                        <option value="anio-desc">Año (más nuevas primero)</option>
+                        <option value="anio-asc">Año (más viejas primero)</option>
+                    </select>
+                </label>
+                <small>La puntuación es la de Rotten Tomatoes.</small>
+            </div>
+        </details>
         <div class="carrusel-horizontal-contenedor">
             <div class="carrusel-horizontal grilla-biblioteca" id="grilla-peliculas-musicales"></div>
             <button class="btn-carrusel-flecha" id="btn-carrusel-musicales-siguiente">▶</button>

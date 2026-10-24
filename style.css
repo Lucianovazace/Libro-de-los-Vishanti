@@ -2207,3 +2207,10 @@ h2 {
 @keyframes arbol-pop { from { transform: scale(0.2); } to { transform: scale(1); } }
 @keyframes arbol-pulso { 0%,100% { transform: scale(1); } 50% { transform: scale(1.15); } }
 @media (prefers-reduced-motion: reduce) { .arbol-halo { animation: none; } }
+
+.musicales-filtros { margin: 10px 0 14px; background: var(--fondo-tarjeta, #1e2129); border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; padding: 8px 12px; max-width: 520px; }
+.musicales-filtros summary { cursor: pointer; font-weight: 600; }
+.musicales-filtros-contenido { display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end; margin-top: 10px; }
+.musicales-filtros label { display: flex; flex-direction: column; gap: 4px; font-size: 0.85rem; }
+.musicales-filtros select { padding: 6px 8px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.2); background: inherit; color: inherit; }
+.musicales-filtros small { opacity: 0.7; width: 100%; }
