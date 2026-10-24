@@ -1,7 +1,7 @@
 const listaMedia = [
     // --- MUSICALES (tema de noviembre; ordenadas por fecha de estreno) ---
     // Posters provisorios (placeholder) hasta que se carguen los reales.
-    { titulo: "Cantando bajo la lluvia", categoria: "peliculas-musicales", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "Cantando bajo la lluvia", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "cantando-bajo-la-lluvia-1952", poster: "https://image.tmdb.org/t/p/original/671EPwBsHGHBk0cdOeZqmOK0XB3.jpg" },
     { titulo: "Mary Poppins", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "mary-poppins-1964", poster: "https://image.tmdb.org/t/p/original/rCHBmqz3OtzSiT5P2rihpuVrWlk.jpg" },
     { titulo: "La Novicia Rebelde", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "novicia-rebelde-1965", poster: "https://image.tmdb.org/t/p/original/m1NMxd9xugcnapQNTRHxlmvhpaW.jpg" },
     { titulo: "The Rocky Horror Picture Show", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "rocky-horror-1975", poster: "https://image.tmdb.org/t/p/original/3lBv4MRr2XsZnI3I1Xvi3jbAmGf.jpg" },
@@ -14,7 +14,7 @@ const listaMedia = [
     { titulo: "La La Land", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "la-la-land-2016", poster: "https://image.tmdb.org/t/p/original/3mbeAvLnFo9N74vlexb4DuUcuKH.jpg" },
     { titulo: "El gran showman", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "el-gran-showman-2017", poster: "https://image.tmdb.org/t/p/original/kXHTyYMrJwuFGEXg5RXtJOboIpD.jpg" },
     { titulo: "Wicked", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "wicked-2024", poster: "https://image.tmdb.org/t/p/original/1ZSVA2pNpc89C07RDgsR6p0GMs7.jpg" },
-    { titulo: "Wicked: Por Siempre", categoria: "peliculas-musicales", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "Wicked: Por Siempre", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "wicked-por-siempre-2025", poster: "https://m.media-amazon.com/images/M/MV5BNzRhNTE4ZTYtNTM0Mi00MzU3LTk4MTktYWE3MzQ2NTU0MDNlXkEyXkFqcGc@._V1_.jpg" },
 
     // --- HALLOWEEN (terror: películas, videojuegos y cómics) ---
     // Posters provisorios (placeholder) hasta que se carguen los reales.
@@ -10549,7 +10549,7 @@ if (btnVolverFichaAvatarAang) {
     });
 }
 
-['mary-poppins-1964', 'novicia-rebelde-1965', 'rocky-horror-1975', 'grease-1978', 'el-rey-leon-1994', 'moulin-rouge-2001', 'chicago-2002', 'mamma-mia-2008', 'los-miserables-2012', 'la-la-land-2016', 'el-gran-showman-2017', 'wicked-2024'].forEach(id => {
+['mary-poppins-1964', 'novicia-rebelde-1965', 'rocky-horror-1975', 'grease-1978', 'el-rey-leon-1994', 'moulin-rouge-2001', 'chicago-2002', 'mamma-mia-2008', 'los-miserables-2012', 'la-la-land-2016', 'el-gran-showman-2017', 'wicked-2024', 'cantando-bajo-la-lluvia-1952', 'wicked-por-siempre-2025'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -14838,6 +14838,8 @@ const FICHAS_TECNICAS_TITULOS = {
     "la-la-land-2016": "La La Land",
     "el-gran-showman-2017": "El gran showman",
     "wicked-2024": "Wicked",
+    "cantando-bajo-la-lluvia-1952": "Cantando bajo la lluvia",
+    "wicked-por-siempre-2025": "Wicked: Por Siempre",
     "avatar-lla-t1": "Capítulo Uno: Libro de Agua",
     "avatar-lla-t2": "Capítulo Dos: Libro de Tierra",
     "avatar-lla-t3": "Capítulo Tres: Libro de Fuego",
@@ -14904,6 +14906,28 @@ const FICHAS_TECNICAS_TITULOS = {
             { actor: "Ariana Grande", personaje: "Glinda" },
             { actor: "Jonathan Bailey", personaje: "Fiyero" },
             { actor: "Ethan Slater", personaje: "Boq" },
+            { actor: "Bowen Yang", personaje: "Pfannee" }
+        ]
+    },
+    "cantando-bajo-la-lluvia-1952": {
+        director: "Stanley Donen y Gene Kelly",
+        elenco: [
+            { actor: "Gene Kelly", personaje: "Don Lockwood" },
+            { actor: "Debbie Reynolds", personaje: "Kathy Selden" },
+            { actor: "Donald O'Connor", personaje: "Cosmo Brown" },
+            { actor: "Jean Hagen", personaje: "Lina Lamont" }
+        ]
+    },
+    "wicked-por-siempre-2025": {
+        director: "Jon M. Chu",
+        elenco: [
+            { actor: "Cynthia Erivo", personaje: "Elphaba" },
+            { actor: "Ariana Grande", personaje: "Glinda" },
+            { actor: "Jonathan Bailey", personaje: "Fiyero" },
+            { actor: "Ethan Slater", personaje: "Boq" },
+            { actor: "Marissa Bode", personaje: "Nessarose" },
+            { actor: "Michelle Yeoh", personaje: "Madame Morrible" },
+            { actor: "Jeff Goldblum", personaje: "El Mago" },
             { actor: "Bowen Yang", personaje: "Pfannee" }
         ]
     },
