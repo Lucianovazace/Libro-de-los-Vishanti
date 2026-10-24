@@ -18,6 +18,16 @@ const listaMedia = [
     { titulo: "Cenicienta", categoria: "peliculas-musicales", soloSeccion: true, anio: 1950, rt: 95, formato: "Animación", tipo: "Película", fichaTecnicaId: "cenicienta-1950", poster: "https://www.originalfilmart.com/cdn/shop/products/cinderella_1950_R73_original_film_art_5000x.jpg?v=1562540161" },
     { titulo: "101 Dálmatas", categoria: "peliculas-musicales", soloSeccion: true, anio: 1961, rt: 98, formato: "Animación", tipo: "Película", fichaTecnicaId: "101-dalmatas-1961", poster: "https://m.media-amazon.com/images/I/81L6aMRis1L.AC_UF894,1000_QL80.jpg" },
     { titulo: "Frozen: Una Aventura Congelada", categoria: "peliculas-musicales", soloSeccion: true, anio: 2013, rt: 89, formato: "Animación", tipo: "Película", fichaTecnicaId: "frozen-2013", poster: "https://m.media-amazon.com/images/I/81UoBlyJ2zL.AC_UF894,1000_QL80.jpg" },
+    { titulo: "El Mago de Oz", categoria: "peliculas-musicales", soloSeccion: true, anio: 1939, rt: 98, formato: "Live Action", tipo: "Película", fichaTecnicaId: "el-mago-de-oz-1939", poster: "https://image.tmdb.org/t/p/original/uCC3j4pV9eOZwzDUWp2ilbcTf1f.jpg" },
+    { titulo: "Pinocho", categoria: "peliculas-musicales", soloSeccion: true, anio: 1940, rt: 100, formato: "Animación", tipo: "Película", fichaTecnicaId: "pinocho-1940", poster: "https://postercity.com.ar/wp-content/uploads/2019/07/Pinocchio-Disney-low.jpg" },
+    { titulo: "Hairspray", categoria: "peliculas-musicales", soloSeccion: true, anio: 2007, rt: 92, formato: "Live Action", tipo: "Película", fichaTecnicaId: "hairspray-2007", poster: "https://image.tmdb.org/t/p/original/7FNbCfRGQyf26O0fmdKKhl6Enkj.jpg" },
+    { titulo: "Sweeney Todd", categoria: "peliculas-musicales", soloSeccion: true, anio: 2007, rt: 86, formato: "Live Action", tipo: "Película", fichaTecnicaId: "sweeney-todd-2007", poster: "https://image.tmdb.org/t/p/original/jwA3ulJq7gpS9M0kLqlPK8cC8iR.jpg" },
+    { titulo: "Into the Woods", categoria: "peliculas-musicales", soloSeccion: true, anio: 2014, rt: 70, formato: "Live Action", tipo: "Película", fichaTecnicaId: "into-the-woods-2014", poster: "https://image.tmdb.org/t/p/original/1nMz8Ek2d00h0p7mvRPJzGgxkZg.jpg" },
+    { titulo: "Nace una estrella", categoria: "peliculas-musicales", soloSeccion: true, anio: 2018, rt: 90, formato: "Live Action", tipo: "Película", fichaTecnicaId: "nace-una-estrella-2018", poster: "https://image.tmdb.org/t/p/original/yyXNZH59NPMNvEkCd2nIFY5VKwB.jpg" },
+    { titulo: "Bohemian Rhapsody", categoria: "peliculas-musicales", soloSeccion: true, anio: 2018, rt: 60, formato: "Live Action", tipo: "Película", fichaTecnicaId: "bohemian-rhapsody-2018", poster: "https://image.tmdb.org/t/p/original/3TQRC4WFjtr5PylWYpo81TlqPNU.jpg" },
+    { titulo: "In the Heights", categoria: "peliculas-musicales", soloSeccion: true, anio: 2021, rt: 94, formato: "Live Action", tipo: "Película", fichaTecnicaId: "in-the-heights-2021", poster: "https://image.tmdb.org/t/p/original/m43rJiOwzxQWXbPSbZjVam0Vbhb.jpg" },
+    { titulo: "Coco", categoria: "peliculas-musicales", soloSeccion: true, anio: 2017, rt: 97, formato: "Animación", tipo: "Película", fichaTecnicaId: "coco-2017", poster: "https://image.tmdb.org/t/p/original/4jfKMdT6vdkpcB2EyBj2XkO2tTf.jpg" },
+    { titulo: "West Side Story", categoria: "peliculas-musicales", soloSeccion: true, anio: 2021, rt: 91, formato: "Live Action", tipo: "Película", fichaTecnicaId: "west-side-story-2021", poster: "https://m.media-amazon.com/images/M/MV5BOWZkYzY2OGUtOGU4Ni00NmI0LTg2ZjAtZDA5OWE0YTNiZWRiXkEyXkFqcGc@._V1_.jpg" },
 
     // --- HALLOWEEN (terror: películas, videojuegos y cómics) ---
     // Posters provisorios (placeholder) hasta que se carguen los reales.
@@ -36,6 +46,7 @@ const listaMedia = [
     { titulo: "El Resplandor", categoria: "peliculas-halloween", tipo: "Película", fichaTecnicaId: "el-resplandor", poster: "https://www.originalfilmart.com/cdn/shop/files/the_shining_1980_original_film_art_5000x.webp" },
     { titulo: "El Conjuro", categoria: "peliculas-halloween", tipo: "Película", fichaTecnicaId: "el-conjuro", poster: "https://www.movieposters.com/cdn/shop/files/the-conjuring-last-rites_3fmkdwug_1024x1024.jpg" },
     { titulo: "The Rocky Horror Picture Show", categoria: "peliculas-halloween", tipo: "Película", fichaTecnicaId: "rocky-horror-1975", poster: "https://image.tmdb.org/t/p/original/3lBv4MRr2XsZnI3I1Xvi3jbAmGf.jpg" },
+    { titulo: "Sweeney Todd", categoria: "peliculas-halloween", tipo: "Película", fichaTecnicaId: "sweeney-todd-2007", poster: "https://image.tmdb.org/t/p/original/jwA3ulJq7gpS9M0kLqlPK8cC8iR.jpg" },
     { titulo: "It", categoria: "peliculas-halloween", tipo: "Película", fichaTecnicaId: "it-2017", poster: "https://m.media-amazon.com/images/I/617t0rMU9vL.AC_UF894,1000_QL80.jpg" },
 
     // Familiar (dentro de la ficha de Halloween, en su propio carrusel)
@@ -636,7 +647,7 @@ const listaMedia = [
     { titulo: "Oliver y su Pandilla", categoria: "disney-animation", subtipo: "1980", tipo: "Película", poster: "https://vegalleries.com/sites/default/files/art/product_images/manual/2024/jun22249.jpg" },
     { titulo: "La Sirenita", categoria: "disney-animation", subtipo: "1980", tipo: "Película", poster: "https://cdn.posteritati.com/posters/000/000/009/543/the-little-mermaid-md-web.jpg" },
     { titulo: "Blancanieves y los Siete Enanitos", categoria: "disney-animation", subtipo: "1930-1940", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/jPBIm2Kileddn0Vj8jV2JBQlAKZ.jpg" },
-    { titulo: "Pinocho", categoria: "disney-animation", subtipo: "1930-1940", tipo: "Película", poster: "https://postercity.com.ar/wp-content/uploads/2019/07/Pinocchio-Disney-low.jpg" },
+    { titulo: "Pinocho", categoria: "disney-animation", fichaTecnicaId: "pinocho-1940", subtipo: "1930-1940", tipo: "Película", poster: "https://postercity.com.ar/wp-content/uploads/2019/07/Pinocchio-Disney-low.jpg" },
     { titulo: "Fantasía", categoria: "disney-animation", subtipo: "1930-1940", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/files/Fantasia_R1985_original_film_art_5000x.webp?v=1750797193" },
     { titulo: "Dumbo", categoria: "disney-animation", subtipo: "1930-1940", tipo: "Película", poster: "https://static.posters.cz/image/1300/71873.jpg" },
     { titulo: "Bambi", categoria: "disney-animation", subtipo: "1930-1940", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81SMwA+ARhL.AC_UF894,1000_QL80.jpg" },
@@ -1044,7 +1055,7 @@ const listaMedia = [
     { titulo: "Atonement", categoria: "benedict-cumberbatch", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/bTwkpeOMChZtxDUPtbaQg1AbE5B.jpg" },
     { titulo: "The Other Boleyn Girl", categoria: "benedict-cumberbatch", subtipo: "2000", tipo: "Película", poster: "https://i.pinimg.com/736x/9e/54/94/9e54947c7b32f8e1bac409230a04fd22.jpg" },
     { titulo: "Creation", categoria: "benedict-cumberbatch", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/vS6ne76vjRH7Z88rAqYLCcQatB4.jpg" },
-    { titulo: "West Side Story", categoria: "steven-spielberg", subtipo: "2020", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/319296.jpg" },
+    { titulo: "West Side Story", categoria: "steven-spielberg", subtipo: "2020", tipo: "Película", fichaTecnicaId: "west-side-story-2021", poster: "https://cdng.europosters.eu/pod_public/1300/319296.jpg" },
     { titulo: "The Fabelmans", categoria: "steven-spielberg", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/cvarc1KjUJHXtgCcRRt7NNeZcp1.jpg" },
     { titulo: "Disclosure Day", categoria: "steven-spielberg", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/w220_and_h330_face/viBKDtgAceQpH4OBuoqvKGMx0jb.jpg" },
     { titulo: "The Adventures of Tintin", categoria: "steven-spielberg", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNDE5MDExNTQ1OF5BMl5BanBnXkFtZTcwMDIxMTM5Ng@@._V1_.jpg" },
@@ -1364,7 +1375,7 @@ const listaMedia = [
     { titulo: "Un Buen Dinosaurio", categoria: "pixar", subtipo: "2010", tipo: "Película", poster: "https://cdn.posteritati.com/posters/000/000/048/988/the-good-dinosaur-md-web.jpg" },
     { titulo: "Buscando a Dory", categoria: "pixar", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/xufFFw9wRDYmICfutz4yeSsIwaa.jpg" },
     { titulo: "Cars 3", categoria: "pixar", subtipo: "2010", tipo: "Película", poster: "https://i0.wp.com/pixarpost.com/wp-content/uploads/2020/10/6bae7-cars-3-official-poster.jpg?fit=744%2C1102&ssl=1" },
-    { titulo: "Coco", categoria: "pixar", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/4jfKMdT6vdkpcB2EyBj2XkO2tTf.jpg" },
+    { titulo: "Coco", categoria: "pixar", fichaTecnicaId: "coco-2017", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/4jfKMdT6vdkpcB2EyBj2XkO2tTf.jpg" },
     { titulo: "Los Increíbles 2", categoria: "pixar", subtipo: "2010", tipo: "Película", poster: "https://i0.wp.com/teaser-trailer.com/wp-content/uploads/2017/03/The-Incredibles-2-Teaser-Poster.jpg?resize=425%2C600&ssl=1" },
     { titulo: "Toy Story 4", categoria: "pixar", subtipo: "2010", tipo: "Película", poster: "https://hips.hearstapps.com/hmg-prod/images/toy-story-4-poster-1543427531.jpg" },
     { titulo: "Unidos", categoria: "pixar", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81ZnP4DB06L.AC_UF894,1000_QL80.jpg" },
@@ -10552,7 +10563,7 @@ if (btnVolverFichaAvatarAang) {
     });
 }
 
-['mary-poppins-1964', 'novicia-rebelde-1965', 'rocky-horror-1975', 'grease-1978', 'el-rey-leon-1994', 'moulin-rouge-2001', 'chicago-2002', 'mamma-mia-2008', 'los-miserables-2012', 'la-la-land-2016', 'el-gran-showman-2017', 'wicked-2024', 'cantando-bajo-la-lluvia-1952', 'wicked-por-siempre-2025', 'batman-under-the-red-hood-2010', '101-dalmatas-1961', 'cenicienta-1950', 'frozen-2013'].forEach(id => {
+['mary-poppins-1964', 'novicia-rebelde-1965', 'rocky-horror-1975', 'grease-1978', 'el-rey-leon-1994', 'moulin-rouge-2001', 'chicago-2002', 'mamma-mia-2008', 'los-miserables-2012', 'la-la-land-2016', 'el-gran-showman-2017', 'wicked-2024', 'cantando-bajo-la-lluvia-1952', 'wicked-por-siempre-2025', 'batman-under-the-red-hood-2010', '101-dalmatas-1961', 'cenicienta-1950', 'frozen-2013', 'el-mago-de-oz-1939', 'pinocho-1940', 'hairspray-2007', 'sweeney-todd-2007', 'into-the-woods-2014', 'nace-una-estrella-2018', 'bohemian-rhapsody-2018', 'in-the-heights-2021', 'coco-2017'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -14874,6 +14885,15 @@ const FICHAS_TECNICAS_TITULOS = {
     "101-dalmatas-1961": "101 Dálmatas",
     "cenicienta-1950": "Cenicienta",
     "frozen-2013": "Frozen: Una Aventura Congelada",
+    "el-mago-de-oz-1939": "El Mago de Oz",
+    "pinocho-1940": "Pinocho",
+    "hairspray-2007": "Hairspray",
+    "sweeney-todd-2007": "Sweeney Todd",
+    "into-the-woods-2014": "Into the Woods",
+    "nace-una-estrella-2018": "Nace una estrella",
+    "bohemian-rhapsody-2018": "Bohemian Rhapsody",
+    "in-the-heights-2021": "In the Heights",
+    "coco-2017": "Coco",
     "wicked-por-siempre-2025": "Wicked: Por Siempre",
     "avatar-lla-t1": "Capítulo Uno: Libro de Agua",
     "avatar-lla-t2": "Capítulo Dos: Libro de Tierra",
@@ -16547,6 +16567,101 @@ const REPARTO_PELICULAS = {
             { actor: "Idina Menzel", personaje: "Elsa (voz)" },
             { actor: "Jonathan Groff", personaje: "Kristoff (voz)" },
             { actor: "Josh Gad", personaje: "Olaf (voz)" }
+        ]
+    },
+    "el-mago-de-oz-1939": {
+        director: "Victor Fleming",
+        elenco: [
+            { actor: "Judy Garland", personaje: "Dorothy Gale" },
+            { actor: "Ray Bolger", personaje: "Espantapájaros" },
+            { actor: "Jack Haley", personaje: "Hombre de Hojalata" },
+            { actor: "Bert Lahr", personaje: "León Cobarde" },
+            { actor: "Frank Morgan", personaje: "Profesor Marvel / El Mago de Oz" },
+            { actor: "Margaret Hamilton", personaje: "Malvada Bruja del Oeste" },
+            { actor: "Billie Burke", personaje: "Glinda, la Bruja Buena del Norte" }
+        ]
+    },
+    "pinocho-1940": {
+        director: "Ben Sharpsteen y Hamilton Luske",
+        elenco: [
+            { actor: "Dickie Jones", personaje: "Pinocho (voz)" },
+            { actor: "Cliff Edwards", personaje: "Pepito Grillo (voz)" },
+            { actor: "Evelyn Venable", personaje: "Hada Azul (voz)" },
+            { actor: "Walter Catlett", personaje: "Honesto Juan (voz)" },
+            { actor: "Frankie Darro", personaje: "Lampwick (voz)" }
+        ]
+    },
+    "hairspray-2007": {
+        director: "Adam Shankman",
+        elenco: [
+            { actor: "Nikki Blonsky", personaje: "Tracy Turnblad" },
+            { actor: "John Travolta", personaje: "Edna Turnblad" },
+            { actor: "Amanda Bynes", personaje: "Penny Pingleton" },
+            { actor: "Christopher Walken", personaje: "Wilbur Turnblad" },
+            { actor: "Zac Efron", personaje: "Link Larkin" }
+        ]
+    },
+    "sweeney-todd-2007": {
+        director: "Tim Burton",
+        elenco: [
+            { actor: "Johnny Depp", personaje: "Sweeney Todd" },
+            { actor: "Helena Bonham Carter", personaje: "Mrs. Lovett" },
+            { actor: "Alan Rickman", personaje: "Juez Turpin" },
+            { actor: "Timothy Spall", personaje: "Beadle Bamford" },
+            { actor: "Sacha Baron Cohen", personaje: "Adolfo Pirelli" }
+        ]
+    },
+    "into-the-woods-2014": {
+        director: "Rob Marshall",
+        elenco: [
+            { actor: "Meryl Streep", personaje: "La Bruja" },
+            { actor: "Emily Blunt", personaje: "La Esposa del Panadero" },
+            { actor: "James Corden", personaje: "El Panadero" },
+            { actor: "Anna Kendrick", personaje: "Cenicienta" },
+            { actor: "Chris Pine", personaje: "Príncipe de Cenicienta" },
+            { actor: "Lilla Crawford", personaje: "Caperucita Roja" },
+            { actor: "Daniel Huttlestone", personaje: "Jack" },
+            { actor: "MacKenzie Mauzy", personaje: "Rapunzel" }
+        ]
+    },
+    "nace-una-estrella-2018": {
+        director: "Bradley Cooper",
+        elenco: [
+            { actor: "Bradley Cooper", personaje: "Jackson Maine" },
+            { actor: "Lady Gaga", personaje: "Ally" },
+            { actor: "Sam Elliott", personaje: "Bobby" },
+            { actor: "Andrew Dice Clay", personaje: "Lorenzo" },
+            { actor: "Rafi Gavron", personaje: "Rez Gavron" }
+        ]
+    },
+    "bohemian-rhapsody-2018": {
+        director: "Bryan Singer",
+        elenco: [
+            { actor: "Rami Malek", personaje: "Freddie Mercury" },
+            { actor: "Lucy Boynton", personaje: "Mary Austin" },
+            { actor: "Gwilym Lee", personaje: "Brian May" },
+            { actor: "Ben Hardy", personaje: "Roger Taylor" },
+            { actor: "Joseph Mazzello", personaje: "John Deacon" }
+        ]
+    },
+    "in-the-heights-2021": {
+        director: "Jon M. Chu",
+        elenco: [
+            { actor: "Anthony Ramos", personaje: "Usnavi" },
+            { actor: "Melissa Barrera", personaje: "Vanessa" },
+            { actor: "Leslie Grace", personaje: "Nina Rosario" },
+            { actor: "Corey Hawkins", personaje: "Benny" },
+            { actor: "Olga Merediz", personaje: "Abuela Claudia" }
+        ]
+    },
+    "coco-2017": {
+        director: "Lee Unkrich",
+        elenco: [
+            { actor: "Anthony Gonzalez", personaje: "Miguel (voz)" },
+            { actor: "Gael García Bernal", personaje: "Héctor (voz)" },
+            { actor: "Benjamin Bratt", personaje: "Ernesto de la Cruz (voz)" },
+            { actor: "Alanna Ubach", personaje: "Mamá Imelda (voz)" },
+            { actor: "Jaime Camil", personaje: "Papá (voz)" }
         ]
     },
     "the-new-mutants": {
