@@ -9,11 +9,11 @@ const listaMedia = [
     { titulo: "El Rey León", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "el-rey-leon-1994", poster: "https://i.pinimg.com/736x/f6/77/40/f6774073f35f5a2749fba406a4e8d99d.jpg" },
     { titulo: "Moulin Rouge!", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "moulin-rouge-2001", poster: "https://image.tmdb.org/t/p/original/ugPzOWtGVHLeHkiJLlN19hLM9yK.jpg" },
     { titulo: "Chicago", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "chicago-2002", poster: "https://image.tmdb.org/t/p/original/g2RtGYe0mkbQf7s8grxF6eX5obR.jpg" },
-    { titulo: "Mamma Mia!", categoria: "peliculas-musicales", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
-    { titulo: "Los miserables", categoria: "peliculas-musicales", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
-    { titulo: "La La Land", categoria: "peliculas-musicales", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
-    { titulo: "El gran showman", categoria: "peliculas-musicales", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
-    { titulo: "Wicked", categoria: "peliculas-musicales", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "Mamma Mia!", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "mamma-mia-2008", poster: "https://image.tmdb.org/t/p/original/n6pi11Cn7ktABXVKPXvv5Feo6yX.jpg" },
+    { titulo: "Los miserables", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "los-miserables-2012", poster: "https://image.tmdb.org/t/p/original/8lgrziT1rmQLQN3CKIVbwofK3y9.jpg" },
+    { titulo: "La La Land", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "la-la-land-2016", poster: "https://image.tmdb.org/t/p/original/3mbeAvLnFo9N74vlexb4DuUcuKH.jpg" },
+    { titulo: "El gran showman", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "el-gran-showman-2017", poster: "https://image.tmdb.org/t/p/original/kXHTyYMrJwuFGEXg5RXtJOboIpD.jpg" },
+    { titulo: "Wicked", categoria: "peliculas-musicales", tipo: "Película", fichaTecnicaId: "wicked-2024", poster: "https://image.tmdb.org/t/p/original/1ZSVA2pNpc89C07RDgsR6p0GMs7.jpg" },
     { titulo: "Wicked: Por Siempre", categoria: "peliculas-musicales", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
 
     // --- HALLOWEEN (terror: películas, videojuegos y cómics) ---
@@ -10549,7 +10549,7 @@ if (btnVolverFichaAvatarAang) {
     });
 }
 
-['mary-poppins-1964', 'novicia-rebelde-1965', 'rocky-horror-1975', 'grease-1978', 'el-rey-leon-1994', 'moulin-rouge-2001', 'chicago-2002'].forEach(id => {
+['mary-poppins-1964', 'novicia-rebelde-1965', 'rocky-horror-1975', 'grease-1978', 'el-rey-leon-1994', 'moulin-rouge-2001', 'chicago-2002', 'mamma-mia-2008', 'los-miserables-2012', 'la-la-land-2016', 'el-gran-showman-2017', 'wicked-2024'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -14833,6 +14833,11 @@ const FICHAS_TECNICAS_TITULOS = {
     "el-rey-leon-1994": "El Rey León",
     "moulin-rouge-2001": "Moulin Rouge!",
     "chicago-2002": "Chicago",
+    "mamma-mia-2008": "Mamma Mia!",
+    "los-miserables-2012": "Los miserables",
+    "la-la-land-2016": "La La Land",
+    "el-gran-showman-2017": "El gran showman",
+    "wicked-2024": "Wicked",
     "avatar-lla-t1": "Capítulo Uno: Libro de Agua",
     "avatar-lla-t2": "Capítulo Dos: Libro de Tierra",
     "avatar-lla-t3": "Capítulo Tres: Libro de Fuego",
@@ -14846,6 +14851,62 @@ const FICHAS_TECNICAS_TITULOS = {
     "creed-1": "Creed",
     "creed-2": "Creed II",
     "creed-3": "Creed III",
+    "mamma-mia-2008": {
+        director: "Phyllida Lloyd",
+        elenco: [
+            { actor: "Meryl Streep", personaje: "Donna Sheridan" },
+            { actor: "Amanda Seyfried", personaje: "Sophie Sheridan" },
+            { actor: "Pierce Brosnan", personaje: "Sam Carmichael" },
+            { actor: "Colin Firth", personaje: "Harry Bright" },
+            { actor: "Stellan Skarsgård", personaje: "Bill Anderson" },
+            { actor: "Julie Walters", personaje: "Rosie Mulligan" },
+            { actor: "Christine Baranski", personaje: "Tanya Chesham-Leigh" },
+            { actor: "Dominic Cooper", personaje: "Sky" }
+        ]
+    },
+    "los-miserables-2012": {
+        director: "Tom Hooper",
+        elenco: [
+            { actor: "Hugh Jackman", personaje: "Jean Valjean" },
+            { actor: "Russell Crowe", personaje: "Inspector Javert" },
+            { actor: "Anne Hathaway", personaje: "Fantine" },
+            { actor: "Amanda Seyfried", personaje: "Cosette" },
+            { actor: "Eddie Redmayne", personaje: "Marius Pontmercy" },
+            { actor: "Aaron Tveit", personaje: "Enjolras" },
+            { actor: "Sacha Baron Cohen", personaje: "Thénardier" },
+            { actor: "Helena Bonham Carter", personaje: "Madame Thénardier" }
+        ]
+    },
+    "la-la-land-2016": {
+        director: "Damien Chazelle",
+        elenco: [
+            { actor: "Ryan Gosling", personaje: "Sebastian" },
+            { actor: "Emma Stone", personaje: "Mia" },
+            { actor: "John Legend", personaje: "Keith" },
+            { actor: "Rosemarie DeWitt", personaje: "Laura" },
+            { actor: "J.K. Simmons", personaje: "Bill" }
+        ]
+    },
+    "el-gran-showman-2017": {
+        director: "Michael Gracey",
+        elenco: [
+            { actor: "Hugh Jackman", personaje: "P.T. Barnum" },
+            { actor: "Zac Efron", personaje: "Phillip Carlyle" },
+            { actor: "Michelle Williams", personaje: "Charity Barnum" },
+            { actor: "Rebecca Ferguson", personaje: "Jenny Lind" },
+            { actor: "Zendaya", personaje: "Anne Wheeler" }
+        ]
+    },
+    "wicked-2024": {
+        director: "Jon M. Chu",
+        elenco: [
+            { actor: "Cynthia Erivo", personaje: "Elphaba" },
+            { actor: "Ariana Grande", personaje: "Glinda" },
+            { actor: "Jonathan Bailey", personaje: "Fiyero" },
+            { actor: "Ethan Slater", personaje: "Boq" },
+            { actor: "Bowen Yang", personaje: "Pfannee" }
+        ]
+    },
     "the-new-mutants": "The New Mutants",
     "assassins-creed-rogue": "Assassin's Creed: Rogue",
     "incendies": "Incendies",
