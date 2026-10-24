@@ -197,6 +197,10 @@ const listaMedia = [
     { titulo: "Fantastic Four: Silver Surfer", categoria: "fox-ff", subtipo: "2000", tipo: "Película", poster: "https://imaginus.ca/cdn/shop/products/A1432F_4e5006fc-9bff-4cc9-8ded-ec5b3c1ff9e4_1604x.jpg?v=1654713321" },
     { titulo: "Cuatro Fantásticos (2015)", categoria: "fox-ff", subtipo: "2010", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/fantastic4_2015_stylek_teaser_original_filM-art_5000x.jpg?v=1627545303" },
 
+    // --- FOX: DAREDEVIL Y ELEKTRA (Earth-701306) ---
+    { titulo: "Daredevil (2003)", categoria: "fox-daredevil", tipo: "Película", fichaTecnicaId: "daredevil-2003", poster: "https://image.tmdb.org/t/p/original/hCZbLrjHnrvWoZXqvD9JpTZYtWd.jpg" },
+    { titulo: "Elektra", categoria: "fox-daredevil", tipo: "Película", fichaTecnicaId: "elektra-2005", poster: "https://image.tmdb.org/t/p/original/Z4dAOxjAHTUZO6DJ2WVAsxzwe3.jpg" },
+
     // --- SONY ---
     { titulo: "Spider-Man (2002)", categoria: "sony-tobey", tipo: "Película", poster: "https://i.pinimg.com/736x/48/4b/8f/484b8f1cf95ff2ee83b5e10e80ec8875.jpg" },
     { titulo: "Spider-Man 2", categoria: "sony-tobey", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61Z0dKYVx8L.jpg" },
@@ -7874,6 +7878,7 @@ function renderizarContenido() {
         "mcu-multiverso": "seccion-mcu-multiverso",
         "fox-xmen": "seccion-fox-xmen",
         "fox-ff": "seccion-fox-ff",
+        "fox-daredevil": "seccion-daredevil-elektra",
         "universal": "seccion-universal",
         "sony-tobey": "seccion-sony-tobey",
         "sony-andrew": "seccion-sony-andrew",
@@ -9655,6 +9660,7 @@ const botonesNavegacion = [
     { btn: 'btn-arbol-multiverso', sec: 'seccion-arbol-multiverso' },
     { btn: 'btn-fox-xmen', sec: 'seccion-fox-xmen' },
     { btn: 'btn-fox-ff', sec: 'seccion-fox-ff' },
+    { btn: 'btn-fox-daredevil', sec: 'seccion-daredevil-elektra' },
     { btn: 'btn-universal', sec: 'seccion-universal' },
     { btn: 'btn-sony-tobey', sec: 'seccion-sony-tobey' },
     { btn: 'btn-sony-andrew', sec: 'seccion-sony-andrew' },
@@ -9701,6 +9707,7 @@ const ARBOL_NODOS = [
     { id: 'universal', nombre: 'Universal',             simbolo: 'U',  color: '#2e9e4f', btn: 'btn-universal',       desde: 'C' },
     { id: 'xmen',   nombre: 'X-Men (Fox)',              simbolo: 'X',  color: '#f2b705', btn: 'btn-fox-xmen',        desde: 'L' },
     { id: 'ff',     nombre: 'Cuatro Fantásticos (Fox)', simbolo: '4',  color: '#1f78d1', btn: 'btn-fox-ff',          desde: 'L' },
+    { id: 'dd',     nombre: 'Daredevil y Elektra',      simbolo: 'DD', color: '#c4161c', btn: 'btn-fox-daredevil',   desde: 'L', logo: 'https://images.seeklogo.com/logo-png/22/2/daredevil-logo-png_seeklogo-226219.png' },
     { id: 'ssu',    nombre: 'Universo Spider-Man (SSU)', simbolo: '🕸️', color: '#6a3fb5', btn: 'btn-sony-ssu',       desde: 'R' },
     { id: 'andrew', nombre: 'Spider-Man (Andrew)',      simbolo: '🕷️', color: '#1c4e9e', btn: 'btn-sony-andrew',    desde: 'R' },
     { id: 'tobey',  nombre: 'Spider-Man (Tobey)',       simbolo: '🕷️', color: '#c0281f', btn: 'btn-sony-tobey',     desde: 'R' }
@@ -9711,13 +9718,13 @@ const ARBOL_LAYOUTS = {
     escritorio: {
         vb: [1000, 660], fuente: 15,
         puntos: { raiz: [500, 600], A: [500, 450], L: [280, 345], C: [500, 310], R: [725, 345] },
-        pos: { mcu: [500, 105], universal: [372, 215], xmen: [110, 195], ff: [262, 112], ssu: [622, 212], andrew: [748, 112], tobey: [888, 205] },
+        pos: { mcu: [500, 105], universal: [372, 215], xmen: [58, 220], ff: [290, 100], dd: [172, 200], ssu: [622, 212], andrew: [748, 112], tobey: [888, 205] },
         ramitas: [['L', 60, 330], ['L', 150, 440], ['A', 330, 500], ['A', 660, 505], ['C', 565, 215], ['R', 860, 330], ['R', 820, 440], ['C', 440, 120], ['R', 690, 120]]
     },
     movil: {
         vb: [600, 960], fuente: 21,
         puntos: { raiz: [300, 880], A: [300, 740], L: [150, 650], C: [300, 620], R: [450, 650] },
-        pos: { mcu: [300, 95], ff: [100, 235], andrew: [500, 235], universal: [180, 385], ssu: [420, 385], xmen: [75, 520], tobey: [525, 520] },
+        pos: { mcu: [300, 95], dd: [218, 520], ff: [100, 235], andrew: [500, 235], universal: [180, 385], ssu: [420, 385], xmen: [68, 520], tobey: [525, 520] },
         ramitas: [['L', 25, 600], ['L', 90, 760], ['A', 190, 830], ['A', 410, 830], ['C', 300, 330], ['R', 575, 640], ['R', 520, 770]]
     }
 };
@@ -9806,6 +9813,13 @@ function construirArbolMultiverso() {
             img.setAttribute('href', n.logo);
             img.setAttribute('x', -26); img.setAttribute('y', -26);
             img.setAttribute('width', 52); img.setAttribute('height', 52);
+            // Si el logo no carga, se muestra el símbolo del nodo
+            img.addEventListener('error', () => {
+                const t = document.createElementNS(NS, 'text');
+                t.setAttribute('class', 'arbol-simbolo'); t.setAttribute('y', 2);
+                t.textContent = n.simbolo;
+                img.replaceWith(t);
+            });
             interior.appendChild(img);
         } else {
             const t = document.createElementNS(NS, 'text');
@@ -10571,6 +10585,18 @@ if (btnVolverFichaAvatarAang) {
             const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
             const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
             cambiarSeccion(seccionOrigen || document.getElementById('seccion-peliculas-musicales'));
+        });
+    }
+});
+
+['daredevil-2003', 'elektra-2005'].forEach(id => {
+    const btn = document.getElementById('btn-volver-ficha-' + id);
+    if (btn) {
+        btn.addEventListener('click', () => {
+            const seccionFicha = document.getElementById('seccion-ficha-' + id);
+            const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+            const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+            cambiarSeccion(seccionOrigen || document.getElementById('seccion-daredevil-elektra'));
         });
     }
 });
@@ -14894,6 +14920,8 @@ const FICHAS_TECNICAS_TITULOS = {
     "bohemian-rhapsody-2018": "Bohemian Rhapsody",
     "in-the-heights-2021": "In the Heights",
     "coco-2017": "Coco",
+    "daredevil-2003": "Daredevil (2003)",
+    "elektra-2005": "Elektra",
     "wicked-por-siempre-2025": "Wicked: Por Siempre",
     "avatar-lla-t1": "Capítulo Uno: Libro de Agua",
     "avatar-lla-t2": "Capítulo Dos: Libro de Tierra",
@@ -16662,6 +16690,25 @@ const REPARTO_PELICULAS = {
             { actor: "Benjamin Bratt", personaje: "Ernesto de la Cruz (voz)" },
             { actor: "Alanna Ubach", personaje: "Mamá Imelda (voz)" },
             { actor: "Jaime Camil", personaje: "Papá (voz)" }
+        ]
+    },
+    "daredevil-2003": {
+        director: "Mark Steven Johnson",
+        elenco: [
+            { actor: "Ben Affleck", personaje: "Matt Murdock / Daredevil" },
+            { actor: "Jennifer Garner", personaje: "Elektra Natchios" },
+            { actor: "Colin Farrell", personaje: "Bullseye" },
+            { actor: "Michael Clarke Duncan", personaje: "Wilson Fisk / Kingpin" },
+            { actor: "Jon Favreau", personaje: "Franklin \"Foggy\" Nelson" }
+        ]
+    },
+    "elektra-2005": {
+        director: "Rob Bowman",
+        elenco: [
+            { actor: "Jennifer Garner", personaje: "Elektra Natchios" },
+            { actor: "Terence Stamp", personaje: "Stick" },
+            { actor: "Goran Visnjic", personaje: "Mark Miller" },
+            { actor: "Cary-Hiroyuki Tagawa", personaje: "Roshi" }
         ]
     },
     "the-new-mutants": {
@@ -32992,7 +33039,7 @@ const MIRO_SAGAS = {
     'mcu-infinito': 'MCU: Saga del Infinito', 'mcu-multiverso': 'MCU: Saga del Multiverso', 'doomsday': 'MCU: Doomsday',
     'sw-liveaction': 'Star Wars: Live Action', 'sw-episodios': 'Star Wars: Episodios', 'sw-animacion': 'Star Wars: Animación',
     'dceu-principal': 'DCEU', 'dceu-snyder': 'Snyderverse', 'dcu': 'DCU', 'dc-multiverso': 'DC Multiverso', 'the-batman': 'The Batman',
-    'fox-xmen': 'X-Men (Fox)', 'fox-ff': 'Los 4 Fantásticos (Fox)', 'sony-ssu': 'Universo Spider-Man de Sony',
+    'fox-xmen': 'X-Men (Fox)', 'fox-ff': 'Los 4 Fantásticos (Fox)', 'fox-daredevil': 'Daredevil y Elektra (Fox)', 'sony-ssu': 'Universo Spider-Man de Sony',
     'sony-tobey': 'Spider-Man (Tobey)', 'sony-andrew': 'The Amazing Spider-Man', 'matrix-saga': 'The Matrix',
     'saga-halloween': 'Saga Halloween', 'it': 'It', 'pokemon-canon': 'Pokémon (canon)', 'marvel-animacion': 'Marvel Animación',
     'joker': 'Joker', 'game-of-thrones': 'Game of Thrones'
