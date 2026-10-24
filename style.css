@@ -74,6 +74,61 @@ html.halloween-activo {
     50% { transform: translateX(-50%) rotate(8deg); }
 }
 
+/* ===== TEMA MUSICALES (1 al 30 de noviembre) =====
+   Igual que Halloween: se activa solo con la clase .musicales-activo en <html>
+   (ver activarTemaMusicalesSiCorresponde en script.js). Cambia --accent-color
+   a fucsia, suma un 🎵 al título y deja caer notas musicales por la pantalla.
+*/
+html.musicales-activo {
+    --accent-color: #d946ef;
+}
+
+.musicales-activo #btn-comics {
+    background-color: #d946ef !important;
+}
+
+.musicales-activo .header-top h1::after {
+    content: " 🎵";
+}
+
+.musicales-notas {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.musicales-activo .musicales-notas {
+    display: block;
+}
+
+.musicales-notas span {
+    position: absolute;
+    top: -40px;
+    left: var(--x);
+    font-size: 26px;
+    color: #d946ef;
+    opacity: 0;
+    animation: musicales-caida var(--t) linear var(--d) infinite;
+}
+
+@keyframes musicales-caida {
+    0%   { transform: translateY(0) rotate(-12deg); opacity: 0; }
+    10%  { opacity: .8; }
+    50%  { transform: translateY(50vh) translateX(18px) rotate(12deg); }
+    90%  { opacity: .8; }
+    100% { transform: translateY(105vh) translateX(-10px) rotate(-12deg); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .musicales-notas span { animation: none; opacity: .35; top: 90px; }
+}
+
 * {
     box-sizing: border-box;
     margin: 0;

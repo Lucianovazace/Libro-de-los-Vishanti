@@ -1,4 +1,21 @@
 const listaMedia = [
+    // --- MUSICALES (tema de noviembre; ordenadas por fecha de estreno) ---
+    // Posters provisorios (placeholder) hasta que se carguen los reales.
+    { titulo: "Cantando bajo la lluvia", categoria: "peliculas-musicales", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "Mary Poppins", categoria: "peliculas-musicales", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "La novicia rebelde", categoria: "peliculas-musicales", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "The Rocky Horror Picture Show", categoria: "peliculas-musicales", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "Grease", categoria: "peliculas-musicales", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "El Rey León", categoria: "peliculas-musicales", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "Moulin Rouge!", categoria: "peliculas-musicales", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "Chicago", categoria: "peliculas-musicales", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "Mamma Mia!", categoria: "peliculas-musicales", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "Los miserables", categoria: "peliculas-musicales", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "La La Land", categoria: "peliculas-musicales", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "El gran showman", categoria: "peliculas-musicales", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "Wicked", categoria: "peliculas-musicales", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+    { titulo: "Wicked: Por Siempre", categoria: "peliculas-musicales", tipo: "Película", poster: "https://via.placeholder.com/300x450/1e2129/f1c40f?text=Poster+pendiente" },
+
     // --- HALLOWEEN (terror: películas, videojuegos y cómics) ---
     // Posters provisorios (placeholder) hasta que se carguen los reales.
     { titulo: "Nosferatu (1922)", categoria: "peliculas-halloween", tipo: "Película", fichaTecnicaId: "nosferatu-1922", poster: "https://image.tmdb.org/t/p/original/zv7J85D8CC9qYagAEhPM63CIG6j.jpg" },
@@ -7928,6 +7945,7 @@ function renderizarContenido() {
         "marvel-animacion": "seccion-marvel-animacion",
         "sitcoms": "seccion-sitcoms",
         "pokemon-canon": "seccion-pokemon-canon",
+        "peliculas-musicales": "seccion-peliculas-musicales",
         "peliculas-halloween": "seccion-peliculas-halloween",
         "videojuegos-halloween": "seccion-videojuegos-halloween",
         "comics-halloween": "seccion-comics-halloween",
@@ -13139,6 +13157,43 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 activarTemaHalloweenSiCorresponde();
 
+// ==========================================
+// TEMA MUSICALES — se activa solo del 1 al 30 de noviembre (cualquier
+// año), igual que Halloween en octubre: usa la fecha del dispositivo.
+// ==========================================
+function activarTemaMusicalesSiCorresponde() {
+    const esNoviembre = new Date().getMonth() === 10; // 0-indexado: 10 = noviembre
+    document.documentElement.classList.toggle('musicales-activo', esNoviembre);
+    document.querySelectorAll('.musicales-solo').forEach(bloque => {
+        bloque.classList.toggle('oculto', !esNoviembre);
+    });
+}
+activarTemaMusicalesSiCorresponde();
+
+const btnPeliculasMusicales = document.getElementById('btn-peliculas-musicales');
+if (btnPeliculasMusicales) {
+    btnPeliculasMusicales.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-peliculas-musicales'));
+    });
+}
+const btnVolverPeliculasMusicales = document.getElementById('btn-volver-peliculas-musicales');
+if (btnVolverPeliculasMusicales) {
+    btnVolverPeliculasMusicales.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-doomsday'));
+    });
+}
+['btn-carrusel-musicales-siguiente', 'btn-carrusel-musicales-home-siguiente'].forEach(idBtn => {
+    const btn = document.getElementById(idBtn);
+    if (!btn) return;
+    btn.addEventListener('click', () => {
+        const carrusel = document.getElementById(idBtn === 'btn-carrusel-musicales-siguiente' ? 'grilla-peliculas-musicales' : 'grilla-musicales-home');
+        if (!carrusel) return;
+        const anchoTarjeta = 176;
+        const alFinal = carrusel.scrollLeft + carrusel.clientWidth >= carrusel.scrollWidth - 10;
+        carrusel.scrollTo({ left: alFinal ? 0 : carrusel.scrollLeft + anchoTarjeta * 3, behavior: 'smooth' });
+    });
+});
+
 const btnPeliculasHalloween = document.getElementById('btn-peliculas-halloween');
 if (btnPeliculasHalloween) {
     btnPeliculasHalloween.addEventListener('click', () => {
@@ -13907,6 +13962,12 @@ function renderizarBloquesFamiliarYTerrorHome() {
     const peliculasTerror = listaMedia.filter(m => m.categoria === 'peliculas-halloween');
     const peliculasFamiliar = listaMedia.filter(m => m.categoria === 'familiar-halloween');
 
+    const peliculasMusicales = listaMedia.filter(m => m.categoria === 'peliculas-musicales');
+    const grillaMusicalesHome = document.getElementById('grilla-musicales-home');
+    if (grillaMusicalesHome && grillaMusicalesHome.children.length === 0) {
+        peliculasMusicales.forEach(item => grillaMusicalesHome.appendChild(crearTarjetaManual(item)));
+    }
+
     const grillaFamiliarHalloween = document.getElementById('grilla-familiar-halloween');
     if (grillaFamiliarHalloween && grillaFamiliarHalloween.children.length === 0) {
         peliculasFamiliar.forEach(item => grillaFamiliarHalloween.appendChild(crearTarjetaManual(item)));
@@ -13926,6 +13987,7 @@ function renderizarBloquesFamiliarYTerrorHome() {
     // de "Marcar Visto" y aplicarles el estado ya guardado.
     if (typeof sincronizarVistos === 'function') sincronizarVistos();
     if (typeof aplicarVistosGuardados === 'function') {
+        aplicarVistosGuardados(grillaMusicalesHome);
         aplicarVistosGuardados(grillaFamiliarHalloween);
         aplicarVistosGuardados(grillaTerrorHome);
         aplicarVistosGuardados(grillaFamiliarHome);

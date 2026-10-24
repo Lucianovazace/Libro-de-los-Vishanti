@@ -15,6 +15,7 @@
         <div class="hilo"></div>
         <div class="cuerpo-arana">🕷️</div>
     </div>
+    <div class="musicales-notas" aria-hidden="true"><span style="--x:6%;--d:0s;--t:11s">♪</span><span style="--x:17%;--d:3s;--t:13s">♫</span><span style="--x:28%;--d:6s;--t:10s">♪</span><span style="--x:39%;--d:1.5s;--t:12s">♫</span><span style="--x:50%;--d:4.5s;--t:14s">♪</span><span style="--x:61%;--d:7.5s;--t:11s">♫</span><span style="--x:72%;--d:2.5s;--t:13s">♪</span><span style="--x:83%;--d:5.5s;--t:10s">♫</span><span style="--x:93%;--d:8.5s;--t:12s">♪</span></div>
     <div class="header-top">
         <h1 id="titulo-principal">EL MULTIVERSO</h1>
         <div class="buscador-container">
@@ -127,6 +128,7 @@
                 <button class="btn-categoria" id="btn-peliculas-halloween">🎃 Películas</button>
                 <button class="btn-categoria" id="btn-videojuegos-halloween">🎃 Videojuegos (Halloween)</button>
                 <button class="btn-categoria" id="btn-comics-halloween">🎃 Comics (Halloween)</button>
+                <button class="btn-categoria" id="btn-peliculas-musicales">🎵 Películas Musicales</button>
             </div>
         </div>
     </nav>
@@ -5326,6 +5328,15 @@
         <h2 style="margin-top: 30px;">Familiar</h2>
         <div class="carrusel-horizontal-contenedor">
             <div class="carrusel-horizontal" id="grilla-familiar-halloween"></div>
+        </div>
+    </section>
+
+    <section id="seccion-peliculas-musicales" class="oculto">
+        <button class="btn-volver" id="btn-volver-peliculas-musicales">← Volver</button>
+        <h2>🎵 Películas Musicales</h2>
+        <div class="carrusel-horizontal-contenedor">
+            <div class="carrusel-horizontal grilla-biblioteca" id="grilla-peliculas-musicales"></div>
+            <button class="btn-carrusel-flecha" id="btn-carrusel-musicales-siguiente">▶</button>
         </div>
     </section>
 
@@ -16031,6 +16042,13 @@
 
     <!-- SECCIÓN: ROAD TO DOOMSDAY -->
     <section id="seccion-doomsday">
+        <div id="bloque-musicales-home" class="musicales-solo oculto">
+            <h2>🎵 Películas Musicales</h2>
+            <div class="carrusel-horizontal-contenedor">
+                <div class="carrusel-horizontal" id="grilla-musicales-home"></div>
+                <button class="btn-carrusel-flecha" id="btn-carrusel-musicales-home-siguiente">▶</button>
+            </div>
+        </div>
         <div id="bloque-terror-home" class="halloween-solo oculto">
             <h2>🎃 Películas de Terror</h2>
             <div class="carrusel-horizontal-contenedor">
