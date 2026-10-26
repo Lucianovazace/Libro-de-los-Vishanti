@@ -28,6 +28,9 @@ const listaMedia = [
     { titulo: "In the Heights", categoria: "peliculas-musicales", soloSeccion: true, anio: 2021, rt: 94, formato: "Live Action", tipo: "Película", fichaTecnicaId: "in-the-heights-2021", poster: "https://image.tmdb.org/t/p/original/m43rJiOwzxQWXbPSbZjVam0Vbhb.jpg" },
     { titulo: "Coco", categoria: "peliculas-musicales", soloSeccion: true, anio: 2017, rt: 97, formato: "Animación", tipo: "Película", fichaTecnicaId: "coco-2017", poster: "https://image.tmdb.org/t/p/original/4jfKMdT6vdkpcB2EyBj2XkO2tTf.jpg" },
     { titulo: "West Side Story", categoria: "peliculas-musicales", soloSeccion: true, anio: 2021, rt: 91, formato: "Live Action", tipo: "Película", fichaTecnicaId: "west-side-story-2021", poster: "https://m.media-amazon.com/images/M/MV5BOWZkYzY2OGUtOGU4Ni00NmI0LTg2ZjAtZDA5OWE0YTNiZWRiXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Footloose", categoria: "peliculas-musicales", soloSeccion: true, anio: 1984, rt: 55, formato: "Live Action", tipo: "Película", fichaTecnicaId: "footloose-1984", poster: "https://image.tmdb.org/t/p/w500/9JEDjBCXCx3eKTSkXwispf0UN3O.jpg" },
+    { titulo: "Dirty Dancing", categoria: "peliculas-musicales", soloSeccion: true, anio: 1987, rt: 73, formato: "Live Action", tipo: "Película", fichaTecnicaId: "dirty-dancing-1987", poster: "https://image.tmdb.org/t/p/original/xlUkztMDQcZmFIosqyY2lsIs6sE.jpg" },
+    { titulo: "Encantada", categoria: "peliculas-musicales", soloSeccion: true, anio: 2007, rt: 93, formato: "Live Action", tipo: "Película", fichaTecnicaId: "encantada-2007", poster: "https://image.tmdb.org/t/p/original/tqWBhMr4MUxtlQfUTN8VoSqUL9O.jpg" },
 
     // --- HALLOWEEN (terror: películas, videojuegos y cómics) ---
     // Posters provisorios (placeholder) hasta que se carguen los reales.
@@ -10577,7 +10580,7 @@ if (btnVolverFichaAvatarAang) {
     });
 }
 
-['mary-poppins-1964', 'novicia-rebelde-1965', 'rocky-horror-1975', 'grease-1978', 'el-rey-leon-1994', 'moulin-rouge-2001', 'chicago-2002', 'mamma-mia-2008', 'los-miserables-2012', 'la-la-land-2016', 'el-gran-showman-2017', 'wicked-2024', 'cantando-bajo-la-lluvia-1952', 'wicked-por-siempre-2025', 'batman-under-the-red-hood-2010', '101-dalmatas-1961', 'cenicienta-1950', 'frozen-2013', 'el-mago-de-oz-1939', 'pinocho-1940', 'hairspray-2007', 'sweeney-todd-2007', 'into-the-woods-2014', 'nace-una-estrella-2018', 'bohemian-rhapsody-2018', 'in-the-heights-2021', 'coco-2017'].forEach(id => {
+['mary-poppins-1964', 'novicia-rebelde-1965', 'rocky-horror-1975', 'grease-1978', 'el-rey-leon-1994', 'moulin-rouge-2001', 'chicago-2002', 'mamma-mia-2008', 'los-miserables-2012', 'la-la-land-2016', 'el-gran-showman-2017', 'wicked-2024', 'cantando-bajo-la-lluvia-1952', 'wicked-por-siempre-2025', 'batman-under-the-red-hood-2010', '101-dalmatas-1961', 'cenicienta-1950', 'frozen-2013', 'el-mago-de-oz-1939', 'pinocho-1940', 'hairspray-2007', 'sweeney-todd-2007', 'into-the-woods-2014', 'nace-una-estrella-2018', 'bohemian-rhapsody-2018', 'in-the-heights-2021', 'coco-2017', 'footloose-1984', 'dirty-dancing-1987', 'encantada-2007'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -14920,6 +14923,9 @@ const FICHAS_TECNICAS_TITULOS = {
     "bohemian-rhapsody-2018": "Bohemian Rhapsody",
     "in-the-heights-2021": "In the Heights",
     "coco-2017": "Coco",
+    "footloose-1984": "Footloose",
+    "dirty-dancing-1987": "Dirty Dancing",
+    "encantada-2007": "Encantada",
     "daredevil-2003": "Daredevil (2003)",
     "elektra-2005": "Elektra",
     "wicked-por-siempre-2025": "Wicked: Por Siempre",
@@ -16709,6 +16715,37 @@ const REPARTO_PELICULAS = {
             { actor: "Terence Stamp", personaje: "Stick" },
             { actor: "Goran Visnjic", personaje: "Mark Miller" },
             { actor: "Cary-Hiroyuki Tagawa", personaje: "Roshi" }
+        ]
+    },
+    "footloose-1984": {
+        director: "Herbert Ross",
+        elenco: [
+            { actor: "Kevin Bacon", personaje: "Ren McCormack" },
+            { actor: "Lori Singer", personaje: "Ariel Moore" },
+            { actor: "John Lithgow", personaje: "Reverendo Shaw Moore" },
+            { actor: "Dianne Wiest", personaje: "Vi Moore" },
+            { actor: "Chris Penn", personaje: "Willard Hewitt" }
+        ]
+    },
+    "dirty-dancing-1987": {
+        director: "Emile Ardolino",
+        elenco: [
+            { actor: "Jennifer Grey", personaje: "Frances \"Baby\" Houseman" },
+            { actor: "Patrick Swayze", personaje: "Johnny Castle" },
+            { actor: "Jerry Orbach", personaje: "Jake Houseman" },
+            { actor: "Cynthia Rhodes", personaje: "Penny Johnson" },
+            { actor: "Jack Weston", personaje: "Max Kellerman" }
+        ]
+    },
+    "encantada-2007": {
+        director: "Kevin Lima",
+        elenco: [
+            { actor: "Amy Adams", personaje: "Giselle" },
+            { actor: "Patrick Dempsey", personaje: "Robert Philip" },
+            { actor: "James Marsden", personaje: "Príncipe Edward" },
+            { actor: "Susan Sarandon", personaje: "Reina Narissa" },
+            { actor: "Timothy Spall", personaje: "Nathaniel" },
+            { actor: "Idina Menzel", personaje: "Nancy Tremaine" }
         ]
     },
     "the-new-mutants": {
