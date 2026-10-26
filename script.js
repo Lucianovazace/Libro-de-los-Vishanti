@@ -31,6 +31,19 @@ const listaMedia = [
     { titulo: "Footloose", categoria: "peliculas-musicales", soloSeccion: true, anio: 1984, rt: 55, formato: "Live Action", tipo: "Película", fichaTecnicaId: "footloose-1984", poster: "https://image.tmdb.org/t/p/w500/9JEDjBCXCx3eKTSkXwispf0UN3O.jpg" },
     { titulo: "Dirty Dancing", categoria: "peliculas-musicales", soloSeccion: true, anio: 1987, rt: 73, formato: "Live Action", tipo: "Película", fichaTecnicaId: "dirty-dancing-1987", poster: "https://image.tmdb.org/t/p/original/xlUkztMDQcZmFIosqyY2lsIs6sE.jpg" },
     { titulo: "Encantada", categoria: "peliculas-musicales", soloSeccion: true, anio: 2007, rt: 93, formato: "Live Action", tipo: "Película", fichaTecnicaId: "encantada-2007", poster: "https://image.tmdb.org/t/p/original/tqWBhMr4MUxtlQfUTN8VoSqUL9O.jpg" },
+    { titulo: "Hamilton", categoria: "peliculas-musicales", soloSeccion: true, anio: 2020, rt: 98, formato: "Live Action", tipo: "Película", fichaTecnicaId: "hamilton-2020", poster: "https://image.tmdb.org/t/p/original/zmxCLftLPw7NqjiA0Eu9c8ubP2v.jpg" },
+    { titulo: "Sing", categoria: "peliculas-musicales", soloSeccion: true, anio: 2016, rt: 71, formato: "Animación", tipo: "Película", fichaTecnicaId: "sing-2016", poster: "https://image.tmdb.org/t/p/original/vF9RsVASpy34l1CByVIhlMddikX.jpg" },
+    { titulo: "El Libro de la Selva", categoria: "peliculas-musicales", soloSeccion: true, anio: 1967, rt: 88, formato: "Animación", tipo: "Película", fichaTecnicaId: "el-libro-de-la-selva-1967", poster: "https://image.tmdb.org/t/p/w500/uBKffnwwHGIkQET18gVPsyeDdjC.jpg" },
+    { titulo: "Mary Poppins Returns", categoria: "peliculas-musicales", soloSeccion: true, anio: 2018, rt: 80, formato: "Live Action", tipo: "Película", fichaTecnicaId: "mary-poppins-returns-2018", poster: "https://image.tmdb.org/t/p/original/yApvnRK77cAjuaBiuUMQFLs106u.jpg" },
+    { titulo: "Wonka", categoria: "peliculas-musicales", soloSeccion: true, anio: 2023, rt: 82, formato: "Live Action", tipo: "Película", fichaTecnicaId: "wonka-2023", poster: "https://purodiseno.lat/wp-content/uploads/2023/10/WONKA-POSTER-02.jpg" },
+    { titulo: "Cats", categoria: "peliculas-musicales", soloSeccion: true, anio: 2019, rt: 19, formato: "Live Action", tipo: "Película", fichaTecnicaId: "cats-2019", poster: "https://image.tmdb.org/t/p/original/8RDypqhDAcYPy7BOPrnYOQ6aVw9.jpg" },
+    { titulo: "Elvis", categoria: "peliculas-musicales", soloSeccion: true, anio: 2022, rt: 77, formato: "Live Action", tipo: "Película", fichaTecnicaId: "elvis-2022", poster: "https://image.tmdb.org/t/p/original/4CYhJ9WNHIc1WRrQ5kYwBtmMvNB.jpg" },
+    { titulo: "Rocketman", categoria: "peliculas-musicales", soloSeccion: true, anio: 2019, rt: 89, formato: "Live Action", tipo: "Película", fichaTecnicaId: "rocketman-2019", poster: "https://image.tmdb.org/t/p/original/tTGA20DSHVTfWfN53CnAWKCIfYe.jpg" },
+    { titulo: "Pitch Perfect", categoria: "peliculas-musicales", soloSeccion: true, anio: 2012, rt: 81, formato: "Live Action", tipo: "Película", fichaTecnicaId: "pitch-perfect-2012", poster: "https://image.tmdb.org/t/p/w500/gsFoJk9g8W3zgaipRrrURk7LbiF.jpg" },
+    { titulo: "High School Musical", categoria: "peliculas-musicales", soloSeccion: true, anio: 2006, rt: 67, formato: "Live Action", tipo: "Película", fichaTecnicaId: "high-school-musical-2006", poster: "https://image.tmdb.org/t/p/original/wfhutIqlytNVppaWiiuRQ8ilILh.jpg" },
+    { titulo: "Evita", categoria: "peliculas-musicales", soloSeccion: true, anio: 1996, rt: 63, formato: "Live Action", tipo: "Película", fichaTecnicaId: "evita-1996", poster: "https://image.tmdb.org/t/p/original/2q1MzTPl4W1RBYSvKTdAOdg1pqm.jpg" },
+    { titulo: "Dreamgirls", categoria: "peliculas-musicales", soloSeccion: true, anio: 2006, rt: 79, formato: "Live Action", tipo: "Película", fichaTecnicaId: "dreamgirls-2006", poster: "https://image.tmdb.org/t/p/w500/sG5JyOj8Spe13QkNJMH8b5kzQUh.jpg" },
+    { titulo: "El Fantasma de la Ópera", categoria: "peliculas-musicales", soloSeccion: true, anio: 2004, rt: 32, formato: "Live Action", tipo: "Película", fichaTecnicaId: "fantasma-de-la-opera-2004", poster: "https://image.tmdb.org/t/p/original/p6qF2ja25qAtJIBvzwB0YFNmky9.jpg" },
 
     // --- HALLOWEEN (terror: películas, videojuegos y cómics) ---
     // Posters provisorios (placeholder) hasta que se carguen los reales.
@@ -671,7 +684,7 @@ const listaMedia = [
     { titulo: "La Bella Durmiente", categoria: "disney-animation", subtipo: "1950", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/n3pxoMDDxp10c1smgbDzW4bwlzq.jpg" },
     { titulo: "101 Dálmatas", categoria: "disney-animation", fichaTecnicaId: "101-dalmatas-1961", subtipo: "1960", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81L6aMRis1L.AC_UF894,1000_QL80.jpg" },
     { titulo: "La Espada en la Piedra", categoria: "disney-animation", subtipo: "1960", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/c1H3jTJUZLrprxOMH1w8cQD1PBl.jpg" },
-    { titulo: "El Libro de la Selva", categoria: "disney-animation", subtipo: "1960", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81JzIeOhnaL.jpg" },
+    { titulo: "El Libro de la Selva", categoria: "disney-animation", fichaTecnicaId: "el-libro-de-la-selva-1967", subtipo: "1960", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81JzIeOhnaL.jpg" },
     { titulo: "Los Aristogatos", categoria: "disney-animation", subtipo: "1970", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/s9DsxlbVE1HvHnCz50GdHDBeZRy.jpg" },
     { titulo: "Robin Hood", categoria: "disney-animation", subtipo: "1970", tipo: "Película", poster: "https://m.media-amazon.com/images/I/51p-ieBYgUL.jpg" },
     { titulo: "Las Muchas Aventuras de Winnie the Pooh", categoria: "disney-animation", subtipo: "1970", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61OzdKMZm6L.AC_UF894,1000_QL80.jpg" },
@@ -829,7 +842,7 @@ const listaMedia = [
     { titulo: "Avatar: El Camino del Agua", categoria: "oscar-2023", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71DlLjNU0HL._AC_UF894,1000_QL80_.jpg" },
     { titulo: "El Triángulo de la Tristeza", categoria: "oscar-2023", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYTViNzUyNDUtZTg3Yy00OTY4LWEyMTYtMmUzYjE3ZmZjYzUwXkEyXkFqcGc@._V1_.jpg" },
     { titulo: "Ellas Hablan", categoria: "oscar-2023", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNzM2YzEzOTktNTJiNy00YjAwLWI2N2YtNjBkZWM5Y2U1OTRlXkEyXkFqcGc@._V1_.jpg" },
-    { titulo: "Elvis", categoria: "oscar-2023", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNTVhZmUyMDQtY2I5Ny00OWNiLTgzNjUtMTg4YTQwMTc0OTQxXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Elvis", categoria: "oscar-2023", subtipo: "mejor-pelicula", tipo: "Película", fichaTecnicaId: "elvis-2022", poster: "https://m.media-amazon.com/images/M/MV5BNTVhZmUyMDQtY2I5Ny00OWNiLTgzNjUtMTg4YTQwMTc0OTQxXkEyXkFqcGc@._V1_.jpg" },
     { titulo: "The Banshees of Inisherin", categoria: "oscar-2023", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOTkzMWI4OTEtMTk0MS00MTUxLWI4NTYtYmRiNWM4Zjc1MGRhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
     { titulo: "Los Fabelman", categoria: "oscar-2023", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNDY5OWY4ZWYtYTM3OC00Zjg5LWFlYzYtYWI5ZGM1MDcxYzY4XkEyXkFqcGc@._V1_.jpg" },
     { titulo: "All Quiet on the Western Front", categoria: "oscar-2023", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOWJiYWMyYTktZThhOS00ZjgxLWE0YTQtZDMyNTQxMjMyYjI2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
@@ -845,7 +858,7 @@ const listaMedia = [
 
     // --- OSCAR 2023: MEJOR ACTOR ---
     { titulo: "The Whale", categoria: "oscar-2023", subtipo: "mejor-actor", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/bPlmqR1cgK8bYIo8aAVw69KkzxX.jpg" },
-    { titulo: "Elvis", categoria: "oscar-2023", subtipo: "mejor-actor", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNTVhZmUyMDQtY2I5Ny00OWNiLTgzNjUtMTg4YTQwMTc0OTQxXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Elvis", categoria: "oscar-2023", subtipo: "mejor-actor", tipo: "Película", fichaTecnicaId: "elvis-2022", poster: "https://m.media-amazon.com/images/M/MV5BNTVhZmUyMDQtY2I5Ny00OWNiLTgzNjUtMTg4YTQwMTc0OTQxXkEyXkFqcGc@._V1_.jpg" },
     { titulo: "The Banshees of Inisherin", categoria: "oscar-2023", subtipo: "mejor-actor", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOTkzMWI4OTEtMTk0MS00MTUxLWI4NTYtYmRiNWM4Zjc1MGRhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
     { titulo: "Aftersun", categoria: "oscar-2023", subtipo: "mejor-actor", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/iOSHD877d2jfpd8d97CjcwFhOuZ.jpg" },
     { titulo: "Living", categoria: "oscar-2023", subtipo: "mejor-actor", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/rJD2tGlYCc8ESOtJrfJk2alt2KX.jpg" },
@@ -982,7 +995,7 @@ const listaMedia = [
     { titulo: "Dune: Parte Uno", categoria: "timothee-chalamet", subtipo: "2020", tipo: "Película", fichaTecnicaId: "dune-parte-uno", poster: "https://cdn.europosters.eu/image/1300/302577.jpg" },
     { titulo: "Don't Look Up", categoria: "timothee-chalamet", subtipo: "2020", tipo: "Película", poster: "https://dnm.nflximg.net/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABaa7zSeOtW5ON9mx0Qmpii1K-9xpKKXfNTwcB7AvclDduYgu9lAQDpnVTG7QBY2BteEMa7TOuFtrz5jL6PYv-cOCn4mmsWyylywc.jpg?r=5b6" },
     { titulo: "Bones and All", categoria: "timothee-chalamet", subtipo: "2020", tipo: "Película", poster: "https://i.pinimg.com/736x/93/c9/42/93c9420b3cd9e145c6580e2786bbe8c3.jpg" },
-    { titulo: "Wonka", categoria: "timothee-chalamet", subtipo: "2020", tipo: "Película", poster: "https://purodiseno.lat/wp-content/uploads/2023/10/WONKA-POSTER-02.jpg" },
+    { titulo: "Wonka", categoria: "timothee-chalamet", fichaTecnicaId: "wonka-2023", subtipo: "2020", tipo: "Película", poster: "https://purodiseno.lat/wp-content/uploads/2023/10/WONKA-POSTER-02.jpg" },
     { titulo: "Dune: Parte Dos", categoria: "timothee-chalamet", subtipo: "2020", tipo: "Película", fichaTecnicaId: "dune-parte-dos", poster: "https://deadline.com/wp-content/uploads/2023/05/FvIhyI9aUAUZz6l.jpeg?w=819" },
     { titulo: "Dune: Parte Uno", categoria: "denis-villeneuve", subtipo: "2020", tipo: "Película", fichaTecnicaId: "dune-parte-uno", poster: "https://cdn.europosters.eu/image/1300/302577.jpg" },
     { titulo: "Dune: Parte Dos", categoria: "denis-villeneuve", subtipo: "2020", tipo: "Película", fichaTecnicaId: "dune-parte-dos", poster: "https://deadline.com/wp-content/uploads/2023/05/FvIhyI9aUAUZz6l.jpeg?w=819" },
@@ -10580,7 +10593,7 @@ if (btnVolverFichaAvatarAang) {
     });
 }
 
-['mary-poppins-1964', 'novicia-rebelde-1965', 'rocky-horror-1975', 'grease-1978', 'el-rey-leon-1994', 'moulin-rouge-2001', 'chicago-2002', 'mamma-mia-2008', 'los-miserables-2012', 'la-la-land-2016', 'el-gran-showman-2017', 'wicked-2024', 'cantando-bajo-la-lluvia-1952', 'wicked-por-siempre-2025', 'batman-under-the-red-hood-2010', '101-dalmatas-1961', 'cenicienta-1950', 'frozen-2013', 'el-mago-de-oz-1939', 'pinocho-1940', 'hairspray-2007', 'sweeney-todd-2007', 'into-the-woods-2014', 'nace-una-estrella-2018', 'bohemian-rhapsody-2018', 'in-the-heights-2021', 'coco-2017', 'footloose-1984', 'dirty-dancing-1987', 'encantada-2007'].forEach(id => {
+['mary-poppins-1964', 'novicia-rebelde-1965', 'rocky-horror-1975', 'grease-1978', 'el-rey-leon-1994', 'moulin-rouge-2001', 'chicago-2002', 'mamma-mia-2008', 'los-miserables-2012', 'la-la-land-2016', 'el-gran-showman-2017', 'wicked-2024', 'cantando-bajo-la-lluvia-1952', 'wicked-por-siempre-2025', 'batman-under-the-red-hood-2010', '101-dalmatas-1961', 'cenicienta-1950', 'frozen-2013', 'el-mago-de-oz-1939', 'pinocho-1940', 'hairspray-2007', 'sweeney-todd-2007', 'into-the-woods-2014', 'nace-una-estrella-2018', 'bohemian-rhapsody-2018', 'in-the-heights-2021', 'coco-2017', 'footloose-1984', 'dirty-dancing-1987', 'encantada-2007', 'hamilton-2020', 'sing-2016', 'el-libro-de-la-selva-1967', 'mary-poppins-returns-2018', 'wonka-2023', 'cats-2019', 'elvis-2022', 'rocketman-2019', 'pitch-perfect-2012', 'high-school-musical-2006', 'evita-1996', 'dreamgirls-2006', 'fantasma-de-la-opera-2004'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -14926,6 +14939,19 @@ const FICHAS_TECNICAS_TITULOS = {
     "footloose-1984": "Footloose",
     "dirty-dancing-1987": "Dirty Dancing",
     "encantada-2007": "Encantada",
+    "hamilton-2020": "Hamilton",
+    "sing-2016": "Sing",
+    "el-libro-de-la-selva-1967": "El Libro de la Selva",
+    "mary-poppins-returns-2018": "Mary Poppins Returns",
+    "wonka-2023": "Wonka",
+    "cats-2019": "Cats",
+    "elvis-2022": "Elvis",
+    "rocketman-2019": "Rocketman",
+    "pitch-perfect-2012": "Pitch Perfect",
+    "high-school-musical-2006": "High School Musical",
+    "evita-1996": "Evita",
+    "dreamgirls-2006": "Dreamgirls",
+    "fantasma-de-la-opera-2004": "El Fantasma de la Ópera",
     "daredevil-2003": "Daredevil (2003)",
     "elektra-2005": "Elektra",
     "wicked-por-siempre-2025": "Wicked: Por Siempre",
@@ -16746,6 +16772,136 @@ const REPARTO_PELICULAS = {
             { actor: "Susan Sarandon", personaje: "Reina Narissa" },
             { actor: "Timothy Spall", personaje: "Nathaniel" },
             { actor: "Idina Menzel", personaje: "Nancy Tremaine" }
+        ]
+    },
+    "hamilton-2020": {
+        director: "Thomas Kail",
+        elenco: [
+            { actor: "Lin-Manuel Miranda", personaje: "Alexander Hamilton" },
+            { actor: "Phillipa Soo", personaje: "Eliza Hamilton" },
+            { actor: "Leslie Odom Jr.", personaje: "Aaron Burr" },
+            { actor: "Renée Elise Goldsberry", personaje: "Angelica Schuyler" },
+            { actor: "Chris Jackson", personaje: "George Washington" }
+        ]
+    },
+    "sing-2016": {
+        director: "Garth Jennings",
+        elenco: [
+            { actor: "Matthew McConaughey", personaje: "Buster Moon (voz)" },
+            { actor: "Reese Witherspoon", personaje: "Rosita (voz)" },
+            { actor: "Seth MacFarlane", personaje: "Mike (voz)" },
+            { actor: "Scarlett Johansson", personaje: "Ash (voz)" },
+            { actor: "John C. Reilly", personaje: "Eddie (voz)" }
+        ]
+    },
+    "el-libro-de-la-selva-1967": {
+        director: "Wolfgang Reitherman",
+        elenco: [
+            { actor: "Phil Harris", personaje: "Baloo (voz)" },
+            { actor: "Sebastian Cabot", personaje: "Bagheera (voz)" },
+            { actor: "Louis Prima", personaje: "Rey Louie (voz)" },
+            { actor: "George Sanders", personaje: "Shere Khan (voz)" },
+            { actor: "Sterling Holloway", personaje: "Kaa (voz)" }
+        ]
+    },
+    "mary-poppins-returns-2018": {
+        director: "Rob Marshall",
+        elenco: [
+            { actor: "Emily Blunt", personaje: "Mary Poppins" },
+            { actor: "Lin-Manuel Miranda", personaje: "Jack" },
+            { actor: "Ben Whishaw", personaje: "Michael Banks" },
+            { actor: "Emily Mortimer", personaje: "Jane Banks" },
+            { actor: "Pixie Davies", personaje: "Anabel Banks" }
+        ]
+    },
+    "wonka-2023": {
+        director: "Paul King",
+        elenco: [
+            { actor: "Timothée Chalamet", personaje: "Willy Wonka" },
+            { actor: "Hugh Grant", personaje: "Oompa Loompa" },
+            { actor: "Calah Lane", personaje: "Noodle" },
+            { actor: "Keegan-Michael Key", personaje: "Jefe de Policía" },
+            { actor: "Paterson Joseph", personaje: "Slugworth" }
+        ]
+    },
+    "cats-2019": {
+        director: "Tom Hooper",
+        elenco: [
+            { actor: "Taylor Swift", personaje: "Bombalurina" },
+            { actor: "Idris Elba", personaje: "Macavity" },
+            { actor: "Judi Dench", personaje: "Old Deuteronomy" },
+            { actor: "Jennifer Hudson", personaje: "Grizabella" },
+            { actor: "James Corden", personaje: "Bustopher Jones" }
+        ]
+    },
+    "elvis-2022": {
+        director: "Baz Luhrmann",
+        elenco: [
+            { actor: "Austin Butler", personaje: "Elvis Presley" },
+            { actor: "Tom Hanks", personaje: "Coronel Tom Parker" },
+            { actor: "Olivia DeJonge", personaje: "Priscilla Presley" },
+            { actor: "Helen Thomson", personaje: "Gladys Presley" },
+            { actor: "Richard Roxburgh", personaje: "Vernon Presley" }
+        ]
+    },
+    "rocketman-2019": {
+        director: "Dexter Fletcher",
+        elenco: [
+            { actor: "Taron Egerton", personaje: "Elton John" },
+            { actor: "Jamie Bell", personaje: "Bernie Taupin" },
+            { actor: "Richard Madden", personaje: "John Reid" },
+            { actor: "Gemma Jones", personaje: "Ivy" },
+            { actor: "Bryce Dallas Howard", personaje: "Sheila" }
+        ]
+    },
+    "pitch-perfect-2012": {
+        director: "Jason Moore",
+        elenco: [
+            { actor: "Anna Kendrick", personaje: "Beca" },
+            { actor: "Skylar Astin", personaje: "Jesse" },
+            { actor: "Rebel Wilson", personaje: "Fat Amy" },
+            { actor: "Adam DeVine", personaje: "Bumper" },
+            { actor: "Anna Camp", personaje: "Aubrey" }
+        ]
+    },
+    "high-school-musical-2006": {
+        director: "Kenny Ortega",
+        elenco: [
+            { actor: "Zac Efron", personaje: "Troy Bolton" },
+            { actor: "Vanessa Hudgens", personaje: "Gabriella Montez" },
+            { actor: "Ashley Tisdale", personaje: "Sharpay Evans" },
+            { actor: "Lucas Grabeel", personaje: "Ryan Evans" },
+            { actor: "Alyson Reed", personaje: "Sra. Darbus" }
+        ]
+    },
+    "evita-1996": {
+        director: "Alan Parker",
+        elenco: [
+            { actor: "Madonna", personaje: "Eva Perón" },
+            { actor: "Antonio Banderas", personaje: "Che" },
+            { actor: "Jonathan Pryce", personaje: "Juan Perón" },
+            { actor: "Jimmy Nail", personaje: "Agustín Magaldi" },
+            { actor: "Julian Littman", personaje: "Hermano Juan" }
+        ]
+    },
+    "dreamgirls-2006": {
+        director: "Bill Condon",
+        elenco: [
+            { actor: "Jamie Foxx", personaje: "Curtis Taylor Jr." },
+            { actor: "Beyoncé", personaje: "Deena Jones" },
+            { actor: "Eddie Murphy", personaje: "James \"Thunder\" Early" },
+            { actor: "Jennifer Hudson", personaje: "Effie White" },
+            { actor: "Anika Noni Rose", personaje: "Lorrell Robinson" }
+        ]
+    },
+    "fantasma-de-la-opera-2004": {
+        director: "Joel Schumacher",
+        elenco: [
+            { actor: "Gerard Butler", personaje: "El Fantasma" },
+            { actor: "Emmy Rossum", personaje: "Christine" },
+            { actor: "Patrick Wilson", personaje: "Raoul" },
+            { actor: "Miranda Richardson", personaje: "Madame Giry" },
+            { actor: "Minnie Driver", personaje: "Carlotta" }
         ]
     },
     "the-new-mutants": {
