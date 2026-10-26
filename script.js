@@ -794,6 +794,13 @@ const listaMedia = [
     { titulo: "Superman", categoria: "isabela-merced", subtipo: "2020", tipo: "Película", fichaTecnicaId: "superman-2025", poster: "https://m.media-amazon.com/images/I/712N7RdrlTL.jpg" },
     { titulo: "Peacemaker Temporada 2", categoria: "isabela-merced", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "peacemaker-t2", poster: "https://image.tmdb.org/t/p/w500/yb4F1Oocq8GfQt6iIuAgYEBokhG.jpg" },
 
+    // --- CHRISTIAN BALE ---
+    { titulo: "Thor: Love and Thunder", categoria: "christian-bale", subtipo: "2020", tipo: "Película", fichaTecnicaId: "thor-love-and-thunder", poster: "https://lumiere-a.akamaihd.net/v1/images/fb83262af061c44d518c601e3956c3b4_2764x4096_e4f0eee2.jpeg" },
+    { titulo: "Amsterdam", categoria: "christian-bale", subtipo: "2020", tipo: "Película", fichaTecnicaId: "amsterdam-2022", poster: "https://m.media-amazon.com/images/M/MV5BNzgxNTQzYTEtMDI3Yi00OGQ1LWFkNGMtZDEyM2JlYmE0YzUyXkEyXkFqcGc@.V1.jpg" },
+    { titulo: "The Pale Blue Eye", categoria: "christian-bale", subtipo: "2020", tipo: "Película", fichaTecnicaId: "pale-blue-eye-2022", poster: "https://image.tmdb.org/t/p/original/xY7Sc7zsdNuvUVtfD4WdGdfQV52.jpg" },
+    { titulo: "El Niño y la Garza", categoria: "christian-bale", subtipo: "2020", tipo: "Película", fichaTecnicaId: "el-nino-y-la-garza-2023", poster: "https://image.tmdb.org/t/p/w500/8KqWfVuKP7aBt3XVrDUN6irqwZm.jpg" },
+    { titulo: "The Bride!", categoria: "christian-bale", subtipo: "2020", tipo: "Película", fichaTecnicaId: "the-bride-2026", poster: "https://image.tmdb.org/t/p/original/sgRsjGP9KipFpUxi48DUBlnbIv3.jpg" },
+
     // --- GEMMA CHAN ---
     { titulo: "Let Them All Talk", categoria: "gemma-chan", subtipo: "2020", tipo: "Película", fichaTecnicaId: "let-them-all-talk", poster: "https://m.media-amazon.com/images/M/MV5BYWM3ODA1MzktMjI1Zi00OTNhLThjNjUtZDhlNDViYjJjMGYyXkEyXkFqcGc@._V1_.jpg" },
     { titulo: "Thunderbirds Are Go", categoria: "gemma-chan", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "thunderbirds-are-go", poster: "https://m.media-amazon.com/images/I/61cldRqzLVL._AC_UF894,1000_QL80_.jpg" },
@@ -1583,7 +1590,7 @@ const listaMedia = [
     { titulo: "Birds of Prey and The Fantabulous Emancipation of One Harley Quinn", categoria: "margot-robbie", subtipo: "2020", tipo: "Película", poster: "https://ew.com/thmb/sT-h3pYSc53fKCWxtv5ro4Midno=/2000x0/filters:no_upscale():max_bytes(150000):strip_icc()/birds-of-prey-2000-90f0db5838084a8a8c2eca14edd37e1f.jpg" },
     { titulo: "Peter Rabbit 2: The Runaway", categoria: "margot-robbie", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71-gh-srLUL.AC_UF894,1000_QL80.jpg" },
     { titulo: "The Suicide Squad", categoria: "margot-robbie", subtipo: "2020", tipo: "Película", fichaTecnicaId: "the-suicide-squad-2021", poster: "https://postercity.com.ar/wp-content/uploads/2021/10/the-SUICIDE-SQUAD-60-X-90.jpg" },
-    { titulo: "Amsterdam", categoria: "margot-robbie", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNzgxNTQzYTEtMDI3Yi00OGQ1LWFkNGMtZDEyM2JlYmE0YzUyXkEyXkFqcGc@.V1.jpg" },
+    { titulo: "Amsterdam", categoria: "margot-robbie", subtipo: "2020", tipo: "Película", fichaTecnicaId: "amsterdam-2022", poster: "https://m.media-amazon.com/images/M/MV5BNzgxNTQzYTEtMDI3Yi00OGQ1LWFkNGMtZDEyM2JlYmE0YzUyXkEyXkFqcGc@.V1.jpg" },
     { titulo: "Babylon", categoria: "margot-robbie", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61hxWeyTYcL.AC_UF894,1000_QL80.jpg" },
     { titulo: "Asteroid City", categoria: "margot-robbie", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61fyOxnYzHL.AC_UF894,1000_QL80.jpg" },
     { titulo: "Barbie", categoria: "margot-robbie", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/dekMkQf0kqAmztUca9lX5e5Pjbp.jpg" },
@@ -4204,6 +4211,16 @@ const colecciones = [
         esContenedor: true,
         etiqueta: "Actor",
         progresoCategoria: "glen-powell",
+        peliculas: []
+    },
+    {
+        id: "christian-bale",
+        titulo: "Christian Bale",
+        categoria: "actores",
+        poster: "https://images6.alphacoders.com/127/thumb-1920-1278057.jpg",
+        esContenedor: true,
+        etiqueta: "Actor",
+        progresoCategoria: "christian-bale",
         peliculas: []
     },
     {
@@ -7695,6 +7712,7 @@ function abrirColeccion(colId) {
         'jennifer-lawrence': '.btn-filtro-jlawrence[data-tipo="2020"]',
         'sydney-sweeney': '.btn-filtro-sweeney[data-tipo="2020"]',
         'glen-powell': '.btn-filtro-powell[data-tipo="2020"]',
+        'christian-bale': '.btn-filtro-bale[data-tipo="2020"]',
         'zoe-kravitz': '.btn-filtro-kravitz[data-tipo="2020"]',
         'isabela-merced': '.btn-filtro-isabela[data-tipo="2020"]',
         'gemma-chan': '.btn-filtro-gemma[data-tipo="2020"]',
@@ -7940,6 +7958,7 @@ function renderizarContenido() {
         "jennifer-lawrence": "seccion-jennifer-lawrence",
         "sydney-sweeney": "seccion-sydney-sweeney",
         "glen-powell": "seccion-glen-powell",
+        "christian-bale": "seccion-christian-bale",
         "zoe-kravitz": "seccion-zoe-kravitz",
         "denis-villeneuve": "seccion-denis-villeneuve",
         "batman-personaje": "seccion-batman-personaje",
@@ -14772,6 +14791,18 @@ if (btnVolverFichaHawkeyeSerie) {
     }
 });
 
+['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026'].forEach(id => {
+    const btn = document.getElementById('btn-volver-ficha-' + id);
+    if (btn) {
+        btn.addEventListener('click', () => {
+            const seccionFicha = document.getElementById('seccion-ficha-' + id);
+            const idOrigen = seccionFicha ? seccionFicha.dataset.origen : '';
+            const seccionOrigen = idOrigen ? document.getElementById(idOrigen) : null;
+            cambiarSeccion(seccionOrigen || document.getElementById('seccion-christian-bale'));
+        });
+    }
+});
+
 const btnVolverFichaLegoJurassicWorld = document.getElementById('btn-volver-ficha-lego-jurassic-world');
 
 
@@ -15217,6 +15248,10 @@ const FICHAS_TECNICAS_TITULOS = {
     "loki-temporada-2": "Loki (Temporada 2)",
     "doctor-strange-multiverse-of-madness": "Doctor Strange in the Multiverse of Madness",
     "thor-love-and-thunder": "Thor: Love and Thunder",
+    "amsterdam-2022": "Amsterdam",
+    "pale-blue-eye-2022": "The Pale Blue Eye",
+    "el-nino-y-la-garza-2023": "El Niño y la Garza",
+    "the-bride-2026": "The Bride!",
     "spider-man-no-way-home": "Spider-Man: No Way Home",
     "black-panther-wakanda-forever": "Black Panther: Wakanda Forever",
     "guardians-of-the-galaxy-3": "Guardians of the Galaxy Vol. 3",
@@ -17048,6 +17083,52 @@ const REPARTO_PELICULAS = {
             { actor: "John Cusack", personaje: "Dimitri (voz)" },
             { actor: "Kelsey Grammer", personaje: "Vladimiro (voz)" },
             { actor: "Christopher Lloyd", personaje: "Rasputín (voz)" }
+        ]
+    },
+    "amsterdam-2022": {
+        director: "David O. Russell",
+        elenco: [
+            { actor: "Christian Bale", personaje: "Dr. Burt Berendsen" },
+            { actor: "Margot Robbie", personaje: "Valerie Voze" },
+            { actor: "John David Washington", personaje: "Harold Woodman" },
+            { actor: "Anya Taylor-Joy", personaje: "Libby Voze" },
+            { actor: "Rami Malek", personaje: "Tom Voze" },
+            { actor: "Zoe Saldaña", personaje: "Irma St. Clair" },
+            { actor: "Robert De Niro", personaje: "Gen. Gil Dillenbeck" },
+            { actor: "Chris Rock", personaje: "Milt King" },
+            { actor: "Mike Myers", personaje: "Paul Canterbury" },
+            { actor: "Taylor Swift", personaje: "Liz Meekins" }
+        ]
+    },
+    "pale-blue-eye-2022": {
+        director: "Scott Cooper",
+        elenco: [
+            { actor: "Christian Bale", personaje: "Augustus Landor" },
+            { actor: "Harry Melling", personaje: "Edgar Allan Poe" },
+            { actor: "Gillian Anderson", personaje: "Sra. Julia Marquis" },
+            { actor: "Lucy Boynton", personaje: "Lea Marquis" },
+            { actor: "Robert Duvall", personaje: "Jean Pepe" }
+        ]
+    },
+    "el-nino-y-la-garza-2023": {
+        director: "Hayao Miyazaki",
+        elenco: [
+            { actor: "Luca Padovan", personaje: "Mahito Maki (voz, doblaje en inglés)" },
+            { actor: "Christian Bale", personaje: "Shoichi Maki (voz, doblaje en inglés)" },
+            { actor: "Dave Bautista", personaje: "Rey Periquito (voz, doblaje en inglés)" },
+            { actor: "Gemma Chan", personaje: "Natsuko (voz, doblaje en inglés)" },
+            { actor: "Willem Dafoe", personaje: "Pelícano Noble (voz, doblaje en inglés)" }
+        ]
+    },
+    "the-bride-2026": {
+        director: "Maggie Gyllenhaal",
+        elenco: [
+            { actor: "Jessie Buckley", personaje: "Ida / La Novia" },
+            { actor: "Christian Bale", personaje: "Frank (Frankenstein)" },
+            { actor: "Peter Sarsgaard", personaje: "Jake Wiles" },
+            { actor: "Annette Bening", personaje: "Dra. Euphronious" },
+            { actor: "Jake Gyllenhaal", personaje: "Ronnie Reed" },
+            { actor: "Penélope Cruz", personaje: "Myrna Malloy" }
         ]
     },
     "the-new-mutants": {
@@ -19845,6 +19926,23 @@ botonesFiltroPowell.forEach(boton => {
 });
 inicializarFiltroTipoActor('seccion-glen-powell', 'btn-filtro-powell');
 
+const botonesFiltroBale = document.querySelectorAll('.btn-filtro-bale');
+botonesFiltroBale.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroBale.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        aplicarFiltroTipoYDecadaActor('seccion-christian-bale', 'btn-filtro-bale');
+    });
+});
+inicializarFiltroTipoActor('seccion-christian-bale', 'btn-filtro-bale');
+
+const btnVolverChristianBale = document.getElementById('btn-volver-christian-bale');
+if (btnVolverChristianBale) {
+    btnVolverChristianBale.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-actores'));
+    });
+}
+
 const botonesFiltroKravitz = document.querySelectorAll('.btn-filtro-kravitz');
 botonesFiltroKravitz.forEach(boton => {
     boton.addEventListener('click', function() {
@@ -22273,7 +22371,7 @@ const filmografiasGrilla = {
     "fawad khan": ["Ms. Marvel"],
     "aramis knight": ["Ms. Marvel"],
     "farhan akhtar": ["Ms. Marvel"],
-    "christian bale": ["Thor: Love and Thunder", "Batman Begins", "The Prestige", "The Dark Knight", "The Dark Knight Rises"],
+    "christian bale": ["Thor: Love and Thunder", "Batman Begins", "The Prestige", "The Dark Knight", "The Dark Knight Rises", "Amsterdam", "The Pale Blue Eye", "El Niño y la Garza", "The Bride!"],
     "russell crowe": ["Thor: Love and Thunder", "Man of Steel"],
     "melissa mccarthy": ["Thor: Love and Thunder"],
     "ben falcone": ["Thor: Love and Thunder"],
