@@ -44,6 +44,19 @@ const listaMedia = [
     { titulo: "Evita", categoria: "peliculas-musicales", soloSeccion: true, anio: 1996, rt: 63, formato: "Live Action", tipo: "Película", fichaTecnicaId: "evita-1996", poster: "https://image.tmdb.org/t/p/original/2q1MzTPl4W1RBYSvKTdAOdg1pqm.jpg" },
     { titulo: "Dreamgirls", categoria: "peliculas-musicales", soloSeccion: true, anio: 2006, rt: 79, formato: "Live Action", tipo: "Película", fichaTecnicaId: "dreamgirls-2006", poster: "https://image.tmdb.org/t/p/w500/sG5JyOj8Spe13QkNJMH8b5kzQUh.jpg" },
     { titulo: "El Fantasma de la Ópera", categoria: "peliculas-musicales", soloSeccion: true, anio: 2004, rt: 32, formato: "Live Action", tipo: "Película", fichaTecnicaId: "fantasma-de-la-opera-2004", poster: "https://image.tmdb.org/t/p/original/p6qF2ja25qAtJIBvzwB0YFNmky9.jpg" },
+    { titulo: "Alicia en el País de las Maravillas", categoria: "peliculas-musicales", soloSeccion: true, anio: 1951, rt: 82, formato: "Animación", tipo: "Película", fichaTecnicaId: "alicia-pais-maravillas-1951", poster: "https://i.pinimg.com/736x/3b/f5/82/3bf5825cc4271cae154247b9b1b5ed71.jpg" },
+    { titulo: "Los Aristogatos", categoria: "peliculas-musicales", soloSeccion: true, anio: 1970, rt: 64, formato: "Animación", tipo: "Película", fichaTecnicaId: "aristogatos-1970", poster: "https://image.tmdb.org/t/p/original/s9DsxlbVE1HvHnCz50GdHDBeZRy.jpg" },
+    { titulo: "La Sirenita", categoria: "peliculas-musicales", soloSeccion: true, anio: 1989, rt: 92, formato: "Animación", tipo: "Película", fichaTecnicaId: "la-sirenita-1989", poster: "https://cdn.posteritati.com/posters/000/000/009/543/the-little-mermaid-md-web.jpg" },
+    { titulo: "La Bella y la Bestia", categoria: "peliculas-musicales", soloSeccion: true, anio: 1991, rt: 95, formato: "Animación", tipo: "Película", fichaTecnicaId: "la-bella-y-la-bestia-1991", poster: "https://image.tmdb.org/t/p/original/7oCAPOphDKpIaxTrnukmDrZ8XKD.jpg" },
+    { titulo: "Aladdín", categoria: "peliculas-musicales", soloSeccion: true, anio: 1992, rt: 96, formato: "Animación", tipo: "Película", fichaTecnicaId: "aladdin-1992", poster: "https://www.originalfilmart.com/cdn/shop/products/aladdin_1992_lamp_style_original_film_art_f_1200x.jpg?v=1562976486" },
+    { titulo: "Pocahontas", categoria: "peliculas-musicales", soloSeccion: true, anio: 1995, rt: 58, formato: "Animación", tipo: "Película", fichaTecnicaId: "pocahontas-1995", poster: "https://m.media-amazon.com/images/I/71fk6ri1K+L._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "El Jorobado de Notre Dame", categoria: "peliculas-musicales", soloSeccion: true, anio: 1996, rt: 80, formato: "Animación", tipo: "Película", fichaTecnicaId: "jorobado-notre-dame-1996", poster: "https://i.pinimg.com/736x/af/07/35/af0735c9baa799f12e311a82d2192b01.jpg" },
+    { titulo: "Hércules", categoria: "peliculas-musicales", soloSeccion: true, anio: 1997, rt: 83, formato: "Animación", tipo: "Película", fichaTecnicaId: "hercules-1997", poster: "https://m.media-amazon.com/images/I/71NtQTeIYfL._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Tarzán", categoria: "peliculas-musicales", soloSeccion: true, anio: 1999, rt: 90, formato: "Animación", tipo: "Película", fichaTecnicaId: "tarzan-1999", poster: "https://m.media-amazon.com/images/I/81fdtHUyAkL.jpg" },
+    { titulo: "El Príncipe de Egipto", categoria: "peliculas-musicales", soloSeccion: true, anio: 1998, rt: 79, formato: "Animación", tipo: "Película", fichaTecnicaId: "principe-de-egipto-1998", poster: "https://image.tmdb.org/t/p/original/99wF7ALBpNdUuVl6Mmm1VqAUH3U.jpg" },
+    { titulo: "Moana", categoria: "peliculas-musicales", soloSeccion: true, anio: 2016, rt: 96, formato: "Animación", tipo: "Película", fichaTecnicaId: "moana-2016", poster: "https://m.media-amazon.com/images/I/81rjqvHFtkL.AC_UF894,1000_QL80.jpg" },
+    { titulo: "Encanto", categoria: "peliculas-musicales", soloSeccion: true, anio: 2021, rt: 92, formato: "Animación", tipo: "Película", fichaTecnicaId: "encanto-2021", poster: "https://static.posters.cz/image/1300/120006.jpg" },
+    { titulo: "Anastasia", categoria: "peliculas-musicales", soloSeccion: true, anio: 1997, rt: 83, formato: "Animación", tipo: "Película", fichaTecnicaId: "anastasia-1997", poster: "https://image.tmdb.org/t/p/original/bppGWGA8zq1sRvTdDJnUzVW9GcH.jpg" },
 
     // --- HALLOWEEN (terror: películas, videojuegos y cómics) ---
     // Posters provisorios (placeholder) hasta que se carguen los reales.
@@ -626,7 +639,7 @@ const listaMedia = [
 
     // --- DISNEY ANIMATION (con filtros por década) ---
     { titulo: "Raya y El Último Dragón", categoria: "disney-animation", subtipo: "2020", tipo: "Película", fichaTecnicaId: "raya-ultimo-dragon", poster: "https://image.tmdb.org/t/p/original/5nVhgCzxKbK47OLIKxCR1syulOn.jpg" },
-    { titulo: "Encanto", categoria: "disney-animation", subtipo: "2020", tipo: "Película", poster: "https://static.posters.cz/image/1300/120006.jpg" },
+    { titulo: "Encanto", categoria: "disney-animation", subtipo: "2020", tipo: "Película", fichaTecnicaId: "encanto-2021", poster: "https://static.posters.cz/image/1300/120006.jpg" },
     { titulo: "Un Mundo Extraño", categoria: "disney-animation", subtipo: "2020", tipo: "Película", poster: "https://i.pinimg.com/736x/ea/c5/da/eac5da7bd43097e5288adad835ec28cc.jpg" },
     { titulo: "Wish", categoria: "disney-animation", subtipo: "2020", tipo: "Película", poster: "https://lumiere-a.akamaihd.net/v1/images/screenshot_2023-04-27_at_14_930d2ffc.png?region=0,0,986,1458" },
     { titulo: "Moana 2", categoria: "disney-animation", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/aLVkiINlIeCkcZIzb7XHzPYgO6L.jpg" },
@@ -637,7 +650,7 @@ const listaMedia = [
     { titulo: "Frozen: Una Aventura Congelada", categoria: "disney-animation", fichaTecnicaId: "frozen-2013", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81UoBlyJ2zL.AC_UF894,1000_QL80.jpg" },
     { titulo: "Grandes Héroes", categoria: "disney-animation", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61DJ8d3PtcL.AC_UF894,1000_QL80.jpg" },
     { titulo: "Zootopia", categoria: "disney-animation", subtipo: "2010", tipo: "Película", poster: "https://cinefreaksargentina.wordpress.com/wp-content/uploads/2015/09/af-zoot.jpg" },
-    { titulo: "Moana: Un Mar de Aventuras", categoria: "disney-animation", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81rjqvHFtkL.AC_UF894,1000_QL80.jpg" },
+    { titulo: "Moana: Un Mar de Aventuras", categoria: "disney-animation", subtipo: "2010", tipo: "Película", fichaTecnicaId: "moana-2016", poster: "https://m.media-amazon.com/images/I/81rjqvHFtkL.AC_UF894,1000_QL80.jpg" },
     { titulo: "Wifi Ralph", categoria: "disney-animation", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMjQ5NDQyMDc2OF5BMl5BanBnXkFtZTgwMjMwNDM5NDM@.V1.jpg" },
     { titulo: "Frozen II", categoria: "disney-animation", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/zEYIA5Opq9zFowZofeWJRmxVI3J.jpg" },
     { titulo: "Dinosaurio", categoria: "disney-animation", subtipo: "2000", tipo: "Película", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVY8nt015k4A0LgBmSq35yfEN_R9sg-btsSN34S5TNobwHfSKSQtzx92KC&s=10" },
@@ -652,20 +665,20 @@ const listaMedia = [
     { titulo: "Bolt: Un Perro Fuera de Serie", categoria: "disney-animation", subtipo: "2000", tipo: "Película", poster: "https://i.blogs.es/9fb446/bolt_ver2/450_1000.jpg" },
     { titulo: "La Princesa y el Sapo", categoria: "disney-animation", subtipo: "2000", tipo: "Película", poster: "https://i.pinimg.com/736x/15/ea/11/15ea11588db2f9e23aac9f747b63a19f.jpg" },
     { titulo: "Bernardo y Bianca en Cangurolandia", categoria: "disney-animation", subtipo: "1990", tipo: "Película", poster: "https://i.pinimg.com/736x/48/ac/04/48ac04581d24fc86c0439c2105b817dd.jpg" },
-    { titulo: "La Bella y La Bestia", categoria: "disney-animation", subtipo: "1990", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/7oCAPOphDKpIaxTrnukmDrZ8XKD.jpg" },
-    { titulo: "Aladdín", categoria: "disney-animation", subtipo: "1990", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/aladdin_1992_lamp_style_original_film_art_f_1200x.jpg?v=1562976486" },
+    { titulo: "La Bella y La Bestia", categoria: "disney-animation", subtipo: "1990", tipo: "Película", fichaTecnicaId: "la-bella-y-la-bestia-1991", poster: "https://image.tmdb.org/t/p/original/7oCAPOphDKpIaxTrnukmDrZ8XKD.jpg" },
+    { titulo: "Aladdín", categoria: "disney-animation", subtipo: "1990", tipo: "Película", fichaTecnicaId: "aladdin-1992", poster: "https://www.originalfilmart.com/cdn/shop/products/aladdin_1992_lamp_style_original_film_art_f_1200x.jpg?v=1562976486" },
     { titulo: "El Rey León", categoria: "disney-animation", subtipo: "1990", tipo: "Película", fichaTecnicaId: "el-rey-leon-1994", poster: "https://i.pinimg.com/736x/f6/77/40/f6774073f35f5a2749fba406a4e8d99d.jpg" },
-    { titulo: "Pocahontas", categoria: "disney-animation", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71fk6ri1K+L._AC_UF894,1000_QL80_.jpg" },
-    { titulo: "El Jorobado de Notre Dame", categoria: "disney-animation", subtipo: "1990", tipo: "Película", poster: "https://i.pinimg.com/736x/af/07/35/af0735c9baa799f12e311a82d2192b01.jpg" },
-    { titulo: "Hércules", categoria: "disney-animation", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71NtQTeIYfL._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Pocahontas", categoria: "disney-animation", subtipo: "1990", tipo: "Película", fichaTecnicaId: "pocahontas-1995", poster: "https://m.media-amazon.com/images/I/71fk6ri1K+L._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "El Jorobado de Notre Dame", categoria: "disney-animation", subtipo: "1990", tipo: "Película", fichaTecnicaId: "jorobado-notre-dame-1996", poster: "https://i.pinimg.com/736x/af/07/35/af0735c9baa799f12e311a82d2192b01.jpg" },
+    { titulo: "Hércules", categoria: "disney-animation", subtipo: "1990", tipo: "Película", fichaTecnicaId: "hercules-1997", poster: "https://m.media-amazon.com/images/I/71NtQTeIYfL._AC_UF894,1000_QL80_.jpg" },
     { titulo: "Mulán", categoria: "disney-animation", subtipo: "1990", tipo: "Película", poster: "https://i.pinimg.com/736x/36/1f/ca/361fca716b79305481eeff561c14ba14.jpg" },
-    { titulo: "Tarzán", categoria: "disney-animation", subtipo: "1990", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81fdtHUyAkL.jpg" },
+    { titulo: "Tarzán", categoria: "disney-animation", subtipo: "1990", tipo: "Película", fichaTecnicaId: "tarzan-1999", poster: "https://m.media-amazon.com/images/I/81fdtHUyAkL.jpg" },
     { titulo: "Fantasía 2000", categoria: "disney-animation", subtipo: "1990", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/fantasia_2000_1999_advance_original_film_art_5000x.jpg?v=1603470183" },
     { titulo: "El Zorro y el Sabueso", categoria: "disney-animation", subtipo: "1980", tipo: "Película", poster: "https://mir-s3-cdn-cf.behance.net/project_modules/hd/eeb34d36199575.57137fdca5c2c.png" },
     { titulo: "El Caldero Mágico", categoria: "disney-animation", subtipo: "1980", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BODJkNGM2ZTUtODYxMC00YWJkLTg2OTMtYWVjNGRlYjg3NDljXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
     { titulo: "Policías y Ratones", categoria: "disney-animation", subtipo: "1980", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/6hZAOLb9HdPfqqvPpm5GD2BN7fT.jpg" },
     { titulo: "Oliver y su Pandilla", categoria: "disney-animation", subtipo: "1980", tipo: "Película", poster: "https://vegalleries.com/sites/default/files/art/product_images/manual/2024/jun22249.jpg" },
-    { titulo: "La Sirenita", categoria: "disney-animation", subtipo: "1980", tipo: "Película", poster: "https://cdn.posteritati.com/posters/000/000/009/543/the-little-mermaid-md-web.jpg" },
+    { titulo: "La Sirenita", categoria: "disney-animation", subtipo: "1980", tipo: "Película", fichaTecnicaId: "la-sirenita-1989", poster: "https://cdn.posteritati.com/posters/000/000/009/543/the-little-mermaid-md-web.jpg" },
     { titulo: "Blancanieves y los Siete Enanitos", categoria: "disney-animation", subtipo: "1930-1940", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/jPBIm2Kileddn0Vj8jV2JBQlAKZ.jpg" },
     { titulo: "Pinocho", categoria: "disney-animation", fichaTecnicaId: "pinocho-1940", subtipo: "1930-1940", tipo: "Película", poster: "https://postercity.com.ar/wp-content/uploads/2019/07/Pinocchio-Disney-low.jpg" },
     { titulo: "Fantasía", categoria: "disney-animation", subtipo: "1930-1940", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/files/Fantasia_R1985_original_film_art_5000x.webp?v=1750797193" },
@@ -678,14 +691,14 @@ const listaMedia = [
     { titulo: "Tiempo de Melodía", categoria: "disney-animation", subtipo: "1930-1940", tipo: "Película", poster: "https://static.wikia.nocookie.net/disneyypixar/images/a/a4/Melody_Time.jpg/revision/latest/scale-to-width-down/1200?cb=20250426061039&path-prefix=es" },
     { titulo: "Las Aventuras de Ichabod y el Sr. Sapo", categoria: "disney-animation", subtipo: "1930-1940", tipo: "Película", poster: "https://m.media-amazon.com/images/S/pv-target-images/59d01ca68220e6738915efb4eee84add3339039979df0ecbae24603a19a5b7b9.jpg" },
     { titulo: "Cenicienta", categoria: "disney-animation", fichaTecnicaId: "cenicienta-1950", subtipo: "1950", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/cinderella_1950_R73_original_film_art_5000x.jpg?v=1562540161" },
-    { titulo: "Alicia en el País de las Maravillas", categoria: "disney-animation", subtipo: "1950", tipo: "Película", poster: "https://i.pinimg.com/736x/3b/f5/82/3bf5825cc4271cae154247b9b1b5ed71.jpg" },
+    { titulo: "Alicia en el País de las Maravillas", categoria: "disney-animation", subtipo: "1950", tipo: "Película", fichaTecnicaId: "alicia-pais-maravillas-1951", poster: "https://i.pinimg.com/736x/3b/f5/82/3bf5825cc4271cae154247b9b1b5ed71.jpg" },
     { titulo: "Peter Pan", categoria: "disney-animation", subtipo: "1950", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71LwwUyNAoL.AC_UF894,1000_QL80.jpg" },
     { titulo: "La Dama y el Vagabundo", categoria: "disney-animation", subtipo: "1950", tipo: "Película", poster: "https://www.posterpalace.com/cdn/shop/products/walt-disneys-lady-and-the-tramp-us-one-sheet-1955-original-release-posterpalacecom-859493.jpg?v=1671389343" },
     { titulo: "La Bella Durmiente", categoria: "disney-animation", subtipo: "1950", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/n3pxoMDDxp10c1smgbDzW4bwlzq.jpg" },
     { titulo: "101 Dálmatas", categoria: "disney-animation", fichaTecnicaId: "101-dalmatas-1961", subtipo: "1960", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81L6aMRis1L.AC_UF894,1000_QL80.jpg" },
     { titulo: "La Espada en la Piedra", categoria: "disney-animation", subtipo: "1960", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/c1H3jTJUZLrprxOMH1w8cQD1PBl.jpg" },
     { titulo: "El Libro de la Selva", categoria: "disney-animation", fichaTecnicaId: "el-libro-de-la-selva-1967", subtipo: "1960", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81JzIeOhnaL.jpg" },
-    { titulo: "Los Aristogatos", categoria: "disney-animation", subtipo: "1970", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/s9DsxlbVE1HvHnCz50GdHDBeZRy.jpg" },
+    { titulo: "Los Aristogatos", categoria: "disney-animation", subtipo: "1970", tipo: "Película", fichaTecnicaId: "aristogatos-1970", poster: "https://image.tmdb.org/t/p/original/s9DsxlbVE1HvHnCz50GdHDBeZRy.jpg" },
     { titulo: "Robin Hood", categoria: "disney-animation", subtipo: "1970", tipo: "Película", poster: "https://m.media-amazon.com/images/I/51p-ieBYgUL.jpg" },
     { titulo: "Las Muchas Aventuras de Winnie the Pooh", categoria: "disney-animation", subtipo: "1970", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61OzdKMZm6L.AC_UF894,1000_QL80.jpg" },
     { titulo: "Bernardo y Bianca", categoria: "disney-animation", subtipo: "1970", tipo: "Película", poster: "https://static.wikia.nocookie.net/yatoroba/images/f/f5/Bernardo_y_Bianca_DVD.jpg/revision/latest?cb=20250818234942&path-prefix=es" },
@@ -10593,7 +10606,7 @@ if (btnVolverFichaAvatarAang) {
     });
 }
 
-['mary-poppins-1964', 'novicia-rebelde-1965', 'rocky-horror-1975', 'grease-1978', 'el-rey-leon-1994', 'moulin-rouge-2001', 'chicago-2002', 'mamma-mia-2008', 'los-miserables-2012', 'la-la-land-2016', 'el-gran-showman-2017', 'wicked-2024', 'cantando-bajo-la-lluvia-1952', 'wicked-por-siempre-2025', 'batman-under-the-red-hood-2010', '101-dalmatas-1961', 'cenicienta-1950', 'frozen-2013', 'el-mago-de-oz-1939', 'pinocho-1940', 'hairspray-2007', 'sweeney-todd-2007', 'into-the-woods-2014', 'nace-una-estrella-2018', 'bohemian-rhapsody-2018', 'in-the-heights-2021', 'coco-2017', 'footloose-1984', 'dirty-dancing-1987', 'encantada-2007', 'hamilton-2020', 'sing-2016', 'el-libro-de-la-selva-1967', 'mary-poppins-returns-2018', 'wonka-2023', 'cats-2019', 'elvis-2022', 'rocketman-2019', 'pitch-perfect-2012', 'high-school-musical-2006', 'evita-1996', 'dreamgirls-2006', 'fantasma-de-la-opera-2004'].forEach(id => {
+['mary-poppins-1964', 'novicia-rebelde-1965', 'rocky-horror-1975', 'grease-1978', 'el-rey-leon-1994', 'moulin-rouge-2001', 'chicago-2002', 'mamma-mia-2008', 'los-miserables-2012', 'la-la-land-2016', 'el-gran-showman-2017', 'wicked-2024', 'cantando-bajo-la-lluvia-1952', 'wicked-por-siempre-2025', 'batman-under-the-red-hood-2010', '101-dalmatas-1961', 'cenicienta-1950', 'frozen-2013', 'el-mago-de-oz-1939', 'pinocho-1940', 'hairspray-2007', 'sweeney-todd-2007', 'into-the-woods-2014', 'nace-una-estrella-2018', 'bohemian-rhapsody-2018', 'in-the-heights-2021', 'coco-2017', 'footloose-1984', 'dirty-dancing-1987', 'encantada-2007', 'hamilton-2020', 'sing-2016', 'el-libro-de-la-selva-1967', 'mary-poppins-returns-2018', 'wonka-2023', 'cats-2019', 'elvis-2022', 'rocketman-2019', 'pitch-perfect-2012', 'high-school-musical-2006', 'evita-1996', 'dreamgirls-2006', 'fantasma-de-la-opera-2004', 'alicia-pais-maravillas-1951', 'aristogatos-1970', 'la-sirenita-1989', 'la-bella-y-la-bestia-1991', 'aladdin-1992', 'pocahontas-1995', 'jorobado-notre-dame-1996', 'hercules-1997', 'tarzan-1999', 'principe-de-egipto-1998', 'moana-2016', 'encanto-2021', 'anastasia-1997'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -14952,6 +14965,19 @@ const FICHAS_TECNICAS_TITULOS = {
     "evita-1996": "Evita",
     "dreamgirls-2006": "Dreamgirls",
     "fantasma-de-la-opera-2004": "El Fantasma de la Ópera",
+    "alicia-pais-maravillas-1951": "Alicia en el País de las Maravillas",
+    "aristogatos-1970": "Los Aristogatos",
+    "la-sirenita-1989": "La Sirenita",
+    "la-bella-y-la-bestia-1991": "La Bella y la Bestia",
+    "aladdin-1992": "Aladdín",
+    "pocahontas-1995": "Pocahontas",
+    "jorobado-notre-dame-1996": "El Jorobado de Notre Dame",
+    "hercules-1997": "Hércules",
+    "tarzan-1999": "Tarzán",
+    "principe-de-egipto-1998": "El Príncipe de Egipto",
+    "moana-2016": "Moana",
+    "encanto-2021": "Encanto",
+    "anastasia-1997": "Anastasia",
     "daredevil-2003": "Daredevil (2003)",
     "elektra-2005": "Elektra",
     "wicked-por-siempre-2025": "Wicked: Por Siempre",
@@ -16902,6 +16928,126 @@ const REPARTO_PELICULAS = {
             { actor: "Patrick Wilson", personaje: "Raoul" },
             { actor: "Miranda Richardson", personaje: "Madame Giry" },
             { actor: "Minnie Driver", personaje: "Carlotta" }
+        ]
+    },
+    "alicia-pais-maravillas-1951": {
+        director: "Clyde Geronimi, Wilfred Jackson y Hamilton Luske",
+        elenco: [
+            { actor: "Kathryn Beaumont", personaje: "Alicia (voz)" },
+            { actor: "Sterling Holloway", personaje: "Gato de Cheshire (voz)" },
+            { actor: "Ed Wynn", personaje: "Sombrerero Loco (voz)" },
+            { actor: "Verna Felton", personaje: "Reina de Corazones (voz)" },
+            { actor: "Richard Haydn", personaje: "Oruga (voz)" }
+        ]
+    },
+    "aristogatos-1970": {
+        director: "Wolfgang Reitherman",
+        elenco: [
+            { actor: "Phil Harris", personaje: "Thomas O'Malley (voz)" },
+            { actor: "Eva Gabor", personaje: "Duquesa (voz)" },
+            { actor: "Sterling Holloway", personaje: "Roquefort (voz)" },
+            { actor: "Scatman Crothers", personaje: "Scat Cat (voz)" },
+            { actor: "Paul Winchell", personaje: "Gato Chino (voz)" }
+        ]
+    },
+    "la-sirenita-1989": {
+        director: "Ron Clements y John Musker",
+        elenco: [
+            { actor: "Jodi Benson", personaje: "Ariel (voz)" },
+            { actor: "Pat Carroll", personaje: "Úrsula (voz)" },
+            { actor: "Christopher Daniel Barnes", personaje: "Príncipe Eric (voz)" },
+            { actor: "Rene Auberjonois", personaje: "Louis (voz)" }
+        ]
+    },
+    "la-bella-y-la-bestia-1991": {
+        director: "Gary Trousdale y Kirk Wise",
+        elenco: [
+            { actor: "Paige O'Hara", personaje: "Bella (voz)" },
+            { actor: "Robby Benson", personaje: "La Bestia (voz)" },
+            { actor: "Richard White", personaje: "Gaston (voz)" },
+            { actor: "Jerry Orbach", personaje: "Lumière (voz)" }
+        ]
+    },
+    "aladdin-1992": {
+        director: "Ron Clements y John Musker",
+        elenco: [
+            { actor: "Scott Weinger", personaje: "Aladdín (voz)" },
+            { actor: "Robin Williams", personaje: "Genio (voz)" },
+            { actor: "Linda Larkin", personaje: "Princesa Jazmín (voz)" },
+            { actor: "Jonathan Freeman", personaje: "Jafar (voz)" }
+        ]
+    },
+    "pocahontas-1995": {
+        director: "Mike Gabriel y Eric Goldberg",
+        elenco: [
+            { actor: "Irene Bedard", personaje: "Pocahontas (voz)" },
+            { actor: "Judy Kuhn", personaje: "Pocahontas (voz cantada)" },
+            { actor: "Mel Gibson", personaje: "John Smith (voz)" },
+            { actor: "Linda Hunt", personaje: "Abuela Sauce (voz)" }
+        ]
+    },
+    "jorobado-notre-dame-1996": {
+        director: "Gary Trousdale y Kirk Wise",
+        elenco: [
+            { actor: "Tom Hulce", personaje: "Quasimodo (voz)" },
+            { actor: "Demi Moore", personaje: "Esmeralda (voz)" },
+            { actor: "Tony Jay", personaje: "Juez Claude Frollo (voz)" },
+            { actor: "Kevin Kline", personaje: "Capitán Phoebus (voz)" }
+        ]
+    },
+    "hercules-1997": {
+        director: "Ron Clements y John Musker",
+        elenco: [
+            { actor: "Tate Donovan", personaje: "Hércules (voz)" },
+            { actor: "Josh Keaton", personaje: "Hércules joven (voz)" },
+            { actor: "Roger Bart", personaje: "Hércules joven (voz cantada)" },
+            { actor: "Danny DeVito", personaje: "Philoctetes (voz)" },
+            { actor: "James Woods", personaje: "Hades (voz)" }
+        ]
+    },
+    "tarzan-1999": {
+        director: "Chris Buck y Kevin Lima",
+        elenco: [
+            { actor: "Tony Goldwyn", personaje: "Tarzán (voz)" },
+            { actor: "Glenn Close", personaje: "Kala (voz)" },
+            { actor: "Minnie Driver", personaje: "Jane Porter (voz)" },
+            { actor: "Rosie O'Donnell", personaje: "Terk (voz)" },
+            { actor: "Brian Blessed", personaje: "Clayton (voz)" }
+        ]
+    },
+    "principe-de-egipto-1998": {
+        director: "Brenda Chapman, Steve Hickner y Simon Wells",
+        elenco: [
+            { actor: "Val Kilmer", personaje: "Moisés / Dios (voz)" },
+            { actor: "Ralph Fiennes", personaje: "Ramsés (voz)" },
+            { actor: "Michelle Pfeiffer", personaje: "Tzipporah (voz)" }
+        ]
+    },
+    "moana-2016": {
+        director: "Ron Clements y John Musker",
+        elenco: [
+            { actor: "Auli'i Cravalho", personaje: "Moana (voz)" },
+            { actor: "Dwayne Johnson", personaje: "Maui (voz)" },
+            { actor: "Rachel House", personaje: "Abuela Tala (voz)" },
+            { actor: "Temuera Morrison", personaje: "Jefe Tui (voz)" }
+        ]
+    },
+    "encanto-2021": {
+        director: "Jared Bush y Byron Howard",
+        elenco: [
+            { actor: "Stephanie Beatriz", personaje: "Mirabel Madrigal (voz)" },
+            { actor: "María Cecilia Botero", personaje: "Abuela Alma (voz)" },
+            { actor: "Diane Guerrero", personaje: "Isabela Madrigal (voz)" },
+            { actor: "Angie Cepeda", personaje: "Julieta Madrigal (voz)" }
+        ]
+    },
+    "anastasia-1997": {
+        director: "Don Bluth y Gary Goldman",
+        elenco: [
+            { actor: "Meg Ryan", personaje: "Anastasia (voz)" },
+            { actor: "John Cusack", personaje: "Dimitri (voz)" },
+            { actor: "Kelsey Grammer", personaje: "Vladimiro (voz)" },
+            { actor: "Christopher Lloyd", personaje: "Rasputín (voz)" }
         ]
     },
     "the-new-mutants": {
