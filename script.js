@@ -800,6 +800,13 @@ const listaMedia = [
     { titulo: "The Pale Blue Eye", categoria: "christian-bale", subtipo: "2020", tipo: "Película", fichaTecnicaId: "pale-blue-eye-2022", poster: "https://image.tmdb.org/t/p/original/xY7Sc7zsdNuvUVtfD4WdGdfQV52.jpg" },
     { titulo: "El Niño y la Garza", categoria: "christian-bale", subtipo: "2020", tipo: "Película", fichaTecnicaId: "el-nino-y-la-garza-2023", poster: "https://image.tmdb.org/t/p/w500/8KqWfVuKP7aBt3XVrDUN6irqwZm.jpg" },
     { titulo: "The Bride!", categoria: "christian-bale", subtipo: "2020", tipo: "Película", fichaTecnicaId: "the-bride-2026", poster: "https://image.tmdb.org/t/p/original/sgRsjGP9KipFpUxi48DUBlnbIv3.jpg" },
+    { titulo: "The Fighter", categoria: "christian-bale", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-fighter-2010", poster: "https://image.tmdb.org/t/p/original/mlQuHJlW26vJVl9nmB7X8rUeEFL.jpg" },
+    { titulo: "Flowers of War", categoria: "christian-bale", subtipo: "2010", tipo: "Película", fichaTecnicaId: "flowers-of-war-2011", poster: "https://image.tmdb.org/t/p/original/8YdjZo7vHqT8oSeV84Cs1NMAIsh.jpg" },
+    { titulo: "The Dark Knight Rises", categoria: "christian-bale", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-dark-knight-rises-2012", poster: "https://i.pinimg.com/736x/76/bd/14/76bd1451fa0d4e66a83095bfb5ad63a8.jpg" },
+    { titulo: "Out of the Furnace", categoria: "christian-bale", subtipo: "2010", tipo: "Película", fichaTecnicaId: "out-of-the-furnace-2013", poster: "https://image.tmdb.org/t/p/w500/cOuQQ4eRpSBxb0G9OXzWE1pHPeq.jpg" },
+    { titulo: "American Hustle", categoria: "christian-bale", subtipo: "2010", tipo: "Película", fichaTecnicaId: "american-hustle-2013", poster: "https://image.tmdb.org/t/p/w500/z6O1KDhfWDTm5ZBr6Ovr0eg8LqO.jpg" },
+    { titulo: "Exodus: Gods and Kings", categoria: "christian-bale", subtipo: "2010", tipo: "Película", fichaTecnicaId: "exodus-gods-and-kings-2014", poster: "https://image.tmdb.org/t/p/original/bZeD7NFvxZhmo2xkBLXG5vv5QDa.jpg" },
+    { titulo: "Knight of Cups", categoria: "christian-bale", subtipo: "2010", tipo: "Película", fichaTecnicaId: "knight-of-cups-2015", poster: "https://image.tmdb.org/t/p/w500/xejFBC19Nc7Xi1MiIvcf84ZCy2g.jpg" },
     { titulo: "American Psycho", categoria: "christian-bale", subtipo: "2000", tipo: "Película", fichaTecnicaId: "american-psycho-2000", poster: "https://image.tmdb.org/t/p/original/uyQTOfTUmZ4SUqw2U8Icrv5dmlP.jpg" },
     { titulo: "Shaft", categoria: "christian-bale", subtipo: "2000", tipo: "Película", fichaTecnicaId: "shaft-2000", poster: "https://image.tmdb.org/t/p/original/5ncvnNPaN73cOqD4muE413sSOyY.jpg" },
     { titulo: "Captain Corelli's Mandolin", categoria: "christian-bale", subtipo: "2000", tipo: "Película", fichaTecnicaId: "captain-corellis-mandolin-2001", poster: "https://image.tmdb.org/t/p/original/1TmKoGfurDrSqfYUD18CUQRPI1v.jpg" },
@@ -1059,7 +1066,7 @@ const listaMedia = [
     { titulo: "House at the End of the Street", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/bgHeZ5g7YyxKcwWw1tgyAMy0czy.jpg" },
     { titulo: "The Devil You Know", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/5Mg2mCW1oW5wlcSYva74bEjNyZl.jpg" },
     { titulo: "Los Juegos del Hambre: En Llamas", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTAyMjQ3OTAxMzNeQTJeQWpwZ15BbWU4MDU0NzA1MzAx._V1_.jpg" },
-    { titulo: "American Hustle", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/z6O1KDhfWDTm5ZBr6Ovr0eg8LqO.jpg" },
+    { titulo: "American Hustle", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", fichaTecnicaId: "american-hustle-2013", poster: "https://image.tmdb.org/t/p/w500/z6O1KDhfWDTm5ZBr6Ovr0eg8LqO.jpg" },
     { titulo: "X-Men: Days of Future Past", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", fichaTecnicaId: "xmen-days-future-past", poster: "https://i0.wp.com/www.dorkaholics.com/wp-content/uploads/2014/04/9kcs.jpg?fit=692%2C1024&ssl=1" },
     { titulo: "Serena", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/l09skhb3QDPuJPDNOzru0f1Evww.jpg" },
     { titulo: "Los Juegos del Hambre: Sinsajo Parte Uno", categoria: "jennifer-lawrence", subtipo: "2010", tipo: "Película", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgpNZKzB0XfI-nJGEcY-QAfnX7vnMo1UYj0rkHcs21wF2MyQkelGnaZNQ&s=10" },
@@ -1196,7 +1203,7 @@ const listaMedia = [
     { titulo: "The Prestige", categoria: "christopher-nolan", tipo: "Película", fichaTecnicaId: "the-prestige-2006", poster: "https://www.originalfilmart.com/cdn/shop/products/prestige_2006_english_advance_original_film_art_5000x.jpg?v=1551795612" },
     { titulo: "The Dark Knight", categoria: "christopher-nolan", tipo: "Película", fichaTecnicaId: "the-dark-knight-2008", poster: "https://www.movieposters.com/cdn/shop/files/darkknight.building.24x36_20e90057-f673-4cc3-9ce7-7b0d3eeb7d83_1024x1024.jpg?v=1762974221" },
     { titulo: "Inception", categoria: "christopher-nolan", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg" },
-    { titulo: "The Dark Knight Rises", categoria: "christopher-nolan", tipo: "Película", poster: "https://i.pinimg.com/736x/76/bd/14/76bd1451fa0d4e66a83095bfb5ad63a8.jpg" },
+    { titulo: "The Dark Knight Rises", categoria: "christopher-nolan", tipo: "Película", fichaTecnicaId: "the-dark-knight-rises-2012", poster: "https://i.pinimg.com/736x/76/bd/14/76bd1451fa0d4e66a83095bfb5ad63a8.jpg" },
     { titulo: "Interstellar", categoria: "christopher-nolan", tipo: "Película", poster: "https://m.media-amazon.com/images/I/91obuWzA3XL.jpg" },
     { titulo: "Dunkirk", categoria: "christopher-nolan", tipo: "Película", poster: "https://i.etsystatic.com/36541132/r/il/7c267b/7018214484/il_570xN.7018214484_2wqe.jpg" },
     { titulo: "Tenet", categoria: "christopher-nolan", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/files/tenet_2020_advance_original_film_art_37f46c8f-cdc8-468e-b8b5-2492200deb1c_5000x.webp?v=1756494471" },
@@ -14809,7 +14816,7 @@ if (btnVolverFichaHawkeyeSerie) {
     }
 });
 
-['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009'].forEach(id => {
+['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -15288,6 +15295,13 @@ const FICHAS_TECNICAS_TITULOS = {
     "the-dark-knight-2008": "The Dark Knight",
     "terminator-salvation-2009": "Terminator Salvation",
     "public-enemies-2009": "Public Enemies",
+    "the-fighter-2010": "The Fighter",
+    "flowers-of-war-2011": "Flowers of War",
+    "the-dark-knight-rises-2012": "The Dark Knight Rises",
+    "out-of-the-furnace-2013": "Out of the Furnace",
+    "american-hustle-2013": "American Hustle",
+    "exodus-gods-and-kings-2014": "Exodus: Gods and Kings",
+    "knight-of-cups-2015": "Knight of Cups",
     "spider-man-no-way-home": "Spider-Man: No Way Home",
     "black-panther-wakanda-forever": "Black Panther: Wakanda Forever",
     "guardians-of-the-galaxy-3": "Guardians of the Galaxy Vol. 3",
@@ -17343,6 +17357,76 @@ const REPARTO_PELICULAS = {
             { actor: "Marion Cotillard", personaje: "Billie Frechette" },
             { actor: "Billy Crudup", personaje: "J. Edgar Hoover" },
             { actor: "Stephen Dorff", personaje: "Homer Van Meter" }
+        ]
+    },
+    "the-fighter-2010": {
+        director: "David O. Russell",
+        elenco: [
+            { actor: "Mark Wahlberg", personaje: "Micky Ward" },
+            { actor: "Christian Bale", personaje: "Dicky Eklund" },
+            { actor: "Amy Adams", personaje: "Charlene Fleming" },
+            { actor: "Melissa Leo", personaje: "Alice Ward" },
+            { actor: "Jack McGee", personaje: "George Ward" }
+        ]
+    },
+    "flowers-of-war-2011": {
+        director: "Yimou Zhang",
+        elenco: [
+            { actor: "Christian Bale", personaje: "John Miller" },
+            { actor: "Ni Ni", personaje: "Yu Mo" },
+            { actor: "Huang Tianyuan", personaje: "George" },
+            { actor: "Zhang Xinyi", personaje: "Shu" },
+            { actor: "Xiting Han", personaje: "Yi" }
+        ]
+    },
+    "the-dark-knight-rises-2012": {
+        director: "Christopher Nolan",
+        elenco: [
+            { actor: "Christian Bale", personaje: "Bruce Wayne / Batman" },
+            { actor: "Anne Hathaway", personaje: "Selina Kyle" },
+            { actor: "Tom Hardy", personaje: "Bane" },
+            { actor: "Marion Cotillard", personaje: "Miranda Tate" },
+            { actor: "Joseph Gordon-Levitt", personaje: "John Blake" }
+        ]
+    },
+    "out-of-the-furnace-2013": {
+        director: "Scott Cooper",
+        elenco: [
+            { actor: "Christian Bale", personaje: "Russell Baze" },
+            { actor: "Woody Harrelson", personaje: "Curtis DeGroat" },
+            { actor: "Casey Affleck", personaje: "Rodney Baze Jr." },
+            { actor: "Forest Whitaker", personaje: "Wesley Barnes" },
+            { actor: "Willem Dafoe", personaje: "John Petty" }
+        ]
+    },
+    "american-hustle-2013": {
+        director: "David O. Russell",
+        elenco: [
+            { actor: "Christian Bale", personaje: "Irving Rosenfeld" },
+            { actor: "Amy Adams", personaje: "Sydney Prosser" },
+            { actor: "Bradley Cooper", personaje: "Richie DiMaso" },
+            { actor: "Jeremy Renner", personaje: "Carmine Polito" },
+            { actor: "Jennifer Lawrence", personaje: "Rosalyn Rosenfeld" }
+        ]
+    },
+    "exodus-gods-and-kings-2014": {
+        director: "Ridley Scott",
+        elenco: [
+            { actor: "Christian Bale", personaje: "Moisés" },
+            { actor: "Joel Edgerton", personaje: "Ramsés" },
+            { actor: "John Turturro", personaje: "Seti" },
+            { actor: "Aaron Paul", personaje: "Josué" },
+            { actor: "Ben Kingsley", personaje: "Nun" }
+        ]
+    },
+    "knight-of-cups-2015": {
+        director: "Terrence Malick",
+        elenco: [
+            { actor: "Christian Bale", personaje: "Rick" },
+            { actor: "Cate Blanchett", personaje: "Nancy" },
+            { actor: "Natalie Portman", personaje: "Elizabeth" },
+            { actor: "Brian Dennehy", personaje: "Joseph" },
+            { actor: "Antonio Banderas", personaje: "Tonio" }
         ]
     },
     "the-new-mutants": {
