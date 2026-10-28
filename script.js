@@ -800,6 +800,10 @@ const listaMedia = [
     { titulo: "The Pale Blue Eye", categoria: "christian-bale", subtipo: "2020", tipo: "Película", fichaTecnicaId: "pale-blue-eye-2022", poster: "https://image.tmdb.org/t/p/original/xY7Sc7zsdNuvUVtfD4WdGdfQV52.jpg" },
     { titulo: "El Niño y la Garza", categoria: "christian-bale", subtipo: "2020", tipo: "Película", fichaTecnicaId: "el-nino-y-la-garza-2023", poster: "https://image.tmdb.org/t/p/w500/8KqWfVuKP7aBt3XVrDUN6irqwZm.jpg" },
     { titulo: "The Bride!", categoria: "christian-bale", subtipo: "2020", tipo: "Película", fichaTecnicaId: "the-bride-2026", poster: "https://image.tmdb.org/t/p/original/sgRsjGP9KipFpUxi48DUBlnbIv3.jpg" },
+    { titulo: "The Big Short", categoria: "christian-bale", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-big-short-2015", poster: "https://m.media-amazon.com/images/M/MV5BZDZkNDQ3YjktYjBlZC00YTY1LTgxOGYtY2RhMWFhZmNkZGY3XkEyXkFqcGc@.V1.jpg" },
+    { titulo: "Hostiles", categoria: "christian-bale", subtipo: "2010", tipo: "Película", fichaTecnicaId: "hostiles-2017", poster: "https://image.tmdb.org/t/p/w500/rqoezyB51GfhiloOB5ZErg5HXas.jpg" },
+    { titulo: "Vice", categoria: "christian-bale", subtipo: "2010", tipo: "Película", fichaTecnicaId: "vice-2018", poster: "https://image.tmdb.org/t/p/original/1gCab6rNv1r6V64cwsU4oEr649Y.jpg" },
+    { titulo: "Ford v Ferrari", categoria: "christian-bale", subtipo: "2010", tipo: "Película", fichaTecnicaId: "ford-v-ferrari-2019", poster: "https://cdng.europosters.eu/pod_public/1300/322166.jpg" },
     { titulo: "The Fighter", categoria: "christian-bale", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-fighter-2010", poster: "https://image.tmdb.org/t/p/original/mlQuHJlW26vJVl9nmB7X8rUeEFL.jpg" },
     { titulo: "Flowers of War", categoria: "christian-bale", subtipo: "2010", tipo: "Película", fichaTecnicaId: "flowers-of-war-2011", poster: "https://image.tmdb.org/t/p/original/8YdjZo7vHqT8oSeV84Cs1NMAIsh.jpg" },
     { titulo: "The Dark Knight Rises", categoria: "christian-bale", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-dark-knight-rises-2012", poster: "https://i.pinimg.com/736x/76/bd/14/76bd1451fa0d4e66a83095bfb5ad63a8.jpg" },
@@ -1289,7 +1293,7 @@ const listaMedia = [
     { titulo: "The Place Beyond the Pines", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/518hww-QjyL._AC_UF894,1000_QL80_.jpg" },
     { titulo: "Gangster Squad", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/324918.jpg" },
     { titulo: "Only God Forgives", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMzE5NzcxMTk5NF5BMl5BanBnXkFtZTcwNjE2MDg2OQ@@._V1_.jpg" },
-    { titulo: "The Big Short", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZDZkNDQ3YjktYjBlZC00YTY1LTgxOGYtY2RhMWFhZmNkZGY3XkEyXkFqcGc@.V1.jpg" },
+    { titulo: "The Big Short", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-big-short-2015", poster: "https://m.media-amazon.com/images/M/MV5BZDZkNDQ3YjktYjBlZC00YTY1LTgxOGYtY2RhMWFhZmNkZGY3XkEyXkFqcGc@.V1.jpg" },
     { titulo: "The Nice Guys", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/clq4So9spa9cXk3MZy2iMdqkxP2.jpg" },
     { titulo: "La La Land", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://postercity.com.ar/wp-content/uploads/2021/04/La-La-Land-Poster_baja-1.jpg" },
     { titulo: "Song to Song", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNzI1MTg0MzEyOF5BMl5BanBnXkFtZTgwNzk4Mjk0MTI@._V1_FMjpg_UX1000_.jpg" },
@@ -1302,7 +1306,7 @@ const listaMedia = [
     // --- OSCAR 2020 (con filtros por categoría) ---
     { titulo: "Parasite", categoria: "oscar-2020", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg" },
     { titulo: "1917", categoria: "oscar-2020", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYzkxZjg2NDQtMGVjMy00NWZkLTk0ZDEtZWE3NDYwYjAyMTg1XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
-    { titulo: "Ford v Ferrari", categoria: "oscar-2020", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/322166.jpg" },
+    { titulo: "Ford v Ferrari", categoria: "oscar-2020", subtipo: "mejor-pelicula", tipo: "Película", fichaTecnicaId: "ford-v-ferrari-2019", poster: "https://cdng.europosters.eu/pod_public/1300/322166.jpg" },
     { titulo: "Jojo Rabbit", categoria: "oscar-2020", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/322216.jpg" },
     { titulo: "Joker", categoria: "oscar-2020", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://i.ebayimg.com/images/g/rI0AAOSw89NiRZ6k/s-l1200.jpg" },
     { titulo: "Little Women", categoria: "oscar-2020", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61TK-+geKPL.AC_UF894,1000_QL80.jpg" },
@@ -1469,7 +1473,7 @@ const listaMedia = [
     { titulo: "El Abogado del Crimen", categoria: "brad-pitt", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTc3ODk0MTY0N15BMl5BanBnXkFtZTgwOTU2MTEzMDE@._V1_.jpg" },
     { titulo: "Fury", categoria: "brad-pitt", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/pfte7wdMobMF4CVHuOxyu6oqeeA.jpg" },
     { titulo: "By The Sea", categoria: "brad-pitt", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTUyNDU2MDMxM15BMl5BanBnXkFtZTgwMzAzMTk1NjE@._V1_.jpg" },
-    { titulo: "The Big Short", categoria: "brad-pitt", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZDZkNDQ3YjktYjBlZC00YTY1LTgxOGYtY2RhMWFhZmNkZGY3XkEyXkFqcGc@.V1.jpg" },
+    { titulo: "The Big Short", categoria: "brad-pitt", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-big-short-2015", poster: "https://m.media-amazon.com/images/M/MV5BZDZkNDQ3YjktYjBlZC00YTY1LTgxOGYtY2RhMWFhZmNkZGY3XkEyXkFqcGc@.V1.jpg" },
     { titulo: "Allied", categoria: "brad-pitt", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNWJiOTUzODItNTYzYS00NGY0LWIzZmEtZDA4MGI5ZWMxMjM2XkEyXkFqcGc@._V1_.jpg" },
     { titulo: "War Machine", categoria: "brad-pitt", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTg0ODE5NzE0OV5BMl5BanBnXkFtZTgwOTExODcyMjI@._V1_.jpg" },
     { titulo: "Deadpool 2", categoria: "brad-pitt", subtipo: "2010", tipo: "Película", fichaTecnicaId: "deadpool-2", poster: "https://preview.redd.it/new-deadpool-2-poster-v0-878r7e1hmle01.jpg?auto=webp&s=2f03e75ff6a45766bbbf16a95cbe0ecc3d6c7046" },
@@ -1600,7 +1604,7 @@ const listaMedia = [
     { titulo: "Z for Zachariah", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTUwMTUwODUzNV5BMl5BanBnXkFtZTgwMDIxMDE5NTE@.V1.jpg" },
     { titulo: "Focus", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/51HjYkKwu8L.AC_UF894,1000_QL80.jpg" },
     { titulo: "Suite Française", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/324706.jpg" },
-    { titulo: "The Big Short", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZDZkNDQ3YjktYjBlZC00YTY1LTgxOGYtY2RhMWFhZmNkZGY3XkEyXkFqcGc@.V1.jpg" },
+    { titulo: "The Big Short", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-big-short-2015", poster: "https://m.media-amazon.com/images/M/MV5BZDZkNDQ3YjktYjBlZC00YTY1LTgxOGYtY2RhMWFhZmNkZGY3XkEyXkFqcGc@.V1.jpg" },
     { titulo: "Whiskey Tango Foxtrot", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/750/324143.jpg" },
     { titulo: "La Leyenda de Tarzán", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMzY3OTI0OTcyMF5BMl5BanBnXkFtZTgwNjkxNTAwOTE@.V1_FMjpg_UX1000.jpg" },
     { titulo: "Suicide Squad", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/sk3FZgh3sRrmr8vyhaitNobMcfh.jpg" },
@@ -14816,7 +14820,7 @@ if (btnVolverFichaHawkeyeSerie) {
     }
 });
 
-['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015'].forEach(id => {
+['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -15302,6 +15306,10 @@ const FICHAS_TECNICAS_TITULOS = {
     "american-hustle-2013": "American Hustle",
     "exodus-gods-and-kings-2014": "Exodus: Gods and Kings",
     "knight-of-cups-2015": "Knight of Cups",
+    "the-big-short-2015": "The Big Short",
+    "hostiles-2017": "Hostiles",
+    "vice-2018": "Vice",
+    "ford-v-ferrari-2019": "Ford v Ferrari",
     "spider-man-no-way-home": "Spider-Man: No Way Home",
     "black-panther-wakanda-forever": "Black Panther: Wakanda Forever",
     "guardians-of-the-galaxy-3": "Guardians of the Galaxy Vol. 3",
@@ -17427,6 +17435,46 @@ const REPARTO_PELICULAS = {
             { actor: "Natalie Portman", personaje: "Elizabeth" },
             { actor: "Brian Dennehy", personaje: "Joseph" },
             { actor: "Antonio Banderas", personaje: "Tonio" }
+        ]
+    },
+    "the-big-short-2015": {
+        director: "Adam McKay",
+        elenco: [
+            { actor: "Christian Bale", personaje: "Michael Burry" },
+            { actor: "Steve Carell", personaje: "Mark Baum" },
+            { actor: "Ryan Gosling", personaje: "Jared Vennett" },
+            { actor: "Brad Pitt", personaje: "Ben Rickert" },
+            { actor: "Hamish Linklater", personaje: "Porter Collins" }
+        ]
+    },
+    "hostiles-2017": {
+        director: "Scott Cooper",
+        elenco: [
+            { actor: "Christian Bale", personaje: "Capitán Joseph Blocker" },
+            { actor: "Rosamund Pike", personaje: "Rosalee Quaid" },
+            { actor: "Wes Studi", personaje: "Jefe Yellow Hawk" },
+            { actor: "Jesse Plemons", personaje: "Tte. Rudy Kidder" },
+            { actor: "Adam Beach", personaje: "Black Hawk" }
+        ]
+    },
+    "vice-2018": {
+        director: "Adam McKay",
+        elenco: [
+            { actor: "Christian Bale", personaje: "Dick Cheney" },
+            { actor: "Amy Adams", personaje: "Lynne Cheney" },
+            { actor: "Steve Carell", personaje: "Donald Rumsfeld" },
+            { actor: "Sam Rockwell", personaje: "George W. Bush" },
+            { actor: "Alison Pill", personaje: "Mary Cheney" }
+        ]
+    },
+    "ford-v-ferrari-2019": {
+        director: "James Mangold",
+        elenco: [
+            { actor: "Matt Damon", personaje: "Carroll Shelby" },
+            { actor: "Christian Bale", personaje: "Ken Miles" },
+            { actor: "Jon Bernthal", personaje: "Lee Iacocca" },
+            { actor: "Caitriona Balfe", personaje: "Mollie Miles" },
+            { actor: "Tracy Letts", personaje: "Henry Ford II" }
         ]
     },
     "the-new-mutants": {
