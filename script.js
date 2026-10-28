@@ -57,6 +57,8 @@ const listaMedia = [
     { titulo: "Moana", categoria: "peliculas-musicales", soloSeccion: true, anio: 2016, rt: 96, formato: "Animación", tipo: "Película", fichaTecnicaId: "moana-2016", poster: "https://m.media-amazon.com/images/I/81rjqvHFtkL.AC_UF894,1000_QL80.jpg" },
     { titulo: "Encanto", categoria: "peliculas-musicales", soloSeccion: true, anio: 2021, rt: 92, formato: "Animación", tipo: "Película", fichaTecnicaId: "encanto-2021", poster: "https://static.posters.cz/image/1300/120006.jpg" },
     { titulo: "Anastasia", categoria: "peliculas-musicales", soloSeccion: true, anio: 1997, rt: 83, formato: "Animación", tipo: "Película", fichaTecnicaId: "anastasia-1997", poster: "https://image.tmdb.org/t/p/original/bppGWGA8zq1sRvTdDJnUzVW9GcH.jpg" },
+    { titulo: "Tick, Tick... Boom!", categoria: "peliculas-musicales", soloSeccion: true, anio: 2021, rt: 88, formato: "Live Action", tipo: "Película", fichaTecnicaId: "tick-tick-boom", poster: "https://m.media-amazon.com/images/M/MV5BOGYyNGJmNzctYzZjZi00MzUzLTg3YTYtYjk0OTNjMzA1OTE4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "El Extraño Mundo de Jack", categoria: "peliculas-musicales", soloSeccion: true, anio: 1993, rt: 95, formato: "Animación", tipo: "Película", fichaTecnicaId: "extrano-mundo-de-jack", poster: "https://m.media-amazon.com/images/M/MV5BNmYxOTAzZWYtOGI3Yi00ODc3LTk5ZjYtZTY0MzVkZTg3YmRiXkEyXkFqcGc@._V1_.jpg" },
 
     // --- HALLOWEEN (terror: películas, videojuegos y cómics) ---
     // Posters provisorios (placeholder) hasta que se carguen los reales.
@@ -9783,7 +9785,7 @@ const ARBOL_NODOS = [
     { id: 'mcu',    nombre: 'MCU',                      simbolo: '∞',  color: '#e23636', btn: 'btn-mcu-cronologico', desde: 'C' },
     { id: 'universal', nombre: 'Universal',             simbolo: 'U',  color: '#2e9e4f', btn: 'btn-universal',       desde: 'C' },
     { id: 'xmen',   nombre: 'X-Men (Fox)',              simbolo: 'X',  color: '#f2b705', btn: 'btn-fox-xmen',        desde: 'L', logo: 'https://upload.wikimedia.org/wikipedia/commons/0/0d/X-Men_movie_logo.png' },
-    { id: 'ff',     nombre: 'Cuatro Fantásticos (Fox)', simbolo: '4',  color: '#1f78d1', btn: 'btn-fox-ff',          desde: 'L', logo: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Fantastic_Four_logo_%28blue_and_white%29.svg/330px-Fantastic_Four_logo_%28blue_and_white%29.svg.png' },
+    { id: 'ff',     nombre: 'Cuatro Fantásticos (Fox)', simbolo: '4',  color: '#1f78d1', btn: 'btn-fox-ff',          desde: 'L', logo: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f359881d-6bb2-4391-aba6-779f7084edd4/d9z7vjk-7c46b224-9d43-41e9-81b8-422c207d83fe.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9mMzU5ODgxZC02YmIyLTQzOTEtYWJhNi03NzlmNzA4NGVkZDQvZDl6N3Zqay03YzQ2YjIyNC05ZDQzLTQxZTktODFiOC00MjJjMjA3ZDgzZmUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.3IFKzMvS0vjiGeHR0yZuyUK2M8bVmcGSAY3yuRAY53s' },
     { id: 'dd',     nombre: 'Daredevil y Elektra',      simbolo: 'DD', color: '#c4161c', btn: 'btn-fox-daredevil',   desde: 'L', logo: 'https://images.seeklogo.com/logo-png/22/2/daredevil-logo-png_seeklogo-226219.png' },
     { id: 'ssu',    nombre: 'Universo Spider-Man (SSU)', simbolo: '🕸️', color: '#6a3fb5', btn: 'btn-sony-ssu',       desde: 'R' },
     { id: 'andrew', nombre: 'Spider-Man (Andrew)',      simbolo: '🕷️', color: '#1c4e9e', btn: 'btn-sony-andrew',    desde: 'R' },
