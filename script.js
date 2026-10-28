@@ -831,6 +831,12 @@ const listaMedia = [
     { titulo: "The Dark Knight", categoria: "christian-bale", subtipo: "2000", tipo: "Película", fichaTecnicaId: "the-dark-knight-2008", poster: "https://www.movieposters.com/cdn/shop/files/darkknight.building.24x36_20e90057-f673-4cc3-9ce7-7b0d3eeb7d83_1024x1024.jpg?v=1762974221" },
     { titulo: "Terminator Salvation", categoria: "christian-bale", subtipo: "2000", tipo: "Película", fichaTecnicaId: "terminator-salvation-2009", poster: "https://image.tmdb.org/t/p/original/8eh8wJTtgD4R9t7aQLVHM6DLp31.jpg" },
     { titulo: "Public Enemies", categoria: "christian-bale", subtipo: "2000", tipo: "Película", fichaTecnicaId: "public-enemies-2009", poster: "https://image.tmdb.org/t/p/original/1v3SUYA43WA42c0yrFx4NRDwy8W.jpg" },
+    { titulo: "Empire of the Sun", categoria: "christian-bale", subtipo: "1980", tipo: "Película", fichaTecnicaId: "empire-of-the-sun-1987", poster: "https://image.tmdb.org/t/p/original/7pd8hu3N8LiC4gZ19g3RUzPiZl0.jpg" },
+    { titulo: "Henry V", categoria: "christian-bale", subtipo: "1980", tipo: "Película", fichaTecnicaId: "henry-v-1989", poster: "https://image.tmdb.org/t/p/original/6JagfDEsWtUEMNHozdLsCw1jiAx.jpg" },
+    { titulo: "Newsies", categoria: "christian-bale", subtipo: "1990", tipo: "Película", fichaTecnicaId: "newsies-1992", poster: "https://image.tmdb.org/t/p/original/aZxd86b3zP4i5GFeqTTDaDSQbWe.jpg" },
+    { titulo: "Swing Kids", categoria: "christian-bale", subtipo: "1990", tipo: "Película", fichaTecnicaId: "swing-kids-1993", poster: "https://image.tmdb.org/t/p/original/tdVtr58nc0PrDDY0JCMIrQ6v70z.jpg" },
+    { titulo: "Little Women (1994)", categoria: "christian-bale", subtipo: "1990", tipo: "Película", fichaTecnicaId: "little-women-1994", poster: "https://image.tmdb.org/t/p/w500/1ZzH1XMcKAe5NdrKL5MfcqZHHsZ.jpg" },
+    { titulo: "Pocahontas", categoria: "christian-bale", subtipo: "1990", tipo: "Película", fichaTecnicaId: "pocahontas-1995", poster: "https://m.media-amazon.com/images/I/71fk6ri1K+L._AC_UF894,1000_QL80_.jpg" },
 
     // --- GEMMA CHAN ---
     { titulo: "Let Them All Talk", categoria: "gemma-chan", subtipo: "2020", tipo: "Película", fichaTecnicaId: "let-them-all-talk", poster: "https://m.media-amazon.com/images/M/MV5BYWM3ODA1MzktMjI1Zi00OTNhLThjNjUtZDhlNDViYjJjMGYyXkEyXkFqcGc@._V1_.jpg" },
@@ -1154,7 +1160,7 @@ const listaMedia = [
     { titulo: "Twilight Zone: The Movie", categoria: "steven-spielberg", subtipo: "1980", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/g8tVnghPYgDniKlznJeAtkzqft5.jpg" },
     { titulo: "Indiana Jones y El Templo de la Perdición", categoria: "steven-spielberg", subtipo: "1980", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/gOZSOqw5p04SvLDMFQUJR8hz4PN.jpg" },
     { titulo: "The Color Purple", categoria: "steven-spielberg", subtipo: "1980", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71IhCAcVK-L._AC_UF894,1000_QL80_.jpg" },
-    { titulo: "Empire of the Sun", categoria: "steven-spielberg", subtipo: "1980", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/empire_of_the_sun_1987_original_film_art_aab1ca68-019d-4182-baaf-b2cb25bc7ef0_5000x.jpg?v=1677881129" },
+    { titulo: "Empire of the Sun", categoria: "steven-spielberg", subtipo: "1980", tipo: "Película", fichaTecnicaId: "empire-of-the-sun-1987", poster: "https://www.originalfilmart.com/cdn/shop/products/empire_of_the_sun_1987_original_film_art_aab1ca68-019d-4182-baaf-b2cb25bc7ef0_5000x.jpg?v=1677881129" },
     { titulo: "Indiana Jones y La Última Cruzada", categoria: "steven-spielberg", subtipo: "1980", tipo: "Película", poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2021/06/IMG_2497-scaled.jpeg" },
     { titulo: "Always", categoria: "steven-spielberg", subtipo: "1980", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTgzNDE0MTYzNF5BMl5BanBnXkFtZTgwMjU4MzkwMzE@._V1_.jpg" },
     { titulo: "Killers of the Flower Moon", categoria: "martin-scorsese", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/vhkmvm2tm4HBec28JET6nBU7b7x.jpg" },
@@ -14822,7 +14828,7 @@ if (btnVolverFichaHawkeyeSerie) {
     }
 });
 
-['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019'].forEach(id => {
+['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -15312,6 +15318,11 @@ const FICHAS_TECNICAS_TITULOS = {
     "hostiles-2017": "Hostiles",
     "vice-2018": "Vice",
     "ford-v-ferrari-2019": "Ford v Ferrari",
+    "empire-of-the-sun-1987": "Empire of the Sun",
+    "henry-v-1989": "Henry V",
+    "newsies-1992": "Newsies",
+    "swing-kids-1993": "Swing Kids",
+    "little-women-1994": "Little Women (1994)",
     "spider-man-no-way-home": "Spider-Man: No Way Home",
     "black-panther-wakanda-forever": "Black Panther: Wakanda Forever",
     "guardians-of-the-galaxy-3": "Guardians of the Galaxy Vol. 3",
@@ -17075,6 +17086,7 @@ const REPARTO_PELICULAS = {
     "pocahontas-1995": {
         director: "Mike Gabriel y Eric Goldberg",
         elenco: [
+            { actor: "Christian Bale", personaje: "Thomas (voz)" },
             { actor: "Irene Bedard", personaje: "Pocahontas (voz)" },
             { actor: "Judy Kuhn", personaje: "Pocahontas (voz cantada)" },
             { actor: "Mel Gibson", personaje: "John Smith (voz)" },
@@ -17477,6 +17489,56 @@ const REPARTO_PELICULAS = {
             { actor: "Jon Bernthal", personaje: "Lee Iacocca" },
             { actor: "Caitriona Balfe", personaje: "Mollie Miles" },
             { actor: "Tracy Letts", personaje: "Henry Ford II" }
+        ]
+    },
+    "empire-of-the-sun-1987": {
+        director: "Steven Spielberg",
+        elenco: [
+            { actor: "Christian Bale", personaje: "Jim Graham" },
+            { actor: "John Malkovich", personaje: "Basie" },
+            { actor: "Miranda Richardson", personaje: "Sra. Victor" },
+            { actor: "Nigel Havers", personaje: "Dr. Rawlins" },
+            { actor: "Joe Pantoliano", personaje: "Frank Demarest" }
+        ]
+    },
+    "henry-v-1989": {
+        director: "Kenneth Branagh",
+        elenco: [
+            { actor: "Kenneth Branagh", personaje: "Enrique V" },
+            { actor: "Derek Jacobi", personaje: "Coro" },
+            { actor: "Brian Blessed", personaje: "Exeter" },
+            { actor: "Ian Holm", personaje: "Fluellen" },
+            { actor: "Christian Bale", personaje: "Falstaff's Boy" }
+        ]
+    },
+    "newsies-1992": {
+        director: "Kenny Ortega",
+        elenco: [
+            { actor: "Christian Bale", personaje: "Jack \"Cowboy\" Kelly" },
+            { actor: "Robert Duvall", personaje: "Joseph Pulitzer" },
+            { actor: "Ann-Margret", personaje: "Medda Larkson" },
+            { actor: "David Moscow", personaje: "David Jacobs" },
+            { actor: "Luke Edwards", personaje: "Les Jacobs" }
+        ]
+    },
+    "swing-kids-1993": {
+        director: "Thomas Carter",
+        elenco: [
+            { actor: "Robert Sean Leonard", personaje: "Peter Müller" },
+            { actor: "Christian Bale", personaje: "Thomas Berger" },
+            { actor: "Frank Whaley", personaje: "Arvid" },
+            { actor: "Barbara Hershey", personaje: "Frau Müller" },
+            { actor: "Kenneth Branagh", personaje: "Herr Knopp" }
+        ]
+    },
+    "little-women-1994": {
+        director: "Gillian Armstrong",
+        elenco: [
+            { actor: "Winona Ryder", personaje: "Jo March" },
+            { actor: "Christian Bale", personaje: "Theodore \"Laurie\" Laurence" },
+            { actor: "Gabriel Byrne", personaje: "Friedrich Bhaer" },
+            { actor: "Trini Alvarado", personaje: "Meg March" },
+            { actor: "Kirsten Dunst", personaje: "Amy March (joven)" }
         ]
     },
     "the-new-mutants": {
@@ -22719,7 +22781,7 @@ const filmografiasGrilla = {
     "fawad khan": ["Ms. Marvel"],
     "aramis knight": ["Ms. Marvel"],
     "farhan akhtar": ["Ms. Marvel"],
-    "christian bale": ["Thor: Love and Thunder", "Batman Begins", "The Prestige", "The Dark Knight", "The Dark Knight Rises", "Amsterdam", "The Pale Blue Eye", "El Niño y la Garza", "The Bride!", "American Psycho", "Shaft", "Captain Corelli's Mandolin", "Laurel Canyon", "Equilibrium", "Reign of Fire", "El Maquinista", "El Castillo Ambulante", "Harsh Times", "The New World", "Rescue Dawn"],
+    "christian bale": ["Thor: Love and Thunder", "Batman Begins", "The Prestige", "The Dark Knight", "The Dark Knight Rises", "Amsterdam", "The Pale Blue Eye", "El Niño y la Garza", "The Bride!", "American Psycho", "Shaft", "Captain Corelli's Mandolin", "Laurel Canyon", "Equilibrium", "Reign of Fire", "El Maquinista", "El Castillo Ambulante", "Harsh Times", "The New World", "Rescue Dawn", "3:10 to Yuma", "I'm Not There", "Terminator Salvation", "Public Enemies", "The Fighter", "Flowers of War", "Out of the Furnace", "American Hustle", "Exodus: Gods and Kings", "Knight of Cups", "The Big Short", "Hostiles", "Vice", "Ford v Ferrari", "Empire of the Sun", "Henry V", "Newsies", "Swing Kids", "Little Women", "Pocahontas"],
     "russell crowe": ["Thor: Love and Thunder", "Man of Steel"],
     "melissa mccarthy": ["Thor: Love and Thunder"],
     "ben falcone": ["Thor: Love and Thunder"],
