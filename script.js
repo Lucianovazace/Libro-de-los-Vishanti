@@ -800,6 +800,10 @@ const listaMedia = [
     { titulo: "The Pale Blue Eye", categoria: "christian-bale", subtipo: "2020", tipo: "Película", fichaTecnicaId: "pale-blue-eye-2022", poster: "https://image.tmdb.org/t/p/original/xY7Sc7zsdNuvUVtfD4WdGdfQV52.jpg" },
     { titulo: "El Niño y la Garza", categoria: "christian-bale", subtipo: "2020", tipo: "Película", fichaTecnicaId: "el-nino-y-la-garza-2023", poster: "https://image.tmdb.org/t/p/w500/8KqWfVuKP7aBt3XVrDUN6irqwZm.jpg" },
     { titulo: "The Bride!", categoria: "christian-bale", subtipo: "2020", tipo: "Película", fichaTecnicaId: "the-bride-2026", poster: "https://image.tmdb.org/t/p/original/sgRsjGP9KipFpUxi48DUBlnbIv3.jpg" },
+    { titulo: "American Psycho", categoria: "christian-bale", subtipo: "2000", tipo: "Película", fichaTecnicaId: "american-psycho-2000", poster: "https://image.tmdb.org/t/p/original/uyQTOfTUmZ4SUqw2U8Icrv5dmlP.jpg" },
+    { titulo: "Shaft", categoria: "christian-bale", subtipo: "2000", tipo: "Película", fichaTecnicaId: "shaft-2000", poster: "https://image.tmdb.org/t/p/original/5ncvnNPaN73cOqD4muE413sSOyY.jpg" },
+    { titulo: "Captain Corelli's Mandolin", categoria: "christian-bale", subtipo: "2000", tipo: "Película", fichaTecnicaId: "captain-corellis-mandolin-2001", poster: "https://image.tmdb.org/t/p/original/1TmKoGfurDrSqfYUD18CUQRPI1v.jpg" },
+    { titulo: "Laurel Canyon", categoria: "christian-bale", subtipo: "2000", tipo: "Película", fichaTecnicaId: "laurel-canyon-2002", poster: "https://image.tmdb.org/t/p/original/40rJW1iXXSLdmBl0ihUeDc2ZNQw.jpg" },
 
     // --- GEMMA CHAN ---
     { titulo: "Let Them All Talk", categoria: "gemma-chan", subtipo: "2020", tipo: "Película", fichaTecnicaId: "let-them-all-talk", poster: "https://m.media-amazon.com/images/M/MV5BYWM3ODA1MzktMjI1Zi00OTNhLThjNjUtZDhlNDViYjJjMGYyXkEyXkFqcGc@._V1_.jpg" },
@@ -9753,8 +9757,8 @@ botonesNavegacion.forEach(nav => {
 const ARBOL_NODOS = [
     { id: 'mcu',    nombre: 'MCU',                      simbolo: '∞',  color: '#e23636', btn: 'btn-mcu-cronologico', desde: 'C' },
     { id: 'universal', nombre: 'Universal',             simbolo: 'U',  color: '#2e9e4f', btn: 'btn-universal',       desde: 'C' },
-    { id: 'xmen',   nombre: 'X-Men (Fox)',              simbolo: 'X',  color: '#f2b705', btn: 'btn-fox-xmen',        desde: 'L' },
-    { id: 'ff',     nombre: 'Cuatro Fantásticos (Fox)', simbolo: '4',  color: '#1f78d1', btn: 'btn-fox-ff',          desde: 'L' },
+    { id: 'xmen',   nombre: 'X-Men (Fox)',              simbolo: 'X',  color: '#f2b705', btn: 'btn-fox-xmen',        desde: 'L', logo: 'https://upload.wikimedia.org/wikipedia/commons/0/0d/X-Men_movie_logo.png' },
+    { id: 'ff',     nombre: 'Cuatro Fantásticos (Fox)', simbolo: '4',  color: '#1f78d1', btn: 'btn-fox-ff',          desde: 'L', logo: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Fantastic_Four_logo_%28blue_and_white%29.svg/330px-Fantastic_Four_logo_%28blue_and_white%29.svg.png' },
     { id: 'dd',     nombre: 'Daredevil y Elektra',      simbolo: 'DD', color: '#c4161c', btn: 'btn-fox-daredevil',   desde: 'L', logo: 'https://images.seeklogo.com/logo-png/22/2/daredevil-logo-png_seeklogo-226219.png' },
     { id: 'ssu',    nombre: 'Universo Spider-Man (SSU)', simbolo: '🕸️', color: '#6a3fb5', btn: 'btn-sony-ssu',       desde: 'R' },
     { id: 'andrew', nombre: 'Spider-Man (Andrew)',      simbolo: '🕷️', color: '#1c4e9e', btn: 'btn-sony-andrew',    desde: 'R' },
@@ -14791,7 +14795,7 @@ if (btnVolverFichaHawkeyeSerie) {
     }
 });
 
-['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026'].forEach(id => {
+['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -15252,6 +15256,10 @@ const FICHAS_TECNICAS_TITULOS = {
     "pale-blue-eye-2022": "The Pale Blue Eye",
     "el-nino-y-la-garza-2023": "El Niño y la Garza",
     "the-bride-2026": "The Bride!",
+    "american-psycho-2000": "American Psycho",
+    "shaft-2000": "Shaft",
+    "captain-corellis-mandolin-2001": "Captain Corelli's Mandolin",
+    "laurel-canyon-2002": "Laurel Canyon",
     "spider-man-no-way-home": "Spider-Man: No Way Home",
     "black-panther-wakanda-forever": "Black Panther: Wakanda Forever",
     "guardians-of-the-galaxy-3": "Guardians of the Galaxy Vol. 3",
@@ -17129,6 +17137,46 @@ const REPARTO_PELICULAS = {
             { actor: "Annette Bening", personaje: "Dra. Euphronious" },
             { actor: "Jake Gyllenhaal", personaje: "Ronnie Reed" },
             { actor: "Penélope Cruz", personaje: "Myrna Malloy" }
+        ]
+    },
+    "american-psycho-2000": {
+        director: "Mary Harron",
+        elenco: [
+            { actor: "Christian Bale", personaje: "Patrick Bateman" },
+            { actor: "Willem Dafoe", personaje: "Detective Donald Kimball" },
+            { actor: "Reese Witherspoon", personaje: "Evelyn Williams" },
+            { actor: "Samantha Mathis", personaje: "Courtney Rawlinson" },
+            { actor: "Jared Leto", personaje: "Paul Allen" }
+        ]
+    },
+    "shaft-2000": {
+        director: "John Singleton",
+        elenco: [
+            { actor: "Samuel L. Jackson", personaje: "John Shaft" },
+            { actor: "Vanessa Williams", personaje: "Carmen Vasquez" },
+            { actor: "Jeffrey Wright", personaje: "Peoples Hernandez" },
+            { actor: "Christian Bale", personaje: "Walter Wade Jr." },
+            { actor: "Busta Rhymes", personaje: "Rasaan" }
+        ]
+    },
+    "captain-corellis-mandolin-2001": {
+        director: "John Madden",
+        elenco: [
+            { actor: "Nicolas Cage", personaje: "Capitán Antonio Corelli" },
+            { actor: "Penélope Cruz", personaje: "Pelagia" },
+            { actor: "John Hurt", personaje: "Dr. Iannis" },
+            { actor: "Christian Bale", personaje: "Mandras" },
+            { actor: "David Morrissey", personaje: "Weber" }
+        ]
+    },
+    "laurel-canyon-2002": {
+        director: "Lisa Cholodenko",
+        elenco: [
+            { actor: "Frances McDormand", personaje: "Jane Bentley" },
+            { actor: "Christian Bale", personaje: "Sam Bentley" },
+            { actor: "Kate Beckinsale", personaje: "Alex Elliot" },
+            { actor: "Natascha McElhone", personaje: "Sara" },
+            { actor: "Alessandro Nivola", personaje: "Ian McKnight" }
         ]
     },
     "the-new-mutants": {
@@ -22371,7 +22419,7 @@ const filmografiasGrilla = {
     "fawad khan": ["Ms. Marvel"],
     "aramis knight": ["Ms. Marvel"],
     "farhan akhtar": ["Ms. Marvel"],
-    "christian bale": ["Thor: Love and Thunder", "Batman Begins", "The Prestige", "The Dark Knight", "The Dark Knight Rises", "Amsterdam", "The Pale Blue Eye", "El Niño y la Garza", "The Bride!"],
+    "christian bale": ["Thor: Love and Thunder", "Batman Begins", "The Prestige", "The Dark Knight", "The Dark Knight Rises", "Amsterdam", "The Pale Blue Eye", "El Niño y la Garza", "The Bride!", "American Psycho", "Shaft", "Captain Corelli's Mandolin", "Laurel Canyon"],
     "russell crowe": ["Thor: Love and Thunder", "Man of Steel"],
     "melissa mccarthy": ["Thor: Love and Thunder"],
     "ben falcone": ["Thor: Love and Thunder"],
