@@ -813,6 +813,11 @@ const listaMedia = [
     { titulo: "The New World", categoria: "christian-bale", subtipo: "2000", tipo: "Película", fichaTecnicaId: "the-new-world-2005", poster: "https://image.tmdb.org/t/p/original/79d2Qvt9rk4Xvih6FlslrDaEDSB.jpg" },
     { titulo: "Rescue Dawn", categoria: "christian-bale", subtipo: "2000", tipo: "Película", fichaTecnicaId: "rescue-dawn-2007", poster: "https://image.tmdb.org/t/p/original/57zsPJL8EcuDEGpMLEpyF5gfUsH.jpg" },
     { titulo: "The Prestige", categoria: "christian-bale", subtipo: "2000", tipo: "Película", fichaTecnicaId: "the-prestige-2006", poster: "https://www.originalfilmart.com/cdn/shop/products/prestige_2006_english_advance_original_film_art_5000x.jpg?v=1551795612" },
+    { titulo: "3:10 to Yuma", categoria: "christian-bale", subtipo: "2000", tipo: "Película", fichaTecnicaId: "3-10-to-yuma-2007", poster: "https://image.tmdb.org/t/p/w500/voMB69AsLnPNmtfbrBl0lbeFKDH.jpg" },
+    { titulo: "I'm Not There", categoria: "christian-bale", subtipo: "2000", tipo: "Película", fichaTecnicaId: "im-not-there-2007", poster: "https://image.tmdb.org/t/p/original/tprM6eNxANGfntaS5810JXpv8Cu.jpg" },
+    { titulo: "The Dark Knight", categoria: "christian-bale", subtipo: "2000", tipo: "Película", fichaTecnicaId: "the-dark-knight-2008", poster: "https://www.movieposters.com/cdn/shop/files/darkknight.building.24x36_20e90057-f673-4cc3-9ce7-7b0d3eeb7d83_1024x1024.jpg?v=1762974221" },
+    { titulo: "Terminator Salvation", categoria: "christian-bale", subtipo: "2000", tipo: "Película", fichaTecnicaId: "terminator-salvation-2009", poster: "https://image.tmdb.org/t/p/original/8eh8wJTtgD4R9t7aQLVHM6DLp31.jpg" },
+    { titulo: "Public Enemies", categoria: "christian-bale", subtipo: "2000", tipo: "Película", fichaTecnicaId: "public-enemies-2009", poster: "https://image.tmdb.org/t/p/original/1v3SUYA43WA42c0yrFx4NRDwy8W.jpg" },
 
     // --- GEMMA CHAN ---
     { titulo: "Let Them All Talk", categoria: "gemma-chan", subtipo: "2020", tipo: "Película", fichaTecnicaId: "let-them-all-talk", poster: "https://m.media-amazon.com/images/M/MV5BYWM3ODA1MzktMjI1Zi00OTNhLThjNjUtZDhlNDViYjJjMGYyXkEyXkFqcGc@._V1_.jpg" },
@@ -1189,7 +1194,7 @@ const listaMedia = [
     { titulo: "Insomnia", categoria: "christopher-nolan", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOTE2NzQ0MzQtMDRmZi00ZWRiLWE4MDEtY2M1Mjc3OGY5N2JkXkEyXkFqcGc@.V1.jpg" },
     { titulo: "Batman Begins", categoria: "christopher-nolan", tipo: "Película", fichaTecnicaId: "batman-begins-2005", poster: "https://i.pinimg.com/736x/67/88/19/678819ae9fc2b7104ecc124f2e586c05.jpg" },
     { titulo: "The Prestige", categoria: "christopher-nolan", tipo: "Película", fichaTecnicaId: "the-prestige-2006", poster: "https://www.originalfilmart.com/cdn/shop/products/prestige_2006_english_advance_original_film_art_5000x.jpg?v=1551795612" },
-    { titulo: "The Dark Knight", categoria: "christopher-nolan", tipo: "Película", poster: "https://www.movieposters.com/cdn/shop/files/darkknight.building.24x36_20e90057-f673-4cc3-9ce7-7b0d3eeb7d83_1024x1024.jpg?v=1762974221" },
+    { titulo: "The Dark Knight", categoria: "christopher-nolan", tipo: "Película", fichaTecnicaId: "the-dark-knight-2008", poster: "https://www.movieposters.com/cdn/shop/files/darkknight.building.24x36_20e90057-f673-4cc3-9ce7-7b0d3eeb7d83_1024x1024.jpg?v=1762974221" },
     { titulo: "Inception", categoria: "christopher-nolan", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg" },
     { titulo: "The Dark Knight Rises", categoria: "christopher-nolan", tipo: "Película", poster: "https://i.pinimg.com/736x/76/bd/14/76bd1451fa0d4e66a83095bfb5ad63a8.jpg" },
     { titulo: "Interstellar", categoria: "christopher-nolan", tipo: "Película", poster: "https://m.media-amazon.com/images/I/91obuWzA3XL.jpg" },
@@ -14804,7 +14809,7 @@ if (btnVolverFichaHawkeyeSerie) {
     }
 });
 
-['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006'].forEach(id => {
+['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -15278,6 +15283,11 @@ const FICHAS_TECNICAS_TITULOS = {
     "the-new-world-2005": "The New World",
     "rescue-dawn-2007": "Rescue Dawn",
     "the-prestige-2006": "The Prestige",
+    "3-10-to-yuma-2007": "3:10 to Yuma",
+    "im-not-there-2007": "I'm Not There",
+    "the-dark-knight-2008": "The Dark Knight",
+    "terminator-salvation-2009": "Terminator Salvation",
+    "public-enemies-2009": "Public Enemies",
     "spider-man-no-way-home": "Spider-Man: No Way Home",
     "black-panther-wakanda-forever": "Black Panther: Wakanda Forever",
     "guardians-of-the-galaxy-3": "Guardians of the Galaxy Vol. 3",
@@ -17283,6 +17293,56 @@ const REPARTO_PELICULAS = {
             { actor: "Michael Caine", personaje: "Cutter" },
             { actor: "Scarlett Johansson", personaje: "Olivia" },
             { actor: "Piper Perabo", personaje: "Julia" }
+        ]
+    },
+    "3-10-to-yuma-2007": {
+        director: "James Mangold",
+        elenco: [
+            { actor: "Russell Crowe", personaje: "Ben Wade" },
+            { actor: "Christian Bale", personaje: "Dan Evans" },
+            { actor: "Logan Lerman", personaje: "William Evans" },
+            { actor: "Dallas Roberts", personaje: "Grayson Butterfield" },
+            { actor: "Ben Foster", personaje: "Charlie Prince" }
+        ]
+    },
+    "im-not-there-2007": {
+        director: "Todd Haynes",
+        elenco: [
+            { actor: "Christian Bale", personaje: "Jack / John" },
+            { actor: "Cate Blanchett", personaje: "Jude" },
+            { actor: "Heath Ledger", personaje: "Robbie" },
+            { actor: "Richard Gere", personaje: "Billy" },
+            { actor: "Marcus Carl Franklin", personaje: "Woody" }
+        ]
+    },
+    "the-dark-knight-2008": {
+        director: "Christopher Nolan",
+        elenco: [
+            { actor: "Christian Bale", personaje: "Bruce Wayne / Batman" },
+            { actor: "Heath Ledger", personaje: "Joker" },
+            { actor: "Aaron Eckhart", personaje: "Harvey Dent" },
+            { actor: "Michael Caine", personaje: "Alfred" },
+            { actor: "Maggie Gyllenhaal", personaje: "Rachel Dawes" }
+        ]
+    },
+    "terminator-salvation-2009": {
+        director: "McG",
+        elenco: [
+            { actor: "Christian Bale", personaje: "John Connor" },
+            { actor: "Sam Worthington", personaje: "Marcus Wright" },
+            { actor: "Moon Bloodgood", personaje: "Blair Williams" },
+            { actor: "Helena Bonham Carter", personaje: "Dr. Serena Kogen" },
+            { actor: "Anton Yelchin", personaje: "Kyle Reese" }
+        ]
+    },
+    "public-enemies-2009": {
+        director: "Michael Mann",
+        elenco: [
+            { actor: "Johnny Depp", personaje: "John Dillinger" },
+            { actor: "Christian Bale", personaje: "Melvin Purvis" },
+            { actor: "Marion Cotillard", personaje: "Billie Frechette" },
+            { actor: "Billy Crudup", personaje: "J. Edgar Hoover" },
+            { actor: "Stephen Dorff", personaje: "Homer Van Meter" }
         ]
     },
     "the-new-mutants": {
