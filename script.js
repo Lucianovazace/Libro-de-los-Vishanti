@@ -837,6 +837,12 @@ const listaMedia = [
     { titulo: "Swing Kids", categoria: "christian-bale", subtipo: "1990", tipo: "Película", fichaTecnicaId: "swing-kids-1993", poster: "https://image.tmdb.org/t/p/original/tdVtr58nc0PrDDY0JCMIrQ6v70z.jpg" },
     { titulo: "Little Women (1994)", categoria: "christian-bale", subtipo: "1990", tipo: "Película", fichaTecnicaId: "little-women-1994", poster: "https://image.tmdb.org/t/p/w500/1ZzH1XMcKAe5NdrKL5MfcqZHHsZ.jpg" },
     { titulo: "Pocahontas", categoria: "christian-bale", subtipo: "1990", tipo: "Película", fichaTecnicaId: "pocahontas-1995", poster: "https://m.media-amazon.com/images/I/71fk6ri1K+L._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "The Portrait of a Lady", categoria: "christian-bale", subtipo: "1990", tipo: "Película", fichaTecnicaId: "the-portrait-of-a-lady-1996", poster: "https://image.tmdb.org/t/p/w500/yoUuMtWTQXzfARYE0nF7Nn7gRuS.jpg" },
+    { titulo: "The Secret Agent (1996)", categoria: "christian-bale", subtipo: "1990", tipo: "Película", fichaTecnicaId: "the-secret-agent-1996", poster: "https://m.media-amazon.com/images/M/MV5BOTJkMzZhZDktYzhkZS00ZjBjLTk0ZGMtMGU3YjAxNTRmNGM4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Metroland", categoria: "christian-bale", subtipo: "1990", tipo: "Película", fichaTecnicaId: "metroland-1997", poster: "https://m.media-amazon.com/images/M/MV5BMTQ1Nzc2NDYyMl5BMl5BanBnXkFtZTYwMjcxOTk4._V1_.jpg" },
+    { titulo: "Velvet Goldmine", categoria: "christian-bale", subtipo: "1990", tipo: "Película", fichaTecnicaId: "velvet-goldmine-1998", poster: "https://image.tmdb.org/t/p/w500/4EJkObEJFvXCuoVqOP7XBXGqdQ1.jpg" },
+    { titulo: "A Midsummer Night's Dream", categoria: "christian-bale", subtipo: "1990", tipo: "Película", fichaTecnicaId: "midsummer-nights-dream-1999", poster: "https://image.tmdb.org/t/p/original/5KTYh2gXmsHUzsRsrstBGy0QfXf.jpg" },
+    { titulo: "Mowgli: Legend of the Jungle", categoria: "christian-bale", subtipo: "2010", tipo: "Película", fichaTecnicaId: "mowgli-legend-of-the-jungle-2018", poster: "https://image.tmdb.org/t/p/original/13ZM2d7hC9n8rDezZVHCEJWjgid.jpg" },
 
     // --- GEMMA CHAN ---
     { titulo: "Let Them All Talk", categoria: "gemma-chan", subtipo: "2020", tipo: "Película", fichaTecnicaId: "let-them-all-talk", poster: "https://m.media-amazon.com/images/M/MV5BYWM3ODA1MzktMjI1Zi00OTNhLThjNjUtZDhlNDViYjJjMGYyXkEyXkFqcGc@._V1_.jpg" },
@@ -14828,7 +14834,7 @@ if (btnVolverFichaHawkeyeSerie) {
     }
 });
 
-['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994'].forEach(id => {
+['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -15323,6 +15329,12 @@ const FICHAS_TECNICAS_TITULOS = {
     "newsies-1992": "Newsies",
     "swing-kids-1993": "Swing Kids",
     "little-women-1994": "Little Women (1994)",
+    "the-portrait-of-a-lady-1996": "The Portrait of a Lady",
+    "the-secret-agent-1996": "The Secret Agent (1996)",
+    "metroland-1997": "Metroland",
+    "velvet-goldmine-1998": "Velvet Goldmine",
+    "midsummer-nights-dream-1999": "A Midsummer Night's Dream",
+    "mowgli-legend-of-the-jungle-2018": "Mowgli: Legend of the Jungle",
     "spider-man-no-way-home": "Spider-Man: No Way Home",
     "black-panther-wakanda-forever": "Black Panther: Wakanda Forever",
     "guardians-of-the-galaxy-3": "Guardians of the Galaxy Vol. 3",
@@ -17539,6 +17551,66 @@ const REPARTO_PELICULAS = {
             { actor: "Gabriel Byrne", personaje: "Friedrich Bhaer" },
             { actor: "Trini Alvarado", personaje: "Meg March" },
             { actor: "Kirsten Dunst", personaje: "Amy March (joven)" }
+        ]
+    },
+    "the-portrait-of-a-lady-1996": {
+        director: "Jane Campion",
+        elenco: [
+            { actor: "Nicole Kidman", personaje: "Isabel Archer" },
+            { actor: "John Malkovich", personaje: "Gilbert Osmond" },
+            { actor: "Barbara Hershey", personaje: "Madame Serena Merle" },
+            { actor: "Mary-Louise Parker", personaje: "Henrietta Stackpole" },
+            { actor: "Christian Bale", personaje: "Edward Rosier" }
+        ]
+    },
+    "the-secret-agent-1996": {
+        director: "Christopher Hampton",
+        elenco: [
+            { actor: "Bob Hoskins", personaje: "Verloc" },
+            { actor: "Patricia Arquette", personaje: "Winnie" },
+            { actor: "Gérard Depardieu", personaje: "Ossipon" },
+            { actor: "Jim Broadbent", personaje: "Inspector Jefe Heat" },
+            { actor: "Christian Bale", personaje: "Stevie" }
+        ]
+    },
+    "metroland-1997": {
+        director: "Philip Saville",
+        elenco: [
+            { actor: "Christian Bale", personaje: "Chris" },
+            { actor: "Emily Watson", personaje: "Marion" },
+            { actor: "Lee Ross", personaje: "Toni" },
+            { actor: "Elsa Zylberstein", personaje: "Annick" },
+            { actor: "Rufus", personaje: "Henri" }
+        ]
+    },
+    "velvet-goldmine-1998": {
+        director: "Todd Haynes",
+        elenco: [
+            { actor: "Jonathan Rhys Meyers", personaje: "Brian Slade" },
+            { actor: "Christian Bale", personaje: "Arthur Stuart" },
+            { actor: "Ewan McGregor", personaje: "Curt Wild" },
+            { actor: "Toni Collette", personaje: "Mandy Slade" },
+            { actor: "Eddie Izzard", personaje: "Jerry Devine" }
+        ]
+    },
+    "midsummer-nights-dream-1999": {
+        director: "Michael Hoffman",
+        elenco: [
+            { actor: "Michelle Pfeiffer", personaje: "Titania" },
+            { actor: "Rupert Everett", personaje: "Oberón" },
+            { actor: "Kevin Kline", personaje: "Nick Bottom" },
+            { actor: "Stanley Tucci", personaje: "Puck" },
+            { actor: "Christian Bale", personaje: "Demetrius" }
+        ]
+    },
+    "mowgli-legend-of-the-jungle-2018": {
+        director: "Andy Serkis",
+        elenco: [
+            { actor: "Rohan Chand", personaje: "Mowgli" },
+            { actor: "Christian Bale", personaje: "Bagheera (voz)" },
+            { actor: "Cate Blanchett", personaje: "Kaa (voz)" },
+            { actor: "Benedict Cumberbatch", personaje: "Shere Khan (voz)" },
+            { actor: "Naomie Harris", personaje: "Nisha (voz)" }
         ]
     },
     "the-new-mutants": {
@@ -22781,7 +22853,7 @@ const filmografiasGrilla = {
     "fawad khan": ["Ms. Marvel"],
     "aramis knight": ["Ms. Marvel"],
     "farhan akhtar": ["Ms. Marvel"],
-    "christian bale": ["Thor: Love and Thunder", "Batman Begins", "The Prestige", "The Dark Knight", "The Dark Knight Rises", "Amsterdam", "The Pale Blue Eye", "El Niño y la Garza", "The Bride!", "American Psycho", "Shaft", "Captain Corelli's Mandolin", "Laurel Canyon", "Equilibrium", "Reign of Fire", "El Maquinista", "El Castillo Ambulante", "Harsh Times", "The New World", "Rescue Dawn", "3:10 to Yuma", "I'm Not There", "Terminator Salvation", "Public Enemies", "The Fighter", "Flowers of War", "Out of the Furnace", "American Hustle", "Exodus: Gods and Kings", "Knight of Cups", "The Big Short", "Hostiles", "Vice", "Ford v Ferrari", "Empire of the Sun", "Henry V", "Newsies", "Swing Kids", "Little Women", "Pocahontas"],
+    "christian bale": ["Thor: Love and Thunder", "Batman Begins", "The Prestige", "The Dark Knight", "The Dark Knight Rises", "Amsterdam", "The Pale Blue Eye", "El Niño y la Garza", "The Bride!", "American Psycho", "Shaft", "Captain Corelli's Mandolin", "Laurel Canyon", "Equilibrium", "Reign of Fire", "El Maquinista", "El Castillo Ambulante", "Harsh Times", "The New World", "Rescue Dawn", "3:10 to Yuma", "I'm Not There", "Terminator Salvation", "Public Enemies", "The Fighter", "Flowers of War", "Out of the Furnace", "American Hustle", "Exodus: Gods and Kings", "Knight of Cups", "The Big Short", "Hostiles", "Vice", "Ford v Ferrari", "Empire of the Sun", "Henry V", "Newsies", "Swing Kids", "Little Women", "Pocahontas", "The Portrait of a Lady", "The Secret Agent", "Metroland", "Velvet Goldmine", "A Midsummer Night's Dream", "Mowgli: Legend of the Jungle"],
     "russell crowe": ["Thor: Love and Thunder", "Man of Steel"],
     "melissa mccarthy": ["Thor: Love and Thunder"],
     "ben falcone": ["Thor: Love and Thunder"],
