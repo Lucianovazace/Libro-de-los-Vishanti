@@ -804,6 +804,15 @@ const listaMedia = [
     { titulo: "Shaft", categoria: "christian-bale", subtipo: "2000", tipo: "Película", fichaTecnicaId: "shaft-2000", poster: "https://image.tmdb.org/t/p/original/5ncvnNPaN73cOqD4muE413sSOyY.jpg" },
     { titulo: "Captain Corelli's Mandolin", categoria: "christian-bale", subtipo: "2000", tipo: "Película", fichaTecnicaId: "captain-corellis-mandolin-2001", poster: "https://image.tmdb.org/t/p/original/1TmKoGfurDrSqfYUD18CUQRPI1v.jpg" },
     { titulo: "Laurel Canyon", categoria: "christian-bale", subtipo: "2000", tipo: "Película", fichaTecnicaId: "laurel-canyon-2002", poster: "https://image.tmdb.org/t/p/original/40rJW1iXXSLdmBl0ihUeDc2ZNQw.jpg" },
+    { titulo: "Equilibrium", categoria: "christian-bale", subtipo: "2000", tipo: "Película", fichaTecnicaId: "equilibrium-2002", poster: "https://image.tmdb.org/t/p/original/yQuovle5Ov6q69XSdTNdH52eANc.jpg" },
+    { titulo: "Reign of Fire", categoria: "christian-bale", subtipo: "2000", tipo: "Película", fichaTecnicaId: "reign-of-fire-2002", poster: "https://image.tmdb.org/t/p/original/nLdMhPtP7g1MiMnzmB8iqLdhxpd.jpg" },
+    { titulo: "El Maquinista", categoria: "christian-bale", subtipo: "2000", tipo: "Película", fichaTecnicaId: "el-maquinista-2004", poster: "https://image.tmdb.org/t/p/w500/2z6jtS2dVTbM73USNEewBh7kwX3.jpg" },
+    { titulo: "El Castillo Ambulante", categoria: "christian-bale", subtipo: "2000", tipo: "Película", fichaTecnicaId: "el-castillo-ambulante-2004", poster: "https://image.tmdb.org/t/p/original/p8EARnEw8KPZzlZg3vkseYVMczu.jpg" },
+    { titulo: "Batman Begins", categoria: "christian-bale", subtipo: "2000", tipo: "Película", fichaTecnicaId: "batman-begins-2005", poster: "https://i.pinimg.com/736x/67/88/19/678819ae9fc2b7104ecc124f2e586c05.jpg" },
+    { titulo: "Harsh Times", categoria: "christian-bale", subtipo: "2000", tipo: "Película", fichaTecnicaId: "harsh-times-2006", poster: "https://image.tmdb.org/t/p/w500/raBWBnGz2X6FQ3iUwPwYQE4FrkY.jpg" },
+    { titulo: "The New World", categoria: "christian-bale", subtipo: "2000", tipo: "Película", fichaTecnicaId: "the-new-world-2005", poster: "https://image.tmdb.org/t/p/original/79d2Qvt9rk4Xvih6FlslrDaEDSB.jpg" },
+    { titulo: "Rescue Dawn", categoria: "christian-bale", subtipo: "2000", tipo: "Película", fichaTecnicaId: "rescue-dawn-2007", poster: "https://image.tmdb.org/t/p/original/57zsPJL8EcuDEGpMLEpyF5gfUsH.jpg" },
+    { titulo: "The Prestige", categoria: "christian-bale", subtipo: "2000", tipo: "Película", fichaTecnicaId: "the-prestige-2006", poster: "https://www.originalfilmart.com/cdn/shop/products/prestige_2006_english_advance_original_film_art_5000x.jpg?v=1551795612" },
 
     // --- GEMMA CHAN ---
     { titulo: "Let Them All Talk", categoria: "gemma-chan", subtipo: "2020", tipo: "Película", fichaTecnicaId: "let-them-all-talk", poster: "https://m.media-amazon.com/images/M/MV5BYWM3ODA1MzktMjI1Zi00OTNhLThjNjUtZDhlNDViYjJjMGYyXkEyXkFqcGc@._V1_.jpg" },
@@ -1178,8 +1187,8 @@ const listaMedia = [
     { titulo: "Following", categoria: "christopher-nolan", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYTQxYzIwMTAtYjZlNi00YzkwLWI4ZGYtNzNlZjU3N2MyNzI4XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
     { titulo: "Memento", categoria: "christopher-nolan", tipo: "Película", poster: "https://m.media-amazon.com/images/I/51jojzqpkPL.AC_UF894,1000_QL80.jpg" },
     { titulo: "Insomnia", categoria: "christopher-nolan", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOTE2NzQ0MzQtMDRmZi00ZWRiLWE4MDEtY2M1Mjc3OGY5N2JkXkEyXkFqcGc@.V1.jpg" },
-    { titulo: "Batman Begins", categoria: "christopher-nolan", tipo: "Película", poster: "https://i.pinimg.com/736x/67/88/19/678819ae9fc2b7104ecc124f2e586c05.jpg" },
-    { titulo: "The Prestige", categoria: "christopher-nolan", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/prestige_2006_english_advance_original_film_art_5000x.jpg?v=1551795612" },
+    { titulo: "Batman Begins", categoria: "christopher-nolan", tipo: "Película", fichaTecnicaId: "batman-begins-2005", poster: "https://i.pinimg.com/736x/67/88/19/678819ae9fc2b7104ecc124f2e586c05.jpg" },
+    { titulo: "The Prestige", categoria: "christopher-nolan", tipo: "Película", fichaTecnicaId: "the-prestige-2006", poster: "https://www.originalfilmart.com/cdn/shop/products/prestige_2006_english_advance_original_film_art_5000x.jpg?v=1551795612" },
     { titulo: "The Dark Knight", categoria: "christopher-nolan", tipo: "Película", poster: "https://www.movieposters.com/cdn/shop/files/darkknight.building.24x36_20e90057-f673-4cc3-9ce7-7b0d3eeb7d83_1024x1024.jpg?v=1762974221" },
     { titulo: "Inception", categoria: "christopher-nolan", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg" },
     { titulo: "The Dark Knight Rises", categoria: "christopher-nolan", tipo: "Película", poster: "https://i.pinimg.com/736x/76/bd/14/76bd1451fa0d4e66a83095bfb5ad63a8.jpg" },
@@ -14795,7 +14804,7 @@ if (btnVolverFichaHawkeyeSerie) {
     }
 });
 
-['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002'].forEach(id => {
+['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -15260,6 +15269,15 @@ const FICHAS_TECNICAS_TITULOS = {
     "shaft-2000": "Shaft",
     "captain-corellis-mandolin-2001": "Captain Corelli's Mandolin",
     "laurel-canyon-2002": "Laurel Canyon",
+    "equilibrium-2002": "Equilibrium",
+    "reign-of-fire-2002": "Reign of Fire",
+    "el-maquinista-2004": "El Maquinista",
+    "el-castillo-ambulante-2004": "El Castillo Ambulante",
+    "batman-begins-2005": "Batman Begins",
+    "harsh-times-2006": "Harsh Times",
+    "the-new-world-2005": "The New World",
+    "rescue-dawn-2007": "Rescue Dawn",
+    "the-prestige-2006": "The Prestige",
     "spider-man-no-way-home": "Spider-Man: No Way Home",
     "black-panther-wakanda-forever": "Black Panther: Wakanda Forever",
     "guardians-of-the-galaxy-3": "Guardians of the Galaxy Vol. 3",
@@ -17177,6 +17195,94 @@ const REPARTO_PELICULAS = {
             { actor: "Kate Beckinsale", personaje: "Alex Elliot" },
             { actor: "Natascha McElhone", personaje: "Sara" },
             { actor: "Alessandro Nivola", personaje: "Ian McKnight" }
+        ]
+    },
+    "equilibrium-2002": {
+        director: "Kurt Wimmer",
+        elenco: [
+            { actor: "Christian Bale", personaje: "John Preston" },
+            { actor: "Emily Watson", personaje: "Mary" },
+            { actor: "Taye Diggs", personaje: "Brandt" },
+            { actor: "Angus Macfadyen", personaje: "DuPont" },
+            { actor: "Sean Bean", personaje: "Partridge" }
+        ]
+    },
+    "reign-of-fire-2002": {
+        director: "Rob Bowman",
+        elenco: [
+            { actor: "Christian Bale", personaje: "Quinn" },
+            { actor: "Matthew McConaughey", personaje: "Van Zan" },
+            { actor: "Izabella Scorupco", personaje: "Alex Jensen" },
+            { actor: "Gerard Butler", personaje: "Dave Creedy" },
+            { actor: "David Kennedy", personaje: "Eddie Stax" }
+        ]
+    },
+    "el-maquinista-2004": {
+        director: "Brad Anderson",
+        elenco: [
+            { actor: "Christian Bale", personaje: "Trevor Reznik" },
+            { actor: "Jennifer Jason Leigh", personaje: "Stevie" },
+            { actor: "Aitana Sánchez-Gijón", personaje: "Marie" },
+            { actor: "John Sharian", personaje: "Ivan" },
+            { actor: "Michael Ironside", personaje: "Miller" }
+        ]
+    },
+    "el-castillo-ambulante-2004": {
+        director: "Hayao Miyazaki",
+        elenco: [
+            { actor: "Christian Bale", personaje: "Howl (voz, doblaje en inglés)" },
+            { actor: "Emily Mortimer", personaje: "Sophie joven (voz, doblaje en inglés)" },
+            { actor: "Jean Simmons", personaje: "Sophie anciana (voz, doblaje en inglés)" },
+            { actor: "Lauren Bacall", personaje: "Bruja de las Tierras Baldías (voz, doblaje en inglés)" },
+            { actor: "Blythe Danner", personaje: "Madame Suliman (voz, doblaje en inglés)" }
+        ]
+    },
+    "batman-begins-2005": {
+        director: "Christopher Nolan",
+        elenco: [
+            { actor: "Christian Bale", personaje: "Bruce Wayne / Batman" },
+            { actor: "Michael Caine", personaje: "Alfred Pennyworth" },
+            { actor: "Liam Neeson", personaje: "Henri Ducard" },
+            { actor: "Katie Holmes", personaje: "Rachel Dawes" },
+            { actor: "Gary Oldman", personaje: "Teniente James Gordon" }
+        ]
+    },
+    "harsh-times-2006": {
+        director: "David Ayer",
+        elenco: [
+            { actor: "Christian Bale", personaje: "Jim Davis" },
+            { actor: "Freddy Rodriguez", personaje: "Mike Alonzo" },
+            { actor: "Eva Longoria", personaje: "Sylvia" },
+            { actor: "Terry Crews", personaje: "Darrell" },
+            { actor: "Noel Gugliemi", personaje: "Flaco" }
+        ]
+    },
+    "the-new-world-2005": {
+        director: "Terrence Malick",
+        elenco: [
+            { actor: "Colin Farrell", personaje: "Capitán John Smith" },
+            { actor: "Q'orianka Kilcher", personaje: "Pocahontas" },
+            { actor: "Christian Bale", personaje: "John Rolfe" },
+            { actor: "Jason Aaron Baca", personaje: "Parker" },
+            { actor: "Greg Cooper", personaje: "Barquero" }
+        ]
+    },
+    "rescue-dawn-2007": {
+        director: "Werner Herzog",
+        elenco: [
+            { actor: "Christian Bale", personaje: "Dieter Dengler" },
+            { actor: "Steve Zahn", personaje: "Duane" },
+            { actor: "Jeremy Davies", personaje: "Gene" }
+        ]
+    },
+    "the-prestige-2006": {
+        director: "Christopher Nolan",
+        elenco: [
+            { actor: "Christian Bale", personaje: "Alfred Borden" },
+            { actor: "Hugh Jackman", personaje: "Robert Angier" },
+            { actor: "Michael Caine", personaje: "Cutter" },
+            { actor: "Scarlett Johansson", personaje: "Olivia" },
+            { actor: "Piper Perabo", personaje: "Julia" }
         ]
     },
     "the-new-mutants": {
@@ -22419,7 +22525,7 @@ const filmografiasGrilla = {
     "fawad khan": ["Ms. Marvel"],
     "aramis knight": ["Ms. Marvel"],
     "farhan akhtar": ["Ms. Marvel"],
-    "christian bale": ["Thor: Love and Thunder", "Batman Begins", "The Prestige", "The Dark Knight", "The Dark Knight Rises", "Amsterdam", "The Pale Blue Eye", "El Niño y la Garza", "The Bride!", "American Psycho", "Shaft", "Captain Corelli's Mandolin", "Laurel Canyon"],
+    "christian bale": ["Thor: Love and Thunder", "Batman Begins", "The Prestige", "The Dark Knight", "The Dark Knight Rises", "Amsterdam", "The Pale Blue Eye", "El Niño y la Garza", "The Bride!", "American Psycho", "Shaft", "Captain Corelli's Mandolin", "Laurel Canyon", "Equilibrium", "Reign of Fire", "El Maquinista", "El Castillo Ambulante", "Harsh Times", "The New World", "Rescue Dawn"],
     "russell crowe": ["Thor: Love and Thunder", "Man of Steel"],
     "melissa mccarthy": ["Thor: Love and Thunder"],
     "ben falcone": ["Thor: Love and Thunder"],
