@@ -843,6 +843,10 @@ const listaMedia = [
     { titulo: "Velvet Goldmine", categoria: "christian-bale", subtipo: "1990", tipo: "Película", fichaTecnicaId: "velvet-goldmine-1998", poster: "https://image.tmdb.org/t/p/w500/4EJkObEJFvXCuoVqOP7XBXGqdQ1.jpg" },
     { titulo: "A Midsummer Night's Dream", categoria: "christian-bale", subtipo: "1990", tipo: "Película", fichaTecnicaId: "midsummer-nights-dream-1999", poster: "https://image.tmdb.org/t/p/original/5KTYh2gXmsHUzsRsrstBGy0QfXf.jpg" },
     { titulo: "Mowgli: Legend of the Jungle", categoria: "christian-bale", subtipo: "2010", tipo: "Película", fichaTecnicaId: "mowgli-legend-of-the-jungle-2018", poster: "https://image.tmdb.org/t/p/original/13ZM2d7hC9n8rDezZVHCEJWjgid.jpg" },
+    { titulo: "Mio in the Land of Faraway", categoria: "christian-bale", subtipo: "1980", tipo: "Película", fichaTecnicaId: "mio-in-the-land-of-faraway-1987", poster: "https://image.tmdb.org/t/p/w500/3C5JsV8Id21pVfOAmWBZjrMZ6GZ.jpg" },
+    { titulo: "Prince of Jutland", categoria: "christian-bale", subtipo: "1990", tipo: "Película", fichaTecnicaId: "prince-of-jutland-1994", poster: "https://image.tmdb.org/t/p/original/7DPAsk4o0SaBwOlhH1TpDKbznRn.jpg" },
+    { titulo: "All the Little Animals", categoria: "christian-bale", subtipo: "1990", tipo: "Película", fichaTecnicaId: "all-the-little-animals-1998", poster: "https://image.tmdb.org/t/p/w500/8FTYas78VeQbnP94Sl4ePAGmZwk.jpg" },
+    { titulo: "The Promise", categoria: "christian-bale", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-promise-2016", poster: "https://image.tmdb.org/t/p/original/qM61fndC3TN023zapoNVuNIgU72.jpg" },
 
     // --- GEMMA CHAN ---
     { titulo: "Let Them All Talk", categoria: "gemma-chan", subtipo: "2020", tipo: "Película", fichaTecnicaId: "let-them-all-talk", poster: "https://m.media-amazon.com/images/M/MV5BYWM3ODA1MzktMjI1Zi00OTNhLThjNjUtZDhlNDViYjJjMGYyXkEyXkFqcGc@._V1_.jpg" },
@@ -14834,7 +14838,7 @@ if (btnVolverFichaHawkeyeSerie) {
     }
 });
 
-['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018'].forEach(id => {
+['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -15335,6 +15339,10 @@ const FICHAS_TECNICAS_TITULOS = {
     "velvet-goldmine-1998": "Velvet Goldmine",
     "midsummer-nights-dream-1999": "A Midsummer Night's Dream",
     "mowgli-legend-of-the-jungle-2018": "Mowgli: Legend of the Jungle",
+    "mio-in-the-land-of-faraway-1987": "Mio in the Land of Faraway",
+    "prince-of-jutland-1994": "Prince of Jutland",
+    "all-the-little-animals-1998": "All the Little Animals",
+    "the-promise-2016": "The Promise",
     "spider-man-no-way-home": "Spider-Man: No Way Home",
     "black-panther-wakanda-forever": "Black Panther: Wakanda Forever",
     "guardians-of-the-galaxy-3": "Guardians of the Galaxy Vol. 3",
@@ -17611,6 +17619,46 @@ const REPARTO_PELICULAS = {
             { actor: "Cate Blanchett", personaje: "Kaa (voz)" },
             { actor: "Benedict Cumberbatch", personaje: "Shere Khan (voz)" },
             { actor: "Naomie Harris", personaje: "Nisha (voz)" }
+        ]
+    },
+    "mio-in-the-land-of-faraway-1987": {
+        director: "Vladimir Grammatikov",
+        elenco: [
+            { actor: "Nicholas Pickard", personaje: "Mio / Bosse" },
+            { actor: "Christian Bale", personaje: "Jum-Jum / Benke" },
+            { actor: "Christopher Lee", personaje: "Kato" },
+            { actor: "Timothy Bottoms", personaje: "El Rey" },
+            { actor: "Susannah York", personaje: "La Tejedora" }
+        ]
+    },
+    "prince-of-jutland-1994": {
+        director: "Gabriel Axel",
+        elenco: [
+            { actor: "Christian Bale", personaje: "Amled" },
+            { actor: "Gabriel Byrne", personaje: "Fenge" },
+            { actor: "Helen Mirren", personaje: "Geruth" },
+            { actor: "Kate Beckinsale", personaje: "Ethel" },
+            { actor: "Brian Cox", personaje: "Aethelwine" }
+        ]
+    },
+    "all-the-little-animals-1998": {
+        director: "Jeremy Thomas",
+        elenco: [
+            { actor: "Christian Bale", personaje: "Bobby" },
+            { actor: "John Hurt", personaje: "Mr. Summers" },
+            { actor: "Daniel Benzali", personaje: "De Winter" },
+            { actor: "James Faulkner", personaje: "Mr. Whiteside" },
+            { actor: "Amanda Boyle", personaje: "Des" }
+        ]
+    },
+    "the-promise-2016": {
+        director: "Terry George",
+        elenco: [
+            { actor: "Oscar Isaac", personaje: "Michael Boghosian" },
+            { actor: "Charlotte Le Bon", personaje: "Ana Khesarian" },
+            { actor: "Christian Bale", personaje: "Chris Myers" },
+            { actor: "Shohreh Aghdashloo", personaje: "Marta Boghosian" },
+            { actor: "Marwan Kenzari", personaje: "Emre Ogan" }
         ]
     },
     "the-new-mutants": {
@@ -22853,7 +22901,7 @@ const filmografiasGrilla = {
     "fawad khan": ["Ms. Marvel"],
     "aramis knight": ["Ms. Marvel"],
     "farhan akhtar": ["Ms. Marvel"],
-    "christian bale": ["Thor: Love and Thunder", "Batman Begins", "The Prestige", "The Dark Knight", "The Dark Knight Rises", "Amsterdam", "The Pale Blue Eye", "El Niño y la Garza", "The Bride!", "American Psycho", "Shaft", "Captain Corelli's Mandolin", "Laurel Canyon", "Equilibrium", "Reign of Fire", "El Maquinista", "El Castillo Ambulante", "Harsh Times", "The New World", "Rescue Dawn", "3:10 to Yuma", "I'm Not There", "Terminator Salvation", "Public Enemies", "The Fighter", "Flowers of War", "Out of the Furnace", "American Hustle", "Exodus: Gods and Kings", "Knight of Cups", "The Big Short", "Hostiles", "Vice", "Ford v Ferrari", "Empire of the Sun", "Henry V", "Newsies", "Swing Kids", "Little Women", "Pocahontas", "The Portrait of a Lady", "The Secret Agent", "Metroland", "Velvet Goldmine", "A Midsummer Night's Dream", "Mowgli: Legend of the Jungle"],
+    "christian bale": ["Thor: Love and Thunder", "Batman Begins", "The Prestige", "The Dark Knight", "The Dark Knight Rises", "Amsterdam", "The Pale Blue Eye", "El Niño y la Garza", "The Bride!", "American Psycho", "Shaft", "Captain Corelli's Mandolin", "Laurel Canyon", "Equilibrium", "Reign of Fire", "El Maquinista", "El Castillo Ambulante", "Harsh Times", "The New World", "Rescue Dawn", "3:10 to Yuma", "I'm Not There", "Terminator Salvation", "Public Enemies", "The Fighter", "Flowers of War", "Out of the Furnace", "American Hustle", "Exodus: Gods and Kings", "Knight of Cups", "The Big Short", "Hostiles", "Vice", "Ford v Ferrari", "Empire of the Sun", "Henry V", "Newsies", "Swing Kids", "Little Women", "Pocahontas", "The Portrait of a Lady", "The Secret Agent", "Metroland", "Velvet Goldmine", "A Midsummer Night's Dream", "Mowgli: Legend of the Jungle", "Mio in the Land of Faraway", "Prince of Jutland", "All the Little Animals", "The Promise"],
     "russell crowe": ["Thor: Love and Thunder", "Man of Steel"],
     "melissa mccarthy": ["Thor: Love and Thunder"],
     "ben falcone": ["Thor: Love and Thunder"],
