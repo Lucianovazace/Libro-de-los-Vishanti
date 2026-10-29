@@ -1046,8 +1046,16 @@ const listaMedia = [
     { titulo: "The Odyssey", categoria: "tom-holland", subtipo: "2020", tipo: "Película", poster: "https://img.asmedia.epimg.net/resizer/v2/AP6RDKAGQVE4DEON7ETUS4UVM4.jpg?auth=5abec700c478bffaa862bc1e153efeb77076781fbd4dc9df918ddb11a11979ea&width=375" },
     { titulo: "Spider-Man: Brand New Day", categoria: "tom-holland", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOWNjYWM3NWItOGE0ZS00MWRjLThiZWEtYjc4ZmNmMmU5ZTVmXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
     { titulo: "The Crowded Room", categoria: "tom-holland", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "the-crowded-room-2023", poster: "https://image.tmdb.org/t/p/original/36TcuMJFyr8q8zelVbBbs59bL53.jpg" },
+    { titulo: "Arrietty y el Mundo de los Diminutos", categoria: "tom-holland", subtipo: "2010", tipo: "Película", fichaTecnicaId: "arrietty-2010", poster: "https://image.tmdb.org/t/p/original/1uEzy1zW8M4c4jePqLfIGXlBHvl.jpg" },
+    { titulo: "The Impossible", categoria: "tom-holland", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-impossible-2012", poster: "https://image.tmdb.org/t/p/original/nGmXR3RhMCwU54VBHKuECt5j1Ae.jpg" },
+    { titulo: "How I Live Now", categoria: "tom-holland", subtipo: "2010", tipo: "Película", fichaTecnicaId: "how-i-live-now-2013", poster: "https://image.tmdb.org/t/p/w500/4drLEdRSIzKZOKLsM79kBvsuq18.jpg" },
+    { titulo: "Wolf Hall", categoria: "tom-holland", subtipo: "2010", tipo: "Serie", fichaTecnicaId: "wolf-hall-2015", poster: "https://image.tmdb.org/t/p/w500/dGuiMtUQBGxM3ZWosphO2MdYw8o.jpg" },
+    { titulo: "In the Heart of the Sea", categoria: "tom-holland", subtipo: "2010", tipo: "Película", fichaTecnicaId: "in-the-heart-of-the-sea-2015", poster: "https://image.tmdb.org/t/p/original/zY8OF4hbGxNg2GoVFhQHt5GR87r.jpg" },
     { titulo: "Captain America: Civil War", categoria: "tom-holland", subtipo: "2010", tipo: "Película", fichaTecnicaId: "capitan-america-civil-war", poster: "https://heroichollywood.com/wp-content/uploads/2015/11/img-26.jpg" },
+    { titulo: "Edge of Winter", categoria: "tom-holland", subtipo: "2010", tipo: "Película", fichaTecnicaId: "edge-of-winter-2016", poster: "https://image.tmdb.org/t/p/original/xTZ35mHoJOzTsdvoL66uA4eVvgH.jpg" },
+    { titulo: "The Lost City of Z", categoria: "tom-holland", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-lost-city-of-z-2016", poster: "https://image.tmdb.org/t/p/original/7sACk0B3txjHGFkR7e0pBXhwDyu.jpg" },
     { titulo: "Spider-Man: Homecoming", categoria: "tom-holland", subtipo: "2010", tipo: "Película", fichaTecnicaId: "spiderman-homecoming", poster: "https://m.media-amazon.com/images/I/A1mjWWH6mFL.jpg" },
+    { titulo: "Pilgrimage", categoria: "tom-holland", subtipo: "2010", tipo: "Película", fichaTecnicaId: "pilgrimage-2017", poster: "https://image.tmdb.org/t/p/original/cqUCzYImhEmCmXP9e7QLigiS8mh.jpg" },
     { titulo: "The Current War", categoria: "tom-holland", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTk4MzhkMDAtNWMyMi00ZmI4LWEyNTUtZDVkMTVlZjJmYTAzXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
     { titulo: "Avengers: Infinity War", categoria: "tom-holland", subtipo: "2010", tipo: "Película", fichaTecnicaId: "avengers-infinity-war", poster: "https://www.blackfilm.com/read/wp-content/uploads/2017/11/Avengers-Infinity-War-Teaser-Poster.jpg" },
     { titulo: "Avengers: Endgame", categoria: "tom-holland", subtipo: "2010", tipo: "Película", fichaTecnicaId: "avengers-endgame", poster: "https://cdn.marvel.com/content/2x/MLou2_Teaser_1-Sht_v6_Lg.jpg" },
@@ -14846,7 +14854,7 @@ if (btnVolverFichaHawkeyeSerie) {
     }
 });
 
-['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023'].forEach(id => {
+['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023', 'arrietty-2010', 'the-impossible-2012', 'how-i-live-now-2013', 'wolf-hall-2015', 'in-the-heart-of-the-sea-2015', 'edge-of-winter-2016', 'the-lost-city-of-z-2016', 'pilgrimage-2017'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -15347,6 +15355,14 @@ const FICHAS_TECNICAS_TITULOS = {
     "velvet-goldmine-1998": "Velvet Goldmine",
     "midsummer-nights-dream-1999": "A Midsummer Night's Dream",
     "mowgli-legend-of-the-jungle-2018": "Mowgli: Legend of the Jungle",
+    "arrietty-2010": "Arrietty y el Mundo de los Diminutos",
+    "the-impossible-2012": "The Impossible",
+    "how-i-live-now-2013": "How I Live Now",
+    "wolf-hall-2015": "Wolf Hall",
+    "in-the-heart-of-the-sea-2015": "In the Heart of the Sea",
+    "edge-of-winter-2016": "Edge of Winter",
+    "the-lost-city-of-z-2016": "The Lost City of Z",
+    "pilgrimage-2017": "Pilgrimage",
     "spies-in-disguise-2019": "Spies in Disguise",
     "the-crowded-room-2023": "The Crowded Room",
     "mio-in-the-land-of-faraway-1987": "Mio in the Land of Faraway",
@@ -17669,6 +17685,82 @@ const REPARTO_PELICULAS = {
             { actor: "Christian Bale", personaje: "Chris Myers" },
             { actor: "Shohreh Aghdashloo", personaje: "Marta Boghosian" },
             { actor: "Marwan Kenzari", personaje: "Emre Ogan" }
+        ]
+    },
+    "arrietty-2010": {
+        director: "Hiromasa Yonebayashi",
+        elenco: [
+            { actor: "Saoirse Ronan", personaje: "Arrietty (voz, doblaje británico)" },
+            { actor: "Tom Holland", personaje: "Shō (voz, doblaje británico)" },
+            { actor: "Olivia Colman", personaje: "Homily (voz, doblaje británico)" },
+            { actor: "Mark Strong", personaje: "Pod (voz, doblaje británico)" }
+        ]
+    },
+    "the-impossible-2012": {
+        director: "J. A. Bayona",
+        elenco: [
+            { actor: "Naomi Watts", personaje: "Maria Bennett" },
+            { actor: "Ewan McGregor", personaje: "Henry Bennett" },
+            { actor: "Tom Holland", personaje: "Lucas Bennett" },
+            { actor: "Samuel Joslin", personaje: "Thomas" },
+            { actor: "Oaklee Pendergast", personaje: "Simon" }
+        ]
+    },
+    "how-i-live-now-2013": {
+        director: "Kevin Macdonald",
+        elenco: [
+            { actor: "Saoirse Ronan", personaje: "Daisy" },
+            { actor: "George MacKay", personaje: "Eddie" },
+            { actor: "Tom Holland", personaje: "Isaac" },
+            { actor: "Harley Bird", personaje: "Piper" },
+            { actor: "Anna Chancellor", personaje: "Aunt Penn" }
+        ]
+    },
+    "wolf-hall-2015": {
+        director: "Peter Kosminsky",
+        elenco: [
+            { actor: "Mark Rylance", personaje: "Thomas Cromwell" },
+            { actor: "Damian Lewis", personaje: "Henry VIII" },
+            { actor: "Claire Foy", personaje: "Anne Boleyn" },
+            { actor: "Tom Holland", personaje: "Gregory Cromwell" }
+        ]
+    },
+    "in-the-heart-of-the-sea-2015": {
+        director: "Ron Howard",
+        elenco: [
+            { actor: "Chris Hemsworth", personaje: "Owen Chase" },
+            { actor: "Benjamin Walker", personaje: "George Pollard Jr." },
+            { actor: "Cillian Murphy", personaje: "Matthew Joy" },
+            { actor: "Tom Holland", personaje: "Thomas Nickerson" },
+            { actor: "Brendan Gleeson", personaje: "Thomas Nickerson (anciano)" },
+            { actor: "Ben Whishaw", personaje: "Herman Melville" }
+        ]
+    },
+    "edge-of-winter-2016": {
+        director: "Rob Connolly",
+        elenco: [
+            { actor: "Joel Kinnaman", personaje: "Elliot Baker" },
+            { actor: "Tom Holland", personaje: "Bradley Baker" },
+            { actor: "Percy Hynes White", personaje: "Caleb Baker" },
+            { actor: "Rossif Sutherland", personaje: "Luc" }
+        ]
+    },
+    "the-lost-city-of-z-2016": {
+        director: "James Gray",
+        elenco: [
+            { actor: "Charlie Hunnam", personaje: "Percy Fawcett" },
+            { actor: "Robert Pattinson", personaje: "Henry Costin" },
+            { actor: "Sienna Miller", personaje: "Nina Fawcett" },
+            { actor: "Tom Holland", personaje: "Jack Fawcett" }
+        ]
+    },
+    "pilgrimage-2017": {
+        director: "Brendan Muldowney",
+        elenco: [
+            { actor: "Tom Holland", personaje: "Brother Diarmuid" },
+            { actor: "Richard Armitage", personaje: "Raymond de Merville" },
+            { actor: "Jon Bernthal", personaje: "The Mute" },
+            { actor: "John Lynch", personaje: "Brother Ciarán" }
         ]
     },
     "spies-in-disguise-2019": {
@@ -22690,7 +22782,7 @@ const filmografiasGrilla = {
     "abby ryder fortson": ["Ant-Man", "Ant-Man and The Wasp"],
     "martin donovan": ["Ant-Man", "Insomnia", "Tenet"],
     "chadwick boseman": ["Capitan America: Civil War", "Avengers: Infinity War", "Avengers: Endgame", "Pantera Negra"],
-    "tom holland": ["Spies in Disguise", "The Crowded Room", "Capitan America: Civil War", "Spider-Man: Homecoming", "Avengers: Infinity War", "Avengers: Endgame", "Spider-Man: Far From Home", "Spider-Man: No Way Home", "Spider-Man: Brand New Day", "The Odyssey"],
+    "tom holland": ["Spies in Disguise", "Arrietty y el Mundo de los Diminutos", "The Impossible", "How I Live Now", "In the Heart of the Sea", "Wolf Hall", "Edge of Winter", "The Lost City of Z", "Pilgrimage", "The Crowded Room", "Capitan America: Civil War", "Spider-Man: Homecoming", "Avengers: Infinity War", "Avengers: Endgame", "Spider-Man: Far From Home", "Spider-Man: No Way Home", "Spider-Man: Brand New Day", "The Odyssey"],
     "daniel bruhl": ["Capitan America: Civil War", "The Falcon and The Winter Soldier", "Inglorious Basterds"],
     "martin freeman": ["Capitan America: Civil War", "Pantera Negra", "Black Panther: Wakanda Forever", "Secret Invasion"],
     "marisa tomei": ["Capitan America: Civil War", "Spider-Man: Homecoming", "Avengers: Endgame", "Spider-Man: Far From Home", "Spider-Man: No Way Home", "Spider-Man: Brand New Day"],
