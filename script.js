@@ -1605,13 +1605,13 @@ const listaMedia = [
     { titulo: "Little Women", categoria: "florence-pugh", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61TK-+geKPL.AC_UF894,1000_QL80.jpg" },
 
     // --- EMMA STONE (con filtros por década) ---
-    { titulo: "The Croods: A New Age", categoria: "emma-stone", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61wgHMAdD7L.jpg" },
-    { titulo: "Cruella", categoria: "emma-stone", subtipo: "2020", tipo: "Película", poster: "https://purodiseno.lat/wp-content/uploads/2021/04/CRUELLA-692x1024.jpg" },
+    { titulo: "The Croods: A New Age", categoria: "emma-stone", subtipo: "2020", tipo: "Película", fichaTecnicaId: "the-croods-a-new-age-2020", poster: "https://m.media-amazon.com/images/I/61wgHMAdD7L.jpg" },
+    { titulo: "Cruella", categoria: "emma-stone", subtipo: "2020", tipo: "Película", fichaTecnicaId: "cruella-2021", poster: "https://purodiseno.lat/wp-content/uploads/2021/04/CRUELLA-692x1024.jpg" },
     { titulo: "The Curse", categoria: "emma-stone", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "the-curse-2023", poster: "https://image.tmdb.org/t/p/original/k1Rb8zPsA7Lnr2U1xwAk880tFbR.jpg" },
-    { titulo: "Poor Things", categoria: "emma-stone", subtipo: "2020", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/317259.jpg" },
-    { titulo: "Kinds of Kindness", categoria: "emma-stone", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/50lPmjIpDs8gKfgK7fPIeKzpllh.jpg" },
-    { titulo: "Eddington", categoria: "emma-stone", subtipo: "2020", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/315876.jpg" },
-    { titulo: "Bugonia", categoria: "emma-stone", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/fndDv16tDmgvMBJd2bb2w5CDxpe.jpg" },
+    { titulo: "Poor Things", categoria: "emma-stone", subtipo: "2020", tipo: "Película", fichaTecnicaId: "poor-things-2023", poster: "https://cdng.europosters.eu/pod_public/1300/317259.jpg" },
+    { titulo: "Kinds of Kindness", categoria: "emma-stone", subtipo: "2020", tipo: "Película", fichaTecnicaId: "kinds-of-kindness-2024", poster: "https://image.tmdb.org/t/p/original/50lPmjIpDs8gKfgK7fPIeKzpllh.jpg" },
+    { titulo: "Eddington", categoria: "emma-stone", subtipo: "2020", tipo: "Película", fichaTecnicaId: "eddington-2025", poster: "https://cdng.europosters.eu/pod_public/1300/315876.jpg" },
+    { titulo: "Bugonia", categoria: "emma-stone", subtipo: "2020", tipo: "Película", fichaTecnicaId: "bugonia-2025", poster: "https://image.tmdb.org/t/p/original/fndDv16tDmgvMBJd2bb2w5CDxpe.jpg" },
     { titulo: "Marmaduke", categoria: "emma-stone", subtipo: "2010", tipo: "Película", fichaTecnicaId: "marmaduke-2010", poster: "https://image.tmdb.org/t/p/original/gg6lddIpfuE2zyn8fLn1lC9xUYV.jpg" },
     { titulo: "Easy A", categoria: "emma-stone", subtipo: "2010", tipo: "Película", fichaTecnicaId: "easy-a-2010", poster: "https://image.tmdb.org/t/p/original/spOqvK66GBWF3rPBXhUogyCIWHQ.jpg" },
     { titulo: "Friends with Benefits", categoria: "emma-stone", subtipo: "2010", tipo: "Película", fichaTecnicaId: "friends-with-benefits-2011", poster: "https://image.tmdb.org/t/p/original/q4ZAmIIbe2LiLvhQT0q3e6pleYr.jpg" },
@@ -14880,7 +14880,7 @@ if (btnVolverFichaHawkeyeSerie) {
     }
 });
 
-['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023', 'arrietty-2010', 'the-impossible-2012', 'how-i-live-now-2013', 'wolf-hall-2015', 'in-the-heart-of-the-sea-2015', 'edge-of-winter-2016', 'the-lost-city-of-z-2016', 'pilgrimage-2017', 'the-current-war-2017', 'cherry-2021', 'onward-2020', 'chaos-walking-2021', 'uncharted-2022', 'dolittle-2020', 'the-devil-all-the-time-2020', 'marmaduke-2010', 'easy-a-2010', 'crazy-stupid-love-2011', 'the-amazing-spider-man-2012', 'gangster-squad-2013', 'movie-43-2013', 'the-amazing-spider-man-2-2014', 'friends-with-benefits-2011', 'the-help-2011', 'the-croods-2013', 'magic-in-the-moonlight-2014', 'birdman-2014', 'aloha-2015', 'irrational-man-2015', 'battle-of-the-sexes-2017', 'maniac-2018', 'the-favourite-2018', 'zombieland-double-tap-2019', 'superbad-2007', 'the-rocker-2008', 'the-house-bunny-2008', 'ghosts-of-girlfriends-past-2009', 'zombieland-2009', 'paper-man-2009', 'the-curse-2023'].forEach(id => {
+['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023', 'arrietty-2010', 'the-impossible-2012', 'how-i-live-now-2013', 'wolf-hall-2015', 'in-the-heart-of-the-sea-2015', 'edge-of-winter-2016', 'the-lost-city-of-z-2016', 'pilgrimage-2017', 'the-current-war-2017', 'cherry-2021', 'onward-2020', 'chaos-walking-2021', 'uncharted-2022', 'dolittle-2020', 'the-devil-all-the-time-2020', 'marmaduke-2010', 'easy-a-2010', 'crazy-stupid-love-2011', 'the-amazing-spider-man-2012', 'gangster-squad-2013', 'movie-43-2013', 'the-amazing-spider-man-2-2014', 'friends-with-benefits-2011', 'the-help-2011', 'the-croods-2013', 'magic-in-the-moonlight-2014', 'birdman-2014', 'aloha-2015', 'irrational-man-2015', 'battle-of-the-sexes-2017', 'maniac-2018', 'the-favourite-2018', 'zombieland-double-tap-2019', 'superbad-2007', 'the-rocker-2008', 'the-house-bunny-2008', 'ghosts-of-girlfriends-past-2009', 'zombieland-2009', 'paper-man-2009', 'the-curse-2023', 'the-croods-a-new-age-2020', 'cruella-2021', 'poor-things-2023', 'kinds-of-kindness-2024', 'eddington-2025', 'bugonia-2025'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -15421,6 +15421,12 @@ const FICHAS_TECNICAS_TITULOS = {
     "zombieland-2009": "Zombieland",
     "paper-man-2009": "Paper Man",
     "the-curse-2023": "The Curse",
+    "the-croods-a-new-age-2020": "The Croods: A New Age",
+    "cruella-2021": "Cruella",
+    "poor-things-2023": "Poor Things",
+    "kinds-of-kindness-2024": "Kinds of Kindness",
+    "eddington-2025": "Eddington",
+    "bugonia-2025": "Bugonia",
     "spies-in-disguise-2019": "Spies in Disguise",
     "the-crowded-room-2023": "The Crowded Room",
     "mio-in-the-land-of-faraway-1987": "Mio in the Land of Faraway",
@@ -18162,6 +18168,75 @@ const REPARTO_PELICULAS = {
             { actor: "Emma Stone", personaje: "Whitney Siegel" },
             { actor: "Nathan Fielder", personaje: "Asher Siegel" },
             { actor: "Benny Safdie", personaje: "Dougie Schecter" }
+        ]
+    },
+    "the-croods-a-new-age-2020": {
+        director: "Joel Crawford",
+        elenco: [
+            { actor: "Nicolas Cage", personaje: "Grug Crood (voz)" },
+            { actor: "Emma Stone", personaje: "Eep Crood (voz)" },
+            { actor: "Ryan Reynolds", personaje: "Guy (voz)" },
+            { actor: "Catherine Keener", personaje: "Ugga Crood (voz)" },
+            { actor: "Peter Dinklage", personaje: "Phil Betterman (voz)" },
+            { actor: "Leslie Mann", personaje: "Hope Betterman (voz)" },
+            { actor: "Kelly Marie Tran", personaje: "Dawn Betterman (voz)" }
+        ]
+    },
+    "cruella-2021": {
+        director: "Craig Gillespie",
+        elenco: [
+            { actor: "Emma Stone", personaje: "Estella Miller / Cruella de Vil" },
+            { actor: "Emma Thompson", personaje: "Baronesa von Hellman" },
+            { actor: "Joel Fry", personaje: "Jasper" },
+            { actor: "Paul Walter Hauser", personaje: "Horace" },
+            { actor: "Emily Beecham", personaje: "Catherine Miller" },
+            { actor: "Kirby Howell-Baptiste", personaje: "Anita Darling" },
+            { actor: "Mark Strong", personaje: "John" }
+        ]
+    },
+    "poor-things-2023": {
+        director: "Yorgos Lanthimos",
+        elenco: [
+            { actor: "Emma Stone", personaje: "Bella Baxter / Victoria Blessington" },
+            { actor: "Mark Ruffalo", personaje: "Duncan Wedderburn" },
+            { actor: "Willem Dafoe", personaje: "Dr. Godwin Baxter" },
+            { actor: "Ramy Youssef", personaje: "Max McCandles" },
+            { actor: "Christopher Abbott", personaje: "Alfie Blessington" },
+            { actor: "Jerrod Carmichael", personaje: "Harry Astley" }
+        ]
+    },
+    "kinds-of-kindness-2024": {
+        director: "Yorgos Lanthimos",
+        elenco: [
+            { actor: "Emma Stone", personaje: "Rita / Liz / Emily" },
+            { actor: "Jesse Plemons", personaje: "Robert / Daniel / Andrew" },
+            { actor: "Willem Dafoe", personaje: "Raymond / George / Omi" },
+            { actor: "Margaret Qualley", personaje: "Vivian / Martha / Ruth y Rebecca" },
+            { actor: "Hong Chau", personaje: "Sarah / Sharon / Aka" },
+            { actor: "Joe Alwyn", personaje: "Tasador de objetos de colección / Jerry / Joseph" },
+            { actor: "Mamoudou Athie", personaje: "Will / Neil / Enfermero de la morgue" }
+        ]
+    },
+    "eddington-2025": {
+        director: "Ari Aster",
+        elenco: [
+            { actor: "Joaquin Phoenix", personaje: "Sheriff Joe Cross" },
+            { actor: "Pedro Pascal", personaje: "Alcalde Ted Garcia" },
+            { actor: "Emma Stone", personaje: "Louise Cross" },
+            { actor: "Austin Butler", personaje: "Vernon Jefferson Peak" },
+            { actor: "Luke Grimes", personaje: "Guy Tooley" },
+            { actor: "Deirdre O'Connell", personaje: "Dawn" },
+            { actor: "Micheal Ward", personaje: "Michael Cooke" }
+        ]
+    },
+    "bugonia-2025": {
+        director: "Yorgos Lanthimos",
+        elenco: [
+            { actor: "Emma Stone", personaje: "Michelle Fuller" },
+            { actor: "Jesse Plemons", personaje: "Teddy Gatz" },
+            { actor: "Aidan Delbis", personaje: "Don" },
+            { actor: "Stavros Halkias", personaje: "Casey Boyd" },
+            { actor: "Alicia Silverstone", personaje: "Sandy Gatz" }
         ]
     },
     "spies-in-disguise-2019": {
