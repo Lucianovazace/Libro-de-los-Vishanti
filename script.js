@@ -1613,12 +1613,23 @@ const listaMedia = [
     { titulo: "Bugonia", categoria: "emma-stone", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/fndDv16tDmgvMBJd2bb2w5CDxpe.jpg" },
     { titulo: "Marmaduke", categoria: "emma-stone", subtipo: "2010", tipo: "Película", fichaTecnicaId: "marmaduke-2010", poster: "https://image.tmdb.org/t/p/original/gg6lddIpfuE2zyn8fLn1lC9xUYV.jpg" },
     { titulo: "Easy A", categoria: "emma-stone", subtipo: "2010", tipo: "Película", fichaTecnicaId: "easy-a-2010", poster: "https://image.tmdb.org/t/p/original/spOqvK66GBWF3rPBXhUogyCIWHQ.jpg" },
+    { titulo: "Friends with Benefits", categoria: "emma-stone", subtipo: "2010", tipo: "Película", fichaTecnicaId: "friends-with-benefits-2011", poster: "https://image.tmdb.org/t/p/original/q4ZAmIIbe2LiLvhQT0q3e6pleYr.jpg" },
     { titulo: "Crazy, Stupid, Love", categoria: "emma-stone", subtipo: "2010", tipo: "Película", fichaTecnicaId: "crazy-stupid-love-2011", poster: "https://m.media-amazon.com/images/I/61I-Y1LHbjL._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "The Help", categoria: "emma-stone", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-help-2011", poster: "https://image.tmdb.org/t/p/original/9vrCGo1tkaxkqwhBlnprvfGgdcE.jpg" },
     { titulo: "The Amazing Spider-Man", categoria: "emma-stone", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-amazing-spider-man-2012", poster: "https://www.mubis.es/media/articles/1554/15320/nuevo-poster-y-trailer-de-the-amazing-spider-man-original.jpg" },
     { titulo: "Gangster Squad", categoria: "emma-stone", subtipo: "2010", tipo: "Película", fichaTecnicaId: "gangster-squad-2013", poster: "https://cdng.europosters.eu/pod_public/1300/324918.jpg" },
     { titulo: "Movie 43", categoria: "emma-stone", subtipo: "2010", tipo: "Película", fichaTecnicaId: "movie-43-2013", poster: "https://image.tmdb.org/t/p/w500/uYa06GxHsCsELx9vOQ11vsT0Aa6.jpg" },
+    { titulo: "The Croods", categoria: "emma-stone", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-croods-2013", poster: "https://image.tmdb.org/t/p/w500/27zvjVOtOi5ped1HSlJKNsKXkFH.jpg" },
     { titulo: "The Amazing Spider-Man 2", categoria: "emma-stone", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-amazing-spider-man-2-2014", poster: "https://cdn.europosters.eu/image/750/20688.jpg" },
+    { titulo: "Magic in the Moonlight", categoria: "emma-stone", subtipo: "2010", tipo: "Película", fichaTecnicaId: "magic-in-the-moonlight-2014", poster: "https://image.tmdb.org/t/p/w500/mNYZUVDj4ORSPHWinmqJbXyuG6W.jpg" },
+    { titulo: "Birdman", categoria: "emma-stone", subtipo: "2010", tipo: "Película", fichaTecnicaId: "birdman-2014", poster: "https://image.tmdb.org/t/p/original/zbUgf2cidcJu9eysAhMzJt5SKdU.jpg" },
+    { titulo: "Aloha", categoria: "emma-stone", subtipo: "2010", tipo: "Película", fichaTecnicaId: "aloha-2015", poster: "https://image.tmdb.org/t/p/w500/58Y4CjcRX8AtMNtI0AXu9H7iebP.jpg" },
+    { titulo: "Irrational Man", categoria: "emma-stone", subtipo: "2010", tipo: "Película", fichaTecnicaId: "irrational-man-2015", poster: "https://image.tmdb.org/t/p/w500/ipAqhEWRzEuD6aXlAWIvEEF1KUe.jpg" },
     { titulo: "La La Land", categoria: "emma-stone", subtipo: "2010", tipo: "Película", fichaTecnicaId: "la-la-land-2016", poster: "https://postercity.com.ar/wp-content/uploads/2021/04/La-La-Land-Poster_baja-1.jpg" },
+    { titulo: "Battle of the Sexes", categoria: "emma-stone", subtipo: "2010", tipo: "Película", fichaTecnicaId: "battle-of-the-sexes-2017", poster: "https://image.tmdb.org/t/p/w500/fWy0A3VojTCb0S2MKtEJjpquubF.jpg" },
+    { titulo: "Maniac", categoria: "emma-stone", subtipo: "2010", tipo: "Serie", fichaTecnicaId: "maniac-2018", poster: "https://image.tmdb.org/t/p/original/kCNl4QPstAqChFD0NnLpbDFG8ul.jpg" },
+    { titulo: "The Favourite", categoria: "emma-stone", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-favourite-2018", poster: "https://image.tmdb.org/t/p/w500/cwBq0onfmeilU5xgqNNjJAMPfpw.jpg" },
+    { titulo: "Zombieland: Double Tap", categoria: "emma-stone", subtipo: "2010", tipo: "Película", fichaTecnicaId: "zombieland-double-tap-2019", poster: "https://image.tmdb.org/t/p/w500/dtRbVsUb5O12WWO54SRpiMtHKC0.jpg" },
 
     // --- JENNA ORTEGA (con filtros por década) ---
     { titulo: "The Babysitter: Killer Queen", categoria: "jenna-ortega", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BODk1ZmQ4ODItZjcwZi00MTUxLWE1YWMtMDY2NWJhNzJjMGEyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
@@ -14862,7 +14873,7 @@ if (btnVolverFichaHawkeyeSerie) {
     }
 });
 
-['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023', 'arrietty-2010', 'the-impossible-2012', 'how-i-live-now-2013', 'wolf-hall-2015', 'in-the-heart-of-the-sea-2015', 'edge-of-winter-2016', 'the-lost-city-of-z-2016', 'pilgrimage-2017', 'the-current-war-2017', 'cherry-2021', 'onward-2020', 'chaos-walking-2021', 'uncharted-2022', 'dolittle-2020', 'the-devil-all-the-time-2020', 'marmaduke-2010', 'easy-a-2010', 'crazy-stupid-love-2011', 'the-amazing-spider-man-2012', 'gangster-squad-2013', 'movie-43-2013', 'the-amazing-spider-man-2-2014'].forEach(id => {
+['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023', 'arrietty-2010', 'the-impossible-2012', 'how-i-live-now-2013', 'wolf-hall-2015', 'in-the-heart-of-the-sea-2015', 'edge-of-winter-2016', 'the-lost-city-of-z-2016', 'pilgrimage-2017', 'the-current-war-2017', 'cherry-2021', 'onward-2020', 'chaos-walking-2021', 'uncharted-2022', 'dolittle-2020', 'the-devil-all-the-time-2020', 'marmaduke-2010', 'easy-a-2010', 'crazy-stupid-love-2011', 'the-amazing-spider-man-2012', 'gangster-squad-2013', 'movie-43-2013', 'the-amazing-spider-man-2-2014', 'friends-with-benefits-2011', 'the-help-2011', 'the-croods-2013', 'magic-in-the-moonlight-2014', 'birdman-2014', 'aloha-2015', 'irrational-man-2015', 'battle-of-the-sexes-2017', 'maniac-2018', 'the-favourite-2018', 'zombieland-double-tap-2019'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -15385,6 +15396,17 @@ const FICHAS_TECNICAS_TITULOS = {
     "gangster-squad-2013": "Gangster Squad",
     "movie-43-2013": "Movie 43",
     "the-amazing-spider-man-2-2014": "The Amazing Spider-Man 2",
+    "friends-with-benefits-2011": "Friends with Benefits",
+    "the-help-2011": "The Help",
+    "the-croods-2013": "The Croods",
+    "magic-in-the-moonlight-2014": "Magic in the Moonlight",
+    "birdman-2014": "Birdman",
+    "aloha-2015": "Aloha",
+    "irrational-man-2015": "Irrational Man",
+    "battle-of-the-sexes-2017": "Battle of the Sexes",
+    "maniac-2018": "Maniac",
+    "the-favourite-2018": "The Favourite",
+    "zombieland-double-tap-2019": "Zombieland: Double Tap",
     "spies-in-disguise-2019": "Spies in Disguise",
     "the-crowded-room-2023": "The Crowded Room",
     "mio-in-the-land-of-faraway-1987": "Mio in the Land of Faraway",
@@ -17933,6 +17955,125 @@ const REPARTO_PELICULAS = {
             { actor: "Dane DeHaan", personaje: "Harry Osborn" },
             { actor: "Paul Giamatti", personaje: "Aleksei Sytsevich / Rhino" },
             { actor: "Sally Field", personaje: "May Parker" }
+        ]
+    },
+    "friends-with-benefits-2011": {
+        director: "Will Gluck",
+        elenco: [
+            { actor: "Justin Timberlake", personaje: "Dylan Harper" },
+            { actor: "Mila Kunis", personaje: "Jamie Rellis" },
+            { actor: "Patricia Clarkson", personaje: "Lorna" },
+            { actor: "Jenna Elfman", personaje: "Annie" },
+            { actor: "Richard Jenkins", personaje: "Mr. Harper" },
+            { actor: "Woody Harrelson", personaje: "Tommy Bollinger" }
+        ]
+    },
+    "the-help-2011": {
+        director: "Tate Taylor",
+        elenco: [
+            { actor: "Emma Stone", personaje: "Eugenia \"Skeeter\" Phelan" },
+            { actor: "Viola Davis", personaje: "Aibileen Clark" },
+            { actor: "Bryce Dallas Howard", personaje: "Hilly Holbrook" },
+            { actor: "Octavia Spencer", personaje: "Minny Jackson" },
+            { actor: "Jessica Chastain", personaje: "Celia Rae Foote" },
+            { actor: "Allison Janney", personaje: "Charlotte Phelan" }
+        ]
+    },
+    "the-croods-2013": {
+        director: "Chris Sanders y Kirk DeMicco",
+        elenco: [
+            { actor: "Nicolas Cage", personaje: "Grug Crood (voz)" },
+            { actor: "Emma Stone", personaje: "Eep Crood (voz)" },
+            { actor: "Ryan Reynolds", personaje: "Guy (voz)" },
+            { actor: "Catherine Keener", personaje: "Ugga Crood (voz)" },
+            { actor: "Clark Duke", personaje: "Thunk Crood (voz)" },
+            { actor: "Cloris Leachman", personaje: "Gran (voz)" }
+        ]
+    },
+    "magic-in-the-moonlight-2014": {
+        director: "Woody Allen",
+        elenco: [
+            { actor: "Colin Firth", personaje: "Stanley Crawford" },
+            { actor: "Emma Stone", personaje: "Sophie Baker" },
+            { actor: "Eileen Atkins", personaje: "Aunt Vanessa" },
+            { actor: "Marcia Gay Harden", personaje: "Mrs. Baker" },
+            { actor: "Hamish Linklater", personaje: "Brice Catledge" },
+            { actor: "Jacki Weaver", personaje: "Grace Catledge" }
+        ]
+    },
+    "birdman-2014": {
+        director: "Alejandro G. Iñárritu",
+        elenco: [
+            { actor: "Michael Keaton", personaje: "Riggan Thomson" },
+            { actor: "Zach Galifianakis", personaje: "Jake" },
+            { actor: "Edward Norton", personaje: "Mike Shiner" },
+            { actor: "Emma Stone", personaje: "Sam" },
+            { actor: "Naomi Watts", personaje: "Lesley" },
+            { actor: "Andrea Riseborough", personaje: "Laura" },
+            { actor: "Amy Ryan", personaje: "Sylvia" }
+        ]
+    },
+    "aloha-2015": {
+        director: "Cameron Crowe",
+        elenco: [
+            { actor: "Bradley Cooper", personaje: "Brian Gilcrest" },
+            { actor: "Emma Stone", personaje: "Capt. Allison Ng" },
+            { actor: "Rachel McAdams", personaje: "Tracy Woodside" },
+            { actor: "Bill Murray", personaje: "Carson Welch" },
+            { actor: "John Krasinski", personaje: "John \"Woody\" Woodside" },
+            { actor: "Alec Baldwin", personaje: "General Dixon" }
+        ]
+    },
+    "irrational-man-2015": {
+        director: "Woody Allen",
+        elenco: [
+            { actor: "Joaquin Phoenix", personaje: "Abe Lucas" },
+            { actor: "Emma Stone", personaje: "Jill Pollard" },
+            { actor: "Parker Posey", personaje: "Rita Richards" },
+            { actor: "Jamie Blackley", personaje: "Roy" }
+        ]
+    },
+    "battle-of-the-sexes-2017": {
+        director: "Jonathan Dayton y Valerie Faris",
+        elenco: [
+            { actor: "Emma Stone", personaje: "Billie Jean King" },
+            { actor: "Steve Carell", personaje: "Bobby Riggs" },
+            { actor: "Andrea Riseborough", personaje: "Marilyn Barnett" },
+            { actor: "Sarah Silverman", personaje: "Gladys Heldman" },
+            { actor: "Bill Pullman", personaje: "Jack Kramer" },
+            { actor: "Alan Cumming", personaje: "Ted Tinling" }
+        ]
+    },
+    "maniac-2018": {
+        director: "Cary Joji Fukunaga (dirección) y Patrick Somerville (creador)",
+        elenco: [
+            { actor: "Emma Stone", personaje: "Annie Landsberg" },
+            { actor: "Jonah Hill", personaje: "Owen Milgrim" },
+            { actor: "Justin Theroux", personaje: "Dr. James K. Mantleray" },
+            { actor: "Sonoya Mizuno", personaje: "Dr. Azumi Fujita" },
+            { actor: "Gabriel Byrne", personaje: "Porter Milgrim" },
+            { actor: "Sally Field", personaje: "Dr. Greta Mantleray" }
+        ]
+    },
+    "the-favourite-2018": {
+        director: "Yorgos Lanthimos",
+        elenco: [
+            { actor: "Olivia Colman", personaje: "Anne" },
+            { actor: "Emma Stone", personaje: "Abigail Hill" },
+            { actor: "Rachel Weisz", personaje: "Sarah Churchill" },
+            { actor: "Nicholas Hoult", personaje: "Robert Harley" },
+            { actor: "Joe Alwyn", personaje: "Samuel Masham" }
+        ]
+    },
+    "zombieland-double-tap-2019": {
+        director: "Ruben Fleischer",
+        elenco: [
+            { actor: "Woody Harrelson", personaje: "Tallahassee" },
+            { actor: "Jesse Eisenberg", personaje: "Columbus" },
+            { actor: "Emma Stone", personaje: "Wichita" },
+            { actor: "Abigail Breslin", personaje: "Little Rock" },
+            { actor: "Zoey Deutch", personaje: "Madison" },
+            { actor: "Rosario Dawson", personaje: "Nevada" }
         ]
     },
     "spies-in-disguise-2019": {
