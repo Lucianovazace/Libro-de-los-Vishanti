@@ -1045,6 +1045,14 @@ const listaMedia = [
     { titulo: "Uncharted", categoria: "tom-holland", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71Pzfv1skmL.jpg" },
     { titulo: "The Odyssey", categoria: "tom-holland", subtipo: "2020", tipo: "Película", poster: "https://img.asmedia.epimg.net/resizer/v2/AP6RDKAGQVE4DEON7ETUS4UVM4.jpg?auth=5abec700c478bffaa862bc1e153efeb77076781fbd4dc9df918ddb11a11979ea&width=375" },
     { titulo: "Spider-Man: Brand New Day", categoria: "tom-holland", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOWNjYWM3NWItOGE0ZS00MWRjLThiZWEtYjc4ZmNmMmU5ZTVmXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "The Crowded Room", categoria: "tom-holland", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "the-crowded-room-2023", poster: "https://image.tmdb.org/t/p/original/36TcuMJFyr8q8zelVbBbs59bL53.jpg" },
+    { titulo: "Captain America: Civil War", categoria: "tom-holland", subtipo: "2010", tipo: "Película", fichaTecnicaId: "capitan-america-civil-war", poster: "https://heroichollywood.com/wp-content/uploads/2015/11/img-26.jpg" },
+    { titulo: "Spider-Man: Homecoming", categoria: "tom-holland", subtipo: "2010", tipo: "Película", fichaTecnicaId: "spiderman-homecoming", poster: "https://m.media-amazon.com/images/I/A1mjWWH6mFL.jpg" },
+    { titulo: "The Current War", categoria: "tom-holland", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTk4MzhkMDAtNWMyMi00ZmI4LWEyNTUtZDVkMTVlZjJmYTAzXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "Avengers: Infinity War", categoria: "tom-holland", subtipo: "2010", tipo: "Película", fichaTecnicaId: "avengers-infinity-war", poster: "https://www.blackfilm.com/read/wp-content/uploads/2017/11/Avengers-Infinity-War-Teaser-Poster.jpg" },
+    { titulo: "Avengers: Endgame", categoria: "tom-holland", subtipo: "2010", tipo: "Película", fichaTecnicaId: "avengers-endgame", poster: "https://cdn.marvel.com/content/2x/MLou2_Teaser_1-Sht_v6_Lg.jpg" },
+    { titulo: "Spider-Man: Far From Home", categoria: "tom-holland", subtipo: "2010", tipo: "Película", fichaTecnicaId: "spiderman-far-from-home", poster: "https://cdn.marvel.com/content/2x/ffh_poster_onesheet.webp" },
+    { titulo: "Spies in Disguise", categoria: "tom-holland", subtipo: "2010", tipo: "Película", fichaTecnicaId: "spies-in-disguise-2019", poster: "https://image.tmdb.org/t/p/original/V47RhEtV1VDXx0guZEsVh42ahh.jpg" },
 
     // --- RYAN GOSLING (con filtros por década) ---
     { titulo: "The Gray Man", categoria: "ryan-gosling", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZmFhZTNlNzctZGQzZi00MTA3LThiNjMtYWQzNjUzMjNjZjA3XkEyXkFqcGc@.V1.jpg" },
@@ -14838,7 +14846,7 @@ if (btnVolverFichaHawkeyeSerie) {
     }
 });
 
-['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016'].forEach(id => {
+['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -15339,6 +15347,8 @@ const FICHAS_TECNICAS_TITULOS = {
     "velvet-goldmine-1998": "Velvet Goldmine",
     "midsummer-nights-dream-1999": "A Midsummer Night's Dream",
     "mowgli-legend-of-the-jungle-2018": "Mowgli: Legend of the Jungle",
+    "spies-in-disguise-2019": "Spies in Disguise",
+    "the-crowded-room-2023": "The Crowded Room",
     "mio-in-the-land-of-faraway-1987": "Mio in the Land of Faraway",
     "prince-of-jutland-1994": "Prince of Jutland",
     "all-the-little-animals-1998": "All the Little Animals",
@@ -17659,6 +17669,25 @@ const REPARTO_PELICULAS = {
             { actor: "Christian Bale", personaje: "Chris Myers" },
             { actor: "Shohreh Aghdashloo", personaje: "Marta Boghosian" },
             { actor: "Marwan Kenzari", personaje: "Emre Ogan" }
+        ]
+    },
+    "spies-in-disguise-2019": {
+        director: "Nick Bruno y Troy Quane",
+        elenco: [
+            { actor: "Will Smith", personaje: "Lance Sterling (voz)" },
+            { actor: "Tom Holland", personaje: "Walter Beckett (voz)" },
+            { actor: "Rashida Jones", personaje: "Marcy Kappel (voz)" },
+            { actor: "Ben Mendelsohn", personaje: "Killian (voz)" }
+        ]
+    },
+    "the-crowded-room-2023": {
+        director: "Akiva Goldsman (creador)",
+        elenco: [
+            { actor: "Tom Holland", personaje: "Danny Sullivan" },
+            { actor: "Amanda Seyfried", personaje: "Rya Goodwin" },
+            { actor: "Emmy Rossum", personaje: "Candy Sullivan" },
+            { actor: "Sasha Lane", personaje: "Ariana Atkinson" },
+            { actor: "Will Chase", personaje: "Marlin Reid" }
         ]
     },
     "the-new-mutants": {
@@ -22661,7 +22690,7 @@ const filmografiasGrilla = {
     "abby ryder fortson": ["Ant-Man", "Ant-Man and The Wasp"],
     "martin donovan": ["Ant-Man", "Insomnia", "Tenet"],
     "chadwick boseman": ["Capitan America: Civil War", "Avengers: Infinity War", "Avengers: Endgame", "Pantera Negra"],
-    "tom holland": ["Capitan America: Civil War", "Spider-Man: Homecoming", "Avengers: Infinity War", "Avengers: Endgame", "Spider-Man: Far From Home", "Spider-Man: No Way Home", "Spider-Man: Brand New Day", "The Odyssey"],
+    "tom holland": ["Spies in Disguise", "The Crowded Room", "Capitan America: Civil War", "Spider-Man: Homecoming", "Avengers: Infinity War", "Avengers: Endgame", "Spider-Man: Far From Home", "Spider-Man: No Way Home", "Spider-Man: Brand New Day", "The Odyssey"],
     "daniel bruhl": ["Capitan America: Civil War", "The Falcon and The Winter Soldier", "Inglorious Basterds"],
     "martin freeman": ["Capitan America: Civil War", "Pantera Negra", "Black Panther: Wakanda Forever", "Secret Invasion"],
     "marisa tomei": ["Capitan America: Civil War", "Spider-Man: Homecoming", "Avengers: Endgame", "Spider-Man: Far From Home", "Spider-Man: No Way Home", "Spider-Man: Brand New Day"],
