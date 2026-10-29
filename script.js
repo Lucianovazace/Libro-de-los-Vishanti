@@ -237,8 +237,8 @@ const listaMedia = [
     { titulo: "Spider-Man 2", categoria: "sony-tobey", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61Z0dKYVx8L.jpg" },
     { titulo: "Spider-Man 3", categoria: "sony-tobey", tipo: "Película", poster: "https://static.posters.cz/image/1300/1282.jpg" },
     
-    { titulo: "The Amazing Spider-Man", categoria: "sony-andrew", tipo: "Película", poster: "https://www.mubis.es/media/articles/1554/15320/nuevo-poster-y-trailer-de-the-amazing-spider-man-original.jpg" },
-    { titulo: "The Amazing Spider-Man 2", categoria: "sony-andrew", tipo: "Película", poster: "https://cdn.europosters.eu/image/750/20688.jpg" },
+    { titulo: "The Amazing Spider-Man", categoria: "sony-andrew", tipo: "Película", fichaTecnicaId: "the-amazing-spider-man-2012", poster: "https://www.mubis.es/media/articles/1554/15320/nuevo-poster-y-trailer-de-the-amazing-spider-man-original.jpg" },
+    { titulo: "The Amazing Spider-Man 2", categoria: "sony-andrew", tipo: "Película", fichaTecnicaId: "the-amazing-spider-man-2-2014", poster: "https://cdn.europosters.eu/image/750/20688.jpg" },
     
     // --- SONY SSU (Universo Spider-Man de Sony) ---
     { titulo: "Venom", categoria: "sony-ssu", tipo: "Película", fichaTecnicaId: "venom-1", poster: "https://ew.com/thmb/ZB6f77bkGWakc1G6ZMf84TWHfC8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/venom-dom-vnm_online_1sht_tsr_rd3dimax_01_rgb-2000-1aa5bc8ab6bf4dc38a719c55500ddbde.jpg" },
@@ -1219,7 +1219,7 @@ const listaMedia = [
     { titulo: "Guardianes de La Galaxia Vol. 3", categoria: "james-gunn", subtipo: "2020", tipo: "Película", poster: "https://assets-prd.ignimgs.com/2022/12/01/guardians-of-the-galaxy-vol-3-1669932411159.jfif" },
     { titulo: "Superman", categoria: "james-gunn", subtipo: "2020", tipo: "Película", fichaTecnicaId: "superman-2025", poster: "https://m.media-amazon.com/images/I/712N7RdrlTL.jpg" },
     { titulo: "Super", categoria: "james-gunn", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZTUzMDU3NWUtNjdlMy00MGQ3LTk2M2ItNWVhNTlhZjkyMDExXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
-    { titulo: "Movie 43", categoria: "james-gunn", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/uYa06GxHsCsELx9vOQ11vsT0Aa6.jpg" },
+    { titulo: "Movie 43", categoria: "james-gunn", subtipo: "2010", tipo: "Película", fichaTecnicaId: "movie-43-2013", poster: "https://image.tmdb.org/t/p/w500/uYa06GxHsCsELx9vOQ11vsT0Aa6.jpg" },
     { titulo: "Guardianes de La Galaxia", categoria: "james-gunn", subtipo: "2010", tipo: "Película", poster: "https://www.impawards.com/2014/posters/guardians_of_the_galaxy.jpg" },
     { titulo: "Guardianes de La Galaxia Vol. 2", categoria: "james-gunn", subtipo: "2010", tipo: "Película", poster: "https://external-preview.redd.it/official-guardians-of-the-galaxy-vol-2-teaser-poster-v0-TjDcWtSjsp7PD12icRxi9UVVWL-38pmlw29-42nNvOI.jpg?auto=webp&s=da143bea206173e3cc2b0d5a4e8f2f84b24a994e" },
     { titulo: "Slither", categoria: "james-gunn", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/zNlJvCY3Pz7SE09Lf4G7uPs5XFZ.jpg" },
@@ -1321,15 +1321,15 @@ const listaMedia = [
     { titulo: "Steel Magnolias", categoria: "julia-roberts", subtipo: "1980", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81rXt9MP5JL._UF1000,1000_QL80_.jpg" },
     { titulo: "Blue Valentine", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/510CkJsGCuL._AC_UF894,1000_QL80_.jpg" },
     { titulo: "All Good Things", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTcwMjIyMTc2Nl5BMl5BanBnXkFtZTcwOTQyMzc5Mw@@._V1_.jpg" },
-    { titulo: "Crazy, Stupid, Love", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61I-Y1LHbjL._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Crazy, Stupid, Love", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", fichaTecnicaId: "crazy-stupid-love-2011", poster: "https://m.media-amazon.com/images/I/61I-Y1LHbjL._AC_UF894,1000_QL80_.jpg" },
     { titulo: "Drive", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/drive_2011_original_film_art_5000x.jpg?v=1562543564" },
     { titulo: "The Ides of March", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNTU4MjkzNTY0OF5BMl5BanBnXkFtZTcwNDI5ODIxNg@@._V1_.jpg" },
     { titulo: "The Place Beyond the Pines", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/518hww-QjyL._AC_UF894,1000_QL80_.jpg" },
-    { titulo: "Gangster Squad", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/324918.jpg" },
+    { titulo: "Gangster Squad", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", fichaTecnicaId: "gangster-squad-2013", poster: "https://cdng.europosters.eu/pod_public/1300/324918.jpg" },
     { titulo: "Only God Forgives", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMzE5NzcxMTk5NF5BMl5BanBnXkFtZTcwNjE2MDg2OQ@@._V1_.jpg" },
     { titulo: "The Big Short", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-big-short-2015", poster: "https://m.media-amazon.com/images/M/MV5BZDZkNDQ3YjktYjBlZC00YTY1LTgxOGYtY2RhMWFhZmNkZGY3XkEyXkFqcGc@.V1.jpg" },
     { titulo: "The Nice Guys", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/clq4So9spa9cXk3MZy2iMdqkxP2.jpg" },
-    { titulo: "La La Land", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://postercity.com.ar/wp-content/uploads/2021/04/La-La-Land-Poster_baja-1.jpg" },
+    { titulo: "La La Land", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", fichaTecnicaId: "la-la-land-2016", poster: "https://postercity.com.ar/wp-content/uploads/2021/04/La-La-Land-Poster_baja-1.jpg" },
     { titulo: "Song to Song", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNzI1MTg0MzEyOF5BMl5BanBnXkFtZTgwNzk4Mjk0MTI@._V1_FMjpg_UX1000_.jpg" },
     { titulo: "Blade Runner 2049", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/blade_runner_2049_2017_advance_original_film_art_efd5b98a-e898-4999-810d-1a0448114ff4_5000x.jpg?v=1640043899" },
     { titulo: "First Man", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71kRmoCnC8L._AC_UF894,1000_QL80_.jpg" },
@@ -1611,6 +1611,14 @@ const listaMedia = [
     { titulo: "Kinds of Kindness", categoria: "emma-stone", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/50lPmjIpDs8gKfgK7fPIeKzpllh.jpg" },
     { titulo: "Eddington", categoria: "emma-stone", subtipo: "2020", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/315876.jpg" },
     { titulo: "Bugonia", categoria: "emma-stone", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/fndDv16tDmgvMBJd2bb2w5CDxpe.jpg" },
+    { titulo: "Marmaduke", categoria: "emma-stone", subtipo: "2010", tipo: "Película", fichaTecnicaId: "marmaduke-2010", poster: "https://image.tmdb.org/t/p/original/gg6lddIpfuE2zyn8fLn1lC9xUYV.jpg" },
+    { titulo: "Easy A", categoria: "emma-stone", subtipo: "2010", tipo: "Película", fichaTecnicaId: "easy-a-2010", poster: "https://image.tmdb.org/t/p/original/spOqvK66GBWF3rPBXhUogyCIWHQ.jpg" },
+    { titulo: "Crazy, Stupid, Love", categoria: "emma-stone", subtipo: "2010", tipo: "Película", fichaTecnicaId: "crazy-stupid-love-2011", poster: "https://m.media-amazon.com/images/I/61I-Y1LHbjL._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "The Amazing Spider-Man", categoria: "emma-stone", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-amazing-spider-man-2012", poster: "https://www.mubis.es/media/articles/1554/15320/nuevo-poster-y-trailer-de-the-amazing-spider-man-original.jpg" },
+    { titulo: "Gangster Squad", categoria: "emma-stone", subtipo: "2010", tipo: "Película", fichaTecnicaId: "gangster-squad-2013", poster: "https://cdng.europosters.eu/pod_public/1300/324918.jpg" },
+    { titulo: "Movie 43", categoria: "emma-stone", subtipo: "2010", tipo: "Película", fichaTecnicaId: "movie-43-2013", poster: "https://image.tmdb.org/t/p/w500/uYa06GxHsCsELx9vOQ11vsT0Aa6.jpg" },
+    { titulo: "The Amazing Spider-Man 2", categoria: "emma-stone", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-amazing-spider-man-2-2014", poster: "https://cdn.europosters.eu/image/750/20688.jpg" },
+    { titulo: "La La Land", categoria: "emma-stone", subtipo: "2010", tipo: "Película", fichaTecnicaId: "la-la-land-2016", poster: "https://postercity.com.ar/wp-content/uploads/2021/04/La-La-Land-Poster_baja-1.jpg" },
 
     // --- JENNA ORTEGA (con filtros por década) ---
     { titulo: "The Babysitter: Killer Queen", categoria: "jenna-ortega", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BODk1ZmQ4ODItZjcwZi00MTUxLWE1YWMtMDY2NWJhNzJjMGEyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
@@ -1736,8 +1744,8 @@ const listaMedia = [
     // --- ANDREW GARFIELD: Década de 2010 ---
     { titulo: "Never Let Me Go", categoria: "andrew-garfield", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/yUFrKRBLbVAtgSBMTVAL4wOXq6z.jpg" },
     { titulo: "The Social Network", categoria: "andrew-garfield", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/n0ybibhJtQ5icDqTp8eRytcIHJx.jpg" },
-    { titulo: "The Amazing Spider-Man", categoria: "andrew-garfield", subtipo: "2010", tipo: "Película", poster: "https://www.mubis.es/media/articles/1554/15320/nuevo-poster-y-trailer-de-the-amazing-spider-man-original.jpg" },
-    { titulo: "The Amazing Spider-Man 2", categoria: "andrew-garfield", subtipo: "2010", tipo: "Película", poster: "https://cdn.europosters.eu/image/750/20688.jpg" },
+    { titulo: "The Amazing Spider-Man", categoria: "andrew-garfield", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-amazing-spider-man-2012", poster: "https://www.mubis.es/media/articles/1554/15320/nuevo-poster-y-trailer-de-the-amazing-spider-man-original.jpg" },
+    { titulo: "The Amazing Spider-Man 2", categoria: "andrew-garfield", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-amazing-spider-man-2-2014", poster: "https://cdn.europosters.eu/image/750/20688.jpg" },
     { titulo: "99 Homes", categoria: "andrew-garfield", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/6Zul5Spndok1WriSMfiyQFbAyLY.jpg" },
     { titulo: "Hacksaw Ridge", categoria: "andrew-garfield", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/7FklL1g5VYV0mUKdnPwuFRuJiKy.jpg" },
     { titulo: "Silence", categoria: "andrew-garfield", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/dIlmZqUGtuAHgsYgXpECrHGtER4.jpg" },
@@ -14854,7 +14862,7 @@ if (btnVolverFichaHawkeyeSerie) {
     }
 });
 
-['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023', 'arrietty-2010', 'the-impossible-2012', 'how-i-live-now-2013', 'wolf-hall-2015', 'in-the-heart-of-the-sea-2015', 'edge-of-winter-2016', 'the-lost-city-of-z-2016', 'pilgrimage-2017', 'the-current-war-2017', 'cherry-2021', 'onward-2020', 'chaos-walking-2021', 'uncharted-2022', 'dolittle-2020', 'the-devil-all-the-time-2020'].forEach(id => {
+['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023', 'arrietty-2010', 'the-impossible-2012', 'how-i-live-now-2013', 'wolf-hall-2015', 'in-the-heart-of-the-sea-2015', 'edge-of-winter-2016', 'the-lost-city-of-z-2016', 'pilgrimage-2017', 'the-current-war-2017', 'cherry-2021', 'onward-2020', 'chaos-walking-2021', 'uncharted-2022', 'dolittle-2020', 'the-devil-all-the-time-2020', 'marmaduke-2010', 'easy-a-2010', 'crazy-stupid-love-2011', 'the-amazing-spider-man-2012', 'gangster-squad-2013', 'movie-43-2013', 'the-amazing-spider-man-2-2014'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -15370,6 +15378,13 @@ const FICHAS_TECNICAS_TITULOS = {
     "uncharted-2022": "Uncharted",
     "dolittle-2020": "Dolittle",
     "the-devil-all-the-time-2020": "El Diablo a Todas Horas",
+    "marmaduke-2010": "Marmaduke",
+    "easy-a-2010": "Easy A",
+    "crazy-stupid-love-2011": "Crazy, Stupid, Love",
+    "the-amazing-spider-man-2012": "The Amazing Spider-Man",
+    "gangster-squad-2013": "Gangster Squad",
+    "movie-43-2013": "Movie 43",
+    "the-amazing-spider-man-2-2014": "The Amazing Spider-Man 2",
     "spies-in-disguise-2019": "Spies in Disguise",
     "the-crowded-room-2023": "The Crowded Room",
     "mio-in-the-land-of-faraway-1987": "Mio in the Land of Faraway",
@@ -17840,6 +17855,84 @@ const REPARTO_PELICULAS = {
             { actor: "Riley Keough", personaje: "Sandy Henderson" },
             { actor: "Jason Clarke", personaje: "Carl Henderson" },
             { actor: "Sebastian Stan", personaje: "Deputy Lee Bodecker" }
+        ]
+    },
+    "marmaduke-2010": {
+        director: "Tom Dey",
+        elenco: [
+            { actor: "Owen Wilson", personaje: "Marmaduke (voz)" },
+            { actor: "Lee Pace", personaje: "Phil Winslow" },
+            { actor: "Judy Greer", personaje: "Debbie Winslow" },
+            { actor: "William H. Macy", personaje: "Don Twombly" },
+            { actor: "Emma Stone", personaje: "Mazie (voz)" }
+        ]
+    },
+    "easy-a-2010": {
+        director: "Will Gluck",
+        elenco: [
+            { actor: "Emma Stone", personaje: "Olive Penderghast" },
+            { actor: "Penn Badgley", personaje: "Todd" },
+            { actor: "Amanda Bynes", personaje: "Marianne Bryant" },
+            { actor: "Thomas Haden Church", personaje: "Mr. Griffith" },
+            { actor: "Patricia Clarkson", personaje: "Rosemary Penderghast" },
+            { actor: "Stanley Tucci", personaje: "Dill Penderghast" }
+        ]
+    },
+    "crazy-stupid-love-2011": {
+        director: "Glenn Ficarra y John Requa",
+        elenco: [
+            { actor: "Steve Carell", personaje: "Cal Weaver" },
+            { actor: "Ryan Gosling", personaje: "Jacob Palmer" },
+            { actor: "Julianne Moore", personaje: "Emily Weaver" },
+            { actor: "Emma Stone", personaje: "Hannah Weaver" },
+            { actor: "Marisa Tomei", personaje: "Kate Tafferty" },
+            { actor: "Kevin Bacon", personaje: "David Lindhagen" }
+        ]
+    },
+    "the-amazing-spider-man-2012": {
+        director: "Marc Webb",
+        elenco: [
+            { actor: "Andrew Garfield", personaje: "Peter Parker / Spider-Man" },
+            { actor: "Emma Stone", personaje: "Gwen Stacy" },
+            { actor: "Rhys Ifans", personaje: "Dr. Curt Connors / Lizard" },
+            { actor: "Denis Leary", personaje: "George Stacy" },
+            { actor: "Martin Sheen", personaje: "Ben Parker" },
+            { actor: "Sally Field", personaje: "May Parker" }
+        ]
+    },
+    "gangster-squad-2013": {
+        director: "Ruben Fleischer",
+        elenco: [
+            { actor: "Josh Brolin", personaje: "Sgt. John O'Mara" },
+            { actor: "Ryan Gosling", personaje: "Sgt. Jerry Wooters" },
+            { actor: "Sean Penn", personaje: "Mickey Cohen" },
+            { actor: "Nick Nolte", personaje: "Chief Bill Parker" },
+            { actor: "Emma Stone", personaje: "Grace Faraday" },
+            { actor: "Anthony Mackie", personaje: "Lt. Coleman Harris" }
+        ]
+    },
+    "movie-43-2013": {
+        director: "Varios directores (entre ellos Peter Farrelly, Brett Ratner, Elizabeth Banks y James Gunn)",
+        elenco: [
+            { actor: "Dennis Quaid", personaje: "Charlie Wessler" },
+            { actor: "Greg Kinnear", personaje: "Griffin Schraeder" },
+            { actor: "Emma Stone", personaje: "Veronica" },
+            { actor: "Kieran Culkin", personaje: "Neil" },
+            { actor: "Hugh Jackman", personaje: "Davis" },
+            { actor: "Kate Winslet", personaje: "Beth" },
+            { actor: "Halle Berry", personaje: "Emily" },
+            { actor: "Richard Gere", personaje: "The Boss" }
+        ]
+    },
+    "the-amazing-spider-man-2-2014": {
+        director: "Marc Webb",
+        elenco: [
+            { actor: "Andrew Garfield", personaje: "Peter Parker / Spider-Man" },
+            { actor: "Emma Stone", personaje: "Gwen Stacy" },
+            { actor: "Jamie Foxx", personaje: "Max Dillon / Electro" },
+            { actor: "Dane DeHaan", personaje: "Harry Osborn" },
+            { actor: "Paul Giamatti", personaje: "Aleksei Sytsevich / Rhino" },
+            { actor: "Sally Field", personaje: "May Parker" }
         ]
     },
     "spies-in-disguise-2019": {
