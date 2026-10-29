@@ -1328,7 +1328,7 @@ const listaMedia = [
     { titulo: "Gangster Squad", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", fichaTecnicaId: "gangster-squad-2013", poster: "https://cdng.europosters.eu/pod_public/1300/324918.jpg" },
     { titulo: "Only God Forgives", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMzE5NzcxMTk5NF5BMl5BanBnXkFtZTcwNjE2MDg2OQ@@._V1_.jpg" },
     { titulo: "The Big Short", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-big-short-2015", poster: "https://m.media-amazon.com/images/M/MV5BZDZkNDQ3YjktYjBlZC00YTY1LTgxOGYtY2RhMWFhZmNkZGY3XkEyXkFqcGc@.V1.jpg" },
-    { titulo: "The Nice Guys", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/clq4So9spa9cXk3MZy2iMdqkxP2.jpg" },
+    { titulo: "The Nice Guys", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-nice-guys-2016", poster: "https://image.tmdb.org/t/p/original/clq4So9spa9cXk3MZy2iMdqkxP2.jpg" },
     { titulo: "La La Land", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", fichaTecnicaId: "la-la-land-2016", poster: "https://postercity.com.ar/wp-content/uploads/2021/04/La-La-Land-Poster_baja-1.jpg" },
     { titulo: "Song to Song", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNzI1MTg0MzEyOF5BMl5BanBnXkFtZTgwNzk4Mjk0MTI@._V1_FMjpg_UX1000_.jpg" },
     { titulo: "Blade Runner 2049", categoria: "ryan-gosling", subtipo: "2010", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/blade_runner_2049_2017_advance_original_film_art_efd5b98a-e898-4999-810d-1a0448114ff4_5000x.jpg?v=1640043899" },
@@ -1637,6 +1637,15 @@ const listaMedia = [
     { titulo: "Ghosts of Girlfriends Past", categoria: "emma-stone", subtipo: "2000", tipo: "Película", fichaTecnicaId: "ghosts-of-girlfriends-past-2009", poster: "https://image.tmdb.org/t/p/w500/azzg0lv5vpQRoOrZfNVkJn04f1M.jpg" },
     { titulo: "Zombieland", categoria: "emma-stone", subtipo: "2000", tipo: "Película", fichaTecnicaId: "zombieland-2009", poster: "https://image.tmdb.org/t/p/w500/dUkAmAyPVqubSBNRjRqCgHggZcK.jpg" },
     { titulo: "Paper Man", categoria: "emma-stone", subtipo: "2000", tipo: "Película", fichaTecnicaId: "paper-man-2009", poster: "https://image.tmdb.org/t/p/original/5imYS9bkNgiC4YhNl3BFKfnsXfE.jpg" },
+    { titulo: "Palo Alto", categoria: "margaret-qualley", subtipo: "2010", tipo: "Película", fichaTecnicaId: "palo-alto-2013", poster: "https://image.tmdb.org/t/p/w500/yjcwwYP3eSigxLKKVBoVVz85ZWv.jpg" },
+    { titulo: "The Leftovers", categoria: "margaret-qualley", subtipo: "2010", tipo: "Serie", fichaTecnicaId: "the-leftovers-2014", poster: "https://image.tmdb.org/t/p/original/7sYpPJKvo3OzkZoqrLQvcwjaQCw.jpg" },
+    { titulo: "The Nice Guys", categoria: "margaret-qualley", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-nice-guys-2016", poster: "https://image.tmdb.org/t/p/original/clq4So9spa9cXk3MZy2iMdqkxP2.jpg" },
+    { titulo: "Death Note", categoria: "margaret-qualley", subtipo: "2010", tipo: "Película", fichaTecnicaId: "death-note-2017", poster: "https://m.media-amazon.com/images/M/MV5BMTUwOTgzMTEyOF5BMl5BanBnXkFtZTgwNTk3MTM5MjI@._V1_.jpg" },
+    { titulo: "Novitiate", categoria: "margaret-qualley", subtipo: "2010", tipo: "Película", fichaTecnicaId: "novitiate-2017", poster: "https://image.tmdb.org/t/p/original/gsKbQ6hlbo6VMH8GJN4wIrOVZMy.jpg" },
+    { titulo: "The Vanishing of Sidney Hall", categoria: "margaret-qualley", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-vanishing-of-sidney-hall-2017", poster: "https://image.tmdb.org/t/p/original/e8SJJEliAK9g0EG5agPsbxWoWoI.jpg" },
+    { titulo: "Donnybrook", categoria: "margaret-qualley", subtipo: "2010", tipo: "Película", fichaTecnicaId: "donnybrook-2018", poster: "https://image.tmdb.org/t/p/w500/jcuEDKnM3uThdz7p0YYWFjMla73.jpg" },
+    { titulo: "Poor Things", categoria: "margaret-qualley", subtipo: "2020", tipo: "Película", fichaTecnicaId: "poor-things-2023", poster: "https://cdng.europosters.eu/pod_public/1300/317259.jpg" },
+    { titulo: "Kinds of Kindness", categoria: "margaret-qualley", subtipo: "2020", tipo: "Película", fichaTecnicaId: "kinds-of-kindness-2024", poster: "https://image.tmdb.org/t/p/original/50lPmjIpDs8gKfgK7fPIeKzpllh.jpg" },
 
     // --- JENNA ORTEGA (con filtros por década) ---
     { titulo: "The Babysitter: Killer Queen", categoria: "jenna-ortega", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BODk1ZmQ4ODItZjcwZi00MTUxLWE1YWMtMDY2NWJhNzJjMGEyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
@@ -4193,6 +4202,16 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "margaret-qualley",
+        titulo: "Margaret Qualley",
+        categoria: "actores",
+        poster: "https://i.pinimg.com/736x/46/84/ba/4684baed89e6177c87d5920a87934d8a.jpg",
+        esContenedor: true,
+        etiqueta: "Actriz",
+        progresoCategoria: "margaret-qualley",
+        peliculas: []
+    },
+    {
         id: "jenna-ortega",
         titulo: "Jenna Ortega",
         categoria: "actores",
@@ -5107,12 +5126,12 @@ const colecciones = [
             { titulo: "Justice Society: World War II", fichaTecnicaId: "justice-society-wwii", poster: "https://m.media-amazon.com/images/M/MV5BZjFkN2E5MWEtNjJjYy00Nzk3LTg0YzEtN2U5ZmM1YzdiMTczXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
             { titulo: "Batman: The Long Halloween - Part One", fichaTecnicaId: "batman-long-halloween-p1", poster: "https://cdng.europosters.eu/pod_public/1300/318711.jpg" },
             { titulo: "Batman: The Long Halloween - Part Two", fichaTecnicaId: "batman-long-halloween-p2", poster: "https://cdng.europosters.eu/pod_public/1300/318712.jpg" },
-            { titulo: "Green Lantern: Beware My Power", poster: "https://cdng.europosters.eu/pod_public/1300/317857.jpg" },
-            { titulo: "Legion of Super-Heroes", poster: "https://static.wikia.nocookie.net/tomorrowverse/images/9/92/Legion_Artwork2.jpeg/revision/latest/scale-to-width-down/1200?cb=20221210224747" },
-            { titulo: "Justice League: Warworld", poster: "https://cdng.europosters.eu/pod_public/1300/317094.jpg" },
-            { titulo: "Justice League: Crisis on Infinite Earths - Part One", poster: "https://m.media-amazon.com/images/M/MV5BNWQ1YWQwNWItNTI0NC00Mjk4LWJmOWItNDJmYjIzNzA3OWQ0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
-            { titulo: "Justice League: Crisis on Infinite Earths - Part Two", poster: "https://cdng.europosters.eu/pod_public/1300/316398.jpg" },
-            { titulo: "Justice League: Crisis on Infinite Earths - Part Three", poster: "https://m.media-amazon.com/images/M/MV5BMzZmODkzMGEtMzQ2OC00ZTY2LWFjNTUtMjBkZGFmMTU5ZmYxXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" }
+            { titulo: "Green Lantern: Beware My Power", fichaTecnicaId: "green-lantern-beware-my-power-2022", poster: "https://cdng.europosters.eu/pod_public/1300/317857.jpg" },
+            { titulo: "Legion of Super-Heroes", fichaTecnicaId: "legion-of-super-heroes-2023", poster: "https://static.wikia.nocookie.net/tomorrowverse/images/9/92/Legion_Artwork2.jpeg/revision/latest/scale-to-width-down/1200?cb=20221210224747" },
+            { titulo: "Justice League: Warworld", fichaTecnicaId: "justice-league-warworld-2023", poster: "https://cdng.europosters.eu/pod_public/1300/317094.jpg" },
+            { titulo: "Justice League: Crisis on Infinite Earths - Part One", fichaTecnicaId: "jl-crisis-infinite-earths-p1-2024", poster: "https://m.media-amazon.com/images/M/MV5BNWQ1YWQwNWItNTI0NC00Mjk4LWJmOWItNDJmYjIzNzA3OWQ0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+            { titulo: "Justice League: Crisis on Infinite Earths - Part Two", fichaTecnicaId: "jl-crisis-infinite-earths-p2-2024", poster: "https://cdng.europosters.eu/pod_public/1300/316398.jpg" },
+            { titulo: "Justice League: Crisis on Infinite Earths - Part Three", fichaTecnicaId: "jl-crisis-infinite-earths-p3-2024", poster: "https://m.media-amazon.com/images/M/MV5BMzZmODkzMGEtMzQ2OC00ZTY2LWFjNTUtMjBkZGFmMTU5ZmYxXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" }
         ]
     },
     {
@@ -6888,7 +6907,7 @@ const colecciones = [
         poster: "https://static.posters.cz/image/350/posters/death-note-group-i293517.jpg",
         peliculas: [
             { titulo: "Death Note", etiqueta: "Anime", poster: "https://cdn.europosters.eu/image/750/28405.jpg" },
-            { titulo: "Death Note\u200B", etiqueta: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTUwOTgzMTEyOF5BMl5BanBnXkFtZTgwNTk3MTM5MjI@._V1_.jpg" }
+            { titulo: "Death Note\u200B", etiqueta: "Película", fichaTecnicaId: "death-note-2017", poster: "https://m.media-amazon.com/images/M/MV5BMTUwOTgzMTEyOF5BMl5BanBnXkFtZTgwNTk3MTM5MjI@._V1_.jpg" }
         ]
     },
     {
@@ -7812,6 +7831,7 @@ function abrirColeccion(colId) {
         'brad-pitt': '.btn-filtro-pitt[data-tipo="2020"]',
         'florence-pugh': '.btn-filtro-pugh[data-tipo="2020"]',
         'emma-stone': '.btn-filtro-stone[data-tipo="2020"]',
+        'margaret-qualley': '.btn-filtro-qualley[data-tipo="2020"]',
         'jenna-ortega': '.btn-filtro-ortega[data-tipo="2020"]',
         'michael-fassbender': '.btn-filtro-fassbender[data-tipo="2020"]',
         'james-mcavoy': '.btn-filtro-mcavoy[data-tipo="2020"]',
@@ -8072,6 +8092,7 @@ function renderizarContenido() {
         "brad-pitt": "seccion-brad-pitt",
         "florence-pugh": "seccion-florence-pugh",
         "emma-stone": "seccion-emma-stone",
+        "margaret-qualley": "seccion-margaret-qualley",
         "jenna-ortega": "seccion-jenna-ortega",
         "michael-fassbender": "seccion-michael-fassbender",
         "james-mcavoy": "seccion-james-mcavoy",
@@ -10478,6 +10499,13 @@ if (btnVolverFichaHope2026) {
 const btnVolverFlorencePugh = document.getElementById('btn-volver-florence-pugh');
 if(btnVolverFlorencePugh) {
     btnVolverFlorencePugh.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-actores'));
+    });
+}
+
+const btnVolverMargaretQualley = document.getElementById('btn-volver-margaret-qualley');
+if(btnVolverMargaretQualley) {
+    btnVolverMargaretQualley.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-actores'));
     });
 }
@@ -14880,7 +14908,7 @@ if (btnVolverFichaHawkeyeSerie) {
     }
 });
 
-['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023', 'arrietty-2010', 'the-impossible-2012', 'how-i-live-now-2013', 'wolf-hall-2015', 'in-the-heart-of-the-sea-2015', 'edge-of-winter-2016', 'the-lost-city-of-z-2016', 'pilgrimage-2017', 'the-current-war-2017', 'cherry-2021', 'onward-2020', 'chaos-walking-2021', 'uncharted-2022', 'dolittle-2020', 'the-devil-all-the-time-2020', 'marmaduke-2010', 'easy-a-2010', 'crazy-stupid-love-2011', 'the-amazing-spider-man-2012', 'gangster-squad-2013', 'movie-43-2013', 'the-amazing-spider-man-2-2014', 'friends-with-benefits-2011', 'the-help-2011', 'the-croods-2013', 'magic-in-the-moonlight-2014', 'birdman-2014', 'aloha-2015', 'irrational-man-2015', 'battle-of-the-sexes-2017', 'maniac-2018', 'the-favourite-2018', 'zombieland-double-tap-2019', 'superbad-2007', 'the-rocker-2008', 'the-house-bunny-2008', 'ghosts-of-girlfriends-past-2009', 'zombieland-2009', 'paper-man-2009', 'the-curse-2023', 'the-croods-a-new-age-2020', 'cruella-2021', 'poor-things-2023', 'kinds-of-kindness-2024', 'eddington-2025', 'bugonia-2025'].forEach(id => {
+['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023', 'arrietty-2010', 'the-impossible-2012', 'how-i-live-now-2013', 'wolf-hall-2015', 'in-the-heart-of-the-sea-2015', 'edge-of-winter-2016', 'the-lost-city-of-z-2016', 'pilgrimage-2017', 'the-current-war-2017', 'cherry-2021', 'onward-2020', 'chaos-walking-2021', 'uncharted-2022', 'dolittle-2020', 'the-devil-all-the-time-2020', 'marmaduke-2010', 'easy-a-2010', 'crazy-stupid-love-2011', 'the-amazing-spider-man-2012', 'gangster-squad-2013', 'movie-43-2013', 'the-amazing-spider-man-2-2014', 'friends-with-benefits-2011', 'the-help-2011', 'the-croods-2013', 'magic-in-the-moonlight-2014', 'birdman-2014', 'aloha-2015', 'irrational-man-2015', 'battle-of-the-sexes-2017', 'maniac-2018', 'the-favourite-2018', 'zombieland-double-tap-2019', 'superbad-2007', 'the-rocker-2008', 'the-house-bunny-2008', 'ghosts-of-girlfriends-past-2009', 'zombieland-2009', 'paper-man-2009', 'the-curse-2023', 'the-croods-a-new-age-2020', 'cruella-2021', 'poor-things-2023', 'kinds-of-kindness-2024', 'eddington-2025', 'bugonia-2025', 'palo-alto-2013', 'the-leftovers-2014', 'the-nice-guys-2016', 'death-note-2017', 'novitiate-2017', 'the-vanishing-of-sidney-hall-2017', 'donnybrook-2018', 'green-lantern-beware-my-power-2022', 'legion-of-super-heroes-2023', 'justice-league-warworld-2023', 'jl-crisis-infinite-earths-p1-2024', 'jl-crisis-infinite-earths-p2-2024', 'jl-crisis-infinite-earths-p3-2024'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -15427,6 +15455,19 @@ const FICHAS_TECNICAS_TITULOS = {
     "kinds-of-kindness-2024": "Kinds of Kindness",
     "eddington-2025": "Eddington",
     "bugonia-2025": "Bugonia",
+    "palo-alto-2013": "Palo Alto",
+    "the-leftovers-2014": "The Leftovers",
+    "the-nice-guys-2016": "The Nice Guys",
+    "death-note-2017": "Death Note",
+    "novitiate-2017": "Novitiate",
+    "the-vanishing-of-sidney-hall-2017": "The Vanishing of Sidney Hall",
+    "donnybrook-2018": "Donnybrook",
+    "green-lantern-beware-my-power-2022": "Green Lantern: Beware My Power",
+    "legion-of-super-heroes-2023": "Legion of Super-Heroes",
+    "justice-league-warworld-2023": "Justice League: Warworld",
+    "jl-crisis-infinite-earths-p1-2024": "Justice League: Crisis on Infinite Earths - Part One",
+    "jl-crisis-infinite-earths-p2-2024": "Justice League: Crisis on Infinite Earths - Part Two",
+    "jl-crisis-infinite-earths-p3-2024": "Justice League: Crisis on Infinite Earths - Part Three",
     "spies-in-disguise-2019": "Spies in Disguise",
     "the-crowded-room-2023": "The Crowded Room",
     "mio-in-the-land-of-faraway-1987": "Mio in the Land of Faraway",
@@ -18237,6 +18278,150 @@ const REPARTO_PELICULAS = {
             { actor: "Aidan Delbis", personaje: "Don" },
             { actor: "Stavros Halkias", personaje: "Casey Boyd" },
             { actor: "Alicia Silverstone", personaje: "Sandy Gatz" }
+        ]
+    },
+    "palo-alto-2013": {
+        director: "Gia Coppola",
+        elenco: [
+            { actor: "Emma Roberts", personaje: "April" },
+            { actor: "James Franco", personaje: "Mr. B" },
+            { actor: "Jack Kilmer", personaje: "Teddy" },
+            { actor: "Nat Wolff", personaje: "Fred" },
+            { actor: "Zoe Levin", personaje: "Emily" },
+            { actor: "Val Kilmer", personaje: "Stewart" },
+            { actor: "Margaret Qualley", personaje: "Raquel" }
+        ]
+    },
+    "the-leftovers-2014": {
+        director: "Damon Lindelof y Tom Perrotta (creadores)",
+        elenco: [
+            { actor: "Justin Theroux", personaje: "Kevin Garvey" },
+            { actor: "Amy Brenneman", personaje: "Laurie Garvey" },
+            { actor: "Christopher Eccleston", personaje: "Matt Jamison" },
+            { actor: "Liv Tyler", personaje: "Meg Abbott" },
+            { actor: "Chris Zylka", personaje: "Tom Garvey" },
+            { actor: "Margaret Qualley", personaje: "Jill Garvey" },
+            { actor: "Carrie Coon", personaje: "Nora Durst" }
+        ]
+    },
+    "the-nice-guys-2016": {
+        director: "Shane Black",
+        elenco: [
+            { actor: "Russell Crowe", personaje: "Jackson Healy" },
+            { actor: "Ryan Gosling", personaje: "Holland March" },
+            { actor: "Angourie Rice", personaje: "Holly March" },
+            { actor: "Matt Bomer", personaje: "John Boy" },
+            { actor: "Margaret Qualley", personaje: "Amelia Kuttner" },
+            { actor: "Kim Basinger", personaje: "Judith Kuttner" }
+        ]
+    },
+    "death-note-2017": {
+        director: "Adam Wingard",
+        elenco: [
+            { actor: "Nat Wolff", personaje: "Light Turner" },
+            { actor: "LaKeith Stanfield", personaje: "L" },
+            { actor: "Margaret Qualley", personaje: "Mia Sutton" },
+            { actor: "Shea Whigham", personaje: "Detective James Turner" },
+            { actor: "Paul Nakauchi", personaje: "Watari" },
+            { actor: "Willem Dafoe", personaje: "Ryuk (voz)" }
+        ]
+    },
+    "novitiate-2017": {
+        director: "Maggie Betts",
+        elenco: [
+            { actor: "Margaret Qualley", personaje: "Hermana Cathleen Harris" },
+            { actor: "Melissa Leo", personaje: "Madre Superiora Marie Saint-Clair" },
+            { actor: "Julianne Nicholson", personaje: "Nora Harris" },
+            { actor: "Dianna Agron", personaje: "Hermana Mary Grace" },
+            { actor: "Rebecca Dayan", personaje: "Hermana Emanuel" },
+            { actor: "Denis O'Hare", personaje: "Arzobispo McCarthy" }
+        ]
+    },
+    "the-vanishing-of-sidney-hall-2017": {
+        director: "Shawn Christensen",
+        elenco: [
+            { actor: "Logan Lerman", personaje: "Sidney Hall" },
+            { actor: "Elle Fanning", personaje: "Melody Jameson" },
+            { actor: "Michelle Monaghan", personaje: "Velouria Hall" },
+            { actor: "Kyle Chandler", personaje: "El Buscador / Francis Bishop" },
+            { actor: "Nathan Lane", personaje: "Harold" },
+            { actor: "Margaret Qualley", personaje: "Alexandra" }
+        ]
+    },
+    "donnybrook-2018": {
+        director: "Tim Sutton",
+        elenco: [
+            { actor: "Jamie Bell", personaje: "Jarhead Earl" },
+            { actor: "Frank Grillo", personaje: "Chainsaw Angus" },
+            { actor: "James Badge Dale", personaje: "Whalen" },
+            { actor: "Margaret Qualley", personaje: "Delia Angus" }
+        ]
+    },
+    "green-lantern-beware-my-power-2022": {
+        director: "Jeff Wamester",
+        elenco: [
+            { actor: "Aldis Hodge", personaje: "John Stewart / Linterna Verde (voz)" },
+            { actor: "Jimmi Simpson", personaje: "Oliver Queen / Flecha Verde (voz)" },
+            { actor: "Nolan North", personaje: "Hal Jordan / Parallax (voz)" },
+            { actor: "Jamie Gray Hyder", personaje: "Shayera Hol (voz)" },
+            { actor: "Brian Bloom", personaje: "Adam Strange (voz)" },
+            { actor: "Keesha Sharp", personaje: "Vixen (voz)" },
+            { actor: "Rick D. Wasserman", personaje: "Sinestro (voz)" }
+        ]
+    },
+    "legion-of-super-heroes-2023": {
+        director: "Jeff Wamester",
+        elenco: [
+            { actor: "Meg Donnelly", personaje: "Kara Zor-El / Supergirl (voz)" },
+            { actor: "Harry Shum Jr.", personaje: "Brainiac 5 (voz)" },
+            { actor: "Darren Criss", personaje: "Kal-El / Superman (voz)" },
+            { actor: "Matt Bomer", personaje: "Barry Allen / Flash (voz)" },
+            { actor: "Jensen Ackles", personaje: "Bruce Wayne / Batman (voz)" },
+            { actor: "Yuri Lowenthal", personaje: "Mon-El (voz)" },
+            { actor: "Jennifer Hale", personaje: "Alura In-Ze (voz)" }
+        ]
+    },
+    "justice-league-warworld-2023": {
+        director: "Jeff Wamester",
+        elenco: [
+            { actor: "Jensen Ackles", personaje: "Bruce Wayne / Batman (voz)" },
+            { actor: "Darren Criss", personaje: "Clark Kent / Superman (voz)" },
+            { actor: "Stana Katic", personaje: "Diana Prince / Mujer Maravilla (voz)" },
+            { actor: "Ike Amadi", personaje: "Martian Manhunter (voz)" },
+            { actor: "Troy Baker", personaje: "Jonah Hex (voz)" },
+            { actor: "John DiMaggio", personaje: "Lobo (voz)" },
+            { actor: "Robin Atkin Downes", personaje: "Mongul (voz)" }
+        ]
+    },
+    "jl-crisis-infinite-earths-p1-2024": {
+        director: "Jeff Wamester",
+        elenco: [
+            { actor: "Matt Bomer", personaje: "Barry Allen / Flash (voz)" },
+            { actor: "Jensen Ackles", personaje: "Bruce Wayne / Batman (voz)" },
+            { actor: "Darren Criss", personaje: "Clark Kent / Superman (voz)" },
+            { actor: "Meg Donnelly", personaje: "Kara Zor-El / Supergirl / Harbinger (voz)" },
+            { actor: "Stana Katic", personaje: "Diana Prince / Mujer Maravilla de la Tierra-2 (voz)" }
+        ]
+    },
+    "jl-crisis-infinite-earths-p2-2024": {
+        director: "Jeff Wamester",
+        elenco: [
+            { actor: "Matt Bomer", personaje: "Barry Allen / Flash (voz)" },
+            { actor: "Jensen Ackles", personaje: "Bruce Wayne / Batman (voz)" },
+            { actor: "Darren Criss", personaje: "Clark Kent / Superman (voz)" },
+            { actor: "Meg Donnelly", personaje: "Kara Zor-El / Supergirl / Harbinger (voz)" },
+            { actor: "Stana Katic", personaje: "Diana Prince / Mujer Maravilla de la Tierra-2 (voz)" }
+        ]
+    },
+    "jl-crisis-infinite-earths-p3-2024": {
+        director: "Jeff Wamester",
+        elenco: [
+            { actor: "Matt Bomer", personaje: "Barry Allen / Flash (voz)" },
+            { actor: "Jensen Ackles", personaje: "Bruce Wayne / Batman (voz)" },
+            { actor: "Darren Criss", personaje: "Clark Kent / Superman (voz)" },
+            { actor: "Meg Donnelly", personaje: "Kara Zor-El / Supergirl / Harbinger (voz)" },
+            { actor: "Stana Katic", personaje: "Diana Prince / Mujer Maravilla de la Tierra-2 (voz)" },
+            { actor: "Corey Stoll", personaje: "Lex Luthor de la Tierra-10 (voz)" }
         ]
     },
     "spies-in-disguise-2019": {
@@ -21334,6 +21519,16 @@ botonesFiltroStone.forEach(boton => {
     });
 });
 inicializarFiltroTipoActor('seccion-emma-stone', 'btn-filtro-stone');
+
+const botonesFiltroQualley = document.querySelectorAll('.btn-filtro-qualley');
+botonesFiltroQualley.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroQualley.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        aplicarFiltroTipoYDecadaActor('seccion-margaret-qualley', 'btn-filtro-qualley');
+    });
+});
+inicializarFiltroTipoActor('seccion-margaret-qualley', 'btn-filtro-qualley');
 
 // ==========================================
 // FILTROS "JENNA ORTEGA" (por década)
