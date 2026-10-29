@@ -1607,6 +1607,7 @@ const listaMedia = [
     // --- EMMA STONE (con filtros por década) ---
     { titulo: "The Croods: A New Age", categoria: "emma-stone", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61wgHMAdD7L.jpg" },
     { titulo: "Cruella", categoria: "emma-stone", subtipo: "2020", tipo: "Película", poster: "https://purodiseno.lat/wp-content/uploads/2021/04/CRUELLA-692x1024.jpg" },
+    { titulo: "The Curse", categoria: "emma-stone", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "the-curse-2023", poster: "https://image.tmdb.org/t/p/original/k1Rb8zPsA7Lnr2U1xwAk880tFbR.jpg" },
     { titulo: "Poor Things", categoria: "emma-stone", subtipo: "2020", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/317259.jpg" },
     { titulo: "Kinds of Kindness", categoria: "emma-stone", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/50lPmjIpDs8gKfgK7fPIeKzpllh.jpg" },
     { titulo: "Eddington", categoria: "emma-stone", subtipo: "2020", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/315876.jpg" },
@@ -1630,6 +1631,12 @@ const listaMedia = [
     { titulo: "Maniac", categoria: "emma-stone", subtipo: "2010", tipo: "Serie", fichaTecnicaId: "maniac-2018", poster: "https://image.tmdb.org/t/p/original/kCNl4QPstAqChFD0NnLpbDFG8ul.jpg" },
     { titulo: "The Favourite", categoria: "emma-stone", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-favourite-2018", poster: "https://image.tmdb.org/t/p/w500/cwBq0onfmeilU5xgqNNjJAMPfpw.jpg" },
     { titulo: "Zombieland: Double Tap", categoria: "emma-stone", subtipo: "2010", tipo: "Película", fichaTecnicaId: "zombieland-double-tap-2019", poster: "https://image.tmdb.org/t/p/w500/dtRbVsUb5O12WWO54SRpiMtHKC0.jpg" },
+    { titulo: "Superbad", categoria: "emma-stone", subtipo: "2000", tipo: "Película", fichaTecnicaId: "superbad-2007", poster: "https://image.tmdb.org/t/p/original/ek8e8txUyUwd2BNqj6lFEerJfbq.jpg" },
+    { titulo: "The Rocker", categoria: "emma-stone", subtipo: "2000", tipo: "Película", fichaTecnicaId: "the-rocker-2008", poster: "https://image.tmdb.org/t/p/w500/wzgFC7jOEMtf9D6CSdI7ckUMtwU.jpg" },
+    { titulo: "The House Bunny", categoria: "emma-stone", subtipo: "2000", tipo: "Película", fichaTecnicaId: "the-house-bunny-2008", poster: "https://image.tmdb.org/t/p/original/4oGGJ824vqIqDtyMvMuK44pDEmx.jpg" },
+    { titulo: "Ghosts of Girlfriends Past", categoria: "emma-stone", subtipo: "2000", tipo: "Película", fichaTecnicaId: "ghosts-of-girlfriends-past-2009", poster: "https://image.tmdb.org/t/p/w500/azzg0lv5vpQRoOrZfNVkJn04f1M.jpg" },
+    { titulo: "Zombieland", categoria: "emma-stone", subtipo: "2000", tipo: "Película", fichaTecnicaId: "zombieland-2009", poster: "https://image.tmdb.org/t/p/w500/dUkAmAyPVqubSBNRjRqCgHggZcK.jpg" },
+    { titulo: "Paper Man", categoria: "emma-stone", subtipo: "2000", tipo: "Película", fichaTecnicaId: "paper-man-2009", poster: "https://image.tmdb.org/t/p/original/5imYS9bkNgiC4YhNl3BFKfnsXfE.jpg" },
 
     // --- JENNA ORTEGA (con filtros por década) ---
     { titulo: "The Babysitter: Killer Queen", categoria: "jenna-ortega", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BODk1ZmQ4ODItZjcwZi00MTUxLWE1YWMtMDY2NWJhNzJjMGEyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
@@ -14873,7 +14880,7 @@ if (btnVolverFichaHawkeyeSerie) {
     }
 });
 
-['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023', 'arrietty-2010', 'the-impossible-2012', 'how-i-live-now-2013', 'wolf-hall-2015', 'in-the-heart-of-the-sea-2015', 'edge-of-winter-2016', 'the-lost-city-of-z-2016', 'pilgrimage-2017', 'the-current-war-2017', 'cherry-2021', 'onward-2020', 'chaos-walking-2021', 'uncharted-2022', 'dolittle-2020', 'the-devil-all-the-time-2020', 'marmaduke-2010', 'easy-a-2010', 'crazy-stupid-love-2011', 'the-amazing-spider-man-2012', 'gangster-squad-2013', 'movie-43-2013', 'the-amazing-spider-man-2-2014', 'friends-with-benefits-2011', 'the-help-2011', 'the-croods-2013', 'magic-in-the-moonlight-2014', 'birdman-2014', 'aloha-2015', 'irrational-man-2015', 'battle-of-the-sexes-2017', 'maniac-2018', 'the-favourite-2018', 'zombieland-double-tap-2019'].forEach(id => {
+['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023', 'arrietty-2010', 'the-impossible-2012', 'how-i-live-now-2013', 'wolf-hall-2015', 'in-the-heart-of-the-sea-2015', 'edge-of-winter-2016', 'the-lost-city-of-z-2016', 'pilgrimage-2017', 'the-current-war-2017', 'cherry-2021', 'onward-2020', 'chaos-walking-2021', 'uncharted-2022', 'dolittle-2020', 'the-devil-all-the-time-2020', 'marmaduke-2010', 'easy-a-2010', 'crazy-stupid-love-2011', 'the-amazing-spider-man-2012', 'gangster-squad-2013', 'movie-43-2013', 'the-amazing-spider-man-2-2014', 'friends-with-benefits-2011', 'the-help-2011', 'the-croods-2013', 'magic-in-the-moonlight-2014', 'birdman-2014', 'aloha-2015', 'irrational-man-2015', 'battle-of-the-sexes-2017', 'maniac-2018', 'the-favourite-2018', 'zombieland-double-tap-2019', 'superbad-2007', 'the-rocker-2008', 'the-house-bunny-2008', 'ghosts-of-girlfriends-past-2009', 'zombieland-2009', 'paper-man-2009', 'the-curse-2023'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -15407,6 +15414,13 @@ const FICHAS_TECNICAS_TITULOS = {
     "maniac-2018": "Maniac",
     "the-favourite-2018": "The Favourite",
     "zombieland-double-tap-2019": "Zombieland: Double Tap",
+    "superbad-2007": "Superbad",
+    "the-rocker-2008": "The Rocker",
+    "the-house-bunny-2008": "The House Bunny",
+    "ghosts-of-girlfriends-past-2009": "Ghosts of Girlfriends Past",
+    "zombieland-2009": "Zombieland",
+    "paper-man-2009": "Paper Man",
+    "the-curse-2023": "The Curse",
     "spies-in-disguise-2019": "Spies in Disguise",
     "the-crowded-room-2023": "The Crowded Room",
     "mio-in-the-land-of-faraway-1987": "Mio in the Land of Faraway",
@@ -18074,6 +18088,80 @@ const REPARTO_PELICULAS = {
             { actor: "Abigail Breslin", personaje: "Little Rock" },
             { actor: "Zoey Deutch", personaje: "Madison" },
             { actor: "Rosario Dawson", personaje: "Nevada" }
+        ]
+    },
+    "superbad-2007": {
+        director: "Greg Mottola",
+        elenco: [
+            { actor: "Jonah Hill", personaje: "Seth" },
+            { actor: "Michael Cera", personaje: "Evan" },
+            { actor: "Christopher Mintz-Plasse", personaje: "Fogell / \"McLovin\"" },
+            { actor: "Bill Hader", personaje: "Officer Slater" },
+            { actor: "Seth Rogen", personaje: "Officer Michaels" },
+            { actor: "Emma Stone", personaje: "Jules" },
+            { actor: "Martha MacIsaac", personaje: "Becca" }
+        ]
+    },
+    "the-rocker-2008": {
+        director: "Peter Cattaneo",
+        elenco: [
+            { actor: "Rainn Wilson", personaje: "Robert \"Fish\" Fishman" },
+            { actor: "Christina Applegate", personaje: "Kim Powell" },
+            { actor: "Jeff Garlin", personaje: "Stan Gadman" },
+            { actor: "Josh Gad", personaje: "Matt Gadman" },
+            { actor: "Teddy Geiger", personaje: "Curtis Powell" },
+            { actor: "Emma Stone", personaje: "Amelia Stone" }
+        ]
+    },
+    "the-house-bunny-2008": {
+        director: "Fred Wolf",
+        elenco: [
+            { actor: "Anna Faris", personaje: "Shelley Darlingson" },
+            { actor: "Emma Stone", personaje: "Natalie Sandler" },
+            { actor: "Colin Hanks", personaje: "Oliver Hauser" },
+            { actor: "Kat Dennings", personaje: "Mona Rita" },
+            { actor: "Christopher McDonald", personaje: "Dean Simmons" },
+            { actor: "Beverly D'Angelo", personaje: "Mrs. Hagstrom" }
+        ]
+    },
+    "ghosts-of-girlfriends-past-2009": {
+        director: "Mark Waters",
+        elenco: [
+            { actor: "Matthew McConaughey", personaje: "Connor \"Dutch\" Mead" },
+            { actor: "Jennifer Garner", personaje: "Jenny Perotti" },
+            { actor: "Michael Douglas", personaje: "Wayne S. Mead" },
+            { actor: "Breckin Meyer", personaje: "Paul Mead" },
+            { actor: "Lacey Chabert", personaje: "Sandra Volkom" },
+            { actor: "Emma Stone", personaje: "Allison Vandermeersh (Fantasma de las novias pasadas)" }
+        ]
+    },
+    "zombieland-2009": {
+        director: "Ruben Fleischer",
+        elenco: [
+            { actor: "Woody Harrelson", personaje: "Tallahassee" },
+            { actor: "Jesse Eisenberg", personaje: "Columbus" },
+            { actor: "Emma Stone", personaje: "Wichita (Krista)" },
+            { actor: "Abigail Breslin", personaje: "Little Rock" },
+            { actor: "Bill Murray", personaje: "Él mismo" }
+        ]
+    },
+    "paper-man-2009": {
+        director: "Kieran Mulroney y Michele Mulroney",
+        elenco: [
+            { actor: "Jeff Daniels", personaje: "Richard Dunn" },
+            { actor: "Ryan Reynolds", personaje: "Captain Excellent" },
+            { actor: "Emma Stone", personaje: "Abby" },
+            { actor: "Kieran Culkin", personaje: "Christopher" },
+            { actor: "Lisa Kudrow", personaje: "Claire Dunn" },
+            { actor: "Hunter Parrish", personaje: "Bryce" }
+        ]
+    },
+    "the-curse-2023": {
+        director: "Nathan Fielder y Benny Safdie (creadores)",
+        elenco: [
+            { actor: "Emma Stone", personaje: "Whitney Siegel" },
+            { actor: "Nathan Fielder", personaje: "Asher Siegel" },
+            { actor: "Benny Safdie", personaje: "Dougie Schecter" }
         ]
     },
     "spies-in-disguise-2019": {
