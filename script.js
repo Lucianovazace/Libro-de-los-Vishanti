@@ -1036,13 +1036,13 @@ const listaMedia = [
     { titulo: "If I Had Legs I'd Kick You", categoria: "oscar-2026", subtipo: "mejor-actriz", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMGRlMjIzMDctNzNkMS00MzEwLTlhZWEtM2FjYmE1ZmFjMzZlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
 
     // --- TOM HOLLAND (con filtros por década) ---
-    { titulo: "Unidos", categoria: "tom-holland", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81ZnP4DB06L.AC_UF894,1000_QL80.jpg" },
-    { titulo: "Dolittle", categoria: "tom-holland", subtipo: "2020", tipo: "Película", poster: "https://www.universalpictures.com.ar/tl_files/content/movies/dolittle/posters/01.jpg" },
-    { titulo: "El Diablo a Todas Horas", categoria: "tom-holland", subtipo: "2020", tipo: "Película", poster: "https://i.pinimg.com/736x/3f/2b/1b/3f2b1ba88daef2d2226517b3e49688fa.jpg" },
-    { titulo: "Cherry", categoria: "tom-holland", subtipo: "2020", tipo: "Película", poster: "https://pics.filmaffinity.com/Cherry-459820854-large.jpg" },
-    { titulo: "Chaos Walking", categoria: "tom-holland", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61LcnT-4RxL._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Unidos", categoria: "tom-holland", subtipo: "2020", tipo: "Película", fichaTecnicaId: "onward-2020", poster: "https://m.media-amazon.com/images/I/81ZnP4DB06L.AC_UF894,1000_QL80.jpg" },
+    { titulo: "Dolittle", categoria: "tom-holland", subtipo: "2020", tipo: "Película", fichaTecnicaId: "dolittle-2020", poster: "https://www.universalpictures.com.ar/tl_files/content/movies/dolittle/posters/01.jpg" },
+    { titulo: "El Diablo a Todas Horas", categoria: "tom-holland", subtipo: "2020", tipo: "Película", fichaTecnicaId: "the-devil-all-the-time-2020", poster: "https://i.pinimg.com/736x/3f/2b/1b/3f2b1ba88daef2d2226517b3e49688fa.jpg" },
+    { titulo: "Cherry", categoria: "tom-holland", subtipo: "2020", tipo: "Película", fichaTecnicaId: "cherry-2021", poster: "https://pics.filmaffinity.com/Cherry-459820854-large.jpg" },
+    { titulo: "Chaos Walking", categoria: "tom-holland", subtipo: "2020", tipo: "Película", fichaTecnicaId: "chaos-walking-2021", poster: "https://m.media-amazon.com/images/I/61LcnT-4RxL._AC_UF894,1000_QL80_.jpg" },
     { titulo: "Spider-Man: No Way Home", categoria: "tom-holland", subtipo: "2020", tipo: "Película", fichaTecnicaId: "spider-man-no-way-home", poster: "https://www.cinemascomics.com/wp-content/uploads/2022/01/poster-Spider-man-no-way-home.jpg" },
-    { titulo: "Uncharted", categoria: "tom-holland", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71Pzfv1skmL.jpg" },
+    { titulo: "Uncharted", categoria: "tom-holland", subtipo: "2020", tipo: "Película", fichaTecnicaId: "uncharted-2022", poster: "https://m.media-amazon.com/images/I/71Pzfv1skmL.jpg" },
     { titulo: "The Odyssey", categoria: "tom-holland", subtipo: "2020", tipo: "Película", poster: "https://img.asmedia.epimg.net/resizer/v2/AP6RDKAGQVE4DEON7ETUS4UVM4.jpg?auth=5abec700c478bffaa862bc1e153efeb77076781fbd4dc9df918ddb11a11979ea&width=375" },
     { titulo: "Spider-Man: Brand New Day", categoria: "tom-holland", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOWNjYWM3NWItOGE0ZS00MWRjLThiZWEtYjc4ZmNmMmU5ZTVmXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
     { titulo: "The Crowded Room", categoria: "tom-holland", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "the-crowded-room-2023", poster: "https://image.tmdb.org/t/p/original/36TcuMJFyr8q8zelVbBbs59bL53.jpg" },
@@ -1056,7 +1056,7 @@ const listaMedia = [
     { titulo: "The Lost City of Z", categoria: "tom-holland", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-lost-city-of-z-2016", poster: "https://image.tmdb.org/t/p/original/7sACk0B3txjHGFkR7e0pBXhwDyu.jpg" },
     { titulo: "Spider-Man: Homecoming", categoria: "tom-holland", subtipo: "2010", tipo: "Película", fichaTecnicaId: "spiderman-homecoming", poster: "https://m.media-amazon.com/images/I/A1mjWWH6mFL.jpg" },
     { titulo: "Pilgrimage", categoria: "tom-holland", subtipo: "2010", tipo: "Película", fichaTecnicaId: "pilgrimage-2017", poster: "https://image.tmdb.org/t/p/original/cqUCzYImhEmCmXP9e7QLigiS8mh.jpg" },
-    { titulo: "The Current War", categoria: "tom-holland", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTk4MzhkMDAtNWMyMi00ZmI4LWEyNTUtZDVkMTVlZjJmYTAzXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "The Current War", categoria: "tom-holland", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-current-war-2017", poster: "https://m.media-amazon.com/images/M/MV5BMTk4MzhkMDAtNWMyMi00ZmI4LWEyNTUtZDVkMTVlZjJmYTAzXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
     { titulo: "Avengers: Infinity War", categoria: "tom-holland", subtipo: "2010", tipo: "Película", fichaTecnicaId: "avengers-infinity-war", poster: "https://www.blackfilm.com/read/wp-content/uploads/2017/11/Avengers-Infinity-War-Teaser-Poster.jpg" },
     { titulo: "Avengers: Endgame", categoria: "tom-holland", subtipo: "2010", tipo: "Película", fichaTecnicaId: "avengers-endgame", poster: "https://cdn.marvel.com/content/2x/MLou2_Teaser_1-Sht_v6_Lg.jpg" },
     { titulo: "Spider-Man: Far From Home", categoria: "tom-holland", subtipo: "2010", tipo: "Película", fichaTecnicaId: "spiderman-far-from-home", poster: "https://cdn.marvel.com/content/2x/ffh_poster_onesheet.webp" },
@@ -1145,7 +1145,7 @@ const listaMedia = [
     { titulo: "Zoolander 2", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/n8AJzALlTPBwe9Tkv3tdxbiAr9i.jpg" },
     { titulo: "Doctor Strange", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", fichaTecnicaId: "doctor-strange-1", poster: "https://uruloki.org/felipeblog/images2016/20160412-doctorstrange.jpg" },
     { titulo: "Thor: Ragnarok", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", fichaTecnicaId: "thor-ragnarok", poster: "https://tecolotito.elsiglodetorreon.com.mx/cdn-cgi/image/format=webp,width=1546,quality=75/i/2017/04/929651.jpeg" },
-    { titulo: "The Current War", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTk4MzhkMDAtNWMyMi00ZmI4LWEyNTUtZDVkMTVlZjJmYTAzXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "The Current War", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-current-war-2017", poster: "https://m.media-amazon.com/images/M/MV5BMTk4MzhkMDAtNWMyMi00ZmI4LWEyNTUtZDVkMTVlZjJmYTAzXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
     { titulo: "Avengers: Infinity War", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", fichaTecnicaId: "avengers-infinity-war", poster: "https://www.blackfilm.com/read/wp-content/uploads/2017/11/Avengers-Infinity-War-Teaser-Poster.jpg" },
     { titulo: "The Grinch", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/1Bc9VNd9CIHIyJtPKFqSQzrXWru.jpg" },
     { titulo: "Mowgli: Legend of the Jungle", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/wdj8FK2bCA7iNtZRSzJHrltAwnr.jpg" },
@@ -1481,7 +1481,7 @@ const listaMedia = [
     { titulo: "Coco", categoria: "pixar", fichaTecnicaId: "coco-2017", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/4jfKMdT6vdkpcB2EyBj2XkO2tTf.jpg" },
     { titulo: "Los Increíbles 2", categoria: "pixar", subtipo: "2010", tipo: "Película", poster: "https://i0.wp.com/teaser-trailer.com/wp-content/uploads/2017/03/The-Incredibles-2-Teaser-Poster.jpg?resize=425%2C600&ssl=1" },
     { titulo: "Toy Story 4", categoria: "pixar", subtipo: "2010", tipo: "Película", poster: "https://hips.hearstapps.com/hmg-prod/images/toy-story-4-poster-1543427531.jpg" },
-    { titulo: "Unidos", categoria: "pixar", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81ZnP4DB06L.AC_UF894,1000_QL80.jpg" },
+    { titulo: "Unidos", categoria: "pixar", subtipo: "2020", tipo: "Película", fichaTecnicaId: "onward-2020", poster: "https://m.media-amazon.com/images/I/81ZnP4DB06L.AC_UF894,1000_QL80.jpg" },
     { titulo: "Soul", categoria: "pixar", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/xJ7MCAy4oCLerPo3JjnB8lKOhl4.jpg" },
     { titulo: "Luca", categoria: "pixar", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71kDOwRD78S.jpg" },
     { titulo: "Red", categoria: "pixar", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81afp89kELL.jpg" },
@@ -14854,7 +14854,7 @@ if (btnVolverFichaHawkeyeSerie) {
     }
 });
 
-['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023', 'arrietty-2010', 'the-impossible-2012', 'how-i-live-now-2013', 'wolf-hall-2015', 'in-the-heart-of-the-sea-2015', 'edge-of-winter-2016', 'the-lost-city-of-z-2016', 'pilgrimage-2017'].forEach(id => {
+['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023', 'arrietty-2010', 'the-impossible-2012', 'how-i-live-now-2013', 'wolf-hall-2015', 'in-the-heart-of-the-sea-2015', 'edge-of-winter-2016', 'the-lost-city-of-z-2016', 'pilgrimage-2017', 'the-current-war-2017', 'cherry-2021', 'onward-2020', 'chaos-walking-2021', 'uncharted-2022', 'dolittle-2020', 'the-devil-all-the-time-2020'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -15363,6 +15363,13 @@ const FICHAS_TECNICAS_TITULOS = {
     "edge-of-winter-2016": "Edge of Winter",
     "the-lost-city-of-z-2016": "The Lost City of Z",
     "pilgrimage-2017": "Pilgrimage",
+    "the-current-war-2017": "The Current War",
+    "cherry-2021": "Cherry",
+    "onward-2020": "Unidos",
+    "chaos-walking-2021": "Chaos Walking",
+    "uncharted-2022": "Uncharted",
+    "dolittle-2020": "Dolittle",
+    "the-devil-all-the-time-2020": "El Diablo a Todas Horas",
     "spies-in-disguise-2019": "Spies in Disguise",
     "the-crowded-room-2023": "The Crowded Room",
     "mio-in-the-land-of-faraway-1987": "Mio in the Land of Faraway",
@@ -17761,6 +17768,78 @@ const REPARTO_PELICULAS = {
             { actor: "Richard Armitage", personaje: "Raymond de Merville" },
             { actor: "Jon Bernthal", personaje: "The Mute" },
             { actor: "John Lynch", personaje: "Brother Ciarán" }
+        ]
+    },
+    "the-current-war-2017": {
+        director: "Alfonso Gomez-Rejon",
+        elenco: [
+            { actor: "Benedict Cumberbatch", personaje: "Thomas Edison" },
+            { actor: "Michael Shannon", personaje: "George Westinghouse" },
+            { actor: "Nicholas Hoult", personaje: "Nikola Tesla" },
+            { actor: "Tom Holland", personaje: "Samuel Insull" },
+            { actor: "Katherine Waterston", personaje: "Marguerite Erskine Walker" }
+        ]
+    },
+    "cherry-2021": {
+        director: "Anthony y Joe Russo",
+        elenco: [
+            { actor: "Tom Holland", personaje: "Cherry" },
+            { actor: "Ciara Bravo", personaje: "Emily" },
+            { actor: "Jack Reynor", personaje: "Pills and Coke" },
+            { actor: "Jeff Wahlberg", personaje: "Jimenez" }
+        ]
+    },
+    "onward-2020": {
+        director: "Dan Scanlon",
+        elenco: [
+            { actor: "Tom Holland", personaje: "Ian Lightfoot (voz)" },
+            { actor: "Chris Pratt", personaje: "Barley Lightfoot (voz)" },
+            { actor: "Julia Louis-Dreyfus", personaje: "Laurel Lightfoot (voz)" },
+            { actor: "Octavia Spencer", personaje: "Corey (voz)" }
+        ]
+    },
+    "chaos-walking-2021": {
+        director: "Doug Liman",
+        elenco: [
+            { actor: "Daisy Ridley", personaje: "Viola Eade" },
+            { actor: "Tom Holland", personaje: "Todd Hewitt" },
+            { actor: "Mads Mikkelsen", personaje: "David Prentiss" },
+            { actor: "Demián Bichir", personaje: "Ben Moore" },
+            { actor: "Cynthia Erivo", personaje: "Hildy" },
+            { actor: "Nick Jonas", personaje: "Davy Prentiss Jr." }
+        ]
+    },
+    "uncharted-2022": {
+        director: "Ruben Fleischer",
+        elenco: [
+            { actor: "Tom Holland", personaje: "Nathan \"Nate\" Drake" },
+            { actor: "Mark Wahlberg", personaje: "Victor \"Sully\" Sullivan" },
+            { actor: "Antonio Banderas", personaje: "Santiago Moncada" },
+            { actor: "Sophia Ali", personaje: "Chloe Frazer" },
+            { actor: "Tati Gabrielle", personaje: "Jo Braddock" }
+        ]
+    },
+    "dolittle-2020": {
+        director: "Stephen Gaghan",
+        elenco: [
+            { actor: "Robert Downey Jr.", personaje: "Dr. John Dolittle" },
+            { actor: "Antonio Banderas", personaje: "King Rassouli" },
+            { actor: "Michael Sheen", personaje: "Dr. Blair Müdfly" },
+            { actor: "Harry Collett", personaje: "Tommy Stubbins" },
+            { actor: "Tom Holland", personaje: "Jip (voz)" },
+            { actor: "Emma Thompson", personaje: "Polynesia (voz)" },
+            { actor: "Rami Malek", personaje: "Chee-Chee (voz)" }
+        ]
+    },
+    "the-devil-all-the-time-2020": {
+        director: "Antonio Campos",
+        elenco: [
+            { actor: "Tom Holland", personaje: "Arvin Russell" },
+            { actor: "Robert Pattinson", personaje: "Rev. Preston Teagardin" },
+            { actor: "Bill Skarsgård", personaje: "Willard Russell" },
+            { actor: "Riley Keough", personaje: "Sandy Henderson" },
+            { actor: "Jason Clarke", personaje: "Carl Henderson" },
+            { actor: "Sebastian Stan", personaje: "Deputy Lee Bodecker" }
         ]
     },
     "spies-in-disguise-2019": {
