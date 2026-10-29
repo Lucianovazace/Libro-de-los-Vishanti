@@ -1256,7 +1256,7 @@ const listaMedia = [
     { titulo: "Inglorious Basterds", categoria: "tarantino", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BODZhMWJlNjYtNDExNC00MTIzLTllM2ItOGQ2NGVjNDQ3MzkzXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
     { titulo: "Django Unchained", categoria: "tarantino", tipo: "Película", poster: "https://i.pinimg.com/736x/6e/46/1f/6e461ff4f41269d0a537d3a52c0ce688.jpg" },
     { titulo: "The Hateful Eight", categoria: "tarantino", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMjA1MTc1NTg5NV5BMl5BanBnXkFtZTgwOTM2MDEzNzE@.V1.jpg" },
-    { titulo: "Once Upon a Time in Hollywood", categoria: "tarantino", tipo: "Película", poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2019/06/IMG_9717.jpeg" },
+    { titulo: "Once Upon a Time in Hollywood", categoria: "tarantino", fichaTecnicaId: "once-upon-a-time-in-hollywood-2019", tipo: "Película", poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2019/06/IMG_9717.jpeg" },
     { titulo: "Dawn of the Dead", categoria: "zack-snyder", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/nIZTNd4D2QVYF1wzmbvkJcM91Uk.jpg" },
     { titulo: "300", categoria: "zack-snyder", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/staT76AYYNMF2esLjnoCMimgKSy.jpg" },
     { titulo: "Watchmen", categoria: "zack-snyder", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/bUHDON5dA0oUPsJSDWLvHpPca7D.jpg" },
@@ -1359,7 +1359,7 @@ const listaMedia = [
     { titulo: "The Great Gatsby", categoria: "leonardo-dicaprio", subtipo: "2010", tipo: "Película", poster: "https://mir-s3-cdn-cf.behance.net/project_modules/hd_webp/a7350c9186433.560c9f1d670e4.jpg" },
     { titulo: "The Wolf of Wall Street", categoria: "leonardo-dicaprio", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@.V1.jpg" },
     { titulo: "The Revenant", categoria: "leonardo-dicaprio", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/ji3ecJphATlVgWNY0B0RVXZizdf.jpg" },
-    { titulo: "Once Upon a Time in Hollywood", categoria: "leonardo-dicaprio", subtipo: "2010", tipo: "Película", poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2019/06/IMG_9717.jpeg" },
+    { titulo: "Once Upon a Time in Hollywood", categoria: "leonardo-dicaprio", fichaTecnicaId: "once-upon-a-time-in-hollywood-2019", subtipo: "2010", tipo: "Película", poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2019/06/IMG_9717.jpeg" },
     { titulo: "The Beach", categoria: "leonardo-dicaprio", subtipo: "2000", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYTljNTg1YjktY2I3MS00MmQwLWJkYTAtYzcwZjRjM2ExNDJjXkEyXkFqcGc@.V1.jpg" },
     { titulo: "Don's Plum", categoria: "leonardo-dicaprio", subtipo: "2000", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BY2U1NjdlNTEtNDAwZi00Y2IzLWFjZjItMDY5ZjI5NmM0Y2EyXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
     { titulo: "Gangs of New York", categoria: "leonardo-dicaprio", subtipo: "2000", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTQ0MDA0MTUtYzkzMi00NDY3LThhZDEtNGM4MWUwYzMyZDk5XkEyXkFqcGc@.V1.jpg" },
@@ -1511,7 +1511,7 @@ const listaMedia = [
     { titulo: "Allied", categoria: "brad-pitt", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNWJiOTUzODItNTYzYS00NGY0LWIzZmEtZDA4MGI5ZWMxMjM2XkEyXkFqcGc@._V1_.jpg" },
     { titulo: "War Machine", categoria: "brad-pitt", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTg0ODE5NzE0OV5BMl5BanBnXkFtZTgwOTExODcyMjI@._V1_.jpg" },
     { titulo: "Deadpool 2", categoria: "brad-pitt", subtipo: "2010", tipo: "Película", fichaTecnicaId: "deadpool-2", poster: "https://preview.redd.it/new-deadpool-2-poster-v0-878r7e1hmle01.jpg?auto=webp&s=2f03e75ff6a45766bbbf16a95cbe0ecc3d6c7046" },
-    { titulo: "Once Upon a Time in Hollywood", categoria: "brad-pitt", subtipo: "2010", tipo: "Película", poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2019/06/IMG_9717.jpeg" },
+    { titulo: "Once Upon a Time in Hollywood", categoria: "brad-pitt", fichaTecnicaId: "once-upon-a-time-in-hollywood-2019", subtipo: "2010", tipo: "Película", poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2019/06/IMG_9717.jpeg" },
     { titulo: "Ad Astra", categoria: "brad-pitt", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/i37759GsWqeWAf0pUcaY9nNKFa3.jpg" },
     { titulo: "Snatch", categoria: "brad-pitt", subtipo: "2000", tipo: "Película", poster: "https://m.media-amazon.com/images/I/717j6p4oeRL.jpg" },
     { titulo: "The Mexican", categoria: "brad-pitt", subtipo: "2000", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/5GqF6rVjUW6CVTuj7w1A2JE49AF.jpg" },
@@ -1644,8 +1644,24 @@ const listaMedia = [
     { titulo: "Novitiate", categoria: "margaret-qualley", subtipo: "2010", tipo: "Película", fichaTecnicaId: "novitiate-2017", poster: "https://image.tmdb.org/t/p/original/gsKbQ6hlbo6VMH8GJN4wIrOVZMy.jpg" },
     { titulo: "The Vanishing of Sidney Hall", categoria: "margaret-qualley", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-vanishing-of-sidney-hall-2017", poster: "https://image.tmdb.org/t/p/original/e8SJJEliAK9g0EG5agPsbxWoWoI.jpg" },
     { titulo: "Donnybrook", categoria: "margaret-qualley", subtipo: "2010", tipo: "Película", fichaTecnicaId: "donnybrook-2018", poster: "https://image.tmdb.org/t/p/w500/jcuEDKnM3uThdz7p0YYWFjMla73.jpg" },
+    { titulo: "Native Son", categoria: "margaret-qualley", subtipo: "2010", tipo: "Película", fichaTecnicaId: "native-son-2019", poster: "https://image.tmdb.org/t/p/w500/vVF6CnjXLqAjK2crI1ielma18TW.jpg" },
+    { titulo: "Fosse/Verdon", categoria: "margaret-qualley", subtipo: "2010", tipo: "Serie", fichaTecnicaId: "fosse-verdon-2019", poster: "https://image.tmdb.org/t/p/w500/rbHkfnaFBcMx90GRBzjCL8MPozo.jpg" },
+    { titulo: "Once Upon a Time in Hollywood", categoria: "margaret-qualley", subtipo: "2010", tipo: "Película", fichaTecnicaId: "once-upon-a-time-in-hollywood-2019", poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2019/06/IMG_9717.jpeg" },
+    { titulo: "Adam (2019)", categoria: "margaret-qualley", subtipo: "2010", tipo: "Película", fichaTecnicaId: "adam-2019", poster: "https://image.tmdb.org/t/p/w500/ym3VJcLJV0tjRVs6m3dPbjLM1zd.jpg" },
+    { titulo: "Strange but True", categoria: "margaret-qualley", subtipo: "2010", tipo: "Película", fichaTecnicaId: "strange-but-true-2019", poster: "https://image.tmdb.org/t/p/original/rxY5IhxaC3WfXswdKXE7T0j3QMB.jpg" },
+    { titulo: "Seberg", categoria: "margaret-qualley", subtipo: "2010", tipo: "Película", fichaTecnicaId: "seberg-2019", poster: "https://image.tmdb.org/t/p/original/28rSUsLplBEqAPwhvekY4zQTyWN.jpg" },
+    { titulo: "My Salinger Year", categoria: "margaret-qualley", subtipo: "2020", tipo: "Película", fichaTecnicaId: "my-salinger-year-2020", poster: "https://image.tmdb.org/t/p/w500/pyebSSBGw84cY2wsXEkWlseED7G.jpg" },
+    { titulo: "Maid", categoria: "margaret-qualley", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "maid-2021", poster: "https://image.tmdb.org/t/p/original/mCiEYoZYTKqgCSMSjYlWe62Qbwo.jpg" },
+    { titulo: "Stars at Noon", categoria: "margaret-qualley", subtipo: "2020", tipo: "Película", fichaTecnicaId: "stars-at-noon-2022", poster: "https://image.tmdb.org/t/p/original/3JyvexYFE7pZhw0i7W8cna9bkUK.jpg" },
+    { titulo: "Sanctuary", categoria: "margaret-qualley", subtipo: "2020", tipo: "Película", fichaTecnicaId: "sanctuary-2022", poster: "https://image.tmdb.org/t/p/original/7KIBYETkRSfHNsfWAWAt7uq7oGm.jpg" },
     { titulo: "Poor Things", categoria: "margaret-qualley", subtipo: "2020", tipo: "Película", fichaTecnicaId: "poor-things-2023", poster: "https://cdng.europosters.eu/pod_public/1300/317259.jpg" },
+    { titulo: "Drive-Away Dolls", categoria: "margaret-qualley", subtipo: "2020", tipo: "Película", fichaTecnicaId: "drive-away-dolls-2024", poster: "https://image.tmdb.org/t/p/original/mUcmJZliAwfZBhPH8IxcWudZU7f.jpg" },
     { titulo: "Kinds of Kindness", categoria: "margaret-qualley", subtipo: "2020", tipo: "Película", fichaTecnicaId: "kinds-of-kindness-2024", poster: "https://image.tmdb.org/t/p/original/50lPmjIpDs8gKfgK7fPIeKzpllh.jpg" },
+    { titulo: "La Sustancia", categoria: "margaret-qualley", subtipo: "2020", tipo: "Película", fichaTecnicaId: "the-substance-2024", poster: "https://image.tmdb.org/t/p/w500/lqoMzCcZYEFK729d6qzt349fB4o.jpg" },
+    { titulo: "Happy Gilmore 2", categoria: "margaret-qualley", subtipo: "2020", tipo: "Película", fichaTecnicaId: "happy-gilmore-2-2025", poster: "https://image.tmdb.org/t/p/original/3rGS8N0vmjatrvvCYb6NE0mknYW.jpg" },
+    { titulo: "Honey Don’t!", categoria: "margaret-qualley", subtipo: "2020", tipo: "Película", fichaTecnicaId: "honey-dont-2025", poster: "https://image.tmdb.org/t/p/w500/fJm3kmd9NLZWypMas7g34oNFgbk.jpg" },
+    { titulo: "Blue Moon", categoria: "margaret-qualley", subtipo: "2020", tipo: "Película", fichaTecnicaId: "blue-moon-2025", poster: "https://image.tmdb.org/t/p/original/AetJmEIrhww0xnfktYgNl6ztDrl.jpg" },
+    { titulo: "How to Make a Killing", categoria: "margaret-qualley", subtipo: "2020", tipo: "Película", fichaTecnicaId: "how-to-make-a-killing-2026", poster: "https://image.tmdb.org/t/p/w500/vxMeKC7o5Gi8IHMi6lUgsdprTqv.jpg" },
 
     // --- JENNA ORTEGA (con filtros por década) ---
     { titulo: "The Babysitter: Killer Queen", categoria: "jenna-ortega", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BODk1ZmQ4ODItZjcwZi00MTUxLWE1YWMtMDY2NWJhNzJjMGEyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
@@ -1683,7 +1699,7 @@ const listaMedia = [
     { titulo: "Terminal", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOTliYzYyYTAtNzBjMy00MGE2LThmOWMtZWM1ZmI0MDE1ZjM3XkEyXkFqcGc@.V1.jpg" },
     { titulo: "Mary Queen of Scots", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", poster: "https://mir-s3-cdn-cf.behance.net/project_modules/hd/5166b095985439.5ea4161223dcd.jpg" },
     { titulo: "Dreamland", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNzNhNmZhZjQtZTI0ZC00NDFhLWFlZTUtODE4NjgwZmMyZjI2XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
-    { titulo: "Once Upon a Time in Hollywood", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2019/06/IMG_9717.jpeg" },
+    { titulo: "Once Upon a Time in Hollywood", categoria: "margot-robbie", fichaTecnicaId: "once-upon-a-time-in-hollywood-2019", subtipo: "2010", tipo: "Película", poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2019/06/IMG_9717.jpeg" },
     { titulo: "Bombshell", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/51jbt9gccQL.jpg" },
     { titulo: "Birds of Prey and The Fantabulous Emancipation of One Harley Quinn", categoria: "margot-robbie", subtipo: "2020", tipo: "Película", poster: "https://ew.com/thmb/sT-h3pYSc53fKCWxtv5ro4Midno=/2000x0/filters:no_upscale():max_bytes(150000):strip_icc()/birds-of-prey-2000-90f0db5838084a8a8c2eca14edd37e1f.jpg" },
     { titulo: "Peter Rabbit 2: The Runaway", categoria: "margot-robbie", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71-gh-srLUL.AC_UF894,1000_QL80.jpg" },
@@ -9861,7 +9877,7 @@ botonesNavegacion.forEach(nav => {
 // poné `logo: "url"` en el nodo y reemplaza al símbolo.
 // ==========================================
 const ARBOL_NODOS = [
-    { id: 'mcu',    nombre: 'MCU',                      simbolo: '∞',  color: '#e23636', btn: 'btn-mcu-cronologico', desde: 'C' },
+    { id: 'mcu',    nombre: 'MCU',                      simbolo: '∞',  color: '#e23636', btn: 'btn-mcu-cronologico', desde: 'C', logo: 'https://image.tmdb.org/t/p/w500/jyCyNauBaH5Y6DmPTeS4ZReDvwc.png' },
     { id: 'universal', nombre: 'Universal',             simbolo: 'U',  color: '#2e9e4f', btn: 'btn-universal',       desde: 'C' },
     { id: 'xmen',   nombre: 'X-Men (Fox)',              simbolo: 'X',  color: '#f2b705', btn: 'btn-fox-xmen',        desde: 'L', logo: 'https://upload.wikimedia.org/wikipedia/commons/0/0d/X-Men_movie_logo.png' },
     { id: 'ff',     nombre: 'Cuatro Fantásticos (Fox)', simbolo: '4',  color: '#1f78d1', btn: 'btn-fox-ff',          desde: 'L', logo: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f359881d-6bb2-4391-aba6-779f7084edd4/d9z7vjk-7c46b224-9d43-41e9-81b8-422c207d83fe.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9mMzU5ODgxZC02YmIyLTQzOTEtYWJhNi03NzlmNzA4NGVkZDQvZDl6N3Zqay03YzQ2YjIyNC05ZDQzLTQxZTktODFiOC00MjJjMjA3ZDgzZmUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.3IFKzMvS0vjiGeHR0yZuyUK2M8bVmcGSAY3yuRAY53s' },
@@ -14908,7 +14924,7 @@ if (btnVolverFichaHawkeyeSerie) {
     }
 });
 
-['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023', 'arrietty-2010', 'the-impossible-2012', 'how-i-live-now-2013', 'wolf-hall-2015', 'in-the-heart-of-the-sea-2015', 'edge-of-winter-2016', 'the-lost-city-of-z-2016', 'pilgrimage-2017', 'the-current-war-2017', 'cherry-2021', 'onward-2020', 'chaos-walking-2021', 'uncharted-2022', 'dolittle-2020', 'the-devil-all-the-time-2020', 'marmaduke-2010', 'easy-a-2010', 'crazy-stupid-love-2011', 'the-amazing-spider-man-2012', 'gangster-squad-2013', 'movie-43-2013', 'the-amazing-spider-man-2-2014', 'friends-with-benefits-2011', 'the-help-2011', 'the-croods-2013', 'magic-in-the-moonlight-2014', 'birdman-2014', 'aloha-2015', 'irrational-man-2015', 'battle-of-the-sexes-2017', 'maniac-2018', 'the-favourite-2018', 'zombieland-double-tap-2019', 'superbad-2007', 'the-rocker-2008', 'the-house-bunny-2008', 'ghosts-of-girlfriends-past-2009', 'zombieland-2009', 'paper-man-2009', 'the-curse-2023', 'the-croods-a-new-age-2020', 'cruella-2021', 'poor-things-2023', 'kinds-of-kindness-2024', 'eddington-2025', 'bugonia-2025', 'palo-alto-2013', 'the-leftovers-2014', 'the-nice-guys-2016', 'death-note-2017', 'novitiate-2017', 'the-vanishing-of-sidney-hall-2017', 'donnybrook-2018', 'green-lantern-beware-my-power-2022', 'legion-of-super-heroes-2023', 'justice-league-warworld-2023', 'jl-crisis-infinite-earths-p1-2024', 'jl-crisis-infinite-earths-p2-2024', 'jl-crisis-infinite-earths-p3-2024'].forEach(id => {
+['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023', 'arrietty-2010', 'the-impossible-2012', 'how-i-live-now-2013', 'wolf-hall-2015', 'in-the-heart-of-the-sea-2015', 'edge-of-winter-2016', 'the-lost-city-of-z-2016', 'pilgrimage-2017', 'the-current-war-2017', 'cherry-2021', 'onward-2020', 'chaos-walking-2021', 'uncharted-2022', 'dolittle-2020', 'the-devil-all-the-time-2020', 'marmaduke-2010', 'easy-a-2010', 'crazy-stupid-love-2011', 'the-amazing-spider-man-2012', 'gangster-squad-2013', 'movie-43-2013', 'the-amazing-spider-man-2-2014', 'friends-with-benefits-2011', 'the-help-2011', 'the-croods-2013', 'magic-in-the-moonlight-2014', 'birdman-2014', 'aloha-2015', 'irrational-man-2015', 'battle-of-the-sexes-2017', 'maniac-2018', 'the-favourite-2018', 'zombieland-double-tap-2019', 'superbad-2007', 'the-rocker-2008', 'the-house-bunny-2008', 'ghosts-of-girlfriends-past-2009', 'zombieland-2009', 'paper-man-2009', 'the-curse-2023', 'the-croods-a-new-age-2020', 'cruella-2021', 'poor-things-2023', 'kinds-of-kindness-2024', 'eddington-2025', 'bugonia-2025', 'palo-alto-2013', 'the-leftovers-2014', 'the-nice-guys-2016', 'death-note-2017', 'novitiate-2017', 'the-vanishing-of-sidney-hall-2017', 'donnybrook-2018', 'green-lantern-beware-my-power-2022', 'legion-of-super-heroes-2023', 'justice-league-warworld-2023', 'jl-crisis-infinite-earths-p1-2024', 'jl-crisis-infinite-earths-p2-2024', 'jl-crisis-infinite-earths-p3-2024', 'native-son-2019', 'fosse-verdon-2019', 'once-upon-a-time-in-hollywood-2019', 'adam-2019', 'strange-but-true-2019', 'seberg-2019', 'my-salinger-year-2020', 'maid-2021', 'stars-at-noon-2022', 'sanctuary-2022', 'drive-away-dolls-2024', 'the-substance-2024', 'happy-gilmore-2-2025', 'honey-dont-2025', 'blue-moon-2025', 'how-to-make-a-killing-2026'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -15468,6 +15484,22 @@ const FICHAS_TECNICAS_TITULOS = {
     "jl-crisis-infinite-earths-p1-2024": "Justice League: Crisis on Infinite Earths - Part One",
     "jl-crisis-infinite-earths-p2-2024": "Justice League: Crisis on Infinite Earths - Part Two",
     "jl-crisis-infinite-earths-p3-2024": "Justice League: Crisis on Infinite Earths - Part Three",
+    "native-son-2019": "Native Son",
+    "fosse-verdon-2019": "Fosse/Verdon",
+    "once-upon-a-time-in-hollywood-2019": "Once Upon a Time in Hollywood",
+    "adam-2019": "Adam (2019)",
+    "strange-but-true-2019": "Strange but True",
+    "seberg-2019": "Seberg",
+    "my-salinger-year-2020": "My Salinger Year",
+    "maid-2021": "Maid",
+    "stars-at-noon-2022": "Stars at Noon",
+    "sanctuary-2022": "Sanctuary",
+    "drive-away-dolls-2024": "Drive-Away Dolls",
+    "the-substance-2024": "La Sustancia",
+    "happy-gilmore-2-2025": "Happy Gilmore 2",
+    "honey-dont-2025": "Honey Don’t!",
+    "blue-moon-2025": "Blue Moon",
+    "how-to-make-a-killing-2026": "How to Make a Killing",
     "spies-in-disguise-2019": "Spies in Disguise",
     "the-crowded-room-2023": "The Crowded Room",
     "mio-in-the-land-of-faraway-1987": "Mio in the Land of Faraway",
@@ -18422,6 +18454,180 @@ const REPARTO_PELICULAS = {
             { actor: "Meg Donnelly", personaje: "Kara Zor-El / Supergirl / Harbinger (voz)" },
             { actor: "Stana Katic", personaje: "Diana Prince / Mujer Maravilla de la Tierra-2 (voz)" },
             { actor: "Corey Stoll", personaje: "Lex Luthor de la Tierra-10 (voz)" }
+        ]
+    },
+    "native-son-2019": {
+        director: "Rashid Johnson",
+        elenco: [
+            { actor: "Ashton Sanders", personaje: "Bigger Thomas" },
+            { actor: "Margaret Qualley", personaje: "Mary Dalton" },
+            { actor: "Nick Robinson", personaje: "Jan Erlone" },
+            { actor: "KiKi Layne", personaje: "Bessie" },
+            { actor: "Bill Camp", personaje: "Henry Dalton" },
+            { actor: "Sanaa Lathan", personaje: "Trudy Thomas" }
+        ]
+    },
+    "fosse-verdon-2019": {
+        director: "Steven Levenson y Thomas Kail (creadores)",
+        elenco: [
+            { actor: "Sam Rockwell", personaje: "Bob Fosse" },
+            { actor: "Michelle Williams", personaje: "Gwen Verdon" },
+            { actor: "Norbert Leo Butz", personaje: "Paddy Chayefsky" },
+            { actor: "Margaret Qualley", personaje: "Ann Reinking" }
+        ]
+    },
+    "once-upon-a-time-in-hollywood-2019": {
+        director: "Quentin Tarantino",
+        elenco: [
+            { actor: "Leonardo DiCaprio", personaje: "Rick Dalton" },
+            { actor: "Brad Pitt", personaje: "Cliff Booth" },
+            { actor: "Margot Robbie", personaje: "Sharon Tate" },
+            { actor: "Emile Hirsch", personaje: "Jay Sebring" },
+            { actor: "Margaret Qualley", personaje: "Pussycat" },
+            { actor: "Timothy Olyphant", personaje: "James Stacy" },
+            { actor: "Austin Butler", personaje: "Tex" },
+            { actor: "Dakota Fanning", personaje: "Squeaky" },
+            { actor: "Bruce Dern", personaje: "George Spahn" },
+            { actor: "Al Pacino", personaje: "Marvin Schwarz" }
+        ]
+    },
+    "adam-2019": {
+        director: "Rhys Ernst",
+        elenco: [
+            { actor: "Nicholas Alexander", personaje: "Adam Freeman" },
+            { actor: "Bobbi Menuez", personaje: "Gillian" },
+            { actor: "Leo Sheng", personaje: "Ethan" },
+            { actor: "Chloe Levine", personaje: "June" },
+            { actor: "Margaret Qualley", personaje: "Casey Freeman" },
+            { actor: "Colton Ryan", personaje: "Brad" }
+        ]
+    },
+    "strange-but-true-2019": {
+        director: "Rowan Athale",
+        elenco: [
+            { actor: "Margaret Qualley", personaje: "Melissa Moody" },
+            { actor: "Amy Ryan", personaje: "Charlene Chase" },
+            { actor: "Greg Kinnear", personaje: "Richard Chase" },
+            { actor: "Nick Robinson", personaje: "Philip Chase" },
+            { actor: "Connor Jessup", personaje: "Ronnie Chase" },
+            { actor: "Blythe Danner", personaje: "Gail Erwin" },
+            { actor: "Brian Cox", personaje: "Bill Erwin" }
+        ]
+    },
+    "seberg-2019": {
+        director: "Benedict Andrews",
+        elenco: [
+            { actor: "Kristen Stewart", personaje: "Jean Seberg" },
+            { actor: "Jack O'Connell", personaje: "Jack Solomon" },
+            { actor: "Anthony Mackie", personaje: "Hakim Jamal" },
+            { actor: "Margaret Qualley", personaje: "Linette Solomon" },
+            { actor: "Zazie Beetz", personaje: "Dorothy Jamal" },
+            { actor: "Vince Vaughn", personaje: "Carl Kowalski" }
+        ]
+    },
+    "my-salinger-year-2020": {
+        director: "Philippe Falardeau",
+        elenco: [
+            { actor: "Margaret Qualley", personaje: "Joanna" },
+            { actor: "Sigourney Weaver", personaje: "Margaret" },
+            { actor: "Douglas Booth", personaje: "Don" },
+            { actor: "Seána Kerslake", personaje: "Jenny" },
+            { actor: "Brían F. O'Byrne", personaje: "Hugh" },
+            { actor: "Colm Feore", personaje: "Daniel" }
+        ]
+    },
+    "maid-2021": {
+        director: "Molly Smith Metzler (creadora)",
+        elenco: [
+            { actor: "Margaret Qualley", personaje: "Alexandra \"Alex\" Russell" },
+            { actor: "Nick Robinson", personaje: "Sean Boyd" },
+            { actor: "Anika Noni Rose", personaje: "Regina Campbell" },
+            { actor: "Tracy Vilar", personaje: "Yolanda" },
+            { actor: "Billy Burke", personaje: "Hank" },
+            { actor: "Andie MacDowell", personaje: "Paula Langley" }
+        ]
+    },
+    "stars-at-noon-2022": {
+        director: "Claire Denis",
+        elenco: [
+            { actor: "Margaret Qualley", personaje: "Trish Johnson" },
+            { actor: "Joe Alwyn", personaje: "Daniel DeHaven" },
+            { actor: "Benny Safdie", personaje: "El hombre de la CIA" },
+            { actor: "Danny Ramirez", personaje: "El policía costarricense" },
+            { actor: "John C. Reilly", personaje: "El editor de la revista estadounidense" }
+        ]
+    },
+    "sanctuary-2022": {
+        director: "Zachary Wigon",
+        elenco: [
+            { actor: "Margaret Qualley", personaje: "Rebecca Marin" },
+            { actor: "Christopher Abbott", personaje: "Hal Porterfield" }
+        ]
+    },
+    "drive-away-dolls-2024": {
+        director: "Ethan Coen",
+        elenco: [
+            { actor: "Margaret Qualley", personaje: "Jamie" },
+            { actor: "Geraldine Viswanathan", personaje: "Marian" },
+            { actor: "Beanie Feldstein", personaje: "Sukie" },
+            { actor: "Colman Domingo", personaje: "Chief" },
+            { actor: "Pedro Pascal", personaje: "Santos" },
+            { actor: "Bill Camp", personaje: "Curlie" },
+            { actor: "Matt Damon", personaje: "Gary Channel" }
+        ]
+    },
+    "the-substance-2024": {
+        director: "Coralie Fargeat",
+        elenco: [
+            { actor: "Demi Moore", personaje: "Elisabeth Sparkle" },
+            { actor: "Margaret Qualley", personaje: "Sue" },
+            { actor: "Dennis Quaid", personaje: "Harvey" }
+        ]
+    },
+    "happy-gilmore-2-2025": {
+        director: "Kyle Newacheck",
+        elenco: [
+            { actor: "Adam Sandler", personaje: "Happy Gilmore" },
+            { actor: "Julie Bowen", personaje: "Virginia Venit Gilmore" },
+            { actor: "Christopher McDonald", personaje: "Shooter McGavin" },
+            { actor: "Benny Safdie", personaje: "Frank Manatee" },
+            { actor: "Bad Bunny", personaje: "Oscar Mejías" },
+            { actor: "Ben Stiller", personaje: "Haloysius \"Hal L.\" Lieberman" },
+            { actor: "Sunny Sandler", personaje: "Vienna Gilmore" },
+            { actor: "Margaret Qualley", personaje: "Sally" }
+        ]
+    },
+    "honey-dont-2025": {
+        director: "Ethan Coen",
+        elenco: [
+            { actor: "Margaret Qualley", personaje: "Honey O'Donahue" },
+            { actor: "Aubrey Plaza", personaje: "MG Falcone" },
+            { actor: "Chris Evans", personaje: "Reverendo Drew Devlin" },
+            { actor: "Charlie Day", personaje: "Marty Metakawitch" },
+            { actor: "Talia Ryder", personaje: "Corinne" },
+            { actor: "Kristen Connolly", personaje: "Heidi O'Donahue" },
+            { actor: "Billy Eichner", personaje: "Sr. Siegfried" }
+        ]
+    },
+    "blue-moon-2025": {
+        director: "Richard Linklater",
+        elenco: [
+            { actor: "Ethan Hawke", personaje: "Lorenz Hart" },
+            { actor: "Margaret Qualley", personaje: "Elizabeth Weiland" },
+            { actor: "Bobby Cannavale", personaje: "Eddie" },
+            { actor: "Andrew Scott", personaje: "Richard Rodgers" }
+        ]
+    },
+    "how-to-make-a-killing-2026": {
+        director: "John Patton Ford",
+        elenco: [
+            { actor: "Glen Powell", personaje: "Becket Redfellow" },
+            { actor: "Margaret Qualley", personaje: "Julia Steinway" },
+            { actor: "Jessica Henwick", personaje: "Ruth" },
+            { actor: "Bill Camp", personaje: "Warren Redfellow" },
+            { actor: "Zach Woods", personaje: "Noah Redfellow" },
+            { actor: "Topher Grace", personaje: "Pastor Steven J. Redfellow" },
+            { actor: "Ed Harris", personaje: "Whitelaw Redfellow" }
         ]
     },
     "spies-in-disguise-2019": {
