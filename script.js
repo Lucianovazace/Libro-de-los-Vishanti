@@ -1599,10 +1599,11 @@ const listaMedia = [
     { titulo: "Spider-Man: Brand New Day", categoria: "florence-pugh", subtipo: "2020", tipo: "Película", fichaTecnicaId: "spider-man-brand-new-day-2026", poster: "https://m.media-amazon.com/images/M/MV5BOWNjYWM3NWItOGE0ZS00MWRjLThiZWEtYjc4ZmNmMmU5ZTVmXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
     { titulo: "The Falling", categoria: "florence-pugh", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-falling-2014", poster: "https://m.media-amazon.com/images/M/MV5BY2FjNTlhOWYtNzNkZi00MjgwLTkzNmItYTYxMjNkMGUzNWU5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
     { titulo: "Lady Macbeth", categoria: "florence-pugh", subtipo: "2010", tipo: "Película", fichaTecnicaId: "lady-macbeth-2016", poster: "https://m.media-amazon.com/images/M/MV5BNzRjMzYwYzMtOTJiMC00ZTM4LThjZGUtNjZkZGE1NGNjYzEyXkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "The Commuter", categoria: "florence-pugh", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-commuter-2018", poster: "https://image.tmdb.org/t/p/original/f7aPuxyVNR1WWQCT90CpMXV2TJT.jpg" },
     { titulo: "Outlaw King", categoria: "florence-pugh", subtipo: "2010", tipo: "Película", fichaTecnicaId: "outlaw-king-2018", poster: "https://m.media-amazon.com/images/M/MV5BZjI0MGZkYjItODFmZC00OWIyLTk4MDctYTIwZDZhYThhYWNlXkEyXkFqcGc@._V1_.jpg" },
     { titulo: "Malevolent", categoria: "florence-pugh", subtipo: "2010", tipo: "Película", fichaTecnicaId: "malevolent-2018", poster: "https://m.media-amazon.com/images/M/MV5BZTkwMWNlODQtNzViNi00ZjVjLTg2NjItZTE2MTViM2IyNDI1XkEyXkFqcGc@._V1_.jpg" },
     { titulo: "Fighting with My Family", categoria: "florence-pugh", subtipo: "2010", tipo: "Película", fichaTecnicaId: "fighting-with-my-family-2019", poster: "https://m.media-amazon.com/images/M/MV5BYjliMDY3N2YtOTI2NS00MjQ0LWFjOGItMjQ1MzYyZGVlMDJiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
-    { titulo: "Midsommar", categoria: "florence-pugh", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMzQxNzQzOTQwM15BMl5BanBnXkFtZTgwMDQ2NTcwODM@._V1_.jpg" },
+    { titulo: "Midsommar", categoria: "florence-pugh", subtipo: "2010", tipo: "Película", fichaTecnicaId: "midsommar-2019", poster: "https://m.media-amazon.com/images/M/MV5BMzQxNzQzOTQwM15BMl5BanBnXkFtZTgwMDQ2NTcwODM@._V1_.jpg" },
     { titulo: "Little Women", categoria: "florence-pugh", subtipo: "2010", tipo: "Película", fichaTecnicaId: "little-women-2019", poster: "https://m.media-amazon.com/images/I/61TK-+geKPL.AC_UF894,1000_QL80.jpg" },
 
     // --- EMMA STONE (con filtros por década) ---
@@ -5174,7 +5175,7 @@ const colecciones = [
             { titulo: "Reign of the Supermen", fichaTecnicaId: "reign-of-the-supermen-2019", poster: "https://image.tmdb.org/t/p/original/l1wMgglw36ljZBEjm0iGWrmpDbC.jpg" },
             { titulo: "Batman: Hush", fichaTecnicaId: "batman-hush-2019", poster: "https://m.media-amazon.com/images/M/MV5BNDMxZjk0YzItZGIyMC00M2VjLWI3ZDAtM2IwZGFhMDMwZmRmXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
             { titulo: "Wonder Woman: Bloodlines", fichaTecnicaId: "wonder-woman-bloodlines-2019", poster: "https://m.media-amazon.com/images/M/MV5BNjBjMzFhN2MtZmI4NS00YTM3LTk3MzctZjRlYjVjYjIwMjg4XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
-            { titulo: "Justice League Dark: Apokalips War", poster: "https://m.media-amazon.com/images/M/MV5BNjIyNDg5ZWMtODI5ZC00M2NlLTk2NWYtZWEzOWJmYWVhMzY3XkEyXkFqcGc@.V1.jpg" }
+            { titulo: "Justice League Dark: Apokalips War", fichaTecnicaId: "justice-league-dark-apokolips-war-2020", poster: "https://m.media-amazon.com/images/M/MV5BNjIyNDg5ZWMtODI5ZC00M2NlLTk2NWYtZWEzOWJmYWVhMzY3XkEyXkFqcGc@.V1.jpg" }
         ]
     },
     {
@@ -14927,7 +14928,7 @@ if (btnVolverFichaHawkeyeSerie) {
     }
 });
 
-['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023', 'arrietty-2010', 'the-impossible-2012', 'how-i-live-now-2013', 'wolf-hall-2015', 'in-the-heart-of-the-sea-2015', 'edge-of-winter-2016', 'the-lost-city-of-z-2016', 'pilgrimage-2017', 'the-current-war-2017', 'cherry-2021', 'onward-2020', 'chaos-walking-2021', 'uncharted-2022', 'dolittle-2020', 'the-devil-all-the-time-2020', 'marmaduke-2010', 'easy-a-2010', 'crazy-stupid-love-2011', 'the-amazing-spider-man-2012', 'gangster-squad-2013', 'movie-43-2013', 'the-amazing-spider-man-2-2014', 'friends-with-benefits-2011', 'the-help-2011', 'the-croods-2013', 'magic-in-the-moonlight-2014', 'birdman-2014', 'aloha-2015', 'irrational-man-2015', 'battle-of-the-sexes-2017', 'maniac-2018', 'the-favourite-2018', 'zombieland-double-tap-2019', 'superbad-2007', 'the-rocker-2008', 'the-house-bunny-2008', 'ghosts-of-girlfriends-past-2009', 'zombieland-2009', 'paper-man-2009', 'the-curse-2023', 'the-croods-a-new-age-2020', 'cruella-2021', 'poor-things-2023', 'kinds-of-kindness-2024', 'eddington-2025', 'bugonia-2025', 'palo-alto-2013', 'the-leftovers-2014', 'the-nice-guys-2016', 'death-note-2017', 'novitiate-2017', 'the-vanishing-of-sidney-hall-2017', 'donnybrook-2018', 'green-lantern-beware-my-power-2022', 'legion-of-super-heroes-2023', 'justice-league-warworld-2023', 'jl-crisis-infinite-earths-p1-2024', 'jl-crisis-infinite-earths-p2-2024', 'jl-crisis-infinite-earths-p3-2024', 'native-son-2019', 'fosse-verdon-2019', 'once-upon-a-time-in-hollywood-2019', 'adam-2019', 'strange-but-true-2019', 'seberg-2019', 'my-salinger-year-2020', 'maid-2021', 'stars-at-noon-2022', 'sanctuary-2022', 'drive-away-dolls-2024', 'the-substance-2024', 'happy-gilmore-2-2025', 'honey-dont-2025', 'blue-moon-2025', 'how-to-make-a-killing-2026', 'io-2019', 'the-dog-stars-2026', 'spider-man-brand-new-day-2026', 'marvel-zombies-serie-2025', 'we-live-in-time-2024', 'oppenheimer-2023', 'a-good-person-2023', 'the-wonder-2022', 'flashpoint-paradox-2013', 'justice-league-war-2014', 'son-of-batman-2014', 'throne-of-atlantis-2015', 'batman-vs-robin-2015', 'the-falling-2014', 'lady-macbeth-2016', 'outlaw-king-2018', 'malevolent-2018', 'fighting-with-my-family-2019', 'little-women-2019', 'batman-bad-blood-2016', 'justice-league-vs-teen-titans-2016', 'justice-league-dark-2017', 'teen-titans-judas-contract-2017', 'suicide-squad-hell-to-pay-2018', 'death-of-superman-2018', 'constantine-city-of-demons-2018', 'reign-of-the-supermen-2019', 'batman-hush-2019', 'wonder-woman-bloodlines-2019'].forEach(id => {
+['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023', 'arrietty-2010', 'the-impossible-2012', 'how-i-live-now-2013', 'wolf-hall-2015', 'in-the-heart-of-the-sea-2015', 'edge-of-winter-2016', 'the-lost-city-of-z-2016', 'pilgrimage-2017', 'the-current-war-2017', 'cherry-2021', 'onward-2020', 'chaos-walking-2021', 'uncharted-2022', 'dolittle-2020', 'the-devil-all-the-time-2020', 'marmaduke-2010', 'easy-a-2010', 'crazy-stupid-love-2011', 'the-amazing-spider-man-2012', 'gangster-squad-2013', 'movie-43-2013', 'the-amazing-spider-man-2-2014', 'friends-with-benefits-2011', 'the-help-2011', 'the-croods-2013', 'magic-in-the-moonlight-2014', 'birdman-2014', 'aloha-2015', 'irrational-man-2015', 'battle-of-the-sexes-2017', 'maniac-2018', 'the-favourite-2018', 'zombieland-double-tap-2019', 'superbad-2007', 'the-rocker-2008', 'the-house-bunny-2008', 'ghosts-of-girlfriends-past-2009', 'zombieland-2009', 'paper-man-2009', 'the-curse-2023', 'the-croods-a-new-age-2020', 'cruella-2021', 'poor-things-2023', 'kinds-of-kindness-2024', 'eddington-2025', 'bugonia-2025', 'palo-alto-2013', 'the-leftovers-2014', 'the-nice-guys-2016', 'death-note-2017', 'novitiate-2017', 'the-vanishing-of-sidney-hall-2017', 'donnybrook-2018', 'green-lantern-beware-my-power-2022', 'legion-of-super-heroes-2023', 'justice-league-warworld-2023', 'jl-crisis-infinite-earths-p1-2024', 'jl-crisis-infinite-earths-p2-2024', 'jl-crisis-infinite-earths-p3-2024', 'native-son-2019', 'fosse-verdon-2019', 'once-upon-a-time-in-hollywood-2019', 'adam-2019', 'strange-but-true-2019', 'seberg-2019', 'my-salinger-year-2020', 'maid-2021', 'stars-at-noon-2022', 'sanctuary-2022', 'drive-away-dolls-2024', 'the-substance-2024', 'happy-gilmore-2-2025', 'honey-dont-2025', 'blue-moon-2025', 'how-to-make-a-killing-2026', 'io-2019', 'the-dog-stars-2026', 'spider-man-brand-new-day-2026', 'marvel-zombies-serie-2025', 'we-live-in-time-2024', 'oppenheimer-2023', 'a-good-person-2023', 'the-wonder-2022', 'flashpoint-paradox-2013', 'justice-league-war-2014', 'son-of-batman-2014', 'throne-of-atlantis-2015', 'batman-vs-robin-2015', 'the-falling-2014', 'lady-macbeth-2016', 'outlaw-king-2018', 'malevolent-2018', 'fighting-with-my-family-2019', 'little-women-2019', 'batman-bad-blood-2016', 'justice-league-vs-teen-titans-2016', 'justice-league-dark-2017', 'teen-titans-judas-contract-2017', 'suicide-squad-hell-to-pay-2018', 'death-of-superman-2018', 'constantine-city-of-demons-2018', 'reign-of-the-supermen-2019', 'batman-hush-2019', 'wonder-woman-bloodlines-2019', 'justice-league-dark-apokolips-war-2020', 'midsommar-2019', 'the-commuter-2018'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -15532,6 +15533,9 @@ const FICHAS_TECNICAS_TITULOS = {
     "reign-of-the-supermen-2019": "Reign of the Supermen",
     "batman-hush-2019": "Batman: Hush",
     "wonder-woman-bloodlines-2019": "Wonder Woman: Bloodlines",
+    "justice-league-dark-apokolips-war-2020": "Justice League Dark: Apokolips War",
+    "midsommar-2019": "Midsommar",
+    "the-commuter-2018": "The Commuter",
     "spies-in-disguise-2019": "Spies in Disguise",
     "the-crowded-room-2023": "The Crowded Room",
     "mio-in-the-land-of-faraway-1987": "Mio in the Land of Faraway",
@@ -19047,6 +19051,50 @@ const REPARTO_PELICULAS = {
             { actor: "Nia Vardalos", personaje: "Julia Kapatelis" },
             { actor: "Michael Dorn", personaje: "Ferdinand el Minotauro" },
             { actor: "Cree Summer", personaje: "Hipólita y Medusa" }
+        ]
+    },
+    "justice-league-dark-apokolips-war-2020": {
+        director: "Matt Peters y Christina Sotta",
+        elenco: [
+            { actor: "Matt Ryan", personaje: "John Constantine" },
+            { actor: "Jerry O'Connell", personaje: "Clark Kent / Superman" },
+            { actor: "Taissa Farmiga", personaje: "Raven" },
+            { actor: "Stuart Allan", personaje: "Damian Wayne / Robin" },
+            { actor: "Tony Todd", personaje: "Uxas / Darkseid" },
+            { actor: "Ray Chase", personaje: "Etrigan" },
+            { actor: "Jason O'Mara", personaje: "Bruce Wayne / Batman" },
+            { actor: "Rosario Dawson", personaje: "Diana Prince / Wonder Woman" },
+            { actor: "Rainn Wilson", personaje: "Lex Luthor" },
+            { actor: "Rebecca Romijn", personaje: "Lois Lane" },
+            { actor: "Camilla Luddington", personaje: "Zatanna" },
+            { actor: "Christopher Gorham", personaje: "Barry Allen / Flash" },
+            { actor: "Shemar Moore", personaje: "Victor Stone / Cyborg" },
+            { actor: "Hynden Walch", personaje: "Harley Quinn" }
+        ]
+    },
+    "midsommar-2019": {
+        director: "Ari Aster",
+        elenco: [
+            { actor: "Florence Pugh", personaje: "Dani" },
+            { actor: "Jack Reynor", personaje: "Christian" },
+            { actor: "Will Poulter", personaje: "Mark" },
+            { actor: "William Jackson Harper", personaje: "Josh" },
+            { actor: "Vilhelm Blomgren", personaje: "Pelle" },
+            { actor: "Archie Madekwe", personaje: "Simon" },
+            { actor: "Ellora Torchia", personaje: "Connie" }
+        ]
+    },
+    "the-commuter-2018": {
+        director: "Jaume Collet-Serra",
+        elenco: [
+            { actor: "Liam Neeson", personaje: "Michael MacCauley" },
+            { actor: "Vera Farmiga", personaje: "Joanna" },
+            { actor: "Patrick Wilson", personaje: "Alex Murphy" },
+            { actor: "Jonathan Banks", personaje: "Walt" },
+            { actor: "Sam Neill", personaje: "Capitán Hawthorne" },
+            { actor: "Elizabeth McGovern", personaje: "Karen MacCauley" },
+            { actor: "Florence Pugh", personaje: "Gwen" },
+            { actor: "Dean-Charles Chapman", personaje: "Danny MacCauley" }
         ]
     },
     "spies-in-disguise-2019": {
