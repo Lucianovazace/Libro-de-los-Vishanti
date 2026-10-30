@@ -229,8 +229,8 @@ const listaMedia = [
     { titulo: "The New Mutants", categoria: "fox-xmen", tipo: "Película", fichaTecnicaId: "the-new-mutants", crono: 12, poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5OVOtNIm-bqGtCUI1SICMA58EJGV7_5_y7oDu9Zf27WcV6YdCE64CVQSf&s=10" },
 
     // --- FOX: CUATRO FANTÁSTICOS ---
-    { titulo: "Fantastic Four (2005)", categoria: "fox-ff", subtipo: "2000", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71nlKnBmb4L.jpg" },
-    { titulo: "Fantastic Four: Silver Surfer", categoria: "fox-ff", subtipo: "2000", tipo: "Película", poster: "https://imaginus.ca/cdn/shop/products/A1432F_4e5006fc-9bff-4cc9-8ded-ec5b3c1ff9e4_1604x.jpg?v=1654713321" },
+    { titulo: "Fantastic Four (2005)", categoria: "fox-ff", subtipo: "2000", tipo: "Película", fichaTecnicaId: "fantastic-four-2005", poster: "https://m.media-amazon.com/images/I/71nlKnBmb4L.jpg" },
+    { titulo: "Fantastic Four: Silver Surfer", categoria: "fox-ff", subtipo: "2000", tipo: "Película", fichaTecnicaId: "fantastic-four-silver-surfer-2007", poster: "https://imaginus.ca/cdn/shop/products/A1432F_4e5006fc-9bff-4cc9-8ded-ec5b3c1ff9e4_1604x.jpg?v=1654713321" },
     { titulo: "Cuatro Fantásticos (2015)", categoria: "fox-ff", subtipo: "2010", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/fantastic4_2015_stylek_teaser_original_filM-art_5000x.jpg?v=1627545303" },
 
     // --- FOX: DAREDEVIL Y ELEKTRA (Earth-701306) ---
@@ -238,20 +238,20 @@ const listaMedia = [
     { titulo: "Elektra", categoria: "fox-daredevil", tipo: "Película", fichaTecnicaId: "elektra-2005", poster: "https://image.tmdb.org/t/p/original/Z4dAOxjAHTUZO6DJ2WVAsxzwe3.jpg" },
 
     // --- SONY ---
-    { titulo: "Spider-Man (2002)", categoria: "sony-tobey", tipo: "Película", poster: "https://i.pinimg.com/736x/48/4b/8f/484b8f1cf95ff2ee83b5e10e80ec8875.jpg" },
-    { titulo: "Spider-Man 2", categoria: "sony-tobey", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61Z0dKYVx8L.jpg" },
-    { titulo: "Spider-Man 3", categoria: "sony-tobey", tipo: "Película", poster: "https://static.posters.cz/image/1300/1282.jpg" },
+    { titulo: "Spider-Man (2002)", categoria: "sony-tobey", tipo: "Película", fichaTecnicaId: "spider-man-2002", poster: "https://i.pinimg.com/736x/48/4b/8f/484b8f1cf95ff2ee83b5e10e80ec8875.jpg" },
+    { titulo: "Spider-Man 2", categoria: "sony-tobey", tipo: "Película", fichaTecnicaId: "spider-man-2-2004", poster: "https://m.media-amazon.com/images/I/61Z0dKYVx8L.jpg" },
+    { titulo: "Spider-Man 3", categoria: "sony-tobey", tipo: "Película", fichaTecnicaId: "spider-man-3-2007", poster: "https://static.posters.cz/image/1300/1282.jpg" },
     
     { titulo: "The Amazing Spider-Man", categoria: "sony-andrew", tipo: "Película", fichaTecnicaId: "the-amazing-spider-man-2012", poster: "https://www.mubis.es/media/articles/1554/15320/nuevo-poster-y-trailer-de-the-amazing-spider-man-original.jpg" },
     { titulo: "The Amazing Spider-Man 2", categoria: "sony-andrew", tipo: "Película", fichaTecnicaId: "the-amazing-spider-man-2-2014", poster: "https://cdn.europosters.eu/image/750/20688.jpg" },
     
     // --- SONY SSU (Universo Spider-Man de Sony) ---
     { titulo: "Venom", categoria: "sony-ssu", tipo: "Película", fichaTecnicaId: "venom-1", poster: "https://ew.com/thmb/ZB6f77bkGWakc1G6ZMf84TWHfC8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/venom-dom-vnm_online_1sht_tsr_rd3dimax_01_rgb-2000-1aa5bc8ab6bf4dc38a719c55500ddbde.jpg" },
-    { titulo: "Venom: Let There Be Carnage", categoria: "sony-ssu", tipo: "Película", poster: "https://m.media-amazon.com/images/I/91Aoh6wnnJL.jpg" },
-    { titulo: "Morbius", categoria: "sony-ssu", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61H81z3Iu-L._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Venom: Let There Be Carnage", categoria: "sony-ssu", tipo: "Película", fichaTecnicaId: "venom-let-there-be-carnage-2021", poster: "https://m.media-amazon.com/images/I/91Aoh6wnnJL.jpg" },
+    { titulo: "Morbius", categoria: "sony-ssu", tipo: "Película", fichaTecnicaId: "morbius-2022", poster: "https://m.media-amazon.com/images/I/61H81z3Iu-L._AC_UF894,1000_QL80_.jpg" },
     { titulo: "Madame Web", categoria: "sony-ssu", tipo: "Película", fichaTecnicaId: "madame-web", poster: "https://m.media-amazon.com/images/S/pv-target-images/cb36ea6f3f53777aea24eec9d1560470e6c6d1f260abc72bcb13ae9bccfcb678.jpg" },
-    { titulo: "Venom: The Last Dance", categoria: "sony-ssu", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/316750.jpg" },
-    { titulo: "Kraven the Hunter", categoria: "sony-ssu", tipo: "Película", poster: "https://www.infobae.com/new-resizer/TCpnPIXVaCBLAgI9qPNyP_LHIlI=/arc-anglerfish-arc2-prod-infobae/public/TIWZB56GRBGONDHJMXY5NJFWMY.jpg" },
+    { titulo: "Venom: The Last Dance", categoria: "sony-ssu", tipo: "Película", fichaTecnicaId: "venom-the-last-dance-2024", poster: "https://cdng.europosters.eu/pod_public/1300/316750.jpg" },
+    { titulo: "Kraven the Hunter", categoria: "sony-ssu", tipo: "Película", fichaTecnicaId: "kraven-the-hunter-2024", poster: "https://www.infobae.com/new-resizer/TCpnPIXVaCBLAgI9qPNyP_LHIlI=/arc-anglerfish-arc2-prod-infobae/public/TIWZB56GRBGONDHJMXY5NJFWMY.jpg" },
 
     // --- DC COMICS (DCU, DCEU Principal, The Batman, Joker) ---
     { titulo: "The Suicide Squad", categoria: "dcu", tipo: "Película", fichaTecnicaId: "the-suicide-squad-2021", poster: "https://postercity.com.ar/wp-content/uploads/2021/10/the-SUICIDE-SQUAD-60-X-90.jpg" },
@@ -283,14 +283,14 @@ const listaMedia = [
     { titulo: "Wonder Woman 1984", categoria: "dceu-principal", tipo: "Película", fichaTecnicaId: "wonder-woman-1984", poster: "https://cdn.europosters.eu/image/1300/83411.jpg" },
     { titulo: "The Suicide Squad", categoria: "dceu-principal", tipo: "Película", fichaTecnicaId: "the-suicide-squad-2021", poster: "https://postercity.com.ar/wp-content/uploads/2021/10/the-SUICIDE-SQUAD-60-X-90.jpg" },
     { titulo: "Black Adam", categoria: "dceu-principal", tipo: "Película", fichaTecnicaId: "black-adam-2022", poster: "https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2022/06/black-adam.jpg?resize=1638%2C2048&ssl=1" },
-    { titulo: "Shazam! Fury of the Gods", categoria: "dceu-principal", tipo: "Película", poster: "https://cinembrollos.com/wp-content/uploads/2023/02/shazam_fury_of_the_gods_ver5_xlg.jpeg" },
-    { titulo: "The Flash", categoria: "dceu-principal", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/317434.jpg" },
+    { titulo: "Shazam! Fury of the Gods", categoria: "dceu-principal", tipo: "Película", fichaTecnicaId: "shazam-fury-of-the-gods-2023", poster: "https://cinembrollos.com/wp-content/uploads/2023/02/shazam_fury_of_the_gods_ver5_xlg.jpeg" },
+    { titulo: "The Flash", categoria: "dceu-principal", tipo: "Película", fichaTecnicaId: "the-flash-2023", poster: "https://cdng.europosters.eu/pod_public/1300/317434.jpg" },
     { titulo: "Blue Beetle", categoria: "dceu-principal", tipo: "Película", fichaTecnicaId: "blue-beetle-2023", poster: "https://www.awn.com/sites/default/files/styles/original/public/image/attached/1058733-bbeetle1-1280.jpg?itok=NxX9BPXh" },
-    { titulo: "Aquaman and the Lost Kingdom", categoria: "dceu-principal", tipo: "Película", poster: "https://i.ebayimg.com/images/g/EPwAAOSwlWJlhaol/s-l1200.jpg" },
+    { titulo: "Aquaman and the Lost Kingdom", categoria: "dceu-principal", tipo: "Película", fichaTecnicaId: "aquaman-and-the-lost-kingdom-2023", poster: "https://i.ebayimg.com/images/g/EPwAAOSwlWJlhaol/s-l1200.jpg" },
     
     // --- THE BATMAN ---
-    { titulo: "The Batman", categoria: "the-batman", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71kUTilIdiL.jpg" },
-    { titulo: "The Penguin", categoria: "the-batman", tipo: "Serie", poster: "https://m.media-amazon.com/images/I/81UqKIm2YhL.jpg" },
+    { titulo: "The Batman", categoria: "the-batman", tipo: "Película", fichaTecnicaId: "the-batman-2022", poster: "https://m.media-amazon.com/images/I/71kUTilIdiL.jpg" },
+    { titulo: "The Penguin", categoria: "the-batman", tipo: "Serie", fichaTecnicaId: "the-penguin-2024", poster: "https://m.media-amazon.com/images/I/81UqKIm2YhL.jpg" },
     
     // --- JOKER ---
     { titulo: "Joker", categoria: "joker", tipo: "Película", poster: "https://i.ebayimg.com/images/g/rI0AAOSw89NiRZ6k/s-l1200.jpg" },
@@ -1448,7 +1448,7 @@ const listaMedia = [
     // --- BARRY KEOGHAN (con filtros por década) ---
     { titulo: "La Leyenda de el Caballero Verde", categoria: "barry-keoghan", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNjRjNmU1M2ItNDU4Ni00ZGY2LTlmNzItY2MxYmY3OTllZjMwXkEyXkFqcGc@._V1_.jpg" },
     { titulo: "Eternals", categoria: "barry-keoghan", subtipo: "2020", tipo: "Película", fichaTecnicaId: "eternals", poster: "https://image.tmdb.org/t/p/original/vgUZo9aVvRvCQFXwZC9zq3qCZT9.jpg" },
-    { titulo: "The Batman", categoria: "barry-keoghan", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71kUTilIdiL.jpg" },
+    { titulo: "The Batman", categoria: "barry-keoghan", subtipo: "2020", tipo: "Película", fichaTecnicaId: "the-batman-2022", poster: "https://m.media-amazon.com/images/I/71kUTilIdiL.jpg" },
     { titulo: "The Banshees of Inisherin", categoria: "barry-keoghan", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOTkzMWI4OTEtMTk0MS00MTUxLWI4NTYtYmRiNWM4Zjc1MGRhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
     { titulo: "Saltburn", categoria: "barry-keoghan", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZjk4NGE3MWItMDRhMy00YzhiLTk0MGUtZDlkNmQxYWIxYzc2XkEyXkFqcGc@._V1_.jpg" },
     { titulo: "Bird", categoria: "barry-keoghan", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMGYzZDI4OTktZWJkZC00NjdiLTlkMjYtMzA1ZTVjMDU2M2FhXkEyXkFqcGc@._V1_.jpg" },
@@ -1736,8 +1736,8 @@ const listaMedia = [
     { titulo: "The Uprising", categoria: "andrew-garfield", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BODc1ZWRlMjQtMDc4NC00ODczLWIwNGMtZmFlZjA3YzIyZWVhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
 
     // --- MARVEL MULTIVERSO: UNIVERSAL ---
-    { titulo: "Howard The Duck", categoria: "universal", tipo: "Película", poster: "https://m.media-amazon.com/images/I/41IHpMp-VeL._AC_UF894,1000_QL80_.jpg" },
-    { titulo: "Hulk (2003)", categoria: "universal", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNTQxMmVlMTItMGFjYi00MTc2LWE5MzMtYjFhZWJmZGY0MTY5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "Howard The Duck", categoria: "universal", tipo: "Película", fichaTecnicaId: "howard-the-duck-1986", poster: "https://m.media-amazon.com/images/I/41IHpMp-VeL._AC_UF894,1000_QL80_.jpg" },
+    { titulo: "Hulk (2003)", categoria: "universal", tipo: "Película", fichaTecnicaId: "hulk-2003", poster: "https://m.media-amazon.com/images/M/MV5BNTQxMmVlMTItMGFjYi00MTc2LWE5MzMtYjFhZWJmZGY0MTY5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
 
     // --- ALFRED HITCHCOCK (con filtros por década) ---
     { titulo: "Frenzy", categoria: "alfred-hitchcock", subtipo: "1970", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/products/frenzy_1972_french_original_film_art_5000x.jpg?v=1605643383" },
@@ -5810,7 +5810,7 @@ const colecciones = [
             { titulo: "Batman v Superman", fichaTecnicaId: "batman-v-superman", poster: "https://m.media-amazon.com/images/I/81o7zaih1mL._AC_UF894,1000_QL80_.jpg" },
             { titulo: "Suicide Squad", fichaTecnicaId: "suicide-squad-2016", poster: "https://image.tmdb.org/t/p/original/sk3FZgh3sRrmr8vyhaitNobMcfh.jpg" },
             { titulo: "Justice League", fichaTecnicaId: "justice-league-2017", poster: "https://www.guioteca.com/comics/files/2017/10/justice-league-final-poster-1039055.jpeg" },
-            { titulo: "The Flash", poster: "https://cdng.europosters.eu/pod_public/1300/317434.jpg" },
+            { titulo: "The Flash", fichaTecnicaId: "the-flash-2023", poster: "https://cdng.europosters.eu/pod_public/1300/317434.jpg" },
             { titulo: "Zack Snyder's Justice League", fichaTecnicaId: "zack-snyders-justice-league-2021", poster: "https://m.media-amazon.com/images/M/MV5BNDA0MzM5YTctZTU2My00NGQ5LWE2NTEtNDM0MjZmMDBkOTZkXkEyXkFqcGc@._V1_.jpg" }
         ]
     },
@@ -5824,7 +5824,7 @@ const colecciones = [
             { titulo: "Batman v Superman", fichaTecnicaId: "batman-v-superman", poster: "https://m.media-amazon.com/images/I/81o7zaih1mL._AC_UF894,1000_QL80_.jpg" },
             { titulo: "Justice League", fichaTecnicaId: "justice-league-2017", poster: "https://www.guioteca.com/comics/files/2017/10/justice-league-final-poster-1039055.jpeg" },
             { titulo: "Black Adam", fichaTecnicaId: "black-adam-2022", poster: "https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2022/06/black-adam.jpg?resize=1638%2C2048&ssl=1" },
-            { titulo: "The Flash", poster: "https://cdng.europosters.eu/pod_public/1300/317434.jpg" },
+            { titulo: "The Flash", fichaTecnicaId: "the-flash-2023", poster: "https://cdng.europosters.eu/pod_public/1300/317434.jpg" },
             { titulo: "Zack Snyder's Justice League", fichaTecnicaId: "zack-snyders-justice-league-2021", poster: "https://m.media-amazon.com/images/M/MV5BNDA0MzM5YTctZTU2My00NGQ5LWE2NTEtNDM0MjZmMDBkOTZkXkEyXkFqcGc@._V1_.jpg" }
         ]
     },
@@ -5838,8 +5838,8 @@ const colecciones = [
             { titulo: "Wonder Woman", fichaTecnicaId: "wonder-woman-2017", poster: "https://im.ziffdavisinternational.com/ign_es/screenshot/default/wonder-woman-sp_q9yz.jpg" },
             { titulo: "Justice League", fichaTecnicaId: "justice-league-2017", poster: "https://www.guioteca.com/comics/files/2017/10/justice-league-final-poster-1039055.jpeg" },
             { titulo: "Wonder Woman 1984", fichaTecnicaId: "wonder-woman-1984", poster: "https://cdn.europosters.eu/image/1300/83411.jpg" },
-            { titulo: "Shazam! Fury of the Gods", poster: "https://cinembrollos.com/wp-content/uploads/2023/02/shazam_fury_of_the_gods_ver5_xlg.jpeg" },
-            { titulo: "The Flash", poster: "https://cdng.europosters.eu/pod_public/1300/317434.jpg" },
+            { titulo: "Shazam! Fury of the Gods", fichaTecnicaId: "shazam-fury-of-the-gods-2023", poster: "https://cinembrollos.com/wp-content/uploads/2023/02/shazam_fury_of_the_gods_ver5_xlg.jpeg" },
+            { titulo: "The Flash", fichaTecnicaId: "the-flash-2023", poster: "https://cdng.europosters.eu/pod_public/1300/317434.jpg" },
             { titulo: "Zack Snyder's Justice League", fichaTecnicaId: "zack-snyders-justice-league-2021", poster: "https://m.media-amazon.com/images/M/MV5BNDA0MzM5YTctZTU2My00NGQ5LWE2NTEtNDM0MjZmMDBkOTZkXkEyXkFqcGc@._V1_.jpg" }
         ]
     },
@@ -14937,7 +14937,7 @@ if (btnVolverFichaHawkeyeSerie) {
     }
 });
 
-['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023', 'arrietty-2010', 'the-impossible-2012', 'how-i-live-now-2013', 'wolf-hall-2015', 'in-the-heart-of-the-sea-2015', 'edge-of-winter-2016', 'the-lost-city-of-z-2016', 'pilgrimage-2017', 'the-current-war-2017', 'cherry-2021', 'onward-2020', 'chaos-walking-2021', 'uncharted-2022', 'dolittle-2020', 'the-devil-all-the-time-2020', 'marmaduke-2010', 'easy-a-2010', 'crazy-stupid-love-2011', 'the-amazing-spider-man-2012', 'gangster-squad-2013', 'movie-43-2013', 'the-amazing-spider-man-2-2014', 'friends-with-benefits-2011', 'the-help-2011', 'the-croods-2013', 'magic-in-the-moonlight-2014', 'birdman-2014', 'aloha-2015', 'irrational-man-2015', 'battle-of-the-sexes-2017', 'maniac-2018', 'the-favourite-2018', 'zombieland-double-tap-2019', 'superbad-2007', 'the-rocker-2008', 'the-house-bunny-2008', 'ghosts-of-girlfriends-past-2009', 'zombieland-2009', 'paper-man-2009', 'the-curse-2023', 'the-croods-a-new-age-2020', 'cruella-2021', 'poor-things-2023', 'kinds-of-kindness-2024', 'eddington-2025', 'bugonia-2025', 'palo-alto-2013', 'the-leftovers-2014', 'the-nice-guys-2016', 'death-note-2017', 'novitiate-2017', 'the-vanishing-of-sidney-hall-2017', 'donnybrook-2018', 'green-lantern-beware-my-power-2022', 'legion-of-super-heroes-2023', 'justice-league-warworld-2023', 'jl-crisis-infinite-earths-p1-2024', 'jl-crisis-infinite-earths-p2-2024', 'jl-crisis-infinite-earths-p3-2024', 'native-son-2019', 'fosse-verdon-2019', 'once-upon-a-time-in-hollywood-2019', 'adam-2019', 'strange-but-true-2019', 'seberg-2019', 'my-salinger-year-2020', 'maid-2021', 'stars-at-noon-2022', 'sanctuary-2022', 'drive-away-dolls-2024', 'the-substance-2024', 'happy-gilmore-2-2025', 'honey-dont-2025', 'blue-moon-2025', 'how-to-make-a-killing-2026', 'io-2019', 'the-dog-stars-2026', 'spider-man-brand-new-day-2026', 'marvel-zombies-serie-2025', 'we-live-in-time-2024', 'oppenheimer-2023', 'a-good-person-2023', 'the-wonder-2022', 'flashpoint-paradox-2013', 'justice-league-war-2014', 'son-of-batman-2014', 'throne-of-atlantis-2015', 'batman-vs-robin-2015', 'the-falling-2014', 'lady-macbeth-2016', 'outlaw-king-2018', 'malevolent-2018', 'fighting-with-my-family-2019', 'little-women-2019', 'batman-bad-blood-2016', 'justice-league-vs-teen-titans-2016', 'justice-league-dark-2017', 'teen-titans-judas-contract-2017', 'suicide-squad-hell-to-pay-2018', 'death-of-superman-2018', 'constantine-city-of-demons-2018', 'reign-of-the-supermen-2019', 'batman-hush-2019', 'wonder-woman-bloodlines-2019', 'justice-league-dark-apokolips-war-2020', 'midsommar-2019', 'the-commuter-2018', 'king-lear-2018', 'little-drummer-girl-2018', 'marcella-2016', 'suicide-squad-2016', 'wonder-woman-2017', 'justice-league-2017', 'ticket-to-paradise-2022', 'leave-the-world-behind-2023', 'after-the-hunt-2025', 'aquaman-2018', 'zack-snyders-justice-league-2021', 'shazam-2019', 'valentines-day-2010', 'eat-pray-love-2010', 'agatha-all-along-2024', 'what-if-2021', 'secret-invasion-2023', 'ironheart-2025', 'clayface-2026', 'larry-crowne-2011', 'moon-knight-2022', 'i-am-groot-2022', 'she-hulk-attorney-at-law-2022', 'werewolf-by-night-2022', 'echo-2024', 'daredevil-born-again-2025', 'eyes-of-wakanda-2025', 'wonder-man-2026', 'punisher-one-last-kill-2026', 'birds-of-prey-2020', 'wonder-woman-1984', 'black-adam-2022'].forEach(id => {
+['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023', 'arrietty-2010', 'the-impossible-2012', 'how-i-live-now-2013', 'wolf-hall-2015', 'in-the-heart-of-the-sea-2015', 'edge-of-winter-2016', 'the-lost-city-of-z-2016', 'pilgrimage-2017', 'the-current-war-2017', 'cherry-2021', 'onward-2020', 'chaos-walking-2021', 'uncharted-2022', 'dolittle-2020', 'the-devil-all-the-time-2020', 'marmaduke-2010', 'easy-a-2010', 'crazy-stupid-love-2011', 'the-amazing-spider-man-2012', 'gangster-squad-2013', 'movie-43-2013', 'the-amazing-spider-man-2-2014', 'friends-with-benefits-2011', 'the-help-2011', 'the-croods-2013', 'magic-in-the-moonlight-2014', 'birdman-2014', 'aloha-2015', 'irrational-man-2015', 'battle-of-the-sexes-2017', 'maniac-2018', 'the-favourite-2018', 'zombieland-double-tap-2019', 'superbad-2007', 'the-rocker-2008', 'the-house-bunny-2008', 'ghosts-of-girlfriends-past-2009', 'zombieland-2009', 'paper-man-2009', 'the-curse-2023', 'the-croods-a-new-age-2020', 'cruella-2021', 'poor-things-2023', 'kinds-of-kindness-2024', 'eddington-2025', 'bugonia-2025', 'palo-alto-2013', 'the-leftovers-2014', 'the-nice-guys-2016', 'death-note-2017', 'novitiate-2017', 'the-vanishing-of-sidney-hall-2017', 'donnybrook-2018', 'green-lantern-beware-my-power-2022', 'legion-of-super-heroes-2023', 'justice-league-warworld-2023', 'jl-crisis-infinite-earths-p1-2024', 'jl-crisis-infinite-earths-p2-2024', 'jl-crisis-infinite-earths-p3-2024', 'native-son-2019', 'fosse-verdon-2019', 'once-upon-a-time-in-hollywood-2019', 'adam-2019', 'strange-but-true-2019', 'seberg-2019', 'my-salinger-year-2020', 'maid-2021', 'stars-at-noon-2022', 'sanctuary-2022', 'drive-away-dolls-2024', 'the-substance-2024', 'happy-gilmore-2-2025', 'honey-dont-2025', 'blue-moon-2025', 'how-to-make-a-killing-2026', 'io-2019', 'the-dog-stars-2026', 'spider-man-brand-new-day-2026', 'marvel-zombies-serie-2025', 'we-live-in-time-2024', 'oppenheimer-2023', 'a-good-person-2023', 'the-wonder-2022', 'flashpoint-paradox-2013', 'justice-league-war-2014', 'son-of-batman-2014', 'throne-of-atlantis-2015', 'batman-vs-robin-2015', 'the-falling-2014', 'lady-macbeth-2016', 'outlaw-king-2018', 'malevolent-2018', 'fighting-with-my-family-2019', 'little-women-2019', 'batman-bad-blood-2016', 'justice-league-vs-teen-titans-2016', 'justice-league-dark-2017', 'teen-titans-judas-contract-2017', 'suicide-squad-hell-to-pay-2018', 'death-of-superman-2018', 'constantine-city-of-demons-2018', 'reign-of-the-supermen-2019', 'batman-hush-2019', 'wonder-woman-bloodlines-2019', 'justice-league-dark-apokolips-war-2020', 'midsommar-2019', 'the-commuter-2018', 'king-lear-2018', 'little-drummer-girl-2018', 'marcella-2016', 'suicide-squad-2016', 'wonder-woman-2017', 'justice-league-2017', 'ticket-to-paradise-2022', 'leave-the-world-behind-2023', 'after-the-hunt-2025', 'aquaman-2018', 'zack-snyders-justice-league-2021', 'shazam-2019', 'valentines-day-2010', 'eat-pray-love-2010', 'agatha-all-along-2024', 'what-if-2021', 'secret-invasion-2023', 'ironheart-2025', 'clayface-2026', 'larry-crowne-2011', 'moon-knight-2022', 'i-am-groot-2022', 'she-hulk-attorney-at-law-2022', 'werewolf-by-night-2022', 'echo-2024', 'daredevil-born-again-2025', 'eyes-of-wakanda-2025', 'wonder-man-2026', 'punisher-one-last-kill-2026', 'birds-of-prey-2020', 'wonder-woman-1984', 'black-adam-2022', 'the-penguin-2024', 'shazam-fury-of-the-gods-2023', 'the-flash-2023', 'aquaman-and-the-lost-kingdom-2023', 'spider-man-2002', 'spider-man-2-2004', 'spider-man-3-2007', 'venom-let-there-be-carnage-2021', 'morbius-2022', 'venom-the-last-dance-2024', 'kraven-the-hunter-2024', 'fantastic-four-2005', 'fantastic-four-silver-surfer-2007', 'howard-the-duck-1986', 'hulk-2003'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -15577,6 +15577,21 @@ const FICHAS_TECNICAS_TITULOS = {
     "birds-of-prey-2020": "Birds of Prey and The Fantabulous Emancipation of One Harley Quinn",
     "wonder-woman-1984": "Wonder Woman 1984",
     "black-adam-2022": "Black Adam",
+    "the-penguin-2024": "The Penguin",
+    "shazam-fury-of-the-gods-2023": "Shazam! Fury of the Gods",
+    "the-flash-2023": "The Flash",
+    "aquaman-and-the-lost-kingdom-2023": "Aquaman and the Lost Kingdom",
+    "spider-man-2002": "Spider-Man (2002)",
+    "spider-man-2-2004": "Spider-Man 2",
+    "spider-man-3-2007": "Spider-Man 3",
+    "venom-let-there-be-carnage-2021": "Venom: Let There Be Carnage",
+    "morbius-2022": "Morbius",
+    "venom-the-last-dance-2024": "Venom: The Last Dance",
+    "kraven-the-hunter-2024": "Kraven the Hunter",
+    "fantastic-four-2005": "Fantastic Four (2005)",
+    "fantastic-four-silver-surfer-2007": "Fantastic Four: Silver Surfer",
+    "howard-the-duck-1986": "Howard The Duck",
+    "hulk-2003": "Hulk (2003)",
     "spies-in-disguise-2019": "Spies in Disguise",
     "the-crowded-room-2023": "The Crowded Room",
     "mio-in-the-land-of-faraway-1987": "Mio in the Land of Faraway",
@@ -19543,6 +19558,179 @@ const REPARTO_PELICULAS = {
             { actor: "Quintessa Swindell", personaje: "Maxine Hunkel / Cyclone" },
             { actor: "Marwan Kenzari", personaje: "Ishmael Gregor / Sabbac" },
             { actor: "Pierce Brosnan", personaje: "Kent Nelson / Doctor Fate" }
+        ]
+    },
+    "the-penguin-2024": {
+        director: "Lauren LeFranc (creadora), Craig Zobel, Helen Shaver, Kevin Bray, Jennifer Getzinger",
+        elenco: [
+            { actor: "Colin Farrell", personaje: "Oswald \"Oz\" Cobb / El Pingüino" },
+            { actor: "Cristin Milioti", personaje: "Sofia Gigante (Falcone)" },
+            { actor: "Rhenzy Feliz", personaje: "Victor Aguilar" },
+            { actor: "Deirdre O'Connell", personaje: "Francis Cobb" },
+            { actor: "Myles Humphus", personaje: "Dom" },
+            { actor: "Berto Colon", personaje: "Castillo" }
+        ]
+    },
+    "shazam-fury-of-the-gods-2023": {
+        director: "David F. Sandberg",
+        elenco: [
+            { actor: "Zachary Levi", personaje: "Billy Batson / Shazam (adulto)" },
+            { actor: "Asher Angel", personaje: "Billy Batson" },
+            { actor: "Jack Dylan Grazer", personaje: "Freddy Freeman" },
+            { actor: "Adam Brody", personaje: "Freddy Freeman (superhéroe)" },
+            { actor: "Rachel Zegler", personaje: "Anthea" },
+            { actor: "Lucy Liu", personaje: "Kalypso" },
+            { actor: "Helen Mirren", personaje: "Hespera" },
+            { actor: "Djimon Hounsou", personaje: "Shazam, el Mago" },
+            { actor: "Meagan Good", personaje: "Darla Dudley (superheroína)" },
+            { actor: "Ross Butler", personaje: "Eugene Choi (superhéroe)" },
+            { actor: "D. J. Cotrona", personaje: "Pedro Peña (superhéroe)" },
+            { actor: "Grace Caroline Currey", personaje: "Mary Bromfield (superheroína)" }
+        ]
+    },
+    "the-flash-2023": {
+        director: "Andy Muschietti",
+        elenco: [
+            { actor: "Ezra Miller", personaje: "Barry Allen / Flash" },
+            { actor: "Michael Keaton", personaje: "Bruce Wayne / Batman" },
+            { actor: "Sasha Calle", personaje: "Kara Zor-El / Supergirl" },
+            { actor: "Michael Shannon", personaje: "General Zod" },
+            { actor: "Ron Livingston", personaje: "Henry Allen" },
+            { actor: "Maribel Verdú", personaje: "Nora Allen" },
+            { actor: "Kiersey Clemons", personaje: "Iris West" },
+            { actor: "Antje Traue", personaje: "Faora-Ul" },
+            { actor: "Ben Affleck", personaje: "Bruce Wayne / Batman (sin acreditar)" }
+        ]
+    },
+    "aquaman-and-the-lost-kingdom-2023": {
+        director: "James Wan",
+        elenco: [
+            { actor: "Jason Momoa", personaje: "Arthur Curry / Aquaman" },
+            { actor: "Patrick Wilson", personaje: "Orm Marius" },
+            { actor: "Amber Heard", personaje: "Mera" },
+            { actor: "Yahya Abdul-Mateen II", personaje: "David Kane / Black Manta" },
+            { actor: "Randall Park", personaje: "Dr. Stephen Shin" },
+            { actor: "Dolph Lundgren", personaje: "Nereus" },
+            { actor: "Temuera Morrison", personaje: "Thomas Curry" },
+            { actor: "Martin Short", personaje: "Kingfish (voz)" },
+            { actor: "Nicole Kidman", personaje: "Atlanna" }
+        ]
+    },
+    "spider-man-2002": {
+        director: "Sam Raimi",
+        elenco: [
+            { actor: "Tobey Maguire", personaje: "Peter Parker / Spider-Man" },
+            { actor: "Willem Dafoe", personaje: "Norman Osborn / Duende Verde" },
+            { actor: "Kirsten Dunst", personaje: "Mary Jane Watson" },
+            { actor: "James Franco", personaje: "Harry Osborn" },
+            { actor: "Cliff Robertson", personaje: "Ben Parker" }
+        ]
+    },
+    "spider-man-2-2004": {
+        director: "Sam Raimi",
+        elenco: [
+            { actor: "Tobey Maguire", personaje: "Peter Parker / Spider-Man" },
+            { actor: "Kirsten Dunst", personaje: "Mary Jane Watson" },
+            { actor: "James Franco", personaje: "Harry Osborn" },
+            { actor: "Alfred Molina", personaje: "Dr. Otto Octavius / Doc Ock" },
+            { actor: "Rosemary Harris", personaje: "May Parker" }
+        ]
+    },
+    "spider-man-3-2007": {
+        director: "Sam Raimi",
+        elenco: [
+            { actor: "Tobey Maguire", personaje: "Peter Parker / Spider-Man" },
+            { actor: "Kirsten Dunst", personaje: "Mary Jane Watson" },
+            { actor: "James Franco", personaje: "Harry Osborn" },
+            { actor: "Thomas Haden Church", personaje: "Flint Marko / Hombre de Arena" },
+            { actor: "Topher Grace", personaje: "Eddie Brock / Venom" }
+        ]
+    },
+    "venom-let-there-be-carnage-2021": {
+        director: "Andy Serkis",
+        elenco: [
+            { actor: "Tom Hardy", personaje: "Eddie Brock / Venom" },
+            { actor: "Woody Harrelson", personaje: "Cletus Kasady / Carnage" },
+            { actor: "Michelle Williams", personaje: "Anne Weying" },
+            { actor: "Naomie Harris", personaje: "Frances Barrison / Shriek" },
+            { actor: "Stephen Graham", personaje: "Patrick Mulligan" },
+            { actor: "Reid Scott", personaje: "Dan Lewis" }
+        ]
+    },
+    "morbius-2022": {
+        director: "Daniel Espinosa",
+        elenco: [
+            { actor: "Jared Leto", personaje: "Dr. Michael Morbius" },
+            { actor: "Matt Smith", personaje: "Milo" },
+            { actor: "Adria Arjona", personaje: "Martine Bancroft" },
+            { actor: "Jared Harris", personaje: "Emil Nikols" },
+            { actor: "Tyrese Gibson", personaje: "Simon Stroud" }
+        ]
+    },
+    "venom-the-last-dance-2024": {
+        director: "Kelly Marcel",
+        elenco: [
+            { actor: "Tom Hardy", personaje: "Eddie Brock / Venom" },
+            { actor: "Chiwetel Ejiofor", personaje: "General Rex Strickland" },
+            { actor: "Juno Temple", personaje: "Dra. Theodora \"Teddy\" Paine" },
+            { actor: "Rhys Ifans", personaje: "Martin Moon" },
+            { actor: "Stephen Graham", personaje: "Patrick Mulligan" },
+            { actor: "Peggy Lu", personaje: "Sra. Chen" },
+            { actor: "Clark Backo", personaje: "Sadie \"Christmas\"" },
+            { actor: "Alanna Ubach", personaje: "Nova Moon" },
+            { actor: "Andy Serkis", personaje: "Knull" }
+        ]
+    },
+    "kraven-the-hunter-2024": {
+        director: "J. C. Chandor",
+        elenco: [
+            { actor: "Aaron Taylor-Johnson", personaje: "Sergei Kravinoff / Kraven" },
+            { actor: "Russell Crowe", personaje: "Nikolai Kravinoff" },
+            { actor: "Ariana DeBose", personaje: "Calypso" },
+            { actor: "Fred Hechinger", personaje: "Dmitri Smerdyakov" },
+            { actor: "Alessandro Nivola", personaje: "Aleksei Sytsevich / Rhino" },
+            { actor: "Christopher Abbott", personaje: "The Foreigner" }
+        ]
+    },
+    "fantastic-four-2005": {
+        director: "Tim Story",
+        elenco: [
+            { actor: "Ioan Gruffudd", personaje: "Reed Richards / Mr. Fantástico" },
+            { actor: "Jessica Alba", personaje: "Susan Storm / La Mujer Invisible" },
+            { actor: "Chris Evans", personaje: "Johnny Storm / La Antorcha Humana" },
+            { actor: "Michael Chiklis", personaje: "Ben Grimm / La Cosa" },
+            { actor: "Julian McMahon", personaje: "Victor von Doom / Doctor Doom" }
+        ]
+    },
+    "fantastic-four-silver-surfer-2007": {
+        director: "Tim Story",
+        elenco: [
+            { actor: "Ioan Gruffudd", personaje: "Reed Richards / Mr. Fantástico" },
+            { actor: "Jessica Alba", personaje: "Susan Storm / La Mujer Invisible" },
+            { actor: "Chris Evans", personaje: "Johnny Storm / La Antorcha Humana" },
+            { actor: "Michael Chiklis", personaje: "Ben Grimm / La Cosa" },
+            { actor: "Julian McMahon", personaje: "Victor von Doom / Doctor Doom" },
+            { actor: "Kerry Washington", personaje: "Alicia Masters" }
+        ]
+    },
+    "howard-the-duck-1986": {
+        director: "Willard Huyck",
+        elenco: [
+            { actor: "Lea Thompson", personaje: "Beverly Switzler" },
+            { actor: "Jeffrey Jones", personaje: "Dr. Walter Jenning" },
+            { actor: "Tim Robbins", personaje: "Phil Blumburtt" },
+            { actor: "Ed Gale", personaje: "Howard el Pato (actor del traje)" },
+            { actor: "Chip Zien", personaje: "Howard el Pato (voz)" }
+        ]
+    },
+    "hulk-2003": {
+        director: "Ang Lee",
+        elenco: [
+            { actor: "Eric Bana", personaje: "Bruce Banner / Hulk" },
+            { actor: "Jennifer Connelly", personaje: "Betty Ross" },
+            { actor: "Nick Nolte", personaje: "David Banner" },
+            { actor: "Sam Elliott", personaje: "General \"Thunderbolt\" Ross" },
+            { actor: "Josh Lucas", personaje: "Glenn Talbot" }
         ]
     },
     "spies-in-disguise-2019": {
