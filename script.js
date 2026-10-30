@@ -261,16 +261,16 @@ const listaMedia = [
     // --- DCEU DE ZACK SNYDER (Con el orden pedido por Lando) ---
     { titulo: "Man of Steel", categoria: "dceu-snyder", tipo: "Película", fichaTecnicaId: "man-of-steel", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtrrTBfKpVp5mWI445MSXcFokIqvkHM737oEbS9U38ayvSDd4eIG8IVpkn&s=10" },
     { titulo: "Batman v Superman", categoria: "dceu-snyder", tipo: "Película", fichaTecnicaId: "batman-v-superman", poster: "https://m.media-amazon.com/images/I/81o7zaih1mL._AC_UF894,1000_QL80_.jpg" },
-    { titulo: "Suicide Squad", categoria: "dceu-snyder", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/sk3FZgh3sRrmr8vyhaitNobMcfh.jpg" },
-    { titulo: "Wonder Woman", categoria: "dceu-snyder", tipo: "Película", poster: "https://im.ziffdavisinternational.com/ign_es/screenshot/default/wonder-woman-sp_q9yz.jpg" },
+    { titulo: "Suicide Squad", categoria: "dceu-snyder", tipo: "Película", fichaTecnicaId: "suicide-squad-2016", poster: "https://image.tmdb.org/t/p/original/sk3FZgh3sRrmr8vyhaitNobMcfh.jpg" },
+    { titulo: "Wonder Woman", categoria: "dceu-snyder", tipo: "Película", fichaTecnicaId: "wonder-woman-2017", poster: "https://im.ziffdavisinternational.com/ign_es/screenshot/default/wonder-woman-sp_q9yz.jpg" },
     { titulo: "Zack Snyder's Justice League", categoria: "dceu-snyder", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNDA0MzM5YTctZTU2My00NGQ5LWE2NTEtNDM0MjZmMDBkOTZkXkEyXkFqcGc@._V1_.jpg" },
     
     // --- DCEU PRINCIPAL (orden de estreno) ---
     { titulo: "Man of Steel", categoria: "dceu-principal", tipo: "Película", fichaTecnicaId: "man-of-steel", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtrrTBfKpVp5mWI445MSXcFokIqvkHM737oEbS9U38ayvSDd4eIG8IVpkn&s=10" },
     { titulo: "Batman v Superman", categoria: "dceu-principal", tipo: "Película", fichaTecnicaId: "batman-v-superman", poster: "https://m.media-amazon.com/images/I/81o7zaih1mL._AC_UF894,1000_QL80_.jpg" },
-    { titulo: "Suicide Squad", categoria: "dceu-principal", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/sk3FZgh3sRrmr8vyhaitNobMcfh.jpg" },
-    { titulo: "Wonder Woman", categoria: "dceu-principal", tipo: "Película", poster: "https://im.ziffdavisinternational.com/ign_es/screenshot/default/wonder-woman-sp_q9yz.jpg" },
-    { titulo: "Justice League", categoria: "dceu-principal", tipo: "Película", poster: "https://www.guioteca.com/comics/files/2017/10/justice-league-final-poster-1039055.jpeg" },
+    { titulo: "Suicide Squad", categoria: "dceu-principal", tipo: "Película", fichaTecnicaId: "suicide-squad-2016", poster: "https://image.tmdb.org/t/p/original/sk3FZgh3sRrmr8vyhaitNobMcfh.jpg" },
+    { titulo: "Wonder Woman", categoria: "dceu-principal", tipo: "Película", fichaTecnicaId: "wonder-woman-2017", poster: "https://im.ziffdavisinternational.com/ign_es/screenshot/default/wonder-woman-sp_q9yz.jpg" },
+    { titulo: "Justice League", categoria: "dceu-principal", tipo: "Película", fichaTecnicaId: "justice-league-2017", poster: "https://www.guioteca.com/comics/files/2017/10/justice-league-final-poster-1039055.jpeg" },
     { titulo: "Aquaman", categoria: "dceu-principal", tipo: "Película", poster: "https://deadline.com/wp-content/uploads/2018/07/aquaman-poster.jpg" },
     { titulo: "Shazam!", categoria: "dceu-principal", tipo: "Película", poster: "https://static.posters.cz/image/1300/71939.jpg" },
     { titulo: "Birds of Prey and The Fantabulous Emancipation of One Harley Quinn", categoria: "dceu-principal", tipo: "Película", poster: "https://ew.com/thmb/sT-h3pYSc53fKCWxtv5ro4Midno=/2000x0/filters:no_upscale():max_bytes(150000):strip_icc()/birds-of-prey-2000-90f0db5838084a8a8c2eca14edd37e1f.jpg" },
@@ -1270,9 +1270,9 @@ const listaMedia = [
     { titulo: "Rebel Moon – Part Two: The Scargiver", categoria: "zack-snyder", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/eKBWpucWHjoFbsAoh1tGEHi5YqF.jpg" },
     { titulo: "Twilight of the Gods", categoria: "zack-snyder", subtipo: "2020", tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/zyHO0baC2VYFTjP8AIqcnVY2Wm.jpg" },
     { titulo: "The Last Photograph", categoria: "zack-snyder", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/w500/f4wkmntEUQv41LX7nAcr2YTgI3J.jpg" },
-    { titulo: "Ticket to Paradise", categoria: "julia-roberts", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/bowsGPWVbpX40SluymYDW8N4C2Y.jpg" },
-    { titulo: "Leave the World Behind", categoria: "julia-roberts", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/at1EevoMjpMdzJF2eR3TdsX8s3E.jpg" },
-    { titulo: "After the Hunt", categoria: "julia-roberts", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMzYyOTAwODEtZTY4My00MjVkLWJjYjUtMjE2N2UzYTE3MTY3XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "Ticket to Paradise", categoria: "julia-roberts", subtipo: "2020", tipo: "Película", fichaTecnicaId: "ticket-to-paradise-2022", poster: "https://image.tmdb.org/t/p/original/bowsGPWVbpX40SluymYDW8N4C2Y.jpg" },
+    { titulo: "Leave the World Behind", categoria: "julia-roberts", subtipo: "2020", tipo: "Película", fichaTecnicaId: "leave-the-world-behind-2023", poster: "https://image.tmdb.org/t/p/original/at1EevoMjpMdzJF2eR3TdsX8s3E.jpg" },
+    { titulo: "After the Hunt", categoria: "julia-roberts", subtipo: "2020", tipo: "Película", fichaTecnicaId: "after-the-hunt-2025", poster: "https://m.media-amazon.com/images/M/MV5BMzYyOTAwODEtZTY4My00MjVkLWJjYjUtMjE2N2UzYTE3MTY3XkEyXkFqcGc@._V1_.jpg" },
     { titulo: "Valentine's Day", categoria: "julia-roberts", subtipo: "2010", tipo: "Película", poster: "https://www.movieposters.com/cdn/shop/products/988fb5b52c9a981b445599e034a3de8d_5a4fe266-cda9-4885-85c1-288bcf85c7be_1024x1024.jpg?v=1762470114" },
     { titulo: "Eat Pray Love", categoria: "julia-roberts", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTY5NDkyNzkyM15BMl5BanBnXkFtZTcwNDQyNDk0Mw@@._V1_.jpg" },
     { titulo: "Larry Crowne", categoria: "julia-roberts", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/nPyoe9J7Lawx8MHEKQfbG4h6V9n.jpg" },
@@ -1699,7 +1699,7 @@ const listaMedia = [
     { titulo: "The Big Short", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-big-short-2015", poster: "https://m.media-amazon.com/images/M/MV5BZDZkNDQ3YjktYjBlZC00YTY1LTgxOGYtY2RhMWFhZmNkZGY3XkEyXkFqcGc@.V1.jpg" },
     { titulo: "Whiskey Tango Foxtrot", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/750/324143.jpg" },
     { titulo: "La Leyenda de Tarzán", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMzY3OTI0OTcyMF5BMl5BanBnXkFtZTgwNjkxNTAwOTE@.V1_FMjpg_UX1000.jpg" },
-    { titulo: "Suicide Squad", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/sk3FZgh3sRrmr8vyhaitNobMcfh.jpg" },
+    { titulo: "Suicide Squad", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", fichaTecnicaId: "suicide-squad-2016", poster: "https://image.tmdb.org/t/p/original/sk3FZgh3sRrmr8vyhaitNobMcfh.jpg" },
     { titulo: "Goodbye Christopher Robin", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZGVmNWZiNDgtMzk2YS00ZGM2LWFjOTQtODk5OGRkZmMzNmYzXkEyXkFqcGc@.V1.jpg" },
     { titulo: "Yo, Tonya", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/323134.jpg" },
     { titulo: "Peter Rabbit", categoria: "margot-robbie", subtipo: "2010", tipo: "Película", poster: "https://www.movieposters.com/cdn/shop/products/d859b47d3fdf1f8660e0f09f4afa7fa7_14b224a4-6698-4168-bde5-d98c55c626c1_1024x1024.jpg?v=1759439329" },
@@ -1725,7 +1725,7 @@ const listaMedia = [
     { titulo: "Spider-Man: No Way Home", categoria: "andrew-garfield", subtipo: "2020", tipo: "Película", fichaTecnicaId: "spider-man-no-way-home", poster: "https://www.cinemascomics.com/wp-content/uploads/2022/01/poster-Spider-man-no-way-home.jpg" },
     { titulo: "Under The Banner of Heaven", categoria: "andrew-garfield", subtipo: "2020", tipo: "Serie", poster: "https://m.media-amazon.com/images/M/MV5BMDM2ZTA1ZjItMDlhNS00ZTMyLWI5MDEtOTk0YWI5ZmZjZjBkXkEyXkFqcGc@._V1_.jpg" },
     { titulo: "We Live in Time", categoria: "andrew-garfield", subtipo: "2020", tipo: "Película", fichaTecnicaId: "we-live-in-time-2024", poster: "https://image.tmdb.org/t/p/original/vEmiJetB0C7VJjw60QNXO0oMMws.jpg" },
-    { titulo: "After the Hunt", categoria: "andrew-garfield", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMzYyOTAwODEtZTY4My00MjVkLWJjYjUtMjE2N2UzYTE3MTY3XkEyXkFqcGc@._V1_.jpg" },
+    { titulo: "After the Hunt", categoria: "andrew-garfield", subtipo: "2020", tipo: "Película", fichaTecnicaId: "after-the-hunt-2025", poster: "https://m.media-amazon.com/images/M/MV5BMzYyOTAwODEtZTY4My00MjVkLWJjYjUtMjE2N2UzYTE3MTY3XkEyXkFqcGc@._V1_.jpg" },
     { titulo: "The Magic Faraway Tree", categoria: "andrew-garfield", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNGUzNzQzNWQtZTI2My00YmE2LTkyYzItNzFhMTM3OTVkYmNlXkEyXkFqcGc@._V1_.jpg" },
     { titulo: "The Uprising", categoria: "andrew-garfield", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BODc1ZWRlMjQtMDc4NC00ODczLWIwNGMtZmFlZjA3YzIyZWVhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
 
@@ -14931,7 +14931,7 @@ if (btnVolverFichaHawkeyeSerie) {
     }
 });
 
-['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023', 'arrietty-2010', 'the-impossible-2012', 'how-i-live-now-2013', 'wolf-hall-2015', 'in-the-heart-of-the-sea-2015', 'edge-of-winter-2016', 'the-lost-city-of-z-2016', 'pilgrimage-2017', 'the-current-war-2017', 'cherry-2021', 'onward-2020', 'chaos-walking-2021', 'uncharted-2022', 'dolittle-2020', 'the-devil-all-the-time-2020', 'marmaduke-2010', 'easy-a-2010', 'crazy-stupid-love-2011', 'the-amazing-spider-man-2012', 'gangster-squad-2013', 'movie-43-2013', 'the-amazing-spider-man-2-2014', 'friends-with-benefits-2011', 'the-help-2011', 'the-croods-2013', 'magic-in-the-moonlight-2014', 'birdman-2014', 'aloha-2015', 'irrational-man-2015', 'battle-of-the-sexes-2017', 'maniac-2018', 'the-favourite-2018', 'zombieland-double-tap-2019', 'superbad-2007', 'the-rocker-2008', 'the-house-bunny-2008', 'ghosts-of-girlfriends-past-2009', 'zombieland-2009', 'paper-man-2009', 'the-curse-2023', 'the-croods-a-new-age-2020', 'cruella-2021', 'poor-things-2023', 'kinds-of-kindness-2024', 'eddington-2025', 'bugonia-2025', 'palo-alto-2013', 'the-leftovers-2014', 'the-nice-guys-2016', 'death-note-2017', 'novitiate-2017', 'the-vanishing-of-sidney-hall-2017', 'donnybrook-2018', 'green-lantern-beware-my-power-2022', 'legion-of-super-heroes-2023', 'justice-league-warworld-2023', 'jl-crisis-infinite-earths-p1-2024', 'jl-crisis-infinite-earths-p2-2024', 'jl-crisis-infinite-earths-p3-2024', 'native-son-2019', 'fosse-verdon-2019', 'once-upon-a-time-in-hollywood-2019', 'adam-2019', 'strange-but-true-2019', 'seberg-2019', 'my-salinger-year-2020', 'maid-2021', 'stars-at-noon-2022', 'sanctuary-2022', 'drive-away-dolls-2024', 'the-substance-2024', 'happy-gilmore-2-2025', 'honey-dont-2025', 'blue-moon-2025', 'how-to-make-a-killing-2026', 'io-2019', 'the-dog-stars-2026', 'spider-man-brand-new-day-2026', 'marvel-zombies-serie-2025', 'we-live-in-time-2024', 'oppenheimer-2023', 'a-good-person-2023', 'the-wonder-2022', 'flashpoint-paradox-2013', 'justice-league-war-2014', 'son-of-batman-2014', 'throne-of-atlantis-2015', 'batman-vs-robin-2015', 'the-falling-2014', 'lady-macbeth-2016', 'outlaw-king-2018', 'malevolent-2018', 'fighting-with-my-family-2019', 'little-women-2019', 'batman-bad-blood-2016', 'justice-league-vs-teen-titans-2016', 'justice-league-dark-2017', 'teen-titans-judas-contract-2017', 'suicide-squad-hell-to-pay-2018', 'death-of-superman-2018', 'constantine-city-of-demons-2018', 'reign-of-the-supermen-2019', 'batman-hush-2019', 'wonder-woman-bloodlines-2019', 'justice-league-dark-apokolips-war-2020', 'midsommar-2019', 'the-commuter-2018', 'king-lear-2018', 'little-drummer-girl-2018', 'marcella-2016'].forEach(id => {
+['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023', 'arrietty-2010', 'the-impossible-2012', 'how-i-live-now-2013', 'wolf-hall-2015', 'in-the-heart-of-the-sea-2015', 'edge-of-winter-2016', 'the-lost-city-of-z-2016', 'pilgrimage-2017', 'the-current-war-2017', 'cherry-2021', 'onward-2020', 'chaos-walking-2021', 'uncharted-2022', 'dolittle-2020', 'the-devil-all-the-time-2020', 'marmaduke-2010', 'easy-a-2010', 'crazy-stupid-love-2011', 'the-amazing-spider-man-2012', 'gangster-squad-2013', 'movie-43-2013', 'the-amazing-spider-man-2-2014', 'friends-with-benefits-2011', 'the-help-2011', 'the-croods-2013', 'magic-in-the-moonlight-2014', 'birdman-2014', 'aloha-2015', 'irrational-man-2015', 'battle-of-the-sexes-2017', 'maniac-2018', 'the-favourite-2018', 'zombieland-double-tap-2019', 'superbad-2007', 'the-rocker-2008', 'the-house-bunny-2008', 'ghosts-of-girlfriends-past-2009', 'zombieland-2009', 'paper-man-2009', 'the-curse-2023', 'the-croods-a-new-age-2020', 'cruella-2021', 'poor-things-2023', 'kinds-of-kindness-2024', 'eddington-2025', 'bugonia-2025', 'palo-alto-2013', 'the-leftovers-2014', 'the-nice-guys-2016', 'death-note-2017', 'novitiate-2017', 'the-vanishing-of-sidney-hall-2017', 'donnybrook-2018', 'green-lantern-beware-my-power-2022', 'legion-of-super-heroes-2023', 'justice-league-warworld-2023', 'jl-crisis-infinite-earths-p1-2024', 'jl-crisis-infinite-earths-p2-2024', 'jl-crisis-infinite-earths-p3-2024', 'native-son-2019', 'fosse-verdon-2019', 'once-upon-a-time-in-hollywood-2019', 'adam-2019', 'strange-but-true-2019', 'seberg-2019', 'my-salinger-year-2020', 'maid-2021', 'stars-at-noon-2022', 'sanctuary-2022', 'drive-away-dolls-2024', 'the-substance-2024', 'happy-gilmore-2-2025', 'honey-dont-2025', 'blue-moon-2025', 'how-to-make-a-killing-2026', 'io-2019', 'the-dog-stars-2026', 'spider-man-brand-new-day-2026', 'marvel-zombies-serie-2025', 'we-live-in-time-2024', 'oppenheimer-2023', 'a-good-person-2023', 'the-wonder-2022', 'flashpoint-paradox-2013', 'justice-league-war-2014', 'son-of-batman-2014', 'throne-of-atlantis-2015', 'batman-vs-robin-2015', 'the-falling-2014', 'lady-macbeth-2016', 'outlaw-king-2018', 'malevolent-2018', 'fighting-with-my-family-2019', 'little-women-2019', 'batman-bad-blood-2016', 'justice-league-vs-teen-titans-2016', 'justice-league-dark-2017', 'teen-titans-judas-contract-2017', 'suicide-squad-hell-to-pay-2018', 'death-of-superman-2018', 'constantine-city-of-demons-2018', 'reign-of-the-supermen-2019', 'batman-hush-2019', 'wonder-woman-bloodlines-2019', 'justice-league-dark-apokolips-war-2020', 'midsommar-2019', 'the-commuter-2018', 'king-lear-2018', 'little-drummer-girl-2018', 'marcella-2016', 'suicide-squad-2016', 'wonder-woman-2017', 'justice-league-2017', 'ticket-to-paradise-2022', 'leave-the-world-behind-2023', 'after-the-hunt-2025'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -15542,6 +15542,12 @@ const FICHAS_TECNICAS_TITULOS = {
     "king-lear-2018": "King Lear",
     "little-drummer-girl-2018": "The Little Drummer Girl",
     "marcella-2016": "Marcella",
+    "suicide-squad-2016": "Suicide Squad",
+    "wonder-woman-2017": "Wonder Woman",
+    "justice-league-2017": "Justice League",
+    "ticket-to-paradise-2022": "Ticket to Paradise",
+    "leave-the-world-behind-2023": "Leave the World Behind",
+    "after-the-hunt-2025": "After the Hunt",
     "spies-in-disguise-2019": "Spies in Disguise",
     "the-crowded-room-2023": "The Crowded Room",
     "mio-in-the-land-of-faraway-1987": "Mio in the Land of Faraway",
@@ -19138,6 +19144,84 @@ const REPARTO_PELICULAS = {
             { actor: "Jamie Bamber", personaje: "Tim Williamson" },
             { actor: "Nina Sosanya", personaje: "Laura Porter" },
             { actor: "Florence Pugh", personaje: "Cara Thomas" }
+        ]
+    },
+    "suicide-squad-2016": {
+        director: "David Ayer",
+        elenco: [
+            { actor: "Will Smith", personaje: "Floyd Lawton / Deadshot" },
+            { actor: "Jared Leto", personaje: "Joker" },
+            { actor: "Margot Robbie", personaje: "Dr. Harleen Quinzel / Harley Quinn" },
+            { actor: "Joel Kinnaman", personaje: "Rick Flag Jr." },
+            { actor: "Viola Davis", personaje: "Amanda Waller" },
+            { actor: "Jai Courtney", personaje: "Digger Harkness / Captain Boomerang" },
+            { actor: "Karen Fukuhara", personaje: "Tatsu Yamashiro / Katana" },
+            { actor: "Jay Hernandez", personaje: "Chato Santana / El Diablo" },
+            { actor: "Adewale Akinnuoye-Agbaje", personaje: "Waylon Jones / Killer Croc" },
+            { actor: "Cara Delevingne", personaje: "Dr. June Moone / Enchantress" },
+            { actor: "Adam Beach", personaje: "Christopher Weiss / Slipknot" }
+        ]
+    },
+    "wonder-woman-2017": {
+        director: "Patty Jenkins",
+        elenco: [
+            { actor: "Gal Gadot", personaje: "Diana Prince / Wonder Woman" },
+            { actor: "Chris Pine", personaje: "Steve Trevor" },
+            { actor: "Robin Wright", personaje: "Antiope" },
+            { actor: "Danny Huston", personaje: "Erich Ludendorff" },
+            { actor: "David Thewlis", personaje: "Sir Patrick / Ares" },
+            { actor: "Connie Nielsen", personaje: "Hipólita" },
+            { actor: "Elena Anaya", personaje: "Dra. Maru" }
+        ]
+    },
+    "justice-league-2017": {
+        director: "Zack Snyder",
+        elenco: [
+            { actor: "Ben Affleck", personaje: "Bruce Wayne / Batman" },
+            { actor: "Henry Cavill", personaje: "Clark Kent / Superman" },
+            { actor: "Gal Gadot", personaje: "Diana Prince / Wonder Woman" },
+            { actor: "Ezra Miller", personaje: "Barry Allen / Flash" },
+            { actor: "Jason Momoa", personaje: "Arthur Curry / Aquaman" },
+            { actor: "Ray Fisher", personaje: "Victor Stone / Cyborg" },
+            { actor: "Amy Adams", personaje: "Lois Lane" },
+            { actor: "Jeremy Irons", personaje: "Alfred Pennyworth" },
+            { actor: "Diane Lane", personaje: "Martha Kent" },
+            { actor: "Connie Nielsen", personaje: "Hipólita" },
+            { actor: "J. K. Simmons", personaje: "Comisionado James Gordon" },
+            { actor: "Ciarán Hinds", personaje: "Steppenwolf" }
+        ]
+    },
+    "ticket-to-paradise-2022": {
+        director: "Ol Parker",
+        elenco: [
+            { actor: "George Clooney", personaje: "David Cotton" },
+            { actor: "Julia Roberts", personaje: "Georgia Cotton" },
+            { actor: "Kaitlyn Dever", personaje: "Lily Cotton" },
+            { actor: "Billie Lourd", personaje: "Wren Butler" },
+            { actor: "Maxime Bouttier", personaje: "Gede" },
+            { actor: "Lucas Bravo", personaje: "Paul" }
+        ]
+    },
+    "leave-the-world-behind-2023": {
+        director: "Sam Esmail",
+        elenco: [
+            { actor: "Julia Roberts", personaje: "Amanda Sandford" },
+            { actor: "Mahershala Ali", personaje: "G.H. Scott" },
+            { actor: "Ethan Hawke", personaje: "Clay Sandford" },
+            { actor: "Myha'la", personaje: "Ruth Scott" },
+            { actor: "Kevin Bacon", personaje: "Danny" },
+            { actor: "Farrah Mackenzie", personaje: "Rose Sandford" },
+            { actor: "Charlie Evans", personaje: "Archie Sandford" }
+        ]
+    },
+    "after-the-hunt-2025": {
+        director: "Luca Guadagnino",
+        elenco: [
+            { actor: "Julia Roberts", personaje: "Alma Imhoff" },
+            { actor: "Ayo Edebiri", personaje: "Maggie Resnick" },
+            { actor: "Andrew Garfield", personaje: "Hank Gibson" },
+            { actor: "Michael Stuhlbarg", personaje: "Frederik Mendelssohn" },
+            { actor: "Chloë Sevigny", personaje: "Dra. Kim Sayers" }
         ]
     },
     "spies-in-disguise-2019": {
