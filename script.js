@@ -166,31 +166,36 @@ const listaMedia = [
     { titulo: "The Falcon and The Winter Soldier", categoria: "mcu-multiverso", tipo: "Serie", fichaTecnicaId: "falcon-winter-soldier", ordenSalida: 25, crono: 28, poster: "https://www.hellofriki.com/wp-content/uploads/2020/12/falcon-soldado-de-invierno-serie-poste-691x1024.jpg" },
     { titulo: "Loki (Temporada 1)", categoria: "mcu-multiverso", tipo: "Serie", fichaTecnicaId: "loki-temporada-1", ordenSalida: 26, crono: 24.3, poster: "https://m.media-amazon.com/images/I/81fdQ6kl4JS.jpg" },
     { titulo: "Black Widow", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "black-widow-2021", ordenSalida: 27, crono: 17, poster: "https://m.media-amazon.com/images/M/MV5BNjZjOGVhOTEtNzY4Mi00MjQzLTlmYjktNzMyMDExMWJlODEwXkEyXkFqcGc@.V1.jpg" },
-    { titulo: "Shang-Chi", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "shang-chi", ordenSalida: 28, crono: 31, poster: "https://m.media-amazon.com/images/I/81orh-NSiTL.jpg" },
-    { titulo: "Eternals", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "eternals", ordenSalida: 29, crono: 32, poster: "https://image.tmdb.org/t/p/original/vgUZo9aVvRvCQFXwZC9zq3qCZT9.jpg" },
-    { titulo: "Hawkeye", categoria: "mcu-multiverso", tipo: "Serie", fichaTecnicaId: "hawkeye-serie", ordenSalida: 30, crono: 33, poster: "https://lumiere-a.akamaihd.net/v1/images/unknown_61ca7b47.png" },
-    { titulo: "Spider-Man: No Way Home", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "spider-man-no-way-home", ordenSalida: 31, crono: 35, poster: "https://www.cinemascomics.com/wp-content/uploads/2022/01/poster-Spider-man-no-way-home.jpg" },
-    { titulo: "Moon Knight", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 32, crono: 36, poster: "https://m.media-amazon.com/images/I/71pAwt4KT6L.jpg" },
-    { titulo: "Dr. Strange: Multiverse of Madness", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "doctor-strange-multiverse-of-madness", ordenSalida: 33, crono: 37, poster: "https://img.buzzfeed.com/buzzfeed-static/static/2022-02/18/13/asset/e9954361afcd/sub-buzz-772-1645190837-7.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto" },
-    { titulo: "Ms. Marvel", categoria: "mcu-multiverso", tipo: "Serie", fichaTecnicaId: "ms-marvel-serie", ordenSalida: 34, crono: 38, poster: "https://lumiere-a.akamaihd.net/v1/images/ms_979c8372.jpeg" },
-    { titulo: "Thor: Love and Thunder", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "thor-love-and-thunder", ordenSalida: 35, crono: 39, poster: "https://lumiere-a.akamaihd.net/v1/images/fb83262af061c44d518c601e3956c3b4_2764x4096_e4f0eee2.jpeg" },
-    { titulo: "Yo Soy Groot", categoria: "mcu-multiverso", tipo: "Serie de Cortos", ordenSalida: 36, crono: 26, poster: "https://cdn.marvel.com/content/2x/iamgroot_lob_crd_04.jpg" },
-    { titulo: "She-Hulk: Attorney at Law", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 37, crono: 40, poster: "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/LXR4DQCCMFFW7CEWUE7QRUGJTU.jpg" },
-    { titulo: "Hombre Lobo por la Noche", categoria: "mcu-multiverso", tipo: "Especial", ordenSalida: 38, crono: 30, poster: "https://m.media-amazon.com/images/M/MV5BODUzMGFkYzgtYzhjNC00ZmFjLTg3ZTYtYWJkMWRjMzJmYTQ2XkEyXkFqcGc@.V1.jpg" },
-    { titulo: "Black Panther: Wakanda Forever", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "black-panther-wakanda-forever", ordenSalida: 39, crono: 41, poster: "https://artofthemovies.co.uk/cdn/shop/products/IMG_0184-338579.jpg?v=1668148930&width=900" },
-    { titulo: "Ant-Man and The Wasp: Quantumania", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "ant-man-quantumania", ordenSalida: 40, crono: 42, poster: "https://lumiere-a.akamaihd.net/v1/images/antman_b843a521.jpeg?region=0,0,658,898" },
-    { titulo: "Guardians of the Galaxy Vol. 3", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "guardians-of-the-galaxy-3", ordenSalida: 41, crono: 43, poster: "https://assets-prd.ignimgs.com/2022/12/01/guardians-of-the-galaxy-vol-3-1669932411159.jfif" },
-    { titulo: "Loki (Temporada 2)", categoria: "mcu-multiverso", tipo: "Serie", fichaTecnicaId: "loki-temporada-2", ordenSalida: 42, crono: 24.6, poster: "https://preview.redd.it/official-poster-for-loki-season-2-v0-mjczxxkptafb1.jpg?auto=webp&s=b52be74ed745f4c481074ffd739feb43c7c0214f" },
-    { titulo: "Echo", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 43, crono: 34, poster: "https://m.media-amazon.com/images/I/81f3aW-ovVL.jpg" },
-    { titulo: "Deadpool & Wolverine", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "deadpool-wolverine-2024", ordenSalida: 44, crono: 45, poster: "https://m.media-amazon.com/images/I/61AwaBKmGXL.jpg" },
-    { titulo: "Captain America: Brave New World", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "captain-america-brave-new-world", ordenSalida: 45, crono: 46, poster: "https://i.pinimg.com/736x/19/85/1d/19851d768bfcc73a6942ae30c69f03a8.jpg" },
-    { titulo: "Daredevil: Born Again", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 46, crono: 47, poster: "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/7f/Daredevil_Born_Again_Cracks_Tall_Poster.jpg/revision/latest/scale-to-width-down/1200?cb=20250416124716" },
-    { titulo: "Thunderbolts*", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "thunderbolts-2025", ordenSalida: 47, crono: 48, poster: "https://m.media-amazon.com/images/I/71Y2ZfgT+4L.jpg" },
-    { titulo: "The Fantastic Four: First Steps", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "fantastic-four-first-steps", ordenSalida: 48, crono: 51, poster: "https://brainstomping.com/wp-content/uploads/2025/07/fantastic-four-first-steps-primeros-pasos-cuatro-fantasticos-poster-marvel-mcu.jpg" },
-    { titulo: "Ojos de Wakanda", categoria: "mcu-multiverso", tipo: "Serie (Antología)", ordenSalida: 49, crono: 1, poster: "https://cdn.marvel.com/content/2x/eyesofwakanda_lob_crd_02.jpg" },
-    { titulo: "Wonder Man", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 50, crono: 49, poster: "https://cdn.marvel.com/content/2x/wonderman_lob_crd_03.jpg" },
-    { titulo: "Punisher: One Last Kill", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 51, crono: 50, poster: "https://cdn.marvel.com/content/2x/thepunisheronelastkill_lob_crd_01.jpg" },
-    { titulo: "Spider-Man: Brand New Day", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 52, crono: 52, fichaTecnicaId: "spider-man-brand-new-day-2026", poster: "https://m.media-amazon.com/images/M/MV5BOWNjYWM3NWItOGE0ZS00MWRjLThiZWEtYjc4ZmNmMmU5ZTVmXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "What If…?", categoria: "mcu-multiverso", tipo: "Serie", fichaTecnicaId: "what-if-2021", ordenSalida: 28, crono: 24.8, poster: "https://image.tmdb.org/t/p/original/qUf7OUIPMXqT1z3dKlGCGXoDeVY.jpg" },
+    { titulo: "Shang-Chi", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "shang-chi", ordenSalida: 29, crono: 31, poster: "https://m.media-amazon.com/images/I/81orh-NSiTL.jpg" },
+    { titulo: "Eternals", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "eternals", ordenSalida: 30, crono: 32, poster: "https://image.tmdb.org/t/p/original/vgUZo9aVvRvCQFXwZC9zq3qCZT9.jpg" },
+    { titulo: "Hawkeye", categoria: "mcu-multiverso", tipo: "Serie", fichaTecnicaId: "hawkeye-serie", ordenSalida: 31, crono: 33, poster: "https://lumiere-a.akamaihd.net/v1/images/unknown_61ca7b47.png" },
+    { titulo: "Spider-Man: No Way Home", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "spider-man-no-way-home", ordenSalida: 32, crono: 35, poster: "https://www.cinemascomics.com/wp-content/uploads/2022/01/poster-Spider-man-no-way-home.jpg" },
+    { titulo: "Moon Knight", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 33, crono: 36, poster: "https://m.media-amazon.com/images/I/71pAwt4KT6L.jpg" },
+    { titulo: "Dr. Strange: Multiverse of Madness", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "doctor-strange-multiverse-of-madness", ordenSalida: 34, crono: 37, poster: "https://img.buzzfeed.com/buzzfeed-static/static/2022-02/18/13/asset/e9954361afcd/sub-buzz-772-1645190837-7.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto" },
+    { titulo: "Ms. Marvel", categoria: "mcu-multiverso", tipo: "Serie", fichaTecnicaId: "ms-marvel-serie", ordenSalida: 35, crono: 38, poster: "https://lumiere-a.akamaihd.net/v1/images/ms_979c8372.jpeg" },
+    { titulo: "Thor: Love and Thunder", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "thor-love-and-thunder", ordenSalida: 36, crono: 39, poster: "https://lumiere-a.akamaihd.net/v1/images/fb83262af061c44d518c601e3956c3b4_2764x4096_e4f0eee2.jpeg" },
+    { titulo: "Yo Soy Groot", categoria: "mcu-multiverso", tipo: "Serie de Cortos", ordenSalida: 37, crono: 26, poster: "https://cdn.marvel.com/content/2x/iamgroot_lob_crd_04.jpg" },
+    { titulo: "She-Hulk: Attorney at Law", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 38, crono: 40, poster: "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/LXR4DQCCMFFW7CEWUE7QRUGJTU.jpg" },
+    { titulo: "Hombre Lobo por la Noche", categoria: "mcu-multiverso", tipo: "Especial", ordenSalida: 39, crono: 30, poster: "https://m.media-amazon.com/images/M/MV5BODUzMGFkYzgtYzhjNC00ZmFjLTg3ZTYtYWJkMWRjMzJmYTQ2XkEyXkFqcGc@.V1.jpg" },
+    { titulo: "Black Panther: Wakanda Forever", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "black-panther-wakanda-forever", ordenSalida: 40, crono: 41, poster: "https://artofthemovies.co.uk/cdn/shop/products/IMG_0184-338579.jpg?v=1668148930&width=900" },
+    { titulo: "Ant-Man and The Wasp: Quantumania", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "ant-man-quantumania", ordenSalida: 41, crono: 42, poster: "https://lumiere-a.akamaihd.net/v1/images/antman_b843a521.jpeg?region=0,0,658,898" },
+    { titulo: "Guardians of the Galaxy Vol. 3", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "guardians-of-the-galaxy-3", ordenSalida: 42, crono: 43, poster: "https://assets-prd.ignimgs.com/2022/12/01/guardians-of-the-galaxy-vol-3-1669932411159.jfif" },
+    { titulo: "Secret Invasion", categoria: "mcu-multiverso", tipo: "Serie", fichaTecnicaId: "secret-invasion-2023", ordenSalida: 43, crono: 43.5, poster: "https://image.tmdb.org/t/p/original/lRiWVbWHbtdufSboBKSpnUXTmkc.jpg" },
+    { titulo: "Loki (Temporada 2)", categoria: "mcu-multiverso", tipo: "Serie", fichaTecnicaId: "loki-temporada-2", ordenSalida: 44, crono: 24.6, poster: "https://preview.redd.it/official-poster-for-loki-season-2-v0-mjczxxkptafb1.jpg?auto=webp&s=b52be74ed745f4c481074ffd739feb43c7c0214f" },
+    { titulo: "The Marvels", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "the-marvels-1", ordenSalida: 45, crono: 44, poster: "https://cdn.marvel.com/content/2x/captain_marvel_2.webp" },
+    { titulo: "Echo", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 46, crono: 34, poster: "https://m.media-amazon.com/images/I/81f3aW-ovVL.jpg" },
+    { titulo: "Deadpool & Wolverine", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "deadpool-wolverine-2024", ordenSalida: 47, crono: 45, poster: "https://m.media-amazon.com/images/I/61AwaBKmGXL.jpg" },
+    { titulo: "Agatha All Along", categoria: "mcu-multiverso", tipo: "Serie", fichaTecnicaId: "agatha-all-along-2024", ordenSalida: 48, crono: 45.5, poster: "https://image.tmdb.org/t/p/original/qiTk8O471Rvrbq8u1wnBKh0ZqGo.jpg" },
+    { titulo: "Captain America: Brave New World", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "captain-america-brave-new-world", ordenSalida: 49, crono: 46, poster: "https://i.pinimg.com/736x/19/85/1d/19851d768bfcc73a6942ae30c69f03a8.jpg" },
+    { titulo: "Daredevil: Born Again", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 50, crono: 47, poster: "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/7f/Daredevil_Born_Again_Cracks_Tall_Poster.jpg/revision/latest/scale-to-width-down/1200?cb=20250416124716" },
+    { titulo: "Thunderbolts*", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "thunderbolts-2025", ordenSalida: 51, crono: 48, poster: "https://m.media-amazon.com/images/I/71Y2ZfgT+4L.jpg" },
+    { titulo: "Ironheart", categoria: "mcu-multiverso", tipo: "Serie", fichaTecnicaId: "ironheart-2025", ordenSalida: 52, crono: 41.5, poster: "https://image.tmdb.org/t/p/original/g20FzpntgR1yXfKB8ewTvEtSEPN.jpg" },
+    { titulo: "The Fantastic Four: First Steps", categoria: "mcu-multiverso", tipo: "Película", fichaTecnicaId: "fantastic-four-first-steps", ordenSalida: 53, crono: 51, poster: "https://brainstomping.com/wp-content/uploads/2025/07/fantastic-four-first-steps-primeros-pasos-cuatro-fantasticos-poster-marvel-mcu.jpg" },
+    { titulo: "Ojos de Wakanda", categoria: "mcu-multiverso", tipo: "Serie (Antología)", ordenSalida: 54, crono: 1, poster: "https://cdn.marvel.com/content/2x/eyesofwakanda_lob_crd_02.jpg" },
+    { titulo: "Wonder Man", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 55, crono: 49, poster: "https://cdn.marvel.com/content/2x/wonderman_lob_crd_03.jpg" },
+    { titulo: "Punisher: One Last Kill", categoria: "mcu-multiverso", tipo: "Serie", ordenSalida: 56, crono: 50, poster: "https://cdn.marvel.com/content/2x/thepunisheronelastkill_lob_crd_01.jpg" },
+    { titulo: "Spider-Man: Brand New Day", categoria: "mcu-multiverso", tipo: "Película", ordenSalida: 57, crono: 52, fichaTecnicaId: "spider-man-brand-new-day-2026", poster: "https://m.media-amazon.com/images/M/MV5BOWNjYWM3NWItOGE0ZS00MWRjLThiZWEtYjc4ZmNmMmU5ZTVmXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
 
     // --- ARROWVERSE ---
     // "Arrow" ahora es una ficha explorable con sus 8 temporadas (ver colecciones)
@@ -14931,7 +14936,7 @@ if (btnVolverFichaHawkeyeSerie) {
     }
 });
 
-['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023', 'arrietty-2010', 'the-impossible-2012', 'how-i-live-now-2013', 'wolf-hall-2015', 'in-the-heart-of-the-sea-2015', 'edge-of-winter-2016', 'the-lost-city-of-z-2016', 'pilgrimage-2017', 'the-current-war-2017', 'cherry-2021', 'onward-2020', 'chaos-walking-2021', 'uncharted-2022', 'dolittle-2020', 'the-devil-all-the-time-2020', 'marmaduke-2010', 'easy-a-2010', 'crazy-stupid-love-2011', 'the-amazing-spider-man-2012', 'gangster-squad-2013', 'movie-43-2013', 'the-amazing-spider-man-2-2014', 'friends-with-benefits-2011', 'the-help-2011', 'the-croods-2013', 'magic-in-the-moonlight-2014', 'birdman-2014', 'aloha-2015', 'irrational-man-2015', 'battle-of-the-sexes-2017', 'maniac-2018', 'the-favourite-2018', 'zombieland-double-tap-2019', 'superbad-2007', 'the-rocker-2008', 'the-house-bunny-2008', 'ghosts-of-girlfriends-past-2009', 'zombieland-2009', 'paper-man-2009', 'the-curse-2023', 'the-croods-a-new-age-2020', 'cruella-2021', 'poor-things-2023', 'kinds-of-kindness-2024', 'eddington-2025', 'bugonia-2025', 'palo-alto-2013', 'the-leftovers-2014', 'the-nice-guys-2016', 'death-note-2017', 'novitiate-2017', 'the-vanishing-of-sidney-hall-2017', 'donnybrook-2018', 'green-lantern-beware-my-power-2022', 'legion-of-super-heroes-2023', 'justice-league-warworld-2023', 'jl-crisis-infinite-earths-p1-2024', 'jl-crisis-infinite-earths-p2-2024', 'jl-crisis-infinite-earths-p3-2024', 'native-son-2019', 'fosse-verdon-2019', 'once-upon-a-time-in-hollywood-2019', 'adam-2019', 'strange-but-true-2019', 'seberg-2019', 'my-salinger-year-2020', 'maid-2021', 'stars-at-noon-2022', 'sanctuary-2022', 'drive-away-dolls-2024', 'the-substance-2024', 'happy-gilmore-2-2025', 'honey-dont-2025', 'blue-moon-2025', 'how-to-make-a-killing-2026', 'io-2019', 'the-dog-stars-2026', 'spider-man-brand-new-day-2026', 'marvel-zombies-serie-2025', 'we-live-in-time-2024', 'oppenheimer-2023', 'a-good-person-2023', 'the-wonder-2022', 'flashpoint-paradox-2013', 'justice-league-war-2014', 'son-of-batman-2014', 'throne-of-atlantis-2015', 'batman-vs-robin-2015', 'the-falling-2014', 'lady-macbeth-2016', 'outlaw-king-2018', 'malevolent-2018', 'fighting-with-my-family-2019', 'little-women-2019', 'batman-bad-blood-2016', 'justice-league-vs-teen-titans-2016', 'justice-league-dark-2017', 'teen-titans-judas-contract-2017', 'suicide-squad-hell-to-pay-2018', 'death-of-superman-2018', 'constantine-city-of-demons-2018', 'reign-of-the-supermen-2019', 'batman-hush-2019', 'wonder-woman-bloodlines-2019', 'justice-league-dark-apokolips-war-2020', 'midsommar-2019', 'the-commuter-2018', 'king-lear-2018', 'little-drummer-girl-2018', 'marcella-2016', 'suicide-squad-2016', 'wonder-woman-2017', 'justice-league-2017', 'ticket-to-paradise-2022', 'leave-the-world-behind-2023', 'after-the-hunt-2025', 'aquaman-2018', 'zack-snyders-justice-league-2021', 'shazam-2019', 'valentines-day-2010', 'eat-pray-love-2010'].forEach(id => {
+['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023', 'arrietty-2010', 'the-impossible-2012', 'how-i-live-now-2013', 'wolf-hall-2015', 'in-the-heart-of-the-sea-2015', 'edge-of-winter-2016', 'the-lost-city-of-z-2016', 'pilgrimage-2017', 'the-current-war-2017', 'cherry-2021', 'onward-2020', 'chaos-walking-2021', 'uncharted-2022', 'dolittle-2020', 'the-devil-all-the-time-2020', 'marmaduke-2010', 'easy-a-2010', 'crazy-stupid-love-2011', 'the-amazing-spider-man-2012', 'gangster-squad-2013', 'movie-43-2013', 'the-amazing-spider-man-2-2014', 'friends-with-benefits-2011', 'the-help-2011', 'the-croods-2013', 'magic-in-the-moonlight-2014', 'birdman-2014', 'aloha-2015', 'irrational-man-2015', 'battle-of-the-sexes-2017', 'maniac-2018', 'the-favourite-2018', 'zombieland-double-tap-2019', 'superbad-2007', 'the-rocker-2008', 'the-house-bunny-2008', 'ghosts-of-girlfriends-past-2009', 'zombieland-2009', 'paper-man-2009', 'the-curse-2023', 'the-croods-a-new-age-2020', 'cruella-2021', 'poor-things-2023', 'kinds-of-kindness-2024', 'eddington-2025', 'bugonia-2025', 'palo-alto-2013', 'the-leftovers-2014', 'the-nice-guys-2016', 'death-note-2017', 'novitiate-2017', 'the-vanishing-of-sidney-hall-2017', 'donnybrook-2018', 'green-lantern-beware-my-power-2022', 'legion-of-super-heroes-2023', 'justice-league-warworld-2023', 'jl-crisis-infinite-earths-p1-2024', 'jl-crisis-infinite-earths-p2-2024', 'jl-crisis-infinite-earths-p3-2024', 'native-son-2019', 'fosse-verdon-2019', 'once-upon-a-time-in-hollywood-2019', 'adam-2019', 'strange-but-true-2019', 'seberg-2019', 'my-salinger-year-2020', 'maid-2021', 'stars-at-noon-2022', 'sanctuary-2022', 'drive-away-dolls-2024', 'the-substance-2024', 'happy-gilmore-2-2025', 'honey-dont-2025', 'blue-moon-2025', 'how-to-make-a-killing-2026', 'io-2019', 'the-dog-stars-2026', 'spider-man-brand-new-day-2026', 'marvel-zombies-serie-2025', 'we-live-in-time-2024', 'oppenheimer-2023', 'a-good-person-2023', 'the-wonder-2022', 'flashpoint-paradox-2013', 'justice-league-war-2014', 'son-of-batman-2014', 'throne-of-atlantis-2015', 'batman-vs-robin-2015', 'the-falling-2014', 'lady-macbeth-2016', 'outlaw-king-2018', 'malevolent-2018', 'fighting-with-my-family-2019', 'little-women-2019', 'batman-bad-blood-2016', 'justice-league-vs-teen-titans-2016', 'justice-league-dark-2017', 'teen-titans-judas-contract-2017', 'suicide-squad-hell-to-pay-2018', 'death-of-superman-2018', 'constantine-city-of-demons-2018', 'reign-of-the-supermen-2019', 'batman-hush-2019', 'wonder-woman-bloodlines-2019', 'justice-league-dark-apokolips-war-2020', 'midsommar-2019', 'the-commuter-2018', 'king-lear-2018', 'little-drummer-girl-2018', 'marcella-2016', 'suicide-squad-2016', 'wonder-woman-2017', 'justice-league-2017', 'ticket-to-paradise-2022', 'leave-the-world-behind-2023', 'after-the-hunt-2025', 'aquaman-2018', 'zack-snyders-justice-league-2021', 'shazam-2019', 'valentines-day-2010', 'eat-pray-love-2010', 'agatha-all-along-2024', 'what-if-2021', 'secret-invasion-2023', 'ironheart-2025'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -15553,6 +15558,10 @@ const FICHAS_TECNICAS_TITULOS = {
     "shazam-2019": "Shazam!",
     "valentines-day-2010": "Valentine's Day",
     "eat-pray-love-2010": "Eat Pray Love",
+    "agatha-all-along-2024": "Agatha All Along",
+    "what-if-2021": "What If…?",
+    "secret-invasion-2023": "Secret Invasion",
+    "ironheart-2025": "Ironheart",
     "spies-in-disguise-2019": "Spies in Disguise",
     "the-crowded-room-2023": "The Crowded Room",
     "mio-in-the-land-of-faraway-1987": "Mio in the Land of Faraway",
@@ -19289,6 +19298,75 @@ const REPARTO_PELICULAS = {
             { actor: "Richard Jenkins", personaje: "Richard" },
             { actor: "Viola Davis", personaje: "Delia Shiraz" },
             { actor: "Billy Crudup", personaje: "Stephen" }
+        ]
+    },
+    "agatha-all-along-2024": {
+        director: "Jac Schaeffer (creadora), Rachel Goldberg, Gandja Monteiro",
+        elenco: [
+            { actor: "Kathryn Hahn", personaje: "Agatha Harkness" },
+            { actor: "Joe Locke", personaje: "Billy Maximoff / William Kaplan" },
+            { actor: "Aubrey Plaza", personaje: "Rio Vidal / La Muerte" },
+            { actor: "Sasheer Zamata", personaje: "Jennifer Kale" },
+            { actor: "Ali Ahn", personaje: "Alice Wu-Gulliver" },
+            { actor: "Patti LuPone", personaje: "Lilia Calderu" },
+            { actor: "Debra Jo Rupp", personaje: "Sharon Davis" },
+            { actor: "Okwui Okpokwasili", personaje: "Vertigo" },
+            { actor: "Paul Adelstein", personaje: "Jeff Kaplan" },
+            { actor: "Maria Dizzia", personaje: "Rebecca Kaplan" },
+            { actor: "Evan Peters", personaje: "Ralph Bohner" },
+            { actor: "Miles Gutierrez-Riley", personaje: "Eddie" }
+        ]
+    },
+    "what-if-2021": {
+        director: "A. C. Bradley (creación), Bryan Andrews",
+        elenco: [
+            { actor: "Jeffrey Wright", personaje: "El Vigilante (Uatu)" },
+            { actor: "Hayley Atwell", personaje: "Peggy Carter / Capitana Carter" },
+            { actor: "Chadwick Boseman", personaje: "T'Challa / Star-Lord" },
+            { actor: "Dominic Cooper", personaje: "Howard Stark" },
+            { actor: "Sean Gunn", personaje: "Kraglin Obfonteri" },
+            { actor: "Chris Hemsworth", personaje: "Thor" },
+            { actor: "Taika Waititi", personaje: "Korg" },
+            { actor: "Sebastian Stan", personaje: "Bucky Barnes / Soldado del Invierno" },
+            { actor: "Cate Blanchett", personaje: "Hela" },
+            { actor: "Benedict Cumberbatch", personaje: "Doctor Strange" },
+            { actor: "Tessa Thompson", personaje: "Valquiria" },
+            { actor: "Tom Hiddleston", personaje: "Loki" },
+            { actor: "Jon Favreau", personaje: "Happy Hogan" }
+        ]
+    },
+    "secret-invasion-2023": {
+        director: "Kyle Bradstreet (creador), Ali Selim",
+        elenco: [
+            { actor: "Samuel L. Jackson", personaje: "Nick Fury" },
+            { actor: "Ben Mendelsohn", personaje: "Talos" },
+            { actor: "Kingsley Ben-Adir", personaje: "Gravik" },
+            { actor: "Emilia Clarke", personaje: "G'iah" },
+            { actor: "Olivia Colman", personaje: "Sonya Falsworth" },
+            { actor: "Don Cheadle", personaje: "James \"Rhodey\" Rhodes / Raava" },
+            { actor: "Killian Scott", personaje: "Pagon" },
+            { actor: "Samuel Adewunmi", personaje: "Beto" },
+            { actor: "Dermot Mulroney", personaje: "Presidente Ritson" },
+            { actor: "Charlayne Woodard", personaje: "Varra / Priscilla Davis" },
+            { actor: "Christopher McDonald", personaje: "Chris Stearns" },
+            { actor: "Katie Finneran", personaje: "Rosa Dalton" },
+            { actor: "Richard Dormer", personaje: "Prescod" }
+        ]
+    },
+    "ironheart-2025": {
+        director: "Chinaka Hodge (creadora), Sam Bailey, Angela Barnes",
+        elenco: [
+            { actor: "Dominique Thorne", personaje: "Riri Williams / Ironheart" },
+            { actor: "Lyric Ross", personaje: "Natalie Washington / N.A.T.A.L.I.E." },
+            { actor: "Anthony Ramos", personaje: "Parker Robbins / El Encapuchado" },
+            { actor: "Alden Ehrenreich", personaje: "Ezekiel \"Zeke\" Stane" },
+            { actor: "Manny Montana", personaje: "John" },
+            { actor: "Matthew Elam", personaje: "Xavier Washington" },
+            { actor: "Anji White", personaje: "Ronnie Williams" },
+            { actor: "Jim Rash", personaje: "Profesor Wilkes" },
+            { actor: "Eric André", personaje: "Stuart Clarke / Rampage" },
+            { actor: "Cree Summer", personaje: "Madeline Stanton" },
+            { actor: "Sacha Baron Cohen", personaje: "Mephisto" }
         ]
     },
     "spies-in-disguise-2019": {
