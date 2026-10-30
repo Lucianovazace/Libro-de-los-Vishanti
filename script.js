@@ -1643,6 +1643,7 @@ const listaMedia = [
     { titulo: "Death Note", categoria: "margaret-qualley", subtipo: "2010", tipo: "Película", fichaTecnicaId: "death-note-2017", poster: "https://m.media-amazon.com/images/M/MV5BMTUwOTgzMTEyOF5BMl5BanBnXkFtZTgwNTk3MTM5MjI@._V1_.jpg" },
     { titulo: "Novitiate", categoria: "margaret-qualley", subtipo: "2010", tipo: "Película", fichaTecnicaId: "novitiate-2017", poster: "https://image.tmdb.org/t/p/original/gsKbQ6hlbo6VMH8GJN4wIrOVZMy.jpg" },
     { titulo: "The Vanishing of Sidney Hall", categoria: "margaret-qualley", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-vanishing-of-sidney-hall-2017", poster: "https://image.tmdb.org/t/p/original/e8SJJEliAK9g0EG5agPsbxWoWoI.jpg" },
+    { titulo: "Io", categoria: "margaret-qualley", subtipo: "2010", tipo: "Película", fichaTecnicaId: "io-2019", poster: "https://image.tmdb.org/t/p/w500/utH781EwjzzXQC6fZUO3cw8L5Ht.jpg" },
     { titulo: "Donnybrook", categoria: "margaret-qualley", subtipo: "2010", tipo: "Película", fichaTecnicaId: "donnybrook-2018", poster: "https://image.tmdb.org/t/p/w500/jcuEDKnM3uThdz7p0YYWFjMla73.jpg" },
     { titulo: "Native Son", categoria: "margaret-qualley", subtipo: "2010", tipo: "Película", fichaTecnicaId: "native-son-2019", poster: "https://image.tmdb.org/t/p/w500/vVF6CnjXLqAjK2crI1ielma18TW.jpg" },
     { titulo: "Fosse/Verdon", categoria: "margaret-qualley", subtipo: "2010", tipo: "Serie", fichaTecnicaId: "fosse-verdon-2019", poster: "https://image.tmdb.org/t/p/w500/rbHkfnaFBcMx90GRBzjCL8MPozo.jpg" },
@@ -1662,6 +1663,7 @@ const listaMedia = [
     { titulo: "Honey Don’t!", categoria: "margaret-qualley", subtipo: "2020", tipo: "Película", fichaTecnicaId: "honey-dont-2025", poster: "https://image.tmdb.org/t/p/w500/fJm3kmd9NLZWypMas7g34oNFgbk.jpg" },
     { titulo: "Blue Moon", categoria: "margaret-qualley", subtipo: "2020", tipo: "Película", fichaTecnicaId: "blue-moon-2025", poster: "https://image.tmdb.org/t/p/original/AetJmEIrhww0xnfktYgNl6ztDrl.jpg" },
     { titulo: "How to Make a Killing", categoria: "margaret-qualley", subtipo: "2020", tipo: "Película", fichaTecnicaId: "how-to-make-a-killing-2026", poster: "https://image.tmdb.org/t/p/w500/vxMeKC7o5Gi8IHMi6lUgsdprTqv.jpg" },
+    { titulo: "The Dog Stars", categoria: "margaret-qualley", subtipo: "2020", tipo: "Película", fichaTecnicaId: "the-dog-stars-2026", poster: "https://image.tmdb.org/t/p/original/A7i16oDi03qrKep5pBfuTWNUTb.jpg" },
 
     // --- JENNA ORTEGA (con filtros por década) ---
     { titulo: "The Babysitter: Killer Queen", categoria: "jenna-ortega", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BODk1ZmQ4ODItZjcwZi00MTUxLWE1YWMtMDY2NWJhNzJjMGEyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
@@ -14924,7 +14926,7 @@ if (btnVolverFichaHawkeyeSerie) {
     }
 });
 
-['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023', 'arrietty-2010', 'the-impossible-2012', 'how-i-live-now-2013', 'wolf-hall-2015', 'in-the-heart-of-the-sea-2015', 'edge-of-winter-2016', 'the-lost-city-of-z-2016', 'pilgrimage-2017', 'the-current-war-2017', 'cherry-2021', 'onward-2020', 'chaos-walking-2021', 'uncharted-2022', 'dolittle-2020', 'the-devil-all-the-time-2020', 'marmaduke-2010', 'easy-a-2010', 'crazy-stupid-love-2011', 'the-amazing-spider-man-2012', 'gangster-squad-2013', 'movie-43-2013', 'the-amazing-spider-man-2-2014', 'friends-with-benefits-2011', 'the-help-2011', 'the-croods-2013', 'magic-in-the-moonlight-2014', 'birdman-2014', 'aloha-2015', 'irrational-man-2015', 'battle-of-the-sexes-2017', 'maniac-2018', 'the-favourite-2018', 'zombieland-double-tap-2019', 'superbad-2007', 'the-rocker-2008', 'the-house-bunny-2008', 'ghosts-of-girlfriends-past-2009', 'zombieland-2009', 'paper-man-2009', 'the-curse-2023', 'the-croods-a-new-age-2020', 'cruella-2021', 'poor-things-2023', 'kinds-of-kindness-2024', 'eddington-2025', 'bugonia-2025', 'palo-alto-2013', 'the-leftovers-2014', 'the-nice-guys-2016', 'death-note-2017', 'novitiate-2017', 'the-vanishing-of-sidney-hall-2017', 'donnybrook-2018', 'green-lantern-beware-my-power-2022', 'legion-of-super-heroes-2023', 'justice-league-warworld-2023', 'jl-crisis-infinite-earths-p1-2024', 'jl-crisis-infinite-earths-p2-2024', 'jl-crisis-infinite-earths-p3-2024', 'native-son-2019', 'fosse-verdon-2019', 'once-upon-a-time-in-hollywood-2019', 'adam-2019', 'strange-but-true-2019', 'seberg-2019', 'my-salinger-year-2020', 'maid-2021', 'stars-at-noon-2022', 'sanctuary-2022', 'drive-away-dolls-2024', 'the-substance-2024', 'happy-gilmore-2-2025', 'honey-dont-2025', 'blue-moon-2025', 'how-to-make-a-killing-2026'].forEach(id => {
+['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023', 'arrietty-2010', 'the-impossible-2012', 'how-i-live-now-2013', 'wolf-hall-2015', 'in-the-heart-of-the-sea-2015', 'edge-of-winter-2016', 'the-lost-city-of-z-2016', 'pilgrimage-2017', 'the-current-war-2017', 'cherry-2021', 'onward-2020', 'chaos-walking-2021', 'uncharted-2022', 'dolittle-2020', 'the-devil-all-the-time-2020', 'marmaduke-2010', 'easy-a-2010', 'crazy-stupid-love-2011', 'the-amazing-spider-man-2012', 'gangster-squad-2013', 'movie-43-2013', 'the-amazing-spider-man-2-2014', 'friends-with-benefits-2011', 'the-help-2011', 'the-croods-2013', 'magic-in-the-moonlight-2014', 'birdman-2014', 'aloha-2015', 'irrational-man-2015', 'battle-of-the-sexes-2017', 'maniac-2018', 'the-favourite-2018', 'zombieland-double-tap-2019', 'superbad-2007', 'the-rocker-2008', 'the-house-bunny-2008', 'ghosts-of-girlfriends-past-2009', 'zombieland-2009', 'paper-man-2009', 'the-curse-2023', 'the-croods-a-new-age-2020', 'cruella-2021', 'poor-things-2023', 'kinds-of-kindness-2024', 'eddington-2025', 'bugonia-2025', 'palo-alto-2013', 'the-leftovers-2014', 'the-nice-guys-2016', 'death-note-2017', 'novitiate-2017', 'the-vanishing-of-sidney-hall-2017', 'donnybrook-2018', 'green-lantern-beware-my-power-2022', 'legion-of-super-heroes-2023', 'justice-league-warworld-2023', 'jl-crisis-infinite-earths-p1-2024', 'jl-crisis-infinite-earths-p2-2024', 'jl-crisis-infinite-earths-p3-2024', 'native-son-2019', 'fosse-verdon-2019', 'once-upon-a-time-in-hollywood-2019', 'adam-2019', 'strange-but-true-2019', 'seberg-2019', 'my-salinger-year-2020', 'maid-2021', 'stars-at-noon-2022', 'sanctuary-2022', 'drive-away-dolls-2024', 'the-substance-2024', 'happy-gilmore-2-2025', 'honey-dont-2025', 'blue-moon-2025', 'how-to-make-a-killing-2026', 'io-2019', 'the-dog-stars-2026'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -15500,6 +15502,8 @@ const FICHAS_TECNICAS_TITULOS = {
     "honey-dont-2025": "Honey Don’t!",
     "blue-moon-2025": "Blue Moon",
     "how-to-make-a-killing-2026": "How to Make a Killing",
+    "io-2019": "Io",
+    "the-dog-stars-2026": "The Dog Stars",
     "spies-in-disguise-2019": "Spies in Disguise",
     "the-crowded-room-2023": "The Crowded Room",
     "mio-in-the-land-of-faraway-1987": "Mio in the Land of Faraway",
@@ -18628,6 +18632,23 @@ const REPARTO_PELICULAS = {
             { actor: "Zach Woods", personaje: "Noah Redfellow" },
             { actor: "Topher Grace", personaje: "Pastor Steven J. Redfellow" },
             { actor: "Ed Harris", personaje: "Whitelaw Redfellow" }
+        ]
+    },
+    "io-2019": {
+        director: "Jonathan Helpert",
+        elenco: [
+            { actor: "Margaret Qualley", personaje: "Sam Walden" },
+            { actor: "Anthony Mackie", personaje: "Micah" },
+            { actor: "Danny Huston", personaje: "Dr. Harry Walden" }
+        ]
+    },
+    "the-dog-stars-2026": {
+        director: "Ridley Scott",
+        elenco: [
+            { actor: "Jacob Elordi", personaje: "Hig" },
+            { actor: "Josh Brolin", personaje: "Bangley" },
+            { actor: "Margaret Qualley", personaje: "Cima" },
+            { actor: "Guy Pearce", personaje: "Pops" }
         ]
     },
     "spies-in-disguise-2019": {
