@@ -252,6 +252,8 @@ const listaMedia = [
     { titulo: "Madame Web", categoria: "sony-ssu", tipo: "Película", fichaTecnicaId: "madame-web", poster: "https://m.media-amazon.com/images/S/pv-target-images/cb36ea6f3f53777aea24eec9d1560470e6c6d1f260abc72bcb13ae9bccfcb678.jpg" },
     { titulo: "Venom: The Last Dance", categoria: "sony-ssu", tipo: "Película", fichaTecnicaId: "venom-the-last-dance-2024", poster: "https://cdng.europosters.eu/pod_public/1300/316750.jpg" },
     { titulo: "Kraven the Hunter", categoria: "sony-ssu", tipo: "Película", fichaTecnicaId: "kraven-the-hunter-2024", poster: "https://www.infobae.com/new-resizer/TCpnPIXVaCBLAgI9qPNyP_LHIlI=/arc-anglerfish-arc2-prod-infobae/public/TIWZB56GRBGONDHJMXY5NJFWMY.jpg" },
+    { titulo: "Spider-Man: Into the Spider-Verse", categoria: "sony-spiderverse", tipo: "Película", fichaTecnicaId: "spider-man-into-the-spider-verse", poster: "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22300%22%20height%3D%22450%22%3E%3Crect%20width%3D%22300%22%20height%3D%22450%22%20fill%3D%22%231b1f3b%22/%3E%3Crect%20x%3D%2212%22%20y%3D%2212%22%20width%3D%22276%22%20height%3D%22426%22%20fill%3D%22none%22%20stroke%3D%22%23e23636%22%20stroke-width%3D%224%22/%3E%3Ctext%20x%3D%22150%22%20y%3D%22215%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20font-weight%3D%22bold%22%20text-anchor%3D%22middle%22%3ESpider-Man%3A%3C/text%3E%3Ctext%20x%3D%22150%22%20y%3D%22250%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%22%20font-size%3D%2222%22%20text-anchor%3D%22middle%22%3EInto%20the%20Spider-Verse%3C/text%3E%3C/svg%3E" },
+    { titulo: "Spider-Man: Across the Spider-Verse", categoria: "sony-spiderverse", tipo: "Película", fichaTecnicaId: "spider-man-across-the-spider-verse-2023", poster: "https://image.tmdb.org/t/p/original/3Ng6tqu3aaP00uh803vNN3iRXiE.jpg" },
 
     // --- DC COMICS (DCU, DCEU Principal, The Batman, Joker) ---
     { titulo: "The Suicide Squad", categoria: "dcu", tipo: "Película", fichaTecnicaId: "the-suicide-squad-2021", poster: "https://postercity.com.ar/wp-content/uploads/2021/10/the-SUICIDE-SQUAD-60-X-90.jpg" },
@@ -293,8 +295,8 @@ const listaMedia = [
     { titulo: "The Penguin", categoria: "the-batman", tipo: "Serie", fichaTecnicaId: "the-penguin-2024", poster: "https://m.media-amazon.com/images/I/81UqKIm2YhL.jpg" },
     
     // --- JOKER ---
-    { titulo: "Joker", categoria: "joker", tipo: "Película", poster: "https://i.ebayimg.com/images/g/rI0AAOSw89NiRZ6k/s-l1200.jpg" },
-    { titulo: "Joker: Folie à Deux", categoria: "joker", tipo: "Película", poster: "https://static.dc.com/2024-04/JOKER2_VERT_TSR_2764x4096_DOM.jpg" },
+    { titulo: "Joker", categoria: "joker", tipo: "Película", fichaTecnicaId: "joker-2019", poster: "https://i.ebayimg.com/images/g/rI0AAOSw89NiRZ6k/s-l1200.jpg" },
+    { titulo: "Joker: Folie à Deux", categoria: "joker", tipo: "Película", fichaTecnicaId: "joker-folie-a-deux-2024", poster: "https://static.dc.com/2024-04/JOKER2_VERT_TSR_2764x4096_DOM.jpg" },
 
     // --- DC ELSEWORLDS: MULTIVERSO ---
     // "Stargirl" ahora es una ficha explorable con sus 3 temporadas (ver colecciones)
@@ -1348,7 +1350,7 @@ const listaMedia = [
     { titulo: "1917", categoria: "oscar-2020", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYzkxZjg2NDQtMGVjMy00NWZkLTk0ZDEtZWE3NDYwYjAyMTg1XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
     { titulo: "Ford v Ferrari", categoria: "oscar-2020", subtipo: "mejor-pelicula", tipo: "Película", fichaTecnicaId: "ford-v-ferrari-2019", poster: "https://cdng.europosters.eu/pod_public/1300/322166.jpg" },
     { titulo: "Jojo Rabbit", categoria: "oscar-2020", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://cdng.europosters.eu/pod_public/1300/322216.jpg" },
-    { titulo: "Joker", categoria: "oscar-2020", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://i.ebayimg.com/images/g/rI0AAOSw89NiRZ6k/s-l1200.jpg" },
+    { titulo: "Joker", categoria: "oscar-2020", subtipo: "mejor-pelicula", tipo: "Película", fichaTecnicaId: "joker-2019", poster: "https://i.ebayimg.com/images/g/rI0AAOSw89NiRZ6k/s-l1200.jpg" },
     { titulo: "Little Women", categoria: "oscar-2020", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://m.media-amazon.com/images/I/61TK-+geKPL.AC_UF894,1000_QL80.jpg" },
     { titulo: "Historia de un Matrimonio", categoria: "oscar-2020", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://cdn.posteritati.com/posters/000/000/060/561/marriage-story-md-web.jpg" },
     { titulo: "Once Upon a Time in Hollywood", categoria: "oscar-2020", subtipo: "mejor-pelicula", tipo: "Película", poster: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2019/06/IMG_9717.jpeg" },
@@ -1392,7 +1394,7 @@ const listaMedia = [
     { titulo: "Spider-Man: Unlimited (Tierra-6513)", categoria: "marvel-animacion", tipo: "Serie", tierra: 6513, poster: "https://image.tmdb.org/t/p/original/hNdf1WmFil9IV7rabBe6PnAmYnI.jpg" },
     { titulo: "Spider-Man: The New Animated Series (Tierra-554)", categoria: "marvel-animacion", tipo: "Serie", tierra: 554, poster: "https://image.tmdb.org/t/p/original/9g1YPyKtpB0aNlgVb0N8YASKLZN.jpg" },
     { titulo: "The Spectacular Spider-Man (Tierra-26496)", categoria: "marvel-animacion", tipo: "Serie", tierra: 26496, poster: "https://image.tmdb.org/t/p/original/dCNxOhXT7c4lqYuRpdM3m8s9XDp.jpg" },
-    { titulo: "The Super-Hero Squad Show (Tierra-91119)", categoria: "marvel-animacion", tipo: "Serie", tierra: 91119, poster: "https://m.media-amazon.com/images/M/MV5BMGQ0NjI0MmUtMTU2NC00NjM4LWI5ZDEtOGU1MzI5YTRhYjhhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "The Super-Hero Squad Show (Tierra-91119)", categoria: "marvel-animacion", tipo: "Serie", tierra: 91119, fichaTecnicaId: "super-hero-squad-show-2009", poster: "https://m.media-amazon.com/images/M/MV5BMGQ0NjI0MmUtMTU2NC00NjM4LWI5ZDEtOGU1MzI5YTRhYjhhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
     { titulo: "The Avengers: United They Stand (Tierra-730784)", categoria: "marvel-animacion", tipo: "Serie", tierra: 730784, poster: "https://m.media-amazon.com/images/M/MV5BNDcxZjdjZTgtNDI5Ni00MDliLWFhZTYtZmQwYzdlNzA4YzYzXkEyXkFqcGc@._V1_.jpg" },
     { titulo: "Tu Amistoso Vecino Spider-Man (Tierra-86445)", categoria: "marvel-animacion", tipo: "Serie", tierra: 86445, poster: "https://www.movieposters.com/cdn/shop/files/your-friendly-neighborhood-spider-man_kthsshkb_1024x1024.jpg?v=1762978827" },
 
@@ -8068,6 +8070,7 @@ function renderizarContenido() {
         "sony-tobey": "seccion-sony-tobey",
         "sony-andrew": "seccion-sony-andrew",
         "sony-ssu": "seccion-sony-ssu",
+        "sony-spiderverse": "seccion-sony-spiderverse",
         "dcu": "seccion-dcu",
         "dceu-snyder": "seccion-dceu-snyder",
         "dceu-principal": "seccion-dceu-principal",
@@ -9852,6 +9855,7 @@ const botonesNavegacion = [
     { btn: 'btn-sony-tobey', sec: 'seccion-sony-tobey' },
     { btn: 'btn-sony-andrew', sec: 'seccion-sony-andrew' },
     { btn: 'btn-sony-ssu', sec: 'seccion-sony-ssu' },
+    { btn: 'btn-sony-spiderverse', sec: 'seccion-sony-spiderverse' },
     { btn: 'btn-dcu', sec: 'seccion-dcu' },
     { btn: 'btn-dceu-snyder', sec: 'seccion-dceu-snyder' },
     { btn: 'btn-dceu-principal', sec: 'seccion-dceu-principal' },
@@ -9897,7 +9901,8 @@ const ARBOL_NODOS = [
     { id: 'dd',     nombre: 'Daredevil y Elektra',      simbolo: 'DD', color: '#c4161c', btn: 'btn-fox-daredevil',   desde: 'L', logo: 'https://images.seeklogo.com/logo-png/22/2/daredevil-logo-png_seeklogo-226219.png' },
     { id: 'ssu',    nombre: 'Universo Spider-Man (SSU)', simbolo: '🕸️', color: '#6a3fb5', btn: 'btn-sony-ssu',       desde: 'R' },
     { id: 'andrew', nombre: 'Spider-Man (Andrew)',      simbolo: '🕷️', color: '#1c4e9e', btn: 'btn-sony-andrew',    desde: 'R' },
-    { id: 'tobey',  nombre: 'Spider-Man (Tobey)',       simbolo: '🕷️', color: '#c0281f', btn: 'btn-sony-tobey',     desde: 'R' }
+    { id: 'tobey',  nombre: 'Spider-Man (Tobey)',       simbolo: '🕷️', color: '#c0281f', btn: 'btn-sony-tobey',     desde: 'R' },
+    { id: 'spiderverse', nombre: 'Spider-Verse', simbolo: '🕸️', color: '#d12a5b', btn: 'btn-sony-spiderverse', desde: 'R' }
 ];
 // Dos distribuciones: escritorio (apaisada) y celular (vertical, con textos más grandes).
 // puntos = bifurcaciones; pos = posición de cada universo; ramitas = [desde, x, y] decorativas.
@@ -9905,13 +9910,13 @@ const ARBOL_LAYOUTS = {
     escritorio: {
         vb: [1000, 660], fuente: 15,
         puntos: { raiz: [500, 600], A: [500, 450], L: [280, 345], C: [500, 310], R: [725, 345] },
-        pos: { mcu: [500, 105], universal: [372, 215], xmen: [58, 220], ff: [290, 100], dd: [172, 200], ssu: [622, 212], andrew: [748, 112], tobey: [888, 205] },
+        pos: { mcu: [500, 105], universal: [372, 215], xmen: [58, 220], ff: [290, 100], dd: [172, 200], ssu: [622, 212], andrew: [748, 112], tobey: [888, 205], spiderverse: [930, 335] },
         ramitas: [['L', 60, 330], ['L', 150, 440], ['A', 330, 500], ['A', 660, 505], ['C', 565, 215], ['R', 860, 330], ['R', 820, 440], ['C', 440, 120], ['R', 690, 120]]
     },
     movil: {
         vb: [600, 960], fuente: 21,
         puntos: { raiz: [300, 880], A: [300, 740], L: [150, 650], C: [300, 620], R: [450, 650] },
-        pos: { mcu: [300, 95], dd: [218, 520], ff: [100, 235], andrew: [500, 235], universal: [180, 385], ssu: [420, 385], xmen: [68, 520], tobey: [525, 520] },
+        pos: { mcu: [300, 95], dd: [218, 520], ff: [100, 235], andrew: [500, 235], universal: [180, 385], ssu: [420, 385], xmen: [68, 520], tobey: [525, 520], spiderverse: [515, 690] },
         ramitas: [['L', 25, 600], ['L', 90, 760], ['A', 190, 830], ['A', 410, 830], ['C', 300, 330], ['R', 575, 640], ['R', 520, 770]]
     }
 };
@@ -14937,7 +14942,7 @@ if (btnVolverFichaHawkeyeSerie) {
     }
 });
 
-['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023', 'arrietty-2010', 'the-impossible-2012', 'how-i-live-now-2013', 'wolf-hall-2015', 'in-the-heart-of-the-sea-2015', 'edge-of-winter-2016', 'the-lost-city-of-z-2016', 'pilgrimage-2017', 'the-current-war-2017', 'cherry-2021', 'onward-2020', 'chaos-walking-2021', 'uncharted-2022', 'dolittle-2020', 'the-devil-all-the-time-2020', 'marmaduke-2010', 'easy-a-2010', 'crazy-stupid-love-2011', 'the-amazing-spider-man-2012', 'gangster-squad-2013', 'movie-43-2013', 'the-amazing-spider-man-2-2014', 'friends-with-benefits-2011', 'the-help-2011', 'the-croods-2013', 'magic-in-the-moonlight-2014', 'birdman-2014', 'aloha-2015', 'irrational-man-2015', 'battle-of-the-sexes-2017', 'maniac-2018', 'the-favourite-2018', 'zombieland-double-tap-2019', 'superbad-2007', 'the-rocker-2008', 'the-house-bunny-2008', 'ghosts-of-girlfriends-past-2009', 'zombieland-2009', 'paper-man-2009', 'the-curse-2023', 'the-croods-a-new-age-2020', 'cruella-2021', 'poor-things-2023', 'kinds-of-kindness-2024', 'eddington-2025', 'bugonia-2025', 'palo-alto-2013', 'the-leftovers-2014', 'the-nice-guys-2016', 'death-note-2017', 'novitiate-2017', 'the-vanishing-of-sidney-hall-2017', 'donnybrook-2018', 'green-lantern-beware-my-power-2022', 'legion-of-super-heroes-2023', 'justice-league-warworld-2023', 'jl-crisis-infinite-earths-p1-2024', 'jl-crisis-infinite-earths-p2-2024', 'jl-crisis-infinite-earths-p3-2024', 'native-son-2019', 'fosse-verdon-2019', 'once-upon-a-time-in-hollywood-2019', 'adam-2019', 'strange-but-true-2019', 'seberg-2019', 'my-salinger-year-2020', 'maid-2021', 'stars-at-noon-2022', 'sanctuary-2022', 'drive-away-dolls-2024', 'the-substance-2024', 'happy-gilmore-2-2025', 'honey-dont-2025', 'blue-moon-2025', 'how-to-make-a-killing-2026', 'io-2019', 'the-dog-stars-2026', 'spider-man-brand-new-day-2026', 'marvel-zombies-serie-2025', 'we-live-in-time-2024', 'oppenheimer-2023', 'a-good-person-2023', 'the-wonder-2022', 'flashpoint-paradox-2013', 'justice-league-war-2014', 'son-of-batman-2014', 'throne-of-atlantis-2015', 'batman-vs-robin-2015', 'the-falling-2014', 'lady-macbeth-2016', 'outlaw-king-2018', 'malevolent-2018', 'fighting-with-my-family-2019', 'little-women-2019', 'batman-bad-blood-2016', 'justice-league-vs-teen-titans-2016', 'justice-league-dark-2017', 'teen-titans-judas-contract-2017', 'suicide-squad-hell-to-pay-2018', 'death-of-superman-2018', 'constantine-city-of-demons-2018', 'reign-of-the-supermen-2019', 'batman-hush-2019', 'wonder-woman-bloodlines-2019', 'justice-league-dark-apokolips-war-2020', 'midsommar-2019', 'the-commuter-2018', 'king-lear-2018', 'little-drummer-girl-2018', 'marcella-2016', 'suicide-squad-2016', 'wonder-woman-2017', 'justice-league-2017', 'ticket-to-paradise-2022', 'leave-the-world-behind-2023', 'after-the-hunt-2025', 'aquaman-2018', 'zack-snyders-justice-league-2021', 'shazam-2019', 'valentines-day-2010', 'eat-pray-love-2010', 'agatha-all-along-2024', 'what-if-2021', 'secret-invasion-2023', 'ironheart-2025', 'clayface-2026', 'larry-crowne-2011', 'moon-knight-2022', 'i-am-groot-2022', 'she-hulk-attorney-at-law-2022', 'werewolf-by-night-2022', 'echo-2024', 'daredevil-born-again-2025', 'eyes-of-wakanda-2025', 'wonder-man-2026', 'punisher-one-last-kill-2026', 'birds-of-prey-2020', 'wonder-woman-1984', 'black-adam-2022', 'the-penguin-2024', 'shazam-fury-of-the-gods-2023', 'the-flash-2023', 'aquaman-and-the-lost-kingdom-2023', 'spider-man-2002', 'spider-man-2-2004', 'spider-man-3-2007', 'venom-let-there-be-carnage-2021', 'morbius-2022', 'venom-the-last-dance-2024', 'kraven-the-hunter-2024', 'fantastic-four-2005', 'fantastic-four-silver-surfer-2007', 'howard-the-duck-1986', 'hulk-2003'].forEach(id => {
+['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023', 'arrietty-2010', 'the-impossible-2012', 'how-i-live-now-2013', 'wolf-hall-2015', 'in-the-heart-of-the-sea-2015', 'edge-of-winter-2016', 'the-lost-city-of-z-2016', 'pilgrimage-2017', 'the-current-war-2017', 'cherry-2021', 'onward-2020', 'chaos-walking-2021', 'uncharted-2022', 'dolittle-2020', 'the-devil-all-the-time-2020', 'marmaduke-2010', 'easy-a-2010', 'crazy-stupid-love-2011', 'the-amazing-spider-man-2012', 'gangster-squad-2013', 'movie-43-2013', 'the-amazing-spider-man-2-2014', 'friends-with-benefits-2011', 'the-help-2011', 'the-croods-2013', 'magic-in-the-moonlight-2014', 'birdman-2014', 'aloha-2015', 'irrational-man-2015', 'battle-of-the-sexes-2017', 'maniac-2018', 'the-favourite-2018', 'zombieland-double-tap-2019', 'superbad-2007', 'the-rocker-2008', 'the-house-bunny-2008', 'ghosts-of-girlfriends-past-2009', 'zombieland-2009', 'paper-man-2009', 'the-curse-2023', 'the-croods-a-new-age-2020', 'cruella-2021', 'poor-things-2023', 'kinds-of-kindness-2024', 'eddington-2025', 'bugonia-2025', 'palo-alto-2013', 'the-leftovers-2014', 'the-nice-guys-2016', 'death-note-2017', 'novitiate-2017', 'the-vanishing-of-sidney-hall-2017', 'donnybrook-2018', 'green-lantern-beware-my-power-2022', 'legion-of-super-heroes-2023', 'justice-league-warworld-2023', 'jl-crisis-infinite-earths-p1-2024', 'jl-crisis-infinite-earths-p2-2024', 'jl-crisis-infinite-earths-p3-2024', 'native-son-2019', 'fosse-verdon-2019', 'once-upon-a-time-in-hollywood-2019', 'adam-2019', 'strange-but-true-2019', 'seberg-2019', 'my-salinger-year-2020', 'maid-2021', 'stars-at-noon-2022', 'sanctuary-2022', 'drive-away-dolls-2024', 'the-substance-2024', 'happy-gilmore-2-2025', 'honey-dont-2025', 'blue-moon-2025', 'how-to-make-a-killing-2026', 'io-2019', 'the-dog-stars-2026', 'spider-man-brand-new-day-2026', 'marvel-zombies-serie-2025', 'we-live-in-time-2024', 'oppenheimer-2023', 'a-good-person-2023', 'the-wonder-2022', 'flashpoint-paradox-2013', 'justice-league-war-2014', 'son-of-batman-2014', 'throne-of-atlantis-2015', 'batman-vs-robin-2015', 'the-falling-2014', 'lady-macbeth-2016', 'outlaw-king-2018', 'malevolent-2018', 'fighting-with-my-family-2019', 'little-women-2019', 'batman-bad-blood-2016', 'justice-league-vs-teen-titans-2016', 'justice-league-dark-2017', 'teen-titans-judas-contract-2017', 'suicide-squad-hell-to-pay-2018', 'death-of-superman-2018', 'constantine-city-of-demons-2018', 'reign-of-the-supermen-2019', 'batman-hush-2019', 'wonder-woman-bloodlines-2019', 'justice-league-dark-apokolips-war-2020', 'midsommar-2019', 'the-commuter-2018', 'king-lear-2018', 'little-drummer-girl-2018', 'marcella-2016', 'suicide-squad-2016', 'wonder-woman-2017', 'justice-league-2017', 'ticket-to-paradise-2022', 'leave-the-world-behind-2023', 'after-the-hunt-2025', 'aquaman-2018', 'zack-snyders-justice-league-2021', 'shazam-2019', 'valentines-day-2010', 'eat-pray-love-2010', 'agatha-all-along-2024', 'what-if-2021', 'secret-invasion-2023', 'ironheart-2025', 'clayface-2026', 'larry-crowne-2011', 'moon-knight-2022', 'i-am-groot-2022', 'she-hulk-attorney-at-law-2022', 'werewolf-by-night-2022', 'echo-2024', 'daredevil-born-again-2025', 'eyes-of-wakanda-2025', 'wonder-man-2026', 'punisher-one-last-kill-2026', 'birds-of-prey-2020', 'wonder-woman-1984', 'black-adam-2022', 'the-penguin-2024', 'shazam-fury-of-the-gods-2023', 'the-flash-2023', 'aquaman-and-the-lost-kingdom-2023', 'spider-man-2002', 'spider-man-2-2004', 'spider-man-3-2007', 'venom-let-there-be-carnage-2021', 'morbius-2022', 'venom-the-last-dance-2024', 'kraven-the-hunter-2024', 'fantastic-four-2005', 'fantastic-four-silver-surfer-2007', 'howard-the-duck-1986', 'hulk-2003', 'super-hero-squad-show-2009', 'spider-man-across-the-spider-verse-2023', 'joker-2019', 'joker-folie-a-deux-2024'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -15592,6 +15597,10 @@ const FICHAS_TECNICAS_TITULOS = {
     "fantastic-four-silver-surfer-2007": "Fantastic Four: Silver Surfer",
     "howard-the-duck-1986": "Howard The Duck",
     "hulk-2003": "Hulk (2003)",
+    "super-hero-squad-show-2009": "The Super-Hero Squad Show",
+    "spider-man-across-the-spider-verse-2023": "Spider-Man: Across the Spider-Verse",
+    "joker-2019": "Joker",
+    "joker-folie-a-deux-2024": "Joker: Folie à Deux",
     "spies-in-disguise-2019": "Spies in Disguise",
     "the-crowded-room-2023": "The Crowded Room",
     "mio-in-the-land-of-faraway-1987": "Mio in the Land of Faraway",
@@ -19731,6 +19740,59 @@ const REPARTO_PELICULAS = {
             { actor: "Nick Nolte", personaje: "David Banner" },
             { actor: "Sam Elliott", personaje: "General \"Thunderbolt\" Ross" },
             { actor: "Josh Lucas", personaje: "Glenn Talbot" }
+        ]
+    },
+    "super-hero-squad-show-2009": {
+        director: "Matt Wayne (desarrollador y guionista jefe), Mitch Schauer (director supervisor)",
+        elenco: [
+            { actor: "Tom Kenny", personaje: "Iron Man / Capitán América / M.O.D.O.K. (voz)" },
+            { actor: "Charlie Adler", personaje: "Doctor Doom (voz)" },
+            { actor: "Travis Willingham", personaje: "Hulk (voz)" },
+            { actor: "Steve Blum", personaje: "Wolverine (voz)" },
+            { actor: "Mikey Kelley", personaje: "Silver Surfer / Puño de Hierro (voz)" },
+            { actor: "Dave Boat", personaje: "Thor / La Cosa (voz)" },
+            { actor: "Tara Strong", personaje: "Bruja Escarlata / Mujer Invisible (voz)" },
+            { actor: "Grey DeLisle", personaje: "Ms. Marvel / Encantadora (voz)" },
+            { actor: "Jim Cummings", personaje: "Thanos (T2) / Antorcha Humana (voz)" },
+            { actor: "Stan Lee", personaje: "Alcalde de Super Hero City (voz)" }
+        ]
+    },
+    "spider-man-across-the-spider-verse-2023": {
+        director: "Joaquim Dos Santos, Kemp Powers, Justin K. Thompson",
+        elenco: [
+            { actor: "Shameik Moore", personaje: "Miles Morales / Spider-Man (voz)" },
+            { actor: "Hailee Steinfeld", personaje: "Gwen Stacy / Spider-Gwen (voz)" },
+            { actor: "Brian Tyree Henry", personaje: "Jefferson Davis (voz)" },
+            { actor: "Luna Lauren Vélez", personaje: "Rio Morales (voz)" },
+            { actor: "Jake Johnson", personaje: "Peter B. Parker (voz)" },
+            { actor: "Jason Schwartzman", personaje: "Jonathan Ohnn / The Spot (voz)" },
+            { actor: "Issa Rae", personaje: "Jessica Drew / Spider-Woman (voz)" },
+            { actor: "Karan Soni", personaje: "Pavitr Prabhakar / Spider-Man India (voz)" },
+            { actor: "Daniel Kaluuya", personaje: "Hobie Brown / Spider-Punk (voz)" },
+            { actor: "Greta Lee", personaje: "Lyla (voz)" },
+            { actor: "Oscar Isaac", personaje: "Miguel O'Hara / Spider-Man 2099 (voz)" }
+        ]
+    },
+    "joker-2019": {
+        director: "Todd Phillips",
+        elenco: [
+            { actor: "Joaquin Phoenix", personaje: "Arthur Fleck / Joker" },
+            { actor: "Robert De Niro", personaje: "Murray Franklin" },
+            { actor: "Zazie Beetz", personaje: "Sophie Dumond" },
+            { actor: "Frances Conroy", personaje: "Penny Fleck" },
+            { actor: "Brett Cullen", personaje: "Thomas Wayne" }
+        ]
+    },
+    "joker-folie-a-deux-2024": {
+        director: "Todd Phillips",
+        elenco: [
+            { actor: "Joaquin Phoenix", personaje: "Arthur Fleck / Joker" },
+            { actor: "Lady Gaga", personaje: "Harleen \"Lee\" Quinzel" },
+            { actor: "Brendan Gleeson", personaje: "Jackie Sullivan" },
+            { actor: "Catherine Keener", personaje: "Maryanne Stewart" },
+            { actor: "Zazie Beetz", personaje: "Sophie Dumond" },
+            { actor: "Harry Lawtey", personaje: "Harvey Dent" },
+            { actor: "Steve Coogan", personaje: "Paddy Meyers" }
         ]
     },
     "spies-in-disguise-2019": {
@@ -36107,7 +36169,7 @@ const MIRO_SAGAS = {
     'mcu-infinito': 'MCU: Saga del Infinito', 'mcu-multiverso': 'MCU: Saga del Multiverso', 'doomsday': 'MCU: Doomsday',
     'sw-liveaction': 'Star Wars: Live Action', 'sw-episodios': 'Star Wars: Episodios', 'sw-animacion': 'Star Wars: Animación',
     'dceu-principal': 'DCEU', 'dceu-snyder': 'Snyderverse', 'dcu': 'DCU', 'dc-multiverso': 'DC Multiverso', 'the-batman': 'The Batman',
-    'fox-xmen': 'X-Men (Fox)', 'fox-ff': 'Los 4 Fantásticos (Fox)', 'fox-daredevil': 'Daredevil y Elektra (Fox)', 'sony-ssu': 'Universo Spider-Man de Sony',
+    'fox-xmen': 'X-Men (Fox)', 'fox-ff': 'Los 4 Fantásticos (Fox)', 'fox-daredevil': 'Daredevil y Elektra (Fox)', 'sony-ssu': 'Universo Spider-Man de Sony', 'sony-spiderverse': 'Spider-Verse (Sony Animation)',
     'sony-tobey': 'Spider-Man (Tobey)', 'sony-andrew': 'The Amazing Spider-Man', 'matrix-saga': 'The Matrix',
     'saga-halloween': 'Saga Halloween', 'it': 'It', 'pokemon-canon': 'Pokémon (canon)', 'marvel-animacion': 'Marvel Animación',
     'joker': 'Joker', 'game-of-thrones': 'Game of Thrones'
