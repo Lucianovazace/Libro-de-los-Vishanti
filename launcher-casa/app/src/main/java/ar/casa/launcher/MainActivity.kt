@@ -14,6 +14,8 @@ import android.graphics.Typeface
 import android.graphics.drawable.Drawable
 import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
+import android.speech.tts.TextToSpeech
+import java.util.Locale
 import android.util.TypedValue
 import android.view.Gravity
 import android.view.MotionEvent
@@ -132,6 +134,22 @@ class MainActivity : Activity() {
         )
     )
 
+    private var tts: TextToSpeech? = null
+    private var ttsReady = false
+
+    private val defaultPhrases = mapOf(
+        "Modo cine" to "modo cine",
+        "Modo testamentos" to "modo testamentos",
+        "Alien" to "modo alien",
+        "Navidad" to "modo navidad",
+        "Luz normal" to "luz normal"
+    )
+
+    private fun phraseFor(t: Tile): String {
+        val key = "phrase_" + t.label
+        return if (prefs.contains(key)) (prefs.getString(key, "") ?: "") else (defaultPhrases[t.label] ?: "")
+    }
+
     private val prefs by lazy { getSharedPreferences("casa", Context.MODE_PRIVATE) }
 
     private val density by lazy { resources.displayMetrics.density }
@@ -151,6 +169,21 @@ class MainActivity : Activity() {
         root.addView(apps, ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT)
         setContentView(root)
         select(0)
+
+        tts = TextToSpeech(this) { status ->
+            if (status == TextToSpeech.SUCCESS) {
+                val r = tts?.setLanguage(Locale("es", "AR"))
+                if (r == TextToSpeech.LANG_MISSING_DATA || r == TextToSpeech.LANG_NOT_SUPPORTED) {
+                    tts?.setLanguage(Locale("es"))
+                }
+                ttsReady = true
+            }
+        }
+    }
+
+    override fun onDestroy() {
+        tts?.shutdown()
+        super.onDestroy()
     }
 
     override fun onResume() {
@@ -278,9 +311,14 @@ class MainActivity : Activity() {
     private fun select(index: Int) {
         val t = tiles[index]
         detailTitle.text = t.label
-        val linked = !prefs.getString("dev_" + t.label, "").isNullOrBlank()
-        val hint = if (linked) "Conectado a una rutina de Alexa. Mantene apretado para cambiarlo."
-        else "Mantene apretado para conectarlo con una rutina de Alexa."
+        val linked = !prefs.getString("dev_" + t.label, "").isNullOrBlank() &&
+            !prefs.getString("vm_token", "").isNullOrBlank()
+        val phrase = phraseFor(t)
+        val hint = when {
+            linked -> "Al tocar activa la rutina por Voice Monkey. Mantene apretado para cambiarlo."
+            phrase.isNotBlank() -> "Al tocar le dice a Alexa: \"" + phrase + "\". Mantene apretado para cambiarlo."
+            else -> "Al tocar abre la app. Mantene apretado para conectarlo con una rutina."
+        }
         detailText.text = t.detail + "\n\n" + hint
     }
 
@@ -289,6 +327,11 @@ class MainActivity : Activity() {
         val device = prefs.getString("dev_" + t.label, "") ?: ""
         if (token.isNotBlank() && device.isNotBlank()) {
             trigger(t, token, device)
+            return
+        }
+        val phrase = phraseFor(t)
+        if (phrase.isNotBlank()) {
+            speakToAlexa(phrase)
             return
         }
         for (p in t.packages) {
@@ -307,6 +350,17 @@ class MainActivity : Activity() {
             }
         }
         Toast.makeText(this, "No encontre la app para \"${t.label}\"", Toast.LENGTH_SHORT).show()
+    }
+
+    private fun speakToAlexa(phrase: String) {
+        val engine = tts
+        if (engine == null || !ttsReady) {
+            Toast.makeText(this, "La voz del celular todavia no esta lista. Proba de nuevo.", Toast.LENGTH_SHORT).show()
+            return
+        }
+        Toast.makeText(this, "Le digo a Alexa: " + phrase, Toast.LENGTH_SHORT).show()
+        engine.playSilentUtterance(500, TextToSpeech.QUEUE_FLUSH, "pre")
+        engine.speak("Alexa, " + phrase, TextToSpeech.QUEUE_ADD, null, "casa")
     }
 
     private fun trigger(t: Tile, token: String, device: String) {
@@ -343,17 +397,24 @@ class MainActivity : Activity() {
         device.inputType = InputType.TYPE_CLASS_TEXT
         device.setText(prefs.getString("dev_" + t.label, ""))
 
+        val phrase = EditText(this)
+        phrase.hint = "Frase para decirle a Alexa (ej: modo cine)"
+        phrase.inputType = InputType.TYPE_CLASS_TEXT
+        phrase.setText(phraseFor(t))
+
+        box.addView(phrase)
         box.addView(token)
         box.addView(device)
 
         AlertDialog.Builder(this)
             .setTitle(t.label)
-            .setMessage("Si dejas el ID vacio, el tile vuelve a abrir la app.")
+            .setMessage("Al tocar, el celular le dice la frase a Alexa en voz alta (tiene que estar cerca del Echo). Si cargas Voice Monkey, usa eso. Sin frase ni ID, abre la app.")
             .setView(box)
             .setPositiveButton("Guardar") { _, _ ->
                 prefs.edit()
                     .putString("vm_token", token.text.toString().trim())
                     .putString("dev_" + t.label, device.text.toString().trim())
+                    .putString("phrase_" + t.label, phrase.text.toString().trim())
                     .apply()
                 val idx = tiles.indexOf(t)
                 if (idx >= 0) select(idx)
