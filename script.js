@@ -356,8 +356,8 @@ const listaMedia = [
     { titulo: "Star Wars: Episodio VI - El Retorno del Jedi", categoria: "sw-liveaction", crono: 16, tipo: "Película", fichaTecnicaId: "sw-episodio-6", poster: "https://static.wikia.nocookie.net/esstarwars/images/b/b2/ReturnOfTheJediPoster1983.jpg/revision/latest?cb=20200623214315" },
     { titulo: "The Mandalorian", categoria: "sw-liveaction", crono: 17, tipo: "Serie", poster: "https://lumiere-a.akamaihd.net/v1/images/image_09049f79.jpeg" },
     { titulo: "The Book of Boba Fett", categoria: "sw-liveaction", crono: 18, tipo: "Serie", poster: "https://m.media-amazon.com/images/I/610KLfk0DZL.jpg" },
-    { titulo: "Ahsoka", categoria: "sw-liveaction", crono: 19, tipo: "Serie", poster: "https://lumiere-a.akamaihd.net/v1/images/ahsoka-character-posters-ahsoka_bb400512.jpeg?width=1136" },
-    { titulo: "Skeleton Crew", categoria: "sw-liveaction", crono: 20, tipo: "Serie", poster: "https://lumiere-a.akamaihd.net/v1/images/skeleton-crew-teaster-poster-4866453125478789_3179e794.jpeg?region=0,0,729,1080" },
+    { titulo: "Ahsoka", categoria: "sw-liveaction", crono: 19, tipo: "Serie", fichaTecnicaId: "ahsoka-2023", poster: "https://lumiere-a.akamaihd.net/v1/images/ahsoka-character-posters-ahsoka_bb400512.jpeg?width=1136" },
+    { titulo: "Skeleton Crew", categoria: "sw-liveaction", crono: 20, tipo: "Serie", fichaTecnicaId: "skeleton-crew-2024", poster: "https://lumiere-a.akamaihd.net/v1/images/skeleton-crew-teaster-poster-4866453125478789_3179e794.jpeg?region=0,0,729,1080" },
     { titulo: "Star Wars: Episodio VII - El Despertar de la Fuerza", categoria: "sw-liveaction", crono: 22, tipo: "Película", fichaTecnicaId: "sw-episodio-7", poster: "https://lumiere-a.akamaihd.net/v1/images/image_34e17244.jpeg" },
     { titulo: "Star Wars: Episodio VIII - Los Últimos Jedi", categoria: "sw-liveaction", crono: 23, tipo: "Película", fichaTecnicaId: "sw-episodio-8", poster: "https://lumiere-a.akamaihd.net/v1/images/image_b81e5aed.jpeg" },
     { titulo: "Star Wars: Episodio IX - El Ascenso de Skywalker", categoria: "sw-liveaction", crono: 24, tipo: "Película", fichaTecnicaId: "sw-episodio-9", poster: "https://ew.com/thmb/ET-SRSQ4HIdJuBOZ7mAKXWOc3aQ=/2000x0/filters:no_upscale():max_bytes(150000):strip_icc()/ecwe_nmu0aaqbms-2000-7ab12ead751644029b8235a49bdf9906.jpg" },
@@ -371,7 +371,7 @@ const listaMedia = [
     { titulo: "Star Wars Rebels", categoria: "sw-animacion", crono: 11, tipo: "Serie", poster: "https://image.tmdb.org/t/p/original/eLrScs6Bs26JMcS8hiZhf7YRROr.jpg" },
     { titulo: "Star Wars: Tales of the Empire", categoria: "sw-animacion", crono: 18.5, tipo: "Serie (Antología)", poster: "https://lumiere-a.akamaihd.net/v1/images/tales-of-the-empire-key-art_2b34360a.jpeg?region=0,0,1688,2500" },
     { titulo: "Star Wars Resistance", categoria: "sw-animacion", crono: 21, tipo: "Serie", poster: "https://m.media-amazon.com/images/M/MV5BMTkyMTc3NjAwNF5BMl5BanBnXkFtZTgwNTU1ODIyNjM@.V1.jpg" },
-    { titulo: "LEGO Star Wars: Terrifying Tales", categoria: "sw-animacion", crono: 25, tipo: "Especial", poster: "https://lumiere-a.akamaihd.net/v1/images/image_6c11e3f5.jpeg?region=0,0,675,1000" },
+    { titulo: "LEGO Star Wars: Terrifying Tales", categoria: "sw-animacion", crono: 25, tipo: "Especial", fichaTecnicaId: "lego-sw-terrifying-tales", poster: "https://lumiere-a.akamaihd.net/v1/images/image_6c11e3f5.jpeg?region=0,0,675,1000" },
     { titulo: "LEGO Star Wars Holiday Special", categoria: "sw-animacion", crono: 26, tipo: "Especial", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS29ejXflK4z26fTsqGHjefu3vSJ2xatkwqtEVLO9U-rBdaX0bXX3GhiRI&s=10" },
     { titulo: "LEGO Star Wars: La Reconstrucción de la Galaxia", categoria: "sw-animacion", crono: 27, tipo: "Especial", poster: "https://lumiere-a.akamaihd.net/v1/images/lego-star-wars-rebuild-the-galaxy-sith_100358bf.jpeg" },
     { titulo: "LEGO Star Wars: La Reconstrucción de la Galaxia: Piezas del Pasado", categoria: "sw-animacion", crono: 28, tipo: "Especial", poster: "https://www.lucasfilm.com/app/uploads/lego-rebuild-the-galaxy-pieces-of-the-past-lfl-480x711.jpg" },
@@ -1688,6 +1688,7 @@ const listaMedia = [
     { titulo: "Star Wars: Episodio IX - El Ascenso de Skywalker", categoria: "ewan-mcgregor", subtipo: "2010", tipo: "Película", fichaTecnicaId: "sw-episodio-9", poster: "https://ew.com/thmb/ET-SRSQ4HIdJuBOZ7mAKXWOc3aQ=/2000x0/filters:no_upscale():max_bytes(150000):strip_icc()/ecwe_nmu0aaqbms-2000-7ab12ead751644029b8235a49bdf9906.jpg" },
     { titulo: "Birds of Prey and The Fantabulous Emancipation of One Harley Quinn", categoria: "ewan-mcgregor", subtipo: "2020", tipo: "Película", fichaTecnicaId: "birds-of-prey-2020", poster: "https://ew.com/thmb/sT-h3pYSc53fKCWxtv5ro4Midno=/2000x0/filters:no_upscale():max_bytes(150000):strip_icc()/birds-of-prey-2000-90f0db5838084a8a8c2eca14edd37e1f.jpg" },
     { titulo: "Obi-Wan Kenobi", categoria: "ewan-mcgregor", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "obi-wan-kenobi", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Ea5Zhl73NttD-fuEjBpy5zvc0CHgbAK65cdKieScq9sYL53sOtIFfaMO&s=10" },
+    { titulo: "Halston", categoria: "ewan-mcgregor", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "halston-2021", poster: "https://image.tmdb.org/t/p/w500/uBRpPFcYAYLM7V3x6x7bP3Ucumj.jpg" },
 
     // --- JENNA ORTEGA (con filtros por década) ---
     { titulo: "The Babysitter: Killer Queen", categoria: "jenna-ortega", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BODk1ZmQ4ODItZjcwZi00MTUxLWE1YWMtMDY2NWJhNzJjMGEyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
@@ -5163,9 +5164,9 @@ const colecciones = [
         esSerie: true,
         crono: 7,
         peliculas: [
-            { titulo: "The Bad Batch Temporada 1", poster: "https://lumiere-a.akamaihd.net/v1/images/image_960b1844.jpeg" },
-            { titulo: "The Bad Batch Temporada 2", poster: "https://image.tmdb.org/t/p/w500/8ioSHilMhFczEYipgkaXI1KykeV.jpg" },
-            { titulo: "The Bad Batch Temporada 3", poster: "https://m.media-amazon.com/images/M/MV5BYmQzN2ViOTYtMWUxMy00YzdlLWEzZjktOWVjY2YzN2RiN2Q5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" }
+            { titulo: "The Bad Batch Temporada 1", fichaTecnicaId: "star-wars-the-bad-batch", poster: "https://lumiere-a.akamaihd.net/v1/images/image_960b1844.jpeg" },
+            { titulo: "The Bad Batch Temporada 2", fichaTecnicaId: "star-wars-the-bad-batch", poster: "https://image.tmdb.org/t/p/w500/8ioSHilMhFczEYipgkaXI1KykeV.jpg" },
+            { titulo: "The Bad Batch Temporada 3", fichaTecnicaId: "star-wars-the-bad-batch", poster: "https://m.media-amazon.com/images/M/MV5BYmQzN2ViOTYtMWUxMy00YzdlLWEzZjktOWVjY2YzN2RiN2Q5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" }
         ]
     },
     {
@@ -14972,7 +14973,7 @@ if (btnVolverFichaHawkeyeSerie) {
     }
 });
 
-['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023', 'arrietty-2010', 'the-impossible-2012', 'how-i-live-now-2013', 'wolf-hall-2015', 'in-the-heart-of-the-sea-2015', 'edge-of-winter-2016', 'the-lost-city-of-z-2016', 'pilgrimage-2017', 'the-current-war-2017', 'cherry-2021', 'onward-2020', 'chaos-walking-2021', 'uncharted-2022', 'dolittle-2020', 'the-devil-all-the-time-2020', 'marmaduke-2010', 'easy-a-2010', 'crazy-stupid-love-2011', 'the-amazing-spider-man-2012', 'gangster-squad-2013', 'movie-43-2013', 'the-amazing-spider-man-2-2014', 'friends-with-benefits-2011', 'the-help-2011', 'the-croods-2013', 'magic-in-the-moonlight-2014', 'birdman-2014', 'aloha-2015', 'irrational-man-2015', 'battle-of-the-sexes-2017', 'maniac-2018', 'the-favourite-2018', 'zombieland-double-tap-2019', 'superbad-2007', 'the-rocker-2008', 'the-house-bunny-2008', 'ghosts-of-girlfriends-past-2009', 'zombieland-2009', 'paper-man-2009', 'the-curse-2023', 'the-croods-a-new-age-2020', 'cruella-2021', 'poor-things-2023', 'kinds-of-kindness-2024', 'eddington-2025', 'bugonia-2025', 'palo-alto-2013', 'the-leftovers-2014', 'the-nice-guys-2016', 'death-note-2017', 'novitiate-2017', 'the-vanishing-of-sidney-hall-2017', 'donnybrook-2018', 'green-lantern-beware-my-power-2022', 'legion-of-super-heroes-2023', 'justice-league-warworld-2023', 'jl-crisis-infinite-earths-p1-2024', 'jl-crisis-infinite-earths-p2-2024', 'jl-crisis-infinite-earths-p3-2024', 'native-son-2019', 'fosse-verdon-2019', 'once-upon-a-time-in-hollywood-2019', 'adam-2019', 'strange-but-true-2019', 'seberg-2019', 'my-salinger-year-2020', 'maid-2021', 'stars-at-noon-2022', 'sanctuary-2022', 'drive-away-dolls-2024', 'the-substance-2024', 'happy-gilmore-2-2025', 'honey-dont-2025', 'blue-moon-2025', 'how-to-make-a-killing-2026', 'io-2019', 'the-dog-stars-2026', 'spider-man-brand-new-day-2026', 'marvel-zombies-serie-2025', 'we-live-in-time-2024', 'oppenheimer-2023', 'a-good-person-2023', 'the-wonder-2022', 'flashpoint-paradox-2013', 'justice-league-war-2014', 'son-of-batman-2014', 'throne-of-atlantis-2015', 'batman-vs-robin-2015', 'the-falling-2014', 'lady-macbeth-2016', 'outlaw-king-2018', 'malevolent-2018', 'fighting-with-my-family-2019', 'little-women-2019', 'batman-bad-blood-2016', 'justice-league-vs-teen-titans-2016', 'justice-league-dark-2017', 'teen-titans-judas-contract-2017', 'suicide-squad-hell-to-pay-2018', 'death-of-superman-2018', 'constantine-city-of-demons-2018', 'reign-of-the-supermen-2019', 'batman-hush-2019', 'wonder-woman-bloodlines-2019', 'justice-league-dark-apokolips-war-2020', 'midsommar-2019', 'the-commuter-2018', 'king-lear-2018', 'little-drummer-girl-2018', 'marcella-2016', 'suicide-squad-2016', 'wonder-woman-2017', 'justice-league-2017', 'ticket-to-paradise-2022', 'leave-the-world-behind-2023', 'after-the-hunt-2025', 'aquaman-2018', 'zack-snyders-justice-league-2021', 'shazam-2019', 'valentines-day-2010', 'eat-pray-love-2010', 'agatha-all-along-2024', 'what-if-2021', 'secret-invasion-2023', 'ironheart-2025', 'clayface-2026', 'larry-crowne-2011', 'moon-knight-2022', 'i-am-groot-2022', 'she-hulk-attorney-at-law-2022', 'werewolf-by-night-2022', 'echo-2024', 'daredevil-born-again-2025', 'eyes-of-wakanda-2025', 'wonder-man-2026', 'punisher-one-last-kill-2026', 'birds-of-prey-2020', 'wonder-woman-1984', 'black-adam-2022', 'the-penguin-2024', 'shazam-fury-of-the-gods-2023', 'the-flash-2023', 'aquaman-and-the-lost-kingdom-2023', 'spider-man-2002', 'spider-man-2-2004', 'spider-man-3-2007', 'venom-let-there-be-carnage-2021', 'morbius-2022', 'venom-the-last-dance-2024', 'kraven-the-hunter-2024', 'fantastic-four-2005', 'fantastic-four-silver-surfer-2007', 'howard-the-duck-1986', 'hulk-2003', 'super-hero-squad-show-2009', 'spider-man-across-the-spider-verse-2023', 'joker-2019', 'joker-folie-a-deux-2024', 'following-1998', 'memento-2000', 'insomnia-2002', 'inception-2010', 'interstellar-2014', 'dunkirk-2017', 'tenet-2020', 'the-odyssey-2026'].forEach(id => {
+['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023', 'arrietty-2010', 'the-impossible-2012', 'how-i-live-now-2013', 'wolf-hall-2015', 'in-the-heart-of-the-sea-2015', 'edge-of-winter-2016', 'the-lost-city-of-z-2016', 'pilgrimage-2017', 'the-current-war-2017', 'cherry-2021', 'onward-2020', 'chaos-walking-2021', 'uncharted-2022', 'dolittle-2020', 'the-devil-all-the-time-2020', 'marmaduke-2010', 'easy-a-2010', 'crazy-stupid-love-2011', 'the-amazing-spider-man-2012', 'gangster-squad-2013', 'movie-43-2013', 'the-amazing-spider-man-2-2014', 'friends-with-benefits-2011', 'the-help-2011', 'the-croods-2013', 'magic-in-the-moonlight-2014', 'birdman-2014', 'aloha-2015', 'irrational-man-2015', 'battle-of-the-sexes-2017', 'maniac-2018', 'the-favourite-2018', 'zombieland-double-tap-2019', 'superbad-2007', 'the-rocker-2008', 'the-house-bunny-2008', 'ghosts-of-girlfriends-past-2009', 'zombieland-2009', 'paper-man-2009', 'the-curse-2023', 'the-croods-a-new-age-2020', 'cruella-2021', 'poor-things-2023', 'kinds-of-kindness-2024', 'eddington-2025', 'bugonia-2025', 'palo-alto-2013', 'the-leftovers-2014', 'the-nice-guys-2016', 'death-note-2017', 'novitiate-2017', 'the-vanishing-of-sidney-hall-2017', 'donnybrook-2018', 'green-lantern-beware-my-power-2022', 'legion-of-super-heroes-2023', 'justice-league-warworld-2023', 'jl-crisis-infinite-earths-p1-2024', 'jl-crisis-infinite-earths-p2-2024', 'jl-crisis-infinite-earths-p3-2024', 'native-son-2019', 'fosse-verdon-2019', 'once-upon-a-time-in-hollywood-2019', 'adam-2019', 'strange-but-true-2019', 'seberg-2019', 'my-salinger-year-2020', 'maid-2021', 'stars-at-noon-2022', 'sanctuary-2022', 'drive-away-dolls-2024', 'the-substance-2024', 'happy-gilmore-2-2025', 'honey-dont-2025', 'blue-moon-2025', 'how-to-make-a-killing-2026', 'io-2019', 'the-dog-stars-2026', 'spider-man-brand-new-day-2026', 'marvel-zombies-serie-2025', 'we-live-in-time-2024', 'oppenheimer-2023', 'a-good-person-2023', 'the-wonder-2022', 'flashpoint-paradox-2013', 'justice-league-war-2014', 'son-of-batman-2014', 'throne-of-atlantis-2015', 'batman-vs-robin-2015', 'the-falling-2014', 'lady-macbeth-2016', 'outlaw-king-2018', 'malevolent-2018', 'fighting-with-my-family-2019', 'little-women-2019', 'batman-bad-blood-2016', 'justice-league-vs-teen-titans-2016', 'justice-league-dark-2017', 'teen-titans-judas-contract-2017', 'suicide-squad-hell-to-pay-2018', 'death-of-superman-2018', 'constantine-city-of-demons-2018', 'reign-of-the-supermen-2019', 'batman-hush-2019', 'wonder-woman-bloodlines-2019', 'justice-league-dark-apokolips-war-2020', 'midsommar-2019', 'the-commuter-2018', 'king-lear-2018', 'little-drummer-girl-2018', 'marcella-2016', 'suicide-squad-2016', 'wonder-woman-2017', 'justice-league-2017', 'ticket-to-paradise-2022', 'leave-the-world-behind-2023', 'after-the-hunt-2025', 'aquaman-2018', 'zack-snyders-justice-league-2021', 'shazam-2019', 'valentines-day-2010', 'eat-pray-love-2010', 'agatha-all-along-2024', 'what-if-2021', 'secret-invasion-2023', 'ironheart-2025', 'clayface-2026', 'larry-crowne-2011', 'moon-knight-2022', 'i-am-groot-2022', 'she-hulk-attorney-at-law-2022', 'werewolf-by-night-2022', 'echo-2024', 'daredevil-born-again-2025', 'eyes-of-wakanda-2025', 'wonder-man-2026', 'punisher-one-last-kill-2026', 'birds-of-prey-2020', 'wonder-woman-1984', 'black-adam-2022', 'the-penguin-2024', 'shazam-fury-of-the-gods-2023', 'the-flash-2023', 'aquaman-and-the-lost-kingdom-2023', 'spider-man-2002', 'spider-man-2-2004', 'spider-man-3-2007', 'venom-let-there-be-carnage-2021', 'morbius-2022', 'venom-the-last-dance-2024', 'kraven-the-hunter-2024', 'fantastic-four-2005', 'fantastic-four-silver-surfer-2007', 'howard-the-duck-1986', 'hulk-2003', 'super-hero-squad-show-2009', 'spider-man-across-the-spider-verse-2023', 'joker-2019', 'joker-folie-a-deux-2024', 'following-1998', 'memento-2000', 'insomnia-2002', 'inception-2010', 'interstellar-2014', 'dunkirk-2017', 'tenet-2020', 'the-odyssey-2026', 'ahsoka-2023', 'skeleton-crew-2024', 'star-wars-the-bad-batch', 'halston-2021'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -15639,6 +15640,10 @@ const FICHAS_TECNICAS_TITULOS = {
     "dunkirk-2017": "Dunkirk",
     "tenet-2020": "Tenet",
     "the-odyssey-2026": "The Odyssey",
+    "ahsoka-2023": "Ahsoka",
+    "skeleton-crew-2024": "Skeleton Crew",
+    "star-wars-the-bad-batch": "The Bad Batch",
+    "halston-2021": "Halston",
     "spies-in-disguise-2019": "Spies in Disguise",
     "the-crowded-room-2023": "The Crowded Room",
     "mio-in-the-land-of-faraway-1987": "Mio in the Land of Faraway",
@@ -19942,6 +19947,61 @@ const REPARTO_PELICULAS = {
             { actor: "Elliot Page", personaje: "Sinón" },
             { actor: "Benny Safdie", personaje: "Agamenón" },
             { actor: "John Leguizamo", personaje: "Eumeo" }
+        ]
+    },
+    "ahsoka-2023": {
+        director: "Dave Filoni (creador), Steph Green, Peter Ramsey, Jennifer Getzinger, Geeta Vasant Patel, Rick Famuyiwa",
+        elenco: [
+            { actor: "Rosario Dawson", personaje: "Ahsoka Tano" },
+            { actor: "Natasha Liu Bordizzo", personaje: "Sabine Wren" },
+            { actor: "Mary Elizabeth Winstead", personaje: "Hera Syndulla" },
+            { actor: "Ray Stevenson", personaje: "Baylan Skoll" },
+            { actor: "Ivanna Sakhno", personaje: "Shin Hati" },
+            { actor: "Diana Lee Inosanto", personaje: "Morgan Elsbeth" },
+            { actor: "David Tennant", personaje: "Huyang (voz)" },
+            { actor: "Eman Esfandi", personaje: "Ezra Bridger" },
+            { actor: "Hayden Christensen", personaje: "Anakin Skywalker / Darth Vader" },
+            { actor: "Lars Mikkelsen", personaje: "Gran Almirante Thrawn" }
+        ]
+    },
+    "skeleton-crew-2024": {
+        director: "Jon Watts y Christopher Ford (creadores), Jon Watts, David Lowery, Daniel Kwan y Daniel Scheinert, Jake Schreier, Bryce Dallas Howard, Lee Isaac Chung",
+        elenco: [
+            { actor: "Jude Law", personaje: "Jod Na Nawood" },
+            { actor: "Ravi Cabot-Conyers", personaje: "Wim" },
+            { actor: "Ryan Kiera Armstrong", personaje: "Fern" },
+            { actor: "Kyriana Kratter", personaje: "KB" },
+            { actor: "Robert Timothy Smith", personaje: "Neel" },
+            { actor: "Nick Frost", personaje: "SM-33 (voz)" }
+        ]
+    },
+    "star-wars-the-bad-batch": {
+        director: "Dave Filoni (creador, con Jennifer Corbett), Brad Rau (director supervisor)",
+        elenco: [
+            { actor: "Dee Bradley Baker", personaje: "Hunter, Wrecker, Crosshair, Tech y Echo (voces)" },
+            { actor: "Michelle Ang", personaje: "Omega (voz)" },
+            { actor: "Rhea Perlman", personaje: "Cid (voz)" },
+            { actor: "Noshir Dalal", personaje: "Rampart (voz)" },
+            { actor: "Stephen Stanton", personaje: "Tarkin (voz)" },
+            { actor: "Jimmi Simpson", personaje: "Royce Hemlock (voz)" },
+            { actor: "Wanda Sykes", personaje: "Phee Genoa (voz)" },
+            { actor: "Ming-Na Wen", personaje: "Fennec Shand (voz)" },
+            { actor: "Keisha Castle-Hughes", personaje: "Emerie Karr (voz)" }
+        ]
+    },
+    "halston-2021": {
+        director: "Sharr White (creador), Daniel Minahan",
+        elenco: [
+            { actor: "Ewan McGregor", personaje: "Halston" },
+            { actor: "Rebecca Dayan", personaje: "Elsa Peretti" },
+            { actor: "Krysta Rodriguez", personaje: "Liza Minnelli" },
+            { actor: "David Pittu", personaje: "Joe Eula" },
+            { actor: "Rory Culkin", personaje: "Joel Schumacher" },
+            { actor: "Kelly Bishop", personaje: "Eleanor Lambert" },
+            { actor: "Vera Farmiga", personaje: "Adele" },
+            { actor: "Gian Franco Rodriguez", personaje: "Victor Hugo" },
+            { actor: "Sullivan Jones", personaje: "Ed Austin" },
+            { actor: "Mary Beth Peil", personaje: "Martha Graham" }
         ]
     },
     "spies-in-disguise-2019": {
