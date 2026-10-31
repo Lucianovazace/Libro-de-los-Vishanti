@@ -70,9 +70,9 @@ class MainActivity : Activity() {
             listOf(ALEXA)
         ),
         Tile(
-            "Halloween", null, 0xFFB85400.toInt(), R.drawable.ic_hall, false,
+            "Navidad", null, 0xFF9E1B32.toInt(), R.drawable.ic_tree, false,
             1, 3, 1, 1,
-            "Sala naranja, entrada violeta, cocina verde. Por ahora abre Alexa.",
+            "Sala en rojo, entrada en verde, cocina en blanco calido. Govee en rojo y musica navidena. Por ahora abre Alexa.",
             listOf(ALEXA)
         ),
         Tile(
