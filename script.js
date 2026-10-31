@@ -252,7 +252,7 @@ const listaMedia = [
     { titulo: "Madame Web", categoria: "sony-ssu", tipo: "Película", fichaTecnicaId: "madame-web", poster: "https://m.media-amazon.com/images/S/pv-target-images/cb36ea6f3f53777aea24eec9d1560470e6c6d1f260abc72bcb13ae9bccfcb678.jpg" },
     { titulo: "Venom: The Last Dance", categoria: "sony-ssu", tipo: "Película", fichaTecnicaId: "venom-the-last-dance-2024", poster: "https://cdng.europosters.eu/pod_public/1300/316750.jpg" },
     { titulo: "Kraven the Hunter", categoria: "sony-ssu", tipo: "Película", fichaTecnicaId: "kraven-the-hunter-2024", poster: "https://www.infobae.com/new-resizer/TCpnPIXVaCBLAgI9qPNyP_LHIlI=/arc-anglerfish-arc2-prod-infobae/public/TIWZB56GRBGONDHJMXY5NJFWMY.jpg" },
-    { titulo: "Spider-Man: Into the Spider-Verse", categoria: "sony-spiderverse", tipo: "Película", fichaTecnicaId: "spider-man-into-the-spider-verse", poster: "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22300%22%20height%3D%22450%22%3E%3Crect%20width%3D%22300%22%20height%3D%22450%22%20fill%3D%22%231b1f3b%22/%3E%3Crect%20x%3D%2212%22%20y%3D%2212%22%20width%3D%22276%22%20height%3D%22426%22%20fill%3D%22none%22%20stroke%3D%22%23e23636%22%20stroke-width%3D%224%22/%3E%3Ctext%20x%3D%22150%22%20y%3D%22215%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20font-weight%3D%22bold%22%20text-anchor%3D%22middle%22%3ESpider-Man%3A%3C/text%3E%3Ctext%20x%3D%22150%22%20y%3D%22250%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%22%20font-size%3D%2222%22%20text-anchor%3D%22middle%22%3EInto%20the%20Spider-Verse%3C/text%3E%3C/svg%3E" },
+    { titulo: "Spider-Man: Into the Spider-Verse", categoria: "sony-spiderverse", tipo: "Película", fichaTecnicaId: "spider-man-into-the-spider-verse", poster: "https://image.tmdb.org/t/p/original/mxaqynZmrnSttakmULyIb87mxeL.jpg" },
     { titulo: "Spider-Man: Across the Spider-Verse", categoria: "sony-spiderverse", tipo: "Película", fichaTecnicaId: "spider-man-across-the-spider-verse-2023", poster: "https://image.tmdb.org/t/p/original/3Ng6tqu3aaP00uh803vNN3iRXiE.jpg" },
 
     // --- DC COMICS (DCU, DCEU Principal, The Batman, Joker) ---
@@ -774,7 +774,7 @@ const listaMedia = [
     { titulo: "Big Little Lies", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Serie", fichaTecnicaId: "big-little-lies", poster: "https://image.tmdb.org/t/p/original/3MaGqE20QWC9ZI7Ri6pyPiioL19.jpg" },
     { titulo: "Kin", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Película", fichaTecnicaId: "kin-2018", poster: "https://image.tmdb.org/t/p/original/lOnvphyxNoEH9Z5DOouF6DGR8pH.jpg" },
     { titulo: "Animales Fantásticos: Los Crímenes de Grindelwald", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Película", fichaTecnicaId: "animales-fantasticos-2", poster: "https://m.media-amazon.com/images/M/MV5BZGIyZjk5ODctNDg3MC00YTgyLThmYTAtNjZkNzk4Y2JhMDRhXkEyXkFqcGc@._V1_.jpg" },
-    { titulo: "Spider-Man: Into the Spider-Verse", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Película", fichaTecnicaId: "spider-man-into-the-spider-verse", poster: "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22300%22%20height%3D%22450%22%3E%3Crect%20width%3D%22300%22%20height%3D%22450%22%20fill%3D%22%231b1f3b%22/%3E%3Crect%20x%3D%2212%22%20y%3D%2212%22%20width%3D%22276%22%20height%3D%22426%22%20fill%3D%22none%22%20stroke%3D%22%23e23636%22%20stroke-width%3D%224%22/%3E%3Ctext%20x%3D%22150%22%20y%3D%22215%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20font-weight%3D%22bold%22%20text-anchor%3D%22middle%22%3ESpider-Man%3A%3C/text%3E%3Ctext%20x%3D%22150%22%20y%3D%22250%22%20fill%3D%22%23fff%22%20font-family%3D%22Arial%22%20font-size%3D%2222%22%20text-anchor%3D%22middle%22%3EInto%20the%20Spider-Verse%3C/text%3E%3C/svg%3E" },
+    { titulo: "Spider-Man: Into the Spider-Verse", categoria: "zoe-kravitz", subtipo: "2010", tipo: "Película", fichaTecnicaId: "spider-man-into-the-spider-verse", poster: "https://image.tmdb.org/t/p/original/mxaqynZmrnSttakmULyIb87mxeL.jpg" },
 
     // --- GLEN POWELL ---
     { titulo: "Apollo 10 ½: A Space Age Childhood", categoria: "glen-powell", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/ms3qa9LH9kosaGCSe22NJ7fDPv9.jpg" },
@@ -1051,7 +1051,7 @@ const listaMedia = [
     { titulo: "Chaos Walking", categoria: "tom-holland", subtipo: "2020", tipo: "Película", fichaTecnicaId: "chaos-walking-2021", poster: "https://m.media-amazon.com/images/I/61LcnT-4RxL._AC_UF894,1000_QL80_.jpg" },
     { titulo: "Spider-Man: No Way Home", categoria: "tom-holland", subtipo: "2020", tipo: "Película", fichaTecnicaId: "spider-man-no-way-home", poster: "https://www.cinemascomics.com/wp-content/uploads/2022/01/poster-Spider-man-no-way-home.jpg" },
     { titulo: "Uncharted", categoria: "tom-holland", subtipo: "2020", tipo: "Película", fichaTecnicaId: "uncharted-2022", poster: "https://m.media-amazon.com/images/I/71Pzfv1skmL.jpg" },
-    { titulo: "The Odyssey", categoria: "tom-holland", subtipo: "2020", tipo: "Película", poster: "https://img.asmedia.epimg.net/resizer/v2/AP6RDKAGQVE4DEON7ETUS4UVM4.jpg?auth=5abec700c478bffaa862bc1e153efeb77076781fbd4dc9df918ddb11a11979ea&width=375" },
+    { titulo: "The Odyssey", categoria: "tom-holland", subtipo: "2020", tipo: "Película", fichaTecnicaId: "the-odyssey-2026", poster: "https://img.asmedia.epimg.net/resizer/v2/AP6RDKAGQVE4DEON7ETUS4UVM4.jpg?auth=5abec700c478bffaa862bc1e153efeb77076781fbd4dc9df918ddb11a11979ea&width=375" },
     { titulo: "Spider-Man: Brand New Day", categoria: "tom-holland", subtipo: "2020", tipo: "Película", fichaTecnicaId: "spider-man-brand-new-day-2026", poster: "https://m.media-amazon.com/images/M/MV5BOWNjYWM3NWItOGE0ZS00MWRjLThiZWEtYjc4ZmNmMmU5ZTVmXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
     { titulo: "The Crowded Room", categoria: "tom-holland", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "the-crowded-room-2023", poster: "https://image.tmdb.org/t/p/original/36TcuMJFyr8q8zelVbBbs59bL53.jpg" },
     { titulo: "Arrietty y el Mundo de los Diminutos", categoria: "tom-holland", subtipo: "2010", tipo: "Película", fichaTecnicaId: "arrietty-2010", poster: "https://image.tmdb.org/t/p/original/1uEzy1zW8M4c4jePqLfIGXlBHvl.jpg" },
@@ -1073,7 +1073,7 @@ const listaMedia = [
     // --- RYAN GOSLING (con filtros por década) ---
     { titulo: "The Gray Man", categoria: "ryan-gosling", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZmFhZTNlNzctZGQzZi00MTA3LThiNjMtYWQzNjUzMjNjZjA3XkEyXkFqcGc@.V1.jpg" },
     { titulo: "Men, Women and Children", categoria: "timothee-chalamet", subtipo: "2010", tipo: "Película", poster: "https://i0.wp.com/www.heyuguys.com/images/2014/11/Men-Women-and-Children-Poster.jpg?fit=961%2C1500&ssl=1" },
-    { titulo: "Interstellar", categoria: "timothee-chalamet", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/91obuWzA3XL.jpg" },
+    { titulo: "Interstellar", categoria: "timothee-chalamet", subtipo: "2010", tipo: "Película", fichaTecnicaId: "interstellar-2014", poster: "https://m.media-amazon.com/images/I/91obuWzA3XL.jpg" },
     { titulo: "Worst Friends", categoria: "timothee-chalamet", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMzk3ODA0MzY5M15BMl5BanBnXkFtZTgwMTM3NzMyMjE@._V1_.jpg" },
     { titulo: "One & Two", categoria: "timothee-chalamet", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTQyZWE3YTQtMzdlYS00OGY3LWEzNDMtZmI3MTRlYTUwNzgwXkEyXkFqcGc@._V1_.jpg" },
     { titulo: "The Aderall Diaries", categoria: "timothee-chalamet", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BZGIyNGU0NDYtZmUxYi00MGJjLTkzNDEtYWM0ZTVjOThiZWI1XkEyXkFqcGc@._V1_.jpg" },
@@ -1242,19 +1242,19 @@ const listaMedia = [
     { titulo: "Hamnet", categoria: "chloe-zhao", tipo: "Película", poster: "https://competitive.ultracine.com/wp-content/uploads/2025/05/UIP-HAMNET.jpg" },
     { titulo: "Past Lives", categoria: "celine-song", tipo: "Película", poster: "https://i.pinimg.com/736x/2b/41/cb/2b41cb65373e7909972ec366c09afa54.jpg" },
     { titulo: "Materialistas", categoria: "celine-song", tipo: "Película", poster: "https://images.justwatch.com/poster/329711270/s718/materialists.jpg" },
-    { titulo: "Following", categoria: "christopher-nolan", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BYTQxYzIwMTAtYjZlNi00YzkwLWI4ZGYtNzNlZjU3N2MyNzI4XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
-    { titulo: "Memento", categoria: "christopher-nolan", tipo: "Película", poster: "https://m.media-amazon.com/images/I/51jojzqpkPL.AC_UF894,1000_QL80.jpg" },
-    { titulo: "Insomnia", categoria: "christopher-nolan", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BOTE2NzQ0MzQtMDRmZi00ZWRiLWE4MDEtY2M1Mjc3OGY5N2JkXkEyXkFqcGc@.V1.jpg" },
+    { titulo: "Following", categoria: "christopher-nolan", tipo: "Película", fichaTecnicaId: "following-1998", poster: "https://m.media-amazon.com/images/M/MV5BYTQxYzIwMTAtYjZlNi00YzkwLWI4ZGYtNzNlZjU3N2MyNzI4XkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" },
+    { titulo: "Memento", categoria: "christopher-nolan", tipo: "Película", fichaTecnicaId: "memento-2000", poster: "https://m.media-amazon.com/images/I/51jojzqpkPL.AC_UF894,1000_QL80.jpg" },
+    { titulo: "Insomnia", categoria: "christopher-nolan", tipo: "Película", fichaTecnicaId: "insomnia-2002", poster: "https://m.media-amazon.com/images/M/MV5BOTE2NzQ0MzQtMDRmZi00ZWRiLWE4MDEtY2M1Mjc3OGY5N2JkXkEyXkFqcGc@.V1.jpg" },
     { titulo: "Batman Begins", categoria: "christopher-nolan", tipo: "Película", fichaTecnicaId: "batman-begins-2005", poster: "https://i.pinimg.com/736x/67/88/19/678819ae9fc2b7104ecc124f2e586c05.jpg" },
     { titulo: "The Prestige", categoria: "christopher-nolan", tipo: "Película", fichaTecnicaId: "the-prestige-2006", poster: "https://www.originalfilmart.com/cdn/shop/products/prestige_2006_english_advance_original_film_art_5000x.jpg?v=1551795612" },
     { titulo: "The Dark Knight", categoria: "christopher-nolan", tipo: "Película", fichaTecnicaId: "the-dark-knight-2008", poster: "https://www.movieposters.com/cdn/shop/files/darkknight.building.24x36_20e90057-f673-4cc3-9ce7-7b0d3eeb7d83_1024x1024.jpg?v=1762974221" },
-    { titulo: "Inception", categoria: "christopher-nolan", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg" },
+    { titulo: "Inception", categoria: "christopher-nolan", tipo: "Película", fichaTecnicaId: "inception-2010", poster: "https://image.tmdb.org/t/p/original/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg" },
     { titulo: "The Dark Knight Rises", categoria: "christopher-nolan", tipo: "Película", fichaTecnicaId: "the-dark-knight-rises-2012", poster: "https://i.pinimg.com/736x/76/bd/14/76bd1451fa0d4e66a83095bfb5ad63a8.jpg" },
-    { titulo: "Interstellar", categoria: "christopher-nolan", tipo: "Película", poster: "https://m.media-amazon.com/images/I/91obuWzA3XL.jpg" },
-    { titulo: "Dunkirk", categoria: "christopher-nolan", tipo: "Película", poster: "https://i.etsystatic.com/36541132/r/il/7c267b/7018214484/il_570xN.7018214484_2wqe.jpg" },
-    { titulo: "Tenet", categoria: "christopher-nolan", tipo: "Película", poster: "https://www.originalfilmart.com/cdn/shop/files/tenet_2020_advance_original_film_art_37f46c8f-cdc8-468e-b8b5-2492200deb1c_5000x.webp?v=1756494471" },
+    { titulo: "Interstellar", categoria: "christopher-nolan", tipo: "Película", fichaTecnicaId: "interstellar-2014", poster: "https://m.media-amazon.com/images/I/91obuWzA3XL.jpg" },
+    { titulo: "Dunkirk", categoria: "christopher-nolan", tipo: "Película", fichaTecnicaId: "dunkirk-2017", poster: "https://i.etsystatic.com/36541132/r/il/7c267b/7018214484/il_570xN.7018214484_2wqe.jpg" },
+    { titulo: "Tenet", categoria: "christopher-nolan", tipo: "Película", fichaTecnicaId: "tenet-2020", poster: "https://www.originalfilmart.com/cdn/shop/files/tenet_2020_advance_original_film_art_37f46c8f-cdc8-468e-b8b5-2492200deb1c_5000x.webp?v=1756494471" },
     { titulo: "Oppenheimer", categoria: "christopher-nolan", tipo: "Película", fichaTecnicaId: "oppenheimer-2023", poster: "https://image.tmdb.org/t/p/original/lrcuwcNiiZjoB68fzvSOPwu9JWv.jpg" },
-    { titulo: "The Odyssey", categoria: "christopher-nolan", tipo: "Película", poster: "https://img.asmedia.epimg.net/resizer/v2/AP6RDKAGQVE4DEON7ETUS4UVM4.jpg?auth=5abec700c478bffaa862bc1e153efeb77076781fbd4dc9df918ddb11a11979ea&width=375" },
+    { titulo: "The Odyssey", categoria: "christopher-nolan", tipo: "Película", fichaTecnicaId: "the-odyssey-2026", poster: "https://img.asmedia.epimg.net/resizer/v2/AP6RDKAGQVE4DEON7ETUS4UVM4.jpg?auth=5abec700c478bffaa862bc1e153efeb77076781fbd4dc9df918ddb11a11979ea&width=375" },
     { titulo: "Reservoir Dogs", categoria: "tarantino", tipo: "Película", poster: "https://i.pinimg.com/736x/df/4c/29/df4c29b0e7d20fae7ec3c7613e8cebd1.jpg" },
     { titulo: "Pulp Fiction", categoria: "tarantino", tipo: "Película", poster: "https://static.posters.cz/image/1300/pulp-fiction-cover-i1288.jpg" },
     { titulo: "Jackie Brown", categoria: "tarantino", tipo: "Película", poster: "https://i.pinimg.com/736x/35/29/64/35296495a0ba33742f49cde8510df37d.jpg" },
@@ -1361,7 +1361,7 @@ const listaMedia = [
     { titulo: "Killers of the Flower Moon", categoria: "leonardo-dicaprio", subtipo: "2020", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/vhkmvm2tm4HBec28JET6nBU7b7x.jpg" },
     { titulo: "One Battle After Another", categoria: "leonardo-dicaprio", subtipo: "2020", tipo: "Película", poster: "https://pics.filmaffinity.com/One_Battle_After_Another-992235034-large.jpg" },
     { titulo: "Shutter Island", categoria: "leonardo-dicaprio", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/nrmXQ0zcZUL8jFLrakWc90IR8z9.jpg" },
-    { titulo: "Inception", categoria: "leonardo-dicaprio", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg" },
+    { titulo: "Inception", categoria: "leonardo-dicaprio", subtipo: "2010", tipo: "Película", fichaTecnicaId: "inception-2010", poster: "https://image.tmdb.org/t/p/original/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg" },
     { titulo: "J. Edgar", categoria: "leonardo-dicaprio", subtipo: "2010", tipo: "Película", poster: "https://i.pinimg.com/736x/8b/3e/d5/8b3ed538e07de55b2e3dac40f6e0d044.jpg" },
     { titulo: "Django Unchained", categoria: "leonardo-dicaprio", subtipo: "2010", tipo: "Película", poster: "https://i.pinimg.com/736x/6e/46/1f/6e461ff4f41269d0a537d3a52c0ce688.jpg" },
     { titulo: "The Great Gatsby", categoria: "leonardo-dicaprio", subtipo: "2010", tipo: "Película", poster: "https://mir-s3-cdn-cf.behance.net/project_modules/hd_webp/a7350c9186433.560c9f1d670e4.jpg" },
@@ -14942,7 +14942,7 @@ if (btnVolverFichaHawkeyeSerie) {
     }
 });
 
-['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023', 'arrietty-2010', 'the-impossible-2012', 'how-i-live-now-2013', 'wolf-hall-2015', 'in-the-heart-of-the-sea-2015', 'edge-of-winter-2016', 'the-lost-city-of-z-2016', 'pilgrimage-2017', 'the-current-war-2017', 'cherry-2021', 'onward-2020', 'chaos-walking-2021', 'uncharted-2022', 'dolittle-2020', 'the-devil-all-the-time-2020', 'marmaduke-2010', 'easy-a-2010', 'crazy-stupid-love-2011', 'the-amazing-spider-man-2012', 'gangster-squad-2013', 'movie-43-2013', 'the-amazing-spider-man-2-2014', 'friends-with-benefits-2011', 'the-help-2011', 'the-croods-2013', 'magic-in-the-moonlight-2014', 'birdman-2014', 'aloha-2015', 'irrational-man-2015', 'battle-of-the-sexes-2017', 'maniac-2018', 'the-favourite-2018', 'zombieland-double-tap-2019', 'superbad-2007', 'the-rocker-2008', 'the-house-bunny-2008', 'ghosts-of-girlfriends-past-2009', 'zombieland-2009', 'paper-man-2009', 'the-curse-2023', 'the-croods-a-new-age-2020', 'cruella-2021', 'poor-things-2023', 'kinds-of-kindness-2024', 'eddington-2025', 'bugonia-2025', 'palo-alto-2013', 'the-leftovers-2014', 'the-nice-guys-2016', 'death-note-2017', 'novitiate-2017', 'the-vanishing-of-sidney-hall-2017', 'donnybrook-2018', 'green-lantern-beware-my-power-2022', 'legion-of-super-heroes-2023', 'justice-league-warworld-2023', 'jl-crisis-infinite-earths-p1-2024', 'jl-crisis-infinite-earths-p2-2024', 'jl-crisis-infinite-earths-p3-2024', 'native-son-2019', 'fosse-verdon-2019', 'once-upon-a-time-in-hollywood-2019', 'adam-2019', 'strange-but-true-2019', 'seberg-2019', 'my-salinger-year-2020', 'maid-2021', 'stars-at-noon-2022', 'sanctuary-2022', 'drive-away-dolls-2024', 'the-substance-2024', 'happy-gilmore-2-2025', 'honey-dont-2025', 'blue-moon-2025', 'how-to-make-a-killing-2026', 'io-2019', 'the-dog-stars-2026', 'spider-man-brand-new-day-2026', 'marvel-zombies-serie-2025', 'we-live-in-time-2024', 'oppenheimer-2023', 'a-good-person-2023', 'the-wonder-2022', 'flashpoint-paradox-2013', 'justice-league-war-2014', 'son-of-batman-2014', 'throne-of-atlantis-2015', 'batman-vs-robin-2015', 'the-falling-2014', 'lady-macbeth-2016', 'outlaw-king-2018', 'malevolent-2018', 'fighting-with-my-family-2019', 'little-women-2019', 'batman-bad-blood-2016', 'justice-league-vs-teen-titans-2016', 'justice-league-dark-2017', 'teen-titans-judas-contract-2017', 'suicide-squad-hell-to-pay-2018', 'death-of-superman-2018', 'constantine-city-of-demons-2018', 'reign-of-the-supermen-2019', 'batman-hush-2019', 'wonder-woman-bloodlines-2019', 'justice-league-dark-apokolips-war-2020', 'midsommar-2019', 'the-commuter-2018', 'king-lear-2018', 'little-drummer-girl-2018', 'marcella-2016', 'suicide-squad-2016', 'wonder-woman-2017', 'justice-league-2017', 'ticket-to-paradise-2022', 'leave-the-world-behind-2023', 'after-the-hunt-2025', 'aquaman-2018', 'zack-snyders-justice-league-2021', 'shazam-2019', 'valentines-day-2010', 'eat-pray-love-2010', 'agatha-all-along-2024', 'what-if-2021', 'secret-invasion-2023', 'ironheart-2025', 'clayface-2026', 'larry-crowne-2011', 'moon-knight-2022', 'i-am-groot-2022', 'she-hulk-attorney-at-law-2022', 'werewolf-by-night-2022', 'echo-2024', 'daredevil-born-again-2025', 'eyes-of-wakanda-2025', 'wonder-man-2026', 'punisher-one-last-kill-2026', 'birds-of-prey-2020', 'wonder-woman-1984', 'black-adam-2022', 'the-penguin-2024', 'shazam-fury-of-the-gods-2023', 'the-flash-2023', 'aquaman-and-the-lost-kingdom-2023', 'spider-man-2002', 'spider-man-2-2004', 'spider-man-3-2007', 'venom-let-there-be-carnage-2021', 'morbius-2022', 'venom-the-last-dance-2024', 'kraven-the-hunter-2024', 'fantastic-four-2005', 'fantastic-four-silver-surfer-2007', 'howard-the-duck-1986', 'hulk-2003', 'super-hero-squad-show-2009', 'spider-man-across-the-spider-verse-2023', 'joker-2019', 'joker-folie-a-deux-2024'].forEach(id => {
+['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023', 'arrietty-2010', 'the-impossible-2012', 'how-i-live-now-2013', 'wolf-hall-2015', 'in-the-heart-of-the-sea-2015', 'edge-of-winter-2016', 'the-lost-city-of-z-2016', 'pilgrimage-2017', 'the-current-war-2017', 'cherry-2021', 'onward-2020', 'chaos-walking-2021', 'uncharted-2022', 'dolittle-2020', 'the-devil-all-the-time-2020', 'marmaduke-2010', 'easy-a-2010', 'crazy-stupid-love-2011', 'the-amazing-spider-man-2012', 'gangster-squad-2013', 'movie-43-2013', 'the-amazing-spider-man-2-2014', 'friends-with-benefits-2011', 'the-help-2011', 'the-croods-2013', 'magic-in-the-moonlight-2014', 'birdman-2014', 'aloha-2015', 'irrational-man-2015', 'battle-of-the-sexes-2017', 'maniac-2018', 'the-favourite-2018', 'zombieland-double-tap-2019', 'superbad-2007', 'the-rocker-2008', 'the-house-bunny-2008', 'ghosts-of-girlfriends-past-2009', 'zombieland-2009', 'paper-man-2009', 'the-curse-2023', 'the-croods-a-new-age-2020', 'cruella-2021', 'poor-things-2023', 'kinds-of-kindness-2024', 'eddington-2025', 'bugonia-2025', 'palo-alto-2013', 'the-leftovers-2014', 'the-nice-guys-2016', 'death-note-2017', 'novitiate-2017', 'the-vanishing-of-sidney-hall-2017', 'donnybrook-2018', 'green-lantern-beware-my-power-2022', 'legion-of-super-heroes-2023', 'justice-league-warworld-2023', 'jl-crisis-infinite-earths-p1-2024', 'jl-crisis-infinite-earths-p2-2024', 'jl-crisis-infinite-earths-p3-2024', 'native-son-2019', 'fosse-verdon-2019', 'once-upon-a-time-in-hollywood-2019', 'adam-2019', 'strange-but-true-2019', 'seberg-2019', 'my-salinger-year-2020', 'maid-2021', 'stars-at-noon-2022', 'sanctuary-2022', 'drive-away-dolls-2024', 'the-substance-2024', 'happy-gilmore-2-2025', 'honey-dont-2025', 'blue-moon-2025', 'how-to-make-a-killing-2026', 'io-2019', 'the-dog-stars-2026', 'spider-man-brand-new-day-2026', 'marvel-zombies-serie-2025', 'we-live-in-time-2024', 'oppenheimer-2023', 'a-good-person-2023', 'the-wonder-2022', 'flashpoint-paradox-2013', 'justice-league-war-2014', 'son-of-batman-2014', 'throne-of-atlantis-2015', 'batman-vs-robin-2015', 'the-falling-2014', 'lady-macbeth-2016', 'outlaw-king-2018', 'malevolent-2018', 'fighting-with-my-family-2019', 'little-women-2019', 'batman-bad-blood-2016', 'justice-league-vs-teen-titans-2016', 'justice-league-dark-2017', 'teen-titans-judas-contract-2017', 'suicide-squad-hell-to-pay-2018', 'death-of-superman-2018', 'constantine-city-of-demons-2018', 'reign-of-the-supermen-2019', 'batman-hush-2019', 'wonder-woman-bloodlines-2019', 'justice-league-dark-apokolips-war-2020', 'midsommar-2019', 'the-commuter-2018', 'king-lear-2018', 'little-drummer-girl-2018', 'marcella-2016', 'suicide-squad-2016', 'wonder-woman-2017', 'justice-league-2017', 'ticket-to-paradise-2022', 'leave-the-world-behind-2023', 'after-the-hunt-2025', 'aquaman-2018', 'zack-snyders-justice-league-2021', 'shazam-2019', 'valentines-day-2010', 'eat-pray-love-2010', 'agatha-all-along-2024', 'what-if-2021', 'secret-invasion-2023', 'ironheart-2025', 'clayface-2026', 'larry-crowne-2011', 'moon-knight-2022', 'i-am-groot-2022', 'she-hulk-attorney-at-law-2022', 'werewolf-by-night-2022', 'echo-2024', 'daredevil-born-again-2025', 'eyes-of-wakanda-2025', 'wonder-man-2026', 'punisher-one-last-kill-2026', 'birds-of-prey-2020', 'wonder-woman-1984', 'black-adam-2022', 'the-penguin-2024', 'shazam-fury-of-the-gods-2023', 'the-flash-2023', 'aquaman-and-the-lost-kingdom-2023', 'spider-man-2002', 'spider-man-2-2004', 'spider-man-3-2007', 'venom-let-there-be-carnage-2021', 'morbius-2022', 'venom-the-last-dance-2024', 'kraven-the-hunter-2024', 'fantastic-four-2005', 'fantastic-four-silver-surfer-2007', 'howard-the-duck-1986', 'hulk-2003', 'super-hero-squad-show-2009', 'spider-man-across-the-spider-verse-2023', 'joker-2019', 'joker-folie-a-deux-2024', 'following-1998', 'memento-2000', 'insomnia-2002', 'inception-2010', 'interstellar-2014', 'dunkirk-2017', 'tenet-2020', 'the-odyssey-2026'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -15601,6 +15601,14 @@ const FICHAS_TECNICAS_TITULOS = {
     "spider-man-across-the-spider-verse-2023": "Spider-Man: Across the Spider-Verse",
     "joker-2019": "Joker",
     "joker-folie-a-deux-2024": "Joker: Folie à Deux",
+    "following-1998": "Following",
+    "memento-2000": "Memento",
+    "insomnia-2002": "Insomnia",
+    "inception-2010": "Inception",
+    "interstellar-2014": "Interstellar",
+    "dunkirk-2017": "Dunkirk",
+    "tenet-2020": "Tenet",
+    "the-odyssey-2026": "The Odyssey",
     "spies-in-disguise-2019": "Spies in Disguise",
     "the-crowded-room-2023": "The Crowded Room",
     "mio-in-the-land-of-faraway-1987": "Mio in the Land of Faraway",
@@ -19793,6 +19801,117 @@ const REPARTO_PELICULAS = {
             { actor: "Zazie Beetz", personaje: "Sophie Dumond" },
             { actor: "Harry Lawtey", personaje: "Harvey Dent" },
             { actor: "Steve Coogan", personaje: "Paddy Meyers" }
+        ]
+    },
+    "following-1998": {
+        director: "Christopher Nolan",
+        elenco: [
+            { actor: "Jeremy Theobald", personaje: "Bill (El Joven)" },
+            { actor: "Alex Haw", personaje: "Cobb" },
+            { actor: "Lucy Russell", personaje: "La Rubia" },
+            { actor: "Dick Bradsell", personaje: "El Calvo" },
+            { actor: "John Nolan", personaje: "El Policía" }
+        ]
+    },
+    "memento-2000": {
+        director: "Christopher Nolan",
+        elenco: [
+            { actor: "Guy Pearce", personaje: "Leonard Shelby" },
+            { actor: "Carrie-Anne Moss", personaje: "Natalie" },
+            { actor: "Joe Pantoliano", personaje: "John Edward \"Teddy\" Gammell" },
+            { actor: "Mark Boone Junior", personaje: "Burt" },
+            { actor: "Stephen Tobolowsky", personaje: "Sammy Jankis" }
+        ]
+    },
+    "insomnia-2002": {
+        director: "Christopher Nolan",
+        elenco: [
+            { actor: "Al Pacino", personaje: "Will Dormer" },
+            { actor: "Robin Williams", personaje: "Walter Finch" },
+            { actor: "Hilary Swank", personaje: "Ellie Burr" },
+            { actor: "Maura Tierney", personaje: "Rachel Clement" },
+            { actor: "Martin Donovan", personaje: "Hap Eckhart" },
+            { actor: "Nicky Katt", personaje: "Fred Duggar" },
+            { actor: "Paul Dooley", personaje: "Jefe Nyback" }
+        ]
+    },
+    "inception-2010": {
+        director: "Christopher Nolan",
+        elenco: [
+            { actor: "Leonardo DiCaprio", personaje: "Dom Cobb" },
+            { actor: "Joseph Gordon-Levitt", personaje: "Arthur" },
+            { actor: "Elliot Page", personaje: "Ariadne" },
+            { actor: "Tom Hardy", personaje: "Eames" },
+            { actor: "Ken Watanabe", personaje: "Saito" },
+            { actor: "Marion Cotillard", personaje: "Mal" },
+            { actor: "Cillian Murphy", personaje: "Robert Fischer" },
+            { actor: "Tom Berenger", personaje: "Peter Browning" },
+            { actor: "Michael Caine", personaje: "Stephen Miles" },
+            { actor: "Dileep Rao", personaje: "Yusuf" },
+            { actor: "Pete Postlethwaite", personaje: "Maurice Fischer" }
+        ]
+    },
+    "interstellar-2014": {
+        director: "Christopher Nolan",
+        elenco: [
+            { actor: "Matthew McConaughey", personaje: "Cooper" },
+            { actor: "Anne Hathaway", personaje: "Amelia Brand" },
+            { actor: "Jessica Chastain", personaje: "Murph (adulta)" },
+            { actor: "Mackenzie Foy", personaje: "Murph (10 años)" },
+            { actor: "Michael Caine", personaje: "Profesor John Brand" },
+            { actor: "Casey Affleck", personaje: "Tom (adulto)" },
+            { actor: "Timothée Chalamet", personaje: "Tom (15 años)" },
+            { actor: "John Lithgow", personaje: "Donald" },
+            { actor: "Matt Damon", personaje: "Dr. Mann" },
+            { actor: "Wes Bentley", personaje: "Doyle" },
+            { actor: "David Gyasi", personaje: "Romilly" },
+            { actor: "Topher Grace", personaje: "Getty" },
+            { actor: "Bill Irwin", personaje: "TARS y CASE (voz y títere)" }
+        ]
+    },
+    "dunkirk-2017": {
+        director: "Christopher Nolan",
+        elenco: [
+            { actor: "Fionn Whitehead", personaje: "Tommy" },
+            { actor: "Tom Glynn-Carney", personaje: "Peter Dawson" },
+            { actor: "Jack Lowden", personaje: "Collins" },
+            { actor: "Harry Styles", personaje: "Alex" },
+            { actor: "Aneurin Barnard", personaje: "Gibson" },
+            { actor: "James D'Arcy", personaje: "Coronel Winnant" },
+            { actor: "Barry Keoghan", personaje: "George Mills" },
+            { actor: "Kenneth Branagh", personaje: "Comandante Bolton" },
+            { actor: "Cillian Murphy", personaje: "Soldado tembloroso" },
+            { actor: "Mark Rylance", personaje: "Sr. Dawson" },
+            { actor: "Tom Hardy", personaje: "Farrier" }
+        ]
+    },
+    "tenet-2020": {
+        director: "Christopher Nolan",
+        elenco: [
+            { actor: "John David Washington", personaje: "El Protagonista" },
+            { actor: "Robert Pattinson", personaje: "Neil" },
+            { actor: "Elizabeth Debicki", personaje: "Katherine \"Kat\" Barton" },
+            { actor: "Kenneth Branagh", personaje: "Andrei Sator" },
+            { actor: "Dimple Kapadia", personaje: "Priya Singh" },
+            { actor: "Michael Caine", personaje: "Sir Michael Crosby" }
+        ]
+    },
+    "the-odyssey-2026": {
+        director: "Christopher Nolan",
+        elenco: [
+            { actor: "Matt Damon", personaje: "Odiseo" },
+            { actor: "Tom Holland", personaje: "Telémaco" },
+            { actor: "Anne Hathaway", personaje: "Penélope" },
+            { actor: "Robert Pattinson", personaje: "Antínoo" },
+            { actor: "Lupita Nyong'o", personaje: "Helena de Troya / Clitemnestra" },
+            { actor: "Samantha Morton", personaje: "Circe" },
+            { actor: "Zendaya", personaje: "Atenea" },
+            { actor: "Charlize Theron", personaje: "Calipso" },
+            { actor: "Jon Bernthal", personaje: "Menelao" },
+            { actor: "Himesh Patel", personaje: "Euríloco" },
+            { actor: "Elliot Page", personaje: "Sinón" },
+            { actor: "Benny Safdie", personaje: "Agamenón" },
+            { actor: "John Leguizamo", personaje: "Eumeo" }
         ]
     },
     "spies-in-disguise-2019": {
