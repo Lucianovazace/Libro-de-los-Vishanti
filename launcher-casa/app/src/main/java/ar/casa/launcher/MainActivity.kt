@@ -1,6 +1,13 @@
 package ar.casa.launcher
 
 import android.app.Activity
+import android.app.AlertDialog
+import android.content.Context
+import android.text.InputType
+import android.widget.EditText
+import java.net.HttpURLConnection
+import java.net.URL
+import java.net.URLEncoder
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
@@ -124,6 +131,8 @@ class MainActivity : Activity() {
             listOf(SMARTTHINGS)
         )
     )
+
+    private val prefs by lazy { getSharedPreferences("casa", Context.MODE_PRIVATE) }
 
     private val density by lazy { resources.displayMetrics.density }
     private fun dp(v: Int): Int = (v * density).toInt()
@@ -252,6 +261,11 @@ class MainActivity : Activity() {
             select(index)
             openTile(t)
         }
+        box.setOnLongClickListener {
+            select(index)
+            configure(t)
+            true
+        }
 
         val lp = GridLayout.LayoutParams(GridLayout.spec(t.row, t.rowSpan), GridLayout.spec(t.col, t.colSpan))
         lp.width = unitW * t.colSpan - gap
@@ -264,10 +278,19 @@ class MainActivity : Activity() {
     private fun select(index: Int) {
         val t = tiles[index]
         detailTitle.text = t.label
-        detailText.text = t.detail
+        val linked = !prefs.getString("dev_" + t.label, "").isNullOrBlank()
+        val hint = if (linked) "Conectado a una rutina de Alexa. Mantene apretado para cambiarlo."
+        else "Mantene apretado para conectarlo con una rutina de Alexa."
+        detailText.text = t.detail + "\n\n" + hint
     }
 
     private fun openTile(t: Tile) {
+        val token = prefs.getString("vm_token", "") ?: ""
+        val device = prefs.getString("dev_" + t.label, "") ?: ""
+        if (token.isNotBlank() && device.isNotBlank()) {
+            trigger(t, token, device)
+            return
+        }
         for (p in t.packages) {
             val i = packageManager.getLaunchIntentForPackage(p)
             if (i != null) {
@@ -284,6 +307,59 @@ class MainActivity : Activity() {
             }
         }
         Toast.makeText(this, "No encontre la app para \"${t.label}\"", Toast.LENGTH_SHORT).show()
+    }
+
+    private fun trigger(t: Tile, token: String, device: String) {
+        Toast.makeText(this, "Activando " + t.label + "...", Toast.LENGTH_SHORT).show()
+        Thread {
+            var msg: String
+            try {
+                val q = "token=" + URLEncoder.encode(token, "UTF-8") + "&device=" + URLEncoder.encode(device, "UTF-8")
+                val conn = URL("https://api-v3.voicemonkey.io/trigger?" + q).openConnection() as HttpURLConnection
+                conn.connectTimeout = 8000
+                conn.readTimeout = 8000
+                val code = conn.responseCode
+                msg = if (code in 200..299) t.label + ": listo" else "Error " + code + " al activar " + t.label
+                conn.disconnect()
+            } catch (e: Exception) {
+                msg = "No pude conectar. Revisa internet."
+            }
+            runOnUiThread { Toast.makeText(this, msg, Toast.LENGTH_LONG).show() }
+        }.start()
+    }
+
+    private fun configure(t: Tile) {
+        val box = LinearLayout(this)
+        box.orientation = LinearLayout.VERTICAL
+        box.setPadding(dp(20), dp(8), dp(20), 0)
+
+        val token = EditText(this)
+        token.hint = "Token de Voice Monkey (queda solo en este celular)"
+        token.inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_PASSWORD
+        token.setText(prefs.getString("vm_token", ""))
+
+        val device = EditText(this)
+        device.hint = "ID del disparador para \"" + t.label + "\""
+        device.inputType = InputType.TYPE_CLASS_TEXT
+        device.setText(prefs.getString("dev_" + t.label, ""))
+
+        box.addView(token)
+        box.addView(device)
+
+        AlertDialog.Builder(this)
+            .setTitle(t.label)
+            .setMessage("Si dejas el ID vacio, el tile vuelve a abrir la app.")
+            .setView(box)
+            .setPositiveButton("Guardar") { _, _ ->
+                prefs.edit()
+                    .putString("vm_token", token.text.toString().trim())
+                    .putString("dev_" + t.label, device.text.toString().trim())
+                    .apply()
+                val idx = tiles.indexOf(t)
+                if (idx >= 0) select(idx)
+            }
+            .setNegativeButton("Cancelar", null)
+            .show()
     }
 
     // ---------- Lista de apps ----------
