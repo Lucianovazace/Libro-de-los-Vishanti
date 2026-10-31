@@ -1677,6 +1677,17 @@ const listaMedia = [
     { titulo: "Blue Moon", categoria: "margaret-qualley", subtipo: "2020", tipo: "Película", fichaTecnicaId: "blue-moon-2025", poster: "https://image.tmdb.org/t/p/original/AetJmEIrhww0xnfktYgNl6ztDrl.jpg" },
     { titulo: "How to Make a Killing", categoria: "margaret-qualley", subtipo: "2020", tipo: "Película", fichaTecnicaId: "how-to-make-a-killing-2026", poster: "https://image.tmdb.org/t/p/w500/vxMeKC7o5Gi8IHMi6lUgsdprTqv.jpg" },
     { titulo: "The Dog Stars", categoria: "margaret-qualley", subtipo: "2020", tipo: "Película", fichaTecnicaId: "the-dog-stars-2026", poster: "https://image.tmdb.org/t/p/original/A7i16oDi03qrKep5pBfuTWNUTb.jpg" },
+    { titulo: "Velvet Goldmine", categoria: "ewan-mcgregor", subtipo: "1990", tipo: "Película", fichaTecnicaId: "velvet-goldmine-1998", poster: "https://image.tmdb.org/t/p/w500/4EJkObEJFvXCuoVqOP7XBXGqdQ1.jpg" },
+    { titulo: "Star Wars: Episodio I - La Amenaza Fantasma", categoria: "ewan-mcgregor", subtipo: "1990", tipo: "Película", fichaTecnicaId: "sw-episodio-1", poster: "https://postercity.com.ar/wp-content/uploads/2017/08/Episode1.jpg" },
+    { titulo: "Moulin Rouge!", categoria: "ewan-mcgregor", subtipo: "2000", tipo: "Película", fichaTecnicaId: "moulin-rouge-2001", poster: "https://image.tmdb.org/t/p/original/ugPzOWtGVHLeHkiJLlN19hLM9yK.jpg" },
+    { titulo: "Star Wars: Episodio II - El Ataque de los Clones", categoria: "ewan-mcgregor", subtipo: "2000", tipo: "Película", fichaTecnicaId: "sw-episodio-2", poster: "https://m.media-amazon.com/images/I/61nFfWio-sL.AC_UF894,1000_QL80.jpg" },
+    { titulo: "Star Wars: Episodio III - La Venganza de los Sith", categoria: "ewan-mcgregor", subtipo: "2000", tipo: "Película", fichaTecnicaId: "sw-episodio-3", poster: "https://cdng.europosters.eu/pod_public/1300/266305.jpg" },
+    { titulo: "Haywire", categoria: "ewan-mcgregor", subtipo: "2010", tipo: "Película", fichaTecnicaId: "haywire-2011", poster: "https://image.tmdb.org/t/p/original/iUQzR9IIwrw55NkPjSVtImzq9wK.jpg" },
+    { titulo: "The Impossible", categoria: "ewan-mcgregor", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-impossible-2012", poster: "https://image.tmdb.org/t/p/original/nGmXR3RhMCwU54VBHKuECt5j1Ae.jpg" },
+    { titulo: "Star Wars: Episodio VII - El Despertar de la Fuerza", categoria: "ewan-mcgregor", subtipo: "2010", tipo: "Película", fichaTecnicaId: "sw-episodio-7", poster: "https://lumiere-a.akamaihd.net/v1/images/image_34e17244.jpeg" },
+    { titulo: "Star Wars: Episodio IX - El Ascenso de Skywalker", categoria: "ewan-mcgregor", subtipo: "2010", tipo: "Película", fichaTecnicaId: "sw-episodio-9", poster: "https://ew.com/thmb/ET-SRSQ4HIdJuBOZ7mAKXWOc3aQ=/2000x0/filters:no_upscale():max_bytes(150000):strip_icc()/ecwe_nmu0aaqbms-2000-7ab12ead751644029b8235a49bdf9906.jpg" },
+    { titulo: "Birds of Prey and The Fantabulous Emancipation of One Harley Quinn", categoria: "ewan-mcgregor", subtipo: "2020", tipo: "Película", fichaTecnicaId: "birds-of-prey-2020", poster: "https://ew.com/thmb/sT-h3pYSc53fKCWxtv5ro4Midno=/2000x0/filters:no_upscale():max_bytes(150000):strip_icc()/birds-of-prey-2000-90f0db5838084a8a8c2eca14edd37e1f.jpg" },
+    { titulo: "Obi-Wan Kenobi", categoria: "ewan-mcgregor", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "obi-wan-kenobi", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Ea5Zhl73NttD-fuEjBpy5zvc0CHgbAK65cdKieScq9sYL53sOtIFfaMO&s=10" },
 
     // --- JENNA ORTEGA (con filtros por década) ---
     { titulo: "The Babysitter: Killer Queen", categoria: "jenna-ortega", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BODk1ZmQ4ODItZjcwZi00MTUxLWE1YWMtMDY2NWJhNzJjMGEyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
@@ -4240,6 +4251,16 @@ const colecciones = [
         esContenedor: true,
         etiqueta: "Actriz",
         progresoCategoria: "margaret-qualley",
+        peliculas: []
+    },
+    {
+        id: "ewan-mcgregor",
+        titulo: "Ewan McGregor",
+        categoria: "actores",
+        poster: "https://wallpapercat.com/w/full/1/b/1/422516-1440x3200-mobile-hd-ewan-mcgregor-background-photo.jpg",
+        esContenedor: true,
+        etiqueta: "Actor",
+        progresoCategoria: "ewan-mcgregor",
         peliculas: []
     },
     {
@@ -7863,6 +7884,7 @@ function abrirColeccion(colId) {
         'florence-pugh': '.btn-filtro-pugh[data-tipo="2020"]',
         'emma-stone': '.btn-filtro-stone[data-tipo="2020"]',
         'margaret-qualley': '.btn-filtro-qualley[data-tipo="2020"]',
+        'ewan-mcgregor': '.btn-filtro-mcgregor[data-tipo="2020"]',
         'jenna-ortega': '.btn-filtro-ortega[data-tipo="2020"]',
         'michael-fassbender': '.btn-filtro-fassbender[data-tipo="2020"]',
         'james-mcavoy': '.btn-filtro-mcavoy[data-tipo="2020"]',
@@ -8125,6 +8147,7 @@ function renderizarContenido() {
         "florence-pugh": "seccion-florence-pugh",
         "emma-stone": "seccion-emma-stone",
         "margaret-qualley": "seccion-margaret-qualley",
+        "ewan-mcgregor": "seccion-ewan-mcgregor",
         "jenna-ortega": "seccion-jenna-ortega",
         "michael-fassbender": "seccion-michael-fassbender",
         "james-mcavoy": "seccion-james-mcavoy",
@@ -10540,6 +10563,13 @@ if(btnVolverFlorencePugh) {
 const btnVolverMargaretQualley = document.getElementById('btn-volver-margaret-qualley');
 if(btnVolverMargaretQualley) {
     btnVolverMargaretQualley.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-actores'));
+    });
+}
+
+const btnVolverEwanMcgregor = document.getElementById('btn-volver-ewan-mcgregor');
+if(btnVolverEwanMcgregor) {
+    btnVolverEwanMcgregor.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-actores'));
     });
 }
@@ -23019,6 +23049,16 @@ botonesFiltroQualley.forEach(boton => {
     });
 });
 inicializarFiltroTipoActor('seccion-margaret-qualley', 'btn-filtro-qualley');
+
+const botonesFiltroMcgregor = document.querySelectorAll('.btn-filtro-mcgregor');
+botonesFiltroMcgregor.forEach(boton => {
+    boton.addEventListener('click', function() {
+        botonesFiltroMcgregor.forEach(b => b.classList.remove('activo'));
+        this.classList.add('activo');
+        aplicarFiltroTipoYDecadaActor('seccion-ewan-mcgregor', 'btn-filtro-mcgregor');
+    });
+});
+inicializarFiltroTipoActor('seccion-ewan-mcgregor', 'btn-filtro-mcgregor');
 
 // ==========================================
 // FILTROS "JENNA ORTEGA" (por década)
