@@ -1145,7 +1145,7 @@ const listaMedia = [
     { titulo: "Star Trek Into Darkness", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/7XrRkhMa9lQ71RszzSyVrJVvhyS.jpg" },
     { titulo: "12 Years a Slave", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://www.impawards.com/2013/posters/twelve_years_a_slave.jpg" },
     { titulo: "The Fifth Estate", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/71v3XMCnYqL.AC_UF894,1000_QL80.jpg" },
-    { titulo: "August: Osage County", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://cdn.posteritati.com/posters/000/000/030/057/august-osage-county-md-web.jpg" },
+    { titulo: "August: Osage County", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", fichaTecnicaId: "august-osage-county-2013", poster: "https://cdn.posteritati.com/posters/000/000/030/057/august-osage-county-md-web.jpg" },
     { titulo: "The Hobbit: The Desolation of Smaug", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/xQYiXsheRCDBA39DOrmaw1aSpbk.jpg" },
     { titulo: "The Imitation Game", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNjI3NjY1Mjg3MV5BMl5BanBnXkFtZTgwMzk5MDQ3MjE@.V1_FMjpg_UX1000.jpg" },
     { titulo: "The Hobbit: The Battle of the Five Armies", categoria: "benedict-cumberbatch", subtipo: "2010", tipo: "Película", poster: "https://image.tmdb.org/t/p/original/u1F3Q9fhPmptPKsqMOFJbgiWfRq.jpg" },
@@ -1285,7 +1285,7 @@ const listaMedia = [
     { titulo: "Eat Pray Love", categoria: "julia-roberts", subtipo: "2010", tipo: "Película", fichaTecnicaId: "eat-pray-love-2010", poster: "https://m.media-amazon.com/images/M/MV5BMTY5NDkyNzkyM15BMl5BanBnXkFtZTcwNDQyNDk0Mw@@._V1_.jpg" },
     { titulo: "Larry Crowne", categoria: "julia-roberts", subtipo: "2010", tipo: "Película", fichaTecnicaId: "larry-crowne-2011", poster: "https://image.tmdb.org/t/p/original/nPyoe9J7Lawx8MHEKQfbG4h6V9n.jpg" },
     { titulo: "Mirror Mirror", categoria: "julia-roberts", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMjA5Mzk2MDUyM15BMl5BanBnXkFtZTcwODYzOTAyNw@@._V1_.jpg" },
-    { titulo: "August: Osage County", categoria: "julia-roberts", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BNzQ5ODE4NTcxNV5BMl5BanBnXkFtZTgwNjkyNDQ0MDE@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "August: Osage County", categoria: "julia-roberts", subtipo: "2010", tipo: "Película", fichaTecnicaId: "august-osage-county-2013", poster: "https://m.media-amazon.com/images/M/MV5BNzQ5ODE4NTcxNV5BMl5BanBnXkFtZTgwNjkyNDQ0MDE@._V1_FMjpg_UX1000_.jpg" },
     { titulo: "Secret in Their Eyes", categoria: "julia-roberts", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BMTgwNTI3OTczOV5BMl5BanBnXkFtZTcwMTM3MTUyMw@@._V1_.jpg" },
     { titulo: "Money Monster", categoria: "julia-roberts", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/81M0AuwYLuL._AC_UF894,1000_QL80_.jpg" },
     { titulo: "Mother's Day", categoria: "julia-roberts", subtipo: "2010", tipo: "Película", poster: "https://m.media-amazon.com/images/I/51NhwjiN0gL.jpg" },
@@ -1689,6 +1689,18 @@ const listaMedia = [
     { titulo: "Birds of Prey and The Fantabulous Emancipation of One Harley Quinn", categoria: "ewan-mcgregor", subtipo: "2020", tipo: "Película", fichaTecnicaId: "birds-of-prey-2020", poster: "https://ew.com/thmb/sT-h3pYSc53fKCWxtv5ro4Midno=/2000x0/filters:no_upscale():max_bytes(150000):strip_icc()/birds-of-prey-2000-90f0db5838084a8a8c2eca14edd37e1f.jpg" },
     { titulo: "Obi-Wan Kenobi", categoria: "ewan-mcgregor", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "obi-wan-kenobi", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Ea5Zhl73NttD-fuEjBpy5zvc0CHgbAK65cdKieScq9sYL53sOtIFfaMO&s=10" },
     { titulo: "Halston", categoria: "ewan-mcgregor", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "halston-2021", poster: "https://image.tmdb.org/t/p/w500/uBRpPFcYAYLM7V3x6x7bP3Ucumj.jpg" },
+    { titulo: "The End of Oak Street", categoria: "ewan-mcgregor", subtipo: "2020", tipo: "Película", fichaTecnicaId: "the-end-of-oak-street-2026", poster: "https://image.tmdb.org/t/p/original/fYXqpgPmHMphSF2W30GbTeJVIa5.jpg" },
+    { titulo: "Guillermo del Toro's Pinocchio", categoria: "ewan-mcgregor", subtipo: "2020", tipo: "Película", fichaTecnicaId: "pinocchio-del-toro-2022", poster: "https://image.tmdb.org/t/p/original/2L7NkJVBkfu7TwNbXX9f93LVdaT.jpg" },
+    { titulo: "Raymond & Ray", categoria: "ewan-mcgregor", subtipo: "2020", tipo: "Película", fichaTecnicaId: "raymond-and-ray-2022", poster: "https://image.tmdb.org/t/p/w500/fdKZmSQHD17JjGUYkluhpttgJRi.jpg" },
+    { titulo: "August: Osage County", categoria: "ewan-mcgregor", subtipo: "2010", tipo: "Película", fichaTecnicaId: "august-osage-county-2013", poster: "https://m.media-amazon.com/images/M/MV5BNzQ5ODE4NTcxNV5BMl5BanBnXkFtZTgwNjkyNDQ0MDE@._V1_FMjpg_UX1000_.jpg" },
+    { titulo: "The Ghost Writer", categoria: "ewan-mcgregor", subtipo: "2010", tipo: "Película", fichaTecnicaId: "the-ghost-writer-2010", poster: "https://image.tmdb.org/t/p/original/jloADdyw2jhlM9MupO3BhFUUzgD.jpg" },
+    { titulo: "Nanny McPhee and the Big Bang", categoria: "ewan-mcgregor", subtipo: "2010", tipo: "Película", fichaTecnicaId: "nanny-mcphee-big-bang-2010", poster: "https://image.tmdb.org/t/p/w500/9cgHfgBXVZmVR63AhwJ82R1kAFS.jpg" },
+    { titulo: "Beginners", categoria: "ewan-mcgregor", subtipo: "2010", tipo: "Película", fichaTecnicaId: "beginners-2010", poster: "https://image.tmdb.org/t/p/original/erW28XB46PGFPP7cg3pUvGDojUn.jpg" },
+    { titulo: "Perfect Sense", categoria: "ewan-mcgregor", subtipo: "2010", tipo: "Película", fichaTecnicaId: "perfect-sense-2011", poster: "https://image.tmdb.org/t/p/original/a1saGgXBfnrzqp3LnRx4jU7eYeg.jpg" },
+    { titulo: "Salmon Fishing in the Yemen", categoria: "ewan-mcgregor", subtipo: "2010", tipo: "Película", fichaTecnicaId: "salmon-fishing-in-the-yemen-2011", poster: "https://image.tmdb.org/t/p/original/tSmZAKh1H80AGERgMOvXAWTwbVQ.jpg" },
+    { titulo: "Jack the Giant Slayer", categoria: "ewan-mcgregor", subtipo: "2010", tipo: "Película", fichaTecnicaId: "jack-the-giant-slayer-2013", poster: "https://image.tmdb.org/t/p/original/xLbVsFpAlwf6khU3gG1yaRBPeC.jpg" },
+    { titulo: "Son of a Gun", categoria: "ewan-mcgregor", subtipo: "2010", tipo: "Película", fichaTecnicaId: "son-of-a-gun-2014", poster: "https://image.tmdb.org/t/p/original/yRLVyhQfkW2hn15e8NIqarswLAr.jpg" },
+    { titulo: "A Gentleman in Moscow", categoria: "ewan-mcgregor", subtipo: "2020", tipo: "Serie", fichaTecnicaId: "a-gentleman-in-moscow-2024", poster: "https://image.tmdb.org/t/p/original/1zaGjODdf3flGBVxPXiLLhbqrSq.jpg" },
 
     // --- JENNA ORTEGA (con filtros por década) ---
     { titulo: "The Babysitter: Killer Queen", categoria: "jenna-ortega", subtipo: "2020", tipo: "Película", poster: "https://m.media-amazon.com/images/M/MV5BODk1ZmQ4ODItZjcwZi00MTUxLWE1YWMtMDY2NWJhNzJjMGEyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
@@ -9489,6 +9501,218 @@ botonesFiltroBiblioteca.forEach(boton => {
 });
 
 // ==========================================
+// TÍTULOS EN ESPAÑOL PARA EL BUSCADOR
+// idFicha -> títulos alternativos separados por "|". Para sumar uno nuevo, agregá una línea.
+// ==========================================
+const TITULOS_ES_BUSQUEDA = {
+    "incredible-hulk": "El Increíble Hulk",
+    "capitan-america-1": "Capitán América: El Primer Vengador",
+    "avengers-1": "Los Vengadores|Vengadores",
+    "thor-dark-world": "Thor: El Mundo Oscuro",
+    "capitan-america-winter-soldier": "Capitán América: El Soldado del Invierno",
+    "xmen-first-class": "X-Men: Primera Generación|X-Men: Primera Clase",
+    "xmen-origins-wolverine": "X-Men Orígenes: Wolverine",
+    "x2-xmen-united": "X-Men 2",
+    "xmen-last-stand": "X-Men: La Decisión Final",
+    "the-wolverine": "Wolverine Inmortal|Lobezno Inmortal",
+    "xmen-days-future-past": "X-Men: Días del Futuro Pasado",
+    "xmen-apocalypse": "X-Men: Apocalipsis",
+    "xmen-dark-phoenix": "X-Men: Fénix Oscura",
+    "the-new-mutants": "Los Nuevos Mutantes",
+    "avengers-infinity-war": "Los Vengadores: Guerra del Infinito|Vengadores: Infinity War",
+    "avengers-age-of-ultron": "Los Vengadores: La Era de Ultrón|Vengadores: La Era de Ultrón",
+    "avengers-endgame": "Los Vengadores: Endgame|Vengadores: Endgame",
+    "doctor-strange-1": "Doctor Strange: Hechicero Supremo|Doctor Extraño",
+    "capitan-america-civil-war": "Capitán América: Guerra Civil",
+    "black-panther-1": "Pantera Negra",
+    "spiderman-homecoming": "Spider-Man: De Regreso a Casa",
+    "spiderman-far-from-home": "Spider-Man: Lejos de Casa",
+    "spider-man-no-way-home": "Spider-Man: Sin Camino a Casa",
+    "guardians-of-the-galaxy-1": "Guardianes de la Galaxia",
+    "guardians-of-the-galaxy-2": "Guardianes de la Galaxia Vol. 2",
+    "guardians-of-the-galaxy-3": "Guardianes de la Galaxia Vol. 3",
+    "ant-man-1": "El Hombre Hormiga",
+    "ant-man-and-the-wasp": "Ant-Man y la Avispa",
+    "ant-man-quantumania": "Ant-Man y la Avispa: Quantumania",
+    "thor-love-and-thunder": "Thor: Amor y Trueno",
+    "captain-marvel": "Capitana Marvel",
+    "black-widow-2021": "Viuda Negra",
+    "shang-chi": "Shang-Chi y la Leyenda de los Diez Anillos",
+    "eternals": "Los Eternos",
+    "the-marvels-1": "Las Marvels",
+    "doctor-strange-multiverse-of-madness": "Doctor Strange en el Multiverso de la Locura",
+    "black-panther-wakanda-forever": "Pantera Negra: Wakanda por Siempre",
+    "captain-america-brave-new-world": "Capitán América: Un Nuevo Mundo",
+    "deadpool-wolverine-2024": "Deadpool y Wolverine",
+    "fantastic-four-first-steps": "Los Cuatro Fantásticos: Primeros Pasos",
+    "falcon-winter-soldier": "Falcon y el Soldado del Invierno",
+    "moon-knight-2022": "Caballero Luna",
+    "hawkeye-serie": "Ojo de Halcón",
+    "what-if-2021": "¿Qué pasaría si…?",
+    "secret-invasion-2023": "Invasión Secreta",
+    "man-of-steel": "El Hombre de Acero",
+    "batman-v-superman": "Batman v Superman: El Amanecer de la Justicia",
+    "suicide-squad-2016": "Escuadrón Suicida",
+    "wonder-woman-2017": "La Mujer Maravilla",
+    "wonder-woman-1984": "Mujer Maravilla 1984",
+    "justice-league-2017": "Liga de la Justicia",
+    "zack-snyders-justice-league-2021": "La Liga de la Justicia de Zack Snyder",
+    "shazam-2019": "¡Shazam!",
+    "shazam-fury-of-the-gods-2023": "¡Shazam! La Furia de los Dioses",
+    "aquaman-and-the-lost-kingdom-2023": "Aquaman y el Reino Perdido",
+    "birds-of-prey-2020": "Aves de Presa|Aves de Presa y la Fantabulosa Emancipación de Harley Quinn",
+    "birds-of-prey-2002": "Aves de Presa",
+    "the-penguin-2024": "El Pingüino",
+    "the-suicide-squad-2021": "El Escuadrón Suicida",
+    "creature-commandos": "Comandos de Criaturas",
+    "lanterns-2026": "Linternas",
+    "batman-begins-2005": "Batman Inicia",
+    "the-dark-knight-2008": "El Caballero de la Noche",
+    "the-dark-knight-rises-2012": "El Caballero de la Noche Asciende",
+    "the-prestige-2006": "El Gran Truco|Prestigio",
+    "batman-long-halloween-p1": "Batman: El Largo Halloween - Parte Uno",
+    "batman-long-halloween-p2": "Batman: El Largo Halloween - Parte Dos",
+    "batman-under-the-red-hood-2010": "Batman: Bajo la Capucha Roja",
+    "justice-society-wwii": "Sociedad de la Justicia: Segunda Guerra Mundial",
+    "superman-man-tomorrow": "Superman: El Hombre del Mañana",
+    "flashpoint-paradox-2013": "Liga de la Justicia: La Paradoja del Flashpoint",
+    "justice-league-war-2014": "Liga de la Justicia: Guerra",
+    "son-of-batman-2014": "Hijo de Batman",
+    "throne-of-atlantis-2015": "Liga de la Justicia: El Trono de Atlantis",
+    "justice-league-vs-teen-titans-2016": "Liga de la Justicia vs. Jóvenes Titanes",
+    "justice-league-dark-2017": "Liga de la Justicia Oscura",
+    "teen-titans-judas-contract-2017": "Jóvenes Titanes: El Contrato de Judas",
+    "death-of-superman-2018": "La Muerte de Superman",
+    "reign-of-the-supermen-2019": "El Reino de los Supermanes",
+    "batman-hush-2019": "Batman: Silencio",
+    "justice-league-dark-apokolips-war-2020": "Liga de la Justicia Oscura: La Guerra de Apokolips",
+    "legion-of-super-heroes-2023": "Legión de Superhéroes",
+    "green-lantern-beware-my-power-2022": "Linterna Verde: Cuidado con Mi Poder",
+    "jl-crisis-infinite-earths-p1-2024": "Liga de la Justicia: Crisis en Tierras Infinitas - Parte Uno",
+    "jl-crisis-infinite-earths-p2-2024": "Liga de la Justicia: Crisis en Tierras Infinitas - Parte Dos",
+    "jl-crisis-infinite-earths-p3-2024": "Liga de la Justicia: Crisis en Tierras Infinitas - Parte Tres",
+    "spider-man-2002": "El Hombre Araña",
+    "spider-man-2-2004": "El Hombre Araña 2",
+    "spider-man-3-2007": "El Hombre Araña 3",
+    "the-amazing-spider-man-2012": "El Sorprendente Hombre Araña|El Asombroso Hombre Araña",
+    "the-amazing-spider-man-2-2014": "El Sorprendente Hombre Araña 2|El Asombroso Hombre Araña 2",
+    "spider-man-into-the-spider-verse": "Spider-Man: Un Nuevo Universo|Spider-Man: Un Nuevo Universo",
+    "spider-man-across-the-spider-verse-2023": "Spider-Man: Cruzando el Multiverso",
+    "spider-man-brand-new-day-2026": "Spider-Man: Un Nuevo Día",
+    "venom-let-there-be-carnage-2021": "Venom: Habrá Matanza",
+    "venom-the-last-dance-2024": "Venom: El Último Baile",
+    "kraven-the-hunter-2024": "Kraven el Cazador",
+    "fantastic-four-2005": "Los 4 Fantásticos|Los Cuatro Fantásticos",
+    "fantastic-four-silver-surfer-2007": "Los 4 Fantásticos y Silver Surfer|Los Cuatro Fantásticos y el Surfista Plateado",
+    "howard-the-duck-1986": "Howard, el Pato",
+    "super-hero-squad-show-2009": "Escuadrón de Superhéroes",
+    "joker-2019": "Guasón|Coringa",
+    "following-1998": "El Seguidor",
+    "insomnia-2002": "Insomnio",
+    "inception-2010": "El Origen|Origen",
+    "interstellar-2014": "Interestelar",
+    "dunkirk-2017": "Dunkerque",
+    "the-odyssey-2026": "La Odisea",
+    "rogue-one": "Rogue One: Una Historia de Star Wars",
+    "solo-star-wars-story": "Han Solo: Una Historia de Star Wars",
+    "the-acolyte": "El Acólito",
+    "sw-clone-wars-pelicula": "La Guerra de los Clones (Película)",
+    "sw-clone-wars-serie": "La Guerra de los Clones (Serie)",
+    "sw-tales-of-the-underworld": "Relatos del Inframundo",
+    "sw-tales-of-the-jedi": "Relatos de los Jedi",
+    "la-la-land-2016": "La La Land: Una Historia de Amor",
+    "sing-2016": "Sing: ¡Ven y Canta!",
+    "sweeney-todd-2007": "Sweeney Todd: El Barbero Diabólico de la Calle Fleet",
+    "alien-1979": "Alien, el Octavo Pasajero",
+    "aliens-1986": "Aliens: El Regreso",
+    "spirit-untamed": "Spirit: El Indomable",
+    "maya-and-the-three": "Maya y los Tres",
+    "father-of-the-bride-2022": "El Padre de la Novia",
+    "prisoners": "Prisioneros",
+    "enemy": "Enemigo",
+    "arrival": "La Llegada",
+    "west-side-story-2021": "Amor Sin Barreras",
+    "tragedy-of-macbeth": "La Tragedia de Macbeth",
+    "lost-daughter": "La Hija Oscura",
+    "parallel-mothers": "Madres Paralelas",
+    "a-dangerous-method": "Un Método Peligroso",
+    "american-psycho-2000": "Psicópata Americano",
+    "captain-corellis-mandolin-2001": "La Mandolina del Capitán Corelli",
+    "reign-of-fire-2002": "El Reino del Fuego",
+    "rescue-dawn-2007": "Rescate al Amanecer",
+    "3-10-to-yuma-2007": "El Tren de las 3:10 a Yuma",
+    "im-not-there-2007": "Yo No Estoy Ahí",
+    "public-enemies-2009": "Enemigos Públicos",
+    "the-fighter-2010": "El Peleador",
+    "flowers-of-war-2011": "Las Flores de la Guerra",
+    "american-hustle-2013": "El Gran Estafador",
+    "exodus-gods-and-kings-2014": "Exodus: Dioses y Reyes",
+    "knight-of-cups-2015": "Caballero de Copas",
+    "the-big-short-2015": "La Gran Apuesta",
+    "vice-2018": "El Vicio del Poder",
+    "ford-v-ferrari-2019": "Contra lo Imposible|Le Mans '66",
+    "empire-of-the-sun-1987": "El Imperio del Sol",
+    "henry-v-1989": "Enrique V",
+    "little-women-1994": "Mujercitas",
+    "little-women-2019": "Mujercitas",
+    "the-portrait-of-a-lady-1996": "Retrato de una Dama",
+    "midsummer-nights-dream-1999": "Sueño de una Noche de Verano",
+    "mowgli-legend-of-the-jungle-2018": "Mowgli: La Leyenda de la Selva",
+    "the-impossible-2012": "Lo Imposible",
+    "in-the-heart-of-the-sea-2015": "En el Corazón del Mar",
+    "the-lost-city-of-z-2016": "La Ciudad Perdida de Z",
+    "the-current-war-2017": "La Guerra de las Corrientes",
+    "chaos-walking-2021": "Caos: El Inicio",
+    "friends-with-benefits-2011": "Amigos con Beneficios",
+    "the-help-2011": "Historias Cruzadas",
+    "the-croods-2013": "Los Croods",
+    "the-croods-a-new-age-2020": "Los Croods 2: Una Nueva Era",
+    "magic-in-the-moonlight-2014": "Magia a la Luz de la Luna",
+    "irrational-man-2015": "El Hombre Irracional",
+    "battle-of-the-sexes-2017": "La Batalla de los Sexos",
+    "the-favourite-2018": "La Favorita",
+    "zombieland-2009": "Bienvenidos a Zombieland",
+    "zombieland-double-tap-2019": "Zombieland: Mata y Remata",
+    "poor-things-2023": "Pobres Criaturas",
+    "kinds-of-kindness-2024": "Tipos de Gentileza",
+    "once-upon-a-time-in-hollywood-2019": "Había una Vez en Hollywood",
+    "a-good-person-2023": "Una Buena Persona",
+    "the-wonder-2022": "El Prodigio",
+    "mad-max-fury-road": "Mad Max: Furia en el Camino",
+    "after-earth": "Después de la Tierra",
+    "the-snowman-2017": "El Muñeco de Nieve",
+    "the-commuter-2018": "El Pasajero",
+    "king-lear-2018": "El Rey Lear",
+    "little-drummer-girl-2018": "La Chica del Tambor",
+    "ticket-to-paradise-2022": "Ticket al Paraíso",
+    "leave-the-world-behind-2023": "Dejar el Mundo Atrás",
+    "the-promise-2016": "La Promesa",
+    "a-gentleman-in-moscow-2024": "Un Caballero en Moscú",
+    "pinocchio-del-toro-2022": "Pinocho de Guillermo del Toro|Pinocho",
+    "raymond-and-ray-2022": "Raymond y Ray",
+    "august-osage-county-2013": "Agosto|Agosto: Condado de Osage",
+    "the-ghost-writer-2010": "El Escritor|El Escritor Fantasma",
+    "nanny-mcphee-big-bang-2010": "La Niñera Mágica y el Big Bang|Nanny McPhee y el Big Bang",
+    "salmon-fishing-in-the-yemen-2011": "Pesca de Salmón en Yemen",
+    "jack-the-giant-slayer-2013": "Jack el Cazagigantes",
+};
+function normalizarParaBuscar(txt) {
+    return String(txt || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
+function textoBuscableDeTarjeta(tarjeta) {
+    let texto = tarjeta.querySelector('h3').textContent;
+    const btnFicha = tarjeta.querySelector('[data-ficha-tecnica]');
+    const claves = [];
+    if (btnFicha) claves.push(btnFicha.getAttribute('data-ficha-tecnica'));
+    if (tarjeta.dataset && tarjeta.dataset.coleccion) claves.push(tarjeta.dataset.coleccion);
+    claves.forEach(id => {
+        if (TITULOS_ES_BUSQUEDA[id]) texto += ' | ' + TITULOS_ES_BUSQUEDA[id];
+        if (typeof FICHAS_TECNICAS_TITULOS !== 'undefined' && typeof FICHAS_TECNICAS_TITULOS[id] === 'string') texto += ' | ' + FICHAS_TECNICAS_TITULOS[id];
+    });
+    return normalizarParaBuscar(texto);
+}
+
+// ==========================================
 // BUSCADOR GLOBAL
 // ==========================================
 const buscadorGlobal = document.getElementById('buscador-global');
@@ -9496,7 +9720,7 @@ const todasLasSeccionesParaBuscador = document.querySelectorAll('main section');
 
 if(buscadorGlobal) {
     buscadorGlobal.addEventListener('input', function() {
-        const textoBuscado = this.value.toLowerCase().trim();
+        const textoBuscado = normalizarParaBuscar(this.value).trim();
         const todasLasTarjetas = document.querySelectorAll('.tarjeta-media');
 
         if (textoBuscado === '') {
@@ -9517,8 +9741,7 @@ if(buscadorGlobal) {
                 let tieneCoincidencias = false;
                 const tarjetasEnSeccion = sec.querySelectorAll('.tarjeta-media');
                 tarjetasEnSeccion.forEach(tarjeta => {
-                    const titulo = tarjeta.querySelector('h3').textContent.toLowerCase();
-                    if (titulo.includes(textoBuscado)) {
+                    if (textoBuscableDeTarjeta(tarjeta).includes(textoBuscado)) {
                         tarjeta.style.display = 'flex';
                         tieneCoincidencias = true;
                     } else {
@@ -14973,7 +15196,7 @@ if (btnVolverFichaHawkeyeSerie) {
     }
 });
 
-['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023', 'arrietty-2010', 'the-impossible-2012', 'how-i-live-now-2013', 'wolf-hall-2015', 'in-the-heart-of-the-sea-2015', 'edge-of-winter-2016', 'the-lost-city-of-z-2016', 'pilgrimage-2017', 'the-current-war-2017', 'cherry-2021', 'onward-2020', 'chaos-walking-2021', 'uncharted-2022', 'dolittle-2020', 'the-devil-all-the-time-2020', 'marmaduke-2010', 'easy-a-2010', 'crazy-stupid-love-2011', 'the-amazing-spider-man-2012', 'gangster-squad-2013', 'movie-43-2013', 'the-amazing-spider-man-2-2014', 'friends-with-benefits-2011', 'the-help-2011', 'the-croods-2013', 'magic-in-the-moonlight-2014', 'birdman-2014', 'aloha-2015', 'irrational-man-2015', 'battle-of-the-sexes-2017', 'maniac-2018', 'the-favourite-2018', 'zombieland-double-tap-2019', 'superbad-2007', 'the-rocker-2008', 'the-house-bunny-2008', 'ghosts-of-girlfriends-past-2009', 'zombieland-2009', 'paper-man-2009', 'the-curse-2023', 'the-croods-a-new-age-2020', 'cruella-2021', 'poor-things-2023', 'kinds-of-kindness-2024', 'eddington-2025', 'bugonia-2025', 'palo-alto-2013', 'the-leftovers-2014', 'the-nice-guys-2016', 'death-note-2017', 'novitiate-2017', 'the-vanishing-of-sidney-hall-2017', 'donnybrook-2018', 'green-lantern-beware-my-power-2022', 'legion-of-super-heroes-2023', 'justice-league-warworld-2023', 'jl-crisis-infinite-earths-p1-2024', 'jl-crisis-infinite-earths-p2-2024', 'jl-crisis-infinite-earths-p3-2024', 'native-son-2019', 'fosse-verdon-2019', 'once-upon-a-time-in-hollywood-2019', 'adam-2019', 'strange-but-true-2019', 'seberg-2019', 'my-salinger-year-2020', 'maid-2021', 'stars-at-noon-2022', 'sanctuary-2022', 'drive-away-dolls-2024', 'the-substance-2024', 'happy-gilmore-2-2025', 'honey-dont-2025', 'blue-moon-2025', 'how-to-make-a-killing-2026', 'io-2019', 'the-dog-stars-2026', 'spider-man-brand-new-day-2026', 'marvel-zombies-serie-2025', 'we-live-in-time-2024', 'oppenheimer-2023', 'a-good-person-2023', 'the-wonder-2022', 'flashpoint-paradox-2013', 'justice-league-war-2014', 'son-of-batman-2014', 'throne-of-atlantis-2015', 'batman-vs-robin-2015', 'the-falling-2014', 'lady-macbeth-2016', 'outlaw-king-2018', 'malevolent-2018', 'fighting-with-my-family-2019', 'little-women-2019', 'batman-bad-blood-2016', 'justice-league-vs-teen-titans-2016', 'justice-league-dark-2017', 'teen-titans-judas-contract-2017', 'suicide-squad-hell-to-pay-2018', 'death-of-superman-2018', 'constantine-city-of-demons-2018', 'reign-of-the-supermen-2019', 'batman-hush-2019', 'wonder-woman-bloodlines-2019', 'justice-league-dark-apokolips-war-2020', 'midsommar-2019', 'the-commuter-2018', 'king-lear-2018', 'little-drummer-girl-2018', 'marcella-2016', 'suicide-squad-2016', 'wonder-woman-2017', 'justice-league-2017', 'ticket-to-paradise-2022', 'leave-the-world-behind-2023', 'after-the-hunt-2025', 'aquaman-2018', 'zack-snyders-justice-league-2021', 'shazam-2019', 'valentines-day-2010', 'eat-pray-love-2010', 'agatha-all-along-2024', 'what-if-2021', 'secret-invasion-2023', 'ironheart-2025', 'clayface-2026', 'larry-crowne-2011', 'moon-knight-2022', 'i-am-groot-2022', 'she-hulk-attorney-at-law-2022', 'werewolf-by-night-2022', 'echo-2024', 'daredevil-born-again-2025', 'eyes-of-wakanda-2025', 'wonder-man-2026', 'punisher-one-last-kill-2026', 'birds-of-prey-2020', 'wonder-woman-1984', 'black-adam-2022', 'the-penguin-2024', 'shazam-fury-of-the-gods-2023', 'the-flash-2023', 'aquaman-and-the-lost-kingdom-2023', 'spider-man-2002', 'spider-man-2-2004', 'spider-man-3-2007', 'venom-let-there-be-carnage-2021', 'morbius-2022', 'venom-the-last-dance-2024', 'kraven-the-hunter-2024', 'fantastic-four-2005', 'fantastic-four-silver-surfer-2007', 'howard-the-duck-1986', 'hulk-2003', 'super-hero-squad-show-2009', 'spider-man-across-the-spider-verse-2023', 'joker-2019', 'joker-folie-a-deux-2024', 'following-1998', 'memento-2000', 'insomnia-2002', 'inception-2010', 'interstellar-2014', 'dunkirk-2017', 'tenet-2020', 'the-odyssey-2026', 'ahsoka-2023', 'skeleton-crew-2024', 'star-wars-the-bad-batch', 'halston-2021'].forEach(id => {
+['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023', 'arrietty-2010', 'the-impossible-2012', 'how-i-live-now-2013', 'wolf-hall-2015', 'in-the-heart-of-the-sea-2015', 'edge-of-winter-2016', 'the-lost-city-of-z-2016', 'pilgrimage-2017', 'the-current-war-2017', 'cherry-2021', 'onward-2020', 'chaos-walking-2021', 'uncharted-2022', 'dolittle-2020', 'the-devil-all-the-time-2020', 'marmaduke-2010', 'easy-a-2010', 'crazy-stupid-love-2011', 'the-amazing-spider-man-2012', 'gangster-squad-2013', 'movie-43-2013', 'the-amazing-spider-man-2-2014', 'friends-with-benefits-2011', 'the-help-2011', 'the-croods-2013', 'magic-in-the-moonlight-2014', 'birdman-2014', 'aloha-2015', 'irrational-man-2015', 'battle-of-the-sexes-2017', 'maniac-2018', 'the-favourite-2018', 'zombieland-double-tap-2019', 'superbad-2007', 'the-rocker-2008', 'the-house-bunny-2008', 'ghosts-of-girlfriends-past-2009', 'zombieland-2009', 'paper-man-2009', 'the-curse-2023', 'the-croods-a-new-age-2020', 'cruella-2021', 'poor-things-2023', 'kinds-of-kindness-2024', 'eddington-2025', 'bugonia-2025', 'palo-alto-2013', 'the-leftovers-2014', 'the-nice-guys-2016', 'death-note-2017', 'novitiate-2017', 'the-vanishing-of-sidney-hall-2017', 'donnybrook-2018', 'green-lantern-beware-my-power-2022', 'legion-of-super-heroes-2023', 'justice-league-warworld-2023', 'jl-crisis-infinite-earths-p1-2024', 'jl-crisis-infinite-earths-p2-2024', 'jl-crisis-infinite-earths-p3-2024', 'native-son-2019', 'fosse-verdon-2019', 'once-upon-a-time-in-hollywood-2019', 'adam-2019', 'strange-but-true-2019', 'seberg-2019', 'my-salinger-year-2020', 'maid-2021', 'stars-at-noon-2022', 'sanctuary-2022', 'drive-away-dolls-2024', 'the-substance-2024', 'happy-gilmore-2-2025', 'honey-dont-2025', 'blue-moon-2025', 'how-to-make-a-killing-2026', 'io-2019', 'the-dog-stars-2026', 'spider-man-brand-new-day-2026', 'marvel-zombies-serie-2025', 'we-live-in-time-2024', 'oppenheimer-2023', 'a-good-person-2023', 'the-wonder-2022', 'flashpoint-paradox-2013', 'justice-league-war-2014', 'son-of-batman-2014', 'throne-of-atlantis-2015', 'batman-vs-robin-2015', 'the-falling-2014', 'lady-macbeth-2016', 'outlaw-king-2018', 'malevolent-2018', 'fighting-with-my-family-2019', 'little-women-2019', 'batman-bad-blood-2016', 'justice-league-vs-teen-titans-2016', 'justice-league-dark-2017', 'teen-titans-judas-contract-2017', 'suicide-squad-hell-to-pay-2018', 'death-of-superman-2018', 'constantine-city-of-demons-2018', 'reign-of-the-supermen-2019', 'batman-hush-2019', 'wonder-woman-bloodlines-2019', 'justice-league-dark-apokolips-war-2020', 'midsommar-2019', 'the-commuter-2018', 'king-lear-2018', 'little-drummer-girl-2018', 'marcella-2016', 'suicide-squad-2016', 'wonder-woman-2017', 'justice-league-2017', 'ticket-to-paradise-2022', 'leave-the-world-behind-2023', 'after-the-hunt-2025', 'aquaman-2018', 'zack-snyders-justice-league-2021', 'shazam-2019', 'valentines-day-2010', 'eat-pray-love-2010', 'agatha-all-along-2024', 'what-if-2021', 'secret-invasion-2023', 'ironheart-2025', 'clayface-2026', 'larry-crowne-2011', 'moon-knight-2022', 'i-am-groot-2022', 'she-hulk-attorney-at-law-2022', 'werewolf-by-night-2022', 'echo-2024', 'daredevil-born-again-2025', 'eyes-of-wakanda-2025', 'wonder-man-2026', 'punisher-one-last-kill-2026', 'birds-of-prey-2020', 'wonder-woman-1984', 'black-adam-2022', 'the-penguin-2024', 'shazam-fury-of-the-gods-2023', 'the-flash-2023', 'aquaman-and-the-lost-kingdom-2023', 'spider-man-2002', 'spider-man-2-2004', 'spider-man-3-2007', 'venom-let-there-be-carnage-2021', 'morbius-2022', 'venom-the-last-dance-2024', 'kraven-the-hunter-2024', 'fantastic-four-2005', 'fantastic-four-silver-surfer-2007', 'howard-the-duck-1986', 'hulk-2003', 'super-hero-squad-show-2009', 'spider-man-across-the-spider-verse-2023', 'joker-2019', 'joker-folie-a-deux-2024', 'following-1998', 'memento-2000', 'insomnia-2002', 'inception-2010', 'interstellar-2014', 'dunkirk-2017', 'tenet-2020', 'the-odyssey-2026', 'ahsoka-2023', 'skeleton-crew-2024', 'star-wars-the-bad-batch', 'halston-2021', 'the-end-of-oak-street-2026', 'pinocchio-del-toro-2022', 'raymond-and-ray-2022', 'august-osage-county-2013', 'the-ghost-writer-2010', 'nanny-mcphee-big-bang-2010', 'beginners-2010', 'perfect-sense-2011', 'salmon-fishing-in-the-yemen-2011', 'jack-the-giant-slayer-2013', 'son-of-a-gun-2014', 'a-gentleman-in-moscow-2024'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -15644,6 +15867,18 @@ const FICHAS_TECNICAS_TITULOS = {
     "skeleton-crew-2024": "Skeleton Crew",
     "star-wars-the-bad-batch": "The Bad Batch",
     "halston-2021": "Halston",
+    "the-end-of-oak-street-2026": "The End of Oak Street",
+    "pinocchio-del-toro-2022": "Guillermo del Toro's Pinocchio",
+    "raymond-and-ray-2022": "Raymond & Ray",
+    "august-osage-county-2013": "August: Osage County",
+    "the-ghost-writer-2010": "The Ghost Writer",
+    "nanny-mcphee-big-bang-2010": "Nanny McPhee and the Big Bang",
+    "beginners-2010": "Beginners",
+    "perfect-sense-2011": "Perfect Sense",
+    "salmon-fishing-in-the-yemen-2011": "Salmon Fishing in the Yemen",
+    "jack-the-giant-slayer-2013": "Jack the Giant Slayer",
+    "son-of-a-gun-2014": "Son of a Gun",
+    "a-gentleman-in-moscow-2024": "A Gentleman in Moscow",
     "spies-in-disguise-2019": "Spies in Disguise",
     "the-crowded-room-2023": "The Crowded Room",
     "mio-in-the-land-of-faraway-1987": "Mio in the Land of Faraway",
@@ -20002,6 +20237,150 @@ const REPARTO_PELICULAS = {
             { actor: "Gian Franco Rodriguez", personaje: "Victor Hugo" },
             { actor: "Sullivan Jones", personaje: "Ed Austin" },
             { actor: "Mary Beth Peil", personaje: "Martha Graham" }
+        ]
+    },
+    "the-end-of-oak-street-2026": {
+        director: "David Robert Mitchell",
+        elenco: [
+            { actor: "Anne Hathaway", personaje: "Denise Platt" },
+            { actor: "Ewan McGregor", personaje: "Greg Platt" },
+            { actor: "Maisy Stella", personaje: "Audrey Platt" },
+            { actor: "Christian Convery", personaje: "Brian Platt" },
+            { actor: "Jordan Alexa Davis", personaje: "Jeannette Christiansen" },
+            { actor: "P. J. Byrne", personaje: "Mel Jacobs" }
+        ]
+    },
+    "pinocchio-del-toro-2022": {
+        director: "Guillermo del Toro, Mark Gustafson",
+        elenco: [
+            { actor: "Gregory Mann", personaje: "Pinocho / Carlo (voz)" },
+            { actor: "Ewan McGregor", personaje: "Sebastian J. Cricket (voz)" },
+            { actor: "David Bradley", personaje: "Geppetto (voz)" },
+            { actor: "Christoph Waltz", personaje: "Conde Volpe (voz)" },
+            { actor: "Cate Blanchett", personaje: "Spazzatura (voz)" },
+            { actor: "Ron Perlman", personaje: "El Podestà (voz)" },
+            { actor: "Finn Wolfhard", personaje: "Candlewick (voz)" },
+            { actor: "Burn Gorman", personaje: "El Sacerdote (voz)" },
+            { actor: "John Turturro", personaje: "El Dottore (voz)" },
+            { actor: "Tim Blake Nelson", personaje: "Los Conejos Negros (voz)" },
+            { actor: "Tilda Swinton", personaje: "Hada del Bosque / La Muerte (voz)" }
+        ]
+    },
+    "raymond-and-ray-2022": {
+        director: "Rodrigo García",
+        elenco: [
+            { actor: "Ewan McGregor", personaje: "Raymond" },
+            { actor: "Ethan Hawke", personaje: "Ray" },
+            { actor: "Maribel Verdú", personaje: "Lucia" },
+            { actor: "Sophie Okonedo", personaje: "Kiera" },
+            { actor: "Vondie Curtis-Hall", personaje: "Reverendo West" },
+            { actor: "Oscar Nuñez", personaje: "Mendez" },
+            { actor: "Maxim Swinton", personaje: "Simon" }
+        ]
+    },
+    "august-osage-county-2013": {
+        director: "John Wells",
+        elenco: [
+            { actor: "Meryl Streep", personaje: "Violet Weston" },
+            { actor: "Julia Roberts", personaje: "Barbara Fordham" },
+            { actor: "Ewan McGregor", personaje: "Bill Fordham" },
+            { actor: "Chris Cooper", personaje: "Charles Aiken" },
+            { actor: "Abigail Breslin", personaje: "Jean Fordham" },
+            { actor: "Benedict Cumberbatch", personaje: "Little Charles Aiken" },
+            { actor: "Juliette Lewis", personaje: "Karen Weston" },
+            { actor: "Margo Martindale", personaje: "Mattie Fae Aiken" },
+            { actor: "Dermot Mulroney", personaje: "Steve Heidebrecht" },
+            { actor: "Julianne Nicholson", personaje: "Ivy Weston" },
+            { actor: "Sam Shepard", personaje: "Beverly Weston" }
+        ]
+    },
+    "the-ghost-writer-2010": {
+        director: "Roman Polanski",
+        elenco: [
+            { actor: "Ewan McGregor", personaje: "El Escritor Fantasma" },
+            { actor: "Pierce Brosnan", personaje: "Adam Lang" },
+            { actor: "Kim Cattrall", personaje: "Amelia Bly" },
+            { actor: "Olivia Williams", personaje: "Ruth Lang" },
+            { actor: "Tom Wilkinson", personaje: "Paul Emmett" },
+            { actor: "Timothy Hutton", personaje: "Sidney Kroll" },
+            { actor: "James Belushi", personaje: "John Maddox" },
+            { actor: "Eli Wallach", personaje: "Anciano" }
+        ]
+    },
+    "nanny-mcphee-big-bang-2010": {
+        director: "Susanna White",
+        elenco: [
+            { actor: "Emma Thompson", personaje: "Nanny McPhee" },
+            { actor: "Maggie Gyllenhaal", personaje: "Isabel Green" },
+            { actor: "Rhys Ifans", personaje: "Phil Green" },
+            { actor: "Ralph Fiennes", personaje: "Lord Gray" },
+            { actor: "Maggie Smith", personaje: "Mrs. Docherty" },
+            { actor: "Ewan McGregor", personaje: "Rory Green" },
+            { actor: "Asa Butterfield", personaje: "Norman Green" },
+            { actor: "Eros Vlahos", personaje: "Cyril Gray" },
+            { actor: "Rosie Taylor-Ritson", personaje: "Celia Gray" }
+        ]
+    },
+    "beginners-2010": {
+        director: "Mike Mills",
+        elenco: [
+            { actor: "Ewan McGregor", personaje: "Oliver Fields" },
+            { actor: "Christopher Plummer", personaje: "Hal Fields" },
+            { actor: "Mélanie Laurent", personaje: "Anna" }
+        ]
+    },
+    "perfect-sense-2011": {
+        director: "David Mackenzie",
+        elenco: [
+            { actor: "Ewan McGregor", personaje: "Michael" },
+            { actor: "Eva Green", personaje: "Susan" },
+            { actor: "Ewen Bremner", personaje: "James" }
+        ]
+    },
+    "salmon-fishing-in-the-yemen-2011": {
+        director: "Lasse Hallström",
+        elenco: [
+            { actor: "Ewan McGregor", personaje: "Dr. Alfred Jones" },
+            { actor: "Emily Blunt", personaje: "Harriet Chetwode-Talbot" },
+            { actor: "Kristin Scott Thomas", personaje: "Patricia Maxwell" },
+            { actor: "Amr Waked", personaje: "Jeque Muhammed" },
+            { actor: "Tom Mison", personaje: "Capitán Robert Mayers" },
+            { actor: "Rachael Stirling", personaje: "Mary Jones" }
+        ]
+    },
+    "jack-the-giant-slayer-2013": {
+        director: "Bryan Singer",
+        elenco: [
+            { actor: "Nicholas Hoult", personaje: "Jack" },
+            { actor: "Eleanor Tomlinson", personaje: "Isabelle" },
+            { actor: "Stanley Tucci", personaje: "Roderick" },
+            { actor: "Ewan McGregor", personaje: "Elmont" },
+            { actor: "Ian McShane", personaje: "Rey Brahmwell" },
+            { actor: "Bill Nighy", personaje: "Fallon (voz)" }
+        ]
+    },
+    "son-of-a-gun-2014": {
+        director: "Julius Avery",
+        elenco: [
+            { actor: "Ewan McGregor", personaje: "Brendan Lynch" },
+            { actor: "Brenton Thwaites", personaje: "JR" },
+            { actor: "Alicia Vikander", personaje: "Tasha" },
+            { actor: "Jacek Koman", personaje: "Sam" },
+            { actor: "Matt Nable", personaje: "Sterlo" },
+            { actor: "Nash Edgerton", personaje: "Chris" },
+            { actor: "Damon Herriman", personaje: "Soldado Wilson" }
+        ]
+    },
+    "a-gentleman-in-moscow-2024": {
+        director: "Ben Vanstone (showrunner y guionista), Tom Harper (productor ejecutivo)",
+        elenco: [
+            { actor: "Ewan McGregor", personaje: "Conde Alexander Rostov" },
+            { actor: "Mary Elizabeth Winstead", personaje: "Anna Urbanova" },
+            { actor: "Johnny Harris", personaje: "Osip Glebnikov" },
+            { actor: "Leah Harvey", personaje: "Marina Samarova" },
+            { actor: "Paul Ready", personaje: "Príncipe Nikolai Petrov" },
+            { actor: "Alexa Goodall", personaje: "Nina" },
+            { actor: "Beau Gadsdon", personaje: "Sofia (mayor)" }
         ]
     },
     "spies-in-disguise-2019": {
