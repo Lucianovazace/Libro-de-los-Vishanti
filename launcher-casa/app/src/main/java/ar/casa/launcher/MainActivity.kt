@@ -46,7 +46,8 @@ class Tile(
     val detail: String,
     val packages: List<String>,
     val labelHint: String? = null,
-    val big: Boolean = false
+    val big: Boolean = false,
+    val mia: Boolean = false
 )
 
 class AppEntry(val label: String, val icon: Drawable, val intent: Intent)
@@ -131,6 +132,12 @@ class MainActivity : Activity() {
             4, 2, 2, 1,
             "Prende o apaga el Samsung. Abre SmartThings.",
             listOf(SMARTTHINGS)
+        ),
+        Tile(
+            "MIA", "Hablá con tu asistente", 0xFF3B3B8F.toInt(), R.drawable.ic_mia, false,
+            5, 0, 4, 1,
+            "Tu asistente personal. Entiende las órdenes de la casa y charla usando la PC. Se configura adentro, en Ajustes.",
+            emptyList(), mia = true
         )
     )
 
@@ -219,7 +226,7 @@ class MainActivity : Activity() {
         val pad = dp(16)
         val gap = dp(6)
         val unitW = (screenW - 2 * pad) / 4
-        val unitH = dp(85) + gap
+        val unitH = dp(78) + gap
 
         val col = LinearLayout(this)
         col.orientation = LinearLayout.VERTICAL
@@ -229,7 +236,7 @@ class MainActivity : Activity() {
 
         val grid = GridLayout(this)
         grid.columnCount = 4
-        grid.rowCount = 5
+        grid.rowCount = 6
         tiles.forEachIndexed { i, t ->
             grid.addView(tileView(t, i, unitW, unitH, gap))
         }
@@ -311,6 +318,7 @@ class MainActivity : Activity() {
     private fun select(index: Int) {
         val t = tiles[index]
         detailTitle.text = t.label
+        if (t.mia) { detailText.text = t.detail; return }
         val linked = !prefs.getString("dev_" + t.label, "").isNullOrBlank() &&
             !prefs.getString("vm_token", "").isNullOrBlank()
         val phrase = phraseFor(t)
@@ -323,6 +331,7 @@ class MainActivity : Activity() {
     }
 
     private fun openTile(t: Tile) {
+        if (t.mia) { startActivity(Intent(this, MiaActivity::class.java)); return }
         val token = prefs.getString("vm_token", "") ?: ""
         val device = prefs.getString("dev_" + t.label, "") ?: ""
         if (token.isNotBlank() && device.isNotBlank()) {
@@ -383,6 +392,7 @@ class MainActivity : Activity() {
     }
 
     private fun configure(t: Tile) {
+        if (t.mia) { startActivity(Intent(this, MiaActivity::class.java)); return }
         val box = LinearLayout(this)
         box.orientation = LinearLayout.VERTICAL
         box.setPadding(dp(20), dp(8), dp(20), 0)
