@@ -1714,6 +1714,9 @@ const listaMedia = [
     { titulo: "Black Hawk Down", categoria: "ewan-mcgregor", subtipo: "2000", tipo: "Película", fichaTecnicaId: "black-hawk-down-2001", poster: "https://image.tmdb.org/t/p/w500/7fU5dSqKRL4XHeEUz62rCKBfYok.jpg" },
     { titulo: "Down with Love", categoria: "ewan-mcgregor", subtipo: "2000", tipo: "Película", fichaTecnicaId: "down-with-love-2003", poster: "https://image.tmdb.org/t/p/original/5ZZmjPGEQAPCL5KyJGkcsthTP2w.jpg" },
     { titulo: "Young Adam", categoria: "ewan-mcgregor", subtipo: "2000", tipo: "Película", fichaTecnicaId: "young-adam-2003", poster: "https://image.tmdb.org/t/p/w500/rU5GJ5r4tQbSx9C2ENKbPkD6nr9.jpg" },
+    { titulo: "The Island", categoria: "ewan-mcgregor", subtipo: "2000", tipo: "Película", fichaTecnicaId: "the-island-2005", poster: "https://image.tmdb.org/t/p/original/k2E0JZy2B8TsvRZng8ohuS1MraM.jpg" },
+    { titulo: "Stay", categoria: "ewan-mcgregor", subtipo: "2000", tipo: "Película", fichaTecnicaId: "stay-2005", poster: "https://image.tmdb.org/t/p/original/nrLZVP8jG0KBcabahRPp6UP7Oy2.jpg" },
+    { titulo: "Stormbreaker", categoria: "ewan-mcgregor", subtipo: "2000", tipo: "Película", fichaTecnicaId: "stormbreaker-2006", poster: "https://image.tmdb.org/t/p/original/vhylTnqmZGPAn1zqObb3pUrotVz.jpg" },
     { titulo: "Fargo", categoria: "ewan-mcgregor", subtipo: "2010", tipo: "Serie", fichaTecnicaId: "fargo-serie-2014", poster: "https://image.tmdb.org/t/p/original/a3VW6khsyUVKrG0GBCWFG3NzWPX.jpg" },
     { titulo: "Big Fish", categoria: "ewan-mcgregor", subtipo: "2000", tipo: "Película", fichaTecnicaId: "big-fish-2003", poster: "https://image.tmdb.org/t/p/w500/tjK063yCgaBAluVU72rZ6PKPH2l.jpg" },
     { titulo: "Robots", categoria: "ewan-mcgregor", subtipo: "2000", tipo: "Película", fichaTecnicaId: "robots-2005", poster: "https://image.tmdb.org/t/p/original/6v9aN5zTwHj2bPkPRKitxqZC132.jpg" },
@@ -5559,8 +5562,8 @@ const colecciones = [
             { titulo: "Guardianes de La Galaxia", poster: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p12037541_b_v8_ay.jpg" },
             { titulo: "Iron Man y Hulk: Héroes Unidos", poster: "https://m.media-amazon.com/images/M/MV5BNmQ4NDY1YWEtNTdmZi00ZmQ5LTk3MzYtYzBkNzhmNTM2Yzk5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
             { titulo: "Iron Man y Capitán América: Héroes Unidos", poster: "https://m.media-amazon.com/images/M/MV5BZjkxMTM1YmYtZDRkNC00YWNlLWFiYjAtZGIyMmQyYjI0ZjFjXkEyXkFqcGc@._V1_.jpg" },
-            { titulo: "Ultimate Spider-Man", poster: "https://static.wikia.nocookie.net/spiderman/images/a/ad/Usmpromo.jpg/revision/latest?cb=20130127003133" },
-            { titulo: "Avengers Assemble", poster: "https://static.wikia.nocookie.net/marvelanimateduniversedisney/images/5/5e/Avengers_Assemble_Season_1_Poster.jpg/revision/latest?cb=20201015075047" }
+            { titulo: "Ultimate Spider-Man", poster: "https://static.wikia.nocookie.net/spiderman/images/a/ad/Usmpromo.jpg/revision/latest?cb=20130127003133", enlaceColeccionId: "ultimate-spider-man", etiqueta: "Serie (todas las temporadas)" },
+            { titulo: "Avengers Assemble", poster: "https://static.wikia.nocookie.net/marvelanimateduniversedisney/images/5/5e/Avengers_Assemble_Season_1_Poster.jpg/revision/latest?cb=20201015075047", enlaceColeccionId: "avengers-assemble", etiqueta: "Serie (todas las temporadas)" }
         ]
     },
     {
@@ -5574,7 +5577,9 @@ const colecciones = [
             { titulo: "Spider-Man: The Animated Series", poster: "https://m.media-amazon.com/images/M/MV5BYWRkN2M1NmQtZjhjMi00ODFjLTk2ODctYWJiOWNkNjg1OGY4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
             { titulo: "Iron Man (1994)", poster: "https://m.media-amazon.com/images/M/MV5BY2Q1M2YyYzctNGZlZi00OTM3LTkxNTEtMGU0MTU1OWJiNjg5XkEyXkFqcGc@._V1_.jpg" },
             { titulo: "Fantastic Four (1994)", poster: "https://m.media-amazon.com/images/M/MV5BNzM1MTM1MTMtMmQ2Zi00ZTM1LTk1MzctNTY1NGNiNzZiNmUyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
-            { titulo: "The Incredible Hulk (1996)", poster: "https://image.tmdb.org/t/p/original/eXyZvkbrTdcM6CtAmQU7SqDRZdr.jpg" }
+            { titulo: "The Incredible Hulk (1996)", poster: "https://image.tmdb.org/t/p/original/eXyZvkbrTdcM6CtAmQU7SqDRZdr.jpg" },
+            { titulo: "X-Men '92", poster: "https://image.tmdb.org/t/p/original/2OFwsFhAobczgJWnVdwd9oZAF2N.jpg", enlaceColeccionId: "x-men-92", etiqueta: "Serie (todas las temporadas)" },
+            { titulo: "X-Men '97", poster: "https://m.media-amazon.com/images/M/MV5BZDE0Zjk5OGYtZTk3OC00ZDZhLWE2NGQtNzc3NmJhNjljYzY5XkEyXkFqcGc@._V1_.jpg", enlaceColeccionId: "x-men-97", etiqueta: "Serie (todas las temporadas)" }
         ]
     },
     {
@@ -5582,7 +5587,7 @@ const colecciones = [
         titulo: "X-Men '92",
         esSerie: true,
         tierra: 92131,
-        categoria: "marvel-animacion",
+        categoria: "marvel-90s",
         poster: "https://image.tmdb.org/t/p/original/2OFwsFhAobczgJWnVdwd9oZAF2N.jpg",
         peliculas: [
             { titulo: "X-Men '92 Temporada 1", poster: "https://image.tmdb.org/t/p/original/2OFwsFhAobczgJWnVdwd9oZAF2N.jpg" },
@@ -5597,7 +5602,7 @@ const colecciones = [
         titulo: "X-Men '97",
         esSerie: true,
         tierra: 92131,
-        categoria: "marvel-animacion",
+        categoria: "marvel-90s",
         poster: "https://m.media-amazon.com/images/M/MV5BZDE0Zjk5OGYtZTk3OC00ZDZhLWE2NGQtNzc3NmJhNjljYzY5XkEyXkFqcGc@._V1_.jpg",
         peliculas: [
             { titulo: "X-Men '97 Temporada 1", poster: "https://image.tmdb.org/t/p/original/383PV0WolYYQvTriH0NfvMUA28R.jpg" },
@@ -5609,7 +5614,7 @@ const colecciones = [
         titulo: "Ultimate Spider-Man",
         esSerie: true,
         tierra: 12041,
-        categoria: "marvel-animacion",
+        categoria: "marvel-disneyxd",
         poster: "https://image.tmdb.org/t/p/original/eXtlDP6kgUyYw0G2L9AxSWUp14Q.jpg",
         peliculas: [
             { titulo: "Ultimate Spider-Man Temporada 1", poster: "https://static.wikia.nocookie.net/spiderman/images/a/ad/Usmpromo.jpg/revision/latest?cb=20130127003133" },
@@ -5623,7 +5628,7 @@ const colecciones = [
         titulo: "Avengers Assemble",
         esSerie: true,
         tierra: 12041,
-        categoria: "marvel-animacion",
+        categoria: "marvel-disneyxd",
         poster: "https://i.pinimg.com/736x/23/cc/1e/23cc1e9834742a247bfd317b5758fb7c.jpg",
         peliculas: [
             { titulo: "Avengers Assemble Temporada 1", poster: "https://static.wikia.nocookie.net/marvelanimateduniversedisney/images/5/5e/Avengers_Assemble_Season_1_Poster.jpg/revision/latest?cb=20201015075047" },
@@ -9749,6 +9754,7 @@ const TITULOS_ES_BUSQUEDA = {
     "black-hawk-down-2001": "Black Hawk derribado",
     "down-with-love-2003": "Abajo el amor",
     "young-adam-2003": "El joven Adán",
+    "the-island-2005": "La isla",
     "big-fish-2003": "El gran pez",
     "t2-trainspotting-2017": "T2 Trainspotting: La vida en el abismo",
     "beauty-and-the-beast-2017": "La Bella y la Bestia",
@@ -15266,7 +15272,7 @@ if (btnVolverFichaHawkeyeSerie) {
     }
 });
 
-['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023', 'arrietty-2010', 'the-impossible-2012', 'how-i-live-now-2013', 'wolf-hall-2015', 'in-the-heart-of-the-sea-2015', 'edge-of-winter-2016', 'the-lost-city-of-z-2016', 'pilgrimage-2017', 'the-current-war-2017', 'cherry-2021', 'onward-2020', 'chaos-walking-2021', 'uncharted-2022', 'dolittle-2020', 'the-devil-all-the-time-2020', 'marmaduke-2010', 'easy-a-2010', 'crazy-stupid-love-2011', 'the-amazing-spider-man-2012', 'gangster-squad-2013', 'movie-43-2013', 'the-amazing-spider-man-2-2014', 'friends-with-benefits-2011', 'the-help-2011', 'the-croods-2013', 'magic-in-the-moonlight-2014', 'birdman-2014', 'aloha-2015', 'irrational-man-2015', 'battle-of-the-sexes-2017', 'maniac-2018', 'the-favourite-2018', 'zombieland-double-tap-2019', 'superbad-2007', 'the-rocker-2008', 'the-house-bunny-2008', 'ghosts-of-girlfriends-past-2009', 'zombieland-2009', 'paper-man-2009', 'the-curse-2023', 'the-croods-a-new-age-2020', 'cruella-2021', 'poor-things-2023', 'kinds-of-kindness-2024', 'eddington-2025', 'bugonia-2025', 'palo-alto-2013', 'the-leftovers-2014', 'the-nice-guys-2016', 'death-note-2017', 'novitiate-2017', 'the-vanishing-of-sidney-hall-2017', 'donnybrook-2018', 'green-lantern-beware-my-power-2022', 'legion-of-super-heroes-2023', 'justice-league-warworld-2023', 'jl-crisis-infinite-earths-p1-2024', 'jl-crisis-infinite-earths-p2-2024', 'jl-crisis-infinite-earths-p3-2024', 'native-son-2019', 'fosse-verdon-2019', 'once-upon-a-time-in-hollywood-2019', 'adam-2019', 'strange-but-true-2019', 'seberg-2019', 'my-salinger-year-2020', 'maid-2021', 'stars-at-noon-2022', 'sanctuary-2022', 'drive-away-dolls-2024', 'the-substance-2024', 'happy-gilmore-2-2025', 'honey-dont-2025', 'blue-moon-2025', 'how-to-make-a-killing-2026', 'io-2019', 'the-dog-stars-2026', 'spider-man-brand-new-day-2026', 'marvel-zombies-serie-2025', 'we-live-in-time-2024', 'oppenheimer-2023', 'a-good-person-2023', 'the-wonder-2022', 'flashpoint-paradox-2013', 'justice-league-war-2014', 'son-of-batman-2014', 'throne-of-atlantis-2015', 'batman-vs-robin-2015', 'the-falling-2014', 'lady-macbeth-2016', 'outlaw-king-2018', 'malevolent-2018', 'fighting-with-my-family-2019', 'little-women-2019', 'batman-bad-blood-2016', 'justice-league-vs-teen-titans-2016', 'justice-league-dark-2017', 'teen-titans-judas-contract-2017', 'suicide-squad-hell-to-pay-2018', 'death-of-superman-2018', 'constantine-city-of-demons-2018', 'reign-of-the-supermen-2019', 'batman-hush-2019', 'wonder-woman-bloodlines-2019', 'justice-league-dark-apokolips-war-2020', 'midsommar-2019', 'the-commuter-2018', 'king-lear-2018', 'little-drummer-girl-2018', 'marcella-2016', 'suicide-squad-2016', 'wonder-woman-2017', 'justice-league-2017', 'ticket-to-paradise-2022', 'leave-the-world-behind-2023', 'after-the-hunt-2025', 'aquaman-2018', 'zack-snyders-justice-league-2021', 'shazam-2019', 'valentines-day-2010', 'eat-pray-love-2010', 'agatha-all-along-2024', 'what-if-2021', 'secret-invasion-2023', 'ironheart-2025', 'clayface-2026', 'larry-crowne-2011', 'moon-knight-2022', 'i-am-groot-2022', 'she-hulk-attorney-at-law-2022', 'werewolf-by-night-2022', 'echo-2024', 'daredevil-born-again-2025', 'eyes-of-wakanda-2025', 'wonder-man-2026', 'punisher-one-last-kill-2026', 'birds-of-prey-2020', 'wonder-woman-1984', 'black-adam-2022', 'the-penguin-2024', 'shazam-fury-of-the-gods-2023', 'the-flash-2023', 'aquaman-and-the-lost-kingdom-2023', 'spider-man-2002', 'spider-man-2-2004', 'spider-man-3-2007', 'venom-let-there-be-carnage-2021', 'morbius-2022', 'venom-the-last-dance-2024', 'kraven-the-hunter-2024', 'fantastic-four-2005', 'fantastic-four-silver-surfer-2007', 'howard-the-duck-1986', 'hulk-2003', 'super-hero-squad-show-2009', 'spider-man-across-the-spider-verse-2023', 'joker-2019', 'joker-folie-a-deux-2024', 'following-1998', 'memento-2000', 'insomnia-2002', 'inception-2010', 'interstellar-2014', 'dunkirk-2017', 'tenet-2020', 'the-odyssey-2026', 'ahsoka-2023', 'skeleton-crew-2024', 'star-wars-the-bad-batch', 'halston-2021', 'the-end-of-oak-street-2026', 'pinocchio-del-toro-2022', 'raymond-and-ray-2022', 'august-osage-county-2013', 'the-ghost-writer-2010', 'nanny-mcphee-big-bang-2010', 'beginners-2010', 'perfect-sense-2011', 'salmon-fishing-in-the-yemen-2011', 'jack-the-giant-slayer-2013', 'son-of-a-gun-2014', 'a-gentleman-in-moscow-2024', 'mortdecai-2015', 'last-days-in-the-desert-2016', 'miles-ahead-2016', 'jane-got-a-gun-2016', 'our-kind-of-traitor-2016', 'american-pastoral-2016', 't2-trainspotting-2017', 'beauty-and-the-beast-2017', 'christopher-robin-2018', 'doctor-sleep-2019', 'black-hawk-down-2001', 'down-with-love-2003', 'young-adam-2003', 'fargo-serie-2014', 'big-fish-2003', 'robots-2005', 'valiant-2005', 'fantastic-four-2015'].forEach(id => {
+['amsterdam-2022', 'pale-blue-eye-2022', 'el-nino-y-la-garza-2023', 'the-bride-2026', 'american-psycho-2000', 'shaft-2000', 'captain-corellis-mandolin-2001', 'laurel-canyon-2002', 'equilibrium-2002', 'reign-of-fire-2002', 'el-maquinista-2004', 'el-castillo-ambulante-2004', 'batman-begins-2005', 'harsh-times-2006', 'the-new-world-2005', 'rescue-dawn-2007', 'the-prestige-2006', '3-10-to-yuma-2007', 'im-not-there-2007', 'the-dark-knight-2008', 'terminator-salvation-2009', 'public-enemies-2009', 'the-fighter-2010', 'flowers-of-war-2011', 'the-dark-knight-rises-2012', 'out-of-the-furnace-2013', 'american-hustle-2013', 'exodus-gods-and-kings-2014', 'knight-of-cups-2015', 'the-big-short-2015', 'hostiles-2017', 'vice-2018', 'ford-v-ferrari-2019', 'empire-of-the-sun-1987', 'henry-v-1989', 'newsies-1992', 'swing-kids-1993', 'little-women-1994', 'the-portrait-of-a-lady-1996', 'the-secret-agent-1996', 'metroland-1997', 'velvet-goldmine-1998', 'midsummer-nights-dream-1999', 'mowgli-legend-of-the-jungle-2018', 'mio-in-the-land-of-faraway-1987', 'prince-of-jutland-1994', 'all-the-little-animals-1998', 'the-promise-2016', 'spies-in-disguise-2019', 'the-crowded-room-2023', 'arrietty-2010', 'the-impossible-2012', 'how-i-live-now-2013', 'wolf-hall-2015', 'in-the-heart-of-the-sea-2015', 'edge-of-winter-2016', 'the-lost-city-of-z-2016', 'pilgrimage-2017', 'the-current-war-2017', 'cherry-2021', 'onward-2020', 'chaos-walking-2021', 'uncharted-2022', 'dolittle-2020', 'the-devil-all-the-time-2020', 'marmaduke-2010', 'easy-a-2010', 'crazy-stupid-love-2011', 'the-amazing-spider-man-2012', 'gangster-squad-2013', 'movie-43-2013', 'the-amazing-spider-man-2-2014', 'friends-with-benefits-2011', 'the-help-2011', 'the-croods-2013', 'magic-in-the-moonlight-2014', 'birdman-2014', 'aloha-2015', 'irrational-man-2015', 'battle-of-the-sexes-2017', 'maniac-2018', 'the-favourite-2018', 'zombieland-double-tap-2019', 'superbad-2007', 'the-rocker-2008', 'the-house-bunny-2008', 'ghosts-of-girlfriends-past-2009', 'zombieland-2009', 'paper-man-2009', 'the-curse-2023', 'the-croods-a-new-age-2020', 'cruella-2021', 'poor-things-2023', 'kinds-of-kindness-2024', 'eddington-2025', 'bugonia-2025', 'palo-alto-2013', 'the-leftovers-2014', 'the-nice-guys-2016', 'death-note-2017', 'novitiate-2017', 'the-vanishing-of-sidney-hall-2017', 'donnybrook-2018', 'green-lantern-beware-my-power-2022', 'legion-of-super-heroes-2023', 'justice-league-warworld-2023', 'jl-crisis-infinite-earths-p1-2024', 'jl-crisis-infinite-earths-p2-2024', 'jl-crisis-infinite-earths-p3-2024', 'native-son-2019', 'fosse-verdon-2019', 'once-upon-a-time-in-hollywood-2019', 'adam-2019', 'strange-but-true-2019', 'seberg-2019', 'my-salinger-year-2020', 'maid-2021', 'stars-at-noon-2022', 'sanctuary-2022', 'drive-away-dolls-2024', 'the-substance-2024', 'happy-gilmore-2-2025', 'honey-dont-2025', 'blue-moon-2025', 'how-to-make-a-killing-2026', 'io-2019', 'the-dog-stars-2026', 'spider-man-brand-new-day-2026', 'marvel-zombies-serie-2025', 'we-live-in-time-2024', 'oppenheimer-2023', 'a-good-person-2023', 'the-wonder-2022', 'flashpoint-paradox-2013', 'justice-league-war-2014', 'son-of-batman-2014', 'throne-of-atlantis-2015', 'batman-vs-robin-2015', 'the-falling-2014', 'lady-macbeth-2016', 'outlaw-king-2018', 'malevolent-2018', 'fighting-with-my-family-2019', 'little-women-2019', 'batman-bad-blood-2016', 'justice-league-vs-teen-titans-2016', 'justice-league-dark-2017', 'teen-titans-judas-contract-2017', 'suicide-squad-hell-to-pay-2018', 'death-of-superman-2018', 'constantine-city-of-demons-2018', 'reign-of-the-supermen-2019', 'batman-hush-2019', 'wonder-woman-bloodlines-2019', 'justice-league-dark-apokolips-war-2020', 'midsommar-2019', 'the-commuter-2018', 'king-lear-2018', 'little-drummer-girl-2018', 'marcella-2016', 'suicide-squad-2016', 'wonder-woman-2017', 'justice-league-2017', 'ticket-to-paradise-2022', 'leave-the-world-behind-2023', 'after-the-hunt-2025', 'aquaman-2018', 'zack-snyders-justice-league-2021', 'shazam-2019', 'valentines-day-2010', 'eat-pray-love-2010', 'agatha-all-along-2024', 'what-if-2021', 'secret-invasion-2023', 'ironheart-2025', 'clayface-2026', 'larry-crowne-2011', 'moon-knight-2022', 'i-am-groot-2022', 'she-hulk-attorney-at-law-2022', 'werewolf-by-night-2022', 'echo-2024', 'daredevil-born-again-2025', 'eyes-of-wakanda-2025', 'wonder-man-2026', 'punisher-one-last-kill-2026', 'birds-of-prey-2020', 'wonder-woman-1984', 'black-adam-2022', 'the-penguin-2024', 'shazam-fury-of-the-gods-2023', 'the-flash-2023', 'aquaman-and-the-lost-kingdom-2023', 'spider-man-2002', 'spider-man-2-2004', 'spider-man-3-2007', 'venom-let-there-be-carnage-2021', 'morbius-2022', 'venom-the-last-dance-2024', 'kraven-the-hunter-2024', 'fantastic-four-2005', 'fantastic-four-silver-surfer-2007', 'howard-the-duck-1986', 'hulk-2003', 'super-hero-squad-show-2009', 'spider-man-across-the-spider-verse-2023', 'joker-2019', 'joker-folie-a-deux-2024', 'following-1998', 'memento-2000', 'insomnia-2002', 'inception-2010', 'interstellar-2014', 'dunkirk-2017', 'tenet-2020', 'the-odyssey-2026', 'ahsoka-2023', 'skeleton-crew-2024', 'star-wars-the-bad-batch', 'halston-2021', 'the-end-of-oak-street-2026', 'pinocchio-del-toro-2022', 'raymond-and-ray-2022', 'august-osage-county-2013', 'the-ghost-writer-2010', 'nanny-mcphee-big-bang-2010', 'beginners-2010', 'perfect-sense-2011', 'salmon-fishing-in-the-yemen-2011', 'jack-the-giant-slayer-2013', 'son-of-a-gun-2014', 'a-gentleman-in-moscow-2024', 'mortdecai-2015', 'last-days-in-the-desert-2016', 'miles-ahead-2016', 'jane-got-a-gun-2016', 'our-kind-of-traitor-2016', 'american-pastoral-2016', 't2-trainspotting-2017', 'beauty-and-the-beast-2017', 'christopher-robin-2018', 'doctor-sleep-2019', 'black-hawk-down-2001', 'down-with-love-2003', 'young-adam-2003', 'the-island-2005', 'stay-2005', 'stormbreaker-2006', 'fargo-serie-2014', 'big-fish-2003', 'robots-2005', 'valiant-2005', 'fantastic-four-2015'].forEach(id => {
     const btn = document.getElementById('btn-volver-ficha-' + id);
     if (btn) {
         btn.addEventListener('click', () => {
@@ -15963,6 +15969,9 @@ const FICHAS_TECNICAS_TITULOS = {
     "black-hawk-down-2001": "Black Hawk Down",
     "down-with-love-2003": "Down with Love",
     "young-adam-2003": "Young Adam",
+    "the-island-2005": "The Island",
+    "stay-2005": "Stay",
+    "stormbreaker-2006": "Stormbreaker",
     "fargo-serie-2014": "Fargo",
     "big-fish-2003": "Big Fish",
     "robots-2005": "Robots",
@@ -20664,6 +20673,41 @@ const REPARTO_PELICULAS = {
             { actor: "Stuart McQuarrie", personaje: "Bill" }
         ]
     },
+    "the-island-2005": {
+        director: "Michael Bay",
+        elenco: [
+            { actor: "Ewan McGregor", personaje: "Lincoln Six Echo / Tom Lincoln" },
+            { actor: "Scarlett Johansson", personaje: "Jordan Two Delta / Sarah Jordan" },
+            { actor: "Djimon Hounsou", personaje: "Albert Laurent" },
+            { actor: "Sean Bean", personaje: "Dr. Bernard Merrick" },
+            { actor: "Steve Buscemi", personaje: "James 'Mac' McCord" },
+            { actor: "Michael Clarke Duncan", personaje: "Starkweather Two Delta" }
+        ]
+    },
+    "stay-2005": {
+        director: "Marc Forster",
+        elenco: [
+            { actor: "Ewan McGregor", personaje: "Dr. Sam Foster" },
+            { actor: "Naomi Watts", personaje: "Lila Culpepper" },
+            { actor: "Ryan Gosling", personaje: "Henry Letham" },
+            { actor: "Bob Hoskins", personaje: "Dr. Leon Patterson" },
+            { actor: "Elizabeth Reaser", personaje: "Athena" },
+            { actor: "BD Wong", personaje: "Dr. Ren" }
+        ]
+    },
+    "stormbreaker-2006": {
+        director: "Geoffrey Sax",
+        elenco: [
+            { actor: "Alex Pettyfer", personaje: "Alex Rider" },
+            { actor: "Ewan McGregor", personaje: "Ian Rider" },
+            { actor: "Mickey Rourke", personaje: "Darrius Sayle" },
+            { actor: "Bill Nighy", personaje: "Alan Blunt" },
+            { actor: "Sophie Okonedo", personaje: "Mrs. Jones" },
+            { actor: "Sarah Bolger", personaje: "Sabina Pleasure" },
+            { actor: "Damian Lewis", personaje: "Yassen Gregorovich" },
+            { actor: "Stephen Fry", personaje: "Smithers" }
+        ]
+    },
     "fargo-serie-2014": {
         director: "Noah Hawley (creador)",
         elenco: [
@@ -23271,14 +23315,14 @@ if(btnVolverMarvelDisneyxd) {
 const btnVolverUltimateSpiderMan = document.getElementById('btn-volver-ultimate-spider-man');
 if(btnVolverUltimateSpiderMan) {
     btnVolverUltimateSpiderMan.addEventListener('click', () => {
-        cambiarSeccion(document.getElementById('seccion-marvel-animacion'));
+        cambiarSeccion(document.getElementById('seccion-marvel-disneyxd'));
     });
 }
 
 const btnVolverAvengersAssemble = document.getElementById('btn-volver-avengers-assemble');
 if(btnVolverAvengersAssemble) {
     btnVolverAvengersAssemble.addEventListener('click', () => {
-        cambiarSeccion(document.getElementById('seccion-marvel-animacion'));
+        cambiarSeccion(document.getElementById('seccion-marvel-disneyxd'));
     });
 }
 
@@ -23292,14 +23336,14 @@ if(btnVolverMarvel90s) {
 const btnVolverXMen92 = document.getElementById('btn-volver-x-men-92');
 if(btnVolverXMen92) {
     btnVolverXMen92.addEventListener('click', () => {
-        cambiarSeccion(document.getElementById('seccion-marvel-animacion'));
+        cambiarSeccion(document.getElementById('seccion-marvel-90s'));
     });
 }
 
 const btnVolverXMen97 = document.getElementById('btn-volver-x-men-97');
 if(btnVolverXMen97) {
     btnVolverXMen97.addEventListener('click', () => {
-        cambiarSeccion(document.getElementById('seccion-marvel-animacion'));
+        cambiarSeccion(document.getElementById('seccion-marvel-90s'));
     });
 }
 
