@@ -372,6 +372,15 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
             return
         }
 
+        // 2b) Relevo a Alexa: "preguntale a Alexa ...", "decile a Alexa ..."
+        val relay = Regex("(?i)^\\s*(?:mia[,\\s]+)?(?:preguntale|pregúntale|decile|dile|pedile)\\s+a\\s+alexa\\s+(?:que\\s+)?(.+)$").find(said.trim())
+        if (relay != null) {
+            val phrase = relay.groupValues[1].trim().trimEnd('.', '?', '!')
+            addBubble("→ Alexa: \"$phrase\"", false)
+            say("Alexa, $phrase", onlySpeak = true)
+            return
+        }
+
         // 3) Hora y fecha, sin IA
         if (n.contains("que hora es")) {
             say("Son las " + SimpleDateFormat("H:mm", Locale("es", "AR")).format(Date()) + ".")
@@ -434,7 +443,7 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
     /** Devuelve un resumen en castellano del clima de Mar del Plata, o null si falla. Llamar fuera del hilo principal. */
     private var weatherError = ""
 
-    private fun weatherSummary(): String? {
+    private fun weatherSummary(scope: Int): String? {
         weatherError = ""
         return try {
             val url = "https://api.open-meteo.com/v1/forecast?latitude=-38.0055&longitude=-57.5426" +
@@ -455,14 +464,12 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
             val j = JSONObject(txt)
             val cur = j.getJSONObject("current")
             val d = j.getJSONObject("daily")
-            val sb = StringBuilder()
-            sb.append("Ahora en Mar del Plata: ")
-                .append(Math.round(cur.optDouble("temperature_2m", 0.0))).append(" grados")
-                .append(" (sensación ").append(Math.round(cur.optDouble("apparent_temperature", 0.0))).append("), ")
-                .append(wmo(cur.optInt("weather_code", -1))).append(", ")
-                .append("humedad ").append(cur.optInt("relative_humidity_2m", 0)).append("%, ")
-                .append("viento ").append(Math.round(cur.optDouble("wind_speed_10m", 0.0))).append(" km/h")
-                .append(" con ráfagas de ").append(Math.round(cur.optDouble("wind_gusts_10m", 0.0))).append(". ")
+            val nowS = "Ahora en Mar del Plata hay " +
+                Math.round(cur.optDouble("temperature_2m", 0.0)) + " grados (sensación " +
+                Math.round(cur.optDouble("apparent_temperature", 0.0)) + "), " +
+                wmo(cur.optInt("weather_code", -1)) + ", humedad " + cur.optInt("relative_humidity_2m", 0) +
+                "%, viento de " + Math.round(cur.optDouble("wind_speed_10m", 0.0)) + " km/h con ráfagas de " +
+                Math.round(cur.optDouble("wind_gusts_10m", 0.0)) + ". "
             val labels = listOf("Hoy", "Mañana", "Pasado mañana")
             val wc = d.optJSONArray("weather_code")
             val mx = d.optJSONArray("temperature_2m_max")
@@ -470,13 +477,20 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
             val pp = d.optJSONArray("precipitation_probability_max")
             val ws = d.optJSONArray("wind_speed_10m_max")
             val days = minOf(3, mx?.length() ?: 0)
-            for (i in 0 until days) {
-                sb.append(labels[i]).append(": ")
-                    .append(wmo(wc?.optInt(i, -1) ?: -1)).append(", máxima ")
-                    .append(Math.round(mx?.optDouble(i, 0.0) ?: 0.0)).append(", mínima ")
-                    .append(Math.round(mn?.optDouble(i, 0.0) ?: 0.0)).append(", probabilidad de lluvia ")
-                    .append(pp?.optInt(i, 0) ?: 0).append("%, viento hasta ")
-                    .append(Math.round(ws?.optDouble(i, 0.0) ?: 0.0)).append(" km/h. ")
+            val dayS = (0 until days).map { i ->
+                labels[i] + ": " + wmo(wc?.optInt(i, -1) ?: -1) + ", máxima de " +
+                    Math.round(mx?.optDouble(i, 0.0) ?: 0.0) + " y mínima de " +
+                    Math.round(mn?.optDouble(i, 0.0) ?: 0.0) + ", " +
+                    (pp?.optInt(i, 0) ?: 0) + "% de probabilidad de lluvia y viento de hasta " +
+                    Math.round(ws?.optDouble(i, 0.0) ?: 0.0) + " km/h. "
+            }
+            if (days == 0) { weatherError = "el servicio no mandó el pronóstico por día"; return null }
+            val sb = StringBuilder()
+            when (scope) {
+                1 -> sb.append(nowS).append(dayS[0])
+                2 -> sb.append(dayS[minOf(1, days - 1)])
+                3 -> sb.append(dayS[minOf(2, days - 1)])
+                else -> { sb.append(nowS); dayS.forEach { sb.append(it) } }
             }
             sb.toString().trim()
         } catch (e: Exception) {
@@ -485,18 +499,25 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
         }
     }
 
+    private fun weatherScope(n: String): Int = when {
+        n.contains("pasado manana") -> 3
+        n.contains("manana") -> 2
+        n.contains("hoy") || n.contains("ahora") || n.contains("esta noche") || n.contains("esta tarde") -> 1
+        else -> 0
+    }
+
     private fun askWithWeather(said: String) {
+        val scope = weatherScope(norm(said))
         busy = true
         setStatus("Consultando el clima...")
         Thread {
-            val summary = weatherSummary()
+            val summary = weatherSummary(scope)
             ui.post {
                 busy = false
-                val base = (prefs.getString("mia_url", "") ?: "").trim()
-                when {
-                    summary == null -> say("No pude consultar el pronóstico (" + weatherError + "). Revisá que el celular tenga internet.")
-                    base.isBlank() -> say(summary)
-                    else -> askModel(said, summary)
+                if (summary == null) {
+                    say("No pude consultar el pronóstico (" + weatherError + "). Revisá que el celular tenga internet.")
+                } else {
+                    say(summary)
                 }
             }
         }.start()
