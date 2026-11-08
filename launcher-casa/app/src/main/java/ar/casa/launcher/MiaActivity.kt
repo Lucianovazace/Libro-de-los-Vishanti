@@ -382,7 +382,10 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
             return
         }
 
-        // 4) Todo lo demas: el modelo de la PC
+        // 4) Clima de Mar del Plata
+        if (isWeatherQuestion(n)) { askWithWeather(said); return }
+
+        // 5) Todo lo demas: el modelo de la PC
         askModel(said)
     }
 
@@ -390,7 +393,7 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
         val profile = prefs.getString("mia_profile", null)?.takeIf { it.isNotBlank() } ?: DEFAULT_PROFILE
         val mem = prefs.getString("mia_memory", "") ?: ""
         val now = SimpleDateFormat("EEEE d 'de' MMMM 'de' yyyy, H:mm", Locale("es", "AR")).format(Date())
-        return "/no_think Sos MIA (Mi Inteligencia Artificial), la asistente personal de Luciano. Hablás en español rioplatense, tuteando con voseo, de forma cálida y directa. " +
+        return "/no_think Sos MIA (Mi Inteligencia Artificial), la asistente personal de Luciano. Hablás en español rioplatense (voseo). Tu estilo es el de JARVIS: sereno, elegante, eficiente y atento, con un humor seco y sutil de vez en cuando, nunca exagerado ni infantil. Anticipás lo que Luciano pueda necesitar. Ocasionalmente podés llamarlo \"señor\", sin abusar. " +
             "Tus respuestas se leen en voz alta: máximo 3 oraciones cortas, sin listas, sin markdown, sin emojis. " +
             "Si no sabés algo o no lo tenés en lo que te contaron, decilo en vez de inventar. No inventes datos de Mar del Plata ni de dispositivos.\n\n" +
             "Lo que sabés de Luciano y su casa:\n" + profile +
@@ -398,7 +401,100 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
             "\n\nAhora es: " + now + "."
     }
 
-    private fun askModel(said: String) {
+    // ---------- Clima (Open-Meteo, sin clave) ----------
+
+    private fun isWeatherQuestion(n: String): Boolean {
+        val keys = listOf("clima", "pronostico", "va a llover", "llover", "llueve", "lluvia", "temperatura",
+            "cuantos grados", "hace frio", "hace calor", "como esta el tiempo", "como va a estar el tiempo",
+            "que tiempo hace", "tiempo hace", "viento", "paraguas")
+        return keys.any { n.contains(it) }
+    }
+
+    private fun wmo(code: Int): String = when (code) {
+        0 -> "despejado"
+        1 -> "mayormente despejado"
+        2 -> "parcialmente nublado"
+        3 -> "nublado"
+        45, 48 -> "con niebla"
+        51, 53, 55 -> "con llovizna"
+        56, 57 -> "con llovizna helada"
+        61 -> "con lluvia débil"
+        63 -> "con lluvia"
+        65 -> "con lluvia fuerte"
+        66, 67 -> "con lluvia helada"
+        71, 73, 75, 77, 85, 86 -> "con nieve"
+        80 -> "con chubascos leves"
+        81 -> "con chubascos"
+        82 -> "con chubascos fuertes"
+        95 -> "con tormenta"
+        96, 99 -> "con tormenta y granizo"
+        else -> "sin datos del cielo"
+    }
+
+    /** Devuelve un resumen en castellano del clima de Mar del Plata, o null si falla. Llamar fuera del hilo principal. */
+    private fun weatherSummary(): String? {
+        return try {
+            val url = "https://api.open-meteo.com/v1/forecast?latitude=-38.0055&longitude=-57.5426" +
+                "&current=temperature_2m,apparent_temperature,relative_humidity_2m,weather_code,wind_speed_10m,wind_gusts_10m" +
+                "&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,wind_speed_10m_max" +
+                "&forecast_days=3&timezone=America%2FArgentina%2FBuenos_Aires"
+            val c = URL(url).openConnection() as HttpURLConnection
+            c.connectTimeout = 6000
+            c.readTimeout = 8000
+            val code = c.responseCode
+            if (code !in 200..299) { c.disconnect(); return null }
+            val txt = c.inputStream.bufferedReader().use { it.readText() }
+            c.disconnect()
+            val j = JSONObject(txt)
+            val cur = j.getJSONObject("current")
+            val d = j.getJSONObject("daily")
+            val sb = StringBuilder()
+            sb.append("Ahora en Mar del Plata: ")
+                .append(Math.round(cur.optDouble("temperature_2m", 0.0))).append(" grados")
+                .append(" (sensación ").append(Math.round(cur.optDouble("apparent_temperature", 0.0))).append("), ")
+                .append(wmo(cur.optInt("weather_code", -1))).append(", ")
+                .append("humedad ").append(cur.optInt("relative_humidity_2m", 0)).append("%, ")
+                .append("viento ").append(Math.round(cur.optDouble("wind_speed_10m", 0.0))).append(" km/h")
+                .append(" con ráfagas de ").append(Math.round(cur.optDouble("wind_gusts_10m", 0.0))).append(". ")
+            val labels = listOf("Hoy", "Mañana", "Pasado mañana")
+            val wc = d.optJSONArray("weather_code")
+            val mx = d.optJSONArray("temperature_2m_max")
+            val mn = d.optJSONArray("temperature_2m_min")
+            val pp = d.optJSONArray("precipitation_probability_max")
+            val ws = d.optJSONArray("wind_speed_10m_max")
+            val days = minOf(3, mx?.length() ?: 0)
+            for (i in 0 until days) {
+                sb.append(labels[i]).append(": ")
+                    .append(wmo(wc?.optInt(i, -1) ?: -1)).append(", máxima ")
+                    .append(Math.round(mx?.optDouble(i, 0.0) ?: 0.0)).append(", mínima ")
+                    .append(Math.round(mn?.optDouble(i, 0.0) ?: 0.0)).append(", probabilidad de lluvia ")
+                    .append(pp?.optInt(i, 0) ?: 0).append("%, viento hasta ")
+                    .append(Math.round(ws?.optDouble(i, 0.0) ?: 0.0)).append(" km/h. ")
+            }
+            sb.toString().trim()
+        } catch (e: Exception) {
+            null
+        }
+    }
+
+    private fun askWithWeather(said: String) {
+        busy = true
+        setStatus("Consultando el clima...")
+        Thread {
+            val summary = weatherSummary()
+            ui.post {
+                busy = false
+                val base = (prefs.getString("mia_url", "") ?: "").trim()
+                when {
+                    summary == null -> say("No pude consultar el pronóstico. Revisá que el celular tenga internet.")
+                    base.isBlank() -> say(summary)
+                    else -> askModel(said, summary)
+                }
+            }
+        }.start()
+    }
+
+    private fun askModel(said: String, extra: String? = null) {
         val base = (prefs.getString("mia_url", "") ?: "").trim().trimEnd('/')
         if (base.isBlank()) {
             say("Todavía no me conecté a la PC, así que no puedo charlar libremente. Las órdenes de la casa sí las entiendo.")
@@ -409,7 +505,7 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
         busy = true
         setStatus("Pensando...")
         val msgs = JSONArray()
-        msgs.put(JSONObject().put("role", "system").put("content", systemPrompt()))
+        msgs.put(JSONObject().put("role", "system").put("content", systemPrompt() + (if (extra != null) "\n\nDatos actuales del clima en Mar del Plata (fuente: Open-Meteo). Para preguntas del clima usá solamente estos datos y no inventes otros:\n" + extra else "")))
         history.forEach { msgs.put(JSONObject().put("role", it.first).put("content", it.second)) }
         val body = JSONObject()
             .put("model", "local")
