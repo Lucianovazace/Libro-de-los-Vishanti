@@ -390,7 +390,7 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
         val profile = prefs.getString("mia_profile", null)?.takeIf { it.isNotBlank() } ?: DEFAULT_PROFILE
         val mem = prefs.getString("mia_memory", "") ?: ""
         val now = SimpleDateFormat("EEEE d 'de' MMMM 'de' yyyy, H:mm", Locale("es", "AR")).format(Date())
-        return "Sos MIA (Mi Inteligencia Artificial), la asistente personal de Luciano. Hablás en español rioplatense, tuteando con voseo, de forma cálida y directa. " +
+        return "/no_think Sos MIA (Mi Inteligencia Artificial), la asistente personal de Luciano. Hablás en español rioplatense, tuteando con voseo, de forma cálida y directa. " +
             "Tus respuestas se leen en voz alta: máximo 3 oraciones cortas, sin listas, sin markdown, sin emojis. " +
             "Si no sabés algo o no lo tenés en lo que te contaron, decilo en vez de inventar. No inventes datos de Mar del Plata ni de dispositivos.\n\n" +
             "Lo que sabés de Luciano y su casa:\n" + profile +
@@ -446,7 +446,7 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
             ui.post {
                 busy = false
                 if (finalReply != null) {
-                    val clean = finalReply.replace(Regex("[*_#`]+"), "").trim()
+                    val clean = finalReply.replace(Regex("(?s)<think>.*?</think>"), "").replace(Regex("[*_#`]+"), "").trim().ifEmpty { "No supe qué contestarte, probá de nuevo." }
                     history.add("assistant" to clean)
                     say(clean)
                 } else {
