@@ -432,7 +432,10 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
     }
 
     /** Devuelve un resumen en castellano del clima de Mar del Plata, o null si falla. Llamar fuera del hilo principal. */
+    private var weatherError = ""
+
     private fun weatherSummary(): String? {
+        weatherError = ""
         return try {
             val url = "https://api.open-meteo.com/v1/forecast?latitude=-38.0055&longitude=-57.5426" +
                 "&current=temperature_2m,apparent_temperature,relative_humidity_2m,weather_code,wind_speed_10m,wind_gusts_10m" +
@@ -442,7 +445,11 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
             c.connectTimeout = 6000
             c.readTimeout = 8000
             val code = c.responseCode
-            if (code !in 200..299) { c.disconnect(); return null }
+            if (code !in 200..299) {
+                val body = try { c.errorStream?.bufferedReader()?.use { it.readText() }?.take(160) ?: "" } catch (e: Exception) { "" }
+                weatherError = "el servicio respondió $code $body"
+                c.disconnect(); return null
+            }
             val txt = c.inputStream.bufferedReader().use { it.readText() }
             c.disconnect()
             val j = JSONObject(txt)
@@ -473,6 +480,7 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
             }
             sb.toString().trim()
         } catch (e: Exception) {
+            weatherError = e.javaClass.simpleName + ": " + (e.message ?: "")
             null
         }
     }
@@ -486,7 +494,7 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
                 busy = false
                 val base = (prefs.getString("mia_url", "") ?: "").trim()
                 when {
-                    summary == null -> say("No pude consultar el pronóstico. Revisá que el celular tenga internet.")
+                    summary == null -> say("No pude consultar el pronóstico (" + weatherError + "). Revisá que el celular tenga internet.")
                     base.isBlank() -> say(summary)
                     else -> askModel(said, summary)
                 }
