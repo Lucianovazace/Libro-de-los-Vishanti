@@ -114,7 +114,12 @@ html.musicales-activo {
     font-size: 26px;
     color: #d946ef;
     opacity: 0;
-    animation: musicales-caida var(--t) linear var(--d) infinite;
+    animation: none;
+}
+
+/* Una sola ola: arranca recién cuando la página terminó de armarse (clase puesta desde script.js) y no se repite */
+html.musicales-caer .musicales-notas span {
+    animation: musicales-caida var(--t) linear var(--d) 1 both;
 }
 
 @keyframes musicales-caida {

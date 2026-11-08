@@ -7795,7 +7795,7 @@ function renderizarColecciones() {
             ` : '';
             htmlColeccion = `
                 <div class="tarjeta-media tarjeta-coleccion" data-coleccion="${col.id}" data-editorial="${col.categoriaEditorial || ''}">
-                    <img src="${col.poster}" alt="${col.titulo}">
+                    <img loading="lazy" src="${col.poster}" alt="${col.titulo}">
                     <h3>${col.titulo}</h3>
                     <p>${col.etiqueta || 'Categoría'}</p>
                     ${barraProgreso}
@@ -7815,7 +7815,7 @@ function renderizarColecciones() {
             `;
             htmlColeccion = `
                 <div class="tarjeta-media tarjeta-coleccion" data-coleccion="${col.id}" data-accion="${col.esVideojuego ? 'jugado' : 'visto'}" data-tipo="${col.tipoArrow || ''}" data-crono="${col.crono || ''}" data-orden="${col.ordenSalida || ''}" data-tierra="${col.tierra || ''}" data-subtipo="${col.subtipo || ''}">
-                    <img src="${col.poster}" alt="${col.titulo}">
+                    <img loading="lazy" src="${col.poster}" alt="${col.titulo}">
                     <h3>${col.titulo}</h3>
                     <p>${etiquetaTipo}</p>
                     ${barraProgresoSimple}
@@ -7856,6 +7856,8 @@ function renderizarColecciones() {
 
 // Abre la sección de detalle de una colección, inyectando sus películas la primera vez
 // Inyecta las películas de una colección en su grilla si todavía no están dibujadas
+let diferirSincronizarVistos = false;
+let sincronizarVistosPendiente = false;
 function asegurarPeliculasRenderizadas(col) {
     const grilla = document.getElementById(`grilla-${col.id}`);
     if (!grilla || grilla.dataset.peliculasRenderizadas === 'true' || col.peliculas.length === 0) return;
@@ -7869,7 +7871,7 @@ function asegurarPeliculasRenderizadas(col) {
         if (peli.enlaceColeccionId) {
             const htmlEnlace = `
                 <div class="tarjeta-media tarjeta-media-enlace" data-coleccion-enlace="${peli.enlaceColeccionId}">
-                    <img src="${peli.poster}" alt="${peli.titulo}">
+                    <img loading="lazy" src="${peli.poster}" alt="${peli.titulo}">
                     <h3>${peli.titulo}</h3>
                     <p>${peli.etiqueta || etiquetaPorDefecto}</p>
                 </div>
@@ -7883,7 +7885,7 @@ function asegurarPeliculasRenderizadas(col) {
             : '';
         const htmlPelicula = `
             <div class="tarjeta-media" data-accion="${col.esVideojuego ? 'jugado' : 'visto'}">
-                <img src="${peli.poster}" alt="${peli.titulo}">
+                <img loading="lazy" src="${peli.poster}" alt="${peli.titulo}">
                 <h3>${peli.titulo}</h3>
                 <p>${etiquetaItem}</p>
                 <button class="btn-accion">${textoPendiente}</button>
@@ -7906,7 +7908,9 @@ function asegurarPeliculasRenderizadas(col) {
             }
         });
     });
-    sincronizarVistos();
+    // Durante la carga inicial se difiere: sincronizarVistos recorre TODOS los botones
+    // de la página y se llamaba una vez por colección (decenas de veces).
+    if (diferirSincronizarVistos) { sincronizarVistosPendiente = true; } else { sincronizarVistos(); }
 }
 
 function abrirColeccion(colId) {
@@ -8140,6 +8144,8 @@ function actualizarProgresoTitulos(colId, titulos) {
 }
 
 function actualizarTodasLasColecciones() {
+    diferirSincronizarVistos = true;
+    try {
     colecciones.forEach(col => {
         if (col.progresoPatron) {
             actualizarProgresoPatron(col.id, col.progresoPatron, col.progresoExcluir);
@@ -8162,6 +8168,10 @@ function actualizarTodasLasColecciones() {
             actualizarProgresoColeccion(col.id);
         }
     });
+    } finally {
+        diferirSincronizarVistos = false;
+    }
+    if (sincronizarVistosPendiente) { sincronizarVistosPendiente = false; sincronizarVistos(); }
 }
 
 // ==========================================
@@ -8320,7 +8330,7 @@ function renderizarContenido() {
 
             const htmlTarjeta = `
                 <div class="tarjeta-media" style="${ocultarEstilo}" data-tier="${item.tier || ''}" data-tipo="${item.tipoArrow || ''}" data-crono="${item.crono || ''}" data-subtipo="${item.subtipo || ''}" data-personajes="${item.personajes || item.subtipo || ''}" data-orden="${item.ordenSalida || ''}" data-tierra="${item.tierra || ''}" data-editorial="${item.editorial || ''}" data-accion="${esVideojuego ? 'jugado' : 'visto'}" data-tengo="${esComic ? (tieneEsteComic ? 'si' : 'no') : ''}">
-                    <img src="${item.poster}" alt="${item.titulo}">
+                    <img loading="lazy" src="${item.poster}" alt="${item.titulo}">
                     <h3>${item.titulo}</h3>
                     <p>${item.tipo}</p>
                     <button class="btn-accion">${textoInicial}</button>
@@ -9200,6 +9210,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     contenidoInicialRenderizado = true;
     intentarCargarProgresoUsuario();
+    // Tema musical: la ola de notas cae una sola vez, cuando la página ya está armada
+    requestAnimationFrame(() => document.documentElement.classList.add('musicales-caer'));
 
     // Si el celular recargó la página solo (volviendo de otra app, por
     // ejemplo), esto devuelve a la persona a la sección donde estaba en
@@ -9426,7 +9438,7 @@ function generarBiblioteca(filtro) {
         const textoBoton = esVideojuego ? 'Jugado ✓' : 'Visto ✓';
         grillaBiblioteca.insertAdjacentHTML('beforeend', `
             <div class="tarjeta-media vista" data-accion="${esVideojuego ? 'jugado' : 'visto'}">
-                <img src="${poster}" alt="${titulo}">
+                <img loading="lazy" src="${poster}" alt="${titulo}">
                 <h3>${titulo}</h3>
                 <p>${tipo || ''}</p>
                 <button class="btn-accion" style="background-color:#28a745;">${textoBoton}</button>
@@ -9535,7 +9547,7 @@ function mostrarDetalleDiaCalendario(fechaISO, titulos) {
         const textoBoton = info.esVideojuego ? 'Jugado ✓' : 'Visto ✓';
         listaEl.insertAdjacentHTML('beforeend', `
             <div class="tarjeta-media vista" data-accion="${info.esVideojuego ? 'jugado' : 'visto'}">
-                <img src="${info.poster}" alt="${titulo}">
+                <img loading="lazy" src="${info.poster}" alt="${titulo}">
                 <h3>${titulo}</h3>
                 <p>${info.tipo || ''}</p>
                 <button class="btn-accion" style="background-color:#28a745;">${textoBoton}</button>
@@ -10596,7 +10608,7 @@ function generarTarjetasTemporadasArrowverse() {
         div.setAttribute('data-crono', entry.crono);
         div.setAttribute('data-accion', 'visto');
         div.innerHTML = `
-            <img src="${peli.poster}" alt="${peli.titulo}">
+            <img loading="lazy" src="${peli.poster}" alt="${peli.titulo}">
             <h3>${peli.titulo}</h3>
             <p>${col.titulo}</p>
             <button class="btn-accion">Marcar Visto</button>
@@ -14565,7 +14577,7 @@ function crearTarjetaManual(item) {
     const div = document.createElement('div');
     div.className = 'tarjeta-media';
     div.innerHTML = `
-        <img src="${item.poster}" alt="${item.titulo}">
+        <img loading="lazy" src="${item.poster}" alt="${item.titulo}">
         <h3>${item.titulo}</h3>
         <p>Película</p>
         <button class="btn-accion">Marcar Visto</button>
@@ -16166,7 +16178,7 @@ function inyectarReparto(seccionFichaId, elenco, director) {
         const item = document.createElement('div');
         item.className = 'reparto-item';
         item.innerHTML = `
-            ${cartilla ? `<img src="${cartilla.poster}" alt="${actor}" class="reparto-item-foto">` : ''}
+            ${cartilla ? `<img loading="lazy" src="${cartilla.poster}" alt="${actor}" class="reparto-item-foto">` : ''}
             <div class="reparto-item-texto">
                 <span class="reparto-item-actor${cartilla ? ' reparto-item-enlazable' : ''}">${actor}</span>
                 <span class="reparto-item-personaje">${personaje}</span>
@@ -25018,7 +25030,7 @@ function renderizarSlotsElenco() {
             slot.classList.add('resuelto');
             if (p.imagen) {
                 slot.innerHTML = `
-                    <img class="imagen-personaje-slot ${p.imagenClase || ''}" src="${p.imagen}" alt="${p.nombreMostrado}">
+                    <img loading="lazy" class="imagen-personaje-slot ${p.imagenClase || ''}" src="${p.imagen}" alt="${p.nombreMostrado}">
                     <div class="caption-personaje-slot">
                         <span class="nombre-personaje-slot">${p.nombreMostrado}</span>
                         <span class="actor-personaje-slot">${p.actor}</span>
@@ -25232,7 +25244,7 @@ const juegosNombralosDatasets = {
     "linternas": {
         titulo: "Green Lantern: Nombralos",
         subtitulo: "Nombrá a todos los Green Lantern que puedas antes de que se acabe el tiempo.",
-        icono: "<img src=\"https://upload.wikimedia.org/wikipedia/commons/c/c8/Green_lantern.png\" alt=\"Green Lantern\" style=\"height: 36px; width: auto;\">",
+        icono: "<img loading=\"lazy\" src=\"https://upload.wikimedia.org/wikipedia/commons/c/c8/Green_lantern.png\" alt=\"Green Lantern\" style=\"height: 36px; width: auto;\">",
         categoria: "dc",
         personajes: personajesNombralosLinternas
     },
@@ -25264,7 +25276,7 @@ function renderizarTarjetaCentralNombralos() {
     const p = personajesActivosNombralos.find(x => x.id === ultimoId);
     if (!p) return;
     cont.innerHTML = `
-        <img src="${p.imagen}" alt="${p.nombreMostrado}">
+        <img loading="lazy" src="${p.imagen}" alt="${p.nombreMostrado}">
         <div class="caption-personaje-slot">
             <span class="nombre-personaje-slot">${p.nombreMostrado}</span>
         </div>
@@ -25281,7 +25293,7 @@ function renderizarGaleriaDescubiertosNombralos() {
         const slot = document.createElement('div');
         slot.className = 'slot-elenco resuelto';
         slot.innerHTML = `
-            <img class="imagen-personaje-slot" src="${p.imagen}" alt="${p.nombreMostrado}">
+            <img loading="lazy" class="imagen-personaje-slot" src="${p.imagen}" alt="${p.nombreMostrado}">
             <div class="caption-personaje-slot">
                 <span class="nombre-personaje-slot">${p.nombreMostrado}</span>
             </div>
@@ -28858,14 +28870,14 @@ function renderizarTablaGrilla() {
     tabla.insertAdjacentHTML('beforeend', '<div class="celda-esquina"></div>');
     dataset.columnas.forEach(col => {
         const contenidoHeader = col.logo
-            ? `<img src="${col.logo}" alt="${col.nombre}" class="logo-header-grilla">`
+            ? `<img loading="lazy" src="${col.logo}" alt="${col.nombre}" class="logo-header-grilla">`
             : col.nombre;
         tabla.insertAdjacentHTML('beforeend', `<div class="celda-header-columna">${contenidoHeader}</div>`);
     });
 
     dataset.filas.forEach((fila, filaIdx) => {
         const contenidoHeaderFila = fila.logo
-            ? `<img src="${fila.logo}" alt="${fila.nombre}" class="logo-header-grilla">`
+            ? `<img loading="lazy" src="${fila.logo}" alt="${fila.nombre}" class="logo-header-grilla">`
             : fila.nombre;
         tabla.insertAdjacentHTML('beforeend', `<div class="celda-header-fila">${contenidoHeaderFila}</div>`);
         dataset.columnas.forEach((col, colIdx) => {
@@ -28898,7 +28910,7 @@ function pintarCeldaResuelta(celda, resuelta, fila, col) {
     celda.classList.remove('mostrando-coincidencias');
     if (resuelta.foto) {
         celda.innerHTML = `
-            <img src="${resuelta.foto}" alt="${resuelta.nombreMostrado}" style="width:100%; height:70%; object-fit:cover; object-position:center 15%; border-radius:6px 6px 0 0;">
+            <img loading="lazy" src="${resuelta.foto}" alt="${resuelta.nombreMostrado}" style="width:100%; height:70%; object-fit:cover; object-position:center 15%; border-radius:6px 6px 0 0;">
             <span class="nombre-celda-resuelta">${resuelta.nombreMostrado}</span>
         `;
     } else {
@@ -32156,7 +32168,7 @@ function wordleMostrarFinal(gano) {
     const racha = JSON.parse(localStorage.getItem('wordle-personajes-racha-' + wordleNivel + catSuf()) || 'null');
     const rachaTxt = (wordleModo === 'diaria' && racha) ? `<p>🔥 Racha: ${racha.racha} · Mejor: ${racha.mejor} · Ganadas: ${racha.ganadas}/${racha.jugadas}</p>` : '';
     const imgPers = imagenDePersonaje(wordleSecreta.palabra);
-    const imgHtml = imgPers ? `<img class="wordle-final-img" src="${imgPers}" alt="${wordleSecreta.nombre}">` : '';
+    const imgHtml = imgPers ? `<img loading="lazy" class="wordle-final-img" src="${imgPers}" alt="${wordleSecreta.nombre}">` : '';
     fin.querySelector('#wordle-final-texto').innerHTML = `
         <h3>${gano ? '¡Lo adivinaste!' : 'Se acabaron los intentos'}</h3>
         ${imgHtml}
@@ -36093,7 +36105,7 @@ async function verBibliotecaAmigo(uid, email) {
                 titulosAgregados.add(t);
                 grilla.insertAdjacentHTML('beforeend', `
                     <div class="tarjeta-media vista">
-                        <img src="${poster}" alt="${t}">
+                        <img loading="lazy" src="${poster}" alt="${t}">
                         <h3>${t}</h3>
                     </div>
                 `);
@@ -37120,7 +37132,7 @@ function renderizarRecomendaciones() {
         const tiene = titulosTengoGuardados.has(e.c.titulo);
         grilla.insertAdjacentHTML('beforeend', `
             <div class="tarjeta-media" data-accion="visto">
-                <img src="${e.c.poster}" alt="${e.c.titulo}">
+                <img loading="lazy" src="${e.c.poster}" alt="${e.c.titulo}">
                 <h3>${e.c.titulo}</h3>
                 <p>⭐ ${e.total.toFixed(1)} · 📚${e.col.toFixed(1)} 🦸${e.personaje.toFixed(1)} 🧭${e.tiempo.toFixed(1)}</p>
                 <ul style="text-align:left;font-size:11px;color:#ccc;padding-left:16px;margin:4px 0;">${razones}</ul>
@@ -37329,7 +37341,7 @@ function renderizarQueMiro() {
         const razones = [...new Map(c.razones.map(r => [r.txt, r])).values()].slice(0, 4).map(r => `<li>${r.txt}</li>`).join('');
         grilla.insertAdjacentHTML('beforeend', `
             <div class="tarjeta-media" data-accion="visto">
-                <img src="${c.e.poster}" alt="${c.e.titulo}">
+                <img loading="lazy" src="${c.e.poster}" alt="${c.e.titulo}">
                 <h3>${c.e.titulo}</h3>
                 <p>⭐ ${c.total.toFixed(1)} · 🎬${c.saga.toFixed(1)} 🎭${c.afinidad.toFixed(1)} 🏆${c.premios.toFixed(1)} 🧭${c.orden.toFixed(1)}</p>
                 <ul style="text-align:left;font-size:11px;color:#ccc;padding-left:16px;margin:4px 0;">${razones}</ul>
