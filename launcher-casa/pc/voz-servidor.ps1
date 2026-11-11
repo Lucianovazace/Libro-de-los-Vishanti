@@ -3,12 +3,14 @@
 $ErrorActionPreference = "Continue"
 $port = 5002
 $root = Split-Path -Parent $MyInvocation.MyCommand.Path
-$piper = Join-Path $root "piper\piper.exe"
-$vocesDir = Join-Path $root "voces"
-
-if (-not (Test-Path $piper)) { Write-Host "No encuentro piper\piper.exe dentro de $root"; Read-Host "Enter para cerrar"; exit 1 }
-$voz = Get-ChildItem -Path $vocesDir -Filter *.onnx -ErrorAction SilentlyContinue | Select-Object -First 1
-if (-not $voz) { Write-Host "No encuentro ningun archivo .onnx dentro de $vocesDir"; Read-Host "Enter para cerrar"; exit 1 }
+# Busca piper.exe y la voz (.onnx) en cualquier subcarpeta de esta carpeta
+$piperFile = Get-ChildItem -Path $root -Recurse -Filter piper.exe -ErrorAction SilentlyContinue | Select-Object -First 1
+if (-not $piperFile) { Write-Host "No encuentro piper.exe dentro de $root (ni en sus subcarpetas)"; Read-Host "Enter para cerrar"; exit 1 }
+$piper = $piperFile.FullName
+$voz = Get-ChildItem -Path $root -Recurse -Filter *.onnx -ErrorAction SilentlyContinue | Select-Object -First 1
+if (-not $voz) { Write-Host "No encuentro ningun archivo .onnx dentro de $root (ni en sus subcarpetas)"; Read-Host "Enter para cerrar"; exit 1 }
+Write-Host "Piper: $piper"
+Write-Host "Voz:   $($voz.FullName)"
 
 $tmp = Join-Path $root "tmp-voz"
 New-Item -ItemType Directory -Force -Path $tmp | Out-Null
