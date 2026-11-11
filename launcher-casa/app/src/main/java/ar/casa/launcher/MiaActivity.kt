@@ -626,7 +626,7 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
         sv.addView(box)
 
         val dlg = AlertDialog.Builder(this)
-            .setTitle("Ajustes de MIA")
+            .setTitle("Ajustes de MIA (v" + packageManager.getPackageInfo(packageName, 0).versionName + ")")
             .setView(sv)
             .setPositiveButton("Guardar") { _, _ ->
                 prefs.edit()

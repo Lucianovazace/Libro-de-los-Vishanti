@@ -20,7 +20,7 @@
     <application
         android:allowBackup="false"
         android:usesCleartextTraffic="true"
-        android:label="Casa"
+        android:label="MIA"
         android:theme="@style/Theme.Casa">
 
         <activity
