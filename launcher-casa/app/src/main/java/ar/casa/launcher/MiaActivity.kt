@@ -9,6 +9,7 @@ import android.content.pm.PackageManager
 import android.graphics.Color
 import android.graphics.Typeface
 import android.graphics.drawable.GradientDrawable
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -61,6 +62,8 @@ class MiaActivity : Activity() {
 
     private var tts: TextToSpeech? = null
     private var ttsReady = false
+    private var player: MediaPlayer? = null
+    private var speakToken = 0
     private var recognizer: SpeechRecognizer? = null
     private var listening = false
     private var busy = false
@@ -104,13 +107,14 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
 
     override fun onDestroy() {
         recognizer?.destroy()
+        stopSpeaking()
         tts?.shutdown()
         super.onDestroy()
     }
 
     override fun onStop() {
         stopListening()
-        tts?.stop()
+        stopSpeaking()
         super.onStop()
     }
 
@@ -235,7 +239,7 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
 
     private fun onMicClick() {
         if (listening) { stopListening(); return }
-        tts?.stop()
+        stopSpeaking()
         startListening()
     }
 
@@ -314,12 +318,79 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
 
     // ---------- Voz: hablar ----------
 
+    /** Dirección del servidor de voz (Piper) en la PC: mismo equipo que el modelo, puerto 5002. */
+    private fun voiceBase(): String? {
+        if (!prefs.getBoolean("mia_pc_voice", true)) return null
+        val u = (prefs.getString("mia_url", "") ?: "").trim()
+        if (u.isBlank()) return null
+        return try {
+            val host = java.net.URI(if (u.contains("://")) u else "http://$u").host ?: return null
+            "http://$host:5002"
+        } catch (e: Exception) { null }
+    }
+
+    private fun stopSpeaking() {
+        speakToken++
+        try { player?.stop() } catch (e: Exception) { }
+        try { player?.release() } catch (e: Exception) { }
+        player = null
+        tts?.stop()
+    }
+
     private fun say(text: String, onlySpeak: Boolean = false) {
         if (!onlySpeak) addBubble(text, false)
+        // onlySpeak = frases para Alexa: siempre con la voz del celu, para que Alexa las entienda igual que siempre.
+        val base = if (onlySpeak) null else voiceBase()
+        if (base != null) speakPc(text, base) else speakPhone(text)
+    }
+
+    private fun speakPhone(text: String) {
         val e = tts
         if (e == null || !ttsReady) { afterSpeech(); return }
         e.playSilentUtterance(300, TextToSpeech.QUEUE_FLUSH, "pre")
         e.speak(text, TextToSpeech.QUEUE_ADD, null, "mia")
+    }
+
+    /** Pide el audio a Piper en la PC y lo reproduce. Si algo falla, habla el celu como antes. */
+    private fun speakPc(text: String, base: String) {
+        val token = ++speakToken
+        setStatus("Preparando la voz...")
+        Thread {
+            var wav: ByteArray? = null
+            try {
+                val c = URL("$base/tts").openConnection() as HttpURLConnection
+                c.connectTimeout = 3000
+                c.readTimeout = 30000
+                c.requestMethod = "POST"
+                c.doOutput = true
+                c.setRequestProperty("Content-Type", "text/plain; charset=utf-8")
+                c.outputStream.use { it.write(text.toByteArray(Charsets.UTF_8)) }
+                if (c.responseCode in 200..299) wav = c.inputStream.use { it.readBytes() }
+                c.disconnect()
+            } catch (e: Exception) { wav = null }
+            val data = wav
+            ui.post {
+                if (token != speakToken) return@post
+                if (data == null || data.size < 100) { speakPhone(text); return@post }
+                try {
+                    val f = java.io.File(cacheDir, "mia-voz.wav")
+                    f.writeBytes(data)
+                    val mp = MediaPlayer()
+                    mp.setDataSource(f.absolutePath)
+                    mp.setOnCompletionListener {
+                        if (token == speakToken) { it.release(); player = null; afterSpeech() }
+                    }
+                    mp.setOnErrorListener { _, _, _ ->
+                        if (token == speakToken) { player = null; speakPhone(text) }
+                        true
+                    }
+                    mp.prepare()
+                    player = mp
+                    setStatus("")
+                    mp.start()
+                } catch (e: Exception) { speakPhone(text) }
+            }
+        }.start()
     }
 
     private fun afterSpeech() {
@@ -611,12 +682,16 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
         val online = CheckBox(this)
         online.text = "Permitir reconocimiento de voz con internet (el audio lo procesa Google)"
         online.isChecked = prefs.getBoolean("mia_online_stt", false)
+        val pcVoice = CheckBox(this)
+        pcVoice.text = "Usar la voz de MIA desde la PC (Piper). Si no responde, habla el celu."
+        pcVoice.isChecked = prefs.getBoolean("mia_pc_voice", true)
         val profile = field("Perfil", prefs.getString("mia_profile", null)?.takeIf { it.isNotBlank() } ?: DEFAULT_PROFILE, 8)
         val mem = field("Nada anotado todavía", prefs.getString("mia_memory", "") ?: "", 4)
 
         box.addView(label("Dirección de la PC (ej: http://192.168.0.15:8080)"))
         box.addView(url)
         box.addView(online)
+        box.addView(pcVoice)
         box.addView(label("Lo que MIA sabe de vos (editalo a gusto)"))
         box.addView(profile)
         box.addView(label("Lo que le pediste que recuerde (una cosa por línea)"))
@@ -632,6 +707,7 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
                 prefs.edit()
                     .putString("mia_url", url.text.toString().trim())
                     .putBoolean("mia_online_stt", online.isChecked)
+                    .putBoolean("mia_pc_voice", pcVoice.isChecked)
                     .putString("mia_profile", profile.text.toString().trim())
                     .putString("mia_memory", mem.text.toString().trim())
                     .apply()
@@ -651,7 +727,14 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
                     val code = c.responseCode; c.disconnect()
                     if (code in 200..299) "Conectado a la PC." else "La PC respondió con $code (puede estar cargando el modelo)."
                 } catch (e: Exception) { "No hay conexión. Revisá la dirección, el Wi-Fi y que el programa esté abierto." }
-                ui.post { Toast.makeText(this, msg, Toast.LENGTH_LONG).show() }
+                val vmsg = try {
+                    val host = java.net.URI(if (base.contains("://")) base else "http://$base").host
+                    val c = URL("http://$host:5002/health").openConnection() as HttpURLConnection
+                    c.connectTimeout = 3000; c.readTimeout = 3000
+                    val code = c.responseCode; c.disconnect()
+                    if (code in 200..299) "Voz de la PC: lista." else "Voz de la PC: respondió $code."
+                } catch (e: Exception) { "Voz de la PC: sin conexión (hablará el celu)." }
+                ui.post { Toast.makeText(this, msg + "\n" + vmsg, Toast.LENGTH_LONG).show() }
             }.start()
         }
     }
