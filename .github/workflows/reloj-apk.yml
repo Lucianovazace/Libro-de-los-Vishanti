@@ -1,0 +1,49 @@
+name: Compilar reloj MIA (APK)
+
+on:
+  push:
+    branches: [launcher]
+    paths:
+      - "reloj-mia/**"
+      - ".github/workflows/reloj-apk.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "8.9"
+
+      - name: Clave de firma estable (se guarda en el cache de GitHub, no en el repo)
+        uses: actions/cache@v4
+        with:
+          path: ~/.android/debug.keystore
+          key: debug-keystore-reloj-v1
+
+      - name: Compilar
+        working-directory: reloj-mia
+        run: gradle assembleDebug --no-daemon --stacktrace
+
+      - name: Publicar APK
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cp reloj-mia/app/build/outputs/apk/debug/app-debug.apk reloj-mia.apk
+          gh release view reloj-latest >/dev/null 2>&1 || \
+            gh release create reloj-latest --prerelease \
+              --title "MIA para reloj (ultima version)" \
+              --notes "APK de MIA para Galaxy Watch. Se actualiza solo en cada compilacion." \
+              --target "${{ github.sha }}"
+          gh release upload reloj-latest reloj-mia.apk --clobber
