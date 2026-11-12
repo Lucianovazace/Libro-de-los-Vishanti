@@ -31,6 +31,8 @@ $camPath = Join-Path $root "camisetas.ps1"
 if (Test-Path $camPath) { . $camPath }
 $objPath = Join-Path $root "objetos.ps1"
 if (Test-Path $objPath) { . $objPath }
+$futPath = Join-Path $root "futbol.ps1"
+if (Test-Path $futPath) { . $futPath }
 $humPath = Join-Path $root "humano.ps1"
 if (Test-Path $humPath) { . $humPath }
 
@@ -258,6 +260,9 @@ function Decide([string]$said, [string]$device, [string]$speaker) {
 
   # 1c) Donde estan las cosas de la casa (datos\objetos.json)
   if (Get-Command Objetos-Decide -ErrorAction SilentlyContinue) { $obj = $null; try { $obj = Objetos-Decide $said } catch { }; if ($obj) { return $obj } }
+
+  # 1d) Futbol: Boca, Champions League, equipos top de Europa
+  if (Get-Command Futbol-Decide -ErrorAction SilentlyContinue) { $fut = $null; try { $fut = Futbol-Decide $said } catch { }; if ($fut) { return $fut } }
 
   # 2) Memoria: "acordate que ..."
   $m = [regex]::Match($t, "(?i)^\s*(?:mia[,\s]+)?(?:acordate|record[aá]|anot[aá]|guard[aá])(?:\s+que|\s+de)?\s+(.+)$")
