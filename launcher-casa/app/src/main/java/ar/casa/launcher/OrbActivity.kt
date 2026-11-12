@@ -120,6 +120,7 @@ class OrbActivity : Activity() {
     // escuchando hasta que pasan QUIET_MS sin que le hables, y vuelve a quedar atenta.
     private val QUIET_MS = 12_000L
     private var active = false
+    private var errCount = 0
     private var lastActive = 0L
     private val atenta: Boolean get() = prefs.getBoolean("atenta", false)
 
@@ -250,10 +251,24 @@ class OrbActivity : Activity() {
             override fun onError(error: Int) {
                 orb.externalLevel = -1f
                 setState(0)
-                if (atenta && resumed && (error == SpeechRecognizer.ERROR_NO_MATCH || error == SpeechRecognizer.ERROR_SPEECH_TIMEOUT || error == SpeechRecognizer.ERROR_RECOGNIZER_BUSY || error == SpeechRecognizer.ERROR_CLIENT)) {
+                if (atenta && resumed && error != SpeechRecognizer.ERROR_INSUFFICIENT_PERMISSIONS && error != 12 && error != 13) {
                     if (active && System.currentTimeMillis() - lastActive > QUIET_MS) active = false
-                    setLabel(if (active) "" else "Atenta")
-                    passiveLoop(if (error == SpeechRecognizer.ERROR_RECOGNIZER_BUSY || error == SpeechRecognizer.ERROR_CLIENT) 900L else 150L)
+                    val calm = error == SpeechRecognizer.ERROR_NO_MATCH || error == SpeechRecognizer.ERROR_SPEECH_TIMEOUT
+                    if (calm) errCount = 0 else errCount++
+                    if (errCount > 12) {
+                        setLabel("Error de voz ($error). Tocá para reintentar")
+                        errCount = 0
+                        return
+                    }
+                    setLabel(if (calm) (if (active) "" else "Atenta") else "Atenta (reintento, código $error)")
+                    val wait = when {
+                        calm -> 150L
+                        error == 11 || error == 10 || error == SpeechRecognizer.ERROR_CLIENT || error == SpeechRecognizer.ERROR_RECOGNIZER_BUSY -> 1500L
+                        error == SpeechRecognizer.ERROR_NETWORK || error == SpeechRecognizer.ERROR_NETWORK_TIMEOUT -> 3000L
+                        else -> 1200L
+                    }
+                    try { r.destroy() } catch (e: Exception) { }
+                    passiveLoop(wait)
                     return
                 }
                 setLabel(when (error) {
@@ -272,6 +287,7 @@ class OrbActivity : Activity() {
                     if (atenta && resumed) { passiveLoop(150L) } else setLabel("No te escuché")
                     return
                 }
+                errCount = 0
                 if (atenta) {
                     val now = System.currentTimeMillis()
                     if (active && now - lastActive > QUIET_MS) active = false
