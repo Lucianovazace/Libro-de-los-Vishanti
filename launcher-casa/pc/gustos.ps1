@@ -33,7 +33,9 @@ function Gus-Cargar {
     foreach ($p in $j.pendientes) { [void]$pen.Add(@{ t = [string]$p.t; a = $p.a; n = (Norm ([string]$p.t)) }) }
     $al = @{}
     if ($j.alias) { foreach ($p in $j.alias.PSObject.Properties) { $al[[string]$p.Name] = [string]$p.Value } }
-    $script:gus = @{ usuario = [string]$j.usuario; vistas = $vis; pendientes = $pen; alias = $al }
+    $sit = New-Object System.Collections.ArrayList
+    foreach ($x in @($j.sitio)) { if ($x -and $x.t) { [void]$sit.Add(@{ t = [string]$x.t; tipo = [string]$x.tipo; a = $x.a; f = [string]$x.f; n = (Norm ([string]$x.t)) }) } }
+    $script:gus = @{ usuario = [string]$j.usuario; vistas = $vis; pendientes = $pen; alias = $al; sitio = $sit; trad = @{} }
     $script:gusSig = $sig
     $script:gusRssT = [datetime]::MinValue
   } catch { Write-Host ("Gustos: no pude leer gustos.json: " + $_.Exception.Message); return $null }
@@ -139,6 +141,32 @@ function Gus-Buscar($g, [string]$texto) {
   return @()
 }
 
+# Traduce un titulo en español al original con el modelo (si no esta en el diccionario). Cachea el resultado.
+function Gus-Traducir($g, [string]$texto) {
+  $k = Norm $texto
+  if ($g.trad.ContainsKey($k)) { return $g.trad[$k] }
+  $res = ""
+  if (Get-Command Est-Llm -ErrorAction SilentlyContinue) {
+    try {
+      $sys = "Sos un experto en cine. Te nombran una película, serie o juego por su título en español (o con un nombre popular). Respondé SOLO con el título original tal como figura en Letterboxd o IMDb, sin comillas, sin año y sin explicación. Si no estás seguro de cuál es, respondé exactamente: NO"
+      $a = Est-Llm $sys $texto 40
+      $l = (($a -split "`n")[0]).Trim().Trim('"')
+      if ($l -and $l.Length -le 90 -and $l -ne "NO" -and $l -notmatch "^NO\b") { $res = $l }
+    } catch { }
+  }
+  $g.trad[$k] = $res
+  return $res
+}
+
+function Gus-BuscarSitio($g, [string]$texto) {
+  $nq = (Norm $texto) -replace '^(la |el |los |las |un |una |serie |comic |libro |videojuego |juego )+', ''
+  $nq = $nq.Trim()
+  if ($nq.Length -lt 3) { return @() }
+  $exact = @($g.sitio | Where-Object { $_.n -eq $nq })
+  if ($exact.Count -gt 0) { return $exact }
+  return @($g.sitio | Where-Object { $_.n -like ("*" + $nq + "*") })
+}
+
 function Gus-Lista($items, [int]$max) {
   $out = @()
   foreach ($v in ($items | Select-Object -First $max)) { $out += (Gus-Nombre $v) }
@@ -177,9 +205,24 @@ function Gus-Recomendar($g, [string]$parecido) {
 function Gus-Vista($g, [string]$q, [bool]$peli, [string]$n) {
   $q = ($q -replace '\b(alguna vez|todavia|antes|ya|en letterboxd|en la web|en mi lista)\b', ' ').Trim()
   $hits = @(Gus-Buscar $g $q)
+  if ($hits.Count -eq 0 -and $g.sitio.Count -gt 0) {
+    $sh = @(Gus-BuscarSitio $g $q)
+    if ($sh.Count -gt 0) {
+      $e = $sh[0]
+      $cuando = ""; if ($e.f) { $cuando = " " + (Gus-Fecha $e.f) }
+      $tipo = $e.tipo; if (-not $tipo) { $tipo = "título" }
+      $txt = "Sí, en tu página de los Vishanti tenés marcado como visto " + $e.t + " (" + $tipo + ")" + $cuando + "."
+      if ($sh.Count -gt 1) { $txt = "En tu página de los Vishanti tenés marcados " + $sh.Count + " títulos así: " + ((@($sh | Select-Object -First 4) | ForEach-Object { $_.t + " (" + $_.tipo + ")" }) -join "; ") + "." }
+      return @{ ok = $true; action = "say"; reply = $txt }
+    }
+  }
+  if ($hits.Count -eq 0 -and ($peli -or $n -match "ya vi|habia visto|puntaje|nota|puse")) {
+    $en = Gus-Traducir $g $q
+    if ($en) { $hits = @(Gus-Buscar $g $en) }
+  }
   if ($hits.Count -eq 0) {
     if (-not $peli -and $n -notmatch "ya vi|habia visto|puntaje|nota|puse") { return $null }
-  return @{ ok = $true; action = "say"; reply = "Esa no la encuentro entre tus películas vistas. Ojo que las busco por el título en inglés, como figura en Letterboxd." }
+    return @{ ok = $true; action = "say"; reply = "Esa no la encuentro entre tus películas vistas ni en tu página." }
   }
   if ($hits.Count -eq 1) {
     $v = $hits[0]
@@ -200,11 +243,29 @@ function Gus-Azar($items, [int]$cuantos) {
 function Gustos-Decide([string]$said, [string]$speaker) {
   $n = Norm $said
   $peli = ($n -match "\b(pelicula|peliculas|peli|pelis|film|films|cine|letterboxd|watchlist)\b")
-  $disparos = ($peli -or $n -match "\b(ya vi|habia visto|vi la|vi el|que puntaje le puse|cuanto le puse|que nota le di|como puntue|estrellas|algo para ver|que veo)\b")
+  $disparos = ($peli -or $n -match "\b(serie|series|comic|comics|libro|libros|videojuego|videojuegos|ya vi|habia visto|vi la|vi el|que puntaje le puse|cuanto le puse|que nota le di|como puntue|estrellas|algo para ver|que veo)\b")
   if (-not $disparos) { return $null }
   if (-not $speaker) { $speaker = "Luciano" }
   if ($speaker -ne "Luciano") { return $null }
-  if ($n -match "\b(serie|series|capitulo|capitulos|temporada)\b" -and -not $peli) { return $null }
+  $otros = ($n -match "\b(serie|series|comic|comics|libro|libros|videojuego|videojuegos|juego|juegos)\b")
+  if ($otros -and -not $peli) {
+    $gs = Gus-Cargar
+    if (-not $gs -or $gs.sitio.Count -eq 0) { return $null }
+    if ($n -match "cuant(?:as|os) (series|comics|libros|videojuegos|juegos)") {
+      $mapa = @{ series = "Serie"; comics = "Cómic"; libros = "Libro"; videojuegos = "Videojuego"; juegos = "Videojuego" }
+      $pref = $mapa[$matches[1]]
+      $c = @($gs.sitio | Where-Object { $_.tipo -like ($pref + "*") })
+      return @{ ok = $true; action = "say"; reply = ("En tu página de los Vishanti tenés marcados " + $c.Count + " " + $matches[1] + " como vistos o leídos.") }
+    }
+    if ($n -match "\b(?:ya vi|habia visto|vi|lei|jugue|termine)\s+(.+)$") {
+      $sh = @(Gus-BuscarSitio $gs $matches[1])
+      if ($sh.Count -eq 0) { return $null }
+      $e = $sh[0]
+      $cuando = ""; if ($e.f) { $cuando = " " + (Gus-Fecha $e.f) }
+      return @{ ok = $true; action = "say"; reply = ("Sí, en tu página de los Vishanti tenés marcado " + $e.t + " (" + $e.tipo + ")" + $cuando + ".") }
+    }
+    return $null
+  }
   if ($n -match "\b(camiseta|camisetas|calendario|agenda|clima|recordame|boca|madrid|barcelona|seleccion)\b") { return $null }
 
   $g = Gus-Cargar

@@ -143,6 +143,8 @@ if (-not $vivo) {
     @{ n = "Conocimiento: no sabe"; q = "cuántos goles hizo Boca en el torneo de 1931";  esp = "no (lo )?tengo|no encuentro|no se|no puedo|todavia"; llm = $true },
     @{ n = "Calendario";            q = "qué tengo hoy en mi agenda";                    esp = "calendario|tenes|nada|conectado|ya no te queda|hoy" },
     @{ n = "Calendario (Mili)";     q = "qué tengo hoy en mi agenda"; speaker = "Mili";  esp = "privado" },
+    @{ n = "Gustos: titulo en español"; q = "ya vi Volver al futuro";                    esp = "volver|back to the future|viste|puntaje|estrellas"; req = $hayGustos },
+    @{ n = "Gustos: titulo en ingles";  q = "ya vi Back to the Future";                   esp = "volver|back to the future|viste|puntaje|estrellas"; req = $hayGustos },
     @{ n = "Gustos: ya vi";         q = "ya vi Dune";                                        esp = "dune|viste|no la encuentro"; req = $hayGustos },
     @{ n = "Gustos: ultima";        q = "cuál fue la última película que vi";                esp = "ultima|registraste"; req = $hayGustos },
     @{ n = "Gustos: favoritas";     q = "cuáles son mis películas favoritas";                esp = "favorita|estrellas"; req = $hayGustos },
