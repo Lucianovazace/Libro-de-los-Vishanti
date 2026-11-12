@@ -2,6 +2,7 @@
 # Config editable: datos\camisetas.json  (talle, precio maximo, equipos, tiendas)
 $camF = Join-Path $data "camisetas.json"
 $camOut = Join-Path $data "camisetas-ultimo.txt"
+$camDiag = Join-Path $data "camisetas-diagnostico.txt"
 $script:camDefault = @{
   talle = "M"; maxPrecio = 0
   equipos = @("Argentina", "Inter Miami", "Manchester City")
@@ -109,8 +110,44 @@ function Cam-Reporte([string[]]$equipos) {
   if ($todasFallas.Count -gt 0) { $txt += ". No pude consultar " + (($todasFallas.Keys) -join " ni ") }
   return @{ voz = $txt; display = ($lines -join "`n") }
 }
+function Cam-Diagnostico {
+  # Prueba cada tienda activa con una busqueda real y dice cual responde y cual no.
+  # Resultado completo en datos\camisetas-diagnostico.txt
+  $c = Cam-Load
+  $lines = @("Diagnostico de tiendas $(Get-Date -Format 'dd/MM/yyyy HH:mm') - consulta de prueba: camiseta Argentina"); $ok = @(); $vacias = @(); $mal = @()
+  foreach ($t in @($c.tiendas)) {
+    if (-not $t.activa) { continue }
+    $sw = [System.Diagnostics.Stopwatch]::StartNew()
+    try {
+      $r = @()
+      switch ($t.tipo) {
+        "vtex"   { $r = @(Cam-Vtex $t "camiseta Argentina" "") }
+        "adidas" { $r = @(Cam-Adidas $t "Argentina" "") }
+        "ml"     { $r = @(Cam-Ml $t "Argentina" "") }
+        default  { throw "tipo de conector desconocido: $($t.tipo)" }
+      }
+      $sw.Stop(); $ms = [int]$sw.Elapsed.TotalMilliseconds
+      if ($r.Count -gt 0) { $ok += $t.nombre; $lines += "OK      | $($t.nombre) | $($r.Count) resultados | $ms ms | ej: $($r[0].nombre)" }
+      else { $vacias += $t.nombre; $lines += "VACIA   | $($t.nombre) | responde pero 0 resultados (conector posiblemente desactualizado) | $ms ms" }
+    } catch {
+      $sw.Stop(); $ms = [int]$sw.Elapsed.TotalMilliseconds
+      $mal += $t.nombre; $lines += "ERROR   | $($t.nombre) | $($_.Exception.Message) | $ms ms"
+    }
+  }
+  [System.IO.File]::WriteAllText($camDiag, ($lines -join "`r`n"), $utf8)
+  $total = $ok.Count + $vacias.Count + $mal.Count
+  $txt = "Probe $total tiendas. Funcionan $($ok.Count)."
+  if ($vacias.Count -gt 0) { $txt += " Responden pero sin resultados: " + ($vacias -join ", ") + "." }
+  if ($mal.Count -gt 0) { $txt += " No responden: " + ($mal -join ", ") + "." }
+  $txt += " El detalle quedo en el archivo de diagnostico."
+  return @{ voz = $txt; display = ($lines -join "`n") }
+}
 function Camisetas-Decide([string]$said) {
   $n = Norm $said
+  if ($n -match "(proba|prueba|probar|verifica|chequea|diagnostic)\w*.*tiendas|tiendas.*(funcionan|responden|andan)") {
+    $d = Cam-Diagnostico
+    return @{ ok = $true; action = "say"; reply = $d.voz; display = $d.display }
+  }
   if ($n -notmatch "camiseta") { return $null }
   if ($n -match "^(mia )?(acordate|recorda|guarda|anota que)") { return $null }
   $c = Cam-Load
