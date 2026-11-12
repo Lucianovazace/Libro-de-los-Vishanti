@@ -1,0 +1,39 @@
+name: Compilar panel MIA (PC)
+
+on:
+  push:
+    branches: [launcher]
+    paths:
+      - "panel-pc/**"
+      - ".github/workflows/panel-exe.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+
+      - name: Compilar
+        working-directory: panel-pc
+        run: dotnet build MiaPanel.csproj -c Release -o out
+
+      - name: Publicar
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          ls -l panel-pc/out
+          cp panel-pc/out/MIA-Panel.exe MIA-Panel.exe
+          gh release view panel-latest >/dev/null 2>&1 || \
+            gh release create panel-latest --prerelease \
+              --title "Panel de MIA para la PC (ultima version)" \
+              --notes "Panel de MIA para Windows (orbe, estado y servicios ocultos). Se actualiza solo en cada compilacion." \
+              --target "${{ github.sha }}"
+          gh release upload panel-latest MIA-Panel.exe --clobber
