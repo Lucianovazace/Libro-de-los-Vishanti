@@ -37,6 +37,8 @@ $resPath = Join-Path $root "resumen.ps1"
 if (Test-Path $resPath) { . $resPath }
 $recPath = Join-Path $root "recordatorios.ps1"
 if (Test-Path $recPath) { . $recPath }
+$calPath = Join-Path $root "calendario.ps1"
+if (Test-Path $calPath) { . $calPath }
 $estPath = Join-Path $root "estudio.ps1"
 if (Test-Path $estPath) { . $estPath }
 $humPath = Join-Path $root "humano.ps1"
@@ -278,6 +280,9 @@ function Decide([string]$said, [string]$device, [string]$speaker) {
 
   # 1e) Resumen de la mañana / del día
   if (Get-Command Resumen-Decide -ErrorAction SilentlyContinue) { $res = $null; try { $res = Resumen-Decide $said $speaker } catch { }; if ($res) { return $res } }
+
+  # 1e2) Calendario de Google (solo lectura, solo Luciano)
+  if (Get-Command Calendario-Decide -ErrorAction SilentlyContinue) { $cal = $null; try { $cal = Calendario-Decide $said $speaker } catch { Write-Host ("Calendario: " + $_.Exception.Message) }; if ($cal) { return $cal } }
 
   # 1f) Recordatorios y lista de compras
   if (Get-Command Recordatorios-Decide -ErrorAction SilentlyContinue) { $rec = $null; try { $rec = Recordatorios-Decide $said } catch { }; if ($rec) { return $rec } }

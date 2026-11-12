@@ -60,6 +60,21 @@
       ],
       "nota": "Si hablás de lo más reciente, aclará que el dato es de principios de noviembre de 2026 y que cambia con cada partido.",
       "ruido": "barcelona|barca|blaugranas?|cules?"
+    },
+    {
+      "tema": "mardelplata",
+      "nombre": "la ciudad de Mar del Plata",
+      "perfil": "Luciano vive en Mar del Plata",
+      "claves": "mar del plata|marplatense|marplatenses|la feliz|general pueyrredon|punta mogotes|playa grande|torreon del monje|la rambla|los troncos|paseo guemes|bristol|havanna|alfajores marplatenses|laguna de los padres|bosque peralta ramos|puerto de mar del plata|intendente|montenegro|neme|villa ortiz basualdo|villa victoria|aldosivi|minella|torre tanque|cabo corrientes|casa del puente|banquina",
+      "excluye": "clima|el tiempo|temperatura|llueve|llover|lluvia|pronostico|ahora|hoy|manana|esta semana|este fin de semana|partido|champions|camiseta|boca|madrid|barcelona|seleccion|recordame|lista|agenda|calendario",
+      "intencion": "intendente|montenegro|neme|torreon|rambla|catedral|casino|havanna|alfajor|alfajores|puerto|playa|playas|barrio|barrios|piazzolla|aeropuerto|festival|cine|minella|aldosivi|penarol|hospital|universidad|habitantes|poblacion|fundo|fundacion|turismo|temporada|gastronomia|comer|llegar|distancia|kilometros|lobos marinos|patrimonio|emergencias|bomberos|911",
+      "ruido": "mar del plata|marplatense|marplatenses|la feliz",
+      "resumen": [
+        "Quién es Mar del Plata: ubicación y datos básicos",
+        "Fundación e historia: cuándo se fundó y quién la fundó",
+        "Lugares emblemáticos y patrimonio"
+      ],
+      "nota": "El clima, la hora y lo que pasa hoy no están en esta base. Si hablás de personas que gobiernan o de cifras, aclará que el dato es de noviembre de 2026."
     }
   ]
 }

@@ -1,0 +1,6 @@
+{
+  "_ayuda": "Copiá este archivo como calendario-config.json (en la misma carpeta) y pegá tu enlace secreto. En Google Calendar (desde la compu): Configuración > tu calendario > 'Integrar el calendario' > 'Dirección secreta en formato iCal'. Es de solo lectura. NO compartas ese enlace: quien lo tenga puede ver tu calendario. Podés poner varios calendarios.",
+  "calendarios": [
+    { "nombre": "Personal", "url": "https://calendar.google.com/calendar/ical/TU_CORREO/private-XXXXXXXX/basic.ics" }
+  ]
+}

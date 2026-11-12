@@ -40,6 +40,9 @@ function Resumen-Decide([string]$said, [string]$speaker) {
     if ($f -and $f.voz) { $partes += $f.voz; $display += "Fútbol: $($f.voz)"; if ($f.display) { $display += $f.display } }
   }
 
+  # Calendario de Google: solo para Luciano
+  if ($speaker -eq "Luciano" -and (Get-Command Cal-ResumenHoy -ErrorAction SilentlyContinue)) { $ch = $null; try { $ch = Cal-ResumenHoy } catch { }; if ($ch) { $partes += $ch.voz; $display += $ch.display } }
+
   # Recordatorios de hoy y lista de compras
   if (Get-Command Rec-Hoy -ErrorAction SilentlyContinue) { $rh = ""; try { $rh = Rec-Hoy } catch { }; if ($rh) { $partes += $rh; $display += $rh } }
   if (Get-Command Compras-Resumen -ErrorAction SilentlyContinue) { $cr = ""; try { $cr = Compras-Resumen } catch { }; if ($cr) { $partes += $cr; $display += $cr } }
