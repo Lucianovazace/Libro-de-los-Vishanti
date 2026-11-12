@@ -331,7 +331,7 @@ class MainActivity : Activity() {
     }
 
     private fun openTile(t: Tile) {
-        if (t.mia) { startActivity(Intent(this, MiaActivity::class.java)); return }
+        if (t.mia) { startActivity(Intent(this, OrbActivity::class.java)); return }
         val token = prefs.getString("vm_token", "") ?: ""
         val device = prefs.getString("dev_" + t.label, "") ?: ""
         if (token.isNotBlank() && device.isNotBlank()) {

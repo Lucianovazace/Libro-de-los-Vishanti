@@ -42,6 +42,12 @@
         </activity>
 
         <activity
+            android:name=".OrbActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
             android:name=".MiaActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize"
