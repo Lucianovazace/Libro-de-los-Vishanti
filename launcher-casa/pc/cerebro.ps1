@@ -59,7 +59,7 @@ function Norm([string]$s) {
   return ([regex]::Replace($t, "\s+", " ")).Trim()
 }
 
-function R($x) { return [int][Math]::Round([double]$x, [MidpointRounding]::AwayFromZero) }
+function Redondo($x) { return [int][Math]::Round([double]$x, [MidpointRounding]::AwayFromZero) }
 
 function Get-Text([string]$url, [string]$method, [string]$body, [int]$timeoutMs) {
   $req = [System.Net.HttpWebRequest]::Create($url)
@@ -137,11 +137,11 @@ function Get-Weather([int]$scope, [bool]$wind) {
     if ($scope -eq 2) { $day = 1 } elseif ($scope -eq 3) { $day = 2 }
     if (-not $d.temperature_2m_max -or $d.temperature_2m_max.Count -le $day) { $script:weatherError = "el servicio no mandó el pronóstico por día"; return $null }
     $nowH = (Get-Date).Hour
-    $tmax = R $d.temperature_2m_max[$day]
-    $tmin = R $d.temperature_2m_min[$day]
+    $tmax = Redondo $d.temperature_2m_max[$day]
+    $tmin = Redondo $d.temperature_2m_min[$day]
     $out = ""
     if ($day -eq 0) {
-      $out = "Ahora hay $(R $cur.temperature_2m) grados, $(Wmo ([int]$cur.weather_code)). Hoy la máxima es de $tmax y la mínima de $tmin."
+      $out = "Ahora hay $(Redondo $cur.temperature_2m) grados, $(Wmo ([int]$cur.weather_code)). Hoy la máxima es de $tmax y la mínima de $tmin."
     } else {
       $lbl = "Mañana"; if ($day -eq 2) { $lbl = "Pasado mañana" }
       $out = "${lbl}: $(Wmo ([int]$d.weather_code[$day])), máxima de $tmax y mínima de $tmin."
@@ -164,7 +164,7 @@ function Get-Weather([int]$scope, [bool]$wind) {
     else { $out += " No se espera lluvia." }
     # Noche: temperatura a las 22 comparada con la máxima
     if ($hr.temperature_2m -and ($day -gt 0 -or $nowH -lt 21)) {
-      $tn = R $hr.temperature_2m[$day * 24 + 22]
+      $tn = Redondo $hr.temperature_2m[$day * 24 + 22]
       $drop = $tmax - $tn
       if ($drop -ge 6) { $out += " A la noche refresca bastante: unos $tn grados a las 22." }
       elseif ($drop -ge 3) { $out += " A la noche refresca un poco, unos $tn grados." }
@@ -172,8 +172,8 @@ function Get-Weather([int]$scope, [bool]$wind) {
     }
     # Viento: solo si lo pidieron
     if ($wind) {
-      if ($day -eq 0) { $out += " Viento de $(R $cur.wind_speed_10m) km/h con ráfagas de $(R $cur.wind_gusts_10m)." }
-      else { $out += " Viento de hasta $(R $d.wind_speed_10m_max[$day]) km/h." }
+      if ($day -eq 0) { $out += " Viento de $(Redondo $cur.wind_speed_10m) km/h con ráfagas de $(Redondo $cur.wind_gusts_10m)." }
+      else { $out += " Viento de hasta $(Redondo $d.wind_speed_10m_max[$day]) km/h." }
     }
     return $out.Trim()
   } catch {
