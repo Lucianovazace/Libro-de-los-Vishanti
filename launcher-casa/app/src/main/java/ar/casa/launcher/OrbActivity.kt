@@ -44,6 +44,7 @@ class OrbActivity : Activity() {
 
     companion object {
         const val REQ_MIC = 7
+        const val REQ_LOC = 8
     }
 
     private lateinit var orb: OrbView
@@ -227,6 +228,63 @@ class OrbActivity : Activity() {
         }
     }
 
+
+    // ---------- Ubicación (para tiempos de viaje) ----------
+
+    private var lastFix: android.location.Location? = null
+
+    private fun hasLocPermission(): Boolean =
+        checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED ||
+            checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED
+
+    /** La mejor ubicación conocida (última del sistema o la que pidió esta app). Null si está apagada o sin permiso. */
+    private fun bestLocation(): android.location.Location? {
+        if (!prefs.getBoolean("loc", false) || !hasLocPermission()) return null
+        return try {
+            val lm = getSystemService(Context.LOCATION_SERVICE) as android.location.LocationManager
+            val all = ArrayList<android.location.Location>()
+            lastFix?.let { all.add(it) }
+            for (p in lm.getProviders(true)) {
+                try { lm.getLastKnownLocation(p)?.let { all.add(it) } } catch (e: SecurityException) { }
+            }
+            all.maxByOrNull { it.time }
+        } catch (e: Exception) { null }
+    }
+
+    /** Pide una ubicación fresca en segundo plano para que la próxima consulta salga actualizada. */
+    @Suppress("DEPRECATION")
+    private fun refreshFix() {
+        if (!prefs.getBoolean("loc", false) || !hasLocPermission()) return
+        try {
+            val lm = getSystemService(Context.LOCATION_SERVICE) as android.location.LocationManager
+            for (p in listOf(android.location.LocationManager.GPS_PROVIDER, android.location.LocationManager.NETWORK_PROVIDER)) {
+                if (!lm.isProviderEnabled(p)) continue
+                lm.requestSingleUpdate(p, object : android.location.LocationListener {
+                    override fun onLocationChanged(l: android.location.Location) { lastFix = l }
+                    override fun onStatusChanged(provider: String?, status: Int, extras: Bundle?) {}
+                    override fun onProviderEnabled(provider: String) {}
+                    override fun onProviderDisabled(provider: String) {}
+                }, Looper.getMainLooper())
+            }
+        } catch (e: Exception) { }
+    }
+
+    private fun withLocation(j: JSONObject): JSONObject {
+        val l = bestLocation() ?: return j
+        j.put("lat", l.latitude).put("lon", l.longitude).put("locAge", ((System.currentTimeMillis() - l.time) / 1000).coerceAtLeast(0))
+        refreshFix()
+        return j
+    }
+
+    private fun toggleLocation() {
+        val on = !prefs.getBoolean("loc", false)
+        prefs.edit().putBoolean("loc", on).apply()
+        if (on && !hasLocPermission()) {
+            requestPermissions(arrayOf(Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION), REQ_LOC)
+        } else if (on) { refreshFix() }
+        setLabel(if (on) "Ubicación activada" else "Ubicación apagada")
+    }
+
     // ---------- Escuchar ----------
 
     private fun startListening() {
@@ -316,6 +374,11 @@ class OrbActivity : Activity() {
 
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        if (requestCode == REQ_LOC) {
+            val ok = grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED
+            if (ok) { refreshFix(); setLabel("Ubicación activada") } else { prefs.edit().putBoolean("loc", false).apply(); setLabel("Sin permiso de ubicación") }
+            return
+        }
         if (requestCode == REQ_MIC) {
             if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) startListening()
             else setLabel("Sin permiso de micrófono")
@@ -339,7 +402,7 @@ class OrbActivity : Activity() {
                 c.requestMethod = "POST"
                 c.doOutput = true
                 c.setRequestProperty("Content-Type", "application/json")
-                c.outputStream.use { it.write(JSONObject().put("text", said).put("device", deviceName()).toString().toByteArray(Charsets.UTF_8)) }
+                c.outputStream.use { it.write(withLocation(JSONObject().put("text", said).put("device", deviceName())).toString().toByteArray(Charsets.UTF_8)) }
                 if (c.responseCode in 200..299) res = JSONObject(c.inputStream.bufferedReader().use { it.readText() })
                 c.disconnect()
             } catch (e: Exception) { res = null }
@@ -729,7 +792,8 @@ class OrbActivity : Activity() {
             "Escuchar al abrir: " + (if (prefs.getBoolean("auto_listen", false)) "sí" else "no"),
             "Siempre atenta (decí \"Mia...\"): " + (if (prefs.getBoolean("atenta", false)) "sí" else "no"),
             "Probar conexión",
-            "Chat y ajustes de MIA"
+            "Chat y ajustes de MIA",
+            "Ubicación (tiempos de viaje): " + (if (prefs.getBoolean("loc", false)) "sí" else "no")
         )
         AlertDialog.Builder(this).setItems(items) { _, which ->
             when (which) {
@@ -771,6 +835,7 @@ class OrbActivity : Activity() {
                 }
                 5 -> testConnection()
                 6 -> startActivity(Intent(this, MiaActivity::class.java))
+                7 -> toggleLocation()
             }
         }.show()
     }

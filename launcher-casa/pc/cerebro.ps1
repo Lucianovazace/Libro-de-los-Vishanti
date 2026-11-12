@@ -43,6 +43,8 @@ $gusPath2 = Join-Path $root "gustos.ps1"
 if (Test-Path $gusPath2) { . $gusPath2 }
 $estPath = Join-Path $root "estudio.ps1"
 if (Test-Path $estPath) { . $estPath }
+$viaPath = Join-Path $root "viaje.ps1"
+if (Test-Path $viaPath) { . $viaPath }
 $humPath = Join-Path $root "humano.ps1"
 if (Test-Path $humPath) { . $humPath }
 
@@ -268,6 +270,9 @@ function Decide([string]$said, [string]$device, [string]$speaker) {
     }
   }
 
+  # 1a) Viajes y ubicación
+  if (Get-Command Viaje-Decide -ErrorAction SilentlyContinue) { $via = $null; try { $via = Viaje-Decide $said $speaker } catch { Write-Host ("Viaje: " + $_.Exception.Message) }; if ($via) { return $via } }
+
   # 1b) Camisetas
   if (Get-Command Camisetas-Decide -ErrorAction SilentlyContinue) { $cam = $null; try { $cam = Camisetas-Decide $said } catch { }; if ($cam) { return $cam } }
 
@@ -427,6 +432,8 @@ while ($true) {
       $said = ([string]$req.text).Trim()
       $device = [string]$req.device
       $speaker = [string]$req.speaker
+      $script:ubic = $null
+      if ($null -ne $req.lat -and $null -ne $req.lon) { $script:ubic = @{ lat = [double]$req.lat; lon = [double]$req.lon; edad = [int]$req.locAge } }
       if ($speaker) { if ((Norm $speaker) -eq "mili") { $speaker = "Mili" } elseif ((Norm $speaker) -eq "luciano") { $speaker = "Luciano" } else { $speaker = "invitado" } }
       if ($said.Length -eq 0) {
         Send-Response $stream 400 "text/plain" ($ascii.GetBytes("sin texto"))
