@@ -119,6 +119,7 @@ namespace MiaPanel
                     g.FillPath(pb, path);
                 }
             }
+            float k = DeviceDpi / 96f;
             float ca = (float)Math.Cos(angle), sa = (float)Math.Sin(angle);
             float ct = (float)Math.Cos(0.38), st = (float)Math.Sin(0.38);
             for (int i = 0; i < pts.Count; i++)
@@ -137,7 +138,7 @@ namespace MiaPanel
                 float tw = 0.75f + 0.25f * (float)Math.Sin(t * 2.2 + i);
                 int bi = (int)(d * tw * (brushes.Length - 1));
                 if (bi < 0) bi = 0; if (bi >= brushes.Length) bi = brushes.Length - 1;
-                float size = 1.3f + 2.4f * d;
+                float size = (1.3f + 2.4f * d) * k;
                 g.FillEllipse(brushes[bi], sx - size / 2, sy - size / 2, size, size);
             }
         }
@@ -182,6 +183,8 @@ namespace MiaPanel
             svcs.Add(new Svc { Id = "voz", Title = "Voz (Piper)", Port = 5002 });
             svcs.Add(new Svc { Id = "cerebro", Title = "Cerebro (memoria y reglas)", Port = 5003 });
 
+            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleMode = AutoScaleMode.Dpi;
             Text = "MIA";
             ClientSize = new Size(420, 700);
             FormBorderStyle = FormBorderStyle.FixedSingle;
@@ -715,9 +718,13 @@ namespace MiaPanel
 
     static class Program
     {
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        static extern bool SetProcessDPIAware();
+
         [STAThread]
         static void Main(string[] args)
         {
+            try { SetProcessDPIAware(); } catch { }
             bool createdNew;
             using (Mutex m = new Mutex(true, "MiaPanelSingleInstance", out createdNew))
             {
