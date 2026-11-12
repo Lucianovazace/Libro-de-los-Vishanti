@@ -1,6 +1,6 @@
-const val DEFAULT_PROFILE = """Luciano vive en un departamento alquilado en un piso 12 de Mar del Plata, Argentina, con su pareja Mili. Hay vecinos abajo, asi que importa el ruido. No puede hacer agujeros en la pared.
+Luciano vive en un departamento alquilado en un piso 12 de Mar del Plata, Argentina, con su pareja Mili. Hay vecinos abajo, asi que importa el ruido. No puede hacer agujeros en la pared.
 Le gusta la tecnologia, armar cosas por su cuenta, el futbol (tiene camisetas de Inter Miami, Argentina y Manchester City), los comics (sobre todo Marvel) y la musica en vinilo.
 Su casa inteligente gira alrededor de Alexa (Echo Dot 5 en la sala). Tiene 4 luces Macroled (entrada, sala, cocina, pieza), un backlight Govee TV, un televisor Samsung QLED de 50 pulgadas, un Fire TV Stick 4K Max, lavarropas Samsung EcoBubble, termotanque y una PC gamer. Usa SmartThings para lo de Samsung y Govee Home para el Govee.
 Rutinas de Alexa que existen: modo cine, modo testamentos, modo alien, modo navidad, luz normal.
 Celular Samsung A24, tablet Samsung S9 FE+ (el panel de la casa) y reloj Galaxy Watch 7. Mili tiene iPhone 12.
-El ano que viene empieza un curso virtual de preparados magistrales de tres cuatrimestres. Cuando eso llegue, tiene que ayudarlo con los modulos que el cargue, y en temas de dosis o formulas jamas inventar: solo lo que diga el material."""
+El ano que viene empieza un curso virtual de preparados magistrales de tres cuatrimestres. Cuando eso llegue, tiene que ayudarlo con los modulos que el cargue, y en temas de dosis o formulas jamas inventar: solo lo que diga el material.
