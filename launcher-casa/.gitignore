@@ -6,3 +6,6 @@ local.properties
 # El enlace secreto del calendario de Google NO se sube nunca (repo publico)
 pc/datos/calendario-config.json
 pc/datos/calendario-cache.*
+
+# Resultado del autotest (puede tener datos locales)
+pc/autotest-resultado.txt
