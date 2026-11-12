@@ -17,7 +17,7 @@ $script:camDefault = @{
     @{ nombre = "Solo Deportes"; tipo = "vtex"; base = "https://www.solodeportes.com.ar"; activa = $true },
     @{ nombre = "Stock Center"; tipo = "vtex"; base = "https://www.stockcenter.com.ar"; activa = $true },
     @{ nombre = "Moov"; tipo = "vtex"; base = "https://www.moov.com.ar"; activa = $true },
-    @{ nombre = "Mercado Libre"; tipo = "ml"; base = "https://listado.mercadolibre.com.ar"; activa = $false }
+    @{ nombre = "Mercado Libre"; tipo = "ml"; base = "https://listado.mercadolibre.com.ar"; activa = $true }
   )
 }
 function Cam-Load {
