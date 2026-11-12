@@ -153,7 +153,7 @@ if (-not $vivo) {
     @{ n = "Resumen del dia";       q = "resumen del día";                               esp = "hoy|buen"; red = $true },
     @{ n = "Lista: agregar";        q = "agregá autotest a la lista";                    esp = "autotest|lista"; q2 = "qué hay en la lista"; esp2 = "autotest"; q3 = "sacá autotest de la lista"; esp3 = "autotest|saque|quit|elimin|borr" },
     @{ n = "Repregunta";            q = "recordame pagar la luz";                        esp = "cuando|que dia|hora|a que"; q2 = "no"; esp2 = "bueno|listo|cancel|dale|ok|nada|de acuerdo" },
-    @{ n = "Humano";                q = "Mia, ¿estás ahí?";                              esp = "aca|aqui|ahi|escucho|si|estoy|dime|decime" },
+    @{ n = "Humano";                q = "Mia, ¿estás ahí?";                              esp = "aca|aqui|ahi|escucho|si|estoy|dime|decime|presente|ayudo|atenta|contame|fuerte y claro" },
     @{ n = "Estudio";               q = "qué dice el material sobre la titulación";      esp = "titul|material|carpeta|analitica"; llm = $true; req = $hayEstudio },
     @{ n = "Modelo (charla libre)"; q = "contame un chiste corto";                       esp = "\w{6}"; llm = $true },
     @{ n = "Invitado"; q = "recordame comprar leche"; speaker = "invitado";              esp = "\w{4}" }
