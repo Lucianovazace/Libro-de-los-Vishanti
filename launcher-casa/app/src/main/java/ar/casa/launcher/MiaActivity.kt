@@ -329,6 +329,17 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
         } catch (e: Exception) { null }
     }
 
+    /** Cerebro compartido en la PC (puerto 5003). null si esta apagado en Ajustes o no hay direccion. */
+    private fun brainBase(): String? {
+        if (!prefs.getBoolean("mia_brain", true)) return null
+        val u = (prefs.getString("mia_url", "") ?: "").trim()
+        if (u.isBlank()) return null
+        return try {
+            val host = java.net.URI(if (u.contains("://")) u else "http://$u").host ?: return null
+            "http://$host:5003"
+        } catch (e: Exception) { null }
+    }
+
     private fun stopSpeaking() {
         speakToken++
         try { player?.stop() } catch (e: Exception) { }
@@ -418,8 +429,46 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
         return if (prefs.contains(key)) (prefs.getString(key, "") ?: "") else def
     }
 
+    /** Primero le pregunta al cerebro de la PC (memoria y reglas compartidas con el reloj). Si no responde, usa la logica local del celu. */
     private fun handle(said: String) {
+        val bb = brainBase()
+        if (bb == null) { handleLocal(said, true); return }
         addBubble(said, true)
+        busy = true
+        setStatus("Pensando...")
+        val device = if (resources.configuration.smallestScreenWidthDp >= 600) "tablet" else "celu"
+        Thread {
+            var res: JSONObject? = null
+            try {
+                val c = URL("$bb/mia").openConnection() as HttpURLConnection
+                c.connectTimeout = 2500
+                c.readTimeout = 130000
+                c.requestMethod = "POST"
+                c.doOutput = true
+                c.setRequestProperty("Content-Type", "application/json")
+                c.outputStream.use { it.write(JSONObject().put("text", said).put("device", device).toString().toByteArray(Charsets.UTF_8)) }
+                if (c.responseCode in 200..299) res = JSONObject(c.inputStream.bufferedReader().use { it.readText() })
+                c.disconnect()
+            } catch (e: Exception) { res = null }
+            val r = res
+            ui.post {
+                busy = false
+                if (r == null || r.optString("reply").isBlank()) {
+                    handleLocal(said, false)
+                } else {
+                    val reply = r.optString("reply")
+                    if (r.optString("action") == "alexa") {
+                        addBubble(r.optString("display").ifBlank { reply }, false)
+                        say(reply, onlySpeak = true)
+                    } else say(reply)
+                    if (!r.optBoolean("ok", true)) { continuous = false; resetContBtn() }
+                }
+            }
+        }.start()
+    }
+
+    private fun handleLocal(said: String, bubble: Boolean) {
+        if (bubble) addBubble(said, true)
         val n = norm(said)
 
         // 1) Ordenes de la casa
@@ -730,6 +779,9 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
         val pcVoice = CheckBox(this)
         pcVoice.text = "Usar la voz de MIA desde la PC (Piper). Si no responde, habla el celu."
         pcVoice.isChecked = prefs.getBoolean("mia_pc_voice", true)
+        val brain = CheckBox(this)
+        brain.text = "Usar el cerebro de la PC (memoria y reglas compartidas con el reloj). Si no responde, uso la lógica del celu."
+        brain.isChecked = prefs.getBoolean("mia_brain", true)
         val profile = field("Perfil", prefs.getString("mia_profile", null)?.takeIf { it.isNotBlank() } ?: DEFAULT_PROFILE, 8)
         val mem = field("Nada anotado todavía", prefs.getString("mia_memory", "") ?: "", 4)
 
@@ -737,6 +789,7 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
         box.addView(url)
         box.addView(online)
         box.addView(pcVoice)
+        box.addView(brain)
         box.addView(label("Lo que MIA sabe de vos (editalo a gusto)"))
         box.addView(profile)
         box.addView(label("Lo que le pediste que recuerde (una cosa por línea)"))
@@ -753,6 +806,7 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
                     .putString("mia_url", url.text.toString().trim())
                     .putBoolean("mia_online_stt", online.isChecked)
                     .putBoolean("mia_pc_voice", pcVoice.isChecked)
+                    .putBoolean("mia_brain", brain.isChecked)
                     .putString("mia_profile", profile.text.toString().trim())
                     .putString("mia_memory", mem.text.toString().trim())
                     .apply()
@@ -779,7 +833,14 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
                     val code = c.responseCode; c.disconnect()
                     if (code in 200..299) "Voz de la PC: lista." else "Voz de la PC: respondió $code."
                 } catch (e: Exception) { "Voz de la PC: sin conexión (hablará el celu)." }
-                ui.post { Toast.makeText(this, msg + "\n" + vmsg, Toast.LENGTH_LONG).show() }
+                val bmsg = try {
+                    val host = java.net.URI(if (base.contains("://")) base else "http://$base").host
+                    val c = URL("http://$host:5003/health").openConnection() as HttpURLConnection
+                    c.connectTimeout = 3000; c.readTimeout = 3000
+                    val code = c.responseCode; c.disconnect()
+                    if (code in 200..299) "Cerebro de la PC: listo." else "Cerebro de la PC: respondió $code."
+                } catch (e: Exception) { "Cerebro de la PC: sin conexión (uso la lógica del celu)." }
+                ui.post { Toast.makeText(this, msg + "\n" + vmsg + "\n" + bmsg, Toast.LENGTH_LONG).show() }
             }.start()
         }
     }

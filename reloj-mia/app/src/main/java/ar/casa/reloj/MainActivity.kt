@@ -232,9 +232,42 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
 
     // ---------- Cerebro ----------
 
+    /** Primero le pregunta al cerebro de la PC (memoria, Alexa y clima compartidos con el celu). Si no responde, usa la lógica local. */
     private fun handle(said: String) {
         setState(2)
         setLabel("Pensando")
+        val bb = brainBase()
+        if (bb == null) { handleLocal(said); return }
+        Thread {
+            var res: JSONObject? = null
+            try {
+                val c = URL("$bb/mia").openConnection() as HttpURLConnection
+                c.connectTimeout = 2500
+                c.readTimeout = 130000
+                c.requestMethod = "POST"
+                c.doOutput = true
+                c.setRequestProperty("Content-Type", "application/json")
+                c.outputStream.use { it.write(JSONObject().put("text", said).put("device", "reloj").toString().toByteArray(Charsets.UTF_8)) }
+                if (c.responseCode in 200..299) res = JSONObject(c.inputStream.bufferedReader().use { it.readText() })
+                c.disconnect()
+            } catch (e: Exception) { res = null }
+            val r = res
+            ui.post {
+                if (state != 2) return@post
+                if (r == null || r.optString("reply").isBlank()) {
+                    handleLocal(said)
+                } else {
+                    val reply = r.optString("reply")
+                    if (r.optString("action") == "alexa") {
+                        setLabel("Alexa")
+                        speakFallback(reply)
+                    } else speak(reply)
+                }
+            }
+        }.start()
+    }
+
+    private fun handleLocal(said: String) {
         val n = norm(said)
         if (n.contains("que hora es")) {
             speak("Son las " + SimpleDateFormat("H:mm", Locale("es", "AR")).format(Date()) + ".")
@@ -275,6 +308,15 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
         val host = java.net.URI(if (u.contains("://")) u else "http://$u").host
         if (host.isNullOrBlank()) null else "http://$host:5002"
     } catch (e: Exception) { null }
+
+    private fun brainBase(): String? {
+        if (!prefs.getBoolean("brain", true)) return null
+        return try {
+            val u = pcUrl()
+            val host = java.net.URI(if (u.contains("://")) u else "http://$u").host
+            if (host.isNullOrBlank()) null else "http://$host:5003"
+        } catch (e: Exception) { null }
+    }
 
     private fun askModel(said: String) {
         val base = pcUrl()
@@ -475,7 +517,8 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
             "Color: " + OrbView.PALETTES[orb.colorIndex].name,
             "Dirección de la PC",
             "Partículas: " + orb.particleCount,
-            "Probar conexión"
+            "Probar conexión",
+            "Cerebro de la PC: " + (if (prefs.getBoolean("brain", true)) "sí" else "no")
         )
         AlertDialog.Builder(this).setItems(items) { _, which ->
             when (which) {
@@ -493,6 +536,11 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
                     setLabel("" + orb.particleCount + " partículas")
                 }
                 3 -> testConnection()
+                4 -> {
+                    val on = !prefs.getBoolean("brain", true)
+                    prefs.edit().putBoolean("brain", on).apply()
+                    setLabel(if (on) "Cerebro de la PC" else "Cerebro del reloj")
+                }
             }
         }.show()
     }
@@ -513,6 +561,7 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
         setLabel("Probando")
         val base = pcUrl()
         val vbase = voiceBase()
+        val bbase = brainBase()
         Thread {
             fun ping(u: String): Boolean = try {
                 val c = URL("$u/health").openConnection() as HttpURLConnection
@@ -524,7 +573,8 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
             } catch (e: Exception) { false }
             val a = ping(base)
             val v = vbase != null && ping(vbase)
-            ui.post { setLabel("PC " + (if (a) "ok" else "no") + " · Voz " + (if (v) "ok" else "no")) }
+            val b = bbase != null && ping(bbase)
+            ui.post { setLabel("PC " + (if (a) "ok" else "no") + " · Voz " + (if (v) "ok" else "no") + " · Cerebro " + (if (b) "ok" else "no")) }
         }.start()
     }
 }
