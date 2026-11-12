@@ -116,11 +116,35 @@ class OrbActivity : Activity() {
     private var listenAfter = false
     private var resumed = false
 
+    // Modo "siempre atenta": escucha en bucle y solo se activa al oír "Mia...". Una vez activa sigue
+    // escuchando hasta que pasan QUIET_MS sin que le hables, y vuelve a quedar atenta.
+    private val QUIET_MS = 12_000L
+    private var active = false
+    private var lastActive = 0L
+    private val atenta: Boolean get() = prefs.getBoolean("atenta", false)
+
+    private fun muteBeep(on: Boolean) {
+        try {
+            val am = getSystemService(Context.AUDIO_SERVICE) as AudioManager
+            val d = if (on) AudioManager.ADJUST_MUTE else AudioManager.ADJUST_UNMUTE
+            am.adjustStreamVolume(AudioManager.STREAM_NOTIFICATION, d, 0)
+            am.adjustStreamVolume(AudioManager.STREAM_SYSTEM, d, 0)
+        } catch (e: Exception) { }
+    }
+
+    private fun passiveLoop(delayMs: Long) {
+        ui.postDelayed({ if (atenta && resumed && state == 0) startListening() }, delayMs)
+    }
+
     override fun onResume() {
         super.onResume()
         resumed = true
         setState(0)
-        maybeAutoListen()
+        if (atenta) {
+            muteBeep(true)
+            active = false
+            passiveLoop(600)
+        } else maybeAutoListen()
     }
 
     override fun onPause() {
@@ -149,12 +173,14 @@ class OrbActivity : Activity() {
     }
 
     override fun onStop() {
+        muteBeep(false)
         try { recognizer?.cancel() } catch (e: Exception) { }
         stopSpeaking()
         super.onStop()
     }
 
     override fun onDestroy() {
+        muteBeep(false)
         ui.removeCallbacks(sleepTask)
         recognizer?.destroy()
         releasePlayer()
@@ -180,7 +206,7 @@ class OrbActivity : Activity() {
         if (s != 1) orb.externalLevel = -1f
         orb.keepScreenOn = true
         ui.removeCallbacks(sleepTask)
-        if (s == 0) ui.postDelayed(sleepTask, 45_000)
+        if (s == 0 && !atenta) ui.postDelayed(sleepTask, 45_000)
         orb.invalidate()
     }
 
@@ -224,6 +250,12 @@ class OrbActivity : Activity() {
             override fun onError(error: Int) {
                 orb.externalLevel = -1f
                 setState(0)
+                if (atenta && resumed && (error == SpeechRecognizer.ERROR_NO_MATCH || error == SpeechRecognizer.ERROR_SPEECH_TIMEOUT || error == SpeechRecognizer.ERROR_RECOGNIZER_BUSY || error == SpeechRecognizer.ERROR_CLIENT)) {
+                    if (active && System.currentTimeMillis() - lastActive > QUIET_MS) active = false
+                    setLabel(if (active) "" else "Atenta")
+                    passiveLoop(if (error == SpeechRecognizer.ERROR_RECOGNIZER_BUSY || error == SpeechRecognizer.ERROR_CLIENT) 900L else 150L)
+                    return
+                }
                 setLabel(when (error) {
                     SpeechRecognizer.ERROR_NO_MATCH, SpeechRecognizer.ERROR_SPEECH_TIMEOUT -> "No te escuché"
                     12, 13 -> "Falta el paquete de español"
@@ -235,7 +267,21 @@ class OrbActivity : Activity() {
             override fun onResults(results: Bundle?) {
                 val said = results?.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION)?.firstOrNull()?.trim().orEmpty()
                 orb.externalLevel = -1f
-                if (said.isEmpty()) { setState(0); setLabel("No te escuché") } else handle(said)
+                if (said.isEmpty()) {
+                    setState(0)
+                    if (atenta && resumed) { passiveLoop(150L) } else setLabel("No te escuché")
+                    return
+                }
+                if (atenta) {
+                    val now = System.currentTimeMillis()
+                    if (active && now - lastActive > QUIET_MS) active = false
+                    if (!active) {
+                        if (!Regex("(^| )(mia|mi a)( |$)").containsMatchIn(norm(said))) { setState(0); passiveLoop(100L); return }
+                        active = true
+                    }
+                    lastActive = now
+                }
+                handle(said)
             }
             override fun onPartialResults(partialResults: Bundle?) {}
             override fun onEvent(eventType: Int, params: Bundle?) {}
@@ -248,7 +294,7 @@ class OrbActivity : Activity() {
             .putExtra(RecognizerIntent.EXTRA_PREFER_OFFLINE, !prefs.getBoolean("mia_online_stt", false))
             .putExtra(RecognizerIntent.EXTRA_CALLING_PACKAGE, packageName)
         setState(1)
-        setLabel("Te escucho")
+        setLabel(if (atenta && !active) "Atenta" else "Te escucho")
         r.startListening(i)
     }
 
@@ -540,7 +586,12 @@ class OrbActivity : Activity() {
         releasePlayer()
         orb.levelProvider = null
         setState(0)
-        if (listenAfter) { listenAfter = false; ui.postDelayed({ if (state == 0) startListening() }, 350) }
+        val again = listenAfter
+        listenAfter = false
+        if (atenta) {
+            if (active) lastActive = System.currentTimeMillis()
+            passiveLoop(400L)
+        } else if (again) ui.postDelayed({ if (state == 0) startListening() }, 350)
     }
 
     private fun stopSpeaking() {
@@ -660,6 +711,7 @@ class OrbActivity : Activity() {
             "Partículas: " + orb.particleCount,
             "Cerebro de la PC: " + (if (prefs.getBoolean("mia_brain", true)) "sí" else "no"),
             "Escuchar al abrir: " + (if (prefs.getBoolean("auto_listen", false)) "sí" else "no"),
+            "Siempre atenta (decí \"Mia...\"): " + (if (prefs.getBoolean("atenta", false)) "sí" else "no"),
             "Probar conexión",
             "Chat y ajustes de MIA"
         )
@@ -687,8 +739,22 @@ class OrbActivity : Activity() {
                     prefs.edit().putBoolean("auto_listen", on).apply()
                     setLabel(if (on) "Escucha al abrir" else "Espera un toque")
                 }
-                4 -> testConnection()
-                5 -> startActivity(Intent(this, MiaActivity::class.java))
+                4 -> {
+                    val on = !prefs.getBoolean("atenta", false)
+                    prefs.edit().putBoolean("atenta", on).apply()
+                    active = false
+                    muteBeep(on)
+                    if (on) {
+                        setLabel("Atenta")
+                        if (state == 0) passiveLoop(300L)
+                    } else {
+                        try { recognizer?.cancel() } catch (e: Exception) { }
+                        setState(0)
+                        setLabel("Espera un toque")
+                    }
+                }
+                5 -> testConnection()
+                6 -> startActivity(Intent(this, MiaActivity::class.java))
             }
         }.show()
     }
