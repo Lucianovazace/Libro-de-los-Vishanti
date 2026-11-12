@@ -1,0 +1,686 @@
+{
+ "version": 1,
+ "nota": "Editable con el Bloc de notas (UTF-8). \"objetos\": n=nombre, t=sinonimos, c=id de un lugar de \"lugares\", ej=true si es un dato de ejemplo (borralo o ponelo en false cuando lo confirmes). Los dispositivos son solo de lectura. El visor 3D (/buscador) y MIA leen este mismo archivo.",
+ "lugares": {
+  "horno": {
+   "nombre": "Horno eléctrico, sobre el mueble de la esquina",
+   "ambiente": "Cocina"
+  },
+  "coc_caj_1": {
+   "nombre": "Bajo mesada · cajón 1 (el de arriba)",
+   "ambiente": "Cocina"
+  },
+  "coc_caj_2": {
+   "nombre": "Bajo mesada · cajón 2",
+   "ambiente": "Cocina"
+  },
+  "coc_caj_3": {
+   "nombre": "Bajo mesada · cajón 3",
+   "ambiente": "Cocina"
+  },
+  "coc_puerta": {
+   "nombre": "Bajo mesada · puerta de la izquierda",
+   "ambiente": "Cocina"
+  },
+  "estante_1": {
+   "nombre": "Estante flotante de abajo de la cocina, sobre el anafe",
+   "ambiente": "Cocina"
+  },
+  "estante_2": {
+   "nombre": "Estante flotante de arriba de la cocina, sobre el anafe",
+   "ambiente": "Cocina"
+  },
+  "barra_1": {
+   "nombre": "Barra de madera · puerta de abajo",
+   "ambiente": "Cocina"
+  },
+  "heladera_freezer": {
+   "nombre": "Heladera · freezer",
+   "ambiente": "Cocina"
+  },
+  "heladera_cuerpo": {
+   "nombre": "Heladera · cuerpo",
+   "ambiente": "Cocina"
+  },
+  "alac_1": {
+   "nombre": "Alacena sobre la heladera · estante 1 (contando desde arriba)",
+   "ambiente": "Cocina"
+  },
+  "alac_2": {
+   "nombre": "Alacena sobre la heladera · estante 2 (contando desde arriba)",
+   "ambiente": "Cocina"
+  },
+  "alac_3": {
+   "nombre": "Alacena sobre la heladera · estante 3 (contando desde arriba)",
+   "ambiente": "Cocina"
+  },
+  "tv_a1": {
+   "nombre": "Mueble de la tele · columna 1 (izquierda), fila 1 (arriba)",
+   "ambiente": "Sala"
+  },
+  "tv_a2": {
+   "nombre": "Mueble de la tele · columna 1 (izquierda), fila 2",
+   "ambiente": "Sala"
+  },
+  "tv_a3": {
+   "nombre": "Mueble de la tele · columna 1 (izquierda), fila 3 (abajo, detrás de la PC)",
+   "ambiente": "Sala"
+  },
+  "tv_b": {
+   "nombre": "Mueble de la tele · celda ancha de arriba, en el centro",
+   "ambiente": "Sala"
+  },
+  "tv_c": {
+   "nombre": "Mueble de la tele · celda alta del centro-izquierda (filas 2 y 3)",
+   "ambiente": "Sala"
+  },
+  "tv_d2": {
+   "nombre": "Mueble de la tele · columna 3, fila 2",
+   "ambiente": "Sala"
+  },
+  "tv_d3": {
+   "nombre": "Mueble de la tele · columna 3, fila 3 (abajo)",
+   "ambiente": "Sala"
+  },
+  "tv_e1": {
+   "nombre": "Mueble de la tele · columna 4 (derecha), fila 1 (arriba)",
+   "ambiente": "Sala"
+  },
+  "tv_e2": {
+   "nombre": "Mueble de la tele · columna 4 (derecha), fila 2",
+   "ambiente": "Sala"
+  },
+  "tv_e3": {
+   "nombre": "Mueble de la tele · columna 4 (derecha), fila 3 (abajo)",
+   "ambiente": "Sala"
+  },
+  "guitar_ac": {
+   "nombre": "Guitarra acústica · al lado del mueble de la tele, en su soporte",
+   "ambiente": "Sala"
+  },
+  "guitar_el": {
+   "nombre": "Guitarra eléctrica · al lado del mueble de la tele, en su soporte",
+   "ambiente": "Sala"
+  },
+  "barcart_1": {
+   "nombre": "Carrito de bebidas · nivel 1 (contando desde arriba)",
+   "ambiente": "Sala"
+  },
+  "barcart_2": {
+   "nombre": "Carrito de bebidas · nivel 2 (contando desde arriba)",
+   "ambiente": "Sala"
+  },
+  "barcart_3": {
+   "nombre": "Carrito de bebidas · nivel 3 (contando desde arriba)",
+   "ambiente": "Sala"
+  },
+  "biblio_1": {
+   "nombre": "Biblioteca de la sala · estante 1 (contando desde arriba)",
+   "ambiente": "Sala"
+  },
+  "biblio_2": {
+   "nombre": "Biblioteca de la sala · estante 2 (contando desde arriba)",
+   "ambiente": "Sala"
+  },
+  "biblio_3": {
+   "nombre": "Biblioteca de la sala · estante 3 (contando desde arriba)",
+   "ambiente": "Sala"
+  },
+  "biblio_4": {
+   "nombre": "Biblioteca de la sala · estante 4 (contando desde arriba)",
+   "ambiente": "Sala"
+  },
+  "biblio_5": {
+   "nombre": "Biblioteca de la sala · estante 5 (contando desde arriba)",
+   "ambiente": "Sala"
+  },
+  "entrada_1": {
+   "nombre": "Baulera sobre la puerta de entrada · arriba, puerta de la derecha (mirando desde adentro)",
+   "ambiente": "Entrada"
+  },
+  "entrada_2": {
+   "nombre": "Baulera sobre la puerta de entrada · arriba, puerta de la izquierda (mirando desde adentro)",
+   "ambiente": "Entrada"
+  },
+  "entrada_3": {
+   "nombre": "Panel angosto junto a la puerta de entrada",
+   "ambiente": "Entrada"
+  },
+  "puerta_entrada": {
+   "nombre": "Puerta de entrada (la que parece un mueble)",
+   "ambiente": "Entrada"
+  },
+  "llaves": {
+   "nombre": "Llavero de la pared de la entrada",
+   "ambiente": "Entrada"
+  },
+  "bolsos": {
+   "nombre": "Ganchos de la pared de la entrada (bolsos)",
+   "ambiente": "Entrada"
+  },
+  "bano_1": {
+   "nombre": "Baño · repisa de la esquina, estante 1 (contando desde arriba)",
+   "ambiente": "Baño"
+  },
+  "bano_2": {
+   "nombre": "Baño · repisa de la esquina, estante 2 (contando desde arriba)",
+   "ambiente": "Baño"
+  },
+  "bano_3": {
+   "nombre": "Baño · repisa de la esquina, estante 3 (contando desde arriba)",
+   "ambiente": "Baño"
+  },
+  "arm_alto_1": {
+   "nombre": "Armario de la pieza · puerta de arriba (izquierda)",
+   "ambiente": "Pieza"
+  },
+  "arm_alto_2": {
+   "nombre": "Armario de la pieza · puerta de arriba (derecha)",
+   "ambiente": "Pieza"
+  },
+  "zapatos_1": {
+   "nombre": "Armario de la pieza · estante de zapatillas de arriba",
+   "ambiente": "Pieza"
+  },
+  "zapatos_2": {
+   "nombre": "Armario de la pieza · estante de zapatillas de abajo",
+   "ambiente": "Pieza"
+  },
+  "colgado": {
+   "nombre": "Armario de la pieza · zona de ropa colgada",
+   "ambiente": "Pieza"
+  },
+  "ropa_piso": {
+   "nombre": "Armario de la pieza · ropa apilada sobre la cajonera",
+   "ambiente": "Pieza"
+  },
+  "caj_1": {
+   "nombre": "Cajonera de la pieza · fila 1, columna izquierda",
+   "ambiente": "Pieza"
+  },
+  "caj_2": {
+   "nombre": "Cajonera de la pieza · fila 1, columna derecha",
+   "ambiente": "Pieza"
+  },
+  "caj_3": {
+   "nombre": "Cajonera de la pieza · fila 2, columna izquierda",
+   "ambiente": "Pieza"
+  },
+  "caj_4": {
+   "nombre": "Cajonera de la pieza · fila 2, columna derecha",
+   "ambiente": "Pieza"
+  },
+  "caj_5": {
+   "nombre": "Cajonera de la pieza · fila 3, columna izquierda",
+   "ambiente": "Pieza"
+  },
+  "caj_6": {
+   "nombre": "Cajonera de la pieza · fila 3, columna derecha",
+   "ambiente": "Pieza"
+  },
+  "mesa_luz": {
+   "nombre": "Pieza · repisa de la cabecera de la cama",
+   "ambiente": "Pieza"
+  },
+  "farol_1": {
+   "nombre": "Balcón · farol junto a la ventana (con portalámparas)",
+   "ambiente": "Balcón"
+  },
+  "farol_2": {
+   "nombre": "Balcón · farol más cerca del fondo (con portalámparas)",
+   "ambiente": "Balcón"
+  }
+ },
+ "objetos": [
+  {
+   "n": "Tocadiscos",
+   "t": [
+    "tornamesa"
+   ],
+   "c": "tv_b",
+   "ej": false
+  },
+  {
+   "n": "Discos de vinilo",
+   "t": [
+    "vinilos",
+    "lp",
+    "discos"
+   ],
+   "c": "tv_c",
+   "ej": false
+  },
+  {
+   "n": "Cajas de CDs",
+   "t": [
+    "cd",
+    "cds",
+    "discos"
+   ],
+   "c": "tv_d2",
+   "ej": false
+  },
+  {
+   "n": "Libros",
+   "t": [
+    "libro",
+    "novelas"
+   ],
+   "c": "tv_a1",
+   "ej": false
+  },
+  {
+   "n": "Juegos de mesa",
+   "t": [
+    "juego",
+    "juegos",
+    "cartas"
+   ],
+   "c": "tv_e1",
+   "ej": false
+  },
+  {
+   "n": "Cables",
+   "t": [
+    "cable",
+    "cargador",
+    "alargue"
+   ],
+   "c": "tv_a2",
+   "ej": false
+  },
+  {
+   "n": "Guitarra acústica",
+   "t": [
+    "guitarra",
+    "acustica"
+   ],
+   "c": "guitar_ac",
+   "ej": false
+  },
+  {
+   "n": "Guitarra eléctrica",
+   "t": [
+    "guitarra",
+    "electrica",
+    "stratocaster"
+   ],
+   "c": "guitar_el",
+   "ej": false
+  },
+  {
+   "n": "Tazas celestes",
+   "t": [
+    "taza",
+    "tazas",
+    "cafe"
+   ],
+   "c": "alac_1",
+   "ej": false
+  },
+  {
+   "n": "Huevos",
+   "t": [
+    "huevo"
+   ],
+   "c": "alac_3",
+   "ej": false
+  },
+  {
+   "n": "Vasos y copas",
+   "t": [
+    "vaso",
+    "vasos",
+    "copas"
+   ],
+   "c": "estante_1",
+   "ej": false
+  },
+  {
+   "n": "Bebidas",
+   "t": [
+    "fernet",
+    "ron",
+    "vermut",
+    "alcohol",
+    "cerveza"
+   ],
+   "c": "barcart_2",
+   "ej": false
+  },
+  {
+   "n": "Zapatillas blancas",
+   "t": [
+    "zapatilla",
+    "zapas",
+    "converse"
+   ],
+   "c": "zapatos_1",
+   "ej": false
+  },
+  {
+   "n": "Zapatillas marrones",
+   "t": [
+    "zapatilla",
+    "zapas"
+   ],
+   "c": "zapatos_2",
+   "ej": false
+  },
+  {
+   "n": "Camisas y remeras",
+   "t": [
+    "ropa",
+    "camisa",
+    "remera",
+    "colgado"
+   ],
+   "c": "colgado",
+   "ej": false
+  },
+  {
+   "n": "Jeans doblados",
+   "t": [
+    "pantalon",
+    "pantalones",
+    "jean"
+   ],
+   "c": "ropa_piso",
+   "ej": false
+  },
+  {
+   "n": "Llaves",
+   "t": [
+    "llave"
+   ],
+   "c": "llaves",
+   "ej": false
+  },
+  {
+   "n": "Bolsos",
+   "t": [
+    "bolso",
+    "mochila",
+    "cartera"
+   ],
+   "c": "bolsos",
+   "ej": false
+  },
+  {
+   "n": "Champú y cosméticos",
+   "t": [
+    "shampoo",
+    "champu",
+    "desodorante",
+    "jabon"
+   ],
+   "c": "bano_2",
+   "ej": false
+  },
+  {
+   "n": "Control remoto",
+   "t": [
+    "control",
+    "fire tv",
+    "remoto"
+   ],
+   "c": "mesa_luz",
+   "ej": false
+  },
+  {
+   "n": "Cortauñas",
+   "t": [
+    "cortaunas",
+    "unas",
+    "uñas"
+   ],
+   "c": "bano_3",
+   "ej": true
+  },
+  {
+   "n": "Pilas",
+   "t": [
+    "pila",
+    "baterias"
+   ],
+   "c": "coc_caj_1",
+   "ej": true
+  },
+  {
+   "n": "Destornilladores",
+   "t": [
+    "herramientas",
+    "martillo"
+   ],
+   "c": "entrada_1",
+   "ej": true
+  },
+  {
+   "n": "Cinta aisladora",
+   "t": [
+    "cinta"
+   ],
+   "c": "entrada_1",
+   "ej": true
+  },
+  {
+   "n": "Secret Wars #1 (1 de 3)",
+   "t": [
+    "comic",
+    "comics",
+    "cómic",
+    "cómics",
+    "historieta",
+    "tomo"
+   ],
+   "c": "biblio_5",
+   "ej": false,
+   "comic": true
+  },
+  {
+   "n": "Secret Wars #2 (2 de 3)",
+   "t": [
+    "comic",
+    "comics",
+    "cómic",
+    "cómics",
+    "historieta",
+    "tomo"
+   ],
+   "c": "biblio_5",
+   "ej": false,
+   "comic": true
+  },
+  {
+   "n": "Secret Wars #16 (3 de 3)",
+   "t": [
+    "comic",
+    "comics",
+    "cómic",
+    "cómics",
+    "historieta",
+    "tomo"
+   ],
+   "c": "biblio_5",
+   "ej": false,
+   "comic": true
+  }
+ ],
+ "dispositivos": [
+  {
+   "id": "dev_hadas",
+   "n": "Luces de hadas",
+   "t": [
+    "hadas",
+    "guirnalda",
+    "cortina",
+    "luces"
+   ],
+   "donde": "Sala · en la barra de la cortina",
+   "estado": "Guirnalda de la cortina. Se apagan en Modo cine, con un enchufe inteligente (pendiente)."
+  },
+  {
+   "id": "dev_luz_sala",
+   "n": "Luz Sala",
+   "t": [
+    "luz",
+    "lampara",
+    "foco",
+    "macroled",
+    "iluminacion"
+   ],
+   "donde": "Sala · lámpara de mimbre",
+   "estado": "Lámpara Macroled inteligente. Se controla con Alexa y la app de Macroled."
+  },
+  {
+   "id": "dev_luz_cocina",
+   "n": "Luz Cocina",
+   "t": [
+    "luz",
+    "lampara",
+    "foco",
+    "macroled",
+    "iluminacion"
+   ],
+   "donde": "Cocina · lámpara roja colgante",
+   "estado": "Lámpara Macroled inteligente. Se controla con Alexa y la app de Macroled."
+  },
+  {
+   "id": "dev_luz_entrada",
+   "n": "Luz Entrada",
+   "t": [
+    "luz",
+    "lampara",
+    "foco",
+    "macroled",
+    "iluminacion"
+   ],
+   "donde": "Entrada · lámpara de vidrio colgante",
+   "estado": "Lámpara Macroled inteligente. Se controla con Alexa y la app de Macroled."
+  },
+  {
+   "id": "dev_luz_pieza",
+   "n": "Luz Pieza",
+   "t": [
+    "luz",
+    "lampara",
+    "foco",
+    "macroled",
+    "iluminacion"
+   ],
+   "donde": "Pieza · lámpara metálica colgante",
+   "estado": "Lámpara Macroled inteligente. Se controla con Alexa y la app de Macroled."
+  },
+  {
+   "id": "dev_termotanque",
+   "n": "Termotanque",
+   "t": [
+    "termo",
+    "agua caliente",
+    "escorial"
+   ],
+   "donde": "Cocina · esquina, sobre el horno",
+   "estado": "Termotanque eléctrico Escorial. Común: el enchufe inteligente de 16A está planeado."
+  },
+  {
+   "id": "dev_lavarropas",
+   "n": "Lavarropas EcoBubble",
+   "t": [
+    "lavarropas",
+    "samsung",
+    "ecobubble",
+    "ropa"
+   ],
+   "donde": "Cocina · debajo de la ventana",
+   "estado": "Samsung EcoBubble de carga superior. Se puede ver en SmartThings."
+  },
+  {
+   "id": "dev_anafe",
+   "n": "Anafe eléctrico",
+   "t": [
+    "anafe",
+    "hornalla",
+    "cocina",
+    "electrico"
+   ],
+   "donde": "Cocina · barra en L, sobre la pata cercana al lavarropas",
+   "estado": "Anafe de dos hornallas sobre la pata de la barra. Común."
+  },
+  {
+   "id": "dev_govee",
+   "n": "Govee TV Backlight 3",
+   "t": [
+    "govee",
+    "backlight",
+    "luces tele",
+    "luces"
+   ],
+   "donde": "Sala · detrás del televisor",
+   "estado": "Luces de atrás del televisor, sincronizadas con la imagen. En Alexa y en la app Govee."
+  },
+  {
+   "id": "dev_tv_sala",
+   "n": "Televisor Samsung Q7F 50\"",
+   "t": [
+    "tele",
+    "tv",
+    "television",
+    "samsung",
+    "q7f",
+    "fire tv"
+   ],
+   "donde": "Sala · sobre el mueble de la tele",
+   "estado": "Samsung QLED de 50 pulgadas. Se prende y apaga con Alexa vía SmartThings. Tiene Fire TV Stick."
+  },
+  {
+   "id": "dev_echo",
+   "n": "Echo Dot 5ª gen",
+   "t": [
+    "alexa",
+    "echo",
+    "dot",
+    "parlante"
+   ],
+   "donde": "Sala · arriba del mueble de la tele",
+   "estado": "Alexa de la sala. Tiene sensor de temperatura."
+  },
+  {
+   "id": "dev_pc",
+   "n": "PC gamer",
+   "t": [
+    "pc",
+    "compu",
+    "computadora",
+    "gamer",
+    "torre"
+   ],
+   "donde": "Sala · adelante del mueble de la tele, del lado de las guitarras",
+   "estado": "Ryzen 7 5700, RX 7600, 16 GB de RAM, SSD de 1 TB."
+  },
+  {
+   "id": "dev_ac",
+   "n": "Aire acondicionado",
+   "t": [
+    "aire",
+    "split",
+    "ac",
+    "clima"
+   ],
+   "donde": "Sala · arriba, en la pared de la cortina del balcón",
+   "estado": "Split de la sala. Común: se podría manejar con un control IR por Wi-Fi."
+  },
+  {
+   "id": "dev_tv_chico",
+   "n": "Televisor chico (Fire TV)",
+   "t": [
+    "tele",
+    "tv",
+    "television",
+    "fire tv",
+    "pieza"
+   ],
+   "donde": "Pieza · colgado arriba, en la esquina",
+   "estado": "Televisor de la pieza con Fire TV. Colgado en la esquina."
+  }
+ ]
+}

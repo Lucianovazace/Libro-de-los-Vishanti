@@ -640,6 +640,25 @@ form button{width:48px;height:48px;border:0;background:var(--blue);color:#fff;di
   });
   renderChips(ITEMS);
 
+  // Si la pagina se abre desde la PC de MIA (http://IP:5003/buscador), carga los objetos reales de datos\objetos.json
+  // y reemplaza los de ejemplo. Abierto como archivo suelto, usa la lista incluida arriba.
+  function applyData(o){
+    if(!o||!o.objetos) return;
+    var keep=ITEMS.filter(function(i){return i.dev;});
+    ITEMS.length=0; keep.forEach(function(i){ITEMS.push(i);});
+    COMICS.length=0;
+    o.objetos.forEach(function(x){
+      if(!comps[x.c]) return;
+      ITEMS.push({n:x.n,t:x.t||[],c:x.c,ej:!!x.ej,comic:!!x.comic});
+      if(x.comic){ var m=/^biblio_(\d+)$/.exec(x.c); if(m) COMICS.push({t:x.n,shelf:parseInt(m[1],10)}); }
+    });
+    redrawBooks(); renderChips(match(q.value));
+    var ft=document.getElementById('foot'); if(ft) ft.textContent='Datos cargados desde la PC de MIA (datos\\objetos.json). Los marcados "ej." son de ejemplo.';
+  }
+  if(/^https?:/.test(location.protocol)){
+    fetch('/buscador/objetos.json',{cache:'no-store'}).then(function(r){return r.json();}).then(applyData).catch(function(){});
+  }
+
   var ray=new THREE.Raycaster(), mouse=new THREE.Vector2(), down=null;
   renderer.domElement.addEventListener('pointerdown',function(e){ down={x:e.clientX,y:e.clientY}; });
   renderer.domElement.addEventListener('pointerup',function(e){

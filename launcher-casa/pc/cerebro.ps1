@@ -29,6 +29,8 @@ if (-not (Test-Path $alexaF)) {
 
 $camPath = Join-Path $root "camisetas.ps1"
 if (Test-Path $camPath) { . $camPath }
+$objPath = Join-Path $root "objetos.ps1"
+if (Test-Path $objPath) { . $objPath }
 $humPath = Join-Path $root "humano.ps1"
 if (Test-Path $humPath) { . $humPath }
 
@@ -226,7 +228,7 @@ function Decide([string]$said, [string]$device, [string]$speaker) {
   if (Get-Command Humano-Decide -ErrorAction SilentlyContinue) { $hum = $null; try { $hum = Humano-Decide $said $speaker } catch { }; if ($hum) { return $hum } }
 
   # 0b) Invitados: solo charla, hora, clima. Nada de la casa, la memoria ni Alexa.
-  if ($speaker -eq "invitado" -and $n -match "modo |luz |alexa|acordate|recorda|anota|guarda|camiseta|memoria|perfil|preguntale|decile|pedile") {
+  if ($speaker -eq "invitado" -and $n -match "modo |luz |alexa|acordate|recorda|anota|guarda|puse|deje|meti|movi|camiseta|memoria|perfil|preguntale|decile|pedile") {
     return @{ ok = $true; action = "say"; reply = "Eso solo lo pueden pedir Luciano o Mili." }
   }
 
@@ -253,6 +255,9 @@ function Decide([string]$said, [string]$device, [string]$speaker) {
 
   # 1b) Camisetas
   if (Get-Command Camisetas-Decide -ErrorAction SilentlyContinue) { $cam = $null; try { $cam = Camisetas-Decide $said } catch { }; if ($cam) { return $cam } }
+
+  # 1c) Donde estan las cosas de la casa (datos\objetos.json)
+  if (Get-Command Objetos-Decide -ErrorAction SilentlyContinue) { $obj = $null; try { $obj = Objetos-Decide $said } catch { }; if ($obj) { return $obj } }
 
   # 2) Memoria: "acordate que ..."
   $m = [regex]::Match($t, "(?i)^\s*(?:mia[,\s]+)?(?:acordate|record[aá]|anot[aá]|guard[aá])(?:\s+que|\s+de)?\s+(.+)$")
@@ -341,6 +346,16 @@ while ($true) {
 
     if ($first -like "GET /health*") {
       Send-Response $stream 200 "text/plain" ($ascii.GetBytes("ok"))
+    }
+    elseif ($first -like "GET /buscador/objetos.json*") {
+      $of = Join-Path $data "objetos.json"
+      if (Test-Path $of) { Send-Response $stream 200 "application/json; charset=utf-8" ([System.IO.File]::ReadAllBytes($of)) }
+      else { Send-Response $stream 404 "text/plain" ($ascii.GetBytes("falta datos\objetos.json")) }
+    }
+    elseif ($first -like "GET /buscador*") {
+      $hf = Join-Path (Join-Path $root "buscador") "index.html"
+      if (Test-Path $hf) { Send-Response $stream 200 "text/html; charset=utf-8" ([System.IO.File]::ReadAllBytes($hf)) }
+      else { Send-Response $stream 404 "text/plain" ($ascii.GetBytes("falta buscador\index.html")) }
     }
     elseif ($first -like "GET /memoria*") {
       Send-Response $stream 200 "text/plain; charset=utf-8" ($utf8.GetBytes([System.IO.File]::ReadAllText($memF, $utf8)))
