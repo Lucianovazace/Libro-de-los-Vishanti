@@ -35,6 +35,8 @@ $futPath = Join-Path $root "futbol.ps1"
 if (Test-Path $futPath) { . $futPath }
 $resPath = Join-Path $root "resumen.ps1"
 if (Test-Path $resPath) { . $resPath }
+$recPath = Join-Path $root "recordatorios.ps1"
+if (Test-Path $recPath) { . $recPath }
 $humPath = Join-Path $root "humano.ps1"
 if (Test-Path $humPath) { . $humPath }
 
@@ -232,7 +234,7 @@ function Decide([string]$said, [string]$device, [string]$speaker) {
   if (Get-Command Humano-Decide -ErrorAction SilentlyContinue) { $hum = $null; try { $hum = Humano-Decide $said $speaker } catch { }; if ($hum) { return $hum } }
 
   # 0b) Invitados: solo charla, hora, clima. Nada de la casa, la memoria ni Alexa.
-  if ($speaker -eq "invitado" -and $n -match "modo |luz |alexa|acordate|recorda|anota|guarda|puse|deje|meti|movi|camiseta|memoria|perfil|preguntale|decile|pedile") {
+  if ($speaker -eq "invitado" -and $n -match "modo |luz |alexa|acordate|recorda|anota|guarda|puse|deje|meti|movi|recordame|recordatorio|avisame|lista|camiseta|memoria|perfil|preguntale|decile|pedile") {
     return @{ ok = $true; action = "say"; reply = "Eso solo lo pueden pedir Luciano o Mili." }
   }
 
@@ -268,6 +270,9 @@ function Decide([string]$said, [string]$device, [string]$speaker) {
 
   # 1e) Resumen de la mañana / del día
   if (Get-Command Resumen-Decide -ErrorAction SilentlyContinue) { $res = $null; try { $res = Resumen-Decide $said $speaker } catch { }; if ($res) { return $res } }
+
+  # 1f) Recordatorios y lista de compras
+  if (Get-Command Recordatorios-Decide -ErrorAction SilentlyContinue) { $rec = $null; try { $rec = Recordatorios-Decide $said } catch { }; if ($rec) { return $rec } }
 
   # 2) Memoria: "acordate que ..."
   $m = [regex]::Match($t, "(?i)^\s*(?:mia[,\s]+)?(?:acordate|record[aá]|anot[aá]|guard[aá])(?:\s+que|\s+de)?\s+(.+)$")
@@ -321,7 +326,16 @@ Write-Host "Cerebro de MIA listo - puerto $port"
 Write-Host "Datos en: $data"
 Write-Host "Deja esta ventana abierta. Para cerrar: Ctrl+C"
 
+$script:lastTick = Get-Date
 while ($true) {
+  # Mientras espera pedidos, cada 15 s revisa si vencio algun recordatorio (se dice en voz alta por la PC)
+  while (-not $listener.Pending()) {
+    Start-Sleep -Milliseconds 120
+    if (((Get-Date) - $script:lastTick).TotalSeconds -ge 15) {
+      $script:lastTick = Get-Date
+      if (Get-Command Recordatorios-Tick -ErrorAction SilentlyContinue) { try { Recordatorios-Tick } catch { Write-Host ("Error en recordatorios: " + $_.Exception.Message) } }
+    }
+  }
   $client = $listener.AcceptTcpClient()
   try {
     $client.ReceiveTimeout = 10000
@@ -357,6 +371,23 @@ while ($true) {
     if ($first -like "GET /health*") {
       Send-Response $stream 200 "text/plain" ($ascii.GetBytes("ok"))
     }
+    elseif ($first -like "GET /lista/datos.json*") {
+      $o = @{ compras = @(Compras-Load); recordatorios = @(Rec-Pendientes | ForEach-Object { @{ id = $_.id; texto = [string]$_.texto; cuando = [string]$_.cuando; repite = [string]$_.repite } }) }
+      Send-Response $stream 200 "application/json; charset=utf-8" ($utf8.GetBytes(($o | ConvertTo-Json -Depth 5 -Compress)))
+    }
+    elseif ($first -like "POST /lista/accion*") {
+      $q = $utf8.GetString($bodyBytes) | ConvertFrom-Json
+      if ($q.accion -eq "add") { [void](Compras-Add ([string]$q.texto)) }
+      elseif ($q.accion -eq "del") { Compras-Remove ([string]$q.texto) }
+      elseif ($q.accion -eq "hecho") { $its = @(Rec-Load); foreach ($i in $its) { if ([int]$i.id -eq [int]$q.id) { $i.hecho = $true } }; Rec-Save $its }
+      $o = @{ compras = @(Compras-Load); recordatorios = @(Rec-Pendientes | ForEach-Object { @{ id = $_.id; texto = [string]$_.texto; cuando = [string]$_.cuando; repite = [string]$_.repite } }) }
+      Send-Response $stream 200 "application/json; charset=utf-8" ($utf8.GetBytes(($o | ConvertTo-Json -Depth 5 -Compress)))
+    }
+    elseif ($first -like "GET /lista*") {
+      $hf = Join-Path (Join-Path $root "lista") "index.html"
+      if (Test-Path $hf) { Send-Response $stream 200 "text/html; charset=utf-8" ([System.IO.File]::ReadAllBytes($hf)) }
+      else { Send-Response $stream 404 "text/plain" ($ascii.GetBytes("falta lista\index.html")) }
+    }
     elseif ($first -like "GET /buscador/objetos.json*") {
       $of = Join-Path $data "objetos.json"
       if (Test-Path $of) { Send-Response $stream 200 "application/json; charset=utf-8" ([System.IO.File]::ReadAllBytes($of)) }
@@ -381,6 +412,7 @@ while ($true) {
       } else {
         $sw = [System.Diagnostics.Stopwatch]::StartNew()
         $res = Decide $said $device $speaker
+        if ($res -and $res.reply -and (Get-Command Recordatorios-ParaApp -ErrorAction SilentlyContinue)) { $extra = ""; try { $extra = Recordatorios-ParaApp } catch { }; if ($extra) { $res.reply = ([string]$res.reply + " " + $extra) } }
         $sw.Stop()
         $json = $res | ConvertTo-Json -Compress
         Send-Response $stream 200 "application/json; charset=utf-8" ($utf8.GetBytes($json))

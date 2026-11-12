@@ -40,6 +40,10 @@ function Resumen-Decide([string]$said, [string]$speaker) {
     if ($f -and $f.voz) { $partes += $f.voz; $display += "Fútbol: $($f.voz)"; if ($f.display) { $display += $f.display } }
   }
 
+  # Recordatorios de hoy y lista de compras
+  if (Get-Command Rec-Hoy -ErrorAction SilentlyContinue) { $rh = ""; try { $rh = Rec-Hoy } catch { }; if ($rh) { $partes += $rh; $display += $rh } }
+  if (Get-Command Compras-Resumen -ErrorAction SilentlyContinue) { $cr = ""; try { $cr = Compras-Resumen } catch { }; if ($cr) { $partes += $cr; $display += $cr } }
+
   # Camisetas: solo para Luciano, desde la última búsqueda guardada (no consulta las tiendas para que el resumen sea rápido)
   if ($speaker -eq "Luciano") {
     $c = Res-Camisetas
