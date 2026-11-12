@@ -27,6 +27,9 @@ if (-not (Test-Path $alexaF)) {
   [System.IO.File]::WriteAllText($alexaF, $def, $utf8)
 }
 
+$camPath = Join-Path $root "camisetas.ps1"
+if (Test-Path $camPath) { . $camPath }
+
 $script:history = New-Object System.Collections.ArrayList
 $script:weatherError = ""
 
@@ -230,6 +233,9 @@ function Decide([string]$said, [string]$device) {
       }
     }
   }
+
+  # 1b) Camisetas
+  if (Get-Command Camisetas-Decide -ErrorAction SilentlyContinue) { $cam = $null; try { $cam = Camisetas-Decide $said } catch { }; if ($cam) { return $cam } }
 
   # 2) Memoria: "acordate que ..."
   $m = [regex]::Match($t, "(?i)^\s*(?:mia[,\s]+)?(?:acordate|record[aá]|anot[aá]|guard[aá])(?:\s+que|\s+de)?\s+(.+)$")
