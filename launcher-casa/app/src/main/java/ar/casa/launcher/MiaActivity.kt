@@ -404,9 +404,13 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
         }.start()
     }
 
+    private var listenAfter = false
+
     private fun afterSpeech() {
         setStatus("")
-        if (continuous && !busy && !listening) startListening()
+        val again = listenAfter
+        listenAfter = false
+        if ((continuous || again) && !busy && !listening) startListening()
     }
 
     // ---------- Cerebro ----------
@@ -457,6 +461,7 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
                     handleLocal(said, false)
                 } else {
                     val reply = r.optString("reply")
+                    listenAfter = r.optBoolean("listen", false)
                     if (r.optString("action") == "alexa") {
                         addBubble(r.optString("display").ifBlank { reply }, false)
                         say(reply, onlySpeak = true)

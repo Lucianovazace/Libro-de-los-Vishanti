@@ -29,6 +29,8 @@ if (-not (Test-Path $alexaF)) {
 
 $camPath = Join-Path $root "camisetas.ps1"
 if (Test-Path $camPath) { . $camPath }
+$humPath = Join-Path $root "humano.ps1"
+if (Test-Path $humPath) { . $humPath }
 
 $script:history = New-Object System.Collections.ArrayList
 $script:weatherError = ""
@@ -168,27 +170,33 @@ function Get-Weather([int]$scope, [bool]$wind) {
 
 # ---------- Modelo (llama-server) ----------
 
-function Build-System([string]$device) {
+function Build-System([string]$device, [string]$speaker) {
   $perfil = [System.IO.File]::ReadAllText($perfilF, $utf8).Trim()
   $mem = [System.IO.File]::ReadAllText($memF, $utf8).Trim()
   $now = (Get-Date).ToString("dddd d 'de' MMMM 'de' yyyy, H:mm", $es)
   $oraciones = "máximo 3 oraciones cortas"
   $donde = "en voz alta"
   if ($device -eq "reloj") { $oraciones = "máximo 2 oraciones cortas"; $donde = "en voz alta desde un reloj" }
+  if ($speaker -eq "invitado") {
+    return "/no_think Sos MIA, una asistente de voz de una casa de Mar del Plata. Hablás en español rioplatense, con calidez y cortesía. Te habla una persona que no es de la casa: sé amable y respondé $oraciones, sin listas ni markdown. No tenés ni revelás información personal de los dueños de casa ni de sus dispositivos; si te la piden, decí que eso solo se lo contás a ellos. Ahora es: $now."
+  }
+  $quien = ""
+  if ($speaker -eq "Mili") { $quien = "`n`nAhora te habla Mili, la pareja de Luciano y también usuaria principal de la casa. Tratala por su nombre, con calidez, y no la llames señor." }
   $s = "/no_think Sos MIA (Mi Inteligencia Artificial), la asistente personal de Luciano. Hablás en español rioplatense (voseo). Tu estilo es sereno, elegante, eficiente y atento, con un humor seco y sutil de vez en cuando, nunca exagerado ni infantil. Anticipás lo que Luciano pueda necesitar. Ocasionalmente podés llamarlo `"señor`", sin abusar. " +
     "Tus respuestas se leen $donde`: $oraciones, sin listas, sin markdown, sin emojis. " +
     "Si no sabés algo o no lo tenés en lo que te contaron, decilo en vez de inventar. No inventes datos de Mar del Plata ni de dispositivos.`n`n" +
     "Lo que sabés de Luciano y su casa:`n" + $perfil
   if ($mem.Length -gt 0) { $s += "`n`nCosas que Luciano te pidió recordar:`n" + $mem }
+  $s += $quien
   $s += "`n`nAhora es: " + $now + "."
   return $s
 }
 
-function Ask-Model([string]$said, [string]$device) {
+function Ask-Model([string]$said, [string]$device, [string]$speaker) {
   [void]$script:history.Add(@{ role = "user"; content = $said })
   while ($script:history.Count -gt 8) { $script:history.RemoveAt(0) }
   $msgs = New-Object System.Collections.ArrayList
-  [void]$msgs.Add(@{ role = "system"; content = (Build-System $device) })
+  [void]$msgs.Add(@{ role = "system"; content = (Build-System $device $speaker) })
   foreach ($m in $script:history) { [void]$msgs.Add($m) }
   $body = @{ model = "local"; messages = $msgs; temperature = 0.6; max_tokens = 300; stream = $false } | ConvertTo-Json -Depth 6 -Compress
   try {
@@ -209,9 +217,18 @@ function Ask-Model([string]$said, [string]$device) {
 
 # ---------- Decisión: qué hacer con lo que dijo Luciano ----------
 
-function Decide([string]$said, [string]$device) {
+function Decide([string]$said, [string]$device, [string]$speaker) {
   $n = Norm $said
   $t = $said.Trim()
+  if (-not $speaker) { $speaker = "Luciano" }
+
+  # 0) Trato humano ("mia, ¿estás ahí?", saludos, gracias, chistes...)
+  if (Get-Command Humano-Decide -ErrorAction SilentlyContinue) { $hum = $null; try { $hum = Humano-Decide $said $speaker } catch { }; if ($hum) { return $hum } }
+
+  # 0b) Invitados: solo charla, hora, clima. Nada de la casa, la memoria ni Alexa.
+  if ($speaker -eq "invitado" -and $n -match "modo |luz |alexa|acordate|recorda|anota|guarda|camiseta|memoria|perfil|preguntale|decile|pedile") {
+    return @{ ok = $true; action = "say"; reply = "Eso solo lo pueden pedir Luciano o Mili." }
+  }
 
   # 1) Órdenes de la casa (Alexa)
   $rules = @(
@@ -242,6 +259,7 @@ function Decide([string]$said, [string]$device) {
   if ($m.Success) {
     $fact = $m.Groups[1].Value.Trim().TrimEnd([char[]]".")
     $old = [System.IO.File]::ReadAllText($memF, $utf8).TrimEnd()
+    if ($speaker -eq "Mili") { $fact = "$fact (lo pidió Mili)" }
     $new = $fact; if ($old.Length -gt 0) { $new = $old + "`n" + $fact }
     [System.IO.File]::WriteAllText($memF, $new, $utf8)
     return @{ ok = $true; action = "say"; reply = "Anotado: $fact." }
@@ -267,7 +285,7 @@ function Decide([string]$said, [string]$device) {
   }
 
   # 5) Todo lo demás: el modelo
-  return (Ask-Model $said $device)
+  return (Ask-Model $said $device $speaker)
 }
 
 # ---------- Servidor HTTP mínimo ----------
@@ -331,11 +349,13 @@ while ($true) {
       $req = $utf8.GetString($bodyBytes) | ConvertFrom-Json
       $said = ([string]$req.text).Trim()
       $device = [string]$req.device
+      $speaker = [string]$req.speaker
+      if ($speaker) { if ((Norm $speaker) -eq "mili") { $speaker = "Mili" } elseif ((Norm $speaker) -eq "luciano") { $speaker = "Luciano" } else { $speaker = "invitado" } }
       if ($said.Length -eq 0) {
         Send-Response $stream 400 "text/plain" ($ascii.GetBytes("sin texto"))
       } else {
         $sw = [System.Diagnostics.Stopwatch]::StartNew()
-        $res = Decide $said $device
+        $res = Decide $said $device $speaker
         $sw.Stop()
         $json = $res | ConvertTo-Json -Compress
         Send-Response $stream 200 "application/json; charset=utf-8" ($utf8.GetBytes($json))

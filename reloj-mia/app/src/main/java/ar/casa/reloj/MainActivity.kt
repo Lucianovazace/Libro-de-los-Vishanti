@@ -119,6 +119,7 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
     }
 
     private var autoListen = true
+    private var listenAfter = false
     private var resumed = false
 
     override fun onResume() {
@@ -292,6 +293,7 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
                     handleLocal(said)
                 } else {
                     val reply = r.optString("reply")
+                    listenAfter = r.optBoolean("listen", false)
                     if (r.optString("action") == "alexa") {
                         setLabel("Alexa")
                         speakFallback(reply)
@@ -476,6 +478,7 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
         releasePlayer()
         orb.levelProvider = null
         setState(0)
+        if (listenAfter) { listenAfter = false; ui.postDelayed({ if (state == 0) startListening() }, 350) }
         setLabel("")
     }
 

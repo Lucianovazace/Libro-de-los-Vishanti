@@ -113,6 +113,7 @@ class OrbActivity : Activity() {
     }
 
     private var autoListen = true
+    private var listenAfter = false
     private var resumed = false
 
     override fun onResume() {
@@ -287,6 +288,7 @@ class OrbActivity : Activity() {
                     handleLocal(said)
                 } else {
                     val reply = r.optString("reply")
+                    listenAfter = r.optBoolean("listen", false)
                     if (r.optString("action") == "alexa") {
                         setLabel("Alexa")
                         speakFallback(reply)
@@ -478,6 +480,7 @@ class OrbActivity : Activity() {
         releasePlayer()
         orb.levelProvider = null
         setState(0)
+        if (listenAfter) { listenAfter = false; ui.postDelayed({ if (state == 0) startListening() }, 350) }
     }
 
     private fun stopSpeaking() {

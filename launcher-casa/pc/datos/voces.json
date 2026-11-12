@@ -1,0 +1,5 @@
+{
+  "principales": ["Luciano", "Mili"],
+  "invitado": { "puedeControlarCasa": false, "puedeGuardarMemoria": false, "veMemoriaYPerfil": false },
+  "nota": "Las apps todavia no mandan quien habla (campo speaker). Cuando el reconocimiento de voz este listo, mandaran Luciano, Mili o invitado."
+}
