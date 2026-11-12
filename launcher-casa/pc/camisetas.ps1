@@ -3,6 +3,7 @@
 $camF = Join-Path $data "camisetas.json"
 $camOut = Join-Path $data "camisetas-ultimo.txt"
 $camDiag = Join-Path $data "camisetas-diagnostico.txt"
+$camVoz = Join-Path $data "camisetas-voz.txt"
 $script:camDefault = @{
   talle = "M"; maxPrecio = 0
   equipos = @("Argentina", "Inter Miami", "Manchester City")
@@ -108,6 +109,7 @@ function Cam-Reporte([string[]]$equipos) {
   $txt = "No encontre nada en talle $($c.talle)."
   if ($voz.Count -gt 0) { $txt = ($voz | Select-Object -First 3) -join ". " }
   if ($todasFallas.Count -gt 0) { $txt += ". No pude consultar " + (($todasFallas.Keys) -join " ni ") }
+  try { [System.IO.File]::WriteAllText($camVoz, ((Get-Date -Format "yyyy-MM-dd HH:mm") + "|" + $txt), $utf8) } catch { }
   return @{ voz = $txt; display = ($lines -join "`n") }
 }
 function Cam-Diagnostico {

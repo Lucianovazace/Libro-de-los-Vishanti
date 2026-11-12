@@ -33,6 +33,7 @@ function Fut-Load {
 }
 
 function Fut-Get([string]$url, [int]$ttlMin = 10) {
+  if ($script:futLimite -and (Get-Date) -gt $script:futLimite) { throw "se acabo el tiempo para consultar fútbol" }
   if ($script:futCache.ContainsKey($url) -and (((Get-Date) - $script:futCache[$url].t).TotalMinutes -lt $ttlMin)) { return $script:futCache[$url].d }
   $req = [System.Net.HttpWebRequest]::Create($url)
   $req.Method = "GET"; $req.UserAgent = "Mozilla/5.0 (MIA)"; $req.Timeout = 7000; $req.ReadWriteTimeout = 7000
@@ -225,6 +226,38 @@ function Fut-Equipo($t, [string]$modo) {
   if ($fallas.Count -gt 0) { $voz += "No pude consultar " + ($fallas -join " ni ") }
   $lines = @($items | ForEach-Object { "$((Fut-Local $_.utc).ToString('ddd dd/MM HH:mm', $es)) $($_.liga): $($_.local) $($_.gl) - $($_.gv) $($_.visita) [$($_.estado)]" })
   return @{ voz = ($voz -join ". "); display = ($lines -join "`n") }
+}
+
+# Resumen de fútbol para hoy: Boca (hoy / ayer / próximo si es en los próximos 3 días) y Champions de tus equipos hoy y mañana.
+function Fut-Hoy {
+  $cfg = Fut-Load
+  $script:futLimite = (Get-Date).AddSeconds(12)
+  $voz = @(); $lines = @()
+  try {
+    $hoy = (Fut-Local ([datetime]::UtcNow)).Date
+    $frag = [string]$cfg.boca.espn; $mi = [string]$cfg.boca.nombre
+    $r = $null; try { $r = Fut-BocaEventos $cfg } catch { }
+    if ($r) {
+      $items = @($r.items)
+      $deHoy = @($items | Where-Object { ((Fut-Local $_.utc).Date -eq $hoy) -and ($_.estado -eq "post" -or (Fut-Proximo $_)) })
+      foreach ($e in $deHoy) {
+        if ($e.estado -eq "post") { $voz += (Fut-FraseRes $e $mi $frag) } else { $voz += (Fut-FraseProx $e $mi $frag) }
+      }
+      $ayer = @($items | Where-Object { $_.estado -eq "post" -and ((Fut-Local $_.utc).Date -eq $hoy.AddDays(-1)) })
+      foreach ($e in $ayer) { $voz += (Fut-FraseRes $e $mi $frag) }
+      if ($deHoy.Count -eq 0) {
+        $prox = @($items | Where-Object { Fut-Proximo $_ })
+        if ($prox.Count -gt 0 -and ((Fut-Local $prox[0].utc).Date - $hoy).TotalDays -le 3) { $voz += (Fut-FraseProx $prox[0] $mi $frag) }
+      }
+    }
+    $evs = @(); try { $evs = @(Fut-Scoreboard "uefa.champions" 0 2) } catch { }
+    $champ = @($evs | Where-Object { (Fut-EsSeguido $_ $cfg) -and (Fut-Proximo $_) -and (((Fut-Local $_.utc).Date - $hoy).TotalDays -le 1) })
+    if ($champ.Count -gt 0) {
+      $fr = @($champ | Select-Object -First 3 | ForEach-Object { "$($_.local) contra $($_.visita) $(Fut-Cuando $_)" })
+      $voz += "En la Champions: " + ($fr -join ". ")
+    }
+  } finally { $script:futLimite = $null }
+  return @{ voz = ($voz -join ". "); display = "" }
 }
 
 function Futbol-Decide([string]$said) {

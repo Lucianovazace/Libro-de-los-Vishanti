@@ -24,7 +24,7 @@ $script:humanoReglas = @(
      resp = { Pick @("Acá estoy$(Hn). ¿Qué necesitás?", "Sí, te escucho$(Hn). Decime.", "Presente. ¿En qué te ayudo?", "Fuerte y claro$(Hn). Te escucho.", "Acá, atenta. Contame.", "Sí, acá estoy. Cuando quieras.") }; listen = $true },
   @{ re = "^(hola|buenas|hey|ey|che|buen dia|buenos dias|buenas tardes|buenas noches|que tal)( mia)?$"; max = 4
      resp = { switch (Franja) {
-         "dia" { Pick @("Buen día$(Hn). ¿Cómo amaneciste?", "Buen día$(Hn). Acá estoy para lo que necesites.", "Buenos días$(Hn). ¿Arrancamos?") }
+         "dia" { Pick @("Buen día$(Hn). ¿Cómo amaneciste?", "Buen día$(Hn). Acá estoy para lo que necesites.", "Buenos días$(Hn). ¿Arrancamos?", "Buen día$(Hn). Si querés, decime resumen del día y te pongo al tanto.") }
          "tarde" { Pick @("Buenas tardes$(Hn). ¿Qué necesitás?", "Hola$(Hn). ¿Cómo viene la tarde?", "Buenas$(Hn). Te escucho.") }
          default { Pick @("Buenas noches$(Hn). ¿Todo bien?", "Hola$(Hn). ¿Cómo estuvo el día?", "Buenas$(Hn). Te escucho.") } } }; listen = $true },
   @{ re = "^(mia )?(como (estas|andas|te va|te sentis)|que (haces|onda|contas|cuentas)|todo bien)( mia| hoy| vos)?$"; max = 7

@@ -33,6 +33,8 @@ $objPath = Join-Path $root "objetos.ps1"
 if (Test-Path $objPath) { . $objPath }
 $futPath = Join-Path $root "futbol.ps1"
 if (Test-Path $futPath) { . $futPath }
+$resPath = Join-Path $root "resumen.ps1"
+if (Test-Path $resPath) { . $resPath }
 $humPath = Join-Path $root "humano.ps1"
 if (Test-Path $humPath) { . $humPath }
 
@@ -263,6 +265,9 @@ function Decide([string]$said, [string]$device, [string]$speaker) {
 
   # 1d) Futbol: Boca, Champions League, equipos top de Europa
   if (Get-Command Futbol-Decide -ErrorAction SilentlyContinue) { $fut = $null; try { $fut = Futbol-Decide $said } catch { }; if ($fut) { return $fut } }
+
+  # 1e) Resumen de la mañana / del día
+  if (Get-Command Resumen-Decide -ErrorAction SilentlyContinue) { $res = $null; try { $res = Resumen-Decide $said $speaker } catch { }; if ($res) { return $res } }
 
   # 2) Memoria: "acordate que ..."
   $m = [regex]::Match($t, "(?i)^\s*(?:mia[,\s]+)?(?:acordate|record[aá]|anot[aá]|guard[aá])(?:\s+que|\s+de)?\s+(.+)$")
