@@ -28,7 +28,7 @@ function Cam-Save($c) { [System.IO.File]::WriteAllText($camF, ($c | ConvertTo-Js
 
 function Cam-Vtex($tienda, [string]$q, [string]$talle) {
   $url = "$($tienda.base)/api/catalog_system/pub/products/search?ft=$([uri]::EscapeDataString($q))&_from=0&_to=11"
-  $r = Invoke-RestMethod -Uri $url -TimeoutSec 12 -UserAgent "Mozilla/5.0" -Headers @{ Accept = "application/json" }
+  $r = Invoke-RestMethod -Uri $url -TimeoutSec 6 -UserAgent "Mozilla/5.0" -Headers @{ Accept = "application/json" }
   $out = @()
   foreach ($p in @($r)) {
     $name = [string]$p.productName
@@ -47,7 +47,7 @@ function Cam-Vtex($tienda, [string]$q, [string]$talle) {
 }
 function Cam-Adidas($tienda, [string]$q, [string]$talle) {
   $url = "$($tienda.base)/api/plp/content-engine/search?query=$([uri]::EscapeDataString($q + ' camiseta'))&start=0"
-  $r = Invoke-RestMethod -Uri $url -TimeoutSec 12 -UserAgent "Mozilla/5.0"
+  $r = Invoke-RestMethod -Uri $url -TimeoutSec 6 -UserAgent "Mozilla/5.0"
   $out = @()
   foreach ($p in @($r.raw.itemList.items)) {
     $name = [string]$p.displayName
@@ -59,7 +59,7 @@ function Cam-Adidas($tienda, [string]$q, [string]$talle) {
 }
 function Cam-Ml($tienda, [string]$q, [string]$talle) {
   $slug = ([regex]::Replace((Norm "camiseta $q original"), " ", "-"))
-  $html = (Invoke-WebRequest -Uri "$($tienda.base)/$slug" -UseBasicParsing -TimeoutSec 12 -UserAgent "Mozilla/5.0").Content
+  $html = (Invoke-WebRequest -Uri "$($tienda.base)/$slug" -UseBasicParsing -TimeoutSec 6 -UserAgent "Mozilla/5.0").Content
   $out = @()
   foreach ($m in [regex]::Matches($html, '<a[^>]+href="(https://[^"]*mercadolibre[^"]*/(?:MLA|p/)[^"]*)"[^>]*title="([^"]+)"')) {
     $out += @{ tienda = $tienda.nombre; nombre = $m.Groups[2].Value; precio = 0; link = $m.Groups[1].Value }
@@ -71,13 +71,15 @@ function Cam-Buscar($c, [string]$equipo) {
   $res = @(); $fallas = @()
   foreach ($t in @($c.tiendas)) {
     if (-not $t.activa) { continue }
+    if ($script:camMuertas.ContainsKey($t.nombre)) { continue }
+    if ((Get-Date) -gt $script:camLimite) { $script:camMuertas[$t.nombre] = $true; $fallas += $t.nombre; continue }
     try {
       switch ($t.tipo) {
         "vtex"   { $res += Cam-Vtex $t "camiseta $equipo" $c.talle }
         "adidas" { $res += Cam-Adidas $t $equipo $c.talle }
         "ml"     { $res += Cam-Ml $t $equipo $c.talle }
       }
-    } catch { $fallas += $t.nombre }
+    } catch { $script:camMuertas[$t.nombre] = $true; $fallas += $t.nombre }
   }
   $ne = Norm $equipo
   $res = @($res | Where-Object { (Norm $_.nombre) -like "*$($ne.Split(' ')[0])*" })
@@ -86,6 +88,7 @@ function Cam-Buscar($c, [string]$equipo) {
 }
 function Cam-Reporte([string[]]$equipos) {
   $c = Cam-Load
+  $script:camMuertas = @{}; $script:camLimite = (Get-Date).AddSeconds(30)
   $lines = @("Camisetas $(Get-Date -Format 'dd/MM HH:mm') - talle $($c.talle)"); $voz = @(); $todasFallas = @{}
   foreach ($e in $equipos) {
     $r = Cam-Buscar $c $e
@@ -109,6 +112,7 @@ function Cam-Reporte([string[]]$equipos) {
 function Camisetas-Decide([string]$said) {
   $n = Norm $said
   if ($n -notmatch "camiseta") { return $null }
+  if ($n -match "^(mia )?(acordate|recorda|guarda|anota que)") { return $null }
   $c = Cam-Load
   $m = [regex]::Match($n, "(?:agrega|suma|segui|anota)\w*\s+(?:la\s+)?(?:camiseta\s+)?(?:de\s+|del\s+)?(.+?)(?:\s+a\s+(?:las\s+)?camisetas)?$")
   if ($m.Success -and $n -match "agrega|suma|segui|anota") {
@@ -133,6 +137,8 @@ function Camisetas-Decide([string]$said) {
     return @{ ok = $true; action = "say"; reply = "Tope de precio: $([int]$v) pesos." }
   }
   $eq = @($c.equipos)
+  $mx = [regex]::Match($n, "camisetas? (?:de |del |de la )(.+?)(?: en .*)?$")
+  if ($mx.Success -and $mx.Groups[1].Value -notmatch "^(mis|mi|futbol)$") { $eq = @((Get-Culture).TextInfo.ToTitleCase($mx.Groups[1].Value.Trim())) }
   foreach ($e in @($c.equipos)) { if ($n -like "*$(Norm $e)*") { $eq = @($e); break } }
   $r = Cam-Reporte $eq
   return @{ ok = $true; action = "say"; reply = $r.voz; display = $r.display }
