@@ -7,6 +7,7 @@ import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Color
+import android.media.AudioManager
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.os.Handler
@@ -19,8 +20,10 @@ import android.speech.tts.UtteranceProgressListener
 import android.text.InputType
 import android.view.Gravity
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.EditText
 import android.widget.FrameLayout
+import android.widget.LinearLayout
 import android.widget.TextView
 import org.json.JSONArray
 import org.json.JSONObject
@@ -111,12 +114,43 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
                 ttsReady = true
             }
         }
+        setVolumeControlStream(AudioManager.STREAM_MUSIC)
         setState(0)
     }
 
+    private var autoListen = true
+    private var resumed = false
+
     override fun onResume() {
         super.onResume()
+        resumed = true
         setState(0)
+        maybeAutoListen()
+    }
+
+    override fun onPause() {
+        resumed = false
+        super.onPause()
+    }
+
+    /** Doble toque del botón del reloj con MIA asignada: si ya estaba abierta llega acá. */
+    override fun onNewIntent(intent: Intent?) {
+        super.onNewIntent(intent)
+        setIntent(intent)
+        autoListen = true
+        if (resumed) maybeAutoListen()
+    }
+
+    /** Al abrir MIA empieza a escuchar sola (se puede apagar en el menú). */
+    private fun maybeAutoListen() {
+        if (!autoListen) return
+        autoListen = false
+        if (!prefs.getBoolean("auto_listen", true)) return
+        ui.postDelayed({
+            if (!resumed) return@postDelayed
+            if (state == 3) { stopSpeaking(); setState(0) }
+            if (state == 0) startListening()
+        }, 400)
     }
 
     override fun onStop() {
@@ -402,6 +436,7 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
     private fun playWav(data: ByteArray, text: String) {
         try {
             val f = File(cacheDir, "mia-voz.wav")
+            boost(data)
             f.writeBytes(data)
             val env = envelope(data)
             releasePlayer()
@@ -463,6 +498,46 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
     private fun le16(b: ByteArray, o: Int): Int = (b[o].toInt() and 0xff) or ((b[o + 1].toInt() and 0xff) shl 8)
     private fun le32(b: ByteArray, o: Int): Int = le16(b, o) or (le16(b, o + 2) shl 16)
 
+    /** Sube la ganancia del WAV hasta casi el máximo (el parlante del reloj es débil). Modifica el arreglo en el lugar. */
+    private fun boost(b: ByteArray) {
+        try {
+            var off = 12
+            var start = -1
+            var len = 0
+            while (off + 8 <= b.size) {
+                val id = String(b, off, 4, Charsets.US_ASCII)
+                val sz = le32(b, off + 4)
+                if (id == "data") {
+                    start = off + 8
+                    len = if (sz <= 0 || start + sz > b.size) b.size - start else sz
+                    break
+                }
+                off += 8 + sz
+            }
+            if (start < 0) return
+            var peak = 1
+            var i = 0
+            while (i + 1 < len) {
+                val o = start + i
+                val v = ((b[o].toInt() and 0xff) or (b[o + 1].toInt() shl 8)).toShort().toInt()
+                val a = if (v < 0) -v else v
+                if (a > peak) peak = a
+                i += 2
+            }
+            val gain = min(30000f / peak, 3f)
+            if (gain < 1.05f) return
+            i = 0
+            while (i + 1 < len) {
+                val o = start + i
+                val v = ((b[o].toInt() and 0xff) or (b[o + 1].toInt() shl 8)).toShort().toInt()
+                val n = (v * gain).toInt().coerceIn(-32768, 32767)
+                b[o] = (n and 0xff).toByte()
+                b[o + 1] = ((n shr 8) and 0xff).toByte()
+                i += 2
+            }
+        } catch (e: Exception) { }
+    }
+
     /** Volumen del audio cada 40 ms, para que el orbe ondule al ritmo de la voz de MIA. */
     private fun envelope(b: ByteArray): FloatArray {
         try {
@@ -518,7 +593,9 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
             "Dirección de la PC",
             "Partículas: " + orb.particleCount,
             "Probar conexión",
-            "Cerebro de la PC: " + (if (prefs.getBoolean("brain", true)) "sí" else "no")
+            "Cerebro de la PC: " + (if (prefs.getBoolean("brain", true)) "sí" else "no"),
+            "Volumen",
+            "Escuchar al abrir: " + (if (prefs.getBoolean("auto_listen", true)) "sí" else "no")
         )
         AlertDialog.Builder(this).setItems(items) { _, which ->
             when (which) {
@@ -541,8 +618,39 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
                     prefs.edit().putBoolean("brain", on).apply()
                     setLabel(if (on) "Cerebro de la PC" else "Cerebro del reloj")
                 }
+                5 -> volumeDialog()
+                6 -> {
+                    val on = !prefs.getBoolean("auto_listen", true)
+                    prefs.edit().putBoolean("auto_listen", on).apply()
+                    setLabel(if (on) "Escucha al abrir" else "Espera un toque")
+                }
             }
         }.show()
+    }
+
+    private fun volumeDialog() {
+        val am = getSystemService(Context.AUDIO_SERVICE) as AudioManager
+        val maxV = am.getStreamMaxVolume(AudioManager.STREAM_MUSIC)
+        val row = LinearLayout(this)
+        row.orientation = LinearLayout.HORIZONTAL
+        row.gravity = Gravity.CENTER
+        row.setPadding(dp(8), dp(8), dp(8), dp(8))
+        val txt = TextView(this)
+        txt.textSize = 20f
+        txt.gravity = Gravity.CENTER
+        txt.setTextColor(Color.WHITE)
+        fun refresh() { txt.text = "" + am.getStreamVolume(AudioManager.STREAM_MUSIC) + " / " + maxV }
+        val minus = Button(this)
+        minus.text = "−"
+        minus.setOnClickListener { am.adjustStreamVolume(AudioManager.STREAM_MUSIC, AudioManager.ADJUST_LOWER, 0); refresh() }
+        val plus = Button(this)
+        plus.text = "+"
+        plus.setOnClickListener { am.adjustStreamVolume(AudioManager.STREAM_MUSIC, AudioManager.ADJUST_RAISE, 0); refresh() }
+        row.addView(minus, LinearLayout.LayoutParams(dp(60), ViewGroup.LayoutParams.WRAP_CONTENT))
+        row.addView(txt, LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f))
+        row.addView(plus, LinearLayout.LayoutParams(dp(60), ViewGroup.LayoutParams.WRAP_CONTENT))
+        refresh()
+        AlertDialog.Builder(this).setTitle("Volumen").setView(row).setPositiveButton("Listo", null).show()
     }
 
     private fun editUrl() {
