@@ -37,6 +37,8 @@ $resPath = Join-Path $root "resumen.ps1"
 if (Test-Path $resPath) { . $resPath }
 $recPath = Join-Path $root "recordatorios.ps1"
 if (Test-Path $recPath) { . $recPath }
+$estPath = Join-Path $root "estudio.ps1"
+if (Test-Path $estPath) { . $estPath }
 $humPath = Join-Path $root "humano.ps1"
 if (Test-Path $humPath) { . $humPath }
 
@@ -273,6 +275,9 @@ function Decide([string]$said, [string]$device, [string]$speaker) {
 
   # 1f) Recordatorios y lista de compras
   if (Get-Command Recordatorios-Decide -ErrorAction SilentlyContinue) { $rec = $null; try { $rec = Recordatorios-Decide $said } catch { }; if ($rec) { return $rec } }
+
+  # 1g) Modo estudio (material de la carpeta datos\estudio)
+  if (Get-Command Estudio-Decide -ErrorAction SilentlyContinue) { $est = $null; try { $est = Estudio-Decide $said } catch { }; if ($est) { return $est } }
 
   # 2) Memoria: "acordate que ..."
   $m = [regex]::Match($t, "(?i)^\s*(?:mia[,\s]+)?(?:acordate|record[aá]|anot[aá]|guard[aá])(?:\s+que|\s+de)?\s+(.+)$")
