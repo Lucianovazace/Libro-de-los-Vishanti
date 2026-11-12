@@ -12,7 +12,7 @@ $script:estIdf   = @{}
 $script:estSig   = ""
 $script:estQuiz  = $null
 $estStop = @{}
-foreach ($w in ("de la el los las un una unos unas y o u e en a al del lo que se su sus por con para como es son fue ser ha han hay mas pero sin sobre entre este esta estos estas ese esa eso asi si no ni le les me te nos muy tambien cuando donde cual cuales segun cada todo toda todos todas otro otra otros otras" -split " ")) { $estStop[$w] = $true }
+foreach ($w in ("de la el los las un una unos unas y o u e en a al del lo que se su sus por con para como es son fue ser ha han hay mas pero sin sobre entre este esta estos estas ese esa eso asi si no ni le les me te nos muy tambien cuando donde cual cuales segun cada todo toda todos todas otro otra otros otras gano ganado ganaron tiene tienen cuantos cuantas quien quienes contame conta decime hablame sabes sabe mia" -split " ")) { $estStop[$w] = $true }
 
 function Est-Stems([string]$s) {
   $out = New-Object System.Collections.ArrayList
@@ -37,6 +37,9 @@ function Est-Load {
         $set = New-Object 'System.Collections.Generic.HashSet[string]'
         foreach ($k in ([string]$c.k -split " ")) { if ($k) { [void]$set.Add($k) } }
         $c | Add-Member -NotePropertyName set -NotePropertyValue $set -Force
+        $tset = New-Object 'System.Collections.Generic.HashSet[string]'
+        if ($c.s) { foreach ($w in (Est-Stems ([string]$c.s))) { [void]$tset.Add($w) } }
+        $c | Add-Member -NotePropertyName tset -NotePropertyValue $tset -Force
         foreach ($k in $set) { if ($df.ContainsKey($k)) { $df[$k]++ } else { $df[$k] = 1 } }
         $total++
       }
@@ -48,7 +51,7 @@ function Est-Load {
   $script:estDocs = $docs; $script:estIdf = $idf; $script:estSig = $sig
 }
 
-function Est-Search([string]$q, [int]$n = 4) {
+function Est-Search([string]$q, [int]$n = 4, [string]$tema = "") {
   Est-Load
   if ($script:estDocs.Count -eq 0) { return @() }
   $qs = Est-Stems $q
@@ -56,13 +59,16 @@ function Est-Search([string]$q, [int]$n = 4) {
   $phrase = Norm $q
   $res = New-Object System.Collections.ArrayList
   foreach ($d in $script:estDocs) {
+    $dt = [string]$d.tema
+    if ($tema) { if ($dt -ne $tema) { continue } } elseif ($dt) { continue }
     foreach ($c in $d.chunks) {
       $s = 0.0; $m = 0
       foreach ($w in $qs) { if ($c.set.Contains($w)) { $s += $script:estIdf[$w]; $m++ } }
       if ($m -eq 0) { continue }
       $s = $s * (0.5 + 0.5 * $m / $qs.Count)
+      foreach ($w in $qs) { if ($c.tset -and $c.tset.Contains($w)) { $s += 1.5 } }
       if ($qs.Count -ge 2 -and (Norm $c.t).Contains($phrase)) { $s += 3 }
-      [void]$res.Add([pscustomobject]@{ score = $s; doc = [string]$d.titulo; p = [int]$c.p; t = [string]$c.t })
+      [void]$res.Add([pscustomobject]@{ score = $s; doc = [string]$d.titulo; p = [int]$c.p; sec = [string]$c.s; t = [string]$c.t })
     }
   }
   return @($res | Sort-Object score -Descending | Select-Object -First $n)
@@ -73,14 +79,15 @@ function Est-Contexto($hits) {
   foreach ($h in $hits) {
     $t = $h.t; if ($t.Length -gt 1300) { $t = $t.Substring(0, 1300) }
     if ($sb.Length + $t.Length -gt 5200) { break }
-    [void]$sb.AppendLine("[" + $h.doc + ", página " + $h.p + "] " + $t)
+    $lugar = ", página " + $h.p; if ($h.sec) { $lugar = ", sección " + $h.sec }
+    [void]$sb.AppendLine("[" + $h.doc + $lugar + "] " + $t)
     [void]$sb.AppendLine("")
   }
   return $sb.ToString()
 }
 
 function Est-Fuentes($hits) {
-  $l = @(); foreach ($h in $hits) { $x = $h.doc + " p." + $h.p; if ($l -notcontains $x) { $l += $x } }
+  $l = @(); foreach ($h in $hits) { $x = $h.doc + " p." + $h.p; if ($h.sec) { $x = $h.doc + ": " + $h.sec }; if ($l -notcontains $x) { $l += $x } }
   return ($l -join "; ")
 }
 
@@ -133,6 +140,38 @@ function Est-Corregir([string]$resp) {
   $sys = "Sos un profesor de química amable, español rioplatense. Corregí la respuesta del alumno usando SOLO el FRAGMENTO. Decí si está bien, parcialmente bien o mal, y explicá la respuesta correcta en máximo 4 oraciones, citando la página. Sin listas."
   try { $a = Est-Llm $sys ("FRAGMENTO:`n" + $z.frag + "`nPREGUNTA: " + $z.q + "`nRESPUESTA DEL ALUMNO: " + $resp) 300 } catch { return @{ ok = $false; action = "say"; reply = "No pude corregirte, falló el modelo." } }
   return @{ ok = $true; action = "say"; reply = $a; display = ($a + "`n`nFuente: " + $z.fuente) }
+}
+
+# ---------- Base de conocimiento: historia de Boca Juniors (datos\estudio\boca.json, tema "boca") ----------
+$script:estBocaSys = "Sos MIA, el asistente de Luciano, hincha de Boca, en español rioplatense. Respondé SOLO con la información de los FRAGMENTOS sobre la historia de Boca Juniors. Reglas: 1) No inventes fechas, resultados ni cifras que no estén en los fragmentos. 2) Si los fragmentos no alcanzan, decí que eso no lo tenés cargado todavía, sin inventar. 3) Respuesta corta y fácil de escuchar: máximo 5 oraciones, sin listas ni símbolos. 4) Si hablás de cantidad de títulos o del presente, aclará que el dato es de noviembre de 2026."
+
+function Est-Secciones([string]$tema, [string[]]$prefijos) {
+  Est-Load
+  $out = @()
+  foreach ($d in $script:estDocs) {
+    if ([string]$d.tema -ne $tema) { continue }
+    foreach ($p in $prefijos) {
+      foreach ($c in $d.chunks) { if (([string]$c.s).StartsWith($p)) { $out += [pscustomobject]@{ score = 1; doc = [string]$d.titulo; p = [int]$c.p; sec = [string]$c.s; t = [string]$c.t }; break } }
+    }
+  }
+  return $out
+}
+
+function Boca-Historia-Decide([string]$said) {
+  $n = Norm $said
+  if ($n -notmatch "\b(boca|xeneize|xeneizes|bombonera)\b") { return $null }
+  if ($n -match "camiseta|proximo|proxima|siguiente|fixture|calendario|a que hora|en vivo|como va|esta jugando|juega (hoy|ahora|el|este|manana)|ultimo partido|ultimo resultado|como salio|como quedo|como le fue|le toca|tabla de posiciones|ayer|hoy|anoche|esta semana|este domingo|este sabado") { return $null }
+  if ($n -notmatch "historia|historico|historica|fundo|fundacion|fundaron|fundador|nacio|origen|apodo|xeneize|bombonera|estadio|superclasico|idolo|titulos|copas|copa libertadores|libertadores|estrellas|intercontinental|mundial de clubes|sudamericana|recopa|bianchi|riquelme|palermo|maradona|tevez|rojitas|mouzo|cherro|gatti|record|goleador|colores|hinchada|la 12|mitad mas uno|jugador numero 12|macri|armando|presidente|cuantos|cuantas|que sabes|contame|conta|hablame|final|finales|gas pimienta|madrid|fluminense|maracana|campeon|campeonato|invicto|torneo|presidente|entrenador|tecnico") { return $null }
+  $hits = Est-Search $said 3 "boca"
+  if ($n -match "historia" -and (Est-Stems $said).Count -le 4) {
+    $hits = @(Est-Secciones "boca" @("Fundación y origen", "Primeros años", "Cuántos títulos"))
+  }
+  if ($hits.Count -eq 0) { return @{ ok = $true; action = "say"; reply = "Eso de Boca todavía no lo tengo cargado. Decime qué te gustaría saber y lo sumo a mi base." } }
+  $ctx = Est-Contexto $hits
+  try { $a = Est-Llm $script:estBocaSys ("FRAGMENTOS:`n" + $ctx + "`nPREGUNTA: " + $said) 300 }
+  catch { Write-Host ("Historia de Boca: " + $_.Exception.Message); return @{ ok = $false; action = "say"; reply = "No pude hablar con el modelo para contestarte eso de Boca." } }
+  if (-not $a) { $a = "No pude armar una respuesta sobre eso." }
+  return @{ ok = $true; action = "say"; reply = $a; display = ($a + "`n`nBase: " + (Est-Fuentes $hits)) }
 }
 
 function Estudio-Decide([string]$said) {

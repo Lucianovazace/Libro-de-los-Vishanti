@@ -1,0 +1,62 @@
+## Fundación y origen
+Boca Juniors se fundó el 3 de abril de 1905 en el barrio de La Boca, en Buenos Aires. Lo crearon seis adolescentes del barrio, hijos de inmigrantes italianos, muchos de ellos genoveses. El nombre, Boca Juniors, tomó el estilo inglés que estaba de moda en los clubes de la época. En 2026 el club cumplió 121 años.
+
+## Apodos y colores
+A los hinchas de Boca se los llama Xeneizes, que viene de "genovés" en dialecto genovés, por la comunidad que vivía en La Boca. También se lo conoce como La Mitad Más Uno, por la enorme cantidad de hinchas repartidos por todo el país, y como el club del Azul y Oro. Según la leyenda, los colores salieron de la bandera del primer barco que entró al puerto de La Boca, un buque sueco.
+
+## Primeros años (1905 a 1930, era amateur)
+Boca llegó a Primera División en 1913. Entre 1914 y 1916 se mudó al barrio de Wilde, pero los hinchas no lo aceptaron y volvió a La Boca en 1916. En 1919 ganó cuatro títulos oficiales en un solo año: el campeonato de Primera, la Copa Carlos Ibarguren, la Copa de Competencia Jockey Club y la Cup Tie Competition. Fue campeón invicto en 1919, 1924 y 1926. En 1925 hizo una gira por Europa que le valió un título honorífico de la AFA, la Copa de Honor.
+
+## Profesionalismo
+El fútbol argentino se hizo profesional en 1931. Boca es el único club que jugó todas las temporadas de Primera División desde entonces, o sea que nunca descendió. En los años 40 fue campeón en 1943 y 1944.
+
+## La Bombonera
+La Bombonera, en la calle Brandsen del barrio de La Boca, se inauguró oficialmente el 25 de mayo de 1940. Su nombre viene de que, vista desde afuera, parece una caja de bombones. En los años 60 el presidente Alberto J. Armando prometió un estadio nuevo que nunca se hizo, y en 1996, durante la presidencia de Mauricio Macri, se la remodeló y quedó con capacidad para unas 57 mil personas.
+
+## El jugador número 12
+La hinchada de Boca es conocida como el jugador número 12. La idea nació en 1925, durante la gira por Europa, con un hincha llamado Victoriano Caffarena, y el presidente Alberto J. Armando la popularizó en los años 60. La barra organizada del club se llama La 12.
+
+## Décadas del 60 y el 70
+Boca fue campeón en 1962, 1964 y 1965, y en 1969 ganó la Copa Argentina. Con Juan Carlos Lorenzo como entrenador, en 1976 dio la vuelta olímpica en el estadio Monumental, y en 1977 y 1978 ganó la Copa Libertadores dos años seguidos. En 1977 además ganó la Copa Intercontinental frente al Borussia Mönchengladbach de Alemania.
+
+## Maradona en Boca
+Diego Maradona jugó en Boca en 1981 y fue campeón del Metropolitano ese año, y volvió al club a mediados de los 90. La camiseta de 1981 figura entre las más lindas de la historia del fútbol.
+
+## La era Bianchi (1998 a 2004)
+Con Carlos Bianchi como entrenador, Boca ganó el Apertura 1998 y el Clausura 1999 y tuvo su época más exitosa a nivel internacional. Ganó la Copa Libertadores en 2000 y 2001, y la Intercontinental en 2000 contra el Real Madrid, con dos goles de Martín Palermo. Bianchi volvió y en 2003 ganó otra Libertadores y la Intercontinental frente al Milan. En total, esa época dejó tres Libertadores y dos Intercontinentales, además del Apertura 2000 y el Apertura 2003.
+
+## Copas Libertadores
+Boca ganó seis Copas Libertadores: 1977, 1978, 2000, 2001, 2003 y 2007. Solo Independiente tiene más, con siete. Las finales de 2000 y 2001, contra Palmeiras y Cruz Azul, se definieron por penales, y la de 2003 fue contra Santos. La sexta, en 2007, fue con Miguel Ángel Russo como entrenador, Juan Román Riquelme como figura, y se ganó la final contra Gremio de Brasil.
+
+## Copas Intercontinentales
+Boca ganó tres Copas Intercontinentales, también llamadas Mundiales: 1977 contra el Borussia Mönchengladbach, 2000 contra el Real Madrid y 2003 contra el Milan.
+
+## Otros títulos internacionales
+Además de las Libertadores y las Intercontinentales, Boca ganó dos Copas Sudamericanas (2004 y 2005), cuatro Recopas Sudamericanas (1990, 2005, 2006 y 2008), la Supercopa Sudamericana de 1989, la Copa Máster de la Supercopa de 1992, la Copa de Oro de 1993, la Cup Tie Competition de 1919, la Copa de Honor Cousenier de 1920 y dos Copas Confraternidad Escobar-Gerona, en 1945 y 1946.
+
+## Cuántos títulos tiene Boca (a noviembre de 2026)
+Con el título de la Tabla Anual 2026 conseguido el 7 de noviembre de 2026, Boca llegó a 75 títulos oficiales en 121 años. Son 36 de Primera División, 17 copas nacionales, la mayor cantidad del país, y 22 internacionales. Boca es el club con más títulos del fútbol argentino, seguido por River con 72, Independiente con 45, Racing con 41 y San Lorenzo con 22. Contando solo los títulos locales, River lo supera por uno: 54 contra 53. En ligas de Primera, River tiene 38 y Boca 36.
+
+## Estrella 75: la Tabla Anual 2026
+El 7 de noviembre de 2026 Boca le ganó a Defensa y Justicia en La Bombonera, con un gol de Enner Valencia en el último minuto, y se consagró campeón de la Tabla Anual 2026, el formato de la AFA que suma los puntos de los torneos Apertura y Clausura. Fue el título número 75 y cortó una sequía de unos tres años y medio, desde la Supercopa Argentina de 2023. El entrenador es Rodolfo Arruabarrena, en su segundo ciclo, y el presidente del club es Juan Román Riquelme.
+
+## Superclásico contra River
+El Superclásico es el partido contra River Plate. El primer partido no oficial fue en 1908 y lo ganó Boca 2 a 1. El primero oficial fue el 24 de agosto de 1913 y lo ganó River 2 a 1. La mayor goleada de Boca es el 6 a 0 del 23 de diciembre de 1928, en un partido que se suspendió cuando los jugadores de River pidieron parar. En el historial general, Boca está arriba por unos seis partidos.
+
+## Boca y River en la Libertadores
+En 2015, en un partido de Libertadores contra River en La Bombonera, se tiró gas pimienta a los jugadores rivales y la Conmebol descalificó a Boca. En 2018 se jugó la final de la Libertadores entre los dos, la primera de la historia: empataron 2 a 2 en La Bombonera y la revancha, que por incidentes se jugó en el Santiago Bernabéu de Madrid, la ganó River 3 a 1 en tiempo extra.
+
+## Los 2000 y 2010
+Después de la Libertadores 2007, Boca ganó el Apertura 2011 de manera invicta, la Copa Argentina de 2012 y la de 2014-15, y la Copa de la Liga Profesional en 2020 y 2022. En 2017 se inauguró el predio de entrenamiento de Ezeiza. En 2023 perdió la final de la Libertadores contra Fluminense, de Brasil, en el Maracaná. En 2025 jugó el Mundial de Clubes en Estados Unidos y quedó eliminado en la fase de grupos.
+
+## Ídolos
+Los grandes ídolos de Boca son Ángel Clemente Rojas, "Rojitas", al que muchos hinchas consideran el máximo ídolo, Diego Maradona, Juan Román Riquelme, Martín Palermo, Carlos Tévez, Roberto Cherro y el arquero Hugo Gatti, entre otros.
+
+## Récords
+Roberto Mouzo es el jugador con más partidos en la historia del club, 426. Martín Palermo es el máximo goleador, con 236 goles. Juan Román Riquelme es el máximo goleador del club en la Copa Libertadores, con 25 goles.
+
+## Presidentes
+Alberto J. Armando fue presidente en los años 60 y 70 y es recordado por haber designado a la hinchada como jugador número 12. Mauricio Macri fue presidente de 1995 a 2008 y remodeló La Bombonera en 1996, en una etapa de enorme éxito deportivo. Pedro Pompilio asumió en 2007 y murió en 2008. Juan Román Riquelme es el presidente actual.
+
+## Datos de la fuente
+Estos datos se tomaron de Wikipedia, de Infobae y de La Nación a noviembre de 2026. Las fuentes no siempre coinciden en números pequeños, como los puntos de la Tabla Anual 2026. Para resultados de partidos, el próximo partido o posiciones, MIA consulta ESPN en lugar de esta base.

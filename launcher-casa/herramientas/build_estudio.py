@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # Genera indices de estudio para MIA: datos/estudio/<id>.json
-# Uso: python build_estudio.py <archivo.txt|.md> <id> "<Titulo>" [salida_dir]
+# Uso: python build_estudio.py <archivo.txt|.md> <id> "<Titulo>" [salida_dir] [tema]
+# Si el archivo tiene secciones "## Titulo" se indexa por seccion (se cita la seccion en vez de la pagina).
+# Con [tema] (ej. "boca") el indice es de conocimiento: no se mezcla con el material de estudio.
 # El archivo puede traer paginas separadas por lineas '--- página ---'.
 # (Para PDF: pdftotext -layout archivo.pdf archivo.txt  y insertar form feed -> se separa por \f tambien)
 import sys, re, json, unicodedata, os
@@ -43,19 +45,32 @@ def main():
         print(__doc__); sys.exit(1)
     src, did, title = sys.argv[1], sys.argv[2], sys.argv[3]
     outdir = sys.argv[4] if len(sys.argv) > 4 else "."
+    tema = sys.argv[5] if len(sys.argv) > 5 else ""
     raw = open(src, encoding="utf-8", errors="replace").read()
-    pages = re.split(r"\n?--- página ---\n?|\f", raw)
     items = []
-    for i, pg in enumerate(pages, 1):
-        for c in chunk_page(pg):
-            if len(c) < 40: continue
-            k = " ".join(sorted(set(stems(c))))
-            items.append({"p": i, "t": c, "k": k})
+    if re.search(r"(?m)^## ", raw):
+        secs = re.split(r"(?m)^## +", raw)[1:]
+        for i, sec in enumerate(secs, 1):
+            titulo, _, cuerpo = sec.partition("\n")
+            titulo = titulo.strip()
+            for c in chunk_page(cuerpo):
+                t = titulo + ". " + c
+                k = " ".join(sorted(set(stems(t))))
+                items.append({"p": i, "s": titulo, "t": t, "k": k})
+        npag = len(secs)
+    else:
+        pages = re.split(r"\n?--- página ---\n?|\f", raw)
+        npag = len(pages)
+        for i, pg in enumerate(pages, 1):
+            for c in chunk_page(pg):
+                if len(c) < 40: continue
+                k = " ".join(sorted(set(stems(c))))
+                items.append({"p": i, "t": c, "k": k})
     os.makedirs(outdir, exist_ok=True)
     path = os.path.join(outdir, did + ".json")
     with open(path, "w", encoding="utf-8") as f:
-        json.dump({"id": did, "titulo": title, "chunks": items}, f, ensure_ascii=False, separators=(",", ":"))
-    print(f"{path}: {len(pages)} páginas, {len(items)} fragmentos, {os.path.getsize(path)//1024} KB")
+        json.dump({"id": did, "titulo": title, "tema": tema, "chunks": items}, f, ensure_ascii=False, separators=(",", ":"))
+    print(f"{path}: {npag} páginas/secciones, {len(items)} fragmentos, {os.path.getsize(path)//1024} KB")
 
 if __name__ == "__main__":
     main()
