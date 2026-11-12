@@ -1,5 +1,5 @@
 {
-  "_ayuda": "Cada tema es una base de conocimiento: datos/estudio/<tema>.json (generado con herramientas/build_estudio.py desde herramientas/conocimiento/<tema>.md). Para sumar un tema nuevo: agregar su .md, generar el json, y agregar un bloque aca. claves = palabras (regex sobre el texto sin acentos) que identifican el tema; excluye = frases que van a otra skill (resultados en vivo); intencion (opcional) = palabras extra que disparan; resumen = secciones para 'contame la historia'; perfil = quien sos con respecto al tema; nota = aviso de fecha de los datos.",
+  "_ayuda": "Cada tema es una base de conocimiento: datos/estudio/<tema>.json (generado con herramientas/build_estudio.py desde herramientas/conocimiento/<tema>.md). Para sumar un tema nuevo: agregar su .md, generar el json, y agregar un bloque aca. claves = palabras (regex sobre el texto sin acentos) que identifican el tema; excluye = frases que van a otra skill (resultados en vivo); intencion (opcional) = palabras extra que disparan; resumen = secciones para 'contame la historia'; perfil = quien sos con respecto al tema; nota = aviso de fecha de los datos. ruido = palabras del nombre del tema que se sacan antes de buscar en la base (si no, 'Real Madrid' en la pregunta empata con todos los titulos de las secciones).",
   "temas": [
     {
       "tema": "boca",
@@ -8,8 +8,13 @@
       "claves": "boca|xeneize|xeneizes|bombonera",
       "excluye": "camiseta|proximo|proxima|siguiente|fixture|calendario|a que hora|en vivo|como va|esta jugando|juega (hoy|ahora|el|este|manana)|ultimo partido|ultimo resultado|como salio|como quedo|como le fue|le toca|tabla de posiciones|ayer|hoy|anoche|esta semana|este domingo|este sabado",
       "intencion": "xeneize|bombonera|superclasico|bianchi|riquelme|palermo|maradona|tevez|rojitas|mouzo|cherro|gatti|la 12|mitad mas uno|jugador numero 12|macri|armando|intercontinental|mundial de clubes|recopa|gas pimienta|madrid|fluminense|maracana",
-      "resumen": ["Fundación y origen", "Primeros años", "Cuántos títulos"],
-      "nota": "Si hablás de cantidad de títulos o del presente, aclará que el dato es de noviembre de 2026."
+      "resumen": [
+        "Fundación y origen",
+        "Primeros años",
+        "Cuántos títulos"
+      ],
+      "nota": "Si hablás de cantidad de títulos o del presente, aclará que el dato es de noviembre de 2026.",
+      "ruido": "boca juniors|boca|xeneizes?"
     },
     {
       "tema": "seleccion",
@@ -18,8 +23,43 @@
       "claves": "seleccion argentina|seleccion nacional|la seleccion|albiceleste|scaloneta|scaloni|la scaloneta|mundial 2026|mundial 2022|mundial de qatar|copa america|finalissima",
       "excluye": "camiseta|proximo|proxima|siguiente|fixture|calendario|a que hora|en vivo|como va|esta jugando|juega (hoy|ahora|el|este|manana)|ultimo partido|como salio|como quedo|le toca|eliminatorias.*(fecha|tabla)|ayer|hoy|anoche|esta semana|este domingo|este sabado|boca|champions",
       "intencion": "messi|maradona|kempes|scaloni|di maria|batistuta|dibu|mano de dios|gol del siglo|menotti|bilardo|qatar|lusail|metlife|espana|francia|inglaterra|brasil|uruguay|alemania|olimpico|panamericano",
-      "resumen": ["Origen y apodos", "Mundiales ganados", "Mundial 2026"],
-      "nota": "Si hablás de lo más reciente, aclará que el dato es de noviembre de 2026 y que no tenés cargados partidos posteriores."
+      "resumen": [
+        "Origen y apodos",
+        "Mundiales ganados",
+        "Mundial 2026"
+      ],
+      "nota": "Si hablás de lo más reciente, aclará que el dato es de noviembre de 2026 y que no tenés cargados partidos posteriores.",
+      "ruido": "seleccion argentina|seleccion nacional|la seleccion|albiceleste|argentina|argentino"
+    },
+    {
+      "tema": "realmadrid",
+      "nombre": "el Real Madrid",
+      "perfil": "",
+      "claves": "real madrid|merengue|merengues|bernabeu|florentino|florentino perez|mourinho|madridista|madridistas|el madrid|del madrid|al madrid|clasico|xabi alonso|arbeloa",
+      "excluye": "camiseta|proximo|proxima|siguiente|fixture|calendario|a que hora|en vivo|como va|esta jugando|juega (hoy|ahora|el|este|manana)|ultimo partido|ultimo resultado|como salio|como quedo|como le fue|le toca|tabla de posiciones|ayer|hoy|anoche|esta semana|este domingo|este sabado|atletico|rosarino|cordobes|platense|paulista|carioca|de avellaneda|del sur",
+      "intencion": "merengue|bernabeu|florentino|mourinho|vinicius|mbappe|bellingham|cristiano|zidane|ancelotti|di stefano|raul|casillas|decima|galacticos|clasico|supercopa|ramos|benzema|modric",
+      "resumen": [
+        "Fundación y origen",
+        "Cuántos títulos y Champions League tiene el Real Madrid",
+        "Cristiano, Raúl y los ídolos"
+      ],
+      "nota": "Si hablás de lo más reciente, aclará que el dato es de principios de noviembre de 2026 y que cambia con cada partido.",
+      "ruido": "real madrid|merengues?|madridistas?|el madrid|del madrid|al madrid|madrid"
+    },
+    {
+      "tema": "barcelona",
+      "nombre": "el FC Barcelona",
+      "perfil": "",
+      "claves": "barcelona|barca|blaugrana|blaugranas|culé|cule|cules|camp nou|laporta|hansi flick|flick|lamine yamal|yamal|la masia|clasico",
+      "excluye": "camiseta|proximo|proxima|siguiente|fixture|calendario|a que hora|en vivo|como va|esta jugando|juega (hoy|ahora|el|este|manana)|ultimo partido|ultimo resultado|como salio|como quedo|como le fue|le toca|tabla de posiciones|ayer|hoy|anoche|esta semana|este domingo|este sabado|messi con la seleccion|selecci|rosarino|cordobes|platense|paulista|carioca|de avellaneda|del sur",
+      "intencion": "blaugrana|camp nou|laporta|flick|yamal|raphinha|guardiola|cruyff|xavi|iniesta|ronaldinho|masia|sextete|clasico|supercopa|dream team",
+      "resumen": [
+        "Fundación y origen",
+        "Cuántos títulos, ligas y Champions League tiene el Barcelona",
+        "Messi en el Barcelona"
+      ],
+      "nota": "Si hablás de lo más reciente, aclará que el dato es de principios de noviembre de 2026 y que cambia con cada partido.",
+      "ruido": "barcelona|barca|blaugranas?|cules?"
     }
   ]
 }

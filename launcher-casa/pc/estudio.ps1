@@ -147,7 +147,7 @@ function Est-Corregir([string]$resp) {
 $script:conPath = Join-Path $root "datos\conocimiento.json"
 $script:conTemas = @()
 $script:conSig = ""
-$script:conGenerico = "historia|historico|historica|fundo|fundacion|fundaron|fundador|nacio|origen|apodo|estadio|idolo|idolos|titulos|copas|copa|estrellas|record|goleador|colores|hinchada|presidente|cuantos|cuantas|que sabes|contame|conta|hablame|final|finales|campeon|campeonato|invicto|torneo|entrenador|tecnico|quien|quienes|cuando|donde|como|mundial|mundiales|ganaron|ganado|gano|perdio|perdieron"
+$script:conGenerico = "historia|historico|historica|fundo|fundacion|fundaron|fundador|nacio|origen|apodo|estadio|idolo|idolos|titulos|copas|copa|estrellas|record|goleador|colores|hinchada|presidente|cuantos|cuantas|que sabes|contame|conta|hablame|final|finales|campeon|campeonato|invicto|torneo|entrenador|tecnico|quien|quienes|cuando|donde|como|mundial|mundiales|ganaron|ganado|gano|perdio|perdieron|paso|hizo|dijo|llego|volvio|despidieron|echaron|fichajes|fichaje|refuerzos|lesionados|jugadores|plantel|plantilla|historial"
 
 function Con-Cargar {
   if (-not (Test-Path $script:conPath)) { return }
@@ -186,8 +186,10 @@ function Conocimiento-Decide([string]$said) {
     if ([string]$t.intencion) { $inten = $inten + "|" + [string]$t.intencion }
     if ($n -notmatch ("\b(" + $inten + ")\b")) { continue }
     $tema = [string]$t.tema
-    $hits = Est-Search $said 3 $tema
-    if ($n -match "historia" -and (Est-Stems $said).Count -le 4 -and $t.resumen) {
+    $qs = $said
+    if ([string]$t.ruido) { $qs = [regex]::Replace($n, ("\b(" + [string]$t.ruido + ")\b"), " ") }
+    $hits = Est-Search $qs 4 $tema
+    if ($n -match "historia" -and (Est-Stems $qs).Count -le 4 -and $t.resumen) {
       $h2 = @(Est-Secciones $tema ([string[]]@($t.resumen)))
       if ($h2.Count -gt 0) { $hits = $h2 }
     }
