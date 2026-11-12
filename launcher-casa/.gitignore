@@ -9,3 +9,6 @@ pc/datos/calendario-cache.*
 
 # Resultado del autotest (puede tener datos locales)
 pc/autotest-resultado.txt
+
+# Gustos personales (Letterboxd, etc.): NUNCA se suben
+pc/datos/gustos.json

@@ -105,6 +105,7 @@ foreach ($t in $temasConfig) {
   if (-not $temasEnDisco.ContainsKey([string]$t.tema)) { Resultado "FALLA" ("tema " + [string]$t.tema) "esta en conocimiento.json pero falta su archivo en datos\estudio" }
 }
 $calCfg = Join-Path $datos "calendario-config.json"
+if (Test-Path (Join-Path $datos "gustos.json")) { Resultado "PASA" "datos\gustos.json" "existe (historial de cine)" } else { Resultado "SALTA" "datos\gustos.json" "todavia no lo copiaste (skill de gustos de cine sin datos)" }
 if (Test-Path $calCfg) { Resultado "PASA" "datos\calendario-config.json" "existe (no muestro el enlace)" } else { Resultado "SALTA" "datos\calendario-config.json" "todavia no lo armaste (calendario de Google sin conectar)" }
 
 # ---------- 3) El cerebro ----------
@@ -121,6 +122,7 @@ if (-not $vivo) {
   Resultado "PASA" "cerebro" "responde en el puerto $Puerto"
   $hayEstudio = (Test-Path (Join-Path $dirE "analitica.json")) -or (Test-Path (Join-Path $dirE "carpeta2024.json"))
   $hayCal = Test-Path $calCfg
+  $hayGustos = Test-Path (Join-Path $datos "gustos.json")
 
   # q = frase; esp = regex que debe aparecer (sin tildes, minusculas); no = regex que NO debe aparecer; llm = usa el modelo; req = condicion
   $pruebas = @(
@@ -141,6 +143,11 @@ if (-not $vivo) {
     @{ n = "Conocimiento: no sabe"; q = "cuántos goles hizo Boca en el torneo de 1931";  esp = "no (lo )?tengo|no encuentro|no se|no puedo|todavia"; llm = $true },
     @{ n = "Calendario";            q = "qué tengo hoy en mi agenda";                    esp = "calendario|tenes|nada|conectado|ya no te queda|hoy" },
     @{ n = "Calendario (Mili)";     q = "qué tengo hoy en mi agenda"; speaker = "Mili";  esp = "privado" },
+    @{ n = "Gustos: ya vi";         q = "ya vi Dune";                                        esp = "dune|viste|no la encuentro"; req = $hayGustos },
+    @{ n = "Gustos: ultima";        q = "cuál fue la última película que vi";                esp = "ultima|registraste"; req = $hayGustos },
+    @{ n = "Gustos: favoritas";     q = "cuáles son mis películas favoritas";                esp = "favorita|estrellas"; req = $hayGustos },
+    @{ n = "Gustos: conteo";        q = "cuántas películas vi";                              esp = "viste|peliculas"; req = $hayGustos },
+    @{ n = "Gustos (Mili)";         q = "cuáles son mis películas favoritas"; speaker = "Mili"; esp = "\w{4}"; req = $hayGustos },
     @{ n = "Resumen del dia";       q = "resumen del día";                               esp = "hoy|buen"; red = $true },
     @{ n = "Lista: agregar";        q = "agregá autotest a la lista";                    esp = "autotest|lista"; q2 = "qué hay en la lista"; esp2 = "autotest"; q3 = "sacá autotest de la lista"; esp3 = "autotest|saque|quit|elimin|borr" },
     @{ n = "Repregunta";            q = "recordame pagar la luz";                        esp = "cuando|que dia|hora|a que"; q2 = "no"; esp2 = "bueno|listo|cancel|dale|ok|nada|de acuerdo" },
@@ -153,7 +160,7 @@ if (-not $vivo) {
   foreach ($p in $pruebas) {
     $spk = "Luciano"; if ($p.speaker) { $spk = [string]$p.speaker }
     if ($p.llm -and $Rapido) { Resultado "SALTA" $p.n "(modo -Rapido: usa el modelo)"; continue }
-    if ($p.ContainsKey("req") -and -not $p.req) { Resultado "SALTA" $p.n "falta el material en datos\estudio"; continue }
+    if ($p.ContainsKey("req") -and -not $p.req) { Resultado "SALTA" $p.n "falta el material o el archivo de datos"; continue }
     $pasos = @(@{ q = $p.q; esp = $p.esp; no = $p.no })
     if ($p.q2) { $pasos += @{ q = $p.q2; esp = $p.esp2; no = $null } }
     if ($p.q3) { $pasos += @{ q = $p.q3; esp = $p.esp3; no = $null } }

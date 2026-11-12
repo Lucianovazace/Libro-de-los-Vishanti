@@ -39,6 +39,8 @@ $recPath = Join-Path $root "recordatorios.ps1"
 if (Test-Path $recPath) { . $recPath }
 $calPath = Join-Path $root "calendario.ps1"
 if (Test-Path $calPath) { . $calPath }
+$gusPath2 = Join-Path $root "gustos.ps1"
+if (Test-Path $gusPath2) { . $gusPath2 }
 $estPath = Join-Path $root "estudio.ps1"
 if (Test-Path $estPath) { . $estPath }
 $humPath = Join-Path $root "humano.ps1"
@@ -283,6 +285,9 @@ function Decide([string]$said, [string]$device, [string]$speaker) {
 
   # 1e2) Calendario de Google (solo lectura, solo Luciano)
   if (Get-Command Calendario-Decide -ErrorAction SilentlyContinue) { $cal = $null; try { $cal = Calendario-Decide $said $speaker } catch { Write-Host ("Calendario: " + $_.Exception.Message) }; if ($cal) { return $cal } }
+
+  # 1e3) Gustos de cine (Letterboxd; solo Luciano)
+  if (Get-Command Gustos-Decide -ErrorAction SilentlyContinue) { $gus = $null; try { $gus = Gustos-Decide $said $speaker } catch { Write-Host ("Gustos: " + $_.Exception.Message) }; if ($gus) { return $gus } }
 
   # 1f) Recordatorios y lista de compras
   if (Get-Command Recordatorios-Decide -ErrorAction SilentlyContinue) { $rec = $null; try { $rec = Recordatorios-Decide $said } catch { }; if ($rec) { return $rec } }
