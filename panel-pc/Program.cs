@@ -119,7 +119,7 @@ namespace MiaPanel
                     g.FillPath(pb, path);
                 }
             }
-            float k = DeviceDpi / 96f;
+            float k = Width / 320f;
             float ca = (float)Math.Cos(angle), sa = (float)Math.Sin(angle);
             float ct = (float)Math.Cos(0.38), st = (float)Math.Sin(0.38);
             for (int i = 0; i < pts.Count; i++)
@@ -183,36 +183,42 @@ namespace MiaPanel
             svcs.Add(new Svc { Id = "voz", Title = "Voz (Piper)", Port = 5002 });
             svcs.Add(new Svc { Id = "cerebro", Title = "Cerebro (memoria y reglas)", Port = 5003 });
 
-            AutoScaleDimensions = new SizeF(96F, 96F);
-            AutoScaleMode = AutoScaleMode.Dpi;
+            AutoScaleMode = AutoScaleMode.None;
+            float dpi;
+            using (Graphics g0 = Graphics.FromHwnd(IntPtr.Zero)) dpi = g0.DpiX / 96f;
+            Rectangle wa = Screen.PrimaryScreen.WorkingArea;
+            sc = Math.Max(dpi, wa.Height / 1000f);
+            sc = Math.Min(sc, wa.Height * 0.92f / 700f);
+            if (sc < 1f) sc = 1f;
+
             Text = "MIA";
-            ClientSize = new Size(420, 700);
+            ClientSize = new Size(S(420), S(700));
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             StartPosition = FormStartPosition.CenterScreen;
             BackColor = Color.FromArgb(8, 8, 12);
             ForeColor = Color.FromArgb(225, 225, 230);
-            Font = new Font("Segoe UI", 9.5f);
+            Font = F("Segoe UI", 9.5f, FontStyle.Regular);
             Icon = MakeIcon();
 
-            orb.SetBounds(50, 6, 320, 300);
+            orb.SetBounds(S(50), S(6), S(320), S(300));
             Controls.Add(orb);
 
-            lblMain.SetBounds(10, 306, 400, 30);
+            lblMain.SetBounds(S(10), S(306), S(400), S(30));
             lblMain.TextAlign = ContentAlignment.MiddleCenter;
-            lblMain.Font = new Font("Segoe UI Semibold", 13f);
+            lblMain.Font = F("Segoe UI Semibold", 13f, FontStyle.Regular);
             lblMain.Text = "Iniciando...";
             Controls.Add(lblMain);
 
             int y = 350;
             foreach (Svc s in svcs)
             {
-                s.Dot = new Label { Text = "●", Font = new Font("Segoe UI", 16f), ForeColor = Color.Gray, AutoSize = false };
-                s.Dot.SetBounds(18, y - 4, 28, 34);
+                s.Dot = new Label { Text = "\u25CF", Font = F("Segoe UI", 16f, FontStyle.Regular), ForeColor = Color.Gray, AutoSize = false };
+                s.Dot.SetBounds(S(18), S(y - 4), S(30), S(36));
                 Label name = new Label { Text = s.Title, AutoSize = false };
-                name.SetBounds(50, y, 230, 20);
-                s.Status = new Label { Text = "Apagado", AutoSize = false, ForeColor = Color.FromArgb(150, 150, 160), Font = new Font("Segoe UI", 8.5f) };
-                s.Status.SetBounds(50, y + 19, 230, 18);
+                name.SetBounds(S(52), S(y), S(240), S(20));
+                s.Status = new Label { Text = "Apagado", AutoSize = false, ForeColor = Color.FromArgb(150, 150, 160), Font = F("Segoe UI", 8.5f, FontStyle.Regular) };
+                s.Status.SetBounds(S(52), S(y + 19), S(240), S(18));
                 s.Btn = MakeButton("Reiniciar", 300, y + 2, 100, 30);
                 Svc captured = s;
                 s.Btn.Click += delegate { Task.Run(() => Restart(captured)); };
@@ -229,21 +235,21 @@ namespace MiaPanel
 
             chkStartup.Text = "Abrir MIA al prender la PC";
             chkStartup.AutoSize = true;
-            chkStartup.Location = new Point(18, y);
+            chkStartup.Location = new Point(S(18), S(y));
             chkStartup.Checked = IsStartupOn();
             chkStartup.CheckedChanged += delegate { SetStartup(chkStartup.Checked); };
             Controls.Add(chkStartup);
             y += 28;
 
-            lblAddr.SetBounds(18, y, 390, 20);
+            lblAddr.SetBounds(S(18), S(y), S(390), S(20));
             lblAddr.ForeColor = Color.FromArgb(150, 150, 160);
-            lblAddr.Font = new Font("Segoe UI", 8.5f);
+            lblAddr.Font = F("Segoe UI", 8.5f, FontStyle.Regular);
             lblAddr.Text = "Direccion para el celu y el reloj: http://" + LocalIp() + ":8080";
             Controls.Add(lblAddr);
             y += 26;
 
             cmbLog.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbLog.SetBounds(18, y, 200, 24);
+            cmbLog.SetBounds(S(18), S(y), S(200), S(24));
             cmbLog.BackColor = Color.FromArgb(24, 24, 30);
             cmbLog.ForeColor = Color.FromArgb(225, 225, 230);
             cmbLog.FlatStyle = FlatStyle.Flat;
@@ -255,11 +261,11 @@ namespace MiaPanel
             txtLog.Multiline = true;
             txtLog.ReadOnly = true;
             txtLog.ScrollBars = ScrollBars.Vertical;
-            txtLog.Font = new Font("Consolas", 8.5f);
+            txtLog.Font = F("Consolas", 8.5f, FontStyle.Regular);
             txtLog.BackColor = Color.FromArgb(16, 16, 22);
             txtLog.ForeColor = Color.FromArgb(200, 200, 210);
             txtLog.BorderStyle = BorderStyle.FixedSingle;
-            txtLog.SetBounds(18, y, 384, ClientSize.Height - y - 14);
+            txtLog.SetBounds(S(18), S(y), S(384), S(700 - y - 14));
             Controls.Add(txtLog);
 
             // Bandeja del sistema
@@ -307,11 +313,15 @@ namespace MiaPanel
             Activate();
         }
 
+        float sc = 1f;
+        int S(double v) { return (int)Math.Round(v * sc); }
+        Font F(string name, float pt, FontStyle style) { return new Font(name, pt * 96f / 72f * sc, style, GraphicsUnit.Pixel); }
+
         Button MakeButton(string text, int x, int y, int w, int h)
         {
             Button b = new Button();
             b.Text = text;
-            b.SetBounds(x, y, w, h);
+            b.SetBounds(S(x), S(y), S(w), S(h));
             b.FlatStyle = FlatStyle.Flat;
             b.FlatAppearance.BorderColor = Color.FromArgb(90, 80, 50);
             b.BackColor = Color.FromArgb(24, 24, 30);
