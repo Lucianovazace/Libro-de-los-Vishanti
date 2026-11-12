@@ -270,8 +270,8 @@ function Decide([string]$said, [string]$device, [string]$speaker) {
   # 1c) Donde estan las cosas de la casa (datos\objetos.json)
   if (Get-Command Objetos-Decide -ErrorAction SilentlyContinue) { $obj = $null; try { $obj = Objetos-Decide $said } catch { }; if ($obj) { return $obj } }
 
-  # 1c2) Historia de Boca (antes que futbol: "cuantas libertadores gano Boca" no es un resultado)
-  if (Get-Command Boca-Historia-Decide -ErrorAction SilentlyContinue) { $bh = $null; try { $bh = Boca-Historia-Decide $said } catch { }; if ($bh) { return $bh } }
+  # 1c2) Bases de conocimiento (Boca, Seleccion, ...; datos\conocimiento.json). Antes que futbol: "cuantas libertadores gano Boca" no es un resultado
+  if (Get-Command Conocimiento-Decide -ErrorAction SilentlyContinue) { $bh = $null; try { $bh = Conocimiento-Decide $said } catch { }; if ($bh) { return $bh } }
 
   # 1d) Futbol: Boca, Champions League, equipos top de Europa
   if (Get-Command Futbol-Decide -ErrorAction SilentlyContinue) { $fut = $null; try { $fut = Futbol-Decide $said } catch { }; if ($fut) { return $fut } }

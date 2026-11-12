@@ -142,8 +142,24 @@ function Est-Corregir([string]$resp) {
   return @{ ok = $true; action = "say"; reply = $a; display = ($a + "`n`nFuente: " + $z.fuente) }
 }
 
-# ---------- Base de conocimiento: historia de Boca Juniors (datos\estudio\boca.json, tema "boca") ----------
-$script:estBocaSys = "Sos MIA, el asistente de Luciano, hincha de Boca, en español rioplatense. Respondé SOLO con la información de los FRAGMENTOS sobre la historia de Boca Juniors. Reglas: 1) No inventes fechas, resultados ni cifras que no estén en los fragmentos. 2) Si los fragmentos no alcanzan, decí que eso no lo tenés cargado todavía, sin inventar. 3) Respuesta corta y fácil de escuchar: máximo 5 oraciones, sin listas ni símbolos. 4) Si hablás de cantidad de títulos o del presente, aclará que el dato es de noviembre de 2026."
+# ---------- Bases de conocimiento (datos\conocimiento.json + datos\estudio\<tema>.json) ----------
+# Cada tema (Boca, Seleccion, ...) se responde con el motor de estudio, solo con sus fragmentos.
+$script:conPath = Join-Path $root "datos\conocimiento.json"
+$script:conTemas = @()
+$script:conSig = ""
+$script:conGenerico = "historia|historico|historica|fundo|fundacion|fundaron|fundador|nacio|origen|apodo|estadio|idolo|idolos|titulos|copas|copa|estrellas|record|goleador|colores|hinchada|presidente|cuantos|cuantas|que sabes|contame|conta|hablame|final|finales|campeon|campeonato|invicto|torneo|entrenador|tecnico|quien|quienes|cuando|donde|como|mundial|mundiales|ganaron|ganado|gano|perdio|perdieron"
+
+function Con-Cargar {
+  if (-not (Test-Path $script:conPath)) { return }
+  $fi = Get-Item $script:conPath
+  $sig = [string]$fi.LastWriteTimeUtc.Ticks
+  if ($sig -eq $script:conSig) { return }
+  try {
+    $j = Get-Content $script:conPath -Raw -Encoding UTF8 | ConvertFrom-Json
+    $script:conTemas = @($j.temas)
+    $script:conSig = $sig
+  } catch { Write-Host ("Conocimiento: no pude leer conocimiento.json: " + $_.Exception.Message) }
+}
 
 function Est-Secciones([string]$tema, [string[]]$prefijos) {
   Est-Load
@@ -157,21 +173,33 @@ function Est-Secciones([string]$tema, [string[]]$prefijos) {
   return $out
 }
 
-function Boca-Historia-Decide([string]$said) {
+function Conocimiento-Decide([string]$said) {
+  Con-Cargar
+  if ($script:conTemas.Count -eq 0) { return $null }
   $n = Norm $said
-  if ($n -notmatch "\b(boca|xeneize|xeneizes|bombonera)\b") { return $null }
-  if ($n -match "camiseta|proximo|proxima|siguiente|fixture|calendario|a que hora|en vivo|como va|esta jugando|juega (hoy|ahora|el|este|manana)|ultimo partido|ultimo resultado|como salio|como quedo|como le fue|le toca|tabla de posiciones|ayer|hoy|anoche|esta semana|este domingo|este sabado") { return $null }
-  if ($n -notmatch "historia|historico|historica|fundo|fundacion|fundaron|fundador|nacio|origen|apodo|xeneize|bombonera|estadio|superclasico|idolo|titulos|copas|copa libertadores|libertadores|estrellas|intercontinental|mundial de clubes|sudamericana|recopa|bianchi|riquelme|palermo|maradona|tevez|rojitas|mouzo|cherro|gatti|record|goleador|colores|hinchada|la 12|mitad mas uno|jugador numero 12|macri|armando|presidente|cuantos|cuantas|que sabes|contame|conta|hablame|final|finales|gas pimienta|madrid|fluminense|maracana|campeon|campeonato|invicto|torneo|presidente|entrenador|tecnico") { return $null }
-  $hits = Est-Search $said 3 "boca"
-  if ($n -match "historia" -and (Est-Stems $said).Count -le 4) {
-    $hits = @(Est-Secciones "boca" @("Fundación y origen", "Primeros años", "Cuántos títulos"))
+  foreach ($t in $script:conTemas) {
+    $claves = [string]$t.claves
+    if (-not $claves) { continue }
+    if ($n -notmatch ("\b(" + $claves + ")\b")) { continue }
+    if ([string]$t.excluye -and $n -match ([string]$t.excluye)) { continue }
+    $inten = $script:conGenerico
+    if ([string]$t.intencion) { $inten = $inten + "|" + [string]$t.intencion }
+    if ($n -notmatch ("\b(" + $inten + ")\b")) { continue }
+    $tema = [string]$t.tema
+    $hits = Est-Search $said 3 $tema
+    if ($n -match "historia" -and (Est-Stems $said).Count -le 4 -and $t.resumen) {
+      $h2 = @(Est-Secciones $tema ([string[]]@($t.resumen)))
+      if ($h2.Count -gt 0) { $hits = $h2 }
+    }
+    if ($hits.Count -eq 0) { return @{ ok = $true; action = "say"; reply = ("Eso de " + [string]$t.nombre + " todavía no lo tengo cargado. Decime qué te gustaría saber y lo sumo a mi base.") } }
+    $sys = "Sos MIA, el asistente de Luciano, en español rioplatense. " + [string]$t.perfil + ". Respondé SOLO con la información de los FRAGMENTOS sobre " + [string]$t.nombre + ". Reglas: 1) No inventes fechas, resultados ni cifras que no estén en los fragmentos. 2) Si los fragmentos no alcanzan, decí que eso no lo tenés cargado todavía, sin inventar. 3) Respuesta corta y fácil de escuchar: máximo 5 oraciones, sin listas ni símbolos. 4) " + [string]$t.nota
+    $ctx = Est-Contexto $hits
+    try { $a = Est-Llm $sys ("FRAGMENTOS:`n" + $ctx + "`nPREGUNTA: " + $said) 300 }
+    catch { Write-Host ("Conocimiento " + $tema + ": " + $_.Exception.Message); return @{ ok = $false; action = "say"; reply = ("No pude hablar con el modelo para contestarte eso de " + [string]$t.nombre + ".") } }
+    if (-not $a) { $a = "No pude armar una respuesta sobre eso." }
+    return @{ ok = $true; action = "say"; reply = $a; display = ($a + "`n`nBase: " + (Est-Fuentes $hits)) }
   }
-  if ($hits.Count -eq 0) { return @{ ok = $true; action = "say"; reply = "Eso de Boca todavía no lo tengo cargado. Decime qué te gustaría saber y lo sumo a mi base." } }
-  $ctx = Est-Contexto $hits
-  try { $a = Est-Llm $script:estBocaSys ("FRAGMENTOS:`n" + $ctx + "`nPREGUNTA: " + $said) 300 }
-  catch { Write-Host ("Historia de Boca: " + $_.Exception.Message); return @{ ok = $false; action = "say"; reply = "No pude hablar con el modelo para contestarte eso de Boca." } }
-  if (-not $a) { $a = "No pude armar una respuesta sobre eso." }
-  return @{ ok = $true; action = "say"; reply = $a; display = ($a + "`n`nBase: " + (Est-Fuentes $hits)) }
+  return $null
 }
 
 function Estudio-Decide([string]$said) {

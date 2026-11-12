@@ -1,0 +1,25 @@
+{
+  "_ayuda": "Cada tema es una base de conocimiento: datos/estudio/<tema>.json (generado con herramientas/build_estudio.py desde herramientas/conocimiento/<tema>.md). Para sumar un tema nuevo: agregar su .md, generar el json, y agregar un bloque aca. claves = palabras (regex sobre el texto sin acentos) que identifican el tema; excluye = frases que van a otra skill (resultados en vivo); intencion (opcional) = palabras extra que disparan; resumen = secciones para 'contame la historia'; perfil = quien sos con respecto al tema; nota = aviso de fecha de los datos.",
+  "temas": [
+    {
+      "tema": "boca",
+      "nombre": "Boca Juniors",
+      "perfil": "Luciano es hincha de Boca",
+      "claves": "boca|xeneize|xeneizes|bombonera",
+      "excluye": "camiseta|proximo|proxima|siguiente|fixture|calendario|a que hora|en vivo|como va|esta jugando|juega (hoy|ahora|el|este|manana)|ultimo partido|ultimo resultado|como salio|como quedo|como le fue|le toca|tabla de posiciones|ayer|hoy|anoche|esta semana|este domingo|este sabado",
+      "intencion": "xeneize|bombonera|superclasico|bianchi|riquelme|palermo|maradona|tevez|rojitas|mouzo|cherro|gatti|la 12|mitad mas uno|jugador numero 12|macri|armando|intercontinental|mundial de clubes|recopa|gas pimienta|madrid|fluminense|maracana",
+      "resumen": ["Fundación y origen", "Primeros años", "Cuántos títulos"],
+      "nota": "Si hablás de cantidad de títulos o del presente, aclará que el dato es de noviembre de 2026."
+    },
+    {
+      "tema": "seleccion",
+      "nombre": "la Selección Argentina de fútbol",
+      "perfil": "Luciano es hincha de Argentina",
+      "claves": "seleccion argentina|seleccion nacional|la seleccion|albiceleste|scaloneta|scaloni|la scaloneta|mundial 2026|mundial 2022|mundial de qatar|copa america|finalissima",
+      "excluye": "camiseta|proximo|proxima|siguiente|fixture|calendario|a que hora|en vivo|como va|esta jugando|juega (hoy|ahora|el|este|manana)|ultimo partido|como salio|como quedo|le toca|eliminatorias.*(fecha|tabla)|ayer|hoy|anoche|esta semana|este domingo|este sabado|boca|champions",
+      "intencion": "messi|maradona|kempes|scaloni|di maria|batistuta|dibu|mano de dios|gol del siglo|menotti|bilardo|qatar|lusail|metlife|espana|francia|inglaterra|brasil|uruguay|alemania|olimpico|panamericano",
+      "resumen": ["Origen y apodos", "Mundiales ganados", "Mundial 2026"],
+      "nota": "Si hablás de lo más reciente, aclará que el dato es de noviembre de 2026 y que no tenés cargados partidos posteriores."
+    }
+  ]
+}
