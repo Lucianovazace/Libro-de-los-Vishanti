@@ -5,11 +5,18 @@ $camOut = Join-Path $data "camisetas-ultimo.txt"
 $script:camDefault = @{
   talle = "M"; maxPrecio = 0
   equipos = @("Argentina", "Inter Miami", "Manchester City")
-  populares = @("Real Madrid", "Barcelona", "Manchester United", "Bayern Munich", "Liverpool", "PSG", "Arsenal", "Flamengo", "Boca Juniors", "River Plate")
   tiendas = @(
     @{ nombre = "Sporting"; tipo = "vtex"; base = "https://www.sporting.com.ar"; activa = $true },
     @{ nombre = "Open Sports"; tipo = "vtex"; base = "https://www.opensports.com.ar"; activa = $true },
     @{ nombre = "Adidas"; tipo = "adidas"; base = "https://www.adidas.com.ar"; activa = $true },
+    @{ nombre = "Nike"; tipo = "vtex"; base = "https://www.nike.com.ar"; activa = $true },
+    @{ nombre = "Puma"; tipo = "vtex"; base = "https://ar.puma.com"; activa = $true },
+    @{ nombre = "Dexter"; tipo = "vtex"; base = "https://www.dexter.com.ar"; activa = $true },
+    @{ nombre = "Netshoes"; tipo = "vtex"; base = "https://www.netshoes.com.ar"; activa = $true },
+    @{ nombre = "Digital Sport"; tipo = "vtex"; base = "https://www.digitalsport.com.ar"; activa = $true },
+    @{ nombre = "Solo Deportes"; tipo = "vtex"; base = "https://www.solodeportes.com.ar"; activa = $true },
+    @{ nombre = "Stock Center"; tipo = "vtex"; base = "https://www.stockcenter.com.ar"; activa = $true },
+    @{ nombre = "Moov"; tipo = "vtex"; base = "https://www.moov.com.ar"; activa = $true },
     @{ nombre = "Mercado Libre"; tipo = "ml"; base = "https://listado.mercadolibre.com.ar"; activa = $false }
   )
 }
@@ -125,11 +132,8 @@ function Camisetas-Decide([string]$said) {
     $v = [double]$m.Groups[1].Value; if ($m.Groups[2].Success) { $v *= 1000 }; $c.maxPrecio = $v; Cam-Save $c
     return @{ ok = $true; action = "say"; reply = "Tope de precio: $([int]$v) pesos." }
   }
-  if ($n -match "populares|mas vendidas|top 10|top diez") {
-    $r = Cam-Reporte @($c.populares); return @{ ok = $true; action = "say"; reply = $r.voz; display = $r.display }
-  }
   $eq = @($c.equipos)
-  foreach ($e in (@($c.equipos) + @($c.populares))) { if ($n -like "*$(Norm $e)*") { $eq = @($e); break } }
+  foreach ($e in @($c.equipos)) { if ($n -like "*$(Norm $e)*") { $eq = @($e); break } }
   $r = Cam-Reporte $eq
   return @{ ok = $true; action = "say"; reply = $r.voz; display = $r.display }
 }
