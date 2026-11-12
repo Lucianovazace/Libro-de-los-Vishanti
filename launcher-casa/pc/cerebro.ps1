@@ -240,6 +240,9 @@ function Decide([string]$said, [string]$device, [string]$speaker) {
     return @{ ok = $true; action = "say"; reply = "Eso solo lo pueden pedir Luciano o Mili." }
   }
 
+  # 0c) Repregunta pendiente (ej. "¿para cuándo?"): la frase actual es la respuesta
+  if (Get-Command Rec-Pendiente -ErrorAction SilentlyContinue) { $pen = $null; try { $pen = Rec-Pendiente $said } catch { }; if ($pen) { return $pen } }
+
   # 1) Órdenes de la casa (Alexa)
   $rules = @(
     @("Modo cine", @("modo cine"), "modo cine"),

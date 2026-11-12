@@ -229,6 +229,55 @@ function Rec-ListaTxt([string[]]$l) {
 }
 
 # ---------- Decisión ----------
+$script:recPend = $null
+
+# Repreguntas: si MIA pidió un dato que faltaba (cuándo / qué / qué agregar), la próxima frase es la respuesta (vence a los 3 minutos).
+function Rec-Pendiente([string]$said) {
+  $p = $script:recPend
+  if (-not $p) { return $null }
+  if (((Get-Date) - $p.at).TotalMinutes -gt 3) { $script:recPend = $null; return $null }
+  $n = Norm $said
+  if (-not $n) { return $null }
+  if ($n -match "^(?:mia )?(?:no|nada|dejalo|deja|olvidalo|cancela\w*|sin fecha|no hace falta|nada nada)\b") {
+    $script:recPend = $null
+    if ($p.tipo -eq "cuando") { return (Rec-Say "Dale, lo dejo sin fecha.") }
+    return (Rec-Say "Listo, no anoto nada.")
+  }
+  if ($n -match "^(?:mia )?(?:que|cual|cuanto|como|donde|quien|decime|mostrame|abri|prende|apaga|modo|recordame|avisame)\b") { $script:recPend = $null; return $null }
+  $script:recPend = $null
+  if ($p.tipo -eq "cuando") {
+    $q = Rec-Parse $n (Get-Date)
+    if (-not $q.cuando) { return $null }
+    $items = @(Rec-Load); $hit = $null
+    foreach ($i in $items) { if ([int]$i.id -eq [int]$p.id) { $hit = $i } }
+    if (-not $hit) { return $null }
+    $hit.cuando = ([datetime]$q.cuando).ToString($script:recFmt, $inv); $hit.repite = [string]$q.repite
+    Rec-Save $items
+    $rep = ""; if ($q.repite -eq "diario") { $rep = ", todos los días" } elseif ($q.repite -eq "sem") { $rep = ", todas las semanas" }
+    return (Rec-Say "Listo, te lo recuerdo $(Rec-CuandoTxt ([datetime]$q.cuando))$rep`: $($hit.texto).")
+  }
+  if ($p.tipo -eq "texto") {
+    $q = Rec-Parse $n (Get-Date)
+    $txt = $q.resto; if (-not $txt) { $txt = $n }
+    $cu = $p.cuando; $rp = [string]$p.repite
+    if ($q.cuando -and -not $cu) { $cu = $q.cuando; $rp = [string]$q.repite }
+    $items = @(Rec-Load)
+    $c = ""; if ($cu) { $c = ([datetime]$cu).ToString($script:recFmt, $inv) }
+    $nuevo = [pscustomobject]@{ id = (Rec-NextId $items); texto = (Rec-Cap $txt); cuando = $c; repite = $rp; hecho = $false; creado = (Get-Date).ToString($script:recFmt, $inv) }
+    Rec-Save (@($items) + $nuevo)
+    if ($cu) { return (Rec-Say "Listo, te lo recuerdo $(Rec-CuandoTxt ([datetime]$cu)): $($nuevo.texto).") }
+    $script:recPend = @{ tipo = "cuando"; id = $nuevo.id; at = (Get-Date) }
+    $r = Rec-Say "Anotado: $($nuevo.texto). ¿Para cuándo querés que te lo recuerde? Si no hace falta, decime que no."; $r.listen = $true; return $r
+  }
+  if ($p.tipo -eq "lista") {
+    $txt = [regex]::Replace($n, "^(?:el |la |los |las )", "")
+    $r = Compras-Add $txt
+    if ($r.agregados.Count -gt 0) { return (Rec-Say ("Listo, agregué " + (Rec-ListaTxt $r.agregados) + " a la lista. Ahora hay $($r.total).")) }
+    return (Rec-Say ((Rec-ListaTxt $r.ya) + " ya estaba en la lista."))
+  }
+  return $null
+}
+
 function Recordatorios-Decide([string]$said) {
   $n = Norm $said
 
@@ -237,7 +286,10 @@ function Recordatorios-Decide([string]$said) {
   if ($m.Success) {
     $p = Rec-Parse $m.Groups[1].Value (Get-Date)
     if ($p.resto -match "^cuando\b") { return $null }
-    if (-not $p.resto) { return (Rec-Say "¿Qué querés que te recuerde? Decime por ejemplo: recordame mañana a las 9 pagar la luz.") }
+    if (-not $p.resto) {
+      $script:recPend = @{ tipo = "texto"; cuando = $p.cuando; repite = [string]$p.repite; at = (Get-Date) }
+      $r = Rec-Say "¿Qué querés que te recuerde?"; $r.listen = $true; return $r
+    }
     $items = @(Rec-Load)
     $c = ""; if ($p.cuando) { $c = ([datetime]$p.cuando).ToString($script:recFmt, $inv) }
     $nuevo = [pscustomobject]@{ id = (Rec-NextId $items); texto = (Rec-Cap $p.resto); cuando = $c; repite = [string]$p.repite; hecho = $false; creado = (Get-Date).ToString($script:recFmt, $inv) }
@@ -246,7 +298,8 @@ function Recordatorios-Decide([string]$said) {
       $rep = ""; if ($p.repite -eq "diario") { $rep = ", todos los días" } elseif ($p.repite -eq "sem") { $rep = ", todas las semanas" }
       return (Rec-Say "Listo, te lo recuerdo $(Rec-CuandoTxt ([datetime]$p.cuando))$rep`: $($nuevo.texto).")
     }
-    return (Rec-Say "Anotado sin fecha: $($nuevo.texto). Si me decís cuándo, te aviso.")
+    $script:recPend = @{ tipo = "cuando"; id = $nuevo.id; at = (Get-Date) }
+    $r = Rec-Say "Anotado: $($nuevo.texto). ¿Para cuándo querés que te lo recuerde? Si no hace falta, decime que no."; $r.listen = $true; return $r
   }
 
   # Ver recordatorios
@@ -268,6 +321,11 @@ function Recordatorios-Decide([string]$said) {
     return (Rec-Say "Listo, cancelé el recordatorio: $($hit.texto).")
   }
 
+  # Lista de compras: "agregá a la lista" sin decir que
+  if ($n -match "^(?:mia )?(?:agrega|suma|anota|pone|mete|anade)\w*\s+(?:algo\s+)?(?:a|en)\s+(?:la\s+)?lista(?:\s+de\s+(?:compras|super|supermercado|mandados))?$") {
+    $script:recPend = @{ tipo = "lista"; at = (Get-Date) }
+    $r = Rec-Say "Dale, ¿qué agrego a la lista?"; $r.listen = $true; return $r
+  }
   # Lista de compras: agregar
   $m = [regex]::Match($n, "^(?:mia )?(?:agrega|suma|anota|pone|mete|anade)\w*\s+(.+?)\s+(?:a|en)\s+(?:la\s+)?lista(?:\s+de\s+(?:compras|super|supermercado|mandados))?$")
   if (-not $m.Success) { $m = [regex]::Match($n, "^(?:mia )?(?:agrega|suma|anota|pone|mete|anade)\w*\s+(?:a|en)\s+(?:la\s+)?lista(?:\s+de\s+(?:compras|super|supermercado|mandados))?\s+(.+)$") }

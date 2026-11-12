@@ -409,30 +409,90 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
 
     // ---------- Hablar (voz Piper de la PC, con respaldo del reloj) ----------
 
+    private val wavQueue = java.util.ArrayDeque<ByteArray>()
+    private var feedDone = true
+    private var fullText = ""
+    private var tailText = ""
+
+    /** Parte la respuesta en frases: la primera sale sola y rápido, el resto se agrupa. */
+    private fun pieces(text: String): List<String> {
+        val ss = Regex("(?<=[.!?\u2026])\\s+|\n+").split(text.trim()).map { it.trim() }.filter { it.isNotEmpty() }
+        if (ss.size <= 1) return listOf(text.trim())
+        val out = ArrayList<String>()
+        var cur = ""
+        for (s in ss) {
+            cur = if (cur.isEmpty()) s else "$cur $s"
+            val minLen = if (out.isEmpty()) 25 else 90
+            if (cur.length >= minLen) { out.add(cur); cur = "" }
+        }
+        if (cur.isNotEmpty()) {
+            if (out.isNotEmpty() && cur.length < 25) out[out.size - 1] = out[out.size - 1] + " " + cur else out.add(cur)
+        }
+        return out
+    }
+
+    /** Habla por partes: pide a Piper la primera frase y la reproduce mientras prepara las siguientes. */
     private fun speak(text: String) {
         val my = ++token
+        releasePlayer()
+        wavQueue.clear()
+        feedDone = false
+        tailText = ""
+        fullText = text
         val base = voiceBase()
+        val parts = pieces(text)
         Thread {
-            var wav: ByteArray? = null
-            if (base != null) {
-                try {
-                    val c = URL("$base/tts").openConnection() as HttpURLConnection
-                    c.connectTimeout = 3000
-                    c.readTimeout = 30000
-                    c.requestMethod = "POST"
-                    c.doOutput = true
-                    c.setRequestProperty("Content-Type", "text/plain; charset=utf-8")
-                    c.outputStream.use { it.write(text.toByteArray(Charsets.UTF_8)) }
-                    if (c.responseCode in 200..299) wav = c.inputStream.use { it.readBytes() }
-                    c.disconnect()
-                } catch (e: Exception) { wav = null }
+            for ((i, p) in parts.withIndex()) {
+                var wav: ByteArray? = null
+                if (base != null) {
+                    try {
+                        val c = URL("$base/tts").openConnection() as HttpURLConnection
+                        c.connectTimeout = 3000
+                        c.readTimeout = 30000
+                        c.requestMethod = "POST"
+                        c.doOutput = true
+                        c.setRequestProperty("Content-Type", "text/plain; charset=utf-8")
+                        c.outputStream.use { it.write(p.toByteArray(Charsets.UTF_8)) }
+                        if (c.responseCode in 200..299) wav = c.inputStream.use { it.readBytes() }
+                        c.disconnect()
+                    } catch (e: Exception) { wav = null }
+                }
+                val data = wav
+                if (data == null || data.size <= 100) {
+                    val rest = parts.drop(i).joinToString(" ")
+                    ui.post {
+                        if (my != token) return@post
+                        feedDone = true
+                        if (i == 0) speakFallback(text) else {
+                            tailText = rest
+                            if (player == null && wavQueue.isEmpty()) endOfSpeech()
+                        }
+                    }
+                    return@Thread
+                }
+                ui.post {
+                    if (my != token) return@post
+                    wavQueue.addLast(data)
+                    if (player == null) playNextPiece()
+                }
             }
-            val data = wav
             ui.post {
                 if (my != token) return@post
-                if (data != null && data.size > 100) playWav(data, text) else speakFallback(text)
+                feedDone = true
+                if (player == null && wavQueue.isEmpty()) endOfSpeech()
             }
         }.start()
+    }
+
+    private fun playNextPiece() {
+        val d = wavQueue.pollFirst()
+        if (d != null) playWav(d, fullText) else if (feedDone) endOfSpeech()
+    }
+
+    private fun endOfSpeech() {
+        val t = tailText
+        tailText = ""
+        if (t.isNotBlank()) speakFallback(t) else finishSpeaking()
     }
 
     private fun playWav(data: ByteArray, text: String) {
@@ -444,7 +504,7 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
             releasePlayer()
             val mp = MediaPlayer()
             mp.setDataSource(f.absolutePath)
-            mp.setOnCompletionListener { finishSpeaking() }
+            mp.setOnCompletionListener { releasePlayer(); playNextPiece() }
             mp.setOnErrorListener { _, _, _ -> speakFallback(text); true }
             mp.prepare()
             player = mp
@@ -484,6 +544,9 @@ El ano que viene empieza un curso virtual de preparados magistrales de tres cuat
 
     private fun stopSpeaking() {
         token++
+        wavQueue.clear()
+        feedDone = true
+        tailText = ""
         releasePlayer()
         try { tts?.stop() } catch (e: Exception) { }
         orb.levelProvider = null
