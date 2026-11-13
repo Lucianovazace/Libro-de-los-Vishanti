@@ -204,6 +204,148 @@ function Conocimiento-Decide([string]$said) {
   return $null
 }
 
+# ---------- Modo profe (explica, ejemplifica, chequea y corrige) ----------
+# Estado de la "clase" en curso: tema, fragmentos, nivel de simplificacion, si espera respuesta.
+# Frases: "profe, explicame X", "no entendi", "mas simple", "con un ejemplo", "por que ...",
+#         "a ver si entendi: ...", "ayudame con un ejercicio", "dame una clase de X", "modo profe".
+$script:profe = $null
+
+function Profe-Activo {
+  if ($script:profe -and (((Get-Date) - $script:profe.at).TotalMinutes -gt 30)) { $script:profe = $null }
+  return ($null -ne $script:profe)
+}
+
+$script:profeBase = "Sos MIA en modo PROFE: la profesora particular de química de Luciano (técnico químico en formación, Mar del Plata, español rioplatense, cálida, paciente y clara). Tu trabajo es que ENTIENDA, no solo que lea. Reglas: 1) Partí de los FRAGMENTOS del material y nombrá de dónde sale (documento y página o sección). 2) Podés sumar explicación general de química de nivel secundario técnico para aclarar, pero avisá cuando algo NO sale de su material, así lo verifica con su apunte. 3) Usá una analogía cotidiana o un ejemplo numérico chico. 4) No inventes valores de tablas (Ka, Kps, potenciales, constantes): si hace falta uno, decí que lo busque en su tabla. 5) Si hacés cuentas, mostralas paso a paso y avisá que las verifique. 6) Terminá con UNA pregunta corta para chequear que entendió. 7) Máximo 7 oraciones, sin listas ni símbolos raros ni fórmulas con superíndices, porque se lee en voz alta: decí las fórmulas con palabras."
+
+function Profe-Hablar([string]$tema, [string]$pedido, [int]$nivel, $hits, [string]$ctxPrevio, [string]$fuentesPrevias) {
+  $ctx = ""; $fuentes = ""
+  if ($hits -and @($hits).Count -gt 0) { $ctx = Est-Contexto $hits; $fuentes = Est-Fuentes $hits }
+  elseif ($ctxPrevio) { $ctx = $ctxPrevio; $fuentes = $fuentesPrevias }
+  $sys = $script:profeBase
+  if ($nivel -eq 1) { $sys += " IMPORTANTE: el alumno NO entendió la explicación anterior. Explicá distinto: otra analogía, palabras más simples, definiendo cada término técnico." }
+  if ($nivel -ge 2) { $sys += " IMPORTANTE: el alumno sigue sin entender después de explicarle dos veces. Andá en pasitos chiquitos, UNO por vez; explicá solo el primer paso y pedile que te diga con sus palabras qué entendió de ese paso." }
+  if ($nivel -eq -1) { $sys += " IMPORTANTE: mostrá un EJEMPLO RESUELTO con números chicos, paso a paso, diciendo de dónde sale cada número." }
+  if ($nivel -eq -2) { $sys += " IMPORTANTE: es un ejercicio. Guiá al alumno: 1) qué datos hay y qué pide, 2) qué concepto o fórmula del material aplica, 3) planteá solo el primer paso y pedile que lo intente. No des el resultado final salvo que lo pida." }
+  if ($nivel -eq -3) { $sys += " IMPORTANTE: el alumno pidió la resolución completa. Resolvé el ejercicio paso a paso, mostrando cada cuenta, y al final recordale que verifique las cuentas." }
+  if ($nivel -eq -4) { $sys += " IMPORTANTE: dá una mini clase en tres partes cortas: qué es, para qué sirve y un ejemplo. Después una pregunta de chequeo." }
+  $user = ""
+  if ($ctx) { $user = "FRAGMENTOS DEL MATERIAL:`n" + $ctx + "`n" }
+  else { $user = "No hay fragmentos del material sobre este tema: explicá con conocimiento general de química y avisá claramente que eso no sale de su material.`n" }
+  if ($script:profe -and $script:profe.ultima -and $nivel -ne 0) { $user += "TU EXPLICACIÓN ANTERIOR (no la repitas igual): " + $script:profe.ultima + "`n" }
+  $user += "TEMA: " + $tema + "`nPEDIDO: " + $pedido
+  try { $a = Est-Llm $sys $user 450 }
+  catch {
+    Write-Host ("Profe: " + $_.Exception.Message)
+    return @{ ok = $false; action = "say"; reply = "No pude hablar con el modelo para explicarte. ¿Está abierta la ventana del modelo?" }
+  }
+  if (-not $a) { $a = "No pude armar la explicación, probá de nuevo." }
+  $espera = $a.TrimEnd().EndsWith("?")
+  $nv = $nivel; if ($nv -lt 0) { $nv = 0 }
+  $script:profe = @{ tema = $tema; ctx = $ctx; fuentes = $fuentes; at = (Get-Date); nivel = $nv; ultima = $a; espera = $espera; esperaAt = (Get-Date); pideTema = $false }
+  $disp = $a
+  if ($fuentes) { $disp = $a + "`n`nFuentes: " + $fuentes }
+  return @{ ok = $true; action = "say"; reply = $a; display = $disp; listen = $espera }
+}
+
+function Profe-Decide([string]$said) {
+  $t = Norm $said
+  $activo = Profe-Activo
+
+  # Activar el modo
+  if ($t -match "^(?:mia )?modo (?:profe|profesora|clase)\s*$") {
+    $script:profe = @{ tema = ""; ctx = ""; fuentes = ""; at = (Get-Date); nivel = 0; ultima = ""; espera = $false; esperaAt = (Get-Date); pideTema = $true }
+    return @{ ok = $true; action = "say"; reply = "Modo profe. Decime qué tema querés que veamos, o qué no entendés."; listen = $true }
+  }
+  # Cerrar la clase
+  if ($activo -and $t -match "^(?:mia )?(?:chau profe|gracias profe|gracias|listo profe|ya entendi|ya esta|entendido|terminamos|termina la clase|fin de la clase|salir del modo profe|cerrar modo profe|basta|listo)\s*$") {
+    $script:profe = $null
+    return @{ ok = $true; action = "say"; reply = "Perfecto. Cuando quieras seguimos. Podés pedirme que te tome una lección con: preguntame sobre un tema." }
+  }
+
+  # Esperaba el tema despues de "modo profe"
+  if ($activo -and $script:profe.pideTema) {
+    $script:profe.pideTema = $false
+    $hits = Est-Search $said 4
+    return (Profe-Hablar $said ("Explicá este tema desde cero: " + $said) 0 $hits "" "")
+  }
+
+  if ($activo) {
+    # No entendi / mas simple / otra vez
+    if ($t -match "^(?:mia )?(?:profe )?(?:no entend|no lo entend|no me quedo|sigo sin entender|no lo veo|no se de que|explicame de nuevo|explicalo de nuevo|explicame otra vez|otra vez|mas simple|mas facil|mas despacio|con otras palabras|de otra forma|de otra manera|repetime|no capto|no la veo)") {
+      $nv = [int]$script:profe.nivel + 1; if ($nv -gt 2) { $nv = 2 }
+      return (Profe-Hablar $script:profe.tema ("El alumno dijo: " + $said + ". Volvé a explicar el tema.") $nv $null $script:profe.ctx $script:profe.fuentes)
+    }
+    # Pide ejemplo
+    if ($t -match "^(?:mia )?(?:profe )?(?:dame un ejemplo|un ejemplo|con un ejemplo|con ejemplos?|ejemplo|dame ejemplos?|ejemplo con numeros|mostrame un ejemplo)") {
+      return (Profe-Hablar $script:profe.tema ("El alumno pidió: " + $said) -1 $null $script:profe.ctx $script:profe.fuentes)
+    }
+    # Pide el resultado completo de un ejercicio
+    if ($t -match "^(?:mia )?(?:profe )?(?:dame el resultado|resolvelo|resolvelo vos|resolvemelo|dame la respuesta|mostrame como se resuelve|resolvelo completo|no puedo resolverlo)") {
+      return (Profe-Hablar $script:profe.tema ("El alumno pidió la resolución completa. Enunciado y contexto: " + $script:profe.tema) -3 $null $script:profe.ctx $script:profe.fuentes)
+    }
+    # Verificar lo que entendio
+    $m = [regex]::Match($t, "^(?:mia )?(?:profe )?(?:a ver si entendi|entendi bien|dejame explicarte|lo explico con mis palabras|te lo explico|decime si esta bien)[ :,]*(.*)$")
+    if ($m.Success) {
+      $resp = $m.Groups[1].Value.Trim()
+      if (-not $resp) { $script:profe.espera = $true; $script:profe.esperaAt = (Get-Date); return @{ ok = $true; action = "say"; reply = "Dale, explicámelo con tus palabras y te digo qué tal vas."; listen = $true } }
+      return (Profe-Hablar $script:profe.tema ("El alumno cree que entendió y explica: " + $resp + ". Decile con calidez qué está bien, qué le falta o qué está mal, y corregí con claridad.") 0 $null $script:profe.ctx $script:profe.fuentes)
+    }
+    # Preguntas de seguimiento dentro de la misma clase
+    if ($t -match "^(?:mia )?(?:profe )?(?:y )?(?:por que|como se|como es|como funciona|como calculo|como sale|que pasa si|que pasa con|que significa|cual es la diferencia|de donde sale|entonces|y si|y que|para que sirve|cuando se usa|y cuando)\b") {
+      $hits = Est-Search ($script:profe.tema + " " + $said) 4
+      if (@($hits).Count -eq 0) { $hits = $null }
+      return (Profe-Hablar $script:profe.tema ("Pregunta del alumno: " + $said) 0 $hits $script:profe.ctx $script:profe.fuentes)
+    }
+    # Respuesta a la pregunta de chequeo que hizo la profe
+    if ($script:profe.espera -and (((Get-Date) - $script:profe.esperaAt).TotalMinutes -le 3)) {
+      if ($t -match "^(?:mia )?(?:alexa|prende|apaga|enciende|que hora|hora es|clima|recordame|agrega|mostrame|cuando juega)") { $script:profe.espera = $false; return $null }
+      $script:profe.espera = $false
+      if ($t -match "^(?:mia )?(?:no se|ni idea|no tengo idea|no me acuerdo|no sabria)\s*$") {
+        return (Profe-Hablar $script:profe.tema "El alumno no sabe responder tu pregunta de chequeo. Explicale la respuesta paso a paso, sin retarlo, y chequeá con una pregunta más fácil." 1 $null $script:profe.ctx $script:profe.fuentes)
+      }
+      return (Profe-Hablar $script:profe.tema ("Tu pregunta de chequeo fue la última de tu explicación anterior. El alumno respondió: " + $said + ". Decile con calidez si está bien, a medias o mal, explicá lo que falta y cerrá con otra pregunta corta.") 0 $null $script:profe.ctx $script:profe.fuentes)
+    }
+  }
+
+  # Arrancar una clase nueva
+  $tema = ""; $nivel = 0; $pedido = ""
+  $m = [regex]::Match($t, "^(?:mia )?(?:profe|profesora|seno|senorita)[ ,]*(.*)$")
+  if ($m.Success) {
+    $tema = $m.Groups[1].Value.Trim()
+    if (-not $tema) { return @{ ok = $true; action = "say"; reply = "Acá estoy. ¿Qué tema vemos?"; listen = $true } }
+    $tema = [regex]::Replace($tema, "^(?:explicame|explica|ayudame con|ayudame a entender|no entiendo|no entendi|quiero entender|ensename|aclarame)\s+", "")
+    $pedido = "Luciano dice: " + $said + ". Explicale el tema."
+  } else {
+    $m = [regex]::Match($t, "^(?:mia )?(?:explicame|aclarame|ayudame a entender|ayudame con|no entiendo|no entendi|quiero entender|ensename|ensenme)(?: bien| mejor| de nuevo)? (.+)$")
+    if ($m.Success) {
+      $tema = $m.Groups[1].Value.Trim()
+      $pedido = "Luciano dice: " + $said + ". Explicale el tema."
+      if ($t -match "^(?:mia )?(?:no entiendo|no entendi)") { $nivel = 1 }
+    } else {
+      $m = [regex]::Match($t, "^(?:mia )?(?:dame una clase|haceme una clase|dame una mini clase|dame una leccion|clase)(?: (?:de|sobre|acerca de))? (.+)$")
+      if ($m.Success) { $tema = $m.Groups[1].Value.Trim(); $pedido = "Dá una mini clase sobre el tema."; $nivel = -4 }
+      else {
+        $m = [regex]::Match($t, "^(?:mia )?(?:ayudame con|ayudame a resolver|ayudame a hacer|resolvemelo|ayudame con este|quiero resolver)(?: un| este| el| la)? (?:ejercicio|problema|calculo|punto)(?: de)?[ :,]*(.*)$")
+        if ($m.Success) {
+          $enun = $m.Groups[1].Value.Trim()
+          if ((($enun -split " ").Count) -lt 6) {
+            $script:profe = @{ tema = "ejercicio"; ctx = ""; fuentes = ""; at = (Get-Date); nivel = 0; ultima = ""; espera = $false; esperaAt = (Get-Date); pideTema = $true }
+            return @{ ok = $true; action = "say"; reply = "Dale. Dictame el enunciado con los datos, y lo vemos juntos paso a paso."; listen = $true }
+          }
+          $tema = $enun; $pedido = "Ejercicio del alumno: " + $enun; $nivel = -2
+        }
+      }
+    }
+  }
+  if (-not $tema) { return $null }
+  $hits = Est-Search $tema 4
+  # Sin "profe" explicito, solo entra si el material tiene algo claro sobre el tema (evita pisar otras skills)
+  $explicito = ($t -match "^(?:mia )?(?:profe|profesora|seno|senorita)\b")
+  if (-not $explicito -and (@($hits).Count -eq 0 -or $hits[0].score -lt 3)) { return $null }
+  if (@($hits).Count -eq 0) { $hits = $null }
+  return (Profe-Hablar $tema $pedido $nivel $hits "" "")
+}
+
 function Estudio-Decide([string]$said) {
   $t = Norm $said
   # Quiz pendiente: la proxima frase es la respuesta (vence a los 10 minutos)
@@ -213,6 +355,8 @@ function Estudio-Decide([string]$said) {
     elseif ($t -match "^(?:mia )?(?:otra pregunta|siguiente)") { $script:estQuiz = $null; $tt = $script:estTema; if (-not $tt) { $tt = "titulacion" }; return (Est-Quiz $tt) }
     else { return (Est-Corregir $said) }
   }
+  # Modo profe (explicaciones, "no entendi", ejercicios guiados)
+  $pr = $null; try { $pr = Profe-Decide $said } catch { Write-Host ("Profe: " + $_.Exception.Message) }; if ($pr) { return $pr }
   if ($t -match "^(?:mia )?modo estudio\s*$") {
     return @{ ok = $true; action = "say"; reply = "Modo estudio listo. Decime: qué dice el material sobre un tema, resumime el tema tal, o preguntame sobre tal tema para repasar." }
   }
