@@ -108,7 +108,7 @@ function Os-Campo($o, [string]$campo) {
     "vencimiento" { if (-not [string]$o.vencimiento) { return $sd }; return ("Las recetas de $nom vencen a los " + (Os-Hablar ([string]$o.vencimiento)) + ".") }
     "validador" { if (-not [string]$o.validador) { return $sd }; return ("El validador de $nom es " + (Os-Hablar ([string]$o.validador)) + ".") }
     "particularidades" { if (-not [string]$o.particularidades) { return "De $nom no hay particularidades cargadas." }; return ("Particularidades de ${nom}: " + ((Os-Hablar ([string]$o.particularidades)).TrimEnd(".")) + ".") }
-    "atencion" { if (-not [string]$o.atencion) { return "No tengo cargado si atendemos $nom ni en qué horarios." }; if ((Norm ([string]$o.atencion)) -match "^no\b") { return ("${nom}: " + ([string]$o.atencion).Trim().TrimEnd(".") + ".") }; return ("Atención de ${nom}: " + [string]$o.atencion + ".") }
+    "atencion" { if (-not [string]$o.atencion) { return "No tengo cargado si atendemos $nom ni en qué horarios." }; if ((Norm ([string]$o.atencion)) -match "^(no|si)\b") { return ("${nom}: " + ([string]$o.atencion).Trim().TrimEnd(".") + ".") }; return ("Atención de ${nom}: " + [string]$o.atencion + ".") }
   }
   return $sd
 }
