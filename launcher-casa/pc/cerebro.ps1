@@ -43,6 +43,8 @@ $gusPath2 = Join-Path $root "gustos.ps1"
 if (Test-Path $gusPath2) { . $gusPath2 }
 $estPath = Join-Path $root "estudio.ps1"
 if (Test-Path $estPath) { . $estPath }
+$ustPath = Join-Path $root "usted.ps1"
+if (Test-Path $ustPath) { . $ustPath }
 $osPath = Join-Path $root "obrassociales.ps1"
 if (Test-Path $osPath) { . $osPath }
 $salPath = Join-Path $root "salud.ps1"
@@ -203,8 +205,8 @@ function Build-System([string]$device, [string]$speaker) {
     return "/no_think Sos MIA, una asistente de voz de una casa de Mar del Plata. Hablás en español rioplatense, con calidez y cortesía. Te habla una persona que no es de la casa: sé amable y respondé $oraciones, sin listas ni markdown. No tenés ni revelás información personal de los dueños de casa ni de sus dispositivos; si te la piden, decí que eso solo se lo contás a ellos. Ahora es: $now."
   }
   $quien = ""
-  if ($speaker -eq "Mili") { $quien = "`n`nAhora te habla Mili, la pareja de Luciano y también usuaria principal de la casa. Tratala por su nombre, con calidez, y no la llames señor." }
-  $s = "/no_think Sos MIA (Mi Inteligencia Artificial), la asistente personal de Luciano. Hablás en español rioplatense (voseo). Tu estilo es sereno, elegante, eficiente y atento, con un humor seco y sutil de vez en cuando, nunca exagerado ni infantil. Anticipás lo que Luciano pueda necesitar. Ocasionalmente podés llamarlo `"señor`", sin abusar. " +
+  if ($speaker -eq "Mili") { $quien = "`n`nAhora te habla Mili, la pareja de Luciano y también usuaria principal de la casa. Tratala por su nombre, con calidez, de vos (con Mili sí se usa el voseo), y no la llames señor." }
+  $s = "/no_think Sos MIA (Mi Inteligencia Artificial), la asistente personal de Luciano. Hablás en español rioplatense, pero a Luciano lo tratás SIEMPRE de usted, nunca de vos ni de tú (por ejemplo: `"usted tiene`", `"dígame`", `"le aviso`", `"su agenda`"). Tu estilo es sereno, elegante, eficiente y atento, con un humor seco y sutil de vez en cuando, nunca exagerado ni infantil. Anticipás lo que Luciano pueda necesitar. Ocasionalmente podés llamarlo `"señor`", sin abusar. " +
     "Tus respuestas se leen $donde`: $oraciones, sin listas, sin markdown, sin emojis. " +
     "Si no sabés algo o no lo tenés en lo que te contaron, decilo en vez de inventar. No inventes datos de Mar del Plata ni de dispositivos.`n`n" +
     "Lo que sabés de Luciano y su casa:`n" + $perfil
@@ -462,6 +464,7 @@ while ($true) {
         $sw = [System.Diagnostics.Stopwatch]::StartNew()
         $res = Decide $said $device $speaker
         if ($res -and $res.reply -and (Get-Command Recordatorios-ParaApp -ErrorAction SilentlyContinue)) { $extra = ""; try { $extra = Recordatorios-ParaApp } catch { }; if ($extra) { $res.reply = ([string]$res.reply + " " + $extra) } }
+        if (Get-Command Usted-Aplica -ErrorAction SilentlyContinue) { $res = Usted-Aplica $res $speaker }
         $sw.Stop()
         $json = $res | ConvertTo-Json -Compress
         Send-Response $stream 200 "application/json; charset=utf-8" ($utf8.GetBytes($json))
