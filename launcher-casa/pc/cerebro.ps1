@@ -43,6 +43,8 @@ $gusPath2 = Join-Path $root "gustos.ps1"
 if (Test-Path $gusPath2) { . $gusPath2 }
 $estPath = Join-Path $root "estudio.ps1"
 if (Test-Path $estPath) { . $estPath }
+$osPath = Join-Path $root "obrassociales.ps1"
+if (Test-Path $osPath) { . $osPath }
 $salPath = Join-Path $root "salud.ps1"
 if (Test-Path $salPath) { . $salPath }
 $gasPath = Join-Path $root "gastos.ps1"
@@ -282,6 +284,9 @@ function Decide([string]$said, [string]$device, [string]$speaker) {
 
   # 1c) Donde estan las cosas de la casa (datos\objetos.json)
   if (Get-Command Objetos-Decide -ErrorAction SilentlyContinue) { $obj = $null; try { $obj = Objetos-Decide $said } catch { }; if ($obj) { return $obj } }
+
+  # 1c1) Obras sociales de la farmacia (datos\obrassociales.json; lee los campos, sin modelo)
+  if (Get-Command Obrassociales-Decide -ErrorAction SilentlyContinue) { $os = $null; try { $os = Obrassociales-Decide $said $speaker } catch { Write-Host ("ObrasSociales: " + $_.Exception.Message) }; if ($os) { return $os } }
 
   # 1c2) Bases de conocimiento (Boca, Seleccion, ...; datos\conocimiento.json). Antes que futbol: "cuantas libertadores gano Boca" no es un resultado
   if (Get-Command Conocimiento-Decide -ErrorAction SilentlyContinue) { $bh = $null; try { $bh = Conocimiento-Decide $said } catch { }; if ($bh) { return $bh } }
