@@ -21,15 +21,15 @@ $script:gasPend = $null
 $script:gasCats = @(
   @{ n = "Kiosco";         alias = "kiosco|kiosko|golosinas?";                    rx = "\b(?:pepa|alfajor|chicle|caramelo|chocolate|galletit|gaseosa|coca cola|snack|papas fritas|chupet|turron|oblea|cigarrillo|helado|kiosco|kiosko|golosin)" },
   @{ n = "Comida afuera";  alias = "comida afuera|delivery|comida";               rx = "\b(?:delivery|pedidos ya|rappi|pizza|empanada|hamburguesa|burger|mcdonald|mostaza|cafe|cafeteria|panaderia|medialuna|sandwich|lomito|sushi|milanesa|restaurante|parrilla|almuerzo|comida)" },
-  @{ n = "Transporte";     alias = "transporte|colectivo|nafta";                  rx = "\b(?:colectivo|sube|nafta|combustible|uber|taxi|remis|estacionamiento|peaje|bondi|tren|micro|pasaje|bici)\b" },
+  @{ n = "Transporte";     alias = "transporte|colectivo|nafta";                  rx = "\b(?:colectivo|sube|nafta|combustible|uber|taxi|remis|estacionamiento|peaje|bondi|tren|micro|pasaje|bici)s?\b" },
   @{ n = "Salud";          alias = "salud|farmacia";                              rx = "\b(?:farmacia|remedio|medicamento|ibuprofeno|dentista|medico|consulta|analisis|anteojos|vitamina)" },
-  @{ n = "Servicios";      alias = "servicios?|facturas?";                        rx = "\b(?:luz|gas|agua|internet|wifi|celular|abono|netflix|spotify|suscripcion|expensas|alquiler|seguro|cablevision|flow|monotributo|patente|municipal)\b" },
+  @{ n = "Servicios";      alias = "servicios?|facturas?";                        rx = "\b(?:luz|gas|agua|internet|wifi|celular|abono|netflix|spotify|suscripcion|expensas|alquiler|seguro|cablevision|flow|monotributo|patente|municipal)s?\b" },
   @{ n = "Deporte";        alias = "deporte|futbol";                              rx = "\b(?:cancha|botines|guantes|pelota|futbol|gimnasio|gym|suplemento|proteina|camiseta|canillera|beelup|torneo|club)" },
   @{ n = "Ropa";           alias = "ropa";                                        rx = "\b(?:remera|pantalon|zapatilla|campera|buzo|medias|jean|ropa|short|calzado)" },
   @{ n = "Estudio";        alias = "estudio|colegio";                             rx = "\b(?:fotocopia|libro|carpeta|cuaderno|lapicera|calculadora|birome|guardapolvo|reactivo|apunte|impresion|utiles)" },
-  @{ n = "Salidas";        alias = "salidas?";                                    rx = "\b(?:cine|bar|boliche|cerveza|trago|birra|fernet|vino|recital|entrada|teatro|salida|regalo|cumple)\b" },
+  @{ n = "Salidas";        alias = "salidas?";                                    rx = "\b(?:cine|bar|boliche|cerveza|trago|birra|fernet|vino|recital|entrada|teatro|salida|regalo|cumple)s?\b" },
   @{ n = "Hogar";          alias = "hogar|casa";                                  rx = "\b(?:limpieza|lavandina|detergente|ferreteria|foco|lamparita|sarten|vaso|plato|herramienta|pintura|mueble|colchon|toalla|sabana|papel higienico|shampoo|jabon|desodorante)" },
-  @{ n = "Supermercado";   alias = "supermercado|super";                          rx = "\b(?:super|supermercado|carrefour|coto|dia|changomas|jumbo|disco|verduleria|carniceria|almacen|fiambre|leche|pan|huevo|fideo|arroz|yerba|azucar|aceite|verdura|fruta|carne|pollo|queso)\b" }
+  @{ n = "Supermercado";   alias = "supermercado|super";                          rx = "\b(?:super|supermercado|carrefour|coto|dia|changomas|jumbo|disco|verduleria|carniceria|almacen|fiambre|leche|pan|huevo|fideo|arroz|yerba|azucar|aceite|verdura|fruta|carne|pollo|queso)s?\b" }
 )
 $script:gasStop = @("de","del","la","el","los","las","un","una","unas","unos","y","con","para","mi","mis")
 
@@ -81,41 +81,79 @@ function Gas-Numeros([string]$raw) {
   return $out
 }
 
-# Tamano del producto: "500 g", "1 kilo", "1,5 litros", "medio kilo", "250 cc". Devuelve @{ tam (g o ml); tamU; resto }
+# Tamano y pack del producto: "500 g", "1 kilo", "1,5 litros", "medio kilo", "250 cc", "x6", "pack de 12", "6 x 500 ml", "docena".
+# Devuelve @{ tam (g, ml o unidades del pack); tamU ("g", "ml", "u" o ""); pack (cantidad de unidades, 0 si no hay); resto }
 function Gas-Tam([string]$raw) {
   $s = $raw
-  $tam = 0.0; $u = ""
-  $m = [regex]::Match($s, "(?i)\bmedio\s+(kilo|litro)\b")
-  if ($m.Success) { $tam = 500; if ($m.Groups[1].Value -match "(?i)litro") { $u = "ml" } else { $u = "g" } }
-  if (-not $u) {
+  $tam = 0.0; $u = ""; $pack = 0
+  $num = "\d+(?:[.,]\d+)?"
+  $unitRx = "(kg|kilos?|gr|g|gramos?|lts?|l|litros?|ml|cc)"
+  # "6 x 500 ml"
+  $m = [regex]::Match($s, "(?i)(?<![\w.,])(\d{1,3})\s*x\s*(" + $num + ")\s*" + $unitRx + "\b")
+  $unitTxt = ""; $v = 0.0
+  if ($m.Success) {
+    $pack = [int]$m.Groups[1].Value; $unitTxt = $m.Groups[3].Value.ToLowerInvariant()
+    [void][double]::TryParse($m.Groups[2].Value.Replace(",", "."), [Globalization.NumberStyles]::Float, $script:gasInv, [ref]$v)
+  }
+  if (-not $unitTxt) {
+    $m = [regex]::Match($s, "(?i)\bmedio\s+(kilo|litro)\b")
+    if ($m.Success) { $v = 0.5; $unitTxt = $m.Groups[1].Value.ToLowerInvariant() }
+  }
+  if (-not $unitTxt) {
     $m = [regex]::Match($s, "(?i)\b(?:un|una)\s+(kilo|litro)\b")
-    if ($m.Success) { $tam = 1000; if ($m.Groups[1].Value -match "(?i)litro") { $u = "ml" } else { $u = "g" } }
+    if ($m.Success) { $v = 1; $unitTxt = $m.Groups[1].Value.ToLowerInvariant() }
   }
-  if (-not $u) {
-    $m = [regex]::Match($s, "(?i)(?<![\w.,])(\d+(?:[.,]\d+)?)\s*(kg|kilos?|gr|g|gramos?|lts?|l|litros?|ml|cc)\b")
-    if ($m.Success) {
-      $v = 0.0
-      if ([double]::TryParse($m.Groups[1].Value.Replace(",", "."), [Globalization.NumberStyles]::Float, $script:gasInv, [ref]$v)) {
-        $x = $m.Groups[2].Value.ToLowerInvariant()
-        if ($x -match "^(kg|kilo)") { $tam = $v * 1000; $u = "g" }
-        elseif ($x -match "^(gr|g|gramo)") { $tam = $v; $u = "g" }
-        elseif ($x -match "^(l|lt|litro)") { $tam = $v * 1000; $u = "ml" }
-        else { $tam = $v; $u = "ml" }
-      }
-    }
+  if (-not $unitTxt) {
+    $m = [regex]::Match($s, "(?i)(?<![\w.,])(" + $num + ")\s*" + $unitRx + "\b")
+    if ($m.Success) { [void][double]::TryParse($m.Groups[1].Value.Replace(",", "."), [Globalization.NumberStyles]::Float, $script:gasInv, [ref]$v); $unitTxt = $m.Groups[2].Value.ToLowerInvariant() }
   }
-  if ($u -and $m.Success) { $s = $s.Remove($m.Index, $m.Length).Insert($m.Index, " ") }
-  return @{ tam = $tam; tamU = $u; resto = $s }
+  if ($unitTxt) {
+    if ($unitTxt -match "^(kg|kilo)") { $tam = $v * 1000; $u = "g" }
+    elseif ($unitTxt -match "^(gr|g|gramo)") { $tam = $v; $u = "g" }
+    elseif ($unitTxt -match "^(l|lt|litro)") { $tam = $v * 1000; $u = "ml" }
+    else { $tam = $v; $u = "ml" }
+    $s = $s.Remove($m.Index, $m.Length).Insert($m.Index, " ")
+  }
+  # pack: "x6", "x 6", "pack de 6", "pack x6", "caja de 12", "6 pack", "6 unidades", "docena", "media docena"
+  if ($pack -eq 0) {
+    $m = [regex]::Match($s, "(?i)\bmedia\s+docena\b")
+    if ($m.Success) { $pack = 6 }
+    if ($pack -eq 0) { $m = [regex]::Match($s, "(?i)\bdocena\b"); if ($m.Success) { $pack = 12 } }
+    if ($pack -eq 0) { $m = [regex]::Match($s, "(?i)(?<![\w])(?:pack|caja|bolsa|combo|paquete)\s*(?:de|x)?\s*(\d{1,3})\b"); if ($m.Success) { $pack = [int]$m.Groups[1].Value } }
+    if ($pack -eq 0) { $m = [regex]::Match($s, "(?i)(?<![\w.,])(\d{1,3})\s*(?:pack|unidades|u)\b"); if ($m.Success) { $pack = [int]$m.Groups[1].Value } }
+    if ($pack -eq 0) { $m = [regex]::Match($s, "(?i)(?<![\w])x\s*(\d{1,3})\b"); if ($m.Success) { $pack = [int]$m.Groups[1].Value } }
+    if ($pack -gt 0) { $s = $s.Remove($m.Index, $m.Length).Insert($m.Index, " ") }
+  }
+  if ($pack -ge 2) {
+    if ($u) { $tam = $tam * $pack } else { $tam = $pack; $u = "u" }
+  } else { $pack = 0 }
+  return @{ tam = $tam; tamU = $u; pack = $pack; resto = $s }
 }
-# Precio comparable: por kilo o litro si hay tamano, si no el precio por unidad.
-function Gas-Cmp($i) { $t = 0.0; if ($i.tam) { $t = [double]$i.tam }; if ($t -gt 0) { return [double]$i.unit / $t * 1000 }; return [double]$i.unit }
-function Gas-Unid($i) { if ($i.tam -and [double]$i.tam -gt 0) { if ([string]$i.tamU -eq "ml") { return " el litro" }; return " el kilo" }; return "" }
+# Precio comparable: por kilo o litro si hay tamano; por unidad si es un pack; si no, el precio de la compra.
+function Gas-Cmp($i) {
+  $t = 0.0; if ($i.tam) { $t = [double]$i.tam }
+  if ($t -le 0) { return [double]$i.unit }
+  if ([string]$i.tamU -eq "u") { return [double]$i.unit / $t }
+  return [double]$i.unit / $t * 1000
+}
+function Gas-Unid($i) {
+  if (-not $i.tam -or [double]$i.tam -le 0) { return "" }
+  if ([string]$i.tamU -eq "u") { return " cada uno" }
+  if ([string]$i.tamU -eq "ml") { return " el litro" }
+  return " el kilo"
+}
+function Gas-Med([double]$t, [string]$u) {
+  if ($u -eq "ml") { if ($t -ge 1000) { return (($t / 1000).ToString("0.##", $script:gasInv) -replace "\.", ",") + " l" }; return (Gas-N $t) + " ml" }
+  if ($t -ge 1000) { return (($t / 1000).ToString("0.##", $script:gasInv) -replace "\.", ",") + " kg" }
+  return (Gas-N $t) + " g"
+}
 function Gas-TamTxt($i) {
   if (-not $i.tam -or [double]$i.tam -le 0) { return "" }
-  $t = [double]$i.tam
-  if ([string]$i.tamU -eq "ml") { if ($t -ge 1000) { return " (" + (($t / 1000).ToString("0.##", $script:gasInv) -replace "\.", ",") + " l)" }; return " (" + (Gas-N $t) + " ml)" }
-  if ($t -ge 1000) { return " (" + (($t / 1000).ToString("0.##", $script:gasInv) -replace "\.", ",") + " kg)" }
-  return " (" + (Gas-N $t) + " g)"
+  $t = [double]$i.tam; $u = [string]$i.tamU
+  $pk = 0; if ($i.pack) { $pk = [int]$i.pack }
+  if ($u -eq "u") { return " (pack de " + (Gas-N $t) + ")" }
+  if ($pk -ge 2) { return " (" + $pk + " de " + (Gas-Med ($t / $pk) $u) + ")" }
+  return " (" + (Gas-Med $t $u) + ")"
 }
 
 function Gas-CatDe([string]$n) {
@@ -204,7 +242,7 @@ function Gas-Parse([string]$raw) {
   $nn = Norm $raw
   $fecha = [datetime]::Today
   if ($nn -match "\banteayer\b|\bantes de ayer\b") { $fecha = $fecha.AddDays(-2) } elseif ($nn -match "\bayer\b") { $fecha = $fecha.AddDays(-1) }
-  return @{ monto = $total; unit = $unit; cant = $cant; item = $l.item; lugar = $l.lugar; fecha = $fecha; tam = $tm.tam; tamU = $tm.tamU }
+  return @{ monto = $total; unit = $unit; cant = $cant; item = $l.item; lugar = $l.lugar; fecha = $fecha; tam = $tm.tam; tamU = $tm.tamU; pack = $tm.pack }
 }
 
 # ---------- Fechas y rangos ----------
@@ -250,7 +288,7 @@ function Gas-Similares($items, [string]$key, $salvoId = $null, $tamU = $null) {
   foreach ($i in @($items)) {
     if ($null -ne $salvoId -and $i.id -eq $salvoId) { continue }
     if ([double]$i.unit -le 0) { continue }
-    if ($null -ne $tamU -and ([string]$i.tamU) -ne [string]$tamU) { continue }
+    if ($null -ne $tamU) { $ta = [string]$i.tamU; $tb = [string]$tamU; if ($ta -eq "u") { $ta = "" }; if ($tb -eq "u") { $tb = "" }; if ($ta -ne $tb) { continue } }
     $w = @(([string]$i.key) -split " " | Where-Object { $_ })
     if ($w.Count -eq 0) { continue }
     $corto = $q; $largo = $w
@@ -320,7 +358,7 @@ function Gas-Agregar($p, [string]$cat = "") {
   $id = 1; foreach ($i in @($g.items)) { if ([int]$i.id -ge $id) { $id = [int]$i.id + 1 } }
   $nuevo = [pscustomobject]@{
     id = $id; fecha = ([datetime]$p.fecha).ToString("yyyy-MM-dd", $script:gasInv); item = $item; key = (Gas-Key $item)
-    monto = [math]::Round([double]$p.monto, 0); cant = [int]$p.cant; unit = [math]::Round([double]$p.unit, 0); tam = [double]$p.tam; tamU = [string]$p.tamU
+    monto = [math]::Round([double]$p.monto, 0); cant = [int]$p.cant; unit = [math]::Round([double]$p.unit, 0); tam = [double]$p.tam; tamU = [string]$p.tamU; pack = [int]$p.pack
     cat = $cat; lugar = [string]$p.lugar; creado = (Get-Date).ToString("yyyy-MM-dd HH:mm", $script:gasInv)
   }
   $g.items = @($g.items) + $nuevo
@@ -533,6 +571,10 @@ function Gastos-Decide([string]$said, [string]$speaker) {
     $tuq = $null
     if ($p) { $tuq = [string]$p.tamU } elseif ($tq.tamU) { $tuq = [string]$tq.tamU }
     $prev = @(Gas-Similares $g.items $key $null $tuq)
+    if ($null -eq $tuq -and $prev.Count -gt 0) {
+      $t0 = [string]$prev[0].tamU; if ($t0 -eq "u") { $t0 = "" }
+      $prev = @($prev | Where-Object { $t = [string]$_.tamU; if ($t -eq "u") { $t = "" }; $t -eq $t0 })
+    }
     if ($prev.Count -eq 0) { return (Gas-Say ("No tengo registrada ninguna compra de " + $q + ". Cuando la hagas decime el precio y la anoto para comparar la próxima.") ) }
     $ult = $prev[0]
     $min = $prev | Sort-Object { Gas-Cmp $_ } | Select-Object -First 1
