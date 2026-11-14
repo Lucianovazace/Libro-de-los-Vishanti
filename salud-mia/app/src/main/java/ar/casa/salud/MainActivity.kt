@@ -275,7 +275,7 @@ class MainActivity : ComponentActivity() {
         ExerciseSessionRecord.EXERCISE_TYPE_RUNNING -> "correr"
         ExerciseSessionRecord.EXERCISE_TYPE_WALKING -> "caminata"
         ExerciseSessionRecord.EXERCISE_TYPE_BIKING -> "bicicleta"
-        ExerciseSessionRecord.EXERCISE_TYPE_FOOTBALL_SOCCER -> "fútbol"
+        ExerciseSessionRecord.EXERCISE_TYPE_SOCCER -> "fútbol"
         ExerciseSessionRecord.EXERCISE_TYPE_HIKING -> "senderismo"
         ExerciseSessionRecord.EXERCISE_TYPE_STRENGTH_TRAINING -> "pesas"
         ExerciseSessionRecord.EXERCISE_TYPE_YOGA -> "yoga"
