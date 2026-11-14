@@ -43,6 +43,8 @@ $gusPath2 = Join-Path $root "gustos.ps1"
 if (Test-Path $gusPath2) { . $gusPath2 }
 $estPath = Join-Path $root "estudio.ps1"
 if (Test-Path $estPath) { . $estPath }
+$gasPath = Join-Path $root "gastos.ps1"
+if (Test-Path $gasPath) { . $gasPath }
 $viaPath = Join-Path $root "viaje.ps1"
 if (Test-Path $viaPath) { . $viaPath }
 $humPath = Join-Path $root "humano.ps1"
@@ -293,6 +295,9 @@ function Decide([string]$said, [string]$device, [string]$speaker) {
 
   # 1e3) Gustos de cine (Letterboxd; solo Luciano)
   if (Get-Command Gustos-Decide -ErrorAction SilentlyContinue) { $gus = $null; try { $gus = Gustos-Decide $said $speaker } catch { Write-Host ("Gustos: " + $_.Exception.Message) }; if ($gus) { return $gus } }
+
+  # 1e4) Gastos (anotar compras, precios, resumenes; solo Luciano)
+  if (Get-Command Gastos-Decide -ErrorAction SilentlyContinue) { $gas = $null; try { $gas = Gastos-Decide $said $speaker } catch { Write-Host ("Gastos: " + $_.Exception.Message) }; if ($gas) { return $gas } }
 
   # 1f) Recordatorios y lista de compras
   if (Get-Command Recordatorios-Decide -ErrorAction SilentlyContinue) { $rec = $null; try { $rec = Recordatorios-Decide $said } catch { }; if ($rec) { return $rec } }

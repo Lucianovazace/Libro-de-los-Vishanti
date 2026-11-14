@@ -120,7 +120,7 @@ if (-not $vivo) {
   Resultado "FALLA" "cerebro" "no responde en el puerto $Puerto. Abri iniciar-cerebro.bat, espera a que diga 'listo' y volve a correr el autotest."
 } else {
   Resultado "PASA" "cerebro" "responde en el puerto $Puerto"
-  $hayEstudio = (Test-Path (Join-Path $dirE "analitica.json")) -or (Test-Path (Join-Path $dirE "carpeta2024.json"))
+  $hayEstudio = (Test-Path (Join-Path $dirE "analitica.json")) -or (Test-Path (Join-Path $dirE "carpeta2024.json")) -or (Test-Path (Join-Path $dirE "analitica6.json")) -or (Test-Path (Join-Path $dirE "lab2024.json"))
   $hayCal = Test-Path $calCfg
   $hayGustos = Test-Path (Join-Path $datos "gustos.json")
 
@@ -156,6 +156,9 @@ if (-not $vivo) {
     @{ n = "Viaje sin ubicacion"; q = "cuánto tardo en llegar a la costa"; esp = "ubicaci" },
     @{ n = "Humano";                q = "Mia, ¿estás ahí?";                              esp = "aca|aqui|ahi|escucho|si|estoy|dime|decime|presente|ayudo|atenta|contame|fuerte y claro" },
     @{ n = "Estudio";               q = "qué dice el material sobre la titulación";      esp = "titul|material|carpeta|analitica"; llm = $true; req = $hayEstudio },
+    @{ n = "Profe: explicar";       q = "profe explicame la hidrólisis";                 esp = "hidroli|material|carpeta|analitica|no encuentro"; llm = $true; req = $hayEstudio; q2 = "no entendí"; esp2 = "\w{6}"; q3 = "gracias profe"; esp3 = "perfecto|seguimos|cuando quieras|dale" },
+    @{ n = "Gastos: anotar";        q = "me compré autotest a 1";                       esp = "anotado|autotest"; q2 = "borrá el último gasto"; esp2 = "borre|autotest" },
+    @{ n = "Gastos: consulta";      q = "cuánto gasté hoy";                             esp = "gastaste|no tengo gastos" },
     @{ n = "Modelo (charla libre)"; q = "contame un chiste corto";                       esp = "\w{6}"; llm = $true },
     @{ n = "Invitado"; q = "recordame comprar leche"; speaker = "invitado";              esp = "\w{4}" }
   )
