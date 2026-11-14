@@ -157,7 +157,7 @@ function Obrassociales-Decide([string]$said, [string]$speaker) {
   elseif ($n -match "atendemos|atienden|atiende|atencion|manana|horario|dias de atencion") { $campo = "atencion" }
 
   if (-not $campo -and $n -match "\b(colfarma|colegio)\b") { $campo = "validador" }
-  $plural = $n -match "obras sociales|cuales obras|que obras|^(cuales|que|quienes) (usan|tienen|trabajan con)\b"
+  $plural = $n -match "obras sociales|cuales obras|que obras|^(cuales|que|quienes) (no )?(usan|tienen|trabajan con|cubren|exigen|piden|requieren|permiten|aceptan)\b"
   $obras = @(Os-Buscar $n)
 
   # --- Una obra social concreta ---
@@ -199,7 +199,7 @@ function Obrassociales-Decide([string]$said, [string]$speaker) {
     if ($desc) {
       if ($lista.Count -eq 0) { return (Os-Say ("No encuentro obras sociales que $desc entre las que tengo cargadas." + (Os-Frescura))) }
       $nombres = @($lista | ForEach-Object { Os-Nombre $_ })
-      if ($nombres.Count -eq 1) { return (Os-Say ("La única que $desc es " + $nombres[0] + "." + (Os-Frescura))) }
+      if ($nombres.Count -eq 1) { return (Os-Say ("La única que " + ($desc -replace "^usan ","usa " -replace "^validan ","valida " -replace "^cubren ","cubre " -replace "^exigen ","exige " -replace "^requieren ","requiere " -replace "^tienen ","tiene " -replace "^permiten ","permite ") + " es " + $nombres[0] + "." + (Os-Frescura))) }
       if ($nombres.Count -le 12) { return (Os-Say ("Las que $desc son " + $nombres.Count + ": " + ($nombres -join ", ") + "." + (Os-Frescura))) }
       return (Os-Say ("Son " + $nombres.Count + " las que $desc. Algunas: " + (($nombres | Select-Object -First 10) -join ", ") + ". Te las dejo todas en pantalla."))
     }
