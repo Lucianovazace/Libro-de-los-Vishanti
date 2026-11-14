@@ -148,6 +148,7 @@ function Obrassociales-Decide([string]$said, [string]$speaker) {
   elseif ($n -match "particularidad|observacion|aclaracion|nota de") { $campo = "particularidades" }
   elseif ($n -match "atendemos|atienden|atiende|atencion|manana|horario|dias de atencion") { $campo = "atencion" }
 
+  if (-not $campo -and $n -match "\b(colfarma|colegio de farmaceuticos)\b") { $campo = "validador" }
   $plural = $n -match "obras sociales|cuales obras|que obras|^(cuales|que|quienes) (usan|tienen|trabajan con)\b"
   $obras = @(Os-Buscar $n)
 
@@ -176,8 +177,10 @@ function Obrassociales-Decide([string]$said, [string]$speaker) {
       "diagnostico"    { $lista = @($todas | Where-Object { (Os-SiNo $_.diagnostico) -eq (-not $neg) -and $null -ne (Os-SiNo $_.diagnostico) }); $desc = $(if ($neg) { "no requieren diagnóstico" } else { "requieren diagnóstico" }) }
       "validador" {
         $m = [regex]::Match($n, "validador (?:es |de |usa |usan )?(?:el |la )?([a-z0-9]+)$|(?:usan|con|que usan) (?:el )?(?:validador )?([a-z0-9]+)$")
+        if (-not $m.Success -and $n -match "colfarma|colegio") { $m = [regex]::Match("validador colfarma", "validador (?:es |de |usa |usan )?(?:el |la )?([a-z0-9]+)$") }
         $q = ""; if ($m.Success) { $q = $m.Groups[1].Value + $m.Groups[2].Value }
-        if ($q) { $lista = @($todas | Where-Object { (Norm ([string]$_.validador)) -eq $q }); $desc = "usan el validador " + $q.ToUpper() }
+        if ($q -match "^(colfarma|colegio|colegio de farmaceuticos)$") { $q = "col" }
+        if ($q) { $lista = @($todas | Where-Object { (Norm ([string]$_.validador)) -eq $q }); $desc = "usan el validador " + $(if ($q -eq "col") { "ColFarma" } else { $q.ToUpper() }) }
       }
       "recetario" {
         $m = [regex]::Match($n, "recetario (?:es |de |tipo )?([a-z0-9 ]+)$")
