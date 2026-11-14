@@ -104,7 +104,7 @@ function Os-Campo($o, [string]$campo) {
     }
     "notasAfiliado" { if (-not [string]$o.notasAfiliado) { return "De $nom no hay notas sobre el número de afiliado cargadas." }; return ("Sobre el número de afiliado de ${nom}: " + ([string]$o.notasAfiliado).Trim().TrimEnd(".") + ".") }
     "recetario" { if (-not [string]$o.recetario) { return $sd }; return ("El recetario de ${nom} es: " + (Os-Hablar ([string]$o.recetario)) + ".") }
-    "recElectronicas" { if (-not [string]$o.recElectronicas) { return $sd }; return ("${nom} acepta estas recetas electrónicas: " + (Os-Hablar ([string]$o.recElectronicas)) + ".") }
+    "recElectronicas" { if (-not [string]$o.recElectronicas) { return $sd }; return ("${nom} acepta recetas electrónicas de estas plataformas: " + (Os-Hablar ([string]$o.recElectronicas)) + ".") }
     "vencimiento" { if (-not [string]$o.vencimiento) { return $sd }; return ("Las recetas de $nom vencen a los " + (Os-Hablar ([string]$o.vencimiento)) + ".") }
     "validador" { if (-not [string]$o.validador) { return $sd }; return ("El validador de $nom es " + (Os-Hablar ([string]$o.validador)) + ".") }
     "particularidades" { if (-not [string]$o.particularidades) { return "De $nom no hay particularidades cargadas." }; return ("Particularidades de ${nom}: " + ((Os-Hablar ([string]$o.particularidades)).TrimEnd(".")) + ".") }
