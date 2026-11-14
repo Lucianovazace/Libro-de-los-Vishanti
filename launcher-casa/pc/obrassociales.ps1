@@ -59,6 +59,11 @@ function Os-Hablar([string]$v) {
   if ($script:osDatos.glosario) {
     foreach ($p in $script:osDatos.glosario.PSObject.Properties) { if ($t -ieq $p.Name) { return [string]$p.Value } }
   }
+  if ($t.Contains("/") -and $script:osDatos.glosario) {
+    $partes = @()
+    foreach ($tk in ($t -split "/")) { $tk = $tk.Trim(); if (-not $tk) { continue }; $partes += (Os-Hablar $tk) }
+    return ($partes -join ", ")
+  }
   if ($t -cmatch "^[A-ZÁÉÍÓÚÑ0-9 .\-/]+$" -and $t.Length -gt 4) { $t = $t.ToLower() }
   return $t
 }
@@ -97,6 +102,7 @@ function Os-Campo($o, [string]$campo) {
       if ($v) { return "$nom sí requiere diagnóstico." }
       return "$nom no requiere diagnóstico."
     }
+    "notasAfiliado" { if (-not [string]$o.notasAfiliado) { return "De $nom no hay notas sobre el número de afiliado cargadas." }; return ("Sobre el número de afiliado de ${nom}: " + ([string]$o.notasAfiliado).Trim().TrimEnd(".") + ".") }
     "recetario" { if (-not [string]$o.recetario) { return $sd }; return ("El recetario de ${nom} es: " + (Os-Hablar ([string]$o.recetario)) + ".") }
     "recElectronicas" { if (-not [string]$o.recElectronicas) { return $sd }; return ("Para las recetas electrónicas de ${nom}: " + (Os-Hablar ([string]$o.recElectronicas)) + ".") }
     "vencimiento" { if (-not [string]$o.vencimiento) { return $sd }; return ("Las recetas de $nom vencen a los " + (Os-Hablar ([string]$o.vencimiento)) + ".") }
@@ -117,8 +123,9 @@ function Os-Ficha($o) {
   if ([string]$o.recetario) { $p += ("recetario " + (Os-Hablar ([string]$o.recetario))) }
   if ([string]$o.recElectronicas) { $p += ("recetas electrónicas: " + (Os-Hablar ([string]$o.recElectronicas))) }
   if ([string]$o.vencimiento) { $p += ("vencimiento " + (Os-Hablar ([string]$o.vencimiento))) }
-  if ([string]$o.validador) { $p += ("validador " + (Os-Hablar ([string]$o.validador))) }
+  if ([string]$o.validador) { $p += ("validador: " + (Os-Hablar ([string]$o.validador))) }
   if ([string]$o.particularidades) { $p += ("particularidades: " + (Os-Hablar ([string]$o.particularidades))) }
+  if ([string]$o.notasAfiliado) { $p += ("nota sobre el número de afiliado: " + ([string]$o.notasAfiliado).Trim().TrimEnd(".")) }
   if ([string]$o.atencion) { $p += ("atención: " + [string]$o.atencion) }
   if ($p.Count -eq 0) { return "De $nom no tengo datos cargados todavía." }
   return ("${nom}: " + ($p -join "; ") + ".")
@@ -137,7 +144,8 @@ function Obrassociales-Decide([string]$said, [string]$speaker) {
   if ($speaker -eq "invitado") { return $null }
 
   $campo = ""
-  if ($n -match "receta(s)? electronica|rec electronica|electronicas") { $campo = "recElectronicas" }
+  if ($n -match "token|notas? (del? )?(nro |numero )?(de )?afiliado|como (va|se carga|se pone|se ingresa|se escribe) (el )?(nro|numero) de afiliado") { $campo = "notasAfiliado" }
+  elseif ($n -match "receta(s)? electronica|rec electronica|electronicas") { $campo = "recElectronicas" }
   elseif ($n -match "(receta|recete|recetar|prescri)\w* (por )?(el )?(nombre )?generico|por (el )?nombre generico|nombre generico") { $campo = "recetaGenerico" }
   elseif ($n -match "generico|reemplazo|marca recetada") { $campo = "genericos" }
   elseif ($n -match "(modific|cambi|cambio|editar|corregir)\w* .*afiliado|afiliado.*(modific|cambi)|nro afiliado|numero de afiliado") { $campo = "afiliado" }
@@ -148,7 +156,7 @@ function Obrassociales-Decide([string]$said, [string]$speaker) {
   elseif ($n -match "particularidad|observacion|aclaracion|nota de") { $campo = "particularidades" }
   elseif ($n -match "atendemos|atienden|atiende|atencion|manana|horario|dias de atencion") { $campo = "atencion" }
 
-  if (-not $campo -and $n -match "\b(colfarma|colegio de farmaceuticos)\b") { $campo = "validador" }
+  if (-not $campo -and $n -match "\b(colfarma|colegio)\b") { $campo = "validador" }
   $plural = $n -match "obras sociales|cuales obras|que obras|^(cuales|que|quienes) (usan|tienen|trabajan con)\b"
   $obras = @(Os-Buscar $n)
 
@@ -180,7 +188,7 @@ function Obrassociales-Decide([string]$said, [string]$speaker) {
         if (-not $m.Success -and $n -match "colfarma|colegio") { $m = [regex]::Match("validador colfarma", "validador (?:es |de |usa |usan )?(?:el |la )?([a-z0-9]+)$") }
         $q = ""; if ($m.Success) { $q = $m.Groups[1].Value + $m.Groups[2].Value }
         if ($q -match "^(colfarma|colegio|colegio de farmaceuticos)$") { $q = "col" }
-        if ($q) { $lista = @($todas | Where-Object { (Norm ([string]$_.validador)) -eq $q }); $desc = "usan el validador " + $(if ($q -eq "col") { "ColFarma" } else { $q.ToUpper() }) }
+        if ($q) { $lista = @($todas | Where-Object { (Norm ([string]$_.validador)) -eq $q }); $desc = $(if ($q -eq "col") { "validan con el Colegio" } else { "usan el validador " + $q.ToUpper() }) }
       }
       "recetario" {
         $m = [regex]::Match($n, "recetario (?:es |de |tipo )?([a-z0-9 ]+)$")
