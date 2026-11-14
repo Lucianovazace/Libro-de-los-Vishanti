@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "ar.casa.salud"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "ar.casa.salud"
