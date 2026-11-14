@@ -59,7 +59,7 @@ function Os-Hablar([string]$v) {
   if ($script:osDatos.glosario) {
     foreach ($p in $script:osDatos.glosario.PSObject.Properties) { if ($t -ieq $p.Name) { return [string]$p.Value } }
   }
-  if ($t.Contains("/") -and $script:osDatos.glosario) {
+  if ($t.Contains("/") -and -not $t.Contains(" ") -and $script:osDatos.glosario) {
     $partes = @()
     foreach ($tk in ($t -split "/")) { $tk = $tk.Trim(); if (-not $tk) { continue }; $partes += (Os-Hablar $tk) }
     return ($partes -join ", ")
@@ -104,7 +104,7 @@ function Os-Campo($o, [string]$campo) {
     }
     "notasAfiliado" { if (-not [string]$o.notasAfiliado) { return "De $nom no hay notas sobre el número de afiliado cargadas." }; return ("Sobre el número de afiliado de ${nom}: " + ([string]$o.notasAfiliado).Trim().TrimEnd(".") + ".") }
     "recetario" { if (-not [string]$o.recetario) { return $sd }; return ("El recetario de ${nom} es: " + (Os-Hablar ([string]$o.recetario)) + ".") }
-    "recElectronicas" { if (-not [string]$o.recElectronicas) { return $sd }; return ("Para las recetas electrónicas de ${nom}: " + (Os-Hablar ([string]$o.recElectronicas)) + ".") }
+    "recElectronicas" { if (-not [string]$o.recElectronicas) { return $sd }; return ("${nom} acepta estas recetas electrónicas: " + (Os-Hablar ([string]$o.recElectronicas)) + ".") }
     "vencimiento" { if (-not [string]$o.vencimiento) { return $sd }; return ("Las recetas de $nom vencen a los " + (Os-Hablar ([string]$o.vencimiento)) + ".") }
     "validador" { if (-not [string]$o.validador) { return $sd }; return ("El validador de $nom es " + (Os-Hablar ([string]$o.validador)) + ".") }
     "particularidades" { if (-not [string]$o.particularidades) { return "De $nom no hay particularidades cargadas." }; return ("Particularidades de ${nom}: " + ((Os-Hablar ([string]$o.particularidades)).TrimEnd(".")) + ".") }
@@ -121,7 +121,7 @@ function Os-Ficha($o) {
   $v = Os-SiNo $o.modificarAfiliado; if ($null -ne $v) { if ($v) { $p += "se puede modificar el número de afiliado" } else { $p += "no se puede modificar el número de afiliado" } }
   $v = Os-SiNo $o.diagnostico; if ($null -ne $v) { if ($v) { $p += "requiere diagnóstico" } else { $p += "no requiere diagnóstico" } }
   if ([string]$o.recetario) { $p += ("recetario " + (Os-Hablar ([string]$o.recetario))) }
-  if ([string]$o.recElectronicas) { $p += ("recetas electrónicas: " + (Os-Hablar ([string]$o.recElectronicas))) }
+  if ([string]$o.recElectronicas) { $p += ("acepta recetas electrónicas: " + (Os-Hablar ([string]$o.recElectronicas))) }
   if ([string]$o.vencimiento) { $p += ("vencimiento " + (Os-Hablar ([string]$o.vencimiento))) }
   if ([string]$o.validador) { $p += ("validador: " + (Os-Hablar ([string]$o.validador))) }
   if ([string]$o.particularidades) { $p += ("particularidades: " + (Os-Hablar ([string]$o.particularidades))) }
