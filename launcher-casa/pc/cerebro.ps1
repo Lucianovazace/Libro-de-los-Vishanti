@@ -43,6 +43,8 @@ $gusPath2 = Join-Path $root "gustos.ps1"
 if (Test-Path $gusPath2) { . $gusPath2 }
 $estPath = Join-Path $root "estudio.ps1"
 if (Test-Path $estPath) { . $estPath }
+$salPath = Join-Path $root "salud.ps1"
+if (Test-Path $salPath) { . $salPath }
 $gasPath = Join-Path $root "gastos.ps1"
 if (Test-Path $gasPath) { . $gasPath }
 $viaPath = Join-Path $root "viaje.ps1"
@@ -296,6 +298,9 @@ function Decide([string]$said, [string]$device, [string]$speaker) {
   # 1e3) Gustos de cine (Letterboxd; solo Luciano)
   if (Get-Command Gustos-Decide -ErrorAction SilentlyContinue) { $gus = $null; try { $gus = Gustos-Decide $said $speaker } catch { Write-Host ("Gustos: " + $_.Exception.Message) }; if ($gus) { return $gus } }
 
+  # 1e4a) Salud (datos de Health Connect que manda la app MIA Salud; solo Luciano)
+  if (Get-Command Salud-Decide -ErrorAction SilentlyContinue) { $sal = $null; try { $sal = Salud-Decide $said $speaker } catch { Write-Host ("Salud: " + $_.Exception.Message) }; if ($sal) { return $sal } }
+
   # 1e4) Gastos (anotar compras, precios, resumenes; solo Luciano)
   if (Get-Command Gastos-Decide -ErrorAction SilentlyContinue) { $gas = $null; try { $gas = Gastos-Decide $said $speaker } catch { Write-Host ("Gastos: " + $_.Exception.Message) }; if ($gas) { return $gas } }
 
@@ -431,6 +436,12 @@ while ($true) {
     }
     elseif ($first -like "GET /memoria*") {
       Send-Response $stream 200 "text/plain; charset=utf-8" ($utf8.GetBytes([System.IO.File]::ReadAllText($memF, $utf8)))
+    }
+    elseif ($first -like "POST /salud*") {
+      $sres = "salud.ps1 no esta cargado"
+      if (Get-Command Salud-Recibir -ErrorAction SilentlyContinue) { try { $sres = Salud-Recibir ($utf8.GetString($bodyBytes)) } catch { $sres = "error: " + $_.Exception.Message; Write-Host ("Salud: " + $_.Exception.Message) } }
+      Send-Response $stream 200 "text/plain; charset=utf-8" ($utf8.GetBytes($sres))
+      Write-Host ("[{0}] salud: {1}" -f (Get-Date -Format "HH:mm:ss"), $sres)
     }
     elseif ($first -like "POST /mia*") {
       $req = $utf8.GetString($bodyBytes) | ConvertFrom-Json

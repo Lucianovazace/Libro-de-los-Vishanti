@@ -157,6 +157,8 @@ if (-not $vivo) {
     @{ n = "Humano";                q = "Mia, ¿estás ahí?";                              esp = "aca|aqui|ahi|escucho|si|estoy|dime|decime|presente|ayudo|atenta|contame|fuerte y claro" },
     @{ n = "Estudio";               q = "qué dice el material sobre la titulación";      esp = "titul|material|carpeta|analitica"; llm = $true; req = $hayEstudio },
     @{ n = "Profe: explicar";       q = "profe explicame la hidrólisis";                 esp = "hidroli|material|carpeta|analitica|no encuentro"; llm = $true; req = $hayEstudio; q2 = "no entendí"; esp2 = "\w{6}"; q3 = "gracias profe"; esp3 = "perfecto|seguimos|cuando quieras|dale" },
+    @{ n = "Salud: peso";           q = "cuánto peso";                                  esp = "kilos|peso|no tengo" },
+    @{ n = "Salud: sueno";          q = "cuánto dormí anoche";                          esp = "dormiste|no tengo|abri" },
     @{ n = "Gastos: anotar";        q = "me compré autotest a 1";                       esp = "anotado|autotest"; q2 = "borrá el último gasto"; esp2 = "borre|autotest" },
     @{ n = "Gastos: consulta";      q = "cuánto gasté hoy";                             esp = "gastaste|no tengo gastos" },
     @{ n = "Modelo (charla libre)"; q = "contame un chiste corto";                       esp = "\w{6}"; llm = $true },
