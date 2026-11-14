@@ -81,6 +81,43 @@ function Gas-Numeros([string]$raw) {
   return $out
 }
 
+# Tamano del producto: "500 g", "1 kilo", "1,5 litros", "medio kilo", "250 cc". Devuelve @{ tam (g o ml); tamU; resto }
+function Gas-Tam([string]$raw) {
+  $s = $raw
+  $tam = 0.0; $u = ""
+  $m = [regex]::Match($s, "(?i)\bmedio\s+(kilo|litro)\b")
+  if ($m.Success) { $tam = 500; if ($m.Groups[1].Value -match "(?i)litro") { $u = "ml" } else { $u = "g" } }
+  if (-not $u) {
+    $m = [regex]::Match($s, "(?i)\b(?:un|una)\s+(kilo|litro)\b")
+    if ($m.Success) { $tam = 1000; if ($m.Groups[1].Value -match "(?i)litro") { $u = "ml" } else { $u = "g" } }
+  }
+  if (-not $u) {
+    $m = [regex]::Match($s, "(?i)(?<![\w.,])(\d+(?:[.,]\d+)?)\s*(kg|kilos?|gr|g|gramos?|lts?|l|litros?|ml|cc)\b")
+    if ($m.Success) {
+      $v = 0.0
+      if ([double]::TryParse($m.Groups[1].Value.Replace(",", "."), [Globalization.NumberStyles]::Float, $script:gasInv, [ref]$v)) {
+        $x = $m.Groups[2].Value.ToLowerInvariant()
+        if ($x -match "^(kg|kilo)") { $tam = $v * 1000; $u = "g" }
+        elseif ($x -match "^(gr|g|gramo)") { $tam = $v; $u = "g" }
+        elseif ($x -match "^(l|lt|litro)") { $tam = $v * 1000; $u = "ml" }
+        else { $tam = $v; $u = "ml" }
+      }
+    }
+  }
+  if ($u -and $m.Success) { $s = $s.Remove($m.Index, $m.Length).Insert($m.Index, " ") }
+  return @{ tam = $tam; tamU = $u; resto = $s }
+}
+# Precio comparable: por kilo o litro si hay tamano, si no el precio por unidad.
+function Gas-Cmp($i) { $t = 0.0; if ($i.tam) { $t = [double]$i.tam }; if ($t -gt 0) { return [double]$i.unit / $t * 1000 }; return [double]$i.unit }
+function Gas-Unid($i) { if ($i.tam -and [double]$i.tam -gt 0) { if ([string]$i.tamU -eq "ml") { return " el litro" }; return " el kilo" }; return "" }
+function Gas-TamTxt($i) {
+  if (-not $i.tam -or [double]$i.tam -le 0) { return "" }
+  $t = [double]$i.tam
+  if ([string]$i.tamU -eq "ml") { if ($t -ge 1000) { return " (" + (($t / 1000).ToString("0.##", $script:gasInv) -replace "\.", ",") + " l)" }; return " (" + (Gas-N $t) + " ml)" }
+  if ($t -ge 1000) { return " (" + (($t / 1000).ToString("0.##", $script:gasInv) -replace "\.", ",") + " kg)" }
+  return " (" + (Gas-N $t) + " g)"
+}
+
 function Gas-CatDe([string]$n) {
   foreach ($c in $script:gasCats) { if ($n -match ("\b(?:" + $c.alias + ")\b")) { return $c.n } }
   if ($n -match "\botros?\b|\bvarios\b") { return "Otros" }
@@ -95,6 +132,16 @@ function Gas-Key([string]$item) {
     $ws += $w
   }
   return (($ws | Sort-Object -Unique) -join " ")
+}
+
+# Producto generico (primera palabra significativa): "yerba playadito" -> "yerba"
+function Gas-Generico([string]$item) {
+  foreach ($w in ((Norm $item) -split " ")) {
+    if (-not $w -or ($script:gasStop -contains $w)) { continue }
+    if ($w.Length -gt 3 -and $w.EndsWith("s")) { $w = $w.Substring(0, $w.Length - 1) }
+    return $w
+  }
+  return ""
 }
 
 function Gas-Cat([string]$item, [string]$lugar, $g) {
@@ -125,6 +172,8 @@ function Gas-Limpia([string]$t) {
 
 # Interpreta "me compre 2 alfajores a 800 cada uno" -> monto, cantidad, item, lugar, fecha. $null si no hay monto.
 function Gas-Parse([string]$raw) {
+  $tm = Gas-Tam $raw
+  $raw = $tm.resto
   $toks = @(Gas-Numeros $raw)
   if ($toks.Count -eq 0) { return $null }
   $best = -1; $bestScore = -1
@@ -155,7 +204,7 @@ function Gas-Parse([string]$raw) {
   $nn = Norm $raw
   $fecha = [datetime]::Today
   if ($nn -match "\banteayer\b|\bantes de ayer\b") { $fecha = $fecha.AddDays(-2) } elseif ($nn -match "\bayer\b") { $fecha = $fecha.AddDays(-1) }
-  return @{ monto = $total; unit = $unit; cant = $cant; item = $l.item; lugar = $l.lugar; fecha = $fecha }
+  return @{ monto = $total; unit = $unit; cant = $cant; item = $l.item; lugar = $l.lugar; fecha = $fecha; tam = $tm.tam; tamU = $tm.tamU }
 }
 
 # ---------- Fechas y rangos ----------
@@ -194,13 +243,14 @@ function Gas-PorCat($items) {
 }
 
 # ---------- Precios ----------
-function Gas-Similares($items, [string]$key, $salvoId = $null) {
+function Gas-Similares($items, [string]$key, $salvoId = $null, $tamU = $null) {
   $q = @($key -split " " | Where-Object { $_ })
   if ($q.Count -eq 0) { return @() }
   $res = @()
   foreach ($i in @($items)) {
     if ($null -ne $salvoId -and $i.id -eq $salvoId) { continue }
     if ([double]$i.unit -le 0) { continue }
+    if ($null -ne $tamU -and ([string]$i.tamU) -ne [string]$tamU) { continue }
     $w = @(([string]$i.key) -split " " | Where-Object { $_ })
     if ($w.Count -eq 0) { continue }
     $corto = $q; $largo = $w
@@ -215,20 +265,38 @@ function Gas-EnLugar($i) { if ([string]$i.lugar -and (Norm ([string]$i.lugar)) -
 
 # Comentario sobre el precio de una compra recien anotada. "" si no hay nada que decir.
 function Gas-NotaPrecio($g, $nuevo) {
-  $prev = @(Gas-Similares $g.items $nuevo.key $nuevo.id)
+  $tu = ""; if ($nuevo.tamU) { $tu = [string]$nuevo.tamU }
+  $prev = @(Gas-Similares $g.items $nuevo.key $nuevo.id $tu)
   if ($prev.Count -eq 0) { return "" }
-  $u = [double]$nuevo.unit
-  $ult = $prev[0]; $lu = [double]$ult.unit
-  $min = $prev | Sort-Object { [double]$_.unit } | Select-Object -First 1
-  $mu = [double]$min.unit
+  $u = Gas-Cmp $nuevo
+  $ult = $prev[0]; $lu = Gas-Cmp $ult
+  $min = $prev | Sort-Object { Gas-Cmp $_ } | Select-Object -First 1
+  $mu = Gas-Cmp $min
+  $un = Gas-Unid $nuevo
   if ($u -gt $lu * 1.08) {
     $pct = [math]::Round(($u / $lu - 1) * 100)
-    $t = "Ojo: la última vez lo pagaste " + (Gas-N $lu) + (Gas-EnLugar $ult) + " (" + (Gas-Hace $ult.fecha) + "), ahora $pct por ciento más."
-    if ($mu -lt $lu * 0.97) { $t += " Lo más barato que pagaste fue " + (Gas-N $mu) + (Gas-EnLugar $min) + "." }
+    $t = "Ojo: la última vez lo pagaste " + (Gas-N $lu) + $un + (Gas-EnLugar $ult) + " (" + (Gas-Hace $ult.fecha) + "), ahora $pct por ciento más."
+    if ($mu -lt $lu * 0.97) { $t += " Lo más barato que pagaste fue " + (Gas-N $mu) + $un + (Gas-EnLugar $min) + "." }
     return $t
   }
-  if ($u -gt $mu * 1.08) { return "El mejor precio que tengo de eso es " + (Gas-N $mu) + (Gas-EnLugar $min) + " (" + (Gas-Hace $min.fecha) + ")." }
+  if ($u -gt $mu * 1.08) { return "El mejor precio que tengo de eso es " + (Gas-N $mu) + $un + (Gas-EnLugar $min) + " (" + (Gas-Hace $min.fecha) + ")." }
   if ($u -lt $mu * 0.97) { return "Es el precio más barato que tengo registrado de eso." }
+  return ""
+}
+# Si el producto se compro en varias marcas/variantes, las compara.
+function Gas-NotaMarcas($g, $nuevo) {
+  $tu = ""; if ($nuevo.tamU) { $tu = [string]$nuevo.tamU }
+  $gen = Gas-Generico ([string]$nuevo.item)
+  if (-not $gen) { return "" }
+  $prev = @(Gas-Similares $g.items $gen $nuevo.id $tu)
+  $otros = @($prev | Where-Object { $_.key -ne $nuevo.key })
+  if ($otros.Count -eq 0) { return "" }
+  $best = $null
+  foreach ($grp in ($otros | Group-Object key)) {
+    $ult = @($grp.Group | Sort-Object { [string]$_.fecha } -Descending)[0]
+    if ($null -eq $best -or (Gas-Cmp $ult) -lt (Gas-Cmp $best)) { $best = $ult }
+  }
+  if ($best -and (Gas-Cmp $best) -lt (Gas-Cmp $nuevo) * 0.92) { return "Ojo: " + $best.item + " te salió más barato, " + (Gas-N (Gas-Cmp $best)) + (Gas-Unid $best) + " (" + (Gas-Hace $best.fecha) + ")." }
   return ""
 }
 function Gas-NotaTope($g, [string]$cat) {
@@ -252,15 +320,17 @@ function Gas-Agregar($p, [string]$cat = "") {
   $id = 1; foreach ($i in @($g.items)) { if ([int]$i.id -ge $id) { $id = [int]$i.id + 1 } }
   $nuevo = [pscustomobject]@{
     id = $id; fecha = ([datetime]$p.fecha).ToString("yyyy-MM-dd", $script:gasInv); item = $item; key = (Gas-Key $item)
-    monto = [math]::Round([double]$p.monto, 0); cant = [int]$p.cant; unit = [math]::Round([double]$p.unit, 0)
+    monto = [math]::Round([double]$p.monto, 0); cant = [int]$p.cant; unit = [math]::Round([double]$p.unit, 0); tam = [double]$p.tam; tamU = [string]$p.tamU
     cat = $cat; lugar = [string]$p.lugar; creado = (Get-Date).ToString("yyyy-MM-dd HH:mm", $script:gasInv)
   }
   $g.items = @($g.items) + $nuevo
   Gas-Save $g
-  $txt = "Anotado: $item, " + (Gas-N $nuevo.monto) + " pesos, en $cat."
+  $txt = "Anotado: $item" + (Gas-TamTxt $nuevo) + ", " + (Gas-N $nuevo.monto) + " pesos, en $cat."
   if ([int]$nuevo.cant -gt 1) { $txt = "Anotado: " + $nuevo.cant + " $item, " + (Gas-N $nuevo.monto) + " pesos en total (" + (Gas-N $nuevo.unit) + " cada uno), en $cat." }
   $nota = Gas-NotaPrecio $g $nuevo
   if ($nota) { $txt += " " + $nota }
+  $marcas = Gas-NotaMarcas $g $nuevo
+  if ($marcas) { $txt += " " + $marcas }
   $tope = Gas-NotaTope $g $cat
   if ($tope) { $txt += " " + $tope }
   if ($cat -eq "Otros") {
@@ -452,27 +522,36 @@ function Gastos-Decide([string]$said, [string]$speaker) {
   if ($esComparar -or $m.Success) {
     $p = $null
     if ($esComparar) { $p = Gas-Parse $said }
+    $tq = Gas-Tam $said
     $q = ""
     if ($p) { $q = [string]$p.item } elseif ($m.Success) { $q = $m.Groups[1].Value }
+    if (-not $p) { $q = (Gas-Tam $q).resto }
     $q = [regex]::Replace((Norm $q), "\b(?:la ultima vez|ultima vez|es caro|esta caro|caro|barato|estoy pagando de mas|de mas|conviene|me parece|precio|cuanto|aumento|subio|el|la|los|las|por|en|a)\b", " ")
     $q = ($q -replace "\s+", " ").Trim()
     $key = Gas-Key $q
     if (-not $key) { return (Gas-Say "¿De qué producto querés saber el precio?" $true) }
-    $prev = @(Gas-Similares $g.items $key)
+    $tuq = $null
+    if ($p) { $tuq = [string]$p.tamU } elseif ($tq.tamU) { $tuq = [string]$tq.tamU }
+    $prev = @(Gas-Similares $g.items $key $null $tuq)
     if ($prev.Count -eq 0) { return (Gas-Say ("No tengo registrada ninguna compra de " + $q + ". Cuando la hagas decime el precio y la anoto para comparar la próxima.") ) }
     $ult = $prev[0]
-    $min = $prev | Sort-Object { [double]$_.unit } | Select-Object -First 1
-    $prom = ($prev | Measure-Object -Property unit -Average).Average
+    $min = $prev | Sort-Object { Gas-Cmp $_ } | Select-Object -First 1
+    $prom = ($prev | ForEach-Object { Gas-Cmp $_ } | Measure-Object -Average).Average
     if ($p) {
-      $u = [double]$p.unit
+      $u = Gas-Cmp ([pscustomobject]@{ unit = $p.unit; tam = $p.tam })
       $v = ""
       if ($u -gt $prom * 1.1) { $v = "Sí, está más caro que tu promedio de " + (Gas-N $prom) + "." }
       elseif ($u -lt $prom * 0.95) { $v = "No, está por debajo de tu promedio de " + (Gas-N $prom) + "." }
       else { $v = "Está dentro de lo que venís pagando, promedio " + (Gas-N $prom) + "." }
-      return (Gas-Say ($v + " La última vez pagaste " + (Gas-N $ult.unit) + (Gas-EnLugar $ult) + " (" + (Gas-Hace $ult.fecha) + ") y lo más barato fue " + (Gas-N $min.unit) + (Gas-EnLugar $min) + "."))
+      return (Gas-Say ($v + " La última vez pagaste " + (Gas-N (Gas-Cmp $ult)) + (Gas-Unid $ult) + (Gas-EnLugar $ult) + " (" + (Gas-Hace $ult.fecha) + ") y lo más barato fue " + (Gas-N (Gas-Cmp $min)) + (Gas-Unid $min) + (Gas-EnLugar $min) + "."))
     }
-    $t = "La última vez pagaste " + (Gas-N $ult.unit) + (Gas-EnLugar $ult) + " (" + (Gas-Hace $ult.fecha) + ")."
-    if ($prev.Count -gt 1) { $t += " Lo más barato fue " + (Gas-N $min.unit) + (Gas-EnLugar $min) + " y el promedio de " + $prev.Count + " compras, " + (Gas-N $prom) + "." }
+    $t = "La última vez pagaste " + (Gas-N (Gas-Cmp $ult)) + (Gas-Unid $ult) + (Gas-EnLugar $ult) + " (" + (Gas-Hace $ult.fecha) + ")."
+    if ($prev.Count -gt 1) { $t += " Lo más barato fue " + (Gas-N (Gas-Cmp $min)) + (Gas-Unid $min) + (Gas-EnLugar $min) + " y el promedio de " + $prev.Count + " compras, " + (Gas-N $prom) + "." }
+    $keys = @($prev | Group-Object key)
+    if ($keys.Count -gt 1) {
+      $pm = @($keys | ForEach-Object { $x = @($_.Group | Sort-Object { [string]$_.fecha } -Descending)[0]; [pscustomobject]@{ item = $x.item; c = (Gas-Cmp $x); u = (Gas-Unid $x) } } | Sort-Object c | Select-Object -First 3)
+      $t += " Por marca, de más barata a más cara: " + (($pm | ForEach-Object { $_.item + " " + (Gas-N $_.c) + $_.u }) -join ", ") + "."
+    }
     return (Gas-Say $t)
   }
 
