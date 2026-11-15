@@ -28,6 +28,7 @@ $script:ustedMapa = @{
   "agregá"="agregue"; "abrí"="abra"; "elegí"="elija"; "decí"="diga"; "avisá"="avise"; "mandá"="mande"
   "tené"="tenga"; "recordá"="recuerde"; "esperá"="espere"; "revisá"="revise"; "cargá"="cargue"; "decilo"="dígalo"
   "probalo"="pruébelo"; "contale"="cuéntele"; "pedile"="pídale"; "tomá"="tome"; "anotá"="anote"; "confirmá"="confirme"
+  "activá"="active"; "tocá"="toque"; "apretá"="apriete"; "entrá"="entre"; "andá"="vaya"; "buscá"="busque"; "escribí"="escriba"; "presioná"="presione"; "seleccioná"="seleccione"; "mantené"="mantenga"; "conectate"="conéctese"; "asegurate"="asegúrese"; "verificá"="verifique"; "copiá"="copie"; "pegá"="pegue"; "cerrá"="cierre"; "reiniciá"="reinicie"; "instalá"="instale"; "dame"="deme"
   "ponete"="póngase"; "pesate"="pésese"; "cuidate"="cuídese"; "descansá"="descanse"; "dormí"="duerma"
   "enviame"="envíeme"; "mostrame"="muéstreme"; "ayudame"="ayúdeme"
   "decile"="dígale"; "pasame"="páseme"; "dejame"="déjeme"; "indicame"="indíqueme"; "repetime"="repítame"
