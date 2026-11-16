@@ -13,6 +13,14 @@ import android.widget.TextView
 import androidx.activity.ComponentActivity
 import androidx.health.connect.client.HealthConnectClient
 import androidx.health.connect.client.PermissionController
+import androidx.health.connect.client.feature.ExperimentalFeatureAvailabilityApi
+import androidx.health.connect.client.feature.HealthConnectFeatures
+import androidx.work.Constraints
+import androidx.work.ExistingPeriodicWorkPolicy
+import androidx.work.NetworkType
+import androidx.work.PeriodicWorkRequestBuilder
+import androidx.work.WorkManager
+import java.util.concurrent.TimeUnit
 import androidx.health.connect.client.permission.HealthPermission
 import androidx.health.connect.client.records.ActiveCaloriesBurnedRecord
 import androidx.health.connect.client.records.DistanceRecord
@@ -48,7 +56,7 @@ import kotlin.math.roundToInt
 class MainActivity : ComponentActivity() {
 
     private val scope = CoroutineScope(Dispatchers.Main + SupervisorJob())
-    private val permisos = setOf(
+    private val permisosBase = setOf(
         HealthPermission.getReadPermission(StepsRecord::class),
         HealthPermission.getReadPermission(SleepSessionRecord::class),
         HealthPermission.getReadPermission(HeartRateRecord::class),
@@ -57,6 +65,8 @@ class MainActivity : ComponentActivity() {
         HealthPermission.getReadPermission(DistanceRecord::class),
         HealthPermission.getReadPermission(ActiveCaloriesBurnedRecord::class),
     )
+
+    private var permisos: Set<String> = permisosBase
 
     private lateinit var estado: TextView
     private lateinit var campoPc: EditText
@@ -104,7 +114,10 @@ class MainActivity : ComponentActivity() {
         val st = HealthConnectClient.getSdkStatus(this)
         if (st == HealthConnectClient.SDK_AVAILABLE) {
             client = HealthConnectClient.getOrCreate(this)
+            // Lectura en segundo plano (para la sincronizacion automatica), si este celu la soporta
+            if (segundoPlanoDisponible(client!!)) permisos = permisosBase + HealthPermission.PERMISSION_READ_HEALTH_DATA_IN_BACKGROUND
             // Al abrir la app, si ya hay permisos y dirección, manda solo
+            if (!campoPc.text.isNullOrBlank()) programarSync()
             scope.launch { if (!campoPc.text.isNullOrBlank()) sincronizar() }
         } else if (st == HealthConnectClient.SDK_UNAVAILABLE_PROVIDER_UPDATE_REQUIRED) {
             log("Health Connect necesita actualizarse (Play Store, 'Health Connect'). Después volvé a abrir esta app.")
@@ -113,18 +126,27 @@ class MainActivity : ComponentActivity() {
         }
     }
 
+    @OptIn(ExperimentalFeatureAvailabilityApi::class)
+    private fun segundoPlanoDisponible(c: HealthConnectClient): Boolean = try {
+        c.features.getFeatureStatus(HealthConnectFeatures.FEATURE_READ_HEALTH_DATA_IN_BACKGROUND) == HealthConnectFeatures.FEATURE_STATUS_AVAILABLE
+    } catch (e: Throwable) { false }
+
     private fun guardarPc(prefs: android.content.SharedPreferences) {
         prefs.edit().putString("pc", campoPc.text.toString().trim()).apply()
+        if (campoPc.text.toString().isNotBlank()) programarSync()
+    }
+
+    /** Sincronizacion automatica: cada hora (el sistema decide el momento exacto), solo con red. */
+    private fun programarSync() {
+        val req = PeriodicWorkRequestBuilder<SyncWorker>(1, TimeUnit.HOURS)
+            .setConstraints(Constraints.Builder().setRequiredNetworkType(NetworkType.CONNECTED).build())
+            .build()
+        WorkManager.getInstance(this).enqueueUniquePeriodicWork("salud-sync", ExistingPeriodicWorkPolicy.UPDATE, req)
     }
 
     private fun log(t: String) { runOnUiThread { estado.text = t } }
 
-    private fun urlPc(): String? {
-        val v = campoPc.text.toString().trim().trimEnd('/')
-        if (v.isEmpty()) return null
-        val base = if (v.startsWith("http")) v else "http://$v:5003"
-        return "$base/salud"
-    }
+    private fun urlPc(): String? = Sincronizador.urlDe(campoPc.text.toString())
 
     /** Pide los permisos que falten. Devuelve true si ya estaban todos. */
     private suspend fun pedirSiFalta(forzar: Boolean): Boolean {
@@ -142,9 +164,9 @@ class MainActivity : ComponentActivity() {
         if (dados.isEmpty()) { log("Faltan permisos. Tocá '1. Dar permisos de lectura'."); pedirPermisos.launch(permisos); return }
         log("Leyendo Health Connect...")
         try {
-            val json = withContext(Dispatchers.IO) { armarResumen(c, dados) }
+            val json = withContext(Dispatchers.IO) { Sincronizador.armarResumen(c, dados) }
             log("Enviando a MIA...")
-            val resp = withContext(Dispatchers.IO) { enviar(url, json) }
+            val resp = withContext(Dispatchers.IO) { Sincronizador.enviar(url, json) }
             val dias = json.getJSONArray("dias").length()
             val ej = json.getJSONArray("ejercicio").length()
             val pe = json.getJSONArray("peso").length()
@@ -155,131 +177,4 @@ class MainActivity : ComponentActivity() {
         }
     }
 
-    private fun enviar(url: String, json: JSONObject): String {
-        val conn = URL(url).openConnection() as HttpURLConnection
-        conn.requestMethod = "POST"
-        conn.connectTimeout = 8000
-        conn.readTimeout = 20000
-        conn.doOutput = true
-        conn.setRequestProperty("Content-Type", "application/json; charset=utf-8")
-        conn.outputStream.use { it.write(json.toString().toByteArray(Charsets.UTF_8)) }
-        val code = conn.responseCode
-        val txt = (if (code in 200..299) conn.inputStream else conn.errorStream)?.bufferedReader()?.readText() ?: ""
-        conn.disconnect()
-        return "$code $txt".trim()
-    }
-
-    private fun redondea1(d: Double) = (d * 10).roundToInt() / 10.0
-
-    private suspend fun armarResumen(c: HealthConnectClient, dados: Set<String>): JSONObject {
-        val zona = ZoneId.systemDefault()
-        val hoy = LocalDate.now(zona)
-        val desde = hoy.minusDays(29)
-        val dias = sortedMapOf<String, JSONObject>()
-        fun dia(d: LocalDate): JSONObject = dias.getOrPut(d.toString()) { JSONObject().put("dia", d.toString()) }
-        val rango = TimeRangeFilter.between(desde.atStartOfDay(), hoy.plusDays(1).atStartOfDay())
-
-        fun tiene(r: kotlin.reflect.KClass<out androidx.health.connect.client.records.Record>) = dados.contains(HealthPermission.getReadPermission(r))
-
-        // Pasos
-        if (tiene(StepsRecord::class)) runCatching {
-            for (g in c.aggregateGroupByPeriod(AggregateGroupByPeriodRequest(setOf(StepsRecord.COUNT_TOTAL), rango, Period.ofDays(1)))) {
-                g.result[StepsRecord.COUNT_TOTAL]?.let { dia(g.startTime.toLocalDate()).put("pasos", it) }
-            }
-        }
-        // Pulsaciones
-        if (tiene(HeartRateRecord::class)) runCatching {
-            val ms = setOf(HeartRateRecord.BPM_AVG, HeartRateRecord.BPM_MIN, HeartRateRecord.BPM_MAX)
-            for (g in c.aggregateGroupByPeriod(AggregateGroupByPeriodRequest(ms, rango, Period.ofDays(1)))) {
-                val o = dia(g.startTime.toLocalDate())
-                g.result[HeartRateRecord.BPM_AVG]?.let { o.put("fcProm", it) }
-                g.result[HeartRateRecord.BPM_MIN]?.let { o.put("fcMin", it) }
-                g.result[HeartRateRecord.BPM_MAX]?.let { o.put("fcMax", it) }
-            }
-        }
-        // Distancia
-        if (tiene(DistanceRecord::class)) runCatching {
-            for (g in c.aggregateGroupByPeriod(AggregateGroupByPeriodRequest(setOf(DistanceRecord.DISTANCE_TOTAL), rango, Period.ofDays(1)))) {
-                g.result[DistanceRecord.DISTANCE_TOTAL]?.let { dia(g.startTime.toLocalDate()).put("dist", redondea1(it.inKilometers)) }
-            }
-        }
-        // Calorias activas
-        if (tiene(ActiveCaloriesBurnedRecord::class)) runCatching {
-            for (g in c.aggregateGroupByPeriod(AggregateGroupByPeriodRequest(setOf(ActiveCaloriesBurnedRecord.ACTIVE_CALORIES_TOTAL), rango, Period.ofDays(1)))) {
-                g.result[ActiveCaloriesBurnedRecord.ACTIVE_CALORIES_TOTAL]?.let { dia(g.startTime.toLocalDate()).put("kcal", it.inKilocalories.roundToInt()) }
-            }
-        }
-        // Sueño: minutos dormidos, asignados al día en que te despertaste
-        if (tiene(SleepSessionRecord::class)) runCatching {
-            val i0 = desde.minusDays(1).atStartOfDay(zona).toInstant()
-            val rs = c.readRecords(ReadRecordsRequest(SleepSessionRecord::class, TimeRangeFilter.between(i0, Instant.now()))).records
-            val porDia = HashMap<String, Long>()
-            for (s in rs) {
-                val min = if (s.stages.isEmpty()) Duration.between(s.startTime, s.endTime).toMinutes()
-                else s.stages.filter { it.stage != SleepSessionRecord.STAGE_TYPE_AWAKE && it.stage != SleepSessionRecord.STAGE_TYPE_OUT_OF_BED }
-                    .sumOf { Duration.between(it.startTime, it.endTime).toMinutes() }
-                val d = s.endTime.atZone(zona).toLocalDate().toString()
-                porDia[d] = (porDia[d] ?: 0L) + min
-            }
-            for ((d, m) in porDia) dias.getOrPut(d) { JSONObject().put("dia", d) }.put("sueno", m)
-        }
-
-        // Entrenamientos (últimos 60 días) con datos de cada sesión
-        val ejercicio = JSONArray()
-        if (tiene(ExerciseSessionRecord::class)) runCatching {
-            val i0 = hoy.minusDays(59).atStartOfDay(zona).toInstant()
-            val rs = c.readRecords(ReadRecordsRequest(ExerciseSessionRecord::class, TimeRangeFilter.between(i0, Instant.now()))).records
-            for (s in rs) {
-                val o = JSONObject()
-                o.put("inicio", s.startTime.atZone(zona).toLocalDateTime().toString())
-                o.put("fin", s.endTime.atZone(zona).toLocalDateTime().toString())
-                o.put("min", Duration.between(s.startTime, s.endTime).toMinutes())
-                o.put("tipo", nombreTipo(s.exerciseType))
-                s.title?.let { o.put("titulo", it) }
-                runCatching {
-                    val ms = HashSet<androidx.health.connect.client.aggregate.AggregateMetric<*>>()
-                    if (tiene(DistanceRecord::class)) ms.add(DistanceRecord.DISTANCE_TOTAL)
-                    if (tiene(ActiveCaloriesBurnedRecord::class)) ms.add(ActiveCaloriesBurnedRecord.ACTIVE_CALORIES_TOTAL)
-                    if (tiene(HeartRateRecord::class)) { ms.add(HeartRateRecord.BPM_AVG); ms.add(HeartRateRecord.BPM_MAX) }
-                    if (ms.isNotEmpty()) {
-                        val a = c.aggregate(AggregateRequest(ms, TimeRangeFilter.between(s.startTime, s.endTime)))
-                        a[DistanceRecord.DISTANCE_TOTAL]?.let { o.put("dist", redondea1(it.inKilometers)) }
-                        a[ActiveCaloriesBurnedRecord.ACTIVE_CALORIES_TOTAL]?.let { o.put("kcal", it.inKilocalories.roundToInt()) }
-                        a[HeartRateRecord.BPM_AVG]?.let { o.put("fcProm", it) }
-                        a[HeartRateRecord.BPM_MAX]?.let { o.put("fcMax", it) }
-                    }
-                }
-                ejercicio.put(o)
-            }
-        }
-
-        // Peso (últimos 120 días)
-        val peso = JSONArray()
-        if (tiene(WeightRecord::class)) runCatching {
-            val i0 = hoy.minusDays(119).atStartOfDay(zona).toInstant()
-            val rs = c.readRecords(ReadRecordsRequest(WeightRecord::class, TimeRangeFilter.between(i0, Instant.now()))).records
-            for (w in rs) peso.put(JSONObject().put("fecha", w.time.atZone(zona).toLocalDateTime().toString()).put("kg", redondea1(w.weight.inKilograms)))
-        }
-
-        val arr = JSONArray()
-        for (o in dias.values) arr.put(o)
-        return JSONObject()
-            .put("device", android.os.Build.MODEL ?: "celu")
-            .put("enviado", java.time.LocalDateTime.now(zona).toString())
-            .put("dias", arr)
-            .put("ejercicio", ejercicio)
-            .put("peso", peso)
-    }
-
-    private fun nombreTipo(t: Int): String = when (t) {
-        ExerciseSessionRecord.EXERCISE_TYPE_RUNNING -> "correr"
-        ExerciseSessionRecord.EXERCISE_TYPE_WALKING -> "caminata"
-        ExerciseSessionRecord.EXERCISE_TYPE_BIKING -> "bicicleta"
-        ExerciseSessionRecord.EXERCISE_TYPE_SOCCER -> "fútbol"
-        ExerciseSessionRecord.EXERCISE_TYPE_HIKING -> "senderismo"
-        ExerciseSessionRecord.EXERCISE_TYPE_STRENGTH_TRAINING -> "pesas"
-        ExerciseSessionRecord.EXERCISE_TYPE_YOGA -> "yoga"
-        ExerciseSessionRecord.EXERCISE_TYPE_SWIMMING_POOL -> "natación"
-        else -> "otro"
-    }
 }
