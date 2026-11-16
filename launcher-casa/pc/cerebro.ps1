@@ -29,6 +29,8 @@ if (-not (Test-Path $alexaF)) {
 
 $camPath = Join-Path $root "camisetas.ps1"
 if (Test-Path $camPath) { . $camPath }
+$libPath = Join-Path $root "libros.ps1"
+if (Test-Path $libPath) { . $libPath }
 $objPath = Join-Path $root "objetos.ps1"
 if (Test-Path $objPath) { . $objPath }
 $futPath = Join-Path $root "futbol.ps1"
@@ -283,6 +285,8 @@ function Decide([string]$said, [string]$device, [string]$speaker) {
 
   # 1b) Camisetas
   if (Get-Command Camisetas-Decide -ErrorAction SilentlyContinue) { $cam = $null; try { $cam = Camisetas-Decide $said } catch { }; if ($cam) { return $cam } }
+  # 1c) Libros y comics
+  if (Get-Command Libros-Decide -ErrorAction SilentlyContinue) { $lib = $null; try { $lib = Libros-Decide $said } catch { }; if ($lib) { return $lib } }
 
   # 1c) Donde estan las cosas de la casa (datos\objetos.json)
   if (Get-Command Objetos-Decide -ErrorAction SilentlyContinue) { $obj = $null; try { $obj = Objetos-Decide $said } catch { }; if ($obj) { return $obj } }
