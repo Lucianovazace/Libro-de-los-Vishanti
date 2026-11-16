@@ -49,6 +49,8 @@ $ustPath = Join-Path $root "usted.ps1"
 if (Test-Path $ustPath) { . $ustPath }
 $osPath = Join-Path $root "obrassociales.ps1"
 if (Test-Path $osPath) { . $osPath }
+$comPath = Join-Path $root "comidas.ps1"
+if (Test-Path $comPath) { . $comPath }
 $salPath = Join-Path $root "salud.ps1"
 if (Test-Path $salPath) { . $salPath }
 $gasPath = Join-Path $root "gastos.ps1"
@@ -309,6 +311,8 @@ function Decide([string]$said, [string]$device, [string]$speaker) {
   # 1e3) Gustos de cine (Letterboxd; solo Luciano)
   if (Get-Command Gustos-Decide -ErrorAction SilentlyContinue) { $gus = $null; try { $gus = Gustos-Decide $said $speaker } catch { Write-Host ("Gustos: " + $_.Exception.Message) }; if ($gus) { return $gus } }
 
+  # 1e4) Comidas (registro por voz; solo Luciano)
+  if (Get-Command Comidas-Decide -ErrorAction SilentlyContinue) { $com = $null; try { $com = Comidas-Decide $said $speaker } catch { Write-Host ("Comidas: " + $_.Exception.Message) }; if ($com) { return $com } }
   # 1e4a) Salud (datos de Health Connect que manda la app MIA Salud; solo Luciano)
   if (Get-Command Salud-Decide -ErrorAction SilentlyContinue) { $sal = $null; try { $sal = Salud-Decide $said $speaker } catch { Write-Host ("Salud: " + $_.Exception.Message) }; if ($sal) { return $sal } }
 
