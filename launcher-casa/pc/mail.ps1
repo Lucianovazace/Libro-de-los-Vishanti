@@ -43,7 +43,7 @@ function Mail-ParseHeaders([string[]]$lines) {
   }
   return $out
 }
-function Mail-Leer([int]$max = 5) {
+function Mail-Leer([int]$max = 5, [string]$raw = "") {
   $c = Mail-Cfg; if (-not $c) { throw "sin-config" }
   $tcp = New-Object System.Net.Sockets.TcpClient; $tcp.ReceiveTimeout = 15000; $tcp.SendTimeout = 15000
   $tcp.Connect("imap.gmail.com", 993)
@@ -58,6 +58,7 @@ function Mail-Leer([int]$max = 5) {
     if ($r[-1] -notmatch " OK ") { throw "login" }
     $null = Cmd "EXAMINE INBOX"
     $crit = "UNSEEN"; if ($c.soloPrincipal -ne $false) { $crit = 'X-GM-RAW "is:unread category:primary"' }
+    if ($raw) { $crit = 'X-GM-RAW "' + $raw.Replace('\', '\\').Replace('"', '\"') + '"' }
     $s = Cmd "SEARCH $crit"
     $ids = @(); foreach ($l in $s) { if ($l -match '^\* SEARCH\s*(.*)$') { $ids = @($Matches[1].Trim() -split "\s+" | Where-Object { $_ }) } }
     $total = $ids.Count
@@ -71,9 +72,33 @@ function Mail-Leer([int]$max = 5) {
 function Mail-Decide([string]$said, [string]$speaker) {
   $n = Norm $said
   if ($n -notmatch "\b(mails?|correos?|emails?|gmail|e mails?)\b") { return $null }
-  if ($n -notmatch "(tengo|hay|nuevos?|sin leer|leeme|lee|dime|decime|revisa|mira|chequea|que )") { return $null }
+  if ($n -notmatch "(tengo|hay|nuevos?|sin leer|leeme|lee|lees|dime|decime|revisa|mira|chequea|que |ultimo|mails? de|correos? de|emails? de)") { return $null }
   if ($speaker -and $speaker -ne "Luciano") { return (Mail-Say "El correo es privado: solo Luciano lo puede consultar.") }
   if (-not (Mail-Cfg)) { return (Mail-Say "Todavía no tengo configurado su correo. Falta crear el archivo mail-config.json en la carpeta de datos.") }
+  # Filtro por remitente: "mails de mercado libre", "el ultimo mail de Shein", "mails nuevos de Google"
+  $remit = $null
+  $nn = ($n -replace "\s+(hoy|ayer|ahora)$", "").Trim()
+  $mm = [regex]::Match($nn, "\b(?:de|desde)\s+([a-z0-9 ]+?)\s*$")
+  if ($mm.Success) {
+    $cand = $mm.Groups[1].Value.Trim()
+    if ($cand -and $cand -notmatch "^(hoy|ayer|ahora|la|el|los|las|mi|mis|este|esta|esa|ese|aca|casa)\b") { $remit = $cand }
+  }
+  if ($remit) {
+    $q = '(from:"' + $remit + '" OR from:' + ($remit -replace " ", "") + ')'
+    $soloNuevos = ($n -match "sin leer|nuevos?\b")
+    if ($soloNuevos) { $q += " is:unread" }
+    $uno = ($n -match "ultimo")
+    $mx = 3; if ($uno) { $mx = 1 }
+    try { $rr = Mail-Leer $mx $q } catch {
+      if ($_.Exception.Message -eq "login") { return (Mail-Say "Gmail rechazó el usuario o la contraseña de aplicación. Revise el archivo mail-config.json.") }
+      return (Mail-Say "No pude conectarme a Gmail. Revise que la PC tenga internet.")
+    }
+    if ($rr.total -eq 0) { return (Mail-Say ("No encontré mails" + $(if ($soloNuevos) { " sin leer" }) + " de " + $remit + ".")) }
+    $items = @(); foreach ($m in $rr.mails) { $items += ($m.de + ": " + $m.asunto) }
+    if ($uno) { return (Mail-Say ("El último mail de " + $remit + " es de " + $items[0] + ".")) }
+    $h = "Encontré " + $rr.total + " mail" + $(if ($rr.total -ne 1) { "s" }) + " de " + $remit + ". Los más recientes: "
+    return (Mail-Say ($h + ($items -join ". ") + "."))
+  }
   try { $r = Mail-Leer 5 } catch {
     if ($_.Exception.Message -eq "login") { return (Mail-Say "Gmail rechazó el usuario o la contraseña de aplicación. Revise el archivo mail-config.json.") }
     return (Mail-Say "No pude conectarme a Gmail. Revise que la PC tenga internet.")
