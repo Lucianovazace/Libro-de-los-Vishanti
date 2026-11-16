@@ -385,6 +385,7 @@ while ($true) {
     if (((Get-Date) - $script:lastTick).TotalSeconds -ge 15) {
       $script:lastTick = Get-Date
       if (Get-Command Recordatorios-Tick -ErrorAction SilentlyContinue) { try { Recordatorios-Tick } catch { Write-Host ("Error en recordatorios: " + $_.Exception.Message) } }
+      if (Get-Command Libros-Tick -ErrorAction SilentlyContinue) { try { Libros-Tick } catch { Write-Host ("Error en libros: " + $_.Exception.Message) } }
     }
   }
   $client = $listener.AcceptTcpClient()
@@ -472,6 +473,7 @@ while ($true) {
         $sw = [System.Diagnostics.Stopwatch]::StartNew()
         $res = Decide $said $device $speaker
         if ($res -and $res.reply -and (Get-Command Recordatorios-ParaApp -ErrorAction SilentlyContinue)) { $extra = ""; try { $extra = Recordatorios-ParaApp } catch { }; if ($extra) { $res.reply = ([string]$res.reply + " " + $extra) } }
+        if ($res -and $res.reply -and (Get-Command Libros-ParaApp -ErrorAction SilentlyContinue)) { $extra = ""; try { $extra = Libros-ParaApp } catch { }; if ($extra) { $res.reply = ([string]$res.reply + " " + $extra) } }
         if (Get-Command Usted-Aplica -ErrorAction SilentlyContinue) { $res = Usted-Aplica $res $speaker }
         $sw.Stop()
         $json = $res | ConvertTo-Json -Compress

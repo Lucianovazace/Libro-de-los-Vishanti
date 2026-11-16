@@ -113,7 +113,7 @@ function Lib-Reporte([string[]]$qs) {
   if ($bajas.Count -gt 0) { $txt += ". Atencion, bajo de precio: " + ($bajas -join ". ") }
   if ($fall.Count -gt 0) { $txt += ". No pude consultar " + (($fall.Keys) -join " ni ") }
   $txt += ". Mercado Libre todavia no esta incluido."
-  return @{ voz = $txt; display = ($lines -join "`n") }
+  return @{ voz = $txt; display = ($lines -join "`n"); bajas = @($bajas) }
 }
 function Libros-Decide([string]$said) {
   $n = Norm $said
@@ -145,4 +145,26 @@ function Libros-Decide([string]$said) {
     $r = Lib-Reporte $l; return @{ ok = $true; action = "say"; reply = $r.voz; display = $r.display }
   }
   return $null
+}
+
+# ---------- Revision diaria automatica (la llama el ciclo del cerebro cada 15 s) ----------
+$libEstado = Join-Path $data "libros-estado.txt"
+$script:libAvisos = New-Object System.Collections.ArrayList
+function Libros-Tick {
+  $hoy = (Get-Date).ToString("yyyy-MM-dd")
+  if (Test-Path $libEstado) { try { if (([System.IO.File]::ReadAllText($libEstado, $utf8)).Trim() -eq $hoy) { return } } catch { } }
+  $c = Lib-Load
+  $hora = 10; try { if ($null -ne $c.horaRevision) { $hora = [int]$c.horaRevision } } catch { }
+  if ((Get-Date).Hour -lt $hora) { return }
+  [System.IO.File]::WriteAllText($libEstado, $hoy, $utf8)
+  $l = @($c.lista); if ($l.Count -eq 0) { return }
+  Write-Host ("[{0}] Revisando precios de libros ({1})..." -f (Get-Date -Format "HH:mm:ss"), $l.Count)
+  $r = Lib-Reporte $l
+  foreach ($b in @($r.bajas)) { [void]$script:libAvisos.Add($b) }
+  if (@($r.bajas).Count -gt 0) { Speak-PC ("Atención, bajó de precio un libro. " + (@($r.bajas) -join ". ")) }
+}
+function Libros-ParaApp {
+  if ($script:libAvisos.Count -eq 0) { return "" }
+  $l = @($script:libAvisos.ToArray()); $script:libAvisos.Clear()
+  return "Ah, y bajó de precio: " + ($l -join ". ") + "."
 }
