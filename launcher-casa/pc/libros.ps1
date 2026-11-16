@@ -135,6 +135,12 @@ function Libros-Decide([string]$said) {
     $l = @($c.lista); if ($l.Count -eq 0) { return @{ ok = $true; action = "say"; reply = "Todavia no tiene libros en la lista." } }
     return @{ ok = $true; action = "say"; reply = "Sigo: " + ($l -join ", ") + "." }
   }
+  if ($n -match "baj\w+ (?:de precio )?(?:algun|algo|los|mis)|hay (?:ofertas|bajas)|novedades de (?:mis )?(?:libros|comics)|baj\w+ algun") {
+    $bj = @(); if (Test-Path $libBajasF) { try { $bj = @([System.IO.File]::ReadAllText($libBajasF, $utf8) | ConvertFrom-Json) } catch { } }
+    $bj = @($bj | Select-Object -Last 5)
+    if ($bj.Count -eq 0) { return @{ ok = $true; action = "say"; reply = "No registré bajas de precio en sus libros." } }
+    return @{ ok = $true; action = "say"; reply = "Bajas registradas: " + (($bj | ForEach-Object { $_.texto + " (" + $_.fecha + ")" }) -join ". ") + "." }
+  }
   $m = [regex]::Match($n, "(?:busca|buscame|cuanto (?:sale|cuesta)|precio de|mira|fijate)\w*\s+(?:el\s+|la\s+|los\s+|las\s+)?(?:libro|libros|comic|comics|manga|tomo|novela grafica)?\s*(?:de\s+|del\s+)?(.+)$")
   if ($m.Success -and $m.Groups[1].Value.Trim().Length -gt 1) {
     $r = Lib-Reporte @((Get-Culture).TextInfo.ToTitleCase($m.Groups[1].Value.Trim()))
@@ -149,6 +155,7 @@ function Libros-Decide([string]$said) {
 
 # ---------- Revision diaria automatica (la llama el ciclo del cerebro cada 15 s) ----------
 $libEstado = Join-Path $data "libros-estado.txt"
+$libBajasF = Join-Path $data "libros-bajas.json"
 $script:libAvisos = New-Object System.Collections.ArrayList
 function Libros-Tick {
   $hoy = (Get-Date).ToString("yyyy-MM-dd")
@@ -160,11 +167,9 @@ function Libros-Tick {
   $l = @($c.lista); if ($l.Count -eq 0) { return }
   Write-Host ("[{0}] Revisando precios de libros ({1})..." -f (Get-Date -Format "HH:mm:ss"), $l.Count)
   $r = Lib-Reporte $l
-  foreach ($b in @($r.bajas)) { [void]$script:libAvisos.Add($b) }
-  if (@($r.bajas).Count -gt 0) { Speak-PC ("Atención, bajó de precio un libro. " + (@($r.bajas) -join ". ")) }
+  # Silencioso: las bajas se guardan y MIA las dice solo si usted pregunta ("bajó algún libro?")
+  $prev = @(); if (Test-Path $libBajasF) { try { $prev = @([System.IO.File]::ReadAllText($libBajasF, $utf8) | ConvertFrom-Json) } catch { } }
+  $nuevas = @(); foreach ($b in @($r.bajas)) { $nuevas += [pscustomobject]@{ fecha = $hoy; texto = [string]$b } }
+  if ($nuevas.Count -gt 0) { [System.IO.File]::WriteAllText($libBajasF, (ConvertTo-Json -InputObject @(@($prev) + $nuevas | Select-Object -Last 20) -Depth 3), $utf8) }
 }
-function Libros-ParaApp {
-  if ($script:libAvisos.Count -eq 0) { return "" }
-  $l = @($script:libAvisos.ToArray()); $script:libAvisos.Clear()
-  return "Ah, y bajó de precio: " + ($l -join ". ") + "."
-}
+function Libros-ParaApp { return "" }
