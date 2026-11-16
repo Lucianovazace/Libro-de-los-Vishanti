@@ -40,7 +40,7 @@ function Lib-Parse($t, [string]$q) {
         $nm = [regex]::Match($b, 'product-item-name-\d+"[^>]*>([^<]+)<'); if (-not $nm.Success) { $nm = [regex]::Match($b, 'title="([^"]{4,160})"') }
         $lm = [regex]::Match($b, 'href="([^"]*/productos/[^"]*)"')
         if (-not $nm.Success) { continue }
-        $disp = $true; if ($b -match 'available&quot;:false|Sin stock|Agotado') { $disp = $false }
+        $disp = $true; $am = [regex]::Match($b, 'available&quot;:(true|false)'); if ($am.Success -and $am.Groups[1].Value -eq 'false') { $disp = $false }
         $out += @{ nombre = (Lib-Txt $nm.Groups[1].Value); precio = [double]$pm.Groups[1].Value; link = $lm.Groups[1].Value; disp = $disp }
       }
     }
