@@ -13,8 +13,6 @@ import android.widget.TextView
 import androidx.activity.ComponentActivity
 import androidx.health.connect.client.HealthConnectClient
 import androidx.health.connect.client.PermissionController
-import androidx.health.connect.client.feature.ExperimentalFeatureAvailabilityApi
-import androidx.health.connect.client.feature.HealthConnectFeatures
 import androidx.work.Constraints
 import androidx.work.ExistingPeriodicWorkPolicy
 import androidx.work.NetworkType
@@ -114,8 +112,8 @@ class MainActivity : ComponentActivity() {
         val st = HealthConnectClient.getSdkStatus(this)
         if (st == HealthConnectClient.SDK_AVAILABLE) {
             client = HealthConnectClient.getOrCreate(this)
-            // Lectura en segundo plano (para la sincronizacion automatica), si este celu la soporta
-            if (segundoPlanoDisponible(client!!)) permisos = permisosBase + HealthPermission.PERMISSION_READ_HEALTH_DATA_IN_BACKGROUND
+            // Lectura en segundo plano (para la sincronizacion automatica)
+            permisos = permisosBase + "android.permission.health.READ_HEALTH_DATA_IN_BACKGROUND"
             // Al abrir la app, si ya hay permisos y dirección, manda solo
             if (!campoPc.text.isNullOrBlank()) programarSync()
             scope.launch { if (!campoPc.text.isNullOrBlank()) sincronizar() }
@@ -125,11 +123,6 @@ class MainActivity : ComponentActivity() {
             log("Este celu no tiene Health Connect. Instalalo desde Play Store ('Health Connect by Android') y volvé a abrir esta app.")
         }
     }
-
-    @OptIn(ExperimentalFeatureAvailabilityApi::class)
-    private fun segundoPlanoDisponible(c: HealthConnectClient): Boolean = try {
-        c.features.getFeatureStatus(HealthConnectFeatures.FEATURE_READ_HEALTH_DATA_IN_BACKGROUND) == HealthConnectFeatures.FEATURE_STATUS_AVAILABLE
-    } catch (e: Throwable) { false }
 
     private fun guardarPc(prefs: android.content.SharedPreferences) {
         prefs.edit().putString("pc", campoPc.text.toString().trim()).apply()
