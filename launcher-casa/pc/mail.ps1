@@ -43,7 +43,68 @@ function Mail-ParseHeaders([string[]]$lines) {
   }
   return $out
 }
-function Mail-Leer([int]$max = 5, [string]$raw = "") {
+
+# ---- Cuerpo del mail (MIME simple: multipart, quoted-printable, base64, html a texto) ----
+function Mail-Bytes([string]$s, [string]$enc, [string]$charset) {
+  $e = [System.Text.Encoding]::UTF8; try { if ($charset) { $e = [System.Text.Encoding]::GetEncoding($charset) } } catch { }
+  $enc = $enc.Trim().ToLower()
+  try {
+    if ($enc -eq "base64") { return $e.GetString([Convert]::FromBase64String(($s -replace "\s", ""))) }
+    if ($enc -eq "quoted-printable") {
+      $t = ($s -replace "=\r?\n", "")
+      $bytes = New-Object System.Collections.Generic.List[byte]
+      for ($i = 0; $i -lt $t.Length; $i++) {
+        if ($t[$i] -eq "=" -and $i + 2 -lt $t.Length + 0 -and $t.Substring($i + 1, 2) -match "^[0-9A-Fa-f]{2}$") { $bytes.Add([Convert]::ToByte($t.Substring($i + 1, 2), 16)); $i += 2 }
+        else { foreach ($b in [System.Text.Encoding]::UTF8.GetBytes([string]$t[$i])) { $bytes.Add($b) } }
+      }
+      return $e.GetString($bytes.ToArray())
+    }
+  } catch { }
+  return $s
+}
+function Mail-HtmlATexto([string]$h) {
+  $h = [regex]::Replace($h, "(?is)<(style|script|head)[^>]*>.*?</\1>", " ")
+  $h = [regex]::Replace($h, "(?i)<\s*(br|/p|/div|/tr|/li|/h\d)[^>]*>", " ")
+  $h = [regex]::Replace($h, "<[^>]+>", " ")
+  return [System.Net.WebUtility]::HtmlDecode($h)
+}
+function Mail-Hdr([string]$hdrs, [string]$nombre) {
+  $m = [regex]::Match(($hdrs -replace "\r?\n[ \t]+", " "), "(?im)^" + $nombre + ":\s*(.*)$")
+  if ($m.Success) { return $m.Groups[1].Value.Trim() }; return ""
+}
+# Devuelve @{ tipo = "plain"|"html"; texto = ... } o $null
+function Mail-Parte([string]$raw, [int]$prof = 0) {
+  $raw = $raw -replace "\r\n", "`n"
+  $i = $raw.IndexOf("`n`n"); if ($i -lt 0) { return $null }
+  $h = $raw.Substring(0, $i); $b = $raw.Substring($i + 2)
+  $ct = Mail-Hdr $h "Content-Type"; $cte = Mail-Hdr $h "Content-Transfer-Encoding"
+  $cs = ""; $mc = [regex]::Match($ct, "(?i)charset=""?([\w\-]+)"); if ($mc.Success) { $cs = $mc.Groups[1].Value }
+  if ($ct -match "(?i)multipart/" -and $prof -lt 4) {
+    $mb = [regex]::Match($ct, "(?i)boundary=""?([^"";\s]+)"); if (-not $mb.Success) { return $null }
+    $bd = [regex]::Escape("--" + $mb.Groups[1].Value)
+    $plain = $null; $html = $null
+    foreach ($pt in ($b -split ("(?m)^" + $bd + "(?:--)?\s*$"))) {
+      if ($pt.Trim().Length -eq 0) { continue }
+      $r = Mail-Parte ($pt.TrimStart("`n")) ($prof + 1)
+      if ($r) { if ($r.tipo -eq "plain" -and -not $plain) { $plain = $r } elseif ($r.tipo -eq "html" -and -not $html) { $html = $r } }
+    }
+    if ($plain) { return $plain }; return $html
+  }
+  if ($ct -and $ct -notmatch "(?i)^text/") { return $null }
+  if ($h -match "(?im)^Content-Disposition:\s*attachment") { return $null }
+  $t = Mail-Bytes $b $cte $cs
+  if ($ct -match "(?i)text/html") { return @{ tipo = "html"; texto = (Mail-HtmlATexto $t) } }
+  return @{ tipo = "plain"; texto = $t }
+}
+function Mail-Limpia([string]$t, [int]$max) {
+  $t = [regex]::Replace($t, "https?://\S+", " ")
+  $t = [regex]::Replace($t, "(?m)^>.*$", " ")
+  $t = [regex]::Replace($t, "[​-‏­﻿͏]", "")
+  $t = ($t -replace "\s+", " ").Trim()
+  if ($t.Length -gt $max) { $c = $t.Substring(0, $max); $k = $c.LastIndexOfAny([char[]]@('.', '!', '?')); if ($k -gt $max * 0.5) { $c = $c.Substring(0, $k + 1) } else { $c = $c.TrimEnd() + "..." }; return $c }
+  return $t
+}
+function Mail-Leer([int]$max = 5, [string]$raw = "", [bool]$cuerpo = $false) {
   $c = Mail-Cfg; if (-not $c) { throw "sin-config" }
   $tcp = New-Object System.Net.Sockets.TcpClient; $tcp.ReceiveTimeout = 15000; $tcp.SendTimeout = 15000
   $tcp.Connect("imap.gmail.com", 993)
@@ -65,8 +126,13 @@ function Mail-Leer([int]$max = 5, [string]$raw = "") {
     $ult = @($ids | Select-Object -Last $max)
     $mails = @()
     if ($ult.Count -gt 0) { $f = Cmd ("FETCH " + ($ult -join ",") + " (BODY.PEEK[HEADER.FIELDS (FROM SUBJECT DATE)])"); $mails = @(Mail-ParseHeaders $f); [array]::Reverse($mails) }
+    $txt = $null
+    if ($cuerpo -and $ult.Count -gt 0) {
+      $f2 = Cmd ("FETCH " + $ult[-1] + " (BODY.PEEK[]<0.80000>)")
+      if ($f2.Count -gt 2) { $txt = Mail-Parte (($f2[1..($f2.Count - 3)]) -join "`n") }
+    }
     $null = Cmd "LOGOUT"
-    return @{ total = $total; mails = $mails }
+    return @{ total = $total; mails = $mails; cuerpo = $txt }
   } finally { try { $tcp.Close() } catch { } }
 }
 function Mail-Decide([string]$said, [string]$speaker) {
@@ -82,6 +148,24 @@ function Mail-Decide([string]$said, [string]$speaker) {
   if ($mm.Success) {
     $cand = $mm.Groups[1].Value.Trim()
     if ($cand -and $cand -notmatch "^(hoy|ayer|ahora|la|el|los|las|mi|mis|este|esta|esa|ese|aca|casa)\b") { $remit = $cand }
+  }
+  # Leer el contenido: "leeme el ultimo mail", "que dice el ultimo mail de Shein"
+  if ($n -match "\b(lee|lees|leeme|leer|que dice|de que (?:trata|habla)|contenido|el texto|el cuerpo)\b" -and $n -match "\b(ultimo|ultima|mail|correo|email)\b") {
+    $q = "in:inbox"; if ($remit) { $q = '(from:"' + $remit + '" OR from:' + ($remit -replace " ", "") + ')' }
+    if ($n -match "sin leer|nuevos?\b") { $q += " is:unread" }
+    try { $rr = Mail-Leer 1 $q $true } catch {
+      if ($_.Exception.Message -eq "login") { return (Mail-Say "Gmail rechazó el usuario o la contraseña de aplicación. Revise el archivo mail-config.json.") }
+      return (Mail-Say "No pude conectarme a Gmail. Revise que la PC tenga internet.")
+    }
+    if ($rr.total -eq 0 -or @($rr.mails).Count -eq 0) { return (Mail-Say ("No encontré ese mail" + $(if ($remit) { " de " + $remit }) + ".")) }
+    $m = $rr.mails[0]
+    $cab = "Mail de " + $m.de + ", asunto: " + $m.asunto + "."
+    if (-not $rr.cuerpo -or -not $rr.cuerpo.texto) { return (Mail-Say ($cab + " No pude leer el texto, puede ser solo una imagen o un adjunto.")) }
+    $voz = Mail-Limpia $rr.cuerpo.texto 450
+    if (-not $voz) { return (Mail-Say ($cab + " El mail no tiene texto para leer.")) }
+    $disp = Mail-Limpia $rr.cuerpo.texto 1500
+    return @{ ok = $true; action = "say"; reply = ($cab + " Dice: " + $voz); display = ($cab + "`
+" + $disp) }
   }
   if ($remit) {
     $q = '(from:"' + $remit + '" OR from:' + ($remit -replace " ", "") + ')'
