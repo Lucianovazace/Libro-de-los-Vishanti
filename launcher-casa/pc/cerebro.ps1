@@ -51,6 +51,8 @@ $osPath = Join-Path $root "obrassociales.ps1"
 if (Test-Path $osPath) { . $osPath }
 $comPath = Join-Path $root "comidas.ps1"
 if (Test-Path $comPath) { . $comPath }
+$igPath = Join-Path $root "instagram.ps1"
+if (Test-Path $igPath) { . $igPath }
 $mailPath = Join-Path $root "mail.ps1"
 if (Test-Path $mailPath) { . $mailPath }
 $salPath = Join-Path $root "salud.ps1"
@@ -313,6 +315,8 @@ function Decide([string]$said, [string]$device, [string]$speaker) {
   # 1e3) Gustos de cine (Letterboxd; solo Luciano)
   if (Get-Command Gustos-Decide -ErrorAction SilentlyContinue) { $gus = $null; try { $gus = Gustos-Decide $said $speaker } catch { Write-Host ("Gustos: " + $_.Exception.Message) }; if ($gus) { return $gus } }
 
+  # 1e3a) Instagram (seguidores desde la exportacion oficial; solo Luciano)
+  if (Get-Command Ig-Decide -ErrorAction SilentlyContinue) { $igr = $null; try { $igr = Ig-Decide $said $speaker } catch { Write-Host ("Instagram: " + $_.Exception.Message) }; if ($igr) { return $igr } }
   # 1e3) Correo (Gmail por IMAP, solo lectura; solo Luciano)
   if (Get-Command Mail-Decide -ErrorAction SilentlyContinue) { $mai = $null; try { $mai = Mail-Decide $said $speaker } catch { Write-Host ("Mail: " + $_.Exception.Message) }; if ($mai) { return $mai } }
   # 1e4) Comidas (registro por voz; solo Luciano)
