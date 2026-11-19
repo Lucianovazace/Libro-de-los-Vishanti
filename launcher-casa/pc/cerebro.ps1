@@ -6,6 +6,16 @@ try { [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::
 $port = 5003
 $root = Split-Path -Parent $MyInvocation.MyCommand.Path
 $data = Join-Path $root "datos"
+# Arranque de la voz: si el servidor de voz (puerto 5002) no esta abierto, lo levanta desde aca (no usa .bat, que Windows a veces bloquea)
+try {
+  $vozOk = $false
+  try { $tc = New-Object System.Net.Sockets.TcpClient; $iar = $tc.BeginConnect("127.0.0.1", 5002, $null, $null); if ($iar.AsyncWaitHandle.WaitOne(800) -and $tc.Connected) { $vozOk = $true }; $tc.Close() } catch { }
+  $vozPs = Join-Path $root "voz-servidor.ps1"
+  if (-not $vozOk -and (Test-Path $vozPs)) {
+    Start-Process -FilePath "powershell.exe" -ArgumentList @("-NoProfile", "-ExecutionPolicy", "Bypass", "-File", ('"' + $vozPs + '"')) -WorkingDirectory $root -WindowStyle Minimized
+    Write-Host "Voz de MIA: la arranque desde el cerebro."
+  }
+} catch { Write-Host ("No pude arrancar la voz: " + $_.Exception.Message) }
 New-Item -ItemType Directory -Force -Path $data | Out-Null
 $llm = $env:MIA_LLM; if (-not $llm) { $llm = "http://127.0.0.1:8080" }
 $weatherBase = $env:MIA_WEATHER; if (-not $weatherBase) { $weatherBase = "https://api.open-meteo.com/v1/forecast" }
