@@ -51,6 +51,7 @@ form button{width:48px;height:48px;border:0;background:var(--blue);color:#fff;di
 #vp input{height:48px;border:0;border-bottom:2px solid #fff;background:var(--field);color:var(--fg);font:inherit;font-size:16px;padding:0 12px;border-radius:0;margin-bottom:8px}
 #vl{flex:1;overflow-y:auto;display:flex;flex-direction:column;gap:2px}
 #vl button{text-align:left;background:#1b1b1d}
+#card .portada{float:right;width:64px;height:auto;margin:0 0 6px 10px;border-radius:3px;box-shadow:0 2px 6px rgba(0,0,0,.4)}
 #card .note{margin-top:6px;font-size:12px;opacity:.85}
 #foot{position:fixed;left:16px;right:16px;bottom:12px;font-size:11px;color:var(--muted);line-height:1.3}
 #tip{position:fixed;z-index:5;display:none;pointer-events:none;background:rgba(0,0,0,.88);border-left:3px solid #19c3ff;padding:6px 10px;font-size:13px;line-height:1.3;max-width:240px}
@@ -434,13 +435,27 @@ form button{width:48px;height:48px;border:0;background:var(--blue);color:#fff;di
     var h=0; for(var i=0;i<str.length;i++) h=(h*31+str.charCodeAt(i))|0;
     var c=new THREE.Color(); c.setHSL(((h>>>0)%360)/360,0.45,0.42); return c;
   }
+  var texCache={};
+  function coverTex(u){
+    if(texCache[u]) return texCache[u];
+    var t=new THREE.TextureLoader().load(u,function(){ if(typeof renderer!=='undefined'&&typeof scene!=='undefined'&&typeof camera!=='undefined') renderer.render(scene,camera); });
+    if(THREE.sRGBEncoding) t.encoding=THREE.sRGBEncoding; else if(THREE.SRGBColorSpace) t.colorSpace=THREE.SRGBColorSpace;
+    texCache[u]=t; return t;
+  }
   function redrawBooks(){
     while(booksG.children.length){ var o=booksG.children.pop(); if(o.geometry) o.geometry.dispose(); if(o.material) o.material.dispose(); }
     for(var r=1;r<=SHELF.rows;r++){
       var list=COMICS.filter(function(c){return c.shelf===r;});
       var floorY=shelfCell(r,1).floor, n=Math.min(list.length,18);
       var span=SHELF.W-2*SHELF.t-0.06, step=Math.min(0.045,span/Math.max(n,1)), x0=-((n-1)*step)/2;
+      var sp=0;
       for(var i=0;i<n;i++){
+        if(list[i].img){
+          var cw=0.13, ch=0.2, w=new THREE.MeshStandardMaterial({color:0x222222,roughness:0.8});
+          var fm=new THREE.MeshStandardMaterial({map:coverTex(list[i].img),roughness:0.7});
+          var cb=new THREE.Mesh(new THREE.BoxGeometry(cw,ch,0.025),[w,w,w,w,fm,w]);
+          cb.position.set(-SHELF.W/2+SHELF.t+0.05+cw/2+sp,floorY+ch/2+0.005,0.06); cb.rotation.y=((i%3)-1)*0.04; booksG.add(cb); sp+=cw+0.012; continue;
+        }
         var hh=0.2+((i*7)%4)*0.012;
         var b=new THREE.Mesh(new THREE.BoxGeometry(step*0.82,hh,0.17),new THREE.MeshStandardMaterial({color:hashColor(list[i].t),roughness:0.8}));
         b.position.set(x0+i*step,floorY+hh/2+0.005,0); booksG.add(b);
@@ -448,6 +463,11 @@ form button{width:48px;height:48px;border:0;background:var(--blue);color:#fff;di
     }
   }
   var COMICS=[
+    {t:'Percy Jackson y El Ladrón del Rayo',shelf:1,img:'portadas/percy-1-ladron-del-rayo.webp'},
+    {t:'Percy Jackson y El Mar de los Monstruos',shelf:1,img:'portadas/percy-2-mar-de-los-monstruos.webp'},
+    {t:'Percy Jackson y La Maldición del Titán',shelf:1,img:'portadas/percy-3-maldicion-del-titan.webp'},
+    {t:'Percy Jackson y La Batalla del Laberinto',shelf:1,img:'portadas/percy-4-batalla-del-laberinto.webp'},
+    {t:'Percy Jackson y El Último Héroe del Olimpo',shelf:1,img:'portadas/percy-5-ultimo-heroe-del-olimpo.webp'},
     {t:'Secret Wars #1 (1 de 3)',shelf:5},
     {t:'Secret Wars #2 (2 de 3)',shelf:5},
     {t:'Secret Wars #16 (3 de 3)',shelf:5}
@@ -577,7 +597,7 @@ form button{width:48px;height:48px;border:0;background:var(--blue);color:#fff;di
   // ---------- Interfaz ----------
   function rebuildComicItems(){
     for(var i=ITEMS.length-1;i>=0;i--){ if(ITEMS[i].comic) ITEMS.splice(i,1); }
-    COMICS.forEach(function(c){ ITEMS.push({n:c.t,t:['comic','comics','cómic','cómics','historieta','tomo'],c:'biblio_'+c.shelf,ej:false,comic:true}); });
+    COMICS.forEach(function(c){ ITEMS.push({n:c.t,t:c.img?['libro','libros','novela','percy jackson','saga']:['comic','comics','cómic','cómics','historieta','tomo'],c:'biblio_'+c.shelf,ej:false,comic:true,img:c.img}); });
   }
   rebuildComicItems(); redrawBooks();
   var chips=document.getElementById('chips'), card=document.getElementById('card'), q=document.getElementById('q'), selected=null;
@@ -621,7 +641,10 @@ form button{width:48px;height:48px;border:0;background:var(--blue);color:#fff;di
     document.getElementById('ck').textContent=dv?'Dispositivo':'Encontrado';
     document.getElementById('cn').textContent=it.n;
     document.getElementById('cw').textContent=dv?dv.status:c.where;
-    document.getElementById('cx').textContent=dv?c.where:(it.ej?'Ejemplo inventado para la vista previa.':(it.comic?'Cómic de tu colección (Marvel, último estante).':'Posición aproximada según tus fotos.'));
+    document.getElementById('cx').textContent=dv?c.where:(it.ej?'Ejemplo inventado para la vista previa.':(it.comic?(it.img?'Libro de tu biblioteca.':'Cómic de tu colección (Marvel, último estante).'):'Posición aproximada según tus fotos.'));
+    var pi=document.getElementById('cp');
+    if(!pi){ pi=document.createElement('img'); pi.id='cp'; pi.className='portada'; pi.alt=''; card.insertBefore(pi,card.firstChild); }
+    if(it.img){ pi.src=it.img; pi.hidden=false; } else { pi.hidden=true; }
     card.hidden=false; updateView(it.c); renderChips(match(q.value));
   }
   function notFound(text){
@@ -649,8 +672,8 @@ form button{width:48px;height:48px;border:0;background:var(--blue);color:#fff;di
     COMICS.length=0;
     o.objetos.forEach(function(x){
       if(!comps[x.c]) return;
-      ITEMS.push({n:x.n,t:x.t||[],c:x.c,ej:!!x.ej,comic:!!x.comic});
-      if(x.comic){ var m=/^biblio_(\d+)$/.exec(x.c); if(m) COMICS.push({t:x.n,shelf:parseInt(m[1],10)}); }
+      ITEMS.push({n:x.n,t:x.t||[],c:x.c,ej:!!x.ej,comic:!!x.comic,img:x.img});
+      if(x.comic){ var m=/^biblio_(\d+)$/.exec(x.c); if(m) COMICS.push({t:x.n,shelf:parseInt(m[1],10),img:x.img}); }
     });
     redrawBooks(); renderChips(match(q.value));
     var ft=document.getElementById('foot'); if(ft) ft.textContent='Datos cargados desde la PC de MIA (datos\\objetos.json). Los marcados "ej." son de ejemplo.';

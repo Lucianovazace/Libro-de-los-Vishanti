@@ -463,6 +463,12 @@ while ($true) {
       if (Test-Path $of) { Send-Response $stream 200 "application/json; charset=utf-8" ([System.IO.File]::ReadAllBytes($of)) }
       else { Send-Response $stream 404 "text/plain" ($ascii.GetBytes("falta datos\objetos.json")) }
     }
+    elseif ($first -like "GET /buscador/portadas/*") {
+      $pn = ($first -split " ")[1]; $pn = ($pn -split "/")[-1]; $pn = ($pn -split "\?")[0]
+      $pf = Join-Path (Join-Path (Join-Path $root "buscador") "portadas") $pn
+      if (($pn -match "^[A-Za-z0-9._-]+\.(webp|jpg|png)$") -and (Test-Path $pf)) { Send-Response $stream 200 "image/webp" ([System.IO.File]::ReadAllBytes($pf)) }
+      else { Send-Response $stream 404 "text/plain" ($ascii.GetBytes("no hay portada")) }
+    }
     elseif ($first -like "GET /buscador*") {
       $hf = Join-Path (Join-Path $root "buscador") "index.html"
       if (Test-Path $hf) { Send-Response $stream 200 "text/html; charset=utf-8" ([System.IO.File]::ReadAllBytes($hf)) }
