@@ -34773,8 +34773,10 @@ function bgTextoCompartir() {
 // La grilla se genera con una semilla (fecha + categoría), así es la misma para todos. Las palabras salen de WORDLE_PALABRAS
 // (5 o 6 letras). Las pistas se arman solo con datos cargados: el nombre completo con la palabra tapada (ej. "_____ Allen") o,
 // si el nombre es la palabra sola, tipo · equipo · universo. Se acepta cualquier palabra que cumpla exactamente la misma pista.
-const CW_NIVELES = { facil: { txt: 'Fácil', max: 10, tam: 13, sem: 1 }, medio: { txt: 'Medio', max: 14, tam: 15, sem: 2 }, dificil: { txt: 'Difícil', max: 20, tam: 19, sem: 3 } };
+const CW_NIVELES = { facil: { txt: 'Fácil', max: 14, tam: 17, sem: 1 }, medio: { txt: 'Medio', max: 20, tam: 21, sem: 2 }, dificil: { txt: 'Difícil', max: 28, tam: 25, sem: 3 } };
 const CW_ES_HEROE = p => p.tipo !== 'Villano';
+// Pokémon: se priorizan los Pokémon; entrenadores, líderes, campeones y villanos humanos entran como mucho 2 por grilla en "Todo".
+const CW_PK_HUMANO = p => /Entrenador|Líder|Campe|Profesor|Alto Mando|Villano/.test(p.tipo);
 const CW_EQ = (re) => p => re.test(p.equipo);
 const CW_TEMAS = {
     mdc: [
@@ -34806,6 +34808,17 @@ const CW_TEMAS = {
         { id: 'casas', txt: 'Casas de Hogwarts', f: CW_EQ(/Gryffindor|Slytherin|Hufflepuff|Ravenclaw|Weasley/) },
         { id: 'profes', txt: 'Profesores y fantasmas', f: CW_EQ(/Profesores|Fantasmas|Fundadores/) },
         { id: 'oscuros', txt: 'Villanos', f: p => p.tipo === 'Villano' }
+    ],
+    pk: [
+        { id: 'todo', txt: 'Todo (pocos entrenadores)', f: () => true, humano: CW_PK_HUMANO, maxHum: 2 },
+        { id: 'kanto', txt: 'Kanto (1.ª gen)', f: CW_EQ(/Kanto/) },
+        { id: 'johto', txt: 'Johto (2.ª gen)', f: CW_EQ(/Johto/) },
+        { id: 'hoenn', txt: 'Hoenn (3.ª gen)', f: CW_EQ(/Hoenn/) },
+        { id: 'sinnoh', txt: 'Sinnoh (4.ª gen)', f: CW_EQ(/Sinnoh/) },
+        { id: 'teselia', txt: 'Teselia (5.ª gen)', f: CW_EQ(/Teselia/) },
+        { id: 'gen6a9', txt: 'Kalos, Alola, Galar y Paldea', f: CW_EQ(/Kalos|Alola|Galar|Paldea/) },
+        { id: 'legendarios', txt: 'Legendarios y Míticos', f: CW_EQ(/Legendarios/) },
+        { id: 'humanos', txt: 'Entrenadores, líderes y villanos', f: CW_PK_HUMANO }
     ],
     dr: [
         { id: 'todo', txt: 'Todo', f: () => true },
@@ -34911,12 +34924,17 @@ function cwPistaDe(p) {
 }
 
 function cwGenerar(pool, rng, CW_TAM, CW_MAX_PALABRAS) {
+    const tema = cwTemaObj();
+    const esHum = tema.humano || (() => false);
+    const maxHum = tema.maxHum === undefined ? Infinity : tema.maxHum;
     let mejor = null;
     for (let intento = 0; intento < 40; intento++) {
         const orden = conBarajar(pool, rng);
         const g = {};
         const col = [];
         const claves = new Set();
+        const cuenta = {};   // cuántas veces aparece una misma pista genérica (máximo 2 por grilla)
+        let humanos = 0;
         const puede = (w, r, c, h) => {
             const dr = h ? 0 : 1, dc = h ? 1 : 0;
             if (g[(r - dr) + ',' + (c - dc)] || g[(r + dr * w.length) + ',' + (c + dc * w.length)]) return false;
@@ -34934,14 +34952,15 @@ function cwGenerar(pool, rng, CW_TAM, CW_MAX_PALABRAS) {
             const dr = h ? 0 : 1, dc = h ? 1 : 0;
             for (let i = 0; i < it.palabra.length; i++) g[(r + dr * i) + ',' + (c + dc * i)] = it.palabra[i];
             col.push({ it, r, c, h });
-            claves.add(cwPistaDe(it));
+            if (esHum(it)) humanos++;
+            cuenta[cwPistaDe(it)] = (cuenta[cwPistaDe(it)] || 0) + 1;
             if (it.pistaFija) claves.add('P:' + it.nombre + '|' + it.equipo);
         };
         const p0 = orden[0];
         poner(p0, Math.floor(CW_TAM / 2), Math.floor((CW_TAM - p0.palabra.length) / 2), true);
         for (let k = 1; k < orden.length && col.length < CW_MAX_PALABRAS; k++) {
             const it = orden[k], w = it.palabra;
-            if (claves.has(cwPistaDe(it)) || (it.pistaFija && claves.has('P:' + it.nombre + '|' + it.equipo)) || col.some(x => x.it.palabra === w)) continue;
+            if ((esHum(it) && humanos >= maxHum) || (cuenta[cwPistaDe(it)] || 0) >= 2 || (it.pistaFija && claves.has('P:' + it.nombre + '|' + it.equipo)) || col.some(x => x.it.palabra === w)) continue;
             const cand = [];
             col.forEach(x => {
                 for (let i = 0; i < x.it.palabra.length; i++) for (let j = 0; j < w.length; j++) {
@@ -35075,7 +35094,7 @@ function cwDibujar() {
     const cont = document.getElementById('cw-grilla');
     if (!cont || !cwPuzzle) return;
     const ancho = Math.min(window.innerWidth - 24, 900);
-    cont.style.setProperty('--cw-tam', Math.max(18, Math.min(38, Math.floor(ancho / cwPuzzle.cols) - 2)) + 'px');
+    cont.style.setProperty('--cw-tam', Math.max(22, Math.min(38, Math.floor(ancho / cwPuzzle.cols) - 2)) + 'px');
     cont.style.setProperty('--cw-cols', cwPuzzle.cols);
     cont.innerHTML = '';
     const activa = cwEntradaSel();

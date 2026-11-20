@@ -2244,3 +2244,6 @@ h2 {
 .cw-celda.cw-ok { background: #2e7d32; border-color: #2e7d32; }
 .cw-celda.cw-ok.cw-sel { border-color: #f5a623; }
 .cw-celda.cw-ok.cw-fija .cw-letra { color: #f5a623; }
+.cw-grilla { max-width: 100%; overflow-x: auto; justify-content: safe center; }
+#cw-temas, #cw-juego .wordle-niveles { gap: 6px; }
+#cw-temas .cw-tema, #cw-juego .cw-nivel { width: auto; flex: 0 0 auto; padding: 6px 10px; font-size: 0.8rem; min-width: 0; }
