@@ -34773,13 +34773,13 @@ function bgTextoCompartir() {
 // La grilla se genera con una semilla (fecha + categoría), así es la misma para todos. Las palabras salen de WORDLE_PALABRAS
 // (5 o 6 letras). Las pistas se arman solo con datos cargados: el nombre completo con la palabra tapada (ej. "_____ Allen") o,
 // si el nombre es la palabra sola, tipo · equipo · universo. Se acepta cualquier palabra que cumpla exactamente la misma pista.
-const CW_NIVELES = { facil: { txt: 'Fácil', max: 8, tam: 11, sem: 1 }, medio: { txt: 'Medio', max: 11, tam: 13, sem: 2 }, dificil: { txt: 'Difícil', max: 16, tam: 17, sem: 3 } };
+const CW_NIVELES = { facil: { txt: 'Fácil', max: 10, tam: 13, sem: 1 }, medio: { txt: 'Medio', max: 14, tam: 15, sem: 2 }, dificil: { txt: 'Difícil', max: 20, tam: 19, sem: 3 } };
 const CW_ES_HEROE = p => p.tipo !== 'Villano';
 const CW_EQ = (re) => p => re.test(p.equipo);
 const CW_TEMAS = {
     mdc: [
         { id: 'todo', txt: 'Todo', f: () => true },
-        { id: 'marvel', txt: 'Marvel', f: p => p.universo === 'Marvel' },
+        { id: 'marvel', txt: 'Marvel (todo)', f: p => p.universo === 'Marvel' },
         { id: 'dc', txt: 'DC', f: p => p.universo === 'DC' },
         { id: 'heroes', txt: 'Héroes y aliados', f: CW_ES_HEROE },
         { id: 'villanos', txt: 'Villanos', f: p => p.tipo === 'Villano' },
@@ -34788,7 +34788,8 @@ const CW_TEMAS = {
         { id: 'spiderman', txt: 'Spider-Man y simbiontes', f: CW_EQ(/Spider-Man|Simbiontes/) },
         { id: 'batman', txt: 'Batman y Gotham', f: CW_EQ(/Bat|Gotham/) },
         { id: 'liga', txt: 'Liga de la Justicia y más DC', f: p => p.universo === 'DC' && !/Bat|Gotham/.test(p.equipo) },
-        { id: 'cosmico', txt: 'Cósmico (Marvel y DC)', f: CW_EQ(/Cósmicos|Guardianes|Inhumanos|Eternos|Nuevos Dioses|Green Lantern/) }
+        { id: 'cosmico', txt: 'Cósmico (Marvel y DC)', f: CW_EQ(/Cósmicos|Guardianes|Inhumanos|Eternos|Nuevos Dioses|Green Lantern/) },
+        { id: 'mcu', txt: 'Marvel: MCU (películas y series)', pool: () => cwPoolMCU() }
     ],
     sw: [
         { id: 'todo', txt: 'Todo', f: () => true },
@@ -34841,10 +34842,41 @@ function cwPoolCat() {
     cwPoolCache[ck] = lista;
     return lista;
 }
-function cwPool() { const f = cwTemaObj().f; return cwPoolCat().filter(f); }
+function cwPool() { const t = cwTemaObj(); return t.pool ? t.pool() : cwPoolCat().filter(t.f); }
+
+// Pool del MCU: personajes del reparto de las películas y series del MCU cargadas en el sitio (REPARTO_PELICULAS).
+// La respuesta es una palabra de 5 o 6 letras del nombre del personaje; la pista usa solo datos del reparto:
+// el personaje con esa palabra tapada, el actor y la obra.
+const CW_MCU_PROHIBIDAS = new Set(['doctor', 'doctora', 'agente', 'capitan', 'senor', 'senora', 'hombre', 'mujer', 'joven', 'soldado', 'reina', 'padre', 'madre', 'lord', 'general', 'oficial', 'profesor', 'abuela', 'abuelo', 'sargento', 'guardia', 'voces', 'extra']);
+let cwPoolMCUCache = null;
+function cwPoolMCU() {
+    if (cwPoolMCUCache) return cwPoolMCUCache;
+    const lista = [];
+    const vistos = new Set();
+    listaMedia.forEach(m => {
+        if (!m.fichaTecnicaId || (m.categoria !== 'mcu-infinito' && m.categoria !== 'mcu-multiverso')) return;
+        const r = REPARTO_PELICULAS[m.fichaTecnicaId];
+        if (!r || !r.elenco) return;
+        r.elenco.forEach(e => {
+            if (!e.actor || !e.personaje) return;
+            const partes = String(e.personaje).split(/(\s+|[()\/,.&-]+)/);
+            partes.forEach(tok => {
+                if (!/^[A-ZÁÉÍÓÚÑ]/.test(tok)) return;
+                const w = conNorm(tok);
+                if (!/^[a-z]{5,6}$/.test(w) || CW_MCU_PROHIBIDAS.has(w) || vistos.has(w)) return;
+                vistos.add(w);
+                const tapado = partes.map(x => x === tok ? '_'.repeat(w.length) : x).join('').replace(/\s+/g, ' ').trim();
+                lista.push({ palabra: w, nombre: e.personaje, universo: 'Marvel', tipo: 'MCU', equipo: m.titulo, pistaFija: `${tapado} · ${e.actor} en ${m.titulo}` });
+            });
+        });
+    });
+    cwPoolMCUCache = lista;
+    return lista;
+}
 
 // Pista exacta: nombre completo con la palabra tapada, o tipo · equipo · universo si el nombre es la palabra sola.
 function cwPistaDe(p) {
+    if (p.pistaFija) return p.pistaFija;
     const largo = p.palabra.length;
     const nombre = String(p.nombre);
     const tokens = nombre.split(/(\s+|[()\/,.-]+)/);
@@ -34885,12 +34917,13 @@ function cwGenerar(pool, rng, CW_TAM, CW_MAX_PALABRAS) {
             for (let i = 0; i < it.palabra.length; i++) g[(r + dr * i) + ',' + (c + dc * i)] = it.palabra[i];
             col.push({ it, r, c, h });
             claves.add(cwPistaDe(it));
+            if (it.pistaFija) claves.add('P:' + it.nombre + '|' + it.equipo);
         };
         const p0 = orden[0];
         poner(p0, Math.floor(CW_TAM / 2), Math.floor((CW_TAM - p0.palabra.length) / 2), true);
         for (let k = 1; k < orden.length && col.length < CW_MAX_PALABRAS; k++) {
             const it = orden[k], w = it.palabra;
-            if (claves.has(cwPistaDe(it)) || col.some(x => x.it.palabra === w)) continue;
+            if (claves.has(cwPistaDe(it)) || (it.pistaFija && claves.has('P:' + it.nombre + '|' + it.equipo)) || col.some(x => x.it.palabra === w)) continue;
             const cand = [];
             col.forEach(x => {
                 for (let i = 0; i < x.it.palabra.length; i++) for (let j = 0; j < w.length; j++) {
@@ -34920,7 +34953,7 @@ function cwArmar(pool, rng) {
     const celdas = {};
     const entradas = col.map(x => {
         const e = { h: x.h, r: x.r - r0, c: x.c - c0, palabra: x.it.palabra, pista: cwPistaDe(x.it), n: 0 };
-        e.validas = new Set(cwPoolCat().filter(q => q.palabra.length === e.palabra.length && cwPistaDe(q) === e.pista).map(q => q.palabra));
+        e.validas = new Set(cwPoolCat().concat(pool).filter(q => q.palabra.length === e.palabra.length && cwPistaDe(q) === e.pista).map(q => q.palabra));
         for (let i = 0; i < e.palabra.length; i++) celdas[(e.r + (e.h ? 0 : i)) + ',' + (e.c + (e.h ? i : 0))] = e.palabra[i];
         return e;
     });
