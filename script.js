@@ -34773,8 +34773,50 @@ function bgTextoCompartir() {
 // La grilla se genera con una semilla (fecha + categoría), así es la misma para todos. Las palabras salen de WORDLE_PALABRAS
 // (5 o 6 letras). Las pistas se arman solo con datos cargados: el nombre completo con la palabra tapada (ej. "_____ Allen") o,
 // si el nombre es la palabra sola, tipo · equipo · universo. Se acepta cualquier palabra que cumpla exactamente la misma pista.
-const CW_TAM = 13;
-const CW_MAX_PALABRAS = 11;
+const CW_NIVELES = { facil: { txt: 'Fácil', max: 8, tam: 11, sem: 1 }, medio: { txt: 'Medio', max: 11, tam: 13, sem: 2 }, dificil: { txt: 'Difícil', max: 16, tam: 17, sem: 3 } };
+const CW_ES_HEROE = p => p.tipo !== 'Villano';
+const CW_EQ = (re) => p => re.test(p.equipo);
+const CW_TEMAS = {
+    mdc: [
+        { id: 'todo', txt: 'Todo', f: () => true },
+        { id: 'marvel', txt: 'Marvel', f: p => p.universo === 'Marvel' },
+        { id: 'dc', txt: 'DC', f: p => p.universo === 'DC' },
+        { id: 'heroes', txt: 'Héroes y aliados', f: CW_ES_HEROE },
+        { id: 'villanos', txt: 'Villanos', f: p => p.tipo === 'Villano' },
+        { id: 'vengadores', txt: 'Vengadores y Asgard', f: CW_EQ(/Vengadores|Capitán América|Hulk|Asgard|Thor/) },
+        { id: 'xmen', txt: 'X-Men y Wolverine', f: CW_EQ(/X-Men|Wolverine/) },
+        { id: 'spiderman', txt: 'Spider-Man y simbiontes', f: CW_EQ(/Spider-Man|Simbiontes/) },
+        { id: 'batman', txt: 'Batman y Gotham', f: CW_EQ(/Bat|Gotham/) },
+        { id: 'liga', txt: 'Liga de la Justicia y más DC', f: p => p.universo === 'DC' && !/Bat|Gotham/.test(p.equipo) },
+        { id: 'cosmico', txt: 'Cósmico (Marvel y DC)', f: CW_EQ(/Cósmicos|Guardianes|Inhumanos|Eternos|Nuevos Dioses|Green Lantern/) }
+    ],
+    sw: [
+        { id: 'todo', txt: 'Todo', f: () => true },
+        { id: 'heroes', txt: 'Héroes y aliados', f: CW_ES_HEROE },
+        { id: 'villanos', txt: 'Villanos', f: p => p.tipo === 'Villano' },
+        { id: 'rebelion', txt: 'Rebelión y Resistencia', f: CW_EQ(/Rebelión|Resistencia/) },
+        { id: 'jedi', txt: 'Jedi', f: CW_EQ(/Jedi/) },
+        { id: 'imperio', txt: 'Imperio, Sith y Separatistas', f: CW_EQ(/Imperio|Sith|Primera Orden|Separatistas/) },
+        { id: 'mercenarios', txt: 'Cazarrecompensas y crimen', f: CW_EQ(/Cazarrecompensas|Mandalorianos|Crimen/) },
+        { id: 'guerra', txt: 'Guerras Clon (clones, droides)', f: CW_EQ(/Clon|Droides|Separatistas/) }
+    ],
+    hp: [
+        { id: 'todo', txt: 'Todo', f: () => true },
+        { id: 'casas', txt: 'Casas de Hogwarts', f: CW_EQ(/Gryffindor|Slytherin|Hufflepuff|Ravenclaw|Weasley/) },
+        { id: 'profes', txt: 'Profesores y fantasmas', f: CW_EQ(/Profesores|Fantasmas|Fundadores/) },
+        { id: 'oscuros', txt: 'Villanos', f: p => p.tipo === 'Villano' }
+    ],
+    dr: [
+        { id: 'todo', txt: 'Todo', f: () => true },
+        { id: 'hollywood', txt: 'Hollywood', f: CW_EQ(/Hollywood/) },
+        { id: 'europa', txt: 'Cine europeo', f: CW_EQ(/europeo|francés|británico|italiano|español|Nouvelle/) },
+        { id: 'genero', txt: 'Terror, comedia y ciencia ficción', f: CW_EQ(/Terror|Comedia|Ciencia ficción/) }
+    ]
+};
+let cwTema = 'todo';
+let cwNivel = (function () { try { const n = localStorage.getItem('cw-nivel'); return CW_NIVELES[n] ? n : 'medio'; } catch (e) { return 'medio'; } })();
+function cwTemasDe() { return CW_TEMAS[juegoCat] || [{ id: 'todo', txt: 'Todo', f: () => true }]; }
+function cwTemaObj() { return cwTemasDe().find(t => t.id === cwTema) || cwTemasDe()[0]; }
 let cwModo = 'diaria';
 let cwPuzzle = null;          // { filas, cols, entradas: [{n, h, r, c, palabra, pista, validas}] , celdas: {"r,c": letra} }
 let cwLetras = {};            // "r,c" -> letra escrita
@@ -34785,7 +34827,8 @@ let cwTerminado = false;
 let cwErroneas = {};          // celdas marcadas por "Revisar"
 let cwPoolCache = {};
 
-function cwPool() {
+// Todas las palabras de la categoría (para decidir qué respuestas cumplen una pista).
+function cwPoolCat() {
     const ck = juegoCat;
     if (cwPoolCache[ck]) return cwPoolCache[ck];
     const vistos = new Set();
@@ -34798,6 +34841,7 @@ function cwPool() {
     cwPoolCache[ck] = lista;
     return lista;
 }
+function cwPool() { const f = cwTemaObj().f; return cwPoolCat().filter(f); }
 
 // Pista exacta: nombre completo con la palabra tapada, o tipo · equipo · universo si el nombre es la palabra sola.
 function cwPistaDe(p) {
@@ -34815,7 +34859,7 @@ function cwPistaDe(p) {
     return `${p.tipo} · ${p.equipo} · ${p.universo}`;
 }
 
-function cwGenerar(pool, rng) {
+function cwGenerar(pool, rng, CW_TAM, CW_MAX_PALABRAS) {
     let mejor = null;
     for (let intento = 0; intento < 40; intento++) {
         const orden = conBarajar(pool, rng);
@@ -34866,7 +34910,8 @@ function cwGenerar(pool, rng) {
 }
 
 function cwArmar(pool, rng) {
-    const col = cwGenerar(pool, rng);
+    const nv = CW_NIVELES[cwNivel];
+    const col = cwGenerar(pool, rng, nv.tam, nv.max);
     let r0 = Infinity, c0 = Infinity, r1 = -1, c1 = -1;
     col.forEach(x => {
         const fin = x.h ? [x.r, x.c + x.it.palabra.length - 1] : [x.r + x.it.palabra.length - 1, x.c];
@@ -34875,7 +34920,7 @@ function cwArmar(pool, rng) {
     const celdas = {};
     const entradas = col.map(x => {
         const e = { h: x.h, r: x.r - r0, c: x.c - c0, palabra: x.it.palabra, pista: cwPistaDe(x.it), n: 0 };
-        e.validas = new Set(pool.filter(q => q.palabra.length === e.palabra.length && cwPistaDe(q) === e.pista).map(q => q.palabra));
+        e.validas = new Set(cwPoolCat().filter(q => q.palabra.length === e.palabra.length && cwPistaDe(q) === e.pista).map(q => q.palabra));
         for (let i = 0; i < e.palabra.length; i++) celdas[(e.r + (e.h ? 0 : i)) + ',' + (e.c + (e.h ? i : 0))] = e.palabra[i];
         return e;
     });
@@ -34900,18 +34945,19 @@ function cwEntradaOk(e) { return e.validas.has(cwEscrita(e)); }
 function cwTodoLleno() { return Object.keys(cwPuzzle.celdas).every(k => cwLetras[k]); }
 function cwResuelto() { return cwPuzzle.entradas.every(cwEntradaOk); }
 
-function cwClaveLocal() { return 'crucigrama-dia' + catSuf(); }
+function cwClaveBase() { return catSuf() + '-' + cwTema + '-' + cwNivel; }
+function cwClaveLocal() { return 'crucigrama-dia' + cwClaveBase(); }
 function cwGuardarLocal() {
     if (cwModo !== 'diaria' || !cwPuzzle) return;
     try { localStorage.setItem(cwClaveLocal(), JSON.stringify({ fecha: wordleFechaHoy(), letras: cwLetras, fijas: cwFijas, pistas: cwPistas, terminado: cwTerminado })); } catch (e) {}
 }
 function cwStats() {
-    try { return JSON.parse(localStorage.getItem('crucigrama-stats' + catSuf()) || 'null') || { jugadas: 0, resueltas: 0, racha: 0, mejor: 0 }; } catch (e) { return { jugadas: 0, resueltas: 0, racha: 0, mejor: 0 }; }
+    try { return JSON.parse(localStorage.getItem('crucigrama-stats' + cwClaveBase()) || 'null') || { jugadas: 0, resueltas: 0, racha: 0, mejor: 0 }; } catch (e) { return { jugadas: 0, resueltas: 0, racha: 0, mejor: 0 }; }
 }
 function cwRegistrarStats() {
     const s = cwStats();
     s.jugadas++; s.resueltas++; s.racha++; s.mejor = Math.max(s.mejor, s.racha);
-    try { localStorage.setItem('crucigrama-stats' + catSuf(), JSON.stringify(s)); } catch (e) {}
+    try { localStorage.setItem('crucigrama-stats' + cwClaveBase(), JSON.stringify(s)); } catch (e) {}
 }
 
 function cwMensaje(t, clase) {
@@ -34924,21 +34970,23 @@ function cwMensaje(t, clase) {
 function cwIniciar(modo) {
     cwModo = modo;
     cwLetras = {}; cwFijas = {}; cwErroneas = {}; cwPistas = 0; cwTerminado = false;
+    if (!cwTemasDe().some(t => t.id === cwTema)) cwTema = 'todo';
+    cwDibujarSelectores();
     const pool = cwPool();
     const sub = document.getElementById('cw-subtitulo');
     const fin = document.getElementById('cw-final');
     if (fin) fin.classList.add('oculto');
-    if (pool.length < 12) { if (sub) sub.textContent = 'No hay suficientes palabras para esta categoría.'; return; }
+    if (pool.length < 12) { if (sub) sub.textContent = 'No hay suficientes palabras para esta categoría.'; const g = document.getElementById('cw-grilla'); if (g) g.innerHTML = ''; cwPuzzle = null; return; }
     if (modo === 'diaria') {
-        cwPuzzle = cwArmar(pool, conRng(conFechaSemilla(CAT_SEMILLA[juegoCat] * 977 + 31)));
+        cwPuzzle = cwArmar(pool, conRng(conFechaSemilla(CAT_SEMILLA[juegoCat] * 977 + 31 + cwTemasDe().findIndex(t => t.id === cwTema) * 7919 + CW_NIVELES[cwNivel].sem * 104729)));
         try {
             const g = JSON.parse(localStorage.getItem(cwClaveLocal()) || 'null');
             if (g && g.fecha === wordleFechaHoy()) { cwLetras = g.letras || {}; cwFijas = g.fijas || {}; cwPistas = g.pistas || 0; cwTerminado = !!g.terminado; }
         } catch (e) {}
-        if (sub) sub.textContent = `Crucigrama del día (${JUEGO_CAT_TXT[juegoCat]}): completá los nombres con las pistas. Cada pista dice cuántas letras tiene.`;
+        if (sub) sub.textContent = `Crucigrama del día (${JUEGO_CAT_TXT[juegoCat]} · ${cwTemaObj().txt} · ${CW_NIVELES[cwNivel].txt}): completá los nombres con las pistas. Cada pista dice cuántas letras tiene.`;
     } else {
         cwPuzzle = cwArmar(pool, conRng((Math.random() * 4294967296) >>> 0));
-        if (sub) sub.textContent = `Crucigrama al azar (${JUEGO_CAT_TXT[juegoCat]}): no se guarda.`;
+        if (sub) sub.textContent = `Crucigrama al azar (${JUEGO_CAT_TXT[juegoCat]} · ${cwTemaObj().txt} · ${CW_NIVELES[cwNivel].txt}): no se guarda.`;
     }
     const primera = cwPuzzle.entradas[0];
     cwSel = { r: primera.r, c: primera.c, h: primera.h };
@@ -34947,9 +34995,31 @@ function cwIniciar(modo) {
     if (cwTerminado) cwMostrarFinal();
 }
 
+function cwDibujarSelectores() {
+    const cont = document.getElementById('cw-temas');
+    if (cont) {
+        cont.innerHTML = '';
+        cwTemasDe().forEach(t => {
+            const b = document.createElement('button');
+            b.type = 'button'; b.className = 'btn-modal cw-tema' + (t.id === cwTema ? ' activo' : ''); b.textContent = t.txt;
+            b.addEventListener('click', () => { cwTema = t.id; cwIniciar('diaria'); });
+            cont.appendChild(b);
+        });
+        cont.classList.toggle('oculto', cwTemasDe().length < 2);
+    }
+    document.querySelectorAll('.cw-nivel').forEach(b => b.classList.toggle('activo', b.dataset.nivel === cwNivel));
+}
+document.querySelectorAll('.cw-nivel').forEach(b => b.addEventListener('click', () => {
+    cwNivel = b.dataset.nivel;
+    try { localStorage.setItem('cw-nivel', cwNivel); } catch (e) {}
+    cwIniciar('diaria');
+}));
+
 function cwDibujar() {
     const cont = document.getElementById('cw-grilla');
     if (!cont || !cwPuzzle) return;
+    const ancho = Math.min(window.innerWidth - 24, 900);
+    cont.style.setProperty('--cw-tam', Math.max(18, Math.min(38, Math.floor(ancho / cwPuzzle.cols) - 2)) + 'px');
     cont.style.setProperty('--cw-cols', cwPuzzle.cols);
     cont.innerHTML = '';
     const activa = cwEntradaSel();
@@ -35113,7 +35183,7 @@ function cwMostrarFinal() {
 }
 
 function cwTextoCompartir() {
-    return `Crucigrama de Personajes${catTitulo()} ✅\n${cwPistas ? '💡'.repeat(Math.min(cwPistas, 10)) + ` ${cwPistas} ${cwPistas === 1 ? 'pista' : 'pistas'}` : '⭐ Sin pistas'}\nEl Multiverso`;
+    return `Crucigrama de Personajes${catTitulo()} (${cwTemaObj().txt}, ${CW_NIVELES[cwNivel].txt}) ✅\n${cwPistas ? '💡'.repeat(Math.min(cwPistas, 10)) + ` ${cwPistas} ${cwPistas === 1 ? 'pista' : 'pistas'}` : '⭐ Sin pistas'}\nEl Multiverso`;
 }
 
 const tarjetaCrucigrama = document.getElementById('tarjeta-crucigrama');

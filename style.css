@@ -2237,4 +2237,7 @@ h2 {
 .cw-pista { padding: 6px 10px; border-radius: 4px; cursor: pointer; color: #ddd; }
 .cw-pista.activo { background: #26364d; color: #fff; }
 .cw-pista.resuelta { text-decoration: line-through; opacity: 0.55; }
-@media (max-width: 600px) { .cw-grilla { --cw-tam: 27px; gap: 1px; } .cw-letra { font-size: 0.95rem; } .cw-num { font-size: 0.5rem; left: 2px; } }
+@media (max-width: 600px) { .cw-grilla { gap: 1px; } .cw-letra { font-size: 0.9rem; } .cw-num { font-size: 0.5rem; left: 2px; } }
+.cw-tema.activo, .cw-nivel.activo { outline: 2px solid #fff; }
+#cw-temas { flex-wrap: wrap; }
+#cw-temas .cw-tema { flex: 0 1 auto; }
