@@ -34767,6 +34767,390 @@ function bgTextoCompartir() {
     return `Bingo del Multiverso (${BG_FUENTES[bgFuente]}, ${BG_MODOS[bgModo]}) ${bgGano ? '🎉 ¡BINGO en ' + bgSalidas + ' bolillas!' : '❌ ' + (bgGanador ? 'Ganó ' + bgGanador : 'sin ganador')}\nEl Multiverso`;
 }
 
+// ==========================================
+// JUEGO "CRUCIGRAMA DE PERSONAJES" (una grilla por día y categoría)
+// ==========================================
+// La grilla se genera con una semilla (fecha + categoría), así es la misma para todos. Las palabras salen de WORDLE_PALABRAS
+// (5 o 6 letras). Las pistas se arman solo con datos cargados: el nombre completo con la palabra tapada (ej. "_____ Allen") o,
+// si el nombre es la palabra sola, tipo · equipo · universo. Se acepta cualquier palabra que cumpla exactamente la misma pista.
+const CW_TAM = 13;
+const CW_MAX_PALABRAS = 11;
+let cwModo = 'diaria';
+let cwPuzzle = null;          // { filas, cols, entradas: [{n, h, r, c, palabra, pista, validas}] , celdas: {"r,c": letra} }
+let cwLetras = {};            // "r,c" -> letra escrita
+let cwFijas = {};             // "r,c" -> true si se reveló con pista
+let cwSel = { r: 0, c: 0, h: true };
+let cwPistas = 0;
+let cwTerminado = false;
+let cwErroneas = {};          // celdas marcadas por "Revisar"
+let cwPoolCache = {};
+
+function cwPool() {
+    const ck = juegoCat;
+    if (cwPoolCache[ck]) return cwPoolCache[ck];
+    const vistos = new Set();
+    const lista = [];
+    WORDLE_PALABRAS.forEach(p => {
+        if (!catDe(p) || !/^[a-z]+$/.test(p.palabra) || vistos.has(p.palabra)) return;
+        vistos.add(p.palabra);
+        lista.push(p);
+    });
+    cwPoolCache[ck] = lista;
+    return lista;
+}
+
+// Pista exacta: nombre completo con la palabra tapada, o tipo · equipo · universo si el nombre es la palabra sola.
+function cwPistaDe(p) {
+    const largo = p.palabra.length;
+    const nombre = String(p.nombre);
+    const tokens = nombre.split(/(\s+|[()\/,.-]+)/);
+    let tapado = false;
+    const partes = tokens.map(t => {
+        if (!tapado && conNorm(t) === p.palabra) { tapado = true; return '_'.repeat(largo); }
+        return t;
+    });
+    if (tapado && conNorm(nombre) !== p.palabra) {
+        return `${partes.join('').replace(/\s+/g, ' ').trim()} (${p.tipo}, ${p.equipo})`;
+    }
+    return `${p.tipo} · ${p.equipo} · ${p.universo}`;
+}
+
+function cwGenerar(pool, rng) {
+    let mejor = null;
+    for (let intento = 0; intento < 40; intento++) {
+        const orden = conBarajar(pool, rng);
+        const g = {};
+        const col = [];
+        const claves = new Set();
+        const get = (r, c) => g[r + ',' + c];
+        const puede = (w, r, c, h) => {
+            const dr = h ? 0 : 1, dc = h ? 1 : 0;
+            if (get((r - dr) + ',' + (c - dc) ) || get((r + dr * w.length) + ',' + (c + dc * w.length))) return false;
+            let cruces = 0;
+            for (let i = 0; i < w.length; i++) {
+                const rr = r + dr * i, cc = c + dc * i;
+                if (rr < 0 || cc < 0 || rr >= CW_TAM || cc >= CW_TAM) return false;
+                const ex = g[rr + ',' + cc];
+                if (ex) { if (ex !== w[i]) return false; cruces++; }
+                else if (g[(rr + dc) + ',' + (cc + dr)] || g[(rr - dc) + ',' + (cc - dr)]) return false;
+            }
+            return cruces === 1;
+        };
+        const poner = (it, r, c, h) => {
+            const dr = h ? 0 : 1, dc = h ? 1 : 0;
+            for (let i = 0; i < it.palabra.length; i++) g[(r + dr * i) + ',' + (c + dc * i)] = it.palabra[i];
+            col.push({ it, r, c, h });
+            claves.add(cwPistaDe(it));
+        };
+        const p0 = orden[0];
+        poner(p0, Math.floor(CW_TAM / 2), Math.floor((CW_TAM - p0.palabra.length) / 2), true);
+        for (let k = 1; k < orden.length && col.length < CW_MAX_PALABRAS; k++) {
+            const it = orden[k], w = it.palabra;
+            if (claves.has(cwPistaDe(it)) || col.some(x => x.it.palabra === w)) continue;
+            const cand = [];
+            col.forEach(x => {
+                for (let i = 0; i < x.it.palabra.length; i++) for (let j = 0; j < w.length; j++) {
+                    if (x.it.palabra[i] !== w[j]) continue;
+                    const h = !x.h;
+                    const rc = x.h ? x.r : x.r + i, cc = x.h ? x.c + i : x.c;
+                    const r0 = h ? rc : rc - j, c0 = h ? cc - j : cc;
+                    if (puede(w, r0, c0, h)) cand.push([r0, c0, h]);
+                }
+            });
+            if (cand.length) { const e = cand[Math.floor(rng() * cand.length)]; poner(it, e[0], e[1], e[2]); }
+        }
+        if (!mejor || col.length > mejor.length) mejor = col;
+        if (col.length >= CW_MAX_PALABRAS) break;
+    }
+    return mejor;
+}
+
+function cwArmar(pool, rng) {
+    const col = cwGenerar(pool, rng);
+    let r0 = Infinity, c0 = Infinity, r1 = -1, c1 = -1;
+    col.forEach(x => {
+        const fin = x.h ? [x.r, x.c + x.it.palabra.length - 1] : [x.r + x.it.palabra.length - 1, x.c];
+        r0 = Math.min(r0, x.r); c0 = Math.min(c0, x.c); r1 = Math.max(r1, fin[0]); c1 = Math.max(c1, fin[1]);
+    });
+    const celdas = {};
+    const entradas = col.map(x => {
+        const e = { h: x.h, r: x.r - r0, c: x.c - c0, palabra: x.it.palabra, pista: cwPistaDe(x.it), n: 0 };
+        e.validas = new Set(pool.filter(q => q.palabra.length === e.palabra.length && cwPistaDe(q) === e.pista).map(q => q.palabra));
+        for (let i = 0; i < e.palabra.length; i++) celdas[(e.r + (e.h ? 0 : i)) + ',' + (e.c + (e.h ? i : 0))] = e.palabra[i];
+        return e;
+    });
+    entradas.sort((a, b) => a.r - b.r || a.c - b.c || (a.h === b.h ? 0 : a.h ? -1 : 1));
+    let n = 0, ult = '';
+    entradas.forEach(e => { const k = e.r + ',' + e.c; if (k !== ult) { n++; ult = k; } e.n = n; });
+    return { filas: r1 - r0 + 1, cols: c1 - c0 + 1, entradas, celdas };
+}
+
+function cwCeldasDe(e) {
+    const l = [];
+    for (let i = 0; i < e.palabra.length; i++) l.push((e.r + (e.h ? 0 : i)) + ',' + (e.c + (e.h ? i : 0)));
+    return l;
+}
+function cwEntradaSel() {
+    const k = cwSel.r + ',' + cwSel.c;
+    return cwPuzzle.entradas.find(e => e.h === cwSel.h && cwCeldasDe(e).includes(k)) || null;
+}
+function cwEntradasDe(k) { return cwPuzzle.entradas.filter(e => cwCeldasDe(e).includes(k)); }
+function cwEscrita(e) { return cwCeldasDe(e).map(k => cwLetras[k] || '').join(''); }
+function cwEntradaOk(e) { return e.validas.has(cwEscrita(e)); }
+function cwTodoLleno() { return Object.keys(cwPuzzle.celdas).every(k => cwLetras[k]); }
+function cwResuelto() { return cwPuzzle.entradas.every(cwEntradaOk); }
+
+function cwClaveLocal() { return 'crucigrama-dia' + catSuf(); }
+function cwGuardarLocal() {
+    if (cwModo !== 'diaria' || !cwPuzzle) return;
+    try { localStorage.setItem(cwClaveLocal(), JSON.stringify({ fecha: wordleFechaHoy(), letras: cwLetras, fijas: cwFijas, pistas: cwPistas, terminado: cwTerminado })); } catch (e) {}
+}
+function cwStats() {
+    try { return JSON.parse(localStorage.getItem('crucigrama-stats' + catSuf()) || 'null') || { jugadas: 0, resueltas: 0, racha: 0, mejor: 0 }; } catch (e) { return { jugadas: 0, resueltas: 0, racha: 0, mejor: 0 }; }
+}
+function cwRegistrarStats() {
+    const s = cwStats();
+    s.jugadas++; s.resueltas++; s.racha++; s.mejor = Math.max(s.mejor, s.racha);
+    try { localStorage.setItem('crucigrama-stats' + catSuf(), JSON.stringify(s)); } catch (e) {}
+}
+
+function cwMensaje(t, clase) {
+    const m = document.getElementById('cw-mensaje');
+    if (!m) return;
+    m.textContent = t || '';
+    m.className = 'mensaje-elenco' + (clase ? ' ' + clase : '');
+}
+
+function cwIniciar(modo) {
+    cwModo = modo;
+    cwLetras = {}; cwFijas = {}; cwErroneas = {}; cwPistas = 0; cwTerminado = false;
+    const pool = cwPool();
+    const sub = document.getElementById('cw-subtitulo');
+    const fin = document.getElementById('cw-final');
+    if (fin) fin.classList.add('oculto');
+    if (pool.length < 12) { if (sub) sub.textContent = 'No hay suficientes palabras para esta categoría.'; return; }
+    if (modo === 'diaria') {
+        cwPuzzle = cwArmar(pool, conRng(conFechaSemilla(CAT_SEMILLA[juegoCat] * 977 + 31)));
+        try {
+            const g = JSON.parse(localStorage.getItem(cwClaveLocal()) || 'null');
+            if (g && g.fecha === wordleFechaHoy()) { cwLetras = g.letras || {}; cwFijas = g.fijas || {}; cwPistas = g.pistas || 0; cwTerminado = !!g.terminado; }
+        } catch (e) {}
+        if (sub) sub.textContent = `Crucigrama del día (${JUEGO_CAT_TXT[juegoCat]}): completá los nombres con las pistas. Cada pista dice cuántas letras tiene.`;
+    } else {
+        cwPuzzle = cwArmar(pool, conRng((Math.random() * 4294967296) >>> 0));
+        if (sub) sub.textContent = `Crucigrama al azar (${JUEGO_CAT_TXT[juegoCat]}): no se guarda.`;
+    }
+    const primera = cwPuzzle.entradas[0];
+    cwSel = { r: primera.r, c: primera.c, h: primera.h };
+    cwMensaje('');
+    cwDibujar();
+    if (cwTerminado) cwMostrarFinal();
+}
+
+function cwDibujar() {
+    const cont = document.getElementById('cw-grilla');
+    if (!cont || !cwPuzzle) return;
+    cont.style.setProperty('--cw-cols', cwPuzzle.cols);
+    cont.innerHTML = '';
+    const activa = cwEntradaSel();
+    const activas = new Set(activa ? cwCeldasDe(activa) : []);
+    const numeros = {};
+    cwPuzzle.entradas.forEach(e => { numeros[e.r + ',' + e.c] = e.n; });
+    for (let r = 0; r < cwPuzzle.filas; r++) for (let c = 0; c < cwPuzzle.cols; c++) {
+        const k = r + ',' + c;
+        const d = document.createElement('div');
+        if (!(k in cwPuzzle.celdas)) { d.className = 'cw-celda cw-vacia'; cont.appendChild(d); continue; }
+        d.className = 'cw-celda';
+        if (activas.has(k)) d.classList.add('cw-activa');
+        if (cwSel.r === r && cwSel.c === c) d.classList.add('cw-sel');
+        if (cwFijas[k]) d.classList.add('cw-fija');
+        if (cwErroneas[k]) d.classList.add('cw-mala');
+        if (numeros[k]) { const n = document.createElement('span'); n.className = 'cw-num'; n.textContent = numeros[k]; d.appendChild(n); }
+        const l = document.createElement('span');
+        l.className = 'cw-letra';
+        l.textContent = (cwLetras[k] || '').toUpperCase();
+        d.appendChild(l);
+        d.addEventListener('click', () => cwClickCelda(r, c));
+        cont.appendChild(d);
+    }
+    ['h', 'v'].forEach(dir => {
+        const ul = document.getElementById(dir === 'h' ? 'cw-lista-h' : 'cw-lista-v');
+        if (!ul) return;
+        ul.innerHTML = '';
+        cwPuzzle.entradas.filter(e => e.h === (dir === 'h')).forEach(e => {
+            const li = document.createElement('li');
+            li.className = 'cw-pista' + (e === activa ? ' activo' : '') + (cwEntradaOk(e) ? ' resuelta' : '');
+            li.textContent = `${e.n}. ${e.pista} (${e.palabra.length})`;
+            li.addEventListener('click', () => {
+                const ks = cwCeldasDe(e);
+                const k = ks.find(x => !cwLetras[x]) || ks[0];
+                const [r, c] = k.split(',').map(Number);
+                cwSel = { r, c, h: e.h };
+                cwDibujar();
+            });
+            ul.appendChild(li);
+        });
+    });
+    const act = document.getElementById('cw-pista-actual');
+    if (act) act.textContent = activa ? `${activa.n} ${activa.h ? 'Horizontal' : 'Vertical'}: ${activa.pista} (${activa.palabra.length} letras)` : '';
+    const tec = document.getElementById('cw-teclado');
+    if (tec) {
+        tec.innerHTML = '';
+        AH_TECLADO.forEach(fila => {
+            const f = document.createElement('div');
+            f.className = 'wordle-fila-teclado';
+            fila.replace('ñ', '').split('').forEach(l => {
+                const b = document.createElement('button');
+                b.type = 'button'; b.className = 'wordle-tecla'; b.textContent = l.toUpperCase();
+                b.disabled = cwTerminado;
+                b.addEventListener('click', () => cwEscribir(l));
+                f.appendChild(b);
+            });
+            tec.appendChild(f);
+        });
+        const f = document.createElement('div');
+        f.className = 'wordle-fila-teclado';
+        const bb = document.createElement('button');
+        bb.type = 'button'; bb.className = 'wordle-tecla ancha'; bb.textContent = '⌫ Borrar'; bb.disabled = cwTerminado;
+        bb.addEventListener('click', cwBorrar);
+        f.appendChild(bb);
+        tec.appendChild(f);
+    }
+}
+
+function cwClickCelda(r, c) {
+    const k = r + ',' + c;
+    if (cwSel.r === r && cwSel.c === c) {
+        const otra = cwEntradasDe(k).find(e => e.h !== cwSel.h);
+        if (otra) cwSel.h = otra.h;
+    } else {
+        const es = cwEntradasDe(k);
+        if (!es.some(e => e.h === cwSel.h)) cwSel.h = es[0].h;
+        cwSel.r = r; cwSel.c = c;
+    }
+    cwDibujar();
+}
+
+function cwMover(paso) {
+    const e = cwEntradaSel();
+    if (!e) return;
+    const ks = cwCeldasDe(e);
+    const i = ks.indexOf(cwSel.r + ',' + cwSel.c) + paso;
+    if (i < 0 || i >= ks.length) return;
+    const [r, c] = ks[i].split(',').map(Number);
+    cwSel.r = r; cwSel.c = c;
+}
+
+function cwEscribir(l) {
+    if (cwTerminado || !cwPuzzle) return;
+    const k = cwSel.r + ',' + cwSel.c;
+    if (cwFijas[k]) { cwMover(1); cwDibujar(); return; }
+    cwLetras[k] = l;
+    delete cwErroneas[k];
+    cwMover(1);
+    cwMensaje('');
+    cwDibujar();
+    cwGuardarLocal();
+    cwVerificarFin();
+}
+
+function cwBorrar() {
+    if (cwTerminado || !cwPuzzle) return;
+    let k = cwSel.r + ',' + cwSel.c;
+    if (!cwLetras[k] || cwFijas[k]) { cwMover(-1); k = cwSel.r + ',' + cwSel.c; }
+    if (!cwFijas[k]) { delete cwLetras[k]; delete cwErroneas[k]; }
+    cwDibujar();
+    cwGuardarLocal();
+}
+
+function cwVerificarFin() {
+    if (!cwTodoLleno()) return;
+    if (cwResuelto()) {
+        cwTerminado = true;
+        if (cwModo === 'diaria') cwRegistrarStats();
+        cwGuardarLocal();
+        cwDibujar();
+        cwMostrarFinal();
+    } else {
+        cwMensaje('La grilla está llena pero hay letras incorrectas. Usá "Revisar" para ver cuáles.', 'error');
+    }
+}
+
+function cwRevisar() {
+    if (cwTerminado || !cwPuzzle) return;
+    cwErroneas = {};
+    const okEntradas = cwPuzzle.entradas.filter(cwEntradaOk);
+    const cubiertas = new Set();
+    okEntradas.forEach(e => cwCeldasDe(e).forEach(k => cubiertas.add(k)));
+    let malas = 0;
+    Object.keys(cwLetras).forEach(k => {
+        if (cwLetras[k] && cwLetras[k] !== cwPuzzle.celdas[k] && !cubiertas.has(k)) { cwErroneas[k] = true; malas++; }
+    });
+    cwMensaje(malas ? `Hay ${malas} ${malas === 1 ? 'letra incorrecta' : 'letras incorrectas'} (en rojo).` : 'Todo lo que escribiste está bien por ahora.', malas ? 'error' : 'exito');
+    cwDibujar();
+}
+
+function cwPista() {
+    if (cwTerminado || !cwPuzzle) return;
+    const k = cwSel.r + ',' + cwSel.c;
+    if (cwFijas[k]) return;
+    cwLetras[k] = cwPuzzle.celdas[k];
+    cwFijas[k] = true;
+    delete cwErroneas[k];
+    cwPistas++;
+    cwDibujar();
+    cwGuardarLocal();
+    cwVerificarFin();
+}
+
+function cwMostrarFinal() {
+    cwMensaje(`🎉 ¡Crucigrama resuelto!${cwPistas ? ` (${cwPistas} ${cwPistas === 1 ? 'pista usada' : 'pistas usadas'})` : ' Sin usar pistas.'}`, 'victoria');
+    const fin = document.getElementById('cw-final');
+    if (fin) fin.classList.remove('oculto');
+    const st = document.getElementById('cw-stats');
+    if (st && cwModo === 'diaria') { const s = cwStats(); st.textContent = `Resueltos: ${s.resueltas} · Racha: ${s.racha} · Mejor racha: ${s.mejor}`; }
+    else if (st) st.textContent = '';
+}
+
+function cwTextoCompartir() {
+    return `Crucigrama de Personajes${catTitulo()} ✅\n${cwPistas ? '💡'.repeat(Math.min(cwPistas, 10)) + ` ${cwPistas} ${cwPistas === 1 ? 'pista' : 'pistas'}` : '⭐ Sin pistas'}\nEl Multiverso`;
+}
+
+const tarjetaCrucigrama = document.getElementById('tarjeta-crucigrama');
+if (tarjetaCrucigrama) tarjetaCrucigrama.addEventListener('click', () => { cambiarSeccion(document.getElementById('seccion-crucigrama')); cwIniciar('diaria'); });
+const btnVolverJuegosDesdeCw = document.getElementById('btn-volver-juegos-desde-crucigrama');
+if (btnVolverJuegosDesdeCw) btnVolverJuegosDesdeCw.addEventListener('click', () => cambiarSeccion(document.getElementById('seccion-juegos')));
+const cwBtnRevisar = document.getElementById('cw-btn-revisar'); if (cwBtnRevisar) cwBtnRevisar.addEventListener('click', cwRevisar);
+const cwBtnPista = document.getElementById('cw-btn-pista'); if (cwBtnPista) cwBtnPista.addEventListener('click', cwPista);
+const cwBtnAzar = document.getElementById('cw-btn-azar'); if (cwBtnAzar) cwBtnAzar.addEventListener('click', () => cwIniciar('azar'));
+const cwBtnAzar2 = document.getElementById('cw-btn-azar2'); if (cwBtnAzar2) cwBtnAzar2.addEventListener('click', () => cwIniciar('azar'));
+const cwBtnCompartir = document.getElementById('cw-btn-compartir');
+if (cwBtnCompartir) cwBtnCompartir.addEventListener('click', () => {
+    const aviso = () => { cwBtnCompartir.textContent = '¡Copiado!'; setTimeout(() => { cwBtnCompartir.textContent = 'Copiar resultado'; }, 1800); };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(cwTextoCompartir()).then(aviso).catch(() => {});
+    else aviso();
+});
+document.addEventListener('keydown', (e) => {
+    const sec = document.getElementById('seccion-crucigrama');
+    if (!sec || sec.classList.contains('oculto') || !cwPuzzle || e.ctrlKey || e.metaKey || e.altKey) return;
+    const k = e.key;
+    if (/^[a-zA-Z]$/.test(k)) { cwEscribir(k.toLowerCase()); e.preventDefault(); return; }
+    if (k === 'Backspace') { cwBorrar(); e.preventDefault(); return; }
+    if (k === ' ' || k === 'Tab') { cwClickCelda(cwSel.r, cwSel.c); e.preventDefault(); return; }
+    const mov = { ArrowLeft: [0, -1], ArrowRight: [0, 1], ArrowUp: [-1, 0], ArrowDown: [1, 0] }[k];
+    if (mov) {
+        e.preventDefault();
+        let r = cwSel.r + mov[0], c = cwSel.c + mov[1];
+        while (r >= 0 && c >= 0 && r < cwPuzzle.filas && c < cwPuzzle.cols && !((r + ',' + c) in cwPuzzle.celdas)) { r += mov[0]; c += mov[1]; }
+        if ((r + ',' + c) in cwPuzzle.celdas) {
+            const es = cwEntradasDe(r + ',' + c);
+            if (!es.some(x => x.h === cwSel.h)) cwSel.h = es[0].h;
+            cwSel.r = r; cwSel.c = c; cwDibujar();
+        }
+    }
+});
+
+// ==========================================
 // Selector de categoría (Marvel y DC / Star Wars) compartido por Wordle, Ahorcado y Conexiones
 function juegoMarcarCat() {
     document.querySelectorAll('.juego-cat').forEach(b => b.classList.toggle('activo', b.dataset.cat === juegoCat));
@@ -34780,6 +35164,7 @@ document.querySelectorAll('.juego-cat').forEach(b => b.addEventListener('click',
     if (vis('seccion-wordle')) wordleIniciar('diaria');
     else if (vis('seccion-ahorcado')) ahIniciar('diaria');
     else if (vis('seccion-conexiones')) conIniciar('diaria');
+    else if (vis('seccion-crucigrama')) cwIniciar('diaria');
 }));
 juegoMarcarCat();
 

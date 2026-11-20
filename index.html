@@ -24034,6 +24034,11 @@
                 <h3>Ahorcado</h3>
                 <p>Adiviná el nombre del personaje letra por letra. Solo se ve la inicial. Uno por día.</p>
             </div>
+            <div class="tarjeta-juego" id="tarjeta-crucigrama">
+                <div class="icono-juego">📰</div>
+                <h3>Crucigrama</h3>
+                <p>Una grilla por día: completá los nombres de personajes con pistas armadas con datos del sitio. Elegí la categoría.</p>
+            </div>
             <div class="tarjeta-juego" id="tarjeta-adivinaposter">
                 <div class="icono-juego">🖼️</div>
                 <h3>Adiviná el póster</h3>
@@ -24184,6 +24189,45 @@
             </div>
             <p id="ah-stats" class="subtitulo-juegos"></p>
             <p id="ah-global" class="subtitulo-juegos"></p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: JUEGO - CRUCIGRAMA -->
+    <section id="seccion-crucigrama" class="oculto">
+        <button class="btn-volver" id="btn-volver-juegos-desde-crucigrama">← Volver a Juegos</button>
+        <h2>Crucigrama 📰</h2>
+        <div class="wordle-niveles">
+            <button type="button" class="btn-modal juego-cat" data-cat="mdc">Marvel y DC</button>
+            <button type="button" class="btn-modal juego-cat" data-cat="sw">Star Wars</button>
+            <button type="button" class="btn-modal juego-cat" data-cat="hp">Harry Potter</button>
+            <button type="button" class="btn-modal juego-cat" data-cat="pk">Pokémon</button>
+            <button type="button" class="btn-modal juego-cat" data-cat="db">Dragon Ball</button>
+            <button type="button" class="btn-modal juego-cat" data-cat="sp">Los Simpson</button>
+            <button type="button" class="btn-modal juego-cat" data-cat="dr">Directores de Cine</button>
+            <button type="button" class="btn-modal juego-cat" data-cat="b10">Ben 10</button>
+            <button type="button" class="btn-modal juego-cat" data-cat="tm">Tierra Media</button>
+            <button type="button" class="btn-modal juego-cat" data-cat="cn">Cartoon Network</button>
+        </div>
+        <p class="subtitulo-juegos" id="cw-subtitulo"></p>
+        <p class="subtitulo-juegos cw-pista-actual" id="cw-pista-actual"></p>
+        <div id="cw-grilla" class="cw-grilla"></div>
+        <div class="wordle-acciones">
+            <button type="button" class="btn-modal" id="cw-btn-revisar">Revisar</button>
+            <button type="button" class="btn-modal" id="cw-btn-pista">Pista (revela la letra)</button>
+            <button type="button" class="btn-modal" id="cw-btn-azar">Otro al azar</button>
+        </div>
+        <div id="cw-mensaje" class="mensaje-elenco"></div>
+        <div id="cw-teclado" class="wordle-teclado"></div>
+        <div id="cw-final" class="wordle-final oculto">
+            <div class="wordle-acciones">
+                <button type="button" class="btn-modal" id="cw-btn-compartir">Copiar resultado</button>
+                <button type="button" class="btn-modal" id="cw-btn-azar2">Jugar otro al azar</button>
+            </div>
+            <p id="cw-stats" class="subtitulo-juegos"></p>
+        </div>
+        <div class="cw-pistas">
+            <div><h3>Horizontales</h3><ul id="cw-lista-h" class="cw-lista"></ul></div>
+            <div><h3>Verticales</h3><ul id="cw-lista-v" class="cw-lista"></ul></div>
         </div>
     </section>
 
