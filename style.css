@@ -2247,3 +2247,8 @@ h2 {
 .cw-grilla { max-width: 100%; overflow-x: auto; justify-content: safe center; }
 #cw-temas, #cw-juego .wordle-niveles { gap: 6px; }
 #cw-temas .cw-tema, #cw-juego .cw-nivel { width: auto; flex: 0 0 auto; padding: 6px 10px; font-size: 0.8rem; min-width: 0; }
+
+/* Menú de categorías del crucigrama: se acomoda en varias filas (en el celu quedaban cortados Marvel y DC, etc.) y en verde claro */
+#cw-cats { flex-wrap: wrap; }
+#cw-cats .cw-cat { width: auto; margin-top: 0; background-color: #8be28b; color: #10260f; font-weight: 700; }
+#cw-cats .cw-cat:hover { background-color: #a6efa6; }
