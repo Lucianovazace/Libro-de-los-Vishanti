@@ -2241,3 +2241,6 @@ h2 {
 .cw-tema.activo, .cw-nivel.activo { outline: 2px solid #fff; }
 #cw-temas { flex-wrap: wrap; }
 #cw-temas .cw-tema { flex: 0 1 auto; }
+.cw-celda.cw-ok { background: #2e7d32; border-color: #2e7d32; }
+.cw-celda.cw-ok.cw-sel { border-color: #f5a623; }
+.cw-celda.cw-ok.cw-fija .cw-letra { color: #f5a623; }

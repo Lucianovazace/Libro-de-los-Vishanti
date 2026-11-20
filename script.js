@@ -35026,6 +35026,8 @@ function cwDibujar() {
     const activas = new Set(activa ? cwCeldasDe(activa) : []);
     const numeros = {};
     cwPuzzle.entradas.forEach(e => { numeros[e.r + ',' + e.c] = e.n; });
+    const correctas = new Set();
+    cwPuzzle.entradas.filter(cwEntradaOk).forEach(e => cwCeldasDe(e).forEach(k => correctas.add(k)));
     for (let r = 0; r < cwPuzzle.filas; r++) for (let c = 0; c < cwPuzzle.cols; c++) {
         const k = r + ',' + c;
         const d = document.createElement('div');
@@ -35033,6 +35035,7 @@ function cwDibujar() {
         d.className = 'cw-celda';
         if (activas.has(k)) d.classList.add('cw-activa');
         if (cwSel.r === r && cwSel.c === c) d.classList.add('cw-sel');
+        if (correctas.has(k)) d.classList.add('cw-ok');
         if (cwFijas[k]) d.classList.add('cw-fija');
         if (cwErroneas[k]) d.classList.add('cw-mala');
         if (numeros[k]) { const n = document.createElement('span'); n.className = 'cw-num'; n.textContent = numeros[k]; d.appendChild(n); }
