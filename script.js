@@ -35189,8 +35189,26 @@ function cwTextoCompartir() {
     return `Crucigrama de Personajes${catTitulo()} (${cwTemaObj().txt}, ${CW_NIVELES[cwNivel].txt}) ✅\n${cwPistas ? '💡'.repeat(Math.min(cwPistas, 10)) + ` ${cwPistas} ${cwPistas === 1 ? 'pista' : 'pistas'}` : '⭐ Sin pistas'}\nEl Multiverso`;
 }
 
+function cwVista(juego) {
+    const m = document.getElementById('cw-menu'), j = document.getElementById('cw-juego');
+    if (m) m.classList.toggle('oculto', juego);
+    if (j) j.classList.toggle('oculto', !juego);
+    window.scrollTo(0, 0);
+}
 const tarjetaCrucigrama = document.getElementById('tarjeta-crucigrama');
-if (tarjetaCrucigrama) tarjetaCrucigrama.addEventListener('click', () => { cambiarSeccion(document.getElementById('seccion-crucigrama')); cwIniciar('diaria'); });
+if (tarjetaCrucigrama) tarjetaCrucigrama.addEventListener('click', () => { cambiarSeccion(document.getElementById('seccion-crucigrama')); cwVista(false); });
+document.querySelectorAll('.cw-cat').forEach(b => b.addEventListener('click', () => {
+    juegoCat = b.dataset.cat;
+    try { localStorage.setItem('juego-cat', juegoCat); } catch (e) {}
+    juegoMarcarCat();
+    cwTema = 'todo';
+    const t = document.getElementById('cw-titulo');
+    if (t) t.textContent = 'Crucigrama 📰 · ' + JUEGO_CAT_TXT[juegoCat];
+    cwVista(true);
+    cwIniciar('diaria');
+}));
+const btnVolverCwCats = document.getElementById('btn-volver-cw-categorias');
+if (btnVolverCwCats) btnVolverCwCats.addEventListener('click', () => cwVista(false));
 const btnVolverJuegosDesdeCw = document.getElementById('btn-volver-juegos-desde-crucigrama');
 if (btnVolverJuegosDesdeCw) btnVolverJuegosDesdeCw.addEventListener('click', () => cambiarSeccion(document.getElementById('seccion-juegos')));
 const cwBtnRevisar = document.getElementById('cw-btn-revisar'); if (cwBtnRevisar) cwBtnRevisar.addEventListener('click', cwRevisar);
@@ -35205,7 +35223,8 @@ if (cwBtnCompartir) cwBtnCompartir.addEventListener('click', () => {
 });
 document.addEventListener('keydown', (e) => {
     const sec = document.getElementById('seccion-crucigrama');
-    if (!sec || sec.classList.contains('oculto') || !cwPuzzle || e.ctrlKey || e.metaKey || e.altKey) return;
+    const vj = document.getElementById('cw-juego');
+    if (!sec || sec.classList.contains('oculto') || !vj || vj.classList.contains('oculto') || !cwPuzzle || e.ctrlKey || e.metaKey || e.altKey) return;
     const k = e.key;
     if (/^[a-zA-Z]$/.test(k)) { cwEscribir(k.toLowerCase()); e.preventDefault(); return; }
     if (k === 'Backspace') { cwBorrar(); e.preventDefault(); return; }
