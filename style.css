@@ -2252,3 +2252,8 @@ h2 {
 #cw-cats { flex-wrap: wrap; }
 #cw-cats .cw-cat { width: auto; margin-top: 0; background-color: #8be28b; color: #10260f; font-weight: 700; }
 #cw-cats .cw-cat:hover { background-color: #a6efa6; }
+
+/* Dentro del crucigrama: todos los botones (temas, niveles, acciones) en verde claro */
+#cw-juego .btn-modal { background-color: #8be28b; color: #10260f; font-weight: 700; }
+#cw-juego .btn-modal:hover { background-color: #a6efa6; }
+#cw-juego .cw-tema.activo, #cw-juego .cw-nivel.activo { outline: 3px solid #10260f; outline-offset: -3px; background-color: #5fcf5f; }
