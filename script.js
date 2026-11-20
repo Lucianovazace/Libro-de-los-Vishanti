@@ -34773,7 +34773,7 @@ function bgTextoCompartir() {
 // La grilla se genera con una semilla (fecha + categoría), así es la misma para todos. Las palabras salen de WORDLE_PALABRAS
 // (5 o 6 letras). Las pistas se arman solo con datos cargados: el nombre completo con la palabra tapada (ej. "_____ Allen") o,
 // si el nombre es la palabra sola, tipo · equipo · universo. Se acepta cualquier palabra que cumpla exactamente la misma pista.
-const CW_NIVELES = { facil: { txt: 'Fácil', max: 14, tam: 17, sem: 1 }, medio: { txt: 'Medio', max: 20, tam: 21, sem: 2 }, dificil: { txt: 'Difícil', max: 28, tam: 25, sem: 3 } };
+const CW_NIVELES = { facil: { txt: 'Fácil', max: 14, tam: 15, sem: 1 }, medio: { txt: 'Medio', max: 20, tam: 18, sem: 2 }, dificil: { txt: 'Difícil', max: 28, tam: 21, sem: 3 } };
 const CW_ES_HEROE = p => p.tipo !== 'Villano';
 // Pokémon: se priorizan los Pokémon; entrenadores, líderes, campeones y villanos humanos entran como mucho 2 por grilla en "Todo".
 const CW_PK_HUMANO = p => /Entrenador|Líder|Campe|Profesor|Alto Mando|Villano/.test(p.tipo);
@@ -34927,54 +34927,164 @@ function cwGenerar(pool, rng, CW_TAM, CW_MAX_PALABRAS) {
     const tema = cwTemaObj();
     const esHum = tema.humano || (() => false);
     const maxHum = tema.maxHum === undefined ? Infinity : tema.maxHum;
-    let mejor = null;
-    for (let intento = 0; intento < 40; intento++) {
+    let mejor = null, mejorPuntos = -1;
+    for (let intento = 0; intento < 3; intento++) {
         const orden = conBarajar(pool, rng);
-        const g = {};
+        const g = {};          // "r,c" -> letra
+        const dirs = {};       // "r,c" -> { h: bool, v: bool } (direcciones que ya pasan por la casilla)
         const col = [];
-        const claves = new Set();
-        const cuenta = {};   // cuántas veces aparece una misma pista genérica (máximo 2 por grilla)
+        const cuenta = {};     // cuántas veces aparece una misma pista genérica (máximo 2 por grilla)
+        const usadas = new Set();
         let humanos = 0;
-        const puede = (w, r, c, h) => {
+        let r0 = Infinity, c0 = Infinity, r1 = -1, c1 = -1;
+        // Valida y puntúa una colocación: devuelve la cantidad de cruces (0 = no sirve / sin cruces).
+        const evaluar = (w, r, c, h) => {
             const dr = h ? 0 : 1, dc = h ? 1 : 0;
-            if (g[(r - dr) + ',' + (c - dc)] || g[(r + dr * w.length) + ',' + (c + dc * w.length)]) return false;
+            if (r < 0 || c < 0 || r + dr * (w.length - 1) >= CW_TAM || c + dc * (w.length - 1) >= CW_TAM) return 0;
+            if (g[(r - dr) + ',' + (c - dc)] || g[(r + dr * w.length) + ',' + (c + dc * w.length)]) return 0;
             let cruces = 0;
             for (let i = 0; i < w.length; i++) {
-                const rr = r + dr * i, cc = c + dc * i;
-                if (rr < 0 || cc < 0 || rr >= CW_TAM || cc >= CW_TAM) return false;
-                const ex = g[rr + ',' + cc];
-                if (ex) { if (ex !== w[i]) return false; cruces++; }
-                else if (g[(rr + dc) + ',' + (cc + dr)] || g[(rr - dc) + ',' + (cc - dr)]) return false;
+                const rr = r + dr * i, cc = c + dc * i, k = rr + ',' + cc;
+                const ex = g[k];
+                if (ex) {
+                    if (ex !== w[i] || dirs[k][h ? 'h' : 'v']) return 0;
+                    cruces++;
+                } else if (g[(rr + dc) + ',' + (cc + dr)] || g[(rr - dc) + ',' + (cc - dr)]) return 0;
             }
-            return cruces === 1;
+            return cruces;
+        };
+        // Posiciones candidatas: las que hacen coincidir una letra de la palabra con una letra ya puesta (en la otra dirección).
+        const posiciones = (w) => {
+            const vistos = new Set(), lista = [];
+            Object.keys(g).forEach(k => {
+                const [kr, kc] = k.split(',').map(Number);
+                for (let i = 0; i < w.length; i++) {
+                    if (w[i] !== g[k]) continue;
+                    [true, false].forEach(h => {
+                        if (dirs[k][h ? 'h' : 'v']) return;
+                        const r = h ? kr : kr - i, c = h ? kc - i : kc;
+                        const id = r + ',' + c + ',' + h;
+                        if (!vistos.has(id)) { vistos.add(id); lista.push([r, c, h]); }
+                    });
+                }
+            });
+            return lista;
         };
         const poner = (it, r, c, h) => {
             const dr = h ? 0 : 1, dc = h ? 1 : 0;
-            for (let i = 0; i < it.palabra.length; i++) g[(r + dr * i) + ',' + (c + dc * i)] = it.palabra[i];
+            for (let i = 0; i < it.palabra.length; i++) {
+                const k = (r + dr * i) + ',' + (c + dc * i);
+                g[k] = it.palabra[i];
+                (dirs[k] = dirs[k] || {})[h ? 'h' : 'v'] = true;
+            }
             col.push({ it, r, c, h });
+            usadas.add(it.palabra);
             if (esHum(it)) humanos++;
             cuenta[cwPistaDe(it)] = (cuenta[cwPistaDe(it)] || 0) + 1;
-            if (it.pistaFija) claves.add('P:' + it.nombre + '|' + it.equipo);
+            if (it.pistaFija) cuenta['P:' + it.nombre + '|' + it.equipo] = 99;
+            r0 = Math.min(r0, r); c0 = Math.min(c0, c);
+            r1 = Math.max(r1, r + dr * (it.palabra.length - 1)); c1 = Math.max(c1, c + dc * (it.palabra.length - 1));
         };
-        const p0 = orden[0];
-        poner(p0, Math.floor(CW_TAM / 2), Math.floor((CW_TAM - p0.palabra.length) / 2), true);
-        for (let k = 1; k < orden.length && col.length < CW_MAX_PALABRAS; k++) {
-            const it = orden[k], w = it.palabra;
-            if ((esHum(it) && humanos >= maxHum) || (cuenta[cwPistaDe(it)] || 0) >= 2 || (it.pistaFija && claves.has('P:' + it.nombre + '|' + it.equipo)) || col.some(x => x.it.palabra === w)) continue;
-            const cand = [];
-            col.forEach(x => {
-                for (let i = 0; i < x.it.palabra.length; i++) for (let j = 0; j < w.length; j++) {
-                    if (x.it.palabra[i] !== w[j]) continue;
-                    const h = !x.h;
-                    const rc = x.h ? x.r : x.r + i, cc = x.h ? x.c + i : x.c;
-                    const r0 = h ? rc : rc - j, c0 = h ? cc - j : cc;
-                    if (puede(w, r0, c0, h)) cand.push([r0, c0, h]);
-                }
-            });
-            if (cand.length) { const e = cand[Math.floor(rng() * cand.length)]; poner(it, e[0], e[1], e[2]); }
+        const elegible = (it) => !usadas.has(it.palabra) && !(esHum(it) && humanos >= maxHum) && (cuenta[cwPistaDe(it)] || 0) < 2
+            && !(it.pistaFija && cuenta['P:' + it.nombre + '|' + it.equipo]);
+        // Semilla en "reja": 3 palabras horizontales (filas 0, 2 y 4) y 3 verticales (columnas 0, 2 y 4) que se cruzan en 9 puntos.
+        // Cada vertical necesita las letras 1, 3 y 5 iguales a las de las tres horizontales en esa columna. Es el bloque más entrelazado posible.
+        const idx = {};
+        orden.forEach(it => { const w = it.palabra; const k = w[0] + w[2] + w[4]; (idx[k] = idx[k] || []).push(it); });
+        let sembrada = false;
+        for (let t = 0; t < 80 && !sembrada; t++) {
+            const hs = [];
+            for (let q = 0; q < 3; q++) hs.push(orden[Math.floor(rng() * orden.length)]);
+            if (new Set(hs.map(x => x.palabra)).size < 3 || !hs.every(x => !(esHum(x) && maxHum < 3))) continue;
+            const vs = [];
+            let ok = true;
+            for (let j = 0; j < 3 && ok; j++) {
+                const k = hs[0].palabra[2 * j] + hs[1].palabra[2 * j] + hs[2].palabra[2 * j];
+                const cands = (idx[k] || []).filter(x => !hs.includes(x) && !vs.includes(x));
+                if (!cands.length) { ok = false; break; }
+                vs.push(cands[Math.floor(rng() * cands.length)]);
+            }
+            if (!ok) continue;
+            const todas = hs.concat(vs);
+            if (new Set(todas.map(x => x.palabra)).size < 6) continue;
+            const pistas = {};
+            let hum = 0, bien = true;
+            todas.forEach(x => { const pk = cwPistaDe(x); pistas[pk] = (pistas[pk] || 0) + 1; if (pistas[pk] > 2) bien = false; if (esHum(x)) hum++; });
+            if (!bien || hum > maxHum) continue;
+            const base = Math.floor((CW_TAM - 6) / 2);
+            hs.forEach((x, i) => poner(x, base + 2 * i, base, true));
+            vs.forEach((x, j) => poner(x, base, base + 2 * j, false));
+            sembrada = true;
         }
-        if (!mejor || col.length > mejor.length) mejor = col;
-        if (col.length >= CW_MAX_PALABRAS) break;
+        if (!sembrada) {
+            const p0 = orden[0];
+            poner(p0, Math.floor(CW_TAM / 2), Math.floor((CW_TAM - p0.palabra.length) / 2), true);
+        }
+        let cola = orden.slice(1);
+        let sinProgreso = 0;
+        while (col.length < CW_MAX_PALABRAS && cola.length && sinProgreso * 30 < cola.length + 30) {
+            // Se prueban varias palabras a la vez y se coloca la que más se entrelaza con lo ya puesto.
+            let mejorCand = null, mejorScore = -Infinity;
+            const lote = [];
+            const resto = [];
+            cola.forEach(it => {
+                if (usadas.has(it.palabra) || (esHum(it) && humanos >= maxHum) || (cuenta[cwPistaDe(it)] || 0) >= 2
+                    || (it.pistaFija && cuenta['P:' + it.nombre + '|' + it.equipo])) return;
+                if (lote.length < 30) lote.push(it); else resto.push(it);
+            });
+            lote.forEach(it => {
+                const w = it.palabra;
+                posiciones(w).forEach(([r, c, h]) => {
+                    const cr = evaluar(w, r, c, h);
+                    if (!cr) return;
+                    const dr = h ? 0 : 1, dc = h ? 1 : 0;
+                    const nr0 = Math.min(r0, r), nc0 = Math.min(c0, c);
+                    const nr1 = Math.max(r1, r + dr * (w.length - 1)), nc1 = Math.max(c1, c + dc * (w.length - 1));
+                    const crece = (nr1 - nr0 + 1) * (nc1 - nc0 + 1) - (r1 - r0 + 1) * (c1 - c0 + 1);
+                    const score = Math.min(cr, 4) * 40 + (cr >= 2 ? 120 : 0) - crece + rng() * 6;
+                    if (score > mejorScore) { mejorScore = score; mejorCand = [it, r, c, h]; }
+                });
+            });
+            if (mejorCand) {
+                poner(mejorCand[0], mejorCand[1], mejorCand[2], mejorCand[3]);
+                sinProgreso = 0;
+                cola = lote.filter(x => x !== mejorCand[0]).concat(resto);
+            } else {
+                sinProgreso++;
+                cola = resto.concat(lote);   // las que no entraron van al final para probar con otras
+            }
+        }
+        // Segunda fase: se agregan (hasta un 30% más) palabras que se cruzan en 2 o más puntos, para que la grilla quede más entrelazada.
+        let extras = 0;
+        const maxExtras = Math.ceil(CW_MAX_PALABRAS * 0.4);
+        const candidatas = orden.filter(it => !usadas.has(it.palabra)).slice(0, 250);
+        while (extras < maxExtras) {
+            let mejorCand = null, mejorScore = -Infinity;
+            candidatas.forEach(it => {
+                if (usadas.has(it.palabra) || (esHum(it) && humanos >= maxHum) || (cuenta[cwPistaDe(it)] || 0) >= 2
+                    || (it.pistaFija && cuenta['P:' + it.nombre + '|' + it.equipo])) return;
+                const w = it.palabra;
+                posiciones(w).forEach(([r, c, h]) => {
+                    const cr = evaluar(w, r, c, h);
+                    if (cr < 2) return;
+                    const dr = h ? 0 : 1, dc = h ? 1 : 0;
+                    const nr0 = Math.min(r0, r), nc0 = Math.min(c0, c);
+                    const nr1 = Math.max(r1, r + dr * (w.length - 1)), nc1 = Math.max(c1, c + dc * (w.length - 1));
+                    const crece = (nr1 - nr0 + 1) * (nc1 - nc0 + 1) - (r1 - r0 + 1) * (c1 - c0 + 1);
+                    const score = cr * 40 - crece + rng() * 6;
+                    if (score > mejorScore) { mejorScore = score; mejorCand = [it, r, c, h]; }
+                });
+            });
+            if (!mejorCand) break;
+            poner(mejorCand[0], mejorCand[1], mejorCand[2], mejorCand[3]);
+            extras++;
+        }
+        // Se prefiere la grilla con más palabras y más compacta (más letras por casilla).
+        const letras = Object.keys(g).length;
+        const area = (r1 - r0 + 1) * (c1 - c0 + 1);
+        const puntos = col.length * 1000 + (letras / area) * 500;
+        if (puntos > mejorPuntos) { mejorPuntos = puntos; mejor = col; }
+        if (col.length >= CW_MAX_PALABRAS && intento >= 2) break;
     }
     return mejor;
 }
