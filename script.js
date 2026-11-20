@@ -34815,7 +34815,7 @@ const CW_TEMAS = {
     ]
 };
 let cwTema = 'todo';
-let cwNivel = (function () { try { const n = localStorage.getItem('cw-nivel'); return CW_NIVELES[n] ? n : 'medio'; } catch (e) { return 'medio'; } })();
+let cwNivel = (function () { try { const n = localStorage.getItem('cw-nivel'); return CW_NIVELES[n] ? n : 'facil'; } catch (e) { return 'medio'; } })();
 function cwTemasDe() { return CW_TEMAS[juegoCat] || [{ id: 'todo', txt: 'Todo', f: () => true }]; }
 function cwTemaObj() { return cwTemasDe().find(t => t.id === cwTema) || cwTemasDe()[0]; }
 let cwModo = 'diaria';
@@ -34842,7 +34842,18 @@ function cwPoolCat() {
     cwPoolCache[ck] = lista;
     return lista;
 }
-function cwPool() { const t = cwTemaObj(); return t.pool ? t.pool() : cwPoolCat().filter(t.f); }
+// Dificultad de las palabras: Fácil = solo las más conocidas, Medio = conocidas y medianas, Difícil = todas.
+// Si el tema tiene pocas palabras de ese nivel, se completan con las del siguiente para poder armar la grilla.
+function cwTierDe(p) { return p.tierCw || wordleNivelDe(p); }
+function cwPool() {
+    const t = cwTemaObj();
+    const base = t.pool ? t.pool() : cwPoolCat().filter(t.f);
+    const tiers = ['facil', 'medio', 'dificil'];
+    let hasta = cwNivel === 'facil' ? 0 : (cwNivel === 'medio' ? 1 : 2);
+    let sel = base.filter(x => tiers.indexOf(cwTierDe(x)) <= hasta);
+    while (sel.length < 30 && hasta < 2) { hasta++; sel = base.filter(x => tiers.indexOf(cwTierDe(x)) <= hasta); }
+    return sel;
+}
 
 // Pool del MCU: personajes del reparto de las películas y series del MCU cargadas en el sitio (REPARTO_PELICULAS).
 // La respuesta es una palabra de 5 o 6 letras del nombre del personaje; la pista usa solo datos del reparto:
@@ -34853,6 +34864,13 @@ function cwPoolMCU() {
     if (cwPoolMCUCache) return cwPoolMCUCache;
     const lista = [];
     const vistos = new Set();
+    const apar = {};   // palabra -> obras del MCU donde aparece (personajes recurrentes = más conocidos)
+    listaMedia.forEach(m => {
+        if (!m.fichaTecnicaId || (m.categoria !== 'mcu-infinito' && m.categoria !== 'mcu-multiverso')) return;
+        const r = REPARTO_PELICULAS[m.fichaTecnicaId];
+        if (!r || !r.elenco) return;
+        r.elenco.forEach(e => String(e.personaje || '').split(/[\s()\/,.&-]+/).forEach(tok => { const w = conNorm(tok); if (w) (apar[w] = apar[w] || new Set()).add(m.fichaTecnicaId); }));
+    });
     listaMedia.forEach(m => {
         if (!m.fichaTecnicaId || (m.categoria !== 'mcu-infinito' && m.categoria !== 'mcu-multiverso')) return;
         const r = REPARTO_PELICULAS[m.fichaTecnicaId];
@@ -34866,7 +34884,8 @@ function cwPoolMCU() {
                 if (!/^[a-z]{5,6}$/.test(w) || CW_MCU_PROHIBIDAS.has(w) || vistos.has(w)) return;
                 vistos.add(w);
                 const tapado = partes.map(x => x === tok ? '_'.repeat(w.length) : x).join('').replace(/\s+/g, ' ').trim();
-                lista.push({ palabra: w, nombre: e.personaje, universo: 'Marvel', tipo: 'MCU', equipo: m.titulo, pistaFija: `${tapado} · ${e.actor} en ${m.titulo}` });
+                const n = apar[w] ? apar[w].size : 1;
+                lista.push({ palabra: w, nombre: e.personaje, universo: 'Marvel', tipo: 'MCU', equipo: m.titulo, tierCw: n >= 3 ? 'facil' : (n === 2 ? 'medio' : 'dificil'), pistaFija: `${tapado} · ${e.actor} en ${m.titulo}` });
             });
         });
     });
@@ -34898,10 +34917,9 @@ function cwGenerar(pool, rng, CW_TAM, CW_MAX_PALABRAS) {
         const g = {};
         const col = [];
         const claves = new Set();
-        const get = (r, c) => g[r + ',' + c];
         const puede = (w, r, c, h) => {
             const dr = h ? 0 : 1, dc = h ? 1 : 0;
-            if (get((r - dr) + ',' + (c - dc) ) || get((r + dr * w.length) + ',' + (c + dc * w.length))) return false;
+            if (g[(r - dr) + ',' + (c - dc)] || g[(r + dr * w.length) + ',' + (c + dc * w.length)]) return false;
             let cruces = 0;
             for (let i = 0; i < w.length; i++) {
                 const rr = r + dr * i, cc = c + dc * i;
@@ -35016,13 +35034,18 @@ function cwIniciar(modo) {
             const g = JSON.parse(localStorage.getItem(cwClaveLocal()) || 'null');
             if (g && g.fecha === wordleFechaHoy()) { cwLetras = g.letras || {}; cwFijas = g.fijas || {}; cwPistas = g.pistas || 0; cwTerminado = !!g.terminado; }
         } catch (e) {}
-        if (sub) sub.textContent = `Crucigrama del día (${JUEGO_CAT_TXT[juegoCat]} · ${cwTemaObj().txt} · ${CW_NIVELES[cwNivel].txt}): completá los nombres con las pistas. Cada pista dice cuántas letras tiene.`;
+        if (sub) sub.textContent = `Crucigrama del día (${JUEGO_CAT_TXT[juegoCat]} · ${cwTemaObj().txt} · ${CW_NIVELES[cwNivel].txt}): completá los nombres con las pistas. Cada pista dice cuántas letras tiene.${cwNivel === 'facil' ? ' En Fácil ya viene la primera letra de cada palabra y solo hay personajes conocidos.' : ''}`;
     } else {
         cwPuzzle = cwArmar(pool, conRng((Math.random() * 4294967296) >>> 0));
         if (sub) sub.textContent = `Crucigrama al azar (${JUEGO_CAT_TXT[juegoCat]} · ${cwTemaObj().txt} · ${CW_NIVELES[cwNivel].txt}): no se guarda.`;
     }
+    if (cwNivel === 'facil') {
+        // En Fácil ya viene la primera letra de cada palabra (no cuenta como pista).
+        cwPuzzle.entradas.forEach(e => { const k = e.r + ',' + e.c; cwLetras[k] = cwPuzzle.celdas[k]; cwFijas[k] = true; });
+    }
     const primera = cwPuzzle.entradas[0];
-    cwSel = { r: primera.r, c: primera.c, h: primera.h };
+    const libre = cwCeldasDe(primera).find(k => !cwFijas[k]) || (primera.r + ',' + primera.c);
+    cwSel = { r: Number(libre.split(',')[0]), c: Number(libre.split(',')[1]), h: primera.h };
     cwMensaje('');
     cwDibujar();
     if (cwTerminado) cwMostrarFinal();
@@ -35149,8 +35172,22 @@ function cwMover(paso) {
 
 function cwEscribir(l) {
     if (cwTerminado || !cwPuzzle) return;
-    const k = cwSel.r + ',' + cwSel.c;
-    if (cwFijas[k]) { cwMover(1); cwDibujar(); return; }
+    let k = cwSel.r + ',' + cwSel.c;
+    if (cwFijas[k] && cwLetras[k] === l) { cwMover(1); cwDibujar(); return; }   // tipeó la letra que ya está: solo avanza
+    if (cwFijas[k]) {
+        // La casilla ya viene dada (o revelada): se sigue por la misma palabra. Si la próxima casilla dada ya tiene
+        // esa letra, solo se avanza; si no, se escribe en la primera casilla libre.
+        const e = cwEntradaSel();
+        const ks = e ? cwCeldasDe(e) : [];
+        let destino = null;
+        for (const x of ks.slice(ks.indexOf(k) + 1)) {
+            if (!cwFijas[x]) { destino = x; break; }
+            if (cwLetras[x] === l) { const [r3, c3] = x.split(',').map(Number); cwSel.r = r3; cwSel.c = c3; cwMover(1); cwDibujar(); return; }
+        }
+        if (!destino) { cwDibujar(); return; }
+        const [r2, c2] = destino.split(',').map(Number);
+        cwSel.r = r2; cwSel.c = c2; k = destino;
+    }
     cwLetras[k] = l;
     delete cwErroneas[k];
     cwMover(1);
