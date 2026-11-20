@@ -35266,14 +35266,26 @@ function cwDibujar() {
             });
             tec.appendChild(f);
         });
-        const f = document.createElement('div');
-        f.className = 'wordle-fila-teclado';
+        const f = tec.lastElementChild;   // el borrar va en la última fila de letras para ahorrar altura
         const bb = document.createElement('button');
-        bb.type = 'button'; bb.className = 'wordle-tecla ancha'; bb.textContent = '⌫ Borrar'; bb.disabled = cwTerminado;
+        bb.type = 'button'; bb.className = 'wordle-tecla ancha'; bb.textContent = '⌫'; bb.disabled = cwTerminado;
         bb.addEventListener('click', cwBorrar);
         f.appendChild(bb);
-        tec.appendChild(f);
     }
+    cwVerCasillaActiva();
+}
+
+// Mantiene la casilla elegida a la vista: ni tapada por el panel fijo de abajo ni por el encabezado de arriba.
+function cwVerCasillaActiva() {
+    requestAnimationFrame(() => {
+        const el = document.querySelector('#cw-grilla .cw-sel'), dock = document.getElementById('cw-dock');
+        if (!el || !dock || dock.offsetParent === null) return;
+        const rc = el.getBoundingClientRect(), dk = dock.getBoundingClientRect();
+        const cab = document.querySelector('header, .encabezado, #encabezado');
+        const tope = cab && getComputedStyle(cab).position !== 'static' ? cab.getBoundingClientRect().bottom : 0;
+        if (rc.bottom > dk.top - 6) window.scrollBy(0, rc.bottom - dk.top + 10);
+        else if (rc.top < tope + 6) window.scrollBy(0, rc.top - tope - 10);
+    });
 }
 
 function cwClickCelda(r, c) {

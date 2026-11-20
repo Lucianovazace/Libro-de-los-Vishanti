@@ -2257,3 +2257,16 @@ h2 {
 #cw-juego .btn-modal { background-color: #8be28b; color: #10260f; font-weight: 700; }
 #cw-juego .btn-modal:hover { background-color: #a6efa6; }
 #cw-juego .cw-tema.activo, #cw-juego .cw-nivel.activo { outline: 3px solid #10260f; outline-offset: -3px; background-color: #5fcf5f; }
+
+/* Panel fijo del crucigrama (estilo app): pista actual + teclado + botones siempre a la vista abajo */
+.cw-dock { position: sticky; bottom: 0; z-index: 40; background: #12151c; border-top: 2px solid #8be28b; padding: 6px 8px 8px; margin: 0 -8px; box-shadow: 0 -6px 14px rgba(0,0,0,.55); }
+.cw-dock .cw-pista-actual { min-height: 0; margin: 0 auto 4px; padding: 5px 10px; font-size: 0.85rem; line-height: 1.25; }
+.cw-dock .mensaje-elenco { min-height: 0; margin: 0 auto; }
+.cw-dock .mensaje-elenco:empty { display: none; }
+.cw-dock .wordle-teclado { margin: 4px auto; gap: 4px; }
+.cw-dock .wordle-fila-teclado { gap: 3px; }
+.cw-dock .wordle-tecla { height: 42px; max-width: 40px; font-size: 0.9rem; }
+.cw-dock .wordle-tecla.ancha { max-width: 52px; flex: 1.4 1 0; font-size: 1rem; }
+.cw-dock .cw-acciones { display: flex; gap: 6px; margin: 4px auto 0; }
+.cw-dock .cw-acciones .btn-modal { flex: 1 1 0; margin-top: 0; padding: 8px 4px; font-size: 0.85rem; width: auto; }
+@media (max-width: 480px) { .cw-dock .wordle-tecla { height: 40px; } }

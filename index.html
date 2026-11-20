@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Libro de los Vishanti</title>
 <script>if(new Date().getMonth()===10)document.documentElement.classList.add('musicales-activo');</script>
-<link rel="stylesheet" href="style.css?v=20261120k">
+<link rel="stylesheet" href="style.css?v=20261120l">
 <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
@@ -24221,15 +24221,17 @@
                 <button type="button" class="btn-modal cw-nivel" data-nivel="dificil">Difícil</button>
             </div>
             <p class="subtitulo-juegos" id="cw-subtitulo"></p>
-            <p class="subtitulo-juegos cw-pista-actual" id="cw-pista-actual"></p>
             <div id="cw-grilla" class="cw-grilla"></div>
-            <div class="wordle-acciones">
-                <button type="button" class="btn-modal" id="cw-btn-revisar">Revisar</button>
-                <button type="button" class="btn-modal" id="cw-btn-pista">Pista (revela la letra)</button>
-                <button type="button" class="btn-modal" id="cw-btn-azar">Otro al azar</button>
+            <div id="cw-dock" class="cw-dock">
+                <p class="subtitulo-juegos cw-pista-actual" id="cw-pista-actual"></p>
+                <div id="cw-mensaje" class="mensaje-elenco"></div>
+                <div id="cw-teclado" class="wordle-teclado"></div>
+                <div class="wordle-acciones cw-acciones">
+                    <button type="button" class="btn-modal" id="cw-btn-revisar">✔ Revisar</button>
+                    <button type="button" class="btn-modal" id="cw-btn-pista">💡 Pista</button>
+                    <button type="button" class="btn-modal" id="cw-btn-azar">🎲 Otro</button>
+                </div>
             </div>
-            <div id="cw-mensaje" class="mensaje-elenco"></div>
-            <div id="cw-teclado" class="wordle-teclado"></div>
             <div id="cw-final" class="wordle-final oculto">
                 <div class="wordle-acciones">
                     <button type="button" class="btn-modal" id="cw-btn-compartir">Copiar resultado</button>
@@ -25744,6 +25746,6 @@
 <div id="contenedor-notificaciones-logros"></div>
 
 <script src="futbol-data.js"></script>
-<script src="script.js?v=20261120k"></script>
+<script src="script.js?v=20261120l"></script>
 </body>
 </html>
