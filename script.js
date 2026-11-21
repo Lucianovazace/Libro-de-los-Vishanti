@@ -2707,9 +2707,9 @@ const listaMedia = [
     { titulo: "Nightwing Vol. 4 La Batalla por El Corazon de Bludhaven", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "blockbuster,dick-grayson", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/nightwing_vol_4_cov-df8f624150d11d9c7316971291017338-1024-1024.webp" },
     { titulo: "La Muerte de la Liga de la Justicia", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "liga", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/la_muerte_de_la_liga_de_la_justicia_cov1-c51b78b7a94b9dabc116686966661354-1024-1024.webp" },
     { titulo: "Nightwing Vol. 5: El Salto", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "dick-grayson", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/nightwing_vol_5_cov-1dcbcf1ca3b0348bcd17172465146935-1024-1024.webp" },
-    { titulo: "Nightwing Vol. 6: La Hora de Los Titanes", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "dick-grayson", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/nightwing_vol_6_covs-448b6df0cf1c6617dc17310210926901-1024-1024.webp" },
-    { titulo: "Nightwing Vol. 7: Al Limite", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "dick-grayson", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/nightwing_vol_7_covs3-c6d13c046a1f5d4de817433390012797-640-0.webp" },
-    { titulo: "Nightwing Vol. 8: La Caida de Grayson", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "blockbuster,dick-grayson", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/nightwing_vol_8_covs-51c207e875f020f72a17463796654683-1024-1024.webp" },
+    { titulo: "Nightwing Vol. 6: La Hora de Los Titanes", categoria: "dawn-of-dc", editorial: "ovni", subtipo: "dick-grayson", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/nightwing_vol_6_covs-448b6df0cf1c6617dc17310210926901-1024-1024.webp" },
+    { titulo: "Nightwing Vol. 7: Al Limite", categoria: "dawn-of-dc", editorial: "ovni", subtipo: "dick-grayson", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/nightwing_vol_7_covs3-c6d13c046a1f5d4de817433390012797-640-0.webp" },
+    { titulo: "Nightwing Vol. 8: La Caida de Grayson", categoria: "dawn-of-dc", editorial: "ovni", subtipo: "blockbuster,dick-grayson", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/nightwing_vol_8_covs-51c207e875f020f72a17463796654683-1024-1024.webp" },
     { titulo: "El Joker Vol. 1", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "bane,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/joker-vol-1-cov1-509a8ec8c57675b73d16481574654376-640-0.webp" },
     { titulo: "El Joker Vol. 2", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "bane,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/joker_vol_2_cov1-7870d71fc1ffb7025616711642217759-640-0.webp" },
     { titulo: "El Joker Vol. 3", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "bane,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/joker_vol_3_cov1-3b33c270a8e0f0944d16868729383068-1024-1024.webp" },
@@ -2725,13 +2725,13 @@ const listaMedia = [
     { titulo: "Crisis Oscura Vol. 1", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,dick-grayson,flash-barry-allen,flash-wally-west,green-arrow,liga,superhijos,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/crisis_oscura_vol_1_cov1-645bfff20444480cc116729826379669-1024-1024.webp" },
     { titulo: "Crisis Oscura Vol. 2", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,dick-grayson,flash-barry-allen,flash-wally-west,green-arrow,liga,superhijos,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/crisis_oscura_vol_2_cov1-80f71d21d79f2070a416754022731899-640-0.webp" },
     { titulo: "Crisis Oscura Vol. 3", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,dick-grayson,flash-barry-allen,flash-wally-west,green-arrow,liga,superhijos,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/crisis_oscura_vol_3_cov1-b0c2b98a16c0b0dd6d16803755786207-1024-1024.webp" },
-    { titulo: "Knight Terrors: Pesadillas Nocturnas", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/knight_terrors_cov-3bf8a19bfa4ecd068817395431158919-1024-1024.webp" },
-    { titulo: "Superman: La Casa de Brainiac", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "brainiac,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_la_casa_de_brainiac_cov-491f4a80884e1446e617443914614653-640-0.webp" },
+    { titulo: "Knight Terrors: Pesadillas Nocturnas", categoria: "dawn-of-dc", editorial: "ovni", subtipo: "batman,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/knight_terrors_cov-3bf8a19bfa4ecd068817395431158919-1024-1024.webp" },
+    { titulo: "Superman: La Casa de Brainiac", categoria: "dawn-of-dc", editorial: "ovni", subtipo: "brainiac,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_la_casa_de_brainiac_cov-491f4a80884e1446e617443914614653-640-0.webp" },
     { titulo: "Superman: Legion de Darkseid", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "darkseid,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_-_legion_de_darkseid_cov-48235aa1fce75bff9c17625199106776-640-0.webp" },
     { titulo: "Superman: Los Ultimos Dias de Lex Luthor", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "lex-luthor,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_-_los_ultimos_dias_de_lex_luthor_cov-0a06100f5f0a5ac6d717727384493338-640-0.webp" },
-    { titulo: "Titanes: Fuera de Las Sombras", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "dick-grayson,titans", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/titanes_cov-519d1f0fd5b7eb399b17201879402404-1024-1024.webp" },
-    { titulo: "Titanes: La Reina de Alas Negras", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "dick-grayson,titans", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/titanes_vol_2_cov-05cfbade6d18142fd917425640331938-640-0.webp" },
-    { titulo: "Titanes: Mundo Bestia", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "dick-grayson,titans", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/titanes_-_mundo_bestia_cov-0400b963e61015eb5517407109961248-1024-1024.webp" },
+    { titulo: "Titanes: Fuera de Las Sombras", categoria: "dawn-of-dc", editorial: "ovni", subtipo: "dick-grayson,titans", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/titanes_cov-519d1f0fd5b7eb399b17201879402404-1024-1024.webp" },
+    { titulo: "Titanes: La Reina de Alas Negras", categoria: "dawn-of-dc", editorial: "ovni", subtipo: "dick-grayson,titans", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/titanes_vol_2_cov-05cfbade6d18142fd917425640331938-640-0.webp" },
+    { titulo: "Titanes: Mundo Bestia", categoria: "dawn-of-dc", editorial: "ovni", subtipo: "dick-grayson,titans", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/titanes_-_mundo_bestia_cov-0400b963e61015eb5517407109961248-1024-1024.webp" },
     { titulo: "Detective Comics: Gotham Nocturna #1: Obertura", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,ras-al-ghul", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/detective_comics_ram_v_vol_1-253da28d32b179c7e017142346537133-640-0.webp" },
     { titulo: "Detective Comics: Gotham Nocturna #2: Acto Primero", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,mr-freeze,two-face", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/detective_comics_ram_v_cov_vol_2-a0561742808cb5851317274617174155-640-0.webp" },
     { titulo: "Detective Comics: Gotham Nocturna #3: Acto Segundo", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,ras-al-ghul,two-face", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/detective-comics-cov-vol-3-38a1c9680afdd3052a17468216274007-1024-1024.webp" },
@@ -2739,11 +2739,11 @@ const listaMedia = [
     { titulo: "Detective Comics: Gotham Nocturna #5: Acto III", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,ras-al-ghul,two-face", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/detective_comics_cov_vol_5-f4daf93af63fe49f5b17636681072346-1024-1024.webp" },
     { titulo: "Batman de Chip Zdarsky #1: Respaldo", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/2c/14/79c2dd4302684d059d04eb794367b1b9.jpg" },
     { titulo: "Batman vs Robin", categoria: "infinite-frontier-dc", editorial: "ovni", personajes: "batman,ras-al-ghul", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vs_robin1-cb8bc14e49046ebd2316812693285754-640-0.webp" },
-    { titulo: "Batman de Chip Zdarsky #2: El Bat-Man de Gotham", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vol-2_el_batman_de_gotham_cov-3d7f1de02e4ecf05d017256259109998-1024-1024.webp" },
-    { titulo: "Batman de Chip Zdarsky #3: La Guerra de Gotham", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_la_guerra_de_gotham_cov-f7b20f7acc97ce59c717395429904193-1024-1024.webp" },
-    { titulo: "Batman de Chip Zdarsky #4: Joker: Año Uno", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,joker", tipo: "Cómic", poster: "https://i1.whakoom.com/small/23/16/7462b97696174890ad9896ff42be22b9.jpg" },
+    { titulo: "Batman de Chip Zdarsky #2: El Bat-Man de Gotham", categoria: "dawn-of-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vol-2_el_batman_de_gotham_cov-3d7f1de02e4ecf05d017256259109998-1024-1024.webp" },
+    { titulo: "Batman de Chip Zdarsky #3: La Guerra de Gotham", categoria: "dawn-of-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_la_guerra_de_gotham_cov-f7b20f7acc97ce59c717395429904193-1024-1024.webp" },
+    { titulo: "Batman de Chip Zdarsky #4: Joker: Año Uno", categoria: "dawn-of-dc", editorial: "ovni", subtipo: "batman,joker", tipo: "Cómic", poster: "https://i1.whakoom.com/small/23/16/7462b97696174890ad9896ff42be22b9.jpg" },
     { titulo: "Batman y Robin: Año Uno", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,dick-grayson", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_y_robin_ano_uno_cov-61c0c774c65635afe117770533363007-640-0.webp" },
-    { titulo: "Batman de Chip Zdarsky #5: Prisiones Oscuras", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vol_5_covs-6fa914c17194c4d76817443917246389-1024-1024.webp" },
+    { titulo: "Batman de Chip Zdarsky #5: Prisiones Oscuras", categoria: "dawn-of-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vol_5_covs-6fa914c17194c4d76817443917246389-1024-1024.webp" },
     { titulo: "Batman/Superman: Los Mejores del Mundo #1: El Demonio Nezha", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_superman_-_los_mejores_del_mundo_cov11-194d38fd286024b77b16853357900328-1024-1024.webp" },
     { titulo: "Batman/Superman: Los Mejores del Mundo #2: Extraño Visitante", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/losmejoresdelmundo_vol_2_cov-e3908666777bcce92c17007724826931-640-0.webp" },
     { titulo: "Batman/Superman: Los Mejores del Mundo #3: Elemental", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_superman_-_los_mejores_del_mundo_vol-_3_cov-371860565ce9f93e3c17196702659344-1024-1024.webp" },
@@ -2752,12 +2752,12 @@ const listaMedia = [
     { titulo: "Batman/Superman: Los Mejores del Mundo #6: Imposible", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_superman_-_los_mejores_del_mundo_vol-_6-26ec6550b9cff9350e17570145532401-1024-1024.webp" },
     { titulo: "Batman/Superman: Los Mejores del Mundo #7: Eclipso Total", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_superman_-_los_mejores_del_mundo_vol-_7-824ea95feda7f6688a17594375917039-640-0.webp" },
     { titulo: "Batman/Superman: Los Mejores del Mundo #8: Gira en Mundo Bizarro", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_batman_-_los_mejores_del_mundo_cov-095f1862cfebca6c1017582892282611-1024-1024.webp" },
-    { titulo: "Poder Absoluto", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "amanda-waller,batman,liga,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/poder-absoluto-int-cov-2d7250dea58724471f17468211899245-640-0.webp" },
+    { titulo: "Poder Absoluto", categoria: "dawn-of-dc", editorial: "ovni", subtipo: "amanda-waller,batman,liga,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/poder-absoluto-int-cov-2d7250dea58724471f17468211899245-640-0.webp" },
     { titulo: "Especial DC All In", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/especial_all_in_cov-e2167ace37adc6d53717486500351799-1024-1024.webp" },
     { titulo: "Superman: El Ascenso de Superwoman", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "doomsday,superman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/superman_el_ascenso_de_superwoman_cov-a1166e01a78a2534a017648981356569-1024-1024.webp" },
     { titulo: "Batman de Chip Zdarsky #6: Poder Absoluto", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "amanda-waller,batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_vol_6_covs-7fb6dd2e994c21a41517473614887660-1024-1024.webp" },
-    { titulo: "Wonder Woman: Fuera de La Ley", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "wonder-woman", tipo: "Cómic", poster: "https://coleccionablesblog.com.ar/wp-content/uploads/2025/08/1-Fuera-de-la-Ley-725x1024.jpg" },
-    { titulo: "Wonder Woman: Sacrificio", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "amanda-waller,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/wonder_woman_vol_2_cov-f4638114fd1fcd5e3f17715403785100-640-0.webp" },
+    { titulo: "Wonder Woman: Fuera de La Ley", categoria: "dawn-of-dc", editorial: "ovni", subtipo: "wonder-woman", tipo: "Cómic", poster: "https://coleccionablesblog.com.ar/wp-content/uploads/2025/08/1-Fuera-de-la-Ley-725x1024.jpg" },
+    { titulo: "Wonder Woman: Sacrificio", categoria: "dawn-of-dc", editorial: "ovni", subtipo: "amanda-waller,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/wonder_woman_vol_2_cov-f4638114fd1fcd5e3f17715403785100-640-0.webp" },
     { titulo: "Batman de Chip Zdarsky #7: Ciudad Moribunda", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_ciudad_moribunda_cov-0a01a8c7faa9d26e6417576312593064-640-0.webp" },
     { titulo: "Liga de La Justicia Ilimitada Vol. 1: Somos Ayer", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,liga,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/liga_de_la_justicia_ilimitada_cov-e5f7fbdbcb94c867e017613104129096-640-0.webp" },
     { titulo: "Liga de La Justicia Ilimitada Vol. 2: El Acto Omega", categoria: "infinite-frontier-dc", editorial: "ovni", subtipo: "batman,liga,superman,wonder-woman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/liga_de_la_justicia_ilimitada_el_acto_omega_cov-4ddff38cec55137caf17625197595223-1024-1024.webp" },
@@ -6869,6 +6869,15 @@ const colecciones = [
         peliculas: []
     },
     {
+        id: "dawn-of-dc",
+        titulo: "Dawn of DC",
+        categoria: "dc-argentina",
+        poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/knight_terrors_cov-3bf8a19bfa4ecd068817395431158919-1024-1024.webp",
+        esContenedor: true,
+        etiqueta: "Cómic",
+        peliculas: []
+    },
+    {
         id: "absolute-dc",
         titulo: "Absolute",
         categoria: "dc-argentina",
@@ -7742,6 +7751,7 @@ function renderizarColecciones() {
         "post-crisis-dc": "seccion-post-crisis-dc",
         "pre-crisis-dc": "seccion-pre-crisis-dc",
         "infinite-frontier-dc": "seccion-infinite-frontier-dc",
+        "dawn-of-dc": "seccion-dawn-of-dc",
         "elseworlds-otros-dc": "seccion-elseworlds-otros-dc",
         "los-nuevos-52-dc-argentina": "seccion-los-nuevos-52-dc-argentina",
         "marvel-comics-hub": "seccion-marvel-comics-hub",
@@ -8268,6 +8278,7 @@ function renderizarContenido() {
         "post-crisis-dc": "seccion-post-crisis-dc",
         "pre-crisis-dc": "seccion-pre-crisis-dc",
         "infinite-frontier-dc": "seccion-infinite-frontier-dc",
+        "dawn-of-dc": "seccion-dawn-of-dc",
         "elseworlds-otros-dc": "seccion-elseworlds-otros-dc",
         "los-nuevos-52-dc-argentina": "seccion-los-nuevos-52-dc-argentina",
         "absolute-dc": "seccion-absolute-dc",
@@ -8366,7 +8377,7 @@ function renderizarContenido() {
             // muestra los mismos de cada continuidad, filtrables por personaje.
             // Continuidad principal: Renacimiento, Post-Crisis y lo que sigamos
             // agregando de la línea histórica. Elseworlds: Absolute y afines.
-            if (item.categoria === "renacimiento-dc" || item.categoria === "post-crisis-dc" || item.categoria === "los-nuevos-52-dc-argentina" || item.categoria === "infinite-frontier-dc" || item.categoria === "pre-crisis-dc") {
+            if (item.categoria === "renacimiento-dc" || item.categoria === "post-crisis-dc" || item.categoria === "los-nuevos-52-dc-argentina" || item.categoria === "infinite-frontier-dc" || item.categoria === "dawn-of-dc" || item.categoria === "pre-crisis-dc") {
                 const grillaPrincipal = document.getElementById("grilla-camino-heroe-principal");
                 if (grillaPrincipal) grillaPrincipal.insertAdjacentHTML('beforeend', htmlTarjeta);
 
@@ -36486,6 +36497,13 @@ if(btnVolverPostCrisisDc) {
 const btnVolverInfiniteFrontierDc = document.getElementById('btn-volver-infinite-frontier-dc');
 if(btnVolverInfiniteFrontierDc) {
     btnVolverInfiniteFrontierDc.addEventListener('click', () => {
+        cambiarSeccion(document.getElementById('seccion-dc-argentina'));
+    });
+}
+
+const btnVolverDawnOfDc = document.getElementById('btn-volver-dawn-of-dc');
+if(btnVolverDawnOfDc) {
+    btnVolverDawnOfDc.addEventListener('click', () => {
         cambiarSeccion(document.getElementById('seccion-dc-argentina'));
     });
 }
