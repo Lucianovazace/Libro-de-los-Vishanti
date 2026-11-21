@@ -31939,14 +31939,27 @@ const IMAGENES_PERSONAJES = {
     krypto: "https://i.pinimg.com/564x/2a/6f/52/2a6f520dae19ddd183e1affa1dc0ddd1.jpg",
     jimmy_olsen: "https://i.pinimg.com/736x/ba/ef/b5/baefb5459acf2b5a9670a38846314a86.jpg",
     chloe_sullivan: "https://i.pinimg.com/564x/80/61/9e/80619e326de3bc93e75993a74b0edd13.jpg",
-    superboy: "https://i.pinimg.com/474x/a9/b2/1d/a9b21dc3d67685a8adcf6f58ece6ae38.jpg"
+    superboy: "https://i.pinimg.com/474x/a9/b2/1d/a9b21dc3d67685a8adcf6f58ece6ae38.jpg",
+    wally_west: "https://i.pinimg.com/736x/1e/f5/99/1ef599cca888cf1ee368423464184343.jpg",
+    donna_troy: "https://i.pinimg.com/474x/0d/fd/a7/0dfda773516dbca60b3a483ad5f64c47.jpg",
+    dinah_lance: "https://i.pinimg.com/736x/d1/91/d7/d191d7456f7c5febf9c4781f1b5385c3.jpg",
+    green_arrow: "https://i.pinimg.com/236x/18/3b/98/183b988431b381b1915e080c6046ee33.jpg",
+    raven: "https://i.pinimg.com/736x/6a/05/35/6a05357d64cf1fe42020028de9e8fab5.jpg",
+    terra: "https://i.pinimg.com/236x/66/d3/05/66d3056fb724a8efd6ce115d4a880756.jpg",
+    billy_batson: "https://i.pinimg.com/736x/35/0d/8b/350d8b7a614deda425ff4abf7aa9f671.jpg",
+    swamp_thing: "https://i.pinimg.com/236x/fe/8a/83/fe8a839caec87d978dd3fb92e8bb4cf3.jpg",
+    talia_al_ghul: "https://i.pinimg.com/564x/e3/1d/28/e31d28959f82a35d899873f23258c22f.jpg",
+    deathstroke: "https://i.pinimg.com/736x/23/bc/49/23bc49febc25b43a369a5ef4dd5f950f.jpg",
+    gorilla_grodd: "https://i.pinimg.com/236x/63/d7/a0/63d7a08fc0344e3bf35be0fd98b72514.jpg",
+    hades: "https://i.pinimg.com/736x/12/70/78/1270787dfee916b11f75c76ddc7a0205.jpg"
 };
 const WORDLE_IMAGEN_DE = {
     joker: 'joker', batman: 'batman', bruce: 'batman', robin: 'robin', flash: 'flash', barry: 'flash',
     quinn: 'harley', harley: 'harley', luthor: 'luthor', shazam: 'shazam', groot: 'groot', venom: 'venom', brock: 'venom',
     logan: 'wolverine', storm: 'storm', thanos: 'thanos', spider: 'spiderman', arana: 'spiderman', peter: 'spiderman',
     rocket: 'rocket', gamora: 'gamora',
-    clark: 'clark_kent', diana: 'diana_prince', cyborg: 'cyborg', vixen: 'vixen', jonzz: 'martian_manhunter', palmer: 'atom', kendra: 'hawkgirl', trevor: 'steve_trevor', orion: 'orion', steel: 'steel', krypto: 'krypto', olsen: 'jimmy_olsen', chloe: 'chloe_sullivan', conner: 'superboy'
+    clark: 'clark_kent', diana: 'diana_prince', cyborg: 'cyborg', vixen: 'vixen', jonzz: 'martian_manhunter', palmer: 'atom', kendra: 'hawkgirl', trevor: 'steve_trevor', orion: 'orion', steel: 'steel', krypto: 'krypto', olsen: 'jimmy_olsen', chloe: 'chloe_sullivan', conner: 'superboy',
+    wally: 'wally_west', donna: 'donna_troy', dinah: 'dinah_lance', queen: 'green_arrow', arrow: 'green_arrow', raven: 'raven', terra: 'terra', billy: 'billy_batson', swamp: 'swamp_thing', talia: 'talia_al_ghul', slade: 'deathstroke', grodd: 'gorilla_grodd', hades: 'hades'
 };
 // Palabras del juego (apellido o apodo) que corresponden a un personaje que ya tiene foto en los juegos Nombralos (por id).
 const WORDLE_IMAGEN_NOMBRALOS = { jordan: 'hal_jordan', rayner: 'kyle_rayner', cassie: 'cassandra_cain', brown: 'stephanie_brown' };
