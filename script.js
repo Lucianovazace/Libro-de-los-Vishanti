@@ -38350,6 +38350,29 @@ function renderizarQueMiro() {
             ]
         },
         {
+            id: 'dicaprio-rt', grupo: 'Filmografías', titulo: 'Mejor valoradas de Leonardo DiCaprio (Rotten Tomatoes)',
+            sub: 'Sus películas con papel actoral, por Tomatometer de Rotten Tomatoes. Las películas con el mismo porcentaje están empatadas.', tipo: 'peliculas', fmt: 'pct',
+            fuente: 'Rotten Tomatoes, guía "All Leonardo DiCaprio Movies Ranked by Tomatometer" (editorial.rottentomatoes.com), actualizada el 15 de diciembre de 2025. Solo cuenta películas donde actúa (no documentales ni producciones). Los porcentajes pueden cambiar con el tiempo.',
+            items: [
+                { n: 'Catch Me If You Can', y: 2002, v: 96, a: ['atrapame si puedes', 'atrápame si puedes'] },
+                { n: 'One Battle After Another', y: 2025, v: 94, a: ['una batalla tras otra', 'one battle after another'] },
+                { n: 'Killers of the Flower Moon', y: 2023, v: 93, a: ['los asesinos de la luna de sangre', 'asesinos de la luna de sangre', 'killers of the flower moon', 'flower moon'] },
+                { n: 'The Departed', y: 2006, v: 91, a: ['los infiltrados', 'infiltrados', 'departed'] },
+                { n: "What's Eating Gilbert Grape", y: 1993, v: 90, a: ['gilbert grape', "que le pasa a gilbert grape", 'a quien ama gilbert grape', 'whats eating gilbert grape'] },
+                { n: 'Titanic', y: 1997, v: 88, a: [] },
+                { n: 'Django Unchained', y: 2012, v: 87, g: 'a', a: ['django sin cadenas', 'django', 'django desencadenado'] },
+                { n: 'The Aviator', y: 2004, v: 87, g: 'a', a: ['el aviador', 'aviator'] },
+                { n: 'Inception', y: 2010, v: 86, g: 'b', a: ['el origen', 'origen'] },
+                { n: 'Once Upon a Time… in Hollywood', y: 2019, v: 86, g: 'b', a: ['erase una vez en hollywood', 'once upon a time in hollywood', 'once upon a time en hollywood', 'érase una vez en hollywood'] }
+            ],
+            fuera: [
+                { n: "Marvin's Room", r: 11, a: ['marvins room', 'el cuarto de marvin', 'marvin room'] },
+                { n: "William Shakespeare's Romeo + Juliet", r: 12, a: ['romeo y julieta', 'romeo + julieta', 'romeo + juliet', 'romeo and juliet', 'romeo juliet'] },
+                { n: 'The Wolf of Wall Street', r: 13, a: ['el lobo de wall street', 'lobo de wall street', 'wolf of wall street'] },
+                { n: 'The Revenant', r: 14, a: ['el renacido', 'renacido', 'revenant'] }
+            ]
+        },
+        {
             id: 'dicaprio-taq', grupo: 'Filmografías', titulo: 'Películas más taquilleras de Leonardo DiCaprio',
             sub: 'Sus películas con papel actoral, por recaudación mundial.', tipo: 'peliculas',
             fuente: T10_FUENTE_NUMBERS + ' Fuente específica: ficha de Leonardo DiCaprio (créditos de actuación). Algunas películas no tienen cifra mundial en la fuente y no se pueden rankear.',
@@ -38375,7 +38398,7 @@ function renderizarQueMiro() {
     const MAX_ERRORES = 5;
     const $ = id => document.getElementById(id);
     const norm = s => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]/g, '');
-    const fmtV = v => v >= 1e9 ? 'US$ ' + (v / 1e9).toFixed(2).replace('.', ',') + ' mil M' : 'US$ ' + Math.round(v / 1e6).toLocaleString('es-AR') + ' M';
+    const fmtV = (v, f) => f === 'pct' ? v + '%' : v >= 1e9 ? 'US$ ' + (v / 1e9).toFixed(2).replace('.', ',') + ' mil M' : 'US$ ' + Math.round(v / 1e6).toLocaleString('es-AR') + ' M';
     let lista = null, estado = null;
 
     function distancia(a, b) {
@@ -38410,18 +38433,30 @@ function renderizarQueMiro() {
     }
     function mejorDe(id) { try { return parseInt(localStorage.getItem('t10-mejor-' + id) || '0', 10); } catch (e) { return 0; } }
     function msg(t, c) { const m = $('t10-mensaje'); if (m) { m.textContent = t; m.className = 'mensaje-elenco' + (c ? ' ' + c : ''); } }
+    // Con empates (campo g), los ítems del mismo grupo son intercambiables entre sus puestos.
+    function grupoDe(i) { const g = lista.items[i].g; return g ? lista.items.map((x, j) => x.g === g ? j : -1).filter(j => j >= 0) : [i]; }
+    function ubicar(i) {
+        const libres = grupoDe(i).filter(j => estado.puestos[j] === undefined);
+        const slot = libres.indexOf(i) >= 0 ? i : libres[0];
+        estado.puestos[slot] = i;
+        return slot;
+    }
     function dibujar() {
         const ol = $('t10-tabla'); if (!ol) return;
         ol.innerHTML = '';
-        lista.items.forEach((it, i) => {
+        const sobrantes = {};
+        if (estado.terminado) lista.items.forEach((it, i) => { if (!estado.aciertos.has(i)) (sobrantes[it.g || ('#' + i)] = sobrantes[it.g || ('#' + i)] || []).push(i); });
+        lista.items.forEach((slotIt, s) => {
             const li = document.createElement('li');
-            const acerto = estado.aciertos.has(i);
+            const acerto = estado.puestos[s] !== undefined;
             const revel = estado.terminado && !acerto;
+            const idx = acerto ? estado.puestos[s] : (revel ? (sobrantes[slotIt.g || ('#' + s)] || [s]).shift() : s);
+            const it = lista.items[idx];
             li.className = 't10-fila' + (acerto ? ' acierto' : '') + (revel ? ' revelada' : '');
-            const n = document.createElement('span'); n.className = 't10-n'; n.textContent = i + 1;
+            const n = document.createElement('span'); n.className = 't10-n'; n.textContent = s + 1;
             const nom = document.createElement('span'); nom.className = 't10-nom';
             nom.textContent = (acerto || revel) ? it.n + (it.y ? ' (' + it.y + ')' : '') : '? ? ?';
-            const val = document.createElement('span'); val.className = 't10-val'; val.textContent = fmtV(it.v);
+            const val = document.createElement('span'); val.className = 't10-val'; val.textContent = fmtV(it.v, lista.fmt);
             li.append(n, nom, val);
             ol.appendChild(li);
         });
@@ -38446,7 +38481,8 @@ function renderizarQueMiro() {
         if (r && r.tipo === 'top') {
             if (estado.aciertos.has(r.idx)) { msg('Esa ya la pusiste.', 'error'); return; }
             estado.aciertos.add(r.idx);
-            msg(`¡Sí! ${lista.items[r.idx].n} es el #${r.idx + 1}.`, 'exito');
+            const puesto = ubicar(r.idx);
+            msg(`¡Sí! ${lista.items[r.idx].n} es el #${puesto + 1}${lista.items[r.idx].g ? ' (empatada)' : ''}.`, 'exito');
             dibujar();
             guardarMejor();
             if (estado.aciertos.size === 10) terminar(true);
@@ -38463,40 +38499,34 @@ function renderizarQueMiro() {
         }
     }
     function vista(juego) {
-        $('t10-menu').classList.toggle('oculto', juego);
-        $('t10-juego').classList.toggle('oculto', !juego);
         window.scrollTo(0, 0);
     }
     function iniciar(id) {
         lista = T10_LISTAS.find(l => l.id === id);
         if (!lista) return;
-        estado = { aciertos: new Set(), errores: 0, terminado: false };
+        estado = { aciertos: new Set(), puestos: {}, errores: 0, terminado: false };
         $('t10-titulo').textContent = 'Top 10 🏆 ' + lista.titulo;
         $('t10-sub').textContent = lista.sub;
-        $('t10-fuente').textContent = 'Fuente: ' + lista.fuente;
+        $('t10-fuente').textContent = 'Fuente: ' + lista.fuente + (mejorDe(lista.id) ? ' · Tu mejor resultado en esta lista: ' + mejorDe(lista.id) + '/10.' : '');
         $('t10-input').value = '';
         msg('');
         dibujar();
         vista(true);
         if (window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches) $('t10-input').focus();
     }
-    function menu() {
-        const cont = $('t10-listas'); if (!cont) return;
-        cont.innerHTML = '';
-        let grupo = null;
-        T10_LISTAS.forEach(l => {
-            if (l.grupo !== grupo) { grupo = l.grupo; const h = document.createElement('h3'); h.className = 't10-grupo'; h.textContent = grupo; cont.appendChild(h); }
-            const b = document.createElement('button'); b.type = 'button'; b.className = 'btn-modal';
-            const mj = mejorDe(l.id);
-            b.textContent = l.titulo + (mj ? '  ·  mejor: ' + mj + '/10' : '');
-            b.addEventListener('click', () => iniciar(l.id));
-            cont.appendChild(b);
-        });
+    function listaDelDia() {
+        const f = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/Argentina/Buenos_Aires' }));
+        const dia = Math.floor(Date.UTC(f.getFullYear(), f.getMonth(), f.getDate()) / 86400000);
+        return T10_LISTAS[dia % T10_LISTAS.length].id;
+    }
+    function otraLista() {
+        const otras = T10_LISTAS.filter(l => !lista || l.id !== lista.id);
+        iniciar(otras[Math.floor(Math.random() * otras.length)].id);
     }
     const tarjeta = $('tarjeta-top10');
-    if (tarjeta) tarjeta.addEventListener('click', () => { menu(); cambiarSeccion($('seccion-top10')); vista(false); });
+    if (tarjeta) tarjeta.addEventListener('click', () => { cambiarSeccion($('seccion-top10')); iniciar(listaDelDia()); });
     const vj = $('btn-volver-juegos-desde-top10'); if (vj) vj.addEventListener('click', () => cambiarSeccion($('seccion-juegos')));
-    const vl = $('btn-volver-t10-listas'); if (vl) vl.addEventListener('click', () => { menu(); vista(false); });
+    const bo = $('t10-btn-otra'); if (bo) bo.addEventListener('click', otraLista);
     const form = $('t10-form');
     if (form) form.addEventListener('submit', e => { e.preventDefault(); const i = $('t10-input'); probar(i.value); i.value = ''; i.focus(); });
     const br = $('t10-btn-rendirme'); if (br) br.addEventListener('click', () => { if (lista && estado && !estado.terminado) terminar(false); });
