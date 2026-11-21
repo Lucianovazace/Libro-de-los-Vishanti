@@ -38350,6 +38350,92 @@ function renderizarQueMiro() {
             ]
         },
         {
+            id: 'taq-2019', grupo: "Taquilla por año", titulo: "Películas más taquilleras de 2019",
+            sub: "Estrenadas en 2019, por recaudación mundial acumulada.", tipo: 'peliculas',
+            fuente: T10_FUENTE_NUMBERS,
+            items: [
+                { n: "Avengers: Endgame", v: 2717503922, a: ["vengadores endgame", "los vengadores endgame", "avengers endgame", "endgame", "vengadores: endgame"] },
+                { n: "The Lion King", v: 1661454403, a: ["el rey leon", "rey leon", "lion king", "el rey leon 2019"] },
+                { n: "Frozen II", v: 1451653316, a: ["frozen 2", "frozen ii", "frozen 2 el reino del hielo", "frozen ii el reino del hielo"] },
+                { n: "Spider-Man: Far From Home", v: 1132298674, a: ["spiderman lejos de casa", "spider-man lejos de casa", "lejos de casa", "far from home", "spiderman far from home"] },
+                { n: "Captain Marvel", v: 1129576094, a: ["capitana marvel", "capitan marvel"] },
+                { n: "Joker", v: 1078751311, a: ["guason", "el guason", "joker 2019"] },
+                { n: "Toy Story 4", v: 1071177215, a: [] },
+                { n: "Star Wars: The Rise of Skywalker", v: 1069951814, a: ["star wars el ascenso de skywalker", "el ascenso de skywalker", "rise of skywalker", "star wars episodio ix", "star wars episodio 9", "star wars 9", "the rise of skywalker"] },
+                { n: "Aladdin", v: 1042126107, a: ["aladin", "aladdin 2019"] },
+                { n: "Jumanji: The Next Level", v: 792472668, a: ["jumanji el siguiente nivel", "jumanji siguiente nivel", "jumanji the next level", "jumanji 2", "jumanji next level"] }
+            ],
+            fuera: [
+                { n: "Fast & Furious Presents: Hobbs & Shaw", r: 11, a: ["rapidos y furiosos hobbs y shaw", "hobbs y shaw", "hobbs and shaw", "hobbs & shaw", "fast furious presents hobbs shaw"] },
+                { n: "Ne Zha", r: 12, a: ["nezha", "ne zha 1"] }
+            ]
+        },
+        {
+            id: 'taq-2023', grupo: "Taquilla por año", titulo: "Películas más taquilleras de 2023",
+            sub: "Estrenadas en 2023, por recaudación mundial acumulada.", tipo: 'peliculas',
+            fuente: T10_FUENTE_NUMBERS,
+            items: [
+                { n: "Barbie", v: 1432340485, a: [] },
+                { n: "The Super Mario Bros. Movie", v: 1361681488, a: ["super mario bros la pelicula", "super mario bros", "mario bros la pelicula", "mario bros", "super mario bros movie", "la pelicula de super mario bros"] },
+                { n: "Oppenheimer", v: 975781237, a: [] },
+                { n: "Guardians of the Galaxy Vol. 3", v: 845468744, a: ["guardianes de la galaxia vol 3", "guardianes de la galaxia 3", "guardians of the galaxy vol 3", "guardians of the galaxy 3", "guardianes de la galaxia volumen 3", "guardianes de la galaxia vol. 3", "gotg 3"] },
+                { n: "Fast X", v: 714567285, a: ["rapidos y furiosos 10", "rapidos y furiosos x", "fast and furious 10", "furious 10", "fast 10"] },
+                { n: "Spider-Man: Across the Spider-Verse", v: 681545031, a: ["spiderman a traves del spiderverso", "spider-man a traves del spider-verso", "a traves del spiderverso", "a traves del spider-verso", "across the spider verse", "across the spiderverse", "spiderman across the spiderverse"] },
+                { n: "Full River Red", v: 634631282, a: ["man jiang hong", "manjianghong", "full river red", "满江红"] },
+                { n: "Wonka", v: 629064276, a: [] },
+                { n: "The Wandering Earth 2", v: 604460538, a: ["la tierra errante 2", "wandering earth 2", "the wandering earth ii", "liulang diqiu 2"] },
+                { n: "The Little Mermaid", v: 568345048, a: ["la sirenita", "little mermaid", "la sirenita 2023"] }
+            ],
+            fuera: [
+                { n: "Mission: Impossible – Dead Reckoning Part One", r: 11, a: ["mision imposible sentencia mortal parte uno", "sentencia mortal", "dead reckoning", "mission impossible dead reckoning", "mision imposible 7", "mission impossible 7", "mision imposible sentencia mortal"] },
+                { n: "No More Bets", r: 12, a: ["guzhu yizhi", "no more bets"] }
+            ]
+        },
+        {
+            id: 'hanks-rt', grupo: "Filmografías", titulo: "Mejor valoradas de Tom Hanks (Rotten Tomatoes)",
+            sub: "Sus películas por Tomatometer de Rotten Tomatoes (incluye papeles de voz, como Woody en Toy Story). Las de igual porcentaje están empatadas.", tipo: 'peliculas', fmt: 'pct',
+            fuente: 'Rotten Tomatoes, guía "All Tom Hanks Movies Ranked by Tomatometer" (editorial.rottentomatoes.com), publicada el 22 de junio de 2026. Incluye papeles de voz. Los porcentajes pueden cambiar con el tiempo.',
+            items: [
+                { n: "Toy Story 2", y: 1999, v: 100, g: 'a', a: ["toy story 2"] },
+                { n: "Toy Story", y: 1995, v: 100, g: 'a', a: ["toy story 1", "toy story"] },
+                { n: "Toy Story 3", y: 2010, v: 98, a: [] },
+                { n: "Big", y: 1988, v: 97, a: ["quisiera ser grande", "big 1988"] },
+                { n: "Toy Story 4", y: 2019, v: 96, g: 'b', a: [] },
+                { n: "Catch Me If You Can", y: 2002, v: 96, g: 'b', a: ["atrapame si puedes", "atrápame si puedes"] },
+                { n: "A Beautiful Day in the Neighborhood", y: 2019, v: 95, a: ["un hermoso dia en el vecindario", "un buen dia en el vecindario", "un amigo extraordinario", "beautiful day in the neighborhood"] },
+                { n: "Saving Private Ryan", y: 1998, v: 94, g: 'c', a: ["rescatando al soldado ryan", "salvando al soldado ryan", "el soldado ryan"] },
+                { n: "Captain Phillips", y: 2013, v: 94, g: 'c', a: ["capitan phillips", "capitán phillips"] },
+                { n: "That Thing You Do!", y: 1996, v: 93, a: ["that thing you do", "esto es lo que hay"] }
+            ],
+            fuera: [
+                { n: "Toy Story 5", r: 11, a: ["toy story 5"] },
+                { n: "Apollo 13", r: 11, a: ["apolo 13", "apollo trece"] },
+                { n: "Bridge of Spies", r: 13, a: ["el puente de los espias", "puente de los espias"] },
+                { n: "The Post", r: 14, a: ["los archivos del pentagono", "post"] }
+            ]
+        },
+        {
+            id: 'directores-taq', grupo: "Directores", titulo: "Directores más taquilleros de la historia",
+            sub: "Suma de la recaudación mundial de las películas que dirigieron (ranking en versión beta de The Numbers).", tipo: 'directores',
+            fuente: T10_FUENTE_NUMBERS + ' Ranking de directores en versión beta: la propia fuente avisa que puede tener omisiones. Joe y Anthony Russo codirigen y comparten la misma cifra.',
+            items: [
+                { n: "Steven Spielberg", v: 10696894028, a: ["spielberg"] },
+                { n: "James Cameron", v: 8702543077, a: ["cameron"] },
+                { n: "Joe Russo", v: 6834426702, g: 'r', a: ["hermanos russo", "russo", "joe"] },
+                { n: "Anthony Russo", v: 6834426702, g: 'r', a: ["hermanos russo", "russo", "anthony"] },
+                { n: "Peter Jackson", v: 6537860134, a: ["jackson", "peter"] },
+                { n: "Michael Bay", v: 6495849210, a: ["bay"] },
+                { n: "David Yates", v: 6333060654, a: ["yates"] },
+                { n: "Christopher Nolan", v: 6015260142, a: ["nolan", "christopher"] },
+                { n: "J.J. Abrams", v: 4648965502, a: ["jj abrams", "abrams", "jeffrey abrams"] },
+                { n: "Ridley Scott", v: 4581242766, a: ["scott", "ridley"] }
+            ],
+            fuera: [
+                { n: "Tim Burton", r: 11, a: ["burton"] },
+                { n: "Robert Zemeckis", r: 12, a: ["zemeckis"] }
+            ]
+        },
+        {
             id: 'dicaprio-rt', grupo: 'Filmografías', titulo: 'Mejor valoradas de Leonardo DiCaprio (Rotten Tomatoes)',
             sub: 'Sus películas con papel actoral, por Tomatometer de Rotten Tomatoes. Las películas con el mismo porcentaje están empatadas.', tipo: 'peliculas', fmt: 'pct',
             fuente: 'Rotten Tomatoes, guía "All Leonardo DiCaprio Movies Ranked by Tomatometer" (editorial.rottentomatoes.com), actualizada el 15 de diciembre de 2025. Solo cuenta películas donde actúa (no documentales ni producciones). Los porcentajes pueden cambiar con el tiempo.',
@@ -38417,8 +38503,8 @@ function renderizarQueMiro() {
         const claves = [];
         lista.items.forEach((it, i) => [it.n].concat(it.a).forEach(s => claves.push({ k: norm(s), tipo: 'top', idx: i })));
         lista.fuera.forEach((it, i) => [it.n].concat(it.a).forEach(s => claves.push({ k: norm(s), tipo: 'fuera', idx: i })));
-        const ex = claves.find(c => c.k === q);
-        if (ex) return ex;
+        const exs = claves.filter(c => c.k === q);
+        if (exs.length) return exs.find(c => c.tipo === 'top' && !estado.aciertos.has(c.idx)) || exs[0];
         if (q.length < 7) return null;
         const dig = s => s.replace(/[^0-9]/g, '');
         const cerca = claves.filter(c => c.k.length >= 7 && dig(c.k) === dig(q) && distancia(c.k, q) <= 1);
