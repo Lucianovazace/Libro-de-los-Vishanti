@@ -38279,3 +38279,226 @@ function renderizarQueMiro() {
     const volver = $('btn-volver-adivina-camiseta');
     if (volver) volver.addEventListener('click', () => cambiarSeccion($('seccion-futbol')));
 })();
+
+// ==========================================
+// Top 10 de Cine: el jugador escribe nombres y cada acierto ocupa su lugar en el ranking.
+// Datos: cada lista lleva su fuente y la fecha en que se tomó; "fuera" son los puestos 11 y 12 (para avisar "casi").
+(function () {
+    const T10_FUENTE_NUMBERS = 'The Numbers (the-numbers.com), consultado en noviembre de 2026. Cifras en dólares sin ajustar por inflación; la fuente se actualiza todos los días, así que el ranking puede cambiar.';
+    const T10_LISTAS = [
+        {
+            id: 'taq-historia', grupo: 'Taquilla', titulo: 'Películas más taquilleras de la historia',
+            sub: 'Recaudación mundial acumulada (sin ajustar por inflación).', tipo: 'peliculas',
+            fuente: T10_FUENTE_NUMBERS + ' Incluye estrenos de 2026 que pueden seguir sumando.',
+            items: [
+                { n: 'Avengers: Endgame', y: 2019, v: 2942653044, a: ['vengadores endgame', 'los vengadores endgame', 'avengers endgame', 'endgame', 'vengadores: endgame'] },
+                { n: 'Avatar', y: 2009, v: 2923706026, a: [] },
+                { n: 'Spider-Man: Brand New Day', y: 2026, v: 2521329852, a: ['spiderman brand new day', 'brand new day', 'spider man brand new day'] },
+                { n: 'Avatar: The Way of Water', y: 2022, v: 2322902023, a: ['avatar el camino del agua', 'el camino del agua', 'way of water', 'avatar 2', 'avatar the way of water'] },
+                { n: 'Titanic', y: 1997, v: 2223048786, a: [] },
+                { n: 'Star Wars: The Force Awakens', y: 2015, v: 2056046835, a: ['star wars el despertar de la fuerza', 'el despertar de la fuerza', 'the force awakens', 'force awakens', 'star wars episodio vii', 'star wars 7', 'star wars vii', 'star wars episodio 7'] },
+                { n: 'Avengers: Infinity War', y: 2018, v: 2048158241, a: ['vengadores infinity war', 'los vengadores infinity war', 'infinity war', 'guerra infinita', 'vengadores guerra infinita', 'avengers infinity war'] },
+                { n: 'Ne Zha 2', y: 2025, v: 2003786333, a: ['nezha 2', 'ne zha 2', 'nezha2'] },
+                { n: 'Spider-Man: No Way Home', y: 2021, v: 1921206586, a: ['spiderman no way home', 'no way home', 'spiderman sin camino a casa', 'spider-man sin camino a casa', 'sin camino a casa'] },
+                { n: 'Zootopia 2', y: 2025, v: 1870309291, a: ['zootropolis 2', 'zootopia2', 'zootrópolis 2'] }
+            ],
+            fuera: [
+                { n: 'The Odyssey', r: 11, a: ['la odisea', 'odyssey'] },
+                { n: 'Inside Out 2', r: 12, a: ['intensamente 2', 'intensa-mente 2', 'inside out 2'] }
+            ]
+        },
+        {
+            id: 'taq-2016', grupo: 'Taquilla por año', titulo: 'Películas más taquilleras de 2016',
+            sub: 'Estrenadas en 2016, por recaudación mundial acumulada.', tipo: 'peliculas',
+            fuente: T10_FUENTE_NUMBERS,
+            items: [
+                { n: 'Captain America: Civil War', y: 2016, v: 1151899586, a: ['capitan america civil war', 'capitan america guerra civil', 'guerra civil', 'civil war', 'captain america civil war'] },
+                { n: 'Rogue One: A Star Wars Story', y: 2016, v: 1055083596, a: ['rogue one', 'rogue one una historia de star wars', 'una historia de star wars', 'star wars rogue one'] },
+                { n: 'Finding Dory', y: 2016, v: 1025006125, a: ['buscando a dory', 'dory', 'finding dory'] },
+                { n: 'Zootopia', y: 2016, v: 1018518000, a: ['zootropolis', 'zootrópolis'] },
+                { n: 'The Jungle Book', y: 2016, v: 950697998, a: ['el libro de la selva', 'libro de la selva', 'jungle book', 'the jungle book'] },
+                { n: 'The Secret Life of Pets', y: 2016, v: 886013000, a: ['mascotas', 'la vida secreta de tus mascotas', 'secret life of pets', 'la vida secreta de las mascotas', 'vida secreta de tus mascotas'] },
+                { n: 'Batman v Superman: Dawn of Justice', y: 2016, v: 874360194, a: ['batman vs superman', 'batman v superman', 'batman vs superman el origen de la justicia', 'el origen de la justicia', 'dawn of justice', 'batman contra superman'] },
+                { n: 'Fantastic Beasts and Where to Find Them', y: 2016, v: 816037575, a: ['animales fantasticos y donde encontrarlos', 'animales fantasticos', 'fantastic beasts', 'animales fantásticos'] },
+                { n: 'Deadpool', y: 2016, v: 781947691, a: [] },
+                { n: 'Suicide Squad', y: 2016, v: 749200054, a: ['escuadron suicida', 'escuadrón suicida'] }
+            ],
+            fuera: [
+                { n: 'Moana', r: 11, a: ['moana un mar de aventuras', 'vaiana'] },
+                { n: 'Doctor Strange', r: 12, a: ['doctor strange hechicero supremo', 'hechicero supremo'] }
+            ]
+        },
+        {
+            id: 'actores-taq', grupo: 'Actores', titulo: 'Actores más taquilleros de la historia',
+            sub: 'Suma de la recaudación mundial de todas sus películas con papel de acción real (sin voces ni cameos).', tipo: 'actores',
+            fuente: T10_FUENTE_NUMBERS + ' Criterio: ranking "live action" de The Numbers; no cuenta papeles de voz ni cameos, por eso no aparecen Stan Lee ni Frank Welker.',
+            items: [
+                { n: 'Samuel L. Jackson', v: 21072481210, a: ['samuel jackson', 'jackson', 'sam jackson'] },
+                { n: 'Robert Downey Jr.', v: 15979307976, a: ['robert downey', 'downey', 'robert downey junior', 'rdj'] },
+                { n: 'Zoe Saldaña', v: 15288292683, a: ['zoe saldana', 'saldana', 'saldaña'] },
+                { n: 'Warwick Davis', v: 14551089068, a: ['davis'] },
+                { n: 'Benedict Cumberbatch', v: 14239348670, a: ['cumberbatch'] },
+                { n: 'Scarlett Johansson', v: 14119874677, a: ['johansson', 'scarlet johansson', 'scarlett johanson'] },
+                { n: 'Chris Hemsworth', v: 13891343269, a: ['hemsworth'] },
+                { n: 'Andy Serkis', v: 13798582120, a: ['serkis'] },
+                { n: 'Chris Pratt', v: 13451199864, a: ['pratt'] },
+                { n: 'Tom Cruise', v: 12929368171, a: ['cruise'] }
+            ],
+            fuera: [
+                { n: 'Jon Favreau', r: 11, a: ['favreau'] },
+                { n: 'Dwayne Johnson', r: 12, a: ['the rock', 'la roca', 'dwayne the rock johnson'] }
+            ]
+        },
+        {
+            id: 'dicaprio-taq', grupo: 'Filmografías', titulo: 'Películas más taquilleras de Leonardo DiCaprio',
+            sub: 'Sus películas con papel actoral, por recaudación mundial.', tipo: 'peliculas',
+            fuente: T10_FUENTE_NUMBERS + ' Fuente específica: ficha de Leonardo DiCaprio (créditos de actuación). Algunas películas no tienen cifra mundial en la fuente y no se pueden rankear.',
+            items: [
+                { n: 'Titanic', y: 1997, v: 2223048786, a: [] },
+                { n: 'Inception', y: 2010, v: 825786894, a: ['el origen', 'origen'] },
+                { n: 'The Revenant', y: 2015, v: 532938302, a: ['el renacido', 'renacido', 'revenant'] },
+                { n: 'Django Unchained', y: 2012, v: 449841566, a: ['django sin cadenas', 'django', 'django desencadenado'] },
+                { n: 'The Wolf of Wall Street', y: 2013, v: 389816136, a: ['el lobo de wall street', 'lobo de wall street', 'wolf of wall street'] },
+                { n: 'Once Upon a Time… in Hollywood', y: 2019, v: 377426903, a: ['erase una vez en hollywood', 'once upon a time in hollywood', 'once upon a time en hollywood', 'érase una vez en hollywood', 'erase una vez en... hollywood'] },
+                { n: 'Catch Me If You Can', y: 2002, v: 355612291, a: ['atrapame si puedes', 'atrápame si puedes'] },
+                { n: 'The Great Gatsby', y: 2013, v: 353497733, a: ['el gran gatsby', 'gran gatsby', 'great gatsby', 'gatsby'] },
+                { n: 'Shutter Island', y: 2010, v: 299461782, a: ['la isla siniestra', 'isla siniestra'] },
+                { n: 'The Departed', y: 2006, v: 289660619, a: ['los infiltrados', 'infiltrados', 'departed'] }
+            ],
+            fuera: [
+                { n: 'The Aviator', r: 11, a: ['el aviador', 'aviator'] },
+                { n: 'Gangs of New York', r: 12, a: ['pandillas de nueva york'] }
+            ]
+        }
+    ];
+    window.T10_LISTAS = T10_LISTAS;
+    const MAX_ERRORES = 5;
+    const $ = id => document.getElementById(id);
+    const norm = s => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]/g, '');
+    const fmtV = v => v >= 1e9 ? 'US$ ' + (v / 1e9).toFixed(2).replace('.', ',') + ' mil M' : 'US$ ' + Math.round(v / 1e6).toLocaleString('es-AR') + ' M';
+    let lista = null, estado = null;
+
+    function distancia(a, b) {
+        if (Math.abs(a.length - b.length) > 1) return 2;
+        const d = [];
+        for (let i = 0; i <= a.length; i++) { d[i] = [i]; }
+        for (let j = 1; j <= b.length; j++) d[0][j] = j;
+        for (let i = 1; i <= a.length; i++) for (let j = 1; j <= b.length; j++)
+            d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+        return d[a.length][b.length];
+    }
+    // Devuelve { tipo: 'top'|'fuera', idx } o null. Primero coincidencia exacta; si no, tolera 1 letra de error en textos largos.
+    function buscar(txt) {
+        const q = norm(txt);
+        if (!q) return null;
+        const claves = [];
+        lista.items.forEach((it, i) => [it.n].concat(it.a).forEach(s => claves.push({ k: norm(s), tipo: 'top', idx: i })));
+        lista.fuera.forEach((it, i) => [it.n].concat(it.a).forEach(s => claves.push({ k: norm(s), tipo: 'fuera', idx: i })));
+        const ex = claves.find(c => c.k === q);
+        if (ex) return ex;
+        if (q.length < 7) return null;
+        const dig = s => s.replace(/[^0-9]/g, '');
+        const cerca = claves.filter(c => c.k.length >= 7 && dig(c.k) === dig(q) && distancia(c.k, q) <= 1);
+        const unicos = new Set(cerca.map(c => c.tipo + c.idx));
+        return unicos.size === 1 ? cerca[0] : null;
+    }
+    function guardarMejor() {
+        try {
+            const k = 't10-mejor-' + lista.id, prev = parseInt(localStorage.getItem(k) || '0', 10);
+            if (estado.aciertos.size > prev) localStorage.setItem(k, String(estado.aciertos.size));
+        } catch (e) {}
+    }
+    function mejorDe(id) { try { return parseInt(localStorage.getItem('t10-mejor-' + id) || '0', 10); } catch (e) { return 0; } }
+    function msg(t, c) { const m = $('t10-mensaje'); if (m) { m.textContent = t; m.className = 'mensaje-elenco' + (c ? ' ' + c : ''); } }
+    function dibujar() {
+        const ol = $('t10-tabla'); if (!ol) return;
+        ol.innerHTML = '';
+        lista.items.forEach((it, i) => {
+            const li = document.createElement('li');
+            const acerto = estado.aciertos.has(i);
+            const revel = estado.terminado && !acerto;
+            li.className = 't10-fila' + (acerto ? ' acierto' : '') + (revel ? ' revelada' : '');
+            const n = document.createElement('span'); n.className = 't10-n'; n.textContent = i + 1;
+            const nom = document.createElement('span'); nom.className = 't10-nom';
+            nom.textContent = (acerto || revel) ? it.n + (it.y ? ' (' + it.y + ')' : '') : '? ? ?';
+            const val = document.createElement('span'); val.className = 't10-val'; val.textContent = fmtV(it.v);
+            li.append(n, nom, val);
+            ol.appendChild(li);
+        });
+        $('t10-aciertos').textContent = estado.aciertos.size + '/10';
+        $('t10-errores').textContent = 'Errores: ' + estado.errores + '/' + MAX_ERRORES;
+        const inp = $('t10-input'), b = $('t10-btn-probar');
+        if (inp) inp.disabled = estado.terminado;
+        if (b) b.disabled = estado.terminado;
+    }
+    function terminar(gano) {
+        estado.terminado = true;
+        guardarMejor();
+        dibujar();
+        const n = estado.aciertos.size;
+        if (gano) msg('¡Completaste el Top 10! 🏆', 'exito');
+        else msg(estado.errores >= MAX_ERRORES ? `Se acabaron los errores. Acertaste ${n}/10 (en rojo, las que faltaban).` : `Te rendiste con ${n}/10 (en rojo, las que faltaban).`, 'error');
+    }
+    function probar(txt) {
+        if (!lista || !estado || estado.terminado) return;
+        if (!norm(txt)) return;
+        const r = buscar(txt);
+        if (r && r.tipo === 'top') {
+            if (estado.aciertos.has(r.idx)) { msg('Esa ya la pusiste.', 'error'); return; }
+            estado.aciertos.add(r.idx);
+            msg(`¡Sí! ${lista.items[r.idx].n} es el #${r.idx + 1}.`, 'exito');
+            dibujar();
+            guardarMejor();
+            if (estado.aciertos.size === 10) terminar(true);
+        } else if (r && r.tipo === 'fuera') {
+            estado.errores++;
+            msg(`${lista.fuera[r.idx].n} quedó cerca, pero es el #${lista.fuera[r.idx].r}: no entra en el Top 10.`, 'error');
+            dibujar();
+            if (estado.errores >= MAX_ERRORES) terminar(false);
+        } else {
+            estado.errores++;
+            msg('Esa no está en el Top 10.', 'error');
+            dibujar();
+            if (estado.errores >= MAX_ERRORES) terminar(false);
+        }
+    }
+    function vista(juego) {
+        $('t10-menu').classList.toggle('oculto', juego);
+        $('t10-juego').classList.toggle('oculto', !juego);
+        window.scrollTo(0, 0);
+    }
+    function iniciar(id) {
+        lista = T10_LISTAS.find(l => l.id === id);
+        if (!lista) return;
+        estado = { aciertos: new Set(), errores: 0, terminado: false };
+        $('t10-titulo').textContent = 'Top 10 🏆 ' + lista.titulo;
+        $('t10-sub').textContent = lista.sub;
+        $('t10-fuente').textContent = 'Fuente: ' + lista.fuente;
+        $('t10-input').value = '';
+        msg('');
+        dibujar();
+        vista(true);
+        if (window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches) $('t10-input').focus();
+    }
+    function menu() {
+        const cont = $('t10-listas'); if (!cont) return;
+        cont.innerHTML = '';
+        let grupo = null;
+        T10_LISTAS.forEach(l => {
+            if (l.grupo !== grupo) { grupo = l.grupo; const h = document.createElement('h3'); h.className = 't10-grupo'; h.textContent = grupo; cont.appendChild(h); }
+            const b = document.createElement('button'); b.type = 'button'; b.className = 'btn-modal';
+            const mj = mejorDe(l.id);
+            b.textContent = l.titulo + (mj ? '  ·  mejor: ' + mj + '/10' : '');
+            b.addEventListener('click', () => iniciar(l.id));
+            cont.appendChild(b);
+        });
+    }
+    const tarjeta = $('tarjeta-top10');
+    if (tarjeta) tarjeta.addEventListener('click', () => { menu(); cambiarSeccion($('seccion-top10')); vista(false); });
+    const vj = $('btn-volver-juegos-desde-top10'); if (vj) vj.addEventListener('click', () => cambiarSeccion($('seccion-juegos')));
+    const vl = $('btn-volver-t10-listas'); if (vl) vl.addEventListener('click', () => { menu(); vista(false); });
+    const form = $('t10-form');
+    if (form) form.addEventListener('submit', e => { e.preventDefault(); const i = $('t10-input'); probar(i.value); i.value = ''; i.focus(); });
+    const br = $('t10-btn-rendirme'); if (br) br.addEventListener('click', () => { if (lista && estado && !estado.terminado) terminar(false); });
+    const bx = $('t10-btn-reiniciar'); if (bx) bx.addEventListener('click', () => { if (lista) iniciar(lista.id); });
+})();

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Libro de los Vishanti</title>
 <script>if(new Date().getMonth()===10)document.documentElement.classList.add('musicales-activo');</script>
-<link rel="stylesheet" href="style.css?v=20261121f">
+<link rel="stylesheet" href="style.css?v=20261121g">
 <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
@@ -24039,6 +24039,11 @@
                 <h3>Crucigrama</h3>
                 <p>Una grilla por día: completá los nombres de personajes con pistas armadas con datos del sitio. Elegí la categoría.</p>
             </div>
+            <div class="tarjeta-juego" id="tarjeta-top10">
+                <div class="icono-juego">🏆</div>
+                <h3>Top 10 de Cine</h3>
+                <p>Completá el ranking: películas más taquilleras, actores, filmografías. Tenés 5 errores. Elegí la lista.</p>
+            </div>
             <div class="tarjeta-juego" id="tarjeta-adivinaposter">
                 <div class="icono-juego">🖼️</div>
                 <h3>Adiviná el póster</h3>
@@ -24247,6 +24252,31 @@
     </section>
 
     <!-- SECCIÓN: JUEGO - ADIVINÁ EL PÓSTER -->
+    <section id="seccion-top10" class="oculto">
+        <div id="t10-menu">
+            <button class="btn-volver" id="btn-volver-juegos-desde-top10">← Volver a Juegos</button>
+            <h2>Top 10 de Cine 🏆</h2>
+            <p class="subtitulo-juegos">Elegí una lista y escribí los nombres que creas que están en el Top 10. Cada acierto ocupa su lugar en el ranking.</p>
+            <div id="t10-listas" class="t10-listas"></div>
+        </div>
+        <div id="t10-juego" class="oculto">
+            <button class="btn-volver" id="btn-volver-t10-listas">← Volver a las listas</button>
+            <h2 id="t10-titulo">Top 10</h2>
+            <p class="subtitulo-juegos" id="t10-sub"></p>
+            <div class="t10-estado"><span id="t10-aciertos">0/10</span> · <span id="t10-errores">Errores: 0/5</span></div>
+            <ol id="t10-tabla" class="t10-tabla"></ol>
+            <form id="t10-form" class="t10-form" autocomplete="off">
+                <input type="text" id="t10-input" class="t10-input" placeholder="Escribí un nombre…" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="send">
+                <button type="submit" class="btn-modal" id="t10-btn-probar">Probar</button>
+            </form>
+            <div id="t10-mensaje" class="mensaje-elenco"></div>
+            <div class="wordle-acciones">
+                <button type="button" class="btn-modal" id="t10-btn-rendirme">🏳️ Rendirme</button>
+                <button type="button" class="btn-modal" id="t10-btn-reiniciar">🔄 Reintentar</button>
+            </div>
+            <p class="subtitulo-juegos t10-fuente" id="t10-fuente"></p>
+        </div>
+    </section>
     <section id="seccion-adivinaposter" class="oculto">
         <button class="btn-volver" id="btn-volver-juegos-desde-adivinaposter">← Volver a Juegos</button>
         <h2>Adiviná el póster 🖼️</h2>
@@ -25754,6 +25784,6 @@
 <div id="contenedor-notificaciones-logros"></div>
 
 <script src="futbol-data.js"></script>
-<script src="script.js?v=20261121f"></script>
+<script src="script.js?v=20261121g"></script>
 </body>
 </html>
