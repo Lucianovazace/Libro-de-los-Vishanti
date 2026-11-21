@@ -2270,3 +2270,6 @@ h2 {
 .cw-dock .cw-acciones { display: flex; gap: 6px; margin: 4px auto 0; }
 .cw-dock .cw-acciones .btn-modal { flex: 1 1 0; margin-top: 0; padding: 8px 4px; font-size: 0.85rem; width: auto; }
 @media (max-width: 480px) { .cw-dock .wordle-tecla { height: 40px; } }
+
+/* Crucigrama: en PC (mouse + teclado físico) no hace falta el teclado en pantalla */
+@media (hover: hover) and (pointer: fine) { #cw-teclado { display: none; } }
