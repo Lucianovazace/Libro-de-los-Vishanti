@@ -34953,20 +34953,25 @@ function cwPoolMCU() {
 }
 
 // Pista exacta: nombre completo con la palabra tapada, o tipo · equipo · universo si el nombre es la palabra sola.
+// Tapa con rayas toda aparición de la respuesta en un texto de pista (p. ej. equipo "Hydra" para la palabra Hydra).
+function cwTaparRespuesta(txt, palabra) {
+    return String(txt).split(/([^A-Za-zÁÉÍÓÚÜÑáéíóúüñ]+)/).map(t => conNorm(t) === palabra ? '_'.repeat(palabra.length) : t).join('');
+}
 function cwPistaDe(p) {
     if (p.pistaFija) return p.pistaFija;
     const largo = p.palabra.length;
+    const equipoT = cwTaparRespuesta(p.equipo, p.palabra);
     const nombre = String(p.nombre);
     const tokens = nombre.split(/(\s+|[()\/,.-]+)/);
     let tapado = false;
     const partes = tokens.map(t => {
-        if (!tapado && conNorm(t) === p.palabra) { tapado = true; return '_'.repeat(largo); }
+        if (conNorm(t) === p.palabra) { tapado = true; return '_'.repeat(largo); }
         return t;
     });
     if (tapado && conNorm(nombre) !== p.palabra) {
-        return `${partes.join('').replace(/\s+/g, ' ').trim()} (${p.tipo}, ${p.equipo})`;
+        return `${partes.join('').replace(/\s+/g, ' ').trim()} (${p.tipo}, ${equipoT})`;
     }
-    return `${p.tipo} · ${p.equipo} · ${p.universo}`;
+    return `${p.tipo} · ${equipoT} · ${p.universo}`;
 }
 
 function cwGenerar(pool, rng, CW_TAM, CW_MAX_PALABRAS) {
@@ -35357,18 +35362,23 @@ function cwMover(paso) {
     cwSel.r = r; cwSel.c = c;
 }
 
+// Casilla que no se puede tocar: dada, revelada con pista o parte de una palabra ya correcta (verde).
+function cwBloq(k) {
+    if (cwFijas[k]) return true;
+    return !!cwLetras[k] && cwLetras[k] === cwPuzzle.celdas[k] && cwEntradasDe(k).some(cwEntradaOk);
+}
 function cwEscribir(l) {
     if (cwTerminado || !cwPuzzle) return;
     let k = cwSel.r + ',' + cwSel.c;
-    if (cwFijas[k] && cwLetras[k] === l) { cwMover(1); cwDibujar(); return; }   // tipeó la letra que ya está: solo avanza
-    if (cwFijas[k]) {
+    if (cwBloq(k) && cwLetras[k] === l) { cwMover(1); cwDibujar(); return; }   // tipeó la letra que ya está: solo avanza
+    if (cwBloq(k)) {
         // La casilla ya viene dada (o revelada): se sigue por la misma palabra. Si la próxima casilla dada ya tiene
         // esa letra, solo se avanza; si no, se escribe en la primera casilla libre.
         const e = cwEntradaSel();
         const ks = e ? cwCeldasDe(e) : [];
         let destino = null;
         for (const x of ks.slice(ks.indexOf(k) + 1)) {
-            if (!cwFijas[x]) { destino = x; break; }
+            if (!cwBloq(x)) { destino = x; break; }
             if (cwLetras[x] === l) { const [r3, c3] = x.split(',').map(Number); cwSel.r = r3; cwSel.c = c3; cwMover(1); cwDibujar(); return; }
         }
         if (!destino) { cwDibujar(); return; }
@@ -35387,8 +35397,14 @@ function cwEscribir(l) {
 function cwBorrar() {
     if (cwTerminado || !cwPuzzle) return;
     let k = cwSel.r + ',' + cwSel.c;
-    if (!cwLetras[k] || cwFijas[k]) { cwMover(-1); k = cwSel.r + ',' + cwSel.c; }
-    if (!cwFijas[k]) { delete cwLetras[k]; delete cwErroneas[k]; }
+    if (!cwLetras[k] || cwBloq(k)) {
+        for (let i = 0; i < 30; i++) {   // retrocede saltando las letras ya fijas o verdes
+            cwMover(-1);
+            k = cwSel.r + ',' + cwSel.c;
+            if (!cwBloq(k)) break;
+        }
+    }
+    if (!cwBloq(k)) { delete cwLetras[k]; delete cwErroneas[k]; }
     cwDibujar();
     cwGuardarLocal();
 }
@@ -35423,7 +35439,7 @@ function cwRevisar() {
 function cwPista() {
     if (cwTerminado || !cwPuzzle) return;
     const k = cwSel.r + ',' + cwSel.c;
-    if (cwFijas[k]) return;
+    if (cwBloq(k)) return;
     cwLetras[k] = cwPuzzle.celdas[k];
     cwFijas[k] = true;
     delete cwErroneas[k];
