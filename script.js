@@ -2301,6 +2301,8 @@ const listaMedia = [
     { titulo: "Batman: Año Uno", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_a_c3_b1o_uno_3ra_cov-7d43be04a0c1e39ee917745538512217-640-0.webp" },
     { titulo: "Batman: La Historia y la Leyenda #1: Año Uno", categoria: "post-crisis-dc", editorial: "clarin", subtipo: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/small/06/0d/8fba09a74d4b4b31a9b93f7b65f2ff9a.jpg" },
     { titulo: "Batman: La Historia y la Leyenda #3: El Ojo del Observador", categoria: "post-crisis-dc", editorial: "clarin", subtipo: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/small/10/35/b665ddde87f1407eb248854892898cf8.jpg" },
+    { titulo: "DC Coleccion Novelas Graficas #70: Batman: Presagios", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/29/06/22b93240864a49c9b36a4d551ea7981c.jpg" },
+    { titulo: "DC Coleccion Novelas Graficas #71: Batman: Forajidos", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/25/16/e80878a1c18d4c7db473dbba022dcf06.jpg" },
     { titulo: "Batman: Año Dos", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "batman", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_ano_dos_cov_arg1-1af52ac45310c42c5d16772101790752-1024-1024.webp" },
     { titulo: "Batman: La Historia y la Leyenda #4: Año Dos", categoria: "post-crisis-dc", editorial: "clarin", subtipo: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/small/21/3b/665f7a5285a74cc29405aa4d877991ec.jpg" },
     { titulo: "Batman: La Historia y la Leyenda #5: Círculo Mortal", categoria: "post-crisis-dc", editorial: "clarin", subtipo: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/small/16/0e/10265bb6fb1944e7819c3f4ab0cdae59.jpg" },
@@ -2327,8 +2329,6 @@ const listaMedia = [
     { titulo: "DC Coleccion Novelas Graficas #29: Lobo: Desatado", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "lobo", tipo: "Cómic", poster: "https://i1.whakoom.com/large/0f/0f/436fcf6db1b841b18de697138fa1dd60.jpg" },
     { titulo: "Nightwing: Año Uno", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "dick-grayson", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/nightwing_a_c3_91o_uno_cov-b1876679e396b50f3117835530418207-1024-1024.webp" },
     { titulo: "DC Coleccion Novelas Graficas #69: Nightwing: Año Uno", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "dick-grayson", tipo: "Cómic", poster: "https://i1.whakoom.com/large/28/19/7d07e1a615da4665a7623c5bd5f5c5ab.jpg" },
-    { titulo: "DC Coleccion Novelas Graficas #70: Batman: Presagios", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/29/06/22b93240864a49c9b36a4d551ea7981c.jpg" },
-    { titulo: "DC Coleccion Novelas Graficas #71: Batman: Forajidos", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/large/25/16/e80878a1c18d4c7db473dbba022dcf06.jpg" },
     { titulo: "Batman: Un Mal Dia #9: La Broma Asesina", categoria: "post-crisis-dc", editorial: "ovni", subtipo: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/batman_un_mal_dia_-_joker_-_cov-7a20a882b5ac7c7eff17486503201315-1024-1024.webp" },
     { titulo: "Esenciales DC #14: Batman: Una Muerte en La Familia", categoria: "post-crisis-dc", editorial: "salvat", subtipo: "batman,joker", tipo: "Cómic", poster: "https://acdn-us.mitiendanube.com/stores/001/184/069/products/bm_muerte_en_la_familia_cov_2da1-19c0c2be49848149f516868722605141-480-0.webp" },
     { titulo: "Batman: La Historia y la Leyenda #7: Una Muerte en la Familia", categoria: "post-crisis-dc", editorial: "clarin", subtipo: "batman", tipo: "Cómic", poster: "https://i1.whakoom.com/small/3f/1a/e8e6f318018441faa59af3c23cbb18a9.jpg" },
@@ -37462,6 +37462,8 @@ const RECOPILA_OVNI = {
 // Productos de Ovni que todavía no están cargados en el sitio. Si se agregan,
 // sirven para saber con qué otra edición coinciden.
 const RECOPILA_OVNI_EXTRA = {
+    "DC Coleccion Novelas Graficas #70: Batman: Presagios": "Batman: Tenses #1-2 (Casey/Hamner, 2003) y Green Lantern: Mosaic #1 (1992)",
+    "DC Coleccion Novelas Graficas #71: Batman: Forajidos": "Batman: Outlaws #1-3 (2000) y Batman #360 (1983)",
     "Superman: El Hombre de Acero (Ovni)": "The Man of Steel #1-6 (Byrne, 1986) = Salvat Esenciales #17 / HyV #42",
     "El Hombre de Acero (Ovni, Bendis)": "Action Comics #1000, DC Nation #0, The Man of Steel #1-6 (Bendis, 2018)",
     "La Muerte de Superman (Ovni)": "Action #683-684, Adventures of Superman #496-497, Justice League America #69, Superman #73-75, Man of Steel #17-19, Newstime: The Life and Death of the Man of Steel = Salvat Esenciales #10 / NG #18",
@@ -37588,8 +37590,7 @@ const RECOPILA_OVNI_EXTRA = {
 const RECOPILA_OVNI_PENDIENTES = [
     "Titanes: Fuera de las Sombras (sin Recopila en la página)", "One Operation Joker Vol. 1 (sin Recopila)", "Harley Quinn Vol. 2 y Yo Soy Suicida: sin Recopila en la página",
     
-    "JLA: Justicia / JSA: Kingdom Come / Joker: Asylum / Plastic Man (solo Salvat: confirmar con ECC/Salvat)",
-    "Salvat NG #70 Batman: Presagios y #71 Batman: Forajidos (identificar historia original)"
+    "JLA: Justicia / JSA: Kingdom Come / Joker: Asylum / Plastic Man (solo Salvat: confirmar con ECC/Salvat)"
 ];
 
 function recoNormalizarClave(titulo) {
