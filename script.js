@@ -38563,6 +38563,24 @@ function renderizarQueMiro() {
         } catch (e) {}
         return [...res];
     }
+    // Póster de la película si ya está cargado en el sitio (ficha técnica o catálogo); se muestra pequeño al acertar.
+    function t10PosterDe(it) {
+        if (it._poster !== undefined) return it._poster;
+        let src = null;
+        try {
+            const nk = x => String(x).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]/g, '');
+            const claves = new Set([it.n].concat(it.a || [], T10_ES[it.n] || []).map(nk));
+            for (const p of document.querySelectorAll('section[id^="seccion-ficha-"] .ficha-tecnica-poster')) {
+                if (p.alt && claves.has(nk(p.alt)) && p.getAttribute('src')) { src = p.getAttribute('src'); break; }
+            }
+            if (!src && typeof listaMedia !== 'undefined') {
+                const x = listaMedia.find(m => m.poster && claves.has(nk(m.titulo)));
+                if (x) src = x.poster;
+            }
+        } catch (e) {}
+        it._poster = src;
+        return src;
+    }
     T10_LISTAS.forEach(l => l.items.concat(l.fuera).forEach(it => {
         it.a = (it.a || []).concat(T10_ES[it.n] || []);
     }));
@@ -38579,7 +38597,7 @@ function renderizarQueMiro() {
         universal: { n: 'Universal', u: T10_W + 'b/b6/Universal_Pictures_logo.svg/330px-Universal_Pictures_logo.svg.png' },
         paramount: { n: 'Paramount', u: T10_W + '9/90/Paramount_Pictures_Corporation_logo.svg/330px-Paramount_Pictures_Corporation_logo.svg.png' },
         sony: { n: 'Sony Pictures', u: T10_W + 'd/d7/Sony_Pictures_logo.svg/330px-Sony_Pictures_logo.svg.png' },
-        dreamworks: { n: 'DreamWorks', u: T10_W + 'c/c7/DreamWorks_Animation_SKG_logo.svg/330px-DreamWorks_Animation_SKG_logo.svg.png' },
+        dreamworks: { n: 'DreamWorks', u: T10_W + 'a/a2/DreamWorks_Pictures.svg/330px-DreamWorks_Pictures.svg.png' },
         illumination: { n: 'Illumination', u: T10_W + 'e/e3/Illumination_Entertainment_logo.svg/330px-Illumination_Entertainment_logo.svg.png' },
         enlight: { n: 'Enlight Pictures' }, levision: { n: 'Le Vision' }, cfg: { n: 'China Film' }
     };
@@ -38674,6 +38692,13 @@ function renderizarQueMiro() {
             nom.textContent = (acerto || revel) ? it.n + (it.y ? ' (' + it.y + ')' : '') : '? ? ?';
             const val = document.createElement('span'); val.className = 't10-val'; val.textContent = fmtV(it.v, lista.fmt);
             li.append(n, logo, nom, val);
+            const pst = (acerto || revel) && lista.tipo === 'peliculas' ? t10PosterDe(it) : null;
+            if (pst) {
+                li.classList.add('con-poster');
+                const pi = document.createElement('img'); pi.className = 't10-poster'; pi.src = pst; pi.alt = it.n; pi.loading = 'lazy'; pi.referrerPolicy = 'no-referrer';
+                pi.addEventListener('error', () => { pi.remove(); li.classList.remove('con-poster'); });
+                li.appendChild(pi);
+            }
             ol.appendChild(li);
         });
         $('t10-aciertos').textContent = estado.aciertos.size + '/10';

@@ -2313,6 +2313,9 @@ h2 {
 .t10-fila.revelada { border-color: #8a3a34; background: #2a1616; }
 .t10-fila.revelada .t10-n { background: #5a2420; color: #ffb4ab; }
 .t10-fila.revelada .t10-nom { opacity: 1; letter-spacing: normal; }
+.t10-fila.con-poster { min-height: 84px; }
+.t10-poster { flex: 0 0 auto; width: 52px; height: 76px; object-fit: cover; border-radius: 6px; border: 1px solid #3a4a62; box-shadow: 0 2px 8px rgba(0,0,0,.5); margin: -2px 0 -2px 4px; align-self: center; }
+@media (max-width: 480px) { .t10-poster { width: 44px; height: 64px; } .t10-fila.con-poster { min-height: 76px; } }
 .t10-pie { display: flex; justify-content: center; gap: 18px; margin: 16px 0 6px; }
 .t10-link { background: none; border: none; color: #9fb0c8; font-size: 0.9rem; cursor: pointer; padding: 6px 4px; }
 .t10-link:hover { color: #fff; text-decoration: underline; }
