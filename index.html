@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Libro de los Vishanti</title>
 <script>if(new Date().getMonth()===10)document.documentElement.classList.add('musicales-activo');</script>
-<link rel="stylesheet" href="style.css?v=20261128a">
+<link rel="stylesheet" href="style.css?v=20261128b">
 <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
@@ -24253,23 +24253,30 @@
 
     <!-- SECCIÓN: JUEGO - ADIVINÁ EL PÓSTER -->
     <section id="seccion-top10" class="oculto">
-        <div id="t10-juego">
+        <div id="t10-juego" class="t10-juego">
             <button class="btn-volver" id="btn-volver-juegos-desde-top10">← Volver a Juegos</button>
-            <h2 id="t10-titulo">Top 10</h2>
-            <p class="subtitulo-juegos" id="t10-sub"></p>
-            <div class="t10-estado"><span id="t10-aciertos">0/10</span> · <span id="t10-errores">Errores: 0/5</span></div>
-            <ol id="t10-tabla" class="t10-tabla"></ol>
-            <form id="t10-form" class="t10-form" autocomplete="off">
-                <div class="t10-entrada"><input type="text" id="t10-input" class="t10-input" placeholder="Escribí un nombre…" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="send"><div id="t10-sugerencias" class="adp-sugerencias oculto"></div></div>
-                <button type="submit" class="btn-modal" id="t10-btn-probar">Probar</button>
-            </form>
-            <div id="t10-mensaje" class="mensaje-elenco"></div>
-            <div class="wordle-acciones">
-                <button type="button" class="btn-modal" id="t10-btn-rendirme">🏳️ Rendirme</button>
-                <button type="button" class="btn-modal" id="t10-btn-reiniciar">🔄 Reintentar</button>
-                <button type="button" class="btn-modal" id="t10-btn-otra">🎲 Otra lista</button>
+            <div class="t10-cabecera">
+                <span class="t10-kicker">🏆 TOP 10 DE CINE</span>
+                <h2 id="t10-titulo">Top 10</h2>
+                <p class="t10-sub" id="t10-sub"></p>
             </div>
-            <p class="subtitulo-juegos t10-fuente" id="t10-fuente"></p>
+            <div class="t10-estado"><span id="t10-aciertos" class="t10-chip">0/10</span><span id="t10-errores" class="t10-vidas" aria-label="Errores"></span></div>
+            <form id="t10-form" class="t10-form" autocomplete="off">
+                <div class="t10-entrada">
+                    <span class="t10-lupa" aria-hidden="true">🔍</span>
+                    <input type="text" id="t10-input" class="t10-input" placeholder="Escribí un nombre…" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="send">
+                    <div id="t10-sugerencias" class="adp-sugerencias oculto"></div>
+                </div>
+                <button type="button" class="t10-rendirse" id="t10-btn-rendirme">Rendirme</button>
+                <button type="submit" id="t10-btn-probar" hidden>Probar</button>
+            </form>
+            <div id="t10-mensaje" class="t10-mensaje" aria-live="polite"></div>
+            <ol id="t10-tabla" class="t10-tabla"></ol>
+            <div class="t10-pie">
+                <button type="button" class="t10-link" id="t10-btn-otra">🎲 Otra lista</button>
+                <button type="button" class="t10-link" id="t10-btn-reiniciar">🔄 Reintentar</button>
+            </div>
+            <details class="t10-fuente-det"><summary>Fuente de los datos</summary><p class="t10-fuente" id="t10-fuente"></p></details>
         </div>
     </section>
     <section id="seccion-adivinaposter" class="oculto">
@@ -25779,6 +25786,6 @@
 <div id="contenedor-notificaciones-logros"></div>
 
 <script src="futbol-data.js"></script>
-<script src="script.js?v=20261128a"></script>
+<script src="script.js?v=20261128b"></script>
 </body>
 </html>

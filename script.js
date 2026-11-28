@@ -38481,6 +38481,91 @@ function renderizarQueMiro() {
             ]
         }
     ];
+    // Títulos en español (Latinoamérica/España) y variantes de cada película: se aceptan igual que el original.
+    const T10_ES = {
+        'Avatar: The Way of Water': ['Avatar 2: El camino del agua'],
+        'Ne Zha 2': ['Nezha 2', 'Ne Zha 2 El niño demonio'],
+        'Zootopia': ['Zootrópolis', 'Zootopia: Una nueva ciudad', 'Zootopia una nueva ciudad'],
+        'Zootopia 2': ['Zootrópolis 2'],
+        'The Odyssey': ['La Odisea', 'Odisea'],
+        'Inside Out 2': ['Intensamente 2', 'Intensa-Mente 2', 'Del revés 2'],
+        'Captain America: Civil War': ['Capitán América: Guerra Civil', 'Capitán América Civil War', 'Civil War'],
+        'Finding Dory': ['Buscando a Dory'],
+        'The Jungle Book': ['El libro de la selva', 'Libro de la selva'],
+        'The Secret Life of Pets': ['Mascotas', 'La vida secreta de tus mascotas', 'La vida secreta de las mascotas'],
+        'Fantastic Beasts and Where to Find Them': ['Animales fantásticos y dónde encontrarlos', 'Animales fantásticos'],
+        'Suicide Squad': ['Escuadrón suicida'],
+        'Moana': ['Moana: Un mar de aventuras', 'Vaiana'],
+        'Doctor Strange': ['Doctor Strange: Hechicero Supremo', 'Doctor Extraño', 'Dr Strange'],
+        'The Lion King': ['El Rey León', 'Rey León'],
+        'Frozen II': ['Frozen 2', 'Frozen 2: El reino del hielo', 'Frozen 2 El reino del hielo'],
+        'Spider-Man: Far From Home': ['Spider-Man: Lejos de casa', 'Spiderman lejos de casa', 'Lejos de casa'],
+        'Captain Marvel': ['Capitana Marvel'],
+        'Joker': ['Guasón', 'El Guasón', 'Joker 2019'],
+        'Star Wars: The Rise of Skywalker': ['Star Wars: El ascenso de Skywalker', 'El ascenso de Skywalker', 'Star Wars 9', 'Star Wars IX', 'Star Wars Episodio IX'],
+        'Aladdin': ['Aladdín', 'Aladino'],
+        'Jumanji: The Next Level': ['Jumanji: El siguiente nivel', 'Jumanji el siguiente nivel', 'Jumanji 3'],
+        'Fast & Furious Presents: Hobbs & Shaw': ['Rápidos y furiosos: Hobbs & Shaw', 'Rápido y furioso: Hobbs & Shaw', 'Hobbs & Shaw', 'Hobbs and Shaw', 'Hobbs y Shaw'],
+        'Ne Zha': ['Ne Zha: El niño demonio', 'Nezha'],
+        'The Super Mario Bros. Movie': ['Super Mario Bros: La película', 'Super Mario Bros la película', 'Super Mario Bros', 'Mario Bros la película', 'La película de Super Mario Bros'],
+        'Guardians of the Galaxy Vol. 3': ['Guardianes de la Galaxia Vol. 3', 'Guardianes de la Galaxia 3'],
+        'Fast X': ['Rápidos y furiosos 10', 'Rápidos y furiosos X', 'Fast & Furious 10', 'Fast and Furious X'],
+        'Spider-Man: Across the Spider-Verse': ['Spider-Man: A través del Spider-Verso', 'Spiderman a través del Spider-Verso', 'A través del Spider-Verso'],
+        'Full River Red': ['Man Jiang Hong'],
+        'The Wandering Earth 2': ['La Tierra errante 2', 'Wandering Earth 2'],
+        'The Little Mermaid': ['La Sirenita'],
+        'Mission: Impossible – Dead Reckoning Part One': ['Misión: Imposible – Sentencia mortal Parte uno', 'Misión imposible sentencia mortal', 'Mission Impossible Dead Reckoning'],
+        'No More Bets': ['Sin más apuestas'],
+        'Big': ['Quisiera ser grande', 'Esto es grande'],
+        'A Beautiful Day in the Neighborhood': ['Un buen día en el vecindario', 'Un hermoso día en el vecindario'],
+        'Catch Me If You Can': ['Atrápame si puedes'],
+        'Saving Private Ryan': ['Rescatando al soldado Ryan'],
+        'Captain Phillips': ['Capitán Phillips'],
+        'That Thing You Do!': ['Eso que haces', 'That Thing You Do'],
+        'Bridge of Spies': ['El puente de los espías', 'Puente de los espías'],
+        'The Post': ['Los archivos del Pentágono', 'Los archivos del Pentagono'],
+        'One Battle After Another': ['Una batalla tras otra'],
+        'Killers of the Flower Moon': ['Los asesinos de la luna de las flores', 'Asesinos de la luna de las flores'],
+        'The Departed': ['Los infiltrados', 'Infiltrados'],
+        "What's Eating Gilbert Grape": ['¿A quién ama Gilbert Grape?', 'A quién ama Gilbert Grape', 'Gilbert Grape'],
+        'Django Unchained': ['Django sin cadenas', 'Django desencadenado'],
+        'The Aviator': ['El aviador', 'Aviador'],
+        'Inception': ['El origen', 'Origen'],
+        'Once Upon a Time… in Hollywood': ['Había una vez en Hollywood', 'Había una vez… en Hollywood', 'Once Upon a Time in Hollywood'],
+        "Marvin's Room": ['Un amor para recordar'],
+        "William Shakespeare's Romeo + Juliet": ['Romeo y Julieta', 'Romeo + Julieta', 'Romeo + Juliet'],
+        'The Wolf of Wall Street': ['El lobo de Wall Street', 'Lobo de Wall Street'],
+        'The Revenant': ['El renacido', 'Renacido'],
+        'The Great Gatsby': ['El gran Gatsby', 'Gran Gatsby'],
+        'Shutter Island': ['La isla siniestra', 'Isla siniestra', 'Isla del Terror'],
+        'Gangs of New York': ['Pandillas de Nueva York'],
+        'Avengers: Endgame': ['Vengadores: Endgame', 'Avengers: Fin del juego', 'Vengadores Endgame'],
+        'Avengers: Infinity War': ['Vengadores: Infinity War', 'Avengers: Guerra del Infinito', 'Guerra del infinito'],
+        'Spider-Man: No Way Home': ['Spider-Man: Sin camino a casa', 'Sin camino a casa', 'Spiderman no way home'],
+        'Spider-Man: Brand New Day': ['Spider-Man: Un nuevo día', 'Spider-Man Un nuevo día'],
+        'Batman v Superman: Dawn of Justice': ['Batman vs Superman', 'Batman vs Superman: El origen de la justicia', 'Batman v Superman'],
+        'Rogue One: A Star Wars Story': ['Rogue One', 'Star Wars: Rogue One'],
+        'Star Wars: The Force Awakens': ['Star Wars: El despertar de la fuerza', 'El despertar de la fuerza']
+    };
+    // Además de lo manual, se suman los demás títulos de la misma película que ya tiene el sitio (ficha + catálogo + alias del juego del póster).
+    function t10AliasAutomaticos(it) {
+        const res = new Set();
+        try {
+            const nk = x => String(x).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]/g, '');
+            const claves = new Set([it.n].concat(it.a || [], T10_ES[it.n] || []).map(nk));
+            const fichas = [];
+            document.querySelectorAll('section[id^="seccion-ficha-"] .ficha-tecnica-poster').forEach(p => { if (p.alt && claves.has(nk(p.alt))) fichas.push({ alt: p.alt, id: p.closest('section').id.replace('seccion-ficha-', '') }); });
+            fichas.forEach(f => {
+                res.add(f.alt);
+                if (typeof ADP_ALIAS !== 'undefined') (ADP_ALIAS[f.alt] || []).forEach(a => res.add(a));
+                if (typeof listaMedia !== 'undefined') listaMedia.forEach(x => { if (x.fichaTecnicaId === f.id) res.add(x.titulo); });
+            });
+        } catch (e) {}
+        return [...res];
+    }
+    T10_LISTAS.forEach(l => l.items.concat(l.fuera).forEach(it => {
+        it.a = (it.a || []).concat(T10_ES[it.n] || []);
+    }));
     window.T10_LISTAS = T10_LISTAS;
     const MAX_ERRORES = 5;
     const $ = id => document.getElementById(id);
@@ -38502,8 +38587,9 @@ function renderizarQueMiro() {
         const q = norm(txt);
         if (!q) return null;
         const claves = [];
-        lista.items.forEach((it, i) => [it.n].concat(it.a).forEach(s => claves.push({ k: norm(s), tipo: 'top', idx: i })));
-        lista.fuera.forEach((it, i) => [it.n].concat(it.a).forEach(s => claves.push({ k: norm(s), tipo: 'fuera', idx: i })));
+        const todos = it => { if (!it._auto) it._auto = lista.tipo === 'peliculas' ? t10AliasAutomaticos(it) : []; return [it.n].concat(it.a || [], it._auto); };
+        lista.items.forEach((it, i) => todos(it).forEach(s => claves.push({ k: norm(s), tipo: 'top', idx: i })));
+        lista.fuera.forEach((it, i) => todos(it).forEach(s => claves.push({ k: norm(s), tipo: 'fuera', idx: i })));
         const exs = claves.filter(c => c.k === q);
         if (exs.length) return exs.find(c => c.tipo === 'top' && !estado.aciertos.has(c.idx)) || exs[0];
         if (q.length < 7) return null;
@@ -38519,7 +38605,7 @@ function renderizarQueMiro() {
         } catch (e) {}
     }
     function mejorDe(id) { try { return parseInt(localStorage.getItem('t10-mejor-' + id) || '0', 10); } catch (e) { return 0; } }
-    function msg(t, c) { const m = $('t10-mensaje'); if (m) { m.textContent = t; m.className = 'mensaje-elenco' + (c ? ' ' + c : ''); } }
+    function msg(t, c) { const m = $('t10-mensaje'); if (m) { m.textContent = t; m.className = 't10-mensaje' + (c ? ' ' + c : ''); } }
     // Con empates (campo g), los ítems del mismo grupo son intercambiables entre sus puestos.
     function grupoDe(i) { const g = lista.items[i].g; return g ? lista.items.map((x, j) => x.g === g ? j : -1).filter(j => j >= 0) : [i]; }
     function ubicar(i) {
@@ -38548,7 +38634,7 @@ function renderizarQueMiro() {
             ol.appendChild(li);
         });
         $('t10-aciertos').textContent = estado.aciertos.size + '/10';
-        $('t10-errores').textContent = 'Errores: ' + estado.errores + '/' + MAX_ERRORES;
+        $('t10-errores').innerHTML = Array.from({ length: MAX_ERRORES }, (_, k) => '<span class="t10-vida' + (k < MAX_ERRORES - estado.errores ? '' : ' perdida') + '">♥</span>').join('');
         const inp = $('t10-input'), b = $('t10-btn-probar');
         if (inp) inp.disabled = estado.terminado;
         if (b) b.disabled = estado.terminado;
@@ -38592,7 +38678,7 @@ function renderizarQueMiro() {
         lista = T10_LISTAS.find(l => l.id === id);
         if (!lista) return;
         estado = { aciertos: new Set(), puestos: {}, errores: 0, terminado: false };
-        $('t10-titulo').textContent = 'Top 10 🏆 ' + lista.titulo;
+        $('t10-titulo').textContent = lista.titulo;
         $('t10-sub').textContent = lista.sub;
         $('t10-fuente').textContent = 'Fuente: ' + lista.fuente + (mejorDe(lista.id) ? ' · Tu mejor resultado en esta lista: ' + mejorDe(lista.id) + '/10.' : '');
         $('t10-input').value = '';
