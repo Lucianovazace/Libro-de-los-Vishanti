@@ -38596,6 +38596,7 @@ function renderizarQueMiro() {
         $('t10-sub').textContent = lista.sub;
         $('t10-fuente').textContent = 'Fuente: ' + lista.fuente + (mejorDe(lista.id) ? ' · Tu mejor resultado en esta lista: ' + mejorDe(lista.id) + '/10.' : '');
         $('t10-input').value = '';
+        if (typeof cerrarSug === 'function') cerrarSug();
         msg('');
         dibujar();
         vista(true);
@@ -38610,12 +38611,82 @@ function renderizarQueMiro() {
         const otras = T10_LISTAS.filter(l => !lista || l.id !== lista.id);
         iniciar(otras[Math.floor(Math.random() * otras.length)].id);
     }
+    // Sugerencias al escribir: películas (fichas + catálogo del sitio), actores o directores (repartos cargados).
+    // Se mezclan con muchas opciones que no son respuesta, así que no regalan nada.
+    const normEsp = s => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
+    const poolCache = {};
+    function poolDe(tipo) {
+        if (poolCache[tipo]) return poolCache[tipo];
+        const vistos = new Set(), res = [];
+        const sumar = t => { t = String(t || '').trim(); const k = normEsp(t); if (!k || vistos.has(k)) return; vistos.add(k); res.push({ t, k }); };
+        try {
+            if (tipo === 'peliculas') {
+                document.querySelectorAll('section[id^="seccion-ficha-"] .ficha-tecnica-poster').forEach(p => { if (p.alt) sumar(p.alt); });
+                if (typeof listaMedia !== 'undefined') listaMedia.forEach(x => { if (x.titulo && (x.tipo === 'Película' || x.tipo === 'Animación')) sumar(x.titulo); });
+            } else if (typeof REPARTO_PELICULAS !== 'undefined') {
+                Object.values(REPARTO_PELICULAS).forEach(f => {
+                    if (tipo === 'directores') String(f.director || '').split(/\s+y\s+|,\s*|\s*&\s*/).forEach(sumar);
+                    else (f.elenco || []).forEach(e => sumar(e.actor));
+                });
+            }
+        } catch (e) {}
+        poolCache[tipo] = res;
+        return res;
+    }
+    let sugVis = [], sugSel = -1;
+    const sugEl = () => $('t10-sugerencias');
+    function cerrarSug() { const l = sugEl(); if (l) { l.classList.add('oculto'); l.innerHTML = ''; } sugVis = []; sugSel = -1; }
+    function pintarSug() {
+        const l = sugEl(), inp = $('t10-input');
+        if (!l || !inp || !lista || !estado || estado.terminado) { cerrarSug(); return; }
+        const q = normEsp(inp.value);
+        if (q.length < 2) { cerrarSug(); return; }
+        const toks = q.split(' ');
+        const propios = [];
+        lista.items.concat(lista.fuera).forEach(it => propios.push({ t: it.n, k: normEsp(it.n) }));
+        const pool = propios.concat(poolDe(lista.tipo));
+        const vistos = new Set();
+        sugVis = [];
+        for (const o of pool) {
+            if (vistos.has(o.k)) continue;
+            if (toks.every(t => o.k.includes(t))) { vistos.add(o.k); sugVis.push(o); }
+        }
+        // Primero las que empiezan con lo escrito, después el resto; orden alfabético dentro de cada grupo.
+        sugVis.sort((a, b) => (b.k.startsWith(q) - a.k.startsWith(q)) || a.k.localeCompare(b.k));
+        sugVis = sugVis.slice(0, 8);
+        sugSel = -1;
+        l.innerHTML = '';
+        if (!sugVis.length) { l.classList.add('oculto'); return; }
+        sugVis.forEach(o => {
+            const b = document.createElement('button');
+            b.type = 'button'; b.className = 'adp-sug'; b.textContent = o.t;
+            b.addEventListener('mousedown', ev => { ev.preventDefault(); elegirSug(o.t); });
+            l.appendChild(b);
+        });
+        l.classList.remove('oculto');
+    }
+    function elegirSug(t) { const i = $('t10-input'); cerrarSug(); probar(t); i.value = ''; i.focus(); }
+    const inpT = $('t10-input');
+    if (inpT) {
+        inpT.addEventListener('input', pintarSug);
+        inpT.addEventListener('blur', () => setTimeout(() => { if (document.activeElement !== inpT) cerrarSug(); }, 150));
+        inpT.addEventListener('keydown', e => {
+            if (!sugVis.length) return;
+            if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+                e.preventDefault();
+                sugSel = (sugSel + (e.key === 'ArrowDown' ? 1 : -1) + sugVis.length) % sugVis.length;
+                document.querySelectorAll('#t10-sugerencias .adp-sug').forEach((b, i) => b.classList.toggle('activa', i === sugSel));
+            } else if (e.key === 'Enter' && sugSel >= 0) {
+                e.preventDefault(); elegirSug(sugVis[sugSel].t);
+            } else if (e.key === 'Escape') cerrarSug();
+        });
+    }
     const tarjeta = $('tarjeta-top10');
     if (tarjeta) tarjeta.addEventListener('click', () => { cambiarSeccion($('seccion-top10')); iniciar(listaDelDia()); });
     const vj = $('btn-volver-juegos-desde-top10'); if (vj) vj.addEventListener('click', () => cambiarSeccion($('seccion-juegos')));
     const bo = $('t10-btn-otra'); if (bo) bo.addEventListener('click', otraLista);
     const form = $('t10-form');
-    if (form) form.addEventListener('submit', e => { e.preventDefault(); const i = $('t10-input'); probar(i.value); i.value = ''; i.focus(); });
+    if (form) form.addEventListener('submit', e => { e.preventDefault(); const i = $('t10-input'); cerrarSug(); probar(i.value); i.value = ''; i.focus(); });
     const br = $('t10-btn-rendirme'); if (br) br.addEventListener('click', () => { if (lista && estado && !estado.terminado) terminar(false); });
     const bx = $('t10-btn-reiniciar'); if (bx) bx.addEventListener('click', () => { if (lista) iniciar(lista.id); });
 })();
