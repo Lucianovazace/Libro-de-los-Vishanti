@@ -2300,6 +2300,10 @@ h2 {
 .t10-tabla { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 6px; }
 .t10-fila { display: flex; align-items: center; gap: 12px; padding: 8px 14px 8px 10px; border-radius: 12px; background: #0f1a26; border: 1px solid #22344a; min-height: 44px; }
 .t10-fila .t10-n { flex: 0 0 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; background: #1d2b3d; color: #8fa3bd; }
+.t10-comp { flex: 0 0 76px; height: 30px; display: flex; align-items: center; justify-content: center; background: #f3f5f8; border-radius: 8px; padding: 3px 6px; box-sizing: border-box; overflow: hidden; }
+.t10-comp img { max-width: 100%; max-height: 100%; object-fit: contain; display: block; }
+.t10-comp.texto { font-size: 0.62rem; line-height: 1.05; font-weight: bold; color: #222; text-align: center; }
+.t10-comp.vacio { display: none; }
 .t10-fila .t10-nom { flex: 1 1 auto; text-align: left; opacity: 0.3; letter-spacing: 3px; min-width: 0; }
 .t10-fila .t10-val { flex: 0 0 auto; font-size: 0.82rem; opacity: 0; white-space: nowrap; }
 .t10-fila.acierto { border-color: #8be28b; background: #14301c; }
@@ -2315,4 +2319,4 @@ h2 {
 .t10-fuente-det { margin: 6px 4px; font-size: 0.78rem; opacity: 0.6; text-align: center; }
 .t10-fuente-det summary { cursor: pointer; }
 .t10-fuente { margin: 6px 0 0; line-height: 1.4; }
-@media (max-width: 480px) { .t10-cabecera h2 { font-size: 1.25rem; } .t10-rendirse { padding: 0 12px; } }
+@media (max-width: 480px) { .t10-comp { flex-basis: 60px; } .t10-cabecera h2 { font-size: 1.25rem; } .t10-rendirse { padding: 0 12px; } }

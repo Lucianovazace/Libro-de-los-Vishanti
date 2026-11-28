@@ -38566,6 +38566,39 @@ function renderizarQueMiro() {
     T10_LISTAS.forEach(l => l.items.concat(l.fuera).forEach(it => {
         it.a = (it.a || []).concat(T10_ES[it.n] || []);
     }));
+    // Pista visual: compañía que produjo/distribuyó cada película (logo desde Wikimedia; si no carga se muestra el nombre).
+    const T10_W = 'https://upload.wikimedia.org/wikipedia/commons/thumb/';
+    const T10_COMP = {
+        disney: { n: 'Disney', u: T10_W + '8/8f/Disney_logo.png/330px-Disney_logo.png' },
+        wda: { n: 'Disney Animation', u: T10_W + '0/09/Walt_Disney_Animation_Studios_Logo.svg/330px-Walt_Disney_Animation_Studios_Logo.svg.png' },
+        marvel: { n: 'Marvel Studios', u: T10_W + '6/63/Marvel_Studios_logo.svg/330px-Marvel_Studios_logo.svg.png' },
+        pixar: { n: 'Pixar', u: T10_W + '4/40/Pixar_logo.svg/330px-Pixar_logo.svg.png' },
+        lucasfilm: { n: 'Lucasfilm', u: T10_W + '2/25/Lucasfilm_logo.svg/330px-Lucasfilm_logo.svg.png' },
+        fox: { n: '20th Century', u: T10_W + '2/22/20th_Century_Studios_%282020%29.svg/330px-20th_Century_Studios_%282020%29.svg.png' },
+        wb: { n: 'Warner Bros.', u: T10_W + '4/4e/Warner_Bros._logo_2023.svg/330px-Warner_Bros._logo_2023.svg.png' },
+        universal: { n: 'Universal', u: T10_W + 'b/b6/Universal_Pictures_logo.svg/330px-Universal_Pictures_logo.svg.png' },
+        paramount: { n: 'Paramount', u: T10_W + '9/90/Paramount_Pictures_Corporation_logo.svg/330px-Paramount_Pictures_Corporation_logo.svg.png' },
+        sony: { n: 'Sony Pictures', u: T10_W + 'd/d7/Sony_Pictures_logo.svg/330px-Sony_Pictures_logo.svg.png' },
+        dreamworks: { n: 'DreamWorks', u: T10_W + 'c/c7/DreamWorks_Animation_SKG_logo.svg/330px-DreamWorks_Animation_SKG_logo.svg.png' },
+        illumination: { n: 'Illumination', u: T10_W + 'e/e3/Illumination_Entertainment_logo.svg/330px-Illumination_Entertainment_logo.svg.png' },
+        enlight: { n: 'Enlight Pictures' }, levision: { n: 'Le Vision' }, cfg: { n: 'China Film' }
+    };
+    const T10_ESTUDIO = {
+        'Avengers: Endgame': 'marvel', 'Avatar': 'fox', 'Spider-Man: Brand New Day': 'sony', 'Avatar: The Way of Water': 'fox', 'Titanic': 'fox',
+        'Star Wars: The Force Awakens': 'lucasfilm', 'Avengers: Infinity War': 'marvel', 'Ne Zha 2': 'enlight', 'Spider-Man: No Way Home': 'sony', 'Zootopia 2': 'wda',
+        'Captain America: Civil War': 'marvel', 'Rogue One: A Star Wars Story': 'lucasfilm', 'Finding Dory': 'pixar', 'Zootopia': 'wda', 'The Jungle Book': 'disney',
+        'The Secret Life of Pets': 'illumination', 'Batman v Superman: Dawn of Justice': 'wb', 'Fantastic Beasts and Where to Find Them': 'wb', 'Deadpool': 'fox', 'Suicide Squad': 'wb',
+        'The Lion King': 'disney', 'Frozen II': 'wda', 'Spider-Man: Far From Home': 'sony', 'Captain Marvel': 'marvel', 'Joker': 'wb', 'Toy Story 4': 'pixar',
+        'Star Wars: The Rise of Skywalker': 'lucasfilm', 'Aladdin': 'disney', 'Jumanji: The Next Level': 'sony',
+        'Barbie': 'wb', 'The Super Mario Bros. Movie': 'illumination', 'Oppenheimer': 'universal', 'Guardians of the Galaxy Vol. 3': 'marvel', 'Fast X': 'universal',
+        'Spider-Man: Across the Spider-Verse': 'sony', 'Full River Red': 'levision', 'Wonka': 'wb', 'The Wandering Earth 2': 'cfg', 'The Little Mermaid': 'disney',
+        'Toy Story 2': 'pixar', 'Toy Story': 'pixar', 'Toy Story 3': 'pixar', 'Big': 'fox', 'Catch Me If You Can': 'dreamworks', 'A Beautiful Day in the Neighborhood': 'sony',
+        'Saving Private Ryan': 'dreamworks', 'Captain Phillips': 'sony', 'That Thing You Do!': 'fox',
+        'One Battle After Another': 'wb', 'Killers of the Flower Moon': 'paramount', 'The Departed': 'wb', "What's Eating Gilbert Grape": 'paramount', 'Django Unchained': 'sony',
+        'The Aviator': 'wb', 'Inception': 'wb', 'Once Upon a Time… in Hollywood': 'sony', 'The Revenant': 'fox', 'The Wolf of Wall Street': 'paramount',
+        'The Great Gatsby': 'wb', 'Shutter Island': 'paramount', 'Ne Zha': 'enlight'
+    };
+    T10_LISTAS.forEach(l => l.items.forEach(it => { if (T10_ESTUDIO[it.n]) it.e = T10_ESTUDIO[it.n]; }));
     window.T10_LISTAS = T10_LISTAS;
     const MAX_ERRORES = 5;
     const $ = id => document.getElementById(id);
@@ -38627,10 +38660,20 @@ function renderizarQueMiro() {
             const it = lista.items[idx];
             li.className = 't10-fila' + (acerto ? ' acierto' : '') + (revel ? ' revelada' : '');
             const n = document.createElement('span'); n.className = 't10-n'; n.textContent = s + 1;
+            const comp = T10_COMP[(acerto || revel ? it : slotIt).e];
+            const logo = document.createElement('span'); logo.className = 't10-comp' + (comp ? '' : ' vacio');
+            if (comp) {
+                logo.title = comp.n;
+                if (comp.u) {
+                    const im = document.createElement('img'); im.src = comp.u; im.alt = comp.n; im.loading = 'lazy'; im.referrerPolicy = 'no-referrer';
+                    im.addEventListener('error', () => { im.remove(); logo.textContent = comp.n; logo.classList.add('texto'); });
+                    logo.appendChild(im);
+                } else { logo.textContent = comp.n; logo.classList.add('texto'); }
+            }
             const nom = document.createElement('span'); nom.className = 't10-nom';
             nom.textContent = (acerto || revel) ? it.n + (it.y ? ' (' + it.y + ')' : '') : '? ? ?';
             const val = document.createElement('span'); val.className = 't10-val'; val.textContent = fmtV(it.v, lista.fmt);
-            li.append(n, nom, val);
+            li.append(n, logo, nom, val);
             ol.appendChild(li);
         });
         $('t10-aciertos').textContent = estado.aciertos.size + '/10';
